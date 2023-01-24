@@ -18,6 +18,7 @@ Power Status LEDs
 | --- | --- |
 | **LED** | **Meaning** |
 | ![computepack-bootup.gif](/img/led-images/sprint16/Compute_Boot_Up.gif) | Boot up  <br/>_Compute pack is waking up._ |
+|![computepack-on.gif](/img/led-images/compute_idle_on.gif) | On/Idle <br/>_Compute pack is on._ |
 | ![computepack-shutdown.gif](/img/led-images/sprint10/computepack-shutdown.gif) | Shut down  <br/>_Shut down starts with a long press of the power button._ |
 | ![computepack-sleep.gif](/img/led-images/sprint10/computepack-sleep.gif) | Sleep Mode  <br/>_Device is in sleep mode._ |
 | ![Compute_Critical_Battery_Charging.gif](/img/led-images/sprint13/Compute_Critical_Battery_Charging.gif) | Critical battery level<br/>_The LED will pulse red when the battery is critically low at 5% or less._ |
