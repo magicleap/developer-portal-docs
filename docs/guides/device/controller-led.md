@@ -13,6 +13,7 @@ Magic Leap 2's controller has a single LED dot. Different combinations of colors
 | --- | --- |
 | **LED** | **Meaning** |
 | ![bluetooth-bootup.gif](/img/led-images/sprint10/bluetooth-bootup.gif) | Boot up<br/>_Controller is waking up._ |
+| ![controller_idle_on.gif](/img/led-images/controller_idle_on.gif) | On/Idle <br/>_Controller is on._ |
 | ![shutdown.gif](/img/led-images/sprint10/shutdown.gif) | Shut down<br/>_Shut down starts with a long press of the power button._ |
 | ![bluetooth-pairing.gif](/img/led-images/sprint10/bluetooth-pairing.gif) | Bluetooth pairing<br/>_Compute pack and controller are pairing._ |
 | ![bluetooth-success.gif](/img/led-images/sprint10/bluetooth-success.gif) | Bluetooth success<br/>_Compute pack and controller have successfully paired._ |
