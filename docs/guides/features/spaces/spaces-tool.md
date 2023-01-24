@@ -34,6 +34,27 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 For more specific in-device guidance on the scanning process, click the information icon on the bottom left corner of the Spaces home menu screen.
 
+## Viewing Spatial Anchors from other applications
+
+When Developer mode is enabled, you can use the Spaces application to view anchors created by other applications using the [Spatial Anchors API](/docs/guides/unity/perception/anchors/spatial-anchors-overview.md).
+
+In order to view another application's spatial anchors in Spaces:
+
+1. Enable Developer mode inside the **Settings** application by going to **Settings > About > Build Number**. Hover over the Build Number and press the trigger 7 times.
+2. Open **Spaces** and localize into your current location.
+
+3. Open your application and place the spatial anchors.
+
+![An anchor placed inside the Spatial Anchors scene of Magic Leap Unity Examples](/img/device/spaces/spaces_7.jpg)
+
+4. Go back to **Spaces** and click the **eye icon** next to the space you are currently localized in.
+
+![The "view" eye icon next to your local space in Spaces](/img/device/spaces/spaces_8.jpg)
+
+5. You will now see the spatial anchors and their ID displayed inside the Spaces application.
+
+![Spaces displaying the newly placed spatial anchors](/img/device/spaces/spaces_9.jpg)
+
 ## More Information
 
 <DocCardList items={useCurrentSidebarCategory().items}/>
