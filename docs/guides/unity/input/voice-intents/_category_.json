@@ -1,0 +1,9 @@
+{
+    "label": "Voice Intents",
+    "position": 4,
+    "collapsed": true,
+    "link": {
+      "type": "doc",
+       "id": "voice-intents-overview"
+      }
+  }

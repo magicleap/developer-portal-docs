@@ -1,0 +1,9 @@
+{
+  "label": "Dimming",
+  "collapsed": true,
+  "position": 2,
+  "link": {
+    "type": "doc",
+      "id": "dimming-overview"
+    }
+}

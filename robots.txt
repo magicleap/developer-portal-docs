@@ -1,0 +1,5 @@
+# Algolia-Crawler-Verif: 87D30E40302B4823
+
+User-agent: *
+Allow: /
+Sitemap: https://developer.magicleap.cloud/learn/sitemap.xml

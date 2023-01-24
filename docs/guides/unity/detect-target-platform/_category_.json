@@ -1,0 +1,9 @@
+{
+    "label": "Platform Detection",
+    "position": 9,
+    "collapsed": true,
+    "link": {
+      "type": "doc",
+       "id": "platform-detection-overview"
+      }
+  }

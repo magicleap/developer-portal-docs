@@ -1,0 +1,10 @@
+{
+  "label": "Debugging",
+  "position": 1,
+  "collapsed": true,
+   "link": {
+    "type": "generated-index",
+    "title": "Debugging",
+    "description": "Learn how to Debug Magic Leap applications after deploying them to the device."
+  }
+}

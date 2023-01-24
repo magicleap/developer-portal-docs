@@ -1,0 +1,10 @@
+{
+  "label": "Device Guides",
+  "position": 10,
+  "collapsed": true,
+   "link": {
+    "type": "generated-index",
+    "title": "Device Guides",
+    "description": "Learn more about the Magic Leap 2 hardware, including how to upgrade the device's operating system."
+  }
+}

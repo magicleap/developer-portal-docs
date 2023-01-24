@@ -1,0 +1,9 @@
+{
+  "label": "Application Simulator",
+  "position": 3,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+      "id": "app-sim"
+    }
+}

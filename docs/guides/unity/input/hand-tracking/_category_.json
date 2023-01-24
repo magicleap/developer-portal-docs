@@ -1,0 +1,9 @@
+{
+    "label": "Hand Tracking",
+    "position": 5,
+    "collapsed": true,
+    "link": {
+      "type": "doc",
+       "id": "unity-hand-tracking-overview"
+      }
+  }

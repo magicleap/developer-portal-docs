@@ -1,0 +1,10 @@
+{
+  "label": "Soundfield Audio (MSA)",
+  "position": 1,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Soundfield Audio",
+    "description": "Learn how to use and build with the MSA (Soundfield Audio) plugin."
+  }
+}

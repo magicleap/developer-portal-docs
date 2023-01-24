@@ -1,0 +1,10 @@
+{
+  "label": "Release 2022 June",
+  "position": 95,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+     "id": "june-release-notes"
+    }
+}

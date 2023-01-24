@@ -1,0 +1,9 @@
+{
+  "label": "Resources",
+  "position": 20,
+  "link": {
+    "type": "doc",
+    "id": "unity-resources"
+  },
+  "collapsed": true
+}

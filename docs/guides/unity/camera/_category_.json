@@ -1,0 +1,9 @@
+{
+  "label": "MLCamera",
+  "position": 1,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+     "id": "ml-camera-overview"
+    }
+}

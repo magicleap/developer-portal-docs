@@ -1,0 +1,251 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url('lomino.css');
+
+/* You can override the default Infima variables here. */
+:root {
+  /*-------- Begin MagicLeap colour palette. --------*/
+
+  /* Colours for text blocks. */
+  --ml-color-text-black: #252628;
+  --ml-color-text-dark-grey: #3f4144;
+  --ml-color-text-medium-grey: #5d5c60;
+  --ml-color-text-hint-grey: #737578;
+  --ml-color-text-accent-dark: #6d47d3;
+  --ml-color-text-white: #ffffff;
+  --ml-color-text-light-grey: #b7b7b8;
+  --ml-color-text-accent-dark-plus10: #8d6fdd;
+  --ml-color-text-accent-light: #bfabf9;
+  --ifm-font-weight-bold:600;
+  /* Colors for buttons, links, and other non-text-block elements. */
+  --ml-color-primary-accent-dark: #6d47d3;
+  --ml-color-primary-accent-dark-plus20: #ad98e6;
+  --ml-color-primary-accent-dark-plus10: #8d6fdd;
+  --ml-color-primary-accent-dark-minus10: #532cb9;
+  --ml-color-primary-accent-light: #bfabf9;
+  --ml-color-primary-accent-light-plus10: #e2d9fc;
+  --ml-color-primary-accent-light-minus10: #997af5;
+  --ml-color-meteorite-100: #111111;
+  --ml-color-meteorite-90: #252628;
+  --ml-color-meteorite-80: #3f4144;
+  --ml-color-meteorite-70: #5c5d60;
+  --ml-color-meteorite-60: #737578;
+  --ml-color-meteorite-50: #8c8d8f;
+  --ml-color-meteorite-40: #9fa0a2;
+  --ml-color-meteorite-30: #b7b7b8;
+  --ml-color-meteorite-20: #d9d9da;
+  --ml-color-meteorite-10: #ededee;
+  --ml-color-meteorite-00: #ffffff;
+  --ml-color-brand-white: #ffffff;
+
+  /*-------- End MagicLeap colour palette. --------*/
+
+  /*-------- Begin MagicLeap typography. --------*/
+
+  --ml-font-size-h1: 26px;
+  --ml-font-size-h2: 20px;
+  --ml-font-size-h3: 17px; /* Estimated */
+
+  --ml-text-font-size: 15px;
+
+  /*-------- End MagicLeap typography. --------*/
+
+  --ifm-color-primary: var(--ml-color-primary-accent-dark);
+  --ifm-color-primary-dark: var(--ml-color-primary-accent-dark-minus10);
+  --ifm-color-primary-darker: var(--ml-color-primary-accent-dark-minus10);
+  --ifm-color-primary-darkest: #3d2189; /* Not specified in the ML palette. */
+  --ifm-color-primary-light: var(--ml-color-primary-accent-light-minus10);
+  --ifm-color-primary-lighter: var(--ml-color-primary-accent-light);
+  --ifm-color-primary-lightest: var(--ml-color-primary-accent-light-plus10);
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: Lomino, sans-serif;
+  --ifm-color-content: var(--ml-color-text-black);
+  --ifm-heading-font-weight: var(--ifm-font-weight-semibold);
+  --ifm-menu-color: var(--ml-color-meteorite-70); /* DTOOLS-8366. */
+  --ifm-menu-font-weight: var(--ifm-font-weight-normal);
+  --ifm-scrollbar-thumb-hover-background-color: var(
+    --ifm-color-primary-lighter
+  );
+
+  --ifm-scrollbar-thumb-background-color: var(--ifm-color-primary-lightest);
+  --ifm-background-color: var(--ml-color-brand-white);
+  --ifm-menu-link-sublist-icon-filter: opacity(
+    50%
+  ); /* Less prominent to match text. */
+
+  --ifm-font-size-base: var(--ml-text-font-size);
+  --ifm-h1-font-size: var(--ml-font-size-h1);
+  --ifm-h2-font-size: var(--ml-font-size-h2);
+  --ifm-h3-font-size: var(--ml-font-size-h3);
+
+  --flex-doc-sidebar-width: calc(3 / 12 * 100%);
+
+}
+
+/* The Infima styles for Markdown content redefine these variables. */
+.markdown > h1 {
+  --ifm-h1-font-size: var(--ml-font-size-h1);
+}
+.markdown > h2 {
+  --ifm-h2-font-size: var(--ml-font-size-h2);
+}
+.markdown > h3 {
+  --ifm-h3-font-size: var(--ml-font-size-h3);
+}
+
+/* Docusaurus overrides the Infima Markdown styling for H1. */
+header > h1[class^='docTitle_'] {
+  font-size: var(--ml-font-size-h1);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+/* @media(min-width: 997px){
+.docSidebarContainer  {
+    min-width: var(--doc-sidebar-width);
+    max-width: 400px;
+    width: var(--flex-doc-sidebar-width);
+  }
+
+ .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module {
+    width: 100% !important;
+    overflow-wrap: break-word;
+}
+} */
+
+.menu__list-item:not(:first-child) {
+    margin-top: 0.45rem !important;
+}
+
+@media (max-width: 996px){
+
+.navbar__item {
+   display: inline-block;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .navbar__item.dropdown.dropdown--hoverable.dropdown--right{
+  display:none;
+ }
+}
+
+.navbar-sidebar__item.menu {
+    font-weight: var(--ifm-font-weight-semibold);
+}
+
+/* .navbar-sidebar__brand {
+    display: none;
+} */
+
+.menu {
+  font-weight: var(--ifm-font-weight-normal);
+  background-color: var(--ifm-background-color);
+}
+li.menu__list-item {
+  margin: 0;
+}
+li.menu__list-item > a.menu__link {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+li.menu__list-item > a.menu__link.active {
+ background: var(--ifm-menu-color-background-active);
+}
+
+.docs-wrapper {
+  background-color: var(--ml-color-meteorite-10);
+}
+.docMainContainer  {
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  padding: calc(var(--ifm-spacing-vertical) * 2)
+    calc(var(--ifm-spacing-horizontal) * 2);
+}
+article {
+    background-color: var(--ifm-background-color);
+    border-radius: 8px;
+    padding: calc(var(--ifm-spacing-vertical)*2) calc(var(--ifm-spacing-horizontal)*2);
+}
+
+/* Inject a heading on the table of contents to indicate what it is. */
+ul.table-of-contents::before {
+  content: 'In this article'; 
+  display: block;
+  margin-left: 8px;
+  margin-bottom: 16px;
+  color: var(--ml-color-meteorite-30);
+}
+
+ul.table-of-contents {
+  font-size: 100%;
+}
+ul.table-of-contents li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: var(--ml-color-meteorite-50);
+  font-weight: var(--ifm-font-weight-light);
+  color: var(--ml-color-meteorite-50);
+}
+ul.table-of-contents li a.table-of-contents__link--active {
+  font-weight: var(--ifm-font-weight-semibold);
+  color: var(--ifm-color-primary-darker);
+}
+
+/* Suppress the brower's focus ring on the Search field. */
+input.navbar__search-input:focus-visible {
+  outline: none;
+}
+
+/* 
+.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module {
+    background-color: var(--ifm-background-color);
+    border-radius: 8px;
+    padding: calc(var(--ifm-spacing-vertical)*2) calc(var(--ifm-spacing-horizontal)*2);
+}
+*/
+
+
+div[class^='generatedIndexPage_'] {
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  padding: calc(var(--ifm-spacing-vertical) * 2)
+}
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+img {
+  margin: auto;
+  display: block;
+}
+
+table.doxtable tbody {
+  width: 100%;
+  min-width: 400px;
+  border-style: hidden;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+}
+
+table.doxtable {
+  overflow: hidden;
+  overflow-x: auto;
+  margin: 16px 0 48px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}

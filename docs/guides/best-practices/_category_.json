@@ -1,0 +1,10 @@
+{
+  "label": "Best Practices",
+  "position": 10,
+  "collapsed": true,
+   "link": {
+    "type": "generated-index",
+    "title": "Best Practices",
+    "description": "This section includes information on how to improve the quality of your application."
+  }
+}

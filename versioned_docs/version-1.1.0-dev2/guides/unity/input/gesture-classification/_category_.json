@@ -1,0 +1,9 @@
+{
+    "label": "Gesture Classification",
+    "position": 5,
+    "collapsed": true,
+    "link": {
+      "type": "doc",
+       "id": "unity-gesture-classification-overview"
+      }
+  }

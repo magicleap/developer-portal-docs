@@ -1,0 +1,10 @@
+{
+  "label": "Native",
+  "position": 4,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Native Development",
+    "description": "Learn how to develop for the Magic Leap 2 using Native C++."
+  }
+}

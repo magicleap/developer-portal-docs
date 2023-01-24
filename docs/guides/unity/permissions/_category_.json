@@ -1,0 +1,10 @@
+{
+  "label": "Permissions",
+  "position": 1,
+  "collapsed": true,
+   "link": {
+    "type": "generated-index",
+    "title": "Permissions",
+    "description": "Learn how to use specify and request permissions inside your application so that you can access Magic Leap 2's unique features.If this is your first time developing for the Magic Leap, we recommend that you follow the guides in sidebar order. If you are an experienced Magic Leap developer, these guides can be used as standalone references."
+  }
+}
