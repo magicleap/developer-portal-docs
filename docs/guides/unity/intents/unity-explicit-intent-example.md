@@ -63,7 +63,6 @@ public class IntentExample : MonoBehaviour
         using (AndroidJavaObject currentActivityObject = unityClass.GetStatic<AndroidJavaObject>("currentActivity"))
         using (var intentObject = new AndroidJavaObject("android.content.Intent", selectSpaceId))
         {
-            currentActivityObject.Call("startActivity", intentObject);
             intentObject.Call<AndroidJavaObject>("putExtra", extraSpaceID, SpaceId);
             intentObject.Call<AndroidJavaObject>("putExtra", extraMappingMode, mapMode);
             currentActivityObject.Call("startActivityForResult", intentObject, 0);
