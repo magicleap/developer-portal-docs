@@ -15,8 +15,6 @@ Marker Tracker settings tell the marker tracker what type of markers it should t
 
 If settings are created and marker tracking is set to false, the Marker Scanner will release the camera and stop scanning markers. Internal state of the scanner will be maintained. Allowing you to resume scanning using the previous settings.
 
-You can also specify a `FPSHint` to increase or decrease the number of frames to process per second. Note, a higher tracking frequency will result in higher CPU load which can affect the performance of your system.
-
 :::tip
 
 You can view the complete list of Marker Tracking settings in the [MLMarkerTracking the API section](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md)
@@ -30,17 +28,60 @@ This feature requires the `MARKER_TRACKING` permission to be enabled in your pro
 ```csharp
 ...
 
-  // A value of 0 uses the world cameras and 1 uses the RGB camera to scan for Aruco markers
-  int arucoCamera = 0;
+  //Should the Marker Tracker enable as soon as the settings are set?
+  bool enableMarkerScanning = true;
   float qrCodeMarkerSize  = 0.1f;
   float arucoMarkerSize  = 0.1f;
   MLMarkerTracker.MarkerType type = MLMarkerTracker.MarkerType.Aruco_April;
   MLMarkerTracker.ArucoDictionaryName arucoDict = MLMarkerTracker.ArucoDictionaryName.DICT_5X5_100;
-  MLMarkerTracker.Settings settings = MLMarkerTracker.Settings.Create(true, type, qrCodeMarkerSize, arucoDict, arucoCamera, arucoMarkerSize,MLMarkerTracker.FPSHint.Medium);
+  MLMarkerTracker.Profile trakerProfile = MLMarkerTracker.Profile.Default;
+  MLMarkerTracker.TrackerSettings.Settings settings = MLMarkerTracker.TrackerSettings.Create(enableMarkerScanning, type, qrCodeMarkerSize, arucoDict, trakerProfile, default);
 
   _ = MLMarkerTracker.SetSettingsAsync(settings);
 
 ...
+```
+
+## Marker Tracker Profile
+
+Marker Tracker Profiles allow developers to choose pre-configured or create custom marker tracking settings based on their use case. The pre-configured profiles are as follows:
+
+- Default
+  -  Tracker profile that covers standard use cases.
+-  Speed
+  -  Use this profile to reduce the compute load and increase detection/tracker speed.(Can result poor poses.)
+-  Accuracy
+  -  Use this profile to optimize for accurate marker poses. (Can cause increased load on the compute.)
+-  SmallTargets
+  -  Use this profile to optimize for markers that are small or for larger markers that need to detected from far.
+-  Large_FOV
+  -  Use this profile to be able to detect markers across a larger Field Of View. Marker Tracker system will attempt to use multiple cameras to detect the markers.
+-  Custom
+  -   Application can define a custom tracker profiler.
+
+
+Developers can specify a variety of options when creating custom profiles. The example below shows how to create Marker Tracker Settings with a custom and predefined profile. Note that the custom profile value is set to `default` when a preconfigured option is used.
+
+```csharp
+        //The Marker Tracker Profile to use
+        MLMarkerTracker.Profile trackerProfile = MLMarkerTracker.Profile.Custom;
+
+        //Custom Profile Settings
+        MLMarkerTracker.FPSHint fpsHint = MLMarkerTracker.FPSHint.Medium;
+        MLMarkerTracker.ResolutionHint resolutionHint = MLMarkerTracker.ResolutionHint.Medium;
+        MLMarkerTracker.CameraHint cameraHint = MLMarkerTracker.CameraHint.World;
+        MLMarkerTracker.FullAnalysisIntervalHint analysisInterval = MLMarkerTracker.FullAnalysisIntervalHint.Medium;
+        MLMarkerTracker.CornerRefineMethod refineMethod = MLMarkerTracker.CornerRefineMethod.None;
+        bool useEdgeRefinement = false;
+
+        // Create Custom Settings only if tarckerProfile is set to custom, otherwise, use default.
+        MLMarkerTracker.TrackerSettings.CustomProfile customProfile = trackerProfile == MLMarkerTracker.Profile.Custom 
+            ? MLMarkerTracker.TrackerSettings.CustomProfile.Create(fpsHint, resolutionHint, cameraHint, analysisInterval, refineMethod, useEdgeRefinement) 
+            : default;
+        
+        //Create and set the marker tracker settings.
+        MLMarkerTracker.TrackerSettings markerSettings = MLMarkerTracker.TrackerSettings.Create(EnableMarkerScanning, MarkerTypes, QRCodeSize, ArucoDicitonary, ArucoMarkerSize, trackerProfile, customProfile);
+        _ = MLMarkerTracker.SetSettingsAsync(markerSettings);
 ```
 
 ## Initialize the Marker Tracker
@@ -96,6 +137,10 @@ Since the marker tracker supports multiple types of markers, it is important to 
     }
 ...
 ```
+
+:::note
+Developers can also use the `MLMarkerTracker.OnMLMarkerTrackerResultsFoundArray` event to receive one event with all of the detected markers.
+:::
 
 ## Reading Binary Data
 
