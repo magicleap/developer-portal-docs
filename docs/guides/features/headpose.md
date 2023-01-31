@@ -196,7 +196,7 @@ There are mainly two types of content shift with different root causes:
 1. Small shift of the virtual content when walking around the content in relatively close distance (a few meters at most), but from each viewing position that is revisited, the content appears repeatedly at the same location. This is currently a known limitation of the system. To mitigate this issue, try placing the virtual content when you are at the place where you want to interact with the virtual content.
 2. Shift of the virtual content when walking further away from the content, and returning back to the original position. If the content is stuck at a shifted position in this case, the map internally built by the device may be damaged; in this case, try a forced relocation by covering all the 3 cameras for a few seconds until the device loses track. If the problem persists after relocation, reset the map completely by covering the cameras for at least 15 seconds; however, note that this will require placing the virtual content again.
 
-### Digital Content Flying Way
+### Digital Content Flying Away
 
 Under challenging scenarios (low light, highly-dynamic scenes) or when performing certain actions (opening of doors, walking on areas with reflective surfaces), tracking might become unstable. In some rare cases, the virtual content might “fly-away”, resulting in “headpose lost”. The device attempts to relocate itself from this lost state.
 This attempted relocalization makes use of the map that was being created as the device was tracking the environment. To help the device relocate (and regain tracking when the tracking is lost) it needs to see a scene in the environment that was tracked earlier.
