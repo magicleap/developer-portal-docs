@@ -2,7 +2,7 @@
 id: controller-features
 title: Controller Hardware and Features
 description: An overview of the controller's buttons and sensors, touchpad gestures, and important changes from the Magic Leap 1 SDK.
-sidebar_position: 1
+sidebar_position: 2
 date: 1/28/2022
 tags: [Controller, Input, Power, Power Off, Shut Down]
 keywords: [ontroller, Input, Power, Power Off, Shut Down]
