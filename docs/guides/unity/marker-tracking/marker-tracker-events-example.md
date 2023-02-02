@@ -71,7 +71,8 @@ public class MarkerTrackerExample : MonoBehaviour
     public float ArucoMarkerSize = 0.1f;
     public MLMarkerTracker.MarkerType TrackedMarkerType = MLMarkerTracker.MarkerType.Aruco_April;
     public MLMarkerTracker.ArucoDictionaryName ArucoDict = MLMarkerTracker.ArucoDictionaryName.DICT_5X5_50;
-
+    public MLMarkerTracker.Profile TrackerProfile = MLMarkerTracker.Profile.Default;
+    
     [Header("TrackingSettings")] 
     [Tooltip("The amount of time a marker can remain not tracked before being considered as lost.")]
     public float LostTrackingDelay;
@@ -124,10 +125,10 @@ public class MarkerTrackerExample : MonoBehaviour
 
     private void StartTracking()
     {
-        /// A value of 0 uses the world cameras and 1 uses the RGB camera to scan for Aruco markers
-        int arucoCamera = 0;
-        MLMarkerTracker.Settings trackerSettings = MLMarkerTracker.Settings.Create(
-            true, TrackedMarkerType, QrCodeMarkerSize, ArucoDict, ArucoMarkerSize, arucoCamera, MLMarkerTracker.FPSHint.High);
+        // Unity has it's own value for Enum called Everything and sets it to -1
+        MLMarkerTracker.MarkerType MarkerTypes = (int)TrackedMarkerType == -1 ? MLMarkerTracker.MarkerType.All : TrackedMarkerType;
+        MLMarkerTracker.TrackerSettings trackerSettings = MLMarkerTracker.TrackerSettings.Create(
+            true, TrackedMarkerType, QrCodeMarkerSize, ArucoDict, ArucoMarkerSize, TrackerProfile, default);
         _ = MLMarkerTracker.SetSettingsAsync(trackerSettings);
     }
 
