@@ -21,10 +21,14 @@ The Magic Leap 2 display Field of View (FOV) is **45°H x 55°V (70°D)** but th
 
 ![Distance illustration](/img/human-interface-guidelines/Viewing-Distance-Illustration.png)
 
-### There are some techniques that designers can use to mitigate noticing content extending beyond the virtual display FOV
+:::tip
+
+There are techniques that designers can use to mitigate noticing content extending beyond the virtual display FOV
 
 - Blur or fade content on the edge of the FOV around where it is clipped.
 - Use angular/square objects if they need to be clipped. Users tend to notice when round/circular objects are clipped more than angular/square objects
+
+:::
 
 ## Capture FOV
 
@@ -38,7 +42,11 @@ The Magic Leap 2 display Field of View (FOV) is **45°H x 55°V (70°D)** but th
 
 ## Display FOV (9:11) and Picture Camera FOV (4:3 or 9:10)
 
-Tip: We suggest keeping the Countdown toggle **ON** in Settings to assist with your composition if you primarily use Capture with a combined controller interaction or voice command.
+:::tip
+
+We suggest keeping the Countdown toggle **ON** in Settings to assist with your composition if you primarily use Capture with a combined controller interaction or voice command.
+
+:::
 
 ## World Camera FOV
 

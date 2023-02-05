@@ -1,17 +1,14 @@
 ---
 id: dimmer-design-guidelines
-title: Global and Segmented Dimmer Design Guidelines
+title: Design Guidelines
 sidebar_position: 3
 date: 07/22/2022
-tags: [Features, Meshing, Perception, Overview, Design]
 keywords: [Features, Meshing, Perception, Overview, Design]
 ---
 
 # Dimming Design Guidelines
 
-Magic Leap devices have additive displays, which take the light within a user’s environment and add **photons** to the display, making it possible to render content. The Magic Leap 2 introduces a new low resolution panel which selectively *subtracts* photons in the environment by using two types of dimming: **Global Dimming** and **Segmented Dimming**.  
-
-In this article, we discuss what these two features are, and how you can use them in your applications to experiment with  improving the contrast and opacity of your content. resulting in text that is more legible, menus with greater contrast to the environment, and objects that appear more solid.
+In this article, we discus how you can use the global and segmented dimmer in your applications to experiment with improving the contrast and opacity of your content. resulting in text that is more legible, menus with greater contrast to the environment, and objects that appear more solid.
 
 ![Diagram 1](/img/design-dimmer/diagram1.png)
 
@@ -141,13 +138,3 @@ The halo and other artifacts may be more pronounced in bright light environments
 - At lower brightness levels, there may be flickering effects in the solid part.
 - Without the use of Global Dimming, the display has a slight yellow tint. Turning on the Global Dimmer will add a gray tint and help correct display uniformity.
 - At the moment, some users may notice a slight misalignment between the dimmer mask a solution will be provided in upcoming releases. In the meantime, you may adjust the offset manually.
-
-### Safety
-
-High opacities of Global and Segmented Dimming can create hazards to users by lowering visibility in their environments. Thus, it’s important to be aware of your user’s environment and consider what content truly needs to be high opacity and how you can maximize the visibility of both the real and virtual worlds. For example, choosing to globally dim more than 50% of the user’s environment may be limiting the experience if the user needs to see the real world while using the application.
-
-You can set a maximum value for both Global and Segmented Dimming for your application,  but consider that a user can always choose to override this permission and set their own maximum values that they’ve configured in Settings.
-
-![Settings](/img/design-dimmer/settings.png)
-
-Manual settings found in  **Settings > Display**.

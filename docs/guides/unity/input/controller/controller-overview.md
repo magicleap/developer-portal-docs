@@ -24,7 +24,7 @@ This category includes the following articles:
 - [Migration Guide](/docs/guides/unity/input/controller/controller-porting-guide.md) - Includes details on upgrading your Magic Leap 1 controller API to the Magic Leap 2.
 
 :::tip
-To learn about the Magic Leap 2's controller hardware features, see the [Controller Features](/docs/guides/device//controller-features.md) guide.
+To learn about the Magic Leap 2's controller hardware features, see the [Controller Features](/docs/guides/features/controller-features.md) guide.
 :::
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

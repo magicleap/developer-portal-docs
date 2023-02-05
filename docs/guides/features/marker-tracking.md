@@ -1,6 +1,6 @@
 ---
 title: Marker Tracking
-sidebar_position: 7
+sidebar_position: 6
 date: 12/14/2022
 tags: [Features,Marker, Barcode, ArUco]
 keywords: [Features, Marker, Barcode, ArUco]
