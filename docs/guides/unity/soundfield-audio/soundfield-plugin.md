@@ -1,17 +1,17 @@
 ---
-id: ml-audio-toolkit
-title: Magic Leap Audio Toolkit Plugin
+id: soundfield-plugin
+title: Soundfield
 sidebar_position: 0
-description: Installation and usage of Magic Leap Audio Toolkit
+description: Soundfield Plugin Overview
 date: 02/03/2023
 tags: [Unity, Walkthroughs, Audio, MSA, Soundfield, Audio Toolkit]
 keywords: [Unity,Audio, MSA, Soundfield, Audio Toolkit]
 ---
 
-# Magic Leap Audio Toolkit Plugin
+# Soundfield Plugin for Unity
 
 ::: note
-**Magic Leap Audio Toolkit** is used interchangeably with **Soundfield Audio** (formerly known as MSA) and may still have that name in the ML Hub Package Manager.
+**Soundfield** is used interchangeably with **Magic Leap Spatial Audio (MSA)**.
 :::
 
 :::caution For Windows Users
@@ -23,7 +23,7 @@ keywords: [Unity,Audio, MSA, Soundfield, Audio Toolkit]
 For more information, please see Microsoft's official documentation [here](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 :::
 
-## Magic Leap Audio Toolkit Plugin Installation
+## Soundfield Plugin Installation
 
 ### From the Magic Leap Hub
 
@@ -61,7 +61,7 @@ The reset should be performed on the `MLListener` component that is co-located w
 
 Resetting the Soundfield component in a prefab can be accomplished through the same process:
 
-1. Select the prefab in the Unity Project window and click **Open** in the Inspector window. 
+1. Select the prefab in the Unity Project window and click **Open** in the Inspector window.
 2. Reset each Soundfield component using the steps described above. The changes made inside the prefab will then be applied to all objects in the project using that prefab.
 
 :::caution Don't Forget:
