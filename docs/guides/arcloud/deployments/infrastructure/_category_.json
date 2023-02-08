@@ -1,0 +1,10 @@
+{
+  "label": "Infrastructure",
+  "position": 2,
+  "collapsed": true,
+   "link": {
+    "type": "generated-index",
+    "title": "Infrastructure",
+    "description": "This section includes information on how to setup the infrastructure required by ARCloud."
+  }
+}
