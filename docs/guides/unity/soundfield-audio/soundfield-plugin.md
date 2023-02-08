@@ -10,7 +10,7 @@ keywords: [Unity,Audio, MSA, Soundfield, Audio Toolkit]
 
 # Soundfield Plugin for Unity
 
-::: note
+:::note
 **Soundfield** is used interchangeably with **Magic Leap Spatial Audio (MSA)**.
 :::
 
@@ -35,7 +35,7 @@ For more information, please see Microsoft's official documentation [here](https
 
 ![Unity Soundfield open folder from Magic Leap Hub](/img/unity/soundfield-open-folder.png)
 
-![Unity Soundfield install from Magic Leap Hub](/img/unity/soundfield-Install-from-the-magic-leap-hub-2.png)
+![Unity Soundfield install from Magic Leap Hub](/img/unity/soundfield-path.jpg)
 
 3. Add this package from Unity's own Package Manager as a local file:
 
@@ -61,7 +61,7 @@ The reset should be performed on the `MLListener` component that is co-located w
 
 Resetting the Soundfield component in a prefab can be accomplished through the same process:
 
-1. Select the prefab in the Unity Project window and click **Open** in the Inspector window.
+1. Select the prefab in the Unity project window and click **Open** in the Inspector window.
 2. Reset each Soundfield component using the steps described above. The changes made inside the prefab will then be applied to all objects in the project using that prefab.
 
 :::caution Don't Forget:
@@ -136,6 +136,6 @@ Layers 0-7 in Unity were formerly restricted and should **not** be used for obst
 
 ## Project Audio Settings
 
-::: note
+:::note
 If the **DSP Buffer Size** property is changed either in editor play mode or at runtime it will cause Unity to stop all the currently playing audio sources. The only way for them to recover will be to start them manually.
 :::
