@@ -1,6 +1,6 @@
 ---
-id: arcloud-deployment-bare-metal-verification
-title: Verify ARCloud deployment
+id: arcloud-deployment-verification
+title: Verify deployment
 sidebar_position: 3
 date: 02/07/2023
 tags: [ARCLoud, Cloud, Mesh, Meshing, Map, Mapping]
@@ -25,7 +25,7 @@ Password: <base64-encoded string>
 Keycloak:
 ---------
 
-http://<ROUTER_LEASED_IP>/auth/
+http://<DOMAIN>/auth/
 
 Username: admin
 Password: <base64-encoded string>

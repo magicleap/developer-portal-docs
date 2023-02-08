@@ -36,6 +36,10 @@ brew install wget
 
 ## Install Kubernetes
 
+*NOTE: Kubernetes Recommended Requirements:*
+- 8 CPU's
+- 32 GB memory
+
 If your computer is connected to more than one network interfaces (example: *WiFi and Ethernet*) select which network IP you want to receive the Kubernetes related traffic.
 
 Export your **network IP** (IPv4) to an environment variable
@@ -91,6 +95,8 @@ Please, follow the official instructions for enabling Kubernetes on Docker Deskt
 ---
 
 ## Install Helm
+*NOTE: Helm Minimum version requirements 3.9.x*
+
 Please, follow the official instructions for installing Helm:
 - Ubuntu:
     - Apt: https://helm.sh/docs/intro/install/#from-apt-debianubuntu

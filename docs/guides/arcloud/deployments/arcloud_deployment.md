@@ -1,24 +1,14 @@
 ---
 id: arcloud-deployment-bare-metal
 title: Install ARCloud
-sidebar_position: 2
+sidebar_position: 1
 date: 02/07/2023
 tags: [ARCLoud, Cloud, Mesh, Meshing, Map, Mapping]
 keywords: [ARCLoud, Cloud, Mesh, Meshing, Map, Mapping]
 ---
-
 # Install ARCloud
-## Configure environment
-```shell
-export NAMESPACE="arcloud"
-export DOMAIN=${ROUTER_LEASED_IP}
 
-export REGISTRY_SERVER="quay.io"
-export REGISTRY_USERNAME="<username>"
-export REGISTRY_PASSWORD="<password>"
-```
-
-## Download ARCloud public release
+## Download ARCloud public release from [github](https://github.com/magicleap/arcloud/releases)
 ```shell
 wget -c https://github.com/magicleap/arcloud/archive/refs/tags/1.7.86.tar.gz -O - | tar -xz
 
@@ -27,6 +17,22 @@ wget -c https://github.com/magicleap/arcloud/archive/refs/tags/1.7.86.tar.gz -O 
 ```shell
 cd arcloud-1.7.86
 ```
+
+## Configure environment
+```shell
+export NAMESPACE="arcloud"
+export DOMAIN="<Network IPv4>"
+
+export REGISTRY_SERVER="quay.io"
+export REGISTRY_USERNAME="<username>"
+export REGISTRY_PASSWORD="<password>"
+```
+
+## Infrastructure setup
+Choose one of the following environments:
+- [Google Cloud](/docs/guides/arcloud/deployments/infrastructure/public-cloud/arcloud-deployment-gcs)
+- [AWS](/docs/guides/arcloud/deployments/infrastructure/public-cloud/arcloud-deployment-aws)
+- [All-In-One/Demo](/docs/guides/arcloud/deployments/infrastructure/bare-metal/arcloud-deployment-environment-setup)
 
 ## Install Istio
 ```shell
@@ -46,6 +52,8 @@ kubectl -n istio-system apply -f ../setup/gateway.yaml
 ```shell
 cd ../
 ```
+
+*NOTE: for AWS deployment, execute the additional steps [AWS - Istio](docs/guides/arcloud/deployments/infrastructure/public-cloud/arcloud-deployment-aws-istio)
 
 ## Install certificate manager
 ```shell
