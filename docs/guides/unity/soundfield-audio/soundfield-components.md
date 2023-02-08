@@ -14,7 +14,7 @@ keywords: [Unity,Audio, MSA, Soundfield]
 
 Extends Unity's AudioListener features by introducing additional parameters related to global spatialization. The MSAListener component has settings for global reverb and transmission properties.
 
-![MSAListener component settings](/img/unity/ml-listener.png)
+![MSAListener component settings](/img/unity/enable_acoustic_map.png)
 
 **Enable Acoustic Map**: Acoustic Map data is a device-curated representation of the acoustics of the local physical environment. Enabling the Acoustic Map makes virtual objects sound as though they exist in the local environment.
 
@@ -70,15 +70,19 @@ When an `MLListener` gets instantiated it will first check the `MSAGlobalScripta
 
 - If the `MLListener` prefab has not been set, it will create a new `MLListener` with default properties.
 
+![MSA Global Scriptable Object](/img/unity/msa_scriptable_object.png)
+
 The `MLListener` prefab allows the developer to configure the desired component properties.
 
 
-note:::
+:::note
 It is possible to disable the Auto creation feature by unchecking the **Auto Create ML Listener** option.
 :::
 
 
 When an `MLListener` has been automatically created the UI will provide an option to make it a permanent component that could be saved with this scene.
+
+![MLListener Auto Create](/img/unity/ml_listener_auto.png)
 
 This is to ensure that when a developer has manually instantiated an MLPointSource into a scene that didn't have a prior MLListener it can be saved.
 
