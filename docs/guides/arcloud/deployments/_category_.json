@@ -1,0 +1,10 @@
+{
+  "label": "Deployments",
+  "position": 1,
+  "collapsed": true,
+   "link": {
+    "type": "generated-index",
+    "title": "Deployments",
+    "description": "This section includes information on how to deploy ARCloud."
+  }
+}

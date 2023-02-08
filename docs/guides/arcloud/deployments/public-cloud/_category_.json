@@ -1,0 +1,10 @@
+{
+  "label": "Public Cloud",
+  "position": 1,
+  "collapsed": true,
+   "link": {
+    "type": "generated-index",
+    "title": "Public Cloud",
+    "description": "This section includes information on how to deploy ARCloud on a public cloud like Google Cloud Services (GCS) or Amazon Web Services (AWS)."
+  }
+}
