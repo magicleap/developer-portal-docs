@@ -5,9 +5,29 @@ sidebar_position: 2
 date: 02/07/2023
 tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm, AWS]
 keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm, AWS]
+description: "Enterprise deployment to Amazon Web Services (AWS)."
 ---
-# AWS Setup
-#### Kubernetes Recommended Requirements
+import DownloadArcloud from './_download_arcloud.mdx'
+import InstallIstio from './_install_istio.mdx'
+import InstallIstioAws from './_install_istio_aws.mdx'
+import InstallArcloud from './_install_arcloud.mdx'
+import DeploymentVerification from './_deployment_verification.mdx'
+
+## Prerequisites
+<DownloadArcloud />
+
+### Tools
+Make sure that the following tools are installed and configured:
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+- [eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
+-   SSH client - a key pair is required and can be generated using:
+```shell
+ssh-keygen -t rsa -b 4096
+```
+
+## Infrastructure Setup
+
+### Kubernetes System Recommendations
 - Version **1.23.x, 1.24.x, 1.25.x**
 - 8 Nodes (each with):
   - 8 CPU's
@@ -18,16 +38,7 @@ Example [instance types in AWS](https://aws.amazon.com/ec2/instance-types/):
 - 4 * m5.large
 - 2 * m5.xlarge
 
-## Tools
-Make sure that the following tools are installed and configured:
-- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
-- [eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
--   SSH client - a key pair is required and can be generated using:
-```shell
-ssh-keygen -t rsa -b 4096
-```
-
-## Environment Settings
+### Environment Settings
 In your terminal configure the following variables per your environment:
 ```shell
 export DOMAIN="arcloud.domain.tld"
@@ -40,13 +51,13 @@ export AWS_REGION="your-region"
 export AWS_CLUSTER_NAME="your-cluster-name"
 ```
 
-## Sample cluster configurations
+### Sample cluster configurations
 
 The two options below are alternatives that can be used depending on your preferences:
 - Option 1 - an unmanaged node group is used, manual installation of add-ons is required
 - Option 2 - an managed node group is used, add-ons and service accounts are installed automatically
 
-### Option 1: Bare-bone cluster with non-managed node group
+#### Option 1: Bare-bone cluster with non-managed node group
 
 Adjust the `./setup/eks-cluster.yaml` file to your needs and create the cluster:
 ```shell
@@ -70,7 +81,7 @@ Complete the following guides to install additional required cluster components:
 
 *NOTE: In case of problems installing the VPC CNI plugin, do not provide the version, so the default one is used instead.*
 
-### Option 2: Preconfigured cluster with managed node group and preinstalled add-ons
+#### Option 2: Preconfigured cluster with managed node group and preinstalled add-ons
 
 Adjust the `./setup/eks-cluster-managed-with-addons.yaml` file to your needs and create
 the cluster:
@@ -122,3 +133,20 @@ eksctl get addons --region $AWS_REGION --cluster $AWS_CLUSTER_NAME -o yaml
 ```
 
 There should be 2 add-ons and their status should be ACTIVE.
+
+## Install Istio
+*NOTE: Istio Minimum Requirements:*
+- AR Cloud requires Istio **version 1.16.x**.
+- DNS Pre-configured with corresponding certificate for TLS
+- Configure Istio Gateway
+- Open the MQTT Port (8883)
+
+<InstallIstio />
+
+<InstallIstioAws />
+
+## Install ARCloud
+<InstallArcloud />
+
+## Verify Installation
+<DeploymentVerification />

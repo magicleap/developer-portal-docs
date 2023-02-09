@@ -1,0 +1,19 @@
+### Download ARCloud public release from [github](https://github.com/magicleap/arcloud/releases)
+```shell
+wget -c https://github.com/magicleap/arcloud/archive/refs/tags/1.7.86.tar.gz -O - | tar -xz
+
+```
+
+```shell
+cd arcloud-1.7.86
+```
+
+### Configure environment
+```shell
+export NAMESPACE="arcloud"
+export DOMAIN="<Network IPv4>"
+
+export REGISTRY_SERVER="quay.io"
+export REGISTRY_USERNAME="<username>"
+export REGISTRY_PASSWORD="<password>"
+```
