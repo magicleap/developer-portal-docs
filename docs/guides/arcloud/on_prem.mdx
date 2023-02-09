@@ -1,29 +1,43 @@
 ---
-id: arcloud-deployment-environment-setup
-title: Environment Setup
-sidebar_position: 1
+id: arcloud-deployment-on-prem
+title: On Prem Setup
+sidebar_position: 3
 date: 02/07/2023
 tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm]
 keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm]
+description: "Demo server or developer's laptop."
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-# Environment setup
+import DownloadArcloud from './_download_arcloud.mdx'
+import InstallIstio from './_install_istio.mdx'
+import InstallArcloud from './_install_arcloud.mdx'
+import DeploymentVerification from './_deployment_verification.mdx'
 
-## Install Docker  
+## Prerequisites
+<DownloadArcloud />
 
-**Ubuntu 20.04 steps**
+## Infrastructure setup
+
+### Install Docker  
+
+<Tabs>
+  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+
 ```shell
 curl https://releases.rancher.com/install-docker/20.10.sh | sh
 ```
-*Post installtion step: manage docker as a non-root user.  
+*Post installtion step: manage docker as a non-root user.
 
----
-**Windows 10 (and up) with WSL2**
+  </TabItem>
+  <TabItem value="windows" label="Windows 10">
 
+Windows 10 (and up) with WSL2
 Please, follow the official installation steps for Docker Desktop for Windows: https://docs.docker.com/desktop/install/windows-install/
 
----
-**MacOS**
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
 
 Please, follow the official installation steps for Docker Desktop for MacOS: https://docs.docker.com/desktop/install/mac-install/
 
@@ -34,8 +48,11 @@ Additional tools:
 brew install wget
 ```
 
-## Install Kubernetes
+  </TabItem>
+</Tabs>
 
+
+### Install Kubernetes
 *NOTE: Kubernetes Recommended Requirements:*
 - 8 CPU's
 - 32 GB memory
@@ -47,8 +64,10 @@ Export your **network IP** (IPv4) to an environment variable
 export ROUTER_LEASED_IP=<your network adapter IP>
 ```
 
----
-**Ubuntu 20.04 (K3s Kubernetes Distribution by Rancher)**
+<Tabs>
+  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+
+**Installing K3s - Kubernetes Distribution by Rancher**
 
 Removing previous Rancher K3s Kubernetes installation (skip if you do not have K3s installed):
 ```shell
@@ -82,19 +101,21 @@ Verify that K3s service is running:
 systemctl status k3s
 ```
 
----
-**Windows 10 (and up) with WSL2**
+  </TabItem>
+  <TabItem value="windows" label="Windows 10">
 
-Please, follow the official instructions for enabling Kubernetes on Docker Desktop: https://docs.docker.com/desktop/kubernetes/
+Follow the official instructions for enabling Kubernetes on Docker Desktop: https://docs.docker.com/desktop/kubernetes/
 
----
-**MacOS**
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
 
-Please, follow the official instructions for enabling Kubernetes on Docker Desktop: https://docs.docker.com/desktop/kubernetes/
+Follow the official instructions for enabling Kubernetes on Docker Desktop: https://docs.docker.com/desktop/kubernetes/
 
----
+  </TabItem>
+</Tabs>
 
-## Install Helm
+
+### Install Helm
 *NOTE: Helm Minimum version requirements 3.9.x*
 
 Please, follow the official instructions for installing Helm:
@@ -105,3 +126,12 @@ Please, follow the official instructions for installing Helm:
 - MacOS: https://helm.sh/docs/intro/install/#from-homebrew-macos
 
 or from a script: https://helm.sh/docs/intro/install/#from-script
+
+## Install Istio
+<InstallIstio />
+
+## Install ARCloud
+<InstallArcloud />
+
+## Verify Installation
+<DeploymentVerification />
