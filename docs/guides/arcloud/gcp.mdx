@@ -15,6 +15,10 @@ import DeploymentVerification from './_deployment_verification.mdx'
 ## Prerequisites
 <DownloadArcloud />
 
+```shell
+export DOMAIN="arcloud.domain.tld"
+```
+
 ## Infrastructure Setup
 To get started as quickly as possible, refer to these simple setup steps using [google cloud](https://cloud.google.com/sdk/docs/install).
 
@@ -31,10 +35,6 @@ Example [machine types in GCP](https://cloud.google.com/compute/docs/general-pur
 
 ### Environment Settings
 In your terminal configure the following variables per your environment.
-```shell
-export DOMAIN="arcloud.domain.tld"
-```
-
 ```shell
 export GC_PROJECT_ID="your-project"
 export GC_REGION="your-region"
