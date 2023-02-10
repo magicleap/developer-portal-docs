@@ -19,7 +19,7 @@ The purpose of this document is to help Magic Leap app developers understand how
 
 ## Useful Links
 
-- [System Voice Intents](/versioned_docs/version-1.1.0-dev2/guides/features/android-intents-overview#system-voice-intents)
+- [System Voice Intents](/versioned_docs/version-1.1.0-dev2/guides/features/voice-commands/voice-commands.md)
 - [Unity Voice Input](/versioned_docs/version-1.1.0-dev2/guides/unity/input/voice-intents/voice-intents-overview.md)
 - [CAPI Voice Input](/versioned_docs/version-1.1.0-dev2/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)
 

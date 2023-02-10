@@ -78,6 +78,6 @@ public class CustomStereoConvergencePointDistance : MonoBehaviour
 
 import Link from '@docusaurus/Link';
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/best-practices/improve-visual-stability"> Improve Content Stability Overview</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/best-practices/improve-visual-stability"> Improve Content Stability Overview</Link> </h3>
 
 Learn more about how Magic Leap's focus distance improves the appearance of content stability.

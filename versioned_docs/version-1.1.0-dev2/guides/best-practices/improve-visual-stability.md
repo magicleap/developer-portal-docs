@@ -80,6 +80,6 @@ Please consult the recommendations section above to understand how to avoid fall
 
 import Link from '@docusaurus/Link';
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/unity/display/unity-stabilization-overview"> Improve Content Stability Unity</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/unity/display/unity-stabilization-overview"> Improve Content Stability Unity</Link> </h3>
 
 Learn how to use the Magic Leap Camera component and it's focus distance to improve visual stability.

@@ -92,14 +92,14 @@ You may get a pop-up that shows that the Android SDK is outdated when clicking *
 
 import Link from '@docusaurus/Link';
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/unity/sdk-example-scenes/sdk-install-setup"> Unity Examples Project</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/unity/sdk-example-scenes/sdk-install-setup"> Unity Examples Project</Link> </h3>
 
 After successfully creating a new application, check out the pre-configured Magic Leap Unity Examples Project to see some of Magic Leap's unique platform features.
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/unity/app-simulator/unity-app-simulator"> Magic Leap App Simulator</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/unity/app-simulator/unity-app-simulator"> Magic Leap App Simulator</Link> </h3>
 
 The Magic Leap App Simulator can be used to test applications much faster, without deploying them to the physical device. See our Magic Leap App Simulator for Unity section to learn how to configure your unity settings to run applications in the Simulator.
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/third-party/mrtk/mrtk-setup"> MRTK for Magic Leap</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/third-party/mrtk/mrtk-setup"> MRTK for Magic Leap</Link> </h3>
 
 Developers can quickly build or upgrade applications using Magic Leap's MRTK support package. See the MRTK for Magic Leap guide to learn how to use the MRTK for Magic Leap package in your project.

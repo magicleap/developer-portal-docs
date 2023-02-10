@@ -43,14 +43,14 @@ Open your Project's Graphics settings (**Edit > Project Settings** then select *
 
 import Link from '@docusaurus/Link';
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/unity/getting-started/unity-building-simple-app"> Build A Simple Application</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/unity/getting-started/unity-building-simple-app"> Build A Simple Application</Link> </h3>
 
 Learn how to [build and deploy an application](/versioned_docs/version-1.1.0-dev2/guides/unity/getting-started/unity-building-simple-app.md) a Magic Leap 2 application. 
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/unity/app-simulator/unity-app-simulator"> Configure App Simulator </Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/unity/app-simulator/unity-app-simulator"> Configure App Simulator </Link> </h3>
 
 The Magic Leap App Simulator can be used to test applications much faster, without deploying them to the physical device. See our [App Simulator for Unity](/versioned_docs/version-1.1.0-dev2/guides/unity/app-simulator/unity-app-simulator.md) section to learn how to configure your unity settings to run applications in the Simulator.
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/third-party/mrtk/mrtk-setup"> Using MRTK for Magic Leap </Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/third-party/mrtk/mrtk-setup"> Using MRTK for Magic Leap </Link> </h3>
 
 Developers can quickly build or upgrade applications using Magic Leap's MRTK support package. See the [MRTK Magic Leap Getting Started Guide](/versioned_docs/version-1.1.0-dev2/guides/third-party/mrtk/mrtk-setup.md) to learn how to use the MRTK for Magic Leap package in your project.

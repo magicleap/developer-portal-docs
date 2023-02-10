@@ -27,6 +27,6 @@ Create a new project using the Universal Render Pipeline template. Although Magi
 
 import Link from '@docusaurus/Link';
 
-<h3><Link to="/versioned_docs/version-1.1.0-dev2/guides/unity/getting-started/configure-unity-settings"> Configure Project Settings</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/unity/getting-started/configure-unity-settings"> Configure Project Settings</Link> </h3>
 
 After creating a new Unity project, learn how to configure your project so you can build and deploy Magic Leap 2 applications.
