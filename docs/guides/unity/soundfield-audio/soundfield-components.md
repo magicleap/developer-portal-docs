@@ -14,9 +14,7 @@ keywords: [Unity,Audio, MSA, Soundfield]
 
 Extends Unity's AudioListener features by introducing additional parameters related to global spatialization. The MSAListener component has settings for global reverb and transmission properties.
 
-![MSAListener component settings](/img/unity/ml-listener.png)
-
-**OS-Offload Mode**: When this option is enabled it offloads the MSA spatialization process on the device hardware.
+![MSAListener component settings](/img/unity/enable_acoustic_map.png)
 
 **Enable Acoustic Map**: Acoustic Map data is a device-curated representation of the acoustics of the local physical environment. Enabling the Acoustic Map makes virtual objects sound as though they exist in the local environment.
 
@@ -54,6 +52,39 @@ Transmission is specified using `MultibandLevelProperties`, which includes gain 
 - **Decay Time**: Decay time (secs) for late reverberation.
 - **Decay Time LF Ratio**: Relative reverberation decay time multiplying factor for low frequencies.
 - **Decay Time HF Ratio**: Relative reverberation decay time multiplying factor for high frequencies.
+
+### Auto-Instantiation
+A typical Unity scene will always have an `MLListener` component present that will be responsible for servicing and outputting the binaural audio for all the `MLPointSource` components that are present. However, this approach makes it difficult to handle dynamic loading or unloading of multiple scenes both during editing and at runtime.
+
+`MLListener` provides a mechanism to ensure that when an `MLPointSource` is spawned in a scene an `MLListener` component will always be present in order to ensure the source is supported.
+
+#### Additive Scene Loading
+
+While it is needed to hear sound from an `MLPointSource`, adding another `MLListener` component to any additively loaded scene will cause your build to fail at runtime.
+
+To solve this, an `MLListener` component is instantiated automatically at runtime to temporarily support the `MLPointsource` components in the current scene. This temporary instantiation will not be included when the scene is saved in order to prevent more than one `MLListener` component from existing simultaneously in the application. 
+
+When an `MLListener` gets instantiated it will first check the `MSAGlobalScriptableObject` to see if a listener prefab has been set. 
+
+- If the `MLListener` prefab has been set, it will instantiate a game object underneath the game object that has either an `AudioListener` or the main camera.
+
+- If the `MLListener` prefab has not been set, it will create a new `MLListener` with default properties.
+
+![MSA Global Scriptable Object](/img/unity/msa_scriptable_object.png)
+
+The `MLListener` prefab allows the developer to configure the desired component properties.
+
+
+:::note
+It is possible to disable the Auto creation feature by unchecking the **Auto Create ML Listener** option.
+:::
+
+
+When an `MLListener` has been automatically created the UI will provide an option to make it a permanent component that could be saved with this scene.
+
+![MLListener Auto Create](/img/unity/ml_listener_auto.png)
+
+This is to ensure that when a developer has manually instantiated an MLPointSource into a scene that didn't have a prior MLListener it can be saved.
 
 ## ML Point Source
 
@@ -143,6 +174,19 @@ This component provides different types of logging to output to the Unity consol
 :::note
 If the `MLDebugInfo` component is not present in the scene then ALL log types will be output by default.
 :::
+
+- **Managed Logs**: Displays logs reported by the Unity components (C#)
+
+  - **Managed Log Level**: Selects the type of log messages to display  (Error, Warning, Info)
+  - **Enable ML Listener Debug**: Enables logs reported by the ML Listener component
+  - **Enable ML Point Source Debug**: Enables logs reported by the ML Point Source component
+  - **Enable ML Ambisonic Source Debug**: Enables logs reported by the ML Ambisonic Source component
+
+- **Native Logs**:
+
+  - **Register Native Logs**: Enables logs from the native (C++) plugin
+
+  - **Native Log level**: Selects the type of log messages to display (Error, Warning, Info, Debug, Verbose)
 
 ## Unity Analysis Component
 

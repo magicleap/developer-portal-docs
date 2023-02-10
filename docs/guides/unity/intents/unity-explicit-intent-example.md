@@ -21,9 +21,10 @@ using UnityEngine;
 public class IntentExample : MonoBehaviour
 {
 
-    // The ID of the space you want to localize into
-    public string SpaceId = "targetSpaceID";
-    // Pass 0 for OnDevice and 1 for ARCloud.
+    [Tooltip("The ID of the space you want to localize into.")]
+    public string SpaceId = "{target-space-id}";
+    
+    [Tooltip("0 for OnDevice | 1 for ARCloud.")]
     public string mapMode = "0";
 
     // Activity action: Launch the Mapping Tool activity to select a particular space
@@ -47,7 +48,7 @@ public class IntentExample : MonoBehaviour
         {
             if (!Application.isEditor)
             {
-                OpenActivity();
+                OpenSpacesApp(SpaceId);
             }
         }
         catch (Exception e)
@@ -56,17 +57,21 @@ public class IntentExample : MonoBehaviour
         }
     }
 
-    private void OpenActivity()
+    private void OpenSpacesApp(string spaceID)
     {
 #if UNITY_MAGICLEAP || UNITY_ANDROID
-        using (var unityClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
-        using (AndroidJavaObject currentActivityObject = unityClass.GetStatic<AndroidJavaObject>("currentActivity"))
-        using (var intentObject = new AndroidJavaObject("android.content.Intent", selectSpaceId))
+        try
+        { 
+            AndroidJavaClass activityClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            AndroidJavaObject activity = activityClass.GetStatic<AndroidJavaObject>("currentActivity");
+            AndroidJavaObject intent = new AndroidJavaObject("android.content.Intent",selectSpaceId);
+            intent.Call<AndroidJavaObject>("putExtra",extraSpaceID,spaceID);
+            intent.Call<AndroidJavaObject>("putExtra",extraMappingMode,mapMode);
+            activity.Call("startActivityForResult",intent,0);
+        }
+        catch (Exception e)
         {
-            currentActivityObject.Call("startActivity", intentObject);
-            intentObject.Call<AndroidJavaObject>("putExtra", extraSpaceID, SpaceId);
-            intentObject.Call<AndroidJavaObject>("putExtra", extraMappingMode, mapMode);
-            currentActivityObject.Call("startActivityForResult", intentObject, 0);
+            Debug.LogError("Error while launching spaces app: " + e);
         }
 #endif
     }
