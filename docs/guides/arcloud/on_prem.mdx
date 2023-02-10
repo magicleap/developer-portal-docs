@@ -1,11 +1,11 @@
 ---
 id: arcloud-deployment-on-prem
-title: On Prem Setup
+title: Desktop
 sidebar_position: 3
 date: 02/07/2023
 tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm]
 keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm]
-description: "Demo server or developer's laptop."
+description: "Demo server or developer's desktop."
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -17,6 +17,10 @@ import DeploymentVerification from './_deployment_verification.mdx'
 
 ## Prerequisites
 <DownloadArcloud />
+
+```shell
+export DOMAIN="<your network adapter IP(IPv4)>"
+```
 
 ## Infrastructure setup
 
@@ -33,13 +37,12 @@ curl https://releases.rancher.com/install-docker/20.10.sh | sh
   </TabItem>
   <TabItem value="windows" label="Windows 10">
 
-Windows 10 (and up) with WSL2
-Please, follow the official installation steps for Docker Desktop for Windows: https://docs.docker.com/desktop/install/windows-install/
+Installation steps for Docker Desktop for [Windows 10 (and up) with WSL2](https://docs.docker.com/desktop/install/windows-install/)
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Please, follow the official installation steps for Docker Desktop for MacOS: https://docs.docker.com/desktop/install/mac-install/
+Installation steps for Docker Desktop for [MacOS](https://docs.docker.com/desktop/install/mac-install/)
 
 Additional tools:
 - Install `Homebrew` if you need to: https://brew.sh/
@@ -104,12 +107,12 @@ systemctl status k3s
   </TabItem>
   <TabItem value="windows" label="Windows 10">
 
-Follow the official instructions for enabling Kubernetes on Docker Desktop: https://docs.docker.com/desktop/kubernetes/
+Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Follow the official instructions for enabling Kubernetes on Docker Desktop: https://docs.docker.com/desktop/kubernetes/
+Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
 
   </TabItem>
 </Tabs>
@@ -118,14 +121,23 @@ Follow the official instructions for enabling Kubernetes on Docker Desktop: http
 ### Install Helm
 *NOTE: Helm Minimum version requirements 3.9.x*
 
-Please, follow the official instructions for installing Helm:
-- Ubuntu:
-    - Apt: https://helm.sh/docs/intro/install/#from-apt-debianubuntu
-    - Snap: https://helm.sh/docs/intro/install/#from-snap
-- Windows: https://helm.sh/docs/intro/install/#from-chocolatey-windows
-- MacOS: https://helm.sh/docs/intro/install/#from-homebrew-macos
+<Tabs>
+  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
 
-or from a script: https://helm.sh/docs/intro/install/#from-script
+Installing Helm using [Apt](https://helm.sh/docs/intro/install/#from-apt-debianubuntu)
+
+  </TabItem>
+  <TabItem value="windows" label="Windows 10">
+
+Installing Helm using [Chocolatey](https://helm.sh/docs/intro/install/#from-chocolatey-windows)
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+Installing Helm [Homebrew](https://helm.sh/docs/intro/install/#from-homebrew-macos)
+
+  </TabItem>
+</Tabs>
 
 ## Install Istio
 <InstallIstio />

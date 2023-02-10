@@ -16,6 +16,10 @@ import DeploymentVerification from './_deployment_verification.mdx'
 ## Prerequisites
 <DownloadArcloud />
 
+```shell
+export DOMAIN="arcloud.domain.tld"
+```
+
 ### Tools
 Make sure that the following tools are installed and configured:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
@@ -40,9 +44,6 @@ Example [instance types in AWS](https://aws.amazon.com/ec2/instance-types/):
 
 ### Environment Settings
 In your terminal configure the following variables per your environment:
-```shell
-export DOMAIN="arcloud.domain.tld"
-```
 
 ```shell
 export AWS_PROFILE="your-profile"
