@@ -1,6 +1,6 @@
 ---
 id: voice-design-guidelines
-title: Voice Intent Design Guidelines
+title: Design Guidelines
 sidebar_position: 7
 date: 08/30/2022
 tags: [Unity, Input, Voice, Voice Intents]

@@ -1,10 +1,10 @@
 ---
-id: unity-bluetooth-input-walkthrough
-title: Magic Leap Bluetooth Support
-sidebar_position: 1
+id: bluetooth-input
+title: Bluetooth
+sidebar_position: 0
 date: 01/14/2023
-tags: [Unity, Input, Bluetooth]
-keywords: [Unity, Input, Bluetooth]
+tags: [Input, Bluetooth]
+keywords: [Input, Bluetooth]
 ---
 
 Magic Leap 2 provides support for Android’s default Bluetooth stack which includes both Classic Bluetooth and Bluetooth Low Energy. Using Bluetooth, Magic Leap 2 can create personal area networks to send and receive data with nearby Bluetooth devices. Integration with Android’s standard Bluetooth API means that users can connect existing Bluetooth devices that are supported on Android without any modification. Bluetooth devices can be connected in Magic Leap 2’s system settings using the steps below

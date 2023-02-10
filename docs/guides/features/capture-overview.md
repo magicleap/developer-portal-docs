@@ -1,7 +1,7 @@
 ---
 id: capture-overview
 title: System Capture
-sidebar_position: 1
+sidebar_position: 11
 date: 08/29/2022
 tags: [Features, Capture, Media, Video, Photo, Screenshot, ML Hub, Device Bridge, ADB]
 keywords: [Features, Capture, Media, Video, Photo, Screenshot, ML Hub, Device Bridge, ADB]

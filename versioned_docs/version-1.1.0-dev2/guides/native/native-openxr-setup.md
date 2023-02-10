@@ -21,7 +21,7 @@ OpenXR samples source code is available in the Magic Leap Hub.
 
 - Native SDK Version `1.0.0`
 - OpenXR SDK Version `1.0.25` or higher
-- Completed [Magic Leap Native SDK instructions.](/versioned_docs/version-1.1.0-dev2/guides/native/getting-started/native-getting-started)
+- Completed [Magic Leap Native SDK instructions.](/versioned_docs/version-1.1.0-dev2/guides/native/getting-started/native-getting-started.md)
 
 ## Limitations
 
@@ -143,6 +143,6 @@ Make sure to use OpenXR 1.0.25 or higher.
 
 ## Building the Magic Leap OpenXR samples
 
-To build the Magic Leap OpenXR samples please follow the normal [Magic Leap Native SDK instructions.](/versioned_docs/version-1.1.0-dev2/guides/native/getting-started/native-getting-started).
+To build the Magic Leap OpenXR samples please follow the normal [Magic Leap Native SDK instructions.](/versioned_docs/version-1.1.0-dev2/guides/native/getting-started/native-getting-started.md).
 
 These samples can be built using Android Studio or command line via Gradle.

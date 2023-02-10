@@ -37,4 +37,4 @@ If you are using Magic Leap's AR Cloud. Anchors will be shared between devices a
 - Q: Is it possible to re-localize to multiple maps at the same time?
   - A: No because we only localize to the space you choose.
 - Q: Can the map tool be part of a start-up procedure?
-  - A: Your application is able to launch the map tool using [Android Intents](docs/guides/features/android-intents-overview.md).
+  - A: Your application is able to launch the map tool using [Android Intents](/docs/guides/features/android-intents-overview.md).

@@ -95,6 +95,6 @@ This tool can be used to configure new projects in the future. Note, the validat
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<h3><Link to={useBaseUrl("/versioned_docs/version-1.1.0-dev2/guides/unity/getting-started/graphics-settings")}> Configure Render Pipeline Settings</Link> </h3>
+<h3><Link to="/docs/1.1.0-dev2/guides/unity/getting-started/graphics-settings"> Configure Render Pipeline Settings</Link> </h3>
 
 After configuring your project's settings, learn how to create and optimize your project's rendering for Magic Leap 2.
