@@ -64,7 +64,7 @@ Dive deeper into the Magic Leap 2's capabilities with these guides.
     <td>
       <a href="/docs/guides/features/android-intents-overview">
         <img src="/img/ml2-overview/android-logo.png" width="202" />
-        <div class="ml2-overview-image-text">Intents</div>
+        <div class="ml2-overview-image-text">Android Intents</div>
       </a>
     </td>
     <td>
@@ -76,7 +76,7 @@ Dive deeper into the Magic Leap 2's capabilities with these guides.
     <td>
       <a href="/docs/guides/third-party/ptc">
         <img src="/img/ml2-overview/ptc-logo.png" width="202" />
-        <div class="ml2-overview-image-text">PTC</div>
+        <div class="ml2-overview-image-text">PTC Vuforia Engine</div>
       </a>
     </td>
   </tr>
@@ -90,7 +90,7 @@ Dive deeper into the Magic Leap 2's capabilities with these guides.
     <td>
       <a href="/docs/guides/features/dimmer-feature">
         <img src="/img/ml2-overview/segmented-dimmer.png" width="202" />
-        <div class="ml2-overview-image-text">Dimming</div>
+        <div class="ml2-overview-image-text">Dynamic Dimming</div>
       </a>
     </td>
     <td>
@@ -111,13 +111,13 @@ Test ML2 features using the example projects below.
     <td>
       <a href="/docs/guides/unity/sdk-example-scenes">
         <img src="/img/ml2-overview/unity-logo.png" width="202" />
-        <div class="ml2-overview-image-text">Unity</div>
+        <div class="ml2-overview-image-text">Unity Examples</div>
       </a>
     </td>
     <td>
       <a href="/docs/guides/native/capi-samples">
         <img src="/img/ml2-overview/magicleap-logo.png" width="202" />
-        <div class="ml2-overview-image-text">Native</div>
+        <div class="ml2-overview-image-text">Native Examples</div>
       </a>
     </td>
   </tr>
