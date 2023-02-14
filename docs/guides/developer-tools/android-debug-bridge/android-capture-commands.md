@@ -1,7 +1,7 @@
 ---
 id: android-capture-commands
 title: Android Capture Commands
-sidebar_position: 0
+sidebar_position: 3
 date: 08/17/2022
 tags: [Android Debug Bridge, adb, command line, screen capture, screen record, capture]
 keywords: [Android Debug Bridge, adb, command line, screen capture, screen record, capture]
