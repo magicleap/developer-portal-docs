@@ -7,13 +7,14 @@ date: 02/13/2023
 
 # HoloLens to Magic Leap 2 Unity Porting Guide
 
-Porting your MRTK-based HoloLens project to Magic Leap 2 requires only a few adjustments to your input system and Unity build environment. Using the Magic Leap 2 Unity SDK and MRTK-Magic Leap plugin according to this guide will get your project running on the Magic Leap 2 with minimal effort. 
+Porting your MRTK-based HoloLens project to Magic Leap 2 requires only a few adjustments to your Unity project environment. Using the Magic Leap 2 Unity SDK and MRTK Magic Leap 2 plugin according to this guide will get your project running on the Magic Leap 2 with minimal effort.
 
 :::note
-The MRTK-Magic Leap plugin currently only supports MRTK v2.8 
+The MRTK Magic Leap 2 plugin currently only supports MRTK v2.8
 :::
 
 ## Platform Overview
+
 There are several key differences between the HoloLens 2 and Magic Leap 2 MRTK development environment:
 
 | | HoloLens 2 | Magic Leap 2 |
@@ -35,35 +36,28 @@ There are several key differences between the HoloLens 2 and Magic Leap 2 MRTK d
 |Voice| x | x |
 |Eye Tracking| x | x |
 
-## Porting Prerequisites:
+## Porting Prerequisites
+
 - Your project must use Microsoft MRTK
-- You have downloaded and installed the latest compatible versions of the Magic Leap Unity SDK, MRTK-Magic Leap package, and Unity editor
+- You have downloaded and installed the latest compatible versions of the Magic Leap Unity SDK, MRTK Magic Leap 2 package, and Unity editor
 
 ## Update your Unity Project for Magic Leap 2
-Please refer to the Unity Getting Started guides to update your project to be compatible with Magic Leap 2. Most notably:
 
-- You must use Unity editor version 2022.2.x or higher according to the ML2 SDK you are planning to use. Please refer to the OS/SDK compatibility matrix for more information.
-- Upon installing the Magic Leap Unity SDK package, you can use the Project Validation tool to help configure your editor settings for Magic Leap 2 development.
-- You must be using the Universal Render Pipeline.
-- Download and install the MRTK-Magic Leap package according to this guide.
+The following steps are outlined in detail in the [Set Up MRTK for Magic Leap 2] guide:
 
+### Part 1: Update and configure your Unity project settings
 
-## Configure Unity Input System 
-The MRTK- Magic Leap plugin relies on both the legacy and new Unity input system. 
-To adjust these settings:
-- Go to **Edit > Project Settings > Player > Other Settings** and set **Active Input Handling** to **Both**.
+1. [Update your Unity editor] version to **2022.2.0b7 or higher** using Unity Hub.
+2. [Download and install] the latest compatible versions of the Magic Leap OS and Magic Leap SDK (v1.1.0-dev1 or newer). Use this [compatibility matrix] to check version compatibility.
+3. Open your Unity project in the new version of the Unity editor and complete the steps in the [Configure Project Settings] Unity guide.
+4. Follow the [Render Pipeline Settings] Unity guide to change your render pipeline settings to the Universal Render Pipeline .
 
-## MRTK Profile configuration for Magic Leap 2
-Once you have installed the packages listed above and changed your Unity project settings to build to the Magic Leap 2, make sure to change the following configuration profiles on the Mixed Reality Toolkit prefab to be Magic Leap 2 compatible:
+### Part 2: Implement the MRTK - Magic Leap 2 plugin
 
-- **Camera system type**: MagicLeap 2 Default Camera Profile
-- **Input System type**: MagicLeap 2 InputSystemProfile
-
-You can open the example scenes from the MRTK-Magic Leap Unity package available in Magic Leap Hub to view Mixed Reality Toolkit prefab settings for Controller, Hand Tracking, Eye Gaze and other interaction methods. 
-
-More information on configuring hand tracking for the Magic Leap 2 using MRTK can be found here.
+1. Follow the [Set Up MRTK for Magic Leap 2] guide to configure MRTK to work with the MRTK Magic Leap 2 plugin.
 
 ## Further resources
-- Magic Leap 2 Unity Getting Started
-- Setting Up MRTK with Magic Leap 2
-- Known issues with MRTK for Magic Leap 2
+
+- [Magic Leap 2 Unity Getting Started]
+- [Setting Up MRTK with Magic Leap 2]
+- [Known issues with MRTK for Magic Leap 2]
