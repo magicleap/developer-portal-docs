@@ -7,9 +7,9 @@ date: 02/13/2023
 
 # Hardware Overview
 
-This section provides an overview of ML2 hardware specifications, with links to other detailed architecture documentation for more details.
+This section provides an overview of Magic Leap 2 hardware specifications.
 
-## Magic Leap 2 Core OS 
+## Magic Leap 2 Core OS
 
 Magic Leap 2 is built on top of the [Android Open Source Project](https://source.android.com/) (AOSP), Android 10 (Q) API level 29, which means:
 
@@ -23,25 +23,21 @@ Magic Leap 2 is built on top of the [Android Open Source Project](https://source
 
 ### Processors
 
-Changes in the processors are shown in the table below:
-
-| |  |  |
-|:-- | --- | --- |
-|Architecture ||x86_64 |
-|Processor (only part of it will be available for apps)| |4 x86 cores |
-|Total Flash Storage| | NVMe 128-256 G|
+| |    |
+|:-- |  --- |
+|Architecture |x86_64 |
+|Processor (only part of it will be available for apps)|4 x86 cores |
+|Total Flash Storage | NVMe 128-256 G|
 
 ### Graphics and Display
 
-
-| | | |
-|:-- | --- | --- |
-|GPU |  | Navi 2 with 4 WGP (8 CUs) |
-|GPU system budget || 2 ms |
-|GPU app budget | | 12 ms |
-|FoV ||45H x 55V (70D)|
-|Resolution||1440 x 1760|
-
+| |  |
+|:-- | --- |
+|GPU   | Navi 2 with 4 WGP (8 CUs) |
+|GPU system budget | 2 ms |
+|GPU app budget  | 12 ms |
+|FoV |45H x 55V (70D)|
+|Resolution|1440 x 1760|
 
 ### Controller
 
@@ -53,9 +49,20 @@ Because of the new tracking technology used, there are a few things you should p
 - The Controller tracking will degrade in performance if it is out of line of sight for extended periods of time.
 
 :::info
-Magic Leap 2 now supports only one Controller at any given time. 
+Magic Leap 2 now supports only one Controller at any given time.
 :::
 
 ## Hardware Documentation
-Check the other [Device Guides](/docs/guides/device) for more information and troubleshooting tips for the Magic Leap 2 hardware.
 
+Check the other [Device Guides](/docs/category/device-guides) for more information and troubleshooting tips for the Magic Leap 2 hardware:
+
+- [Developer Mode](/docs/guides/device/developer-mode)
+- [Updating the OS](/docs/guides/device/updating-the-os/device-flashing-guide)
+- [Field of View](/docs/guides/device/fov)
+- [Power Optimization and USB guidance](/docs/guides/device/power-optimization)
+- [Controller LED](/docs/guides/device/controller-led)
+- [Headset LED](/docs/guides/device/headset-led)
+- [Compute Pack LED](/docs/guides/device/compute-pack-led)
+- [Hardware Tips](/docs/guides/device/hardware-tips)
+
+For guidance on application design for the Magic Leap 2 hardware, please refer to the [Best Practices](/docs/category/best-practices) section of the documentation.
