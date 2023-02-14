@@ -1,6 +1,6 @@
 ---
 id: hololens-porting 
-title: HoloLens to Magic Leap 2 Porting Guide
+title: HoloLens 2 to Magic Leap 2 Porting Guide
 sidebar_position: 3
 date: 02/13/2023
 ---
