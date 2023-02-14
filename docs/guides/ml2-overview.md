@@ -2,7 +2,7 @@
 id: ml2-overview 
 title: Welcome to Magic Leap 2
 sidebar_position: 0
-date: 08/20/2022
+date: 02/14/2023
 ---
 
 Learn about the hardware and get started developing for Magic Leap 2.
