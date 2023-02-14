@@ -35,7 +35,7 @@ Learn about the difference between ML1 and ML2 processing power, device features
 <table class="ml2-overview-table">
   <tr>
     <td>
-      <a href="/docs/guides/unity/UNKNOWN">
+      <a href="/docs/guides/device/hardware-specs">
         <img src="/img/ml2-overview/group-1.png" />
         <div class="ml2-overview-image-text">Hardware Specs</div>
       </a>
