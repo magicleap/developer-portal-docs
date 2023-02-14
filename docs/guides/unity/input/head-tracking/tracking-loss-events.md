@@ -11,7 +11,7 @@ keywords: [UnityHMD, Input, HeadPose, Reset, Recenter, Tracking, Origin]
 
 If the Magic Leap can't locate its position in an environment, it experiences "tracking loss". The Magic Leap 2 lets developers manage their own tracking loss behavior -- some developers may want to pause the update loop and display a splash image, while others may want the app to continue playing.
 
-The positional tracking events are separated into two categories. `TrackingState` and `MapEvents`. If the tracking is lost and cannot be recovered for 15 seconds, Magic Leap 2 will reset its tracking origin the next time tracking is recovered. The origin is reset to avoid virtual content from appearing in the incorrect location.
+The positional tracking events are separated into two categories. `TrackingState` and `MapEvents`. If tracking is lost and cannot be recovered for 15 seconds, Magic Leap 2 will reset its tracking origin the next time tracking is recovered. The origin is reset to avoid virtual content from appearing in the incorrect location.
 
 ## Head Pose / Origin Reset
 
