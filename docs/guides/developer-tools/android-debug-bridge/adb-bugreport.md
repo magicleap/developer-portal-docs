@@ -14,11 +14,11 @@ There are cases when debugging a project with logs available from your developme
 To create a bug report, enter the following into a terminal shell:
 
 ```shell
-adb bugreport NAMEOFFILE.zip
+adb bugreport
 ```
 
-Where `NAMEOFFILE` is the desired filename of a .ZIP archive. This file will be saved on-device at the path, `/bugreports/`.
+This .ZIP archive will be saved on-device at the path, `/bugreports/` with a path resembling, `bugreport-demophon_aosp-B3E.221128.08-R.092-2023-02-14-11-59-32.zip`.
 
-Downloading the file is as simple as navigating to the [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge) and selecting the relevant bug report (easily identifiable by its timestamp):
+Downloading the file is as simple as navigating to the [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge), going to the Files tab, and selecting the relevant bug report:
 
 ![Downloading a bug report through the Device Bridge](/img/developer-tools/adb/adb-bugreport-files.png)
