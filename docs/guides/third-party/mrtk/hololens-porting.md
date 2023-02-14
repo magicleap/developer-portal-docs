@@ -5,9 +5,7 @@ sidebar_position: 3
 date: 02/13/2023
 ---
 
-# HoloLens to Magic Leap 2 Unity Porting Guide
-
-Porting your MRTK-based HoloLens project to Magic Leap 2 requires only a few adjustments to your Unity project environment. Using the Magic Leap 2 Unity SDK and MRTK Magic Leap 2 plugin according to this guide will get your project running on the Magic Leap 2 with minimal effort.
+Porting your MRTK-based HoloLens 2 application to Magic Leap 2 requires only a few adjustments to your Unity project environment. Using the Magic Leap 2 Unity SDK and MRTK Magic Leap 2 plugin according to this guide will get your project running on the Magic Leap 2 with minimal effort.
 
 :::note
 The MRTK Magic Leap 2 plugin currently only supports MRTK v2.8
@@ -56,6 +54,6 @@ There are several key differences between the HoloLens 2 and Magic Leap 2 MRTK d
 
 ## Further resources
 
-- [Magic Leap 2 Unity Getting Started](/docs/guides/third-party/mrtk/mrtk-setup.md)
+- [Magic Leap 2 Unity Getting Started](/docs/guides/unity/getting-started/unity-getting-started)
 - [Setting Up MRTK with Magic Leap 2](/docs/guides/third-party/mrtk/mrtk-setup.md)
 - [Known issues with MRTK for Magic Leap 2](/docs/guides/third-party/mrtk/mrtk-overview.md)
