@@ -39,11 +39,9 @@ There are several key differences between the HoloLens 2 and Magic Leap 2 MRTK d
 ## Porting Prerequisites
 
 - Your project must use [Microsoft MRTK v2.8](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)
-- You have downloaded and installed the latest compatible versions of the Magic Leap Unity SDK, MRTK Magic Leap 2 package, and Unity editor
+- You have downloaded and installed the latest compatible versions of the **Magic Leap Unity SDK**, **MRTK Magic Leap 2 package**, and **Unity editor** as outlined in the guides below.
 
 ## Update your Unity Project for Magic Leap 2
-
-The following steps are outlined in detail in the [Set Up MRTK for Magic Leap 2](/docs/guides/third-party/mrtk/mrtk-setup.md) guide:
 
 ### Part 1: Update and configure your Unity project settings
 
