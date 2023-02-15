@@ -22,9 +22,9 @@ AR Cloud allows users to go beyond the limitations of their Magic Leap 2 devices
 
 ### LeapBrush
 
-After installation of AR Cloud, we welcome you to try our first-party, Open Source project, [LeapBrush](https://github.com/magicleap/LeapBrush).
+After installation of AR Cloud, we welcome you to try our first-party, Open Source project, [Leap Brush](https://github.com/magicleap/LeapBrush).
 
 This project will allow you to quickly ramp up to a multi-user, collaborative experience, leveraging AR Cloud's power features. The project can work over local area network (LAN), enabling virtually no latency for your shared experience.
 
-## Deployment types
+## Resources
 <DocCardList items={useCurrentSidebarCategory().items}/>
