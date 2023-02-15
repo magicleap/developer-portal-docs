@@ -10,17 +10,17 @@ description: "A lightweight a pre-configured Virtual Machine for demo purpose."
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import Utm from './_utm.mdx'
-import VirtualBoxImport from './_virtual_box_import.mdx'
-import VirtualBoxLimitations from './_virtual_box_limitations.mdx'
+import Utm from './_utm.md'
+import VirtualBoxImport from './_virtual_box_import.md'
+import VirtualBoxLimitations from './_virtual_box_limitations.md'
 
 # AR Cloud OVA image-based deployment
 
-The provided OVA image contains all the necessary infrastructure and services preconfigured to manage and work
+The provided OVA image contains all the necessary infrastructure and services pre-configured to manage and work
 with the Magic Leap devices. For this to work certain compromises had to be taken:
-* The services are preconfigured to serve requests for a specific domain
+* The services are pre-configured to serve requests for a specific domain
 * Only a HTTP listener is configured
-* High availibility for the services is disabled
+* High availability for the services is disabled
 * The observability stack is not installed
 
 **The provided image is not suitable for scalable and fault-tolerant deployments in production environments! It is suitable for quickly connecting devices and testing the services.**
@@ -31,7 +31,7 @@ with the Magic Leap devices. For this to work certain compromises had to be take
 
 ### Virtualization support
 
-Make sure hardware-assited virtualization is enabled for your CPU
+Make sure hardware-assisted virtualization is enabled for your CPU
 
 <Tabs>
   <TabItem value="ubuntu" label="Ubuntu 20.04" default>
@@ -187,7 +187,7 @@ System users:
 AR Cloud users:
 
 * enterprise console user account - `aradmin`/`KvIW5Kb6yoajIEiE8CoUfdhCi2m1EeZW`
-* keycloak admin account - `admin`/`Oh3AvNde0MSIjKdU2SJUGjay9oCyKrHa`
+* `keycloak` admin account - `admin`/`Oh3AvNde0MSIjKdU2SJUGjay9oCyKrHa`
 
 ## Accessing the running virtual machine
 
@@ -240,7 +240,7 @@ ssh arcloud@192.168.1.101 -p 2222
 
 ## Deployment options
 
-The image is configured to use the `arcloud-ova.local` domain by default and initialy supports HTTP only. An IP address has to be either linked with this domain or replaced it altogether.
+The image is configured to use the `arcloud-ova.local` domain by default and initially supports HTTP only. An IP address has to be either linked with this domain or replaced it altogether.
 
 Alternatively, a custom domain can be used. A custom domain will trigger the creation of a TLS certificate.
 
@@ -265,7 +265,7 @@ cd
 
 #### Option 2. Configure local DNS overrides
 
-To be able to access the services, the IP address of the machine where the image is deployed can be set as the target of the preconfigured domain.
+To be able to access the services, the IP address of the machine where the image is deployed can be set as the target of the pre-configured domain.
 
 The requirement is that the IP should be accessible from the machine in a browser.
 
