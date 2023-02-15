@@ -10,10 +10,10 @@ description: "Demo server or developer's desktop."
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import DownloadArcloud from './_download_arcloud.mdx'
-import InstallIstio from './_install_istio.mdx'
-import InstallArcloud from './_install_arcloud.mdx'
-import DeploymentVerification from './_deployment_verification.mdx'
+import DownloadArcloud from './_download_arcloud.md'
+import InstallIstio from './_install_istio.md'
+import InstallArcloud from './_install_arcloud.md'
+import DeploymentVerification from './_deployment_verification.md'
 
 ## Prerequisites
 <DownloadArcloud />

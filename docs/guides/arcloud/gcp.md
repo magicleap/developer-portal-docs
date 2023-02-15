@@ -7,10 +7,10 @@ tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
 keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
 description: "Enterprise deployment to Google Cloud Platform (GCP)."
 ---
-import DownloadArcloud from './_download_arcloud.mdx'
-import InstallIstio from './_install_istio.mdx'
-import InstallArcloud from './_install_arcloud.mdx'
-import DeploymentVerification from './_deployment_verification.mdx'
+import DownloadArcloud from './_download_arcloud.md'
+import InstallIstio from './_install_istio.md'
+import InstallArcloud from './_install_arcloud.md'
+import DeploymentVerification from './_deployment_verification.md'
 
 ## Prerequisites
 <DownloadArcloud />
