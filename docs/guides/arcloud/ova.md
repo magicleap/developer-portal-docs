@@ -42,7 +42,9 @@ Make sure hardware-assisted virtualization is enabled for your CPU
 grep -cw vmx /proc/cpuinfo
 ```
 
-*the output should be `1`*
+:::info Expected Result
+the output should be **1**
+:::
 
   </TabItem>
   <TabItem value="windows" label="Windows 10">
@@ -53,11 +55,15 @@ grep -cw vmx /proc/cpuinfo
 2. Go to the Performance tab
 3. Check if `Virtualization` is `Enabled` in the bottom right of the window
 
-#### Using PowerShell (the output should be `True`)
+#### Using PowerShell
 
 ```PowerShell
 Get-ComputerInfo -property "HyperVRequirementVirtualizationFirmwareEnabled"
 ```
+
+:::info Expected Result
+the output should be **True**
+:::
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
@@ -66,7 +72,10 @@ Get-ComputerInfo -property "HyperVRequirementVirtualizationFirmwareEnabled"
 sysctl machdep.cpu.features | grep -cwi vmx
 sysctl kern.hv_support
 ```
-*one of the commands should output `1`*
+
+:::info Expected Result
+one of the commands should output **1**
+:::
 
   </TabItem>
 </Tabs>
@@ -74,14 +83,15 @@ sysctl kern.hv_support
 ---
 
 If virtualization is **not** enabled, follow the steps to enabled it:
+
 <Tabs>
   <TabItem value="generic" label="Generic Steps" default>
 
 1. Restart your computer
 2. Enter BIOS while the computer is booting up
 3. Find the `Virtualization Technology (VTx)` setting, e.g. from different versions of BIOS:
-    - "Security -> System Security"
-    - "System Configuration -> Device Configuration"
+    * "Security -> System Security"
+    * "System Configuration -> Device Configuration"
 4. Enable the setting
 5. Save changes and boot your OS
 
@@ -106,7 +116,9 @@ If virtualization is **not** enabled, follow the steps to enabled it:
 
 After enabling the `Virtualization Technology (VTx)` verify that the feature is enabled by re-running your OS corresponding command [virtualization support](#virtualization-support).
 
-**If your computer does not support hardware-assisted virtualization, you will not be able to run the image.**
+:::warning Warning
+If your computer does not support hardware-assisted virtualization, you will not be able to run the image.
+:::
 
 ---
 
@@ -209,7 +221,7 @@ AR Cloud users:
 After initial login, it is encouraged to overwrite the default login using the standard Password workflow for Linux:
 
 ```shell
-sudo passwd
+passwd
 ```
 
 :::
@@ -249,7 +261,9 @@ ifconfig | awk '/inet / { print $2 }'
   </TabItem>
 </Tabs>
 
-**IMPORTANT: Verify that your Magic Leap device has an IP address assigned from the same subnet as your machine or the device is able to access one of the IP addresses from the list above (your router allows connectivity between different subnets).**
+:::caution Caution
+Verify that your Magic Leap device has an IP address assigned from the same subnet as your machine or the device is able to access one of the IP addresses from the list above (your router allows connectivity between different subnets).
+:::
 
 Apart from using the graphical interface directly, you can also access the machine using SSH:
 
