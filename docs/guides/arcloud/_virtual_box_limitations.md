@@ -1,4 +1,6 @@
-**IMPORTANT: When running on Linux/MacOS using VirtualBox from a user account ports below 1024 will not be forwarded by default due to [lack of permissions](https://www.virtualbox.org/manual/ch06.html#nat-limitations).**
+:::caution
+When running on Linux/MacOS using VirtualBox from a user account ports below 1024 will not be forwarded by default due to [lack of permissions](https://www.virtualbox.org/manual/ch06.html#nat-limitations).
+:::
 
 The VirtualBox binary has the `setuid` bit set so setting capabilities on it will not work. Instead, it provides an override which allows forwarding the privileged ports.
 
@@ -21,4 +23,6 @@ sudo socat TCP-LISTEN:80,fork TCP:localhost:8080
 sudo socat TCP-LISTEN:443,fork TCP:localhost:8443
 ```
 
-*NOTE: Make sure the `socat` process is running while you are using the image.*
+:::note
+Make sure the `socat` process is running while you are using the image.
+:::

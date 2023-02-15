@@ -45,7 +45,7 @@ Installation steps for Docker Desktop for [Windows 10 (and up) with WSL2](https:
 Installation steps for Docker Desktop for [MacOS](https://docs.docker.com/desktop/install/mac-install/)
 
 Additional tools:
-- Install `Homebrew` if you need to: https://brew.sh/
+- Install `brew` (Homebrew), if needed: https://brew.sh/
 - Install `wget`:
 ```shell
 brew install wget
@@ -119,7 +119,9 @@ Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernet
 
 
 ### Install Helm
-*NOTE: Helm Minimum version requirements 3.9.x*
+:::note
+Helm Minimum version requirements 3.9.x
+:::
 
 <Tabs>
   <TabItem value="ubuntu" label="Ubuntu 20.04" default>
