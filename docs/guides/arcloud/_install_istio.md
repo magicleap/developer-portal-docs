@@ -8,7 +8,7 @@ cd istio-1.16.0
 ./bin/istioctl install -y -f ../setup/istio.yaml
 ```
 
-Install Istio gateway
+### Install Istio Gateway
 ```shell
 kubectl -n istio-system apply -f ../setup/gateway.yaml
 ```

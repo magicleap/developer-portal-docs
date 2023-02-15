@@ -1,4 +1,4 @@
-## Install certificate manager
+## Install Certificate Manager
 ```shell
 CERT_MANAGER_VERSION=1.9.1
 ```
@@ -16,7 +16,7 @@ kubectl -n istio-system apply -f ./setup/issuer.yaml
 cat ./setup/certificate.yaml | envsubst | kubectl -n istio-system apply -f -
 ```
 
-## Create K8s namespace
+## Create K8s Namespace
 ```shell
 kubectl create namespace ${NAMESPACE}
 ```
@@ -24,7 +24,7 @@ kubectl create namespace ${NAMESPACE}
 kubectl label namespace ${NAMESPACE} istio-injection=enabled
 ```
 
-## Create container registry secret
+## Create Container Registry Secret
 ```shell
 kubectl --namespace ${NAMESPACE} delete secret container-registry --ignore-not-found
 ```
@@ -35,7 +35,7 @@ kubectl --namespace ${NAMESPACE} create secret docker-registry container-registr
   --docker-password=${REGISTRY_PASSWORD}
 ```
 
-Login to container registry
+### Log in to container registry
 ```shell
 docker login ${REGISTRY_SERVER} --username "${REGISTRY_USERNAME}" --password "${REGISTRY_PASSWORD}"
 ```

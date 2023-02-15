@@ -20,7 +20,7 @@ export DOMAIN="arcloud.domain.tld"
 ```
 
 ## Infrastructure Setup
-To get started as quickly as possible, refer to these simple setup steps using [google cloud](https://cloud.google.com/sdk/docs/install).
+To get started as quickly as possible, refer to these simple setup steps using [Google Cloud](https://cloud.google.com/sdk/docs/install).
 
 ### Kubernetes System Recommendations
 - Version **1.23.x, 1.24.x, 1.25.x**
@@ -44,26 +44,28 @@ export GC_ADDRESS_NAME="your-cluster-ip"
 export GC_CLUSTER_NAME="your-cluster-name"
 ```
 
-### Reserve a static IP
+### Reserve a Static IP
 ```shell
 gcloud compute addresses create "${GC_ADDRESS_NAME}" --project="${GC_PROJECT_ID}" --region="${GC_REGION}"
 ```
 
-### Retrieved the reserved static IP Address
+### Retrieved the Reserved Static IP Address
 ```shell
 export IP_ADDRESS=$(gcloud compute addresses describe "${GC_ADDRESS_NAME}" --project="${GC_PROJECT_ID}" --region="${GC_REGION}" --format='get(address)')
 echo ${IP_ADDRESS}
 ```
 
-### Assign the static IP to a DNS Record
+### Assign the Static IP to a DNS Record
 ```shell
 gcloud dns --project="${GC_PROJECT_ID}" record-sets create "${DOMAIN}" --type="A" --zone="${GC_DNS_ZONE}" --rrdatas="${IP_ADDRESS}" --ttl="30"
 ```
 
 ### Create a Cluster
 
-_NOTE: Be sure to create a VPC prior to running this command and supply it as the subnetwork. Refer to google cloud documentation for best practices [VPC](https://cloud.google.com/vpc/docs/vpc), [Subnets](https://cloud.google.com/vpc/docs/subnets)
-and [Regions / Zones](https://cloud.google.com/compute/docs/regions-zones)_
+:::note
+Be sure to create a VPC prior to running this command and supply it as the subnetwork. Refer to google cloud documentation for best practices [VPC](https://cloud.google.com/vpc/docs/vpc), [Subnets](https://cloud.google.com/vpc/docs/subnets)
+and [Regions / Zones](https://cloud.google.com/compute/docs/regions-zones)
+:::
 
 ```shell
 gcloud container clusters create "${GC_CLUSTER_NAME}" \
@@ -75,17 +77,18 @@ gcloud container clusters create "${GC_CLUSTER_NAME}" \
     --enable-shielded-nodes
 ```
 
-### Login kubectl into the remote Cluster
+### Log in to `kubectl` in the Remote Cluster
 ```shell
 gcloud container clusters get-credentials ${GC_CLUSTER_NAME} --zone=${GC_ZONE} --project=${GC_PROJECT_ID}
 ```
 
-### Confirm kubectl is directed at the correct context
+### Confirm `kubectl` is Directed at the Correct Context
 ```shell
 kubectl config current-context
 ```
-
-*NOTE: Expected response: `gke_{your-project}-{your-region}-{your-cluster}`*
+:::info Expected response
+`gke_{your-project}-{your-region}-{your-cluster}`
+:::
 
 ## Install Istio
 *NOTE: Istio Minimum Requirements:*

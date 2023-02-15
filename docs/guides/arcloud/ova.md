@@ -18,12 +18,15 @@ import VirtualBoxLimitations from './_virtual_box_limitations.md'
 
 The provided OVA image contains all the necessary infrastructure and services pre-configured to manage and work
 with the Magic Leap devices. For this to work certain compromises had to be taken:
+
 * The services are pre-configured to serve requests for a specific domain
 * Only a HTTP listener is configured
 * High availability for the services is disabled
 * The observability stack is not installed
 
-**The provided image is not suitable for scalable and fault-tolerant deployments in production environments! It is suitable for quickly connecting devices and testing the services.**
+:::warning Warning
+The provided image is not suitable for scalable and fault-tolerant deployments in production environments! It is suitable for quickly connecting devices and testing the services.
+:::
 
 ---
 
@@ -39,17 +42,20 @@ Make sure hardware-assisted virtualization is enabled for your CPU
 ```shell
 grep -cw vmx /proc/cpuinfo
 ```
+
 *the output should be `1`*
 
   </TabItem>
   <TabItem value="windows" label="Windows 10">
 
-#### Using the Task Manager:
+#### Using the Task Manager
+
 1. Start the Task Manager
 2. Go to the Performance tab
 3. Check if `Virtualization` is `Enabled` in the bottom right of the window
 
-#### Using PowerShell (the output should be `True`):
+#### Using PowerShell (the output should be `True`)
+
 ```PowerShell
 Get-ComputerInfo -property "HyperVRequirementVirtualizationFirmwareEnabled"
 ```
@@ -74,11 +80,11 @@ If virtualization is **not** enabled, follow the steps to enabled it:
 
 1. Restart your computer
 2. Enter BIOS while the computer is booting up
-3. Find the `Virtualization Technology (VTx)` setting, e.g. from different versions of BIOS: 
+3. Find the `Virtualization Technology (VTx)` setting, e.g. from different versions of BIOS:
     - "Security -> System Security"
-    - "System Configuration -> Device Configuration" 
-4. Enable the setting 
-5. Save changes and boot your OS 
+    - "System Configuration -> Device Configuration"
+4. Enable the setting
+5. Save changes and boot your OS
 
 
   </TabItem>
@@ -108,6 +114,7 @@ After enabling the `Virtualization Technology (VTx)` verify that the feature is 
 ### Resources
 
 Recommended system resources:
+
 * CPUs: 8
 * Memory: 16GB
 * Disk: 100GB
@@ -117,25 +124,28 @@ Recommended system resources:
 ### Firewall
 
 The following ports need to be exposed to use the provided services:
+
 * 80 - HTTP
 * 443 - HTTPS
 * 1883 - MQTT
 * 8883 - MQTTS
 
 Depending on the runtime environment the firewall configuration might differ:
+
 * configure your local firewall (if you have one) when running on a local machine
 * configure a cloud firewall based on documentation from your cloud provider otherwise
-
 
 ## Runtime environments
 
 ---
 
 #### Installation
+
 <Tabs>
   <TabItem value="ubuntu" label="Ubuntu 20.04" default>
 
 [VirtualBox Linux download][vbox-linux-download] or for `Debian`-based Linux distrubutions on amd64 CPUs you can install VirtualBox with the following commands:
+
 ```shell
 curl -sSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
@@ -144,9 +154,11 @@ sudo apt install VirtualBox-7.0
 ```
 
 #### VirtualBox limitations
+
 <VirtualBoxLimitations />
 
 #### Importing the appliance
+
 <VirtualBoxImport />
 
   </TabItem>
@@ -155,21 +167,26 @@ sudo apt install VirtualBox-7.0
 [VirtualBox Windows download][vbox-download]
 
 #### Importing the appliance
+
 <VirtualBoxImport />
 
   </TabItem>
   <TabItem value="macos" label="MacOS" default>
 
 ### VirtualBox
+
 [VirtualBox Intel CPU download](https://www.virtualbox.org/wiki/Downloads)
 
 #### VirtualBox limitations
+
 <VirtualBoxLimitations />
 
 #### Importing the appliance
+
 <VirtualBoxImport />
 
 ### UTM
+
 <Utm />
 
   </TabItem>
@@ -186,10 +203,19 @@ System users:
 
 AR Cloud users:
 
-* enterprise console user account - `aradmin`/`KvIW5Kb6yoajIEiE8CoUfdhCi2m1EeZW`
-* `keycloak` admin account - `admin`/`Oh3AvNde0MSIjKdU2SJUGjay9oCyKrHa`
+* Enterprise console user account - `aradmin`/`KvIW5Kb6yoajIEiE8CoUfdhCi2m1EeZW`
+* **Keycloak** admin account - `admin`/`Oh3AvNde0MSIjKdU2SJUGjay9oCyKrHa`
 
-## Accessing the running virtual machine
+:::note Changing Your Password
+After initial login, it is encouraged to overwrite the default login using the standard Password workflow for Linux:
+
+```shell
+sudo passwd
+```
+
+:::
+
+## Accessing the Running Virtual Machine
 
 To access the virtual machine the IP address of your machine is needed.
 
@@ -238,71 +264,82 @@ e.g. :
 ssh arcloud@192.168.1.101 -p 2222
 ```
 
-## Deployment options
+## Deployment Options
 
 The image is configured to use the `arcloud-ova.local` domain by default and initially supports HTTP only. An IP address has to be either linked with this domain or replaced it altogether.
 
 Alternatively, a custom domain can be used. A custom domain will trigger the creation of a TLS certificate.
 
-### Simple deployment
+### Simple Deployment
 
 With this approach we limit the configuration needed to access the services, but with the cost of lowered security.
 
-#### Option 1. Use the IP address only
+#### Option 1. Use the IP Address Only
 
 If you want to be able to connect to the machine from other devices, the services need to be reconfigured to use an IP address directly.
 
 Run the `set_ip.sh` script from inside the virtual machine and provide your IP address as argument:
+
 ```shell
-cd
+cd # change directory back to your home (~/) folder
 ./set_ip.sh <ip-address>
 ```
+
 e.g. :
+
 ```shell
-cd
+cd # change directory back to your home (~/) folder
 ./set_ip.sh 192.168.1.101
 ```
 
-#### Option 2. Configure local DNS overrides
+#### Option 2. Configure Local DNS Overrides
 
 To be able to access the services, the IP address of the machine where the image is deployed can be set as the target of the pre-configured domain.
 
 The requirement is that the IP should be accessible from the machine in a browser.
 
-Add the following to your `/etc/hosts` file:
-```shell
+Add the following to the bottom of your `/etc/hosts` file (may require `sudo`):
+
+```plaintext
 # arcloud-ova
 <IP-address> arcloud-ova.local
 <IP-address> smtp.arcloud-ova.local
 ```
 
-**NOTE: This will only make the services available on the devices that have the override configured.**
+:::note
+This will only make the services available on the devices that have the override configured.
+:::
 
-### Advanced deployment
+### Advanced Deployment
 
 This allows to reconfigure the services to use a custom domain and issue a TLS certificate.
 
 1. Point your custom domain to the IP address where the virtual machine is available and make sure that all the ports mentioned above are accessible.
 2. Run the `set_domain.sh` script from inside the virtual machine and provide your domain as argument:
+
 ```shell
-cd
+cd # change directory back to your home (~/) folder
 ./set_domain.sh <domain>
 ```
 
 e.g. :
+
 ```shell
-cd
+cd # change directory back to your home (~/) folder
 ./set_domain.sh my.domain.com
   ```
 
-**NOTE: This is the recommended approach for all publicly accessible deployments (e.g. on GCP or AWS).**
+:::note
+This is the recommended approach for all publicly accessible deployments (e.g. on GCP or AWS).
+:::
 
 ### Revert to the default domain
 
 In case you want to switch back to the default configuration of the virtual machine, run the `set_default.sh` script from
 inside it:
+
 ```shell
-cd
+cd # change directory back to your home (~/) folder
 ./set_default.sh
 ```
 
