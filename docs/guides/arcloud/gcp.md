@@ -13,6 +13,7 @@ import InstallArcloud from './_install_arcloud.md'
 import DeploymentVerification from './_deployment_verification.md'
 
 ## Prerequisites
+
 <DownloadArcloud />
 
 ```shell
@@ -20,21 +21,26 @@ export DOMAIN="arcloud.domain.tld"
 ```
 
 ## Infrastructure Setup
+
 To get started as quickly as possible, refer to these simple setup steps using [Google Cloud](https://cloud.google.com/sdk/docs/install).
 
 ### Kubernetes System Recommendations
+
 - Version **1.23.x, 1.24.x, 1.25.x**
 - 8 Nodes (each with):
   - 8 CPU's
   - 32 GB memory
 
 Example [machine types in GCP](https://cloud.google.com/compute/docs/general-purpose-machines):
+
 - 8 * e2-medium
 - 4 * e2-standard-2
 - 2 * e2-standard-4
 
 ### Environment Settings
+
 In your terminal configure the following variables per your environment.
+
 ```shell
 export GC_PROJECT_ID="your-project"
 export GC_REGION="your-region"
@@ -45,24 +51,27 @@ export GC_CLUSTER_NAME="your-cluster-name"
 ```
 
 ### Reserve a Static IP
+
 ```shell
 gcloud compute addresses create "${GC_ADDRESS_NAME}" --project="${GC_PROJECT_ID}" --region="${GC_REGION}"
 ```
 
 ### Retrieved the Reserved Static IP Address
+
 ```shell
 export IP_ADDRESS=$(gcloud compute addresses describe "${GC_ADDRESS_NAME}" --project="${GC_PROJECT_ID}" --region="${GC_REGION}" --format='get(address)')
 echo ${IP_ADDRESS}
 ```
 
 ### Assign the Static IP to a DNS Record
+
 ```shell
 gcloud dns --project="${GC_PROJECT_ID}" record-sets create "${DOMAIN}" --type="A" --zone="${GC_DNS_ZONE}" --rrdatas="${IP_ADDRESS}" --ttl="30"
 ```
 
 ### Create a Cluster
 
-:::note
+:::notenote
 Be sure to create a VPC prior to running this command and supply it as the subnetwork. Refer to google cloud documentation for best practices [VPC](https://cloud.google.com/vpc/docs/vpc), [Subnets](https://cloud.google.com/vpc/docs/subnets)
 and [Regions / Zones](https://cloud.google.com/compute/docs/regions-zones)
 :::
@@ -78,29 +87,38 @@ gcloud container clusters create "${GC_CLUSTER_NAME}" \
 ```
 
 ### Log in to `kubectl` in the Remote Cluster
+
 ```shell
 gcloud container clusters get-credentials ${GC_CLUSTER_NAME} --zone=${GC_ZONE} --project=${GC_PROJECT_ID}
 ```
 
 ### Confirm `kubectl` is Directed at the Correct Context
+
 ```shell
 kubectl config current-context
 ```
+
 :::info Expected response
 `gke_{your-project}-{your-region}-{your-cluster}`
 :::
 
 ## Install Istio
-*NOTE: Istio Minimum Requirements:*
+
+:::note Istio
+Minimum Requirements:
+
 - AR Cloud requires Istio **version 1.16.x**.
 - DNS Pre-configured with corresponding certificate for TLS
 - Configure Istio Gateway
 - Open the MQTT Port (8883)
+:::
 
 <InstallIstio />
 
 ## Install ARCloud
+
 <InstallArcloud />
 
 ## Verify Installation
+
 <DeploymentVerification />

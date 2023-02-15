@@ -1,4 +1,5 @@
 Once the ARCloud deployment completes, the deployment script will print out a cluster information similar to:
+
 ```shell
 ------------------------------
 Cluster Installation (arcloud)
@@ -43,12 +44,15 @@ Network:
 NAMESPACE      NAME                   TYPE           CLUSTER-IP        EXTERNAL-IP PORT(S)                                                        AGE
 istio-system   istio-ingressgateway   LoadBalancer   <IPv4>   <IPv4>   80:31456/TCP,443:32737/TCP,15021:31254/TCP,1883:30231/TCP,8883:32740/TCP    1d
 ```
+
 ## Login to Enterprise Console Web
+
 1. Open **Enterprise Web** url (`http://<DOMAIN>/`) in a browser
 2. Enter the provided credentials for **Enterprise Web**
 3. Verify the successful login
 
 ## Register a ML2 device
+
 1. Log in to **Enterprise Web**
 2. Select **Devices** from the top-right menu options
 3. Select **Devices** from the dropdown menu options

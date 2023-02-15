@@ -9,6 +9,7 @@ When the virtual machine starts login by using the [credentials](#credentials) p
 [deployment option](#deployment-options) and continue from there.
 
 You can also run the imported virtual machine in headless mode:
+
 ```shell
 vboxmanage startvm arcloud-ova --type=headless
 ```
