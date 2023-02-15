@@ -2,16 +2,50 @@
 id: unity-tracking-loss
 title: Handling Tracking Loss Events
 sidebar_position: 2
-date: 1/28/2022
-tags: [UnityHMD, Input]
-keywords: [UnityHMD, Input]
+date: 02/15/2023
+tags: [Unity,HMD, Input, Head Tracking]
+keywords: [Unity,HMD, Input, HeadPose, Reset, Recenter, Tracking, Origin]
 ---
 
 # Handling Tracking Loss
 
 If the Magic Leap can't locate its position in an environment, it experiences "tracking loss". The Magic Leap 2 lets developers manage their own tracking loss behavior -- some developers may want to pause the update loop and display a splash image, while others may want the app to continue playing.
 
-The positional tracking events are separated into two categories. `TrackingState` and `MapEvents`
+The positional tracking events are separated into two categories. `TrackingState` and `MapEvents`. If tracking is lost and cannot be recovered for 15 seconds, Magic Leap 2 will reset its tracking origin the next time tracking is recovered. The origin is reset to avoid virtual content from appearing in the incorrect location.
+
+## Head Pose / Origin Reset
+
+This example uses the `OnTrackingOriginChanged` event to reset the meshes created by the `MeshingSubsystemComponent`.
+
+```csharp
+    private void Start()
+    {
+        XRInputSubsystem inputSubsystem = XRGeneralSettings.Instance?.Manager?.activeLoader
+            ?.GetLoadedSubsystem<XRInputSubsystem>();
+        if(inputSubsystem !=null )
+            inputSubsystem.trackingOriginUpdated += OnTrackingOriginChanged;
+    }
+
+    private void OnDestroy()
+    {
+        XRInputSubsystem inputSubsystem = XRGeneralSettings.Instance?.Manager?.activeLoader
+            ?.GetLoadedSubsystem<XRInputSubsystem>();
+        if (inputSubsystem != null)
+            inputSubsystem.trackingOriginUpdated -= OnTrackingOriginChanged;
+    }
+
+    /// Use event to detect if a new session occurs
+    /// <param name="inputSubsystem"> The inputSubsystem that invoked this event.</param>
+    private void OnTrackingOriginChanged(XRInputSubsystem inputSubsystem)
+    {
+        MeshingSubsystemComponent meshingSubsystemComponent = FindObjectOfType<MeshingSubsystemComponent>();
+        if (meshingSubsystemComponent)
+        {
+            meshingSubsystemComponent.DestroyAllMeshes();
+            meshingSubsystemComponent.RefreshAllMeshes();
+        }
+    }
+```
 
 ## Polling Tracking Mode
 
