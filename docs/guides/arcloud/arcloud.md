@@ -18,5 +18,13 @@ AR Cloud allows users to go beyond the limitations of their Magic Leap 2 devices
 - Device access to an unlimited amount of Spaces – Magic Leap 2 devices can gain unlimited access to shared Spaces, as opposed to the 5 stored locally.
 - Textured mesh exports – export textured mesh scans of your Space in USD file format.
 
+## Getting Started
+
+### LeapBrush
+
+After installation of AR Cloud, we welcome you to try our first-party, Open Source project, [LeapBrush](https://github.com/magicleap/LeapBrush).
+
+This project will allow you to quickly ramp up to a multi-user, collaborative experience, leveraging AR Cloud's power features. The project can work over local area network (LAN), enabling virtually no latency for your shared experience.
+
 ## Deployment types
 <DocCardList items={useCurrentSidebarCategory().items}/>
