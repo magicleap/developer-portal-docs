@@ -2,9 +2,9 @@
 id: unity-tracking-loss
 title: Handling Tracking Loss Events
 sidebar_position: 2
-date: 1/28/2022
-tags: [UnityHMD, Input]
-keywords: [UnityHMD, Input, HeadPose, Reset, Recenter, Tracking, Origin]
+date: 02/15/2023
+tags: [Unity,HMD, Input, Head Tracking]
+keywords: [Unity,HMD, Input, HeadPose, Reset, Recenter, Tracking, Origin]
 ---
 
 # Handling Tracking Loss
