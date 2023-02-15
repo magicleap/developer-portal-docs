@@ -1,11 +1,12 @@
 ---
 id: arcloud-deployment-aws
-title: AWS
+title: AR Cloud AWS Deployment
 sidebar_position: 2
+sidebar_label: AWS
 date: 02/07/2023
-tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm, AWS]
-keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm, AWS]
-description: "Enterprise deployment to Amazon Web Services (AWS)."
+tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
+keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
+description: "Enterprise deployment to Amazon Web Services (AWS)"
 ---
 import DownloadArcloud from './_download_arcloud.md'
 import InstallIstio from './_install_istio.md'

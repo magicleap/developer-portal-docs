@@ -1,11 +1,12 @@
 ---
 id: arcloud-deployment-ova
-title: OVA Image
+title: AR Cloud OVA Image Demo
+sidebar_label: OVA Demo
 sidebar_position: 4
 date: 02/07/2023
-tags: [ARCLoud, Cloud, OVA]
-keywords: [ARCLoud, Cloud, OVA]
-description: "A lightweight a pre-configured Virtual Machine for demo purpose."
+tags: [ARCloud, Cloud, OVA]
+keywords: [ARCloud, Cloud, OVA]
+description: "A lightweight a pre-configured Virtual Machine for demo purposes"
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -13,8 +14,6 @@ import TabItem from '@theme/TabItem';
 import Utm from './_utm.md'
 import VirtualBoxImport from './_virtual_box_import.md'
 import VirtualBoxLimitations from './_virtual_box_limitations.md'
-
-# AR Cloud OVA image-based deployment
 
 The provided OVA image contains all the necessary infrastructure and services pre-configured to manage and work
 with the Magic Leap devices. For this to work certain compromises had to be taken:

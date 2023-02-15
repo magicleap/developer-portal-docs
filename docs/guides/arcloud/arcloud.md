@@ -1,9 +1,9 @@
 ---
 id: arcloud-overview
-title: ARCloud
+title: AR Cloud
 date: 02/07/2023
-tags: [ARCLoud, Cloud, Mesh, Meshing, Map, Mapping]
-keywords: [ARCLoud, Cloud, Mesh, Meshing, Map, Mapping]
+tags: [ARCloud, Cloud, Mesh, Meshing, Map, Mapping]
+keywords: [ARCloud, Cloud, Mesh, Meshing, Map, Mapping]
 ---
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';

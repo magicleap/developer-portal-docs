@@ -1,11 +1,12 @@
 ---
 id: arcloud-deployment-gcp
-title: Google Cloud
+title: AR Cloud Google Cloud Deployment
+sidebar_label: Google Cloud
 sidebar_position: 1
 date: 02/07/2023
-tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
-keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
-description: "Enterprise deployment to Google Cloud Platform (GCP)."
+tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
+keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
+description: "Enterprise deployment to Google Cloud Platform (GCP)"
 ---
 import DownloadArcloud from './_download_arcloud.md'
 import InstallIstio from './_install_istio.md'

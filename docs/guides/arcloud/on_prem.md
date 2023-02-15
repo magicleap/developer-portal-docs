@@ -1,11 +1,12 @@
 ---
 id: arcloud-deployment-on-prem
-title: Desktop
+title: AR Cloud "Desktop" Deployment
+sidebar_label: Desktop
 sidebar_position: 3
 date: 02/07/2023
-tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm]
-keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm]
-description: "Demo server or developer's desktop."
+tags: [ARCloud, Cloud, Kubernetes, Istio, Helm]
+keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm]
+description: "Demo server or a developer's desktop/laptop"
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
