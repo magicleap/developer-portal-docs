@@ -1,11 +1,14 @@
 ### Download ARCloud Public Release from [Github](https://github.com/magicleap/arcloud/releases)
 
 ```shell
-wget -c https://github.com/magicleap/arcloud/archive/refs/tags/1.7.86.tar.gz -O - | tar -xz
+LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/magicleap/arcloud/releases/latest)
+LATEST_VERSION=$(echo $LATEST_RELEASE | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
+ARTIFACT_URL="https://github.com/magicleap/arcloud/archive/refs/tags/$LATEST_VERSION.tar.gz"
+wget -c $ARTIFACT_URL -O - | tar -xz
 ```
 
 ```shell
-cd arcloud-1.7.86
+cd arcloud-$LATEST_VERSION
 ```
 
 ### Configure Environment
