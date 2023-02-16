@@ -6,7 +6,7 @@ sidebar_position: 4
 date: 02/07/2023
 tags: [ARCloud, Cloud, OVA]
 keywords: [ARCloud, Cloud, OVA]
-description: "A lightweight a pre-configured Virtual Machine for demo purposes"
+description: "A lightweight, pre-configured Virtual Machine for demo purposes"
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
