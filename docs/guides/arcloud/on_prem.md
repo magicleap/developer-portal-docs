@@ -43,7 +43,7 @@ Installation steps for Docker Desktop for [Windows 10 (and up) with WSL2](https:
 
 Installation steps for Docker Desktop for [MacOS](https://docs.docker.com/desktop/install/mac-install/)
 
-Additional tools:
+### Additional Tools
 
 - Install `brew` (Homebrew), if needed: https://brew.sh/
 - Install `wget`:
@@ -51,6 +51,14 @@ Additional tools:
 ```shell
 brew install wget
 ```
+
+After installing Docker Desktop for MacOS, ensure you enable Kubernetes Support:
+
+![Enable Kubernetes Support in Docker Desktop](/img/arcloud/macos-docker-kubernetes.png)
+
+:::note
+On future runs of AR Cloud setup processes, it will be important to make sure that Docker and the Kubernetes services are started.
+:::
 
   </TabItem>
 </Tabs>
@@ -142,17 +150,33 @@ Minimum version requirements 3.9.x
 <Tabs groupId="operating-systems">
   <TabItem value="linux" label="Debian/Ubuntu" default>
 
-Installing Helm using [Apt](https://helm.sh/docs/intro/install/#from-apt-debianubuntu)
+Install Helm using [Apt](https://helm.sh/docs/intro/install/#from-apt-debianubuntu):
+
+```shell
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+sudo apt-get install apt-transport-https --yes
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
+```
 
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-Installing Helm using [Chocolatey](https://helm.sh/docs/intro/install/#from-chocolatey-windows)
+Install Helm using [Chocolatey](https://helm.sh/docs/intro/install/#from-chocolatey-windows):
+
+```shell
+choco install kubernetes-helm
+```
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Installing Helm [Homebrew](https://helm.sh/docs/intro/install/#from-homebrew-macos)
+Install Helm with [Homebrew](https://helm.sh/docs/intro/install/#from-homebrew-macos):
+
+```shell
+brew install helm
+```
 
   </TabItem>
 </Tabs>

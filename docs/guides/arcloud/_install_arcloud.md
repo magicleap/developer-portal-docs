@@ -1,7 +1,7 @@
 ## Install Certificate Manager
 
 ```shell
-CERT_MANAGER_VERSION=1.9.1
+export CERT_MANAGER_VERSION=1.9.1
 ```
 
 ```shell
