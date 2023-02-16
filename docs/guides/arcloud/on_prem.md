@@ -28,8 +28,8 @@ export DOMAIN="<your network adapter IP(IPv4)>"
 
 ### Install Docker  
 
-<Tabs>
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
 ```shell
 curl https://releases.rancher.com/install-docker/20.10.sh | sh
@@ -40,7 +40,7 @@ Post installation step: [manage Docker as a non-root user](https://docs.docker.c
 :::
 
   </TabItem>
-  <TabItem value="windows" label="Windows 10">
+  <TabItem value="windows" label="Windows">
 
 Installation steps for Docker Desktop for [Windows 10 (and up) with WSL2](https://docs.docker.com/desktop/install/windows-install/)
 
@@ -66,7 +66,7 @@ brew install wget
 :::note Kubernetes
 Recommended Requirements:
 
-- 8 CPU's
+- 8 CPUs
 - 32 GB memory
 :::
 
@@ -78,8 +78,8 @@ Export your **network IP** (IPv4) to an environment variable
 export ROUTER_LEASED_IP=<your network adapter IP>
 ```
 
-<Tabs>
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
 #### Installing K3s - Kubernetes Distribution by Rancher
 
@@ -121,7 +121,7 @@ systemctl status k3s
 ```
 
   </TabItem>
-  <TabItem value="windows" label="Windows 10">
+  <TabItem value="windows" label="Windows">
 
 Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
 
@@ -139,13 +139,13 @@ Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernet
 Minimum version requirements 3.9.x
 :::
 
-<Tabs>
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
 Installing Helm using [Apt](https://helm.sh/docs/intro/install/#from-apt-debianubuntu)
 
   </TabItem>
-  <TabItem value="windows" label="Windows 10">
+  <TabItem value="windows" label="Windows">
 
 Installing Helm using [Chocolatey](https://helm.sh/docs/intro/install/#from-chocolatey-windows)
 

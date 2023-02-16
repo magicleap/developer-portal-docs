@@ -12,6 +12,12 @@ Spaces is an application that comes preinstalled on the Magic Leap 2. It can be 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
+## AR Cloud Licenses
+
+The Spaces tool can be used on any version/license of a Magic Leap 2. For more info about adding extra features with AR Cloud, see the following page about licenses:
+
+[AR Cloud Licenses](/docs/guides/arcloud/licenses)
+
 ## Creating a Space
 
 1. Launch the Spaces application from the Magic Leap 2 home screen.

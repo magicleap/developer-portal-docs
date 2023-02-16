@@ -35,8 +35,8 @@ The provided image is not suitable for scalable and fault-tolerant deployments i
 
 Make sure hardware-assisted virtualization is enabled for your CPU
 
-<Tabs>
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
 ```shell
 grep -cw vmx /proc/cpuinfo
@@ -47,7 +47,7 @@ the output should be **1**
 :::
 
   </TabItem>
-  <TabItem value="windows" label="Windows 10">
+  <TabItem value="windows" label="Windows">
 
 #### Using the Task Manager
 
@@ -84,7 +84,7 @@ one of the commands should output **1**
 
 If virtualization is **not** enabled, follow the steps to enabled it:
 
-<Tabs>
+<Tabs groupId="operating-systems">
   <TabItem value="generic" label="Generic Steps" default>
 
 1. Restart your computer
@@ -152,8 +152,8 @@ Depending on the runtime environment the firewall configuration might differ:
 
 #### Installation
 
-<Tabs>
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
 [VirtualBox Linux download][vbox-linux-download] or for `Debian`-based Linux distrubutions on amd64 CPUs you can install VirtualBox with the following commands:
 

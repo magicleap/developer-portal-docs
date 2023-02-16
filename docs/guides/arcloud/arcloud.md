@@ -7,6 +7,7 @@ keywords: [ARCloud, Cloud, Mesh, Meshing, Map, Mapping]
 ---
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import SystemRequirements from './_system_requirements.md';
 
 ## Overview
 
@@ -16,11 +17,15 @@ AR Cloud is a connected service that allows Magic Leap 2 devices to access large
 
 AR Cloud allows users to go beyond the limitations of their Magic Leap 2 devices. The following features help enhance a user’s Magic Leap 2 experience:
 - Co-present experiences – allows multiple users to experience the same digital content in the same place through shared maps and their spatial anchors.
-- Large spatial maps (>10,000m²) – without AR Cloud, each device has a limit of five Local Spaces of ~250m².
-- Device access to an unlimited amount of Spaces – Magic Leap 2 devices can gain unlimited access to shared Spaces, as opposed to the 5 stored locally.
+- Large spatial maps (>10,000m<sub>2</sub>) – without AR Cloud, each device has a limit of five Local Spaces of ~250m<sub>2</sub>.
+- Device access to an unlimited amount of [Spaces](/docs/guides/features/spaces/spaces-tool) – Magic Leap 2 devices can gain unlimited access to shared Spaces, as opposed to the 5 stored locally.
 - Textured mesh exports – export textured mesh scans of your Space in USD file format.
 
 ## Getting Started
+
+### System Requirements
+
+<SystemRequirements />
 
 ### Leap Brush
 
