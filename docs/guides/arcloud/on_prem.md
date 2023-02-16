@@ -18,15 +18,9 @@ import DeploymentVerification from './_deployment_verification.md'
 
 ## Prerequisites
 
-<DownloadArcloud />
-
-```shell
-export DOMAIN="<your network adapter IP(IPv4)>"
-```
-
 ## Infrastructure setup
 
-### Install Docker  
+### Install Docker
 
 <Tabs groupId="operating-systems">
   <TabItem value="linux" label="Debian/Ubuntu" default>
@@ -61,7 +55,11 @@ brew install wget
   </TabItem>
 </Tabs>
 
-### Install Kubernetes
+<DownloadArcloud />
+
+```shell
+export DOMAIN="<your network adapter IP(IPv4)>"
+```
 
 :::note Kubernetes
 Recommended Requirements:
@@ -70,7 +68,9 @@ Recommended Requirements:
 - 32 GB memory
 :::
 
-If your computer is connected to more than one network interfaces (example: *WiFi and Ethernet*) select which network IP you want to receive the Kubernetes related traffic.
+:::caution
+If your computer is connected to more than one network interfaces (example: *WiFi and Ethernet*), select which network IP you want to receive the Kubernetes related traffic.
+:::
 
 Export your **network IP** (IPv4) to an environment variable
 
