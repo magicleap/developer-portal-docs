@@ -124,10 +124,22 @@ systemctl status k3s
 
 Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
 
+:::note Resources
+Set `Memory` resources to at least 12 GB RAM from:
+
+`Docker Desktop` > `Settings` > `Advanced`
+:::
+
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
 Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+
+:::note Resources
+Set `Memory` resources to at least 12 GB RAM from:
+
+`Docker Desktop` > `Settings` > `Advanced`
+:::
 
   </TabItem>
 </Tabs>
