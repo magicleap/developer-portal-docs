@@ -270,7 +270,7 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '03 Jan 2022'
+              label: '03 Jan 2023'
             },
           },
         },
