@@ -185,9 +185,11 @@ sudo apt install VirtualBox-7.0
   </TabItem>
   <TabItem value="macos" label="MacOS" default>
 
-### VirtualBox
+### Intel Chip - VirtualBox
 
-[VirtualBox Intel CPU download](https://www.virtualbox.org/wiki/Downloads)
+:::info Intel Chip
+MacOS running on Intel Chip download [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+:::
 
 #### VirtualBox limitations
 
@@ -197,7 +199,7 @@ sudo apt install VirtualBox-7.0
 
 <VirtualBoxImport />
 
-### UTM
+### Apple Chip - UTM
 
 <Utm />
 
