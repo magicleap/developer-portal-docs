@@ -16,7 +16,7 @@ import InstallIstio from './_install_istio.md';
 import InstallArcloud from './_install_arcloud.md';
 import DeploymentVerification from './_deployment_verification.md';
 
-This type of deployment is appropriate for any edge computing, on-premisis, or other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
+This type of deployment is appropriate for any edge computing, on-premisis, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
 ## Infrastructure setup
 
@@ -38,15 +38,17 @@ Post-installation step:
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-:::caution WSL 2 Notice
-All following installation instructions asssume running in an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
+#### Install the Windows Subsystem for Linux
 
-[Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+:::caution WSL 2 Notice
+All following installation instructions are asssumed to be running in an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
 :::
 
-Installation steps for Docker Desktop for Windows, using WSL 2:
+[Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-[Docker Desktop for Windows Installation](https://docs.docker.com/desktop/install/windows-install/)
+#### Install Docker using WSL
+
+[Docker Desktop for Windows Installation](https://docs.docker.com/desktop/install/windows-install/).
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
@@ -73,6 +75,8 @@ On future runs of AR Cloud setup processes, it will be important to make sure th
   </TabItem>
 </Tabs>
 
+### Download AR Cloud
+
 <DownloadArcloud />
 
 ```shell
@@ -87,7 +91,7 @@ Recommended Requirements:
 :::
 
 :::caution
-If your computer is connected to more than one network interfaces (example: *WiFi and Ethernet*), select which network IP you want to receive the Kubernetes related traffic.
+If your computer is connected to more than one network interface (example: WiFi *and* Ethernet), select which network IP you want to receive the Kubernetes-related traffic.
 :::
 
 Export your **network IP** (IPv4) to an environment variable
