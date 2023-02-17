@@ -11,9 +11,10 @@ description: "A lightweight, pre-configured Virtual Machine for demo purposes"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import Utm from './_utm.md'
-import VirtualBoxImport from './_virtual_box_import.md'
-import VirtualBoxLimitations from './_virtual_box_limitations.md'
+import Utm from './_utm.md';
+import VirtualBoxImport from './_virtual_box_import.md';
+import VirtualBoxLimitations from './_virtual_box_limitations.md';
+import DeploymentVerification from './_deployment_verification.md';
 
 The provided OVA image contains all the necessary infrastructure and services pre-configured to manage and work
 with the Magic Leap devices. For this to work, certain compromises had to be taken:
@@ -356,6 +357,10 @@ inside it:
 ```shell
 ./set_default.sh
 ```
+
+## Verify Installation
+
+<DeploymentVerification />
 
 [vbox-download]: https://www.virtualbox.org/wiki/Downloads
 [vbox-linux-download]: https://www.virtualbox.org/wiki/Linux_Downloads

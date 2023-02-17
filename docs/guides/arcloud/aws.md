@@ -8,11 +8,11 @@ tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 description: "Enterprise deployment to Amazon Web Services (AWS)"
 ---
-import DownloadArcloud from './_download_arcloud.md'
-import InstallIstio from './_install_istio.md'
-import InstallIstioAws from './_install_istio_aws.md'
-import InstallArcloud from './_install_arcloud.md'
-import DeploymentVerification from './_deployment_verification.md'
+import DownloadArcloud from './_download_arcloud.md';
+import InstallIstio from './_install_istio.md';
+import InstallIstioAws from './_install_istio_aws.md';
+import InstallArcloud from './_install_arcloud.md';
+import DeploymentVerification from './_deployment_verification.md';
 
 This deployment strategy will provide a production-ready system using Amazon Web Services.
 

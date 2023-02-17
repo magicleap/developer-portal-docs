@@ -11,10 +11,10 @@ description: "Demo server or a developer's desktop/laptop"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import DownloadArcloud from './_download_arcloud.md'
-import InstallIstio from './_install_istio.md'
-import InstallArcloud from './_install_arcloud.md'
-import DeploymentVerification from './_deployment_verification.md'
+import DownloadArcloud from './_download_arcloud.md';
+import InstallIstio from './_install_istio.md';
+import InstallArcloud from './_install_arcloud.md';
+import DeploymentVerification from './_deployment_verification.md';
 
 This type of deployment is appropriate for any edge computing, on-premisis, or other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
