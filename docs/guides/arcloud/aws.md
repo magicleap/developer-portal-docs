@@ -14,7 +14,9 @@ import InstallIstioAws from './_install_istio_aws.md'
 import InstallArcloud from './_install_arcloud.md'
 import DeploymentVerification from './_deployment_verification.md'
 
-## Prerequisites
+This deployment strategy will provide a production-ready system using Amazon Web Services.
+
+## Download
 
 <DownloadArcloud />
 
@@ -38,16 +40,16 @@ ssh-keygen -t rsa -b 4096
 
 ### Kubernetes System Recommendations
 
-- Version **1.23.x, 1.24.x, 1.25.x**
+- Version `1.23.x`, `1.24.x`, `1.25.x`
 - 8 Nodes (each with):
-  - 8 CPU's
+  - 8 CPUs
   - 32 GB memory
 
 Example [instance types in AWS](https://aws.amazon.com/ec2/instance-types/):
 
-- 8 * t3.medium
-- 4 * m5.large
-- 2 * m5.xlarge
+- 8 * **t3.medium**
+- 4 * **m5.large**
+- 2 * **m5.xlarge**
 
 ### Environment Settings
 
@@ -67,7 +69,7 @@ The two options below are alternatives that can be used depending on your prefer
 - Option 1 - an unmanaged node group is used, manual installation of add-ons is required
 - Option 2 - an managed node group is used, add-ons and service accounts are installed automatically
 
-#### Option 1: Bare-bone cluster with non-managed node group
+#### Option 1: Bare-bones cluster with non-managed node group
 
 Adjust the `./setup/eks-cluster.yaml` file to your needs and create the cluster:
 
@@ -123,7 +125,7 @@ kubectl config current-context
 Install the AWS Load Balancer Controller (use the image repository for the selected region based on this
 [list](https://docs.aws.amazon.com/eks/latest/userguide/add-ons-images.html)), e.g.:
 
-```shell
+```shell showLineNumbers
 helm repo add eks https://aws.github.io/eks-charts
 helm repo update
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
@@ -171,7 +173,7 @@ There should be 2 add-ons and their status should be ACTIVE.
 :::note Istio
 Minimum Requirements
 
-- AR Cloud requires Istio **version 1.16.x**.
+- AR Cloud requires Istio version `1.16.x`
 - DNS Pre-configured with corresponding certificate for TLS
 - Configure Istio Gateway
 - Open the MQTT Port (8883)

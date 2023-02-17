@@ -16,7 +16,7 @@ import InstallIstio from './_install_istio.md'
 import InstallArcloud from './_install_arcloud.md'
 import DeploymentVerification from './_deployment_verification.md'
 
-## Prerequisites
+This type of deployment is appropriate for any edge computing, on-premisis, or other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
 ## Infrastructure setup
 
@@ -29,14 +29,24 @@ import DeploymentVerification from './_deployment_verification.md'
 curl https://releases.rancher.com/install-docker/20.10.sh | sh
 ```
 
-:::note Docker
-Post installation step: [manage Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/).
+:::info Docker
+Post-installation step:
+
+[Manage Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/).
 :::
 
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-Installation steps for Docker Desktop for [Windows 10 (and up) with WSL2](https://docs.docker.com/desktop/install/windows-install/)
+:::caution WSL 2 Notice
+All following installation instructions asssume running in an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
+
+[Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+:::
+
+Installation steps for Docker Desktop for Windows, using WSL 2:
+
+[Docker Desktop for Windows Installation](https://docs.docker.com/desktop/install/windows-install/)
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
@@ -91,7 +101,7 @@ export ROUTER_LEASED_IP=<your network adapter IP>
 
 #### Installing K3s - Kubernetes Distribution by Rancher
 
-Removing previous Rancher K3s Kubernetes installation (skip if you do not have K3s installed):
+Removing previous **Rancher K3s** **Kubernetes** installation (skip if you do not have **K3s** installed):
 
 ```shell
 /usr/local/bin/k3s-uninstall.sh
@@ -105,7 +115,7 @@ export INSTALL_K3S_VERSION=v1.23.9+k3s1
 
 Run setup script:
 
-```shell
+```shell showLineNumbers
 curl -sfL https://get.k3s.io | sh -s - \
 --docker \
 --no-deploy traefik \
@@ -113,16 +123,16 @@ curl -sfL https://get.k3s.io | sh -s - \
 --node-external-ip ${ROUTER_LEASED_IP}
 ```
 
-Configure K3s service
+Configure **K3s** service:
 
-```shell
+```shell showLineNumbers
 sudo rm -rf $HOME/.kube/config && mkdir -p $HOME/.kube
 sudo ln -s /etc/rancher/k3s/k3s.yaml $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 sudo chmod 600 $HOME/.kube/config
 ```
 
-Verify that K3s service is running:
+Verify that the **K3s** service is running:
 
 ```shell
 systemctl status k3s
@@ -131,12 +141,12 @@ systemctl status k3s
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+Follow [these instructions for enabling Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernetes/)
+Follow [these instructions for enabling Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
 
   </TabItem>
 </Tabs>
@@ -144,15 +154,15 @@ Enabling Kubernetes on [Docker Desktop](https://docs.docker.com/desktop/kubernet
 ### Install Helm
 
 :::note Helm
-Minimum version requirements 3.9.x
+The minimum version requirement is `3.9.x`.
 :::
 
 <Tabs groupId="operating-systems">
   <TabItem value="linux" label="Debian/Ubuntu" default>
 
-Install Helm using [Apt](https://helm.sh/docs/intro/install/#from-apt-debianubuntu):
+Install Helm using `apt`:
 
-```shell
+```shell showLineNumbers
 curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
 sudo apt-get install apt-transport-https --yes
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
@@ -163,10 +173,14 @@ sudo apt-get install helm
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-Install Helm using [Chocolatey](https://helm.sh/docs/intro/install/#from-chocolatey-windows):
+Install Helm using `apt`:
 
-```shell
-choco install kubernetes-helm
+```shell showLineNumbers
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+sudo apt-get install apt-transport-https --yes
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
 ```
 
   </TabItem>
