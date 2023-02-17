@@ -22,22 +22,26 @@ There are several key differences between the HoloLens 2 and Magic Leap 2 MRTK d
 | Render Pipeline      | Lightweight Render Pipeline | Universal Render Pipeline |
 | Build Target         | Universal Windows Platform  |          Android          |
 | Interaction method   |        Hand tracking        | Controller, Hand tracking |
-| Unity Input System   |           Legacy            |            New            |
+| XR Plugin Managment   |           OpenXR           |          Magic Leap       |
 
 ## MRTK Feature Support
 
 |                 | HoloLens 2 | Magic Leap 2 |
 | :-------------- | :--------: | :----------: |
-| Controller      |            |   &check;    |
 | Spatial Mapping |  &check;   |   &check;    |
 | Hand Tracking   |  &check;   |   &check;    |
 | Voice           |  &check;   |   &check;    |
 | Eye Tracking    |  &check;   |   &check;    |
+| Controller      |            |   &check;    |
+| System Keyboard |  &check;   |              |
+| Plane Detection |  &check;   |              |
+| Hand Mesh       |  &check;   |              |
 
 ## Porting Prerequisites
 
 - Your project must use [Microsoft MRTK v2.8](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)
 - You have downloaded and installed the latest compatible versions of the **Magic Leap Unity SDK**, **MRTK Magic Leap 2 package**, and **Unity editor** as outlined in the guides below.
+- If your project uses the Hololens System keyboard, you will need to replace the system keyboard calls with MRTK's `NonNativeKeyboard` alternative.
 
 ## Update your Unity Project for Magic Leap 2
 
