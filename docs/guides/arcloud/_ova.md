@@ -179,7 +179,7 @@ Download [VirtualBox for Windows][vbox-download].
   </TabItem>
   <TabItem value="macos" label="MacOS" default>
 
-### VirtualBox
+### Intel Chip - VirtualBox
 
 :::warning Apple Silicon
 All newer MacBooks have non-Intel architectures, instead using "Apple Silicon" chipsets (M1 or M2). If you have one of these M1 or M2 processors in your Mac, **VirtualBox** will not run and you need to follow the instructions for **[UTM](/docs/guides/arcloud/arcloud-deployment-ova#utm)** below.
@@ -195,7 +195,7 @@ Download [VirtualBox for Intel CPUs](https://www.virtualbox.org/wiki/Downloads).
 
 <VirtualBoxImport />
 
-### UTM
+### Apple Chip - UTM
 
 :::info Apple Silicon
 **UTM** offers native support for running images on Apple Silicon-based hardware.

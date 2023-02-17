@@ -1,7 +1,6 @@
 ---
 id: arcloud-deployment-on-prem
-title: AR Cloud "Desktop" Deployment
-sidebar_label: Desktop
+title: Custom Deployment
 sidebar_position: 3
 date: 02/07/2023
 tags: [ARCloud, Cloud, Kubernetes, Istio, Helm]
@@ -147,10 +146,22 @@ systemctl status k3s
 
 Follow [these instructions for enabling Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
 
+:::note Resources
+Set `Memory` resources to at least 12 GB RAM from:
+
+`Docker Desktop` > `Settings` > `Advanced`
+:::
+
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
 Follow [these instructions for enabling Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
+
+:::note Resources
+Set `Memory` resources to at least 12 GB RAM from:
+
+`Docker Desktop` > `Settings` > `Advanced`
+:::
 
   </TabItem>
 </Tabs>
