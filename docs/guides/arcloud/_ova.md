@@ -1,60 +1,58 @@
 ---
 id: arcloud-deployment-ova
-title: OVA Image
+title: AR Cloud OVA Image Demo
+sidebar_label: OVA Demo
 sidebar_position: 4
 date: 02/07/2023
-tags: [ARCLoud, Cloud, OVA]
-keywords: [ARCLoud, Cloud, OVA]
-description: "A lightweight a pre-configured Virtual Machine for demo purpose."
+tags: [ARCloud, Cloud, OVA]
+keywords: [ARCloud, Cloud, OVA]
+description: "A lightweight, pre-configured Virtual Machine for demo purposes"
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import Utm from './_utm.md'
-import VirtualBoxImport from './_virtual_box_import.md'
-import VirtualBoxLimitations from './_virtual_box_limitations.md'
-
-# AR Cloud OVA image-based deployment
+import Utm from './_utm.md';
+import VirtualBoxImport from './_virtual_box_import.md';
+import VirtualBoxLimitations from './_virtual_box_limitations.md';
+import DeploymentVerification from './_deployment_verification.md';
 
 The provided OVA image contains all the necessary infrastructure and services pre-configured to manage and work
-with the Magic Leap devices. For this to work certain compromises had to be taken:
+with the Magic Leap devices. For this to work, certain compromises had to be taken:
 
 * The services are pre-configured to serve requests for a specific domain
-* Only a HTTP listener is configured
-* High availability for the services is disabled
-* The observability stack is not installed
+* Only a HTTP (not HTTPS) listener is configured
+* High-availability for the services is disabled
+* The **observability** stack is not installed
 
 :::warning Warning
 The provided image is not suitable for scalable and fault-tolerant deployments in production environments! It is suitable for quickly connecting devices and testing the services.
 :::
 
----
-
 ## Requirements
 
 ### Virtualization support
 
-Make sure hardware-assisted virtualization is enabled for your CPU
+Make sure hardware-assisted virtualization is enabled for the host machine's CPU:
 
-<Tabs>
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
 ```shell
 grep -cw vmx /proc/cpuinfo
 ```
 
 :::info Expected Result
-the output should be **1**
+The output should be **1**.
 :::
 
   </TabItem>
-  <TabItem value="windows" label="Windows 10">
+  <TabItem value="windows" label="Windows">
 
 #### Using the Task Manager
 
-1. Start the Task Manager
-2. Go to the Performance tab
-3. Check if `Virtualization` is `Enabled` in the bottom right of the window
+1. Start the **Task Manager**
+2. Go to the **Performance** tab
+3. Check if **Virtualization** is **Enabled** in the bottom right of the window
 
 #### Using PowerShell
 
@@ -63,34 +61,32 @@ Get-ComputerInfo -property "HyperVRequirementVirtualizationFirmwareEnabled"
 ```
 
 :::info Expected Result
-the output should be **True**
+The output should be **True**.
 :::
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-```shell
+```shell showLineNumbers
 sysctl machdep.cpu.features | grep -cwi vmx
 sysctl kern.hv_support
 ```
 
 :::info Expected Result
-one of the commands should output **1**
+One of the commands should output **1**.
 :::
 
   </TabItem>
 </Tabs>
 
----
+If virtualization is **not** enabled, follow these steps to enabled it:
 
-If virtualization is **not** enabled, follow the steps to enabled it:
-
-<Tabs>
+<Tabs groupId="operating-systems">
   <TabItem value="generic" label="Generic Steps" default>
 
 1. Restart your computer
 2. Enter BIOS while the computer is booting up
-3. Find the `Virtualization Technology (VTx)` setting, e.g. from different versions of BIOS:
+3. Find the **Virtualization Technology (VTx)** setting, e.g. from different versions of BIOS:
     * "Security -> System Security"
     * "System Configuration -> Device Configuration"
 4. Enable the setting
@@ -100,65 +96,63 @@ If virtualization is **not** enabled, follow the steps to enabled it:
   </TabItem>
   <TabItem value="windows" label="Windows" default>
 
-[Windows Instructions](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1) for enabling the `Virtualization Technology (VTx)`
+[Windows Instructions](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1) for enabling the **Virtualization Technology (VTx)**.
 
   </TabItem>
   <TabItem value="hp" label="HP" default>
 
-[HP Instructions](https://support.hp.com/us-en/document/ish_5637142-5637191-16) for enabling the `Virtualization Technology (VTx)`
+[HP Instructions](https://support.hp.com/us-en/document/ish_5637142-5637191-16) for enabling the **Virtualization Technology (VTx)**
 
   </TabItem>
   <TabItem value="dell" label="Dell" default>
 
-[DELL Instructions](https://www.dell.com/support/kbdoc/en-us/000195978/how-to-enable-or-disable-hardware-virtualization-on-dell-systems) for enabling the `Virtualization Technology (VTx)`
+[DELL Instructions](https://www.dell.com/support/kbdoc/en-us/000195978/how-to-enable-or-disable-hardware-virtualization-on-dell-systems) for enabling the **Virtualization Technology (VTx)**
 
   </TabItem>
 </Tabs>
 
-After enabling the `Virtualization Technology (VTx)` verify that the feature is enabled by re-running your OS corresponding command [virtualization support](#virtualization-support).
+After enabling the **Virtualization Technology (VTx)** verify that the feature is enabled by re-running your OS corresponding command [virtualization support](#virtualization-support).
 
 :::warning Warning
-If your computer does not support hardware-assisted virtualization, you will not be able to run the image.
+If the host machine does not support hardware-assisted virtualization, the OVA image will not be able to run.
 :::
-
----
 
 ### Resources
 
-Recommended system resources:
+Recommended guest system resources:
 
 * CPUs: 8
 * Memory: 16GB
 * Disk: 100GB
 
-*In case of performance issues the resources can be increased after stopping the VM.*
+:::note
+In case of performance issues, the resources can be increased after stopping the VM.
+:::
 
 ### Firewall
 
 The following ports need to be exposed to use the provided services:
 
-* 80 - HTTP
-* 443 - HTTPS
-* 1883 - MQTT
-* 8883 - MQTTS
+* `80` - HTTP
+* `443` - HTTPS
+* `1883` - MQTT
+* `8883` - MQTTS
 
-Depending on the runtime environment the firewall configuration might differ:
+Depending on the runtime environment, the firewall configuration might differ:
 
-* configure your local firewall (if you have one) when running on a local machine
-* configure a cloud firewall based on documentation from your cloud provider otherwise
+* Configure your local firewall (if you have one) when running on a local machine
+* Configure a cloud firewall based on documentation from your cloud provider otherwise
 
 ## Runtime environments
 
----
+### Installation
 
-#### Installation
-
-<Tabs>
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
 [VirtualBox Linux download][vbox-linux-download] or for `Debian`-based Linux distrubutions on amd64 CPUs you can install VirtualBox with the following commands:
 
-```shell
+```shell showLineNumbers
 curl -sSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 sudo apt update
@@ -176,7 +170,7 @@ sudo apt install VirtualBox-7.0
   </TabItem>
   <TabItem value="windows" label="Windows" default>
 
-[VirtualBox Windows download][vbox-download]
+Download [VirtualBox for Windows][vbox-download].
 
 #### Importing the appliance
 
@@ -187,9 +181,11 @@ sudo apt install VirtualBox-7.0
 
 ### Intel Chip - VirtualBox
 
-:::info Intel Chip
-MacOS running on Intel Chip download [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+:::warning Apple Silicon
+All newer MacBooks have non-Intel architectures, instead using "Apple Silicon" chipsets (M1 or M2). If you have one of these M1 or M2 processors in your Mac, **VirtualBox** will not run and you need to follow the instructions for **[UTM](/docs/guides/arcloud/arcloud-deployment-ova#utm)** below.
 :::
+
+Download [VirtualBox for Intel CPUs](https://www.virtualbox.org/wiki/Downloads).
 
 #### VirtualBox limitations
 
@@ -201,6 +197,10 @@ MacOS running on Intel Chip download [VirtualBox](https://www.virtualbox.org/wik
 
 ### Apple Chip - UTM
 
+:::info Apple Silicon
+**UTM** offers native support for running images on Apple Silicon-based hardware.
+:::
+
 <Utm />
 
   </TabItem>
@@ -210,17 +210,17 @@ MacOS running on Intel Chip download [VirtualBox](https://www.virtualbox.org/wik
 
 ## Credentials
 
-System users:
+### System Users
 
 * default user account - `arcloud`/`changeme`
 * admin account - `root`/`changeme`
 
-AR Cloud users:
+### AR Cloud Users
 
 * Enterprise console user account - `aradmin`/`KvIW5Kb6yoajIEiE8CoUfdhCi2m1EeZW`
 * **Keycloak** admin account - `admin`/`Oh3AvNde0MSIjKdU2SJUGjay9oCyKrHa`
 
-:::note Changing Your Password
+:::caution Changing Your Password
 After initial login, it is encouraged to overwrite the default login using the standard Password workflow for Linux:
 
 ```shell
@@ -231,16 +231,16 @@ passwd
 
 ## Accessing the Running Virtual Machine
 
-To access the virtual machine the IP address of your machine is needed.
+To access the virtual machine, the IP address of your machine is needed.
 
 The IP address might differ depending on the target platform:
 
 * for local deployments - the loopback interface address (`127.0.0.1`) or the address of another network interface on the machine (e.g. `192.168.1.101`)
 * for cloud providers - the configured/assigned public IP of the instance
 
-To list the available IPv4 addresses on your machine/instance try one of the following commands:
+To list the available IPv4 addresses on your machine/instance, try one of the following commands:
 
-<Tabs>
+<Tabs groupId="operating-systems">
   <TabItem value="ubuntu" label="Ubuntu 20.04" default>
 
 ```shell
@@ -282,6 +282,10 @@ ssh arcloud@192.168.1.101 -p 2222
 
 ## Deployment Options
 
+:::info
+The remaining commands in this guide will be executed from the instantiated virtual machine, all from the home (`~/`) directory.
+:::
+
 The image is configured to use the `arcloud-ova.local` domain by default and initially supports HTTP only. An IP address has to be either linked with this domain or replaced it altogether.
 
 Alternatively, a custom domain can be used. A custom domain will trigger the creation of a TLS certificate.
@@ -297,14 +301,12 @@ If you want to be able to connect to the machine from other devices, the service
 Run the `set_ip.sh` script from inside the virtual machine and provide your IP address as argument:
 
 ```shell
-cd # change directory back to your home (~/) folder
 ./set_ip.sh <ip-address>
 ```
 
 e.g. :
 
 ```shell
-cd # change directory back to your home (~/) folder
 ./set_ip.sh 192.168.1.101
 ```
 
@@ -316,7 +318,7 @@ The requirement is that the IP should be accessible from the machine in a browse
 
 Add the following to the bottom of your `/etc/hosts` file (may require `sudo`):
 
-```plaintext
+```plaintext showLineNumbers
 # arcloud-ova
 <IP-address> arcloud-ova.local
 <IP-address> smtp.arcloud-ova.local
@@ -334,14 +336,12 @@ This allows to reconfigure the services to use a custom domain and issue a TLS c
 2. Run the `set_domain.sh` script from inside the virtual machine and provide your domain as argument:
 
 ```shell
-cd # change directory back to your home (~/) folder
 ./set_domain.sh <domain>
 ```
 
 e.g. :
 
 ```shell
-cd # change directory back to your home (~/) folder
 ./set_domain.sh my.domain.com
   ```
 
@@ -355,9 +355,12 @@ In case you want to switch back to the default configuration of the virtual mach
 inside it:
 
 ```shell
-cd # change directory back to your home (~/) folder
 ./set_default.sh
 ```
+
+## Verify Installation
+
+<DeploymentVerification />
 
 [vbox-download]: https://www.virtualbox.org/wiki/Downloads
 [vbox-linux-download]: https://www.virtualbox.org/wiki/Linux_Downloads

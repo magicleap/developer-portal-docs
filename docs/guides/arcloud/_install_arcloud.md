@@ -1,10 +1,10 @@
-## Install Certificate Manager
+### Install Certificate Manager
 
 ```shell
-CERT_MANAGER_VERSION=1.9.1
+export CERT_MANAGER_VERSION=1.9.1
 ```
 
-```shell
+```shell showLineNumbers
 helm upgrade --install --wait --repo https://charts.jetstack.io cert-manager cert-manager \
   --version ${CERT_MANAGER_VERSION} \
   --create-namespace \
@@ -20,41 +20,39 @@ kubectl -n istio-system apply -f ./setup/issuer.yaml
 cat ./setup/certificate.yaml | envsubst | kubectl -n istio-system apply -f -
 ```
 
-## Create K8s Namespace
+### Create K8s Namespace
 
-```shell
+```shell showLineNumbers
 kubectl create namespace ${NAMESPACE}
-```
-
-```shell
 kubectl label namespace ${NAMESPACE} istio-injection=enabled
 ```
 
-## Create Container Registry Secret
+### Create Container Registry Secret
 
-```shell
+```shell showLineNumbers
 kubectl --namespace ${NAMESPACE} delete secret container-registry --ignore-not-found
-```
-
-```shell
 kubectl --namespace ${NAMESPACE} create secret docker-registry container-registry \
   --docker-server=${REGISTRY_SERVER} \
   --docker-username=${REGISTRY_USERNAME} \
   --docker-password=${REGISTRY_PASSWORD}
 ```
 
-### Log in to container registry
+#### Log in to the container registry
 
 ```shell
 docker login ${REGISTRY_SERVER} --username "${REGISTRY_USERNAME}" --password "${REGISTRY_PASSWORD}"
 ```
 
-## Setup ARCloud
+### Setup AR Cloud
 
-```shell
+```shell showLineNumbers
 ./setup.sh \
   --set global.domain=${DOMAIN} \
   --no-secure \
   --no-observability \
   --accept-sla
 ```
+
+:::note Software License Agreement
+Passing the `--accept-sla` flag assumes the acceptance of the [Magic Leap 2 Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2).
+:::

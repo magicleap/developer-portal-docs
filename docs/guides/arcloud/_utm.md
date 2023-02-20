@@ -1,13 +1,10 @@
-:::info Apple Chip
-MacOS running on Apple Chip download [UTM dmg image](https://mac.getutm.app/)
-:::
-
-1. Open the `UTM dmg image` and follow the instructions to install `UTM` on your system.
-2. Extract the `ARCloud` `UTM` file:
+1. Download the [UTM dmg image](https://mac.getutm.app/).
+2. Open the `.dmg` image and follow the instructions above to install **UTM** on your system.
+3. Extract the AR Cloud **UTM** file:
 
 ```shell
 tar xzf arcloud-ova.utm.tgz
 ```
 
-3. Open the extracted `ARCloud` `UTM` file - the `UTM` app should import it automatically.
-4. Click on `Play` to start the virtual machine.
+1. Open the extracted AR Cloud **UTM** file - the **UTM** app should import it automatically.
+2. Click on the <kbd>Play</kbd> button to start the virtual machine.

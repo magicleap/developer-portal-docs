@@ -1,18 +1,21 @@
 ---
 id: arcloud-deployment-gcp
-title: Google Cloud
+title: AR Cloud Google Cloud Deployment
+sidebar_label: Google Cloud
 sidebar_position: 1
 date: 02/07/2023
-tags: [ARCLoud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
-keywords: [ARCLoud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
-description: "Enterprise deployment to Google Cloud Platform (GCP)."
+tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
+keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
+description: "Enterprise deployment to Google Cloud Platform (GCP)"
 ---
-import DownloadArcloud from './_download_arcloud.md'
-import InstallIstio from './_install_istio.md'
-import InstallArcloud from './_install_arcloud.md'
-import DeploymentVerification from './_deployment_verification.md'
+import DownloadArcloud from './_download_arcloud.md';
+import InstallIstio from './_install_istio.md';
+import InstallArcloud from './_install_arcloud.md';
+import DeploymentVerification from './_deployment_verification.md';
 
-## Prerequisites
+This deployment strategy will provide a production-ready system using Google Cloud.
+
+## Download
 
 <DownloadArcloud />
 
@@ -22,26 +25,26 @@ export DOMAIN="arcloud.domain.tld"
 
 ## Infrastructure Setup
 
-To get started as quickly as possible, refer to these simple setup steps using [Google Cloud](https://cloud.google.com/sdk/docs/install).
+To get started as quickly as possible, refer to these simple setup steps for [Google Cloud](https://cloud.google.com/sdk/docs/install).
 
 ### Kubernetes System Recommendations
 
-- Version **1.23.x, 1.24.x, 1.25.x**
+- Version `1.23.x`, `1.24.x`, `1.25.x`
 - 8 Nodes (each with):
   - 8 CPU's
   - 32 GB memory
 
 Example [machine types in GCP](https://cloud.google.com/compute/docs/general-purpose-machines):
 
-- 8 * e2-medium
-- 4 * e2-standard-2
-- 2 * e2-standard-4
+- 8 * **e2-medium**
+- 4 * **e2-standard-2**
+- 2 * **e2-standard-4**
 
 ### Environment Settings
 
-In your terminal configure the following variables per your environment.
+In your terminal configure the following variables per your environment:
 
-```shell
+```shell showLineNumbers
 export GC_PROJECT_ID="your-project"
 export GC_REGION="your-region"
 export GC_ZONE="your-region-zone"
@@ -58,7 +61,7 @@ gcloud compute addresses create "${GC_ADDRESS_NAME}" --project="${GC_PROJECT_ID}
 
 ### Retrieved the Reserved Static IP Address
 
-```shell
+```shell showLineNumbers
 export IP_ADDRESS=$(gcloud compute addresses describe "${GC_ADDRESS_NAME}" --project="${GC_PROJECT_ID}" --region="${GC_REGION}" --format='get(address)')
 echo ${IP_ADDRESS}
 ```
@@ -72,11 +75,12 @@ gcloud dns --project="${GC_PROJECT_ID}" record-sets create "${DOMAIN}" --type="A
 ### Create a Cluster
 
 :::notenote
-Be sure to create a VPC prior to running this command and supply it as the subnetwork. Refer to google cloud documentation for best practices [VPC](https://cloud.google.com/vpc/docs/vpc), [Subnets](https://cloud.google.com/vpc/docs/subnets)
-and [Regions / Zones](https://cloud.google.com/compute/docs/regions-zones)
+Be sure to create a VPC prior to running the following command and supply it as the subnetwork. Refer to Google Cloud documentation for best practices:
+
+[VPC](https://cloud.google.com/vpc/docs/vpc), [Subnets](https://cloud.google.com/vpc/docs/subnets), and [Regions / Zones](https://cloud.google.com/compute/docs/regions-zones)
 :::
 
-```shell
+```shell showLineNumbers
 gcloud container clusters create "${GC_CLUSTER_NAME}" \
     --project="${GC_PROJECT_ID}" \
     --zone "${GC_ZONE}" \
@@ -107,10 +111,10 @@ kubectl config current-context
 :::note Istio
 Minimum Requirements:
 
-- AR Cloud requires Istio **version 1.16.x**.
+- AR Cloud requires Istio version `1.16.x`
 - DNS Pre-configured with corresponding certificate for TLS
 - Configure Istio Gateway
-- Open the MQTT Port (8883)
+- Open the MQTT Port (`8883`)
 :::
 
 <InstallIstio />

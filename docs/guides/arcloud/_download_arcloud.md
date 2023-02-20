@@ -1,16 +1,25 @@
-### Download ARCloud public release from [Github](https://github.com/magicleap/arcloud/releases)
+Download the AR Cloud Public Release from GitHub:
 
-```shell
-wget -c https://github.com/magicleap/arcloud/archive/refs/tags/1.7.86.tar.gz -O - | tar -xz
+```shell showLineNumbers
+LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/magicleap/arcloud/releases/latest)
+LATEST_VERSION=$(echo $LATEST_RELEASE | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
+ARTIFACT_URL="https://github.com/magicleap/arcloud/archive/refs/tags/$LATEST_VERSION.tar.gz"
+wget -c $ARTIFACT_URL -O - | tar -xz
 ```
 
 ```shell
-cd arcloud-1.7.86
+cd arcloud-$LATEST_VERSION
 ```
 
 ### Configure Environment
 
-```shell
+:::note
+If you do not have a key assigned for Quay.io, please contact Customer Care:
+
+care@magicleap.com
+:::
+
+```shell showLineNumbers
 export REGISTRY_SERVER="quay.io"
 export REGISTRY_USERNAME="<username>"
 export REGISTRY_PASSWORD="<password>"
