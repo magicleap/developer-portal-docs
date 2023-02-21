@@ -44,7 +44,11 @@ namespace UnityEngine.XR.MagicLeap
 
             Pursuit,
 
-            Saccade
+            Saccade,
+            
+            WinkLeft,
+            
+            WinkRight
         };
 
         public enum Error

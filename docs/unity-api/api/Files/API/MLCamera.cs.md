@@ -28,124 +28,284 @@ title: MLCamera.cs
 // ---------------------------------------------------------------------
 // %BANNER_END%
 
-using System;
-using System.Runtime.InteropServices;
 
 namespace UnityEngine.XR.MagicLeap
 {
-    public sealed partial class MLCamera : MLAPIBase
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Native;
+
+    public sealed partial class MLCamera : MLCameraBase
     {
-        public bool ConnectionEstablished => cameraConnectionEstablished;
+        private static int instanceCounter = 0;
 
-        public RenderTexture PreviewTexture => previewTexture;
+        private MLCamera() : base() => Interlocked.Increment(ref instanceCounter);
 
-        public float CurrentFPS => currentFPS;
+        ~MLCamera()
+        {
+            Cleanup();
+            cameraDisconnectWaitHandle.WaitOne();
+            if (Interlocked.Decrement(ref instanceCounter) == 0)
+                InternalUninitialize();
+        }
 
-        public ConnectContext ConnectionContext => cameraConnectContext;
+        new public static MLCamera Create() => new MLCamera();
+
+        private AutoResetEvent cameraDisconnectWaitHandle = new AutoResetEvent(true);
+
+        private static readonly object apiLock = new object();
+
+        private Texture2D PreviewTexture2D
+        {
+            get => isCapturingPreview ? previewTexture2D : null;
+            set => previewTexture2D = value;
+        }
 
         public static MLCamera CreateAndConnect(ConnectContext connectContext)
         {
-            return CreateAndConnectAsync(connectContext).Result;
+            var camera = MLCamera.Create();
+            return camera.InternalConnect(connectContext) == MLResult.Code.Ok ? camera : null;
         }
 
-        public MLResult GetStreamCapabilities(out StreamCapabilitiesInfo[] streamCapabilities)
-        {
-            return InternalGetStreamCapabilities(out streamCapabilities);
-        }
 
-        public MLResult Disconnect()
+        public static Task<MLCamera> CreateAndConnectAsync(ConnectContext connectContext)
         {
-            return DisconnectAsync().Result;
-        }
-
-        public static MLResult Uninitialize()
-        {
-            return InternalUninitialize();
-        }
-
-        public MLResult PrepareCapture(CaptureConfig captureConfig, out Metadata cameraMetadata)
-        {
-            return MLResult.Create(InternalPrepareCapture(captureConfig, out cameraMetadata));
-        }
-
-        public MLResult PreCaptureAEAWB()
-        {
-            return PreCaptureAEAWBAsync().Result;
-        }
-
-        public MLResult UpdateCaptureSettings()
-        {
-            MLResult.Code resultCode = NativeBindings.MLCameraUpdateCaptureSettings(Handle);
-            MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraUpdateCaptureSettings));
-            return MLResult.Create(resultCode);
-        }
-
-        public MLResult CaptureImage(uint numImages = 1)
-        {
-            return CaptureImageAsync(numImages).Result;
-        }
-
-        public MLResult CaptureVideoStart()
-        {
-            return CaptureVideoStartAsync().Result;
-        }
-
-        public MLResult CaptureVideoStop()
-        {
-            return CaptureVideoStopAsync().Result;
-        }
-
-        public MLResult CapturePreviewStart()
-        {
-            return CapturePreviewStartAsync().Result;
-        }
-
-        public MLResult CapturePreviewStop()
-        {
-            return CapturePreviewStopAsync().Result;
-        }
-
-        public MLResult GetDeviceStatus(out DeviceStatusFlag status)
-        {
-            status = DeviceStatusFlag.Error;
-
-            MLResult.Code resultCode = NativeBindings.MLCameraGetDeviceStatus(Handle, out uint statusFlags);
-            if (MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraGetDeviceStatus)))
+            if (InternalCheckCameraPermission() == MLResult.Code.Ok)
             {
-                status = (DeviceStatusFlag)statusFlags;
+                var camera = new MLCamera()
+                {
+#if !UNITY_EDITOR   // preview rendering not supported under Magic Leap App Simulator
+                    previewRenderer = new Renderer()
+#endif
+                };
+                return Task.Run(() =>
+                {
+                    var resultCode = camera.InternalConnect(connectContext);
+                    return resultCode == MLResult.Code.Ok ? camera : null;
+                });
             }
-            return MLResult.Create(resultCode);
-        }
-
-        public MLResult GetErrorCode(out ErrorType error)
-        {
-            MLResult.Code resultCode = NativeBindings.MLCameraGetErrorCode(Handle, out error);
-            MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraGetErrorCode));
-            return MLResult.Create(resultCode);
-        }
-
-        public MLResult GetCameraCharacteristics(out Metadata cameraMetadata)
-        {
-            cameraMetadata = null;
-
-            MLResult.Code resultCode = NativeBindings.MLCameraGetCameraCharacteristics(Handle, out ulong metadataHandle);
-            if (MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraGetErrorCode)))
+            else
             {
-                cameraMetadata = new Metadata(metadataHandle);
+                return new Task<MLCamera>(() => { return null; });
             }
-            return MLResult.Create(resultCode);
         }
 
-        public static MLResult GetDeviceAvailabilityStatus(Identifier camId, out bool deviceAvailable)
+        public Task<MLResult> DisconnectAsync()
         {
-            if (!cameraInited)
+            return Task.Run(() =>
             {
-                InternalInitialize();
+                var resultCode = InternalDisconnect();
+                return MLResult.Create(resultCode);
+            });
+        }
+
+        public Task<MLResult> PreCaptureAEAWBAsync()
+        {
+            return Task.Run(() =>
+            {
+                lock (apiLock)
+                {
+                    MLResult.Code resultCode = NativeBindings.MLCameraPreCaptureAEAWB(Handle);
+                    MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraPreCaptureAEAWB));
+                    return MLResult.Create(resultCode);
+                }
+            });
+        }
+
+        public Task<MLResult> CaptureVideoStartAsync()
+        {
+            return Task.Run(() =>
+            {
+                MLResult.Code resultCode = MLResult.Code.Ok;
+                lock (apiLock)
+                {
+                    if (!isCapturingVideo)
+                    {
+                        resultCode = NativeBindings.MLCameraCaptureVideoStart(Handle);
+                        isCapturingVideo = MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraCaptureVideoStart));
+                    }
+                }
+                return MLResult.Create(resultCode);
+            });
+        }
+
+        public Task<MLResult> CaptureVideoStopAsync()
+        {
+            return Task.Run(() =>
+            {
+                MLResult.Code resultCode = MLResult.Code.Ok;
+                lock (apiLock)
+                {
+                    if (isCapturingVideo)
+                    {
+                        resultCode = NativeBindings.MLCameraCaptureVideoStop(Handle);
+                        MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraCaptureVideoStop));
+                        isCapturingVideo = false;
+                    }
+                }
+                return MLResult.Create(resultCode);
+            });
+        }
+
+        public Task<MLResult> CapturePreviewStartAsync()
+        {
+            // this has to be called on main thread
+            CreatePreviewTexture();
+
+            return Task.Run(() =>
+            {
+                MLResult.Code resultCode = MLResult.Code.Ok;
+                lock (apiLock)
+                {
+                    if (!isCapturingPreview)
+                    {
+                        resultCode = NativeBindings.MLCameraCapturePreviewStart(Handle);
+                        isCapturingPreview = MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraCapturePreviewStart));
+                    }
+                }
+                return MLResult.Create(resultCode);
+            });
+        }
+
+        public Task<MLResult> CapturePreviewStopAsync()
+        {
+            return Task.Run(() =>
+            {
+                MLResult.Code resultCode = MLResult.Code.Ok;
+                lock (apiLock)
+                {
+                    if (isCapturingPreview)
+                    {
+                        resultCode = NativeBindings.MLCameraCapturePreviewStop(Handle);
+                        MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraCapturePreviewStop));
+                        isCapturingPreview = false;
+                    }
+
+                    MLThreadDispatch.ScheduleMain(ClearPreviewTexture);
+                }
+                return MLResult.Create(resultCode);
+            });
+        }
+
+        public Task<MLResult> CaptureImageAsync(uint numImages = 1)
+        {
+            return Task.Run(() =>
+            {
+                MLResult.Code resultCode = MLResult.Code.Ok;
+                lock (apiLock)
+                {
+                    resultCode = NativeBindings.MLCameraCaptureImage(Handle, numImages);
+                    MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraCaptureImage));
+                }
+                return MLResult.Create(resultCode);
+            });
+        }
+
+
+        protected override void OnApplicationPause(bool pauseStatus)
+        {
+            applicationPausePerfMarker.Begin();
+            MLResult.Code result = pauseStatus ? Pause() : Resume();
+            applicationPausePerfMarker.End();
+            if (result != MLResult.Code.Ok)
+            {
+                Debug.LogErrorFormat("MLCamera.ApplicationPause failed to {0} the camera. Reason: {1}",
+                    pauseStatus ? "pause" : "resume", result);
+            }
+        }
+
+        private MLResult.Code Pause(bool flagsOnly = false)
+        {
+            MLResult.Code result = MLResult.Code.Ok;
+
+            if (cameraConnectionEstablished)
+            {
+                resumeConnect = true;
+                resumePreviewCapture = isCapturingPreview;
+                resumeVideoCapture = isCapturingVideo;
+
+                result = InternalDisconnect(flagsOnly);
+                if (!MLResult.IsOK(result))
+                {
+                    return result;
+                }
             }
 
-            var resultCode = NativeBindings.MLCameraGetDeviceAvailabilityStatus(camId, out deviceAvailable);
-            MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLCameraGetDeviceAvailabilityStatus));
-            return MLResult.Create(resultCode);
+            return result;
+        }
+
+        private MLResult.Code Resume()
+        {
+            MLResult.Code resultCode = MLResult.Code.Ok;
+
+            if (resumeConnect)
+            {
+                if (InternalCheckCameraPermission() != MLResult.Code.Ok)
+                {
+                    return MLResult.Code.PermissionDenied;
+                }
+
+                resultCode = InternalConnect(cameraConnectContext);
+
+                resumeConnect = false;
+                if (!MLResult.IsOK(resultCode))
+                {
+                    MLPluginLog.ErrorFormat("MLCamera.Resume failed to connect camera. Reason: {0}", resultCode);
+                    return resultCode;
+                }
+
+                if (resumePreviewCapture)
+                {
+                    resultCode = InternalPrepareCapture(cameraCaptureConfig, out MLCamera.Metadata _);
+
+                    if (!MLResult.IsOK(resultCode))
+                    {
+                        MLPluginLog.ErrorFormat("MLCamera.Resume failed to prepare capture. Reason: {0}", resultCode);
+                        return resultCode;
+                    }
+
+                    PreCaptureAEAWB();
+
+                    resultCode = CapturePreviewStart().Result;
+
+                    resumePreviewCapture = false;
+                    if (!MLResult.IsOK(MLResult.Code.Ok))
+                    {
+                        MLPluginLog.ErrorFormat("MLCamera.Resume failed to start camera preview. Reason: {0}", resultCode);
+                        return resultCode;
+                    }
+                }
+                else if (resumeVideoCapture)
+                {
+                    PrepareCapture(cameraCaptureConfig, out Metadata _);
+
+                    if (!MLResult.IsOK(resultCode))
+                    {
+                        MLPluginLog.ErrorFormat("MLCamera.Resume failed to prepare capture. Reason: {0}", resultCode);
+                        return resultCode;
+                    }
+
+                    PreCaptureAEAWB();
+                    resultCode = CaptureVideoStart().Result;
+
+                    resumeVideoCapture = false;
+                    if (!MLResult.IsOK(MLResult.Code.Ok))
+                    {
+                        MLPluginLog.ErrorFormat("MLCamera.Resume failed to start camera preview. Reason: {0}", resultCode);
+                        return resultCode;
+                    }
+                }
+            }
+
+            return resultCode;
+        }
+
+        private void ReleaseCaptureBuffers()
+        {
+            for (int i = 0; i < byteArrays.Length; ++i)
+            {
+                byteArrays[i] = null;
+            }
         }
     }
 }

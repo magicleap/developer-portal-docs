@@ -21,6 +21,8 @@ Inherits from: <br></br>ScriptableObject
 
 ### string GetJSONString {#string-getjsonstring}
 
+Return a string of the proper JSON format needed by the Voice Intents API. 
+
 ```csharp
 public string GetJSONString()
 ```
@@ -69,9 +71,22 @@ public List< JSONData > AllVoiceIntents;
 
 -----------
 
-### SystemCommands {#systemintentflags-systemcommands}
+### AutoAllowAllSystemIntents {#bool-autoallowallsystemintents}
 
-Flag to indicate which System Intents should be enabled from within the application. In an experimental state as there may be issues using voice commands on any pop-up windows that appear because of the enabled system commands. 
+```csharp
+
+public bool AutoAllowAllSystemIntents;
+
+```
+
+
+
+
+
+
+-----------
+
+### SystemCommands {#systemintentflags-systemcommands}
 
 ```csharp
 

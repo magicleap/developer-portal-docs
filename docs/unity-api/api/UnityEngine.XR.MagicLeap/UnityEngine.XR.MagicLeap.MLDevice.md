@@ -24,7 +24,7 @@ Inherits from: <br></br>MonoBehaviour
 
 ### GestureSubsystemComponent {#gesturesubsystemcomponent-gesturesubsystemcomponent}
 
-Gets the active XR.[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) gestures subsystem. 
+Gets the active XR gestures subsystem. 
 
 ```csharp
 
@@ -86,7 +86,7 @@ public static bool IsOpenXRLoaderActive()
 
 ### bool IsReady {#bool-isready}
 
-Check if the underlying Unity XR.[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized. 
+Check if the underlying Unity XR subsystem is initialized. 
 
 ```csharp
 public static bool IsReady()
@@ -97,7 +97,7 @@ public static bool IsReady()
 
 
 
-**Returns**: Value indicating whether the XR[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized.
+**Returns**: Value indicating whether the XR subsystem is initialized.
 
 
 

@@ -109,6 +109,21 @@ public static string AppSimRuntimePath => MagicLeapEditorPreferences.ZeroIterati
 
 -----------
 
+### MinimumApiLevel {#uint-minimumapilevel}
+
+```csharp
+
+public static uint MinimumApiLevel => minApiLevel;
+
+```
+
+
+
+
+
+
+-----------
+
 ### SdkVersion {#version-sdkversion}
 
 MLSDK version 

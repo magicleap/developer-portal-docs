@@ -8,7 +8,7 @@ title: MagicLeap
 
 
 **NameSpace:** 
-XR 
+XR
 
 
 
@@ -39,8 +39,9 @@ XR
 | class | **[MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md)** <br></br>[MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) class contains a template for singleton APIs  |
 | class | **[MLBitMask](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLBitMask.md)** <br></br>Custom attribute to make it easy to turn enum fields into bit masks in the inspector. The enum type must be defined in order for the inspector to be able to know what the bits should be set to.  |
 | class | **[MLBitMaskEditor](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLBitMaskEditor.md)**  |
-| class | **[MLCVCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md)** <br></br>[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.  |
-| class | **[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md)** <br></br>APIs for accessing Camera Device and to do Camera Capture.  |
+| class | **[MLCVCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md)** <br></br>[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.  |
+| class | **[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md)** <br></br>Provides a multithreadig implementation of the camera api. Handles pause behavior automatically.  |
+| class | **[MLCameraBase](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md)** <br></br>[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.  |
 | class | **[MLDepthCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md)** <br></br>APIs to access the depth camera data.  |
 | class | **[MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md)** <br></br>[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.  |
 | class | **[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md)** <br></br>[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md) Summary placeholder.  |
@@ -83,7 +84,7 @@ XR
 | class | **[MeshingSubsystemComponent](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md)**  |
 | class | **[OnChangedCallAttribute](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.OnChangedCallAttribute.md)**  |
 | class | **[PlanesSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.md)** <br></br>The Magic Leap implementation of the  XRPlaneSubsystem . Do not create this directly. Use  PlanesSubsystemDescriptor.Create()  instead.  |
-| class | **[RequireXRLoader](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.RequireXRLoader.md)** <br></br>Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XR package is loaded.  |
+| class | **[RequireXRLoader](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.RequireXRLoader.md)** <br></br>Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XRpackage is loaded.  |
 | class | **[SessionSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/SessionSubsystem/UnityEngine.XR.MagicLeap.SessionSubsystem.md)** <br></br>The Magic Leap implementation of the  XRSessionSubsystem . Do not create this directly. Use  SessionSubsystemDescriptor.Create()  instead.  |
 | class | **[SettingsIntentsLauncher](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SettingsIntentsLauncher.md)**  |
 | class | **[SubsystemFeatures](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SubsystemFeatures.md)**  |
