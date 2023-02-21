@@ -1,6 +1,6 @@
 ---
 id: native-openxr-setup
-title: Native OpenXR Setup
+title: OpenXR Setup
 sidebar_position: 6
 date: 08/29/2022
 tags: [Native, C-API, APK, AR, Android Studio, OpenXR]
@@ -129,7 +129,6 @@ As with regular C-API based applications we need to tell the OS that the applica
 The Magic Leap 2 Controller interaction profile is available [here](https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_ML_ml2_controller_interaction).
 
 
-
 ## Running hello_xr
 
 The OpenXR working group releases a sample program called [hello_xr](https://github.com/KhronosGroup/OpenXR-SDK-Source/tree/main/src/tests/hello_xr) together with their SDK package. Open this in Android Studio, attach your Magic Leap 2 device and hit **“Run”**.
@@ -137,6 +136,32 @@ The OpenXR working group releases a sample program called [hello_xr](https://git
 :::tip
 Make sure to use OpenXR 1.0.25 or higher.
 :::
+
+## Download OpenXR Samples
+
+To access the Package manager in ML Hub
+
+1. Inside the **ML Hub** select **Package Manager**.
+
+<Image url= {require("/img/ml-hub/ml_hub_package_manager_all.png")} >The ML Hub with the Package Manger option selected.</Image>
+
+2. In the Bundles section select **Native** , then select Open XR in the additional packages section.
+
+<Image url= {require("/img/ml-hub/ml_hub_package_manager_native_openxr.png")} >The Package Manager with the OpenXR Samples option selected.</Image>
+
+<details> 
+
+<summary> You can also download the OpenXR Samples separately </summary>
+
+1. Inside the **Package Manager** select **All**.
+
+<Image url= {require("/img/ml-hub/ml_hub_package_manager.png")} >The the Package Manger with the **All** tab selected.</Image>
+
+2. Then find and select the download icon for the OpenXR Samples . Located under the **Common Packages** section.
+
+<Image url= {require("/img/ml-hub/ml_hub_package_manager_native_openxr.png")} >The Package Manager with the OpenXR Samples option selected.</Image>
+
+</details>
 
 ## Building the Magic Leap OpenXR samples
 
