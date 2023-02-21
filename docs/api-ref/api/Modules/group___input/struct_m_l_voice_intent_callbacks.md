@@ -38,7 +38,7 @@ This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/ap
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 

@@ -13,22 +13,22 @@ Optional graphics utility functionality.  [More...](#detailed-description)
 |                | Name           |
 | -------------- | -------------- |
 | struct | **[MLGraphicsImportedMediaSurface](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md)** <br></br>Handles to and information about an imported surface.  |
-| struct | **[MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)**  |
-| struct | **[MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md)**  |
+| struct | **[MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)** <br></br>Per virtual camera information needed to render depth.  |
+| struct | **[MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md)** <br></br>To be passed to PopulateDepth.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
 | typedef struct [MLGraphicsImportedMediaSurface](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md) | **[MLGraphicsImportedMediaSurface](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlgraphicsimportedmediasurface)** <br></br>Handles to and information about an imported surface.  |
-| typedef struct [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md) | **[MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingvirtualcamerabufferinfo)**  |
-| typedef struct [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md) | **[MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingdepthbufferinfo)**  |
+| typedef struct [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md) | **[MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingvirtualcamerabufferinfo)** <br></br>Per virtual camera information needed to render depth.  |
+| typedef struct [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md) | **[MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingdepthbufferinfo)** <br></br>To be passed to PopulateDepth.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLMeshingPopulateDepthFlags](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags)** <br></br> { <br></br>[MLMeshingPopulateDepthFlags_None](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags-none),<br></br> [MLMeshingPopulateDepthFlags_EnableVisualization](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags-enablevisualization),<br></br> [MLMeshingPopulateDepthFlags_Ensure32Bits](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMeshingPopulateDepthFlags](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags)** <br></br> { <br></br>[MLMeshingPopulateDepthFlags_None](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags-none),<br></br> [MLMeshingPopulateDepthFlags_EnableVisualization](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags-enablevisualization),<br></br> [MLMeshingPopulateDepthFlags_Ensure32Bits](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enums-mlmeshingpopulatedepthflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags for [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md).  |
 
 ## Functions
 
@@ -71,10 +71,13 @@ EXPERIMENTAL
 
 
 
-
 Flags for [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md). 
 
 
+
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -109,12 +112,15 @@ Refer to the Vulkan specification's equivalent parameters in VkAndroidHardwareBu
 typedef struct MLMeshingVirtualCameraBufferInfo  MLMeshingVirtualCameraBufferInfo;
 ```
 
-
 Per virtual camera information needed to render depth. 
 
 
 
 [More Info](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)
+
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -126,12 +132,15 @@ Per virtual camera information needed to render depth.
 typedef struct MLMeshingDepthBufferInfo  MLMeshingDepthBufferInfo;
 ```
 
-
 To be passed to PopulateDepth. 
 
 
 
 [More Info](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md)
+
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -245,10 +254,14 @@ Populates the depth buffer (passed as a Texture2D array) with the meshes given b
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Depth buffer was populated successfully.|
 **Required Permissions**:
 
-  * TBD (was WorldReconstruction permission) 
+  * None 
 
 
 
+
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal.
+:::
 
 
 

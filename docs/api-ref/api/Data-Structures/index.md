@@ -97,6 +97,7 @@ title: Data Structure Index
 * **union [MLInputCustomHaptics.MLInputCustomHapticsPattern](/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md)** 
 * **struct [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)** <br></br>A structure containing a list of Buzz command and/or pre-defined patterns to be played. 
 * **struct [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md)** <br></br>A structure containing information about the Pre-Defined pattern to be played. 
+* **struct [MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)** <br></br>A structure containing voice app-intent slot in voice event. 
 * **struct [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md)** <br></br>Marker Tracker Custom Profile. 
 * **struct [MLMarkerTrackerDecodedArucoData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md)** <br></br>Aruco decoded data. 
 * **struct [MLMarkerTrackerDecodedBinaryData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)** <br></br>Binary decoded data. 
@@ -158,13 +159,13 @@ title: Data Structure Index
 * **struct [MLMeshingBlockInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md)** 
 * **struct [MLMeshingBlockMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_mesh.md)** 
 * **struct [MLMeshingBlockRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_request.md)** 
-* **struct [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md)** 
+* **struct [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md)** <br></br>To be passed to PopulateDepth. 
 * **struct [MLMeshingExtents](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md)** 
 * **struct [MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md)** 
 * **struct [MLMeshingMeshInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md)** 
 * **struct [MLMeshingMeshRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md)** 
 * **struct [MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md)** 
-* **struct [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)** 
+* **struct [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)** <br></br>Per virtual camera information needed to render depth. 
 * **struct [MLNativeSurfaceConfig](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md)** <br></br>Configuration values for creating the Native Surface. 
 * **struct [MLNativeSurfaceFrameAvailableInfo](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md)** <br></br>NativeSurface/NativeSurfaceTexture Output Frame Availability information. 
 * **struct [MLNativeSurfaceOnFrameAvailableCallback](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md)** <br></br>Callbacks for notifying when an output frame is available for consumption. 

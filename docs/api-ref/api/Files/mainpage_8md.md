@@ -13,4 +13,6 @@ The Magic Leap Native SDK exposes interfaces to our services and platform featur
 
     * See [Native Development](https://developer-docs.magicleap.cloud/docs/category/native) for all the details on how to use the SDK.
 
+> **NOTE:** Experimental APIs (APIs marked with the `\experimental` doxygen tag) does not guarantee backwards compatablity and the feature can be completely removed in a future release without any alternate APIs to replace their functionality. So, please use these experimental APIs with caution. The goal of these experimental APIs is to collect developer feedback. Once the API reaches a steady state and is ready for production use cases the `\experimental` tag will be removed.
+
 
