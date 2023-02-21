@@ -29,10 +29,8 @@ title: Controller.cs
 // %BANNER_END%
 
 using System;
+using System.Text;
 using System.Runtime.InteropServices;
-using UnityEngine.InputSystem.LowLevel;
-using UnityEngine.InputSystem.Utilities;
-using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.MagicLeap.Native;
 
 
@@ -44,6 +42,24 @@ namespace UnityEngine.XR.MagicLeap
         {
             public static partial class Controller
             {
+
+                public static State GetState()
+                {
+                    var device = InputSubsystem.Utils.FindMagicLeapDevice(InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.TrackedDevice);
+                    byte[] stateData = new byte[Marshal.SizeOf<InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerStateEx>()];
+
+                    if (device.TryGetFeatureValue(InputSubsystem.Extensions.DeviceFeatureUsages.Controller.State, stateData))
+                    {
+                        IntPtr ptr = Marshal.AllocHGlobal(stateData.Length);
+                        Marshal.Copy(stateData, 0, ptr, stateData.Length);
+                        var nativeState = Marshal.PtrToStructure<InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerStateEx>(ptr);
+                        Marshal.FreeHGlobal(ptr);
+                        return new State(nativeState);
+                    }
+
+                    return default;
+                }
+
                 public static bool AttachTriggerListener(Action<ushort, MLInputControllerTriggerEvent, float> triggerCallback)
                 {
                     if (!_callbacksSet)
@@ -99,6 +115,14 @@ namespace UnityEngine.XR.MagicLeap
                     Device
                 }
 
+                public enum MLInputControllerHand
+                {
+                    None,
+                    Left,
+                    Right,
+                    Both
+                }
+
                 public enum MLInputControllerButton
                 {
                     None,
@@ -119,29 +143,72 @@ namespace UnityEngine.XR.MagicLeap
                     Hold
                 }
 
+                public struct State
+                {
+                    internal State(NativeBindings.MLInputControllerStateEx nativeStruct)
+                    {
+                        Hand = nativeStruct.Hand;
+                        TouchesPositionAndForce = new Vector3[nativeStruct.TouchesPositionAndForce.Length];
+                        TriggerNormalized = nativeStruct.TriggerNormalized;
+                        ButtonStates = nativeStruct.ButtonStates;
+                        IsTouchesActive = nativeStruct.IsTouchesActive;
+                        IsConnected = nativeStruct.IsConnected;
+                        TouchpadGestureData = nativeStruct.TouchpadGestureData;
+                        TouchpadGestureState = nativeStruct.TouchpadGestureState;
+                        HardwareIndex = nativeStruct.HardwareIndex;
+                    }
+
+                    public MLInputControllerHand Hand;
+
+                    public Vector3[] TouchesPositionAndForce;
+
+                    public float TriggerNormalized;
+
+                    public bool[] ButtonStates;
+
+                    public bool[] IsTouchesActive;
+
+                    public bool IsConnected;
+
+                    public TouchpadGesture.Data TouchpadGestureData;
+
+                    public TouchpadGesture.State TouchpadGestureState;
+
+                    public byte HardwareIndex;
+
+                    public override string ToString() => $"Hand: {Hand}, TouchesPositionAndForce:\n{string.Join(',',TouchesPositionAndForce)}, TriggerNormalized: { TriggerNormalized}, " +
+                            $"ButtonStates:\n{string.Join(',', ButtonStates)}, IsTouchesActive:\n{string.Join(',',IsTouchesActive)}, IsConnected: {IsConnected}, " +
+                        $"TouchpadGestureData: {TouchpadGestureData}, TouchpadGestureState: {TouchpadGestureState}, HardwareIndex: {HardwareIndex}";
+                }
+
                 internal class NativeBindings : MagicLeapNativeBindings
                 {
                     [StructLayout(LayoutKind.Sequential)]
-                    public struct MLInputControllerState
+                    public struct MLInputControllerStateEx
                     {
+                        public uint Version;
+
+                        public MLInputControllerType Type;
+
+                        public MLInputControllerHand Hand;
+
                         [MarshalAs(UnmanagedType.ByValArray, SizeConst = (int)MaxControllerTouchpadTouches)]
-                        public MagicLeapNativeBindings.MLVec3f[] TouchesPositionAndForce;
+                        public Vector3[] TouchesPositionAndForce;
 
                         public float TriggerNormalized;
 
-                        [MarshalAs(UnmanagedType.ByValArray, SizeConst = (int)MLInputControllerButton.Count)]
-                        public byte[] ButtonStates;
+                        [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.I1, SizeConst = (int)MLInputControllerButton.Count)]
+                        public bool[] ButtonStates;
 
-                        [MarshalAs(UnmanagedType.ByValArray, SizeConst = (int)MaxControllerTouchpadTouches)]
-                        public byte[] IsTouchesActive;
+                        [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.I1, SizeConst = (int)MaxControllerTouchpadTouches)]
+                        public bool[] IsTouchesActive;
 
-                        public byte IsConnected;
+                        [MarshalAs(UnmanagedType.I1)]
+                        public bool IsConnected;
 
-                        public TouchpadGesture.MLInputControllerTouchpadGesture TouchpadGesture;
+                        public TouchpadGesture.Data TouchpadGestureData;
 
                         public TouchpadGesture.State TouchpadGestureState;
-
-                        public MLInputControllerType Type;
 
                         public byte HardwareIndex;
                     }

@@ -347,6 +347,13 @@ namespace MagicLeap.Core
                 MediaPlayer.Resume();
         }
 
+        public void Reset()
+        {
+            MediaPlayer.Reset();
+            videoWidth = 0;
+            videoHeight = 0;
+        }
+
         private void PlayOnPrepared(MLMedia.Player mediaplayer)
         {
             MediaPlayer.OnPrepared -= PlayOnPrepared;

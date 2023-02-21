@@ -22,6 +22,7 @@ APIs for the Input system.  [More...](#detailed-description)
 | struct | **[MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md)** <br></br>A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
 | struct | **[MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)** <br></br>A structure containing a list of Buzz command and/or pre-defined patterns to be played.  |
 | union | **[MLInputCustomHaptics.MLInputCustomHapticsPattern](/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md)**  |
+| struct | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)** <br></br>A structure containing voice app-intent slot in voice event.  |
 | struct | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)** <br></br>A structure containing voice intent event.  |
 | struct | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)** <br></br>A structure containing callbacks for voice intent events.  |
 | struct | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)** <br></br>A structure containing settings for voice app intent.  |
@@ -39,6 +40,7 @@ APIs for the Input system.  [More...](#detailed-description)
 | typedef struct [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) | **[MLInputBuzzCommand](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputbuzzcommand)** <br></br>A structure containing information about the Buzz command to be played.  |
 | typedef struct [MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) | **[MLInputCustomHaptics](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcustomhaptics)** <br></br>A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
 | typedef struct [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) | **[MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcustomhapticsinfo)** <br></br>A structure containing a list of Buzz command and/or pre-defined patterns to be played.  |
+| typedef struct [MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputvoiceappintentslot)** <br></br>A structure containing voice app-intent slot in voice event.  |
 | typedef struct [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentevent)** <br></br>A structure containing voice intent event.  |
 | typedef struct [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentcallbacks)** <br></br>A structure containing callbacks for voice intent events.  |
 | typedef struct [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentsettings)** <br></br>A structure containing settings for voice app intent.  |
@@ -663,6 +665,27 @@ A custom haptics pattern can be played by combining Buzz haptic command and/or a
 
 -----------
 
+### MLInputVoiceAppIntentSlot {#struct-mlinputvoiceappintentslot}
+
+```cpp
+typedef struct MLInputVoiceAppIntentSlot  MLInputVoiceAppIntentSlot;
+```
+
+A structure containing voice app-intent slot in voice event. 
+
+
+
+[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
+
+
+**API Level:**
+  * 24 
+
+
+
+
+-----------
+
 ### MLVoiceIntentEvent {#struct-mlvoiceintentevent}
 
 ```cpp
@@ -677,7 +700,7 @@ A structure containing voice intent event.
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -702,7 +725,7 @@ This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/ap
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -1481,7 +1504,7 @@ Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/gro
 
 
 **API Level:**
-  * 20
+  * 24
 
 
 

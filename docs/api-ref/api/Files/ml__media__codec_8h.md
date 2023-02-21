@@ -1669,10 +1669,10 @@ The timestamp may have special meaning depending on the destination surface.
 ML_EXTERN_C_BEGIN
 
 typedef struct MLMediaCodecBufferInfo {
-  size_t   offset;
-  size_t   size;
-  size_t   flags;
-  int64_t  presentation_time_us;
+  size_t offset;
+  size_t size;
+  size_t flags;
+  int64_t presentation_time_us;
 } MLMediaCodecBufferInfo;
 
 typedef enum MLMediaCodecCreation {

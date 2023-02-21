@@ -40,6 +40,19 @@ public static bool AttachTriggerListener(
 
 -----------
 
+### [State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.State.md) GetState {#state-getstate}
+
+```csharp
+public static State GetState()
+```
+
+
+
+
+
+
+-----------
+
 ### void RemoveTriggerListener {#void-removetriggerlistener}
 
 ```csharp
@@ -111,6 +124,24 @@ The calibration accuracy levels for controller.
 | Bumper | |   |
 | Menu | |   |
 | Count | |   |
+
+
+
+
+
+
+
+
+-----------
+
+### MLInputControllerHand {#enums-mlinputcontrollerhand}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| None | |   |
+| Left | |   |
+| Right | |   |
+| Both | |   |
 
 
 
