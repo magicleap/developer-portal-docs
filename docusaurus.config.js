@@ -14,7 +14,9 @@ if (ADD_ROUTER) {
 const isEmbedded =
   ADD_ROUTER || process.env.REACT_APP_DOCUSAURUS_ROOT !== undefined;
 
-const siteUrl = isEmbedded ? "https://developer.magicleap.cloud" : "http://localhost:3000/"
+const siteUrl = isEmbedded
+  ? 'https://developer.magicleap.cloud'
+  : 'http://localhost:3000/';
 // When embedded in developer portal the Navbar does not require title, logo and overview
 const navbar = {
   items: [
@@ -39,7 +41,6 @@ const navbar = {
           docId: 'api-ref/api/indexpage',
           label: 'Native API',
         },
-
       ],
     },
     {
@@ -107,129 +108,142 @@ module.exports = {
           // },
           {
             from: '/docs/guides/native/capi-getting-started',
-            to: '/docs/guides/native/getting-started/native-getting-started'
+            to: '/docs/guides/native/getting-started/native-getting-started',
           },
           {
             from: '/docs/guides/developer-tools/lab-tools/ml2-lab-device-stream',
-            to: '/docs/guides/developer-tools/ml-hub/ml-hub-device-stream'
+            to: '/docs/guides/developer-tools/ml-hub/ml-hub-device-stream',
           },
           {
             from: '/docs/guides/developer-tools/lab-tools/ml2-lab-package-manager',
-            to: '/docs/guides/developer-tools/ml-hub/ml-hub-package-manager'
+            to: '/docs/guides/developer-tools/ml-hub/ml-hub-package-manager',
           },
           {
             from: '/docs/guides/developer-tools/lab-tools/ml2-lab-device-bridge',
-            to: '/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge'
+            to: '/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge',
           },
           {
             from: '/docs/guides/developer-tools/lab-tools/ml2-os-installer',
-            to: '/docs/guides/developer-tools/ml-hub/ml-hub-os-installer'
+            to: '/docs/guides/developer-tools/ml-hub/ml-hub-os-installer',
           },
           // September 2022 Rebranding
           {
             from: '/docs/guides/developer-tools/lab-tools',
-            to: '/docs/guides/developer-tools/ml-hub/magic-leap-hub'
+            to: '/docs/guides/developer-tools/ml-hub/magic-leap-hub',
           },
           // October 2022 Rebranding
           {
             from: '/docs/guides/device/wearable-led',
-            to: '/docs/guides/device/headset-led'
+            to: '/docs/guides/device/headset-led',
           },
           {
             from: '/docs/guides/developer-tools/lab-tools/lab-2/',
-            to: '/docs/guides/developer-tools/ml-hub/magic-leap-hub'
+            to: '/docs/guides/developer-tools/ml-hub/magic-leap-hub',
           },
           //API Changes
           {
             from: '/docs/api-ref/indexpage',
-            to: '/docs/api-ref/api/indexpage'
+            to: '/docs/api-ref/api/indexpage',
           },
           {
             from: '/docs/unity-api',
-            to: '/docs/unity-api/api'
+            to: '/docs/unity-api/api',
           },
           //Feature changes 12/16/2022
           {
             from: '/docs/guides/features/voice-intent-design-guidelines',
-            to: '/docs/guides/features/voice-commands/voice-design-guidelines'
+            to: '/docs/guides/features/voice-commands/voice-design-guidelines',
           },
           {
             from: '/docs/guides/features/mapping-tool',
-            to: '/docs/guides/features/spaces/spaces-tool'
+            to: '/docs/guides/features/spaces/spaces-tool',
           },
           {
             from: '/docs/guides/features/comfort-content-placement',
-            to: '/docs/guides/best-practices/comfort-content-placement'
+            to: '/docs/guides/best-practices/comfort-content-placement',
           },
           {
             from: '/docs/guides/features/headset-fit',
-            to: '/docs/guides/features/eye-tracking/headset-fit'
+            to: '/docs/guides/features/eye-tracking/headset-fit',
           },
           {
             from: '/docs/guides/unity/perception/marker-tracking/marker-tracker-overview',
-            to: '/docs/guides/unity/marker-tracking/marker-tracker-overview'
+            to: '/docs/guides/unity/marker-tracking/marker-tracker-overview',
           },
           {
             from: '/docs/guides/unity/getting-started/import-unity-packages',
-            to: '/docs/guides/unity/getting-started/configure-unity-settings'
+            to: '/docs/guides/unity/getting-started/configure-unity-settings',
           },
-          //Moving design guides 
+          //Moving design guides
           {
             from: '/docs/guides/best-practices/voice-design-guidelines',
-            to: '/docs/guides/features/voice-commands/voice-design-guidelines'
+            to: '/docs/guides/features/voice-commands/voice-design-guidelines',
           },
           {
             from: '/docs/guides/best-practices/dimming/dimmer-design-guidelines',
-            to: '/docs/guides/features/dimmer-feature/dimmer-design-guidelines'
+            to: '/docs/guides/features/dimmer-feature/dimmer-design-guidelines',
           },
           {
             from: '/docs/guides/best-practices/dimming/dimming-overview',
-            to: '/docs/guides/features/dimmer-feature'
+            to: '/docs/guides/features/dimmer-feature',
           },
           {
             from: '/docs/guides/device/controller-features',
-            to: '/docs/guides/features/controller-features'
+            to: '/docs/guides/features/controller-features',
           },
           {
             from: '/docs/guides/features/global-segmented-dimming-feature',
-            to: '/docs/guides/features/dimmer-feature'
+            to: '/docs/guides/features/dimmer-feature',
           },
           {
             from: '/docs/guides/features/input/bluetooth/unity-bluetooth-input-walkthrough',
-            to: '/docs/guides/features/bluetooth-input'
+            to: '/docs/guides/features/bluetooth-input',
           },
           {
             from: '/docs/guides/features/media/fov',
-            to: '/docs/guides/device/fov'
+            to: '/docs/guides/device/fov',
           },
         ],
-        
+
         createRedirects(existingPath) {
-          if (existingPath.includes('/docs/api-ref/Data-Structures')||
-              existingPath.includes('/docs/api-ref/Files')||
-              existingPath.includes('/docs/api-ref/Modules')||
-              existingPath.includes('/docs/api-ref/Pages')) {
+          if (
+            existingPath.includes('/docs/api-ref/Data-Structures') ||
+            existingPath.includes('/docs/api-ref/Files') ||
+            existingPath.includes('/docs/api-ref/Modules') ||
+            existingPath.includes('/docs/api-ref/Pages')
+          ) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace('/docs/api-ref/', '/docs/api-ref/api/'),
             ];
           }
 
-          if (existingPath.includes('docs/guides/developer-tools/ml-hub/app-sim')) {
-          // Redirect docs/guides/developer-tools/ml-hub/app-sim to docs/guides/developer-tools/app-sim
-          return [
-            existingPath.replace('docs/guides/developer-tools/ml-hub/app-sim/', 'docs/guides/developer-tools/app-sim/'),
-          ];
-        }
+          if (
+            existingPath.includes('docs/guides/developer-tools/ml-hub/app-sim')
+          ) {
+            // Redirect docs/guides/developer-tools/ml-hub/app-sim to docs/guides/developer-tools/app-sim
+            return [
+              existingPath.replace(
+                'docs/guides/developer-tools/ml-hub/app-sim/',
+                'docs/guides/developer-tools/app-sim/'
+              ),
+            ];
+          }
 
-          if (existingPath.includes('/docs/unity-api/Classes')||
-              existingPath.includes('/docs/unity-api/Files')||
-              existingPath.includes('/docs/unity-api/MagicLeap')||
-              existingPath.includes('/docs/unity-api/MagicLeap.Core')||
-              existingPath.includes('/docs/unity-api/UnityEditor.XR.MagicLeap')||
-              existingPath.includes('/docs/unity-api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport')||
-              existingPath.includes('/docs/unity-api/UnityEngine.XR.MagicLeap')||
-              existingPath.includes('/docs/unity-api/UnityEngine.XR.MagicLeap.Native')) {
+          if (
+            existingPath.includes('/docs/unity-api/Classes') ||
+            existingPath.includes('/docs/unity-api/Files') ||
+            existingPath.includes('/docs/unity-api/MagicLeap') ||
+            existingPath.includes('/docs/unity-api/MagicLeap.Core') ||
+            existingPath.includes('/docs/unity-api/UnityEditor.XR.MagicLeap') ||
+            existingPath.includes(
+              '/docs/unity-api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport'
+            ) ||
+            existingPath.includes('/docs/unity-api/UnityEngine.XR.MagicLeap') ||
+            existingPath.includes(
+              '/docs/unity-api/UnityEngine.XR.MagicLeap.Native'
+            )
+          ) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
               existingPath.replace('/docs/unity-api/', '/docs/unity-api/api/'),
@@ -239,7 +253,10 @@ module.exports = {
           if (existingPath.includes('/docs/guides/device')) {
             // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
             return [
-              existingPath.replace('/docs/guides/device', '/docs/device-guides'),
+              existingPath.replace(
+                '/docs/guides/device',
+                '/docs/device-guides'
+              ),
             ];
           }
           return undefined; // Return a falsy value: no redirect created
@@ -256,12 +273,14 @@ module.exports = {
         // disableInDev: false,
       },
     ],
-
   ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
+        googleTagManager: {
+          containerId: 'GTM-KPZG3CL',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // We do not want any 'Edit this page' links
@@ -270,7 +289,7 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '03 Jan 2023'
+              label: '03 Jan 2023',
             },
           },
         },
