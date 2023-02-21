@@ -133,6 +133,21 @@ public void PrepareMLMediaPlayer()
 
 -----------
 
+### void Reset {#void-reset}
+
+Resets the video. 
+
+```csharp
+public void Reset()
+```
+
+
+
+
+
+
+-----------
+
 ### void Seek {#void-seek}
 
 Handler when Timeline Slider has changed value. Moves the play head by a specific percentage of the whole duration. 

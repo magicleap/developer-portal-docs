@@ -119,6 +119,32 @@ public void GoToUrl(
 
 -----------
 
+### void Pause {#void-pause}
+
+```csharp
+public void Pause()
+```
+
+
+
+
+
+
+-----------
+
+### void Resume {#void-resume}
+
+```csharp
+public void Resume()
+```
+
+
+
+
+
+
+-----------
+
 ### void SelectTab {#void-selecttab}
 
 ```csharp
@@ -149,6 +175,38 @@ public void UnselectTab()
 
 ```csharp
 public void UpdateTabLabel()
+```
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### IsPaused {#bool-ispaused}
+
+```csharp
+
+public bool IsPaused => isPaused;
+
+```
+
+
+
+
+
+
+-----------
+
+## Public Events
+
+### OnTabSelected {#action-ontabselected}
+
+```csharp
+public Action< MLWebViewTabBehavior > OnTabSelected()
 ```
 
 

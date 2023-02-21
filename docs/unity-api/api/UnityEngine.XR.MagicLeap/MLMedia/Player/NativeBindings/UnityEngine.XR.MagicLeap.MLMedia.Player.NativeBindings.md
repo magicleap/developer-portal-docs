@@ -45,32 +45,6 @@ public static T [] ConvertArray< T >(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerAcquireNextAvailableBuffer {#mlresultcode-mlmediaplayeracquirenextavailablebuffer}
-
-Consume next available buffer. Note: This function is non-blocking and should only be called after MLMediaPlayerPollStates() with #MLMediaPlayerPollingState&#95;IsBufferAvailable mask returned true, or when registered callback MLMediaPlayerOnFrameAvailableCallback just fired. Note: The returned buffer's color format is multi-planar YUV420. Since our underlying hardware interops do not support multiplanar formats, advanced texture features like mipmaping, anisotropic filtering and MSAA will _not_ work on those returned buffers. If such advanced texturing features are required, one has to acquire the YUV buffers as usual and _render_ to an RGB texture and only then, will one be able to enable hardware optimization for such advanced texture features. 
-
-```csharp
-public MLResult.Code MLMediaPlayerAcquireNextAvailableBuffer(
-    ulong mediaPlayerHandle,
-    out ulong nativeBuffer
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| out ulong |nativeBuffer||
-
-
-
-
-
-
------------
-
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerAddTimedTextSourceForFD {#mlresultcode-mlmediaplayeraddtimedtextsourceforfd}
 
 Add a timedtext source from a file descriptor. The file descriptor must be seekable. It is the caller's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. 
@@ -361,110 +335,6 @@ public MLResult.Code MLMediaPlayerGetError(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetFrameNumber {#mlresultcode-mlmediaplayergetframenumber}
-
-Retrieves the last acquired frame number. The frame number is an incrementing counter set to 0 at Codec configuration time. 
-
-```csharp
-public MLResult.Code MLMediaPlayerGetFrameNumber(
-    ulong mediaPlayerHandle,
-    IntPtr OutNumber
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| IntPtr |OutNumber||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetFrameQueueBufferTimestamp {#mlresultcode-mlmediaplayergetframequeuebuffertimestamp}
-
-Retrieves the QueueBuffer timestamp associated with the last acquired Frame This timestamp is for profiling purposes only and corresponds to the time when this frame was queued by internal Codec's producer code. The timestamp is in nanoseconds, and is monotonically increasing. Its other semantics (zero point, etc) are codec- dependent and should by documented by the codec vendor. 
-
-```csharp
-public MLResult.Code MLMediaPlayerGetFrameQueueBufferTimestamp(
-    ulong mediaPlayerHandle,
-    IntPtr OutTimestamp
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| IntPtr |OutTimestamp||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetFrameTimestamp {#mlresultcode-mlmediaplayergetframetimestamp}
-
-Retrieves the timestamp associated with the last acquired Frame The timestamp is in nanoseconds, and is monotonically increasing. Its other semantics (zero point, etc) are codec-dependent and should be documented by the codec vendor. 
-
-```csharp
-public MLResult.Code MLMediaPlayerGetFrameTimestamp(
-    ulong mediaPlayerHandle,
-    out long timestamp
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| out long |timestamp||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetFrameTransformationMatrix {#mlresultcode-mlmediaplayergetframetransformationmatrix}
-
-Retrieves the 4x4 texture coordinate transform matrix associated with the last acquired Frame. This transform matrix maps 2D homogeneous texture coordinates of the form (s, t, 0, 1) with s and t in the inclusive range [0, 1] to the texture coordinate that should be used to sample that location from the texture. Sampling the texture outside of the range of this transform is undefined. This transform is necessary to compensate for transforms that the stream content producer may implicitly apply to the content. By forcing users of a GLConsumer to apply this transform we avoid performing an extra copy of the data that would be needed to hide the transform from the user. The matrix is stored in column-major order so that it may be passed directly to OpenGL ES via the glLoadMatrixf or glUniformMatrix4fv functions. 
-
-```csharp
-public MLResult.Code MLMediaPlayerGetFrameTransformationMatrix(
-    ulong mediaPlayerHandle,
-    float [] OutMtx
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| float [] |OutMtx||
-
-
-
-
-
-
------------
-
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetInfo {#mlresultcode-mlmediaplayergetinfo}
 
 Return last info received by internal 
@@ -625,32 +495,6 @@ public MLResult.Code MLMediaPlayerGetTimedText(
 | IntPtr |OutText||
 | IntPtr |OutStart||
 | IntPtr |OutEnd||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTimedTextEx {#mlresultcode-mlmediaplayergettimedtextex}
-
-Return last Timed Text event information. 
-
-```csharp
-public MLResult.Code MLMediaPlayerGetTimedTextEx(
-    ulong mediaPlayerHandle,
-    IntPtr OutTimedText
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| IntPtr |OutTimedText||
 
 
 
@@ -895,32 +739,6 @@ public MLResult.Code MLMediaPlayerPrepareTrackDRM(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReleaseBuffer {#mlresultcode-mlmediaplayerreleasebuffer}
-
-Release a native buffer previously acquired. 
-
-```csharp
-public MLResult.Code MLMediaPlayerReleaseBuffer(
-    ulong mediaPlayerHandle,
-    ulong NativeBuffer
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |NativeBuffer||
-
-
-
-
-
-
------------
-
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReleaseDRM {#mlresultcode-mlmediaplayerreleasedrm}
 
 Release DRM. 
@@ -961,32 +779,6 @@ public MLResult.Code MLMediaPlayerReleaseSubtitleEx(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReleaseTimedTextEx {#mlresultcode-mlmediaplayerreleasetimedtextex}
-
-Release last Timed Text event information. 
-
-```csharp
-public MLResult.Code MLMediaPlayerReleaseTimedTextEx(
-    ulong mediaPlayerHandle,
-    ulong TimedText
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |TimedText||
 
 
 
@@ -1355,34 +1147,6 @@ public MLResult.Code MLMediaPlayerSetOffsetDataSourceForFD(
 | int |Fd||
 | long |Offset||
 | long |Length||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetOnBufferAvailableCallback {#mlresultcode-mlmediaplayersetonbufferavailablecallback}
-
-Set callback to get notified when a decoded frame is available. When MLMediaPlayerOnFrameAvailableCallback() function gets called-back because there is a buffer available for consumption, one should immediately call MLMediaPlayerAcquireNextAvailableBuffer(... ) to get the buffer and render from it. Setting this callback does not prevent caller from using the the poll-based buffer interrogation API (MLMediaPlayerPollStates() with the #MLMediaPlayerPollingState&#95;IsBufferAvailable flag). 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetOnBufferAvailableCallback(
-    ulong mediaPlayerHandle,
-    OnFrameAvailableDelegate OnBufferAvailable,
-    IntPtr Data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| OnFrameAvailableDelegate |OnBufferAvailable||
-| IntPtr |Data||
 
 
 

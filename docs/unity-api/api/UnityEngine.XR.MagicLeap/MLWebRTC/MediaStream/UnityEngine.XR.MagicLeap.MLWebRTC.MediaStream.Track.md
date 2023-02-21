@@ -422,7 +422,7 @@ Defines the natively supported video types. It is recommended to use app defined
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | None | | No video source.   |
-| MLCamera | | Natively uses [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md) as video source.   |
+| MLCamera | | Natively uses [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) as video source.   |
 | MLMRCamera | | Natively uses MLMRCamera as video source.   |
 | VirtualOnly | | Natively uses VirtualOnly as video source.   |
 

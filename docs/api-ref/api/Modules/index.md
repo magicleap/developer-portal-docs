@@ -54,10 +54,12 @@ title: Module Index
 * **group [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)** <br></br>Defines Audio Channel Mask to describe the input/output posistion. Position implies, the location of a speaker or a microphone for recording or playback. 
 * **group [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md)** <br></br>APIs for video and auido recording. 
 * **group [Meshing2](/api-ref/api/Modules/group___meshing2/group___meshing2.md)** <br></br>APIs for the Meshing system. 
+* **group [NotificationManager](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md)** <br></br>Systems Notification Manager allows toggling the system notifications. This API is not threadsafe. 
 * **group [Perception](/api-ref/api/Modules/group___perception/group___perception.md)** <br></br>APIs for the Perception system. 
 * **group [Planes](/api-ref/api/Modules/group___planes/group___planes.md)** <br></br>APIs for the Planes system. 
 * **group [Platform](/api-ref/api/Modules/group___platform/group___platform.md)** <br></br>APIs for information regarding the platform. 
 * **group [Spatial Anchor](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md)** <br></br>APIs for managing Spatial Anchors. 
+* **group [System Notification Manager](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md)** 
 * **group [Time](/api-ref/api/Modules/group___time/group___time.md)** <br></br>APIs for the MLTime. 
 * **group [WebView](/api-ref/api/Modules/group___web_view/group___web_view.md)** <br></br>APIs for the WebView component. 
 * **group [ZI](/api-ref/api/Modules/group___z_i/group___z_i.md)** <br></br>APIs for the Zero Iteration on Host OS Platforms. 

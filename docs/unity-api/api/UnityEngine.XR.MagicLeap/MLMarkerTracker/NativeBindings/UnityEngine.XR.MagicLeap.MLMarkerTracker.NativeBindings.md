@@ -143,34 +143,6 @@ public MLResult.Code MLMarkerTrackerReleaseResult(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerResultArrayInit {#mlresultcode-mlmarkertrackerresultarrayinit}
-
-Initializes default values for [MLMarkerTrackerResultArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResultArray.md). 
-
-```csharp
-public MLResult.Code MLMarkerTrackerResultArrayInit(
-    in MLMarkerTrackerResultArray result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| in [MLMarkerTrackerResultArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResultArray.md) |result|The object to initialize as default result array. |
-
-
-
-
-
-
-**Returns**: MLResult&#95;InvalidParam Failed to init result array due to pointer being NULL. MLResult&#95;Ok Successfully initialized Marker result array. 
-
-
-
------------
-
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerUpdateSettings {#mlresultcode-mlmarkertrackerupdatesettings}
 
 Update the Marker Scanner with new settings. Requires CameraCapture, LowLatencyLightwear priveledges. 

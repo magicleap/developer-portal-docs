@@ -42,24 +42,3 @@ public List< Extensions.TouchpadGestureEvent > touchpadGestureEvents { get; set;
 
 -----------
 
-## Protected Methods
-
-### CreateProvider {#override-provider-createprovider}
-
-Creates the provider interface. 
-
-```csharp
-protected override Provider CreateProvider()
-```
-
-
-
-
-
-
-**Returns**: The provider interface for [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md)
-
-
-
------------
-

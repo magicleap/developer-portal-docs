@@ -2272,7 +2272,7 @@ Global [MLMeshingInitSettings](/api-ref/api/Modules/group___meshing2/group___mes
 
 Global [MLMeshingPopulateDepth](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#mlresult-mlmeshingpopulatedepth)  (MLHandle client_handle, const [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md) *info, const [MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) *meshes)
 
-* TBD (was WorldReconstruction permission)  
+* None  
 
 Global [MLMeshingRequestMesh](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingrequestmesh)  (MLHandle client_handle, const [MLMeshingMeshRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md) *request, MLHandle *out_request_handle)
 
@@ -2479,6 +2479,18 @@ Global [MLSpatialAnchorTrackerDestroy](/api-ref/api/Modules/group___spatial_anch
 * None  
 
 Global [MLSpatialAnchorUpdate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorupdate)  (MLHandle handle, const [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) *anchor)
+
+* None  
+
+Global [MLSystemNotificationManagerCreate](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagercreate)  (MLHandle *out_handle)
+
+* com.magicleap.permission.SYSTEM_NOTIFICATION (protection level: normal)  
+
+Global [MLSystemNotificationManagerDestroy](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagerdestroy)  (MLHandle handle)
+
+* None  
+
+Global [MLSystemNotificationManagerSetNotifications](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagersetnotifications)  (MLHandle handle, bool suppress)
 
 * None  
 

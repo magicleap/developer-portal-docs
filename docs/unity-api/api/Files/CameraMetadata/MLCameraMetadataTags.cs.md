@@ -30,7 +30,7 @@ title: MLCameraMetadataTags.cs
 
 namespace UnityEngine.XR.MagicLeap
 {
-    public partial class MLCamera
+    public partial class MLCameraBase
     {
         public partial class Metadata
         {
