@@ -66,34 +66,6 @@ public static string GetTrackLanguage(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatGetKeyString {#mlresultcode-mlmediaformatgetkeystring}
-
-Get the Media Format of a track. 
-
-```csharp
-public MLResult.Code MLMediaFormatGetKeyString(
-    ulong formatHandle,
-    string formatKey,
-    IntPtr stringPtr
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |formatHandle||
-| string |formatKey||
-| IntPtr |stringPtr||
-
-
-
-
-
-
------------
-
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackLanguage {#mlresultcode-mlmediaplayergettracklanguage}
 
 Get the language of a track. 

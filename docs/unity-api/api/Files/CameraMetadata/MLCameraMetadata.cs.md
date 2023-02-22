@@ -33,7 +33,7 @@ namespace UnityEngine.XR.MagicLeap
     using System;
     using UnityEngine.XR.MagicLeap.Native;
 
-    public partial class MLCamera
+    public partial class MLCameraBase
     {
         public partial class Metadata
         {

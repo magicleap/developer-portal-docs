@@ -17,118 +17,11 @@ title: MLSegmentedDimmer
 
 
 
-## Public Fields
-
-### ClearValue {#float-clearvalue}
-
-```csharp
-
-public static float ClearValue { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### IgnoreMaterials {#bool-ignorematerials}
-
-```csharp
-
-public static bool IgnoreMaterials { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### IsEnabled {#bool-isenabled}
-
-```csharp
-
-public static bool IsEnabled { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### LayerMask {#layermask-layermask}
-
-```csharp
-
-public static LayerMask LayerMask { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### RenderTargetHeight {#int-rendertargetheight}
-
-```csharp
-
-public static int RenderTargetHeight { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### RenderTargetWidth {#int-rendertargetwidth}
-
-```csharp
-
-public static int RenderTargetWidth { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### UseFullResolution {#bool-usefullresolution}
-
-```csharp
-
-public static bool UseFullResolution { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
 ### void Activate {#void-activate}
 
-Turn on the ability to display Segmented Dimmer in your scenes by requesting support from the ML Graphics API 
+Turn on the ability to display Segmented Dimmer in your scenes. This instructs MLGraphics to provide frames using the AlphaBlend blend mode. 
 
 ```csharp
 public static void Activate()
@@ -143,7 +36,7 @@ public static void Activate()
 
 ### void Deactivate {#void-deactivate}
 
-Inform the ML Graphics API to turn off the ability to display Segmented Dimmer 
+Turn off the ability to display Segmented Dimmer in your scenes. This reverts to accepting frames with the default blend mode from MLGraphics. 
 
 ```csharp
 public static void Deactivate()
@@ -176,8 +69,6 @@ public static int GetDefaultLayer()
 -----------
 
 ### void SetEnabled {#void-setenabled}
-
-Enables or disables all Mesh Renderers in the current scene which are on a SegmentedDimmer layer.    WARNING: This is expensive and it is recommended not to use it often! 
 
 ```csharp
 public static void SetEnabled(

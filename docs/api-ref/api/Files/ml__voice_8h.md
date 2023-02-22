@@ -11,6 +11,7 @@ title: ml_voice.h
 
 |                | Name           |
 | -------------- | -------------- |
+| struct | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)** <br></br>A structure containing voice app-intent slot in voice event.  |
 | struct | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)** <br></br>A structure containing voice intent event.  |
 | struct | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)** <br></br>A structure containing callbacks for voice intent events.  |
 | struct | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)** <br></br>A structure containing settings for voice app intent.  |
@@ -19,6 +20,7 @@ title: ml_voice.h
 
 |                | Name           |
 | -------------- | -------------- |
+| typedef struct [MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputvoiceappintentslot)** <br></br>A structure containing voice app-intent slot in voice event.  |
 | typedef struct [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentevent)** <br></br>A structure containing voice intent event.  |
 | typedef struct [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentcallbacks)** <br></br>A structure containing callbacks for voice intent events.  |
 | typedef struct [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentsettings)** <br></br>A structure containing settings for voice app intent.  |
@@ -141,6 +143,27 @@ No intent reason code in voice event.
 
 ## Types Documentation
 
+### MLInputVoiceAppIntentSlot {#struct-mlinputvoiceappintentslot}
+
+```cpp
+typedef struct MLInputVoiceAppIntentSlot  MLInputVoiceAppIntentSlot;
+```
+
+A structure containing voice app-intent slot in voice event. 
+
+
+
+[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
+
+
+**API Level:**
+  * 24 
+
+
+
+
+-----------
+
 ### MLVoiceIntentEvent {#struct-mlvoiceintentevent}
 
 ```cpp
@@ -155,7 +178,7 @@ A structure containing voice intent event.
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -180,7 +203,7 @@ This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/ap
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -237,7 +260,7 @@ Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/gro
 
 
 **API Level:**
-  * 20
+  * 24
 
 
 
@@ -614,12 +637,19 @@ typedef enum MLVoiceIntentNoIntentReason {
   MLVoiceIntentNoIntentReason_Ensure32Bits = 0x7FFFFFFF
 } MLVoiceIntentNoIntentReason;
 
+typedef struct MLInputVoiceAppIntentSlot {
+  const char* slot_name;
+  const char* slot_value;
+} MLInputVoiceAppIntentSlot;
+
 typedef struct MLVoiceIntentEvent {
   bool is_success;
   MLVoiceState state;
   MLVoiceIntentNoIntentReason no_intent_reason;
   const char* text;
   uint32_t intent_id;
+  MLInputVoiceAppIntentSlot* app_intent_slots;
+  uint32_t app_intent_slot_count;
 } MLVoiceIntentEvent;
 
 typedef struct MLVoiceIntentCallbacks {
@@ -629,7 +659,7 @@ typedef struct MLVoiceIntentCallbacks {
 
 ML_STATIC_INLINE void MLVoiceIntentCallbacksInit(MLVoiceIntentCallbacks* inout_callbacks) {
   if (inout_callbacks) {
-    inout_callbacks->version = 1u;
+    inout_callbacks->version = 2u;
     inout_callbacks->on_voice_event = NULL;
   }
 }

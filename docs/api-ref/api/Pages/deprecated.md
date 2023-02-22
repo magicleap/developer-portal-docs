@@ -40,6 +40,22 @@ Global [MLInputControllerState](/api-ref/api/Modules/group___input/group___input
 
 Global [MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)  (MLHandle handle, [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])
 
-* Deprecated since 1.1.0. Scheduled for removal.
+* Deprecated since 1.1.0. Scheduled for removal. 
+
+Global [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingdepthbufferinfo)
+
+* Deprecated since 1.2.0. Scheduled for removal.  
+
+Global [MLMeshingPopulateDepth](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#mlresult-mlmeshingpopulatedepth)  (MLHandle client_handle, const [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md) *info, const [MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) *meshes)
+
+* Deprecated since 1.2.0. Scheduled for removal. 
+
+Global [MLMeshingPopulateDepthFlags](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enum-mlmeshingpopulatedepthflags)
+
+* Deprecated since 1.2.0. Scheduled for removal.  
+
+Global [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingvirtualcamerabufferinfo)
+
+* Deprecated since 1.2.0. Scheduled for removal. 
 
 

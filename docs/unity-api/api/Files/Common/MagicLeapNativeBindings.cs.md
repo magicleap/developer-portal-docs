@@ -195,6 +195,9 @@ namespace UnityEngine.XR.MagicLeap.Native
         [DllImport(MLPlatformDll, CallingConvention = CallingConvention.Cdecl)]
         public static extern MLResult.Code MLPlatformGetAPILevel(ref uint level);
 
+        [DllImport(MLSdkLoaderDll, CallingConvention = CallingConvention.Cdecl)]
+        public static extern MLResult.Code MLUnitySdkGetMinApiLevel(out uint minApiLevel);
+
         [DllImport(UnityMagicLeapDll, EntryPoint = "UnityMagicLeap_TryGetPose")]
         [return: MarshalAs(UnmanagedType.I1)]
         public static extern bool UnityMagicLeap_TryGetPose(MLCoordinateFrameUID id, out UnityEngine.Pose pose);

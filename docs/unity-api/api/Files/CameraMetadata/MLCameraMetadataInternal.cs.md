@@ -34,7 +34,7 @@ namespace UnityEngine.XR.MagicLeap
     using System.Runtime.InteropServices;
     using UnityEngine.XR.MagicLeap.Native;
 
-    public partial class MLCamera
+    public partial class MLCameraBase
     {
         public partial class Metadata
         {
@@ -813,7 +813,7 @@ namespace UnityEngine.XR.MagicLeap
             private MLResult.Code InternalGetControlAFAvailableModes(out ControlAFMode[] outData)
             {
                 outData = new ControlAFMode[0];
-                var result = NativeBindings.MLCameraMetadataGetControlAFAvailableModes(Handle, out outData, out uint resultCount);
+                var result = NativeBindings.MLCameraMetadataGetControlAFAvailableModes(Handle, out outData, out int resultCount);
                 MLResult.DidNativeCallSucceed(result, nameof(NativeBindings.MLCameraMetadataGetControlAFAvailableModes));
                 return result;
             }

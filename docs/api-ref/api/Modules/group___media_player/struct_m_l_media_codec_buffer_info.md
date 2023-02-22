@@ -91,7 +91,7 @@ int64_t presentation_time_us;
 ```
 
 
-Presentation time in us. 
+Presentation timestamp in microseconds for this buffer. 
 
 
 
