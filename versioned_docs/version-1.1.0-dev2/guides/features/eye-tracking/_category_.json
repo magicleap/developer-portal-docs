@@ -1,0 +1,9 @@
+{
+  "label": "Eye Tracking",
+  "collapsed": true,
+  "position": 3,
+  "link": {
+    "type": "doc",
+      "id": "eye-tracking"
+    }
+}

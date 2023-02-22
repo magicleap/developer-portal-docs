@@ -1,0 +1,39 @@
+---
+title: EditorProjectData
+summary: scriptable object holding data used in editor scripts. 
+
+---
+
+# EditorProjectData
+
+
+
+**NameSpace:** 
+[MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) 
+
+
+Scriptable Object holding data used in Editor scripts.   
+
+
+Inherits from: <br></br>ScriptableObject
+
+
+
+
+## Public Attributes
+
+### EnableColorSpaceWarning {#bool-enablecolorspacewarning}
+
+```csharp
+
+public bool EnableColorSpaceWarning = true;
+
+```
+
+
+
+
+
+
+-----------
+
