@@ -5,7 +5,7 @@ title: MLMeshingVirtualCameraBufferInfo
 
 # MLMeshingVirtualCameraBufferInfo
 
-**Module:** **[Graphics Utilities](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md)**
+**Module:** **[Graphics Utilities](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLMeshingVirtualCameraBufferInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMat4f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) | **[projection](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md#mlmat4f-projection)**  |
-| [MLTransform](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md#mltransform-transform)**  |
+| [MLMat4f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) | **[projection](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md#mlmat4f-projection)**  |
+| [MLTransform](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md#mltransform-transform)**  |
 
 ## Detailed Description
 

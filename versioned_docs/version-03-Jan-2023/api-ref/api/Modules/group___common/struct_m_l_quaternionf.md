@@ -5,7 +5,7 @@ title: MLQuaternionf
 
 # MLQuaternionf
 
-**Module:** **[Common](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/group___common.md)**
+**Module:** **[Common](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/group___common.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLQuaternionf
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[x](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-x)**  |
-| float | **[y](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-y)**  |
-| float | **[z](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-z)**  |
-| float | **[w](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-w)**  |
+| float | **[x](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-x)**  |
+| float | **[y](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-y)**  |
+| float | **[z](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-z)**  |
+| float | **[w](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md#float-w)**  |
 
 ## Detailed Description
 

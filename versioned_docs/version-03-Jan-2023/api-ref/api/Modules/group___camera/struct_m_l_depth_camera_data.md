@@ -6,7 +6,7 @@ summary: a structure to encapsulate output data for each camera sensor.
 
 # MLDepthCameraData
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -19,16 +19,16 @@ A structure to encapsulate output data for each camera sensor.  [More...](#detai
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#uint32-t-version)**  |
-| int64_t | **[frame_number](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#int64-t-frame-number)**  |
-| [MLTime](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[frame_timestamp](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mltime-frame-timestamp)**  |
-| [MLDepthCameraFrameType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype) | **[frame_type](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraframetype-frame-type)**  |
-| [MLTransform](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[camera_pose](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mltransform-camera-pose)**  |
-| [MLDepthCameraIntrinsics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md) | **[intrinsics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraintrinsics-intrinsics)**  |
-| [MLDepthCameraDepthImage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) * | **[depth_image](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthimage-depth-image)**  |
-| [MLDepthCameraConfidenceBuffer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) * | **[confidence](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraconfidencebuffer-confidence)**  |
-| [MLDepthCameraDepthFlagsBuffer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) * | **[flags](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthflagsbuffer-flags)**  |
-| [MLDepthCameraAmbientRawDepthImage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | **[ambient_raw_depth_image](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraambientrawdepthimage-ambient-raw-depth-image)**  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#uint32-t-version)**  |
+| int64_t | **[frame_number](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#int64-t-frame-number)**  |
+| [MLTime](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[frame_timestamp](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mltime-frame-timestamp)**  |
+| [MLDepthCameraFrameType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype) | **[frame_type](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraframetype-frame-type)**  |
+| [MLTransform](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[camera_pose](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mltransform-camera-pose)**  |
+| [MLDepthCameraIntrinsics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md) | **[intrinsics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraintrinsics-intrinsics)**  |
+| [MLDepthCameraDepthImage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) * | **[depth_image](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthimage-depth-image)**  |
+| [MLDepthCameraConfidenceBuffer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) * | **[confidence](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraconfidencebuffer-confidence)**  |
+| [MLDepthCameraDepthFlagsBuffer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) * | **[flags](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthflagsbuffer-flags)**  |
+| [MLDepthCameraAmbientRawDepthImage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | **[ambient_raw_depth_image](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraambientrawdepthimage-ambient-raw-depth-image)**  |
 
 ## Detailed Description
 
@@ -38,7 +38,7 @@ struct MLDepthCameraData;
 
 A structure to encapsulate output data for each camera sensor. 
 
-This structure must be initialized by calling [MLDepthCameraDataInit](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#void-mldepthcameradatainit) before use.
+This structure must be initialized by calling [MLDepthCameraDataInit](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mldepthcameradatainit) before use.
 
 
 
@@ -107,7 +107,7 @@ MLDepthCameraFrameType frame_type;
 
 | Type | Description |
 |--|--|
-| [MLDepthCameraFrameType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype) | Enumeration of camera mode used when capturing a frame.  |
+| [MLDepthCameraFrameType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype) | Enumeration of camera mode used when capturing a frame.  |
 
 
 Depth camera mode used for capturing this frame. 
@@ -143,7 +143,7 @@ MLDepthCameraIntrinsics intrinsics;
 
 | Type | Description |
 |--|--|
-| [MLDepthCameraIntrinsics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md) | Depth camera intrinsic parameters.  |
+| [MLDepthCameraIntrinsics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md) | Depth camera intrinsic parameters.  |
 
 
 Camera intrinsic parameters. 
@@ -164,7 +164,7 @@ MLDepthCameraDepthImage * depth_image;
 
 | Type | Description |
 |--|--|
-| [MLDepthCameraDepthImage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) * | Depth image.  |
+| [MLDepthCameraDepthImage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) * | Depth image.  |
 
 
 Depth image. 
@@ -185,7 +185,7 @@ MLDepthCameraConfidenceBuffer * confidence;
 
 | Type | Description |
 |--|--|
-| [MLDepthCameraConfidenceBuffer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) * | Confidence score.  |
+| [MLDepthCameraConfidenceBuffer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) * | Confidence score.  |
 
 
 Confidence score. 
@@ -206,7 +206,7 @@ MLDepthCameraDepthFlagsBuffer * flags;
 
 | Type | Description |
 |--|--|
-| [MLDepthCameraDepthFlagsBuffer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) * | Flags.  |
+| [MLDepthCameraDepthFlagsBuffer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) * | Flags.  |
 
 
 Depth flags. 
@@ -227,7 +227,7 @@ MLDepthCameraAmbientRawDepthImage * ambient_raw_depth_image;
 
 | Type | Description |
 |--|--|
-| [MLDepthCameraAmbientRawDepthImage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | Ambient raw depth image.  |
+| [MLDepthCameraAmbientRawDepthImage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | Ambient raw depth image.  |
 
 
 Ambient raw depth image. 

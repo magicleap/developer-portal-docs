@@ -6,7 +6,7 @@ summary: gesture classification posture related finger data.
 
 # MLGestureClassificationPostureFingerData
 
-**Module:** **[Gesture Classification System](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md)**
+**Module:** **[Gesture Classification System](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md)**
 
 
 
@@ -19,10 +19,10 @@ Gesture classification posture related finger data.  [More...](#detailed-descrip
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[pinch_normalized_angle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-normalized-angle)**  |
-| float | **[pinch_angle_of_separation_deg](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-angle-of-separation-deg)**  |
-| float | **[pinch_normalized_distance](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-normalized-distance)**  |
-| float | **[pinch_distance_m](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-distance-m)**  |
+| float | **[pinch_normalized_angle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-normalized-angle)**  |
+| float | **[pinch_angle_of_separation_deg](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-angle-of-separation-deg)**  |
+| float | **[pinch_normalized_distance](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-normalized-distance)**  |
+| float | **[pinch_distance_m](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md#float-pinch-distance-m)**  |
 
 ## Detailed Description
 

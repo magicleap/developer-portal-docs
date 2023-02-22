@@ -6,7 +6,7 @@ summary: static information about the eye tracking.
 
 # MLEyeTrackingStaticData
 
-**Module:** **[Eye Tracking](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md)**
+**Module:** **[Eye Tracking](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md)**
 
 
 
@@ -19,9 +19,9 @@ Static information about the eye tracking.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCoordinateFrameUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[vergence](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md#mlcoordinateframeuid-vergence)**  |
-| [MLCoordinateFrameUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[left_center](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md#mlcoordinateframeuid-left-center)**  |
-| [MLCoordinateFrameUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[right_center](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md#mlcoordinateframeuid-right-center)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[vergence](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md#mlcoordinateframeuid-vergence)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[left_center](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md#mlcoordinateframeuid-left-center)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[right_center](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md#mlcoordinateframeuid-right-center)**  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLEyeTrackingStaticData;
 
 Static information about the eye tracking. 
 
-Populate with [MLEyeTrackingGetStaticData()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#mlresult-mleyetrackinggetstaticdata).
+Populate with [MLEyeTrackingGetStaticData()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#mlresult-mleyetrackinggetstaticdata).
 
 
 

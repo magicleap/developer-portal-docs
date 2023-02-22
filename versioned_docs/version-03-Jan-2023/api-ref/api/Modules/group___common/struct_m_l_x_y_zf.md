@@ -6,11 +6,11 @@ summary: internal structure used to simplify access of mlvec3f. do not create th
 
 # MLXYZf
 
-**Module:** **[Common](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/group___common.md)**
+**Module:** **[Common](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/group___common.md)**
 
 
 
-Internal structure used to simplify access of [MLVec3f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md). Do not create this structure directly and always use [MLVec3f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) instead. 
+Internal structure used to simplify access of [MLVec3f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md). Do not create this structure directly and always use [MLVec3f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) instead. 
 
 
 `#include <ml_types.h>`
@@ -19,9 +19,9 @@ Internal structure used to simplify access of [MLVec3f](/versioned_docs/version-
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[x](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_x_y_zf.md#float-x)**  |
-| float | **[y](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_x_y_zf.md#float-y)**  |
-| float | **[z](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_x_y_zf.md#float-z)**  |
+| float | **[x](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_x_y_zf.md#float-x)**  |
+| float | **[y](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_x_y_zf.md#float-y)**  |
+| float | **[z](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_x_y_zf.md#float-z)**  |
 
 ## Public Attributes Documentation
 

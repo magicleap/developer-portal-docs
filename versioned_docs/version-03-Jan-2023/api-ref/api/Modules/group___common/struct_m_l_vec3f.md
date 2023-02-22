@@ -5,7 +5,7 @@ title: MLVec3f
 
 # MLVec3f
 
-**Module:** **[Common](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/group___common.md)**
+**Module:** **[Common](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/group___common.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLVec3f
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[x](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md#float-x)**  |
-| float | **[y](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md#float-y)**  |
-| float | **[z](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md#float-z)**  |
+| float | **[x](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md#float-x)**  |
+| float | **[y](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md#float-y)**  |
+| float | **[z](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md#float-z)**  |
 
 ## Detailed Description
 

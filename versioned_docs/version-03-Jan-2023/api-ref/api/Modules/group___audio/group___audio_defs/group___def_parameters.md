@@ -6,7 +6,7 @@ summary: parameters.
 
 # Parameters
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**
 
 PARAMETERS. 
 
@@ -14,7 +14,7 @@ PARAMETERS.
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLAudioOutputDevice](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice)** <br></br> { <br></br>[MLAudioOutputDevice_Wearable](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-wearable),<br></br> [MLAudioOutputDevice_USB](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-usb),<br></br> [MLAudioOutputDevice_Bluetooth](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-bluetooth),<br></br> [MLAudioOutputDevice_Ensure32Bits](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLAudioOutputDevice](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice)** <br></br> { <br></br>[MLAudioOutputDevice_Wearable](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-wearable),<br></br> [MLAudioOutputDevice_USB](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-usb),<br></br> [MLAudioOutputDevice_Bluetooth](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-bluetooth),<br></br> [MLAudioOutputDevice_Ensure32Bits](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Enums Documentation
 

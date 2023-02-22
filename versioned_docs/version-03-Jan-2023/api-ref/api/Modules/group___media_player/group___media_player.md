@@ -1722,7 +1722,7 @@ Output formats for MediaMuxer.
 
 This enumarates list of all the possibly supported output formats for the muxer across all the releases/Platform.
 
-Use [MLMediaMuxerGetSupportedOutputFormats](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedoutputformats) to query for all supported Output formats on the Platform.
+Use [MLMediaMuxerGetSupportedOutputFormats](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedoutputformats) to query for all supported Output formats on the Platform.
 
 
 
@@ -1849,7 +1849,7 @@ Description of 'what' should be a value from the MLMediaPlayerInfo. Description 
 
 
 
-MediaTrack types returned by [MLMediaPlayerGetTrackType()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracktype). 
+MediaTrack types returned by [MLMediaPlayerGetTrackType()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracktype). 
 
 
 
@@ -2117,7 +2117,7 @@ Cue aligment setting.
 
 
 
-Number of acquired buffers to be requested in functions [MLNativeSurfaceCreate](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate) and MLNativeSurfaceTextureCreate. 
+Number of acquired buffers to be requested in functions [MLNativeSurfaceCreate](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate) and MLNativeSurfaceTextureCreate. 
 
 
 
@@ -2145,7 +2145,7 @@ Number of acquired buffers to be requested in functions [MLNativeSurfaceCreate](
 
 
 
-Pixel format to use when creating the native surface. Used in functions [MLNativeSurfaceCreate](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate) and MLNativeSurfaceTextureCreate. 
+Pixel format to use when creating the native surface. Used in functions [MLNativeSurfaceCreate](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate) and MLNativeSurfaceTextureCreate. 
 
 
 
@@ -2189,7 +2189,7 @@ Cea608 caption style and color.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md)
 
 
 **API Level:**
@@ -2210,7 +2210,7 @@ Cea608 caption preamble address code.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md)
 
 
 **API Level:**
@@ -2231,7 +2231,7 @@ Cea608 caption line structure.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md)
 
 
 **API Level:**
@@ -2252,7 +2252,7 @@ Cea608 caption segment structure.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md)
 
 
 **API Level:**
@@ -2275,8 +2275,8 @@ Callback signature called when Cea608 displayable is changed.
 
 |  |   |   |
 |--|--|--|
-|  |cc_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a CC Parser instance for which callback was called. |
-|  |cc_seg|[MLCea608CaptionSegmentEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md) conveys caption displayble to be rendered. |
+|  |cc_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a CC Parser instance for which callback was called. |
+|  |cc_seg|[MLCea608CaptionSegmentEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md) conveys caption displayble to be rendered. |
 |  |data|Custom data to be returned when callback is fired. |
 
 
@@ -2300,7 +2300,7 @@ Cea708 Caption Color.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)
 
 
 **API Level:**
@@ -2321,7 +2321,7 @@ Cea708 Caption Pen Attributes.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)
 
 
 **API Level:**
@@ -2342,7 +2342,7 @@ Cea708 Caption Pen Color.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)
 
 
 **API Level:**
@@ -2363,7 +2363,7 @@ Cea708 Caption Pen Location.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)
 
 
 **API Level:**
@@ -2384,7 +2384,7 @@ Cea708 Caption Window Attributes.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)
 
 
 **API Level:**
@@ -2405,7 +2405,7 @@ Cea708 Caption Window.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)
 
 
 **API Level:**
@@ -2426,7 +2426,7 @@ Cea708 Caption Event.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)
 
 
 **API Level:**
@@ -2449,8 +2449,8 @@ Callback signature called when Cea708 parser emits event.
 
 |  |   |   |
 |--|--|--|
-|  |cc_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a Cea708 Parser instance for which callback was called. |
-|  |event|[MLCea708CaptionEvent](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md) conveys caption event to listener. |
+|  |cc_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a Cea708 Parser instance for which callback was called. |
+|  |event|[MLCea708CaptionEvent](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md) conveys caption event to listener. |
 |  |data|Custom data to be returned when callback is fired. |
 
 
@@ -2475,7 +2475,7 @@ Media codec buffer info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md)
 
 
 
@@ -2491,7 +2491,7 @@ MediaCodec Input buffer information.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_input_buffer_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_input_buffer_info.md)
 
 
 **API Level:**
@@ -2512,7 +2512,7 @@ MediaCodec Output buffer information.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md)
 
 
 **API Level:**
@@ -2533,7 +2533,7 @@ MediaCodec Output Format information.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_format_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_format_info.md)
 
 
 **API Level:**
@@ -2554,7 +2554,7 @@ MediaCodec Output Format information.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md)
 
 
 **API Level:**
@@ -2575,7 +2575,7 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md)
 
 
 **API Level:**
@@ -2596,7 +2596,7 @@ MediaCodec Output Frame Rendered information.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_frame_rendered_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_frame_rendered_info.md)
 
 
 **API Level:**
@@ -2617,7 +2617,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md)
 
 
 **API Level:**
@@ -2638,7 +2638,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md)
 
 
 **API Level:**
@@ -2659,7 +2659,7 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md)
 
 
 **API Level:**
@@ -2681,7 +2681,7 @@ Used to store the list of available codec names or the list of supported mime ty
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md)
 
 
 
@@ -2697,7 +2697,7 @@ Used to store the list of codec profile levels.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md)
 
 
 **API Level:**
@@ -2720,11 +2720,11 @@ Called to request data from the given position.
 
 |  |   |   |
 |--|--|--|
-|  |media_data_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
+|  |media_data_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
 |  |position|The position in the data source to read from. |
 |  |size|The number of bytes to read. |
 |  |buffer|The buffer to read the data into. |
-|  |context|User data as passed to [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
+|  |context|User data as passed to [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
 Implementations should should write up to `size` bytes into `buffer`, and return the number of bytes written.
 
 Return 0 to indicate that end of stream is reached. Return -1 on error.
@@ -2750,8 +2750,8 @@ Called to get the size of the data source.
 
 |  |   |   |
 |--|--|--|
-|  |media_data_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
-|  |context|User data as passed to [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
+|  |media_data_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
+|  |context|User data as passed to [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
 
 
 
@@ -2773,8 +2773,8 @@ Called before deleting |this|. The other methods may return errors if they're ca
 
 |  |   |   |
 |--|--|--|
-|  |media_data_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
-|  |context|User data as passed to [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
+|  |media_data_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
+|  |context|User data as passed to [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate). |
 
 
 
@@ -2807,7 +2807,7 @@ Data type containing byte array buffer and the size.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md)
 
 
 
@@ -2824,7 +2824,7 @@ Data type containing list of byte array buffers and the size.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md)
 
 
 
@@ -2841,7 +2841,7 @@ Data type containing {key, value} pair.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md)
 
 
 
@@ -2858,7 +2858,7 @@ Data type containing array of {key, value} pair.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md)
 
 
 
@@ -2875,7 +2875,7 @@ Data type that encapsulates Key Request input arguments.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_request_input_param.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_request_input_param.md)
 
 
 
@@ -2895,7 +2895,7 @@ For Provision Request Message: an opaque provision request byte array that shoul
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md)
 
 
 
@@ -2912,7 +2912,7 @@ Data type that encapsulates algorithm, key_set_id and IV for Encryption/Decrypti
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md)
 
 
 
@@ -2929,7 +2929,7 @@ Data type that encapsulates algorithm, key_set_id for HMAC based Sign/Verify.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md)
 
 
 
@@ -2946,7 +2946,7 @@ Data type that encapsulates algorithm, wrapped_key for RSA operation.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md)
 
 
 
@@ -2962,7 +2962,7 @@ MediaDRM event info associated with a session.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md)
 
 
 **API Level:**
@@ -2983,7 +2983,7 @@ MediaDRM expiration update info associated with a session.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md)
 
 
 **API Level:**
@@ -3004,7 +3004,7 @@ MediaDRM key status.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md)
 
 
 **API Level:**
@@ -3025,7 +3025,7 @@ MediaDRM session keys status change info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md)
 
 
 **API Level:**
@@ -3048,7 +3048,7 @@ User of MLMediaDRM should implement this.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md)
 
 
 **API Level:**
@@ -3068,7 +3068,7 @@ typedef MLPSSHEntry MLMediaExtractorPSSHEntry;
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
 
 
 
@@ -3085,7 +3085,7 @@ DRM Scheme initialization data.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md)
 
 
 
@@ -3102,7 +3102,7 @@ Data type containing byte array buffer and the size.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md)
 
 
 
@@ -3132,7 +3132,7 @@ Data type that encapsulates sample data to be written in to MLMediaMuxer.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md)
 
 
 **API Level:**
@@ -3152,7 +3152,7 @@ typedef MLPSSHEntry MLMediaPlayerPSSHEntry;
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
 
 
 
@@ -3168,7 +3168,7 @@ MediaPlayer DRM Info for a Media Track.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)
 
 
 **API Level:**
@@ -3190,7 +3190,7 @@ MediaPlayer subtitle data.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md)
 
 
 
@@ -3207,7 +3207,7 @@ Indicate the buffering settings.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md)
 
 
 
@@ -3223,7 +3223,7 @@ MediaPlayer Buffering update callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)
 
 
 **API Level:**
@@ -3244,7 +3244,7 @@ MediaPlayer Playback completion callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)
 
 
 **API Level:**
@@ -3265,7 +3265,7 @@ MediaPlayer Error callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)
 
 
 **API Level:**
@@ -3286,7 +3286,7 @@ MediaPlayer Information callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)
 
 
 **API Level:**
@@ -3307,7 +3307,7 @@ MediaPlayer Playback prepared callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)
 
 
 **API Level:**
@@ -3328,7 +3328,7 @@ MediaPlayer Playback seek completion callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)
 
 
 **API Level:**
@@ -3349,7 +3349,7 @@ MediaPlayer Video Size Changed callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)
 
 
 **API Level:**
@@ -3370,7 +3370,7 @@ MediaPlayer Track DRM Info callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)
 
 
 **API Level:**
@@ -3391,7 +3391,7 @@ MediaPlayer reset completion callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)
 
 
 **API Level:**
@@ -3412,7 +3412,7 @@ MediaPlayer frame packing callback Info.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)
 
 
 **API Level:**
@@ -3429,13 +3429,13 @@ MediaPlayer frame packing callback Info.
 typedef struct MLMediaPlayerEventCallbacksEx  MLMediaPlayerEventCallbacksEx;
 ```
 
-Callbacks for notifying client about [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) error events. 
+Callbacks for notifying client about [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) error events. 
 
 Those are async mechanisms that should not be used in parallel with their sync counterpart, i.e. poll-based queries for the same events using MLMediaPlayerPollStatespoll().
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)
 
 
 **API Level:**
@@ -3456,7 +3456,7 @@ MediaPlayer Track Information.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)
 
 
 **API Level:**
@@ -3477,7 +3477,7 @@ DRM Session information for a MediaPlayer Track.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)
 
 
 **API Level:**
@@ -3501,8 +3501,8 @@ Callbacks signature called when subtitle update is available.
 |  |   |   |
 |--|--|--|
 |  |data|Custom data to be returned when callback is fired. |
-|  |media_player|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
-|  |subtitle_data|[MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) is the raw subtitle data. |
+|  |media_player|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
+|  |subtitle_data|[MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) is the raw subtitle data. |
 
 
 
@@ -3522,8 +3522,8 @@ Callbacks signature called when Timed Text update is available.
 
 |  |   |   |
 |--|--|--|
-|  |media_player|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
-|  |timed_text|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is the handle for timed_text data. |
+|  |media_player|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
+|  |timed_text|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is the handle for timed_text data. |
 |  |data|Custom data to be delivered when callback is invoked.|
 **Required Permissions**:
 
@@ -3552,7 +3552,7 @@ MediaPlayer metrics data.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)
 
 
 **API Level:**
@@ -3575,8 +3575,8 @@ Called when buffers becomes available.
 
 |  |   |   |
 |--|--|--|
-|  |media_stream_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
-|  |context|User data as passed to [MLMediaStreamSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
+|  |media_stream_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
+|  |context|User data as passed to [MLMediaStreamSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
 Signal that at least one buffer is now available. Application should then call getBuffer() as much as possible until it returns false, or until no more data is currently available in the application.
 
 
@@ -3596,7 +3596,7 @@ Byte data for TTML image cues.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_image.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_image.md)
 
 
 **API Level:**
@@ -3617,7 +3617,7 @@ TTML data structure.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md)
 
 
 **API Level:**
@@ -3639,7 +3639,7 @@ PSSH entry.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
 
 
 
@@ -3655,7 +3655,7 @@ WebVTT data structure.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)
 
 
 **API Level:**
@@ -3676,7 +3676,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md)
 
 
 **API Level:**
@@ -3697,7 +3697,7 @@ Configuration values for creating the Native Surface.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md)
 
 
 **API Level:**
@@ -3718,7 +3718,7 @@ Callbacks for notifying when an output frame is available for consumption.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md)
 
 
 **API Level:**
@@ -3746,14 +3746,14 @@ Create internal closed caption parser object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain the handle to the CC parser. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain the handle to the CC parser. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Internal closed caption parser object was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Internal closed caption parser object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -3787,20 +3787,20 @@ Return closed caption for display.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a CC parser. |
-| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) structure returned from MLMediaPlayerGetSubtitleEx function. |
-| int32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) structure returned from MLMediaPlayerGetSubtitleEx function. |
-| const [MLCea608CaptionSegmentEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md) ** |out_cc_seg|The returned [MLCea608CaptionSegmentEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md) pointer for CC display. NOTE that user doesn't own this memory.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a CC parser. |
+| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) structure returned from MLMediaPlayerGetSubtitleEx function. |
+| int32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) structure returned from MLMediaPlayerGetSubtitleEx function. |
+| const [MLCea608CaptionSegmentEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md) ** |out_cc_seg|The returned [MLCea608CaptionSegmentEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md) pointer for CC display. NOTE that user doesn't own this memory.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|one of the arguements is incorrect. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|CC is ready to display and content is stored in out_ccSeg. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|CC parser was not properly built or initialized. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotEnoughData|more data is required and no displayable CC for now.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|one of the arguements is incorrect. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|CC is ready to display and content is stored in out_ccSeg. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|CC parser was not properly built or initialized. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotEnoughData|more data is required and no displayable CC for now.|
 **Required Permissions**:
 
   * None 
@@ -3831,14 +3831,14 @@ Release internal CC parser object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a CC parser.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a CC parser.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|internal CC parser object was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|internal CC parser object was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -3871,17 +3871,17 @@ Set callback to get notified when a caption displayable has changed.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a CC parser. |
-| [MLMediaCCParserDisplayChangedCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaccparserdisplaychangedcallback) |on_display_changed_callback|Function pointer for display changed callback. See [MLMediaCCParserDisplayChangedCallback()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaccparserdisplaychangedcallback) callback typedef declaration and comments for explanation on expected callback parameters. This can be 'NULL' to unset the callback. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a CC parser. |
+| [MLMediaCCParserDisplayChangedCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaccparserdisplaychangedcallback) |on_display_changed_callback|Function pointer for display changed callback. See [MLMediaCCParserDisplayChangedCallback()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaccparserdisplaychangedcallback) callback typedef declaration and comments for explanation on expected callback parameters. This can be 'NULL' to unset the callback. |
 | void * |data|Custom data to be returned when callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `cc_handle` handle was not found. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was successfully set. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `cc_handle` handle was not found. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was successfully set. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -3916,17 +3916,17 @@ Provide Cea608 parser with subtitle raw data for parsing. If the callback has be
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea608 parser. |
-| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md). |
-| uint32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea608 parser. |
+| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md). |
+| uint32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|the input parameter(s) is(are) wrong. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Cea708 parser was not properly built or initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|the input parameter(s) is(are) wrong. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Cea708 parser was not properly built or initialized.|
 **Required Permissions**:
 
   * None 
@@ -3957,15 +3957,15 @@ Create Cea708 parser object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain the handle to the Cea708 parser. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain the handle to the Cea708 parser. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|The operation failed with memory allocation error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_handle is null. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Internal Cea708 parser object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|The operation failed with memory allocation error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_handle is null. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Internal Cea708 parser object was created successfully. |
 **Required Permissions**:
 
   * None 
@@ -3998,17 +3998,17 @@ Provide Cea708 parser with subtitle raw data for parsing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
-| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md). |
-| uint32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
+| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md). |
+| uint32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|the input parameter(s) is(are) wrong. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Cea708 parser was not properly built or initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|the input parameter(s) is(are) wrong. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Cea708 parser was not properly built or initialized.|
 **Required Permissions**:
 
   * None 
@@ -4039,14 +4039,14 @@ Release Cea708 parser object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|cc_handle is wrong or not found. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|internal Cea708 parser object was released successfully.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|cc_handle is wrong or not found. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|internal Cea708 parser object was released successfully.|
 **Required Permissions**:
 
   * None 
@@ -4079,16 +4079,16 @@ Set callback to get notified when a caption event has generated.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
-| [MLMediaCea708ParserEmitEventCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) |on_emit_event_callback|Function pointer for event callback. See [MLMediaCea708ParserEmitEventCallback()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) callback declaration and comments for explanation on expected callback parameters. This can be 'NULL' to unset the callback. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
+| [MLMediaCea708ParserEmitEventCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) |on_emit_event_callback|Function pointer for event callback. See [MLMediaCea708ParserEmitEventCallback()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) callback declaration and comments for explanation on expected callback parameters. This can be 'NULL' to unset the callback. |
 | void * |data|Custom data to be returned when callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `cc_handle` handle was not found. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was successfully set.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `cc_handle` handle was not found. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was successfully set.|
 **Required Permissions**:
 
   * None 
@@ -4113,13 +4113,13 @@ static inline void MLMediaCodecCallbacksExInit(
 )
 ```
 
-Initializes [MLMediaCodecCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) with default values. 
+Initializes [MLMediaCodecCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaCodecCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) * |inout_callbacks|MediaCodec Callback structure defined by [MLMediaCodecCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) that needs to be initialized. |
+| [MLMediaCodecCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) * |inout_callbacks|MediaCodec Callback structure defined by [MLMediaCodecCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) that needs to be initialized. |
 
 
 
@@ -4134,13 +4134,13 @@ static inline void MLMediaCodecOutputFrameListenerInit(
 )
 ```
 
-Initializes [MLMediaCodecOutputFrameListener](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) with default values. 
+Initializes [MLMediaCodecOutputFrameListener](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaCodecOutputFrameListener](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) * |inout_callbacks|MediaCodec Callback structure defined by [MLMediaCodecOutputFrameListener](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) that needs to be initialized. |
+| [MLMediaCodecOutputFrameListener](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) * |inout_callbacks|MediaCodec Callback structure defined by [MLMediaCodecOutputFrameListener](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) that needs to be initialized. |
 
 
 
@@ -4155,13 +4155,13 @@ static inline void MLMediaCodecCryptoInfoInit(
 )
 ```
 
-Initializes [MLMediaCodecCryptoInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) with default values. 
+Initializes [MLMediaCodecCryptoInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaCodecCryptoInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) * |inout_crypto_info|CryptoInfo structure defined by [MLMediaCodecCryptoInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) that needs to be initialized. |
+| [MLMediaCodecCryptoInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) * |inout_crypto_info|CryptoInfo structure defined by [MLMediaCodecCryptoInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) that needs to be initialized. |
 
 
 
@@ -4183,21 +4183,21 @@ Create a Crypto Info object.
 
 |  |   |   |
 |--|--|--|
-| const [MLMediaCodecCryptoInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) * |crypto_info|Input Structure that encapsulates sample crypto info. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_crypto_info_handle|Upon successful return will point to handle to the created Crypto info. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| const [MLMediaCodecCryptoInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md) * |crypto_info|Input Structure that encapsulates sample crypto info. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_crypto_info_handle|Upon successful return will point to handle to the created Crypto info. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded.|
 **Required Permissions**:
 
   * None 
 
 
-The CryptoInfo object should be released by calling [MLMediaCodecReleaseCryptoInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecreleasecryptoinfo).
+The CryptoInfo object should be released by calling [MLMediaCodecReleaseCryptoInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecreleasecryptoinfo).
 
 
 
@@ -4218,20 +4218,20 @@ MLResult MLMediaCodecReleaseCryptoInfo(
 )
 ```
 
-Release the Crypto Info created by [MLMediaCodecCreateCryptoInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreatecryptoinfo). 
+Release the Crypto Info created by [MLMediaCodecCreateCryptoInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreatecryptoinfo). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |crypto_info_handle|Handle to Crypto info that needs to be released.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |crypto_info_handle|Handle to Crypto info that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded.|
 **Required Permissions**:
 
   * None 
@@ -4265,18 +4265,18 @@ Create a new MLMediaCodec.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaCodecCreation](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeccreation) |method|One of the creation methods defined by [MLMediaCodecCreation](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeccreation). |
-| [MLMediaCodecType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodectype) |type|One of the codec types defined by [MLMediaCodecType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodectype). |
+| [MLMediaCodecCreation](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeccreation) |method|One of the creation methods defined by [MLMediaCodecCreation](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeccreation). |
+| [MLMediaCodecType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodectype) |type|One of the codec types defined by [MLMediaCodecType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodectype). |
 | const char * |name_str|If creating a codec by name, this is the name of the codec. If creating a codec by type, this is the mime type of the codec. Refer to APIs in MLMediaCodecList for retrieving the list of names and mime types of supported codecs. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaCodec. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaCodec. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec object was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4302,15 +4302,15 @@ Destroy a MLMediaCodec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec object was successfully destroyed. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec object was successfully destroyed. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4338,17 +4338,17 @@ Set callbacks to notify client codec events. Client needs to implement the callb
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLMediaCodecCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) * |callbacks|Set of codec callbacks. Can be set to NULL to unset all the callback altogether. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLMediaCodecCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md) * |callbacks|Set of codec callbacks. Can be set to NULL to unset all the callback altogether. |
 | void * |user_data|Pointer to user payload data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|callback was set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|callback was set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4358,7 +4358,7 @@ If the client intends to use the codec component in asynchronous mode, a valid c
 
 * MLMediaCodecDequeueInputBuffer
 * MLMediaCodecDequeueOutputBuffer Calling those functions will return MLMediaGenericResult_InvalidOperation.
-Also, [MLMediaCodecFlush()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecflush) behaves differently in asynchronous mode. After calling MLMediaCodecFlush, you must call [MLMediaCodecStart()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecstart) to "resume" receiving input buffers, even if an input surface was created.
+Also, [MLMediaCodecFlush()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecflush) behaves differently in asynchronous mode. After calling MLMediaCodecFlush, you must call [MLMediaCodecStart()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecstart) to "resume" receiving input buffers, even if an input surface was created.
 
 
 
@@ -4387,17 +4387,17 @@ Registers a callback to be invoked when an output frame is available or rendered
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLMediaCodecOutputFrameListener](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) * |callbacks|Set of codec callbacks. Can be set to NULL to unset all the callback altogether. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLMediaCodecOutputFrameListener](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md) * |callbacks|Set of codec callbacks. Can be set to NULL to unset all the callback altogether. |
 | void * |user_data|Pointer to user payload data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|callback was set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|callback was set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4437,22 +4437,22 @@ Obtain the name of the created codec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
 | char * |out_name|Pointer to the user-maintained buffer for storing the output C-style name string.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec name was retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec name was retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-User shall allocate at least [MAX_CODEC_NAME_SIZE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-codec-name-size) bytes of memory for storing the output name string.
+User shall allocate at least [MAX_CODEC_NAME_SIZE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-codec-name-size) bytes of memory for storing the output name string.
 
 
 
@@ -4477,18 +4477,18 @@ Configure the MLMediaCodec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |format_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the #MediaFormat object. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |surface_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the Surface object. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |crypto_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the #MediaCrypto object. Pass 0 for clear content.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |format_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the #MediaFormat object. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |surface_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the Surface object. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |crypto_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the #MediaCrypto object. Pass 0 for clear content.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was configured successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was configured successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4498,14 +4498,14 @@ Encoder configuration: surface_handle and crypto_handle should be 0. Decoder Con
 
 The output surface can be:
 
-* Native surface created by [MLNativeSurfaceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate).
-* Native surface texture created by [MLNativeSurfaceTextureCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate).
-* The surface object created on an encoder using [MLMediaCodecCreateInputSurface()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface).
+* Native surface created by [MLNativeSurfaceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate).
+* Native surface texture created by [MLNativeSurfaceTextureCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate).
+* The surface object created on an encoder using [MLMediaCodecCreateInputSurface()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface).
 * Pass 0 or ML_INVALID_HANDLE if the codec does not generate raw video output (e.g. not a video decoder) and/or if you want to configure the codec with CPU bound output buffers. NOTE that:
 
 
-1. For the first 3 cases (above), the decoded output of the decoder will be consumed direclty by the surface. This allows implementation of fast, zero-copy raw video consumption operation. Also, calling [MLMediaCodecGetOutputBufferPointer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetoutputbufferpointer) will return MLMediaGenericResult_InvalidOperation
-2. For the last case, user will have to explictly consume the output of the decoder by calling [MLMediaCodecGetOutputBufferPointer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetoutputbufferpointer).
+1. For the first 3 cases (above), the decoded output of the decoder will be consumed direclty by the surface. This allows implementation of fast, zero-copy raw video consumption operation. Also, calling [MLMediaCodecGetOutputBufferPointer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetoutputbufferpointer) will return MLMediaGenericResult_InvalidOperation
+2. For the last case, user will have to explictly consume the output of the decoder by calling [MLMediaCodecGetOutputBufferPointer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetoutputbufferpointer).
 
 
 
@@ -4532,15 +4532,15 @@ Start the codec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was started successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was started successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4568,15 +4568,15 @@ Stop the codec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was stopped successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was stopped successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4604,15 +4604,15 @@ Reset the codec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was stopped successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was stopped successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4622,7 +4622,7 @@ This will reset the codec to initial (Uninitialized) state. Call this when:
 
 * Input or output queuing operation fails.
 * An error is notified through the asynchronous event MLMediaCodecCallbacks.on_error.
-Resetting a codec can fail when an unrecoverable error occurs (which is Hardare codec implementation specific), in which case codec will be in unusable state and should be destroyed using [MLMediaCodecDestroy](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdestroy).
+Resetting a codec can fail when an unrecoverable error occurs (which is Hardare codec implementation specific), in which case codec will be in unusable state and should be destroyed using [MLMediaCodecDestroy](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdestroy).
 
 
 
@@ -4649,21 +4649,21 @@ Flush the both the input and output ports of the codec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was flushed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCodec object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCodec was flushed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-Upon return, all indices previously returned in calls to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer) and [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer) become invalid, and all buffers are owned by the codec.
+Upon return, all indices previously returned in calls to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer) and [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer) become invalid, and all buffers are owned by the codec.
 
 
 
@@ -4686,21 +4686,21 @@ Communicate additional parameter changes to a codec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |format_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat containing the parameters to set.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |format_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat containing the parameters to set.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|At least one of the input parameters or one of the format parameter values is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|At least one format parameter is not applicable. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|At least one of the input parameters or one of the format parameter values is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|At least one format parameter is not applicable. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized. |
 Dynamically modify or add configuration parameters to a configured or started codec.
 
-Create an empty MLMediaFormat object using [MLMediaFormatCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreate) and set the appropriate parameters. For more details, refer to [ml_media_format.h](/versioned_docs/version-03 Jan 2023/api-ref/api/Files/ml__media__format_8h.md#files-ml-media-format.h).
+Create an empty MLMediaFormat object using [MLMediaFormatCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreate) and set the appropriate parameters. For more details, refer to [ml_media_format.h](/versioned_docs/version-03-Jan-2023/api-ref/api/Files/ml__media__format_8h.md#files-ml-media-format.h).
 
 
 Parameters and associated values that may be applied are:
@@ -4748,8 +4748,8 @@ Obtain a writable buffer pointer for a dequeued input buffer index to contain th
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| int64_t |buffer_index|The index of a client-owned input buffer previously returned from a call to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| int64_t |buffer_index|The index of a client-owned input buffer previously returned from a call to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer). |
 | uint8_t ** |out_buffer_ptr|Pointer to returned input buffer. |
 | size_t * |out_buffer_size|Size of returned input buffer.|
 
@@ -4757,10 +4757,10 @@ Obtain a writable buffer pointer for a dequeued input buffer index to contain th
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Input buffer pointer is retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Buffer pointer could not be retrieved. Note that this API returns MLMediaGenericResult_InvalidOperation especially if video encoder has hardware input surface (see [MLMediaCodecCreateInputSurface](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface)), and thus, out_buffer_ptr will be set to NULL and out_buffer_size set to 0.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Input buffer pointer is retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Buffer pointer could not be retrieved. Note that this API returns MLMediaGenericResult_InvalidOperation especially if video encoder has hardware input surface (see [MLMediaCodecCreateInputSurface](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface)), and thus, out_buffer_ptr will be set to NULL and out_buffer_size set to 0.|
 **Required Permissions**:
 
   * None 
@@ -4768,7 +4768,7 @@ Obtain a writable buffer pointer for a dequeued input buffer index to contain th
 
 After calling this method any buffer pointer previously returned for the same input index MUST no longer be used.
 
-Note: For VIDEO encoder, this API will fail if an input surface was created by [MLMediaCodecCreateInputSurface](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface) (see return value documentation below).
+Note: For VIDEO encoder, this API will fail if an input surface was created by [MLMediaCodecCreateInputSurface](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface) (see return value documentation below).
 
 
 
@@ -4798,8 +4798,8 @@ Obtain a read-only buffer pointer for a dequeued output buffer index.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| int64_t |buffer_index|The index of a client-owned output buffer previously returned from a call to [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| int64_t |buffer_index|The index of a client-owned output buffer previously returned from a call to [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer). |
 | const uint8_t ** |out_buffer_ptr|Pointer to returned output buffer. |
 | size_t * |out_buffer_size|Size of returned output buffer.|
 
@@ -4807,10 +4807,10 @@ Obtain a read-only buffer pointer for a dequeued output buffer index.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer pointer is retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Buffer pointer could not be retrieved. Note that this API returns MLMediaGenericResult_InvalidOperation especially if codec was VIDEO and configured with a hardware surface using [MLMediaCodecConfigure()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecconfigure), and thus, out_buffer_ptr will be set to NULL and out_buffer_size set to 0 since decoded buffer lives in GPU memory and is not accessible via a pointer.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer pointer is retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Buffer pointer could not be retrieved. Note that this API returns MLMediaGenericResult_InvalidOperation especially if codec was VIDEO and configured with a hardware surface using [MLMediaCodecConfigure()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecconfigure), and thus, out_buffer_ptr will be set to NULL and out_buffer_size set to 0 since decoded buffer lives in GPU memory and is not accessible via a pointer.|
 **Required Permissions**:
 
   * None 
@@ -4850,26 +4850,26 @@ After filling a range of the input buffer at the specified index submit it to th
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| int64_t |buffer_index|Index of a client-owned input buffer previously returned in a call to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| int64_t |buffer_index|Index of a client-owned input buffer previously returned in a call to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer). |
 | int64_t |offset|Byte offset into the input buffer at which the data starts. |
 | size_t |size|Number of bytes of valid input data. |
 | uint64_t |time_us|Presentation timestamp in microseconds for this buffer. This is normally the media time at which this buffer should be presented (rendered). |
-| int |flags|A bitmask of flags defined by [MLMediaCodecBufferFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag). While not prohibited, most codecs do not use the [MLMediaCodecBufferFlag_KeyFrame](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe) flag for input buffers.|
+| int |flags|A bitmask of flags defined by [MLMediaCodecBufferFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag). While not prohibited, most codecs do not use the [MLMediaCodecBufferFlag_KeyFrame](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe) flag for input buffers.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Intput buffer is queued successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Intput buffer is queued successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-Once an input buffer is queued to the codec, it MUST NOT be used until it is later retrieved by [MLMediaCodecGetInputBufferPointer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetinputbufferpointer) in response to a [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer) return value.
+Once an input buffer is queued to the codec, it MUST NOT be used until it is later retrieved by [MLMediaCodecGetInputBufferPointer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetinputbufferpointer) in response to a [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer) return value.
 
 
 
@@ -4901,20 +4901,20 @@ Similar to queueInputBuffer but submits a buffer that is potentially encrypted.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| int64_t |buffer_index|Index of a client-owned input buffer previously returned in a call to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| int64_t |buffer_index|Index of a client-owned input buffer previously returned in a call to [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer). |
 | int64_t |offset|Byte offset into the input buffer at which the data starts. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |crypto_info_handle|Metadata required to facilitate decryption, the object can be reused immediately after this call returns. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |crypto_info_handle|Metadata required to facilitate decryption, the object can be reused immediately after this call returns. |
 | uint64_t |time_us|Presentation timestamp in microseconds for this buffer. This is normally the media time at which this buffer should be presented (rendered). |
-| int |flags|A bitmask of flags defined by [MLMediaCodecBufferFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag). While not prohibited, most codecs do not use the [MLMediaCodecBufferFlag_KeyFrame](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe) flag for input buffers.|
+| int |flags|A bitmask of flags defined by [MLMediaCodecBufferFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag). While not prohibited, most codecs do not use the [MLMediaCodecBufferFlag_KeyFrame](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe) flag for input buffers.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Secure Intput buffer is queued successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Secure Intput buffer is queued successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -4947,18 +4947,18 @@ Dequeue an input buffer from buffer queue.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
 | int64_t |timeout_us|Timeout in microseconds. Negative timeout indicates "infinite". |
-| int64_t * |out_buffer_index|Index of an Input buffer from buffer queue, or [MLMediaCodec_TryAgainLater](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodec-tryagainlater) status.|
+| int64_t * |out_buffer_index|Index of an Input buffer from buffer queue, or [MLMediaCodec_TryAgainLater](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodec-tryagainlater) status.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Intput buffer is dequeued successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|if the codec is configured to operate in async mode.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Intput buffer is dequeued successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|if the codec is configured to operate in async mode.|
 **Required Permissions**:
 
   * None 
@@ -4994,19 +4994,19 @@ Dequeue an output buffer from buffer queue.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLMediaCodecBufferInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md) * |out_buffer_info|Will be filled with buffer meta data. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLMediaCodecBufferInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md) * |out_buffer_info|Will be filled with buffer meta data. |
 | int64_t |timeout_us|Timeout in microseconds. Negative timeout indicates "infinite". |
-| int64_t * |out_buffer_index|Index of an output buffer from buffer queue, or one of the statuses defined by [MLMediaCodecOutputBufferStatus](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecoutputbufferstatus).|
+| int64_t * |out_buffer_index|Index of an output buffer from buffer queue, or one of the statuses defined by [MLMediaCodecOutputBufferStatus](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecoutputbufferstatus).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer is dequeued successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|if the codec is configured to operate in async mode.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer is dequeued successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|if the codec is configured to operate in async mode.|
 **Required Permissions**:
 
   * None 
@@ -5040,16 +5040,16 @@ Obtain input format supported by the codec.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_format_handle|Input format supported by the codec.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_format_handle|Input format supported by the codec.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Input Media format is retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Input Media format is retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5078,16 +5078,16 @@ Return output format supported by the codec, or the format to which the configur
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_format_handle|Output format supported by the codec, or the format to which the configuration has changed.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_format_handle|Output format supported by the codec, or the format to which the configuration has changed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output Media format is retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output Media format is retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5114,20 +5114,20 @@ Create an input surface for a hardware encoder.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_input_surface_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to created input native surface. Valid only if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_input_surface_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to created input native surface. Valid only if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|The operation failed to allocate the surface. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Input input surface was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_AlreadyExists|An input surface has already been created for the given handle. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|MLMediaCodec is not an encoder. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_UnspecifiedFailure|Input surface could not be created.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|The operation failed to allocate the surface. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Input input surface was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_AlreadyExists|An input surface has already been created for the given handle. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|MLMediaCodec is not an encoder. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_UnspecifiedFailure|Input surface could not be created.|
 **Required Permissions**:
 
   * None 
@@ -5135,19 +5135,19 @@ Create an input surface for a hardware encoder.
 
 Requests an input surface to use as the input to an encoder, in place of input buffers.
 
-This API must only be called after [MLMediaCodecConfigure()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecconfigure) and before [MLMediaCodecStart()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecstart) otherwise the operation will fail and an input surface cannot be created.
+This API must only be called after [MLMediaCodecConfigure()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecconfigure) and before [MLMediaCodecStart()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecstart) otherwise the operation will fail and an input surface cannot be created.
 
 An input surface allows video consumers, such as a video encoder, to process raw input video buffers natively. The input surface is intended to act as a destination surface for your input data.
 
-When using an input surface, there are no accessible input buffers, as buffers are automatically passed from the input surface to the codec. In synchronous mode, calling [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer) will return MLMediaGenericResult_InvalidOperation. In asynchronous mode, the client will not be notified when an input buffer is available (i.e. the on_input_buffer_available callback will not fire).
+When using an input surface, there are no accessible input buffers, as buffers are automatically passed from the input surface to the codec. In synchronous mode, calling [MLMediaCodecDequeueInputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueinputbuffer) will return MLMediaGenericResult_InvalidOperation. In asynchronous mode, the client will not be notified when an input buffer is available (i.e. the on_input_buffer_available callback will not fire).
 
-The returned input surface can be passed as a destination surface to a decoder when calling [MLMediaCodecConfigure()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecconfigure). Decoded output of the decoder can be consumed direclty as input to an encoder without copying. This allows implementation of fast, zero-copy transcoding.
+The returned input surface can be passed as a destination surface to a decoder when calling [MLMediaCodecConfigure()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecconfigure). Decoded output of the decoder can be consumed direclty as input to an encoder without copying. This allows implementation of fast, zero-copy transcoding.
 
 The returned input surface can also be passed as a destination surface to:
 
-* A video capture session when using [MLCameraConnectFlag_CamOnly](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-camonly).
-* A virtual capture session when using [MLCameraConnectFlag_VirtualOnly](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-virtualonly) .
-* A mixed reality capture session when using [MLCameraConnectFlag_MR](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-mr). Captured raw video frames will be consumed directly as input to an encoder without copying.
+* A video capture session when using [MLCameraConnectFlag_CamOnly](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-camonly).
+* A virtual capture session when using [MLCameraConnectFlag_VirtualOnly](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-virtualonly) .
+* A mixed reality capture session when using [MLCameraConnectFlag_MR](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-mr). Captured raw video frames will be consumed directly as input to an encoder without copying.
 The user of this API is responsible for calling #MLMediaCodecReleaseSurface() on the Surface when done.
 
 
@@ -5170,24 +5170,24 @@ MLResult MLMediaCodecDestroyInputSurface(
 )
 ```
 
-Release the Surface that was created by [MLMediaCodecCreateInputSurface](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface). 
+Release the Surface that was created by [MLMediaCodecCreateInputSurface](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |input_surface_handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the internal Surface object.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |input_surface_handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the internal Surface object.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Surface object was successfully released. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|MLMediaCodec is not an encoder. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Surface object was successfully released. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|MLMediaCodec is not an encoder. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized.|
 **Required Permissions**:
 
   * None
@@ -5218,17 +5218,17 @@ Signal end-of-stream on input to a surface.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidOperation|MLMediaCodec is not an encoder or MLMediaCodec is not receving input from a surface. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized. |
-This may only be used with encoders receiving input from a surface created by [MLMediaCodecCreateInputSurface()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface).
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidOperation|MLMediaCodec is not an encoder or MLMediaCodec is not receving input from a surface. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized. |
+This may only be used with encoders receiving input from a surface created by [MLMediaCodecCreateInputSurface()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface).
 
 Equivalent to submitting an empty buffer with MLMediaCodecBufferFlag_EOS set when queueing an input buffer.
 
@@ -5259,17 +5259,17 @@ Release buffer to codec or to render it on output surface.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec object. |
-| int64_t |buffer_index|Index of a client-owned output buffer previously returned from a call to [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec object. |
+| int64_t |buffer_index|Index of a client-owned output buffer previously returned from a call to [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer). |
 | bool |render|If a valid surface was specified when configuring the codec, passing `true` renders this output buffer to the surface.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5277,7 +5277,7 @@ Release buffer to codec or to render it on output surface.
 
 If codec is configured with an output surface, setting render to `true` will send the buffer to that output surface. The surface will release the buffer back to the codec once it is no longer used/displayed.
 
-Once an output buffer is released to codec, it MUST NOT be used until it is later retrieved by [MLMediaCodecGetOutputBufferPointer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetoutputbufferpointer) in response to a [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer) return value.
+Once an output buffer is released to codec, it MUST NOT be used until it is later retrieved by [MLMediaCodecGetOutputBufferPointer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecgetoutputbufferpointer) in response to a [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer) return value.
 
 
 
@@ -5306,17 +5306,17 @@ Update surface timestamp and returns it to the codec to render it on the output 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec object. |
-| int64_t |buffer_index|Index of a client-owned output buffer previously returned from a call to [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCodec object. |
+| int64_t |buffer_index|Index of a client-owned output buffer previously returned from a call to [MLMediaCodecDequeueOutputBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecdequeueoutputbuffer). |
 | int64_t |timestamp_ns|The timestamp in nanoseconds to associate with this buffer when it is sent to the Surface.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Output buffer was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5355,9 +5355,9 @@ Obtain the number of available codecs.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5391,9 +5391,9 @@ Determine whether a codec is a software codec.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5424,22 +5424,22 @@ Obtain a list of matching codecs for a given codec mime.
 |--|--|--|
 | const char * |mime|Codec mime. |
 | bool |is_encoder|Set to true if querying for encoder and false otherwise. |
-| [MLMediaCodecListCodecTypeFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcodectypeflag) |flag|Whether querying for software-only or hardware-only, defined by [MLMediaCodecListCodecTypeFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcodectypeflag). |
-| [MLMediaCodecListQueryResults](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md) * |out_matching_codecs|List of codecs supporting the given mime.|
+| [MLMediaCodecListCodecTypeFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcodectypeflag) |flag|Whether querying for software-only or hardware-only, defined by [MLMediaCodecListCodecTypeFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcodectypeflag). |
+| [MLMediaCodecListQueryResults](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md) * |out_matching_codecs|List of codecs supporting the given mime.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-The memory used to store the list is maintained by the library. User shall call [MLMediaCodecListQueryResultsRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistqueryresultsrelease) to release it.
+The memory used to store the list is maintained by the library. User shall call [MLMediaCodecListQueryResultsRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistqueryresultsrelease) to release it.
 
 
 
@@ -5473,9 +5473,9 @@ Obtain the codec matching the given codec type from the codec list.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5509,9 +5509,9 @@ Obtain the codec from the codec matching the given codec name from the codec lis
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5545,9 +5545,9 @@ Confirm whether a component is an Encoder or Decoder.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5581,15 +5581,15 @@ Obtain a codec name.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-User shall allocate at least [MAX_CODEC_NAME_LENGTH](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-codec-name-length) bytes of memory for storing the output name string.
+User shall allocate at least [MAX_CODEC_NAME_LENGTH](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-codec-name-length) bytes of memory for storing the output name string.
 
 
 
@@ -5613,21 +5613,21 @@ Obtain the list of mime types supported by a codec.
 |  |   |   |
 |--|--|--|
 | uint64_t |index|Index of the codec in the codec list. The number shall be between 0 and number of available codecs. |
-| [MLMediaCodecListQueryResults](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md) * |out_supported_mimes|List of supported mimes.|
+| [MLMediaCodecListQueryResults](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md) * |out_supported_mimes|List of supported mimes.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-The memory used to store the list is maintained by the library. User shall call [MLMediaCodecListQueryResultsRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistqueryresultsrelease) to release it.
+The memory used to store the list is maintained by the library. User shall call [MLMediaCodecListQueryResultsRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistqueryresultsrelease) to release it.
 
 
 
@@ -5653,15 +5653,15 @@ Obtain the capability flag for a codec.
 |--|--|--|
 | uint64_t |index|Index of the codec in the codec list. The number shall be between 0 and number of available codecs. |
 | const char * |mime|Mime type of the codec being queried. |
-| [MLMediaCodecListCapabilityFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcapabilityflag) * |out_capability_flag|Codec capability flag defined by [MLMediaCodecListCapabilityFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcapabilityflag).|
+| [MLMediaCodecListCapabilityFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcapabilityflag) * |out_capability_flag|Codec capability flag defined by [MLMediaCodecListCapabilityFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeclistcapabilityflag).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5697,15 +5697,15 @@ Obtain the name of a secure codec for the given mime type.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-User shall allocate at least [MAX_CODEC_NAME_LENGTH](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-codec-name-length) bytes of memory for storing the output name string.
+User shall allocate at least [MAX_CODEC_NAME_LENGTH](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-codec-name-length) bytes of memory for storing the output name string.
 
 
 
@@ -5727,15 +5727,15 @@ Release the query results.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaCodecListQueryResults](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md) * |query_results|Query results such as the list of codecs acquired by [MLMediaCodecListGetMatchingCodecs()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetmatchingcodecs) or the list of supported mime types acquired by [MLMediaCodecListGetSupportedMimes()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedmimes).|
+| [MLMediaCodecListQueryResults](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md) * |query_results|Query results such as the list of codecs acquired by [MLMediaCodecListGetMatchingCodecs()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetmatchingcodecs) or the list of supported mime types acquired by [MLMediaCodecListGetSupportedMimes()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedmimes).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5766,22 +5766,22 @@ Obtain the supported profile levels for a codec.
 |--|--|--|
 | uint64_t |index|Index of the codec in the codec list. The number shall be between 0 and number of available codecs. |
 | const char * |mime|Mime type of the codec being queried. |
-| [MLMediaCodecListProfileLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md) ** |out_profile_levels|Codec supported profile levels defined by [MLMediaCodecListProfileLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md). |
+| [MLMediaCodecListProfileLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md) ** |out_profile_levels|Codec supported profile levels defined by [MLMediaCodecListProfileLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md). |
 | size_t * |out_profile_levels_size|Number of profile levels.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-User shall call [MLMediaCodecListProfileLevelsRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistprofilelevelsrelease) to release it.
+User shall call [MLMediaCodecListProfileLevelsRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistprofilelevelsrelease) to release it.
 
 
 
@@ -5808,15 +5808,15 @@ Release profile levels.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaCodecListProfileLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md) * |profile_levels|The return value of [MLMediaCodecListGetSupportedProfileLevels()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels).|
+| [MLMediaCodecListProfileLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md) * |profile_levels|The return value of [MLMediaCodecListGetSupportedProfileLevels()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5859,15 +5859,15 @@ Obtain the supported color formats for a codec. All the supported color formats 
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-User shall call [MLMediaCodecListColorFormatsRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistcolorformatsrelease) to release it.
+User shall call [MLMediaCodecListColorFormatsRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistcolorformatsrelease) to release it.
 
 
 
@@ -5894,15 +5894,15 @@ Release color formats.
 
 |  |   |   |
 |--|--|--|
-| uint32_t * |color_formats|The return value of [MLMediaCodecListGetSupportedColorFormats()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedcolorformats).|
+| uint32_t * |color_formats|The return value of [MLMediaCodecListGetSupportedColorFormats()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedcolorformats).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -5938,22 +5938,22 @@ Obtain the supported bitrate modes for a codec.
 |--|--|--|
 | uint64_t |index|Index of the codec in the codec list. The number shall be between 0 and number of available codecs. |
 | const char * |mime|Mime type of the codec being queried. |
-| [MLMediaCodecBitrateMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbitratemode) ** |out_bitrate_modes|Codec supported Bitrate modes defined by [MLMediaCodecBitrateMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbitratemode). |
+| [MLMediaCodecBitrateMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbitratemode) ** |out_bitrate_modes|Codec supported Bitrate modes defined by [MLMediaCodecBitrateMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbitratemode). |
 | size_t * |out_bitrate_modes_size|Number of Bitrate modes.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-User shall call [MLMediaCodecBitrateModesRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecbitratemodesrelease) to release it.
+User shall call [MLMediaCodecBitrateModesRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecbitratemodesrelease) to release it.
 
 
 
@@ -5980,15 +5980,15 @@ Release Bitrate modes.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaCodecBitrateMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbitratemode) * |bitrate_modes|The return value of [MLMediaCodecListGetSupportedBitrateModes()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedbitratemodes).|
+| [MLMediaCodecBitrateMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbitratemode) * |bitrate_modes|The return value of [MLMediaCodecListGetSupportedBitrateModes()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedbitratemodes).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6029,9 +6029,9 @@ Check whether Adaptive playback is supported.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6074,9 +6074,9 @@ Check whether Secure playback is supported.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6119,9 +6119,9 @@ Check whether Intra Refresh is supported.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6156,17 +6156,17 @@ Create a MLMediaCrypto instance from a UUID.
 
 |  |   |   |
 |--|--|--|
-| [MLUUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|The universal unique ID of the crypto scheme. uuid must be 16 bytes. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |data|Opaque initialization data specific to the crypto scheme, This value must never be NULL. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaCrypto. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLUUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|The universal unique ID of the crypto scheme. uuid must be 16 bytes. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |data|Opaque initialization data specific to the crypto scheme, This value must never be NULL. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaCrypto. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCrypto object was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCrypto object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6192,15 +6192,15 @@ Release the MLMediaCrypto instance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_crypto|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCrypto.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_crypto|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCrypto.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCrypto object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCrypto object was successfully destroyed. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLMediaCrypto object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaCrypto object was successfully destroyed. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6227,16 +6227,16 @@ Query if the given scheme identified by its UUID is supported on this device.
 
 |  |   |   |
 |--|--|--|
-| [MLUUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|Identifies the universal unique ID of the crypto scheme. uuid must be 16 bytes. |
+| [MLUUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|Identifies the universal unique ID of the crypto scheme. uuid must be 16 bytes. |
 | bool * |out_supported|On successful return contains `true` or `false` based on whether the given crypto scheme is supported or not.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query has run successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query has run successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6270,9 +6270,9 @@ Query if the crypto scheme requires the use of a secure decoder to decode data o
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query has run successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query has run successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6299,16 +6299,16 @@ Associate a #MediaDRM session with this MLMediaCrypto instance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_crypto|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCrypto. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|Session ID for the DRM session.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_crypto|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaCrypto. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|Session ID for the DRM session.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Media DRM session was set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Media DRM session was set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6338,19 +6338,19 @@ Create a new MediaDataSource object.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDataSourceReadAt](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-mlmediadatasourcereadat) |read_at|MLMediaDataSourceReadAt callback. |
-| [MLMediaDataSourceGetSize](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-mlmediadatasourcegetsize) |get_size|MLMediaDataSourceGetSize callback. |
-| [MLMediaDataSourceClose](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediadatasourceclose) |close|MLMediaDataSourceClose callback. |
+| [MLMediaDataSourceReadAt](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-mlmediadatasourcereadat) |read_at|MLMediaDataSourceReadAt callback. |
+| [MLMediaDataSourceGetSize](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-mlmediadatasourcegetsize) |get_size|MLMediaDataSourceGetSize callback. |
+| [MLMediaDataSourceClose](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediadatasourceclose) |close|MLMediaDataSourceClose callback. |
 | void * |context|User data to be passed to callbacks. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new source object created. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new source object created. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|if operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|if operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6376,15 +6376,15 @@ Destroy a #MediaDataSource object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the #MediaDataSource object to destroy.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the #MediaDataSource object to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|if operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|if operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6404,13 +6404,13 @@ static inline void MLMediaDRMEventCallbacksInit(
 )
 ```
 
-Initializes [MLMediaDRMEventCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) with default values. 
+Initializes [MLMediaDRMEventCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMEventCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * |inout_callbacks|MediaDRM Callback structure defined by [MLMediaDRMEventCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) that needs to be initialized. |
+| [MLMediaDRMEventCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * |inout_callbacks|MediaDRM Callback structure defined by [MLMediaDRMEventCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) that needs to be initialized. |
 
 
 
@@ -6433,16 +6433,16 @@ Allocate byte array buffer.
 |  |   |   |
 |--|--|--|
 | size_t |size|Maximum size of the desirable byte array to be allocated. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_array|Pointer to byte array buffer that needs to be allocated. To free/release, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_array|Pointer to byte array buffer that needs to be allocated. To free/release, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array is allocated successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array is allocated successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6472,16 +6472,16 @@ Allocate and Copy to byte array buffer.
 |--|--|--|
 | const uint8_t * |copy_from|Buffer from which copy into byte array. |
 | size_t |size|Number of bytes to be copied. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_array|Pointer to byte array buffer that needs to be allocated and copied to. To free/release, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_array|Pointer to byte array buffer that needs to be allocated and copied to. To free/release, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array is allocated and copied successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array is allocated and copied successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6509,16 +6509,16 @@ Allocate array of {key, value} pairs.
 |  |   |   |
 |--|--|--|
 | size_t |size|Maximum size of the desirable array of {key, value} pair to be allocated. |
-| [MLMediaDRMKeyValueArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
+| [MLMediaDRMKeyValueArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array is allocated successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array is allocated successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6545,17 +6545,17 @@ Create a MLMediaDRM instance from a UUID.
 
 |  |   |   |
 |--|--|--|
-| [MLUUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|The universal unique ID of the crypto scheme. uuid must be 16 bytes. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaDRM. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLUUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|The universal unique ID of the crypto scheme. uuid must be 16 bytes. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaDRM. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|MLMediaDRM object creation failed with resource allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM object was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|MLMediaDRM object creation failed with resource allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6581,15 +6581,15 @@ Release the MLMediaDRM instance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM object was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM object was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6615,15 +6615,15 @@ Release byte array buffer.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |array|Byte array buffer that needs to be released.|
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |array|Byte array buffer that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6649,15 +6649,15 @@ Release list of byte array buffer.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMByteArrayList](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * |array|List of byte array buffer that needs to be released.|
+| [MLMediaDRMByteArrayList](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * |array|List of byte array buffer that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array List was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Byte Array List was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6683,15 +6683,15 @@ Release {key, value} pair array.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMKeyValueArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|{key, value} pair array that needs to be released.|
+| [MLMediaDRMKeyValueArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|{key, value} pair array that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6717,15 +6717,15 @@ Release Request Message.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMRequestMessage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |request|Pointer to Request Message that needs to be released.|
+| [MLMediaDRMRequestMessage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |request|Pointer to Request Message that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|DRM Request Message was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|DRM Request Message was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6752,16 +6752,16 @@ Add a {key, value} pair to the array of {key, value} pairs.
 
 |  |   |   |
 |--|--|--|
-| const [MLMediaDRMKeyValue](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source {key, value} pair that needs to be added. |
-| [MLMediaDRMKeyValueArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair to which the pair needs to be added to.|
+| const [MLMediaDRMKeyValue](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source {key, value} pair that needs to be added. |
+| [MLMediaDRMKeyValueArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair to which the pair needs to be added to.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair is added successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair is added successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6789,7 +6789,7 @@ Query if the given scheme identified by its UUID is supported on this device. An
 
 |  |   |   |
 |--|--|--|
-| [MLUUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|Identifies the universal unique ID of the crypto scheme. UUID must be 16 bytes. |
+| [MLUUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |uuid|Identifies the universal unique ID of the crypto scheme. UUID must be 16 bytes. |
 | const char * |mime_type|The MIME type of the media container, e.g. "video/mp4". If mime_type is not known or required, it can be provided as NULL. |
 | bool * |out_supported|On successful return contains `true` or `false` based on whether the given crypto scheme is supported or not.|
 
@@ -6797,9 +6797,9 @@ Query if the given scheme identified by its UUID is supported on this device. An
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query has run successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query has run successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6827,17 +6827,17 @@ Register a callback to be invoked when DRM events or updates or status change oc
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMEventCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMEventCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
 | void * |data|Custom data to be returned when any callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Event listener was set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Event listener was set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6869,16 +6869,16 @@ Opens a new session. A session ID is returned.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_session_id|ID of the session created/opened. This byte array will be released when [MLMediaDRMCloseSession()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmclosesession) is called.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_session_id|ID of the session created/opened. This byte array will be released when [MLMediaDRMCloseSession()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmclosesession) is called.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM session was opened successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM session was opened successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6905,16 +6905,16 @@ Closes a session on the MLMediaDRM object that was previously opened with openSe
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session, which will be released on return.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session, which will be released on return.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM session was closed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM session was closed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -6943,26 +6943,26 @@ A key request/response exchange occurs between the app and a license server to o
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMKeyRequestInputParam](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_request_input_param.md) * |key_request_param|Placeholder for needed arguments for generating a key request message. |
-| [MLMediaDRMRequestMessage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_key_request|Upon successful return, contains key request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMKeyRequestInputParam](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_request_input_param.md) * |key_request_param|Placeholder for needed arguments for generating a key request message. |
+| [MLMediaDRMRequestMessage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_key_request|Upon successful return, contains key request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Key Request message is constructed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Key Request message is constructed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-[MLMediaDRMGetKeyRequest()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetkeyrequest) is used to obtain an opaque key request byte array that is delivered to the license server. The opaque key request byte array is returned in out_key_request.request The recommended URL to deliver the key request to is returned in out_key_request.default_URL.
+[MLMediaDRMGetKeyRequest()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetkeyrequest) is used to obtain an opaque key request byte array that is delivered to the license server. The opaque key request byte array is returned in out_key_request.request The recommended URL to deliver the key request to is returned in out_key_request.default_URL.
 
-After the app has received the key request response from the server, it should deliver to the response to the DRM engine plugin using the method [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
+After the app has received the key request response from the server, it should deliver to the response to the DRM engine plugin using the method [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
 
 
 
@@ -6981,24 +6981,24 @@ MLResult MLMediaDRMProvideKeyResponse(
 )
 ```
 
-A key response is received from the license server by the app, then it is provided to the DRM engine plugin using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse). 
+A key response is received from the license server by the app, then it is provided to the DRM engine plugin using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque response from the server. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_key_set_id|Upon successful return, contains the key identifier. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque response from the server. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_key_set_id|Upon successful return, contains the key identifier. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Key Response message was consumed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Key Response message was consumed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7022,23 +7022,23 @@ MLResult MLMediaDRMRestoreKeys(
 )
 ```
 
-Restore persisted offline keys into a new session. key_set_id identifies the keys to load, obtained from a prior call to [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse). 
+Restore persisted offline keys into a new session. key_set_id identifies the keys to load, obtained from a prior call to [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The saved key set to restore.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The saved key set to restore.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Keys are restored successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Keys are restored successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7065,16 +7065,16 @@ Remove the current keys from a session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The keys to remove, which will be released on success.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The keys to remove, which will be released on success.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Keys are removed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Keys are removed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7102,17 +7102,17 @@ Request an informative description of the key status for the session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| [MLMediaDRMKeyValueArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_info_map|The Key-Value pair place-holder for the key status. To release/free this call [MLMediaDRMKeyValueArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| [MLMediaDRMKeyValueArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_info_map|The Key-Value pair place-holder for the key status. To release/free this call [MLMediaDRMKeyValueArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Query for MLMediaDRM Key status completed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Query for MLMediaDRM Key status completed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7142,23 +7142,23 @@ A provision request/response exchange occurs between the app and a provisioning 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
 | const char * |cert_type|The device certificate type, which can be "none" or "X.509". |
-| [MLMediaDRMRequestMessage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_provision_request|Upon successful return, contains provision request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
+| [MLMediaDRMRequestMessage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_provision_request|Upon successful return, contains provision request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Device Provision Request message is constructed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Device Provision Request message is constructed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-If provisioning is required, the #EVENT_PROVISION_REQUIRED event will be sent to the event handler. [MLMediaDRMGetProvisionRequest()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetprovisionrequest) is used to obtain the opaque provision request byte array that should be delivered to the provisioning server.
+If provisioning is required, the #EVENT_PROVISION_REQUIRED event will be sent to the event handler. [MLMediaDRMGetProvisionRequest()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetprovisionrequest) is used to obtain the opaque provision request byte array that should be delivered to the provisioning server.
 
 
 
@@ -7183,18 +7183,18 @@ After a provision response is received by the app, it is provided to the DRM eng
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque provisioning response byte array to provide to the DRM engine plugin. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_certificate|The device certificate upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease). |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_wrapped_key|The wrapped device key upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque provisioning response byte array to provide to the DRM engine plugin. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_certificate|The device certificate upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease). |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_wrapped_key|The wrapped device key upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Device Provision Response message is consumed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Device Provision Response message is consumed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7221,16 +7221,16 @@ Access all secure stops.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMByteArrayList](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * |out_secure_stops|List of all the secure stops upon successful return. To free/release call [MLMediaDRMByteArrayListRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearraylistrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMByteArrayList](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * |out_secure_stops|List of all the secure stops upon successful return. To free/release call [MLMediaDRMByteArrayListRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearraylistrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Secure stops are retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Secure stops are retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7268,17 +7268,17 @@ Access secure stop by secure stop ID.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |ss_id|The ID for the DRM securestop session. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_secure_stop|The secure stop upon successful return. To free/release call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |ss_id|The ID for the DRM securestop session. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_secure_stop|The secure stop upon successful return. To free/release call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Secure stop is retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Secure stop is retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7286,7 +7286,7 @@ Access secure stop by secure stop ID.
 
 
 
-**See**: [MLMediaDRMGetSecureStops()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
+**See**: [MLMediaDRMGetSecureStops()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
 
 
 
@@ -7307,16 +7307,16 @@ Process the SecureStop server response message. After authenticating the message
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |secure_stop|The server response indicating which secure stops to release.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |secure_stop|The server response indicating which secure stops to release.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Secure stops are released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM Secure stops are released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7324,7 +7324,7 @@ Process the SecureStop server response message. After authenticating the message
 
 
 
-**See**: [MLMediaDRMGetSecureStops()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
+**See**: [MLMediaDRMGetSecureStops()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
 
 
 
@@ -7344,15 +7344,15 @@ Remove all the SecureStops.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|All secure stops for the MLMediaDRM are released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|All secure stops for the MLMediaDRM are released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7360,7 +7360,7 @@ Remove all the SecureStops.
 
 
 
-**See**: [MLMediaDRMGetSecureStops()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
+**See**: [MLMediaDRMGetSecureStops()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
 
 
 
@@ -7382,8 +7382,8 @@ Read a DRM engine plugin String property value, given the property name.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMProperty](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
 * MLMediaDRMProperty_Vendor
 * MLMediaDRMProperty_Version
@@ -7395,9 +7395,9 @@ Read a DRM engine plugin String property value, given the property name.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7425,19 +7425,19 @@ Read a DRM engine plugin byte array property value, given the property name.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMProperty](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
 * MLMediaDRMProperty_DeviceUniqueID |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_property_value|The property value upon successful return. To release/free call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_property_value|The property value upon successful return. To release/free call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is retrieved successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is retrieved successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7465,8 +7465,8 @@ Set a DRM engine plugin String property value.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMProperty](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
 * MLMediaDRMProperty_Vendor
 * MLMediaDRMProperty_Version
@@ -7478,9 +7478,9 @@ Set a DRM engine plugin String property value.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7508,19 +7508,19 @@ Set a DRM engine plugin byte array property value.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLMediaDRMProperty](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
 * MLMediaDRMProperty_DeviceUniqueID |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |property_value|The value of the corresponding property.|
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |property_value|The value of the corresponding property.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM property is set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7550,25 +7550,25 @@ Encrypt the data referenced by input using algorithm if specified, and write the
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMCryptoInputParam](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for encryption operation. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be encrypted. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_output|The encrypted input upon successful return. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMCryptoInputParam](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for encryption operation. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be encrypted. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_output|The encrypted input upon successful return. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM encryption operation has been completed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM encryption operation has been completed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
+The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
 
 
 
@@ -7594,25 +7594,25 @@ Decrypt the data referenced by input using algorithm if specified, and write the
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMCryptoInputParam](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for decryption operation. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be decrypted. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_output|The decrypted input upon successful return. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMCryptoInputParam](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for decryption operation. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be decrypted. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_output|The decrypted input upon successful return. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM decryption operation has been completed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM decryption operation has been completed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
+The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
 
 
 
@@ -7638,25 +7638,25 @@ Generate a signature using the specified algorithm (if provided) over the messag
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMHMACInputParam](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_signature|The signature of the input message upon success. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMHMACInputParam](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_signature|The signature of the input message upon success. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM HMAC Sign operation has been completed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM HMAC Sign operation has been completed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
+The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
 
 
 
@@ -7683,26 +7683,26 @@ Perform a signature verification using the specified algorithm (if specified) ov
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMHMACInputParam](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data for which signature needs to be verified. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |signature|The signature of the input message. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMHMACInputParam](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data for which signature needs to be verified. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |signature|The signature of the input message. |
 | bool * |out_match|Pointer to bool, which would return "true" if the signature matches, "false" otherwise.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM HMAC Verify operation has been completed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM HMAC Verify operation has been completed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
+The key must have been loaded into the session using [MLMediaDRMProvideKeyResponse()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovidekeyresponse).
 
 
 
@@ -7728,21 +7728,21 @@ Generate a signature using the specified RSA Key and algorithm.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
-| const [MLMediaDRMRSAInputParam](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md) * |rsa_key_param|Pointer to the structure that contains needed key arguments for this RSA operation. |
-| const [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
-| [MLMediaDRMByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_signature|The signature of the input message upon success. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
+| const [MLMediaDRMRSAInputParam](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md) * |rsa_key_param|Pointer to the structure that contains needed key arguments for this RSA operation. |
+| const [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
+| [MLMediaDRMByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_signature|The signature of the input message upon success. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM RSA Sign operation has been completed successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |||
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM RSA Sign operation has been completed successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |||
 
 
 
@@ -7763,16 +7763,16 @@ Create a new MLMediaExtractor.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created MLMediaExtractor. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created MLMediaExtractor. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If MediaExtractor handle cannot be allocated. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If out_handle is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If MediaExtractor handle cannot be allocated. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If out_handle is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7798,15 +7798,15 @@ Destroy a MLMediaExtractor.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor object.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor object.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If handle is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If handle is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7833,16 +7833,16 @@ Set a local file path as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | const char * |path|Content path of the file.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7871,17 +7871,17 @@ Set a URI string as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | const char * |uri|C-style string representing the URI complete string.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * android.permission.INTERNET (protection level: normal) 
@@ -7910,7 +7910,7 @@ Set a URI string as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | const char * |uri|C-style string representing the complete URL. |
 | const char ** |headers|Array of char * headers to be sent. |
 | size_t |len|Number of headers passed-in.|
@@ -7919,10 +7919,10 @@ Set a URI string as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * android.permission.INTERNET (protection level: normal) 
@@ -7951,7 +7951,7 @@ Set the data source as the file-descriptor to use.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|MLHandle to the MediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|MLHandle to the MediaExtractor. |
 | int |fd|File-descriptor for the file to extract from. |
 | int64_t |offset|Offset in bytes into the file where the data to be extracted starts. |
 | int64_t |length|Length in bytes of the data to be extracted.|
@@ -7960,9 +7960,9 @@ Set the data source as the file-descriptor to use.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -7991,17 +7991,17 @@ Sets the data source as user defined media data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|MLHandle to the MediaExtractor. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|MLHandle returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|MLHandle to the MediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|MLHandle returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If media_data_source cannot be found.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If media_data_source cannot be found.|
 **Required Permissions**:
 
   * None 
@@ -8029,17 +8029,17 @@ Extract DRM initialization data for a given DRM Scheme if it exists.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
-| [MLUUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |drm_uuid|UUID of the DRM scheme. |
-| [MLMediaExtractorDRMSchemeInitData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md) * |out_drm_init_data|DRM initialization data pointer. To release the DRM initialization data upon successful return, call [MLMediaExtractorReleaseDRMInitData()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreleasedrminitdata).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLUUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) |drm_uuid|UUID of the DRM scheme. |
+| [MLMediaExtractorDRMSchemeInitData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md) * |out_drm_init_data|DRM initialization data pointer. To release the DRM initialization data upon successful return, call [MLMediaExtractorReleaseDRMInitData()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreleasedrminitdata).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8066,16 +8066,16 @@ Release DRM initialization data which was previously retrieved.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
-| [MLMediaExtractorDRMSchemeInitData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md) * |drm_init_data|DRM initialization data that needs to be released.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLMediaExtractorDRMSchemeInitData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md) * |drm_init_data|DRM initialization data that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8102,16 +8102,16 @@ Count the number of tracks found in the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | uint64_t * |out_track_count|Number of tracks found in data source.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8139,17 +8139,17 @@ Get the track format at the specified index.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | size_t |index|Index of the track. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_track_handle|MLMediaFormat handle that represents track format.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_track_handle|MLMediaFormat handle that represents track format.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8176,22 +8176,22 @@ Select a track for the subsequent operations.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | size_t |index|Index of the track.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-Subsequent calls to [MLMediaExtractorReadSampleData()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreadsampledata), [MLMediaExtractorGetSampleTrackIndex()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorgetsampletrackindex) and getSampleTime() only retrieve information for the subset of tracks selected. Selecting the same track multiple times has no effect, the track is only selected once.
+Subsequent calls to [MLMediaExtractorReadSampleData()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreadsampledata), [MLMediaExtractorGetSampleTrackIndex()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorgetsampletrackindex) and getSampleTime() only retrieve information for the subset of tracks selected. Selecting the same track multiple times has no effect, the track is only selected once.
 
 
 
@@ -8214,22 +8214,22 @@ Unselect a track for the subsequent operations.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | size_t |index|Index of the track.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-Subsequent calls to [MLMediaExtractorReadSampleData()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreadsampledata), [MLMediaExtractorGetSampleTrackIndex()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorgetsampletrackindex) and getSampleTime() only retrieve information for the subset of tracks selected.
+Subsequent calls to [MLMediaExtractorReadSampleData()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreadsampledata), [MLMediaExtractorGetSampleTrackIndex()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorgetsampletrackindex) and getSampleTime() only retrieve information for the subset of tracks selected.
 
 
 
@@ -8253,17 +8253,17 @@ All selected tracks seek near the requested time according to the specified mode
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | int64_t |time_us|Seek time. |
-| [MLMediaSeekMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) |mode|Seek mode defined by MLMediaSeekMode.|
+| [MLMediaSeekMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) |mode|Seek mode defined by MLMediaSeekMode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8289,16 +8289,16 @@ Advance to the next sample. Returns `false` if no more sample data is available 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If handle is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_FailedTransaction|If Advance operation failed.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If handle is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_FailedTransaction|If Advance operation failed.|
 **Required Permissions**:
 
   * None 
@@ -8328,7 +8328,7 @@ Retrieve the current encoded sample and store it in the byte buffer starting at 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | uint8_t * |byte_buf|Destination byte buffer. |
 | size_t |buf_size|Size of the destination buffer. |
 | size_t |offset|Offset within the buffer. |
@@ -8338,9 +8338,9 @@ Retrieve the current encoded sample and store it in the byte buffer starting at 
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8367,16 +8367,16 @@ Return the track index the current sample originates from.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor. |
 | int64_t * |out_track_index|Track index or -1 if no more samples are available.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8403,16 +8403,16 @@ Return the current sample's presentation time in microseconds.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
 | int64_t * |out_sample_time|Sample time or -1 if no more samples are available.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8439,16 +8439,16 @@ Return the current sample's flags.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
-| int * |out_sample_flags|Sample flag defined by [MLMediaExtractorSampleFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaextractorsampleflag), or -1 if on failure.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
+| int * |out_sample_flags|Sample flag defined by [MLMediaExtractorSampleFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaextractorsampleflag), or -1 if on failure.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8475,16 +8475,16 @@ Return the current sample's Crypto info if has encrypted sample.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_info_handle|On success it returns handle to Crypto info of the sample.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_info_handle|On success it returns handle to Crypto info of the sample.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8511,16 +8511,16 @@ Release the Crypto Info.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |inout_info_handle|handle to Crypto info that needs to be released.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |inout_info_handle|handle to Crypto info that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8547,16 +8547,16 @@ Return an estimate of how much data is presently cached in memoryexpressed in mi
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|MLHandle to the MLMediaExtractor. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|MLHandle to the MLMediaExtractor. |
 | int64_t * |out_cached_duration|Cached amount or -1 if that information is unavailable or not applicable (no cache).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8582,15 +8582,15 @@ Return `true` if we are caching data and the cache has reached the end of the da
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8619,16 +8619,16 @@ Get the Number of PSSH info if present.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
 | size_t * |out_index|On successful return contains number of PSSH entries.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8658,23 +8658,23 @@ Get the PSSH info if present. The PSSH(Protection System Specific Header) contai
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
 | size_t |index|Index of the PSSH info data element being retrieved. |
-| [MLMediaExtractorPSSHEntry](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaextractorpsshentry) * |out_pssh_entry|Pointer to the PSSH info data element being retrieved.|
+| [MLMediaExtractorPSSHEntry](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaextractorpsshentry) * |out_pssh_entry|Pointer to the PSSH info data element being retrieved.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-Upon successful return, if a [MLMediaExtractorPSSHEntry](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaextractorpsshentry) is returned, same should be released by calling [MLMediaExtractorReleasePSSHInfo()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreleasepsshinfo).
+Upon successful return, if a [MLMediaExtractorPSSHEntry](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaextractorpsshentry) is returned, same should be released by calling [MLMediaExtractorReleasePSSHInfo()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreleasepsshinfo).
 
 
 
@@ -8697,16 +8697,16 @@ Clear the PSSH info data.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
-| [MLMediaExtractorPSSHEntry](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaextractorpsshentry) * |pssh_entry|Pointer to the PSSH info data element that needs to be released.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaExtractor instance. |
+| [MLMediaExtractorPSSHEntry](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaextractorpsshentry) * |pssh_entry|Pointer to the PSSH info data element that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8740,15 +8740,15 @@ Create a video format object.
 | const char * |mime_type|Mime type of the content. |
 | int |width|Width of the content in pixels. |
 | int |height|Height of the content in pixels. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created video format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created video format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded.|
 **Required Permissions**:
 
   * None 
@@ -8780,16 +8780,16 @@ Create a audio format object.
 | const char * |mime_type|Mime type of the content. |
 | int |sample_rate|Sample rate of the content. |
 | int |channel_count|Number of audio channels. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created audio format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created audio format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8819,16 +8819,16 @@ Create a subtitle format object.
 |--|--|--|
 | const char * |mime_type|Mime type of the content. |
 | const char * |language|Language of the content, using either ISO 639-1 or 639-2/T codes. Specify null or "und" if language information is only included in the content (This will also work if there are multiple language tracks in the content). |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created subtitle format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created subtitle format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8854,15 +8854,15 @@ Create an empty format object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created empty format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created empty format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid.|
 **Required Permissions**:
 
   * None 
@@ -8894,16 +8894,16 @@ Create a copy of the format handle provided.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created copy of the format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created copy of the format object. If there is an error during creation, it will return [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|If handle cannot be allocated. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid.|
 **Required Permissions**:
 
   * None 
@@ -8911,7 +8911,7 @@ Create a copy of the format handle provided.
 
 This can be particularly useful to persist the media format handle/object that was received through the callbacks (as life cycle of those media format objects are with in the callback context only).
 
-The API call to make a copy ensures that the copied object exists until released with [MLMediaFormatDestroy](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatdestroy) call.
+The API call to make a copy ensures that the copied object exists until released with [MLMediaFormatDestroy](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatdestroy) call.
 
 
 
@@ -8938,15 +8938,15 @@ Destroy a MLMediaFormat object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If handle is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If MLMediaCodec object was successfully destroyed. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If handle is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If MLMediaCodec object was successfully destroyed. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -8973,22 +8973,22 @@ Obtain the human readable representation of the format.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
 | char * |out_string|Buffer to which stringify the media format. Shouldn't be NULL.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-User shall allocate at least [MAX_FORMAT_STRING_SIZE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-format-string-size) bytes of memory for storing the output format string. The format string contains a list of key-value pairs, which can be extracted individually via the suitable "GetKeyValue" APIs.
+User shall allocate at least [MAX_FORMAT_STRING_SIZE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-format-string-size) bytes of memory for storing the output format string. The format string contains a list of key-value pairs, which can be extracted individually via the suitable "GetKeyValue" APIs.
 
 
 
@@ -9012,24 +9012,24 @@ Obtain the value of an integer key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | int32_t * |out_key|Value of the key.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
 **Required Permissions**:
 
   * None 
 
 
-For example, use [MLMediaFormat_Key_Frame_Rate](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate) key to get the framerate of a video track.
+For example, use [MLMediaFormat_Key_Frame_Rate](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate) key to get the framerate of a video track.
 
 
 
@@ -9053,18 +9053,18 @@ Obtain the value of a long key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | int64_t * |out_key|Value of the key.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
 **Required Permissions**:
 
   * None 
@@ -9094,18 +9094,18 @@ Obtain the value of an float key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | float * |out_key|Value of the key.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
 **Required Permissions**:
 
   * None 
@@ -9133,18 +9133,18 @@ Obtain the size of a key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | size_t * |out_size|Size of the key.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
 **Required Permissions**:
 
   * None 
@@ -9172,24 +9172,24 @@ Obtain the value of a string key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | char * |out_string|Pointer to the C-string representation of the string key.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
 **Required Permissions**:
 
   * None 
 
 
-User shall allocate at least [MAX_KEY_STRING_SIZE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-key-string-size) bytes of memory for storing the output key string.
+User shall allocate at least [MAX_KEY_STRING_SIZE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#defines-max-key-string-size) bytes of memory for storing the output key string.
 
 
 
@@ -9213,18 +9213,18 @@ Obtain the value of a ByteBuffer key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
-| [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |out_buffer|Pointer to byte buffer that needs to be allocated and copied to. To free/release, call [MLMediaFormatKeyByteBufferRelease()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatkeybytebufferrelease).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |out_buffer|Pointer to byte buffer that needs to be allocated and copied to. To free/release, call [MLMediaFormatKeyByteBufferRelease()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatkeybytebufferrelease).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|If name is not one of the media format key name.|
 **Required Permissions**:
 
   * None 
@@ -9251,16 +9251,16 @@ Release the ByteBuffer acquired by MLMediaFormatGetKeyByteBuffer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |buffer|Byte buffer that needs to be released.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |buffer|Byte buffer that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9288,17 +9288,17 @@ Set the value of an integer key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | int32_t |key_value|Key value.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9326,17 +9326,17 @@ Set the value of a long key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | int64_t |key_value|Key value.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9364,17 +9364,17 @@ Set the value of a float key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | float |key_value|Key value.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9402,17 +9402,17 @@ Set the size of a key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | size_t |key_size|Key size.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9440,17 +9440,17 @@ Set the value of a string key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
 | const char * |key_value|C-string representation of key value.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9478,17 +9478,17 @@ Set the value of a ByteBuffer key.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
-| const [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |buffer|Pointer to the data buffer for the corresponding key.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
+| [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| const [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |buffer|Pointer to the data buffer for the corresponding key.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9508,13 +9508,13 @@ static inline void MLMediaMuxerSampleDataInit(
 )
 ```
 
-Initializes [MLMediaMuxerSampleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) with default values. 
+Initializes [MLMediaMuxerSampleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaMuxerSampleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) * |inout_sampledata|SampleData defined by [MLMediaMuxerSampleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) that needs to be initialized. |
+| [MLMediaMuxerSampleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) * |inout_sampledata|SampleData defined by [MLMediaMuxerSampleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) that needs to be initialized. |
 
 
 
@@ -9535,16 +9535,16 @@ Create a MLMediaMuxer instance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaMuxer. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created MLMediaMuxer. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|MLMediaMuxer object creation failed with resource allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaMuxer object was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|MLMediaMuxer object creation failed with resource allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaMuxer object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9575,15 +9575,15 @@ Release the MLMediaMuxer instance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaMuxer object was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaMuxer object was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9616,17 +9616,17 @@ Get a list of all the supported Media Muxer Output Formats on the Platform.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
-| const [MLMediaMuxerOutputFormat](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediamuxeroutputformat) * |out_format_list|Pointer to MLMediaMuxerOutputFormat. This should not be NULL. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
+| const [MLMediaMuxerOutputFormat](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediamuxeroutputformat) * |out_format_list|Pointer to MLMediaMuxerOutputFormat. This should not be NULL. |
 | size_t * |out_format_list_size|The size of the returned out_format_list. This should not be NULL.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of the parameters are invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retrieved all the supported Output Formats. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of the parameters are invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retrieved all the supported Output Formats. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9662,8 +9662,8 @@ Get a list of all the supported mime-types for a given Media Muxer Output Format
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
-| [MLMediaMuxerOutputFormat](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediamuxeroutputformat) |format|The Output format, to which we would like to know all the supported mime-types. The format should be one returned from [MLMediaMuxerGetSupportedOutputFormats](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedoutputformats). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
+| [MLMediaMuxerOutputFormat](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediamuxeroutputformat) |format|The Output format, to which we would like to know all the supported mime-types. The format should be one returned from [MLMediaMuxerGetSupportedOutputFormats](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedoutputformats). |
 | const char *const * |out_mime_list|Pointer to array of mime-type (char array). This should not be NULL. |
 | size_t * |out_mime_list_size|The size of the returned out_mime_list. This should not be NULL.|
 
@@ -9671,9 +9671,9 @@ Get a list of all the supported mime-types for a given Media Muxer Output Format
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retrieved all the supported Output Formats. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If one of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retrieved all the supported Output Formats. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -9708,19 +9708,19 @@ Configure the MLMediaMuxer for a given Output format with output path.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
-| [MLMediaMuxerOutputFormat](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediamuxeroutputformat) |format|The format of the muxed output media file. The format should be one returned from [MLMediaMuxerGetSupportedOutputFormats](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedoutputformats). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
+| [MLMediaMuxerOutputFormat](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediamuxeroutputformat) |format|The format of the muxed output media file. The format should be one returned from [MLMediaMuxerGetSupportedOutputFormats](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedoutputformats). |
 | const char * |path|The linux-style path for the output media file. This value cannot be empty or NULL.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed to configure the MLMediaMuxer object with resource allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaMuxer object was configured successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_Unsupported|If the format is not supported.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed to configure the MLMediaMuxer object with resource allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaMuxer object was configured successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_Unsupported|If the format is not supported.|
 **Required Permissions**:
 
   * None 
@@ -9753,25 +9753,25 @@ Add a track with given format information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_format|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat that contains the track's format. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_format|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat that contains the track's format. |
 | size_t * |out_track_index|Upon successful return, this will conatin the index of the track added.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_Unsupported|If one of the keys in the format is not supported.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_Unsupported|If one of the keys in the format is not supported.|
 **Required Permissions**:
 
   * None 
 
 
-This should be called before [MLMediaMuxerStart()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
+This should be called before [MLMediaMuxerStart()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
 
 The following media format keys are supported for Audio/Video and Metadata tracks. 
 
@@ -9783,7 +9783,7 @@ The following media format keys are supported for Audio/Video and Metadata track
 | MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | | MLMediaFormat_Key_Sample_Rate | MLMediaFormat_Key_Width | | | MLMediaFormat_Key_Channel_Count | MLMediaFormat_Key_Height | | | MLMediaFormat_Key_CSD0 | MLMediaFormat_Key_Bt_Rate | | | MLMediaFormat_Key_CSD1 | MLMediaFormat_Key_Frame_Rate | | | | MLMediaFormat_Key_Color_Range | | | | MLMediaFormat_Key_Color_Standard | | | | MLMediaFormat_Key_Color_Transfer | | | | MLMediaFormat_Key_HDR_Static_Info | | | | MLMediaFormat_Key_CSD0 | | 
 # | | MLMediaFormat_Key_CSD1 | | 
 
-[MLMediaMuxerGetSupportedMimes](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedmimes) can be used to query for all the supported MLMediaFormat_Key_Mime for a given Output Format.
+[MLMediaMuxerGetSupportedMimes](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedmimes) can be used to query for all the supported MLMediaFormat_Key_Mime for a given Output Format.
 
 While MLMediaFormat_Key_Mime is must for all tracks, some of the keys aren't mandatory. For Audio track, MLMediaFormat_Key_SAMPLE_RATE and MLMediaFormat_Key_CHANNEL_COUNT is must. For Video track, MLMediaFormat_Key_WIDTH anb MLMediaFormat_Key_HEIGHT are must.
 
@@ -9839,23 +9839,23 @@ Set the orientation hint for output video playback.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
 | int32_t |degrees|The rotation degrees. It has to be either 0, 90, 180 or 270.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
 **Required Permissions**:
 
   * None 
 
 
-This should be called before [MLMediaMuxerStart()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
+This should be called before [MLMediaMuxerStart()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
 
 Calling this method will not rotate the video frame when muxer is generating the file, but add a composition matrix containing the rotation angle in the output video if the output format is MLMediaMuxerOutputFormat_MPEG4 so that a video player can choose the proper orientation for playback.
 
@@ -9888,7 +9888,7 @@ Set and store the geodata (latitude and longitude) in the output file.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
 | float |latitude|The latitude in degree. Its value must be in the range [-90, 90]. |
 | float |longitude|The longitude in degree. Its value must be in the range [-180, 180].|
 
@@ -9896,16 +9896,16 @@ Set and store the geodata (latitude and longitude) in the output file.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
 **Required Permissions**:
 
   * None 
 
 
-This should be called before [MLMediaMuxerStart()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
+This should be called before [MLMediaMuxerStart()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
 
 The geodata is stored in udta box if the output format is MLMediaMuxerOutputFormat_MPEG4, and is ignored for other output formats. The geodata is stored according to ISO-6709 standard.
 
@@ -9934,22 +9934,22 @@ Start muxing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
 **Required Permissions**:
 
   * None 
 
 
-Make sure all the tracks have been added ([MLMediaMuxerAddTrack](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxeraddtrack)) before calling this.
+Make sure all the tracks have been added ([MLMediaMuxerAddTrack](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxeraddtrack)) before calling this.
 
 
 
@@ -9977,17 +9977,17 @@ Writes an encoded sample into the muxer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
-| const [MLMediaMuxerSampleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) * |data|The sample data to be written encapsulated in [MLMediaMuxerSampleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
+| const [MLMediaMuxerSampleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) * |data|The sample data to be written encapsulated in [MLMediaMuxerSampleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
 **Required Permissions**:
 
   * None 
@@ -9995,7 +9995,7 @@ Writes an encoded sample into the muxer.
 
 The application needs to make sure that the samples are written into the right tracks. Also, it needs to make sure the samples for each track are written in chronological order (e.g. in the order they are provided by the encoder).
 
-For MPEG4 media format, the duration of the last sample in a track can be set by passing an additional empty buffer) with [MLMediaCodecBufferFlag_EOS](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-eos) flag and a suitable presentation timestamp set in time_us (of [MLMediaMuxerSampleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) structure) as the last sample of that track. This last sample's presentation timestamp shall be a sum of the presentation timestamp and the duration preferred for the original last sample. If no explicit END_OF_STREAM sample was passed, then the duration of the last sample would be the same as that of the sample before that.
+For MPEG4 media format, the duration of the last sample in a track can be set by passing an additional empty buffer) with [MLMediaCodecBufferFlag_EOS](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-eos) flag and a suitable presentation timestamp set in time_us (of [MLMediaMuxerSampleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) structure) as the last sample of that track. This last sample's presentation timestamp shall be a sum of the presentation timestamp and the duration preferred for the original last sample. If no explicit END_OF_STREAM sample was passed, then the duration of the last sample would be the same as that of the sample before that.
 
 The buffer can be reused once this method returns.
 
@@ -10024,16 +10024,16 @@ Stop muxing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid.|
 **Required Permissions**:
 
   * None 
@@ -10066,7 +10066,7 @@ Initializes MediaPlayerEventCallbacks with default values.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |inout_callbacks|Media Player Callback structure defined by [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) that needs to be initialized. |
+| [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |inout_callbacks|Media Player Callback structure defined by [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) that needs to be initialized. |
 
 
 
@@ -10087,7 +10087,7 @@ Initializes Media Track Information with default values.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaPlayerTrackInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |inout_track_info|Media track information defined by [MLMediaPlayerTrackInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) that needs to be initialized. |
+| [MLMediaPlayerTrackInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |inout_track_info|Media track information defined by [MLMediaPlayerTrackInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) that needs to be initialized. |
 
 
 
@@ -10108,7 +10108,7 @@ Initializes Media Track DRM Session Information with defult values.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |inout_drm_session_info|Media track DRM Session information defined by [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) that needs to be initialized. |
+| [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |inout_drm_session_info|Media track DRM Session information defined by [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) that needs to be initialized. |
 
 
 
@@ -10123,22 +10123,22 @@ MLResult MLMediaPlayerCreate(
 )
 ```
 
-Create a new [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) object. 
+Create a new [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) object. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) object created. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) object created. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created MediaPlayer. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created MediaPlayer. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10168,15 +10168,15 @@ Destroys a MediaPlayer object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) object to destroy.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) object to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed MediaPlayer. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed MediaPlayer. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -10207,18 +10207,18 @@ Sets a file descriptor as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t |fd|The file descriptor for the file you want to play.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10249,7 +10249,7 @@ Sets a file descriptor as the data source with offset.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t |fd|The file descriptor for the file you want to play. |
 | int64_t |offset|The offset (in bytes) of the source's start. |
 | int64_t |length|The number of bytes of media to load after offset.|
@@ -10258,11 +10258,11 @@ Sets a file descriptor as the data source with offset.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10291,18 +10291,18 @@ Sets a local file path as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |path|The linux-style path of the file.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set local file path. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set local file path. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10331,25 +10331,25 @@ Sets a URI string as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |uri|The C-style string representing the URI complete string.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * android.permission.INTERNET (protection level: normal) 
 
 
-Supported URI schemes are `file`, `http`, `https`, and `rtsp`. If looking to provide headers, use [MLMediaPlayerSetRemoteDataSourceForURI()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetremotedatasourceforuri).
+Supported URI schemes are `file`, `http`, `https`, and `rtsp`. If looking to provide headers, use [MLMediaPlayerSetRemoteDataSourceForURI()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetremotedatasourceforuri).
 
 
 
@@ -10374,7 +10374,7 @@ Sets a URI string as the remote data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |uri|The C-style string representing the complete URL. |
 | char ** |headers|Array of char * headers to be sent. |
 | size_t |len|Number of headers passed.|
@@ -10383,12 +10383,12 @@ Sets a URI string as the remote data source.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * android.permission.INTERNET (protection level: normal) 
@@ -10417,19 +10417,19 @@ Sets the data source to use.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaDataSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10456,19 +10456,19 @@ Sets the data source to use.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10496,7 +10496,7 @@ Adds a TimedText source from a URI.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |uri|The C-style string representing the complete URI. |
 | const char * |mime_type|The MIME type of the file.|
 
@@ -10504,10 +10504,10 @@ Adds a TimedText source from a URI.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from URI. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from URI. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10537,7 +10537,7 @@ Adds a TimedText source from a file descriptor.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t |fd|The file descriptor for the timed text source. |
 | int64_t |offset|The offset (in bytes) of the source's start. Must be >= 0. |
 | int64_t |length|The number of bytes of media to load after offset. Must be >= 0. |
@@ -10547,10 +10547,10 @@ Adds a TimedText source from a file descriptor.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from file descriptor. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from file descriptor. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10573,25 +10573,25 @@ MLResult MLMediaPlayerSetNextPlayer(
 )
 ```
 
-Sets the 'next' [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) to automatically 'start' when current [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) playback completes. 
+Sets the 'next' [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to automatically 'start' when current [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) playback completes. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |next_media_player|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) of an already created [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance. To 'remove' the next player, set next_media_player = 0.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |next_media_player|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) of an already created [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance. To 'remove' the next player, set next_media_player = 0.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully registered next [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md). |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed source because no valid source could be found. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully registered next [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md). |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed source because no valid source could be found. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10618,18 +10618,18 @@ Counts the number of tracks found in the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t * |out_track_count|The number of tracks found in the player source.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the number of tracks. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the number of tracks. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10657,20 +10657,20 @@ Gets the type of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|The track number for which type is to be returned. Has to be < TrackCount. |
-| [MLMediaPlayerTrackType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) * |out_track_type|The returned type for specified track number.|
+| [MLMediaPlayerTrackType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) * |out_track_type|The returned type for specified track number.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned type for passed track. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Found track's type was unknown. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned type for passed track. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Found track's type was unknown. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10698,7 +10698,7 @@ Gets the language of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|The track number for which language is to be returned. Has to be < TrackCount. |
 | char ** |out_track_language|The returned language of the track. Caller has ownership of that param and has to free it when no longer needed.|
 
@@ -10706,11 +10706,11 @@ Gets the language of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned language for passed track. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned language for passed track. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10738,19 +10738,19 @@ Gets the Media Format of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|The track number for which Media Format is to be returned. Has to be < TrackCount. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_media_format|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to MediaFormat of the track. Caller has ownership of this handle and should call [MLMediaFormatDestroy](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatdestroy) to free it when no longer needed.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_media_format|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to MediaFormat of the track. Caller has ownership of this handle and should call [MLMediaFormatDestroy](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatdestroy) to free it when no longer needed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retreived the media format of passed track. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retreived the media format of passed track. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10782,18 +10782,18 @@ Selects a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|Number of the track to select. Has to be < TrackCount.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully selected track. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully selected track. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10820,18 +10820,18 @@ Unselects a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|Number of the track to unselect. Has to be < TrackCount.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully unselected track. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully unselected track. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10857,24 +10857,24 @@ Prepares the player for playback, synchronously.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_CannotConnect|Failed becaue MediaPlayer could not connect with the given URL.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_CannotConnect|Failed becaue MediaPlayer could not connect with the given URL.|
 **Required Permissions**:
 
   * None 
 
 
-After setting the data source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For files, it is OK to call prepare(), which blocks until [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) is ready for playback.
+After setting the data source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For files, it is OK to call prepare(), which blocks until [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) is ready for playback.
 
 
 
@@ -10896,23 +10896,23 @@ Prepares the player for playback, asynchronously.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasBeenPrepared state or wait for 'on_prepared' callback if already set. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasBeenPrepared state or wait for 'on_prepared' callback if already set. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-After setting the data's source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For streams, you should call prepareAsync(), which returns immediately, rather than blocking until enough data has been buffered. Prepared state will then be obtained via the 'on_prepared' callback if already registered (see MLMediaPlayerSetEventCallbacksEx), or polled for via the [MLMediaPlayerPollStates()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) call with the MLMediaPlayerPollingStateFlag_HasBeenPrepared flag set.
+After setting the data's source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For streams, you should call prepareAsync(), which returns immediately, rather than blocking until enough data has been buffered. Prepared state will then be obtained via the 'on_prepared' callback if already registered (see MLMediaPlayerSetEventCallbacksEx), or polled for via the [MLMediaPlayerPollStates()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) call with the MLMediaPlayerPollingStateFlag_HasBeenPrepared flag set.
 
 
 
@@ -10934,17 +10934,17 @@ Starts or resumes playback.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started/resumed playback. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'prepared', 'playback complete', 'paused', 'stopped'. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started/resumed playback. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'prepared', 'playback complete', 'paused', 'stopped'. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -10972,17 +10972,17 @@ Stops playback after playback has been started or paused.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stopped playback. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'stopped', 'prepared', 'playback complete'. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stopped playback. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'stopped', 'prepared', 'playback complete'. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11008,23 +11008,23 @@ Pauses playback.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully paused playback. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'playback complete'. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully paused playback. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'playback complete'. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-Calling pause() is a NOOP if [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) is in state #MEDIA_PLAYER_PAUSED or #MEDIA_PLAYER_PLAYBACK_COMPLETE.
+Calling pause() is a NOOP if [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) is in state #MEDIA_PLAYER_PAUSED or #MEDIA_PLAYER_PLAYBACK_COMPLETE.
 
 
 
@@ -11040,23 +11040,23 @@ MLResult MLMediaPlayerReset(
 )
 ```
 
-Resets the [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state. 
+Resets the [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully reset MediaPlayer. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully reset MediaPlayer. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11090,25 +11090,25 @@ Seeks to specified time position.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int |msec|The offset in milliseconds from the start, to seek to. |
-| [MLMediaSeekMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) |mode|Seek mode defined by MLMediaSeekMode.|
+| [MLMediaSeekMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) |mode|Seek mode defined by MLMediaSeekMode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched seek operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasSeekCompleted state or wait for the 'on_seek_complete' callback if already set. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'started', 'prepared', 'paused' and 'playback complete'. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched seek operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasSeekCompleted state or wait for the 'on_seek_complete' callback if already set. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'started', 'prepared', 'paused' and 'playback complete'. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-Note that SeekTo is an async. function and returns immediately. Successful seek result has to be obtained either via the 'on_seek_complete' if already registered (see MLMediaPlayerSetEventCallbacksEx) or by polling for the flag 'MLMediaPlayerPollingStateFlag_HasSeekCompleted' when calling [MLMediaPlayerPollStates()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
+Note that SeekTo is an async. function and returns immediately. Successful seek result has to be obtained either via the 'on_seek_complete' if already registered (see MLMediaPlayerSetEventCallbacksEx) or by polling for the flag 'MLMediaPlayerPollingStateFlag_HasSeekCompleted' when calling [MLMediaPlayerPollStates()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
 
 
 
@@ -11132,25 +11132,25 @@ Sets callbacks to notify clients about player events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MediaCodec. |
-| const [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MediaCodec. |
+| const [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
 | void * |data|Custom data to be returned when any callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set/unset the specified callbacks. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set/unset the specified callbacks. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
-This structure must be initialized by calling [MLMediaPlayerEventCallbacksExInit()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayereventcallbacksexinit) before use.
+This structure must be initialized by calling [MLMediaPlayerEventCallbacksExInit()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayereventcallbacksexinit) before use.
 
-Client needs to implement the callback functions declared in [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md), but can set to NULL the ones he does not care about.
+Client needs to implement the callback functions declared in [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md), but can set to NULL the ones he does not care about.
 
 
 
@@ -11179,7 +11179,7 @@ Returns the size of the video frame.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_width|The returned video width. |
 | int32_t * |out_height|The returned video height.|
 
@@ -11187,10 +11187,10 @@ Returns the size of the video frame.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned video size. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned video size. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11217,17 +11217,17 @@ Returns current position of playback.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_msec|The returned position in milliseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current position. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current position. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11254,18 +11254,18 @@ Returns media duration.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_msec|The returned duration in milliseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the media duration. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'prepared', 'started', 'paused', 'stopped' and 'playback complete'. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the media duration. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'prepared', 'started', 'paused', 'stopped' and 'playback complete'. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11292,17 +11292,17 @@ Returns current buffering percentage.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_percentage|The returned buffering percentage in the range [0, 100].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current buffering percentage. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current buffering percentage. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11324,13 +11324,13 @@ MLResult MLMediaPlayerGetInfo(
 )
 ```
 
-Returns last info received by internal [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
+Returns last info received by internal [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_code|The main info code. |
 | int32_t * |out_extra|The secondary code/data.|
 
@@ -11338,10 +11338,10 @@ Returns last info received by internal [Media Player](/versioned_docs/version-03
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11362,23 +11362,23 @@ MLResult MLMediaPlayerGetError(
 )
 ```
 
-Returns last error received by internal [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
+Returns last error received by internal [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) * |out_result|The result code.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) * |out_result|The result code.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11407,7 +11407,7 @@ Returns last timed text event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char ** |out_text|The text of the timed text event. |
 | int32_t * |out_start|The start time. |
 | int32_t * |out_end|The end time.|
@@ -11416,10 +11416,10 @@ Returns last timed text event information.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last timedtext entry. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last timedtext entry. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11446,16 +11446,16 @@ Returns last subtitle event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerSubtitleData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) ** |out_subtitle_data|The returned MLMediaPlayerGetSubtitleExArgs pointer.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerSubtitleData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) ** |out_subtitle_data|The returned MLMediaPlayerGetSubtitleExArgs pointer.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last subtitle entry. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last subtitle entry. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11486,15 +11486,15 @@ Releases last subtitle event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released the last subtitle entry. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released the last subtitle entry. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11527,26 +11527,26 @@ Sets callback to get notified when a subtitle update is available along with its
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerOnMediaSubtitleUpdateCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) |on_media_subtitle_callback|Function pointer to be called. This can be 'NULL' to unset the callback. See [MLMediaPlayerOnMediaSubtitleUpdateCallback()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) callback typedef declaration and comments for explanation on expected callback parameters. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerOnMediaSubtitleUpdateCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) |on_media_subtitle_callback|Function pointer to be called. This can be 'NULL' to unset the callback. See [MLMediaPlayerOnMediaSubtitleUpdateCallback()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) callback typedef declaration and comments for explanation on expected callback parameters. |
 | void * |data|Custom data to be returned when callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
 
-Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasSubtitleUpdated](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hassubtitleupdated) flag. [MLMediaPlayerPollStates()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
+Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasSubtitleUpdated](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hassubtitleupdated) flag. [MLMediaPlayerPollStates()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
 
-This also makes [MLMediaPlayerGetSubtitleEx()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetsubtitleex) redundant as the subtitle data is provided with the callback.
+This also makes [MLMediaPlayerGetSubtitleEx()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetsubtitleex) redundant as the subtitle data is provided with the callback.
 
 
 
@@ -11576,7 +11576,7 @@ Returns last metadata event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int64_t * |out_time|The returned event time. |
 | int32_t * |out_size|The returned event buffer size. |
 | uint8_t ** |out_buffer|The returned event buffer. This buffer is only valid until the next metadata event arrives, so make a copy if you need to use the buffer later.|
@@ -11585,10 +11585,10 @@ Returns last metadata event information.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned last metadata entry. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned last metadata entry. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11615,18 +11615,18 @@ Sets video scaling mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|MLHandle to the MediaPlayer instance. |
-| [MLMediaPlayerVideoScalingMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode) |mode|The video scaling mode to set. For a list of valid values, see #media_video_scaling_mode_type declaration.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|MLHandle to the MediaPlayer instance. |
+| [MLMediaPlayerVideoScalingMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode) |mode|The video scaling mode to set. For a list of valid values, see #media_video_scaling_mode_type declaration.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current video scaling mode. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current video scaling mode. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11653,17 +11653,17 @@ Sets the looping mode of the player.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | bool |loop|The looping mode. Set to true if player should loop to beginning of MediaPlayer when EOS reached. Set to false if MediaPlayer should simply stop playback at end of media.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current looping mode. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current looping mode. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11690,17 +11690,17 @@ Sets the volume on this player.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | float |volume|The new volume in the [0.0, 1.0] range.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the volume. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the volume. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11727,17 +11727,17 @@ Gets the handle of the audio stream.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the returned Audio handle. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the returned Audio handle. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current audio stream handle. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current audio stream handle. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11759,13 +11759,13 @@ MLResult MLMediaPlayerPollStates(
 )
 ```
 
-Polls the desired states from internal [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
+Polls the desired states from internal [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint16_t |mask|Selection mask for picking which states to retrieve. |
 | uint16_t * |out_polled_states|Bitwise OR'ed integer of all the chosen states from bitwise 'mask' and in the range [0 = false : 1 = true].|
 
@@ -11773,15 +11773,15 @@ Polls the desired states from internal [Media Player](/versioned_docs/version-03
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully polled and returned the selected states. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully polled and returned the selected states. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
-Desired states have to be selected by passing a bitwise OR'ed mask of [MLMediaPlayerPollingStateFlags](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflags) flags.
+Desired states have to be selected by passing a bitwise OR'ed mask of [MLMediaPlayerPollingStateFlags](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflags) flags.
 
 The "is_XXX" states can be polled multiples times and the return value will be the same if internal state hasn't changed since last call.
 
@@ -11789,13 +11789,13 @@ When polling the "has_XXX" states however, internal state is set to false, since
 
 Two-step state polling : The following states, when returning '1', indicate there is some data ready to be retrieved, by calling a getter function, as explained below.
 
-For '#MLMediaPlayerPollingState_HasSizeChanged', call [MLMediaPlayerGetVideoSize()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetvideosize) to get the new size.
+For '#MLMediaPlayerPollingState_HasSizeChanged', call [MLMediaPlayerGetVideoSize()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetvideosize) to get the new size.
 
-For '#MLMediaPlayerPollingState_HasBufferingUpdated', call [MLMediaPlayerGetBufferingUpdate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingupdate) to get buffering progress value.
+For '#MLMediaPlayerPollingState_HasBufferingUpdated', call [MLMediaPlayerGetBufferingUpdate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingupdate) to get buffering progress value.
 
-For '#MLMediaPlayerPollingState_HasReceivedInfo, call [MLMediaPlayerGetError()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last info code and data.
+For '#MLMediaPlayerPollingState_HasReceivedInfo, call [MLMediaPlayerGetError()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last info code and data.
 
-For '#MLMediaPlayerPollingState_HasReceivedError, call [MLMediaPlayerGetError()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last error code and data.
+For '#MLMediaPlayerPollingState_HasReceivedError, call [MLMediaPlayerGetError()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last error code and data.
 
 Note: This API can still be used even if an #OnBufferAvailable callback has been set using MLMediaPlayerSetOnBufferAvailableCallback() method.
 
@@ -11821,19 +11821,19 @@ Gets the DRM info of the selected media (either audio or video) track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| const [MLMediaPlayerTrackInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |track_info|Media track information defined by [MLMediaPlayerTrackInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md). |
-| [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) ** |out_drm_info|Pointer to the pointer to [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) struct. The caller should not free the pointer returned. The memory will be released in the call to [MLMediaPlayerReleaseDRM()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasedrm).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| const [MLMediaPlayerTrackInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |track_info|Media track information defined by [MLMediaPlayerTrackInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md). |
+| [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) ** |out_drm_info|Pointer to the pointer to [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) struct. The caller should not free the pointer returned. The memory will be released in the call to [MLMediaPlayerReleaseDRM()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasedrm).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the current DRM Info. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|Media Source is not prepared yet. Wait for on_prepared callback and call again. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotAvailable|DRM Information not available for the given track.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the current DRM Info. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|Media Source is not prepared yet. Wait for on_prepared callback and call again. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotAvailable|DRM Information not available for the given track.|
 **Required Permissions**:
 
   * None 
@@ -11867,16 +11867,16 @@ Prepares DRM for the selected media (either audio or video) track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| const [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |drm_session_info|DRM Session info for the Media track, as defined by [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| const [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |drm_session_info|DRM Session info for the Media track, as defined by [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared DRM. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared DRM. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11907,15 +11907,15 @@ Releases DRM.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released DRM. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released DRM. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11942,17 +11942,17 @@ Gets default Buffering settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerBufferingSettings](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerBufferingSettings](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned default Buffering settings. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned default Buffering settings. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -11981,17 +11981,17 @@ Gets current Buffering settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerBufferingSettings](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerBufferingSettings](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current Buffering settings. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current Buffering settings. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -12020,17 +12020,17 @@ Sets buffering settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerBufferingSettings](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) |buf_settings|An [MLMediaPlayerBufferingSettings](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) struct.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerBufferingSettings](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) |buf_settings|An [MLMediaPlayerBufferingSettings](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) struct.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set buffering settings. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set buffering settings. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -12060,24 +12060,24 @@ Set callback to get invoked when a Timed Text update is available along with its
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerOnMediaTimedTextUpdateCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback) |on_media_timed_text_callback|Function pointer to be called. This can be 'NULL' to unset the callback. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerOnMediaTimedTextUpdateCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback) |on_media_timed_text_callback|Function pointer to be called. This can be 'NULL' to unset the callback. |
 | void * |data|Custom data to be returned when callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
 
-Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasTimedTextUpdated](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hastimedtextupdated) flag. [MLMediaPlayerPollStates()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
+Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasTimedTextUpdated](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hastimedtextupdated) flag. [MLMediaPlayerPollStates()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
 
 
 
@@ -12106,24 +12106,24 @@ Gets WebVTT data represented by a timed text handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
-| [MLWebVTTData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) ** |out_webvtt_data|The WebVTT data structure to be returned.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
+| [MLWebVTTData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) ** |out_webvtt_data|The WebVTT data structure to be returned.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned WebVTT data. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the WebVTT format. The timed text track's mime type must be "text/vtt". |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned WebVTT data. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the WebVTT format. The timed text track's mime type must be "text/vtt". |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-The returned [MLWebVTTData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) structure is valid only in the callback's context.
+The returned [MLWebVTTData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) structure is valid only in the callback's context.
 
 
 
@@ -12152,24 +12152,24 @@ Gets TTML data represented by a timed text handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
-| [MLTTMLData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) ** |out_ttml_data|The TTML data structure to be returned.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
+| [MLTTMLData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) ** |out_ttml_data|The TTML data structure to be returned.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned TTML data. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the TTML format. The timed text track's mime type must be "application/ttml+xml". |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned TTML data. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the TTML format. The timed text track's mime type must be "application/ttml+xml". |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-The returned [MLTTMLData](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) structure is valid only in the callback's context.
+The returned [MLTTMLData](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) structure is valid only in the callback's context.
 
 
 
@@ -12190,23 +12190,23 @@ MLResult MLMediaPlayerResetAsync(
 )
 ```
 
-Resets the [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state asynchronously. 
+Resets the [Media Player](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state asynchronously. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched MediaPlayer reset operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasResetCompleted or use the 'on_reset_complete' callback if already set. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched MediaPlayer reset operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasResetCompleted or use the 'on_reset_complete' callback if already set. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -12214,7 +12214,7 @@ Resets the [Media Player](/versioned_docs/version-03 Jan 2023/api-ref/api/Module
 
 This method is asynchronous and will return immediately. After invocation, you will have to initialize it again by setting the data source and calling prepare() or prepareAsync().
 
-A successful reset result can be obtained either by registering the 'on_reset_complete' callback (see MLMediaPlayerSetEventCallbacksEx) or by polling for the 'MLMediaPlayerPollingStateFlag_HasResetCompleted' flag when calling [MLMediaPlayerPollStates()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
+A successful reset result can be obtained either by registering the 'on_reset_complete' callback (see MLMediaPlayerSetEventCallbacksEx) or by polling for the 'MLMediaPlayerPollingStateFlag_HasResetCompleted' flag when calling [MLMediaPlayerPollStates()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
 
 
 
@@ -12242,18 +12242,18 @@ Retrieves metrics recorded on the MediaPlayer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerMetrics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) * |out_metrics|See [MLMediaPlayerMetrics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerMetrics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) * |out_metrics|See [MLMediaPlayerMetrics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully received metrics. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully received metrics. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -12285,24 +12285,24 @@ Sets the Native surface to be used as the sink for displaying the video portion 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |surface|Handle to the MLNativeSurface object.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |surface|Handle to the MLNativeSurface object.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed media_player or the surface handle was not found. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set output surface. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MediaPlayer was not properly built or initialized.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed media_player or the surface handle was not found. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set output surface. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MediaPlayer was not properly built or initialized.|
 **Required Permissions**:
 
   * None 
 
 
-The surface should be created by [MLNativeSurfaceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate). When called, this method should be called after one of the MLMediaPlayerSetDataSource() API and before [MLMediaPlayerPrepare()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepare) or [MLMediaPlayerPrepareAsync()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepareasync) Not calling this method or calling this with surface as ML_INVALID_HANDLE will result in only the audio track being played.
+The surface should be created by [MLNativeSurfaceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate). When called, this method should be called after one of the MLMediaPlayerSetDataSource() API and before [MLMediaPlayerPrepare()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepare) or [MLMediaPlayerPrepareAsync()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepareasync) Not calling this method or calling this with surface as ML_INVALID_HANDLE will result in only the audio track being played.
 
 
 
@@ -12331,17 +12331,17 @@ Create a new MediaStreamSource object.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaStreamSourceOnBufferAvailable](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediastreamsourceonbufferavailable) |on_buffer_available|[MLMediaStreamSourceOnBufferAvailable](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediastreamsourceonbufferavailable) callback. |
+| [MLMediaStreamSourceOnBufferAvailable](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediastreamsourceonbufferavailable) |on_buffer_available|[MLMediaStreamSourceOnBufferAvailable](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediastreamsourceonbufferavailable) callback. |
 | void * |context|User data to be passed to callbacks. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new source object created. Only valid if result is [MLResult_Ok](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-ok).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new source object created. Only valid if result is [MLResult_Ok](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-ok).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12367,15 +12367,15 @@ Destroy a MediaStreamSource object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MediaStreamSource object to destroy.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MediaStreamSource object to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12404,8 +12404,8 @@ Get a buffer where data can be written.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
-| size_t * |out_id|An opaque ID that should be passed to [MLMediaStreamSourcePushBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcepushbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
+| size_t * |out_id|An opaque ID that should be passed to [MLMediaStreamSourcePushBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcepushbuffer). |
 | uint8_t ** |out_ptr|The location where to write data. |
 | size_t * |out_size|Maximum bytes that can be written in `out_ptr`.|
 
@@ -12413,17 +12413,17 @@ Get a buffer where data can be written.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-If a buffer is available, true is returned and `out_id`, `out_ptr` and `out_size` are set. Application can then write up to `out_size` bytes into `out_ptr` and push that data using [MLMediaStreamSourcePushBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcepushbuffer).
+If a buffer is available, true is returned and `out_id`, `out_ptr` and `out_size` are set. Application can then write up to `out_size` bytes into `out_ptr` and push that data using [MLMediaStreamSourcePushBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcepushbuffer).
 
-If no buffer is available, false is returned and application should wait for [MLMediaStreamSourceOnBufferAvailable()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediastreamsourceonbufferavailable) to be called before retrying.
+If no buffer is available, false is returned and application should wait for [MLMediaStreamSourceOnBufferAvailable()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediastreamsourceonbufferavailable) to be called before retrying.
 
 
 
@@ -12447,23 +12447,23 @@ Push a buffer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
-| size_t |id|The ID of the buffer as given by [MLMediaStreamSourceGetBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcegetbuffer). |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate). |
+| size_t |id|The ID of the buffer as given by [MLMediaStreamSourceGetBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcegetbuffer). |
 | size_t |size|The number of bytes actually written in the buffer.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-Queue a buffer acquired from [MLMediaStreamSourceGetBuffer()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcegetbuffer) once data has been written.
+Queue a buffer acquired from [MLMediaStreamSourceGetBuffer()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcegetbuffer) once data has been written.
 
 
 
@@ -12485,15 +12485,15 @@ Push End-Of-Stream event.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) as returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12515,13 +12515,13 @@ static inline void MLNativeSurfaceConfigInit(
 )
 ```
 
-Initializes [MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) with default values. 
+Initializes [MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) * |inout_config_values|[MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) structure defined by [MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) that needs to be initialized. |
+| [MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) * |inout_config_values|[MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) structure defined by [MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) that needs to be initialized. |
 
 
 
@@ -12536,13 +12536,13 @@ static inline void MLNativeSurfaceOnFrameAvailableCallbackInit(
 )
 ```
 
-Initializes [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) with default values. 
+Initializes [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) * |inout_callbacks|[MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) Callback structure defined by [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) that needs to be initialized. |
+| [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) * |inout_callbacks|[MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) Callback structure defined by [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) that needs to be initialized. |
 
 
 
@@ -12564,17 +12564,17 @@ Create a new NativeSurface.
 
 |  |   |   |
 |--|--|--|
-| const [MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) * |config_values|Configuration values for creating the native surface, refer [MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) for more details. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created NativeSurface. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| const [MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) * |config_values|Configuration values for creating the native surface, refer [MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) for more details. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created NativeSurface. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed to allocate memory for surface. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurface object was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed to allocate memory for surface. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurface object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12607,15 +12607,15 @@ Release a NativeSurface.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurface.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurface.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurface object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurface object was successfully released. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurface object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurface object was successfully released. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12648,21 +12648,21 @@ Gets an implementation of NativeWindow that feeds graphic buffers into MLNativeS
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. This handle can be:
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. This handle can be:
 
-* Surface created on an Encoder using [MLMediaCodecCreateInputSurface](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface)
-* The output surface created using [MLNativeSurfaceCreate](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate)
-* The output surface created using [MLNativeSurfaceTextureCreate](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate)|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_native_window|Native window as MLHandle on success. |
+* Surface created on an Encoder using [MLMediaCodecCreateInputSurface](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface)
+* The output surface created using [MLNativeSurfaceCreate](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate)
+* The output surface created using [MLNativeSurfaceTextureCreate](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate)|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_native_window|Native window as MLHandle on success. |
 | int32_t * |out_format|Native window format on success and for valid pointer, which will be used as EGL_NATIVE_VISUAL_ID.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurface object is invalid or out_native_window is NULL. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Native window is successfully retrieved. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurface object is invalid or out_native_window is NULL. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Native window is successfully retrieved. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12690,22 +12690,22 @@ MLResult MLNativeSurfaceReleaseNativeWindow(
 )
 ```
 
-Releases NativeWindow previously acquired by [MLNativeSurfaceGetNativeWindow](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacegetnativewindow). 
+Releases NativeWindow previously acquired by [MLNativeSurfaceGetNativeWindow](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacegetnativewindow). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |native_window|Native window handle acquired through [MLNativeSurfaceGetNativeWindow](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacegetnativewindow).|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |native_window|Native window handle acquired through [MLNativeSurfaceGetNativeWindow](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacegetnativewindow).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurface or NativeWindow object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Native window is successfully released. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurface or NativeWindow object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Native window is successfully released. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12732,17 +12732,17 @@ Consume next available buffer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_native_buffer|A pointer to the acquired native buffer of the frame. When buffer is not required anymore, caller must call [MLNativeSurfaceReleaseFrame()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacereleaseframe) with this nativeBuffer handle to free up queuing space for incoming buffers.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_native_buffer|A pointer to the acquired native buffer of the frame. When buffer is not required anymore, caller must call [MLNativeSurfaceReleaseFrame()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacereleaseframe) with this nativeBuffer handle to free up queuing space for incoming buffers.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Next available frame is acquired successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotEnoughData|Native buffer is not available yet to acquire.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Next available frame is acquired successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotEnoughData|Native buffer is not available yet to acquire.|
 **Required Permissions**:
 
   * None 
@@ -12781,8 +12781,8 @@ Acquire an AHardwareBuffer* from a native buffer handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. Pass [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle) when using with native buffers acquired without a MLNativeSurface, like in the case of ml_webview api. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |native_buffer|The native buffer handle acquired from a [MLNativeSurfaceAcquireNextAvailableFrame](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfaceacquirenextavailableframe) call. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. Pass [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle) when using with native buffers acquired without a MLNativeSurface, like in the case of ml_webview api. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |native_buffer|The native buffer handle acquired from a [MLNativeSurfaceAcquireNextAvailableFrame](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfaceacquirenextavailableframe) call. |
 | struct AHardwareBuffer ** |out_hardware_buffer|The AHardwareBuffer pointer to the imported surface. |
 | uint32_t * |out_width|Width of the imported surface. |
 | uint32_t * |out_height|Height of the imported surface.|
@@ -12791,9 +12791,9 @@ Acquire an AHardwareBuffer* from a native buffer handle.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Import was not performed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Surface was acquired successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Import was not performed due to an unknown error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Import was not performed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Surface was acquired successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Import was not performed due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -12828,16 +12828,16 @@ Release a native buffer previously acquired.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |native_buffer|The native buffer for the frame to release.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |native_buffer|The native buffer for the frame to release.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Frame was released successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Frame was released successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -12869,7 +12869,7 @@ Retrieves the 4x4 texture coordinate transform matrix associated with the last a
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
 | float |out_mtx|A pointer to an array of 16 floats that will receive retrieved transformation matrix.|
 **Required Permissions**:
 
@@ -12914,7 +12914,7 @@ Retrieves the timestamp associated with the last acquired frame. The timestamp i
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
 | int64_t * |out_timestamp_ns|A pointer to user variable for storing retrieved timestamp.|
 **Required Permissions**:
 
@@ -12953,7 +12953,7 @@ Retrieves the QueueBuffer timestamp associated with the last acquired Frame This
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
 | int64_t * |out_timestamp_ns|A pointer to user variable for storing retrieved timestamp.|
 **Required Permissions**:
 
@@ -12992,7 +12992,7 @@ Retrieves the last acquired frame number. The frame number is an incrementing co
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
 | uint64_t * |out_number|A pointer to user variable for storing retrieved frame number.|
 **Required Permissions**:
 
@@ -13031,8 +13031,8 @@ Retrieves the cropping rectangle of the current frame/buffer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
-| [MLRecti](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_recti.md) * |out_crop_rect|A pointer to user variable for storing retrieved Crop.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. |
+| [MLRecti](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_recti.md) * |out_crop_rect|A pointer to user variable for storing retrieved Crop.|
 **Required Permissions**:
 
   * None 
@@ -13073,17 +13073,17 @@ Set callback to notify client when a frame is available.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurface. |
-| const [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) * |callback|A [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) function. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurface. |
+| const [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) * |callback|A [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) function. |
 | void * |user_data|Pointer to user payload data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLNativeSurface object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|MLNativeSurface object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 **Required Permissions**:
 
   * None 
@@ -13116,18 +13116,18 @@ Create a new NativeSurfaceTexture.
 
 |  |   |   |
 |--|--|--|
-| const [MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) * |config_values|Configuration values for creating the native surface, refer [MLNativeSurfaceConfig](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) for more details. |
-| [MLNativeSurfaceTextureBackend](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlnativesurfacetexturebackend) |backend|The graphic backend to use. |
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created NativeSurfaceTexture. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| const [MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) * |config_values|Configuration values for creating the native surface, refer [MLNativeSurfaceConfig](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md) for more details. |
+| [MLNativeSurfaceTextureBackend](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlnativesurfacetexturebackend) |backend|The graphic backend to use. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Upon successful return will point to handle to the created NativeSurfaceTexture. Or else, it will point to [ML_INVALID_HANDLE](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed to allocate memory for surface. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurfaceTexture object was created successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed to allocate memory for surface. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurfaceTexture object was created successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13158,15 +13158,15 @@ Release a NativeSurfaceTexture.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurfaceTexture object was successfully released. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|NativeSurfaceTexture object was successfully released. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13197,15 +13197,15 @@ Update the texture image to the most recent frame from the image stream.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the texture was updated successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the texture was updated successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13239,16 +13239,16 @@ Attach the NativeSurfaceTexture to the graphic context that is current on the ca
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
 | uint32_t |texture_id|The graphic texture object id.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the texture was detached successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the texture was detached successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13279,15 +13279,15 @@ Detach the NativeSurfaceTexture from the graphic context that owns the graphic t
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture.|
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the texture was detached successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the texture was detached successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13319,16 +13319,16 @@ Retrieve the 4x4 texture coordinate transform matrix associated with the texture
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
 | float |out_matrix|A 4x4 matrix stored in column-major order as 16 consecutive values.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13360,16 +13360,16 @@ Retrieve the timestamp associated with the texture image set by the most recent 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
 | int64_t * |out_timestamp_ns|The timestamp in nanoseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13402,17 +13402,17 @@ Set callback to notify client when a frame is available.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
-| const [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) * |callback|A MLNativeSurfaceTextureOnFrameAvailableCallback function. |
+| [MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the NativeSurfaceTexture. |
+| const [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md) * |callback|A MLNativeSurfaceTextureOnFrameAvailableCallback function. |
 | void * |user_data|Pointer to user payload data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was set successfully. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|NativeSurfaceTexture object is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was set successfully. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -13638,7 +13638,7 @@ If it is known, this information can be provided as an integer value between 0 a
 
 The default value is -1 (unknown). 
 
-The value is ignored when heavy compression is used (see {[}). ](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-heavy-compression)This key is only used during decoding.
+The value is ignored when heavy compression is used (see {[}). ](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-heavy-compression)This key is only used during decoding.
 
 The associated value is an integer. 
 
@@ -13656,7 +13656,7 @@ MLMediaFormatKey MLMediaFormat_Key_AAC_DRC_Boost_Factor;
 
 A key describing the boost factor allowing to adapt the dynamics of the output to the actual listening requirements. This relies on DRC gain sequences that can be transmitted in the encoded bitstream to be able to reduce the dynamics of the output signal upon request. This factor enables the user to select how much of the gains are applied. 
 
-Positive gains (boost) and negative gains (attenuation, see {[}) can be controlled separately for a better match to different use-cases. ](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-attenuation-factor)Typically, attenuation gains are sent for loud signal segments, and boost gains are sent for soft signal segments. If the output is listened to in a noisy environment, for example, the boost factor is used to enable the positive gains, i.e. to amplify soft signal segments beyond the noise floor. But for listening late at night, the attenuation factor is used to enable the negative gains, to prevent loud signal from surprising the listener. In applications which generally need a low dynamic range, both the boost factor and the attenuation factor are used to enable all DRC gains. 
+Positive gains (boost) and negative gains (attenuation, see {[}) can be controlled separately for a better match to different use-cases. ](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-attenuation-factor)Typically, attenuation gains are sent for loud signal segments, and boost gains are sent for soft signal segments. If the output is listened to in a noisy environment, for example, the boost factor is used to enable the positive gains, i.e. to amplify soft signal segments beyond the noise floor. But for listening late at night, the attenuation factor is used to enable the negative gains, to prevent loud signal from surprising the listener. In applications which generally need a low dynamic range, both the boost factor and the attenuation factor are used to enable all DRC gains. 
 
 In order to prevent clipping, it is also recommended to apply the attenuation gains in case of a downmix and/or loudness normalization to high target reference levels. 
 
@@ -13682,7 +13682,7 @@ MLMediaFormatKey MLMediaFormat_Key_AAC_DRC_Attenuation_Factor;
 
 A key describing the attenuation factor allowing to adapt the dynamics of the output to the actual listening requirements. 
 
-See {[} for a description of the role of this attenuation factor and the value range. ](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-boost-factor)The default value is 127 (fully apply attenuation DRC gains). 
+See {[} for a description of the role of this attenuation factor and the value range. ](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-boost-factor)The default value is 127 (fully apply attenuation DRC gains). 
 
 This key is only used during decoding.
 
@@ -13707,7 +13707,7 @@ Two separate DRC gain sequences can be transmitted in one bitstream: MPEG-4 DRC 
 * 0 enables light compression, 
 * 1 enables heavy compression instead. 
 
-Note that only light compression offers the features of scaling of DRC gains (see {[} and { #MLMediaFormat_Key_AAC_DRC_Attenuation_Factor} for the boost and attenuation factors, and frequency-selective (multiband) DRC. Light compression usually contains clipping prevention for stereo downmixing while heavy compression, if additionally provided in the bitstream, is usually stronger, and contains clipping prevention for stereo and mono downmixing. ](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-boost-factor)The default is 1 (heavy compression). 
+Note that only light compression offers the features of scaling of DRC gains (see {[} and { #MLMediaFormat_Key_AAC_DRC_Attenuation_Factor} for the boost and attenuation factors, and frequency-selective (multiband) DRC. Light compression usually contains clipping prevention for stereo downmixing while heavy compression, if additionally provided in the bitstream, is usually stronger, and contains clipping prevention for stereo and mono downmixing. ](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-boost-factor)The default is 1 (heavy compression). 
 
 This key is only used during decoding.
 
@@ -13775,7 +13775,7 @@ MLMediaFormatKey MLMediaFormat_Key_AAC_Profile;
 
 A key describing the AAC profile to be used (AAC audio formats only). 
 
-Constants are declared in [MLMediaCodecListGetSupportedProfileLevels](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels).
+Constants are declared in [MLMediaCodecListGetSupportedProfileLevels](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels).
 
 The associated value is an integer. 
 
@@ -13835,7 +13835,7 @@ MLMediaFormatKey MLMediaFormat_Key_Bit_Rate_Mode;
 
 A key describing the desired bitrate mode to be used by an encoder. 
 
-Constants are declared in [MLMediaCodecBitrateMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode). 
+Constants are declared in [MLMediaCodecBitrateMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode). 
 
 
 
@@ -13903,7 +13903,7 @@ MLMediaFormatKey MLMediaFormat_Key_Color_Format;
 
 A key describing the color format of the content in a video format. 
 
-Constants are declared in [MLMediaCodecBitrateMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode). 
+Constants are declared in [MLMediaCodecBitrateMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode). 
 
 
 
@@ -13951,7 +13951,7 @@ MLMediaFormatKey MLMediaFormat_Key_Frame_Rate;
 
 A key describing the frame rate of a video format in frames/sec. 
 
-The associated value is normally an integer when the value is used by the platform, but video codecs also accept float configuration values. Specifically, MLMediaExtractor::getTrackFormat provides an integer value corresponding to the frame rate information of the track if specified and non-zero. Otherwise, this key is not present. MLMediaCodec::configure accepts both float and integer values. This represents the desired operating frame rate if the {[} is not present and { #MLMediaFormat_Key_Priority} is `0` (realtime). For video encoders this value corresponds to the intended frame rate, although encoders are expected to support variable frame rate based on  MLMediaCodec.BufferInfo#presentationTimeUs buffer timestamp. This key is not used in the  MLMediaCodec#getInputFormat input/ MLMediaCodec#getOutputFormat output formats, nor by  MLMediaMuxer#addTrack. ](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-operating-rate)
+The associated value is normally an integer when the value is used by the platform, but video codecs also accept float configuration values. Specifically, MLMediaExtractor::getTrackFormat provides an integer value corresponding to the frame rate information of the track if specified and non-zero. Otherwise, this key is not present. MLMediaCodec::configure accepts both float and integer values. This represents the desired operating frame rate if the {[} is not present and { #MLMediaFormat_Key_Priority} is `0` (realtime). For video encoders this value corresponds to the intended frame rate, although encoders are expected to support variable frame rate based on  MLMediaCodec.BufferInfo#presentationTimeUs buffer timestamp. This key is not used in the  MLMediaCodec#getInputFormat input/ MLMediaCodec#getOutputFormat output formats, nor by  MLMediaMuxer#addTrack. ](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-operating-rate)
 
 
 
@@ -13985,7 +13985,7 @@ A key describing the frequency of key frames expressed in seconds between key fr
 
 This key is used by video encoders. A negative value means no key frames are requested after the first frame. A zero value means a stream containing all key frames is requested. 
 
-Most video encoders will convert this value of the number of non-key-frames between key-frames, using the {[frame rate} information; therefore, if the actual frame rate differs (e.g. input frames are dropped or the frame rate changes), the **time interval** between key frames will not be the configured value. ](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate) The associated value is an integer (or float since android.os.Build.VERSION_CODES::N_MR1 ). 
+Most video encoders will convert this value of the number of non-key-frames between key-frames, using the {[frame rate} information; therefore, if the actual frame rate differs (e.g. input frames are dropped or the frame rate changes), the **time interval** between key frames will not be the configured value. ](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate) The associated value is an integer (or float since android.os.Build.VERSION_CODES::N_MR1 ). 
 
 
 
@@ -14001,7 +14001,7 @@ MLMediaFormatKey MLMediaFormat_Key_Intra_Refresh_Period;
 
 An optional key describing the period of intra refresh in frames. 
 
-This is an optional parameter that applies only to video encoders. If encoder supports it ([MLMediaCodecListIsIntraRefreshSupported](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistisintrarefreshsupported)), the whole frame is completely refreshed after the specified period. Also for each frame, a fix subset of macroblocks must be intra coded which leads to a more constant bitrate than inserting a key frame. This key is recommended for video streaming applications as it provides low-delay and good error-resilience. This key is ignored if the video encoder does not support the intra refresh feature. Use the output format to verify that this feature was enabled.
+This is an optional parameter that applies only to video encoders. If encoder supports it ([MLMediaCodecListIsIntraRefreshSupported](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistisintrarefreshsupported)), the whole frame is completely refreshed after the specified period. Also for each frame, a fix subset of macroblocks must be intra coded which leads to a more constant bitrate than inserting a key frame. This key is recommended for video streaming applications as it provides low-delay and good error-resilience. This key is ignored if the video encoder does not support the intra refresh feature. Use the output format to verify that this feature was enabled.
 
 The associated value is an integer. 
 
@@ -14174,7 +14174,7 @@ This key is also used by MLMediaExtractor to specify the sample format of audio 
 
 If this key is missing, the raw audio sample format is signed 16-bit short.
 
-The associated value is an integer with keys defined by [MLMediaFormatAudioEncoding](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediaformataudioencoding). 
+The associated value is an integer with keys defined by [MLMediaFormatAudioEncoding](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediaformataudioencoding). 
 
 
 
@@ -14510,7 +14510,7 @@ MLMediaFormatKey MLMediaFormat_Key_Priority;
 
 A key describing the desired codec priority. 
 
-The associated value can be one of the [MLMediaCodecPriority](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecpriority) enumeration. This is a hint used at codec configuration and resource planning - to understand the realtime requirements of the application; however, due to the nature of media components, performance is not guaranteed. 
+The associated value can be one of the [MLMediaCodecPriority](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecpriority) enumeration. This is a hint used at codec configuration and resource planning - to understand the realtime requirements of the application; however, due to the nature of media components, performance is not guaranteed. 
 
 
 
@@ -14542,9 +14542,9 @@ MLMediaFormatKey MLMediaFormat_Key_Intra_Refresh_Mode;
 
 An optional key describing the mode of intra refresh in frames. The associated value is an integer. 
 
-This is an optional parameter that applies only to video encoders. If encoder supports it ([MLMediaCodecListIsIntraRefreshSupported](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistisintrarefreshsupported)), the whole frame is completely refreshed after the specified period. Also for each frame, a fixed subset of macroblocks must be intra-coded which leads to a more constant bitrate than inserting a key frame. This key is recommended for video streaming applications as it provides low-delay and good error-resilience. This key is ignored if the video encoder does not support the intra refresh feature. Use the output format to verify that this feature was enabled.
+This is an optional parameter that applies only to video encoders. If encoder supports it ([MLMediaCodecListIsIntraRefreshSupported](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistisintrarefreshsupported)), the whole frame is completely refreshed after the specified period. Also for each frame, a fixed subset of macroblocks must be intra-coded which leads to a more constant bitrate than inserting a key frame. This key is recommended for video streaming applications as it provides low-delay and good error-resilience. This key is ignored if the video encoder does not support the intra refresh feature. Use the output format to verify that this feature was enabled.
 
-The possible values are defined in [MLMediaCodecIntraRefreshMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecintrarefreshmode). 
+The possible values are defined in [MLMediaCodecIntraRefreshMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecintrarefreshmode). 
 
 
 
@@ -14610,7 +14610,7 @@ A key describing the desired profile to be used by an encoder.
 
 The associated value is an integer.
 
-The supported profiles can be queries through [MLMediaCodecListGetSupportedProfileLevels](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels). The values are defined in [MLMediaCodecProfileType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecprofiletype) enumeration. This key is used as a further hint when specifying a desired profile, and is only supported for codecs that specify a level. This key is ignored if the profile is not specified. 
+The supported profiles can be queries through [MLMediaCodecListGetSupportedProfileLevels](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels). The values are defined in [MLMediaCodecProfileType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecprofiletype) enumeration. This key is used as a further hint when specifying a desired profile, and is only supported for codecs that specify a level. This key is ignored if the profile is not specified. 
 
 
 
@@ -14628,7 +14628,7 @@ A key describing the desired level to be used by an encoder.
 
 The associated value is an integer.
 
-The supported profiles can be queries through [MLMediaCodecListGetSupportedProfileLevels](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels). The values are defined in [MLMediaCodecLevelType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecleveltype) enumeration. This key is used as a further hint when specifying a desired profile, and is only supported for codecs that specify a level. This key is ignored if the level is not specified. 
+The supported profiles can be queries through [MLMediaCodecListGetSupportedProfileLevels](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeclistgetsupportedprofilelevels). The values are defined in [MLMediaCodecLevelType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecleveltype) enumeration. This key is used as a further hint when specifying a desired profile, and is only supported for codecs that specify a level. This key is ignored if the level is not specified. 
 
 
 
@@ -14726,7 +14726,7 @@ A key describing the codec specific data.
 
 Codec-specific data in the format is automatically submitted to the codec upon start(); you MUST NOT submit this data explicitly.
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -14744,7 +14744,7 @@ A key describing the codec specific data buffer #0.
 
 Codec-specific data in the format is automatically submitted to the codec upon start(); you MUST NOT submit this data explicitly.
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -14762,7 +14762,7 @@ A key describing the codec specific data buffer #1.
 
 Codec-specific data in the format is automatically submitted to the codec upon start(); you MUST NOT submit this data explicitly.
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -14780,7 +14780,7 @@ A key describing the codec specific data buffer #2.
 
 Codec-specific data in the format is automatically submitted to the codec upon start(); you MUST NOT submit this data explicitly.
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -14798,7 +14798,7 @@ A key describing the codec specific data buffer for AVC (h.264).
 
 Codec-specific data in the format is automatically submitted to the codec upon start(); you MUST NOT submit this data explicitly.
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -14816,7 +14816,7 @@ A key describing the codec specific data buffer for HEVC (h.265).
 
 Codec-specific data in the format is automatically submitted to the codec upon start(); you MUST NOT submit this data explicitly.
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -14848,7 +14848,7 @@ MLMediaFormatKey MLMediaFormat_Key_Albumart;
 
 A key describing metadata. The artwork for the album of the media's original source as a Bitmap. 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -14896,7 +14896,7 @@ MLMediaFormatKey MLMediaFormat_Key_Audio_Presentation_Info;
 
 A key describing metadata. The media presentation info. 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15109,7 +15109,7 @@ MLMediaFormatKey MLMediaFormat_Key_Crypto_Encrypted_Sizes;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15124,7 +15124,7 @@ MLMediaFormatKey MLMediaFormat_Key_Crypto_Iv;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15139,7 +15139,7 @@ MLMediaFormatKey MLMediaFormat_Key_Crypto_Key;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15169,7 +15169,7 @@ MLMediaFormatKey MLMediaFormat_Key_Crypto_Plain_Sizes;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15184,7 +15184,7 @@ MLMediaFormatKey MLMediaFormat_Key_Crypto_Skip_Byte_Block;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15199,7 +15199,7 @@ MLMediaFormatKey MLMediaFormat_Key_D263;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15325,7 +15325,7 @@ MLMediaFormatKey MLMediaFormat_Key_Esds;
 
 A key describing the electrostatic discharge and soldering (ESDS). 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15410,9 +15410,9 @@ Refer to MIMETYPE_IMAGE_ANDROID_HEIC on decoding instructions of such tracks.
 
 **See**: 
 
-  * [MLMediaFormat_Key_Tile_Width](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)
-  * [MLMediaFormat_Key_Tile_Height](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)
-  * [MLMediaFormat_Key_Grid_Rows](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)
+  * [MLMediaFormat_Key_Tile_Width](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)
+  * [MLMediaFormat_Key_Tile_Height](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)
+  * [MLMediaFormat_Key_Grid_Rows](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)
 
 
 
@@ -15435,9 +15435,9 @@ Refer to MIMETYPE_IMAGE_ANDROID_HEIC on decoding instructions of such tracks.
 
 **See**: 
 
-  * [MLMediaFormat_Key_Tile_Width](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)
-  * [MLMediaFormat_Key_Tile_Height](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)
-  * [MLMediaFormat_Key_Grid_Columns](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)
+  * [MLMediaFormat_Key_Tile_Width](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)
+  * [MLMediaFormat_Key_Tile_Height](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)
+  * [MLMediaFormat_Key_Grid_Columns](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)
 
 
 
@@ -15492,7 +15492,7 @@ MLMediaFormatKey MLMediaFormat_Key_Icc_Profile;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15638,7 +15638,7 @@ MLMediaFormatKey MLMediaFormat_Key_Mpeg_User_Data;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15653,7 +15653,7 @@ MLMediaFormatKey MLMediaFormat_Key_Mpeg2_Stream_Header;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15683,7 +15683,7 @@ MLMediaFormatKey MLMediaFormat_Key_Pssh;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15746,7 +15746,7 @@ MLMediaFormatKey MLMediaFormat_Key_Sei;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15822,7 +15822,7 @@ MLMediaFormatKey MLMediaFormat_Key_Text_Format_Data;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15837,7 +15837,7 @@ MLMediaFormatKey MLMediaFormat_Key_Thumbnail_CSD_Hevc;
 ```
 
 
-The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
+The associated value is an [MLMediaFormatByteArray](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md). 
 
 
 
@@ -15904,9 +15904,9 @@ Refer to MIMETYPE_IMAGE_ANDROID_HEIC on decoding instructions of such tracks.
 
 **See**: 
 
-  * [MLMediaFormat_Key_Tile_Width](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)
-  * [MLMediaFormat_Key_Grid_Rows](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)
-  * [MLMediaFormat_Key_Grid_Columns](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)
+  * [MLMediaFormat_Key_Tile_Width](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)
+  * [MLMediaFormat_Key_Grid_Rows](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)
+  * [MLMediaFormat_Key_Grid_Columns](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)
 
 
 
@@ -15927,9 +15927,9 @@ Refer to MIMETYPE_IMAGE_ANDROID_HEIC on decoding instructions of such tracks.
 
 **See**: 
 
-  * [MLMediaFormat_Key_Tile_Height](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)
-  * [MLMediaFormat_Key_Grid_Rows](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)
-  * [MLMediaFormat_Key_Grid_Columns](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)
+  * [MLMediaFormat_Key_Tile_Height](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)
+  * [MLMediaFormat_Key_Grid_Rows](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)
+  * [MLMediaFormat_Key_Grid_Columns](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)
 
 
 
@@ -16179,7 +16179,7 @@ The associated value is a ByteBuffer.
 MLMediaFormatKey MLMediaFormat_Key_Feature_;
 ```
 
-A key prefix used together with a [MLMediaCodecBitrateMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode) feature name describing a required or optional feature for a codec capabilities query. 
+A key prefix used together with a [MLMediaCodecBitrateMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode) feature name describing a required or optional feature for a codec capabilities query. 
 
 The associated value is an integer, where non-0 value means the feature is requested to be present, while 0 value means the feature is requested to be not present. 
 
@@ -16300,7 +16300,7 @@ MLTTMLLayoutAlignment text_alignment;
 
 | Type | Description |
 |--|--|
-| [MLTTMLLayoutAlignment](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllayoutalignment) | Cue text alignment within the cue box.  |
+| [MLTTMLLayoutAlignment](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllayoutalignment) | Cue text alignment within the cue box.  |
 
 
 The alignment of the cue text within the cue box. 
@@ -16321,7 +16321,7 @@ MLTTMLImage bitmap;
 
 | Type | Description |
 |--|--|
-| [MLTTMLImage](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_image.md) | Byte data for TTML image cues.  |
+| [MLTTMLImage](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_image.md) | Byte data for TTML image cues.  |
 
 
 The cue image if this is an image cue, an empty image otherwise. 
@@ -16338,9 +16338,9 @@ The cue image if this is an image cue, an empty image otherwise.
 float line;
 ```
 
-The position of the [line_anchor](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-line-anchor) of the cue box within the viewport in the direction orthogonal to the writing direction, or MLTTMLDimen_Unset. 
+The position of the [line_anchor](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-line-anchor) of the cue box within the viewport in the direction orthogonal to the writing direction, or MLTTMLDimen_Unset. 
 
-When set, the interpretation of the value depends on the value of [line_type](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmllinetype-line-type). For horizontal text and [line_type](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmllinetype-line-type) equal to [MLTTMLLineType_Fraction](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-fraction), this is the fractional vertical position relative to the top of the viewport. 
+When set, the interpretation of the value depends on the value of [line_type](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmllinetype-line-type). For horizontal text and [line_type](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmllinetype-line-type) equal to [MLTTMLLineType_Fraction](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-fraction), this is the fractional vertical position relative to the top of the viewport. 
 
 
 
@@ -16359,14 +16359,14 @@ The cue line type.
 
 | Type | Description |
 |--|--|
-| [MLTTMLLineType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype) | Cue line type.  |
+| [MLTTMLLineType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype) | Cue line type.  |
 
 
-[MLTTMLLineType_Fraction](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-fraction) indicates that [line](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is a fractional position within the viewport.
+[MLTTMLLineType_Fraction](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-fraction) indicates that [line](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is a fractional position within the viewport.
 
-[MLTTMLLineType_Number](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-number) indicates that [line](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is a line number, where the size of each line is taken to be the size of the first line of the cue. When [line](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is greater than or equal to 0 lines count from the start of the viewport, with 0 indicating zero offset from the start edge. When [line](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is negative lines count from the end of the viewport, with -1 indicating zero offset from the end edge. For horizontal text the line spacing is the height of the first line of the cue, and the start and end of the viewport are the top and bottom respectively.
+[MLTTMLLineType_Number](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-number) indicates that [line](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is a line number, where the size of each line is taken to be the size of the first line of the cue. When [line](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is greater than or equal to 0 lines count from the start of the viewport, with 0 indicating zero offset from the start edge. When [line](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line) is negative lines count from the end of the viewport, with -1 indicating zero offset from the end edge. For horizontal text the line spacing is the height of the first line of the cue, and the start and end of the viewport are the top and bottom respectively.
 
-Note that it's particularly important to consider the effect of [line_anchor](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-line-anchor) when using [MLTTMLLineType_Number](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-number).
+Note that it's particularly important to consider the effect of [line_anchor](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-line-anchor) when using [MLTTMLLineType_Number](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-number).
 
 
 
@@ -16430,7 +16430,7 @@ MLTTMLAnchorType line_anchor;
 
 | Type | Description |
 |--|--|
-| [MLTTMLAnchorType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmlanchortype) | Cue anchor type.  |
+| [MLTTMLAnchorType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmlanchortype) | Cue anchor type.  |
 
 
 The cue box anchor in the direction of line. 
@@ -16447,7 +16447,7 @@ The cue box anchor in the direction of line.
 float position;
 ```
 
-The fractional position of the [position_anchor](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-position-anchor) of the cue box within the viewport in the direction orthogonal to [line](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line), or MLTTMLDimen_Unset. 
+The fractional position of the [position_anchor](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-position-anchor) of the cue box within the viewport in the direction orthogonal to [line](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-line), or MLTTMLDimen_Unset. 
 
 For horizontal text, this is the horizontal position relative to the left of the viewport. Note that positioning is relative to the left of the viewport even in the case of right-to-left text. 
 
@@ -16467,7 +16467,7 @@ MLTTMLAnchorType position_anchor;
 
 | Type | Description |
 |--|--|
-| [MLTTMLAnchorType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmlanchortype) | Cue anchor type.  |
+| [MLTTMLAnchorType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmlanchortype) | Cue anchor type.  |
 
 
 The cue box anchor in the direction of position. 
@@ -16500,7 +16500,7 @@ float bitmap_height;
 ```
 
 
-The cue bitmap height as a fraction of the viewport size or MLTTMLDimen_Unset if the bitmap should be displayed at its natural height given the bitmap dimensions and the specified [size](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-size). 
+The cue bitmap height as a fraction of the viewport size or MLTTMLDimen_Unset if the bitmap should be displayed at its natural height given the bitmap dimensions and the specified [size](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-size). 
 
 
 
@@ -16515,7 +16515,7 @@ bool window_color_set;
 ```
 
 
-Specifies whether or not the [window_color](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#uint32-t-window-color) property is set. 
+Specifies whether or not the [window_color](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#uint32-t-window-color) property is set. 
 
 
 
@@ -16548,10 +16548,10 @@ MLTTMLTextSizeType text_size_type;
 
 | Type | Description |
 |--|--|
-| [MLTTMLTextSizeType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmltextsizetype) | Cue text size type.  |
+| [MLTTMLTextSizeType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmltextsizetype) | Cue text size type.  |
 
 
-The cue default text size type, or [MLTTMLTextSizeType_Unset](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmltextsizetype-unset) if this cue has no default text size. 
+The cue default text size type, or [MLTTMLTextSizeType_Unset](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmltextsizetype-unset) if this cue has no default text size. 
 
 
 
@@ -16659,7 +16659,7 @@ MLWebVTTOrientation orientation;
 
 | Type | Description |
 |--|--|
-| [MLWebVTTOrientation](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation) | Cue orientation setting.  |
+| [MLWebVTTOrientation](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation) | Cue orientation setting.  |
 
 
 Orientation of the cue. 
@@ -16680,7 +16680,7 @@ MLWebVTTDirection direction;
 
 | Type | Description |
 |--|--|
-| [MLWebVTTDirection](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection) | Cue direction setting.  |
+| [MLWebVTTDirection](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection) | Cue direction setting.  |
 
 
 The writing direction. 
@@ -16761,7 +16761,7 @@ MLWebVTTAlign align;
 
 | Type | Description |
 |--|--|
-| [MLWebVTTAlign](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign) | Cue aligment setting.  |
+| [MLWebVTTAlign](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign) | Cue aligment setting.  |
 
 
 WebVTT cue text alignment. 

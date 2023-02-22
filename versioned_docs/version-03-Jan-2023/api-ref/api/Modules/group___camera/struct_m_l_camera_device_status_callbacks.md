@@ -5,7 +5,7 @@ title: MLCameraDeviceStatusCallbacks
 
 # MLCameraDeviceStatusCallbacks
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,11 +18,11 @@ title: MLCameraDeviceStatusCallbacks
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#uint32-t-version)**  |
-| void(*)(void *data) | **[on_device_streaming](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-streaming)** <br></br>Callback is invoked when the camera is streaming.  |
-| void(*)(void *data) | **[on_device_idle](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-idle)** <br></br>Callback is invoked when the camera stops streaming.  |
-| void(*)(MLCameraDisconnectReason reason, void *data) | **[on_device_disconnected](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-disconnected)** <br></br>Callback is invoked when the camera is disconnected.  |
-| void(*)(MLCameraError error, void *data) | **[on_device_error](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-error)** <br></br>Callback is invoked when the camera encountered errors.  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#uint32-t-version)**  |
+| void(*)(void *data) | **[on_device_streaming](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-streaming)** <br></br>Callback is invoked when the camera is streaming.  |
+| void(*)(void *data) | **[on_device_idle](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-idle)** <br></br>Callback is invoked when the camera stops streaming.  |
+| void(*)(MLCameraDisconnectReason reason, void *data) | **[on_device_disconnected](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-disconnected)** <br></br>Callback is invoked when the camera is disconnected.  |
+| void(*)(MLCameraError error, void *data) | **[on_device_error](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md#void-on-device-error)** <br></br>Callback is invoked when the camera encountered errors.  |
 
 ## Detailed Description
 
@@ -73,7 +73,7 @@ Callback is invoked when the camera is streaming.
 
 |  |   |   |
 |--|--|--|
-|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
+|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
 
 
 
@@ -98,7 +98,7 @@ Callback is invoked when the camera stops streaming.
 
 |  |   |   |
 |--|--|--|
-|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
+|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
 
 
 
@@ -124,7 +124,7 @@ Callback is invoked when the camera is disconnected.
 |  |   |   |
 |--|--|--|
 |  |reason|Represents the reason for disconnection. |
-|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
+|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
 
 
 
@@ -150,7 +150,7 @@ Callback is invoked when the camera encountered errors.
 |  |   |   |
 |--|--|--|
 |  |error|Represents the error type when happened. |
-|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
+|  |data|Custom data to be returned when callback is triggered. This data passed in [MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks). |
 
 
 

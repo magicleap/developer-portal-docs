@@ -6,7 +6,7 @@ summary: static information about the gesture classification.
 
 # MLGestureClassificationStaticData
 
-**Module:** **[Gesture Classification System](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md)**
+**Module:** **[Gesture Classification System](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md)**
 
 
 
@@ -19,9 +19,9 @@ Static information about the gesture classification.  [More...](#detailed-descri
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md#uint32-t-version)**  |
-| [MLCoordinateFrameUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | **[hand_interaction](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md#mlcoordinateframeuid-hand-interaction)**  |
-| [MLCoordinateFrameUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | **[hand_transform](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md#mlcoordinateframeuid-hand-transform)**  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md#uint32-t-version)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | **[hand_interaction](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md#mlcoordinateframeuid-hand-interaction)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | **[hand_transform](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md#mlcoordinateframeuid-hand-transform)**  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLGestureClassificationStaticData;
 
 Static information about the gesture classification. 
 
-Populate with [MLGestureClassificationGetStaticData()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetstaticdata). This structure must be initialized by calling [MLGestureClassificationStaticDataInit()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationstaticdatainit) before use.
+Populate with [MLGestureClassificationGetStaticData()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetstaticdata). This structure must be initialized by calling [MLGestureClassificationStaticDataInit()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationstaticdatainit) before use.
 
 
 
@@ -70,7 +70,7 @@ MLCoordinateFrameUID[MLGestureClassificationHandType_Count] hand_interaction;
 
 | Type | Description |
 |--|--|
-| [MLCoordinateFrameUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | [MLGestureClassificationHandType_Count] |
+| [MLCoordinateFrameUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | [MLGestureClassificationHandType_Count] |
 
 
 CFUID for hands' interaction point transform based on the current posture type. 
@@ -91,7 +91,7 @@ MLCoordinateFrameUID[MLGestureClassificationHandType_Count] hand_transform;
 
 | Type | Description |
 |--|--|
-| [MLCoordinateFrameUID](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | [MLGestureClassificationHandType_Count] |
+| [MLCoordinateFrameUID](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLGestureClassificationHandType_Count] | [MLGestureClassificationHandType_Count] |
 
 
 CFUID for hands' center point transform. 
