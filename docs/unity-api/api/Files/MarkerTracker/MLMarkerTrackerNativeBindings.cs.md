@@ -203,10 +203,7 @@ namespace UnityEngine.XR.MagicLeap
 
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern MLResult.Code MLMarkerTrackerUpdateSettings(ulong scanner_handle, in MLMarkerTrackerSettings scanner_settings);
-
-            [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
-            public static extern MLResult.Code MLMarkerTrackerResultArrayInit(in MLMarkerTrackerResultArray result);
-
+            
             [StructLayout(LayoutKind.Sequential)]
             public readonly struct MLMarkerTrackerDecodedTypedData
             {

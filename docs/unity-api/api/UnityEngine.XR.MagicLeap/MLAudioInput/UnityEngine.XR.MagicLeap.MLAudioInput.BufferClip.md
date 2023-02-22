@@ -180,3 +180,18 @@ protected virtual override void OnReceiveSamples(
 
 -----------
 
+## Public Events
+
+### OnReceivedSamples {#action-float-onreceivedsamples}
+
+```csharp
+public Action< float[]> OnReceivedSamples()
+```
+
+
+
+
+
+
+-----------
+

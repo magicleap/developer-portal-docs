@@ -24,6 +24,8 @@ A structure containing voice intent event.  [More...](#detailed-description)
 | [MLVoiceIntentNoIntentReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason) | **[no_intent_reason](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md#mlvoiceintentnointentreason-no-intent-reason)**  |
 | const char * | **[text](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md#const-char-text)**  |
 | uint32_t | **[intent_id](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md#uint32-t-intent-id)**  |
+| [MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) * | **[app_intent_slots](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md#mlinputvoiceappintentslot-app-intent-slots)**  |
+| uint32_t | **[app_intent_slot_count](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md#uint32-t-app-intent-slot-count)**  |
 
 ## Detailed Description
 
@@ -37,7 +39,7 @@ A structure containing voice intent event.
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -126,6 +128,42 @@ uint32_t intent_id;
 
 
 User defined intent index which is detected. 
+
+
+
+
+
+-----------
+
+### app_intent_slots {#mlinputvoiceappintentslot-app-intent-slots}
+
+```cpp
+MLInputVoiceAppIntentSlot * app_intent_slots;
+```
+
+
+
+| Type | Description |
+|--|--|
+| [MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) * | A structure containing voice app-intent slot in voice event.  |
+
+
+Array of app-intent slot, array count is set in app_intent_slot_count. And the memory of this variable is managed by system. 
+
+
+
+
+
+-----------
+
+### app_intent_slot_count {#uint32-t-app-intent-slot-count}
+
+```cpp
+uint32_t app_intent_slot_count;
+```
+
+
+Count of an array app_intent_slots. 
 
 
 

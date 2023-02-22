@@ -394,7 +394,7 @@ Macro to set a the prefix bytes of an API specific MLResult code.
 ### ML_PLATFORM_API_LEVEL {#defines-ml-platform-api-level}
 
 ```cpp
-#define ML_PLATFORM_API_LEVEL 23
+#define ML_PLATFORM_API_LEVEL 24
 ```
 
 

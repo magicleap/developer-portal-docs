@@ -53,7 +53,11 @@ namespace UnityEngine.XR.MagicLeap
                 return;
             }
             else
+            {
                 Instance.StartInternal();
+
+                MagicLeapXrProviderNativeBindings.InputSetOnPerceptionShutdownCallback(OnPerceptionShutdown);
+            }
         }
 
         public static bool IsStarted { get; private set; } = false;
@@ -75,6 +79,9 @@ namespace UnityEngine.XR.MagicLeap
         protected virtual void OnDeviceReality() { }
 
         protected virtual void OnDeviceActive() { }
+
+        [AOT.MonoPInvokeCallback(typeof(MagicLeapXrProviderNativeBindings.CallOnPerceptionShutdownDelegate))]
+        private static void OnPerceptionShutdown() => Instance.StopInternal();
 
         private void StartInternal()
         {

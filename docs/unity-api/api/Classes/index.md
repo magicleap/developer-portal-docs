@@ -12,12 +12,11 @@ title: Data Structure Index
 
 
 
-* **class [ExampleEditModeTests](/unity-api/api/Classes/ExampleEditModeTests.md)** <br></br>"Edit-Mode Tests" are tests which can only be run at edit time in the Unity editor, e.g. they don't require running on device or in Playmode via Magic Leap App Simulator. 
-* **class [ExampleRuntimeTests](/unity-api/api/Classes/ExampleRuntimeTests.md)** <br></br>Runtime Tests (a.k.a. PlayMode Tests) are tests which require the game to be running either on device or in PlayMode. These will tend to be more involved than simple Edit-Mode tests as they might have dependencies on subsystems or other libraries being loaded. These can be thought of more like integration tests as opposed to unit tests, although Unity doesn't use that terminology or make that distinction anywhere. 
 * **class [FPSDisplay](/unity-api/api/Classes/FPSDisplay.md)** 
 * **class [MLVoiceIntentsConfiguration](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.md)** <br></br>A Class that will maintain the proper JSON structure needed by the MLVoice API. 
     * **struct [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)** <br></br>The Simplified Voice Command data needed to add commands from the inspector. The unique name field required in the final JSON will be auto generated based on the unique Id. 
     * **class [JSONContainer](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainer.md)** <br></br>The container for the data being changed into a JSON string to send to the MLVoice API. 
+    * **class [JSONContainerAutoSystem](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainerAutoSystem.md)** <br></br>[JSONContainer](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainer.md) to Auto allowing all System Intents. 
     * **struct [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md)** <br></br>The current structure of the JSON data that will be sent to the MLVoice API. Subject to change. 
     * **struct [SystemJSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SystemJSONData.md)** <br></br>The current structure of the System Intents JSON data that will be sent to the MLVoice API. Subject to change. 
 * **namespace [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md)** 
@@ -31,6 +30,9 @@ title: Data Structure Index
         * **class [MLWebViewTabBarBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBarBehavior.md)** 
         * **class [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md)** 
     * **class [EditorProjectData](/unity-api/api/MagicLeap/MagicLeap.EditorProjectData.md)** <br></br>Scriptable Object holding data used in Editor scripts. 
+    * **class [TestRunner](/unity-api/api/MagicLeap/TestRunner/MagicLeap.TestRunner.md)** 
+        * **class [Callbacks](/unity-api/api/MagicLeap/TestRunner/MagicLeap.TestRunner.Callbacks.md)** 
+        * **class [Reporter](/unity-api/api/MagicLeap/TestRunner/MagicLeap.TestRunner.Reporter.md)** 
 * **class [MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md)** 
     * **struct [ControllerActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ControllerActions.md)** 
     * **struct [EyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.EyesActions.md)** 
@@ -42,12 +44,68 @@ title: Data Structure Index
     * **interface [IRightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IRightHandActions.md)** 
     * **struct [LeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.LeftHandActions.md)** 
     * **struct [RightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.RightHandActions.md)** 
+* **class [NativeBindingsTests](/unity-api/api/Classes/NativeBindingsTests.md)** 
 * **class [SettingsIntentsLauncher](/unity-api/api/Classes/SettingsIntentsLauncher.md)** 
-* **namespace UnityEditor]** 
+    * **namespace [Editor](/unity-api/api/Tests.Editor/Tests.Editor.md)** 
+        * **class [GraphicsHooksNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.GraphicsHooksNativeBindingsEditModeTests.md)** 
+        * **class [MLAnchorsNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAnchorsNativeBindingsEditModeTests.md)** 
+        * **class [MLAudioInputNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAudioInputNativeBindingsEditModeTests.md)** 
+        * **class [MLAudioOutputNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAudioOutputNativeBindingsEditModeTests.md)** 
+        * **class [MLAudioOutputPluginNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAudioOutputPluginNativeBindingsEditModeTests.md)** 
+        * **class [MLCVCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLCVCameraNativeBindingsEditModeTests.md)** 
+        * **class [MLCameraMetadataNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLCameraMetadataNativeBindingsEditModeTests.md)** 
+        * **class [MLCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLCameraNativeBindingsEditModeTests.md)** 
+        * **class [MLConvertEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLConvertEditModeTests.md)** 
+        * **class [MLDepthCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLDepthCameraNativeBindingsEditModeTests.md)** 
+        * **class [MLEyeCalibrationNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLEyeCalibrationNativeBindingsEditModeTests.md)** 
+        * **class [MLGazeRecognitionNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLGazeRecognitionNativeBindingsEditModeTests.md)** 
+        * **class [MLGlobalDimmerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLGlobalDimmerNativeBindingsEditModeTests.md)** 
+        * **class [MLHeadsetFitNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLHeadsetFitNativeBindingsEditModeTests.md)** 
+        * **class [MLMarkerTrackerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMarkerTrackerNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaDRMNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaDRMNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaFormatKeyNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaFormatKeyNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaFormatNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaFormatNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaMuxerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaMuxerNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaParserCEA608NativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaParserCEA608NativeBindingsEditModeTests.md)** 
+        * **class [MLMediaParserCEA708NativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaParserCEA708NativeBindingsEditModeTests.md)** 
+        * **class [MLMediaPlayerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaPlayerNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaPlayerTrackNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaPlayerTrackNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaRecorderNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaRecorderNativeBindingsEditModeTests.md)** 
+        * **class [MLMediaTTMLNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaTTMLNativeBindingsEditModeTests.md)** 
+        * **class [MLNativeSurfaceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLNativeSurfaceNativeBindingsEditModeTests.md)** 
+        * **class [MLPermissionsNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLPermissionsNativeBindingsEditModeTests.md)** 
+        * **class [MLResultEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLResultEditModeTests.md)** 
+        * **class [MLTimeNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLTimeNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCAppDefinedAudioSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAppDefinedAudioSourceNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCAppDefinedSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAppDefinedSourceNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCAppDefinedVideoSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAppDefinedVideoSourceNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCAudioSinkNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAudioSinkNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCConnectionNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCConnectionNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCDataChannelNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCDataChannelNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCFrameNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCFrameNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCSourceNativeBindingsEditModeTests.md)** 
+        * **class [MLWebRTCVideoSinkNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCVideoSinkNativeBindingsEditModeTests.md)** 
+        * **class [MLWebViewNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebViewNativeBindingsEditModeTests.md)** 
+        * **class [MLWorldCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWorldCameraNativeBindingsEditModeTests.md)** 
+        * **class [MagicLeapNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MagicLeapNativeBindingsEditModeTests.md)** 
+        * **class [MlSdkDllLoader](/unity-api/api/Tests.Editor/Tests.Editor.MlSdkDllLoader.md)** 
+        * **class [NativeLoader](/unity-api/api/Tests.Editor/Tests.Editor.NativeLoader.md)** 
+    * **namespace Runtime** 
+        * **namespace [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.md)** 
+            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLMediaPlayerNativeBindingsPlayModeTests.md)** 
+            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLMediaPlayerTrackNativeBindingsPlayModeTests.md)** 
+            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLVoiceNativeBindingsPlayModeTests.md)** 
+            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLWebViewNativeBindingsPlayModeTestsBindings.md)** 
+            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.NativeBindingsPlayTests.md)** 
+            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.YcbcrRendererNativeBindingsPlayModeTests.md)** 
+* **namespace UnityEditor** 
     * **namespace XR** 
         * **namespace [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/UnityEditor.XR.MagicLeap.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/APKBuilder/UnityEditor.XR.MagicLeap.APKBuilder.md)** 
                 * **class[BuildSettingsCache](/unity-api/api/UnityEditor.XR.MagicLeap/APKBuilder/UnityEditor.XR.MagicLeap.APKBuilder.BuildSettingsCache.md)** 
+                * **class[SimplePackageManifest](/unity-api/api/UnityEditor.XR.MagicLeap/APKBuilder/UnityEditor.XR.MagicLeap.APKBuilder.SimplePackageManifest.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/UnityEditor.XR.MagicLeap.AndroidManifestXml.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/UnityEditor.XR.MagicLeap.AppSimShimLibSupport.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/LabDriverControl/UnityEditor.XR.MagicLeap.LabDriverControl.md)** 
@@ -72,10 +130,10 @@ title: Data Structure Index
             * **class [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/VisualStudioProjectFileHook/UnityEditor.XR.MagicLeap.VisualStudioProjectFileHook.md)** <br></br>Sets up Visual Studio Project Files for this package to show the same folder structure in the IDE as in the file explorer. Without this class, all files in this package show up under the same root folder when its added as a local package to a Unity project. What's worse is that if the package contains files of the same name in 2 different paths, Visual Studio only shows one of those files and updating one ends up deleting the other. 
                 * **class[Utf8StringWriter](/unity-api/api/UnityEditor.XR.MagicLeap/VisualStudioProjectFileHook/UnityEditor.XR.MagicLeap.VisualStudioProjectFileHook.Utf8StringWriter.md)** <br></br>Necessary for XLinq to save the xml project file in utf8 
         * **namespace OpenXR** 
-            * **namespace OpenXR** 
+            * **namespace Features** 
                 * **namespace[MagicLeapSupport](/unity-api/api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport/UnityEditor.XR.OpenXR.Features.MagicLeapSupport.md)** 
                     * **class [AndroidBootConfig](/unity-api/api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport/UnityEditor.XR.OpenXR.Features.MagicLeapSupport.AndroidBootConfig.md)** 
-* **namespace UnityEngine** 
+* **namespace [UnityEngine]** 
     * **namespace XR** 
         * **namespace [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/AnchorSubsystem/UnityEngine.XR.MagicLeap.AnchorSubsystem.md)** <br></br>The Magic Leap implementation of the  XRAnchorSubsystem . Do not create this directly. Use  XRAnchorSubsystemDescriptor.Create()  instead. 
@@ -98,7 +156,8 @@ title: Data Structure Index
                         * **class [NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.md)** 
                             * **struct [MLInputConnectedDevicesList](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputConnectedDevicesList.md)** <br></br>A structure containing information about the connected devices. 
                             * **struct [MLInputControllerCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerCallbacksEx.md)** <br></br>A structure containing callbacks for input controller events. The final parameter to all the callbacks is a void &#42;, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL. This structure must be initialized by calling MLInputControllerCallbacksExInit() before use. 
-                            * **struct [MLInputControllerState](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerState.md)** <br></br>Links to [MLInputConnectedDevicesList](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputConnectedDevicesList.md) in ml&#95;input.h. 
+                            * **struct [MLInputControllerStateEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerStateEx.md)** <br></br>Contains information about the current state of an input controller. 
+                        * **struct [State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.State.md)** <br></br>Contains information about the current state of an input controller. 
                     * **class [DeviceCommands](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.md)** 
                         * **class [Constants](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.Constants.md)** 
                         * **struct [QueryControllerEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryControllerEnabled.md)** 
@@ -146,7 +205,7 @@ title: Data Structure Index
                             * **struct [State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.NativeBindings.State.md)** <br></br>A structure containing information on the current state of the Head Tracking system. 
                         * **struct [State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.State.md)** <br></br>A structure containing information on the current state of the Head Tracking system. 
                     * **class [TouchpadGesture](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md)** 
-                        * **struct [MLInputControllerTouchpadGesture](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.MLInputControllerTouchpadGesture.md)** <br></br>Links to MLInputConnectedDevicesList in ml&#95;input.h. 
+                        * **struct [Data](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.Data.md)** 
                 * **class[Utils](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/UnityEngine.XR.MagicLeap.InputSubsystem.Utils.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.InvalidInstanceException.md)** <br></br>Simple custom exception for instance error checking. 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md)** 
@@ -185,38 +244,39 @@ title: Data Structure Index
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md)** <br></br>[MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) class contains a template for singleton APIs 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLBitMask.md)** <br></br>Custom attribute to make it easy to turn enum fields into bit masks in the inspector. The enum type must be defined in order for the inspector to be able to know what the bits should be set to. 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLBitMaskEditor.md)** 
-            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md)** <br></br>[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead. 
+            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md)** <br></br>[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead. 
                 * **class[NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.NativeBindings.md)** <br></br>See ml&#95;cv&#95;camera.h for additional comments. 
-            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md)** <br></br>APIs for accessing Camera Device and to do Camera Capture. 
-                * **struct[CameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.CameraOutput.md)** <br></br>Contains the information and data of each of the available buffers/planes in a capture Number of planes for JPEG and RGBA captures = 1 Number of planes for YUV captures = 3 
-                * **struct[CaptureConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.CaptureConfig.md)** 
-                * **struct[CaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.CaptureStreamConfig.md)** 
-                * **struct[ConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.ConnectContext.md)** <br></br>Camera connection settings. 
-                * **struct[IntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.IntrinsicCalibrationParameters.md)** <br></br>Camera intrinsic parameters. 
-                * **struct[MRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.MRConnectInfo.md)** <br></br>Connection settings for MR capture. 
-                * **class[Metadata](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/Metadata/UnityEngine.XR.MagicLeap.MLCamera.Metadata.md)** <br></br>MLCameraMetadata Summary placeholder. 
-                    * **class [NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/Metadata/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.Metadata.NativeBindings.md)** <br></br>See ml&#95;camera&#95;metadata&#95;v2.h for additional comments. 
-                        * **struct [MLCameraMetadataRational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/Metadata/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.Metadata.NativeBindings.MLCameraMetadataRational.md)** <br></br>[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/Metadata/UnityEngine.XR.MagicLeap.MLCamera.Metadata.Rational.md) data type. 
-                    * **struct [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/Metadata/UnityEngine.XR.MagicLeap.MLCamera.Metadata.Rational.md)** <br></br>[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/Metadata/UnityEngine.XR.MagicLeap.MLCamera.Metadata.Rational.md) data type. 
-                * **class[NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.md)** <br></br>This class defines the C# interface to the C functions/structures in "ml&#95;camera.h". 
-                    * **struct [MLCameraCaptureCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraCaptureCallbacks.md)** <br></br>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. This structure must be initialized by calling MLCameraCaptureCallbacksInit() before use. 
-                    * **struct [MLCameraCaptureConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraCaptureConfig.md)** <br></br>Structure to encapsulate capture configuration 
-                    * **struct [MLCameraCaptureStreamCaps](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraCaptureStreamCaps.md)** <br></br>The capabilities for each stream supported by logical camera device &#42; can be queried with MLCameraGetDeviceCaps 
-                    * **struct [MLCameraCaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraCaptureStreamConfig.md)** <br></br>Structure to encapsulate stream configurations 
-                    * **struct [MLCameraConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraConnectContext.md)** <br></br>Structure to encapsulate context for a CameraConnect Request. 
-                    * **struct [MLCameraDeviceAvailabilityInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraDeviceAvailabilityInfo.md)** 
-                    * **struct [MLCameraDeviceAvailabilityStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md)** <br></br>Device availability status callbacks to be implemented by client to receive device availability status. 
-                    * **struct [MLCameraDeviceStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraDeviceStatusCallbacks.md)** <br></br>Device status callbacks to be implemented by client to receive device status if callback mechanism is used. 
-                    * **struct [MLCameraIntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraIntrinsicCalibrationParameters.md)** <br></br>[IntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.IntrinsicCalibrationParameters.md) is a structure to provide instrisic calibration information 
-                    * **struct [MLCameraMRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraMRConnectInfo.md)** <br></br>Structure to encapsulate connection settings for MR capture. 
-                    * **struct [MLCameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraOutput.md)** <br></br>Captured output 
-                    * **struct [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraPlaneInfo.md)** <br></br>Per plane info for captured output 
-                    * **struct [MLCameraResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraResultExtras.md)** <br></br>[ResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.ResultExtras.md) is a structure to encapsulate various indices for a capture result. 
-                * **struct[PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.PlaneInfo.md)** <br></br>Contains both the data and information necessary to read the data for a specific buffer in a capture 
-                * **class[Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.Renderer.md)** 
-                * **struct[ResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.ResultExtras.md)** 
-                * **struct[StreamCapabilitiesInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.StreamCapabilitiesInfo.md)** 
-                * **struct[StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.StreamCapability.md)** 
+            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md)** <br></br>Provides a multithreadig implementation of the camera api. Handles pause behavior automatically. 
+            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md)** <br></br>[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead. 
+                * **struct[CameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CameraOutput.md)** <br></br>Contains the information and data of each of the available buffers/planes in a capture Number of planes for JPEG and RGBA captures = 1 Number of planes for YUV captures = 3 
+                * **struct[CaptureConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureConfig.md)** 
+                * **struct[CaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureStreamConfig.md)** 
+                * **struct[ConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md)** <br></br>Camera connection settings. 
+                * **struct[IntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.IntrinsicCalibrationParameters.md)** <br></br>Camera intrinsic parameters. 
+                * **struct[MRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md)** <br></br>Connection settings for MR capture. 
+                * **class[Metadata](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md)** <br></br>MLCameraMetadata Summary placeholder. 
+                    * **class [NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.NativeBindings.md)** <br></br>See ml&#95;camera&#95;metadata&#95;v2.h for additional comments. 
+                        * **struct [MLCameraMetadataRational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.NativeBindings.MLCameraMetadataRational.md)** <br></br>[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type. 
+                    * **struct [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md)** <br></br>[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type. 
+                * **class[NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.md)** <br></br>This class defines the C# interface to the C functions/structures in "ml&#95;camera.h". 
+                    * **struct [MLCameraCaptureCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureCallbacks.md)** <br></br>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. This structure must be initialized by calling MLCameraCaptureCallbacksInit() before use. 
+                    * **struct [MLCameraCaptureConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureConfig.md)** <br></br>Structure to encapsulate capture configuration 
+                    * **struct [MLCameraCaptureStreamCaps](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamCaps.md)** <br></br>The capabilities for each stream supported by logical camera device &#42; can be queried with MLCameraGetDeviceCaps 
+                    * **struct [MLCameraCaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md)** <br></br>Structure to encapsulate stream configurations 
+                    * **struct [MLCameraConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraConnectContext.md)** <br></br>Structure to encapsulate context for a CameraConnect Request. 
+                    * **struct [MLCameraDeviceAvailabilityInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityInfo.md)** 
+                    * **struct [MLCameraDeviceAvailabilityStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md)** <br></br>Device availability status callbacks to be implemented by client to receive device availability status. 
+                    * **struct [MLCameraDeviceStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceStatusCallbacks.md)** <br></br>Device status callbacks to be implemented by client to receive device status if callback mechanism is used. 
+                    * **struct [MLCameraIntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraIntrinsicCalibrationParameters.md)** <br></br>[IntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.IntrinsicCalibrationParameters.md) is a structure to provide instrisic calibration information 
+                    * **struct [MLCameraMRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraMRConnectInfo.md)** <br></br>Structure to encapsulate connection settings for MR capture. 
+                    * **struct [MLCameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraOutput.md)** <br></br>Captured output 
+                    * **struct [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md)** <br></br>Per plane info for captured output 
+                    * **struct [MLCameraResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraResultExtras.md)** <br></br>[ResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ResultExtras.md) is a structure to encapsulate various indices for a capture result. 
+                * **struct[PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md)** <br></br>Contains both the data and information necessary to read the data for a specific buffer in a capture 
+                * **class[Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.Renderer.md)** 
+                * **struct[ResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ResultExtras.md)** 
+                * **struct[StreamCapabilitiesInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapabilitiesInfo.md)** 
+                * **struct[StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md)** <br></br>APIs to access the depth camera data. 
                 * **class[Data](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md)** <br></br>Output data for each depth camera sensor. 
                 * **struct[DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md)** <br></br>The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3] 
@@ -398,7 +458,7 @@ title: Data Structure Index
                         * **struct [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md)** <br></br>The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) data channel message. 
                 * **struct[IceCandidate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceCandidate.md)** <br></br>Class that represents an ice candidate used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. 
                 * **struct[IceServer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md)** <br></br>Class that represents an ice server used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. 
-                * **class[MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md)** <br></br>Demonstrates using the [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md) as an app defined video source. 
+                * **class[MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md)** <br></br>Demonstrates using the [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) as an app defined video source. 
                 * **class[MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md)** <br></br>Class that represents a media stream object. 
                     * **class [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md)** <br></br>Struct that represents a media stream track object. 
                 * **class[NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.md)** <br></br>[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) bindings for the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) class. 
@@ -509,7 +569,7 @@ title: Data Structure Index
                 * **struct[TransformPlaneBoundaryJob](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.TransformPlaneBoundaryJob.md)** 
             * **struct [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.md)** <br></br>Contains information necessary to report on  XRAnchor s. 
                 * **struct[Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md)** <br></br>Information necessary to construct a reference frame 
-            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.RequireXRLoader.md)** <br></br>Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XR package is loaded. 
+            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.RequireXRLoader.md)** <br></br>Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XRpackage is loaded. 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/SessionSubsystem/UnityEngine.XR.MagicLeap.SessionSubsystem.md)** <br></br>The Magic Leap implementation of the  XRSessionSubsystem . Do not create this directly. Use  SessionSubsystemDescriptor.Create()  instead. 
                 * **class[MagicLeapProvider](/unity-api/api/UnityEngine.XR.MagicLeap/SessionSubsystem/UnityEngine.XR.MagicLeap.SessionSubsystem.MagicLeapProvider.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SettingsIntentsLauncher.md)** 

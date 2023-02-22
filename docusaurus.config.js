@@ -273,7 +273,7 @@ module.exports = {
               label: '22 Feb 2023'
             },
             '03-Jan-2023': {
-              label: '22 Jan 2023'
+              label: '03 Jan 2023'
             },
           },
         },

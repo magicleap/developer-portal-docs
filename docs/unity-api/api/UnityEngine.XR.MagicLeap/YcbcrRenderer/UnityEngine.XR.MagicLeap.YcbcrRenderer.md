@@ -15,7 +15,7 @@ summary: implements a renderer for android native & hardware buffers vulkan-only
 Implements a renderer for android native & hardware buffers (Vulkan-only).   
 
 
-Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLCamera.Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.Renderer.md), <br></br>[UnityEngine.XR.MagicLeap.MLNativeSurfaceYcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLNativeSurfaceYcbcrRenderer.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Renderer.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebView.Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.Renderer.md)
+Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLCameraBase.Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.Renderer.md), <br></br>[UnityEngine.XR.MagicLeap.MLNativeSurfaceYcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLNativeSurfaceYcbcrRenderer.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Renderer.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebView.Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.Renderer.md)
 
 
 
