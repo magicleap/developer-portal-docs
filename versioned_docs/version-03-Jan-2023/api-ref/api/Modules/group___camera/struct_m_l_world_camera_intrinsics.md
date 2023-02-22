@@ -6,7 +6,7 @@ summary: world camera intrinsic parameters.
 
 # MLWorldCameraIntrinsics
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -19,13 +19,13 @@ World camera intrinsic parameters.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[width](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#uint32-t-width)**  |
-| uint32_t | **[height](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#uint32-t-height)**  |
-| [MLVec2f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[focal_length](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#mlvec2f-focal-length)**  |
-| [MLVec2f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[principal_point](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#mlvec2f-principal-point)**  |
-| float | **[fov](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#float-fov)**  |
-| double[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients] | **[radial_distortion](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#double-radial-distortion)** <br></br>Radial distortion vector. The radial distortion co-efficients are in the following order: [k1, k2, k3, k4].  |
-| double[MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients] | **[tangential_distortion](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#double-tangential-distortion)** <br></br>Tangential distortion vector. The tangential distortion co-efficients are in the following order: [p1, p2].  |
+| uint32_t | **[width](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#uint32-t-width)**  |
+| uint32_t | **[height](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#uint32-t-height)**  |
+| [MLVec2f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[focal_length](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#mlvec2f-focal-length)**  |
+| [MLVec2f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[principal_point](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#mlvec2f-principal-point)**  |
+| float | **[fov](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#float-fov)**  |
+| double[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients] | **[radial_distortion](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#double-radial-distortion)** <br></br>Radial distortion vector. The radial distortion co-efficients are in the following order: [k1, k2, k3, k4].  |
+| double[MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients] | **[tangential_distortion](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md#double-tangential-distortion)** <br></br>Tangential distortion vector. The tangential distortion co-efficients are in the following order: [p1, p2].  |
 
 ## Detailed Description
 

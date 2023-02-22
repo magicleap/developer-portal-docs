@@ -5,7 +5,7 @@ title: MLRecti
 
 # MLRecti
 
-**Module:** **[Common](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/group___common.md)**
+**Module:** **[Common](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/group___common.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLRecti
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int32_t | **[x](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-x)**  |
-| int32_t | **[y](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-y)**  |
-| int32_t | **[w](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-w)**  |
-| int32_t | **[h](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-h)**  |
+| int32_t | **[x](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-x)**  |
+| int32_t | **[y](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-y)**  |
+| int32_t | **[w](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-w)**  |
+| int32_t | **[h](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_recti.md#int32-t-h)**  |
 
 ## Detailed Description
 

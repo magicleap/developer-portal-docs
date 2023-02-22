@@ -6,7 +6,7 @@ summary: two points in space describing a ray.
 
 # MLAudioRaycast
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** **/** **[Spatial Sound](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** **/** **[Spatial Sound](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md)**
 
 
 
@@ -19,8 +19,8 @@ Two points in space describing a ray.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLVec3f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[eye_point](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-eye-point)**  |
-| [MLVec3f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[end_point](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-end-point)**  |
+| [MLVec3f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[eye_point](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-eye-point)**  |
+| [MLVec3f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[end_point](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-end-point)**  |
 
 ## Detailed Description
 

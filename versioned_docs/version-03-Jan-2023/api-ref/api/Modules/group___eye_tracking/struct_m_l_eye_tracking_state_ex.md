@@ -6,7 +6,7 @@ summary: information about the state of the eye tracking system.
 
 # MLEyeTrackingStateEx
 
-**Module:** **[Eye Tracking](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md)**
+**Module:** **[Eye Tracking](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md)**
 
 
 
@@ -19,14 +19,14 @@ Information about the state of the eye tracking system.  [More...](#detailed-des
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#uint32-t-version)**  |
-| float | **[vergence_confidence](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-vergence-confidence)** <br></br>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of vergence.  |
-| float | **[left_center_confidence](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-left-center-confidence)** <br></br>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of left eye center.  |
-| float | **[right_center_confidence](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-right-center-confidence)** <br></br>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of right eye center.  |
-| bool | **[left_blink](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#bool-left-blink)**  |
-| bool | **[right_blink](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#bool-right-blink)**  |
-| [MLEyeTrackingError](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#enums-mleyetrackingerror) | **[error](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#mleyetrackingerror-error)**  |
-| [MLTime](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#mltime-timestamp)** <br></br>The timestamp for all the data fields in this struct.  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#uint32-t-version)**  |
+| float | **[vergence_confidence](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-vergence-confidence)** <br></br>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of vergence.  |
+| float | **[left_center_confidence](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-left-center-confidence)** <br></br>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of left eye center.  |
+| float | **[right_center_confidence](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-right-center-confidence)** <br></br>A quality metric confidence value 0.0 - 1.0 to indicate accuracy of right eye center.  |
+| bool | **[left_blink](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#bool-left-blink)**  |
+| bool | **[right_blink](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#bool-right-blink)**  |
+| [MLEyeTrackingError](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#enums-mleyetrackingerror) | **[error](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#mleyetrackingerror-error)**  |
+| [MLTime](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#mltime-timestamp)** <br></br>The timestamp for all the data fields in this struct.  |
 
 ## Detailed Description
 
@@ -36,7 +36,7 @@ struct MLEyeTrackingStateEx;
 
 Information about the state of the eye tracking system. 
 
-This structure must be initialized by calling [MLEyeTrackingStateInit()](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#void-mleyetrackingstateinit) before use.
+This structure must be initialized by calling [MLEyeTrackingStateInit()](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#void-mleyetrackingstateinit) before use.
 
 
 

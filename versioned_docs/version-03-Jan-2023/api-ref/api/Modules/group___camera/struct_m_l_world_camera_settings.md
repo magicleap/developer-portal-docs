@@ -6,7 +6,7 @@ summary: a structure to encapsulate the camera settings.
 
 # MLWorldCameraSettings
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure to encapsulate the camera settings.  [More...](#detailed-description
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md#uint32-t-version)**  |
-| uint32_t | **[mode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md#uint32-t-mode)** <br></br>World camera mode.  |
-| uint32_t | **[cameras](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md#uint32-t-cameras)** <br></br>World cameras that need to be enabled.  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md#uint32-t-version)**  |
+| uint32_t | **[mode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md#uint32-t-mode)** <br></br>World camera mode.  |
+| uint32_t | **[cameras](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md#uint32-t-cameras)** <br></br>World cameras that need to be enabled.  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLWorldCameraSettings;
 
 A structure to encapsulate the camera settings. 
 
-This structure must be initialized by calling [MLWorldCameraSettingsInit](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcamerasettingsinit) before use.
+This structure must be initialized by calling [MLWorldCameraSettingsInit](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcamerasettingsinit) before use.
 
 
 
@@ -68,7 +68,7 @@ uint32_t mode;
 
 World camera mode. 
 
-See [MLWorldCameraMode](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enum-mlworldcameramode) for more details. If you want to request frames from different camera modes then "OR" the modes of interest to the app. The mode will apply for all the cameras.
+See [MLWorldCameraMode](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enum-mlworldcameramode) for more details. If you want to request frames from different camera modes then "OR" the modes of interest to the app. The mode will apply for all the cameras.
 
 
 
@@ -88,7 +88,7 @@ uint32_t cameras;
 
 World cameras that need to be enabled. 
 
-See [MLWorldCameraIdentifier](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enum-mlworldcameraidentifier) for more details. If you want to request frames from different world camera then "OR" the cameras of interest to the app.
+See [MLWorldCameraIdentifier](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enum-mlworldcameraidentifier) for more details. If you want to request frames from different world camera then "OR" the cameras of interest to the app.
 
 
 

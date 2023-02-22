@@ -6,7 +6,7 @@ summary: spatial sound.
 
 # Spatial Sound
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)**
 
 SPATIAL SOUND. 
 
@@ -14,23 +14,23 @@ SPATIAL SOUND.
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLAudioSpatialSoundDistanceProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_distance_properties.md)**  |
-| struct | **[MLAudioSpatialSoundRadiationProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_radiation_properties.md)**  |
-| struct | **[MLAudioRaycast](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md)** <br></br>Two points in space describing a ray.  |
-| struct | **[MLAudioObstruction](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md)** <br></br>Obstruction along a ray.  |
-| struct | **[MLAudioRaycastRequest](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md)** <br></br>ID-tracked request for a single raycast operation.  |
-| struct | **[MLAudioRaycastResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md)** <br></br>ID-tracked result for a single raycast operation.  |
+| struct | **[MLAudioSpatialSoundDistanceProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_distance_properties.md)**  |
+| struct | **[MLAudioSpatialSoundRadiationProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_radiation_properties.md)**  |
+| struct | **[MLAudioRaycast](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md)** <br></br>Two points in space describing a ray.  |
+| struct | **[MLAudioObstruction](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md)** <br></br>Obstruction along a ray.  |
+| struct | **[MLAudioRaycastRequest](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md)** <br></br>ID-tracked request for a single raycast operation.  |
+| struct | **[MLAudioRaycastResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md)** <br></br>ID-tracked result for a single raycast operation.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLAudioSpatialSoundDistanceProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_distance_properties.md) | **[MLAudioSpatialSoundDistanceProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudiospatialsounddistanceproperties)**  |
-| typedef struct [MLAudioSpatialSoundRadiationProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_radiation_properties.md) | **[MLAudioSpatialSoundRadiationProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudiospatialsoundradiationproperties)**  |
-| typedef struct [MLAudioRaycast](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | **[MLAudioRaycast](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioraycast)** <br></br>Two points in space describing a ray.  |
-| typedef struct [MLAudioObstruction](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md) | **[MLAudioObstruction](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioobstruction)** <br></br>Obstruction along a ray.  |
-| typedef struct [MLAudioRaycastRequest](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md) | **[MLAudioRaycastRequest](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioraycastrequest)** <br></br>ID-tracked request for a single raycast operation.  |
-| typedef struct [MLAudioRaycastResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md) | **[MLAudioRaycastResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioraycastresult)** <br></br>ID-tracked result for a single raycast operation.  |
+| typedef struct [MLAudioSpatialSoundDistanceProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_distance_properties.md) | **[MLAudioSpatialSoundDistanceProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudiospatialsounddistanceproperties)**  |
+| typedef struct [MLAudioSpatialSoundRadiationProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_radiation_properties.md) | **[MLAudioSpatialSoundRadiationProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudiospatialsoundradiationproperties)**  |
+| typedef struct [MLAudioRaycast](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | **[MLAudioRaycast](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioraycast)** <br></br>Two points in space describing a ray.  |
+| typedef struct [MLAudioObstruction](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md) | **[MLAudioObstruction](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioobstruction)** <br></br>Obstruction along a ray.  |
+| typedef struct [MLAudioRaycastRequest](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md) | **[MLAudioRaycastRequest](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioraycastrequest)** <br></br>ID-tracked request for a single raycast operation.  |
+| typedef struct [MLAudioRaycastResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md) | **[MLAudioRaycastResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md#struct-mlaudioraycastresult)** <br></br>ID-tracked result for a single raycast operation.  |
 
 
 ## Types Documentation
@@ -46,7 +46,7 @@ Properties specifying the distance response of a spatial sound.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_distance_properties.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_distance_properties.md)
 
 
 
@@ -63,7 +63,7 @@ Properties specifying the directivity of a spatial sound.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_radiation_properties.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_spatial_sound_radiation_properties.md)
 
 
 
@@ -79,7 +79,7 @@ Two points in space describing a ray.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md)
 
 
 **API Level:**
@@ -100,7 +100,7 @@ Obstruction along a ray.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md)
 
 
 **API Level:**
@@ -121,7 +121,7 @@ ID-tracked request for a single raycast operation.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md)
 
 
 **API Level:**
@@ -142,7 +142,7 @@ ID-tracked result for a single raycast operation.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md)
 
 
 **API Level:**

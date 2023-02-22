@@ -6,7 +6,7 @@ summary: depth camera intrinsic parameters.
 
 # MLDepthCameraIntrinsics
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -19,12 +19,12 @@ Depth camera intrinsic parameters.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[width](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#uint32-t-width)**  |
-| uint32_t | **[height](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#uint32-t-height)**  |
-| [MLVec2f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[focal_length](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#mlvec2f-focal-length)**  |
-| [MLVec2f](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[principal_point](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#mlvec2f-principal-point)**  |
-| float | **[fov](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#float-fov)**  |
-| double[MLDepthCameraIntrinsics_MaxDistortionCoefficients] | **[distortion](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#double-distortion)** <br></br>Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3].  |
+| uint32_t | **[width](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#uint32-t-width)**  |
+| uint32_t | **[height](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#uint32-t-height)**  |
+| [MLVec2f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[focal_length](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#mlvec2f-focal-length)**  |
+| [MLVec2f](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[principal_point](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#mlvec2f-principal-point)**  |
+| float | **[fov](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#float-fov)**  |
+| double[MLDepthCameraIntrinsics_MaxDistortionCoefficients] | **[distortion](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md#double-distortion)** <br></br>Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3].  |
 
 ## Detailed Description
 

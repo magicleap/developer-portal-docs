@@ -5,7 +5,7 @@ title: Master Volume
 
 # Master Volume
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Audio Output](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___audio_output.md)** **/** **[Acoustics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Audio Output](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___audio_output.md)** **/** **[Acoustics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md)**
 
  [More...](#detailed-description)
 
@@ -13,10 +13,10 @@ title: Master Volume
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetMasterVolume](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiogetmastervolume)**(float * out_volume)<br></br>Returns the master volume for the audio system.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetMasterVolumeCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiosetmastervolumecallback)**([MLAudioMasterVolumeChangedCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiomastervolumechangedcallback) callback, void * context)<br></br>Registers a callback for changes to the master volume.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetOutputMute](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiogetoutputmute)**(bool * out_is_muted)<br></br>Indicates whether the output mute of the audio system is on or off.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetOutputMuteCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiosetoutputmutecallback)**([MLAudioOutputMuteChangedCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiooutputmutechangedcallback) callback, void * context)<br></br>Registers a callback for audio output mute change.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetMasterVolume](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiogetmastervolume)**(float * out_volume)<br></br>Returns the master volume for the audio system.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetMasterVolumeCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiosetmastervolumecallback)**([MLAudioMasterVolumeChangedCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiomastervolumechangedcallback) callback, void * context)<br></br>Registers a callback for changes to the master volume.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetOutputMute](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiogetoutputmute)**(bool * out_is_muted)<br></br>Indicates whether the output mute of the audio system is on or off.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetOutputMuteCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md#mlresult-mlaudiosetoutputmutecallback)**([MLAudioOutputMuteChangedCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiooutputmutechangedcallback) callback, void * context)<br></br>Registers a callback for audio output mute change.  |
 
 ## Detailed Description
 
@@ -52,10 +52,10 @@ Returns the master volume for the audio system.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully return master volume. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully return master volume. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
 **Required Permissions**:
 
   * None 
@@ -84,17 +84,17 @@ Registers a callback for changes to the master volume.
 
 |  |   |   |
 |--|--|--|
-| [MLAudioMasterVolumeChangedCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiomastervolumechangedcallback) |callback|MLAudioMasterVolumeChangedCallback function pointer. |
+| [MLAudioMasterVolumeChangedCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiomastervolumechangedcallback) |callback|MLAudioMasterVolumeChangedCallback function pointer. |
 | void * |context|Generic data pointer passed back to callback.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully register callback to the master volume. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully register callback to the master volume. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
 **Required Permissions**:
 
   * None 
@@ -128,10 +128,10 @@ Indicates whether the output mute of the audio system is on or off.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully indicated state of output mute. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully indicated state of output mute. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
 **Required Permissions**:
 
   * None 
@@ -165,17 +165,17 @@ Registers a callback for audio output mute change.
 
 |  |   |   |
 |--|--|--|
-| [MLAudioOutputMuteChangedCallback](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiooutputmutechangedcallback) |callback|MLAudioOutputMuteChangedCallback function pointer. |
+| [MLAudioOutputMuteChangedCallback](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiooutputmutechangedcallback) |callback|MLAudioOutputMuteChangedCallback function pointer. |
 | void * |context|Generic data pointer passed back to callback.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully registered callback for audio output mute change. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully registered callback for audio output mute change. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
 **Required Permissions**:
 
   * None 

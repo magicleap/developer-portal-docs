@@ -6,7 +6,7 @@ summary: analysis.
 
 # Analysis
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)**
 
 ANALYSIS. 
 
@@ -14,20 +14,20 @@ ANALYSIS.
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLAudioSpectralAnalysis](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md)**  |
+| struct | **[MLAudioSpectralAnalysis](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLAudioSpectralAnalysis](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) | **[MLAudioSpectralAnalysis](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#struct-mlaudiospectralanalysis)**  |
+| typedef struct [MLAudioSpectralAnalysis](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) | **[MLAudioSpectralAnalysis](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#struct-mlaudiospectralanalysis)**  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLAudioTraitAnalysisTarget](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget)** <br></br> { <br></br>[MLAudioTraitAnalysisTarget_AmbientSoundLevelDbfs](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-ambientsoundleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePresence](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoicepresence),<br></br> [MLAudioTraitAnalysisTarget_UserVoiceLevelDbfs](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoiceleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePitch](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoicepitch),<br></br> [MLAudioTraitAnalysisTarget_Ensure32Bits](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLAudioSpectralAnalysisTarget](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget)** <br></br> { <br></br>[MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-uservoicespectrummfcc),<br></br> [MLAudioSpectralAnalysisTarget_Ensure32Bits](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLAudioTraitAnalysisTarget](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget)** <br></br> { <br></br>[MLAudioTraitAnalysisTarget_AmbientSoundLevelDbfs](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-ambientsoundleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePresence](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoicepresence),<br></br> [MLAudioTraitAnalysisTarget_UserVoiceLevelDbfs](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoiceleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePitch](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoicepitch),<br></br> [MLAudioTraitAnalysisTarget_Ensure32Bits](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLAudioSpectralAnalysisTarget](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget)** <br></br> { <br></br>[MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-uservoicespectrummfcc),<br></br> [MLAudioSpectralAnalysisTarget_Ensure32Bits](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Enums Documentation
 
@@ -84,7 +84,7 @@ A representation of frequency spectrum energy over a window of time.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md)
 
 
 

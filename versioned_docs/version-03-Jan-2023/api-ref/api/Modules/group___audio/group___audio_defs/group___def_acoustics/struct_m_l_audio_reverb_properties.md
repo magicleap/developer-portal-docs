@@ -6,7 +6,7 @@ summary: properties specifying acoustic reverberation.
 
 # MLAudioReverbProperties
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)**
 
 
 
@@ -19,11 +19,11 @@ Properties specifying acoustic reverberation.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[gain](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiomultibandlevel-gain)**  |
-| float | **[pre_delay](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-pre-delay)**  |
-| float | **[decay_time](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time)**  |
-| float | **[decay_time_lf_ratio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-lf-ratio)**  |
-| float | **[decay_time_hf_ratio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-hf-ratio)**  |
+| [MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[gain](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiomultibandlevel-gain)**  |
+| float | **[pre_delay](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-pre-delay)**  |
+| float | **[decay_time](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time)**  |
+| float | **[decay_time_lf_ratio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-lf-ratio)**  |
+| float | **[decay_time_hf_ratio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-hf-ratio)**  |
 
 ## Detailed Description
 
@@ -55,7 +55,7 @@ MLAudioMultibandLevel gain;
 
 | Type | Description |
 |--|--|
-| [MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | Properties specifying a broadband level and three sub-band levels.  |
+| [MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | Properties specifying a broadband level and three sub-band levels.  |
 
 
 Reverb output mix level. Range[(0,0,0,0):(8,2,2,2)] Default=[0.16, 1.0, 1.0, 1.0]. 

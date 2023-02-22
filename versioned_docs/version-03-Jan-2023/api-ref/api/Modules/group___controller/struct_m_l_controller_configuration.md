@@ -5,7 +5,7 @@ title: MLControllerConfiguration
 
 # MLControllerConfiguration
 
-**Module:** **[Controller](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/group___controller.md)**
+**Module:** **[Controller](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/group___controller.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLControllerConfiguration
 
 | Type           | Name           |
 | -------------- | -------------- |
-| bool | **[deprecated_mode_0](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_configuration.md#bool-deprecated-mode-0)**  |
-| bool | **[deprecated_mode_1](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_configuration.md#bool-deprecated-mode-1)**  |
-| bool | **[enable_fused6dof](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_configuration.md#bool-enable-fused6dof)**  |
+| bool | **[deprecated_mode_0](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_configuration.md#bool-deprecated-mode-0)**  |
+| bool | **[deprecated_mode_1](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_configuration.md#bool-deprecated-mode-1)**  |
+| bool | **[enable_fused6dof](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_configuration.md#bool-enable-fused6dof)**  |
 
 ## Detailed Description
 

@@ -6,7 +6,7 @@ summary: a structure to encapsulate output data for each camera sensor.
 
 # MLWorldCameraFrame
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -19,13 +19,13 @@ A structure to encapsulate output data for each camera sensor.  [More...](#detai
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLWorldCameraIdentifier](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier) | **[id](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraidentifier-id)**  |
-| int64_t | **[frame_number](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#int64-t-frame-number)**  |
-| [MLTime](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mltime-timestamp)**  |
-| [MLWorldCameraIntrinsics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md) | **[intrinsics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraintrinsics-intrinsics)**  |
-| [MLTransform](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[camera_pose](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mltransform-camera-pose)**  |
-| [MLWorldCameraFrameBuffer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md) | **[frame_buffer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraframebuffer-frame-buffer)**  |
-| [MLWorldCameraFrameType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraframetype) | **[frame_type](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraframetype-frame-type)**  |
+| [MLWorldCameraIdentifier](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier) | **[id](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraidentifier-id)**  |
+| int64_t | **[frame_number](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#int64-t-frame-number)**  |
+| [MLTime](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mltime-timestamp)**  |
+| [MLWorldCameraIntrinsics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md) | **[intrinsics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraintrinsics-intrinsics)**  |
+| [MLTransform](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[camera_pose](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mltransform-camera-pose)**  |
+| [MLWorldCameraFrameBuffer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md) | **[frame_buffer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraframebuffer-frame-buffer)**  |
+| [MLWorldCameraFrameType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraframetype) | **[frame_type](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md#mlworldcameraframetype-frame-type)**  |
 
 ## Detailed Description
 
@@ -57,7 +57,7 @@ MLWorldCameraIdentifier id;
 
 | Type | Description |
 |--|--|
-| [MLWorldCameraIdentifier](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier) | Camera Identifier.  |
+| [MLWorldCameraIdentifier](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier) | Camera Identifier.  |
 
 
 Camera Identifier specifies which camera is associated with this frame. 
@@ -108,7 +108,7 @@ MLWorldCameraIntrinsics intrinsics;
 
 | Type | Description |
 |--|--|
-| [MLWorldCameraIntrinsics](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md) | World camera intrinsic parameters.  |
+| [MLWorldCameraIntrinsics](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md) | World camera intrinsic parameters.  |
 
 
 Camera intrinsic parameters. 
@@ -144,7 +144,7 @@ MLWorldCameraFrameBuffer frame_buffer;
 
 | Type | Description |
 |--|--|
-| [MLWorldCameraFrameBuffer](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md) | A structure to encapsulate per plane info for each camera frame.  |
+| [MLWorldCameraFrameBuffer](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md) | A structure to encapsulate per plane info for each camera frame.  |
 
 
 Frame buffer data. 
@@ -165,7 +165,7 @@ MLWorldCameraFrameType frame_type;
 
 | Type | Description |
 |--|--|
-| [MLWorldCameraFrameType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraframetype) | Enumeration of camera mode used when capturing a frame.  |
+| [MLWorldCameraFrameType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraframetype) | Enumeration of camera mode used when capturing a frame.  |
 
 
 World camera mode used for capturing the camera frames. 

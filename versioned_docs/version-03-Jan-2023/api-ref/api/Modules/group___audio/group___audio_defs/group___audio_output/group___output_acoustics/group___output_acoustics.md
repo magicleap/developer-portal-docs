@@ -5,7 +5,7 @@ title: Acoustics
 
 # Acoustics
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Audio Output](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___audio_output.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Audio Output](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___audio_output.md)**
 
  [More...](#detailed-description)
 
@@ -13,26 +13,26 @@ title: Acoustics
 
 | Name           |
 | -------------- |
-| **[Spatial Sound](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_spatial_sound.md)**  |
-| **[Buffering](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_buffering.md)**  |
-| **[Master Volume](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md)**  |
+| **[Spatial Sound](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_spatial_sound.md)**  |
+| **[Buffering](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_buffering.md)**  |
+| **[Master Volume](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_master_volume.md)**  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioResetAcousticScene](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudioresetacousticscene)**()<br></br>Resets the Acoustic Scene associated with the caller.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioBeginAcousticSceneUpdate](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiobeginacousticsceneupdate)**()<br></br>Signals beginning of grouped Acoustic parameter multi-update.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioEndAcousticSceneUpdate](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudioendacousticsceneupdate)**()<br></br>Signals end of grouped Acoustic parameter multi-update.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneMapEnable](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenemapenable)**(bool is_enabled)<br></br>Enables/disables Acoustic Map data for the Acoustic Scene.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneMapEnable](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenemapenable)**(bool * out_is_enabled)<br></br>Indicates whether Acoustic Map data is enabled for the Acoustic Scene.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneTransmissionDefault](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenetransmissiondefault)**(const [MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * transmission)<br></br>Sets amount of sound transmitted through non-Acoustic Element objects.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneTransmissionDefault](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenetransmissiondefault)**([MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * out_transmission)<br></br>Returns amount of sound transmitted through non-Acoustic Element objects.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneDispersionDefault](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenedispersiondefault)**(const [MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * properties)<br></br>Sets the fallback room properties to be used when none are otherwise specified.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneDispersionDefault](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenedispersiondefault)**([MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * out_properties)<br></br>Returns the default room properties used when none are otherwise specified.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneReverbDefault](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenereverbdefault)**(const [MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * properties)<br></br>Sets the fallback room properties to be used when none are otherwise specified.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneReverbDefault](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenereverbdefault)**([MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * out_properties)<br></br>Returns the default room properties used when none are otherwise specified.  |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetChangedAcousticMap](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetchangedacousticmap)**(uint32_t prev_map_tag, uint8_t ** out_map_data, uint32_t * out_map_size_in_bytes, uint32_t * out_map_tag)<br></br>Returns the Acoustic Map if updated since previous call.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioResetAcousticScene](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudioresetacousticscene)**()<br></br>Resets the Acoustic Scene associated with the caller.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioBeginAcousticSceneUpdate](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiobeginacousticsceneupdate)**()<br></br>Signals beginning of grouped Acoustic parameter multi-update.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioEndAcousticSceneUpdate](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudioendacousticsceneupdate)**()<br></br>Signals end of grouped Acoustic parameter multi-update.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneMapEnable](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenemapenable)**(bool is_enabled)<br></br>Enables/disables Acoustic Map data for the Acoustic Scene.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneMapEnable](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenemapenable)**(bool * out_is_enabled)<br></br>Indicates whether Acoustic Map data is enabled for the Acoustic Scene.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneTransmissionDefault](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenetransmissiondefault)**(const [MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * transmission)<br></br>Sets amount of sound transmitted through non-Acoustic Element objects.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneTransmissionDefault](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenetransmissiondefault)**([MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * out_transmission)<br></br>Returns amount of sound transmitted through non-Acoustic Element objects.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneDispersionDefault](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenedispersiondefault)**(const [MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * properties)<br></br>Sets the fallback room properties to be used when none are otherwise specified.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneDispersionDefault](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenedispersiondefault)**([MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * out_properties)<br></br>Returns the default room properties used when none are otherwise specified.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetAcousticSceneReverbDefault](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiosetacousticscenereverbdefault)**(const [MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * properties)<br></br>Sets the fallback room properties to be used when none are otherwise specified.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetAcousticSceneReverbDefault](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetacousticscenereverbdefault)**([MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * out_properties)<br></br>Returns the default room properties used when none are otherwise specified.  |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetChangedAcousticMap](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_acoustics/group___output_acoustics.md#mlresult-mlaudiogetchangedacousticmap)**(uint32_t prev_map_tag, uint8_t ** out_map_data, uint32_t * out_map_size_in_bytes, uint32_t * out_map_tag)<br></br>Returns the Acoustic Map if updated since previous call.  |
 
 ## Detailed Description
 
@@ -61,9 +61,9 @@ Resets the Acoustic Scene associated with the caller.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If reset was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_HandleNotFound|No custom scene exists for client.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If reset was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_HandleNotFound|No custom scene exists for client.|
 **Required Permissions**:
 
   * None 
@@ -95,8 +95,8 @@ Signals beginning of grouped Acoustic parameter multi-update.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
@@ -128,9 +128,9 @@ Signals end of grouped Acoustic parameter multi-update.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_HandleNotFound|No custom scene exists for client.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_HandleNotFound|No custom scene exists for client.|
 **Required Permissions**:
 
   * None 
@@ -169,8 +169,8 @@ Enables/disables Acoustic Map data for the Acoustic Scene.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
@@ -209,9 +209,9 @@ Indicates whether Acoustic Map data is enabled for the Acoustic Scene.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
@@ -242,21 +242,21 @@ Sets amount of sound transmitted through non-Acoustic Element objects.
 
 |  |   |   |
 |--|--|--|
-| const [MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * |transmission|[MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) to set the default transmission.|
+| const [MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * |transmission|[MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) to set the default transmission.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
 
 
-Transmission is specified using [MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md), which includes gain and 3-band EQ. The values [1, (1, 1, 1)] represents fully transmissive while [0, (1, 1, 1)] or [1, (0, 0, 0)] represents fully obstructed.
+Transmission is specified using [MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md), which includes gain and 3-band EQ. The values [1, (1, 1, 1)] represents fully transmissive while [0, (1, 1, 1)] or [1, (0, 0, 0)] represents fully obstructed.
 
 
 
@@ -283,21 +283,21 @@ Returns amount of sound transmitted through non-Acoustic Element objects.
 
 |  |   |   |
 |--|--|--|
-| [MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * |out_transmission|[MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) to return the default transmission.|
+| [MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) * |out_transmission|[MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) to return the default transmission.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
 
 
-Transmission is specified using [MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md), which includes gain and 3-band EQ. The values [1, (1, 1, 1)] represents fully transmissive while [0, (1, 1, 1)] or [1, (0, 0, 0)] represents fully obstructed.
+Transmission is specified using [MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md), which includes gain and 3-band EQ. The values [1, (1, 1, 1)] represents fully transmissive while [0, (1, 1, 1)] or [1, (0, 0, 0)] represents fully obstructed.
 
 
 
@@ -324,21 +324,21 @@ Sets the fallback room properties to be used when none are otherwise specified.
 
 |  |   |   |
 |--|--|--|
-| const [MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * |properties|[MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) to set the default dispersion properties.|
+| const [MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * |properties|[MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) to set the default dispersion properties.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
 
 
-Dispersion properties are specified using [MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md), which includes reflections gain ([MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)) and reflections delay time.
+Dispersion properties are specified using [MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md), which includes reflections gain ([MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)) and reflections delay time.
 
 
 
@@ -365,21 +365,21 @@ Returns the default room properties used when none are otherwise specified.
 
 |  |   |   |
 |--|--|--|
-| [MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * |out_properties|[MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) to return the default dispersion properties.|
+| [MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) * |out_properties|[MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) to return the default dispersion properties.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
 
 
-Dispersion properties are specified using [MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md), which includes reflections gain ([MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)) and reflections delay time.
+Dispersion properties are specified using [MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md), which includes reflections gain ([MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)) and reflections delay time.
 
 
 
@@ -406,21 +406,21 @@ Sets the fallback room properties to be used when none are otherwise specified.
 
 |  |   |   |
 |--|--|--|
-| const [MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * |properties|[MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) to set the default reverb properties.|
+| const [MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * |properties|[MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) to set the default reverb properties.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
 
 
-Reverb properties are specified using [MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md), which includes reflections gain ([MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)), reflections delay time, reverb gain ([MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)), reverb delay time, and frequency-dependent reverb decay times.
+Reverb properties are specified using [MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md), which includes reflections gain ([MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)), reflections delay time, reverb gain ([MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)), reverb delay time, and frequency-dependent reverb decay times.
 
 
 
@@ -447,21 +447,21 @@ Returns the default room properties used when none are otherwise specified.
 
 |  |   |   |
 |--|--|--|
-| [MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * |out_properties|[MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) to return the default reverb properties.|
+| [MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) * |out_properties|[MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) to return the default reverb properties.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 
 
 
-Reverb properties are specified using [MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md), which includes reverb gain ([MLAudioMultibandLevel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)), reverb delay time, and frequency-dependent reverb decay times.
+Reverb properties are specified using [MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md), which includes reverb gain ([MLAudioMultibandLevel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)), reverb delay time, and frequency-dependent reverb decay times.
 
 
 
@@ -500,9 +500,9 @@ Returns the Acoustic Map if updated since previous call.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If call was successful. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error.|
 **Required Permissions**:
 
   * None 

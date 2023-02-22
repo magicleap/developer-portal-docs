@@ -6,7 +6,7 @@ summary: acoustics.
 
 # Acoustics
 
-**Module:** **[Audio](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**
+**Module:** **[Audio](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**
 
 ACOUSTICS. 
 
@@ -14,25 +14,25 @@ ACOUSTICS.
 
 | Name           |
 | -------------- |
-| **[Spatial Sound](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md)** <br></br>SPATIAL SOUND.  |
-| **[Buffering](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering.md)** <br></br>BUFFERING.  |
-| **[Analysis](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md)** <br></br>ANALYSIS.  |
-| **[Result Codes](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_result_codes.md)** <br></br>RESULT CODES.  |
-| **[Callbacks](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md)** <br></br>CALLBACKS.  |
+| **[Spatial Sound](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md)** <br></br>SPATIAL SOUND.  |
+| **[Buffering](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering.md)** <br></br>BUFFERING.  |
+| **[Analysis](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md)** <br></br>ANALYSIS.  |
+| **[Result Codes](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_result_codes.md)** <br></br>RESULT CODES.  |
+| **[Callbacks](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md)** <br></br>CALLBACKS.  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md)**  |
-| struct | **[MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md)** <br></br>Properties specifying acoustic reverberation.  |
+| struct | **[MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md)**  |
+| struct | **[MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md)** <br></br>Properties specifying acoustic reverberation.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) | **[MLAudioDispersionProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md#struct-mlaudiodispersionproperties)**  |
-| typedef struct [MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) | **[MLAudioReverbProperties](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md#struct-mlaudioreverbproperties)** <br></br>Properties specifying acoustic reverberation.  |
+| typedef struct [MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md) | **[MLAudioDispersionProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md#struct-mlaudiodispersionproperties)**  |
+| typedef struct [MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md) | **[MLAudioReverbProperties](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md#struct-mlaudioreverbproperties)** <br></br>Properties specifying acoustic reverberation.  |
 
 
 ## Types Documentation
@@ -48,7 +48,7 @@ specifying acoustic dispersion (clustered reflections).
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md)
 
 
 **API Level:**
@@ -69,7 +69,7 @@ Properties specifying acoustic reverberation.
 
 
 
-[More Info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md)
+[More Info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md)
 
 
 **API Level:**

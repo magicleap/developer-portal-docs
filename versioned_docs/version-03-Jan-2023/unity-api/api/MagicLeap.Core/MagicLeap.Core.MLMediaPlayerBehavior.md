@@ -8,7 +8,7 @@ title: MLMediaPlayerBehavior
 
 
 **NameSpace:** 
-[Core](/versioned_docs/version-03 Jan 2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
+[Core](/versioned_docs/version-03-Jan-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
 
 
 
@@ -78,7 +78,7 @@ public MLMedia.Player MediaPlayer { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLMedia.Player](/versioned_docs/version-03 Jan 2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) | Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file.  |
+| [MLMedia.Player](/versioned_docs/version-03-Jan-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) | Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file.  |
 
 
 

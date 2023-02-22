@@ -6,7 +6,7 @@ summary: a structure containing information about the current state of the contr
 
 # MLControllerSystemStateEx
 
-**Module:** **[Controller](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/group___controller.md)**
+**Module:** **[Controller](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/group___controller.md)**
 
 
 
@@ -19,8 +19,8 @@ A structure containing information about the current state of the controller sys
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state_ex.md#uint32-t-version)**  |
-| [MLControllerStateEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state_ex.md)[MLController_MaxActive] | **[controller_state](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state_ex.md#mlcontrollerstateex-controller-state)**  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state_ex.md#uint32-t-version)**  |
+| [MLControllerStateEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state_ex.md)[MLController_MaxActive] | **[controller_state](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state_ex.md#mlcontrollerstateex-controller-state)**  |
 
 ## Detailed Description
 
@@ -67,7 +67,7 @@ MLControllerStateEx[MLController_MaxActive] controller_state;
 
 | Type | Description |
 |--|--|
-| [MLControllerStateEx](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state_ex.md)[MLController_MaxActive] | A structure containing information about the current state of this controller. [MLController_MaxActive] |
+| [MLControllerStateEx](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state_ex.md)[MLController_MaxActive] | A structure containing information about the current state of this controller. [MLController_MaxActive] |
 
 
 State objects for each connected and active controller. 

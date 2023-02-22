@@ -12,7 +12,7 @@ APIs for the Audio Service.  [More...](#detailed-description)
 
 | Name           |
 | -------------- |
-| **[Audio Definitions](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**  |
+| **[Audio Definitions](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**  |
 
 ## Detailed Description
 

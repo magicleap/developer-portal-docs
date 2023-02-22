@@ -5,7 +5,7 @@ title: MLCameraConnectContext
 
 # MLCameraConnectContext
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,11 +18,11 @@ title: MLCameraConnectContext
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#uint32-t-version)**  |
-| [MLCameraIdentifier](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) | **[cam_id](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#mlcameraidentifier-cam-id)**  |
-| [MLCameraConnectFlag](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag) | **[flags](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#mlcameraconnectflag-flags)**  |
-| bool | **[enable_video_stab](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#bool-enable-video-stab)**  |
-| [MLCameraMRConnectInfo](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md) | **[mr_info](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#mlcameramrconnectinfo-mr-info)** <br></br>MR capture connection settings.  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#uint32-t-version)**  |
+| [MLCameraIdentifier](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) | **[cam_id](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#mlcameraidentifier-cam-id)**  |
+| [MLCameraConnectFlag](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag) | **[flags](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#mlcameraconnectflag-flags)**  |
+| bool | **[enable_video_stab](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#bool-enable-video-stab)**  |
+| [MLCameraMRConnectInfo](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md) | **[mr_info](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md#mlcameramrconnectinfo-mr-info)** <br></br>MR capture connection settings.  |
 
 ## Detailed Description
 

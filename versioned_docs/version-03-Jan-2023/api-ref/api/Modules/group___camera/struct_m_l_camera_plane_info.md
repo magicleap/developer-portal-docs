@@ -5,7 +5,7 @@ title: MLCameraPlaneInfo
 
 # MLCameraPlaneInfo
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,14 +18,14 @@ title: MLCameraPlaneInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-version)**  |
-| uint32_t | **[width](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-width)**  |
-| uint32_t | **[height](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-height)**  |
-| uint32_t | **[stride](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-stride)**  |
-| uint32_t | **[bytes_per_pixel](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-bytes-per-pixel)**  |
-| uint32_t | **[pixel_stride](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-pixel-stride)**  |
-| uint8_t * | **[data](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint8-t-data)**  |
-| uint32_t | **[size](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-size)**  |
+| uint32_t | **[version](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-version)**  |
+| uint32_t | **[width](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-width)**  |
+| uint32_t | **[height](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-height)**  |
+| uint32_t | **[stride](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-stride)**  |
+| uint32_t | **[bytes_per_pixel](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-bytes-per-pixel)**  |
+| uint32_t | **[pixel_stride](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-pixel-stride)**  |
+| uint8_t * | **[data](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint8-t-data)**  |
+| uint32_t | **[size](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md#uint32-t-size)**  |
 
 ## Detailed Description
 

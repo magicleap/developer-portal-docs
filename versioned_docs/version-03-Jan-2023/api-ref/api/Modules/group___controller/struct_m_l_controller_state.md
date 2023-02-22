@@ -6,7 +6,7 @@ summary: a structure containing information about the current state of this cont
 
 # MLControllerState
 
-**Module:** **[Controller](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/group___controller.md)**
+**Module:** **[Controller](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/group___controller.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure containing information about the current state of this controller.  
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint8_t | **[controller_id](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state.md#uint8-t-controller-id)**  |
-| struct [MLControllerStream](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md)[MLControllerMode_Count] | **[stream](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state.md#struct-stream)**  |
-| [MLControllerCalibAccuracy](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollercalibaccuracy) | **[accuracy](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state.md#mlcontrollercalibaccuracy-accuracy)**  |
+| uint8_t | **[controller_id](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state.md#uint8-t-controller-id)**  |
+| struct [MLControllerStream](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md)[MLControllerMode_Count] | **[stream](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state.md#struct-stream)**  |
+| [MLControllerCalibAccuracy](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollercalibaccuracy) | **[accuracy](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_state.md#mlcontrollercalibaccuracy-accuracy)**  |
 
 ## Detailed Description
 
@@ -67,7 +67,7 @@ struct MLControllerStream[MLControllerMode_Count] stream;
 
 | Type | Description |
 |--|--|
-| struct [MLControllerStream](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md)[MLControllerMode_Count] | A structure containing information about the tracking-stream of this controller. [MLControllerMode_Count] |
+| struct [MLControllerStream](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md)[MLControllerMode_Count] | A structure containing information about the tracking-stream of this controller. [MLControllerMode_Count] |
 
 
 Current controller's tracking streams. 
@@ -88,7 +88,7 @@ MLControllerCalibAccuracy accuracy;
 
 | Type | Description |
 |--|--|
-| [MLControllerCalibAccuracy](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollercalibaccuracy) | Calibration Accuracy levels for controller.  |
+| [MLControllerCalibAccuracy](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollercalibaccuracy) | Calibration Accuracy levels for controller.  |
 
 
 Calibration accuracy for the current controller. 

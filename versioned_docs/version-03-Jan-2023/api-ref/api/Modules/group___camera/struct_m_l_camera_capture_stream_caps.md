@@ -6,7 +6,7 @@ summary: a structure to encapsulate stream capabilities.
 
 # MLCameraCaptureStreamCaps
 
-**Module:** **[Camera](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure to encapsulate stream capabilities.  [More...](#detailed-description
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCameraCaptureType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype) | **[capture_type](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md#mlcameracapturetype-capture-type)**  |
-| int32_t | **[width](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md#int32-t-width)**  |
-| int32_t | **[height](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md#int32-t-height)**  |
+| [MLCameraCaptureType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype) | **[capture_type](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md#mlcameracapturetype-capture-type)**  |
+| int32_t | **[width](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md#int32-t-width)**  |
+| int32_t | **[height](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md#int32-t-height)**  |
 
 ## Detailed Description
 
@@ -55,7 +55,7 @@ MLCameraCaptureType capture_type;
 
 | Type | Description |
 |--|--|
-| [MLCameraCaptureType](/versioned_docs/version-03 Jan 2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype) | Captures operation type.  |
+| [MLCameraCaptureType](/versioned_docs/version-03-Jan-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype) | Captures operation type.  |
 
 
 Capture type: video, image, or preview. 
