@@ -30,10 +30,13 @@ title: MLAudioInputBufferClip.cs
 
 namespace UnityEngine.XR.MagicLeap
 {
+    using System;
+
     public partial class MLAudioInput
     {
         public class BufferClip : Clip
         {
+            public event Action<float[]> OnReceivedSamples;
             private readonly float[] buffer;
             private readonly object bufferLock;
             private readonly int sampleRate;
@@ -57,6 +60,8 @@ namespace UnityEngine.XR.MagicLeap
 
             protected override void OnReceiveSamples(float[] samples)
             {
+                OnReceivedSamples?.Invoke(samples);
+
                 lock (bufferLock)
                 {
                     int givenSamplesCount = samples.Length;

@@ -20,7 +20,7 @@ title: Controller
 
 ```csharp
 
-public static InputFeatureUsage< byte[]> State = new InputFeatureUsage<byte[]>("MLInputControllerState");
+public static InputFeatureUsage< byte[]> State = new InputFeatureUsage<byte[]>("MLInputControllerStateEx");
 
 ```
 

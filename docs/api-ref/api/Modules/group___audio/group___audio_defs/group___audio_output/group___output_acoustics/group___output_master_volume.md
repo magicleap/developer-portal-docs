@@ -61,7 +61,7 @@ Returns the master volume for the audio system.
   * None 
 
 
-The range of the volume is 0-10, with 0 being silent and 10 being full volume.
+The range of the volume is 0-100, with 0 being silent and 100 being full volume.
 
 
 

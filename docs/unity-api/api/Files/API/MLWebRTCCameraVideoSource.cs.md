@@ -30,10 +30,9 @@ title: MLWebRTCCameraVideoSource.cs
 
 using System;
 using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using UnityEngine.XR.MagicLeap.Native;
 using static UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame;
+
 
 namespace UnityEngine.XR.MagicLeap
 {
@@ -41,13 +40,14 @@ namespace UnityEngine.XR.MagicLeap
     {
         public class MLCameraVideoSource : AppDefinedVideoSource
         {
-            private MLCameraVideoSource(MLCamera mlCamera, MLCamera.CaptureConfig camCaptureConfig, string trackId, Renderer localRenderer, bool nativeBuffers)
+            private MLCameraVideoSource(MLCameraBase mlCameraBase, MLCamera.CaptureConfig camCaptureConfig, string trackId, Renderer localRenderer, bool nativeBuffers, bool handlePause)
                 : base(trackId)
             {
-                camera = mlCamera;
+                camera = mlCameraBase;
                 captureConfig = camCaptureConfig;
                 useNativeBuffers = nativeBuffers;
                 previewRenderer = localRenderer;
+                this.handlePause = handlePause;
                 MLDevice.RegisterUpdate(Update);
             }
 
@@ -67,7 +67,7 @@ namespace UnityEngine.XR.MagicLeap
                 new PlaneInfo[NativeImagePlanesLength[OutputFormat.YUV_420_888]],
                 new PlaneInfo[NativeImagePlanesLength[OutputFormat.YUV_420_888]]);
 
-            private MLCamera camera;
+            private MLCameraBase camera;
             private MLCamera.CaptureConfig captureConfig;
             private MLNativeSurface cameraRecorderSurface;
             private NativeBufferInfo nativeBufferInfo;
@@ -81,6 +81,7 @@ namespace UnityEngine.XR.MagicLeap
             private bool useNativeBuffers = true;
             private bool applicationPause = false;
             private bool destroyed = false;
+            private bool handlePause = false;
 
             public bool IsCapturing => isCapturing;
 
@@ -90,7 +91,7 @@ namespace UnityEngine.XR.MagicLeap
 
             private static readonly ushort captureBufferCount = 4;
 
-            public static MLCameraVideoSource CreateLocal(MLCamera camera, MLCamera.CaptureConfig captureConfig, out MLResult result, string trackId = "", Renderer localRenderer = null, bool nativeBuffers = true)
+            public static MLCameraVideoSource CreateLocal(MLCameraBase camera, MLCamera.CaptureConfig captureConfig, out MLResult result, string trackId = "", Renderer localRenderer = null, bool nativeBuffers = true, bool handlePause = true)
             {
                 if (camera == null || captureConfig.StreamConfigs == null || captureConfig.StreamConfigs.Length < 1)
                 {
@@ -98,7 +99,7 @@ namespace UnityEngine.XR.MagicLeap
                     return null;
                 }
 
-                MLCameraVideoSource mlCameraVideoSource = new MLCameraVideoSource(camera, captureConfig, trackId, localRenderer, nativeBuffers);
+                MLCameraVideoSource mlCameraVideoSource = new MLCameraVideoSource(camera, captureConfig, trackId, localRenderer, nativeBuffers, handlePause);
 
                 result = InitializeLocal(mlCameraVideoSource);
                 if (!result.IsOk)
@@ -180,7 +181,7 @@ namespace UnityEngine.XR.MagicLeap
                 renderer.transform.localScale = localScale;
             }
 
-            private async void StartCapture()
+            private void StartCapture()
             {
                 if (!isCapturing)
                 {
@@ -194,10 +195,10 @@ namespace UnityEngine.XR.MagicLeap
                     MLResult result = camera.PrepareCapture(captureConfig, cameraMetadata: out _);
                     if (result.IsOk)
                     {
-                        await camera.PreCaptureAEAWBAsync();
+                         camera.PreCaptureAEAWB();
                         if (captureConfig.StreamConfigs.Length == 2 && captureConfig.StreamConfigs[1].CaptureType == MLCamera.CaptureType.Preview)
                         {
-                            result = await camera.CapturePreviewStartAsync();
+                            result = camera.CapturePreviewStart();
                             if (result.IsOk)
                             {
                                 isCapturingPreview = true;
@@ -209,9 +210,16 @@ namespace UnityEngine.XR.MagicLeap
                             previewRenderer.enabled = true;
                             previewRenderer.material.mainTexture = camera.PreviewTexture;
                         }
-                        result = await camera.CaptureVideoStartAsync();
+                        result = camera.CaptureVideoStart();
+                        if (!result.IsOk)
+                        {
+                            Debug.LogError("capture start error: " + result);
+                        }
                     }
-
+                    else
+                    {
+                        Debug.LogError("prepare capture start error: " + result);
+                    }
                     isCapturing = result.IsOk;
                     if (IsCapturing)
                     {
@@ -270,8 +278,11 @@ namespace UnityEngine.XR.MagicLeap
 
             protected override void OnApplicationPause(bool pause)
             {
-                applicationPause = pause;
-                base.OnApplicationPause(pause);
+                if (handlePause)
+                {
+                    applicationPause = pause;
+                    base.OnApplicationPause(pause);
+                }
             }
 
             private void Update()
@@ -314,21 +325,22 @@ namespace UnityEngine.XR.MagicLeap
                 }
             }
 
-            private async void TerminateCaptureNow()
+            private void TerminateCaptureNow()
             {
+                isCapturing = false;
                 if (useNativeBuffers)
                 {
                     cameraRecorderSurface.OnFrameAvailable -= CameraRecorderSurface_OnFrameAvailable;
                 }
 
-                await camera.CaptureVideoStopAsync();
+                 camera.CaptureVideoStop();
                 if (isCapturingPreview)
                 {
-                    await camera.CapturePreviewStopAsync();
+                     camera.CapturePreviewStop();
                     isCapturingPreview = false;
                 }
                 shouldStopCapturing = false;
-                isCapturing = false;
+                
                 RemoveCameraCallbacks();
                 cameraRecorderSurface = null;
                 captureConfig.StreamConfigs[0].Surface = null;
@@ -389,6 +401,9 @@ namespace UnityEngine.XR.MagicLeap
             private void Camera_OnDeviceStreaming()
             {
                 MLPluginLog.Debug("MLWebRTC.CameraVideoSource camera is streaming.");
+            }
+            public MLCameraVideoSource(string trackId) : base(trackId)
+            {
             }
         }
     }

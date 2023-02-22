@@ -26,7 +26,7 @@ title: ml_gaze_recognition.h
 |                | Name           |
 | -------------- | -------------- |
 | enum | **[MLGazeRecognitionError](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror)** <br></br> { <br></br>[MLGazeRecognitionError_None](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognitionerror-none),<br></br> [MLGazeRecognitionError_Generic](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognitionerror-generic),<br></br> [MLGazeRecognitionError_Ensure32Bits](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognitionerror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible error codes that the Gaze Recognition system can report.  |
-| enum | **[MLGazeRecognitionBehavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior)** <br></br> { <br></br>[MLGazeRecognition_Unknown](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-unknown) = 0,<br></br> [MLGazeRecognition_EyesClosed](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-eyesclosed) = 1,<br></br> [MLGazeRecognition_Blink](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-blink) = 2,<br></br> [MLGazeRecognition_Fixation](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-fixation) = 3,<br></br> [MLGazeRecognition_Pursuit](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-pursuit) = 4,<br></br> [MLGazeRecognition_Saccade](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-saccade) = 5,<br></br> [MLGazeRecognition_Ensure32Bits](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
+| enum | **[MLGazeRecognitionBehavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior)** <br></br> { <br></br>[MLGazeRecognition_Unknown](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-unknown) = 0,<br></br> [MLGazeRecognition_EyesClosed](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-eyesclosed) = 1,<br></br> [MLGazeRecognition_Blink](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-blink) = 2,<br></br> [MLGazeRecognition_Fixation](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-fixation) = 3,<br></br> [MLGazeRecognition_Pursuit](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-pursuit) = 4,<br></br> [MLGazeRecognition_Saccade](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-saccade) = 5,<br></br> [MLGazeRecognition_BlinkLeft](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-blinkleft) = 6,<br></br> [MLGazeRecognition_BlinkRight](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-blinkright) = 7,<br></br> [MLGazeRecognition_Ensure32Bits](/api-ref/api/Files/ml__gaze__recognition_8h.md#enums-mlgazerecognition-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
 
 ## Functions
 
@@ -70,10 +70,12 @@ A set of possible error codes that the Gaze Recognition system can report.
 | ---------- | ----- | ----------- |
 | MLGazeRecognition_Unknown |  0| Unknown. |
 | MLGazeRecognition_EyesClosed |  1| Both eyes closed. |
-| MLGazeRecognition_Blink |  2| Blink detected. |
+| MLGazeRecognition_Blink |  2| Blink detected. Both eyes open, close, and open. |
 | MLGazeRecognition_Fixation |  3| User is fixating, eye position is stable. |
 | MLGazeRecognition_Pursuit |  4| User is pursuing, eye velocity is low but nonzero. |
 | MLGazeRecognition_Saccade |  5| User is making a saccade, eye velocity is high. |
+| MLGazeRecognition_BlinkLeft |  6| Left eye blink, right eye open. |
+| MLGazeRecognition_BlinkRight |  7| Right eye blink, left eye open. |
 | MLGazeRecognition_Ensure32Bits |  0x7FFFFFFF| |
 
 
@@ -84,7 +86,7 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -404,6 +406,8 @@ typedef enum MLGazeRecognitionBehavior {
   MLGazeRecognition_Fixation = 3,
   MLGazeRecognition_Pursuit = 4,
   MLGazeRecognition_Saccade = 5,
+  MLGazeRecognition_BlinkLeft = 6,
+  MLGazeRecognition_BlinkRight = 7,
   MLGazeRecognition_Ensure32Bits = 0x7FFFFFFF
 } MLGazeRecognitionBehavior;
 

@@ -90,6 +90,8 @@ namespace UnityEngine.XR.MagicLeap
 
         public delegate void OnDebugMessageDelegate(LogLevel logLevel, [MarshalAs(UnmanagedType.LPStr)] string message, IntPtr context);
 
+        internal delegate void CallOnPerceptionShutdownDelegate();
+
         internal delegate void CreateBlockRequestsDelegate(ref MeshingSubsystem.Extensions.MLMeshing.NativeBindings.MLMeshingMeshInfo meshInfo, ref MeshingSubsystem.Extensions.MLMeshing.NativeBindings.MLMeshingMeshRequest data);
 
         internal delegate void CallFreeBlockRequestPointerDelegate();
@@ -129,6 +131,9 @@ namespace UnityEngine.XR.MagicLeap
 
         [DllImport(MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
         public static extern MLResult.Code StopHaptics();
+
+        [DllImport(MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
+        internal static extern void InputSetOnPerceptionShutdownCallback(CallOnPerceptionShutdownDelegate createOnPerceptionShutdown);
 
         [DllImport(MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
         internal static extern void MeshingSetMeshRequestCallback(CreateBlockRequestsDelegate createBlockRequest);

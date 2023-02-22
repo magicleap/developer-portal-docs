@@ -13293,6 +13293,8 @@ Detach the NativeSurfaceTexture from the graphic context that owns the graphic t
   * None 
 
 
+If called on the thread with graphic context that contains the attached texture object, said texture will be deleted.
+
 
 
 

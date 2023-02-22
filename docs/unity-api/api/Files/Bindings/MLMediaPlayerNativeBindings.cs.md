@@ -467,10 +467,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerCreate(out ulong handle);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerReleaseBuffer(ulong mediaPlayerHandle, ulong NativeBuffer);
-
+                
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerReset(ulong mediaPlayerHandle);
 
@@ -479,10 +476,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerStop(ulong mediaPlayerHandle);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerSetOnBufferAvailableCallback(ulong mediaPlayerHandle, OnFrameAvailableDelegate OnBufferAvailable, IntPtr Data);
-
+                
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSetLooping(ulong mediaPlayerHandle, [MarshalAs(UnmanagedType.I1)] bool loop);
 
@@ -552,22 +546,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSeekTo(ulong mediaPlayerHandle, int Msec, SeekMode Mode);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerAcquireNextAvailableBuffer(ulong mediaPlayerHandle, out ulong nativeBuffer);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerGetFrameTransformationMatrix(ulong mediaPlayerHandle, [MarshalAs(UnmanagedType.LPArray, SizeConst = 16)] float[] OutMtx); //this array size of 16 floats
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerGetFrameTimestamp(ulong mediaPlayerHandle, out long timestamp);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerGetFrameQueueBufferTimestamp(ulong mediaPlayerHandle, IntPtr OutTimestamp);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerGetFrameNumber(ulong mediaPlayerHandle, IntPtr OutNumber);
-
+                
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerGetVideoSize(ulong mediaPlayerHandle, out int width, out int height);
 
@@ -582,10 +561,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerGetSubtitleEx(ulong mediaPlayerHandle, IntPtr OutSubtitleData);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerReleaseTimedTextEx(ulong mediaPlayerHandle, ulong TimedText);
-
+                
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerReleaseSubtitleEx(ulong mediaPlayerHandle);
 
@@ -621,10 +597,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSetBufferingSettings(ulong mediaPlayerHandle, NativeBindings.MLMediaPlayerBufferingSettings BufSettings);
-
-                [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLMediaPlayerGetTimedTextEx(ulong mediaPlayerHandle, IntPtr OutTimedText);
-
+                
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSetOnMediaTimedTextUpdateCallback(ulong mediaPlayerHandle, OnTimedTextUpdateDelegate OnMediaTimedTextCallback, IntPtr Data);
 

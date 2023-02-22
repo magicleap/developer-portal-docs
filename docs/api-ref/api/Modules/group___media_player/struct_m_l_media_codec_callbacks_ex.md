@@ -79,7 +79,7 @@ This callback function is invoked when an input buffer becomes available.
 |  |   |   |
 |--|--|--|
 |  |media_codec|MLMediaCodec instance for which callback was called. |
-|  |info|Input buffer info as [MLMediaCodecInputBufferInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_input_buffer_info.md). |
+|  |info|Input buffer info as [MLMediaCodecInputBufferInfo()](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediacodecinputbufferinfo). |
 This should not be set to NULL as codec will not function properly if client has no means to specify incoming input buffers.
 
 

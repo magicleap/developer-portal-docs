@@ -51,7 +51,7 @@ public MLResult.Code MLWebRTCSourceCreateAppDefinedAudioSourceEx(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCSourceCreateLocalSourceForCamera {#mlresultcode-mlwebrtcsourcecreatelocalsourceforcamera}
 
-Creates the local source that links to the user's [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md). 
+Creates the local source that links to the user's [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md). 
 
 ```csharp
 public MLResult.Code MLWebRTCSourceCreateLocalSourceForCamera(
@@ -65,7 +65,7 @@ public MLResult.Code MLWebRTCSourceCreateLocalSourceForCamera(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [MLCamera.NativeBindings.MLCameraConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLCamera.NativeBindings.MLCameraConnectContext.md) |sourceHandle|The handle to the local source to return to the caller.|
+| in MLCamera.NativeBindings.MLCameraConnectContext |sourceHandle|The handle to the local source to return to the caller.|
 | out ulong |sourceHandle||
 
 
