@@ -1,0 +1,87 @@
+---
+title: StreamCapability
+
+---
+
+# StreamCapability
+
+
+
+
+
+
+
+
+
+
+## Public Methods
+
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### CaptureType {#capturetype-capturetype}
+
+Capture Type 
+
+```csharp
+
+public CaptureType CaptureType;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [CaptureType](/versioned_docs/version-03-Jan-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCamera/UnityEngine.XR.MagicLeap.MLCamera.md#enums-capturetype) | Capture operation type  |
+
+
+
+
+
+-----------
+
+### Height {#int-height}
+
+Resolution height 
+
+```csharp
+
+public int Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### Width {#int-width}
+
+Resolution height 
+
+```csharp
+
+public int Width;
+
+```
+
+
+
+
+
+
+-----------
+
