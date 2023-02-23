@@ -7,7 +7,6 @@ tags: [Perception, Anchors, Persistence]
 keywords: [Perception, Anchors, Persistence]
 ---
 
-
 This section will guide you on how to use Spatial Anchors, a shared reference point for tethering virtual content to a persistent physical location.
 
 :::note
