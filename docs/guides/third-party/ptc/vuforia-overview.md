@@ -35,3 +35,9 @@ From AR navigation to in-context service instructions, you can build application
 To get started developing for Magic Leap 2 with Vuforia Engine, follow Vuforia Engine’s [setup guide](https://library.vuforia.com/getting-started/getting-started-vuforia-engine-and-magic-leap-2).
 
 If you have questions or need a hand with Vuforia Engine for Magic Leap 2, please post to the Vuforia Engine topic on the [Magic Leap 2 Developer Forum](https://forum.magicleap.cloud/c/vuforia-engine/161).
+
+### Sample Content
+
+PTC has provided some default content to get you started in the Unity Asset Store:
+
+<https://assetstore.unity.com/packages/templates/packs/vuforia-magic-leap-2-sample-245664>
