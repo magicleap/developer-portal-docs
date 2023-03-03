@@ -22,7 +22,7 @@ To begin an advanced capture session:
 
 ## Capture Preview
 
-Once your device is connected, you can capture a preview snapshot of the view from the device by clicking the refresh icon in the upper left corner of the preview window. 
+Once your device is connected, you can capture a preview snapshot of the view from the device by clicking the refresh icon in the upper left corner of the preview window.
 
 ![Advanced Capture window no preview](/img/ml-hub/advanced-capture/home_no_preview.jpg)
 
@@ -31,7 +31,7 @@ The resulting still displays the quality of the image with its current settings,
 
 ## Advanced Capture Settings
 
-### Composition 
+### Composition
 
 - **Aspect Ratio**: 4:3 or 9:10 vertically
 - **Quality**: 720p, 1080p or 4k resolution
@@ -42,7 +42,7 @@ The resulting still displays the quality of the image with its current settings,
 ### Video and Audio
 
 - **Delay**: Delays the capture start time from immediate to 5, 10, 20, 30 or a custom amount of seconds
-- **Duration**: Sets the duration of the video capture, from Infinite to 30 seconds, 1 minute, 2 minutes or a custom duration 
+- **Duration**: Sets the duration of the video capture, from Infinite to 30 seconds, 1 minute, 2 minutes or a custom duration
 - **Video Stabilization**: when enabled this setting stabilizes shaky capture
 - **Audio Type**: Specifies the source of the audio to be captured, Voice, World, Virtual or Mixed.
 
@@ -57,7 +57,7 @@ If you need to stop video capture before the set duration is up, the **Stop** bu
 - **Alpha Override** controls the transparency of the virtual content
 - **Exposure Compensation** brightens or darkens the image to compensate for the level of light present in the real world
 - **Tint** controls the warm or cool tone quality of the image
-- **White Balance**: Comparable to white balance settings on most digital cameras, the available white balance settings are Auto White Balance, Daylight, Cloudy, Twilight, Shade, Incandescent, Flourescent and Off. 
+- **White Balance**: Comparable to white balance settings on most digital cameras, the available white balance settings are Auto White Balance, Daylight, Cloudy, Twilight, Shade, Incandescent, Flourescent and Off.
 
 ![Image Settings](/img/ml-hub/advanced-capture/image_settings.jpg)
 
@@ -76,7 +76,6 @@ The resulting files will be saved to the path displayed on the screen at capture
 ### Accessing Captured Files
 
 To easily view the images and videos captured through advanced capture, click the **Open captures** link located in the upper right corner of the Advanced Capture window above the Preview display.
-
 
 ### ADB Screen Capture Commands
 
