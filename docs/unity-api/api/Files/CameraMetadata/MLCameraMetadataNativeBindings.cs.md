@@ -33,7 +33,7 @@ namespace UnityEngine.XR.MagicLeap
     using System;
     using System.Runtime.InteropServices;
 
-    public partial class MLCamera
+    public partial class MLCameraBase
     {
         public partial class Metadata
         {
@@ -121,19 +121,19 @@ namespace UnityEngine.XR.MagicLeap
                 public static extern MLResult.Code MLCameraMetadataGetControlAvailableEffectModes(
                     ulong Handle,
                     [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] out ControlEffectMode[] OutData,
-                    out int OutCount);
+                    [MarshalAs(UnmanagedType.SysUInt)] out int OutCount);
 
                 [DllImport(MLCameraMetadataDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLCameraMetadataGetControlAvailableSceneModes(
                     ulong Handle,
                     [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] out ControlSceneMode[] OutData,
-                    out int OutCount);
+                    [MarshalAs(UnmanagedType.SysUInt)] out int OutCount);
 
                 [DllImport(MLCameraMetadataDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLCameraMetadataGetControlAEAvailableModes(
                     ulong Handle,
                     [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] out ControlAEMode[] OutData,
-                    out int OutCount);
+                    [MarshalAs(UnmanagedType.SysUInt)] out int OutCount);
 
                 [DllImport(MLCameraMetadataDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLCameraMetadataGetControlAECompensationRange(
@@ -144,10 +144,13 @@ namespace UnityEngine.XR.MagicLeap
                 public static extern MLResult.Code MLCameraMetadataGetControlAWBAvailableModes(
                     ulong Handle,
                     [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] out ControlAWBMode[] OutData,
-                    out int OutCount);
+                    [MarshalAs(UnmanagedType.SysUInt)] out int OutCount);
 
                 [DllImport(MLCameraMetadataDll, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLCameraMetadataGetControlAFAvailableModes(ulong Handle, [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] out ControlAFMode[] OutData, out uint OutCount);
+                public static extern MLResult.Code MLCameraMetadataGetControlAFAvailableModes(
+                    ulong Handle, 
+                    [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] out ControlAFMode[] OutData, 
+                    [MarshalAs(UnmanagedType.SysUInt)] out int OutCount);
 
                 [DllImport(MLCameraMetadataDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLCameraMetadataGetLensInfoHyperfocalDistance(ulong Handle, out float OutData);
@@ -213,7 +216,7 @@ namespace UnityEngine.XR.MagicLeap
                 public static extern MLResult.Code MLCameraMetadataGetControlAvailableModes(
                     ulong Handle,
                     [MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 2)] out ControlMode[] OutData,
-                    out int OutCount);
+                    [MarshalAs(UnmanagedType.SysUInt)] out int OutCount);
 
                 [DllImport(MLCameraMetadataDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLCameraMetadataSetColorCorrectionTransform(

@@ -69,10 +69,7 @@ namespace UnityEngine.XR.MagicLeap
 
                     [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                     public static extern MLResult.Code MLMediaPlayerGetTrackMediaFormat(ulong mediaPlayerHandle, uint trackIndex, out ulong formatHandle);
-
-                    [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
-                    public static extern MLResult.Code MLMediaFormatGetKeyString(ulong formatHandle, [MarshalAs(UnmanagedType.LPStr)] string formatKey, IntPtr stringPtr);
-
+                    
                     [DllImport(CUtilsDLL, CallingConvention = CallingConvention.Cdecl)]
                     public static extern MLResult.Code FreeUnmanagedMemory(IntPtr mediaStringPtr);
 

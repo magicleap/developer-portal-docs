@@ -1,5 +1,6 @@
 ---
 title: MLMeshingVirtualCameraBufferInfo
+summary: per virtual camera information needed to render depth. 
 
 ---
 
@@ -9,7 +10,7 @@ title: MLMeshingVirtualCameraBufferInfo
 
 
 
- [More...](#detailed-description)
+Per virtual camera information needed to render depth.  [More...](#detailed-description)
 
 
 `#include <ml_graphics_utils.h>`
@@ -27,10 +28,13 @@ title: MLMeshingVirtualCameraBufferInfo
 struct MLMeshingVirtualCameraBufferInfo;
 ```
 
-
 Per virtual camera information needed to render depth. 
 
 
+
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal. 
+:::
 
 
 

@@ -14,7 +14,7 @@ There are two main ways of building Native applications, a [command line workflo
 
 ## Prerequisites
 
-1. Install the *Chipmunk* version of [Android Studio](https://developer.android.com/studio/archive).
+1. Install the *Electric Eel* version of [Android Studio](https://developer.android.com/studio/archive).
 
 :::note
 Make sure you have installed Android SDK Tools 31, Android SDK Command Line, and Android SDK Platform Tools in Android Studio if they did not automatically download.

@@ -77,21 +77,31 @@ The `JAVA_HOME` value may be different, verify its location by running
 - When building apps make sure that the MLSDK environment variable is pointing to the SDK install location.
 - All build.py scripts by default build both release and debug apps. If you only wish to build debug apps use `--config debug`. If you wish to build release apps `--config release`.
 - Make sure that that `app_framework` and apps are built for the same config (debug vs release).
-- By default `build.py` assumes that Visual Studio 2019 version 17 is used. To select a different compiler, Visual Studio 2017 for example, add `--msvc “Visual Studio 15 2017”` to the command line.
-- Currently, the SDK supports Visual Studio up to version 17, 2019. If you are switching compilers make sure to do a full clean build by using the `--clean` parameter as shown below:
+
 
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
 
 ```shell
+python build.py --clean 
+```
+
+:::info 
+
+- By default `build.py` assumes that Visual Studio 2019 version 17 is used. To select a different compiler, Visual Studio 2017 for example, add `--msvc “Visual Studio 15 2017”` to the command line.
+- Currently, the SDK supports Visual Studio up to version 17, 2019. If you are switching compilers make sure to do a full clean build by using the `--clean` parameter as shown below:
+
+```shell
 python build.py --clean --msvc "Visual Studio 17 2019"
 ```
+
+:::
 
   </TabItem>
  <TabItem value="mac" label="MacOS">
 
 ```shell
-python3 build.py --clean --msvc "Visual Studio 17 2019"
+python3 build.py --clean
 ```
 
  </TabItem>

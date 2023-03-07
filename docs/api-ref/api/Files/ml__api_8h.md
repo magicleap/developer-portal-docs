@@ -570,6 +570,8 @@ ML_STATIC_INLINE const char* ML_CALL MLGetResultString(MLResult result_code) {
     case MLResult_ClientLimitExceeded: return "MLResult_ClientLimitExceeded";
     case MLResult_PoseNotFound: return "MLResult_PoseNotFound";
     case MLResult_PerceptionSystemNotStarted: return "MLResult_PerceptionSystemNotStarted";
+    case MLResult_IllegalState: return "MLResult_IllegalState";
+    case MLResult_LicenseError: return "MLResult_LicenseError";
     default: return "Unknown";
   }
 }

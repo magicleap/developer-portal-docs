@@ -1,5 +1,6 @@
 ---
 title: MLMeshingDepthBufferInfo
+summary: to be passed to populatedepth. 
 
 ---
 
@@ -9,7 +10,7 @@ title: MLMeshingDepthBufferInfo
 
 
 
- [More...](#detailed-description)
+To be passed to PopulateDepth.  [More...](#detailed-description)
 
 
 `#include <ml_graphics_utils.h>`
@@ -32,10 +33,13 @@ title: MLMeshingDepthBufferInfo
 struct MLMeshingDepthBufferInfo;
 ```
 
-
 To be passed to PopulateDepth. 
 
 
+
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -159,7 +163,7 @@ MLMeshingVirtualCameraBufferInfo[MLGraphicsVirtualCameraName_Count] buffers;
 
 | Type | Description |
 |--|--|
-| [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)[MLGraphicsVirtualCameraName_Count] | [MLGraphicsVirtualCameraName_Count] |
+| [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)[MLGraphicsVirtualCameraName_Count] | Per virtual camera information needed to render depth. [MLGraphicsVirtualCameraName_Count] |
 
 
 The array of buffers to render to for the frame. 

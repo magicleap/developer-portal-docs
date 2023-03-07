@@ -91,7 +91,8 @@ public class MarkerTrackerExample : MonoBehaviour
                 //Render the cube with the default URP shader
                 marker.AddComponent<Renderer>();
                 marker.GetComponent<Renderer>().material = new Material(Shader.Find("Universal Render Pipeline/Lit"));
-
+                marker.transform.position = data.Pose.position;
+                marker.transform.rotation = data.Pose.rotation;
                 marker.transform.localScale = new Vector3(markerSize, markerSize, markerSize);
                 _markers.Add(id, marker);
             }

@@ -18,7 +18,7 @@ This topic describes how to configure the Unity Build Settings to utilize Magic 
 
 The Magic Leap SDK provides access to Magic Leap's perception and input API. The Magic Leap Unity SDK can be imported using Unity's Package Manager.
 
-1. Open the Package Manager window ( **Windows > Package Manager**).
+1. Open the Package Manager window ( **Window > Package Manager**).
 
 2. Select the "**+**" (plus) button in the top-left corner, then **Add package from tarball**.
 

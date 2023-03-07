@@ -6,12 +6,6 @@ date: 9/9/2022
 
 Get the tools you need to build applications for the Magic Leap 2 headset. The Magic Leap is built on top of the [Android Open Source Project](https://source.android.com/) (AOSP), Android 10 (Q) API level 29, whereas ML1 was built on top of a Linux-derived in-house OS.
 
-:::caution
-
-If you installed Lab 2.0 in the past, you'll need to uninstall it and then install the Magic Leap Hub by following the instructions here: [Uninstall the Lab 2.0](/docs/guides/developer-tools/ml-hub/uninstall-lab-2-0.md)
-
-:::
-
 ## Install Magic Leap Hub
 
 The Magic Leap Hub lets you install and manage Magic Leap tools including, the Magic Leap SDK for Native and Unity, example projects, and tools like MRTK for Magic Leap.

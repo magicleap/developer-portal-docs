@@ -151,7 +151,7 @@ module.exports = {
           //Feature changes 12/16/2022
           {
             from: '/docs/guides/features/voice-intent-design-guidelines',
-            to: '/docs/guides/best-practices/voice-design-guidelines'
+            to: '/docs/guides/features/voice-commands/voice-design-guidelines'
           },
           {
             from: '/docs/guides/features/mapping-tool',
@@ -172,6 +172,35 @@ module.exports = {
           {
             from: '/docs/guides/unity/getting-started/import-unity-packages',
             to: '/docs/guides/unity/getting-started/configure-unity-settings'
+          },
+          //Moving design guides 
+          {
+            from: '/docs/guides/best-practices/voice-design-guidelines',
+            to: '/docs/guides/features/voice-commands/voice-design-guidelines'
+          },
+          {
+            from: '/docs/guides/best-practices/dimming/dimmer-design-guidelines',
+            to: '/docs/guides/features/dimmer-feature/dimmer-design-guidelines'
+          },
+          {
+            from: '/docs/guides/best-practices/dimming/dimming-overview',
+            to: '/docs/guides/features/dimmer-feature'
+          },
+          {
+            from: '/docs/guides/device/controller-features',
+            to: '/docs/guides/features/controller-features'
+          },
+          {
+            from: '/docs/guides/features/global-segmented-dimming-feature',
+            to: '/docs/guides/features/dimmer-feature'
+          },
+          {
+            from: '/docs/guides/features/input/bluetooth/unity-bluetooth-input-walkthrough',
+            to: '/docs/guides/features/bluetooth-input'
+          },
+          {
+            from: '/docs/guides/features/media/fov',
+            to: '/docs/guides/device/fov'
           },
         ],
         
@@ -241,7 +270,10 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '03 Jan 2022'
+              label: '22 Feb 2023'
+            },
+            '03-Jan-2023': {
+              label: '03 Jan 2023'
             },
           },
         },

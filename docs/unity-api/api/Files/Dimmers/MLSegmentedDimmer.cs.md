@@ -18,6 +18,7 @@ title: MLSegmentedDimmer.cs
 ## Source code
 
 ```csharp
+using System;
 using UnityEngine.Rendering;
 #if URP_14_0_0_OR_NEWER
 using UnityEngine.Rendering.Universal;
@@ -29,20 +30,20 @@ namespace UnityEngine.XR.MagicLeap
     public partial class MLSegmentedDimmer
     {
 #if URP_14_0_0_OR_NEWER
-        private static SegmentedDimmerFeature urpFeature;
-        private static SegmentedDimmerFeature Feature
+        private static SegmentedDimmerFeature segmentedDimmerFeature;
+        private static SegmentedDimmerFeature SegmentedDimmerFeature
         {
             get
             {
-                if(urpFeature == null)
+                if(segmentedDimmerFeature == null)
                 {
                     var urp = GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset;
                     if(urp != null)
                     {
-                        urpFeature = urp.GetRendererFeature<SegmentedDimmerFeature>() as SegmentedDimmerFeature;
+                        segmentedDimmerFeature = urp.GetRendererFeature<SegmentedDimmerFeature>() as SegmentedDimmerFeature;
                     }
                 }
-                return urpFeature;
+                return segmentedDimmerFeature;
             }
         }
 #endif
@@ -60,33 +61,10 @@ namespace UnityEngine.XR.MagicLeap
         }
 
 #if URP_14_0_0_OR_NEWER
-        public static bool Exists => Feature != null;
+        public static bool Exists => SegmentedDimmerFeature != null;
 #else
         public static bool Exists => false;
 #endif
-
-        public static void SetEnabled(bool enabled)
-        {
-#if URP_14_0_0_OR_NEWER
-            if (Exists)
-            {
-                var renderers = GameObject.FindObjectsOfType<MeshRenderer>();
-                foreach (var r in renderers)
-                {
-                    if ((Feature.settings.layerMask & (1 << r.gameObject.layer)) != 0)
-                    {
-                        r.enabled = enabled;
-                    }
-                }
-            }
-            else
-            {
-                Debug.LogError("Segmented Dimmer requirement not met: URP SegmentedDimmer RenderFeature was not configured.");
-            }
-#else
-            Debug.LogError("Segmented Dimmer requirement not met: Package com.unity.render-pipelines.universal >= 14.0.0 was not installed.");
-#endif
-        }        
 
         public static int GetDefaultLayer()
         {
@@ -97,7 +75,7 @@ namespace UnityEngine.XR.MagicLeap
             }
             for (int i = 0; i < 32; i++)
             {
-                if (Feature.settings.layerMask == (Feature.settings.layerMask | (1 << i)))
+                if (SegmentedDimmerFeature.settings.layerMask == (SegmentedDimmerFeature.settings.layerMask | (1 << i)))
                 {
                     defaultLayer = i;
                     break;

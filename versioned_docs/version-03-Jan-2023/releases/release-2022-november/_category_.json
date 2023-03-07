@@ -1,0 +1,10 @@
+{
+  "label": "Release 2022 November",
+  "position": 90,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "november-release-notes"
+  }
+}

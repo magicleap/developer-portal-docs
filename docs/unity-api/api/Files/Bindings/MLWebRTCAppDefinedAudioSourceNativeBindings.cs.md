@@ -116,10 +116,7 @@ namespace UnityEngine.XR.MagicLeap
                     AppDefinedAudioSource audioSource = gcHandle.Target as AppDefinedAudioSource;
                     audioSource?.OnSourceDestroy();
                 }
-
-                [DllImport(MLWebRTCDLL, CallingConvention = CallingConvention.Cdecl)]
-                public static extern MLResult.Code MLWebRTCSourceCreateAppDefinedAudioSource(in AppDefinedSource.NativeBindings.MLWebRTCAppDefinedSourceEventCallbacks callbacks, out ulong sourceHandle);
-
+                
                 [DllImport(MLWebRTCDLL, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLWebRTCSourceAppDefinedAudioSourcePushData(ulong sourceHandle, in MLAudioOutput.NativeBindings.MLAudioBuffer audioBuffer, in MLAudioOutput.NativeBindings.MLAudioBufferFormat audioBufferFormat);
             }
