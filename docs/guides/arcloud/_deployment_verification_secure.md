@@ -8,7 +8,7 @@ Cluster Installation (arcloud)
 Enterprise Web:
 --------------
 
-http://<DOMAIN>/
+https://<DOMAIN>/
 
 Username: aradmin
 Password: <base64-encoded string>
@@ -16,7 +16,7 @@ Password: <base64-encoded string>
 Keycloak:
 ---------
 
-http://<DOMAIN>/auth/
+https://<DOMAIN>/auth/
 
 Username: admin
 Password: <base64-encoded string>
@@ -25,7 +25,7 @@ MinIO:
 ------
 
 kubectl -n arcloud port-forward svc/minio 8082:81
-http://127.0.0.1:8082/
+https://127.0.0.1:8082/
 
 Username: <base64-encoded string>
 Password: <base64-encoded string>
@@ -47,6 +47,6 @@ istio-system   istio-ingressgateway   LoadBalancer   <IPv4>   <IPv4>   80:31456/
 
 ## Log in to the Enterprise Console Web View
 
-1. Open the **Enterprise Web** url (`http://<DOMAIN>/`) in a browser
+1. Open the **Enterprise Web** url (`https://<DOMAIN>/`) in a browser
 2. Enter the provided credentials for **Enterprise Web**
 3. Verify the successful login
