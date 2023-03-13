@@ -15,8 +15,8 @@ The Advanced Capture module in [Magic Leap Hub](/docs/guides/developer-tools/ml-
 To begin an advanced capture session:
 
 1. Connect the headset to the computer and power it on.
-2. Check that the headset is detected by your machine by either executing `adb devices` in the terminal or opening [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge)inside Magic Leap Hub.
-2. Start the Advanced Capture module from the Magic Leap Hub home menu.
+2. Check that the headset is detected by your machine by either opening [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge)inside Magic Leap Hub or executing `adb devices` in the terminal.
+3. Start the Advanced Capture module from the Magic Leap Hub home menu.
 
 ![Advanced Capture module on ML Hub home page](/img/ml-hub/advanced-capture/advanced_capture_home.jpg)
 
@@ -57,7 +57,7 @@ If you need to stop video capture before the set duration is up, the **Stop** bu
 - **Alpha Override** controls the transparency of the virtual content
 - **Exposure Compensation** brightens or darkens the image to compensate for the level of light present in the real world
 - **Tint** controls the warm or cool tone quality of the image
-- **White Balance**: Comparable to white balance settings on most digital cameras, the available white balance settings are Auto White Balance, Daylight, Cloudy, Twilight, Shade, Incandescent, Flourescent and Off.
+- **White Balance** is comparable to white balance settings on most digital cameras, the available white balance settings are Auto White Balance, Daylight, Cloudy, Twilight, Shade, Incandescent, Flourescent and Off.
 
 ![Image Settings](/img/ml-hub/advanced-capture/image_settings.jpg)
 
@@ -76,6 +76,12 @@ The resulting files will be saved to the path displayed on the screen at capture
 ### Accessing Captured Files
 
 To easily view the images and videos captured through advanced capture, click the **Open captures** link located in the upper right corner of the Advanced Capture window above the Preview display.
+
+### Changing Capture Path
+
+You can set the file path for your captures either from the Magic Leap Hub Home menu, under **Home > Settings > Device Stream > General > Capture location** or from the Advanced Capture window, under **Advanced Capture > Settings > Device Stream > General > Capture Location**.
+
+![Capture Path Settings](/img/ml-hub/advanced-capture/capture_path.jpg)
 
 ### ADB Screen Capture Commands
 
