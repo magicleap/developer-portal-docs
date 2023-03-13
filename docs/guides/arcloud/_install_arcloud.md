@@ -25,6 +25,7 @@ cat ./setup/certificate.yaml | envsubst | kubectl -n istio-system apply -f -
 ```shell showLineNumbers
 kubectl create namespace ${NAMESPACE}
 kubectl label namespace ${NAMESPACE} istio-injection=enabled
+kubectl label namespace ${NAMESPACE} pod-security.kubernetes.io/audit=baseline pod-security.kubernetes.io/audit-version=v1.25 pod-security.kubernetes.io/warn=baseline pod-security.kubernetes.io/warn-version=v1.25
 ```
 
 ### Create Container Registry Secret
