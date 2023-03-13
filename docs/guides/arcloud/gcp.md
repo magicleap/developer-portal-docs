@@ -11,7 +11,9 @@ description: "Enterprise deployment to Google Cloud Platform (GCP)"
 import DownloadArcloud from './_download_arcloud.md';
 import InstallIstio from './_install_istio.md';
 import InstallArcloud from './_install_arcloud.md';
-import DeploymentVerification from './_deployment_verification.md';
+import InstallArcloudSetupSecure from './_install_arcloud_setup_secure.md';
+import DeploymentVerificationSecure from './_deployment_verification_secure.md';
+import RegisterDevice from './_register_device.md';
 
 This deployment strategy will provide a production-ready system using Google Cloud.
 
@@ -123,6 +125,10 @@ Minimum Requirements:
 
 <InstallArcloud />
 
+<InstallArcloudSetupSecure />
+
 ## Verify Installation
 
-<DeploymentVerification />
+<DeploymentVerificationSecure />
+
+<RegisterDevice />
