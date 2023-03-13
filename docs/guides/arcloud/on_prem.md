@@ -13,8 +13,10 @@ import TabItem from '@theme/TabItem';
 import DownloadArcloud from './_download_arcloud.md';
 import InstallIstio from './_install_istio.md';
 import InstallArcloud from './_install_arcloud.md';
+import InstallArcloudSetup from './_install_arcloud_setup.md';
 import DeploymentVerification from './_deployment_verification.md';
 import DebianDependencies from './_debian_dependencies.md';
+import RegisterDevice from './_register_device.md';
 
 This type of deployment is appropriate for any edge computing, on-premisis, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
@@ -237,6 +239,10 @@ brew install helm
 
 <InstallArcloud />
 
+<InstallArcloudSetup />
+
 ## Verify Installation
 
 <DeploymentVerification />
+
+<RegisterDevice />
