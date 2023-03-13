@@ -35,7 +35,6 @@ The resulting still displays the quality of the image with its current settings,
 
 - **Aspect Ratio**: 4:3 or 9:10 vertically
 - **Quality**: 720p, 1080p or 4k resolution
-- **Split Mode**: Separates the virtual and real content into separate frames. For more information, check the [Split Mode](/docs/guides/developer-tools/android-debug-bridge/android-capture-commands#split-mode) adb capture command documentation.
 
 ![Composition Settings](/img/ml-hub/advanced-capture/composition_settings.jpg)
 
