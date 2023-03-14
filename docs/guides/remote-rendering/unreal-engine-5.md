@@ -30,18 +30,18 @@ If you’re using the Virtual Reality template in Step 1, this step will not be 
 - Make sure `Start in VR` is enabled in **Edit** -> **Project Settings**
 
 3. Set the **RHI** to `Vulkan`
-In **Edit** -> **Project Settings**
 
-1. Under **Platforms** in the left sidebar, select **Windows**
-2. Under **Targeted RHIs**, select `Vulkan` as the `Default RHI`
+Under **Edit** -> **Project Settings**:
 
-Select Vulkan as Default RHI
+- Under **Platforms** in the left sidebar, select **Windows**
+- Under **Targeted RHIs**, select `Vulkan` as the `Default RHI`
 
-Click Restart Now
+4. Click <kbd>Restart Now</kbd>
 
 :::note
 Vulkan is the main supported graphics API for Magic Remote Rendering. Support for DirectX 11 and DirectX 12 are considered as experimental.
 :::
 
-4. VR Preview
-Once the restart and shader compilation finishes, simply click `VR Preview`.
+## VR Preview
+
+Once the editor has been restarted and shader compilation finishes, simply click `VR Preview`.
