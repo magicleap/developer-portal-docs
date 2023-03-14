@@ -16,27 +16,36 @@ keywords: [Rendering, Servers, Unreal, UE, Windrunner]
 
 1. Create a "New Project" with the **Virtual Reality Template**
 
+![Project Browser](/img/unreal-5/project-browser.png)
+
 :::info
 It is recommended to start the Windrunner service ahead of time. But, if it’s not running yet, the Windrunner service will be started automatically.
 :::
 
-2. Enable **OpenXR**
+1. Enable **OpenXR**
 
 :::info
 If you’re using the Virtual Reality template in Step 1, this step will not be necessary. When not using VR template, make sure to go through those setting before proceeding.
 :::
 
 - Make sure the **OpenXR** plugin is installed in **Edit** -> **Plugins**
+
+![OpenXR Plugins Menu](/img/unreal-5/plugins-menu-openxr.png)
+
 - Make sure `Start in VR` is enabled in **Edit** -> **Project Settings**
 
-3. Set the **RHI** to `Vulkan`
+![Project Settings VR](/img/unreal-5/preoject-settings-vr.png)
+
+1. Set the **RHI** to `Vulkan`
 
 Under **Edit** -> **Project Settings**:
 
 - Under **Platforms** in the left sidebar, select **Windows**
 - Under **Targeted RHIs**, select `Vulkan` as the `Default RHI`
 
-4. Click <kbd>Restart Now</kbd>
+![Project Settings Platform Windows RHI](/img/unreal-5/project-settings-platform-windows.png)
+
+1. Click <kbd>Restart Now</kbd>
 
 :::note
 Vulkan is the main supported graphics API for Magic Remote Rendering. Support for DirectX 11 and DirectX 12 are considered as experimental.
@@ -45,3 +54,5 @@ Vulkan is the main supported graphics API for Magic Remote Rendering. Support fo
 ## VR Preview
 
 Once the editor has been restarted and shader compilation finishes, simply click `VR Preview`.
+
+![VR Preview](/img/unreal-5/editor-vr-preview.png)
