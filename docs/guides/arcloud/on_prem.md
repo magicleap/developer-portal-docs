@@ -15,11 +15,47 @@ import InstallIstio from './_install_istio.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetup from './_install_arcloud_setup.md';
 import DeploymentVerification from './_deployment_verification.md';
+import DebianDependencies from './_debian_dependencies.md';
 import RegisterDevice from './_register_device.md';
 
 This type of deployment is appropriate for any edge computing, on-premisis, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
 ## Infrastructure setup
+
+### Install Basic Dependencies
+
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
+<DebianDependencies />
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+#### Install the Windows Subsystem for Linux
+
+:::caution WSL 2 Notice
+All following installation instructions are asssumed to be running in an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
+:::
+
+[Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+<DebianDependencies />
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+#### Install Homebrow and other tools
+
+- Install `brew` (Homebrew), if needed: https://brew.sh/
+- Install `wget`:
+
+```shell
+brew install wget
+```
+
+  </TabItem>
+</Tabs>
 
 ### Install Docker
 
@@ -39,14 +75,6 @@ Post-installation step:
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-#### Install the Windows Subsystem for Linux
-
-:::caution WSL 2 Notice
-All following installation instructions are asssumed to be running in an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
-:::
-
-[Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
-
 #### Install Docker using WSL
 
 [Docker Desktop for Windows Installation](https://docs.docker.com/desktop/install/windows-install/).
@@ -55,15 +83,6 @@ All following installation instructions are asssumed to be running in an activat
   <TabItem value="macos" label="MacOS">
 
 Installation steps for Docker Desktop for [MacOS](https://docs.docker.com/desktop/install/mac-install/)
-
-### Additional Tools
-
-- Install `brew` (Homebrew), if needed: https://brew.sh/
-- Install `wget`:
-
-```shell
-brew install wget
-```
 
 After installing Docker Desktop for MacOS, ensure you enable Kubernetes Support:
 
