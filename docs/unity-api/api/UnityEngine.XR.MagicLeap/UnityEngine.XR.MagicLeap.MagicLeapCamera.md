@@ -101,18 +101,3 @@ public void ValidateFarClip()
 
 -----------
 
-### void ValidateNearClip {#void-validatenearclip}
-
-Validate the Near Clip plane 
-
-```csharp
-public void ValidateNearClip()
-```
-
-
-
-
-
-
------------
-

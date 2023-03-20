@@ -31,6 +31,7 @@ title: MLVoiceNativeBindings.cs
 namespace UnityEngine.XR.MagicLeap
 {
     using System;
+    using System.Linq;
     using System.Runtime.InteropServices;
     using Native;
 
@@ -49,11 +50,27 @@ namespace UnityEngine.XR.MagicLeap
                 newEvent.EventName = intentEvent.Text;
                 newEvent.EventID = intentEvent.IntentID;
 
+                IntentSlotInternal[] internalSlots = ConvertArray<IntentSlotInternal>(intentEvent.AppIntentSlots, intentEvent.AppIntentSlotCount);
+
+                newEvent.EventSlotsUsed = new System.Collections.Generic.List<EventSlot>();
+
+                newEvent.EventSlotsUsed.AddRange(internalSlots.Select(slot => new MLVoice.EventSlot(slot.SlotName, slot.SlotValue)));
+
                 bool eventSuccessful = intentEvent.IsSuccess;
                 MLThreadDispatch.ScheduleMain(() =>
                 {
                     OnVoiceEventInternal?.Invoke(eventSuccessful, newEvent);
                 });
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            public struct IntentSlotInternal
+            {
+                [MarshalAs(UnmanagedType.LPStr)]
+                public string SlotName;
+
+                [MarshalAs(UnmanagedType.LPStr)]
+                public string SlotValue;
             }
 
             [StructLayout(LayoutKind.Sequential)]
@@ -70,6 +87,10 @@ namespace UnityEngine.XR.MagicLeap
                 public string Text;
 
                 public uint IntentID;
+
+                public IntPtr AppIntentSlots;
+
+                public uint AppIntentSlotCount;
             };
 
             [StructLayout(LayoutKind.Sequential)]
@@ -82,7 +103,7 @@ namespace UnityEngine.XR.MagicLeap
                 public static IntentCallbacks Create()
                 {
                     IntentCallbacks callbacks = new IntentCallbacks();
-                    callbacks.Version = 1;
+                    callbacks.Version = 2u;
                     callbacks.OnEvent = MLVoice.NativeBindings.OnEvent;
                     return callbacks;
                 }
@@ -104,6 +125,19 @@ namespace UnityEngine.XR.MagicLeap
 
                     return settings;
                 }
+            }
+
+            private static T[] ConvertArray<T>(IntPtr arrayPtr, ulong count)
+            {
+                T[] convertedArray = new T[count];
+                IntPtr walkPtr = arrayPtr;
+                for (ulong i = 0; i < count; ++i)
+                {
+                    convertedArray[i] = Marshal.PtrToStructure<T>(walkPtr);
+                    walkPtr = new IntPtr(walkPtr.ToInt64() + Marshal.SizeOf<IntPtr>());
+                }
+
+                return convertedArray;
             }
 
             [DllImport(MLVoiceDll, CallingConvention = CallingConvention.Cdecl)]

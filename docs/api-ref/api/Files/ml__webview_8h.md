@@ -48,7 +48,7 @@ title: ml_webview.h
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetProcessSettings](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewsetprocesssettings)**(const [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * settings)<br></br>Specify the process settings to be used for webviews.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCreate](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle, const [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * in_settings)<br></br>Create a MLWebView.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewDestroy](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy a MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetEventCallbacks](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewseteventcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * callbacks)<br></br>Specify the event handler for an MLWebView.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetEventCallbacks](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewseteventcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * callbacks)<br></br>Specify the callbacks for a MLWebView.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewAcquireNextAvailableFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer ** out_native_buffer)<br></br>Acquires next available frame buffer for rendering.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewReleaseFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewreleaseframe)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer * native_buffer)<br></br>Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe).  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoTo](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoto)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const char * url)<br></br>Go to a URL with the specified MLWebView.  |
@@ -313,7 +313,7 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 
 
 **API Level:**
-  * 21 
+  * 24 
 
 
 
@@ -336,7 +336,7 @@ This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/a
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -424,7 +424,7 @@ Initializes a [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/st
 
 
 **API Level:**
-  * 21
+  * 24
 
 
 
@@ -577,7 +577,7 @@ In version >= 2 for MLWebViewCallbacks struct, MLWebViewCreate launches a separa
 
 
 **API Level:**
-  * 21
+  * 24
 
 
 
@@ -634,7 +634,7 @@ MLResult MLWebViewSetEventCallbacks(
 )
 ```
 
-Specify the event handler for an MLWebView. 
+Specify the callbacks for a MLWebView. 
 
 **Parameters**
 
@@ -659,7 +659,7 @@ Specify the event handler for an MLWebView.
 
 
 **API Level:**
-  * 21
+  * 24
 
 
 
@@ -1948,11 +1948,17 @@ typedef struct MLWebViewEventCallbacks {
   void (*on_service_connected)(void* user_data);
   void (*on_service_disconnected)(void* user_data);
   void (*on_service_failed)(MLResult result, void* user_data);
+
+  bool (*on_before_popup)(const char* url, void* user_data);
+
+  void (*on_popup_opened)(uint64_t popup_id, const char* url, void* user_data);
+
+  void (*on_popup_closed)(MLHandle handle, void* user_data);
 } MLWebViewEventCallbacks;
 
 ML_STATIC_INLINE void MLWebViewEventCallbacksInit(MLWebViewEventCallbacks* inout_callback) {
   if (inout_callback) {
-    inout_callback->version = 2u;
+    inout_callback->version = 3u;
     inout_callback->user_data = NULL;
     inout_callback->on_before_resource_load = NULL;
     inout_callback->on_load_end = NULL;
@@ -1964,6 +1970,9 @@ ML_STATIC_INLINE void MLWebViewEventCallbacksInit(MLWebViewEventCallbacks* inout
     inout_callback->on_service_connected = NULL;
     inout_callback->on_service_disconnected = NULL;
     inout_callback->on_service_failed = NULL;
+    inout_callback->on_before_popup = NULL;
+    inout_callback->on_popup_opened = NULL;
+    inout_callback->on_popup_closed = NULL;
   }
 }
 
@@ -1974,15 +1983,19 @@ typedef struct MLWebViewSettings {
   void* application_vm;
   void* context;
   MLWebViewEventCallbacks callbacks;
+  bool is_popup;
+  uint64_t popup_id;
 } MLWebViewSettings;
 
 ML_STATIC_INLINE void MLWebViewSettingsInit(MLWebViewSettings* inout_settings) {
   if (inout_settings) {
-    inout_settings->version = 1;
+    inout_settings->version = 3u;
     inout_settings->width = 1200;
     inout_settings->height = 750;
     inout_settings->application_vm = NULL;
     inout_settings->context = NULL;
+    inout_settings->is_popup = false;
+    inout_settings->popup_id = 0;
     MLWebViewEventCallbacksInit(&inout_settings->callbacks);
   }
 }

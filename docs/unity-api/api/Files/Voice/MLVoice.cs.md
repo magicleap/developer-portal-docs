@@ -31,6 +31,7 @@ title: MLVoice.cs
 namespace UnityEngine.XR.MagicLeap
 {
     using UnityEngine;
+    using System.Collections.Generic;
 
     public partial class MLVoice : MLAutoAPISingleton<MLVoice>
     {
@@ -60,6 +61,18 @@ namespace UnityEngine.XR.MagicLeap
             NoMatch
         };
 
+        public struct EventSlot
+        {
+            public string SlotName;
+            public string SlotValue;
+
+            public EventSlot(string name, string value)
+            {
+                this.SlotName = name;
+                this.SlotValue = value;
+            }
+        }
+
         public struct IntentEvent
         {
             public State State;
@@ -69,6 +82,9 @@ namespace UnityEngine.XR.MagicLeap
             public string EventName;
 
             public uint EventID;
+
+            // <summary>
+            public List<EventSlot> EventSlotsUsed;
         };
 
         public delegate void OnVoiceEventDelegate(in bool wasSuccessful, in IntentEvent voiceEvent);

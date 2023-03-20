@@ -17,6 +17,40 @@ A structure containing voice intent event data.
 
 ## Public Attributes
 
+### AppIntentSlotCount {#uint-appintentslotcount}
+
+Count of an array AppIntentSlots. 
+
+```csharp
+
+public uint AppIntentSlotCount;
+
+```
+
+
+
+
+
+
+-----------
+
+### AppIntentSlots {#intptr-appintentslots}
+
+Array of app-intent slot, array count is set in app&#95;intent&#95;slot&#95;count. Count of an array app&#95;intent&#95;slots. 
+
+```csharp
+
+public IntPtr AppIntentSlots;
+
+```
+
+
+
+
+
+
+-----------
+
 ### IntentID {#uint-intentid}
 
 User defined intent index which is detected. 
