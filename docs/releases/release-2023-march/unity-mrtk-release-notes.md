@@ -30,7 +30,7 @@ Initial Update to 1.5.0
 
 ## 1.5.0 Version 1 Updates
 
-- Updated to MagicLeap SDK 1.2.0-Dev2 and MagicLeap Unity SDK 1.5.0.
+- Updated to MagicLeap SDK 1.2.0-dev2 and MagicLeap Unity SDK 1.5.0.
 - In the Speech Commands Magic leap Profile added support for Voice Intent Slots.
 - Fixed issue when both handtracking and controller are tracked at once and added an option to disable handtracking for the hand holding the controller.
 - Begin updating UI look and feel to better match Magic Leap aesthetic.
