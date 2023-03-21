@@ -1,7 +1,7 @@
 ---
 id: voice-intents-example-scripts
 title: Simple Example
-sidebar_position: 3
+sidebar_position: 6
 date: 06/27/2022
 tags: [Unity, Input, Voice, Voice Intents]
 keywords: [Unity, Input, Voice, Voice Intents]
