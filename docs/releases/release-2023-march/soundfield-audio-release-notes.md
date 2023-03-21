@@ -5,11 +5,12 @@ sidebar_position: 6
 date: 03/22/2022
 ---
 
-**Soundfield Audio** is the term given to Magic Leap's proprietary solution for audio spatialization and room modeling. Colloquially, **Soundfield Audio** is also referred to as **MSA**, short for Magic Leap Soundfield Audio. Audio spatialization is the processing of sounds so that they appear to come from defined locations in 3D space around the listener. MSA is a Unity Game-Plugin NPM package, install it with Package Manager in Unity.
+**Soundfield Audio** is Magic Leap's proprietary solution for audio spatialization and room modeling. Audio spatialization is the processing of sounds so that they appear to come from defined locations in 3D space around the listener. Soundfield Audio is a Unity Game-Plugin NPM package, and can be installed with Package Manager in Unity.
 
 ## General Notes
 
-- Automatic spatial audio: Starting with 3.3.0 you could add spatial audio to your project by just installing and selecting the MSA (Soundfield) plugin. No need to add components (you could still add them for extra features) but you would get a default behavior for point sources and listener that would fit a lot of use cases for spatial audio.
+- Automatic spatial audio:
+  - Starting with 3.3.0 you may add spatial audio to your project just by installing and selecting the Soundfield plugin. You no longer need to add components, though you could still add them for extra features. The default behavior for point sources and listener may fit a wide range of use cases for spatial audio.
 - New look for gizmo rendering
 
 Breaking change in 3.2.3 (previous version): OSOffload has been moved from the MLListener component to our global scriptable object MSAGlobalScriptableObject.
