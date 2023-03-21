@@ -31,6 +31,9 @@ Event handler for MLWebView callbacks.  [More...](#detailed-description)
 | void(*)(void *user_data) | **[on_service_connected](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-connected)** <br></br>This callback is used to pass notify user of service connection.  |
 | void(*)(void *user_data) | **[on_service_disconnected](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-disconnected)** <br></br>This callback is used to notify user that service is disconnect.  |
 | void(*)(MLResult result, void *user_data) | **[on_service_failed](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-failed)** <br></br>This callback is used to notify user that service has failed.  |
+| bool(*)(const char *url, void *user_data) | **[on_before_popup](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#bool-on-before-popup)** <br></br>This callback is used to ask the application if is OK to load a URL.  |
+| void(*)(uint64_t popup_id, const char *url, void *user_data) | **[on_popup_opened](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-popup-opened)** <br></br>This callback is used to notify application that popup is opened.  |
+| void(*)(MLHandle handle, void *user_data) | **[on_popup_closed](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-popup-closed)** <br></br>This callback is used to notify the application of a closing popup.  |
 
 ## Detailed Description
 
@@ -46,7 +49,7 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 
 
 **API Level:**
-  * 21 
+  * 24 
 
 
 
@@ -341,6 +344,93 @@ This callback is used to notify user that service has failed.
 :::note
 on_service_failed is for version >= 2.
 :::
+
+
+
+-----------
+
+### on_before_popup {#bool-on-before-popup}
+
+```cpp
+bool(*)(const char *url, void *user_data) on_before_popup;
+```
+
+This callback is used to ask the application if is OK to load a URL. 
+
+
+| Type | Description |
+|--|--|
+| bool(*)(const char *url, void *user_data) | )(const char *url, void *user_data) |
+
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+|  |result|The application should return true if it accepts the popup and false otherwise. |
+|  |user_data|The user data passed back to the user. |
+
+
+:::note
+on_before_popup is for version >= 3.
+:::
+
+
+
+-----------
+
+### on_popup_opened {#void-on-popup-opened}
+
+```cpp
+void(*)(uint64_t popup_id, const char *url, void *user_data) on_popup_opened;
+```
+
+This callback is used to notify application that popup is opened. 
+
+
+| Type | Description |
+|--|--|
+| void(*)(uint64_t popup_id, const char *url, void *user_data) | )(uint64_t popup_id, const char *url, void *user_data) |
+
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+|  |user_data|The user data passed back to the user. |
+
+
+:::note
+on_popup_opened is for version >= 3.
+:::
+
+
+
+-----------
+
+### on_popup_closed {#void-on-popup-closed}
+
+```cpp
+void(*)(MLHandle handle, void *user_data) on_popup_closed;
+```
+
+This callback is used to notify the application of a closing popup. 
+
+
+| Type | Description |
+|--|--|
+| void(*)(MLHandle handle, void *user_data) | )(MLHandle handle, void *user_data) |
+
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+|  |handle|the webview handle of the popup being closed |
+|  |user_data|The user data passed back to the user. |
+This callback is used to notify the application of a popup that is being closed. For example, this can happen if window.close() is used. This is not always called. If the application closes the popup itself, then this function is not called. An application should call MLWebViewDestroy as soon as possible on the popup's handle after receiving this callback.
+
+
 
 
 

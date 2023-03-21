@@ -103,6 +103,19 @@ public static void StartTracking()
 
 -----------
 
+### void StopTracking {#void-stoptracking}
+
+```csharp
+public static void StopTracking()
+```
+
+
+
+
+
+
+-----------
+
 ### bool TryGetKeyPointsMask {#bool-trygetkeypointsmask}
 
 ```csharp

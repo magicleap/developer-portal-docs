@@ -25,6 +25,8 @@ Struct to define webview initialization.  [More...](#detailed-description)
 | void * | **[application_vm](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#void-application-vm)**  |
 | void * | **[context](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#void-context)**  |
 | [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) | **[callbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#mlwebvieweventcallbacks-callbacks)**  |
+| bool | **[is_popup](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#bool-is-popup)**  |
+| uint64_t | **[popup_id](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint64-t-popup-id)**  |
 
 ## Detailed Description
 
@@ -40,7 +42,7 @@ This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/a
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -135,6 +137,36 @@ MLWebViewEventCallbacks callbacks;
 
 
 Event callbacks for interacting with webview. 
+
+
+
+
+
+-----------
+
+### is_popup {#bool-is-popup}
+
+```cpp
+bool is_popup;
+```
+
+
+Is this a popup? 
+
+
+
+
+
+-----------
+
+### popup_id {#uint64-t-popup-id}
+
+```cpp
+uint64_t popup_id;
+```
+
+
+Popup identifier used to create a webview. 
 
 
 

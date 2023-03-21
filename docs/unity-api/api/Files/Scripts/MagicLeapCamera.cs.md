@@ -18,6 +18,7 @@ title: MagicLeapCamera.cs
 ## Source code
 
 ```csharp
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.Collections;
@@ -51,6 +52,9 @@ namespace UnityEngine.XR.MagicLeap
         [SerializeField]
         private bool fixProblemsOnStartup = true;
 
+        [SerializeField]
+        private bool recenterXROriginAtStart = true;
+
         private static readonly float MINIMUM_NEAR_CLIP_METERS = MLDevice.MinimumNearClipDistance;
 
         private static readonly CameraClearFlags DEFAULT_CLEAR_FLAGS = CameraClearFlags.SolidColor;
@@ -79,6 +83,19 @@ namespace UnityEngine.XR.MagicLeap
         {
             camera = GetComponent<Camera>();
             FixupCamera(fixProblemsOnStartup);
+
+            RenderingSettings.enforceNearClip = enforceNearClip;
+        }
+
+        private IEnumerator Start()
+        {
+            yield return new WaitForEndOfFrame();
+            if (recenterXROriginAtStart)
+            {
+                var xro = FindObjectOfType<Unity.XR.CoreUtils.XROrigin>();
+                xro?.MoveCameraToWorldLocation(Vector3.zero);
+                xro?.MatchOriginUpCameraForward(Vector3.up, Vector3.forward);
+            }
         }
 
         private void Reset()
@@ -95,7 +112,6 @@ namespace UnityEngine.XR.MagicLeap
 
             RenderingSettings.cameraScale = RenderingUtility.GetParentScale(transform);
             ValidateFarClip();
-            ValidateNearClip();
 
             camera.stereoConvergence = CalculateFocusDistance();
             RenderingSettings.focusDistance = camera.stereoConvergence;
@@ -112,19 +128,6 @@ namespace UnityEngine.XR.MagicLeap
                 if (enforceFarClip)
                 {
                     camera.farClipPlane = max;
-                }
-            }
-        }
-
-        public void ValidateNearClip()
-        {
-            var nearClip = camera.nearClipPlane;
-            var min = RenderingSettings.minNearClipDistance;
-            if (nearClip < min)
-            {
-                if (enforceNearClip)
-                {
-                    camera.nearClipPlane = min;
                 }
             }
         }
