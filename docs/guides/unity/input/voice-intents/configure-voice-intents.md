@@ -1,6 +1,6 @@
 ---
 title: Runtime Configuration
-sidebar_position: 3
+sidebar_position: 2
 date: 09/23/2022
 tags: [Unity, Input, Voice, Voice Intents]
 keywords: [Unity, Input, Voice, Voice Intents]

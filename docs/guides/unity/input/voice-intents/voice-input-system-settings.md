@@ -1,6 +1,6 @@
 ---
 title: Voice Input System Settings
-sidebar_position: 3
+sidebar_position: 5
 date: 09/23/2022
 tags: [Unity, Input, Voice, Voice Intents]
 keywords: [Unity, Input, Voice, Voice Intents]
