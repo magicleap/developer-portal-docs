@@ -18,7 +18,7 @@ import DeploymentVerification from './_deployment_verification.md';
 import DebianDependencies from './_debian_dependencies.md';
 import RegisterDevice from './_register_device.md';
 
-This type of deployment is appropriate for any edge computing, on-premisis, or any other deployment strategy that does not involve [Google Cloud](/versioned_docs/version-22-Feb-2023/guides/arcloud/arcloud-deployment-gcp) or [AWS](/versioned_docs/version-22-Feb-2023/guides/arcloud/arcloud-deployment-aws).
+This type of deployment is appropriate for any edge computing, on-premiss, or any other deployment strategy that does not involve [Google Cloud](/versioned_docs/version-22-Feb-2023/guides/arcloud/gcp.md) or [AWS](/versioned_docs/version-22-Feb-2023/guides/arcloud/aws.md).
 
 ## Infrastructure setup
 

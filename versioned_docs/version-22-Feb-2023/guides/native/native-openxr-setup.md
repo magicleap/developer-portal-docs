@@ -21,7 +21,7 @@ The Magic Leap 2 has been certified as conformant as of the 1.1.0 release.
 
 - Native SDK Version `1.0.0` (Only needed when building when using [Magic Leap Native API](/versioned_docs/version-22-Feb-2023/api-ref/api/indexpage.md), like the Magic Leap samples)
 - OpenXR SDK Version `1.0.25` or higher
-- Completed [Magic Leap Native SDK instructions.](/versioned_docs/version-22-Feb-2023/guides/native/getting-started/native-getting-started)
+- Completed [Magic Leap Native SDK instructions.](/versioned_docs/version-22-Feb-2023/guides/native/getting-started/native-getting-started.md)
 
 ## Limitations
 
@@ -165,7 +165,7 @@ To access the Package manager in ML Hub
 
 ## Building the Magic Leap OpenXR samples
 
-To build the Magic Leap OpenXR samples please follow the normal [Magic Leap Native SDK instructions.](/versioned_docs/version-22-Feb-2023/guides/native/getting-started/native-getting-started).
+To build the Magic Leap OpenXR samples please follow the normal [Magic Leap Native SDK instructions.](/versioned_docs/version-22-Feb-2023/guides/native/getting-started/native-getting-started.md).
 
 These samples can be built using Android Studio or command line via Gradle.
 

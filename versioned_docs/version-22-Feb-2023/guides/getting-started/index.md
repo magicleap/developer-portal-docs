@@ -4,7 +4,7 @@ import EnableDeveloperMode from '../developer-tools/_enable_developer_mode.md';
 
 # Getting Started Overview
 
-Learn how to get started developing on the Magic Leap 2. See [Resources](/versioned_docs/version-22-Feb-2023/guides/getting-started#resources) below for the full list.
+Learn how to get started developing on the Magic Leap 2. See [Resources](#resources) below for the full list.
 
 ## Developer Mode
 

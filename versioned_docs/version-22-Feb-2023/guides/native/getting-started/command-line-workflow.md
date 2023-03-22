@@ -248,6 +248,6 @@ rm -rf app/build
 You can find the output APK in the *app/build/outputs/apk/ml2/* directory.
 
 :::note
-**Application Simulator** is a tool that [allows you to run your apps](/versioned_docs/version-22-Feb-2023/guides/developer-tools/app-sim/using-app-sim#overview) on your Windows PC or macOS without needing to build for the device. When you build apps for Application Simulator, you must [launch them using the ZILauncher](/versioned_docs/version-22-Feb-2023/guides/developer-tools/app-sim/using-app-sim#launching-c-api-apps). To learn more about Application Simulator, check the [Application Simulator Guide](/versioned_docs/version-22-Feb-2023/guides/developer-tools/app-sim/app-simulator.md).
+**Application Simulator** is a tool that [allows you to run your apps](/versioned_docs/version-22-Feb-2023/guides/developer-tools/app-sim/using-app-sim.md#overview) on your Windows PC or macOS without needing to build for the device. When you build apps for Application Simulator, you must [launch them using the ZILauncher](/versioned_docs/version-22-Feb-2023/guides/developer-tools/app-sim/using-app-sim.md#launching-c-api-apps). To learn more about Application Simulator, check the [Application Simulator Guide](/versioned_docs/version-22-Feb-2023/guides/developer-tools/app-sim/app-simulator.md).
 :::
 

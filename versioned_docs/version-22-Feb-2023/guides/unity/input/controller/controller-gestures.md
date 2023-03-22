@@ -61,7 +61,7 @@ public class ExampleClass : MonoBehaviour
 
 ## See also
 
-- [`TouchpadGestureEvent`](/versioned_docs/version-22-Feb-2023/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent/)
+- [`TouchpadGestureEvent`](/versioned_docs/version-22-Feb-2023/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md)
   - The event data related to a Magic Leap Touchpad gesture.
   
 

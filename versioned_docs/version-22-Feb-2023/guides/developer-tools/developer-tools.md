@@ -12,7 +12,7 @@ import EnableDeveloperMode from './_enable_developer_mode.md';
 
 ## Overview
 
-Magic Leap offers many tools to aid developers in creating and presenting their projects. See [Resources](/versioned_docs/version-22-Feb-2023/guides/developer-tools#resources) below for the full list.
+Magic Leap offers many tools to aid developers in creating and presenting their projects. See [Resources](#resources) below for the full list.
 
 ## Developer Mode
 

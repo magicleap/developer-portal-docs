@@ -8,7 +8,7 @@ keywords: [Stability, Focus Distance, Stereo Convergence, Display, Time-warp]
 
 # Improve Visual Stability
 
-Visual stability refers to how well the content appears to be anchored to the real world when moving your device. Developers can improve how well their content appears stable by setting Magic Leap 2's Focus Distance(Native)/Stereo Convergence (Unity))
+Visual stability refers to how well the content appears to be anchored to the real world when moving your device. Developers can improve how well their content appears stable by setting Magic Leap 2's Focus Distance(Native)/Stereo Convergence (Unity)
 
 ## Overview
 
@@ -79,7 +79,7 @@ Please consult the recommendations section above to understand how to avoid fall
 
 import Link from '@docusaurus/Link';
 
-<h3><Link to="versioned_docs/version-03-Jan-2023/guides/unity/display/unity-stabilization-overview.md"> Improve Content Stability Unity</Link> </h3>
+
+<h3><Link to="/docs/22-Feb-2023/guides/unity/display/unity-stabilization-overview"> Improve Content Stability Unity</Link> </h3>
 
 Learn how to use the Magic Leap Camera component and it's focus distance to improve visual stability.
-

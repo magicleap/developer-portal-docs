@@ -19,7 +19,7 @@ adb bugreport
 
 This .ZIP archive will be saved on-device at the path, `/bugreports/` with a path resembling, `bugreport-demophon_aosp-B3E.221128.08-R.092-2023-02-14-11-59-32.zip`.
 
-Downloading the file is as simple as navigating to the [Device Bridge](/versioned_docs/version-22-Feb-2023/guides/developer-tools/ml-hub/ml-hub-device-bridge), going to the Files tab, and selecting the relevant bug report:
+Downloading the file is as simple as navigating to the [Device Bridge](/versioned_docs/version-22-Feb-2023/guides/developer-tools/ml-hub/ml-hub-device-bridge.md), going to the Files tab, and selecting the relevant bug report:
 
 ![Downloading a bug report through the Device Bridge](/img/developer-tools/adb/adb-bugreport-files.png)
 

@@ -7,7 +7,7 @@ date: 02/14/2023
 
 Learn about the hardware and get started developing for Magic Leap 2.
 
-## [Getting Started](/versioned_docs/version-22-Feb-2023/guides/getting-started)
+## [Getting Started](/versioned_docs/version-22-Feb-2023/guides/getting-started/index.md)
 
 Pick your development environment and and start building your ML2 application using the guides below.
 
