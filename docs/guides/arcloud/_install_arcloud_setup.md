@@ -2,10 +2,10 @@
 
 ```shell showLineNumbers
 ./setup.sh \
-  --set global.domain=${DOMAIN} \
-  --no-secure \
-  --no-observability \
-  --accept-sla
+    --set global.domain=${DOMAIN} \
+    --no-secure \
+    --no-observability \
+    --accept-sla
 ```
 
 :::note Software License Agreement

@@ -11,14 +11,18 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import DownloadArcloud from './_download_arcloud.md';
+import ArcloudEnvVariables from './_arcloud_env.md';
+import FindIPAddress from './_find_ip.md';
+import EnableK8sInDockerDesktop from './_docker_k8s.md';
 import InstallIstio from './_install_istio.md';
+import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetup from './_install_arcloud_setup.md';
 import DeploymentVerification from './_deployment_verification.md';
 import DebianDependencies from './_debian_dependencies.md';
 import RegisterDevice from './_register_device.md';
 
-This type of deployment is appropriate for any edge computing, on-premisis, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
+This type of deployment is appropriate for any edge computing, on-premises, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
 ## Infrastructure setup
 
@@ -35,24 +39,74 @@ This type of deployment is appropriate for any edge computing, on-premisis, or a
 #### Install the Windows Subsystem for Linux
 
 :::caution WSL 2 Notice
-All following installation instructions are asssumed to be running in an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
-:::
+All following installation instructions are assumed to be running inside an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
 
 [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+:::
+
+```shell
+wsl --install
+```
+
+Launch the shell of the default WSL distribution:
+
+```shell
+wsl
+```
+
+#### Configure WSL
+
+Download the [custom kernel for WSL](https://github.com/psemuu/WSL2-Linux-Kernel/releases/download/5.15.90.1%2Bistio/wsl2-kernel-with-istio-dns-support) and save it on disk `C:\`.
+
+Create or edit the global WSL configuration file for your current user:
+
+- using Command Prompt:
+
+  ```shell
+  notepad %UserProfile%/.wslconfig
+  ```
+
+- using PowerShell:
+
+  ```shell
+  notepad $env:USERPROFILE/.wslconfig
+  ```
+
+Use the following configuration for WSL (adjust the kernel path if needed):
+
+```ini
+[wsl2]
+memory=16GB
+processors=5
+kernel=C:\\wsl2-kernel-with-istio-dns-support
+localhostForwarding=false
+```
+
+Restart WSL for the changes to take effect:
+
+```shell
+wsl --shutdown
+wsl
+```
+
+Verify that the new kernel is used:
+
+```shell
+uname -r
+```
+
+:::info Expected Result
+The output should be **5.15.90.1-k8s-optimized-WSL2+**.
+:::
+
+#### Install required packages inside the WSL distribution
 
 <DebianDependencies />
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-#### Install Homebrow and other tools
-
-- Install `brew` (Homebrew), if needed: https://brew.sh/
-- Install `wget`:
-
-```shell
-brew install wget
-```
+Install `brew` (Homebrew), if needed: https://brew.sh/
 
   </TabItem>
 </Tabs>
@@ -75,22 +129,12 @@ Post-installation step:
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-#### Install Docker using WSL
-
-[Docker Desktop for Windows Installation](https://docs.docker.com/desktop/install/windows-install/).
+Install [Docker Desktop with the WSL 2 backend](https://docs.docker.com/desktop/install/windows-install/).
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Installation steps for Docker Desktop for [MacOS](https://docs.docker.com/desktop/install/mac-install/)
-
-After installing Docker Desktop for MacOS, ensure you enable Kubernetes Support:
-
-![Enable Kubernetes Support in Docker Desktop](/img/arcloud/macos-docker-kubernetes.png)
-
-:::note
-On future runs of AR Cloud setup processes, it will be important to make sure that Docker and the Kubernetes services are started.
-:::
+Install [Docker Desktop for MacOS](https://docs.docker.com/desktop/install/mac-install/).
 
   </TabItem>
 </Tabs>
@@ -99,9 +143,21 @@ On future runs of AR Cloud setup processes, it will be important to make sure th
 
 <DownloadArcloud />
 
+### Configure Environment
+
+<ArcloudEnvVariables />
+
+### Prepare Your IP Address
+
+<FindIPAddress />
+
+Set the IP address where AR Cloud will be available:
+
 ```shell
-export DOMAIN="<your network adapter IP(IPv4)>"
+export DOMAIN="<IPv4 address of your active network adapter>"
 ```
+
+### Install Kubernetes
 
 :::note Kubernetes
 Recommended Requirements:
@@ -114,24 +170,16 @@ Recommended Requirements:
 If your computer is connected to more than one network interface (example: WiFi *and* Ethernet), select which network IP you want to receive the Kubernetes-related traffic.
 :::
 
-Export your **network IP** (IPv4) to an environment variable
-
-```shell
-export ROUTER_LEASED_IP=<your network adapter IP>
-```
-
 <Tabs groupId="operating-systems">
   <TabItem value="linux" label="Debian/Ubuntu" default>
 
-#### Installing K3s - Kubernetes Distribution by Rancher
-
-Removing previous **Rancher K3s** **Kubernetes** installation (skip if you do not have **K3s** installed):
+Remove previous **Rancher K3s** **Kubernetes** installation (skip if you do not have **K3s** installed):
 
 ```shell
 /usr/local/bin/k3s-uninstall.sh
 ```
 
-Set the required environment variables:
+Set the version of **K3s** to be installed:
 
 ```shell
 export INSTALL_K3S_VERSION=v1.23.9+k3s1
@@ -141,10 +189,10 @@ Run setup script:
 
 ```shell showLineNumbers
 curl -sfL https://get.k3s.io | sh -s - \
---docker \
---no-deploy traefik \
---write-kubeconfig-mode 600 \
---node-external-ip ${ROUTER_LEASED_IP}
+    --docker \
+    --no-deploy traefik \
+    --write-kubeconfig-mode 600 \
+    --node-external-ip ${DOMAIN}
 ```
 
 Configure **K3s** service:
@@ -165,24 +213,14 @@ systemctl status k3s
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-Follow [these instructions for enabling Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
-
-:::note Resources
-Set `Memory` resources to at least 12 GB RAM from:
-
-`Docker Desktop` > `Settings` > `Advanced`
-:::
+<EnableK8sInDockerDesktop />
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Follow [these instructions for enabling Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
+<EnableK8sInDockerDesktop />
 
-:::note Resources
-Set `Memory` resources to at least 12 GB RAM from:
-
-`Docker Desktop` > `Settings` > `Advanced`
-:::
+![Enable Kubernetes Support in Docker Desktop](/img/arcloud/macos-docker-kubernetes.png)
 
   </TabItem>
 </Tabs>
@@ -233,7 +271,33 @@ brew install helm
 
 ## Install Istio
 
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
 <InstallIstio />
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+Update the Istio configuration for it to work with WSL:
+
+```shell
+sed -i'' -e 's/values:/values:\n    global:\n      proxy:\n        privileged: true/' ../setup/istio.yaml
+```
+
+<InstallIstio />
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+<InstallIstio />
+
+  </TabItem>
+</Tabs>
+
+### Install Istio Gateway
+
+<InstallIstioGateway />
 
 ## Install ARCloud
 

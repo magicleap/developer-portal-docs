@@ -14,6 +14,7 @@ import TabItem from '@theme/TabItem';
 import Utm from './_utm.md';
 import VirtualBoxImport from './_virtual_box_import.md';
 import VirtualBoxLimitations from './_virtual_box_limitations.md';
+import FindIPAddress from './_find_ip.md';
 import DeploymentVerification from './_deployment_verification.md';
 
 The provided OVA image contains all the necessary infrastructure and services pre-configured to manage and work
@@ -233,40 +234,7 @@ passwd
 
 To access the virtual machine, the IP address of your machine is needed.
 
-The IP address might differ depending on the target platform:
-
-* for local deployments - the loopback interface address (`127.0.0.1`) or the address of another network interface on the machine (e.g. `192.168.1.101`)
-* for cloud providers - the configured/assigned public IP of the instance
-
-To list the available IPv4 addresses on your machine/instance, try one of the following commands:
-
-<Tabs groupId="operating-systems">
-  <TabItem value="ubuntu" label="Ubuntu 20.04" default>
-
-```shell
-ip addr | awk '/inet / { print $2 }'
-```
-
-  </TabItem>
-  <TabItem value="windows" label="Windows" default>
-
-```shell
-ipconfig /all | findstr /i /c:"ipv4"
-```
-
-  </TabItem>
-  <TabItem value="macos" label="MacOS" default>
-
-```shell
-ifconfig | awk '/inet / { print $2 }'
-```
-
-  </TabItem>
-</Tabs>
-
-:::caution Caution
-Verify that your Magic Leap device has an IP address assigned from the same subnet as your machine or the device is able to access one of the IP addresses from the list above (your router allows connectivity between different subnets).
-:::
+<FindIPAddress />
 
 Apart from using the graphical interface directly, you can also access the machine using SSH:
 
