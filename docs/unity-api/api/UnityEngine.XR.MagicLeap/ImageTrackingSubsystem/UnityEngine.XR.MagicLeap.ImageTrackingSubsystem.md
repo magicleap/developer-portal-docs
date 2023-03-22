@@ -24,7 +24,7 @@ Inherits from: <br></br>XRImageTrackingSubsystem
 
 ### CreateProvider {#override-provider-createprovider}
 
-Create the generic XRProvider object from the magic leap Provider 
+Create the generic XR Provider object from the magic leap Provider 
 
 ```csharp
 protected override Provider CreateProvider()

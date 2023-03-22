@@ -86,6 +86,24 @@ public bool AutoAllowAllSystemIntents;
 
 -----------
 
+### SlotsForVoiceCommands {#list-slotsforvoicecommands}
+
+```csharp
+
+public List< SlotData > SlotsForVoiceCommands;
+
+```
+
+| Type | Description  | 
+|--|--|
+| List&lt; [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) &gt; | The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.  |
+
+
+
+
+
+-----------
+
 ### SystemCommands {#systemintentflags-systemcommands}
 
 ```csharp

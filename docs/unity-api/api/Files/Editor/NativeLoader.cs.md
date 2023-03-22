@@ -21,7 +21,7 @@ title: NativeLoader.cs
 using System;
 using System.Runtime.InteropServices;
 
-namespace Tests.Editor
+namespace UnitySDKEditorTests
 {
     public static class NativeLoader
     {

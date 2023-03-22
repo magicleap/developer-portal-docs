@@ -51,6 +51,28 @@ public string EventName;
 
 -----------
 
+### EventSlotsUsed {#list-eventslotsused}
+
+```csharp
+
+public List< EventSlot > EventSlotsUsed;
+
+```
+
+| Type | Description  | 
+|--|--|
+| List&lt; [EventSlot](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.EventSlot.md) &gt; | Slot Data in voice event.  |
+
+**Details**
+
+List of Slot Data used in this specific event. 
+
+
+
+
+
+-----------
+
 ### NoIntentReason {#nointentreason-nointentreason}
 
 If intent is not detected, it contains the reason, otherwise the value is MLVoiceIntentNoIntentReason.NoReason. 

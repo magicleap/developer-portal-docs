@@ -1,7 +1,7 @@
 ---
 id: voice-intents-overview
 title: Voice Intents Overview
-sidebar_position: 0
+sidebar_position: 1
 date: 06/30/2022
 tags: [Unity, Input, Voice, Voice Intents]
 keywords: [Unity, Input, Voice, Voice Intents]

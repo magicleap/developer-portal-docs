@@ -240,9 +240,7 @@ namespace UnityEngine.XR.MagicLeap
             }
 
             public MLResult Stop()
-            {
-                UnlinkDataSource();
-
+            { 
                 MLResult.Code resultCode = NativeBindings.MLMediaPlayerStop(this.handle);
                 bool stopped = MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLMediaPlayerStop));
                 if (stopped)
@@ -412,13 +410,19 @@ namespace UnityEngine.XR.MagicLeap
                 return MLResult.Create(resultCode);
             }
 
+            private void PostReset()
+            {
+                IsPrepared = false;
+                VideoRenderer?.Cleanup();
+                UnlinkDataSource();
+            }
+
             public MLResult Reset()
             {
                 var resultCode = NativeBindings.MLMediaPlayerReset(handle);
                 if (MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLMediaPlayerReset)))
                 {
-                    IsPrepared = false;
-                    VideoRenderer?.Cleanup();
+                    PostReset();
                 }
                 return MLResult.Create(resultCode);
             }
@@ -428,8 +432,7 @@ namespace UnityEngine.XR.MagicLeap
                 var resultCode = NativeBindings.MLMediaPlayerResetAsync(this.handle);
                 if (MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLMediaPlayerResetAsync)))
                 {
-                    IsPrepared = false;
-                    VideoRenderer?.Cleanup();
+                    PostReset();
                 }
                 return MLResult.Create(resultCode);
             }

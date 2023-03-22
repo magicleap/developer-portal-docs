@@ -8,7 +8,7 @@ title: MagicLeapSupport
 
 
 **NameSpace:** 
-UnityEditor.XR.OpenXR.Features
+Features
 
 
 
