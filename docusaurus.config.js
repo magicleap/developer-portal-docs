@@ -275,6 +275,9 @@ module.exports = {
             '22-Feb-2023': {
               label: '22 Feb 2023'
             },
+            // '22-Feb-2023': {
+            //   label: '22 Feb 2023'
+            // },
           },
         },
         theme: {
