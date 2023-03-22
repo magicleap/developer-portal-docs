@@ -35,3 +35,18 @@ public List< JSONData > app_intents;
 
 -----------
 
+### app_slots {#list-app-slots}
+
+```csharp
+
+public List< SlotDataInternal > app_slots;
+
+```
+
+
+
+
+
+
+-----------
+

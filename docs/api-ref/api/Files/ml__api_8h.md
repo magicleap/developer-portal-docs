@@ -568,6 +568,7 @@ ML_STATIC_INLINE const char* ML_CALL MLGetResultString(MLResult result_code) {
     case MLResult_PermissionDenied: return "MLResult_PermissionDenied";
     case MLResult_NotImplemented: return "MLResult_NotImplemented";
     case MLResult_ClientLimitExceeded: return "MLResult_ClientLimitExceeded";
+    case MLResult_IncompatibleSKU: return "MLResult_IncompatibleSKU";
     case MLResult_PoseNotFound: return "MLResult_PoseNotFound";
     case MLResult_PerceptionSystemNotStarted: return "MLResult_PerceptionSystemNotStarted";
     case MLResult_IllegalState: return "MLResult_IllegalState";

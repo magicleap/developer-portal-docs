@@ -40,9 +40,7 @@ namespace UnityEngine.XR.MagicLeap
     [Preserve]
     public sealed partial class GestureSubsystem : XRGestureSubsystem
     {
-        public List<Extensions.TouchpadGestureEvent> touchpadGestureEvents { get { return magicLeapProvider.touchpadGestureEvents; } }
-
-        MagicLeapGestureProvider magicLeapProvider = new MagicLeapGestureProvider();
+        public List<Extensions.TouchpadGestureEvent> touchpadGestureEvents { get { return ((MagicLeapGestureProvider)provider).touchpadGestureEvents; } }
 
         internal bool ControllerGesturesEnabled
         {
@@ -54,7 +52,7 @@ namespace UnityEngine.XR.MagicLeap
 
         class MagicLeapGestureProvider : Provider
         {
-            public List<Extensions.TouchpadGestureEvent> touchpadGestureEvents { get { return m_TouchpadGestureEvents; } }
+            internal List<Extensions.TouchpadGestureEvent> touchpadGestureEvents { get { return m_TouchpadGestureEvents; } }
             List<Extensions.TouchpadGestureEvent> m_TouchpadGestureEvents = new List<Extensions.TouchpadGestureEvent>();
 
             List<GestureInputDevice> gestureInputDevices = new List<GestureInputDevice>()

@@ -44,7 +44,7 @@ MLCoordinateFrameUID id;
 ```
 
 
-The UID to represent the block. 
+The UID to represent the block. Note: Not for use with perception snapshot system, purely a unique identifier. 
 
 
 

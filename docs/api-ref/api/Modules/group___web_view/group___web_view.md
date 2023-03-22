@@ -49,7 +49,7 @@ APIs for the WebView component.  [More...](#detailed-description)
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetProcessSettings](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewsetprocesssettings)**(const [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * settings)<br></br>Specify the process settings to be used for webviews.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCreate](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle, const [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * in_settings)<br></br>Create a MLWebView.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewDestroy](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy a MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetEventCallbacks](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewseteventcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * callbacks)<br></br>Specify the event handler for an MLWebView.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetEventCallbacks](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewseteventcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * callbacks)<br></br>Specify the callbacks for a MLWebView.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewAcquireNextAvailableFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer ** out_native_buffer)<br></br>Acquires next available frame buffer for rendering.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewReleaseFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewreleaseframe)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer * native_buffer)<br></br>Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe).  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoTo](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoto)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const char * url)<br></br>Go to a URL with the specified MLWebView.  |
@@ -332,7 +332,7 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 
 
 **API Level:**
-  * 21 
+  * 24 
 
 
 
@@ -355,7 +355,7 @@ This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/a
 
 
 **API Level:**
-  * 20 
+  * 24 
 
 
 
@@ -443,7 +443,7 @@ Initializes a [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/st
 
 
 **API Level:**
-  * 21
+  * 24
 
 
 
@@ -596,7 +596,7 @@ In version >= 2 for MLWebViewCallbacks struct, MLWebViewCreate launches a separa
 
 
 **API Level:**
-  * 21
+  * 24
 
 
 
@@ -653,7 +653,7 @@ MLResult MLWebViewSetEventCallbacks(
 )
 ```
 
-Specify the event handler for an MLWebView. 
+Specify the callbacks for a MLWebView. 
 
 **Parameters**
 
@@ -678,7 +678,7 @@ Specify the event handler for an MLWebView.
 
 
 **API Level:**
-  * 21
+  * 24
 
 
 

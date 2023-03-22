@@ -90,6 +90,21 @@ public const string GestureSubsystemId = "MagicLeapXr-Gesture";
 
 -----------
 
+### HandSubsystemId {#const-string-handsubsystemid}
+
+```csharp
+
+public const string HandSubsystemId = "MagicLeapXr-Hand";
+
+```
+
+
+
+
+
+
+-----------
+
 ### ImageTrackingSubsystemId {#const-string-imagetrackingsubsystemid}
 
 ```csharp

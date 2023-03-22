@@ -12,11 +12,29 @@ summary: magicleap implementation of the xrgesturesubsystem. do not create this 
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) implementation of the  XRGestureSubsystem . Do not create this directly. Use the  SubsystemManager  instead.   
+[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) implementation of the  XRGestureSubsystem . Do not create this directly. Use the  SubsystemManager  instead.   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>XRGestureSubsystem
 
+
+
+## Detailed Description
+
+```csharp
+public class GestureSubsystem : XRGestureSubsystem 
+```
+
+
+**Details**
+
+[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) implementation of the  XRGestureSubsystem . Do not create this directly. Use  XRGestureSubsystemDescriptor.RegisterDescriptor()  instead. 
+
+
+
+
+
+-----------
 
 
 
