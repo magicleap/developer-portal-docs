@@ -58,9 +58,9 @@ ssh-keygen -t rsa -b 4096
 
 Example [instance types in AWS](https://aws.amazon.com/ec2/instance-types/):
 
-- 8 * **t3.medium**
-- 4 * **m5.large**
-- 2 * **m5.xlarge**
+- 8 * **t3.2xlarge**
+- 8 * **m6i.2xlarge**
+- 8 * **m6a.2xlarge**
 
 ### Environment Settings
 

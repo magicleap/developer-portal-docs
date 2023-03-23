@@ -34,9 +34,11 @@ Set the domain where AR Cloud will be available:
 export DOMAIN="arcloud.domain.tld"
 ```
 
-## Infrastructure Setup
+### Tools
 
-To get started as quickly as possible, refer to these simple setup steps for [Google Cloud](https://cloud.google.com/sdk/docs/install).
+To get started as quickly as possible, refer to these simple setup steps for [Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
+
+## Infrastructure Setup
 
 ### Kubernetes System Recommendations
 
@@ -47,9 +49,9 @@ To get started as quickly as possible, refer to these simple setup steps for [Go
 
 Example [machine types in GCP](https://cloud.google.com/compute/docs/general-purpose-machines):
 
-- 8 * **e2-medium**
-- 4 * **e2-standard-2**
-- 2 * **e2-standard-4**
+- 8 * **e2-standard-8**
+- 8 * **n2-standard-8**
+- 8 * **n2d-standard-8**
 
 ### Environment Settings
 
