@@ -13,7 +13,6 @@ import TabItem from '@theme/TabItem';
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
 import FindIPAddress from './_find_ip.md';
-import EnableK8sInDockerDesktop from './_docker_k8s.md';
 import InstallIstio from './_install_istio.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallArcloud from './_install_arcloud.md';
@@ -160,7 +159,7 @@ export DOMAIN="<IPv4 address of your active network adapter>"
 ### Install Kubernetes
 
 :::note Kubernetes
-Recommended Requirements:
+Recommended Resources:
 
 - 8 CPUs
 - 32 GB memory
@@ -213,14 +212,32 @@ systemctl status k3s
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-<EnableK8sInDockerDesktop />
+Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
+
+![Enable Kubernetes Support in Docker Desktop](/img/arcloud/windows-docker-kubernetes.png)
+
+:::note
+On future runs of AR Cloud setup processes, it will be important to make sure that Docker and the Kubernetes services are started.
+:::
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-<EnableK8sInDockerDesktop />
+Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
 
 ![Enable Kubernetes Support in Docker Desktop](/img/arcloud/macos-docker-kubernetes.png)
+
+:::note Resources
+Set `Memory` resources to at least 12 GB RAM from:
+
+`Docker Desktop` > `Settings` > `Resources` > `Advanced`
+
+![Configure Resources in Docker Desktop](/img/arcloud/macos-docker-resources.png)
+:::
+
+:::note
+On future runs of AR Cloud setup processes, it will be important to make sure that Docker and the Kubernetes services are started.
+:::
 
   </TabItem>
 </Tabs>
@@ -284,6 +301,8 @@ Update the Istio configuration for it to work with WSL:
 ```shell
 sed -i'' -e 's/values:/values:\n    global:\n      proxy:\n        privileged: true/' ../setup/istio.yaml
 ```
+
+Install Istio:
 
 <InstallIstio />
 
