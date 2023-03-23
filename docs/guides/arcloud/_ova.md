@@ -1,7 +1,7 @@
 ---
 id: arcloud-deployment-ova
-title: AR Cloud OVA Image Demo
-sidebar_label: OVA Demo
+title: AR Cloud OVA Image Deployment
+sidebar_label: OVA Deployment
 sidebar_position: 4
 date: 02/07/2023
 tags: [ARCloud, Cloud, OVA]

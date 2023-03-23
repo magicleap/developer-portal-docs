@@ -1,8 +1,8 @@
 ---
 id: arcloud-deployment-aws
 title: AR Cloud AWS Deployment
-sidebar_position: 2
 sidebar_label: AWS
+sidebar_position: 2
 date: 02/07/2023
 tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
