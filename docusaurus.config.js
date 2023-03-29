@@ -77,7 +77,7 @@ module.exports = {
   trailingSlash: false, // Helps the redirects work more consistently if true.
   themeConfig: {
     prism: {
-      additionalLanguages: ['csharp', 'bash', 'ini'],
+      additionalLanguages: ['csharp', 'bash', 'ini', 'powershell'],
     },
     algolia: {
       apiKey: 'da65530e307839471aec305bfc49e039',
