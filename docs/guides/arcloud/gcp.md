@@ -9,7 +9,10 @@ keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
 description: "Enterprise deployment to Google Cloud Platform (GCP)"
 ---
 import DownloadArcloud from './_download_arcloud.md';
+import ArcloudEnvVariables from './_arcloud_env.md';
+import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
+import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetupSecure from './_install_arcloud_setup_secure.md';
 import DeploymentVerificationSecure from './_deployment_verification_secure.md';
@@ -21,26 +24,34 @@ This deployment strategy will provide a production-ready system using Google Clo
 
 <DownloadArcloud />
 
+### Configure Environment
+
+<ArcloudEnvVariables />
+
+Set the domain where AR Cloud will be available:
+
 ```shell
 export DOMAIN="arcloud.domain.tld"
 ```
 
-## Infrastructure Setup
+### Tools
 
-To get started as quickly as possible, refer to these simple setup steps for [Google Cloud](https://cloud.google.com/sdk/docs/install).
+To get started as quickly as possible, refer to these simple setup steps for [Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
+
+## Infrastructure Setup
 
 ### Kubernetes System Recommendations
 
 - Version `1.23.x`, `1.24.x`, `1.25.x`
 - 8 Nodes (each with):
-  - 8 CPU's
+  - 8 CPUs
   - 32 GB memory
 
 Example [machine types in GCP](https://cloud.google.com/compute/docs/general-purpose-machines):
 
-- 8 * **e2-medium**
-- 4 * **e2-standard-2**
-- 2 * **e2-standard-4**
+- 8 * **e2-standard-8**
+- 8 * **n2-standard-8**
+- 8 * **n2d-standard-8**
 
 ### Environment Settings
 
@@ -110,16 +121,13 @@ kubectl config current-context
 
 ## Install Istio
 
-:::note Istio
-Minimum Requirements:
-
-- AR Cloud requires Istio version `1.16.x`
-- DNS Pre-configured with corresponding certificate for TLS
-- Configure Istio Gateway
-- Open the MQTT Port (`8883`)
-:::
+<IstioRequirements />
 
 <InstallIstio />
+
+### Install Istio Gateway
+
+<InstallIstioGateway />
 
 ## Install ARCloud
 

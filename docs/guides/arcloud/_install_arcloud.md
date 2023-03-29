@@ -1,15 +1,21 @@
 ### Install Certificate Manager
 
+:::note
+This part is only required if you plan on using a custom domain with a TLS certificate.
+
+For local deployments or when using an IP address only, it can be skipped.
+:::
+
 ```shell
 export CERT_MANAGER_VERSION=1.9.1
 ```
 
 ```shell showLineNumbers
 helm upgrade --install --wait --repo https://charts.jetstack.io cert-manager cert-manager \
-  --version ${CERT_MANAGER_VERSION} \
-  --create-namespace \
-  --namespace cert-manager \
-  --set installCRDs=true
+    --version ${CERT_MANAGER_VERSION} \
+    --create-namespace \
+    --namespace cert-manager \
+    --set installCRDs=true
 ```
 
 ```shell
@@ -33,9 +39,9 @@ kubectl label namespace ${NAMESPACE} pod-security.kubernetes.io/audit=baseline p
 ```shell showLineNumbers
 kubectl --namespace ${NAMESPACE} delete secret container-registry --ignore-not-found
 kubectl --namespace ${NAMESPACE} create secret docker-registry container-registry \
-  --docker-server=${REGISTRY_SERVER} \
-  --docker-username=${REGISTRY_USERNAME} \
-  --docker-password=${REGISTRY_PASSWORD}
+    --docker-server=${REGISTRY_SERVER} \
+    --docker-username=${REGISTRY_USERNAME} \
+    --docker-password=${REGISTRY_PASSWORD}
 ```
 
 #### Log in to the container registry
