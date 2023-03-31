@@ -34,6 +34,17 @@ deployments in production environments! Instead, it is a means of quickly testin
 devices right away.
 :::
 
+## Download
+
+The images are available on the [Magic Leap 2 Developer Portal](https://ml2-developer.magicleap.com/downloads).
+
+Download the latest version for the [runtime environment](#runtime-environments) of your choice.
+
+:::note
+To download an image, registration and the approval of the
+[Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) are required.
+:::
+
 ## Requirements
 
 ### Virtualization Support
