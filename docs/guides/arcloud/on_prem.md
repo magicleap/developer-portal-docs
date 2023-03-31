@@ -41,7 +41,7 @@ This type of deployment is appropriate for any edge computing, on-premises, or a
 :::caution WSL 2 Notice
 All following installation instructions are assumed to be running inside an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
 
-[Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+[Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
 :::
 
 ```shell
@@ -106,7 +106,7 @@ The output should be **5.15.90.1-k8s-optimized-WSL2+**.
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Install `brew` (Homebrew), if needed: https://brew.sh/
+Install [`brew` (Homebrew)](https://brew.sh/), if needed.
 
   </TabItem>
 </Tabs>
@@ -130,6 +130,12 @@ Post-installation step:
   <TabItem value="windows" label="Windows">
 
 Install [Docker Desktop with the WSL 2 backend](https://docs.docker.com/desktop/install/windows-install/).
+
+:::info WSL distributions
+Integration with Docker for non-default WSL distributions needs to be explicitly enabled in the Docker Desktop settings:
+
+[Enabling Docker support in WSL 2 distros](https://docs.docker.com/desktop/windows/wsl/#enabling-docker-support-in-wsl-2-distros).
+:::
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
@@ -300,7 +306,7 @@ brew install helm
 Update the Istio configuration for it to work with WSL:
 
 ```shell
-sed -i'' -e 's/values:/values:\n    global:\n      proxy:\n        privileged: true/' ../setup/istio.yaml
+sed -i '' -e 's/values:/values:\n    global:\n      proxy:\n        privileged: true/' ./setup/istio.yaml
 ```
 
 Install Istio:
