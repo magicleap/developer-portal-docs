@@ -4,24 +4,6 @@ sidebar_position: 2
 date: 03/22/2023
 ---
 
-## Version 2.0.10
-
-### Sprint 22 Release
-
-* Device Bridge: ability to select and install multiple APKs
-* Device Bridge: user name of current user is now shown
-* Device Bridge: improved Wi-Fi bridge experience
-* Device Bridge: ability to install APKs either for current or for all available users
-* Device Bridge: factory reset support
-* Advanced Capture: split mode is removed
-* Advanced Capture: if device in low power mode, Hub will wake the device before doing the capture.
-* Remote Render: preview version
-
-#### Known behaviors
-
-* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
-* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
-
 ## Version 2.0.9
 
 ### Sprint 21 Release
