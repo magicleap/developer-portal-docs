@@ -22,7 +22,7 @@ date: 03/22/2023
 * Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
 * Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
 
-Version 2.0.9
+## Version 2.0.9
 
 ### Sprint 21 Release
 
@@ -133,10 +133,9 @@ The Lab 2.0 has been repurposed to be a tool for all device users, not just deve
 
 * Faster downloads in Package Manager on Windows (compared to The Lab 1.0)
 
-Enterprise Networking
----------------------
+## Enterprise Networking
 
-TLS Interception
+### TLS Interception
 
 The Lab uses TLS (Transport Layer Security) network connections to connect to multiple cloud services:
 
@@ -167,17 +166,12 @@ The CA root certificate used by the TLS Interception setup needs to be added to 
 
     `<path found above>/keytool -import -trustcacerts -file <path-to-cert>/new_root_ca.cer -alias custom-Root-CA-keystore -cacerts -storepass changeit`
 
-    The currently known paths can be listed with the following command:
+    The currently known paths can be listed with the following command:`<path found above>/keytool -list -cacerts -storepass changeit`
 
-    `<path found above>/keytool -list -cacerts -storepass changeit`
-
-Note that the JRE may get updated with a Lab update, when this happens (likely not often), then the commands need to be repeated. Alternatively, the lib/security/cacerts file which got updated (same remaining path as the keytool) can also be referenced with a -D The keytool binary updates the lib/security/cacerts file (same remaining path as the keytool). The resulting file can be copied elsewhere and referenced by a
-
-`-Djavax.net.ssl.trustStore=/app/security/truststore.jks`
-
-entry in the\_lab.ini.
+Note that the JRE may get updated with a Lab update, when this happens (likely not often), then the commands need to be repeated. Alternatively, the lib/security/cacerts file which got updated (same remaining path as the keytool) can also be referenced with a -D The keytool binary updates the lib/security/cacerts file (same remaining path as the keytool). The resulting file can be copied elsewhere and referenced by a 
+`-Djavax.net.ssl.trustStore=/app/security/truststore.jks` entry in the\_lab.ini.
   
-Network Proxy
+### Network Proxy
 
 The Lab uses the Internet system proxy setup on Windows and OSX.
 
