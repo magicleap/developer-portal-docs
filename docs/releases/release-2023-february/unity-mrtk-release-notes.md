@@ -28,9 +28,9 @@ Initial Update to 1.4.0
 - Meshing - Refer to MeshingDemoMagicLeap for usage.
 - AllInteractions - Refer to InteractionsDemoMagicLeap for Handtracking, Control, EyeTracking, and Voice usage together.
 
-## 1.2.0 Version 1 Updates
+## 1.4.0 Version 1 Updates
 
-- Updated to MagicLeap SDK 1.2.0-Dev1 and MagicLeap Unity SDK 1.4.0.
+- Updated to MagicLeap SDK 1.2.0-dev1 and MagicLeap Unity SDK 1.4.0.
 - Important: HandTracking Smoothing has been removed as smoothing is now done on the platform and no longer needed in the MRTK layer.
 - In the Magic Leap HandTracking Input Data Provider if Both or MRTK KeyPoints are selected as the Gesture Interaction Type, the MRTK Pinch values to trigger or maintain a pinch gesture are customizable.
 - Added a Wireframe General Rendering option to the MagicLeap Spatial Mesh Observer.

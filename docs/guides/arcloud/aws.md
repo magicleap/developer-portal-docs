@@ -1,24 +1,35 @@
 ---
 id: arcloud-deployment-aws
 title: AR Cloud AWS Deployment
-sidebar_position: 2
 sidebar_label: AWS
+sidebar_position: 2
 date: 02/07/2023
 tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 description: "Enterprise deployment to Amazon Web Services (AWS)"
 ---
 import DownloadArcloud from './_download_arcloud.md';
+import ArcloudEnvVariables from './_arcloud_env.md';
+import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
+import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallIstioAws from './_install_istio_aws.md';
 import InstallArcloud from './_install_arcloud.md';
-import DeploymentVerification from './_deployment_verification.md';
+import InstallArcloudSetupSecure from './_install_arcloud_setup_secure.md';
+import DeploymentVerificationSecure from './_deployment_verification_secure.md';
+import RegisterDevice from './_register_device.md';
 
 This deployment strategy will provide a production-ready system using Amazon Web Services.
 
 ## Download
 
 <DownloadArcloud />
+
+### Configure Environment
+
+<ArcloudEnvVariables />
+
+Set the domain where AR Cloud will be available:
 
 ```shell
 export DOMAIN="arcloud.domain.tld"
@@ -47,9 +58,9 @@ ssh-keygen -t rsa -b 4096
 
 Example [instance types in AWS](https://aws.amazon.com/ec2/instance-types/):
 
-- 8 * **t3.medium**
-- 4 * **m5.large**
-- 2 * **m5.xlarge**
+- 8 * **t3.2xlarge**
+- 8 * **m6i.2xlarge**
+- 8 * **m6a.2xlarge**
 
 ### Environment Settings
 
@@ -170,16 +181,15 @@ There should be 2 add-ons and their status should be ACTIVE.
 
 ## Install Istio
 
-:::note Istio
-Minimum Requirements
-
-- AR Cloud requires Istio version `1.16.x`
-- DNS Pre-configured with corresponding certificate for TLS
-- Configure Istio Gateway
-- Open the MQTT Port (8883)
-:::
+<IstioRequirements />
 
 <InstallIstio />
+
+### Install Istio Gateway
+
+<InstallIstioGateway />
+
+### Configure Domain and Elastic Load Balancer
 
 <InstallIstioAws />
 
@@ -187,6 +197,10 @@ Minimum Requirements
 
 <InstallArcloud />
 
+<InstallArcloudSetupSecure />
+
 ## Verify Installation
 
-<DeploymentVerification />
+<DeploymentVerificationSecure />
+
+<RegisterDevice />

@@ -1,0 +1,10 @@
+{
+  "label": "Release 2023 February",
+  "position": 87,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "february-release-notes"
+  }
+}

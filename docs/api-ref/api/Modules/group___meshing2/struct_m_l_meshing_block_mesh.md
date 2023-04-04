@@ -67,7 +67,7 @@ MLCoordinateFrameUID id;
 ```
 
 
-The coordinate FrameID of the block. 
+The coordinate FrameID of the block. Note: Not for use with perception snapshot system, purely a unique identifier. 
 
 
 

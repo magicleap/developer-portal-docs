@@ -27,7 +27,7 @@ title: Parameters
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetSoundLooping](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_parameters.md#mlresult-mlaudiogetsoundlooping)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, bool * out_is_looping)<br></br>Returns whether a sound output is looping or not.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetStreamedFileOffset](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_parameters.md#mlresult-mlaudiosetstreamedfileoffset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint32_t offset_in_msec)<br></br>Sets the playback position for a streamed file.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetStreamedFileOffset](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_parameters.md#mlresult-mlaudiogetstreamedfileoffset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint32_t * out_offset_in_msec)<br></br>Returns the playback position for a streamed file.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetOutputDevice](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_parameters.md#mlresult-mlaudiogetoutputdevice)**([MLAudioOutputDevice](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice) * out_current_device)<br></br>Returns whether sound output is being sent to the speakers or earphones.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioGetOutputDevice](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_parameters.md#mlresult-mlaudiogetoutputdevice)**([MLAudioOutputDevice](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice) * out_current_device)<br></br>Returns which type of sound output device is being used for sound output.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLAudioSetOutputDeviceCallback](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___output_parameters.md#mlresult-mlaudiosetoutputdevicecallback)**([MLAudioOutputDeviceChangedCallback](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md#void-mlaudiooutputdevicechangedcallback) callback, void * context)<br></br>Registers a callback for audio output device change.  |
 
 ## Detailed Description
@@ -641,20 +641,20 @@ MLResult MLAudioGetOutputDevice(
 )
 ```
 
-Returns whether sound output is being sent to the speakers or earphones. 
+Returns which type of sound output device is being used for sound output. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLAudioOutputDevice](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice) * |out_current_device|Indicates whether output goes to wearable, USB, or Bluetooth.|
+| [MLAudioOutputDevice](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md#enums-mlaudiooutputdevice) * |out_current_device|Enum indicating what kind of audio output device is currently in use.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully indicated whether output device is speakers or earphones. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully indicated the type of output device. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLAudioResult_NotImplemented|Failed because feature has not been implemented yet.|
 **Required Permissions**:

@@ -396,7 +396,7 @@ public const string MLSdkLoaderDll = "ml_sdk_loader";
 
 ### UnityMagicLeapDll {#const-string-unitymagicleapdll}
 
-Unity's XRprovider library in com.unity.xr.magicleap 
+Unity's XR provider library in com.unity.xr.magicleap 
 
 ```csharp
 

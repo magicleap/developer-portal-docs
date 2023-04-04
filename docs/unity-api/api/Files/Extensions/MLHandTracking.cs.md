@@ -93,10 +93,9 @@ namespace UnityEngine.XR.MagicLeap
                     FifthBone = 24
                 }
 
-                public static void StartTracking()
-                {
-                    MagicLeapXrProviderNativeBindings.StartHandTracking();
-                }
+                public static void StartTracking() => MagicLeapXrProviderNativeBindings.StartHandTracking();
+
+                public static void StopTracking() => MagicLeapXrProviderNativeBindings.StopHandTracking();
 
                 public static void SetPreRenderHandUpdate(bool enable = true)
                 {

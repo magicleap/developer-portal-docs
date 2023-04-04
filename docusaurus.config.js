@@ -77,7 +77,7 @@ module.exports = {
   trailingSlash: false, // Helps the redirects work more consistently if true.
   themeConfig: {
     prism: {
-      additionalLanguages: ['csharp', 'bash'],
+      additionalLanguages: ['csharp', 'bash', 'ini'],
     },
     algolia: {
       apiKey: 'da65530e307839471aec305bfc49e039',
@@ -270,11 +270,14 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
+              label: '22 Mar 2023'
+            },
+            '22-Feb-2023': {
               label: '22 Feb 2023'
             },
-            '03-Jan-2023': {
-              label: '03 Jan 2023'
-            },
+            // '22-Feb-2023': {
+            //   label: '22 Feb 2023'
+            // },
           },
         },
         theme: {
@@ -284,3 +287,4 @@ module.exports = {
     ],
   ],
 };
+

@@ -18,6 +18,8 @@ title: Data Structure Index
     * **class [JSONContainer](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainer.md)** <br></br>The container for the data being changed into a JSON string to send to the MLVoice API. 
     * **class [JSONContainerAutoSystem](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainerAutoSystem.md)** <br></br>[JSONContainer](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainer.md) to Auto allowing all System Intents. 
     * **struct [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md)** <br></br>The current structure of the JSON data that will be sent to the MLVoice API. Subject to change. 
+    * **struct [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md)** <br></br>The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. 
+    * **struct [SlotDataInternal](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotDataInternal.md)** 
     * **struct [SystemJSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SystemJSONData.md)** <br></br>The current structure of the System Intents JSON data that will be sent to the MLVoice API. Subject to change. 
 * **namespace [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md)** 
     * **class [ColorSpaceBuildPreprocessor](/unity-api/api/MagicLeap/MagicLeap.ColorSpaceBuildPreprocessor.md)** <br></br>Displays Dialog box at build time about incorrect color space setting. 
@@ -30,9 +32,6 @@ title: Data Structure Index
         * **class [MLWebViewTabBarBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBarBehavior.md)** 
         * **class [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md)** 
     * **class [EditorProjectData](/unity-api/api/MagicLeap/MagicLeap.EditorProjectData.md)** <br></br>Scriptable Object holding data used in Editor scripts. 
-    * **class [TestRunner](/unity-api/api/MagicLeap/TestRunner/MagicLeap.TestRunner.md)** 
-        * **class [Callbacks](/unity-api/api/MagicLeap/TestRunner/MagicLeap.TestRunner.Callbacks.md)** 
-        * **class [Reporter](/unity-api/api/MagicLeap/TestRunner/MagicLeap.TestRunner.Reporter.md)** 
 * **class [MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md)** 
     * **struct [ControllerActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ControllerActions.md)** 
     * **struct [EyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.EyesActions.md)** 
@@ -43,63 +42,8 @@ title: Data Structure Index
     * **interface [ILeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ILeftHandActions.md)** 
     * **interface [IRightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IRightHandActions.md)** 
     * **struct [LeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.LeftHandActions.md)** 
-    * **struct [RightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.RightHandActions.md)** 
-* **class [NativeBindingsTests](/unity-api/api/Classes/NativeBindingsTests.md)** 
+    * **struct [RightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.RightHandActions.md)**
 * **class [SettingsIntentsLauncher](/unity-api/api/Classes/SettingsIntentsLauncher.md)** 
-    * **namespace [Editor](/unity-api/api/Tests.Editor/Tests.Editor.md)** 
-        * **class [GraphicsHooksNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.GraphicsHooksNativeBindingsEditModeTests.md)** 
-        * **class [MLAnchorsNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAnchorsNativeBindingsEditModeTests.md)** 
-        * **class [MLAudioInputNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAudioInputNativeBindingsEditModeTests.md)** 
-        * **class [MLAudioOutputNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAudioOutputNativeBindingsEditModeTests.md)** 
-        * **class [MLAudioOutputPluginNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLAudioOutputPluginNativeBindingsEditModeTests.md)** 
-        * **class [MLCVCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLCVCameraNativeBindingsEditModeTests.md)** 
-        * **class [MLCameraMetadataNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLCameraMetadataNativeBindingsEditModeTests.md)** 
-        * **class [MLCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLCameraNativeBindingsEditModeTests.md)** 
-        * **class [MLConvertEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLConvertEditModeTests.md)** 
-        * **class [MLDepthCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLDepthCameraNativeBindingsEditModeTests.md)** 
-        * **class [MLEyeCalibrationNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLEyeCalibrationNativeBindingsEditModeTests.md)** 
-        * **class [MLGazeRecognitionNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLGazeRecognitionNativeBindingsEditModeTests.md)** 
-        * **class [MLGlobalDimmerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLGlobalDimmerNativeBindingsEditModeTests.md)** 
-        * **class [MLHeadsetFitNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLHeadsetFitNativeBindingsEditModeTests.md)** 
-        * **class [MLMarkerTrackerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMarkerTrackerNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaDRMNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaDRMNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaFormatKeyNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaFormatKeyNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaFormatNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaFormatNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaMuxerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaMuxerNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaParserCEA608NativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaParserCEA608NativeBindingsEditModeTests.md)** 
-        * **class [MLMediaParserCEA708NativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaParserCEA708NativeBindingsEditModeTests.md)** 
-        * **class [MLMediaPlayerNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaPlayerNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaPlayerTrackNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaPlayerTrackNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaRecorderNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaRecorderNativeBindingsEditModeTests.md)** 
-        * **class [MLMediaTTMLNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLMediaTTMLNativeBindingsEditModeTests.md)** 
-        * **class [MLNativeSurfaceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLNativeSurfaceNativeBindingsEditModeTests.md)** 
-        * **class [MLPermissionsNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLPermissionsNativeBindingsEditModeTests.md)** 
-        * **class [MLResultEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLResultEditModeTests.md)** 
-        * **class [MLTimeNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLTimeNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCAppDefinedAudioSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAppDefinedAudioSourceNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCAppDefinedSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAppDefinedSourceNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCAppDefinedVideoSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAppDefinedVideoSourceNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCAudioSinkNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCAudioSinkNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCConnectionNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCConnectionNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCDataChannelNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCDataChannelNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCFrameNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCFrameNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCSourceNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCSourceNativeBindingsEditModeTests.md)** 
-        * **class [MLWebRTCVideoSinkNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebRTCVideoSinkNativeBindingsEditModeTests.md)** 
-        * **class [MLWebViewNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWebViewNativeBindingsEditModeTests.md)** 
-        * **class [MLWorldCameraNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MLWorldCameraNativeBindingsEditModeTests.md)** 
-        * **class [MagicLeapNativeBindingsEditModeTests](/unity-api/api/Tests.Editor/Tests.Editor.MagicLeapNativeBindingsEditModeTests.md)** 
-        * **class [MlSdkDllLoader](/unity-api/api/Tests.Editor/Tests.Editor.MlSdkDllLoader.md)** 
-        * **class [NativeLoader](/unity-api/api/Tests.Editor/Tests.Editor.NativeLoader.md)** 
-    * **namespace Runtime** 
-        * **namespace [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.md)** 
-            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLMediaPlayerNativeBindingsPlayModeTests.md)** 
-            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLMediaPlayerTrackNativeBindingsPlayModeTests.md)** 
-            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLVoiceNativeBindingsPlayModeTests.md)** 
-            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.MLWebViewNativeBindingsPlayModeTestsBindings.md)** 
-            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.NativeBindingsPlayTests.md)** 
-            * **class [NativeBindings](/unity-api/api/Tests.Runtime.NativeBindings/Tests.Runtime.NativeBindings.YcbcrRendererNativeBindingsPlayModeTests.md)** 
 * **namespace UnityEditor** 
     * **namespace XR** 
         * **namespace [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/UnityEditor.XR.MagicLeap.md)** 
@@ -130,10 +74,10 @@ title: Data Structure Index
             * **class [MagicLeap](/unity-api/api/UnityEditor.XR.MagicLeap/VisualStudioProjectFileHook/UnityEditor.XR.MagicLeap.VisualStudioProjectFileHook.md)** <br></br>Sets up Visual Studio Project Files for this package to show the same folder structure in the IDE as in the file explorer. Without this class, all files in this package show up under the same root folder when its added as a local package to a Unity project. What's worse is that if the package contains files of the same name in 2 different paths, Visual Studio only shows one of those files and updating one ends up deleting the other. 
                 * **class[Utf8StringWriter](/unity-api/api/UnityEditor.XR.MagicLeap/VisualStudioProjectFileHook/UnityEditor.XR.MagicLeap.VisualStudioProjectFileHook.Utf8StringWriter.md)** <br></br>Necessary for XLinq to save the xml project file in utf8 
         * **namespace OpenXR** 
-            * **namespace Features** 
+            * **namespace OpenXR** 
                 * **namespace[MagicLeapSupport](/unity-api/api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport/UnityEditor.XR.OpenXR.Features.MagicLeapSupport.md)** 
                     * **class [AndroidBootConfig](/unity-api/api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport/UnityEditor.XR.OpenXR.Features.MagicLeapSupport.AndroidBootConfig.md)** 
-* **namespace [UnityEngine]** 
+* **namespace UnityEngine** 
     * **namespace XR** 
         * **namespace [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/AnchorSubsystem/UnityEngine.XR.MagicLeap.AnchorSubsystem.md)** <br></br>The Magic Leap implementation of the  XRAnchorSubsystem . Do not create this directly. Use  XRAnchorSubsystemDescriptor.Create()  instead. 
@@ -431,11 +375,13 @@ title: Data Structure Index
                 * **class[KeyboardCancelEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLVirtualKeyboard/UnityEngine.XR.MagicLeap.MLVirtualKeyboard.KeyboardCancelEvent.md)** 
                 * **class[KeyboardSubmitEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLVirtualKeyboard/UnityEngine.XR.MagicLeap.MLVirtualKeyboard.KeyboardSubmitEvent.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md)** <br></br>APIs for the voice service system. 
+                * **struct[EventSlot](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.EventSlot.md)** <br></br>Slot Data in voice event. 
                 * **struct[IntentEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.IntentEvent.md)** <br></br>A structure containing voice intent event information. 
                 * **class[NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md)** <br></br>See ml&#95;voice.h for additional comments. 
                     * **struct [IntentCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md)** <br></br>A structure containing callbacks for voice intent events. The final parameter to all the callbacks is a IntPtr, which will point to whatever payload data the user provides in [MLVoiceIntentSetCallbacks()](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md#mlresultcode-mlvoiceintentsetcallbacks). Individual callbacks which are not required by the client can be NULL. 
                     * **struct [IntentEventInternal](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentEventInternal.md)** <br></br>A structure containing voice intent event data. 
                     * **struct [IntentSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentSettings.md)** <br></br>A structure containing settings for voice app intent. This structure must be initialized by calling [IntentSettings.Create()](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentSettings.md#intentsettings-create) before use. 
+                    * **struct [IntentSlotInternal](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentSlotInternal.md)** <br></br>A structure containing voice app-intent slot in voice event. 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md)** <br></br>[MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) class contains the API to interface with the WebRTC C API. 
                 * **class[AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md)** <br></br>Class that represents an app defined video source that can be used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. 
                     * **class [NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.NativeBindings.md)** <br></br>[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) bindings for the [MLWebRTC.AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) class. 
@@ -569,7 +515,7 @@ title: Data Structure Index
                 * **struct[TransformPlaneBoundaryJob](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.TransformPlaneBoundaryJob.md)** 
             * **struct [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.md)** <br></br>Contains information necessary to report on  XRAnchor s. 
                 * **struct[Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md)** <br></br>Information necessary to construct a reference frame 
-            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.RequireXRLoader.md)** <br></br>Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XRpackage is loaded. 
+            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.RequireXRLoader.md)** <br></br>Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XR package is loaded. 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/SessionSubsystem/UnityEngine.XR.MagicLeap.SessionSubsystem.md)** <br></br>The Magic Leap implementation of the  XRSessionSubsystem . Do not create this directly. Use  SessionSubsystemDescriptor.Create()  instead. 
                 * **class[MagicLeapProvider](/unity-api/api/UnityEngine.XR.MagicLeap/SessionSubsystem/UnityEngine.XR.MagicLeap.SessionSubsystem.MagicLeapProvider.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SettingsIntentsLauncher.md)** 
@@ -587,6 +533,7 @@ title: Data Structure Index
                 * **struct[VkAndroidHardwareBufferFormatPropertiesANDROID](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkAndroidHardwareBufferFormatPropertiesANDROID.md)** 
                 * **struct[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)** 
                 * **struct[VkSamplerYcbcrConversionCreateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkSamplerYcbcrConversionCreateInfo.md)** 
+
 
 
 

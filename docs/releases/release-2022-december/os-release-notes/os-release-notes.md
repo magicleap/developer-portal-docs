@@ -11,8 +11,6 @@ date: 12/07/2022
 
 Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so.
 
-When flashing, you MUST flash in a linear sequence based on the build order in the table below. For example, if you're on B3E.220619.07-R.107_user (build order #4), you MUST flash B3E.220619.07-R.124_user (build order #5) then B3E.220721.07-R.026_user (build order #6) for your device to work properly with that OS.
-
 When flashing, you **MUST** flash in a linear sequence based on the build order in the table below. For example, if you're on `B3E.220619.07-R.107_user` (build order #4), you **MUST** flash `B3E.220619.07-R.124_user` (build order #5) then `B3E.220721.07-R.026_user` (build order #6) for your device to work properly with that OS.
 
 | Build Order | Build Fingerprint        |

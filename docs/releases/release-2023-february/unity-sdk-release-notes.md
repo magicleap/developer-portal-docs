@@ -40,3 +40,4 @@ date: 02/22/2023
 - MLWebRTC: When disconnecting from a session, the camera does not shut down cleanly if the NativeSurface buffer format was used, causing the application to hang for as much as 30 seconds.
 - Webview: The scene does not automatically start by opening a tab for the user. This requires the user to open a new tab before inserting any URLs (click the '+' button); otherwise, the URL request will not be initiated.
 - AppSim Unity UI has issues where reset button in some UI views are not functional.
+- Controller Touchpad Gestures are not recognized

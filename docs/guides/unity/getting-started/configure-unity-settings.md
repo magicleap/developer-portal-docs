@@ -18,7 +18,7 @@ This topic describes how to configure the Unity Build Settings to utilize Magic 
 
 The Magic Leap SDK provides access to Magic Leap's perception and input API. The Magic Leap Unity SDK can be imported using Unity's Package Manager.
 
-1. Open the Package Manager window ( **Windows > Package Manager**).
+1. Open the Package Manager window ( **Window > Package Manager**).
 
 2. Select the "**+**" (plus) button in the top-left corner, then **Add package from tarball**.
 
@@ -49,9 +49,30 @@ The Magic Leap XR Provider needs to be enabled before using Magic Leap's platfor
 
 1. Go to **File > Build Settings > Player Settings > XR Plug-in Management** and enable **Magic Leap** as a Plug-in Provider on the **Android** platform.
 
+
+## Assign Magic Leap SDK Path
+
+The Magic Leap SDK Path setting will only show once the Magic Leap XR package is imported. If the Magic Leap SDK path setting is not visible, make sure that the `com.magicleap.xr` package was correctly imported.
+
+1. Open **Edit > Preferences** on Windows (or macOS: **Unity > Preferences**), then navigate to **External Tools > Magic Leap**.
+
+- Set the MLSDK path to the Magic Leap SDK you downloaded from the ML Hub earlier. For example:
+  - Mac: `$HOME/MagicLeap/mlsdk/<Version>/`
+  - Windows: `%USERPROFILE%/MagicLeap/mlsdk/<Version>/`
+
+2. In the same window, if the path to the Application Simulator Runtime does not get populated automatically, check the 'Override' box and select the path to the latest version of the App Simulator Runtime package. This location can be found by clicking the 'Open folder' link underneath the package's name inside ML Hub's Package manager.
+
+:::note
+To locate the Magic Leap C SDK, open the ML Hub application and go to **Package Manager> My Tools**, under **Common Packages** expand **Magic Leap C SDK** and select the **Open Folder** or **Open Shell**. Note the path in the file explorer or shell.
+:::
+
 ## Custom Manifest
 
  This section provides instructions on how to create a custom manifest file and declare Magic Leap 2 specific permissions for your application. For more information, see the [Permissions Overview](/docs/guides/unity/permissions/declaring-permissions.md) guide.
+
+ :::info
+ Editing your application's permissions through the Unity Editor Window is only available if you have a valid [MLSDK path](#assign-magic-leap-sdk-path) assigned the Unity Editor's Preferences Window.
+ :::
 
 1. Enable a custom manifest in your project's settings by going to **Edit > Project Settings > Player**, then under **Publishing Settings** select **Custom Main Manifest**.
 2. Go to **Edit > Project Settings > Magic Leap > Permissions** to enable permissions on various features. It is generally recommended to include any additional features based on your application's requirements.
