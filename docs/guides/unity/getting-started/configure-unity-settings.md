@@ -2,7 +2,7 @@
 id: configure-unity-settings
 title: Configure Project Settings
 sidebar_position: 3
-date: 06/27/2022
+date: 04/05/2023
 tags: [Unity, Getting Started, Walkthroughs]
 keywords: [Unity, Getting Started, Walkthroughs]
 ---
@@ -13,8 +13,34 @@ This topic describes how to configure the Unity Build Settings to utilize Magic 
 
 - [Download Magic Leap Unity SDK](/docs/guides/unity/getting-started/install-the-tools.md)
 - [Unity project using Editor version 2022.2.0b7 or higher](/docs/guides/unity/getting-started/create-a-project.md)
+- [Download the Magic Leap Setup Tool from the Unity Asset Store](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780)
 
-## Import Magic Leap Unity SDK
+## Quickstart
+
+The fastest recommended way to set up your project for Magic Leap 2 development is to use the latest version of the [Magic Leap Setup Tool](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780).
+
+1. After adding it to your asset library, click the **Open in Unity** button.
+2. This will bring up the tool inside the Package Manager window in the Unity Editor. Click **Import** in the upper right corner of the window next to the package name to import the tool into your project.
+![Package Manager window](/img/unity/setup/setup-tool-package-manager.jpg)
+3. Keep all of the package contents selected in the following popup window and click **Import** one more time.
+![Import settings window](/img/unity/setup/setup-tool-import.jpg)
+4. After the package is imported, you should see the Magic Leap Project Setup Tool popup window. If you do not see it, go to **Magic Leap > Project Setup Tool** in the Unity menu.
+![Magic Leap Project Setup Tool popup window](/img/unity/setup/setup-tool-window.jpg)
+5. The project setup tool will walk you through all of the steps necessary to complete setup, starting with setting the Magic Leap SDK folder. Click **Change** and select the folder containing the latest version of the Magic Leap Unity SDK.
+6. After setting the SDK folder, click the **Apply All** button on the bottom of the window to quickly change all of the required settings.
+
+After accepting all prompts and restarting the editor, your project will now be ready for Magic Leap 2 development.
+
+:::note
+
+The Magic Leap Setup Tool will import the latest version of the Magic Leap core SDK compatible with your Unity Editor version. If your project necessitates an older version of the SDK, you can [assign the Magic Leap SDK path](#assign-magic-leap-sdk-path) manually.
+
+Please reference the Magic Leap OS, SDK and Unity SDK [compatibility matrix](/docs/releases/version-matrix.md) to determine which version is right for you.
+:::
+
+## Manual Setup
+
+### Import Magic Leap Unity SDK
 
 The Magic Leap SDK provides access to Magic Leap's perception and input API. The Magic Leap Unity SDK can be imported using Unity's Package Manager.
 
@@ -31,7 +57,7 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 
 ![Unity tarball file in a folder](/img/unity/unitysdk_package.png)
 
-<details> 
+<details>
 
 <summary> You may see the following pop-ups appear:</summary>
 
@@ -43,12 +69,11 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 
 </details>
 
-## XR Plugin Management
+### XR Plugin Management
 
 The Magic Leap XR Provider needs to be enabled before using Magic Leap's platform features. To do this:  
 
 1. Go to **File > Build Settings > Player Settings > XR Plug-in Management** and enable **Magic Leap** as a Plug-in Provider on the **Android** platform.
-
 
 ## Assign Magic Leap SDK Path
 
@@ -77,7 +102,7 @@ To locate the Magic Leap C SDK, open the ML Hub application and go to **Package 
 1. Enable a custom manifest in your project's settings by going to **Edit > Project Settings > Player**, then under **Publishing Settings** select **Custom Main Manifest**.
 2. Go to **Edit > Project Settings > Magic Leap > Permissions** to enable permissions on various features. It is generally recommended to include any additional features based on your application's requirements.
 
-## Player Settings
+### Player Settings
 
 Under the **Edit > Project Settings > Player** section, make sure the Android tab is selected, then configure the following settings:
 
@@ -90,7 +115,7 @@ Under the **Edit > Project Settings > Player** section, make sure the Android ta
 5. Under **Configuration**, set the **Scripting Backend** to **IL2CPP**.
 6. Also under **Configuration**, check the box next to the Target Architecture **x86-64 (Chrome OS and Magic Leap 2)** and set the **Target Devices** dropdown to **All Devices**.
 
-## Build Settings
+### Build Settings
 
 Build Settings let you set the target platform, configure build-related settings, and start the build process.
 
@@ -99,7 +124,7 @@ Build Settings let you set the target platform, configure build-related settings
 3. Click **Switch Platform**.
 4. You are now ready to add scenes to the build order and build to the device!
 
-## Validate Project Settings
+### Validate Project Settings
 
 Developers can use Unity's Project Validation tool to validate that project's settings have been configured properly.
 
@@ -111,7 +136,7 @@ This tool can be used to configure new projects in the future. Note, the validat
 
 :::
 
-## Next Steps
+### Next Steps
 
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
