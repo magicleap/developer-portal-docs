@@ -14,7 +14,7 @@ Bug reports [can also be gathered using `adb`](/docs/guides/developer-tools/andr
 Getting a bug report from the ML Hub is very simple:
 
 - Open the **ML Hub**
-- Click the plugged-in device
+- Click the plugged-in device in the lower-right-hand tray
 - Click the "bug" icon as shown in the image below
 
 ![Downloading a bug report through the ML Hub](/img/ml-hub/bugreport-menus.png)
