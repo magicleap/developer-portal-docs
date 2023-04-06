@@ -6,8 +6,6 @@ date: 02/14/2023
 tags: [Android Debug Bridge, adb, command line]
 keywords: [Android Debug Bridge, adb, command line]
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 There are cases when debugging a project with logs available from your development environment may not be sufficient. In this case, it can be useful to create and submit a bug report that can be examined more closely.
 
