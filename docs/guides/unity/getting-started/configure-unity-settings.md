@@ -43,12 +43,55 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 
 </details>
 
+### Adding a Custom Scoped Registry (Optional)
+
+Scoped Registries allow Unity to communicate the location of any custom package registry server to the **Package Manager** to access to several collections of packages at the same time. you can either edit your project manifest file directly or use the **Package Manager**'s **Project Settings** window to let Unity modify the manifest for you.
+
+#### Using the Package Manger Settings
+
+Navigate to to the **Package Manager** settings by selecting Edit > Project Settings from the menu. Then choose the Package Manager category.
+
+Select the <kbd>+</kbd> button at the bottom of the list. A new entry will appear as New Scoped Registry in the list.
+
+Enter the following details into the Scooped Registry:
+
+```plaintext
+Name : Magic Leap
+URL : https://registry.npmjs.org
+Scope : com.magicleap
+```
+
+Click <kbd>Apply</kbd>.
+
+#### Editing the Project Manifest File
+
+Open the `manifest.json` file located in the `Packages/` folder under the root folder of your Unity project.
+
+:::info Reset to Default
+At any time, you can fix any problems with your registry by choosing Reset packages to defaults from the main Unity **Help** menu. However, be aware that this action resets all changes you made to the dependencies of your project so it is best to do this as a last resort.
+:::
+
+Add the following Scoped registry:
+
+```json
+"scopedRegistries": [
+    {
+      "url": "https://registry.npmjs.org", 
+      "scopes": [
+        "com.magicleap"
+      ], 
+      "name": "Magic Leap"
+    }
+  ]
+```
+
+Your relevant packages will have their versions checked automatically in the **Package Manager** now. 
+
 ## XR Plugin Management
 
 The Magic Leap XR Provider needs to be enabled before using Magic Leap's platform features. To do this:  
 
 1. Go to **File > Build Settings > Player Settings > XR Plug-in Management** and enable **Magic Leap** as a Plug-in Provider on the **Android** platform.
-
 
 ## Assign Magic Leap SDK Path
 
@@ -108,7 +151,6 @@ Developers can use Unity's Project Validation tool to validate that project's se
 
 :::info
 This tool can be used to configure new projects in the future. Note, the validation tool does not check your project's [Manifest](#custom-manifest), [API level](#player-settings), or [XR Plugin Management settings](#xr-plugin-management).
-
 :::
 
 ## Next Steps
