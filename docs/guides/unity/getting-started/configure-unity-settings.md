@@ -79,7 +79,7 @@ Navigate to to the **Package Manager** settings by selecting Edit > Project Sett
 
 Select the <kbd>+</kbd> button at the bottom of the list. A new entry will appear as New Scoped Registry in the list.
 
-Enter the following details into the Scooped Registry:
+Enter the following details into the Scoped Registry:
 
 ```plaintext
 Name : Magic Leap
