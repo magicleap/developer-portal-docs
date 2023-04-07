@@ -1,0 +1,9 @@
+{
+  "label": "Remote Rendering",
+  "position": 3,
+  "collapsed": true,
+   "link": {
+    "type": "doc",
+    "id": "remote-rendering-overview"
+  }
+}
