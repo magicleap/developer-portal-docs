@@ -16,35 +16,36 @@ import TabItem from '@theme/TabItem';
 
 - [Download Magic Leap Unity SDK](/docs/guides/unity/getting-started/install-the-tools.md)
 - [Unity project using Editor version 2022.2.0b7 or higher](/docs/guides/unity/getting-started/create-a-project.md)
-- [Download the Magic Leap Setup Tool from the Unity Asset Store](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780)
 
 ## Quickstart
 
 The fastest recommended way to set up your project for Magic Leap 2 development is to use the latest version of the [Magic Leap Setup Tool](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780).
 
-1. After adding it to your asset library, click the **Open in Unity** button to show the tool inside Unity's Package Manager.
-2. Select **Download** then **Import** to import the tool into your project.
 
-<Image url= {require("/img/unity/setup/setup-tool-package-manager.jpg")} >Package Manager window</Image>
+1. Download the [Magic Leap Setup Tool from the Unity Asset Store](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780)
+2. After adding it to your asset library, click the **Open in Unity** button to show the tool inside Unity's Package Manager.
+3. Select **Download** then **Import** to import the tool into your project.
 
-1. Keep all of the package contents selected in the **Import Unity Package** window and select **Import**.
+<Image url= {require("/img/unity/setup/setup-tool-package-manager.jpg")} >Unity's Package Manager window with the Import option highlighted</Image>
 
-<Image url= {require("/img/unity/setup/setup-tool-import-annotated.jpg")} >Import Assets window</Image>
+4. Keep all of the package contents selected in the **Import Unity Package** window and select **Import**.
 
-4. After the package is imported, you should see the Magic Leap Project Setup Tool popup window. If you do not see it, go to **Magic Leap > Project Setup Tool** in the Unity menu.
+<Image url= {require("/img/unity/setup/setup-tool-import-annotated.jpg")} >Import Assets window with the Import option highlighted</Image>
 
-<Image url= {require("/img/unity/setup/setup-tool.jpg")} >Magic Leap Project Setup Tool popup window</Image>
+5. After the package is imported, you should see the Magic Leap Project Setup Tool popup window. If you do not see it, go to **Magic Leap > Project Setup Tool** in the Unity menu.
+
+<Image url= {require("/img/unity/setup/setup-tool.jpg")} >Magic Leap Project Setup Tool window</Image>
 
 
-5. The project setup tool will walk you through all of the steps necessary to complete setup. Start by setting the Magic Leap SDK  by selecting **Locate SDK**. Then select the folder containing the latest version of the Magic Leap Unity SDK.
-6. After setting the SDK folder, you can select the **Apply All** button on the bottom of the window to quickly change all of the required settings.
-7. After accepting all prompts and restarting the editor, your project will now be ready for Magic Leap 2 development.
+1. The project setup tool will walk you through all of the steps necessary to complete setup. Start by setting the Magic Leap SDK  by selecting **Locate SDK**. Then select the folder containing the latest version of the Magic Leap Unity SDK.
+2. After setting the SDK folder, you can select the **Apply All** button on the bottom of the window to quickly change all of the required settings.
+3. After accepting all prompts and restarting the editor, your project will now be ready for Magic Leap 2 development.
 
-:::note
+:::info Configuring the SDK version
 
 The Magic Leap Setup Tool will import the latest version of the Magic Leap core SDK compatible with your Unity Editor version. If your project requires an older version of the SDK, you can [assign the Magic Leap SDK path](#assign-magic-leap-sdk-path) manually.
 
-Please reference the Magic Leap OS, SDK and Unity SDK [compatibility matrix](/docs/releases/version-matrix.md) to determine which version is right for you.
+Please reference the Magic Leap OS, SDK and Unity SDK [compatibility matrix](/docs/releases/overview.md#api-version-matrix) to determine which version is right for you.
 :::
 
 ## Manual Setup
@@ -90,7 +91,7 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 2. Select the **+** button at the bottom of the list. A new entry will appear as **New Scoped Registry** in the list.
 3. Enter the following details into the **Scoped Registry**:
 
-```plaintext
+```json
 Name : Magic Leap
 URL : https://registry.npmjs.org
 Scope : com.magicleap
