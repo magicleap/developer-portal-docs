@@ -262,6 +262,9 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        googleTagManager: {
+          containerId: 'GTM-KPZG3CL',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // We do not want any 'Edit this page' links
