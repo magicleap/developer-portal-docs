@@ -2,7 +2,7 @@
 id: soundfield-audio-release-notes
 title: Soundfield Audio Unity Plugin 3.3.0
 sidebar_position: 6
-date: 03/22/2023
+date: 04/19/2023
 ---
 
 **Soundfield Audio** is Magic Leap's proprietary solution for audio spatialization and room modeling. Audio spatialization is the processing of sounds so that they appear to come from defined locations in 3D space around the listener. Soundfield Audio is a Unity Game-Plugin NPM package, and can be installed with Package Manager in Unity.
