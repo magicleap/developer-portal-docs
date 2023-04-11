@@ -7,13 +7,21 @@ engine: All
 tags: [Application Simulator]
 keywords: [Application Simulator]
 ---
+import ReactPlayer from 'react-player'
 
+<ReactPlayer playing controls url='/videos/AppSimOverview_V2_2.mp4' />  
+
+<br/>
 The Application Simulator tool in the ML Hub lets you iterate and test code changes without having to build and deploy the app to a device. Incorporating Application Simulator into your workflow can result in significantly faster development cycles.
 
 import DocCardList from '@theme/DocCardList';
-import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';  
 
-Application Simulator simulates several Magic Leap C SDK API layers to either stream the rendered frames to the headset display or to render them on your desktop PC in a simulated environment. Your app runs locally on your host computer, but gets head pose, meshing, planes, and other data live from your device or from other simulated sources.
+<br/>
+<br/>
+Application Simulator simulates several Magic Leap C SDK API layers to either stream the rendered frames to the headset display or to render them on your desktop PC in a simulated environment. Your app runs locally on your host computer, but gets head pose, meshing, planes, and other data live from your device or from other simulated sources.  
+<br/>
+<br/>
 
 :::info
 Application Simulator is a data simulation platform and not an emulator. It does not utilize the Android emulator workflow.
