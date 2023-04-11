@@ -40,6 +40,10 @@ The images are available on the [Magic Leap 2 Developer Portal](https://ml2-deve
 
 Download the latest version for the [runtime environment](#runtime-environments) of your choice.
 
+:::caution
+You must be logged in to the Developer Portal for these links to appear. You can log in by clicking the "person" icon in the upper-righthandside of the window at the link above.
+:::
+
 :::note
 To download an image, registration and the approval of the
 [Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) are required.
