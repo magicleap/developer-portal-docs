@@ -7,7 +7,7 @@ date: 01/04/2023
 
 ## API Version Matrix
 
-import VersionMatrix from '/docs/releases/version-matrix.md';
+import VersionMatrix from '/docs/releases/_version-matrix.md';
 
 <VersionMatrix />
 
