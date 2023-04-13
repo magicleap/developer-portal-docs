@@ -17,7 +17,7 @@ This guide only covers Unity C# script debugging. For C/C++ debugging, i.e. debu
 2. In Unity, open the build settings window.
 3. Select the **Development Build**, **Script Debugging** and **Wait for Managed Debugger** options.
 4. Build the application and launch it on your device or select **Build And Run**.
-5. When the app is launched, it will wait for the managed debugger (Visual Studio) to connect before proceeding.
+5. When the app is launched, it will wait for the managed debugger (Visual Studio) to connect before proceeding. Note: once the managed debugger from Visual Studio is connected, press either the Volume Up or Volume Down button on the compute pack to trigger the application to continue to load for debugging.
 
 ![Unity Build Settings Window configured for VS debugging](/img/unity/unity-build-settings-vs-debuging.png)
 
