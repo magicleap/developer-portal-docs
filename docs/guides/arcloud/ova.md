@@ -69,20 +69,55 @@ The output should be **1**.
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-#### Using the Task Manager
+#### Using Command Prompt
 
-1. Start the **Task Manager**
-2. Go to the **Performance** tab
-3. Check if **Virtualization** is **Enabled** in the bottom right of the window
+Run Command Prompt as administrator and run:
 
-#### Using PowerShell
-
-```powershell
-Get-ComputerInfo -property "HyperVRequirementVirtualizationFirmwareEnabled"
+```shell
+systeminfo.exe
 ```
 
 :::info Expected Result
-The output should be **True**.
+The **Hyper-V Requirements** should be shown at the end with all the values set to **Yes**.
+:::
+
+:::caution Hypervisor running
+If the **Hyper-V Requirements** display the message "A hypervisor has been detected. Features required for Hyper-V will
+not be displayed." instead of the actual requirements, it means a hypervisor is already running on the machine and it
+will prevent VirtualBox from using hardware-assisted virtualization.
+
+[Disable the hypervisor launch](#optional-disable-the-hypervisor-launch).
+:::
+
+#### Using PowerShell
+
+Run PowerShell as administrator and run:
+
+```powershell
+Get-ComputerInfo -property "HyperVRequirement*"
+```
+
+:::info Expected Result
+The output should be **True** for all of the properties.
+:::
+
+:::caution Hypervisor running
+If the output is empty, it means a hypervisor is already running on the machine and it will prevent VirtualBox from
+using hardware-assisted virtualization.
+
+[Disable the hypervisor launch](#optional-disable-the-hypervisor-launch).
+:::
+
+#### (Optional) Disable the Hypervisor Launch
+
+In case the hypervisor is running, it should be disabled in the boot configuration:
+
+```shell
+bcdedit /set "{current}" hypervisorlaunchtype Off
+```
+
+:::info
+The machine will need to be restarted for the changes to take effect.
 :::
 
   </TabItem>
@@ -100,7 +135,7 @@ One of the commands should output **1**.
   </TabItem>
 </Tabs>
 
-If virtualization is **not** enabled, follow these steps to enabled it:
+If virtualization is **not** enabled, follow these steps to enable it:
 
 <Tabs groupId="host-machines">
   <TabItem value="generic" label="Generic Steps" default>
@@ -132,8 +167,8 @@ If virtualization is **not** enabled, follow these steps to enabled it:
   </TabItem>
 </Tabs>
 
-After enabling the **Virtualization Technology (VTx)** verify that the feature is enabled by re-running your OS
-corresponding command [virtualization support](#virtualization-support).
+After enabling the **Virtualization Technology (VTx)** verify that it is now supported by your OS by re-running the
+[corresponding command](#virtualization-support).
 
 :::warning Warning
 If the host machine does not support hardware-assisted virtualization, the virtual machine will not be able to run.
