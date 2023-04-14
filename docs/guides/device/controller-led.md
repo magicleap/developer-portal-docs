@@ -6,6 +6,7 @@ date: 06/08/2022
 tags: [Compute Pack, LEDs, LED Patterns]
 keywords: [Compute Pack, LEDs, LED Patterns]
 ---
+import ReactPlayer from 'react-player'
 
 Magic Leap 2's controller has a single LED dot. Different combinations of colors and flashes communicate different pieces of information about the controller's status.
 
@@ -24,3 +25,6 @@ Magic Leap 2's controller has a single LED dot. Different combinations of colors
 | ![Controller_Charging_Critical_Battery.gif](/img/led-images/sprint13/Controller_Charging_Critical_Battery.gif) | Critical Battery Level<br/>_Controller is is at critically low charge._ |
 | ![update-success.gif](/img/led-images/sprint10/update-success.gif) | Successfully updating<br/>_Update is in progress._ |
 | ![update-failure.gif](/img/led-images/sprint10/update-failure.gif) | Failed to update<br/>_Update has failed._ |
+
+
+<ReactPlayer url='/img/led-images/controller-update-success.webm' playing loop />
