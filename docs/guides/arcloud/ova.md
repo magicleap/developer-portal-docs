@@ -38,15 +38,16 @@ devices right away.
 
 The images are available on the [Magic Leap 2 Developer Portal](https://ml2-developer.magicleap.com/downloads).
 
-Download the latest version for the [runtime environment](#runtime-environments) of your choice.
+Download the latest version of an image for the [runtime environment](#runtime-environments) of your choice.
+The OVA image supports the majority of the environments, except for MacBooks with Apple Silicon chipsets, in which case
+the UTM image should be used.
 
 :::caution
-You must be logged in to the Developer Portal for these links to appear. You can log in by clicking the "person" icon in the upper-righthandside of the window at the link above.
-:::
+You must be logged in to the Developer Portal for these links to appear. You can log in by clicking the "person" icon in
+the upper-righthandside of the window at the link above.
 
-:::note
-To download an image, registration and the approval of the
-[Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) are required.
+To download an image the approval of the
+[Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) is required.
 :::
 
 ## Requirements
@@ -210,9 +211,30 @@ Depending on the [runtime environment](#runtime-environments), the firewall conf
 
 ## Runtime Environments
 
+The virtual machine image can be run on a variety of local or cloud environments. Choose from the following supported
+platforms:
+
+<table>
+    <thead>
+        <tr><th>Environment</th><th>Platform</th><th>Image type</th></tr>
+    </thead>
+    <tbody>
+        <tr><td rowspan="4">Local</td><td><a href="?operating-systems=linux#local-machine">Linux - VirtualBox</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?operating-systems=windows#local-machine">Windows - VirtualBox</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?operating-systems=macos#intel-chip---virtualbox">macOS Intel (x86_64) - VirtualBox</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?operating-systems=macos#apple-chip---utm">macOS Apple Silicon (arm64) - UTM</a></td><td align="center">UTM</td></tr>
+        <tr><td rowspan="2">Cloud</td><td><a href="?cloud-providers=gcp#cloud-providers">GCP - Compute Engine</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?cloud-providers=aws#cloud-providers">AWS - EC2</a></td><td align="center">OVA</td></tr>
+    </tbody>
+</table>
+
 ### Local Machine
 
-<Tabs groupId="operating-systems">
+The virtual machine image can be run on a laptop/desktop computer or a server that is either not virtualized or that
+supports nested virtualization. This approach might be suitable for developers that need to run AR Cloud locally or when
+it is required to have the services running inside a private network.
+
+<Tabs groupId="operating-systems" queryString>
   <TabItem value="linux" label="Debian/Ubuntu" default>
 
 Download [VirtualBox for Linux][vbox-linux-download] or for **Debian**-based Linux distrubutions on amd64 CPUs you can
@@ -276,7 +298,10 @@ Download [VirtualBox for MacOS and Intel CPUs][vbox-download].
 
 ### Cloud Providers
 
-<Tabs groupId="cloud-providers">
+In case local machines are not available or the services need to be available publicly, it is also possible to deploy
+the virtual machine image to the supported cloud providers described below.
+
+<Tabs groupId="cloud-providers" queryString>
   <TabItem value="gcp" label="GCP" default>
 
 Check the [GCP documentation][gcp-image-import] or follow the steps below:
