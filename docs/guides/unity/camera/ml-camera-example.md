@@ -162,7 +162,7 @@ public class SimpleCamera : MonoBehaviour
         _camera.OnRawVideoFrameAvailable += RawVideoFrameAvailable;
     }
 
-    void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+    void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCameraBase.Metadata metadataHandle)
     {
         if (output.Format == MLCamera.OutputFormat.RGBA_8888)
         {
