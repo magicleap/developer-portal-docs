@@ -17,30 +17,13 @@ The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicL
 
 ## Public Attributes
 
-### IceServers {#intptr-iceservers}
+### Version {#uint-version}
 
-Pointer to the array of ice servers. 
-
-```csharp
-
-public IntPtr IceServers;
-
-```
-
-
-
-
-
-
------------
-
-### NumIceServers {#uint-numiceservers}
-
-Number of ice servers the above pointer can step through. 
+Version of the struct. 
 
 ```csharp
 
-public uint NumIceServers;
+public uint Version;
 
 ```
 
@@ -68,13 +51,30 @@ public IntPtr ProxyConfig;
 
 -----------
 
-### Version {#uint-version}
+### NumIceServers {#uint-numiceservers}
 
-Version of the struct. 
+Number of ice servers the above pointer can step through. 
 
 ```csharp
 
-public uint Version;
+public uint NumIceServers;
+
+```
+
+
+
+
+
+
+-----------
+
+### IceServers {#intptr-iceservers}
+
+Pointer to the array of ice servers. 
+
+```csharp
+
+public IntPtr IceServers;
 
 ```
 

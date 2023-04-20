@@ -39,12 +39,12 @@ public PlaneBoundary Current { get; set; }
 
 ## Public Methods
 
-### void Dispose {#void-dispose}
+### void Reset {#void-reset}
 
-Disposes of the enumerator. 
+Resets the enumerator. 
 
 ```csharp
-public void Dispose()
+public void Reset()
 ```
 
 
@@ -73,12 +73,12 @@ public bool MoveNext()
 
 -----------
 
-### void Reset {#void-reset}
+### void Dispose {#void-dispose}
 
-Resets the enumerator. 
+Disposes of the enumerator. 
 
 ```csharp
-public void Reset()
+public void Dispose()
 ```
 
 
@@ -89,6 +89,21 @@ public void Reset()
 -----------
 
 ## Public Attributes
+
+### m_Index {#int-m-index}
+
+```csharp
+
+public int m_Index;
+
+```
+
+
+
+
+
+
+-----------
 
 ### m_Collection {#planeboundarycollection-m-collection}
 
@@ -101,21 +116,6 @@ public PlaneBoundaryCollection m_Collection;
 | Type | Description  | 
 |--|--|
 | [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) | Represents a collection of concave  BoundedPlane  boundaries obtained from MagicLeapPlaneSubsystem.GetAllBoundariesForPlane(TrackableId).  |
-
-
-
-
-
------------
-
-### m_Index {#int-m-index}
-
-```csharp
-
-public int m_Index;
-
-```
-
 
 
 

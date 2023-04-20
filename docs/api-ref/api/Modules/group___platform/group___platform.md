@@ -56,11 +56,13 @@ APIs for information regarding the platform.
 
 
 
-**Shared Object:**
-  * capi.magicleap
+**Shared Object:
+ capi.magicleap**
+  * 
 
-**Shared Object:**
-  * platform.magicleap 
+**Shared Object:
+ platform.magicleap**
+  * 
 
 
 
@@ -117,7 +119,7 @@ APIs for information regarding the platform.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLResult_Ok |  MLResultAPIPrefix_Global| Operation completed successfuly. |
+| MLResult_Ok |  MLResultAPIPrefix_Global| Operation completed successfully. |
 | MLResult_Pending | | Asynchronous operation has not completed. |
 | MLResult_Timeout | | Operation has timed out. |
 | MLResult_Locked | | Request to lock a shared resource that is already locked. |
@@ -166,7 +168,7 @@ Integer handle type used to reference many things returned by the API, instead o
 ### MLVersion {#struct-mlversion}
 
 ```cpp
-typedef struct MLVersion  MLVersion;
+typedef struct MLVersion MLVersion;
 ```
 
 
@@ -252,8 +254,9 @@ Returns an ASCII string for MLResult codes.
 **Return**: ASCII string containing readable version of result code.
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -394,7 +397,7 @@ Macro to set a the prefix bytes of an API specific MLResult code.
 ### ML_PLATFORM_API_LEVEL {#defines-ml-platform-api-level}
 
 ```cpp
-#define ML_PLATFORM_API_LEVEL 25
+#define ML_PLATFORM_API_LEVEL 26
 ```
 
 

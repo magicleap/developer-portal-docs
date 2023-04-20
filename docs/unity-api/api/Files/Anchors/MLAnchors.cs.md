@@ -287,7 +287,11 @@ namespace UnityEngine.XR.MagicLeap
                 return this.Id.GetHashCode();
             }
 
-            public override string ToString() => $"id: {Id},\nPose: {Pose},\nExpirationTimeStamp: {ExpirationTimeStamp},\nIsPersisted: {IsPersisted},\nSpaceId: {SpaceId}";
+            public override string ToString() => $"id: {Id},
+Pose: {Pose},
+ExpirationTimeStamp: {ExpirationTimeStamp},
+IsPersisted: {IsPersisted},
+SpaceId: {SpaceId}";
         }
 
         public readonly struct LocalizationInfo
@@ -319,7 +323,12 @@ namespace UnityEngine.XR.MagicLeap
 
             }
 
-            public override string ToString() => $"LocalizationStatus: {this.LocalizationStatus},\nMappingMode: {this.MappingMode},\nSpaceName: {this.SpaceName},\nSpaceId: {this.SpaceId}, \nSpaceOriginId: {this.spaceOrigin}, \nSpaceOrigin: {this.SpaceOrigin}";
+            public override string ToString() => $"LocalizationStatus: {this.LocalizationStatus},
+MappingMode: {this.MappingMode},
+SpaceName: {this.SpaceName},
+SpaceId: {this.SpaceId}, 
+SpaceOriginId: {this.spaceOrigin}, 
+SpaceOrigin: {this.SpaceOrigin}";
 
         }
     }

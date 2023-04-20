@@ -57,7 +57,7 @@ MediaRecorder received a general info/warning message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |pointer|to [MLMediaRecorderOnInfo](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_on_info.md). |
 
 
@@ -83,7 +83,7 @@ MediaRecorder received a track-related info/warning message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |track_info|pointer to [MLMediaRecorderOnInfo](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_on_info.md). |
 
 
@@ -109,7 +109,7 @@ MediaRecorder received a general error message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |pointer|to [MLMediaRecorderOnError](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_on_error.md). |
 
 
@@ -135,7 +135,7 @@ MediaRecorder received a track-related error message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |pointer|to MLMediaRecorderError. |
 
 

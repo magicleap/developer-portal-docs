@@ -19,26 +19,6 @@ Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink](/unity-api/
 
 ## Public Fields
 
-### Stream {#mlwebrtcmediastream-stream}
-
-Gets or sets the reference to the stream. 
-
-```csharp
-
-public MLWebRTC.MediaStream Stream { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLWebRTC.MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) | Class that represents a media stream object.  |
-
-
-
-
-
------------
-
 ### Type {#mediastreamtracktype-type}
 
 Gets the type of the sink. 
@@ -52,6 +32,26 @@ public MediaStream.Track.Type Type { get; set; }
 | Type | Description  | 
 |--|--|
 | [MediaStream.Track.Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-type) | Defines the types of tracks that can exist.  |
+
+
+
+
+
+-----------
+
+### Stream {#mlwebrtcmediastream-stream}
+
+Gets or sets the reference to the stream. 
+
+```csharp
+
+public MLWebRTC.MediaStream Stream { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLWebRTC.MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) | Class that represents a media stream object.  |
 
 
 
@@ -84,13 +84,37 @@ public virtual abstract MLResult Destroy()
 
 ## Protected Methods
 
-### InvalidateHandle {#void-invalidatehandle}
+### Sink {#functions-sink}
 
-Used to invalidate handle by inherited classes. 
+Initializes a new instance of the [Sink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md) class. 
 
 ```csharp
-protected void InvalidateHandle()
+protected Sink()
 ```
+
+
+
+
+
+
+-----------
+
+### Sink {#functions-sink}
+
+Initializes a new instance of the [Sink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md) class. 
+
+```csharp
+protected Sink(
+    ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle|The handle of the sink.|
 
 
 
@@ -129,37 +153,13 @@ protected virtual abstract MLResult SetTrack(
 
 -----------
 
-### Sink {#functions-sink}
+### InvalidateHandle {#void-invalidatehandle}
 
-Initializes a new instance of the [Sink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md) class. 
-
-```csharp
-protected Sink()
-```
-
-
-
-
-
-
------------
-
-### Sink {#functions-sink}
-
-Initializes a new instance of the [Sink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md) class. 
+Used to invalidate handle by inherited classes. 
 
 ```csharp
-protected Sink(
-    ulong handle
-)
+protected void InvalidateHandle()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |handle|The handle of the sink.|
 
 
 

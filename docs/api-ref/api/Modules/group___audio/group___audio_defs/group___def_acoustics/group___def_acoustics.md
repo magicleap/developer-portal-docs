@@ -40,19 +40,20 @@ ACOUSTICS.
 ### MLAudioDispersionProperties {#struct-mlaudiodispersionproperties}
 
 ```cpp
-typedef struct MLAudioDispersionProperties  MLAudioDispersionProperties;
+typedef struct MLAudioDispersionProperties MLAudioDispersionProperties;
 ```
 
 
-specifying acoustic dispersion (clustered reflections).
+riefProperties specifying acoustic dispersion (clustered reflections).
 
 
 
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -62,7 +63,7 @@ specifying acoustic dispersion (clustered reflections).
 ### MLAudioReverbProperties {#struct-mlaudioreverbproperties}
 
 ```cpp
-typedef struct MLAudioReverbProperties  MLAudioReverbProperties;
+typedef struct MLAudioReverbProperties MLAudioReverbProperties;
 ```
 
 Properties specifying acoustic reverberation. 
@@ -72,8 +73,9 @@ Properties specifying acoustic reverberation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

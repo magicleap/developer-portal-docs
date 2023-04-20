@@ -36,8 +36,9 @@ Gesture classification state of a single finger.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

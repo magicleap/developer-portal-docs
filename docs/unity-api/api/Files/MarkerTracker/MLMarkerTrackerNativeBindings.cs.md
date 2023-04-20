@@ -252,7 +252,10 @@ namespace UnityEngine.XR.MagicLeap
 
                 public readonly float ReprojectionError;
 
-                public override string ToString() => $"{DecodedData}\nType: {Enum.GetName(typeof(MarkerType), Type)}\nCoordFrameID: {CoordinateFrameUID}\nReproj Error: {ReprojectionError}";
+                public override string ToString() => $"{DecodedData}
+Type: {Enum.GetName(typeof(MarkerType), Type)}
+CoordFrameID: {CoordinateFrameUID}
+Reproj Error: {ReprojectionError}";
             }
 
             [StructLayout(LayoutKind.Sequential)]

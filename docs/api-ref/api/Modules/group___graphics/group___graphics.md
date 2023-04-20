@@ -49,7 +49,7 @@ The APIs for the graphics system.  [More...](#detailed-description)
 | enum | **[MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname)** <br></br> { <br></br>[MLGraphicsVirtualCameraName_Combined](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname-combined) = -1,<br></br> [MLGraphicsVirtualCameraName_Left](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname-left) = 0,<br></br> [MLGraphicsVirtualCameraName_Right](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname-right),<br></br> [MLGraphicsVirtualCameraName_Count](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname-count),<br></br> [MLGraphicsVirtualCameraName_Ensure32Bits](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The metadata name associated with each virtual camera.  |
 | enum | **[Anonymous Enum 9](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-9)** <br></br> { <br></br>[MLGraphics_BufferCount](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphics-buffercount) = 3<br></br>} |
 | enum | **[MLGraphicsProjectionType](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype)** <br></br> { <br></br>[MLGraphicsProjectionType_SignedZ](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype-signedz) = 0,<br></br> [MLGraphicsProjectionType_ReversedInfiniteZ](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype-reversedinfinitez) = 1,<br></br> [MLGraphicsProjectionType_UnsignedZ](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype-unsignedz) = 2,<br></br> [MLGraphicsProjectionType_Ensure32Bits](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines the requested projection matrix model for rendering.  |
-| enum | **[MLGraphicsEnvironmentBlendMode](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode)** <br></br> { <br></br>[MLGraphicsEnvironmentBlendMode_Additive](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode-additive) = 0,<br></br> [MLGraphicsEnvironmentBlendMode_Alpha_Blend](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode-alpha-blend) = 1<br></br>}<br></br>Defines how the final frame will be blended with environment.  |
+| enum | **[MLGraphicsEnvironmentBlendMode](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode)** <br></br> { <br></br>[MLGraphicsEnvironmentBlendMode_Additive](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode-additive) = 0,<br></br> [MLGraphicsEnvironmentBlendMode_Alpha_Blend](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode-alpha-blend) = 1,<br></br> [MLGraphicsEnvironmentBlendMode_Ensure32Bits](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines how the final frame will be blended with environment.  |
 | enum | **[Anonymous Enum 10](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-10)** <br></br> { <br></br>[MLGraphicsBlobCache_DefaultMaxEntryBytes](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsblobcache-defaultmaxentrybytes) = 512 * 1024,<br></br> [MLGraphicsBlobCache_DefaultMaxTotalBytes](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsblobcache-defaultmaxtotalbytes) = 8 * 1024 * 1024<br></br>} |
 
 ## Functions
@@ -87,8 +87,9 @@ Note : In the current definition of the API, perception must have already been s
 
 
 
-**Shared Object:**
-  * graphics.magicleap The enclosed APIs allow for interaction with the graphics system. In general, to integrate with the graphics system you will do so with a graphics client handle. There are two types of clients currently supported, a GL/GLES client supporting all GL/GLES APIs from 3.0 to 4.5, and a VK client which supports the latest VK definition on the platform. Once created, the client handle can be used to start/end frames, set the requested timing characteristics for the client, and query useful information about the client.
+**Shared Object:
+ graphics.magicleap**
+  * The enclosed APIs allow for interaction with the graphics system. In general, to integrate with the graphics system you will do so with a graphics client handle. There are two types of clients currently supported, a GL/GLES client supporting all GL/GLES APIs from 3.0 to 4.5, and a VK client which supports the latest VK definition on the platform. Once created, the client handle can be used to start/end frames, set the requested timing characteristics for the client, and query useful information about the client.
 
 
 
@@ -216,6 +217,7 @@ Vulkan clients should use the unsigned Z projection model to ensure that NDC poi
 | ---------- | ----- | ----------- |
 | MLGraphicsEnvironmentBlendMode_Additive |  0| Ignore frame alpha and prohibit generation of segmented dimmer. |
 | MLGraphicsEnvironmentBlendMode_Alpha_Blend |  1| Use the resulting alpha after compostion potentially generating dimmer. |
+| MLGraphicsEnvironmentBlendMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
 
@@ -253,7 +255,7 @@ Default values suitable for use with [MLGraphicsEnableBlobCacheGL()](/api-ref/ap
 ### MLGraphicsOptions {#struct-mlgraphicsoptions}
 
 ```cpp
-typedef struct MLGraphicsOptions  MLGraphicsOptions;
+typedef struct MLGraphicsOptions MLGraphicsOptions;
 ```
 
 The graphics options provided for client creation. 
@@ -271,7 +273,7 @@ The graphics options provided for client creation.
 ### MLGraphicsFrameParamsEx {#struct-mlgraphicsframeparamsex}
 
 ```cpp
-typedef struct MLGraphicsFrameParamsEx  MLGraphicsFrameParamsEx;
+typedef struct MLGraphicsFrameParamsEx MLGraphicsFrameParamsEx;
 ```
 
 The frame parameters requested for the next rendered frame. 
@@ -285,8 +287,9 @@ This structure must be initialized by calling [MLGraphicsFrameParamsExInit()](/a
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md)
 
 
-**API Level:**
-  * 21 
+**API Level:
+ 21**
+  * 
 
 
 
@@ -296,7 +299,7 @@ This structure must be initialized by calling [MLGraphicsFrameParamsExInit()](/a
 ### MLGraphicsClipExtentsInfo {#struct-mlgraphicsclipextentsinfo}
 
 ```cpp
-typedef struct MLGraphicsClipExtentsInfo  MLGraphicsClipExtentsInfo;
+typedef struct MLGraphicsClipExtentsInfo MLGraphicsClipExtentsInfo;
 ```
 
 The static clip extents defined for all possible eye positions. 
@@ -319,7 +322,7 @@ Note: The client will need to obtain a headpose to combine with the provided mat
 ### MLGraphicsClipExtentsParams {#struct-mlgraphicsclipextentsparams}
 
 ```cpp
-typedef struct MLGraphicsClipExtentsParams  MLGraphicsClipExtentsParams;
+typedef struct MLGraphicsClipExtentsParams MLGraphicsClipExtentsParams;
 ```
 
 The clip extents parameters. 
@@ -331,8 +334,9 @@ The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/gro
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md)
 
 
-**API Level:**
-  * 4 
+**API Level:
+ 4**
+  * 
 
 
 
@@ -342,7 +346,7 @@ The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/gro
 ### MLGraphicsClipExtentsInfoArrayEx {#struct-mlgraphicsclipextentsinfoarrayex}
 
 ```cpp
-typedef struct MLGraphicsClipExtentsInfoArrayEx  MLGraphicsClipExtentsInfoArrayEx;
+typedef struct MLGraphicsClipExtentsInfoArrayEx MLGraphicsClipExtentsInfoArrayEx;
 ```
 
 The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex). 
@@ -356,8 +360,9 @@ This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExI
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md)
 
 
-**API Level:**
-  * 4 
+**API Level:
+ 4**
+  * 
 
 
 
@@ -367,7 +372,7 @@ This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExI
 ### MLGraphicsRenderTarget {#struct-mlgraphicsrendertarget}
 
 ```cpp
-typedef struct MLGraphicsRenderTarget  MLGraphicsRenderTarget;
+typedef struct MLGraphicsRenderTarget MLGraphicsRenderTarget;
 ```
 
 Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md). 
@@ -385,7 +390,7 @@ Each render target defines one of the buffered entries color/depth surfaces (wit
 ### MLGraphicsRenderBufferInfo {#struct-mlgraphicsrenderbufferinfo}
 
 ```cpp
-typedef struct MLGraphicsRenderBufferInfo  MLGraphicsRenderBufferInfo;
+typedef struct MLGraphicsRenderBufferInfo MLGraphicsRenderBufferInfo;
 ```
 
 Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md). 
@@ -405,7 +410,7 @@ Note : When the client specifies the [MLGraphicsFlags_NoDepth](/api-ref/api/Modu
 ### MLGraphicsRenderTargetsInfo {#struct-mlgraphicsrendertargetsinfo}
 
 ```cpp
-typedef struct MLGraphicsRenderTargetsInfo  MLGraphicsRenderTargetsInfo;
+typedef struct MLGraphicsRenderTargetsInfo MLGraphicsRenderTargetsInfo;
 ```
 
 The complete definition of all possible buffered entries along with associated metadata. 
@@ -423,7 +428,7 @@ Statically defined after successfully creating the client, the [MLGraphicsRender
 ### MLGraphicsVirtualCameraInfo {#struct-mlgraphicsvirtualcamerainfo}
 
 ```cpp
-typedef struct MLGraphicsVirtualCameraInfo  MLGraphicsVirtualCameraInfo;
+typedef struct MLGraphicsVirtualCameraInfo MLGraphicsVirtualCameraInfo;
 ```
 
 The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArray. 
@@ -446,7 +451,7 @@ Note: The projection model is asymmetric and clients should not assume any of th
 ### MLGraphicsFrameInfo {#struct-mlgraphicsframeinfo}
 
 ```cpp
-typedef struct MLGraphicsFrameInfo  MLGraphicsFrameInfo;
+typedef struct MLGraphicsFrameInfo MLGraphicsFrameInfo;
 ```
 
 Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). 
@@ -456,8 +461,9 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md)
 
 
-**API Level:**
-  * 7 
+**API Level:
+ 7**
+  * 
 
 
 
@@ -467,7 +473,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 ### MLGraphicsClientPerformanceInfo {#struct-mlgraphicsclientperformanceinfo}
 
 ```cpp
-typedef struct MLGraphicsClientPerformanceInfo  MLGraphicsClientPerformanceInfo;
+typedef struct MLGraphicsClientPerformanceInfo MLGraphicsClientPerformanceInfo;
 ```
 
 Performance timing information for the graphics client. 
@@ -513,8 +519,9 @@ Initializes a [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/st
 
 
 
-**API Level:**
-  * 22
+**API Level:
+ 22**
+  * 
 
 
 
@@ -539,8 +546,9 @@ Initializes default values for [MLGraphicsClipExtentsParams](/api-ref/api/Module
 
 
 
-**API Level:**
-  * 4
+**API Level:
+ 4**
+  * 
 
 
 
@@ -565,8 +573,9 @@ Initializes default values for [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/M
 
 
 
-**API Level:**
-  * 4
+**API Level:
+ 4**
+  * 
 
 
 
@@ -591,8 +600,9 @@ Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group_
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -910,8 +920,9 @@ Note : Calls to [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/g
 
 
 
-**API Level:**
-  * 22
+**API Level:
+ 22**
+  * 
 
 
 
@@ -1001,8 +1012,9 @@ EXPERIMENTAL.
 
 
 
-**API Level:**
-  * 4
+**API Level:
+ 4**
+  * 
 
 
 

@@ -107,64 +107,13 @@ public Params(
 
 ## Public Attributes
 
-### AnchorIds {#readonly-string-anchorids}
+### Sorted {#readonly-bool-sorted}
 
-A list of Spatial Anchors Ids query for. Only the array of anchors or the array of strings will be used for querying. 
-
-```csharp
-
-public readonly string [] AnchorIds;
-
-```
-
-
-
-
-
-
------------
-
-### Anchors {#readonly-anchors}
-
-A list of Spatial Anchors to query for. Only the array of anchors or the array of strings will be used for querying. 
+Indicate whether the results will be returned sorted by distance from center. Sorting results by distance will incur a performance penalty. 
 
 ```csharp
 
-public readonly Anchor [] Anchors;
-
-```
-
-
-
-
-
-
------------
-
-### Center {#readonly-vector3-center}
-
-The center point of where a spatial query will originate. 
-
-```csharp
-
-public readonly Vector3 Center;
-
-```
-
-
-
-
-
-
------------
-
-### MaxResults {#readonly-uint-maxresults}
-
-The upper bound of expected results. Set to 0 for unbounded results. 
-
-```csharp
-
-public readonly uint MaxResults;
+public readonly bool Sorted;
 
 ```
 
@@ -192,13 +141,64 @@ public readonly float Radius;
 
 -----------
 
-### Sorted {#readonly-bool-sorted}
+### MaxResults {#readonly-uint-maxresults}
 
-Indicate whether the results will be returned sorted by distance from center. Sorting results by distance will incur a performance penalty. 
+The upper bound of expected results. Set to 0 for unbounded results. 
 
 ```csharp
 
-public readonly bool Sorted;
+public readonly uint MaxResults;
+
+```
+
+
+
+
+
+
+-----------
+
+### Center {#readonly-vector3-center}
+
+The center point of where a spatial query will originate. 
+
+```csharp
+
+public readonly Vector3 Center;
+
+```
+
+
+
+
+
+
+-----------
+
+### Anchors {#readonly-anchors}
+
+A list of Spatial Anchors to query for. Only the array of anchors or the array of strings will be used for querying. 
+
+```csharp
+
+public readonly Anchor [] Anchors;
+
+```
+
+
+
+
+
+
+-----------
+
+### AnchorIds {#readonly-string-anchorids}
+
+A list of Spatial Anchors Ids query for. Only the array of anchors or the array of strings will be used for querying. 
+
+```csharp
+
+public readonly string [] AnchorIds;
 
 ```
 

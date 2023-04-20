@@ -16,10 +16,10 @@ title: ILeftHandActions
 
 ## Public Methods
 
-### void OnKeypose {#void-onkeypose}
+### void OnRotation {#void-onrotation}
 
 ```csharp
-public void OnKeypose(
+public void OnRotation(
     InputAction.CallbackContext context
 )
 ```
@@ -60,10 +60,10 @@ public void OnPosition(
 
 -----------
 
-### void OnRotation {#void-onrotation}
+### void OnKeypose {#void-onkeypose}
 
 ```csharp
-public void OnRotation(
+public void OnKeypose(
     InputAction.CallbackContext context
 )
 ```

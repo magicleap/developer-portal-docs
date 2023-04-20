@@ -32,64 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### BytesPerPixel {#readonly-uint-bytesperpixel}
+### Width {#readonly-uint-width}
 
-Number of bytes used to represent a pixel. 
-
-```csharp
-
-public readonly uint BytesPerPixel;
-
-```
-
-
-
-
-
-
------------
-
-### Data {#readonly-intptr-data}
-
-Buffer data. 
+Width of the output image in pixels. 
 
 ```csharp
 
-public readonly IntPtr Data;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#readonly-uint-height}
-
-Height of the output image in pixels. 
-
-```csharp
-
-public readonly uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### Size {#readonly-uint-size}
-
-Number of bytes in the frame. 
-
-```csharp
-
-public readonly uint Size;
+public readonly uint Width;
 
 ```
 
@@ -117,13 +66,64 @@ public readonly uint Stride;
 
 -----------
 
-### Width {#readonly-uint-width}
+### Size {#readonly-uint-size}
 
-Width of the output image in pixels. 
+Number of bytes in the frame. 
 
 ```csharp
 
-public readonly uint Width;
+public readonly uint Size;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#readonly-uint-height}
+
+Height of the output image in pixels. 
+
+```csharp
+
+public readonly uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### Data {#readonly-intptr-data}
+
+Buffer data. 
+
+```csharp
+
+public readonly IntPtr Data;
+
+```
+
+
+
+
+
+
+-----------
+
+### BytesPerPixel {#readonly-uint-bytesperpixel}
+
+Number of bytes used to represent a pixel. 
+
+```csharp
+
+public readonly uint BytesPerPixel;
 
 ```
 

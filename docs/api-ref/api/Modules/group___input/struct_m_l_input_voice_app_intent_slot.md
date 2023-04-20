@@ -33,8 +33,9 @@ A structure containing voice app-intent slot in voice event.
 
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 

@@ -19,6 +19,21 @@ Inherits from: <br></br>[IHapticsCommand](/unity-api/api/UnityEngine.XR.MagicLea
 
 ## Public Methods
 
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
+
+```csharp
+public MLResult StartHaptics()
+```
+
+
+
+
+**Reimplements**: [StartHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
+
+
+
+-----------
+
 ### [PreDefined](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md) Create {#predefined-create}
 
 ```csharp
@@ -36,21 +51,6 @@ public static PreDefined Create(
 
 
 
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
-
-```csharp
-public MLResult StartHaptics()
-```
-
-
-
-
-**Reimplements**: [StartHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
 
 
 

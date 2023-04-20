@@ -51,33 +51,13 @@ public static CursorState Create(
 
 ## Public Attributes
 
-### Modifiers {#eventflags-modifiers}
+### YPosition {#uint-yposition}
 
-Should be one or combination of #MLWebViewEventFlags. 
-
-```csharp
-
-public EventFlags Modifiers;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) | Flags to set special key states during input.  |
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-Version of this struct. 
+Vertical position of the cursor. 
 
 ```csharp
 
-public uint Version;
+public uint YPosition;
 
 ```
 
@@ -105,16 +85,36 @@ public uint XPosition;
 
 -----------
 
-### YPosition {#uint-yposition}
+### Version {#uint-version}
 
-Vertical position of the cursor. 
+Version of this struct. 
 
 ```csharp
 
-public uint YPosition;
+public uint Version;
 
 ```
 
+
+
+
+
+
+-----------
+
+### Modifiers {#eventflags-modifiers}
+
+Should be one or combination of #MLWebViewEventFlags. 
+
+```csharp
+
+public EventFlags Modifiers;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) | Flags to set special key states during input.  |
 
 
 

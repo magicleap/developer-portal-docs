@@ -17,25 +17,6 @@ Per plane info for captured output
 
 ## Public Methods
 
-### [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) Create {#mlcameraplaneinfo-create}
-
-Create and return an initialized version of this struct. 
-
-```csharp
-public static MLCameraPlaneInfo Create()
-```
-
-
-
-
-
-
-**Returns**: Returns a new MLCamera.PlaneInfo structure.
-
-
-
------------
-
 ### [MLCamera.PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) CreatePlaneInfo {#mlcameraplaneinfo-createplaneinfo}
 
 ```csharp
@@ -60,98 +41,34 @@ public MLCamera.PlaneInfo CreatePlaneInfo(
 
 -----------
 
+### [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) Create {#mlcameraplaneinfo-create}
+
+Create and return an initialized version of this struct. 
+
+```csharp
+public static MLCameraPlaneInfo Create()
+```
+
+
+
+
+
+
+**Returns**: Returns a new MLCamera.PlaneInfo structure.
+
+
+
+-----------
+
 ## Public Attributes
 
-### BytesPerPixel {#uint-bytesperpixel}
+### Width {#uint-width}
 
-Number of bytes used to represent a pixel 
-
-```csharp
-
-public uint BytesPerPixel;
-
-```
-
-
-
-
-
-
------------
-
-### Data {#intptr-data}
-
-Image data 
+Width of the output image in pixels 
 
 ```csharp
 
-public IntPtr Data;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Height of the output image in pixels 
-
-```csharp
-
-public uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### PixelsStride {#uint-pixelsstride}
-
-```csharp
-
-public uint PixelsStride;
-
-```
-
-
-
-
-
-
------------
-
-### Size {#uint-size}
-
-Number of bytes in the image output data 
-
-```csharp
-
-public uint Size;
-
-```
-
-
-
-
-
-
------------
-
-### Stride {#uint-stride}
-
-Stride of the output image in pixels 
-
-```csharp
-
-public uint Stride;
+public uint Width;
 
 ```
 
@@ -179,13 +96,96 @@ public uint Version;
 
 -----------
 
-### Width {#uint-width}
+### Stride {#uint-stride}
 
-Width of the output image in pixels 
+Stride of the output image in pixels 
 
 ```csharp
 
-public uint Width;
+public uint Stride;
+
+```
+
+
+
+
+
+
+-----------
+
+### Size {#uint-size}
+
+Number of bytes in the image output data 
+
+```csharp
+
+public uint Size;
+
+```
+
+
+
+
+
+
+-----------
+
+### PixelsStride {#uint-pixelsstride}
+
+```csharp
+
+public uint PixelsStride;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+Height of the output image in pixels 
+
+```csharp
+
+public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### Data {#intptr-data}
+
+Image data 
+
+```csharp
+
+public IntPtr Data;
+
+```
+
+
+
+
+
+
+-----------
+
+### BytesPerPixel {#uint-bytesperpixel}
+
+Number of bytes used to represent a pixel 
+
+```csharp
+
+public uint BytesPerPixel;
 
 ```
 

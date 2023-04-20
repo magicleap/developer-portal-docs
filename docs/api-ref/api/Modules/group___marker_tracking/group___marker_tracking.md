@@ -31,6 +31,7 @@ APIs for the Marker Tracking system.  [More...](#detailed-description)
 | typedef [MLMarkerTrackerDecodedBinaryData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md) | **[MLMarkerTrackerDecodedQRData](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#mlmarkertrackerdecodedbinarydata-mlmarkertrackerdecodedqrdata)** <br></br>QR Code data.  |
 | typedef [MLMarkerTrackerDecodedBinaryData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md) | **[MLMarkerTrackerDecodedEAN13Data](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#mlmarkertrackerdecodedbinarydata-mlmarkertrackerdecodedean13data)** <br></br>EAN-13 data.  |
 | typedef [MLMarkerTrackerDecodedBinaryData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md) | **[MLMarkerTrackerDecodedUPCAData](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#mlmarkertrackerdecodedbinarydata-mlmarkertrackerdecodedupcadata)** <br></br>UPC-A data.  |
+| typedef [MLMarkerTrackerDecodedBinaryData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md) | **[MLMarkerTrackerDecodedCode128Data](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#mlmarkertrackerdecodedbinarydata-mlmarkertrackerdecodedcode128data)** <br></br>Code 128 data.  |
 | typedef struct [MLMarkerTrackerDecodedData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_data.md) | **[MLMarkerTrackerDecodedData](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#struct-mlmarkertrackerdecodeddata)** <br></br>Represents the decoded data.  |
 | typedef struct [MLMarkerTrackerResult](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md) | **[MLMarkerTrackerResult](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#struct-mlmarkertrackerresult)** <br></br>Represents the result for a single marker.  |
 | typedef struct [MLMarkerTrackerResultArray](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result_array.md) | **[MLMarkerTrackerResultArray](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#struct-mlmarkertrackerresultarray)** <br></br>An array of all the marker results from the Marker Tracker.  |
@@ -41,7 +42,7 @@ APIs for the Marker Tracking system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLMarkerTrackerDetectorType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype)** <br></br> { <br></br>[MLMarkerTrackerDetectorType_None](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-none) = 0,<br></br> [MLMarkerTrackerDetectorType_QR](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-qr) = 1 << 0,<br></br> [MLMarkerTrackerDetectorType_Aruco](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-aruco) = 1 << 1,<br></br> [MLMarkerTrackerDetectorType_EAN_13](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-ean-13) = 1 << 2,<br></br> [MLMarkerTrackerDetectorType_UPC_A](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-upc-a) = 1 << 3,<br></br> [MLMarkerTrackerDetectorType_All](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-all) = 0x3FFFFFFF,<br></br> [MLMarkerTrackerDetectorType_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Represents the different detector types supported by the API.  |
+| enum | **[MLMarkerTrackerDetectorType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype)** <br></br> { <br></br>[MLMarkerTrackerDetectorType_None](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-none) = 0,<br></br> [MLMarkerTrackerDetectorType_QR](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-qr) = 1 << 0,<br></br> [MLMarkerTrackerDetectorType_Aruco](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-aruco) = 1 << 1,<br></br> [MLMarkerTrackerDetectorType_EAN_13](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-ean-13) = 1 << 2,<br></br> [MLMarkerTrackerDetectorType_UPC_A](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-upc-a) = 1 << 3,<br></br> [MLMarkerTrackerDetectorType_Code_128](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-code-128) = 1 << 4,<br></br> [MLMarkerTrackerDetectorType_All](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-all) = 0x3FFFFFFF,<br></br> [MLMarkerTrackerDetectorType_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Represents the different detector types supported by the API.  |
 | enum | **[MLMarkerTrackerProfile](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile)** <br></br> { <br></br>[MLMarkerTrackerProfile_Default](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile-default) = 0,<br></br> [MLMarkerTrackerProfile_Custom](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile-custom) = 1,<br></br> [MLMarkerTrackerProfile_Speed](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile-speed) = 2,<br></br> [MLMarkerTrackerProfile_Accuracy](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile-accuracy) = 3,<br></br> [MLMarkerTrackerProfile_SmallTargets](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile-smalltargets) = 4,<br></br> [MLMarkerTrackerProfile_Large_FoV](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile-large-fov) = 6,<br></br> [MLMarkerTrackerProfile_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Represents the different tracker profiles.  |
 | enum | **[MLMarkerTrackingFpsHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint)** <br></br> { <br></br>[MLMarkerTrackingFpsHint_Low](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint-low) = 0,<br></br> [MLMarkerTrackingFpsHint_Medium](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint-medium) = 1,<br></br> [MLMarkerTrackingFpsHint_High](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint-high) = 2,<br></br> [MLMarkerTrackingFpsHint_Max](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint-max) = 3,<br></br> [MLMarkerTrackingFpsHint_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Marker tracker FPS hint.  |
 | enum | **[MLMarkerTrackingResolutionHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint)** <br></br> { <br></br>[MLMarkerTrackingResolutionHint_Low](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint-low) = 0,<br></br> [MLMarkerTrackingResolutionHint_Medium](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint-medium) = 1,<br></br> [MLMarkerTrackingResolutionHint_High](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint-high) = 2,<br></br> [MLMarkerTrackingResolutionHint_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Marker tracker resolution hint.  |
@@ -49,7 +50,7 @@ APIs for the Marker Tracking system.  [More...](#detailed-description)
 | enum | **[MLMarkerTrackerCornerRefineMethod](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod)** <br></br> { <br></br>[MLMarkerTrackerCornerRefineMethod_None](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod-none) = 0,<br></br> [MLMarkerTrackerCornerRefineMethod_Subpix](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod-subpix) = 1,<br></br> [MLMarkerTrackerCornerRefineMethod_Contour](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod-contour) = 2,<br></br> [MLMarkerTrackerCornerRefineMethod_AprilTag](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod-apriltag) = 3,<br></br> [MLMarkerTrackerCornerRefineMethod_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Corner Refinement Method.  |
 | enum | **[MLMarkerTrackerFullAnalysisIntervalHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint)** <br></br> { <br></br>[MLMarkerTrackerFullAnalysisIntervalHint_Max](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint-max) = 0,<br></br> [MLMarkerTrackerFullAnalysisIntervalHint_Fast](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint-fast) = 1,<br></br> [MLMarkerTrackerFullAnalysisIntervalHint_Medium](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint-medium) = 2,<br></br> [MLMarkerTrackerFullAnalysisIntervalHint_Slow](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint-slow) = 3,<br></br> [MLMarkerTrackerFullAnalysisIntervalHint_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Full Frame Analysis Time Interval.  |
 | enum | **[MLMarkerTrackerArucoDictionaryName](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname)** <br></br> { <br></br>[MLMarkerTrackerArucoDictionaryName_NotInitialized](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-notinitialized) = -1,<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_4X4_50](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-4x4-50) = 0,<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_4X4_100](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-4x4-100),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_4X4_250](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-4x4-250),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_4X4_1000](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-4x4-1000),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_5X5_50](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-5x5-50),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_5X5_100](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-5x5-100),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_5X5_250](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-5x5-250),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_5X5_1000](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-5x5-1000),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_6X6_50](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-6x6-50),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_6X6_100](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-6x6-100),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_6X6_250](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-6x6-250),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_6X6_1000](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-6x6-1000),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_7X7_50](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-7x7-50),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_7X7_100](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-7x7-100),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_7X7_250](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-7x7-250),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_7X7_1000](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-7x7-1000),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_ARUCO_ORIGINAL](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-aruco-original),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_16h5](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-apriltag-16h5),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_25h9](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-apriltag-25h9),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_36h10](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-apriltag-36h10),<br></br> [MLMarkerTrackerArucoDictionaryName_DICT_APRILTAG_36h11](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-dict-apriltag-36h11),<br></br> [MLMarkerTrackerArucoDictionaryName_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Supported pre-defined Aruco dictionary and AprilTags.  |
-| enum | **[MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype)** <br></br> { <br></br>[MLMarkerTrackingDecodedDataType_None](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-none) = 0,<br></br> [MLMarkerTrackingDecodedDataType_Aruco](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-aruco) = 1,<br></br> [MLMarkerTrackingDecodedDataType_QR](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-qr) = 2,<br></br> [MLMarkerTrackingDecodedDataType_EAN_13](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-ean-13) = 3,<br></br> [MLMarkerTrackingDecodedDataType_UPC_A](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-upc-a) = 4,<br></br> [MLMarkerTrackingDecodedDataType_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Decoded Data Type enumeration.  |
+| enum | **[MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype)** <br></br> { <br></br>[MLMarkerTrackingDecodedDataType_None](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-none) = 0,<br></br> [MLMarkerTrackingDecodedDataType_Aruco](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-aruco) = 1,<br></br> [MLMarkerTrackingDecodedDataType_QR](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-qr) = 2,<br></br> [MLMarkerTrackingDecodedDataType_EAN_13](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-ean-13) = 3,<br></br> [MLMarkerTrackingDecodedDataType_UPC_A](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-upc-a) = 4,<br></br> [MLMarkerTrackingDecodedDataType_Code_128](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-code-128) = 5,<br></br> [MLMarkerTrackingDecodedDataType_Ensure32Bits](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Decoded Data Type enumeration.  |
 
 ## Functions
 
@@ -78,13 +79,15 @@ List of supported, trackable markers (with pose info):
 List of supported, detectable markers (no pose info):
 
 * EAN-13 (experimental).
-* UPC-A (experimental). 
+* UPC-A (experimental).
+* Code 128 (experimental). 
 
 
 
 
-**Shared Object:**
-  * perception.magicleap This API can be used to track fiducial markers like QR codes, April tags and Aruco markers. For fiducial markers, this API provides 6DOF poses, and the encoded information.
+**Shared Object:
+ perception.magicleap**
+  * This API can be used to track fiducial markers like QR codes, April tags and Aruco markers. For fiducial markers, this API provides 6DOF poses, and the encoded information.
 
 
 
@@ -101,6 +104,7 @@ List of supported, detectable markers (no pose info):
 | MLMarkerTrackerDetectorType_Aruco |  1 << 1| Aruco and AprilTag. |
 | MLMarkerTrackerDetectorType_EAN_13 |  1 << 2| EAN-13 (experimental). |
 | MLMarkerTrackerDetectorType_UPC_A |  1 << 3| UPC-A (experimental). |
+| MLMarkerTrackerDetectorType_Code_128 |  1 << 4| Code 128 decoded data. (experimental) |
 | MLMarkerTrackerDetectorType_All |  0x3FFFFFFF| All supported marker types. |
 | MLMarkerTrackerDetectorType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -111,8 +115,9 @@ Represents the different detector types supported by the API.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -138,8 +143,9 @@ Represents the different tracker profiles.
 
 
 
-**API Level:**
-  * 21 
+**API Level:
+ 21**
+  * 
 
 
 
@@ -167,8 +173,9 @@ CPU load is a combination of enabled detector types, FpsHint and ResolutionHint.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -195,8 +202,9 @@ CPU load is a combination of enabled detector types, FpsHint and ResolutionHint.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -224,8 +232,9 @@ World cameras make use of multiple world cameras to improve accuracy and increas
 
 
 
-**API Level:**
-  * 21 
+**API Level:
+ 21**
+  * 
 
 
 
@@ -255,8 +264,9 @@ Corner refinement only applies to Aruco and April tags, not QR codes.
 :::
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -282,8 +292,9 @@ In order to improve performance, the detectors don't always run on the full fram
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -331,8 +342,9 @@ Marker Tracker supports pre-defined Aruco dictionary and AprilTags. Aruco dictio
 :::
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -348,6 +360,7 @@ Marker Tracker supports pre-defined Aruco dictionary and AprilTags. Aruco dictio
 | MLMarkerTrackingDecodedDataType_QR |  2| QR decoded data. |
 | MLMarkerTrackingDecodedDataType_EAN_13 |  3| EAN-13 decoded data. |
 | MLMarkerTrackingDecodedDataType_UPC_A |  4| UPC-A decoded data. |
+| MLMarkerTrackingDecodedDataType_Code_128 |  5| Code 128 decoded data. |
 | MLMarkerTrackingDecodedDataType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -359,8 +372,9 @@ Each decoder may output different types of decoded data structures. The type fie
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -373,7 +387,7 @@ Each decoder may output different types of decoded data structures. The type fie
 ### MLMarkerTrackerDecodedTypedData {#struct-mlmarkertrackerdecodedtypeddata}
 
 ```cpp
-typedef struct MLMarkerTrackerDecodedTypedData  MLMarkerTrackerDecodedTypedData;
+typedef struct MLMarkerTrackerDecodedTypedData MLMarkerTrackerDecodedTypedData;
 ```
 
 Structure type selector. 
@@ -396,8 +410,9 @@ switch ( data->type ) {
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_typed_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -407,7 +422,7 @@ switch ( data->type ) {
 ### MLMarkerTrackerDecodedArucoData {#struct-mlmarkertrackerdecodedarucodata}
 
 ```cpp
-typedef struct MLMarkerTrackerDecodedArucoData  MLMarkerTrackerDecodedArucoData;
+typedef struct MLMarkerTrackerDecodedArucoData MLMarkerTrackerDecodedArucoData;
 ```
 
 Aruco decoded data. 
@@ -417,8 +432,9 @@ Aruco decoded data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -428,7 +444,7 @@ Aruco decoded data.
 ### MLMarkerTrackerDecodedBinaryData {#struct-mlmarkertrackerdecodedbinarydata}
 
 ```cpp
-typedef struct MLMarkerTrackerDecodedBinaryData  MLMarkerTrackerDecodedBinaryData;
+typedef struct MLMarkerTrackerDecodedBinaryData MLMarkerTrackerDecodedBinaryData;
 ```
 
 Binary decoded data. 
@@ -438,8 +454,9 @@ Binary decoded data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -459,8 +476,9 @@ QR Code data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -480,8 +498,9 @@ EAN-13 data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -501,8 +520,31 @@ UPC-A data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
+
+
+
+
+-----------
+
+### MLMarkerTrackerDecodedCode128Data {#mlmarkertrackerdecodedbinarydata-mlmarkertrackerdecodedcode128data}
+
+```cpp
+typedef MLMarkerTrackerDecodedBinaryData MLMarkerTrackerDecodedCode128Data;
+```
+
+Code 128 data. 
+
+
+
+[More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
+
+
+**API Level:
+ 25**
+  * 
 
 
 
@@ -512,7 +554,7 @@ UPC-A data.
 ### MLMarkerTrackerDecodedData {#struct-mlmarkertrackerdecodeddata}
 
 ```cpp
-typedef struct MLMarkerTrackerDecodedData  MLMarkerTrackerDecodedData;
+typedef struct MLMarkerTrackerDecodedData MLMarkerTrackerDecodedData;
 ```
 
 Represents the decoded data. 
@@ -524,8 +566,9 @@ The different detectors will have different decoded outputs. See [MLMarkerTracke
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -535,7 +578,7 @@ The different detectors will have different decoded outputs. See [MLMarkerTracke
 ### MLMarkerTrackerResult {#struct-mlmarkertrackerresult}
 
 ```cpp
-typedef struct MLMarkerTrackerResult  MLMarkerTrackerResult;
+typedef struct MLMarkerTrackerResult MLMarkerTrackerResult;
 ```
 
 Represents the result for a single marker. 
@@ -547,8 +590,9 @@ A list of these detections will be returned by the Marker Tracker, after process
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -558,7 +602,7 @@ A list of these detections will be returned by the Marker Tracker, after process
 ### MLMarkerTrackerResultArray {#struct-mlmarkertrackerresultarray}
 
 ```cpp
-typedef struct MLMarkerTrackerResultArray  MLMarkerTrackerResultArray;
+typedef struct MLMarkerTrackerResultArray MLMarkerTrackerResultArray;
 ```
 
 An array of all the marker results from the Marker Tracker. 
@@ -570,8 +614,9 @@ Free this array with [MLMarkerTrackerReleaseResult](/api-ref/api/Modules/group__
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result_array.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -581,7 +626,7 @@ Free this array with [MLMarkerTrackerReleaseResult](/api-ref/api/Modules/group__
 ### MLMarkerTrackerCustomProfile {#struct-mlmarkertrackercustomprofile}
 
 ```cpp
-typedef struct MLMarkerTrackerCustomProfile  MLMarkerTrackerCustomProfile;
+typedef struct MLMarkerTrackerCustomProfile MLMarkerTrackerCustomProfile;
 ```
 
 Marker Tracker Custom Profile. 
@@ -599,7 +644,7 @@ Marker Tracker system provides a set of standard tracking profiles (see [MLMarke
 ### MLMarkerTrackerSettings {#struct-mlmarkertrackersettings}
 
 ```cpp
-typedef struct MLMarkerTrackerSettings  MLMarkerTrackerSettings;
+typedef struct MLMarkerTrackerSettings MLMarkerTrackerSettings;
 ```
 
 Marker Tracker Settings. 
@@ -611,8 +656,9 @@ When creating a Marker Tracker, this list of settings needs to be passed to conf
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md)
 
 
-**API Level:**
-  * 21 
+**API Level:
+ 21**
+  * 
 
 
 
@@ -647,8 +693,9 @@ Initializes default values for [MLMarkerTrackerResultArray](/api-ref/api/Modules
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -688,8 +735,9 @@ Max time between fully analyzed frames is 1s.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -735,8 +783,9 @@ Only one marker tracker is allowed per app/session. This call will fail when cal
 :::
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -777,8 +826,9 @@ Update the Marker Tracker with new settings.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -816,8 +866,9 @@ Destroy an Marker Tracker.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -858,8 +909,9 @@ Get the results for Marker Tracking.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -898,8 +950,9 @@ Release the resources for the results array.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

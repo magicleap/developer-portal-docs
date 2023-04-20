@@ -32,13 +32,64 @@ public static MLMediaMuxerSampleData Create()
 
 ## Public Attributes
 
-### Buffer {#byte-buffer}
+### Version {#uint-version}
 
-Pointer to the sample buffer/data. 
+Version of this structure. 
 
 ```csharp
 
-public byte [] Buffer;
+public uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### TrackIndex {#uint-trackindex}
+
+The track index number, to which to write the sample data into. This should be a value returned by [AddAudioTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addaudiotrack) or [AddVideoTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addvideotrack)
+
+```csharp
+
+public uint TrackIndex;
+
+```
+
+
+
+
+
+
+-----------
+
+### Time {#ulong-time}
+
+The buffer's time stamp in microseconds. 
+
+```csharp
+
+public ulong Time;
+
+```
+
+
+
+
+
+
+-----------
+
+### Size {#uint-size}
+
+Size of the sample buuffer/data. 
+
+```csharp
+
+public uint Size;
 
 ```
 
@@ -69,64 +120,13 @@ public CodecBufferFlags Flags;
 
 -----------
 
-### Size {#uint-size}
+### Buffer {#byte-buffer}
 
-Size of the sample buuffer/data. 
-
-```csharp
-
-public uint Size;
-
-```
-
-
-
-
-
-
------------
-
-### Time {#ulong-time}
-
-The buffer's time stamp in microseconds. 
+Pointer to the sample buffer/data. 
 
 ```csharp
 
-public ulong Time;
-
-```
-
-
-
-
-
-
------------
-
-### TrackIndex {#uint-trackindex}
-
-The track index number, to which to write the sample data into. This should be a value returned by [AddAudioTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addaudiotrack) or [AddVideoTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addvideotrack)
-
-```csharp
-
-public uint TrackIndex;
-
-```
-
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-Version of this structure. 
-
-```csharp
-
-public uint Version;
+public byte [] Buffer;
 
 ```
 

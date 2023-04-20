@@ -29,7 +29,7 @@ title: ml_voice.h
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 25](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-25)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Files/ml__voice_8h.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
+| enum | **[Anonymous Enum 26](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-26)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Files/ml__voice_8h.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
 | enum | **[MLVoiceResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
 | enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
 | enum | **[MLVoiceIntentNoIntentReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
@@ -50,7 +50,7 @@ title: ml_voice.h
 
 ## Enums Documentation
 
-### Anonymous Enum 25 {#enums-anonymous-enum-25}
+### Anonymous Enum 26 {#enums-anonymous-enum-26}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -79,8 +79,9 @@ Return values for Voice API calls.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -108,8 +109,9 @@ Voice state in voice event.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -132,8 +134,9 @@ No intent reason code in voice event.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -146,7 +149,7 @@ No intent reason code in voice event.
 ### MLInputVoiceAppIntentSlot {#struct-mlinputvoiceappintentslot}
 
 ```cpp
-typedef struct MLInputVoiceAppIntentSlot  MLInputVoiceAppIntentSlot;
+typedef struct MLInputVoiceAppIntentSlot MLInputVoiceAppIntentSlot;
 ```
 
 A structure containing voice app-intent slot in voice event. 
@@ -156,8 +159,9 @@ A structure containing voice app-intent slot in voice event.
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 
@@ -167,7 +171,7 @@ A structure containing voice app-intent slot in voice event.
 ### MLVoiceIntentEvent {#struct-mlvoiceintentevent}
 
 ```cpp
-typedef struct MLVoiceIntentEvent  MLVoiceIntentEvent;
+typedef struct MLVoiceIntentEvent MLVoiceIntentEvent;
 ```
 
 A structure containing voice intent event. 
@@ -177,8 +181,9 @@ A structure containing voice intent event.
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 
@@ -188,7 +193,7 @@ A structure containing voice intent event.
 ### MLVoiceIntentCallbacks {#struct-mlvoiceintentcallbacks}
 
 ```cpp
-typedef struct MLVoiceIntentCallbacks  MLVoiceIntentCallbacks;
+typedef struct MLVoiceIntentCallbacks MLVoiceIntentCallbacks;
 ```
 
 A structure containing callbacks for voice intent events. 
@@ -202,8 +207,9 @@ This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/ap
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 
@@ -213,7 +219,7 @@ This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/ap
 ### MLVoiceIntentSettings {#struct-mlvoiceintentsettings}
 
 ```cpp
-typedef struct MLVoiceIntentSettings  MLVoiceIntentSettings;
+typedef struct MLVoiceIntentSettings MLVoiceIntentSettings;
 ```
 
 A structure containing settings for voice app intent. 
@@ -225,8 +231,9 @@ This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/api
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -259,8 +266,9 @@ Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/gro
 
 
 
-**API Level:**
-  * 24
+**API Level:
+ 24**
+  * 
 
 
 
@@ -290,8 +298,9 @@ Initializes default values for [MLVoiceIntentSettings](/api-ref/api/Modules/grou
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -329,8 +338,9 @@ Creates a voice intent client.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -406,8 +416,9 @@ App needs to call MLVoiceIntentConfigureSettings at least once before it calls M
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -450,8 +461,9 @@ Sets the callbacks for voice intent events.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -493,8 +505,9 @@ NOTE: If your application is processing voice intents make sure to call [MLVoice
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -536,8 +549,9 @@ NOTE: If your application is processing voice intents make sure to call [MLVoice
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -576,8 +590,9 @@ Checks voice intent feature is enabled in the system.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

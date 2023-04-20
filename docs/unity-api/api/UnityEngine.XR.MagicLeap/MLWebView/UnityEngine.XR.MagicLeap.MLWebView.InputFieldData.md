@@ -17,70 +17,13 @@ Struct containing data about clicked input field in WebView.
 
 ## Public Attributes
 
-### Height {#int-height}
+### Y {#int-y}
 
-Height of the input field. 
-
-```csharp
-
-public int Height;
-
-```
-
-
-
-
-
-
------------
-
-### TextInputFlags {#textinputflags-textinputflags}
-
-One or combination of TextInputFlags. 
+Vertical position of the input field. 
 
 ```csharp
 
-public TextInputFlags TextInputFlags;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [TextInputFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputflags) | Flags related to a text entry field passed when on&#95;show&#95;keyboard is called.  |
-
-
-
-
-
------------
-
-### TextInputType {#textinputtype-textinputtype}
-
-One of TextInputType. 
-
-```csharp
-
-public TextInputType TextInputType;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [TextInputType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputtype) | The type of text entry selected when onShowKeyboard is called.  |
-
-
-
-
-
------------
-
-### Width {#int-width}
-
-Width of the input field. 
-
-```csharp
-
-public int Width;
+public int Y;
 
 ```
 
@@ -108,13 +51,70 @@ public int X;
 
 -----------
 
-### Y {#int-y}
+### Width {#int-width}
 
-Vertical position of the input field. 
+Width of the input field. 
 
 ```csharp
 
-public int Y;
+public int Width;
+
+```
+
+
+
+
+
+
+-----------
+
+### TextInputType {#textinputtype-textinputtype}
+
+One of TextInputType. 
+
+```csharp
+
+public TextInputType TextInputType;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [TextInputType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputtype) | The type of text entry selected when onShowKeyboard is called.  |
+
+
+
+
+
+-----------
+
+### TextInputFlags {#textinputflags-textinputflags}
+
+One or combination of TextInputFlags. 
+
+```csharp
+
+public TextInputFlags TextInputFlags;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [TextInputFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputflags) | Flags related to a text entry field passed when on&#95;show&#95;keyboard is called.  |
+
+
+
+
+
+-----------
+
+### Height {#int-height}
+
+Height of the input field. 
+
+```csharp
+
+public int Height;
 
 ```
 

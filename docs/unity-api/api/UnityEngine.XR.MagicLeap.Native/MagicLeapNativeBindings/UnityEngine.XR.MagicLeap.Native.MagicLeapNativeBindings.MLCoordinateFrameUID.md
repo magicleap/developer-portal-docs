@@ -43,13 +43,14 @@ public static MLCoordinateFrameUID EmptyFrame { get; set; }
 
 ## Public Methods
 
-### override bool Equals {#override-bool-equals}
+### bool operator== {#bool-operator}
 
-The equality check to be used for when being compared to an object. 
+The equality check to be used for comparing two [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) structs. 
 
 ```csharp
-public override bool Equals(
-    object obj
+public static bool operator==(
+    MLCoordinateFrameUID one,
+    MLCoordinateFrameUID two
 )
 ```
 
@@ -58,26 +59,28 @@ public override bool Equals(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| object |obj|The object to compare to this one with.|
+| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |one|The first struct to compare with the second struct. |
+| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |two|The second struct to compare with the first struct. |
 
 
 
 
 
 
-**Returns**: True if the the provided object is of the [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) type and has the same two data values.
+**Returns**: True if the two provided structs have the same two data values.
 
 
 
 -----------
 
-### void FromGuid {#void-fromguid}
+### bool operator!= {#bool-operator}
 
-Sets First and Second data value based on given GUID. 
+The inequality check to be used for comparing two [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) structs. 
 
 ```csharp
-public void FromGuid(
-    Guid guid
+public static bool operator!=(
+    MLCoordinateFrameUID one,
+    MLCoordinateFrameUID two
 )
 ```
 
@@ -86,71 +89,26 @@ public void FromGuid(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| Guid |guid|GUID needed to calculate both data values.|
+| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |one|The first struct to compare with the second struct. |
+| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |two|The second struct to compare with the first struct. |
 
 
 
 
 
 
------------
-
-### void FromString {#void-fromstring}
-
-Sets First and Second data value based on given GUID in stirng form. 
-
-```csharp
-public void FromString(
-    string guidString
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |guidString|GUID needed to calculate both data values|
-
-
-
+**Returns**: True if the two provided structs do not have the same two data values.
 
 
 
 -----------
 
-### void FromULongPair {#void-fromulongpair}
+### override string ToString {#override-string-tostring}
 
-Sets First and Second value. 
-
-```csharp
-public void FromULongPair(
-    ulong first,
-    ulong second
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |first|First data value.|
-| ulong |second|Second data value.|
-
-
-
-
-
-
------------
-
-### override int GetHashCode {#override-int-gethashcode}
-
-Gets the hash code to use from the first data value. 
+Returns the string value of the GUID of this [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md). 
 
 ```csharp
-public override int GetHashCode()
+public override string ToString()
 ```
 
 
@@ -158,7 +116,26 @@ public override int GetHashCode()
 
 
 
-**Returns**: The hash code returned by the first data value of this object 
+**Returns**: The string value of the GUID.
+
+
+
+-----------
+
+### Guid ToGuid {#guid-toguid}
+
+Returns the GUID based on the values of this [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md). 
+
+```csharp
+public Guid ToGuid()
+```
+
+
+
+
+
+
+**Returns**: The calculated GUID.
 
 
 
@@ -238,12 +215,12 @@ public MLCoordinateFrameUID(
 
 -----------
 
-### Guid ToGuid {#guid-toguid}
+### override int GetHashCode {#override-int-gethashcode}
 
-Returns the GUID based on the values of this [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md). 
+Gets the hash code to use from the first data value. 
 
 ```csharp
-public Guid ToGuid()
+public override int GetHashCode()
 ```
 
 
@@ -251,39 +228,20 @@ public Guid ToGuid()
 
 
 
-**Returns**: The calculated GUID.
+**Returns**: The hash code returned by the first data value of this object 
 
 
 
 -----------
 
-### override string ToString {#override-string-tostring}
+### void FromULongPair {#void-fromulongpair}
 
-Returns the string value of the GUID of this [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md). 
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
-**Returns**: The string value of the GUID.
-
-
-
------------
-
-### bool operator!= {#bool-operator}
-
-The inequality check to be used for comparing two [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) structs. 
+Sets First and Second value. 
 
 ```csharp
-public static bool operator!=(
-    MLCoordinateFrameUID one,
-    MLCoordinateFrameUID two
+public void FromULongPair(
+    ulong first,
+    ulong second
 )
 ```
 
@@ -292,28 +250,23 @@ public static bool operator!=(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |one|The first struct to compare with the second struct. |
-| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |two|The second struct to compare with the first struct. |
+| ulong |first|First data value.|
+| ulong |second|Second data value.|
 
 
 
-
-
-
-**Returns**: True if the two provided structs do not have the same two data values.
 
 
 
 -----------
 
-### bool operator== {#bool-operator}
+### void FromString {#void-fromstring}
 
-The equality check to be used for comparing two [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) structs. 
+Sets First and Second data value based on given GUID in stirng form. 
 
 ```csharp
-public static bool operator==(
-    MLCoordinateFrameUID one,
-    MLCoordinateFrameUID two
+public void FromString(
+    string guidString
 )
 ```
 
@@ -322,38 +275,68 @@ public static bool operator==(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |one|The first struct to compare with the second struct. |
-| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |two|The second struct to compare with the first struct. |
+| string |guidString|GUID needed to calculate both data values|
 
 
 
 
 
 
-**Returns**: True if the two provided structs have the same two data values.
+-----------
+
+### void FromGuid {#void-fromguid}
+
+Sets First and Second data value based on given GUID. 
+
+```csharp
+public void FromGuid(
+    Guid guid
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Guid |guid|GUID needed to calculate both data values.|
+
+
+
+
+
+
+-----------
+
+### override bool Equals {#override-bool-equals}
+
+The equality check to be used for when being compared to an object. 
+
+```csharp
+public override bool Equals(
+    object obj
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| object |obj|The object to compare to this one with.|
+
+
+
+
+
+
+**Returns**: True if the the provided object is of the [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) type and has the same two data values.
 
 
 
 -----------
 
 ## Public Attributes
-
-### First {#ulong-first}
-
-The first data value. 
-
-```csharp
-
-public ulong First;
-
-```
-
-
-
-
-
-
------------
 
 ### Second {#ulong-second}
 
@@ -362,6 +345,23 @@ The second data value.
 ```csharp
 
 public ulong Second;
+
+```
+
+
+
+
+
+
+-----------
+
+### First {#ulong-first}
+
+The first data value. 
+
+```csharp
+
+public ulong First;
 
 ```
 

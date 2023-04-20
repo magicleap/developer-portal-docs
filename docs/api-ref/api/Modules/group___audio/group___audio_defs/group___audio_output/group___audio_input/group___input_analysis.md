@@ -73,8 +73,9 @@ Creates a trait analysis, initializes its connection to the device microphones a
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -115,8 +116,9 @@ Returns the current value of the trait analysis associated with the specified ha
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -156,8 +158,9 @@ Stops the analysis associated with the specified handle.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -198,13 +201,14 @@ Starts a new spectral analysis that provides frequency spectrum energy derived f
   * None 
 
 
-Creates a spectral analysis, initializes its connection to the device microphones as the audio data source, and returns a handle in the 'out_handle' argument. The 'target' argument specifies the type of spectral analysis, which implies the type of audio content to be analyzed. Spectral analysis results are returned in the [MLAudioSpectralAnalysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) struct, which contains a time window of spectral analysis values. Results may be acquired either on a polling basis by calling MLAudioGetSpectralAnalysis, or via a callback set by the optional 'callback' argument of this function.
+Creates a spectral analysis, initializes its connection to the device microphones as the audio data source, and returns a handle in the 'out_handle' argument. The 'target' argument specifies the type of spectral analysis, which implies the type of audio content to be analyzed. Spectral analysis results are returned in the [MLAudioSpectralAnalysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) struct, which contains a time window of spectral analysis values. Results may be acquired either on a polling basis by calling MLAudioGetSpectralAnalysis, or via a callback set by the optional 'callback' argument of this function, triggered whenever new values are available. Cleanup of [MLAudioSpectralAnalysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) passed in the optional callback is handled by the ml_audio library; the caller is not responsible for deallocating memory if the callback is used.
 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -242,11 +246,14 @@ Returns the current value of the spectral analysis associated with the specified
   * None 
 
 
+Allocates memory at out_values->values based on the MLAudioSpectralAnalysisTarget associated with the specified handle. The caller is responsible for deallocating this memory after each call to MLAudioGetSpectralAnalysis.
 
 
 
-**API Level:**
-  * 20
+
+**API Level:
+ 20**
+  * 
 
 
 
@@ -286,8 +293,9 @@ Stops the analysis associated with the specified handle.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

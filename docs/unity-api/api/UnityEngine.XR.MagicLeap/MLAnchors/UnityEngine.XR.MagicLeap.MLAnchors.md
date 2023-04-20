@@ -68,23 +68,6 @@ public static MLResult GetLocalizationInfo(
 
 ## Protected Methods
 
-### StartAPI {#override-startapi}
-
-Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 
-
-```csharp
-protected virtual override MLResult.Code StartAPI()
-```
-
-
-
-
-**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
-
-
-
------------
-
 ### StopAPI {#override-stopapi}
 
 API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
@@ -97,6 +80,23 @@ protected virtual override MLResult.Code StopAPI()
 
 
 **Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
+
+
+
+-----------
+
+### StartAPI {#override-startapi}
+
+Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 
+
+```csharp
+protected virtual override MLResult.Code StartAPI()
+```
+
+
+
+
+**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
 
 
 
@@ -123,16 +123,14 @@ public const uint MaxSpaceNameLength = 64;
 
 ## Public Enums
 
-### LocalizationStatus {#enums-localizationstatus}
+### MappingMode {#enums-mappingmode}
 
-LocalizationStatus 
+The current mapping mode, set via settings. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| NotLocalized | | The device is not currently localized.   |
-| Localized | | The device has localized successfully.   |
-| LocalizationPending | | A localization attempt is currently in progress.   |
-| LocalizationFailed | | The last localization attempt failed.   |
+| OnDevice | | Using on-device mapping .   |
+| ARCloud | | Using cloud-based mapping.   |
 
 
 
@@ -143,14 +141,16 @@ LocalizationStatus
 
 -----------
 
-### MappingMode {#enums-mappingmode}
+### LocalizationStatus {#enums-localizationstatus}
 
-The current mapping mode, set via settings. 
+LocalizationStatus 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| OnDevice | | Using on-device mapping .   |
-| ARCloud | | Using cloud-based mapping.   |
+| NotLocalized | | The device is not currently localized.   |
+| Localized | | The device has localized successfully.   |
+| LocalizationPending | | A localization attempt is currently in progress.   |
+| LocalizationFailed | | The last localization attempt failed.   |
 
 
 

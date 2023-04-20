@@ -17,13 +17,13 @@ CEA708 Caption Pen Color.  MLCea708CaptionPenColor  from  ml&#95;media&#95;cea70
 
 ## Public Attributes
 
-### BackgroundColor {#cea708captioncolor-backgroundcolor}
+### ForegroundColor {#cea708captioncolor-foregroundcolor}
 
-Background color. 
+Foreground color. 
 
 ```csharp
 
-public Cea708CaptionColor BackgroundColor;
+public Cea708CaptionColor ForegroundColor;
 
 ```
 
@@ -57,13 +57,13 @@ public Cea708CaptionColor EdgeColor;
 
 -----------
 
-### ForegroundColor {#cea708captioncolor-foregroundcolor}
+### BackgroundColor {#cea708captioncolor-backgroundcolor}
 
-Foreground color. 
+Background color. 
 
 ```csharp
 
-public Cea708CaptionColor ForegroundColor;
+public Cea708CaptionColor BackgroundColor;
 
 ```
 

@@ -48,8 +48,9 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 
@@ -342,7 +343,7 @@ This callback is used to notify user that service has failed.
 
 
 :::note
-on_service_failed is for version >= 2.
+Callback on_service_failed is for version >= 2.
 :::
 
 
@@ -372,7 +373,7 @@ This callback is used to ask the application if is OK to load a URL.
 
 
 :::note
-on_before_popup is for version >= 3.
+Callback on_before_popup is for version >= 3.
 :::
 
 
@@ -401,7 +402,7 @@ This callback is used to notify application that popup is opened.
 
 
 :::note
-on_popup_opened is for version >= 3.
+Callback on_popup_opened is for version >= 3.
 :::
 
 

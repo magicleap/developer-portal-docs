@@ -16,81 +16,13 @@ title: MLEyeTrackingStateEx
 
 ## Public Attributes
 
-### Error {#readonly-uint-error}
+### VergenceConfidence {#readonly-float-vergenceconfidence}
 
-Represents what eye tracking error (if any) is present. 
-
-```csharp
-
-public readonly uint Error;
-
-```
-
-
-
-
-
-
------------
-
-### LeftBlink {#readonly-bool-leftblink}
-
-  true   if left eye is inside a blink. When not wearing the device, values can be arbitrary. 
+A quality metric confidence value 0.0 - 1.0 to indicate accuracy of fixation. 
 
 ```csharp
 
-public readonly bool LeftBlink;
-
-```
-
-
-
-
-
-
------------
-
-### LeftCenterConfidence {#readonly-float-leftcenterconfidence}
-
-A quality metric confidence value 0.0 - 1.0 to indicate accuracy of left eye center. 
-
-```csharp
-
-public readonly float LeftCenterConfidence;
-
-```
-
-
-
-
-
-
------------
-
-### RightBlink {#readonly-bool-rightblink}
-
-  true   if right eye is inside a blink. When not wearing the device, values can be arbitrary. 
-
-```csharp
-
-public readonly bool RightBlink;
-
-```
-
-
-
-
-
-
------------
-
-### RightCenterConfidence {#readonly-float-rightcenterconfidence}
-
-A quality metric confidence value 0.0 - 1.0 to indicate accuracy of right eye center. 
-
-```csharp
-
-public readonly float RightCenterConfidence;
+public readonly float VergenceConfidence;
 
 ```
 
@@ -118,13 +50,81 @@ public readonly long Timestamp;
 
 -----------
 
-### VergenceConfidence {#readonly-float-vergenceconfidence}
+### RightCenterConfidence {#readonly-float-rightcenterconfidence}
 
-A quality metric confidence value 0.0 - 1.0 to indicate accuracy of fixation. 
+A quality metric confidence value 0.0 - 1.0 to indicate accuracy of right eye center. 
 
 ```csharp
 
-public readonly float VergenceConfidence;
+public readonly float RightCenterConfidence;
+
+```
+
+
+
+
+
+
+-----------
+
+### RightBlink {#readonly-bool-rightblink}
+
+  true   if right eye is inside a blink. When not wearing the device, values can be arbitrary. 
+
+```csharp
+
+public readonly bool RightBlink;
+
+```
+
+
+
+
+
+
+-----------
+
+### LeftCenterConfidence {#readonly-float-leftcenterconfidence}
+
+A quality metric confidence value 0.0 - 1.0 to indicate accuracy of left eye center. 
+
+```csharp
+
+public readonly float LeftCenterConfidence;
+
+```
+
+
+
+
+
+
+-----------
+
+### LeftBlink {#readonly-bool-leftblink}
+
+  true   if left eye is inside a blink. When not wearing the device, values can be arbitrary. 
+
+```csharp
+
+public readonly bool LeftBlink;
+
+```
+
+
+
+
+
+
+-----------
+
+### Error {#readonly-uint-error}
+
+Represents what eye tracking error (if any) is present. 
+
+```csharp
+
+public readonly uint Error;
 
 ```
 

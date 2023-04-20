@@ -22,13 +22,14 @@ Inherited by: <br></br>[UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Contr
 
 ## Public Methods
 
-### string MLGetResultString {#string-mlgetresultstring}
+### bool UnityMagicLeap_TryGetPose {#bool-unitymagicleap-trygetpose}
 
-Returns an ASCII string for MLResultGlobal codes. 
+Tries to get the pose for the given coordinate frame id. 
 
 ```csharp
-public static string MLGetResultString(
-    MLResult.Code result
+public bool UnityMagicLeap_TryGetPose(
+    MLCoordinateFrameUID id,
+    out UnityEngine.Pose pose
 )
 ```
 
@@ -37,26 +38,27 @@ public static string MLGetResultString(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The input [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) enum from ML API methods.|
+| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |id|The coordinate frame id to get the pose of.|
+| out UnityEngine.Pose |pose|The object to initialize the found pose with.|
 
 
 
 
 
 
-**Returns**: An ASCII string containing readable version of result code.
+**Returns**: True if a pose was successfully found.
 
 
 
 -----------
 
-### bool MLHandleIsValid {#bool-mlhandleisvalid}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLUnitySdkGetMinApiLevel {#mlresultcode-mlunitysdkgetminapilevel}
 
-Checks if 64 bit handle is valid. 
+Returns the minimum API level of the MLSDK used by Unity 
 
 ```csharp
-public static bool MLHandleIsValid(
-    ulong handle
+public MLResult.Code MLUnitySdkGetMinApiLevel(
+    out uint minApiLevel
 )
 ```
 
@@ -65,154 +67,15 @@ public static bool MLHandleIsValid(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |handle|The handle to check.|
+| out uint |minApiLevel|Value containing the minimum API level.|
 
 
 
 
 
 
-**Returns**:  true , if handle is valid,  false  if invalid.
-
-
-
------------
-
-### IntPtr MLInputGetResultString {#intptr-mlinputgetresultstring}
-
-Returns a pointer to an ASCII string representation for each result code. This call can return a pointer to the string for any of the MLInput related [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) codes. Developers should use [MLResult.CodeToString](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#string-codetostring)([MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code)). 
-
-```csharp
-public IntPtr MLInputGetResultString(
-    MLResult.Code result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|[MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) type to be converted to string.|
-
-
-
-
-
-
-**Returns**: Returns a pointer to an ASCII string containing readable version of the result code.
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPerceptionGetSnapshot {#mlresultcode-mlperceptiongetsnapshot}
-
-Pull in the latest state of all persistent transforms and all enabled trackers extrapolated to the next frame time. Returns an MLSnapshot with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to [MLPerceptionReleaseSnapshot()](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md#mlresultcode-mlperceptionreleasesnapshot). 
-
-```csharp
-public MLResult.Code MLPerceptionGetSnapshot(
-    ref IntPtr snapshot
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ref IntPtr |snapshot|Pointer to a pointer containing an MLSnapshot on success.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPerceptionReleaseSnapshot {#mlresultcode-mlperceptionreleasesnapshot}
-
-Pull in the latest state of all persistent transforms and all enabled trackers extrapolated to the next frame time. Return an MLSnapshot with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to [MLPerceptionReleaseSnapshot()](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md#mlresultcode-mlperceptionreleasesnapshot). 
-
-```csharp
-public MLResult.Code MLPerceptionReleaseSnapshot(
-    IntPtr snap
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| IntPtr |snap|Pointer to a pointer containing an MLSnapshot on success.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if a Snapshot was created successfully successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if a Snapshot was not created successfully. 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlatformGetAPILevel {#mlresultcode-mlplatformgetapilevel}
-
-Query the OS for which Platform API Level is supported. 
-
-```csharp
-public MLResult.Code MLPlatformGetAPILevel(
-    ref uint level
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ref uint |level|Pointer to an integer that will store the API level.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if level was not valid (null). 
-
-
-
------------
-
-### IntPtr MLSnapshotGetResultString {#intptr-mlsnapshotgetresultstring}
-
-Returns a pointer to an ASCII string representation for each result code. This call can return a pointer to the string for any of the MLSnapshot related [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) codes. Developers should use [MLResult.CodeToString](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#string-codetostring)([MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code)). 
-
-```csharp
-public IntPtr MLSnapshotGetResultString(
-    MLResult.Code result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|[MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) type to be converted to string.|
-
-
-
-
-
-
-**Returns**: Returns a pointer to an ASCII string containing readable version of the result code.
+**Returns**:  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) : Minimum API level was retrieved successfully.
+ [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) : The ml&#95;sdk&#95;loader plugin was not compiled with knowledge of the minimum API level. 
 
 
 
@@ -250,13 +113,13 @@ public MLResult.Code MLSnapshotGetTransform(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLUnitySdkGetMinApiLevel {#mlresultcode-mlunitysdkgetminapilevel}
+### IntPtr MLSnapshotGetResultString {#intptr-mlsnapshotgetresultstring}
 
-Returns the minimum API level of the MLSDK used by Unity 
+Returns a pointer to an ASCII string representation for each result code. This call can return a pointer to the string for any of the MLSnapshot related [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) codes. Developers should use [MLResult.CodeToString](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#string-codetostring)([MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code)). 
 
 ```csharp
-public MLResult.Code MLUnitySdkGetMinApiLevel(
-    out uint minApiLevel
+public IntPtr MLSnapshotGetResultString(
+    MLResult.Code result
 )
 ```
 
@@ -265,28 +128,26 @@ public MLResult.Code MLUnitySdkGetMinApiLevel(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out uint |minApiLevel|Value containing the minimum API level.|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|[MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) type to be converted to string.|
 
 
 
 
 
 
-**Returns**:  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) : Minimum API level was retrieved successfully.
- [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) : The ml&#95;sdk&#95;loader plugin was not compiled with knowledge of the minimum API level. 
+**Returns**: Returns a pointer to an ASCII string containing readable version of the result code.
 
 
 
 -----------
 
-### bool UnityMagicLeap_TryGetPose {#bool-unitymagicleap-trygetpose}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlatformGetAPILevel {#mlresultcode-mlplatformgetapilevel}
 
-Tries to get the pose for the given coordinate frame id. 
+Query the OS for which Platform API Level is supported. 
 
 ```csharp
-public bool UnityMagicLeap_TryGetPose(
-    MLCoordinateFrameUID id,
-    out UnityEngine.Pose pose
+public MLResult.Code MLPlatformGetAPILevel(
+    ref uint level
 )
 ```
 
@@ -295,15 +156,154 @@ public bool UnityMagicLeap_TryGetPose(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |id|The coordinate frame id to get the pose of.|
-| out UnityEngine.Pose |pose|The object to initialize the found pose with.|
+| ref uint |level|Pointer to an integer that will store the API level.|
 
 
 
 
 
 
-**Returns**: True if a pose was successfully found.
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if level was not valid (null). 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPerceptionReleaseSnapshot {#mlresultcode-mlperceptionreleasesnapshot}
+
+Pull in the latest state of all persistent transforms and all enabled trackers extrapolated to the next frame time. Return an MLSnapshot with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to [MLPerceptionReleaseSnapshot()](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md#mlresultcode-mlperceptionreleasesnapshot). 
+
+```csharp
+public MLResult.Code MLPerceptionReleaseSnapshot(
+    IntPtr snap
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| IntPtr |snap|Pointer to a pointer containing an MLSnapshot on success.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if a Snapshot was created successfully successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if a Snapshot was not created successfully. 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPerceptionGetSnapshot {#mlresultcode-mlperceptiongetsnapshot}
+
+Pull in the latest state of all persistent transforms and all enabled trackers extrapolated to the next frame time. Returns an MLSnapshot with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to [MLPerceptionReleaseSnapshot()](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md#mlresultcode-mlperceptionreleasesnapshot). 
+
+```csharp
+public MLResult.Code MLPerceptionGetSnapshot(
+    ref IntPtr snapshot
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ref IntPtr |snapshot|Pointer to a pointer containing an MLSnapshot on success.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. 
+
+
+
+-----------
+
+### IntPtr MLInputGetResultString {#intptr-mlinputgetresultstring}
+
+Returns a pointer to an ASCII string representation for each result code. This call can return a pointer to the string for any of the MLInput related [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) codes. Developers should use [MLResult.CodeToString](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#string-codetostring)([MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code)). 
+
+```csharp
+public IntPtr MLInputGetResultString(
+    MLResult.Code result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|[MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) type to be converted to string.|
+
+
+
+
+
+
+**Returns**: Returns a pointer to an ASCII string containing readable version of the result code.
+
+
+
+-----------
+
+### bool MLHandleIsValid {#bool-mlhandleisvalid}
+
+Checks if 64 bit handle is valid. 
+
+```csharp
+public static bool MLHandleIsValid(
+    ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle|The handle to check.|
+
+
+
+
+
+
+**Returns**:  true , if handle is valid,  false  if invalid.
+
+
+
+-----------
+
+### string MLGetResultString {#string-mlgetresultstring}
+
+Returns an ASCII string for MLResultGlobal codes. 
+
+```csharp
+public static string MLGetResultString(
+    MLResult.Code result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The input [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) enum from ML API methods.|
+
+
+
+
+
+
+**Returns**: An ASCII string containing readable version of result code.
 
 
 
@@ -328,13 +328,13 @@ protected MagicLeapNativeBindings()
 
 ## Public Attributes
 
-### InvalidHandle {#const-ulong-invalidhandle}
+### UnityMagicLeapDll {#const-string-unitymagicleapdll}
 
-The 64 bit id for an invalid native handle. 
+Unity's [XR](/unity-api/api/Namespaces/UnityEngine.XR.md) provider library in com.unity.xr.magicleap 
 
 ```csharp
 
-public const ulong InvalidHandle = 0xFFFFFFFFFFFFFFFF;
+public const string UnityMagicLeapDll = "UnityMagicLeap";
 
 ```
 
@@ -345,13 +345,11 @@ public const ulong InvalidHandle = 0xFFFFFFFFFFFFFFFF;
 
 -----------
 
-### MLPerceptionClientDll {#const-string-mlperceptionclientdll}
-
-Perception library name string. 
+### MLSdkLoaderDll {#const-string-mlsdkloaderdll}
 
 ```csharp
 
-public const string MLPerceptionClientDll = "perception.magicleap";
+public const string MLSdkLoaderDll = "ml_sdk_loader";
 
 ```
 
@@ -379,11 +377,13 @@ public const string MLPlatformDll = "platform.magicleap";
 
 -----------
 
-### MLSdkLoaderDll {#const-string-mlsdkloaderdll}
+### MLPerceptionClientDll {#const-string-mlperceptionclientdll}
+
+Perception library name string. 
 
 ```csharp
 
-public const string MLSdkLoaderDll = "ml_sdk_loader";
+public const string MLPerceptionClientDll = "perception.magicleap";
 
 ```
 
@@ -394,13 +394,13 @@ public const string MLSdkLoaderDll = "ml_sdk_loader";
 
 -----------
 
-### UnityMagicLeapDll {#const-string-unitymagicleapdll}
+### InvalidHandle {#const-ulong-invalidhandle}
 
-Unity's XR provider library in com.unity.xr.magicleap 
+The 64 bit id for an invalid native handle. 
 
 ```csharp
 
-public const string UnityMagicLeapDll = "UnityMagicLeap";
+public const ulong InvalidHandle = 0xFFFFFFFFFFFFFFFF;
 
 ```
 
@@ -413,302 +413,13 @@ public const string UnityMagicLeapDll = "UnityMagicLeap";
 
 ## Protected Attributes
 
-### AudioOutputPluginDLL {#const-string-audiooutputplugindll}
-
-Internal DLL used to send unity audio buffers to MLAudio api. 
-
-```csharp
-
-protected const string AudioOutputPluginDLL = "MLAudioOutput";
-
-```
-
-
-
-
-
-
------------
-
-### AudioPlayerDLL {#const-string-audioplayerdll}
-
-MLAudio library name. 
-
-```csharp
-
-protected const string AudioPlayerDLL = "audio.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### CUtilsDLL {#const-string-cutilsdll}
-
-Internal DLL used to get Java VM Pointer. 
-
-```csharp
-
-protected const string CUtilsDLL = "ml_c_utils";
-
-```
-
-
-
-
-
-
------------
-
-### MLCameraDll {#const-string-mlcameradll}
-
-The [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) library name. 
-
-```csharp
-
-protected const string MLCameraDll = "camera.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLCameraMetadataDll {#const-string-mlcamerametadatadll}
+### MediaMuxerDll {#const-string-mediamuxerdll}
 
 Internal DLL used by the API. 
 
 ```csharp
 
-protected const string MLCameraMetadataDll = "camera_metadata.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLGazeRecognitionDll {#const-string-mlgazerecognitiondll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLGazeRecognitionDll = "perception.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLInputDll {#const-string-mlinputdll}
-
-Internal DLL used by the Input API. 
-
-```csharp
-
-protected const string MLInputDll = "input.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLMediaCEA608DLL {#const-string-mlmediacea608dll}
-
-Media CC parser library name 
-
-```csharp
-
-protected const string MLMediaCEA608DLL = "media_ccparser.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLMediaCEA708DLL {#const-string-mlmediacea708dll}
-
-Media CEA-708 library name 
-
-```csharp
-
-protected const string MLMediaCEA708DLL = "media_cea708parser.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLMediaDRMDll {#const-string-mlmediadrmdll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLMediaDRMDll = "media_drm.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLMediaErrorDLL {#const-string-mlmediaerrordll}
-
-MLMediaError library name. 
-
-```csharp
-
-protected const string MLMediaErrorDLL = "media_error.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLMediaFormatDll {#const-string-mlmediaformatdll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLMediaFormatDll = "media_format.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLMediaPlayerDll {#const-string-mlmediaplayerdll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLMediaPlayerDll = "media_player.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLMediaRecorderDll {#const-string-mlmediarecorderdll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLMediaRecorderDll = "media_recorder.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLNativeSurfaceDll {#const-string-mlnativesurfacedll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLNativeSurfaceDll = "native_surface.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLVoiceDll {#const-string-mlvoicedll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLVoiceDll = "input.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLWebRTCDLL {#const-string-mlwebrtcdll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLWebRTCDLL = "webrtc.magicleap";
-
-```
-
-
-
-
-
-
------------
-
-### MLWebViewDll {#const-string-mlwebviewdll}
-
-Internal DLL used by the API. 
-
-```csharp
-
-protected const string MLWebViewDll = "webview.magicleap";
+protected const string MediaMuxerDll = "media_muxer.magicleap";
 
 ```
 
@@ -736,13 +447,302 @@ protected const string MLZIPermissionsDll = "zi.magicleap";
 
 -----------
 
-### MediaMuxerDll {#const-string-mediamuxerdll}
+### MLWebViewDll {#const-string-mlwebviewdll}
 
 Internal DLL used by the API. 
 
 ```csharp
 
-protected const string MediaMuxerDll = "media_muxer.magicleap";
+protected const string MLWebViewDll = "webview.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLWebRTCDLL {#const-string-mlwebrtcdll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLWebRTCDLL = "webrtc.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLVoiceDll {#const-string-mlvoicedll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLVoiceDll = "input.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLNativeSurfaceDll {#const-string-mlnativesurfacedll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLNativeSurfaceDll = "native_surface.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaRecorderDll {#const-string-mlmediarecorderdll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLMediaRecorderDll = "media_recorder.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaPlayerDll {#const-string-mlmediaplayerdll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLMediaPlayerDll = "media_player.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaFormatDll {#const-string-mlmediaformatdll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLMediaFormatDll = "media_format.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaErrorDLL {#const-string-mlmediaerrordll}
+
+MLMediaError library name. 
+
+```csharp
+
+protected const string MLMediaErrorDLL = "media_error.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaDRMDll {#const-string-mlmediadrmdll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLMediaDRMDll = "media_drm.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaCEA708DLL {#const-string-mlmediacea708dll}
+
+Media CEA-708 library name 
+
+```csharp
+
+protected const string MLMediaCEA708DLL = "media_cea708parser.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaCEA608DLL {#const-string-mlmediacea608dll}
+
+Media CC parser library name 
+
+```csharp
+
+protected const string MLMediaCEA608DLL = "media_ccparser.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLInputDll {#const-string-mlinputdll}
+
+Internal DLL used by the Input API. 
+
+```csharp
+
+protected const string MLInputDll = "input.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLGazeRecognitionDll {#const-string-mlgazerecognitiondll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLGazeRecognitionDll = "perception.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLCameraMetadataDll {#const-string-mlcamerametadatadll}
+
+Internal DLL used by the API. 
+
+```csharp
+
+protected const string MLCameraMetadataDll = "camera_metadata.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MLCameraDll {#const-string-mlcameradll}
+
+The [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) library name. 
+
+```csharp
+
+protected const string MLCameraDll = "camera.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### CUtilsDLL {#const-string-cutilsdll}
+
+Internal DLL used to get Java VM Pointer. 
+
+```csharp
+
+protected const string CUtilsDLL = "ml_c_utils";
+
+```
+
+
+
+
+
+
+-----------
+
+### AudioPlayerDLL {#const-string-audioplayerdll}
+
+MLAudio library name. 
+
+```csharp
+
+protected const string AudioPlayerDLL = "audio.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
+### AudioOutputPluginDLL {#const-string-audiooutputplugindll}
+
+Internal DLL used to send unity audio buffers to MLAudio api. 
+
+```csharp
+
+protected const string AudioOutputPluginDLL = "MLAudioOutput";
 
 ```
 

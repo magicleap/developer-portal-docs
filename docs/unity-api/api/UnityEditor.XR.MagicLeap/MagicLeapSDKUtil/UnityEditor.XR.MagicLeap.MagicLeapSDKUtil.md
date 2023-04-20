@@ -19,11 +19,13 @@ title: MagicLeapSDKUtil
 
 ## Public Fields
 
-### OnZeroIterationPathChanged {#action-string-onzeroiterationpathchanged}
+### SdkPath {#string-sdkpath}
+
+MLSDK path for the relish target. 
 
 ```csharp
 
-public static Action< string > OnZeroIterationPathChanged { get; set; }
+public static string SdkPath { get; set; }
 
 ```
 
@@ -51,13 +53,11 @@ public static bool SdkAvailable { get; set; }
 
 -----------
 
-### SdkPath {#string-sdkpath}
-
-MLSDK path for the relish target. 
+### OnZeroIterationPathChanged {#action-string-onzeroiterationpathchanged}
 
 ```csharp
 
-public static string SdkPath { get; set; }
+public static Action< string > OnZeroIterationPathChanged { get; set; }
 
 ```
 
@@ -94,26 +94,11 @@ public static void DeleteSDKPathFromEditorPrefs(
 
 ## Public Attributes
 
-### AppSimRuntimePath {#string-appsimruntimepath}
+### SearchingForZI {#bool-searchingforzi}
 
 ```csharp
 
-public static string AppSimRuntimePath => MagicLeapEditorPreferences.ZeroIterationRuntimePath;
-
-```
-
-
-
-
-
-
------------
-
-### MinimumApiLevel {#uint-minimumapilevel}
-
-```csharp
-
-public static uint MinimumApiLevel => minApiLevel;
+public static bool SearchingForZI => MagicLeapEditorPreferences.RunningLabdriver;
 
 ```
 
@@ -141,11 +126,26 @@ public static Version SdkVersion => new Version(JsonUtility.FromJson<SDKManifest
 
 -----------
 
-### SearchingForZI {#bool-searchingforzi}
+### MinimumApiLevel {#uint-minimumapilevel}
 
 ```csharp
 
-public static bool SearchingForZI => MagicLeapEditorPreferences.RunningLabdriver;
+public static uint MinimumApiLevel => minApiLevel;
+
+```
+
+
+
+
+
+
+-----------
+
+### AppSimRuntimePath {#string-appsimruntimepath}
+
+```csharp
+
+public static string AppSimRuntimePath => MagicLeapEditorPreferences.ZeroIterationRuntimePath;
 
 ```
 

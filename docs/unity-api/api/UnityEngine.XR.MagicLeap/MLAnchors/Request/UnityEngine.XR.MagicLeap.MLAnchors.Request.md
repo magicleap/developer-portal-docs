@@ -18,11 +18,46 @@ Inherits from: <br></br>[MLRequest< Request.Params, Request.Result >](/unity-api
 
 ## Public Methods
 
-###  Request {#functions-request}
+### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#override-trygetresult}
 
 ```csharp
-public Request()
+public override MLResult TryGetResult(
+    out Result result
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out [Result](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#mlresult-trygetresult}
+
+```csharp
+public MLResult TryGetResult(
+    int firstIndex,
+    int lastIndex,
+    out Result result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| int |firstIndex||
+| int |lastIndex||
+| out [Result](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
 
 
 
@@ -77,46 +112,11 @@ public MLResult Start(
 
 -----------
 
-### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#override-trygetresult}
+###  Request {#functions-request}
 
 ```csharp
-public override MLResult TryGetResult(
-    out Result result
-)
+public Request()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out [Result](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#mlresult-trygetresult}
-
-```csharp
-public MLResult TryGetResult(
-    int firstIndex,
-    int lastIndex,
-    out Result result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| int |firstIndex||
-| int |lastIndex||
-| out [Result](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
 
 
 

@@ -87,7 +87,16 @@ namespace UnityEngine.XR.MagicLeap
                 public override string ToString()
                 {
                     return string.Format(
-                        "Touchpad Gesture:\n\tgestureId: {0}\n\tgestureState: {1}\n\tcontrollerId: {2}\n\tangle: {3}\n\tdirection: {4}\n\tdistance: {5}\\n\tpositionAndForce: {6}\n\tradius: {7}\n\tspeed: {8}\n\ttype: {9}",
+                        "Touchpad Gesture:
+	gestureId: {0}
+	gestureState: {1}
+	controllerId: {2}
+	angle: {3}
+	direction: {4}
+	distance: {5}\n	positionAndForce: {6}
+	radius: {7}
+	speed: {8}
+	type: {9}",
                         id, state, controllerId, angle, direction, distance, positionAndForce, radius, speed, type);
                 }
 

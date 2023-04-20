@@ -16,10 +16,10 @@ title: Callbacks
 
 ## Public Events
 
-### OnPermissionDenied {#onpermissiondenieddelegate-onpermissiondenied}
+### OnPermissionGranted {#onpermissiongranteddelegate-onpermissiongranted}
 
 ```csharp
-public OnPermissionDeniedDelegate OnPermissionDenied()
+public OnPermissionGrantedDelegate OnPermissionGranted()
 ```
 
 
@@ -42,10 +42,10 @@ public OnPermissionDeniedAndDontAskAgainDelegate OnPermissionDeniedAndDontAskAga
 
 -----------
 
-### OnPermissionGranted {#onpermissiongranteddelegate-onpermissiongranted}
+### OnPermissionDenied {#onpermissiondenieddelegate-onpermissiondenied}
 
 ```csharp
-public OnPermissionGrantedDelegate OnPermissionGranted()
+public OnPermissionDeniedDelegate OnPermissionDenied()
 ```
 
 

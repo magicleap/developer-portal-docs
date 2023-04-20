@@ -17,13 +17,13 @@ Data type that encapsulates algorithm, key&#95;set&#95;id and IV for Encryption/
 
 ## Public Attributes
 
-### Algorithm {#string-algorithm}
+### KeySetId {#intptr-keysetid}
 
-The cipher mode used for the crypto operation. "AES/CBC/NoPadding" is the only supported algorithm now. 
+The identifier for the key to be used. 
 
 ```csharp
 
-public string Algorithm;
+public IntPtr KeySetId;
 
 ```
 
@@ -51,13 +51,13 @@ public IntPtr InitialVector;
 
 -----------
 
-### KeySetId {#intptr-keysetid}
+### Algorithm {#string-algorithm}
 
-The identifier for the key to be used. 
+The cipher mode used for the crypto operation. "AES/CBC/NoPadding" is the only supported algorithm now. 
 
 ```csharp
 
-public IntPtr KeySetId;
+public string Algorithm;
 
 ```
 

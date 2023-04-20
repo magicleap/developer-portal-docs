@@ -33,6 +33,19 @@ public ulong Handle { get; set; }
 
 ## Public Methods
 
+### void Destroy {#void-destroy}
+
+```csharp
+public void Destroy()
+```
+
+
+
+
+
+
+-----------
+
 ###  DataSource {#functions-datasource}
 
 ```csharp
@@ -69,19 +82,6 @@ public DataSource(
 | Type | Name  | Description  | 
 |--|--|--|
 | byte [] |byteBuffer||
-
-
-
-
-
-
------------
-
-### void Destroy {#void-destroy}
-
-```csharp
-public void Destroy()
-```
 
 
 

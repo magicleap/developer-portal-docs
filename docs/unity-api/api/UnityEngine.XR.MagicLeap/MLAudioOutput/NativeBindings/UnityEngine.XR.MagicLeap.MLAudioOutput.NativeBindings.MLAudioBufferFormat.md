@@ -40,11 +40,11 @@ public MLAudioBufferFormat(
 
 ## Public Attributes
 
-### BitsPerSample {#readonly-uint-bitspersample}
+### ValidBitsPerSample {#readonly-uint-validbitspersample}
 
 ```csharp
 
-public readonly uint BitsPerSample;
+public readonly uint ValidBitsPerSample;
 
 ```
 
@@ -55,32 +55,14 @@ public readonly uint BitsPerSample;
 
 -----------
 
-### ChannelCount {#readonly-uint-channelcount}
+### SamplesPerSecond {#readonly-uint-samplespersecond}
 
 ```csharp
 
-public readonly uint ChannelCount;
+public readonly uint SamplesPerSecond;
 
 ```
 
-
-
-
-
-
------------
-
-### ChannelFormat {#readonly-channelformat}
-
-```csharp
-
-public readonly MLAudioOutput.ChannelFormatType ChannelFormat;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [MLAudioOutput.ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) | Possible channel formats for input and output streams.  |
 
 
 
@@ -106,11 +88,29 @@ public readonly MLAudioOutput.SampleFormatType SampleFormat;
 
 -----------
 
-### SamplesPerSecond {#readonly-uint-samplespersecond}
+### ChannelFormat {#readonly-channelformat}
 
 ```csharp
 
-public readonly uint SamplesPerSecond;
+public readonly MLAudioOutput.ChannelFormatType ChannelFormat;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [MLAudioOutput.ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) | Possible channel formats for input and output streams.  |
+
+
+
+
+
+-----------
+
+### ChannelCount {#readonly-uint-channelcount}
+
+```csharp
+
+public readonly uint ChannelCount;
 
 ```
 
@@ -121,11 +121,11 @@ public readonly uint SamplesPerSecond;
 
 -----------
 
-### ValidBitsPerSample {#readonly-uint-validbitspersample}
+### BitsPerSample {#readonly-uint-bitspersample}
 
 ```csharp
 
-public readonly uint ValidBitsPerSample;
+public readonly uint BitsPerSample;
 
 ```
 

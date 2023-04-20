@@ -16,19 +16,20 @@ title: TouchpadGesture
 
 ## Public Enums
 
-### Direction {#enums-direction}
+### Type {#enums-type}
 
-Direction of touchpad gesture. Links to MLInputControllerTouchpadGestureDirection in ml&#95;input.h. 
+Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | 0| Direction: None   |
-| Up | | Direction: Up   |
-| Down | | Direction: Down   |
-| Left | | Direction: Left   |
-| Right | | Direction: Right   |
-| Clockwise | | Direction: Clockwise   |
-| CounterClockwise | | Direction: Counter Clockwise   |
+| None | 0| Type: None   |
+| Tap | | Type: Tap   |
+| ForceTapDown | | Type: Force Tap Down   |
+| ForceTapUp | | Type: Force Tap Up   |
+| ForceDwell | | Type: Force Dwell   |
+| SecondForceDown | | Type: Second Force Down   |
+| RadialScroll | | Type: Radial Scroll   |
+| Swipe | | Type: Swipe   |
 
 
 
@@ -58,20 +59,19 @@ Gesture state. Links to MLInputControllerTouchpadGestureState in ml&#95;input.h.
 
 -----------
 
-### Type {#enums-type}
+### Direction {#enums-direction}
 
-Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h. 
+Direction of touchpad gesture. Links to MLInputControllerTouchpadGestureDirection in ml&#95;input.h. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | 0| Type: None   |
-| Tap | | Type: Tap   |
-| ForceTapDown | | Type: Force Tap Down   |
-| ForceTapUp | | Type: Force Tap Up   |
-| ForceDwell | | Type: Force Dwell   |
-| SecondForceDown | | Type: Second Force Down   |
-| RadialScroll | | Type: Radial Scroll   |
-| Swipe | | Type: Swipe   |
+| None | 0| Direction: None   |
+| Up | | Direction: Up   |
+| Down | | Direction: Down   |
+| Left | | Direction: Left   |
+| Right | | Direction: Right   |
+| Clockwise | | Direction: Clockwise   |
+| CounterClockwise | | Direction: Counter Clockwise   |
 
 
 

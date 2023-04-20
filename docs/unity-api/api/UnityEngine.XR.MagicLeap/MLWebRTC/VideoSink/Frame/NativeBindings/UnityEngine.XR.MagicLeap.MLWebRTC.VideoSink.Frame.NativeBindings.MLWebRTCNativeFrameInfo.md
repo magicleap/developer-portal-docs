@@ -31,47 +31,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### Height {#uint-height}
+### Width {#uint-width}
 
-Height of the native frame 
-
-```csharp
-
-public uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### NativeBufferHandle {#ulong-nativebufferhandle}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle can be acquired from [MLNativeSurface](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md) using MLNativeSurfaceAcquireNextAvailableFrame. Application should never release the native&#95;buffer&#95;handle once it is acquired. If [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) is created by application to send the frame through webrtc, webrtc will release the native&#95;buffer&#95;handle using MLNativeSurfaceReleaseFrame after encoding. Application should not release the native&#95;buffer&#95;handle send by webrtc for rendering whether it is local or remote sink. 
+Width of the native frame 
 
 ```csharp
 
-public ulong NativeBufferHandle;
-
-```
-
-
-
-
-
-
------------
-
-### SurfaceHandle {#ulong-surfacehandle}
-
-Surface handle, from which native handle is acquired Surface handle can be created using MLNativeSurfaceCreate 
-
-```csharp
-
-public ulong SurfaceHandle;
+public uint Width;
 
 ```
 
@@ -99,13 +65,47 @@ public float [] Transform;
 
 -----------
 
-### Width {#uint-width}
+### SurfaceHandle {#ulong-surfacehandle}
 
-Width of the native frame 
+Surface handle, from which native handle is acquired Surface handle can be created using MLNativeSurfaceCreate 
 
 ```csharp
 
-public uint Width;
+public ulong SurfaceHandle;
+
+```
+
+
+
+
+
+
+-----------
+
+### NativeBufferHandle {#ulong-nativebufferhandle}
+
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle can be acquired from [MLNativeSurface](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md) using MLNativeSurfaceAcquireNextAvailableFrame. Application should never release the native&#95;buffer&#95;handle once it is acquired. If [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) is created by application to send the frame through webrtc, webrtc will release the native&#95;buffer&#95;handle using MLNativeSurfaceReleaseFrame after encoding. Application should not release the native&#95;buffer&#95;handle send by webrtc for rendering whether it is local or remote sink. 
+
+```csharp
+
+public ulong NativeBufferHandle;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+Height of the native frame 
+
+```csharp
+
+public uint Height;
 
 ```
 

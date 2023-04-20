@@ -18,41 +18,11 @@ Inherits from: <br></br>InputDevice
 
 ## Public Fields
 
-### confidence {#axiscontrol-confidence}
+### fixationPointConfidence {#axiscontrol-fixationpointconfidence}
 
 ```csharp
 
-public AxisControl confidence { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### eyeCalibrationStatus {#integercontrol-eyecalibrationstatus}
-
-```csharp
-
-public IntegerControl eyeCalibrationStatus { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### eyeLeftCenterConfidence {#axiscontrol-eyeleftcenterconfidence}
-
-```csharp
-
-public AxisControl eyeLeftCenterConfidence { get; set; }
+public AxisControl fixationPointConfidence { get; set; }
 
 ```
 
@@ -78,11 +48,41 @@ public AxisControl eyeRightCenterConfidence { get; set; }
 
 -----------
 
-### fixationPointConfidence {#axiscontrol-fixationpointconfidence}
+### eyeLeftCenterConfidence {#axiscontrol-eyeleftcenterconfidence}
 
 ```csharp
 
-public AxisControl fixationPointConfidence { get; set; }
+public AxisControl eyeLeftCenterConfidence { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### eyeCalibrationStatus {#integercontrol-eyecalibrationstatus}
+
+```csharp
+
+public IntegerControl eyeCalibrationStatus { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### confidence {#axiscontrol-confidence}
+
+```csharp
+
+public AxisControl confidence { get; set; }
 
 ```
 

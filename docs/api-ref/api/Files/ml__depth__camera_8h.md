@@ -27,6 +27,7 @@ title: ml_depth_camera.h
 | typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer)** <br></br>Confidence score.  |
 | typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer)** <br></br>Flags.  |
 | typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage)** <br></br>Ambient raw depth image.  |
+| typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage)** <br></br>Raw depth image.  |
 | typedef struct [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) | **[MLDepthCameraData](/api-ref/api/Modules/group___camera/group___camera.md#struct-mldepthcameradata)** <br></br>A structure to encapsulate output data for each camera sensor.  |
 
 ## Enums
@@ -36,7 +37,7 @@ title: ml_depth_camera.h
 | enum | **[Anonymous Enum 8](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-8)** <br></br> { <br></br>[MLDepthCameraIntrinsics_MaxDistortionCoefficients](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraintrinsics-maxdistortioncoefficients) = 5<br></br>} |
 | enum | **[MLDepthCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode)** <br></br> { <br></br>[MLDepthCameraMode_LongRange](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameramode-longrange) = 1 << 0,<br></br> [MLDepthCameraMode_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of depth camera modes.  |
 | enum | **[MLDepthCameraFrameType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype)** <br></br> { <br></br>[MLDepthCameraFrameType_Unknown](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraframetype-unknown) = 0,<br></br> [MLDepthCameraFrameType_LongRange](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraframetype-longrange) = 1,<br></br> [MLDepthCameraFrameType_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraframetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of camera mode used when capturing a frame.  |
-| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_DepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
+| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_DepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_RawDepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-rawdepthimage) = 1 << 4,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
 | enum | **[MLDepthCameraDepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags)** <br></br> { <br></br>[MLDepthCameraDepthFlags_Valid](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-valid) = 0 << 0,<br></br> [MLDepthCameraDepthFlags_Invalid](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-invalid) = 1 << 0,<br></br> [MLDepthCameraDepthFlags_Saturated](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-saturated) = 1 << 1,<br></br> [MLDepthCameraDepthFlags_Inconsistent](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-inconsistent) = 1 << 2,<br></br> [MLDepthCameraDepthFlags_LowSignal](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-lowsignal) = 1 << 3,<br></br> [MLDepthCameraDepthFlags_FlyingPixel](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-flyingpixel) = 1 << 4,<br></br> [MLDepthCameraDepthFlags_Masked](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-masked) = 1 << 5,<br></br> [MLDepthCameraDepthFlags_SBI](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-sbi) = 1 << 8,<br></br> [MLDepthCameraDepthFlags_StrayLight](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-straylight) = 1 << 9,<br></br> [MLDepthCameraDepthFlags_ConnectedComponent](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-connectedcomponent) = 1 << 10,<br></br> [MLDepthCameraDepthFlags_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
 
 ## Functions
@@ -113,6 +114,7 @@ Enumeration of camera mode used when capturing a frame.
 | MLDepthCameraFlags_Confidence |  1 << 1| Enable MLDepthCameraConfidenceBuffer. See [MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) for more details. |
 | MLDepthCameraFlags_DepthFlags |  1 << 2| Enable MLDepthCameraDepthFlagsBuffer. See [MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) for more details. |
 | MLDepthCameraFlags_AmbientRawDepthImage |  1 << 3| Enable MLDepthCameraAmbientRawDepthImage. See [MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) for more details. |
+| MLDepthCameraFlags_RawDepthImage |  1 << 4| Enable MLDepthCameraRawDepthImage. See [MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage) for more details. |
 | MLDepthCameraFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -157,7 +159,7 @@ Enumeration of flags to select data requested from depth camera.
 ### MLDepthCameraSettings {#struct-mldepthcamerasettings}
 
 ```cpp
-typedef struct MLDepthCameraSettings  MLDepthCameraSettings;
+typedef struct MLDepthCameraSettings MLDepthCameraSettings;
 ```
 
 A structure to encapsulate the camera settings. 
@@ -169,8 +171,9 @@ This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-r
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_settings.md)
 
 
-**API Level:**
-  * 23 
+**API Level:
+ 23**
+  * 
 
 
 
@@ -180,7 +183,7 @@ This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-r
 ### MLDepthCameraIntrinsics {#struct-mldepthcameraintrinsics}
 
 ```cpp
-typedef struct MLDepthCameraIntrinsics  MLDepthCameraIntrinsics;
+typedef struct MLDepthCameraIntrinsics MLDepthCameraIntrinsics;
 ```
 
 Depth camera intrinsic parameters. 
@@ -190,8 +193,9 @@ Depth camera intrinsic parameters.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md)
 
 
-**API Level:**
-  * 23 
+**API Level:
+ 23**
+  * 
 
 
 
@@ -201,7 +205,7 @@ Depth camera intrinsic parameters.
 ### MLDepthCameraFrameBuffer {#struct-mldepthcameraframebuffer}
 
 ```cpp
-typedef struct MLDepthCameraFrameBuffer  MLDepthCameraFrameBuffer;
+typedef struct MLDepthCameraFrameBuffer MLDepthCameraFrameBuffer;
 ```
 
 A structure to encapsulate per plane info for each camera frame. 
@@ -211,8 +215,9 @@ A structure to encapsulate per plane info for each camera frame.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md)
 
 
-**API Level:**
-  * 23 
+**API Level:
+ 23**
+  * 
 
 
 
@@ -299,10 +304,30 @@ Cast the [MLDepthCameraFrameBuffer.data](/api-ref/api/Modules/group___camera/str
 
 -----------
 
+### MLDepthCameraRawDepthImage {#mldepthcameraframebuffer-mldepthcamerarawdepthimage}
+
+```cpp
+typedef MLDepthCameraFrameBuffer MLDepthCameraRawDepthImage;
+```
+
+Raw depth image. 
+
+This is the raw depth camera sensor data captured with the depth camera illumination and corresponds to the amount of total light incident on the sensor.
+
+Cast the [MLDepthCameraFrameBuffer.data](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md#void-data) to float data type. 
+
+
+
+[More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md)
+
+
+
+-----------
+
 ### MLDepthCameraData {#struct-mldepthcameradata}
 
 ```cpp
-typedef struct MLDepthCameraData  MLDepthCameraData;
+typedef struct MLDepthCameraData MLDepthCameraData;
 ```
 
 A structure to encapsulate output data for each camera sensor. 
@@ -314,8 +339,9 @@ This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/a
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md)
 
 
-**API Level:**
-  * 23 
+**API Level:
+ 25**
+  * 
 
 
 
@@ -348,8 +374,9 @@ Initialize the connect handle structure. Shall be called before calling [MLDepth
 
 
 
-**API Level:**
-  * 23
+**API Level:
+ 23**
+  * 
 
 
 
@@ -374,8 +401,9 @@ Initialize [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_de
 
 
 
-**API Level:**
-  * 23
+**API Level:
+ 25**
+  * 
 
 
 
@@ -405,9 +433,9 @@ Connect to depth camera.
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Connected to camera device(s) successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -417,8 +445,9 @@ Connect to depth camera.
 
 
 
-**API Level:**
-  * 23
+**API Level:
+ 23**
+  * 
 
 
 
@@ -458,8 +487,9 @@ Update the depth camera settings.
 
 
 
-**API Level:**
-  * 23
+**API Level:
+ 23**
+  * 
 
 
 
@@ -508,8 +538,9 @@ If there are no new depth data frames within the timeout_ms duration then the AP
 
 
 
-**API Level:**
-  * 23
+**API Level:
+ 23**
+  * 
 
 
 
@@ -587,8 +618,9 @@ This will disconnect from the depth camera.
 
 
 
-**API Level:**
-  * 23
+**API Level:
+ 23**
+  * 
 
 
 
@@ -642,6 +674,7 @@ typedef enum MLDepthCameraFlags {
   MLDepthCameraFlags_Confidence = 1 << 1,
   MLDepthCameraFlags_DepthFlags = 1 << 2,
   MLDepthCameraFlags_AmbientRawDepthImage = 1 << 3,
+  MLDepthCameraFlags_RawDepthImage = 1 << 4,
   MLDepthCameraFlags_Ensure32Bits = 0x7FFFFFFF
 } MLDepthCameraFlags;
 
@@ -701,6 +734,7 @@ typedef MLDepthCameraFrameBuffer MLDepthCameraDepthFlagsBuffer;
 
 typedef MLDepthCameraFrameBuffer MLDepthCameraAmbientRawDepthImage;
 
+typedef MLDepthCameraFrameBuffer MLDepthCameraRawDepthImage;
 
 typedef struct MLDepthCameraData {
   uint32_t version;
@@ -713,12 +747,13 @@ typedef struct MLDepthCameraData {
   MLDepthCameraConfidenceBuffer *confidence;
   MLDepthCameraDepthFlagsBuffer *flags;
   MLDepthCameraAmbientRawDepthImage *ambient_raw_depth_image;
+  MLDepthCameraRawDepthImage *raw_depth_image;
 } MLDepthCameraData;
 
 ML_STATIC_INLINE void MLDepthCameraDataInit(MLDepthCameraData *inout_depth_camera_data) {
   if (inout_depth_camera_data) {
     memset(inout_depth_camera_data, 0, sizeof(MLDepthCameraData));
-    inout_depth_camera_data->version = 1;
+    inout_depth_camera_data->version = 2;
   }
 }
 

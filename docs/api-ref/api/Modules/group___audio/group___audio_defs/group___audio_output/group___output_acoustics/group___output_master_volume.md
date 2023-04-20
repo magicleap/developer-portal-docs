@@ -142,8 +142,9 @@ Queries the current status of the output mute.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -186,8 +187,9 @@ The callback will be called whenever the output mute changes (even if changed by
 
 
 
-**API Level:**
-  * 8
+**API Level:
+ 8**
+  * 
 
 
 

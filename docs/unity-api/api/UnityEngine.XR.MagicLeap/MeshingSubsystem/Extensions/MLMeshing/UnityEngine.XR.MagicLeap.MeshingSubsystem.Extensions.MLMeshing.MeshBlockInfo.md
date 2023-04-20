@@ -17,50 +17,19 @@ Representation of a mesh block.
 
 ## Public Attributes
 
-### extents {#readonly-vector3-extents}
+### timestamp {#readonly-timestamp}
 
-The extents of the bounding box. 
-
-```csharp
-
-public readonly Vector3 extents;
-
-```
-
-
-
-
-
-
------------
-
-### id {#readonly-string-id}
-
-The coordinate frame UID to represent the block. 
+The timestamp when block was updated. 
 
 ```csharp
 
-public readonly string id;
+public readonly MLTime timestamp;
 
 ```
 
-
-
-
-
-
------------
-
-### pose {#readonly-pose-pose}
-
-The pose of the mesh block. 
-
-```csharp
-
-public readonly Pose pose;
-
-```
-
+| Type | Description  | 
+|--|--|
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 
 
 
@@ -88,19 +57,50 @@ public readonly MeshState state;
 
 -----------
 
-### timestamp {#readonly-timestamp}
+### pose {#readonly-pose-pose}
 
-The timestamp when block was updated. 
+The pose of the mesh block. 
 
 ```csharp
 
-public readonly MLTime timestamp;
+public readonly Pose pose;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
+
+
+
+
+
+-----------
+
+### id {#readonly-string-id}
+
+The coordinate frame UID to represent the block. 
+
+```csharp
+
+public readonly string id;
+
+```
+
+
+
+
+
+
+-----------
+
+### extents {#readonly-vector3-extents}
+
+The extents of the bounding box. 
+
+```csharp
+
+public readonly Vector3 extents;
+
+```
+
 
 
 

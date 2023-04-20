@@ -43,13 +43,13 @@ public EventSlot(
 
 ## Public Attributes
 
-### SlotName {#string-slotname}
+### SlotValue {#string-slotvalue}
 
-Name of slot used. 
+Value of the specific slot used. 
 
 ```csharp
 
-public string SlotName;
+public string SlotValue;
 
 ```
 
@@ -60,13 +60,13 @@ public string SlotName;
 
 -----------
 
-### SlotValue {#string-slotvalue}
+### SlotName {#string-slotname}
 
-Value of the specific slot used. 
+Name of slot used. 
 
 ```csharp
 
-public string SlotValue;
+public string SlotName;
 
 ```
 

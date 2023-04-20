@@ -43,64 +43,11 @@ public MLInputBuzzCommand(
 
 ## Public Attributes
 
-### Amplitude {#readonly-byte-amplitude}
-
-amplitude of the buzz command, as a percentage (0 - 100). 
+### typeStatic {#fourcc-typestatic}
 
 ```csharp
 
-public readonly byte Amplitude;
-
-```
-
-
-
-
-
-
------------
-
-### DurationMs {#readonly-uint-durationms}
-
-Duration of the buzz command in milliseconds (ms). 
-
-```csharp
-
-public readonly uint DurationMs;
-
-```
-
-
-
-
-
-
------------
-
-### EndHz {#readonly-ushort-endhz}
-
-End frequency of the buzz command (0 - 1250). 
-
-```csharp
-
-public readonly ushort EndHz;
-
-```
-
-
-
-
-
-
------------
-
-### StartHz {#readonly-ushort-starthz}
-
-Start frequency of the buzz command (0 - 1250). 
-
-```csharp
-
-public readonly ushort StartHz;
+public FourCC typeStatic => commandType;
 
 ```
 
@@ -128,11 +75,64 @@ public readonly uint Version;
 
 -----------
 
-### typeStatic {#fourcc-typestatic}
+### StartHz {#readonly-ushort-starthz}
+
+Start frequency of the buzz command (0 - 1250). 
 
 ```csharp
 
-public FourCC typeStatic => commandType;
+public readonly ushort StartHz;
+
+```
+
+
+
+
+
+
+-----------
+
+### EndHz {#readonly-ushort-endhz}
+
+End frequency of the buzz command (0 - 1250). 
+
+```csharp
+
+public readonly ushort EndHz;
+
+```
+
+
+
+
+
+
+-----------
+
+### DurationMs {#readonly-uint-durationms}
+
+Duration of the buzz command in milliseconds (ms). 
+
+```csharp
+
+public readonly uint DurationMs;
+
+```
+
+
+
+
+
+
+-----------
+
+### Amplitude {#readonly-byte-amplitude}
+
+amplitude of the buzz command, as a percentage (0 - 100). 
+
+```csharp
+
+public readonly byte Amplitude;
 
 ```
 

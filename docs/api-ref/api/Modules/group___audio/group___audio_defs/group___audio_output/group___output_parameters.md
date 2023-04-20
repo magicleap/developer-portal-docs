@@ -369,8 +369,9 @@ This mute control is entirely under the control of the owner of the sound output
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -414,8 +415,9 @@ Setting this option on a sound output causes its output to bypass master volume,
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -460,8 +462,9 @@ This call reports whether a sound output is bypassing master volume, making it e
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -542,8 +545,9 @@ Returns whether a sound output is looping or not.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -706,8 +710,9 @@ The callback will be called whenever the output device changes. The current outp
 
 
 
-**API Level:**
-  * 8
+**API Level:
+ 8**
+  * 
 
 
 

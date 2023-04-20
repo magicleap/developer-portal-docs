@@ -38,13 +38,13 @@ public static MLCameraMetadataRational Create()
 
 ## Public Attributes
 
-### Denominator {#int-denominator}
+### Numerator {#int-numerator}
 
-Denominator. 
+Numerator. 
 
 ```csharp
 
-public int Denominator;
+public int Numerator;
 
 ```
 
@@ -55,13 +55,13 @@ public int Denominator;
 
 -----------
 
-### Numerator {#int-numerator}
+### Denominator {#int-denominator}
 
-Numerator. 
+Denominator. 
 
 ```csharp
 
-public int Numerator;
+public int Denominator;
 
 ```
 

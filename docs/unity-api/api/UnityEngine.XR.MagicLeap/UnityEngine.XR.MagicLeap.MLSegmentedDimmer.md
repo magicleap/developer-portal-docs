@@ -19,28 +19,20 @@ title: MLSegmentedDimmer
 
 ## Public Methods
 
-### void Activate {#void-activate}
-
-Turn on the ability to display Segmented Dimmer in your scenes. This instructs MLGraphics to provide frames using the AlphaBlend blend mode. 
+### void SetEnabled {#void-setenabled}
 
 ```csharp
-public static void Activate()
+public static void SetEnabled(
+    bool enabled
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### void Deactivate {#void-deactivate}
-
-Turn off the ability to display Segmented Dimmer in your scenes. This reverts to accepting frames with the default blend mode from MLGraphics. 
-
-```csharp
-public static void Deactivate()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |enabled||
 
 
 
@@ -68,20 +60,28 @@ public static int GetDefaultLayer()
 
 -----------
 
-### void SetEnabled {#void-setenabled}
+### void Deactivate {#void-deactivate}
+
+Turn off the ability to display Segmented Dimmer in your scenes. This reverts to accepting frames with the default blend mode from MLGraphics. 
 
 ```csharp
-public static void SetEnabled(
-    bool enabled
-)
+public static void Deactivate()
 ```
 
 
-**Parameters**
 
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |enabled||
+
+
+
+-----------
+
+### void Activate {#void-activate}
+
+Turn on the ability to display Segmented Dimmer in your scenes. This instructs MLGraphics to provide frames using the AlphaBlend blend mode. 
+
+```csharp
+public static void Activate()
+```
 
 
 

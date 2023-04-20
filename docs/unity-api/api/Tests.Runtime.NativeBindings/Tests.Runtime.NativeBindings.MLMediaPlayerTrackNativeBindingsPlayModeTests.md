@@ -21,10 +21,10 @@ Inherits from: <br></br>[NativeBindingsPlayTests](/unity-api/api/Tests.Runtime.N
 
 ## Public Methods
 
-### void NativeBinding_FreeUnmanagedMemory_Exists {#void-nativebinding-freeunmanagedmemory-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_FreeUnmanagedMemory_Exists()
+public void SetupNativeBindings()
 ```
 
 
@@ -34,10 +34,10 @@ public void NativeBinding_FreeUnmanagedMemory_Exists()
 
 -----------
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_FreeUnmanagedMemory_Exists {#void-nativebinding-freeunmanagedmemory-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_FreeUnmanagedMemory_Exists()
 ```
 
 

@@ -17,16 +17,19 @@ A structure containing voice intent event information.
 
 ## Public Attributes
 
-### EventID {#uint-eventid}
+### State {#state-state}
 
-User defined intent index which is detected. 
+Voice state when generating the voice intent event. 
 
 ```csharp
 
-public uint EventID;
+public State State;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [State](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-state) | Voice state in voice event.  |
 
 
 
@@ -34,16 +37,19 @@ public uint EventID;
 
 -----------
 
-### EventName {#string-eventname}
+### NoIntentReason {#nointentreason-nointentreason}
 
-The Event Name 
+If intent is not detected, it contains the reason, otherwise the value is MLVoiceIntentNoIntentReason.NoReason. 
 
 ```csharp
 
-public string EventName;
+public NoIntentReason NoIntentReason;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [NoIntentReason](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-nointentreason) | No intent reason code in voice event.  |
 
 
 
@@ -73,19 +79,16 @@ List of Slot Data used in this specific event.
 
 -----------
 
-### NoIntentReason {#nointentreason-nointentreason}
+### EventName {#string-eventname}
 
-If intent is not detected, it contains the reason, otherwise the value is MLVoiceIntentNoIntentReason.NoReason. 
+The Event Name 
 
 ```csharp
 
-public NoIntentReason NoIntentReason;
+public string EventName;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [NoIntentReason](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-nointentreason) | No intent reason code in voice event.  |
 
 
 
@@ -93,19 +96,16 @@ public NoIntentReason NoIntentReason;
 
 -----------
 
-### State {#state-state}
+### EventID {#uint-eventid}
 
-Voice state when generating the voice intent event. 
+User defined intent index which is detected. 
 
 ```csharp
 
-public State State;
+public uint EventID;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [State](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-state) | Voice state in voice event.  |
 
 
 

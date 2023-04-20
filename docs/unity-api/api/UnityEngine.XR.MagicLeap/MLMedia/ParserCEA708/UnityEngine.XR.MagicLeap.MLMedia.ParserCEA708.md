@@ -35,44 +35,11 @@ Media player script that allows playback of a streaming video (either from file 
 
 ## Public Methods
 
-### delegate void OnEmitEventDelegate {#delegate-void-onemiteventdelegate}
+###  ParserCEA708 {#functions-parsercea708}
 
 ```csharp
-public delegate void OnEmitEventDelegate(
-    Cea708CaptionEmitCommand command,
-    object obj
-)
+public ParserCEA708()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Cea708CaptionEmitCommand](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionemitcommand) |command|CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#95;media&#95;cea708&#95;caption.h . |
-| object |obj||
-
-
-
-
-
-
------------
-
-### delegate void OnTextDelegate {#delegate-void-ontextdelegate}
-
-```csharp
-public delegate void OnTextDelegate(
-    string text
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |text||
 
 
 
@@ -105,11 +72,44 @@ public void ParseAsync(
 
 -----------
 
-###  ParserCEA708 {#functions-parsercea708}
+### delegate void OnTextDelegate {#delegate-void-ontextdelegate}
 
 ```csharp
-public ParserCEA708()
+public delegate void OnTextDelegate(
+    string text
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |text||
+
+
+
+
+
+
+-----------
+
+### delegate void OnEmitEventDelegate {#delegate-void-onemiteventdelegate}
+
+```csharp
+public delegate void OnEmitEventDelegate(
+    Cea708CaptionEmitCommand command,
+    object obj
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Cea708CaptionEmitCommand](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionemitcommand) |command|CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#95;media&#95;cea708&#95;caption.h . |
+| object |obj||
 
 
 
@@ -137,19 +137,6 @@ public const string Mime = "text/cea-708";
 
 ## Public Events
 
-### OnEmitEvent {#onemiteventdelegate-onemitevent}
-
-```csharp
-public OnEmitEventDelegate OnEmitEvent()
-```
-
-
-
-
-
-
------------
-
 ### OnText {#ontextdelegate-ontext}
 
 ```csharp
@@ -163,18 +150,69 @@ public OnTextDelegate OnText()
 
 -----------
 
+### OnEmitEvent {#onemiteventdelegate-onemitevent}
+
+```csharp
+public OnEmitEventDelegate OnEmitEvent()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Enums
 
-### Cea708CaptionColorOpacity {#enums-cea708captioncoloropacity}
+### Cea708CaptionPenSize {#enums-cea708captionpensize}
 
-CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#95;media&#95;cea708&#95;caption.h . 
+CEA708 Caption Pen Size constants.  MLCea708CaptionPenSize  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Solid | 0| Solid opacity.   |
-| Flash | 1| Flashing opacity.   |
-| Translucent | 2| Translucent opacity.   |
-| Transparent | 3| Transparent opacity.   |
+| Small | 0| Small pen size.   |
+| Standard | 1| Standard pen size.   |
+| Large | 2| Large pen size.   |
+
+
+
+
+
+
+
+
+-----------
+
+### Cea708CaptionPenOffset {#enums-cea708captionpenoffset}
+
+CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h . 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Subscript | 0| Subscript offset.   |
+| Normal | 1| Normal offset.   |
+| Superscript | 2| Superscript offset.   |
+
+
+
+
+
+
+
+
+-----------
+
+### Cea708CaptionEmitCommandControl {#enums-cea708captionemitcommandcontrol}
+
+CEA708 Caption Emit Command Control constants.  MLCea708CaptionEmitCommandControl  from  ml&#95;media&#95;cea708&#95;caption.h . 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| ETX | 0x03| End of text.   |
+| BS | 0x08| Back space.   |
+| FF | 0x0c| This code is equivalent to CEA708 CLW command   |
+| HCR | 0x0e| Carriage return.   |
 
 
 
@@ -222,54 +260,16 @@ CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#9
 
 -----------
 
-### Cea708CaptionEmitCommandControl {#enums-cea708captionemitcommandcontrol}
+### Cea708CaptionColorOpacity {#enums-cea708captioncoloropacity}
 
-CEA708 Caption Emit Command Control constants.  MLCea708CaptionEmitCommandControl  from  ml&#95;media&#95;cea708&#95;caption.h . 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| ETX | 0x03| End of text.   |
-| BS | 0x08| Back space.   |
-| FF | 0x0c| This code is equivalent to CEA708 CLW command   |
-| HCR | 0x0e| Carriage return.   |
-
-
-
-
-
-
-
-
------------
-
-### Cea708CaptionPenOffset {#enums-cea708captionpenoffset}
-
-CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h . 
+CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Subscript | 0| Subscript offset.   |
-| Normal | 1| Normal offset.   |
-| Superscript | 2| Superscript offset.   |
-
-
-
-
-
-
-
-
------------
-
-### Cea708CaptionPenSize {#enums-cea708captionpensize}
-
-CEA708 Caption Pen Size constants.  MLCea708CaptionPenSize  from  ml&#95;media&#95;cea708&#95;caption.h . 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Small | 0| Small pen size.   |
-| Standard | 1| Standard pen size.   |
-| Large | 2| Large pen size.   |
+| Solid | 0| Solid opacity.   |
+| Flash | 1| Flashing opacity.   |
+| Translucent | 2| Translucent opacity.   |
+| Transparent | 3| Transparent opacity.   |
 
 
 

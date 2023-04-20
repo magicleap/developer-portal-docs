@@ -36,30 +36,6 @@ public template <Params ,Result > class IMLRequest;
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
-
-```csharp
-public MLResult Start(
-    Params parameters
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Params |parameters||
-
-
-
-
-**Reimplemented by**: [Start](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-start)
-
-
-
------------
-
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#mlresult-trygetresult}
 
 ```csharp
@@ -79,6 +55,30 @@ public MLResult TryGetResult(
 
 
 **Reimplemented by**: [TryGetResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-trygetresult)
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
+
+```csharp
+public MLResult Start(
+    Params parameters
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Params |parameters||
+
+
+
+
+**Reimplemented by**: [Start](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-start)
 
 
 

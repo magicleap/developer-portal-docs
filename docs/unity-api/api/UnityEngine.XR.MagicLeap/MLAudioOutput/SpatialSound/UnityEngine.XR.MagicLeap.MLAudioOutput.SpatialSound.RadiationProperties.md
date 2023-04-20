@@ -32,64 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### InnerAngle {#float-innerangle}
+### OuterGainMF {#float-outergainmf}
 
-Inner cone angle (0-360); radiation unaffected. 
-
-```csharp
-
-public float InnerAngle;
-
-```
-
-
-
-
-
-
------------
-
-### OuterAngle {#float-outerangle}
-
-Outer cone angle (0-360); directivity at maximum. 
+Volume scale (0-1) beyond outer cone for mid freqs. 
 
 ```csharp
 
-public float OuterAngle;
-
-```
-
-
-
-
-
-
------------
-
-### OuterGain {#float-outergain}
-
-Volume scale (0-1) beyond outer cone for all freqs. 
-
-```csharp
-
-public float OuterGain;
-
-```
-
-
-
-
-
-
------------
-
-### OuterGainHF {#float-outergainhf}
-
-Volume scale (0-1) beyond outer cone for high freqs. 
-
-```csharp
-
-public float OuterGainHF;
+public float OuterGainMF;
 
 ```
 
@@ -117,13 +66,64 @@ public float OuterGainLF;
 
 -----------
 
-### OuterGainMF {#float-outergainmf}
+### OuterGainHF {#float-outergainhf}
 
-Volume scale (0-1) beyond outer cone for mid freqs. 
+Volume scale (0-1) beyond outer cone for high freqs. 
 
 ```csharp
 
-public float OuterGainMF;
+public float OuterGainHF;
+
+```
+
+
+
+
+
+
+-----------
+
+### OuterGain {#float-outergain}
+
+Volume scale (0-1) beyond outer cone for all freqs. 
+
+```csharp
+
+public float OuterGain;
+
+```
+
+
+
+
+
+
+-----------
+
+### OuterAngle {#float-outerangle}
+
+Outer cone angle (0-360); directivity at maximum. 
+
+```csharp
+
+public float OuterAngle;
+
+```
+
+
+
+
+
+
+-----------
+
+### InnerAngle {#float-innerangle}
+
+Inner cone angle (0-360); radiation unaffected. 
+
+```csharp
+
+public float InnerAngle;
 
 ```
 

@@ -1,0 +1,59 @@
+---
+title: AppDefinedVideoSource
+
+---
+
+# AppDefinedVideoSource
+
+
+
+
+
+
+
+Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.NativeBindingsTests.md)
+
+
+
+
+## Public Methods
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLWebRTCSourceCreateAppDefinedVideoSource_Exists {#void-nativebinding-mlwebrtcsourcecreateappdefinedvideosource-exists}
+
+```csharp
+public void NativeBinding_MLWebRTCSourceCreateAppDefinedVideoSource_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLWebRTCSourceAppDefinedVideoSourcePushFrame_Exists {#void-nativebinding-mlwebrtcsourceappdefinedvideosourcepushframe-exists}
+
+```csharp
+public void NativeBinding_MLWebRTCSourceAppDefinedVideoSourcePushFrame_Exists()
+```
+
+
+
+
+
+
+-----------
+

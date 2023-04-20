@@ -408,7 +408,7 @@ namespace UnityEditor.XR.MagicLeap
             {
 #if UNITY_EDITOR_WIN
                 FileName = "CMD.exe",
-                Arguments = string.Format(@"/C {0}\labdriver.cmd -raw com.magicleap.zi:get-backend-path", mlsdkPath.Replace("/", "\\")),
+                Arguments = string.Format(@"/C {0}\labdriver.cmd -raw com.magicleap.zi:get-backend-path", mlsdkPath.Replace("/", "\")),
 #elif UNITY_EDITOR_OSX
                 RedirectStandardInput = true,
                 FileName = "/bin/bash",
@@ -433,7 +433,7 @@ namespace UnityEditor.XR.MagicLeap
                 StreamReader outputStream = process.StandardOutput;
                 string output = outputStream.ReadToEnd();
                 process.WaitForExit();
-                labdriverResultPath = output.Trim().Replace("\\", "/");
+                labdriverResultPath = output.Trim().Replace("\", "/");
                 usingLabdriverFoundPath = true;
                 labdriverRunning = false;
             });

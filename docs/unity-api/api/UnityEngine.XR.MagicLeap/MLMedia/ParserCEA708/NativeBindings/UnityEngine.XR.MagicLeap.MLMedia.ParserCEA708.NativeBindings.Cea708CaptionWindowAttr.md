@@ -17,33 +17,13 @@ CEA708 Caption Window Attributes.  MLCea708CaptionWindowAttr  from  ml&#95;media
 
 ## Public Attributes
 
-### BorderColor {#cea708captioncolor-bordercolor}
+### WordWrap {#bool-wordwrap}
 
-Window border color. 
-
-```csharp
-
-public Cea708CaptionColor BorderColor;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [Cea708CaptionColor](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
-
-
-
-
-
------------
-
-### BorderType {#int-bordertype}
-
-Window border type. 
+Window word wrap setting. 
 
 ```csharp
 
-public int BorderType;
+public bool WordWrap;
 
 ```
 
@@ -54,13 +34,13 @@ public int BorderType;
 
 -----------
 
-### DisplayEffect {#int-displayeffect}
+### ScrollDirection {#int-scrolldirection}
 
-Window display effect. 
+Window scroll direction. 
 
 ```csharp
 
-public int DisplayEffect;
+public int ScrollDirection;
 
 ```
 
@@ -71,13 +51,13 @@ public int DisplayEffect;
 
 -----------
 
-### EffectDirection {#int-effectdirection}
+### PrintDirection {#int-printdirection}
 
-Window effect direction. 
+Window print direction. 
 
 ```csharp
 
-public int EffectDirection;
+public int PrintDirection;
 
 ```
 
@@ -88,13 +68,13 @@ public int EffectDirection;
 
 -----------
 
-### EffectSpeed {#int-effectspeed}
+### Justify {#int-justify}
 
-Window effect speed. 
+Window justification setting. 
 
 ```csharp
 
-public int EffectSpeed;
+public int Justify;
 
 ```
 
@@ -125,13 +105,13 @@ public Cea708CaptionColor FillColor;
 
 -----------
 
-### Justify {#int-justify}
+### EffectSpeed {#int-effectspeed}
 
-Window justification setting. 
+Window effect speed. 
 
 ```csharp
 
-public int Justify;
+public int EffectSpeed;
 
 ```
 
@@ -142,13 +122,13 @@ public int Justify;
 
 -----------
 
-### PrintDirection {#int-printdirection}
+### EffectDirection {#int-effectdirection}
 
-Window print direction. 
+Window effect direction. 
 
 ```csharp
 
-public int PrintDirection;
+public int EffectDirection;
 
 ```
 
@@ -159,13 +139,13 @@ public int PrintDirection;
 
 -----------
 
-### ScrollDirection {#int-scrolldirection}
+### DisplayEffect {#int-displayeffect}
 
-Window scroll direction. 
+Window display effect. 
 
 ```csharp
 
-public int ScrollDirection;
+public int DisplayEffect;
 
 ```
 
@@ -176,16 +156,36 @@ public int ScrollDirection;
 
 -----------
 
-### WordWrap {#bool-wordwrap}
+### BorderType {#int-bordertype}
 
-Window word wrap setting. 
+Window border type. 
 
 ```csharp
 
-public bool WordWrap;
+public int BorderType;
 
 ```
 
+
+
+
+
+
+-----------
+
+### BorderColor {#cea708captioncolor-bordercolor}
+
+Window border color. 
+
+```csharp
+
+public Cea708CaptionColor BorderColor;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [Cea708CaptionColor](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 

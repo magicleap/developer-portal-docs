@@ -41,12 +41,10 @@ public bool IsConnected { get; set; }
 
 ## Public Methods
 
-### bool CreateWebViewWindow {#bool-createwebviewwindow}
-
-Creates the WebView window. 
+### void Start {#void-start}
 
 ```csharp
-public bool CreateWebViewWindow()
+public void Start()
 ```
 
 
@@ -54,18 +52,25 @@ public bool CreateWebViewWindow()
 
 
 
-**Returns**: True if created WebView window with success.
+-----------
+
+### void ServiceDisconnected {#void-servicedisconnected}
+
+```csharp
+public void ServiceDisconnected()
+```
+
+
+
 
 
 
 -----------
 
-### void DestroyWebViewWindow {#void-destroywebviewwindow}
-
-Destroys the WebView window. 
+### void ServiceConnected {#void-serviceconnected}
 
 ```csharp
-public void DestroyWebViewWindow()
+public void ServiceConnected()
 ```
 
 
@@ -99,10 +104,12 @@ public void GetWebViewSize(
 
 -----------
 
-### void ServiceConnected {#void-serviceconnected}
+### void DestroyWebViewWindow {#void-destroywebviewwindow}
+
+Destroys the WebView window. 
 
 ```csharp
-public void ServiceConnected()
+public void DestroyWebViewWindow()
 ```
 
 
@@ -112,10 +119,12 @@ public void ServiceConnected()
 
 -----------
 
-### void ServiceDisconnected {#void-servicedisconnected}
+### bool CreateWebViewWindow {#bool-createwebviewwindow}
+
+Creates the WebView window. 
 
 ```csharp
-public void ServiceDisconnected()
+public bool CreateWebViewWindow()
 ```
 
 
@@ -123,22 +132,28 @@ public void ServiceDisconnected()
 
 
 
------------
-
-### void Start {#void-start}
-
-```csharp
-public void Start()
-```
-
-
-
+**Returns**: True if created WebView window with success.
 
 
 
 -----------
 
 ## Public Attributes
+
+### scrollingMode {#scrollingmode-scrollingmode}
+
+```csharp
+
+public ScrollingMode scrollingMode = ScrollingMode.Touchpad;
+
+```
+
+
+
+
+
+
+-----------
 
 ### WebView {#mlwebview-webview}
 
@@ -151,21 +166,6 @@ public MLWebView WebView = null;
 | Type | Description  | 
 |--|--|
 | [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
-
-
-
-
-
------------
-
-### scrollingMode {#scrollingmode-scrollingmode}
-
-```csharp
-
-public ScrollingMode scrollingMode = ScrollingMode.Touchpad;
-
-```
-
 
 
 

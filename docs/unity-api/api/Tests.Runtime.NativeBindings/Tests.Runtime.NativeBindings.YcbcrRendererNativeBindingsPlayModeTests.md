@@ -21,23 +21,10 @@ Inherits from: <br></br>[NativeBindingsPlayTests](/unity-api/api/Tests.Runtime.N
 
 ## Public Methods
 
-### void NativeBinding_MLYcbcrRendererCreate_Exists {#void-nativebinding-mlycbcrrenderercreate-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_MLYcbcrRendererCreate_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLYcbcrRendererGetCallbackForPluginEvent_Exists {#void-nativebinding-mlycbcrrenderergetcallbackforpluginevent-exists}
-
-```csharp
-public void NativeBinding_MLYcbcrRendererGetCallbackForPluginEvent_Exists()
+public void SetupNativeBindings()
 ```
 
 
@@ -60,10 +47,23 @@ public void NativeBinding_MLYcbcrRendererGetEventIdForPluginEvent_Exists()
 
 -----------
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLYcbcrRendererGetCallbackForPluginEvent_Exists {#void-nativebinding-mlycbcrrenderergetcallbackforpluginevent-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_MLYcbcrRendererGetCallbackForPluginEvent_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLYcbcrRendererCreate_Exists {#void-nativebinding-mlycbcrrenderercreate-exists}
+
+```csharp
+public void NativeBinding_MLYcbcrRendererCreate_Exists()
 ```
 
 

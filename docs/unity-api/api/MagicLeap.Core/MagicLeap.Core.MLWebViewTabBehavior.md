@@ -21,6 +21,21 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Fields
 
+### tabUrl {#string-taburl}
+
+```csharp
+
+public string tabUrl { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### WebView {#mlwebview-webview}
 
 MLWebView instance that this tab is associated with. 
@@ -41,41 +56,13 @@ public MLWebView WebView { get; set; }
 
 -----------
 
-### tabUrl {#string-taburl}
-
-```csharp
-
-public string tabUrl { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
-### bool CreateTab {#bool-createtab}
+### void UpdateTabLabel {#void-updatetablabel}
 
 ```csharp
-public bool CreateTab(
-    MLWebViewTabBarBehavior tabBar,
-    MLWebViewScreenBehavior webViewScreen,
-    InputField addressBar
-)
+public void UpdateTabLabel()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebViewTabBarBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBarBehavior.md) |tabBar||
-| [MLWebViewScreenBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewScreenBehavior.md) |webViewScreen|This class is used to Render Web View on the texture and propagate input to Web View. |
-| InputField |addressBar||
 
 
 
@@ -84,10 +71,49 @@ public bool CreateTab(
 
 -----------
 
-### void DestroyTab {#void-destroytab}
+### void UnselectTab {#void-unselecttab}
 
 ```csharp
-public void DestroyTab()
+public void UnselectTab()
+```
+
+
+
+
+
+
+-----------
+
+### void SelectTab {#void-selecttab}
+
+```csharp
+public void SelectTab()
+```
+
+
+
+
+
+
+-----------
+
+### void Resume {#void-resume}
+
+```csharp
+public void Resume()
+```
+
+
+
+
+
+
+-----------
+
+### void Pause {#void-pause}
+
+```csharp
+public void Pause()
 ```
 
 
@@ -119,10 +145,10 @@ public void GoToUrl(
 
 -----------
 
-### void Pause {#void-pause}
+### void DestroyTab {#void-destroytab}
 
 ```csharp
-public void Pause()
+public void DestroyTab()
 ```
 
 
@@ -132,50 +158,24 @@ public void Pause()
 
 -----------
 
-### void Resume {#void-resume}
+### bool CreateTab {#bool-createtab}
 
 ```csharp
-public void Resume()
+public bool CreateTab(
+    MLWebViewTabBarBehavior tabBar,
+    MLWebViewScreenBehavior webViewScreen,
+    InputField addressBar
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### void SelectTab {#void-selecttab}
-
-```csharp
-public void SelectTab()
-```
-
-
-
-
-
-
------------
-
-### void UnselectTab {#void-unselecttab}
-
-```csharp
-public void UnselectTab()
-```
-
-
-
-
-
-
------------
-
-### void UpdateTabLabel {#void-updatetablabel}
-
-```csharp
-public void UpdateTabLabel()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebViewTabBarBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBarBehavior.md) |tabBar||
+| [MLWebViewScreenBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewScreenBehavior.md) |webViewScreen|This class is used to Render Web View on the texture and propagate input to Web View. |
+| InputField |addressBar||
 
 
 

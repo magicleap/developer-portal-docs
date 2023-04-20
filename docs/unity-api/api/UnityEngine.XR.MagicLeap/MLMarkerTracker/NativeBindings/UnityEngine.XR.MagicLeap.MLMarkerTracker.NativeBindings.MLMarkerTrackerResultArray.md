@@ -41,13 +41,11 @@ public MLMarkerTrackerResultArray(
 
 ## Public Attributes
 
-### Count {#readonly-uintptr-count}
-
-Number of markers being tracked. 
+### Version {#readonly-uint-version}
 
 ```csharp
 
-public readonly UIntPtr Count;
+public readonly uint Version;
 
 ```
 
@@ -75,11 +73,13 @@ public readonly IntPtr Detections;
 
 -----------
 
-### Version {#readonly-uint-version}
+### Count {#readonly-uintptr-count}
+
+Number of markers being tracked. 
 
 ```csharp
 
-public readonly uint Version;
+public readonly UIntPtr Count;
 
 ```
 

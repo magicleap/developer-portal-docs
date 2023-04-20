@@ -17,13 +17,13 @@ Class that represents an ice server used by the [MLWebRTC](/unity-api/api/UnityE
 
 ## Public Fields
 
-### Password {#string-password}
+### UserName {#string-username}
 
-Gets the password to log into the ice server. 
+Gets the username to log into the ice server. 
 
 ```csharp
 
-public string Password { get; set; }
+public string UserName { get; set; }
 
 ```
 
@@ -51,13 +51,13 @@ public string Uri { get; set; }
 
 -----------
 
-### UserName {#string-username}
+### Password {#string-password}
 
-Gets the username to log into the ice server. 
+Gets the password to log into the ice server. 
 
 ```csharp
 
-public string UserName { get; set; }
+public string Password { get; set; }
 
 ```
 
@@ -69,6 +69,19 @@ public string UserName { get; set; }
 -----------
 
 ## Public Methods
+
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
 
 ### [IceServer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md) Create {#iceserver-create}
 
@@ -97,19 +110,6 @@ public static IceServer Create(
 
 
 **Returns**: An ice candidate object with the given handle.
-
-
-
------------
-
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
 
 
 

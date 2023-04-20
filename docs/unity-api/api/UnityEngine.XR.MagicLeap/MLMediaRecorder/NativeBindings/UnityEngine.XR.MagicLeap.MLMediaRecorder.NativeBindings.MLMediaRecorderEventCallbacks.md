@@ -38,30 +38,13 @@ public static MLMediaRecorderEventCallbacks Create()
 
 ## Public Attributes
 
-### OnError {#onerrordelegate-onerror}
+### OnTrackInfo {#ontrackinfodelegate-ontrackinfo}
 
-MediaRecorder received a general error message. 
-
-```csharp
-
-public OnErrorDelegate OnError;
-
-```
-
-
-
-
-
-
------------
-
-### OnInfo {#oninfodelegate-oninfo}
-
-MediaRecorder received a general info/warning message. 
+MediaRecorder received a track-related info/warning message. 
 
 ```csharp
 
-public OnInfoDelegate OnInfo;
+public OnTrackInfoDelegate OnTrackInfo;
 
 ```
 
@@ -89,13 +72,30 @@ public OnTrackErrorDelegate OnTrackError;
 
 -----------
 
-### OnTrackInfo {#ontrackinfodelegate-ontrackinfo}
+### OnInfo {#oninfodelegate-oninfo}
 
-MediaRecorder received a track-related info/warning message. 
+MediaRecorder received a general info/warning message. 
 
 ```csharp
 
-public OnTrackInfoDelegate OnTrackInfo;
+public OnInfoDelegate OnInfo;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnError {#onerrordelegate-onerror}
+
+MediaRecorder received a general error message. 
+
+```csharp
+
+public OnErrorDelegate OnError;
 
 ```
 

@@ -17,81 +17,13 @@ A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.Magic
 
 ## Public Attributes
 
-### Center {#readonly-mlvec3f-center}
+### Version {#readonly-uint-version}
 
-The center point of where a spatial query will originate. 
-
-```csharp
-
-public readonly MLVec3f Center;
-
-```
-
-
-
-
-
-
------------
-
-### Ids {#readonly-intptr-ids}
-
-A list of Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) IDs to query for. 
+Version of the structure. 
 
 ```csharp
 
-public readonly IntPtr Ids;
-
-```
-
-
-
-
-
-
------------
-
-### IdsCount {#readonly-uint-idscount}
-
-The number of IDs provided. 
-
-```csharp
-
-public readonly uint IdsCount;
-
-```
-
-
-
-
-
-
------------
-
-### MaxResults {#readonly-uint-maxresults}
-
-The upper bound of expected results. Set to 0 for unbounded results. 
-
-```csharp
-
-public readonly uint MaxResults;
-
-```
-
-
-
-
-
-
------------
-
-### RadiusM {#readonly-float-radiusm}
-
-The radius in meters used for a spatial query, relative to the specified center. Only anchors inside this radius will be returned. Set to 0 for unbounded results. 
-
-```csharp
-
-public readonly float RadiusM;
+public readonly uint Version;
 
 ```
 
@@ -119,13 +51,81 @@ public readonly bool Sorted;
 
 -----------
 
-### Version {#readonly-uint-version}
+### RadiusM {#readonly-float-radiusm}
 
-Version of the structure. 
+The radius in meters used for a spatial query, relative to the specified center. Only anchors inside this radius will be returned. Set to 0 for unbounded results. 
 
 ```csharp
 
-public readonly uint Version;
+public readonly float RadiusM;
+
+```
+
+
+
+
+
+
+-----------
+
+### MaxResults {#readonly-uint-maxresults}
+
+The upper bound of expected results. Set to 0 for unbounded results. 
+
+```csharp
+
+public readonly uint MaxResults;
+
+```
+
+
+
+
+
+
+-----------
+
+### IdsCount {#readonly-uint-idscount}
+
+The number of IDs provided. 
+
+```csharp
+
+public readonly uint IdsCount;
+
+```
+
+
+
+
+
+
+-----------
+
+### Ids {#readonly-intptr-ids}
+
+A list of Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) IDs to query for. 
+
+```csharp
+
+public readonly IntPtr Ids;
+
+```
+
+
+
+
+
+
+-----------
+
+### Center {#readonly-mlvec3f-center}
+
+The center point of where a spatial query will originate. 
+
+```csharp
+
+public readonly MLVec3f Center;
 
 ```
 

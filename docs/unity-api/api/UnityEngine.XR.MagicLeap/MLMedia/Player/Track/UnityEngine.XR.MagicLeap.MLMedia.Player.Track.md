@@ -17,20 +17,17 @@ summary: track from the prepared source that can be selected by the media player
 
 ## Public Fields
 
-### AudioChannelLayout {#mlaudiooutputchannellayouts-audiochannellayout}
+### TrackType {#type-tracktype}
 
 ```csharp
 
-public MLAudioOutput.ChannelLayouts AudioChannelLayout { get; set; }
+public Type TrackType { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MLAudioOutput.ChannelLayouts](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channellayouts) | Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)
-
-
-composite of individual channel masks.  |
+| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) | Media player track types.  |
 
 
 
@@ -38,26 +35,11 @@ composite of individual channel masks.  |
 
 -----------
 
-### Index {#uint-index}
+### MimeType {#string-mimetype}
 
 ```csharp
 
-public uint Index { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Language {#string-language}
-
-```csharp
-
-public string Language { get; set; }
+public string MimeType { get; set; }
 
 ```
 
@@ -86,11 +68,11 @@ public MLMediaFormat MediaFormat { get; set; }
 
 -----------
 
-### MimeType {#string-mimetype}
+### Language {#string-language}
 
 ```csharp
 
-public string MimeType { get; set; }
+public string Language { get; set; }
 
 ```
 
@@ -101,17 +83,35 @@ public string MimeType { get; set; }
 
 -----------
 
-### TrackType {#type-tracktype}
+### Index {#uint-index}
 
 ```csharp
 
-public Type TrackType { get; set; }
+public uint Index { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### AudioChannelLayout {#mlaudiooutputchannellayouts-audiochannellayout}
+
+```csharp
+
+public MLAudioOutput.ChannelLayouts AudioChannelLayout { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) | Media player track types.  |
+| [MLAudioOutput.ChannelLayouts](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channellayouts) | Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)
+
+
+composite of individual channel masks.  |
 
 
 

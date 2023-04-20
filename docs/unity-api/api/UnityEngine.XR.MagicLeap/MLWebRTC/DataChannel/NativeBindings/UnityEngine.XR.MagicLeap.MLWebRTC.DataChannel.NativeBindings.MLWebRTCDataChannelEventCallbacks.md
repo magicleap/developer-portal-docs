@@ -47,50 +47,13 @@ public static MLWebRTCDataChannelEventCallbacks Create(
 
 ## Public Attributes
 
-### Context {#intptr-context}
+### Version {#uint-version}
 
-Context pointer used with the dataChannelCounter field to determine which data channel that callbacks are associated with. 
-
-```csharp
-
-public IntPtr Context;
-
-```
-
-
-
-
-
-
------------
-
-### OnClosed {#oncloseddelegate-onclosed}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnClosed event. 
+Version of the struct. 
 
 ```csharp
 
-public OnClosedDelegate OnClosed;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OnClosedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-oncloseddelegate) | Delegate that describes the requirements of the OnClosed callback.  |
-
-
-
-
-
------------
-
-### OnMessage {#onmessagedelegate-onmessage}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnMessage event. 
-
-```csharp
-
-public OnMessageDelegate OnMessage;
+public uint Version;
 
 ```
 
@@ -121,13 +84,50 @@ public OnOpenedDelegate OnOpen;
 
 -----------
 
-### Version {#uint-version}
+### OnMessage {#onmessagedelegate-onmessage}
 
-Version of the struct. 
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnMessage event. 
 
 ```csharp
 
-public uint Version;
+public OnMessageDelegate OnMessage;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnClosed {#oncloseddelegate-onclosed}
+
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnClosed event. 
+
+```csharp
+
+public OnClosedDelegate OnClosed;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OnClosedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-oncloseddelegate) | Delegate that describes the requirements of the OnClosed callback.  |
+
+
+
+
+
+-----------
+
+### Context {#intptr-context}
+
+Context pointer used with the dataChannelCounter field to determine which data channel that callbacks are associated with. 
+
+```csharp
+
+public IntPtr Context;
 
 ```
 

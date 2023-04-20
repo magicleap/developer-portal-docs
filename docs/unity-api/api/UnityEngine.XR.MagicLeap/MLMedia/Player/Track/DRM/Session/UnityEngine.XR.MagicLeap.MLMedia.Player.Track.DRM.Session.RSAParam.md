@@ -42,11 +42,11 @@ public RSAParam(
 
 ## Public Attributes
 
-### Algorithm {#readonly-string-algorithm}
+### WrappedRsaKey {#readonly-byte-wrappedrsakey}
 
 ```csharp
 
-public readonly string Algorithm;
+public readonly byte [] WrappedRsaKey;
 
 ```
 
@@ -57,11 +57,11 @@ public readonly string Algorithm;
 
 -----------
 
-### WrappedRsaKey {#readonly-byte-wrappedrsakey}
+### Algorithm {#readonly-string-algorithm}
 
 ```csharp
 
-public readonly byte [] WrappedRsaKey;
+public readonly string Algorithm;
 
 ```
 

@@ -17,19 +17,6 @@ A structure containing information about the device's localization state.
 
 ## Public Methods
 
-### [MLSpatialAnchorLocalizationInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorLocalizationInfo.md) Create {#mlspatialanchorlocalizationinfo-create}
-
-```csharp
-public static MLSpatialAnchorLocalizationInfo Create()
-```
-
-
-
-
-
-
------------
-
 ###  MLSpatialAnchorLocalizationInfo {#functions-mlspatialanchorlocalizationinfo}
 
 ```csharp
@@ -52,75 +39,28 @@ public MLSpatialAnchorLocalizationInfo(
 
 -----------
 
+### [MLSpatialAnchorLocalizationInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorLocalizationInfo.md) Create {#mlspatialanchorlocalizationinfo-create}
+
+```csharp
+public static MLSpatialAnchorLocalizationInfo Create()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### LocalizationStatus {#readonly-localizationstatus}
+### Version {#readonly-uint-version}
 
-The localization status at the time this structure was returned. 
-
-```csharp
-
-public readonly LocalizationStatus LocalizationStatus;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
-
-
-
-
-
------------
-
-### MappingMode {#readonly-mappingmode}
-
-The current mapping mode. 
+Version of the structure. 
 
 ```csharp
 
-public readonly MappingMode MappingMode;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [MappingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
-
-
-
-
-
------------
-
-### SpaceId {#readonly-spaceid}
-
-If localized, this will contain the unique ID of the current space. 
-
-```csharp
-
-public readonly NativeBindings.MLUUIDBytes SpaceId;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [NativeBindings.MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) | Universally unique identifier, byte array.  |
-
-
-
-
-
------------
-
-### SpaceName {#readonly-string-spacename}
-
-If localized, this will contain the name of the current space. 
-
-```csharp
-
-public readonly string SpaceName;
+public readonly uint Version;
 
 ```
 
@@ -151,16 +91,76 @@ public readonly MagicLeapNativeBindings.MLCoordinateFrameUID TargetSpaceOrigin;
 
 -----------
 
-### Version {#readonly-uint-version}
+### SpaceName {#readonly-string-spacename}
 
-Version of the structure. 
+If localized, this will contain the name of the current space. 
 
 ```csharp
 
-public readonly uint Version;
+public readonly string SpaceName;
 
 ```
 
+
+
+
+
+
+-----------
+
+### SpaceId {#readonly-spaceid}
+
+If localized, this will contain the unique ID of the current space. 
+
+```csharp
+
+public readonly NativeBindings.MLUUIDBytes SpaceId;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [NativeBindings.MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) | Universally unique identifier, byte array.  |
+
+
+
+
+
+-----------
+
+### MappingMode {#readonly-mappingmode}
+
+The current mapping mode. 
+
+```csharp
+
+public readonly MappingMode MappingMode;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [MappingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
+
+
+
+
+
+-----------
+
+### LocalizationStatus {#readonly-localizationstatus}
+
+The localization status at the time this structure was returned. 
+
+```csharp
+
+public readonly LocalizationStatus LocalizationStatus;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
 
 
 

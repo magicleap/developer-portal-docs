@@ -20,13 +20,13 @@ Contains information necessary to report on  XRAnchor s.
 
 ## Public Fields
 
-### anchor {#xranchor-anchor}
+### trackingState {#trackingstate-trackingstate}
 
-Get the reference frame as a refernce point 
+The tracking state associated with the anchor 
 
 ```csharp
 
-public XRAnchor anchor { get; set; }
+public TrackingState trackingState { get; set; }
 
 ```
 
@@ -37,13 +37,30 @@ public XRAnchor anchor { get; set; }
 
 -----------
 
-### anchorPose {#pose-anchorpose}
+### trackableId {#trackableid-trackableid}
 
-Compute the pose of the anchor. 
+The anchor's trackable id. 
 
 ```csharp
 
-public Pose anchorPose { get; set; }
+public TrackableId trackableId { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### coordinateFrame {#pose-coordinateframe}
+
+The pose of the coordinate frame used as the origin when calculating the anchorPose. 
+
+```csharp
+
+public Pose coordinateFrame { get; set; }
 
 ```
 
@@ -74,13 +91,13 @@ public Native.MagicLeapNativeBindings.MLCoordinateFrameUID cfuid { get; set; }
 
 -----------
 
-### coordinateFrame {#pose-coordinateframe}
+### anchorPose {#pose-anchorpose}
 
-The pose of the coordinate frame used as the origin when calculating the anchorPose. 
+Compute the pose of the anchor. 
 
 ```csharp
 
-public Pose coordinateFrame { get; set; }
+public Pose anchorPose { get; set; }
 
 ```
 
@@ -91,30 +108,13 @@ public Pose coordinateFrame { get; set; }
 
 -----------
 
-### trackableId {#trackableid-trackableid}
+### anchor {#xranchor-anchor}
 
-The anchor's trackable id. 
-
-```csharp
-
-public TrackableId trackableId { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### trackingState {#trackingstate-trackingstate}
-
-The tracking state associated with the anchor 
+Get the reference frame as a refernce point 
 
 ```csharp
 
-public TrackingState trackingState { get; set; }
+public XRAnchor anchor { get; set; }
 
 ```
 
@@ -127,11 +127,13 @@ public TrackingState trackingState { get; set; }
 
 ## Public Methods
 
-### void ComputeDelta {#void-computedelta}
+### bool SetTrackingState {#bool-settrackingstate}
+
+Sets the tracking state and returns true if the state changed. 
 
 ```csharp
-public void ComputeDelta(
-    Pose pose
+public bool SetTrackingState(
+    TrackingState trackingState
 )
 ```
 
@@ -140,45 +142,14 @@ public void ComputeDelta(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| Pose |pose||
+| TrackingState |trackingState|The new tracking state|
 
 
 
 
 
 
------------
-
-### unsafe TrackableId GenerateTrackableId {#unsafe-trackableid-generatetrackableid}
-
-```csharp
-public static unsafe TrackableId GenerateTrackableId()
-```
-
-
-
-
-
-
------------
-
-###  ReferenceFrame {#functions-referenceframe}
-
-```csharp
-public ReferenceFrame(
-    Cinfo cinfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame |
-
-
-
+**Returns**: true if the tracking state changed.
 
 
 
@@ -210,13 +181,11 @@ public void SetCoordinateFrame(
 
 -----------
 
-### bool SetTrackingState {#bool-settrackingstate}
-
-Sets the tracking state and returns true if the state changed. 
+###  ReferenceFrame {#functions-referenceframe}
 
 ```csharp
-public bool SetTrackingState(
-    TrackingState trackingState
+public ReferenceFrame(
+    Cinfo cinfo
 )
 ```
 
@@ -225,14 +194,45 @@ public bool SetTrackingState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| TrackingState |trackingState|The new tracking state|
+| [Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame |
 
 
 
 
 
 
-**Returns**: true if the tracking state changed.
+-----------
+
+### unsafe TrackableId GenerateTrackableId {#unsafe-trackableid-generatetrackableid}
+
+```csharp
+public static unsafe TrackableId GenerateTrackableId()
+```
+
+
+
+
+
+
+-----------
+
+### void ComputeDelta {#void-computedelta}
+
+```csharp
+public void ComputeDelta(
+    Pose pose
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Pose |pose||
+
+
+
 
 
 

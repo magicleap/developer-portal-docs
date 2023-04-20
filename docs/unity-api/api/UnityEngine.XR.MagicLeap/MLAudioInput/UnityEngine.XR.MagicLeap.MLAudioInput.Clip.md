@@ -21,6 +21,21 @@ Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip](/unity
 
 ## Public Methods
 
+### void Dispose {#void-dispose}
+
+Stops streaming data. 
+
+```csharp
+public void Dispose()
+```
+
+
+
+
+
+
+-----------
+
 ###  Clip {#functions-clip}
 
 ```csharp
@@ -39,21 +54,6 @@ public Clip(
 | [MicCaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
 | uint |samplesLengthInSeconds||
 | uint |channels||
-
-
-
-
-
-
------------
-
-### void Dispose {#void-dispose}
-
-Stops streaming data. 
-
-```csharp
-public void Dispose()
-```
 
 
 

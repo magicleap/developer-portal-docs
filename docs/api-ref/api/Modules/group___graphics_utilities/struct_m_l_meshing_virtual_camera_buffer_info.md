@@ -33,7 +33,7 @@ Per virtual camera information needed to render depth.
 
 
 :::caution Deprecated
-Deprecated since 1.2.0. Scheduled for removal. 
+Deprecated since 1.2.0. Scheduled for removal.
 :::
 
 

@@ -47,13 +47,11 @@ public CreateInfo(
 
 ## Public Attributes
 
-### AcquireNextAvailableBufferCallback {#acquirenextavailablebufferdelegate-acquirenextavailablebuffercallback}
-
-Callback invoked by the native plugin to acquire a native buffer. 
+### ShouldWaitForQueueIdleOnSubmit {#bool-shouldwaitforqueueidleonsubmit}
 
 ```csharp
 
-public AcquireNextAvailableBufferDelegate AcquireNextAvailableBufferCallback;
+public bool ShouldWaitForQueueIdleOnSubmit;
 
 ```
 
@@ -64,105 +62,11 @@ public AcquireNextAvailableBufferDelegate AcquireNextAvailableBufferCallback;
 
 -----------
 
-### AcquireNextAvailableHwBufferCallback {#acquirenextavailablehwbufferdelegate-acquirenextavailablehwbuffercallback}
+### ReleaseHwBufferCallback {#releasehwbufferdelegate-releasehwbuffercallback}
 
 ```csharp
 
-public AcquireNextAvailableHwBufferDelegate AcquireNextAvailableHwBufferCallback;
-
-```
-
-
-
-
-
-
------------
-
-### Context {#intptr-context}
-
-User context data provided in the callbacks. 
-
-```csharp
-
-public IntPtr Context;
-
-```
-
-
-
-
-
-
------------
-
-### GetFrameTransformMatrixCallback {#getframetransformmatrixdelegate-getframetransformmatrixcallback}
-
-Callback invoked by the native plugin to get the frame transform matrix. 
-
-```csharp
-
-public GetFrameTransformMatrixDelegate GetFrameTransformMatrixCallback;
-
-```
-
-
-
-
-
-
------------
-
-### IsNewFrameAvailableCallback {#isnewframeavailabledelegate-isnewframeavailablecallback}
-
-```csharp
-
-public IsNewFrameAvailableDelegate IsNewFrameAvailableCallback;
-
-```
-
-
-
-
-
-
------------
-
-### OnCleanupCompleteCallback {#oncleanupcompletedelegate-oncleanupcompletecallback}
-
-```csharp
-
-public OnCleanupCompleteDelegate OnCleanupCompleteCallback;
-
-```
-
-
-
-
-
-
------------
-
-### OnFirstFrameRenderedCallback {#onfirstframerendereddelegate-onfirstframerenderedcallback}
-
-```csharp
-
-public OnFirstFrameRenderedDelegate OnFirstFrameRenderedCallback;
-
-```
-
-
-
-
-
-
------------
-
-### OverrideYcbcrConversionSamplerCallback {#overrideycbcrconversionsamplerdelegate-overrideycbcrconversionsamplercallback}
-
-```csharp
-
-public OverrideYcbcrConversionSamplerDelegate OverrideYcbcrConversionSamplerCallback;
+public ReleaseHwBufferDelegate ReleaseHwBufferCallback;
 
 ```
 
@@ -190,11 +94,11 @@ public ReleaseBufferDelegate ReleaseBufferCallback;
 
 -----------
 
-### ReleaseHwBufferCallback {#releasehwbufferdelegate-releasehwbuffercallback}
+### OverrideYcbcrConversionSamplerCallback {#overrideycbcrconversionsamplerdelegate-overrideycbcrconversionsamplercallback}
 
 ```csharp
 
-public ReleaseHwBufferDelegate ReleaseHwBufferCallback;
+public OverrideYcbcrConversionSamplerDelegate OverrideYcbcrConversionSamplerCallback;
 
 ```
 
@@ -205,11 +109,107 @@ public ReleaseHwBufferDelegate ReleaseHwBufferCallback;
 
 -----------
 
-### ShouldWaitForQueueIdleOnSubmit {#bool-shouldwaitforqueueidleonsubmit}
+### OnFirstFrameRenderedCallback {#onfirstframerendereddelegate-onfirstframerenderedcallback}
 
 ```csharp
 
-public bool ShouldWaitForQueueIdleOnSubmit;
+public OnFirstFrameRenderedDelegate OnFirstFrameRenderedCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnCleanupCompleteCallback {#oncleanupcompletedelegate-oncleanupcompletecallback}
+
+```csharp
+
+public OnCleanupCompleteDelegate OnCleanupCompleteCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### IsNewFrameAvailableCallback {#isnewframeavailabledelegate-isnewframeavailablecallback}
+
+```csharp
+
+public IsNewFrameAvailableDelegate IsNewFrameAvailableCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### GetFrameTransformMatrixCallback {#getframetransformmatrixdelegate-getframetransformmatrixcallback}
+
+Callback invoked by the native plugin to get the frame transform matrix. 
+
+```csharp
+
+public GetFrameTransformMatrixDelegate GetFrameTransformMatrixCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### Context {#intptr-context}
+
+User context data provided in the callbacks. 
+
+```csharp
+
+public IntPtr Context;
+
+```
+
+
+
+
+
+
+-----------
+
+### AcquireNextAvailableHwBufferCallback {#acquirenextavailablehwbufferdelegate-acquirenextavailablehwbuffercallback}
+
+```csharp
+
+public AcquireNextAvailableHwBufferDelegate AcquireNextAvailableHwBufferCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### AcquireNextAvailableBufferCallback {#acquirenextavailablebufferdelegate-acquirenextavailablebuffercallback}
+
+Callback invoked by the native plugin to acquire a native buffer. 
+
+```csharp
+
+public AcquireNextAvailableBufferDelegate AcquireNextAvailableBufferCallback;
 
 ```
 

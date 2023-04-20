@@ -60,13 +60,13 @@ public int Count { get; set; }
 
 ## Public Methods
 
-###  CircularBuffer {#functions-circularbuffer}
+### bool TryDequeue {#bool-trydequeue}
 
-Create a fixed size uninitialized buffer. Use Enqueue / Dequeue / TryDequeue / Count / Capacity / Clear / Resize and the enumerator. 
+Attempt to dequeue a value from the front of the queue. 
 
 ```csharp
-public CircularBuffer(
-    uint fixedSize
+public bool TryDequeue(
+    out T value
 )
 ```
 
@@ -75,37 +75,26 @@ public CircularBuffer(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| uint |fixedSize||
+| out T |value|Dequeued value|
 
 
 
 
 
 
------------
-
-### void Clear {#void-clear}
-
-Remove all elements from the buffer. This doesn't actually remove the elements, only resets the queue front/back markers. Thus, the ref-count of objects doesn't go down on calling this function. 
-
-```csharp
-public void Clear()
-```
-
-
-
+**Returns**: True if dequeue was successful, false otherwise
 
 
 
 -----------
 
-### CircularBuffer&lt; T &gt; Create {#circularbuffer-t-create}
+### void Resize {#void-resize}
 
-Create a CircularBuffer with preinitialized objects. When creating the buffer with this factory method, use the Get() method to get a reference to the next available object. DO NOT use any other methods available in this class as they;re relevant only when the CircularBuffer is instantiated with a fixed size and no preinitialized objects. 
+Change the capacity of the buffer. If new capacity is more than the previous one, all old data is copied into the new buffer. If new capacity is less than previous one, only the latest newCapacity number of elements are preserved. 
 
 ```csharp
-public static CircularBuffer< T > Create(
-    params T [] objects
+public void Resize(
+    uint newCapacity
 )
 ```
 
@@ -114,42 +103,101 @@ public static CircularBuffer< T > Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| params T [] |objects|Array of objects to initialize the Circular Buffer with.|
+| uint |newCapacity|New capacity|
 
 
 
-
-
-
-**Returns**: 
 
 
 
 -----------
 
-### int Dequeue {#int-dequeue}
+### void Reset {#void-reset}
 
-Dequeue an entire array of elements. Uses Array.Copy() and is thus more efficient than calling TryDequeue() in a loop. 
+Reset the flags for the enumerator 
 
 ```csharp
-public int Dequeue(
-    T [] data
-)
+public void Reset()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| T [] |data|Array to dequeue into|
 
 
 
 
+-----------
+
+### T Peek {#t-peek}
+
+Gets the curent pre-initialized object in use. 
+
+```csharp
+public T Peek()
+```
 
 
-**Returns**: Number of elements that were dequeued into the provided array
+
+
+
+
+**Returns**: Current object in the circular buffer
+
+
+
+-----------
+
+### bool MoveNext {#bool-movenext}
+
+Move to the next element when using this class as an IEnumerator 
+
+```csharp
+public bool MoveNext()
+```
+
+
+
+
+
+
+**Returns**: True if there are still more elements remaining in the queue, false if end of collection has been reached
+
+
+
+-----------
+
+### IEnumerator GetEnumerator {#ienumerator-getenumerator}
+
+Get the enumerator implemented for this collection 
+
+```csharp
+public IEnumerator GetEnumerator()
+```
+
+
+
+
+
+
+**Returns**: Enumerator
+
+
+
+-----------
+
+### T Get {#t-get}
+
+Gets the next available pre-initialized object. 
+
+```csharp
+public T Get()
+```
+
+
+
+
+
+
+**Returns**: Next object in the circular buffer
 
 
 
@@ -203,104 +251,13 @@ public void Enqueue(
 
 -----------
 
-### T Get {#t-get}
+### int Dequeue {#int-dequeue}
 
-Gets the next available pre-initialized object. 
-
-```csharp
-public T Get()
-```
-
-
-
-
-
-
-**Returns**: Next object in the circular buffer
-
-
-
------------
-
-### IEnumerator GetEnumerator {#ienumerator-getenumerator}
-
-Get the enumerator implemented for this collection 
+Dequeue an entire array of elements. Uses Array.Copy() and is thus more efficient than calling TryDequeue() in a loop. 
 
 ```csharp
-public IEnumerator GetEnumerator()
-```
-
-
-
-
-
-
-**Returns**: Enumerator
-
-
-
------------
-
-### bool MoveNext {#bool-movenext}
-
-Move to the next element when using this class as an IEnumerator 
-
-```csharp
-public bool MoveNext()
-```
-
-
-
-
-
-
-**Returns**: True if there are still more elements remaining in the queue, false if end of collection has been reached
-
-
-
------------
-
-### T Peek {#t-peek}
-
-Gets the curent pre-initialized object in use. 
-
-```csharp
-public T Peek()
-```
-
-
-
-
-
-
-**Returns**: Current object in the circular buffer
-
-
-
------------
-
-### void Reset {#void-reset}
-
-Reset the flags for the enumerator 
-
-```csharp
-public void Reset()
-```
-
-
-
-
-
-
------------
-
-### void Resize {#void-resize}
-
-Change the capacity of the buffer. If new capacity is more than the previous one, all old data is copied into the new buffer. If new capacity is less than previous one, only the latest newCapacity number of elements are preserved. 
-
-```csharp
-public void Resize(
-    uint newCapacity
+public int Dequeue(
+    T [] data
 )
 ```
 
@@ -309,22 +266,26 @@ public void Resize(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| uint |newCapacity|New capacity|
+| T [] |data|Array to dequeue into|
 
 
 
+
+
+
+**Returns**: Number of elements that were dequeued into the provided array
 
 
 
 -----------
 
-### bool TryDequeue {#bool-trydequeue}
+### CircularBuffer&lt; T &gt; Create {#circularbuffer-t-create}
 
-Attempt to dequeue a value from the front of the queue. 
+Create a CircularBuffer with preinitialized objects. When creating the buffer with this factory method, use the Get() method to get a reference to the next available object. DO NOT use any other methods available in this class as they;re relevant only when the CircularBuffer is instantiated with a fixed size and no preinitialized objects. 
 
 ```csharp
-public bool TryDequeue(
-    out T value
+public static CircularBuffer< T > Create(
+    params T [] objects
 )
 ```
 
@@ -333,37 +294,59 @@ public bool TryDequeue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out T |value|Dequeued value|
+| params T [] |objects|Array of objects to initialize the Circular Buffer with.|
 
 
 
 
 
 
-**Returns**: True if dequeue was successful, false otherwise
+**Returns**: 
+
+
+
+-----------
+
+### void Clear {#void-clear}
+
+Remove all elements from the buffer. This doesn't actually remove the elements, only resets the queue front/back markers. Thus, the ref-count of objects doesn't go down on calling this function. 
+
+```csharp
+public void Clear()
+```
+
+
+
+
+
+
+-----------
+
+###  CircularBuffer {#functions-circularbuffer}
+
+Create a fixed size uninitialized buffer. Use Enqueue / Dequeue / TryDequeue / Count / Capacity / Clear / Resize and the enumerator. 
+
+```csharp
+public CircularBuffer(
+    uint fixedSize
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| uint |fixedSize||
+
+
+
 
 
 
 -----------
 
 ## Public Attributes
-
-### Capacity {#int-capacity}
-
-Max number of elements the buffer can hold. 
-
-```csharp
-
-public int Capacity => buffer.Length;
-
-```
-
-
-
-
-
-
------------
 
 ### Current {#object-current}
 
@@ -372,6 +355,23 @@ Get the current value when enumerating the buffer
 ```csharp
 
 public object Current => buffer[enumeratorIndex];
+
+```
+
+
+
+
+
+
+-----------
+
+### Capacity {#int-capacity}
+
+Max number of elements the buffer can hold. 
+
+```csharp
+
+public int Capacity => buffer.Length;
 
 ```
 

@@ -40,10 +40,10 @@ APIs for the Perception system.  [More...](#detailed-description)
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPerceptionStartup](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptionstartup)**([MLPerceptionSettings](/api-ref/api/Modules/group___perception/struct_m_l_perception_settings.md) * settings)<br></br>Starts the perception system.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPerceptionShutdown](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptionshutdown)**()<br></br>Shuts down the perception system and cleans up all resources used by it.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPerceptionGetSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptiongetsnapshot)**([MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) ** out_snapshot)<br></br>Pulls in the latest state of all persistent transforms and all enabled trackers extrapolated to the next frame time.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPerceptionReleaseSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptionreleasesnapshot)**([MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snap)<br></br>Releases specified `[MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot)` object.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPerceptionReleaseSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptionreleasesnapshot)**([MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snap)<br></br>Releases specified `#MLSnapshot` object.  |
 | void | **[MLTransformDerivativesInit](/api-ref/api/Modules/group___perception/group___perception.md#void-mltransformderivativesinit)**([MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md) * inout_data)<br></br>Intializes the default values for [MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransform](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransform)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform)<br></br>Get transform between world origin and the coordinate frame `id'.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransformWithDerivatives](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransformwithderivatives)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform, [MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md) * out_derivatives)<br></br>Get transform between world origin and the coordinate frame `id' as well as any derivatives that have been calculated.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransform](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransform)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform)<br></br>Get transform between world origin and the coordinate frame "id.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransformWithDerivatives](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransformwithderivatives)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform, [MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md) * out_derivatives)<br></br>Get transform between world origin and the coordinate frame "id as well as any derivatives that have been calculated.  |
 | const char * | **[MLSnapshotGetResultString](/api-ref/api/Modules/group___perception/group___perception.md#const-char-mlsnapshotgetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string representation for each result code.  |
 
 ## Detailed Description
@@ -53,8 +53,9 @@ APIs for the Perception system.
 
 
 
-**Shared Object:**
-  * perception.magicleap 
+**Shared Object:
+ perception.magicleap**
+  * 
 
 
 
@@ -101,7 +102,7 @@ Return values for Snapshot API calls.
 ### MLCoordinateFrameUID {#struct-mlcoordinateframeuid}
 
 ```cpp
-typedef struct MLCoordinateFrameUID  MLCoordinateFrameUID;
+typedef struct MLCoordinateFrameUID MLCoordinateFrameUID;
 ```
 
 
@@ -118,7 +119,7 @@ A unique identifier which represents a coordinate frame.
 ### MLPerceptionSettings {#struct-mlperceptionsettings}
 
 ```cpp
-typedef struct MLPerceptionSettings  MLPerceptionSettings;
+typedef struct MLPerceptionSettings MLPerceptionSettings;
 ```
 
 
@@ -135,7 +136,7 @@ Settings for initializing the perception system.
 ### MLTransformDerivatives {#struct-mltransformderivatives}
 
 ```cpp
-typedef struct MLTransformDerivatives  MLTransformDerivatives;
+typedef struct MLTransformDerivatives MLTransformDerivatives;
 ```
 
 Velocity and acceleration derivatives for a related transform. 
@@ -145,8 +146,9 @@ Velocity and acceleration derivatives for a related transform.
 [More Info](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md)
 
 
-**API Level:**
-  * 8 
+**API Level:
+ 8**
+  * 
 
 
 
@@ -314,7 +316,7 @@ MLResult MLPerceptionReleaseSnapshot(
 )
 ```
 
-Releases specified `[MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot)` object. 
+Releases specified `#MLSnapshot` object. 
 
 **Parameters**
 
@@ -360,8 +362,9 @@ Intializes the default values for [MLTransformDerivatives](/api-ref/api/Modules/
 
 
 
-**API Level:**
-  * 8
+**API Level:
+ 8**
+  * 
 
 
 
@@ -378,7 +381,7 @@ MLResult MLSnapshotGetTransform(
 )
 ```
 
-Get transform between world origin and the coordinate frame `id'. 
+Get transform between world origin and the coordinate frame "id. 
 
 **Parameters**
 
@@ -418,7 +421,7 @@ MLResult MLSnapshotGetTransformWithDerivatives(
 )
 ```
 
-Get transform between world origin and the coordinate frame `id' as well as any derivatives that have been calculated. 
+Get transform between world origin and the coordinate frame "id as well as any derivatives that have been calculated. 
 
 **Parameters**
 
@@ -446,8 +449,9 @@ Get transform between world origin and the coordinate frame `id' as well as any 
 
 
 
-**API Level:**
-  * 8
+**API Level:
+ 8**
+  * 
 
 
 

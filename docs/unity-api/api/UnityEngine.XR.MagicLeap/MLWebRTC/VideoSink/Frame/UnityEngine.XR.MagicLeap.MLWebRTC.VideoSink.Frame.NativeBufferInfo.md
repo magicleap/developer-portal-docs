@@ -16,41 +16,11 @@ title: NativeBufferInfo
 
 ## Public Fields
 
-### Height {#uint-height}
+### Width {#uint-width}
 
 ```csharp
 
-public uint Height { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### NativeBufferHandle {#ulong-nativebufferhandle}
-
-```csharp
-
-public ulong NativeBufferHandle { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### SurfaceHandle {#ulong-surfacehandle}
-
-```csharp
-
-public ulong SurfaceHandle { get; set; }
+public uint Width { get; set; }
 
 ```
 
@@ -76,11 +46,41 @@ public float [] Transform { get; set; }
 
 -----------
 
-### Width {#uint-width}
+### SurfaceHandle {#ulong-surfacehandle}
 
 ```csharp
 
-public uint Width { get; set; }
+public ulong SurfaceHandle { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### NativeBufferHandle {#ulong-nativebufferhandle}
+
+```csharp
+
+public ulong NativeBufferHandle { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+```csharp
+
+public uint Height { get; set; }
 
 ```
 

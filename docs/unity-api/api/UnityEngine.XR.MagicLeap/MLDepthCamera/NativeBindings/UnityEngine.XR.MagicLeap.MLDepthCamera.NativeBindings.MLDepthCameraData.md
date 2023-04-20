@@ -53,11 +53,11 @@ public static MLDepthCameraData Init(
 
 ## Public Attributes
 
-### AmbientRawDepthImageFrameBufferPtr {#intptr-ambientrawdepthimageframebufferptr}
+### Version {#uint-version}
 
 ```csharp
 
-public IntPtr AmbientRawDepthImageFrameBufferPtr;
+public uint Version;
 
 ```
 
@@ -68,89 +68,11 @@ public IntPtr AmbientRawDepthImageFrameBufferPtr;
 
 -----------
 
-### CameraPose {#mltransform-camerapose}
+### Intrinsics {#mldepthcameraintrinsics-intrinsics}
 
 ```csharp
 
-public MLTransform CameraPose;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
-
-
-
-
-
------------
-
-### ConfidenceBufferFrameBufferPtr {#intptr-confidencebufferframebufferptr}
-
-```csharp
-
-public IntPtr ConfidenceBufferFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### DepthFlagsBufferFrameBufferPtr {#intptr-depthflagsbufferframebufferptr}
-
-```csharp
-
-public IntPtr DepthFlagsBufferFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### DepthImageFrameBufferPtr {#intptr-depthimageframebufferptr}
-
-```csharp
-
-public IntPtr DepthImageFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### FrameNumber {#long-framenumber}
-
-```csharp
-
-public long FrameNumber;
-
-```
-
-
-
-
-
-
------------
-
-### FrameTimestamp {#long-frametimestamp}
-
-```csharp
-
-public long FrameTimestamp;
+public MLDepthCameraIntrinsics Intrinsics;
 
 ```
 
@@ -179,11 +101,11 @@ public FrameType FrameType;
 
 -----------
 
-### Intrinsics {#mldepthcameraintrinsics-intrinsics}
+### FrameTimestamp {#long-frametimestamp}
 
 ```csharp
 
-public MLDepthCameraIntrinsics Intrinsics;
+public long FrameTimestamp;
 
 ```
 
@@ -194,11 +116,89 @@ public MLDepthCameraIntrinsics Intrinsics;
 
 -----------
 
-### Version {#uint-version}
+### FrameNumber {#long-framenumber}
 
 ```csharp
 
-public uint Version;
+public long FrameNumber;
+
+```
+
+
+
+
+
+
+-----------
+
+### DepthImageFrameBufferPtr {#intptr-depthimageframebufferptr}
+
+```csharp
+
+public IntPtr DepthImageFrameBufferPtr;
+
+```
+
+
+
+
+
+
+-----------
+
+### DepthFlagsBufferFrameBufferPtr {#intptr-depthflagsbufferframebufferptr}
+
+```csharp
+
+public IntPtr DepthFlagsBufferFrameBufferPtr;
+
+```
+
+
+
+
+
+
+-----------
+
+### ConfidenceBufferFrameBufferPtr {#intptr-confidencebufferframebufferptr}
+
+```csharp
+
+public IntPtr ConfidenceBufferFrameBufferPtr;
+
+```
+
+
+
+
+
+
+-----------
+
+### CameraPose {#mltransform-camerapose}
+
+```csharp
+
+public MLTransform CameraPose;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
+
+
+
+
+
+-----------
+
+### AmbientRawDepthImageFrameBufferPtr {#intptr-ambientrawdepthimageframebufferptr}
+
+```csharp
+
+public IntPtr AmbientRawDepthImageFrameBufferPtr;
 
 ```
 

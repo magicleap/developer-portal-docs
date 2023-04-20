@@ -55,8 +55,9 @@ If status is neither NotWorn nor Unknown, then headset is being worn.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -69,7 +70,7 @@ If status is neither NotWorn nor Unknown, then headset is being worn.
 ### MLHeadsetFitState {#struct-mlheadsetfitstate}
 
 ```cpp
-typedef struct MLHeadsetFitState  MLHeadsetFitState;
+typedef struct MLHeadsetFitState MLHeadsetFitState;
 ```
 
 Headset fit state. 
@@ -79,8 +80,9 @@ Headset fit state.
 [More Info](/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -108,8 +110,9 @@ Initialize [MLHeadsetFitState](/api-ref/api/Modules/group___headset_fit/struct_m
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -147,8 +150,9 @@ Creates a headset fit client.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -186,8 +190,9 @@ Destroys headset fit client.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -227,8 +232,9 @@ Gets information about the user's current headset fit.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

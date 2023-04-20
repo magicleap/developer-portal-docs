@@ -19,15 +19,13 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelCreate {#mlresultcode-mlwebrtcdatachannelcreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SetCallbacks {#mlresultcode-setcallbacks}
 
-Creates a data channel. 
+Sets the callbacks of a data channel. 
 
 ```csharp
-public MLResult.Code MLWebRTCDataChannelCreate(
-    ulong connectionHandle,
-    string label,
-    out ulong dataChannelHandle
+public static MLResult.Code SetCallbacks(
+    MLWebRTC.DataChannel dataChannel
 )
 ```
 
@@ -36,9 +34,7 @@ public MLResult.Code MLWebRTCDataChannelCreate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |connectionHandle|The connection to associate the data channel with.|
-| string |label|The label to give the data channel.|
-| out ulong |dataChannelHandle|The handle of the data channel after it is created.|
+| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|The data channel to reference for the callbacks.|
 
 
 
@@ -51,14 +47,14 @@ public MLResult.Code MLWebRTCDataChannelCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelDestroy {#mlresultcode-mlwebrtcdatachanneldestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SendMessageToDataChannel< T > {#mlresultcode-sendmessagetodatachannel-t-}
 
-Destroys a data channel. 
+Sends a string message to a data channel. 
 
 ```csharp
-public MLResult.Code MLWebRTCDataChannelDestroy(
-    ulong connectionHandle,
-    ulong dataChannelHandle
+public static MLResult.Code SendMessageToDataChannel< T >(
+    MLWebRTC.DataChannel dataChannel,
+    T [] message
 )
 ```
 
@@ -67,8 +63,8 @@ public MLResult.Code MLWebRTCDataChannelDestroy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |connectionHandle|The handle of the associated connection.|
-| ulong |dataChannelHandle|The handle of the data channel.|
+| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|Data channel to send the message to.|
+| T [] |message|The byte array to send.|
 
 
 
@@ -81,14 +77,14 @@ public MLResult.Code MLWebRTCDataChannelDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelGetLabel {#mlresultcode-mlwebrtcdatachannelgetlabel}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SendMessageToDataChannel {#mlresultcode-sendmessagetodatachannel}
 
-Gets the label of a data channel, call MLWebRTCDataChannelReleaseLabelMemory after. 
+Sends a string message to a data channel. 
 
 ```csharp
-public MLResult.Code MLWebRTCDataChannelGetLabel(
-    ulong dataChannelHandle,
-    out IntPtr label
+public static MLResult.Code SendMessageToDataChannel(
+    MLWebRTC.DataChannel dataChannel,
+    string message
 )
 ```
 
@@ -97,8 +93,8 @@ public MLResult.Code MLWebRTCDataChannelGetLabel(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |dataChannelHandle|The handle of the data channel.|
-| out IntPtr |label|Pointer to the unmanaged label string.|
+| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|Data channel to send the message to.|
+| string |message|The string to send.|
 
 
 
@@ -111,132 +107,12 @@ public MLResult.Code MLWebRTCDataChannelGetLabel(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelIsOpen {#mlresultcode-mlwebrtcdatachannelisopen}
+### delegate void OnOpenedDelegate {#delegate-void-onopeneddelegate}
 
-Gets if a data channel is open. 
-
-```csharp
-public MLResult.Code MLWebRTCDataChannelIsOpen(
-    ulong dataChannelHandle,
-    out bool isOpen
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |dataChannelHandle|The handle of the data channel.|
-| out bool |isOpen|True if the data channel is open.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelReleaseLabelMemory {#mlresultcode-mlwebrtcdatachannelreleaselabelmemory}
-
-Releases the memory created when calling MLWebRTCDataChannelGetLabel. 
+A delegate that describes the requirements of the OnOpened callback. 
 
 ```csharp
-public MLResult.Code MLWebRTCDataChannelReleaseLabelMemory(
-    ulong dataChannelHandle,
-    IntPtr label
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |dataChannelHandle|The handle of the data channel.|
-| IntPtr |label|Pointer to the unmanaged label string.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelSendMessage {#mlresultcode-mlwebrtcdatachannelsendmessage}
-
-Sends a message to a data channel. 
-
-```csharp
-public MLResult.Code MLWebRTCDataChannelSendMessage(
-    ulong dataChannelHandle,
-    in MLWebRTCDataChannelMessage message
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |dataChannelHandle|The handle of the data channel.|
-| in [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) |message|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) message object to send to the data channel.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelSetEventCallbacks {#mlresultcode-mlwebrtcdatachannelseteventcallbacks}
-
-Sets the callbacks for a data channel. 
-
-```csharp
-public MLResult.Code MLWebRTCDataChannelSetEventCallbacks(
-    ulong dataChannelHandle,
-    in MLWebRTCDataChannelEventCallbacks callbacks
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |dataChannelHandle|The handle of the data channel.|
-| in [MLWebRTCDataChannelEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) |callbacks|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) callbacks object to set the data channel with.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
-
-
-
------------
-
-### delegate void OnClosedDelegate {#delegate-void-oncloseddelegate}
-
-A delegate that describes the requirements of the OnClosed callback. 
-
-```csharp
-public delegate void OnClosedDelegate(
+public delegate void OnOpenedDelegate(
     IntPtr context
 )
 ```
@@ -281,12 +157,12 @@ public delegate void OnMessageDelegate(
 
 -----------
 
-### delegate void OnOpenedDelegate {#delegate-void-onopeneddelegate}
+### delegate void OnClosedDelegate {#delegate-void-oncloseddelegate}
 
-A delegate that describes the requirements of the OnOpened callback. 
+A delegate that describes the requirements of the OnClosed callback. 
 
 ```csharp
-public delegate void OnOpenedDelegate(
+public delegate void OnClosedDelegate(
     IntPtr context
 )
 ```
@@ -305,14 +181,14 @@ public delegate void OnOpenedDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SendMessageToDataChannel {#mlresultcode-sendmessagetodatachannel}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelSetEventCallbacks {#mlresultcode-mlwebrtcdatachannelseteventcallbacks}
 
-Sends a string message to a data channel. 
+Sets the callbacks for a data channel. 
 
 ```csharp
-public static MLResult.Code SendMessageToDataChannel(
-    MLWebRTC.DataChannel dataChannel,
-    string message
+public MLResult.Code MLWebRTCDataChannelSetEventCallbacks(
+    ulong dataChannelHandle,
+    in MLWebRTCDataChannelEventCallbacks callbacks
 )
 ```
 
@@ -321,8 +197,8 @@ public static MLResult.Code SendMessageToDataChannel(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|Data channel to send the message to.|
-| string |message|The string to send.|
+| ulong |dataChannelHandle|The handle of the data channel.|
+| in [MLWebRTCDataChannelEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) |callbacks|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) callbacks object to set the data channel with.|
 
 
 
@@ -335,14 +211,14 @@ public static MLResult.Code SendMessageToDataChannel(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SendMessageToDataChannel< T > {#mlresultcode-sendmessagetodatachannel-t-}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelSendMessage {#mlresultcode-mlwebrtcdatachannelsendmessage}
 
-Sends a string message to a data channel. 
+Sends a message to a data channel. 
 
 ```csharp
-public static MLResult.Code SendMessageToDataChannel< T >(
-    MLWebRTC.DataChannel dataChannel,
-    T [] message
+public MLResult.Code MLWebRTCDataChannelSendMessage(
+    ulong dataChannelHandle,
+    in MLWebRTCDataChannelMessage message
 )
 ```
 
@@ -351,8 +227,8 @@ public static MLResult.Code SendMessageToDataChannel< T >(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|Data channel to send the message to.|
-| T [] |message|The byte array to send.|
+| ulong |dataChannelHandle|The handle of the data channel.|
+| in [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) |message|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) message object to send to the data channel.|
 
 
 
@@ -365,13 +241,14 @@ public static MLResult.Code SendMessageToDataChannel< T >(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SetCallbacks {#mlresultcode-setcallbacks}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelReleaseLabelMemory {#mlresultcode-mlwebrtcdatachannelreleaselabelmemory}
 
-Sets the callbacks of a data channel. 
+Releases the memory created when calling MLWebRTCDataChannelGetLabel. 
 
 ```csharp
-public static MLResult.Code SetCallbacks(
-    MLWebRTC.DataChannel dataChannel
+public MLResult.Code MLWebRTCDataChannelReleaseLabelMemory(
+    ulong dataChannelHandle,
+    IntPtr label
 )
 ```
 
@@ -380,7 +257,130 @@ public static MLResult.Code SetCallbacks(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|The data channel to reference for the callbacks.|
+| ulong |dataChannelHandle|The handle of the data channel.|
+| IntPtr |label|Pointer to the unmanaged label string.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelIsOpen {#mlresultcode-mlwebrtcdatachannelisopen}
+
+Gets if a data channel is open. 
+
+```csharp
+public MLResult.Code MLWebRTCDataChannelIsOpen(
+    ulong dataChannelHandle,
+    out bool isOpen
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |dataChannelHandle|The handle of the data channel.|
+| out bool |isOpen|True if the data channel is open.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelGetLabel {#mlresultcode-mlwebrtcdatachannelgetlabel}
+
+Gets the label of a data channel, call MLWebRTCDataChannelReleaseLabelMemory after. 
+
+```csharp
+public MLResult.Code MLWebRTCDataChannelGetLabel(
+    ulong dataChannelHandle,
+    out IntPtr label
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |dataChannelHandle|The handle of the data channel.|
+| out IntPtr |label|Pointer to the unmanaged label string.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelDestroy {#mlresultcode-mlwebrtcdatachanneldestroy}
+
+Destroys a data channel. 
+
+```csharp
+public MLResult.Code MLWebRTCDataChannelDestroy(
+    ulong connectionHandle,
+    ulong dataChannelHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |connectionHandle|The handle of the associated connection.|
+| ulong |dataChannelHandle|The handle of the data channel.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCDataChannelCreate {#mlresultcode-mlwebrtcdatachannelcreate}
+
+Creates a data channel. 
+
+```csharp
+public MLResult.Code MLWebRTCDataChannelCreate(
+    ulong connectionHandle,
+    string label,
+    out ulong dataChannelHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |connectionHandle|The connection to associate the data channel with.|
+| string |label|The label to give the data channel.|
+| out ulong |dataChannelHandle|The handle of the data channel after it is created.|
 
 
 

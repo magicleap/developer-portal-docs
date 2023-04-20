@@ -32,13 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### MaxDistance {#float-maxdistance}
+### RolloffFactor {#float-rollofffactor}
 
-Distance beyond which sound gets no quieter. 
+Modification to real-world distance response. 
 
 ```csharp
 
-public float MaxDistance;
+public float RolloffFactor;
 
 ```
 
@@ -66,13 +66,13 @@ public float MinDistance;
 
 -----------
 
-### RolloffFactor {#float-rollofffactor}
+### MaxDistance {#float-maxdistance}
 
-Modification to real-world distance response. 
+Distance beyond which sound gets no quieter. 
 
 ```csharp
 
-public float RolloffFactor;
+public float MaxDistance;
 
 ```
 

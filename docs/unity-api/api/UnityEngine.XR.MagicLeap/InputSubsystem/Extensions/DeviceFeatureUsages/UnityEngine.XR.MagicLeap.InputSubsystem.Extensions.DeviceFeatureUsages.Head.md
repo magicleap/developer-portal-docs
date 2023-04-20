@@ -16,11 +16,11 @@ title: Head
 
 ## Public Attributes
 
-### Confidence {#inputfeatureusage-float-confidence}
+### TrackingState {#inputfeatureusage-byte-trackingstate}
 
 ```csharp
 
-public static InputFeatureUsage< float > Confidence = new InputFeatureUsage<float>("MLHeadConfidence");
+public static InputFeatureUsage< byte[]> TrackingState = new InputFeatureUsage<byte[]>("MLHeadTrackingState");
 
 ```
 
@@ -46,11 +46,11 @@ public static InputFeatureUsage< byte[]> TrackingMapEvents = new InputFeatureUsa
 
 -----------
 
-### TrackingState {#inputfeatureusage-byte-trackingstate}
+### Confidence {#inputfeatureusage-float-confidence}
 
 ```csharp
 
-public static InputFeatureUsage< byte[]> TrackingState = new InputFeatureUsage<byte[]>("MLHeadTrackingState");
+public static InputFeatureUsage< float > Confidence = new InputFeatureUsage<float>("MLHeadConfidence");
 
 ```
 

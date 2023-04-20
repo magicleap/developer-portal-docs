@@ -52,8 +52,9 @@ APIs for the Hand Tracking system.
 
 
 
-**Shared Object:**
-  * perception.magicleap 
+**Shared Object:
+ perception.magicleap**
+  * 
 
 
 
@@ -140,8 +141,9 @@ The index ordering of 28 keypoints exposed in array keypoints_mask[MLHandTrackin
 
 
 
-**API Level:**
-  * 7 
+**API Level:
+ 7**
+  * 
 
 
 
@@ -154,7 +156,7 @@ The index ordering of 28 keypoints exposed in array keypoints_mask[MLHandTrackin
 ### MLHandTrackingCFUIDs {#struct-mlhandtrackingcfuids}
 
 ```cpp
-typedef struct MLHandTrackingCFUIDs  MLHandTrackingCFUIDs;
+typedef struct MLHandTrackingCFUIDs MLHandTrackingCFUIDs;
 ```
 
 MLCoordinateFrameUIDs for the keypoints. 
@@ -166,8 +168,9 @@ See [MLHandTrackingKeyPoint](/api-ref/api/Modules/group___hand_tracking/group___
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -177,7 +180,7 @@ See [MLHandTrackingKeyPoint](/api-ref/api/Modules/group___hand_tracking/group___
 ### MLHandTrackingStaticData {#struct-mlhandtrackingstaticdata}
 
 ```cpp
-typedef struct MLHandTrackingStaticData  MLHandTrackingStaticData;
+typedef struct MLHandTrackingStaticData MLHandTrackingStaticData;
 ```
 
 Static information about a hand tracker. 
@@ -189,8 +192,9 @@ This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -200,7 +204,7 @@ This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/
 ### MLHandTrackingHandState {#struct-mlhandtrackinghandstate}
 
 ```cpp
-typedef struct MLHandTrackingHandState  MLHandTrackingHandState;
+typedef struct MLHandTrackingHandState MLHandTrackingHandState;
 ```
 
 State of a single hand. 
@@ -210,8 +214,9 @@ State of a single hand.
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -221,7 +226,7 @@ State of a single hand.
 ### MLHandTrackingData {#struct-mlhandtrackingdata}
 
 ```cpp
-typedef struct MLHandTrackingData  MLHandTrackingData;
+typedef struct MLHandTrackingData MLHandTrackingData;
 ```
 
 Data which is received when querying hand tracker from [MLHandTrackingGetData()](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#mlresult-mlhandtrackinggetdata). 
@@ -233,8 +238,9 @@ This structure must be initialized by calling [MLHandTrackingDataInit()](/api-re
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_data.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -262,8 +268,9 @@ Initializes default values for [MLHandTrackingStaticData](/api-ref/api/Modules/g
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -288,8 +295,9 @@ Initializes values for [MLHandTrackingData](/api-ref/api/Modules/group___hand_tr
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -397,8 +405,9 @@ Queries the state of the hand tracker.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -440,8 +449,9 @@ See [MLHandTrackingStaticData](/api-ref/api/Modules/group___hand_tracking/struct
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

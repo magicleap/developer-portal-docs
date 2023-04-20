@@ -16,12 +16,12 @@ title: NativeBindings
 
 ## Public Methods
 
-### bool TryGetFingerAngles {#bool-trygetfingerangles}
+### bool TryGetHandPosture {#bool-trygethandposture}
 
 ```csharp
-public static bool TryGetFingerAngles(
+public static bool TryGetHandPosture(
     InputDevice handDevice,
-    out FingerAngleDeg allFingerAngles
+    out PostureType Posture
 )
 ```
 
@@ -31,7 +31,31 @@ public static bool TryGetFingerAngles(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out [FingerAngleDeg](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
+| out PostureType |Posture||
+
+
+
+
+
+
+-----------
+
+### bool TryGetHandKeyPose {#bool-trygethandkeypose}
+
+```csharp
+public static bool TryGetHandKeyPose(
+    InputDevice handDevice,
+    out KeyPoseType KeyPose
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputDevice |handDevice||
+| out KeyPoseType |KeyPose||
 
 
 
@@ -66,12 +90,12 @@ public static bool TryGetFingerState(
 
 -----------
 
-### bool TryGetHandKeyPose {#bool-trygethandkeypose}
+### bool TryGetFingerAngles {#bool-trygetfingerangles}
 
 ```csharp
-public static bool TryGetHandKeyPose(
+public static bool TryGetFingerAngles(
     InputDevice handDevice,
-    out KeyPoseType KeyPose
+    out FingerAngleDeg allFingerAngles
 )
 ```
 
@@ -81,31 +105,7 @@ public static bool TryGetHandKeyPose(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out KeyPoseType |KeyPose||
-
-
-
-
-
-
------------
-
-### bool TryGetHandPosture {#bool-trygethandposture}
-
-```csharp
-public static bool TryGetHandPosture(
-    InputDevice handDevice,
-    out PostureType Posture
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| InputDevice |handDevice||
-| out PostureType |Posture||
+| out [FingerAngleDeg](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
 
 
 

@@ -32,7 +32,7 @@ uint32_t track_id;
 ```
 
 
-Holds valid track id only for track specific errors (returned via on_track_error callback.). Holds 0 for the generic errors (returned via on_error callback). Refer to [MLMediaRecorderError](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enum-mlmediarecordererror) for the errors. 
+Holds valid track id only for track specific errors (returned via on_track_error callback). Holds 0 for the generic errors (returned via on_error callback). Refer to MLMediaRecorderError for the errors. 
 
 
 
@@ -53,7 +53,7 @@ MLMediaRecorderError error;
 | [MLMediaRecorderError](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordererror) | Video recorder error types.  |
 
 
-The error of MLMediaRecorderError 
+The error of MLMediaRecorderError. 
 
 
 
@@ -68,7 +68,7 @@ int extra;
 ```
 
 
-The extra info 
+The extra info. 
 
 
 

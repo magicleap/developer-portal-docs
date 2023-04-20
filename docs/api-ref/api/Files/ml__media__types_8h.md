@@ -25,7 +25,7 @@ title: ml_media_types.h
 ### MLPSSHEntry {#struct-mlpsshentry}
 
 ```cpp
-typedef struct MLPSSHEntry  MLPSSHEntry;
+typedef struct MLPSSHEntry MLPSSHEntry;
 ```
 
 

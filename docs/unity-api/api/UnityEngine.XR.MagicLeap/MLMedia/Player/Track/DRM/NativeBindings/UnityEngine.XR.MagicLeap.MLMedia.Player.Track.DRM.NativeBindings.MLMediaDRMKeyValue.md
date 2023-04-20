@@ -17,28 +17,6 @@ Data type containing {key, value} pair.
 
 ## Public Methods
 
-###  MLMediaDRMKeyValue {#functions-mlmediadrmkeyvalue}
-
-```csharp
-public MLMediaDRMKeyValue(
-    KeyValuePair< string, string > pair
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| KeyValuePair&lt; string, string &gt; |pair||
-
-
-
-
-
-
------------
-
 ### KeyValuePair&lt; string, string &gt; string {#keyvaluepair-string,-string-string}
 
 ```csharp
@@ -63,15 +41,37 @@ public KeyValuePair< string, string > string(
 
 -----------
 
+###  MLMediaDRMKeyValue {#functions-mlmediadrmkeyvalue}
+
+```csharp
+public MLMediaDRMKeyValue(
+    KeyValuePair< string, string > pair
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| KeyValuePair&lt; string, string &gt; |pair||
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### Key {#readonly-string-key}
+### Value {#readonly-string-value}
 
-[Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md). 
+Value. 
 
 ```csharp
 
-public readonly string Key;
+public readonly string Value;
 
 ```
 
@@ -97,13 +97,13 @@ public KeyValuePair< string, string > KeyValue => new KeyValuePair<string;
 
 -----------
 
-### Value {#readonly-string-value}
+### Key {#readonly-string-key}
 
-Value. 
+[Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md). 
 
 ```csharp
 
-public readonly string Value;
+public readonly string Key;
 
 ```
 

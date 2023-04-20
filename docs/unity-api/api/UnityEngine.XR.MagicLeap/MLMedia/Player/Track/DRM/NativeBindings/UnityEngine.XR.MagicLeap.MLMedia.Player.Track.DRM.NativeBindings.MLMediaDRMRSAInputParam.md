@@ -17,13 +17,13 @@ Data type that encapsulates algorithm, wrapped&#95;key for RSA operation.
 
 ## Public Attributes
 
-### Algorithm {#string-algorithm}
+### WrappedRsaKey {#intptr-wrappedrsakey}
 
-The MAC algorithm used for padding/signing. "HmacSHA256" is the only supported algorithm now. 
+The wrapped RSA key to be used. 
 
 ```csharp
 
-public string Algorithm;
+public IntPtr WrappedRsaKey;
 
 ```
 
@@ -34,13 +34,13 @@ public string Algorithm;
 
 -----------
 
-### WrappedRsaKey {#intptr-wrappedrsakey}
+### Algorithm {#string-algorithm}
 
-The wrapped RSA key to be used. 
+The MAC algorithm used for padding/signing. "HmacSHA256" is the only supported algorithm now. 
 
 ```csharp
 
-public IntPtr WrappedRsaKey;
+public string Algorithm;
 
 ```
 

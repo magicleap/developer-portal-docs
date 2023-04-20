@@ -19,27 +19,12 @@ title: SettingsIntentsLauncher
 
 ## Public Methods
 
-### void LaunchSystemARCloudSettings {#void-launchsystemarcloudsettings}
+### void LaunchSystemVoiceInputSettings {#void-launchsystemvoiceinputsettings}
 
-Utility function to launch the Magic Leap System Settings application and navigate to the AR Cloud page. This uses the Android Intents API to invoke the proper application intent. 
-
-```csharp
-public static void LaunchSystemARCloudSettings()
-```
-
-
-
-
-
-
------------
-
-### void LaunchSystemDisplaySettings {#void-launchsystemdisplaysettings}
-
-Utility function to launch the Magic Leap System Settings application and navigate to the display page. This uses the Android Intents API to invoke the proper application intent. 
+Utility function to launch the Magic Leap System Settings application and navigate to the voice input page. This uses the Android Intents API to invoke the proper application intent. 
 
 ```csharp
-public static void LaunchSystemDisplaySettings()
+public static void LaunchSystemVoiceInputSettings()
 ```
 
 
@@ -73,12 +58,27 @@ public static void LaunchSystemSettings(
 
 -----------
 
-### void LaunchSystemVoiceInputSettings {#void-launchsystemvoiceinputsettings}
+### void LaunchSystemDisplaySettings {#void-launchsystemdisplaysettings}
 
-Utility function to launch the Magic Leap System Settings application and navigate to the voice input page. This uses the Android Intents API to invoke the proper application intent. 
+Utility function to launch the Magic Leap System Settings application and navigate to the display page. This uses the Android Intents API to invoke the proper application intent. 
 
 ```csharp
-public static void LaunchSystemVoiceInputSettings()
+public static void LaunchSystemDisplaySettings()
+```
+
+
+
+
+
+
+-----------
+
+### void LaunchSystemARCloudSettings {#void-launchsystemarcloudsettings}
+
+Utility function to launch the Magic Leap System Settings application and navigate to the AR Cloud page. This uses the Android Intents API to invoke the proper application intent. 
+
+```csharp
+public static void LaunchSystemARCloudSettings()
 ```
 
 

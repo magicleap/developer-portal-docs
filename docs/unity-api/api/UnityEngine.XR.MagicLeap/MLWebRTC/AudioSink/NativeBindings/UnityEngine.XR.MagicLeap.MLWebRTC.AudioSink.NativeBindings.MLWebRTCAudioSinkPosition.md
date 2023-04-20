@@ -16,19 +16,6 @@ title: MLWebRTCAudioSinkPosition
 
 ## Public Methods
 
-### void FreeUnmanagedMemory {#void-freeunmanagedmemory}
-
-```csharp
-public void FreeUnmanagedMemory()
-```
-
-
-
-
-
-
------------
-
 ### void Update {#void-update}
 
 ```csharp
@@ -45,6 +32,19 @@ public void Update(
 |--|--|--|
 | Vector3 |position||
 | int |channel||
+
+
+
+
+
+
+-----------
+
+### void FreeUnmanagedMemory {#void-freeunmanagedmemory}
+
+```csharp
+public void FreeUnmanagedMemory()
+```
 
 
 

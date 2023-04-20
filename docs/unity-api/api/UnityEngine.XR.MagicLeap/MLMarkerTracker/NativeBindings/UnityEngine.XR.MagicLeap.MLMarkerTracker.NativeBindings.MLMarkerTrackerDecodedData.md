@@ -32,13 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### Data {#readonly-intptr-data}
+### Size {#readonly-uint-size}
 
-Data field contents depends on the selected detector. The Data's Type field indicates which structure this actually contains. 
+Length of the decoded data. 
 
 ```csharp
 
-public readonly IntPtr Data;
+public readonly uint Size;
 
 ```
 
@@ -49,13 +49,13 @@ public readonly IntPtr Data;
 
 -----------
 
-### Size {#readonly-uint-size}
+### Data {#readonly-intptr-data}
 
-Length of the decoded data. 
+Data field contents depends on the selected detector. The Data's Type field indicates which structure this actually contains. 
 
 ```csharp
 
-public readonly uint Size;
+public readonly IntPtr Data;
 
 ```
 

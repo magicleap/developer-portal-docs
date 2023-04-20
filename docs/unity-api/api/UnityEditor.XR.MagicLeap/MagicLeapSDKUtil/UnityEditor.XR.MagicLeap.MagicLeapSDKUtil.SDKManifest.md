@@ -16,26 +16,11 @@ title: SDKManifest
 
 ## Public Attributes
 
-### label {#string-label}
+### version {#string-version}
 
 ```csharp
 
-public string label = null;
-
-```
-
-
-
-
-
-
------------
-
-### mldb {#string-mldb}
-
-```csharp
-
-public string mldb = null;
+public string version = null;
 
 ```
 
@@ -61,11 +46,26 @@ public string schemaVersion = null;
 
 -----------
 
-### version {#string-version}
+### mldb {#string-mldb}
 
 ```csharp
 
-public string version = null;
+public string mldb = null;
+
+```
+
+
+
+
+
+
+-----------
+
+### label {#string-label}
+
+```csharp
+
+public string label = null;
 
 ```
 

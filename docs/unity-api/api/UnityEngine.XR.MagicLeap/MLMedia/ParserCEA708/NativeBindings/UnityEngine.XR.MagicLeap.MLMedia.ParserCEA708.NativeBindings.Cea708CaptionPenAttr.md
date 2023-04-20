@@ -17,13 +17,13 @@ CEA708 Caption Pen Attributes.  MLCea708CaptionPenAttr  from  ml&#95;media&#95;c
 
 ## Public Attributes
 
-### EdgeType {#int-edgetype}
+### Underline {#bool-underline}
 
-Edge type. 
+Underline setting. 
 
 ```csharp
 
-public int EdgeType;
+public bool Underline;
 
 ```
 
@@ -34,53 +34,16 @@ public int EdgeType;
 
 -----------
 
-### FontTag {#int-fonttag}
+### TextTag {#int-texttag}
 
-Font tag. 
-
-```csharp
-
-public int FontTag;
-
-```
-
-
-
-
-
-
------------
-
-### Italic {#bool-italic}
-
-Italic setting. 
+Text tag. 
 
 ```csharp
 
-public bool Italic;
+public int TextTag;
 
 ```
 
-
-
-
-
-
------------
-
-### PenOffset {#cea708captionpenoffset-penoffset}
-
-Pen offset. 
-
-```csharp
-
-public Cea708CaptionPenOffset PenOffset;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [Cea708CaptionPenOffset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpenoffset) | CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 
@@ -108,13 +71,33 @@ public Cea708CaptionPenSize PenSize;
 
 -----------
 
-### TextTag {#int-texttag}
+### PenOffset {#cea708captionpenoffset-penoffset}
 
-Text tag. 
+Pen offset. 
 
 ```csharp
 
-public int TextTag;
+public Cea708CaptionPenOffset PenOffset;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [Cea708CaptionPenOffset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpenoffset) | CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+
+
+
+
+
+-----------
+
+### Italic {#bool-italic}
+
+Italic setting. 
+
+```csharp
+
+public bool Italic;
 
 ```
 
@@ -125,13 +108,30 @@ public int TextTag;
 
 -----------
 
-### Underline {#bool-underline}
+### FontTag {#int-fonttag}
 
-Underline setting. 
+Font tag. 
 
 ```csharp
 
-public bool Underline;
+public int FontTag;
+
+```
+
+
+
+
+
+
+-----------
+
+### EdgeType {#int-edgetype}
+
+Edge type. 
+
+```csharp
+
+public int EdgeType;
 
 ```
 

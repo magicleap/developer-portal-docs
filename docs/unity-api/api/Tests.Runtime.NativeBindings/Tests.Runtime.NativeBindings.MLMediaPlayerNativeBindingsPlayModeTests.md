@@ -21,10 +21,10 @@ Inherits from: <br></br>[NativeBindingsPlayTests](/unity-api/api/Tests.Runtime.N
 
 ## Public Methods
 
-### void NativeBinding_MLUnityQueueMediaPlayerResetAndDestroy_Exists {#void-nativebinding-mlunityqueuemediaplayerresetanddestroy-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_MLUnityQueueMediaPlayerResetAndDestroy_Exists()
+public void SetupNativeBindings()
 ```
 
 
@@ -34,10 +34,10 @@ public void NativeBinding_MLUnityQueueMediaPlayerResetAndDestroy_Exists()
 
 -----------
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLUnityQueueMediaPlayerResetAndDestroy_Exists {#void-nativebinding-mlunityqueuemediaplayerresetanddestroy-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_MLUnityQueueMediaPlayerResetAndDestroy_Exists()
 ```
 
 

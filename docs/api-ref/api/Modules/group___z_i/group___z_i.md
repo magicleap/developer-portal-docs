@@ -47,14 +47,17 @@ APIs for the Zero Iteration on Host OS Platforms.
 
 
 
-**Shared Object:**
-  * zi.magicleap 
+**Shared Object:
+ zi.magicleap**
+  * 
 
-**Shared Object:**
-  * graphics.magicleap 
+**Shared Object:
+ graphics.magicleap**
+  * 
 
-**Shared Object:**
-  * zi.magicleap 
+**Shared Object:
+ zi.magicleap**
+  * 
 
 
 
@@ -96,8 +99,9 @@ Checks to see if the Zero Iteration server is running and configured properly to
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -137,8 +141,9 @@ A label must be set before the program calls one of the MLGraphicsCreate() funct
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -244,8 +249,9 @@ Start the ZI permissions system. This must be called before other permissions ca
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -275,8 +281,9 @@ Stop the ZI permission system. Call to clean up the ZI permission system at appl
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -318,8 +325,9 @@ Asks if the application has the given permission granted.
 **See**: [https://developer.android.com/training/permissions/requesting](https://developer.android.com/training/permissions/requesting)
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -359,8 +367,9 @@ Request the given permission (blocking if pending until user either allows or de
 **See**: [https://developer.android.com/training/permissions/requesting](https://developer.android.com/training/permissions/requesting)
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

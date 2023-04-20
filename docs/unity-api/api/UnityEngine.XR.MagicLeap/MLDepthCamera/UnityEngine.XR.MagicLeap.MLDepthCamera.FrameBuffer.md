@@ -50,47 +50,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### BytesPerUnit {#uint-bytesperunit}
+### Width {#uint-width}
 
-Number of bytes used to represent a single value. 
-
-```csharp
-
-public uint BytesPerUnit;
-
-```
-
-
-
-
-
-
------------
-
-### Data {#byte-data}
-
-Buffer data. 
+Width of the buffer in pixels. 
 
 ```csharp
 
-public byte [] Data;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Height of the buffer in pixels. 
-
-```csharp
-
-public uint Height;
+public uint Width;
 
 ```
 
@@ -118,13 +84,47 @@ public uint Stride;
 
 -----------
 
-### Width {#uint-width}
+### Height {#uint-height}
 
-Width of the buffer in pixels. 
+Height of the buffer in pixels. 
 
 ```csharp
 
-public uint Width;
+public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### Data {#byte-data}
+
+Buffer data. 
+
+```csharp
+
+public byte [] Data;
+
+```
+
+
+
+
+
+
+-----------
+
+### BytesPerUnit {#uint-bytesperunit}
+
+Number of bytes used to represent a single value. 
+
+```csharp
+
+public uint BytesPerUnit;
 
 ```
 

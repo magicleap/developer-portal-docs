@@ -17,113 +17,19 @@ Class that represents a media stream object.
 
 ## Public Fields
 
-### ActiveAudioTrack {#mediastreamtrack-activeaudiotrack}
+### VideoTracks {#list-videotracks}
 
-Gets the active audio track. 
-
-```csharp
-
-public MediaStream.Track ActiveAudioTrack { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) | Struct that represents a media stream track object.  |
-
-
-
-
-
------------
-
-### ActiveVideoTrack {#mediastreamtrack-activevideotrack}
-
-Gets the active video track. 
+Gets all video tracks. 
 
 ```csharp
 
-public MediaStream.Track ActiveVideoTrack { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) | Struct that represents a media stream track object.  |
-
-
-
-
-
------------
-
-### AudioTracks {#list-audiotracks}
-
-Gets all audio tracks. 
-
-```csharp
-
-public List< MediaStream.Track > AudioTracks { get; set; }
+public List< MediaStream.Track > VideoTracks { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
 | List&lt; [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) &gt; | Struct that represents a media stream track object.  |
-
-
-
-
-
------------
-
-### Id {#string-id}
-
-Gets the id of this media stream. 
-
-```csharp
-
-public string Id = new HashSet<PeerConnection>() { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### IsLocal {#bool-islocal}
-
-Gets a value indicating whether the media stream is local or not. 
-
-```csharp
-
-public bool IsLocal { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### ParentConnections {#hashset-parentconnections}
-
-Gets the connections associated with this media stream. Remote media streams will have just 1 connection, while local streams can have more than one, depending on the app setup. 
-
-```csharp
-
-public HashSet< MLWebRTC.PeerConnection > ParentConnections { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| HashSet&lt; [MLWebRTC.PeerConnection](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md) &gt; | Class that represents a connection used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.  |
 
 
 
@@ -151,13 +57,67 @@ public List< MediaStream.Track > Tracks { get; set; }
 
 -----------
 
-### VideoTracks {#list-videotracks}
+### ParentConnections {#hashset-parentconnections}
 
-Gets all video tracks. 
+Gets the connections associated with this media stream. Remote media streams will have just 1 connection, while local streams can have more than one, depending on the app setup. 
 
 ```csharp
 
-public List< MediaStream.Track > VideoTracks { get; set; }
+public HashSet< MLWebRTC.PeerConnection > ParentConnections { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| HashSet&lt; [MLWebRTC.PeerConnection](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md) &gt; | Class that represents a connection used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.  |
+
+
+
+
+
+-----------
+
+### IsLocal {#bool-islocal}
+
+Gets a value indicating whether the media stream is local or not. 
+
+```csharp
+
+public bool IsLocal { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### Id {#string-id}
+
+Gets the id of this media stream. 
+
+```csharp
+
+public string Id = new HashSet<PeerConnection>() { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### AudioTracks {#list-audiotracks}
+
+Gets all audio tracks. 
+
+```csharp
+
+public List< MediaStream.Track > AudioTracks { get; set; }
 
 ```
 
@@ -171,14 +131,102 @@ public List< MediaStream.Track > VideoTracks { get; set; }
 
 -----------
 
-## Public Methods
+### ActiveVideoTrack {#mediastreamtrack-activevideotrack}
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AddLocalTrack {#mlresult-addlocaltrack}
-
-Adds a local track to the media stream. 
+Gets the active video track. 
 
 ```csharp
-public MLResult AddLocalTrack(
+
+public MediaStream.Track ActiveVideoTrack { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) | Struct that represents a media stream track object.  |
+
+
+
+
+
+-----------
+
+### ActiveAudioTrack {#mediastreamtrack-activeaudiotrack}
+
+Gets the active audio track. 
+
+```csharp
+
+public MediaStream.Track ActiveAudioTrack { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) | Struct that represents a media stream track object.  |
+
+
+
+
+
+-----------
+
+## Public Methods
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) UnSelectTrack {#mlresult-unselecttrack}
+
+Sets the given track to longer be the active track of it's kind and disables. 
+
+```csharp
+public MLResult UnSelectTrack(
+    MediaStream.Track track
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) |track|The track to make inactive.|
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SelectTrack {#mlresult-selecttrack}
+
+Sets the given track as the active track of it's kind and enables it. 
+
+```csharp
+public MLResult SelectTrack(
+    MediaStream.Track track
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) |track|The track to make active.|
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) RemoveLocalTrack {#mlresult-removelocaltrack}
+
+Removes a local track from the media stream. 
+
+```csharp
+public MLResult RemoveLocalTrack(
     MLWebRTC.MediaStream.Track track
 )
 ```
@@ -202,13 +250,32 @@ public MLResult AddLocalTrack(
 
 -----------
 
-### [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) Create {#mediastream-create}
+### void DestroyLocal {#void-destroylocal}
 
-Creates an initialized local [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object. 
+Destroys this stream and it's associated tracks. 
 
 ```csharp
-public static MediaStream Create(
-    string id
+public void DestroyLocal()
+```
+
+
+
+
+
+
+-----------
+
+### [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) CreateWithBuiltInTracks {#mediastream-createwithbuiltintracks}
+
+Creates an initialized local [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object and it's tracks with the given video type. Recommended to use [CreateWithAppDefinedVideoTrack()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md#mediastream-createwithappdefinedvideotrack) in production, with sample video sources provided as [MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md) and MLMRCameraVideoSource in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over various error cases and handle special cases like app pause/resume and device standby/reality/active. 
+
+```csharp
+public static MediaStream CreateWithBuiltInTracks(
+    string id,
+    Track.VideoType videoType,
+    Track.AudioType audioType,
+    string videoTrackId ="",
+    string audioTrackId =""
 )
 ```
 
@@ -217,7 +284,11 @@ public static MediaStream Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |id|The id to give the media stream.|
+| string |connection|Connection to use.|
+| [Track.VideoType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-videotype) |id|The id to give the media stream.|
+| [Track.AudioType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-audiotype) |videoType|The type of video to use.|
+| string |videoTrackId||
+| string |audioTrackId||
 
 
 
@@ -266,17 +337,13 @@ public static MediaStream CreateWithAppDefinedVideoTrack(
 
 -----------
 
-### [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) CreateWithBuiltInTracks {#mediastream-createwithbuiltintracks}
+### [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) Create {#mediastream-create}
 
-Creates an initialized local [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object and it's tracks with the given video type. Recommended to use [CreateWithAppDefinedVideoTrack()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md#mediastream-createwithappdefinedvideotrack) in production, with sample video sources provided as [MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md) and MLMRCameraVideoSource in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over various error cases and handle special cases like app pause/resume and device standby/reality/active. 
+Creates an initialized local [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object. 
 
 ```csharp
-public static MediaStream CreateWithBuiltInTracks(
-    string id,
-    Track.VideoType videoType,
-    Track.AudioType audioType,
-    string videoTrackId ="",
-    string audioTrackId =""
+public static MediaStream Create(
+    string id
 )
 ```
 
@@ -285,11 +352,7 @@ public static MediaStream CreateWithBuiltInTracks(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |connection|Connection to use.|
-| [Track.VideoType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-videotype) |id|The id to give the media stream.|
-| [Track.AudioType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-audiotype) |videoType|The type of video to use.|
-| string |videoTrackId||
-| string |audioTrackId||
+| string |id|The id to give the media stream.|
 
 
 
@@ -302,27 +365,12 @@ public static MediaStream CreateWithBuiltInTracks(
 
 -----------
 
-### void DestroyLocal {#void-destroylocal}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AddLocalTrack {#mlresult-addlocaltrack}
 
-Destroys this stream and it's associated tracks. 
-
-```csharp
-public void DestroyLocal()
-```
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) RemoveLocalTrack {#mlresult-removelocaltrack}
-
-Removes a local track from the media stream. 
+Adds a local track to the media stream. 
 
 ```csharp
-public MLResult RemoveLocalTrack(
+public MLResult AddLocalTrack(
     MLWebRTC.MediaStream.Track track
 )
 ```
@@ -341,54 +389,6 @@ public MLResult RemoveLocalTrack(
 
 
 **Returns**: 
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SelectTrack {#mlresult-selecttrack}
-
-Sets the given track as the active track of it's kind and enables it. 
-
-```csharp
-public MLResult SelectTrack(
-    MediaStream.Track track
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) |track|The track to make active.|
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) UnSelectTrack {#mlresult-unselecttrack}
-
-Sets the given track to longer be the active track of it's kind and disables. 
-
-```csharp
-public MLResult UnSelectTrack(
-    MediaStream.Track track
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) |track|The track to make inactive.|
-
-
-
 
 
 

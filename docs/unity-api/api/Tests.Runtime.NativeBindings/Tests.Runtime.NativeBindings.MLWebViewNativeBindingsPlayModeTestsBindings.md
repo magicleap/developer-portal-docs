@@ -21,10 +21,10 @@ Inherits from: <br></br>[NativeBindingsPlayTests](/unity-api/api/Tests.Runtime.N
 
 ## Public Methods
 
-### void NativeBinding_GetAppContext_Exists {#void-nativebinding-getappcontext-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_GetAppContext_Exists()
+public void SetupNativeBindings()
 ```
 
 
@@ -47,10 +47,10 @@ public void NativeBinding_GetJavaVM_Exists()
 
 -----------
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_GetAppContext_Exists {#void-nativebinding-getappcontext-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_GetAppContext_Exists()
 ```
 
 

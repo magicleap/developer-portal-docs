@@ -60,7 +60,7 @@ namespace UnityEditor.XR.MagicLeap
             {
                 var ziRuntime = MagicLeapSDKUtil.AppSimRuntimePath;
 #if UNITY_EDITOR_WIN
-                ziRuntime = ziRuntime.Replace("/", "\\");
+                ziRuntime = ziRuntime.Replace("/", "\");
 #endif
                 if (string.IsNullOrEmpty(ziRuntime))
                 {
@@ -97,7 +97,9 @@ namespace UnityEditor.XR.MagicLeap
                     return;
                 }
 
-                libSearchPaths = new List<string>(output.Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries));
+                libSearchPaths = new List<string>(output.Split(new string[] { "
+", "
+" }, StringSplitOptions.RemoveEmptyEntries));
                 SessionState.SetString(SessionStateKey, string.Join(Path.PathSeparator, libSearchPaths));
                 discoveryProc.WaitForExit();
             }

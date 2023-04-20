@@ -88,7 +88,7 @@ Number of acquired buffers to be requested in functions [MLNativeSurfaceCreate](
 | MLNativeSurfacePixelFormat_Transparent |  -2| Transparent format. |
 | MLNativeSurfacePixelFormat_Opaque |  -1| Opaque format. |
 | MLNativeSurfacePixelFormat_None |  0| None. |
-| MLNativeSurfacePixelFormat_Rgba8888 |  1| 4x8-bit RGBA format. |
+| MLNativeSurfacePixelFormat_Rgba8888 |  1| Below enums should match android_pixel_format_t in graphics-base-v1.0.h header.4x8-bit RGBA format. |
 | MLNativeSurfacePixelFormat_Rgbx8888 |  2| 4x8-bit RGBX format. |
 | MLNativeSurfacePixelFormat_Rgb888 |  3| 3x8-bit RGB format. |
 | MLNativeSurfacePixelFormat_Rgb565 |  4| 16-bit RGB format. |
@@ -122,8 +122,9 @@ Graphic backend to use.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -136,7 +137,7 @@ Graphic backend to use.
 ### MLNativeSurfaceFrameAvailableInfo {#struct-mlnativesurfaceframeavailableinfo}
 
 ```cpp
-typedef struct MLNativeSurfaceFrameAvailableInfo  MLNativeSurfaceFrameAvailableInfo;
+typedef struct MLNativeSurfaceFrameAvailableInfo MLNativeSurfaceFrameAvailableInfo;
 ```
 
 NativeSurface/NativeSurfaceTexture Output Frame Availability information. 
@@ -146,8 +147,9 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -157,7 +159,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 ### MLNativeSurfaceConfig {#struct-mlnativesurfaceconfig}
 
 ```cpp
-typedef struct MLNativeSurfaceConfig  MLNativeSurfaceConfig;
+typedef struct MLNativeSurfaceConfig MLNativeSurfaceConfig;
 ```
 
 Configuration values for creating the Native Surface. 
@@ -167,8 +169,9 @@ Configuration values for creating the Native Surface.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -178,7 +181,7 @@ Configuration values for creating the Native Surface.
 ### MLNativeSurfaceOnFrameAvailableCallback {#struct-mlnativesurfaceonframeavailablecallback}
 
 ```cpp
-typedef struct MLNativeSurfaceOnFrameAvailableCallback  MLNativeSurfaceOnFrameAvailableCallback;
+typedef struct MLNativeSurfaceOnFrameAvailableCallback MLNativeSurfaceOnFrameAvailableCallback;
 ```
 
 Callbacks for notifying when an output frame is available for consumption. 
@@ -188,8 +191,9 @@ Callbacks for notifying when an output frame is available for consumption.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -277,8 +281,9 @@ The NativeSurface created through this API should be released using MLNativeSurf
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -316,8 +321,9 @@ Release a NativeSurface.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -342,9 +348,9 @@ Gets an implementation of NativeWindow that feeds graphic buffers into MLNativeS
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. This handle can be:
 
-* Surface created on an Encoder using [MLMediaCodecCreateInputSurface](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface)
-* The output surface created using [MLNativeSurfaceCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate)
-* The output surface created using [MLNativeSurfaceTextureCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate)|
+* Surface created on an Encoder using [MLMediaCodecCreateInputSurface](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface).
+* The output surface created using [MLNativeSurfaceCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate).
+* The output surface created using [MLNativeSurfaceTextureCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate). |
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_native_window|Native window as MLHandle on success. |
 | int32_t * |out_format|Native window format on success and for valid pointer, which will be used as EGL_NATIVE_VISUAL_ID.|
 
@@ -365,8 +371,9 @@ This function returns the platform-dependent native window typically used by Gra
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -447,8 +454,9 @@ Note: The returned buffer's color format is multi-planar YUV420. Since our under
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -497,8 +505,9 @@ The AHardwareBuffer* can be used with the Vulkan extension VK_ANDROID_external_m
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -538,8 +547,9 @@ Release a native buffer previously acquired.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -583,8 +593,9 @@ The matrix is stored in column-major order.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -622,8 +633,9 @@ Retrieves the timestamp associated with the last acquired frame. The timestamp i
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -661,8 +673,9 @@ Retrieves the QueueBuffer timestamp associated with the last acquired Frame This
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -700,8 +713,9 @@ Retrieves the last acquired frame number. The frame number is an incrementing co
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -730,7 +744,7 @@ Retrieves the cropping rectangle of the current frame/buffer.
   * None 
 
 
-The Frame crop is returned as {left, bottom, width, height}
+The Frame crop is returned as {left, bottom, width, height}.
 
 
 
@@ -741,8 +755,9 @@ The Frame crop is returned as {left, bottom, width, height}
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -784,8 +799,9 @@ Set callback to notify client when a frame is available.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -828,8 +844,9 @@ Create a new NativeSurfaceTexture.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -867,8 +884,9 @@ Release a NativeSurfaceTexture.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -903,13 +921,14 @@ Update the texture image to the most recent frame from the image stream.
   * None 
 
 
-May only be called on the thread with the graphic context that contains the texture object
+May only be called on the thread with the graphic context that contains the texture object.
 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -949,8 +968,9 @@ Attach the NativeSurfaceTexture to the graphic context that is current on the ca
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -990,8 +1010,9 @@ If called on the thread with graphic context that contains the attached texture 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1031,8 +1052,9 @@ Retrieve the 4x4 texture coordinate transform matrix associated with the texture
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1072,8 +1094,9 @@ Retrieve the timestamp associated with the texture image set by the most recent 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1115,8 +1138,9 @@ Set callback to notify client when a frame is available.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1160,7 +1184,6 @@ typedef enum MLNativeSurfacePixelFormat {
   MLNativeSurfacePixelFormat_Transparent   = -2,
   MLNativeSurfacePixelFormat_Opaque        = -1,
   MLNativeSurfacePixelFormat_None          = 0,
-  /* Below enums should match android_pixel_format_t in graphics-base-v1.0.h header. */
   MLNativeSurfacePixelFormat_Rgba8888      = 1,
   MLNativeSurfacePixelFormat_Rgbx8888      = 2,
   MLNativeSurfacePixelFormat_Rgb888        = 3,
@@ -1211,8 +1234,6 @@ ML_STATIC_INLINE void MLNativeSurfaceOnFrameAvailableCallbackInit(MLNativeSurfac
   }
 }
 
-//                            MLNativeSurface APIs                                   //
-
 ML_API MLResult ML_CALL MLNativeSurfaceCreate(const MLNativeSurfaceConfig *config_values, MLHandle* out_handle);
 
 ML_API MLResult ML_CALL MLNativeSurfaceRelease(MLHandle handle);
@@ -1239,10 +1260,7 @@ ML_API MLResult ML_CALL MLNativeSurfaceGetFrameNumber(MLHandle handle, uint64_t 
 
 ML_API MLResult ML_CALL MLNativeSurfaceGetFrameCropRect(MLHandle handle, MLRecti *out_crop_rect);
 
-ML_API MLResult ML_CALL MLNativeSurfaceSetOnFrameAvailableCallback(MLHandle handle,
-    const MLNativeSurfaceOnFrameAvailableCallback *callback, void *user_data);
-
-//                        MLNativeSurfaceTexture APIs                                //
+ML_API MLResult ML_CALL MLNativeSurfaceSetOnFrameAvailableCallback(MLHandle handle, const MLNativeSurfaceOnFrameAvailableCallback *callback, void *user_data);
 
 typedef enum MLNativeSurfaceTextureBackend {
   MLNativeSurfaceTextureBackend_OpenGL = 0,

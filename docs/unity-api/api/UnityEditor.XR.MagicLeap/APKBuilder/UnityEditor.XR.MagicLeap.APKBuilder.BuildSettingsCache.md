@@ -16,10 +16,10 @@ title: BuildSettingsCache
 
 ## Public Methods
 
-###  BuildSettingsCache {#functions-buildsettingscache}
+### void RestoreSettings {#void-restoresettings}
 
 ```csharp
-public BuildSettingsCache()
+public void RestoreSettings()
 ```
 
 
@@ -29,10 +29,10 @@ public BuildSettingsCache()
 
 -----------
 
-### void RestoreSettings {#void-restoresettings}
+###  BuildSettingsCache {#functions-buildsettingscache}
 
 ```csharp
-public void RestoreSettings()
+public BuildSettingsCache()
 ```
 
 

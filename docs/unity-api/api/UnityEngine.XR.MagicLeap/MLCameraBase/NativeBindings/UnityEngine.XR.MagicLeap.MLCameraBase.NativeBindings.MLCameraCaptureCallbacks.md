@@ -38,19 +38,16 @@ public static MLCameraCaptureCallbacks Create()
 
 ## Public Attributes
 
-### OnCaptureAborted {#oncaptureaborteddelegate-oncaptureaborted}
+### Version {#uint-version}
 
-Callback is invoked when an ongoing video or preview capture or both are aborted due to an error. 
+version contains the version number for this structure. 
 
 ```csharp
 
-public OnCaptureAbortedDelegate OnCaptureAborted;
+public uint Version;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnCaptureAbortedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncaptureaborteddelegate) | Delegate to notify the app when a capture request is aborted.  |
 
 
 
@@ -58,53 +55,13 @@ public OnCaptureAbortedDelegate OnCaptureAborted;
 
 -----------
 
-### OnCaptureCompleted {#oncapturecompleteddelegate-oncapturecompleted}
+### OnVideoBufferAvailable {#onvideobufferavailabledelegate-onvideobufferavailable}
 
-Callback is invoked when capturing single frame is completed and result is available. 
-
-```csharp
-
-public OnCaptureCompletedDelegate OnCaptureCompleted;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OnCaptureCompletedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturecompleteddelegate) | Delegate to notify the app when a capture request is completed.  |
-
-
-
-
-
------------
-
-### OnCaptureFailed {#oncapturefaileddelegate-oncapturefailed}
-
-Callback is invoked when a capture has failed when the camera device failed to produce a capture result for the request. 
+Callback is invoked when a captured raw/compressed video frame buffer is available with #MLCameraCaptureType&#95;VideoRaw. 
 
 ```csharp
 
-public OnCaptureFailedDelegate OnCaptureFailed;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OnCaptureFailedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturefaileddelegate) | Delegate to notify the app when a capture request fails.  |
-
-
-
-
-
------------
-
-### OnImageBufferAvailable {#onimagebufferavailabledelegate-onimagebufferavailable}
-
-Callback is invoked when a captured image buffer is available with #MLCameraCaptureType&#95;ImageRaw. 
-
-```csharp
-
-public OnImageBufferAvailableDelegate OnImageBufferAvailable;
+public OnVideoBufferAvailableDelegate OnVideoBufferAvailable;
 
 ```
 
@@ -135,13 +92,13 @@ public OnPreviewBufferAvailableDelegate OnPreviewBufferAvailable;
 
 -----------
 
-### OnVideoBufferAvailable {#onvideobufferavailabledelegate-onvideobufferavailable}
+### OnImageBufferAvailable {#onimagebufferavailabledelegate-onimagebufferavailable}
 
-Callback is invoked when a captured raw/compressed video frame buffer is available with #MLCameraCaptureType&#95;VideoRaw. 
+Callback is invoked when a captured image buffer is available with #MLCameraCaptureType&#95;ImageRaw. 
 
 ```csharp
 
-public OnVideoBufferAvailableDelegate OnVideoBufferAvailable;
+public OnImageBufferAvailableDelegate OnImageBufferAvailable;
 
 ```
 
@@ -152,16 +109,59 @@ public OnVideoBufferAvailableDelegate OnVideoBufferAvailable;
 
 -----------
 
-### Version {#uint-version}
+### OnCaptureFailed {#oncapturefaileddelegate-oncapturefailed}
 
-version contains the version number for this structure. 
+Callback is invoked when a capture has failed when the camera device failed to produce a capture result for the request. 
 
 ```csharp
 
-public uint Version;
+public OnCaptureFailedDelegate OnCaptureFailed;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnCaptureFailedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturefaileddelegate) | Delegate to notify the app when a capture request fails.  |
+
+
+
+
+
+-----------
+
+### OnCaptureCompleted {#oncapturecompleteddelegate-oncapturecompleted}
+
+Callback is invoked when capturing single frame is completed and result is available. 
+
+```csharp
+
+public OnCaptureCompletedDelegate OnCaptureCompleted;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OnCaptureCompletedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturecompleteddelegate) | Delegate to notify the app when a capture request is completed.  |
+
+
+
+
+
+-----------
+
+### OnCaptureAborted {#oncaptureaborteddelegate-oncaptureaborted}
+
+Callback is invoked when an ongoing video or preview capture or both are aborted due to an error. 
+
+```csharp
+
+public OnCaptureAbortedDelegate OnCaptureAborted;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OnCaptureAbortedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncaptureaborteddelegate) | Delegate to notify the app when a capture request is aborted.  |
 
 
 

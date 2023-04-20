@@ -25,7 +25,7 @@ title: ml_coordinate_frame_uid.h
 ### MLCoordinateFrameUID {#struct-mlcoordinateframeuid}
 
 ```cpp
-typedef struct MLCoordinateFrameUID  MLCoordinateFrameUID;
+typedef struct MLCoordinateFrameUID MLCoordinateFrameUID;
 ```
 
 

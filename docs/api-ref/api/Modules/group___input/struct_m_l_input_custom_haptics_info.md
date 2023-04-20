@@ -37,8 +37,9 @@ A custom haptics pattern can be played by combining Buzz haptic command and/or a
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

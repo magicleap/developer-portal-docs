@@ -17,17 +17,17 @@ Data type containing array of {key, value} pair.
 
 ## Public Attributes
 
-### onEvent {#oneventdelegate-onevent}
+### onKeyStatusChange {#onkeystatuschangedelegate-onkeystatuschange}
 
 ```csharp
 
-public OnEventDelegate onEvent;
+public OnKeyStatusChangeDelegate onKeyStatusChange;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [OnEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-oneventdelegate) | Delegate for the any OnEvent event.  |
+| [OnKeyStatusChangeDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-onkeystatuschangedelegate) | Delegate for the any OnKeyStatusChange event.  |
 
 
 
@@ -53,17 +53,17 @@ public OnExpirationUpdateDelegate onExpirationUpdate;
 
 -----------
 
-### onKeyStatusChange {#onkeystatuschangedelegate-onkeystatuschange}
+### onEvent {#oneventdelegate-onevent}
 
 ```csharp
 
-public OnKeyStatusChangeDelegate onKeyStatusChange;
+public OnEventDelegate onEvent;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [OnKeyStatusChangeDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-onkeystatuschangedelegate) | Delegate for the any OnKeyStatusChange event.  |
+| [OnEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-oneventdelegate) | Delegate for the any OnEvent event.  |
 
 
 

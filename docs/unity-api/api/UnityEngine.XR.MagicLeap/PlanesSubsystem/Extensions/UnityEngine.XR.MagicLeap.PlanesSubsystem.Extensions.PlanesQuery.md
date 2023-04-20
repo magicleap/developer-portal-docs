@@ -16,64 +16,13 @@ title: PlanesQuery
 
 ## Public Attributes
 
-### BoundsCenter {#vector3-boundscenter}
+### MinPlaneArea {#float-minplanearea}
 
-The center of the bounding box which defines where planes extraction should occur. 
-
-```csharp
-
-public Vector3 BoundsCenter;
-
-```
-
-
-
-
-
-
------------
-
-### BoundsExtents {#vector3-boundsextents}
-
-The size of the bounding box where planes extraction will occur. 
+The minimum area (in squared meters) of planes to be returned. This value cannot be lower than 0.04 (lower values will be capped to this minimum). 
 
 ```csharp
 
-public Vector3 BoundsExtents;
-
-```
-
-
-
-
-
-
------------
-
-### BoundsRotation {#quaternion-boundsrotation}
-
-The rotation of the bounding box where planes extraction will occur. 
-
-```csharp
-
-public Quaternion BoundsRotation;
-
-```
-
-
-
-
-
-
------------
-
-### Flags {#planessubsystemextensionsmlplanesqueryflags-flags}
-
-The flags to apply to this query. 
-
-```csharp
-
-public PlanesSubsystem.Extensions.MLPlanesQueryFlags Flags;
+public float MinPlaneArea;
 
 ```
 
@@ -101,13 +50,64 @@ public uint MaxResults;
 
 -----------
 
-### MinPlaneArea {#float-minplanearea}
+### Flags {#planessubsystemextensionsmlplanesqueryflags-flags}
 
-The minimum area (in squared meters) of planes to be returned. This value cannot be lower than 0.04 (lower values will be capped to this minimum). 
+The flags to apply to this query. 
 
 ```csharp
 
-public float MinPlaneArea;
+public PlanesSubsystem.Extensions.MLPlanesQueryFlags Flags;
+
+```
+
+
+
+
+
+
+-----------
+
+### BoundsRotation {#quaternion-boundsrotation}
+
+The rotation of the bounding box where planes extraction will occur. 
+
+```csharp
+
+public Quaternion BoundsRotation;
+
+```
+
+
+
+
+
+
+-----------
+
+### BoundsExtents {#vector3-boundsextents}
+
+The size of the bounding box where planes extraction will occur. 
+
+```csharp
+
+public Vector3 BoundsExtents;
+
+```
+
+
+
+
+
+
+-----------
+
+### BoundsCenter {#vector3-boundscenter}
+
+The center of the bounding box which defines where planes extraction should occur. 
+
+```csharp
+
+public Vector3 BoundsCenter;
 
 ```
 

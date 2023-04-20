@@ -16,11 +16,20 @@ title: EyesActions
 
 ## Public Methods
 
-### void Disable {#void-disable}
+### implicit operator InputActionMap {#implicit-operator-inputactionmap}
 
 ```csharp
-public void Disable()
+public static implicit operator InputActionMap(
+    EyesActions set
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [EyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.EyesActions.md) |set||
 
 
 
@@ -29,10 +38,32 @@ public void Disable()
 
 -----------
 
-### void Enable {#void-enable}
+### void SetCallbacks {#void-setcallbacks}
 
 ```csharp
-public void Enable()
+public void SetCallbacks(
+    IEyesActions instance
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [IEyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IEyesActions.md) |instance||
+
+
+
+
+
+
+-----------
+
+### InputActionMap Get {#inputactionmap-get}
+
+```csharp
+public InputActionMap Get()
 ```
 
 
@@ -64,10 +95,10 @@ public EyesActions(
 
 -----------
 
-### InputActionMap Get {#inputactionmap-get}
+### void Enable {#void-enable}
 
 ```csharp
-public InputActionMap Get()
+public void Enable()
 ```
 
 
@@ -77,42 +108,11 @@ public InputActionMap Get()
 
 -----------
 
-### void SetCallbacks {#void-setcallbacks}
+### void Disable {#void-disable}
 
 ```csharp
-public void SetCallbacks(
-    IEyesActions instance
-)
+public void Disable()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [IEyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IEyesActions.md) |instance||
-
-
-
-
-
-
------------
-
-### implicit operator InputActionMap {#implicit-operator-inputactionmap}
-
-```csharp
-public static implicit operator InputActionMap(
-    EyesActions set
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [EyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.EyesActions.md) |set||
 
 
 
@@ -123,11 +123,11 @@ public static implicit operator InputActionMap(
 
 ## Public Attributes
 
-### Data {#inputaction-data}
+### enabled {#bool-enabled}
 
 ```csharp
 
-public InputAction Data => m_Wrapper.m_Eyes_Data;
+public bool enabled => Get().enabled;
 
 ```
 
@@ -138,11 +138,11 @@ public InputAction Data => m_Wrapper.m_Eyes_Data;
 
 -----------
 
-### enabled {#bool-enabled}
+### Data {#inputaction-data}
 
 ```csharp
 
-public bool enabled => Get().enabled;
+public InputAction Data => m_Wrapper.m_Eyes_Data;
 
 ```
 

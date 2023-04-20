@@ -54,8 +54,9 @@ Has a calibration occurred. If so, what was the granularity.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -68,7 +69,7 @@ Has a calibration occurred. If so, what was the granularity.
 ### MLEyeCalibrationState {#struct-mleyecalibrationstate}
 
 ```cpp
-typedef struct MLEyeCalibrationState  MLEyeCalibrationState;
+typedef struct MLEyeCalibrationState MLEyeCalibrationState;
 ```
 
 A struct representing the eye calibration state. 
@@ -78,8 +79,9 @@ A struct representing the eye calibration state.
 [More Info](/api-ref/api/Modules/group___eye_calibration/struct_m_l_eye_calibration_state.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -107,8 +109,9 @@ Initialize [MLEyeCalibrationState](/api-ref/api/Modules/group___eye_calibration/
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -146,8 +149,9 @@ Creates an eye calibration client.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -185,8 +189,9 @@ Destroys an eye calibration client.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -226,8 +231,9 @@ Gets information about the user's current eye calibration.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

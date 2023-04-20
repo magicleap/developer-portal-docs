@@ -19,43 +19,14 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### T [] ConvertArray< T > {#t-convertarray-t-}
+### delegate void OnVideoSizeChangedDelegate {#delegate-void-onvideosizechangeddelegate}
 
-Converts an unmanged array to a managed array of type T. 
-
-```csharp
-public static T [] ConvertArray< T >(
-    IntPtr arrayPtr,
-    ulong count
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| IntPtr |arrayPtr||
-| ulong |count||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerAddTimedTextSourceForFD {#mlresultcode-mlmediaplayeraddtimedtextsourceforfd}
-
-Add a timedtext source from a file descriptor. The file descriptor must be seekable. It is the caller's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. 
+Delegate for the OnVideoSizeChanged event 
 
 ```csharp
-public MLResult.Code MLMediaPlayerAddTimedTextSourceForFD(
+public delegate void OnVideoSizeChangedDelegate(
     ulong mediaPlayerHandle,
-    int Fd,
-    long Offset,
-    long Length,
-    string MimeType
+    ref MLMediaPlayerOnVideoSizeChangedInfo videoSizeInfo
 )
 ```
 
@@ -65,10 +36,7 @@ public MLResult.Code MLMediaPlayerAddTimedTextSourceForFD(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| int |Fd||
-| long |Offset||
-| long |Length||
-| string |MimeType||
+| ref [MLMediaPlayerOnVideoSizeChangedInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnVideoSizeChangedInfo.md) |videoSizeInfo|MediaPlayer Video Size Changed callback Info. |
 
 
 
@@ -77,15 +45,14 @@ public MLResult.Code MLMediaPlayerAddTimedTextSourceForFD(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerAddTimedTextSourceForURI {#mlresultcode-mlmediaplayeraddtimedtextsourceforuri}
+### delegate void OnTrackDRMInfoDelegate {#delegate-void-ontrackdrminfodelegate}
 
-Add a timedtext source from a URI. 
+Delegate for the OnTrackDRMInfo event 
 
 ```csharp
-public MLResult.Code MLMediaPlayerAddTimedTextSourceForURI(
+public delegate void OnTrackDRMInfoDelegate(
     ulong mediaPlayerHandle,
-    string Uri,
-    string MimeType
+    ref MLMediaPlayerOnTrackDRMInfo trackDrmInfo
 )
 ```
 
@@ -95,8 +62,7 @@ public MLResult.Code MLMediaPlayerAddTimedTextSourceForURI(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| string |Uri||
-| string |MimeType||
+| ref [MLMediaPlayerOnTrackDRMInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnTrackDRMInfo.md) |trackDrmInfo|MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) DRM Info callback Info. |
 
 
 
@@ -105,13 +71,15 @@ public MLResult.Code MLMediaPlayerAddTimedTextSourceForURI(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerCreate {#mlresultcode-mlmediaplayercreate}
+### delegate void OnTimedTextUpdateDelegate {#delegate-void-ontimedtextupdatedelegate}
 
-Create a new 
+Delegate for the OnTimedTextUpdate event. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerCreate(
-    out ulong handle
+public delegate void OnTimedTextUpdateDelegate(
+    ulong mediaPlayerHandle,
+    ulong timedTextHandle,
+    IntPtr data
 )
 ```
 
@@ -120,7 +88,9 @@ public MLResult.Code MLMediaPlayerCreate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out ulong |handle||
+| ulong |mediaPlayerHandle||
+| ulong |timedTextHandle||
+| IntPtr |data||
 
 
 
@@ -129,12 +99,328 @@ public MLResult.Code MLMediaPlayerCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerDestroy {#mlresultcode-mlmediaplayerdestroy}
+### void OnTimedTextUpdate {#void-ontimedtextupdate}
 
-Destroy a MediaPlayer object. 
+Callback for the OnTimedTextUpdate event. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerDestroy(
+public static void OnTimedTextUpdate(
+    ulong mediaPlayerHandle,
+    ulong timedTextHandle,
+    IntPtr data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ulong |timedTextHandle||
+| IntPtr |data||
+
+
+
+
+
+
+-----------
+
+### delegate void OnSeekCompleteDelegate {#delegate-void-onseekcompletedelegate}
+
+Delegate for the OnSeekComplete event 
+
+```csharp
+public delegate void OnSeekCompleteDelegate(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerOnSeekCompleteInfo seekCompleteInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerOnSeekCompleteInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnSeekCompleteInfo.md) |seekCompleteInfo|MediaPlayer Playback seek completion callback Info. |
+
+
+
+
+
+
+-----------
+
+### delegate void OnResetCompleteDelegate {#delegate-void-onresetcompletedelegate}
+
+Delegate for the OnResetComplete event 
+
+```csharp
+public delegate void OnResetCompleteDelegate(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerOnResetCompleteInfo resetCompleteInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerOnResetCompleteInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnResetCompleteInfo.md) |resetCompleteInfo|MediaPlayer reset completion callback Info. |
+
+
+
+
+
+
+-----------
+
+### delegate void OnPreparedDelegate {#delegate-void-onprepareddelegate}
+
+Delegate for the OnPrepared event 
+
+```csharp
+public delegate void OnPreparedDelegate(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerOnPreparedInfo preparedInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerOnPreparedInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnPreparedInfo.md) |preparedInfo|MediaPlayer Playback prepared callback Info. |
+
+
+
+
+
+
+-----------
+
+### delegate void OnMediaSubtitleUpdateDelegate {#delegate-void-onmediasubtitleupdatedelegate}
+
+Delegate for the OnMediaSubtitleUpdate event. 
+
+```csharp
+public delegate void OnMediaSubtitleUpdateDelegate(
+    ulong mediaPlayerHandle,
+    MLMediaPlayerSubtitleData subtitleData,
+    IntPtr data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| [MLMediaPlayerSubtitleData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerSubtitleData.md) |subtitleData|MediaPlayer subtitle data. |
+| IntPtr |data||
+
+
+
+
+
+
+-----------
+
+### void OnMediaSubtitleUpdate {#void-onmediasubtitleupdate}
+
+Callback for the OnMediaSubtitleUpdate event. 
+
+```csharp
+public static void OnMediaSubtitleUpdate(
+    ulong mediaPlayerHandle,
+    MLMediaPlayerSubtitleData subtitleData,
+    IntPtr data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| [MLMediaPlayerSubtitleData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerSubtitleData.md) |subtitleData|MediaPlayer subtitle data. |
+| IntPtr |data||
+
+
+
+
+
+
+-----------
+
+### delegate void OnInfoDelegate {#delegate-void-oninfodelegate}
+
+Delegate for the OnInfo event 
+
+```csharp
+public delegate void OnInfoDelegate(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerOnInfoInfo info
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerOnInfoInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnInfoInfo.md) |info|MediaPlayer Information callback Info. |
+
+
+
+
+
+
+-----------
+
+### delegate void OnFramePackingDelegate {#delegate-void-onframepackingdelegate}
+
+Delegate for the OnFramePacking event 
+
+```csharp
+public delegate void OnFramePackingDelegate(
+    ulong mediaPlayerHandle,
+    IntPtr framePackingInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |framePackingInfo||
+
+
+
+
+
+
+-----------
+
+### delegate void OnFrameAvailableDelegate {#delegate-void-onframeavailabledelegate}
+
+Delegate for the OnFrameAvailable event 
+
+```csharp
+public delegate void OnFrameAvailableDelegate(
+    ulong mediaPlayerHandle,
+    IntPtr Data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |Data||
+
+
+
+
+
+
+-----------
+
+### delegate void OnErrorDelegate {#delegate-void-onerrordelegate}
+
+Delegate for the OnError event 
+
+```csharp
+public delegate void OnErrorDelegate(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerOnErrorInfo errorInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerOnErrorInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnErrorInfo.md) |errorInfo|MediaPlayer Error callback Info. |
+
+
+
+
+
+
+-----------
+
+### delegate void OnCompletionDelegate {#delegate-void-oncompletiondelegate}
+
+Delegate for the OnCompletion event 
+
+```csharp
+public delegate void OnCompletionDelegate(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerOnCompletionInfo completionInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerOnCompletionInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnCompletionInfo.md) |completionInfo|MediaPlayer Playback completion callback Info. |
+
+
+
+
+
+
+-----------
+
+### delegate void OnBufferingUpdateDelegate {#delegate-void-onbufferingupdatedelegate}
+
+Delegate for the OnBufferingUpdate event 
+
+```csharp
+public delegate void OnBufferingUpdateDelegate(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerOnBufferingUpdateInfo updateInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerOnBufferingUpdateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnBufferingUpdateInfo.md) |updateInfo|MediaPlayer Buffering update callback Info. |
+
+
+
+
+
+
+-----------
+
+### void MLUnityQueueMediaPlayerResetAndDestroy {#void-mlunityqueuemediaplayerresetanddestroy}
+
+```csharp
+public void MLUnityQueueMediaPlayerResetAndDestroy(
     ulong mediaPlayerHandle
 )
 ```
@@ -153,14 +439,14 @@ public MLResult.Code MLMediaPlayerDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetAudioHandle {#mlresultcode-mlmediaplayergetaudiohandle}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerUnselectTrack {#mlresultcode-mlmediaplayerunselecttrack}
 
-Get the handle of the audio stream. 
+Unselect a track. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetAudioHandle(
+public MLResult.Code MLMediaPlayerUnselectTrack(
     ulong mediaPlayerHandle,
-    out ulong handle
+    uint trackIndex
 )
 ```
 
@@ -170,7 +456,7 @@ public MLResult.Code MLMediaPlayerGetAudioHandle(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| out ulong |handle||
+| uint |trackIndex||
 
 
 
@@ -179,14 +465,13 @@ public MLResult.Code MLMediaPlayerGetAudioHandle(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetBufferingSettings {#mlresultcode-mlmediaplayergetbufferingsettings}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerStop {#mlresultcode-mlmediaplayerstop}
 
-Get current Buffering settings. 
+Stop playback after playback has been stopped or paused. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetBufferingSettings(
-    ulong mediaPlayerHandle,
-    IntPtr OutBufSettings
+public MLResult.Code MLMediaPlayerStop(
+    ulong mediaPlayerHandle
 )
 ```
 
@@ -196,7 +481,6 @@ public MLResult.Code MLMediaPlayerGetBufferingSettings(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutBufSettings||
 
 
 
@@ -205,14 +489,13 @@ public MLResult.Code MLMediaPlayerGetBufferingSettings(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetBufferingUpdate {#mlresultcode-mlmediaplayergetbufferingupdate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerStart {#mlresultcode-mlmediaplayerstart}
 
-Return current buffering percentage. 
+Start or resumes playback. If playback had previously been paused, playback will continue from where it was paused. If playback had been stopped, or never started before, playback will start at the beginning. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetBufferingUpdate(
-    ulong mediaPlayerHandle,
-    IntPtr OutPercentage
+public MLResult.Code MLMediaPlayerStart(
+    ulong mediaPlayerHandle
 )
 ```
 
@@ -222,7 +505,6 @@ public MLResult.Code MLMediaPlayerGetBufferingUpdate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutPercentage||
 
 
 
@@ -231,14 +513,14 @@ public MLResult.Code MLMediaPlayerGetBufferingUpdate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetCurrentPosition {#mlresultcode-mlmediaplayergetcurrentposition}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetVolume {#mlresultcode-mlmediaplayersetvolume}
 
-Return current position of playback. 
+Set the volume on this player. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetCurrentPosition(
+public MLResult.Code MLMediaPlayerSetVolume(
     ulong mediaPlayerHandle,
-    out int ms
+    float Volume
 )
 ```
 
@@ -248,7 +530,7 @@ public MLResult.Code MLMediaPlayerGetCurrentPosition(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| out int |ms||
+| float |Volume||
 
 
 
@@ -257,14 +539,14 @@ public MLResult.Code MLMediaPlayerGetCurrentPosition(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetDefaultBufferingSettings {#mlresultcode-mlmediaplayergetdefaultbufferingsettings}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetVideoScalingMode {#mlresultcode-mlmediaplayersetvideoscalingmode}
 
-Get default Buffering settings. 
+Set video scaling mode. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetDefaultBufferingSettings(
+public MLResult.Code MLMediaPlayerSetVideoScalingMode(
     ulong mediaPlayerHandle,
-    IntPtr OutBufSettings
+    VideoScalingMode Mode
 )
 ```
 
@@ -274,7 +556,7 @@ public MLResult.Code MLMediaPlayerGetDefaultBufferingSettings(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutBufSettings||
+| [VideoScalingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-videoscalingmode) |Mode|VideoScalingMode. |
 
 
 
@@ -283,14 +565,14 @@ public MLResult.Code MLMediaPlayerGetDefaultBufferingSettings(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetDuration {#mlresultcode-mlmediaplayergetduration}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetSurface {#mlresultcode-mlmediaplayersetsurface}
 
-Return media duration. 
+Sets the [Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) surface to be used as the sink for displaying the video portion of the media. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetDuration(
+public MLResult.Code MLMediaPlayerSetSurface(
     ulong mediaPlayerHandle,
-    out int durationMS
+    ulong surface
 )
 ```
 
@@ -300,7 +582,7 @@ public MLResult.Code MLMediaPlayerGetDuration(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| out int |durationMS||
+| ulong |surface||
 
 
 
@@ -309,14 +591,16 @@ public MLResult.Code MLMediaPlayerGetDuration(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetError {#mlresultcode-mlmediaplayergeterror}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetRemoteDataSourceForURI {#mlresultcode-mlmediaplayersetremotedatasourceforuri}
 
-Return last error received by internal 
+Set a URI string as the remote data source. Supported URI schemes are  file ,  http ,  https , and  rtsp . 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetError(
+public MLResult.Code MLMediaPlayerSetRemoteDataSourceForURI(
     ulong mediaPlayerHandle,
-    IntPtr OutResult
+    string Uri,
+    out IntPtr Headers,
+    uint Len
 )
 ```
 
@@ -326,7 +610,9 @@ public MLResult.Code MLMediaPlayerGetError(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutResult||
+| string |Uri||
+| out IntPtr |Headers||
+| uint |Len||
 
 
 
@@ -335,15 +621,15 @@ public MLResult.Code MLMediaPlayerGetError(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetInfo {#mlresultcode-mlmediaplayergetinfo}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetOnMediaTimedTextUpdateCallback {#mlresultcode-mlmediaplayersetonmediatimedtextupdatecallback}
 
-Return last info received by internal 
+Set callback to get invoked when a Timed Text update is available along with its data. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetInfo(
+public MLResult.Code MLMediaPlayerSetOnMediaTimedTextUpdateCallback(
     ulong mediaPlayerHandle,
-    IntPtr OutCode,
-    IntPtr OutExtra
+    OnTimedTextUpdateDelegate OnMediaTimedTextCallback,
+    IntPtr Data
 )
 ```
 
@@ -353,8 +639,8 @@ public MLResult.Code MLMediaPlayerGetInfo(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutCode||
-| IntPtr |OutExtra||
+| [OnTimedTextUpdateDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-ontimedtextupdatedelegate) |OnMediaTimedTextCallback|Delegate for the the OnTimedTextUpdate event. |
+| IntPtr |Data||
 
 
 
@@ -363,16 +649,15 @@ public MLResult.Code MLMediaPlayerGetInfo(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetMetadata {#mlresultcode-mlmediaplayergetmetadata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetOnMediaSubtitleUpdateCallback {#mlresultcode-mlmediaplayersetonmediasubtitleupdatecallback}
 
-Return last metadata event information. 
+Set callback to get notified when a subtitle update is available along with its data. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetMetadata(
+public MLResult.Code MLMediaPlayerSetOnMediaSubtitleUpdateCallback(
     ulong mediaPlayerHandle,
-    IntPtr OutTime,
-    IntPtr OutSize,
-    IntPtr OutBuffer
+    OnMediaSubtitleUpdateDelegate OnMediaSubtitleCallback,
+    IntPtr Data
 )
 ```
 
@@ -382,9 +667,8 @@ public MLResult.Code MLMediaPlayerGetMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutTime||
-| IntPtr |OutSize||
-| IntPtr |OutBuffer||
+| OnMediaSubtitleUpdateDelegate |OnMediaSubtitleCallback||
+| IntPtr |Data||
 
 
 
@@ -393,14 +677,16 @@ public MLResult.Code MLMediaPlayerGetMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetMetrics {#mlresultcode-mlmediaplayergetmetrics}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetOffsetDataSourceForFD {#mlresultcode-mlmediaplayersetoffsetdatasourceforfd}
 
-Retrieve metrics recorded on the MediaPlayer. 
+Set a file descriptor as the data source with offset. The file descriptor must be seekable. It is the caller's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. This API is useful for specifying playable media located in resource files. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetMetrics(
+public MLResult.Code MLMediaPlayerSetOffsetDataSourceForFD(
     ulong mediaPlayerHandle,
-    out MLMediaPlayerMetrics metrics
+    int Fd,
+    long Offset,
+    long Length
 )
 ```
 
@@ -410,7 +696,9 @@ public MLResult.Code MLMediaPlayerGetMetrics(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| out [MLMediaPlayerMetrics](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerMetrics.md) |metrics|MediaPlayer metrics data. |
+| int |Fd||
+| long |Offset||
+| long |Length||
 
 
 
@@ -419,14 +707,14 @@ public MLResult.Code MLMediaPlayerGetMetrics(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetSubtitleEx {#mlresultcode-mlmediaplayergetsubtitleex}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetNextPlayer {#mlresultcode-mlmediaplayersetnextplayer}
 
-Return last subtitle event information. 
+Set the 'next' 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetSubtitleEx(
+public MLResult.Code MLMediaPlayerSetNextPlayer(
     ulong mediaPlayerHandle,
-    IntPtr OutSubtitleData
+    ulong NextMediaPlayer
 )
 ```
 
@@ -436,7 +724,7 @@ public MLResult.Code MLMediaPlayerGetSubtitleEx(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutSubtitleData||
+| ulong |NextMediaPlayer||
 
 
 
@@ -445,15 +733,14 @@ public MLResult.Code MLMediaPlayerGetSubtitleEx(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTTMLData {#mlresultcode-mlmediaplayergetttmldata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetMediaStreamSource {#mlresultcode-mlmediaplayersetmediastreamsource}
 
-Get TTML data represented by a timed text handle. 
+Set the data source to use. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetTTMLData(
+public MLResult.Code MLMediaPlayerSetMediaStreamSource(
     ulong mediaPlayerHandle,
-    ulong timedTextHandle,
-    ref IntPtr ttmlData
+    ulong MediaStreamSource
 )
 ```
 
@@ -463,8 +750,7 @@ public MLResult.Code MLMediaPlayerGetTTMLData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| ulong |timedTextHandle||
-| ref IntPtr |ttmlData||
+| ulong |MediaStreamSource||
 
 
 
@@ -473,16 +759,14 @@ public MLResult.Code MLMediaPlayerGetTTMLData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTimedText {#mlresultcode-mlmediaplayergettimedtext}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetMediaDataSource {#mlresultcode-mlmediaplayersetmediadatasource}
 
-Return last timed text event information. 
+Set the data source to use. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetTimedText(
+public MLResult.Code MLMediaPlayerSetMediaDataSource(
     ulong mediaPlayerHandle,
-    IntPtr OutText,
-    IntPtr OutStart,
-    IntPtr OutEnd
+    ulong MediaDataSource
 )
 ```
 
@@ -492,9 +776,7 @@ public MLResult.Code MLMediaPlayerGetTimedText(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| IntPtr |OutText||
-| IntPtr |OutStart||
-| IntPtr |OutEnd||
+| ulong |MediaDataSource||
 
 
 
@@ -503,14 +785,14 @@ public MLResult.Code MLMediaPlayerGetTimedText(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackCount {#mlresultcode-mlmediaplayergettrackcount}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetLooping {#mlresultcode-mlmediaplayersetlooping}
 
-Count the number of tracks found in the data source. 
+Set the looping mode of the player. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetTrackCount(
+public MLResult.Code MLMediaPlayerSetLooping(
     ulong mediaPlayerHandle,
-    out uint trackCount
+    bool loop
 )
 ```
 
@@ -520,7 +802,7 @@ public MLResult.Code MLMediaPlayerGetTrackCount(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| out uint |trackCount||
+| bool |loop||
 
 
 
@@ -529,15 +811,15 @@ public MLResult.Code MLMediaPlayerGetTrackCount(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackDRMInfo {#mlresultcode-mlmediaplayergettrackdrminfo}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetEventCallbacksEx {#mlresultcode-mlmediaplayerseteventcallbacksex}
 
-Get the DRM info of the selected media (either audio or video) track. This function has to be called only after [DataSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/DataSource/UnityEngine.XR.MagicLeap.MLMedia.DataSource.md) has been set and the MediaPlayer is completely prepared. 
+Set callbacks to notify clients about player events. This structure must be initialized by calling MLMediaPlayerEventCallbacksExInit() before use. Client needs to implement the callback functions declared in #MLMediaPlayerEventCallbacksEx, but can set to NULL the ones he does not care about. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetTrackDRMInfo(
+public MLResult.Code MLMediaPlayerSetEventCallbacksEx(
     ulong mediaPlayerHandle,
-    ref MLMediaPlayerTrackInfo trackInfo,
-    ref IntPtr drmInfo
+    ref MLMediaPlayerEventCallbacksEx callbacks,
+    IntPtr Data
 )
 ```
 
@@ -547,8 +829,8 @@ public MLResult.Code MLMediaPlayerGetTrackDRMInfo(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerTrackInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerTrackInfo.md) |trackInfo|MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) Information. |
-| ref IntPtr |drmInfo||
+| ref [MLMediaPlayerEventCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerEventCallbacksEx.md) |callbacks|Callbacks for notifying client about |
+| IntPtr |Data||
 
 
 
@@ -557,15 +839,14 @@ public MLResult.Code MLMediaPlayerGetTrackDRMInfo(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetVideoSize {#mlresultcode-mlmediaplayergetvideosize}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetDataSourceForURI {#mlresultcode-mlmediaplayersetdatasourceforuri}
 
-Return the size of the video frame. 
+Set a URI string as the data source. Supported URI schemes are  file ,  http ,  https , and  rtsp . If looking to provide headers, use MLMediaPlayerSetRemoteDataSourceForURI(). 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetVideoSize(
+public MLResult.Code MLMediaPlayerSetDataSourceForURI(
     ulong mediaPlayerHandle,
-    out int width,
-    out int height
+    string Uri
 )
 ```
 
@@ -575,8 +856,7 @@ public MLResult.Code MLMediaPlayerGetVideoSize(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| out int |width||
-| out int |height||
+| string |Uri||
 
 
 
@@ -585,15 +865,14 @@ public MLResult.Code MLMediaPlayerGetVideoSize(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetWebVTTData {#mlresultcode-mlmediaplayergetwebvttdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetDataSourceForPath {#mlresultcode-mlmediaplayersetdatasourceforpath}
 
-Get WebVTT data represented by a timed text handle. 
+Set a local file path as the data source. The path should be an absolute path and should reference a world-readable file. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetWebVTTData(
+public MLResult.Code MLMediaPlayerSetDataSourceForPath(
     ulong mediaPlayerHandle,
-    ulong TimedText,
-    ref IntPtr webVTTData
+    string Path
 )
 ```
 
@@ -603,8 +882,7 @@ public MLResult.Code MLMediaPlayerGetWebVTTData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |mediaPlayerHandle||
-| ulong |TimedText||
-| ref IntPtr |webVTTData||
+| string |Path||
 
 
 
@@ -613,12 +891,264 @@ public MLResult.Code MLMediaPlayerGetWebVTTData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPause {#mlresultcode-mlmediaplayerpause}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetDataSourceForFD {#mlresultcode-mlmediaplayersetdatasourceforfd}
 
-Pause playback. Calling pause() is a NOOP if 
+Set a file descriptor as the data source. The file descriptor must be seekable. It is the caller's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerPause(
+public MLResult.Code MLMediaPlayerSetDataSourceForFD(
+    ulong mediaPlayerHandle,
+    int Fd
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| int |Fd||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetBufferingSettings {#mlresultcode-mlmediaplayersetbufferingsettings}
+
+Set Buffering settings. 
+
+```csharp
+public MLResult.Code MLMediaPlayerSetBufferingSettings(
+    ulong mediaPlayerHandle,
+    NativeBindings.MLMediaPlayerBufferingSettings BufSettings
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| [NativeBindings.MLMediaPlayerBufferingSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerBufferingSettings.md) |BufSettings|Indicate the buffering settings. |
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSelectTrack {#mlresultcode-mlmediaplayerselecttrack}
+
+Select a track. 
+
+```csharp
+public MLResult.Code MLMediaPlayerSelectTrack(
+    ulong mediaPlayerHandle,
+    uint trackIndex
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| uint |trackIndex||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSeekTo {#mlresultcode-mlmediaplayerseekto}
+
+Seek to specified time position. Note that SeekTo is an async. function and returns immediately. Successful seek result has to be obtained either via the 'on&#95;seek&#95;complete' if already registered (see MLMediaPlayerSetEventCallbacksEx) or by polling for the flag 'MLMediaPlayerPollingStateFlag&#95;HasSeekCompleted' when calling MLMediaPlayerPollStates(). 
+
+```csharp
+public MLResult.Code MLMediaPlayerSeekTo(
+    ulong mediaPlayerHandle,
+    int Msec,
+    SeekMode Mode
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| int |Msec||
+| [SeekMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-seekmode) |Mode|Mode indicating where exactly to seek to. |
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerResetAsync {#mlresultcode-mlmediaplayerresetasync}
+
+Reset the 
+
+```csharp
+public MLResult.Code MLMediaPlayerResetAsync(
+    ulong mediaPlayerHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReset {#mlresultcode-mlmediaplayerreset}
+
+Reset the 
+
+```csharp
+public MLResult.Code MLMediaPlayerReset(
+    ulong mediaPlayerHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReleaseSubtitleEx {#mlresultcode-mlmediaplayerreleasesubtitleex}
+
+Release last subtitle event information. 
+
+```csharp
+public MLResult.Code MLMediaPlayerReleaseSubtitleEx(
+    ulong mediaPlayerHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReleaseDRM {#mlresultcode-mlmediaplayerreleasedrm}
+
+Release DRM. 
+
+```csharp
+public MLResult.Code MLMediaPlayerReleaseDRM(
+    ulong mediaPlayerHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPrepareTrackDRM {#mlresultcode-mlmediaplayerpreparetrackdrm}
+
+Prepare DRM for the selected media (either audio or video) track 
+
+```csharp
+public MLResult.Code MLMediaPlayerPrepareTrackDRM(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerTrackDRMSessionInfo drmSessionInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerTrackDRMSessionInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerTrackDRMSessionInfo.md) |drmSessionInfo|DRM Session information for a MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md). |
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPrepareAsync {#mlresultcode-mlmediaplayerprepareasync}
+
+Prepare the player for playback, asynchronously. After setting the data's source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For streams, you should call prepareAsync(), which returns immediately, rather than blocking until enough data has been buffered. Prepared state will then be obtained via the 'on&#95;prepared' callback if already registered (see MLMediaPlayerSetEventCallbacksEx), or polled for via the MLMediaPlayerPollStates() call with the MLMediaPlayerPollingStateFlag&#95;HasBeenPrepared flag set. 
+
+```csharp
+public MLResult.Code MLMediaPlayerPrepareAsync(
+    ulong mediaPlayerHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPrepare {#mlresultcode-mlmediaplayerprepare}
+
+Prepare the player for playback, synchronously. After setting the data source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For files, it is OK to call prepare(), which blocks until 
+
+```csharp
+public MLResult.Code MLMediaPlayerPrepare(
     ulong mediaPlayerHandle
 )
 ```
@@ -665,12 +1195,12 @@ public MLResult.Code MLMediaPlayerPollStates(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPrepare {#mlresultcode-mlmediaplayerprepare}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPause {#mlresultcode-mlmediaplayerpause}
 
-Prepare the player for playback, synchronously. After setting the data source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For files, it is OK to call prepare(), which blocks until 
+Pause playback. Calling pause() is a NOOP if 
 
 ```csharp
-public MLResult.Code MLMediaPlayerPrepare(
+public MLResult.Code MLMediaPlayerPause(
     ulong mediaPlayerHandle
 )
 ```
@@ -689,12 +1219,472 @@ public MLResult.Code MLMediaPlayerPrepare(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPrepareAsync {#mlresultcode-mlmediaplayerprepareasync}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetWebVTTData {#mlresultcode-mlmediaplayergetwebvttdata}
 
-Prepare the player for playback, asynchronously. After setting the data's source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For streams, you should call prepareAsync(), which returns immediately, rather than blocking until enough data has been buffered. Prepared state will then be obtained via the 'on&#95;prepared' callback if already registered (see MLMediaPlayerSetEventCallbacksEx), or polled for via the MLMediaPlayerPollStates() call with the MLMediaPlayerPollingStateFlag&#95;HasBeenPrepared flag set. 
+Get WebVTT data represented by a timed text handle. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerPrepareAsync(
+public MLResult.Code MLMediaPlayerGetWebVTTData(
+    ulong mediaPlayerHandle,
+    ulong TimedText,
+    ref IntPtr webVTTData
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ulong |TimedText||
+| ref IntPtr |webVTTData||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetVideoSize {#mlresultcode-mlmediaplayergetvideosize}
+
+Return the size of the video frame. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetVideoSize(
+    ulong mediaPlayerHandle,
+    out int width,
+    out int height
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| out int |width||
+| out int |height||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackDRMInfo {#mlresultcode-mlmediaplayergettrackdrminfo}
+
+Get the DRM info of the selected media (either audio or video) track. This function has to be called only after [DataSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/DataSource/UnityEngine.XR.MagicLeap.MLMedia.DataSource.md) has been set and the MediaPlayer is completely prepared. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetTrackDRMInfo(
+    ulong mediaPlayerHandle,
+    ref MLMediaPlayerTrackInfo trackInfo,
+    ref IntPtr drmInfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ref [MLMediaPlayerTrackInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerTrackInfo.md) |trackInfo|MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) Information. |
+| ref IntPtr |drmInfo||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackCount {#mlresultcode-mlmediaplayergettrackcount}
+
+Count the number of tracks found in the data source. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetTrackCount(
+    ulong mediaPlayerHandle,
+    out uint trackCount
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| out uint |trackCount||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTimedText {#mlresultcode-mlmediaplayergettimedtext}
+
+Return last timed text event information. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetTimedText(
+    ulong mediaPlayerHandle,
+    IntPtr OutText,
+    IntPtr OutStart,
+    IntPtr OutEnd
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutText||
+| IntPtr |OutStart||
+| IntPtr |OutEnd||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTTMLData {#mlresultcode-mlmediaplayergetttmldata}
+
+Get TTML data represented by a timed text handle. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetTTMLData(
+    ulong mediaPlayerHandle,
+    ulong timedTextHandle,
+    ref IntPtr ttmlData
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| ulong |timedTextHandle||
+| ref IntPtr |ttmlData||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetSubtitleEx {#mlresultcode-mlmediaplayergetsubtitleex}
+
+Return last subtitle event information. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetSubtitleEx(
+    ulong mediaPlayerHandle,
+    IntPtr OutSubtitleData
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutSubtitleData||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetMetrics {#mlresultcode-mlmediaplayergetmetrics}
+
+Retrieve metrics recorded on the MediaPlayer. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetMetrics(
+    ulong mediaPlayerHandle,
+    out MLMediaPlayerMetrics metrics
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| out [MLMediaPlayerMetrics](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerMetrics.md) |metrics|MediaPlayer metrics data. |
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetMetadata {#mlresultcode-mlmediaplayergetmetadata}
+
+Return last metadata event information. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetMetadata(
+    ulong mediaPlayerHandle,
+    IntPtr OutTime,
+    IntPtr OutSize,
+    IntPtr OutBuffer
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutTime||
+| IntPtr |OutSize||
+| IntPtr |OutBuffer||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetInfo {#mlresultcode-mlmediaplayergetinfo}
+
+Return last info received by internal 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetInfo(
+    ulong mediaPlayerHandle,
+    IntPtr OutCode,
+    IntPtr OutExtra
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutCode||
+| IntPtr |OutExtra||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetError {#mlresultcode-mlmediaplayergeterror}
+
+Return last error received by internal 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetError(
+    ulong mediaPlayerHandle,
+    IntPtr OutResult
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutResult||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetDuration {#mlresultcode-mlmediaplayergetduration}
+
+Return media duration. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetDuration(
+    ulong mediaPlayerHandle,
+    out int durationMS
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| out int |durationMS||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetDefaultBufferingSettings {#mlresultcode-mlmediaplayergetdefaultbufferingsettings}
+
+Get default Buffering settings. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetDefaultBufferingSettings(
+    ulong mediaPlayerHandle,
+    IntPtr OutBufSettings
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutBufSettings||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetCurrentPosition {#mlresultcode-mlmediaplayergetcurrentposition}
+
+Return current position of playback. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetCurrentPosition(
+    ulong mediaPlayerHandle,
+    out int ms
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| out int |ms||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetBufferingUpdate {#mlresultcode-mlmediaplayergetbufferingupdate}
+
+Return current buffering percentage. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetBufferingUpdate(
+    ulong mediaPlayerHandle,
+    IntPtr OutPercentage
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutPercentage||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetBufferingSettings {#mlresultcode-mlmediaplayergetbufferingsettings}
+
+Get current Buffering settings. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetBufferingSettings(
+    ulong mediaPlayerHandle,
+    IntPtr OutBufSettings
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| IntPtr |OutBufSettings||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetAudioHandle {#mlresultcode-mlmediaplayergetaudiohandle}
+
+Get the handle of the audio stream. 
+
+```csharp
+public MLResult.Code MLMediaPlayerGetAudioHandle(
+    ulong mediaPlayerHandle,
+    out ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |mediaPlayerHandle||
+| out ulong |handle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerDestroy {#mlresultcode-mlmediaplayerdestroy}
+
+Destroy a MediaPlayer object. 
+
+```csharp
+public MLResult.Code MLMediaPlayerDestroy(
     ulong mediaPlayerHandle
 )
 ```
@@ -713,268 +1703,39 @@ public MLResult.Code MLMediaPlayerPrepareAsync(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerPrepareTrackDRM {#mlresultcode-mlmediaplayerpreparetrackdrm}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerCreate {#mlresultcode-mlmediaplayercreate}
 
-Prepare DRM for the selected media (either audio or video) track 
+Create a new 
 
 ```csharp
-public MLResult.Code MLMediaPlayerPrepareTrackDRM(
+public MLResult.Code MLMediaPlayerCreate(
+    out ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out ulong |handle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerAddTimedTextSourceForURI {#mlresultcode-mlmediaplayeraddtimedtextsourceforuri}
+
+Add a timedtext source from a URI. 
+
+```csharp
+public MLResult.Code MLMediaPlayerAddTimedTextSourceForURI(
     ulong mediaPlayerHandle,
-    ref MLMediaPlayerTrackDRMSessionInfo drmSessionInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerTrackDRMSessionInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerTrackDRMSessionInfo.md) |drmSessionInfo|DRM Session information for a MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md). |
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReleaseDRM {#mlresultcode-mlmediaplayerreleasedrm}
-
-Release DRM. 
-
-```csharp
-public MLResult.Code MLMediaPlayerReleaseDRM(
-    ulong mediaPlayerHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReleaseSubtitleEx {#mlresultcode-mlmediaplayerreleasesubtitleex}
-
-Release last subtitle event information. 
-
-```csharp
-public MLResult.Code MLMediaPlayerReleaseSubtitleEx(
-    ulong mediaPlayerHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerReset {#mlresultcode-mlmediaplayerreset}
-
-Reset the 
-
-```csharp
-public MLResult.Code MLMediaPlayerReset(
-    ulong mediaPlayerHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerResetAsync {#mlresultcode-mlmediaplayerresetasync}
-
-Reset the 
-
-```csharp
-public MLResult.Code MLMediaPlayerResetAsync(
-    ulong mediaPlayerHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSeekTo {#mlresultcode-mlmediaplayerseekto}
-
-Seek to specified time position. Note that SeekTo is an async. function and returns immediately. Successful seek result has to be obtained either via the 'on&#95;seek&#95;complete' if already registered (see MLMediaPlayerSetEventCallbacksEx) or by polling for the flag 'MLMediaPlayerPollingStateFlag&#95;HasSeekCompleted' when calling MLMediaPlayerPollStates(). 
-
-```csharp
-public MLResult.Code MLMediaPlayerSeekTo(
-    ulong mediaPlayerHandle,
-    int Msec,
-    SeekMode Mode
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| int |Msec||
-| [SeekMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-seekmode) |Mode|Mode indicating where exactly to seek to. |
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSelectTrack {#mlresultcode-mlmediaplayerselecttrack}
-
-Select a track. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSelectTrack(
-    ulong mediaPlayerHandle,
-    uint trackIndex
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| uint |trackIndex||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetBufferingSettings {#mlresultcode-mlmediaplayersetbufferingsettings}
-
-Set Buffering settings. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetBufferingSettings(
-    ulong mediaPlayerHandle,
-    NativeBindings.MLMediaPlayerBufferingSettings BufSettings
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| [NativeBindings.MLMediaPlayerBufferingSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerBufferingSettings.md) |BufSettings|Indicate the buffering settings. |
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetDataSourceForFD {#mlresultcode-mlmediaplayersetdatasourceforfd}
-
-Set a file descriptor as the data source. The file descriptor must be seekable. It is the caller's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetDataSourceForFD(
-    ulong mediaPlayerHandle,
-    int Fd
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| int |Fd||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetDataSourceForPath {#mlresultcode-mlmediaplayersetdatasourceforpath}
-
-Set a local file path as the data source. The path should be an absolute path and should reference a world-readable file. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetDataSourceForPath(
-    ulong mediaPlayerHandle,
-    string Path
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| string |Path||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetDataSourceForURI {#mlresultcode-mlmediaplayersetdatasourceforuri}
-
-Set a URI string as the data source. Supported URI schemes are  file ,  http ,  https , and  rtsp . If looking to provide headers, use MLMediaPlayerSetRemoteDataSourceForURI(). 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetDataSourceForURI(
-    ulong mediaPlayerHandle,
-    string Uri
+    string Uri,
+    string MimeType
 )
 ```
 
@@ -985,6 +1746,7 @@ public MLResult.Code MLMediaPlayerSetDataSourceForURI(
 |--|--|--|
 | ulong |mediaPlayerHandle||
 | string |Uri||
+| string |MimeType||
 
 
 
@@ -993,148 +1755,17 @@ public MLResult.Code MLMediaPlayerSetDataSourceForURI(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetEventCallbacksEx {#mlresultcode-mlmediaplayerseteventcallbacksex}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerAddTimedTextSourceForFD {#mlresultcode-mlmediaplayeraddtimedtextsourceforfd}
 
-Set callbacks to notify clients about player events. This structure must be initialized by calling MLMediaPlayerEventCallbacksExInit() before use. Client needs to implement the callback functions declared in #MLMediaPlayerEventCallbacksEx, but can set to NULL the ones he does not care about. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetEventCallbacksEx(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerEventCallbacksEx callbacks,
-    IntPtr Data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerEventCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerEventCallbacksEx.md) |callbacks|Callbacks for notifying client about |
-| IntPtr |Data||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetLooping {#mlresultcode-mlmediaplayersetlooping}
-
-Set the looping mode of the player. 
+Add a timedtext source from a file descriptor. The file descriptor must be seekable. It is the caller's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerSetLooping(
-    ulong mediaPlayerHandle,
-    bool loop
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| bool |loop||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetMediaDataSource {#mlresultcode-mlmediaplayersetmediadatasource}
-
-Set the data source to use. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetMediaDataSource(
-    ulong mediaPlayerHandle,
-    ulong MediaDataSource
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |MediaDataSource||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetMediaStreamSource {#mlresultcode-mlmediaplayersetmediastreamsource}
-
-Set the data source to use. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetMediaStreamSource(
-    ulong mediaPlayerHandle,
-    ulong MediaStreamSource
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |MediaStreamSource||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetNextPlayer {#mlresultcode-mlmediaplayersetnextplayer}
-
-Set the 'next' 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetNextPlayer(
-    ulong mediaPlayerHandle,
-    ulong NextMediaPlayer
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |NextMediaPlayer||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetOffsetDataSourceForFD {#mlresultcode-mlmediaplayersetoffsetdatasourceforfd}
-
-Set a file descriptor as the data source with offset. The file descriptor must be seekable. It is the caller's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. This API is useful for specifying playable media located in resource files. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetOffsetDataSourceForFD(
+public MLResult.Code MLMediaPlayerAddTimedTextSourceForFD(
     ulong mediaPlayerHandle,
     int Fd,
     long Offset,
-    long Length
+    long Length,
+    string MimeType
 )
 ```
 
@@ -1147,6 +1778,7 @@ public MLResult.Code MLMediaPlayerSetOffsetDataSourceForFD(
 | int |Fd||
 | long |Offset||
 | long |Length||
+| string |MimeType||
 
 
 
@@ -1155,15 +1787,14 @@ public MLResult.Code MLMediaPlayerSetOffsetDataSourceForFD(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetOnMediaSubtitleUpdateCallback {#mlresultcode-mlmediaplayersetonmediasubtitleupdatecallback}
+### T [] ConvertArray< T > {#t-convertarray-t-}
 
-Set callback to get notified when a subtitle update is available along with its data. 
+Converts an unmanged array to a managed array of type T. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerSetOnMediaSubtitleUpdateCallback(
-    ulong mediaPlayerHandle,
-    OnMediaSubtitleUpdateDelegate OnMediaSubtitleCallback,
-    IntPtr Data
+public static T [] ConvertArray< T >(
+    IntPtr arrayPtr,
+    ulong count
 )
 ```
 
@@ -1172,639 +1803,8 @@ public MLResult.Code MLMediaPlayerSetOnMediaSubtitleUpdateCallback(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |mediaPlayerHandle||
-| OnMediaSubtitleUpdateDelegate |OnMediaSubtitleCallback||
-| IntPtr |Data||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetOnMediaTimedTextUpdateCallback {#mlresultcode-mlmediaplayersetonmediatimedtextupdatecallback}
-
-Set callback to get invoked when a Timed Text update is available along with its data. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetOnMediaTimedTextUpdateCallback(
-    ulong mediaPlayerHandle,
-    OnTimedTextUpdateDelegate OnMediaTimedTextCallback,
-    IntPtr Data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| [OnTimedTextUpdateDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-ontimedtextupdatedelegate) |OnMediaTimedTextCallback|Delegate for the the OnTimedTextUpdate event. |
-| IntPtr |Data||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetRemoteDataSourceForURI {#mlresultcode-mlmediaplayersetremotedatasourceforuri}
-
-Set a URI string as the remote data source. Supported URI schemes are  file ,  http ,  https , and  rtsp . 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetRemoteDataSourceForURI(
-    ulong mediaPlayerHandle,
-    string Uri,
-    out IntPtr Headers,
-    uint Len
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| string |Uri||
-| out IntPtr |Headers||
-| uint |Len||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetSurface {#mlresultcode-mlmediaplayersetsurface}
-
-Sets the [Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) surface to be used as the sink for displaying the video portion of the media. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetSurface(
-    ulong mediaPlayerHandle,
-    ulong surface
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |surface||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetVideoScalingMode {#mlresultcode-mlmediaplayersetvideoscalingmode}
-
-Set video scaling mode. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetVideoScalingMode(
-    ulong mediaPlayerHandle,
-    VideoScalingMode Mode
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| [VideoScalingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-videoscalingmode) |Mode|VideoScalingMode. |
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerSetVolume {#mlresultcode-mlmediaplayersetvolume}
-
-Set the volume on this player. 
-
-```csharp
-public MLResult.Code MLMediaPlayerSetVolume(
-    ulong mediaPlayerHandle,
-    float Volume
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| float |Volume||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerStart {#mlresultcode-mlmediaplayerstart}
-
-Start or resumes playback. If playback had previously been paused, playback will continue from where it was paused. If playback had been stopped, or never started before, playback will start at the beginning. 
-
-```csharp
-public MLResult.Code MLMediaPlayerStart(
-    ulong mediaPlayerHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerStop {#mlresultcode-mlmediaplayerstop}
-
-Stop playback after playback has been stopped or paused. 
-
-```csharp
-public MLResult.Code MLMediaPlayerStop(
-    ulong mediaPlayerHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerUnselectTrack {#mlresultcode-mlmediaplayerunselecttrack}
-
-Unselect a track. 
-
-```csharp
-public MLResult.Code MLMediaPlayerUnselectTrack(
-    ulong mediaPlayerHandle,
-    uint trackIndex
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| uint |trackIndex||
-
-
-
-
-
-
------------
-
-### void MLUnityQueueMediaPlayerResetAndDestroy {#void-mlunityqueuemediaplayerresetanddestroy}
-
-```csharp
-public void MLUnityQueueMediaPlayerResetAndDestroy(
-    ulong mediaPlayerHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-
-
-
-
-
-
------------
-
-### delegate void OnBufferingUpdateDelegate {#delegate-void-onbufferingupdatedelegate}
-
-Delegate for the OnBufferingUpdate event 
-
-```csharp
-public delegate void OnBufferingUpdateDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnBufferingUpdateInfo updateInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnBufferingUpdateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnBufferingUpdateInfo.md) |updateInfo|MediaPlayer Buffering update callback Info. |
-
-
-
-
-
-
------------
-
-### delegate void OnCompletionDelegate {#delegate-void-oncompletiondelegate}
-
-Delegate for the OnCompletion event 
-
-```csharp
-public delegate void OnCompletionDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnCompletionInfo completionInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnCompletionInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnCompletionInfo.md) |completionInfo|MediaPlayer Playback completion callback Info. |
-
-
-
-
-
-
------------
-
-### delegate void OnErrorDelegate {#delegate-void-onerrordelegate}
-
-Delegate for the OnError event 
-
-```csharp
-public delegate void OnErrorDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnErrorInfo errorInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnErrorInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnErrorInfo.md) |errorInfo|MediaPlayer Error callback Info. |
-
-
-
-
-
-
------------
-
-### delegate void OnFrameAvailableDelegate {#delegate-void-onframeavailabledelegate}
-
-Delegate for the OnFrameAvailable event 
-
-```csharp
-public delegate void OnFrameAvailableDelegate(
-    ulong mediaPlayerHandle,
-    IntPtr Data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| IntPtr |Data||
-
-
-
-
-
-
------------
-
-### delegate void OnFramePackingDelegate {#delegate-void-onframepackingdelegate}
-
-Delegate for the OnFramePacking event 
-
-```csharp
-public delegate void OnFramePackingDelegate(
-    ulong mediaPlayerHandle,
-    IntPtr framePackingInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| IntPtr |framePackingInfo||
-
-
-
-
-
-
------------
-
-### delegate void OnInfoDelegate {#delegate-void-oninfodelegate}
-
-Delegate for the OnInfo event 
-
-```csharp
-public delegate void OnInfoDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnInfoInfo info
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnInfoInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnInfoInfo.md) |info|MediaPlayer Information callback Info. |
-
-
-
-
-
-
------------
-
-### void OnMediaSubtitleUpdate {#void-onmediasubtitleupdate}
-
-Callback for the OnMediaSubtitleUpdate event. 
-
-```csharp
-public static void OnMediaSubtitleUpdate(
-    ulong mediaPlayerHandle,
-    MLMediaPlayerSubtitleData subtitleData,
-    IntPtr data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| [MLMediaPlayerSubtitleData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerSubtitleData.md) |subtitleData|MediaPlayer subtitle data. |
-| IntPtr |data||
-
-
-
-
-
-
------------
-
-### delegate void OnMediaSubtitleUpdateDelegate {#delegate-void-onmediasubtitleupdatedelegate}
-
-Delegate for the OnMediaSubtitleUpdate event. 
-
-```csharp
-public delegate void OnMediaSubtitleUpdateDelegate(
-    ulong mediaPlayerHandle,
-    MLMediaPlayerSubtitleData subtitleData,
-    IntPtr data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| [MLMediaPlayerSubtitleData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerSubtitleData.md) |subtitleData|MediaPlayer subtitle data. |
-| IntPtr |data||
-
-
-
-
-
-
------------
-
-### delegate void OnPreparedDelegate {#delegate-void-onprepareddelegate}
-
-Delegate for the OnPrepared event 
-
-```csharp
-public delegate void OnPreparedDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnPreparedInfo preparedInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnPreparedInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnPreparedInfo.md) |preparedInfo|MediaPlayer Playback prepared callback Info. |
-
-
-
-
-
-
------------
-
-### delegate void OnResetCompleteDelegate {#delegate-void-onresetcompletedelegate}
-
-Delegate for the OnResetComplete event 
-
-```csharp
-public delegate void OnResetCompleteDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnResetCompleteInfo resetCompleteInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnResetCompleteInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnResetCompleteInfo.md) |resetCompleteInfo|MediaPlayer reset completion callback Info. |
-
-
-
-
-
-
------------
-
-### delegate void OnSeekCompleteDelegate {#delegate-void-onseekcompletedelegate}
-
-Delegate for the OnSeekComplete event 
-
-```csharp
-public delegate void OnSeekCompleteDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnSeekCompleteInfo seekCompleteInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnSeekCompleteInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnSeekCompleteInfo.md) |seekCompleteInfo|MediaPlayer Playback seek completion callback Info. |
-
-
-
-
-
-
------------
-
-### void OnTimedTextUpdate {#void-ontimedtextupdate}
-
-Callback for the OnTimedTextUpdate event. 
-
-```csharp
-public static void OnTimedTextUpdate(
-    ulong mediaPlayerHandle,
-    ulong timedTextHandle,
-    IntPtr data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |timedTextHandle||
-| IntPtr |data||
-
-
-
-
-
-
------------
-
-### delegate void OnTimedTextUpdateDelegate {#delegate-void-ontimedtextupdatedelegate}
-
-Delegate for the OnTimedTextUpdate event. 
-
-```csharp
-public delegate void OnTimedTextUpdateDelegate(
-    ulong mediaPlayerHandle,
-    ulong timedTextHandle,
-    IntPtr data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ulong |timedTextHandle||
-| IntPtr |data||
-
-
-
-
-
-
------------
-
-### delegate void OnTrackDRMInfoDelegate {#delegate-void-ontrackdrminfodelegate}
-
-Delegate for the OnTrackDRMInfo event 
-
-```csharp
-public delegate void OnTrackDRMInfoDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnTrackDRMInfo trackDrmInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnTrackDRMInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnTrackDRMInfo.md) |trackDrmInfo|MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) DRM Info callback Info. |
-
-
-
-
-
-
------------
-
-### delegate void OnVideoSizeChangedDelegate {#delegate-void-onvideosizechangeddelegate}
-
-Delegate for the OnVideoSizeChanged event 
-
-```csharp
-public delegate void OnVideoSizeChangedDelegate(
-    ulong mediaPlayerHandle,
-    ref MLMediaPlayerOnVideoSizeChangedInfo videoSizeInfo
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |mediaPlayerHandle||
-| ref [MLMediaPlayerOnVideoSizeChangedInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerOnVideoSizeChangedInfo.md) |videoSizeInfo|MediaPlayer Video Size Changed callback Info. |
+| IntPtr |arrayPtr||
+| ulong |count||
 
 
 
@@ -1815,14 +1815,12 @@ public delegate void OnVideoSizeChangedDelegate(
 
 ## Public Enums
 
-### TTMLAnchorType {#enums-ttmlanchortype}
+### WebVTTOrientation {#enums-webvttorientation}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Unset | 0xFFFFFFFF|   |
-| Start | 0|   |
-| Middle | 1|   |
-| End | 2|   |
+| Horizontal | 0|   |
+| Vertical | |   |
 
 
 
@@ -1833,49 +1831,13 @@ public delegate void OnVideoSizeChangedDelegate(
 
 -----------
 
-### TTMLLayoutAlignment {#enums-ttmllayoutalignment}
+### WebVTTDirection {#enums-webvttdirection}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Unspecified | 0xFFFFFFFF|   |
-| Normal | 0|   |
-| Center | 1|   |
-| Opposite | 2|   |
-
-
-
-
-
-
-
-
------------
-
-### TTMLLineType {#enums-ttmllinetype}
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Unset | 0xFFFFFFFF|   |
-| Fraciton | 0|   |
-| Number | 1|   |
-
-
-
-
-
-
-
-
------------
-
-### TTMLTextSizeType {#enums-ttmltextsizetype}
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Unset | 0xFFFFFFFF|   |
-| Fractional | 0|   |
-| FractionalIgnorePadding | 1|   |
-| Absolute | 2|   |
+| Default | 0|   |
+| LeftToRight | |   |
+| RightToLeft | |   |
 
 
 
@@ -1905,13 +1867,14 @@ public delegate void OnVideoSizeChangedDelegate(
 
 -----------
 
-### WebVTTDirection {#enums-webvttdirection}
+### TTMLTextSizeType {#enums-ttmltextsizetype}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Default | 0|   |
-| LeftToRight | |   |
-| RightToLeft | |   |
+| Unset | 0xFFFFFFFF|   |
+| Fractional | 0|   |
+| FractionalIgnorePadding | 1|   |
+| Absolute | 2|   |
 
 
 
@@ -1922,12 +1885,49 @@ public delegate void OnVideoSizeChangedDelegate(
 
 -----------
 
-### WebVTTOrientation {#enums-webvttorientation}
+### TTMLLineType {#enums-ttmllinetype}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Horizontal | 0|   |
-| Vertical | |   |
+| Unset | 0xFFFFFFFF|   |
+| Fraciton | 0|   |
+| Number | 1|   |
+
+
+
+
+
+
+
+
+-----------
+
+### TTMLLayoutAlignment {#enums-ttmllayoutalignment}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Unspecified | 0xFFFFFFFF|   |
+| Normal | 0|   |
+| Center | 1|   |
+| Opposite | 2|   |
+
+
+
+
+
+
+
+
+-----------
+
+### TTMLAnchorType {#enums-ttmlanchortype}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Unset | 0xFFFFFFFF|   |
+| Start | 0|   |
+| Middle | 1|   |
+| End | 2|   |
 
 
 

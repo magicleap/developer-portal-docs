@@ -31,11 +31,11 @@ public static MLDepthCameraSettings Init()
 
 ## Public Attributes
 
-### Flags {#uint-flags}
+### Version {#uint-version}
 
 ```csharp
 
-public uint Flags;
+public uint Version;
 
 ```
 
@@ -61,11 +61,11 @@ public uint Mode;
 
 -----------
 
-### Version {#uint-version}
+### Flags {#uint-flags}
 
 ```csharp
 
-public uint Version;
+public uint Flags;
 
 ```
 

@@ -16,10 +16,10 @@ title: IHMDActions
 
 ## Public Methods
 
-### void OnPosition {#void-onposition}
+### void OnRotation {#void-onrotation}
 
 ```csharp
-public void OnPosition(
+public void OnRotation(
     InputAction.CallbackContext context
 )
 ```
@@ -38,10 +38,10 @@ public void OnPosition(
 
 -----------
 
-### void OnRotation {#void-onrotation}
+### void OnPosition {#void-onposition}
 
 ```csharp
-public void OnRotation(
+public void OnPosition(
     InputAction.CallbackContext context
 )
 ```

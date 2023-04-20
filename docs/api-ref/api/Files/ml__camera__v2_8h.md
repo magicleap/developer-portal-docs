@@ -289,10 +289,33 @@ Captured output format. These three parameters determine which formats are suppo
 
 
 
-* Camera type: [Main, CV]
-* Mode: [Real, MR, Virtual]
-* Capture type: [Preview, Video, Image]
-These are formats supported: YUV : [Main] [Real] [Preview, Video, Image] / [ CV ] [Real] [Video, Image] RGBA : [Main] [Real] [Video] / [Main] [MR, Virtual] [Video, Image] / [ CV ] [Real] [Video] JPEG : [Main] [Real, MR, Virtual] [Image] 
+* Camera type: [Main, CV].
+* Mode: [Real, MR, Virtual].
+* Capture type: [Preview, Video, Image].
+These are formats supported: 
+| Format  | Camera Type  | Mode  | Capture Type  |
+|  -------- | -------- | -------- | -------- |
+| YUV  | Main 
+
+CV  | Real 
+
+Real  | Preview, Video, Image 
+
+Video, Image  |
+| RGBA  | Main 
+
+Main 
+
+CR  | Real 
+
+MR, Virtual 
+
+Real  | Video 
+
+Video, Image 
+
+Video  |
+| JPEG  | Main  | Real, MR, Virtual  | Image  |
 
 
 
@@ -350,8 +373,9 @@ Camera distortion vector size.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -381,7 +405,7 @@ Camera context to be used while connecting to camera.
 ### MLCameraMRConnectInfo {#struct-mlcameramrconnectinfo}
 
 ```cpp
-typedef struct MLCameraMRConnectInfo  MLCameraMRConnectInfo;
+typedef struct MLCameraMRConnectInfo MLCameraMRConnectInfo;
 ```
 
 
@@ -398,7 +422,7 @@ A structure to encapsulate connection settings for MR capture.
 ### MLCameraConnectContext {#struct-mlcameraconnectcontext}
 
 ```cpp
-typedef struct MLCameraConnectContext  MLCameraConnectContext;
+typedef struct MLCameraConnectContext MLCameraConnectContext;
 ```
 
 
@@ -415,7 +439,7 @@ A structure to encapsulate context for a CameraConnect Request.
 ### MLCameraCaptureStreamCaps {#struct-mlcameracapturestreamcaps}
 
 ```cpp
-typedef struct MLCameraCaptureStreamCaps  MLCameraCaptureStreamCaps;
+typedef struct MLCameraCaptureStreamCaps MLCameraCaptureStreamCaps;
 ```
 
 A structure to encapsulate stream capabilities. 
@@ -427,8 +451,9 @@ The capabilities for each stream supported by logical camera device can be queri
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -438,7 +463,7 @@ The capabilities for each stream supported by logical camera device can be queri
 ### MLCameraCaptureStreamConfig {#struct-mlcameracapturestreamconfig}
 
 ```cpp
-typedef struct MLCameraCaptureStreamConfig  MLCameraCaptureStreamConfig;
+typedef struct MLCameraCaptureStreamConfig MLCameraCaptureStreamConfig;
 ```
 
 
@@ -455,7 +480,7 @@ A structure to encapsulate stream configurations.
 ### MLCameraCaptureConfig {#struct-mlcameracaptureconfig}
 
 ```cpp
-typedef struct MLCameraCaptureConfig  MLCameraCaptureConfig;
+typedef struct MLCameraCaptureConfig MLCameraCaptureConfig;
 ```
 
 
@@ -472,7 +497,7 @@ A structure to encapsulate capture configuration.
 ### MLCameraPlaneInfo {#struct-mlcameraplaneinfo}
 
 ```cpp
-typedef struct MLCameraPlaneInfo  MLCameraPlaneInfo;
+typedef struct MLCameraPlaneInfo MLCameraPlaneInfo;
 ```
 
 
@@ -489,7 +514,7 @@ Per plane info for captured output.
 ### MLCameraOutput {#struct-mlcameraoutput}
 
 ```cpp
-typedef struct MLCameraOutput  MLCameraOutput;
+typedef struct MLCameraOutput MLCameraOutput;
 ```
 
 
@@ -506,7 +531,7 @@ A structure to encapsulate captured output.
 ### MLCameraIntrinsicCalibrationParameters {#struct-mlcameraintrinsiccalibrationparameters}
 
 ```cpp
-typedef struct MLCameraIntrinsicCalibrationParameters  MLCameraIntrinsicCalibrationParameters;
+typedef struct MLCameraIntrinsicCalibrationParameters MLCameraIntrinsicCalibrationParameters;
 ```
 
 Camera intrinsic parameter. 
@@ -516,8 +541,9 @@ Camera intrinsic parameter.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -527,7 +553,7 @@ Camera intrinsic parameter.
 ### MLCameraResultExtras {#struct-mlcameraresultextras}
 
 ```cpp
-typedef struct MLCameraResultExtras  MLCameraResultExtras;
+typedef struct MLCameraResultExtras MLCameraResultExtras;
 ```
 
 
@@ -544,7 +570,7 @@ A structure to encapsulate various indices for a capture result.
 ### MLCameraDeviceAvailabilityInfo {#struct-mlcameradeviceavailabilityinfo}
 
 ```cpp
-typedef struct MLCameraDeviceAvailabilityInfo  MLCameraDeviceAvailabilityInfo;
+typedef struct MLCameraDeviceAvailabilityInfo MLCameraDeviceAvailabilityInfo;
 ```
 
 
@@ -561,7 +587,7 @@ A structure to represent info on camera availability.
 ### MLCameraDeviceAvailabilityStatusCallbacks {#struct-mlcameradeviceavailabilitystatuscallbacks}
 
 ```cpp
-typedef struct MLCameraDeviceAvailabilityStatusCallbacks  MLCameraDeviceAvailabilityStatusCallbacks;
+typedef struct MLCameraDeviceAvailabilityStatusCallbacks MLCameraDeviceAvailabilityStatusCallbacks;
 ```
 
 
@@ -578,7 +604,7 @@ Device availability status callbacks to be implemented by client to receive devi
 ### MLCameraDeviceStatusCallbacks {#struct-mlcameradevicestatuscallbacks}
 
 ```cpp
-typedef struct MLCameraDeviceStatusCallbacks  MLCameraDeviceStatusCallbacks;
+typedef struct MLCameraDeviceStatusCallbacks MLCameraDeviceStatusCallbacks;
 ```
 
 
@@ -595,7 +621,7 @@ Device status callbacks to be implemented by client to receive device status if 
 ### MLCameraCaptureCallbacks {#struct-mlcameracapturecallbacks}
 
 ```cpp
-typedef struct MLCameraCaptureCallbacks  MLCameraCaptureCallbacks;
+typedef struct MLCameraCaptureCallbacks MLCameraCaptureCallbacks;
 ```
 
 Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. 
@@ -638,8 +664,9 @@ Shall be called before calling [MLCameraConnect()](/api-ref/api/Modules/group___
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -671,8 +698,9 @@ Shall be called before calling [MLCameraPrepareCapture()](/api-ref/api/Modules/g
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -704,8 +732,9 @@ Shall be called before calling MLCameraSetDeviceAvailabilityStatusCallbacks().
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -737,8 +766,9 @@ Shall be called before calling [MLCameraSetDeviceStatusCallbacks()](/api-ref/api
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -770,8 +800,9 @@ Shall be called before calling [MLCameraSetCaptureCallbacks()](/api-ref/api/Modu
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -811,8 +842,9 @@ Initialize ML Camera API, Register callback for device availability. If the user
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -854,8 +886,9 @@ Connect to camera device.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -894,8 +927,9 @@ Query the no of streams supported by camera device.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -940,8 +974,9 @@ Retrieves either the number of capabilities supported by the given stream or an 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -978,8 +1013,9 @@ Disconnect from camera device.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1009,8 +1045,9 @@ Uninitialize ML Camera API, unregister callback for device availability. Should 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1052,8 +1089,9 @@ This API triggers AEAWB sequence and returns when AEAWB convergence has been ach
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1102,8 +1140,9 @@ Note: When preparing capture the width and height parameters should match one of
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1142,8 +1181,9 @@ This API updates the capture settings for an active preview/video stream. The AP
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1186,8 +1226,9 @@ Client needs to implement the callbacks defined by [MLCameraDeviceStatusCallback
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1233,8 +1274,9 @@ Shall be called before capture operation for preview/image/video.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1279,8 +1321,9 @@ This is a blocking call, it will return after the end of on_image_buffer_availab
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1323,8 +1366,9 @@ YUV/RGBA frames are provides through callback.For encoded video capture valid en
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1367,8 +1411,9 @@ The captured preview YUV frames will be returned to the application via on_previ
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1409,8 +1454,9 @@ User should allow some time, i.e., >500ms, after MLCameraCaptureVideoStart and b
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1449,8 +1495,9 @@ Stop preview.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1493,8 +1540,9 @@ Note: This API can still be used even if [MLCameraSetDeviceStatusCallbacks()](/a
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1537,8 +1585,9 @@ Note: This API can still be used even if availability status callback is not reg
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1577,8 +1626,9 @@ Obtain camera device error code.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1620,8 +1670,9 @@ This API provides the handle for retrieving camera characteristics via APIs defi
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

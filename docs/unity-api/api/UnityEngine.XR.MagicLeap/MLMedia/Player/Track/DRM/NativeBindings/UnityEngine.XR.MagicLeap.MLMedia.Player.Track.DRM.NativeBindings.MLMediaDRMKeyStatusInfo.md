@@ -17,47 +17,13 @@ MediaDRM session keys status change info.
 
 ## Public Attributes
 
-### data {#intptr-data}
+### sessionIdByteArray {#intptr-sessionidbytearray}
 
-User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
-
-```csharp
-
-public IntPtr data;
-
-```
-
-
-
-
-
-
------------
-
-### hasNewUsableKey {#bool-hasnewusablekey}
-
-Indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key. 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public bool hasNewUsableKey;
-
-```
-
-
-
-
-
-
------------
-
-### keyStatusCount {#ulong-keystatuscount}
-
-Number of KeyStatus entries. 
-
-```csharp
-
-public ulong keyStatusCount;
+public IntPtr sessionIdByteArray;
 
 ```
 
@@ -85,13 +51,47 @@ public IntPtr keyStatuses;
 
 -----------
 
-### sessionIdByteArray {#intptr-sessionidbytearray}
+### keyStatusCount {#ulong-keystatuscount}
 
-[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
+Number of KeyStatus entries. 
 
 ```csharp
 
-public IntPtr sessionIdByteArray;
+public ulong keyStatusCount;
+
+```
+
+
+
+
+
+
+-----------
+
+### hasNewUsableKey {#bool-hasnewusablekey}
+
+Indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key. 
+
+```csharp
+
+public bool hasNewUsableKey;
+
+```
+
+
+
+
+
+
+-----------
+
+### data {#intptr-data}
+
+User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
+
+```csharp
+
+public IntPtr data;
 
 ```
 

@@ -77,7 +77,7 @@ Channel formats for buffered outputs, specified in [MLAudioBufferFormat](/api-re
 ### MLAudioBufferFormat {#struct-mlaudiobufferformat}
 
 ```cpp
-typedef struct MLAudioBufferFormat  MLAudioBufferFormat;
+typedef struct MLAudioBufferFormat MLAudioBufferFormat;
 ```
 
 Buffer format settings for input and output streams. 
@@ -87,8 +87,9 @@ Buffer format settings for input and output streams.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/struct_m_l_audio_buffer_format.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -98,7 +99,7 @@ Buffer format settings for input and output streams.
 ### MLAudioBuffer {#struct-mlaudiobuffer}
 
 ```cpp
-typedef struct MLAudioBuffer  MLAudioBuffer;
+typedef struct MLAudioBuffer MLAudioBuffer;
 ```
 
 

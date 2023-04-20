@@ -17,13 +17,13 @@ MediaPlayer Video Size Changed callback Info.
 
 ## Public Attributes
 
-### Data {#intptr-data}
+### Width {#int-width}
 
-User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
+The new surface width. 
 
 ```csharp
 
-public IntPtr Data;
+public int Width;
 
 ```
 
@@ -51,13 +51,13 @@ public int Height;
 
 -----------
 
-### Width {#int-width}
+### Data {#intptr-data}
 
-The new surface width. 
+User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public int Width;
+public IntPtr Data;
 
 ```
 

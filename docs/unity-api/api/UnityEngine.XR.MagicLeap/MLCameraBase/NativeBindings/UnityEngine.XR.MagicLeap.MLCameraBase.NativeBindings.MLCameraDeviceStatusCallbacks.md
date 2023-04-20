@@ -38,53 +38,13 @@ public static MLCameraDeviceStatusCallbacks Create()
 
 ## Public Attributes
 
-### OnDeviceDisconnected {#ondevicedisconnecteddelegate-ondevicedisconnected}
+### Version {#uint-version}
 
-Callback is invoked when the camera is disconnected. 
-
-```csharp
-
-public OnDeviceDisconnectedDelegate OnDeviceDisconnected;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OnDeviceDisconnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondevicedisconnecteddelegate) | Delegate to notify the app when the camera device disconnects.  |
-
-
-
-
-
------------
-
-### OnDeviceError {#ondeviceerrordelegate-ondeviceerror}
-
-Callback is invoked when the camera encountered errors. Invalid: The camera device is not available. Disabled: The camera device can't be opened due to a device policy. Device error: The camera device encountered a fatal error such as the Lightwear device has lost connection or the hardware comm bus is busy and not be able to response and caused a timeout. Service error: The camera service has encountered a fatal error and could not provide service. Capture failed: The capure request has failed. on&#95;capture&#95;failed or on&#95;capture&#95;buffer&#95;lost callbacks will be invoked when this error happens. 
+Version contains the version number for this structure. 
 
 ```csharp
 
-public OnDeviceErrorDelegate OnDeviceError;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OnDeviceErrorDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondeviceerrordelegate) | Delegate to notify the app about camera device error  |
-
-
-
-
-
------------
-
-### OnDeviceIdle {#ondeviceidledelegate-ondeviceidle}
-
-Callback is invoked when the camera stops streaming. 
-
-```csharp
-
-public OnDeviceIdleDelegate OnDeviceIdle;
+public uint Version;
 
 ```
 
@@ -112,16 +72,56 @@ public OnDeviceStreamingDelegate OnDeviceStreaming;
 
 -----------
 
-### Version {#uint-version}
+### OnDeviceIdle {#ondeviceidledelegate-ondeviceidle}
 
-Version contains the version number for this structure. 
+Callback is invoked when the camera stops streaming. 
 
 ```csharp
 
-public uint Version;
+public OnDeviceIdleDelegate OnDeviceIdle;
 
 ```
 
+
+
+
+
+
+-----------
+
+### OnDeviceError {#ondeviceerrordelegate-ondeviceerror}
+
+Callback is invoked when the camera encountered errors. Invalid: The camera device is not available. Disabled: The camera device can't be opened due to a device policy. Device error: The camera device encountered a fatal error such as the Lightwear device has lost connection or the hardware comm bus is busy and not be able to response and caused a timeout. Service error: The camera service has encountered a fatal error and could not provide service. Capture failed: The capure request has failed. on&#95;capture&#95;failed or on&#95;capture&#95;buffer&#95;lost callbacks will be invoked when this error happens. 
+
+```csharp
+
+public OnDeviceErrorDelegate OnDeviceError;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OnDeviceErrorDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondeviceerrordelegate) | Delegate to notify the app about camera device error  |
+
+
+
+
+
+-----------
+
+### OnDeviceDisconnected {#ondevicedisconnecteddelegate-ondevicedisconnected}
+
+Callback is invoked when the camera is disconnected. 
+
+```csharp
+
+public OnDeviceDisconnectedDelegate OnDeviceDisconnected;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OnDeviceDisconnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondevicedisconnecteddelegate) | Delegate to notify the app when the camera device disconnects.  |
 
 
 

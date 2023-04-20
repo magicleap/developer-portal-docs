@@ -65,36 +65,19 @@ public MLInputCustomHaptics(
 
 ## Public Attributes
 
-### Buzz {#readonly-buzz}
+### Type {#readonly-type}
 
-Potential buzz pattern to use. 
+Type of the pattern to be set. 
 
 ```csharp
 
-public readonly MLInputBuzzCommand Buzz;
+public readonly Type Type;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [MLInputBuzzCommand](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputBuzzCommand.md) | A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played.  |
-
-
-
-
-
------------
-
-### DurationMs {#readonly-uint-durationms}
-
-Duration of the pattern in millisecond (ms) This field will set the time for which a pattern is played: -If the inherited duration of a pre-defined pattern is greater, then it will be cut short and the next pattern will start playing. -If the inherited duration of a pre-defined pattern is smaller, then it will not repeat itself and will wait for the #duration to complete before starting to play the next pattern. -Buzz command's duration will supersede the #duration. Above caveat is true in case buzz command' 
-
-```csharp
-
-public readonly uint DurationMs;
-
-```
-
+| readonly [Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.md#enums-type) | Custom haptics pattern types.  |
 
 
 
@@ -122,19 +105,36 @@ public readonly MLInputPreDefinedPattern PreDefined;
 
 -----------
 
-### Type {#readonly-type}
+### DurationMs {#readonly-uint-durationms}
 
-Type of the pattern to be set. 
+Duration of the pattern in millisecond (ms) This field will set the time for which a pattern is played: -If the inherited duration of a pre-defined pattern is greater, then it will be cut short and the next pattern will start playing. -If the inherited duration of a pre-defined pattern is smaller, then it will not repeat itself and will wait for the #duration to complete before starting to play the next pattern. -Buzz command's duration will supersede the #duration. Above caveat is true in case buzz command' 
 
 ```csharp
 
-public readonly Type Type;
+public readonly uint DurationMs;
+
+```
+
+
+
+
+
+
+-----------
+
+### Buzz {#readonly-buzz}
+
+Potential buzz pattern to use. 
+
+```csharp
+
+public readonly MLInputBuzzCommand Buzz;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.md#enums-type) | Custom haptics pattern types.  |
+| readonly [MLInputBuzzCommand](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputBuzzCommand.md) | A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played.  |
 
 
 

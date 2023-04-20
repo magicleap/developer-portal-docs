@@ -18,82 +18,12 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserCreate {#mlresultcode-mlmediacea708parsercreate}
+### delegate void OnEmitEventDelegate {#delegate-void-onemiteventdelegate}
 
 ```csharp
-public MLResult.Code MLMediaCea708ParserCreate(
-    out ulong parserHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out ulong |parserHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserDestroy {#mlresultcode-mlmediacea708parserdestroy}
-
-```csharp
-public MLResult.Code MLMediaCea708ParserDestroy(
-    ulong parserHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |parserHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserParse {#mlresultcode-mlmediacea708parserparse}
-
-```csharp
-public MLResult.Code MLMediaCea708ParserParse(
+public delegate void OnEmitEventDelegate(
     ulong parserHandle,
-    IntPtr subtitleData,
-    uint subtitleDataSize
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |parserHandle||
-| IntPtr |subtitleData||
-| uint |subtitleDataSize||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserSetEmitEventCallback {#mlresultcode-mlmediacea708parsersetemiteventcallback}
-
-```csharp
-public MLResult.Code MLMediaCea708ParserSetEmitEventCallback(
-    ulong parserHandle,
-    OnEmitEventDelegate calback,
+    ref Cea708CaptionEvent captionEvent,
     IntPtr data
 )
 ```
@@ -104,7 +34,7 @@ public MLResult.Code MLMediaCea708ParserSetEmitEventCallback(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |parserHandle||
-| OnEmitEventDelegate |calback||
+| ref [Cea708CaptionEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionEvent.md) |captionEvent|CEA708 Caption Event. |
 | IntPtr |data||
 
 
@@ -142,12 +72,12 @@ public static void OnEmitEvent(
 
 -----------
 
-### delegate void OnEmitEventDelegate {#delegate-void-onemiteventdelegate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserSetEmitEventCallback {#mlresultcode-mlmediacea708parsersetemiteventcallback}
 
 ```csharp
-public delegate void OnEmitEventDelegate(
+public MLResult.Code MLMediaCea708ParserSetEmitEventCallback(
     ulong parserHandle,
-    ref Cea708CaptionEvent captionEvent,
+    OnEmitEventDelegate calback,
     IntPtr data
 )
 ```
@@ -158,8 +88,78 @@ public delegate void OnEmitEventDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |parserHandle||
-| ref [Cea708CaptionEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionEvent.md) |captionEvent|CEA708 Caption Event. |
+| OnEmitEventDelegate |calback||
 | IntPtr |data||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserParse {#mlresultcode-mlmediacea708parserparse}
+
+```csharp
+public MLResult.Code MLMediaCea708ParserParse(
+    ulong parserHandle,
+    IntPtr subtitleData,
+    uint subtitleDataSize
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |parserHandle||
+| IntPtr |subtitleData||
+| uint |subtitleDataSize||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserDestroy {#mlresultcode-mlmediacea708parserdestroy}
+
+```csharp
+public MLResult.Code MLMediaCea708ParserDestroy(
+    ulong parserHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |parserHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserCreate {#mlresultcode-mlmediacea708parsercreate}
+
+```csharp
+public MLResult.Code MLMediaCea708ParserCreate(
+    out ulong parserHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out ulong |parserHandle||
 
 
 

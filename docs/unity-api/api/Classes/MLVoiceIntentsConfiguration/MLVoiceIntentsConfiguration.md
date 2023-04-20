@@ -19,21 +19,6 @@ Inherits from: <br></br>ScriptableObject
 
 ## Public Methods
 
-### string GetJSONString {#string-getjsonstring}
-
-Return a string of the proper JSON format needed by the Voice Intents API. 
-
-```csharp
-public string GetJSONString()
-```
-
-
-
-
-
-
------------
-
 ### List&lt; string &gt; GetValues {#list-string-getvalues}
 
 Retrieve a list of the current list of voice commands as a string. 
@@ -49,54 +34,40 @@ public List< string > GetValues()
 
 -----------
 
+### string GetJSONString {#string-getjsonstring}
+
+Return a string of the proper JSON format needed by the Voice Intents API. 
+
+```csharp
+public string GetJSONString()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### AllVoiceIntents {#list-allvoiceintents}
+### VoiceCommandsToAdd {#list-voicecommandstoadd}
 
-The final data properly laid out to be assigned to the container that will be sent to the MLVoice API. VoiceCommandsToAdd will automatically be added to this in the proper format. Can also manually add to this list if it is not desired to do this through the editor inspector. This list follows the current structure of the [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) and is subject to change. 
+The simplified list of Voice Command data to be filled out in the inspector or manually added to. A unique name field will be created based on the Unique Id provided. 
 
 ```csharp
 
-public List< JSONData > AllVoiceIntents;
+public List< CustomVoiceIntents > VoiceCommandsToAdd;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
+| List&lt; [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md) &gt; | The Simplified Voice Command data needed to add commands from the inspector. The unique name field required in the final JSON will be auto generated based on the unique Id.  |
 
+**Details**
 
-
-
-
------------
-
-### AutoAllowAllSystemIntents {#bool-autoallowallsystemintents}
-
-```csharp
-
-public bool AutoAllowAllSystemIntents;
-
-```
-
-
-
-
-
-
------------
-
-### SlotsForVoiceCommands {#list-slotsforvoicecommands}
-
-```csharp
-
-public List< SlotData > SlotsForVoiceCommands;
-
-```
-
-| Type | Description  | 
-|--|--|
-| List&lt; [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) &gt; | The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.  |
+If GetJSONString or GetValues is called, this data will be altered to fit the current proper layout the API needs to function correctly and will be added to AllVoiceIntents, then this list will be cleared as these commands will no longer need to be added. 
 
 
 
@@ -122,23 +93,52 @@ public SystemIntentFlags SystemCommands;
 
 -----------
 
-### VoiceCommandsToAdd {#list-voicecommandstoadd}
-
-The simplified list of Voice Command data to be filled out in the inspector or manually added to. A unique name field will be created based on the Unique Id provided. 
+### SlotsForVoiceCommands {#list-slotsforvoicecommands}
 
 ```csharp
 
-public List< CustomVoiceIntents > VoiceCommandsToAdd;
+public List< SlotData > SlotsForVoiceCommands;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| List&lt; [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md) &gt; | The Simplified Voice Command data needed to add commands from the inspector. The unique name field required in the final JSON will be auto generated based on the unique Id.  |
+| List&lt; [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) &gt; | The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.  |
 
-**Details**
 
-If GetJSONString or GetValues is called, this data will be altered to fit the current proper layout the API needs to function correctly and will be added to AllVoiceIntents, then this list will be cleared as these commands will no longer need to be added. 
+
+
+
+-----------
+
+### AutoAllowAllSystemIntents {#bool-autoallowallsystemintents}
+
+```csharp
+
+public bool AutoAllowAllSystemIntents;
+
+```
+
+
+
+
+
+
+-----------
+
+### AllVoiceIntents {#list-allvoiceintents}
+
+The final data properly laid out to be assigned to the container that will be sent to the MLVoice API. VoiceCommandsToAdd will automatically be added to this in the proper format. Can also manually add to this list if it is not desired to do this through the editor inspector. This list follows the current structure of the [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) and is subject to change. 
+
+```csharp
+
+public List< JSONData > AllVoiceIntents;
+
+```
+
+| Type | Description  | 
+|--|--|
+| List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
 
 
 

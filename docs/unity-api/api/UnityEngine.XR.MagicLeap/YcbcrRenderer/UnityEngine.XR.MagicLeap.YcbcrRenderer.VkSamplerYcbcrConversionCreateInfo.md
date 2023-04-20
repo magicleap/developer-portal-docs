@@ -16,132 +16,13 @@ title: VkSamplerYcbcrConversionCreateInfo
 
 ## Public Attributes
 
-### chromaFilter {#uint-chromafilter}
+### ycbcrRange {#uint-ycbcrrange}
 
-VkFilter 
-
-```csharp
-
-public uint chromaFilter;
-
-```
-
-
-
-
-
-
------------
-
-### components {#vkcomponentmapping-components}
-
-[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
+VkSamplerYcbcrRange 
 
 ```csharp
 
-public VkComponentMapping components;
-
-```
-
-
-
-
-
-
------------
-
-### forceExplicitReconstruction {#uint-forceexplicitreconstruction}
-
-VkBool32 
-
-```csharp
-
-public uint forceExplicitReconstruction;
-
-```
-
-
-
-
-
-
------------
-
-### format {#uint-format}
-
-VkFormat 
-
-```csharp
-
-public uint format;
-
-```
-
-
-
-
-
-
------------
-
-### pNext {#intptr-pnext}
-
-void&#42; 
-
-```csharp
-
-public IntPtr pNext;
-
-```
-
-
-
-
-
-
------------
-
-### sType {#uint-stype}
-
-VkStructureType 
-
-```csharp
-
-public uint sType;
-
-```
-
-
-
-
-
-
------------
-
-### xChromaOffset {#uint-xchromaoffset}
-
-VkChromaLocation 
-
-```csharp
-
-public uint xChromaOffset;
-
-```
-
-
-
-
-
-
------------
-
-### yChromaOffset {#uint-ychromaoffset}
-
-VkChromaLocation 
-
-```csharp
-
-public uint yChromaOffset;
+public uint ycbcrRange;
 
 ```
 
@@ -169,13 +50,132 @@ public uint ycbcrModel;
 
 -----------
 
-### ycbcrRange {#uint-ycbcrrange}
+### yChromaOffset {#uint-ychromaoffset}
 
-VkSamplerYcbcrRange 
+VkChromaLocation 
 
 ```csharp
 
-public uint ycbcrRange;
+public uint yChromaOffset;
+
+```
+
+
+
+
+
+
+-----------
+
+### xChromaOffset {#uint-xchromaoffset}
+
+VkChromaLocation 
+
+```csharp
+
+public uint xChromaOffset;
+
+```
+
+
+
+
+
+
+-----------
+
+### sType {#uint-stype}
+
+VkStructureType 
+
+```csharp
+
+public uint sType;
+
+```
+
+
+
+
+
+
+-----------
+
+### pNext {#intptr-pnext}
+
+void&#42; 
+
+```csharp
+
+public IntPtr pNext;
+
+```
+
+
+
+
+
+
+-----------
+
+### format {#uint-format}
+
+VkFormat 
+
+```csharp
+
+public uint format;
+
+```
+
+
+
+
+
+
+-----------
+
+### forceExplicitReconstruction {#uint-forceexplicitreconstruction}
+
+VkBool32 
+
+```csharp
+
+public uint forceExplicitReconstruction;
+
+```
+
+
+
+
+
+
+-----------
+
+### components {#vkcomponentmapping-components}
+
+[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
+
+```csharp
+
+public VkComponentMapping components;
+
+```
+
+
+
+
+
+
+-----------
+
+### chromaFilter {#uint-chromafilter}
+
+VkFilter 
+
+```csharp
+
+public uint chromaFilter;
 
 ```
 

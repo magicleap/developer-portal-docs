@@ -16,11 +16,11 @@ title: JSONObject
 
 ## Public Attributes
 
-### results {#list-jsonresult-results}
+### success {#bool-success}
 
 ```csharp
 
-public List< JSONResult > results = null;
+public bool success;
 
 ```
 
@@ -31,11 +31,11 @@ public List< JSONResult > results = null;
 
 -----------
 
-### success {#bool-success}
+### results {#list-jsonresult-results}
 
 ```csharp
 
-public bool success;
+public List< JSONResult > results = null;
 
 ```
 

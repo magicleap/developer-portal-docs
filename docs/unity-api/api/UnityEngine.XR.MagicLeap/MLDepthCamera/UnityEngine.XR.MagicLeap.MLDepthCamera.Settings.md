@@ -35,26 +35,6 @@ API Level 22
 
 ## Public Attributes
 
-### Flags {#captureflags-flags}
-
-Flags to configure the depth data. 
-
-```csharp
-
-public CaptureFlags Flags;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [CaptureFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-captureflags) | Flags used to specify what kind of data to request from Depth Camera  |
-
-
-
-
-
------------
-
 ### Mode {#mode-mode}
 
 Depth camera Mode. 
@@ -76,6 +56,26 @@ public Mode Mode;
 See [Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md#mode-mode) for more details.
 
 NOTE: The system may not be able to service all the requested modes at any given time. This parameter is treated as a hint and data will be provided for the requested modes if available.
+
+
+
+
+
+-----------
+
+### Flags {#captureflags-flags}
+
+Flags to configure the depth data. 
+
+```csharp
+
+public CaptureFlags Flags;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [CaptureFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-captureflags) | Flags used to specify what kind of data to request from Depth Camera  |
 
 
 

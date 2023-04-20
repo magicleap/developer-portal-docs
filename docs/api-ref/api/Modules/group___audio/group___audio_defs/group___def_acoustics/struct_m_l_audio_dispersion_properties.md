@@ -28,13 +28,14 @@ struct MLAudioDispersionProperties;
 ```
 
 
-specifying acoustic dispersion (clustered reflections).
+riefProperties specifying acoustic dispersion (clustered reflections).
 
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

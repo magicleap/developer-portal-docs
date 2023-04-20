@@ -38,13 +38,30 @@ public static MLMediaRecorderOnError Create()
 
 ## Public Attributes
 
-### Data {#intptr-data}
+### TrackId {#uint-trackid}
 
-User data as passed to MLMediaRecorderSetEventCallbacks. 
+Holds valid track id only for track specific info (returned via on&#95;track&#95;info callback.). Holds 0 for the generic info (returned via on&#95;info callback). 
 
 ```csharp
 
-public IntPtr Data;
+public uint TrackId;
+
+```
+
+
+
+
+
+
+-----------
+
+### Extra {#int-extra}
+
+The extra info 
+
+```csharp
+
+public int Extra;
 
 ```
 
@@ -75,30 +92,13 @@ public Error Error;
 
 -----------
 
-### Extra {#int-extra}
+### Data {#intptr-data}
 
-The extra info 
-
-```csharp
-
-public int Extra;
-
-```
-
-
-
-
-
-
------------
-
-### TrackId {#uint-trackid}
-
-Holds valid track id only for track specific info (returned via on&#95;track&#95;info callback.). Holds 0 for the generic info (returned via on&#95;info callback). 
+User data as passed to MLMediaRecorderSetEventCallbacks. 
 
 ```csharp
 
-public uint TrackId;
+public IntPtr Data;
 
 ```
 

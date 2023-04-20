@@ -16,26 +16,20 @@ title: DeviceCommands
 
 ## Public Enums
 
-### LEDColor {#enums-ledcolor}
+### VibePattern {#enums-vibepattern}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| BrightMissionRed | 0|   |
-| PastelMissionRed | |   |
-| BrightFloridaOrange | |   |
-| PastelFloridaOrange | |   |
-| BrightLunaYellow | |   |
-| PastelLunaYellow | |   |
-| BrightNebulaPink | |   |
-| PastelNebulaPink | |   |
-| BrightCosmicPurple | |   |
-| PastelCosmicPurple | |   |
-| BrightMysticBlue | |   |
-| PastelMysticBlue | |   |
-| BrightCelestialBlue | |   |
-| PastelCelestialBlue | |   |
-| BrightShaggleGreen | |   |
-| PastelShaggleGreen | |   |
+| None | 0|   |
+| Click | |   |
+| Bump | |   |
+| DoubleClick | |   |
+| Buzz | |   |
+| Tick | |   |
+| ForceDown | |   |
+| ForceUp | |   |
+| ForceDwell | |   |
+| SecondForceDown | |   |
 
 
 
@@ -46,16 +40,30 @@ title: DeviceCommands
 
 -----------
 
-### LEDEffect {#enums-ledeffect}
+### VibeIntensity {#enums-vibeintensity}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| RotateCW | 0|   |
-| RotateCCW | |   |
-| Pulse | |   |
-| PaintCW | |   |
-| PaintCCW | |   |
-| Blink | |   |
+| Low | 0|   |
+| Medium | |   |
+| High | |   |
+
+
+
+
+
+
+
+
+-----------
+
+### LEDSpeed {#enums-ledspeed}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Slow | 0|   |
+| Medium | |   |
+| Fast | |   |
 
 
 
@@ -99,13 +107,16 @@ title: DeviceCommands
 
 -----------
 
-### LEDSpeed {#enums-ledspeed}
+### LEDEffect {#enums-ledeffect}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Slow | 0|   |
-| Medium | |   |
-| Fast | |   |
+| RotateCW | 0|   |
+| RotateCCW | |   |
+| Pulse | |   |
+| PaintCW | |   |
+| PaintCCW | |   |
+| Blink | |   |
 
 
 
@@ -116,37 +127,26 @@ title: DeviceCommands
 
 -----------
 
-### VibeIntensity {#enums-vibeintensity}
+### LEDColor {#enums-ledcolor}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Low | 0|   |
-| Medium | |   |
-| High | |   |
-
-
-
-
-
-
-
-
------------
-
-### VibePattern {#enums-vibepattern}
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| None | 0|   |
-| Click | |   |
-| Bump | |   |
-| DoubleClick | |   |
-| Buzz | |   |
-| Tick | |   |
-| ForceDown | |   |
-| ForceUp | |   |
-| ForceDwell | |   |
-| SecondForceDown | |   |
+| BrightMissionRed | 0|   |
+| PastelMissionRed | |   |
+| BrightFloridaOrange | |   |
+| PastelFloridaOrange | |   |
+| BrightLunaYellow | |   |
+| PastelLunaYellow | |   |
+| BrightNebulaPink | |   |
+| PastelNebulaPink | |   |
+| BrightCosmicPurple | |   |
+| PastelCosmicPurple | |   |
+| BrightMysticBlue | |   |
+| PastelMysticBlue | |   |
+| BrightCelestialBlue | |   |
+| PastelCelestialBlue | |   |
+| BrightShaggleGreen | |   |
+| PastelShaggleGreen | |   |
 
 
 

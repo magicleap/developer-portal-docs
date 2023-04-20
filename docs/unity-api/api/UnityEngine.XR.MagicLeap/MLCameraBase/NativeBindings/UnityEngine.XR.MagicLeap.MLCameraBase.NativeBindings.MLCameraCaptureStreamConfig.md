@@ -60,50 +60,13 @@ public static MLCameraCaptureStreamConfig Create(
 
 ## Public Attributes
 
-### CaptureType {#mlcameracapturetype-capturetype}
+### Width {#int-width}
 
-capture&#95;type Image Preview 
-
-```csharp
-
-public MLCamera.CaptureType CaptureType;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
-
-
-
-
-
------------
-
-### Height {#int-height}
-
-Resolution height 
+Capture Resolution 
 
 ```csharp
 
-public int Height;
-
-```
-
-
-
-
-
-
------------
-
-### MediaRecorderSurfaceHandle {#ulong-mediarecordersurfacehandle}
-
-media recorder surface, only valid for capture type video &#42; set to ML&#95;INVALID&#95;HANDLE for yuv/rgba video capture 
-
-```csharp
-
-public ulong MediaRecorderSurfaceHandle;
+public int Width;
 
 ```
 
@@ -134,16 +97,53 @@ public MLCamera.OutputFormat OutputFormat;
 
 -----------
 
-### Width {#int-width}
+### MediaRecorderSurfaceHandle {#ulong-mediarecordersurfacehandle}
 
-Capture Resolution 
+media recorder surface, only valid for capture type video &#42; set to ML&#95;INVALID&#95;HANDLE for yuv/rgba video capture 
 
 ```csharp
 
-public int Width;
+public ulong MediaRecorderSurfaceHandle;
 
 ```
 
+
+
+
+
+
+-----------
+
+### Height {#int-height}
+
+Resolution height 
+
+```csharp
+
+public int Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### CaptureType {#mlcameracapturetype-capturetype}
+
+capture&#95;type Image Preview 
+
+```csharp
+
+public MLCamera.CaptureType CaptureType;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 

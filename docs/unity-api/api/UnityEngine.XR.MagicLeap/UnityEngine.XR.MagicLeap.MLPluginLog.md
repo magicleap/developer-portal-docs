@@ -42,36 +42,12 @@ public static VerbosityLevel Level { get; set; }
 
 ## Public Methods
 
-### void Debug {#void-debug}
+### void WarningFormat {#void-warningformat}
 
-Prints the given log message. 
-
-```csharp
-public static void Debug(
-    object logMsg
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| object |logMsg|The message to print.|
-
-
-
-
-
-
------------
-
-### void DebugFormat {#void-debugformat}
-
-Prints the given log message with formatting. 
+Prints the given log message as a warning with formatting. 
 
 ```csharp
-public static void DebugFormat(
+public static void WarningFormat(
     string logMsg,
     params object [] args
 )
@@ -82,8 +58,8 @@ public static void DebugFormat(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |logMsg|The formatted message to print.|
-| params object [] |args|The arguments to pass the formatted log message|
+| string |logMsg|The formatted warning message to print.|
+| params object [] |args|The arguments to pass the formatted message|
 
 
 
@@ -92,12 +68,12 @@ public static void DebugFormat(
 
 -----------
 
-### void Error {#void-error}
+### void Warning {#void-warning}
 
-Prints the given log message as an error. 
+Prints the given log message as a warning. 
 
 ```csharp
-public static void Error(
+public static void Warning(
     object logMsg
 )
 ```
@@ -107,7 +83,7 @@ public static void Error(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| object |logMsg|The error to print.|
+| object |logMsg|The warning to print.|
 
 
 
@@ -142,12 +118,12 @@ public static void ErrorFormat(
 
 -----------
 
-### void Warning {#void-warning}
+### void Error {#void-error}
 
-Prints the given log message as a warning. 
+Prints the given log message as an error. 
 
 ```csharp
-public static void Warning(
+public static void Error(
     object logMsg
 )
 ```
@@ -157,7 +133,7 @@ public static void Warning(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| object |logMsg|The warning to print.|
+| object |logMsg|The error to print.|
 
 
 
@@ -166,12 +142,12 @@ public static void Warning(
 
 -----------
 
-### void WarningFormat {#void-warningformat}
+### void DebugFormat {#void-debugformat}
 
-Prints the given log message as a warning with formatting. 
+Prints the given log message with formatting. 
 
 ```csharp
-public static void WarningFormat(
+public static void DebugFormat(
     string logMsg,
     params object [] args
 )
@@ -182,8 +158,32 @@ public static void WarningFormat(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |logMsg|The formatted warning message to print.|
-| params object [] |args|The arguments to pass the formatted message|
+| string |logMsg|The formatted message to print.|
+| params object [] |args|The arguments to pass the formatted log message|
+
+
+
+
+
+
+-----------
+
+### void Debug {#void-debug}
+
+Prints the given log message. 
+
+```csharp
+public static void Debug(
+    object logMsg
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| object |logMsg|The message to print.|
 
 
 

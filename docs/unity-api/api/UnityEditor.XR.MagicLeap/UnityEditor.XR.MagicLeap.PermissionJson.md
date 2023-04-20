@@ -19,26 +19,11 @@ title: PermissionJson
 
 ## Public Attributes
 
-### description {#string-description}
+### name {#string-name}
 
 ```csharp
 
-public string description;
-
-```
-
-
-
-
-
-
------------
-
-### level {#string-level}
-
-```csharp
-
-public string level;
+public string name;
 
 ```
 
@@ -64,11 +49,26 @@ public string min_api_level;
 
 -----------
 
-### name {#string-name}
+### level {#string-level}
 
 ```csharp
 
-public string name;
+public string level;
+
+```
+
+
+
+
+
+
+-----------
+
+### description {#string-description}
+
+```csharp
+
+public string description;
 
 ```
 

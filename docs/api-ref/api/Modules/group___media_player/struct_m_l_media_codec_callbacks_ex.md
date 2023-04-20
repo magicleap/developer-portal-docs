@@ -36,8 +36,9 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

@@ -42,11 +42,11 @@ public MLAudioBuffer(
 
 ## Public Attributes
 
-### Ptr {#intptr-ptr}
+### Size {#uint-size}
 
 ```csharp
 
-public IntPtr Ptr;
+public uint Size;
 
 ```
 
@@ -57,11 +57,11 @@ public IntPtr Ptr;
 
 -----------
 
-### Size {#uint-size}
+### Ptr {#intptr-ptr}
 
 ```csharp
 
-public uint Size;
+public IntPtr Ptr;
 
 ```
 

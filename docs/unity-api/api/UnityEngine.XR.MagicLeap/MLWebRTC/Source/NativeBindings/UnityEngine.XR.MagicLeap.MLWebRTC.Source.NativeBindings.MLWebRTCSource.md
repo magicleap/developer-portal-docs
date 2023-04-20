@@ -60,13 +60,13 @@ public static MLWebRTCSource Create()
 
 ## Public Attributes
 
-### Handle {#ulong-handle}
+### Version {#uint-version}
 
-Handle of the struct. 
+Version of the struct. 
 
 ```csharp
 
-public ulong Handle;
+public uint Version;
 
 ```
 
@@ -97,13 +97,13 @@ public MLWebRTC.MediaStream.Track.Type Type;
 
 -----------
 
-### Version {#uint-version}
+### Handle {#ulong-handle}
 
-Version of the struct. 
+Handle of the struct. 
 
 ```csharp
 
-public uint Version;
+public ulong Handle;
 
 ```
 

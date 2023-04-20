@@ -17,13 +17,30 @@ Data type that encapsulates [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedi
 
 ## Public Attributes
 
-### InitData {#intptr-initdata}
+### OptionalParams {#readonly-intptr-optionalparams}
 
-The container-specific data, its meaning is interpreted based on the mime-type provided in the mime&#95;type parameter. It could contain, for example, the content ID, key ID or other data obtained from the content metadata that is required in generating the key request. 
+Optional parameters included in the key request message to allow a client application to provide additional message parameters to the server. 
 
 ```csharp
 
-public IntPtr InitData;
+public readonly IntPtr OptionalParams;
+
+```
+
+
+
+
+
+
+-----------
+
+### MimeType {#string-mimetype}
+
+The mime type of the content. 
+
+```csharp
+
+public string MimeType;
 
 ```
 
@@ -54,30 +71,13 @@ public KeyType KeyType;
 
 -----------
 
-### MimeType {#string-mimetype}
+### InitData {#intptr-initdata}
 
-The mime type of the content. 
-
-```csharp
-
-public string MimeType;
-
-```
-
-
-
-
-
-
------------
-
-### OptionalParams {#readonly-intptr-optionalparams}
-
-Optional parameters included in the key request message to allow a client application to provide additional message parameters to the server. 
+The container-specific data, its meaning is interpreted based on the mime-type provided in the mime&#95;type parameter. It could contain, for example, the content ID, key ID or other data obtained from the content metadata that is required in generating the key request. 
 
 ```csharp
 
-public readonly IntPtr OptionalParams;
+public IntPtr InitData;
 
 ```
 

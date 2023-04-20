@@ -36,11 +36,11 @@ public ulong Handle { get; set; }
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AcquireNextAvailableFrame {#mlresult-acquirenextavailableframe}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ReleaseFrame {#mlresult-releaseframe}
 
 ```csharp
-public MLResult AcquireNextAvailableFrame(
-    out ulong nativeBuffer
+public MLResult ReleaseFrame(
+    ulong nativeBuffer
 )
 ```
 
@@ -49,7 +49,7 @@ public MLResult AcquireNextAvailableFrame(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out ulong |nativeBuffer||
+| ulong |nativeBuffer||
 
 
 
@@ -58,99 +58,11 @@ public MLResult AcquireNextAvailableFrame(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
+### delegate void OnFrameAvailableDelegate {#delegate-void-onframeavailabledelegate}
 
 ```csharp
-public MLResult Destroy()
+public delegate void OnFrameAvailableDelegate()
 ```
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameNumber {#mlresult-getframenumber}
-
-```csharp
-public MLResult GetFrameNumber(
-    out ulong number
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out ulong |number||
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameQueueBufferTimestamp {#mlresult-getframequeuebuffertimestamp}
-
-```csharp
-public MLResult GetFrameQueueBufferTimestamp(
-    out long timestampNs
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out long |timestampNs||
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTimestamp {#mlresult-getframetimestamp}
-
-```csharp
-public MLResult GetFrameTimestamp(
-    out long timestampNs
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out long |timestampNs||
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTransformMatrix {#mlresult-getframetransformmatrix}
-
-```csharp
-public MLResult GetFrameTransformMatrix(
-    float [] frameTransformMatColMajor
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| float [] |frameTransformMatColMajor||
 
 
 
@@ -211,10 +123,98 @@ public MLNativeSurface(
 
 -----------
 
-### delegate void OnFrameAvailableDelegate {#delegate-void-onframeavailabledelegate}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTransformMatrix {#mlresult-getframetransformmatrix}
 
 ```csharp
-public delegate void OnFrameAvailableDelegate()
+public MLResult GetFrameTransformMatrix(
+    float [] frameTransformMatColMajor
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| float [] |frameTransformMatColMajor||
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTimestamp {#mlresult-getframetimestamp}
+
+```csharp
+public MLResult GetFrameTimestamp(
+    out long timestampNs
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out long |timestampNs||
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameQueueBufferTimestamp {#mlresult-getframequeuebuffertimestamp}
+
+```csharp
+public MLResult GetFrameQueueBufferTimestamp(
+    out long timestampNs
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out long |timestampNs||
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameNumber {#mlresult-getframenumber}
+
+```csharp
+public MLResult GetFrameNumber(
+    out ulong number
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out ulong |number||
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
+
+```csharp
+public MLResult Destroy()
 ```
 
 
@@ -224,11 +224,11 @@ public delegate void OnFrameAvailableDelegate()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ReleaseFrame {#mlresult-releaseframe}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AcquireNextAvailableFrame {#mlresult-acquirenextavailableframe}
 
 ```csharp
-public MLResult ReleaseFrame(
-    ulong nativeBuffer
+public MLResult AcquireNextAvailableFrame(
+    out ulong nativeBuffer
 )
 ```
 
@@ -237,7 +237,7 @@ public MLResult ReleaseFrame(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |nativeBuffer||
+| out ulong |nativeBuffer||
 
 
 

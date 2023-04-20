@@ -17,34 +17,6 @@ The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicL
 
 ## Public Methods
 
-### [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) Create {#mlwebrtcdatachannelmessage-create}
-
-Creates an initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object. 
-
-```csharp
-public static MLWebRTCDataChannelMessage Create(
-    string message
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |message|The string message to send.|
-
-
-
-
-
-
-**Returns**: An initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object.
-
-
-
------------
-
 ### [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) Create< T > {#mlwebrtcdatachannelmessage-create-t-}
 
 Creates an initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object. 
@@ -73,32 +45,43 @@ public static MLWebRTCDataChannelMessage Create< T >(
 
 -----------
 
-## Public Attributes
+### [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) Create {#mlwebrtcdatachannelmessage-create}
 
-### Data {#intptr-data}
-
-Pointer to the message in unmanaged memory. 
+Creates an initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object. 
 
 ```csharp
-
-public IntPtr Data;
-
+public static MLWebRTCDataChannelMessage Create(
+    string message
+)
 ```
 
 
+**Parameters**
 
+| Type | Name  | Description  | 
+|--|--|--|
+| string |message|The string message to send.|
+
+
+
+
+
+
+**Returns**: An initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object.
 
 
 
 -----------
 
-### DataSize {#ulong-datasize}
+## Public Attributes
 
-Describes how large the unmanaged data is. 
+### Version {#uint-version}
+
+Version of the struct. 
 
 ```csharp
 
-public ulong DataSize;
+public uint Version;
 
 ```
 
@@ -126,13 +109,30 @@ public bool IsBinary;
 
 -----------
 
-### Version {#uint-version}
+### DataSize {#ulong-datasize}
 
-Version of the struct. 
+Describes how large the unmanaged data is. 
 
 ```csharp
 
-public uint Version;
+public ulong DataSize;
+
+```
+
+
+
+
+
+
+-----------
+
+### Data {#intptr-data}
+
+Pointer to the message in unmanaged memory. 
+
+```csharp
+
+public IntPtr Data;
 
 ```
 

@@ -36,8 +36,9 @@ Configuration values for creating the Native Surface.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -103,7 +104,7 @@ uint32_t width;
 ```
 
 
-Default width of the buffer while dequeuing the buffer from consumer. This should be same as frame width. Invalid width (negative or 0) will result in failure to create the Surface with the error code MLResult_InvalidParam 
+Default width of the buffer while dequeuing the buffer from consumer. This should be same as frame width. Invalid width (negative or 0) will result in failure to create the Surface with the error code MLResult_InvalidParam. 
 
 
 
@@ -118,7 +119,7 @@ uint32_t height;
 ```
 
 
-Default height of the buffer while dequeuing the buffer from consumer. This should be same as frame height. Invalid height (negative or 0) will result in failure to create the Surface with the error code MLResult_InvalidParam 
+Default height of the buffer while dequeuing the buffer from consumer. This should be same as frame height. Invalid height (negative or 0) will result in failure to create the Surface with the error code MLResult_InvalidParam. 
 
 
 

@@ -40,23 +40,6 @@ public class MLWebView : MLAPIBase
 
 ## Public Fields
 
-### IgnoreCertificateError {#bool-ignorecertificateerror}
-
-Flag to indicate if urls issuing certificate errors should be loaded or not 
-
-```csharp
-
-public bool IgnoreCertificateError { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### WebViewHandle {#ulong-webviewhandle}
 
 Retrieves the assigned web view handle. 
@@ -78,14 +61,31 @@ public ulong WebViewHandle { get; set; }
 
 -----------
 
+### IgnoreCertificateError {#bool-ignorecertificateerror}
+
+Flag to indicate if urls issuing certificate errors should be loaded or not 
+
+```csharp
+
+public bool IgnoreCertificateError { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ## Public Methods
 
-### bool CanGoBack {#bool-cangoback}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ZoomOut {#mlresult-zoomout}
 
-Checks if the "Back" action is currently valid. 
+Zoom out one level. 
 
 ```csharp
-public bool CanGoBack()
+public MLResult ZoomOut()
 ```
 
 
@@ -93,62 +93,51 @@ public bool CanGoBack()
 
 
 
-**Returns**: True if can use the "Back" action.
-
-
-
------------
-
-### bool CanGoForward {#bool-cangoforward}
-
-Checks if the "Forward" action is currently valid. 
-
-```csharp
-public bool CanGoForward()
-```
-
-
-
-
-
-
-**Returns**: True if can use the "Forward" action.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ClearCache {#mlresult-clearcache}
-
-Clear the webview cache. 
-
-```csharp
-public MLResult ClearCache()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if cache cleared successfully
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) zoomed out.
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if clearing cache failed due to an internal error.
+MLResult.Code.WebViewResultZoomLimitReached if cannot zoom out any further.
+
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if it failed to reset zoom due to an internal error.
 
 
 
 -----------
 
-### [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) Create {#mlwebview-create}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ZoomIn {#mlresult-zoomin}
 
-Create a [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) will be ready to use once this function returns with MLResult&#95;OK. 
+Zoom in one level. 
 
 ```csharp
-public static MLWebView Create(
-    uint width,
-    uint height
+public MLResult ZoomIn()
+```
+
+
+
+
+
+
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) zoomed in.
+
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+
+MLResult.Code.WebViewResultZoomLimitReached if cannot zoom in any further.
+
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if it failed to reset zoom due to an internal error.
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ScrollBy {#mlresult-scrollby}
+
+Triggers a mouse "Scroll" event. 
+
+```csharp
+public MLResult ScrollBy(
+    uint xPixels,
+    uint yPixels
 )
 ```
 
@@ -157,36 +146,15 @@ public static MLWebView Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| uint |width|Width of the WebView in pixels.|
-| uint |height|Height of the WebView in pixels.|
+| uint |xPixels|The number of pixels to scroll on the x axis.|
+| uint |yPixels|The number of pixels to scroll on the y axis.|
 
 
 
 
 
 
-**Returns**: [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) instance if creation was successful, null otherwise.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
-
-Destroy a [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) will be terminated by this function call and the shall no longer be valid. 
-
-```csharp
-public MLResult Destroy()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if was destroyed successfully.
-
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if an error occurred destroying the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md).
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) was scrolled.
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
@@ -194,31 +162,46 @@ public MLResult Destroy()
 
 -----------
 
-### Vector2Int GetScrollOffset {#vector2int-getscrolloffset}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Resume {#mlresult-resume}
 
-Get the scroll offset of the webview. 
+Resumes a webview after a previous call of Pause. Resume webview to the normal operation for all webview pause types. 
 
 ```csharp
-public Vector2Int GetScrollOffset()
+public MLResult Resume()
 ```
 
 
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+|  |handle|The webview being accessed.|
 
 
 
 
-**Returns**: Vector2Int representing the horizontal and vertical offset of the webview, in pixels.
+
+
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if resumed successfully.
+
+[MLResult.Code.IllegalState](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-illegalstate) if WebView was paused. See MLWebViewPause.
+
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle.
+
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if failed due to an internal error.
+
+[MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending) if the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle is not ready to use. See an asynchronous mode of MLWebViewCreate.
 
 
 
 -----------
 
-### Vector2Int GetScrollSize {#vector2int-getscrollsize}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ResetZoom {#mlresult-resetzoom}
 
-Get the entire scrollable size of the webview. This should be typically called afer OnLoadEnd to determine the scollable size of the main frame of the loaded page.Some pages might dynamically resize and this should be called before each frame draw to correctly determine the scrollable size of the webview. 
+Reset zoom level to 1.0. 
 
 ```csharp
-public Vector2Int GetScrollSize()
+public MLResult ResetZoom()
 ```
 
 
@@ -226,18 +209,22 @@ public Vector2Int GetScrollSize()
 
 
 
-**Returns**: Vector2Int representing the entire width and height of the webview, in pixels.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) zoom was reset.
+
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if it failed to reset zoom due to an internal error.
 
 
 
 -----------
 
-### string GetURL {#string-geturl}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) RemoveAllCookies {#mlresult-removeallcookies}
 
-Get the current URL. 
+Remove all webview cookies. 
 
 ```csharp
-public string GetURL()
+public MLResult RemoveAllCookies()
 ```
 
 
@@ -245,18 +232,22 @@ public string GetURL()
 
 
 
-**Returns**: Current URL.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if all cookies removed successfully.
+
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if removing all cookies failed due to an internal error.
 
 
 
 -----------
 
-### double GetZoomFactor {#double-getzoomfactor}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Reload {#mlresult-reload}
 
-Get the current zoom factor. The default zoom factor is 1.0. 
+Trigger a "Reload" action in the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). 
 
 ```csharp
-public double GetZoomFactor()
+public MLResult Reload()
 ```
 
 
@@ -264,26 +255,7 @@ public double GetZoomFactor()
 
 
 
-**Returns**: Current numeric value for zoom factor.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GoBack {#mlresult-goback}
-
-Trigger a "Back" action in the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). Query #MLWebViewCanGoBack before calling this method. If there is no valid page to go back to, this method will be no-op. 
-
-```csharp
-public MLResult GoBack()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView Back action was initiated or cannot go back any further.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView Reload action was initiated.
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
@@ -291,34 +263,13 @@ public MLResult GoBack()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GoForward {#mlresult-goforward}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Pause {#mlresult-pause}
 
-Trigger a "Forward" action in the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). Query MLWebViewCanGoForward before calling this method. If there is no valid page to go forward to, this method will be no-op. 
-
-```csharp
-public MLResult GoForward()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView Forward action was initiated or cannot go forward any further.
-
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GoTo {#mlresult-goto}
-
-Go to a URL with the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). Note that success with this call only indicates that a load will be attempted. Caller can be notified about issues loading the URL via the event r on&#95;load&#95;error. 
+Pause the webview. Call MLWebViewResume to resume. This method provides a multiple pause types to the webview. 
 
 ```csharp
-public MLResult GoTo(
-    string url
+public MLResult Pause(
+    PauseType pauseType
 )
 ```
 
@@ -327,28 +278,33 @@ public MLResult GoTo(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |url|URL that will be loaded.|
+| [PauseType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-pausetype) |pauseType|The type of pause to be used.|
 
 
 
 
 
 
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView is attempting to load the specified URL.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if paused successfully.
 
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle or PauseType value.
+
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if failed due to an internal error.
+
+[MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending) if the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle is not ready to use. See an asynchronous mode of MLWebViewCreate.
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectChar {#mlresult-injectchar}
+### delegate void OnShowKeyboardDelegate {#delegate-void-onshowkeyboarddelegate}
 
-Sends a printable char keyboard event to [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). 
+The delegate for the keyboard show event. 
 
 ```csharp
-public MLResult InjectChar(
-    char charUtf
+public delegate void OnShowKeyboardDelegate(
+    MLWebView webView,
+    InputFieldData keyboardShowData
 )
 ```
 
@@ -357,7 +313,378 @@ public MLResult InjectChar(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| char |charUtf32|printable char utf code|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| [InputFieldData](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.InputFieldData.md) |keyboardShowData|Data about the clicked input field.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnServiceFailedDelegate {#delegate-void-onservicefaileddelegate}
+
+The delegate for the webview service failed event. 
+
+```csharp
+public delegate void OnServiceFailedDelegate(
+    MLWebView webView,
+    MLResult result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) code associated with the failure.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnServiceDisconnectedDelegate {#delegate-void-onservicedisconnecteddelegate}
+
+The delegate for the webview service disconnected event. 
+
+```csharp
+public delegate void OnServiceDisconnectedDelegate(
+    MLWebView webView
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnServiceConnectedDelegate {#delegate-void-onserviceconnecteddelegate}
+
+The delegate for the webview service connected event. 
+
+```csharp
+public delegate void OnServiceConnectedDelegate(
+    MLWebView webView
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnLoadErrorDelegate {#delegate-void-onloaderrordelegate}
+
+The delegate for the reasource load error event. 
+
+```csharp
+public delegate void OnLoadErrorDelegate(
+    MLWebView webView,
+    bool isMainFrame,
+    int httpStatusCode,
+    string errorStr,
+    string failedUrl
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| bool |isMainFrame|True if this event was for the main frame.|
+| int |httpStatusCode|Http status code for the URL load failure.|
+| string |errorStr|The stringified version of the error code.|
+| string |failedUrl|The url that caused the load error.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnLoadEndDelegate {#delegate-void-onloadenddelegate}
+
+The delegate for the reasource loaded event. 
+
+```csharp
+public delegate void OnLoadEndDelegate(
+    MLWebView webView,
+    bool isMainFrame,
+    int httpStatusCode
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| bool |isMainFrame|Whether this event was for the main frame.|
+| int |httpStatusCode|The standard http status code.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnKeyboardDismissDelegate {#delegate-void-onkeyboarddismissdelegate}
+
+The delegate for the keyboard dismiss event. 
+
+```csharp
+public delegate void OnKeyboardDismissDelegate(
+    MLWebView webView
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnDestroyDelegate {#delegate-void-ondestroydelegate}
+
+The delegate for the webview destroy event. 
+
+```csharp
+public delegate void OnDestroyDelegate(
+    MLWebView webView
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnCertificateErrorDelegate {#delegate-void-oncertificateerrordelegate}
+
+The delegate for the certificate error event. 
+
+```csharp
+public delegate void OnCertificateErrorDelegate(
+    MLWebView webView,
+    int errorCode,
+    string url,
+    string errorMessage,
+    string details,
+    bool certificateErrorIgnored
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| int |errorCode|Error code for ssl error.|
+| string |url|The url associated to the certificate error.|
+| string |errorMessage|Certificate error short description.|
+| string |details|Certificate error details.|
+| bool |certificateErrorIgnored||
+
+
+
+
+
+
+-----------
+
+### delegate void OnBeforeResourceLoadDelegate {#delegate-void-onbeforeresourceloaddelegate}
+
+The delegate for the before reasource loaded event. 
+
+```csharp
+public delegate void OnBeforeResourceLoadDelegate(
+    MLWebView webView,
+    string resourceURL
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| string |resourceURL|The url of the resource about to be loaded.|
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectMouseMove {#mlresult-injectmousemove}
+
+Moves the WebView mouse. 
+
+```csharp
+public MLResult InjectMouseMove(
+    uint xPosition,
+    uint yPosition,
+    EventFlags modifiers
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| uint |xPosition|Horizontal position of the cursor.|
+| uint |yPosition|Vertical position of the cursor. |
+| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Should be one or combination of EventFlags.|
+
+
+
+
+
+
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if internal mouse was moved.
+
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectMouseButtonUp {#mlresult-injectmousebuttonup}
+
+Sends a mouse button up/released event on a specific location on screen. 
+
+```csharp
+public MLResult InjectMouseButtonUp(
+    uint xPosition,
+    uint yPosition,
+    EventFlags modifiers
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| uint |xPosition|Horizontal position of the cursor.|
+| uint |yPosition|Vertical position of the cursor.|
+| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Should be one or combination of EventFlags.|
+
+
+
+
+
+
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if successful.
+
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectMouseButtonDown {#mlresult-injectmousebuttondown}
+
+Sends a mouse button down/pressed event on a specific location on screen. 
+
+```csharp
+public MLResult InjectMouseButtonDown(
+    uint xPosition,
+    uint yPosition,
+    EventFlags modifiers
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| uint |xPosition|Horizontal position of the cursor.|
+| uint |yPosition|Vertical position of the cursor.|
+| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Should be one or combination of EventFlags.|
+
+
+
+
+
+
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if successful.
+
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectKeyUp {#mlresult-injectkeyup}
+
+Sends a key up/release event to [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). 
+
+```csharp
+public MLResult InjectKeyUp(
+    MLWebView.KeyCode keyCode,
+    uint modifierMask
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView.KeyCode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-keycode) |keyCode|[MLWebView.KeyCode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-keycode).|
+| uint |modifierMask|Should be one or combination of [MLWebView.EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags).|
 
 
 
@@ -404,14 +731,13 @@ public MLResult InjectKeyDown(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectKeyUp {#mlresult-injectkeyup}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectChar {#mlresult-injectchar}
 
-Sends a key up/release event to [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). 
+Sends a printable char keyboard event to [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). 
 
 ```csharp
-public MLResult InjectKeyUp(
-    MLWebView.KeyCode keyCode,
-    uint modifierMask
+public MLResult InjectChar(
+    char charUtf
 )
 ```
 
@@ -420,8 +746,7 @@ public MLResult InjectKeyUp(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebView.KeyCode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-keycode) |keyCode|[MLWebView.KeyCode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-keycode).|
-| uint |modifierMask|Should be one or combination of [MLWebView.EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags).|
+| char |charUtf32|printable char utf code|
 
 
 
@@ -436,15 +761,13 @@ public MLResult InjectKeyUp(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectMouseButtonDown {#mlresult-injectmousebuttondown}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GoTo {#mlresult-goto}
 
-Sends a mouse button down/pressed event on a specific location on screen. 
+Go to a URL with the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). Note that success with this call only indicates that a load will be attempted. Caller can be notified about issues loading the URL via the event r on&#95;load&#95;error. 
 
 ```csharp
-public MLResult InjectMouseButtonDown(
-    uint xPosition,
-    uint yPosition,
-    EventFlags modifiers
+public MLResult GoTo(
+    string url
 )
 ```
 
@@ -453,16 +776,14 @@ public MLResult InjectMouseButtonDown(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| uint |xPosition|Horizontal position of the cursor.|
-| uint |yPosition|Vertical position of the cursor.|
-| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Should be one or combination of EventFlags.|
+| string |url|URL that will be loaded.|
 
 
 
 
 
 
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if successful.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView is attempting to load the specified URL.
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
@@ -470,33 +791,20 @@ public MLResult InjectMouseButtonDown(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectMouseButtonUp {#mlresult-injectmousebuttonup}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GoForward {#mlresult-goforward}
 
-Sends a mouse button up/released event on a specific location on screen. 
+Trigger a "Forward" action in the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). Query MLWebViewCanGoForward before calling this method. If there is no valid page to go forward to, this method will be no-op. 
 
 ```csharp
-public MLResult InjectMouseButtonUp(
-    uint xPosition,
-    uint yPosition,
-    EventFlags modifiers
-)
+public MLResult GoForward()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| uint |xPosition|Horizontal position of the cursor.|
-| uint |yPosition|Vertical position of the cursor.|
-| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Should be one or combination of EventFlags.|
 
 
 
 
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if successful.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView Forward action was initiated or cannot go forward any further.
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
@@ -504,33 +812,20 @@ public MLResult InjectMouseButtonUp(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) InjectMouseMove {#mlresult-injectmousemove}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GoBack {#mlresult-goback}
 
-Moves the WebView mouse. 
+Trigger a "Back" action in the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). Query #MLWebViewCanGoBack before calling this method. If there is no valid page to go back to, this method will be no-op. 
 
 ```csharp
-public MLResult InjectMouseMove(
-    uint xPosition,
-    uint yPosition,
-    EventFlags modifiers
-)
+public MLResult GoBack()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| uint |xPosition|Horizontal position of the cursor.|
-| uint |yPosition|Vertical position of the cursor. |
-| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Should be one or combination of EventFlags.|
 
 
 
 
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if internal mouse was moved.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView Back action was initiated or cannot go back any further.
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
@@ -538,314 +833,88 @@ public MLResult InjectMouseMove(
 
 -----------
 
-### delegate void OnBeforeResourceLoadDelegate {#delegate-void-onbeforeresourceloaddelegate}
+### double GetZoomFactor {#double-getzoomfactor}
 
-The delegate for the before reasource loaded event. 
+Get the current zoom factor. The default zoom factor is 1.0. 
 
 ```csharp
-public delegate void OnBeforeResourceLoadDelegate(
-    MLWebView webView,
-    string resourceURL
-)
+public double GetZoomFactor()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-| string |resourceURL|The url of the resource about to be loaded.|
 
 
 
+
+**Returns**: Current numeric value for zoom factor.
 
 
 
 -----------
 
-### delegate void OnCertificateErrorDelegate {#delegate-void-oncertificateerrordelegate}
+### string GetURL {#string-geturl}
 
-The delegate for the certificate error event. 
+Get the current URL. 
 
 ```csharp
-public delegate void OnCertificateErrorDelegate(
-    MLWebView webView,
-    int errorCode,
-    string url,
-    string errorMessage,
-    string details,
-    bool certificateErrorIgnored
-)
+public string GetURL()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-| int |errorCode|Error code for ssl error.|
-| string |url|The url associated to the certificate error.|
-| string |errorMessage|Certificate error short description.|
-| string |details|Certificate error details.|
-| bool |certificateErrorIgnored||
 
 
 
+
+**Returns**: Current URL.
 
 
 
 -----------
 
-### delegate void OnDestroyDelegate {#delegate-void-ondestroydelegate}
+### Vector2Int GetScrollSize {#vector2int-getscrollsize}
 
-The delegate for the webview destroy event. 
+Get the entire scrollable size of the webview. This should be typically called afer OnLoadEnd to determine the scollable size of the main frame of the loaded page.Some pages might dynamically resize and this should be called before each frame draw to correctly determine the scrollable size of the webview. 
 
 ```csharp
-public delegate void OnDestroyDelegate(
-    MLWebView webView
-)
+public Vector2Int GetScrollSize()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
 
 
 
+
+**Returns**: Vector2Int representing the entire width and height of the webview, in pixels.
 
 
 
 -----------
 
-### delegate void OnKeyboardDismissDelegate {#delegate-void-onkeyboarddismissdelegate}
+### Vector2Int GetScrollOffset {#vector2int-getscrolloffset}
 
-The delegate for the keyboard dismiss event. 
+Get the scroll offset of the webview. 
 
 ```csharp
-public delegate void OnKeyboardDismissDelegate(
-    MLWebView webView
-)
+public Vector2Int GetScrollOffset()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
 
 
 
+
+**Returns**: Vector2Int representing the horizontal and vertical offset of the webview, in pixels.
 
 
 
 -----------
 
-### delegate void OnLoadEndDelegate {#delegate-void-onloadenddelegate}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
 
-The delegate for the reasource loaded event. 
-
-```csharp
-public delegate void OnLoadEndDelegate(
-    MLWebView webView,
-    bool isMainFrame,
-    int httpStatusCode
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-| bool |isMainFrame|Whether this event was for the main frame.|
-| int |httpStatusCode|The standard http status code.|
-
-
-
-
-
-
------------
-
-### delegate void OnLoadErrorDelegate {#delegate-void-onloaderrordelegate}
-
-The delegate for the reasource load error event. 
+Destroy a [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) will be terminated by this function call and the shall no longer be valid. 
 
 ```csharp
-public delegate void OnLoadErrorDelegate(
-    MLWebView webView,
-    bool isMainFrame,
-    int httpStatusCode,
-    string errorStr,
-    string failedUrl
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-| bool |isMainFrame|True if this event was for the main frame.|
-| int |httpStatusCode|Http status code for the URL load failure.|
-| string |errorStr|The stringified version of the error code.|
-| string |failedUrl|The url that caused the load error.|
-
-
-
-
-
-
------------
-
-### delegate void OnServiceConnectedDelegate {#delegate-void-onserviceconnecteddelegate}
-
-The delegate for the webview service connected event. 
-
-```csharp
-public delegate void OnServiceConnectedDelegate(
-    MLWebView webView
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-
-
-
-
-
-
------------
-
-### delegate void OnServiceDisconnectedDelegate {#delegate-void-onservicedisconnecteddelegate}
-
-The delegate for the webview service disconnected event. 
-
-```csharp
-public delegate void OnServiceDisconnectedDelegate(
-    MLWebView webView
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-
-
-
-
-
-
------------
-
-### delegate void OnServiceFailedDelegate {#delegate-void-onservicefaileddelegate}
-
-The delegate for the webview service failed event. 
-
-```csharp
-public delegate void OnServiceFailedDelegate(
-    MLWebView webView,
-    MLResult result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-| [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) code associated with the failure.|
-
-
-
-
-
-
------------
-
-### delegate void OnShowKeyboardDelegate {#delegate-void-onshowkeyboarddelegate}
-
-The delegate for the keyboard show event. 
-
-```csharp
-public delegate void OnShowKeyboardDelegate(
-    MLWebView webView,
-    InputFieldData keyboardShowData
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
-| [InputFieldData](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.InputFieldData.md) |keyboardShowData|Data about the clicked input field.|
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Pause {#mlresult-pause}
-
-Pause the webview. Call MLWebViewResume to resume. This method provides a multiple pause types to the webview. 
-
-```csharp
-public MLResult Pause(
-    PauseType pauseType
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [PauseType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-pausetype) |pauseType|The type of pause to be used.|
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if paused successfully.
-
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle or PauseType value.
-
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if failed due to an internal error.
-
-[MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending) if the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle is not ready to use. See an asynchronous mode of MLWebViewCreate.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Reload {#mlresult-reload}
-
-Trigger a "Reload" action in the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). 
-
-```csharp
-public MLResult Reload()
+public MLResult Destroy()
 ```
 
 
@@ -853,7 +922,9 @@ public MLResult Reload()
 
 
 
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if WebView Reload action was initiated.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if was destroyed successfully.
+
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if an error occurred destroying the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md).
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
@@ -861,94 +932,14 @@ public MLResult Reload()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) RemoveAllCookies {#mlresult-removeallcookies}
+### [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) Create {#mlwebview-create}
 
-Remove all webview cookies. 
-
-```csharp
-public MLResult RemoveAllCookies()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if all cookies removed successfully.
-
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
-
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if removing all cookies failed due to an internal error.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ResetZoom {#mlresult-resetzoom}
-
-Reset zoom level to 1.0. 
+Create a [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md). The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) will be ready to use once this function returns with MLResult&#95;OK. 
 
 ```csharp
-public MLResult ResetZoom()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) zoom was reset.
-
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
-
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if it failed to reset zoom due to an internal error.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Resume {#mlresult-resume}
-
-Resumes a webview after a previous call of Pause. Resume webview to the normal operation for all webview pause types. 
-
-```csharp
-public MLResult Resume()
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-|  |handle|The webview being accessed.|
-
-
-
-
-
-
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if resumed successfully.
-
-[MLResult.Code.IllegalState](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-illegalstate) if WebView was paused. See MLWebViewPause.
-
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle.
-
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if failed due to an internal error.
-
-[MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending) if the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle is not ready to use. See an asynchronous mode of MLWebViewCreate.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ScrollBy {#mlresult-scrollby}
-
-Triggers a mouse "Scroll" event. 
-
-```csharp
-public MLResult ScrollBy(
-    uint xPixels,
-    uint yPixels
+public static MLWebView Create(
+    uint width,
+    uint height
 )
 ```
 
@@ -957,28 +948,26 @@ public MLResult ScrollBy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| uint |xPixels|The number of pixels to scroll on the x axis.|
-| uint |yPixels|The number of pixels to scroll on the y axis.|
+| uint |width|Width of the WebView in pixels.|
+| uint |height|Height of the WebView in pixels.|
 
 
 
 
 
 
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) was scrolled.
-
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
+**Returns**: [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) instance if creation was successful, null otherwise.
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ZoomIn {#mlresult-zoomin}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ClearCache {#mlresult-clearcache}
 
-Zoom in one level. 
+Clear the webview cache. 
 
 ```csharp
-public MLResult ZoomIn()
+public MLResult ClearCache()
 ```
 
 
@@ -986,24 +975,22 @@ public MLResult ZoomIn()
 
 
 
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) zoomed in.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if cache cleared successfully
 
 [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
-MLResult.Code.WebViewResultZoomLimitReached if cannot zoom in any further.
-
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if it failed to reset zoom due to an internal error.
+[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if clearing cache failed due to an internal error.
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ZoomOut {#mlresult-zoomout}
+### bool CanGoForward {#bool-cangoforward}
 
-Zoom out one level. 
+Checks if the "Forward" action is currently valid. 
 
 ```csharp
-public MLResult ZoomOut()
+public bool CanGoForward()
 ```
 
 
@@ -1011,13 +998,26 @@ public MLResult ZoomOut()
 
 
 
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) zoomed out.
+**Returns**: True if can use the "Forward" action.
 
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if its unable to find the specified [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) .
 
-MLResult.Code.WebViewResultZoomLimitReached if cannot zoom out any further.
 
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure) if it failed to reset zoom due to an internal error.
+-----------
+
+### bool CanGoBack {#bool-cangoback}
+
+Checks if the "Back" action is currently valid. 
+
+```csharp
+public bool CanGoBack()
+```
+
+
+
+
+
+
+**Returns**: True if can use the "Back" action.
 
 
 
@@ -1025,117 +1025,12 @@ MLResult.Code.WebViewResultZoomLimitReached if cannot zoom out any further.
 
 ## Public Events
 
-### OnBeforeResourceLoaded {#onbeforeresourceloaddelegate-onbeforeresourceloaded}
+### OnWebViewDestroyed {#ondestroydelegate-onwebviewdestroyed}
 
-Event raised just before resources are loaded. 
-
-```csharp
-public OnBeforeResourceLoadDelegate OnBeforeResourceLoaded()
-```
-
-
-
-
-
-
------------
-
-### OnCertificateErrorLoaded {#oncertificateerrordelegate-oncertificateerrorloaded}
-
-Event raised when there was an error during certification loading. 
+Event raised when WebView is destroyed. 
 
 ```csharp
-public OnCertificateErrorDelegate OnCertificateErrorLoaded()
-```
-
-
-
-
-
-
------------
-
-### OnErrorLoaded {#onloaderrordelegate-onerrorloaded}
-
-Event raised when there was an error during loading. 
-
-```csharp
-public OnLoadErrorDelegate OnErrorLoaded()
-```
-
-
-
-
-
-
------------
-
-### OnKeyboardDismissed {#onkeyboarddismissdelegate-onkeyboarddismissed}
-
-Event rasied if Keyboard should be dismissed. 
-
-```csharp
-public OnKeyboardDismissDelegate OnKeyboardDismissed()
-```
-
-
-
-
-
-
------------
-
-### OnKeyboardShown {#onshowkeyboarddelegate-onkeyboardshown}
-
-Event raised if user clicked inputfield and keyboard should be displayed. 
-
-```csharp
-public OnShowKeyboardDelegate OnKeyboardShown()
-```
-
-
-
-
-
-
------------
-
-### OnLoadEnded {#onloadenddelegate-onloadended}
-
-Event raised when resources finish loading. 
-
-```csharp
-public OnLoadEndDelegate OnLoadEnded()
-```
-
-
-
-
-
-
------------
-
-### OnServiceConnected {#onserviceconnecteddelegate-onserviceconnected}
-
-Event raised when WebView service is connected. 
-
-```csharp
-public OnServiceConnectedDelegate OnServiceConnected()
-```
-
-
-
-
-
-
------------
-
-### OnServiceDisconnected {#onservicedisconnecteddelegate-onservicedisconnected}
-
-Event raised when WebView service is disconnected. 
-
-```csharp
-public OnServiceDisconnectedDelegate OnServiceDisconnected()
+public OnDestroyDelegate OnWebViewDestroyed()
 ```
 
 
@@ -1160,12 +1055,117 @@ public OnServiceFailedDelegate OnServiceFailed()
 
 -----------
 
-### OnWebViewDestroyed {#ondestroydelegate-onwebviewdestroyed}
+### OnServiceDisconnected {#onservicedisconnecteddelegate-onservicedisconnected}
 
-Event raised when WebView is destroyed. 
+Event raised when WebView service is disconnected. 
 
 ```csharp
-public OnDestroyDelegate OnWebViewDestroyed()
+public OnServiceDisconnectedDelegate OnServiceDisconnected()
+```
+
+
+
+
+
+
+-----------
+
+### OnServiceConnected {#onserviceconnecteddelegate-onserviceconnected}
+
+Event raised when WebView service is connected. 
+
+```csharp
+public OnServiceConnectedDelegate OnServiceConnected()
+```
+
+
+
+
+
+
+-----------
+
+### OnLoadEnded {#onloadenddelegate-onloadended}
+
+Event raised when resources finish loading. 
+
+```csharp
+public OnLoadEndDelegate OnLoadEnded()
+```
+
+
+
+
+
+
+-----------
+
+### OnKeyboardShown {#onshowkeyboarddelegate-onkeyboardshown}
+
+Event raised if user clicked inputfield and keyboard should be displayed. 
+
+```csharp
+public OnShowKeyboardDelegate OnKeyboardShown()
+```
+
+
+
+
+
+
+-----------
+
+### OnKeyboardDismissed {#onkeyboarddismissdelegate-onkeyboarddismissed}
+
+Event rasied if Keyboard should be dismissed. 
+
+```csharp
+public OnKeyboardDismissDelegate OnKeyboardDismissed()
+```
+
+
+
+
+
+
+-----------
+
+### OnErrorLoaded {#onloaderrordelegate-onerrorloaded}
+
+Event raised when there was an error during loading. 
+
+```csharp
+public OnLoadErrorDelegate OnErrorLoaded()
+```
+
+
+
+
+
+
+-----------
+
+### OnCertificateErrorLoaded {#oncertificateerrordelegate-oncertificateerrorloaded}
+
+Event raised when there was an error during certification loading. 
+
+```csharp
+public OnCertificateErrorDelegate OnCertificateErrorLoaded()
+```
+
+
+
+
+
+
+-----------
+
+### OnBeforeResourceLoaded {#onbeforeresourceloaddelegate-onbeforeresourceloaded}
+
+Event raised just before resources are loaded. 
+
+```csharp
+public OnBeforeResourceLoadDelegate OnBeforeResourceLoaded()
 ```
 
 
@@ -1177,26 +1177,78 @@ public OnDestroyDelegate OnWebViewDestroyed()
 
 ## Public Enums
 
-### EventFlags {#enums-eventflags}
+### TextInputType {#enums-textinputtype}
 
-Flags to set special key states during input. 
+The type of text entry selected when onShowKeyboard is called. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | 0| No flag is applied.   |
-| CapsLockOn | 1 << 0| Caps Lock is on.   |
-| ShiftDown | 1 << 1| Shift is pressed.   |
-| ControlDown | 1 << 2| Control is pressed.   |
-| AltDown | 1 << 3| Alt is pressed.   |
-| LeftMouseButton | 1 << 4| Left mouse button is pressed.   |
-| MiddleMouseButton | 1 << 5| Middle mouse button is pressed.   |
-| RightMouseButton | 1 << 6| Right mouse button is pressed.   |
-| CommandDown | 1 << 7| Command key is pressed.   |
-| NumLockOn | 1 << 8| NumLock is on.   |
-| IsKeyPad | 1 << 9| Was key struck on KeyPad.   |
-| IsLeft | 1 << 10| Is left key.   |
-| IsRight | 1 << 11| Is right key.   |
-| AltGRDown | 1 << 12| AltGR is pressed.   |
+| None | | None.   |
+| Text | | Text.   |
+| Password | | Password.   |
+| Search | | Search.   |
+| Email | | Email.   |
+| Number | | Number   |
+| Telephone | | Telephone.   |
+| URL | | URL.   |
+| Date | | Date.   |
+| DateTime | | Date Time.   |
+| DateTimeLocal | | Date Time Local.   |
+| Month | | Month.   |
+| Time | | Time.   |
+| Week | | Week.   |
+| TextArea | | Text Area.   |
+| ContentEditable | | Content Editable.   |
+| DateTimeField | | Date Time Field.   |
+
+
+
+
+
+
+
+
+-----------
+
+### TextInputFlags {#enums-textinputflags}
+
+Flags related to a text entry field passed when on&#95;show&#95;keyboard is called. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| None | 0| Nonne of flasg are applied.   |
+| AutocompleteOn | 1 << 0| Autocompletion is on.   |
+| AutocompleteOff | 1 << 1| Autocompletion is off.   |
+| AutocorrectOn | 1 << 2| Autocorrection is on.   |
+| AutocorrectOff | 1 << 3| Autocorrection is off.   |
+| SpellcheckOn | 1 << 4| Spellcheck is on.   |
+| SpellcheckOff | 1 << 5| Spellcheck is of.   |
+| AutocapitalizeNone | 1 << 6| Autocapitalize is off.   |
+| AutocapitalizeCharacters | 1 << 7| Autocapitalize characters.   |
+| AutocapitalizeWords | 1 << 8| Autocapitalize words.   |
+| AutocapitalizeSentences | 1 << 9| Autocapitalize sentences.   |
+| HaveNextFocusableElement | 1 << 10| Have next focusable element.   |
+| HavePreviousFocusableElement | 1 << 11| Have previous focusable element.   |
+| HasBeenPasswordField | 1 << 12| has been a password field.   |
+
+
+
+
+
+
+
+
+-----------
+
+### PauseType {#enums-pausetype}
+
+The type of the webview pause. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| MultiMedia | | Pause all multimedia activities of the webview.   |
+| Timers | | Pause javascript timers of the webview.   |
+| Discard | | Pause and discard the webview rendering process. But keep alive the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle.   |
 
 
 
@@ -1259,78 +1311,26 @@ Enums for all possible ML Key Codes.
 
 -----------
 
-### PauseType {#enums-pausetype}
+### EventFlags {#enums-eventflags}
 
-The type of the webview pause. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| MultiMedia | | Pause all multimedia activities of the webview.   |
-| Timers | | Pause javascript timers of the webview.   |
-| Discard | | Pause and discard the webview rendering process. But keep alive the [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) handle.   |
-
-
-
-
-
-
-
-
------------
-
-### TextInputFlags {#enums-textinputflags}
-
-Flags related to a text entry field passed when on&#95;show&#95;keyboard is called. 
+Flags to set special key states during input. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | 0| Nonne of flasg are applied.   |
-| AutocompleteOn | 1 << 0| Autocompletion is on.   |
-| AutocompleteOff | 1 << 1| Autocompletion is off.   |
-| AutocorrectOn | 1 << 2| Autocorrection is on.   |
-| AutocorrectOff | 1 << 3| Autocorrection is off.   |
-| SpellcheckOn | 1 << 4| Spellcheck is on.   |
-| SpellcheckOff | 1 << 5| Spellcheck is of.   |
-| AutocapitalizeNone | 1 << 6| Autocapitalize is off.   |
-| AutocapitalizeCharacters | 1 << 7| Autocapitalize characters.   |
-| AutocapitalizeWords | 1 << 8| Autocapitalize words.   |
-| AutocapitalizeSentences | 1 << 9| Autocapitalize sentences.   |
-| HaveNextFocusableElement | 1 << 10| Have next focusable element.   |
-| HavePreviousFocusableElement | 1 << 11| Have previous focusable element.   |
-| HasBeenPasswordField | 1 << 12| has been a password field.   |
-
-
-
-
-
-
-
-
------------
-
-### TextInputType {#enums-textinputtype}
-
-The type of text entry selected when onShowKeyboard is called. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| None | | None.   |
-| Text | | Text.   |
-| Password | | Password.   |
-| Search | | Search.   |
-| Email | | Email.   |
-| Number | | Number   |
-| Telephone | | Telephone.   |
-| URL | | URL.   |
-| Date | | Date.   |
-| DateTime | | Date Time.   |
-| DateTimeLocal | | Date Time Local.   |
-| Month | | Month.   |
-| Time | | Time.   |
-| Week | | Week.   |
-| TextArea | | Text Area.   |
-| ContentEditable | | Content Editable.   |
-| DateTimeField | | Date Time Field.   |
+| None | 0| No flag is applied.   |
+| CapsLockOn | 1 << 0| Caps Lock is on.   |
+| ShiftDown | 1 << 1| Shift is pressed.   |
+| ControlDown | 1 << 2| Control is pressed.   |
+| AltDown | 1 << 3| Alt is pressed.   |
+| LeftMouseButton | 1 << 4| Left mouse button is pressed.   |
+| MiddleMouseButton | 1 << 5| Middle mouse button is pressed.   |
+| RightMouseButton | 1 << 6| Right mouse button is pressed.   |
+| CommandDown | 1 << 7| Command key is pressed.   |
+| NumLockOn | 1 << 8| NumLock is on.   |
+| IsKeyPad | 1 << 9| Was key struck on KeyPad.   |
+| IsLeft | 1 << 10| Is left key.   |
+| IsRight | 1 << 11| Is right key.   |
+| AltGRDown | 1 << 12| AltGR is pressed.   |
 
 
 

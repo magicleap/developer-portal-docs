@@ -311,8 +311,9 @@ Events that can result in a callback being called include: Stopping at the end o
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -358,8 +359,9 @@ Events that can result in a callback being called include: Pressing a play butto
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

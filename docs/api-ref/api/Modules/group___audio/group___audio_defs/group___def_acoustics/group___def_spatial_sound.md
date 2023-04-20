@@ -38,7 +38,7 @@ SPATIAL SOUND.
 ### MLAudioSpatialSoundDistanceProperties {#struct-mlaudiospatialsounddistanceproperties}
 
 ```cpp
-typedef struct MLAudioSpatialSoundDistanceProperties  MLAudioSpatialSoundDistanceProperties;
+typedef struct MLAudioSpatialSoundDistanceProperties MLAudioSpatialSoundDistanceProperties;
 ```
 
 
@@ -55,7 +55,7 @@ Properties specifying the distance response of a spatial sound.
 ### MLAudioSpatialSoundRadiationProperties {#struct-mlaudiospatialsoundradiationproperties}
 
 ```cpp
-typedef struct MLAudioSpatialSoundRadiationProperties  MLAudioSpatialSoundRadiationProperties;
+typedef struct MLAudioSpatialSoundRadiationProperties MLAudioSpatialSoundRadiationProperties;
 ```
 
 
@@ -72,7 +72,7 @@ Properties specifying the directivity of a spatial sound.
 ### MLAudioRaycast {#struct-mlaudioraycast}
 
 ```cpp
-typedef struct MLAudioRaycast  MLAudioRaycast;
+typedef struct MLAudioRaycast MLAudioRaycast;
 ```
 
 Two points in space describing a ray. 
@@ -82,8 +82,9 @@ Two points in space describing a ray.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -93,7 +94,7 @@ Two points in space describing a ray.
 ### MLAudioObstruction {#struct-mlaudioobstruction}
 
 ```cpp
-typedef struct MLAudioObstruction   MLAudioObstruction;
+typedef struct MLAudioObstruction MLAudioObstruction;
 ```
 
 Obstruction along a ray. 
@@ -103,8 +104,9 @@ Obstruction along a ray.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -114,7 +116,7 @@ Obstruction along a ray.
 ### MLAudioRaycastRequest {#struct-mlaudioraycastrequest}
 
 ```cpp
-typedef struct MLAudioRaycastRequest  MLAudioRaycastRequest;
+typedef struct MLAudioRaycastRequest MLAudioRaycastRequest;
 ```
 
 ID-tracked request for a single raycast operation. 
@@ -124,8 +126,9 @@ ID-tracked request for a single raycast operation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -135,7 +138,7 @@ ID-tracked request for a single raycast operation.
 ### MLAudioRaycastResult {#struct-mlaudioraycastresult}
 
 ```cpp
-typedef struct MLAudioRaycastResult  MLAudioRaycastResult;
+typedef struct MLAudioRaycastResult MLAudioRaycastResult;
 ```
 
 ID-tracked result for a single raycast operation. 
@@ -145,8 +148,9 @@ ID-tracked result for a single raycast operation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

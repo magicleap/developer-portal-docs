@@ -17,6 +17,19 @@ Representation of the native image plane structure.
 
 ## Public Methods
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
 ###  ImagePlaneInfoNative {#functions-imageplaneinfonative}
 
 Sets data from an MLWebRTC.VideoSink.Frame.ImagePlane object. 
@@ -41,79 +54,15 @@ public ImagePlaneInfoNative(
 
 -----------
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ## Public Attributes
 
-### BytesPerPixel {#uint-bytesperpixel}
+### Width {#uint-width}
 
-The bytes per pixel of the image plane. 
-
-```csharp
-
-public uint BytesPerPixel;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Height of the image plane. 
+Width of the image plane. 
 
 ```csharp
 
-public uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### ImageDataPtr {#intptr-imagedataptr}
-
-Data of the image plane. 
-
-```csharp
-
-public IntPtr ImageDataPtr;
-
-```
-
-
-
-
-
-
------------
-
-### Size {#uint-size}
-
-Size of the image plane. 
-
-```csharp
-
-public uint Size;
+public uint Width;
 
 ```
 
@@ -141,13 +90,64 @@ public uint Stride;
 
 -----------
 
-### Width {#uint-width}
+### Size {#uint-size}
 
-Width of the image plane. 
+Size of the image plane. 
 
 ```csharp
 
-public uint Width;
+public uint Size;
+
+```
+
+
+
+
+
+
+-----------
+
+### ImageDataPtr {#intptr-imagedataptr}
+
+Data of the image plane. 
+
+```csharp
+
+public IntPtr ImageDataPtr;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+Height of the image plane. 
+
+```csharp
+
+public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### BytesPerPixel {#uint-bytesperpixel}
+
+The bytes per pixel of the image plane. 
+
+```csharp
+
+public uint BytesPerPixel;
 
 ```
 

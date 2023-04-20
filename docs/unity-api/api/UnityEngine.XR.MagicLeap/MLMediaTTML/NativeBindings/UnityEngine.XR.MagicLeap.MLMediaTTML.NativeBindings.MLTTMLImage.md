@@ -62,13 +62,13 @@ public static MLTTMLImage Create(
 
 ## Public Attributes
 
-### Data {#intptr-data}
+### Size {#uint-size}
 
-Byte data of the image. 
+Image size in bytes. 
 
 ```csharp
 
-public IntPtr Data;
+public uint Size;
 
 ```
 
@@ -79,13 +79,13 @@ public IntPtr Data;
 
 -----------
 
-### Size {#uint-size}
+### Data {#intptr-data}
 
-Image size in bytes. 
+Byte data of the image. 
 
 ```csharp
 
-public uint Size;
+public IntPtr Data;
 
 ```
 

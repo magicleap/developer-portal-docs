@@ -32,10 +32,10 @@ title: ml_webview.h
 | enum | **[MLWebViewTextInputType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype)** <br></br> { <br></br>[MLWebViewTextInputType_None](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-none) = 0,<br></br> [MLWebViewTextInputType_Text](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-text),<br></br> [MLWebViewTextInputType_Password](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-password),<br></br> [MLWebViewTextInputType_Search](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-search),<br></br> [MLWebViewTextInputType_Email](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-email),<br></br> [MLWebViewTextInputType_Number](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-number),<br></br> [MLWebViewTextInputType_Telephone](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-telephone),<br></br> [MLWebViewTextInputType_URL](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-url),<br></br> [MLWebViewTextInputType_Date](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-date),<br></br> [MLWebViewTextInputType_DateTime](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-datetime),<br></br> [MLWebViewTextInputType_DateTimeLocal](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-datetimelocal),<br></br> [MLWebViewTextInputType_Month](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-month),<br></br> [MLWebViewTextInputType_Time](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-time),<br></br> [MLWebViewTextInputType_Week](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-week),<br></br> [MLWebViewTextInputType_TextArea](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-textarea),<br></br> [MLWebViewTextInputType_ContentEditable](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-contenteditable),<br></br> [MLWebViewTextInputType_DateTimeField](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-datetimefield),<br></br> [MLWebViewTextInputType_Ensure32Bits](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputtype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of text entry selected when on_show_keyboard is called.  |
 | enum | **[MLWebViewTextInputFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags)** <br></br> { <br></br>[MLWebViewTextInputFlags_None](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-none) = 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOn](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocompleteon) = 1 << 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOff](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocompleteoff) = 1 << 1,<br></br> [MLWebViewTextInputFlags_AutocorrectOn](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocorrecton) = 1 << 2,<br></br> [MLWebViewTextInputFlags_AutocorrectOff](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocorrectoff) = 1 << 3,<br></br> [MLWebViewTextInputFlags_SpellcheckOn](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-spellcheckon) = 1 << 4,<br></br> [MLWebViewTextInputFlags_SpellcheckOff](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-spellcheckoff) = 1 << 5,<br></br> [MLWebViewTextInputFlags_AutocapitalizeNone](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocapitalizenone) = 1 << 6,<br></br> [MLWebViewTextInputFlags_AutocapitalizeCharacters](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocapitalizecharacters) = 1 << 7,<br></br> [MLWebViewTextInputFlags_AutocapitalizeWords](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocapitalizewords) = 1 << 8,<br></br> [MLWebViewTextInputFlags_AutocapitalizeSentences](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-autocapitalizesentences) = 1 << 9,<br></br> [MLWebViewTextInputFlags_HaveNextFocusableElement](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-havenextfocusableelement) = 1 << 10,<br></br> [MLWebViewTextInputFlags_HavePreviousFocusableElement](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-havepreviousfocusableelement) = 1 << 11,<br></br> [MLWebViewTextInputFlags_HasBeenPasswordField](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-hasbeenpasswordfield) = 1 << 12,<br></br> [MLWebViewTextInputFlags_Ensure32Bits](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewtextinputflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags related to a text entry field passed when on_show_keyboard is called.  |
 | enum | **[MLWebViewEventFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags)** <br></br> { <br></br>[MLWebViewEventFlags_None](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-none) = 0,<br></br> [MLWebViewEventFlags_CapsLockOn](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-capslockon) = 1 << 0,<br></br> [MLWebViewEventFlags_ShiftDown](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-shiftdown) = 1 << 1,<br></br> [MLWebViewEventFlags_ControlDown](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-controldown) = 1 << 2,<br></br> [MLWebViewEventFlags_AltDown](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-altdown) = 1 << 3,<br></br> [MLWebViewEventFlags_LeftMouseButton](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-leftmousebutton) = 1 << 4,<br></br> [MLWebViewEventFlags_MiddleMouseButton](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-middlemousebutton) = 1 << 5,<br></br> [MLWebViewEventFlags_RightMouseButton](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-rightmousebutton) = 1 << 6,<br></br> [MLWebViewEventFlags_CommandDown](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-commanddown) = 1 << 7,<br></br> [MLWebViewEventFlags_NumLockOn](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-numlockon) = 1 << 8,<br></br> [MLWebViewEventFlags_IsKeyPad](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-iskeypad) = 1 << 9,<br></br> [MLWebViewEventFlags_IsLeft](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-isleft) = 1 << 10,<br></br> [MLWebViewEventFlags_IsRight](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-isright) = 1 << 11,<br></br> [MLWebViewEventFlags_AltGRDown](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-altgrdown) = 1 << 12,<br></br> [MLWebViewEventFlags_Ensure32Bits](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebvieweventflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags to set special key states during input.  |
-| enum | **[Anonymous Enum 26](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-anonymous-enum-26)** <br></br> { <br></br>[MLResultAPIPrefix_WebView](/api-ref/api/Files/ml__webview_8h.md#enums-mlresultapiprefix-webview) = ( 0xebf7  << 16)<br></br>} |
+| enum | **[Anonymous Enum 27](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-anonymous-enum-27)** <br></br> { <br></br>[MLResultAPIPrefix_WebView](/api-ref/api/Files/ml__webview_8h.md#enums-mlresultapiprefix-webview) = ( 0xebf7  << 16)<br></br>} |
 | enum | **[MLWebViewResult](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult)** <br></br> { <br></br>[MLWebViewResult_ZoomLimitReached](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewresult-zoomlimitreached) = MLResultAPIPrefix_WebView,<br></br> [MLWebViewResult_Ensure32Bits](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for the WebView API calls.  |
 | enum | **[MLWebViewProcessSettingFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags)** <br></br> { <br></br>[MLWebViewProcessSettingFlags_None](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewprocesssettingflags-none) = 0,<br></br> [MLWebViewProcessSettingFlags_WebInspectorOn](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewprocesssettingflags-webinspectoron) = 1 << 0,<br></br> [MLWebViewProcessSettingFlags_Ensure32Bits](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewprocesssettingflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags set for the process using webview.  |
-| enum | **[MLWebViewPauseType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype)** <br></br> { <br></br>[MLWebViewPauseType_Multimedia](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-multimedia) = 0,<br></br> [MLWebViewPauseType_Timers](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-timers),<br></br> [MLWebViewPauseType_Discard](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-discard),<br></br> [MLWebViewPauseType_Ensure32bits](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of the webview pause.  |
+| enum | **[MLWebViewPauseType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype)** <br></br> { <br></br>[MLWebViewPauseType_Multimedia](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-multimedia) = 0,<br></br> [MLWebViewPauseType_Timers](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-timers),<br></br> [MLWebViewPauseType_Discard](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-discard),<br></br> [MLWebViewPauseType_Ensure32Bits](/api-ref/api/Files/ml__webview_8h.md#enums-mlwebviewpausetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of the webview pause.  |
 
 ## Functions
 
@@ -109,8 +109,9 @@ The type of text entry selected when on_show_keyboard is called.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -144,8 +145,9 @@ Flags related to a text entry field passed when on_show_keyboard is called.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -179,15 +181,16 @@ Flags to set special key states during input.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
 
 -----------
 
-### Anonymous Enum 26 {#enums-anonymous-enum-26}
+### Anonymous Enum 27 {#enums-anonymous-enum-27}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -216,8 +219,9 @@ Return values for the WebView API calls.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -239,8 +243,9 @@ Flags set for the process using webview.
 
 
 
-**API Level:**
-  * 22 
+**API Level:
+ 22**
+  * 
 
 
 
@@ -254,7 +259,7 @@ Flags set for the process using webview.
 | MLWebViewPauseType_Multimedia |  0| Pause all multimedia activities of the webview. |
 | MLWebViewPauseType_Timers | | Pause javascript timers of the webview. |
 | MLWebViewPauseType_Discard | | Pause and discard the webview rendering process. But keep alive the MLWebView handle. |
-| MLWebViewPauseType_Ensure32bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
+| MLWebViewPauseType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
 
@@ -263,8 +268,9 @@ The type of the webview pause.
 
 
 
-**API Level:**
-  * 22 
+**API Level:
+ 22**
+  * 
 
 
 
@@ -277,7 +283,7 @@ The type of the webview pause.
 ### MLWebViewCursorState {#struct-mlwebviewcursorstate}
 
 ```cpp
-typedef struct MLWebViewCursorState  MLWebViewCursorState;
+typedef struct MLWebViewCursorState MLWebViewCursorState;
 ```
 
 Struct to define the cursor's state. 
@@ -289,8 +295,9 @@ This structure must be initialized by calling [MLWebViewCursorStateInit](/api-re
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -300,7 +307,7 @@ This structure must be initialized by calling [MLWebViewCursorStateInit](/api-re
 ### MLWebViewEventCallbacks {#struct-mlwebvieweventcallbacks}
 
 ```cpp
-typedef struct MLWebViewEventCallbacks  MLWebViewEventCallbacks;
+typedef struct MLWebViewEventCallbacks MLWebViewEventCallbacks;
 ```
 
 Event handler for MLWebView callbacks. 
@@ -312,8 +319,9 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md)
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 
@@ -323,7 +331,7 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 ### MLWebViewSettings {#struct-mlwebviewsettings}
 
 ```cpp
-typedef struct MLWebViewSettings  MLWebViewSettings;
+typedef struct MLWebViewSettings MLWebViewSettings;
 ```
 
 Struct to define webview initialization. 
@@ -335,8 +343,9 @@ This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/a
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md)
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 
@@ -346,7 +355,7 @@ This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/a
 ### MLWebViewProcessSettings {#struct-mlwebviewprocesssettings}
 
 ```cpp
-typedef struct MLWebViewProcessSettings  MLWebViewProcessSettings;
+typedef struct MLWebViewProcessSettings MLWebViewProcessSettings;
 ```
 
 Struct to define webview process initialization. 
@@ -358,8 +367,9 @@ This structure must be initialized by calling [MLWebViewProcessSettingsInit](/ap
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md)
 
 
-**API Level:**
-  * 22 
+**API Level:
+ 22**
+  * 
 
 
 
@@ -392,8 +402,9 @@ Initializes a [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struc
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -423,8 +434,9 @@ Initializes a [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/st
 
 
 
-**API Level:**
-  * 24
+**API Level:
+ 24**
+  * 
 
 
 
@@ -454,8 +466,9 @@ Initializes a [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -485,8 +498,9 @@ Initializes a [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/s
 
 
 
-**API Level:**
-  * 22
+**API Level:
+ 22**
+  * 
 
 
 
@@ -528,8 +542,9 @@ Current implementation only supports enabling and disabling web inspector before
 :::
 
 
-**API Level:**
-  * 22
+**API Level:
+ 22**
+  * 
 
 
 
@@ -576,8 +591,9 @@ In version >= 2 for MLWebViewCallbacks struct, MLWebViewCreate launches a separa
 :::
 
 
-**API Level:**
-  * 24
+**API Level:
+ 24**
+  * 
 
 
 
@@ -617,8 +633,9 @@ The MLWebView will be terminated by this function call and the handle shall no l
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -658,8 +675,9 @@ Specify the callbacks for a MLWebView.
 
 
 
-**API Level:**
-  * 24
+**API Level:
+ 24**
+  * 
 
 
 
@@ -703,8 +721,9 @@ To use with OpenGL, EGL, and Vulkan please see: [https://developer.android.com/n
 :::
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -745,8 +764,9 @@ Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/api-ref/api/Mo
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -789,8 +809,9 @@ Note that success with this call only indicates that a load will be attempted. C
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -831,8 +852,9 @@ Query [MLWebViewCanGoBack](/api-ref/api/Modules/group___web_view/group___web_vie
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -873,8 +895,9 @@ Query [MLWebViewCanGoForward](/api-ref/api/Modules/group___web_view/group___web_
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -913,8 +936,9 @@ Trigger a "Reload" action in the MLWebView.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -956,8 +980,9 @@ Get the current URL. Set out_url to NULL to get the length of the current URL.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -998,8 +1023,9 @@ Checks if the "Back" action is currently valid.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1040,8 +1066,9 @@ Checks if the "Forward" action is currently valid.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1086,8 +1113,9 @@ Please see MLWebViewInjectMouseButtonDown for behavior.
 :::
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1210,8 +1238,9 @@ Sends a printable char keyboard event to MLWebView.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1254,8 +1283,9 @@ Sends a key down/pressed event to MLWebView.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1298,8 +1328,9 @@ Sends a key up/release event to MLWebView.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1345,8 +1376,9 @@ This should be typically called afer #MLWebViewEventCallback::on_load_end to det
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1390,8 +1422,9 @@ Get the scroll offset of the webview.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1434,8 +1467,9 @@ Triggers a mouse "Scroll" event.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1477,8 +1511,9 @@ Get the current zoom factor. The default zoom factor is 1.0.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1519,8 +1554,9 @@ Zoom in one level.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1561,8 +1597,9 @@ Zoom out one level.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1602,8 +1639,9 @@ Reset zoom level to 1.0.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1646,8 +1684,9 @@ The matrix is stored in column-major order so that it may be passed directly to 
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1687,8 +1726,9 @@ Remove all webview cookies.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1728,8 +1768,9 @@ Clear the webview cache.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -1767,8 +1808,9 @@ This method provides a multiple pause types to the webview.
 
 
 
-**API Level:**
-  * 22
+**API Level:
+ 22**
+  * 
 
 
 
@@ -1804,8 +1846,9 @@ Resume webview to the normal operation for all webview pause types.
 
 
 
-**API Level:**
-  * 22
+**API Level:
+ 22**
+  * 
 
 
 
@@ -2079,7 +2122,7 @@ typedef enum MLWebViewPauseType {
   MLWebViewPauseType_Multimedia = 0,
   MLWebViewPauseType_Timers,
   MLWebViewPauseType_Discard,
-  MLWebViewPauseType_Ensure32bits = 0x7FFFFFFF,
+  MLWebViewPauseType_Ensure32Bits = 0x7FFFFFFF
 } MLWebViewPauseType;
 
 ML_API MLResult ML_CALL MLWebViewPause(MLHandle web_view, MLWebViewPauseType pause_type);

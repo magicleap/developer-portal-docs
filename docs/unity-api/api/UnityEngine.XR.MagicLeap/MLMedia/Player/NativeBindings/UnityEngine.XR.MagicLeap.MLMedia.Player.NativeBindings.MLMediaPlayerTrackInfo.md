@@ -41,6 +41,23 @@ public MLMediaPlayerTrackInfo(
 
 ## Public Attributes
 
+### Version {#uint-version}
+
+Struct version. 
+
+```csharp
+
+public uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
 ### TrackType {#tracktype-tracktype}
 
 Media track type, can be either audio or video. 
@@ -54,23 +71,6 @@ public Track.Type TrackType;
 | Type | Description  | 
 |--|--|
 | [Track.Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) | Media player track types.  |
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-Struct version. 
-
-```csharp
-
-public uint Version;
-
-```
-
 
 
 

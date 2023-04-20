@@ -40,34 +40,6 @@ Runs once per Unity Update loop.
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetState {#mlresult-getstate}
-
-Get information about the user's gaze. 
-
-```csharp
-public static MLResult GetState(
-    out State state
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out [State](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.State.md) |state|Information about the gaze.|
-
-
-
-
-
-
-**Returns**:  MLResult&#95;InvalidParam  The state parameter was not valid (null).  MLResult&#95;Ok  gaze Recognition static was successfully received.  MLResult&#95;UnspecifiedFailure  Failed to receive gaze Recognition state data. 
-
-
-
------------
-
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetStaticData {#mlresult-getstaticdata}
 
 Get static information about Gaze Recognition. 
@@ -96,24 +68,35 @@ public static MLResult GetStaticData(
 
 -----------
 
-## Protected Methods
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetState {#mlresult-getstate}
 
-### StartAPI {#override-startapi}
-
-Start the API. 
+Get information about the user's gaze. 
 
 ```csharp
-protected virtual override MLResult.Code StartAPI()
+public static MLResult GetState(
+    out State state
+)
 ```
 
 
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out [State](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.State.md) |state|Information about the gaze.|
 
 
-**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
+
+
+
+
+**Returns**:  MLResult&#95;InvalidParam  The state parameter was not valid (null).  MLResult&#95;Ok  gaze Recognition static was successfully received.  MLResult&#95;UnspecifiedFailure  Failed to receive gaze Recognition state data. 
 
 
 
 -----------
+
+## Protected Methods
 
 ### StopAPI {#override-stopapi}
 
@@ -132,7 +115,42 @@ protected virtual override MLResult.Code StopAPI()
 
 -----------
 
+### StartAPI {#override-startapi}
+
+Start the API. 
+
+```csharp
+protected virtual override MLResult.Code StartAPI()
+```
+
+
+
+
+**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
+
+
+
+-----------
+
 ## Public Enums
+
+### Error {#enums-error}
+
+A set of possible error codes that the Gaze Recognition system can report. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| None | | No error, tracking is nominal.   |
+| Generic | | Gaze Recognition system failed.   |
+
+
+
+
+
+
+
+
+-----------
 
 ### Behavior {#enums-behavior}
 
@@ -148,24 +166,6 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 | Saccade | | User is making a saccade, eye velocity is high.   |
 | WinkLeft | | User is winking with the left eye   |
 | WinkRight | | User is winking with the right eye   |
-
-
-
-
-
-
-
-
------------
-
-### Error {#enums-error}
-
-A set of possible error codes that the Gaze Recognition system can report. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| None | | No error, tracking is nominal.   |
-| Generic | | Gaze Recognition system failed.   |
 
 
 

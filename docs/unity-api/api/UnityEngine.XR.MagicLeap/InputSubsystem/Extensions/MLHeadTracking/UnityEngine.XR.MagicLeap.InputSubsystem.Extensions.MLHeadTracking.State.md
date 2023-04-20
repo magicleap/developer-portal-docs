@@ -32,16 +32,19 @@ public override string ToString()
 
 ## Public Attributes
 
-### Confidence {#readonly-float-confidence}
+### Mode {#readonly-mode}
 
-A confidence value (from 0..1) representing the confidence in the current pose estimation. 
+What tracking mode the Head Tracking system is currently in. 
 
 ```csharp
 
-public readonly float Confidence;
+public readonly TrackingMode Mode;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| readonly [TrackingMode](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-trackingmode) | A set of possible tracking modes the Head Tracking system can be in.  |
 
 
 
@@ -69,19 +72,16 @@ public readonly TrackingError Error;
 
 -----------
 
-### Mode {#readonly-mode}
+### Confidence {#readonly-float-confidence}
 
-What tracking mode the Head Tracking system is currently in. 
+A confidence value (from 0..1) representing the confidence in the current pose estimation. 
 
 ```csharp
 
-public readonly TrackingMode Mode;
+public readonly float Confidence;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [TrackingMode](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-trackingmode) | A set of possible tracking modes the Head Tracking system can be in.  |
 
 
 

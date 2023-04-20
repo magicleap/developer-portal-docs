@@ -55,11 +55,11 @@ protected void FindDevice()
 
 ## Protected Attributes
 
-### characterstics {#inputdevicecharacteristics-characterstics}
+### name {#string-name}
 
 ```csharp
 
-protected InputDeviceCharacteristics characterstics;
+protected string name = string.Empty;
 
 ```
 
@@ -85,11 +85,11 @@ protected InputDevice device;
 
 -----------
 
-### name {#string-name}
+### characterstics {#inputdevicecharacteristics-characterstics}
 
 ```csharp
 
-protected string name = string.Empty;
+protected InputDeviceCharacteristics characterstics;
 
 ```
 

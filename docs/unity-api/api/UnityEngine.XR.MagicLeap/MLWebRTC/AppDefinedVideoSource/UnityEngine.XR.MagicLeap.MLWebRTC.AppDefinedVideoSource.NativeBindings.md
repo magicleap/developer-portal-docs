@@ -19,13 +19,14 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) InitializeAppDefinedVideoSource {#mlresultcode-initializeappdefinedvideosource}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCSourceCreateAppDefinedVideoSource {#mlresultcode-mlwebrtcsourcecreateappdefinedvideosource}
 
-Initialized a given appDefinedVideoSource object and sets it's callbacks. 
+Creates the local source that links to the user's camera and mic. 
 
 ```csharp
-public static MLResult.Code InitializeAppDefinedVideoSource(
-    MLWebRTC.AppDefinedVideoSource appDefinedVideoSource
+public MLResult.Code MLWebRTCSourceCreateAppDefinedVideoSource(
+    in AppDefinedSource.NativeBindings.MLWebRTCAppDefinedSourceEventCallbacks callbacks,
+    out ulong sourceHandle
 )
 ```
 
@@ -34,14 +35,15 @@ public static MLResult.Code InitializeAppDefinedVideoSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebRTC.AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md) |appDefinedVideoSource|The [AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md) object to initialize.|
+| in [AppDefinedSource.NativeBindings.MLWebRTCAppDefinedSourceEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.NativeBindings.MLWebRTCAppDefinedSourceEventCallbacks.md) |sourceHandle|The handle to the local source to return to the caller.|
+| out ulong |sourceHandle||
 
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if the connection was successfully created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if the local source was successfully created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
 
 
 
@@ -77,14 +79,13 @@ public MLResult.Code MLWebRTCSourceAppDefinedVideoSourcePushFrame(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCSourceCreateAppDefinedVideoSource {#mlresultcode-mlwebrtcsourcecreateappdefinedvideosource}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) InitializeAppDefinedVideoSource {#mlresultcode-initializeappdefinedvideosource}
 
-Creates the local source that links to the user's camera and mic. 
+Initialized a given appDefinedVideoSource object and sets it's callbacks. 
 
 ```csharp
-public MLResult.Code MLWebRTCSourceCreateAppDefinedVideoSource(
-    in AppDefinedSource.NativeBindings.MLWebRTCAppDefinedSourceEventCallbacks callbacks,
-    out ulong sourceHandle
+public static MLResult.Code InitializeAppDefinedVideoSource(
+    MLWebRTC.AppDefinedVideoSource appDefinedVideoSource
 )
 ```
 
@@ -93,15 +94,14 @@ public MLResult.Code MLWebRTCSourceCreateAppDefinedVideoSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [AppDefinedSource.NativeBindings.MLWebRTCAppDefinedSourceEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.NativeBindings.MLWebRTCAppDefinedSourceEventCallbacks.md) |sourceHandle|The handle to the local source to return to the caller.|
-| out ulong |sourceHandle||
+| [MLWebRTC.AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md) |appDefinedVideoSource|The [AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md) object to initialize.|
 
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if the local source was successfully created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if the connection was successfully created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
 
 
 

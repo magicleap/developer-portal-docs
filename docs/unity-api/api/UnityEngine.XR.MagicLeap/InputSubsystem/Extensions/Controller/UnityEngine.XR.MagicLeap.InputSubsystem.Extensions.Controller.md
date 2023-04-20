@@ -16,12 +16,10 @@ title: Controller
 
 ## Public Methods
 
-### bool AttachTriggerListener {#bool-attachtriggerlistener}
-
-Exposed callback for controller NativeBindings.OnTrigger   trigger event. 
+### void RemoveTriggerListener {#void-removetriggerlistener}
 
 ```csharp
-public static bool AttachTriggerListener(
+public static void RemoveTriggerListener(
     Action< ushort, MLInputControllerTriggerEvent, float > triggerCallback
 )
 ```
@@ -53,10 +51,12 @@ public static State GetState()
 
 -----------
 
-### void RemoveTriggerListener {#void-removetriggerlistener}
+### bool AttachTriggerListener {#bool-attachtriggerlistener}
+
+Exposed callback for controller NativeBindings.OnTrigger   trigger event. 
 
 ```csharp
-public static void RemoveTriggerListener(
+public static bool AttachTriggerListener(
     Action< ushort, MLInputControllerTriggerEvent, float > triggerCallback
 )
 ```
@@ -96,52 +96,12 @@ public const uint MaxControllerTouchpadTouches = 2;
 
 ## Public Enums
 
-### CalibrationAccuracy {#enums-calibrationaccuracy}
-
-The calibration accuracy levels for controller. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Bad | 0| The calibration accuracy is bad.   |
-| Low | 1| The calibration accuracy is low.   |
-| Medium | 2| The calibration accuracy is medium.   |
-| High | 3| The calibration accuracy is high.   |
-
-
-
-
-
-
-
-
------------
-
-### MLInputControllerButton {#enums-mlinputcontrollerbutton}
+### MLInputControllerType {#enums-mlinputcontrollertype}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | None | |   |
-| Bumper | |   |
-| Menu | |   |
-| Count | |   |
-
-
-
-
-
-
-
-
------------
-
-### MLInputControllerHand {#enums-mlinputcontrollerhand}
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| None | |   |
-| Left | |   |
-| Right | |   |
-| Both | |   |
+| Device | |   |
 
 
 
@@ -172,12 +132,52 @@ Trigger events types.
 
 -----------
 
-### MLInputControllerType {#enums-mlinputcontrollertype}
+### MLInputControllerHand {#enums-mlinputcontrollerhand}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | None | |   |
-| Device | |   |
+| Left | |   |
+| Right | |   |
+| Both | |   |
+
+
+
+
+
+
+
+
+-----------
+
+### MLInputControllerButton {#enums-mlinputcontrollerbutton}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| None | |   |
+| Bumper | |   |
+| Menu | |   |
+| Count | |   |
+
+
+
+
+
+
+
+
+-----------
+
+### CalibrationAccuracy {#enums-calibrationaccuracy}
+
+The calibration accuracy levels for controller. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Bad | 0| The calibration accuracy is bad.   |
+| Low | 1| The calibration accuracy is low.   |
+| Medium | 2| The calibration accuracy is medium.   |
+| High | 3| The calibration accuracy is high.   |
 
 
 

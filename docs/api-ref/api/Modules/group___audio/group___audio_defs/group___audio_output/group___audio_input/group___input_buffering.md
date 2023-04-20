@@ -75,8 +75,9 @@ Returns the preferred (i.e. best performing) settings for buffered input.
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -121,8 +122,9 @@ This function returns the latency between the time a sound occurs in the real wo
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -169,8 +171,9 @@ This function returns a buffer when one of the input buffers is full and needs t
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -214,8 +217,9 @@ After receiving a full buffer from MLAudioGetInputBuffer and reading the audio d
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 

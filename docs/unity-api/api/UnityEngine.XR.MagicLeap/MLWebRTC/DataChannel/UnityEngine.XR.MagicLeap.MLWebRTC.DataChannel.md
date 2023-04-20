@@ -17,23 +17,6 @@ Class that represents a data channel used by the [MLWebRTC](/unity-api/api/Unity
 
 ## Public Fields
 
-### Label {#string-label}
-
-Gets the label of the data channel. 
-
-```csharp
-
-public string Label { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### ParentConnection {#peerconnection-parentconnection}
 
 Gets the connection associated with the data channel. 
@@ -54,17 +37,32 @@ public PeerConnection ParentConnection { get; set; }
 
 -----------
 
+### Label {#string-label}
+
+Gets the label of the data channel. 
+
+```csharp
+
+public string Label { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ## Public Methods
 
-### [DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) CreateLocal {#datachannel-createlocal}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SendMessage< T > {#mlresult-sendmessage-t-}
 
-Creates an initialized [DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) object. 
+Sends a byte array message to a data channel. 
 
 ```csharp
-public static DataChannel CreateLocal(
-    MLWebRTC.PeerConnection connection,
-    out MLResult result,
-    string label ="local"
+public MLResult SendMessage< T >(
+    T [] message
 )
 ```
 
@@ -73,47 +71,26 @@ public static DataChannel CreateLocal(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebRTC.PeerConnection](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md) |connection|The connection to create the data channel with.|
-| out [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |label|The label to give the data channel.|
-| string |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) object of the inner platform call(s).|
+| T [] |message|The byte array to send.|
 
 
 
 
 
 
-**Returns**: An initialized [DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) object.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
-
-Destroys the data channel object. 
-
-```csharp
-public MLResult Destroy()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultDataChannelIsClosed  if data channel is closed. 
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) IsOpen {#mlresult-isopen}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SendMessage {#mlresult-sendmessage}
 
-Checks if the data channel is currently open. 
+Sends a string message to a data channel. 
 
 ```csharp
-public MLResult IsOpen(
-    out bool open
+public MLResult SendMessage(
+    string message
 )
 ```
 
@@ -122,25 +99,25 @@ public MLResult IsOpen(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out bool |open|True if data channel is open.|
+| string |message|The string to send.|
 
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultDataChannelIsClosed  if data channel is closed. 
 
 
 
 -----------
 
-### delegate void OnClosedDelegate {#delegate-void-oncloseddelegate}
+### delegate void OnOpenedDelegate {#delegate-void-onopeneddelegate}
 
-Delegate that describes the requirements of the OnClosed callback. 
+Delegate that describes the requirements of the OnOpened callback. 
 
 ```csharp
-public delegate void OnClosedDelegate(
+public delegate void OnOpenedDelegate(
     MLWebRTC.DataChannel dataChannel
 )
 ```
@@ -151,32 +128,6 @@ public delegate void OnClosedDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|The data channel associated with the event.|
-
-
-
-
-
-
------------
-
-### delegate void OnMessageBinaryDelegate {#delegate-void-onmessagebinarydelegate}
-
-Delegate that describes the requirements of the OnMessageBinary callback. 
-
-```csharp
-public delegate void OnMessageBinaryDelegate(
-    MLWebRTC.DataChannel dataChannel,
-    byte [] message
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|The data channel associated with the event.|
-| byte [] |message|The message byte array.|
 
 
 
@@ -211,12 +162,38 @@ public delegate void OnMessageTextDelegate(
 
 -----------
 
-### delegate void OnOpenedDelegate {#delegate-void-onopeneddelegate}
+### delegate void OnMessageBinaryDelegate {#delegate-void-onmessagebinarydelegate}
 
-Delegate that describes the requirements of the OnOpened callback. 
+Delegate that describes the requirements of the OnMessageBinary callback. 
 
 ```csharp
-public delegate void OnOpenedDelegate(
+public delegate void OnMessageBinaryDelegate(
+    MLWebRTC.DataChannel dataChannel,
+    byte [] message
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebRTC.DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) |dataChannel|The data channel associated with the event.|
+| byte [] |message|The message byte array.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnClosedDelegate {#delegate-void-oncloseddelegate}
+
+Delegate that describes the requirements of the OnClosed callback. 
+
+```csharp
+public delegate void OnClosedDelegate(
     MLWebRTC.DataChannel dataChannel
 )
 ```
@@ -235,13 +212,13 @@ public delegate void OnOpenedDelegate(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SendMessage {#mlresult-sendmessage}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) IsOpen {#mlresult-isopen}
 
-Sends a string message to a data channel. 
+Checks if the data channel is currently open. 
 
 ```csharp
-public MLResult SendMessage(
-    string message
+public MLResult IsOpen(
+    out bool open
 )
 ```
 
@@ -250,26 +227,47 @@ public MLResult SendMessage(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |message|The string to send.|
+| out bool |open|True if data channel is open.|
 
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultDataChannelIsClosed  if data channel is closed. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SendMessage< T > {#mlresult-sendmessage-t-}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
 
-Sends a byte array message to a data channel. 
+Destroys the data channel object. 
 
 ```csharp
-public MLResult SendMessage< T >(
-    T [] message
+public MLResult Destroy()
+```
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
+
+
+
+-----------
+
+### [DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) CreateLocal {#datachannel-createlocal}
+
+Creates an initialized [DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) object. 
+
+```csharp
+public static DataChannel CreateLocal(
+    MLWebRTC.PeerConnection connection,
+    out MLResult result,
+    string label ="local"
 )
 ```
 
@@ -278,14 +276,16 @@ public MLResult SendMessage< T >(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| T [] |message|The byte array to send.|
+| [MLWebRTC.PeerConnection](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md) |connection|The connection to create the data channel with.|
+| out [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |label|The label to give the data channel.|
+| string |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) object of the inner platform call(s).|
 
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultDataChannelIsClosed  if data channel is closed. 
+**Returns**: An initialized [DataChannel](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md) object.
 
 
 
@@ -293,27 +293,12 @@ public MLResult SendMessage< T >(
 
 ## Public Events
 
-### OnClosed {#oncloseddelegate-onclosed}
+### OnOpened {#onopeneddelegate-onopened}
 
-Event invoked for when a data channel closes. 
-
-```csharp
-public OnClosedDelegate OnClosed()
-```
-
-
-
-
-
-
------------
-
-### OnMessageBinary {#onmessagebinarydelegate-onmessagebinary}
-
-Event invoked for when a data channel receives a binary message. 
+Event invoked for when a data channel opens. 
 
 ```csharp
-public OnMessageBinaryDelegate OnMessageBinary()
+public OnOpenedDelegate OnOpened()
 ```
 
 
@@ -338,12 +323,27 @@ public OnMessageTextDelegate OnMessageText()
 
 -----------
 
-### OnOpened {#onopeneddelegate-onopened}
+### OnMessageBinary {#onmessagebinarydelegate-onmessagebinary}
 
-Event invoked for when a data channel opens. 
+Event invoked for when a data channel receives a binary message. 
 
 ```csharp
-public OnOpenedDelegate OnOpened()
+public OnMessageBinaryDelegate OnMessageBinary()
+```
+
+
+
+
+
+
+-----------
+
+### OnClosed {#oncloseddelegate-onclosed}
+
+Event invoked for when a data channel closes. 
+
+```csharp
+public OnClosedDelegate OnClosed()
 ```
 
 

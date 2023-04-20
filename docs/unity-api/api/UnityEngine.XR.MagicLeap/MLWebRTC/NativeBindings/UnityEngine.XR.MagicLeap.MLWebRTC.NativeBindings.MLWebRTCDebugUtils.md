@@ -38,13 +38,30 @@ public static MLWebRTCDebugUtils Create()
 
 ## Public Attributes
 
-### Context {#intptr-context}
+### Version {#uint-version}
 
-Pointer to a context object. 
+Version of the struct. 
 
 ```csharp
 
-public IntPtr Context;
+public uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnDebugMessage {#ondebugmessagedelegate-ondebugmessage}
+
+The callback for when a debug message is received. 
+
+```csharp
+
+public OnDebugMessageDelegate OnDebugMessage;
 
 ```
 
@@ -75,30 +92,13 @@ public AndroidLogPriority LogLevel;
 
 -----------
 
-### OnDebugMessage {#ondebugmessagedelegate-ondebugmessage}
+### Context {#intptr-context}
 
-The callback for when a debug message is received. 
-
-```csharp
-
-public OnDebugMessageDelegate OnDebugMessage;
-
-```
-
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-Version of the struct. 
+Pointer to a context object. 
 
 ```csharp
 
-public uint Version;
+public IntPtr Context;
 
 ```
 

@@ -31,19 +31,16 @@ public override string ToString()
 
 ## Public Attributes
 
-### CaptureType {#capturetype-capturetype}
+### Width {#int-width}
 
-Capture Type 
+Resolution height 
 
 ```csharp
 
-public CaptureType CaptureType;
+public int Width;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -68,16 +65,19 @@ public int Height;
 
 -----------
 
-### Width {#int-width}
+### CaptureType {#capturetype-capturetype}
 
-Resolution height 
+Capture Type 
 
 ```csharp
 
-public int Width;
+public CaptureType CaptureType;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 

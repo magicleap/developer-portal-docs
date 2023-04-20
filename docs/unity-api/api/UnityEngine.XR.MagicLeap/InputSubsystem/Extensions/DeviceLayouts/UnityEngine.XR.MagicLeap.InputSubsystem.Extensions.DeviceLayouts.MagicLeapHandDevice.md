@@ -18,56 +18,11 @@ Inherits from: <br></br>InputDevice
 
 ## Public Fields
 
-### handConfidence {#axiscontrol-handconfidence}
+### wristUlnar {#bonecontrol-wristulnar}
 
 ```csharp
 
-public AxisControl handConfidence { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### keyPose {#integercontrol-keypose}
-
-```csharp
-
-public IntegerControl keyPose { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### normalizeCenter {#vector3control-normalizecenter}
-
-```csharp
-
-public Vector3Control normalizeCenter { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### wristCenter {#bonecontrol-wristcenter}
-
-```csharp
-
-public BoneControl wristCenter { get; set; }
+public BoneControl wristUlnar { get; set; }
 
 ```
 
@@ -93,11 +48,56 @@ public BoneControl wristRadial { get; set; }
 
 -----------
 
-### wristUlnar {#bonecontrol-wristulnar}
+### wristCenter {#bonecontrol-wristcenter}
 
 ```csharp
 
-public BoneControl wristUlnar { get; set; }
+public BoneControl wristCenter { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### normalizeCenter {#vector3control-normalizecenter}
+
+```csharp
+
+public Vector3Control normalizeCenter { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### keyPose {#integercontrol-keypose}
+
+```csharp
+
+public IntegerControl keyPose { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### handConfidence {#axiscontrol-handconfidence}
+
+```csharp
+
+public AxisControl handConfidence { get; set; }
 
 ```
 

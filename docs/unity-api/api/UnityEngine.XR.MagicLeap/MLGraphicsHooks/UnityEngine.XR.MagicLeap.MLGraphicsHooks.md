@@ -36,19 +36,6 @@ public static OnPreBeginRenderFrameDelegate OnPreBeginRenderFrame { get; set; }
 
 ## Public Methods
 
-### delegate void OnPreBeginRenderFrameDelegate {#delegate-void-onprebeginrenderframedelegate}
-
-```csharp
-public delegate void OnPreBeginRenderFrameDelegate()
-```
-
-
-
-
-
-
------------
-
 ### void RequestAlphaBlendFrameRendering {#void-requestalphablendframerendering}
 
 ```csharp
@@ -63,6 +50,19 @@ public static void RequestAlphaBlendFrameRendering(
 | Type | Name  | Description  | 
 |--|--|--|
 | bool |useAlphaBlend||
+
+
+
+
+
+
+-----------
+
+### delegate void OnPreBeginRenderFrameDelegate {#delegate-void-onprebeginrenderframedelegate}
+
+```csharp
+public delegate void OnPreBeginRenderFrameDelegate()
+```
 
 
 

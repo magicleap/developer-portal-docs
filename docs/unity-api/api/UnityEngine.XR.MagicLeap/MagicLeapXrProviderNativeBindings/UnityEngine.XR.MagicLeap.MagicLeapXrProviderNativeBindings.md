@@ -21,10 +21,10 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### ulong GetControllerTrackerHandle {#ulong-getcontrollertrackerhandle}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StopHaptics {#mlresultcode-stophaptics}
 
 ```csharp
-public ulong GetControllerTrackerHandle()
+public MLResult.Code StopHaptics()
 ```
 
 
@@ -34,51 +34,12 @@ public ulong GetControllerTrackerHandle()
 
 -----------
 
-### ulong GetHandTrackerHandle {#ulong-gethandtrackerhandle}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StartHapticsPattern {#mlresultcode-starthapticspattern}
 
 ```csharp
-public ulong GetHandTrackerHandle()
-```
-
-
-
-
-
-
------------
-
-### ulong GetHeadTrackerHandle {#ulong-getheadtrackerhandle}
-
-```csharp
-public ulong GetHeadTrackerHandle()
-```
-
-
-
-
-
-
------------
-
-### ulong GetInputHandle {#ulong-getinputhandle}
-
-```csharp
-public ulong GetInputHandle()
-```
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetUnityPose {#mlresultcode-getunitypose}
-
-```csharp
-public MLResult.Code GetUnityPose(
-    MLCoordinateFrameUID cfuid,
-    out Pose pose
+public MLResult.Code StartHapticsPattern(
+    uint eventType,
+    IntPtr buffer
 )
 ```
 
@@ -87,8 +48,8 @@ public MLResult.Code GetUnityPose(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |cfuid|A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values. |
-| out Pose |pose||
+| uint |eventType||
+| IntPtr |buffer||
 
 
 
@@ -125,12 +86,12 @@ public delegate void OnDebugMessageDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StartHapticsPattern {#mlresultcode-starthapticspattern}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetUnityPose {#mlresultcode-getunitypose}
 
 ```csharp
-public MLResult.Code StartHapticsPattern(
-    uint eventType,
-    IntPtr buffer
+public MLResult.Code GetUnityPose(
+    MLCoordinateFrameUID cfuid,
+    out Pose pose
 )
 ```
 
@@ -139,8 +100,8 @@ public MLResult.Code StartHapticsPattern(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| uint |eventType||
-| IntPtr |buffer||
+| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |cfuid|A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values. |
+| out Pose |pose||
 
 
 
@@ -149,10 +110,49 @@ public MLResult.Code StartHapticsPattern(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StopHaptics {#mlresultcode-stophaptics}
+### ulong GetInputHandle {#ulong-getinputhandle}
 
 ```csharp
-public MLResult.Code StopHaptics()
+public ulong GetInputHandle()
+```
+
+
+
+
+
+
+-----------
+
+### ulong GetHeadTrackerHandle {#ulong-getheadtrackerhandle}
+
+```csharp
+public ulong GetHeadTrackerHandle()
+```
+
+
+
+
+
+
+-----------
+
+### ulong GetHandTrackerHandle {#ulong-gethandtrackerhandle}
+
+```csharp
+public ulong GetHandTrackerHandle()
+```
+
+
+
+
+
+
+-----------
+
+### ulong GetControllerTrackerHandle {#ulong-getcontrollertrackerhandle}
+
+```csharp
+public ulong GetControllerTrackerHandle()
 ```
 
 

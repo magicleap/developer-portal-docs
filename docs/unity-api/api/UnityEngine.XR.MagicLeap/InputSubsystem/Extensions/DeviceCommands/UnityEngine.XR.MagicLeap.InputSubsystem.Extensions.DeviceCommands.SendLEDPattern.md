@@ -18,11 +18,11 @@ Inherits from: <br></br>IInputDeviceCommandInfo
 
 ## Public Fields
 
-### Type {#fourcc-type}
+### typeStatic {#fourcc-typestatic}
 
 ```csharp
 
-public static FourCC Type { get; set; }
+public FourCC typeStatic { get; set; }
 
 ```
 
@@ -33,11 +33,11 @@ public static FourCC Type { get; set; }
 
 -----------
 
-### typeStatic {#fourcc-typestatic}
+### Type {#fourcc-type}
 
 ```csharp
 
-public FourCC typeStatic { get; set; }
+public static FourCC Type { get; set; }
 
 ```
 
@@ -78,26 +78,11 @@ public static SendLEDPattern Create(
 
 ## Public Attributes
 
-### baseCommand {#inputdevicecommand-basecommand}
+### pattern {#uint-pattern}
 
 ```csharp
 
-public InputDeviceCommand baseCommand;
-
-```
-
-
-
-
-
-
------------
-
-### color {#uint-color}
-
-```csharp
-
-public uint color;
+public uint pattern;
 
 ```
 
@@ -123,11 +108,26 @@ public uint duration;
 
 -----------
 
-### pattern {#uint-pattern}
+### color {#uint-color}
 
 ```csharp
 
-public uint pattern;
+public uint color;
+
+```
+
+
+
+
+
+
+-----------
+
+### baseCommand {#inputdevicecommand-basecommand}
+
+```csharp
+
+public InputDeviceCommand baseCommand;
 
 ```
 

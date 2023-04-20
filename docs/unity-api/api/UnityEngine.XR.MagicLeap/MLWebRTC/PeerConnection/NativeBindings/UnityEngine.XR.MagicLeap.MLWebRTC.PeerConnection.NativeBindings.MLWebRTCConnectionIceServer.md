@@ -39,30 +39,13 @@ public MLWebRTC.IceServer Data { get; set; }
 
 ## Public Attributes
 
-### Password {#string-password}
+### Version {#uint-version}
 
-Password to the ice server. 
-
-```csharp
-
-public string Password;
-
-```
-
-
-
-
-
-
------------
-
-### Uri {#string-uri}
-
-Uri of the ice server. 
+Version of the struct. 
 
 ```csharp
 
-public string Uri;
+public uint Version;
 
 ```
 
@@ -90,13 +73,30 @@ public string UserName;
 
 -----------
 
-### Version {#uint-version}
+### Uri {#string-uri}
 
-Version of the struct. 
+Uri of the ice server. 
 
 ```csharp
 
-public uint Version;
+public string Uri;
+
+```
+
+
+
+
+
+
+-----------
+
+### Password {#string-password}
+
+Password to the ice server. 
+
+```csharp
+
+public string Password;
 
 ```
 

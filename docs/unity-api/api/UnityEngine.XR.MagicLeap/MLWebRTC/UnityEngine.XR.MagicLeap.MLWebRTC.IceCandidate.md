@@ -17,13 +17,13 @@ Class that represents an ice candidate used by the [MLWebRTC](/unity-api/api/Uni
 
 ## Public Fields
 
-### Candidate {#string-candidate}
+### SdpMid {#string-sdpmid}
 
-Gets the candidate id. 
+Gets the id of the source media component from which the candidate draws data. 
 
 ```csharp
 
-public string Candidate { get; set; }
+public string SdpMid { get; set; }
 
 ```
 
@@ -51,13 +51,13 @@ public int SdpMLineIndex { get; set; }
 
 -----------
 
-### SdpMid {#string-sdpmid}
+### Candidate {#string-candidate}
 
-Gets the id of the source media component from which the candidate draws data. 
+Gets the candidate id. 
 
 ```csharp
 
-public string SdpMid { get; set; }
+public string Candidate { get; set; }
 
 ```
 

@@ -16,50 +16,11 @@ title: HMDActions
 
 ## Public Methods
 
-### void Disable {#void-disable}
+### implicit operator InputActionMap {#implicit-operator-inputactionmap}
 
 ```csharp
-public void Disable()
-```
-
-
-
-
-
-
------------
-
-### void Enable {#void-enable}
-
-```csharp
-public void Enable()
-```
-
-
-
-
-
-
------------
-
-### InputActionMap Get {#inputactionmap-get}
-
-```csharp
-public InputActionMap Get()
-```
-
-
-
-
-
-
------------
-
-###  HMDActions {#functions-hmdactions}
-
-```csharp
-public HMDActions(
-    @MagicLeapInputs wrapper
+public static implicit operator InputActionMap(
+    HMDActions set
 )
 ```
 
@@ -68,7 +29,7 @@ public HMDActions(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| @[MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
+| [HMDActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.HMDActions.md) |set||
 
 
 
@@ -99,11 +60,11 @@ public void SetCallbacks(
 
 -----------
 
-### implicit operator InputActionMap {#implicit-operator-inputactionmap}
+###  HMDActions {#functions-hmdactions}
 
 ```csharp
-public static implicit operator InputActionMap(
-    HMDActions set
+public HMDActions(
+    @MagicLeapInputs wrapper
 )
 ```
 
@@ -112,7 +73,46 @@ public static implicit operator InputActionMap(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [HMDActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.HMDActions.md) |set||
+| @[MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
+
+
+
+
+
+
+-----------
+
+### InputActionMap Get {#inputactionmap-get}
+
+```csharp
+public InputActionMap Get()
+```
+
+
+
+
+
+
+-----------
+
+### void Enable {#void-enable}
+
+```csharp
+public void Enable()
+```
+
+
+
+
+
+
+-----------
+
+### void Disable {#void-disable}
+
+```csharp
+public void Disable()
+```
 
 
 
@@ -123,11 +123,11 @@ public static implicit operator InputActionMap(
 
 ## Public Attributes
 
-### Position {#inputaction-position}
+### enabled {#bool-enabled}
 
 ```csharp
 
-public InputAction Position => m_Wrapper.m_HMD_Position;
+public bool enabled => Get().enabled;
 
 ```
 
@@ -153,11 +153,11 @@ public InputAction Rotation => m_Wrapper.m_HMD_Rotation;
 
 -----------
 
-### enabled {#bool-enabled}
+### Position {#inputaction-position}
 
 ```csharp
 
-public bool enabled => Get().enabled;
+public InputAction Position => m_Wrapper.m_HMD_Position;
 
 ```
 

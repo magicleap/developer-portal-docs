@@ -22,6 +22,23 @@ Inherits from: <br></br>[MLAutoAPISingleton< MLAudioOutput >](/unity-api/api/Uni
 
 ## Public Fields
 
+### MasterVolume {#float-mastervolume}
+
+Gets the master volume for the device. 
+
+```csharp
+
+public static float MasterVolume { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### AudioOutputDevice {#device-audiooutputdevice}
 
 Gets the audio output device. 
@@ -42,30 +59,13 @@ public static Device AudioOutputDevice { get; set; }
 
 -----------
 
-### MasterVolume {#float-mastervolume}
-
-Gets the master volume for the device. 
-
-```csharp
-
-public static float MasterVolume { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetSoundBypassesMasterVolume {#mlresult-getsoundbypassesmastervolume}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetSoundBypassesMasterVolume {#mlresult-setsoundbypassesmastervolume}
 
 ```csharp
-public static MLResult GetSoundBypassesMasterVolume(
-    out bool isBypassing
+public static MLResult SetSoundBypassesMasterVolume(
+    bool isBypassing
 )
 ```
 
@@ -74,55 +74,7 @@ public static MLResult GetSoundBypassesMasterVolume(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out bool |isBypassing||
-
-
-
-
-
-
------------
-
-### delegate void MLAudioMediaEventDelegate {#delegate-void-mlaudiomediaeventdelegate}
-
-The delegate for audio output media event. 
-
-```csharp
-public delegate void MLAudioMediaEventDelegate(
-    MediaEvent mediaEvent
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MediaEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-mediaevent) |device|The new media event.|
-
-
-
-
-
-
------------
-
-### delegate void OnAudioOutputDeviceChangedDelegate {#delegate-void-onaudiooutputdevicechangeddelegate}
-
-The delegate for audio output device changed event. 
-
-```csharp
-public delegate void OnAudioOutputDeviceChangedDelegate(
-    Device device
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) |device|The new audio output device.|
+| bool |isBypassing||
 
 
 
@@ -155,11 +107,13 @@ public delegate void OnMasterVolumeChangedDelegate(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetSoundBypassesMasterVolume {#mlresult-setsoundbypassesmastervolume}
+### delegate void OnAudioOutputDeviceChangedDelegate {#delegate-void-onaudiooutputdevicechangeddelegate}
+
+The delegate for audio output device changed event. 
 
 ```csharp
-public static MLResult SetSoundBypassesMasterVolume(
-    bool isBypassing
+public delegate void OnAudioOutputDeviceChangedDelegate(
+    Device device
 )
 ```
 
@@ -168,7 +122,53 @@ public static MLResult SetSoundBypassesMasterVolume(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| bool |isBypassing||
+| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) |device|The new audio output device.|
+
+
+
+
+
+
+-----------
+
+### delegate void MLAudioMediaEventDelegate {#delegate-void-mlaudiomediaeventdelegate}
+
+The delegate for audio output media event. 
+
+```csharp
+public delegate void MLAudioMediaEventDelegate(
+    MediaEvent mediaEvent
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MediaEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-mediaevent) |device|The new media event.|
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetSoundBypassesMasterVolume {#mlresult-getsoundbypassesmastervolume}
+
+```csharp
+public static MLResult GetSoundBypassesMasterVolume(
+    out bool isBypassing
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out bool |isBypassing||
 
 
 
@@ -178,6 +178,23 @@ public static MLResult SetSoundBypassesMasterVolume(
 -----------
 
 ## Protected Methods
+
+### Update {#override-void-update}
+
+Called every device frame 
+
+```csharp
+protected virtual override void Update()
+```
+
+
+
+
+**Reimplements**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
+
+
+
+-----------
 
 ### StopAPI {#override-stopapi}
 
@@ -203,31 +220,14 @@ protected virtual override MLResult.Code StopAPI()
 
 -----------
 
-### Update {#override-void-update}
-
-Called every device frame 
-
-```csharp
-protected virtual override void Update()
-```
-
-
-
-
-**Reimplements**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
-
-
-
------------
-
 ## Public Events
 
-### OnAudioOutputDeviceChanged {#onaudiooutputdevicechangeddelegate-onaudiooutputdevicechanged}
+### OnMediaEvent {#mlaudiomediaeventdelegate-onmediaevent}
 
-Raised whenever the audio output device gets changed. 
+Raised whenever the media event happens. 
 
 ```csharp
-public static OnAudioOutputDeviceChangedDelegate OnAudioOutputDeviceChanged()
+public static MLAudioMediaEventDelegate OnMediaEvent()
 ```
 
 
@@ -252,12 +252,12 @@ public static OnMasterVolumeChangedDelegate OnMasterVolumeChanged()
 
 -----------
 
-### OnMediaEvent {#mlaudiomediaeventdelegate-onmediaevent}
+### OnAudioOutputDeviceChanged {#onaudiooutputdevicechangeddelegate-onaudiooutputdevicechanged}
 
-Raised whenever the media event happens. 
+Raised whenever the audio output device gets changed. 
 
 ```csharp
-public static MLAudioMediaEventDelegate OnMediaEvent()
+public static OnAudioOutputDeviceChangedDelegate OnAudioOutputDeviceChanged()
 ```
 
 
@@ -269,14 +269,14 @@ public static MLAudioMediaEventDelegate OnMediaEvent()
 
 ## Public Enums
 
-### ChannelFormatType {#enums-channelformattype}
+### SampleFormatType {#enums-sampleformattype}
 
-Possible channel formats for input and output streams. 
+Possible sample formats for input and output streams. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Default | |   |
-| AmbisonicAmbix | |   |
+| Int | |   |
+| Float | |   |
 
 
 
@@ -287,27 +287,35 @@ Possible channel formats for input and output streams.
 
 -----------
 
-### ChannelLayouts {#enums-channellayouts}
+### MediaEvent {#enums-mediaevent}
 
-Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)   composite of individual channel masks. 
+Possible media control events initiated by the user. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | ChannelMask.None|   |
-| Mono | ChannelMask.FrontLeft| Mask shortcut for Mono audio output.   |
-| Stereo | ChannelMask.FrontLeft | ChannelMask.FrontRight| Mask shortcut for Stereo audio output.   |
-| StereoFrontCenter | Stereo | ChannelMask.FrontCenter| Mask shortcut for Stereo and Front Center audio output.   |
-| Quad | ChannelMask.FrontLeft | ChannelMask.FrontRight |
-                   ChannelMask.BackLeft | ChannelMask.BackRight| Mask shortcut for Quad audio output.   |
-| QuadFrontCenter | Quad | ChannelMask.FrontCenter| Mask shortcut for Quad and Front Center audio output.   |
-| Surround | ChannelMask.FrontLeft | ChannelMask.FrontRight | ChannelMask.FrontCenter
-                       | ChannelMask.BackCenter| Mask shortcut for surround audio output.   |
-| FivePointOne | ChannelMask.FrontLeft | ChannelMask.FrontRight | ChannelMask.FrontCenter
-                           | ChannelMask.BackLeft | ChannelMask.BackRight
-                           | ChannelMask.LowFrequencyEffects| Mask shortcut for 5.1 audio output.   |
-| FivePointOneBackCenter | FivePointOne | ChannelMask.BackCenter| Mask shortcut for 5.1 and Back Center audio output.   |
-| SevenPointOne | FivePointOne | ChannelMask.FrontLeftOfCenter | ChannelMask.FrontRightOfCenter| Mask shortcut for 7.1 audio output.   |
-| SevenPointOneSurround | FivePointOne | ChannelMask.SideLeft | ChannelMask.SideRight| Mask shortcut for 7.1 surround audio output.   |
+| Play | | Indicates a user command to play   |
+| Stop | | Indicates a user command to stop.   |
+| Pause | | Indicates a user command to pause.   |
+| NextTrack | | Indicates a user command to go to next track.   |
+| PrevTrack | | Indicates a user command to go to previous track.   |
+
+
+
+
+
+
+
+
+-----------
+
+### Device {#enums-device}
+
+The currently active output device. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Wearable | | Built-in speakers in the wearable.   |
+| AnalogJack | | 3.5mm jack on the belt pack.   |
 
 
 
@@ -360,14 +368,27 @@ Audio output channels mask for track type. Bits order matches the C API. These m
 
 -----------
 
-### Device {#enums-device}
+### ChannelLayouts {#enums-channellayouts}
 
-The currently active output device. 
+Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)   composite of individual channel masks. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Wearable | | Built-in speakers in the wearable.   |
-| AnalogJack | | 3.5mm jack on the belt pack.   |
+| None | ChannelMask.None|   |
+| Mono | ChannelMask.FrontLeft| Mask shortcut for Mono audio output.   |
+| Stereo | ChannelMask.FrontLeft | ChannelMask.FrontRight| Mask shortcut for Stereo audio output.   |
+| StereoFrontCenter | Stereo | ChannelMask.FrontCenter| Mask shortcut for Stereo and Front Center audio output.   |
+| Quad | ChannelMask.FrontLeft | ChannelMask.FrontRight |
+                   ChannelMask.BackLeft | ChannelMask.BackRight| Mask shortcut for Quad audio output.   |
+| QuadFrontCenter | Quad | ChannelMask.FrontCenter| Mask shortcut for Quad and Front Center audio output.   |
+| Surround | ChannelMask.FrontLeft | ChannelMask.FrontRight | ChannelMask.FrontCenter
+                       | ChannelMask.BackCenter| Mask shortcut for surround audio output.   |
+| FivePointOne | ChannelMask.FrontLeft | ChannelMask.FrontRight | ChannelMask.FrontCenter
+                           | ChannelMask.BackLeft | ChannelMask.BackRight
+                           | ChannelMask.LowFrequencyEffects| Mask shortcut for 5.1 audio output.   |
+| FivePointOneBackCenter | FivePointOne | ChannelMask.BackCenter| Mask shortcut for 5.1 and Back Center audio output.   |
+| SevenPointOne | FivePointOne | ChannelMask.FrontLeftOfCenter | ChannelMask.FrontRightOfCenter| Mask shortcut for 7.1 audio output.   |
+| SevenPointOneSurround | FivePointOne | ChannelMask.SideLeft | ChannelMask.SideRight| Mask shortcut for 7.1 surround audio output.   |
 
 
 
@@ -378,35 +399,14 @@ The currently active output device.
 
 -----------
 
-### MediaEvent {#enums-mediaevent}
+### ChannelFormatType {#enums-channelformattype}
 
-Possible media control events initiated by the user. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Play | | Indicates a user command to play   |
-| Stop | | Indicates a user command to stop.   |
-| Pause | | Indicates a user command to pause.   |
-| NextTrack | | Indicates a user command to go to next track.   |
-| PrevTrack | | Indicates a user command to go to previous track.   |
-
-
-
-
-
-
-
-
------------
-
-### SampleFormatType {#enums-sampleformattype}
-
-Possible sample formats for input and output streams. 
+Possible channel formats for input and output streams. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Int | |   |
-| Float | |   |
+| Default | |   |
+| AmbisonicAmbix | |   |
 
 
 

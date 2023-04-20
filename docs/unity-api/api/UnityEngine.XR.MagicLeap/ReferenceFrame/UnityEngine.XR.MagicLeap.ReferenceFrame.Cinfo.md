@@ -17,33 +17,13 @@ Information necessary to construct a reference frame
 
 ## Public Attributes
 
-### cfuid {#nativemagicleapnativebindingsmlcoordinateframeuid-cfuid}
+### trackingState {#trackingstate-trackingstate}
 
-The closest coordinate frame's UID. Necessary so we can update the anchor in the future. 
-
-```csharp
-
-public Native.MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
-
-
-
-
-
------------
-
-### closetCoordinateFrame {#pose-closetcoordinateframe}
-
-The closet coordinate frame to the requested point 
+The tracking state of the anchor. Necessary so we can report an update if the tracking state changes. 
 
 ```csharp
 
-public Pose closetCoordinateFrame;
+public TrackingState trackingState;
 
 ```
 
@@ -71,16 +51,36 @@ public Pose initialAnchorPose;
 
 -----------
 
-### trackingState {#trackingstate-trackingstate}
+### closetCoordinateFrame {#pose-closetcoordinateframe}
 
-The tracking state of the anchor. Necessary so we can report an update if the tracking state changes. 
+The closet coordinate frame to the requested point 
 
 ```csharp
 
-public TrackingState trackingState;
+public Pose closetCoordinateFrame;
 
 ```
 
+
+
+
+
+
+-----------
+
+### cfuid {#nativemagicleapnativebindingsmlcoordinateframeuid-cfuid}
+
+The closest coordinate frame's UID. Necessary so we can update the anchor in the future. 
+
+```csharp
+
+public Native.MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 

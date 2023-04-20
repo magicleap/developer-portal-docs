@@ -17,19 +17,16 @@ Struct representing a captured camera frame.
 
 ## Public Fields
 
-### Format {#mlwebrtcvideosinkframeoutputformat-format}
+### TimeStampUs {#ulong-timestampus}
 
-Gets the format of the image planes in this frame. 
+Gets the timestamp of the frame in microseconds. 
 
 ```csharp
 
-public MLWebRTC.VideoSink.Frame.OutputFormat Format { get; set; }
+public ulong TimeStampUs { get; set; }
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MLWebRTC.VideoSink.Frame.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
 
 
 
@@ -37,13 +34,11 @@ public MLWebRTC.VideoSink.Frame.OutputFormat Format { get; set; }
 
 -----------
 
-### Id {#ulong-id}
-
-Gets the id of the frame. 
+### NativeFrame {#nativebufferinfo-nativeframe}
 
 ```csharp
 
-public ulong Id { get; set; }
+public NativeBufferInfo NativeFrame { get; set; }
 
 ```
 
@@ -74,11 +69,13 @@ public MLWebRTC.VideoSink.Frame.PlaneInfo [] ImagePlanes { get; set; }
 
 -----------
 
-### NativeFrame {#nativebufferinfo-nativeframe}
+### Id {#ulong-id}
+
+Gets the id of the frame. 
 
 ```csharp
 
-public NativeBufferInfo NativeFrame { get; set; }
+public ulong Id { get; set; }
 
 ```
 
@@ -89,16 +86,19 @@ public NativeBufferInfo NativeFrame { get; set; }
 
 -----------
 
-### TimeStampUs {#ulong-timestampus}
+### Format {#mlwebrtcvideosinkframeoutputformat-format}
 
-Gets the timestamp of the frame in microseconds. 
+Gets the format of the image planes in this frame. 
 
 ```csharp
 
-public ulong TimeStampUs { get; set; }
+public MLWebRTC.VideoSink.Frame.OutputFormat Format { get; set; }
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [MLWebRTC.VideoSink.Frame.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
 
 
 
@@ -107,6 +107,25 @@ public ulong TimeStampUs { get; set; }
 -----------
 
 ## Public Methods
+
+### override string ToString {#override-string-tostring}
+
+Override to display the contents of a frame as a string. 
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+**Returns**: A string representation of this struct.
+
+
+
+-----------
 
 ### [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) Create {#frame-create}
 
@@ -163,25 +182,6 @@ public static Frame Create(
 
 
 
-
-
-
------------
-
-### override string ToString {#override-string-tostring}
-
-Override to display the contents of a frame as a string. 
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
-**Returns**: A string representation of this struct.
 
 
 

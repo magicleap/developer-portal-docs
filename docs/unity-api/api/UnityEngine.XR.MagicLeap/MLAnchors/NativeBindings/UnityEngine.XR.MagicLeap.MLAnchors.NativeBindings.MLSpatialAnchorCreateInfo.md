@@ -43,13 +43,13 @@ public MLSpatialAnchorCreateInfo(
 
 ## Public Attributes
 
-### ExpirationTimestamp {#readonly-ulong-expirationtimestamp}
+### Version {#readonly-uint-version}
 
-The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. If the timestamp is set to zero in this struct, it will default to one year from when the anchor is created. 
+Version of the structure. 
 
 ```csharp
 
-public readonly ulong ExpirationTimestamp;
+public readonly uint Version;
 
 ```
 
@@ -80,13 +80,13 @@ public readonly NativeBindings.MLTransform Transform;
 
 -----------
 
-### Version {#readonly-uint-version}
+### ExpirationTimestamp {#readonly-ulong-expirationtimestamp}
 
-Version of the structure. 
+The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. If the timestamp is set to zero in this struct, it will default to one year from when the anchor is created. 
 
 ```csharp
 
-public readonly uint Version;
+public readonly ulong ExpirationTimestamp;
 
 ```
 

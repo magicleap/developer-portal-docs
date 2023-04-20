@@ -16,10 +16,10 @@ title: SettingsIntentsLauncher
 
 ## Public Methods
 
-### void LaunchSystemARCloudSettings {#void-launchsystemarcloudsettings}
+### void LaunchSystemVoiceInputSettings {#void-launchsystemvoiceinputsettings}
 
 ```csharp
-public static void LaunchSystemARCloudSettings()
+public static void LaunchSystemVoiceInputSettings()
 ```
 
 
@@ -42,10 +42,10 @@ public static void LaunchSystemDisplaySettings()
 
 -----------
 
-### void LaunchSystemVoiceInputSettings {#void-launchsystemvoiceinputsettings}
+### void LaunchSystemARCloudSettings {#void-launchsystemarcloudsettings}
 
 ```csharp
-public static void LaunchSystemVoiceInputSettings()
+public static void LaunchSystemARCloudSettings()
 ```
 
 

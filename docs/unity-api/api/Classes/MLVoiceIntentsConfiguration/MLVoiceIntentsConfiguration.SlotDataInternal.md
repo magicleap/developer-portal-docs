@@ -16,11 +16,11 @@ title: SlotDataInternal
 
 ## Public Attributes
 
-### name {#string-name}
+### value {#string-value}
 
 ```csharp
 
-public string name;
+public string value;
 
 ```
 
@@ -31,11 +31,11 @@ public string name;
 
 -----------
 
-### value {#string-value}
+### name {#string-name}
 
 ```csharp
 
-public string value;
+public string name;
 
 ```
 

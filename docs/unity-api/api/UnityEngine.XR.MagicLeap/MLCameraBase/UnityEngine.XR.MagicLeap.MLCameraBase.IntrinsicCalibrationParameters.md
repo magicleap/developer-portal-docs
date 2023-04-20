@@ -17,6 +17,19 @@ Camera intrinsic parameters.
 
 ## Public Methods
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
 ###  IntrinsicCalibrationParameters {#functions-intrinsiccalibrationparameters}
 
 ```csharp
@@ -49,73 +62,13 @@ public IntrinsicCalibrationParameters(
 
 -----------
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ## Public Attributes
 
-### Distortion {#readonly-double-distortion}
-
-Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3] 
+### Width {#readonly-uint-width}
 
 ```csharp
 
-public readonly double [] Distortion;
-
-```
-
-
-
-
-
-
------------
-
-### FOV {#readonly-float-fov}
-
-```csharp
-
-public readonly float FOV;
-
-```
-
-
-
-
-
-
------------
-
-### FocalLength {#readonly-vector2-focallength}
-
-```csharp
-
-public readonly Vector2 FocalLength;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#readonly-uint-height}
-
-```csharp
-
-public readonly uint Height;
+public readonly uint Width;
 
 ```
 
@@ -141,11 +94,58 @@ public readonly Vector2 PrincipalPoint;
 
 -----------
 
-### Width {#readonly-uint-width}
+### Height {#readonly-uint-height}
 
 ```csharp
 
-public readonly uint Width;
+public readonly uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### FocalLength {#readonly-vector2-focallength}
+
+```csharp
+
+public readonly Vector2 FocalLength;
+
+```
+
+
+
+
+
+
+-----------
+
+### FOV {#readonly-float-fov}
+
+```csharp
+
+public readonly float FOV;
+
+```
+
+
+
+
+
+
+-----------
+
+### Distortion {#readonly-double-distortion}
+
+Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3] 
+
+```csharp
+
+public readonly double [] Distortion;
 
 ```
 

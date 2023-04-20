@@ -31,11 +31,74 @@ public override string ToString()
 
 ## Public Attributes
 
-### Angle {#float-angle}
+### Type {#type-type}
 
 ```csharp
 
-public float Angle;
+public Type Type;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-type) | Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h.  |
+
+
+
+
+
+-----------
+
+### Speed {#float-speed}
+
+```csharp
+
+public float Speed;
+
+```
+
+
+
+
+
+
+-----------
+
+### Radius {#float-radius}
+
+```csharp
+
+public float Radius;
+
+```
+
+
+
+
+
+
+-----------
+
+### PositionAndForce {#vector3-positionandforce}
+
+```csharp
+
+public Vector3 PositionAndForce;
+
+```
+
+
+
+
+
+
+-----------
+
+### Distance {#float-distance}
+
+```csharp
+
+public float Distance;
 
 ```
 
@@ -64,77 +127,14 @@ public Direction Direction;
 
 -----------
 
-### Distance {#float-distance}
+### Angle {#float-angle}
 
 ```csharp
 
-public float Distance;
+public float Angle;
 
 ```
 
-
-
-
-
-
------------
-
-### PositionAndForce {#vector3-positionandforce}
-
-```csharp
-
-public Vector3 PositionAndForce;
-
-```
-
-
-
-
-
-
------------
-
-### Radius {#float-radius}
-
-```csharp
-
-public float Radius;
-
-```
-
-
-
-
-
-
------------
-
-### Speed {#float-speed}
-
-```csharp
-
-public float Speed;
-
-```
-
-
-
-
-
-
------------
-
-### Type {#type-type}
-
-```csharp
-
-public Type Type;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-type) | Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h.  |
 
 
 

@@ -179,8 +179,9 @@ Creates a sound output and allocates a double-buffer for buffering audio data in
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 

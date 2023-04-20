@@ -17,30 +17,6 @@ An audio buffer for passing data from input streams or to output streams.
 
 ## Public Methods
 
-###  Buffer {#functions-buffer}
-
-```csharp
-public Buffer(
-    BufferFormat format,
-    float [] samples
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |format|[Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams. |
-| float [] |samples||
-
-
-
-
-
-
------------
-
 ### float [] ConvertToManagedFloatSamples {#float-converttomanagedfloatsamples}
 
 Copy the provided unmanaged audio buffer to managed memory and convert the samples to float. 
@@ -73,21 +49,23 @@ public static float [] ConvertToManagedFloatSamples(
 
 -----------
 
-## Public Attributes
-
-### Format {#bufferformat-format}
-
-Audio buffer format. 
+###  Buffer {#functions-buffer}
 
 ```csharp
-
-public BufferFormat Format;
-
+public Buffer(
+    BufferFormat format,
+    float [] samples
+)
 ```
 
-| Type | Description  | 
-|--|--|
-| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) | [Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams.  |
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |format|[Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams. |
+| float [] |samples||
+
 
 
 
@@ -95,13 +73,15 @@ public BufferFormat Format;
 
 -----------
 
-### NativeDataPtr {#intptr-nativedataptr}
+## Public Attributes
 
-Pointer to audio data. Only valid when received on native callback threads. 
+### Size {#uint-size}
+
+Size of audio data in bytes. Only valid when received on native callback threads. 
 
 ```csharp
 
-public IntPtr NativeDataPtr;
+public uint Size;
 
 ```
 
@@ -129,16 +109,36 @@ public float [] Samples;
 
 -----------
 
-### Size {#uint-size}
+### NativeDataPtr {#intptr-nativedataptr}
 
-Size of audio data in bytes. Only valid when received on native callback threads. 
+Pointer to audio data. Only valid when received on native callback threads. 
 
 ```csharp
 
-public uint Size;
+public IntPtr NativeDataPtr;
 
 ```
 
+
+
+
+
+
+-----------
+
+### Format {#bufferformat-format}
+
+Audio buffer format. 
+
+```csharp
+
+public BufferFormat Format;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) | [Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams.  |
 
 
 

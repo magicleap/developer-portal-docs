@@ -38,37 +38,20 @@ public MLWebViewTabBehavior currentTab { get; set; }
 
 ## Public Methods
 
-### void CreateTab {#void-createtab}
+### void SelectTab {#void-selecttab}
 
 ```csharp
-public void CreateTab()
+public void SelectTab(
+    MLWebViewTabBehavior tab
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### void DestroyCurrentTab {#void-destroycurrenttab}
-
-```csharp
-public void DestroyCurrentTab()
-```
-
-
-
-
-
-
------------
-
-### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) [] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
-
-```csharp
-public MLWebViewTabBehavior [] GetAllTabs()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) |tab||
 
 
 
@@ -99,20 +82,37 @@ public MLWebViewTabBehavior GetTab(
 
 -----------
 
-### void SelectTab {#void-selecttab}
+### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) [] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
 
 ```csharp
-public void SelectTab(
-    MLWebViewTabBehavior tab
-)
+public MLWebViewTabBehavior [] GetAllTabs()
 ```
 
 
-**Parameters**
 
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) |tab||
+
+
+
+-----------
+
+### void DestroyCurrentTab {#void-destroycurrenttab}
+
+```csharp
+public void DestroyCurrentTab()
+```
+
+
+
+
+
+
+-----------
+
+### void CreateTab {#void-createtab}
+
+```csharp
+public void CreateTab()
+```
 
 
 
@@ -123,11 +123,11 @@ public void SelectTab(
 
 ## Public Attributes
 
-### OnTabCreated {#action-ontabcreated}
+### OnTabDestroyed {#action-ontabdestroyed}
 
 ```csharp
 
-public Action< MLWebViewTabBehavior > OnTabCreated;
+public Action< MLWebViewTabBehavior > OnTabDestroyed;
 
 ```
 
@@ -138,11 +138,11 @@ public Action< MLWebViewTabBehavior > OnTabCreated;
 
 -----------
 
-### OnTabDestroyed {#action-ontabdestroyed}
+### OnTabCreated {#action-ontabcreated}
 
 ```csharp
 
-public Action< MLWebViewTabBehavior > OnTabDestroyed;
+public Action< MLWebViewTabBehavior > OnTabCreated;
 
 ```
 

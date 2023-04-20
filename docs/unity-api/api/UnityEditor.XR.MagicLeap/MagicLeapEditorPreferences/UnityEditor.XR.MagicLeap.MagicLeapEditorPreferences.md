@@ -34,11 +34,11 @@ public static SettingsProvider CreateMLPreferencesTabProvider()
 
 ## Public Attributes
 
-### RunningLabdriver {#bool-runninglabdriver}
+### ZeroIterationRuntimePath {#string-zeroiterationruntimepath}
 
 ```csharp
 
-public static bool RunningLabdriver => labdriverRunning;
+public static string ZeroIterationRuntimePath => ziRuntimePath;
 
 ```
 
@@ -49,11 +49,11 @@ public static bool RunningLabdriver => labdriverRunning;
 
 -----------
 
-### ZeroIterationRuntimePath {#string-zeroiterationruntimepath}
+### RunningLabdriver {#bool-runninglabdriver}
 
 ```csharp
 
-public static string ZeroIterationRuntimePath => ziRuntimePath;
+public static bool RunningLabdriver => labdriverRunning;
 
 ```
 

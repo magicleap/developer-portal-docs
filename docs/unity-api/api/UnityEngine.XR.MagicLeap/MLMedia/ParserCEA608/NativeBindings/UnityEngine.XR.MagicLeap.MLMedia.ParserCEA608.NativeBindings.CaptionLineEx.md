@@ -16,11 +16,11 @@ title: CaptionLineEx
 
 ## Public Attributes
 
-### displayChars {#ushort-displaychars}
+### pacStyles {#intptr-pacstyles}
 
 ```csharp
 
-public ushort [] displayChars;
+public IntPtr [] pacStyles;
 
 ```
 
@@ -46,11 +46,11 @@ public IntPtr [] midRowStyles;
 
 -----------
 
-### pacStyles {#intptr-pacstyles}
+### displayChars {#ushort-displaychars}
 
 ```csharp
 
-public IntPtr [] pacStyles;
+public ushort [] displayChars;
 
 ```
 

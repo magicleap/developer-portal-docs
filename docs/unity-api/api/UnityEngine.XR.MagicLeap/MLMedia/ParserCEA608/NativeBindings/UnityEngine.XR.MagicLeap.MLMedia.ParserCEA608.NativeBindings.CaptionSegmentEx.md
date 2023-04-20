@@ -16,11 +16,11 @@ title: CaptionSegmentEx
 
 ## Public Attributes
 
-### lines {#intptr-lines}
+### version {#uint-version}
 
 ```csharp
 
-public IntPtr [] lines;
+public uint version;
 
 ```
 
@@ -31,11 +31,11 @@ public IntPtr [] lines;
 
 -----------
 
-### version {#uint-version}
+### lines {#intptr-lines}
 
 ```csharp
 
-public uint version;
+public IntPtr [] lines;
 
 ```
 

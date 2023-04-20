@@ -17,6 +17,32 @@ Representation of the native frame structure.
 
 ## Public Methods
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
+### void FreeUnmanagedMemory {#void-freeunmanagedmemory}
+
+```csharp
+public void FreeUnmanagedMemory()
+```
+
+
+
+
+
+
+-----------
+
 ### [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) Create {#mlwebrtcframe-create}
 
 ```csharp
@@ -67,61 +93,15 @@ public static MLWebRTCFrame Create(
 
 -----------
 
-### void FreeUnmanagedMemory {#void-freeunmanagedmemory}
-
-```csharp
-public void FreeUnmanagedMemory()
-```
-
-
-
-
-
-
------------
-
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ## Public Attributes
 
-### Format {#outputformat-format}
+### Version {#uint-version}
 
-Output format that the image planes will be in. 
-
-```csharp
-
-public OutputFormat Format;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
-
-
-
-
-
------------
-
-### FrameData {#intptr-framedata}
-
-[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) data to be interpreted as a [MLWebRTCNativeFrameInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCNativeFrameInfo.md) if Format is [OutputFormat.NativeBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-nativebuffer), otherwise interpreted as a [MLWebRTCFramePlanes](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFramePlanes.md). 
+Version of this structure. 
 
 ```csharp
 
-public IntPtr FrameData;
+public uint Version;
 
 ```
 
@@ -149,16 +129,36 @@ public ulong TimeStamp;
 
 -----------
 
-### Version {#uint-version}
+### FrameData {#intptr-framedata}
 
-Version of this structure. 
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) data to be interpreted as a [MLWebRTCNativeFrameInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCNativeFrameInfo.md) if Format is [OutputFormat.NativeBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-nativebuffer), otherwise interpreted as a [MLWebRTCFramePlanes](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFramePlanes.md). 
 
 ```csharp
 
-public uint Version;
+public IntPtr FrameData;
 
 ```
 
+
+
+
+
+
+-----------
+
+### Format {#outputformat-format}
+
+Output format that the image planes will be in. 
+
+```csharp
+
+public OutputFormat Format;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
 
 
 

@@ -39,21 +39,6 @@ private template <A ,B > class DispatchPayload2 : Dispatcher
 
 ## Public Methods
 
-### override void Dispatch {#override-void-dispatch}
-
-Dispatches the previously stored callback with the supplied payloads 
-
-```csharp
-public override void Dispatch()
-```
-
-
-
-
-
-
------------
-
 ###  DispatchPayload2 {#functions-dispatchpayload2}
 
 Initializes a new instance of the DispatchPayload2&lt;A,B&gt; class with the supplied callback and payloads 
@@ -74,6 +59,21 @@ public DispatchPayload2(
 | A |payload1|First payload|
 | B |payload2|Second payload|
 | System.Action&lt; A, B &gt; |action|Method to dispatch|
+
+
+
+
+
+
+-----------
+
+### override void Dispatch {#override-void-dispatch}
+
+Dispatches the previously stored callback with the supplied payloads 
+
+```csharp
+public override void Dispatch()
+```
 
 
 

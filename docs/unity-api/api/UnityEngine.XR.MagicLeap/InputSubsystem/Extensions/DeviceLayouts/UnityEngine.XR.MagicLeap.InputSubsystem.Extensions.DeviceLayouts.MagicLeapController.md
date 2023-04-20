@@ -18,86 +18,11 @@ Inherits from: <br></br>XRController
 
 ## Public Fields
 
-### bumper {#axiscontrol-bumper}
+### triggerButton {#buttoncontrol-triggerbutton}
 
 ```csharp
 
-public AxisControl bumper { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### bumperButton {#buttoncontrol-bumperbutton}
-
-```csharp
-
-public ButtonControl bumperButton { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### menu {#buttoncontrol-menu}
-
-```csharp
-
-public ButtonControl menu { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### touchpadClick {#buttoncontrol-touchpadclick}
-
-```csharp
-
-public ButtonControl touchpadClick { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### touchpadPosition {#vector2control-touchpadposition}
-
-```csharp
-
-public Vector2Control touchpadPosition { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### touchpadTouch {#buttoncontrol-touchpadtouch}
-
-```csharp
-
-public ButtonControl touchpadTouch { get; set; }
+public ButtonControl triggerButton { get; set; }
 
 ```
 
@@ -123,11 +48,86 @@ public AxisControl trigger { get; set; }
 
 -----------
 
-### triggerButton {#buttoncontrol-triggerbutton}
+### touchpadTouch {#buttoncontrol-touchpadtouch}
 
 ```csharp
 
-public ButtonControl triggerButton { get; set; }
+public ButtonControl touchpadTouch { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### touchpadPosition {#vector2control-touchpadposition}
+
+```csharp
+
+public Vector2Control touchpadPosition { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### touchpadClick {#buttoncontrol-touchpadclick}
+
+```csharp
+
+public ButtonControl touchpadClick { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### menu {#buttoncontrol-menu}
+
+```csharp
+
+public ButtonControl menu { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### bumperButton {#buttoncontrol-bumperbutton}
+
+```csharp
+
+public ButtonControl bumperButton { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### bumper {#axiscontrol-bumper}
+
+```csharp
+
+public AxisControl bumper { get; set; }
 
 ```
 

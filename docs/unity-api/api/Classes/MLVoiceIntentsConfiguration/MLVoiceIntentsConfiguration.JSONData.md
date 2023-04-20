@@ -17,11 +17,11 @@ The current structure of the JSON data that will be sent to the MLVoice API. Sub
 
 ## Public Attributes
 
-### id {#string-id}
+### value {#string-value}
 
 ```csharp
 
-public string id;
+public string value;
 
 ```
 
@@ -47,11 +47,11 @@ public string name;
 
 -----------
 
-### value {#string-value}
+### id {#string-id}
 
 ```csharp
 
-public string value;
+public string id;
 
 ```
 

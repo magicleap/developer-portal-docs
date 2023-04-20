@@ -32,50 +32,19 @@ public override string ToString()
 
 ## Public Attributes
 
-### ArucoData {#readonly-arucodata}
+### Type {#readonly-type}
 
-Aruco decoded data (if any exists). 
-
-```csharp
-
-public readonly ArucoData ArucoData;
-
-```
-
-
-
-
-
-
------------
-
-### BinaryData {#readonly-binarydata}
-
-Binary decoded data (if any exists). 
+The type of marker that was detected. 
 
 ```csharp
 
-public readonly BinaryData BinaryData;
+public readonly MarkerType Type;
 
 ```
 
-
-
-
-
-
------------
-
-### Pose {#readonly-pose-pose}
-
-The world-space position and rotation of the marker. 
-
-```csharp
-
-public readonly Pose Pose;
-
-```
-
+| Type | Description  | 
+|--|--|
+| readonly [MarkerType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API  |
 
 
 
@@ -104,19 +73,50 @@ The reprojection error is only useful when tracking QR codes. A high reprojectio
 
 -----------
 
-### Type {#readonly-type}
+### Pose {#readonly-pose-pose}
 
-The type of marker that was detected. 
+The world-space position and rotation of the marker. 
 
 ```csharp
 
-public readonly MarkerType Type;
+public readonly Pose Pose;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MarkerType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API  |
+
+
+
+
+
+-----------
+
+### BinaryData {#readonly-binarydata}
+
+Binary decoded data (if any exists). 
+
+```csharp
+
+public readonly BinaryData BinaryData;
+
+```
+
+
+
+
+
+
+-----------
+
+### ArucoData {#readonly-arucodata}
+
+Aruco decoded data (if any exists). 
+
+```csharp
+
+public readonly ArucoData ArucoData;
+
+```
+
 
 
 

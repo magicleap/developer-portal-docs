@@ -17,13 +17,13 @@ MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track
 
 ## Public Attributes
 
-### Data {#intptr-data}
+### TrackInfo {#intptr-trackinfo}
 
-User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
+Pointer to [MLMediaPlayerTrackDRMInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerTrackDRMInfo.md). 
 
 ```csharp
 
-public IntPtr Data;
+public IntPtr TrackInfo;
 
 ```
 
@@ -34,13 +34,13 @@ public IntPtr Data;
 
 -----------
 
-### TrackInfo {#intptr-trackinfo}
+### Data {#intptr-data}
 
-Pointer to [MLMediaPlayerTrackDRMInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerTrackDRMInfo.md). 
+User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public IntPtr TrackInfo;
+public IntPtr Data;
 
 ```
 

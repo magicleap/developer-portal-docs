@@ -36,23 +36,10 @@ public bool LimitPassed { get; set; }
 
 ## Public Methods
 
-### float Elapsed {#float-elapsed}
+###  Timer {#functions-timer}
 
 ```csharp
-public float Elapsed()
-```
-
-
-
-
-
-
------------
-
-### void Initialize {#void-initialize}
-
-```csharp
-public void Initialize(
+public Timer(
     float &#95;timeLimitInSeconds
 )
 ```
@@ -84,10 +71,10 @@ public void Reset()
 
 -----------
 
-###  Timer {#functions-timer}
+### void Initialize {#void-initialize}
 
 ```csharp
-public Timer(
+public void Initialize(
     float &#95;timeLimitInSeconds
 )
 ```
@@ -98,6 +85,19 @@ public Timer(
 | Type | Name  | Description  | 
 |--|--|--|
 | float |&#95;timeLimitInSeconds||
+
+
+
+
+
+
+-----------
+
+### float Elapsed {#float-elapsed}
+
+```csharp
+public float Elapsed()
+```
 
 
 

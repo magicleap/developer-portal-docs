@@ -17,17 +17,17 @@ The container for the data being changed into a JSON string to send to the MLVoi
 
 ## Public Attributes
 
-### app_intents {#list-app-intents}
+### sys_intent_list {#systemjsondata-sys-intent-list}
 
 ```csharp
 
-public List< JSONData > app_intents;
+public SystemJSONData sys_intent_list;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
+| [SystemJSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SystemJSONData.md) | The current structure of the System Intents JSON data that will be sent to the MLVoice API. Subject to change.  |
 
 
 
@@ -50,17 +50,17 @@ public List< SlotDataInternal > app_slots;
 
 -----------
 
-### sys_intent_list {#systemjsondata-sys-intent-list}
+### app_intents {#list-app-intents}
 
 ```csharp
 
-public SystemJSONData sys_intent_list;
+public List< JSONData > app_intents;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [SystemJSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SystemJSONData.md) | The current structure of the System Intents JSON data that will be sent to the MLVoice API. Subject to change.  |
+| List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
 
 
 

@@ -17,39 +17,16 @@ Representation of a mesh block.
 
 ## Public Attributes
 
-### cfuid {#magicleapnativebindingsmlcoordinateframeuid-cfuid}
+### timestamp {#long-timestamp}
 
-The coordinate frame UID to represent the block. 
-
-```csharp
-
-public MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
-
-
-
-
-
------------
-
-### extents {#mlmeshingextents-extents}
-
-The extents of the bounding box. 
+The timestamp when block was updated. 
 
 ```csharp
 
-public MLMeshingExtents extents;
+public long timestamp;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MLMeshingExtents](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/NativeBindings/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.NativeBindings.MLMeshingExtents.md) | Axis aligned bounding box for querying updated mesh info.  |
 
 
 
@@ -77,16 +54,39 @@ public MeshState state;
 
 -----------
 
-### timestamp {#long-timestamp}
+### extents {#mlmeshingextents-extents}
 
-The timestamp when block was updated. 
+The extents of the bounding box. 
 
 ```csharp
 
-public long timestamp;
+public MLMeshingExtents extents;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [MLMeshingExtents](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/NativeBindings/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.NativeBindings.MLMeshingExtents.md) | Axis aligned bounding box for querying updated mesh info.  |
+
+
+
+
+
+-----------
+
+### cfuid {#magicleapnativebindingsmlcoordinateframeuid-cfuid}
+
+The coordinate frame UID to represent the block. 
+
+```csharp
+
+public MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 

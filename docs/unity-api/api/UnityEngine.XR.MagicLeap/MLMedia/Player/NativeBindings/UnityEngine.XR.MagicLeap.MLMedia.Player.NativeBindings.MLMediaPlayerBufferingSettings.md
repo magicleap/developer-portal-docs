@@ -17,33 +17,13 @@ Indicate the buffering settings.
 
 ## Public Attributes
 
-### InitialBufferingMode {#bufferingmode-initialbufferingmode}
+### RebufferingWatermarkLowMs {#int-rebufferingwatermarklowms}
 
-For prepare. 
-
-```csharp
-
-public BufferingMode InitialBufferingMode;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [BufferingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-bufferingmode) | Comment Needed!  |
-
-
-
-
-
------------
-
-### InitialWatermarkKb {#int-initialwatermarkkb}
-
-Size based. 
+When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighMs| or end of stream. 
 
 ```csharp
 
-public int InitialWatermarkKb;
+public int RebufferingWatermarkLowMs;
 
 ```
 
@@ -54,13 +34,47 @@ public int InitialWatermarkKb;
 
 -----------
 
-### InitialWatermarkMs {#int-initialwatermarkms}
+### RebufferingWatermarkLowKb {#int-rebufferingwatermarklowkb}
 
-Time based. 
+When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighKB| or end of stream. 
 
 ```csharp
 
-public int InitialWatermarkMs;
+public int RebufferingWatermarkLowKb;
+
+```
+
+
+
+
+
+
+-----------
+
+### RebufferingWatermarkHighMs {#int-rebufferingwatermarkhighms}
+
+When cached data is above this mark, buffering will be paused. 
+
+```csharp
+
+public int RebufferingWatermarkHighMs;
+
+```
+
+
+
+
+
+
+-----------
+
+### RebufferingWatermarkHighKb {#int-rebufferingwatermarkhighkb}
+
+When cached data is above this mark, buffering will be paused. 
+
+```csharp
+
+public int RebufferingWatermarkHighKb;
 
 ```
 
@@ -91,13 +105,13 @@ public BufferingMode RebufferingMode;
 
 -----------
 
-### RebufferingWatermarkHighKb {#int-rebufferingwatermarkhighkb}
+### InitialWatermarkMs {#int-initialwatermarkms}
 
-When cached data is above this mark, buffering will be paused. 
+Time based. 
 
 ```csharp
 
-public int RebufferingWatermarkHighKb;
+public int InitialWatermarkMs;
 
 ```
 
@@ -108,13 +122,13 @@ public int RebufferingWatermarkHighKb;
 
 -----------
 
-### RebufferingWatermarkHighMs {#int-rebufferingwatermarkhighms}
+### InitialWatermarkKb {#int-initialwatermarkkb}
 
-When cached data is above this mark, buffering will be paused. 
+Size based. 
 
 ```csharp
 
-public int RebufferingWatermarkHighMs;
+public int InitialWatermarkKb;
 
 ```
 
@@ -125,33 +139,19 @@ public int RebufferingWatermarkHighMs;
 
 -----------
 
-### RebufferingWatermarkLowKb {#int-rebufferingwatermarklowkb}
+### InitialBufferingMode {#bufferingmode-initialbufferingmode}
 
-When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighKB| or end of stream. 
-
-```csharp
-
-public int RebufferingWatermarkLowKb;
-
-```
-
-
-
-
-
-
------------
-
-### RebufferingWatermarkLowMs {#int-rebufferingwatermarklowms}
-
-When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighMs| or end of stream. 
+For prepare. 
 
 ```csharp
 
-public int RebufferingWatermarkLowMs;
+public BufferingMode InitialBufferingMode;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [BufferingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-bufferingmode) | Comment Needed!  |
 
 
 

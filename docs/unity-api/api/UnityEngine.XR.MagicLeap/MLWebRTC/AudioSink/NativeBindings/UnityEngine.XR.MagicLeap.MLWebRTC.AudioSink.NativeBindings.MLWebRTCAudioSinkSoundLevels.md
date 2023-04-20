@@ -16,19 +16,6 @@ title: MLWebRTCAudioSinkSoundLevels
 
 ## Public Methods
 
-### void FreeUnmanagedMemory {#void-freeunmanagedmemory}
-
-```csharp
-public void FreeUnmanagedMemory()
-```
-
-
-
-
-
-
------------
-
 ### void Update {#void-update}
 
 ```csharp
@@ -45,6 +32,19 @@ public void Update(
 |--|--|--|
 | [MLAudioOutput.SpatialSound.SendLevels](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.SendLevels.md) |sendLevels|Properties specifying send levels for a spatial sound. |
 | int |channel||
+
+
+
+
+
+
+-----------
+
+### void FreeUnmanagedMemory {#void-freeunmanagedmemory}
+
+```csharp
+public void FreeUnmanagedMemory()
+```
 
 
 

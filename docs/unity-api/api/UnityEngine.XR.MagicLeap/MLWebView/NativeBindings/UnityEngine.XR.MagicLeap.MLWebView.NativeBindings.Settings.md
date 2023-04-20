@@ -51,13 +51,64 @@ public static Settings Create(
 
 ## Public Attributes
 
-### ApplicationVm {#intptr-applicationvm}
+### Width {#uint-width}
 
-JavaVM&#42; pointer to use for Android up-calls. 
+Horizontal size of webview in pixels. 
 
 ```csharp
 
-public IntPtr ApplicationVm;
+public uint Width;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+Version of this struct. 
+
+```csharp
+
+public uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+Vertical size of webview in pixels. 
+
+```csharp
+
+public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### Context {#intptr-context}
+
+jobject to android. content. Context instance for Android up-calls. 
+
+```csharp
+
+public IntPtr Context;
 
 ```
 
@@ -88,64 +139,13 @@ public EventCallbacks Callbacks;
 
 -----------
 
-### Context {#intptr-context}
+### ApplicationVm {#intptr-applicationvm}
 
-jobject to android. content. Context instance for Android up-calls. 
-
-```csharp
-
-public IntPtr Context;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Vertical size of webview in pixels. 
+JavaVM&#42; pointer to use for Android up-calls. 
 
 ```csharp
 
-public uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-Version of this struct. 
-
-```csharp
-
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### Width {#uint-width}
-
-Horizontal size of webview in pixels. 
-
-```csharp
-
-public uint Width;
+public IntPtr ApplicationVm;
 
 ```
 

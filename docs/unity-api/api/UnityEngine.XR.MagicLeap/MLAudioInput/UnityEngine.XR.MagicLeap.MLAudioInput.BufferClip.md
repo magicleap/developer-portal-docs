@@ -35,6 +35,69 @@ public int BufferPosition { get; set; }
 
 ## Public Methods
 
+### int GetData {#int-getdata}
+
+```csharp
+public int GetData(
+    float [] samples,
+    int readPosition,
+    out int nextReadPosition
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| float [] |samples||
+| int |readPosition||
+| out int |nextReadPosition||
+
+
+
+
+
+
+-----------
+
+### int GetData {#int-getdata}
+
+```csharp
+public int GetData(
+    float [] samples,
+    int readPosition
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| float [] |samples||
+| int |readPosition||
+
+
+
+
+
+
+-----------
+
+### AudioClip FlushToClip {#audioclip-flushtoclip}
+
+```csharp
+public AudioClip FlushToClip()
+```
+
+
+
+
+
+
+-----------
+
 ###  BufferClip {#functions-bufferclip}
 
 ```csharp
@@ -81,69 +144,6 @@ public BufferClip(
 | uint |samplesLengthInSeconds||
 | uint |sampleRate||
 | uint |channels||
-
-
-
-
-
-
------------
-
-### AudioClip FlushToClip {#audioclip-flushtoclip}
-
-```csharp
-public AudioClip FlushToClip()
-```
-
-
-
-
-
-
------------
-
-### int GetData {#int-getdata}
-
-```csharp
-public int GetData(
-    float [] samples,
-    int readPosition,
-    out int nextReadPosition
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| float [] |samples||
-| int |readPosition||
-| out int |nextReadPosition||
-
-
-
-
-
-
------------
-
-### int GetData {#int-getdata}
-
-```csharp
-public int GetData(
-    float [] samples,
-    int readPosition
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| float [] |samples||
-| int |readPosition||
 
 
 

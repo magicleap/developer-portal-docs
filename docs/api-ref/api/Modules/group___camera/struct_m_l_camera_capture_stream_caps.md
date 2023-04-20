@@ -36,8 +36,9 @@ The capabilities for each stream supported by logical camera device can be queri
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

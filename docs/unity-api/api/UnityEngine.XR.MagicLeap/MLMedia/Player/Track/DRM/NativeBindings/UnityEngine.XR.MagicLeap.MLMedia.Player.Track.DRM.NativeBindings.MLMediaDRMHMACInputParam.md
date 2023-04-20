@@ -17,13 +17,13 @@ Data type that encapsulates algorithm, key&#95;set&#95;id for HMAC based Sign/Ve
 
 ## Public Attributes
 
-### Algorithm {#string-algorithm}
+### KeySetId {#intptr-keysetid}
 
-The MAC algorithm used for the MAC-HASH operation. "HmacSHA256" is the only supported algorithm now. 
+The identifier for the key to be used. 
 
 ```csharp
 
-public string Algorithm;
+public IntPtr KeySetId;
 
 ```
 
@@ -34,13 +34,13 @@ public string Algorithm;
 
 -----------
 
-### KeySetId {#intptr-keysetid}
+### Algorithm {#string-algorithm}
 
-The identifier for the key to be used. 
+The MAC algorithm used for the MAC-HASH operation. "HmacSHA256" is the only supported algorithm now. 
 
 ```csharp
 
-public IntPtr KeySetId;
+public string Algorithm;
 
 ```
 

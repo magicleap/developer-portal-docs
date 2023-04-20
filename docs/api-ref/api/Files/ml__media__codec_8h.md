@@ -193,7 +193,7 @@ Crypto mode using which media samples are encrypted.
 ### MLMediaCodecBufferInfo {#struct-mlmediacodecbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecBufferInfo  MLMediaCodecBufferInfo;
+typedef struct MLMediaCodecBufferInfo MLMediaCodecBufferInfo;
 ```
 
 
@@ -210,7 +210,7 @@ Media codec buffer info.
 ### MLMediaCodecInputBufferInfo {#struct-mlmediacodecinputbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecInputBufferInfo  MLMediaCodecInputBufferInfo;
+typedef struct MLMediaCodecInputBufferInfo MLMediaCodecInputBufferInfo;
 ```
 
 MediaCodec Input buffer information. 
@@ -220,8 +220,9 @@ MediaCodec Input buffer information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_input_buffer_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -231,7 +232,7 @@ MediaCodec Input buffer information.
 ### MLMediaCodecOutputBufferInfo {#struct-mlmediacodecoutputbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecOutputBufferInfo  MLMediaCodecOutputBufferInfo;
+typedef struct MLMediaCodecOutputBufferInfo MLMediaCodecOutputBufferInfo;
 ```
 
 MediaCodec Output buffer information. 
@@ -241,8 +242,9 @@ MediaCodec Output buffer information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -252,7 +254,7 @@ MediaCodec Output buffer information.
 ### MLMediaCodecOutputFormatInfo {#struct-mlmediacodecoutputformatinfo}
 
 ```cpp
-typedef struct MLMediaCodecOutputFormatInfo  MLMediaCodecOutputFormatInfo;
+typedef struct MLMediaCodecOutputFormatInfo MLMediaCodecOutputFormatInfo;
 ```
 
 MediaCodec Output Format information. 
@@ -262,8 +264,9 @@ MediaCodec Output Format information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_format_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -273,7 +276,7 @@ MediaCodec Output Format information.
 ### MLMediaCodecErrorInfo {#struct-mlmediacodecerrorinfo}
 
 ```cpp
-typedef struct MLMediaCodecErrorInfo  MLMediaCodecErrorInfo;
+typedef struct MLMediaCodecErrorInfo MLMediaCodecErrorInfo;
 ```
 
 MediaCodec Output Format information. 
@@ -283,8 +286,9 @@ MediaCodec Output Format information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -294,7 +298,7 @@ MediaCodec Output Format information.
 ### MLMediaCodecCallbacksEx {#struct-mlmediacodeccallbacksex}
 
 ```cpp
-typedef struct MLMediaCodecCallbacksEx  MLMediaCodecCallbacksEx;
+typedef struct MLMediaCodecCallbacksEx MLMediaCodecCallbacksEx;
 ```
 
 Callbacks for notifying asynchronously of various codec events to the user/client. If user intends to use codec in asynchronous mode, then the user/client is expected to implement these callbacks and take proper actions where appropriate. 
@@ -304,8 +308,9 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -315,7 +320,7 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 ### MLMediaCodecFrameRenderedInfo {#struct-mlmediacodecframerenderedinfo}
 
 ```cpp
-typedef struct MLMediaCodecFrameRenderedInfo  MLMediaCodecFrameRenderedInfo;
+typedef struct MLMediaCodecFrameRenderedInfo MLMediaCodecFrameRenderedInfo;
 ```
 
 MediaCodec Output Frame Rendered information. 
@@ -325,8 +330,9 @@ MediaCodec Output Frame Rendered information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_frame_rendered_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -336,7 +342,7 @@ MediaCodec Output Frame Rendered information.
 ### MLMediaCodecOutputFrameListener {#struct-mlmediacodecoutputframelistener}
 
 ```cpp
-typedef struct MLMediaCodecOutputFrameListener  MLMediaCodecOutputFrameListener;
+typedef struct MLMediaCodecOutputFrameListener MLMediaCodecOutputFrameListener;
 ```
 
 Callbacks for notifying when an output frame is available for consumption or has been rendered on the output surface. 
@@ -346,8 +352,9 @@ Callbacks for notifying when an output frame is available for consumption or has
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -357,7 +364,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 ### MLMediaCodecCryptoPattern {#struct-mlmediacodeccryptopattern}
 
 ```cpp
-typedef struct MLMediaCodecCryptoPattern  MLMediaCodecCryptoPattern;
+typedef struct MLMediaCodecCryptoPattern MLMediaCodecCryptoPattern;
 ```
 
 Metadata describing an encryption pattern for the protected bytes in a subsample. 
@@ -367,8 +374,9 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -378,7 +386,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 ### MLMediaCodecCryptoInfo {#struct-mlmediacodeccryptoinfo}
 
 ```cpp
-typedef struct MLMediaCodecCryptoInfo  MLMediaCodecCryptoInfo;
+typedef struct MLMediaCodecCryptoInfo MLMediaCodecCryptoInfo;
 ```
 
 Metadata describing the structure of a (at least partially) encrypted input sample. A buffer's data is considered to be partitioned into "subSamples", each subSample starts with a (potentially empty) run of plain, unencrypted bytes followed by a (also potentially empty) run of encrypted bytes. If pattern encryption applies, each of the encrypted runs is encrypted only partly, according to a repeating pattern of "encrypt" and "skip" blocks. This information encapsulates per-sample metadata as outlined in ISO/IEC FDIS 23001-7:2011 "Common encryption in ISO base media file format files". 
@@ -388,8 +396,9 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -496,8 +505,9 @@ The CryptoInfo object should be released by calling [MLMediaCodecReleaseCryptoIn
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -534,8 +544,9 @@ Release the Crypto Info created by [MLMediaCodecCreateCryptoInfo](/api-ref/api/M
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -657,8 +668,9 @@ Also, [MLMediaCodecFlush()](/api-ref/api/Modules/group___media_player/group___me
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -708,8 +720,9 @@ Note:
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -804,8 +817,9 @@ The output surface can be:
 
 
 
-**API Level:**
-  * 6
+**API Level:
+ 6**
+  * 
 
 
 
@@ -921,8 +935,9 @@ Resetting a codec can fail when an unrecoverable error occurs (which is Hardare 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1017,8 +1032,9 @@ Some of these parameter changes may silently fail to apply. Unless specified bel
 :::
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1067,8 +1083,9 @@ Note: For VIDEO encoder, this API will fail if an input surface was created by [
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1117,8 +1134,9 @@ Note: For VIDEO decoder, this API will fail if codec was configured with a hardw
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1168,8 +1186,9 @@ Once an input buffer is queued to the codec, it MUST NOT be used until it is lat
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1217,8 +1236,9 @@ Similar to queueInputBuffer but submits a buffer that is potentially encrypted.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1263,8 +1283,9 @@ This method will return immediately if timeoutUs == 0, wait indefinitely for the
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1311,8 +1332,9 @@ This method will return immediately if timeoutUs == 0, wait indefinitely for the
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1447,8 +1469,9 @@ The user of this API is responsible for calling #MLMediaCodecReleaseSurface() on
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1490,8 +1513,9 @@ Release the Surface that was created by [MLMediaCodecCreateInputSurface](/api-re
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1529,8 +1553,9 @@ Equivalent to submitting an empty buffer with MLMediaCodecBufferFlag_EOS set whe
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1576,8 +1601,9 @@ Once an output buffer is released to codec, it MUST NOT be used until it is late
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1621,8 +1647,9 @@ The timestamp may have special meaning depending on the destination surface.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

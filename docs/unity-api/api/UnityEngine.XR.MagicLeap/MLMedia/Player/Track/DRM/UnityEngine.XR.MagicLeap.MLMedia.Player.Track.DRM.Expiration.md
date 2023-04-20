@@ -32,13 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### SessionId {#readonly-byte-sessionid}
+### TimeMs {#readonly-ulong-timems}
 
-[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
+The new expiration time for the keys in the session. The time is in milliseconds ,relative to the Unix epoch. A time of 0 indicates that the keys never expire. 
 
 ```csharp
 
-public readonly byte [] SessionId;
+public readonly ulong TimeMs;
 
 ```
 
@@ -49,13 +49,13 @@ public readonly byte [] SessionId;
 
 -----------
 
-### TimeMs {#readonly-ulong-timems}
+### SessionId {#readonly-byte-sessionid}
 
-The new expiration time for the keys in the session. The time is in milliseconds ,relative to the Unix epoch. A time of 0 indicates that the keys never expire. 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public readonly ulong TimeMs;
+public readonly byte [] SessionId;
 
 ```
 

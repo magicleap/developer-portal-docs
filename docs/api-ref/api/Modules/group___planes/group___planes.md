@@ -58,8 +58,9 @@ APIs for the Planes system.
 
 
 
-**Shared Object:**
-  * perception.magicleap 
+**Shared Object:
+ perception.magicleap**
+  * 
 
 
 
@@ -105,7 +106,7 @@ Control flags for plane queries.
 ### MLPlane {#struct-mlplane}
 
 ```cpp
-typedef struct MLPlane  MLPlane;
+typedef struct MLPlane MLPlane;
 ```
 
 
@@ -122,7 +123,7 @@ A plane with width and height.
 ### MLPolygon {#struct-mlpolygon}
 
 ```cpp
-typedef struct MLPolygon  MLPolygon;
+typedef struct MLPolygon MLPolygon;
 ```
 
 Coplanar connected line segments representing the outer boundary of a polygon, an _n_-sided polygon where _n_ is the number of vertices. 
@@ -132,8 +133,9 @@ Coplanar connected line segments representing the outer boundary of a polygon, a
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md)
 
 
-**API Level:**
-  * 2 
+**API Level:
+ 2**
+  * 
 
 
 
@@ -143,7 +145,7 @@ Coplanar connected line segments representing the outer boundary of a polygon, a
 ### MLPlaneBoundary {#struct-mlplaneboundary}
 
 ```cpp
-typedef struct MLPlaneBoundary  MLPlaneBoundary;
+typedef struct MLPlaneBoundary MLPlaneBoundary;
 ```
 
 Type used to represent a region boundary on a 2D plane. 
@@ -153,8 +155,9 @@ Type used to represent a region boundary on a 2D plane.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md)
 
 
-**API Level:**
-  * 2 
+**API Level:
+ 2**
+  * 
 
 
 
@@ -164,7 +167,7 @@ Type used to represent a region boundary on a 2D plane.
 ### MLPlaneBoundaries {#struct-mlplaneboundaries}
 
 ```cpp
-typedef struct MLPlaneBoundaries  MLPlaneBoundaries;
+typedef struct MLPlaneBoundaries MLPlaneBoundaries;
 ```
 
 Type to represent multiple regions on a 2D plane. 
@@ -174,8 +177,9 @@ Type to represent multiple regions on a 2D plane.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundaries.md)
 
 
-**API Level:**
-  * 2 
+**API Level:
+ 2**
+  * 
 
 
 
@@ -185,7 +189,7 @@ Type to represent multiple regions on a 2D plane.
 ### MLPlaneBoundariesList {#struct-mlplaneboundarieslist}
 
 ```cpp
-typedef struct MLPlaneBoundariesList  MLPlaneBoundariesList;
+typedef struct MLPlaneBoundariesList MLPlaneBoundariesList;
 ```
 
 Type to represent polygons of all returned planes. 
@@ -195,8 +199,9 @@ Type to represent polygons of all returned planes.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundaries_list.md)
 
 
-**API Level:**
-  * 2 
+**API Level:
+ 2**
+  * 
 
 
 
@@ -206,7 +211,7 @@ Type to represent polygons of all returned planes.
 ### MLPlanesQuery {#struct-mlplanesquery}
 
 ```cpp
-typedef struct MLPlanesQuery  MLPlanesQuery;
+typedef struct MLPlanesQuery MLPlanesQuery;
 ```
 
 Type used to represent a plane query. 
@@ -216,8 +221,9 @@ Type used to represent a plane query.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_planes_query.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -245,8 +251,9 @@ Initializes an [MLPlaneBoundariesList](/api-ref/api/Modules/group___planes/struc
 
 
 
-**API Level:**
-  * 2 
+**API Level:
+ 2**
+  * 
 
 
 
@@ -366,8 +373,9 @@ Initiates a plane query. One of the following flags must be set for the query to
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -415,8 +423,9 @@ Gets the result of a plane query with boundaries on each plane. After this funct
 
 
 
-**API Level:**
-  * 2
+**API Level:
+ 2**
+  * 
 
 
 
@@ -456,8 +465,9 @@ Releases the polygons data owned by the [MLPlaneBoundariesList](/api-ref/api/Mod
 
 
 
-**API Level:**
-  * 2
+**API Level:
+ 2**
+  * 
 
 
 

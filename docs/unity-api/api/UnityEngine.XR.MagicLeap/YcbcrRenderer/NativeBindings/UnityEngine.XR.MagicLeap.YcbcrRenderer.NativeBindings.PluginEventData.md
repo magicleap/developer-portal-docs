@@ -43,47 +43,13 @@ public PluginEventData(
 
 ## Public Attributes
 
-### ColorSpace {#colorspace-colorspace}
+### Width {#int-width}
 
-Color space to render the native buffer in. 
-
-```csharp
-
-public ColorSpace ColorSpace;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#int-height}
-
-Height of the Unity texture 
+Width of the Unity texture 
 
 ```csharp
 
-public int Height;
-
-```
-
-
-
-
-
-
------------
-
-### RendererHandle {#ulong-rendererhandle}
-
-Handle of the [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) instance received from a MLYcbcrRendererCreate() call. 
-
-```csharp
-
-public ulong RendererHandle;
+public int Width;
 
 ```
 
@@ -111,13 +77,47 @@ public IntPtr TextureHandle;
 
 -----------
 
-### Width {#int-width}
+### RendererHandle {#ulong-rendererhandle}
 
-Width of the Unity texture 
+Handle of the [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) instance received from a MLYcbcrRendererCreate() call. 
 
 ```csharp
 
-public int Width;
+public ulong RendererHandle;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#int-height}
+
+Height of the Unity texture 
+
+```csharp
+
+public int Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### ColorSpace {#colorspace-colorspace}
+
+Color space to render the native buffer in. 
+
+```csharp
+
+public ColorSpace ColorSpace;
 
 ```
 

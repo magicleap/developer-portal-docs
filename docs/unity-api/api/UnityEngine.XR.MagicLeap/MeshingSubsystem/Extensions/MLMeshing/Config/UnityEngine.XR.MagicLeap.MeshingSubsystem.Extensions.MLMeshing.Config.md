@@ -16,11 +16,11 @@ title: Config
 
 ## Public Fields
 
-### batchSize {#int-batchsize}
+### meshingSettings {#settings-meshingsettings}
 
 ```csharp
 
-public static int batchSize { get; set; }
+public static Settings meshingSettings { get; set; }
 
 ```
 
@@ -46,11 +46,11 @@ public static float density { get; set; }
 
 -----------
 
-### meshingSettings {#settings-meshingsettings}
+### batchSize {#int-batchsize}
 
 ```csharp
 
-public static Settings meshingSettings { get; set; }
+public static int batchSize { get; set; }
 
 ```
 
@@ -63,12 +63,11 @@ public static Settings meshingSettings { get; set; }
 
 ## Public Methods
 
-### IntPtr AcquireConfidence {#intptr-acquireconfidence}
+### void SetCustomMeshBlockRequests {#void-setcustommeshblockrequests}
 
 ```csharp
-public static IntPtr AcquireConfidence(
-    MeshId meshId,
-    out int count
+public static void SetCustomMeshBlockRequests(
+    OnMeshBlockRequests onBlockRequests
 )
 ```
 
@@ -77,30 +76,7 @@ public static IntPtr AcquireConfidence(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| MeshId |meshId||
-| out int |count||
-
-
-
-
-
-
------------
-
-### void ReleaseConfidence {#void-releaseconfidence}
-
-```csharp
-public static void ReleaseConfidence(
-    MeshId meshId
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| MeshId |meshId||
+| OnMeshBlockRequests |onBlockRequests||
 
 
 
@@ -159,11 +135,11 @@ public static void SetBounds(
 
 -----------
 
-### void SetCustomMeshBlockRequests {#void-setcustommeshblockrequests}
+### void ReleaseConfidence {#void-releaseconfidence}
 
 ```csharp
-public static void SetCustomMeshBlockRequests(
-    OnMeshBlockRequests onBlockRequests
+public static void ReleaseConfidence(
+    MeshId meshId
 )
 ```
 
@@ -172,7 +148,31 @@ public static void SetCustomMeshBlockRequests(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| OnMeshBlockRequests |onBlockRequests||
+| MeshId |meshId||
+
+
+
+
+
+
+-----------
+
+### IntPtr AcquireConfidence {#intptr-acquireconfidence}
+
+```csharp
+public static IntPtr AcquireConfidence(
+    MeshId meshId,
+    out int count
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| MeshId |meshId||
+| out int |count||
 
 
 

@@ -41,8 +41,9 @@ The audio render capabilities of the Audio Service include rendering: (1) an aud
 
 
 
-**Shared Object:**
-  * audio.magicleap The Audio Service supports audio input (capture) and audio output (render).
+**Shared Object:
+ audio.magicleap**
+  * The Audio Service supports audio input (capture) and audio output (render).
 
 
 

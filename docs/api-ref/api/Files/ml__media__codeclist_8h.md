@@ -175,8 +175,9 @@ Enumeration defining possible uncompressed image/video formats.
 
 
 
-**API Level:**
-  * 9 
+**API Level:
+ 9**
+  * 
 
 
 
@@ -198,8 +199,9 @@ Enumeration defining the Codec priority.
 
 
 
-**API Level:**
-  * 9 
+**API Level:
+ 9**
+  * 
 
 
 
@@ -222,8 +224,9 @@ Enumeration of possible methods to use for Intra Refresh.
 
 
 
-**API Level:**
-  * 9 
+**API Level:
+ 9**
+  * 
 
 
 
@@ -246,8 +249,9 @@ Enumeration defining Codec Bitrate modes.
 
 
 
-**API Level:**
-  * 9 
+**API Level:
+ 9**
+  * 
 
 
 
@@ -339,8 +343,9 @@ A codec may not support all the profiles and levels listed below. For any given 
 :::
 
 
-**API Level:**
-  * 9 
+**API Level:
+ 9**
+  * 
 
 
 
@@ -446,8 +451,9 @@ A codec may not support all the profiles and levels listed below. For any given 
 :::
 
 
-**API Level:**
-  * 9 
+**API Level:
+ 9**
+  * 
 
 
 
@@ -460,7 +466,7 @@ A codec may not support all the profiles and levels listed below. For any given 
 ### MLMediaCodecListQueryResults {#struct-mlmediacodeclistqueryresults}
 
 ```cpp
-typedef struct MLMediaCodecListQueryResults  MLMediaCodecListQueryResults;
+typedef struct MLMediaCodecListQueryResults MLMediaCodecListQueryResults;
 ```
 
 
@@ -477,7 +483,7 @@ Used to store the list of available codec names or the list of supported mime ty
 ### MLMediaCodecListProfileLevel {#struct-mlmediacodeclistprofilelevel}
 
 ```cpp
-typedef struct MLMediaCodecListProfileLevel  MLMediaCodecListProfileLevel;
+typedef struct MLMediaCodecListProfileLevel MLMediaCodecListProfileLevel;
 ```
 
 Used to store the list of codec profile levels. 
@@ -487,8 +493,9 @@ Used to store the list of codec profile levels.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md)
 
 
-**API Level:**
-  * 6 
+**API Level:
+ 6**
+  * 
 
 
 
@@ -949,8 +956,9 @@ User shall call [MLMediaCodecListProfileLevelsRelease()](/api-ref/api/Modules/gr
 
 
 
-**API Level:**
-  * 6
+**API Level:
+ 6**
+  * 
 
 
 
@@ -988,8 +996,9 @@ Release profile levels.
 
 
 
-**API Level:**
-  * 6
+**API Level:
+ 6**
+  * 
 
 
 
@@ -1035,8 +1044,9 @@ User shall call [MLMediaCodecListColorFormatsRelease()](/api-ref/api/Modules/gro
 
 
 
-**API Level:**
-  * 6
+**API Level:
+ 6**
+  * 
 
 
 
@@ -1074,8 +1084,9 @@ Release color formats.
 
 
 
-**API Level:**
-  * 6
+**API Level:
+ 6**
+  * 
 
 
 
@@ -1121,8 +1132,9 @@ User shall call [MLMediaCodecBitrateModesRelease()](/api-ref/api/Modules/group__
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1160,8 +1172,9 @@ Release Bitrate modes.
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1205,8 +1218,9 @@ This function is used to query a video decoder to see whether it supports seamle
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1250,8 +1264,9 @@ If the component is an encoder, it will always return false.
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 
@@ -1295,8 +1310,9 @@ If the component is Decoder, it will always return false.
 
 
 
-**API Level:**
-  * 9
+**API Level:
+ 9**
+  * 
 
 
 

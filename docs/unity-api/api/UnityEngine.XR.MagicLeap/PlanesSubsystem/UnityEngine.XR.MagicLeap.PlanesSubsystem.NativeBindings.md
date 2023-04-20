@@ -18,57 +18,12 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesCreate {#mlresultcode-mlplanescreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesReleaseBoundariesList {#mlresultcode-mlplanesreleaseboundarieslist}
 
 ```csharp
-public MLResult.Code MLPlanesCreate(
-    out ulong planes&#95;tracker
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out ulong |planes&#95;tracker||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesDestroy {#mlresultcode-mlplanesdestroy}
-
-```csharp
-public MLResult.Code MLPlanesDestroy(
-    ulong planes&#95;tracker
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |planes&#95;tracker||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesQueryBegin {#mlresultcode-mlplanesquerybegin}
-
-```csharp
-public MLResult.Code MLPlanesQueryBegin(
+public MLResult.Code MLPlanesReleaseBoundariesList(
     ulong planes&#95;tracker,
-    in Extensions.MLPlanesQuery query,
-    out ulong request&#95;handle
+    ref Extensions.MLPlaneBoundariesList plane&#95;boundaries
 )
 ```
 
@@ -78,8 +33,7 @@ public MLResult.Code MLPlanesQueryBegin(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |planes&#95;tracker||
-| in Extensions.MLPlanesQuery |query||
-| out ulong |request&#95;handle||
+| ref Extensions.MLPlaneBoundariesList |plane&#95;boundaries||
 
 
 
@@ -118,12 +72,13 @@ public unsafe MLResult.Code MLPlanesQueryGetResultsWithBoundaries(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesReleaseBoundariesList {#mlresultcode-mlplanesreleaseboundarieslist}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesQueryBegin {#mlresultcode-mlplanesquerybegin}
 
 ```csharp
-public MLResult.Code MLPlanesReleaseBoundariesList(
+public MLResult.Code MLPlanesQueryBegin(
     ulong planes&#95;tracker,
-    ref Extensions.MLPlaneBoundariesList plane&#95;boundaries
+    in Extensions.MLPlanesQuery query,
+    out ulong request&#95;handle
 )
 ```
 
@@ -133,7 +88,52 @@ public MLResult.Code MLPlanesReleaseBoundariesList(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |planes&#95;tracker||
-| ref Extensions.MLPlaneBoundariesList |plane&#95;boundaries||
+| in Extensions.MLPlanesQuery |query||
+| out ulong |request&#95;handle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesDestroy {#mlresultcode-mlplanesdestroy}
+
+```csharp
+public MLResult.Code MLPlanesDestroy(
+    ulong planes&#95;tracker
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |planes&#95;tracker||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesCreate {#mlresultcode-mlplanescreate}
+
+```csharp
+public MLResult.Code MLPlanesCreate(
+    out ulong planes&#95;tracker
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out ulong |planes&#95;tracker||
 
 
 

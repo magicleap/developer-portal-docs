@@ -35,30 +35,13 @@ Pinch values are measured between the finger and thumb. In case thumb is the fin
 
 ## Public Attributes
 
-### PinchAngleOfSeparationDeg {#float-pinchangleofseparationdeg}
+### PinchNormalizedDistance {#float-pinchnormalizeddistance}
 
-Absolute pinch angle (angular) in degrees. -1.0 if the value is not valid. 
-
-```csharp
-
-public float PinchAngleOfSeparationDeg;
-
-```
-
-
-
-
-
-
------------
-
-### PinchDistanceM {#float-pinchdistancem}
-
-Absolute pinch distance (euclidean) in meters. -1.0 if the value is not valid. 
+Normalized pinch distance (range 0.0 ~ 1.0). -1.0 if the value is not valid. 
 
 ```csharp
 
-public float PinchDistanceM;
+public float PinchNormalizedDistance;
 
 ```
 
@@ -86,13 +69,30 @@ public float PinchNormalAngle;
 
 -----------
 
-### PinchNormalizedDistance {#float-pinchnormalizeddistance}
+### PinchDistanceM {#float-pinchdistancem}
 
-Normalized pinch distance (range 0.0 ~ 1.0). -1.0 if the value is not valid. 
+Absolute pinch distance (euclidean) in meters. -1.0 if the value is not valid. 
 
 ```csharp
 
-public float PinchNormalizedDistance;
+public float PinchDistanceM;
+
+```
+
+
+
+
+
+
+-----------
+
+### PinchAngleOfSeparationDeg {#float-pinchangleofseparationdeg}
+
+Absolute pinch angle (angular) in degrees. -1.0 if the value is not valid. 
+
+```csharp
+
+public float PinchAngleOfSeparationDeg;
 
 ```
 

@@ -42,21 +42,6 @@ private template <A ,B ,C ,D ,E > class DispatchPayload5 : Dispatcher
 
 ## Public Methods
 
-### override void Dispatch {#override-void-dispatch}
-
-Dispatches the previously stored callback with the supplied payloads 
-
-```csharp
-public override void Dispatch()
-```
-
-
-
-
-
-
------------
-
 ###  DispatchPayload5 {#functions-dispatchpayload5}
 
 Initializes a new instance of the DispatchPayload5&lt;A,B,C,D,F&gt; class with the supplied callback and payloads 
@@ -83,6 +68,21 @@ public DispatchPayload5(
 | D |payload4|Forth payload|
 | E |payload5|Fifth payload|
 | System.Action&lt; A, B, C, D, E &gt; |action|Method to dispatch|
+
+
+
+
+
+
+-----------
+
+### override void Dispatch {#override-void-dispatch}
+
+Dispatches the previously stored callback with the supplied payloads 
+
+```csharp
+public override void Dispatch()
+```
 
 
 

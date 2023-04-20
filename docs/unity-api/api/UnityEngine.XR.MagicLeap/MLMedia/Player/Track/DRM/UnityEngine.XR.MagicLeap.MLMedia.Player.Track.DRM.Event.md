@@ -32,13 +32,33 @@ public override string ToString()
 
 ## Public Attributes
 
-### Data {#readonly-byte-data}
+### Type {#readonly-type}
 
-Optional data that may be associated with the event. 
+Type of Media [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) event. 
 
 ```csharp
 
-public readonly byte [] Data;
+public readonly EventType Type;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [EventType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#enums-eventtype) | The type of [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) event.  |
+
+
+
+
+
+-----------
+
+### SessionId {#readonly-byte-sessionid}
+
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
+
+```csharp
+
+public readonly byte [] SessionId;
 
 ```
 
@@ -66,36 +86,16 @@ public readonly int Extra;
 
 -----------
 
-### SessionId {#readonly-byte-sessionid}
+### Data {#readonly-byte-data}
 
-[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
-
-```csharp
-
-public readonly byte [] SessionId;
-
-```
-
-
-
-
-
-
------------
-
-### Type {#readonly-type}
-
-Type of Media [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) event. 
+Optional data that may be associated with the event. 
 
 ```csharp
 
-public readonly EventType Type;
+public readonly byte [] Data;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [EventType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#enums-eventtype) | The type of [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) event.  |
 
 
 

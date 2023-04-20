@@ -17,11 +17,11 @@ The Simplified Voice Command data needed to add commands from the inspector. The
 
 ## Public Attributes
 
-### Id {#uint-id}
+### Value {#string-value}
 
 ```csharp
 
-public uint Id;
+public string Value;
 
 ```
 
@@ -32,11 +32,11 @@ public uint Id;
 
 -----------
 
-### Value {#string-value}
+### Id {#uint-id}
 
 ```csharp
 
-public string Value;
+public uint Id;
 
 ```
 

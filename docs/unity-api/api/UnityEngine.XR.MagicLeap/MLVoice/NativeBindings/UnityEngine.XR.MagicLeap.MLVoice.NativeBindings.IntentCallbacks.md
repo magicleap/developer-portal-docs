@@ -56,6 +56,23 @@ public static IntentCallbacks Create()
 
 ## Public Attributes
 
+### Version {#uint-version}
+
+Version of the struct. 
+
+```csharp
+
+public uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
 ### OnEvent {#onvoiceeventdelegate-onevent}
 
 [Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnVoiceEvent. 
@@ -69,23 +86,6 @@ public OnVoiceEventDelegate OnEvent;
 | Type | Description  | 
 |--|--|
 | [OnVoiceEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md#delegate-void-onvoiceeventdelegate) | This callback will be invoked whenever a voice intent event is detected.  |
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-Version of the struct. 
-
-```csharp
-
-public uint Version;
-
-```
-
 
 
 

@@ -16,28 +16,6 @@ title: MLDepthCameraIntrinsics
 
 ## Public Methods
 
-### [MLDepthCameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraIntrinsics.md) Init {#mldepthcameraintrinsics-init}
-
-```csharp
-public static MLDepthCameraIntrinsics Init(
-    Intrinsics managed
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Intrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md) |managed|Depth camera intrinsic parameters. |
-
-
-
-
-
-
------------
-
 ### [Intrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md) ToManaged {#intrinsics-tomanaged}
 
 ```csharp
@@ -60,76 +38,35 @@ public static Intrinsics ToManaged(
 
 -----------
 
+### [MLDepthCameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraIntrinsics.md) Init {#mldepthcameraintrinsics-init}
+
+```csharp
+public static MLDepthCameraIntrinsics Init(
+    Intrinsics managed
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Intrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md) |managed|Depth camera intrinsic parameters. |
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### Distortion {#double-distortion}
+### Width {#uint-width}
 
 ```csharp
 
-public double [] Distortion;
-
-```
-
-
-
-
-
-
------------
-
-### FoV {#float-fov}
-
-```csharp
-
-public float FoV;
-
-```
-
-
-
-
-
-
------------
-
-### FocalLength {#mlvec2f-focallength}
-
-```csharp
-
-public MLVec2f FocalLength;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-```csharp
-
-public uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### MaxDistortionCoefficients {#const-int-maxdistortioncoefficients}
-
-```csharp
-
-public const int MaxDistortionCoefficients = 5;
+public uint Width;
 
 ```
 
@@ -158,11 +95,74 @@ public MLVec2f PrincipalPoint;
 
 -----------
 
-### Width {#uint-width}
+### MaxDistortionCoefficients {#const-int-maxdistortioncoefficients}
 
 ```csharp
 
-public uint Width;
+public const int MaxDistortionCoefficients = 5;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+```csharp
+
+public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### FocalLength {#mlvec2f-focallength}
+
+```csharp
+
+public MLVec2f FocalLength;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
+
+
+
+
+
+-----------
+
+### FoV {#float-fov}
+
+```csharp
+
+public float FoV;
+
+```
+
+
+
+
+
+
+-----------
+
+### Distortion {#double-distortion}
+
+```csharp
+
+public double [] Distortion;
 
 ```
 

@@ -19,11 +19,11 @@ title: PermissionGroup
 
 ## Public Fields
 
-### Name {#string-name}
+### Permissions {#permission-permissions}
 
 ```csharp
 
-public string Name { get; set; }
+public Permission [] Permissions { get; set; }
 
 ```
 
@@ -34,11 +34,11 @@ public string Name { get; set; }
 
 -----------
 
-### Permissions {#permission-permissions}
+### Name {#string-name}
 
 ```csharp
 
-public Permission [] Permissions { get; set; }
+public string Name { get; set; }
 
 ```
 

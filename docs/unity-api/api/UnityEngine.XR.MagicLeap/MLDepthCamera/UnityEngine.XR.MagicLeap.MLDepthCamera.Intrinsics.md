@@ -56,71 +56,13 @@ public List< double > GetDistortionList()
 
 ## Public Attributes
 
-### Distortion {#distortioncoefficients-distortion}
+### Width {#uint-width}
 
-Set of distortion coefficients. 
-
-```csharp
-
-public DistortionCoefficients Distortion;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]  |
-
-**Details**
-
-The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]
-
-
-
-
-
------------
-
-### FoV {#float-fov}
-
-Field of View in degrees 
+Camera Width 
 
 ```csharp
 
-public float FoV;
-
-```
-
-
-
-
-
-
------------
-
-### FocalLength {#vector2-focallength}
-
-Camera Focal Length 
-
-```csharp
-
-public Vector2 FocalLength;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Camera Height 
-
-```csharp
-
-public uint Height;
+public uint Width;
 
 ```
 
@@ -148,16 +90,74 @@ public Vector2 PrincipalPoint;
 
 -----------
 
-### Width {#uint-width}
+### Height {#uint-height}
 
-Camera Width 
+Camera Height 
 
 ```csharp
 
-public uint Width;
+public uint Height;
 
 ```
 
+
+
+
+
+
+-----------
+
+### FocalLength {#vector2-focallength}
+
+Camera Focal Length 
+
+```csharp
+
+public Vector2 FocalLength;
+
+```
+
+
+
+
+
+
+-----------
+
+### FoV {#float-fov}
+
+Field of View in degrees 
+
+```csharp
+
+public float FoV;
+
+```
+
+
+
+
+
+
+-----------
+
+### Distortion {#distortioncoefficients-distortion}
+
+Set of distortion coefficients. 
+
+```csharp
+
+public DistortionCoefficients Distortion;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]  |
+
+**Details**
+
+The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]
 
 
 

@@ -55,15 +55,19 @@ title: ml_audio_channel_mask.h
 
 Audio channel output mask. 
 
-For a channel position mask, each allowed channel position corresponds to a bit in the channel mask. If that channel position is present in the audio frame, that bit is set, otherwise it is zero. The order of the bits (from lsb to msb) corresponds to the order of that position's sample in the audio frame. The canonical channel position masks by channel count are as follows: 
+For a channel position mask, each allowed channel position corresponds to a bit in the channel mask. If that channel position is present in the audio frame, that bit is set, otherwise it is zero. The order of the bits (from lsb to msb) corresponds to the order of that position's sample in the audio frame. The canonical channel position masks by channel count are as follows:
+
+
 
 ------------------
 
 
-# channel count channel position mask 
+# channel count  channel position mask
 
 1 MLAudioChannelOutMono 2 MLAudioChannelOutStereo 3 MLAudioChannelOutStereo | MLAudioChannelOutMask_FrontCenter 4 MLAudioChannelOutQuad 5 MLAudioChannelOutQuad | MLAudioChannelOutMask_FrontCenter 6 MLAudioChannelOut5Point1 7 MLAudioChannelOut5Point1 | MLAudioChannelOutMask_BackCenter 
-# 8 MLAudioChannelOut7Point1Surround 
+
+
+# 8    MLAudioChannelOut7Point1Surround
 
 These masks are an ORed composite of individual channel masks. For example MLAudioChannelOutMask_Stereo is composed of MLAudioChannelOutMask_FrontLeft and MLAudioChannelOutMask_FrontRight.
 

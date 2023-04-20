@@ -19,11 +19,11 @@ title: MagicLeapEditorPreferencesProvider
 
 ## Public Attributes
 
-### OnSDKPathChanged {#action-string-onsdkpathchanged}
+### OnZIPathChanged {#action-string-onzipathchanged}
 
 ```csharp
 
-public static Action< string > OnSDKPathChanged = null;
+public static Action< string > OnZIPathChanged = null;
 
 ```
 
@@ -34,11 +34,11 @@ public static Action< string > OnSDKPathChanged = null;
 
 -----------
 
-### OnZIPathChanged {#action-string-onzipathchanged}
+### OnSDKPathChanged {#action-string-onsdkpathchanged}
 
 ```csharp
 
-public static Action< string > OnZIPathChanged = null;
+public static Action< string > OnSDKPathChanged = null;
 
 ```
 

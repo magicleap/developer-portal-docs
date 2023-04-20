@@ -17,16 +17,19 @@ Gesture classification state of a single finger.
 
 ## Public Attributes
 
-### AngleToPalm {#float-angletopalm}
+### PostureData {#posturefingerdata-posturedata}
 
-Absolute angle to palm (angular). -1.0 if the value is not valid. 
+Gesture classification posture related finger data. 
 
 ```csharp
 
-public float AngleToPalm;
+public PostureFingerData PostureData;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [PostureFingerData](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.PostureFingerData.md) | Gesture classification posture related finger data.  |
 
 
 
@@ -34,13 +37,13 @@ public float AngleToPalm;
 
 -----------
 
-### IsExtended {#bool-isextended}
+### NormalizedExtension {#float-normalizedextension}
 
-State of finger. 
+State of finger extension range 0.0 to 1.0. (0.0 folded, 1.0 fully extended) 
 
 ```csharp
 
-public bool IsExtended;
+public float NormalizedExtension;
 
 ```
 
@@ -68,13 +71,13 @@ public float LengthM;
 
 -----------
 
-### NormalizedExtension {#float-normalizedextension}
+### IsExtended {#bool-isextended}
 
-State of finger extension range 0.0 to 1.0. (0.0 folded, 1.0 fully extended) 
+State of finger. 
 
 ```csharp
 
-public float NormalizedExtension;
+public bool IsExtended;
 
 ```
 
@@ -85,19 +88,16 @@ public float NormalizedExtension;
 
 -----------
 
-### PostureData {#posturefingerdata-posturedata}
+### AngleToPalm {#float-angletopalm}
 
-Gesture classification posture related finger data. 
+Absolute angle to palm (angular). -1.0 if the value is not valid. 
 
 ```csharp
 
-public PostureFingerData PostureData;
+public float AngleToPalm;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [PostureFingerData](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.PostureFingerData.md) | Gesture classification posture related finger data.  |
 
 
 

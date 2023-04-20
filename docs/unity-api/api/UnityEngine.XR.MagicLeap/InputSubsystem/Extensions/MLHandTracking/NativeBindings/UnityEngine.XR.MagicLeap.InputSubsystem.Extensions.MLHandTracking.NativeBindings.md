@@ -16,12 +16,12 @@ title: NativeBindings
 
 ## Public Methods
 
-### string GetKeyPointName {#string-getkeypointname}
+### bool TryGetKeyPointsMask {#bool-trygetkeypointsmask}
 
 ```csharp
-public static string GetKeyPointName(
-    KeyPointLocation location,
-    int keyPointIndex
+public static bool TryGetKeyPointsMask(
+    InputDevice handDevice,
+    out bool [] keyPointsMask
 )
 ```
 
@@ -30,8 +30,32 @@ public static string GetKeyPointName(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| KeyPointLocation |location||
-| int |keyPointIndex||
+| InputDevice |handDevice||
+| out bool [] |keyPointsMask||
+
+
+
+
+
+
+-----------
+
+### void SetPreRenderPoseUpdate {#void-setprerenderposeupdate}
+
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) call for pre render Keypoints update. 
+
+```csharp
+public void SetPreRenderPoseUpdate(
+    bool enable
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |enable|bool to determine if pre render pose update should happen.|
 
 
 
@@ -66,13 +90,12 @@ public static bool GetKeyPointStatus(
 
 -----------
 
-### void SetPreRenderPoseUpdate {#void-setprerenderposeupdate}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) call for pre render Keypoints update. 
+### string GetKeyPointName {#string-getkeypointname}
 
 ```csharp
-public void SetPreRenderPoseUpdate(
-    bool enable
+public static string GetKeyPointName(
+    KeyPointLocation location,
+    int keyPointIndex
 )
 ```
 
@@ -81,31 +104,8 @@ public void SetPreRenderPoseUpdate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| bool |enable|bool to determine if pre render pose update should happen.|
-
-
-
-
-
-
------------
-
-### bool TryGetKeyPointsMask {#bool-trygetkeypointsmask}
-
-```csharp
-public static bool TryGetKeyPointsMask(
-    InputDevice handDevice,
-    out bool [] keyPointsMask
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| InputDevice |handDevice||
-| out bool [] |keyPointsMask||
+| KeyPointLocation |location||
+| int |keyPointIndex||
 
 
 

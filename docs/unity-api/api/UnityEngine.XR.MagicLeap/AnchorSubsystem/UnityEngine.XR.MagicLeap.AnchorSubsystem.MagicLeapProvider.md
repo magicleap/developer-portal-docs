@@ -18,10 +18,82 @@ Inherits from: <br></br>Provider
 
 ## Public Methods
 
-### override void Destroy {#override-void-destroy}
+### override bool TryRemoveAnchor {#override-bool-tryremoveanchor}
 
 ```csharp
-public override void Destroy()
+public override bool TryRemoveAnchor(
+    TrackableId trackableId
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| TrackableId |trackableId||
+
+
+
+
+
+
+-----------
+
+### override unsafe bool TryAddAnchor {#override-unsafe-bool-tryaddanchor}
+
+```csharp
+public override unsafe bool TryAddAnchor(
+    Pose pose,
+    out XRAnchor xrAnchor
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Pose |pose||
+| out XRAnchor |xrAnchor||
+
+
+
+
+
+
+-----------
+
+### override void Stop {#override-void-stop}
+
+```csharp
+public override void Stop()
+```
+
+
+
+
+
+
+-----------
+
+### override void Start {#override-void-start}
+
+```csharp
+public override void Start()
+```
+
+
+
+
+
+
+-----------
+
+###  MagicLeapProvider {#functions-magicleapprovider}
+
+```csharp
+public MagicLeapProvider()
 ```
 
 
@@ -55,83 +127,11 @@ public override unsafe TrackableChanges< XRAnchor > GetChanges(
 
 -----------
 
-###  MagicLeapProvider {#functions-magicleapprovider}
+### override void Destroy {#override-void-destroy}
 
 ```csharp
-public MagicLeapProvider()
+public override void Destroy()
 ```
-
-
-
-
-
-
------------
-
-### override void Start {#override-void-start}
-
-```csharp
-public override void Start()
-```
-
-
-
-
-
-
------------
-
-### override void Stop {#override-void-stop}
-
-```csharp
-public override void Stop()
-```
-
-
-
-
-
-
------------
-
-### override unsafe bool TryAddAnchor {#override-unsafe-bool-tryaddanchor}
-
-```csharp
-public override unsafe bool TryAddAnchor(
-    Pose pose,
-    out XRAnchor xrAnchor
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Pose |pose||
-| out XRAnchor |xrAnchor||
-
-
-
-
-
-
------------
-
-### override bool TryRemoveAnchor {#override-bool-tryremoveanchor}
-
-```csharp
-public override bool TryRemoveAnchor(
-    TrackableId trackableId
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| TrackableId |trackableId||
 
 
 

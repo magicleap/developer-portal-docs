@@ -77,8 +77,9 @@ Returns the preferred (i.e. best performing) settings for buffered output.
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -123,8 +124,9 @@ This function returns the latency between the time a buffer is enqueued via MLAu
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -168,8 +170,9 @@ This function returns the number of frames that have been sent down to the audio
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -215,8 +218,9 @@ This function returns an output buffer when one of the output buffers is empty a
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 
@@ -260,8 +264,9 @@ After receiving an empty buffer from MLAudioGetOutputBuffer and writing audio da
 
 
 
-**API Level:**
-  * 7
+**API Level:
+ 7**
+  * 
 
 
 

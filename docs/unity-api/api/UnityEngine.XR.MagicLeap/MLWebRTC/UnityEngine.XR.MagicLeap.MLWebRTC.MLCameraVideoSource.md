@@ -19,11 +19,11 @@ Inherits from: <br></br>[AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.Ma
 
 ## Public Methods
 
-### delegate void CaptureStatusChangedDelegate {#delegate-void-capturestatuschangeddelegate}
+###  MLCameraVideoSource {#functions-mlcameravideosource}
 
 ```csharp
-public delegate void CaptureStatusChangedDelegate(
-    bool isDestroying
+public MLCameraVideoSource(
+    string trackId
 )
 ```
 
@@ -32,7 +32,7 @@ public delegate void CaptureStatusChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| bool |isDestroying||
+| string |trackId||
 
 
 
@@ -81,11 +81,11 @@ public static MLCameraVideoSource CreateLocal(
 
 -----------
 
-###  MLCameraVideoSource {#functions-mlcameravideosource}
+### delegate void CaptureStatusChangedDelegate {#delegate-void-capturestatuschangeddelegate}
 
 ```csharp
-public MLCameraVideoSource(
-    string trackId
+public delegate void CaptureStatusChangedDelegate(
+    bool isDestroying
 )
 ```
 
@@ -94,7 +94,7 @@ public MLCameraVideoSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |trackId||
+| bool |isDestroying||
 
 
 
@@ -104,49 +104,6 @@ public MLCameraVideoSource(
 -----------
 
 ## Protected Methods
-
-### OnApplicationPause {#override-void-onapplicationpause}
-
-Reacts to when the application is paused (after subscribing to [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md)). Override for custom behavior. 
-
-```csharp
-protected virtual override void OnApplicationPause(
-    bool pause
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |pause|True if paused.|
-
-
-
-
-**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#void-onapplicationpause)
-
-
-
------------
-
-### OnSourceDestroy {#override-void-onsourcedestroy}
-
-Instance method that is called when the source is destroyed via  [MLWebRTC.MediaStream.Track.DestroyLocal()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-destroylocal) . 
-
-```csharp
-protected virtual override void OnSourceDestroy()
-```
-
-
-
-
-**Reimplements**: [OnSourceDestroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.md#abstract-void-onsourcedestroy)
-
-
-
------------
 
 ### OnSourceSetEnabled {#override-void-onsourcesetenabled}
 
@@ -169,6 +126,49 @@ protected virtual override void OnSourceSetEnabled(
 
 
 **Reimplements**: [OnSourceSetEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.md#abstract-void-onsourcesetenabled)
+
+
+
+-----------
+
+### OnSourceDestroy {#override-void-onsourcedestroy}
+
+Instance method that is called when the source is destroyed via  [MLWebRTC.MediaStream.Track.DestroyLocal()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-destroylocal) . 
+
+```csharp
+protected virtual override void OnSourceDestroy()
+```
+
+
+
+
+**Reimplements**: [OnSourceDestroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.md#abstract-void-onsourcedestroy)
+
+
+
+-----------
+
+### OnApplicationPause {#override-void-onapplicationpause}
+
+Reacts to when the application is paused (after subscribing to [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md)). Override for custom behavior. 
+
+```csharp
+protected virtual override void OnApplicationPause(
+    bool pause
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |pause|True if paused.|
+
+
+
+
+**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#void-onapplicationpause)
 
 
 

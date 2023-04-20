@@ -34,8 +34,9 @@ See [MLHandTrackingKeyPoint](/api-ref/api/Modules/group___hand_tracking/group___
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

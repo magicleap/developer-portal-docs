@@ -17,30 +17,13 @@ CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;c
 
 ## Public Attributes
 
-### Blue {#int-blue}
+### Red {#int-red}
 
-Blue component. 
-
-```csharp
-
-public int Blue;
-
-```
-
-
-
-
-
-
------------
-
-### Green {#int-green}
-
-Green component. 
+Red component. 
 
 ```csharp
 
-public int Green;
+public int Red;
 
 ```
 
@@ -71,13 +54,30 @@ public Cea708CaptionColorOpacity Opacity;
 
 -----------
 
-### Red {#int-red}
+### Green {#int-green}
 
-Red component. 
+Green component. 
 
 ```csharp
 
-public int Red;
+public int Green;
+
+```
+
+
+
+
+
+
+-----------
+
+### Blue {#int-blue}
+
+Blue component. 
+
+```csharp
+
+public int Blue;
 
 ```
 

@@ -60,101 +60,11 @@ public static void AddLibrarySearchPaths(
 
 ## Public Attributes
 
-### AnchorSubsystemId {#const-string-anchorsubsystemid}
+### SessionSubsystemId {#const-string-sessionsubsystemid}
 
 ```csharp
 
-public const string AnchorSubsystemId = "MagicLeapXr-Anchors";
-
-```
-
-
-
-
-
-
------------
-
-### GestureSubsystemId {#const-string-gesturesubsystemid}
-
-```csharp
-
-public const string GestureSubsystemId = "MagicLeapXr-Gesture";
-
-```
-
-
-
-
-
-
------------
-
-### HandSubsystemId {#const-string-handsubsystemid}
-
-```csharp
-
-public const string HandSubsystemId = "MagicLeapXr-Hand";
-
-```
-
-
-
-
-
-
------------
-
-### ImageTrackingSubsystemId {#const-string-imagetrackingsubsystemid}
-
-```csharp
-
-public const string ImageTrackingSubsystemId = "MagicLeapXr-ImageTracking";
-
-```
-
-
-
-
-
-
------------
-
-### InputSubsystemId {#const-string-inputsubsystemid}
-
-```csharp
-
-public const string InputSubsystemId = "MagicLeapXr-Input";
-
-```
-
-
-
-
-
-
------------
-
-### MeshingSubsystemId {#const-string-meshingsubsystemid}
-
-```csharp
-
-public const string MeshingSubsystemId = "MagicLeapXr-Meshing";
-
-```
-
-
-
-
-
-
------------
-
-### PlanesSubsystemId {#const-string-planessubsystemid}
-
-```csharp
-
-public const string PlanesSubsystemId = "MagicLeapXr-Planes";
+public const string SessionSubsystemId = "MagicLeapXr-Session";
 
 ```
 
@@ -180,11 +90,101 @@ public const string RaycastSubsystemId = "MagicLeapXr-Raycast";
 
 -----------
 
-### SessionSubsystemId {#const-string-sessionsubsystemid}
+### PlanesSubsystemId {#const-string-planessubsystemid}
 
 ```csharp
 
-public const string SessionSubsystemId = "MagicLeapXr-Session";
+public const string PlanesSubsystemId = "MagicLeapXr-Planes";
+
+```
+
+
+
+
+
+
+-----------
+
+### MeshingSubsystemId {#const-string-meshingsubsystemid}
+
+```csharp
+
+public const string MeshingSubsystemId = "MagicLeapXr-Meshing";
+
+```
+
+
+
+
+
+
+-----------
+
+### InputSubsystemId {#const-string-inputsubsystemid}
+
+```csharp
+
+public const string InputSubsystemId = "MagicLeapXr-Input";
+
+```
+
+
+
+
+
+
+-----------
+
+### ImageTrackingSubsystemId {#const-string-imagetrackingsubsystemid}
+
+```csharp
+
+public const string ImageTrackingSubsystemId = "MagicLeapXr-ImageTracking";
+
+```
+
+
+
+
+
+
+-----------
+
+### HandSubsystemId {#const-string-handsubsystemid}
+
+```csharp
+
+public const string HandSubsystemId = "MagicLeapXr-Hand";
+
+```
+
+
+
+
+
+
+-----------
+
+### GestureSubsystemId {#const-string-gesturesubsystemid}
+
+```csharp
+
+public const string GestureSubsystemId = "MagicLeapXr-Gesture";
+
+```
+
+
+
+
+
+
+-----------
+
+### AnchorSubsystemId {#const-string-anchorsubsystemid}
+
+```csharp
+
+public const string AnchorSubsystemId = "MagicLeapXr-Anchors";
 
 ```
 

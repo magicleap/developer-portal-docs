@@ -17,64 +17,13 @@ Struct representing an image plane that comes from some captured camera frame.
 
 ## Public Fields
 
-### BytesPerPixel {#uint-bytesperpixel}
+### Width {#uint-width}
 
-Gets the bytes per pixel of the image plane. 
-
-```csharp
-
-public uint BytesPerPixel { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### DataPtr {#intptr-dataptr}
-
-Gets the pointer to the unmanaged memory where the actual image data is found. 
+Gets the width of the image plane. 
 
 ```csharp
 
-public IntPtr DataPtr { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Gets the height of the image plane. 
-
-```csharp
-
-public uint Height { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Size {#uint-size}
-
-Gets the size of the image plane, representing how many bytes in total the entire image plane contains. 
-
-```csharp
-
-public uint Size { get; set; }
+public uint Width { get; set; }
 
 ```
 
@@ -102,13 +51,64 @@ public uint Stride { get; set; }
 
 -----------
 
-### Width {#uint-width}
+### Size {#uint-size}
 
-Gets the width of the image plane. 
+Gets the size of the image plane, representing how many bytes in total the entire image plane contains. 
 
 ```csharp
 
-public uint Width { get; set; }
+public uint Size { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+Gets the height of the image plane. 
+
+```csharp
+
+public uint Height { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### DataPtr {#intptr-dataptr}
+
+Gets the pointer to the unmanaged memory where the actual image data is found. 
+
+```csharp
+
+public IntPtr DataPtr { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### BytesPerPixel {#uint-bytesperpixel}
+
+Gets the bytes per pixel of the image plane. 
+
+```csharp
+
+public uint BytesPerPixel { get; set; }
 
 ```
 
@@ -120,6 +120,25 @@ public uint Width { get; set; }
 -----------
 
 ## Public Methods
+
+### override string ToString {#override-string-tostring}
+
+Override to display the contents of a image plane as a string. 
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+**Returns**: A string representation of this struct.
+
+
+
+-----------
 
 ### [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) Create {#planeinfo-create}
 
@@ -154,25 +173,6 @@ public static PlaneInfo Create(
 
 
 **Returns**: An initialized version of this struct.
-
-
-
------------
-
-### override string ToString {#override-string-tostring}
-
-Override to display the contents of a image plane as a string. 
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
-**Returns**: A string representation of this struct.
 
 
 

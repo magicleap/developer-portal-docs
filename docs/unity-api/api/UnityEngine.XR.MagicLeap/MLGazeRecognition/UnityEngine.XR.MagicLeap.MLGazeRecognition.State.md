@@ -32,138 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### AmplitudeDeg {#readonly-float-amplitudedeg}
+### VelocityDegps {#readonly-float-velocitydegps}
 
-Metadata field for amplitude of the current movement, which is eye-position displacement in degrees of visual angle. Amplitude applies to saccades and pursuit, otherwise NaN. 
-
-```csharp
-
-public readonly float AmplitudeDeg;
-
-```
-
-
-
-
-
-
------------
-
-### Behavior {#readonly-behavior}
-
-Represents what known gaze Recognition behavior is present. 
+Metadata field for velocity of the current movement, in degrees per second. Velocity field applies to saccades and pursuit, otherwise NaN 
 
 ```csharp
 
-public readonly Behavior Behavior;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [Behavior](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-behavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
-
-
-
-
-
------------
-
-### DirectionRadial {#readonly-float-directionradial}
-
-Metadata field for direction of the current movement, in radial degrees (0-360). Direction field applies to saccades and pursuit, otherwise NaN 
-
-```csharp
-
-public readonly float DirectionRadial;
-
-```
-
-
-
-
-
-
------------
-
-### DurationS {#readonly-float-durations}
-
-Metadata field for duration of the current behavior (gaze type), in seconds. Duration applies to all gaze types 
-
-```csharp
-
-public readonly float DurationS;
-
-```
-
-
-
-
-
-
------------
-
-### Error {#readonly-error}
-
-Represents what gaze Recognition error (if any) is present. 
-
-```csharp
-
-public readonly Error Error;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-error) | A set of possible error codes that the Gaze Recognition system can report.  |
-
-
-
-
-
------------
-
-### EyeLeft {#readonly-vector2-eyeleft}
-
-A vector for eye-in-skull position of left eye, even if right eye is closed 
-
-```csharp
-
-public readonly Vector2 EyeLeft;
-
-```
-
-
-
-
-
-
------------
-
-### EyeRight {#readonly-vector2-eyeright}
-
-A vector for eye-in-skull position of right eye, even if left eye is closed. 
-
-```csharp
-
-public readonly Vector2 EyeRight;
-
-```
-
-
-
-
-
-
------------
-
-### OnsetS {#readonly-float-onsets}
-
-Metadata field for onset of the current behavior, in seconds. Onset applies to all behaviors and marks the time when the current behavior began. 
-
-```csharp
-
-public readonly float OnsetS;
+public readonly float VelocityDegps;
 
 ```
 
@@ -194,13 +69,138 @@ public readonly MLTime TimeStamp;
 
 -----------
 
-### VelocityDegps {#readonly-float-velocitydegps}
+### OnsetS {#readonly-float-onsets}
 
-Metadata field for velocity of the current movement, in degrees per second. Velocity field applies to saccades and pursuit, otherwise NaN 
+Metadata field for onset of the current behavior, in seconds. Onset applies to all behaviors and marks the time when the current behavior began. 
 
 ```csharp
 
-public readonly float VelocityDegps;
+public readonly float OnsetS;
+
+```
+
+
+
+
+
+
+-----------
+
+### EyeRight {#readonly-vector2-eyeright}
+
+A vector for eye-in-skull position of right eye, even if left eye is closed. 
+
+```csharp
+
+public readonly Vector2 EyeRight;
+
+```
+
+
+
+
+
+
+-----------
+
+### EyeLeft {#readonly-vector2-eyeleft}
+
+A vector for eye-in-skull position of left eye, even if right eye is closed 
+
+```csharp
+
+public readonly Vector2 EyeLeft;
+
+```
+
+
+
+
+
+
+-----------
+
+### Error {#readonly-error}
+
+Represents what gaze Recognition error (if any) is present. 
+
+```csharp
+
+public readonly Error Error;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-error) | A set of possible error codes that the Gaze Recognition system can report.  |
+
+
+
+
+
+-----------
+
+### DurationS {#readonly-float-durations}
+
+Metadata field for duration of the current behavior (gaze type), in seconds. Duration applies to all gaze types 
+
+```csharp
+
+public readonly float DurationS;
+
+```
+
+
+
+
+
+
+-----------
+
+### DirectionRadial {#readonly-float-directionradial}
+
+Metadata field for direction of the current movement, in radial degrees (0-360). Direction field applies to saccades and pursuit, otherwise NaN 
+
+```csharp
+
+public readonly float DirectionRadial;
+
+```
+
+
+
+
+
+
+-----------
+
+### Behavior {#readonly-behavior}
+
+Represents what known gaze Recognition behavior is present. 
+
+```csharp
+
+public readonly Behavior Behavior;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [Behavior](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-behavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
+
+
+
+
+
+-----------
+
+### AmplitudeDeg {#readonly-float-amplitudedeg}
+
+Metadata field for amplitude of the current movement, which is eye-position displacement in degrees of visual angle. Amplitude applies to saccades and pursuit, otherwise NaN. 
+
+```csharp
+
+public readonly float AmplitudeDeg;
 
 ```
 

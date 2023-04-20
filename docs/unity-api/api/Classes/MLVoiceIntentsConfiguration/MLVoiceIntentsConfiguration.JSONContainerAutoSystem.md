@@ -17,6 +17,21 @@ summary: jsoncontainer to auto allowing all system intents.
 
 ## Public Attributes
 
+### app_slots {#list-app-slots}
+
+```csharp
+
+public List< SlotDataInternal > app_slots;
+
+```
+
+
+
+
+
+
+-----------
+
 ### app_intents {#list-app-intents}
 
 ```csharp
@@ -28,21 +43,6 @@ public List< JSONData > app_intents;
 | Type | Description  | 
 |--|--|
 | List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
-
-
-
-
-
------------
-
-### app_slots {#list-app-slots}
-
-```csharp
-
-public List< SlotDataInternal > app_slots;
-
-```
-
 
 
 

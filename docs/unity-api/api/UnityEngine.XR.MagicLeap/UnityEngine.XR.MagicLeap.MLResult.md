@@ -39,13 +39,14 @@ public bool IsOk { get; set; }
 
 ## Public Methods
 
-### string CodeToString {#string-codetostring}
+### bool operator== {#bool-operator}
 
-Provides the string value for any [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code). 
+The equality check to be used for comparing two [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) structs. 
 
 ```csharp
-public static string CodeToString(
-    MLResult.Code resultCode
+public static bool operator==(
+    MLResult one,
+    MLResult.Code two
 )
 ```
 
@@ -54,218 +55,15 @@ public static string CodeToString(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |resultCode|The code to convert into a string value.|
+| [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |one|The first struct to compare with the second struct. |
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |two|The second struct to compare with the first struct. |
 
 
 
 
 
 
-**Returns**: The string value of the given [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code).
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Create {#mlresult-create}
-
-Create a new [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) or retrieve an already initialized [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with the result needed. 
-
-```csharp
-public static MLResult Create(
-    Code result,
-    string msg =null
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to use for the created [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).|
-| string |msg|The message to use for the created [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).|
-
-
-
-
-
-
-**Returns**: A new or cached [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with the provided code and message.
-
-
-
------------
-
-### bool DidNativeCallSucceed {#bool-didnativecallsucceed}
-
-```csharp
-public static bool DidNativeCallSucceed(
-    Code resultCode,
-    string functionName ="A native function",
-    Predicate< Code > successCase =null,
-    bool showError =true
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |resultCode|Identifier of Magic Leap API results |
-| string |functionName||
-| Predicate&lt; [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) &gt; |successCase|Identifier of Magic Leap API results |
-| bool |showError||
-
-
-
-
-
-
------------
-
-### override bool Equals {#override-bool-equals}
-
-The equality check to be used for comparing another object to this one. 
-
-```csharp
-public override bool Equals(
-    object obj
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| object |obj|The object to compare to this one with. |
-
-
-
-
-
-
-**Returns**: True if the the provided object is of the [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) type and has the same Result values.
-
-
-
------------
-
-### override int GetHashCode {#override-int-gethashcode}
-
-Gets the hash code to use from this.Result. 
-
-```csharp
-public override int GetHashCode()
-```
-
-
-
-
-
-
-**Returns**: The hash code returned by the this.Result field.
-
-
-
------------
-
-### bool IsOK {#bool-isok}
-
-Indicates whether the result code is [Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) Note that in some cases the result can be different than [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) and still be valid (e.g. [MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending), [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)) 
-
-```csharp
-public static bool IsOK(
-    Code result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to determine if it is Ok.|
-
-
-
-
-
-
-**Returns**: True if the provided code is equivalent [Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok).
-
-
-
------------
-
-### bool IsPending {#bool-ispending}
-
-Indicates whether the result code is one of the Pending results. 
-
-```csharp
-public static bool IsPending(
-    Code result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to determine if it is pending.|
-
-
-
-
-
-
-**Returns**: True if the provided code is equivalent [Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending).
-
-
-
------------
-
-### override string ToString {#override-string-tostring}
-
-Provides the string value of this.Result or the default message given to this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md). 
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
-**Returns**: the string value of this.Result or the default message given to this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).
-
-
-
------------
-
-### implicit operator Task< MLResult > {#implicit-operator-task-mlresult-}
-
-Enables asynchronous native calls to use the same interface as synchronous ones 
-
-```csharp
-public static implicit operator Task< MLResult >(
-    MLResult r
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |r|Magic Leap API return value. |
-
-
-
+**Returns**: True if the two provided structs have the same Result value.
 
 
 
@@ -301,14 +99,13 @@ public static bool operator!=(
 
 -----------
 
-### bool operator== {#bool-operator}
+### implicit operator Task< MLResult > {#implicit-operator-task-mlresult-}
 
-The equality check to be used for comparing two [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) structs. 
+Enables asynchronous native calls to use the same interface as synchronous ones 
 
 ```csharp
-public static bool operator==(
-    MLResult one,
-    MLResult.Code two
+public static implicit operator Task< MLResult >(
+    MLResult r
 )
 ```
 
@@ -317,15 +114,218 @@ public static bool operator==(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |one|The first struct to compare with the second struct. |
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |two|The second struct to compare with the first struct. |
+| [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |r|Magic Leap API return value. |
 
 
 
 
 
 
-**Returns**: True if the two provided structs have the same Result value.
+-----------
+
+### override string ToString {#override-string-tostring}
+
+Provides the string value of this.Result or the default message given to this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md). 
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+**Returns**: the string value of this.Result or the default message given to this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).
+
+
+
+-----------
+
+### bool IsPending {#bool-ispending}
+
+Indicates whether the result code is one of the Pending results. 
+
+```csharp
+public static bool IsPending(
+    Code result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to determine if it is pending.|
+
+
+
+
+
+
+**Returns**: True if the provided code is equivalent [Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending).
+
+
+
+-----------
+
+### bool IsOK {#bool-isok}
+
+Indicates whether the result code is [Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) Note that in some cases the result can be different than [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) and still be valid (e.g. [MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending), [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)) 
+
+```csharp
+public static bool IsOK(
+    Code result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to determine if it is Ok.|
+
+
+
+
+
+
+**Returns**: True if the provided code is equivalent [Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok).
+
+
+
+-----------
+
+### override int GetHashCode {#override-int-gethashcode}
+
+Gets the hash code to use from this.Result. 
+
+```csharp
+public override int GetHashCode()
+```
+
+
+
+
+
+
+**Returns**: The hash code returned by the this.Result field.
+
+
+
+-----------
+
+### override bool Equals {#override-bool-equals}
+
+The equality check to be used for comparing another object to this one. 
+
+```csharp
+public override bool Equals(
+    object obj
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| object |obj|The object to compare to this one with. |
+
+
+
+
+
+
+**Returns**: True if the the provided object is of the [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) type and has the same Result values.
+
+
+
+-----------
+
+### bool DidNativeCallSucceed {#bool-didnativecallsucceed}
+
+```csharp
+public static bool DidNativeCallSucceed(
+    Code resultCode,
+    string functionName ="A native function",
+    Predicate< Code > successCase =null,
+    bool showError =true
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |resultCode|Identifier of Magic Leap API results |
+| string |functionName||
+| Predicate&lt; [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) &gt; |successCase|Identifier of Magic Leap API results |
+| bool |showError||
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Create {#mlresult-create}
+
+Create a new [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) or retrieve an already initialized [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with the result needed. 
+
+```csharp
+public static MLResult Create(
+    Code result,
+    string msg =null
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to use for the created [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).|
+| string |msg|The message to use for the created [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).|
+
+
+
+
+
+
+**Returns**: A new or cached [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with the provided code and message.
+
+
+
+-----------
+
+### string CodeToString {#string-codetostring}
+
+Provides the string value for any [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code). 
+
+```csharp
+public static string CodeToString(
+    MLResult.Code resultCode
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |resultCode|The code to convert into a string value.|
+
+
+
+
+
+
+**Returns**: The string value of the given [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code).
 
 
 

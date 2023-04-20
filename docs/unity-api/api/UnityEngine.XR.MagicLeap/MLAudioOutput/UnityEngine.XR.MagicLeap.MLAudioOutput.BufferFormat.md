@@ -17,13 +17,13 @@ summary: buffer format settings for input and output streams.
 
 ## Public Fields
 
-### BitsPerSample {#uint-bitspersample}
+### ValidBitsPerSample {#uint-validbitspersample}
 
-Number of bits per sample. 
+Number of bits used per sample. 
 
 ```csharp
 
-public uint BitsPerSample { get; set; }
+public uint ValidBitsPerSample { get; set; }
 
 ```
 
@@ -34,36 +34,16 @@ public uint BitsPerSample { get; set; }
 
 -----------
 
-### ChannelCount {#uint-channelcount}
+### SamplesPerSecond {#uint-samplespersecond}
 
-Number of channels. 
-
-```csharp
-
-public uint ChannelCount { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### ChannelFormat {#channelformattype-channelformat}
-
-Channel format. 
+Sample rate. 
 
 ```csharp
 
-public ChannelFormatType ChannelFormat { get; set; }
+public uint SamplesPerSecond { get; set; }
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) | Possible channel formats for input and output streams.  |
 
 
 
@@ -91,13 +71,33 @@ public SampleFormatType SampleFormat { get; set; }
 
 -----------
 
-### SamplesPerSecond {#uint-samplespersecond}
+### ChannelFormat {#channelformattype-channelformat}
 
-Sample rate. 
+Channel format. 
 
 ```csharp
 
-public uint SamplesPerSecond { get; set; }
+public ChannelFormatType ChannelFormat { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) | Possible channel formats for input and output streams.  |
+
+
+
+
+
+-----------
+
+### ChannelCount {#uint-channelcount}
+
+Number of channels. 
+
+```csharp
+
+public uint ChannelCount { get; set; }
 
 ```
 
@@ -108,13 +108,13 @@ public uint SamplesPerSecond { get; set; }
 
 -----------
 
-### ValidBitsPerSample {#uint-validbitspersample}
+### BitsPerSample {#uint-bitspersample}
 
-Number of bits used per sample. 
+Number of bits per sample. 
 
 ```csharp
 
-public uint ValidBitsPerSample { get; set; }
+public uint BitsPerSample { get; set; }
 
 ```
 
@@ -126,6 +126,19 @@ public uint ValidBitsPerSample { get; set; }
 -----------
 
 ## Public Methods
+
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
 
 ###  BufferFormat {#functions-bufferformat}
 
@@ -149,19 +162,6 @@ public BufferFormat(
 | uint |bitsPerSample||
 | [SampleFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-sampleformattype) |sampleFormat|Possible sample formats for input and output streams. |
 | [ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) |channelFormat|Possible channel formats for input and output streams. |
-
-
-
-
-
-
------------
-
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
 
 
 

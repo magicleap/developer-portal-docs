@@ -57,16 +57,35 @@ public const float MLTTMLDimen_Unset = -3.402823466e+38F;
 
 ## Public Enums
 
-### MLTTMLAnchorType {#enums-mlttmlanchortype}
+### MLTTMLTextSizeType {#enums-mlttmltextsizetype}
 
-The cue box anchor in the direction of position. 
+The cue default text size type; 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Unset | 0x7FFFFFFF| An unset anchor type value.   |
-| Start | 0| Anchors the left (for horizontal positions) or top (for vertical positions) edge of the cue box.   |
-| Middle | 1| Anchors the middle of the cue box.   |
-| End | 2| Anchors the right (for horizontal positions) or bottom (for vertical positions) edge of the cue box.   |
+| Unset | 0x7FFFFFFF| An unset text size type value.   |
+| Fractional | 0| Text size is measured as a fraction of the viewport size minus the view padding.   |
+| FractionalIgnorePadding | 1| Text size is measured as a fraction of the viewport size, ignoring the view padding   |
+| Absolute | 2| Text size is measured in number of pixels.   |
+
+
+
+
+
+
+
+
+-----------
+
+### MLTTMLLineType {#enums-mlttmllinetype}
+
+The cue line type. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Unset | 0x7FFFFFFF| An unset line type value.   |
+| Fraction | 0| Line position is fractional position within the viewport.   |
+| Number | 1| Line position is number of lines, interpretation also depends on the line anchor type.   |
 
 
 
@@ -97,35 +116,16 @@ The alignment of the cue text within the cue box.
 
 -----------
 
-### MLTTMLLineType {#enums-mlttmllinetype}
+### MLTTMLAnchorType {#enums-mlttmlanchortype}
 
-The cue line type. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Unset | 0x7FFFFFFF| An unset line type value.   |
-| Fraction | 0| Line position is fractional position within the viewport.   |
-| Number | 1| Line position is number of lines, interpretation also depends on the line anchor type.   |
-
-
-
-
-
-
-
-
------------
-
-### MLTTMLTextSizeType {#enums-mlttmltextsizetype}
-
-The cue default text size type; 
+The cue box anchor in the direction of position. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Unset | 0x7FFFFFFF| An unset text size type value.   |
-| Fractional | 0| Text size is measured as a fraction of the viewport size minus the view padding.   |
-| FractionalIgnorePadding | 1| Text size is measured as a fraction of the viewport size, ignoring the view padding   |
-| Absolute | 2| Text size is measured in number of pixels.   |
+| Unset | 0x7FFFFFFF| An unset anchor type value.   |
+| Start | 0| Anchors the left (for horizontal positions) or top (for vertical positions) edge of the cue box.   |
+| Middle | 1| Anchors the middle of the cue box.   |
+| End | 2| Anchors the right (for horizontal positions) or bottom (for vertical positions) edge of the cue box.   |
 
 
 

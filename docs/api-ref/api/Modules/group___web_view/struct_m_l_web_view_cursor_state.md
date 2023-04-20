@@ -37,8 +37,9 @@ This structure must be initialized by calling [MLWebViewCursorStateInit](/api-re
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

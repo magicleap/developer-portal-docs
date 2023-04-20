@@ -322,8 +322,9 @@ Hand in which the controller is held.
 
 
 
-**API Level:**
-  * 21 
+**API Level:
+ 21**
+  * 
 
 
 
@@ -336,7 +337,7 @@ Hand in which the controller is held.
 ### MLInputControllerTouchpadGesture {#struct-mlinputcontrollertouchpadgesture}
 
 ```cpp
-typedef struct MLInputControllerTouchpadGesture  MLInputControllerTouchpadGesture;
+typedef struct MLInputControllerTouchpadGesture MLInputControllerTouchpadGesture;
 ```
 
 
@@ -353,7 +354,7 @@ A structure containing information about recognized touchpad gesture.
 ### MLInputControllerCallbacksEx {#struct-mlinputcontrollercallbacksex}
 
 ```cpp
-typedef struct MLInputControllerCallbacksEx  MLInputControllerCallbacksEx;
+typedef struct MLInputControllerCallbacksEx MLInputControllerCallbacksEx;
 ```
 
 A structure containing callbacks for input controller events. 
@@ -367,8 +368,9 @@ This structure must be initialized by calling [MLInputControllerCallbacksExInit(
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -378,7 +380,7 @@ This structure must be initialized by calling [MLInputControllerCallbacksExInit(
 ### MLInputControllerState {#struct-mlinputcontrollerstate}
 
 ```cpp
-typedef struct MLInputControllerState  MLInputControllerState;
+typedef struct MLInputControllerState MLInputControllerState;
 ```
 
 A structure containing information about the current state of an input controller. 
@@ -398,7 +400,7 @@ Deprecated since 1.1.0. Scheduled for removal.
 ### MLInputControllerStateEx {#struct-mlinputcontrollerstateex}
 
 ```cpp
-typedef struct MLInputControllerStateEx  MLInputControllerStateEx;
+typedef struct MLInputControllerStateEx MLInputControllerStateEx;
 ```
 
 A structure containing information about the current state of an input controller. 
@@ -408,8 +410,9 @@ A structure containing information about the current state of an input controlle
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md)
 
 
-**API Level:**
-  * 21 
+**API Level:
+ 21**
+  * 
 
 
 
@@ -419,7 +422,7 @@ A structure containing information about the current state of an input controlle
 ### MLInputConnectedDevicesList {#struct-mlinputconnecteddeviceslist}
 
 ```cpp
-typedef struct MLInputConnectedDevicesList  MLInputConnectedDevicesList;
+typedef struct MLInputConnectedDevicesList MLInputConnectedDevicesList;
 ```
 
 A structure containing information about the connected devices. 
@@ -429,8 +432,9 @@ A structure containing information about the connected devices.
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -440,7 +444,7 @@ A structure containing information about the connected devices.
 ### MLInputPreDefinedPattern {#struct-mlinputpredefinedpattern}
 
 ```cpp
-typedef struct MLInputPreDefinedPattern  MLInputPreDefinedPattern;
+typedef struct MLInputPreDefinedPattern MLInputPreDefinedPattern;
 ```
 
 A structure containing information about the Pre-Defined pattern to be played. 
@@ -453,8 +457,9 @@ When playing haptic pre-defined pattern, needed information is stored in this st
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md)
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -464,7 +469,7 @@ When playing haptic pre-defined pattern, needed information is stored in this st
 ### MLInputBuzzCommand {#struct-mlinputbuzzcommand}
 
 ```cpp
-typedef struct MLInputBuzzCommand  MLInputBuzzCommand;
+typedef struct MLInputBuzzCommand MLInputBuzzCommand;
 ```
 
 A structure containing information about the Buzz command to be played. 
@@ -477,8 +482,9 @@ When playing haptic buzz command, needed information is stored in this structure
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md)
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -488,7 +494,7 @@ When playing haptic buzz command, needed information is stored in this structure
 ### MLInputCustomHaptics {#struct-mlinputcustomhaptics}
 
 ```cpp
-typedef struct MLInputCustomHaptics  MLInputCustomHaptics;
+typedef struct MLInputCustomHaptics MLInputCustomHaptics;
 ```
 
 A structure containing information about the Buzz command and/or pre-defined pattern to be played. 
@@ -513,7 +519,7 @@ The #duration will set the time for which a pattern is played:
 ### MLInputCustomHapticsInfo {#struct-mlinputcustomhapticsinfo}
 
 ```cpp
-typedef struct MLInputCustomHapticsInfo  MLInputCustomHapticsInfo;
+typedef struct MLInputCustomHapticsInfo MLInputCustomHapticsInfo;
 ```
 
 A structure containing a list of Buzz command and/or pre-defined patterns to be played. 
@@ -526,8 +532,9 @@ A custom haptics pattern can be played by combining Buzz haptic command and/or a
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -555,8 +562,9 @@ Initializes default values for [MLInputControllerCallbacksEx](/api-ref/api/Modul
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -581,8 +589,9 @@ Initializes values for [MLInputControllerStateEx](/api-ref/api/Modules/group___i
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -607,8 +616,9 @@ Initializes default values for [MLInputConnectedDevicesList](/api-ref/api/Module
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -703,8 +713,9 @@ Returns an ASCII string for MLInputsResult and MLResult codes.
 **Return**: ASCII string containing readable version of result code.
 
 
-**API Level:**
-  * 8
+**API Level:
+ 8**
+  * 
 
 
 
@@ -743,8 +754,9 @@ Creates an input tracker.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -786,8 +798,9 @@ Sets the callbacks for controller input events.
 
 
 
-**API Level:**
-  * 8
+**API Level:
+ 8**
+  * 
 
 
 
@@ -827,7 +840,7 @@ Returns current state of all possible input controllers.
 
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal.
+Deprecated since 1.1.0. Scheduled for removal. 
 :::
 
 
@@ -867,8 +880,9 @@ Returns current state of all possible input controllers.
 
 
 
-**API Level:**
-  * 21
+**API Level:
+ 21**
+  * 
 
 
 
@@ -908,8 +922,9 @@ Gets the device IDs of all connected devices.
 
 
 
-**API Level:**
-  * 5
+**API Level:
+ 5**
+  * 
 
 
 
@@ -949,8 +964,9 @@ Releases the contents of [MLInputConnectedDevicesList](/api-ref/api/Modules/grou
 
 
 
-**API Level:**
-  * 5
+**API Level:
+ 5**
+  * 
 
 
 
@@ -994,8 +1010,9 @@ Plays the pre-defined pattern.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1039,8 +1056,9 @@ Plays controller haptic buzz command.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1086,8 +1104,9 @@ A custom haptics pattern is defined as a set of either buzz command and/or pre-d
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1131,8 +1150,9 @@ Plays the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1173,8 +1193,9 @@ Deletes the custom haptic pattern created by [MLInputCreateCustomHapticsPattern]
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -1216,8 +1237,9 @@ Stops the currently playing haptic pattern.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

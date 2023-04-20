@@ -29,7 +29,7 @@ title: ml_spatial_anchor.h
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 24](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-anonymous-enum-24)** <br></br> { <br></br>[MLResultAPIPrefix_SpatialAnchor](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlresultapiprefix-spatialanchor) = ( 0x439  << 16),<br></br> [MLSpatialAnchor_MaxSpaceNameLength](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchor-maxspacenamelength) = 64<br></br>} |
+| enum | **[Anonymous Enum 25](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-anonymous-enum-25)** <br></br> { <br></br>[MLResultAPIPrefix_SpatialAnchor](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlresultapiprefix-spatialanchor) = ( 0x439  << 16),<br></br> [MLSpatialAnchor_MaxSpaceNameLength](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchor-maxspacenamelength) = 64<br></br>} |
 | enum | **[MLSpatialAnchorResult](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorresult)** <br></br> { <br></br>[MLSpatialAnchorResult_MaxAnchorLimitReached](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-maxanchorlimitreached) = MLResultAPIPrefix_SpatialAnchor,<br></br> [MLSpatialAnchorResult_MinDistanceThresholdExceeded](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-mindistancethresholdexceeded),<br></br> [MLSpatialAnchorResult_InsufficientMapping](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-insufficientmapping),<br></br> [MLSpatialAnchorResult_InvalidId](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-invalidid),<br></br> [MLSpatialAnchorResult_InvalidExpirationTimestamp](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-invalidexpirationtimestamp),<br></br> [MLSpatialAnchorResult_NotLocalized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-notlocalized),<br></br> [MLSpatialAnchorResult_ServerError](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-servererror),<br></br> [MLSpatialAnchorResult_ServiceUnavailable](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-serviceunavailable),<br></br> [MLSpatialAnchorResult_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>SpatialAnchor-specific return codes.  |
 | enum | **[MLSpatialAnchorLocalizationStatus](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorlocalizationstatus)** <br></br> { <br></br>[MLSpatialAnchorLocalizationStatus_NotLocalized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-notlocalized),<br></br> [MLSpatialAnchorLocalizationStatus_Localized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-localized),<br></br> [MLSpatialAnchorLocalizationStatus_LocalizationPending](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-localizationpending),<br></br> [MLSpatialAnchorLocalizationStatus_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current localization status.  |
 | enum | **[MLSpatialAnchorMappingMode](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchormappingmode)** <br></br> { <br></br>[MLSpatialAnchorMappingMode_OnDevice](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-ondevice),<br></br> [MLSpatialAnchorMappingMode_ARCloud](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-arcloud),<br></br> [MLSpatialAnchorMappingMode_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current mapping mode, set via settings.  |
@@ -55,7 +55,7 @@ title: ml_spatial_anchor.h
 
 ## Enums Documentation
 
-### Anonymous Enum 24 {#enums-anonymous-enum-24}
+### Anonymous Enum 25 {#enums-anonymous-enum-25}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -92,8 +92,9 @@ SpatialAnchor-specific return codes.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -116,8 +117,9 @@ The current localization status.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -139,8 +141,9 @@ The current mapping mode, set via settings.
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -153,7 +156,7 @@ The current mapping mode, set via settings.
 ### MLSpatialAnchorLocalizationInfo {#struct-mlspatialanchorlocalizationinfo}
 
 ```cpp
-typedef struct MLSpatialAnchorLocalizationInfo  MLSpatialAnchorLocalizationInfo;
+typedef struct MLSpatialAnchorLocalizationInfo MLSpatialAnchorLocalizationInfo;
 ```
 
 A structure containing information about the device's localization state. 
@@ -163,8 +166,9 @@ A structure containing information about the device's localization state.
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -174,7 +178,7 @@ A structure containing information about the device's localization state.
 ### MLSpatialAnchor {#struct-mlspatialanchor}
 
 ```cpp
-typedef struct MLSpatialAnchor  MLSpatialAnchor;
+typedef struct MLSpatialAnchor MLSpatialAnchor;
 ```
 
 A structure representing a user-defined Spatial Anchor. 
@@ -184,8 +188,9 @@ A structure representing a user-defined Spatial Anchor.
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -195,7 +200,7 @@ A structure representing a user-defined Spatial Anchor.
 ### MLSpatialAnchorCreateInfo {#struct-mlspatialanchorcreateinfo}
 
 ```cpp
-typedef struct MLSpatialAnchorCreateInfo  MLSpatialAnchorCreateInfo;
+typedef struct MLSpatialAnchorCreateInfo MLSpatialAnchorCreateInfo;
 ```
 
 A structure used to populate anchor creation info when creating a new Spatial Anchor. 
@@ -205,8 +210,9 @@ A structure used to populate anchor creation info when creating a new Spatial An
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -216,7 +222,7 @@ A structure used to populate anchor creation info when creating a new Spatial An
 ### MLSpatialAnchorQueryFilter {#struct-mlspatialanchorqueryfilter}
 
 ```cpp
-typedef struct MLSpatialAnchorQueryFilter  MLSpatialAnchorQueryFilter;
+typedef struct MLSpatialAnchorQueryFilter MLSpatialAnchorQueryFilter;
 ```
 
 A collection of filters for Spatial Anchor queries. 
@@ -230,8 +236,9 @@ This struct must be initialized by calling [MLSpatialAnchorQueryFilterInit](/api
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md)
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 
@@ -264,8 +271,9 @@ Initialize default values for [MLSpatialAnchorLocalizationInfo](/api-ref/api/Mod
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -295,8 +303,9 @@ Initialize default values for a [MLSpatialAnchor](/api-ref/api/Modules/group___s
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -326,8 +335,9 @@ Initialize default values for a [MLSpatialAnchorCreateInfo](/api-ref/api/Modules
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -357,8 +367,9 @@ Initializes the default values for a query filter.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -397,8 +408,9 @@ Create a Spatial Anchor tracker.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -436,8 +448,9 @@ Destroy a previously created Spatial Anchor tracker.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -486,8 +499,9 @@ Any unpublished anchor will be lost if the Headpose session is lost. See [MLHead
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -535,8 +549,9 @@ Any unpublished anchor will be lost if the Headpose session is lost. See [MLHead
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -579,8 +594,9 @@ If successful, this will delete the anchor from persistent storage based on the 
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -624,8 +640,9 @@ The only property that can currently be updated is the expiration timestamp.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -672,8 +689,9 @@ It is the responsibility of the caller to call [MLSpatialAnchorQueryDestroy](/ap
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -712,8 +730,9 @@ Destroy a previously created query handle and release its associated resources.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -762,8 +781,9 @@ Putting index bounds on the results allows the caller to only receive a subset o
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -803,8 +823,9 @@ Get the current localization status of the device.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

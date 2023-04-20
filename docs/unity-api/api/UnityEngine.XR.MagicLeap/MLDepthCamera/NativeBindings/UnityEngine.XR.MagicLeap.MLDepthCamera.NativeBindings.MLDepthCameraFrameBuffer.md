@@ -40,56 +40,11 @@ public static MLDepthCameraFrameBuffer Init(
 
 ## Public Attributes
 
-### BytesPerUnit {#uint-bytesperunit}
+### Width {#uint-width}
 
 ```csharp
 
-public uint BytesPerUnit;
-
-```
-
-
-
-
-
-
------------
-
-### Data {#intptr-data}
-
-```csharp
-
-public IntPtr Data;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-```csharp
-
-public uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### Size {#uint-size}
-
-```csharp
-
-public uint Size;
+public uint Width;
 
 ```
 
@@ -115,11 +70,56 @@ public uint Stride;
 
 -----------
 
-### Width {#uint-width}
+### Size {#uint-size}
 
 ```csharp
 
-public uint Width;
+public uint Size;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+```csharp
+
+public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### Data {#intptr-data}
+
+```csharp
+
+public IntPtr Data;
+
+```
+
+
+
+
+
+
+-----------
+
+### BytesPerUnit {#uint-bytesperunit}
+
+```csharp
+
+public uint BytesPerUnit;
 
 ```
 

@@ -17,13 +17,13 @@ Byte data for TTML image cues.
 
 ## Public Fields
 
-### Data {#byte-data}
+### Size {#uint-size}
 
-Byte data of the image. 
+Image size in bytes. 
 
 ```csharp
 
-public byte [] Data { get; set; }
+public uint Size { get; set; }
 
 ```
 
@@ -34,13 +34,13 @@ public byte [] Data { get; set; }
 
 -----------
 
-### Size {#uint-size}
+### Data {#byte-data}
 
-Image size in bytes. 
+Byte data of the image. 
 
 ```csharp
 
-public uint Size { get; set; }
+public byte [] Data { get; set; }
 
 ```
 

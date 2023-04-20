@@ -41,8 +41,9 @@ This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/a
 
 
 
-**API Level:**
-  * 24 
+**API Level:
+ 24**
+  * 
 
 
 

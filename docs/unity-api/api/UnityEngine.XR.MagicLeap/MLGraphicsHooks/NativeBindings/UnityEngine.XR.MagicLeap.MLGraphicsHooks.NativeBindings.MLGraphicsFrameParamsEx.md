@@ -16,101 +16,11 @@ title: MLGraphicsFrameParamsEx
 
 ## Public Attributes
 
-### BlendMode {#environmentblendmode-blendmode}
+### Vignette {#bool-vignette}
 
 ```csharp
 
-public EnvironmentBlendMode BlendMode;
-
-```
-
-
-
-
-
-
------------
-
-### FarClip {#float-farclip}
-
-```csharp
-
-public float FarClip;
-
-```
-
-
-
-
-
-
------------
-
-### FocusDustance {#float-focusdustance}
-
-```csharp
-
-public float FocusDustance;
-
-```
-
-
-
-
-
-
------------
-
-### NearClip {#float-nearclip}
-
-```csharp
-
-public float NearClip;
-
-```
-
-
-
-
-
-
------------
-
-### ProjectionType {#projectiontype-projectiontype}
-
-```csharp
-
-public ProjectionType ProjectionType;
-
-```
-
-
-
-
-
-
------------
-
-### ProtectedSurface {#bool-protectedsurface}
-
-```csharp
-
-public bool ProtectedSurface;
-
-```
-
-
-
-
-
-
------------
-
-### SurfaceScale {#float-surfacescale}
-
-```csharp
-
-public float SurfaceScale;
+public bool Vignette;
 
 ```
 
@@ -136,11 +46,101 @@ public uint Version;
 
 -----------
 
-### Vignette {#bool-vignette}
+### SurfaceScale {#float-surfacescale}
 
 ```csharp
 
-public bool Vignette;
+public float SurfaceScale;
+
+```
+
+
+
+
+
+
+-----------
+
+### ProtectedSurface {#bool-protectedsurface}
+
+```csharp
+
+public bool ProtectedSurface;
+
+```
+
+
+
+
+
+
+-----------
+
+### ProjectionType {#projectiontype-projectiontype}
+
+```csharp
+
+public ProjectionType ProjectionType;
+
+```
+
+
+
+
+
+
+-----------
+
+### NearClip {#float-nearclip}
+
+```csharp
+
+public float NearClip;
+
+```
+
+
+
+
+
+
+-----------
+
+### FocusDustance {#float-focusdustance}
+
+```csharp
+
+public float FocusDustance;
+
+```
+
+
+
+
+
+
+-----------
+
+### FarClip {#float-farclip}
+
+```csharp
+
+public float FarClip;
+
+```
+
+
+
+
+
+
+-----------
+
+### BlendMode {#environmentblendmode-blendmode}
+
+```csharp
+
+public EnvironmentBlendMode BlendMode;
 
 ```
 

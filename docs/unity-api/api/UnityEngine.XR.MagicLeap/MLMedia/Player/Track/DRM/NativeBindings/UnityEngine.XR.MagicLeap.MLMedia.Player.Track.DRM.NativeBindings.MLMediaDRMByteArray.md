@@ -34,6 +34,19 @@ public byte [] Bytes { get; set; }
 
 ## Public Methods
 
+### void FreeResources {#void-freeresources}
+
+```csharp
+public void FreeResources()
+```
+
+
+
+
+
+
+-----------
+
 ### void AllocResources {#void-allocresources}
 
 ```csharp
@@ -56,37 +69,7 @@ public void AllocResources(
 
 -----------
 
-### void FreeResources {#void-freeresources}
-
-```csharp
-public void FreeResources()
-```
-
-
-
-
-
-
------------
-
 ## Public Attributes
-
-### Data {#intptr-data}
-
-Byte array buffer. 
-
-```csharp
-
-public IntPtr Data;
-
-```
-
-
-
-
-
-
------------
 
 ### Length {#ulong-length}
 
@@ -95,6 +78,23 @@ Size of Data.
 ```csharp
 
 public ulong Length;
+
+```
+
+
+
+
+
+
+-----------
+
+### Data {#intptr-data}
+
+Byte array buffer. 
+
+```csharp
+
+public IntPtr Data;
 
 ```
 

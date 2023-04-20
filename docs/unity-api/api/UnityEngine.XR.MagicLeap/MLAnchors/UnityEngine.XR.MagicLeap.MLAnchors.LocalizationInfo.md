@@ -17,6 +17,19 @@ A structure containing information about the device's localization state.
 
 ## Public Methods
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
 ###  LocalizationInfo {#functions-localizationinfo}
 
 ```csharp
@@ -39,68 +52,15 @@ public LocalizationInfo(
 
 -----------
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ## Public Attributes
 
-### LocalizationStatus {#readonly-localizationstatus}
+### SpaceOrigin {#readonly-pose-spaceorigin}
 
-The localization status at the time this structure was returned. 
-
-```csharp
-
-public readonly LocalizationStatus LocalizationStatus;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
-
-
-
-
-
------------
-
-### MappingMode {#readonly-mappingmode}
-
-The current mapping mode. 
+If localized, this will contain the pose info of the target space's origin relative to the world origin. 
 
 ```csharp
 
-public readonly MappingMode MappingMode;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [MappingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
-
-
-
-
-
------------
-
-### SpaceId {#readonly-string-spaceid}
-
-If localized, this will contain the name of the current space. 
-
-```csharp
-
-public readonly string SpaceId => this.spaceId.ToString();
+public readonly Pose SpaceOrigin;
 
 ```
 
@@ -128,16 +88,56 @@ public readonly string SpaceName;
 
 -----------
 
-### SpaceOrigin {#readonly-pose-spaceorigin}
+### SpaceId {#readonly-string-spaceid}
 
-If localized, this will contain the pose info of the target space's origin relative to the world origin. 
+If localized, this will contain the name of the current space. 
 
 ```csharp
 
-public readonly Pose SpaceOrigin;
+public readonly string SpaceId => this.spaceId.ToString();
 
 ```
 
+
+
+
+
+
+-----------
+
+### MappingMode {#readonly-mappingmode}
+
+The current mapping mode. 
+
+```csharp
+
+public readonly MappingMode MappingMode;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [MappingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
+
+
+
+
+
+-----------
+
+### LocalizationStatus {#readonly-localizationstatus}
+
+The localization status at the time this structure was returned. 
+
+```csharp
+
+public readonly LocalizationStatus LocalizationStatus;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
 
 
 

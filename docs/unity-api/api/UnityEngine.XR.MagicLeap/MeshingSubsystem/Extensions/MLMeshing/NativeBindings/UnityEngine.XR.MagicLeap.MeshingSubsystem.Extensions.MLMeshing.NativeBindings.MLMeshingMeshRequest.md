@@ -16,13 +16,13 @@ title: MLMeshingMeshRequest
 
 ## Public Attributes
 
-### blockRequests {#intptr-blockrequests}
+### requestCount {#int-requestcount}
 
-Binary data size. 
+Type selector for the structure. 
 
 ```csharp
 
-public IntPtr blockRequests;
+public int requestCount;
 
 ```
 
@@ -33,13 +33,13 @@ public IntPtr blockRequests;
 
 -----------
 
-### requestCount {#int-requestcount}
+### blockRequests {#intptr-blockrequests}
 
-Type selector for the structure. 
+Binary data size. 
 
 ```csharp
 
-public int requestCount;
+public IntPtr blockRequests;
 
 ```
 

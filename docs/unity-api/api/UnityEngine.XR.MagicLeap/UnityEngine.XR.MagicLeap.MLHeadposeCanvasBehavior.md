@@ -22,26 +22,11 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Attributes
 
-### CanvasDistanceForwards {#float-canvasdistanceforwards}
+### RotationLerpSpeed {#float-rotationlerpspeed}
 
 ```csharp
 
-public float CanvasDistanceForwards = 1.5f;
-
-```
-
-
-
-
-
-
------------
-
-### CanvasDistanceUpwards {#float-canvasdistanceupwards}
-
-```csharp
-
-public float CanvasDistanceUpwards = 0.0f;
+public float RotationLerpSpeed = 5f;
 
 ```
 
@@ -67,11 +52,26 @@ public float PositionLerpSpeed = 5f;
 
 -----------
 
-### RotationLerpSpeed {#float-rotationlerpspeed}
+### CanvasDistanceUpwards {#float-canvasdistanceupwards}
 
 ```csharp
 
-public float RotationLerpSpeed = 5f;
+public float CanvasDistanceUpwards = 0.0f;
+
+```
+
+
+
+
+
+
+-----------
+
+### CanvasDistanceForwards {#float-canvasdistanceforwards}
+
+```csharp
+
+public float CanvasDistanceForwards = 1.5f;
 
 ```
 

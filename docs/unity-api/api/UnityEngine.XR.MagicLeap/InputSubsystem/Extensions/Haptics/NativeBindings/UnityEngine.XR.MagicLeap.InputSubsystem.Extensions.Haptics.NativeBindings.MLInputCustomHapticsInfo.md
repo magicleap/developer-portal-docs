@@ -19,19 +19,6 @@ Inherits from: <br></br>IInputDeviceCommandInfo,<br></br>IDisposable
 
 ## Public Methods
 
-### void Dispose {#void-dispose}
-
-```csharp
-public void Dispose()
-```
-
-
-
-
-
-
------------
-
 ###  MLInputCustomHapticsInfo {#functions-mlinputcustomhapticsinfo}
 
 ```csharp
@@ -54,16 +41,10 @@ public MLInputCustomHapticsInfo(
 
 -----------
 
-## Public Attributes
-
-### CustomHapticsArrayPtr {#readonly-intptr-customhapticsarrayptr}
-
-An array containing the list of buzz command and/or pre-defined patterns. 
+### void Dispose {#void-dispose}
 
 ```csharp
-
-public readonly IntPtr CustomHapticsArrayPtr;
-
+public void Dispose()
 ```
 
 
@@ -73,13 +54,13 @@ public readonly IntPtr CustomHapticsArrayPtr;
 
 -----------
 
-### Size {#readonly-uint-size}
+## Public Attributes
 
-Size of the array. 
+### typeStatic {#fourcc-typestatic}
 
 ```csharp
 
-public readonly uint Size;
+public FourCC typeStatic => commandType;
 
 ```
 
@@ -107,11 +88,30 @@ public readonly uint Version;
 
 -----------
 
-### typeStatic {#fourcc-typestatic}
+### Size {#readonly-uint-size}
+
+Size of the array. 
 
 ```csharp
 
-public FourCC typeStatic => commandType;
+public readonly uint Size;
+
+```
+
+
+
+
+
+
+-----------
+
+### CustomHapticsArrayPtr {#readonly-intptr-customhapticsarrayptr}
+
+An array containing the list of buzz command and/or pre-defined patterns. 
+
+```csharp
+
+public readonly IntPtr CustomHapticsArrayPtr;
 
 ```
 

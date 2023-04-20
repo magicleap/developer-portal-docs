@@ -47,7 +47,7 @@ Common APIs types.
 ### MLVec2f {#struct-mlvec2f}
 
 ```cpp
-typedef struct MLVec2f  MLVec2f;
+typedef struct MLVec2f MLVec2f;
 ```
 
 
@@ -64,7 +64,7 @@ typedef struct MLVec2f  MLVec2f;
 ### MLXYZf {#struct-mlxyzf}
 
 ```cpp
-typedef struct MLXYZf  MLXYZf;
+typedef struct MLXYZf MLXYZf;
 ```
 
 Internal structure used to simplify access of [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md). Do not create this structure directly and always use [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) instead. 
@@ -80,7 +80,7 @@ Internal structure used to simplify access of [MLVec3f](/api-ref/api/Modules/gro
 ### MLVec3f {#struct-mlvec3f}
 
 ```cpp
-typedef struct MLVec3f  MLVec3f;
+typedef struct MLVec3f MLVec3f;
 ```
 
 
@@ -97,7 +97,7 @@ typedef struct MLVec3f  MLVec3f;
 ### MLQuaternionf {#struct-mlquaternionf}
 
 ```cpp
-typedef struct MLQuaternionf  MLQuaternionf;
+typedef struct MLQuaternionf MLQuaternionf;
 ```
 
 
@@ -114,7 +114,7 @@ Quaternion stored as X, Y, Z, W floats.
 ### MLTransform {#struct-mltransform}
 
 ```cpp
-typedef struct MLTransform  MLTransform;
+typedef struct MLTransform MLTransform;
 ```
 
 
@@ -131,7 +131,7 @@ Information used to transform from one coordinate frame to another.
 ### MLMat4f {#struct-mlmat4f}
 
 ```cpp
-typedef struct MLMat4f  MLMat4f;
+typedef struct MLMat4f MLMat4f;
 ```
 
 
@@ -148,7 +148,7 @@ An arbitrary 4x4 matrix represented with an array of floats.
 ### MLRectf {#struct-mlrectf}
 
 ```cpp
-typedef struct MLRectf  MLRectf;
+typedef struct MLRectf MLRectf;
 ```
 
 
@@ -165,7 +165,7 @@ A 2D float rectangle.
 ### MLRecti {#struct-mlrecti}
 
 ```cpp
-typedef struct MLRecti  MLRecti;
+typedef struct MLRecti MLRecti;
 ```
 
 
@@ -182,7 +182,7 @@ A 2D integer rectangle.
 ### MLColor32 {#struct-mlcolor32}
 
 ```cpp
-typedef struct MLColor32  MLColor32;
+typedef struct MLColor32 MLColor32;
 ```
 
 
@@ -199,7 +199,7 @@ Color represented by 4 unsigned bytes.
 ### MLColor4f {#struct-mlcolor4f}
 
 ```cpp
-typedef struct MLColor4f  MLColor4f;
+typedef struct MLColor4f MLColor4f;
 ```
 
 
@@ -216,7 +216,7 @@ Color represented by 4 floats.
 ### MLUUID {#struct-mluuid}
 
 ```cpp
-typedef struct MLUUID  MLUUID;
+typedef struct MLUUID MLUUID;
 ```
 
 

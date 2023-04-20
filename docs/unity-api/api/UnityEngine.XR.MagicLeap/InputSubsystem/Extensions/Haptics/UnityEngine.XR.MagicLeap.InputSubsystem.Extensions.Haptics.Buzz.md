@@ -19,6 +19,21 @@ Inherits from: <br></br>[IHapticsCommand](/unity-api/api/UnityEngine.XR.MagicLea
 
 ## Public Methods
 
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
+
+```csharp
+public MLResult StartHaptics()
+```
+
+
+
+
+**Reimplements**: [StartHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
+
+
+
+-----------
+
 ### [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) Create {#buzz-create}
 
 ```csharp
@@ -47,47 +62,15 @@ public static Buzz Create(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
-
-```csharp
-public MLResult StartHaptics()
-```
-
-
-
-
-**Reimplements**: [StartHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
-
-
-
------------
-
 ## Public Attributes
 
-### Amplitude {#readonly-byte-amplitude}
+### StartHz {#readonly-ushort-starthz}
 
-amplitude of the buzz command, as a percentage (0 - 100). 
-
-```csharp
-
-public readonly byte Amplitude;
-
-```
-
-
-
-
-
-
------------
-
-### DurationMs {#readonly-uint-durationms}
-
-Duration of the buzz command in milliseconds (ms). 
+Start frequency of the buzz command (0 - 1250). 
 
 ```csharp
 
-public readonly uint DurationMs;
+public readonly ushort StartHz;
 
 ```
 
@@ -115,13 +98,30 @@ public readonly ushort EndHz;
 
 -----------
 
-### StartHz {#readonly-ushort-starthz}
+### DurationMs {#readonly-uint-durationms}
 
-Start frequency of the buzz command (0 - 1250). 
+Duration of the buzz command in milliseconds (ms). 
 
 ```csharp
 
-public readonly ushort StartHz;
+public readonly uint DurationMs;
+
+```
+
+
+
+
+
+
+-----------
+
+### Amplitude {#readonly-byte-amplitude}
+
+amplitude of the buzz command, as a percentage (0 - 100). 
+
+```csharp
+
+public readonly byte Amplitude;
 
 ```
 

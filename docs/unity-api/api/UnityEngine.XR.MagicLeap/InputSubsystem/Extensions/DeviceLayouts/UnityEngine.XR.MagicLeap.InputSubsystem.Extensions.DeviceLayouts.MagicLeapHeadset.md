@@ -18,11 +18,11 @@ Inherits from: <br></br>XRHMD
 
 ## Public Fields
 
-### ControllerEnabled {#bool-controllerenabled}
+### confidence {#axiscontrol-confidence}
 
 ```csharp
 
-public bool ControllerEnabled { get; set; }
+public AxisControl confidence { get; set; }
 
 ```
 
@@ -48,11 +48,11 @@ public bool EyesEnabled { get; set; }
 
 -----------
 
-### confidence {#axiscontrol-confidence}
+### ControllerEnabled {#bool-controllerenabled}
 
 ```csharp
 
-public AxisControl confidence { get; set; }
+public bool ControllerEnabled { get; set; }
 
 ```
 

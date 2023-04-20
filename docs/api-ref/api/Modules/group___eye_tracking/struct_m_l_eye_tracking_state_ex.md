@@ -27,6 +27,8 @@ Information about the state of the eye tracking system.  [More...](#detailed-des
 | bool | **[right_blink](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#bool-right-blink)**  |
 | [MLEyeTrackingError](/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#enums-mleyetrackingerror) | **[error](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#mleyetrackingerror-error)**  |
 | [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#mltime-timestamp)** <br></br>The timestamp for all the data fields in this struct.  |
+| float | **[left_eye_openness](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-left-eye-openness)** <br></br>Openness of the left eye.  |
+| float | **[right_eye_openness](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md#float-right-eye-openness)** <br></br>Openness of the right eye.  |
 
 ## Detailed Description
 
@@ -41,8 +43,9 @@ This structure must be initialized by calling [MLEyeTrackingStateInit()](/api-re
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 26**
+  * 
 
 
 
@@ -163,6 +166,38 @@ MLTime timestamp;
 ```
 
 The timestamp for all the data fields in this struct. 
+
+
+
+
+
+-----------
+
+### left_eye_openness {#float-left-eye-openness}
+
+```cpp
+float left_eye_openness;
+```
+
+Openness of the left eye. 
+
+Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. 
+
+
+
+
+
+-----------
+
+### right_eye_openness {#float-right-eye-openness}
+
+```cpp
+float right_eye_openness;
+```
+
+Openness of the right eye. 
+
+Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. 
 
 
 

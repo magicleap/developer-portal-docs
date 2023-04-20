@@ -52,21 +52,6 @@ protected static T Instance { get; set; }
 
 ## Protected Methods
 
-### Initialize {#void-initialize}
-
-```csharp
-protected virtual void Initialize()
-```
-
-
-
-
-**Reimplemented by**: [Initialize](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#sealed-override-void-initialize)
-
-
-
------------
-
 ### MLLazySingleton {#functions-mllazysingleton}
 
 7 DO NOT USE THIS! This class cannot be instantiated manually. 
@@ -77,6 +62,21 @@ protected MLLazySingleton()
 
 
 
+
+
+
+-----------
+
+### Initialize {#void-initialize}
+
+```csharp
+protected virtual void Initialize()
+```
+
+
+
+
+**Reimplemented by**: [Initialize](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#sealed-override-void-initialize)
 
 
 

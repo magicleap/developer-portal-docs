@@ -35,8 +35,9 @@ This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/
 
 
 
-**API Level:**
-  * 20 
+**API Level:
+ 20**
+  * 
 
 
 

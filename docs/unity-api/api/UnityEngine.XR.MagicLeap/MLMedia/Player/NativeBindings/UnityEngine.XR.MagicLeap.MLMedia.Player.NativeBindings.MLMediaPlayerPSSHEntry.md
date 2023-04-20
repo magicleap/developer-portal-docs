@@ -17,16 +17,19 @@ PSSH entry.
 
 ## Public Attributes
 
-### data {#intptr-data}
+### uuid {#magicleapnativebindingsmluuid-uuid}
 
-Data specific to that scheme. 
+16 bytes UUID specifying crypto scheme. 
 
 ```csharp
 
-public IntPtr data;
+public MagicLeapNativeBindings.MLUUID uuid;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) | Universally unique identifier  |
 
 
 
@@ -51,19 +54,16 @@ public ulong size;
 
 -----------
 
-### uuid {#magicleapnativebindingsmluuid-uuid}
+### data {#intptr-data}
 
-16 bytes UUID specifying crypto scheme. 
+Data specific to that scheme. 
 
 ```csharp
 
-public MagicLeapNativeBindings.MLUUID uuid;
+public IntPtr data;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) | Universally unique identifier  |
 
 
 

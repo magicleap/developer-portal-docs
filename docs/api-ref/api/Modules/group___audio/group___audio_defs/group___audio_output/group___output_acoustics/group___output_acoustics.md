@@ -74,8 +74,9 @@ Removes all Acoustic Elements and restores default scene. Resets any modificatio
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -107,8 +108,9 @@ The multi-update parameters include global Acoustic Scene params and Acoustic El
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -141,8 +143,9 @@ The multi-update parameters include global Acoustic Scene params and Acoustic El
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -181,8 +184,9 @@ Acoustic Map data is a device-curated representation of the acoustics of the loc
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -220,8 +224,9 @@ Indicates whether Acoustic Map data is enabled for the Acoustic Scene.
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -261,8 +266,9 @@ Transmission is specified using [MLAudioMultibandLevel](/api-ref/api/Modules/gro
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -302,8 +308,9 @@ Transmission is specified using [MLAudioMultibandLevel](/api-ref/api/Modules/gro
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -343,8 +350,9 @@ Dispersion properties are specified using [MLAudioDispersionProperties](/api-ref
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -384,8 +392,9 @@ Dispersion properties are specified using [MLAudioDispersionProperties](/api-ref
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -425,8 +434,9 @@ Reverb properties are specified using [MLAudioReverbProperties](/api-ref/api/Mod
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -466,8 +476,9 @@ Reverb properties are specified using [MLAudioReverbProperties](/api-ref/api/Mod
 
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 
@@ -517,8 +528,9 @@ Caller is responsible for deallocating the memory used by out_partner_crossfeed_
 :::
 
 
-**API Level:**
-  * 20
+**API Level:
+ 20**
+  * 
 
 
 

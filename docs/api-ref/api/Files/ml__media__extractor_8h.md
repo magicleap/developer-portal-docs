@@ -120,7 +120,7 @@ typedef MLPSSHEntry MLMediaExtractorPSSHEntry;
 ### MLMediaExtractorDRMSchemeInitData {#struct-mlmediaextractordrmschemeinitdata}
 
 ```cpp
-typedef struct MLMediaExtractorDRMSchemeInitData  MLMediaExtractorDRMSchemeInitData;
+typedef struct MLMediaExtractorDRMSchemeInitData MLMediaExtractorDRMSchemeInitData;
 ```
 
 

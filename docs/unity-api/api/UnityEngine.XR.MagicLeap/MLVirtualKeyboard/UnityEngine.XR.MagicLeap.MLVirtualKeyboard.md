@@ -22,12 +22,12 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Methods
 
-### void Cancel {#void-cancel}
+### void ToggleShift {#void-toggleshift}
 
-Invokes the Cancel event for the Virtual Keyboard. 
+Toggles the shift state of the currently active keyboard. 
 
 ```csharp
-public void Cancel()
+public void ToggleShift()
 ```
 
 
@@ -37,12 +37,12 @@ public void Cancel()
 
 -----------
 
-### void Delete {#void-delete}
+### void ToggleKeyboard {#void-togglekeyboard}
 
-Deletes the last element from the input field text. 
+Toggles the active keyboard between (a-Z) and (Alphanumeric) 
 
 ```csharp
-public void Delete()
+public void ToggleKeyboard()
 ```
 
 
@@ -52,13 +52,65 @@ public void Delete()
 
 -----------
 
-### void Hover {#void-hover}
+### void Submit {#void-submit}
 
-If a ControllerConnectionHandler is assigned, the Bump feedback pattern will be sent to the active controller. 
+Invokes the Submit event for the Virtual Keyboard. 
 
 ```csharp
-public void Hover()
+public void Submit()
 ```
+
+
+
+
+
+
+-----------
+
+### void Space {#void-space}
+
+Appends a space to the end of the input field text. 
+
+```csharp
+public void Space()
+```
+
+
+
+
+
+
+-----------
+
+### void Return {#void-return}
+
+Adds a NewLine to the input field text. 
+
+```csharp
+public void Return()
+```
+
+
+
+
+
+
+-----------
+
+### void Open {#void-open}
+
+```csharp
+public void Open(
+    InputField targetField =null
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputField |targetField||
 
 
 
@@ -91,34 +143,12 @@ public void InsertCharacter(
 
 -----------
 
-### void Open {#void-open}
+### void Hover {#void-hover}
+
+If a ControllerConnectionHandler is assigned, the Bump feedback pattern will be sent to the active controller. 
 
 ```csharp
-public void Open(
-    InputField targetField =null
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| InputField |targetField||
-
-
-
-
-
-
------------
-
-### void Return {#void-return}
-
-Adds a NewLine to the input field text. 
-
-```csharp
-public void Return()
+public void Hover()
 ```
 
 
@@ -128,12 +158,12 @@ public void Return()
 
 -----------
 
-### void Space {#void-space}
+### void Delete {#void-delete}
 
-Appends a space to the end of the input field text. 
+Deletes the last element from the input field text. 
 
 ```csharp
-public void Space()
+public void Delete()
 ```
 
 
@@ -143,42 +173,12 @@ public void Space()
 
 -----------
 
-### void Submit {#void-submit}
+### void Cancel {#void-cancel}
 
-Invokes the Submit event for the Virtual Keyboard. 
-
-```csharp
-public void Submit()
-```
-
-
-
-
-
-
------------
-
-### void ToggleKeyboard {#void-togglekeyboard}
-
-Toggles the active keyboard between (a-Z) and (Alphanumeric) 
+Invokes the Cancel event for the Virtual Keyboard. 
 
 ```csharp
-public void ToggleKeyboard()
-```
-
-
-
-
-
-
------------
-
-### void ToggleShift {#void-toggleshift}
-
-Toggles the shift state of the currently active keyboard. 
-
-```csharp
-public void ToggleShift()
+public void Cancel()
 ```
 
 
@@ -190,41 +190,11 @@ public void ToggleShift()
 
 ## Public Attributes
 
-### OnCharacterAdded {#unityevent-char-oncharacteradded}
+### OnKeyboardSubmit {#keyboardsubmitevent-onkeyboardsubmit}
 
 ```csharp
 
-public UnityEvent< char > OnCharacterAdded = new UnityEvent<char>();
-
-```
-
-
-
-
-
-
------------
-
-### OnCharacterDeleted {#unityevent-oncharacterdeleted}
-
-```csharp
-
-public UnityEvent OnCharacterDeleted = new UnityEvent();
-
-```
-
-
-
-
-
-
------------
-
-### OnInputValueChange {#unityevent-string-oninputvaluechange}
-
-```csharp
-
-public UnityEvent< string > OnInputValueChange = new UnityEvent<string>();
+public KeyboardSubmitEvent OnKeyboardSubmit = new KeyboardSubmitEvent();
 
 ```
 
@@ -250,11 +220,41 @@ public KeyboardCancelEvent OnKeyboardCancel = new KeyboardCancelEvent();
 
 -----------
 
-### OnKeyboardSubmit {#keyboardsubmitevent-onkeyboardsubmit}
+### OnInputValueChange {#unityevent-string-oninputvaluechange}
 
 ```csharp
 
-public KeyboardSubmitEvent OnKeyboardSubmit = new KeyboardSubmitEvent();
+public UnityEvent< string > OnInputValueChange = new UnityEvent<string>();
+
+```
+
+
+
+
+
+
+-----------
+
+### OnCharacterDeleted {#unityevent-oncharacterdeleted}
+
+```csharp
+
+public UnityEvent OnCharacterDeleted = new UnityEvent();
+
+```
+
+
+
+
+
+
+-----------
+
+### OnCharacterAdded {#unityevent-char-oncharacteradded}
+
+```csharp
+
+public UnityEvent< char > OnCharacterAdded = new UnityEvent<char>();
 
 ```
 
