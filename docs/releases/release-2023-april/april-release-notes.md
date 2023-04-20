@@ -1,7 +1,7 @@
 ---
 title: April Release Notes
 sidebar_position: 2
-date: 04/19/2023
+date: 04/24/2023
 ---
 
 import DocCardList from '@theme/DocCardList';
