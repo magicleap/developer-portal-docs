@@ -24,7 +24,7 @@ import RegisterDevice from './_register_device.md';
 
 This type of deployment is appropriate for any edge computing, on-premises, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
-## Infrastructure setup
+## Infrastructure Setup
 
 ### Install Basic Dependencies
 
