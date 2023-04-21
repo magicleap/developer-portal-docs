@@ -15,11 +15,11 @@ date: 04/24/2023
 ## Issues addressed in 3.3.0 from 3.2.3
 
 - AAL-2456 - Fix potential acoustic model memory leak
-- AAL-2493 - Fix MSA mixer loses reference to source when disabled
+- AAL-2493 - Fix Soundfield Audio mixer loses reference to source when disabled
 - AAL-2489 - Fix Dialog on non supported OSs
 - AAL-2484 - Fix MLDebugInfo crash when disabled
 - AAL-2437 - Fix tooltip missing on analysis MFCC checkbox
 - AAL-2441 - Fix for Voice Presence always zero
 - AAL-2490 - Update version to 3.4.0
 - AAL-2481 - Fixed omni hiding gizmos checkbox in MLPointSource editor
-- AAL-2408 - Added MSA mixer plugin to support Unity's audio mixer
+- AAL-2408 - Added Soundfield Audio mixer plugin to support Unity's audio mixer
