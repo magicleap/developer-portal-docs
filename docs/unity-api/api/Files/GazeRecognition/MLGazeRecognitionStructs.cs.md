@@ -64,16 +64,7 @@ namespace UnityEngine.XR.MagicLeap
 
             public readonly float DirectionRadial;
 
-            public override string ToString() => $"Behavior: {Behavior}
-TimeStamp: {TimeStamp}
-AmplitudeDeg: {AmplitudeDeg}
-DirectionRadial: {DirectionRadial}
-DurationS: {DurationS}
-EyeLeft: {EyeLeft}
-EyeRight: {EyeRight}
-OnsetS: {OnsetS}
-VelocityDegps: {VelocityDegps}
-";
+            public override string ToString() => $"Behavior: {Behavior}\nTimeStamp: {TimeStamp}\nAmplitudeDeg: {AmplitudeDeg}\nDirectionRadial: {DirectionRadial}\nDurationS: {DurationS}\nEyeLeft: {EyeLeft}\nEyeRight: {EyeRight}\nOnsetS: {OnsetS}\nVelocityDegps: {VelocityDegps}\n";
 
             internal State(NativeBindings.MLGazeRecognitionState nativeState)
             {

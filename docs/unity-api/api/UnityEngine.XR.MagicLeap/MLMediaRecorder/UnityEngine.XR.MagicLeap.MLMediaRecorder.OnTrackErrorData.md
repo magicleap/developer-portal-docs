@@ -17,16 +17,19 @@ Info received when the media recorder runs into a track error.
 
 ## Public Attributes
 
-### TrackId {#uint-trackid}
+### Error {#error-error}
 
-Track ID When the error or info type is track specific. 
+The error of [MLMediaRecorder.Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error)
 
 ```csharp
 
-public uint TrackId;
+public Error Error;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error) | Video recorder error types  |
 
 
 
@@ -51,19 +54,16 @@ public int Extra;
 
 -----------
 
-### Error {#error-error}
+### TrackId {#uint-trackid}
 
-The error of [MLMediaRecorder.Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error)
+Track ID When the error or info type is track specific. 
 
 ```csharp
 
-public Error Error;
+public uint TrackId;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error) | Video recorder error types  |
 
 
 

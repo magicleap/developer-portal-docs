@@ -56,16 +56,23 @@ public List< double > GetDistortionList()
 
 ## Public Attributes
 
-### Width {#uint-width}
+### Distortion {#distortioncoefficients-distortion}
 
-Camera Width 
+Set of distortion coefficients. 
 
 ```csharp
 
-public uint Width;
+public DistortionCoefficients Distortion;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]  |
+
+**Details**
+
+The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]
 
 
 
@@ -73,30 +80,13 @@ public uint Width;
 
 -----------
 
-### PrincipalPoint {#vector2-principalpoint}
+### FoV {#float-fov}
 
-Camera Principal Point 
-
-```csharp
-
-public Vector2 PrincipalPoint;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Camera Height 
+Field of View in degrees 
 
 ```csharp
 
-public uint Height;
+public float FoV;
 
 ```
 
@@ -124,13 +114,13 @@ public Vector2 FocalLength;
 
 -----------
 
-### FoV {#float-fov}
+### Height {#uint-height}
 
-Field of View in degrees 
+Camera Height 
 
 ```csharp
 
-public float FoV;
+public uint Height;
 
 ```
 
@@ -141,23 +131,33 @@ public float FoV;
 
 -----------
 
-### Distortion {#distortioncoefficients-distortion}
+### PrincipalPoint {#vector2-principalpoint}
 
-Set of distortion coefficients. 
+Camera Principal Point 
 
 ```csharp
 
-public DistortionCoefficients Distortion;
+public Vector2 PrincipalPoint;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]  |
 
-**Details**
 
-The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]
+
+
+
+-----------
+
+### Width {#uint-width}
+
+Camera Width 
+
+```csharp
+
+public uint Width;
+
+```
+
 
 
 

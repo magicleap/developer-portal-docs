@@ -21,36 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLHeadsetFitCreateClient_Exists {#void-nativebinding-mlheadsetfitcreateclient-exists}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBindings_MLHeadsetFitState_struct_size {#void-nativebindings-mlheadsetfitstate-struct-size}
-
-```csharp
-public void NativeBindings_MLHeadsetFitState_struct_size()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLHeadsetFitGetState_Exists {#void-nativebinding-mlheadsetfitgetstate-exists}
-
-```csharp
-public void NativeBinding_MLHeadsetFitGetState_Exists()
+public void NativeBinding_MLHeadsetFitCreateClient_Exists()
 ```
 
 
@@ -73,10 +47,36 @@ public void NativeBinding_MLHeadsetFitDestroyClient_Exists()
 
 -----------
 
-### void NativeBinding_MLHeadsetFitCreateClient_Exists {#void-nativebinding-mlheadsetfitcreateclient-exists}
+### void NativeBinding_MLHeadsetFitGetState_Exists {#void-nativebinding-mlheadsetfitgetstate-exists}
 
 ```csharp
-public void NativeBinding_MLHeadsetFitCreateClient_Exists()
+public void NativeBinding_MLHeadsetFitGetState_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBindings_MLHeadsetFitState_struct_size {#void-nativebindings-mlheadsetfitstate-struct-size}
+
+```csharp
+public void NativeBindings_MLHeadsetFitState_struct_size()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

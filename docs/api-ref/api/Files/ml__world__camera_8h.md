@@ -148,8 +148,7 @@ This structure must be initialized by calling [MLWorldCameraSettingsInit](/api-r
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -170,8 +169,7 @@ World camera intrinsic parameters.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -192,8 +190,7 @@ A structure to encapsulate per plane info for each camera frame.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -214,8 +211,7 @@ A structure to encapsulate output data for each camera sensor.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -238,8 +234,7 @@ This structure must be initialized by calling [MLWorldCameraDataInit](/api-ref/a
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -273,8 +268,7 @@ Initialize the camera settings structure. Shall be called before calling [MLWorl
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -300,8 +294,7 @@ Initialize [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_wo
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -344,8 +337,7 @@ Connect to world cameras.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -386,8 +378,7 @@ Update the world camera settings.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -437,8 +428,7 @@ If there are no new camera frames within the timeout_ms duration then the API wi
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -517,8 +507,7 @@ This will disconnect from all the world camera currently connected.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 

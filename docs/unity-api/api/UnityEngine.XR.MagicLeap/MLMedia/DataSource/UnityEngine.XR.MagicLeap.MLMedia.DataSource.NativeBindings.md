@@ -18,92 +18,10 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### delegate long ReadAtDelegate {#delegate-long-readatdelegate}
+### delegate void CloseDelegate {#delegate-void-closedelegate}
 
 ```csharp
-public delegate long ReadAtDelegate(
-    ulong dataSourceHandle,
-    ulong position,
-    ulong size,
-    IntPtr buffer,
-    IntPtr context
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |dataSourceHandle||
-| ulong |position||
-| ulong |size||
-| IntPtr |buffer||
-| IntPtr |context||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceDestroy {#mlresultcode-mlmediadatasourcedestroy}
-
-```csharp
-public MLResult.Code MLMediaDataSourceDestroy(
-    ulong handle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |handle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceCreate {#mlresultcode-mlmediadatasourcecreate}
-
-```csharp
-public MLResult.Code MLMediaDataSourceCreate(
-    ReadAtDelegate readAt,
-    GetSizeDelegate getSize,
-    CloseDelegate close,
-    IntPtr context,
-    out ulong handle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ReadAtDelegate |readAt||
-| GetSizeDelegate |getSize||
-| CloseDelegate |close||
-| IntPtr |context||
-| out ulong |handle||
-
-
-
-
-
-
------------
-
-### delegate long GetSizeDelegate {#delegate-long-getsizedelegate}
-
-```csharp
-public delegate long GetSizeDelegate(
+public delegate void CloseDelegate(
     ulong dataSourceHandle,
     IntPtr context
 )
@@ -148,10 +66,10 @@ public static MLResult.Code Create(
 
 -----------
 
-### delegate void CloseDelegate {#delegate-void-closedelegate}
+### delegate long GetSizeDelegate {#delegate-long-getsizedelegate}
 
 ```csharp
-public delegate void CloseDelegate(
+public delegate long GetSizeDelegate(
     ulong dataSourceHandle,
     IntPtr context
 )
@@ -163,6 +81,88 @@ public delegate void CloseDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |dataSourceHandle||
+| IntPtr |context||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceCreate {#mlresultcode-mlmediadatasourcecreate}
+
+```csharp
+public MLResult.Code MLMediaDataSourceCreate(
+    ReadAtDelegate readAt,
+    GetSizeDelegate getSize,
+    CloseDelegate close,
+    IntPtr context,
+    out ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ReadAtDelegate |readAt||
+| GetSizeDelegate |getSize||
+| CloseDelegate |close||
+| IntPtr |context||
+| out ulong |handle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceDestroy {#mlresultcode-mlmediadatasourcedestroy}
+
+```csharp
+public MLResult.Code MLMediaDataSourceDestroy(
+    ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle||
+
+
+
+
+
+
+-----------
+
+### delegate long ReadAtDelegate {#delegate-long-readatdelegate}
+
+```csharp
+public delegate long ReadAtDelegate(
+    ulong dataSourceHandle,
+    ulong position,
+    ulong size,
+    IntPtr buffer,
+    IntPtr context
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |dataSourceHandle||
+| ulong |position||
+| ulong |size||
+| IntPtr |buffer||
 | IntPtr |context||
 
 

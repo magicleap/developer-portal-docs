@@ -85,8 +85,7 @@ Creates a sound input and allocates a double-buffer for streaming audio data fro
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -145,8 +144,7 @@ Creates a sound input and allocates a double-buffer for streaming audio data fro
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -205,8 +203,7 @@ Creates a sound input and allocates a double-buffer for streaming audio data fro
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 

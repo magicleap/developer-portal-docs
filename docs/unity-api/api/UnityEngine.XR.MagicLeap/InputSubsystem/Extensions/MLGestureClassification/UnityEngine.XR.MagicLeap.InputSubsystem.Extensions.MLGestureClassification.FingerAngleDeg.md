@@ -17,30 +17,13 @@ The Angles between two fingers in degrees.
 
 ## Public Attributes
 
-### ThumbIndexDeg {#float-thumbindexdeg}
+### IndexMiddleDeg {#float-indexmiddledeg}
 
-Angle between thumb and index (angular) in degrees. 
-
-```csharp
-
-public float ThumbIndexDeg;
-
-```
-
-
-
-
-
-
------------
-
-### RingPinkyDeg {#float-ringpinkydeg}
-
-Angle between ring and pinky (angular) in degrees. 
+Angle between index and middle (angular) in degrees. 
 
 ```csharp
 
-public float RingPinkyDeg;
+public float IndexMiddleDeg;
 
 ```
 
@@ -68,13 +51,30 @@ public float MiddleRingDeg;
 
 -----------
 
-### IndexMiddleDeg {#float-indexmiddledeg}
+### RingPinkyDeg {#float-ringpinkydeg}
 
-Angle between index and middle (angular) in degrees. 
+Angle between ring and pinky (angular) in degrees. 
 
 ```csharp
 
-public float IndexMiddleDeg;
+public float RingPinkyDeg;
+
+```
+
+
+
+
+
+
+-----------
+
+### ThumbIndexDeg {#float-thumbindexdeg}
+
+Angle between thumb and index (angular) in degrees. 
+
+```csharp
+
+public float ThumbIndexDeg;
 
 ```
 

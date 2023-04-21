@@ -20,13 +20,13 @@ Contains information necessary to report on  XRAnchor s.
 
 ## Public Fields
 
-### trackingState {#trackingstate-trackingstate}
+### anchor {#xranchor-anchor}
 
-The tracking state associated with the anchor 
+Get the reference frame as a refernce point 
 
 ```csharp
 
-public TrackingState trackingState { get; set; }
+public XRAnchor anchor { get; set; }
 
 ```
 
@@ -37,30 +37,13 @@ public TrackingState trackingState { get; set; }
 
 -----------
 
-### trackableId {#trackableid-trackableid}
+### anchorPose {#pose-anchorpose}
 
-The anchor's trackable id. 
-
-```csharp
-
-public TrackableId trackableId { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### coordinateFrame {#pose-coordinateframe}
-
-The pose of the coordinate frame used as the origin when calculating the anchorPose. 
+Compute the pose of the anchor. 
 
 ```csharp
 
-public Pose coordinateFrame { get; set; }
+public Pose anchorPose { get; set; }
 
 ```
 
@@ -91,13 +74,13 @@ public Native.MagicLeapNativeBindings.MLCoordinateFrameUID cfuid { get; set; }
 
 -----------
 
-### anchorPose {#pose-anchorpose}
+### coordinateFrame {#pose-coordinateframe}
 
-Compute the pose of the anchor. 
+The pose of the coordinate frame used as the origin when calculating the anchorPose. 
 
 ```csharp
 
-public Pose anchorPose { get; set; }
+public Pose coordinateFrame { get; set; }
 
 ```
 
@@ -108,13 +91,30 @@ public Pose anchorPose { get; set; }
 
 -----------
 
-### anchor {#xranchor-anchor}
+### trackableId {#trackableid-trackableid}
 
-Get the reference frame as a refernce point 
+The anchor's trackable id. 
 
 ```csharp
 
-public XRAnchor anchor { get; set; }
+public TrackableId trackableId { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### trackingState {#trackingstate-trackingstate}
+
+The tracking state associated with the anchor 
+
+```csharp
+
+public TrackingState trackingState { get; set; }
 
 ```
 
@@ -127,13 +127,11 @@ public XRAnchor anchor { get; set; }
 
 ## Public Methods
 
-### bool SetTrackingState {#bool-settrackingstate}
-
-Sets the tracking state and returns true if the state changed. 
+### void ComputeDelta {#void-computedelta}
 
 ```csharp
-public bool SetTrackingState(
-    TrackingState trackingState
+public void ComputeDelta(
+    Pose pose
 )
 ```
 
@@ -142,14 +140,45 @@ public bool SetTrackingState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| TrackingState |trackingState|The new tracking state|
+| Pose |pose||
 
 
 
 
 
 
-**Returns**: true if the tracking state changed.
+-----------
+
+### unsafe TrackableId GenerateTrackableId {#unsafe-trackableid-generatetrackableid}
+
+```csharp
+public static unsafe TrackableId GenerateTrackableId()
+```
+
+
+
+
+
+
+-----------
+
+###  ReferenceFrame {#functions-referenceframe}
+
+```csharp
+public ReferenceFrame(
+    Cinfo cinfo
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame |
+
+
+
 
 
 
@@ -181,11 +210,13 @@ public void SetCoordinateFrame(
 
 -----------
 
-###  ReferenceFrame {#functions-referenceframe}
+### bool SetTrackingState {#bool-settrackingstate}
+
+Sets the tracking state and returns true if the state changed. 
 
 ```csharp
-public ReferenceFrame(
-    Cinfo cinfo
+public bool SetTrackingState(
+    TrackingState trackingState
 )
 ```
 
@@ -194,45 +225,14 @@ public ReferenceFrame(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame |
+| TrackingState |trackingState|The new tracking state|
 
 
 
 
 
 
------------
-
-### unsafe TrackableId GenerateTrackableId {#unsafe-trackableid-generatetrackableid}
-
-```csharp
-public static unsafe TrackableId GenerateTrackableId()
-```
-
-
-
-
-
-
------------
-
-### void ComputeDelta {#void-computedelta}
-
-```csharp
-public void ComputeDelta(
-    Pose pose
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Pose |pose||
-
-
-
+**Returns**: true if the tracking state changed.
 
 
 

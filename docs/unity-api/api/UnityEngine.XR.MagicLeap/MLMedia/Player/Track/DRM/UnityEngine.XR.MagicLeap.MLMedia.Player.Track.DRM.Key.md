@@ -32,13 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### Status {#readonly-keystatus-status}
+### Id {#readonly-byte-id}
 
-Status code of the corresponding key. 
+Id of the key. 
 
 ```csharp
 
-public readonly KeyStatus Status;
+public readonly byte [] Id;
 
 ```
 
@@ -49,13 +49,13 @@ public readonly KeyStatus Status;
 
 -----------
 
-### Id {#readonly-byte-id}
+### Status {#readonly-keystatus-status}
 
-Id of the key. 
+Status code of the corresponding key. 
 
 ```csharp
 
-public readonly byte [] Id;
+public readonly KeyStatus Status;
 
 ```
 

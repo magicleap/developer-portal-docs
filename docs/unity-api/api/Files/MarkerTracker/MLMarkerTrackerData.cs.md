@@ -170,8 +170,7 @@ namespace UnityEngine.XR.MagicLeap
             }
 
             public override string ToString() =>
-                $"Id: {Id}
-DictionaryName: {this.Dictionary}";
+                $"Id: {Id}\nDictionaryName: {this.Dictionary}";
         }
 
         public readonly struct BinaryData
@@ -212,21 +211,13 @@ DictionaryName: {this.Dictionary}";
                 switch (this.Type)
                 {
                     case MarkerType.Aruco_April:
-                        toString = $"
-Type: {Enum.GetName(typeof(MLMarkerTracker.MarkerType), this.Type)}
-Reprojection Error: {this.ReprojectionError}
- Data:
- {this.ArucoData}";
+                        toString = $"\nType: {Enum.GetName(typeof(MLMarkerTracker.MarkerType), this.Type)}\nReprojection Error: {this.ReprojectionError}\n Data:\n {this.ArucoData}";
                         break;
 
                     case MarkerType.QR:
                     case MarkerType.EAN_13:
                     case MarkerType.UPC_A:
-                        toString = $"
-Type: {Enum.GetName(typeof(MLMarkerTracker.MarkerType), this.Type)}
-Reprojection Error: {this.ReprojectionError}
- Data Length:
-{this.BinaryData.Data.Length} bytes";
+                        toString = $"\nType: {Enum.GetName(typeof(MLMarkerTracker.MarkerType), this.Type)}\nReprojection Error: {this.ReprojectionError}\n Data Length:\n{this.BinaryData.Data.Length} bytes";
                         break;
 
                     default:

@@ -43,8 +43,7 @@ This structure must be initialized by calling [MLEyeTrackingStateInit()](/api-re
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

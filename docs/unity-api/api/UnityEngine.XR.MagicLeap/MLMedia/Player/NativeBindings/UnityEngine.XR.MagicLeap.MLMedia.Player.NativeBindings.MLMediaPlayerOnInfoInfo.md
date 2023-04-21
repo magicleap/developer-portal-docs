@@ -17,19 +17,16 @@ MediaPlayer Information callback Info.
 
 ## Public Attributes
 
-### Info {#info-info}
+### Data {#intptr-data}
 
-Type of informational event. 
+User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public Info Info;
+public IntPtr Data;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-info) | Indicates various trigger various media player actions.  MLMediaPlayerInfo  from  ml&#95;media&#95;player.h .  |
 
 
 
@@ -54,16 +51,19 @@ public int Extra;
 
 -----------
 
-### Data {#intptr-data}
+### Info {#info-info}
 
-User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
+Type of informational event. 
 
 ```csharp
 
-public IntPtr Data;
+public Info Info;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-info) | Indicates various trigger various media player actions.  MLMediaPlayerInfo  from  ml&#95;media&#95;player.h .  |
 
 
 

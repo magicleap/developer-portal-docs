@@ -36,8 +36,7 @@ This structure must be initialized by calling [MLWorldCameraSettingsInit](/api-r
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 

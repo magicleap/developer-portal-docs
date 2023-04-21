@@ -66,8 +66,7 @@ AR Cloud Mode - A persistent mode in which anchors are persisted in the cloud en
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * Spatial Anchor management is closely tied to the selected mapping mode on the device. The modes are mutually exclusive and affect the functionality of these APIs. The available mapping modes are:
 
 
@@ -113,8 +112,7 @@ SpatialAnchor-specific return codes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -138,8 +136,7 @@ The current localization status.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -162,8 +159,7 @@ The current mapping mode, set via settings.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -187,8 +183,7 @@ A structure containing information about the device's localization state.
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -209,8 +204,7 @@ A structure representing a user-defined Spatial Anchor.
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -231,8 +225,7 @@ A structure used to populate anchor creation info when creating a new Spatial An
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -257,8 +250,7 @@ This struct must be initialized by calling [MLSpatialAnchorQueryFilterInit](/api
 [More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -292,8 +284,7 @@ Initialize default values for [MLSpatialAnchorLocalizationInfo](/api-ref/api/Mod
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -324,8 +315,7 @@ Initialize default values for a [MLSpatialAnchor](/api-ref/api/Modules/group___s
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -356,8 +346,7 @@ Initialize default values for a [MLSpatialAnchorCreateInfo](/api-ref/api/Modules
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -388,8 +377,7 @@ Initializes the default values for a query filter.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -429,8 +417,7 @@ Create a Spatial Anchor tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -469,8 +456,7 @@ Destroy a previously created Spatial Anchor tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -520,8 +506,7 @@ Any unpublished anchor will be lost if the Headpose session is lost. See [MLHead
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -570,8 +555,7 @@ Any unpublished anchor will be lost if the Headpose session is lost. See [MLHead
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -615,8 +599,7 @@ If successful, this will delete the anchor from persistent storage based on the 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -661,8 +644,7 @@ The only property that can currently be updated is the expiration timestamp.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -710,8 +692,7 @@ It is the responsibility of the caller to call [MLSpatialAnchorQueryDestroy](/ap
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -751,8 +732,7 @@ Destroy a previously created query handle and release its associated resources.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -802,8 +782,7 @@ Putting index bounds on the results allows the caller to only receive a subset o
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -844,8 +823,7 @@ Get the current localization status of the device.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

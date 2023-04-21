@@ -33,8 +33,7 @@ title: Media Error
 
 
 
-**Shared Object:
- media_error.magicleap**
+**Shared Object:\n media_error.magicleap**
   * 
 
 

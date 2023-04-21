@@ -35,8 +35,7 @@ A structure containing information about a Magic Leap Space. This structure must
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

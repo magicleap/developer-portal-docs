@@ -239,8 +239,7 @@ Returns an ASCII string for MLResult codes.
 **Return**: ASCII string containing readable version of result code.
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

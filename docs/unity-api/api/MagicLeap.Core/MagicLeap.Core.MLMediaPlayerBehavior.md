@@ -21,31 +21,11 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Fields
 
-### MediaPlayer {#mlmediaplayer-mediaplayer}
-
-MediaPlayer reference 
+### DurationInMiliseconds {#long-durationinmiliseconds}
 
 ```csharp
 
-public MLMedia.Player MediaPlayer { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) | Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file.  |
-
-
-
-
-
------------
-
-### IsSeeking {#bool-isseeking}
-
-```csharp
-
-public bool IsSeeking = false { get; set; }
+public long DurationInMiliseconds = false { get; set; }
 
 ```
 
@@ -71,14 +51,34 @@ public bool IsBuffering { get; set; }
 
 -----------
 
-### DurationInMiliseconds {#long-durationinmiliseconds}
+### IsSeeking {#bool-isseeking}
 
 ```csharp
 
-public long DurationInMiliseconds = false { get; set; }
+public bool IsSeeking = false { get; set; }
 
 ```
 
+
+
+
+
+
+-----------
+
+### MediaPlayer {#mlmediaplayer-mediaplayer}
+
+MediaPlayer reference 
+
+```csharp
+
+public MLMedia.Player MediaPlayer { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) | Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file.  |
 
 
 
@@ -88,12 +88,12 @@ public long DurationInMiliseconds = false { get; set; }
 
 ## Public Methods
 
-### void StopMLMediaPlayer {#void-stopmlmediaplayer}
+### void Pause {#void-pause}
 
-Stops Media Player and destroys it's instance. 
+Pauses the video. 
 
 ```csharp
-public void StopMLMediaPlayer()
+public void Pause()
 ```
 
 
@@ -103,22 +103,43 @@ public void StopMLMediaPlayer()
 
 -----------
 
-### void SeekTo {#void-seekto}
+### void Play {#void-play}
 
-Moves the play head to a specific percentage of the whole duration. 
+Plays the video. 
 
 ```csharp
-public void SeekTo(
-    float ms
-)
+public void Play()
 ```
 
 
-**Parameters**
 
-| Type | Name  | Description  | 
-|--|--|--|
-| float |ms||
+
+
+
+-----------
+
+### void PrepareMLMediaPlayer {#void-preparemlmediaplayer}
+
+Prepares the MLMediaPlayer with a source. 
+
+```csharp
+public void PrepareMLMediaPlayer()
+```
+
+
+
+
+
+
+-----------
+
+### void Reset {#void-reset}
+
+Resets the video. 
+
+```csharp
+public void Reset()
+```
 
 
 
@@ -151,12 +172,58 @@ public void Seek(
 
 -----------
 
-### void Reset {#void-reset}
+### void SeekTo {#void-seekto}
 
-Resets the video. 
+Moves the play head to a specific percentage of the whole duration. 
 
 ```csharp
-public void Reset()
+public void SeekTo(
+    float ms
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| float |ms||
+
+
+
+
+
+
+-----------
+
+### void SelectTrack {#void-selecttrack}
+
+```csharp
+public void SelectTrack(
+    MLMedia.Player.Track track
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+
+
+
+
+
+
+-----------
+
+### void StopMLMediaPlayer {#void-stopmlmediaplayer}
+
+Stops Media Player and destroys it's instance. 
+
+```csharp
+public void StopMLMediaPlayer()
 ```
 
 
@@ -166,43 +233,20 @@ public void Reset()
 
 -----------
 
-### void PrepareMLMediaPlayer {#void-preparemlmediaplayer}
-
-Prepares the MLMediaPlayer with a source. 
+### void UnselectTrack {#void-unselecttrack}
 
 ```csharp
-public void PrepareMLMediaPlayer()
+public void UnselectTrack(
+    MLMedia.Player.Track track
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### void Play {#void-play}
-
-Plays the video. 
-
-```csharp
-public void Play()
-```
-
-
-
-
-
-
------------
-
-### void Pause {#void-pause}
-
-Pauses the video. 
-
-```csharp
-public void Pause()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
 
 
 
@@ -213,26 +257,11 @@ public void Pause()
 
 ## Public Attributes
 
-### source {#string-source}
+### IsPlaying {#bool-isplaying}
 
 ```csharp
 
-public string source;
-
-```
-
-
-
-
-
-
------------
-
-### pathSourceType {#pathsourcetype-pathsourcetype}
-
-```csharp
-
-public PathSourceType pathSourceType;
+public bool IsPlaying => _mediaPlayer is { IsPlaying: true };
 
 ```
 
@@ -258,11 +287,26 @@ public bool IsPrepared => _mediaPlayer is { IsPrepared: true };
 
 -----------
 
-### IsPlaying {#bool-isplaying}
+### pathSourceType {#pathsourcetype-pathsourcetype}
 
 ```csharp
 
-public bool IsPlaying => _mediaPlayer is { IsPlaying: true };
+public PathSourceType pathSourceType;
+
+```
+
+
+
+
+
+
+-----------
+
+### source {#string-source}
+
+```csharp
+
+public string source;
 
 ```
 
@@ -275,166 +319,10 @@ public bool IsPlaying => _mediaPlayer is { IsPlaying: true };
 
 ## Public Events
 
-### OnVideoRendererInitialized {#action-onvideorendererinitialized}
+### OnBufferingUpdate {#action-float-onbufferingupdate}
 
 ```csharp
-public Action< MLNativeSurfaceYcbcrRenderer > OnVideoRendererInitialized()
-```
-
-
-
-
-
-
------------
-
-### OnUpdateTimeline {#action-float-onupdatetimeline}
-
-```csharp
-public Action< float > OnUpdateTimeline()
-```
-
-
-
-
-
-
------------
-
-### OnUpdateElapsedTime {#action-long-onupdateelapsedtime}
-
-```csharp
-public Action< long > OnUpdateElapsedTime()
-```
-
-
-
-
-
-
------------
-
-### OnTrackSelected {#action-ontrackselected}
-
-```csharp
-public Action< MLMedia.Player.Track > OnTrackSelected()
-```
-
-
-
-
-
-
------------
-
-### OnStop {#action-onstop}
-
-```csharp
-public Action OnStop()
-```
-
-
-
-
-
-
------------
-
-### OnSeekComplete {#action-onseekcomplete}
-
-```csharp
-public Action OnSeekComplete()
-```
-
-
-
-
-
-
------------
-
-### OnReset {#action-onreset}
-
-```csharp
-public Action OnReset()
-```
-
-
-
-
-
-
------------
-
-### OnPrepared {#action-onprepared}
-
-```csharp
-public Action OnPrepared()
-```
-
-
-
-
-
-
------------
-
-### OnPlay {#action-onplay}
-
-```csharp
-public Action OnPlay()
-```
-
-
-
-
-
-
------------
-
-### OnPause {#action-onpause}
-
-```csharp
-public Action OnPause()
-```
-
-
-
-
-
-
------------
-
-### OnIsBufferingChanged {#action-bool-onisbufferingchanged}
-
-```csharp
-public Action< bool > OnIsBufferingChanged()
-```
-
-
-
-
-
-
------------
-
-### OnInfo {#action-oninfo}
-
-```csharp
-public Action< MLMedia.Player.Info > OnInfo()
-```
-
-
-
-
-
-
------------
-
-### OnCompletion {#action-oncompletion}
-
-```csharp
-public Action OnCompletion()
+public Action< float > OnBufferingUpdate()
 ```
 
 
@@ -457,10 +345,179 @@ public Action< string > OnCaptionsText()
 
 -----------
 
-### OnBufferingUpdate {#action-float-onbufferingupdate}
+### OnCompletion {#action-oncompletion}
 
 ```csharp
-public Action< float > OnBufferingUpdate()
+public Action OnCompletion()
+```
+
+
+
+
+
+
+-----------
+
+### OnInfo {#action-oninfo}
+
+```csharp
+public Action< MLMedia.Player.Info > OnInfo()
+```
+
+
+
+
+
+
+-----------
+
+### OnIsBufferingChanged {#action-bool-onisbufferingchanged}
+
+```csharp
+public Action< bool > OnIsBufferingChanged()
+```
+
+
+
+
+
+
+-----------
+
+### OnPause {#action-onpause}
+
+```csharp
+public Action OnPause()
+```
+
+
+
+
+
+
+-----------
+
+### OnPlay {#action-onplay}
+
+```csharp
+public Action OnPlay()
+```
+
+
+
+
+
+
+-----------
+
+### OnPrepared {#action-onprepared}
+
+```csharp
+public Action OnPrepared()
+```
+
+
+
+
+
+
+-----------
+
+### OnReset {#action-onreset}
+
+```csharp
+public Action OnReset()
+```
+
+
+
+
+
+
+-----------
+
+### OnSeekComplete {#action-onseekcomplete}
+
+```csharp
+public Action OnSeekComplete()
+```
+
+
+
+
+
+
+-----------
+
+### OnStop {#action-onstop}
+
+```csharp
+public Action OnStop()
+```
+
+
+
+
+
+
+-----------
+
+### OnTrackFound {#action-ontrackfound}
+
+```csharp
+public Action< MLMedia.Player.Track > OnTrackFound()
+```
+
+
+
+
+
+
+-----------
+
+### OnTrackSelected {#action-ontrackselected}
+
+```csharp
+public Action< MLMedia.Player.Track > OnTrackSelected()
+```
+
+
+
+
+
+
+-----------
+
+### OnUpdateElapsedTime {#action-long-onupdateelapsedtime}
+
+```csharp
+public Action< long > OnUpdateElapsedTime()
+```
+
+
+
+
+
+
+-----------
+
+### OnUpdateTimeline {#action-float-onupdatetimeline}
+
+```csharp
+public Action< float > OnUpdateTimeline()
+```
+
+
+
+
+
+
+-----------
+
+### OnVideoRendererInitialized {#action-onvideorendererinitialized}
+
+```csharp
+public Action< MLNativeSurfaceYcbcrRenderer > OnVideoRendererInitialized()
 ```
 
 

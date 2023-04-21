@@ -73,8 +73,7 @@ Creates a trait analysis, initializes its connection to the device microphones a
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -116,8 +115,7 @@ Returns the current value of the trait analysis associated with the specified ha
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -158,8 +156,7 @@ Stops the analysis associated with the specified handle.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -206,8 +203,7 @@ Creates a spectral analysis, initializes its connection to the device microphone
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -251,8 +247,7 @@ Allocates memory at out_values->values based on the MLAudioSpectralAnalysisTarge
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -293,8 +288,7 @@ Stops the analysis associated with the specified handle.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

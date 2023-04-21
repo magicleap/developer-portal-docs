@@ -17,13 +17,13 @@ Response structure for the mesh block info.
 
 ## Public Attributes
 
-### timestamp {#long-timestamp}
+### data {#intptr-data}
 
-The response timestamp to a earlier request. 
+The meshinfo returned by the system. 
 
 ```csharp
 
-public long timestamp;
+public IntPtr data;
 
 ```
 
@@ -51,13 +51,13 @@ public uint dataCount;
 
 -----------
 
-### data {#intptr-data}
+### timestamp {#long-timestamp}
 
-The meshinfo returned by the system. 
+The response timestamp to a earlier request. 
 
 ```csharp
 
-public IntPtr data;
+public long timestamp;
 
 ```
 

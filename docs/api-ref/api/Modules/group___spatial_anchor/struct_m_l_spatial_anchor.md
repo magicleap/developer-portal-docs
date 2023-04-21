@@ -37,8 +37,7 @@ A structure representing a user-defined Spatial Anchor.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -38,50 +38,19 @@ public static MLCameraDeviceStatusCallbacks Create()
 
 ## Public Attributes
 
-### Version {#uint-version}
+### OnDeviceDisconnected {#ondevicedisconnecteddelegate-ondevicedisconnected}
 
-Version contains the version number for this structure. 
-
-```csharp
-
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### OnDeviceStreaming {#ondevicestreamingdelegate-ondevicestreaming}
-
-Callback is invoked when the camera is streaming. 
+Callback is invoked when the camera is disconnected. 
 
 ```csharp
 
-public OnDeviceStreamingDelegate OnDeviceStreaming;
+public OnDeviceDisconnectedDelegate OnDeviceDisconnected;
 
 ```
 
-
-
-
-
-
------------
-
-### OnDeviceIdle {#ondeviceidledelegate-ondeviceidle}
-
-Callback is invoked when the camera stops streaming. 
-
-```csharp
-
-public OnDeviceIdleDelegate OnDeviceIdle;
-
-```
-
+| Type | Description  | 
+|--|--|
+| [OnDeviceDisconnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondevicedisconnecteddelegate) | Delegate to notify the app when the camera device disconnects.  |
 
 
 
@@ -109,19 +78,50 @@ public OnDeviceErrorDelegate OnDeviceError;
 
 -----------
 
-### OnDeviceDisconnected {#ondevicedisconnecteddelegate-ondevicedisconnected}
+### OnDeviceIdle {#ondeviceidledelegate-ondeviceidle}
 
-Callback is invoked when the camera is disconnected. 
+Callback is invoked when the camera stops streaming. 
 
 ```csharp
 
-public OnDeviceDisconnectedDelegate OnDeviceDisconnected;
+public OnDeviceIdleDelegate OnDeviceIdle;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnDeviceDisconnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondevicedisconnecteddelegate) | Delegate to notify the app when the camera device disconnects.  |
+
+
+
+
+
+-----------
+
+### OnDeviceStreaming {#ondevicestreamingdelegate-ondevicestreaming}
+
+Callback is invoked when the camera is streaming. 
+
+```csharp
+
+public OnDeviceStreamingDelegate OnDeviceStreaming;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+Version contains the version number for this structure. 
+
+```csharp
+
+public uint Version;
+
+```
+
 
 
 

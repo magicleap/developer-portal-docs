@@ -197,16 +197,25 @@ namespace UnityEngine.XR.MagicLeap
         {
             public static MLResult Create(Pose pose, long expirationSeconds, out Anchor anchor)
             {
-                var maxExpirationSeconds = (long)DateTime.MaxValue.Subtract(DateTime.UtcNow).TotalSeconds;
-                var clampedExpirationSeconds = Math.Clamp(expirationSeconds, 0, maxExpirationSeconds);
-
-                var unixTimestamp = (DateTime.UtcNow.AddSeconds(clampedExpirationSeconds)).Subtract(DateTime.UnixEpoch).TotalSeconds;
+                anchor = new Anchor();
+                
+                if (expirationSeconds < 0)
+                    return MLResult.Create(MLResult.Code.InvalidParam,
+                        "The expirationSeconds parameter was a negative number and should be positive or 0.");
+                
+                double unixTimestamp = 0;
+                if (expirationSeconds > 0)
+                {
+                    var maxExpirationSeconds = (long)DateTime.MaxValue.Subtract(DateTime.UtcNow).TotalSeconds;
+                    var clampedExpirationSeconds = Math.Clamp(expirationSeconds, 0, maxExpirationSeconds);
+                    
+                    unixTimestamp = (DateTime.UtcNow.AddSeconds(clampedExpirationSeconds)).Subtract(DateTime.UnixEpoch).TotalSeconds;
+                }
+                
                 var createInfo = new NativeBindings.MLSpatialAnchorCreateInfo(pose, (ulong)unixTimestamp);
                 var resultCode = MLAnchors.Instance.CreateAnchor(createInfo, out NativeBindings.MLSpatialAnchor nativeAnchor);
                 anchor = new Anchor(nativeAnchor);
-                return expirationSeconds < 0
-                    ? MLResult.Create(MLResult.Code.InvalidParam, "The expirationSeconds parameter was a negative number and should be positive or 0.")
-                    : MLResult.Create(resultCode);
+                return MLResult.Create(resultCode);
             }
 
             public static MLResult DeleteAnchorWithId(string anchorId)
@@ -287,11 +296,7 @@ namespace UnityEngine.XR.MagicLeap
                 return this.Id.GetHashCode();
             }
 
-            public override string ToString() => $"id: {Id},
-Pose: {Pose},
-ExpirationTimeStamp: {ExpirationTimeStamp},
-IsPersisted: {IsPersisted},
-SpaceId: {SpaceId}";
+            public override string ToString() => $"id: {Id},\nPose: {Pose},\nExpirationTimeStamp: {ExpirationTimeStamp},\nIsPersisted: {IsPersisted},\nSpaceId: {SpaceId}";
         }
 
         public readonly struct LocalizationInfo
@@ -323,12 +328,7 @@ SpaceId: {SpaceId}";
 
             }
 
-            public override string ToString() => $"LocalizationStatus: {this.LocalizationStatus},
-MappingMode: {this.MappingMode},
-SpaceName: {this.SpaceName},
-SpaceId: {this.SpaceId}, 
-SpaceOriginId: {this.spaceOrigin}, 
-SpaceOrigin: {this.SpaceOrigin}";
+            public override string ToString() => $"LocalizationStatus: {this.LocalizationStatus},\nMappingMode: {this.MappingMode},\nSpaceName: {this.SpaceName},\nSpaceId: {this.SpaceId}, \nSpaceOriginId: {this.spaceOrigin}, \nSpaceOrigin: {this.SpaceOrigin}";
 
         }
     }

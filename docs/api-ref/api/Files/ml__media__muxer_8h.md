@@ -66,8 +66,7 @@ Use [MLMediaMuxerGetSupportedOutputFormats](/api-ref/api/Modules/group___media_p
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -91,8 +90,7 @@ Data type that encapsulates sample data to be written in to MLMediaMuxer.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -156,8 +154,7 @@ Create a MLMediaMuxer instance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -196,8 +193,7 @@ Release the MLMediaMuxer instance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -242,8 +238,7 @@ User doesn't own the memory/buffer returned from this API and MUST NOT be freein
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -290,8 +285,7 @@ User doesn't own the memory/buffer returned from this API and MUST NOT be freein
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -336,8 +330,7 @@ Configure the MLMediaMuxer for a given Output format with output path.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -418,8 +411,7 @@ With Ogg container, only supported mime is "audio/opus".
 
 If a mime passed through the MLMediaFormat is not supported, it will return MLMediaResult_Unsupported.
 
-API Level:
- 20
+API Level:\n 20
 
 media_muxerHandle to the MLMediaMuxer instance. 
 
@@ -485,8 +477,7 @@ Note that some video players may choose to ignore the composition matrix in a vi
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -534,8 +525,7 @@ The geodata is stored in udta box if the output format is MLMediaMuxerOutputForm
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -577,8 +567,7 @@ Make sure all the tracks have been added ([MLMediaMuxerAddTrack](/api-ref/api/Mo
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -626,8 +615,7 @@ The buffer can be reused once this method returns.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -669,8 +657,7 @@ Once the muxer stops, it can not be restarted.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -44,8 +44,7 @@ Cue orientation setting.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -69,8 +68,7 @@ Cue direction setting.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -96,8 +94,7 @@ Cue aligment setting.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -121,8 +118,7 @@ WebVTT data structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 

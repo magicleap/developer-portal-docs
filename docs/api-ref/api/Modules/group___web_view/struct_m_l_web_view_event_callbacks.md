@@ -48,8 +48,7 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 

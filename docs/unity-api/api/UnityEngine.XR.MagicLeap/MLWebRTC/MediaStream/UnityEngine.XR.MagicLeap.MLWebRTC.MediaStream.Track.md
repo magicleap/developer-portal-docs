@@ -19,19 +19,16 @@ Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource](/uni
 
 ## Public Fields
 
-### TrackType {#type-tracktype}
+### Id {#string-id}
 
-Gets the string that determines the type of track this is. 
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) name 
 
 ```csharp
 
-public Type TrackType { get; set; }
+public string Id { get; set; }
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-type) | Defines the types of tracks that can exist.  |
 
 
 
@@ -39,19 +36,16 @@ public Type TrackType { get; set; }
 
 -----------
 
-### Streams {#list-streams}
+### IsLocal {#bool-islocal}
 
-Gets the list of streams associated with this track. 
+Gets or sets a value indicating whether the track is local or not. 
 
 ```csharp
 
-public List< MediaStream > Streams { get; set; }
+public bool IsLocal { get; set; }
 
 ```
 
-| Type | Description  | 
-|--|--|
-| List&lt; [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) &gt; | Class that represents a media stream object.  |
 
 
 
@@ -79,16 +73,19 @@ public MLWebRTC.PeerConnection ParentConnection { get; set; }
 
 -----------
 
-### IsLocal {#bool-islocal}
+### Streams {#list-streams}
 
-Gets or sets a value indicating whether the track is local or not. 
+Gets the list of streams associated with this track. 
 
 ```csharp
 
-public bool IsLocal { get; set; }
+public List< MediaStream > Streams { get; set; }
 
 ```
 
+| Type | Description  | 
+|--|--|
+| List&lt; [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) &gt; | Class that represents a media stream object.  |
 
 
 
@@ -96,16 +93,19 @@ public bool IsLocal { get; set; }
 
 -----------
 
-### Id {#string-id}
+### TrackType {#type-tracktype}
 
-[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) name 
+Gets the string that determines the type of track this is. 
 
 ```csharp
 
-public string Id { get; set; }
+public Type TrackType { get; set; }
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-type) | Defines the types of tracks that can exist.  |
 
 
 
@@ -115,90 +115,12 @@ public string Id { get; set; }
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetEnabled {#mlresult-setenabled}
+### [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) CreateAudioTrackFromMicrophone {#track-createaudiotrackfrommicrophone}
 
-Sets a track to be enabled or disabled. 
-
-```csharp
-public MLResult SetEnabled(
-    bool isEnabled
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |isEnabled|True if the track should be enabled.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetEnabled {#mlresult-getenabled}
-
-Gets if a track is currently enabled or not. 
+Creates an initialized [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) object. 
 
 ```csharp
-public MLResult GetEnabled(
-    out bool isEnabled
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out bool |isEnabled|True if the track is enabled.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) DestroyLocal {#mlresult-destroylocal}
-
-Destroys the [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) and its associated media source. 
-
-```csharp
-public virtual MLResult DestroyLocal()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
-
-**Reimplemented by**: [DestroyLocal](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md#override-destroylocal), [DestroyLocal](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md#override-destroylocal)
-
-
-
------------
-
-### [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) CreateVideoTrack {#track-createvideotrack}
-
-Creates an initialized [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) object. Recommended to use app defined video sources in production, with sample sources provided as [MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md) and MLMRCameraVideoSource in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over various error cases and handle special cases like app pause/resume and device standby/reality/active. 
-
-```csharp
-public static Track CreateVideoTrack(
-    VideoType videoType,
+public static Track CreateAudioTrackFromMicrophone(
     out MLResult result,
     string trackId =""
 )
@@ -209,9 +131,8 @@ public static Track CreateVideoTrack(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [VideoType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-videotype) |videoType|The type of video source to use.|
 | out [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) object of the inner platform call(s).|
-| string |inputContext|The InputContext object to start the MLMRCamera API with.|
+| string |trackId||
 
 
 
@@ -254,12 +175,13 @@ public static Track CreateAudioTrackFromSource(
 
 -----------
 
-### [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) CreateAudioTrackFromMicrophone {#track-createaudiotrackfrommicrophone}
+### [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) CreateVideoTrack {#track-createvideotrack}
 
-Creates an initialized [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) object. 
+Creates an initialized [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) object. Recommended to use app defined video sources in production, with sample sources provided as [MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md) and MLMRCameraVideoSource in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over various error cases and handle special cases like app pause/resume and device standby/reality/active. 
 
 ```csharp
-public static Track CreateAudioTrackFromMicrophone(
+public static Track CreateVideoTrack(
+    VideoType videoType,
     out MLResult result,
     string trackId =""
 )
@@ -270,8 +192,9 @@ public static Track CreateAudioTrackFromMicrophone(
 
 | Type | Name  | Description  | 
 |--|--|--|
+| [VideoType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-videotype) |videoType|The type of video source to use.|
 | out [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) object of the inner platform call(s).|
-| string |trackId||
+| string |inputContext|The InputContext object to start the MLMRCamera API with.|
 
 
 
@@ -284,7 +207,129 @@ public static Track CreateAudioTrackFromMicrophone(
 
 -----------
 
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) DestroyLocal {#mlresult-destroylocal}
+
+Destroys the [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) and its associated media source. 
+
+```csharp
+public virtual MLResult DestroyLocal()
+```
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
+
+**Reimplemented by**: [DestroyLocal](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md#override-destroylocal), [DestroyLocal](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md#override-destroylocal)
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetEnabled {#mlresult-getenabled}
+
+Gets if a track is currently enabled or not. 
+
+```csharp
+public MLResult GetEnabled(
+    out bool isEnabled
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out bool |isEnabled|True if the track is enabled.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetEnabled {#mlresult-setenabled}
+
+Sets a track to be enabled or disabled. 
+
+```csharp
+public MLResult SetEnabled(
+    bool isEnabled
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |isEnabled|True if the track should be enabled.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
+
+
+
+-----------
+
 ## Protected Methods
+
+### HandleDeviceActive {#void-handledeviceactive}
+
+Sets this track to enabled during the lifecycle active event. Override for custom behavior. 
+
+```csharp
+protected virtual void HandleDeviceActive()
+```
+
+
+
+
+
+
+-----------
+
+### HandleDeviceReality {#void-handledevicereality}
+
+Disables this track during the lifecycle reality events. Override for custom behavior. 
+
+```csharp
+protected virtual void HandleDeviceReality()
+```
+
+
+
+
+
+
+-----------
+
+### HandleDeviceStandby {#void-handledevicestandby}
+
+Disables this track during the lifecycle standby event. Override for custom behavior. 
+
+```csharp
+protected virtual void HandleDeviceStandby()
+```
+
+
+
+
+
+
+-----------
 
 ### OnApplicationPause {#void-onapplicationpause}
 
@@ -312,51 +357,6 @@ protected virtual void OnApplicationPause(
 
 -----------
 
-### HandleDeviceStandby {#void-handledevicestandby}
-
-Disables this track during the lifecycle standby event. Override for custom behavior. 
-
-```csharp
-protected virtual void HandleDeviceStandby()
-```
-
-
-
-
-
-
------------
-
-### HandleDeviceReality {#void-handledevicereality}
-
-Disables this track during the lifecycle reality events. Override for custom behavior. 
-
-```csharp
-protected virtual void HandleDeviceReality()
-```
-
-
-
-
-
-
------------
-
-### HandleDeviceActive {#void-handledeviceactive}
-
-Sets this track to enabled during the lifecycle active event. Override for custom behavior. 
-
-```csharp
-protected virtual void HandleDeviceActive()
-```
-
-
-
-
-
-
------------
-
 ## Protected Attributes
 
 ### wasEnabledBeforeLifecycleStateChange {#bool-wasenabledbeforelifecyclestatechange}
@@ -378,16 +378,15 @@ protected bool wasEnabledBeforeLifecycleStateChange = false;
 
 ## Public Enums
 
-### VideoType {#enums-videotype}
+### AudioType {#enums-audiotype}
 
-Defines the natively supported video types. It is recommended to use app defined video sources in production, with sample sources provided as [MLWebRTC.MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md) in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over the camera configuration. 
+Defines the natively supported audio types. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | | No video source.   |
-| MLCamera | | Natively uses [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) as video source.   |
-| MLMRCamera | | Natively uses MLMRCamera as video source.   |
-| VirtualOnly | | Natively uses VirtualOnly as video source.   |
+| None | | No audio source.   |
+| Microphone | | Natively uses Microphone as audio source.   |
+| Defined | | Uses a custom audio source.   |
 
 
 
@@ -416,15 +415,16 @@ Defines the types of tracks that can exist.
 
 -----------
 
-### AudioType {#enums-audiotype}
+### VideoType {#enums-videotype}
 
-Defines the natively supported audio types. 
+Defines the natively supported video types. It is recommended to use app defined video sources in production, with sample sources provided as [MLWebRTC.MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md) in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over the camera configuration. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | | No audio source.   |
-| Microphone | | Natively uses Microphone as audio source.   |
-| Defined | | Uses a custom audio source.   |
+| None | | No video source.   |
+| MLCamera | | Natively uses [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) as video source.   |
+| MLMRCamera | | Natively uses MLMRCamera as video source.   |
+| VirtualOnly | | Natively uses VirtualOnly as video source.   |
 
 
 

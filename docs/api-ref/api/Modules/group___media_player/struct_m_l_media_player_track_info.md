@@ -33,8 +33,7 @@ MediaPlayer Track Information.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 

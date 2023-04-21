@@ -38,13 +38,13 @@ public static IntentSettings Create()
 
 ## Public Attributes
 
-### Version {#uint-version}
+### AppIntent {#string-appintent}
 
-Version of the struct. 
+The C string carrying app intent made by JSON format, which is UTF-8 and null terminated. The app intent should contain pre-defined fields, names, and values. Memory of this variable is managed by user. 
 
 ```csharp
 
-public uint Version;
+public string AppIntent;
 
 ```
 
@@ -55,13 +55,13 @@ public uint Version;
 
 -----------
 
-### AppIntent {#string-appintent}
+### Version {#uint-version}
 
-The C string carrying app intent made by JSON format, which is UTF-8 and null terminated. The app intent should contain pre-defined fields, names, and values. Memory of this variable is managed by user. 
+Version of the struct. 
 
 ```csharp
 
-public string AppIntent;
+public uint Version;
 
 ```
 

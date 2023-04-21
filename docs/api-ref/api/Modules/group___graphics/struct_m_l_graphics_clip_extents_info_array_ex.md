@@ -39,8 +39,7 @@ This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExI
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 

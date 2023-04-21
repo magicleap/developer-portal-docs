@@ -43,62 +43,13 @@ public MLInputBuzzCommand(
 
 ## Public Attributes
 
-### typeStatic {#fourcc-typestatic}
+### Amplitude {#readonly-byte-amplitude}
+
+amplitude of the buzz command, as a percentage (0 - 100). 
 
 ```csharp
 
-public FourCC typeStatic => commandType;
-
-```
-
-
-
-
-
-
------------
-
-### Version {#readonly-uint-version}
-
-Version of this structure. 
-
-```csharp
-
-public readonly uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### StartHz {#readonly-ushort-starthz}
-
-Start frequency of the buzz command (0 - 1250). 
-
-```csharp
-
-public readonly ushort StartHz;
-
-```
-
-
-
-
-
-
------------
-
-### EndHz {#readonly-ushort-endhz}
-
-End frequency of the buzz command (0 - 1250). 
-
-```csharp
-
-public readonly ushort EndHz;
+public readonly byte Amplitude;
 
 ```
 
@@ -126,13 +77,62 @@ public readonly uint DurationMs;
 
 -----------
 
-### Amplitude {#readonly-byte-amplitude}
+### EndHz {#readonly-ushort-endhz}
 
-amplitude of the buzz command, as a percentage (0 - 100). 
+End frequency of the buzz command (0 - 1250). 
 
 ```csharp
 
-public readonly byte Amplitude;
+public readonly ushort EndHz;
+
+```
+
+
+
+
+
+
+-----------
+
+### StartHz {#readonly-ushort-starthz}
+
+Start frequency of the buzz command (0 - 1250). 
+
+```csharp
+
+public readonly ushort StartHz;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#readonly-uint-version}
+
+Version of this structure. 
+
+```csharp
+
+public readonly uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### typeStatic {#fourcc-typestatic}
+
+```csharp
+
+public FourCC typeStatic => commandType;
 
 ```
 

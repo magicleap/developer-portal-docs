@@ -31,47 +31,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### Width {#uint-width}
+### Height {#uint-height}
 
-Width of the native frame 
-
-```csharp
-
-public uint Width;
-
-```
-
-
-
-
-
-
------------
-
-### Transform {#float-transform}
-
-The 4x4 column-major tranformation matrix for the native frame 
+Height of the native frame 
 
 ```csharp
 
-public float [] Transform;
-
-```
-
-
-
-
-
-
------------
-
-### SurfaceHandle {#ulong-surfacehandle}
-
-Surface handle, from which native handle is acquired Surface handle can be created using MLNativeSurfaceCreate 
-
-```csharp
-
-public ulong SurfaceHandle;
+public uint Height;
 
 ```
 
@@ -99,13 +65,47 @@ public ulong NativeBufferHandle;
 
 -----------
 
-### Height {#uint-height}
+### SurfaceHandle {#ulong-surfacehandle}
 
-Height of the native frame 
+Surface handle, from which native handle is acquired Surface handle can be created using MLNativeSurfaceCreate 
 
 ```csharp
 
-public uint Height;
+public ulong SurfaceHandle;
+
+```
+
+
+
+
+
+
+-----------
+
+### Transform {#float-transform}
+
+The 4x4 column-major tranformation matrix for the native frame 
+
+```csharp
+
+public float [] Transform;
+
+```
+
+
+
+
+
+
+-----------
+
+### Width {#uint-width}
+
+Width of the native frame 
+
+```csharp
+
+public uint Width;
 
 ```
 

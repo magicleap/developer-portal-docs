@@ -40,30 +40,13 @@ public override bool Equals(
 
 ## Public Attributes
 
-### r {#uint-r}
+### a {#uint-a}
 
 VkComponentSwizzle 
 
 ```csharp
 
-public uint r;
-
-```
-
-
-
-
-
-
------------
-
-### g {#uint-g}
-
-VkComponentSwizzle 
-
-```csharp
-
-public uint g;
+public uint a;
 
 ```
 
@@ -91,13 +74,30 @@ public uint b;
 
 -----------
 
-### a {#uint-a}
+### g {#uint-g}
 
 VkComponentSwizzle 
 
 ```csharp
 
-public uint a;
+public uint g;
+
+```
+
+
+
+
+
+
+-----------
+
+### r {#uint-r}
+
+VkComponentSwizzle 
+
+```csharp
+
+public uint r;
 
 ```
 

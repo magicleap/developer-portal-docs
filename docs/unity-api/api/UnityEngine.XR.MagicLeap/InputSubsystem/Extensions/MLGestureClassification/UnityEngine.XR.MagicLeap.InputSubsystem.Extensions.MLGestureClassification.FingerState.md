@@ -17,50 +17,13 @@ Gesture classification state of a single finger.
 
 ## Public Attributes
 
-### PostureData {#posturefingerdata-posturedata}
+### AngleToPalm {#float-angletopalm}
 
-Gesture classification posture related finger data. 
-
-```csharp
-
-public PostureFingerData PostureData;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [PostureFingerData](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.PostureFingerData.md) | Gesture classification posture related finger data.  |
-
-
-
-
-
------------
-
-### NormalizedExtension {#float-normalizedextension}
-
-State of finger extension range 0.0 to 1.0. (0.0 folded, 1.0 fully extended) 
+Absolute angle to palm (angular). -1.0 if the value is not valid. 
 
 ```csharp
 
-public float NormalizedExtension;
-
-```
-
-
-
-
-
-
------------
-
-### LengthM {#float-lengthm}
-
-Finger length in meters. 
-
-```csharp
-
-public float LengthM;
+public float AngleToPalm;
 
 ```
 
@@ -88,16 +51,53 @@ public bool IsExtended;
 
 -----------
 
-### AngleToPalm {#float-angletopalm}
+### LengthM {#float-lengthm}
 
-Absolute angle to palm (angular). -1.0 if the value is not valid. 
+Finger length in meters. 
 
 ```csharp
 
-public float AngleToPalm;
+public float LengthM;
 
 ```
 
+
+
+
+
+
+-----------
+
+### NormalizedExtension {#float-normalizedextension}
+
+State of finger extension range 0.0 to 1.0. (0.0 folded, 1.0 fully extended) 
+
+```csharp
+
+public float NormalizedExtension;
+
+```
+
+
+
+
+
+
+-----------
+
+### PostureData {#posturefingerdata-posturedata}
+
+Gesture classification posture related finger data. 
+
+```csharp
+
+public PostureFingerData PostureData;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [PostureFingerData](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.PostureFingerData.md) | Gesture classification posture related finger data.  |
 
 
 

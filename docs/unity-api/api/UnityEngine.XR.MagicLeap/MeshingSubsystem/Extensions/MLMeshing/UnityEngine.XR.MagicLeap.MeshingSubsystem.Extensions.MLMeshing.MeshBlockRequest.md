@@ -42,6 +42,23 @@ public MeshBlockRequest(
 
 ## Public Attributes
 
+### id {#readonly-string-id}
+
+The id to represent the block to be requested. 
+
+```csharp
+
+public readonly string id;
+
+```
+
+
+
+
+
+
+-----------
+
 ### levelOfDetail {#readonly-levelofdetail}
 
 The LOD level to request. 
@@ -55,23 +72,6 @@ public readonly LevelOfDetail levelOfDetail;
 | Type | Description  | 
 |--|--|
 | readonly [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) | Level of detail of the block mesh.  |
-
-
-
-
-
------------
-
-### id {#readonly-string-id}
-
-The id to represent the block to be requested. 
-
-```csharp
-
-public readonly string id;
-
-```
-
 
 
 

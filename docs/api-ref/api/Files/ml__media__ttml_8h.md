@@ -55,8 +55,7 @@ Cue text alignment within the cue box.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -80,8 +79,7 @@ Cue line type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -106,8 +104,7 @@ Cue anchor type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -132,8 +129,7 @@ Cue text size type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -157,8 +153,7 @@ Byte data for TTML image cues.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_image.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -179,8 +174,7 @@ TTML data structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -203,8 +197,7 @@ An unset position, width or size which is negative of maximum finite value of fl
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

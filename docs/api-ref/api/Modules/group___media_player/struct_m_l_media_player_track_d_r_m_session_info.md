@@ -35,8 +35,7 @@ DRM Session information for a MediaPlayer Track.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 

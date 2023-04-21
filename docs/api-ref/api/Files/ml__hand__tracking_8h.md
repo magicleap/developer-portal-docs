@@ -125,8 +125,7 @@ The index ordering of 28 keypoints exposed in array keypoints_mask[MLHandTrackin
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -152,8 +151,7 @@ See [MLHandTrackingKeyPoint](/api-ref/api/Modules/group___hand_tracking/group___
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -176,8 +174,7 @@ This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -198,8 +195,7 @@ State of a single hand.
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -222,8 +218,7 @@ This structure must be initialized by calling [MLHandTrackingDataInit()](/api-re
 [More Info](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -252,8 +247,7 @@ Initializes default values for [MLHandTrackingStaticData](/api-ref/api/Modules/g
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -279,8 +273,7 @@ Initializes values for [MLHandTrackingData](/api-ref/api/Modules/group___hand_tr
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -389,8 +382,7 @@ Queries the state of the hand tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -433,8 +425,7 @@ See [MLHandTrackingStaticData](/api-ref/api/Modules/group___hand_tracking/struct
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -19,11 +19,11 @@ title: NativeLoader
 
 ## Public Methods
 
-### IntPtr LoadLibrary {#intptr-loadlibrary}
+### bool FreeLibrary {#bool-freelibrary}
 
 ```csharp
-public IntPtr LoadLibrary(
-    string lpFileName
+public bool FreeLibrary(
+    IntPtr hModule
 )
 ```
 
@@ -32,7 +32,7 @@ public IntPtr LoadLibrary(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |lpFileName||
+| IntPtr |hModule||
 
 
 
@@ -65,11 +65,11 @@ public IntPtr GetProcAddress(
 
 -----------
 
-### bool FreeLibrary {#bool-freelibrary}
+### IntPtr LoadLibrary {#intptr-loadlibrary}
 
 ```csharp
-public bool FreeLibrary(
-    IntPtr hModule
+public IntPtr LoadLibrary(
+    string lpFileName
 )
 ```
 
@@ -78,7 +78,7 @@ public bool FreeLibrary(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| IntPtr |hModule||
+| string |lpFileName||
 
 
 

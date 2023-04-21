@@ -38,19 +38,16 @@ public static MagicLeapXrProviderDebugUtils Create()
 
 ## Public Attributes
 
-### OnDebugMessage {#ondebugmessagedelegate-ondebugmessage}
+### Context {#intptr-context}
 
-The callback for when a debug message is received. 
+Pointer to a context object. 
 
 ```csharp
 
-public OnDebugMessageDelegate OnDebugMessage;
+public IntPtr Context;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnDebugMessageDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.md#delegate-void-ondebugmessagedelegate) | Delegate describing the callback necessary to monitor when an debug message is received.  |
 
 
 
@@ -75,16 +72,19 @@ public LogLevel LogLevel;
 
 -----------
 
-### Context {#intptr-context}
+### OnDebugMessage {#ondebugmessagedelegate-ondebugmessage}
 
-Pointer to a context object. 
+The callback for when a debug message is received. 
 
 ```csharp
 
-public IntPtr Context;
+public OnDebugMessageDelegate OnDebugMessage;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnDebugMessageDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.md#delegate-void-ondebugmessagedelegate) | Delegate describing the callback necessary to monitor when an debug message is received.  |
 
 
 

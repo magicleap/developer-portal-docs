@@ -35,8 +35,7 @@ This structure must be initialized by calling [MLWebViewProcessSettingsInit](/ap
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 

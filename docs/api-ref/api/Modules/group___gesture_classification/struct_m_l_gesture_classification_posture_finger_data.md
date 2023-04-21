@@ -37,8 +37,7 @@ Pinch values are measured between the finger and thumb. In case thumb is the fin
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -16,64 +16,13 @@ title: PlanesQuery
 
 ## Public Attributes
 
-### MinPlaneArea {#float-minplanearea}
+### BoundsCenter {#vector3-boundscenter}
 
-The minimum area (in squared meters) of planes to be returned. This value cannot be lower than 0.04 (lower values will be capped to this minimum). 
-
-```csharp
-
-public float MinPlaneArea;
-
-```
-
-
-
-
-
-
------------
-
-### MaxResults {#uint-maxresults}
-
-The maximum number of results that should be returned. 
+The center of the bounding box which defines where planes extraction should occur. 
 
 ```csharp
 
-public uint MaxResults;
-
-```
-
-
-
-
-
-
------------
-
-### Flags {#planessubsystemextensionsmlplanesqueryflags-flags}
-
-The flags to apply to this query. 
-
-```csharp
-
-public PlanesSubsystem.Extensions.MLPlanesQueryFlags Flags;
-
-```
-
-
-
-
-
-
------------
-
-### BoundsRotation {#quaternion-boundsrotation}
-
-The rotation of the bounding box where planes extraction will occur. 
-
-```csharp
-
-public Quaternion BoundsRotation;
+public Vector3 BoundsCenter;
 
 ```
 
@@ -101,13 +50,64 @@ public Vector3 BoundsExtents;
 
 -----------
 
-### BoundsCenter {#vector3-boundscenter}
+### BoundsRotation {#quaternion-boundsrotation}
 
-The center of the bounding box which defines where planes extraction should occur. 
+The rotation of the bounding box where planes extraction will occur. 
 
 ```csharp
 
-public Vector3 BoundsCenter;
+public Quaternion BoundsRotation;
+
+```
+
+
+
+
+
+
+-----------
+
+### Flags {#planessubsystemextensionsmlplanesqueryflags-flags}
+
+The flags to apply to this query. 
+
+```csharp
+
+public PlanesSubsystem.Extensions.MLPlanesQueryFlags Flags;
+
+```
+
+
+
+
+
+
+-----------
+
+### MaxResults {#uint-maxresults}
+
+The maximum number of results that should be returned. 
+
+```csharp
+
+public uint MaxResults;
+
+```
+
+
+
+
+
+
+-----------
+
+### MinPlaneArea {#float-minplanearea}
+
+The minimum area (in squared meters) of planes to be returned. This value cannot be lower than 0.04 (lower values will be capped to this minimum). 
+
+```csharp
+
+public float MinPlaneArea;
 
 ```
 

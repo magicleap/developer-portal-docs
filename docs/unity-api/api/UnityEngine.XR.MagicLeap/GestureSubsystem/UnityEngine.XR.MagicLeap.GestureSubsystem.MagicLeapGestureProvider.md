@@ -18,36 +18,10 @@ Inherits from: <br></br>Provider
 
 ## Public Methods
 
-### override void Update {#override-void-update}
+### override void Destroy {#override-void-destroy}
 
 ```csharp
-public override void Update()
-```
-
-
-
-
-
-
------------
-
-### override void Stop {#override-void-stop}
-
-```csharp
-public override void Stop()
-```
-
-
-
-
-
-
------------
-
-### override void Start {#override-void-start}
-
-```csharp
-public override void Start()
+public override void Destroy()
 ```
 
 
@@ -70,10 +44,36 @@ public MagicLeapGestureProvider()
 
 -----------
 
-### override void Destroy {#override-void-destroy}
+### override void Start {#override-void-start}
 
 ```csharp
-public override void Destroy()
+public override void Start()
+```
+
+
+
+
+
+
+-----------
+
+### override void Stop {#override-void-stop}
+
+```csharp
+public override void Stop()
+```
+
+
+
+
+
+
+-----------
+
+### override void Update {#override-void-update}
+
+```csharp
+public override void Update()
 ```
 
 

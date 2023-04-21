@@ -17,13 +17,98 @@ Class that represents an ice server used by the [MLWebRTC](/unity-api/api/UnityE
 
 ## Public Fields
 
-### Username {#string-username}
+### AutoConfigUrl {#string-autoconfigurl}
 
-Gets the username to authenticate the proxy server. 
+Gets url to use for downloading proxy config. 
 
 ```csharp
 
-public string Username { get; set; }
+public string AutoConfigUrl { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### AutoDetect {#bool-autodetect}
+
+Whether the proxy will be auto-detected. 
+
+```csharp
+
+public bool AutoDetect { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### BypassList {#string-bypasslist}
+
+Gets urls which should bypass the proxy. 
+
+```csharp
+
+public string BypassList { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### HostAddress {#string-hostaddress}
+
+Gets the proxy server address. 
+
+```csharp
+
+public string HostAddress { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### HostPort {#int-hostport}
+
+Gets the proxy server port. 
+
+```csharp
+
+public int HostPort { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### Password {#string-password}
+
+Gets the password to authenticate the proxy server. 
+
+```csharp
+
+public string Password { get; set; }
 
 ```
 
@@ -54,98 +139,13 @@ public ProxyType Type { get; set; }
 
 -----------
 
-### Password {#string-password}
+### Username {#string-username}
 
-Gets the password to authenticate the proxy server. 
-
-```csharp
-
-public string Password { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### HostPort {#int-hostport}
-
-Gets the proxy server port. 
+Gets the username to authenticate the proxy server. 
 
 ```csharp
 
-public int HostPort { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### HostAddress {#string-hostaddress}
-
-Gets the proxy server address. 
-
-```csharp
-
-public string HostAddress { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### BypassList {#string-bypasslist}
-
-Gets urls which should bypass the proxy. 
-
-```csharp
-
-public string BypassList { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### AutoDetect {#bool-autodetect}
-
-Whether the proxy will be auto-detected. 
-
-```csharp
-
-public bool AutoDetect { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### AutoConfigUrl {#string-autoconfigurl}
-
-Gets url to use for downloading proxy config. 
-
-```csharp
-
-public string AutoConfigUrl { get; set; }
+public string Username { get; set; }
 
 ```
 
@@ -157,19 +157,6 @@ public string AutoConfigUrl { get; set; }
 -----------
 
 ## Public Methods
-
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
 
 ### [ProxyConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.ProxyConfig.md) Create {#proxyconfig-create}
 
@@ -208,6 +195,19 @@ public static ProxyConfig Create(
 
 
 **Returns**: An ice candidate object with the given handle.
+
+
+
+-----------
+
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
 
 
 

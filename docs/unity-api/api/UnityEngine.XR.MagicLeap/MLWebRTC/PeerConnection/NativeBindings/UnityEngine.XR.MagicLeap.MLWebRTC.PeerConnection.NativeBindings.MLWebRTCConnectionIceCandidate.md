@@ -39,30 +39,13 @@ public MLWebRTC.IceCandidate Data { get; set; }
 
 ## Public Attributes
 
-### Version {#uint-version}
+### Candidate {#string-candidate}
 
-Version of the struct. 
-
-```csharp
-
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### SdpMlineIndex {#int-sdpmlineindex}
-
-The  sdp mline index  of the ice candidate. 
+The id of the ice candidate. 
 
 ```csharp
 
-public int SdpMlineIndex;
+public string Candidate;
 
 ```
 
@@ -90,13 +73,30 @@ public string SdpMid;
 
 -----------
 
-### Candidate {#string-candidate}
+### SdpMlineIndex {#int-sdpmlineindex}
 
-The id of the ice candidate. 
+The  sdp mline index  of the ice candidate. 
 
 ```csharp
 
-public string Candidate;
+public int SdpMlineIndex;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+Version of the struct. 
+
+```csharp
+
+public uint Version;
 
 ```
 

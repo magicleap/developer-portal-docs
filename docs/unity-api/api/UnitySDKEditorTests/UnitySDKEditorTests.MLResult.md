@@ -19,12 +19,12 @@ title: MLResult
 
 ## Public Methods
 
-### void MLResult_with_Code_Ok_Returns_IsOk {#void-mlresult-with-code-ok-returns-isok}
+### void MLResult_Create_Returns_Result_with_Given_Code {#void-mlresult-create-returns-result-with-given-code}
 
-Test to make sure "result.IsOk" works as expected. 
+Tests to make sure the MLResult.Create method behaves as expected. 
 
 ```csharp
-public void MLResult_with_Code_Ok_Returns_IsOk()
+public void MLResult_Create_Returns_Result_with_Given_Code()
 ```
 
 
@@ -34,12 +34,12 @@ public void MLResult_with_Code_Ok_Returns_IsOk()
 
 -----------
 
-### void MLResult_Create_Returns_Result_with_Given_Code {#void-mlresult-create-returns-result-with-given-code}
+### void MLResult_with_Code_Ok_Returns_IsOk {#void-mlresult-with-code-ok-returns-isok}
 
-[Tests](/unity-api/api/Namespaces/Tests.md) to make sure the MLResult.Create method behaves as expected. 
+Test to make sure "result.IsOk" works as expected. 
 
 ```csharp
-public void MLResult_Create_Returns_Result_with_Given_Code()
+public void MLResult_with_Code_Ok_Returns_IsOk()
 ```
 
 

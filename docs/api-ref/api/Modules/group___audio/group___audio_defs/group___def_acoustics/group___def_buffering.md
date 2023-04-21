@@ -87,8 +87,7 @@ Buffer format settings for input and output streams.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/struct_m_l_audio_buffer_format.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -16,12 +16,12 @@ title: NativeBindings
 
 ## Public Methods
 
-### bool TryGetHandPosture {#bool-trygethandposture}
+### bool TryGetFingerAngles {#bool-trygetfingerangles}
 
 ```csharp
-public static bool TryGetHandPosture(
+public static bool TryGetFingerAngles(
     InputDevice handDevice,
-    out PostureType Posture
+    out FingerAngleDeg allFingerAngles
 )
 ```
 
@@ -31,31 +31,7 @@ public static bool TryGetHandPosture(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out PostureType |Posture||
-
-
-
-
-
-
------------
-
-### bool TryGetHandKeyPose {#bool-trygethandkeypose}
-
-```csharp
-public static bool TryGetHandKeyPose(
-    InputDevice handDevice,
-    out KeyPoseType KeyPose
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| InputDevice |handDevice||
-| out KeyPoseType |KeyPose||
+| out [FingerAngleDeg](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
 
 
 
@@ -90,12 +66,12 @@ public static bool TryGetFingerState(
 
 -----------
 
-### bool TryGetFingerAngles {#bool-trygetfingerangles}
+### bool TryGetHandKeyPose {#bool-trygethandkeypose}
 
 ```csharp
-public static bool TryGetFingerAngles(
+public static bool TryGetHandKeyPose(
     InputDevice handDevice,
-    out FingerAngleDeg allFingerAngles
+    out KeyPoseType KeyPose
 )
 ```
 
@@ -105,7 +81,31 @@ public static bool TryGetFingerAngles(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out [FingerAngleDeg](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
+| out KeyPoseType |KeyPose||
+
+
+
+
+
+
+-----------
+
+### bool TryGetHandPosture {#bool-trygethandposture}
+
+```csharp
+public static bool TryGetHandPosture(
+    InputDevice handDevice,
+    out PostureType Posture
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputDevice |handDevice||
+| out PostureType |Posture||
 
 
 

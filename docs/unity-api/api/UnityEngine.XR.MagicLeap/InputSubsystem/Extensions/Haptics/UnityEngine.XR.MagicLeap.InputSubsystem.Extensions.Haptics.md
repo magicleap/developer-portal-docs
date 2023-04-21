@@ -16,13 +16,28 @@ title: Haptics
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Stop {#mlresult-stop}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartBuzz {#mlresult-startbuzz}
 
-Stops playing the current haptic pattern. 
+Starts a buzz pattern. 
 
 ```csharp
-public static MLResult Stop()
+public static MLResult StartBuzz(
+    ushort startHz,
+    ushort endHz,
+    ushort durationMs,
+    byte amplitude
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ushort |startHz||
+| ushort |endHz||
+| ushort |durationMs||
+| byte |amplitude||
 
 
 
@@ -55,28 +70,13 @@ public static MLResult StartPreDefined(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartBuzz {#mlresult-startbuzz}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Stop {#mlresult-stop}
 
-Starts a buzz pattern. 
+Stops playing the current haptic pattern. 
 
 ```csharp
-public static MLResult StartBuzz(
-    ushort startHz,
-    ushort endHz,
-    ushort durationMs,
-    byte amplitude
-)
+public static MLResult Stop()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ushort |startHz||
-| ushort |endHz||
-| ushort |durationMs||
-| byte |amplitude||
 
 
 

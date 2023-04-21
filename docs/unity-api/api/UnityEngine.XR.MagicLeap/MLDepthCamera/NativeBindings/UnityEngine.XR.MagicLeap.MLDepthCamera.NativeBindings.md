@@ -18,12 +18,12 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraUpdateSettings {#mlresultcode-mldepthcameraupdatesettings}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraConnect {#mlresultcode-mldepthcameraconnect}
 
 ```csharp
-public MLResult.Code MLDepthCameraUpdateSettings(
-    ulong handle,
-    in MLDepthCameraSettings settings
+public MLResult.Code MLDepthCameraConnect(
+    in MLDepthCameraSettings settings,
+    out ulong handle
 )
 ```
 
@@ -32,8 +32,8 @@ public MLResult.Code MLDepthCameraUpdateSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |handle||
 | in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) |settings||
+| out ulong |handle||
 
 
 
@@ -42,12 +42,11 @@ public MLResult.Code MLDepthCameraUpdateSettings(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraReleaseDepthData {#mlresultcode-mldepthcamerareleasedepthdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraDisconnect {#mlresultcode-mldepthcameradisconnect}
 
 ```csharp
-public MLResult.Code MLDepthCameraReleaseDepthData(
-    ulong handle,
-    IntPtr data
+public MLResult.Code MLDepthCameraDisconnect(
+    ulong handle
 )
 ```
 
@@ -57,7 +56,6 @@ public MLResult.Code MLDepthCameraReleaseDepthData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| IntPtr |data||
 
 
 
@@ -92,11 +90,12 @@ public MLResult.Code MLDepthCameraGetLatestDepthData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraDisconnect {#mlresultcode-mldepthcameradisconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraReleaseDepthData {#mlresultcode-mldepthcamerareleasedepthdata}
 
 ```csharp
-public MLResult.Code MLDepthCameraDisconnect(
-    ulong handle
+public MLResult.Code MLDepthCameraReleaseDepthData(
+    ulong handle,
+    IntPtr data
 )
 ```
 
@@ -106,6 +105,7 @@ public MLResult.Code MLDepthCameraDisconnect(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
+| IntPtr |data||
 
 
 
@@ -114,12 +114,12 @@ public MLResult.Code MLDepthCameraDisconnect(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraConnect {#mlresultcode-mldepthcameraconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraUpdateSettings {#mlresultcode-mldepthcameraupdatesettings}
 
 ```csharp
-public MLResult.Code MLDepthCameraConnect(
-    in MLDepthCameraSettings settings,
-    out ulong handle
+public MLResult.Code MLDepthCameraUpdateSettings(
+    ulong handle,
+    in MLDepthCameraSettings settings
 )
 ```
 
@@ -128,8 +128,8 @@ public MLResult.Code MLDepthCameraConnect(
 
 | Type | Name  | Description  | 
 |--|--|--|
+| ulong |handle||
 | in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) |settings||
-| out ulong |handle||
 
 
 

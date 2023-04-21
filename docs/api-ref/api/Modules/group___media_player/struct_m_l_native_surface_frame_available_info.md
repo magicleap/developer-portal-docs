@@ -32,8 +32,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

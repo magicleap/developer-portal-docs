@@ -17,13 +17,13 @@ CEA708 Caption Pen Location.  MLCea708CaptionPenLocation  from  ml&#95;media&#95
 
 ## Public Attributes
 
-### Row {#int-row}
+### Column {#int-column}
 
-Pen row. 
+Pen column. 
 
 ```csharp
 
-public int Row;
+public int Column;
 
 ```
 
@@ -34,13 +34,13 @@ public int Row;
 
 -----------
 
-### Column {#int-column}
+### Row {#int-row}
 
-Pen column. 
+Pen row. 
 
 ```csharp
 
-public int Column;
+public int Row;
 
 ```
 

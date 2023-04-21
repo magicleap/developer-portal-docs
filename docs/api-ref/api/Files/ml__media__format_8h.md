@@ -408,8 +408,7 @@ Create an empty format object.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -454,8 +453,7 @@ The API call to make a copy ensures that the copied object exists until released
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2906,7 +2904,7 @@ The associated value is a ByteBuffer containing HDR10+ metadata conforming to th
 * The formats of output buffers of a decoder configured for HDR10+ profiles (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus, MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::HEVCProfileMain10HDR10Plus ), or 
 
 
-* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or ef MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus ).
+* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or \ref MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus ).
 
 
 

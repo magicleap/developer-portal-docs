@@ -21,36 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void NativeBindings_MLPlanesQuery_struct_size {#void-nativebindings-mlplanesquery-struct-size}
+### void NativeBindings_MLPlaneBoundariesList_struct_size {#void-nativebindings-mlplaneboundarieslist-struct-size}
 
 ```csharp
-public void NativeBindings_MLPlanesQuery_struct_size()
-```
-
-
-
-
-
-
------------
-
-### void NativeBindings_MLPlane_struct_size {#void-nativebindings-mlplane-struct-size}
-
-```csharp
-public void NativeBindings_MLPlane_struct_size()
-```
-
-
-
-
-
-
------------
-
-### void NativeBindings_MLPlaneBoundary_struct_size {#void-nativebindings-mlplaneboundary-struct-size}
-
-```csharp
-public void NativeBindings_MLPlaneBoundary_struct_size()
+public void NativeBindings_MLPlaneBoundariesList_struct_size()
 ```
 
 
@@ -73,10 +47,36 @@ public void NativeBindings_MLPlaneBoundaries_struct_size()
 
 -----------
 
-### void NativeBindings_MLPlaneBoundariesList_struct_size {#void-nativebindings-mlplaneboundarieslist-struct-size}
+### void NativeBindings_MLPlaneBoundary_struct_size {#void-nativebindings-mlplaneboundary-struct-size}
 
 ```csharp
-public void NativeBindings_MLPlaneBoundariesList_struct_size()
+public void NativeBindings_MLPlaneBoundary_struct_size()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBindings_MLPlane_struct_size {#void-nativebindings-mlplane-struct-size}
+
+```csharp
+public void NativeBindings_MLPlane_struct_size()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBindings_MLPlanesQuery_struct_size {#void-nativebindings-mlplanesquery-struct-size}
+
+```csharp
+public void NativeBindings_MLPlanesQuery_struct_size()
 ```
 
 

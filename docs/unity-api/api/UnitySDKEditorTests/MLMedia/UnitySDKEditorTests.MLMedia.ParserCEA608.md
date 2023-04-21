@@ -18,75 +18,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void Cleanup {#void-cleanup}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCCParserSetDisplayChangedCallback_Exists {#void-nativebinding-mlmediaccparsersetdisplaychangedcallback-exists}
-
-```csharp
-public void NativeBinding_MLMediaCCParserSetDisplayChangedCallback_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCCParserParse_Exists {#void-nativebinding-mlmediaccparserparse-exists}
-
-```csharp
-public void NativeBinding_MLMediaCCParserParse_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCCParserGetDisplayableEx_Exists {#void-nativebinding-mlmediaccparsergetdisplayableex-exists}
-
-```csharp
-public void NativeBinding_MLMediaCCParserGetDisplayableEx_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCCParserDestroy_Exists {#void-nativebinding-mlmediaccparserdestroy-exists}
-
-```csharp
-public void NativeBinding_MLMediaCCParserDestroy_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCCParserCreate_Exists {#void-nativebinding-mlmediaccparsercreate-exists}
-
-```csharp
-public void NativeBinding_MLMediaCCParserCreate_Exists()
+public void Cleanup()
 ```
 
 
@@ -109,10 +44,75 @@ public void Init()
 
 -----------
 
-### void Cleanup {#void-cleanup}
+### void NativeBinding_MLMediaCCParserCreate_Exists {#void-nativebinding-mlmediaccparsercreate-exists}
 
 ```csharp
-public void Cleanup()
+public void NativeBinding_MLMediaCCParserCreate_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaCCParserDestroy_Exists {#void-nativebinding-mlmediaccparserdestroy-exists}
+
+```csharp
+public void NativeBinding_MLMediaCCParserDestroy_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaCCParserGetDisplayableEx_Exists {#void-nativebinding-mlmediaccparsergetdisplayableex-exists}
+
+```csharp
+public void NativeBinding_MLMediaCCParserGetDisplayableEx_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaCCParserParse_Exists {#void-nativebinding-mlmediaccparserparse-exists}
+
+```csharp
+public void NativeBinding_MLMediaCCParserParse_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaCCParserSetDisplayChangedCallback_Exists {#void-nativebinding-mlmediaccparsersetdisplaychangedcallback-exists}
+
+```csharp
+public void NativeBinding_MLMediaCCParserSetDisplayChangedCallback_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

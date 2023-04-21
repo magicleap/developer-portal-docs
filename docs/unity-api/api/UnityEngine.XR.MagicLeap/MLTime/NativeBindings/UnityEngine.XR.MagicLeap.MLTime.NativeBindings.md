@@ -19,30 +19,6 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLTimeConvertSystemTimeToMLTime {#mlresultcode-mltimeconvertsystemtimetomltime}
-
-```csharp
-public MLResult.Code MLTimeConvertSystemTimeToMLTime(
-    IntPtr timeSpec,
-    out long mlTime
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| IntPtr |timeSpec||
-| out long |mlTime||
-
-
-
-
-
-
------------
-
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLTimeConvertMLTimeToSystemTime {#mlresultcode-mltimeconvertmltimetosystemtime}
 
 ```csharp
@@ -59,6 +35,30 @@ public MLResult.Code MLTimeConvertMLTimeToSystemTime(
 |--|--|--|
 | long |mlTime||
 | IntPtr |timeSpec||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLTimeConvertSystemTimeToMLTime {#mlresultcode-mltimeconvertsystemtimetomltime}
+
+```csharp
+public MLResult.Code MLTimeConvertSystemTimeToMLTime(
+    IntPtr timeSpec,
+    out long mlTime
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| IntPtr |timeSpec||
+| out long |mlTime||
 
 
 

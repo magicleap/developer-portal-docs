@@ -19,13 +19,13 @@ Inherits from: <br></br>IEquatable< PlaneBoundary >
 
 ## Public Fields
 
-### valid {#bool-valid}
+### holeCount {#int-holecount}
 
-Whether this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) is valid. You should check for validity before invoking GetPolygon(Allocator, NativeArray&lt;Vector2&gt;), [GetPolygon(Allocator)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#nativearray-vector2-getpolygon), [GetHole(int, Allocator)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#nativearray-vector2-gethole), or GetHole(int, Allocator, NativeArray&lt;Vector2&gt;). 
+The number of holes in this boundary. 
 
 ```csharp
 
-public bool valid { get; set; }
+public int holeCount { get; set; }
 
 ```
 
@@ -53,13 +53,13 @@ public int polygonVertexCount { get; set; }
 
 -----------
 
-### holeCount {#int-holecount}
+### valid {#bool-valid}
 
-The number of holes in this boundary. 
+Whether this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) is valid. You should check for validity before invoking GetPolygon(Allocator, NativeArray&lt;Vector2&gt;), [GetPolygon(Allocator)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#nativearray-vector2-getpolygon), [GetHole(int, Allocator)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#nativearray-vector2-gethole), or GetHole(int, Allocator, NativeArray&lt;Vector2&gt;). 
 
 ```csharp
 
-public int holeCount { get; set; }
+public bool valid { get; set; }
 
 ```
 
@@ -72,14 +72,13 @@ public int holeCount { get; set; }
 
 ## Public Methods
 
-### bool operator== {#bool-operator}
-
-Compares for equality. Same as [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals). 
+### void CreateOrResizeNativeArrayIfNecessary< T > {#void-createorresizenativearrayifnecessary-t-}
 
 ```csharp
-public static bool operator==(
-    PlaneBoundary lhs,
-    PlaneBoundary rhs
+public static void CreateOrResizeNativeArrayIfNecessary< T >(
+    int length,
+    Allocator allocator,
+    ref NativeArray< T > array
 )
 ```
 
@@ -88,8 +87,61 @@ public static bool operator==(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |lhs|The left-hand side of the comparison.|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |rhs|The right-hand side of the comparison.|
+| int |length||
+| Allocator |allocator||
+| ref NativeArray&lt; T &gt; |array||
+
+
+
+
+
+
+-----------
+
+### override bool Equals {#override-bool-equals}
+
+IEquatable interface. Compares for equality. 
+
+```csharp
+public override bool Equals(
+    object obj
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| object |obj|The object to compare for equality.|
+
+
+
+
+
+
+**Returns**:  true  if _obj_  is of type [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) and compares equal with [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals).
+
+
+
+-----------
+
+### bool Equals {#bool-equals}
+
+IEquatable interface. Compares for equality. 
+
+```csharp
+public bool Equals(
+    PlaneBoundary other
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |other|The [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) to compare against.|
 
 
 
@@ -102,126 +154,20 @@ public static bool operator==(
 
 -----------
 
-### bool operator!= {#bool-operator}
+### override int GetHashCode {#override-int-gethashcode}
 
-Compares for inequality. Same as  ! [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals). 
+Computes a hash code suitable for use in a  Dictionary  or  HashSet . 
 
 ```csharp
-public static bool operator!=(
-    PlaneBoundary lhs,
-    PlaneBoundary rhs
-)
+public override int GetHashCode()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |lhs|The left-hand side of the comparison.|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |rhs|The right-hand side of the comparison.|
 
 
 
 
-
-
-**Returns**:  true  if any of the fields of this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) are not equal to _other_ .
-
-
-
------------
-
-### unsafe void TransformMLPolygon {#unsafe-void-transformmlpolygon}
-
-```csharp
-public static unsafe void TransformMLPolygon(
-    Extensions.MLPolygon mlPolygon,
-    Pose pose,
-    Allocator allocator,
-    ref NativeArray< Vector2 > polygonOut
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Extensions.MLPolygon |mlPolygon||
-| Pose |pose||
-| Allocator |allocator||
-| ref NativeArray&lt; Vector2 &gt; |polygonOut||
-
-
-
-
-
-
------------
-
-### unsafe void GetPolygon {#unsafe-void-getpolygon}
-
-Gets the polygon representing a plane's boundary, and, if successful, copies it to _polygonOut_ . _polygonOut_  is resized or created using  if necessary. The 2D vertices are in plane-space. 
-
-```csharp
-public unsafe void GetPolygon(
-    Allocator allocator,
-    ref NativeArray< Vector2 > polygonOut
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Allocator |index|The index of the boundary to retrieve.|
-| ref NativeArray&lt; Vector2 &gt; |allocator|The Allocator to use if _polygonOut_  must be recreated. Must be  Allocator.TempJob  or  Allocator.Persistent .|
-|  |polygonOut|A NativeArray to fill with boundary points. If the array is not the correct size, it is disposed and recreated.|
-
-
-**Exceptions**: 
-
-  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is  false .
-  * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
-
-
-
-
-
-
------------
-
-### NativeArray&lt; Vector2 &gt; GetPolygon {#nativearray-vector2-getpolygon}
-
-Gets the polygon representing this boundary. The 2D vertices are in plane-space. 
-
-```csharp
-public NativeArray< Vector2 > GetPolygon(
-    Allocator allocator
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Allocator |allocator|The allocator to use for the returned NativeArray. Must be  Allocator.TempJob  or  Allocator.Persistent .|
-
-
-**Exceptions**: 
-
-  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is  false .
-  * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
-
-
-
-
-
-
-**Returns**: A new NativeArray containing a set of 2D points in plane-space representing a boundary for a plane. The caller is responsible for disposing the NativeArray.
+**Returns**: A hash code suitable for use in a  Dictionary  or  HashSet .
 
 
 
@@ -299,32 +245,14 @@ public unsafe void GetHole(
 
 -----------
 
-### override int GetHashCode {#override-int-gethashcode}
+### unsafe void GetPolygon {#unsafe-void-getpolygon}
 
-Computes a hash code suitable for use in a  Dictionary  or  HashSet . 
-
-```csharp
-public override int GetHashCode()
-```
-
-
-
-
-
-
-**Returns**: A hash code suitable for use in a  Dictionary  or  HashSet .
-
-
-
------------
-
-### override bool Equals {#override-bool-equals}
-
-IEquatable interface. Compares for equality. 
+Gets the polygon representing a plane's boundary, and, if successful, copies it to _polygonOut_ . _polygonOut_  is resized or created using  if necessary. The 2D vertices are in plane-space. 
 
 ```csharp
-public override bool Equals(
-    object obj
+public unsafe void GetPolygon(
+    Allocator allocator,
+    ref NativeArray< Vector2 > polygonOut
 )
 ```
 
@@ -333,26 +261,30 @@ public override bool Equals(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| object |obj|The object to compare for equality.|
+| Allocator |index|The index of the boundary to retrieve.|
+| ref NativeArray&lt; Vector2 &gt; |allocator|The Allocator to use if _polygonOut_  must be recreated. Must be  Allocator.TempJob  or  Allocator.Persistent .|
+|  |polygonOut|A NativeArray to fill with boundary points. If the array is not the correct size, it is disposed and recreated.|
+
+
+**Exceptions**: 
+
+  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is  false .
+  * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
 
 
 
-
-
-
-**Returns**:  true  if _obj_  is of type [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) and compares equal with [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals).
 
 
 
 -----------
 
-### bool Equals {#bool-equals}
+### NativeArray&lt; Vector2 &gt; GetPolygon {#nativearray-vector2-getpolygon}
 
-IEquatable interface. Compares for equality. 
+Gets the polygon representing this boundary. The 2D vertices are in plane-space. 
 
 ```csharp
-public bool Equals(
-    PlaneBoundary other
+public NativeArray< Vector2 > GetPolygon(
+    Allocator allocator
 )
 ```
 
@@ -361,7 +293,101 @@ public bool Equals(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |other|The [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) to compare against.|
+| Allocator |allocator|The allocator to use for the returned NativeArray. Must be  Allocator.TempJob  or  Allocator.Persistent .|
+
+
+**Exceptions**: 
+
+  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is  false .
+  * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
+
+
+
+
+
+
+**Returns**: A new NativeArray containing a set of 2D points in plane-space representing a boundary for a plane. The caller is responsible for disposing the NativeArray.
+
+
+
+-----------
+
+### unsafe void TransformMLPolygon {#unsafe-void-transformmlpolygon}
+
+```csharp
+public static unsafe void TransformMLPolygon(
+    Extensions.MLPolygon mlPolygon,
+    Pose pose,
+    Allocator allocator,
+    ref NativeArray< Vector2 > polygonOut
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Extensions.MLPolygon |mlPolygon||
+| Pose |pose||
+| Allocator |allocator||
+| ref NativeArray&lt; Vector2 &gt; |polygonOut||
+
+
+
+
+
+
+-----------
+
+### bool operator!= {#bool-operator}
+
+Compares for inequality. Same as  ! [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals). 
+
+```csharp
+public static bool operator!=(
+    PlaneBoundary lhs,
+    PlaneBoundary rhs
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |lhs|The left-hand side of the comparison.|
+| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |rhs|The right-hand side of the comparison.|
+
+
+
+
+
+
+**Returns**:  true  if any of the fields of this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) are not equal to _other_ .
+
+
+
+-----------
+
+### bool operator== {#bool-operator}
+
+Compares for equality. Same as [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals). 
+
+```csharp
+public static bool operator==(
+    PlaneBoundary lhs,
+    PlaneBoundary rhs
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |lhs|The left-hand side of the comparison.|
+| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |rhs|The right-hand side of the comparison.|
 
 
 
@@ -374,54 +400,28 @@ public bool Equals(
 
 -----------
 
-### void CreateOrResizeNativeArrayIfNecessary< T > {#void-createorresizenativearrayifnecessary-t-}
-
-```csharp
-public static void CreateOrResizeNativeArrayIfNecessary< T >(
-    int length,
-    Allocator allocator,
-    ref NativeArray< T > array
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| int |length||
-| Allocator |allocator||
-| ref NativeArray&lt; T &gt; |array||
-
-
-
-
-
-
------------
-
 ## Public Attributes
-
-### m_Pose {#pose-m-pose}
-
-```csharp
-
-public Pose m_Pose;
-
-```
-
-
-
-
-
-
------------
 
 ### m_Boundary {#extensionsmlplaneboundary-m-boundary}
 
 ```csharp
 
 public Extensions.MLPlaneBoundary m_Boundary;
+
+```
+
+
+
+
+
+
+-----------
+
+### m_Pose {#pose-m-pose}
+
+```csharp
+
+public Pose m_Pose;
 
 ```
 

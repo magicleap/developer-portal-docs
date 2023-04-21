@@ -33,8 +33,7 @@ if (MLResult_Ok != MLTimeConvertSystemTimeToMLTime(&time_spec, &converted_ml_tim
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * Please note that the MLTime data type cannot be filled with std::chrono timestamps. For example to generate an MLTime time from the current time you can use the code below.
 
 
@@ -80,8 +79,7 @@ See [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltim
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -124,8 +122,7 @@ See [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltim
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

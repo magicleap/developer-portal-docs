@@ -41,47 +41,13 @@ public DistortionCoefficients(
 
 ## Public Attributes
 
-### P2 {#readonly-double-p2}
+### K1 {#readonly-double-k1}
 
-Distortion coefficient p2 
-
-```csharp
-
-public readonly double P2;
-
-```
-
-
-
-
-
-
------------
-
-### P1 {#readonly-double-p1}
-
-Distortion coefficient p1 
+Distortion coefficient k1 
 
 ```csharp
 
-public readonly double P1;
-
-```
-
-
-
-
-
-
------------
-
-### K3 {#readonly-double-k3}
-
-Distortion coefficient k3 
-
-```csharp
-
-public readonly double K3;
+public readonly double K1;
 
 ```
 
@@ -109,13 +75,47 @@ public readonly double K2;
 
 -----------
 
-### K1 {#readonly-double-k1}
+### K3 {#readonly-double-k3}
 
-Distortion coefficient k1 
+Distortion coefficient k3 
 
 ```csharp
 
-public readonly double K1;
+public readonly double K3;
+
+```
+
+
+
+
+
+
+-----------
+
+### P1 {#readonly-double-p1}
+
+Distortion coefficient p1 
+
+```csharp
+
+public readonly double P1;
+
+```
+
+
+
+
+
+
+-----------
+
+### P2 {#readonly-double-p2}
+
+Distortion coefficient p2 
+
+```csharp
+
+public readonly double P2;
 
 ```
 

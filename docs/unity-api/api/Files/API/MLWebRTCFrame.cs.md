@@ -119,10 +119,7 @@ namespace UnityEngine.XR.MagicLeap
                     return frame;
                 }
 
-                public override string ToString() => $"
-Id: {this.Id}, 
-TimeStamp (us): {this.TimeStampUs}, 
-Format: {this.Format}";
+                public override string ToString() => $"\nId: {this.Id}, \nTimeStamp (us): {this.TimeStampUs}, \nFormat: {this.Format}";
             }
         }
     }

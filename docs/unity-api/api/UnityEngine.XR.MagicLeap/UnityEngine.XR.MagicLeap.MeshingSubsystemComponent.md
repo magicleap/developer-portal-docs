@@ -21,203 +21,13 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Fields
 
-### requestedMeshType {#meshtype-requestedmeshtype}
+### batchSize {#int-batchsize}
 
-Request Magic Leap to generate a triangle mesh or point cloud points. 
-
-```csharp
-
-public MeshType requestedMeshType { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
-
-
-
-
-
------------
-
-### requestVertexConfidence {#bool-requestvertexconfidence}
-
-When enabled, the system will generate confidence values for each vertex, ranging from 0-1. 
+How many meshes to update per batch. Larger values are more efficient, but have higher latency. 
 
 ```csharp
 
-public bool requestVertexConfidence { get; set; }
-
-```
-
-
-
-
-**See**: [TryGetConfidence(MeshId, List&lt;float&gt;)](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-trygetconfidence)
-
-
-
------------
-
-### removeMeshSkirt {#bool-removemeshskirt}
-
-When enabled, the mesh skirt (overlapping area between two mesh blocks) will be removed. This field is only valid when the Mesh Type is Blocks. 
-
-```csharp
-
-public bool removeMeshSkirt { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### pollingRate {#float-pollingrate}
-
-How often to check for updates, in seconds. More frequent updates will increase CPU usage. 
-
-```csharp
-
-public float pollingRate { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### planarize {#bool-planarize}
-
-When enabled, the system will planarize the returned mesh (planar regions will be smoothed out). 
-
-```csharp
-
-public bool planarize { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### meshQueueSize {#uint-meshqueuesize}
-
-Controls the number of meshes to queue for generation at once. Larger numbers will lead to higher CPU usage. 
-
-```csharp
-
-public uint meshQueueSize { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### meshPrefab {#gameobject-meshprefab}
-
-Get or set the prefab which should be instantiated to create individual mesh instances. May have a mesh renderer and an optional mesh collider for physics. 
-
-```csharp
-
-public GameObject meshPrefab { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### meshParent {#transform-meshparent}
-
-The parent transform for generated meshes. 
-
-```csharp
-
-public Transform meshParent { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### meshIdToGameObjectMap {#dictionary-meshid,-gameobject-meshidtogameobjectmap}
-
-A  Dictionary  which maps mesh ids to their  GameObject s. 
-
-```csharp
-
-public Dictionary< MeshId, GameObject > meshIdToGameObjectMap { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### fillHoleLength {#float-fillholelength}
-
-Boundary distance (in meters) of holes you wish to have filled. 
-
-```csharp
-
-public float fillHoleLength { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### disconnectedComponentArea {#float-disconnectedcomponentarea}
-
-Any component that is disconnected from the main mesh and which has an area less than this size will be removed. 
-
-```csharp
-
-public float disconnectedComponentArea { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### density {#float-density}
-
-```csharp
-
-public float density { get; set; }
+public int batchSize { get; set; }
 
 ```
 
@@ -245,16 +55,206 @@ public bool computeNormals { get; set; }
 
 -----------
 
-### batchSize {#int-batchsize}
-
-How many meshes to update per batch. Larger values are more efficient, but have higher latency. 
+### density {#float-density}
 
 ```csharp
 
-public int batchSize { get; set; }
+public float density { get; set; }
 
 ```
 
+
+
+
+
+
+-----------
+
+### disconnectedComponentArea {#float-disconnectedcomponentarea}
+
+Any component that is disconnected from the main mesh and which has an area less than this size will be removed. 
+
+```csharp
+
+public float disconnectedComponentArea { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### fillHoleLength {#float-fillholelength}
+
+Boundary distance (in meters) of holes you wish to have filled. 
+
+```csharp
+
+public float fillHoleLength { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### meshIdToGameObjectMap {#dictionary-meshid,-gameobject-meshidtogameobjectmap}
+
+A  Dictionary  which maps mesh ids to their  GameObject s. 
+
+```csharp
+
+public Dictionary< MeshId, GameObject > meshIdToGameObjectMap { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### meshParent {#transform-meshparent}
+
+The parent transform for generated meshes. 
+
+```csharp
+
+public Transform meshParent { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### meshPrefab {#gameobject-meshprefab}
+
+Get or set the prefab which should be instantiated to create individual mesh instances. May have a mesh renderer and an optional mesh collider for physics. 
+
+```csharp
+
+public GameObject meshPrefab { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### meshQueueSize {#uint-meshqueuesize}
+
+Controls the number of meshes to queue for generation at once. Larger numbers will lead to higher CPU usage. 
+
+```csharp
+
+public uint meshQueueSize { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### planarize {#bool-planarize}
+
+When enabled, the system will planarize the returned mesh (planar regions will be smoothed out). 
+
+```csharp
+
+public bool planarize { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### pollingRate {#float-pollingrate}
+
+How often to check for updates, in seconds. More frequent updates will increase CPU usage. 
+
+```csharp
+
+public float pollingRate { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### removeMeshSkirt {#bool-removemeshskirt}
+
+When enabled, the mesh skirt (overlapping area between two mesh blocks) will be removed. This field is only valid when the Mesh Type is Blocks. 
+
+```csharp
+
+public bool removeMeshSkirt { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### requestVertexConfidence {#bool-requestvertexconfidence}
+
+When enabled, the system will generate confidence values for each vertex, ranging from 0-1. 
+
+```csharp
+
+public bool requestVertexConfidence { get; set; }
+
+```
+
+
+
+
+**See**: [TryGetConfidence(MeshId, List&lt;float&gt;)](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-trygetconfidence)
+
+
+
+-----------
+
+### requestedMeshType {#meshtype-requestedmeshtype}
+
+Request Magic Leap to generate a triangle mesh or point cloud points. 
+
+```csharp
+
+public MeshType requestedMeshType { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
 
 
 
@@ -264,160 +264,10 @@ public int batchSize { get; set; }
 
 ## Public Methods
 
-### bool TryGetConfidence {#bool-trygetconfidence}
-
-Retrieve the confidence values associated with a mesh. Confidence values range from 0..1. [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence) must be enabled. 
+### [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-levelofdetail) DensityToLevelOfDetail {#levelofdetail-densitytolevelofdetail}
 
 ```csharp
-public bool TryGetConfidence(
-    MeshId meshId,
-    List< float > confidenceOut
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| MeshId |meshId|The unique  MeshId  of the mesh.|
-| List&lt; float &gt; |confidenceOut|A  List  of floats, one for each vertex in the mesh.|
-
-
-
-
-**See**: [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence)
-
-
-
-**Returns**: True if confidence values were successfully retrieved for the mesh with id _meshId_ .
-
-
-
------------
-
-### void SetCustomMeshBlockRequests {#void-setcustommeshblockrequests}
-
-```csharp
-public static void SetCustomMeshBlockRequests(
-    MeshingSubsystem.Extensions.MLMeshing.OnMeshBlockRequests onBlockRequests
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| MeshingSubsystem.Extensions.MLMeshing.OnMeshBlockRequests |onBlockRequests||
-
-
-
-
-
-
------------
-
-### void RefreshMesh {#void-refreshmesh}
-
-'Refresh' a single mesh. This forces the mesh to be regenerated with the current settings. 
-
-```csharp
-public void RefreshMesh(
-    MeshId meshId
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| MeshId |meshId|The  MeshId  of the mesh to regenerate.|
-
-
-
-
-
-
------------
-
-### void RefreshAllMeshes {#void-refreshallmeshes}
-
-'Refresh' all known meshes (meshes that are in [meshIdToGameObjectMap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap)). This will force all meshes to be regenerated with the current settings. 
-
-```csharp
-public void RefreshAllMeshes()
-```
-
-
-
-
-
-
------------
-
-### void OnMeshingPropertyChanged {#void-onmeshingpropertychanged}
-
-```csharp
-public void OnMeshingPropertyChanged()
-```
-
-
-
-
-
-
------------
-
-### float LevelOfDetailToDensity {#float-levelofdetailtodensity}
-
-```csharp
-public static float LevelOfDetailToDensity(
-    LevelOfDetail lod
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-levelofdetail) |lod|Describes the level of detail (LOD) to request from the generated meshes. This property is deprecated, and has been replaced by density. |
-
-
-
-
-
-
------------
-
-### float FromLevelOfDetailToDensity {#float-fromlevelofdetailtodensity}
-
-```csharp
-public static float FromLevelOfDetailToDensity(
-    MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail lod
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |lod|Level of detail of the block mesh. |
-
-
-
-
-
-
------------
-
-### [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) FromDensityToLevelOfDetail {#meshingsubsystemextensionsmlmeshinglevelofdetail-fromdensitytolevelofdetail}
-
-```csharp
-public static MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail FromDensityToLevelOfDetail(
+public static LevelOfDetail DensityToLevelOfDetail(
     float density
 )
 ```
@@ -451,10 +301,10 @@ public void DestroyAllMeshes()
 
 -----------
 
-### [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-levelofdetail) DensityToLevelOfDetail {#levelofdetail-densitytolevelofdetail}
+### [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) FromDensityToLevelOfDetail {#meshingsubsystemextensionsmlmeshinglevelofdetail-fromdensitytolevelofdetail}
 
 ```csharp
-public static LevelOfDetail DensityToLevelOfDetail(
+public static MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail FromDensityToLevelOfDetail(
     float density
 )
 ```
@@ -468,6 +318,156 @@ public static LevelOfDetail DensityToLevelOfDetail(
 
 
 
+
+
+
+-----------
+
+### float FromLevelOfDetailToDensity {#float-fromlevelofdetailtodensity}
+
+```csharp
+public static float FromLevelOfDetailToDensity(
+    MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail lod
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |lod|Level of detail of the block mesh. |
+
+
+
+
+
+
+-----------
+
+### float LevelOfDetailToDensity {#float-levelofdetailtodensity}
+
+```csharp
+public static float LevelOfDetailToDensity(
+    LevelOfDetail lod
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-levelofdetail) |lod|Describes the level of detail (LOD) to request from the generated meshes. This property is deprecated, and has been replaced by density. |
+
+
+
+
+
+
+-----------
+
+### void OnMeshingPropertyChanged {#void-onmeshingpropertychanged}
+
+```csharp
+public void OnMeshingPropertyChanged()
+```
+
+
+
+
+
+
+-----------
+
+### void RefreshAllMeshes {#void-refreshallmeshes}
+
+'Refresh' all known meshes (meshes that are in [meshIdToGameObjectMap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap)). This will force all meshes to be regenerated with the current settings. 
+
+```csharp
+public void RefreshAllMeshes()
+```
+
+
+
+
+
+
+-----------
+
+### void RefreshMesh {#void-refreshmesh}
+
+'Refresh' a single mesh. This forces the mesh to be regenerated with the current settings. 
+
+```csharp
+public void RefreshMesh(
+    MeshId meshId
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| MeshId |meshId|The  MeshId  of the mesh to regenerate.|
+
+
+
+
+
+
+-----------
+
+### void SetCustomMeshBlockRequests {#void-setcustommeshblockrequests}
+
+```csharp
+public static void SetCustomMeshBlockRequests(
+    MeshingSubsystem.Extensions.MLMeshing.OnMeshBlockRequests onBlockRequests
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| MeshingSubsystem.Extensions.MLMeshing.OnMeshBlockRequests |onBlockRequests||
+
+
+
+
+
+
+-----------
+
+### bool TryGetConfidence {#bool-trygetconfidence}
+
+Retrieve the confidence values associated with a mesh. Confidence values range from 0..1. [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence) must be enabled. 
+
+```csharp
+public bool TryGetConfidence(
+    MeshId meshId,
+    List< float > confidenceOut
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| MeshId |meshId|The unique  MeshId  of the mesh.|
+| List&lt; float &gt; |confidenceOut|A  List  of floats, one for each vertex in the mesh.|
+
+
+
+
+**See**: [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence)
+
+
+
+**Returns**: True if confidence values were successfully retrieved for the mesh with id _meshId_ .
 
 
 
@@ -497,12 +497,12 @@ public MeshType currentMeshType => SubsystemFeatures.currentFeatures.HasFlag(Fea
 
 ## Public Events
 
-### meshUpdated {#action-meshid-meshupdated}
+### meshAdded {#action-meshid-meshadded}
 
-An event which is invoked whenever an existing mesh is updated (regenerated). 
+An event which is invoked whenever a new mesh is added 
 
 ```csharp
-public Action< MeshId > meshUpdated()
+public Action< MeshId > meshAdded()
 ```
 
 
@@ -527,12 +527,12 @@ public Action< MeshId > meshRemoved()
 
 -----------
 
-### meshAdded {#action-meshid-meshadded}
+### meshUpdated {#action-meshid-meshupdated}
 
-An event which is invoked whenever a new mesh is added 
+An event which is invoked whenever an existing mesh is updated (regenerated). 
 
 ```csharp
-public Action< MeshId > meshAdded()
+public Action< MeshId > meshUpdated()
 ```
 
 
@@ -544,14 +544,15 @@ public Action< MeshId > meshAdded()
 
 ## Public Enums
 
-### MeshType {#enums-meshtype}
+### LevelOfDetail {#enums-levelofdetail}
 
-What type of mesh to generate: a triangle mesh or a point cloud 
+Describes the level of detail (LOD) to request from the generated meshes. This property is deprecated, and has been replaced by density. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Triangles | | Generate triangle meshes   |
-| PointCloud | | Generate a point cloud (a mesh with  MeshTopology.Points )   |
+| Minimum | | Minimum level of detail. Meshes will render faster, but be less accurate.   |
+| Medium | | Medium level of detail. A good balance between accuracy and render performance.   |
+| Maximum | | Maximum level of detail. This will take more time to render, but the meshes will be more accurate.   |
 
 
 
@@ -562,15 +563,14 @@ What type of mesh to generate: a triangle mesh or a point cloud
 
 -----------
 
-### LevelOfDetail {#enums-levelofdetail}
+### MeshType {#enums-meshtype}
 
-Describes the level of detail (LOD) to request from the generated meshes. This property is deprecated, and has been replaced by density. 
+What type of mesh to generate: a triangle mesh or a point cloud 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Minimum | | Minimum level of detail. Meshes will render faster, but be less accurate.   |
-| Medium | | Medium level of detail. A good balance between accuracy and render performance.   |
-| Maximum | | Maximum level of detail. This will take more time to render, but the meshes will be more accurate.   |
+| Triangles | | Generate triangle meshes   |
+| PointCloud | | Generate a point cloud (a mesh with  MeshTopology.Points )   |
 
 
 

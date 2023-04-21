@@ -708,48 +708,37 @@ Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
 
 
-**Shared Object:
- media_ccparser.magicleap**
+**Shared Object:\n media_ccparser.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_cea708parser.magicleap**
+**Shared Object:\n media_cea708parser.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_codec.magicleap**
+**Shared Object:\n media_codec.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_codeclist.magicleap**
+**Shared Object:\n media_codeclist.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_crypto.magicleap**
+**Shared Object:\n media_crypto.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_player.magicleap**
+**Shared Object:\n media_player.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_drm.magicleap**
+**Shared Object:\n media_drm.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_extractor.magicleap**
+**Shared Object:\n media_extractor.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_format.magicleap**
+**Shared Object:\n media_format.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- media_muxer.magicleap**
+**Shared Object:\n media_muxer.magicleap**
   * Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
-**Shared Object:
- native_surface.magicleap**
+**Shared Object:\n native_surface.magicleap**
   * To stringify the error codes returned by these APIs, call MLMediaResultGetString. 
 
 
@@ -830,8 +819,7 @@ Cea608 Caption Dimension constants.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -860,8 +848,7 @@ Cea608 caption color code.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -884,8 +871,7 @@ Cea608 caption style code.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -921,8 +907,7 @@ Cea708 Caption maximum windows constant.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -943,8 +928,7 @@ Maximum size for Cea708 Caption Emit command buffers.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -981,8 +965,7 @@ Cea708 Caption Emit Commands constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1007,8 +990,7 @@ Cea708 Caption Emit Command Control constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1033,8 +1015,7 @@ Cea708 Caption Color Opacity constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1058,8 +1039,7 @@ Cea708 Caption Pen Size constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1083,8 +1063,7 @@ Cea708 Caption Pen Offset constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1298,8 +1277,7 @@ Enumeration defining possible uncompressed image/video formats.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -1322,8 +1300,7 @@ Enumeration defining the Codec priority.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -1347,8 +1324,7 @@ Enumeration of possible methods to use for Intra Refresh.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -1372,8 +1348,7 @@ Enumeration defining Codec Bitrate modes.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -1466,8 +1441,7 @@ A codec may not support all the profiles and levels listed below. For any given 
 :::
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -1574,8 +1548,7 @@ A codec may not support all the profiles and levels listed below. For any given 
 :::
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -1644,8 +1617,7 @@ Request event types.
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -1671,8 +1643,7 @@ Status code associated with a DRM session key.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1760,8 +1731,7 @@ Use [MLMediaMuxerGetSupportedOutputFormats](/api-ref/api/Modules/group___media_p
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1935,8 +1905,7 @@ Frame Packing Arrangement for stereoscopic videos.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1962,8 +1931,7 @@ Frame Packing Arrangement flags for stereoscopic videos.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1988,8 +1956,7 @@ Cue text alignment within the cue box.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2013,8 +1980,7 @@ Cue line type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2039,8 +2005,7 @@ Cue anchor type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2065,8 +2030,7 @@ Cue text size type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2089,8 +2053,7 @@ Cue orientation setting.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -2114,8 +2077,7 @@ Cue direction setting.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -2141,8 +2103,7 @@ Cue aligment setting.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -2211,8 +2172,7 @@ Graphic backend to use.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2236,8 +2196,7 @@ Cea608 caption style and color.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -2258,8 +2217,7 @@ Cea608 caption preamble address code.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -2280,8 +2238,7 @@ Cea608 caption line structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2302,8 +2259,7 @@ Cea608 caption segment structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2330,8 +2286,7 @@ Callback signature called when Cea608 displayable is changed.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2352,8 +2307,7 @@ Cea708 Caption Color.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2374,8 +2328,7 @@ Cea708 Caption Pen Attributes.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2396,8 +2349,7 @@ Cea708 Caption Pen Color.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2418,8 +2370,7 @@ Cea708 Caption Pen Location.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2440,8 +2391,7 @@ Cea708 Caption Window Attributes.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2462,8 +2412,7 @@ Cea708 Caption Window.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2484,8 +2433,7 @@ Cea708 Caption Event.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2512,8 +2460,7 @@ Callback signature called when Cea708 parser emits event.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2551,8 +2498,7 @@ MediaCodec Input buffer information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_input_buffer_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2573,8 +2519,7 @@ MediaCodec Output buffer information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2595,8 +2540,7 @@ MediaCodec Output Format information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_format_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2617,8 +2561,7 @@ MediaCodec Output Format information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2639,8 +2582,7 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2661,8 +2603,7 @@ MediaCodec Output Frame Rendered information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_frame_rendered_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2683,8 +2624,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2705,8 +2645,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2727,8 +2666,7 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2766,8 +2704,7 @@ Used to store the list of codec profile levels.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md)
 
 
-**API Level:
- 6**
+**API Level:\n 6**
   * 
 
 
@@ -3018,8 +2955,7 @@ MediaDRM event info associated with a session.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3040,8 +2976,7 @@ MediaDRM expiration update info associated with a session.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3062,8 +2997,7 @@ MediaDRM key status.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3084,8 +3018,7 @@ MediaDRM session keys status change info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3108,8 +3041,7 @@ User of MLMediaDRM should implement this.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3179,8 +3111,7 @@ Data type that encapsulates sample data to be written in to MLMediaMuxer.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3216,8 +3147,7 @@ MediaPlayer DRM Info for a Media Track.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3272,8 +3202,7 @@ MediaPlayer Buffering update callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3294,8 +3223,7 @@ MediaPlayer Playback completion callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3316,8 +3244,7 @@ MediaPlayer Error callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3338,8 +3265,7 @@ MediaPlayer Information callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3360,8 +3286,7 @@ MediaPlayer Playback prepared callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3382,8 +3307,7 @@ MediaPlayer Playback seek completion callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3404,8 +3328,7 @@ MediaPlayer Video Size Changed callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3426,8 +3349,7 @@ MediaPlayer Track DRM Info callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3448,8 +3370,7 @@ MediaPlayer reset completion callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -3470,8 +3391,7 @@ MediaPlayer frame packing callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -3494,8 +3414,7 @@ Those are async mechanisms that should not be used in parallel with their sync c
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -3516,8 +3435,7 @@ MediaPlayer Track Information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3538,8 +3456,7 @@ DRM Session information for a MediaPlayer Track.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3593,8 +3510,7 @@ Callbacks signature called when Timed Text update is available.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -3615,8 +3531,7 @@ MediaPlayer metrics data.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -3660,8 +3575,7 @@ Byte data for TTML image cues.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_image.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3682,8 +3596,7 @@ TTML data structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3721,8 +3634,7 @@ WebVTT data structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -3743,8 +3655,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3765,8 +3676,7 @@ Configuration values for creating the Native Surface.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3787,8 +3697,7 @@ Callbacks for notifying when an output frame is available for consumption.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3829,8 +3738,7 @@ Create internal closed caption parser object.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3877,8 +3785,7 @@ Return closed caption for display.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -3916,8 +3823,7 @@ Release internal CC parser object.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -3962,8 +3868,7 @@ Setting this callback saves application from handling raw subtitle data. Caption
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4006,8 +3911,7 @@ Provide Cea608 parser with subtitle raw data for parsing. If the callback has be
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4046,8 +3950,7 @@ Create Cea708 parser object.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4090,8 +3993,7 @@ Provide Cea708 parser with subtitle raw data for parsing.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4129,8 +4031,7 @@ Release Cea708 parser object.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4172,8 +4073,7 @@ Set callback to get notified when a caption event has generated.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4278,8 +4178,7 @@ The CryptoInfo object should be released by calling [MLMediaCodecReleaseCryptoIn
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4317,8 +4216,7 @@ Release the Crypto Info created by [MLMediaCodecCreateCryptoInfo](/api-ref/api/M
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4441,8 +4339,7 @@ Also, [MLMediaCodecFlush()](/api-ref/api/Modules/group___media_player/group___me
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4493,8 +4390,7 @@ Note:
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4590,8 +4486,7 @@ The output surface can be:
 
 
 
-**API Level:
- 6**
+**API Level:\n 6**
   * 
 
 
@@ -4708,8 +4603,7 @@ Resetting a codec can fail when an unrecoverable error occurs (which is Hardare 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4805,8 +4699,7 @@ Some of these parameter changes may silently fail to apply. Unless specified bel
 :::
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -4856,8 +4749,7 @@ Note: For VIDEO encoder, this API will fail if an input surface was created by [
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4907,8 +4799,7 @@ Note: For VIDEO decoder, this API will fail if codec was configured with a hardw
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4959,8 +4850,7 @@ Once an input buffer is queued to the codec, it MUST NOT be used until it is lat
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5009,8 +4899,7 @@ Similar to queueInputBuffer but submits a buffer that is potentially encrypted.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5056,8 +4945,7 @@ This method will return immediately if timeoutUs == 0, wait indefinitely for the
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5105,8 +4993,7 @@ This method will return immediately if timeoutUs == 0, wait indefinitely for the
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5242,8 +5129,7 @@ The user of this API is responsible for calling #MLMediaCodecReleaseSurface() on
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -5286,8 +5172,7 @@ Release the Surface that was created by [MLMediaCodecCreateInputSurface](/api-re
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -5326,8 +5211,7 @@ Equivalent to submitting an empty buffer with MLMediaCodecBufferFlag_EOS set whe
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -5374,8 +5258,7 @@ Once an output buffer is released to codec, it MUST NOT be used until it is late
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5420,8 +5303,7 @@ The timestamp may have special meaning depending on the destination surface.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5880,8 +5762,7 @@ User shall call [MLMediaCodecListProfileLevelsRelease()](/api-ref/api/Modules/gr
 
 
 
-**API Level:
- 6**
+**API Level:\n 6**
   * 
 
 
@@ -5920,8 +5801,7 @@ Release profile levels.
 
 
 
-**API Level:
- 6**
+**API Level:\n 6**
   * 
 
 
@@ -5968,8 +5848,7 @@ User shall call [MLMediaCodecListColorFormatsRelease()](/api-ref/api/Modules/gro
 
 
 
-**API Level:
- 6**
+**API Level:\n 6**
   * 
 
 
@@ -6008,8 +5887,7 @@ Release color formats.
 
 
 
-**API Level:
- 6**
+**API Level:\n 6**
   * 
 
 
@@ -6056,8 +5934,7 @@ User shall call [MLMediaCodecBitrateModesRelease()](/api-ref/api/Modules/group__
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -6096,8 +5973,7 @@ Release Bitrate modes.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -6142,8 +6018,7 @@ This function is used to query a video decoder to see whether it supports seamle
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -6188,8 +6063,7 @@ If the component is an encoder, it will always return false.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -6234,8 +6108,7 @@ If the component is Decoder, it will always return false.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -6949,8 +6822,7 @@ Register a callback to be invoked when DRM events or updates or status change oc
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -8973,8 +8845,7 @@ Create an empty format object.
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 
@@ -9019,8 +8890,7 @@ The API call to make a copy ensures that the copied object exists until released
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -9657,8 +9527,7 @@ Create a MLMediaMuxer instance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -9697,8 +9566,7 @@ Release the MLMediaMuxer instance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -9743,8 +9611,7 @@ User doesn't own the memory/buffer returned from this API and MUST NOT be freein
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -9791,8 +9658,7 @@ User doesn't own the memory/buffer returned from this API and MUST NOT be freein
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -9837,8 +9703,7 @@ Configure the MLMediaMuxer for a given Output format with output path.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -9919,8 +9784,7 @@ With Ogg container, only supported mime is "audio/opus".
 
 If a mime passed through the MLMediaFormat is not supported, it will return MLMediaResult_Unsupported.
 
-API Level:
- 20
+API Level:\n 20
 
 media_muxerHandle to the MLMediaMuxer instance. 
 
@@ -9986,8 +9850,7 @@ Note that some video players may choose to ignore the composition matrix in a vi
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -10035,8 +9898,7 @@ The geodata is stored in udta box if the output format is MLMediaMuxerOutputForm
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -10078,8 +9940,7 @@ Make sure all the tracks have been added ([MLMediaMuxerAddTrack](/api-ref/api/Mo
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -10127,8 +9988,7 @@ The buffer can be reused once this method returns.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -10170,8 +10030,7 @@ Once the muxer stops, it can not be restarted.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -10886,8 +10745,7 @@ Gets the Media Format of a track.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -11283,8 +11141,7 @@ Client needs to implement the callback functions declared in [MLMediaPlayerEvent
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -11593,8 +11450,7 @@ Returns last subtitle event information.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -11633,8 +11489,7 @@ Releases last subtitle event information.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -11682,8 +11537,7 @@ This also makes [MLMediaPlayerGetSubtitleEx()](/api-ref/api/Modules/group___medi
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -11976,8 +11830,7 @@ This function has to be called only after DataSource has been set and the MediaP
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -12018,8 +11871,7 @@ Prepares DRM for the selected media (either audio or video) track.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -12216,8 +12068,7 @@ Setting this callback disables use of the poll-based API to query for the [MLMed
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -12263,8 +12114,7 @@ The returned [MLWebVTTData](/api-ref/api/Modules/group___media_player/struct_m_l
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -12310,8 +12160,7 @@ The returned [MLTTMLData](/api-ref/api/Modules/group___media_player/struct_m_l_t
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -12356,8 +12205,7 @@ A successful reset result can be obtained either by registering the 'on_reset_co
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -12400,8 +12248,7 @@ Retrieves metrics recorded on the MediaPlayer.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -12446,8 +12293,7 @@ The surface should be created by [MLNativeSurfaceCreate()](/api-ref/api/Modules/
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -12725,8 +12571,7 @@ The NativeSurface created through this API should be released using MLNativeSurf
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -12765,8 +12610,7 @@ Release a NativeSurface.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -12815,8 +12659,7 @@ This function returns the platform-dependent native window typically used by Gra
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -12898,8 +12741,7 @@ Note: The returned buffer's color format is multi-planar YUV420. Since our under
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -12949,8 +12791,7 @@ The AHardwareBuffer* can be used with the Vulkan extension VK_ANDROID_external_m
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -12991,8 +12832,7 @@ Release a native buffer previously acquired.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13037,8 +12877,7 @@ The matrix is stored in column-major order.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13077,8 +12916,7 @@ Retrieves the timestamp associated with the last acquired frame. The timestamp i
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13117,8 +12955,7 @@ Retrieves the QueueBuffer timestamp associated with the last acquired Frame This
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13157,8 +12994,7 @@ Retrieves the last acquired frame number. The frame number is an incrementing co
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13199,8 +13035,7 @@ The Frame crop is returned as {left, bottom, width, height}.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13243,8 +13078,7 @@ Set callback to notify client when a frame is available.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13288,8 +13122,7 @@ Create a new NativeSurfaceTexture.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13328,8 +13161,7 @@ Release a NativeSurfaceTexture.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13370,8 +13202,7 @@ May only be called on the thread with the graphic context that contains the text
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13412,8 +13243,7 @@ Attach the NativeSurfaceTexture to the graphic context that is current on the ca
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13454,8 +13284,7 @@ If called on the thread with graphic context that contains the attached texture 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13496,8 +13325,7 @@ Retrieve the 4x4 texture coordinate transform matrix associated with the texture
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13538,8 +13366,7 @@ Retrieve the timestamp associated with the texture image set by the most recent 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -13582,8 +13409,7 @@ Set callback to notify client when a frame is available.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -15663,7 +15489,7 @@ The associated value is a ByteBuffer containing HDR10+ metadata conforming to th
 * The formats of output buffers of a decoder configured for HDR10+ profiles (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus, MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::HEVCProfileMain10HDR10Plus ), or 
 
 
-* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or ef MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus ).
+* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or \ref MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus ).
 
 
 
@@ -16395,8 +16221,7 @@ An unset position, width or size which is negative of maximum finite value of fl
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

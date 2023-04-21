@@ -18,11 +18,11 @@ Inherits from: <br></br>IJobParallelFor
 
 ## Public Methods
 
-### Quaternion TransformUnityRotationToML {#quaternion-transformunityrotationtoml}
+### void Execute {#void-execute}
 
 ```csharp
-public static Quaternion TransformUnityRotationToML(
-    Quaternion rotation
+public void Execute(
+    int index
 )
 ```
 
@@ -31,51 +31,7 @@ public static Quaternion TransformUnityRotationToML(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| Quaternion |rotation||
-
-
-
-
-
-
------------
-
-### Quaternion TransformMLRotationToUnity {#quaternion-transformmlrotationtounity}
-
-```csharp
-public static Quaternion TransformMLRotationToUnity(
-    Quaternion rotation
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Quaternion |rotation||
-
-
-
-
-
-
------------
-
-### PlaneClassification ToUnityClassification {#planeclassification-tounityclassification}
-
-```csharp
-public PlaneClassification ToUnityClassification(
-    Extensions.MLPlanesQueryFlags flags
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |flags||
+| int |index||
 
 
 
@@ -108,11 +64,11 @@ public PlaneAlignment ToUnityAlignment(
 
 -----------
 
-### void Execute {#void-execute}
+### PlaneClassification ToUnityClassification {#planeclassification-tounityclassification}
 
 ```csharp
-public void Execute(
-    int index
+public PlaneClassification ToUnityClassification(
+    Extensions.MLPlanesQueryFlags flags
 )
 ```
 
@@ -121,7 +77,51 @@ public void Execute(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| int |index||
+| [Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |flags||
+
+
+
+
+
+
+-----------
+
+### Quaternion TransformMLRotationToUnity {#quaternion-transformmlrotationtounity}
+
+```csharp
+public static Quaternion TransformMLRotationToUnity(
+    Quaternion rotation
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Quaternion |rotation||
+
+
+
+
+
+
+-----------
+
+### Quaternion TransformUnityRotationToML {#quaternion-transformunityrotationtoml}
+
+```csharp
+public static Quaternion TransformUnityRotationToML(
+    Quaternion rotation
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Quaternion |rotation||
 
 
 
@@ -132,41 +132,11 @@ public void Execute(
 
 ## Public Attributes
 
-### planesOut {#nativearray-boundedplane-planesout}
+### k_MagicLeapToUnityRotation {#readonly-quaternion-k-magicleaptounityrotation}
 
 ```csharp
 
-public NativeArray< BoundedPlane > planesOut;
-
-```
-
-
-
-
-
-
------------
-
-### planesIn {#nativearray-extensionsmlplane-planesin}
-
-```csharp
-
-public NativeArray< Extensions.MLPlane > planesIn;
-
-```
-
-
-
-
-
-
------------
-
-### planeTrackableIds {#nativearray-trackableid-planetrackableids}
-
-```csharp
-
-public NativeArray< TrackableId > planeTrackableIds;
+public static readonly Quaternion k_MagicLeapToUnityRotation = Quaternion.AngleAxis(-90f, Vector3.right);
 
 ```
 
@@ -192,11 +162,41 @@ public static readonly Quaternion k_UnityToMagicLeapRotation = Quaternion.Invers
 
 -----------
 
-### k_MagicLeapToUnityRotation {#readonly-quaternion-k-magicleaptounityrotation}
+### planeTrackableIds {#nativearray-trackableid-planetrackableids}
 
 ```csharp
 
-public static readonly Quaternion k_MagicLeapToUnityRotation = Quaternion.AngleAxis(-90f, Vector3.right);
+public NativeArray< TrackableId > planeTrackableIds;
+
+```
+
+
+
+
+
+
+-----------
+
+### planesIn {#nativearray-extensionsmlplane-planesin}
+
+```csharp
+
+public NativeArray< Extensions.MLPlane > planesIn;
+
+```
+
+
+
+
+
+
+-----------
+
+### planesOut {#nativearray-boundedplane-planesout}
+
+```csharp
+
+public NativeArray< BoundedPlane > planesOut;
 
 ```
 

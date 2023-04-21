@@ -32,8 +32,7 @@ A structure containing settings for the space manager. This structure must be in
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

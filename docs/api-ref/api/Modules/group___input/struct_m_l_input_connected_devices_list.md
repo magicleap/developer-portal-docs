@@ -34,8 +34,7 @@ A structure containing information about the connected devices.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

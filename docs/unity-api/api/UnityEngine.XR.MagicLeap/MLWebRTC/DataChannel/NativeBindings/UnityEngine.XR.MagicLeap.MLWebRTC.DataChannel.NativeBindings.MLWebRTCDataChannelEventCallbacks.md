@@ -47,50 +47,13 @@ public static MLWebRTCDataChannelEventCallbacks Create(
 
 ## Public Attributes
 
-### Version {#uint-version}
+### Context {#intptr-context}
 
-Version of the struct. 
-
-```csharp
-
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### OnOpen {#onopeneddelegate-onopen}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnOpen event. 
+Context pointer used with the dataChannelCounter field to determine which data channel that callbacks are associated with. 
 
 ```csharp
 
-public OnOpenedDelegate OnOpen;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OnOpenedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-onopeneddelegate) | Delegate that describes the requirements of the OnOpened callback.  |
-
-
-
-
-
------------
-
-### OnMessage {#onmessagedelegate-onmessage}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnMessage event. 
-
-```csharp
-
-public OnMessageDelegate OnMessage;
+public IntPtr Context;
 
 ```
 
@@ -121,13 +84,50 @@ public OnClosedDelegate OnClosed;
 
 -----------
 
-### Context {#intptr-context}
+### OnMessage {#onmessagedelegate-onmessage}
 
-Context pointer used with the dataChannelCounter field to determine which data channel that callbacks are associated with. 
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnMessage event. 
 
 ```csharp
 
-public IntPtr Context;
+public OnMessageDelegate OnMessage;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnOpen {#onopeneddelegate-onopen}
+
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnOpen event. 
+
+```csharp
+
+public OnOpenedDelegate OnOpen;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OnOpenedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-onopeneddelegate) | Delegate that describes the requirements of the OnOpened callback.  |
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+Version of the struct. 
+
+```csharp
+
+public uint Version;
 
 ```
 

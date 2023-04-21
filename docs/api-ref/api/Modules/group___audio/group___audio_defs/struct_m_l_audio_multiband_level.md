@@ -35,8 +35,7 @@ Properties specifying a broadband level and three sub-band levels.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

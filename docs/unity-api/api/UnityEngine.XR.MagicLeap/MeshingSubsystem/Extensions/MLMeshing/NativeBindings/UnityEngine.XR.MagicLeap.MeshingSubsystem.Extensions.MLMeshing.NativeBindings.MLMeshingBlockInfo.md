@@ -17,36 +17,19 @@ Representation of a mesh block.
 
 ## Public Attributes
 
-### timestamp {#long-timestamp}
+### cfuid {#magicleapnativebindingsmlcoordinateframeuid-cfuid}
 
-The timestamp when block was updated. 
-
-```csharp
-
-public long timestamp;
-
-```
-
-
-
-
-
-
------------
-
-### state {#meshstate-state}
-
-The state of the Mesh Block. 
+The coordinate frame UID to represent the block. 
 
 ```csharp
 
-public MeshState state;
+public MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MeshState](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-meshstate) | State of a block mesh.  |
+| [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 
@@ -74,19 +57,36 @@ public MLMeshingExtents extents;
 
 -----------
 
-### cfuid {#magicleapnativebindingsmlcoordinateframeuid-cfuid}
+### state {#meshstate-state}
 
-The coordinate frame UID to represent the block. 
+The state of the Mesh Block. 
 
 ```csharp
 
-public MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
+public MeshState state;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
+| [MeshState](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-meshstate) | State of a block mesh.  |
+
+
+
+
+
+-----------
+
+### timestamp {#long-timestamp}
+
+The timestamp when block was updated. 
+
+```csharp
+
+public long timestamp;
+
+```
+
 
 
 

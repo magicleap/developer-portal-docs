@@ -19,14 +19,13 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLEyeCalibrationGetState {#mlresultcode-mleyecalibrationgetstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLEyeCalibrationCreateClient {#mlresultcode-mleyecalibrationcreateclient}
 
-Gets information about the user's current eye calibration. 
+Creates an eye calibration client. 
 
 ```csharp
-public MLResult.Code MLEyeCalibrationGetState(
-    ulong Handle,
-    out MLEyeCalibrationState OutState
+public MLResult.Code MLEyeCalibrationCreateClient(
+    out ulong OutHandle
 )
 ```
 
@@ -35,8 +34,7 @@ public MLResult.Code MLEyeCalibrationGetState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |Handle||
-| out [MLEyeCalibrationState](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/NativeBindings/UnityEngine.XR.MagicLeap.MLEyeCalibration.NativeBindings.MLEyeCalibrationState.md) |OutState||
+| out ulong |OutHandle||
 
 
 
@@ -69,13 +67,14 @@ public MLResult.Code MLEyeCalibrationDestroyClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLEyeCalibrationCreateClient {#mlresultcode-mleyecalibrationcreateclient}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLEyeCalibrationGetState {#mlresultcode-mleyecalibrationgetstate}
 
-Creates an eye calibration client. 
+Gets information about the user's current eye calibration. 
 
 ```csharp
-public MLResult.Code MLEyeCalibrationCreateClient(
-    out ulong OutHandle
+public MLResult.Code MLEyeCalibrationGetState(
+    ulong Handle,
+    out MLEyeCalibrationState OutState
 )
 ```
 
@@ -84,7 +83,8 @@ public MLResult.Code MLEyeCalibrationCreateClient(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out ulong |OutHandle||
+| ulong |Handle||
+| out [MLEyeCalibrationState](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/NativeBindings/UnityEngine.XR.MagicLeap.MLEyeCalibration.NativeBindings.MLEyeCalibrationState.md) |OutState||
 
 
 

@@ -47,11 +47,13 @@ public CreateInfo(
 
 ## Public Attributes
 
-### ShouldWaitForQueueIdleOnSubmit {#bool-shouldwaitforqueueidleonsubmit}
+### AcquireNextAvailableBufferCallback {#acquirenextavailablebufferdelegate-acquirenextavailablebuffercallback}
+
+Callback invoked by the native plugin to acquire a native buffer. 
 
 ```csharp
 
-public bool ShouldWaitForQueueIdleOnSubmit;
+public AcquireNextAvailableBufferDelegate AcquireNextAvailableBufferCallback;
 
 ```
 
@@ -62,105 +64,11 @@ public bool ShouldWaitForQueueIdleOnSubmit;
 
 -----------
 
-### ReleaseHwBufferCallback {#releasehwbufferdelegate-releasehwbuffercallback}
+### AcquireNextAvailableHwBufferCallback {#acquirenextavailablehwbufferdelegate-acquirenextavailablehwbuffercallback}
 
 ```csharp
 
-public ReleaseHwBufferDelegate ReleaseHwBufferCallback;
-
-```
-
-
-
-
-
-
------------
-
-### ReleaseBufferCallback {#releasebufferdelegate-releasebuffercallback}
-
-Callback invoked by the native plugin to release a native buffer. 
-
-```csharp
-
-public ReleaseBufferDelegate ReleaseBufferCallback;
-
-```
-
-
-
-
-
-
------------
-
-### OverrideYcbcrConversionSamplerCallback {#overrideycbcrconversionsamplerdelegate-overrideycbcrconversionsamplercallback}
-
-```csharp
-
-public OverrideYcbcrConversionSamplerDelegate OverrideYcbcrConversionSamplerCallback;
-
-```
-
-
-
-
-
-
------------
-
-### OnFirstFrameRenderedCallback {#onfirstframerendereddelegate-onfirstframerenderedcallback}
-
-```csharp
-
-public OnFirstFrameRenderedDelegate OnFirstFrameRenderedCallback;
-
-```
-
-
-
-
-
-
------------
-
-### OnCleanupCompleteCallback {#oncleanupcompletedelegate-oncleanupcompletecallback}
-
-```csharp
-
-public OnCleanupCompleteDelegate OnCleanupCompleteCallback;
-
-```
-
-
-
-
-
-
------------
-
-### IsNewFrameAvailableCallback {#isnewframeavailabledelegate-isnewframeavailablecallback}
-
-```csharp
-
-public IsNewFrameAvailableDelegate IsNewFrameAvailableCallback;
-
-```
-
-
-
-
-
-
------------
-
-### GetFrameTransformMatrixCallback {#getframetransformmatrixdelegate-getframetransformmatrixcallback}
-
-Callback invoked by the native plugin to get the frame transform matrix. 
-
-```csharp
-
-public GetFrameTransformMatrixDelegate GetFrameTransformMatrixCallback;
+public AcquireNextAvailableHwBufferDelegate AcquireNextAvailableHwBufferCallback;
 
 ```
 
@@ -188,11 +96,13 @@ public IntPtr Context;
 
 -----------
 
-### AcquireNextAvailableHwBufferCallback {#acquirenextavailablehwbufferdelegate-acquirenextavailablehwbuffercallback}
+### GetFrameTransformMatrixCallback {#getframetransformmatrixdelegate-getframetransformmatrixcallback}
+
+Callback invoked by the native plugin to get the frame transform matrix. 
 
 ```csharp
 
-public AcquireNextAvailableHwBufferDelegate AcquireNextAvailableHwBufferCallback;
+public GetFrameTransformMatrixDelegate GetFrameTransformMatrixCallback;
 
 ```
 
@@ -203,13 +113,103 @@ public AcquireNextAvailableHwBufferDelegate AcquireNextAvailableHwBufferCallback
 
 -----------
 
-### AcquireNextAvailableBufferCallback {#acquirenextavailablebufferdelegate-acquirenextavailablebuffercallback}
-
-Callback invoked by the native plugin to acquire a native buffer. 
+### IsNewFrameAvailableCallback {#isnewframeavailabledelegate-isnewframeavailablecallback}
 
 ```csharp
 
-public AcquireNextAvailableBufferDelegate AcquireNextAvailableBufferCallback;
+public IsNewFrameAvailableDelegate IsNewFrameAvailableCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnCleanupCompleteCallback {#oncleanupcompletedelegate-oncleanupcompletecallback}
+
+```csharp
+
+public OnCleanupCompleteDelegate OnCleanupCompleteCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnFirstFrameRenderedCallback {#onfirstframerendereddelegate-onfirstframerenderedcallback}
+
+```csharp
+
+public OnFirstFrameRenderedDelegate OnFirstFrameRenderedCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### OverrideYcbcrConversionSamplerCallback {#overrideycbcrconversionsamplerdelegate-overrideycbcrconversionsamplercallback}
+
+```csharp
+
+public OverrideYcbcrConversionSamplerDelegate OverrideYcbcrConversionSamplerCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### ReleaseBufferCallback {#releasebufferdelegate-releasebuffercallback}
+
+Callback invoked by the native plugin to release a native buffer. 
+
+```csharp
+
+public ReleaseBufferDelegate ReleaseBufferCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### ReleaseHwBufferCallback {#releasehwbufferdelegate-releasehwbuffercallback}
+
+```csharp
+
+public ReleaseHwBufferDelegate ReleaseHwBufferCallback;
+
+```
+
+
+
+
+
+
+-----------
+
+### ShouldWaitForQueueIdleOnSubmit {#bool-shouldwaitforqueueidleonsubmit}
+
+```csharp
+
+public bool ShouldWaitForQueueIdleOnSubmit;
 
 ```
 

@@ -47,19 +47,19 @@ public static MLCameraMRConnectInfo Create(
 
 ## Public Attributes
 
-### MrQuality {#mlcameramrquality-mrquality}
+### FrameRate {#mlcameracaptureframerate-framerate}
 
-MR video quality 
+capture frame rate 
 
 ```csharp
 
-public MLCamera.MRQuality MrQuality;
+public MLCamera.CaptureFrameRate FrameRate;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration  |
+| [MLCamera.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
 
 
 
@@ -87,19 +87,19 @@ public MLCamera.MRBlendType MrBlendType;
 
 -----------
 
-### FrameRate {#mlcameracaptureframerate-framerate}
+### MrQuality {#mlcameramrquality-mrquality}
 
-capture frame rate 
+MR video quality 
 
 ```csharp
 
-public MLCamera.CaptureFrameRate FrameRate;
+public MLCamera.MRQuality MrQuality;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
+| [MLCamera.MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration  |
 
 
 

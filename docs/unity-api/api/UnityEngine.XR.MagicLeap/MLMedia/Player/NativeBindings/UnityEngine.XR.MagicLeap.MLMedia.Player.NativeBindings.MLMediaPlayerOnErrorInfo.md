@@ -17,6 +17,23 @@ MediaPlayer Error callback Info.
 
 ## Public Attributes
 
+### Data {#intptr-data}
+
+User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
+
+```csharp
+
+public IntPtr Data;
+
+```
+
+
+
+
+
+
+-----------
+
 ### Result {#mlresultcode-result}
 
 Error/result code indicating failure reason. 
@@ -30,23 +47,6 @@ public MLResult.Code Result;
 | Type | Description  | 
 |--|--|
 | [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) | Identifier of Magic Leap API results  |
-
-
-
-
-
------------
-
-### Data {#intptr-data}
-
-User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
-
-```csharp
-
-public IntPtr Data;
-
-```
-
 
 
 

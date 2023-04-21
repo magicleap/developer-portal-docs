@@ -15,15 +15,30 @@ A structure to encapsulate output data for each camera sensor.
 
 
 
+## Public Methods
+
+### [MLWorldCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings.MLWorldCameraData.md) Init {#mlworldcameradata-init}
+
+```csharp
+public static MLWorldCameraData Init()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### Version {#readonly-uint-version}
+### FrameCount {#readonly-byte-framecount}
 
-Version of this structure. 
+Number of camera frames populated. 
 
 ```csharp
 
-public readonly uint Version;
+public readonly byte FrameCount;
 
 ```
 
@@ -51,13 +66,13 @@ public readonly IntPtr Frames;
 
 -----------
 
-### FrameCount {#readonly-byte-framecount}
+### Version {#readonly-uint-version}
 
-Number of camera frames populated. 
+Version of this structure. 
 
 ```csharp
 
-public readonly byte FrameCount;
+public readonly uint Version;
 
 ```
 

@@ -121,11 +121,8 @@ namespace UnityEngine.XR.MagicLeap
 
                         public override string ToString()
                         {
-                            var str = new System.Text.StringBuilder($"[MLWebRTCFrame: Version={Version}, TimeStamp={TimeStamp}, Format={Format}
-");
-                            str.AppendLine($"	FrameData:
-		{FrameData}
-]");
+                            var str = new System.Text.StringBuilder($"[MLWebRTCFrame: Version={Version}, TimeStamp={TimeStamp}, Format={Format}\n");
+                            str.AppendLine($"\tFrameData:\n\t\t{FrameData}\n]");
                             return str.ToString();
                         }
                     }
@@ -155,9 +152,7 @@ namespace UnityEngine.XR.MagicLeap
 
                         public override string ToString()
                         {
-                            return $"[MLWebRTCNativeFrameInfo: Width={Width}, Height={Height},
-			Transform=({string.Join(',', Transform)}),
-			SurfaceHandle={SurfaceHandle}, NativeBufferHandle={NativeBufferHandle}]";
+                            return $"[MLWebRTCNativeFrameInfo: Width={Width}, Height={Height},\n\t\t\tTransform=({string.Join(',', Transform)}),\n\t\t\tSurfaceHandle={SurfaceHandle}, NativeBufferHandle={NativeBufferHandle}]";
                         }
                     }
 

@@ -21,10 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void NativeBindings_MLControllerSystemStateEx_struct_size {#void-nativebindings-mlcontrollersystemstateex-struct-size}
+### void NativeBindings_MLControllerConfiguration_struct_size {#void-nativebindings-mlcontrollerconfiguration-struct-size}
 
 ```csharp
-public void NativeBindings_MLControllerSystemStateEx_struct_size()
+public void NativeBindings_MLControllerConfiguration_struct_size()
 ```
 
 
@@ -47,10 +47,10 @@ public void NativeBindings_MLControllerStateEx_struct_size()
 
 -----------
 
-### void NativeBindings_MLControllerConfiguration_struct_size {#void-nativebindings-mlcontrollerconfiguration-struct-size}
+### void NativeBindings_MLControllerSystemStateEx_struct_size {#void-nativebindings-mlcontrollersystemstateex-struct-size}
 
 ```csharp
-public void NativeBindings_MLControllerConfiguration_struct_size()
+public void NativeBindings_MLControllerSystemStateEx_struct_size()
 ```
 
 

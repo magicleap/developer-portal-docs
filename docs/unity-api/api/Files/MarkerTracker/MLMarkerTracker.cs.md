@@ -41,6 +41,8 @@ namespace UnityEngine.XR.MagicLeap
 
         private static TrackerSettings futureSettingsValue;
 
+        private static bool IsPaused { get; set; } = false;
+
         public static async Task SetSettingsAsync(TrackerSettings value)
         {
             if (futureSettingsValue.Equals(value))
@@ -53,6 +55,7 @@ namespace UnityEngine.XR.MagicLeap
         }
 
         private static bool IsScanning => Instance.settings.EnableMarkerScanning;
+        private static bool WasScanning = false;
 
         private MLMarkerTracker.TrackerSettings settings = TrackerSettings.Create(true, MarkerType.All);
 
@@ -94,6 +97,41 @@ namespace UnityEngine.XR.MagicLeap
                     OnMLMarkerTrackerResultsFound?.Invoke(result);
 
                 OnMLMarkerTrackerResultsFoundArray?.Invoke(results);
+            }
+        }
+
+        protected override void OnApplicationPause(bool pauseStatus)
+        {
+            if (pauseStatus)
+            {
+                HandleApplicationPause();
+            }
+            else
+            {
+                HandleApplicationUnpause();
+            }
+        }
+
+        private void HandleApplicationPause()
+        {
+            if (IsStarted)
+            {
+                WasScanning = IsScanning;
+                StopAPI();
+                IsPaused = true;
+            }
+        }
+
+        private void HandleApplicationUnpause()
+        {
+            if (IsPaused)
+            {
+                StartAPI();
+                IsPaused = false;
+                if (WasScanning)
+                {
+                    _ = StartScanningAsync();
+                }
             }
         }
     }

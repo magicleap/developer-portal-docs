@@ -16,132 +16,13 @@ title: VkAndroidHardwareBufferFormatPropertiesANDROID
 
 ## Public Attributes
 
-### suggestedYcbcrRange {#uint-suggestedycbcrrange}
+### externalFormat {#ulong-externalformat}
 
-VkSamplerYcbcrRange 
-
-```csharp
-
-public uint suggestedYcbcrRange;
-
-```
-
-
-
-
-
-
------------
-
-### suggestedYcbcrModel {#uint-suggestedycbcrmodel}
-
-VkSamplerYcbcrModelConversion 
+uint64 
 
 ```csharp
 
-public uint suggestedYcbcrModel;
-
-```
-
-
-
-
-
-
------------
-
-### suggestedYChromaOffset {#uint-suggestedychromaoffset}
-
-VkChromaLocation 
-
-```csharp
-
-public uint suggestedYChromaOffset;
-
-```
-
-
-
-
-
-
------------
-
-### suggestedXChromaOffset {#uint-suggestedxchromaoffset}
-
-VkChromaLocation 
-
-```csharp
-
-public uint suggestedXChromaOffset;
-
-```
-
-
-
-
-
-
------------
-
-### samplerYcbcrConversionComponents {#vkcomponentmapping-samplerycbcrconversioncomponents}
-
-[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
-
-```csharp
-
-public VkComponentMapping samplerYcbcrConversionComponents;
-
-```
-
-
-
-
-
-
------------
-
-### sType {#uint-stype}
-
-VkStructureType 
-
-```csharp
-
-public uint sType;
-
-```
-
-
-
-
-
-
------------
-
-### pNext {#intptr-pnext}
-
-void&#42; 
-
-```csharp
-
-public IntPtr pNext;
-
-```
-
-
-
-
-
-
------------
-
-### formatFeatures {#uint-formatfeatures}
-
-VkFormatFeatureFlags 
-
-```csharp
-
-public uint formatFeatures;
+public ulong externalFormat;
 
 ```
 
@@ -169,13 +50,132 @@ public uint format;
 
 -----------
 
-### externalFormat {#ulong-externalformat}
+### formatFeatures {#uint-formatfeatures}
 
-uint64 
+VkFormatFeatureFlags 
 
 ```csharp
 
-public ulong externalFormat;
+public uint formatFeatures;
+
+```
+
+
+
+
+
+
+-----------
+
+### pNext {#intptr-pnext}
+
+void&#42; 
+
+```csharp
+
+public IntPtr pNext;
+
+```
+
+
+
+
+
+
+-----------
+
+### sType {#uint-stype}
+
+VkStructureType 
+
+```csharp
+
+public uint sType;
+
+```
+
+
+
+
+
+
+-----------
+
+### samplerYcbcrConversionComponents {#vkcomponentmapping-samplerycbcrconversioncomponents}
+
+[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
+
+```csharp
+
+public VkComponentMapping samplerYcbcrConversionComponents;
+
+```
+
+
+
+
+
+
+-----------
+
+### suggestedXChromaOffset {#uint-suggestedxchromaoffset}
+
+VkChromaLocation 
+
+```csharp
+
+public uint suggestedXChromaOffset;
+
+```
+
+
+
+
+
+
+-----------
+
+### suggestedYChromaOffset {#uint-suggestedychromaoffset}
+
+VkChromaLocation 
+
+```csharp
+
+public uint suggestedYChromaOffset;
+
+```
+
+
+
+
+
+
+-----------
+
+### suggestedYcbcrModel {#uint-suggestedycbcrmodel}
+
+VkSamplerYcbcrModelConversion 
+
+```csharp
+
+public uint suggestedYcbcrModel;
+
+```
+
+
+
+
+
+
+-----------
+
+### suggestedYcbcrRange {#uint-suggestedycbcrrange}
+
+VkSamplerYcbcrRange 
+
+```csharp
+
+public uint suggestedYcbcrRange;
 
 ```
 

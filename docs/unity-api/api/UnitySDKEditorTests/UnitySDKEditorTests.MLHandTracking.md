@@ -21,23 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void NativeBindings_MLHandTrackingStaticData_struct_size {#void-nativebindings-mlhandtrackingstaticdata-struct-size}
+### void NativeBindings_MLHandTrackingCFUIDs_struct_size {#void-nativebindings-mlhandtrackingcfuids-struct-size}
 
 ```csharp
-public void NativeBindings_MLHandTrackingStaticData_struct_size()
-```
-
-
-
-
-
-
------------
-
-### void NativeBindings_MLHandTrackingHandState_struct_size {#void-nativebindings-mlhandtrackinghandstate-struct-size}
-
-```csharp
-public void NativeBindings_MLHandTrackingHandState_struct_size()
+public void NativeBindings_MLHandTrackingCFUIDs_struct_size()
 ```
 
 
@@ -60,10 +47,23 @@ public void NativeBindings_MLHandTrackingData_struct_size()
 
 -----------
 
-### void NativeBindings_MLHandTrackingCFUIDs_struct_size {#void-nativebindings-mlhandtrackingcfuids-struct-size}
+### void NativeBindings_MLHandTrackingHandState_struct_size {#void-nativebindings-mlhandtrackinghandstate-struct-size}
 
 ```csharp
-public void NativeBindings_MLHandTrackingCFUIDs_struct_size()
+public void NativeBindings_MLHandTrackingHandState_struct_size()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBindings_MLHandTrackingStaticData_struct_size {#void-nativebindings-mlhandtrackingstaticdata-struct-size}
+
+```csharp
+public void NativeBindings_MLHandTrackingStaticData_struct_size()
 ```
 
 

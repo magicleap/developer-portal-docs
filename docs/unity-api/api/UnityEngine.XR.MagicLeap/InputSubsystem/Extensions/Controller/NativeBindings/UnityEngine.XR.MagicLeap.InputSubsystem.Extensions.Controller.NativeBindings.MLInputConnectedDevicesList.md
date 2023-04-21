@@ -17,13 +17,13 @@ A structure containing information about the connected devices.
 
 ## Public Attributes
 
-### Version {#uint-version}
+### ConnectedControllerCount {#uint-connectedcontrollercount}
 
-Version of this structure. 
+Number of connected controllers. 
 
 ```csharp
 
-public uint Version;
+public uint ConnectedControllerCount;
 
 ```
 
@@ -51,13 +51,13 @@ public IntPtr ConnectedControllerIds;
 
 -----------
 
-### ConnectedControllerCount {#uint-connectedcontrollercount}
+### Version {#uint-version}
 
-Number of connected controllers. 
+Version of this structure. 
 
 ```csharp
 
-public uint ConnectedControllerCount;
+public uint Version;
 
 ```
 

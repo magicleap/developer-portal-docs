@@ -38,19 +38,19 @@ public static MLMediaPlayerEventCallbacksEx Create()
 
 ## Public Attributes
 
-### OnVideoSizeChanged {#onvideosizechangeddelegate-onvideosizechanged}
+### OnBufferingUpdate {#onbufferingupdatedelegate-onbufferingupdate}
 
-This callback function is invoked when the internal surface has changed size. 
+This callback function is invoked when buffered contents percentage changed. 
 
 ```csharp
 
-public OnVideoSizeChangedDelegate OnVideoSizeChanged;
+public OnBufferingUpdateDelegate OnBufferingUpdate;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [OnVideoSizeChangedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onvideosizechangeddelegate) | Delegate for the any OnVideoSizeChanged event.  |
+| [OnBufferingUpdateDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onbufferingupdatedelegate) | Delegate for the the OnBufferingUpdate event.  |
 
 
 
@@ -58,101 +58,13 @@ public OnVideoSizeChangedDelegate OnVideoSizeChanged;
 
 -----------
 
-### OnTrackDRMInfo {#ontrackdrminfodelegate-ontrackdrminfo}
+### OnCompletion {#oncompletiondelegate-oncompletion}
 
-This callback function is invoked when source has DRM protected media track(s). 
-
-```csharp
-
-public OnTrackDRMInfoDelegate OnTrackDRMInfo;
-
-```
-
-
-
-
-
-
------------
-
-### OnSeekComplete {#onseekcompletedelegate-onseekcomplete}
-
-This callback function is invoked when a seek operation has completed. 
+This callback is invoked when media player played back until end of media and has now come to a stop. Note that this callback does not fire when 'looping = true', because 
 
 ```csharp
 
-public OnSeekCompleteDelegate OnSeekComplete;
-
-```
-
-
-
-
-
-
------------
-
-### OnResetComplete {#onresetcompletedelegate-onresetcomplete}
-
-This callback function is invoked when an async reset operation has completed. 
-
-```csharp
-
-public OnResetCompleteDelegate OnResetComplete;
-
-```
-
-
-
-
-
-
------------
-
-### OnPrepared {#onprepareddelegate-onprepared}
-
-This callback is invoked when the player has finished preparing media and is ready to playback. 
-
-```csharp
-
-public OnPreparedDelegate OnPrepared;
-
-```
-
-
-
-
-
-
------------
-
-### OnInfo {#oninfodelegate-oninfo}
-
-This callback function is invoked when 
-
-```csharp
-
-public OnInfoDelegate OnInfo;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [OnInfoDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-oninfodelegate) | Delegate for the the OnInfo event.  |
-
-
-
-
-
------------
-
-### OnFramePacking {#onframepackingdelegate-onframepacking}
-
-This callback function is invoked when a stereoscopic video frame packing change. 
-
-```csharp
-
-public OnFramePackingDelegate OnFramePacking;
+public OnCompletionDelegate OnCompletion;
 
 ```
 
@@ -183,13 +95,13 @@ public OnErrorDelegate OnError;
 
 -----------
 
-### OnCompletion {#oncompletiondelegate-oncompletion}
+### OnFramePacking {#onframepackingdelegate-onframepacking}
 
-This callback is invoked when media player played back until end of media and has now come to a stop. Note that this callback does not fire when 'looping = true', because 
+This callback function is invoked when a stereoscopic video frame packing change. 
 
 ```csharp
 
-public OnCompletionDelegate OnCompletion;
+public OnFramePackingDelegate OnFramePacking;
 
 ```
 
@@ -200,19 +112,107 @@ public OnCompletionDelegate OnCompletion;
 
 -----------
 
-### OnBufferingUpdate {#onbufferingupdatedelegate-onbufferingupdate}
+### OnInfo {#oninfodelegate-oninfo}
 
-This callback function is invoked when buffered contents percentage changed. 
+This callback function is invoked when 
 
 ```csharp
 
-public OnBufferingUpdateDelegate OnBufferingUpdate;
+public OnInfoDelegate OnInfo;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [OnBufferingUpdateDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onbufferingupdatedelegate) | Delegate for the the OnBufferingUpdate event.  |
+| [OnInfoDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-oninfodelegate) | Delegate for the the OnInfo event.  |
+
+
+
+
+
+-----------
+
+### OnPrepared {#onprepareddelegate-onprepared}
+
+This callback is invoked when the player has finished preparing media and is ready to playback. 
+
+```csharp
+
+public OnPreparedDelegate OnPrepared;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnResetComplete {#onresetcompletedelegate-onresetcomplete}
+
+This callback function is invoked when an async reset operation has completed. 
+
+```csharp
+
+public OnResetCompleteDelegate OnResetComplete;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnSeekComplete {#onseekcompletedelegate-onseekcomplete}
+
+This callback function is invoked when a seek operation has completed. 
+
+```csharp
+
+public OnSeekCompleteDelegate OnSeekComplete;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnTrackDRMInfo {#ontrackdrminfodelegate-ontrackdrminfo}
+
+This callback function is invoked when source has DRM protected media track(s). 
+
+```csharp
+
+public OnTrackDRMInfoDelegate OnTrackDRMInfo;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnVideoSizeChanged {#onvideosizechangeddelegate-onvideosizechanged}
+
+This callback function is invoked when the internal surface has changed size. 
+
+```csharp
+
+public OnVideoSizeChangedDelegate OnVideoSizeChanged;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [OnVideoSizeChangedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onvideosizechangeddelegate) | Delegate for the any OnVideoSizeChanged event.  |
 
 
 

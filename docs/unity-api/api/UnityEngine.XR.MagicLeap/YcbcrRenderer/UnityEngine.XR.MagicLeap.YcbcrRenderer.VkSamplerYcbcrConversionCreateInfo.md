@@ -16,132 +16,13 @@ title: VkSamplerYcbcrConversionCreateInfo
 
 ## Public Attributes
 
-### ycbcrRange {#uint-ycbcrrange}
+### chromaFilter {#uint-chromafilter}
 
-VkSamplerYcbcrRange 
-
-```csharp
-
-public uint ycbcrRange;
-
-```
-
-
-
-
-
-
------------
-
-### ycbcrModel {#uint-ycbcrmodel}
-
-VkSamplerYcbcrModelConversion 
+VkFilter 
 
 ```csharp
 
-public uint ycbcrModel;
-
-```
-
-
-
-
-
-
------------
-
-### yChromaOffset {#uint-ychromaoffset}
-
-VkChromaLocation 
-
-```csharp
-
-public uint yChromaOffset;
-
-```
-
-
-
-
-
-
------------
-
-### xChromaOffset {#uint-xchromaoffset}
-
-VkChromaLocation 
-
-```csharp
-
-public uint xChromaOffset;
-
-```
-
-
-
-
-
-
------------
-
-### sType {#uint-stype}
-
-VkStructureType 
-
-```csharp
-
-public uint sType;
-
-```
-
-
-
-
-
-
------------
-
-### pNext {#intptr-pnext}
-
-void&#42; 
-
-```csharp
-
-public IntPtr pNext;
-
-```
-
-
-
-
-
-
------------
-
-### format {#uint-format}
-
-VkFormat 
-
-```csharp
-
-public uint format;
-
-```
-
-
-
-
-
-
------------
-
-### forceExplicitReconstruction {#uint-forceexplicitreconstruction}
-
-VkBool32 
-
-```csharp
-
-public uint forceExplicitReconstruction;
+public uint chromaFilter;
 
 ```
 
@@ -169,13 +50,132 @@ public VkComponentMapping components;
 
 -----------
 
-### chromaFilter {#uint-chromafilter}
+### forceExplicitReconstruction {#uint-forceexplicitreconstruction}
 
-VkFilter 
+VkBool32 
 
 ```csharp
 
-public uint chromaFilter;
+public uint forceExplicitReconstruction;
+
+```
+
+
+
+
+
+
+-----------
+
+### format {#uint-format}
+
+VkFormat 
+
+```csharp
+
+public uint format;
+
+```
+
+
+
+
+
+
+-----------
+
+### pNext {#intptr-pnext}
+
+void&#42; 
+
+```csharp
+
+public IntPtr pNext;
+
+```
+
+
+
+
+
+
+-----------
+
+### sType {#uint-stype}
+
+VkStructureType 
+
+```csharp
+
+public uint sType;
+
+```
+
+
+
+
+
+
+-----------
+
+### xChromaOffset {#uint-xchromaoffset}
+
+VkChromaLocation 
+
+```csharp
+
+public uint xChromaOffset;
+
+```
+
+
+
+
+
+
+-----------
+
+### yChromaOffset {#uint-ychromaoffset}
+
+VkChromaLocation 
+
+```csharp
+
+public uint yChromaOffset;
+
+```
+
+
+
+
+
+
+-----------
+
+### ycbcrModel {#uint-ycbcrmodel}
+
+VkSamplerYcbcrModelConversion 
+
+```csharp
+
+public uint ycbcrModel;
+
+```
+
+
+
+
+
+
+-----------
+
+### ycbcrRange {#uint-ycbcrrange}
+
+VkSamplerYcbcrRange 
+
+```csharp
+
+public uint ycbcrRange;
 
 ```
 

@@ -18,6 +18,23 @@ Inherits from: <br></br>Provider
 
 ## Public Fields
 
+### imageLibrary {#override-runtimereferenceimagelibrary-imagelibrary}
+
+The current  RuntimeReferenceImageLibrary . If  null  then the subsystem will be set to "off". 
+
+```csharp
+
+public override RuntimeReferenceImageLibrary imageLibrary { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### requestedMaxNumberOfMovingImages {#override-int-requestedmaxnumberofmovingimages}
 
 Stores the requested maximum number of concurrently tracked moving images. 
@@ -39,48 +56,42 @@ Magic Leap Image Tracking has the ability to set an enforcement policy on the ma
 
 -----------
 
-### imageLibrary {#override-runtimereferenceimagelibrary-imagelibrary}
-
-The current  RuntimeReferenceImageLibrary . If  null  then the subsystem will be set to "off". 
-
-```csharp
-
-public override RuntimeReferenceImageLibrary imageLibrary { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
-### bool RequestPermissionIfNecessary {#bool-requestpermissionifnecessary}
+### override RuntimeReferenceImageLibrary CreateRuntimeLibrary {#override-runtimereferenceimagelibrary-createruntimelibrary}
 
-Allows the user to re-request privileges 
+Creates a  RuntimeReferenceImageLibrary  from the passed in  XRReferenceImageLibrary  passed in. 
 
 ```csharp
-public bool RequestPermissionIfNecessary()
+public override RuntimeReferenceImageLibrary CreateRuntimeLibrary(
+    XRReferenceImageLibrary serializedLibrary
+)
 ```
 
 
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| XRReferenceImageLibrary |serializedLibrary|The  XRReferenceImageLibrary  that is used to create the  RuntimeReferenceImageLibrary |
 
 
 
 
-**Returns**:  true  if the Color Camera privileges were granted and  false  otherwise. 
+
+
+**Returns**: A new  RuntimeReferenceImageLibrary  created from the old 
 
 
 
 -----------
 
-###  MagicLeapProvider {#functions-magicleapprovider}
+### override void Destroy {#override-void-destroy}
+
+Destroy the image tracking subsystem. 
 
 ```csharp
-public MagicLeapProvider()
+public override void Destroy()
 ```
 
 
@@ -114,12 +125,10 @@ public unsafe override TrackableChanges< XRTrackedImage > GetChanges(
 
 -----------
 
-### override void Destroy {#override-void-destroy}
-
-Destroy the image tracking subsystem. 
+###  MagicLeapProvider {#functions-magicleapprovider}
 
 ```csharp
-public override void Destroy()
+public MagicLeapProvider()
 ```
 
 
@@ -129,29 +138,20 @@ public override void Destroy()
 
 -----------
 
-### override RuntimeReferenceImageLibrary CreateRuntimeLibrary {#override-runtimereferenceimagelibrary-createruntimelibrary}
+### bool RequestPermissionIfNecessary {#bool-requestpermissionifnecessary}
 
-Creates a  RuntimeReferenceImageLibrary  from the passed in  XRReferenceImageLibrary  passed in. 
+Allows the user to re-request privileges 
 
 ```csharp
-public override RuntimeReferenceImageLibrary CreateRuntimeLibrary(
-    XRReferenceImageLibrary serializedLibrary
-)
+public bool RequestPermissionIfNecessary()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| XRReferenceImageLibrary |serializedLibrary|The  XRReferenceImageLibrary  that is used to create the  RuntimeReferenceImageLibrary |
 
 
 
 
-
-
-**Returns**: A new  RuntimeReferenceImageLibrary  created from the old 
+**Returns**:  true  if the Color Camera privileges were granted and  false  otherwise. 
 
 
 

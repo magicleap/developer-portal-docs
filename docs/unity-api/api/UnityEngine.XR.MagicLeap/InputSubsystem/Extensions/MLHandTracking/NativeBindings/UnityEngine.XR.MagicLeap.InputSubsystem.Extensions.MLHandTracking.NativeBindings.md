@@ -16,12 +16,12 @@ title: NativeBindings
 
 ## Public Methods
 
-### bool TryGetKeyPointsMask {#bool-trygetkeypointsmask}
+### string GetKeyPointName {#string-getkeypointname}
 
 ```csharp
-public static bool TryGetKeyPointsMask(
-    InputDevice handDevice,
-    out bool [] keyPointsMask
+public static string GetKeyPointName(
+    KeyPointLocation location,
+    int keyPointIndex
 )
 ```
 
@@ -30,32 +30,8 @@ public static bool TryGetKeyPointsMask(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| InputDevice |handDevice||
-| out bool [] |keyPointsMask||
-
-
-
-
-
-
------------
-
-### void SetPreRenderPoseUpdate {#void-setprerenderposeupdate}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) call for pre render Keypoints update. 
-
-```csharp
-public void SetPreRenderPoseUpdate(
-    bool enable
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |enable|bool to determine if pre render pose update should happen.|
+| KeyPointLocation |location||
+| int |keyPointIndex||
 
 
 
@@ -90,12 +66,13 @@ public static bool GetKeyPointStatus(
 
 -----------
 
-### string GetKeyPointName {#string-getkeypointname}
+### void SetPreRenderPoseUpdate {#void-setprerenderposeupdate}
+
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) call for pre render Keypoints update. 
 
 ```csharp
-public static string GetKeyPointName(
-    KeyPointLocation location,
-    int keyPointIndex
+public void SetPreRenderPoseUpdate(
+    bool enable
 )
 ```
 
@@ -104,8 +81,31 @@ public static string GetKeyPointName(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| KeyPointLocation |location||
-| int |keyPointIndex||
+| bool |enable|bool to determine if pre render pose update should happen.|
+
+
+
+
+
+
+-----------
+
+### bool TryGetKeyPointsMask {#bool-trygetkeypointsmask}
+
+```csharp
+public static bool TryGetKeyPointsMask(
+    InputDevice handDevice,
+    out bool [] keyPointsMask
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputDevice |handDevice||
+| out bool [] |keyPointsMask||
 
 
 

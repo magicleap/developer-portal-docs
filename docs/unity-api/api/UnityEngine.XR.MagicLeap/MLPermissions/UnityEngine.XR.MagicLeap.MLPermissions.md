@@ -21,56 +21,10 @@ Inherits from: <br></br>[MLAutoAPISingleton< MLPermissions >](/unity-api/api/Uni
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) RequestPermission {#mlresult-requestpermission}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) CheckPermission {#mlresult-checkpermission}
 
 ```csharp
-public static MLResult RequestPermission(
-    string permission,
-    Callbacks callbacks
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |permission||
-| [Callbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.Callbacks.md) |callbacks||
-
-
-
-
-
-
------------
-
-### delegate void OnPermissionGrantedDelegate {#delegate-void-onpermissiongranteddelegate}
-
-```csharp
-public delegate void OnPermissionGrantedDelegate(
-    string permission
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |permission||
-
-
-
-
-
-
------------
-
-### delegate void OnPermissionDeniedDelegate {#delegate-void-onpermissiondenieddelegate}
-
-```csharp
-public delegate void OnPermissionDeniedDelegate(
+public static MLResult CheckPermission(
     string permission
 )
 ```
@@ -111,10 +65,10 @@ public delegate void OnPermissionDeniedAndDontAskAgainDelegate(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) CheckPermission {#mlresult-checkpermission}
+### delegate void OnPermissionDeniedDelegate {#delegate-void-onpermissiondenieddelegate}
 
 ```csharp
-public static MLResult CheckPermission(
+public delegate void OnPermissionDeniedDelegate(
     string permission
 )
 ```
@@ -133,20 +87,66 @@ public static MLResult CheckPermission(
 
 -----------
 
-## Protected Methods
-
-### Update {#override-void-update}
-
-Update function that will run once per Unity frame. 
+### delegate void OnPermissionGrantedDelegate {#delegate-void-onpermissiongranteddelegate}
 
 ```csharp
-protected virtual override void Update()
+public delegate void OnPermissionGrantedDelegate(
+    string permission
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |permission||
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) RequestPermission {#mlresult-requestpermission}
+
+```csharp
+public static MLResult RequestPermission(
+    string permission,
+    Callbacks callbacks
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |permission||
+| [Callbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.Callbacks.md) |callbacks||
+
+
+
+
+
+
+-----------
+
+## Protected Methods
+
+### StartAPI {#override-startapi}
+
+Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 
+
+```csharp
+protected virtual override MLResult.Code StartAPI()
 ```
 
 
 
 
-**Reimplements**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
+**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
 
 
 
@@ -169,18 +169,18 @@ protected virtual override MLResult.Code StopAPI()
 
 -----------
 
-### StartAPI {#override-startapi}
+### Update {#override-void-update}
 
-Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 
+Update function that will run once per Unity frame. 
 
 ```csharp
-protected virtual override MLResult.Code StartAPI()
+protected virtual override void Update()
 ```
 
 
 
 
-**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
+**Reimplements**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
 
 
 

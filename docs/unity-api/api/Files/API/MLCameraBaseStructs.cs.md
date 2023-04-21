@@ -227,12 +227,10 @@ namespace UnityEngine.XR.MagicLeap
 
             public override string ToString()
             {
-                string result = $"Format: {Format}
-";
+                string result = $"Format: {Format}\n";
                 for (int i = 0; i < Planes.Length; ++i)
                 {
-                    result += $"Plane[{i}]: {Planes[i]}
-";
+                    result += $"Plane[{i}]: {Planes[i]}\n";
                 }
                 return result;
             }

@@ -103,8 +103,7 @@ Returns whether all microphone capture is muted or not.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

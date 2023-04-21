@@ -40,21 +40,6 @@ This is an experimental API which may be modified or removed without any prior n
 
 ## Public Fields
 
-### IsConnected {#bool-isconnected}
-
-```csharp
-
-public bool IsConnected { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### CurrentSettings {#settings-currentsettings}
 
 ```csharp
@@ -73,14 +58,29 @@ public Settings CurrentSettings { get; set; }
 
 -----------
 
-## Public Methods
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) UpdateSettings {#mlresult-updatesettings}
-
-Update the world camera settings. 
+### IsConnected {#bool-isconnected}
 
 ```csharp
-public MLResult UpdateSettings(
+
+public bool IsConnected { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+## Public Methods
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Connect {#mlresult-connect}
+
+Connect to world cameras. 
+
+```csharp
+public MLResult Connect(
     in Settings settings
 )
 ```
@@ -91,6 +91,21 @@ public MLResult UpdateSettings(
 | Type | Name  | Description  | 
 |--|--|--|
 | in [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) |settings|A structure to encapsulate the camera settings. |
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Disconnect {#mlresult-disconnect}
+
+Disconnect from world camera. This will disconnect from all the world camera currently connected. 
+
+```csharp
+public MLResult Disconnect()
+```
 
 
 
@@ -125,27 +140,12 @@ public MLResult GetLatestWorldCameraData(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Disconnect {#mlresult-disconnect}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) UpdateSettings {#mlresult-updatesettings}
 
-Disconnect from world camera. This will disconnect from all the world camera currently connected. 
-
-```csharp
-public MLResult Disconnect()
-```
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Connect {#mlresult-connect}
-
-Connect to world cameras. 
+Update the world camera settings. 
 
 ```csharp
-public MLResult Connect(
+public MLResult UpdateSettings(
     in Settings settings
 )
 ```
@@ -194,25 +194,6 @@ protected virtual override void OnApplicationPause(
 
 ## Public Enums
 
-### Mode {#enums-mode}
-
-Enumeration of world camera modes. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Unknown | 0| None.   |
-| LowExposure | 1 << 0| Low exposure mode. This mode is currently only available when the controller is being tracked.   |
-| NormalExposure | 1 << 1| Normal exposure mode.   |
-
-
-
-
-
-
-
-
------------
-
 ### CameraId {#enums-cameraid}
 
 Enumeration of all the available world camera sensors. 
@@ -223,6 +204,25 @@ Enumeration of all the available world camera sensors.
 | Right | 1 << 1| Right World camera.   |
 | Center | 1 << 2| Center World camera.   |
 | All | Left | Right | Center| All World cameras.   |
+
+
+
+
+
+
+
+
+-----------
+
+### Mode {#enums-mode}
+
+Enumeration of world camera modes. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Unknown | 0| None.   |
+| LowExposure | 1 << 0| Low exposure mode. This mode is currently only available when the controller is being tracked.   |
+| NormalExposure | 1 << 1| Normal exposure mode.   |
 
 
 

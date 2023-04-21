@@ -18,62 +18,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void Cleanup {#void-cleanup}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCea708ParserSetEmitEventCallback_Exists {#void-nativebinding-mlmediacea708parsersetemiteventcallback-exists}
-
-```csharp
-public void NativeBinding_MLMediaCea708ParserSetEmitEventCallback_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCea708ParserParse_Exists {#void-nativebinding-mlmediacea708parserparse-exists}
-
-```csharp
-public void NativeBinding_MLMediaCea708ParserParse_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCea708ParserDestroy_Exists {#void-nativebinding-mlmediacea708parserdestroy-exists}
-
-```csharp
-public void NativeBinding_MLMediaCea708ParserDestroy_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaCea708ParserCreate_Exists {#void-nativebinding-mlmediacea708parsercreate-exists}
-
-```csharp
-public void NativeBinding_MLMediaCea708ParserCreate_Exists()
+public void Cleanup()
 ```
 
 
@@ -96,10 +44,62 @@ public void Init()
 
 -----------
 
-### void Cleanup {#void-cleanup}
+### void NativeBinding_MLMediaCea708ParserCreate_Exists {#void-nativebinding-mlmediacea708parsercreate-exists}
 
 ```csharp
-public void Cleanup()
+public void NativeBinding_MLMediaCea708ParserCreate_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaCea708ParserDestroy_Exists {#void-nativebinding-mlmediacea708parserdestroy-exists}
+
+```csharp
+public void NativeBinding_MLMediaCea708ParserDestroy_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaCea708ParserParse_Exists {#void-nativebinding-mlmediacea708parserparse-exists}
+
+```csharp
+public void NativeBinding_MLMediaCea708ParserParse_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaCea708ParserSetEmitEventCallback_Exists {#void-nativebinding-mlmediacea708parsersetemiteventcallback-exists}
+
+```csharp
+public void NativeBinding_MLMediaCea708ParserSetEmitEventCallback_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

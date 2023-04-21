@@ -37,13 +37,11 @@ Class that represents a source used by the [MLWebRTC](/unity-api/api/UnityEngine
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetStream {#mlresult-setstream}
-
-Sets the stream of the video sink sink. 
+### bool AcquireNextAvailableFrame {#bool-acquirenextavailableframe}
 
 ```csharp
-public MLResult SetStream(
-    MediaStream stream
+public bool AcquireNextAvailableFrame(
+    out Frame newFrame
 )
 ```
 
@@ -52,129 +50,10 @@ public MLResult SetStream(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) |stream|The stream to use.|
+| out [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) |newFrame|Struct representing a captured camera frame. |
 
 
 
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
-
-
-
------------
-
-### void ReleaseFrame {#void-releaseframe}
-
-```csharp
-public void ReleaseFrame()
-```
-
-
-
-
-
-
------------
-
-### delegate void OnStreamChangedDelegate {#delegate-void-onstreamchangeddelegate}
-
-```csharp
-public delegate void OnStreamChangedDelegate(
-    MediaStream stream
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) |stream|Class that represents a media stream object. |
-
-
-
-
-
-
------------
-
-### delegate void OnFrameResolutionChangedDelegate {#delegate-void-onframeresolutionchangeddelegate}
-
-```csharp
-public delegate void OnFrameResolutionChangedDelegate(
-    uint newWidth,
-    uint newHeight
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| uint |newWidth||
-| uint |newHeight||
-
-
-
-
-
-
------------
-
-### delegate void OnDestroySinkDelegate {#delegate-void-ondestroysinkdelegate}
-
-```csharp
-public delegate void OnDestroySinkDelegate(
-    VideoSink videoSink
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [VideoSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.md) |videoSink|Class that represents a video sink used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. Video sinks are fed data by media sources and produces frames to render. |
-
-
-
-
-
-
------------
-
-### bool IsNewFrameAvailable {#bool-isnewframeavailable}
-
-```csharp
-public bool IsNewFrameAvailable()
-```
-
-
-
-
-
-
------------
-
-### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#override-destroy}
-
-Destroys the video sink. 
-
-```csharp
-public virtual override MLResult Destroy()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
-
-**Reimplements**: [Destroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md#abstract-destroy)
 
 
 
@@ -208,11 +87,45 @@ public static VideoSink Create(
 
 -----------
 
-### bool AcquireNextAvailableFrame {#bool-acquirenextavailableframe}
+### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#override-destroy}
+
+Destroys the video sink. 
 
 ```csharp
-public bool AcquireNextAvailableFrame(
-    out Frame newFrame
+public virtual override MLResult Destroy()
+```
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
+
+**Reimplements**: [Destroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md#abstract-destroy)
+
+
+
+-----------
+
+### bool IsNewFrameAvailable {#bool-isnewframeavailable}
+
+```csharp
+public bool IsNewFrameAvailable()
+```
+
+
+
+
+
+
+-----------
+
+### delegate void OnDestroySinkDelegate {#delegate-void-ondestroysinkdelegate}
+
+```csharp
+public delegate void OnDestroySinkDelegate(
+    VideoSink videoSink
 )
 ```
 
@@ -221,10 +134,97 @@ public bool AcquireNextAvailableFrame(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) |newFrame|Struct representing a captured camera frame. |
+| [VideoSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.md) |videoSink|Class that represents a video sink used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. Video sinks are fed data by media sources and produces frames to render. |
 
 
 
+
+
+
+-----------
+
+### delegate void OnFrameResolutionChangedDelegate {#delegate-void-onframeresolutionchangeddelegate}
+
+```csharp
+public delegate void OnFrameResolutionChangedDelegate(
+    uint newWidth,
+    uint newHeight
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| uint |newWidth||
+| uint |newHeight||
+
+
+
+
+
+
+-----------
+
+### delegate void OnStreamChangedDelegate {#delegate-void-onstreamchangeddelegate}
+
+```csharp
+public delegate void OnStreamChangedDelegate(
+    MediaStream stream
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) |stream|Class that represents a media stream object. |
+
+
+
+
+
+
+-----------
+
+### void ReleaseFrame {#void-releaseframe}
+
+```csharp
+public void ReleaseFrame()
+```
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetStream {#mlresult-setstream}
+
+Sets the stream of the video sink sink. 
+
+```csharp
+public MLResult SetStream(
+    MediaStream stream
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) |stream|The stream to use.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
 
 
 
@@ -262,10 +262,10 @@ protected override MLResult SetTrack(
 
 ## Public Events
 
-### OnStreamChanged {#onstreamchangeddelegate-onstreamchanged}
+### OnDestroySink {#ondestroysinkdelegate-ondestroysink}
 
 ```csharp
-public OnStreamChangedDelegate OnStreamChanged()
+public OnDestroySinkDelegate OnDestroySink()
 ```
 
 
@@ -288,10 +288,10 @@ public OnFrameResolutionChangedDelegate OnFrameResolutionChanged()
 
 -----------
 
-### OnDestroySink {#ondestroysinkdelegate-ondestroysink}
+### OnStreamChanged {#onstreamchangeddelegate-onstreamchanged}
 
 ```csharp
-public OnDestroySinkDelegate OnDestroySink()
+public OnStreamChangedDelegate OnStreamChanged()
 ```
 
 

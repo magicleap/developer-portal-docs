@@ -16,11 +16,11 @@ title: CaptionStyleColor
 
 ## Public Attributes
 
-### style {#uint-style}
+### color {#uint-color}
 
 ```csharp
 
-public uint style;
+public uint color;
 
 ```
 
@@ -31,11 +31,11 @@ public uint style;
 
 -----------
 
-### color {#uint-color}
+### style {#uint-style}
 
 ```csharp
 
-public uint color;
+public uint style;
 
 ```
 

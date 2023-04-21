@@ -17,13 +17,13 @@ MediaDRM expiration update info associated with a session.
 
 ## Public Attributes
 
-### sessionIdByteArray {#readonly-intptr-sessionidbytearray}
+### data {#readonly-intptr-data}
 
-[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
+User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public readonly IntPtr sessionIdByteArray;
+public readonly IntPtr data;
 
 ```
 
@@ -51,13 +51,13 @@ public readonly ulong expirationTimeMs;
 
 -----------
 
-### data {#readonly-intptr-data}
+### sessionIdByteArray {#readonly-intptr-sessionidbytearray}
 
-User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public readonly IntPtr data;
+public readonly IntPtr sessionIdByteArray;
 
 ```
 

@@ -41,13 +41,13 @@ public static bool MicrophoneMuted { get; set; }
 
 ## Public Methods
 
-### delegate void OnMicrophoneMuteChangedDelegate {#delegate-void-onmicrophonemutechangeddelegate}
+### int GetChannels {#int-getchannels}
 
-The delegate for the microphone mute changed event. 
+Gets the channels of the capture type. 
 
 ```csharp
-public delegate void OnMicrophoneMuteChangedDelegate(
-    bool muted
+public static int GetChannels(
+    MicCaptureType captureType
 )
 ```
 
@@ -56,7 +56,7 @@ public delegate void OnMicrophoneMuteChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| bool |muted|The new mute state of the microphone.|
+| [MicCaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
 
 
 
@@ -89,13 +89,13 @@ public static int GetSampleRate(
 
 -----------
 
-### int GetChannels {#int-getchannels}
+### delegate void OnMicrophoneMuteChangedDelegate {#delegate-void-onmicrophonemutechangeddelegate}
 
-Gets the channels of the capture type. 
+The delegate for the microphone mute changed event. 
 
 ```csharp
-public static int GetChannels(
-    MicCaptureType captureType
+public delegate void OnMicrophoneMuteChangedDelegate(
+    bool muted
 )
 ```
 
@@ -104,7 +104,7 @@ public static int GetChannels(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MicCaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
+| bool |muted|The new mute state of the microphone.|
 
 
 
@@ -114,23 +114,6 @@ public static int GetChannels(
 -----------
 
 ## Protected Methods
-
-### Update {#override-void-update}
-
-Called every device frame 
-
-```csharp
-protected virtual override void Update()
-```
-
-
-
-
-**Reimplements**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
-
-
-
------------
 
 ### StopAPI {#override-stopapi}
 
@@ -144,6 +127,23 @@ protected virtual override MLResult.Code StopAPI()
 
 
 **Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
+
+
+
+-----------
+
+### Update {#override-void-update}
+
+Called every device frame 
+
+```csharp
+protected virtual override void Update()
+```
+
+
+
+
+**Reimplements**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
 
 
 

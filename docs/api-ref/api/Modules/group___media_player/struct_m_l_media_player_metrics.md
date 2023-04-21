@@ -34,8 +34,7 @@ MediaPlayer metrics data.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 

@@ -53,119 +53,11 @@ public static MLDepthCameraData Init(
 
 ## Public Attributes
 
-### Version {#uint-version}
+### AmbientRawDepthImageFrameBufferPtr {#intptr-ambientrawdepthimageframebufferptr}
 
 ```csharp
 
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### Intrinsics {#mldepthcameraintrinsics-intrinsics}
-
-```csharp
-
-public MLDepthCameraIntrinsics Intrinsics;
-
-```
-
-
-
-
-
-
------------
-
-### FrameType {#frametype-frametype}
-
-```csharp
-
-public FrameType FrameType;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types  |
-
-
-
-
-
------------
-
-### FrameTimestamp {#long-frametimestamp}
-
-```csharp
-
-public long FrameTimestamp;
-
-```
-
-
-
-
-
-
------------
-
-### FrameNumber {#long-framenumber}
-
-```csharp
-
-public long FrameNumber;
-
-```
-
-
-
-
-
-
------------
-
-### DepthImageFrameBufferPtr {#intptr-depthimageframebufferptr}
-
-```csharp
-
-public IntPtr DepthImageFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### DepthFlagsBufferFrameBufferPtr {#intptr-depthflagsbufferframebufferptr}
-
-```csharp
-
-public IntPtr DepthFlagsBufferFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### ConfidenceBufferFrameBufferPtr {#intptr-confidencebufferframebufferptr}
-
-```csharp
-
-public IntPtr ConfidenceBufferFrameBufferPtr;
+public IntPtr AmbientRawDepthImageFrameBufferPtr;
 
 ```
 
@@ -194,11 +86,119 @@ public MLTransform CameraPose;
 
 -----------
 
-### AmbientRawDepthImageFrameBufferPtr {#intptr-ambientrawdepthimageframebufferptr}
+### ConfidenceBufferFrameBufferPtr {#intptr-confidencebufferframebufferptr}
 
 ```csharp
 
-public IntPtr AmbientRawDepthImageFrameBufferPtr;
+public IntPtr ConfidenceBufferFrameBufferPtr;
+
+```
+
+
+
+
+
+
+-----------
+
+### DepthFlagsBufferFrameBufferPtr {#intptr-depthflagsbufferframebufferptr}
+
+```csharp
+
+public IntPtr DepthFlagsBufferFrameBufferPtr;
+
+```
+
+
+
+
+
+
+-----------
+
+### DepthImageFrameBufferPtr {#intptr-depthimageframebufferptr}
+
+```csharp
+
+public IntPtr DepthImageFrameBufferPtr;
+
+```
+
+
+
+
+
+
+-----------
+
+### FrameNumber {#long-framenumber}
+
+```csharp
+
+public long FrameNumber;
+
+```
+
+
+
+
+
+
+-----------
+
+### FrameTimestamp {#long-frametimestamp}
+
+```csharp
+
+public long FrameTimestamp;
+
+```
+
+
+
+
+
+
+-----------
+
+### FrameType {#frametype-frametype}
+
+```csharp
+
+public FrameType FrameType;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types  |
+
+
+
+
+
+-----------
+
+### Intrinsics {#mldepthcameraintrinsics-intrinsics}
+
+```csharp
+
+public MLDepthCameraIntrinsics Intrinsics;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+```csharp
+
+public uint Version;
 
 ```
 

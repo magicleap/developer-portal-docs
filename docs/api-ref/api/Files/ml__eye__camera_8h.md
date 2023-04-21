@@ -92,8 +92,7 @@ This structure must be initialized by calling [MLEyeCameraSettingsInit](/api-ref
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -114,8 +113,7 @@ A structure to encapsulate per plane info for each camera frame.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -136,8 +134,7 @@ A structure to encapsulate output data for each camera sensor.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -160,8 +157,7 @@ This structure must be initialized by calling [MLEyeCameraDataInit](/api-ref/api
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -195,8 +191,7 @@ Initialize the camera settings structure. Shall be called before calling [MLEyeC
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -222,8 +217,7 @@ Initialize [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -266,8 +260,7 @@ Connect to eye cameras.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -308,8 +301,7 @@ Update the eye camera settings.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -359,8 +351,7 @@ If there are no new camera frames within the timeout_ms duration then the API wi
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -403,8 +394,7 @@ This function should be called exactly once for each call to [MLEyeCameraGetLate
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -445,8 +435,7 @@ This will disconnect from all the eye camera(s) currently connected.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

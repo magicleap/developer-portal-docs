@@ -34,8 +34,7 @@ Type to represent polygons of all returned planes.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -74,8 +73,7 @@ List of [MLPlaneBoundaries](/api-ref/api/Modules/group___planes/struct_m_l_plane
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -94,8 +92,7 @@ Count of [MLPlaneBoundaries](/api-ref/api/Modules/group___planes/struct_m_l_plan
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 

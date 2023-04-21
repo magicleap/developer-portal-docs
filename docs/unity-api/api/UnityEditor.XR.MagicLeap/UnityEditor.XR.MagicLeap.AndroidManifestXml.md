@@ -38,14 +38,11 @@ public XmlElement ManifestElement { get; set; }
 
 ## Public Methods
 
-### void UpdateOrCreateAttribute {#void-updateorcreateattribute}
+### void AddPermission {#void-addpermission}
 
 ```csharp
-public void UpdateOrCreateAttribute(
-    XmlElement xmlParentElement,
-    string tag,
-    string key,
-    string value
+public void AddPermission(
+    string permissionName
 )
 ```
 
@@ -54,10 +51,7 @@ public void UpdateOrCreateAttribute(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| XmlElement |xmlParentElement||
-| string |tag||
-| string |key||
-| string |value||
+| string |permissionName||
 
 
 
@@ -66,10 +60,10 @@ public void UpdateOrCreateAttribute(
 
 -----------
 
-### string SaveAs {#string-saveas}
+###  AndroidManifestXml {#functions-androidmanifestxml}
 
 ```csharp
-public string SaveAs(
+public AndroidManifestXml(
     string path
 )
 ```
@@ -88,10 +82,10 @@ public string SaveAs(
 
 -----------
 
-### string Save {#string-save}
+### string [] GetIncludedPermissions {#string-getincludedpermissions}
 
 ```csharp
-public string Save()
+public string [] GetIncludedPermissions()
 ```
 
 
@@ -123,10 +117,10 @@ public void RemovePermission(
 
 -----------
 
-### string [] GetIncludedPermissions {#string-getincludedpermissions}
+### string Save {#string-save}
 
 ```csharp
-public string [] GetIncludedPermissions()
+public string Save()
 ```
 
 
@@ -136,10 +130,10 @@ public string [] GetIncludedPermissions()
 
 -----------
 
-###  AndroidManifestXml {#functions-androidmanifestxml}
+### string SaveAs {#string-saveas}
 
 ```csharp
-public AndroidManifestXml(
+public string SaveAs(
     string path
 )
 ```
@@ -158,11 +152,14 @@ public AndroidManifestXml(
 
 -----------
 
-### void AddPermission {#void-addpermission}
+### void UpdateOrCreateAttribute {#void-updateorcreateattribute}
 
 ```csharp
-public void AddPermission(
-    string permissionName
+public void UpdateOrCreateAttribute(
+    XmlElement xmlParentElement,
+    string tag,
+    string key,
+    string value
 )
 ```
 
@@ -171,7 +168,10 @@ public void AddPermission(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |permissionName||
+| XmlElement |xmlParentElement||
+| string |tag||
+| string |key||
+| string |value||
 
 
 
@@ -182,11 +182,11 @@ public void AddPermission(
 
 ## Public Attributes
 
-### AssetPath {#string-assetpath}
+### AndroidXmlNamespace {#const-string-androidxmlnamespace}
 
 ```csharp
 
-public static string AssetPath = "Assets/Plugins/Android/AndroidManifest.xml";
+public const string AndroidXmlNamespace = "http://schemas.android.com/apk/res/android";
 
 ```
 
@@ -197,11 +197,11 @@ public static string AssetPath = "Assets/Plugins/Android/AndroidManifest.xml";
 
 -----------
 
-### AndroidXmlNamespace {#const-string-androidxmlnamespace}
+### AssetPath {#string-assetpath}
 
 ```csharp
 
-public const string AndroidXmlNamespace = "http://schemas.android.com/apk/res/android";
+public static string AssetPath = "Assets/Plugins/Android/AndroidManifest.xml";
 
 ```
 

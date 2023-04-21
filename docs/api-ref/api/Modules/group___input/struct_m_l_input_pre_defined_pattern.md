@@ -36,8 +36,7 @@ When playing haptic pre-defined pattern, needed information is stored in this st
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

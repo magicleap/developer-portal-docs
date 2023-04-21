@@ -21,13 +21,11 @@ Inherited by: <br></br>[UnitySDKEditorTests.MLAnchors](/unity-api/api/UnitySDKEd
 
 ## Protected Methods
 
-### Log {#string-log}
+### AssertThatMethodExists {#void-assertthatmethodexists}
 
 ```csharp
-protected string Log(
-    string structName,
-    ulong capiSize,
-    int sdkSize
+protected void AssertThatMethodExists(
+    string methodName
 )
 ```
 
@@ -36,9 +34,7 @@ protected string Log(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |structName||
-| ulong |capiSize||
-| int |sdkSize||
+| string |methodName||
 
 
 
@@ -69,11 +65,13 @@ protected Type FindTypeByName(
 
 -----------
 
-### AssertThatMethodExists {#void-assertthatmethodexists}
+### Log {#string-log}
 
 ```csharp
-protected void AssertThatMethodExists(
-    string methodName
+protected string Log(
+    string structName,
+    ulong capiSize,
+    int sdkSize
 )
 ```
 
@@ -82,7 +80,9 @@ protected void AssertThatMethodExists(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |methodName||
+| string |structName||
+| ulong |capiSize||
+| int |sdkSize||
 
 
 

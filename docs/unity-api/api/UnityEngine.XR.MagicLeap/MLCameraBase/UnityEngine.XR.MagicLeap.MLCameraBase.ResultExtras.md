@@ -16,19 +16,16 @@ title: ResultExtras
 
 ## Public Attributes
 
-### VCamTimestamp {#readonly-vcamtimestamp}
+### FrameNumber {#readonly-long-framenumber}
 
-Frame timestamp in microseconds. 
+Frame number associated with this result. 
 
 ```csharp
 
-public readonly MLTime VCamTimestamp;
+public readonly long FrameNumber;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 
 
 
@@ -56,16 +53,19 @@ public readonly IntrinsicCalibrationParameters Intrinsics;
 
 -----------
 
-### FrameNumber {#readonly-long-framenumber}
+### VCamTimestamp {#readonly-vcamtimestamp}
 
-Frame number associated with this result. 
+Frame timestamp in microseconds. 
 
 ```csharp
 
-public readonly long FrameNumber;
+public readonly MLTime VCamTimestamp;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 
 
 

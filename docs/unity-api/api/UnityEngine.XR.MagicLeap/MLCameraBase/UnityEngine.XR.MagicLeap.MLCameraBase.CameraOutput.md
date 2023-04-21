@@ -32,24 +32,6 @@ public override string ToString()
 
 ## Public Attributes
 
-### Planes {#planeinfo-planes}
-
-```csharp
-
-public PlaneInfo [] Planes;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) [] | Contains both the data and information necessary to read the data for a specific buffer in a capture  |
-
-
-
-
-
------------
-
 ### Format {#outputformat-format}
 
 ```csharp
@@ -61,6 +43,24 @@ public OutputFormat Format;
 | Type | Description  | 
 |--|--|
 | [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
+
+
+
+
+
+-----------
+
+### Planes {#planeinfo-planes}
+
+```csharp
+
+public PlaneInfo [] Planes;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) [] | Contains both the data and information necessary to read the data for a specific buffer in a capture  |
 
 
 

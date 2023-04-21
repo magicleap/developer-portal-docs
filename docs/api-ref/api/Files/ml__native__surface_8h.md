@@ -122,8 +122,7 @@ Graphic backend to use.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -147,8 +146,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -169,8 +167,7 @@ Configuration values for creating the Native Surface.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -191,8 +188,7 @@ Callbacks for notifying when an output frame is available for consumption.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_on_frame_available_callback.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -281,8 +277,7 @@ The NativeSurface created through this API should be released using MLNativeSurf
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -321,8 +316,7 @@ Release a NativeSurface.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -371,8 +365,7 @@ This function returns the platform-dependent native window typically used by Gra
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -454,8 +447,7 @@ Note: The returned buffer's color format is multi-planar YUV420. Since our under
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -505,8 +497,7 @@ The AHardwareBuffer* can be used with the Vulkan extension VK_ANDROID_external_m
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -547,8 +538,7 @@ Release a native buffer previously acquired.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -593,8 +583,7 @@ The matrix is stored in column-major order.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -633,8 +622,7 @@ Retrieves the timestamp associated with the last acquired frame. The timestamp i
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -673,8 +661,7 @@ Retrieves the QueueBuffer timestamp associated with the last acquired Frame This
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -713,8 +700,7 @@ Retrieves the last acquired frame number. The frame number is an incrementing co
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -755,8 +741,7 @@ The Frame crop is returned as {left, bottom, width, height}.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -799,8 +784,7 @@ Set callback to notify client when a frame is available.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -844,8 +828,7 @@ Create a new NativeSurfaceTexture.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -884,8 +867,7 @@ Release a NativeSurfaceTexture.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -926,8 +908,7 @@ May only be called on the thread with the graphic context that contains the text
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -968,8 +949,7 @@ Attach the NativeSurfaceTexture to the graphic context that is current on the ca
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1010,8 +990,7 @@ If called on the thread with graphic context that contains the attached texture 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1052,8 +1031,7 @@ Retrieve the 4x4 texture coordinate transform matrix associated with the texture
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1094,8 +1072,7 @@ Retrieve the timestamp associated with the texture image set by the most recent 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1138,8 +1115,7 @@ Set callback to notify client when a frame is available.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

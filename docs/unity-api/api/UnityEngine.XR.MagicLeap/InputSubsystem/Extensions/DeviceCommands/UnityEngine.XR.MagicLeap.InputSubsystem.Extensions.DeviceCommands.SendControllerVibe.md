@@ -18,11 +18,11 @@ Inherits from: <br></br>IInputDeviceCommandInfo
 
 ## Public Fields
 
-### typeStatic {#fourcc-typestatic}
+### Type {#fourcc-type}
 
 ```csharp
 
-public FourCC typeStatic { get; set; }
+public static FourCC Type { get; set; }
 
 ```
 
@@ -33,11 +33,11 @@ public FourCC typeStatic { get; set; }
 
 -----------
 
-### Type {#fourcc-type}
+### typeStatic {#fourcc-typestatic}
 
 ```csharp
 
-public static FourCC Type { get; set; }
+public FourCC typeStatic { get; set; }
 
 ```
 
@@ -76,11 +76,11 @@ public static SendControllerVibe Create(
 
 ## Public Attributes
 
-### pattern {#uint-pattern}
+### baseCommand {#inputdevicecommand-basecommand}
 
 ```csharp
 
-public uint pattern;
+public InputDeviceCommand baseCommand;
 
 ```
 
@@ -106,11 +106,11 @@ public uint intensity;
 
 -----------
 
-### baseCommand {#inputdevicecommand-basecommand}
+### pattern {#uint-pattern}
 
 ```csharp
 
-public InputDeviceCommand baseCommand;
+public uint pattern;
 
 ```
 

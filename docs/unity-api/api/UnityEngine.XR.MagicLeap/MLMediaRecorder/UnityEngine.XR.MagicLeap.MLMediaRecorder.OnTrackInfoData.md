@@ -16,13 +16,13 @@ title: OnTrackInfoData
 
 ## Public Attributes
 
-### TrackId {#uint-trackid}
+### Extra {#int-extra}
 
-Track ID When the error or info type is track specific. 
+The extra info 
 
 ```csharp
 
-public uint TrackId;
+public int Extra;
 
 ```
 
@@ -50,13 +50,13 @@ public Info Info;
 
 -----------
 
-### Extra {#int-extra}
+### TrackId {#uint-trackid}
 
-The extra info 
+Track ID When the error or info type is track specific. 
 
 ```csharp
 
-public int Extra;
+public uint TrackId;
 
 ```
 

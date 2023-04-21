@@ -50,8 +50,7 @@ EXPERIMENTAL.
 
 
 
-**Shared Object:
- graphics_utils.magicleap**
+**Shared Object:\n graphics_utils.magicleap**
   * 
 
 * The graphics utility library is not necessary to create an application using the ML SDK. It contains a collection of useful code that can optionally be used to make development easier.

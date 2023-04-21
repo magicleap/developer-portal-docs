@@ -41,13 +41,13 @@ public MLWorldCameraSettings(
 
 ## Public Attributes
 
-### Version {#readonly-uint-version}
+### Cameras {#readonly-uint-cameras}
 
-Version of this structure. 
+World cameras that need to be enabled.If you want to request frames from different world camera then "OR" the modes of interest to the app. The system may not be able to service all the requested cameras. This parameter is treated as a hint and data will be provided from the requested world cameras when available. 
 
 ```csharp
 
-public readonly uint Version;
+public readonly uint Cameras;
 
 ```
 
@@ -75,13 +75,13 @@ public readonly uint Mode;
 
 -----------
 
-### Cameras {#readonly-uint-cameras}
+### Version {#readonly-uint-version}
 
-World cameras that need to be enabled.If you want to request frames from different world camera then "OR" the modes of interest to the app. The system may not be able to service all the requested cameras. This parameter is treated as a hint and data will be provided from the requested world cameras when available. 
+Version of this structure. 
 
 ```csharp
 
-public readonly uint Cameras;
+public readonly uint Version;
 
 ```
 

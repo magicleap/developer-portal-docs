@@ -18,11 +18,11 @@ Inherits from: <br></br>IInputDeviceCommandInfo
 
 ## Public Fields
 
-### typeStatic {#fourcc-typestatic}
+### Type {#fourcc-type}
 
 ```csharp
 
-public FourCC typeStatic { get; set; }
+public static FourCC Type { get; set; }
 
 ```
 
@@ -33,11 +33,11 @@ public FourCC typeStatic { get; set; }
 
 -----------
 
-### Type {#fourcc-type}
+### typeStatic {#fourcc-typestatic}
 
 ```csharp
 
-public static FourCC Type { get; set; }
+public FourCC typeStatic { get; set; }
 
 ```
 
@@ -74,11 +74,11 @@ public static SetControllerEnabled Create(
 
 ## Public Attributes
 
-### isEnabled {#bool-isenabled}
+### baseCommand {#inputdevicecommand-basecommand}
 
 ```csharp
 
-public bool isEnabled;
+public InputDeviceCommand baseCommand;
 
 ```
 
@@ -89,11 +89,11 @@ public bool isEnabled;
 
 -----------
 
-### baseCommand {#inputdevicecommand-basecommand}
+### isEnabled {#bool-isenabled}
 
 ```csharp
 
-public InputDeviceCommand baseCommand;
+public bool isEnabled;
 
 ```
 

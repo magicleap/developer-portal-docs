@@ -53,8 +53,7 @@ APIs for the Head Tracking system.
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * 
 
 
@@ -84,8 +83,7 @@ Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingErrorFl
 :::
 
 
-**API Level:
- 1**
+**API Level:\n 1**
   * 
 
 
@@ -111,8 +109,7 @@ A set of possible error conditions that can cause Head Tracking to be less than 
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -139,8 +136,7 @@ Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStatus.
 :::
 
 
-**API Level:
- 1**
+**API Level:\n 1**
   * 
 
 
@@ -165,8 +161,7 @@ A set of possible tracking status for the Head Tracking system.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -191,8 +186,7 @@ Different types of map events that can occur that a developer may have to handle
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -237,8 +231,7 @@ Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateE
 :::
 
 
-**API Level:
- 1**
+**API Level:\n 1**
   * 
 
 
@@ -259,8 +252,7 @@ Structure containing information on the current state of the Head Tracking syste
 [More Info](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -294,8 +286,7 @@ Initialize default values for a [MLHeadTrackingStateEx](/api-ref/api/Modules/gro
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -475,8 +466,7 @@ Returns the most recent head tracking state.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -521,8 +511,7 @@ In the case that a new map session begins, or recovery fails, all formerly cache
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 

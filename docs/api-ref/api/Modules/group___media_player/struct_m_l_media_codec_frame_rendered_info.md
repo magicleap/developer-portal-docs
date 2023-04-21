@@ -34,8 +34,7 @@ MediaCodec Output Frame Rendered information.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

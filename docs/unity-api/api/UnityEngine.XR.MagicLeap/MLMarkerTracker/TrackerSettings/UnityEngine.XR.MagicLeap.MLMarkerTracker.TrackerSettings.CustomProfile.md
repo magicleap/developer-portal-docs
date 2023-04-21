@@ -16,19 +16,6 @@ title: CustomProfile
 
 ## Public Methods
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ### [CustomProfile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/TrackerSettings/UnityEngine.XR.MagicLeap.MLMarkerTracker.TrackerSettings.CustomProfile.md) Create {#customprofile-create}
 
 ```csharp
@@ -61,78 +48,34 @@ public static CustomProfile Create(
 
 -----------
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### UseEdgeRefinement {#readonly-bool-useedgerefinement}
+### CameraHint {#readonly-camerahint}
 
-Run refinement step that uses marker edges to generate even more accurate corners, but slow down tracking rate overall by consuming more compute. Aruco/April tags only. 
-
-```csharp
-
-public readonly bool UseEdgeRefinement;
-
-```
-
-
-
-
-
-
------------
-
-### ResolutionHint {#readonly-resolutionhint}
-
-A hint to the back-end the resolution that should be used. 
+A hint to the back-end for what cameras should be used. 
 
 ```csharp
 
-public readonly ResolutionHint ResolutionHint;
+public readonly CameraHint CameraHint;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [ResolutionHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-resolutionhint) | The ResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors.  |
-
-
-
-
-
------------
-
-### FullAnalysisIntervalHint {#readonly-fullanalysisintervalhint}
-
-In order to improve performance, the detectors don't always run on the full frame.Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance. 
-
-```csharp
-
-public readonly FullAnalysisIntervalHint FullAnalysisIntervalHint;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [FullAnalysisIntervalHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fullanalysisintervalhint) | In order to improve performance, the detectors don't always run on the full frame. Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance.  |
-
-
-
-
-
------------
-
-### FPSHint {#readonly-fpshint}
-
-A hint to the back-end the max frames per second hat should be analyzed. 
-
-```csharp
-
-public readonly FPSHint FPSHint;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [FPSHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fpshint) | Used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers.  |
+| readonly [CameraHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-camerahint) | The CameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the aruco detectors.  |
 
 
 
@@ -160,19 +103,76 @@ public readonly CornerRefineMethod CornerRefineMethod;
 
 -----------
 
-### CameraHint {#readonly-camerahint}
+### FPSHint {#readonly-fpshint}
 
-A hint to the back-end for what cameras should be used. 
+A hint to the back-end the max frames per second hat should be analyzed. 
 
 ```csharp
 
-public readonly CameraHint CameraHint;
+public readonly FPSHint FPSHint;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [CameraHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-camerahint) | The CameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the aruco detectors.  |
+| readonly [FPSHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fpshint) | Used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers.  |
+
+
+
+
+
+-----------
+
+### FullAnalysisIntervalHint {#readonly-fullanalysisintervalhint}
+
+In order to improve performance, the detectors don't always run on the full frame.Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance. 
+
+```csharp
+
+public readonly FullAnalysisIntervalHint FullAnalysisIntervalHint;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [FullAnalysisIntervalHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fullanalysisintervalhint) | In order to improve performance, the detectors don't always run on the full frame. Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance.  |
+
+
+
+
+
+-----------
+
+### ResolutionHint {#readonly-resolutionhint}
+
+A hint to the back-end the resolution that should be used. 
+
+```csharp
+
+public readonly ResolutionHint ResolutionHint;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [ResolutionHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-resolutionhint) | The ResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors.  |
+
+
+
+
+
+-----------
+
+### UseEdgeRefinement {#readonly-bool-useedgerefinement}
+
+Run refinement step that uses marker edges to generate even more accurate corners, but slow down tracking rate overall by consuming more compute. Aruco/April tags only. 
+
+```csharp
+
+public readonly bool UseEdgeRefinement;
+
+```
+
 
 
 

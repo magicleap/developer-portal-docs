@@ -79,8 +79,7 @@ Return values for Voice API calls.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -109,8 +108,7 @@ Voice state in voice event.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -134,8 +132,7 @@ No intent reason code in voice event.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -159,8 +156,7 @@ A structure containing voice app-intent slot in voice event.
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -181,8 +177,7 @@ A structure containing voice intent event.
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -207,8 +202,7 @@ This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/ap
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -231,8 +225,7 @@ This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/api
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -266,8 +259,7 @@ Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/gro
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -298,8 +290,7 @@ Initializes default values for [MLVoiceIntentSettings](/api-ref/api/Modules/grou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -338,8 +329,7 @@ Creates a voice intent client.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -416,8 +406,7 @@ App needs to call MLVoiceIntentConfigureSettings at least once before it calls M
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -461,8 +450,7 @@ Sets the callbacks for voice intent events.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -505,8 +493,7 @@ NOTE: If your application is processing voice intents make sure to call [MLVoice
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -549,8 +536,7 @@ NOTE: If your application is processing voice intents make sure to call [MLVoice
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -590,8 +576,7 @@ Checks voice intent feature is enabled in the system.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -19,14 +19,13 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitGetState {#mlresultcode-mlheadsetfitgetstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitCreateClient {#mlresultcode-mlheadsetfitcreateclient}
 
-Gets information about the user's current headset fit. 
+Creates a headset fit client. 
 
 ```csharp
-public MLResult.Code MLHeadsetFitGetState(
-    ulong handle,
-    out MLHeadsetFitState state
+public MLResult.Code MLHeadsetFitCreateClient(
+    out ulong handle
 )
 ```
 
@@ -35,8 +34,7 @@ public MLResult.Code MLHeadsetFitGetState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |handle||
-| out [MLHeadsetFitState](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/NativeBindings/UnityEngine.XR.MagicLeap.MLHeadsetFit.NativeBindings.MLHeadsetFitState.md) |state||
+| out ulong |handle||
 
 
 
@@ -69,13 +67,14 @@ public MLResult.Code MLHeadsetFitDestroyClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitCreateClient {#mlresultcode-mlheadsetfitcreateclient}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitGetState {#mlresultcode-mlheadsetfitgetstate}
 
-Creates a headset fit client. 
+Gets information about the user's current headset fit. 
 
 ```csharp
-public MLResult.Code MLHeadsetFitCreateClient(
-    out ulong handle
+public MLResult.Code MLHeadsetFitGetState(
+    ulong handle,
+    out MLHeadsetFitState state
 )
 ```
 
@@ -84,7 +83,8 @@ public MLResult.Code MLHeadsetFitCreateClient(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out ulong |handle||
+| ulong |handle||
+| out [MLHeadsetFitState](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/NativeBindings/UnityEngine.XR.MagicLeap.MLHeadsetFit.NativeBindings.MLHeadsetFitState.md) |state||
 
 
 

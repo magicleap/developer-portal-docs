@@ -17,19 +17,6 @@ A structure containing information about the device's localization state.
 
 ## Public Methods
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ###  LocalizationInfo {#functions-localizationinfo}
 
 ```csharp
@@ -52,52 +39,34 @@ public LocalizationInfo(
 
 -----------
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### SpaceOrigin {#readonly-pose-spaceorigin}
+### LocalizationStatus {#readonly-localizationstatus}
 
-If localized, this will contain the pose info of the target space's origin relative to the world origin. 
-
-```csharp
-
-public readonly Pose SpaceOrigin;
-
-```
-
-
-
-
-
-
------------
-
-### SpaceName {#readonly-string-spacename}
-
-If localized, this will contain the name of the current space. 
+The localization status at the time this structure was returned. 
 
 ```csharp
 
-public readonly string SpaceName;
+public readonly LocalizationStatus LocalizationStatus;
 
 ```
 
-
-
-
-
-
------------
-
-### SpaceId {#readonly-string-spaceid}
-
-If localized, this will contain the name of the current space. 
-
-```csharp
-
-public readonly string SpaceId => this.spaceId.ToString();
-
-```
-
+| Type | Description  | 
+|--|--|
+| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
 
 
 
@@ -125,19 +94,50 @@ public readonly MappingMode MappingMode;
 
 -----------
 
-### LocalizationStatus {#readonly-localizationstatus}
+### SpaceId {#readonly-string-spaceid}
 
-The localization status at the time this structure was returned. 
+If localized, this will contain the name of the current space. 
 
 ```csharp
 
-public readonly LocalizationStatus LocalizationStatus;
+public readonly string SpaceId => this.spaceId.ToString();
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
+
+
+
+
+
+-----------
+
+### SpaceName {#readonly-string-spacename}
+
+If localized, this will contain the name of the current space. 
+
+```csharp
+
+public readonly string SpaceName;
+
+```
+
+
+
+
+
+
+-----------
+
+### SpaceOrigin {#readonly-pose-spaceorigin}
+
+If localized, this will contain the pose info of the target space's origin relative to the world origin. 
+
+```csharp
+
+public readonly Pose SpaceOrigin;
+
+```
+
 
 
 

@@ -21,36 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_CreateAudioOutput_Exists {#void-nativebinding-createaudiooutput-exists}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_OnUnityAudio_Exists {#void-nativebinding-onunityaudio-exists}
-
-```csharp
-public void NativeBinding_OnUnityAudio_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_DestroyAudioOutput_Exists {#void-nativebinding-destroyaudiooutput-exists}
-
-```csharp
-public void NativeBinding_DestroyAudioOutput_Exists()
+public void NativeBinding_CreateAudioOutput_Exists()
 ```
 
 
@@ -73,10 +47,36 @@ public void NativeBinding_CreateOutputBuffer_Exists()
 
 -----------
 
-### void NativeBinding_CreateAudioOutput_Exists {#void-nativebinding-createaudiooutput-exists}
+### void NativeBinding_DestroyAudioOutput_Exists {#void-nativebinding-destroyaudiooutput-exists}
 
 ```csharp
-public void NativeBinding_CreateAudioOutput_Exists()
+public void NativeBinding_DestroyAudioOutput_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_OnUnityAudio_Exists {#void-nativebinding-onunityaudio-exists}
+
+```csharp
+public void NativeBinding_OnUnityAudio_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

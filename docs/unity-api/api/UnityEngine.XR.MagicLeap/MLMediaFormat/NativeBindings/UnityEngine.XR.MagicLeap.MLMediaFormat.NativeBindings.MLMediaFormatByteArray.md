@@ -45,13 +45,13 @@ public MLMediaFormatByteArray(
 
 ## Public Attributes
 
-### Ptr {#readonly-intptr-ptr}
+### Length {#readonly-ulong-length}
 
-Buffer starting pointer. 
+Buffer length. 
 
 ```csharp
 
-public readonly IntPtr Ptr;
+public readonly ulong Length;
 
 ```
 
@@ -62,13 +62,13 @@ public readonly IntPtr Ptr;
 
 -----------
 
-### Length {#readonly-ulong-length}
+### Ptr {#readonly-intptr-ptr}
 
-Buffer length. 
+Buffer starting pointer. 
 
 ```csharp
 
-public readonly ulong Length;
+public readonly IntPtr Ptr;
 
 ```
 

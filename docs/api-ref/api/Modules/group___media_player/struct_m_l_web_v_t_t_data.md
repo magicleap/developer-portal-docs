@@ -43,8 +43,7 @@ WebVTT data structure.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 

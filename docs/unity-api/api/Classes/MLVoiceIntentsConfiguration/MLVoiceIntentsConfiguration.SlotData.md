@@ -17,11 +17,11 @@ The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVo
 
 ## Public Attributes
 
-### values {#list-string-values}
+### name {#string-name}
 
 ```csharp
 
-public List< string > values;
+public string name;
 
 ```
 
@@ -32,11 +32,11 @@ public List< string > values;
 
 -----------
 
-### name {#string-name}
+### values {#list-string-values}
 
 ```csharp
 
-public string name;
+public List< string > values;
 
 ```
 

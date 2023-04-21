@@ -16,11 +16,11 @@ title: Settings
 
 ## Public Attributes
 
-### flags {#flags-flags}
+### disconnectedComponentArea {#float-disconnectedcomponentarea}
 
 ```csharp
 
-public Flags flags;
+public float disconnectedComponentArea;
 
 ```
 
@@ -46,11 +46,11 @@ public float fillHoleLength;
 
 -----------
 
-### disconnectedComponentArea {#float-disconnectedcomponentarea}
+### flags {#flags-flags}
 
 ```csharp
 
-public float disconnectedComponentArea;
+public Flags flags;
 
 ```
 

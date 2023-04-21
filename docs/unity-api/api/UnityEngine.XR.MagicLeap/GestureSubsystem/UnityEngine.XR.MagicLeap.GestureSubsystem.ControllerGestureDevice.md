@@ -18,28 +18,6 @@ Inherits from: <br></br>UnityEngine.XR.MagicLeap.GestureSubsystem.GestureInputDe
 
 ## Public Methods
 
-### override void UpdateGesture {#override-void-updategesture}
-
-```csharp
-public override void UpdateGesture(
-    out bool isNewGesture
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out bool |isNewGesture||
-
-
-
-
-
-
------------
-
 ###  ControllerGestureDevice {#functions-controllergesturedevice}
 
 ```csharp
@@ -54,6 +32,28 @@ public ControllerGestureDevice(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |name||
+
+
+
+
+
+
+-----------
+
+### override void UpdateGesture {#override-void-updategesture}
+
+```csharp
+public override void UpdateGesture(
+    out bool isNewGesture
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out bool |isNewGesture||
 
 
 

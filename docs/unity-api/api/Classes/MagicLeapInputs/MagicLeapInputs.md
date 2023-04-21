@@ -18,26 +18,11 @@ Inherits from: <br></br>IInputActionCollection2,<br></br>IDisposable
 
 ## Public Fields
 
-### devices {#readonlyarray-inputdevice-devices}
+### MagicLeapScheme {#inputcontrolscheme-magicleapscheme}
 
 ```csharp
 
-public ReadOnlyArray< InputDevice > devices { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### bindingMask {#inputbinding-bindingmask}
-
-```csharp
-
-public InputBinding bindingMask { get; set; }
+public InputControlScheme MagicLeapScheme { get; set; }
 
 ```
 
@@ -63,11 +48,26 @@ public InputActionAsset asset { get; set; }
 
 -----------
 
-### MagicLeapScheme {#inputcontrolscheme-magicleapscheme}
+### bindingMask {#inputbinding-bindingmask}
 
 ```csharp
 
-public InputControlScheme MagicLeapScheme { get; set; }
+public InputBinding bindingMask { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### devices {#readonlyarray-inputdevice-devices}
+
+```csharp
+
+public ReadOnlyArray< InputDevice > devices { get; set; }
 
 ```
 
@@ -80,38 +80,11 @@ public InputControlScheme MagicLeapScheme { get; set; }
 
 ## Public Methods
 
-###  MagicLeapInputs {#functions-magicleapinputs}
+### bool Contains {#bool-contains}
 
 ```csharp
-public MagicLeapInputs()
-```
-
-
-
-
-
-
------------
-
-### IEnumerator&lt; InputAction &gt; GetEnumerator {#ienumerator-inputaction-getenumerator}
-
-```csharp
-public IEnumerator< InputAction > GetEnumerator()
-```
-
-
-
-
-
-
------------
-
-### int FindBinding {#int-findbinding}
-
-```csharp
-public int FindBinding(
-    InputBinding bindingMask,
-    out InputAction action
+public bool Contains(
+    InputAction action
 )
 ```
 
@@ -120,8 +93,46 @@ public int FindBinding(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| InputBinding |bindingMask||
-| out InputAction |action||
+| InputAction |action||
+
+
+
+
+
+
+-----------
+
+### void Disable {#void-disable}
+
+```csharp
+public void Disable()
+```
+
+
+
+
+
+
+-----------
+
+### void Dispose {#void-dispose}
+
+```csharp
+public void Dispose()
+```
+
+
+
+
+
+
+-----------
+
+### void Enable {#void-enable}
+
+```csharp
+public void Enable()
+```
 
 
 
@@ -154,50 +165,12 @@ public InputAction FindAction(
 
 -----------
 
-### void Enable {#void-enable}
+### int FindBinding {#int-findbinding}
 
 ```csharp
-public void Enable()
-```
-
-
-
-
-
-
------------
-
-### void Dispose {#void-dispose}
-
-```csharp
-public void Dispose()
-```
-
-
-
-
-
-
------------
-
-### void Disable {#void-disable}
-
-```csharp
-public void Disable()
-```
-
-
-
-
-
-
------------
-
-### bool Contains {#bool-contains}
-
-```csharp
-public bool Contains(
-    InputAction action
+public int FindBinding(
+    InputBinding bindingMask,
+    out InputAction action
 )
 ```
 
@@ -206,7 +179,34 @@ public bool Contains(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| InputAction |action||
+| InputBinding |bindingMask||
+| out InputAction |action||
+
+
+
+
+
+
+-----------
+
+### IEnumerator&lt; InputAction &gt; GetEnumerator {#ienumerator-inputaction-getenumerator}
+
+```csharp
+public IEnumerator< InputAction > GetEnumerator()
+```
+
+
+
+
+
+
+-----------
+
+###  MagicLeapInputs {#functions-magicleapinputs}
+
+```csharp
+public MagicLeapInputs()
+```
 
 
 
@@ -217,71 +217,11 @@ public bool Contains(
 
 ## Public Attributes
 
-### controlSchemes {#readonlyarray-inputcontrolscheme-controlschemes}
+### Controller {#controlleractions-controller}
 
 ```csharp
 
-public ReadOnlyArray< InputControlScheme > controlSchemes => asset.controlSchemes;
-
-```
-
-
-
-
-
-
------------
-
-### bindings {#ienumerable-inputbinding-bindings}
-
-```csharp
-
-public IEnumerable< InputBinding > bindings => asset.bindings;
-
-```
-
-
-
-
-
-
------------
-
-### RightHand {#righthandactions-righthand}
-
-```csharp
-
-public RightHandActions RightHand => new RightHandActions(this);
-
-```
-
-
-
-
-
-
------------
-
-### LeftHand {#lefthandactions-lefthand}
-
-```csharp
-
-public LeftHandActions LeftHand => new LeftHandActions(this);
-
-```
-
-
-
-
-
-
------------
-
-### HMD {#hmdactions-hmd}
-
-```csharp
-
-public HMDActions HMD => new HMDActions(this);
+public ControllerActions Controller => new ControllerActions(this);
 
 ```
 
@@ -307,11 +247,71 @@ public EyesActions Eyes => new EyesActions(this);
 
 -----------
 
-### Controller {#controlleractions-controller}
+### HMD {#hmdactions-hmd}
 
 ```csharp
 
-public ControllerActions Controller => new ControllerActions(this);
+public HMDActions HMD => new HMDActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### LeftHand {#lefthandactions-lefthand}
+
+```csharp
+
+public LeftHandActions LeftHand => new LeftHandActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### RightHand {#righthandactions-righthand}
+
+```csharp
+
+public RightHandActions RightHand => new RightHandActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### bindings {#ienumerable-inputbinding-bindings}
+
+```csharp
+
+public IEnumerable< InputBinding > bindings => asset.bindings;
+
+```
+
+
+
+
+
+
+-----------
+
+### controlSchemes {#readonlyarray-inputcontrolscheme-controlschemes}
+
+```csharp
+
+public ReadOnlyArray< InputControlScheme > controlSchemes => asset.controlSchemes;
 
 ```
 

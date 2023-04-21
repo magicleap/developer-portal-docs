@@ -89,8 +89,7 @@ MLWebView methods use re-entrant JNI monitors to provide a thread-safe API. See:
 :::
 
 
-**Shared Object:
- webview.magicleap**
+**Shared Object:\n webview.magicleap**
   * This interface allows an application to instantiate a WebView and interact with it (via "mouse" and "keyboard" events).
 
 
@@ -129,8 +128,7 @@ The type of text entry selected when on_show_keyboard is called.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -165,8 +163,7 @@ Flags related to a text entry field passed when on_show_keyboard is called.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -201,8 +198,7 @@ Flags to set special key states during input.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -239,8 +235,7 @@ Return values for the WebView API calls.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -263,8 +258,7 @@ Flags set for the process using webview.
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -288,8 +282,7 @@ The type of the webview pause.
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -315,8 +308,7 @@ This structure must be initialized by calling [MLWebViewCursorStateInit](/api-re
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -339,8 +331,7 @@ This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md)
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -363,8 +354,7 @@ This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/a
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md)
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -387,8 +377,7 @@ This structure must be initialized by calling [MLWebViewProcessSettingsInit](/ap
 [More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md)
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -422,8 +411,7 @@ Initializes a [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struc
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -454,8 +442,7 @@ Initializes a [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/st
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -486,8 +473,7 @@ Initializes a [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -518,8 +504,7 @@ Initializes a [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/s
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -562,8 +547,7 @@ Current implementation only supports enabling and disabling web inspector before
 :::
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -611,8 +595,7 @@ In version >= 2 for MLWebViewCallbacks struct, MLWebViewCreate launches a separa
 :::
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -653,8 +636,7 @@ The MLWebView will be terminated by this function call and the handle shall no l
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -695,8 +677,7 @@ Specify the callbacks for a MLWebView.
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -741,8 +722,7 @@ To use with OpenGL, EGL, and Vulkan please see: [https://developer.android.com/n
 :::
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -784,8 +764,7 @@ Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/api-ref/api/Mo
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -829,8 +808,7 @@ Note that success with this call only indicates that a load will be attempted. C
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -872,8 +850,7 @@ Query [MLWebViewCanGoBack](/api-ref/api/Modules/group___web_view/group___web_vie
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -915,8 +892,7 @@ Query [MLWebViewCanGoForward](/api-ref/api/Modules/group___web_view/group___web_
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -956,8 +932,7 @@ Trigger a "Reload" action in the MLWebView.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1000,8 +975,7 @@ Get the current URL. Set out_url to NULL to get the length of the current URL.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1043,8 +1017,7 @@ Checks if the "Back" action is currently valid.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1086,8 +1059,7 @@ Checks if the "Forward" action is currently valid.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1133,8 +1105,7 @@ Please see MLWebViewInjectMouseButtonDown for behavior.
 :::
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1258,8 +1229,7 @@ Sends a printable char keyboard event to MLWebView.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1303,8 +1273,7 @@ Sends a key down/pressed event to MLWebView.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1348,8 +1317,7 @@ Sends a key up/release event to MLWebView.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1396,8 +1364,7 @@ This should be typically called afer #MLWebViewEventCallback::on_load_end to det
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1442,8 +1409,7 @@ Get the scroll offset of the webview.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1487,8 +1453,7 @@ Triggers a mouse "Scroll" event.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1531,8 +1496,7 @@ Get the current zoom factor. The default zoom factor is 1.0.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1574,8 +1538,7 @@ Zoom in one level.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1617,8 +1580,7 @@ Zoom out one level.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1659,8 +1621,7 @@ Reset zoom level to 1.0.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1704,8 +1665,7 @@ The matrix is stored in column-major order so that it may be passed directly to 
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1746,8 +1706,7 @@ Remove all webview cookies.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1788,8 +1747,7 @@ Clear the webview cache.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -1828,8 +1786,7 @@ This method provides a multiple pause types to the webview.
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -1866,8 +1823,7 @@ Resume webview to the normal operation for all webview pause types.
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 

@@ -18,16 +18,14 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### delegate void OnTriggerDelegate {#delegate-void-ontriggerdelegate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputGetConnectedDevices {#mlresultcode-mlinputgetconnecteddevices}
 
-Callback structure for NativeBindings.OnTrigger. 
+Gets the device IDs of all connected devices. 
 
 ```csharp
-public delegate void OnTriggerDelegate(
-    ushort controllerId,
-    MLInputControllerTriggerEvent @ event,
-    float depth,
-    IntPtr data
+public MLResult.Code MLInputGetConnectedDevices(
+    ulong Handle,
+    IntPtr InoutDevices
 )
 ```
 
@@ -36,10 +34,8 @@ public delegate void OnTriggerDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ushort |controllerId||
-| [MLInputControllerTriggerEvent](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent) @ |event|Trigger events types. |
-| float |depth||
-| IntPtr |data||
+| ulong |Handle||
+| IntPtr |InoutDevices||
 
 
 
@@ -48,15 +44,14 @@ public delegate void OnTriggerDelegate(
 
 -----------
 
-### delegate void OnTouchpadGestureEndDelegate {#delegate-void-ontouchpadgestureenddelegate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputReleaseConnectedDevicesList {#mlresultcode-mlinputreleaseconnecteddeviceslist}
 
-Callback structure for NativeBindings.OnTouchpadGestureEnd. 
+Releases the contents of #MLInputConnectedDevicesList populated by #MLInputGetConnectedDevices. 
 
 ```csharp
-public delegate void OnTouchpadGestureEndDelegate(
-    ushort controllerId,
-    IntPtr touchpadGesture,
-    IntPtr data
+public MLResult.Code MLInputReleaseConnectedDevicesList(
+    ulong Handle,
+    IntPtr Devices
 )
 ```
 
@@ -65,9 +60,8 @@ public delegate void OnTouchpadGestureEndDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ushort |controllerId||
-| IntPtr |touchpadGesture||
-| IntPtr |data||
+| ulong |Handle||
+| IntPtr |Devices||
 
 
 
@@ -76,15 +70,15 @@ public delegate void OnTouchpadGestureEndDelegate(
 
 -----------
 
-### delegate void OnTouchpadGestureDelegate {#delegate-void-ontouchpadgesturedelegate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputSetControllerCallbacksEx {#mlresultcode-mlinputsetcontrollercallbacksex}
 
-Callback structure for NativeBindings.OnTouchpadGesture. 
+Sets the callbacks for controller input events. 
 
 ```csharp
-public delegate void OnTouchpadGestureDelegate(
-    ushort controllerId,
-    IntPtr touchpadGesture,
-    IntPtr data
+public MLResult.Code MLInputSetControllerCallbacksEx(
+    ulong Handle,
+    ref MLInputControllerCallbacksEx Callbacks,
+    IntPtr UserData
 )
 ```
 
@@ -93,9 +87,9 @@ public delegate void OnTouchpadGestureDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ushort |controllerId||
-| IntPtr |touchpadGesture||
-| IntPtr |data||
+| ulong |Handle||
+| ref [MLInputControllerCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerCallbacksEx.md) |Callbacks|A structure containing callbacks for input controller events. The final parameter to all the callbacks is a void &#42;, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL. This structure must be initialized by calling MLInputControllerCallbacksExInit() before use. |
+| IntPtr |UserData||
 
 
 
@@ -104,92 +98,12 @@ public delegate void OnTouchpadGestureDelegate(
 
 -----------
 
-### delegate void OnTouchpadGestureContinueDelegate {#delegate-void-ontouchpadgesturecontinuedelegate}
+### delegate void OnButtonClickDelegate {#delegate-void-onbuttonclickdelegate}
 
-Callback structure for NativeBindings.OnTouchpadGestureContinue. 
-
-```csharp
-public delegate void OnTouchpadGestureContinueDelegate(
-    ushort controllerId,
-    IntPtr touchpadGesture,
-    IntPtr data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ushort |controllerId||
-| IntPtr |touchpadGesture||
-| IntPtr |data||
-
-
-
-
-
-
------------
-
-### delegate void OnDisconnectDelegate {#delegate-void-ondisconnectdelegate}
-
-Callback structure for NativeBindings.OnDisconnect. 
+Callback structure for NativeBindings.OnButtonClick. 
 
 ```csharp
-public delegate void OnDisconnectDelegate(
-    ushort controllerId,
-    IntPtr data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ushort |controllerId||
-| IntPtr |data||
-
-
-
-
-
-
------------
-
-### delegate void OnConnectDelegate {#delegate-void-onconnectdelegate}
-
-Callback structure for NativeBindings.OnConnect. 
-
-```csharp
-public delegate void OnConnectDelegate(
-    ushort controllerId,
-    IntPtr data
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ushort |controllerId||
-| IntPtr |data||
-
-
-
-
-
-
------------
-
-### delegate void OnButtonUpDelegate {#delegate-void-onbuttonupdelegate}
-
-Callback structure for NativeBindings.OnButtonUp. 
-
-```csharp
-public delegate void OnButtonUpDelegate(
+public delegate void OnButtonClickDelegate(
     ushort controllerId,
     MLInputControllerButton button,
     IntPtr data
@@ -240,12 +154,12 @@ public delegate void OnButtonDownDelegate(
 
 -----------
 
-### delegate void OnButtonClickDelegate {#delegate-void-onbuttonclickdelegate}
+### delegate void OnButtonUpDelegate {#delegate-void-onbuttonupdelegate}
 
-Callback structure for NativeBindings.OnButtonClick. 
+Callback structure for NativeBindings.OnButtonUp. 
 
 ```csharp
-public delegate void OnButtonClickDelegate(
+public delegate void OnButtonUpDelegate(
     ushort controllerId,
     MLInputControllerButton button,
     IntPtr data
@@ -268,15 +182,14 @@ public delegate void OnButtonClickDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputSetControllerCallbacksEx {#mlresultcode-mlinputsetcontrollercallbacksex}
+### delegate void OnConnectDelegate {#delegate-void-onconnectdelegate}
 
-Sets the callbacks for controller input events. 
+Callback structure for NativeBindings.OnConnect. 
 
 ```csharp
-public MLResult.Code MLInputSetControllerCallbacksEx(
-    ulong Handle,
-    ref MLInputControllerCallbacksEx Callbacks,
-    IntPtr UserData
+public delegate void OnConnectDelegate(
+    ushort controllerId,
+    IntPtr data
 )
 ```
 
@@ -285,9 +198,8 @@ public MLResult.Code MLInputSetControllerCallbacksEx(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |Handle||
-| ref [MLInputControllerCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerCallbacksEx.md) |Callbacks|A structure containing callbacks for input controller events. The final parameter to all the callbacks is a void &#42;, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL. This structure must be initialized by calling MLInputControllerCallbacksExInit() before use. |
-| IntPtr |UserData||
+| ushort |controllerId||
+| IntPtr |data||
 
 
 
@@ -296,14 +208,14 @@ public MLResult.Code MLInputSetControllerCallbacksEx(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputReleaseConnectedDevicesList {#mlresultcode-mlinputreleaseconnecteddeviceslist}
+### delegate void OnDisconnectDelegate {#delegate-void-ondisconnectdelegate}
 
-Releases the contents of #MLInputConnectedDevicesList populated by #MLInputGetConnectedDevices. 
+Callback structure for NativeBindings.OnDisconnect. 
 
 ```csharp
-public MLResult.Code MLInputReleaseConnectedDevicesList(
-    ulong Handle,
-    IntPtr Devices
+public delegate void OnDisconnectDelegate(
+    ushort controllerId,
+    IntPtr data
 )
 ```
 
@@ -312,8 +224,8 @@ public MLResult.Code MLInputReleaseConnectedDevicesList(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |Handle||
-| IntPtr |Devices||
+| ushort |controllerId||
+| IntPtr |data||
 
 
 
@@ -322,14 +234,15 @@ public MLResult.Code MLInputReleaseConnectedDevicesList(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputGetConnectedDevices {#mlresultcode-mlinputgetconnecteddevices}
+### delegate void OnTouchpadGestureContinueDelegate {#delegate-void-ontouchpadgesturecontinuedelegate}
 
-Gets the device IDs of all connected devices. 
+Callback structure for NativeBindings.OnTouchpadGestureContinue. 
 
 ```csharp
-public MLResult.Code MLInputGetConnectedDevices(
-    ulong Handle,
-    IntPtr InoutDevices
+public delegate void OnTouchpadGestureContinueDelegate(
+    ushort controllerId,
+    IntPtr touchpadGesture,
+    IntPtr data
 )
 ```
 
@@ -338,8 +251,95 @@ public MLResult.Code MLInputGetConnectedDevices(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |Handle||
-| IntPtr |InoutDevices||
+| ushort |controllerId||
+| IntPtr |touchpadGesture||
+| IntPtr |data||
+
+
+
+
+
+
+-----------
+
+### delegate void OnTouchpadGestureDelegate {#delegate-void-ontouchpadgesturedelegate}
+
+Callback structure for NativeBindings.OnTouchpadGesture. 
+
+```csharp
+public delegate void OnTouchpadGestureDelegate(
+    ushort controllerId,
+    IntPtr touchpadGesture,
+    IntPtr data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ushort |controllerId||
+| IntPtr |touchpadGesture||
+| IntPtr |data||
+
+
+
+
+
+
+-----------
+
+### delegate void OnTouchpadGestureEndDelegate {#delegate-void-ontouchpadgestureenddelegate}
+
+Callback structure for NativeBindings.OnTouchpadGestureEnd. 
+
+```csharp
+public delegate void OnTouchpadGestureEndDelegate(
+    ushort controllerId,
+    IntPtr touchpadGesture,
+    IntPtr data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ushort |controllerId||
+| IntPtr |touchpadGesture||
+| IntPtr |data||
+
+
+
+
+
+
+-----------
+
+### delegate void OnTriggerDelegate {#delegate-void-ontriggerdelegate}
+
+Callback structure for NativeBindings.OnTrigger. 
+
+```csharp
+public delegate void OnTriggerDelegate(
+    ushort controllerId,
+    MLInputControllerTriggerEvent @ event,
+    float depth,
+    IntPtr data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ushort |controllerId||
+| [MLInputControllerTriggerEvent](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent) @ |event|Trigger events types. |
+| float |depth||
+| IntPtr |data||
 
 
 

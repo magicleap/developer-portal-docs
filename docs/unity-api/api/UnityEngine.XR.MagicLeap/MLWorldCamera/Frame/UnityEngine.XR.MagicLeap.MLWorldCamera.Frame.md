@@ -32,19 +32,19 @@ public override string ToString()
 
 ## Public Attributes
 
-### TimeStamp {#readonly-timestamp}
+### CameraId {#readonly-cameraid}
 
-[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) timestamp specifies the time at which the frame was captured. 
+Camera Identifier specifies which camera is associated with this frame. 
 
 ```csharp
 
-public readonly MLTime TimeStamp;
+public readonly CameraId CameraId;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
+| readonly [CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
 
 
 
@@ -52,19 +52,19 @@ public readonly MLTime TimeStamp;
 
 -----------
 
-### FrameType {#readonly-frametype}
+### CameraIntrinsics {#readonly-cameraintrinsics}
 
-Maps to the world camera mode used for capturing the camera frames. 
+Camera intrinsics. 
 
 ```csharp
 
-public readonly Type FrameType;
+public readonly CameraIntrinsics CameraIntrinsics;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md#enums-type) | Enumeration of camera mode used when capturing a frame.  |
+| readonly [CameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.CameraIntrinsics.md) | World camera intrinsic parameters.  |
 
 
 
@@ -72,13 +72,13 @@ public readonly Type FrameType;
 
 -----------
 
-### FrameNumber {#readonly-long-framenumber}
+### CameraPose {#readonly-pose-camerapose}
 
-A 64bit integer to index the frame number associated with this frame. 
+World camera pose in the world co-ordinate system. 
 
 ```csharp
 
-public readonly long FrameNumber;
+public readonly Pose CameraPose;
 
 ```
 
@@ -109,13 +109,13 @@ public readonly Buffer FrameBuffer;
 
 -----------
 
-### CameraPose {#readonly-pose-camerapose}
+### FrameNumber {#readonly-long-framenumber}
 
-World camera pose in the world co-ordinate system. 
+A 64bit integer to index the frame number associated with this frame. 
 
 ```csharp
 
-public readonly Pose CameraPose;
+public readonly long FrameNumber;
 
 ```
 
@@ -126,19 +126,19 @@ public readonly Pose CameraPose;
 
 -----------
 
-### CameraIntrinsics {#readonly-cameraintrinsics}
+### FrameType {#readonly-frametype}
 
-Camera intrinsics. 
+Maps to the world camera mode used for capturing the camera frames. 
 
 ```csharp
 
-public readonly CameraIntrinsics CameraIntrinsics;
+public readonly Type FrameType;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [CameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.CameraIntrinsics.md) | World camera intrinsic parameters.  |
+| readonly [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md#enums-type) | Enumeration of camera mode used when capturing a frame.  |
 
 
 
@@ -146,19 +146,19 @@ public readonly CameraIntrinsics CameraIntrinsics;
 
 -----------
 
-### CameraId {#readonly-cameraid}
+### TimeStamp {#readonly-timestamp}
 
-Camera Identifier specifies which camera is associated with this frame. 
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) timestamp specifies the time at which the frame was captured. 
 
 ```csharp
 
-public readonly CameraId CameraId;
+public readonly MLTime TimeStamp;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 
 
 

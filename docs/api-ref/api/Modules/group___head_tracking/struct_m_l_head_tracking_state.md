@@ -38,8 +38,7 @@ Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateE
 :::
 
 
-**API Level:
- 1**
+**API Level:\n 1**
   * 
 
 

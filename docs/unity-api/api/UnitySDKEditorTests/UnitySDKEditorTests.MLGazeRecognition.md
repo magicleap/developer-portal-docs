@@ -21,62 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLGazeRecognitionCreate_Exists {#void-nativebinding-mlgazerecognitioncreate-exists}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBindings_MLGazeRecognitionStaticData_struct_size {#void-nativebindings-mlgazerecognitionstaticdata-struct-size}
-
-```csharp
-public void NativeBindings_MLGazeRecognitionStaticData_struct_size()
-```
-
-
-
-
-
-
------------
-
-### void NativeBindings_MLGazeRecognitionState_struct_size {#void-nativebindings-mlgazerecognitionstate-struct-size}
-
-```csharp
-public void NativeBindings_MLGazeRecognitionState_struct_size()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLGazeRecognitionGetStaticData_Exists {#void-nativebinding-mlgazerecognitiongetstaticdata-exists}
-
-```csharp
-public void NativeBinding_MLGazeRecognitionGetStaticData_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLGazeRecognitionGetState_Exists {#void-nativebinding-mlgazerecognitiongetstate-exists}
-
-```csharp
-public void NativeBinding_MLGazeRecognitionGetState_Exists()
+public void NativeBinding_MLGazeRecognitionCreate_Exists()
 ```
 
 
@@ -99,10 +47,62 @@ public void NativeBinding_MLGazeRecognitionDestroy_Exists()
 
 -----------
 
-### void NativeBinding_MLGazeRecognitionCreate_Exists {#void-nativebinding-mlgazerecognitioncreate-exists}
+### void NativeBinding_MLGazeRecognitionGetState_Exists {#void-nativebinding-mlgazerecognitiongetstate-exists}
 
 ```csharp
-public void NativeBinding_MLGazeRecognitionCreate_Exists()
+public void NativeBinding_MLGazeRecognitionGetState_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLGazeRecognitionGetStaticData_Exists {#void-nativebinding-mlgazerecognitiongetstaticdata-exists}
+
+```csharp
+public void NativeBinding_MLGazeRecognitionGetStaticData_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBindings_MLGazeRecognitionState_struct_size {#void-nativebindings-mlgazerecognitionstate-struct-size}
+
+```csharp
+public void NativeBindings_MLGazeRecognitionState_struct_size()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBindings_MLGazeRecognitionStaticData_struct_size {#void-nativebindings-mlgazerecognitionstaticdata-struct-size}
+
+```csharp
+public void NativeBindings_MLGazeRecognitionStaticData_struct_size()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

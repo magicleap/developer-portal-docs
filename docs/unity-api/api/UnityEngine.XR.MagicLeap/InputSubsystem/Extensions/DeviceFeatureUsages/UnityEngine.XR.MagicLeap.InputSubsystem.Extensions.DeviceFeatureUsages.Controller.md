@@ -16,11 +16,11 @@ title: Controller
 
 ## Public Attributes
 
-### Touch1Force {#inputfeatureusage-float-touch1force}
+### State {#inputfeatureusage-byte-state}
 
 ```csharp
 
-public static InputFeatureUsage< float > Touch1Force = new InputFeatureUsage<float>("MLControllerTouch1Force");
+public static InputFeatureUsage< byte[]> State = new InputFeatureUsage<byte[]>("MLInputControllerStateEx");
 
 ```
 
@@ -31,11 +31,11 @@ public static InputFeatureUsage< float > Touch1Force = new InputFeatureUsage<flo
 
 -----------
 
-### State {#inputfeatureusage-byte-state}
+### Touch1Force {#inputfeatureusage-float-touch1force}
 
 ```csharp
 
-public static InputFeatureUsage< byte[]> State = new InputFeatureUsage<byte[]>("MLInputControllerStateEx");
+public static InputFeatureUsage< float > Touch1Force = new InputFeatureUsage<float>("MLControllerTouch1Force");
 
 ```
 

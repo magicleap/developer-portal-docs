@@ -17,28 +17,13 @@ DRM Session information for a MediaPlayer [Track](/unity-api/api/UnityEngine.XR.
 
 ## Public Attributes
 
-### Version {#uint-version}
+### SessionId {#intptr-sessionid}
+
+DRM Session ID of type #MLMediaDRMByteArray. 
 
 ```csharp
 
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### Uuid {#intptr-uuid}
-
-UUID of the DRM Scheme of type #MLUUID. 
-
-```csharp
-
-public IntPtr Uuid;
+public IntPtr SessionId;
 
 ```
 
@@ -69,13 +54,28 @@ public Track.Type TrackType;
 
 -----------
 
-### SessionId {#intptr-sessionid}
+### Uuid {#intptr-uuid}
 
-DRM Session ID of type #MLMediaDRMByteArray. 
+UUID of the DRM Scheme of type #MLUUID. 
 
 ```csharp
 
-public IntPtr SessionId;
+public IntPtr Uuid;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+```csharp
+
+public uint Version;
 
 ```
 

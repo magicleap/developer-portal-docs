@@ -36,8 +36,7 @@ Populate with [MLGestureClassificationGetStaticData()](/api-ref/api/Modules/grou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -21,10 +21,10 @@ Inherits from: <br></br>[MagicLeapNativeBindingsStructSizeTests](/unity-api/api/
 
 ## Public Methods
 
-### void NativeBindings_MLPolygon_struct_size {#void-nativebindings-mlpolygon-struct-size}
+### void NativeBindings_MLCoordinateFrameUID_struct_size {#void-nativebindings-mlcoordinateframeuid-struct-size}
 
 ```csharp
-public void NativeBindings_MLPolygon_struct_size()
+public void NativeBindings_MLCoordinateFrameUID_struct_size()
 ```
 
 
@@ -34,10 +34,10 @@ public void NativeBindings_MLPolygon_struct_size()
 
 -----------
 
-### void NativeBindings_MLCoordinateFrameUID_struct_size {#void-nativebindings-mlcoordinateframeuid-struct-size}
+### void NativeBindings_MLPolygon_struct_size {#void-nativebindings-mlpolygon-struct-size}
 
 ```csharp
-public void NativeBindings_MLCoordinateFrameUID_struct_size()
+public void NativeBindings_MLPolygon_struct_size()
 ```
 
 

@@ -373,8 +373,7 @@ Camera distortion vector size.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -451,8 +450,7 @@ The capabilities for each stream supported by logical camera device can be queri
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -541,8 +539,7 @@ Camera intrinsic parameter.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -664,8 +661,7 @@ Shall be called before calling [MLCameraConnect()](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -698,8 +694,7 @@ Shall be called before calling [MLCameraPrepareCapture()](/api-ref/api/Modules/g
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -732,8 +727,7 @@ Shall be called before calling MLCameraSetDeviceAvailabilityStatusCallbacks().
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -766,8 +760,7 @@ Shall be called before calling [MLCameraSetDeviceStatusCallbacks()](/api-ref/api
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -800,8 +793,7 @@ Shall be called before calling [MLCameraSetCaptureCallbacks()](/api-ref/api/Modu
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -842,8 +834,7 @@ Initialize ML Camera API, Register callback for device availability. If the user
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -886,8 +877,7 @@ Connect to camera device.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -927,8 +917,7 @@ Query the no of streams supported by camera device.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -974,8 +963,7 @@ Retrieves either the number of capabilities supported by the given stream or an 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1013,8 +1001,7 @@ Disconnect from camera device.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1045,8 +1032,7 @@ Uninitialize ML Camera API, unregister callback for device availability. Should 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1089,8 +1075,7 @@ This API triggers AEAWB sequence and returns when AEAWB convergence has been ach
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1140,8 +1125,7 @@ Note: When preparing capture the width and height parameters should match one of
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1181,8 +1165,7 @@ This API updates the capture settings for an active preview/video stream. The AP
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1226,8 +1209,7 @@ Client needs to implement the callbacks defined by [MLCameraDeviceStatusCallback
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1274,8 +1256,7 @@ Shall be called before capture operation for preview/image/video.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1321,8 +1302,7 @@ This is a blocking call, it will return after the end of on_image_buffer_availab
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1366,8 +1346,7 @@ YUV/RGBA frames are provides through callback.For encoded video capture valid en
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1411,8 +1390,7 @@ The captured preview YUV frames will be returned to the application via on_previ
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1454,8 +1432,7 @@ User should allow some time, i.e., >500ms, after MLCameraCaptureVideoStart and b
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1495,8 +1472,7 @@ Stop preview.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1540,8 +1516,7 @@ Note: This API can still be used even if [MLCameraSetDeviceStatusCallbacks()](/a
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1585,8 +1560,7 @@ Note: This API can still be used even if availability status callback is not reg
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1626,8 +1600,7 @@ Obtain camera device error code.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1670,8 +1643,7 @@ This API provides the handle for retrieving camera characteristics via APIs defi
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

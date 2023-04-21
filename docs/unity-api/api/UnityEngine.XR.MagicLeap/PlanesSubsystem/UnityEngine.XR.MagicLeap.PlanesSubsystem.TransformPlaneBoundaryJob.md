@@ -42,26 +42,11 @@ public void Execute(
 
 ## Public Attributes
 
-### m_VerticesOut {#nativearray-vector2-m-verticesout}
+### m_InvRotation {#quaternion-m-invrotation}
 
 ```csharp
 
-public NativeArray< Vector2 > m_VerticesOut;
-
-```
-
-
-
-
-
-
------------
-
-### m_VerticesIn {#nativearray-vector3-m-verticesin}
-
-```csharp
-
-public NativeArray< Vector3 > m_VerticesIn;
+public Quaternion m_InvRotation;
 
 ```
 
@@ -87,11 +72,26 @@ public Vector3 m_Position;
 
 -----------
 
-### m_InvRotation {#quaternion-m-invrotation}
+### m_VerticesIn {#nativearray-vector3-m-verticesin}
 
 ```csharp
 
-public Quaternion m_InvRotation;
+public NativeArray< Vector3 > m_VerticesIn;
+
+```
+
+
+
+
+
+
+-----------
+
+### m_VerticesOut {#nativearray-vector2-m-verticesout}
+
+```csharp
+
+public NativeArray< Vector2 > m_VerticesOut;
 
 ```
 

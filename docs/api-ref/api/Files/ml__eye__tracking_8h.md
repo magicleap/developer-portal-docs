@@ -76,8 +76,7 @@ Populate with [MLEyeTrackingGetStaticData()](/api-ref/api/Modules/group___eye_tr
 [More Info](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -100,8 +99,7 @@ This structure must be initialized by calling [MLEyeTrackingStateInit()](/api-re
 [More Info](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_state_ex.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -130,8 +128,7 @@ Initialize [MLEyeTrackingStateEx](/api-ref/api/Modules/group___eye_tracking/stru
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -240,8 +237,7 @@ Gets static information about the eye tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -284,8 +280,7 @@ NOTE: To ensure a clean trace of any eye state, it is important to monitor the c
 
 
 
-**API Level:
- 9**
+**API Level:\n 9**
   * 
 
 

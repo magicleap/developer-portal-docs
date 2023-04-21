@@ -37,13 +37,13 @@ public MLMedia.Player.Track.DRM.Info Data { get; set; }
 
 ## Public Attributes
 
-### UuidCount {#ulong-uuidcount}
+### PsshInfo {#intptr-psshinfo}
 
-Number of supported DRM UUID entries. 
+Pointer to array of #MLMediaPlayerPSSHEntry of size pssh&#95;info&#95;count. 
 
 ```csharp
 
-public ulong UuidCount;
+public IntPtr PsshInfo;
 
 ```
 
@@ -54,13 +54,13 @@ public ulong UuidCount;
 
 -----------
 
-### UUIDs {#intptr-uuids}
+### PsshInfoCount {#ulong-psshinfocount}
 
-Pointer to array of #MLUUID of size uuid&#95;count. 
+Number of PSSH entries. 
 
 ```csharp
 
-public IntPtr UUIDs;
+public ulong PsshInfoCount;
 
 ```
 
@@ -91,13 +91,13 @@ public Track.Type TrackType;
 
 -----------
 
-### PsshInfoCount {#ulong-psshinfocount}
+### UUIDs {#intptr-uuids}
 
-Number of PSSH entries. 
+Pointer to array of #MLUUID of size uuid&#95;count. 
 
 ```csharp
 
-public ulong PsshInfoCount;
+public IntPtr UUIDs;
 
 ```
 
@@ -108,13 +108,13 @@ public ulong PsshInfoCount;
 
 -----------
 
-### PsshInfo {#intptr-psshinfo}
+### UuidCount {#ulong-uuidcount}
 
-Pointer to array of #MLMediaPlayerPSSHEntry of size pssh&#95;info&#95;count. 
+Number of supported DRM UUID entries. 
 
 ```csharp
 
-public IntPtr PsshInfo;
+public ulong UuidCount;
 
 ```
 

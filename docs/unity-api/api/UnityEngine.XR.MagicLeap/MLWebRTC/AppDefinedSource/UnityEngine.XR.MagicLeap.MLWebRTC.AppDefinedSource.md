@@ -63,6 +63,23 @@ public AppDefinedSource(
 
 ## Protected Methods
 
+### OnSourceDestroy {#abstract-void-onsourcedestroy}
+
+Instance method that is called when the source is destroyed via  [MLWebRTC.MediaStream.Track.DestroyLocal()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-destroylocal) . 
+
+```csharp
+protected virtual abstract void OnSourceDestroy()
+```
+
+
+
+
+**Reimplemented by**: [OnSourceDestroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md#override-void-onsourcedestroy)
+
+
+
+-----------
+
 ### OnSourceSetEnabled {#abstract-void-onsourcesetenabled}
 
 Instance method that is called when the source is enabled or disabled via  [MLWebRTC.MediaStream.Track.SetEnabled()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-setenabled) 
@@ -84,23 +101,6 @@ protected virtual abstract void OnSourceSetEnabled(
 
 
 **Reimplemented by**: [OnSourceSetEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md#override-void-onsourcesetenabled)
-
-
-
------------
-
-### OnSourceDestroy {#abstract-void-onsourcedestroy}
-
-Instance method that is called when the source is destroyed via  [MLWebRTC.MediaStream.Track.DestroyLocal()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-destroylocal) . 
-
-```csharp
-protected virtual abstract void OnSourceDestroy()
-```
-
-
-
-
-**Reimplemented by**: [OnSourceDestroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md#override-void-onsourcedestroy)
 
 
 

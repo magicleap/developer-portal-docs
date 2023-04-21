@@ -38,11 +38,13 @@ public MLWebViewTabBehavior currentTab { get; set; }
 
 ## Public Methods
 
-### void SelectTab {#void-selecttab}
+### void CreatePopupTab {#void-createpopuptab}
 
 ```csharp
-public void SelectTab(
-    MLWebViewTabBehavior tab
+public void CreatePopupTab(
+    MLWebView popupWebView,
+    ulong popupID,
+    string url
 )
 ```
 
@@ -51,7 +53,48 @@ public void SelectTab(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) |tab||
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |popupWebView|API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
+| ulong |popupID||
+| string |url||
+
+
+
+
+
+
+-----------
+
+### void CreateTab {#void-createtab}
+
+```csharp
+public void CreateTab()
+```
+
+
+
+
+
+
+-----------
+
+### void DestroyCurrentTab {#void-destroycurrenttab}
+
+```csharp
+public void DestroyCurrentTab()
+```
+
+
+
+
+
+
+-----------
+
+### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) [] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
+
+```csharp
+public MLWebViewTabBehavior [] GetAllTabs()
+```
 
 
 
@@ -82,37 +125,20 @@ public MLWebViewTabBehavior GetTab(
 
 -----------
 
-### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) [] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
+### void SelectTab {#void-selecttab}
 
 ```csharp
-public MLWebViewTabBehavior [] GetAllTabs()
+public void SelectTab(
+    MLWebViewTabBehavior tab
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### void DestroyCurrentTab {#void-destroycurrenttab}
-
-```csharp
-public void DestroyCurrentTab()
-```
-
-
-
-
-
-
------------
-
-### void CreateTab {#void-createtab}
-
-```csharp
-public void CreateTab()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) |tab||
 
 
 
@@ -123,11 +149,11 @@ public void CreateTab()
 
 ## Public Attributes
 
-### OnTabDestroyed {#action-ontabdestroyed}
+### OnTabCreated {#action-ontabcreated}
 
 ```csharp
 
-public Action< MLWebViewTabBehavior > OnTabDestroyed;
+public Action< MLWebViewTabBehavior, string > OnTabCreated;
 
 ```
 
@@ -138,11 +164,11 @@ public Action< MLWebViewTabBehavior > OnTabDestroyed;
 
 -----------
 
-### OnTabCreated {#action-ontabcreated}
+### OnTabDestroyed {#action-ontabdestroyed}
 
 ```csharp
 
-public Action< MLWebViewTabBehavior > OnTabCreated;
+public Action< MLWebViewTabBehavior > OnTabDestroyed;
 
 ```
 

@@ -33,8 +33,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

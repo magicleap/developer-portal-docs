@@ -18,34 +18,10 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### bool OnUnityAudio {#bool-onunityaudio}
+### bool CreateAudioOutput {#bool-createaudiooutput}
 
 ```csharp
-public bool OnUnityAudio(
-    float [] data,
-    uint length
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| float [] |data||
-| uint |length||
-
-
-
-
-
-
------------
-
-### bool DestroyAudioOutput {#bool-destroyaudiooutput}
-
-```csharp
-public bool DestroyAudioOutput()
+public bool CreateAudioOutput()
 ```
 
 
@@ -89,11 +65,35 @@ public bool CreateOutputBuffer(
 
 -----------
 
-### bool CreateAudioOutput {#bool-createaudiooutput}
+### bool DestroyAudioOutput {#bool-destroyaudiooutput}
 
 ```csharp
-public bool CreateAudioOutput()
+public bool DestroyAudioOutput()
 ```
+
+
+
+
+
+
+-----------
+
+### bool OnUnityAudio {#bool-onunityaudio}
+
+```csharp
+public bool OnUnityAudio(
+    float [] data,
+    uint length
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| float [] |data||
+| uint |length||
 
 
 

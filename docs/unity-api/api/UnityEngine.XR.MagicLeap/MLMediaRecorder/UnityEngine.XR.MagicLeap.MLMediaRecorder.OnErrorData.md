@@ -17,23 +17,6 @@ Info received when the media recorder runs into an error.
 
 ## Public Attributes
 
-### Extra {#int-extra}
-
-The extra info 
-
-```csharp
-
-public int Extra;
-
-```
-
-
-
-
-
-
------------
-
 ### Error {#error-error}
 
 The error of [MLMediaRecorder.Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error)
@@ -47,6 +30,23 @@ public Error Error;
 | Type | Description  | 
 |--|--|
 | [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error) | Video recorder error types  |
+
+
+
+
+
+-----------
+
+### Extra {#int-extra}
+
+The extra info 
+
+```csharp
+
+public int Extra;
+
+```
+
 
 
 

@@ -17,16 +17,17 @@ MediaDRM session key status.
 
 ## Public Attributes
 
-### status {#readonly-keystatus-status}
-
-Status code of the corresponding key. 
+### Data {#key-data}
 
 ```csharp
 
-public readonly KeyStatus status;
+public Key Data => new Key(this.keyId.Bytes, this.status);
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) | MediaDRM session key info.  |
 
 
 
@@ -54,17 +55,16 @@ public readonly MLMediaDRMByteArray keyId;
 
 -----------
 
-### Data {#key-data}
+### status {#readonly-keystatus-status}
+
+Status code of the corresponding key. 
 
 ```csharp
 
-public Key Data => new Key(this.keyId.Bytes, this.status);
+public readonly KeyStatus status;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) | MediaDRM session key info.  |
 
 
 

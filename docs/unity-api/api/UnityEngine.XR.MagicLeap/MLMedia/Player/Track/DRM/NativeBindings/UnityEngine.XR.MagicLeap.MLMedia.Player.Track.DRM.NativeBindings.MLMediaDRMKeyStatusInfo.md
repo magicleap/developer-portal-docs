@@ -17,47 +17,13 @@ MediaDRM session keys status change info.
 
 ## Public Attributes
 
-### sessionIdByteArray {#intptr-sessionidbytearray}
+### data {#intptr-data}
 
-[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
-
-```csharp
-
-public IntPtr sessionIdByteArray;
-
-```
-
-
-
-
-
-
------------
-
-### keyStatuses {#intptr-keystatuses}
-
-Pointer to array of size keyStatusCount. 
+User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public IntPtr keyStatuses;
-
-```
-
-
-
-
-
-
------------
-
-### keyStatusCount {#ulong-keystatuscount}
-
-Number of KeyStatus entries. 
-
-```csharp
-
-public ulong keyStatusCount;
+public IntPtr data;
 
 ```
 
@@ -85,13 +51,47 @@ public bool hasNewUsableKey;
 
 -----------
 
-### data {#intptr-data}
+### keyStatusCount {#ulong-keystatuscount}
 
-User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
+Number of KeyStatus entries. 
 
 ```csharp
 
-public IntPtr data;
+public ulong keyStatusCount;
+
+```
+
+
+
+
+
+
+-----------
+
+### keyStatuses {#intptr-keystatuses}
+
+Pointer to array of size keyStatusCount. 
+
+```csharp
+
+public IntPtr keyStatuses;
+
+```
+
+
+
+
+
+
+-----------
+
+### sessionIdByteArray {#intptr-sessionidbytearray}
+
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
+
+```csharp
+
+public IntPtr sessionIdByteArray;
 
 ```
 

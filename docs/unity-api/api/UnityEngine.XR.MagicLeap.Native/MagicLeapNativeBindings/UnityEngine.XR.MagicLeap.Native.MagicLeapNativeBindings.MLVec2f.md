@@ -32,13 +32,13 @@ public Vector2 ToVector2()
 
 ## Public Attributes
 
-### Y {#float-y}
+### X {#float-x}
 
-Y coordinate. 
+X coordinate. 
 
 ```csharp
 
-public float Y;
+public float X;
 
 ```
 
@@ -49,13 +49,13 @@ public float Y;
 
 -----------
 
-### X {#float-x}
+### Y {#float-y}
 
-X coordinate. 
+Y coordinate. 
 
 ```csharp
 
-public float X;
+public float Y;
 
 ```
 

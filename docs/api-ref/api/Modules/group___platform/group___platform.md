@@ -56,12 +56,10 @@ APIs for information regarding the platform.
 
 
 
-**Shared Object:
- capi.magicleap**
+**Shared Object:\n capi.magicleap**
   * 
 
-**Shared Object:
- platform.magicleap**
+**Shared Object:\n platform.magicleap**
   * 
 
 
@@ -254,8 +252,7 @@ Returns an ASCII string for MLResult codes.
 **Return**: ASCII string containing readable version of result code.
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

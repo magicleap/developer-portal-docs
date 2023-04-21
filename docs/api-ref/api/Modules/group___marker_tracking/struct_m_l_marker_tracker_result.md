@@ -38,8 +38,7 @@ A list of these detections will be returned by the Marker Tracker, after process
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -39,33 +39,15 @@ public ulong Handle { get; set; }
 
 ## Public Methods
 
-### override string ToString {#override-string-tostring}
+### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateAudio {#mlmediaformat-createaudio}
 
-Human readable representation of the format. 
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
-**Returns**: Human readable representation of the format.
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
-
-Set the value of an integer key. 
+Create a audio format object. 
 
 ```csharp
-public MLResult SetValue(
-    string keyName,
-    int value
+public static MLMediaFormat CreateAudio(
+    string mimeType,
+    int sampleRate,
+    int channelCount
 )
 ```
 
@@ -74,28 +56,28 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
-| int |value|Value to set|
+| string |mimeType|Mime type of the content|
+| int |sampleRate|Sample rate of the content|
+| int |channelCount|Number of audio channels|
 
 
 
 
 
 
-**Returns**: MLResult.Result.Ok if value was set successfully
+**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateCopy {#mlmediaformat-createcopy}
 
-Set the value of a long key. 
+Create a copy of the format handle provided. 
 
 ```csharp
-public MLResult SetValue(
-    string keyName,
-    long value
+public static MLMediaFormat CreateCopy(
+    MLMediaFormat format
 )
 ```
 
@@ -104,28 +86,50 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
-| long |value|Value to set|
+| [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|[MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object to copy|
+
+
+**Details**
+
+This can be particularly useful to persist the media format handle/object that was received through the callbacks(as life cycle of those media format objects are with in the callback context only). The API call to make a copy ensures that the copied object exists until released by the app. 
 
 
 
 
 
-
-**Returns**: MLResult.Result.Ok if value was set successfully
+**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateEmpty {#mlmediaformat-createempty}
 
-Set the value of a float key. 
+Create an empty format object. 
 
 ```csharp
-public MLResult SetValue(
-    string keyName,
-    float value
+public static MLMediaFormat CreateEmpty()
+```
+
+
+
+
+
+
+**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+
+
+
+-----------
+
+### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateSubtitle {#mlmediaformat-createsubtitle}
+
+Create a subtitle format object. 
+
+```csharp
+public static MLMediaFormat CreateSubtitle(
+    string mimeType,
+    string language
 )
 ```
 
@@ -134,28 +138,29 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
-| float |value|Value to set|
+| string |mimeType|Mime type of the content|
+| string |language|Language of the content, using either ISO 639-1 or 639-2/T codes. Specify null or "und" if language information is only included in the content.|
 
 
 
 
 
 
-**Returns**: MLResult.Result.Ok if value was set successfully
+**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateVideo {#mlmediaformat-createvideo}
 
-Set the value of a string key. 
+Create a video format object. 
 
 ```csharp
-public MLResult SetValue(
-    string keyName,
-    string value
+public static MLMediaFormat CreateVideo(
+    string mimeType,
+    int width,
+    int height
 )
 ```
 
@@ -164,75 +169,16 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
-| string |value|Value to set|
+| string |mimeType|Mime type of the content|
+| int |width|Width of the content in pixels|
+| int |height|Height of the content in pixels|
 
 
 
 
 
 
-**Returns**: MLResult.Result.Ok if value was set successfully
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
-
-Set the value of a byte buffer key. 
-
-```csharp
-public MLResult SetValue(
-    string keyName,
-    byte [] value
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
-| byte [] |value|Value to set|
-
-
-
-
-
-
-**Returns**: MLResult.Result.Ok if value was set successfully
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
-
-Set the value of an unsigned long key. 
-
-```csharp
-public MLResult SetValue(
-    string keyName,
-    ulong size
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
-| ulong |value|Value to set|
-
-
-
-
-
-
-**Returns**: MLResult.Result.Ok if value was set successfully
+**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
@@ -418,15 +364,14 @@ public MLResult GetValue(
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateVideo {#mlmediaformat-createvideo}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
-Create a video format object. 
+Set the value of an integer key. 
 
 ```csharp
-public static MLMediaFormat CreateVideo(
-    string mimeType,
-    int width,
-    int height
+public MLResult SetValue(
+    string keyName,
+    int value
 )
 ```
 
@@ -435,29 +380,28 @@ public static MLMediaFormat CreateVideo(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |mimeType|Mime type of the content|
-| int |width|Width of the content in pixels|
-| int |height|Height of the content in pixels|
+| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| int |value|Value to set|
 
 
 
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: MLResult.Result.Ok if value was set successfully
 
 
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateSubtitle {#mlmediaformat-createsubtitle}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
-Create a subtitle format object. 
+Set the value of a long key. 
 
 ```csharp
-public static MLMediaFormat CreateSubtitle(
-    string mimeType,
-    string language
+public MLResult SetValue(
+    string keyName,
+    long value
 )
 ```
 
@@ -466,46 +410,28 @@ public static MLMediaFormat CreateSubtitle(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |mimeType|Mime type of the content|
-| string |language|Language of the content, using either ISO 639-1 or 639-2/T codes. Specify null or "und" if language information is only included in the content.|
+| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| long |value|Value to set|
 
 
 
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
-
-
-
------------
-
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateEmpty {#mlmediaformat-createempty}
-
-Create an empty format object. 
-
-```csharp
-public static MLMediaFormat CreateEmpty()
-```
-
-
-
-
-
-
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: MLResult.Result.Ok if value was set successfully
 
 
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateCopy {#mlmediaformat-createcopy}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
-Create a copy of the format handle provided. 
+Set the value of a float key. 
 
 ```csharp
-public static MLMediaFormat CreateCopy(
-    MLMediaFormat format
+public MLResult SetValue(
+    string keyName,
+    float value
 )
 ```
 
@@ -514,32 +440,28 @@ public static MLMediaFormat CreateCopy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|[MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object to copy|
-
-
-**Details**
-
-This can be particularly useful to persist the media format handle/object that was received through the callbacks(as life cycle of those media format objects are with in the callback context only). The API call to make a copy ensures that the copied object exists until released by the app. 
+| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| float |value|Value to set|
 
 
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+
+**Returns**: MLResult.Result.Ok if value was set successfully
 
 
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateAudio {#mlmediaformat-createaudio}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
-Create a audio format object. 
+Set the value of a string key. 
 
 ```csharp
-public static MLMediaFormat CreateAudio(
-    string mimeType,
-    int sampleRate,
-    int channelCount
+public MLResult SetValue(
+    string keyName,
+    string value
 )
 ```
 
@@ -548,16 +470,94 @@ public static MLMediaFormat CreateAudio(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |mimeType|Mime type of the content|
-| int |sampleRate|Sample rate of the content|
-| int |channelCount|Number of audio channels|
+| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |value|Value to set|
 
 
 
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: MLResult.Result.Ok if value was set successfully
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+
+Set the value of a byte buffer key. 
+
+```csharp
+public MLResult SetValue(
+    string keyName,
+    byte [] value
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| byte [] |value|Value to set|
+
+
+
+
+
+
+**Returns**: MLResult.Result.Ok if value was set successfully
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+
+Set the value of an unsigned long key. 
+
+```csharp
+public MLResult SetValue(
+    string keyName,
+    ulong size
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| ulong |value|Value to set|
+
+
+
+
+
+
+**Returns**: MLResult.Result.Ok if value was set successfully
+
+
+
+-----------
+
+### override string ToString {#override-string-tostring}
+
+Human readable representation of the format. 
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+**Returns**: Human readable representation of the format.
 
 
 

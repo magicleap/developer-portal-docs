@@ -17,53 +17,13 @@ Representation of a mesh block.
 
 ## Public Attributes
 
-### timestamp {#readonly-timestamp}
+### extents {#readonly-vector3-extents}
 
-The timestamp when block was updated. 
-
-```csharp
-
-public readonly MLTime timestamp;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
-
-
-
-
-
------------
-
-### state {#readonly-state}
-
-The state of the mesh block. 
+The extents of the bounding box. 
 
 ```csharp
 
-public readonly MeshState state;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [MeshState](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-meshstate) | State of a block mesh.  |
-
-
-
-
-
------------
-
-### pose {#readonly-pose-pose}
-
-The pose of the mesh block. 
-
-```csharp
-
-public readonly Pose pose;
+public readonly Vector3 extents;
 
 ```
 
@@ -91,16 +51,56 @@ public readonly string id;
 
 -----------
 
-### extents {#readonly-vector3-extents}
+### pose {#readonly-pose-pose}
 
-The extents of the bounding box. 
+The pose of the mesh block. 
 
 ```csharp
 
-public readonly Vector3 extents;
+public readonly Pose pose;
 
 ```
 
+
+
+
+
+
+-----------
+
+### state {#readonly-state}
+
+The state of the mesh block. 
+
+```csharp
+
+public readonly MeshState state;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [MeshState](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-meshstate) | State of a block mesh.  |
+
+
+
+
+
+-----------
+
+### timestamp {#readonly-timestamp}
+
+The timestamp when block was updated. 
+
+```csharp
+
+public readonly MLTime timestamp;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 
 
 

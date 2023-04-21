@@ -42,8 +42,7 @@ API to query the status of the Headset fit.
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * This API can be used to determine the fit of the headset on the user. The API will only look to see if the pupil location corresponding to the neutral gaze is centered on the image. What this means is that we can only look for a certain type of bad fits. However this covers majority of the bad fit cases. 
 
 
@@ -71,8 +70,7 @@ If status is neither NotWorn nor Unknown, then headset is being worn.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -96,8 +94,7 @@ Headset fit state.
 [More Info](/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -126,8 +123,7 @@ Initialize [MLHeadsetFitState](/api-ref/api/Modules/group___headset_fit/struct_m
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -166,8 +162,7 @@ Creates a headset fit client.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -206,8 +201,7 @@ Destroys headset fit client.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -248,8 +242,7 @@ Gets information about the user's current headset fit.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -43,11 +43,13 @@ public MLInputPreDefinedPattern(
 
 ## Public Attributes
 
-### typeStatic {#fourcc-typestatic}
+### Pattern {#readonly-uint-pattern}
+
+Pre-defined pattern to be played. 
 
 ```csharp
 
-public FourCC typeStatic => commandType;
+public readonly uint Pattern;
 
 ```
 
@@ -75,13 +77,11 @@ public readonly uint Version;
 
 -----------
 
-### Pattern {#readonly-uint-pattern}
-
-Pre-defined pattern to be played. 
+### typeStatic {#fourcc-typestatic}
 
 ```csharp
 
-public readonly uint Pattern;
+public FourCC typeStatic => commandType;
 
 ```
 

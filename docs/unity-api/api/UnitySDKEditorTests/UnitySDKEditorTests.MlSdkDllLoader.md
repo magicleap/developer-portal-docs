@@ -19,6 +19,19 @@ title: MlSdkDllLoader
 
 ## Public Methods
 
+### void Free {#void-free}
+
+```csharp
+public void Free()
+```
+
+
+
+
+
+
+-----------
+
 ### void Load {#void-load}
 
 ```csharp
@@ -33,19 +46,6 @@ public void Load(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |lib||
-
-
-
-
-
-
------------
-
-### void Free {#void-free}
-
-```csharp
-public void Free()
-```
 
 
 

@@ -18,11 +18,11 @@ Inherits from: <br></br>IInputDeviceCommandInfo
 
 ## Public Fields
 
-### typeStatic {#fourcc-typestatic}
+### Type {#fourcc-type}
 
 ```csharp
 
-public FourCC typeStatic { get; set; }
+public static FourCC Type { get; set; }
 
 ```
 
@@ -33,11 +33,11 @@ public FourCC typeStatic { get; set; }
 
 -----------
 
-### Type {#fourcc-type}
+### typeStatic {#fourcc-typestatic}
 
 ```csharp
 
-public static FourCC Type { get; set; }
+public FourCC typeStatic { get; set; }
 
 ```
 
@@ -82,56 +82,11 @@ public static SendLEDEffect Create(
 
 ## Public Attributes
 
-### speed {#uint-speed}
+### baseCommand {#inputdevicecommand-basecommand}
 
 ```csharp
 
-public uint speed;
-
-```
-
-
-
-
-
-
------------
-
-### pattern {#uint-pattern}
-
-```csharp
-
-public uint pattern;
-
-```
-
-
-
-
-
-
------------
-
-### effect {#uint-effect}
-
-```csharp
-
-public uint effect;
-
-```
-
-
-
-
-
-
------------
-
-### duration {#uint-duration}
-
-```csharp
-
-public uint duration;
+public InputDeviceCommand baseCommand;
 
 ```
 
@@ -157,11 +112,56 @@ public uint color;
 
 -----------
 
-### baseCommand {#inputdevicecommand-basecommand}
+### duration {#uint-duration}
 
 ```csharp
 
-public InputDeviceCommand baseCommand;
+public uint duration;
+
+```
+
+
+
+
+
+
+-----------
+
+### effect {#uint-effect}
+
+```csharp
+
+public uint effect;
+
+```
+
+
+
+
+
+
+-----------
+
+### pattern {#uint-pattern}
+
+```csharp
+
+public uint pattern;
+
+```
+
+
+
+
+
+
+-----------
+
+### speed {#uint-speed}
+
+```csharp
+
+public uint speed;
 
 ```
 

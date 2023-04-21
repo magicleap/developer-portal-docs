@@ -58,8 +58,7 @@ APIs for the Planes system.
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * 
 
 
@@ -133,8 +132,7 @@ Coplanar connected line segments representing the outer boundary of a polygon, a
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -155,8 +153,7 @@ Type used to represent a region boundary on a 2D plane.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -177,8 +174,7 @@ Type to represent multiple regions on a 2D plane.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundaries.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -199,8 +195,7 @@ Type to represent polygons of all returned planes.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundaries_list.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -221,8 +216,7 @@ Type used to represent a plane query.
 [More Info](/api-ref/api/Modules/group___planes/struct_m_l_planes_query.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -251,8 +245,7 @@ Initializes an [MLPlaneBoundariesList](/api-ref/api/Modules/group___planes/struc
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -373,8 +366,7 @@ Initiates a plane query. One of the following flags must be set for the query to
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -423,8 +415,7 @@ Gets the result of a plane query with boundaries on each plane. After this funct
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -465,8 +456,7 @@ Releases the polygons data owned by the [MLPlaneBoundariesList](/api-ref/api/Mod
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 

@@ -19,11 +19,11 @@ Inherits from: <br></br>[AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.Ma
 
 ## Public Methods
 
-###  MLCameraVideoSource {#functions-mlcameravideosource}
+### delegate void CaptureStatusChangedDelegate {#delegate-void-capturestatuschangeddelegate}
 
 ```csharp
-public MLCameraVideoSource(
-    string trackId
+public delegate void CaptureStatusChangedDelegate(
+    bool isDestroying
 )
 ```
 
@@ -32,7 +32,7 @@ public MLCameraVideoSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |trackId||
+| bool |isDestroying||
 
 
 
@@ -81,11 +81,11 @@ public static MLCameraVideoSource CreateLocal(
 
 -----------
 
-### delegate void CaptureStatusChangedDelegate {#delegate-void-capturestatuschangeddelegate}
+###  MLCameraVideoSource {#functions-mlcameravideosource}
 
 ```csharp
-public delegate void CaptureStatusChangedDelegate(
-    bool isDestroying
+public MLCameraVideoSource(
+    string trackId
 )
 ```
 
@@ -94,7 +94,7 @@ public delegate void CaptureStatusChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| bool |isDestroying||
+| string |trackId||
 
 
 
@@ -104,49 +104,6 @@ public delegate void CaptureStatusChangedDelegate(
 -----------
 
 ## Protected Methods
-
-### OnSourceSetEnabled {#override-void-onsourcesetenabled}
-
-Instance method that is called when the source is enabled or disabled via  [MLWebRTC.MediaStream.Track.SetEnabled()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-setenabled) 
-
-```csharp
-protected virtual override void OnSourceSetEnabled(
-    bool enabled
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |enabled|True if enabled.|
-
-
-
-
-**Reimplements**: [OnSourceSetEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.md#abstract-void-onsourcesetenabled)
-
-
-
------------
-
-### OnSourceDestroy {#override-void-onsourcedestroy}
-
-Instance method that is called when the source is destroyed via  [MLWebRTC.MediaStream.Track.DestroyLocal()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-destroylocal) . 
-
-```csharp
-protected virtual override void OnSourceDestroy()
-```
-
-
-
-
-**Reimplements**: [OnSourceDestroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.md#abstract-void-onsourcedestroy)
-
-
-
------------
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
@@ -169,6 +126,49 @@ protected virtual override void OnApplicationPause(
 
 
 **Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#void-onapplicationpause)
+
+
+
+-----------
+
+### OnSourceDestroy {#override-void-onsourcedestroy}
+
+Instance method that is called when the source is destroyed via  [MLWebRTC.MediaStream.Track.DestroyLocal()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-destroylocal) . 
+
+```csharp
+protected virtual override void OnSourceDestroy()
+```
+
+
+
+
+**Reimplements**: [OnSourceDestroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.md#abstract-void-onsourcedestroy)
+
+
+
+-----------
+
+### OnSourceSetEnabled {#override-void-onsourcesetenabled}
+
+Instance method that is called when the source is enabled or disabled via  [MLWebRTC.MediaStream.Track.SetEnabled()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#mlresult-setenabled) 
+
+```csharp
+protected virtual override void OnSourceSetEnabled(
+    bool enabled
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |enabled|True if enabled.|
+
+
+
+
+**Reimplements**: [OnSourceSetEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedSource.md#abstract-void-onsourcesetenabled)
 
 
 

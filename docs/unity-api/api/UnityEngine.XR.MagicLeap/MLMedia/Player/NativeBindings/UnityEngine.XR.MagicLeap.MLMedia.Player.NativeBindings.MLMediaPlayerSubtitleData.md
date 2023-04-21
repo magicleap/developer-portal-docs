@@ -17,47 +17,13 @@ MediaPlayer subtitle data.
 
 ## Public Attributes
 
-### TrackIndex {#uint-trackindex}
+### Data {#intptr-data}
 
-Index of the track the subtitle is on. 
-
-```csharp
-
-public uint TrackIndex;
-
-```
-
-
-
-
-
-
------------
-
-### StartTimeUs {#ulong-starttimeus}
-
-Start time of the subtitle. 
+Data of the subtitle. 
 
 ```csharp
 
-public ulong StartTimeUs;
-
-```
-
-
-
-
-
-
------------
-
-### DurationUs {#ulong-durationus}
-
-Duration of the subtitle. 
-
-```csharp
-
-public ulong DurationUs;
+public IntPtr Data;
 
 ```
 
@@ -85,13 +51,47 @@ public uint DataSize;
 
 -----------
 
-### Data {#intptr-data}
+### DurationUs {#ulong-durationus}
 
-Data of the subtitle. 
+Duration of the subtitle. 
 
 ```csharp
 
-public IntPtr Data;
+public ulong DurationUs;
+
+```
+
+
+
+
+
+
+-----------
+
+### StartTimeUs {#ulong-starttimeus}
+
+Start time of the subtitle. 
+
+```csharp
+
+public ulong StartTimeUs;
+
+```
+
+
+
+
+
+
+-----------
+
+### TrackIndex {#uint-trackindex}
+
+Index of the track the subtitle is on. 
+
+```csharp
+
+public uint TrackIndex;
 
 ```
 

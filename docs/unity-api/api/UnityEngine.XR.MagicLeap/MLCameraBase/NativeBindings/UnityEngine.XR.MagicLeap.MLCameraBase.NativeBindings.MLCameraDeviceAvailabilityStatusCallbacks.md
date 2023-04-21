@@ -17,19 +17,6 @@ Device availability status callbacks to be implemented by client to receive devi
 
 ## Public Methods
 
-### [MLCameraDeviceAvailabilityStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md) CreateUninitialized {#mlcameradeviceavailabilitystatuscallbacks-createuninitialized}
-
-```csharp
-public static MLCameraDeviceAvailabilityStatusCallbacks CreateUninitialized()
-```
-
-
-
-
-
-
------------
-
 ### [MLCameraDeviceAvailabilityStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md) Create {#mlcameradeviceavailabilitystatuscallbacks-create}
 
 Create and return an initialized version of this struct. 
@@ -49,15 +36,28 @@ public static MLCameraDeviceAvailabilityStatusCallbacks Create()
 
 -----------
 
+### [MLCameraDeviceAvailabilityStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md) CreateUninitialized {#mlcameradeviceavailabilitystatuscallbacks-createuninitialized}
+
+```csharp
+public static MLCameraDeviceAvailabilityStatusCallbacks CreateUninitialized()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### Version {#uint-version}
+### OnDeviceAvailable {#deviceavailabilitystatusdelegate-ondeviceavailable}
 
-Version contains the version number for this structure. 
+Callback is invoked when the camera becomes available. 
 
 ```csharp
 
-public uint Version;
+public DeviceAvailabilityStatusDelegate OnDeviceAvailable;
 
 ```
 
@@ -85,13 +85,13 @@ public DeviceAvailabilityStatusDelegate OnDeviceUnavailable;
 
 -----------
 
-### OnDeviceAvailable {#deviceavailabilitystatusdelegate-ondeviceavailable}
+### Version {#uint-version}
 
-Callback is invoked when the camera becomes available. 
+Version contains the version number for this structure. 
 
 ```csharp
 
-public DeviceAvailabilityStatusDelegate OnDeviceAvailable;
+public uint Version;
 
 ```
 

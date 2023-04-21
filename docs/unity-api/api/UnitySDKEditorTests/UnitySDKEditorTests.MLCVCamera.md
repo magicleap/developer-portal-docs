@@ -21,23 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLCVCameraGetFramePose_Exists {#void-nativebinding-mlcvcameragetframepose-exists}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLCVCameraTrackingDestroy_Exists {#void-nativebinding-mlcvcameratrackingdestroy-exists}
-
-```csharp
-public void NativeBinding_MLCVCameraTrackingDestroy_Exists()
+public void NativeBinding_MLCVCameraGetFramePose_Exists()
 ```
 
 
@@ -60,10 +47,23 @@ public void NativeBinding_MLCVCameraTrackingCreate_Exists()
 
 -----------
 
-### void NativeBinding_MLCVCameraGetFramePose_Exists {#void-nativebinding-mlcvcameragetframepose-exists}
+### void NativeBinding_MLCVCameraTrackingDestroy_Exists {#void-nativebinding-mlcvcameratrackingdestroy-exists}
 
 ```csharp
-public void NativeBinding_MLCVCameraGetFramePose_Exists()
+public void NativeBinding_MLCVCameraTrackingDestroy_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

@@ -18,10 +18,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLWebRTCFrameGetData_Exists {#void-nativebinding-mlwebrtcframegetdata-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_MLWebRTCFrameGetData_Exists()
 ```
 
 
@@ -31,10 +31,10 @@ public void SetupNativeBindings()
 
 -----------
 
-### void NativeBinding_MLWebRTCFrameGetData_Exists {#void-nativebinding-mlwebrtcframegetdata-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_MLWebRTCFrameGetData_Exists()
+public void SetupNativeBindings()
 ```
 
 

@@ -16,11 +16,11 @@ title: CaptionPAC
 
 ## Public Attributes
 
-### styleColor {#captionstylecolor-stylecolor}
+### col {#uint-col}
 
 ```csharp
 
-public CaptionStyleColor styleColor;
+public uint col;
 
 ```
 
@@ -46,11 +46,11 @@ public uint row;
 
 -----------
 
-### col {#uint-col}
+### styleColor {#captionstylecolor-stylecolor}
 
 ```csharp
 
-public uint col;
+public CaptionStyleColor styleColor;
 
 ```
 

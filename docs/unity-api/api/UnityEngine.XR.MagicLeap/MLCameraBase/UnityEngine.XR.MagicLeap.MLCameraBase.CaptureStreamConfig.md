@@ -16,19 +16,6 @@ title: CaptureStreamConfig
 
 ## Public Methods
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ### [CaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureStreamConfig.md) Create {#capturestreamconfig-create}
 
 ```csharp
@@ -55,16 +42,10 @@ public static CaptureStreamConfig Create(
 
 -----------
 
-## Public Attributes
-
-### Width {#int-width}
-
-Capture Resolution 
+### override string ToString {#override-string-tostring}
 
 ```csharp
-
-public int Width;
-
+public override string ToString()
 ```
 
 
@@ -74,13 +55,35 @@ public int Width;
 
 -----------
 
-### Surface {#mlnativesurface-surface}
+## Public Attributes
 
-Media recorder surface, only valid for capture type video &#42; set to ML&#95;INVALID&#95;HANDLE for yuv/rgba video capture 
+### CaptureType {#capturetype-capturetype}
+
+Capture Type 
 
 ```csharp
 
-public MLNativeSurface Surface;
+public CaptureType CaptureType;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
+
+
+
+
+
+-----------
+
+### Height {#int-height}
+
+Resolution height 
+
+```csharp
+
+public int Height;
 
 ```
 
@@ -111,13 +114,13 @@ public OutputFormat OutputFormat;
 
 -----------
 
-### Height {#int-height}
+### Surface {#mlnativesurface-surface}
 
-Resolution height 
+Media recorder surface, only valid for capture type video &#42; set to ML&#95;INVALID&#95;HANDLE for yuv/rgba video capture 
 
 ```csharp
 
-public int Height;
+public MLNativeSurface Surface;
 
 ```
 
@@ -128,19 +131,16 @@ public int Height;
 
 -----------
 
-### CaptureType {#capturetype-capturetype}
+### Width {#int-width}
 
-Capture Type 
+Capture Resolution 
 
 ```csharp
 
-public CaptureType CaptureType;
+public int Width;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 

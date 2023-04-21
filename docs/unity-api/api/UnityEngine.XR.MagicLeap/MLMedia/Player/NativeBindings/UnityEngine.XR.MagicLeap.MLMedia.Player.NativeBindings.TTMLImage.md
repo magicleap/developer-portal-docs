@@ -17,13 +17,13 @@ summary: ttmldata data structure.
 
 ## Public Attributes
 
-### Size {#ushort-size}
+### Data {#intptr-data}
 
-Image size in bytes. 
+Byte data of the image. 
 
 ```csharp
 
-public ushort Size;
+public IntPtr Data;
 
 ```
 
@@ -34,13 +34,13 @@ public ushort Size;
 
 -----------
 
-### Data {#intptr-data}
+### Size {#ushort-size}
 
-Byte data of the image. 
+Image size in bytes. 
 
 ```csharp
 
-public IntPtr Data;
+public ushort Size;
 
 ```
 

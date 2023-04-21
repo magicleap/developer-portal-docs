@@ -19,34 +19,6 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### IntPtr MLMediaResultGetString {#intptr-mlmediaresultgetstring}
-
-Gets a readable version of the result code as an ASCII string. 
-
-```csharp
-public IntPtr MLMediaResultGetString(
-    MLResult.Code result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) that should be converted.|
-
-
-
-
-
-
-**Returns**: ASCII string containing a readable version of the result code.
-
-
-
------------
-
 ### string GetResultString {#string-getresultstring}
 
 Gets the result string for a [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code). 
@@ -70,6 +42,34 @@ public static string GetResultString(
 
 
 **Returns**: The result string.
+
+
+
+-----------
+
+### IntPtr MLMediaResultGetString {#intptr-mlmediaresultgetstring}
+
+Gets a readable version of the result code as an ASCII string. 
+
+```csharp
+public IntPtr MLMediaResultGetString(
+    MLResult.Code result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) that should be converted.|
+
+
+
+
+
+
+**Returns**: ASCII string containing a readable version of the result code.
 
 
 

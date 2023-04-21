@@ -64,8 +64,7 @@ Cea608 Caption Dimension constants.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -94,8 +93,7 @@ Cea608 caption color code.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -118,8 +116,7 @@ Cea608 caption style code.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -158,8 +155,7 @@ Cea608 caption style and color.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -180,8 +176,7 @@ Cea608 caption preamble address code.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -202,8 +197,7 @@ Cea608 caption line structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -224,8 +218,7 @@ Cea608 caption segment structure.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -252,8 +245,7 @@ Callback signature called when Cea608 displayable is changed.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -294,8 +286,7 @@ Create internal closed caption parser object.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -342,8 +333,7 @@ Return closed caption for display.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -381,8 +371,7 @@ Release internal CC parser object.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -427,8 +416,7 @@ Setting this callback saves application from handling raw subtitle data. Caption
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -471,8 +459,7 @@ Provide Cea608 parser with subtitle raw data for parsing. If the callback has be
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 

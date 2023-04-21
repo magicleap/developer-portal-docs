@@ -19,19 +19,16 @@ Inherits from: <br></br>[Sink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/
 
 ## Public Fields
 
-### Mode {#buffernotifymode-mode}
+### CopyRawAudioDataToManagedMemory {#bool-copyrawaudiodatatomanagedmemory}
 
-Audio buffer notification mode for this [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md)
+Raw audio data received in the OnAudioDataAvailable&#95;NativeCallbackThread delegate should be converted to float samples and copied from unmanaged to managed memory. Audio data received in OnAudioDataAvailable will always be available in managed memory. This is set to true by default. Disable this flag if you experience too many garbage collection invocations for MLAudio.Buffer.Samples & handle the audio data conversion from the unmanaged to managed and from Int to Float yourself. 
 
 ```csharp
 
-public BufferNotifyMode Mode { get; set; }
+public bool CopyRawAudioDataToManagedMemory { get; set; }
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [BufferNotifyMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md#enums-buffernotifymode) | Behavior of the sink if audio buffer data is provided to the app in a callback.  |
 
 
 
@@ -59,16 +56,19 @@ public ServiceStatus CurrentServiceStatus { get; set; }
 
 -----------
 
-### CopyRawAudioDataToManagedMemory {#bool-copyrawaudiodatatomanagedmemory}
+### Mode {#buffernotifymode-mode}
 
-Raw audio data received in the OnAudioDataAvailable&#95;NativeCallbackThread delegate should be converted to float samples and copied from unmanaged to managed memory. Audio data received in OnAudioDataAvailable will always be available in managed memory. This is set to true by default. Disable this flag if you experience too many garbage collection invocations for MLAudio.Buffer.Samples & handle the audio data conversion from the unmanaged to managed and from Int to Float yourself. 
+Audio buffer notification mode for this [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md)
 
 ```csharp
 
-public bool CopyRawAudioDataToManagedMemory { get; set; }
+public BufferNotifyMode Mode { get; set; }
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [BufferNotifyMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md#enums-buffernotifymode) | Behavior of the sink if audio buffer data is provided to the app in a callback.  |
 
 
 
@@ -78,13 +78,14 @@ public bool CopyRawAudioDataToManagedMemory { get; set; }
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetVolume {#mlresult-setvolume}
+### [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) Create {#audiosink-create}
 
-Sets the volume of the audio sink for the specified channel. The range of the volume is 0 to 8, with 0 for silence, 1 for unity gain, and 8 for 8x gain. 
+Creates an initialized [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) object. 
 
 ```csharp
-public MLResult SetVolume(
-    float volume
+public static AudioSink Create(
+    out MLResult result,
+    BufferNotifyMode mode =BufferNotifyMode.None
 )
 ```
 
@@ -93,26 +94,48 @@ public MLResult SetVolume(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float |volume|The volume of the audio sink.|
+| out [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) object of the inner platform call(s).|
+| [BufferNotifyMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md#enums-buffernotifymode) |mode|Behavior of the sink if audio buffer data is provided to the app in a callback. |
 
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
+**Returns**: An initialized [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) object.
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetStream {#mlresult-setstream}
+### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#override-destroy}
 
-Sets the stream of the audio sink. 
+Destroys this audio sink object. 
 
 ```csharp
-public MLResult SetStream(
-    MediaStream stream
+public virtual override MLResult Destroy()
+```
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
+
+**Reimplements**: [Destroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md#abstract-destroy)
+
+
+
+-----------
+
+### delegate void OnAudioDataAvailableDelegate {#delegate-void-onaudiodataavailabledelegate}
+
+Delegate to provide audio buffer data received for this audio sink. 
+
+```csharp
+public delegate void OnAudioDataAvailableDelegate(
+    MLAudioOutput.Buffer buffer
 )
 ```
 
@@ -121,7 +144,47 @@ public MLResult SetStream(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) |stream|The stream to use.|
+| [MLAudioOutput.Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) |bufferFormat|Format of the audio buffer|
+|  |buffer|Audio buffer|
+
+
+
+
+
+
+-----------
+
+### delegate void OnAudioServiceStatusChangedDelegate {#delegate-void-onaudioservicestatuschangeddelegate}
+
+Delegate to provide the current audio service status. Apps should use this status to determine whether its safe to set the audio attriutes like soundfield parameters and volume. 
+
+```csharp
+public delegate void OnAudioServiceStatusChangedDelegate(
+    ServiceStatus status
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [ServiceStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md#enums-servicestatus) |status|The current status of the audio service|
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ResetPosition {#mlresult-resetposition}
+
+Resets the world position of the audio sink for  spatialized  audio. 
+
+```csharp
+public MLResult ResetPosition()
+```
 
 
 
@@ -134,12 +197,41 @@ public MLResult SetStream(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetRoomSendLevels {#mlresult-setroomsendlevels}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetCacheSize {#mlresult-setcachesize}
 
-Sets the room send levels of the audio sink for the specified channel. 
+Sets the number of milliseconds of audio that should be cached in the buffers before dropping the packets. Dictates the audio latency when app recovers from lifecycle state transitions like standby & reality. Default is 200ms. 
 
 ```csharp
-public MLResult SetRoomSendLevels(
+public MLResult SetCacheSize(
+    uint millisecondsToCache
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| uint |sinkHandle|The handle to the audio sink.|
+|  |millisecondsToCache|How many milliseconds worth of audio to cache.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetDirectSendLevels {#mlresult-setdirectsendlevels}
+
+Sets the direct send levels of the audio sink for the specified channel. 
+
+```csharp
+public MLResult SetDirectSendLevels(
     MLAudioOutput.SpatialSound.SendLevels sendLevels,
     int channel =-1
 )
@@ -151,96 +243,6 @@ public MLResult SetRoomSendLevels(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLAudioOutput.SpatialSound.SendLevels](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.SendLevels.md) |sendLevels|The send levels of the audio sink.|
-| int |channel|Channel to set this spatialization property for. Passing -1 sets it for all available channels.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetRadiationProperties {#mlresult-setradiationproperties}
-
-Sets the radiation properties of the audio sink for the specified channel. 
-
-```csharp
-public MLResult SetRadiationProperties(
-    MLAudioOutput.SpatialSound.RadiationProperties radiationProperties,
-    int channel =-1
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLAudioOutput.SpatialSound.RadiationProperties](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.RadiationProperties.md) |radiationProperties|The radiation properties of the audio sink.|
-| int |channel|Channel to set this spatialization property for. Passing -1 sets it for all available channels.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetPosition {#mlresult-setposition}
-
-Sets the world position of the audio sink for the specified channel. 
-
-```csharp
-public MLResult SetPosition(
-    Vector3 position,
-    int channel =-1
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Vector3 |position|The position to set the audio sink to.|
-| int |channel|Channel to set this spatialization property for. Passing -1 sets it for all available channels.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOrientation {#mlresult-setorientation}
-
-Sets the world orientation of the audio sink for the specified channel. 
-
-```csharp
-public MLResult SetOrientation(
-    Quaternion orientation,
-    int channel =-1
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| Quaternion |orientation|The orientation of the audio sink.|
 | int |channel|Channel to set this spatialization property for. Passing -1 sets it for all available channels.|
 
 
@@ -284,12 +286,102 @@ public MLResult SetDistanceProperties(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetDirectSendLevels {#mlresult-setdirectsendlevels}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOrientation {#mlresult-setorientation}
 
-Sets the direct send levels of the audio sink for the specified channel. 
+Sets the world orientation of the audio sink for the specified channel. 
 
 ```csharp
-public MLResult SetDirectSendLevels(
+public MLResult SetOrientation(
+    Quaternion orientation,
+    int channel =-1
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Quaternion |orientation|The orientation of the audio sink.|
+| int |channel|Channel to set this spatialization property for. Passing -1 sets it for all available channels.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetPosition {#mlresult-setposition}
+
+Sets the world position of the audio sink for the specified channel. 
+
+```csharp
+public MLResult SetPosition(
+    Vector3 position,
+    int channel =-1
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| Vector3 |position|The position to set the audio sink to.|
+| int |channel|Channel to set this spatialization property for. Passing -1 sets it for all available channels.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetRadiationProperties {#mlresult-setradiationproperties}
+
+Sets the radiation properties of the audio sink for the specified channel. 
+
+```csharp
+public MLResult SetRadiationProperties(
+    MLAudioOutput.SpatialSound.RadiationProperties radiationProperties,
+    int channel =-1
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLAudioOutput.SpatialSound.RadiationProperties](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.RadiationProperties.md) |radiationProperties|The radiation properties of the audio sink.|
+| int |channel|Channel to set this spatialization property for. Passing -1 sets it for all available channels.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetRoomSendLevels {#mlresult-setroomsendlevels}
+
+Sets the room send levels of the audio sink for the specified channel. 
+
+```csharp
+public MLResult SetRoomSendLevels(
     MLAudioOutput.SpatialSound.SendLevels sendLevels,
     int channel =-1
 )
@@ -314,13 +406,13 @@ public MLResult SetDirectSendLevels(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetCacheSize {#mlresult-setcachesize}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetStream {#mlresult-setstream}
 
-Sets the number of milliseconds of audio that should be cached in the buffers before dropping the packets. Dictates the audio latency when app recovers from lifecycle state transitions like standby & reality. Default is 200ms. 
+Sets the stream of the audio sink. 
 
 ```csharp
-public MLResult SetCacheSize(
-    uint millisecondsToCache
+public MLResult SetStream(
+    MediaStream stream
 )
 ```
 
@@ -329,8 +421,7 @@ public MLResult SetCacheSize(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| uint |sinkHandle|The handle to the audio sink.|
-|  |millisecondsToCache|How many milliseconds worth of audio to cache.|
+| [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) |stream|The stream to use.|
 
 
 
@@ -343,32 +434,13 @@ public MLResult SetCacheSize(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ResetPosition {#mlresult-resetposition}
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetVolume {#mlresult-setvolume}
 
-Resets the world position of the audio sink for  spatialized  audio. 
-
-```csharp
-public MLResult ResetPosition()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
-
-
-
------------
-
-### delegate void OnAudioServiceStatusChangedDelegate {#delegate-void-onaudioservicestatuschangeddelegate}
-
-Delegate to provide the current audio service status. Apps should use this status to determine whether its safe to set the audio attriutes like soundfield parameters and volume. 
+Sets the volume of the audio sink for the specified channel. The range of the volume is 0 to 8, with 0 for silence, 1 for unity gain, and 8 for 8x gain. 
 
 ```csharp
-public delegate void OnAudioServiceStatusChangedDelegate(
-    ServiceStatus status
+public MLResult SetVolume(
+    float volume
 )
 ```
 
@@ -377,86 +449,14 @@ public delegate void OnAudioServiceStatusChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [ServiceStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md#enums-servicestatus) |status|The current status of the audio service|
+| float |volume|The volume of the audio sink.|
 
 
 
 
 
 
------------
-
-### delegate void OnAudioDataAvailableDelegate {#delegate-void-onaudiodataavailabledelegate}
-
-Delegate to provide audio buffer data received for this audio sink. 
-
-```csharp
-public delegate void OnAudioDataAvailableDelegate(
-    MLAudioOutput.Buffer buffer
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLAudioOutput.Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) |bufferFormat|Format of the audio buffer|
-|  |buffer|Audio buffer|
-
-
-
-
-
-
------------
-
-### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#override-destroy}
-
-Destroys this audio sink object. 
-
-```csharp
-public virtual override MLResult Destroy()
-```
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. 
-
-**Reimplements**: [Destroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.Sink.md#abstract-destroy)
-
-
-
------------
-
-### [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) Create {#audiosink-create}
-
-Creates an initialized [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) object. 
-
-```csharp
-public static AudioSink Create(
-    out MLResult result,
-    BufferNotifyMode mode =BufferNotifyMode.None
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |result|The [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) object of the inner platform call(s).|
-| [BufferNotifyMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md#enums-buffernotifymode) |mode|Behavior of the sink if audio buffer data is provided to the app in a callback. |
-
-
-
-
-
-
-**Returns**: An initialized [AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) object.
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if destroying all handles was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultInstanceNotCreated  if [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) instance was not created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.WebRTCResultMismatchingHandle  if an incorrect handle was sent. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if an invalid parameter was passed. 
 
 
 
@@ -496,12 +496,12 @@ protected virtual override MLResult SetTrack(
 
 ## Public Events
 
-### OnAudioServiceStatusChanged {#onaudioservicestatuschangeddelegate-onaudioservicestatuschanged}
+### OnAudioDataAvailable {#onaudiodataavailabledelegate-onaudiodataavailable}
 
-Delegate invoked on the main thread to notify the app about the current status of the underlying audio service. Apps should use this tatus to determine whether its safe to set the audio attriutes like soundfield parameters and volume. 
+Delegate invoked on the main thread to provide the audio buffer data for this sink. MLAudio.Buffer.NativeDataPtr is NOT valid for this delegate. Use the managed MLAudio.Buffer.Samples array instead. 
 
 ```csharp
-public OnAudioServiceStatusChangedDelegate OnAudioServiceStatusChanged()
+public OnAudioDataAvailableDelegate OnAudioDataAvailable()
 ```
 
 
@@ -526,12 +526,12 @@ public OnAudioDataAvailableDelegate OnAudioDataAvailable_NativeCallbackThread()
 
 -----------
 
-### OnAudioDataAvailable {#onaudiodataavailabledelegate-onaudiodataavailable}
+### OnAudioServiceStatusChanged {#onaudioservicestatuschangeddelegate-onaudioservicestatuschanged}
 
-Delegate invoked on the main thread to provide the audio buffer data for this sink. MLAudio.Buffer.NativeDataPtr is NOT valid for this delegate. Use the managed MLAudio.Buffer.Samples array instead. 
+Delegate invoked on the main thread to notify the app about the current status of the underlying audio service. Apps should use this tatus to determine whether its safe to set the audio attriutes like soundfield parameters and volume. 
 
 ```csharp
-public OnAudioDataAvailableDelegate OnAudioDataAvailable()
+public OnAudioServiceStatusChangedDelegate OnAudioServiceStatusChanged()
 ```
 
 
@@ -542,6 +542,25 @@ public OnAudioDataAvailableDelegate OnAudioDataAvailable()
 -----------
 
 ## Public Enums
+
+### BufferNotifyMode {#enums-buffernotifymode}
+
+Behavior of the sink if audio buffer data is provided to the app in a callback. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| None | | Don't provide app with audio buffers, consume them in the underlying lib and play directly on the device.   |
+| NotifyAndPlay | | Provide the app with audio buffers in a callback, AND also play the audio directly on the device. Ths is useful where apps want to use the buffers to calculate something (like RMS) but not take the responsibility of actually playing the audio.   |
+| NotifyOnly | | Provide the app with audio buffers in a callback. The underlyin library will NOT play the audio. It is the app's responsibility to submit the audio buffers to the device.   |
+
+
+
+
+
+
+
+
+-----------
 
 ### ServiceStatus {#enums-servicestatus}
 
@@ -554,25 +573,6 @@ Status of the underlying Audio Service the buffers are submitted & soundfield at
 | Failed | | Audio service has failed. This will cause disruption in audio playback. Audio attributes (soundfield or volume) should not be set after receiving this status update.   |
 | Stopped | | Audio service has stopped. Audio attributes (soundfield or volume) should not be set after receiving this status update.   |
 | Unknown | | Audio service status is unknown. Audio attributes (soundfield or volume) should not be set after receiving this status update.   |
-
-
-
-
-
-
-
-
------------
-
-### BufferNotifyMode {#enums-buffernotifymode}
-
-Behavior of the sink if audio buffer data is provided to the app in a callback. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| None | | Don't provide app with audio buffers, consume them in the underlying lib and play directly on the device.   |
-| NotifyAndPlay | | Provide the app with audio buffers in a callback, AND also play the audio directly on the device. Ths is useful where apps want to use the buffers to calculate something (like RMS) but not take the responsibility of actually playing the audio.   |
-| NotifyOnly | | Provide the app with audio buffers in a callback. The underlyin library will NOT play the audio. It is the app's responsibility to submit the audio buffers to the device.   |
 
 
 

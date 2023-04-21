@@ -17,23 +17,6 @@ A struct representing the eye calibration state.
 
 ## Public Attributes
 
-### Timestamp {#readonly-long-timestamp}
-
-Epoch timestamp of last calibration in microseconds. 
-
-```csharp
-
-public readonly long Timestamp;
-
-```
-
-
-
-
-
-
------------
-
 ### EyeCalibration {#readonly-eyecalibration}
 
 MLEyeCalibrationStatus enum defined above. 
@@ -47,6 +30,23 @@ public readonly Status EyeCalibration;
 | Type | Description  | 
 |--|--|
 | readonly [Status](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#enums-status) | A set of possible eye calibration codes that the eye calibration system can report.  |
+
+
+
+
+
+-----------
+
+### Timestamp {#readonly-long-timestamp}
+
+Epoch timestamp of last calibration in microseconds. 
+
+```csharp
+
+public readonly long Timestamp;
+
+```
+
 
 
 

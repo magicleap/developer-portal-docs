@@ -230,8 +230,7 @@ namespace UnityEditor.XR.MagicLeap
         {
             if (!success)
             {
-                UnityEngine.Debug.LogError("Magic Leap Hub command failed:
-" + json);
+                UnityEngine.Debug.LogError("Magic Leap Hub command failed:\n" + json);
             }
         }
 
@@ -246,19 +245,11 @@ namespace UnityEditor.XR.MagicLeap
         {
             bool result = EditorUtility.DisplayDialog("Privacy Notice",
                 String.Concat(
-                    "Create an error report file (.zip) to help us diagnose problems.
-
-",
-                    "(Note: if you are using a Magic Leap device, please connect it now.)
-
-",
+                    "Create an error report file (.zip) to help us diagnose problems.\n\n",
+                    "(Note: if you are using a Magic Leap device, please connect it now.)\n\n",
                     "Ask a question in the Magic Leap Developer Portal (https://developer.magicleap.cloud/support) " +
-                    "and attach the error report .zip file.
-
-",
-                    "Error reports are public, and the .zip file may contain identifying information, so you should inspect the .zip before sending.
-
-",
+                    "and attach the error report .zip file.\n\n",
+                    "Error reports are public, and the .zip file may contain identifying information, so you should inspect the .zip before sending.\n\n",
                     "See https://developer-docs.magicleap.cloud/docs/guides/developer-tools/ml-hub/error-reporting"
                 ), "Ok", "Cancel");
             if (!result)
@@ -416,8 +407,7 @@ namespace UnityEditor.XR.MagicLeap
                 {
                     if (!String.IsNullOrEmpty(item))
                     {
-                        logToPrint += "
-" + item;
+                        logToPrint += "\n" + item;
                     }
                 }
             }
@@ -427,12 +417,10 @@ namespace UnityEditor.XR.MagicLeap
                 String currentAction = s_LabdriverIsImport ? "import support libraries" : "launch Magic Leap App Simulator";
                 logToPrint = String.Format("Magic Leap Hub encountered an unknown error while attempting to {0}. " +
                     "Please confirm Magic Leap Hub in installed and up to date with the Magic Leap App Simulator Module and " +
-                    "Magic Leap App Simulator Runtime package installed.
-", currentAction) + logToPrint;
+                    "Magic Leap App Simulator Runtime package installed.\n", currentAction) + logToPrint;
             }
 
-            String finalLog = "labdriver completed with errors. 
-Errors:" + logToPrint;
+            String finalLog = "labdriver completed with errors. \nErrors:" + logToPrint;
 
             UnityEngine.Debug.LogError(finalLog);
         }

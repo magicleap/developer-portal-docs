@@ -19,21 +19,6 @@ Inherits from: <br></br>[IHapticsCommand](/unity-api/api/UnityEngine.XR.MagicLea
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
-
-```csharp
-public MLResult StartHaptics()
-```
-
-
-
-
-**Reimplements**: [StartHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
-
-
-
------------
-
 ### [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) Create {#buzz-create}
 
 ```csharp
@@ -62,32 +47,30 @@ public static Buzz Create(
 
 -----------
 
-## Public Attributes
-
-### StartHz {#readonly-ushort-starthz}
-
-Start frequency of the buzz command (0 - 1250). 
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
 
 ```csharp
-
-public readonly ushort StartHz;
-
+public MLResult StartHaptics()
 ```
 
 
 
 
+**Reimplements**: [StartHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
+
 
 
 -----------
 
-### EndHz {#readonly-ushort-endhz}
+## Public Attributes
 
-End frequency of the buzz command (0 - 1250). 
+### Amplitude {#readonly-byte-amplitude}
+
+amplitude of the buzz command, as a percentage (0 - 100). 
 
 ```csharp
 
-public readonly ushort EndHz;
+public readonly byte Amplitude;
 
 ```
 
@@ -115,13 +98,30 @@ public readonly uint DurationMs;
 
 -----------
 
-### Amplitude {#readonly-byte-amplitude}
+### EndHz {#readonly-ushort-endhz}
 
-amplitude of the buzz command, as a percentage (0 - 100). 
+End frequency of the buzz command (0 - 1250). 
 
 ```csharp
 
-public readonly byte Amplitude;
+public readonly ushort EndHz;
+
+```
+
+
+
+
+
+
+-----------
+
+### StartHz {#readonly-ushort-starthz}
+
+Start frequency of the buzz command (0 - 1250). 
+
+```csharp
+
+public readonly ushort StartHz;
 
 ```
 

@@ -36,8 +36,7 @@ Properties specifying acoustic reverberation.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

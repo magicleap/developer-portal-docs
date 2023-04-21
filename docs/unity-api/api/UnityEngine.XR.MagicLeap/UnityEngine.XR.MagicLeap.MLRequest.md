@@ -36,30 +36,6 @@ public template <Params ,Result > class MLRequest : IMLRequest< Params, Result >
 
 ## Public Methods
 
-### abstract [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#abstract-trygetresult}
-
-```csharp
-public virtual abstract MLResult TryGetResult(
-    out Result result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out Result |result||
-
-
-
-
-**Reimplements**: [TryGetResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md#mlresult-trygetresult)
-
-
-
------------
-
 ### abstract [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#abstract-start}
 
 ```csharp
@@ -84,20 +60,31 @@ public virtual abstract MLResult Start(
 
 -----------
 
-## Protected Methods
-
-### MLRequest {#functions-mlrequest}
+### abstract [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#abstract-trygetresult}
 
 ```csharp
-protected MLRequest()
+public virtual abstract MLResult TryGetResult(
+    out Result result
+)
 ```
 
 
+**Parameters**
 
+| Type | Name  | Description  | 
+|--|--|--|
+| out Result |result||
+
+
+
+
+**Reimplements**: [TryGetResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md#mlresult-trygetresult)
 
 
 
 -----------
+
+## Protected Methods
 
 ### Dispose {#abstract-void-dispose}
 
@@ -123,6 +110,19 @@ protected virtual abstract void Dispose(
 
 -----------
 
+### MLRequest {#functions-mlrequest}
+
+```csharp
+protected MLRequest()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
 ### Parameters {#params-parameters}
@@ -142,11 +142,11 @@ public Params Parameters => parameters;
 
 ## Protected Attributes
 
-### parameters {#params-parameters}
+### handle {#ulong-handle}
 
 ```csharp
 
-protected Params parameters;
+protected ulong handle = MagicLeapNativeBindings.InvalidHandle;
 
 ```
 
@@ -157,11 +157,11 @@ protected Params parameters;
 
 -----------
 
-### handle {#ulong-handle}
+### parameters {#params-parameters}
 
 ```csharp
 
-protected ulong handle = MagicLeapNativeBindings.InvalidHandle;
+protected Params parameters;
 
 ```
 

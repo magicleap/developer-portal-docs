@@ -347,8 +347,7 @@ Create a new MediaRecorder object.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -387,8 +386,7 @@ Destroy a MediaRecorder object.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -432,8 +430,7 @@ Call this after [MLMediaRecorderSetOutputFormat()](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -477,8 +474,7 @@ Call this after [MLMediaRecorderSetOutputFormat()](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -522,8 +518,7 @@ Sets the MediaRecorderListener object that will receive MediaRecorder notificati
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -608,8 +603,7 @@ Cannot be called twice (without calling [MLMediaRecorderReset()](/api-ref/api/Mo
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -651,8 +645,7 @@ Sets the format of the output file produced during recording.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -699,8 +692,7 @@ The video source is always set to camera by default.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -744,8 +736,7 @@ If this method is not called, the output file will not contain an audio track. C
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -789,8 +780,7 @@ Call this after [MLMediaRecorderSetOutputFormat()](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -835,8 +825,7 @@ Call this after [MLMediaRecorderSetOutputFormat()](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -880,8 +869,7 @@ Sets the GEO location for recording.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -943,8 +931,7 @@ Video Specific parametes:
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -986,8 +973,7 @@ Call this after [MLMediaRecorderPrepare()](/api-ref/api/Modules/group___media_re
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1038,8 +1024,7 @@ Captured raw video frames will be consumed directly as input to an encoder witho
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1083,8 +1068,7 @@ Call this only after the [MLMediaRecorderSetAudioSource()](/api-ref/api/Modules/
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1126,8 +1110,7 @@ Call this after [MLMediaRecorderStart()](/api-ref/api/Modules/group___media_reco
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1169,8 +1152,7 @@ Release the surface that was returned by MLMediaRecorderGetInputSurface.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1212,8 +1194,7 @@ After calling this method, you will have to configure it again as if it had just
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

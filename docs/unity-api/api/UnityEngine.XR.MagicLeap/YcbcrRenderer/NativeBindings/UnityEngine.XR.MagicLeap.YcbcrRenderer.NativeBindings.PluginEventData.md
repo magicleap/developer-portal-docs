@@ -43,47 +43,13 @@ public PluginEventData(
 
 ## Public Attributes
 
-### Width {#int-width}
+### ColorSpace {#colorspace-colorspace}
 
-Width of the Unity texture 
-
-```csharp
-
-public int Width;
-
-```
-
-
-
-
-
-
------------
-
-### TextureHandle {#intptr-texturehandle}
-
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) pointer of the Unity texture to render the android native buffer on. 
+Color space to render the native buffer in. 
 
 ```csharp
 
-public IntPtr TextureHandle;
-
-```
-
-
-
-
-
-
------------
-
-### RendererHandle {#ulong-rendererhandle}
-
-Handle of the [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) instance received from a MLYcbcrRendererCreate() call. 
-
-```csharp
-
-public ulong RendererHandle;
+public ColorSpace ColorSpace;
 
 ```
 
@@ -111,13 +77,47 @@ public int Height;
 
 -----------
 
-### ColorSpace {#colorspace-colorspace}
+### RendererHandle {#ulong-rendererhandle}
 
-Color space to render the native buffer in. 
+Handle of the [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) instance received from a MLYcbcrRendererCreate() call. 
 
 ```csharp
 
-public ColorSpace ColorSpace;
+public ulong RendererHandle;
+
+```
+
+
+
+
+
+
+-----------
+
+### TextureHandle {#intptr-texturehandle}
+
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) pointer of the Unity texture to render the android native buffer on. 
+
+```csharp
+
+public IntPtr TextureHandle;
+
+```
+
+
+
+
+
+
+-----------
+
+### Width {#int-width}
+
+Width of the Unity texture 
+
+```csharp
+
+public int Width;
 
 ```
 

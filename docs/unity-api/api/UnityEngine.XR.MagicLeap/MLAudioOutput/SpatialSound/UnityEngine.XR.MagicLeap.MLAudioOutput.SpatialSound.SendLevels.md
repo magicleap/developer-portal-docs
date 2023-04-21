@@ -32,30 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### GainMF {#float-gainmf}
+### Gain {#float-gain}
 
-Volume scale (0-1) for mid freqs. 
-
-```csharp
-
-public float GainMF;
-
-```
-
-
-
-
-
-
------------
-
-### GainLF {#float-gainlf}
-
-Volume scale (0-1) for low freqs. 
+Volume scale (0-1) for all freqs. 
 
 ```csharp
 
-public float GainLF;
+public float Gain;
 
 ```
 
@@ -83,13 +66,30 @@ public float GainHF;
 
 -----------
 
-### Gain {#float-gain}
+### GainLF {#float-gainlf}
 
-Volume scale (0-1) for all freqs. 
+Volume scale (0-1) for low freqs. 
 
 ```csharp
 
-public float Gain;
+public float GainLF;
+
+```
+
+
+
+
+
+
+-----------
+
+### GainMF {#float-gainmf}
+
+Volume scale (0-1) for mid freqs. 
+
+```csharp
+
+public float GainMF;
 
 ```
 

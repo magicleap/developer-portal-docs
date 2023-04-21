@@ -29,8 +29,7 @@ APIs for camera pose.
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * 
 
 
@@ -53,8 +52,7 @@ Camera id enum.
 
 
 
-**API Level:
- 5**
+**API Level:\n 5**
   * 
 
 
@@ -97,8 +95,7 @@ Create CV Camera Tracker.
 
 
 
-**API Level:
- 5**
+**API Level:\n 5**
   * 
 
 
@@ -149,8 +146,7 @@ Use the timestamp provided from the #on_video_buffer_available callback from [ml
 
 
 
-**API Level:
- 5**
+**API Level:\n 5**
   * 
 
 
@@ -188,8 +184,7 @@ Destroy Tracker after usage.
 
 
 
-**API Level:
- 5**
+**API Level:\n 5**
   * 
 
 

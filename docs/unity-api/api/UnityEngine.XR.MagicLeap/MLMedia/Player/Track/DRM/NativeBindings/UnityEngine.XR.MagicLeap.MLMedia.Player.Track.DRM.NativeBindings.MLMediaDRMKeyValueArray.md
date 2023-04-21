@@ -34,13 +34,13 @@ public KeyValuePair< string, string > [] KeyValues { get; set; }
 
 ## Public Attributes
 
-### Ptr {#readonly-intptr-ptr}
+### Index {#readonly-uint-index}
 
-Array of {key, value} pair. 
+Index. 
 
 ```csharp
 
-public readonly IntPtr Ptr;
+public readonly uint Index;
 
 ```
 
@@ -68,13 +68,13 @@ public readonly uint Length;
 
 -----------
 
-### Index {#readonly-uint-index}
+### Ptr {#readonly-intptr-ptr}
 
-Index. 
+Array of {key, value} pair. 
 
 ```csharp
 
-public readonly uint Index;
+public readonly IntPtr Ptr;
 
 ```
 

@@ -36,8 +36,7 @@ Configuration values for creating the Native Surface.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -22,23 +22,6 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Fields
 
-### StereoConvergencePoint {#transform-stereoconvergencepoint}
-
-Getter/Setter for the stereo convergence point 
-
-```csharp
-
-public Transform StereoConvergencePoint { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### ProtectedSurface {#bool-protectedsurface}
 
 Getter/Setter for setting the Protected surface attribute. 
@@ -56,14 +39,14 @@ public bool ProtectedSurface { get; set; }
 
 -----------
 
-## Public Methods
+### StereoConvergencePoint {#transform-stereoconvergencepoint}
 
-### void ValidateFarClip {#void-validatefarclip}
-
-Validate the Far Clip plane 
+Getter/Setter for the stereo convergence point 
 
 ```csharp
-public void ValidateFarClip()
+
+public Transform StereoConvergencePoint { get; set; }
+
 ```
 
 
@@ -72,6 +55,8 @@ public void ValidateFarClip()
 
 
 -----------
+
+## Public Methods
 
 ### float ClampToClippingPlanes {#float-clamptoclippingplanes}
 
@@ -96,6 +81,21 @@ public float ClampToClippingPlanes(
 
 
 **Returns**: Clamped value
+
+
+
+-----------
+
+### void ValidateFarClip {#void-validatefarclip}
+
+Validate the Far Clip plane 
+
+```csharp
+public void ValidateFarClip()
+```
+
+
+
 
 
 

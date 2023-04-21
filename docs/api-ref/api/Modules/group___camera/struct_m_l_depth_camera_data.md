@@ -44,8 +44,7 @@ This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/a
 
 
 
-**API Level:
- 25**
+**API Level:\n 25**
   * 
 
 

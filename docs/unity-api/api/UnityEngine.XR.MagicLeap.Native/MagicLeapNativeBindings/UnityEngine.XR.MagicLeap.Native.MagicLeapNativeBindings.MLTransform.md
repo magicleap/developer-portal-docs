@@ -17,19 +17,6 @@ Information used to transform from one coordinate frame to another.
 
 ## Public Methods
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ### [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) Identity {#mltransform-identity}
 
 Returns an initialized [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) with default values. 
@@ -49,27 +36,20 @@ public static MLTransform Identity()
 
 -----------
 
-## Public Attributes
-
-### Rotation {#mlquaternionf-rotation}
-
-The rotation of the coordinate frame to apply after the translation. 
+### override string ToString {#override-string-tostring}
 
 ```csharp
-
-public MLQuaternionf Rotation;
-
+public override string ToString()
 ```
 
-| Type | Description  | 
-|--|--|
-| [MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) | Quaternion in native format.  |
 
 
 
 
 
 -----------
+
+## Public Attributes
 
 ### Position {#mlvec3f-position}
 
@@ -84,6 +64,26 @@ public MLVec3f Position;
 | Type | Description  | 
 |--|--|
 | [MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) | 3D vector in native format.  |
+
+
+
+
+
+-----------
+
+### Rotation {#mlquaternionf-rotation}
+
+The rotation of the coordinate frame to apply after the translation. 
+
+```csharp
+
+public MLQuaternionf Rotation;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) | Quaternion in native format.  |
 
 
 

@@ -195,8 +195,7 @@ Gets color correction aberration modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -239,8 +238,7 @@ Gets auto-exposure modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -283,8 +281,7 @@ Gets anti-banding modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -325,8 +322,7 @@ Gets auto-exposure compensation range.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -367,8 +363,7 @@ Gets AE compensation step.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -409,8 +404,7 @@ Gets AE lock.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -451,8 +445,7 @@ Gets AE Max Regions.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -495,8 +488,7 @@ Gets Available Modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -539,8 +531,7 @@ Gets AWB modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -583,8 +574,7 @@ Gets AF modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -625,8 +615,7 @@ Gets max number of AF regions supported.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -669,8 +658,7 @@ Gets Scene modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -713,8 +701,7 @@ Gets Effect modes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -755,8 +742,7 @@ Gets AWB lock.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -797,8 +783,7 @@ Gets sensor info active array sizes.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -839,8 +824,7 @@ Gets sensor info sensitivity range (Analog Gain).
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -881,8 +865,7 @@ Gets post raw sensitivity boost range (Digital Gain).
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -923,8 +906,7 @@ Gets lens hyperfocal distance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -965,8 +947,7 @@ Gets lens minimum focus distance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1007,8 +988,7 @@ Gets lens minimum focus distance increment. The lens position can be set in mult
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1049,8 +1029,7 @@ Gets sensor orientation degree.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1091,8 +1070,7 @@ Gets color correction mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1133,8 +1111,7 @@ Gets color correction transform.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1175,8 +1152,7 @@ Gets color correction gains.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1217,8 +1193,7 @@ Gets color correction aberration.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1259,8 +1234,7 @@ Gets AE antibanding mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1301,8 +1275,7 @@ Gets AE exposure compensation.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1343,8 +1316,7 @@ Gets AE lock.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1385,8 +1357,7 @@ Gets AE mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1429,8 +1400,7 @@ Gets auto-exposure regions.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1471,8 +1441,7 @@ Gets AWB lock.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1513,8 +1482,7 @@ Gets AWB mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1555,8 +1523,7 @@ Gets AF mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1597,8 +1564,7 @@ Gets AF trigger.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1641,8 +1607,7 @@ Gets auto-focus regions.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1683,8 +1648,7 @@ Gets AF distance range. Both Min and Max are specified as focus distance in diop
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1725,8 +1689,7 @@ Gets Lens focus distance in diopters. The distance is between minimum focus dist
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1767,8 +1730,7 @@ Gets mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1809,8 +1771,7 @@ Gets Scene mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1851,8 +1812,7 @@ Gets sensor exposure time.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1893,8 +1853,7 @@ Gets sensor sensitivity.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1935,8 +1894,7 @@ Gets post raw sensitivity boost.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1977,8 +1935,7 @@ Effect mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2019,8 +1976,7 @@ Gets exposure time upper limit.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2061,8 +2017,7 @@ Gets JPEG GPS coordinates.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2103,8 +2058,7 @@ Gets JPEG timestamp.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2145,8 +2099,7 @@ Gets JPEG thumbnail size.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2187,8 +2140,7 @@ Gets JPEG quality.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2229,8 +2181,7 @@ Gets force apply mode. Main camera and CV Camera share the same camera hardware 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2271,8 +2222,7 @@ Sets color correction mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2313,8 +2263,7 @@ Sets color correction transform from RGB color space to output linear sRGB.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2355,8 +2304,7 @@ Sets color correction gains. The gains in the request metadata are the gains app
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2397,8 +2345,7 @@ Sets color correction chromatic aberration, minimizing chromatic artifacts that 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2439,8 +2386,7 @@ Sets AE antiband mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2481,8 +2427,7 @@ Sets auto-exposure compensation.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2525,8 +2470,7 @@ When auto-exposure is locked, the algorithm cannot update its parameters and adj
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2568,8 +2512,7 @@ Sets auto-exposure mode. MLCameraMetadataControlAEMode_Off is not supported if c
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2612,8 +2555,7 @@ Sets auto-exposure regions.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2654,8 +2596,7 @@ Sets automatic white balance lock.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2696,8 +2637,7 @@ Sets AWB mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2738,8 +2678,7 @@ Sets AF mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2780,8 +2719,7 @@ Sets AF trigger.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2824,8 +2762,7 @@ Sets auto-focus regions.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2866,8 +2803,7 @@ Sets AF distance range. Both min and max are specified as focus distance in diop
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2908,8 +2844,7 @@ Sets Lens focus distance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2950,8 +2885,7 @@ Sets mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2992,8 +2926,7 @@ Sets Scene mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3036,8 +2969,7 @@ Exposure time provided should be less than frame duration(1/framerate). If the s
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3078,8 +3010,7 @@ Sets sensor sensitivity.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3120,8 +3051,7 @@ Sets post raw sensitivity boost.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3162,8 +3092,7 @@ Sets Effect mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3204,8 +3133,7 @@ Sets exposure time upper limit.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3246,8 +3174,7 @@ Sets JPEG GPS coordinates.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3288,8 +3215,7 @@ Sets JPEG timestamp.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3330,8 +3256,7 @@ Sets JPEG thumbnail size.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3372,8 +3297,7 @@ Sets JPEG quality.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3414,8 +3338,7 @@ Sets force apply mode. Main camera and CV Camera share the same camera hardware 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3456,8 +3379,7 @@ Gets color correction.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3498,8 +3420,7 @@ Gets color correction transform from RGB color space to output linear sRGB.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3540,8 +3461,7 @@ Gets color correction aberration.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3582,8 +3502,7 @@ Gets color correction gains. The gains in the result metadata are the gains appl
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3624,8 +3543,7 @@ Gets AE antibanding mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3666,8 +3584,7 @@ Gets AE exposure compensation.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3710,8 +3627,7 @@ When auto-exposure is locked, the algorithm cannot update its parameters and adj
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3752,8 +3668,7 @@ Gets AE mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3796,8 +3711,7 @@ Gets auto-exposure regions.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3838,8 +3752,7 @@ Gets auto-exposure target FPS range.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3880,8 +3793,7 @@ Gets AE state.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3922,8 +3834,7 @@ Gets AWB lock.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3964,8 +3875,7 @@ Gets AWB state.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4006,8 +3916,7 @@ Gets AWB mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4048,8 +3957,7 @@ Gets AF mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4090,8 +3998,7 @@ Gets AF trigger.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4134,8 +4041,7 @@ Gets auto-focus regions.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4176,8 +4082,7 @@ Gets AF distance range. Both Min and Max are specified as focus distance in diop
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4218,8 +4123,7 @@ Gets AF state.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4260,8 +4164,7 @@ Gets AF scene change detection status.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4302,8 +4205,7 @@ Gets Lens focus distance.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4344,8 +4246,7 @@ Get Lens state.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4386,8 +4287,7 @@ Gets mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4428,8 +4328,7 @@ Gets Scene mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4470,8 +4369,7 @@ Gets sensor exposure time.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4512,8 +4410,7 @@ Gets sensor sensitivity.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4554,8 +4451,7 @@ Gets post raw sensitivity boost.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4596,8 +4492,7 @@ Gets frame captured timestamp.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4638,8 +4533,7 @@ Gets sensor frame duration.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4680,8 +4574,7 @@ Gets Effect mode.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4722,8 +4615,7 @@ Gets exposure time upper limit.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4764,8 +4656,7 @@ Gets JPEG GPS coordinates.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4806,8 +4697,7 @@ Gets JPEG timestamp.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4848,8 +4738,7 @@ Gets JPEG thumbnail size.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4890,8 +4779,7 @@ Gets force apply mode. Main camera and CV Camera share the same camera hardware 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4932,8 +4820,7 @@ Gets JPEG quality.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

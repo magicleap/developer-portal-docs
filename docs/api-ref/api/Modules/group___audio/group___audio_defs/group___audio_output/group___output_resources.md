@@ -208,8 +208,7 @@ This call tells the owner of a loaded resource what size memory footprint is use
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 

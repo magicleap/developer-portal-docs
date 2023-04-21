@@ -146,8 +146,7 @@ Request event types.
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -173,8 +172,7 @@ Status code associated with a DRM session key.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -354,8 +352,7 @@ MediaDRM event info associated with a session.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -376,8 +373,7 @@ MediaDRM expiration update info associated with a session.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -398,8 +394,7 @@ MediaDRM key status.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -420,8 +415,7 @@ MediaDRM session keys status change info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -444,8 +438,7 @@ User of MLMediaDRM should implement this.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -906,8 +899,7 @@ Register a callback to be invoked when DRM events or updates or status change oc
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

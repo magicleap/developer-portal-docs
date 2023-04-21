@@ -32,8 +32,7 @@ MediaPlayer reset completion callback Info.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -53,8 +52,7 @@ User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/api-ref/api/Modules
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 

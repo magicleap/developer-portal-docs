@@ -31,11 +31,11 @@ public static MLUnityGraphicsCallbacks Create()
 
 ## Public Attributes
 
-### OnPreBeginRenderFrame {#onprebeginrenderframenativedelegate-onprebeginrenderframe}
+### Context {#intptr-context}
 
 ```csharp
 
-public OnPreBeginRenderFrameNativeDelegate OnPreBeginRenderFrame;
+public IntPtr Context;
 
 ```
 
@@ -46,11 +46,11 @@ public OnPreBeginRenderFrameNativeDelegate OnPreBeginRenderFrame;
 
 -----------
 
-### Context {#intptr-context}
+### OnPreBeginRenderFrame {#onprebeginrenderframenativedelegate-onprebeginrenderframe}
 
 ```csharp
 
-public IntPtr Context;
+public OnPreBeginRenderFrameNativeDelegate OnPreBeginRenderFrame;
 
 ```
 

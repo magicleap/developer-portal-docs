@@ -17,13 +17,13 @@ Aruco decoded data.
 
 ## Public Attributes
 
-### Type {#readonly-decodeddatatype-type}
+### Size {#readonly-uint-size}
 
-Type selector for the structure. 
+Binary data size. 
 
 ```csharp
 
-public readonly DecodedDataType Type;
+public readonly uint Size;
 
 ```
 
@@ -34,13 +34,13 @@ public readonly DecodedDataType Type;
 
 -----------
 
-### Size {#readonly-uint-size}
+### Type {#readonly-decodeddatatype-type}
 
-Binary data size. 
+Type selector for the structure. 
 
 ```csharp
 
-public readonly uint Size;
+public readonly DecodedDataType Type;
 
 ```
 

@@ -96,8 +96,7 @@ Developers are strongly encouraged to encrypt the exported Magic Leap Spaces.
 
 
 
-**Shared Object:
- space.magicleap**
+**Shared Object:\n space.magicleap**
   * 
 
 
@@ -140,8 +139,7 @@ Magic Leap Space specific return codes.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -164,8 +162,7 @@ Space type. Indicates the type of the Space.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -190,8 +187,7 @@ The current localization status.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -215,8 +211,7 @@ A structure containing settings for the space manager. This structure must be in
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_manager_settings.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -237,8 +232,7 @@ A structure containing information about a Magic Leap Space. This structure must
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -259,8 +253,7 @@ A structure containing list of [MLSpace](/api-ref/api/Modules/group___space/stru
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_list.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -281,8 +274,7 @@ A collection of filters for Magic Leap Spaces. This structure must be initialize
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -303,8 +295,7 @@ A collection of parameters to be used for localization request. This structure m
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_localization_info.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -325,8 +316,7 @@ A structure containing information about the device's localization state. This s
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_localization_result.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -349,8 +339,7 @@ This structure must be initialized by calling [MLSpaceCallbacksInit](/api-ref/ap
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_callbacks.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -371,8 +360,7 @@ A structure containing information needed to import Magic Leap Space. This struc
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_import_info.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -393,8 +381,7 @@ A structure containing information about the imported Space.
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_import_out_data.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -415,8 +402,7 @@ A structure containing information about the Space export settings. This structu
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_export_info.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -437,8 +423,7 @@ A structure containing information about the exported Space.
 [More Info](/api-ref/api/Modules/group___space/struct_m_l_space_export_out_data.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -472,8 +457,7 @@ Initializes default values for [MLSpaceManagerSettings](/api-ref/api/Modules/gro
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -504,8 +488,7 @@ Initializes default values for [MLSpace](/api-ref/api/Modules/group___space/stru
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -536,8 +519,7 @@ Initializes default values for [MLSpaceList](/api-ref/api/Modules/group___space/
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -568,8 +550,7 @@ Initializes the default values for a query filter.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -600,8 +581,7 @@ Initializes the default values for localization info.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -632,8 +612,7 @@ Initialize default values for [MLSpaceLocalizationResult](/api-ref/api/Modules/g
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -664,8 +643,7 @@ Initialize defaults for [MLSpaceCallbacks](/api-ref/api/Modules/group___space/st
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -696,8 +674,7 @@ Initialize default values for [MLSpaceImportInfo](/api-ref/api/Modules/group___s
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -728,8 +705,7 @@ Initialize default values for [MLSpaceExportInfo](/api-ref/api/Modules/group___s
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -762,8 +738,7 @@ Returns an ASCII string for MLSpaceResult and MLResult codes.
 **Return**: ASCII string containing readable version of result code.
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -808,8 +783,7 @@ Application can create only one Magic Leap Space manager handle. Multiple calls 
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -847,8 +821,7 @@ Set the callbacks for events related to the Magic Leap Space.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -897,8 +870,7 @@ The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/api-ref
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -939,8 +911,7 @@ Release the list of available spaces.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -988,8 +959,7 @@ A new request for localization will override all the past requests for localizat
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1032,8 +1002,7 @@ Returns the results of the most recent localization request.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1071,8 +1040,7 @@ Destroys a Space manager handle.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1117,8 +1085,7 @@ The [MLSpaceImportInfo](/api-ref/api/Modules/group___space/struct_m_l_space_impo
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1162,8 +1129,7 @@ The [MLSpaceExportOutData](/api-ref/api/Modules/group___space/struct_m_l_space_e
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1202,8 +1168,7 @@ Release resources acquired in [MLSpaceExportSpace](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

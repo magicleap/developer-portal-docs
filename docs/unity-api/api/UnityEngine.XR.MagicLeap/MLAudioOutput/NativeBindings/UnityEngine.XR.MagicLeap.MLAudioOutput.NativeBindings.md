@@ -19,15 +19,155 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetSpatialSoundPosition {#mlresultcode-mlaudiosetspatialsoundposition}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetMasterVolume {#mlresultcode-mlaudiogetmastervolume}
 
-Sets the 3D position for one channel of a sound output. 
+Gets the value of the master volume. 
 
 ```csharp
-public MLResult.Code MLAudioSetSpatialSoundPosition(
+public MLResult.Code MLAudioGetMasterVolume(
+    out float volume
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out float |volume|The value of the master volume.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if input parameter is invalid. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetOutputDevice {#mlresultcode-mlaudiogetoutputdevice}
+
+Gets the current audio output device. 
+
+```csharp
+public MLResult.Code MLAudioGetOutputDevice(
+    out MLAudioOutput.Device device
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out [MLAudioOutput.Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) |device|The audio output device.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if input parameter is invalid. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
+
+
+
+-----------
+
+### IntPtr MLAudioGetResultString {#intptr-mlaudiogetresultstring}
+
+Gets the result string for a [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code). 
+
+```csharp
+public IntPtr MLAudioGetResultString(
+    MLResult.Code result
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) to be requested.|
+
+
+
+
+
+
+**Returns**: A pointer to the result string.
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetSoundBypassesMasterVolume {#mlresultcode-mlaudiogetsoundbypassesmastervolume}
+
+Queries whether a sound output is exempt from attenuation due to master volume. This call reports whether the output from a sound output is bypassing master volume, making it effectively "always audible" (assuming it is neither muted nor set to zero volume on a per-sound basis). This option can only be set on medical-enabled devices(60601 compliant), and will only work for non-spatial sounds.Non-spatial sound parameters such as volume, mute, pitch and looping are still in effect for sounds that are bypassing master volume. 
+
+```csharp
+public MLResult.Code MLAudioGetSoundBypassesMasterVolume(
+    ulong audioHandle,
+    out bool isBypassing
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |audioHandle||
+| out bool |isBypassing||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetSpatialSoundEnable {#mlresultcode-mlaudiogetspatialsoundenable}
+
+Enables/disables 3D audio processing for a sound output. 
+
+```csharp
+public MLResult.Code MLAudioGetSpatialSoundEnable(
+    ulong handle,
+    out bool enabled
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle|MLHandle used to identify the sound output.|
+| out bool |enabled|Indicates whether 3D processing is on or off.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioHandleNotFound](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiohandlenotfound)  if handle was not found. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioInternalConfigError](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiointernalconfigerror)  if internal config error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetSpatialSoundPosition {#mlresultcode-mlaudiogetspatialsoundposition}
+
+Returns the 3D position for one channel of a sound output. 
+
+```csharp
+public MLResult.Code MLAudioGetSpatialSoundPosition(
     ulong handle,
     uint channel,
-    ref MagicLeapNativeBindings.MLVec3f position
+    out MagicLeapNativeBindings.MLVec3f position
 )
 ```
 
@@ -38,7 +178,7 @@ public MLResult.Code MLAudioSetSpatialSoundPosition(
 |--|--|--|
 | ulong |handle|MLHandle used to identify the sound output.|
 | uint |channel|Selects the channel whose position is being set.|
-| ref [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |position|Struct to set the position|
+| out [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |position|Struct to set the position|
 
 
 
@@ -51,14 +191,14 @@ public MLResult.Code MLAudioSetSpatialSoundPosition(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetSpatialSoundEnable {#mlresultcode-mlaudiosetspatialsoundenable}
+### delegate void MLAudioMasterVolumeChangedCallback {#delegate-void-mlaudiomastervolumechangedcallback}
 
-Enables/disables 3D audio processing for a sound output. 
+The callback that occurs when the master volume changes. 
 
 ```csharp
-public MLResult.Code MLAudioSetSpatialSoundEnable(
-    ulong handle,
-    bool enable
+public delegate void MLAudioMasterVolumeChangedCallback(
+    float volume,
+    IntPtr callback
 )
 ```
 
@@ -67,38 +207,8 @@ public MLResult.Code MLAudioSetSpatialSoundEnable(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |handle|MLHandle used to identify the sound output.|
-| bool |enable|Determines whether 3D processing is on or off.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioHandleNotFound](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiohandlenotfound)  if handle was not found. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioInternalConfigError](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiointernalconfigerror)  if internal config error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetSoundBypassesMasterVolume {#mlresultcode-mlaudiosetsoundbypassesmastervolume}
-
-Setting this option on a sound output causes its output to bypass master volume, making it effectively "always audible" (assuming it is neither muted nor set to zero volume on a per-sound basis). This option can only be set on medical-enabled devices (60601 compliant), and will only work for non-spatial sounds.Non-spatial sound parameters such as volume, mute, pitch and looping are still in effect for sounds that are bypassing master volume. 
-
-```csharp
-public MLResult.Code MLAudioSetSoundBypassesMasterVolume(
-    ulong audioHandle,
-    bool isBypassing
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |audioHandle||
-| bool |isBypassing||
+| float |volume|The value of the master volume.|
+| IntPtr |callback|A pointer to the callback.|
 
 
 
@@ -107,14 +217,14 @@ public MLResult.Code MLAudioSetSoundBypassesMasterVolume(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetMediaEventCallback {#mlresultcode-mlaudiosetmediaeventcallback}
+### delegate void MLAudioMediaEventCallback {#delegate-void-mlaudiomediaeventcallback}
 
-Registers a callback for user-issued media control events. Events that can result in a callback being called include: pressing a play button; pressing a stop button; pressing a pause button; pressing a next track button, pressing a previous track button; The particular event type (MLAudioMediaEvent) that caused the callback is passed to the callback as its first argument. The 'context' argument is passed back to the callback as its second argument. 
+Callback to notify when a media event has occurred. 
 
 ```csharp
-public MLResult.Code MLAudioSetMediaEventCallback(
-    MLAudioMediaEventCallback callback,
-    IntPtr context
+public delegate void MLAudioMediaEventCallback(
+    MediaEvent mediaEvent,
+    IntPtr callback
 )
 ```
 
@@ -123,8 +233,8 @@ public MLResult.Code MLAudioSetMediaEventCallback(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| MLAudioMediaEventCallback |callback||
-| IntPtr |context||
+| [MediaEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-mediaevent) |volume|The new media event.|
+| IntPtr |callback|A pointer to the callback.|
 
 
 
@@ -163,14 +273,14 @@ public MLResult.Code MLAudioSetMasterVolumeCallback(
 
 -----------
 
-### delegate void MLAudioMediaEventCallback {#delegate-void-mlaudiomediaeventcallback}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetMediaEventCallback {#mlresultcode-mlaudiosetmediaeventcallback}
 
-Callback to notify when a media event has occurred. 
+Registers a callback for user-issued media control events. Events that can result in a callback being called include: pressing a play button; pressing a stop button; pressing a pause button; pressing a next track button, pressing a previous track button; The particular event type (MLAudioMediaEvent) that caused the callback is passed to the callback as its first argument. The 'context' argument is passed back to the callback as its second argument. 
 
 ```csharp
-public delegate void MLAudioMediaEventCallback(
-    MediaEvent mediaEvent,
-    IntPtr callback
+public MLResult.Code MLAudioSetMediaEventCallback(
+    MLAudioMediaEventCallback callback,
+    IntPtr context
 )
 ```
 
@@ -179,8 +289,8 @@ public delegate void MLAudioMediaEventCallback(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MediaEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-mediaevent) |volume|The new media event.|
-| IntPtr |callback|A pointer to the callback.|
+| MLAudioMediaEventCallback |callback||
+| IntPtr |context||
 
 
 
@@ -189,14 +299,14 @@ public delegate void MLAudioMediaEventCallback(
 
 -----------
 
-### delegate void MLAudioMasterVolumeChangedCallback {#delegate-void-mlaudiomastervolumechangedcallback}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetSoundBypassesMasterVolume {#mlresultcode-mlaudiosetsoundbypassesmastervolume}
 
-The callback that occurs when the master volume changes. 
+Setting this option on a sound output causes its output to bypass master volume, making it effectively "always audible" (assuming it is neither muted nor set to zero volume on a per-sound basis). This option can only be set on medical-enabled devices (60601 compliant), and will only work for non-spatial sounds.Non-spatial sound parameters such as volume, mute, pitch and looping are still in effect for sounds that are bypassing master volume. 
 
 ```csharp
-public delegate void MLAudioMasterVolumeChangedCallback(
-    float volume,
-    IntPtr callback
+public MLResult.Code MLAudioSetSoundBypassesMasterVolume(
+    ulong audioHandle,
+    bool isBypassing
 )
 ```
 
@@ -205,8 +315,8 @@ public delegate void MLAudioMasterVolumeChangedCallback(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float |volume|The value of the master volume.|
-| IntPtr |callback|A pointer to the callback.|
+| ulong |audioHandle||
+| bool |isBypassing||
 
 
 
@@ -215,15 +325,45 @@ public delegate void MLAudioMasterVolumeChangedCallback(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetSpatialSoundPosition {#mlresultcode-mlaudiogetspatialsoundposition}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetSpatialSoundEnable {#mlresultcode-mlaudiosetspatialsoundenable}
 
-Returns the 3D position for one channel of a sound output. 
+Enables/disables 3D audio processing for a sound output. 
 
 ```csharp
-public MLResult.Code MLAudioGetSpatialSoundPosition(
+public MLResult.Code MLAudioSetSpatialSoundEnable(
+    ulong handle,
+    bool enable
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle|MLHandle used to identify the sound output.|
+| bool |enable|Determines whether 3D processing is on or off.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioHandleNotFound](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiohandlenotfound)  if handle was not found. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioInternalConfigError](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiointernalconfigerror)  if internal config error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioSetSpatialSoundPosition {#mlresultcode-mlaudiosetspatialsoundposition}
+
+Sets the 3D position for one channel of a sound output. 
+
+```csharp
+public MLResult.Code MLAudioSetSpatialSoundPosition(
     ulong handle,
     uint channel,
-    out MagicLeapNativeBindings.MLVec3f position
+    ref MagicLeapNativeBindings.MLVec3f position
 )
 ```
 
@@ -234,7 +374,7 @@ public MLResult.Code MLAudioGetSpatialSoundPosition(
 |--|--|--|
 | ulong |handle|MLHandle used to identify the sound output.|
 | uint |channel|Selects the channel whose position is being set.|
-| out [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |position|Struct to set the position|
+| ref [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |position|Struct to set the position|
 
 
 
@@ -242,146 +382,6 @@ public MLResult.Code MLAudioGetSpatialSoundPosition(
 
 
 **Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioHandleNotFound](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiohandlenotfound)  if handle was not found. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioInternalConfigError](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiointernalconfigerror)  if internal config error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetSpatialSoundEnable {#mlresultcode-mlaudiogetspatialsoundenable}
-
-Enables/disables 3D audio processing for a sound output. 
-
-```csharp
-public MLResult.Code MLAudioGetSpatialSoundEnable(
-    ulong handle,
-    out bool enabled
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |handle|MLHandle used to identify the sound output.|
-| out bool |enabled|Indicates whether 3D processing is on or off.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioHandleNotFound](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiohandlenotfound)  if handle was not found. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AudioInternalConfigError](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-audiointernalconfigerror)  if internal config error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetSoundBypassesMasterVolume {#mlresultcode-mlaudiogetsoundbypassesmastervolume}
-
-Queries whether a sound output is exempt from attenuation due to master volume. This call reports whether the output from a sound output is bypassing master volume, making it effectively "always audible" (assuming it is neither muted nor set to zero volume on a per-sound basis). This option can only be set on medical-enabled devices(60601 compliant), and will only work for non-spatial sounds.Non-spatial sound parameters such as volume, mute, pitch and looping are still in effect for sounds that are bypassing master volume. 
-
-```csharp
-public MLResult.Code MLAudioGetSoundBypassesMasterVolume(
-    ulong audioHandle,
-    out bool isBypassing
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |audioHandle||
-| out bool |isBypassing||
-
-
-
-
-
-
------------
-
-### IntPtr MLAudioGetResultString {#intptr-mlaudiogetresultstring}
-
-Gets the result string for a [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code). 
-
-```csharp
-public IntPtr MLAudioGetResultString(
-    MLResult.Code result
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) to be requested.|
-
-
-
-
-
-
-**Returns**: A pointer to the result string.
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetOutputDevice {#mlresultcode-mlaudiogetoutputdevice}
-
-Gets the current audio output device. 
-
-```csharp
-public MLResult.Code MLAudioGetOutputDevice(
-    out MLAudioOutput.Device device
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out [MLAudioOutput.Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) |device|The audio output device.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if input parameter is invalid. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLAudioGetMasterVolume {#mlresultcode-mlaudiogetmastervolume}
-
-Gets the value of the master volume. 
-
-```csharp
-public MLResult.Code MLAudioGetMasterVolume(
-    out float volume
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out float |volume|The value of the master volume.|
-
-
-
-
-
-
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if input parameter is invalid. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.NotImplemented](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-notimplemented) . 
 
 
 

@@ -18,49 +18,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void Cleanup {#void-cleanup}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaPlayerGetTrackType_Exists {#void-nativebinding-mlmediaplayergettracktype-exists}
-
-```csharp
-public void NativeBinding_MLMediaPlayerGetTrackType_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaPlayerGetTrackMediaFormat_Exists {#void-nativebinding-mlmediaplayergettrackmediaformat-exists}
-
-```csharp
-public void NativeBinding_MLMediaPlayerGetTrackMediaFormat_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLMediaPlayerGetTrackLanguage_Exists {#void-nativebinding-mlmediaplayergettracklanguage-exists}
-
-```csharp
-public void NativeBinding_MLMediaPlayerGetTrackLanguage_Exists()
+public void Cleanup()
 ```
 
 
@@ -83,10 +44,49 @@ public void Init()
 
 -----------
 
-### void Cleanup {#void-cleanup}
+### void NativeBinding_MLMediaPlayerGetTrackLanguage_Exists {#void-nativebinding-mlmediaplayergettracklanguage-exists}
 
 ```csharp
-public void Cleanup()
+public void NativeBinding_MLMediaPlayerGetTrackLanguage_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaPlayerGetTrackMediaFormat_Exists {#void-nativebinding-mlmediaplayergettrackmediaformat-exists}
+
+```csharp
+public void NativeBinding_MLMediaPlayerGetTrackMediaFormat_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLMediaPlayerGetTrackType_Exists {#void-nativebinding-mlmediaplayergettracktype-exists}
+
+```csharp
+public void NativeBinding_MLMediaPlayerGetTrackType_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

@@ -19,41 +19,11 @@ title: Permission
 
 ## Public Fields
 
-### Name {#string-name}
+### Description {#string-description}
 
 ```csharp
 
-public string Name { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### MinimumApiLevel {#int-minimumapilevel}
-
-```csharp
-
-public int MinimumApiLevel { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Level {#protectionlevel-level}
-
-```csharp
-
-public ProtectionLevel Level { get; set; }
+public string Description { get; set; }
 
 ```
 
@@ -79,11 +49,41 @@ public bool Enabled { get; set; }
 
 -----------
 
-### Description {#string-description}
+### Level {#protectionlevel-level}
 
 ```csharp
 
-public string Description { get; set; }
+public ProtectionLevel Level { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### MinimumApiLevel {#int-minimumapilevel}
+
+```csharp
+
+public int MinimumApiLevel { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### Name {#string-name}
+
+```csharp
+
+public string Name { get; set; }
 
 ```
 

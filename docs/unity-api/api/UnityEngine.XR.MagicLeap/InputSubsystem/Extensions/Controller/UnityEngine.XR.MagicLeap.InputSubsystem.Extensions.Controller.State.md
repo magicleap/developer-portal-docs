@@ -32,13 +32,103 @@ public override string ToString()
 
 ## Public Attributes
 
-### TriggerNormalized {#float-triggernormalized}
-
-Normalized trigger value [0.0,1.0] 
+### ButtonStates {#bool-buttonstates}
 
 ```csharp
 
-public float TriggerNormalized;
+public bool [] ButtonStates;
+
+```
+
+
+
+
+
+
+-----------
+
+### Hand {#mlinputcontrollerhand-hand}
+
+```csharp
+
+public MLInputControllerHand Hand;
+
+```
+
+
+
+
+
+
+-----------
+
+### HardwareIndex {#byte-hardwareindex}
+
+```csharp
+
+public byte HardwareIndex;
+
+```
+
+
+
+
+
+
+-----------
+
+### IsConnected {#bool-isconnected}
+
+```csharp
+
+public bool IsConnected;
+
+```
+
+
+
+
+
+
+-----------
+
+### IsTouchesActive {#bool-istouchesactive}
+
+```csharp
+
+public bool [] IsTouchesActive;
+
+```
+
+
+
+
+
+
+-----------
+
+### TouchesPositionAndForce {#vector3-touchespositionandforce}
+
+Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range. 
+
+```csharp
+
+public Vector3 [] TouchesPositionAndForce;
+
+```
+
+
+
+
+
+
+-----------
+
+### TouchpadGestureData {#touchpadgesturedata-touchpadgesturedata}
+
+```csharp
+
+public TouchpadGesture.Data TouchpadGestureData;
 
 ```
 
@@ -67,103 +157,13 @@ public TouchpadGesture.State TouchpadGestureState;
 
 -----------
 
-### TouchpadGestureData {#touchpadgesturedata-touchpadgesturedata}
+### TriggerNormalized {#float-triggernormalized}
+
+Normalized trigger value [0.0,1.0] 
 
 ```csharp
 
-public TouchpadGesture.Data TouchpadGestureData;
-
-```
-
-
-
-
-
-
------------
-
-### TouchesPositionAndForce {#vector3-touchespositionandforce}
-
-Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range. 
-
-```csharp
-
-public Vector3 [] TouchesPositionAndForce;
-
-```
-
-
-
-
-
-
------------
-
-### IsTouchesActive {#bool-istouchesactive}
-
-```csharp
-
-public bool [] IsTouchesActive;
-
-```
-
-
-
-
-
-
------------
-
-### IsConnected {#bool-isconnected}
-
-```csharp
-
-public bool IsConnected;
-
-```
-
-
-
-
-
-
------------
-
-### HardwareIndex {#byte-hardwareindex}
-
-```csharp
-
-public byte HardwareIndex;
-
-```
-
-
-
-
-
-
------------
-
-### Hand {#mlinputcontrollerhand-hand}
-
-```csharp
-
-public MLInputControllerHand Hand;
-
-```
-
-
-
-
-
-
------------
-
-### ButtonStates {#bool-buttonstates}
-
-```csharp
-
-public bool [] ButtonStates;
+public float TriggerNormalized;
 
 ```
 

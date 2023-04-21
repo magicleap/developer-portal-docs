@@ -17,12 +17,11 @@ Universally unique identifier, byte array.
 
 ## Public Methods
 
-### bool operator== {#bool-operator}
+### override bool Equals {#override-bool-equals}
 
 ```csharp
-public static bool operator==(
-    MLUUIDBytes one,
-    MLUUIDBytes two
+public override bool Equals(
+    object obj
 )
 ```
 
@@ -31,8 +30,33 @@ public static bool operator==(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) |one|Universally unique identifier, byte array. |
-| [MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) |two|Universally unique identifier, byte array. |
+| object |obj||
+
+
+
+
+
+
+-----------
+
+### override int GetHashCode {#override-int-gethashcode}
+
+```csharp
+public override int GetHashCode()
+```
+
+
+
+
+
+
+-----------
+
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
 
 
 
@@ -65,37 +89,12 @@ public static bool operator!=(
 
 -----------
 
-### override string ToString {#override-string-tostring}
+### bool operator== {#bool-operator}
 
 ```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
-### override int GetHashCode {#override-int-gethashcode}
-
-```csharp
-public override int GetHashCode()
-```
-
-
-
-
-
-
------------
-
-### override bool Equals {#override-bool-equals}
-
-```csharp
-public override bool Equals(
-    object obj
+public static bool operator==(
+    MLUUIDBytes one,
+    MLUUIDBytes two
 )
 ```
 
@@ -104,7 +103,8 @@ public override bool Equals(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| object |obj||
+| [MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) |one|Universally unique identifier, byte array. |
+| [MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) |two|Universally unique identifier, byte array. |
 
 
 

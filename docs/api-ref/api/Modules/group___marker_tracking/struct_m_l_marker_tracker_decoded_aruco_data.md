@@ -34,8 +34,7 @@ Aruco decoded data.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

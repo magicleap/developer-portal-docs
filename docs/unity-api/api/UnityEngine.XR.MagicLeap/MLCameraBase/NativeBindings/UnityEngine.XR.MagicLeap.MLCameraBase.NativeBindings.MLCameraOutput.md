@@ -17,6 +17,25 @@ Captured output
 
 ## Public Methods
 
+### [MLCameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraOutput.md) Create {#mlcameraoutput-create}
+
+Create and return an initialized version of this struct. 
+
+```csharp
+public static MLCameraOutput Create()
+```
+
+
+
+
+
+
+**Returns**: Returns a new MLCamera.Output structure.
+
+
+
+-----------
+
 ### [MLCamera.CameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CameraOutput.md) CreateFrameInfo {#mlcameracameraoutput-createframeinfo}
 
 ```csharp
@@ -41,57 +60,21 @@ public MLCamera.CameraOutput CreateFrameInfo(
 
 -----------
 
-### [MLCameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraOutput.md) Create {#mlcameraoutput-create}
-
-Create and return an initialized version of this struct. 
-
-```csharp
-public static MLCameraOutput Create()
-```
-
-
-
-
-
-
-**Returns**: Returns a new MLCamera.Output structure.
-
-
-
------------
-
 ## Public Attributes
 
-### Version {#uint-version}
+### Format {#mlcameraoutputformat-format}
 
-version contains the version number for this structure. 
-
-```csharp
-
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### Planes {#mlcameraplaneinfo-planes}
-
-Output image plane info. The number of output planes is specified by PlaneCount. 
+Supported output format specified by [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat)
 
 ```csharp
 
-public MLCameraPlaneInfo [] Planes;
+public MLCamera.OutputFormat Format;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) [] | Per plane info for captured output  |
+| [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
 
 
 
@@ -123,19 +106,36 @@ public byte PlaneCount;
 
 -----------
 
-### Format {#mlcameraoutputformat-format}
+### Planes {#mlcameraplaneinfo-planes}
 
-Supported output format specified by [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat)
+Output image plane info. The number of output planes is specified by PlaneCount. 
 
 ```csharp
 
-public MLCamera.OutputFormat Format;
+public MLCameraPlaneInfo [] Planes;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
+| [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) [] | Per plane info for captured output  |
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+version contains the version number for this structure. 
+
+```csharp
+
+public uint Version;
+
+```
+
 
 
 

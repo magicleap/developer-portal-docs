@@ -18,10 +18,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLWebRTCSourceAppDefinedAudioSourcePushData_Exists {#void-nativebinding-mlwebrtcsourceappdefinedaudiosourcepushdata-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_MLWebRTCSourceAppDefinedAudioSourcePushData_Exists()
 ```
 
 
@@ -31,10 +31,10 @@ public void SetupNativeBindings()
 
 -----------
 
-### void NativeBinding_MLWebRTCSourceAppDefinedAudioSourcePushData_Exists {#void-nativebinding-mlwebrtcsourceappdefinedaudiosourcepushdata-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_MLWebRTCSourceAppDefinedAudioSourcePushData_Exists()
+public void SetupNativeBindings()
 ```
 
 

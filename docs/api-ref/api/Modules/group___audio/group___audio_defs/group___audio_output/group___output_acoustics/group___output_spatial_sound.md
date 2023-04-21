@@ -342,8 +342,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -385,8 +384,7 @@ Indicates whether the sound automatically faces the listener.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -441,8 +439,7 @@ This API property is not intended to be user-specified, but rather set as part o
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -497,8 +494,7 @@ This API property is not intended to be user-specified, but rather set as part o
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -545,8 +541,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -593,8 +588,7 @@ Obstruction override is returned as a MultibandLevel, with 0 representing no cha
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -642,8 +636,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -691,8 +684,7 @@ Multi-channel sounds require the distance properties to be read individually for
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -740,8 +732,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -789,8 +780,7 @@ Multi-channel sounds require the radiation properties to be read individually fo
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -838,8 +828,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -887,8 +876,7 @@ Multi-channel sounds require the direct sound level to be read individually for 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -936,8 +924,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -985,8 +972,7 @@ Multi-channel sounds require the indirect sound level to be read individually fo
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1034,8 +1020,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1083,8 +1068,7 @@ Multi-channel sounds require the dispersion level to be read individually for ea
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1132,8 +1116,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1181,8 +1164,7 @@ Multi-channel sounds require the reverb level to be read individually for each c
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1227,8 +1209,7 @@ This call can be used to make the coordinate system of the specified sound be he
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -1274,8 +1255,7 @@ This call can be used to determine if the coordinate system of the specified sou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1325,8 +1305,7 @@ Returns a list of ID-tracked requests for raycast operations.
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1373,8 +1352,7 @@ This function is not intended to be called directly by developers.
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

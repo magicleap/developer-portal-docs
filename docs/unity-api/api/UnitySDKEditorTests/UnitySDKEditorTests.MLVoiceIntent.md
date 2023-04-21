@@ -21,10 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void NativeBindings_MLVoiceIntentSettings_struct_size {#void-nativebindings-mlvoiceintentsettings-struct-size}
+### void NativeBindings_MLVoiceIntentCallbacks_struct_size {#void-nativebindings-mlvoiceintentcallbacks-struct-size}
 
 ```csharp
-public void NativeBindings_MLVoiceIntentSettings_struct_size()
+public void NativeBindings_MLVoiceIntentCallbacks_struct_size()
 ```
 
 
@@ -47,10 +47,10 @@ public void NativeBindings_MLVoiceIntentEvent_struct_size()
 
 -----------
 
-### void NativeBindings_MLVoiceIntentCallbacks_struct_size {#void-nativebindings-mlvoiceintentcallbacks-struct-size}
+### void NativeBindings_MLVoiceIntentSettings_struct_size {#void-nativebindings-mlvoiceintentsettings-struct-size}
 
 ```csharp
-public void NativeBindings_MLVoiceIntentCallbacks_struct_size()
+public void NativeBindings_MLVoiceIntentSettings_struct_size()
 ```
 
 

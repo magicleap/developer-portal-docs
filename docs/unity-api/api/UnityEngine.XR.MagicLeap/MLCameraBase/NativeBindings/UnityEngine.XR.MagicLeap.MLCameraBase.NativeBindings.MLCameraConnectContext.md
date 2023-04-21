@@ -47,16 +47,19 @@ public static MLCameraConnectContext Create(
 
 ## Public Attributes
 
-### Version {#uint-version}
+### CamId {#mlcameraidentifier-camid}
 
-version contains the version number for this structure. 
+logical camera idenitifier 
 
 ```csharp
 
-public uint Version;
+public MLCamera.Identifier CamId;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [MLCamera.Identifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-identifier) | Logical Camera identifiers available for access.  |
 
 
 
@@ -64,19 +67,16 @@ public uint Version;
 
 -----------
 
-### MrInfo {#mlcameramrconnectinfo-mrinfo}
+### EnableVideoStab {#bool-enablevideostab}
 
-MR capture connection settings 
+Video Stabilization enable/disable 1 - enable 0 - disabled 
 
 ```csharp
 
-public MLCameraMRConnectInfo MrInfo;
+public bool EnableVideoStab;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MLCameraMRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraMRConnectInfo.md) | Structure to encapsulate connection settings for MR capture.  |
 
 
 
@@ -104,16 +104,19 @@ public MLCamera.ConnectFlag Flags;
 
 -----------
 
-### EnableVideoStab {#bool-enablevideostab}
+### MrInfo {#mlcameramrconnectinfo-mrinfo}
 
-Video Stabilization enable/disable 1 - enable 0 - disabled 
+MR capture connection settings 
 
 ```csharp
 
-public bool EnableVideoStab;
+public MLCameraMRConnectInfo MrInfo;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [MLCameraMRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraMRConnectInfo.md) | Structure to encapsulate connection settings for MR capture.  |
 
 
 
@@ -121,19 +124,16 @@ public bool EnableVideoStab;
 
 -----------
 
-### CamId {#mlcameraidentifier-camid}
+### Version {#uint-version}
 
-logical camera idenitifier 
+version contains the version number for this structure. 
 
 ```csharp
 
-public MLCamera.Identifier CamId;
+public uint Version;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MLCamera.Identifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-identifier) | Logical Camera identifiers available for access.  |
 
 
 

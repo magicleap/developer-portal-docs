@@ -19,14 +19,13 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetStaticData {#mlresultcode-mlgazerecognitiongetstaticdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionCreate {#mlresultcode-mlgazerecognitioncreate}
 
-Get static information about Gaze Recognition. 
+Create Gaze Recognition. 
 
 ```csharp
-public MLResult.Code MLGazeRecognitionGetStaticData(
-    ulong handle,
-    ref MLGazeRecognitionStaticData data
+public MLResult.Code MLGazeRecognitionCreate(
+    out ulong handle
 )
 ```
 
@@ -35,15 +34,42 @@ public MLResult.Code MLGazeRecognitionGetStaticData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |handle|A handle to Gaze Recognition created by MLGazeRecognitionCreate().|
-| ref [MLGazeRecognitionStaticData](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.MLGazeRecognitionStaticData.md) |data|Target to populate the data about Gaze Recognition..|
+| out ulong |handle|A pointer to an #MLHandle which will contain a handle to Gaze Recognition. If this operation fails, out&#95;handle will be #ML&#95;INVALID&#95;HANDLE. |
 
 
 
 
 
 
-**Returns**:  MLResult&#95;InvalidParam  The data parameter was not valid (null).  MLResult&#95;Ok gaze Recognition  data was successfully received.  MLResult&#95;UnspecifiedFailure  Failed to receive gaze Recognition static data. 
+**Returns**:  MLResult&#95;InvalidParam  The out&#95;handle parameter was not valid (null).  MLResult&#95;Ok  Gaze Recognition was successfully created.  MLResult&#95;UnspecifiedFaiure  Gaze Recognition was not created successfully.  MLResult&#95;PermissionDenied 
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionDestroy {#mlresultcode-mlgazerecognitiondestroy}
+
+Destroy Gaze Recognition. 
+
+```csharp
+public MLResult.Code MLGazeRecognitionDestroy(
+    ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle|A handle to Gaze Recognition created by MLGazeRecognitionCreate()|
+
+
+
+
+
+
+**Returns**:  MLResult&#95;Ok  The Gaze Recognition was successfully destroyed.  MLResult&#95;UnspecifiedFailure  The Gaze Recognition was not successfully destroyed.  MLResult&#95;InvalidParam  The Gaze Recognition handle was not valid. 
 
 
 
@@ -79,13 +105,14 @@ public MLResult.Code MLGazeRecognitionGetState(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionDestroy {#mlresultcode-mlgazerecognitiondestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetStaticData {#mlresultcode-mlgazerecognitiongetstaticdata}
 
-Destroy Gaze Recognition. 
+Get static information about Gaze Recognition. 
 
 ```csharp
-public MLResult.Code MLGazeRecognitionDestroy(
-    ulong handle
+public MLResult.Code MLGazeRecognitionGetStaticData(
+    ulong handle,
+    ref MLGazeRecognitionStaticData data
 )
 ```
 
@@ -94,42 +121,15 @@ public MLResult.Code MLGazeRecognitionDestroy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |handle|A handle to Gaze Recognition created by MLGazeRecognitionCreate()|
+| ulong |handle|A handle to Gaze Recognition created by MLGazeRecognitionCreate().|
+| ref [MLGazeRecognitionStaticData](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.MLGazeRecognitionStaticData.md) |data|Target to populate the data about Gaze Recognition..|
 
 
 
 
 
 
-**Returns**:  MLResult&#95;Ok  The Gaze Recognition was successfully destroyed.  MLResult&#95;UnspecifiedFailure  The Gaze Recognition was not successfully destroyed.  MLResult&#95;InvalidParam  The Gaze Recognition handle was not valid. 
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionCreate {#mlresultcode-mlgazerecognitioncreate}
-
-Create Gaze Recognition. 
-
-```csharp
-public MLResult.Code MLGazeRecognitionCreate(
-    out ulong handle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out ulong |handle|A pointer to an #MLHandle which will contain a handle to Gaze Recognition. If this operation fails, out&#95;handle will be #ML&#95;INVALID&#95;HANDLE. |
-
-
-
-
-
-
-**Returns**:  MLResult&#95;InvalidParam  The out&#95;handle parameter was not valid (null).  MLResult&#95;Ok  Gaze Recognition was successfully created.  MLResult&#95;UnspecifiedFaiure  Gaze Recognition was not created successfully.  MLResult&#95;PermissionDenied 
+**Returns**:  MLResult&#95;InvalidParam  The data parameter was not valid (null).  MLResult&#95;Ok gaze Recognition  data was successfully received.  MLResult&#95;UnspecifiedFailure  Failed to receive gaze Recognition static data. 
 
 
 

@@ -17,19 +17,6 @@ Camera connection settings.
 
 ## Public Methods
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ### [ConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md) Create {#connectcontext-create}
 
 Create and return an initialized version of this struct. 
@@ -49,21 +36,51 @@ public static ConnectContext Create()
 
 -----------
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### MixedRealityConnectInfo {#mrconnectinfo-mixedrealityconnectinfo}
+### CamId {#identifier-camid}
 
-MR capture connection settings. Ignored for camera only capture. 
+logical camera idenitifier 
 
 ```csharp
 
-public MRConnectInfo MixedRealityConnectInfo;
+public Identifier CamId;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md) | Connection settings for MR capture.  |
+| [Identifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-identifier) | Logical Camera identifiers available for access.  |
+
+
+
+
+
+-----------
+
+### EnableVideoStabilization {#bool-enablevideostabilization}
+
+Video Stabilization enable/disable, true - enable; false - disabled 
+
+```csharp
+
+public bool EnableVideoStabilization;
+
+```
+
 
 
 
@@ -91,36 +108,19 @@ public ConnectFlag Flags;
 
 -----------
 
-### EnableVideoStabilization {#bool-enablevideostabilization}
+### MixedRealityConnectInfo {#mrconnectinfo-mixedrealityconnectinfo}
 
-Video Stabilization enable/disable, true - enable; false - disabled 
-
-```csharp
-
-public bool EnableVideoStabilization;
-
-```
-
-
-
-
-
-
------------
-
-### CamId {#identifier-camid}
-
-logical camera idenitifier 
+MR capture connection settings. Ignored for camera only capture. 
 
 ```csharp
 
-public Identifier CamId;
+public MRConnectInfo MixedRealityConnectInfo;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [Identifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-identifier) | Logical Camera identifiers available for access.  |
+| [MRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md) | Connection settings for MR capture.  |
 
 
 

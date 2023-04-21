@@ -22,22 +22,39 @@ Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLCameraBase.Renderer](/unity-a
 
 ## Public Methods
 
-### void SetRenderBuffer {#void-setrenderbuffer}
+### void Cleanup {#void-cleanup}
 
-Currently only 1 call after obj instantiation will work 
+Destroy all resources held by the native rendering plugin. 
 
 ```csharp
-public void SetRenderBuffer(
-    RenderTexture renderTexture
-)
+public void Cleanup()
 ```
 
 
-**Parameters**
 
-| Type | Name  | Description  | 
-|--|--|--|
-| RenderTexture |renderTexture||
+
+
+
+-----------
+
+### delegate void OnCleanupCompleteDelegate {#delegate-void-oncleanupcompletedelegate}
+
+```csharp
+public delegate void OnCleanupCompleteDelegate()
+```
+
+
+
+
+
+
+-----------
+
+### delegate void OnFirstFrameRendereredDelegate {#delegate-void-onfirstframerenderereddelegate}
+
+```csharp
+public delegate void OnFirstFrameRendereredDelegate()
+```
 
 
 
@@ -61,39 +78,22 @@ public void Render()
 
 -----------
 
-### delegate void OnFirstFrameRendereredDelegate {#delegate-void-onfirstframerenderereddelegate}
+### void SetRenderBuffer {#void-setrenderbuffer}
+
+Currently only 1 call after obj instantiation will work 
 
 ```csharp
-public delegate void OnFirstFrameRendereredDelegate()
+public void SetRenderBuffer(
+    RenderTexture renderTexture
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### delegate void OnCleanupCompleteDelegate {#delegate-void-oncleanupcompletedelegate}
-
-```csharp
-public delegate void OnCleanupCompleteDelegate()
-```
-
-
-
-
-
-
------------
-
-### void Cleanup {#void-cleanup}
-
-Destroy all resources held by the native rendering plugin. 
-
-```csharp
-public void Cleanup()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| RenderTexture |renderTexture||
 
 
 
@@ -149,12 +149,12 @@ protected GCHandle gcHandle;
 
 ## Public Events
 
-### OnFirstFrameRendered {#onfirstframerenderereddelegate-onfirstframerendered}
+### OnCleanupComplete {#oncleanupcompletedelegate-oncleanupcomplete}
 
-Event fired to indicate a frame has been rendered on the current RenderTexture for the first time. Apps can use this event to disable UI elements like loading indicators since the RenderTexture will have a valid frame to display. 
+Event fired on Unity's main thread to indicate that resource cleanup is complete in the native plugin and it is now safe to cleanup associated managed resources like the RenderTexture. 
 
 ```csharp
-public OnFirstFrameRendereredDelegate OnFirstFrameRendered()
+public OnCleanupCompleteDelegate OnCleanupComplete()
 ```
 
 
@@ -179,12 +179,12 @@ public OnCleanupCompleteDelegate OnCleanupComplete_CallbackThread()
 
 -----------
 
-### OnCleanupComplete {#oncleanupcompletedelegate-oncleanupcomplete}
+### OnFirstFrameRendered {#onfirstframerenderereddelegate-onfirstframerendered}
 
-Event fired on Unity's main thread to indicate that resource cleanup is complete in the native plugin and it is now safe to cleanup associated managed resources like the RenderTexture. 
+Event fired to indicate a frame has been rendered on the current RenderTexture for the first time. Apps can use this event to disable UI elements like loading indicators since the RenderTexture will have a valid frame to display. 
 
 ```csharp
-public OnCleanupCompleteDelegate OnCleanupComplete()
+public OnFirstFrameRendereredDelegate OnFirstFrameRendered()
 ```
 
 

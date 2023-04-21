@@ -18,12 +18,110 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### delegate void OnDisplayChangedDelegate {#delegate-void-ondisplaychangeddelegate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserCreate {#mlresultcode-mlmediaccparsercreate}
 
 ```csharp
-public delegate void OnDisplayChangedDelegate(
-    ulong parserHande,
-    ref CaptionSegmentEx segment,
+public MLResult.Code MLMediaCCParserCreate(
+    out ulong parserHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out ulong |parserHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserDestroy {#mlresultcode-mlmediaccparserdestroy}
+
+```csharp
+public MLResult.Code MLMediaCCParserDestroy(
+    ulong parserHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |parserHandle||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserGetDisplayableEx {#mlresultcode-mlmediaccparsergetdisplayableex}
+
+```csharp
+public MLResult.Code MLMediaCCParserGetDisplayableEx(
+    ulong parserHandle,
+    IntPtr subtitleData,
+    int subtitleDataSize,
+    ref IntPtr captionSegment
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |parserHandle||
+| IntPtr |subtitleData||
+| int |subtitleDataSize||
+| ref IntPtr |captionSegment||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserParse {#mlresultcode-mlmediaccparserparse}
+
+```csharp
+public MLResult.Code MLMediaCCParserParse(
+    ulong parserHandle,
+    IntPtr subtitleData,
+    uint subtitleDataSize
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |parserHandle||
+| IntPtr |subtitleData||
+| uint |subtitleDataSize||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserSetDisplayChangedCallback {#mlresultcode-mlmediaccparsersetdisplaychangedcallback}
+
+```csharp
+public MLResult.Code MLMediaCCParserSetDisplayChangedCallback(
+    ulong parserHandle,
+    OnDisplayChangedDelegate calback,
     IntPtr data
 )
 ```
@@ -33,8 +131,8 @@ public delegate void OnDisplayChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |parserHande||
-| ref [CaptionSegmentEx](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.NativeBindings.CaptionSegmentEx.md) |segment||
+| ulong |parserHandle||
+| OnDisplayChangedDelegate |calback||
 | IntPtr |data||
 
 
@@ -72,12 +170,12 @@ public static void OnDisplayChanged(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserSetDisplayChangedCallback {#mlresultcode-mlmediaccparsersetdisplaychangedcallback}
+### delegate void OnDisplayChangedDelegate {#delegate-void-ondisplaychangeddelegate}
 
 ```csharp
-public MLResult.Code MLMediaCCParserSetDisplayChangedCallback(
-    ulong parserHandle,
-    OnDisplayChangedDelegate calback,
+public delegate void OnDisplayChangedDelegate(
+    ulong parserHande,
+    ref CaptionSegmentEx segment,
     IntPtr data
 )
 ```
@@ -87,107 +185,9 @@ public MLResult.Code MLMediaCCParserSetDisplayChangedCallback(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |parserHandle||
-| OnDisplayChangedDelegate |calback||
+| ulong |parserHande||
+| ref [CaptionSegmentEx](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.NativeBindings.CaptionSegmentEx.md) |segment||
 | IntPtr |data||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserParse {#mlresultcode-mlmediaccparserparse}
-
-```csharp
-public MLResult.Code MLMediaCCParserParse(
-    ulong parserHandle,
-    IntPtr subtitleData,
-    uint subtitleDataSize
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |parserHandle||
-| IntPtr |subtitleData||
-| uint |subtitleDataSize||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserGetDisplayableEx {#mlresultcode-mlmediaccparsergetdisplayableex}
-
-```csharp
-public MLResult.Code MLMediaCCParserGetDisplayableEx(
-    ulong parserHandle,
-    IntPtr subtitleData,
-    int subtitleDataSize,
-    ref IntPtr captionSegment
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |parserHandle||
-| IntPtr |subtitleData||
-| int |subtitleDataSize||
-| ref IntPtr |captionSegment||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserDestroy {#mlresultcode-mlmediaccparserdestroy}
-
-```csharp
-public MLResult.Code MLMediaCCParserDestroy(
-    ulong parserHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| ulong |parserHandle||
-
-
-
-
-
-
------------
-
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserCreate {#mlresultcode-mlmediaccparsercreate}
-
-```csharp
-public MLResult.Code MLMediaCCParserCreate(
-    out ulong parserHandle
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| out ulong |parserHandle||
 
 
 

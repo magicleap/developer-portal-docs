@@ -36,8 +36,7 @@ Free this array with [MLMarkerTrackerReleaseResult](/api-ref/api/Modules/group__
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

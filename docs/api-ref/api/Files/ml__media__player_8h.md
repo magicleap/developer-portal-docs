@@ -296,8 +296,7 @@ Frame Packing Arrangement for stereoscopic videos.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -323,8 +322,7 @@ Frame Packing Arrangement flags for stereoscopic videos.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -363,8 +361,7 @@ MediaPlayer DRM Info for a Media Track.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -419,8 +416,7 @@ MediaPlayer Buffering update callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -441,8 +437,7 @@ MediaPlayer Playback completion callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -463,8 +458,7 @@ MediaPlayer Error callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -485,8 +479,7 @@ MediaPlayer Information callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -507,8 +500,7 @@ MediaPlayer Playback prepared callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -529,8 +521,7 @@ MediaPlayer Playback seek completion callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -551,8 +542,7 @@ MediaPlayer Video Size Changed callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -573,8 +563,7 @@ MediaPlayer Track DRM Info callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -595,8 +584,7 @@ MediaPlayer reset completion callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -617,8 +605,7 @@ MediaPlayer frame packing callback Info.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -641,8 +628,7 @@ Those are async mechanisms that should not be used in parallel with their sync c
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -663,8 +649,7 @@ MediaPlayer Track Information.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -685,8 +670,7 @@ DRM Session information for a MediaPlayer Track.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -740,8 +724,7 @@ Callbacks signature called when Timed Text update is available.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -762,8 +745,7 @@ MediaPlayer metrics data.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -1481,8 +1463,7 @@ Gets the Media Format of a track.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -1878,8 +1859,7 @@ Client needs to implement the callback functions declared in [MLMediaPlayerEvent
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -2188,8 +2168,7 @@ Returns last subtitle event information.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -2228,8 +2207,7 @@ Releases last subtitle event information.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -2277,8 +2255,7 @@ This also makes [MLMediaPlayerGetSubtitleEx()](/api-ref/api/Modules/group___medi
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -2571,8 +2548,7 @@ This function has to be called only after DataSource has been set and the MediaP
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -2613,8 +2589,7 @@ Prepares DRM for the selected media (either audio or video) track.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 
@@ -2811,8 +2786,7 @@ Setting this callback disables use of the poll-based API to query for the [MLMed
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -2858,8 +2832,7 @@ The returned [MLWebVTTData](/api-ref/api/Modules/group___media_player/struct_m_l
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -2905,8 +2878,7 @@ The returned [MLTTMLData](/api-ref/api/Modules/group___media_player/struct_m_l_t
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2951,8 +2923,7 @@ A successful reset result can be obtained either by registering the 'on_reset_co
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2995,8 +2966,7 @@ Retrieves metrics recorded on the MediaPlayer.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -3041,8 +3011,7 @@ The surface should be created by [MLNativeSurfaceCreate()](/api-ref/api/Modules/
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

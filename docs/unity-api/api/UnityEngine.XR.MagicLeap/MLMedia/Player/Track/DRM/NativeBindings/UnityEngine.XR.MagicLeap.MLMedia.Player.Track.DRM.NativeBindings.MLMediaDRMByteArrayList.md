@@ -17,13 +17,13 @@ Data type containing list of byte array buffers and the size.
 
 ## Public Attributes
 
-### Ptr {#intptr-ptr}
+### Length {#uint-length}
 
-Byte array buffer. 
+Length of #ptr. 
 
 ```csharp
 
-public IntPtr Ptr;
+public uint Length;
 
 ```
 
@@ -34,13 +34,13 @@ public IntPtr Ptr;
 
 -----------
 
-### Length {#uint-length}
+### Ptr {#intptr-ptr}
 
-Length of #ptr. 
+Byte array buffer. 
 
 ```csharp
 
-public uint Length;
+public IntPtr Ptr;
 
 ```
 

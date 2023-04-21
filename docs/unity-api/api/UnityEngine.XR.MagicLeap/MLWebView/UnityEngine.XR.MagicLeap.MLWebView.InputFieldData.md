@@ -17,70 +17,16 @@ Struct containing data about clicked input field in WebView.
 
 ## Public Attributes
 
-### Y {#int-y}
+### Height {#int-height}
 
-Vertical position of the input field. 
-
-```csharp
-
-public int Y;
-
-```
-
-
-
-
-
-
------------
-
-### X {#int-x}
-
-Horizontal position of the input field. 
+Height of the input field. 
 
 ```csharp
 
-public int X;
+public int Height;
 
 ```
 
-
-
-
-
-
------------
-
-### Width {#int-width}
-
-Width of the input field. 
-
-```csharp
-
-public int Width;
-
-```
-
-
-
-
-
-
------------
-
-### TextInputType {#textinputtype-textinputtype}
-
-One of TextInputType. 
-
-```csharp
-
-public TextInputType TextInputType;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [TextInputType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputtype) | The type of text entry selected when onShowKeyboard is called.  |
 
 
 
@@ -108,13 +54,67 @@ public TextInputFlags TextInputFlags;
 
 -----------
 
-### Height {#int-height}
+### TextInputType {#textinputtype-textinputtype}
 
-Height of the input field. 
+One of TextInputType. 
 
 ```csharp
 
-public int Height;
+public TextInputType TextInputType;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [TextInputType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputtype) | The type of text entry selected when onShowKeyboard is called.  |
+
+
+
+
+
+-----------
+
+### Width {#int-width}
+
+Width of the input field. 
+
+```csharp
+
+public int Width;
+
+```
+
+
+
+
+
+
+-----------
+
+### X {#int-x}
+
+Horizontal position of the input field. 
+
+```csharp
+
+public int X;
+
+```
+
+
+
+
+
+
+-----------
+
+### Y {#int-y}
+
+Vertical position of the input field. 
+
+```csharp
+
+public int Y;
 
 ```
 

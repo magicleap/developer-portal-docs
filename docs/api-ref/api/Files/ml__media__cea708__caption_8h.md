@@ -68,8 +68,7 @@ Cea708 Caption maximum windows constant.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -90,8 +89,7 @@ Maximum size for Cea708 Caption Emit command buffers.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -128,8 +126,7 @@ Cea708 Caption Emit Commands constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -154,8 +151,7 @@ Cea708 Caption Emit Command Control constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -180,8 +176,7 @@ Cea708 Caption Color Opacity constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -205,8 +200,7 @@ Cea708 Caption Pen Size constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -230,8 +224,7 @@ Cea708 Caption Pen Offset constants.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -255,8 +248,7 @@ Cea708 Caption Color.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -277,8 +269,7 @@ Cea708 Caption Pen Attributes.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -299,8 +290,7 @@ Cea708 Caption Pen Color.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -321,8 +311,7 @@ Cea708 Caption Pen Location.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -343,8 +332,7 @@ Cea708 Caption Window Attributes.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -365,8 +353,7 @@ Cea708 Caption Window.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -387,8 +374,7 @@ Cea708 Caption Event.
 [More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -415,8 +401,7 @@ Callback signature called when Cea708 parser emits event.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -458,8 +443,7 @@ Create Cea708 parser object.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -502,8 +486,7 @@ Provide Cea708 parser with subtitle raw data for parsing.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -541,8 +524,7 @@ Release Cea708 parser object.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -584,8 +566,7 @@ Set callback to get notified when a caption event has generated.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 

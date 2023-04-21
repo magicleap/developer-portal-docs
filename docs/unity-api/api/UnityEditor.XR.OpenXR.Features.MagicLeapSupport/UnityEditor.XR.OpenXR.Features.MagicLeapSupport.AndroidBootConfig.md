@@ -19,11 +19,42 @@ title: AndroidBootConfig
 
 ## Public Methods
 
-### void WriteBootConfig {#void-writebootconfig}
+###  AndroidBootConfig {#functions-androidbootconfig}
 
 ```csharp
-public void WriteBootConfig()
+public AndroidBootConfig(
+    BuildReport report
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| BuildReport |report||
+
+
+
+
+
+
+-----------
+
+### void ClearEntryForKey {#void-clearentryforkey}
+
+```csharp
+public void ClearEntryForKey(
+    string key
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |key||
 
 
 
@@ -58,42 +89,11 @@ public void SetValueForKey(
 
 -----------
 
-### void ClearEntryForKey {#void-clearentryforkey}
+### void WriteBootConfig {#void-writebootconfig}
 
 ```csharp
-public void ClearEntryForKey(
-    string key
-)
+public void WriteBootConfig()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |key||
-
-
-
-
-
-
------------
-
-###  AndroidBootConfig {#functions-androidbootconfig}
-
-```csharp
-public AndroidBootConfig(
-    BuildReport report
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| BuildReport |report||
 
 
 

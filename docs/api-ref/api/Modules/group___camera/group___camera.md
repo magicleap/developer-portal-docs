@@ -173,113 +173,134 @@ APIs to access the depth camera data.
 
 # Supported Camera Modes, Resolutions, Capture Type, Formats and FrameRates
 
-
-| Camera  | Mode  | Resolution  | Capture Type  | Formats  | FrameRate  |
-|  -------- | -------- | -------- | -------- | -------- | -------- |
-| Main | Cam_Only     | 640x480
-
-1280x720
-
-1280x960
-
-1440x1080
-
-1920x1080
-
-2048x1536  | Preview | YUV | 15/30/60  |
-| Image | YUV/JPEG | 15/30/60  |
-| Video | YUV/RGB/Compressed | 15/30/60  |
-| 
-
-2880x2160
-
-3840x2160
-
-4096x3072<br>
- | Preview | YUV | 15/30  |
-| Image | YUV/JPEG | 15/30  |
-| Video | YUV/RGB/Compressed | 15/30  |
-
-
-
-Note: 15Fps only supported in Auto Exposure Mode. 
-
-When multiple streams are configured frame rate is constrained by max resolution. 
-
-FrameRate_None can be used when only Image capture_type is used.
-
+<div>
+  <table className="doxtable">
+    <tbody><tr>
+        <th>Camera </th><th>Mode </th><th>Resolution </th><th>Capture Type </th><th>Formats </th><th>FrameRate </th></tr>
+      <tr>
+        <td rowSpan={48}>Main</td><td rowSpan={12}>Cam_Only</td><td rowSpan={3}>640x480<br />
+          1280x720<br />
+          1280x960<br />
+          1440x1080<br />
+          1920x1080<br />
+          2048x1536 </td><td rowSpan={1}>Preview</td><td rowSpan={1}>YUV</td><td rowSpan={1}>15/30/60 </td></tr>
+      <tr>
+        <td rowSpan={1}>Image</td><td rowSpan={1}>YUV/JPEG</td><td rowSpan={1}>15/30/60 </td></tr>
+      <tr>
+        <td rowSpan={1}>Video</td><td rowSpan={1}>YUV/RGB/Compressed</td><td rowSpan={1}>15/30/60 </td></tr>
+      <tr>
+        <td rowSpan={3}><br />
+          2880x2160<br />
+          3840x2160<br />
+          4096x3072<br />
+          <br />
+        </td><td rowSpan={1}>Preview</td><td rowSpan={1}>YUV</td><td rowSpan={1}>15/30 </td></tr>
+      <tr>
+        <td rowSpan={1}>Image</td><td rowSpan={1}>YUV/JPEG</td><td rowSpan={1}>15/30 </td></tr>
+      <tr>
+        <td rowSpan={1}>Video</td><td rowSpan={1}>YUV/RGB/Compressed</td><td rowSpan={1}>15/30 </td></tr>
+    </tbody></table>
+  <p>Note:<br />
+    15Fps only supported in Auto Exposure Mode. <br />
+    When multiple streams are configured frame rate is constrained by max resolution. <br />
+    FrameRate_None can be used when only Image capture_type is used.</p>
+    <br></br>
+    </div>
 
 
+<div>
+  <table className="doxtable">
+    <tbody><tr>
+        <th>Camera </th><th>Mode </th><th>Resolution </th><th>Capture Type </th><th>Formats </th><th>FrameRate </th></tr>
+      <tr>
+        <td rowSpan={48}>CV</td><td rowSpan={24}>Cam_Only</td><td rowSpan={2}>640x480<br />
+          1280x720<br />
+          1280x960<br />
+          1440x1080<br />
+          1920x1080<br />
+          2048x1536 </td><td rowSpan={1}>Image</td><td rowSpan={1}>YUV</td><td rowSpan={1}>15/30/60 </td></tr>
+      <tr>
+        <td rowSpan={1}>Video</td><td rowSpan={1}>YUV/RGB</td><td rowSpan={1}>15/30/60 </td></tr>
+      <tr>
+        <td rowSpan={2}><br />
+          2880x2160<br />
+          3840x2160<br />
+          4096x3072<br />
+          <br />
+        </td><td rowSpan={1}>Image</td><td rowSpan={1}>YUV</td><td rowSpan={1}>15/30 </td></tr>
+      <tr>
+        <td rowSpan={1}>Video</td><td rowSpan={1}>YUV/RGB </td><td rowSpan={1}>15/30 </td></tr>
+    </tbody></table>
+  <p>Note:<br />
+   15Fps only supported in Auto Exposure Mode <br />
+   FrameRate_None can be used when only Image capture_type is used.</p>
+<br></br>
+</div>
 
-| Camera  | Mode  | Resolution  | Capture Type  | Formats  | FrameRate  |
-|  -------- | -------- | -------- | -------- | -------- | -------- |
-| CV   | Cam_Only     | 640x480
+<div>
+  <table className="doxtable">
+    <tbody><tr>
+        <th>Camera </th><th>Mode </th><th>Resolution </th><th>Capture Type </th><th>Formats </th><th>FrameRate </th></tr>
+      <tr>
+        <td rowSpan={48}>CV</td><td rowSpan={24}>Cam_Only</td><td rowSpan={2}>640x480<br />
+          1280x720<br />
+          1280x960<br />
+          1440x1080<br />
+          1920x1080<br />
+          2048x1536 </td><td rowSpan={1}>Image</td><td rowSpan={1}>YUV</td><td rowSpan={1}>15/30/60 </td></tr>
+      <tr>
+        <td rowSpan={1}>Video</td><td rowSpan={1}>YUV/RGB</td><td rowSpan={1}>15/30/60 </td></tr>
+      <tr>
+        <td rowSpan={2}><br />
+          2880x2160<br />
+          3840x2160<br />
+          4096x3072<br />
+          <br />
+        </td><td rowSpan={1}>Image</td><td rowSpan={1}>YUV</td><td rowSpan={1}>15/30 </td></tr>
+      <tr>
+        <td rowSpan={1}>Video</td><td rowSpan={1}>YUV/RGB </td><td rowSpan={1}>15/30 </td></tr>
+    </tbody></table>
+  <p>Note:<br />
+   15Fps only supported in Auto Exposure Mode <br />
+   FrameRate_None can be used when only Image capture_type is used.</p>
+    <br></br>
+</div>
 
-1280x720
-
-1280x960
-
-1440x1080
-
-1920x1080
-
-2048x1536  | Image | YUV | 15/30/60  |
-| Video | YUV/RGB            | 15/30/60  |
-| 
-
-2880x2160
-
-3840x2160
-
-4096x3072<br>
- | Image | YUV | 15/30  |
-| Video | YUV/RGB  | 15/30  |
-
-
-
-Note: 15Fps only supported in Auto Exposure Mode 
-
-FrameRate_None can be used when only Image capture_type is used.
-
-
-
-
-| Camera  | Mode  | Resolution  | Capture Type  | Formats  | FrameRate  |
-|  -------- | -------- | -------- | -------- | -------- | -------- |
-| Main | MR/Virtual_Only | 648x720  | Image | RBG/JPEG | 30/60  |
-| Video | RGB/Compressed     | 30/60  |
-| 960x720  | Image | RBG/JPEG | 30/60  |
-| Video | RGB/Compressed | 30/60  |
-| 972x1080  | Image | RBG/JPEG | 30/60  |
-| Video | RGB/Compressed | 30/60  |
-| 1440x1080 | Image | RBG/JPEG | 30/60  |
-| Video | RGB/Compressed | 30/60  |
-| 1944x2160 | Image | RBG/JPEG | 30  |
-| Video | RGB/Compressed | 30  |
-| 2880x2160 | Image | RBG/JPEG | 30  |
-| Video | RGB/Compressed | 30  |
+<div>
+<table className="doxtable">
+      <tbody><tr>
+          <th>Camera </th><th>Mode </th><th>Resolution </th><th>Capture Type </th><th>Formats </th><th>FrameRate </th></tr>
+        <tr>
+          <td rowSpan={48}>Main</td><td rowSpan={24}>MR/Virtual_Only</td><td rowSpan={2}>648x720 </td><td rowSpan={1}>Image</td><td rowSpan={1}>RBG/JPEG</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={1}>Video</td><td rowSpan={1}>RGB/Compressed</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={2}>960x720 </td><td rowSpan={1}>Image</td><td rowSpan={1}>RBG/JPEG</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={1}>Video</td><td rowSpan={1}>RGB/Compressed</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={2}>972x1080 </td><td rowSpan={1}>Image</td><td rowSpan={1}>RBG/JPEG</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={1}>Video</td><td rowSpan={1}>RGB/Compressed</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={2}>1440x1080</td><td rowSpan={1}>Image</td><td rowSpan={1}>RBG/JPEG</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={1}>Video</td><td rowSpan={1}>RGB/Compressed</td><td rowSpan={1}>30/60 </td></tr>
+        <tr>
+          <td rowSpan={2}>1944x2160</td><td rowSpan={1}>Image</td><td rowSpan={1}>RBG/JPEG</td><td rowSpan={1}>30 </td></tr>
+        <tr>
+          <td rowSpan={1}>Video</td><td rowSpan={1}>RGB/Compressed</td><td rowSpan={1}>30 </td></tr>
+        <tr>
+          <td rowSpan={2}>2880x2160</td><td rowSpan={1}>Image</td><td rowSpan={1}>RBG/JPEG</td><td rowSpan={1}>30 </td></tr>
+        <tr>
+          <td rowSpan={1}>Video</td><td rowSpan={1}>RGB/Compressed</td><td rowSpan={1}>30 </td></tr>
+      </tbody>
+      </table>
+</div>
 
 
 
-Note: Quality and frame rate provided during connection should match the resolution and framerate in PrepareCapture. 
-
-Stringify the error codes returned by these APIs, call MLMediaResultGetString.
-
-Shared Object:
- perception.magicleap
-
-\experimental This is an experimental API which may be modified or removed without any prior notice.
-
-
-The API only supports reading data from the depth camera. Apps cannot start or stop the camera nor can it modify the camera settings, support for the same may be added in a future release. If the system is not actively using the depth camera then any calls to get the depth camera data will timeout.
-
-Shared Object:
- perception.magicleap
-
-This is an experimental API which may be modified or removed without any prior notice.
-
-Shared Object:
- perception.magicleap
+Shared Object:\n perception.magicleap
 
 Magic Leap 2 has three world cameras which it uses for environment tracking. The three cameras area located on the left, center, and right side of the headset. This API will provide a way to query for the frames from these world cameras, at this point the app will not be able to configure the world camera parameters.
 
@@ -289,8 +310,7 @@ Magic Leap 2 has three world cameras which it uses for environment tracking. The
 
 
 
-**Shared Object:
- camera.magicleap**
+**Shared Object:\n camera.magicleap**
   * 
 
 
@@ -578,8 +598,7 @@ Camera distortion vector size.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -859,8 +878,7 @@ The capabilities for each stream supported by logical camera device can be queri
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -949,8 +967,7 @@ Camera intrinsic parameter.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1059,8 +1076,7 @@ This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-r
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_settings.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1081,8 +1097,7 @@ Depth camera intrinsic parameters.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1103,8 +1118,7 @@ A structure to encapsulate per plane info for each camera frame.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1227,8 +1241,7 @@ This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/a
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md)
 
 
-**API Level:
- 25**
+**API Level:\n 25**
   * 
 
 
@@ -1251,8 +1264,7 @@ This structure must be initialized by calling [MLEyeCameraSettingsInit](/api-ref
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1273,8 +1285,7 @@ A structure to encapsulate per plane info for each camera frame.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1295,8 +1306,7 @@ A structure to encapsulate output data for each camera sensor.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1319,8 +1329,7 @@ This structure must be initialized by calling [MLEyeCameraDataInit](/api-ref/api
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md)
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -1343,8 +1352,7 @@ This structure must be initialized by calling [MLWorldCameraSettingsInit](/api-r
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1365,8 +1373,7 @@ World camera intrinsic parameters.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1387,8 +1394,7 @@ A structure to encapsulate per plane info for each camera frame.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1409,8 +1415,7 @@ A structure to encapsulate output data for each camera sensor.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1433,8 +1438,7 @@ This structure must be initialized by calling [MLWorldCameraDataInit](/api-ref/a
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -1470,8 +1474,7 @@ Shall be called before calling [MLCameraConnect()](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1504,8 +1507,7 @@ Shall be called before calling [MLCameraPrepareCapture()](/api-ref/api/Modules/g
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1538,8 +1540,7 @@ Shall be called before calling MLCameraSetDeviceAvailabilityStatusCallbacks().
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1572,8 +1573,7 @@ Shall be called before calling [MLCameraSetDeviceStatusCallbacks()](/api-ref/api
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1606,8 +1606,7 @@ Shall be called before calling [MLCameraSetCaptureCallbacks()](/api-ref/api/Modu
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1648,8 +1647,7 @@ Initialize ML Camera API, Register callback for device availability. If the user
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1692,8 +1690,7 @@ Connect to camera device.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1733,8 +1730,7 @@ Query the no of streams supported by camera device.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1780,8 +1776,7 @@ Retrieves either the number of capabilities supported by the given stream or an 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1819,8 +1814,7 @@ Disconnect from camera device.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1851,8 +1845,7 @@ Uninitialize ML Camera API, unregister callback for device availability. Should 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1895,8 +1888,7 @@ This API triggers AEAWB sequence and returns when AEAWB convergence has been ach
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1946,8 +1938,7 @@ Note: When preparing capture the width and height parameters should match one of
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1987,8 +1978,7 @@ This API updates the capture settings for an active preview/video stream. The AP
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2032,8 +2022,7 @@ Client needs to implement the callbacks defined by [MLCameraDeviceStatusCallback
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2080,8 +2069,7 @@ Shall be called before capture operation for preview/image/video.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2127,8 +2115,7 @@ This is a blocking call, it will return after the end of on_image_buffer_availab
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2172,8 +2159,7 @@ YUV/RGBA frames are provides through callback.For encoded video capture valid en
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2217,8 +2203,7 @@ The captured preview YUV frames will be returned to the application via on_previ
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2260,8 +2245,7 @@ User should allow some time, i.e., >500ms, after MLCameraCaptureVideoStart and b
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2301,8 +2285,7 @@ Stop preview.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2346,8 +2329,7 @@ Note: This API can still be used even if [MLCameraSetDeviceStatusCallbacks()](/a
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2391,8 +2373,7 @@ Note: This API can still be used even if availability status callback is not reg
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2432,8 +2413,7 @@ Obtain camera device error code.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2476,8 +2456,7 @@ This API provides the handle for retrieving camera characteristics via APIs defi
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2508,8 +2487,7 @@ Initialize the connect handle structure. Shall be called before calling [MLDepth
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -2535,8 +2513,7 @@ Initialize [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_de
 
 
 
-**API Level:
- 25**
+**API Level:\n 25**
   * 
 
 
@@ -2579,8 +2556,7 @@ Connect to depth camera.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -2621,8 +2597,7 @@ Update the depth camera settings.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -2672,8 +2647,7 @@ If there are no new depth data frames within the timeout_ms duration then the AP
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -2752,8 +2726,7 @@ This will disconnect from the depth camera.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -2784,8 +2757,7 @@ Initialize the camera settings structure. Shall be called before calling [MLEyeC
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -2811,8 +2783,7 @@ Initialize [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -2855,8 +2826,7 @@ Connect to eye cameras.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -2897,8 +2867,7 @@ Update the eye camera settings.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -2948,8 +2917,7 @@ If there are no new camera frames within the timeout_ms duration then the API wi
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -2992,8 +2960,7 @@ This function should be called exactly once for each call to [MLEyeCameraGetLate
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -3034,8 +3001,7 @@ This will disconnect from all the eye camera(s) currently connected.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 
@@ -3066,8 +3032,7 @@ Initialize the camera settings structure. Shall be called before calling [MLWorl
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -3093,8 +3058,7 @@ Initialize [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_wo
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -3137,8 +3101,7 @@ Connect to world cameras.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -3179,8 +3142,7 @@ Update the world camera settings.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -3230,8 +3192,7 @@ If there are no new camera frames within the timeout_ms duration then the API wi
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -3310,8 +3271,7 @@ This will disconnect from all the world camera currently connected.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 

@@ -17,19 +17,16 @@ MediaPlayer frame packing callback Info.
 
 ## Public Attributes
 
-### Mode {#framepackingmode-mode}
+### Data {#intptr-data}
 
-Frame packing more. 
+User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public FramePackingMode Mode;
+public IntPtr Data;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [FramePackingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-framepackingmode) | Frame Packing Arrangement for stereoscopic videos.  |
 
 
 
@@ -57,16 +54,19 @@ public FramePackingFlags Flags;
 
 -----------
 
-### Data {#intptr-data}
+### Mode {#framepackingmode-mode}
 
-User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
+Frame packing more. 
 
 ```csharp
 
-public IntPtr Data;
+public FramePackingMode Mode;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [FramePackingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-framepackingmode) | Frame Packing Arrangement for stereoscopic videos.  |
 
 
 

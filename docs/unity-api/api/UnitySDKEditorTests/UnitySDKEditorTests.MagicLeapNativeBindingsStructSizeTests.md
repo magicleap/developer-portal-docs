@@ -21,6 +21,28 @@ Inherited by: <br></br>[UnitySDKEditorTests.MLHeadTracking](/unity-api/api/Unity
 
 ## Protected Methods
 
+### FindTypeByName {#type-findtypebyname}
+
+```csharp
+protected Type FindTypeByName(
+    string name
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |name||
+
+
+
+
+
+
+-----------
+
 ### Log {#string-log}
 
 ```csharp
@@ -39,28 +61,6 @@ protected string Log(
 | string |structName||
 | ulong |capiSize||
 | int |sdkSize||
-
-
-
-
-
-
------------
-
-### FindTypeByName {#type-findtypebyname}
-
-```csharp
-protected Type FindTypeByName(
-    string name
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |name||
 
 
 

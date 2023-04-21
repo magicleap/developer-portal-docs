@@ -283,8 +283,7 @@ The type of mic input to capture.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -416,8 +415,7 @@ Return values for Audio Service API calls.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -441,8 +439,7 @@ Properties specifying a broadband level and three sub-band levels.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -457,15 +454,14 @@ typedef struct MLAudioDispersionProperties MLAudioDispersionProperties;
 ```
 
 
-riefProperties specifying acoustic dispersion (clustered reflections).
+\briefProperties specifying acoustic dispersion (clustered reflections).
 
 
 
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -486,8 +482,7 @@ Properties specifying acoustic reverberation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -542,8 +537,7 @@ Two points in space describing a ray.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -564,8 +558,7 @@ Obstruction along a ray.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -586,8 +579,7 @@ ID-tracked request for a single raycast operation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -608,8 +600,7 @@ ID-tracked result for a single raycast operation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -630,8 +621,7 @@ Buffer format settings for input and output streams.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/struct_m_l_audio_buffer_format.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1069,8 +1059,7 @@ This call tells the owner of a loaded resource what size memory footprint is use
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -1404,8 +1393,7 @@ Creates a sound output and allocates a double-buffer for buffering audio data in
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -1723,8 +1711,7 @@ Events that can result in a callback being called include: Stopping at the end o
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1771,8 +1758,7 @@ Events that can result in a callback being called include: Pressing a play butto
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2105,8 +2091,7 @@ This mute control is entirely under the control of the owner of the sound output
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2151,8 +2136,7 @@ Setting this option on a sound output causes its output to bypass master volume,
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2198,8 +2182,7 @@ This call reports whether a sound output is bypassing master volume, making it e
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2281,8 +2264,7 @@ Returns whether a sound output is looping or not.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2446,8 +2428,7 @@ The callback will be called whenever the output device changes. The current outp
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -2481,8 +2462,7 @@ Removes all Acoustic Elements and restores default scene. Resets any modificatio
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2515,8 +2495,7 @@ The multi-update parameters include global Acoustic Scene params and Acoustic El
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2550,8 +2529,7 @@ The multi-update parameters include global Acoustic Scene params and Acoustic El
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2591,8 +2569,7 @@ Acoustic Map data is a device-curated representation of the acoustics of the loc
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2631,8 +2608,7 @@ Indicates whether Acoustic Map data is enabled for the Acoustic Scene.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2673,8 +2649,7 @@ Transmission is specified using [MLAudioMultibandLevel](/api-ref/api/Modules/gro
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2715,8 +2690,7 @@ Transmission is specified using [MLAudioMultibandLevel](/api-ref/api/Modules/gro
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2757,8 +2731,7 @@ Dispersion properties are specified using [MLAudioDispersionProperties](/api-ref
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2799,8 +2772,7 @@ Dispersion properties are specified using [MLAudioDispersionProperties](/api-ref
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2841,8 +2813,7 @@ Reverb properties are specified using [MLAudioReverbProperties](/api-ref/api/Mod
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2883,8 +2854,7 @@ Reverb properties are specified using [MLAudioReverbProperties](/api-ref/api/Mod
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -2935,8 +2905,7 @@ Caller is responsible for deallocating the memory used by out_partner_crossfeed_
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3230,8 +3199,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3273,8 +3241,7 @@ Indicates whether the sound automatically faces the listener.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3329,8 +3296,7 @@ This API property is not intended to be user-specified, but rather set as part o
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3385,8 +3351,7 @@ This API property is not intended to be user-specified, but rather set as part o
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3433,8 +3398,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3481,8 +3445,7 @@ Obstruction override is returned as a MultibandLevel, with 0 representing no cha
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3530,8 +3493,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3579,8 +3541,7 @@ Multi-channel sounds require the distance properties to be read individually for
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3628,8 +3589,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3677,8 +3637,7 @@ Multi-channel sounds require the radiation properties to be read individually fo
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3726,8 +3685,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3775,8 +3733,7 @@ Multi-channel sounds require the direct sound level to be read individually for 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3824,8 +3781,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3873,8 +3829,7 @@ Multi-channel sounds require the indirect sound level to be read individually fo
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3922,8 +3877,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -3971,8 +3925,7 @@ Multi-channel sounds require the dispersion level to be read individually for ea
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4020,8 +3973,7 @@ When 3D audio processing is enabled for a sound output (see MLAudioSetSpatialSou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4069,8 +4021,7 @@ Multi-channel sounds require the reverb level to be read individually for each c
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4115,8 +4066,7 @@ This call can be used to make the coordinate system of the specified sound be he
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -4162,8 +4112,7 @@ This call can be used to determine if the coordinate system of the specified sou
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4213,8 +4162,7 @@ Returns a list of ID-tracked requests for raycast operations.
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4261,8 +4209,7 @@ This function is not intended to be called directly by developers.
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4314,8 +4261,7 @@ Returns the preferred (i.e. best performing) settings for buffered output.
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -4361,8 +4307,7 @@ This function returns the latency between the time a buffer is enqueued via MLAu
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -4407,8 +4352,7 @@ This function returns the number of frames that have been sent down to the audio
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -4455,8 +4399,7 @@ This function returns an output buffer when one of the output buffers is empty a
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -4501,8 +4444,7 @@ After receiving an empty buffer from MLAudioGetOutputBuffer and writing audio da
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -4620,8 +4562,7 @@ Queries the current status of the output mute.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4665,8 +4606,7 @@ The callback will be called whenever the output mute changes (even if changed by
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4727,8 +4667,7 @@ Creates a sound input and allocates a double-buffer for streaming audio data fro
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -4787,8 +4726,7 @@ Creates a sound input and allocates a double-buffer for streaming audio data fro
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -4847,8 +4785,7 @@ Creates a sound input and allocates a double-buffer for streaming audio data fro
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -5046,8 +4983,7 @@ Returns the preferred (i.e. best performing) settings for buffered input.
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -5093,8 +5029,7 @@ This function returns the latency between the time a sound occurs in the real wo
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -5142,8 +5077,7 @@ This function returns a buffer when one of the input buffers is full and needs t
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -5188,8 +5122,7 @@ After receiving a full buffer from MLAudioGetInputBuffer and reading the audio d
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -5269,8 +5202,7 @@ Returns whether all microphone capture is muted or not.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5357,8 +5289,7 @@ Creates a trait analysis, initializes its connection to the device microphones a
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5400,8 +5331,7 @@ Returns the current value of the trait analysis associated with the specified ha
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5442,8 +5372,7 @@ Stops the analysis associated with the specified handle.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5490,8 +5419,7 @@ Creates a spectral analysis, initializes its connection to the device microphone
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5535,8 +5463,7 @@ Allocates memory at out_values->values based on the MLAudioSpectralAnalysisTarge
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -5577,8 +5504,7 @@ Stops the analysis associated with the specified handle.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

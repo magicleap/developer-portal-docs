@@ -35,8 +35,7 @@ A structure containing information about the current state of this controller.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 

@@ -1,0 +1,47 @@
+---
+title: MLPlanesTests
+
+---
+
+# MLPlanesTests
+
+
+
+**NameSpace:** 
+[UnitySDKPlayTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.md) 
+
+
+
+
+
+
+
+
+## Public Methods
+
+### void Planes_RequestPermission {#void-planes-requestpermission}
+
+```csharp
+public void Planes_RequestPermission()
+```
+
+
+
+
+
+
+-----------
+
+### void Planes_UpdateQuery {#void-planes-updatequery}
+
+```csharp
+public void Planes_UpdateQuery()
+```
+
+
+
+
+
+
+-----------
+

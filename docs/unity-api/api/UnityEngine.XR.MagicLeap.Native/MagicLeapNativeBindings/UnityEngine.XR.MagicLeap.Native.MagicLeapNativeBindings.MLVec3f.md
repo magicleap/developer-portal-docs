@@ -32,13 +32,13 @@ public Vector3 ToVector3()
 
 ## Public Attributes
 
-### Z {#float-z}
+### X {#float-x}
 
-Z coordinate. 
+X coordinate. 
 
 ```csharp
 
-public float Z;
+public float X;
 
 ```
 
@@ -66,13 +66,13 @@ public float Y;
 
 -----------
 
-### X {#float-x}
+### Z {#float-z}
 
-X coordinate. 
+Z coordinate. 
 
 ```csharp
 
-public float X;
+public float Z;
 
 ```
 

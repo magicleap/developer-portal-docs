@@ -33,8 +33,7 @@ A structure containing information about the Space export settings. This structu
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

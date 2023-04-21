@@ -18,19 +18,6 @@ Inherits from: <br></br>IEquatable< MLPlaneBoundary >
 
 ## Public Methods
 
-### override int GetHashCode {#override-int-gethashcode}
-
-```csharp
-public override int GetHashCode()
-```
-
-
-
-
-
-
------------
-
 ### bool Equals {#bool-equals}
 
 ```csharp
@@ -45,6 +32,19 @@ public bool Equals(
 | Type | Name  | Description  | 
 |--|--|--|
 | MLPlaneBoundary |other||
+
+
+
+
+
+
+-----------
+
+### override int GetHashCode {#override-int-gethashcode}
+
+```csharp
+public override int GetHashCode()
+```
 
 
 

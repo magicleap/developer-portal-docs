@@ -17,19 +17,19 @@ Axis aligned bounding box for querying updated mesh info.
 
 ## Public Attributes
 
-### rotation {#magicleapnativebindingsmlquaternionf-rotation}
+### center {#magicleapnativebindingsmlvec3f-center}
 
-The rotation of the bounding box. 
+The center of the bounding box. 
 
 ```csharp
 
-public MagicLeapNativeBindings.MLQuaternionf rotation;
+public MagicLeapNativeBindings.MLVec3f center;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MagicLeapNativeBindings.MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) | Quaternion in native format.  |
+| [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) | 3D vector in native format.  |
 
 
 
@@ -57,19 +57,19 @@ public MagicLeapNativeBindings.MLVec3f extents;
 
 -----------
 
-### center {#magicleapnativebindingsmlvec3f-center}
+### rotation {#magicleapnativebindingsmlquaternionf-rotation}
 
-The center of the bounding box. 
+The rotation of the bounding box. 
 
 ```csharp
 
-public MagicLeapNativeBindings.MLVec3f center;
+public MagicLeapNativeBindings.MLQuaternionf rotation;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) | 3D vector in native format.  |
+| [MagicLeapNativeBindings.MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) | Quaternion in native format.  |
 
 
 

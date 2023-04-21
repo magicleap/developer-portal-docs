@@ -32,8 +32,7 @@ MediaPlayer Playback prepared callback Info.
 
 
 
-**API Level:
- 2**
+**API Level:\n 2**
   * 
 
 

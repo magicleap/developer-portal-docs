@@ -36,45 +36,6 @@ protected static MLAudioPlayback Instance { get; set; }
 
 ## Public Methods
 
-### void SubmitBuffer {#void-submitbuffer}
-
-Submit unity audio buffers to the playback plugin so that it gets submitted to MLAudio apis. 
-
-```csharp
-public static void SubmitBuffer(
-    float [] data,
-    int channels
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| float [] |data|Audio buffer|
-| int |channels|Number of channels in the buffer|
-
-
-
-
-
-
------------
-
-### void DestroyAudioBuffer {#void-destroyaudiobuffer}
-
-```csharp
-public static void DestroyAudioBuffer()
-```
-
-
-
-
-
-
------------
-
 ### void CreateAudioBuffer {#void-createaudiobuffer}
 
 Creates the audio buffer with the default cache size. Needs to be called from the main thread. 
@@ -106,6 +67,45 @@ public static void CreateAudioBuffer(
 | Type | Name  | Description  | 
 |--|--|--|
 | uint |cacheDurationInSeconds||
+
+
+
+
+
+
+-----------
+
+### void DestroyAudioBuffer {#void-destroyaudiobuffer}
+
+```csharp
+public static void DestroyAudioBuffer()
+```
+
+
+
+
+
+
+-----------
+
+### void SubmitBuffer {#void-submitbuffer}
+
+Submit unity audio buffers to the playback plugin so that it gets submitted to MLAudio apis. 
+
+```csharp
+public static void SubmitBuffer(
+    float [] data,
+    int channels
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| float [] |data|Audio buffer|
+| int |channels|Number of channels in the buffer|
 
 
 

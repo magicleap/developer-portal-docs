@@ -36,13 +36,22 @@ public MLAPIBase()
 
 ## Protected Methods
 
-### Update {#void-update}
+### OnApplicationFocus {#void-onapplicationfocus}
 
-Update function that will run once per Unity frame. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application focus event. 
 
 ```csharp
-protected virtual void Update()
+protected virtual void OnApplicationFocus(
+    bool hasFocus
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |hasFocus|True if the application has focus, else False. |
 
 
 
@@ -71,28 +80,19 @@ protected virtual void OnApplicationPause(
 
 
 
-**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-void-onapplicationpause)
+**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-void-onapplicationpause)
 
 
 
 -----------
 
-### OnApplicationFocus {#void-onapplicationfocus}
+### Update {#void-update}
 
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application focus event. 
+Update function that will run once per Unity frame. 
 
 ```csharp
-protected virtual void OnApplicationFocus(
-    bool hasFocus
-)
+protected virtual void Update()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |hasFocus|True if the application has focus, else False. |
 
 
 
@@ -103,13 +103,13 @@ protected virtual void OnApplicationFocus(
 
 ## Protected Attributes
 
-### Handle {#ulong-handle}
+### APILock {#readonly-object-apilock}
 
-The native handle ID for this API instance. Will be invalid until the API is started. 
+Lock used to keep api calls synchronous. 
 
 ```csharp
 
-protected ulong Handle = Native.MagicLeapNativeBindings.InvalidHandle;
+protected readonly object APILock = new object();
 
 ```
 
@@ -120,13 +120,13 @@ protected ulong Handle = Native.MagicLeapNativeBindings.InvalidHandle;
 
 -----------
 
-### APILock {#readonly-object-apilock}
+### Handle {#ulong-handle}
 
-Lock used to keep api calls synchronous. 
+The native handle ID for this API instance. Will be invalid until the API is started. 
 
 ```csharp
 
-protected readonly object APILock = new object();
+protected ulong Handle = Native.MagicLeapNativeBindings.InvalidHandle;
 
 ```
 

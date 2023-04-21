@@ -18,15 +18,13 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackType {#mlresultcode-mlmediaplayergettracktype}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) FreeUnmanagedMemory {#mlresultcode-freeunmanagedmemory}
 
-Get the type of a track. 
+Get the Media Format of a track. 
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetTrackType(
-    ulong mediaPlayerHandle,
-    uint trackIndex,
-    out Type trackType
+public MLResult.Code FreeUnmanagedMemory(
+    IntPtr mediaStringPtr
 )
 ```
 
@@ -35,9 +33,7 @@ public MLResult.Code MLMediaPlayerGetTrackType(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |mediaPlayerHandle||
-| uint |trackIndex||
-| out [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) |trackType|Media player track types. |
+| IntPtr |mediaStringPtr||
 
 
 
@@ -46,15 +42,12 @@ public MLResult.Code MLMediaPlayerGetTrackType(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackMediaFormat {#mlresultcode-mlmediaplayergettrackmediaformat}
-
-Get the Media Format of a track. 
+### string GetTrackLanguage {#string-gettracklanguage}
 
 ```csharp
-public MLResult.Code MLMediaPlayerGetTrackMediaFormat(
+public static string GetTrackLanguage(
     ulong mediaPlayerHandle,
-    uint trackIndex,
-    out ulong formatHandle
+    uint trackIndex
 )
 ```
 
@@ -65,7 +58,6 @@ public MLResult.Code MLMediaPlayerGetTrackMediaFormat(
 |--|--|--|
 | ulong |mediaPlayerHandle||
 | uint |trackIndex||
-| out ulong |formatHandle||
 
 
 
@@ -102,12 +94,15 @@ public MLResult.Code MLMediaPlayerGetTrackLanguage(
 
 -----------
 
-### string GetTrackLanguage {#string-gettracklanguage}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackMediaFormat {#mlresultcode-mlmediaplayergettrackmediaformat}
+
+Get the Media Format of a track. 
 
 ```csharp
-public static string GetTrackLanguage(
+public MLResult.Code MLMediaPlayerGetTrackMediaFormat(
     ulong mediaPlayerHandle,
-    uint trackIndex
+    uint trackIndex,
+    out ulong formatHandle
 )
 ```
 
@@ -118,6 +113,7 @@ public static string GetTrackLanguage(
 |--|--|--|
 | ulong |mediaPlayerHandle||
 | uint |trackIndex||
+| out ulong |formatHandle||
 
 
 
@@ -126,13 +122,15 @@ public static string GetTrackLanguage(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) FreeUnmanagedMemory {#mlresultcode-freeunmanagedmemory}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackType {#mlresultcode-mlmediaplayergettracktype}
 
-Get the Media Format of a track. 
+Get the type of a track. 
 
 ```csharp
-public MLResult.Code FreeUnmanagedMemory(
-    IntPtr mediaStringPtr
+public MLResult.Code MLMediaPlayerGetTrackType(
+    ulong mediaPlayerHandle,
+    uint trackIndex,
+    out Type trackType
 )
 ```
 
@@ -141,7 +139,9 @@ public MLResult.Code FreeUnmanagedMemory(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| IntPtr |mediaStringPtr||
+| ulong |mediaPlayerHandle||
+| uint |trackIndex||
+| out [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) |trackType|Media player track types. |
 
 
 

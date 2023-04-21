@@ -51,30 +51,13 @@ public static MLWebRTCAppDefinedSourceEventCallbacks Create(
 
 ## Public Attributes
 
-### Version {#uint-version}
+### Context {#intptr-context}
 
 Version of the struct. 
 
 ```csharp
 
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### OnSetEnabled {#onsetenableddelegate-onsetenabled}
-
-OnSetEnabled event. 
-
-```csharp
-
-public OnSetEnabledDelegate OnSetEnabled;
+public IntPtr Context;
 
 ```
 
@@ -102,13 +85,30 @@ public OnDestroyedDelegate OnDestroyed;
 
 -----------
 
-### Context {#intptr-context}
+### OnSetEnabled {#onsetenableddelegate-onsetenabled}
+
+OnSetEnabled event. 
+
+```csharp
+
+public OnSetEnabledDelegate OnSetEnabled;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
 
 Version of the struct. 
 
 ```csharp
 
-public IntPtr Context;
+public uint Version;
 
 ```
 

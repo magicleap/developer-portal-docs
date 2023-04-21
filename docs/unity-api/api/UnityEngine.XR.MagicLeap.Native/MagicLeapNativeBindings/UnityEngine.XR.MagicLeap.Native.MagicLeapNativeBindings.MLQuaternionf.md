@@ -38,30 +38,13 @@ public static MLQuaternionf Identity()
 
 ## Public Attributes
 
-### Z {#float-z}
+### W {#float-w}
 
-Z coordinate. 
-
-```csharp
-
-public float Z;
-
-```
-
-
-
-
-
-
------------
-
-### Y {#float-y}
-
-Y coordinate. 
+W coordinate. 
 
 ```csharp
 
-public float Y;
+public float W;
 
 ```
 
@@ -89,13 +72,30 @@ public float X;
 
 -----------
 
-### W {#float-w}
+### Y {#float-y}
 
-W coordinate. 
+Y coordinate. 
 
 ```csharp
 
-public float W;
+public float Y;
+
+```
+
+
+
+
+
+
+-----------
+
+### Z {#float-z}
+
+Z coordinate. 
+
+```csharp
+
+public float Z;
 
 ```
 

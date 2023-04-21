@@ -82,8 +82,7 @@ Two points in space describing a ray.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -104,8 +103,7 @@ Obstruction along a ray.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -126,8 +124,7 @@ ID-tracked request for a single raycast operation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_request.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -148,8 +145,7 @@ ID-tracked result for a single raycast operation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast_result.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

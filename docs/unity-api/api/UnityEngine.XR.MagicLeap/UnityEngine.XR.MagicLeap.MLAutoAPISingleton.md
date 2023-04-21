@@ -60,123 +60,18 @@ public static bool IsStarted { get; set; }
 
 ## Protected Methods
 
-### Update {#void-update}
+### Initialize {#sealed-override-void-initialize}
 
-Update function that will run once per Unity frame. 
+This is the only way to initialize this class. 
 
 ```csharp
-protected virtual void Update()
+protected virtual sealed override void Initialize()
 ```
 
 
 
 
-**Reimplemented by**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-void-update)
-
-
-
------------
-
-### StopAPI {#abstract-stopapi}
-
-API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
-
-```csharp
-protected virtual abstract MLResult.Code StopAPI()
-```
-
-
-
-
-**Reimplemented by**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-stopapi)
-
-
-
------------
-
-### StartAPI {#abstract-startapi}
-
-Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 
-
-```csharp
-protected virtual abstract MLResult.Code StartAPI()
-```
-
-
-
-
-**Reimplemented by**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-startapi)
-
-
-
------------
-
-### OnDeviceStandby {#void-ondevicestandby}
-
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters standby mode. 
-
-```csharp
-protected virtual void OnDeviceStandby()
-```
-
-
-
-
-
-
------------
-
-### OnDeviceReality {#void-ondevicereality}
-
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters reality mode. 
-
-```csharp
-protected virtual void OnDeviceReality()
-```
-
-
-
-
-
-
------------
-
-### OnDeviceActive {#void-ondeviceactive}
-
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters active mode. 
-
-```csharp
-protected virtual void OnDeviceActive()
-```
-
-
-
-
-
-
------------
-
-### OnApplicationPause {#void-onapplicationpause}
-
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
-
-```csharp
-protected virtual void OnApplicationPause(
-    bool pauseStatus
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |pauseStatus|True if the application is paused, else False. |
-
-
-
-
-**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-void-onapplicationpause)
+**Reimplements**: [Initialize](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md#void-initialize)
 
 
 
@@ -206,18 +101,123 @@ protected virtual void OnApplicationFocus(
 
 -----------
 
-### Initialize {#sealed-override-void-initialize}
+### OnApplicationPause {#void-onapplicationpause}
 
-This is the only way to initialize this class. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
-protected virtual sealed override void Initialize()
+protected virtual void OnApplicationPause(
+    bool pauseStatus
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |pauseStatus|True if the application is paused, else False. |
+
+
+
+
+**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-void-onapplicationpause)
+
+
+
+-----------
+
+### OnDeviceActive {#void-ondeviceactive}
+
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters active mode. 
+
+```csharp
+protected virtual void OnDeviceActive()
 ```
 
 
 
 
-**Reimplements**: [Initialize](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md#void-initialize)
+
+
+-----------
+
+### OnDeviceReality {#void-ondevicereality}
+
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters reality mode. 
+
+```csharp
+protected virtual void OnDeviceReality()
+```
+
+
+
+
+
+
+-----------
+
+### OnDeviceStandby {#void-ondevicestandby}
+
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters standby mode. 
+
+```csharp
+protected virtual void OnDeviceStandby()
+```
+
+
+
+
+
+
+-----------
+
+### StartAPI {#abstract-startapi}
+
+Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 
+
+```csharp
+protected virtual abstract MLResult.Code StartAPI()
+```
+
+
+
+
+**Reimplemented by**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-startapi)
+
+
+
+-----------
+
+### StopAPI {#abstract-stopapi}
+
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+
+```csharp
+protected virtual abstract MLResult.Code StopAPI()
+```
+
+
+
+
+**Reimplemented by**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-stopapi)
+
+
+
+-----------
+
+### Update {#void-update}
+
+Update function that will run once per Unity frame. 
+
+```csharp
+protected virtual void Update()
+```
+
+
+
+
+**Reimplemented by**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-void-update)
 
 
 
@@ -225,13 +225,13 @@ protected virtual sealed override void Initialize()
 
 ## Protected Attributes
 
-### Handle {#ulong-handle}
+### APILock {#readonly-object-apilock}
 
-The native handle ID for this API instance. Will be invalid until the API is started. 
+Lock used to keep api calls synchronous. 
 
 ```csharp
 
-protected ulong Handle = Native.MagicLeapNativeBindings.InvalidHandle;
+protected readonly object APILock = new object();
 
 ```
 
@@ -257,13 +257,13 @@ protected readonly string DllNotFoundError = $"Failed to start {typeof(T).Name} 
 
 -----------
 
-### APILock {#readonly-object-apilock}
+### Handle {#ulong-handle}
 
-Lock used to keep api calls synchronous. 
+The native handle ID for this API instance. Will be invalid until the API is started. 
 
 ```csharp
 
-protected readonly object APILock = new object();
+protected ulong Handle = Native.MagicLeapNativeBindings.InvalidHandle;
 
 ```
 

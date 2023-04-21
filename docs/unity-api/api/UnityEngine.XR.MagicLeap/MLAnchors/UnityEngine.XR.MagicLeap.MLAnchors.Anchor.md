@@ -16,172 +16,6 @@ title: Anchor
 
 ## Public Methods
 
-### bool operator== {#bool-operator}
-
-```csharp
-public static bool operator==(
-    Anchor one,
-    Anchor two
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |one||
-| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |two||
-
-
-
-
-
-
------------
-
-### bool operator!= {#bool-operator}
-
-```csharp
-public static bool operator!=(
-    Anchor one,
-    Anchor two
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |one||
-| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |two||
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Update {#mlresult-update}
-
-```csharp
-public MLResult Update(
-    long newExpirationTimeStamp
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| long |newExpirationTimeStamp||
-
-
-
-
-
-
------------
-
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Publish {#mlresult-publish}
-
-```csharp
-public MLResult Publish()
-```
-
-
-
-
-
-
------------
-
-### override int GetHashCode {#override-int-gethashcode}
-
-```csharp
-public override int GetHashCode()
-```
-
-
-
-
-
-
------------
-
-### override bool Equals {#override-bool-equals}
-
-```csharp
-public override bool Equals(
-    object obj
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| object |obj||
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) DeleteAnchorWithId {#mlresult-deleteanchorwithid}
-
-```csharp
-public static MLResult DeleteAnchorWithId(
-    string anchorId
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| string |anchorId||
-
-
-
-
-
-
------------
-
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Delete {#mlresult-delete}
-
-```csharp
-public MLResult Delete()
-```
-
-
-
-
-
-
------------
-
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Create {#mlresult-create}
 
 Creates a new anchor based on a given pose that can expire after a predefined amount of time. The anchor is only valid when [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) is returned. 
@@ -214,49 +48,181 @@ public static MLResult Create(
 
 -----------
 
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Delete {#mlresult-delete}
+
+```csharp
+public MLResult Delete()
+```
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) DeleteAnchorWithId {#mlresult-deleteanchorwithid}
+
+```csharp
+public static MLResult DeleteAnchorWithId(
+    string anchorId
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |anchorId||
+
+
+
+
+
+
+-----------
+
+### override bool Equals {#override-bool-equals}
+
+```csharp
+public override bool Equals(
+    object obj
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| object |obj||
+
+
+
+
+
+
+-----------
+
+### override int GetHashCode {#override-int-gethashcode}
+
+```csharp
+public override int GetHashCode()
+```
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Publish {#mlresult-publish}
+
+```csharp
+public MLResult Publish()
+```
+
+
+
+
+
+
+-----------
+
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Update {#mlresult-update}
+
+```csharp
+public MLResult Update(
+    long newExpirationTimeStamp
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| long |newExpirationTimeStamp||
+
+
+
+
+
+
+-----------
+
+### bool operator!= {#bool-operator}
+
+```csharp
+public static bool operator!=(
+    Anchor one,
+    Anchor two
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |one||
+| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |two||
+
+
+
+
+
+
+-----------
+
+### bool operator== {#bool-operator}
+
+```csharp
+public static bool operator==(
+    Anchor one,
+    Anchor two
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |one||
+| [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) |two||
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### SpaceId {#string-spaceid}
+### ExpirationTimeStamp {#readonly-ulong-expirationtimestamp}
 
-The ID of the space that this anchor belongs to. This is only relevant if IsPersisted is true. 
-
-```csharp
-
-public string SpaceId => this.spaceId.ToString();
-
-```
-
-
-
-
-
-
------------
-
-### Pose {#readonly-pose-pose}
-
-Pose. 
+The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. 
 
 ```csharp
 
-public readonly Pose Pose;
-
-```
-
-
-
-
-
-
------------
-
-### IsPersisted {#readonly-bool-ispersisted}
-
-Indicates whether or not the anchor has been persisted via a call to #MLSpatialAnchorPublish. 
-
-```csharp
-
-public readonly bool IsPersisted;
+public readonly ulong ExpirationTimeStamp;
 
 ```
 
@@ -284,13 +250,47 @@ public string Id => this.id.ToString();
 
 -----------
 
-### ExpirationTimeStamp {#readonly-ulong-expirationtimestamp}
+### IsPersisted {#readonly-bool-ispersisted}
 
-The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. 
+Indicates whether or not the anchor has been persisted via a call to #MLSpatialAnchorPublish. 
 
 ```csharp
 
-public readonly ulong ExpirationTimeStamp;
+public readonly bool IsPersisted;
+
+```
+
+
+
+
+
+
+-----------
+
+### Pose {#readonly-pose-pose}
+
+Pose. 
+
+```csharp
+
+public readonly Pose Pose;
+
+```
+
+
+
+
+
+
+-----------
+
+### SpaceId {#string-spaceid}
+
+The ID of the space that this anchor belongs to. This is only relevant if IsPersisted is true. 
+
+```csharp
+
+public string SpaceId => this.spaceId.ToString();
 
 ```
 

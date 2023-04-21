@@ -40,16 +40,15 @@ public delegate MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest [] OnMesh
 
 ## Public Enums
 
-### MeshState {#enums-meshstate}
+### LevelOfDetail {#enums-levelofdetail}
 
-State of a block mesh. 
+Level of detail of the block mesh. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| New | | Mesh has been created.   |
-| Updated | | Mesh has been updated.   |
-| Deleted | | Mesh has been deleted.   |
-| Unchanged | | Mesh is unchanged.   |
+| Minimum | | Minimum Level of Detail (LOD) for the mesh.   |
+| Medium | | Medium Level of Detail (LOD) for the mesh.   |
+| Maximum | | Maximum Level of Detail (LOD) for the mesh.   |
 
 
 
@@ -60,15 +59,16 @@ State of a block mesh.
 
 -----------
 
-### LevelOfDetail {#enums-levelofdetail}
+### MeshState {#enums-meshstate}
 
-Level of detail of the block mesh. 
+State of a block mesh. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Minimum | | Minimum Level of Detail (LOD) for the mesh.   |
-| Medium | | Medium Level of Detail (LOD) for the mesh.   |
-| Maximum | | Maximum Level of Detail (LOD) for the mesh.   |
+| New | | Mesh has been created.   |
+| Updated | | Mesh has been updated.   |
+| Deleted | | Mesh has been deleted.   |
+| Unchanged | | Mesh is unchanged.   |
 
 
 

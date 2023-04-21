@@ -75,8 +75,7 @@ namespace UnityEngine.XR.MagicLeap
 
             public override string ToString()
             {
-                return $"Type: {Type}, Host: {HostAddress}:{HostPort}, Auth: {Username}:{Password},
-AutoDetect: {AutoDetect}, AutoConfigUrl: {AutoConfigUrl}, BypassList: {BypassList}";
+                return $"Type: {Type}, Host: {HostAddress}:{HostPort}, Auth: {Username}:{Password},\nAutoDetect: {AutoDetect}, AutoConfigUrl: {AutoConfigUrl}, BypassList: {BypassList}";
             }
         }
     }

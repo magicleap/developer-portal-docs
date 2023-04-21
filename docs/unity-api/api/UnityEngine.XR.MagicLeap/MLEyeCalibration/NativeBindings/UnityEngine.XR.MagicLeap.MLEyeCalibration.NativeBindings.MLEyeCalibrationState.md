@@ -31,11 +31,11 @@ public static MLEyeCalibrationState Create()
 
 ## Public Attributes
 
-### Version {#uint-version}
+### EpochTimestampUs {#long-epochtimestampus}
 
 ```csharp
 
-public uint Version;
+public long EpochTimestampUs;
 
 ```
 
@@ -64,11 +64,11 @@ public Status EyeCalibration;
 
 -----------
 
-### EpochTimestampUs {#long-epochtimestampus}
+### Version {#uint-version}
 
 ```csharp
 
-public long EpochTimestampUs;
+public uint Version;
 
 ```
 

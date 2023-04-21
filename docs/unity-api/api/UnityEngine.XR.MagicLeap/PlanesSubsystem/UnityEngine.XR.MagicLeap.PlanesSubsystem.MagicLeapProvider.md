@@ -35,10 +35,10 @@ public override PlaneDetectionMode requestedPlaneDetectionMode { get; set; }
 
 ## Public Methods
 
-### override void Stop {#override-void-stop}
+### override void Destroy {#override-void-destroy}
 
 ```csharp
-public override void Stop()
+public override void Destroy()
 ```
 
 
@@ -48,38 +48,11 @@ public override void Stop()
 
 -----------
 
-### override void Start {#override-void-start}
+### unsafe [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) GetAllBoundariesForPlane {#unsafe-getallboundariesforplane}
 
 ```csharp
-public override void Start()
-```
-
-
-
-
-
-
------------
-
-###  MagicLeapProvider {#functions-magicleapprovider}
-
-```csharp
-public MagicLeapProvider()
-```
-
-
-
-
-
-
------------
-
-### unsafe override TrackableChanges&lt; BoundedPlane &gt; GetChanges {#unsafe-override-trackablechanges-boundedplane-getchanges}
-
-```csharp
-public unsafe override TrackableChanges< BoundedPlane > GetChanges(
-    BoundedPlane defaultPlane,
-    Allocator allocator
+public unsafe PlaneBoundaryCollection GetAllBoundariesForPlane(
+    in TrackableId trackableId
 )
 ```
 
@@ -88,8 +61,7 @@ public unsafe override TrackableChanges< BoundedPlane > GetChanges(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| BoundedPlane |defaultPlane||
-| Allocator |allocator||
+| in TrackableId |trackableId||
 
 
 
@@ -124,11 +96,12 @@ public unsafe override void GetBoundary(
 
 -----------
 
-### unsafe [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) GetAllBoundariesForPlane {#unsafe-getallboundariesforplane}
+### unsafe override TrackableChanges&lt; BoundedPlane &gt; GetChanges {#unsafe-override-trackablechanges-boundedplane-getchanges}
 
 ```csharp
-public unsafe PlaneBoundaryCollection GetAllBoundariesForPlane(
-    in TrackableId trackableId
+public unsafe override TrackableChanges< BoundedPlane > GetChanges(
+    BoundedPlane defaultPlane,
+    Allocator allocator
 )
 ```
 
@@ -137,7 +110,8 @@ public unsafe PlaneBoundaryCollection GetAllBoundariesForPlane(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in TrackableId |trackableId||
+| BoundedPlane |defaultPlane||
+| Allocator |allocator||
 
 
 
@@ -146,10 +120,36 @@ public unsafe PlaneBoundaryCollection GetAllBoundariesForPlane(
 
 -----------
 
-### override void Destroy {#override-void-destroy}
+###  MagicLeapProvider {#functions-magicleapprovider}
 
 ```csharp
-public override void Destroy()
+public MagicLeapProvider()
+```
+
+
+
+
+
+
+-----------
+
+### override void Start {#override-void-start}
+
+```csharp
+public override void Start()
+```
+
+
+
+
+
+
+-----------
+
+### override void Stop {#override-void-stop}
+
+```csharp
+public override void Stop()
 ```
 
 

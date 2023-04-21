@@ -73,6 +73,8 @@ namespace UnityEngine.XR.MagicLeap
 
         protected MLCamera.CaptureConfig cameraCaptureConfig;
 
+        private bool wasCapturingVideo = false;
+
         private Texture2D PreviewTexture2D
         {
             get => isCapturingPreview ? previewTexture2D : null;

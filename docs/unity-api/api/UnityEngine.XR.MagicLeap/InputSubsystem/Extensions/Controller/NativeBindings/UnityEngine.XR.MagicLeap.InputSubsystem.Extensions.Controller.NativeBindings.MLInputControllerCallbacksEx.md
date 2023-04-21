@@ -34,132 +34,13 @@ public static MLInputControllerCallbacksEx Create()
 
 ## Public Attributes
 
-### Version {#uint-version}
+### OnButtonClick {#onbuttonclickdelegate-onbuttonclick}
 
-Version of this structure. 
-
-```csharp
-
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### OnTrigger {#ontriggerdelegate-ontrigger}
-
-This callback will be invoked whenever a controller trigger state is changed. 
+This callback will be invoked whenever a controller button is pressed and released within a short duration. 
 
 ```csharp
 
-public OnTriggerDelegate OnTrigger;
-
-```
-
-
-
-
-
-
------------
-
-### OnTouchpadGestureEnd {#ontouchpadgestureenddelegate-ontouchpadgestureend}
-
-This callback will be invoked whenever a continuous touch gesture ends. This callback will be called only for continuous gestures. 
-
-```csharp
-
-public OnTouchpadGestureEndDelegate OnTouchpadGestureEnd;
-
-```
-
-
-
-
-
-
------------
-
-### OnTouchpadGestureContinue {#ontouchpadgesturecontinuedelegate-ontouchpadgesturecontinue}
-
-This callback will be invoked whenever a continuation of a touch gesture is detected. This callback will be called only for continuous gestures. 
-
-```csharp
-
-public OnTouchpadGestureContinueDelegate OnTouchpadGestureContinue;
-
-```
-
-
-
-
-
-
------------
-
-### OnTouchpadGesture {#ontouchpadgesturedelegate-ontouchpadgesture}
-
-This callback will be invoked whenever a touch gesture is detected. This callback will be called for both discrete and continuous gestures. 
-
-```csharp
-
-public OnTouchpadGestureDelegate OnTouchpadGesture;
-
-```
-
-
-
-
-
-
------------
-
-### OnDisconnect {#ondisconnectdelegate-ondisconnect}
-
-This callback will be invoked whenever a controller is disconnected. 
-
-```csharp
-
-public OnDisconnectDelegate OnDisconnect;
-
-```
-
-
-
-
-
-
------------
-
-### OnConnect {#onconnectdelegate-onconnect}
-
-This callback will be invoked whenever a controller is connected. 
-
-```csharp
-
-public OnConnectDelegate OnConnect;
-
-```
-
-
-
-
-
-
------------
-
-### OnButtonUp {#onbuttonupdelegate-onbuttonup}
-
-This callback will be invoked whenever a controller button is released. 
-
-```csharp
-
-public OnButtonUpDelegate OnButtonUp;
+public OnButtonClickDelegate OnButtonClick;
 
 ```
 
@@ -187,13 +68,132 @@ public OnButtonDownDelegate OnButtonDown;
 
 -----------
 
-### OnButtonClick {#onbuttonclickdelegate-onbuttonclick}
+### OnButtonUp {#onbuttonupdelegate-onbuttonup}
 
-This callback will be invoked whenever a controller button is pressed and released within a short duration. 
+This callback will be invoked whenever a controller button is released. 
 
 ```csharp
 
-public OnButtonClickDelegate OnButtonClick;
+public OnButtonUpDelegate OnButtonUp;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnConnect {#onconnectdelegate-onconnect}
+
+This callback will be invoked whenever a controller is connected. 
+
+```csharp
+
+public OnConnectDelegate OnConnect;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnDisconnect {#ondisconnectdelegate-ondisconnect}
+
+This callback will be invoked whenever a controller is disconnected. 
+
+```csharp
+
+public OnDisconnectDelegate OnDisconnect;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnTouchpadGesture {#ontouchpadgesturedelegate-ontouchpadgesture}
+
+This callback will be invoked whenever a touch gesture is detected. This callback will be called for both discrete and continuous gestures. 
+
+```csharp
+
+public OnTouchpadGestureDelegate OnTouchpadGesture;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnTouchpadGestureContinue {#ontouchpadgesturecontinuedelegate-ontouchpadgesturecontinue}
+
+This callback will be invoked whenever a continuation of a touch gesture is detected. This callback will be called only for continuous gestures. 
+
+```csharp
+
+public OnTouchpadGestureContinueDelegate OnTouchpadGestureContinue;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnTouchpadGestureEnd {#ontouchpadgestureenddelegate-ontouchpadgestureend}
+
+This callback will be invoked whenever a continuous touch gesture ends. This callback will be called only for continuous gestures. 
+
+```csharp
+
+public OnTouchpadGestureEndDelegate OnTouchpadGestureEnd;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnTrigger {#ontriggerdelegate-ontrigger}
+
+This callback will be invoked whenever a controller trigger state is changed. 
+
+```csharp
+
+public OnTriggerDelegate OnTrigger;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+Version of this structure. 
+
+```csharp
+
+public uint Version;
 
 ```
 

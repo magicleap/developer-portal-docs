@@ -85,8 +85,7 @@ List of supported, detectable markers (no pose info):
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * This API can be used to track fiducial markers like QR codes, April tags and Aruco markers. For fiducial markers, this API provides 6DOF poses, and the encoded information.
 
 
@@ -115,8 +114,7 @@ Represents the different detector types supported by the API.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -143,8 +141,7 @@ Represents the different tracker profiles.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -173,8 +170,7 @@ CPU load is a combination of enabled detector types, FpsHint and ResolutionHint.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -202,8 +198,7 @@ CPU load is a combination of enabled detector types, FpsHint and ResolutionHint.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -232,8 +227,7 @@ World cameras make use of multiple world cameras to improve accuracy and increas
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -264,8 +258,7 @@ Corner refinement only applies to Aruco and April tags, not QR codes.
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -292,8 +285,7 @@ In order to improve performance, the detectors don't always run on the full fram
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -342,8 +334,7 @@ Marker Tracker supports pre-defined Aruco dictionary and AprilTags. Aruco dictio
 :::
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -372,8 +363,7 @@ Each decoder may output different types of decoded data structures. The type fie
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -410,8 +400,7 @@ switch ( data->type ) {
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_typed_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -432,8 +421,7 @@ Aruco decoded data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -454,8 +442,7 @@ Binary decoded data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -476,8 +463,7 @@ QR Code data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -498,8 +484,7 @@ EAN-13 data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -520,8 +505,7 @@ UPC-A data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -542,8 +526,7 @@ Code 128 data.
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md)
 
 
-**API Level:
- 25**
+**API Level:\n 25**
   * 
 
 
@@ -566,8 +549,7 @@ The different detectors will have different decoded outputs. See [MLMarkerTracke
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -590,8 +572,7 @@ A list of these detections will be returned by the Marker Tracker, after process
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -614,8 +595,7 @@ Free this array with [MLMarkerTrackerReleaseResult](/api-ref/api/Modules/group__
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result_array.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -656,8 +636,7 @@ When creating a Marker Tracker, this list of settings needs to be passed to conf
 [More Info](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md)
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -693,8 +672,7 @@ Initializes default values for [MLMarkerTrackerResultArray](/api-ref/api/Modules
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -735,8 +713,7 @@ Max time between fully analyzed frames is 1s.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -783,8 +760,7 @@ Only one marker tracker is allowed per app/session. This call will fail when cal
 :::
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -826,8 +802,7 @@ Update the Marker Tracker with new settings.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -866,8 +841,7 @@ Destroy an Marker Tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -909,8 +883,7 @@ Get the results for Marker Tracking.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -950,8 +923,7 @@ Release the resources for the results array.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -16,11 +16,11 @@ title: CaptionLine
 
 ## Public Attributes
 
-### text {#string-text}
+### midRowStyles {#nativebindingscaptionstylecolor-midrowstyles}
 
 ```csharp
 
-public string text;
+public NativeBindings.CaptionStyleColor [] midRowStyles;
 
 ```
 
@@ -46,11 +46,11 @@ public NativeBindings.CaptionPAC [] pacStyles;
 
 -----------
 
-### midRowStyles {#nativebindingscaptionstylecolor-midrowstyles}
+### text {#string-text}
 
 ```csharp
 
-public NativeBindings.CaptionStyleColor [] midRowStyles;
+public string text;
 
 ```
 

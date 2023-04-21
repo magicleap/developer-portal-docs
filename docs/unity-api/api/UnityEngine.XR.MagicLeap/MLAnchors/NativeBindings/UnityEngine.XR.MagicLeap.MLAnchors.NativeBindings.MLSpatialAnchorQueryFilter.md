@@ -17,81 +17,13 @@ A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.Magic
 
 ## Public Attributes
 
-### Version {#readonly-uint-version}
+### Center {#readonly-mlvec3f-center}
 
-Version of the structure. 
-
-```csharp
-
-public readonly uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### Sorted {#readonly-bool-sorted}
-
-Indicate whether the results will be returned sorted by distance from center. Sorting results by distance will incur a performance penalty. 
+The center point of where a spatial query will originate. 
 
 ```csharp
 
-public readonly bool Sorted;
-
-```
-
-
-
-
-
-
------------
-
-### RadiusM {#readonly-float-radiusm}
-
-The radius in meters used for a spatial query, relative to the specified center. Only anchors inside this radius will be returned. Set to 0 for unbounded results. 
-
-```csharp
-
-public readonly float RadiusM;
-
-```
-
-
-
-
-
-
------------
-
-### MaxResults {#readonly-uint-maxresults}
-
-The upper bound of expected results. Set to 0 for unbounded results. 
-
-```csharp
-
-public readonly uint MaxResults;
-
-```
-
-
-
-
-
-
------------
-
-### IdsCount {#readonly-uint-idscount}
-
-The number of IDs provided. 
-
-```csharp
-
-public readonly uint IdsCount;
+public readonly MLVec3f Center;
 
 ```
 
@@ -119,13 +51,81 @@ public readonly IntPtr Ids;
 
 -----------
 
-### Center {#readonly-mlvec3f-center}
+### IdsCount {#readonly-uint-idscount}
 
-The center point of where a spatial query will originate. 
+The number of IDs provided. 
 
 ```csharp
 
-public readonly MLVec3f Center;
+public readonly uint IdsCount;
+
+```
+
+
+
+
+
+
+-----------
+
+### MaxResults {#readonly-uint-maxresults}
+
+The upper bound of expected results. Set to 0 for unbounded results. 
+
+```csharp
+
+public readonly uint MaxResults;
+
+```
+
+
+
+
+
+
+-----------
+
+### RadiusM {#readonly-float-radiusm}
+
+The radius in meters used for a spatial query, relative to the specified center. Only anchors inside this radius will be returned. Set to 0 for unbounded results. 
+
+```csharp
+
+public readonly float RadiusM;
+
+```
+
+
+
+
+
+
+-----------
+
+### Sorted {#readonly-bool-sorted}
+
+Indicate whether the results will be returned sorted by distance from center. Sorting results by distance will incur a performance penalty. 
+
+```csharp
+
+public readonly bool Sorted;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#readonly-uint-version}
+
+Version of the structure. 
+
+```csharp
+
+public readonly uint Version;
 
 ```
 

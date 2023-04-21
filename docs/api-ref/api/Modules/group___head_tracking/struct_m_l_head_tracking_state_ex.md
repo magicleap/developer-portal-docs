@@ -35,8 +35,7 @@ Structure containing information on the current state of the Head Tracking syste
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

@@ -58,18 +58,27 @@ tran
 
 ## Protected Methods
 
-### StopAPI {#override-stopapi}
+### OnApplicationPause {#override-void-onapplicationpause}
 
-API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
-protected virtual override MLResult.Code StopAPI()
+protected virtual override void OnApplicationPause(
+    bool pauseStatus
+)
 ```
 
 
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |pauseStatus|True if the application is paused, else False. |
 
 
-**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
+
+
+**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-onapplicationpause)
 
 
 
@@ -87,6 +96,23 @@ protected virtual override MLResult.Code StartAPI()
 
 
 **Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
+
+
+
+-----------
+
+### StopAPI {#override-stopapi}
+
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+
+```csharp
+protected virtual override MLResult.Code StopAPI()
+```
+
+
+
+
+**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
 
 
 

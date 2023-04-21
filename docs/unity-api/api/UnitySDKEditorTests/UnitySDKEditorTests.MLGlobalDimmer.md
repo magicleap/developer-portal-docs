@@ -21,10 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_UnityMagicLeap_RenderingSetGlobalDimmerValue_Exists {#void-nativebinding-unitymagicleap-renderingsetglobaldimmervalue-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_UnityMagicLeap_RenderingSetGlobalDimmerValue_Exists()
 ```
 
 
@@ -34,10 +34,10 @@ public void SetupNativeBindings()
 
 -----------
 
-### void NativeBinding_UnityMagicLeap_RenderingSetGlobalDimmerValue_Exists {#void-nativebinding-unitymagicleap-renderingsetglobaldimmervalue-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_UnityMagicLeap_RenderingSetGlobalDimmerValue_Exists()
+public void SetupNativeBindings()
 ```
 
 

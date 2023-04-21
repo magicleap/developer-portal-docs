@@ -17,11 +17,11 @@ Contains information about the current state of an input controller.
 
 ## Public Attributes
 
-### Version {#uint-version}
+### ButtonStates {#bool-buttonstates}
 
 ```csharp
 
-public uint Version;
+public bool [] ButtonStates;
 
 ```
 
@@ -32,11 +32,11 @@ public uint Version;
 
 -----------
 
-### Type {#mlinputcontrollertype-type}
+### Hand {#mlinputcontrollerhand-hand}
 
 ```csharp
 
-public MLInputControllerType Type;
+public MLInputControllerHand Hand;
 
 ```
 
@@ -47,13 +47,73 @@ public MLInputControllerType Type;
 
 -----------
 
-### TriggerNormalized {#float-triggernormalized}
-
-Normalized trigger value [0.0,1.0] 
+### HardwareIndex {#byte-hardwareindex}
 
 ```csharp
 
-public float TriggerNormalized;
+public byte HardwareIndex;
+
+```
+
+
+
+
+
+
+-----------
+
+### IsConnected {#bool-isconnected}
+
+```csharp
+
+public bool IsConnected;
+
+```
+
+
+
+
+
+
+-----------
+
+### IsTouchesActive {#bool-istouchesactive}
+
+```csharp
+
+public bool [] IsTouchesActive;
+
+```
+
+
+
+
+
+
+-----------
+
+### TouchesPositionAndForce {#vector3-touchespositionandforce}
+
+Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range. 
+
+```csharp
+
+public Vector3 [] TouchesPositionAndForce;
+
+```
+
+
+
+
+
+
+-----------
+
+### TouchpadGestureData {#touchpadgesturedata-touchpadgesturedata}
+
+```csharp
+
+public TouchpadGesture.Data TouchpadGestureData;
 
 ```
 
@@ -82,11 +142,13 @@ public TouchpadGesture.State TouchpadGestureState;
 
 -----------
 
-### TouchpadGestureData {#touchpadgesturedata-touchpadgesturedata}
+### TriggerNormalized {#float-triggernormalized}
+
+Normalized trigger value [0.0,1.0] 
 
 ```csharp
 
-public TouchpadGesture.Data TouchpadGestureData;
+public float TriggerNormalized;
 
 ```
 
@@ -97,13 +159,11 @@ public TouchpadGesture.Data TouchpadGestureData;
 
 -----------
 
-### TouchesPositionAndForce {#vector3-touchespositionandforce}
-
-Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range. 
+### Type {#mlinputcontrollertype-type}
 
 ```csharp
 
-public Vector3 [] TouchesPositionAndForce;
+public MLInputControllerType Type;
 
 ```
 
@@ -114,71 +174,11 @@ public Vector3 [] TouchesPositionAndForce;
 
 -----------
 
-### IsTouchesActive {#bool-istouchesactive}
+### Version {#uint-version}
 
 ```csharp
 
-public bool [] IsTouchesActive;
-
-```
-
-
-
-
-
-
------------
-
-### IsConnected {#bool-isconnected}
-
-```csharp
-
-public bool IsConnected;
-
-```
-
-
-
-
-
-
------------
-
-### HardwareIndex {#byte-hardwareindex}
-
-```csharp
-
-public byte HardwareIndex;
-
-```
-
-
-
-
-
-
------------
-
-### Hand {#mlinputcontrollerhand-hand}
-
-```csharp
-
-public MLInputControllerHand Hand;
-
-```
-
-
-
-
-
-
------------
-
-### ButtonStates {#bool-buttonstates}
-
-```csharp
-
-public bool [] ButtonStates;
+public uint Version;
 
 ```
 

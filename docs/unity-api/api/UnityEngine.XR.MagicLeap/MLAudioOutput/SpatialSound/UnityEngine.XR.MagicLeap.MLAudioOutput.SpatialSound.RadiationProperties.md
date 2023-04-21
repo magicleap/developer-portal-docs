@@ -32,64 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### OuterGainMF {#float-outergainmf}
+### InnerAngle {#float-innerangle}
 
-Volume scale (0-1) beyond outer cone for mid freqs. 
-
-```csharp
-
-public float OuterGainMF;
-
-```
-
-
-
-
-
-
------------
-
-### OuterGainLF {#float-outergainlf}
-
-Volume scale (0-1) beyond outer cone for low freqs. 
+Inner cone angle (0-360); radiation unaffected. 
 
 ```csharp
 
-public float OuterGainLF;
-
-```
-
-
-
-
-
-
------------
-
-### OuterGainHF {#float-outergainhf}
-
-Volume scale (0-1) beyond outer cone for high freqs. 
-
-```csharp
-
-public float OuterGainHF;
-
-```
-
-
-
-
-
-
------------
-
-### OuterGain {#float-outergain}
-
-Volume scale (0-1) beyond outer cone for all freqs. 
-
-```csharp
-
-public float OuterGain;
+public float InnerAngle;
 
 ```
 
@@ -117,13 +66,64 @@ public float OuterAngle;
 
 -----------
 
-### InnerAngle {#float-innerangle}
+### OuterGain {#float-outergain}
 
-Inner cone angle (0-360); radiation unaffected. 
+Volume scale (0-1) beyond outer cone for all freqs. 
 
 ```csharp
 
-public float InnerAngle;
+public float OuterGain;
+
+```
+
+
+
+
+
+
+-----------
+
+### OuterGainHF {#float-outergainhf}
+
+Volume scale (0-1) beyond outer cone for high freqs. 
+
+```csharp
+
+public float OuterGainHF;
+
+```
+
+
+
+
+
+
+-----------
+
+### OuterGainLF {#float-outergainlf}
+
+Volume scale (0-1) beyond outer cone for low freqs. 
+
+```csharp
+
+public float OuterGainLF;
+
+```
+
+
+
+
+
+
+-----------
+
+### OuterGainMF {#float-outergainmf}
+
+Volume scale (0-1) beyond outer cone for mid freqs. 
+
+```csharp
+
+public float OuterGainMF;
 
 ```
 

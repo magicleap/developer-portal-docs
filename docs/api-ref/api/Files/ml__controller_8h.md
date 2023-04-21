@@ -129,8 +129,7 @@ Stream mode for controller stream.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -211,8 +210,7 @@ A structure containing information about the current state of this controller.
 [More Info](/api-ref/api/Modules/group___controller/struct_m_l_controller_state_ex.md)
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -253,8 +251,7 @@ A structure containing information about the current state of the controller sys
 [More Info](/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state_ex.md)
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -283,8 +280,7 @@ Initializes values for [MLControllerSystemStateEx](/api-ref/api/Modules/group___
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -326,8 +322,7 @@ Creates a controller tracker.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -442,8 +437,7 @@ Return the most recent controller state.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 

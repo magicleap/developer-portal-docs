@@ -32,64 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### Width {#readonly-uint-width}
+### BytesPerPixel {#readonly-uint-bytesperpixel}
 
-Width of the output image in pixels. 
-
-```csharp
-
-public readonly uint Width;
-
-```
-
-
-
-
-
-
------------
-
-### Stride {#readonly-uint-stride}
-
-Stride of the output image in bytes. 
+Number of bytes used to represent a pixel. 
 
 ```csharp
 
-public readonly uint Stride;
-
-```
-
-
-
-
-
-
------------
-
-### Size {#readonly-uint-size}
-
-Number of bytes in the frame. 
-
-```csharp
-
-public readonly uint Size;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#readonly-uint-height}
-
-Height of the output image in pixels. 
-
-```csharp
-
-public readonly uint Height;
+public readonly uint BytesPerPixel;
 
 ```
 
@@ -117,13 +66,64 @@ public readonly IntPtr Data;
 
 -----------
 
-### BytesPerPixel {#readonly-uint-bytesperpixel}
+### Height {#readonly-uint-height}
 
-Number of bytes used to represent a pixel. 
+Height of the output image in pixels. 
 
 ```csharp
 
-public readonly uint BytesPerPixel;
+public readonly uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### Size {#readonly-uint-size}
+
+Number of bytes in the frame. 
+
+```csharp
+
+public readonly uint Size;
+
+```
+
+
+
+
+
+
+-----------
+
+### Stride {#readonly-uint-stride}
+
+Stride of the output image in bytes. 
+
+```csharp
+
+public readonly uint Stride;
+
+```
+
+
+
+
+
+
+-----------
+
+### Width {#readonly-uint-width}
+
+Width of the output image in pixels. 
+
+```csharp
+
+public readonly uint Width;
 
 ```
 

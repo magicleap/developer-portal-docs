@@ -24,7 +24,7 @@ using System.Runtime.InteropServices;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace Tests.Runtime.NativeBindings
+namespace UnitySDKPlayTests
 {
     public class NativeBindingsPlayTests
     {

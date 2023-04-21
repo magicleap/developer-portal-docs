@@ -21,36 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLWebRTCGetResultString_Exists {#void-nativebinding-mlwebrtcgetresultstring-exists}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLWebRTCInstanceDestroy_Exists {#void-nativebinding-mlwebrtcinstancedestroy-exists}
-
-```csharp
-public void NativeBinding_MLWebRTCInstanceDestroy_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLWebRTCInstanceCreate_Exists {#void-nativebinding-mlwebrtcinstancecreate-exists}
-
-```csharp
-public void NativeBinding_MLWebRTCInstanceCreate_Exists()
+public void NativeBinding_MLWebRTCGetResultString_Exists()
 ```
 
 
@@ -73,10 +47,36 @@ public void NativeBinding_MLWebRTCInstanceCreateWithDebugUtils_Exists()
 
 -----------
 
-### void NativeBinding_MLWebRTCGetResultString_Exists {#void-nativebinding-mlwebrtcgetresultstring-exists}
+### void NativeBinding_MLWebRTCInstanceCreate_Exists {#void-nativebinding-mlwebrtcinstancecreate-exists}
 
 ```csharp
-public void NativeBinding_MLWebRTCGetResultString_Exists()
+public void NativeBinding_MLWebRTCInstanceCreate_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLWebRTCInstanceDestroy_Exists {#void-nativebinding-mlwebrtcinstancedestroy-exists}
+
+```csharp
+public void NativeBinding_MLWebRTCInstanceDestroy_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

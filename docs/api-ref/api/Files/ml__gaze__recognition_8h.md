@@ -56,8 +56,7 @@ A set of possible error codes that the Gaze Recognition system can report.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -86,8 +85,7 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -111,8 +109,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 [More Info](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -133,8 +130,7 @@ Information about the state of the Gaze Recognition system. This structure must 
 [More Info](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -168,8 +164,7 @@ Initialize [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recog
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -200,8 +195,7 @@ Initialize [MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognitio
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -242,8 +236,7 @@ Create Gaze Recognition.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -283,8 +276,7 @@ Destroy Gaze Recognition.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -326,8 +318,7 @@ Get static information about Gaze Recognition.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -369,8 +360,7 @@ Get information about the user's gaze.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -53,8 +53,7 @@ APIs for the Perception system.
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * 
 
 
@@ -146,8 +145,7 @@ Velocity and acceleration derivatives for a related transform.
 [More Info](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md)
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -362,8 +360,7 @@ Intializes the default values for [MLTransformDerivatives](/api-ref/api/Modules/
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -449,8 +446,7 @@ Get transform between world origin and the coordinate frame "id as well as any d
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 

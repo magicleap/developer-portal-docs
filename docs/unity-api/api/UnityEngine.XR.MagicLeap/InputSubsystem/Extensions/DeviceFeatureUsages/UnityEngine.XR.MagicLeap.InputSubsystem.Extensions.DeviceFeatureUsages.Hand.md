@@ -16,41 +16,11 @@ title: Hand
 
 ## Public Attributes
 
-### WristUlnar {#inputfeatureusage-bone-wristulnar}
+### Confidence {#inputfeatureusage-float-confidence}
 
 ```csharp
 
-public static InputFeatureUsage< Bone > WristUlnar = new InputFeatureUsage<Bone>("MLHandWristUlnar");
-
-```
-
-
-
-
-
-
------------
-
-### WristRadial {#inputfeatureusage-bone-wristradial}
-
-```csharp
-
-public static InputFeatureUsage< Bone > WristRadial = new InputFeatureUsage<Bone>("MLHandWristRadial");
-
-```
-
-
-
-
-
-
------------
-
-### WristCenter {#inputfeatureusage-bone-wristcenter}
-
-```csharp
-
-public static InputFeatureUsage< Bone > WristCenter = new InputFeatureUsage<Bone>("MLHandWristCenter");
+public static InputFeatureUsage< float > Confidence = new InputFeatureUsage<float>("MLHandConfidence");
 
 ```
 
@@ -76,11 +46,41 @@ public static InputFeatureUsage< byte[]> KeyPointsMask = new InputFeatureUsage<b
 
 -----------
 
-### Confidence {#inputfeatureusage-float-confidence}
+### WristCenter {#inputfeatureusage-bone-wristcenter}
 
 ```csharp
 
-public static InputFeatureUsage< float > Confidence = new InputFeatureUsage<float>("MLHandConfidence");
+public static InputFeatureUsage< Bone > WristCenter = new InputFeatureUsage<Bone>("MLHandWristCenter");
+
+```
+
+
+
+
+
+
+-----------
+
+### WristRadial {#inputfeatureusage-bone-wristradial}
+
+```csharp
+
+public static InputFeatureUsage< Bone > WristRadial = new InputFeatureUsage<Bone>("MLHandWristRadial");
+
+```
+
+
+
+
+
+
+-----------
+
+### WristUlnar {#inputfeatureusage-bone-wristulnar}
+
+```csharp
+
+public static InputFeatureUsage< Bone > WristUlnar = new InputFeatureUsage<Bone>("MLHandWristUlnar");
 
 ```
 

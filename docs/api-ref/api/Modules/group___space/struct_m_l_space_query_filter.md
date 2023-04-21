@@ -32,8 +32,7 @@ A collection of filters for Magic Leap Spaces. This structure must be initialize
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

@@ -176,11 +176,8 @@ namespace UnityEngine.XR.MagicLeap
 
                     public byte HardwareIndex;
 
-                    public override string ToString() => $"Hand: {Hand}, TouchesPositionAndForce:
-{string.Join(',',TouchesPositionAndForce)}, TriggerNormalized: { TriggerNormalized}, " +
-                            $"ButtonStates:
-{string.Join(',', ButtonStates)}, IsTouchesActive:
-{string.Join(',',IsTouchesActive)}, IsConnected: {IsConnected}, " +
+                    public override string ToString() => $"Hand: {Hand}, TouchesPositionAndForce:\n{string.Join(',',TouchesPositionAndForce)}, TriggerNormalized: { TriggerNormalized}, " +
+                            $"ButtonStates:\n{string.Join(',', ButtonStates)}, IsTouchesActive:\n{string.Join(',',IsTouchesActive)}, IsConnected: {IsConnected}, " +
                         $"TouchpadGestureData: {TouchpadGestureData}, TouchpadGestureState: {TouchpadGestureState}, HardwareIndex: {HardwareIndex}";
                 }
 

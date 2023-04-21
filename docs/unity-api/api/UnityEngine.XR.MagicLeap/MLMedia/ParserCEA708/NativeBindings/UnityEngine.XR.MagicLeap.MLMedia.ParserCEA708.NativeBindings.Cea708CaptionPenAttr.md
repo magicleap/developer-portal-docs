@@ -17,87 +17,13 @@ CEA708 Caption Pen Attributes.  MLCea708CaptionPenAttr  from  ml&#95;media&#95;c
 
 ## Public Attributes
 
-### Underline {#bool-underline}
+### EdgeType {#int-edgetype}
 
-Underline setting. 
-
-```csharp
-
-public bool Underline;
-
-```
-
-
-
-
-
-
------------
-
-### TextTag {#int-texttag}
-
-Text tag. 
+Edge type. 
 
 ```csharp
 
-public int TextTag;
-
-```
-
-
-
-
-
-
------------
-
-### PenSize {#cea708captionpensize-pensize}
-
-Pen size. 
-
-```csharp
-
-public Cea708CaptionPenSize PenSize;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [Cea708CaptionPenSize](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpensize) | CEA708 Caption Pen Size constants.  MLCea708CaptionPenSize  from  ml&#95;media&#95;cea708&#95;caption.h .  |
-
-
-
-
-
------------
-
-### PenOffset {#cea708captionpenoffset-penoffset}
-
-Pen offset. 
-
-```csharp
-
-public Cea708CaptionPenOffset PenOffset;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [Cea708CaptionPenOffset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpenoffset) | CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h .  |
-
-
-
-
-
------------
-
-### Italic {#bool-italic}
-
-Italic setting. 
-
-```csharp
-
-public bool Italic;
+public int EdgeType;
 
 ```
 
@@ -125,13 +51,87 @@ public int FontTag;
 
 -----------
 
-### EdgeType {#int-edgetype}
+### Italic {#bool-italic}
 
-Edge type. 
+Italic setting. 
 
 ```csharp
 
-public int EdgeType;
+public bool Italic;
+
+```
+
+
+
+
+
+
+-----------
+
+### PenOffset {#cea708captionpenoffset-penoffset}
+
+Pen offset. 
+
+```csharp
+
+public Cea708CaptionPenOffset PenOffset;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [Cea708CaptionPenOffset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpenoffset) | CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+
+
+
+
+
+-----------
+
+### PenSize {#cea708captionpensize-pensize}
+
+Pen size. 
+
+```csharp
+
+public Cea708CaptionPenSize PenSize;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [Cea708CaptionPenSize](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpensize) | CEA708 Caption Pen Size constants.  MLCea708CaptionPenSize  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+
+
+
+
+
+-----------
+
+### TextTag {#int-texttag}
+
+Text tag. 
+
+```csharp
+
+public int TextTag;
+
+```
+
+
+
+
+
+
+-----------
+
+### Underline {#bool-underline}
+
+Underline setting. 
+
+```csharp
+
+public bool Underline;
 
 ```
 

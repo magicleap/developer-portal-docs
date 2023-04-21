@@ -17,13 +17,13 @@ MediaPlayer Buffering update callback Info.
 
 ## Public Attributes
 
-### Percent {#int-percent}
+### Data {#intptr-data}
 
-The new percentage of buffered content. 
+User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public int Percent;
+public IntPtr Data;
 
 ```
 
@@ -34,13 +34,13 @@ public int Percent;
 
 -----------
 
-### Data {#intptr-data}
+### Percent {#int-percent}
 
-User data as passed to MLMediaPlayerSetEventCallbacksEx(). 
+The new percentage of buffered content. 
 
 ```csharp
 
-public IntPtr Data;
+public int Percent;
 
 ```
 

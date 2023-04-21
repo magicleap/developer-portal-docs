@@ -171,8 +171,7 @@ This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-r
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_settings.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -193,8 +192,7 @@ Depth camera intrinsic parameters.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -215,8 +213,7 @@ A structure to encapsulate per plane info for each camera frame.
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md)
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -339,8 +336,7 @@ This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/a
 [More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md)
 
 
-**API Level:
- 25**
+**API Level:\n 25**
   * 
 
 
@@ -374,8 +370,7 @@ Initialize the connect handle structure. Shall be called before calling [MLDepth
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -401,8 +396,7 @@ Initialize [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_de
 
 
 
-**API Level:
- 25**
+**API Level:\n 25**
   * 
 
 
@@ -445,8 +439,7 @@ Connect to depth camera.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -487,8 +480,7 @@ Update the depth camera settings.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -538,8 +530,7 @@ If there are no new depth data frames within the timeout_ms duration then the AP
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 
@@ -618,8 +609,7 @@ This will disconnect from the depth camera.
 
 
 
-**API Level:
- 23**
+**API Level:\n 23**
   * 
 
 

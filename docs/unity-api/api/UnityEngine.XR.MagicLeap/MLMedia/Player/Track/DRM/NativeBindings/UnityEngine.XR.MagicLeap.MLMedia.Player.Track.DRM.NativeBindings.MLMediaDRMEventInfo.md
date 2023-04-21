@@ -17,13 +17,13 @@ MediaDRM event info associated with a session.
 
 ## Public Attributes
 
-### sessionIdByteArray {#readonly-intptr-sessionidbytearray}
+### data {#readonly-intptr-data}
 
-[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
+User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
 
 ```csharp
 
-public readonly IntPtr sessionIdByteArray;
+public readonly IntPtr data;
 
 ```
 
@@ -34,13 +34,13 @@ public readonly IntPtr sessionIdByteArray;
 
 -----------
 
-### extra {#readonly-int-extra}
+### eventDataByteArray {#readonly-intptr-eventdatabytearray}
 
-Extra Secondary error code. 
+Optional data that may be associated with the event. 
 
 ```csharp
 
-public readonly int extra;
+public readonly IntPtr eventDataByteArray;
 
 ```
 
@@ -71,13 +71,13 @@ public readonly EventType eventType;
 
 -----------
 
-### eventDataByteArray {#readonly-intptr-eventdatabytearray}
+### extra {#readonly-int-extra}
 
-Optional data that may be associated with the event. 
+Extra Secondary error code. 
 
 ```csharp
 
-public readonly IntPtr eventDataByteArray;
+public readonly int extra;
 
 ```
 
@@ -88,13 +88,13 @@ public readonly IntPtr eventDataByteArray;
 
 -----------
 
-### data {#readonly-intptr-data}
+### sessionIdByteArray {#readonly-intptr-sessionidbytearray}
 
-User data as passed to MLMediaDRMPlayerSetEventCallbacksEx(). 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public readonly IntPtr data;
+public readonly IntPtr sessionIdByteArray;
 
 ```
 

@@ -50,8 +50,7 @@ Checks to see if the Zero Iteration server is running and configured properly to
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -92,8 +91,7 @@ A label must be set before the program calls one of the MLGraphicsCreate() funct
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

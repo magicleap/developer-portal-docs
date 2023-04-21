@@ -16,101 +16,11 @@ title: MLGraphicsFrameParamsEx
 
 ## Public Attributes
 
-### Vignette {#bool-vignette}
+### BlendMode {#environmentblendmode-blendmode}
 
 ```csharp
 
-public bool Vignette;
-
-```
-
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-```csharp
-
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### SurfaceScale {#float-surfacescale}
-
-```csharp
-
-public float SurfaceScale;
-
-```
-
-
-
-
-
-
------------
-
-### ProtectedSurface {#bool-protectedsurface}
-
-```csharp
-
-public bool ProtectedSurface;
-
-```
-
-
-
-
-
-
------------
-
-### ProjectionType {#projectiontype-projectiontype}
-
-```csharp
-
-public ProjectionType ProjectionType;
-
-```
-
-
-
-
-
-
------------
-
-### NearClip {#float-nearclip}
-
-```csharp
-
-public float NearClip;
-
-```
-
-
-
-
-
-
------------
-
-### FocusDustance {#float-focusdustance}
-
-```csharp
-
-public float FocusDustance;
+public EnvironmentBlendMode BlendMode;
 
 ```
 
@@ -136,11 +46,101 @@ public float FarClip;
 
 -----------
 
-### BlendMode {#environmentblendmode-blendmode}
+### FocusDustance {#float-focusdustance}
 
 ```csharp
 
-public EnvironmentBlendMode BlendMode;
+public float FocusDustance;
+
+```
+
+
+
+
+
+
+-----------
+
+### NearClip {#float-nearclip}
+
+```csharp
+
+public float NearClip;
+
+```
+
+
+
+
+
+
+-----------
+
+### ProjectionType {#projectiontype-projectiontype}
+
+```csharp
+
+public ProjectionType ProjectionType;
+
+```
+
+
+
+
+
+
+-----------
+
+### ProtectedSurface {#bool-protectedsurface}
+
+```csharp
+
+public bool ProtectedSurface;
+
+```
+
+
+
+
+
+
+-----------
+
+### SurfaceScale {#float-surfacescale}
+
+```csharp
+
+public float SurfaceScale;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+```csharp
+
+public uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### Vignette {#bool-vignette}
+
+```csharp
+
+public bool Vignette;
 
 ```
 

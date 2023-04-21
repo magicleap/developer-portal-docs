@@ -17,183 +17,13 @@ CEA708 Caption Window.  MLCea708CaptionWindow  from  ml&#95;media&#95;cea708&#95
 
 ## Public Attributes
 
-### WindowStyle {#int-windowstyle}
+### AnchorHorizontal {#int-anchorhorizontal}
 
-Window style. 
-
-```csharp
-
-public int WindowStyle;
-
-```
-
-
-
-
-
-
------------
-
-### Visible {#bool-visible}
-
-Window visible setting. 
+Window anchor horizontal. 
 
 ```csharp
 
-public bool Visible;
-
-```
-
-
-
-
-
-
------------
-
-### RowLock {#bool-rowlock}
-
-Window row lock setting. 
-
-```csharp
-
-public bool RowLock;
-
-```
-
-
-
-
-
-
------------
-
-### RowCount {#int-rowcount}
-
-Window row count. 
-
-```csharp
-
-public int RowCount;
-
-```
-
-
-
-
-
-
------------
-
-### RelativePositioning {#bool-relativepositioning}
-
-Window relative positioning setting. 
-
-```csharp
-
-public bool RelativePositioning;
-
-```
-
-
-
-
-
-
------------
-
-### Priority {#int-priority}
-
-Window Priority. 
-
-```csharp
-
-public int Priority;
-
-```
-
-
-
-
-
-
------------
-
-### PenStyle {#int-penstyle}
-
-Window pen style. 
-
-```csharp
-
-public int PenStyle;
-
-```
-
-
-
-
-
-
------------
-
-### ID {#int-id}
-
-Window ID. 
-
-```csharp
-
-public int ID;
-
-```
-
-
-
-
-
-
------------
-
-### ColumnLock {#bool-columnlock}
-
-Window column lock setting. 
-
-```csharp
-
-public bool ColumnLock;
-
-```
-
-
-
-
-
-
------------
-
-### ColumnCount {#int-columncount}
-
-Window column count. 
-
-```csharp
-
-public int ColumnCount;
-
-```
-
-
-
-
-
-
------------
-
-### AnchorVertical {#int-anchorvertical}
-
-Window anchor vertical. 
-
-```csharp
-
-public int AnchorVertical;
+public int AnchorHorizontal;
 
 ```
 
@@ -221,13 +51,183 @@ public int AnchorID;
 
 -----------
 
-### AnchorHorizontal {#int-anchorhorizontal}
+### AnchorVertical {#int-anchorvertical}
 
-Window anchor horizontal. 
+Window anchor vertical. 
 
 ```csharp
 
-public int AnchorHorizontal;
+public int AnchorVertical;
+
+```
+
+
+
+
+
+
+-----------
+
+### ColumnCount {#int-columncount}
+
+Window column count. 
+
+```csharp
+
+public int ColumnCount;
+
+```
+
+
+
+
+
+
+-----------
+
+### ColumnLock {#bool-columnlock}
+
+Window column lock setting. 
+
+```csharp
+
+public bool ColumnLock;
+
+```
+
+
+
+
+
+
+-----------
+
+### ID {#int-id}
+
+Window ID. 
+
+```csharp
+
+public int ID;
+
+```
+
+
+
+
+
+
+-----------
+
+### PenStyle {#int-penstyle}
+
+Window pen style. 
+
+```csharp
+
+public int PenStyle;
+
+```
+
+
+
+
+
+
+-----------
+
+### Priority {#int-priority}
+
+Window Priority. 
+
+```csharp
+
+public int Priority;
+
+```
+
+
+
+
+
+
+-----------
+
+### RelativePositioning {#bool-relativepositioning}
+
+Window relative positioning setting. 
+
+```csharp
+
+public bool RelativePositioning;
+
+```
+
+
+
+
+
+
+-----------
+
+### RowCount {#int-rowcount}
+
+Window row count. 
+
+```csharp
+
+public int RowCount;
+
+```
+
+
+
+
+
+
+-----------
+
+### RowLock {#bool-rowlock}
+
+Window row lock setting. 
+
+```csharp
+
+public bool RowLock;
+
+```
+
+
+
+
+
+
+-----------
+
+### Visible {#bool-visible}
+
+Window visible setting. 
+
+```csharp
+
+public bool Visible;
+
+```
+
+
+
+
+
+
+-----------
+
+### WindowStyle {#int-windowstyle}
+
+Window style. 
+
+```csharp
+
+public int WindowStyle;
 
 ```
 

@@ -66,13 +66,33 @@ public static MLCameraCaptureConfig Create(
 
 ## Public Attributes
 
-### Version {#uint-version}
+### CaptureFrameRate {#mlcameracaptureframerate-captureframerate}
 
-version contains the version number for this structure. 
+capture frame rate 
 
 ```csharp
 
-public uint Version;
+public MLCamera.CaptureFrameRate CaptureFrameRate;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLCamera.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
+
+
+
+
+
+-----------
+
+### NumStreams {#uint-numstreams}
+
+no of capture streams. 
+
+```csharp
+
+public uint NumStreams;
 
 ```
 
@@ -103,36 +123,16 @@ public MLCameraCaptureStreamConfig [] StreamConfig;
 
 -----------
 
-### NumStreams {#uint-numstreams}
+### Version {#uint-version}
 
-no of capture streams. 
-
-```csharp
-
-public uint NumStreams;
-
-```
-
-
-
-
-
-
------------
-
-### CaptureFrameRate {#mlcameracaptureframerate-captureframerate}
-
-capture frame rate 
+version contains the version number for this structure. 
 
 ```csharp
 
-public MLCamera.CaptureFrameRate CaptureFrameRate;
+public uint Version;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MLCamera.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
 
 
 

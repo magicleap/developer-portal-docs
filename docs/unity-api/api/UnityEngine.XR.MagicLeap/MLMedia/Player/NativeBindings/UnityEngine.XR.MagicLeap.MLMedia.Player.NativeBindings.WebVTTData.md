@@ -17,166 +17,13 @@ WebVTT data structure.
 
 ## Public Attributes
 
-### align {#webvttalign-align}
+### Body {#string-body}
 
-WebVTT cue text alignment. 
-
-```csharp
-
-public WebVTTAlign align;
-
-```
-
-
-
-
-
-
------------
-
-### TextPosition {#float-textposition}
-
-The indent of the cue box in the direction defined by the writing direction. 
+WebVTT file body encoded as UTF-8. 
 
 ```csharp
 
-public float TextPosition;
-
-```
-
-
-
-
-
-
------------
-
-### StartTimeMS {#long-starttimems}
-
-[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue start time in milliseconds. 
-
-```csharp
-
-public long StartTimeMS;
-
-```
-
-
-
-
-
-
------------
-
-### SnapToLines {#bool-snaptolines}
-
-A boolean indicating whether the line is an integer number of lines. 
-
-```csharp
-
-public bool SnapToLines;
-
-```
-
-
-
-
-
-
------------
-
-### Size {#float-size}
-
-WebVTT cue size. 
-
-```csharp
-
-public float Size;
-
-```
-
-
-
-
-
-
------------
-
-### RelativeLinePosition {#float-relativelineposition}
-
-Relative cue line position. 
-
-```csharp
-
-public float RelativeLinePosition;
-
-```
-
-
-
-
-
-
------------
-
-### Orientation {#webvttorientation-orientation}
-
-Orientation of the cue. 
-
-```csharp
-
-public WebVTTOrientation Orientation;
-
-```
-
-
-
-
-
-
------------
-
-### LineNumber {#int-linenumber}
-
-WebVTT cue line number. 
-
-```csharp
-
-public int LineNumber;
-
-```
-
-
-
-
-
-
------------
-
-### Id {#string-id}
-
-A sequence of characters unique amongst all the WebVTT cue identifiers. 
-
-```csharp
-
-public string Id;
-
-```
-
-
-
-
-
-
------------
-
-### EndTimeMs {#long-endtimems}
-
-[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue end time in milliseconds. 
-
-```csharp
-
-public long EndTimeMs;
+public string Body;
 
 ```
 
@@ -204,13 +51,166 @@ public WebVTTDirection Direction;
 
 -----------
 
-### Body {#string-body}
+### EndTimeMs {#long-endtimems}
 
-WebVTT file body encoded as UTF-8. 
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue end time in milliseconds. 
 
 ```csharp
 
-public string Body;
+public long EndTimeMs;
+
+```
+
+
+
+
+
+
+-----------
+
+### Id {#string-id}
+
+A sequence of characters unique amongst all the WebVTT cue identifiers. 
+
+```csharp
+
+public string Id;
+
+```
+
+
+
+
+
+
+-----------
+
+### LineNumber {#int-linenumber}
+
+WebVTT cue line number. 
+
+```csharp
+
+public int LineNumber;
+
+```
+
+
+
+
+
+
+-----------
+
+### Orientation {#webvttorientation-orientation}
+
+Orientation of the cue. 
+
+```csharp
+
+public WebVTTOrientation Orientation;
+
+```
+
+
+
+
+
+
+-----------
+
+### RelativeLinePosition {#float-relativelineposition}
+
+Relative cue line position. 
+
+```csharp
+
+public float RelativeLinePosition;
+
+```
+
+
+
+
+
+
+-----------
+
+### Size {#float-size}
+
+WebVTT cue size. 
+
+```csharp
+
+public float Size;
+
+```
+
+
+
+
+
+
+-----------
+
+### SnapToLines {#bool-snaptolines}
+
+A boolean indicating whether the line is an integer number of lines. 
+
+```csharp
+
+public bool SnapToLines;
+
+```
+
+
+
+
+
+
+-----------
+
+### StartTimeMS {#long-starttimems}
+
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue start time in milliseconds. 
+
+```csharp
+
+public long StartTimeMS;
+
+```
+
+
+
+
+
+
+-----------
+
+### TextPosition {#float-textposition}
+
+The indent of the cue box in the direction defined by the writing direction. 
+
+```csharp
+
+public float TextPosition;
+
+```
+
+
+
+
+
+
+-----------
+
+### align {#webvttalign-align}
+
+WebVTT cue text alignment. 
+
+```csharp
+
+public WebVTTAlign align;
 
 ```
 

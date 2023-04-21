@@ -17,13 +17,98 @@ summary: native representation of proxy config
 
 ## Public Attributes
 
-### Username {#string-username}
+### AutoConfigUrl {#string-autoconfigurl}
 
-Proxy server auth username 
+Url to use to download the proxy config 
 
 ```csharp
 
-public string Username;
+public string AutoConfigUrl;
+
+```
+
+
+
+
+
+
+-----------
+
+### AutoDetect {#bool-autodetect}
+
+Attempt to automatically detect proxy 
+
+```csharp
+
+public bool AutoDetect;
+
+```
+
+
+
+
+
+
+-----------
+
+### BypassList {#string-bypasslist}
+
+List of urls that should bypass the proxy 
+
+```csharp
+
+public string BypassList;
+
+```
+
+
+
+
+
+
+-----------
+
+### HostAddress {#string-hostaddress}
+
+Proxy server address 
+
+```csharp
+
+public string HostAddress;
+
+```
+
+
+
+
+
+
+-----------
+
+### HostPort {#int-hostport}
+
+Proxy server port 
+
+```csharp
+
+public int HostPort;
+
+```
+
+
+
+
+
+
+-----------
+
+### Password {#string-password}
+
+Proxy server auth password 
+
+```csharp
+
+public string Password;
 
 ```
 
@@ -54,98 +139,13 @@ public MLWebRTC.ProxyType Type;
 
 -----------
 
-### Password {#string-password}
+### Username {#string-username}
 
-Proxy server auth password 
-
-```csharp
-
-public string Password;
-
-```
-
-
-
-
-
-
------------
-
-### HostPort {#int-hostport}
-
-Proxy server port 
+Proxy server auth username 
 
 ```csharp
 
-public int HostPort;
-
-```
-
-
-
-
-
-
------------
-
-### HostAddress {#string-hostaddress}
-
-Proxy server address 
-
-```csharp
-
-public string HostAddress;
-
-```
-
-
-
-
-
-
------------
-
-### BypassList {#string-bypasslist}
-
-List of urls that should bypass the proxy 
-
-```csharp
-
-public string BypassList;
-
-```
-
-
-
-
-
-
------------
-
-### AutoDetect {#bool-autodetect}
-
-Attempt to automatically detect proxy 
-
-```csharp
-
-public bool AutoDetect;
-
-```
-
-
-
-
-
-
------------
-
-### AutoConfigUrl {#string-autoconfigurl}
-
-Url to use to download the proxy config 
-
-```csharp
-
-public string AutoConfigUrl;
+public string Username;
 
 ```
 

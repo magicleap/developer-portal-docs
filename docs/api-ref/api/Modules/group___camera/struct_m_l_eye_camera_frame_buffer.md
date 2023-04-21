@@ -38,8 +38,7 @@ A structure to encapsulate per plane info for each camera frame.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

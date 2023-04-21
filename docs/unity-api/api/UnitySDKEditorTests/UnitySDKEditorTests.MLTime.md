@@ -21,10 +21,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLTimeConvertMLTimeToSystemTime_Exists {#void-nativebinding-mltimeconvertmltimetosystemtime-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_MLTimeConvertMLTimeToSystemTime_Exists()
 ```
 
 
@@ -47,10 +47,10 @@ public void NativeBinding_MLTimeConvertSystemTimeToMLTime_Exists()
 
 -----------
 
-### void NativeBinding_MLTimeConvertMLTimeToSystemTime_Exists {#void-nativebinding-mltimeconvertmltimetosystemtime-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_MLTimeConvertMLTimeToSystemTime_Exists()
+public void SetupNativeBindings()
 ```
 
 

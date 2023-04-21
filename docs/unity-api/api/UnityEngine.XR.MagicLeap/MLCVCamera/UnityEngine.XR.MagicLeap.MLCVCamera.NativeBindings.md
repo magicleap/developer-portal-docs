@@ -19,13 +19,17 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCVCameraTrackingDestroy {#mlresultcode-mlcvcameratrackingdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCVCameraGetFramePose {#mlresultcode-mlcvcameragetframepose}
 
-Destroy Tracker after usage. 
+Get the camera pose in the world coordinate system. 
 
 ```csharp
-public MLResult.Code MLCVCameraTrackingDestroy(
-    ulong cvCameraHandle
+public MLResult.Code MLCVCameraGetFramePose(
+    ulong cvCameraHandle,
+    ulong headHandle,
+    CameraID id,
+    long vcamTimestamp,
+    ref MLTransform outTransform
 )
 ```
 
@@ -35,13 +39,17 @@ public MLResult.Code MLCVCameraTrackingDestroy(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |cvCameraHandle|MLHandle previously created with MLCVCameraTrackingCreate.|
+| ulong |headHandle|MLHandle previously created with MLHeadCameraCreate.|
+| CameraID |id|The camera id.|
+| long |vcamTimestamp|The timestamp of the frame pose.|
+| ref [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) |outTransform|The transform of the frame pose.|
 
 
 
 
 
 
-**Returns**: MLResult&#95;Ok On success. MLResult&#95;PermissionDenied Necessary permission is missing. MLResult&#95;UnspecifiedFailure Unable to create tracker. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. 
 
 
 
@@ -75,17 +83,13 @@ public MLResult.Code MLCVCameraTrackingCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCVCameraGetFramePose {#mlresultcode-mlcvcameragetframepose}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCVCameraTrackingDestroy {#mlresultcode-mlcvcameratrackingdestroy}
 
-Get the camera pose in the world coordinate system. 
+Destroy Tracker after usage. 
 
 ```csharp
-public MLResult.Code MLCVCameraGetFramePose(
-    ulong cvCameraHandle,
-    ulong headHandle,
-    CameraID id,
-    long vcamTimestamp,
-    ref MLTransform outTransform
+public MLResult.Code MLCVCameraTrackingDestroy(
+    ulong cvCameraHandle
 )
 ```
 
@@ -95,17 +99,13 @@ public MLResult.Code MLCVCameraGetFramePose(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |cvCameraHandle|MLHandle previously created with MLCVCameraTrackingCreate.|
-| ulong |headHandle|MLHandle previously created with MLHeadCameraCreate.|
-| CameraID |id|The camera id.|
-| long |vcamTimestamp|The timestamp of the frame pose.|
-| ref [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) |outTransform|The transform of the frame pose.|
 
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. 
+**Returns**: MLResult&#95;Ok On success. MLResult&#95;PermissionDenied Necessary permission is missing. MLResult&#95;UnspecifiedFailure Unable to create tracker. 
 
 
 

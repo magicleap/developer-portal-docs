@@ -33,8 +33,7 @@ A collection of parameters to be used for localization request. This structure m
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

@@ -16,20 +16,11 @@ title: LeftHandActions
 
 ## Public Methods
 
-### implicit operator InputActionMap {#implicit-operator-inputactionmap}
+### void Disable {#void-disable}
 
 ```csharp
-public static implicit operator InputActionMap(
-    LeftHandActions set
-)
+public void Disable()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [LeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.LeftHandActions.md) |set||
 
 
 
@@ -38,20 +29,24 @@ public static implicit operator InputActionMap(
 
 -----------
 
-### void SetCallbacks {#void-setcallbacks}
+### void Enable {#void-enable}
 
 ```csharp
-public void SetCallbacks(
-    ILeftHandActions instance
-)
+public void Enable()
 ```
 
 
-**Parameters**
 
-| Type | Name  | Description  | 
-|--|--|--|
-| [ILeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ILeftHandActions.md) |instance||
+
+
+
+-----------
+
+### InputActionMap Get {#inputactionmap-get}
+
+```csharp
+public InputActionMap Get()
+```
 
 
 
@@ -82,11 +77,20 @@ public LeftHandActions(
 
 -----------
 
-### InputActionMap Get {#inputactionmap-get}
+### void SetCallbacks {#void-setcallbacks}
 
 ```csharp
-public InputActionMap Get()
+public void SetCallbacks(
+    ILeftHandActions instance
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [ILeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ILeftHandActions.md) |instance||
 
 
 
@@ -95,24 +99,20 @@ public InputActionMap Get()
 
 -----------
 
-### void Enable {#void-enable}
+### implicit operator InputActionMap {#implicit-operator-inputactionmap}
 
 ```csharp
-public void Enable()
+public static implicit operator InputActionMap(
+    LeftHandActions set
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### void Disable {#void-disable}
-
-```csharp
-public void Disable()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| [LeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.LeftHandActions.md) |set||
 
 
 
@@ -123,26 +123,11 @@ public void Disable()
 
 ## Public Attributes
 
-### enabled {#bool-enabled}
+### Keypose {#inputaction-keypose}
 
 ```csharp
 
-public bool enabled => Get().enabled;
-
-```
-
-
-
-
-
-
------------
-
-### Rotation {#inputaction-rotation}
-
-```csharp
-
-public InputAction Rotation => m_Wrapper.m_LeftHand_Rotation;
+public InputAction Keypose => m_Wrapper.m_LeftHand_Keypose;
 
 ```
 
@@ -168,11 +153,26 @@ public InputAction Position => m_Wrapper.m_LeftHand_Position;
 
 -----------
 
-### Keypose {#inputaction-keypose}
+### Rotation {#inputaction-rotation}
 
 ```csharp
 
-public InputAction Keypose => m_Wrapper.m_LeftHand_Keypose;
+public InputAction Rotation => m_Wrapper.m_LeftHand_Rotation;
+
+```
+
+
+
+
+
+
+-----------
+
+### enabled {#bool-enabled}
+
+```csharp
+
+public bool enabled => Get().enabled;
 
 ```
 

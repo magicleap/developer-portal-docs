@@ -44,11 +44,11 @@ public CryptoKeyParam(
 
 ## Public Attributes
 
-### KeySetId {#readonly-byte-keysetid}
+### Algorithm {#readonly-string-algorithm}
 
 ```csharp
 
-public readonly byte [] KeySetId;
+public readonly string Algorithm;
 
 ```
 
@@ -74,11 +74,11 @@ public readonly byte [] InitialVector;
 
 -----------
 
-### Algorithm {#readonly-string-algorithm}
+### KeySetId {#readonly-byte-keysetid}
 
 ```csharp
 
-public readonly string Algorithm;
+public readonly byte [] KeySetId;
 
 ```
 

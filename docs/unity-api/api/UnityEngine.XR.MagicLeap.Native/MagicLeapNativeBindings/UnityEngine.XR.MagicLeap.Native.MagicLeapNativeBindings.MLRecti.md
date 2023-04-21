@@ -17,13 +17,30 @@ summary: 2d rectangle with integer values in native format.
 
 ## Public Attributes
 
-### Y {#int-y}
+### H {#int-h}
 
-The y coordinate. 
+The height. 
 
 ```csharp
 
-public int Y;
+public int H;
+
+```
+
+
+
+
+
+
+-----------
+
+### W {#int-w}
+
+The width. 
+
+```csharp
+
+public int W;
 
 ```
 
@@ -53,30 +70,13 @@ The x coordinate.
 
 -----------
 
-### W {#int-w}
+### Y {#int-y}
 
-The width. 
-
-```csharp
-
-public int W;
-
-```
-
-
-
-
-
-
------------
-
-### H {#int-h}
-
-The height. 
+The y coordinate. 
 
 ```csharp
 
-public int H;
+public int Y;
 
 ```
 

@@ -39,6 +39,21 @@ Controls the lifecycle and configuration options for a Magic Leap gesture subsys
 
 ## Public Fields
 
+### controllerGesturesEnabled {#bool-controllergesturesenabled}
+
+```csharp
+
+public bool controllerGesturesEnabled { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### gestureSubsystem {#gesturesubsystem-gesturesubsystem}
 
 Get the  MagicLeapGestureSubsystem  whose lifetime this component manages. 
@@ -59,37 +74,7 @@ public GestureSubsystem gestureSubsystem { get; set; }
 
 -----------
 
-### controllerGesturesEnabled {#bool-controllergesturesenabled}
-
-```csharp
-
-public bool controllerGesturesEnabled { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Events
-
-### onTouchpadGestureChanged {#action-ontouchpadgesturechanged}
-
-This event is invoked whenever a MagicLeapTouchpadGestureEvent is received by the gestures subsystem. 
-
-```csharp
-public Action< GestureSubsystem.Extensions.TouchpadGestureEvent > onTouchpadGestureChanged()
-```
-
-
-
-
-
-
------------
 
 ### onActivate {#action-activategestureevent-onactivate}
 
@@ -97,6 +82,21 @@ This event is invoked whenever a ActivateGestureEvent is received by the gesture
 
 ```csharp
 public Action< ActivateGestureEvent > onActivate()
+```
+
+
+
+
+
+
+-----------
+
+### onTouchpadGestureChanged {#action-ontouchpadgesturechanged}
+
+This event is invoked whenever a MagicLeapTouchpadGestureEvent is received by the gestures subsystem. 
+
+```csharp
+public Action< GestureSubsystem.Extensions.TouchpadGestureEvent > onTouchpadGestureChanged()
 ```
 
 

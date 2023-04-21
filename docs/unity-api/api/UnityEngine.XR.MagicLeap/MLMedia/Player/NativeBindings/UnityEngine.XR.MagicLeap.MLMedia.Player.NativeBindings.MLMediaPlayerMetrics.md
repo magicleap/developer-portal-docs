@@ -17,13 +17,13 @@ MediaPlayer metrics data.
 
 ## Public Attributes
 
-### AverageVideoBitrate {#int-averagevideobitrate}
+### AverageAudioBitrate {#int-averageaudiobitrate}
 
-The average bitrate (bps) of video playbac 
+The average bitrate (bps) of audio playbac 
 
 ```csharp
 
-public int AverageVideoBitrate;
+public int AverageAudioBitrate;
 
 ```
 
@@ -51,13 +51,13 @@ public float AverageFramerate;
 
 -----------
 
-### AverageAudioBitrate {#int-averageaudiobitrate}
+### AverageVideoBitrate {#int-averagevideobitrate}
 
-The average bitrate (bps) of audio playbac 
+The average bitrate (bps) of video playbac 
 
 ```csharp
 
-public int AverageAudioBitrate;
+public int AverageVideoBitrate;
 
 ```
 

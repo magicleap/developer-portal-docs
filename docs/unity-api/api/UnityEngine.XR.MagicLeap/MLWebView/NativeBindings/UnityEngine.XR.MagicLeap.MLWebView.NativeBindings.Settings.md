@@ -25,7 +25,9 @@ Create and return an initialized version of this struct.
 public static Settings Create(
     GCHandle gcHandle,
     uint width,
-    uint height
+    uint height,
+    bool isPopup,
+    ulong popupID
 )
 ```
 
@@ -37,6 +39,8 @@ public static Settings Create(
 | GCHandle |gcHandle||
 | uint |width||
 | uint |height||
+| bool |isPopup||
+| ulong |popupID||
 
 
 
@@ -51,64 +55,13 @@ public static Settings Create(
 
 ## Public Attributes
 
-### Width {#uint-width}
+### ApplicationVm {#intptr-applicationvm}
 
-Horizontal size of webview in pixels. 
-
-```csharp
-
-public uint Width;
-
-```
-
-
-
-
-
-
------------
-
-### Version {#uint-version}
-
-Version of this struct. 
+JavaVM&#42; pointer to use for Android up-calls. 
 
 ```csharp
 
-public uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### Height {#uint-height}
-
-Vertical size of webview in pixels. 
-
-```csharp
-
-public uint Height;
-
-```
-
-
-
-
-
-
------------
-
-### Context {#intptr-context}
-
-jobject to android. content. Context instance for Android up-calls. 
-
-```csharp
-
-public IntPtr Context;
+public IntPtr ApplicationVm;
 
 ```
 
@@ -139,13 +92,98 @@ public EventCallbacks Callbacks;
 
 -----------
 
-### ApplicationVm {#intptr-applicationvm}
+### Context {#intptr-context}
 
-JavaVM&#42; pointer to use for Android up-calls. 
+jobject to android. content. Context instance for Android up-calls. 
 
 ```csharp
 
-public IntPtr ApplicationVm;
+public IntPtr Context;
+
+```
+
+
+
+
+
+
+-----------
+
+### Height {#uint-height}
+
+Vertical size of webview in pixels. 
+
+```csharp
+
+public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### IsPopup {#bool-ispopup}
+
+Is this a popup? 
+
+```csharp
+
+public bool IsPopup;
+
+```
+
+
+
+
+
+
+-----------
+
+### PopupID {#ulong-popupid}
+
+Popup identifier used to create a webview. 
+
+```csharp
+
+public ulong PopupID;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+Version of this struct. 
+
+```csharp
+
+public uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### Width {#uint-width}
+
+Horizontal size of webview in pixels. 
+
+```csharp
+
+public uint Width;
 
 ```
 

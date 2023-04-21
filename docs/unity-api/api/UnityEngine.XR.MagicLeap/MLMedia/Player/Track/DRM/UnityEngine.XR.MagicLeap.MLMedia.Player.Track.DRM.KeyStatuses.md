@@ -32,13 +32,13 @@ public override string ToString()
 
 ## Public Attributes
 
-### SessionId {#readonly-byte-sessionid}
+### HasNewUseableKey {#readonly-bool-hasnewuseablekey}
 
-[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
+Indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key. 
 
 ```csharp
 
-public readonly byte [] SessionId;
+public readonly bool HasNewUseableKey;
 
 ```
 
@@ -69,13 +69,13 @@ public readonly Key [] Keys;
 
 -----------
 
-### HasNewUseableKey {#readonly-bool-hasnewuseablekey}
+### SessionId {#readonly-byte-sessionid}
 
-Indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key. 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public readonly bool HasNewUseableKey;
+public readonly byte [] SessionId;
 
 ```
 

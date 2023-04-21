@@ -16,13 +16,13 @@ title: OnInfoData
 
 ## Public Attributes
 
-### Info {#info-info}
+### Extra {#int-extra}
 
-The info of [MLMediaRecorder.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info)
+The extra info 
 
 ```csharp
 
-public Info Info;
+public int Extra;
 
 ```
 
@@ -33,13 +33,13 @@ public Info Info;
 
 -----------
 
-### Extra {#int-extra}
+### Info {#info-info}
 
-The extra info 
+The info of [MLMediaRecorder.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info)
 
 ```csharp
 
-public int Extra;
+public Info Info;
 
 ```
 

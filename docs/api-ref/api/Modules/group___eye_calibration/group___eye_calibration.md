@@ -50,8 +50,7 @@ APIs for querying the eye calibration state.
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * 
 
 
@@ -78,8 +77,7 @@ Has a calibration occurred. If so, what was the granularity.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -103,8 +101,7 @@ A struct representing the eye calibration state.
 [More Info](/api-ref/api/Modules/group___eye_calibration/struct_m_l_eye_calibration_state.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -133,8 +130,7 @@ Initialize [MLEyeCalibrationState](/api-ref/api/Modules/group___eye_calibration/
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -173,8 +169,7 @@ Creates an eye calibration client.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -213,8 +208,7 @@ Destroys an eye calibration client.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -255,8 +249,7 @@ Gets information about the user's current eye calibration.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

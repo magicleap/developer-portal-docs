@@ -38,11 +38,23 @@ namespace UnityEngine.XR.MagicLeap
     [RequireXRLoader]
     public sealed partial class MLCVCamera : MLAutoAPISingleton<MLCVCamera>
     {
+        private bool WasStarted = false;
+
         public static MLResult GetFramePose(MLTime vcamTimestamp, out Matrix4x4 outTransform)
         {
-            getFramePosePerfMarker.Begin();
-            MLResult result = Instance.InternalGetFramePose(NativeBindings.CameraID.ColorCamera, vcamTimestamp, out outTransform);
-            getFramePosePerfMarker.End();
+            MLResult result;
+
+            if (IsStarted)
+            {
+                getFramePosePerfMarker.Begin();
+                result = Instance.InternalGetFramePose(NativeBindings.CameraID.ColorCamera, vcamTimestamp, out outTransform);
+                getFramePosePerfMarker.End();
+            }
+            else
+            {
+                result = MLResult.Create(MLResult.Code.UnspecifiedFailure);
+                outTransform = Matrix4x4.identity;
+            }
 
             return result;
         }
@@ -89,6 +101,42 @@ namespace UnityEngine.XR.MagicLeap
             }
 
             return poseResult;
+        }
+
+        protected override void OnApplicationPause(bool pauseStatus)
+        {
+            if (pauseStatus)
+            {
+                HandleApplicationPause();
+            }
+            else
+            {
+                HandleApplicationUnpause();
+            }
+        }
+
+        private void HandleApplicationPause()
+        {
+            if (IsStarted)
+            {
+                MLResult.Code result = StopAPI();
+                if (result == MLResult.Code.Ok)
+                {
+                    WasStarted = true;
+                }
+            }
+        }
+
+        private void HandleApplicationUnpause()
+        {
+            if (WasStarted)
+            {
+                MLResult.Code result = StartAPI();
+                if (result == MLResult.Code.Ok)
+                {
+                    WasStarted = false;
+                }
+            }
         }
     }
 }

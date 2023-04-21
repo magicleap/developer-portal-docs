@@ -64,11 +64,11 @@ public static MLWebRTCAppDefinedSourceParams Create(
 
 ## Public Attributes
 
-### Version {#uint-version}
+### Callbacks {#intptr-callbacks}
 
 ```csharp
 
-public uint Version;
+public IntPtr Callbacks;
 
 ```
 
@@ -94,11 +94,11 @@ public string TrackName;
 
 -----------
 
-### Callbacks {#intptr-callbacks}
+### Version {#uint-version}
 
 ```csharp
 
-public IntPtr Callbacks;
+public uint Version;
 
 ```
 

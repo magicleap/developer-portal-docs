@@ -17,19 +17,6 @@ Connection settings for MR capture.
 
 ## Public Methods
 
-### override string ToString {#override-string-tostring}
-
-```csharp
-public override string ToString()
-```
-
-
-
-
-
-
------------
-
 ### [MRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md) Create {#mrconnectinfo-create}
 
 Create and return an initialized version of this struct. 
@@ -49,21 +36,34 @@ public static MRConnectInfo Create()
 
 -----------
 
+### override string ToString {#override-string-tostring}
+
+```csharp
+public override string ToString()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
-### MRQuality {#mrquality-mrquality}
+### FrameRate {#captureframerate-framerate}
 
-video quality 
+capture frame rate 
 
 ```csharp
 
-public MRQuality MRQuality;
+public CaptureFrameRate FrameRate;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration  |
+| [CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
 
 
 
@@ -91,19 +91,19 @@ public MRBlendType MRBlendType;
 
 -----------
 
-### FrameRate {#captureframerate-framerate}
+### MRQuality {#mrquality-mrquality}
 
-capture frame rate 
+video quality 
 
 ```csharp
 
-public CaptureFrameRate FrameRate;
+public MRQuality MRQuality;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
+| [MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration  |
 
 
 

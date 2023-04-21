@@ -59,6 +59,12 @@ namespace UnityEngine.XR.MagicLeap
 
             public delegate void OnServiceFailedCallback(MLResult result, IntPtr userData);
 
+            public delegate bool OnBeforePopupCallback([MarshalAs(UnmanagedType.LPStr)] string url, IntPtr userData);
+
+            public delegate void OnPopupOpenedCallback(ulong popupID, [MarshalAs(UnmanagedType.LPStr)] string url, IntPtr userData);
+
+            public delegate void OnPopupClosedCallback(ulong handle, IntPtr userData);
+
             [StructLayout(LayoutKind.Sequential)]
             public struct CursorState
             {
@@ -97,16 +103,22 @@ namespace UnityEngine.XR.MagicLeap
 
                 public EventCallbacks Callbacks;
 
-                public static Settings Create(GCHandle gcHandle, uint width, uint height)
+                public bool IsPopup;
+
+                public ulong PopupID;
+
+                public static Settings Create(GCHandle gcHandle, uint width, uint height, bool isPopup, ulong popupID)
                 {
                     return new Settings()
                     {
-                        Version = 1,
+                        Version = 3,
                         Width = width,
                         Height = height,
                         ApplicationVm = GetJavaVM(),
                         Context = GetAppContext(),
-                        Callbacks = EventCallbacks.Create(gcHandle)
+                        Callbacks = EventCallbacks.Create(gcHandle),
+                        IsPopup = isPopup,
+                        PopupID = popupID
                     };
                 }
             };
@@ -138,11 +150,17 @@ namespace UnityEngine.XR.MagicLeap
 
                 public OnServiceFailedCallback OnServiceFailed;
 
+                public OnBeforePopupCallback OnBeforePopup;
+
+                public OnPopupOpenedCallback OnPopupOpened;
+
+                public OnPopupClosedCallback OnPopupClosed;
+
                 public static EventCallbacks Create(GCHandle gcHandle)
                 {
                     return new EventCallbacks()
                     {
-                        Version = 2u,
+                        Version = 3u,
                         UserData = GCHandle.ToIntPtr(gcHandle),
                         OnBeforeResourceLoad = HandleOnBeforeResourceLoad,
                         OnLoadEnd = HandleOnLoadEnd,
@@ -153,7 +171,10 @@ namespace UnityEngine.XR.MagicLeap
                         OnDestroy = HandleOnDestroy,
                         OnServiceConnected = HandleServiceConnected,
                         OnServiceDisconnected = HandleServiceDisconnected,
-                        OnServiceFailed = HandleServiceFailed
+                        OnServiceFailed = HandleServiceFailed,
+                        OnBeforePopup = HandleBeforePopup,
+                        OnPopupOpened = HandlePopupOpened,
+                        OnPopupClosed = HandlePopupClosed
                     };
                 }
             };
@@ -346,6 +367,31 @@ namespace UnityEngine.XR.MagicLeap
                 GCHandle gcHandle = GCHandle.FromIntPtr(userData);
                 MLWebView webView = gcHandle.Target as MLWebView;
                 MLThreadDispatch.Call(webView, result, webView.OnServiceFailed);
+            }
+
+            [AOT.MonoPInvokeCallback(typeof(OnBeforePopupCallback))]
+            private static bool HandleBeforePopup([MarshalAs(UnmanagedType.LPStr)] string url, IntPtr userData)
+            {
+                GCHandle gcHandle = GCHandle.FromIntPtr(userData);
+                MLWebView webView = gcHandle.Target as MLWebView;
+                MLThreadDispatch.Call(webView, url, webView.AcceptPopup, webView.OnBeforePopup);
+                return webView.AcceptPopup;
+            }
+
+            [AOT.MonoPInvokeCallback(typeof(OnPopupOpenedCallback))]
+            private static void HandlePopupOpened(ulong popupID, [MarshalAs(UnmanagedType.LPStr)] string url, IntPtr userData)
+            {
+                GCHandle gcHandle = GCHandle.FromIntPtr(userData);
+                MLWebView webView = gcHandle.Target as MLWebView;
+                MLThreadDispatch.Call(webView, popupID, url, webView.OnPopupOpened);
+            }
+
+            [AOT.MonoPInvokeCallback(typeof(OnPopupClosedCallback))]
+            private static void HandlePopupClosed(ulong handle, IntPtr userData)
+            {
+                GCHandle gcHandle = GCHandle.FromIntPtr(userData);
+                MLWebView webView = gcHandle.Target as MLWebView;
+                MLThreadDispatch.Call(webView, handle, webView.OnPopupClosed);
             }
         }
     }

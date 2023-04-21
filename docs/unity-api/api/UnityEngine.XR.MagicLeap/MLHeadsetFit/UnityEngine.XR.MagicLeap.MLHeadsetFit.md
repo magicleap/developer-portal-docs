@@ -66,18 +66,27 @@ public static MLResult GetState(
 
 ## Protected Methods
 
-### StopAPI {#override-stopapi}
+### OnApplicationPause {#override-void-onapplicationpause}
 
-Stop the API. 
+Handle Unity application pause and resume 
 
 ```csharp
-protected virtual override MLResult.Code StopAPI()
+protected virtual override void OnApplicationPause(
+    bool pauseStatus
+)
 ```
 
 
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |pauseStatus|If the application is now paused or not|
 
 
-**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
+
+
+**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-onapplicationpause)
 
 
 
@@ -100,27 +109,18 @@ protected virtual override MLResult.Code StartAPI()
 
 -----------
 
-### OnApplicationPause {#override-void-onapplicationpause}
+### StopAPI {#override-stopapi}
 
-Handle Unity application pause and resume 
+Stop the API. 
 
 ```csharp
-protected virtual override void OnApplicationPause(
-    bool pauseStatus
-)
+protected virtual override MLResult.Code StopAPI()
 ```
 
 
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| bool |pauseStatus|If the application is now paused or not|
 
 
-
-
-**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-onapplicationpause)
+**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
 
 
 

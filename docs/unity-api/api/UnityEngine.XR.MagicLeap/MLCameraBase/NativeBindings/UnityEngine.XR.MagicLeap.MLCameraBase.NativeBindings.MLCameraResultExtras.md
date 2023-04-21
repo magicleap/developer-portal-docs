@@ -17,30 +17,13 @@ summary: resultextras is a structure to encapsulate various indices for a captur
 
 ## Public Attributes
 
-### Version {#readonly-uint-version}
+### FrameNumber {#readonly-long-framenumber}
 
-version contains the version number for this structure. 
-
-```csharp
-
-public readonly uint Version;
-
-```
-
-
-
-
-
-
------------
-
-### VcamTimestamp {#readonly-long-vcamtimestamp}
-
-VCam exposure timestamp in microseconds (us) 
+A 64bit integer to index the frame number associated with this result 
 
 ```csharp
 
-public readonly long VcamTimestamp;
+public readonly long FrameNumber;
 
 ```
 
@@ -68,13 +51,30 @@ public readonly IntPtr Intrinsics;
 
 -----------
 
-### FrameNumber {#readonly-long-framenumber}
+### VcamTimestamp {#readonly-long-vcamtimestamp}
 
-A 64bit integer to index the frame number associated with this result 
+VCam exposure timestamp in microseconds (us) 
 
 ```csharp
 
-public readonly long FrameNumber;
+public readonly long VcamTimestamp;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#readonly-uint-version}
+
+version contains the version number for this structure. 
+
+```csharp
+
+public readonly uint Version;
 
 ```
 

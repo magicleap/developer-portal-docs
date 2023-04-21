@@ -18,10 +18,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLWebRTCSourceAppDefinedVideoSourcePushFrame_Exists {#void-nativebinding-mlwebrtcsourceappdefinedvideosourcepushframe-exists}
 
 ```csharp
-public void SetupNativeBindings()
+public void NativeBinding_MLWebRTCSourceAppDefinedVideoSourcePushFrame_Exists()
 ```
 
 
@@ -44,10 +44,10 @@ public void NativeBinding_MLWebRTCSourceCreateAppDefinedVideoSource_Exists()
 
 -----------
 
-### void NativeBinding_MLWebRTCSourceAppDefinedVideoSourcePushFrame_Exists {#void-nativebinding-mlwebrtcsourceappdefinedvideosourcepushframe-exists}
+### void SetupNativeBindings {#void-setupnativebindings}
 
 ```csharp
-public void NativeBinding_MLWebRTCSourceAppDefinedVideoSourcePushFrame_Exists()
+public void SetupNativeBindings()
 ```
 
 

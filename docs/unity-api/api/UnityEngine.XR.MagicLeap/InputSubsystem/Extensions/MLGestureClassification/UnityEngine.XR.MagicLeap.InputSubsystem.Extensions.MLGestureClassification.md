@@ -16,22 +16,11 @@ title: MLGestureClassification
 
 ## Public Methods
 
-### bool TryGetHandPosture {#bool-trygethandposture}
+### void StartTracking {#void-starttracking}
 
 ```csharp
-public static bool TryGetHandPosture(
-    InputDevice handDevice,
-    out PostureType Posture
-)
+public static void StartTracking()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| InputDevice |handDevice||
-| out PostureType |Posture||
 
 
 
@@ -40,12 +29,25 @@ public static bool TryGetHandPosture(
 
 -----------
 
-### bool TryGetHandKeyPose {#bool-trygethandkeypose}
+### void StopTracking {#void-stoptracking}
 
 ```csharp
-public static bool TryGetHandKeyPose(
+public static void StopTracking()
+```
+
+
+
+
+
+
+-----------
+
+### bool TryGetFingerAngles {#bool-trygetfingerangles}
+
+```csharp
+public static bool TryGetFingerAngles(
     InputDevice handDevice,
-    out KeyPoseType KeyPose
+    out FingerAngleDeg allFingerAngles
 )
 ```
 
@@ -55,7 +57,7 @@ public static bool TryGetHandKeyPose(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out KeyPoseType |KeyPose||
+| out [FingerAngleDeg](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
 
 
 
@@ -90,12 +92,12 @@ public static bool TryGetFingerState(
 
 -----------
 
-### bool TryGetFingerAngles {#bool-trygetfingerangles}
+### bool TryGetHandKeyPose {#bool-trygethandkeypose}
 
 ```csharp
-public static bool TryGetFingerAngles(
+public static bool TryGetHandKeyPose(
     InputDevice handDevice,
-    out FingerAngleDeg allFingerAngles
+    out KeyPoseType KeyPose
 )
 ```
 
@@ -105,7 +107,7 @@ public static bool TryGetFingerAngles(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out [FingerAngleDeg](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
+| out KeyPoseType |KeyPose||
 
 
 
@@ -114,24 +116,22 @@ public static bool TryGetFingerAngles(
 
 -----------
 
-### void StopTracking {#void-stoptracking}
+### bool TryGetHandPosture {#bool-trygethandposture}
 
 ```csharp
-public static void StopTracking()
+public static bool TryGetHandPosture(
+    InputDevice handDevice,
+    out PostureType Posture
+)
 ```
 
 
+**Parameters**
 
-
-
-
------------
-
-### void StartTracking {#void-starttracking}
-
-```csharp
-public static void StartTracking()
-```
+| Type | Name  | Description  | 
+|--|--|--|
+| InputDevice |handDevice||
+| out PostureType |Posture||
 
 
 
@@ -141,21 +141,6 @@ public static void StartTracking()
 -----------
 
 ## Public Attributes
-
-### RightGestureInputDeviceName {#const-string-rightgestureinputdevicename}
-
-```csharp
-
-public const string RightGestureInputDeviceName = "MagicLeapHandGesture - Right";
-
-```
-
-
-
-
-
-
------------
 
 ### LeftGestureInputDeviceName {#const-string-leftgestureinputdevicename}
 
@@ -172,17 +157,32 @@ public const string LeftGestureInputDeviceName = "MagicLeapHandGesture - Left";
 
 -----------
 
+### RightGestureInputDeviceName {#const-string-rightgestureinputdevicename}
+
+```csharp
+
+public const string RightGestureInputDeviceName = "MagicLeapHandGesture - Right";
+
+```
+
+
+
+
+
+
+-----------
+
 ## Public Enums
 
-### PostureType {#enums-posturetype}
+### FingerType {#enums-fingertype}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | |   |
-| Pinch | |   |
-| Point | |   |
-| Grasp | |   |
-| Open | |   |
+| Thumb | 0|   |
+| Index | |   |
+| Middle | |   |
+| Ring | |   |
+| Pinky | |   |
 
 
 
@@ -216,15 +216,15 @@ public const string LeftGestureInputDeviceName = "MagicLeapHandGesture - Left";
 
 -----------
 
-### FingerType {#enums-fingertype}
+### PostureType {#enums-posturetype}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Thumb | 0|   |
-| Index | |   |
-| Middle | |   |
-| Ring | |   |
-| Pinky | |   |
+| None | |   |
+| Pinch | |   |
+| Point | |   |
+| Grasp | |   |
+| Open | |   |
 
 
 

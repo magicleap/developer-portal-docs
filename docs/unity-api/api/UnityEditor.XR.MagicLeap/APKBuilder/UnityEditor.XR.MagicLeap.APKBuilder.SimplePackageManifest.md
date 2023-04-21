@@ -16,26 +16,11 @@ title: SimplePackageManifest
 
 ## Public Attributes
 
-### version {#string-version}
+### description {#string-description}
 
 ```csharp
 
-public string version;
-
-```
-
-
-
-
-
-
------------
-
-### name {#string-name}
-
-```csharp
-
-public string name;
+public string description;
 
 ```
 
@@ -61,11 +46,26 @@ public string displayName;
 
 -----------
 
-### description {#string-description}
+### name {#string-name}
 
 ```csharp
 
-public string description;
+public string name;
+
+```
+
+
+
+
+
+
+-----------
+
+### version {#string-version}
+
+```csharp
+
+public string version;
 
 ```
 

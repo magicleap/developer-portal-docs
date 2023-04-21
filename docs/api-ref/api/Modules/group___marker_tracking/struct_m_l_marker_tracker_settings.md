@@ -41,8 +41,7 @@ When creating a Marker Tracker, this list of settings needs to be passed to conf
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 

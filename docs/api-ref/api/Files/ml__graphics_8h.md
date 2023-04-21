@@ -267,8 +267,7 @@ This structure must be initialized by calling [MLGraphicsFrameParamsExInit()](/a
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md)
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -314,8 +313,7 @@ The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/gro
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md)
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -340,8 +338,7 @@ This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExI
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md)
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -441,8 +438,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 [More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md)
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -499,8 +495,7 @@ Initializes a [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/st
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -526,8 +521,7 @@ Initializes default values for [MLGraphicsClipExtentsParams](/api-ref/api/Module
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -553,8 +547,7 @@ Initializes default values for [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/M
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -580,8 +573,7 @@ Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group_
 
 
 
-**API Level:
- 7**
+**API Level:\n 7**
   * 
 
 
@@ -900,8 +892,7 @@ Note : Calls to [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/g
 
 
 
-**API Level:
- 22**
+**API Level:\n 22**
   * 
 
 
@@ -992,8 +983,7 @@ EXPERIMENTAL.
 
 
 
-**API Level:
- 4**
+**API Level:\n 4**
   * 
 
 
@@ -1150,8 +1140,7 @@ Can be called any time after the client has been created. Updates are reflected 
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

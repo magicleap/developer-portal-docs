@@ -16,30 +16,6 @@ title: Extensions
 
 ## Public Methods
 
-### bool TryGetHeadTrackingState {#bool-trygetheadtrackingstate}
-
-```csharp
-public static bool TryGetHeadTrackingState(
-    InputDevice headDevice,
-    out MLHeadTracking.State headTrackingState
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| InputDevice |headDevice||
-| out [MLHeadTracking.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.State.md) |headTrackingState|A structure containing information on the current state of the Head Tracking system. |
-
-
-
-
-
-
------------
-
 ### bool TryGetEyeTrackingState {#bool-trygeteyetrackingstate}
 
 Try to get the [InputSubsystem.Extensions.MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md), InputDevice   from the given . 
@@ -87,6 +63,30 @@ if(eyesDevice.isValid){
 
 
 is valid. 
+
+
+
+-----------
+
+### bool TryGetHeadTrackingState {#bool-trygetheadtrackingstate}
+
+```csharp
+public static bool TryGetHeadTrackingState(
+    InputDevice headDevice,
+    out MLHeadTracking.State headTrackingState
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputDevice |headDevice||
+| out [MLHeadTracking.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.State.md) |headTrackingState|A structure containing information on the current state of the Head Tracking system. |
+
+
+
 
 
 

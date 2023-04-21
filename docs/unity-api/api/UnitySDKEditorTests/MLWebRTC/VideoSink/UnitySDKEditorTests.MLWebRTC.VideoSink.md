@@ -18,62 +18,10 @@ Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests
 
 ## Public Methods
 
-### void SetupNativeBindings {#void-setupnativebindings}
+### void NativeBinding_MLWebRTCVideoSinkAcquireNextAvailableFrame_Exists {#void-nativebinding-mlwebrtcvideosinkacquirenextavailableframe-exists}
 
 ```csharp
-public void SetupNativeBindings()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLWebRTCVideoSinkSetSource_Exists {#void-nativebinding-mlwebrtcvideosinksetsource-exists}
-
-```csharp
-public void NativeBinding_MLWebRTCVideoSinkSetSource_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLWebRTCVideoSinkReleaseFrame_Exists {#void-nativebinding-mlwebrtcvideosinkreleaseframe-exists}
-
-```csharp
-public void NativeBinding_MLWebRTCVideoSinkReleaseFrame_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLWebRTCVideoSinkIsNewFrameAvailable_Exists {#void-nativebinding-mlwebrtcvideosinkisnewframeavailable-exists}
-
-```csharp
-public void NativeBinding_MLWebRTCVideoSinkIsNewFrameAvailable_Exists()
-```
-
-
-
-
-
-
------------
-
-### void NativeBinding_MLWebRTCVideoSinkDestroy_Exists {#void-nativebinding-mlwebrtcvideosinkdestroy-exists}
-
-```csharp
-public void NativeBinding_MLWebRTCVideoSinkDestroy_Exists()
+public void NativeBinding_MLWebRTCVideoSinkAcquireNextAvailableFrame_Exists()
 ```
 
 
@@ -96,10 +44,62 @@ public void NativeBinding_MLWebRTCVideoSinkCreate_Exists()
 
 -----------
 
-### void NativeBinding_MLWebRTCVideoSinkAcquireNextAvailableFrame_Exists {#void-nativebinding-mlwebrtcvideosinkacquirenextavailableframe-exists}
+### void NativeBinding_MLWebRTCVideoSinkDestroy_Exists {#void-nativebinding-mlwebrtcvideosinkdestroy-exists}
 
 ```csharp
-public void NativeBinding_MLWebRTCVideoSinkAcquireNextAvailableFrame_Exists()
+public void NativeBinding_MLWebRTCVideoSinkDestroy_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLWebRTCVideoSinkIsNewFrameAvailable_Exists {#void-nativebinding-mlwebrtcvideosinkisnewframeavailable-exists}
+
+```csharp
+public void NativeBinding_MLWebRTCVideoSinkIsNewFrameAvailable_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLWebRTCVideoSinkReleaseFrame_Exists {#void-nativebinding-mlwebrtcvideosinkreleaseframe-exists}
+
+```csharp
+public void NativeBinding_MLWebRTCVideoSinkReleaseFrame_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void NativeBinding_MLWebRTCVideoSinkSetSource_Exists {#void-nativebinding-mlwebrtcvideosinksetsource-exists}
+
+```csharp
+public void NativeBinding_MLWebRTCVideoSinkSetSource_Exists()
+```
+
+
+
+
+
+
+-----------
+
+### void SetupNativeBindings {#void-setupnativebindings}
+
+```csharp
+public void SetupNativeBindings()
 ```
 
 

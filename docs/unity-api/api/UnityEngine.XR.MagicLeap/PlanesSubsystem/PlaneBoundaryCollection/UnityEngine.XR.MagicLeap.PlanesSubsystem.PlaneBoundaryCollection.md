@@ -44,13 +44,13 @@ The plane boundaries are tied to native resources which are managed by the Magic
 
 ## Public Fields
 
-### valid {#bool-valid}
+### count {#int-count}
 
-Whether this collection is valid or not. Check for validity before using the index operator. 
+The number of boundaries in this collection. 
 
 ```csharp
 
-public bool valid { get; set; }
+public int count { get; set; }
 
 ```
 
@@ -101,13 +101,13 @@ public PlaneBoundary this[int index] { get; set; }
 
 -----------
 
-### count {#int-count}
+### valid {#bool-valid}
 
-The number of boundaries in this collection. 
+Whether this collection is valid or not. Check for validity before using the index operator. 
 
 ```csharp
 
-public int count { get; set; }
+public bool valid { get; set; }
 
 ```
 
@@ -119,104 +119,6 @@ public int count { get; set; }
 -----------
 
 ## Public Methods
-
-### bool operator== {#bool-operator}
-
-Comapres for equality. Same as [Equals(PlaneBoundaryCollection)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
-
-```csharp
-public static bool operator==(
-    PlaneBoundaryCollection lhs,
-    PlaneBoundaryCollection rhs
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
-
-
-
-
-
-
-**Returns**:  true  if all fields of this [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) compare equal to _other_ .
-
-
-
------------
-
-### bool operator!= {#bool-operator}
-
-Comapres for inequality. Same as  ! [Equals(PlaneBoundaryCollection)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
-
-```csharp
-public static bool operator!=(
-    PlaneBoundaryCollection lhs,
-    PlaneBoundaryCollection rhs
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
-
-
-
-
-
-
-**Returns**:  true  if any of the fields of this [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) are not equal to _other_ .
-
-
-
------------
-
-### override int GetHashCode {#override-int-gethashcode}
-
-Computes a hash code suitable for use in a  Dictionary  or  HashSet . 
-
-```csharp
-public override int GetHashCode()
-```
-
-
-
-
-
-
-**Returns**: A hash code suitable for use in a  Dictionary  or  HashSet .
-
-
-
------------
-
-### [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) GetEnumerator {#enumerator-getenumerator}
-
-Get an enumerator, compatible with a duck-typed foreach. You typically would not call this directly, but is used by the compiler in a  foreach  statement. 
-
-```csharp
-public Enumerator GetEnumerator()
-```
-
-
-
-
-
-
-**Returns**: An [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) compatible with a duck-typed foreach.
-
-
-
------------
 
 ### override bool Equals {#override-bool-equals}
 
@@ -274,13 +176,111 @@ public bool Equals(
 
 -----------
 
+### [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) GetEnumerator {#enumerator-getenumerator}
+
+Get an enumerator, compatible with a duck-typed foreach. You typically would not call this directly, but is used by the compiler in a  foreach  statement. 
+
+```csharp
+public Enumerator GetEnumerator()
+```
+
+
+
+
+
+
+**Returns**: An [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) compatible with a duck-typed foreach.
+
+
+
+-----------
+
+### override int GetHashCode {#override-int-gethashcode}
+
+Computes a hash code suitable for use in a  Dictionary  or  HashSet . 
+
+```csharp
+public override int GetHashCode()
+```
+
+
+
+
+
+
+**Returns**: A hash code suitable for use in a  Dictionary  or  HashSet .
+
+
+
+-----------
+
+### bool operator!= {#bool-operator}
+
+Comapres for inequality. Same as  ! [Equals(PlaneBoundaryCollection)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
+
+```csharp
+public static bool operator!=(
+    PlaneBoundaryCollection lhs,
+    PlaneBoundaryCollection rhs
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
+| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
+
+
+
+
+
+
+**Returns**:  true  if any of the fields of this [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) are not equal to _other_ .
+
+
+
+-----------
+
+### bool operator== {#bool-operator}
+
+Comapres for equality. Same as [Equals(PlaneBoundaryCollection)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
+
+```csharp
+public static bool operator==(
+    PlaneBoundaryCollection lhs,
+    PlaneBoundaryCollection rhs
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
+| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
+
+
+
+
+
+
+**Returns**:  true  if all fields of this [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) compare equal to _other_ .
+
+
+
+-----------
+
 ## Public Attributes
 
-### m_Pose {#pose-m-pose}
+### m_Boundaries {#nativearray-extensionsmlplaneboundary-m-boundaries}
 
 ```csharp
 
-public Pose m_Pose;
+public NativeArray< Extensions.MLPlaneBoundary > m_Boundaries;
 
 ```
 
@@ -291,11 +291,11 @@ public Pose m_Pose;
 
 -----------
 
-### m_Boundaries {#nativearray-extensionsmlplaneboundary-m-boundaries}
+### m_Pose {#pose-m-pose}
 
 ```csharp
 
-public NativeArray< Extensions.MLPlaneBoundary > m_Boundaries;
+public Pose m_Pose;
 
 ```
 

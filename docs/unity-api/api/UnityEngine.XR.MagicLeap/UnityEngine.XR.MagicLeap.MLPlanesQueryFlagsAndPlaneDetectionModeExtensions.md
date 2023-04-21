@@ -19,28 +19,6 @@ title: MLPlanesQueryFlagsAndPlaneDetectionModeExtensions
 
 ## Public Methods
 
-### PlaneDetectionMode ToPlaneDetectionMode {#planedetectionmode-toplanedetectionmode}
-
-```csharp
-public static PlaneDetectionMode ToPlaneDetectionMode(
-    this PlanesSubsystem.Extensions.MLPlanesQueryFlags MLPlanesQueryFlags
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| this [PlanesSubsystem.Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |MLPlanesQueryFlags||
-
-
-
-
-
-
------------
-
 ### [PlanesSubsystem.Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) ToMLQueryFlags {#planessubsystemextensionsmlplanesqueryflags-tomlqueryflags}
 
 ```csharp
@@ -55,6 +33,28 @@ public static PlanesSubsystem.Extensions.MLPlanesQueryFlags ToMLQueryFlags(
 | Type | Name  | Description  | 
 |--|--|--|
 | this PlaneDetectionMode |planeDetectionMode||
+
+
+
+
+
+
+-----------
+
+### PlaneDetectionMode ToPlaneDetectionMode {#planedetectionmode-toplanedetectionmode}
+
+```csharp
+public static PlaneDetectionMode ToPlaneDetectionMode(
+    this PlanesSubsystem.Extensions.MLPlanesQueryFlags MLPlanesQueryFlags
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| this [PlanesSubsystem.Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |MLPlanesQueryFlags||
 
 
 

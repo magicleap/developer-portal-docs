@@ -19,21 +19,6 @@ title: SubsystemFeatures
 
 ## Public Fields
 
-### requestedFeatures {#feature-requestedfeatures}
-
-```csharp
-
-public static Feature requestedFeatures { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### currentFeatures {#feature-currentfeatures}
 
 ```csharp
@@ -49,14 +34,28 @@ public static Feature currentFeatures { get; set; }
 
 -----------
 
-## Public Methods
-
-### void SetFeatureRequested {#void-setfeaturerequested}
+### requestedFeatures {#feature-requestedfeatures}
 
 ```csharp
-public static void SetFeatureRequested(
-    Feature feature,
-    bool value
+
+public static Feature requestedFeatures { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+## Public Methods
+
+### unsafe NativeArray&lt; ConfigurationDescriptor &gt; AcquireConfigurationDescriptors {#unsafe-nativearray-configurationdescriptor-acquireconfigurationdescriptors}
+
+```csharp
+public static unsafe NativeArray< ConfigurationDescriptor > AcquireConfigurationDescriptors(
+    Allocator allocator
 )
 ```
 
@@ -65,8 +64,7 @@ public static void SetFeatureRequested(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| Feature |feature||
-| bool |value||
+| Allocator |allocator||
 
 
 
@@ -99,11 +97,12 @@ public static void SetCurrentFeatureEnabled(
 
 -----------
 
-### unsafe NativeArray&lt; ConfigurationDescriptor &gt; AcquireConfigurationDescriptors {#unsafe-nativearray-configurationdescriptor-acquireconfigurationdescriptors}
+### void SetFeatureRequested {#void-setfeaturerequested}
 
 ```csharp
-public static unsafe NativeArray< ConfigurationDescriptor > AcquireConfigurationDescriptors(
-    Allocator allocator
+public static void SetFeatureRequested(
+    Feature feature,
+    bool value
 )
 ```
 
@@ -112,7 +111,8 @@ public static unsafe NativeArray< ConfigurationDescriptor > AcquireConfiguration
 
 | Type | Name  | Description  | 
 |--|--|--|
-| Allocator |allocator||
+| Feature |feature||
+| bool |value||
 
 
 

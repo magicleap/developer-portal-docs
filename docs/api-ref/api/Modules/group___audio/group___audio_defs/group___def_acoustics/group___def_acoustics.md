@@ -44,15 +44,14 @@ typedef struct MLAudioDispersionProperties MLAudioDispersionProperties;
 ```
 
 
-riefProperties specifying acoustic dispersion (clustered reflections).
+\briefProperties specifying acoustic dispersion (clustered reflections).
 
 
 
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_dispersion_properties.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -73,8 +72,7 @@ Properties specifying acoustic reverberation.
 [More Info](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/struct_m_l_audio_reverb_properties.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

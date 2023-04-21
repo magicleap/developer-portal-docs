@@ -38,16 +38,19 @@ public static MLCameraCaptureStreamCaps Create()
 
 ## Public Attributes
 
-### Width {#int-width}
+### CaptureType {#mlcameracapturetype-capturetype}
 
-Capture Resolution 
+capture&#95;type Video, Image ,Preview 
 
 ```csharp
 
-public int Width;
+public MLCamera.CaptureType CaptureType;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -72,19 +75,16 @@ public int Height;
 
 -----------
 
-### CaptureType {#mlcameracapturetype-capturetype}
+### Width {#int-width}
 
-capture&#95;type Video, Image ,Preview 
+Capture Resolution 
 
 ```csharp
 
-public MLCamera.CaptureType CaptureType;
+public int Width;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 

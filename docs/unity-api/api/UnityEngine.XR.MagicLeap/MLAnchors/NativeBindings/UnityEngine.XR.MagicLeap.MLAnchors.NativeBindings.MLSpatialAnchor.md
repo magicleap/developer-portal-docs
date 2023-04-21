@@ -65,16 +65,19 @@ public MLSpatialAnchor(
 
 ## Public Attributes
 
-### Version {#readonly-uint-version}
+### Cfuid {#readonly-cfuid}
 
-Version of the structure. 
+The coordinate frame identifier of the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). This should be passed to MLSnapshotGetTransform to get the anchor's transform. The anchor's transform is set when the anchor is created but may be updated later by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
 
 ```csharp
 
-public readonly uint Version;
+public readonly NativeBindings.MLCoordinateFrameUID Cfuid;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| readonly [NativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 
@@ -82,30 +85,13 @@ public readonly uint Version;
 
 -----------
 
-### SpaceId {#readonly-mluuidbytes-spaceid}
+### ExpirationTimeStamp {#readonly-ulong-expirationtimestamp}
 
-The ID of the space that this anchor belongs to. This is only relevant if IsPersisted is true. 
-
-```csharp
-
-public readonly MLUUIDBytes SpaceId;
-
-```
-
-
-
-
-
-
------------
-
-### IsPersisted {#readonly-bool-ispersisted}
-
-Indicates whether or not the anchor has been persisted via a call to [MLSpatialAnchorPublish](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.md#mlresultcode-mlspatialanchorpublish). 
+The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
 
 ```csharp
 
-public readonly bool IsPersisted;
+public readonly ulong ExpirationTimeStamp;
 
 ```
 
@@ -133,13 +119,13 @@ public readonly MLUUIDBytes Id;
 
 -----------
 
-### ExpirationTimeStamp {#readonly-ulong-expirationtimestamp}
+### IsPersisted {#readonly-bool-ispersisted}
 
-The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
+Indicates whether or not the anchor has been persisted via a call to [MLSpatialAnchorPublish](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.md#mlresultcode-mlspatialanchorpublish). 
 
 ```csharp
 
-public readonly ulong ExpirationTimeStamp;
+public readonly bool IsPersisted;
 
 ```
 
@@ -150,19 +136,33 @@ public readonly ulong ExpirationTimeStamp;
 
 -----------
 
-### Cfuid {#readonly-cfuid}
+### SpaceId {#readonly-mluuidbytes-spaceid}
 
-The coordinate frame identifier of the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). This should be passed to MLSnapshotGetTransform to get the anchor's transform. The anchor's transform is set when the anchor is created but may be updated later by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
+The ID of the space that this anchor belongs to. This is only relevant if IsPersisted is true. 
 
 ```csharp
 
-public readonly NativeBindings.MLCoordinateFrameUID Cfuid;
+public readonly MLUUIDBytes SpaceId;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [NativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
+
+
+
+
+
+-----------
+
+### Version {#readonly-uint-version}
+
+Version of the structure. 
+
+```csharp
+
+public readonly uint Version;
+
+```
+
 
 
 

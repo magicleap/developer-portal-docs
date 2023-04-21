@@ -21,9 +21,9 @@ title: YcbcrRendererNativeBindingsPlayModeTests.cs
 using System.Reflection;
 using NUnit.Framework;
 
-namespace Tests.Runtime.NativeBindings
+namespace UnitySDKPlayTests
 {
-    public class YcbcrRendererNativeBindingsPlayModeTests : NativeBindingsPlayTests
+    public partial class YcbcrRenderer : NativeBindingsPlayTests
     {
         [SetUp]
         public void SetupNativeBindings()

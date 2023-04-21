@@ -322,8 +322,7 @@ Hand in which the controller is held.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -368,8 +367,7 @@ This structure must be initialized by calling [MLInputControllerCallbacksExInit(
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -410,8 +408,7 @@ A structure containing information about the current state of an input controlle
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md)
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -432,8 +429,7 @@ A structure containing information about the connected devices.
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -457,8 +453,7 @@ When playing haptic pre-defined pattern, needed information is stored in this st
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -482,8 +477,7 @@ When playing haptic buzz command, needed information is stored in this structure
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -532,8 +526,7 @@ A custom haptics pattern can be played by combining Buzz haptic command and/or a
 [More Info](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -562,8 +555,7 @@ Initializes default values for [MLInputControllerCallbacksEx](/api-ref/api/Modul
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -589,8 +581,7 @@ Initializes values for [MLInputControllerStateEx](/api-ref/api/Modules/group___i
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -616,8 +607,7 @@ Initializes default values for [MLInputConnectedDevicesList](/api-ref/api/Module
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -713,8 +703,7 @@ Returns an ASCII string for MLInputsResult and MLResult codes.
 **Return**: ASCII string containing readable version of result code.
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -754,8 +743,7 @@ Creates an input tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -798,8 +786,7 @@ Sets the callbacks for controller input events.
 
 
 
-**API Level:
- 8**
+**API Level:\n 8**
   * 
 
 
@@ -880,8 +867,7 @@ Returns current state of all possible input controllers.
 
 
 
-**API Level:
- 21**
+**API Level:\n 21**
   * 
 
 
@@ -922,8 +908,7 @@ Gets the device IDs of all connected devices.
 
 
 
-**API Level:
- 5**
+**API Level:\n 5**
   * 
 
 
@@ -964,8 +949,7 @@ Releases the contents of [MLInputConnectedDevicesList](/api-ref/api/Modules/grou
 
 
 
-**API Level:
- 5**
+**API Level:\n 5**
   * 
 
 
@@ -1010,8 +994,7 @@ Plays the pre-defined pattern.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1056,8 +1039,7 @@ Plays controller haptic buzz command.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1104,8 +1086,7 @@ A custom haptics pattern is defined as a set of either buzz command and/or pre-d
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1150,8 +1131,7 @@ Plays the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1193,8 +1173,7 @@ Deletes the custom haptic pattern created by [MLInputCreateCustomHapticsPattern]
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -1237,8 +1216,7 @@ Stops the currently playing haptic pattern.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -18,22 +18,11 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### delegate void OnPreBeginRenderFrameNativeDelegate {#delegate-void-onprebeginrenderframenativedelegate}
+### ulong MLUnityGraphicsGetHandle {#ulong-mlunitygraphicsgethandle}
 
 ```csharp
-public delegate void OnPreBeginRenderFrameNativeDelegate(
-    IntPtr context,
-    ref MLGraphicsFrameParamsEx frameParams
-)
+public ulong MLUnityGraphicsGetHandle()
 ```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| IntPtr |context||
-| ref [MLGraphicsFrameParamsEx](/unity-api/api/UnityEngine.XR.MagicLeap/MLGraphicsHooks/NativeBindings/UnityEngine.XR.MagicLeap.MLGraphicsHooks.NativeBindings.MLGraphicsFrameParamsEx.md) |frameParams||
 
 
 
@@ -64,11 +53,22 @@ public void MLUnityGraphicsRegisterCallbacks(
 
 -----------
 
-### ulong MLUnityGraphicsGetHandle {#ulong-mlunitygraphicsgethandle}
+### delegate void OnPreBeginRenderFrameNativeDelegate {#delegate-void-onprebeginrenderframenativedelegate}
 
 ```csharp
-public ulong MLUnityGraphicsGetHandle()
+public delegate void OnPreBeginRenderFrameNativeDelegate(
+    IntPtr context,
+    ref MLGraphicsFrameParamsEx frameParams
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| IntPtr |context||
+| ref [MLGraphicsFrameParamsEx](/unity-api/api/UnityEngine.XR.MagicLeap/MLGraphicsHooks/NativeBindings/UnityEngine.XR.MagicLeap.MLGraphicsHooks.NativeBindings.MLGraphicsFrameParamsEx.md) |frameParams||
 
 
 
@@ -79,13 +79,12 @@ public ulong MLUnityGraphicsGetHandle()
 
 ## Public Enums
 
-### ProjectionType {#enums-projectiontype}
+### EnvironmentBlendMode {#enums-environmentblendmode}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| SignedZ | 0|   |
-| ReversedInfiniteZ | 1|   |
-| UnsignedZ | 2|   |
+| Additive | 0|   |
+| AlphaBlend | 1|   |
 
 
 
@@ -96,12 +95,13 @@ public ulong MLUnityGraphicsGetHandle()
 
 -----------
 
-### EnvironmentBlendMode {#enums-environmentblendmode}
+### ProjectionType {#enums-projectiontype}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Additive | 0|   |
-| AlphaBlend | 1|   |
+| SignedZ | 0|   |
+| ReversedInfiniteZ | 1|   |
+| UnsignedZ | 2|   |
 
 
 

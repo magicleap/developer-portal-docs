@@ -47,13 +47,13 @@ public static EventCallbacks Create(
 
 ## Public Attributes
 
-### Version {#uint-version}
+### OnBeforePopup {#onbeforepopupcallback-onbeforepopup}
 
-Version of this struct 
+This callback is used to ask the application if is OK to load a URL. 
 
 ```csharp
 
-public uint Version;
+public OnBeforePopupCallback OnBeforePopup;
 
 ```
 
@@ -64,149 +64,13 @@ public uint Version;
 
 -----------
 
-### UserData {#intptr-userdata}
+### OnBeforeResourceLoad {#onbeforeresourceloadcallback-onbeforeresourceload}
 
-User data passed to every callback. 
-
-```csharp
-
-public IntPtr UserData;
-
-```
-
-
-
-
-
-
------------
-
-### OnShowKeyboard {#onshowkeyboardcallback-onshowkeyboard}
-
-Called when user selects an input field. 
+Called to notify when a resource will loadeded. 
 
 ```csharp
 
-public OnShowKeyboardCallback OnShowKeyboard;
-
-```
-
-
-
-
-
-
------------
-
-### OnServiceFailed {#onservicefailedcallback-onservicefailed}
-
-This callback is used to notify user that service failed to connect. 
-
-```csharp
-
-public OnServiceFailedCallback OnServiceFailed;
-
-```
-
-
-
-
-
-
------------
-
-### OnServiceDisconnected {#onservicedisconnectedcallback-onservicedisconnected}
-
-This callback is used to notify user that service is disconnect. 
-
-```csharp
-
-public OnServiceDisconnectedCallback OnServiceDisconnected;
-
-```
-
-
-
-
-
-
------------
-
-### OnServiceConnected {#onserviceconnectedcallback-onserviceconnected}
-
-This callback is used to pass notify user of service connection. 
-
-```csharp
-
-public OnServiceConnectedCallback OnServiceConnected;
-
-```
-
-
-
-
-
-
------------
-
-### OnLoadError {#onloaderrorcallback-onloaderror}
-
-Called if there was any error during loading. These errors could be due to connectivity, certificate errors etc. 
-
-```csharp
-
-public OnLoadErrorCallback OnLoadError;
-
-```
-
-
-
-
-
-
------------
-
-### OnLoadEnd {#onloadendcallback-onloadend}
-
-Called to notify load completion. 
-
-```csharp
-
-public OnLoadEndCallback OnLoadEnd;
-
-```
-
-
-
-
-
-
------------
-
-### OnKeyboardDismiss {#onkeyboarddismisscallback-onkeyboarddismiss}
-
-Called when user deselects an input field and the keyboard should be dismissed. 
-
-```csharp
-
-public OnKeyboardDismissCallback OnKeyboardDismiss;
-
-```
-
-
-
-
-
-
------------
-
-### OnDestroy {#ondestroycallback-ondestroy}
-
-Called when webview is destroyed. 
-
-```csharp
-
-public OnDestroyCallback OnDestroy;
+public OnBeforeResourceLoadCallback OnBeforeResourceLoad;
 
 ```
 
@@ -234,13 +98,200 @@ public OnCertificateErrorCallback OnCertificateError;
 
 -----------
 
-### OnBeforeResourceLoad {#onbeforeresourceloadcallback-onbeforeresourceload}
+### OnDestroy {#ondestroycallback-ondestroy}
 
-Called to notify when a resource will loadeded. 
+Called when webview is destroyed. 
 
 ```csharp
 
-public OnBeforeResourceLoadCallback OnBeforeResourceLoad;
+public OnDestroyCallback OnDestroy;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnKeyboardDismiss {#onkeyboarddismisscallback-onkeyboarddismiss}
+
+Called when user deselects an input field and the keyboard should be dismissed. 
+
+```csharp
+
+public OnKeyboardDismissCallback OnKeyboardDismiss;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnLoadEnd {#onloadendcallback-onloadend}
+
+Called to notify load completion. 
+
+```csharp
+
+public OnLoadEndCallback OnLoadEnd;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnLoadError {#onloaderrorcallback-onloaderror}
+
+Called if there was any error during loading. These errors could be due to connectivity, certificate errors etc. 
+
+```csharp
+
+public OnLoadErrorCallback OnLoadError;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnPopupClosed {#onpopupclosedcallback-onpopupclosed}
+
+This callback is used to notify the application of a closing popup. 
+
+```csharp
+
+public OnPopupClosedCallback OnPopupClosed;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnPopupOpened {#onpopupopenedcallback-onpopupopened}
+
+This callback is used to notify application that popup is opened. 
+
+```csharp
+
+public OnPopupOpenedCallback OnPopupOpened;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnServiceConnected {#onserviceconnectedcallback-onserviceconnected}
+
+This callback is used to pass notify user of service connection. 
+
+```csharp
+
+public OnServiceConnectedCallback OnServiceConnected;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnServiceDisconnected {#onservicedisconnectedcallback-onservicedisconnected}
+
+This callback is used to notify user that service is disconnect. 
+
+```csharp
+
+public OnServiceDisconnectedCallback OnServiceDisconnected;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnServiceFailed {#onservicefailedcallback-onservicefailed}
+
+This callback is used to notify user that service failed to connect. 
+
+```csharp
+
+public OnServiceFailedCallback OnServiceFailed;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnShowKeyboard {#onshowkeyboardcallback-onshowkeyboard}
+
+Called when user selects an input field. 
+
+```csharp
+
+public OnShowKeyboardCallback OnShowKeyboard;
+
+```
+
+
+
+
+
+
+-----------
+
+### UserData {#intptr-userdata}
+
+User data passed to every callback. 
+
+```csharp
+
+public IntPtr UserData;
+
+```
+
+
+
+
+
+
+-----------
+
+### Version {#uint-version}
+
+Version of this struct 
+
+```csharp
+
+public uint Version;
 
 ```
 

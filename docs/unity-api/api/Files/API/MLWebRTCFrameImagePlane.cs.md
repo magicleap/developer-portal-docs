@@ -69,12 +69,7 @@ namespace UnityEngine.XR.MagicLeap
                         return imagePlane;
                     }
 
-                    public override string ToString() => $"
-Width: {this.Width} pixels, 
-Height: {this.Height} pixels, 
-Bytes Per Pixel:{this.BytesPerPixel} bytes, 
-Stride: {this.Stride} bytes per row, 
-Size: {this.Size} total bytes";
+                    public override string ToString() => $"\nWidth: {this.Width} pixels, \nHeight: {this.Height} pixels, \nBytes Per Pixel:{this.BytesPerPixel} bytes, \nStride: {this.Stride} bytes per row, \nSize: {this.Size} total bytes";
                 }
 
                 public struct NativeBufferInfo
@@ -103,11 +98,7 @@ Size: {this.Size} total bytes";
                         return nativeBufferInfo;
                     }
 
-                    public override string ToString() => $"
-Width: {this.Width} pixels, 
-Height: {this.Height} pixels, 
-SurfaceHandle:{this.SurfaceHandle}, 
-NativeBufferHandle: {this.NativeBufferHandle}";
+                    public override string ToString() => $"\nWidth: {this.Width} pixels, \nHeight: {this.Height} pixels, \nSurfaceHandle:{this.SurfaceHandle}, \nNativeBufferHandle: {this.NativeBufferHandle}";
                 }
             }
         }

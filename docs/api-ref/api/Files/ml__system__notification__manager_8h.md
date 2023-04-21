@@ -53,8 +53,7 @@ Multiple calls to this API method from the same applicaiton will return the same
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -92,8 +91,7 @@ Destroys a System Notification Manager handle.
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 
@@ -139,8 +137,7 @@ If the calling app is closed for any reason (ie. closed by user action, voice co
 
 
 
-**API Level:
- 24**
+**API Level:\n 24**
   * 
 
 

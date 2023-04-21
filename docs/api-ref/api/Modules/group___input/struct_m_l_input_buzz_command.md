@@ -39,8 +39,7 @@ When playing haptic buzz command, needed information is stored in this structure
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

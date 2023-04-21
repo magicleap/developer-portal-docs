@@ -79,8 +79,7 @@ The interaction point is a transform which dynamically adapts, in both translati
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * The gesture classification system identifies specific hand configurations and exposes them via the APIs here. These hand configurations can be broadly divided into two groups:
 
 
@@ -127,8 +126,7 @@ System gesture classification posture type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -158,8 +156,7 @@ System gesture classification key pose type.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -185,8 +182,7 @@ Populate with [MLGestureClassificationGetStaticData()](/api-ref/api/Modules/grou
 [More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -209,8 +205,7 @@ Pinch values are measured between the finger and thumb. In case thumb is the fin
 [More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -231,8 +226,7 @@ Gesture classification state of a single finger.
 [More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -253,8 +247,7 @@ Gesture classification state of a single hand.
 [More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_state.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -277,8 +270,7 @@ This structure must be initialized by calling [MLGestureClassificationDataInit()
 [More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md)
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -307,8 +299,7 @@ Initializes default values for [MLGestureClassificationStaticData](/api-ref/api/
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -334,8 +325,7 @@ Initializes default values for [MLGestureClassificationData](/api-ref/api/Module
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -376,8 +366,7 @@ Creates a gesture classification tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -417,8 +406,7 @@ Destroys a gesture classification tracker.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -460,8 +448,7 @@ Gets static information about the gesture classification.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 
@@ -503,8 +490,7 @@ Queries the state of the gesture classification.
 
 
 
-**API Level:
- 20**
+**API Level:\n 20**
   * 
 
 

@@ -32,8 +32,7 @@ A structure containing information about the imported Space.
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

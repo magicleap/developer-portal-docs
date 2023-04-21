@@ -19,14 +19,14 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraUpdateSettings {#mlresultcode-mlworldcameraupdatesettings}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraConnect {#mlresultcode-mlworldcameraconnect}
 
-Update the world camera settings. 
+Connect to world cameras. 
 
 ```csharp
-public MLResult.Code MLWorldCameraUpdateSettings(
-    ulong handle,
-    in MLWorldCameraSettings settings
+public MLResult.Code MLWorldCameraConnect(
+    in MLWorldCameraSettings settings,
+    out ulong handle
 )
 ```
 
@@ -35,8 +35,8 @@ public MLResult.Code MLWorldCameraUpdateSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |handle||
 | in [MLWorldCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings.MLWorldCameraSettings.md) |settings|A structure to encapsulate the camera settings. |
+| out ulong |handle||
 
 
 
@@ -45,14 +45,13 @@ public MLResult.Code MLWorldCameraUpdateSettings(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraReleaseCameraData {#mlresultcode-mlworldcamerareleasecameradata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraDisconnect {#mlresultcode-mlworldcameradisconnect}
 
-Releases specified #MLWorldCameraData object. This function should be called exactly once for each call to #MLWorldCameraGetLatestCameraData. 
+Disconnect from world camera. This will disconnect from all the world camera currently connected. 
 
 ```csharp
-public MLResult.Code MLWorldCameraReleaseCameraData(
-    ulong handle,
-    IntPtr cameraData
+public MLResult.Code MLWorldCameraDisconnect(
+    ulong handle
 )
 ```
 
@@ -62,7 +61,6 @@ public MLResult.Code MLWorldCameraReleaseCameraData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| IntPtr |cameraData||
 
 
 
@@ -99,13 +97,14 @@ public MLResult.Code MLWorldCameraGetLatestWorldCameraData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraDisconnect {#mlresultcode-mlworldcameradisconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraReleaseCameraData {#mlresultcode-mlworldcamerareleasecameradata}
 
-Disconnect from world camera. This will disconnect from all the world camera currently connected. 
+Releases specified #MLWorldCameraData object. This function should be called exactly once for each call to #MLWorldCameraGetLatestCameraData. 
 
 ```csharp
-public MLResult.Code MLWorldCameraDisconnect(
-    ulong handle
+public MLResult.Code MLWorldCameraReleaseCameraData(
+    ulong handle,
+    IntPtr cameraData
 )
 ```
 
@@ -115,6 +114,7 @@ public MLResult.Code MLWorldCameraDisconnect(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
+| IntPtr |cameraData||
 
 
 
@@ -123,14 +123,14 @@ public MLResult.Code MLWorldCameraDisconnect(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraConnect {#mlresultcode-mlworldcameraconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraUpdateSettings {#mlresultcode-mlworldcameraupdatesettings}
 
-Connect to world cameras. 
+Update the world camera settings. 
 
 ```csharp
-public MLResult.Code MLWorldCameraConnect(
-    in MLWorldCameraSettings settings,
-    out ulong handle
+public MLResult.Code MLWorldCameraUpdateSettings(
+    ulong handle,
+    in MLWorldCameraSettings settings
 )
 ```
 
@@ -139,8 +139,8 @@ public MLResult.Code MLWorldCameraConnect(
 
 | Type | Name  | Description  | 
 |--|--|--|
+| ulong |handle||
 | in [MLWorldCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings.MLWorldCameraSettings.md) |settings|A structure to encapsulate the camera settings. |
-| out ulong |handle||
 
 
 

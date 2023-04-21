@@ -17,6 +17,23 @@ Data type that encapsulates either of the following along with an URL: For [Key]
 
 ## Public Attributes
 
+### DefaultURL {#readonly-string-defaulturl}
+
+The recommended URL to deliver the request to. 
+
+```csharp
+
+public readonly string DefaultURL;
+
+```
+
+
+
+
+
+
+-----------
+
 ### Request {#readonly-request}
 
 The opaque request byte array. 
@@ -30,23 +47,6 @@ public readonly NativeBindings.MLMediaDRMByteArray Request;
 | Type | Description  | 
 |--|--|
 | readonly [NativeBindings.MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) | Data type containing byte array buffer and the size.  |
-
-
-
-
-
------------
-
-### DefaultURL {#readonly-string-defaulturl}
-
-The recommended URL to deliver the request to. 
-
-```csharp
-
-public readonly string DefaultURL;
-
-```
-
 
 
 

@@ -64,8 +64,7 @@ APIs for the Meshing system.
 
 
 
-**Shared Object:
- perception.magicleap**
+**Shared Object:\n perception.magicleap**
   * 
 
 * The Meshing system is for generating a mesh representation of the real world. 

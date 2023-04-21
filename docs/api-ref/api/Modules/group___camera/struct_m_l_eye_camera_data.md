@@ -36,8 +36,7 @@ This structure must be initialized by calling [MLEyeCameraDataInit](/api-ref/api
 
 
 
-**API Level:
- 26**
+**API Level:\n 26**
   * 
 
 

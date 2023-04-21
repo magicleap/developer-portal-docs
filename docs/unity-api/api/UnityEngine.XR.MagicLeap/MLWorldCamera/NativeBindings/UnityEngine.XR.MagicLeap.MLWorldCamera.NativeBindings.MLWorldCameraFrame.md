@@ -32,93 +32,19 @@ public override string ToString()
 
 ## Public Attributes
 
-### TimeStamp {#readonly-long-timestamp}
+### CameraPose {#readonly-camerapose}
 
-[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) timestamp specifies the time at which the frame was captured. 
-
-```csharp
-
-public readonly long TimeStamp;
-
-```
-
-
-
-
-
-
------------
-
-### Intrinsics {#readonly-intrinsics}
-
-Camera intrinsic parameters. 
+World camera pose in the world co-ordinate system. 
 
 ```csharp
 
-public readonly NativeBindings.MLWorldCameraIntrinsics Intrinsics;
+public readonly MLTransform CameraPose;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [NativeBindings.MLWorldCameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings.MLWorldCameraIntrinsics.md) | World camera intrinsic parameters.  |
-
-
-
-
-
------------
-
-### Id {#readonly-id}
-
-Camera Identifier specifies which camera is associated with this frame. 
-
-```csharp
-
-public readonly MLWorldCamera.CameraId Id;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [MLWorldCamera.CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
-
-
-
-
-
------------
-
-### FrameType {#readonly-frametype}
-
-Maps to the world camera mode used for capturing the camera frames. 
-
-```csharp
-
-public readonly Frame.Type FrameType;
-
-```
-
-| Type | Description  | 
-|--|--|
-| readonly [Frame.Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md#enums-type) | Enumeration of camera mode used when capturing a frame.  |
-
-
-
-
-
------------
-
-### FrameNumber {#readonly-long-framenumber}
-
-A 64bit integer to index the frame number associated with this frame. 
-
-```csharp
-
-public readonly long FrameNumber;
-
-```
-
+| readonly [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
 
 
 
@@ -146,19 +72,93 @@ public readonly MLWorldCameraFrameBuffer FrameBuffer;
 
 -----------
 
-### CameraPose {#readonly-camerapose}
+### FrameNumber {#readonly-long-framenumber}
 
-World camera pose in the world co-ordinate system. 
+A 64bit integer to index the frame number associated with this frame. 
 
 ```csharp
 
-public readonly MLTransform CameraPose;
+public readonly long FrameNumber;
+
+```
+
+
+
+
+
+
+-----------
+
+### FrameType {#readonly-frametype}
+
+Maps to the world camera mode used for capturing the camera frames. 
+
+```csharp
+
+public readonly Frame.Type FrameType;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
+| readonly [Frame.Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md#enums-type) | Enumeration of camera mode used when capturing a frame.  |
+
+
+
+
+
+-----------
+
+### Id {#readonly-id}
+
+Camera Identifier specifies which camera is associated with this frame. 
+
+```csharp
+
+public readonly MLWorldCamera.CameraId Id;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [MLWorldCamera.CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
+
+
+
+
+
+-----------
+
+### Intrinsics {#readonly-intrinsics}
+
+Camera intrinsic parameters. 
+
+```csharp
+
+public readonly NativeBindings.MLWorldCameraIntrinsics Intrinsics;
+
+```
+
+| Type | Description  | 
+|--|--|
+| readonly [NativeBindings.MLWorldCameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings.MLWorldCameraIntrinsics.md) | World camera intrinsic parameters.  |
+
+
+
+
+
+-----------
+
+### TimeStamp {#readonly-long-timestamp}
+
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) timestamp specifies the time at which the frame was captured. 
+
+```csharp
+
+public readonly long TimeStamp;
+
+```
+
 
 
 
