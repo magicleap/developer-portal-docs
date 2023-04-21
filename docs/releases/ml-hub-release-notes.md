@@ -6,8 +6,6 @@ date: 03/22/2023
 
 ## Version 2.0.9
 
-### Sprint 21 Release
-
 * Device Bridge UX updates
 * Links to LED guides are added to Device Bridge
 
@@ -18,8 +16,6 @@ date: 03/22/2023
 * Advanced Capture will fail if device is in low power mode.
 
 ## Version 2.0.8
-
-### Sprint 20 Release
 
 * Device Stream improvements
 * Styling updates
@@ -33,8 +29,6 @@ date: 03/22/2023
 
 ## Version 2.0.7
 
-### Sprint 19 Release
-
 * Device Bridge: bugreports (if any) can be downloaded from device
 * Advanced Capture capabilities
 * Minor bug fixes
@@ -45,8 +39,6 @@ date: 03/22/2023
 
 ## Version 2.0.6
 
-### Sprint 18 Release
-
 * Device Bridge's Files tab is updated: shortcuts, folders in files table and other improvements
 * Minor bug fixes
 
@@ -56,16 +48,12 @@ date: 03/22/2023
 
 Version 2.0.5
 
-### Sprint 17 Release
-
 * Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not possible, please uninstall The Lab 2.0 and download ML Hub from Dev Portal.**
 * Fix for Device Stream to work on MacOS with M1
 * UI will show versions of newer OS builds differently: semantic versions will be shown (e.g. 1.1.0) instead of build strings (B3E....)
 * Minor bug fixes
 
 ## Version 2.0.4
-
-### Sprint 16 Release
 
 Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not possible, please uninstall The Lab 2.0 and download ML Hub from Dev Portal.**
 
@@ -76,8 +64,6 @@ Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not
 * Device Stream does not work yet on MacOS with M1
 
 ## Version 2.0.3
-
-### Sprint 15 Release
 
 * Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not possible, please uninstall The Lab 2.0 and download ML Hub from Dev Portal.**
 * ML Simulator for Unity is the new name for Unity Zero Iteration
@@ -96,20 +82,14 @@ Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not
 
 ## Version 2.0.2
 
-### Sprint 14 Release
-
 * User can override internal ADB with external one in Settings
 * Minor bug fixes
 
 ## Version 2.0.1
 
-### Sprint 13 Release
-
 * Minor fixes
 
 ## Version 2.0.0
-
-### Initial Release
 
 The Lab 2.0 has been repurposed to be a tool for all device users, not just developers. Device Stream is now built in. The Lab 2.0 supports ML2 and later devices from Magic Leap. If you're using an ML1, please use the original version of The Lab.
 
