@@ -1,6 +1,6 @@
 ---
 id: mrtk-sdk-release-notes
-title: 1.5.0 Version 1.0 - Unity MRTK Magic Leap Release Notes
+title: 1.6.0 Version 1.0 - Unity MRTK Magic Leap Release Notes
 sidebar_position: 4
 date: 04/19/2023
 ---

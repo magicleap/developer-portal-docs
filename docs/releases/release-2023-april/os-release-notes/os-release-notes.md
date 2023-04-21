@@ -13,7 +13,7 @@ date: 04/24/2023
 
 Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so.
 
-When flashing, you **MUST** flash in a linear sequence based on the build order in the table below. For example, if you're on `B3E.220619.07-R.107_user` (build order #4), you **MUST** flash `B3E.220619.07-R.124_user` (build order #5) then `B3E.220721.07-R.026_user` (build order #6) for your device to work properly with that OS.
+When flashing, you **MUST** flash in a linear sequence based on the build order in the table below but can skip up to four releases ahead. For example, if you're on `B3E.220818.12-R.417_user` (build order #9), you may skip ahead up to `B3E.230302.12-R.024` (build order #13), then `B3E.230330.11-R.043` (build order #14) for your device to work properly for the current release.
 
 | Build Order | Build Fingerprint        |
 | ----------- | ------------------------ |
@@ -54,7 +54,7 @@ We recommend you to use ML Hub flashing capability to flash the OS. Contact your
 - When the user side loads an APK, the device will play a distinct LED pattern.
 - Bluetooth: Support for Android-compliant Bluetooth and A2DP Bluetooth hearing aids.
 - While holding the controller, duplicate raycast inputs from the controller and hand tracking will no longer be generated. If the controller is connected and in motion for more than a few seconds, hand tracking will be disabled. Hand tracking will be enabled if the controller is disconnected or motionless for a few seconds (see Known Issues).
-- Automatic Display Mode preview.
+- Automatic Display Mode preview
   - Users can set the display to automatically control dimming and brightness depending on the ambient light.
   - Accessible from the Home Menu and settings under "Display."
 
