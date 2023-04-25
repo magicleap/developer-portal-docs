@@ -33,7 +33,7 @@ MediaPlayer Playback completion callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 

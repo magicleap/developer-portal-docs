@@ -21,7 +21,7 @@ title: MagicLeapNativeBindingsEditModeTests.cs
 using NUnit.Framework;
 using UnityEngine.XR.MagicLeap.Native;
 
-namespace Tests.Editor
+namespace UnitySDKEditorTests
 {
     public class MagicLeapNativeBindingsEditModeTests
     {

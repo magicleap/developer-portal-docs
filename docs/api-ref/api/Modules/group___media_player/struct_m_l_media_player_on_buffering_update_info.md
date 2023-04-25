@@ -34,7 +34,7 @@ MediaPlayer Buffering update callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 

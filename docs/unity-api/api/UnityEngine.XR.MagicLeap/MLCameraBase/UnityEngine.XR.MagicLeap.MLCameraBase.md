@@ -963,6 +963,32 @@ protected MLCameraBase()
 
 -----------
 
+### OnApplicationPause {#override-void-onapplicationpause}
+
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
+
+```csharp
+protected virtual override void OnApplicationPause(
+    bool pauseStatus
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |pauseStatus|True if the application is paused, else False. |
+
+
+
+
+**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md#void-onapplicationpause)
+
+
+
+-----------
+
 ## Public Attributes
 
 ### ConnectionContext {#mlcameraconnectcontext-connectioncontext}

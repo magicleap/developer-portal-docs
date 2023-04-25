@@ -171,6 +171,9 @@ Enumeration definitions for the various metadata entries.
 APIs for getting/setting camera characteristic/request/result metadata. Main camera and CV Camera share the same camera hardware resources. It is recommended that applications try to use as much as possible the default metadata returned by MLCameraPrepareCapture otherwise metadata properties from one camera can affect the other. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera except for metadata proprties for exposure upper time limit, JPEG gps timestamp, JPEG gps coordinates, JPEG quality and JPEG thumbnail size. The Force Apply mode setting can be used to override this. If CV Camera metadata have force apply mode on, the CV Camera metadata properties take precedence over Main Camera properties. The result metadata returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) can be used to check the actual metadata settings applied. For exposure upper time limit the lower of 2 values (Main Camera and CV Camera) are applied by default.If one of the cameras has force apply mode on the exposure upper time limit setting from that camera is applied. The JPEG gps timestamp , JPEG gps coordinates, JPEG quality and JPEG thumbnail size settings from one camera donot affect the other camera.
 
 
+# State Machine for Auto Focus for different Modes.
+
+
 AutoFocus Mode Auto/Macro| State  | Transition Cause  | New State  | Notes  |
 |  -------- | -------- | -------- | -------- |
 | AFState_Inactive | AFTrigger_Start | AFState_ActiveScan | Start AF scan, Lens now moving  |
@@ -219,8 +222,7 @@ Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
 
 **Shared Object:**
-  * camera_metadata.magicleap 
-# State Machine for Auto Focus for different Modes.
+  * camera_metadata.magicleap*
 
 
 
@@ -680,7 +682,7 @@ Force Apply Metadata Settings.
 ### MLCameraMetadataRational {#struct-mlcamerametadatarational}
 
 ```cpp
-typedef struct MLCameraMetadataRational  MLCameraMetadataRational;
+typedef struct MLCameraMetadataRational MLCameraMetadataRational;
 ```
 
 

@@ -50,7 +50,7 @@ namespace UnityEngine.XR.MagicLeap
             gcHandle.Free();
         }
 
-        private MLResult.Code CreateInternal(uint width, uint height)
+        private MLResult.Code CreateInternal(uint width, uint height, bool isPopup, ulong popupID)
         {
             Handle = MagicLeapNativeBindings.InvalidHandle;
             var resultCode = MLPermissions.CheckPermission(MLPermission.WebView).Result;
@@ -60,7 +60,7 @@ namespace UnityEngine.XR.MagicLeap
                 return MLResult.Code.PermissionDenied;
             }
 
-            var settings = NativeBindings.Settings.Create(gcHandle, width, height);
+            var settings = NativeBindings.Settings.Create(gcHandle, width, height, isPopup, popupID);
 
             MLResult.Code result = NativeBindings.MLWebViewCreate(out Handle, ref settings);
             MLResult.DidNativeCallSucceed(result, nameof(NativeBindings.MLWebViewCreate));

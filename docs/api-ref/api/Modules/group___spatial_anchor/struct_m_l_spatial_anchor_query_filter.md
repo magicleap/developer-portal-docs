@@ -43,7 +43,7 @@ This struct must be initialized by calling [MLSpatialAnchorQueryFilterInit](/api
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

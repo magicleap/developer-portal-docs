@@ -38,7 +38,7 @@ SPATIAL SOUND.
 ### MLAudioSpatialSoundDistanceProperties {#struct-mlaudiospatialsounddistanceproperties}
 
 ```cpp
-typedef struct MLAudioSpatialSoundDistanceProperties  MLAudioSpatialSoundDistanceProperties;
+typedef struct MLAudioSpatialSoundDistanceProperties MLAudioSpatialSoundDistanceProperties;
 ```
 
 
@@ -55,7 +55,7 @@ Properties specifying the distance response of a spatial sound.
 ### MLAudioSpatialSoundRadiationProperties {#struct-mlaudiospatialsoundradiationproperties}
 
 ```cpp
-typedef struct MLAudioSpatialSoundRadiationProperties  MLAudioSpatialSoundRadiationProperties;
+typedef struct MLAudioSpatialSoundRadiationProperties MLAudioSpatialSoundRadiationProperties;
 ```
 
 
@@ -72,7 +72,7 @@ Properties specifying the directivity of a spatial sound.
 ### MLAudioRaycast {#struct-mlaudioraycast}
 
 ```cpp
-typedef struct MLAudioRaycast  MLAudioRaycast;
+typedef struct MLAudioRaycast MLAudioRaycast;
 ```
 
 Two points in space describing a ray. 
@@ -83,7 +83,7 @@ Two points in space describing a ray.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -93,7 +93,7 @@ Two points in space describing a ray.
 ### MLAudioObstruction {#struct-mlaudioobstruction}
 
 ```cpp
-typedef struct MLAudioObstruction   MLAudioObstruction;
+typedef struct MLAudioObstruction MLAudioObstruction;
 ```
 
 Obstruction along a ray. 
@@ -104,7 +104,7 @@ Obstruction along a ray.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -114,7 +114,7 @@ Obstruction along a ray.
 ### MLAudioRaycastRequest {#struct-mlaudioraycastrequest}
 
 ```cpp
-typedef struct MLAudioRaycastRequest  MLAudioRaycastRequest;
+typedef struct MLAudioRaycastRequest MLAudioRaycastRequest;
 ```
 
 ID-tracked request for a single raycast operation. 
@@ -125,7 +125,7 @@ ID-tracked request for a single raycast operation.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -135,7 +135,7 @@ ID-tracked request for a single raycast operation.
 ### MLAudioRaycastResult {#struct-mlaudioraycastresult}
 
 ```cpp
-typedef struct MLAudioRaycastResult  MLAudioRaycastResult;
+typedef struct MLAudioRaycastResult MLAudioRaycastResult;
 ```
 
 ID-tracked result for a single raycast operation. 
@@ -146,7 +146,7 @@ ID-tracked result for a single raycast operation.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

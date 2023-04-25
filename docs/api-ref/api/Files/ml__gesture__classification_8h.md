@@ -87,7 +87,7 @@ System gesture classification posture type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -117,7 +117,7 @@ System gesture classification key pose type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -130,7 +130,7 @@ System gesture classification key pose type.
 ### MLGestureClassificationStaticData {#struct-mlgestureclassificationstaticdata}
 
 ```cpp
-typedef struct MLGestureClassificationStaticData  MLGestureClassificationStaticData;
+typedef struct MLGestureClassificationStaticData MLGestureClassificationStaticData;
 ```
 
 Static information about the gesture classification. 
@@ -143,7 +143,7 @@ Populate with [MLGestureClassificationGetStaticData()](/api-ref/api/Modules/grou
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -153,7 +153,7 @@ Populate with [MLGestureClassificationGetStaticData()](/api-ref/api/Modules/grou
 ### MLGestureClassificationPostureFingerData {#struct-mlgestureclassificationposturefingerdata}
 
 ```cpp
-typedef struct MLGestureClassificationPostureFingerData  MLGestureClassificationPostureFingerData;
+typedef struct MLGestureClassificationPostureFingerData MLGestureClassificationPostureFingerData;
 ```
 
 Gesture classification posture related finger data. 
@@ -166,7 +166,7 @@ Pinch values are measured between the finger and thumb. In case thumb is the fin
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -176,7 +176,7 @@ Pinch values are measured between the finger and thumb. In case thumb is the fin
 ### MLGestureClassificationFingerState {#struct-mlgestureclassificationfingerstate}
 
 ```cpp
-typedef struct MLGestureClassificationFingerState  MLGestureClassificationFingerState;
+typedef struct MLGestureClassificationFingerState MLGestureClassificationFingerState;
 ```
 
 Gesture classification state of a single finger. 
@@ -187,7 +187,7 @@ Gesture classification state of a single finger.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -197,7 +197,7 @@ Gesture classification state of a single finger.
 ### MLGestureClassificationState {#struct-mlgestureclassificationstate}
 
 ```cpp
-typedef struct MLGestureClassificationState  MLGestureClassificationState;
+typedef struct MLGestureClassificationState MLGestureClassificationState;
 ```
 
 Gesture classification state of a single hand. 
@@ -208,7 +208,7 @@ Gesture classification state of a single hand.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -218,7 +218,7 @@ Gesture classification state of a single hand.
 ### MLGestureClassificationData {#struct-mlgestureclassificationdata}
 
 ```cpp
-typedef struct MLGestureClassificationData  MLGestureClassificationData;
+typedef struct MLGestureClassificationData MLGestureClassificationData;
 ```
 
 Data which is received when querying tracker from [MLGestureClassificationGetData()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata). 
@@ -231,7 +231,7 @@ This structure must be initialized by calling [MLGestureClassificationDataInit()
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

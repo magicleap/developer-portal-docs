@@ -184,6 +184,21 @@ public const string SpatialMapping = "com.magicleap.permission.SPATIAL_MAPPING";
 
 -----------
 
+### SystemNotification {#const-string-systemnotification}
+
+```csharp
+
+public const string SystemNotification = "com.magicleap.permission.SYSTEM_NOTIFICATION";
+
+```
+
+
+
+
+
+
+-----------
+
 ### VoiceInput {#const-string-voiceinput}
 
 ```csharp

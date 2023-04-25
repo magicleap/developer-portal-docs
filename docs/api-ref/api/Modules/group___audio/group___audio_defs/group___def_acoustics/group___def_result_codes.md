@@ -70,7 +70,7 @@ Return values for Audio Service API calls.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 

@@ -28,7 +28,8 @@ A structure to encapsulate output data for each camera sensor.  [More...](#detai
 | [MLDepthCameraDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) * | **[depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthimage-depth-image)**  |
 | [MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) * | **[confidence](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraconfidencebuffer-confidence)**  |
 | [MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) * | **[flags](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthflagsbuffer-flags)**  |
-| [MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | **[ambient_raw_depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraambientrawdepthimage-ambient-raw-depth-image)**  |
+| [MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | **[ambient_raw_depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraambientrawdepthimage-ambient-raw-depth-image)** <br></br>Ambient raw depth image. This is the raw sensor data captured when the projector is off.  |
+| [MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage) * | **[raw_depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcamerarawdepthimage-raw-depth-image)** <br></br>Raw depth image. This is the raw sensor data captured when the projector is on.  |
 
 ## Detailed Description
 
@@ -44,7 +45,7 @@ This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/a
 
 
 **API Level:**
-  * 23 
+  * 25
 
 
 
@@ -223,6 +224,7 @@ Depth flags.
 MLDepthCameraAmbientRawDepthImage * ambient_raw_depth_image;
 ```
 
+Ambient raw depth image. This is the raw sensor data captured when the projector is off. 
 
 
 | Type | Description |
@@ -230,7 +232,25 @@ MLDepthCameraAmbientRawDepthImage * ambient_raw_depth_image;
 | [MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | Ambient raw depth image.  |
 
 
-Ambient raw depth image. 
+
+
+
+
+-----------
+
+### raw_depth_image {#mldepthcamerarawdepthimage-raw-depth-image}
+
+```cpp
+MLDepthCameraRawDepthImage * raw_depth_image;
+```
+
+Raw depth image. This is the raw sensor data captured when the projector is on. 
+
+
+| Type | Description |
+|--|--|
+| [MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage) * | Raw depth image.  |
+
 
 
 

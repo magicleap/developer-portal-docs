@@ -40,6 +40,23 @@ public class MLWebView : MLAPIBase
 
 ## Public Fields
 
+### AcceptPopup {#bool-acceptpopup}
+
+Flag to indicate if the application accepts the popup 
+
+```csharp
+
+public bool AcceptPopup = false { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### IgnoreCertificateError {#bool-ignorecertificateerror}
 
 Flag to indicate if urls issuing certificate errors should be loaded or not 
@@ -148,7 +165,9 @@ Create a [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngi
 ```csharp
 public static MLWebView Create(
     uint width,
-    uint height
+    uint height,
+    bool isPopup =false,
+    ulong popupId =0
 )
 ```
 
@@ -159,6 +178,8 @@ public static MLWebView Create(
 |--|--|--|
 | uint |width|Width of the WebView in pixels.|
 | uint |height|Height of the WebView in pixels.|
+| bool |isPopup||
+| ulong |popupId||
 
 
 
@@ -538,6 +559,34 @@ public MLResult InjectMouseMove(
 
 -----------
 
+### delegate void OnBeforePopupDelegate {#delegate-void-onbeforepopupdelegate}
+
+The delegate for the webview before popup event. 
+
+```csharp
+public delegate void OnBeforePopupDelegate(
+    MLWebView webView,
+    string url,
+    bool popupAccepted
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| string |url|The URL for the popup to load.|
+| bool |popupAccepted||
+
+
+
+
+
+
+-----------
+
 ### delegate void OnBeforeResourceLoadDelegate {#delegate-void-onbeforeresourceloaddelegate}
 
 The delegate for the before reasource loaded event. 
@@ -698,6 +747,60 @@ public delegate void OnLoadErrorDelegate(
 | int |httpStatusCode|Http status code for the URL load failure.|
 | string |errorStr|The stringified version of the error code.|
 | string |failedUrl|The url that caused the load error.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnPopupClosedDelegate {#delegate-void-onpopupcloseddelegate}
+
+The delegate fpr the webview popup closed event. 
+
+```csharp
+public delegate void OnPopupClosedDelegate(
+    MLWebView webView,
+    ulong handle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| ulong |handle|The webview handle of the popup being closed.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnPopupOpenedDelegate {#delegate-void-onpopupopeneddelegate}
+
+The delegate for the webview popup opened event. 
+
+```csharp
+public delegate void OnPopupOpenedDelegate(
+    MLWebView webView,
+    ulong popupID,
+    string url
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|The [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) associated with this callback.|
+| ulong |popupID|The ID of the popup.|
+| string |url|The URL associated with the popup.|
 
 
 
@@ -1025,6 +1128,21 @@ MLResult.Code.WebViewResultZoomLimitReached if cannot zoom out any further.
 
 ## Public Events
 
+### OnBeforePopup {#onbeforepopupdelegate-onbeforepopup}
+
+Event raised when WebView checks if a URL is OK to load in a popup. 
+
+```csharp
+public OnBeforePopupDelegate OnBeforePopup()
+```
+
+
+
+
+
+
+-----------
+
 ### OnBeforeResourceLoaded {#onbeforeresourceloaddelegate-onbeforeresourceloaded}
 
 Event raised just before resources are loaded. 
@@ -1106,6 +1224,36 @@ Event raised when resources finish loading.
 
 ```csharp
 public OnLoadEndDelegate OnLoadEnded()
+```
+
+
+
+
+
+
+-----------
+
+### OnPopupClosed {#onpopupcloseddelegate-onpopupclosed}
+
+Event raised when Webview is closing a popup. 
+
+```csharp
+public OnPopupClosedDelegate OnPopupClosed()
+```
+
+
+
+
+
+
+-----------
+
+### OnPopupOpened {#onpopupopeneddelegate-onpopupopened}
+
+Event raised when WebView opened a popup. 
+
+```csharp
+public OnPopupOpenedDelegate OnPopupOpened()
 ```
 
 

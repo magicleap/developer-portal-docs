@@ -34,7 +34,7 @@ title: ml_media_ttml.h
 
 |                | Name           |
 | -------------- | -------------- |
-| const float | **[MLTTMLDimen_Unset](/api-ref/api/Modules/group___media_player/group___media_player.md#const-float-mlttmldimen-unset)** <br></br>An unset position, width or size.  |
+| const float | **[MLTTMLDimen_Unset](/api-ref/api/Modules/group___media_player/group___media_player.md#const-float-mlttmldimen-unset)** <br></br>An unset position, width or size which is negative of maximum finite value of float (-FLT_MAX).  |
 
 ## Enums Documentation
 
@@ -56,7 +56,7 @@ Cue text alignment within the cue box.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -80,7 +80,7 @@ Cue line type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -105,7 +105,7 @@ Cue anchor type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -130,7 +130,7 @@ Cue text size type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -143,7 +143,7 @@ Cue text size type.
 ### MLTTMLImage {#struct-mlttmlimage}
 
 ```cpp
-typedef struct MLTTMLImage  MLTTMLImage;
+typedef struct MLTTMLImage MLTTMLImage;
 ```
 
 Byte data for TTML image cues. 
@@ -154,7 +154,7 @@ Byte data for TTML image cues.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -164,7 +164,7 @@ Byte data for TTML image cues.
 ### MLTTMLData {#struct-mlttmldata}
 
 ```cpp
-typedef struct MLTTMLData  MLTTMLData;
+typedef struct MLTTMLData MLTTMLData;
 ```
 
 TTML data structure. 
@@ -175,7 +175,7 @@ TTML data structure.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -192,13 +192,13 @@ TTML data structure.
 static const float MLTTMLDimen_Unset = -3.402823466e+38F;
 ```
 
-An unset position, width or size. 
+An unset position, width or size which is negative of maximum finite value of float (-FLT_MAX). 
 
 
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -228,7 +228,7 @@ An unset position, width or size.
 
 ML_EXTERN_C_BEGIN
 
-static const float MLTTMLDimen_Unset = -3.402823466e+38F; /* Negative of maximum finite value of float (-FLT_MAX). */
+static const float MLTTMLDimen_Unset = -3.402823466e+38F;
 
 typedef enum MLTTMLLayoutAlignment {
   MLTTMLLayoutAlignment_Unspecified  = 0x7FFFFFFF,

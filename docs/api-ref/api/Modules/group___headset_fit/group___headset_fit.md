@@ -43,7 +43,7 @@ API to query the status of the Headset fit.
 
 
 **Shared Object:**
-  * perception.magicleap This API can be used to determine the fit of the headset on the user. The API will only look to see if the pupil location corresponding to the neutral gaze is centered on the image. What this means is that we can only look for a certain type of bad fits. However this covers majority of the bad fit cases. 
+  * perception.magicleap*
 
 
 
@@ -71,7 +71,7 @@ If status is neither NotWorn nor Unknown, then headset is being worn.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -84,7 +84,7 @@ If status is neither NotWorn nor Unknown, then headset is being worn.
 ### MLHeadsetFitState {#struct-mlheadsetfitstate}
 
 ```cpp
-typedef struct MLHeadsetFitState  MLHeadsetFitState;
+typedef struct MLHeadsetFitState MLHeadsetFitState;
 ```
 
 Headset fit state. 
@@ -95,7 +95,7 @@ Headset fit state.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

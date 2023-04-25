@@ -196,6 +196,28 @@ public void SeekTo(
 
 -----------
 
+### void SelectTrack {#void-selecttrack}
+
+```csharp
+public void SelectTrack(
+    MLMedia.Player.Track track
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+
+
+
+
+
+
+-----------
+
 ### void StopMLMediaPlayer {#void-stopmlmediaplayer}
 
 Stops Media Player and destroys it's instance. 
@@ -203,6 +225,28 @@ Stops Media Player and destroys it's instance.
 ```csharp
 public void StopMLMediaPlayer()
 ```
+
+
+
+
+
+
+-----------
+
+### void UnselectTrack {#void-unselecttrack}
+
+```csharp
+public void UnselectTrack(
+    MLMedia.Player.Track track
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
 
 
 
@@ -409,6 +453,19 @@ public Action OnSeekComplete()
 
 ```csharp
 public Action OnStop()
+```
+
+
+
+
+
+
+-----------
+
+### OnTrackFound {#action-ontrackfound}
+
+```csharp
+public Action< MLMedia.Player.Track > OnTrackFound()
 ```
 
 

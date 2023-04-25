@@ -37,7 +37,7 @@ MediaDRM session keys status change info.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

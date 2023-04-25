@@ -323,7 +323,7 @@ Hand in which the controller is held.
 
 
 **API Level:**
-  * 21 
+  * 21
 
 
 
@@ -336,7 +336,7 @@ Hand in which the controller is held.
 ### MLInputControllerTouchpadGesture {#struct-mlinputcontrollertouchpadgesture}
 
 ```cpp
-typedef struct MLInputControllerTouchpadGesture  MLInputControllerTouchpadGesture;
+typedef struct MLInputControllerTouchpadGesture MLInputControllerTouchpadGesture;
 ```
 
 
@@ -353,7 +353,7 @@ A structure containing information about recognized touchpad gesture.
 ### MLInputControllerCallbacksEx {#struct-mlinputcontrollercallbacksex}
 
 ```cpp
-typedef struct MLInputControllerCallbacksEx  MLInputControllerCallbacksEx;
+typedef struct MLInputControllerCallbacksEx MLInputControllerCallbacksEx;
 ```
 
 A structure containing callbacks for input controller events. 
@@ -368,7 +368,7 @@ This structure must be initialized by calling [MLInputControllerCallbacksExInit(
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -378,7 +378,7 @@ This structure must be initialized by calling [MLInputControllerCallbacksExInit(
 ### MLInputControllerState {#struct-mlinputcontrollerstate}
 
 ```cpp
-typedef struct MLInputControllerState  MLInputControllerState;
+typedef struct MLInputControllerState MLInputControllerState;
 ```
 
 A structure containing information about the current state of an input controller. 
@@ -398,7 +398,7 @@ Deprecated since 1.1.0. Scheduled for removal.
 ### MLInputControllerStateEx {#struct-mlinputcontrollerstateex}
 
 ```cpp
-typedef struct MLInputControllerStateEx  MLInputControllerStateEx;
+typedef struct MLInputControllerStateEx MLInputControllerStateEx;
 ```
 
 A structure containing information about the current state of an input controller. 
@@ -409,7 +409,7 @@ A structure containing information about the current state of an input controlle
 
 
 **API Level:**
-  * 21 
+  * 21
 
 
 
@@ -419,7 +419,7 @@ A structure containing information about the current state of an input controlle
 ### MLInputConnectedDevicesList {#struct-mlinputconnecteddeviceslist}
 
 ```cpp
-typedef struct MLInputConnectedDevicesList  MLInputConnectedDevicesList;
+typedef struct MLInputConnectedDevicesList MLInputConnectedDevicesList;
 ```
 
 A structure containing information about the connected devices. 
@@ -430,7 +430,7 @@ A structure containing information about the connected devices.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -440,7 +440,7 @@ A structure containing information about the connected devices.
 ### MLInputPreDefinedPattern {#struct-mlinputpredefinedpattern}
 
 ```cpp
-typedef struct MLInputPreDefinedPattern  MLInputPreDefinedPattern;
+typedef struct MLInputPreDefinedPattern MLInputPreDefinedPattern;
 ```
 
 A structure containing information about the Pre-Defined pattern to be played. 
@@ -464,7 +464,7 @@ When playing haptic pre-defined pattern, needed information is stored in this st
 ### MLInputBuzzCommand {#struct-mlinputbuzzcommand}
 
 ```cpp
-typedef struct MLInputBuzzCommand  MLInputBuzzCommand;
+typedef struct MLInputBuzzCommand MLInputBuzzCommand;
 ```
 
 A structure containing information about the Buzz command to be played. 
@@ -488,7 +488,7 @@ When playing haptic buzz command, needed information is stored in this structure
 ### MLInputCustomHaptics {#struct-mlinputcustomhaptics}
 
 ```cpp
-typedef struct MLInputCustomHaptics  MLInputCustomHaptics;
+typedef struct MLInputCustomHaptics MLInputCustomHaptics;
 ```
 
 A structure containing information about the Buzz command and/or pre-defined pattern to be played. 
@@ -513,7 +513,7 @@ The #duration will set the time for which a pattern is played:
 ### MLInputCustomHapticsInfo {#struct-mlinputcustomhapticsinfo}
 
 ```cpp
-typedef struct MLInputCustomHapticsInfo  MLInputCustomHapticsInfo;
+typedef struct MLInputCustomHapticsInfo MLInputCustomHapticsInfo;
 ```
 
 A structure containing a list of Buzz command and/or pre-defined patterns to be played. 
@@ -827,7 +827,7 @@ Returns current state of all possible input controllers.
 
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal.
+Deprecated since 1.1.0. Scheduled for removal. 
 :::
 
 

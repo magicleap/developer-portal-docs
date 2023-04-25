@@ -467,7 +467,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerCreate(out ulong handle);
-                
+
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerReset(ulong mediaPlayerHandle);
 
@@ -476,7 +476,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerStop(ulong mediaPlayerHandle);
-                
+
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSetLooping(ulong mediaPlayerHandle, [MarshalAs(UnmanagedType.I1)] bool loop);
 
@@ -546,7 +546,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSeekTo(ulong mediaPlayerHandle, int Msec, SeekMode Mode);
-                
+
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerGetVideoSize(ulong mediaPlayerHandle, out int width, out int height);
 
@@ -561,7 +561,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerGetSubtitleEx(ulong mediaPlayerHandle, IntPtr OutSubtitleData);
-                
+
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerReleaseSubtitleEx(ulong mediaPlayerHandle);
 
@@ -597,7 +597,7 @@ namespace UnityEngine.XR.MagicLeap
 
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSetBufferingSettings(ulong mediaPlayerHandle, NativeBindings.MLMediaPlayerBufferingSettings BufSettings);
-                
+
                 [DllImport(MLMediaPlayerDll, CallingConvention = CallingConvention.Cdecl)]
                 public static extern MLResult.Code MLMediaPlayerSetOnMediaTimedTextUpdateCallback(ulong mediaPlayerHandle, OnTimedTextUpdateDelegate OnMediaTimedTextCallback, IntPtr Data);
 
@@ -717,28 +717,24 @@ namespace UnityEngine.XR.MagicLeap
                 {
                     GCHandle gcHandle = GCHandle.FromIntPtr(data);
                     Player mediaPlayer = gcHandle.Target as Player;
-
                     Track selectedTrack = mediaPlayer.trackContainers[Track.Type.TimedText].SelectedTrack;
+
                     switch (selectedTrack.MimeType)
                     {
                         case VTTMime:
                             {
-                                IntPtr webVTTDataPtr = Marshal.AllocHGlobal(Marshal.SizeOf<WebVTTData>());
-                                var resultCode = NativeBindings.MLMediaPlayerGetWebVTTData(mediaPlayerHandle, timedTextHandle, ref webVTTDataPtr);
+                                var resultCode = NativeBindings.MLMediaPlayerGetWebVTTData(mediaPlayerHandle, timedTextHandle, ref mediaPlayer.WebVTTDataPtr);
                                 MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLMediaPlayerGetWebVTTData));
-                                WebVTTData webVTTData = Marshal.PtrToStructure<WebVTTData>(webVTTDataPtr);
-                                Marshal.FreeHGlobal(webVTTDataPtr);
+                                WebVTTData webVTTData = Marshal.PtrToStructure<WebVTTData>(mediaPlayer.WebVTTDataPtr);
                                 MLThreadDispatch.Call(mediaPlayer, webVTTData.Body, mediaPlayer.OnTimedText);
                                 break;
                             }
 
                         case TTMLMime:
                             {
-                                IntPtr ttmlDataPtr = Marshal.AllocHGlobal(Marshal.SizeOf<TTMLData>());
-                                var resultCode = NativeBindings.MLMediaPlayerGetTTMLData(mediaPlayerHandle, timedTextHandle, ref ttmlDataPtr);
+                                var resultCode = NativeBindings.MLMediaPlayerGetTTMLData(mediaPlayerHandle, timedTextHandle, ref mediaPlayer.TTMLDataPtr);
                                 MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLMediaPlayerGetTTMLData));
-                                TTMLData ttmlData = Marshal.PtrToStructure<TTMLData>(ttmlDataPtr);
-                                Marshal.FreeHGlobal(ttmlDataPtr);
+                                TTMLData ttmlData = Marshal.PtrToStructure<TTMLData>(mediaPlayer.TTMLDataPtr);
                                 MLThreadDispatch.Call(mediaPlayer, ttmlData.text, mediaPlayer.OnTimedText);
                                 break;
                             }

@@ -38,6 +38,32 @@ public MLWebViewTabBehavior currentTab { get; set; }
 
 ## Public Methods
 
+### void CreatePopupTab {#void-createpopuptab}
+
+```csharp
+public void CreatePopupTab(
+    MLWebView popupWebView,
+    ulong popupID,
+    string url
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |popupWebView|API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
+| ulong |popupID||
+| string |url||
+
+
+
+
+
+
+-----------
+
 ### void CreateTab {#void-createtab}
 
 ```csharp
@@ -127,7 +153,7 @@ public void SelectTab(
 
 ```csharp
 
-public Action< MLWebViewTabBehavior > OnTabCreated;
+public Action< MLWebViewTabBehavior, string > OnTabCreated;
 
 ```
 
