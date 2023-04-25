@@ -2,7 +2,7 @@
 id: sdk-world-camera
 title: World Camera
 description: An overview of the World Camera example.
-sidebar_position: 10
+sidebar_position: 23
 date: 4/19/2023
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, World Camera]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, World Camera]

@@ -2,7 +2,7 @@
 id: sdk-custom-fit
 title: Custom Fit
 description: An overview of the Anchors example scene which utilizes the Spaces application.
-sidebar_position: 10
+sidebar_position: 5
 date: 4/19/2023
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Custom Fit, Eye Tracking]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Custom Fit, Eye Tracking]

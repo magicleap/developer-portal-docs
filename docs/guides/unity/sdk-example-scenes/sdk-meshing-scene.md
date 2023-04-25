@@ -2,7 +2,7 @@
 id: sdk-meshing-scene
 title: Meshing
 description: An overview of the meshing demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 14
+sidebar_position: 16
 date: 06/07/2022
 tags: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, Meshing]
 keywords: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, Meshing]

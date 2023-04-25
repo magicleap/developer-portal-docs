@@ -2,7 +2,7 @@
 id: sdk-depth-camera
 title: Depth Camera
 description: An overview of the Depth Camera example scene.
-sidebar_position: 10
+sidebar_position: 7
 date: 4/19/2023
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Depth Camera]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Depth Camera]

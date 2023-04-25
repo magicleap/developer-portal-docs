@@ -2,7 +2,7 @@
 id: sdk-hand-tracking-scene
 title: Hand Tracking
 description: An overview of the hand tracking demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 10
+sidebar_position: 11
 date: 3/21/2022
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Hand, Tracking, Input]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Hand, Tracking, Input]

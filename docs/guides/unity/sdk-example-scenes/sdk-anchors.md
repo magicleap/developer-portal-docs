@@ -2,7 +2,7 @@
 id: sdk-anchors
 title: Anchors
 description: An overview of the Anchors example scene which utilizes the Spaces application.
-sidebar_position: 10
+sidebar_position: 1
 date: 4/19/2023
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Tracking, Anchors, Spatial Anchors, Spaces]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Tracking, Anchors, Spatial Anchors, Spaces]

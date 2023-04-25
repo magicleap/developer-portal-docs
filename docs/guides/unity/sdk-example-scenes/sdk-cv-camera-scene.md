@@ -2,7 +2,7 @@
 id: sdk-cv-camera-scene
 title: CV Camera
 description: An overview of the cv camera demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 7
+sidebar_position: 6
 date: 3/21/2022
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, CV]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, CV]

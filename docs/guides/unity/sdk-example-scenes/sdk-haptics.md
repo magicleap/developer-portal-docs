@@ -2,7 +2,7 @@
 id: sdk-haptics
 title: Haptics
 description: An overview of the Haptics example scene.
-sidebar_position: 10
+sidebar_position: 12
 date: 4/19/2023
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Haptics]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Camera, Haptics]
