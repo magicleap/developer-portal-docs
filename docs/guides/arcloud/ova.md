@@ -38,15 +38,16 @@ devices right away.
 
 The images are available on the [Magic Leap 2 Developer Portal](https://ml2-developer.magicleap.com/downloads).
 
-Download the latest version for the [runtime environment](#runtime-environments) of your choice.
+Download the latest version of an image for the [runtime environment](#runtime-environments) of your choice.
+The OVA image supports the majority of the environments, except for MacBooks with Apple Silicon chipsets, in which case
+the UTM image should be used.
 
 :::caution
-You must be logged in to the Developer Portal for these links to appear. You can log in by clicking the "person" icon in the upper-righthandside of the window at the link above.
-:::
+You must be logged in to the Developer Portal for these links to appear. You can log in by clicking the "person" icon in
+the upper-righthandside of the window at the link above.
 
-:::note
-To download an image, registration and the approval of the
-[Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) are required.
+To download an image the approval of the
+[Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) is required.
 :::
 
 ## Requirements
@@ -69,20 +70,55 @@ The output should be **1**.
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-#### Using the Task Manager
+#### Using Command Prompt
 
-1. Start the **Task Manager**
-2. Go to the **Performance** tab
-3. Check if **Virtualization** is **Enabled** in the bottom right of the window
+Run Command Prompt as administrator and run:
 
-#### Using PowerShell
-
-```powershell
-Get-ComputerInfo -property "HyperVRequirementVirtualizationFirmwareEnabled"
+```shell
+systeminfo.exe
 ```
 
 :::info Expected Result
-The output should be **True**.
+The **Hyper-V Requirements** should be shown at the end with all the values set to **Yes**.
+:::
+
+:::caution Hypervisor running
+If the **Hyper-V Requirements** display the message "A hypervisor has been detected. Features required for Hyper-V will
+not be displayed." instead of the actual requirements, it means a hypervisor is already running on the machine and it
+will prevent VirtualBox from using hardware-assisted virtualization.
+
+[Disable the hypervisor launch](#optional-disable-the-hypervisor-launch).
+:::
+
+#### Using PowerShell
+
+Run PowerShell as administrator and run:
+
+```powershell
+Get-ComputerInfo -property "HyperVRequirement*"
+```
+
+:::info Expected Result
+The output should be **True** for all of the properties.
+:::
+
+:::caution Hypervisor running
+If the output is empty, it means a hypervisor is already running on the machine and it will prevent VirtualBox from
+using hardware-assisted virtualization.
+
+[Disable the hypervisor launch](#optional-disable-the-hypervisor-launch).
+:::
+
+#### (Optional) Disable the Hypervisor Launch
+
+In case the hypervisor is running, it should be disabled in the boot configuration:
+
+```shell
+bcdedit /set "{current}" hypervisorlaunchtype Off
+```
+
+:::info
+The machine will need to be restarted for the changes to take effect.
 :::
 
   </TabItem>
@@ -100,7 +136,7 @@ One of the commands should output **1**.
   </TabItem>
 </Tabs>
 
-If virtualization is **not** enabled, follow these steps to enabled it:
+If virtualization is **not** enabled, follow these steps to enable it:
 
 <Tabs groupId="host-machines">
   <TabItem value="generic" label="Generic Steps" default>
@@ -132,8 +168,8 @@ If virtualization is **not** enabled, follow these steps to enabled it:
   </TabItem>
 </Tabs>
 
-After enabling the **Virtualization Technology (VTx)** verify that the feature is enabled by re-running your OS
-corresponding command [virtualization support](#virtualization-support).
+After enabling the **Virtualization Technology (VTx)** verify that it is now supported by your OS by re-running the
+[corresponding command](#virtualization-support).
 
 :::warning Warning
 If the host machine does not support hardware-assisted virtualization, the virtual machine will not be able to run.
@@ -175,9 +211,30 @@ Depending on the [runtime environment](#runtime-environments), the firewall conf
 
 ## Runtime Environments
 
+The virtual machine image can be run on a variety of local or cloud environments. Choose from the following supported
+platforms:
+
+<table>
+    <thead>
+        <tr><th>Environment</th><th>Platform</th><th>Image type</th></tr>
+    </thead>
+    <tbody>
+        <tr><td rowspan="4">Local</td><td><a href="?operating-systems=linux#local-machine">Linux - VirtualBox</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?operating-systems=windows#local-machine">Windows - VirtualBox</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?operating-systems=macos#intel-chip---virtualbox">macOS Intel (x86_64) - VirtualBox</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?operating-systems=macos#apple-chip---utm">macOS Apple Silicon (arm64) - UTM</a></td><td align="center">UTM</td></tr>
+        <tr><td rowspan="2">Cloud</td><td><a href="?cloud-providers=gcp#cloud-providers">GCP - Compute Engine</a></td><td align="center">OVA</td></tr>
+        <tr><td><a href="?cloud-providers=aws#cloud-providers">AWS - EC2</a></td><td align="center">OVA</td></tr>
+    </tbody>
+</table>
+
 ### Local Machine
 
-<Tabs groupId="operating-systems">
+The virtual machine image can be run on a laptop/desktop computer or a server that is either not virtualized or that
+supports nested virtualization. This approach might be suitable for developers that need to run AR Cloud locally or when
+it is required to have the services running inside a private network.
+
+<Tabs groupId="operating-systems" queryString>
   <TabItem value="linux" label="Debian/Ubuntu" default>
 
 Download [VirtualBox for Linux][vbox-linux-download] or for **Debian**-based Linux distrubutions on amd64 CPUs you can
@@ -241,7 +298,10 @@ Download [VirtualBox for MacOS and Intel CPUs][vbox-download].
 
 ### Cloud Providers
 
-<Tabs groupId="cloud-providers">
+In case local machines are not available or the services need to be available publicly, it is also possible to deploy
+the virtual machine image to the supported cloud providers described below.
+
+<Tabs groupId="cloud-providers" queryString>
   <TabItem value="gcp" label="GCP" default>
 
 Check the [GCP documentation][gcp-image-import] or follow the steps below:

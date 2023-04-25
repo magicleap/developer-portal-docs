@@ -306,7 +306,7 @@ brew install helm
 Update the Istio configuration for it to work with WSL:
 
 ```shell
-sed -i '' -e 's/values:/values:\n    global:\n      proxy:\n        privileged: true/' ./setup/istio.yaml
+sed -ri '/values:/{n;s/(^\s+)(gateways:)/\1proxy:\n\1  privileged: true\n\1\2/}' ./setup/istio.yaml
 ```
 
 Install Istio:
