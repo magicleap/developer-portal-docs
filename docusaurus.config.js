@@ -77,7 +77,7 @@ module.exports = {
   trailingSlash: false, // Helps the redirects work more consistently if true.
   themeConfig: {
     prism: {
-      additionalLanguages: ['csharp', 'bash', 'ini'],
+      additionalLanguages: ['csharp', 'bash', 'ini', 'powershell'],
     },
     algolia: {
       apiKey: 'da65530e307839471aec305bfc49e039',
@@ -262,6 +262,9 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        googleTagManager: {
+          containerId: 'GTM-KPZG3CL',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // We do not want any 'Edit this page' links
