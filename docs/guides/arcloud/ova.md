@@ -21,17 +21,16 @@ The provided image contains all the necessary infrastructure and services pre-co
 with the Magic Leap devices. This allows to set up a Virtual Machine (VM) quickly and access the services without a
 complex deployment process. For this to work certain, compromises had to be taken:
 
-* the AR Cloud bundle needs to be installed when running the virtual machine for the first time
-* high-availibility for the services is disabled to limit the required resources
-* the **observability** stack is not installed
+* The AR Cloud bundle needs to be installed when running the virtual machine for the first time
+* High-availability for the services is disabled to limit the required resources
+* The **observability** stack is not installed
 
 The above limitations can be overcome by reconfiguring the infrastructure and services, but it requires additional steps
 to be taken.
 
 :::warning Warning
 Taking all the above into consideration, the provided image is not suitable for scalable and fault-tolerant
-deployments in production environments! Instead, it is a means of quickly testing the services and allow connecting the
-devices right away.
+deployments in production environments! Instead, it is a means of quickly testing the services and devices.
 :::
 
 ## Download
@@ -44,7 +43,7 @@ the UTM image should be used.
 
 :::caution
 You must be logged in to the Developer Portal for these links to appear. You can log in by clicking the "person" icon in
-the upper-righthandside of the window at the link above.
+the upper-right hand side of the window at the link above.
 
 To download an image the approval of the
 [Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) is required.
@@ -237,7 +236,7 @@ it is required to have the services running inside a private network.
 <Tabs groupId="operating-systems" queryString>
   <TabItem value="linux" label="Debian/Ubuntu" default>
 
-Download [VirtualBox for Linux][vbox-linux-download] or for **Debian**-based Linux distrubutions on amd64 CPUs you can
+Download [VirtualBox for Linux][vbox-linux-download] or for **Debian**-based Linux distributions on amd64 CPUs you can
 install **VirtualBox** with the following commands:
 
 ```shell showLineNumbers
@@ -672,7 +671,7 @@ This will only make the services available on the devices that have the override
 
 ### Advanced Deployment - Use a Custom Domain with a TLS Certificate
 
-This allows to configure the services to use a custom domain and issue a TLS certificate.
+This allows the services to use a custom domain and issue a TLS certificate.
 
 1. Point your custom domain to the IP address where the virtual machine is available and make sure that [all the ports
    mentioned above](#firewall) are accessible

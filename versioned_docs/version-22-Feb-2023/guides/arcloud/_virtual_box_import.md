@@ -5,7 +5,7 @@
 5. Click **Finish**.
 6. When the appliance has finished loading, select it from the left panel and click on **Start**.
 
-When the virtual machine starts login by using the [credentials](#credentials) provided below, select a
+When the virtual machine starts, log in by using the [credentials](#credentials) provided below, select a
 [deployment option](#deployment-options) and continue from there.
 
 You can also run the imported virtual machine in headless mode:
