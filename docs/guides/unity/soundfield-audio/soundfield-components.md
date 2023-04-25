@@ -32,7 +32,7 @@ The meter works while you have selected a group in the attenuation plugin, but s
 
 You can expose parameters and use a script to group them, like using a slider to move several of them. For instance, if I expose the gain for the master and 3 groups (rename them appropriately) you can run something like this to use master volume to move the others relatively:
 
-```c#
+```cs
 
 using System.Collections;
 using System.Collections.Generic;
