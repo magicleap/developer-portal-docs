@@ -1,7 +1,7 @@
 import AccessVM from './_access_vm.md';
 
 1. Start **VirtualBox**
-1. Select **File** > **Import Applicance...** from the menu
+1. Select **File** > **Import Appliance...** from the menu
 1. Select the downloaded OVA file from your disk and click **Next**
 1. Uncheck the **Import hard drives as VDI** option
 1. Click **Finish**
