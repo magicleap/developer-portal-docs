@@ -11,7 +11,7 @@ date: 04/26/2023
 
 ## Release Focus
 
-Initial support for MRTK3 on MagicLeap 2
+Initial support for MRTK3 on Magic Leap 2
 
 ### Important Note
 
@@ -21,6 +21,5 @@ Please use the Unity SDK 1.4 Package with the MRTK3 preview package at this time
 
 - Support for Controller
 - Support for Hand Tracking
-- Known Issues
 
-Other MagicLeap 2 API's that overlap with MRTK3 are not yet configured or enabled.
+Other Magic Leap 2 API's that overlap with MRTK3 are not yet configured or enabled.
