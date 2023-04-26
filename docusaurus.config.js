@@ -110,6 +110,10 @@ module.exports = {
             to: '/docs/guides/native/getting-started/native-getting-started'
           },
           {
+            from: '/docs/guides/unity/getting-started/set-up-development-environment',
+            to: '/docs/guides/unity/getting-started/unity-getting-started'
+          },
+          {
             from: '/docs/guides/developer-tools/lab-tools/ml2-lab-device-stream',
             to: '/docs/guides/developer-tools/ml-hub/ml-hub-device-stream'
           },
