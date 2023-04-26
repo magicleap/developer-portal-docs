@@ -32,7 +32,7 @@ uint32_t track_id;
 ```
 
 
-Holds valid track id only for track specific info (returned via on_track_info callback.). Holds 0 for the generic info (returned via on_info callback). Refer to [MLMediaRecorderInfo](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enum-mlmediarecorderinfo) for the info. 
+Holds valid track id only for track specific info (returned via on_track_info callback.). Holds 0 for the generic info (returned via on_info callback). Refer to MLMediaRecorderInfo for the info. 
 
 
 
@@ -47,7 +47,7 @@ MLMediaRecorderInfo info;
 ```
 
 
-The info of MLMediaRecorderInfo 
+The info of MLMediaRecorderInfo. 
 
 
 
@@ -62,7 +62,7 @@ int extra;
 ```
 
 
-The extra info 
+The extra info. 
 
 
 

@@ -158,6 +158,32 @@ public static async Task StopScanningAsync()
 
 ## Protected Methods
 
+### OnApplicationPause {#override-void-onapplicationpause}
+
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
+
+```csharp
+protected virtual override void OnApplicationPause(
+    bool pauseStatus
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |pauseStatus|True if the application is paused, else False. |
+
+
+
+
+**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-onapplicationpause)
+
+
+
+-----------
+
 ### StartAPI {#override-startapi}
 
 Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 

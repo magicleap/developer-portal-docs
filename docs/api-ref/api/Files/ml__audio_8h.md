@@ -63,7 +63,7 @@ title: ml_audio.h
 | enum | **[MLAudioSampleFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering.md#enums-mlaudiosampleformat)** <br></br> { <br></br>[MLAudioSampleFormat_Int](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiosampleformat-int),<br></br> [MLAudioSampleFormat_Float](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiosampleformat-float),<br></br> [MLAudioSampleFormat_Ensure32Bits](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiosampleformat-ensure32bits) = 0x7FFFFFFF<br></br>} |
 | enum | **[MLAudioChannelFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering.md#enums-mlaudiochannelformat)** <br></br> { <br></br>[MLAudioChannelFormat_Default](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiochannelformat-default),<br></br> [MLAudioChannelFormat_AmbisonicAmbix](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiochannelformat-ambisonicambix),<br></br> [MLAudioChannelFormat_Ensure32Bits](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiochannelformat-ensure32bits) = 0x7FFFFFFF<br></br>} |
 | enum | **[MLAudioTraitAnalysisTarget](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget)** <br></br> { <br></br>[MLAudioTraitAnalysisTarget_AmbientSoundLevelDbfs](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiotraitanalysistarget-ambientsoundleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePresence](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiotraitanalysistarget-uservoicepresence),<br></br> [MLAudioTraitAnalysisTarget_UserVoiceLevelDbfs](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiotraitanalysistarget-uservoiceleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePitch](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiotraitanalysistarget-uservoicepitch),<br></br> [MLAudioTraitAnalysisTarget_Ensure32Bits](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiotraitanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLAudioSpectralAnalysisTarget](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget)** <br></br> { <br></br>[MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiospectralanalysistarget-uservoicespectrummfcc),<br></br> [MLAudioSpectralAnalysisTarget_Ensure32Bits](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiospectralanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLAudioSpectralAnalysisTarget](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget)** <br></br> { <br></br>[MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiospectralanalysistarget-uservoicespectrummfcc),<br></br> [MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumBark](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiospectralanalysistarget-ambientsoundspectrumbark),<br></br> [MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumMel](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiospectralanalysistarget-ambientsoundspectrummel),<br></br> [MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumThirdOctave](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiospectralanalysistarget-ambientsoundspectrumthirdoctave),<br></br> [MLAudioSpectralAnalysisTarget_Ensure32Bits](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudiospectralanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
 | enum | **[Anonymous Enum 3](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_result_codes.md#enums-anonymous-enum-3)** <br></br> { <br></br>[MLResultAPIPrefix_Audio](/api-ref/api/Files/ml__audio_8h.md#enums-mlresultapiprefix-audio) = ( 0x9e11  << 16)<br></br>} |
 | enum | **[MLAudioResult](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_result_codes.md#enums-mlaudioresult)** <br></br> { <br></br>[MLAudioResult_NotImplemented](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-notimplemented) = MLResultAPIPrefix_Audio,<br></br> [MLAudioResult_HandleNotFound](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-handlenotfound),<br></br> [MLAudioResult_InvalidSampleRate](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-invalidsamplerate),<br></br> [MLAudioResult_InvalidBitsPerSample](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-invalidbitspersample),<br></br> [MLAudioResult_InvalidValidBits](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-invalidvalidbits),<br></br> [MLAudioResult_InvalidSampleFormat](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-invalidsampleformat),<br></br> [MLAudioResult_InvalidChannelCount](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-invalidchannelcount),<br></br> [MLAudioResult_InvalidBufferSize](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-invalidbuffersize),<br></br> [MLAudioResult_BufferNotReady](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-buffernotready),<br></br> [MLAudioResult_FileNotFound](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-filenotfound),<br></br> [MLAudioResult_FileNotRecognized](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-filenotrecognized),<br></br> [MLAudioResult_ResourceNotFound](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-resourcenotfound),<br></br> [MLAudioResult_ResourceDiscarded](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-resourcediscarded),<br></br> [MLAudioResult_OperationUnavailable](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-operationunavailable),<br></br> [MLAudioResult_OperationNotReady](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-operationnotready),<br></br> [MLAudioResult_InternalConfigError](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-internalconfigerror),<br></br> [MLAudioResult_Ensure32Bits](/api-ref/api/Files/ml__audio_8h.md#enums-mlaudioresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Audio Service API calls.  |
 
@@ -284,7 +284,7 @@ The type of mic input to capture.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -355,6 +355,9 @@ Available trait analyses of an audio stream.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc | | Voice Mel Frequency Cepstral Coefficients, spectral analysis of a voice mic stream. (typically used for lip-sync). |
+| MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumBark | | Ambient Sound Spectrum Bark Scale, spectral analysis of ambient mic stream(s) using Bark scale. |
+| MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumMel | | Ambient Sound Spectrum Mel Scale, spectral analysis of ambient mic stream(s) using Mel scale. |
+| MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumThirdOctave | | Ambient Sound Spectrum Third Octave Scale, spectral analysis of ambient mic stream(s) using Third Octave scale. |
 | MLAudioSpectralAnalysisTarget_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -413,7 +416,7 @@ Return values for Audio Service API calls.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -426,7 +429,7 @@ Return values for Audio Service API calls.
 ### MLAudioMultibandLevel {#struct-mlaudiomultibandlevel}
 
 ```cpp
-typedef struct MLAudioMultibandLevel  MLAudioMultibandLevel;
+typedef struct MLAudioMultibandLevel MLAudioMultibandLevel;
 ```
 
 Properties specifying a broadband level and three sub-band levels. 
@@ -437,7 +440,7 @@ Properties specifying a broadband level and three sub-band levels.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -447,11 +450,11 @@ Properties specifying a broadband level and three sub-band levels.
 ### MLAudioDispersionProperties {#struct-mlaudiodispersionproperties}
 
 ```cpp
-typedef struct MLAudioDispersionProperties  MLAudioDispersionProperties;
+typedef struct MLAudioDispersionProperties MLAudioDispersionProperties;
 ```
 
 
-specifying acoustic dispersion (clustered reflections).
+\briefProperties specifying acoustic dispersion (clustered reflections).
 
 
 
@@ -459,7 +462,7 @@ specifying acoustic dispersion (clustered reflections).
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -469,7 +472,7 @@ specifying acoustic dispersion (clustered reflections).
 ### MLAudioReverbProperties {#struct-mlaudioreverbproperties}
 
 ```cpp
-typedef struct MLAudioReverbProperties  MLAudioReverbProperties;
+typedef struct MLAudioReverbProperties MLAudioReverbProperties;
 ```
 
 Properties specifying acoustic reverberation. 
@@ -480,7 +483,7 @@ Properties specifying acoustic reverberation.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -490,7 +493,7 @@ Properties specifying acoustic reverberation.
 ### MLAudioSpatialSoundDistanceProperties {#struct-mlaudiospatialsounddistanceproperties}
 
 ```cpp
-typedef struct MLAudioSpatialSoundDistanceProperties  MLAudioSpatialSoundDistanceProperties;
+typedef struct MLAudioSpatialSoundDistanceProperties MLAudioSpatialSoundDistanceProperties;
 ```
 
 
@@ -507,7 +510,7 @@ Properties specifying the distance response of a spatial sound.
 ### MLAudioSpatialSoundRadiationProperties {#struct-mlaudiospatialsoundradiationproperties}
 
 ```cpp
-typedef struct MLAudioSpatialSoundRadiationProperties  MLAudioSpatialSoundRadiationProperties;
+typedef struct MLAudioSpatialSoundRadiationProperties MLAudioSpatialSoundRadiationProperties;
 ```
 
 
@@ -524,7 +527,7 @@ Properties specifying the directivity of a spatial sound.
 ### MLAudioRaycast {#struct-mlaudioraycast}
 
 ```cpp
-typedef struct MLAudioRaycast  MLAudioRaycast;
+typedef struct MLAudioRaycast MLAudioRaycast;
 ```
 
 Two points in space describing a ray. 
@@ -535,7 +538,7 @@ Two points in space describing a ray.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -545,7 +548,7 @@ Two points in space describing a ray.
 ### MLAudioObstruction {#struct-mlaudioobstruction}
 
 ```cpp
-typedef struct MLAudioObstruction   MLAudioObstruction;
+typedef struct MLAudioObstruction MLAudioObstruction;
 ```
 
 Obstruction along a ray. 
@@ -556,7 +559,7 @@ Obstruction along a ray.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -566,7 +569,7 @@ Obstruction along a ray.
 ### MLAudioRaycastRequest {#struct-mlaudioraycastrequest}
 
 ```cpp
-typedef struct MLAudioRaycastRequest  MLAudioRaycastRequest;
+typedef struct MLAudioRaycastRequest MLAudioRaycastRequest;
 ```
 
 ID-tracked request for a single raycast operation. 
@@ -577,7 +580,7 @@ ID-tracked request for a single raycast operation.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -587,7 +590,7 @@ ID-tracked request for a single raycast operation.
 ### MLAudioRaycastResult {#struct-mlaudioraycastresult}
 
 ```cpp
-typedef struct MLAudioRaycastResult  MLAudioRaycastResult;
+typedef struct MLAudioRaycastResult MLAudioRaycastResult;
 ```
 
 ID-tracked result for a single raycast operation. 
@@ -598,7 +601,7 @@ ID-tracked result for a single raycast operation.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -608,7 +611,7 @@ ID-tracked result for a single raycast operation.
 ### MLAudioBufferFormat {#struct-mlaudiobufferformat}
 
 ```cpp
-typedef struct MLAudioBufferFormat  MLAudioBufferFormat;
+typedef struct MLAudioBufferFormat MLAudioBufferFormat;
 ```
 
 Buffer format settings for input and output streams. 
@@ -619,7 +622,7 @@ Buffer format settings for input and output streams.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -629,7 +632,7 @@ Buffer format settings for input and output streams.
 ### MLAudioBuffer {#struct-mlaudiobuffer}
 
 ```cpp
-typedef struct MLAudioBuffer  MLAudioBuffer;
+typedef struct MLAudioBuffer MLAudioBuffer;
 ```
 
 
@@ -646,7 +649,7 @@ An audio buffer for passing data from input streams or to output streams.
 ### MLAudioSpectralAnalysis {#struct-mlaudiospectralanalysis}
 
 ```cpp
-typedef struct MLAudioSpectralAnalysis  MLAudioSpectralAnalysis;
+typedef struct MLAudioSpectralAnalysis MLAudioSpectralAnalysis;
 ```
 
 
@@ -5411,7 +5414,7 @@ Starts a new spectral analysis that provides frequency spectrum energy derived f
   * None 
 
 
-Creates a spectral analysis, initializes its connection to the device microphones as the audio data source, and returns a handle in the 'out_handle' argument. The 'target' argument specifies the type of spectral analysis, which implies the type of audio content to be analyzed. Spectral analysis results are returned in the [MLAudioSpectralAnalysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) struct, which contains a time window of spectral analysis values. Results may be acquired either on a polling basis by calling MLAudioGetSpectralAnalysis, or via a callback set by the optional 'callback' argument of this function.
+Creates a spectral analysis, initializes its connection to the device microphones as the audio data source, and returns a handle in the 'out_handle' argument. The 'target' argument specifies the type of spectral analysis, which implies the type of audio content to be analyzed. Spectral analysis results are returned in the [MLAudioSpectralAnalysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) struct, which contains a time window of spectral analysis values. Results may be acquired either on a polling basis by calling MLAudioGetSpectralAnalysis, or via a callback set by the optional 'callback' argument of this function, triggered whenever new values are available. Cleanup of [MLAudioSpectralAnalysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/struct_m_l_audio_spectral_analysis.md) passed in the optional callback is handled by the ml_audio library; the caller is not responsible for deallocating memory if the callback is used.
 
 
 
@@ -5454,6 +5457,8 @@ Returns the current value of the spectral analysis associated with the specified
 
   * None 
 
+
+Allocates memory at out_values->values based on the MLAudioSpectralAnalysisTarget associated with the specified handle. The caller is responsible for deallocating this memory after each call to MLAudioGetSpectralAnalysis.
 
 
 
@@ -5673,6 +5678,9 @@ typedef enum MLAudioTraitAnalysisTarget {
 
 typedef enum MLAudioSpectralAnalysisTarget {
     MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc,
+    MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumBark,
+    MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumMel,
+    MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumThirdOctave,
     MLAudioSpectralAnalysisTarget_Ensure32Bits = 0x7FFFFFFF
 } MLAudioSpectralAnalysisTarget;
 

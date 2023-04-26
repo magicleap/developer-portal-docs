@@ -126,7 +126,7 @@ The index ordering of 28 keypoints exposed in array keypoints_mask[MLHandTrackin
 
 
 **API Level:**
-  * 7 
+  * 7
 
 
 
@@ -139,7 +139,7 @@ The index ordering of 28 keypoints exposed in array keypoints_mask[MLHandTrackin
 ### MLHandTrackingCFUIDs {#struct-mlhandtrackingcfuids}
 
 ```cpp
-typedef struct MLHandTrackingCFUIDs  MLHandTrackingCFUIDs;
+typedef struct MLHandTrackingCFUIDs MLHandTrackingCFUIDs;
 ```
 
 MLCoordinateFrameUIDs for the keypoints. 
@@ -152,7 +152,7 @@ See [MLHandTrackingKeyPoint](/api-ref/api/Modules/group___hand_tracking/group___
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -162,7 +162,7 @@ See [MLHandTrackingKeyPoint](/api-ref/api/Modules/group___hand_tracking/group___
 ### MLHandTrackingStaticData {#struct-mlhandtrackingstaticdata}
 
 ```cpp
-typedef struct MLHandTrackingStaticData  MLHandTrackingStaticData;
+typedef struct MLHandTrackingStaticData MLHandTrackingStaticData;
 ```
 
 Static information about a hand tracker. 
@@ -175,7 +175,7 @@ This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -185,7 +185,7 @@ This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/
 ### MLHandTrackingHandState {#struct-mlhandtrackinghandstate}
 
 ```cpp
-typedef struct MLHandTrackingHandState  MLHandTrackingHandState;
+typedef struct MLHandTrackingHandState MLHandTrackingHandState;
 ```
 
 State of a single hand. 
@@ -196,7 +196,7 @@ State of a single hand.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -206,7 +206,7 @@ State of a single hand.
 ### MLHandTrackingData {#struct-mlhandtrackingdata}
 
 ```cpp
-typedef struct MLHandTrackingData  MLHandTrackingData;
+typedef struct MLHandTrackingData MLHandTrackingData;
 ```
 
 Data which is received when querying hand tracker from [MLHandTrackingGetData()](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#mlresult-mlhandtrackinggetdata). 
@@ -219,7 +219,7 @@ This structure must be initialized by calling [MLHandTrackingDataInit()](/api-re
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

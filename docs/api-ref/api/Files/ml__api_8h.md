@@ -104,7 +104,7 @@ title: ml_api.h
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLResult_Ok |  MLResultAPIPrefix_Global| Operation completed successfuly. |
+| MLResult_Ok |  MLResultAPIPrefix_Global| Operation completed successfully. |
 | MLResult_Pending | | Asynchronous operation has not completed. |
 | MLResult_Timeout | | Operation has timed out. |
 | MLResult_Locked | | Request to lock a shared resource that is already locked. |
@@ -153,7 +153,7 @@ Integer handle type used to reference many things returned by the API, instead o
 ### MLVersion {#struct-mlversion}
 
 ```cpp
-typedef struct MLVersion  MLVersion;
+typedef struct MLVersion MLVersion;
 ```
 
 

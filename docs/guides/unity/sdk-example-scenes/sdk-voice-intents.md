@@ -2,7 +2,7 @@
 id: sdk-voice-intents
 title: Voice Intents
 description: An overview of the Voice Intents scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 18
+sidebar_position: 19
 date: 04/15/2022
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Voice Intents]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Voice Intents]

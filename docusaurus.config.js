@@ -273,13 +273,13 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
+              label: '26 Apr 2023'
+            },
+            '22-Mar-2023': {
               label: '22 Mar 2023'
             },
-            '22-Feb-2023': {
-              label: '22 Feb 2023'
-            },
-            // '22-Feb-2023': {
-            //   label: '22 Feb 2023'
+            // '22-Mar-2023': {
+            //   label: '22 Mar 2023'
             // },
           },
         },
@@ -290,4 +290,5 @@ module.exports = {
     ],
   ],
 };
+
 

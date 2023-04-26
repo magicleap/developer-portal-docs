@@ -289,10 +289,31 @@ Captured output format. These three parameters determine which formats are suppo
 
 
 
-* Camera type: [Main, CV]
-* Mode: [Real, MR, Virtual]
-* Capture type: [Preview, Video, Image]
-These are formats supported: YUV : [Main] [Real] [Preview, Video, Image] / [ CV ] [Real] [Video, Image] RGBA : [Main] [Real] [Video] / [Main] [MR, Virtual] [Video, Image] / [ CV ] [Real] [Video] JPEG : [Main] [Real, MR, Virtual] [Image] 
+* Camera type: [Main, CV].
+* Mode: [Real, MR, Virtual].
+* Capture type: [Preview, Video, Image].
+These are formats supported:
+
+<table className="doxtable">
+  <tbody><tr>
+      <th>Format </th><th>Camera Type </th><th>Mode </th><th>Capture Type </th></tr>
+    <tr>
+      <td>YUV </td><td>Main <br />
+        CV </td><td>Real <br />
+        Real </td><td>Preview, Video, Image <br />
+        Video, Image </td></tr>
+    <tr>
+      <td>RGBA </td><td>Main <br />
+        Main <br />
+        CR </td><td>Real <br />
+        MR, Virtual <br />
+        Real </td><td>Video <br />
+        Video, Image <br />
+        Video </td></tr>
+    <tr>
+      <td>JPEG </td><td>Main </td><td>Real, MR, Virtual </td><td>Image </td></tr>
+  </tbody></table>
+  
 
 
 
@@ -351,7 +372,7 @@ Camera distortion vector size.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -381,7 +402,7 @@ Camera context to be used while connecting to camera.
 ### MLCameraMRConnectInfo {#struct-mlcameramrconnectinfo}
 
 ```cpp
-typedef struct MLCameraMRConnectInfo  MLCameraMRConnectInfo;
+typedef struct MLCameraMRConnectInfo MLCameraMRConnectInfo;
 ```
 
 
@@ -398,7 +419,7 @@ A structure to encapsulate connection settings for MR capture.
 ### MLCameraConnectContext {#struct-mlcameraconnectcontext}
 
 ```cpp
-typedef struct MLCameraConnectContext  MLCameraConnectContext;
+typedef struct MLCameraConnectContext MLCameraConnectContext;
 ```
 
 
@@ -415,7 +436,7 @@ A structure to encapsulate context for a CameraConnect Request.
 ### MLCameraCaptureStreamCaps {#struct-mlcameracapturestreamcaps}
 
 ```cpp
-typedef struct MLCameraCaptureStreamCaps  MLCameraCaptureStreamCaps;
+typedef struct MLCameraCaptureStreamCaps MLCameraCaptureStreamCaps;
 ```
 
 A structure to encapsulate stream capabilities. 
@@ -428,7 +449,7 @@ The capabilities for each stream supported by logical camera device can be queri
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -438,7 +459,7 @@ The capabilities for each stream supported by logical camera device can be queri
 ### MLCameraCaptureStreamConfig {#struct-mlcameracapturestreamconfig}
 
 ```cpp
-typedef struct MLCameraCaptureStreamConfig  MLCameraCaptureStreamConfig;
+typedef struct MLCameraCaptureStreamConfig MLCameraCaptureStreamConfig;
 ```
 
 
@@ -455,7 +476,7 @@ A structure to encapsulate stream configurations.
 ### MLCameraCaptureConfig {#struct-mlcameracaptureconfig}
 
 ```cpp
-typedef struct MLCameraCaptureConfig  MLCameraCaptureConfig;
+typedef struct MLCameraCaptureConfig MLCameraCaptureConfig;
 ```
 
 
@@ -472,7 +493,7 @@ A structure to encapsulate capture configuration.
 ### MLCameraPlaneInfo {#struct-mlcameraplaneinfo}
 
 ```cpp
-typedef struct MLCameraPlaneInfo  MLCameraPlaneInfo;
+typedef struct MLCameraPlaneInfo MLCameraPlaneInfo;
 ```
 
 
@@ -489,7 +510,7 @@ Per plane info for captured output.
 ### MLCameraOutput {#struct-mlcameraoutput}
 
 ```cpp
-typedef struct MLCameraOutput  MLCameraOutput;
+typedef struct MLCameraOutput MLCameraOutput;
 ```
 
 
@@ -506,7 +527,7 @@ A structure to encapsulate captured output.
 ### MLCameraIntrinsicCalibrationParameters {#struct-mlcameraintrinsiccalibrationparameters}
 
 ```cpp
-typedef struct MLCameraIntrinsicCalibrationParameters  MLCameraIntrinsicCalibrationParameters;
+typedef struct MLCameraIntrinsicCalibrationParameters MLCameraIntrinsicCalibrationParameters;
 ```
 
 Camera intrinsic parameter. 
@@ -517,7 +538,7 @@ Camera intrinsic parameter.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -527,7 +548,7 @@ Camera intrinsic parameter.
 ### MLCameraResultExtras {#struct-mlcameraresultextras}
 
 ```cpp
-typedef struct MLCameraResultExtras  MLCameraResultExtras;
+typedef struct MLCameraResultExtras MLCameraResultExtras;
 ```
 
 
@@ -544,7 +565,7 @@ A structure to encapsulate various indices for a capture result.
 ### MLCameraDeviceAvailabilityInfo {#struct-mlcameradeviceavailabilityinfo}
 
 ```cpp
-typedef struct MLCameraDeviceAvailabilityInfo  MLCameraDeviceAvailabilityInfo;
+typedef struct MLCameraDeviceAvailabilityInfo MLCameraDeviceAvailabilityInfo;
 ```
 
 
@@ -561,7 +582,7 @@ A structure to represent info on camera availability.
 ### MLCameraDeviceAvailabilityStatusCallbacks {#struct-mlcameradeviceavailabilitystatuscallbacks}
 
 ```cpp
-typedef struct MLCameraDeviceAvailabilityStatusCallbacks  MLCameraDeviceAvailabilityStatusCallbacks;
+typedef struct MLCameraDeviceAvailabilityStatusCallbacks MLCameraDeviceAvailabilityStatusCallbacks;
 ```
 
 
@@ -578,7 +599,7 @@ Device availability status callbacks to be implemented by client to receive devi
 ### MLCameraDeviceStatusCallbacks {#struct-mlcameradevicestatuscallbacks}
 
 ```cpp
-typedef struct MLCameraDeviceStatusCallbacks  MLCameraDeviceStatusCallbacks;
+typedef struct MLCameraDeviceStatusCallbacks MLCameraDeviceStatusCallbacks;
 ```
 
 
@@ -595,7 +616,7 @@ Device status callbacks to be implemented by client to receive device status if 
 ### MLCameraCaptureCallbacks {#struct-mlcameracapturecallbacks}
 
 ```cpp
-typedef struct MLCameraCaptureCallbacks  MLCameraCaptureCallbacks;
+typedef struct MLCameraCaptureCallbacks MLCameraCaptureCallbacks;
 ```
 
 Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. 

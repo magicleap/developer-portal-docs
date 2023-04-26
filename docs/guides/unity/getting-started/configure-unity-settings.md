@@ -9,40 +9,55 @@ keywords: [Unity, Getting Started, Walkthroughs]
 
 This topic describes how to configure the Unity Build Settings to utilize Magic Leap features.
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## Prerequisites
 
 - [Download Magic Leap Unity SDK](/docs/guides/unity/getting-started/install-the-tools.md)
 - [Unity project using Editor version 2022.2.0b7 or higher](/docs/guides/unity/getting-started/create-a-project.md)
-- [Download the Magic Leap Setup Tool from the Unity Asset Store](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780)
 
 ## Quickstart
 
 The fastest recommended way to set up your project for Magic Leap 2 development is to use the latest version of the [Magic Leap Setup Tool](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780).
 
-1. After adding it to your asset library, click the **Open in Unity** button.
-2. This will bring up the tool inside the Package Manager window in the Unity Editor. Click **Import** in the upper right corner of the window next to the package name to import the tool into your project.
-![Package Manager window](/img/unity/setup/setup-tool-package-manager.jpg)
-3. Keep all of the package contents selected in the following popup window and click **Import** one more time.
-![Import settings window](/img/unity/setup/setup-tool-import.jpg)
-4. After the package is imported, you should see the Magic Leap Project Setup Tool popup window. If you do not see it, go to **Magic Leap > Project Setup Tool** in the Unity menu.
-![Magic Leap Project Setup Tool popup window](/img/unity/setup/setup-tool-window.jpg)
-5. The project setup tool will walk you through all of the steps necessary to complete setup, starting with setting the Magic Leap SDK folder. Click **Change** and select the folder containing the latest version of the Magic Leap Unity SDK.
-6. After setting the SDK folder, click the **Apply All** button on the bottom of the window to quickly change all of the required settings.
 
-After accepting all prompts and restarting the editor, your project will now be ready for Magic Leap 2 development.
+1. Download the [Magic Leap Setup Tool from the Unity Asset Store](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780)
+2. After adding it to your asset library, click the **Open in Unity** button to show the tool inside Unity's Package Manager.
+3. Select **Download** then **Import** to import the tool into your project.
 
-:::note
+<Image url= {require("/img/unity/setup/setup-tool-package-manager.jpg")} >Unity's Package Manager window with the Import option highlighted</Image>
 
-The Magic Leap Setup Tool will import the latest version of the Magic Leap core SDK compatible with your Unity Editor version. If your project necessitates an older version of the SDK, you can [assign the Magic Leap SDK path](#assign-magic-leap-sdk-path) manually.
+4. Keep all of the package contents selected in the **Import Unity Package** window and select **Import**.
 
-Please reference the Magic Leap OS, SDK and Unity SDK [compatibility matrix](/docs/releases/version-matrix.md) to determine which version is right for you.
+<Image url= {require("/img/unity/setup/setup-tool-import-annotated.jpg")} >Import Assets window with the Import option highlighted</Image>
+
+5. After the package is imported, you should see the Magic Leap Project Setup Tool popup window. If you do not see it, go to **Magic Leap > Project Setup Tool** in the Unity menu.
+
+<Image url= {require("/img/unity/setup/setup-tool.jpg")} >Magic Leap Project Setup Tool window</Image>
+
+
+1. The project setup tool will walk you through all of the steps necessary to complete setup. Start by setting the Magic Leap SDK  by selecting **Locate SDK**. Then select the folder containing the latest version of the Magic Leap Unity SDK.
+2. After setting the SDK folder, you can select the **Apply All** button on the bottom of the window to quickly change all of the required settings.
+3. After accepting all prompts and restarting the editor, your project will now be ready for Magic Leap 2 development.
+
+:::info Configuring the SDK version
+
+The Magic Leap Setup Tool will import the latest version of the Magic Leap core SDK compatible with your Unity Editor version. If your project requires an older version of the SDK, you can [assign the Magic Leap SDK path](#assign-magic-leap-sdk-path) manually.
+
+Please reference the Magic Leap OS, SDK and Unity SDK [compatibility matrix](/docs/releases/overview.md#api-version-matrix) to determine which version is right for you.
 :::
 
 ## Manual Setup
 
+This section provides detailed steps on how to manually configure your Unity Project so that you can build and deploy applications for Magic Leap 2.
+
 ### Import Magic Leap Unity SDK
 
-The Magic Leap SDK provides access to Magic Leap's perception and input API. The Magic Leap Unity SDK can be imported using Unity's Package Manager.
+The Magic Leap SDK provides access to Magic Leap's perception and input API. The Magic Leap Unity SDK can be installed using the Unity Package Manager by importing the SDK from your computer or a scoped registry.
+
+<Tabs>
+  <TabItem value="from-disk" label="From Disk" default>
 
 1. Open the Package Manager window ( **Window > Package Manager**).
 
@@ -50,7 +65,7 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 
 ![Unity Editor Package From Disk Dialogue](/img/unity/unity_add_tarball.png)
 
-1. Navigate to the location of the following folders and select the .tgz file within to add the package from `com.magicleap.unitysdk.tgz` (downloaded via [ML Hub](/docs/guides/getting-started/install-the-tools.md)). For example:
+3. Navigate to the location of the following folders and select the .tgz file within to add the package from `com.magicleap.unitysdk.tgz` (downloaded via [ML Hub](/docs/guides/getting-started/install-the-tools.md)). For example:
 
 - Mac : `$HOME/MagicLeap/tools/unity/<Version>/com.magicleap.unitysdk.tgz`
 - Windows : `%USERPROFILE%/MagicLeap/tools/unity/<Version>/com.magicleap.unitysdk.tgz`
@@ -69,35 +84,34 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 
 </details>
 
-### Adding a Custom Scoped Registry (Optional)
+  </TabItem>
+  <TabItem value="registry" label="Scoped Registry">
 
-Scoped Registries allow Unity to communicate the location of any custom package registry server to the **Package Manager** to access to several collections of packages at the same time. you can either edit your project manifest file directly or use the **Package Manager**'s **Project Settings** window to let Unity modify the manifest for you.
+1. Navigate to to the **Package Manager** settings by selecting **Edit > Project Settings** from the menu. Then choose **Package Manager**.
+2. Select the **+** button at the bottom of the list. A new entry will appear as **New Scoped Registry** in the list.
+3. Enter the following details into the **Scoped Registry**:
 
-#### Using the Package Manger Settings
-
-Navigate to to the **Package Manager** settings by selecting Edit > Project Settings from the menu. Then choose the Package Manager category.
-
-Select the <kbd>+</kbd> button at the bottom of the list. A new entry will appear as New Scoped Registry in the list.
-
-Enter the following details into the Scooped Registry:
-
-```plaintext
+```json
 Name : Magic Leap
 URL : https://registry.npmjs.org
 Scope : com.magicleap
 ```
 
-Click <kbd>Apply</kbd>.
+4. Click **Apply**.
 
-#### Editing the Project Manifest File
+Now you will be able to view Magic Leap packages in the Package Manager. Follow the steps below to download and import the Magic Leap Unity SDK.
 
-Open the `manifest.json` file located in the `Packages/` folder under the root folder of your Unity project.
+1. Open the Package Manger window (**Window > Package Manager**).
+2. Click the **Packages** dropdown and select **My Registries**.
+3. Find and select the Magic Leap SDK package from the list.
+4. Finally select **Download** and then **Import**.
 
-:::info Reset to Default
-At any time, you can fix any problems with your registry by choosing Reset packages to defaults from the main Unity **Help** menu. However, be aware that this action resets all changes you made to the dependencies of your project so it is best to do this as a last resort.
-:::
+<details>
 
-Add the following Scoped registry:
+<summary> You can also add the registry by editing your project's /Packages/manifest.json file directly</summary>
+
+1. Open the `manifest.json` file located in the `/Packages/` folder inside your project's root directory.
+2. Add the following scoped registry
 
 ```json
 "scopedRegistries": [
@@ -111,17 +125,24 @@ Add the following Scoped registry:
   ]
 ```
 
-Your relevant packages will have their versions checked automatically in the **Package Manager** now.
+:::info Reset to Default
+At any time, you can fix any problems with your registry by choosing Reset packages to defaults from the main Unity **Help** menu. However, be aware that this action resets all changes you made to the dependencies of your project so it is best to do this as a last resort.
+:::
 
-## XR Plugin Management
+</details>
+
+</TabItem>
+</Tabs>
+
+### XR Plugin Management
 
 The Magic Leap XR Provider needs to be enabled before using Magic Leap's platform features. To do this:  
 
 1. Go to **File > Build Settings > Player Settings > XR Plug-in Management** and enable **Magic Leap** as a Plug-in Provider on the **Android** platform.
 
-## Assign Magic Leap SDK Path
+### Assign Magic Leap SDK Path
 
-The Magic Leap SDK Path setting will only show once the Magic Leap XR package is imported. If the Magic Leap SDK path setting is not visible, make sure that the `com.magicleap.xr` package was correctly imported.
+The Magic Leap SDK Path setting will only show once the Magic Leap XR package is imported. If the Magic Leap SDK path setting is not visible, make sure the `com.magicleap.sdk` and `com.unity.xr.magicleap` packages were imported correctly and that there are no errors in the [Unity Console](https://docs.unity3d.com/Manual/Console.html).
 
 1. Open **Edit > Preferences** on Windows (or macOS: **Unity > Preferences**), then navigate to **External Tools > Magic Leap**.
 
@@ -135,13 +156,15 @@ The Magic Leap SDK Path setting will only show once the Magic Leap XR package is
 To locate the Magic Leap C SDK, open the ML Hub application and go to **Package Manager> My Tools**, under **Common Packages** expand **Magic Leap C SDK** and select the **Open Folder** or **Open Shell**. Note the path in the file explorer or shell.
 :::
 
-## Custom Manifest
+### Custom Manifest
 
  This section provides instructions on how to create a custom manifest file and declare Magic Leap 2 specific permissions for your application. For more information, see the [Permissions Overview](/docs/guides/unity/permissions/declaring-permissions.md) guide.
 
- :::info
+:::info
+
  Editing your application's permissions through the Unity Editor Window is only available if you have a valid [MLSDK path](#assign-magic-leap-sdk-path) assigned the Unity Editor's Preferences Window.
- :::
+
+:::
 
 1. Enable a custom manifest in your project's settings by going to **Edit > Project Settings > Player**, then under **Publishing Settings** select **Custom Main Manifest**.
 2. Go to **Edit > Project Settings > Magic Leap > Permissions** to enable permissions on various features. It is generally recommended to include any additional features based on your application's requirements.
@@ -179,7 +202,7 @@ Developers can use Unity's Project Validation tool to validate that project's se
 This tool can be used to configure new projects in the future. Note, the validation tool does not check your project's [Manifest](#custom-manifest), [API level](#player-settings), or [XR Plugin Management settings](#xr-plugin-management).
 :::
 
-### Next Steps
+## Next Steps
 
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';

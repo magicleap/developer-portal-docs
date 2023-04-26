@@ -43,10 +43,10 @@ namespace UnityEngine.XR.MagicLeap
             Discard
         }
 
-        public static MLWebView Create(uint width, uint height)
+        public static MLWebView Create(uint width, uint height, bool isPopup = false, ulong popupId = 0)
         {
             MLWebView webView = new MLWebView();
-            return webView.CreateInternal(width, height) == MLResult.Code.Ok ? webView : null;
+            return webView.CreateInternal(width, height, isPopup, popupId) == MLResult.Code.Ok ? webView : null;
 
         }
 
@@ -61,6 +61,11 @@ namespace UnityEngine.XR.MagicLeap
         {
             get; set;
         } = false;
+
+        public bool AcceptPopup
+        {
+            get; set;
+        } = true;
 
         public MLResult GoTo(string url) => MLResult.Create(GoToInternal(url));
 

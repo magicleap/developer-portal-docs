@@ -34,7 +34,7 @@ MediaPlayer Track DRM Info callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 

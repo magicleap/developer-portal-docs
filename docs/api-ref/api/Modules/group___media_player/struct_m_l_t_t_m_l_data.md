@@ -48,7 +48,7 @@ TTML data structure.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -179,47 +179,41 @@ The cue line type.
 
 Note that it's particularly important to consider the effect of [line_anchor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-line-anchor) when using [MLTTMLLineType_Number](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-number).
 
-
-
 ```cpp
+
 (line == 0 && line_anchor == MLTTMLAnchorType_Start) 
 ```
 
  Positions a (potentially multi-line) cue at the very top of the viewport.
 
-
-
 ```cpp
+
 (line == -1 && line_anchor == MLTTMLAnchorType_EndD) 
 ```
 
  Positions a (potentially multi-line) cue at the very bottom of the viewport.
 
-
-
 ```cpp
+
 (line == 0 && line_anchor == MLTTMLAnchorType_End) 
 ```
 
- and 
+ and ```cpp
 
-```cpp
 (line == -1 && line_anchor == MLTTMLAnchorType_Start) 
 ```
 
  Position cues entirely outside of the viewport.
 
-
-
 ```cpp
+
 (line == 1 && line_anchor == MLTTMLAnchorType_End) 
 ```
 
  Positions a cue so that only the last line is visible at the top of the viewport.
 
-
-
 ```cpp
+
 (line == -2 && line_anchor == MLTTMLAnchorType_Start) 
 ```
 

@@ -43,7 +43,7 @@ Gesture classification state of a single hand.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

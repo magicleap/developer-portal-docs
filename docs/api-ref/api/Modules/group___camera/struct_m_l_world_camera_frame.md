@@ -39,7 +39,7 @@ A structure to encapsulate output data for each camera sensor.
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 

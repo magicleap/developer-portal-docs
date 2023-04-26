@@ -2,7 +2,7 @@
 id: sdk-camera-capture-scene
 title: Camera Capture
 description: An overview of the camera capture demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 4
+sidebar_position: 3
 date: 3/21/2022
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Camera]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Camera]

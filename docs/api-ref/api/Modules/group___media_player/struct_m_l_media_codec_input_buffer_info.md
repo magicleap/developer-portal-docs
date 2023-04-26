@@ -34,7 +34,7 @@ MediaCodec Input buffer information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

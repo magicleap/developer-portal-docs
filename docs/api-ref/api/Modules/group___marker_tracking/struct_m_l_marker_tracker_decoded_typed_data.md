@@ -46,7 +46,7 @@ switch ( data->type ) {
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

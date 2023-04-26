@@ -64,7 +64,9 @@ public string tabUrl { get; set; }
 public bool CreateTab(
     MLWebViewTabBarBehavior tabBar,
     MLWebViewScreenBehavior webViewScreen,
-    InputField addressBar
+    InputField addressBar,
+    bool isPopup =false,
+    ulong popupID =0
 )
 ```
 
@@ -76,6 +78,8 @@ public bool CreateTab(
 | [MLWebViewTabBarBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBarBehavior.md) |tabBar||
 | [MLWebViewScreenBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewScreenBehavior.md) |webViewScreen|This class is used to Render Web View on the texture and propagate input to Web View. |
 | InputField |addressBar||
+| bool |isPopup||
+| ulong |popupID||
 
 
 

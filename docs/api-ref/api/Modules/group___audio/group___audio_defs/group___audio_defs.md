@@ -114,7 +114,7 @@ The type of mic input to capture.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -127,7 +127,7 @@ The type of mic input to capture.
 ### MLAudioMultibandLevel {#struct-mlaudiomultibandlevel}
 
 ```cpp
-typedef struct MLAudioMultibandLevel  MLAudioMultibandLevel;
+typedef struct MLAudioMultibandLevel MLAudioMultibandLevel;
 ```
 
 Properties specifying a broadband level and three sub-band levels. 
@@ -138,7 +138,7 @@ Properties specifying a broadband level and three sub-band levels.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

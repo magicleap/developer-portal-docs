@@ -38,7 +38,7 @@ A structure containing information about the device's localization state.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

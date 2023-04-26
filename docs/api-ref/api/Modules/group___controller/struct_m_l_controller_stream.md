@@ -34,7 +34,7 @@ A structure containing information about the tracking-stream of this controller.
 
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal. 
+Deprecated since 1.1.0. Scheduled for removal.
 :::
 
 

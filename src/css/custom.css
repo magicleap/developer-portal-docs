@@ -276,6 +276,16 @@ table tr:nth-child(2n) {
   text-align: center;
 }
 
+.tabList_node_modules-\@docusaurus-theme-classic-lib-theme-Tabs-styles-module {
+  margin-bottom: var(--ifm-leading);
+  border-radius: var(--ifm-alert-border-radius);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  box-shadow: rgba(0,0,0,0.06) 0px 2px 4px 2px inset;
+}
+
 .ml2-overview-image-text {
   padding-top: 15px;
   white-space: nowrap;

@@ -45,7 +45,7 @@ Cue orientation setting.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -69,7 +69,7 @@ Cue direction setting.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -95,7 +95,7 @@ Cue aligment setting.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -108,7 +108,7 @@ Cue aligment setting.
 ### MLWebVTTData {#struct-mlwebvttdata}
 
 ```cpp
-typedef struct MLWebVTTData  MLWebVTTData;
+typedef struct MLWebVTTData MLWebVTTData;
 ```
 
 WebVTT data structure. 
@@ -119,7 +119,7 @@ WebVTT data structure.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 

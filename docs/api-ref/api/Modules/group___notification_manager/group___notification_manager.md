@@ -24,7 +24,7 @@ Systems Notification Manager allows toggling the system notifications. This API 
 
 
 **Shared Object:**
-  * system_notification_manager.magicleap 
+  * system_notification_manager.magicleap*
 
 
 

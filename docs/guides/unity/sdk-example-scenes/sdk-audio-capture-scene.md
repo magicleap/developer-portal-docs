@@ -2,7 +2,7 @@
 id: sdk-audio-capture-scene
 title: Audio Capture
 description: An overview of the audio capture demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 3
+sidebar_position: 2
 date: 3/21/2022
 keywords: [Unity, Examples, Samples, Input, XR Interaction Toolkit, Audio, Microphone]
 tags: [Unity, Examples, Samples, Input, XR Interaction Toolkit, Audio, Microphone]

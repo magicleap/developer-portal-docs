@@ -30,7 +30,7 @@ APIs for camera pose.
 
 
 **Shared Object:**
-  * perception.magicleap 
+  * perception.magicleap*
 
 
 
@@ -53,7 +53,7 @@ Camera id enum.
 
 
 **API Level:**
-  * 5 
+  * 5
 
 
 
