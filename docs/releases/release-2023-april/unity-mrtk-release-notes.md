@@ -39,9 +39,9 @@ Initial Update to 1.6.0
 ## Known Issues
 
 - Handtracking Performance issues when interacting with other objects. Continuous Improvements made each Sprint.
-- To use the simulator when running MRTK, you must set the Script Changes While Playing setting to Stop Playing and Recompile or Recompile and Conintue Playing in the Unity Preferences.
+- To use the simulator when running MRTK, you must set the Script Changes While Playing setting to Stop Playing and Recompile or Recompile and Continue Playing in the Unity Preferences.
 - The Slot Example in the Speech Commands Sample scene will trigger the change color MRTK popup.
-- Occationally the controller may not connect properly when launching a new application. Pauseing and resuming the application resolves this.
+- Occasionally the controller may not connect properly when launching a new application. Pausing and resuming the application resolves this.
 
 ## Important Notes
 
