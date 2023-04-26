@@ -2,7 +2,7 @@
 id: sdk-planes-scene
 title: Plane Detection
 description: An overview of the planes demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 16
+sidebar_position: 17
 date: 03/21/2022
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Planes, Plane Detection]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Planes, Plane Detection]

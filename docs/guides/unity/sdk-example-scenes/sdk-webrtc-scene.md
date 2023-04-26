@@ -2,7 +2,7 @@
 id: sdk-webrtc-scene
 title: WebRTC
 description: An overview of the WebRTC scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 19
+sidebar_position: 21
 date: 07/08/2022
 tags: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, WebRTC]
 keywords: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, WebRTC]

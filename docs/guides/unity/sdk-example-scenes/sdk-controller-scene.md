@@ -2,7 +2,7 @@
 id: sdk-controller-scene
 title: Controller
 description: An overview of the controller demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 6
+sidebar_position: 4
 date: 1/28/2022
 keywords: [Unity, Controller, Input, XR Interaction Toolkit, Examples]
 tags: [Unity, Controller, Input, XR Interaction Toolkit, Examples]

@@ -1,7 +1,7 @@
 ---
 id: sdk-install-setup
 title: Install and Setup SDK Examples
-sidebar_position: 1
+sidebar_position: 0
 date: 04/29/2022
 tags: [Unity, Walkthroughs, Examples, Samples]
 keywords: [Unity, Walkthroughs, Examples, Samples]

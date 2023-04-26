@@ -2,7 +2,7 @@
 id: sdk-hello-cube-scene
 title: Hello Cube
 description: An overview of the hand tracking demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 2
+sidebar_position: 13
 date: 3/21/2022
 keywords: [Unity, Examples, Samples, XR Interaction Toolkit, Hello Cube]
 tags: [Unity, Examples, Samples, XR Interaction Toolkit, Hello Cube]
