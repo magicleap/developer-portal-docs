@@ -36,7 +36,7 @@ This structure must be initialized by calling [MLGestureClassificationDataInit()
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

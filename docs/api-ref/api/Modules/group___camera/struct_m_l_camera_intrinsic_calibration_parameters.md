@@ -39,7 +39,7 @@ Camera intrinsic parameter.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

@@ -34,7 +34,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

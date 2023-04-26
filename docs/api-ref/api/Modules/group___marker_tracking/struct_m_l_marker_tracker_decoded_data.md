@@ -36,7 +36,7 @@ The different detectors will have different decoded outputs. See [MLMarkerTracke
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

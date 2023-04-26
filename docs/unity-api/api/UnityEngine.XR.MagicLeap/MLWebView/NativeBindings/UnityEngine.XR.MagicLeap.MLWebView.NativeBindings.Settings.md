@@ -25,7 +25,9 @@ Create and return an initialized version of this struct.
 public static Settings Create(
     GCHandle gcHandle,
     uint width,
-    uint height
+    uint height,
+    bool isPopup,
+    ulong popupID
 )
 ```
 
@@ -37,6 +39,8 @@ public static Settings Create(
 | GCHandle |gcHandle||
 | uint |width||
 | uint |height||
+| bool |isPopup||
+| ulong |popupID||
 
 
 
@@ -112,6 +116,40 @@ Vertical size of webview in pixels.
 ```csharp
 
 public uint Height;
+
+```
+
+
+
+
+
+
+-----------
+
+### IsPopup {#bool-ispopup}
+
+Is this a popup? 
+
+```csharp
+
+public bool IsPopup;
+
+```
+
+
+
+
+
+
+-----------
+
+### PopupID {#ulong-popupid}
+
+Popup identifier used to create a webview. 
+
+```csharp
+
+public ulong PopupID;
 
 ```
 

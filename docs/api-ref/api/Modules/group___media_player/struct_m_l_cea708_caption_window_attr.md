@@ -42,7 +42,7 @@ Cea708 Caption Window Attributes.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 

@@ -27,7 +27,7 @@ ANALYSIS.
 |                | Name           |
 | -------------- | -------------- |
 | enum | **[MLAudioTraitAnalysisTarget](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget)** <br></br> { <br></br>[MLAudioTraitAnalysisTarget_AmbientSoundLevelDbfs](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-ambientsoundleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePresence](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoicepresence),<br></br> [MLAudioTraitAnalysisTarget_UserVoiceLevelDbfs](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoiceleveldbfs),<br></br> [MLAudioTraitAnalysisTarget_UserVoicePitch](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-uservoicepitch),<br></br> [MLAudioTraitAnalysisTarget_Ensure32Bits](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiotraitanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLAudioSpectralAnalysisTarget](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget)** <br></br> { <br></br>[MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-uservoicespectrummfcc),<br></br> [MLAudioSpectralAnalysisTarget_Ensure32Bits](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLAudioSpectralAnalysisTarget](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget)** <br></br> { <br></br>[MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-uservoicespectrummfcc),<br></br> [MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumBark](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-ambientsoundspectrumbark),<br></br> [MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumMel](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-ambientsoundspectrummel),<br></br> [MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumThirdOctave](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-ambientsoundspectrumthirdoctave),<br></br> [MLAudioSpectralAnalysisTarget_Ensure32Bits](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md#enums-mlaudiospectralanalysistarget-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Enums Documentation
 
@@ -57,6 +57,9 @@ Available trait analyses of an audio stream.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLAudioSpectralAnalysisTarget_UserVoiceSpectrumMfcc | | Voice Mel Frequency Cepstral Coefficients, spectral analysis of a voice mic stream. (typically used for lip-sync). |
+| MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumBark | | Ambient Sound Spectrum Bark Scale, spectral analysis of ambient mic stream(s) using Bark scale. |
+| MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumMel | | Ambient Sound Spectrum Mel Scale, spectral analysis of ambient mic stream(s) using Mel scale. |
+| MLAudioSpectralAnalysisTarget_AmbientSoundSpectrumThirdOctave | | Ambient Sound Spectrum Third Octave Scale, spectral analysis of ambient mic stream(s) using Third Octave scale. |
 | MLAudioSpectralAnalysisTarget_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -76,7 +79,7 @@ Available frequency spectrum analyses of an audio stream.
 ### MLAudioSpectralAnalysis {#struct-mlaudiospectralanalysis}
 
 ```cpp
-typedef struct MLAudioSpectralAnalysis  MLAudioSpectralAnalysis;
+typedef struct MLAudioSpectralAnalysis MLAudioSpectralAnalysis;
 ```
 
 

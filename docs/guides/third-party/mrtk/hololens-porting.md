@@ -48,7 +48,7 @@ There are several key differences between the HoloLens 2 and Magic Leap 2 MRTK d
 ### Part 1: Update and configure your Unity project settings
 
 1. [Update your Unity editor](/docs/guides/unity/getting-started/install-the-tools#install-unity-editor) version to **2022.2.0b7 or higher**.
-2. [Download and install](/docs/guides/unity/getting-started/install-the-tools#downloading-the-unity-bundle) the latest compatible versions of the Magic Leap OS and Magic Leap SDK (v1.1.0-dev1 or newer). Use this [compatibility matrix](/docs/releases/version-matrix.md) to check version compatibility.
+2. [Download and install](/docs/guides/unity/getting-started/install-the-tools#downloading-the-unity-bundle) the latest compatible versions of the Magic Leap OS and Magic Leap SDK (v1.1.0-dev1 or newer). Use this [compatibility matrix](/docs/releases/overview.md) to check version compatibility.
 3. Open your Unity project in the new version of the Unity editor and complete the steps in the [Configure Project Settings](/docs/guides/unity/getting-started/configure-unity-settings.md) Unity guide.
 4. Follow the [Render Pipeline Settings](/docs/guides/unity/getting-started/graphics-settings) Unity guide to change your render pipeline settings to the Universal Render Pipeline.
 

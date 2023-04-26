@@ -12,7 +12,7 @@ title: Deprecated List
 
 Global [MLControllerCalibAccuracy](/api-ref/api/Modules/group___controller/group___controller.md#enum-mlcontrollercalibaccuracy)
 
-* Deprecated since 1.1.0. Scheduled for removal.  
+* Deprecated since 1.1.0. Scheduled for removal. 
 
 Global [MLControllerGetState](/api-ref/api/Modules/group___controller/group___controller.md#mlresult-mlcontrollergetstate)  (MLHandle handle, struct [MLControllerSystemState](/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state.md) *out_state)
 
@@ -20,19 +20,31 @@ Global [MLControllerGetState](/api-ref/api/Modules/group___controller/group___co
 
 Global [MLControllerMode](/api-ref/api/Modules/group___controller/group___controller.md#enum-mlcontrollermode)
 
-* Deprecated since 1.1.0. Scheduled for removal.  
+* Deprecated since 1.1.0. Scheduled for removal. 
 
 Global [MLControllerState](/api-ref/api/Modules/group___controller/group___controller.md#struct-mlcontrollerstate)
 
-* Deprecated since 1.1.0. Scheduled for removal.  
+* Deprecated since 1.1.0. Scheduled for removal. 
 
 Global [MLControllerStream](/api-ref/api/Modules/group___controller/group___controller.md#struct-mlcontrollerstream)
 
-* Deprecated since 1.1.0. Scheduled for removal.  
+* Deprecated since 1.1.0. Scheduled for removal. 
 
 Global [MLControllerSystemState](/api-ref/api/Modules/group___controller/group___controller.md#struct-mlcontrollersystemstate)
 
-* Deprecated since 1.1.0. Scheduled for removal.  
+* Deprecated since 1.1.0. Scheduled for removal. 
+
+Global [MLHeadTrackingError](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enum-mlheadtrackingerror)
+
+* Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingErrorFlag.  
+
+Global [MLHeadTrackingMode](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enum-mlheadtrackingmode)
+
+* Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingStatus.  
+
+Global [MLHeadTrackingState](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#struct-mlheadtrackingstate)
+
+* Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md).  
 
 Global [MLInputControllerState](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollerstate)
 
@@ -40,11 +52,11 @@ Global [MLInputControllerState](/api-ref/api/Modules/group___input/group___input
 
 Global [MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)  (MLHandle handle, [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])
 
-* Deprecated since 1.1.0. Scheduled for removal. 
+* Deprecated since 1.1.0. Scheduled for removal.  
 
 Global [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingdepthbufferinfo)
 
-* Deprecated since 1.2.0. Scheduled for removal.  
+* Deprecated since 1.2.0. Scheduled for removal. 
 
 Global [MLMeshingPopulateDepth](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#mlresult-mlmeshingpopulatedepth)  (MLHandle client_handle, const [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md) *info, const [MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) *meshes)
 
@@ -52,10 +64,10 @@ Global [MLMeshingPopulateDepth](/api-ref/api/Modules/group___graphics_utilities/
 
 Global [MLMeshingPopulateDepthFlags](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#enum-mlmeshingpopulatedepthflags)
 
-* Deprecated since 1.2.0. Scheduled for removal.  
+* Deprecated since 1.2.0. Scheduled for removal. 
 
 Global [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingvirtualcamerabufferinfo)
 
-* Deprecated since 1.2.0. Scheduled for removal. 
+* Deprecated since 1.2.0. Scheduled for removal.
 
 

@@ -64,7 +64,7 @@ A set of possible error codes that the Eye Tracking system can report.
 ### MLEyeTrackingStaticData {#struct-mleyetrackingstaticdata}
 
 ```cpp
-typedef struct MLEyeTrackingStaticData  MLEyeTrackingStaticData;
+typedef struct MLEyeTrackingStaticData MLEyeTrackingStaticData;
 ```
 
 Static information about the eye tracking. 
@@ -77,7 +77,7 @@ Populate with [MLEyeTrackingGetStaticData()](/api-ref/api/Modules/group___eye_tr
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -87,7 +87,7 @@ Populate with [MLEyeTrackingGetStaticData()](/api-ref/api/Modules/group___eye_tr
 ### MLEyeTrackingStateEx {#struct-mleyetrackingstateex}
 
 ```cpp
-typedef struct MLEyeTrackingStateEx  MLEyeTrackingStateEx;
+typedef struct MLEyeTrackingStateEx MLEyeTrackingStateEx;
 ```
 
 Information about the state of the eye tracking system. 
@@ -100,7 +100,7 @@ This structure must be initialized by calling [MLEyeTrackingStateInit()](/api-re
 
 
 **API Level:**
-  * 20 
+  * 26
 
 
 
@@ -129,7 +129,7 @@ Initialize [MLEyeTrackingStateEx](/api-ref/api/Modules/group___eye_tracking/stru
 
 
 **API Level:**
-  * 9
+  * 26
 
 
 
@@ -338,13 +338,14 @@ typedef struct MLEyeTrackingStateEx {
   bool right_blink;
   MLEyeTrackingError error;
   MLTime timestamp;
-
+  float left_eye_openness;
+  float right_eye_openness;
 } MLEyeTrackingStateEx;
 
 ML_STATIC_INLINE void MLEyeTrackingStateInit(MLEyeTrackingStateEx *inout_state) {
   if (inout_state) {
     memset(inout_state, 0, sizeof(MLEyeTrackingStateEx));
-    inout_state->version = 1;
+    inout_state->version = 2;
     inout_state->error = MLEyeTrackingError_None;
   }
 }

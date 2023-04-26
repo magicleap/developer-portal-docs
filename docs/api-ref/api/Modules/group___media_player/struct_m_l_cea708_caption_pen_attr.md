@@ -39,7 +39,7 @@ Cea708 Caption Pen Attributes.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 

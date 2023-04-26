@@ -57,7 +57,7 @@ APIs for the direct access to the Controller system.
 
 
 **Shared Object:**
-  * perception.magicleap 
+  * perception.magicleap*
 
 
 
@@ -82,7 +82,7 @@ A set of possible tracking modes for the Controller system.
 
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal. 
+Deprecated since 1.1.0. Scheduled for removal.
 :::
 
 
@@ -121,7 +121,7 @@ Calibration Accuracy levels for controller.
 
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal. 
+Deprecated since 1.1.0. Scheduled for removal.
 :::
 
 
@@ -145,7 +145,7 @@ Stream mode for controller stream.
 
 
 **API Level:**
-  * 21 
+  * 21
 
 
 
@@ -158,7 +158,7 @@ Stream mode for controller stream.
 ### MLControllerConfiguration {#struct-mlcontrollerconfiguration}
 
 ```cpp
-typedef struct MLControllerConfiguration  MLControllerConfiguration;
+typedef struct MLControllerConfiguration MLControllerConfiguration;
 ```
 
 
@@ -175,7 +175,7 @@ A structure to configure controller's tracking-modes.
 ### MLControllerStream {#struct-mlcontrollerstream}
 
 ```cpp
-typedef struct MLControllerStream  MLControllerStream;
+typedef struct MLControllerStream MLControllerStream;
 ```
 
 A structure containing information about the tracking-stream of this controller. 
@@ -185,7 +185,7 @@ A structure containing information about the tracking-stream of this controller.
 [More Info](/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md)
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal. 
+Deprecated since 1.1.0. Scheduled for removal.
 :::
 
 
@@ -195,7 +195,7 @@ Deprecated since 1.1.0. Scheduled for removal.
 ### MLControllerState {#struct-mlcontrollerstate}
 
 ```cpp
-typedef struct MLControllerState  MLControllerState;
+typedef struct MLControllerState MLControllerState;
 ```
 
 A structure containing information about the current state of this controller. 
@@ -205,7 +205,7 @@ A structure containing information about the current state of this controller.
 [More Info](/api-ref/api/Modules/group___controller/struct_m_l_controller_state.md)
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal. 
+Deprecated since 1.1.0. Scheduled for removal.
 :::
 
 
@@ -215,7 +215,7 @@ Deprecated since 1.1.0. Scheduled for removal.
 ### MLControllerStateEx {#struct-mlcontrollerstateex}
 
 ```cpp
-typedef struct MLControllerStateEx  MLControllerStateEx;
+typedef struct MLControllerStateEx MLControllerStateEx;
 ```
 
 A structure containing information about the current state of this controller. 
@@ -226,7 +226,7 @@ A structure containing information about the current state of this controller.
 
 
 **API Level:**
-  * 21 
+  * 21
 
 
 
@@ -236,7 +236,7 @@ A structure containing information about the current state of this controller.
 ### MLControllerSystemState {#struct-mlcontrollersystemstate}
 
 ```cpp
-typedef struct MLControllerSystemState  MLControllerSystemState;
+typedef struct MLControllerSystemState MLControllerSystemState;
 ```
 
 A structure containing information about the current state of the controller system. 
@@ -246,7 +246,7 @@ A structure containing information about the current state of the controller sys
 [More Info](/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state.md)
 
 :::caution Deprecated
-Deprecated since 1.1.0. Scheduled for removal. 
+Deprecated since 1.1.0. Scheduled for removal.
 :::
 
 
@@ -256,7 +256,7 @@ Deprecated since 1.1.0. Scheduled for removal.
 ### MLControllerSystemStateEx {#struct-mlcontrollersystemstateex}
 
 ```cpp
-typedef struct MLControllerSystemStateEx  MLControllerSystemStateEx;
+typedef struct MLControllerSystemStateEx MLControllerSystemStateEx;
 ```
 
 A structure containing information about the current state of the controller system. 
@@ -267,7 +267,7 @@ A structure containing information about the current state of the controller sys
 
 
 **API Level:**
-  * 21 
+  * 21
 
 
 

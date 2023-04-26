@@ -46,7 +46,7 @@ APIs for the Eye Tracking system.
 
 
 **Shared Object:**
-  * perception.magicleap 
+  * perception.magicleap*
 
 
 
@@ -79,7 +79,7 @@ A set of possible error codes that the Eye Tracking system can report.
 ### MLEyeTrackingStaticData {#struct-mleyetrackingstaticdata}
 
 ```cpp
-typedef struct MLEyeTrackingStaticData  MLEyeTrackingStaticData;
+typedef struct MLEyeTrackingStaticData MLEyeTrackingStaticData;
 ```
 
 Static information about the eye tracking. 
@@ -92,7 +92,7 @@ Populate with [MLEyeTrackingGetStaticData()](/api-ref/api/Modules/group___eye_tr
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -102,7 +102,7 @@ Populate with [MLEyeTrackingGetStaticData()](/api-ref/api/Modules/group___eye_tr
 ### MLEyeTrackingStateEx {#struct-mleyetrackingstateex}
 
 ```cpp
-typedef struct MLEyeTrackingStateEx  MLEyeTrackingStateEx;
+typedef struct MLEyeTrackingStateEx MLEyeTrackingStateEx;
 ```
 
 Information about the state of the eye tracking system. 
@@ -115,7 +115,7 @@ This structure must be initialized by calling [MLEyeTrackingStateInit()](/api-re
 
 
 **API Level:**
-  * 20 
+  * 26
 
 
 
@@ -144,7 +144,7 @@ Initialize [MLEyeTrackingStateEx](/api-ref/api/Modules/group___eye_tracking/stru
 
 
 **API Level:**
-  * 9
+  * 26
 
 
 

@@ -38,7 +38,7 @@ Buffer format settings for input and output streams.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

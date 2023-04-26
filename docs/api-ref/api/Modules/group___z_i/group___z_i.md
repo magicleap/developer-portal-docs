@@ -48,13 +48,13 @@ APIs for the Zero Iteration on Host OS Platforms.
 
 
 **Shared Object:**
-  * zi.magicleap 
+  * zi.magicleap*
 
 **Shared Object:**
-  * graphics.magicleap 
+  * graphics.magicleap*
 
 **Shared Object:**
-  * zi.magicleap 
+  * zi.magicleap*
 
 
 

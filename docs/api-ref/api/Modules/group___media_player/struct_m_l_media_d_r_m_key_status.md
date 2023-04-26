@@ -34,7 +34,7 @@ MediaDRM key status.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

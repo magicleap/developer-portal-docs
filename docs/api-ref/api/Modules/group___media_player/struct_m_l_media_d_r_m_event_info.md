@@ -37,7 +37,7 @@ MediaDRM event info associated with a session.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

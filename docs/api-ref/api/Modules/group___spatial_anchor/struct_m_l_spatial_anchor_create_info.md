@@ -35,7 +35,7 @@ A structure used to populate anchor creation info when creating a new Spatial An
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

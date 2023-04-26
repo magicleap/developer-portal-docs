@@ -668,6 +668,23 @@ protected const string MLNativeSurfaceDll = "native_surface.magicleap";
 
 -----------
 
+### MLNotificationsManagerDll {#const-string-mlnotificationsmanagerdll}
+
+Internal DLL used by the Notifications API. 
+
+```csharp
+
+protected const string MLNotificationsManagerDll = "system_notification_manager.magicleap";
+
+```
+
+
+
+
+
+
+-----------
+
 ### MLVoiceDll {#const-string-mlvoicedll}
 
 Internal DLL used by the API. 

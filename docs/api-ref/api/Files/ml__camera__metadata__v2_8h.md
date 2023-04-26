@@ -143,7 +143,7 @@ title: ml_camera_metadata_v2.h
 ### MLCameraMetadataRational {#struct-mlcamerametadatarational}
 
 ```cpp
-typedef struct MLCameraMetadataRational  MLCameraMetadataRational;
+typedef struct MLCameraMetadataRational MLCameraMetadataRational;
 ```
 
 

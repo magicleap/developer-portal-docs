@@ -56,7 +56,7 @@ If status is neither NotWorn nor Unknown, then headset is being worn.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -69,7 +69,7 @@ If status is neither NotWorn nor Unknown, then headset is being worn.
 ### MLHeadsetFitState {#struct-mlheadsetfitstate}
 
 ```cpp
-typedef struct MLHeadsetFitState  MLHeadsetFitState;
+typedef struct MLHeadsetFitState MLHeadsetFitState;
 ```
 
 Headset fit state. 
@@ -80,7 +80,7 @@ Headset fit state.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

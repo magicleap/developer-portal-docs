@@ -65,7 +65,7 @@ Cea608 Caption Dimension constants.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -94,7 +94,7 @@ Cea608 caption color code.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -117,7 +117,7 @@ Cea608 caption style code.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -145,7 +145,7 @@ Cea608 caption style code.
 ### MLCea608CaptionStyleColor {#struct-mlcea608captionstylecolor}
 
 ```cpp
-typedef struct MLCea608CaptionStyleColor  MLCea608CaptionStyleColor;
+typedef struct MLCea608CaptionStyleColor MLCea608CaptionStyleColor;
 ```
 
 Cea608 caption style and color. 
@@ -156,7 +156,7 @@ Cea608 caption style and color.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -166,7 +166,7 @@ Cea608 caption style and color.
 ### MLCea608CaptionPAC {#struct-mlcea608captionpac}
 
 ```cpp
-typedef struct MLCea608CaptionPAC  MLCea608CaptionPAC;
+typedef struct MLCea608CaptionPAC MLCea608CaptionPAC;
 ```
 
 Cea608 caption preamble address code. 
@@ -177,7 +177,7 @@ Cea608 caption preamble address code.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -187,7 +187,7 @@ Cea608 caption preamble address code.
 ### MLCea608CaptionLineEx {#struct-mlcea608captionlineex}
 
 ```cpp
-typedef struct MLCea608CaptionLineEx  MLCea608CaptionLineEx;
+typedef struct MLCea608CaptionLineEx MLCea608CaptionLineEx;
 ```
 
 Cea608 caption line structure. 
@@ -198,7 +198,7 @@ Cea608 caption line structure.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -208,7 +208,7 @@ Cea608 caption line structure.
 ### MLCea608CaptionSegmentEx {#struct-mlcea608captionsegmentex}
 
 ```cpp
-typedef struct MLCea608CaptionSegmentEx  MLCea608CaptionSegmentEx;
+typedef struct MLCea608CaptionSegmentEx MLCea608CaptionSegmentEx;
 ```
 
 Cea608 caption segment structure. 
@@ -219,7 +219,7 @@ Cea608 caption segment structure.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 

@@ -38,7 +38,7 @@ Data type that encapsulates sample data to be written in to MLMediaMuxer.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

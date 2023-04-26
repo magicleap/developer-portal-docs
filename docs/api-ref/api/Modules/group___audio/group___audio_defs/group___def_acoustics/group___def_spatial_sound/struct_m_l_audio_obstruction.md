@@ -34,7 +34,7 @@ Obstruction along a ray.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

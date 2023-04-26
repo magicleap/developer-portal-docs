@@ -34,7 +34,7 @@ MediaCodec Output Format information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

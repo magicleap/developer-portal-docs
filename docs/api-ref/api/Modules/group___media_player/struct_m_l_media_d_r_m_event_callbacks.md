@@ -38,7 +38,7 @@ User of MLMediaDRM should implement this.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -79,7 +79,7 @@ This callback function is invoked when specific MLMediaDrm events happen.
 
 |  |   |   |
 |--|--|--|
-|  |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a MediaDRM instance on which callback was set. |
+|  |media_drm|MediaDRM instance on which callback was set. |
 |  |event_info|MediaDRM info as [MLMediaDRMEventInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md). |
 
 
@@ -105,7 +105,7 @@ This callback function is invoked when a drm session expiration update occurs.
 
 |  |   |   |
 |--|--|--|
-|  |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a MediaDRM instance on which callback was set. |
+|  |media_drm|MediaDRM instance on which callback was set. |
 |  |update_info|Updated session info as [MLMediaDRMEventInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md). |
 If this callback is not defined, then MLMediaDRMEventType_ExpirationUpdate event is notified through on_event callback, without the expiration time.
 
@@ -133,7 +133,7 @@ This callback function is invoked when the keys in a drm session change states.
 
 |  |   |   |
 |--|--|--|
-|  |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a MediaDRM instance on which callback was set. |
+|  |media_drm|MediaDRM instance on which callback was set. |
 |  |key_status_info|Changed key status as [MLMediaDRMKeyStatusInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md). |
 If this callback is not defined, then MLMediaDRMEventType_KeysChange event is notified through on_event callback, without the key(s) status information.
 
