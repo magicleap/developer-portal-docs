@@ -39,7 +39,7 @@ World camera intrinsic parameters.
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 

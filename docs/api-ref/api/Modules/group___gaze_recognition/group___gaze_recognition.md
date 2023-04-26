@@ -66,7 +66,7 @@ APIs for the Gaze Recognition system.
 
 
 **Shared Object:**
-  * perception.magicleap 
+  * perception.magicleap*
 
 
 
@@ -90,7 +90,7 @@ A set of possible error codes that the Gaze Recognition system can report.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -119,7 +119,7 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 
 
 **API Level:**
-  * 24 
+  * 24
 
 
 
@@ -132,7 +132,7 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 ### MLGazeRecognitionStaticData {#struct-mlgazerecognitionstaticdata}
 
 ```cpp
-typedef struct MLGazeRecognitionStaticData  MLGazeRecognitionStaticData;
+typedef struct MLGazeRecognitionStaticData MLGazeRecognitionStaticData;
 ```
 
 Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata). 
@@ -143,7 +143,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -153,7 +153,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 ### MLGazeRecognitionState {#struct-mlgazerecognitionstate}
 
 ```cpp
-typedef struct MLGazeRecognitionState  MLGazeRecognitionState;
+typedef struct MLGazeRecognitionState MLGazeRecognitionState;
 ```
 
 Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use. 
@@ -164,7 +164,7 @@ Information about the state of the Gaze Recognition system. This structure must 
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

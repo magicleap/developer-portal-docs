@@ -69,7 +69,7 @@ Cea708 Caption maximum windows constant.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -90,7 +90,7 @@ Maximum size for Cea708 Caption Emit command buffers.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -127,7 +127,7 @@ Cea708 Caption Emit Commands constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -152,7 +152,7 @@ Cea708 Caption Emit Command Control constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -177,7 +177,7 @@ Cea708 Caption Color Opacity constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -201,7 +201,7 @@ Cea708 Caption Pen Size constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -225,7 +225,7 @@ Cea708 Caption Pen Offset constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -238,7 +238,7 @@ Cea708 Caption Pen Offset constants.
 ### MLCea708CaptionColor {#struct-mlcea708captioncolor}
 
 ```cpp
-typedef struct MLCea708CaptionColor  MLCea708CaptionColor;
+typedef struct MLCea708CaptionColor MLCea708CaptionColor;
 ```
 
 Cea708 Caption Color. 
@@ -249,7 +249,7 @@ Cea708 Caption Color.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -259,7 +259,7 @@ Cea708 Caption Color.
 ### MLCea708CaptionPenAttr {#struct-mlcea708captionpenattr}
 
 ```cpp
-typedef struct MLCea708CaptionPenAttr  MLCea708CaptionPenAttr;
+typedef struct MLCea708CaptionPenAttr MLCea708CaptionPenAttr;
 ```
 
 Cea708 Caption Pen Attributes. 
@@ -270,7 +270,7 @@ Cea708 Caption Pen Attributes.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -280,7 +280,7 @@ Cea708 Caption Pen Attributes.
 ### MLCea708CaptionPenColor {#struct-mlcea708captionpencolor}
 
 ```cpp
-typedef struct MLCea708CaptionPenColor  MLCea708CaptionPenColor;
+typedef struct MLCea708CaptionPenColor MLCea708CaptionPenColor;
 ```
 
 Cea708 Caption Pen Color. 
@@ -291,7 +291,7 @@ Cea708 Caption Pen Color.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -301,7 +301,7 @@ Cea708 Caption Pen Color.
 ### MLCea708CaptionPenLocation {#struct-mlcea708captionpenlocation}
 
 ```cpp
-typedef struct MLCea708CaptionPenLocation  MLCea708CaptionPenLocation;
+typedef struct MLCea708CaptionPenLocation MLCea708CaptionPenLocation;
 ```
 
 Cea708 Caption Pen Location. 
@@ -312,7 +312,7 @@ Cea708 Caption Pen Location.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -322,7 +322,7 @@ Cea708 Caption Pen Location.
 ### MLCea708CaptionWindowAttr {#struct-mlcea708captionwindowattr}
 
 ```cpp
-typedef struct MLCea708CaptionWindowAttr  MLCea708CaptionWindowAttr;
+typedef struct MLCea708CaptionWindowAttr MLCea708CaptionWindowAttr;
 ```
 
 Cea708 Caption Window Attributes. 
@@ -333,7 +333,7 @@ Cea708 Caption Window Attributes.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -343,7 +343,7 @@ Cea708 Caption Window Attributes.
 ### MLCea708CaptionWindow {#struct-mlcea708captionwindow}
 
 ```cpp
-typedef struct MLCea708CaptionWindow  MLCea708CaptionWindow;
+typedef struct MLCea708CaptionWindow MLCea708CaptionWindow;
 ```
 
 Cea708 Caption Window. 
@@ -354,7 +354,7 @@ Cea708 Caption Window.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -364,7 +364,7 @@ Cea708 Caption Window.
 ### MLCea708CaptionEvent {#struct-mlcea708captionevent}
 
 ```cpp
-typedef struct MLCea708CaptionEvent  MLCea708CaptionEvent;
+typedef struct MLCea708CaptionEvent MLCea708CaptionEvent;
 ```
 
 Cea708 Caption Event. 
@@ -375,7 +375,7 @@ Cea708 Caption Event.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 

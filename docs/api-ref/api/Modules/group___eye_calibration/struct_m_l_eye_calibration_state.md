@@ -35,7 +35,7 @@ A struct representing the eye calibration state.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

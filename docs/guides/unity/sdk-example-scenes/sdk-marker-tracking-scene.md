@@ -2,7 +2,7 @@
 id: sdk-marker-tracking-scene
 title: Marker Tracking
 description: An overview of the marker tracking demo scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 11
+sidebar_position: 14
 date: 06/22/2022
 tags: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, Camera, Tracking, Marker Tracking, Aruco Markers, Scanning]
 keywords: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, Camera, Tracking, Marker Tracking, Aruco Markers, Scanning]

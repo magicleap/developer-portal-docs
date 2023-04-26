@@ -35,7 +35,7 @@ Headset fit state.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

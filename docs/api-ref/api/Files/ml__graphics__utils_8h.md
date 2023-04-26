@@ -54,7 +54,7 @@ Flags for [MLMeshingDepthBufferInfo](/api-ref/api/Modules/group___graphics_utili
 
 
 :::caution Deprecated
-Deprecated since 1.2.0. Scheduled for removal. 
+Deprecated since 1.2.0. Scheduled for removal.
 :::
 
 
@@ -67,7 +67,7 @@ Deprecated since 1.2.0. Scheduled for removal.
 ### MLGraphicsImportedMediaSurface {#struct-mlgraphicsimportedmediasurface}
 
 ```cpp
-typedef struct MLGraphicsImportedMediaSurface  MLGraphicsImportedMediaSurface;
+typedef struct MLGraphicsImportedMediaSurface MLGraphicsImportedMediaSurface;
 ```
 
 Handles to and information about an imported surface. 
@@ -87,7 +87,7 @@ Refer to the Vulkan specification's equivalent parameters in VkAndroidHardwareBu
 ### MLMeshingVirtualCameraBufferInfo {#struct-mlmeshingvirtualcamerabufferinfo}
 
 ```cpp
-typedef struct MLMeshingVirtualCameraBufferInfo  MLMeshingVirtualCameraBufferInfo;
+typedef struct MLMeshingVirtualCameraBufferInfo MLMeshingVirtualCameraBufferInfo;
 ```
 
 Per virtual camera information needed to render depth. 
@@ -97,7 +97,7 @@ Per virtual camera information needed to render depth.
 [More Info](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)
 
 :::caution Deprecated
-Deprecated since 1.2.0. Scheduled for removal. 
+Deprecated since 1.2.0. Scheduled for removal.
 :::
 
 
@@ -107,7 +107,7 @@ Deprecated since 1.2.0. Scheduled for removal.
 ### MLMeshingDepthBufferInfo {#struct-mlmeshingdepthbufferinfo}
 
 ```cpp
-typedef struct MLMeshingDepthBufferInfo  MLMeshingDepthBufferInfo;
+typedef struct MLMeshingDepthBufferInfo MLMeshingDepthBufferInfo;
 ```
 
 To be passed to PopulateDepth. 
@@ -117,7 +117,7 @@ To be passed to PopulateDepth.
 [More Info](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md)
 
 :::caution Deprecated
-Deprecated since 1.2.0. Scheduled for removal. 
+Deprecated since 1.2.0. Scheduled for removal.
 :::
 
 

@@ -193,7 +193,7 @@ Crypto mode using which media samples are encrypted.
 ### MLMediaCodecBufferInfo {#struct-mlmediacodecbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecBufferInfo  MLMediaCodecBufferInfo;
+typedef struct MLMediaCodecBufferInfo MLMediaCodecBufferInfo;
 ```
 
 
@@ -210,7 +210,7 @@ Media codec buffer info.
 ### MLMediaCodecInputBufferInfo {#struct-mlmediacodecinputbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecInputBufferInfo  MLMediaCodecInputBufferInfo;
+typedef struct MLMediaCodecInputBufferInfo MLMediaCodecInputBufferInfo;
 ```
 
 MediaCodec Input buffer information. 
@@ -221,7 +221,7 @@ MediaCodec Input buffer information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -231,7 +231,7 @@ MediaCodec Input buffer information.
 ### MLMediaCodecOutputBufferInfo {#struct-mlmediacodecoutputbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecOutputBufferInfo  MLMediaCodecOutputBufferInfo;
+typedef struct MLMediaCodecOutputBufferInfo MLMediaCodecOutputBufferInfo;
 ```
 
 MediaCodec Output buffer information. 
@@ -242,7 +242,7 @@ MediaCodec Output buffer information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -252,7 +252,7 @@ MediaCodec Output buffer information.
 ### MLMediaCodecOutputFormatInfo {#struct-mlmediacodecoutputformatinfo}
 
 ```cpp
-typedef struct MLMediaCodecOutputFormatInfo  MLMediaCodecOutputFormatInfo;
+typedef struct MLMediaCodecOutputFormatInfo MLMediaCodecOutputFormatInfo;
 ```
 
 MediaCodec Output Format information. 
@@ -263,7 +263,7 @@ MediaCodec Output Format information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -273,7 +273,7 @@ MediaCodec Output Format information.
 ### MLMediaCodecErrorInfo {#struct-mlmediacodecerrorinfo}
 
 ```cpp
-typedef struct MLMediaCodecErrorInfo  MLMediaCodecErrorInfo;
+typedef struct MLMediaCodecErrorInfo MLMediaCodecErrorInfo;
 ```
 
 MediaCodec Output Format information. 
@@ -284,7 +284,7 @@ MediaCodec Output Format information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -294,7 +294,7 @@ MediaCodec Output Format information.
 ### MLMediaCodecCallbacksEx {#struct-mlmediacodeccallbacksex}
 
 ```cpp
-typedef struct MLMediaCodecCallbacksEx  MLMediaCodecCallbacksEx;
+typedef struct MLMediaCodecCallbacksEx MLMediaCodecCallbacksEx;
 ```
 
 Callbacks for notifying asynchronously of various codec events to the user/client. If user intends to use codec in asynchronous mode, then the user/client is expected to implement these callbacks and take proper actions where appropriate. 
@@ -305,7 +305,7 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -315,7 +315,7 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 ### MLMediaCodecFrameRenderedInfo {#struct-mlmediacodecframerenderedinfo}
 
 ```cpp
-typedef struct MLMediaCodecFrameRenderedInfo  MLMediaCodecFrameRenderedInfo;
+typedef struct MLMediaCodecFrameRenderedInfo MLMediaCodecFrameRenderedInfo;
 ```
 
 MediaCodec Output Frame Rendered information. 
@@ -326,7 +326,7 @@ MediaCodec Output Frame Rendered information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -336,7 +336,7 @@ MediaCodec Output Frame Rendered information.
 ### MLMediaCodecOutputFrameListener {#struct-mlmediacodecoutputframelistener}
 
 ```cpp
-typedef struct MLMediaCodecOutputFrameListener  MLMediaCodecOutputFrameListener;
+typedef struct MLMediaCodecOutputFrameListener MLMediaCodecOutputFrameListener;
 ```
 
 Callbacks for notifying when an output frame is available for consumption or has been rendered on the output surface. 
@@ -347,7 +347,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -357,7 +357,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 ### MLMediaCodecCryptoPattern {#struct-mlmediacodeccryptopattern}
 
 ```cpp
-typedef struct MLMediaCodecCryptoPattern  MLMediaCodecCryptoPattern;
+typedef struct MLMediaCodecCryptoPattern MLMediaCodecCryptoPattern;
 ```
 
 Metadata describing an encryption pattern for the protected bytes in a subsample. 
@@ -368,7 +368,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -378,7 +378,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 ### MLMediaCodecCryptoInfo {#struct-mlmediacodeccryptoinfo}
 
 ```cpp
-typedef struct MLMediaCodecCryptoInfo  MLMediaCodecCryptoInfo;
+typedef struct MLMediaCodecCryptoInfo MLMediaCodecCryptoInfo;
 ```
 
 Metadata describing the structure of a (at least partially) encrypted input sample. A buffer's data is considered to be partitioned into "subSamples", each subSample starts with a (potentially empty) run of plain, unencrypted bytes followed by a (also potentially empty) run of encrypted bytes. If pattern encryption applies, each of the encrypted runs is encrypted only partly, according to a repeating pattern of "encrypt" and "skip" blocks. This information encapsulates per-sample metadata as outlined in ISO/IEC FDIS 23001-7:2011 "Common encryption in ISO base media file format files". 
@@ -389,7 +389,7 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

@@ -40,7 +40,7 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

@@ -34,7 +34,7 @@ if (MLResult_Ok != MLTimeConvertSystemTimeToMLTime(&time_spec, &converted_ml_tim
 
 
 **Shared Object:**
-  * perception.magicleap Please note that the MLTime data type cannot be filled with std::chrono timestamps. For example to generate an MLTime time from the current time you can use the code below.
+  * perception.magicleap*
 
 
 

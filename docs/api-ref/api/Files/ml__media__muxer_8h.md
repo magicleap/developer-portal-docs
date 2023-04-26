@@ -67,7 +67,7 @@ Use [MLMediaMuxerGetSupportedOutputFormats](/api-ref/api/Modules/group___media_p
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -80,7 +80,7 @@ Use [MLMediaMuxerGetSupportedOutputFormats](/api-ref/api/Modules/group___media_p
 ### MLMediaMuxerSampleData {#struct-mlmediamuxersampledata}
 
 ```cpp
-typedef struct MLMediaMuxerSampleData  MLMediaMuxerSampleData;
+typedef struct MLMediaMuxerSampleData MLMediaMuxerSampleData;
 ```
 
 Data type that encapsulates sample data to be written in to MLMediaMuxer. 
@@ -91,7 +91,7 @@ Data type that encapsulates sample data to be written in to MLMediaMuxer.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -354,35 +354,24 @@ Add a track with given format information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_format|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat that contains the track's format. |
-| size_t * |out_track_index|Upon successful return, this will conatin the index of the track added.|
-
-**Returns**
-
-|  |   |   |
-|--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_Unsupported|If one of the keys in the format is not supported.|
-**Required Permissions**:
-
-  * None 
-
-
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_format|Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not. |
+| size_t * |out_track_index||
 This should be called before [MLMediaMuxerStart()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
 
-The following media format keys are supported for Audio/Video and Metadata tracks. 
+The following media format keys are supported for Audio/Video and Metadata tracks.
+
+
 
 ------------------
 
 
-# | Audio Track | Video Track | Metadata Track | 
+# | Audio Track                     | Video Track                       | Metadata Track         |
 
 | MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | | MLMediaFormat_Key_Sample_Rate | MLMediaFormat_Key_Width | | | MLMediaFormat_Key_Channel_Count | MLMediaFormat_Key_Height | | | MLMediaFormat_Key_CSD0 | MLMediaFormat_Key_Bt_Rate | | | MLMediaFormat_Key_CSD1 | MLMediaFormat_Key_Frame_Rate | | | | MLMediaFormat_Key_Color_Range | | | | MLMediaFormat_Key_Color_Standard | | | | MLMediaFormat_Key_Color_Transfer | | | | MLMediaFormat_Key_HDR_Static_Info | | | | MLMediaFormat_Key_CSD0 | | 
-# | | MLMediaFormat_Key_CSD1 | | 
+
+
+# |                                 | MLMediaFormat_Key_CSD1            |                        |
 
 [MLMediaMuxerGetSupportedMimes](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedmimes) can be used to query for all the supported MLMediaFormat_Key_Mime for a given Output Format.
 
@@ -390,35 +379,58 @@ While MLMediaFormat_Key_Mime is must for all tracks, some of the keys aren't man
 
 Requierment of providing csd (Codec Specific Data) through MediaFormat is optional for some audio/video mimes where as it is mandatory for some other ones (for example vorbis).
 
-With mp4 container following audio/video and metadata mime types can be supported. 
+With mp4 container following audio/video and metadata mime types can be supported.
+
+
 
 ------------------
 
 
-# | Audio Mimes | Video Mimes | Metadata Mimes | 
+# | Audio Mimes      | Video Mimes     | Metadata Mimes         |
 
 | audio/3gpp | video/3gpp | application/ | | audio/mp4a-latm | video/mp4v-es | image/vnd.android.heic | | audio/amr-wb | video/avc | | 
-# | | video/hevc | | 
 
-With Webm container following audio/video mime types can be supported. 
+
+# |                  | video/hevc      |                        |
+
+With Webm container following audio/video mime types can be supported.
+
+
 
 ------------------
 
 
-# | Audio Mimes | Video Mimes | 
+# | Audio Mimes      | Video Mimes           |
 
 | audio/vorbis | video/x-vnd.on2.vp8 | 
-# | audio/opus | video/x-vnd.on2.vp9 | 
+
+
+# | audio/opus       | video/x-vnd.on2.vp9   |
 
 With Ogg container, only supported mime is "audio/opus".
 
 If a mime passed through the MLMediaFormat is not supported, it will return MLMediaResult_Unsupported.
 
+API Level:\n 20
 
+media_muxerHandle to the MLMediaMuxer instance. 
 
+media_format[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat that contains the track's format. 
 
-**API Level:**
-  * 20
+out_track_indexUpon successful return, this will conatin the index of the track added.
+
+MLResult_InvalidParamOne of the parameters is invalid. 
+
+MLResult_OkIf the operation completes successfully. 
+
+MLResult_UnspecifiedFailureThe operation failed with an unspecified error. 
+
+MLMediaGenericResult_InvalidOperationThe operation is invalid. 
+
+MLMediaResult_UnsupportedIf one of the keys in the format is not supported.
+
+Required PermissionsNone 
+
 
 
 

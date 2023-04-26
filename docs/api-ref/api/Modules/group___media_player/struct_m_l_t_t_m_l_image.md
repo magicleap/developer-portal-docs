@@ -34,7 +34,7 @@ Byte data for TTML image cues.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

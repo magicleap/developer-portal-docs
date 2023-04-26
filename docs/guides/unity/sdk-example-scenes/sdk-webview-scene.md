@@ -2,7 +2,7 @@
 id: sdk-webview-scene
 title: WebView
 description: An overview of the WebView scene included in the Magic Leap 2 Examples Project, which uses Unity's XR Interaction Toolkit.
-sidebar_position: 20
+sidebar_position: 22
 date: 06/07/2022
 tags: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, WebView, Browser, Input, Internet]
 keywords: [Unity, Walkthroughs, Examples, Samples, XR Interaction Toolkit, WebView, Browser, Input, Internet]

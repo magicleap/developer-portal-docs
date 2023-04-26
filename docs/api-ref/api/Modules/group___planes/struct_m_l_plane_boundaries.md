@@ -35,7 +35,7 @@ Type to represent multiple regions on a 2D plane.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 

@@ -10,6 +10,64 @@ keywords: [Unity,Audio, MSA, Soundfield]
 
 # Soundfield Components
 
+## Automatic, Component-based and Mixer workflows
+
+Starting with package version 3.3.0 for **automatic** and 3.4.0 for **mixer** support modes, there are now 3 different workflows to use the Magic Leap Soundfield Audio (MSA) plugin.
+
+- **Automatic Mode** is the default setup requiring only for the "spatialize" checkbox to be set to ON in the `AudioSource` component in your scene.
+- **Component Based Mode** requires adding `MLPointSource` and `MLListener` components to the scene for spatial audio. This gives access to customizeable MSA component settings outlined below.
+- **Mixer Support** provides support for the default Unity audio mixer, establishing an audio processing path between the `AudioSource` component and what the `MLPointSource` spatializes allowing for the sound to get processed using the Unity mixer before between sent back to MSA. Use the following steps to set up this workflow:
+  - In the `AudioSource` component, send the audio to a mixer group
+  - In the mixer group, adjust gain, add FX, etc and at the end insert the MSA Mixer effect. This effect allows you to select an `MLPointSource` object and send it back.
+
+  :::note
+  The audio will not go on to the master mizer after the MSA mixer effect is added to avoid duplication the signal in 2D and spatialized 3D.
+  :::
+
+### Exposing Meter Parameters
+
+The meter works while you have selected a group in the attenuation plugin, but since Unity won't allow to use the main meter in anything other than the output, you will not see the meters on the main view. You can work around that, by using send/receive into a muted output group, like this:
+
+![Unity Meter UI](/img/unity/msa_mixer_meter.png)
+
+You can expose parameters and use a script to group them, like using a slider to move several of them. For instance, if I expose the gain for the master and 3 groups (rename them appropriately) you can run something like this to use master volume to move the others relatively:
+
+```cs
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+ 
+public class ExposedParamsRidingFader : MonoBehaviour
+{
+    public AudioMixer mixer;
+    private float prevGain;
+    // Start is called before the first frame update
+    void Start()
+    {
+        mixer.GetFloat("Master", out prevGain);
+    }
+ 
+    // Update is called once per frame
+    void Update()
+    {
+        float buf = prevGain - 0.001f;// slow fade out
+        mixer.SetFloat("Master", buf);
+        float diff = prevGain - buf;
+        prevGain = buf;
+        mixer.GetFloat("Group1",out buf);
+        mixer.SetFloat("Group1", (buf - diff));
+        mixer.GetFloat("Group2",out buf);
+        mixer.SetFloat("Group2", (buf - diff));
+        mixer.GetFloat("Group3",out buf);
+        mixer.SetFloat("Group3", (buf - diff));
+    }
+}
+```
+
+An easier alternative would be to use [mixer snapshots](https://docs.unity3d.com/2022.2/Documentation/ScriptReference/Audio.AudioMixerSnapshot.html).
+
 ## ML Listener
 
 Extends Unity's AudioListener features by introducing additional parameters related to global spatialization. The MSAListener component has settings for global reverb and transmission properties.
@@ -54,6 +112,7 @@ Transmission is specified using `MultibandLevelProperties`, which includes gain 
 - **Decay Time HF Ratio**: Relative reverberation decay time multiplying factor for high frequencies.
 
 ### Auto-Instantiation
+
 A typical Unity scene will always have an `MLListener` component present that will be responsible for servicing and outputting the binaural audio for all the `MLPointSource` components that are present. However, this approach makes it difficult to handle dynamic loading or unloading of multiple scenes both during editing and at runtime.
 
 `MLListener` provides a mechanism to ensure that when an `MLPointSource` is spawned in a scene an `MLListener` component will always be present in order to ensure the source is supported.
@@ -62,9 +121,9 @@ A typical Unity scene will always have an `MLListener` component present that wi
 
 While it is needed to hear sound from an `MLPointSource`, adding another `MLListener` component to any additively loaded scene will cause your build to fail at runtime.
 
-To solve this, an `MLListener` component is instantiated automatically at runtime to temporarily support the `MLPointsource` components in the current scene. This temporary instantiation will not be included when the scene is saved in order to prevent more than one `MLListener` component from existing simultaneously in the application. 
+To solve this, an `MLListener` component is instantiated automatically at runtime to temporarily support the `MLPointsource` components in the current scene. This temporary instantiation will not be included when the scene is saved in order to prevent more than one `MLListener` component from existing simultaneously in the application.
 
-When an `MLListener` gets instantiated it will first check the `MSAGlobalScriptableObject` to see if a listener prefab has been set. 
+When an `MLListener` gets instantiated it will first check the `MSAGlobalScriptableObject` to see if a listener prefab has been set.
 
 - If the `MLListener` prefab has been set, it will instantiate a game object underneath the game object that has either an `AudioListener` or the main camera.
 
@@ -74,11 +133,9 @@ When an `MLListener` gets instantiated it will first check the `MSAGlobalScripta
 
 The `MLListener` prefab allows the developer to configure the desired component properties.
 
-
 :::note
 It is possible to disable the Auto creation feature by unchecking the **Auto Create ML Listener** option.
 :::
-
 
 When an `MLListener` has been automatically created the UI will provide an option to make it a permanent component that could be saved with this scene.
 

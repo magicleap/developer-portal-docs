@@ -101,7 +101,7 @@ namespace UnityEngine.XR.MagicLeap
 
         private MLResult.Code InternalGetLatestWorldCameraData(uint timeOutMs, out Frame[] data)
         {
-            var nativeData = new NativeBindings.MLWorldCameraData();
+            var nativeData = NativeBindings.MLWorldCameraData.Init();
             IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf(nativeData));
             Marshal.StructureToPtr(nativeData, ptr, false);
             var resultCode = NativeBindings.MLWorldCameraGetLatestWorldCameraData(Handle, timeOutMs, ref ptr);

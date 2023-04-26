@@ -18,7 +18,7 @@ title: MLMediaDRMHMACInputParam
 
 | Type           | Name           |
 | -------------- | -------------- |
-| char * | **[algorithm](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md#char-algorithm)** <br></br>The MAC algorithm used for the MAC-HASH operation. "HmacSHA256" is the only supported algorithm now.  |
+| char * | **[algorithm](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md#char-algorithm)** <br></br>The MAC algorithm used for the MAC-HASH operation. The only supported algorithm now is "HmacSHA256".  |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[key_set_id](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md#mlmediadrmbytearray-key-set-id)**  |
 
 ## Detailed Description
@@ -43,7 +43,7 @@ Data type that encapsulates algorithm, key_set_id for HMAC based Sign/Verify.
 char * algorithm;
 ```
 
-The MAC algorithm used for the MAC-HASH operation. "HmacSHA256" is the only supported algorithm now. 
+The MAC algorithm used for the MAC-HASH operation. The only supported algorithm now is "HmacSHA256". 
 
 
 

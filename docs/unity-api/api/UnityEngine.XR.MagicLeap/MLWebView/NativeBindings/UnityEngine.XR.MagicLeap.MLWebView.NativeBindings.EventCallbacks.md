@@ -47,6 +47,23 @@ public static EventCallbacks Create(
 
 ## Public Attributes
 
+### OnBeforePopup {#onbeforepopupcallback-onbeforepopup}
+
+This callback is used to ask the application if is OK to load a URL. 
+
+```csharp
+
+public OnBeforePopupCallback OnBeforePopup;
+
+```
+
+
+
+
+
+
+-----------
+
 ### OnBeforeResourceLoad {#onbeforeresourceloadcallback-onbeforeresourceload}
 
 Called to notify when a resource will loadeded. 
@@ -139,6 +156,40 @@ Called if there was any error during loading. These errors could be due to conne
 ```csharp
 
 public OnLoadErrorCallback OnLoadError;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnPopupClosed {#onpopupclosedcallback-onpopupclosed}
+
+This callback is used to notify the application of a closing popup. 
+
+```csharp
+
+public OnPopupClosedCallback OnPopupClosed;
+
+```
+
+
+
+
+
+
+-----------
+
+### OnPopupOpened {#onpopupopenedcallback-onpopupopened}
+
+This callback is used to notify application that popup is opened. 
+
+```csharp
+
+public OnPopupOpenedCallback OnPopupOpened;
 
 ```
 

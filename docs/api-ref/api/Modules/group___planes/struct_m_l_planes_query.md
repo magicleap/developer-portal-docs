@@ -38,7 +38,7 @@ Type used to represent a plane query.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

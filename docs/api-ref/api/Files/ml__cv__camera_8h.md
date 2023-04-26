@@ -38,7 +38,7 @@ Camera id enum.
 
 
 **API Level:**
-  * 5 
+  * 5
 
 
 

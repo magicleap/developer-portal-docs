@@ -55,7 +55,7 @@ Has a calibration occurred. If so, what was the granularity.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -68,7 +68,7 @@ Has a calibration occurred. If so, what was the granularity.
 ### MLEyeCalibrationState {#struct-mleyecalibrationstate}
 
 ```cpp
-typedef struct MLEyeCalibrationState  MLEyeCalibrationState;
+typedef struct MLEyeCalibrationState MLEyeCalibrationState;
 ```
 
 A struct representing the eye calibration state. 
@@ -79,7 +79,7 @@ A struct representing the eye calibration state.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 

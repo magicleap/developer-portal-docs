@@ -43,7 +43,7 @@ A structure containing information about the current state of an input controlle
 
 
 **API Level:**
-  * 21 
+  * 21
 
 
 

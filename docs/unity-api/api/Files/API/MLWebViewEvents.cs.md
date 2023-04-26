@@ -54,6 +54,12 @@ namespace UnityEngine.XR.MagicLeap
 
         public delegate void OnServiceFailedDelegate(MLWebView webView, MLResult result);
 
+        public delegate void OnBeforePopupDelegate(MLWebView webView, string url, bool popupAccepted);
+
+        public delegate void OnPopupOpenedDelegate(MLWebView webView, ulong popupID, string url);
+
+        public delegate void OnPopupClosedDelegate(MLWebView webView, ulong handle);
+
         public event OnBeforeResourceLoadDelegate OnBeforeResourceLoaded = delegate { };
 
         public event OnLoadEndDelegate OnLoadEnded = delegate { };
@@ -73,6 +79,12 @@ namespace UnityEngine.XR.MagicLeap
         public event OnServiceDisconnectedDelegate OnServiceDisconnected = delegate { };
 
         public event OnServiceFailedDelegate OnServiceFailed = delegate { };
+
+        public event OnBeforePopupDelegate OnBeforePopup = delegate { };
+
+        public event OnPopupOpenedDelegate OnPopupOpened = delegate { };
+
+        public event OnPopupClosedDelegate OnPopupClosed = delegate { };
     }
 }
 ```

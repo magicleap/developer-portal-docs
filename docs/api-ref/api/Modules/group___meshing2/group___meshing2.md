@@ -65,7 +65,7 @@ APIs for the Meshing system.
 
 
 **Shared Object:**
-  * perception.magicleap
+  * perception.magicleap*
 
 * The Meshing system is for generating a mesh representation of the real world. 
 
@@ -166,7 +166,7 @@ State of a block mesh.
 ### MLMeshingSettings {#struct-mlmeshingsettings}
 
 ```cpp
-typedef struct MLMeshingSettings  MLMeshingSettings;
+typedef struct MLMeshingSettings MLMeshingSettings;
 ```
 
 
@@ -183,7 +183,7 @@ Mesh Settings for the underlying system.
 ### MLMeshingExtents {#struct-mlmeshingextents}
 
 ```cpp
-typedef struct MLMeshingExtents  MLMeshingExtents;
+typedef struct MLMeshingExtents MLMeshingExtents;
 ```
 
 
@@ -200,7 +200,7 @@ Axis aligned bounding box for querying updated mesh info.
 ### MLMeshingBlockInfo {#struct-mlmeshingblockinfo}
 
 ```cpp
-typedef struct MLMeshingBlockInfo  MLMeshingBlockInfo;
+typedef struct MLMeshingBlockInfo MLMeshingBlockInfo;
 ```
 
 
@@ -217,7 +217,7 @@ Representation of a mesh block.
 ### MLMeshingMeshInfo {#struct-mlmeshingmeshinfo}
 
 ```cpp
-typedef struct MLMeshingMeshInfo  MLMeshingMeshInfo;
+typedef struct MLMeshingMeshInfo MLMeshingMeshInfo;
 ```
 
 
@@ -234,7 +234,7 @@ Response structure for the mesh block info.
 ### MLMeshingBlockRequest {#struct-mlmeshingblockrequest}
 
 ```cpp
-typedef struct MLMeshingBlockRequest  MLMeshingBlockRequest;
+typedef struct MLMeshingBlockRequest MLMeshingBlockRequest;
 ```
 
 
@@ -251,7 +251,7 @@ Request structure to get the actual mesh for a block.
 ### MLMeshingMeshRequest {#struct-mlmeshingmeshrequest}
 
 ```cpp
-typedef struct MLMeshingMeshRequest  MLMeshingMeshRequest;
+typedef struct MLMeshingMeshRequest MLMeshingMeshRequest;
 ```
 
 
@@ -268,7 +268,7 @@ Request structure to get the actual mesh for a set of blocks.
 ### MLMeshingBlockMesh {#struct-mlmeshingblockmesh}
 
 ```cpp
-typedef struct MLMeshingBlockMesh  MLMeshingBlockMesh;
+typedef struct MLMeshingBlockMesh MLMeshingBlockMesh;
 ```
 
 
@@ -285,7 +285,7 @@ Final structure for a block mesh.
 ### MLMeshingMesh {#struct-mlmeshingmesh}
 
 ```cpp
-typedef struct MLMeshingMesh  MLMeshingMesh;
+typedef struct MLMeshingMesh MLMeshingMesh;
 ```
 
 

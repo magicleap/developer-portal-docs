@@ -34,7 +34,7 @@ Used to store the list of codec profile levels.
 
 
 **API Level:**
-  * 6 
+  * 6
 
 
 

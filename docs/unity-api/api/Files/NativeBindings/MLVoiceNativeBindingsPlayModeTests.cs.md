@@ -21,9 +21,9 @@ title: MLVoiceNativeBindingsPlayModeTests.cs
 using System.Reflection;
 using NUnit.Framework;
 
-namespace Tests.Runtime.NativeBindings
+namespace UnitySDKPlayTests
 {
-    public class MLVoiceNativeBindingsPlayModeTests : NativeBindingsPlayTests
+    public class MLVoiceIntent : NativeBindingsPlayTests
     {
         [SetUp]
         public void SetupNativeBindings()

@@ -35,7 +35,7 @@ The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/gro
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 

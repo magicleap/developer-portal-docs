@@ -38,7 +38,7 @@ To be passed to PopulateDepth.
 
 
 :::caution Deprecated
-Deprecated since 1.2.0. Scheduled for removal. 
+Deprecated since 1.2.0. Scheduled for removal.
 :::
 
 
