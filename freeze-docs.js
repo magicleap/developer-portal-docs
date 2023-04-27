@@ -17,7 +17,7 @@ try {
         'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
     ];
     const today = new Date();
-    const dateStringQuesiton = `Desired name string?`;
+    const dateStringQuesiton = `Desired name string for new 'current' version?`;
     const exampleDateString = `${today.getDate()} ${monthNames[today.getMonth()]} ${today.getFullYear()}`
     const questionString = `${dateStringQuesiton} Example: ${exampleDateString}: `
     const previousVersion = versionData.current.label;
