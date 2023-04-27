@@ -11,6 +11,10 @@ keywords: [Eyes, Calibration, Eye Calibration, Fit, Design guidelines, Best Prac
 
 Developers can use the Eye Calibration API to determine the current status of the eye calibration system.
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the Magic Leap 2 Eye Tracking Data Transparency Policy.
+:::
+
 ## The Eye Calibration API returns one of three outputs
 
 - **Fine** - eye-tracking is precise enough to use as input for selecting buttons or icons.
