@@ -10,6 +10,10 @@ keywords: [Unity, Eye Tracking, Input, Porting]
 # Magic Leap Eye Tracking Data
 To obtain Magic Leap device specific features such as checking the eye tracking FixationConfidence status or if the user is blinking use Magic Leap's [InputSubsystem.Extensions](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.md)
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
+:::
+
 Below is a list of some of the data that can be obtained via the [`EyeTrackingState`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md).
 
 - Fixation Confidence

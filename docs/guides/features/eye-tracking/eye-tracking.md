@@ -17,6 +17,10 @@ Eye tracking on Magic Leap 2 lets developers design natural and intuitive input 
 
 The predicted eye-gaze is approximately within 1 degree in visual angle around the actual target. Slight imprecisions are expected, so developers should plan for some margin around this lower-bound value.  
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
+:::
+
 
 ## More Information
 

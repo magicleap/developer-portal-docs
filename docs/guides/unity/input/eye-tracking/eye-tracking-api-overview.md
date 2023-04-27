@@ -16,6 +16,10 @@ Magic Leap's Eye Tracking data is retrieved in two ways.
 
 Regardless of which data you access, you must initialize the Magic Leap Eye tracking service first.
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
+:::
+
 ## Initialize Eye Tracking
 
 :::caution
