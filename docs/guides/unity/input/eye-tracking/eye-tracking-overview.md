@@ -9,6 +9,10 @@ keywords: [Unity, Eye Tracking, Input, Overview]
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
+:::
+
 Eye tracking uses cameras to track the movement of the user’s eyes to  calculate where a user is looking, track whether they are blinking, and check if their eyes are in a comfortable configuration.
 
 :::caution

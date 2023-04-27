@@ -14,6 +14,10 @@ import TabItem from '@theme/TabItem';
 
 The Magic Leap 2's eye tracking input can largely be accessed using Unity's [Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/QuickStartGuide.html). However, some platform specific values are accessed via the `TrackingState`, which can be retrieved using Magic Leaps `InputSubsystem.Extensions`.
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
+:::
+
 When upgrading an ML1 app please note:
 
 - The `MLEyesStarterKit` class has been removed

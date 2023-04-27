@@ -9,6 +9,10 @@ keywords: [Unity, Eye Tracking, Input, Porting]
 
 # Generic Eye Tracking Data
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
+:::
+
 Unity Input System can be used to obtain common eye tracking input such as the user's Fixation Point. This section includes a few examples of accessing eye tracking data through the EyesAction class.
 
 See Unity's [UnityEngine.InputSystem.XR.Eyes](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.XR.Eyes.html) API section for information on all the type of data that can be obtained.

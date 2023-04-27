@@ -7,6 +7,9 @@ tags: [Unity, Eye Tracking, Input]
 keywords: [Unity, Eye Tracking, Input]
 ---
 
+:::note
+If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
+:::
 
 In addition to getting the eye center and fixation point transforms in code via the `UnityEngine.InputSystem.XR.Eyes` struct, you can also use the `TrackedPoseDriver` component, as long as it has been configured with the appropriate input action bindings.
 
