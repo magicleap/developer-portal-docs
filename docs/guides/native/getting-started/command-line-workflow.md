@@ -16,14 +16,14 @@ This section outlines the steps required to build Native applications (including
 
 ## Prerequisites
 
-- Make sure you have properly installed everything listed in the [Setup Overview](/docs/guides/native/getting-started/native-setup-overview.md), and have followed the [instructions](/docs/guides/getting-started/install-the-tools.md) on downloading the Lab 2.0 and the latest Magic Leap C SDK (MLSDK).
+- Make sure you have properly installed everything listed in the [Setup Overview](/docs/guides/native/getting-started/native-setup-overview.md), and have followed the [instructions](/docs/guides/getting-started/install-the-tools.md) on downloading the ML Hub and the latest Magic Leap C SDK (MLSDK).
 - Python3 is required to run the build scripts located in the Magic Leap Samples folder.
 :::warning
 The **MLSDK** must be installed into a path without spaces.
 :::
 
 - Additionally, make sure you have OpenJDK-11 installed. You can download it from the [Java Development Kit website](https://jdk.java.net/java-se-ri/11).
-- Lastly, you must download the latest **C-API Samples** package from the **Package Manager** within **The Lab**. On more information about the package manager, check the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md) guide.
+- Lastly, you must download the latest **C-API Samples** package from the **Package Manager** within **ML Hub**. On more information about the package manager, check the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md) guide.
 
 The instructions below assume that all the content has been extracted to the **{USER}** directory.
 
