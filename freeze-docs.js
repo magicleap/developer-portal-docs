@@ -4,9 +4,8 @@ const CONFIG_FILE = 'docs-versions.json';
 const PREVIOUS_VERSIONS_FILE = 'versions.json';
 const fs = require('fs');
 const prompt = require('prompt-sync')({ sigint: true });
-const {execSync} = require('child_process');
-const { version } = require('os');
-const branch = execSync('git rev-parse --abbrev-ref HEAD', {encoding: 'utf8', timeout: 10000}).trim();
+const { execSync } = require('child_process');
+const branch = execSync('git rev-parse --abbrev-ref HEAD', { encoding: 'utf8', timeout: 10000 }).trim();
 
 console.log(`You are currently on branch '${branch}'. You should first \`git fetch upstream main && git checkout upstream/main\` and be in a detached HEAD state.\n`);
 
@@ -47,7 +46,7 @@ try {
 
     // Remove older version
     fs.rmSync(`versioned_docs/version-${deprecatedVersion}`, { recursive: true, force: true });
-    fs.rmSync(`versioned_sidebars/version-${deprecatedVersion}-sidebars.json`, { });
+    fs.rmSync(`versioned_sidebars/version-${deprecatedVersion}-sidebars.json`, {});
 
     // Update config files
     fs.writeFileSync(CONFIG_FILE, jsonOutput);
