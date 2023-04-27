@@ -1,7 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
 const docsVersions = require('./docs-versions.json');
-console.log(docsVersions);
 
 const pathPrefix = process.env.REACT_APP_DOCUSAURUS_ROOT || ''; // Prefix path of the Docusaurus base URL
 const ADD_ROUTER = process.env.ADD_ROUTER; // development option to force inclusion of the router
