@@ -1,6 +1,6 @@
 ---
 title: 1.2.0 - SDK Release Notes
-sidebar_position: 2
+sidebar_position: 3
 date: 04/24/2023
 ---
 
