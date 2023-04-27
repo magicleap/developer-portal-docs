@@ -14,13 +14,15 @@ There are two main ways of building Native applications, a [command line workflo
 
 ## Prerequisites
 
-1. Install the *Electric Eel* version of [Android Studio](https://developer.android.com/studio/archive).
+1. Install the latest version of the [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/).
+
+2. Install the latest *Electric Eel* version of [Android Studio](https://developer.android.com/studio/archive). (2022.1.1 Patch 2 at time of writing)
 
 :::note
-Make sure you have installed Android SDK Tools 31, Android SDK Command Line, and Android SDK Platform Tools in Android Studio if they did not automatically download.
+Make sure you have installed the Android SDK Tools, Android SDK Command Line, and Android SDK Platform Tools in Android Studio if they did not automatically download.
 :::
 
-2. Open the SDK Manager
+3. Open the SDK Manager
 
 You can find the SDK Manager by either selecting **More Actions** on the landing screen, or from the **Tools** dropdown from within a project.
 
@@ -28,11 +30,11 @@ You can find the SDK Manager by either selecting **More Actions** on the landing
 
 ![SDK Manager Option in Tools Dropdown](/img/migration-images/a_showSDK.png)
 
-3. Install [Android SDK 10 (Q) API Level 29](https://developer.android.com/about/versions/10/setup-sdk) under **SDK Platforms**.
+4. Install [Android SDK 10 (Q) API Level 29](https://developer.android.com/about/versions/10/setup-sdk) under **SDK Platforms**.
 
 ![Android SDK option in Android Studio](/img/migration-images/b_showSDK.png)
 
-4. Install [Android NDK](https://developer.android.com/ndk) *version 25.0.8775105* under **SDK Tools**.
+5. Install [Android NDK](https://developer.android.com/ndk) *version 25.0.8775105* under **SDK Tools**.
 
 :::tip
 If you don't see different version options, check **Show Package Details** at the bottom right.
@@ -40,13 +42,9 @@ If you don't see different version options, check **Show Package Details** at th
 
 ![Android NDK option in Android Studio](/img/migration-images/c_showNDK.png)
 
-5. Install [Cmake](https://cmake.org/) *version 3.22.1* under **SDK Tools**.
+6. Install [Cmake](https://cmake.org/) *version 3.22.1* under **SDK Tools**.
 
 ![CMake Option in Android Studio](/img/migration-images/d_showCmake.png)
-
-:::note
-If you don't already have [Vulkan](https://www.lunarg.com/vulkan-sdk/) installed, you'll need that as well.
-:::
 
 :::note
 You may need to install Ninja if you are getting errors that CMake can't find it:

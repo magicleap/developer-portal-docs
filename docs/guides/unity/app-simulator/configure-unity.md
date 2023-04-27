@@ -12,7 +12,7 @@ You will need to configure a few Unity Settings for the simulator to run properl
 
 The Magic Leap SDK Path setting will only show once the Magic Leap XR package is imported. If the Magic Leap SDK path setting is not visible, make sure that the `com.magicleap.xr` package was correctly imported.
 
-1. Open **Edit > Preferences** on Windows (or macOS: **Unity > Preferences**), then navigate to **External Tools > Magic Leap**.
+1. Open **Edit > Preferences** on Windows (or macOS: **Unity > Settings**), then navigate to **External Tools > Magic Leap**.
 
 - Set the MLSDK path to the Magic Leap SDK you downloaded from the ML Hub earlier. For example:
   - Mac: `$HOME/MagicLeap/mlsdk/<Version>/`
@@ -30,7 +30,7 @@ The Magic Leap XR Provider needs to be enabled before using Magic Leap's platfor
 
 1. Go to **File > Build Settings > Player Settings > XR Plug-in Management** and enable **Magic Leap** as a Plug-in Provider on the **Android** platform.
 
-2. In the **Standalone** tab, select **Magic Leap App Simulator** (formerly known as Zero Iteration). This step is required for App Simulator to run properly.
+2. In the **Windows, Mac, Linux settings** tab, select **Magic Leap App Simulator** (formerly known as Zero Iteration). This step is required for App Simulator to run properly.
 
 :::note
 If you are having any issues applying these changes, restart the Unity Editor. An editor restart may also be required for App Simulator to run correctly.
