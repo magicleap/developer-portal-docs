@@ -106,12 +106,16 @@ module.exports = {
           //   from: '/docs/guides/getting-started',
           // },
           {
-            from: '/docs/guides/native/capi-getting-started',
-            to: '/docs/guides/native/getting-started/native-getting-started'
+            from: '/docs/guides/remote-rendering/remote-rendering-service',
+            to: '/docs/guides/remote-rendering/remote-render'
           },
           {
             from: '/docs/guides/unity/getting-started/set-up-development-environment',
             to: '/docs/guides/unity/getting-started/unity-getting-started'
+          },
+          {
+            from: '/docs/guides/native/capi-getting-started',
+            to: '/docs/guides/native/getting-started/native-getting-started'
           },
           {
             from: '/docs/guides/developer-tools/lab-tools/ml2-lab-device-stream',
