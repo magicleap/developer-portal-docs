@@ -68,8 +68,6 @@ You can **Restart** or **Shutdown** the device and manage **WiFi Bridge**.
 
 Configure WiFi Bridge to send commands to your device over WiFi, including CLI commands.
 
-1. Connect your device to your computer with a USB cable.
-2. While connected, open Device Bridge, or click on your device name in the Device Tray.
-3. Toggle **WiFi Bridge** to enable WiFi connections. Both your device and your development machine must be on the same WiFi network.
+1. Toggle **WiFi Bridge** to enable WiFi connections. Both your device and your development machine must be on the same WiFi network.
 
    ![WiFi Bridge panel](/img/ml-hub/wifi_bridge.png)
