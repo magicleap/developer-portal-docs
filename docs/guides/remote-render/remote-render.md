@@ -11,7 +11,7 @@ import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 :::caution
-Currently, Remote Render can only be performed using Windows.
+**Currently, Remote Render can only be performed using Windows.**
 :::
 
 Remote Render empowers users to enjoy interactive content with advanced graphics

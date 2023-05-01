@@ -9,6 +9,12 @@ tags: [Rendering, Servers, Unreal, UE, Windrunner]
 keywords: [Rendering, Servers, Unreal, UE, Windrunner]
 ---
 
+:::caution Performance and Gotchas
+Performance for remote rendering is highly-dependent on the capabilities of the host machine that is running Unreal Engine. Noticeable lag may be a result of insufficient processing or GPU power.
+
+Some users have reported that their Remote Render application in Unreal Engine has reversed input between their **Bumper** and **Trigger** on their Magic Leap 2 **Controller**.
+:::
+
 ## Prerequisite
 
 [Remote Render Setup Instructions with the Remote Render Service](/docs/guides/remote-render/remote-render).
