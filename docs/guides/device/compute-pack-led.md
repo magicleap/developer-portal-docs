@@ -7,55 +7,48 @@ tags: [Controller, LEDs, LED Patterns]
 keywords: [Controller, LEDs, LED Patterns]
 ---
 
+import ReactPlayer from 'react-player';
+
 This article explains what action the Magic Leap 2 Compute Pack's LED patterns signify.
 
 The compute pack on Magic Leap 2 can show anywhere from 1 - 5 LED dots. Different combinations of these dots and colors communicate different statuses about the device.
 
-Power Status LEDs
------------------
-
-|     |     |
-| --- | --- |
-| **LED** | **Meaning** |
-| ![computepack-bootup.gif](/img/led-images/sprint16/Compute_Boot_Up.gif) | Boot up  <br/>_Compute pack is waking up._ |
-| ![computepack-shutdown.gif](/img/led-images/sprint10/computepack-shutdown.gif) | Shut down  <br/>_Shut down starts with a long press of the power button._ |
-| ![computepack-sleep.gif](/img/led-images/sprint10/computepack-sleep.gif) | Sleep Mode  <br/>_Device is in sleep mode._ |
-| ![Compute_Critical_Battery_Charging.gif](/img/led-images/sprint13/Compute_Critical_Battery_Charging.gif) | Critical battery level<br/>_The LED will pulse red when the battery is critically low at 5% or less._ |
-| ![Compute_Charging.gif](/img/led-images/sprint13/Compute_Charging.gif) | Charging (While Device is Off)<br/>_Compute pack is charging._ |
-| ![computepack-charging.gif](/img/led-images/sprint10/computepack-charging.gif) | Charging (While Device is On)<br/>_Compute pack is charging._ |
-| ![Compute_Charging_Complete.gif](/img/led-images/sprint13/Compute_Charging_Complete.gif) | Charging Complete<br/>_Charging is complete._ |
-| ![computepack-incompatiblecharger.gif](/img/led-images/sprint10/computepack-incompatiblecharger.gif) | Incompatible charger<br/>_An incompatible charger is being used._ |
-| ![Compute_Insufficient_Charger.gif](/img/led-images/sprint13/Compute_Insufficient_Charger.gif) | Insufficient charger<br/>_An insufficient charger is being used._ |
-| ![computepack-battery6-20.gif](/img/led-images/sprint10/computepack-battery6-20.gif)<br/>![computepack-battery-10-40.gif](/img/led-images/sprint10/computepack-battery-10-40.gif)<br/>![computepack-battery41-60.gif](/img/led-images/sprint10/computepack-battery41-60.gif)<br/>![computepack-battery61-80.gif](/img/led-images/sprint10/computepack-battery61-80.gif)<br/>![computepack-battery81-100.gif](/img/led-images/sprint10/computepack-battery81-100.gif) | Battery level  <br/>* _Five LEDs show the battery level at 100-81%._<br/>* _Four LEDs show the battery level at 80-61%._<br/>* _Three LEDs show the battery level at 60-41%._<br/>* _Two LEDs show the battery level at 40-21%._<br/>* _One LED shows the battery level at 20-6%._ |
-
-Controller Pairing LEDs
------------------------
-
-|     |     |
-| --- | --- |
-| **LED** | **Meaning** |
-| ![compute-bluetoothpairing.gif](/img/led-images/sprint10/compute-bluetoothpairing.gif) | Bluetooth pairing<br/>_Compute pack and controller are pairing._ |
-| ![computepack-bluetoothsucess.gif](/img/led-images/sprint10/computepack-bluetoothsucess.gif) | Bluetooth success<br/>_Compute pack and controller have successfully paired._ |
-| ![computepack-bluetoothfailure.gif](/img/led-images/sprint10/computepack-bluetoothfailure.gif) | Bluetooth failure<br/>_Compute pack and controller have not paired._ |
-
-Update LEDs
------------
-
-|     |     |
-| --- | --- |
-| **LED** | **Meaning** |
-| ![computepack-updatesuccess.gif](/img/led-images/sprint10/computepack-updatesuccess.gif) | Successfully updating<br/>_Update is in progress._ |
-| ![computepack-updatefailure.gif](/img/led-images/sprint10/computepack-updatefailure.gif) | Failed to update<br/>_Update has failed._ |
-| ![Compute_Fastboot.gif](/img/led-images/sprint13/Compute_Fastboot.gif) | Fastboot<br/>_Device is in Fastboot._ |
-
-Warning LEDs
------------------------
-
-|     |     |
-| --- | --- |
-| **LED** | **Meaning** |
-| ![computepack-thermalwarning.gif](/img/led-images/sprint10/computepack-thermalwarning.gif) | Thermal warning<br/>_Device needs to cool down._ |
-| ![computepack-thermalfailure.gif](/img/led-images/sprint10/computepack-thermalfailure.gif) | Thermal fault<br/>_Overheating has caused a fault._ |
-| ![computepack-recovery.gif](/img/led-images/sprint10/computepack-recovery.gif) | Recovery mode<br/>_Device is in recovery mode._ |
-| ![computepack-hardwarefailure.gif](/img/led-images/sprint10/computepack-hardwarefailure.gif) | Hardware failure<br/>_A hardware failure has occurred._ |
-| ![computepack-softwarefailure.gif](/img/led-images/sprint10/computepack-softwarefailure.gif) | Software failure<br/>_A software failure has occurred._ |
+| Description                                                                                                   | Animation                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Compute pack is waking up.                                                                                    | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-boot-up.webm" width="300px" height="150px" playing loop />                    |
+| Compute pack is on.                                                                                           | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-on.webm" width="300px" height="150px" playing loop />                         |
+| Controller is in a low power state ready to go into sleep mode.                                               | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-standby.webm" width="300px" height="150px" playing loop />                    |
+| Device is in sleep mode.                                                                                      | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-sleep.webm" width="300px" height="150px" playing loop />                      |
+| Shut down starts with a long press of the power button.                                                       | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-shut-down.webm" width="300px" height="150px" playing loop />                  |
+| The LED will pulse white and red when the compute pack is charging and the battery is 5% or less.             | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-critical-battery-charging.webm" width="300px" height="150px" playing loop />  |
+| Compute pack battery is critically low at 5% or less.                                                         | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-critical-battery-unplugged.webm" width="300px" height="150px" playing loop /> |
+| Five LEDs show the battery level at 100% and charging.                                                        | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-charging-100.webm" width="300px" height="150px" playing loop />               |
+| Four LEDs show the battery level is between 76–99% and charging.                                              | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-charging-76-99.webm" width="300px" height="150px" playing loop />             |
+| Three LEDs show the battery level is between 51–75% and charging.                                             | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-charging-51-75.webm" width="300px" height="150px" playing loop />             |
+| Two LEDs show the battery level is between 26–50% and charging.                                               | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-charging-26-50.webm" width="300px" height="150px" playing loop />             |
+| One LED shows the battery level is between 6–25% and charging.                                                | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-charging-6-25.webm" width="300px" height="150px" playing loop />              |
+| Five LEDs show the battery level is 100%.                                                                     | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-battery-check-100.webm" width="300px" height="150px" playing loop />          |
+| Four LEDs show the battery level is between 76–99%.                                                           | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-battery-check-76-99.webm" width="300px" height="150px" playing loop />        |
+| Three LEDs show the battery level is between 51–75%.                                                          | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-battery-check-51-75.webm" width="300px" height="150px" playing loop />        |
+| Two LEDs show the battery level is between 26–50%.                                                            | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-battery-check-26-50.webm" width="300px" height="150px" playing loop />        |
+| One LED shows the battery level is between 6–25%.                                                             | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-battery-check-6-25.webm" width="300px" height="150px" playing loop />         |
+| An insufficient charger is being used. Five LEDs show the battery level is 100%.                              | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-insufficient-charger-100.webm" width="300px" height="150px" playing loop />   |
+| An insufficient charger is being used. Four LEDs show the battery level is between 76–99%.                    | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-insufficient-charger-76-99.webm" width="300px" height="150px" playing loop /> |
+| An insufficient charger is being used. Three LEDs show the battery level is between 51–75%.                   | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-insufficient-charger-51-75.webm" width="300px" height="150px" playing loop /> |
+| An insufficient charger is being used. Two LEDs show the battery level is between 26–50%.                     | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-insufficient-charger-26-50.webm" width="300px" height="150px" playing loop /> |
+| An insufficient charger is being used. One LED shows the battery level is between 6–25%.                      | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-insufficient-charger-6-25.webm" width="300px" height="150px" playing loop />  |
+| An incompatible charger is being used.                                                                        | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-incompatible-charger.webm" width="300px" height="150px" playing loop />       |
+| Compute pack and controller are pairing.                                                                      | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-bluetooth-pairing.webm" width="300px" height="150px" playing loop />          |
+| Compute pack and controller have successfully paired.                                                         | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-bluetooth-pairing-success.webm" width="300px" height="150px" playing loop />  |
+| Compute pack and controller have not paired.                                                                  | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-bluetooth-pairing-failure.webm" width="300px" height="150px" playing loop />  |
+| Update is in progress.                                                                                        | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-updating.webm" width="300px" height="150px" playing loop />                   |
+| Update has failed.                                                                                            | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-updating-failure.webm" width="300px" height="150px" playing loop />           |
+| Device is in Fastboot.                                                                                        | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-fastboot.webm" width="300px" height="150px" playing loop />                   |
+| Device is in recovery mode.                                                                                   | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-recovery-mode.webm" width="300px" height="150px" playing loop />              |
+| Device successfully completed action. This is paired with other patterns to confirm the action is successful. | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-generic-success.webm" width="300px" height="150px" playing loop />            |
+| Device failed the attempted action.                                                                           | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-generic-failure.webm" width="300px" height="150px" playing loop />            |
+| Device is using the Magic Leap Hub to sideload an APK.                                                        | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-sideload.webm" width="300px" height="150px" playing loop />                   |
+| Device needs to cool down.                                                                                    | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-thermal-warning.webm" width="300px" height="150px" playing loop />            |
+| Overheating has caused a fault.                                                                               | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-thermal-fault.webm" width="300px" height="150px" playing loop />              |
+| A hardware failure has occured.                                                                               | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-hardware-failure.webm" width="300px" height="150px" playing loop />           |
+| A software failure has occured.                                                                               | <ReactPlayer url="/videos/led-patterns/compute-pack/compute-software-failure.webm" width="300px" height="150px" playing loop />           |
