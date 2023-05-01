@@ -8,8 +8,7 @@ date: 12/21/2021
 
 Magic Leap 2's headset has a single LED dot. Different combinations of colors and flashes communicate different pieces of information about the headset status.
 
-|     |     |
-| --- | --- |
-| LED | Meaning |
-| ![headset-rgb.png](/img/led-images/sprint10/headset-rgb.png) | RGB Camera<br/>_RGB camera is in use._ |
-| ![headset-audio.png](/img/led-images/sprint10/headset-audio.png) | Audio recording<br/>_Only audio is recording._ |
+| Description     | Image                                                                                          |
+| --------------- | ---------------------------------------------------------------------------------------------- |
+| RGB Camera      | <img src="/img/led-images/headset/headset-audio-recording.png" width="300px" height="150px" /> |
+| Audio recording | <img src="/img/led-images/headset/headset-rgb-camera.png" width="300px" height="150px" />      |
