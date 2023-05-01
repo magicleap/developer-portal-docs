@@ -2,6 +2,7 @@
 id: remote-render
 title: Remote Render
 sidebar_label: Remote Render Getting Started
+sidebar_position: 2
 date: 03/13/2023
 tags: [Render, Servers, Remote]
 keywords: [Render, Servers, Remote]

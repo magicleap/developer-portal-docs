@@ -1,7 +1,8 @@
 ---
-id: remote-rendering-overview
+id: remote-render-overview
 title: Remote Render Overview
 date: 04/19/2023
+sidebar_position: 0
 tags: [Rendering, Servers, Unreal, UE, Remote]
 keywords: [Rendering, Servers, Unreal, UE, Remote]
 ---

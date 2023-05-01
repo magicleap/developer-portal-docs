@@ -1,16 +1,17 @@
 ---
-id: remote-rendering-unreal-engine-5
-title: Remote Rendering with Unreal Engine 5
+id: remote-render-unreal-engine-5
+title: Remote Render with Unreal Engine 5
 sidebar_label: Unreal Engine 5
-sidebar_position: 1
-date: 03/14/2023
+sidebar_position: 2
+description: Remote Render with Unreal Engine 5.
+date: 05/01/2023
 tags: [Rendering, Servers, Unreal, UE, Windrunner]
 keywords: [Rendering, Servers, Unreal, UE, Windrunner]
 ---
 
 ## Prerequisite
 
-[Remote Rendering Setup Instructions with Windrunner](/docs/guides/remote-rendering/remote-rendering-windrunner).
+[Remote Render Setup Instructions with the Remote Render Service](/docs/guides/remote-rendering/remote-rendering-windrunner).
 
 ## Setup
 
