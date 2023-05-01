@@ -11,7 +11,7 @@ keywords: [Rendering, Servers, Unreal, UE, Windrunner]
 
 ## Prerequisite
 
-[Remote Render Setup Instructions with the Remote Render Service](/docs/guides/remote-rendering/remote-rendering-windrunner).
+[Remote Render Setup Instructions with the Remote Render Service](/docs/guides/remote-render/remote-render).
 
 ## Setup
 
