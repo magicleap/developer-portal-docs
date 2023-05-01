@@ -14,7 +14,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 Magic Leap Remote Render is a first-party tool, created by Magic Leap, designed to allow for rendering content onto a Magic Leap 2 device from a more-powerful, non-mobile Windows computer.
 
 ## Prerequisites
-- Enterprise or Developer Pro license
+- **Enterprise** or **Developer Pro license**
 - [Install the Magic Leap Hub](/docs/guides/getting-started/install-the-tools#install-magic-leap-hub)
 - [Grant Developer Permissions](/docs/guides/getting-started/granting-permissions)
 - [Install the latest OS on Magic Leap 2 (minimum 1.1.0)](/docs/guides/device/updating-the-os/device-flashing-guide#download-the-latest-os-build)
