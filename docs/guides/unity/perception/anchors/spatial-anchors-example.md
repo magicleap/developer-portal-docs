@@ -1,6 +1,6 @@
 ---
 id: spatial-anchors-example
-title: Spatial Anchors Example
+title: Spatial Anchors Examples
 description: Contains code that can be used as a reference or demo Magic Leap 2's Spatial Anchors functionality.
 sidebar_position: 4
 date: 2/24/2022
@@ -10,7 +10,7 @@ keywords: [Unity, Perception, Anchors, Persistence]
 
 This section contains code that can be used to demo Magic Leap 2's Spatial Anchors functionality. It can also be used as a reference when creating Applications that take advantage of the Anchors API.
 
-## Anchor Visualizer Example
+## Spatial Anchor Visualizer Minimal Example
 
 This example script allows users that are localized into a map to do the following:
 
@@ -156,3 +156,7 @@ public class AnchorExampleScript : MonoBehaviour
 #endif
 }
 ```
+
+## Spatial Anchors Full Example Project
+
+<https://github.com/magicleap/SpatialAnchorsExample>
