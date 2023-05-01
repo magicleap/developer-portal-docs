@@ -33,27 +33,3 @@ source $USER/MagicLeap/tools/zi/<latest-app-sim-version>/mlvdsetup.sh
 For more information on tools in The ML Hub, see the following pages:
 
 <DocCardList items={useCurrentSidebarCategory().items}/>
-
-Install packages from the ML Hub using the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md), where you can install package bundles, individual packages, or specific versions of packages.
-
-![Hub package bundles](/img/ml-hub/ml_hub_package_bundles.png)
-
-Launch tools from the Activities Home, such as [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge.md), [Application Simulator](/docs/guides/developer-tools/app-sim/using-app-sim.md), or [Device Stream](/docs/guides/developer-tools/ml-hub/ml-hub-device-stream.md).
-
-![RGP Overview Panel](/img/ml-hub/ml_hub.png)
-
-:::tip
-Customize Activities Home by dragging Activity cards to different spots.
-:::
-
-Use the Activity sidebar to revisit previously used tools, open the ML C SDK folder, or launch a terminal window configured for use with ML SDK tools.
-
-![ML Hub Sidebar](/img/ml-hub/ml_hub_sidebar.png)
-
-In the Status bar, open the Notifications Tray for updates, errors, and a link to the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md).
-
-![Notification tray](/img/ml-hub/notification_tray.png)
-
-Open the Device Tray to view connect devices, launch device bridge, and to perform common actions to a connected device.
-
-![Visual overview of the device tray with the device expanded. General information about the device and connected network is available and common device commands.](/img/ml-hub/device_bridge.png)
