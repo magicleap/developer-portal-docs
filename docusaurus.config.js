@@ -106,10 +106,6 @@ module.exports = {
           //   from: '/docs/guides/getting-started',
           // },
           {
-            from: '/docs/guides/remote-rendering/remote-rendering-service',
-            to: '/docs/guides/remote-rendering/remote-render'
-          },
-          {
             from: '/docs/guides/unity/getting-started/set-up-development-environment',
             to: '/docs/guides/unity/getting-started/unity-getting-started'
           },
@@ -210,6 +206,11 @@ module.exports = {
             from: '/docs/guides/features/media/fov',
             to: '/docs/guides/device/fov'
           },
+          // Remote Render
+          {
+            from: '/docs/guides/remote-rendering/remote-rendering-service',
+            to: '/docs/guides/remote-render/remote-render'
+          }
         ],
         
         createRedirects(existingPath) {
