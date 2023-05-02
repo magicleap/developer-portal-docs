@@ -7,9 +7,9 @@ engine: All
 tags: [Application Simulator]
 keywords: [Application Simulator]
 ---
-import ReactPlayer from 'react-player'
+import YouTube from 'react-youtube';
 
-<ReactPlayer controls url='/videos/AppSimOverview_V2_2.mp4' />  
+<YouTube videoId="2eXB3uF71OA" />
 
 <br/>
 The Application Simulator tool in the ML Hub lets you iterate and test code changes without having to build and deploy the app to a device. Incorporating Application Simulator into your workflow can result in significantly faster development cycles.
