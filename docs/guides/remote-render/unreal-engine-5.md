@@ -5,8 +5,8 @@ sidebar_label: Unreal Engine 5
 sidebar_position: 2
 description: Remote Render with Unreal Engine 5.
 date: 05/01/2023
-tags: [Rendering, Servers, Unreal, UE, Windrunner]
-keywords: [Rendering, Servers, Unreal, UE, Windrunner]
+tags: [Rendering, Servers, Unreal, UE, Remote Render]
+keywords: [Rendering, Servers, Unreal, UE, Remote Render]
 ---
 
 :::caution Performance and Gotchas
@@ -26,7 +26,7 @@ Some users have reported that their Remote Render application in Unreal Engine h
 ![Project Browser](/img/unreal-5/project-browser.png)
 
 :::info
-It is recommended to start the Windrunner service ahead of time. But, if it’s not running yet, the Windrunner service will be started automatically.
+It is recommended to start the Remote Render service ahead of time. But, if it’s not running yet, the Remote Render service will be started automatically.
 :::
 
 1. Enable **OpenXR**
