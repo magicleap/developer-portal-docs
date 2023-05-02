@@ -2,7 +2,7 @@
 id: virtual-keyboard
 title: 3D Virtual Keyboard
 description: An overview and walkthrough guide for using the 3D Virtual Keyboard prefab.
-sidebar_position: 2
+sidebar_position: 1
 date: 04/20/2022
 keywords: [Unity, Samples, Input, Keyboard]
 tags: [Unity, Samples, Input, Keyboard]
