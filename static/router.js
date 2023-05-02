@@ -4,8 +4,8 @@ const EAP_DOMAIN = '*';
 // If not an iframe (AKA window.self === window.top) then force a redirect to
 // the parent website
 const isDirectDocsNavigation = window.self === window.top;
-console.log(window.self);
-console.log(window.top);
+// console.log(window.self);
+// console.log(window.top);
 if (isDirectDocsNavigation === true && window.location.hostname === "developer.magicleap.cloud") {
   const query = `?docPath=${encodeURIComponent(window.location.pathname)}`;
   const redirection = `${window.location.origin}${query}`;
