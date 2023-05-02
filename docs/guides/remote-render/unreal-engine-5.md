@@ -12,7 +12,7 @@ keywords: [Rendering, Servers, Unreal, UE, Remote Render]
 :::caution Performance and Gotchas
 Performance for remote rendering is highly-dependent on the capabilities of the host machine that is running Unreal Engine. Noticeable lag may be a result of insufficient processing or GPU power.
 
-Some users have reported that their Remote Render application in Unreal Engine has reversed input between their **Bumper** and **Trigger** on their Magic Leap 2 **Controller**.
+In the future, an official plugin will provide more accurate mappings for Controller input.
 :::
 
 ## Prerequisite
