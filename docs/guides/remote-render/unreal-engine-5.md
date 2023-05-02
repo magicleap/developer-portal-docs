@@ -60,13 +60,13 @@ Vulkan is the main supported graphics API for Magic Remote Rendering. Support fo
 
 ### Alpha Channel in Unreal Engine 5
 
-Magic Leap's remote rendering now supports alpha channels, which provides the user with segmented dimming and higher quality capture.
+Magic Leap's Remote Render now supports alpha channels, which provides the user with segmented dimming and higher quality capture.
 
 In order to take advantage of this feature in Unreal Engine OpenXR applications, you must first enable and control the output of the alpha channel.
 
 First, you must prepare the application by allowing the engine to output alpha for postprocessing in the first place.
 
-Go to **Project Settings** -> **Rendering** -> **Postprocessing** and set `Enable alpha channel support in post processing` to `Allow through tonemapper`.
+Go to **Project Settings** -> **Rendering** -> **Postprocessing** and set **Enable alpha channel support in post processing** to `Allow through tonemapper`.
 
 ![Enable Alpha Channel in Post-Processing](/img/unreal-5/alpha-channel/enable-alpha-channel-post-processing.png)
 
