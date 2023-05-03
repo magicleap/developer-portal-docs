@@ -7,8 +7,6 @@ date: 04/19/2023
 
 ## SDK Delivered via The Magic Leap Hub
 
-This Package Supports Magic Leap Unity SDK Version 1.3.0 as well.
-
 - Magic Leap SDK Version 1.2.0
 - Magic Leap Unity SDK Version 1.6.0
 - Unity® Version: 2022.2 (custom)
