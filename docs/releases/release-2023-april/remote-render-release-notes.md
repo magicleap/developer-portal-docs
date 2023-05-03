@@ -1,5 +1,5 @@
 ---
-title: Magic Leap Remote Rendering Preview
+title: Magic Leap Remote Render Preview
 sidebar_position: 7
 date: 04/24/2023
 ---
