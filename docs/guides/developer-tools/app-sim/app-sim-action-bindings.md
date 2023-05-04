@@ -79,7 +79,7 @@ The **Action Bindings** window lets you view and change which input is mapped to
 
 Click the **Application Simulator** dropdown menu on the top left corner of the window. Click **Edit Action Bindings**.
 
-![Location of the Application Simulator Action Bindings](/img/app-sim/edit-bindings-dropdown.png)
+<img src="/img/app-sim/edit-bindings-dropdown.jpg" width="250px"  />
 
 Then the Action Bindings window (namely the Action Binding Editor) appears, which shows current action bindings and lets you edit them.
 
