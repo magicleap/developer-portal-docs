@@ -1,23 +1,23 @@
 ---
 id: remote-render-unreal-engine-5
-title: Remote Render with Unreal Engine 5
+title: Remote Rendering with Unreal Engine 5
 sidebar_label: Unreal Engine 5
 sidebar_position: 2
-description: Remote Render with Unreal Engine 5.
+description: Remote Rendering with Unreal Engine 5.
 date: 05/01/2023
 tags: [Rendering, Servers, Unreal, UE, Remote Render]
 keywords: [Rendering, Servers, Unreal, UE, Remote Render]
 ---
 
 :::caution Performance and Gotchas
-Performance for remote rendering is highly-dependent on the capabilities of the host machine that is running Unreal Engine. Noticeable lag may be a result of insufficient processing or GPU power.
+Performance for Remote Rendering is highly-dependent on the capabilities of the host machine that is running Unreal Engine. Noticeable lag may be a result of insufficient processing or GPU power.
 
 In the future, an official plugin will provide more accurate mappings for Controller input.
 :::
 
 ## Prerequisite
 
-[Remote Render Setup Instructions with the Remote Render Service](/docs/guides/remote-render/remote-render).
+[Remote Rendering Setup Instructions with the Remote Rendering Service](/docs/guides/remote-render/remote-render).
 
 ## Setup
 
@@ -26,7 +26,7 @@ In the future, an official plugin will provide more accurate mappings for Contro
 ![Project Browser](/img/unreal-5/project-browser.png)
 
 :::info
-It is recommended to start the Remote Render service ahead of time. But, if it’s not running yet, the Remote Render service will be started automatically.
+It is recommended to start the Remote Rendering service ahead of time. But, if it’s not running yet, the Remote Rendering service will be started automatically.
 :::
 
 1. Enable **OpenXR**
@@ -60,7 +60,7 @@ Vulkan is the main supported graphics API for Magic Remote Rendering. Support fo
 
 ### Alpha Channel in Unreal Engine 5
 
-Magic Leap's Remote Render now supports alpha channels, which provides the user with segmented dimming and higher quality capture.
+Magic Leap's Remote Rendering now supports alpha channels, which provides the user with segmented dimming and higher quality capture.
 
 In order to take advantage of this feature in Unreal Engine OpenXR applications, you must first enable and control the output of the alpha channel.
 
@@ -72,7 +72,7 @@ Go to **Project Settings** -> **Rendering** -> **Postprocessing** and set **Enab
 
 The alpha channel as exposed by Unreal Engine will not be enough for alpha blend layers in OpenXR, this is entirely due to the fact that the alpha output is inverted.
 
-In order to correct this you will have to create a post-processing material that inverts the value of the alpha channel before it's submitted to the Remote Renderer.
+In order to correct this you will have to create a post-processing material that inverts the value of the alpha channel before it's submitted to the Remote Rendering service.
 
 Go to **Window** and enable the **Content Browser**. From the **Content Browser**, add a new material in the desired directory.
 
