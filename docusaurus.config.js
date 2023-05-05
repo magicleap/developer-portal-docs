@@ -209,7 +209,7 @@ module.exports = {
           // Remote Render
           {
             from: '/docs/guides/remote-rendering/remote-rendering-service',
-            to: '/docs/guides/remote-render/remote-render'
+            to: '/docs/guides/remote-rendering/remote-rendering'
           }
         ],
         
