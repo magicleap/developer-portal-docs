@@ -43,7 +43,7 @@ If you’re using the Virtual Reality template in Step 1, this step will not be 
 
 ![Project Settings VR](/img/unreal-5/preoject-settings-vr.png)
 
-1. Set the **RHI** to `Vulkan`
+2. Set the **RHI** to `Vulkan`
 
 Under **Edit** -> **Project Settings**:
 
@@ -52,14 +52,61 @@ Under **Edit** -> **Project Settings**:
 
 ![Project Settings Platform Windows RHI](/img/unreal-5/project-settings-platform-windows.png)
 
-1. Click <kbd>Restart Now</kbd>
+3. Click <kbd>Restart Now</kbd>
 
 :::note
 Vulkan is the main supported graphics API for Magic Remote Rendering. Support for DirectX 11 and DirectX 12 are considered as experimental.
 :::
 
+### Alpha Channel in Unreal Engine 5
+
+Magic Leap's Remote Render now supports alpha channels, which provides the user with segmented dimming and higher quality capture.
+
+In order to take advantage of this feature in Unreal Engine OpenXR applications, you must first enable and control the output of the alpha channel.
+
+First, you must prepare the application by allowing the engine to output alpha for postprocessing in the first place.
+
+Go to **Project Settings** -> **Rendering** -> **Postprocessing** and set **Enable alpha channel support in post processing** to `Allow through tonemapper`.
+
+![Enable Alpha Channel in Post-Processing](/img/unreal-5/alpha-channel/enable-alpha-channel-post-processing.png)
+
+The alpha channel as exposed by Unreal Engine will not be enough for alpha blend layers in OpenXR, this is entirely due to the fact that the alpha output is inverted.
+
+In order to correct this you will have to create a post-processing material that inverts the value of the alpha channel before it's submitted to the Remote Renderer.
+
+Go to **Window** and enable the **Content Browser**. From the **Content Browser**, add a new material in the desired directory.
+
+![Content Browser New Material](/img/unreal-5/alpha-channel/content-browser-new-material.png)
+
+The newly-created material must first be set up as a post-processing material with alpha support.
+
+In the **Content Browser**, open the **Material Editor** by right-clicking on the material and selecting **Edit**.
+
+Select the material in the **Material Graph** and under **Material** category set **Material Domain** to `Post Process`, then under the **Post Process Material** category enable `Output Alpha`.
+
+![Material Graph Post-Process Material](/img/unreal-5/alpha-channel/material-graph-post-process-material.png)
+![Material Graph Post-Process Material Output Alpha](/img/unreal-5/alpha-channel/material-graph-output-alpha.png)
+
+Now you may proceed to creating the material, in this example alpha is being inverted directly from the post-processing input.
+
+Add a new **SceneTexture** node and set **Scene Texture Id** to `PostProcessInput0`. This will be the main color input the material that will be worked on.
+
+![Material Graph Scene Texture Node](/img/unreal-5/alpha-channel/material-graph-new-scene-texture.png)
+
+The RGB channels will not be changing at all, so connect **SceneTexture.PostProcessInput0:Color** output to your material's **Emissive Color** input.
+
+Add a **ComponentMask** node and a **OneMinus** node, then pipeline **SceneTexture.PostProcessInput0:Color** output through the **ComponentMask** node (set to `Alpha` only), then the **OneMinus** node, and finally into the material's **Opacity** input.
+
+![Material Graph OneMinus](/img/unreal-5/alpha-channel/material-graph-component-mask-one-minus.png)
+
+Add a **PostProcessVolume** actor in your level, enable `Infinite Extent (Unbound)` under its Post **Process Volume Settings** properties and add your material to **Post Process Materials** under **Rendering Features**.
+
+![Level Post-Process Volume](/img/unreal-5/alpha-channel/level-post-process-volume.png)
+![Post-Process Volume Infinite Extent](/img/unreal-5/alpha-channel/post-process-volume-infinite-extent.png)
+![Level Post-Process Volume 2](/img/unreal-5/alpha-channel/material-graph-post-process-material-2.png)
+
 ## VR Preview
 
-Once the editor has been restarted and shader compilation finishes, simply click `VR Preview`.
+Once the editor has been restarted and shader compilation finishes, simply click <kbd>**VR Preview**</kbd>.
 
 ![VR Preview](/img/unreal-5/editor-vr-preview.png)
