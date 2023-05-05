@@ -78,7 +78,7 @@ Go to **Window** and enable the **Content Browser**. From the **Content Browser*
 
 ![Content Browser New Material](/img/unreal-5/alpha-channel/content-browser-new-material.png)
 
-The newly-created material must first be setup as a post-processing material with alpha support.
+The newly-created material must first be set up as a post-processing material with alpha support.
 
 In the **Content Browser**, open the **Material Editor** by right-clicking on the material and selecting **Edit**.
 
@@ -103,6 +103,7 @@ Add a **PostProcessVolume** actor in your level, enable `Infinite Extent (Unboun
 
 ![Level Post-Process Volume](/img/unreal-5/alpha-channel/level-post-process-volume.png)
 ![Post-Process Volume Infinite Extent](/img/unreal-5/alpha-channel/post-process-volume-infinite-extent.png)
+![Level Post-Process Volume 2](/img/unreal-5/alpha-channel/material-graph-post-process-material-2.png)
 
 ## VR Preview
 
