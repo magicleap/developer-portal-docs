@@ -1,12 +1,12 @@
 ---
-id: remote-render-nvidia-omniverse
-title: Remote Render with Nvidia Omniverse
+id: remote-rendering-nvidia-omniverse
+title: Remote Rendering with Nvidia Omniverse
 sidebar_label: Nvidia Omniverse
 sidebar_position: 2
-description: Remote Render with Nvidia Omniverse.
+description: Remote Rendering with Nvidia Omniverse.
 date: 05/04/2023
-tags: [Rendering, Servers, Omniverse, Remote Render]
-keywords: [Rendering, Servers, Omniverse, Remote Render]
+tags: [Rendering, Servers, Omniverse, Remote Rendering]
+keywords: [Rendering, Servers, Omniverse, Remote Rendering]
 ---
 
 ![Omniverse](/img/omniverse/car.webp)
@@ -14,17 +14,17 @@ keywords: [Rendering, Servers, Omniverse, Remote Render]
 :::caution Performance and Gotchas
 Performance for remote rendering is highly-dependent on the capabilities of the host machine that is running Nvidia Omniverse. Noticeable lag may be a result of insufficient processing or GPU power.
 
-This is an early access version of Nvidia's Omniverse tool for Magic Leap 2 users. Future releases will be made available by Nvidia directly via the Omniverse Launcher.
+This is an early access version of Nvidia's Omniverse tool for Magic Leap 2 users, based on Create XR. Future releases will be made available by Nvidia directly via the Omniverse Launcher.
 :::
 
-## Prerequisite
+# Prerequisites
 
-[Remote Render Setup Instructions with the Remote Render Service](/docs/guides/remote-render/remote-render).
+[Remote Rendering Setup Instructions with the Remote Rendering Service](/docs/guides/remote-render/remote-render).
 
 
 ## Setup
 :::info
-It is necessary for the Remote Render service to be active before launching Omniverse.
+It is necessary for the Remote Rendering service to be active before launching Omniverse!
 :::
 
 1. Download [Omniverse Create XR Magic Leap Early Access](https://ml2-developer.magicleap.com/downloads).
@@ -39,13 +39,28 @@ It is necessary for the Remote Render service to be active before launching Omni
 ## Usage
 1. Click the **RunOmniverseML.bat** file
 1. Open an existing USD file using File/Open.. or create a new one.
-1. Click on the **"Start Magic Leap"** button in Omniverse. At this point Omniverse will render a stereoscopic image on your PC and it is being displayed on in the Remote Render app on your Magic Leap 2 device.
+1. Click on the **"Start Magic Leap"** button in Omniverse. At this point Omniverse will render a stereoscopic image on your PC and it is being displayed on in the Remote Rendering app on your Magic Leap 2 device.
 
 Press the Menu / Settings button on your controller to see a settings panel and to enable tool tips:
 ![Controller](/img/omniverse/controller.png)
+
+For more information please see the official documentation of [Nvidia Omniverse Create XR](
+https://www.nvidia.com/en-us/omniverse/apps/xr/)
 
 
 ## Known Issues
 * After clicking "Stop Magic Leap" you might see the window turn black or red. Unfortunately there is currently no solution for this issue - please restart the app.
 
 * Multi-GPU systems are not supported. If you have more than one GPU, you need to disable one of them in Device Manager.
+
+## Demo content
+The above download contains just the core application. We also have additional demo downloads available. Those contain the same core application but come bundled with example content and example scripts. This makes them a great tool for learning how to create customized Omniverse plugins for your business use case.
+
+# Cardemo
+ The [Cardemo](https://ml2-developer.magicleap.com/downloads) contains a highly detailed car model and demonstrates basic interaction features. 
+ * Click **RunDemo.bat**
+ * Once Omniverse is set up (see above), select **Windows/Magic Leap Car Demo**
+ * Press the **Load Content** button and then **Start Magic Leap**
+ * You will see a sports car and a selection panel beneath it. 
+    * Click on the color swatches to change the car's paint and wheels. 
+    * Click on the driver side door to open it and turn on additional lights
