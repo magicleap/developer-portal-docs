@@ -23,16 +23,6 @@ This is an early access version of Nvidia's Omniverse tool for Magic Leap 2 user
 
 ### System Requirements
 
-|               |  Minimum   |               Recommended               |
-| :------------ | :--------: | :-------------------------------------: |
-| CPU  (Intel)  |     i7     |                   i7                    |
-| CPU (AMD)     |   Ryzen    |                  Ryzen                  |
-| CPU (cores)   |     4      |                    8                    |
-| RAM           |    16GB    |                  32GB                   |
-| GPU    (VRAM) |    6GB     |                  24GB                   |
-| GPU           | RTX Series | 2 GeForce RTX 3090, 2 GeForce RTX A6000 |
-| Storage       | 512GB SSD  |              512GB M.2 SSD              |
-
 ## Setup
 
 :::caution
@@ -67,16 +57,15 @@ For more information, please see the official documentation of [Nvidia Omniverse
 ## Known Issues
 
 - After clicking "Stop Magic Leap" you might see the window turn black or red. Unfortunately there is currently no solution for this issue - please restart the app.
-
 - Multi-GPU systems are not supported. If you have more than one GPU, you need to disable one of them in Device Manager.
 
 ## Demo content
 
 The above download contains just the core application. We also have additional demo downloads available. Those contain the same core application but come bundled with example content and example scripts. This makes them a great tool for learning how to create customized Omniverse plugins for your business use case.
 
-# Cardemo
+### Car Demo
 
-The [Cardemo](https://ml2-developer.magicleap.com/downloads) contains a highly detailed car model and demonstrates basic interaction features. 
+The [Car Demo](https://ml2-developer.magicleap.com/downloads) contains a highly detailed car model and demonstrates basic interaction features.
 
 - Click **RunDemo.bat**
 - Once Omniverse is set up (see above), select **Windows/Magic Leap Car Demo**
