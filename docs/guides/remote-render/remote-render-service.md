@@ -21,17 +21,17 @@ Magic Leap Remote Render is a first-party tool, created by Magic Leap, designed 
 
 ## System Requirements
 
-|                   |        Minimum         |          Recommended          |
-| :---------------- | :--------------------: | :---------------------------: |
-| OS                |      Windows 10+       |          Windows 10+          |
-| CPU               |  Intel i7 / AMD Ryzen  |     Intel i7 / AMD Ryzen      |
-| CPU Cores         |           4            |               8               |
-| RAM               |          16GB          |             32GB              |
-| VRAM              |          6GB           |              24               |
-| Storage           |         512GB          |             512GB             |
-| GPU               |      Any RTX Card      | 2x GeForce RTX 3090 or higher |
-| Nvidia driver     | version 495 or later\* |    version 495 or later\*     |
-| Bandwidth         |    100Mbps WiFi 5      |          500+Mbps Wifi 6          |
+|               |        Minimum         |          Recommended          |
+| :------------ | :--------------------: | :---------------------------: |
+| OS            |      Windows 10+       |          Windows 10+          |
+| CPU           |  Intel i7 / AMD Ryzen  |     Intel i7 / AMD Ryzen      |
+| CPU Cores     |           4            |               8               |
+| RAM           |          16GB          |             32GB              |
+| VRAM          |          6GB           |             24GB              |
+| Storage       |         512GB          |             512GB             |
+| GPU           |      Any RTX Card      | 2x GeForce RTX 3090 or higher |
+| Nvidia driver | version 495 or later\* |    version 495 or later\*     |
+| Bandwidth     |     100Mbps WiFi 5     |        500+Mbps Wifi 6        |
 
 :::note \* Run `nvidia-smi.exe` in a command prompt to get the Nvidia Driver Version.
 :::
