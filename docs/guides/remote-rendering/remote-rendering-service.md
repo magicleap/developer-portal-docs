@@ -1,8 +1,8 @@
 ---
-id: remote-render
-title: Remote Render
-sidebar_label: Remote Render Getting Started
-sidebar_position: 1
+id: remote-rendering
+title: Remote Rendering
+sidebar_label: Remote Rendering Getting Started
+sidebar_position: 2
 date: 03/13/2023
 tags: [Render, Servers, Remote]
 keywords: [Render, Servers, Remote]
@@ -40,9 +40,9 @@ Magic Leap Remote Render is a first-party tool, created by Magic Leap, designed 
 
 ### Installing Magic Leap Remote Rendering
 
-1. Download the Magic Leap Remote Render package from the Package Manager within the Magic Leap Hub.
+1. Download the Magic Leap Remote Rendering package from the Package Manager within the Magic Leap Hub.
 2. Enable Wifi Bridge in the “Device Bridge”
-3. After installing **Magic Leap Remote Render**, the Hub will automatically update to display a Remote Render
+3. After installing **Magic Leap Remote Rendering**, the Hub will automatically update to display a Remote Rendering
 tile on the home screen. (If you don't see Remote Rendering at first, restart The Hub.)
 4. Click **Launch** on the Remote Rendering (Preview) tile from the Magic Leap Hub home screen.
 
@@ -54,7 +54,7 @@ tile on the home screen. (If you don't see Remote Rendering at first, restart Th
 
 6. Click the **Start Remote Render** button.
 
-![Start Remote Render Button](/img/remote-rendering/remote-rendering-ml-hub-button.png)
+![Start Remote Rendering Button](/img/remote-rendering/remote-rendering-ml-hub-button.png)
 
 7. Put on the Magic Leap 2
 8. Launch the **Remote Viewer** application
@@ -63,4 +63,4 @@ tile on the home screen. (If you don't see Remote Rendering at first, restart Th
 
 ## Prevent feedback noise when combined with Device Streaming
 
-The Remote Render functionality can be used in combination with Device Stream to preview and save what the user sees, however this may cause some audio feedback noise because the audio produced on the host is sent to the device and then back to the host by Device Stream. **To prevent audio loopback noise,** lower the volume of the Device Stream live preview before starting Remote Render.
+The Remote Rendering functionality can be used in combination with Device Stream to preview and save what the user sees, however this may cause some audio feedback noise because the audio produced on the host is sent to the device and then back to the host by Device Stream. **To prevent audio loopback noise,** lower the volume of the Device Stream live preview before starting Remote Rendering.
