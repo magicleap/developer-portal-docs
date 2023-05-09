@@ -7,6 +7,10 @@ tags: [Application Simulator, Unity]
 keywords: [Application Simulator, Unity]
 ---
 
+:::tip Disambiguation and Performance Explanation
+The **App Sim** (short for "**Application Simulator**) **for Unity** is an offering that is separate, but related to the App Sim. Previously, it was recommended to use the App Sim (through the Magic Leap Hub), but due to performance and compatibility reasons, it is now recommended following the steps outlined on this page and not using the pattern involving strating the App Sim in the ML Hub, switching to Unity, and clicking Play.
+:::
+
 Application Simulator can now be used from within Unity as a native plugin without having to open ML Hub. This is enabled using the Magic Leap Application Simulator for Unity package. Note: this package still requires that both the ML Hub and Application Simulator Runtime are installed.
 
 ## Prerequisites
@@ -36,7 +40,7 @@ After installing the package, search for it in the **Package Manager**, and clic
 
 ![Install Package from Tarball through Unity's Package Manager](/img/app-sim/asu/st-pac01.png)
 
-1. Navigate to where the package is located, and open the `com.magicleap.appsim.tgz` file.
+2. Navigate to where the package is located, and open the `com.magicleap.appsim.tgz` file.
 
 ![Locate the Application Simulator for Unity Package](/img/app-sim/package_location.png)
 
@@ -45,28 +49,32 @@ After installing the package, search for it in the **Package Manager**, and clic
 ![The Application Simulator for Unity package is now visible](/img/app-sim/app_sim_unity_package_window.png)
 
 :::caution
-Make sure you select **Install package from Tarball, as otherwise, you will fail to find the package.
+Make sure you select **Install package from Tarball**, as otherwise, you will fail to find the package.
 :::
 
 ## Running Application Simulator for Unity
 
 A new **Magic Leap** menu will now appear under Unity's **Windows** tab. If you do not see it, restart the Unity editor.
 
-1. Go to **Windows > Magic Leap App Simulator > App Sim Target**.
+1. Go to **Windows > Magic Leap App Simulator > Load Default Layout**.
 
-![Loading the Application Simulator Target tab](/img/app-sim/app_sim_unity_menu.png)
+<img src="/img/app-sim/app-sim-load-default-layout.png" width="300px" />
 
-2. The **Target Selector** panel will now appear, which works the same way it does in the **ML Hub**'s Application Simulator. You can now select your target.
+2. The **Target Selector** panel will now appear in the upper-left portion of your Unity editor. You can now select your Target.
 
 ![Application Simulator Target Tab - Target Selection](/img/app-sim/asu/st-tar02.png)
 
-3. Click on the **Play** button, and start a new Application Simulator Session.
+3. Click on the **Play** button next to your Target.
 
-Once a new session has been started, you should now be able to use the Application Simulator from within the **Unity Editor** with the same workflow as if **Application Simulator** was started from the **ML Hub**.
+:::caution Play Buttons Explanation
+With the App Sim for Unity, there are now two identical-in-appearance "Play" buttons. One is for selecting your Target and the other for playing your Scene.
 
-:::note
-Application Simulator in the **ML Hub** and **Unity** can run simultaneously, but this workflow is not recommended.
+![App Sim for Unity Play Buttons](/img/app-sim/app-sim-play-buttons.png)
 :::
+
+4. Click on the **Play** button in the top-center of the Unity editor window.
+
+Once a new session has been started, you should now be able to use the Application Simulator from within the Unity editor.
 
 ### Arranging the Workspace
 
