@@ -13,6 +13,10 @@ The **App Sim** (short for "**Application Simulator**) **for Unity** is an offer
 
 Application Simulator can now be used from within Unity as a native plugin without having to open ML Hub. This is enabled using the Magic Leap Application Simulator for Unity package. Note: this package still requires that both the ML Hub and Application Simulator Runtime are installed.
 
+## System Requirements
+
+[System Requirements for the App Sim](/docs/guides/developer-tools/app-sim/app-sim-setup#system-requirements)
+
 ## Prerequisites
 
 - Installed the [ML Hub](/docs/guides/getting-started/install-the-tools.md).
