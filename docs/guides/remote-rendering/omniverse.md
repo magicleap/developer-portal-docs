@@ -11,7 +11,7 @@ keywords: [Rendering, Servers, Omniverse, Remote Rendering]
 
 ![Omniverse](/img/omniverse/car.webp)
 
-:::caution Performance and Gotchas
+:::caution Performance Considerations
 Performance for remote rendering is highly-dependent on the capabilities of the host machine that is running Nvidia Omniverse. Noticeable lag may be a result of insufficient processing or GPU power.
 
 This is an early access version of Nvidia's Omniverse tool for Magic Leap 2 users, based on Create XR. Future releases will be made available by Nvidia directly via the Omniverse Launcher.
@@ -20,8 +20,6 @@ This is an early access version of Nvidia's Omniverse tool for Magic Leap 2 user
 ## Prerequisites
 
 [Remote Rendering Setup Instructions with the Remote Rendering Service](/docs/guides/remote-render/remote-render).
-
-### System Requirements
 
 ## Setup
 

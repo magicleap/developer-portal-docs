@@ -9,7 +9,7 @@ tags: [Rendering, Servers, Unreal, UE, Remote Render]
 keywords: [Rendering, Servers, Unreal, UE, Remote Render]
 ---
 
-:::caution Performance and Gotchas
+:::caution Performance Considerations
 Performance for Remote Rendering is highly-dependent on the capabilities of the host machine that is running Unreal Engine. Noticeable lag may be a result of insufficient processing or GPU power.
 
 In the future, an official plugin will provide more accurate mappings for Controller input.
