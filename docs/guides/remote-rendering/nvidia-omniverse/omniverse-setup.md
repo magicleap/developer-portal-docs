@@ -1,8 +1,8 @@
 ---
-id: remote-rendering-nvidia-omniverse
+id: omniverse-setup
 title: Remote Rendering with Nvidia Omniverse
-sidebar_label: Nvidia Omniverse
-sidebar_position: 3
+sidebar_label: Nvidia Omniverse Setup
+sidebar_position: 1
 description: Remote Rendering with Nvidia Omniverse.
 date: 05/04/2023
 tags: [Rendering, Servers, Omniverse, Remote Rendering]
