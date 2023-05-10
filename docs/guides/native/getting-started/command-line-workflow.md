@@ -78,7 +78,7 @@ The `JAVA_HOME` value may be different, verify its location by running
 - All build.py scripts by default build both release and debug apps. If you only wish to build debug apps use `--config debug`. If you wish to build release apps `--config release`.
 - Make sure that that `app_framework` and apps are built for the same config (debug vs release).
 
-Python build scripts are available for the C-API samples as well as the application framework upon which they are built. To run a full clean build using any of the build scripts you can use the following command-
+Python build scripts are available for the C-API samples as well as the application framework upon which they are built. To run a full clean build using any of the build scripts you can use the following command:
 
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
