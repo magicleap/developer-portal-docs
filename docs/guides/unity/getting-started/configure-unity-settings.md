@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 ## Prerequisites
 
 - [Download Magic Leap Unity SDK](/docs/guides/unity/getting-started/install-the-tools.md)
-- [Unity project using Editor version 2022.2.0b7 or higher](/docs/guides/unity/getting-started/create-a-project.md)
+- [Unity project using Editor versions in the range of **2022.2.x**](/docs/guides/unity/getting-started/create-a-project.md)
 
 ## Quickstart
 
