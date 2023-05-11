@@ -76,7 +76,7 @@ If an issue occurs with the Remote Rendering service, logs will be requested for
 <Tabs groupId="operating-systems">
   <TabItem value="windows" label="Windows">
 
-```ps
+```powershell
 powershell.exe -ExecutionPolicy Bypass -File "C:\Program Files\Magic Leap Remote Rendering\DebuggerScript.ps1"
 ```
 
