@@ -55,13 +55,13 @@ To download the Unity Magic Leap Examples Project from the bundle section:
 
 ## Install Unity Editor
 
-This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor **version 2022.2.0b7 or higher**.
+This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor in the range of **2022.2.x**.
 
 1. Open the Unity Hub application
 2. Select the Installs
 3. Then click the Install Editor button.
 4. With the Install Unity Editor window open, navigate to the Pre-releases section
-5. Select a Unity Editor that is version 2022.2.0b7 or higher
+5. Select a Unity Editor that is in the range of **2022.2.x**
 6. In the modules screen select  **Android Build Support**, then **Android SDK & NDK Tools**, and **OpenJDK**.
 7. Select the **Continue** button.
 

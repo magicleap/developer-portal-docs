@@ -12,7 +12,7 @@ This section describes how to download and configure the Magic Leap Unity Exampl
 ## Prerequisites
 
 - Installed the [ML Hub](/docs/guides/getting-started/install-the-tools.md)
-- [Unity Editor version 2022.2.0b7 or higher](/docs/guides/unity/getting-started/install-the-tools.md#install-unity-editor)
+- [Unity Editor in the range of **2022.2.x**](/docs/guides/unity/getting-started/install-the-tools.md#install-unity-editor)
 
 ## Downloading the Examples
 
