@@ -9,6 +9,7 @@ keywords: [Rendering, Servers, Unreal, UE, Remote]
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import RemoteRenderingDisambiguation from './_remote-rendering-disambiguation.md';
 
 :::caution
 **Currently, Remote Rendering can only be performed using Windows.**
@@ -20,6 +21,8 @@ compression, or decimation.
 
 Using Remote Rendering allows smooth integration with existing 3D workflows and applications
 such as Unreal Engine, Omniverse, and more.
+
+<RemoteRenderingDisambiguation />
 
 ## Resources
 

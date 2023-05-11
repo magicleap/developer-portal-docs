@@ -8,8 +8,8 @@ tags: [Render, Servers, Remote]
 keywords: [Render, Servers, Remote]
 ---
 
-import DocCardList from '@theme/DocCardList';
-import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import RemoteRenderingDisambiguation from './_remote-rendering-disambiguation.md';
+import RemoteViewerDisambiguation from './_remote-viewer-disambiguation.md';
 
 Magic Leap Remote Render is a first-party tool, created by Magic Leap, designed to allow for rendering content onto a Magic Leap 2 device from a more-powerful, non-mobile Windows computer.
 
@@ -40,6 +40,8 @@ Magic Leap Remote Render is a first-party tool, created by Magic Leap, designed 
 
 ### Installing Magic Leap Remote Rendering
 
+<RemoteRenderingDisambiguation />
+
 1. Download the Magic Leap Remote Rendering package from the Package Manager within the Magic Leap Hub.
 2. Enable Wifi Bridge in the “Device Bridge”
 3. After installing **Magic Leap Remote Rendering**, the Hub will automatically update to display a Remote Rendering
@@ -48,7 +50,7 @@ tile on the home screen. (If you don't see Remote Rendering at first, restart Th
 
 ![Remote Rendering Tile](/img/remote-rendering/remote-rendering-ml-hub-tile.png)
 
-5. A prompt will ask to install the Client APK. Click "Yes, Install."
+5. A prompt will ask to install the Client APK for Remote Viewer. Click "Yes, Install."
 
 ![Install Client APK](/img/remote-rendering/client-apk.png)
 
@@ -58,7 +60,10 @@ tile on the home screen. (If you don't see Remote Rendering at first, restart Th
 
 7. Put on the Magic Leap 2
 8. Launch the **Remote Viewer** application
-9. Make sure that the top dialogue box indicates that the device is connected to the host
+
+<RemoteViewerDisambiguation />
+
+9.  Make sure that the top dialogue box indicates that the device is connected to the host
    computer.
 
 ## Prevent feedback noise when combined with Device Streaming
