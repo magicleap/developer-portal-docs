@@ -1,7 +1,7 @@
 ---
 id: remote-rendering
 title: Remote Rendering
-sidebar_label: Remote Rendering Getting Started
+sidebar_label: Remote Rendering Service
 sidebar_position: 2
 date: 03/13/2023
 tags: [Render, Servers, Remote]
@@ -10,8 +10,10 @@ keywords: [Render, Servers, Remote]
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Magic Leap Remote Render is a first-party tool, created by Magic Leap, designed to allow for rendering content onto a Magic Leap 2 device from a more-powerful, non-mobile Windows computer.
+Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, designed to allow for rendering content onto a Magic Leap 2 device from a more-powerful, non-mobile Windows computer.
 
 ## Prerequisites
 - **Enterprise** or **Developer Pro license**
@@ -64,3 +66,23 @@ tile on the home screen. (If you don't see Remote Rendering at first, restart Th
 ## Prevent feedback noise when combined with Device Streaming
 
 The Remote Rendering functionality can be used in combination with Device Stream to preview and save what the user sees, however this may cause some audio feedback noise because the audio produced on the host is sent to the device and then back to the host by Device Stream. **To prevent audio loopback noise,** lower the volume of the Device Stream live preview before starting Remote Rendering.
+
+## Troubleshooting
+
+### Debug Logs
+
+If an issue occurs with the Remote Rendering service, logs will be requested for support purposes. To receive these logs, in a PowerShell window, execute the following:
+
+<Tabs groupId="operating-systems">
+  <TabItem value="windows" label="Windows">
+
+```ps
+powershell.exe -ExecutionPolicy Bypass -File "C:\Program Files\Magic Leap Remote Rendering\DebuggerScript.ps1"
+```
+
+The logs will be saved, by default to:
+
+`%USERPROFILE%\AppData\Roaming\MagicLeap\Windrunner\logs`
+
+  </TabItem>
+</Tabs>
