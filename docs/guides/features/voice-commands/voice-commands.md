@@ -2,8 +2,8 @@
 title: Voice Commands
 sidebar_position: 5
 date: 12/14/2022
-tags: [Voice, Commands, Android, commands]
-keywords: [Voice, Commands, Android, commands]
+tags: [Voice, Commands, Android,]
+keywords: [Voice, Commands, Android,]
 ---
 
 The Magic Leap 2 offers Speech Commands, which allow applications to perform custom and system actions. When enabled, users can use their voice to interact with applications on the device. The can also be used to perform system tasks, such as changing the volume of audio, exiting an application or taking a camera capture, in place of using other input methods. Notably, these speech commands work offline which means they can be used even when there is no network connection.
@@ -13,7 +13,6 @@ The Magic Leap 2 offers Speech Commands, which allow applications to perform cus
 Voice Commands are short, spoken phrases that can tell your Magic Leap 2 to carry out specific actions, such as reducing the volume by saying, "Hey Magic Leap, turn the volume down."
 
 Magic Leap 2 OS has built-in system-level Voice Commands and will have the capability to create your own at the application level in the future.
-
 
 [Click here](https://www.magicleap.care/hc/en-us/articles/9472998365197-Voice-Commands) to view the complete list of system voice commands.
 
