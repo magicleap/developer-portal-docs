@@ -1,17 +1,21 @@
 ---
-title: 1.6.0 - Unity SDK Release Notes
+title: 1.6.1 - Unity SDK Release Notes
 sidebar_position: 3
-date: 04/24/2023
+date: 05/17/2023
 ---
-
-# 1.6.0 - Unity SDK Release Notes
 
 ## SDK Delivered via The Magic Leap Hub
 
 - Unity Example Project
 - Magic Leap 2 Unity SDK Package
 - Magic Leap SDK Version 1.2.0
-- Unity Version: 1.6.0
+- Unity Version: 1.6.1
+
+# Unity® Package 1.6.1
+
+## Update
+
+- A prior release inadvertently allowed developers to bypass the minimum clipping plane in Unity. We have restored the enforcement of the minimum clipping plane to 37cm.
 
 # Unity® Package 1.6.0
 
