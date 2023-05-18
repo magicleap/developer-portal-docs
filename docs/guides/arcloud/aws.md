@@ -10,6 +10,7 @@ description: "Enterprise deployment to Amazon Web Services (AWS)"
 ---
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
+import EnvFile from './_env_file.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
@@ -34,6 +35,8 @@ Set the domain where AR Cloud will be available:
 ```shell
 export DOMAIN="arcloud.domain.tld"
 ```
+
+<EnvFile />
 
 ### Tools
 
@@ -72,6 +75,10 @@ export AWS_ACCOUNT_ID="your-account-id"
 export AWS_REGION="your-region"
 export AWS_CLUSTER_NAME="your-cluster-name"
 ```
+
+:::note
+These variables are already included in the [env file](#configure-environment) described above.
+:::
 
 ### Sample cluster configurations
 
@@ -183,6 +190,15 @@ There should be 2 add-ons and their status should be ACTIVE.
 
 <IstioRequirements />
 
+Update the Istio configuration for it to work with the
+[AWS LB controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/):
+
+```shell
+sed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing\n\1  service.beta.kubernetes.io/aws-load-balancer-type: nlb\n\1\2#}' ./setup/istio.yaml
+```
+
+Install Istio:
+
 <InstallIstio />
 
 ### Install Istio Gateway
@@ -198,6 +214,13 @@ There should be 2 add-ons and their status should be ACTIVE.
 <InstallArcloud />
 
 <InstallArcloudSetupSecure />
+
+:::caution IP-based deployment
+If you do not have a custom domain and would like to use an IP address instead, add the `--no-secure` flag to the
+command above.
+
+**This is heavily discouraged for publicly accessible deployments.**
+:::
 
 ## Verify Installation
 

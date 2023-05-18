@@ -10,6 +10,7 @@ description: "Enterprise deployment to Google Cloud Platform (GCP)"
 ---
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
+import EnvFile from './_env_file.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
@@ -33,6 +34,8 @@ Set the domain where AR Cloud will be available:
 ```shell
 export DOMAIN="arcloud.domain.tld"
 ```
+
+<EnvFile />
 
 ### Tools
 
@@ -66,6 +69,10 @@ export GC_ADDRESS_NAME="your-cluster-ip"
 export GC_CLUSTER_NAME="your-cluster-name"
 ```
 
+:::note
+These variables are already included in the [env file](#configure-environment) described above.
+:::
+
 ### Reserve a Static IP
 
 ```shell
@@ -87,7 +94,7 @@ gcloud dns --project="${GC_PROJECT_ID}" record-sets create "${DOMAIN}" --type="A
 
 ### Create a Cluster
 
-:::notenote
+:::note
 Be sure to create a VPC prior to running the following command and supply it as the subnetwork. Refer to Google Cloud documentation for best practices:
 
 [VPC](https://cloud.google.com/vpc/docs/vpc), [Subnets](https://cloud.google.com/vpc/docs/subnets), and [Regions / Zones](https://cloud.google.com/compute/docs/regions-zones)
