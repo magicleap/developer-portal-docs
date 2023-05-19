@@ -1,4 +1,5 @@
 ---
+id: install-the-tools
 title: Install the Tools
 sidebar_position: 0
 date: 08/29/2022
@@ -16,6 +17,18 @@ import TabItem from '@theme/TabItem';
 
 - Installed the [ML Hub](/docs/guides/getting-started/install-the-tools.md)
 - Installed [Unity Hub](https://unity3d.com/get-unity/download)
+
+:::caution "one or more of its dependencies could not be loaded"
+
+When running a project, if an error similar to the below appears in the Unity error console, additional runtimes ("Workloads") may need to be installed, supplied by Microsoft:
+
+```plaintext
+Plugins: Failed to load 'C:/AppDirectory/Library/PackageCache/com.magicleap.soundfield@3.4.0-230405.66.cf20c31/Plugins/x86_64/AudioPluginMSASpatializer.dll' because one or more of its dependencies could not be loaded.
+```
+
+[Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+:::
 
 ## Install Magic Leap SDK & Tools
 
@@ -42,13 +55,13 @@ To download the Unity Magic Leap Examples Project from the bundle section:
 
 ## Install Unity Editor
 
-This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor **version 2022.2.0b7 or higher**.
+This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor in the range of **2022.2.x**.
 
 1. Open the Unity Hub application
 2. Select the Installs
 3. Then click the Install Editor button.
 4. With the Install Unity Editor window open, navigate to the Pre-releases section
-5. Select a Unity Editor that is version 2022.2.0b7 or higher
+5. Select a Unity Editor that is in the range of **2022.2.x**
 6. In the modules screen select  **Android Build Support**, then **Android SDK & NDK Tools**, and **OpenJDK**.
 7. Select the **Continue** button.
 

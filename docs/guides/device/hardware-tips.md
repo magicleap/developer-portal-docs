@@ -7,6 +7,10 @@ tags: [Hardware, Headstrap, Lenses, Mask, Reset, Boot]
 keywords: [Hardware, Headstrap, Lenses, Mask, Reset, Boot]
 ---
 
+## How to Determine Device Edition
+
+To determine whether your device is a Medical or Enterprise edition, use the standard Android SDK API call [hasSystemFeature(featureName)](https://developer.android.com/reference/android/content/pm/PackageManager#hasSystemFeature(java.lang.String)). The actual call will be `hasSystemFeature("com.magicleap.hardware.medical")` and will return `True` if it is a Medical edition.
+
 ## Headstrap for Extended Wear
 
 - The device package comes with a thin black strap that can be attached to the two upward-facing loops on each side of the headset. This strap should be used for extra head support during extended device wear.

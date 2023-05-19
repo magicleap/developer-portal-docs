@@ -13,6 +13,7 @@ import TabItem from '@theme/TabItem';
 
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
+import EnvFile from './_env_file.md';
 import FindIPAddress from './_find_ip.md';
 import InstallIstio from './_install_istio.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
@@ -153,6 +154,8 @@ Install [Docker Desktop for MacOS](https://docs.docker.com/desktop/install/mac-i
 
 <ArcloudEnvVariables />
 
+<EnvFile />
+
 ### Prepare Your IP Address
 
 <FindIPAddress />
@@ -162,6 +165,10 @@ Set the IP address where AR Cloud will be available:
 ```shell
 export DOMAIN="<IPv4 address of your active network adapter>"
 ```
+
+:::note
+The `DOMAIN` variable is already included in the [env file](#configure-environment) described above.
+:::
 
 ### Install Kubernetes
 

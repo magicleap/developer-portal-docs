@@ -1,0 +1,10 @@
+{
+  "label": "Release 2023 May",
+  "position": 84,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "may-release-notes"
+  }
+}
