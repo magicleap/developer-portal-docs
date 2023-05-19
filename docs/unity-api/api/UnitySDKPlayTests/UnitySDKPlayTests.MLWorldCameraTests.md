@@ -19,10 +19,10 @@ title: MLWorldCameraTests
 
 ## Public Methods
 
-### void MLWorldCamera_CheckPermission {#void-mlworldcamera-checkpermission}
+### void Connect {#void-connect}
 
 ```csharp
-public void MLWorldCamera_CheckPermission()
+public void Connect()
 ```
 
 
@@ -32,10 +32,10 @@ public void MLWorldCamera_CheckPermission()
 
 -----------
 
-### IEnumerator MLWorldCamera_Connect {#ienumerator-mlworldcamera-connect}
+### void MLWorldCamera_Connect {#void-mlworldcamera-connect}
 
 ```csharp
-public IEnumerator MLWorldCamera_Connect()
+public void MLWorldCamera_Connect()
 ```
 
 
@@ -45,10 +45,10 @@ public IEnumerator MLWorldCamera_Connect()
 
 -----------
 
-### IEnumerator MLWorldCamera_GetLatestWorldCameraData {#ienumerator-mlworldcamera-getlatestworldcameradata}
+### void MLWorldCamera_Disconnect {#void-mlworldcamera-disconnect}
 
 ```csharp
-public IEnumerator MLWorldCamera_GetLatestWorldCameraData()
+public void MLWorldCamera_Disconnect()
 ```
 
 
@@ -58,10 +58,10 @@ public IEnumerator MLWorldCamera_GetLatestWorldCameraData()
 
 -----------
 
-### IEnumerator MLWorldCamera_IsStarted {#ienumerator-mlworldcamera-isstarted}
+### void MLWorldCamera_GetLatestWorldCameraData {#void-mlworldcamera-getlatestworldcameradata}
 
 ```csharp
-public IEnumerator MLWorldCamera_IsStarted()
+public void MLWorldCamera_GetLatestWorldCameraData()
 ```
 
 
@@ -71,11 +71,22 @@ public IEnumerator MLWorldCamera_IsStarted()
 
 -----------
 
-### IEnumerator MLWorldCamera_MarshallDataFromFrames {#ienumerator-mlworldcamera-marshalldatafromframes}
+### void MLWorldCamera_UpdateSettings {#void-mlworldcamera-updatesettings}
 
 ```csharp
-public IEnumerator MLWorldCamera_MarshallDataFromFrames()
+public void MLWorldCamera_UpdateSettings(
+    MLWorldCamera.Mode mode,
+    MLWorldCamera.CameraId cameraId
+)
 ```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLWorldCamera.Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) |mode|Enumeration of world camera modes. |
+| [MLWorldCamera.CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) |cameraId|Enumeration of all the available world camera sensors. |
 
 
 

@@ -108,7 +108,7 @@ MLCameraMRConnectInfo mr_info;
 
 MR capture connection settings. 
 
-This field can be ignored if MLCameraConnectFlag_MR flag is not used. 
+This field can be ignored if MLCameraConnectFlag_MR or MLCameraConnectFlag_VirtualOnly flag is not used. 
 
 
 

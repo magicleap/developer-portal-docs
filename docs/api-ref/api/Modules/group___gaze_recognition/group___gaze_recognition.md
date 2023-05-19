@@ -45,6 +45,8 @@ APIs for the Gaze Recognition system.  [More...](#detailed-description)
 |                | Name           |
 | -------------- | -------------- |
 | uint32_t | **[version](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
+| float | **[eye_height_max](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-height-max)**  |
+| float | **[eye_width_max](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-width-max)**  |
 | [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[vergence](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlcoordinateframeuid-vergence)**  |
 | uint32_t | **[version](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
 | [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mltime-timestamp)**  |
@@ -143,7 +145,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 
 
 **API Level:**
-  * 20
+  * 27
 
 
 
@@ -198,7 +200,7 @@ Initialize [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recog
 
 
 **API Level:**
-  * 20
+  * 27
 
 
 
@@ -412,6 +414,36 @@ uint32_t version;
 
 
 Version of this structure. 
+
+
+
+
+
+-----------
+
+### eye_height_max {#float-eye-height-max}
+
+```cpp
+float eye_height_max;
+```
+
+
+The maximum value for the height of the eye_left and eye_right vector. 
+
+
+
+
+
+-----------
+
+### eye_width_max {#float-eye-width-max}
+
+```cpp
+float eye_width_max;
+```
+
+
+The maximum value for the width of the eye_left and eye_right vector. 
 
 
 

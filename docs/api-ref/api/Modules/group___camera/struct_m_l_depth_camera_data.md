@@ -28,8 +28,8 @@ A structure to encapsulate output data for each camera sensor.  [More...](#detai
 | [MLDepthCameraDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) * | **[depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthimage-depth-image)**  |
 | [MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) * | **[confidence](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraconfidencebuffer-confidence)**  |
 | [MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) * | **[flags](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameradepthflagsbuffer-flags)**  |
-| [MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | **[ambient_raw_depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraambientrawdepthimage-ambient-raw-depth-image)** <br></br>Ambient raw depth image. This is the raw sensor data captured when the projector is off.  |
-| [MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage) * | **[raw_depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcamerarawdepthimage-raw-depth-image)** <br></br>Raw depth image. This is the raw sensor data captured when the projector is on.  |
+| [MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) * | **[ambient_raw_depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcameraambientrawdepthimage-ambient-raw-depth-image)** <br></br>Ambient raw depth image. The illuminator in the sensor is modulated with a system determined frequency. This is the raw sensor data captured when the illuminator is off.  |
+| [MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage) * | **[raw_depth_image](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md#mldepthcamerarawdepthimage-raw-depth-image)** <br></br>Raw depth image. The illuminator in the sensor is modulated with a system determined frequency. This is the raw sensor data captured when the illuminator is on.  |
 
 ## Detailed Description
 
@@ -224,7 +224,7 @@ Depth flags.
 MLDepthCameraAmbientRawDepthImage * ambient_raw_depth_image;
 ```
 
-Ambient raw depth image. This is the raw sensor data captured when the projector is off. 
+Ambient raw depth image. The illuminator in the sensor is modulated with a system determined frequency. This is the raw sensor data captured when the illuminator is off. 
 
 
 | Type | Description |
@@ -244,7 +244,7 @@ Ambient raw depth image. This is the raw sensor data captured when the projector
 MLDepthCameraRawDepthImage * raw_depth_image;
 ```
 
-Raw depth image. This is the raw sensor data captured when the projector is on. 
+Raw depth image. The illuminator in the sensor is modulated with a system determined frequency. This is the raw sensor data captured when the illuminator is on. 
 
 
 | Type | Description |

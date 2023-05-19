@@ -25,13 +25,9 @@ title: UnitySDKPlayTests
 | class | **[MLPermissionsTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLPermissionsTests.md)**  |
 | class | **[MLPlanesTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLPlanesTests.md)**  |
 | class | **[MLSegmentedDimmerTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLSegmentedDimmerTests.md)**  |
-| class | **[MLVoiceIntent](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLVoiceIntent.md)**  |
 | class | **[MLVoiceTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLVoiceTests.md)**  |
-| class | **[MLWebView](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLWebView.md)**  |
 | class | **[MLWebViewTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLWebViewTests.md)**  |
 | class | **[MLWorldCameraTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLWorldCameraTests.md)**  |
-| class | **[NativeBindingsPlayTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.NativeBindingsPlayTests.md)**  |
-| class | **[YcbcrRenderer](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.YcbcrRenderer.md)**  |
 
 
 

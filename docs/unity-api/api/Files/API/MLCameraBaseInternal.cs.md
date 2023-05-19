@@ -73,6 +73,8 @@ namespace UnityEngine.XR.MagicLeap
 
         protected MLCamera.CaptureConfig cameraCaptureConfig;
 
+        protected event MLCamera.OnCapturedFrameAvailableDelegate OnRawVideoFrameAvailableInternal;
+
         private bool wasCapturingVideo = false;
 
         private Texture2D PreviewTexture2D
@@ -91,6 +93,7 @@ namespace UnityEngine.XR.MagicLeap
             gcHandle = GCHandle.Alloc(this, GCHandleType.Weak);
             Handle = Native.MagicLeapNativeBindings.InvalidHandle;
             byteArrays = new byte[MLCamera.NativeBindings.MLCameraMaxImagePlanes][];
+            OnRawVideoFrameAvailableInternal += HandleOnRawVideoFrameAvailableInternal;
         }
 
         protected void CreatePreviewTexture()
@@ -153,7 +156,6 @@ namespace UnityEngine.XR.MagicLeap
                 resultCode = MLCamera.NativeBindings.MLCameraInit(ref callbacks, IntPtr.Zero);
                 cameraInited = MLResult.DidNativeCallSucceed(resultCode, nameof(MLCamera.NativeBindings.MLCameraInit));
             }
-
 
             return MLResult.Create(resultCode);
         }
@@ -335,6 +337,14 @@ namespace UnityEngine.XR.MagicLeap
                 cameraMetadata = new MLCamera.Metadata(metadataHandle);
             }
             return resultCode;
+        }
+
+        protected void HandleOnRawVideoFrameAvailableInternal(MLCamera.CameraOutput capturedFrame, MLCamera.ResultExtras resultExtras, MLCamera.Metadata metadataHandle)
+        {
+            if ((isCapturingVideo/* || isCapturingPreview*/) && (!wasCapturingVideo/* && !wasCapturingPreview*/))
+            {
+                OnRawVideoFrameAvailable?.Invoke(capturedFrame, resultExtras, metadataHandle);
+            }
         }
     }
 }

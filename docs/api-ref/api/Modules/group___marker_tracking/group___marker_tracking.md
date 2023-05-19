@@ -103,7 +103,7 @@ List of supported, detectable markers (no pose info):
 | MLMarkerTrackerDetectorType_Aruco |  1 << 1| Aruco and AprilTag. |
 | MLMarkerTrackerDetectorType_EAN_13 |  1 << 2| EAN-13 (experimental). |
 | MLMarkerTrackerDetectorType_UPC_A |  1 << 3| UPC-A (experimental). |
-| MLMarkerTrackerDetectorType_Code_128 |  1 << 4| Code 128 decoded data. (experimental) |
+| MLMarkerTrackerDetectorType_Code_128 |  1 << 4| Code 128 decoded data (experimental). |
 | MLMarkerTrackerDetectorType_All |  0x3FFFFFFF| All supported marker types. |
 | MLMarkerTrackerDetectorType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 

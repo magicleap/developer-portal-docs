@@ -522,6 +522,7 @@ title: Data Structure Index
                 * **class[MagicLeapProvider](/unity-api/api/UnityEngine.XR.MagicLeap/SessionSubsystem/UnityEngine.XR.MagicLeap.SessionSubsystem.MagicLeapProvider.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SettingsIntentsLauncher.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SubsystemFeatures.md)** 
+            * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.TestExtensions.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.Timer.md)** 
             * **class [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md)** <br></br>Implements a renderer for android native & hardware buffers (Vulkan-only). 
                 * **interface[IFrameAvailabilityProvider](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.IFrameAvailabilityProvider.md)** 
@@ -563,8 +564,7 @@ title: Data Structure Index
         * **class [ParserCEA608](/unity-api/api/UnitySDKEditorTests/MLMedia/UnitySDKEditorTests.MLMedia.ParserCEA608.md)** 
         * **class [ParserCEA708](/unity-api/api/UnitySDKEditorTests/MLMedia/UnitySDKEditorTests.MLMedia.ParserCEA708.md)** 
         * **class [Player](/unity-api/api/UnitySDKEditorTests/MLMedia/Player/UnitySDKEditorTests.MLMedia.Player.md)** 
-            * **class [Player](/unity-api/api/UnitySDKEditorTests/MLMedia/Player/Track/UnitySDKEditorTests.MLMedia.Player.Track.md)** 
-                * **class[DRM](/unity-api/api/UnitySDKEditorTests/MLMedia/Player/Track/UnitySDKEditorTests.MLMedia.Player.Track.DRM.md)** 
+            * **class [Player](/unity-api/api/UnitySDKEditorTests/MLMedia/Player/UnitySDKEditorTests.MLMedia.Player.Track.md)** 
     * **class [MLMediaFormat](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLMediaFormat.md)** 
     * **class [MLMediaFormatKey](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLMediaFormatKey.md)** 
     * **class [MLMediaRecorder](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLMediaRecorder.md)** 
@@ -576,7 +576,7 @@ title: Data Structure Index
     * **class [MLPermissions](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLPermissions.md)** 
     * **class [MLResult](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLResult.md)** 
     * **class [MLTime](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLTime.md)** 
-    * **class [MLVoiceIntent](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLVoiceIntent.md)** 
+    * **class [MLVoice](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLVoice.md)** 
     * **class [MLWebRTC](/unity-api/api/UnitySDKEditorTests/MLWebRTC/UnitySDKEditorTests.MLWebRTC.md)** 
         * **class [AppDefinedAudioSource](/unity-api/api/UnitySDKEditorTests/MLWebRTC/UnitySDKEditorTests.MLWebRTC.AppDefinedAudioSource.md)** 
         * **class [AppDefinedVideoSource](/unity-api/api/UnitySDKEditorTests/MLWebRTC/UnitySDKEditorTests.MLWebRTC.AppDefinedVideoSource.md)** 
@@ -606,19 +606,14 @@ title: Data Structure Index
         * **class [HapticsTests](/unity-api/api/UnitySDKPlayTests/MLInputs/UnitySDKPlayTests.MLInputs.HapticsTests.md)** 
     * **class [MLMarkerTrackerTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLMarkerTrackerTests.md)** 
     * **class [MLMedia](/unity-api/api/UnitySDKPlayTests/MLMedia/UnitySDKPlayTests.MLMedia.md)** 
-        * **class [Player](/unity-api/api/UnitySDKPlayTests/MLMedia/UnitySDKPlayTests.MLMedia.Player.md)** 
         * **class [PlayerTests](/unity-api/api/UnitySDKPlayTests/MLMedia/UnitySDKPlayTests.MLMedia.PlayerTests.md)** 
     * **class [MLMeshingTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLMeshingTests.md)** 
     * **class [MLPermissionsTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLPermissionsTests.md)** 
     * **class [MLPlanesTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLPlanesTests.md)** 
     * **class [MLSegmentedDimmerTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLSegmentedDimmerTests.md)** 
-    * **class [MLVoiceIntent](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLVoiceIntent.md)** 
     * **class [MLVoiceTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLVoiceTests.md)** 
-    * **class [MLWebView](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLWebView.md)** 
     * **class [MLWebViewTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLWebViewTests.md)** 
     * **class [MLWorldCameraTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLWorldCameraTests.md)** 
-    * **class [NativeBindingsPlayTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.NativeBindingsPlayTests.md)** 
-    * **class [YcbcrRenderer](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.YcbcrRenderer.md)** 
 
 
 

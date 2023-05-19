@@ -1,11 +1,11 @@
 ---
 
-title: MLVoiceNativeBindingsPlayModeTests.cs
+title: MLVoiceNativeBindingsEditModeTests.cs
 
 ---
 
 
-# MLVoiceNativeBindingsPlayModeTests.cs
+# MLVoiceNativeBindingsEditModeTests.cs
 
 
 
@@ -21,9 +21,9 @@ title: MLVoiceNativeBindingsPlayModeTests.cs
 using System.Reflection;
 using NUnit.Framework;
 
-namespace UnitySDKPlayTests
+namespace UnitySDKEditorTests
 {
-    public class MLVoiceIntent : NativeBindingsPlayTests
+    public partial class MLVoice
     {
         [SetUp]
         public void SetupNativeBindings()

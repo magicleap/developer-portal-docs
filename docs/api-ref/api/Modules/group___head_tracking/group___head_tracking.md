@@ -429,6 +429,10 @@ Returns the most recent head tracking state.
 
 
 
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingGetStateEx. 
+:::
+
 
 
 -----------

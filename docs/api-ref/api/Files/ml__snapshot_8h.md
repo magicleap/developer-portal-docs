@@ -24,7 +24,7 @@ title: ml_snapshot.h
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 23](/api-ref/api/Modules/group___perception/group___perception.md#enums-anonymous-enum-23)** <br></br> { <br></br>[MLResultAPIPrefix_Snapshot](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlresultapiprefix-snapshot) = ( 0x87b8  << 16)<br></br>} |
+| enum | **[Anonymous Enum 26](/api-ref/api/Modules/group___perception/group___perception.md#enums-anonymous-enum-26)** <br></br> { <br></br>[MLResultAPIPrefix_Snapshot](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlresultapiprefix-snapshot) = ( 0x87b8  << 16)<br></br>} |
 | enum | **[MLSnapshotResult](/api-ref/api/Modules/group___perception/group___perception.md#enums-mlsnapshotresult)** <br></br> { <br></br>[MLSnapshotResult_DerivativesNotCalculated](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlsnapshotresult-derivativesnotcalculated) = MLResultAPIPrefix_Snapshot,<br></br> [MLSnapshotResult_Ensure32Bits](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlsnapshotresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Functions
@@ -38,7 +38,7 @@ title: ml_snapshot.h
 
 ## Enums Documentation
 
-### Anonymous Enum 23 {#enums-anonymous-enum-23}
+### Anonymous Enum 26 {#enums-anonymous-enum-26}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

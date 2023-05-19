@@ -44,7 +44,7 @@ APIs for Magic Leap Space.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 24](/api-ref/api/Modules/group___space/group___space.md#enums-anonymous-enum-24)** <br></br> { <br></br>[MLResultAPIPrefix_Space](/api-ref/api/Modules/group___space/group___space.md#enums-mlresultapiprefix-space) = ( 0x10cc  << 16),<br></br> [MLSpace_MaxSpaceNameLength](/api-ref/api/Modules/group___space/group___space.md#enums-mlspace-maxspacenamelength) = 64<br></br>} |
+| enum | **[Anonymous Enum 27](/api-ref/api/Modules/group___space/group___space.md#enums-anonymous-enum-27)** <br></br> { <br></br>[MLResultAPIPrefix_Space](/api-ref/api/Modules/group___space/group___space.md#enums-mlresultapiprefix-space) = ( 0x10cc  << 16),<br></br> [MLSpace_MaxSpaceNameLength](/api-ref/api/Modules/group___space/group___space.md#enums-mlspace-maxspacenamelength) = 64<br></br>} |
 | enum | **[MLSpaceResult](/api-ref/api/Modules/group___space/group___space.md#enums-mlspaceresult)** <br></br> { <br></br>[MLSpaceResult_ServerError](/api-ref/api/Modules/group___space/group___space.md#enums-mlspaceresult-servererror) = MLResultAPIPrefix_Space,<br></br> [MLSpaceResult_ServiceUnavailable](/api-ref/api/Modules/group___space/group___space.md#enums-mlspaceresult-serviceunavailable),<br></br> [MLSpaceResult_UnavailableSpace](/api-ref/api/Modules/group___space/group___space.md#enums-mlspaceresult-unavailablespace),<br></br> [MLSpaceResult_IncompatibleSpace](/api-ref/api/Modules/group___space/group___space.md#enums-mlspaceresult-incompatiblespace),<br></br> [MLSpaceResult_SpaceAlreadyExists](/api-ref/api/Modules/group___space/group___space.md#enums-mlspaceresult-spacealreadyexists),<br></br> [MLSpaceResult_Ensure32Bits](/api-ref/api/Modules/group___space/group___space.md#enums-mlspaceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Magic Leap Space specific return codes.  |
 | enum | **[MLSpaceType](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacetype)** <br></br> { <br></br>[MLSpaceType_OnDevice](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacetype-ondevice) = 0,<br></br> [MLSpaceType_ARCloud](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacetype-arcloud) = 1,<br></br> [MLSpaceType_Ensure32Bits](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Space type. Indicates the type of the Space.  |
 | enum | **[MLSpaceLocalizationStatus](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacelocalizationstatus)** <br></br> { <br></br>[MLSpaceLocalizationStatus_NotLocalized](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacelocalizationstatus-notlocalized) = 0,<br></br> [MLSpaceLocalizationStatus_Localized](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacelocalizationstatus-localized) = 1,<br></br> [MLSpaceLocalizationStatus_LocalizationPending](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacelocalizationstatus-localizationpending) = 2,<br></br> [MLSpaceLocalizationStatus_SleepingBeforeRetry](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacelocalizationstatus-sleepingbeforeretry) = 3,<br></br> [MLSpaceLocalizationStatus_Ensure32Bits](/api-ref/api/Modules/group___space/group___space.md#enums-mlspacelocalizationstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current localization status.  |
@@ -65,7 +65,7 @@ APIs for Magic Leap Space.  [More...](#detailed-description)
 | const char * | **[MLSpaceGetResultString](/api-ref/api/Modules/group___space/group___space.md#const-char-mlspacegetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLSpaceResult and MLResult codes.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceManagerCreate](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacemanagercreate)**(const [MLSpaceManagerSettings](/api-ref/api/Modules/group___space/struct_m_l_space_manager_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a Magic Leap Space manager handle.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceSetCallbacks](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacesetcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceCallbacks](/api-ref/api/Modules/group___space/struct_m_l_space_callbacks.md) * callbacks, void * user_data)<br></br>Set the callbacks for events related to the Magic Leap Space.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceGetSpaceList](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacegetspacelist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceQueryFilter](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md) * query_filter, [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) * space_list)<br></br>Get the list of available spaces.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceGetSpaceList](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacegetspacelist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceQueryFilter](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md) * query_filter, [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) * out_space_list)<br></br>Get the list of available spaces.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceReleaseSpaceList](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacereleasespacelist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) * space_list)<br></br>Release the list of available spaces.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceRequestLocalization](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacerequestlocalization)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceLocalizationInfo](/api-ref/api/Modules/group___space/struct_m_l_space_localization_info.md) * localization_info)<br></br>Send a request to localize to a given Magic Leap Space.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceGetLocalizationResult](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacegetlocalizationresult)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpaceLocalizationResult](/api-ref/api/Modules/group___space/struct_m_l_space_localization_result.md) * out_localization_result)<br></br>Get the localization results.  |
@@ -105,7 +105,7 @@ Developers are strongly encouraged to encrypt the exported Magic Leap Spaces.
 -----------
 ## Enums Documentation
 
-### Anonymous Enum 24 {#enums-anonymous-enum-24}
+### Anonymous Enum 27 {#enums-anonymous-enum-27}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -835,7 +835,7 @@ Set the callbacks for events related to the Magic Leap Space.
 MLResult MLSpaceGetSpaceList(
     MLHandle handle,
     const MLSpaceQueryFilter * query_filter,
-    MLSpaceList * space_list
+    MLSpaceList * out_space_list
 )
 ```
 
@@ -847,7 +847,7 @@ Get the list of available spaces.
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacemanagercreate). |
 | const [MLSpaceQueryFilter](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md) * |query_filter|The filter structure for the query. |
-| [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) * |space_list|List of Spaces currently available to the device.|
+| [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) * |out_space_list|List of Spaces currently available to the device.|
 
 **Returns**
 
