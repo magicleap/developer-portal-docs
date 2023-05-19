@@ -89,14 +89,14 @@ When device (wearable and/or compute pack appear frozen or unresponsive), use th
 As part of the April release plan, new entitlements were added to the ML Developer Pro, ML Enterprise (Subscription) and ML Enterprise (Perpetual) licenses: Local Multi User Login, Manage App Signing Certificates, and Remote Render Client Access.
 
 If you have already activated one of the above mentioned licenses on your device, please follow these steps to access new features:
- 
- 1. Existing license was activated in Online mode
-  a. Upgrade OS to R6 build 1.2.0 (build number B3E.230330.11-R.043)
-  b. Reboot device
 
-2. Existing license was activated in Offline mode
-  a. Upgrade OS to R6 build 1.2.0 (build number B3E.230330.11-R.043)
-  b. Return the license and reactivate it with the same key
+ 1. Existing license was activated in Online mode  
+ a. Upgrade OS to R6 build 1.2.0 (build number B3E.230330.11-R.043)  
+ b. Reboot device  
+
+ 2. Existing license was activated in Offline mode  
+  a. Upgrade OS to R6 build 1.2.0 (build number B3E.230330.11-R.043)  
+  b. Return the license and reactivate it with the same key  
   c. Reboot device
 
 ### Feature description:
