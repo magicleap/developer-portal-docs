@@ -19,10 +19,10 @@ title: MLVoiceTests
 
 ## Public Methods
 
-### void MLVoiceIntents_CheckPermission {#void-mlvoiceintents-checkpermission}
+### void MLVoice_CheckIsEnabled {#void-mlvoice-checkisenabled}
 
 ```csharp
-public void MLVoiceIntents_CheckPermission()
+public void MLVoice_CheckIsEnabled()
 ```
 
 
@@ -32,10 +32,10 @@ public void MLVoiceIntents_CheckPermission()
 
 -----------
 
-### void MLVoiceIntents_IsStartedNegative {#void-mlvoiceintents-isstartednegative}
+### void MLVoice_SetupVoiceIntents {#void-mlvoice-setupvoiceintents}
 
 ```csharp
-public void MLVoiceIntents_IsStartedNegative()
+public void MLVoice_SetupVoiceIntents()
 ```
 
 
@@ -45,10 +45,10 @@ public void MLVoiceIntents_IsStartedNegative()
 
 -----------
 
-### IEnumerator MLVoiceIntents_IsStartedPositive {#ienumerator-mlvoiceintents-isstartedpositive}
+### void MLVoice_SetupVoiceIntents_WithJSON {#void-mlvoice-setupvoiceintents-withjson}
 
 ```csharp
-public IEnumerator MLVoiceIntents_IsStartedPositive()
+public void MLVoice_SetupVoiceIntents_WithJSON()
 ```
 
 
@@ -58,23 +58,10 @@ public IEnumerator MLVoiceIntents_IsStartedPositive()
 
 -----------
 
-### IEnumerator MLVoiceIntents_SetupVoiceIntents {#ienumerator-mlvoiceintents-setupvoiceintents}
+### void MLVoice_Stop {#void-mlvoice-stop}
 
 ```csharp
-public IEnumerator MLVoiceIntents_SetupVoiceIntents()
-```
-
-
-
-
-
-
------------
-
-### IEnumerator MLVoiceIntents_Stop {#ienumerator-mlvoiceintents-stop}
-
-```csharp
-public IEnumerator MLVoiceIntents_Stop()
+public void MLVoice_Stop()
 ```
 
 

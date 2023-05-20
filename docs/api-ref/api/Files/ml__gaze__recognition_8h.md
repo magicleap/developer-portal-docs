@@ -110,7 +110,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 
 
 **API Level:**
-  * 20
+  * 27
 
 
 
@@ -165,7 +165,7 @@ Initialize [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recog
 
 
 **API Level:**
-  * 20
+  * 27
 
 
 
@@ -413,12 +413,14 @@ typedef enum MLGazeRecognitionBehavior {
 
 typedef struct MLGazeRecognitionStaticData {
   uint32_t version;
+  float eye_height_max;
+  float eye_width_max;
   MLCoordinateFrameUID vergence;
 } MLGazeRecognitionStaticData;
 
 ML_STATIC_INLINE void MLGazeRecognitionStaticDataInit(MLGazeRecognitionStaticData *inout_state) {
   if (inout_state) {
-    inout_state->version = 1u;
+    inout_state->version = 2u;
   }
 }
 

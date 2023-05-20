@@ -106,7 +106,7 @@ public void MediaPlayer_Prepare()
 
 ### void StopMLMediaPlayer {#void-stopmlmediaplayer}
 
-Stops Media [Player](/unity-api/api/UnitySDKPlayTests/MLMedia/UnitySDKPlayTests.MLMedia.Player.md) and destroys it's instance. 
+Stops Media Player and destroys it's instance. 
 
 ```csharp
 public void StopMLMediaPlayer()

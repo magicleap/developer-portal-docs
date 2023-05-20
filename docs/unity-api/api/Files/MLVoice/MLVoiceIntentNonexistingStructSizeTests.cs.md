@@ -22,7 +22,7 @@ using NUnit.Framework;
 
 namespace UnitySDKEditorTests
 {
-    public class MLVoiceIntent : NativeBindingsTests
+    public partial class MLVoice : NativeBindingsTests
     {
         [Test]
         public void NativeBindings_MLVoiceIntentEvent_struct_size()

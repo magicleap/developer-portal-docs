@@ -176,9 +176,7 @@ The type of mic input to capture.
 | ---------- | ----- | ----------- |
 | VoiceComm | | User voice, suitable for communications. Mono, 16 bit integer, 16k sampling rate.   |
 | VoiceCapture | | High fidelity user voice, suitable for recording. Mono, 16 bit integer, 48k sampling rate.   |
-| FrontMics | | Raw stream from front two mics. Stereo, 16 bit integer, 48k sampling rate.   |
-| SideMics | | Raw stream from side two mics. Stereo, 16 bit integer, 48k sampling rate.   |
-| WorldCapture | | Mic mix representing the user's surroundings. Stereo, 16 bit integer, 48k sampling rate.   |
+| WorldCapture | 4| Mic mix representing the user's surroundings. Stereo, 16 bit integer, 48k sampling rate.   |
 
 
 

@@ -1720,7 +1720,7 @@ Global [MLMediaDRMSign](/api-ref/api/Modules/group___media_player/group___media_
 
 Global [MLMediaDRMSignRSA](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsignrsa)  (MLHandle media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *session_id, const [MLMediaDRMRSAInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md) *rsa_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *message, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *out_signature)
 
-*  TBD (was DrmCertificates permission)  
+*  None  
 
 Global [MLMediaDRMVerify](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmverify)  (MLHandle media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *session_id, const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) *hmac_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *message, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *signature, bool *out_match)
 
@@ -2186,7 +2186,7 @@ Global [MLMediaRecorderGetInputSurface](/api-ref/api/Modules/group___media_recor
 
 *  None  
 
-Global [MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)  (MLHandle media_recorder, int32_t *max_amp)
+Global [MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)  (MLHandle media_recorder, int32_t *inout_max_amp)
 
 *  None  
 
@@ -2402,6 +2402,10 @@ Global [MLNativeSurfaceTextureUpdateTexImage](/api-ref/api/Modules/group___media
 
 *  None  
 
+Global [MLPerceptionGetPredictedSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptiongetpredictedsnapshot)  (MLTime timestamp, MLSnapshot **out_snapshot)
+
+*  None  
+
 Global [MLPerceptionGetSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptiongetsnapshot)  (MLSnapshot **out_snapshot)
 
 *  None  
@@ -2446,6 +2450,54 @@ Global [MLPlatformGetAPILevel](/api-ref/api/Modules/group___platform/group___pla
 
 *  None  
 
+Global [MLPowerManagerCreate](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagercreate)  (MLPowerManagerComponent component, MLHandle *out_handle)
+
+*  none  
+
+Global [MLPowerManagerDestroy](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerdestroy)  (MLHandle handle)
+
+*  None  
+
+Global [MLPowerManagerGetAvailablePowerStates](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates)  (MLHandle handle, const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) *in_info, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) *out_states)
+
+*  None  
+
+Global [MLPowerManagerGetAvailableProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties)  (MLHandle handle, const [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) *in_info, [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) *out_properties)
+
+*  None  
+
+Global [MLPowerManagerGetComponentProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties)  (MLHandle handle, const [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) *in_info, [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) *out_properties)
+
+*  None 
+
+Global [MLPowerManagerGetPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetpowerstate)  (MLHandle handle, const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) *in_info, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) *out_state)
+
+*  None 
+
+Global [MLPowerManagerGetResultString](/api-ref/api/Modules/group___power_manager/group___power_manager.md#const-char-mlpowermanagergetresultstring)  (MLResult result_code)
+
+*  None  
+
+Global [MLPowerManagerReleasePowerStateData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata)  (MLHandle handle, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) *power_states)
+
+*  None  
+
+Global [MLPowerManagerReleasePropertyData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertydata)  (MLHandle handle, [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) *properties)
+
+*  None  
+
+Global [MLPowerManagerReleasePropertyTypeData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertytypedata)  (MLHandle handle, [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) *properties)
+
+*  None  
+
+Global [MLPowerManagerSetCallbacks](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks)  (MLHandle handle, [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) *cb, void *user_data)
+
+*  None  
+
+Global [MLPowerManagerSetPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetpowerstate)  (MLHandle handle, const [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) *settings)
+
+*  None 
+
 Global [MLSnapshotGetResultString](/api-ref/api/Modules/group___perception/group___perception.md#const-char-mlsnapshotgetresultstring)  (MLResult result_code)
 
 *  None  
@@ -2478,7 +2530,7 @@ Global [MLSpaceGetResultString](/api-ref/api/Modules/group___space/group___space
 
 *  None  
 
-Global [MLSpaceGetSpaceList](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacegetspacelist)  (MLHandle handle, const [MLSpaceQueryFilter](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md) *query_filter, [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) *space_list)
+Global [MLSpaceGetSpaceList](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacegetspacelist)  (MLHandle handle, const [MLSpaceQueryFilter](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md) *query_filter, [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) *out_space_list)
 
 *  None  
 

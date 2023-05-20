@@ -182,6 +182,16 @@ title: Data Structure Index
 * **struct [MLPlaneBoundary](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md)** <br></br>Type used to represent a region boundary on a 2D plane. 
 * **struct [MLPlanesQuery](/api-ref/api/Modules/group___planes/struct_m_l_planes_query.md)** <br></br>Type used to represent a plane query. 
 * **struct [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md)** <br></br>Coplanar connected line segments representing the outer boundary of a polygon, an _n_-sided polygon where _n_ is the number of vertices. 
+* **struct [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md)** <br></br>A structure containing Power Manager callback events. Individual callbacks which are not required by the Power Manager can be NULL. 
+* **struct [MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md)** <br></br>A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype). 
+* **union [MLPowerManagerComponentProperty.__unnamed__](/api-ref/api/Modules/group___power_manager/union_m_l_power_manager_component_property_8____unnamed____.md)** 
+* **struct [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md)** <br></br>A structure to encapsulate output data when either getting available power states, or the current power state. 
+* **struct [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current power state. 
+* **struct [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md)** <br></br>A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed. 
+* **struct [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md)** <br></br>A structure to encapsulate output data when getting the current properties. 
+* **struct [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current properties. 
+* **struct [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md)** <br></br>A structure to encapsulate output data when getting a component's available property types. 
+* **struct [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md)** <br></br>A structure to encapsulate information used by the Power Manager when getting the available property types. 
 * **struct [MLQuaternionf](/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md)** 
 * **struct [MLRectf](/api-ref/api/Modules/group___common/struct_m_l_rectf.md)** 
 * **struct [MLRecti](/api-ref/api/Modules/group___common/struct_m_l_recti.md)** 

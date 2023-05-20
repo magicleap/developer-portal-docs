@@ -28,7 +28,7 @@ struct MLMediaDRMKeyValue;
 ```
 
 
-Data type containing {key, value} pair. 
+Data type containing key/value pair. 
 
 
 

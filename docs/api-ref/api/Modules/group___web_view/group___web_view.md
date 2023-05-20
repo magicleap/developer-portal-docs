@@ -33,7 +33,7 @@ APIs for the WebView component.  [More...](#detailed-description)
 | enum | **[MLWebViewTextInputType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype)** <br></br> { <br></br>[MLWebViewTextInputType_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-none) = 0,<br></br> [MLWebViewTextInputType_Text](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-text),<br></br> [MLWebViewTextInputType_Password](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-password),<br></br> [MLWebViewTextInputType_Search](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-search),<br></br> [MLWebViewTextInputType_Email](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-email),<br></br> [MLWebViewTextInputType_Number](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-number),<br></br> [MLWebViewTextInputType_Telephone](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-telephone),<br></br> [MLWebViewTextInputType_URL](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-url),<br></br> [MLWebViewTextInputType_Date](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-date),<br></br> [MLWebViewTextInputType_DateTime](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetime),<br></br> [MLWebViewTextInputType_DateTimeLocal](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetimelocal),<br></br> [MLWebViewTextInputType_Month](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-month),<br></br> [MLWebViewTextInputType_Time](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-time),<br></br> [MLWebViewTextInputType_Week](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-week),<br></br> [MLWebViewTextInputType_TextArea](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-textarea),<br></br> [MLWebViewTextInputType_ContentEditable](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-contenteditable),<br></br> [MLWebViewTextInputType_DateTimeField](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetimefield),<br></br> [MLWebViewTextInputType_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of text entry selected when on_show_keyboard is called.  |
 | enum | **[MLWebViewTextInputFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags)** <br></br> { <br></br>[MLWebViewTextInputFlags_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-none) = 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocompleteon) = 1 << 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOff](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocompleteoff) = 1 << 1,<br></br> [MLWebViewTextInputFlags_AutocorrectOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocorrecton) = 1 << 2,<br></br> [MLWebViewTextInputFlags_AutocorrectOff](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocorrectoff) = 1 << 3,<br></br> [MLWebViewTextInputFlags_SpellcheckOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-spellcheckon) = 1 << 4,<br></br> [MLWebViewTextInputFlags_SpellcheckOff](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-spellcheckoff) = 1 << 5,<br></br> [MLWebViewTextInputFlags_AutocapitalizeNone](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizenone) = 1 << 6,<br></br> [MLWebViewTextInputFlags_AutocapitalizeCharacters](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizecharacters) = 1 << 7,<br></br> [MLWebViewTextInputFlags_AutocapitalizeWords](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizewords) = 1 << 8,<br></br> [MLWebViewTextInputFlags_AutocapitalizeSentences](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizesentences) = 1 << 9,<br></br> [MLWebViewTextInputFlags_HaveNextFocusableElement](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-havenextfocusableelement) = 1 << 10,<br></br> [MLWebViewTextInputFlags_HavePreviousFocusableElement](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-havepreviousfocusableelement) = 1 << 11,<br></br> [MLWebViewTextInputFlags_HasBeenPasswordField](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-hasbeenpasswordfield) = 1 << 12,<br></br> [MLWebViewTextInputFlags_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags related to a text entry field passed when on_show_keyboard is called.  |
 | enum | **[MLWebViewEventFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags)** <br></br> { <br></br>[MLWebViewEventFlags_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-none) = 0,<br></br> [MLWebViewEventFlags_CapsLockOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-capslockon) = 1 << 0,<br></br> [MLWebViewEventFlags_ShiftDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-shiftdown) = 1 << 1,<br></br> [MLWebViewEventFlags_ControlDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-controldown) = 1 << 2,<br></br> [MLWebViewEventFlags_AltDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-altdown) = 1 << 3,<br></br> [MLWebViewEventFlags_LeftMouseButton](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-leftmousebutton) = 1 << 4,<br></br> [MLWebViewEventFlags_MiddleMouseButton](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-middlemousebutton) = 1 << 5,<br></br> [MLWebViewEventFlags_RightMouseButton](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-rightmousebutton) = 1 << 6,<br></br> [MLWebViewEventFlags_CommandDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-commanddown) = 1 << 7,<br></br> [MLWebViewEventFlags_NumLockOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-numlockon) = 1 << 8,<br></br> [MLWebViewEventFlags_IsKeyPad](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-iskeypad) = 1 << 9,<br></br> [MLWebViewEventFlags_IsLeft](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-isleft) = 1 << 10,<br></br> [MLWebViewEventFlags_IsRight](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-isright) = 1 << 11,<br></br> [MLWebViewEventFlags_AltGRDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-altgrdown) = 1 << 12,<br></br> [MLWebViewEventFlags_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags to set special key states during input.  |
-| enum | **[Anonymous Enum 27](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-anonymous-enum-27)** <br></br> { <br></br>[MLResultAPIPrefix_WebView](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlresultapiprefix-webview) = ( 0xebf7  << 16)<br></br>} |
+| enum | **[Anonymous Enum 30](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-anonymous-enum-30)** <br></br> { <br></br>[MLResultAPIPrefix_WebView](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlresultapiprefix-webview) = ( 0xebf7  << 16)<br></br>} |
 | enum | **[MLWebViewResult](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult)** <br></br> { <br></br>[MLWebViewResult_ZoomLimitReached](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult-zoomlimitreached) = MLResultAPIPrefix_WebView,<br></br> [MLWebViewResult_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for the WebView API calls.  |
 | enum | **[MLWebViewProcessSettingFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags)** <br></br> { <br></br>[MLWebViewProcessSettingFlags_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-none) = 0,<br></br> [MLWebViewProcessSettingFlags_WebInspectorOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-webinspectoron) = 1 << 0,<br></br> [MLWebViewProcessSettingFlags_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags set for the process using webview.  |
 | enum | **[MLWebViewPauseType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype)** <br></br> { <br></br>[MLWebViewPauseType_Multimedia](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-multimedia) = 0,<br></br> [MLWebViewPauseType_Timers](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-timers),<br></br> [MLWebViewPauseType_Discard](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-discard),<br></br> [MLWebViewPauseType_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of the webview pause.  |
@@ -65,8 +65,8 @@ APIs for the WebView component.  [More...](#detailed-description)
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectChar](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectchar)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, uint32_t char_utf32)<br></br>Sends a printable char keyboard event to MLWebView.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectKeyDown](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectkeydown)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t key_code, uint32_t modifier_mask)<br></br>Sends a key down/pressed event to MLWebView.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectKeyUp](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectkeyup)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t key_code, uint32_t modifier_mask)<br></br>Sends a key up/release event to MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollSize](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrollsize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_width, int32_t * out_height)<br></br>Get the entire scrollable size of the webview.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollOffset](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrolloffset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_x, int32_t * out_y)<br></br>Get the scroll offset of the webview.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollSize](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrollsize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_width, int32_t * out_height)<br></br>This API is stubbed out and translates to a no-op.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollOffset](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrolloffset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_x, int32_t * out_y)<br></br>This API is stubbed out and translates to a no-op.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewScrollBy](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewscrollby)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const int32_t x_pixels, const int32_t y_pixels)<br></br>Triggers a mouse "Scroll" event.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetZoomFactor](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetzoomfactor)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, double * out_zoom_factor)<br></br>Get the current zoom factor. The default zoom factor is 1.0.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewZoomIn](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewzoomin)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Zoom in one level.  |
@@ -206,7 +206,7 @@ Flags to set special key states during input.
 
 -----------
 
-### Anonymous Enum 27 {#enums-anonymous-enum-27}
+### Anonymous Enum 30 {#enums-anonymous-enum-30}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -1335,7 +1335,7 @@ MLResult MLWebViewGetScrollSize(
 )
 ```
 
-Get the entire scrollable size of the webview. 
+This API is stubbed out and translates to a no-op. 
 
 **Parameters**
 
@@ -1349,19 +1349,17 @@ Get the entire scrollable size of the webview.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The out_width and out_height parameters were updated with the current size value. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get the scroll size due to an internal error.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|This API is stubbed out and translates to a no-op.|
 **Required Permissions**:
 
   * None 
 
 
-This should be typically called afer #MLWebViewEventCallback::on_load_end to determine the scollable size of the main frame of the loaded page. Some pages might dynamically resize and this should be called before each frame draw to correctly determine the scrollable size of the webview.
 
 
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal.
+:::
 
 
 **API Level:**
@@ -1382,7 +1380,7 @@ MLResult MLWebViewGetScrollOffset(
 )
 ```
 
-Get the scroll offset of the webview. 
+This API is stubbed out and translates to a no-op. 
 
 **Parameters**
 
@@ -1396,17 +1394,17 @@ Get the scroll offset of the webview.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The out_width and out_height parameters were updated with the current scroll offset value. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get the scroll offset due to an internal error.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|This API is stubbed out and translates to a no-op.|
 **Required Permissions**:
 
   * None 
 
 
 
+
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal.
+:::
 
 
 **API Level:**

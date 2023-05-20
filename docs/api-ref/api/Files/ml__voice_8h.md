@@ -29,7 +29,7 @@ title: ml_voice.h
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 26](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-26)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Files/ml__voice_8h.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
+| enum | **[Anonymous Enum 29](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-29)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Files/ml__voice_8h.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
 | enum | **[MLVoiceResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
 | enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
 | enum | **[MLVoiceIntentNoIntentReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
@@ -50,7 +50,7 @@ title: ml_voice.h
 
 ## Enums Documentation
 
-### Anonymous Enum 26 {#enums-anonymous-enum-26}
+### Anonymous Enum 29 {#enums-anonymous-enum-29}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

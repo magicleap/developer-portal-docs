@@ -46,7 +46,7 @@ title: UnitySDKEditorTests
 | class | **[MLPermissions](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLPermissions.md)**  |
 | class | **[MLResult](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLResult.md)**  |
 | class | **[MLTime](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLTime.md)**  |
-| class | **[MLVoiceIntent](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLVoiceIntent.md)**  |
+| class | **[MLVoice](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLVoice.md)**  |
 | class | **[MLWebRTC](/unity-api/api/UnitySDKEditorTests/MLWebRTC/UnitySDKEditorTests.MLWebRTC.md)**  |
 | class | **[MLWebView](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLWebView.md)**  |
 | class | **[MLWorldCamera](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLWorldCamera.md)**  |

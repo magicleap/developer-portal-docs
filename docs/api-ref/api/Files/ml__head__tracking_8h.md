@@ -414,6 +414,10 @@ Returns the most recent head tracking state.
 
 
 
+:::caution Deprecated
+Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingGetStateEx. 
+:::
+
 
 
 -----------
@@ -600,7 +604,9 @@ ML_API MLResult ML_CALL MLHeadTrackingDestroy(MLHandle head_tracker);
 
 ML_API MLResult ML_CALL MLHeadTrackingGetStaticData(MLHandle head_tracker, MLHeadTrackingStaticData *out_data);
 
+ML_DEPRECATED_MSG("Replaced by MLHeadTrackingGetStateEx.")
 ML_API MLResult ML_CALL MLHeadTrackingGetState(MLHandle head_tracker, MLHeadTrackingState *out_state);
+
 ML_API MLResult ML_CALL MLHeadTrackingGetStateEx(MLHandle head_tracker, MLHeadTrackingStateEx *out_state);
 
 

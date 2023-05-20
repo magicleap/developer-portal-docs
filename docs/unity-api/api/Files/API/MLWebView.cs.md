@@ -95,8 +95,10 @@ namespace UnityEngine.XR.MagicLeap
 
         public MLResult ScrollBy(uint xPixels, uint yPixels) => MLResult.Create(ScrollByInternal(xPixels, yPixels));
 
+        [Obsolete("GetScrollSize has been deprecated and will be removed in a future release.")]
         public Vector2Int GetScrollSize() => GetScrollSizeInternal();
 
+        [Obsolete("GetScrollOffset has been deprecated and will be removed in a future release.")]
         public Vector2Int GetScrollOffset() => GetScrollOffsetInternal();
 
         public MLResult ResetZoom() => MLResult.Create(ResetZoomInternal());

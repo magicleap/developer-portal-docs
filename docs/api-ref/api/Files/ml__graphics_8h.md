@@ -439,7 +439,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 
@@ -574,7 +574,7 @@ Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group_
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 
@@ -1169,6 +1169,7 @@ Can be called any time after the client has been created. Updates are reflected 
 #pragma once
 
 #include "ml_api.h"
+#include "ml_time.h"
 #include "ml_types.h"
 
 #include <string.h>
@@ -1315,12 +1316,13 @@ typedef struct MLGraphicsFrameInfo {
   MLHandle wait_sync_object;
   uint32_t num_virtual_cameras;
   MLGraphicsVirtualCameraInfo virtual_cameras[MLGraphicsVirtualCameraName_Count];
+  MLTime predicted_display_time;
 } MLGraphicsFrameInfo;
 
 ML_STATIC_INLINE void MLGraphicsFrameInfoInit(MLGraphicsFrameInfo *inout_frame_info) {
   if (NULL != inout_frame_info) {
     memset(inout_frame_info, 0, sizeof(MLGraphicsFrameInfo));
-    inout_frame_info->version = 2;
+    inout_frame_info->version = 3;
     inout_frame_info->handle  = (MLHandle)ML_INVALID_HANDLE;
   }
 }
