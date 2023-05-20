@@ -1,5 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
+const docsVersions = require('./docs-versions.json');
 const pathPrefix = process.env.REACT_APP_DOCUSAURUS_ROOT || ''; // Prefix path of the Docusaurus base URL
 const ADD_ROUTER = process.env.ADD_ROUTER; // development option to force inclusion of the router
 
@@ -280,17 +281,7 @@ module.exports = {
           editUrl: undefined,
           includeCurrentVersion: true,
           lastVersion: 'current',
-          versions: {
-            current: {
-              label: '17 May 2023'
-            },
-            '22-Mar-2023': {
-              label: '22 Mar 2023'
-            },
-            // '22-Mar-2023': {
-            //   label: '22 Mar 2023'
-            // },
-          },
+          versions: docsVersions,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

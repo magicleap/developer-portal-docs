@@ -18,7 +18,7 @@ Create a new project using the Universal Render Pipeline template. Although Magi
 
 1. Open the Unity Hub.
 2. Select **New project**.
-3. Set the **Editor Version** to one that is compatible with the Magic Leap 2 (version 2022.2.0b7 or higher).
+3. Set the **Editor Version** to one that is compatible with the Magic Leap 2 (in the range of **2022.2.x**).
 4. Select the **3D (URP)** (3D Universal Render Pipeline) template project, then **Create project**.
 
 ![Create New Unity Project Window](/img/unity/new_unity_project.png)

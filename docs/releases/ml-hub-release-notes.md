@@ -1,8 +1,22 @@
 ---
 title: Magic Leap Hub Release Notes
 sidebar_position: 2
-date: 04/24/2023
+date: 05/12/2023
 ---
+
+## Version 2.0.11
+
+* Magic Leap Hub anonymous usage telemetry is disabled
+* Remote Render: various UX updates
+* Device Bridge: UI fix for long device names
+* Device Stream: UI is updated to show FPS counter
+* Package Manager: dedicated panel on Home Screen and various UI updates
+* Advanced Capture: UX updates
+
+### Known behaviors
+
+* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
+* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
 
 ## Version 2.0.10
 

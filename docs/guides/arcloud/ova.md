@@ -37,6 +37,12 @@ deployments in production environments! Instead, it is a means of quickly testin
 
 The images are available on the [Magic Leap 2 Developer Portal](https://ml2-developer.magicleap.com/downloads).
 
+:::note Authentication
+The OVA image download requires authentication in order to be visible and to download on the Downloads page.
+
+Log in by clicking the "person" icon at the top-right of the Downloads page, then "Sign in."
+:::
+
 Download the latest version of an image for the [runtime environment](#runtime-environments) of your choice.
 The OVA image supports the majority of the environments, except for MacBooks with Apple Silicon chipsets, in which case
 the UTM image should be used.

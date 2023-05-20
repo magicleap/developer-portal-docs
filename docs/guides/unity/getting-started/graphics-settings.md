@@ -14,7 +14,7 @@ While using the Universal Render Pipeline is not required, it is strongly recomm
 
 ## Prerequisites
 
-- [Unity project using Editor version 2022.2.0b7 or higher](/docs/guides/unity/getting-started/create-a-project.md)
+- [Unity project using Editor in the range of **2022.2.x**](/docs/guides/unity/getting-started/create-a-project.md)
 - [Configure Unity Settings](/docs/guides/unity/getting-started\configure-unity-settings.md)
 
 ## Delete the starter URP assets

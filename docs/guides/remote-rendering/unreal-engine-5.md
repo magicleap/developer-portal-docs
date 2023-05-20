@@ -41,7 +41,7 @@ If you’re using the Virtual Reality template in Step 1, this step will not be 
 
 - Make sure `Start in VR` is enabled in **Edit** -> **Project Settings**
 
-![Project Settings VR](/img/unreal-5/preoject-settings-vr.png)
+![Project Settings VR](/img/unreal-5/project-settings-vr.png)
 
 2. Set the **RHI** to `Vulkan`
 

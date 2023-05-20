@@ -32,4 +32,7 @@ See the [App Simulator Setup guide](docs\guides\developer-tools\app-sim\app-sim-
 With the App Simulator running in the Magic Leap Hub, enter Play mode on the Unity Editor. Once in Play mode, you should notice that Magic Leap Application Simulator's Device view displays the same content as your Game View window, in addition to the device's environment.
 
 <Image url= {require("/img/app-sim/ml-unity-appsim.png")} >Screenshot of Unity and Magic Leap App Simulator running side-by-side</Image>
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/release/2023/may
