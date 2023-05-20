@@ -1,0 +1,80 @@
+---
+title: MLControllerSystemStateEx
+summary: a structure containing information about the current state of the controller system. 
+
+---
+
+# MLControllerSystemStateEx
+
+**Module:** **[Controller](/api-ref/api/Modules/group___controller/group___controller.md)**
+
+
+
+A structure containing information about the current state of the controller system.  [More...](#detailed-description)
+
+
+`#include <ml_controller.h>`
+
+## Public Attributes
+
+| Type           | Name           |
+| -------------- | -------------- |
+| uint32_t | **[version](/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state_ex.md#uint32-t-version)**  |
+| [MLControllerStateEx](/api-ref/api/Modules/group___controller/struct_m_l_controller_state_ex.md)[MLController_MaxActive] | **[controller_state](/api-ref/api/Modules/group___controller/struct_m_l_controller_system_state_ex.md#mlcontrollerstateex-controller-state)**  |
+
+## Detailed Description
+
+```cpp
+struct MLControllerSystemStateEx;
+```
+
+A structure containing information about the current state of the controller system. 
+
+
+
+
+**API Level:**
+  * 21
+
+
+
+
+-----------
+## Public Attributes Documentation
+
+### version {#uint32-t-version}
+
+```cpp
+uint32_t version;
+```
+
+
+Version of this structure. 
+
+
+
+
+
+-----------
+
+### controller_state {#mlcontrollerstateex-controller-state}
+
+```cpp
+MLControllerStateEx[MLController_MaxActive] controller_state;
+```
+
+
+
+| Type | Description |
+|--|--|
+| [MLControllerStateEx](/api-ref/api/Modules/group___controller/struct_m_l_controller_state_ex.md)[MLController_MaxActive] | A structure containing information about the current state of this controller. [MLController_MaxActive] |
+
+
+State objects for each connected and active controller. 
+
+
+
+
+
+-----------
+
