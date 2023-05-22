@@ -5,7 +5,7 @@ sidebar_position: 0
 date: 05/22/2023
 ---
 
-## Magic Leap OS - May 2023 - B3E.230330.11-R.043
+## Magic Leap OS - May 2023 - B3E.230427.10-R.023
 
 **Don’t forget:** Some Magic Leap hardware and software features are in a pre-release state and might not be available, might contain bugs or defects, and might experience delays or failures. Read this document for guidance on the current state of Magic Leap hardware and software. This guidance helps developers make the best possible use of the Magic Leap platform.
 
