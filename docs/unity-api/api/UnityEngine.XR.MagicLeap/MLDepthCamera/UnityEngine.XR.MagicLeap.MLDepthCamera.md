@@ -15,14 +15,14 @@ summary: apis to access the depth camera data.
 APIs to access the depth camera data.   [More...](#detailed-description)  
 
 
-Inherits from: <br></br>[MLAPIBase](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md)
+Inherits from: <br></br>[MLAutoAPISingleton< MLDepthCamera >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
 
 
 
 ## Detailed Description
 
 ```csharp
-public class MLDepthCamera : MLAPIBase 
+public class MLDepthCamera : MLAutoAPISingleton< MLDepthCamera > 
 ```
 
 
@@ -48,7 +48,7 @@ The settings the Depth Camera is currently configured with.
 
 ```csharp
 
-public Settings CurrentSettings { get; set; }
+public static Settings CurrentSettings { get; set; }
 
 ```
 
@@ -66,7 +66,7 @@ public Settings CurrentSettings { get; set; }
 
 ```csharp
 
-public bool IsConnected { get; set; }
+public static bool IsConnected { get; set; }
 
 ```
 
@@ -84,7 +84,7 @@ public bool IsConnected { get; set; }
 Connect to depth camera. 
 
 ```csharp
-public MLResult Connect()
+public static MLResult Connect()
 ```
 
 
@@ -114,7 +114,7 @@ permissions com.magicleap.permission.DEPTH&#95;CAMERA (protection level: dangero
 Disconnect from depth camera. 
 
 ```csharp
-public MLResult Disconnect()
+public static MLResult Disconnect()
 ```
 
 
@@ -141,7 +141,7 @@ permissions None
 Poll for Frames. 
 
 ```csharp
-public MLResult GetLatestDepthData(
+public static MLResult GetLatestDepthData(
     ulong timeoutMs,
     out Data data
 )
@@ -181,10 +181,12 @@ permissions None
 
 -----------
 
-###  MLDepthCamera {#functions-mldepthcamera}
+### void SetSettings {#void-setsettings}
+
+Sets the current settings of Depth Camera. 
 
 ```csharp
-public MLDepthCamera(
+public static void SetSettings(
     Settings settings
 )
 ```
@@ -194,7 +196,7 @@ public MLDepthCamera(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) |settings|Depth Camera [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md)|
+| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) |settings||
 
 
 
@@ -208,7 +210,7 @@ public MLDepthCamera(
 Update the depth camera settings. 
 
 ```csharp
-public MLResult UpdateSettings(
+public static MLResult UpdateSettings(
     Settings settings
 )
 ```
@@ -261,7 +263,41 @@ protected virtual override void OnApplicationPause(
 
 
 
-**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md#void-onapplicationpause)
+**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-onapplicationpause)
+
+
+
+-----------
+
+### StartAPI {#override-startapi}
+
+Do API-specific creation/initialization of ML resources for this API, such as creating trackers, etc. Called automatically the first time  Instance  is accessed. Error checking on the return value is performed in the base class. 
+
+```csharp
+protected virtual override MLResult.Code StartAPI()
+```
+
+
+
+
+**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
+
+
+
+-----------
+
+### StopAPI {#override-stopapi}
+
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+
+```csharp
+protected virtual override MLResult.Code StopAPI()
+```
+
+
+
+
+**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
 
 
 

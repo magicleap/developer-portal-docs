@@ -29,7 +29,7 @@ title: ml_eye_camera.h
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLEyeCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier)** <br></br> { <br></br>[MLEyeCameraIdentifier_LeftTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-lefttemple) = 1 << 0,<br></br> [MLEyeCameraIdentifier_LeftNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-leftnasal) = 1 << 1,<br></br> [MLEyeCameraIdentifier_RightNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-rightnasal) = 1 << 2,<br></br> [MLEyeCameraIdentifier_RightTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-righttemple) = 1 << 3,<br></br> [MLEyeCameraIdentifier_All](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-all) = MLEyeCameraIdentifier_LeftTemple |
+| enum | **[MLEyeCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier)** <br></br> { <br></br>[MLEyeCameraIdentifier_None](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-none) = 0,<br></br> [MLEyeCameraIdentifier_LeftTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-lefttemple) = 1 << 0,<br></br> [MLEyeCameraIdentifier_LeftNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-leftnasal) = 1 << 1,<br></br> [MLEyeCameraIdentifier_RightNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-rightnasal) = 1 << 2,<br></br> [MLEyeCameraIdentifier_RightTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-righttemple) = 1 << 3,<br></br> [MLEyeCameraIdentifier_All](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-all) = MLEyeCameraIdentifier_LeftTemple |
                               MLEyeCameraIdentifier_LeftNasal  |
                               MLEyeCameraIdentifier_RightNasal |
                               MLEyeCameraIdentifier_RightTemple,<br></br> [MLEyeCameraIdentifier_Ensure32Bits](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
@@ -52,6 +52,7 @@ title: ml_eye_camera.h
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLEyeCameraIdentifier_None |  0| None. |
 | MLEyeCameraIdentifier_LeftTemple |  1 << 0| Left temple eye camera. |
 | MLEyeCameraIdentifier_LeftNasal |  1 << 1| Left nasal eye camera. |
 | MLEyeCameraIdentifier_RightNasal |  1 << 2| Right nasal eye camera. |
@@ -283,7 +284,7 @@ Update the eye camera settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
 | const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |settings|Pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md).|
 
 **Returns**
@@ -325,7 +326,7 @@ Poll for Frames.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
 | uint64_t |timeout_ms|Timeout in milliseconds. |
 | [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |out_data|Eye camera data. Will be set to NULL if no valid data is available at this time.|
 
@@ -374,7 +375,7 @@ Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
 | [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |eye_camera_data|Pointer to a valid [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object.|
 
 **Returns**
@@ -471,6 +472,7 @@ This will disconnect from all the eye camera(s) currently connected.
 ML_EXTERN_C_BEGIN
 
 typedef enum MLEyeCameraIdentifier{
+  MLEyeCameraIdentifier_None = 0,
   MLEyeCameraIdentifier_LeftTemple = 1 << 0,
   MLEyeCameraIdentifier_LeftNasal = 1 << 1,
   MLEyeCameraIdentifier_RightNasal = 1 << 2,

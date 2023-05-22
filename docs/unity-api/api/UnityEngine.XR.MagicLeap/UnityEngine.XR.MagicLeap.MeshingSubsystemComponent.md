@@ -21,6 +21,21 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Fields
 
+### PrefabRenderer {#meshrenderer-prefabrenderer}
+
+```csharp
+
+public MeshRenderer PrefabRenderer { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### batchSize {#int-batchsize}
 
 How many meshes to update per batch. Larger values are more efficient, but have higher latency. 
@@ -264,28 +279,6 @@ public MeshType requestedMeshType { get; set; }
 
 ## Public Methods
 
-### [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-levelofdetail) DensityToLevelOfDetail {#levelofdetail-densitytolevelofdetail}
-
-```csharp
-public static LevelOfDetail DensityToLevelOfDetail(
-    float density
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| float |density||
-
-
-
-
-
-
------------
-
 ### void DestroyAllMeshes {#void-destroyallmeshes}
 
 Destroy all mesh  GameObject s created by this [MeshingSubsystemComponent](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md). The [meshIdToGameObjectMap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap) will also be cleared. 
@@ -337,28 +330,6 @@ public static float FromLevelOfDetailToDensity(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |lod|Level of detail of the block mesh. |
-
-
-
-
-
-
------------
-
-### float LevelOfDetailToDensity {#float-levelofdetailtodensity}
-
-```csharp
-public static float LevelOfDetailToDensity(
-    LevelOfDetail lod
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-levelofdetail) |lod|Describes the level of detail (LOD) to request from the generated meshes. This property is deprecated, and has been replaced by density. |
 
 
 
@@ -543,25 +514,6 @@ public Action< MeshId > meshUpdated()
 -----------
 
 ## Public Enums
-
-### LevelOfDetail {#enums-levelofdetail}
-
-Describes the level of detail (LOD) to request from the generated meshes. This property is deprecated, and has been replaced by density. 
-
-| Enumerator | Value | Description |
-| ---------- | ----- | ----------- |
-| Minimum | | Minimum level of detail. Meshes will render faster, but be less accurate.   |
-| Medium | | Medium level of detail. A good balance between accuracy and render performance.   |
-| Maximum | | Maximum level of detail. This will take more time to render, but the meshes will be more accurate.   |
-
-
-
-
-
-
-
-
------------
 
 ### MeshType {#enums-meshtype}
 

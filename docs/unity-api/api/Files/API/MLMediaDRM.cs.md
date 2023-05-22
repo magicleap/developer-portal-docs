@@ -31,6 +31,7 @@ title: MLMediaDRM.cs
 
 namespace UnityEngine.XR.MagicLeap
 {
+    using System;
     using System.Collections.Generic;
     using System.Runtime.InteropServices;
     using MagicLeap.Native;
@@ -43,16 +44,22 @@ namespace UnityEngine.XR.MagicLeap
             {
                 public partial class DRM
                 {
+                    [Obsolete("OnEventDelegate has been deprecated and will be removed in a future release.")]
                     public delegate void OnEventDelegate(DRM drm, Event eventInfo);
 
+                    [Obsolete("OnExpirationUpdateDelegate has been deprecated and will be removed in a future release.")]
                     public delegate void OnExpirationUpdateDelegate(DRM drm, Expiration expirationInfo);
 
+                    [Obsolete("OnKeyStatusChangeDelegate has been deprecated and will be removed in a future release.")]
                     public delegate void OnKeyStatusChangeDelegate(DRM drm, KeyStatuses KeyStatuses);
 
+                    [Obsolete("OnEvent has been deprecated and will be removed in a future release.")]
                     public event OnEventDelegate OnEvent = delegate { };
 
+                    [Obsolete("OnExpirationUpdateDelegate has been deprecated and will be removed in a future release.")]
                     public event OnExpirationUpdateDelegate OnExpirationUpdate = delegate { };
 
+                    [Obsolete("OnKeyStatusChangeDelegate has been deprecated and will be removed in a future release.")]
                     public event OnKeyStatusChangeDelegate OnKeyStatusChange = delegate { };
 
                     public enum Property
@@ -99,6 +106,7 @@ namespace UnityEngine.XR.MagicLeap
                         KeysChange,
                     };
 
+                    [Obsolete("TrackType has been deprecated and will be removed in a future release.")]
                     public Track.Type TrackType { get; private set; }
 
                     private ulong handle = MagicLeapNativeBindings.InvalidHandle;
@@ -111,6 +119,7 @@ namespace UnityEngine.XR.MagicLeap
 
                     private DRM() { }
 
+                    [Obsolete("DRM has been deprecated and will be removed in a future release.")]
                     public DRM(MLMedia.Player mlPlayer, Info trackDRMInfo)
                     {
                         this.mediaPlayer = mlPlayer;
@@ -125,6 +134,7 @@ namespace UnityEngine.XR.MagicLeap
                         MLResult.DidNativeCallSucceed(resultCode, nameof(NativeBindings.MLMediaDRMSetOnEventListenerEx));
                     }
 
+                    [Obsolete("CreateSession has been deprecated and will be removed in a future release.")]
                     public Session CreateSession(Info trackInfo) => new Session(this, trackInfo.PSSHEntries[0]);
 
                     ~DRM()
@@ -136,6 +146,7 @@ namespace UnityEngine.XR.MagicLeap
                         }
                     }
 
+                    [Obsolete("ProvisionRequest has been deprecated and will be removed in a future release.")]
                     public MLResult ProvisionRequest(out byte[] requestData, out string defaultURL)
                     {
                         MLResult.Code resultCode = NativeBindings.MLMediaDRMGetProvisionRequest(this.handle, "none", out NativeBindings.MLMediaDRMRequestMessage provisionRequest);
@@ -150,6 +161,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("ProvisionResponse has been deprecated and will be removed in a future release.")]
                     public MLResult ProvisionResponse(byte[] responseData)
                     {
                         NativeBindings.MLMediaDRMByteArray responseDRMByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -164,6 +176,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("GetSecureStops has been deprecated and will be removed in a future release.")]
                     public MLResult GetSecureStops(out byte[][] secureStops)
                     {
                         MLResult.Code resultCode = NativeBindings.MLMediaDRMGetSecureStops(this.handle, out NativeBindings.MLMediaDRMByteArrayList secureStopsNative);
@@ -173,6 +186,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("GetSecureStop has been deprecated and will be removed in a future release.")]
                     public MLResult GetSecureStop(byte[] secureStopId, out byte[] secureStop)
                     {
                         NativeBindings.MLMediaDRMByteArray secureStopIdNative = new NativeBindings.MLMediaDRMByteArray();
@@ -185,6 +199,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("ReleaseAllSecureStops has been deprecated and will be removed in a future release.")]
                     public MLResult ReleaseAllSecureStops()
                     {
                         MLResult.Code resultCode = NativeBindings.MLMediaDRMReleaseAllSecureStops(this.handle);
@@ -192,6 +207,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("ReleaseSecureStops has been deprecated and will be removed in a future release.")]
                     public MLResult ReleaseSecureStops(byte[] secureStops)
                     {
                         NativeBindings.MLMediaDRMByteArray secureStopNative = new NativeBindings.MLMediaDRMByteArray();
@@ -202,6 +218,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("IsCryptoSchemeSupported has been deprecated and will be removed in a future release.")]
                     public MLResult IsCryptoSchemeSupported(MagicLeapNativeBindings.MLUUID uuid, string mime, out bool isSupported)
                     {
                         byte[] mimeBytes = System.Text.Encoding.ASCII.GetBytes(mime);
@@ -215,6 +232,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("GetPropertyString has been deprecated and will be removed in a future release.")]
                     public MLResult GetPropertyString(Property property, out string propertyValue)
                     {
                         NativeBindings.Properties.TryGetValue(property, out string propertyName);
@@ -223,6 +241,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("SetPropertyString has been deprecated and will be removed in a future release.")]
                     public MLResult SetPropertyString(Property property, string propertyValue)
                     {
                         NativeBindings.Properties.TryGetValue(property, out string propertyName);
@@ -231,6 +250,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("GetPropertyByteArray has been deprecated and will be removed in a future release.")]
                     public MLResult GetPropertyByteArray(Property property, out byte[] propertyValue)
                     {
                         NativeBindings.Properties.TryGetValue(property, out string propertyName);
@@ -241,6 +261,7 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("SetPropertyByteArray has been deprecated and will be removed in a future release.")]
                     public MLResult SetPropertyByteArray(Property property, byte[] propertyValue)
                     {
                         NativeBindings.Properties.TryGetValue(property, out string propertyName);
@@ -252,10 +273,13 @@ namespace UnityEngine.XR.MagicLeap
                         return MLResult.Create(resultCode);
                     }
 
+                    [Obsolete("Session has been deprecated and will be removed in a future release.")]
                     public class Session
                     {
+                        [Obsolete("CryptoKeyParam has been deprecated and will be removed in a future release.")]
                         public readonly struct CryptoKeyParam
                         {
+                            [Obsolete("CryptoKeyParam has been deprecated and will be removed in a future release.")]
                             public CryptoKeyParam(string algorithm, byte[] keySetId, byte[] initialVector)
                             {
                                 this.Algorithm = algorithm;
@@ -263,11 +287,17 @@ namespace UnityEngine.XR.MagicLeap
                                 this.InitialVector = initialVector;
                             }
 
+                            [Obsolete("Algorithm has been deprecated and will be removed in a future release.")]
                             public readonly string Algorithm;
+
+                            [Obsolete("KeySetId has been deprecated and will be removed in a future release.")]
                             public readonly byte[] KeySetId;
+
+                            [Obsolete("InitialVector has been deprecated and will be removed in a future release.")]
                             public readonly byte[] InitialVector;
                         }
 
+                        [Obsolete("HMACParam has been deprecated and will be removed in a future release.")]
                         public readonly struct HMACParam
                         {
                             public HMACParam(string algorithm, byte[] keySetId)
@@ -280,15 +310,20 @@ namespace UnityEngine.XR.MagicLeap
                             public readonly byte[] KeySetId;
                         }
 
+                        [Obsolete("RSAParam has been deprecated and will be removed in a future release.")]
                         public readonly struct RSAParam
                         {
+                            [Obsolete("RSAParam has been deprecated and will be removed in a future release.")]
                             public RSAParam(string algorithm, byte[] wrappedRsaKey)
                             {
                                 this.Algorithm = algorithm;
                                 this.WrappedRsaKey = wrappedRsaKey;
                             }
 
+                            [Obsolete("Algorithm has been deprecated and will be removed in a future release.")]
                             public readonly string Algorithm;
+
+                            [Obsolete("WrappedRsaKey has been deprecated and will be removed in a future release.")]
                             public readonly byte[] WrappedRsaKey;
                         }
 
@@ -304,8 +339,10 @@ namespace UnityEngine.XR.MagicLeap
                                 this.Close();
                         }
 
+                        [Obsolete("Drm has been deprecated and will be removed in a future release.")]
                         public DRM Drm { get; private set; }
 
+                        [Obsolete("IsPrepared has been deprecated and will be removed in a future release.")]
                         public bool IsPrepared { get; private set; }
 
                         internal NativeBindings.MLMediaDRMByteArray id;
@@ -314,6 +351,7 @@ namespace UnityEngine.XR.MagicLeap
 
                         private Player.NativeBindings.MLMediaPlayerPSSHEntry psshKey;
 
+                        [Obsolete("Open has been deprecated and will be removed in a future release.")]
                         public MLResult Open()
                         {
                             MLResult.Code resultCode = NativeBindings.MLMediaDRMOpenSession(this.Drm.handle, out this.id);
@@ -323,6 +361,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("Prepare has been deprecated and will be removed in a future release.")]
                         public MLResult Prepare()
                         {
                             MLMedia.Player.NativeBindings.MLMediaPlayerTrackDRMSessionInfo sessionInfo = new Player.NativeBindings.MLMediaPlayerTrackDRMSessionInfo(this.Drm.TrackType);
@@ -334,6 +373,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("Close has been deprecated and will be removed in a future release.")]
                         public MLResult Close()
                         {
                             MLResult.Code resultCode = NativeBindings.MLMediaDRMByteArrayRelease(ref this.keySetId);
@@ -346,6 +386,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("KeysRequest has been deprecated and will be removed in a future release.")]
                         public MLResult KeysRequest(out byte[] requestData)
                         {
                             NativeBindings.MLMediaDRMKeyRequestInputParam keyRequestParam = new NativeBindings.MLMediaDRMKeyRequestInputParam("cenc", KeyType.Streaming);
@@ -360,6 +401,7 @@ namespace UnityEngine.XR.MagicLeap
                         }
 
 
+                        [Obsolete("KeysResponse has been deprecated and will be removed in a future release.")]
                         public MLResult KeysResponse(byte[] responseData, out byte[] keySetData)
                         {
                             NativeBindings.MLMediaDRMByteArray responseDRMByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -372,6 +414,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("Encrypt has been deprecated and will be removed in a future release.")]
                         public MLResult Encrypt(CryptoKeyParam cryptoKeyParam, byte[] input, out byte[] output)
                         {
                             NativeBindings.MLMediaDRMByteArray keySetIdByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -399,6 +442,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("Decrypt has been deprecated and will be removed in a future release.")]
                         public MLResult Decrypt(CryptoKeyParam cryptoKeyParam, byte[] input, out byte[] output)
                         {
                             NativeBindings.MLMediaDRMByteArray keySetIdByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -426,6 +470,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("Sign has been deprecated and will be removed in a future release.")]
                         public MLResult Sign(HMACParam hmacParam, byte[] message, out byte[] signature)
                         {
                             NativeBindings.MLMediaDRMByteArray keySetIdByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -449,6 +494,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("Sign has been deprecated and will be removed in a future release.")]
                         public MLResult Sign(RSAParam rsaParam, byte[] message, out byte[] signature)
                         {
                             NativeBindings.MLMediaDRMByteArray keySetIdByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -472,6 +518,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("Verify has been deprecated and will be removed in a future release.")]
                         public MLResult Verify(HMACParam hmacParam, byte[] message, byte[] signature, out bool isMatch)
                         {
                             NativeBindings.MLMediaDRMByteArray keySetIdByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -497,6 +544,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("GetKeyValues has been deprecated and will be removed in a future release.")]
                         public MLResult GetKeyValues(out KeyValuePair<string, string>[] keyValues)
                         {
                             MLResult.Code resultCode = NativeBindings.MLMediaDRMQueryKeyStatus(this.Drm.handle, ref this.id, out NativeBindings.MLMediaDRMKeyValueArray keyValuesNative);
@@ -505,6 +553,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("RestoreKeys has been deprecated and will be removed in a future release.")]
                         public MLResult RestoreKeys(byte[] keySetId)
                         {
                             NativeBindings.MLMediaDRMByteArray keySetIdByteArray = new NativeBindings.MLMediaDRMByteArray();
@@ -515,6 +564,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("AddKeyValue has been deprecated and will be removed in a future release.")]
                         public MLResult AddKeyValue(KeyValuePair<string, string> pair, out KeyValuePair<string, string>[] allKeys)
                         {
                             NativeBindings.MLMediaDRMKeyValue keyValueNative = new NativeBindings.MLMediaDRMKeyValue(pair);
@@ -524,6 +574,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("AllocateKeyValueArray has been deprecated and will be removed in a future release.")]
                         public MLResult AllocateKeyValueArray(uint size, out KeyValuePair<string, string>[] allKeys)
                         {
                             MLResult.Code resultCode = NativeBindings.MLMediaDRMKeyValueArrayAllocate(size, out NativeBindings.MLMediaDRMKeyValueArray keyValuesNative);
@@ -532,6 +583,7 @@ namespace UnityEngine.XR.MagicLeap
                             return MLResult.Create(resultCode);
                         }
 
+                        [Obsolete("RemoveKeys has been deprecated and will be removed in a future release.")]
                         public MLResult RemoveKeys(byte[] keySetId)
                         {
                             NativeBindings.MLMediaDRMByteArray keySetIdByteArray = new NativeBindings.MLMediaDRMByteArray();

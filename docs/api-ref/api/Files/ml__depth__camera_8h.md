@@ -35,9 +35,9 @@ title: ml_depth_camera.h
 |                | Name           |
 | -------------- | -------------- |
 | enum | **[Anonymous Enum 8](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-8)** <br></br> { <br></br>[MLDepthCameraIntrinsics_MaxDistortionCoefficients](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraintrinsics-maxdistortioncoefficients) = 5<br></br>} |
-| enum | **[MLDepthCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode)** <br></br> { <br></br>[MLDepthCameraMode_LongRange](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameramode-longrange) = 1 << 0,<br></br> [MLDepthCameraMode_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of depth camera modes.  |
+| enum | **[MLDepthCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode)** <br></br> { <br></br>[MLDepthCameraMode_None](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameramode-none) = 0,<br></br> [MLDepthCameraMode_LongRange](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameramode-longrange) = 1 << 0,<br></br> [MLDepthCameraMode_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of depth camera modes.  |
 | enum | **[MLDepthCameraFrameType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype)** <br></br> { <br></br>[MLDepthCameraFrameType_Unknown](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraframetype-unknown) = 0,<br></br> [MLDepthCameraFrameType_LongRange](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraframetype-longrange) = 1,<br></br> [MLDepthCameraFrameType_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraframetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of camera mode used when capturing a frame.  |
-| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_DepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_RawDepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-rawdepthimage) = 1 << 4,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
+| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_None](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-none) = 0,<br></br> [MLDepthCameraFlags_DepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_RawDepthImage](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-rawdepthimage) = 1 << 4,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
 | enum | **[MLDepthCameraDepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags)** <br></br> { <br></br>[MLDepthCameraDepthFlags_Valid](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-valid) = 0 << 0,<br></br> [MLDepthCameraDepthFlags_Invalid](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-invalid) = 1 << 0,<br></br> [MLDepthCameraDepthFlags_Saturated](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-saturated) = 1 << 1,<br></br> [MLDepthCameraDepthFlags_Inconsistent](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-inconsistent) = 1 << 2,<br></br> [MLDepthCameraDepthFlags_LowSignal](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-lowsignal) = 1 << 3,<br></br> [MLDepthCameraDepthFlags_FlyingPixel](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-flyingpixel) = 1 << 4,<br></br> [MLDepthCameraDepthFlags_Masked](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-masked) = 1 << 5,<br></br> [MLDepthCameraDepthFlags_SBI](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-sbi) = 1 << 8,<br></br> [MLDepthCameraDepthFlags_StrayLight](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-straylight) = 1 << 9,<br></br> [MLDepthCameraDepthFlags_ConnectedComponent](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-connectedcomponent) = 1 << 10,<br></br> [MLDepthCameraDepthFlags_Ensure32Bits](/api-ref/api/Files/ml__depth__camera_8h.md#enums-mldepthcameradepthflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
 
 ## Functions
@@ -73,6 +73,7 @@ title: ml_depth_camera.h
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLDepthCameraMode_None |  0| None. |
 | MLDepthCameraMode_LongRange |  1 << 0| Long range mode. Under normal operations long range mode has a maximum frequency of 5fps and a range of up to 5m, in some cases this can go as far 7.5m. .|
 | MLDepthCameraMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -110,6 +111,7 @@ Enumeration of camera mode used when capturing a frame.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLDepthCameraFlags_None |  0| None. |
 | MLDepthCameraFlags_DepthImage |  1 << 0| Enable MLDepthCameraDepthImage. See [MLDepthCameraDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) for more details. |
 | MLDepthCameraFlags_Confidence |  1 << 1| Enable MLDepthCameraConfidenceBuffer. See [MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) for more details. |
 | MLDepthCameraFlags_DepthFlags |  1 << 2| Enable MLDepthCameraDepthFlagsBuffer. See [MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) for more details. |
@@ -137,9 +139,9 @@ Enumeration of flags to select data requested from depth camera.
 | MLDepthCameraDepthFlags_Inconsistent |  1 << 2| Inconsistent data. Inconsistent data received when capturing frames. This can happen due to fast motion. .|
 | MLDepthCameraDepthFlags_LowSignal |  1 << 3| Low signal. Pixel has very low signal to noise ratio. One example of when this can happen is for pixels in far end of the range. .|
 | MLDepthCameraDepthFlags_FlyingPixel |  1 << 4| Flying pixel. This typically happens when there is step jump in the distance of adjoining pixels in the scene. Example: When you open a door looking into the room the edges along the door's edges can cause flying pixels. .|
-| MLDepthCameraDepthFlags_Masked |  1 << 5| Masked. If this bit is on it indicates that the corresponding pixel may not be within the projector's illumination cone. .|
+| MLDepthCameraDepthFlags_Masked |  1 << 5| Masked. If this bit is on it indicates that the corresponding pixel may not be within the illuminator's illumination cone. .|
 | MLDepthCameraDepthFlags_SBI |  1 << 8| SBI. This bit will be set when there is high noise. .|
-| MLDepthCameraDepthFlags_StrayLight |  1 << 9| Stray light. This could happen when there is another light source apart from the depth camera projector. This could also lead to MLDepthCameraDepthFlags_LowSignal. .|
+| MLDepthCameraDepthFlags_StrayLight |  1 << 9| Stray light. This could happen when there is another light source apart from the depth camera illuminator. This could also lead to MLDepthCameraDepthFlags_LowSignal. .|
 | MLDepthCameraDepthFlags_ConnectedComponent |  1 << 10| Connected component. If a small group of MLDepthCameraDepthFlags_Valid is sorrunded by a set of MLDepthCameraDepthFlags_Invalid then this bit will be set to 1. .|
 | MLDepthCameraDepthFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -553,7 +555,7 @@ Releases specified [MLDepthCameraData](/api-ref/api/Modules/group___camera/struc
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLDepthCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLDepthCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraconnect). |
 | [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) * |depth_camera_data|Pointer to a valid [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) object.|
 
 **Returns**
@@ -649,6 +651,7 @@ enum {
 };
 
 typedef enum MLDepthCameraMode {
+  MLDepthCameraMode_None = 0,
   MLDepthCameraMode_LongRange = 1 << 0,
   MLDepthCameraMode_Ensure32Bits = 0x7FFFFFFF
 } MLDepthCameraMode;
@@ -660,6 +663,7 @@ typedef enum MLDepthCameraFrameType {
 } MLDepthCameraFrameType;
 
 typedef enum MLDepthCameraFlags {
+  MLDepthCameraFlags_None = 0,
   MLDepthCameraFlags_DepthImage = 1 << 0,
   MLDepthCameraFlags_Confidence = 1 << 1,
   MLDepthCameraFlags_DepthFlags = 1 << 2,

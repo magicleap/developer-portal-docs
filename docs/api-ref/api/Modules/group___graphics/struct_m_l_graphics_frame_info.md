@@ -27,6 +27,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[wait_sync_object](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md#mlhandle-wait-sync-object)** <br></br>A handle to a synchronization object that must be cast to VkSemaphore and used during queue submission of a Vulkan app. GL apps can ignore this member.  |
 | uint32_t | **[num_virtual_cameras](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md#uint32-t-num-virtual-cameras)**  |
 | [MLGraphicsVirtualCameraInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md)[MLGraphicsVirtualCameraName_Count] | **[virtual_cameras](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md#mlgraphicsvirtualcamerainfo-virtual-cameras)**  |
+| [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[predicted_display_time](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md#mltime-predicted-display-time)**  |
 
 ## Detailed Description
 
@@ -40,7 +41,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 
@@ -188,6 +189,21 @@ MLGraphicsVirtualCameraInfo[MLGraphicsVirtualCameraName_Count] virtual_cameras;
 
 
 The array of virtual cameras to render to for the frame. 
+
+
+
+
+
+-----------
+
+### predicted_display_time {#mltime-predicted-display-time}
+
+```cpp
+MLTime predicted_display_time;
+```
+
+
+Predicted time when the frame will be displayed. 
 
 
 

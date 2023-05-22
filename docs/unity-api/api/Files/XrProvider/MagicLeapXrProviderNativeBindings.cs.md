@@ -144,6 +144,12 @@ namespace UnityEngine.XR.MagicLeap
         [DllImport(MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
         internal static extern void MeshingSetFreeBlockRequestPointerCallback(CallFreeBlockRequestPointerDelegate createFreePointer);
 
+        [DllImport(MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]      
+        internal static extern MLResult.Code AnchorsCreateQueryAndSnapshot(ulong trackerHandle, in MLAnchors.NativeBindings.MLSpatialAnchorQueryFilter queryFilter, out ulong handle, out uint resultsCount);
+
+        [DllImport(MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
+        internal static extern MLResult.Code AnchorsGetLocalizationInfoAndSnapshot(ulong handle, ref MLAnchors.NativeBindings.MLSpatialAnchorLocalizationInfo localizationInfo);
+
         [AOT.MonoPInvokeCallback(typeof(OnDebugMessageDelegate))]
         private static void OnDebugMessage(LogLevel logLevel, [MarshalAs(UnmanagedType.LPStr)] string message, IntPtr context)
         {

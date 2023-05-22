@@ -35,7 +35,7 @@ public Request()
 
 ```csharp
 public override MLResult Start(
-    Params parameters
+    Params queryParams
 )
 ```
 
@@ -44,7 +44,7 @@ public override MLResult Start(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Params](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Params.md) |parameters|A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
+| [Params](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Params.md) |queryParams|A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
 
 
 

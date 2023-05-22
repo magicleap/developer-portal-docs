@@ -458,7 +458,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 
@@ -593,7 +593,7 @@ Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group_
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 

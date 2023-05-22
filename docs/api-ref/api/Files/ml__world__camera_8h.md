@@ -31,8 +31,8 @@ title: ml_world_camera.h
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 28](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-28)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
-| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_Left](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
+| enum | **[Anonymous Enum 31](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-31)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
+| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_None](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-none) = 0,<br></br> [MLWorldCameraIdentifier_Left](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
                                 MLWorldCameraIdentifier_Right |
                                 MLWorldCameraIdentifier_Center,<br></br> [MLWorldCameraIdentifier_Ensure32Bits](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
 | enum | **[MLWorldCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode)** <br></br> { <br></br>[MLWorldCameraMode_Unknown](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-unknown) = 0,<br></br> [MLWorldCameraMode_LowExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-lowexposure) = 1 << 0,<br></br> [MLWorldCameraMode_NormalExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-normalexposure) = 1 << 1,<br></br> [MLWorldCameraMode_Ensure32Bits](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of world camera modes.  |
@@ -52,7 +52,7 @@ title: ml_world_camera.h
 
 ## Enums Documentation
 
-### Anonymous Enum 28 {#enums-anonymous-enum-28}
+### Anonymous Enum 31 {#enums-anonymous-enum-31}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -72,6 +72,7 @@ title: ml_world_camera.h
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLWorldCameraIdentifier_None |  0| None. |
 | MLWorldCameraIdentifier_Left |  1 << 0| Left World camera. |
 | MLWorldCameraIdentifier_Right |  1 << 1| Right World camera. |
 | MLWorldCameraIdentifier_Center |  1 << 2| Center World camera. |
@@ -548,6 +549,7 @@ enum {
 };
 
 typedef enum MLWorldCameraIdentifier{
+  MLWorldCameraIdentifier_None = 0,
   MLWorldCameraIdentifier_Left = 1 << 0,
   MLWorldCameraIdentifier_Right = 1 << 1,
   MLWorldCameraIdentifier_Center = 1 << 2,

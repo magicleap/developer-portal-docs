@@ -319,6 +319,11 @@ public MLResult.Code MLWebViewGetScrollOffset(
 | out int |y|The number representing the vertical offset of the webview, in pixels.|
 
 
+**Details**
+
+
+TODO: To be removed due to deprecation. 
+
 
 
 
@@ -354,6 +359,11 @@ public MLResult.Code MLWebViewGetScrollSize(
 | out int |width|The number representing the entire width of the webview, in pixels.|
 | out int |height|The number representing the entire height of the webview, in pixels.|
 
+
+**Details**
+
+
+TODO: To be removed due to deprecation. 
 
 
 

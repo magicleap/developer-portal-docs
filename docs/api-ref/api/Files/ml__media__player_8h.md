@@ -161,7 +161,7 @@ Codes for setting video scaling mode.
 | MLMediaPlayerPollingStateFlag_HasSizeChanged |  1 << 5| Size changed. |
 | MLMediaPlayerPollingStateFlag_HasBufferingUpdated |  1 << 6| Buffering updated. |
 | MLMediaPlayerPollingStateFlag_HasReceivedInfo |  1 << 7| Received info. |
-| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Recieved error. |
+| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Received error. |
 | MLMediaPlayerPollingStateFlag_HasTimedTextUpdated |  1 << 9| Timed text updated. |
 | MLMediaPlayerPollingStateFlag_HasSubtitleUpdated |  1 << 10| Subtitle updated. |
 | MLMediaPlayerPollingStateFlag_HasMetadataUpdated |  1 << 11| Metadata updated. |
@@ -2438,16 +2438,17 @@ Gets the handle of the audio stream.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current audio stream handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If used in versions starting 1.2.0 or later.|
 **Required Permissions**:
 
   * None 
 
 
 
+
+:::caution Deprecated
+Unsupported since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -3367,6 +3368,7 @@ ML_API MLResult ML_CALL MLMediaPlayerSetLooping(MLHandle media_player, bool loop
 
 ML_API MLResult ML_CALL MLMediaPlayerSetVolume(MLHandle media_player, float volume);
 
+ML_DEPRECATED_MSG("This feature is not supported starting 1.2.0.")
 ML_API MLResult ML_CALL MLMediaPlayerGetAudioHandle(MLHandle media_player, MLHandle *out_handle);
 
 ML_API MLResult ML_CALL MLMediaPlayerPollStates(MLHandle media_player, uint16_t mask, uint16_t *out_polled_states);

@@ -58,7 +58,7 @@ APIs for video and auido recording.  [More...](#detailed-description)
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderPrepare](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderprepare)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) format)<br></br>Prepares the recorder to begin capturing and encoding data for input mediaformat.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderStart](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderstart)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder)<br></br>Begins capturing and encoding data to the specified file.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderGetInputSurface](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetinputsurface)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_input_surface_handle)<br></br>Gets the input surface to record from when using SURFACE video source.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, int32_t * max_amp)<br></br>Returns the maximum absolute amplitude that was sampled since the last call to this method.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, int32_t * inout_max_amp)<br></br>Returns the maximum absolute amplitude that was sampled since the last call to this method.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderStop](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderstop)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder)<br></br>Stops recording.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderReleaseInputSurface](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreleaseinputsurface)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) input_surface_handle)<br></br>Release the surface that was returned by MLMediaRecorderGetInputSurface.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderReset](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder)<br></br>Restarts the MediaRecorder to its idle state.  |
@@ -1070,7 +1070,7 @@ Captured raw video frames will be consumed directly as input to an encoder witho
 ```cpp
 MLResult MLMediaRecorderGetMaxAmplitude(
     MLHandle media_recorder,
-    int32_t * max_amp
+    int32_t * inout_max_amp
 )
 ```
 
@@ -1081,7 +1081,7 @@ Returns the maximum absolute amplitude that was sampled since the last call to t
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the MediaRecorder. |
-| int32_t * |max_amp|The maximum absolute amplitude measured since the last call, or 0 when called for the first time.|
+| int32_t * |inout_max_amp|The maximum absolute amplitude measured since the last call, or 0 when called for the first time.|
 
 **Returns**
 

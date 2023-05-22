@@ -94,16 +94,16 @@ APIs for accessing Camera Device and to do Camera Capture.  [More...](#detailed-
 | enum | **[Anonymous Enum 5](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-5)** <br></br> { <br></br>[MLCamera_MaxImagePlanes](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcamera-maximageplanes) = 3<br></br>} |
 | enum | **[Anonymous Enum 6](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-6)** <br></br> { <br></br>[MLCameraIntrinsics_MaxDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraintrinsics-maxdistortioncoefficients) = 5<br></br>}<br></br>Camera distortion vector size.  |
 | enum | **[Anonymous Enum 8](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-8)** <br></br> { <br></br>[MLDepthCameraIntrinsics_MaxDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraintrinsics-maxdistortioncoefficients) = 5<br></br>} |
-| enum | **[MLDepthCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode)** <br></br> { <br></br>[MLDepthCameraMode_LongRange](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-longrange) = 1 << 0,<br></br> [MLDepthCameraMode_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of depth camera modes.  |
+| enum | **[MLDepthCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode)** <br></br> { <br></br>[MLDepthCameraMode_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-none) = 0,<br></br> [MLDepthCameraMode_LongRange](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-longrange) = 1 << 0,<br></br> [MLDepthCameraMode_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of depth camera modes.  |
 | enum | **[MLDepthCameraFrameType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype)** <br></br> { <br></br>[MLDepthCameraFrameType_Unknown](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype-unknown) = 0,<br></br> [MLDepthCameraFrameType_LongRange](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype-longrange) = 1,<br></br> [MLDepthCameraFrameType_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of camera mode used when capturing a frame.  |
-| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_DepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_RawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-rawdepthimage) = 1 << 4,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
+| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-none) = 0,<br></br> [MLDepthCameraFlags_DepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_RawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-rawdepthimage) = 1 << 4,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
 | enum | **[MLDepthCameraDepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags)** <br></br> { <br></br>[MLDepthCameraDepthFlags_Valid](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-valid) = 0 << 0,<br></br> [MLDepthCameraDepthFlags_Invalid](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-invalid) = 1 << 0,<br></br> [MLDepthCameraDepthFlags_Saturated](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-saturated) = 1 << 1,<br></br> [MLDepthCameraDepthFlags_Inconsistent](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-inconsistent) = 1 << 2,<br></br> [MLDepthCameraDepthFlags_LowSignal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-lowsignal) = 1 << 3,<br></br> [MLDepthCameraDepthFlags_FlyingPixel](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-flyingpixel) = 1 << 4,<br></br> [MLDepthCameraDepthFlags_Masked](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-masked) = 1 << 5,<br></br> [MLDepthCameraDepthFlags_SBI](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-sbi) = 1 << 8,<br></br> [MLDepthCameraDepthFlags_StrayLight](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-straylight) = 1 << 9,<br></br> [MLDepthCameraDepthFlags_ConnectedComponent](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-connectedcomponent) = 1 << 10,<br></br> [MLDepthCameraDepthFlags_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
-| enum | **[MLEyeCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier)** <br></br> { <br></br>[MLEyeCameraIdentifier_LeftTemple](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-lefttemple) = 1 << 0,<br></br> [MLEyeCameraIdentifier_LeftNasal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-leftnasal) = 1 << 1,<br></br> [MLEyeCameraIdentifier_RightNasal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-rightnasal) = 1 << 2,<br></br> [MLEyeCameraIdentifier_RightTemple](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-righttemple) = 1 << 3,<br></br> [MLEyeCameraIdentifier_All](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-all) = MLEyeCameraIdentifier_LeftTemple |
+| enum | **[MLEyeCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier)** <br></br> { <br></br>[MLEyeCameraIdentifier_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-none) = 0,<br></br> [MLEyeCameraIdentifier_LeftTemple](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-lefttemple) = 1 << 0,<br></br> [MLEyeCameraIdentifier_LeftNasal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-leftnasal) = 1 << 1,<br></br> [MLEyeCameraIdentifier_RightNasal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-rightnasal) = 1 << 2,<br></br> [MLEyeCameraIdentifier_RightTemple](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-righttemple) = 1 << 3,<br></br> [MLEyeCameraIdentifier_All](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-all) = MLEyeCameraIdentifier_LeftTemple |
                               MLEyeCameraIdentifier_LeftNasal  |
                               MLEyeCameraIdentifier_RightNasal |
                               MLEyeCameraIdentifier_RightTemple,<br></br> [MLEyeCameraIdentifier_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
-| enum | **[Anonymous Enum 28](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-28)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
-| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_Left](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
+| enum | **[Anonymous Enum 31](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-31)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
+| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-none) = 0,<br></br> [MLWorldCameraIdentifier_Left](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
                                 MLWorldCameraIdentifier_Right |
                                 MLWorldCameraIdentifier_Center,<br></br> [MLWorldCameraIdentifier_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
 | enum | **[MLWorldCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode)** <br></br> { <br></br>[MLWorldCameraMode_Unknown](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-unknown) = 0,<br></br> [MLWorldCameraMode_LowExposure](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-lowexposure) = 1 << 0,<br></br> [MLWorldCameraMode_NormalExposure](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-normalexposure) = 1 << 1,<br></br> [MLWorldCameraMode_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of world camera modes.  |
@@ -638,6 +638,7 @@ Camera distortion vector size.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLDepthCameraMode_None |  0| None. |
 | MLDepthCameraMode_LongRange |  1 << 0| Long range mode. Under normal operations long range mode has a maximum frequency of 5fps and a range of up to 5m, in some cases this can go as far 7.5m. .|
 | MLDepthCameraMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -675,6 +676,7 @@ Enumeration of camera mode used when capturing a frame.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLDepthCameraFlags_None |  0| None. |
 | MLDepthCameraFlags_DepthImage |  1 << 0| Enable MLDepthCameraDepthImage. See [MLDepthCameraDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) for more details. |
 | MLDepthCameraFlags_Confidence |  1 << 1| Enable MLDepthCameraConfidenceBuffer. See [MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) for more details. |
 | MLDepthCameraFlags_DepthFlags |  1 << 2| Enable MLDepthCameraDepthFlagsBuffer. See [MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) for more details. |
@@ -702,9 +704,9 @@ Enumeration of flags to select data requested from depth camera.
 | MLDepthCameraDepthFlags_Inconsistent |  1 << 2| Inconsistent data. Inconsistent data received when capturing frames. This can happen due to fast motion. .|
 | MLDepthCameraDepthFlags_LowSignal |  1 << 3| Low signal. Pixel has very low signal to noise ratio. One example of when this can happen is for pixels in far end of the range. .|
 | MLDepthCameraDepthFlags_FlyingPixel |  1 << 4| Flying pixel. This typically happens when there is step jump in the distance of adjoining pixels in the scene. Example: When you open a door looking into the room the edges along the door's edges can cause flying pixels. .|
-| MLDepthCameraDepthFlags_Masked |  1 << 5| Masked. If this bit is on it indicates that the corresponding pixel may not be within the projector's illumination cone. .|
+| MLDepthCameraDepthFlags_Masked |  1 << 5| Masked. If this bit is on it indicates that the corresponding pixel may not be within the illuminator's illumination cone. .|
 | MLDepthCameraDepthFlags_SBI |  1 << 8| SBI. This bit will be set when there is high noise. .|
-| MLDepthCameraDepthFlags_StrayLight |  1 << 9| Stray light. This could happen when there is another light source apart from the depth camera projector. This could also lead to MLDepthCameraDepthFlags_LowSignal. .|
+| MLDepthCameraDepthFlags_StrayLight |  1 << 9| Stray light. This could happen when there is another light source apart from the depth camera illuminator. This could also lead to MLDepthCameraDepthFlags_LowSignal. .|
 | MLDepthCameraDepthFlags_ConnectedComponent |  1 << 10| Connected component. If a small group of MLDepthCameraDepthFlags_Valid is sorrunded by a set of MLDepthCameraDepthFlags_Invalid then this bit will be set to 1. .|
 | MLDepthCameraDepthFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -722,6 +724,7 @@ Enumeration of flags to select data requested from depth camera.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLEyeCameraIdentifier_None |  0| None. |
 | MLEyeCameraIdentifier_LeftTemple |  1 << 0| Left temple eye camera. |
 | MLEyeCameraIdentifier_LeftNasal |  1 << 1| Left nasal eye camera. |
 | MLEyeCameraIdentifier_RightNasal |  1 << 2| Right nasal eye camera. |
@@ -744,7 +747,7 @@ Enumeration of all the available eye camera sensors.
 
 -----------
 
-### Anonymous Enum 28 {#enums-anonymous-enum-28}
+### Anonymous Enum 31 {#enums-anonymous-enum-31}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -764,6 +767,7 @@ Enumeration of all the available eye camera sensors.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLWorldCameraIdentifier_None |  0| None. |
 | MLWorldCameraIdentifier_Left |  1 << 0| Left World camera. |
 | MLWorldCameraIdentifier_Right |  1 << 1| Right World camera. |
 | MLWorldCameraIdentifier_Center |  1 << 2| Center World camera. |
@@ -2683,7 +2687,7 @@ Releases specified [MLDepthCameraData](/api-ref/api/Modules/group___camera/struc
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLDepthCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLDepthCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraconnect). |
 | [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) * |depth_camera_data|Pointer to a valid [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) object.|
 
 **Returns**
@@ -2862,7 +2866,7 @@ Update the eye camera settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
 | const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |settings|Pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md).|
 
 **Returns**
@@ -2904,7 +2908,7 @@ Poll for Frames.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
 | uint64_t |timeout_ms|Timeout in milliseconds. |
 | [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |out_data|Eye camera data. Will be set to NULL if no valid data is available at this time.|
 
@@ -2953,7 +2957,7 @@ Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
 | [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |eye_camera_data|Pointer to a valid [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object.|
 
 **Returns**

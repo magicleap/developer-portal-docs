@@ -19,10 +19,10 @@ title: MLWebViewTests
 
 ## Public Methods
 
-### IEnumerator MLWebView_CanGoBackNegative {#ienumerator-mlwebview-cangobacknegative}
+### void MLWebView_CanGoBackNegative {#void-mlwebview-cangobacknegative}
 
 ```csharp
-public IEnumerator MLWebView_CanGoBackNegative()
+public void MLWebView_CanGoBackNegative()
 ```
 
 
@@ -32,10 +32,10 @@ public IEnumerator MLWebView_CanGoBackNegative()
 
 -----------
 
-### IEnumerator MLWebView_CanGoBackPositive {#ienumerator-mlwebview-cangobackpositive}
+### void MLWebView_CanGoBackPositive {#void-mlwebview-cangobackpositive}
 
 ```csharp
-public IEnumerator MLWebView_CanGoBackPositive()
+public void MLWebView_CanGoBackPositive()
 ```
 
 
@@ -45,10 +45,10 @@ public IEnumerator MLWebView_CanGoBackPositive()
 
 -----------
 
-### IEnumerator MLWebView_CanGoForwardNegative {#ienumerator-mlwebview-cangoforwardnegative}
+### void MLWebView_CanGoForwardNegative {#void-mlwebview-cangoforwardnegative}
 
 ```csharp
-public IEnumerator MLWebView_CanGoForwardNegative()
+public void MLWebView_CanGoForwardNegative()
 ```
 
 
@@ -58,10 +58,10 @@ public IEnumerator MLWebView_CanGoForwardNegative()
 
 -----------
 
-### IEnumerator MLWebView_CanGoForwardPositive {#ienumerator-mlwebview-cangoforwardpositive}
+### void MLWebView_CanGoForwardPositive {#void-mlwebview-cangoforwardpositive}
 
 ```csharp
-public IEnumerator MLWebView_CanGoForwardPositive()
+public void MLWebView_CanGoForwardPositive()
 ```
 
 
@@ -84,10 +84,10 @@ public void MLWebView_CheckPermission()
 
 -----------
 
-### IEnumerator MLWebView_ClearCache {#ienumerator-mlwebview-clearcache}
+### void MLWebView_ClearCache {#void-mlwebview-clearcache}
 
 ```csharp
-public IEnumerator MLWebView_ClearCache()
+public void MLWebView_ClearCache()
 ```
 
 
@@ -97,10 +97,10 @@ public IEnumerator MLWebView_ClearCache()
 
 -----------
 
-### IEnumerator MLWebView_Create {#ienumerator-mlwebview-create}
+### void MLWebView_Create {#void-mlwebview-create}
 
 ```csharp
-public IEnumerator MLWebView_Create()
+public void MLWebView_Create()
 ```
 
 
@@ -110,10 +110,10 @@ public IEnumerator MLWebView_Create()
 
 -----------
 
-### IEnumerator MLWebView_Destroy {#ienumerator-mlwebview-destroy}
+### void MLWebView_Destroy {#void-mlwebview-destroy}
 
 ```csharp
-public IEnumerator MLWebView_Destroy()
+public void MLWebView_Destroy()
 ```
 
 
@@ -123,10 +123,10 @@ public IEnumerator MLWebView_Destroy()
 
 -----------
 
-### IEnumerator MLWebView_GetScrollOffset {#ienumerator-mlwebview-getscrolloffset}
+### void MLWebView_GetURL {#void-mlwebview-geturl}
 
 ```csharp
-public IEnumerator MLWebView_GetScrollOffset()
+public void MLWebView_GetURL()
 ```
 
 
@@ -136,10 +136,10 @@ public IEnumerator MLWebView_GetScrollOffset()
 
 -----------
 
-### IEnumerator MLWebView_GetScrollSize {#ienumerator-mlwebview-getscrollsize}
+### void MLWebView_GetZoomFactor {#void-mlwebview-getzoomfactor}
 
 ```csharp
-public IEnumerator MLWebView_GetScrollSize()
+public void MLWebView_GetZoomFactor()
 ```
 
 
@@ -149,10 +149,10 @@ public IEnumerator MLWebView_GetScrollSize()
 
 -----------
 
-### IEnumerator MLWebView_GetURL {#ienumerator-mlwebview-geturl}
+### void MLWebView_GoBackNegative {#void-mlwebview-gobacknegative}
 
 ```csharp
-public IEnumerator MLWebView_GetURL()
+public void MLWebView_GoBackNegative()
 ```
 
 
@@ -162,10 +162,10 @@ public IEnumerator MLWebView_GetURL()
 
 -----------
 
-### IEnumerator MLWebView_GetZoomFactor {#ienumerator-mlwebview-getzoomfactor}
+### void MLWebView_GoBackPositive {#void-mlwebview-gobackpositive}
 
 ```csharp
-public IEnumerator MLWebView_GetZoomFactor()
+public void MLWebView_GoBackPositive()
 ```
 
 
@@ -175,10 +175,10 @@ public IEnumerator MLWebView_GetZoomFactor()
 
 -----------
 
-### IEnumerator MLWebView_GoBackNegative {#ienumerator-mlwebview-gobacknegative}
+### void MLWebView_GoForwardNegative {#void-mlwebview-goforwardnegative}
 
 ```csharp
-public IEnumerator MLWebView_GoBackNegative()
+public void MLWebView_GoForwardNegative()
 ```
 
 
@@ -188,10 +188,10 @@ public IEnumerator MLWebView_GoBackNegative()
 
 -----------
 
-### IEnumerator MLWebView_GoBackPositive {#ienumerator-mlwebview-gobackpositive}
+### void MLWebView_GoForwardPositive {#void-mlwebview-goforwardpositive}
 
 ```csharp
-public IEnumerator MLWebView_GoBackPositive()
+public void MLWebView_GoForwardPositive()
 ```
 
 
@@ -201,10 +201,10 @@ public IEnumerator MLWebView_GoBackPositive()
 
 -----------
 
-### IEnumerator MLWebView_GoForwardNegative {#ienumerator-mlwebview-goforwardnegative}
+### void MLWebView_GoTo {#void-mlwebview-goto}
 
 ```csharp
-public IEnumerator MLWebView_GoForwardNegative()
+public void MLWebView_GoTo()
 ```
 
 
@@ -214,10 +214,10 @@ public IEnumerator MLWebView_GoForwardNegative()
 
 -----------
 
-### IEnumerator MLWebView_GoForwardPositive {#ienumerator-mlwebview-goforwardpositive}
+### void MLWebView_InjectChar_w {#void-mlwebview-injectchar-w}
 
 ```csharp
-public IEnumerator MLWebView_GoForwardPositive()
+public void MLWebView_InjectChar_w()
 ```
 
 
@@ -227,10 +227,10 @@ public IEnumerator MLWebView_GoForwardPositive()
 
 -----------
 
-### IEnumerator MLWebView_GoTo {#ienumerator-mlwebview-goto}
+### void MLWebView_InjectKeyDown_Back {#void-mlwebview-injectkeydown-back}
 
 ```csharp
-public IEnumerator MLWebView_GoTo()
+public void MLWebView_InjectKeyDown_Back()
 ```
 
 
@@ -240,10 +240,10 @@ public IEnumerator MLWebView_GoTo()
 
 -----------
 
-### IEnumerator MLWebView_InjectChar_w {#ienumerator-mlwebview-injectchar-w}
+### void MLWebView_InjectKeyUp_Back {#void-mlwebview-injectkeyup-back}
 
 ```csharp
-public IEnumerator MLWebView_InjectChar_w()
+public void MLWebView_InjectKeyUp_Back()
 ```
 
 
@@ -253,10 +253,10 @@ public IEnumerator MLWebView_InjectChar_w()
 
 -----------
 
-### IEnumerator MLWebView_InjectKeyDown_Back {#ienumerator-mlwebview-injectkeydown-back}
+### void MLWebView_InjectMouseButtonDown_LeftMouseButton {#void-mlwebview-injectmousebuttondown-leftmousebutton}
 
 ```csharp
-public IEnumerator MLWebView_InjectKeyDown_Back()
+public void MLWebView_InjectMouseButtonDown_LeftMouseButton()
 ```
 
 
@@ -266,10 +266,10 @@ public IEnumerator MLWebView_InjectKeyDown_Back()
 
 -----------
 
-### IEnumerator MLWebView_InjectKeyUp_Back {#ienumerator-mlwebview-injectkeyup-back}
+### void MLWebView_InjectMouseButtonDown_MiddleMouseButton {#void-mlwebview-injectmousebuttondown-middlemousebutton}
 
 ```csharp
-public IEnumerator MLWebView_InjectKeyUp_Back()
+public void MLWebView_InjectMouseButtonDown_MiddleMouseButton()
 ```
 
 
@@ -279,10 +279,10 @@ public IEnumerator MLWebView_InjectKeyUp_Back()
 
 -----------
 
-### IEnumerator MLWebView_InjectMouseButtonDown_LeftMouseButton {#ienumerator-mlwebview-injectmousebuttondown-leftmousebutton}
+### void MLWebView_InjectMouseButtonDown_RightMouseButton {#void-mlwebview-injectmousebuttondown-rightmousebutton}
 
 ```csharp
-public IEnumerator MLWebView_InjectMouseButtonDown_LeftMouseButton()
+public void MLWebView_InjectMouseButtonDown_RightMouseButton()
 ```
 
 
@@ -292,10 +292,10 @@ public IEnumerator MLWebView_InjectMouseButtonDown_LeftMouseButton()
 
 -----------
 
-### IEnumerator MLWebView_InjectMouseButtonDown_MiddleMouseButton {#ienumerator-mlwebview-injectmousebuttondown-middlemousebutton}
+### void MLWebView_InjectMouseButtonUp_LeftMouseButton {#void-mlwebview-injectmousebuttonup-leftmousebutton}
 
 ```csharp
-public IEnumerator MLWebView_InjectMouseButtonDown_MiddleMouseButton()
+public void MLWebView_InjectMouseButtonUp_LeftMouseButton()
 ```
 
 
@@ -305,10 +305,10 @@ public IEnumerator MLWebView_InjectMouseButtonDown_MiddleMouseButton()
 
 -----------
 
-### IEnumerator MLWebView_InjectMouseButtonDown_RightMouseButton {#ienumerator-mlwebview-injectmousebuttondown-rightmousebutton}
+### void MLWebView_InjectMouseButtonUp_MiddleMouseButton {#void-mlwebview-injectmousebuttonup-middlemousebutton}
 
 ```csharp
-public IEnumerator MLWebView_InjectMouseButtonDown_RightMouseButton()
+public void MLWebView_InjectMouseButtonUp_MiddleMouseButton()
 ```
 
 
@@ -318,10 +318,10 @@ public IEnumerator MLWebView_InjectMouseButtonDown_RightMouseButton()
 
 -----------
 
-### IEnumerator MLWebView_InjectMouseButtonUp_LeftMouseButton {#ienumerator-mlwebview-injectmousebuttonup-leftmousebutton}
+### void MLWebView_InjectMouseButtonUp_RightMouseButton {#void-mlwebview-injectmousebuttonup-rightmousebutton}
 
 ```csharp
-public IEnumerator MLWebView_InjectMouseButtonUp_LeftMouseButton()
+public void MLWebView_InjectMouseButtonUp_RightMouseButton()
 ```
 
 
@@ -331,10 +331,10 @@ public IEnumerator MLWebView_InjectMouseButtonUp_LeftMouseButton()
 
 -----------
 
-### IEnumerator MLWebView_InjectMouseButtonUp_MiddleMouseButton {#ienumerator-mlwebview-injectmousebuttonup-middlemousebutton}
+### void MLWebView_InjectMouseMove {#void-mlwebview-injectmousemove}
 
 ```csharp
-public IEnumerator MLWebView_InjectMouseButtonUp_MiddleMouseButton()
+public void MLWebView_InjectMouseMove()
 ```
 
 
@@ -344,10 +344,10 @@ public IEnumerator MLWebView_InjectMouseButtonUp_MiddleMouseButton()
 
 -----------
 
-### IEnumerator MLWebView_InjectMouseButtonUp_RightMouseButton {#ienumerator-mlwebview-injectmousebuttonup-rightmousebutton}
+### void MLWebView_PauseDiscard {#void-mlwebview-pausediscard}
 
 ```csharp
-public IEnumerator MLWebView_InjectMouseButtonUp_RightMouseButton()
+public void MLWebView_PauseDiscard()
 ```
 
 
@@ -357,10 +357,10 @@ public IEnumerator MLWebView_InjectMouseButtonUp_RightMouseButton()
 
 -----------
 
-### IEnumerator MLWebView_InjectMouseMove {#ienumerator-mlwebview-injectmousemove}
+### void MLWebView_PauseMultiMedia {#void-mlwebview-pausemultimedia}
 
 ```csharp
-public IEnumerator MLWebView_InjectMouseMove()
+public void MLWebView_PauseMultiMedia()
 ```
 
 
@@ -370,10 +370,10 @@ public IEnumerator MLWebView_InjectMouseMove()
 
 -----------
 
-### IEnumerator MLWebView_PauseDiscard {#ienumerator-mlwebview-pausediscard}
+### void MLWebView_PauseTimers {#void-mlwebview-pausetimers}
 
 ```csharp
-public IEnumerator MLWebView_PauseDiscard()
+public void MLWebView_PauseTimers()
 ```
 
 
@@ -383,10 +383,10 @@ public IEnumerator MLWebView_PauseDiscard()
 
 -----------
 
-### IEnumerator MLWebView_PauseMultiMedia {#ienumerator-mlwebview-pausemultimedia}
+### void MLWebView_Reload {#void-mlwebview-reload}
 
 ```csharp
-public IEnumerator MLWebView_PauseMultiMedia()
+public void MLWebView_Reload()
 ```
 
 
@@ -396,10 +396,10 @@ public IEnumerator MLWebView_PauseMultiMedia()
 
 -----------
 
-### IEnumerator MLWebView_PauseTimers {#ienumerator-mlwebview-pausetimers}
+### void MLWebView_RemoveAllCookies {#void-mlwebview-removeallcookies}
 
 ```csharp
-public IEnumerator MLWebView_PauseTimers()
+public void MLWebView_RemoveAllCookies()
 ```
 
 
@@ -409,10 +409,10 @@ public IEnumerator MLWebView_PauseTimers()
 
 -----------
 
-### IEnumerator MLWebView_Reload {#ienumerator-mlwebview-reload}
+### void MLWebView_ResetZoomIn {#void-mlwebview-resetzoomin}
 
 ```csharp
-public IEnumerator MLWebView_Reload()
+public void MLWebView_ResetZoomIn()
 ```
 
 
@@ -422,10 +422,10 @@ public IEnumerator MLWebView_Reload()
 
 -----------
 
-### IEnumerator MLWebView_RemoveAllCookies {#ienumerator-mlwebview-removeallcookies}
+### void MLWebView_ResetZoomNoChange {#void-mlwebview-resetzoomnochange}
 
 ```csharp
-public IEnumerator MLWebView_RemoveAllCookies()
+public void MLWebView_ResetZoomNoChange()
 ```
 
 
@@ -435,10 +435,10 @@ public IEnumerator MLWebView_RemoveAllCookies()
 
 -----------
 
-### IEnumerator MLWebView_ResetZoomIn {#ienumerator-mlwebview-resetzoomin}
+### void MLWebView_ResetZoomOut {#void-mlwebview-resetzoomout}
 
 ```csharp
-public IEnumerator MLWebView_ResetZoomIn()
+public void MLWebView_ResetZoomOut()
 ```
 
 
@@ -448,10 +448,10 @@ public IEnumerator MLWebView_ResetZoomIn()
 
 -----------
 
-### IEnumerator MLWebView_ResetZoomNoChange {#ienumerator-mlwebview-resetzoomnochange}
+### void MLWebView_ResumeDiscard {#void-mlwebview-resumediscard}
 
 ```csharp
-public IEnumerator MLWebView_ResetZoomNoChange()
+public void MLWebView_ResumeDiscard()
 ```
 
 
@@ -461,10 +461,10 @@ public IEnumerator MLWebView_ResetZoomNoChange()
 
 -----------
 
-### IEnumerator MLWebView_ResetZoomOut {#ienumerator-mlwebview-resetzoomout}
+### void MLWebView_ResumeMultiMedia {#void-mlwebview-resumemultimedia}
 
 ```csharp
-public IEnumerator MLWebView_ResetZoomOut()
+public void MLWebView_ResumeMultiMedia()
 ```
 
 
@@ -474,10 +474,10 @@ public IEnumerator MLWebView_ResetZoomOut()
 
 -----------
 
-### IEnumerator MLWebView_ResumeDiscard {#ienumerator-mlwebview-resumediscard}
+### void MLWebView_ResumeTimers {#void-mlwebview-resumetimers}
 
 ```csharp
-public IEnumerator MLWebView_ResumeDiscard()
+public void MLWebView_ResumeTimers()
 ```
 
 
@@ -487,10 +487,10 @@ public IEnumerator MLWebView_ResumeDiscard()
 
 -----------
 
-### IEnumerator MLWebView_ResumeMultiMedia {#ienumerator-mlwebview-resumemultimedia}
+### void MLWebView_ZoomIn {#void-mlwebview-zoomin}
 
 ```csharp
-public IEnumerator MLWebView_ResumeMultiMedia()
+public void MLWebView_ZoomIn()
 ```
 
 
@@ -500,36 +500,10 @@ public IEnumerator MLWebView_ResumeMultiMedia()
 
 -----------
 
-### IEnumerator MLWebView_ResumeTimers {#ienumerator-mlwebview-resumetimers}
+### void MLWebView_ZoomOut {#void-mlwebview-zoomout}
 
 ```csharp
-public IEnumerator MLWebView_ResumeTimers()
-```
-
-
-
-
-
-
------------
-
-### IEnumerator MLWebView_ZoomIn {#ienumerator-mlwebview-zoomin}
-
-```csharp
-public IEnumerator MLWebView_ZoomIn()
-```
-
-
-
-
-
-
------------
-
-### IEnumerator MLWebView_ZoomOut {#ienumerator-mlwebview-zoomout}
-
-```csharp
-public IEnumerator MLWebView_ZoomOut()
+public void MLWebView_ZoomOut()
 ```
 
 

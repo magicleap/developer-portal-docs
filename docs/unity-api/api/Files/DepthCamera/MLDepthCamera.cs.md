@@ -34,7 +34,7 @@ using System.Runtime.InteropServices;
 
 namespace UnityEngine.XR.MagicLeap
 {
-    public partial class MLDepthCamera : MLAPIBase
+    public partial class MLDepthCamera : MLAutoAPISingleton<MLDepthCamera>
     {
         public enum Mode
         {
@@ -155,15 +155,26 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        public Settings CurrentSettings { get; private set; }
+        public static Settings CurrentSettings { get; private set; }
 
-        public bool IsConnected { get; private set; }
+        public static void SetSettings(Settings settings) => CurrentSettings = settings;
+
+        public static bool IsConnected { get; private set; }
 
         private bool connectionPaused;
 
-        public MLDepthCamera(Settings settings)
+        protected override MLResult.Code StartAPI() => MLResult.Code.Ok;
+
+        protected override MLResult.Code StopAPI()
         {
-            CurrentSettings = settings;
+            var result = MLResult.Code.Ok;
+
+            if (IsConnected)
+            {
+                result = InternalDisconnect().Result;
+            }
+
+            return result;
         }
 
         protected override void OnApplicationPause(bool pauseStatus)
@@ -186,13 +197,13 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        public MLResult Connect() => InternalConnect(CurrentSettings);
+        public static MLResult Connect() => Instance.InternalConnect(CurrentSettings);
 
-        public MLResult Disconnect() => InternalDisconnect();
+        public static MLResult Disconnect() => Instance.InternalDisconnect();
 
-        public MLResult UpdateSettings(Settings settings) => InternalUpdateSettings(settings);
+        public static MLResult UpdateSettings(Settings settings) => Instance.InternalUpdateSettings(settings);
 
-        public MLResult GetLatestDepthData(ulong timeoutMs, out Data data) => InternalGetLatestDepthData(timeoutMs, out data);
+        public static MLResult GetLatestDepthData(ulong timeoutMs, out Data data) => Instance.InternalGetLatestDepthData(timeoutMs, out data);
 
         #region internal
         private MLResult InternalConnect(Settings settings)
