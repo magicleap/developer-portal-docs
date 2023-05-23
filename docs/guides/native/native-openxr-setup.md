@@ -39,7 +39,7 @@ As of this writing the following extensions are supported. As always, the runtim
 - `XR_KHR_android_create_instance`
 - `XR_KHR_composition_layer_depth`
 - `XR_KHR_opengl_es_enable`
-- `XR_KHR_vulkan_enabled`
+- `XR_KHR_vulkan_enable`
 - `XR_EXT_hand_tracking`
 - `XR_EXT_eye_gaze_interaction`
 - `XR_MND_headless`
