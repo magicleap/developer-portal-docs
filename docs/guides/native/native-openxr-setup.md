@@ -20,7 +20,7 @@ The Magic Leap 2 has been certified as conformant as of the 1.1.0 release.
 ## Prerequisites
 
 - Native SDK Version `1.0.0` (Only needed when building when using [Magic Leap Native API](/docs/api-ref/api/indexpage.md), like the Magic Leap samples)
-- OpenXR SDK Version `1.0.25` or higher
+- OpenXR SDK Version `1.0.27` or higher
 - Completed [Magic Leap Native SDK instructions.](/docs/guides/native/getting-started/native-getting-started)
 
 ## Limitations
@@ -39,12 +39,17 @@ As of this writing the following extensions are supported. As always, the runtim
 - `XR_KHR_android_create_instance`
 - `XR_KHR_composition_layer_depth`
 - `XR_KHR_opengl_es_enable`
-- `XR_KHR_vulkan_enabled`
+- `XR_KHR_vulkan_enable`
 - `XR_EXT_hand_tracking`
 - `XR_EXT_eye_gaze_interaction`
 - `XR_MND_headless`
 - `XR_ML_global_dimmer`
 - `XR_ML_frame_end_info`
+- `XR_KHR_convert_timespec_time`
+- `XR_KHR_vulkan_enable2`
+- `XR_MSFT_unbounded_reference_space`
+- `XR_ML_compat`
+- `XR_ML_ml2_controller_interaction`
 
 ## Using the Runtime
 
@@ -134,7 +139,7 @@ The Magic Leap 2 Controller interaction profile is available [here](https://regi
 The OpenXR working group releases a sample program called [hello_xr](https://github.com/KhronosGroup/OpenXR-SDK-Source/tree/main/src/tests/hello_xr) together with their SDK package. Open this in Android Studio, attach your Magic Leap 2 device and hit **“Run”**.
 
 :::tip
-Make sure to use OpenXR 1.0.25 or higher.
+Make sure to use OpenXR 1.0.27 or higher.
 :::
 
 ## Download OpenXR Samples

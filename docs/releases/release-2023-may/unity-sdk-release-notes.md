@@ -15,7 +15,7 @@ date: 05/22/2023
 
 ## Features
 
-- Minimum ML API level updated to 26.
+- Minimum ML API level updated to 27.
 
 ## Bug Fixes
 
