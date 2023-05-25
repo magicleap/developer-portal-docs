@@ -39,6 +39,8 @@ struct MLDepthCameraData;
 
 A structure to encapsulate output data for each camera sensor. 
 
+This is an experimental API which may be modified or removed without any prior notice.
+
 This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mldepthcameradatainit) before use.
 
 
