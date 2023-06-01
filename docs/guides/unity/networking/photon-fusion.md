@@ -12,9 +12,9 @@ keywords: [Unity, guides, photon, networking, photon fusion]
 
 In this guide, you will learn how to use the Magic Leap 2 Photon Fusion package to create  shared experiences for multiple co-located users. This will allow users to share and interact with the same virtual space. The guide is divided into the following parts:
 
-- Part 1: Import the packages
-- Part 2: Run the Marker Colocation scene
-- Part 3: Configure a Custom Networking Scene
+- [Part 1: Import the packages](#part-1-import-the-packages)
+- [Part 2: Run the Marker Colocation scene](#part-2-run-the-marker-colocation-scene)
+- [Part 3: Configure a Custom Networking Scene](#part-3-configure-a-custom-networking-scene)
 
 :::note
 This guide assumes you have a basic understanding of Photon Fusion. To learn more, refer to the [Fusion 101](https://doc.photonengine.com/fusion/current/fusion-100/fusion-101) guide provided in the Photon documentation.
@@ -29,7 +29,7 @@ Before proceeding, ensure you have the following:
 - Local copy of the Photon Fusion unity package
 - Established Wi-Fi connection on the headset
 
-# Part 1:Import the Packages
+# Part 1: Import the Packages
 
 ## Import the Fusion Unity SDK Package
 
@@ -102,28 +102,32 @@ You can use the assets provided in the Magic Leap - Photon Fusion package to set
 The **[Networking]** prefab contains two children: **ConnectionManager** and **RigSelection**.
 
 - **ConnectionManager**: Requires a room name (the same for all users to connect) and a user prefab with a NetworkRig, which contains the visual representation of the controller and headset as well as the Network Transform, Network Rig and Network Object components from Fusion.
+
+<img src="/img/unity/photon-fusion/ConnectionManager.jpg" width="450px" />
+
 - **RigSelection**: Allows switching between the Magic Leap rig and the Desktop rig depending on the platform. Inside the Rig Selection script fields for Magic Leap Rig and Desktop Rig, drag the corresponding objects nested inside the [Player] prefab that was added to the scene in step 4.
 
-![Connection Manager](/img/unity/photon-fusion/ConnectionManager.jpg)
+<img src="/img/unity/photon-fusion/RigSelection.jpg" width="450px" />
 
-![Rig Selection](/img/unity/photon-fusion/RigSelection.jpg)
 
 ## Set the Network Runner
 
 5. Expand the [Player] prefab and select the **Magic Leap Rig** child object. In the Hardware Rig script, drag and drop the **ConnectionManager** object from the scene into the Runner field.
 
-![Magic Leap Rig](/img/unity/photon-fusion/MagicLeapRig.jpg)
+<img src="/img/unity/photon-fusion/MagicLeapRig.jpg" width="450px" />
 
 ## Create a Shared Reference
 
 6. Right-click in the scene hierarchy and select **Create > Empty GameObject** and rename it to **Shared Marker Reference**.
 7. Add the **Shared Reference Point** and **Virtual Fiducial Marker** script components to this object.
 8. In **Assets > Magic Leap > PhotonFusionExample > Prefabs > Anchor**, drag and drop the **Axis Visual prefab** to make it a child of the Shared Reference Point object in the scene.
+
+<img src="/img/unity/photon-fusion/AxisVisualSceneHierarchy.jpg" width="450px" />
+
 9. Then, with the Shared Marker Reference Selected, drag and drop the added Axis Visual from the scene into the **Optional Graphic** field of the Virtual Fiducial Marker script.
 
-![Axis Visual](/img/unity/photon-fusion/AxisVisual.jpg)
+<img src="/img/unity/photon-fusion/AxisVisual.jpg" width="450px" />
 
-![Axis Visual Scene Hierarchy](/img/unity/photon-fusion/AxisVisualSceneHierarchy.jpg)
 
 10. Save the scene and hit **Play** to test the scene in Desktop mode. You will be able to click and drag the controller for the headset inside the Game Window.
 11. Go to **File > Build Settings** and add the open scene to the build order. Build and run the application on the headset. You will be able to see the controller prefab mapping to your controller, as well as view the Axis visual at the point where your headset was originally started in the room.
@@ -152,11 +156,11 @@ The **Marker Tracker Controls** provide a simple UI for gathering samples and di
 
 19. To enable marker tracking on desktop, select the **Generic Marker Tracking** prefab in the hierarchy and in the Image Source field select the Camera Image Source object.
 
-![Generic Marker Tracker Source](/img/unity/photon-fusion/GenericMarkerSource.jpg)
+<img src="/img/unity/photon-fusion/GenericMarkerSource.jpg" width="450px" />
 
 20. Select the **Marker Tracking Controls** prefab in the hierarchy and assign the Shared Reference Point object as the Virtual Fiducial Marker in the Marker Tracking Controls script
 
-![Marker Tracking Controls](/img/unity/photon-fusion/MarkerTrackingControls.jpg)
+<img src="/img/unity/photon-fusion/MarkerTrackingControls.jpg" width="450px" />
 
 Now you just need to print the marker from the Marker folder so it can be held up to the desktop webcam to calibrate the scene origin to the marker.
 
