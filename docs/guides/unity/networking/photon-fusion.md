@@ -13,7 +13,7 @@ keywords: [Unity, guides, photon, networking, photon fusion]
 In this guide, you will learn how to use the Magic Leap 2 Photon Fusion package to create  shared experiences for multiple co-located users. This will allow users to share and interact with the same virtual space. The guide is divided into the following parts:
 
 - Part 1: Import the packages
-- Part 2: Run the SimpleDemo
+- Part 2: Run the Marker Colocation scene
 - Part 3: Configure a Custom Networking Scene
 
 :::note
@@ -48,7 +48,7 @@ The package used in this example requires marker tracking and/or spatial anchors
 
 ## Import the Magic Leap - Photon Fusion package
 
-The Magic Leap Photon Fusion sample can be downloaded as a complete project or as a unity package. To import the sample into an existing project, open the [GitHub project] link in your web browser then select the latest release.
+The Magic Leap Photon Fusion sample can be downloaded as a complete project or as a unity package. To import the sample into an existing project, open the [Magic Leap Photon Fusion Example link](https://github.com/magicleap/MagicLeapPhotonFusionExample) in your web browser then select the latest release.
 
 To import the package into the project:
  Select :
@@ -60,26 +60,30 @@ This package uses TextMeshPro to render UI text. To import the required componen
 
 - Select **Window > TextMeshPro > Import TMP Essentials** to import the package.
 
-# Part 2: Run the SimpleDemo scene
+# Part 2: Run the Marker Colocation scene
 
 The SimpleDemo uses a custom render pipeline to render the desktop camera as an AR background. To enable it:
 
 - Navigate to **Edit > Project Settings > Graphics** and in the **Scriptable Render Pipeline Settings**, select the **ML2-UniversalRenderPipeline** asset.
+- Next, navigate to **Quality Settings** from the side menu and assign the **ML2-UniversalRenderPipeline** asset to the Render Pipeline Asset field for each of the quality levels.
+
+![Quality Settings](/img/unity/photon-fusion/quality-settings.jpg)
 
 This demo scene showcases networking between headsets and desktop clients. To run the demo:
 
-1. Print out the AprilTag marker located in **Assets > Magic Leap > PhotonFusionExample > Marker**  folder
-2. Select **Assets > Magic Leap > PhotonFusionExample> SimpleDemo** and open the scene
-3. Open the Build Settings window by selecting **File > Build Settings** from the menu. Click  the **Add Open Scenes** button to add the demo scene into the build.
-4. Power on your Magic Leap 2. After the boot sequence finishes, connect it to your computer.
-5. Click the **Build And Run** button to deploy the application to your device. Put on the headset.
+1. Select **Fusion > Rebuild Prefab Table** to configure the network objects so that they can be instantiated by Photon.
+2. Print out the AprilTag marker located in **Assets > Magic Leap > PhotonFusionExample > Marker**  folder
+3. Select **Assets > Magic Leap > PhotonFusionExample> MarkerColocation** and open the scene
+4. Open the Build Settings window by selecting **File > Build Settings** from the menu. Click the **Add Open Scenes** button to add the current scene into the build.
+5. Power on your Magic Leap 2. After the boot sequence finishes, connect it to your computer.
+6. Click the **Build And Run** button to deploy the application to your device. Put on the headset.
 
-Once the deployment is complete on the  Magic Leap 2, you will be able to calibrate the scene to the marker by looking at the marker image and pressing the Menu button, and interact with the grabbable cubes in the scene using the Bumper.
+Once the deployment is complete on the Magic Leap 2, you will be able to calibrate the scene to the marker by looking at the marker image and pressing the Menu button, and interact with the grabbable cubes in the scene using the Bumper.
 
-## Running SimpleDemo on Desktop
+## Running Marker Colocation on Desktop
 
 :::note
-If you want to test the example with the desktop client, go to **Magic Leap > Fusion Example > April Tag > Install** to install the desktop April Tag library.
+If you want to test the example with the desktop client, in the top Unity menu go to **Magic Leap > Fusion Example > April Tag > Install** to install the desktop April Tag library.
 :::
 
 If you’re running the desktop client, you will be able to see the movement of the headset user and can calibrate to the marker by pressing the **M** key on the keyboard, as well as moving around the scene using the mouse.
@@ -113,9 +117,9 @@ The **[Networking]** prefab contains two children: **ConnectionManager** and **R
 ## Create a Shared Reference
 
 6. Right-click in the scene hierarchy and select **Create > Empty GameObject** and rename it to **Shared Marker Reference**.
-7. Add the Shared Reference Point, Virtual Fiducial Marker script components to this object
-8. In **Assets > Magic Leap > PhotonFusionExample > Prefabs > Anchor**, drag and drop the Axis Visual prefab to make it a child of the Shared Reference Point object in the scene.
-9. Then, with the Shared Marker Reference Selected,  drag and drop the added Axis Visual from the scene into the Optional Graphic field of the Virtual Fiducial Marker script.
+7. Add the **Shared Reference Point** and **Virtual Fiducial Marker** script components to this object.
+8. In **Assets > Magic Leap > PhotonFusionExample > Prefabs > Anchor**, drag and drop the **Axis Visual prefab** to make it a child of the Shared Reference Point object in the scene.
+9. Then, with the Shared Marker Reference Selected, drag and drop the added Axis Visual from the scene into the **Optional Graphic** field of the Virtual Fiducial Marker script.
 
 ![Axis Visual](/img/unity/photon-fusion/AxisVisual.jpg)
 
