@@ -33,11 +33,11 @@ be set in the environment:
 * one of the public IPs:
 
   ```shell
-  export DOMAIN="<IP-address-from-the-global-accelerator>"
+  export DOMAIN="<IP address from the global accelerator>"
   ```
 
 * the domain:
 
   ```shell
-  export DOMAIN="<domain-of-the-global-accelerator>"
+  export DOMAIN="<domain of the global accelerator>"
   ```

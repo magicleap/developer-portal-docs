@@ -8,8 +8,10 @@ tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
 description: "Enterprise deployment to Google Cloud Platform (GCP)"
 ---
+import LinuxNotice from './_linux_notice.md';
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
+import ArcloudEnvDomain from './_arcloud_env_domain.md';
 import EnvFile from './_env_file.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
@@ -21,6 +23,8 @@ import RegisterDevice from './_register_device.md';
 
 This deployment strategy will provide a production-ready system using Google Cloud.
 
+<LinuxNotice />
+
 ## Download
 
 <DownloadArcloud />
@@ -29,11 +33,7 @@ This deployment strategy will provide a production-ready system using Google Clo
 
 <ArcloudEnvVariables />
 
-Set the domain where AR Cloud will be available:
-
-```shell
-export DOMAIN="arcloud.domain.tld"
-```
+<ArcloudEnvDomain />
 
 <EnvFile />
 

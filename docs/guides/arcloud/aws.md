@@ -8,8 +8,10 @@ tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 description: "Enterprise deployment to Amazon Web Services (AWS)"
 ---
+import LinuxNotice from './_linux_notice.md';
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
+import ArcloudEnvDomain from './_arcloud_env_domain.md';
 import EnvFile from './_env_file.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
@@ -22,6 +24,8 @@ import RegisterDevice from './_register_device.md';
 
 This deployment strategy will provide a production-ready system using Amazon Web Services.
 
+<LinuxNotice />
+
 ## Download
 
 <DownloadArcloud />
@@ -30,11 +34,7 @@ This deployment strategy will provide a production-ready system using Amazon Web
 
 <ArcloudEnvVariables />
 
-Set the domain where AR Cloud will be available:
-
-```shell
-export DOMAIN="arcloud.domain.tld"
-```
+<ArcloudEnvDomain />
 
 <EnvFile />
 
@@ -214,13 +214,6 @@ Install Istio:
 <InstallArcloud />
 
 <InstallArcloudSetupSecure />
-
-:::caution IP-based deployment
-If you do not have a custom domain and would like to use an IP address instead, add the `--no-secure` flag to the
-command above.
-
-**This is heavily discouraged for publicly accessible deployments.**
-:::
 
 ## Verify Installation
 
