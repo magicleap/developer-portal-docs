@@ -87,4 +87,4 @@ Special Keycodes also exist
 ## Disclaimers
 
 This project is based on [UltraLeap's XR Keyboard](https://github.com/ultraleap/XR-Keyboard) which is licensed under [Apache 2.0](https://github.com/ultraleap/XR-Keyboard/blob/main/LICENSE.txt)
-This project is licensed under the [Magic Leap Developer License](LICENSE)
+This project is licensed under the [Magic Leap Developer License](https://www.magicleap.com/software-license-agreement-ml2)
