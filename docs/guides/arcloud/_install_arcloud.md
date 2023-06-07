@@ -43,9 +43,3 @@ kubectl --namespace ${NAMESPACE} create secret docker-registry container-registr
     --docker-username=${REGISTRY_USERNAME} \
     --docker-password=${REGISTRY_PASSWORD}
 ```
-
-#### Log in to the container registry
-
-```shell
-docker login ${REGISTRY_SERVER} --username "${REGISTRY_USERNAME}" --password "${REGISTRY_PASSWORD}"
-```

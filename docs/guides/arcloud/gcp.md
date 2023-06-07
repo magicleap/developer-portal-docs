@@ -8,38 +8,116 @@ tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, GCP, Google]
 description: "Enterprise deployment to Google Cloud Platform (GCP)"
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import LinuxNotice from './_linux_notice.md';
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
 import ArcloudEnvDomain from './_arcloud_env_domain.md';
 import EnvFile from './_env_file.md';
+import HelmRequirements from './_helm_requirements.md';
+import InstallHelm from './_install_helm.md';
+import InstallHelmMacOS from './_install_helm_macos.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetupSecure from './_install_arcloud_setup_secure.md';
 import DeploymentVerificationSecure from './_deployment_verification_secure.md';
+import DebianDependencies from './_debian_dependencies.md';
+import MacOSDependencies from './_macos_dependencies.md';
+import WindowsDependencies from './_windows_dependencies.md';
 import RegisterDevice from './_register_device.md';
 
 This deployment strategy will provide a production-ready system using Google Cloud.
 
 <LinuxNotice />
 
-## Download
+## Setup
+
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
+<DebianDependencies />
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+<WindowsDependencies />
+
+<DebianDependencies />
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+<MacOSDependencies />
+
+  </TabItem>
+</Tabs>
+
+### Google Cloud CLI
+
+To get started as quickly as possible, refer to these simple setup steps for [Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
+
+### Tools
+
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelm />
+
+#### Kubectl
+
+```shell
+gcloud components install gke-gcloud-auth-plugin kubectl
+```
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelm />
+
+#### Install Kubernets
+
+```shell
+gcloud components install gke-gcloud-auth-plugin kubectl
+```
+
+<!-- <DebianDependencies /> -->
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelmMacOS />
+
+
+  </TabItem>
+</Tabs>
+
+### AR Cloud
 
 <DownloadArcloud />
 
-### Configure Environment
+## Configure Environment
 
 <ArcloudEnvVariables />
 
 <ArcloudEnvDomain />
 
 <EnvFile />
-
-### Tools
-
-To get started as quickly as possible, refer to these simple setup steps for [Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
 
 ## Infrastructure Setup
 
