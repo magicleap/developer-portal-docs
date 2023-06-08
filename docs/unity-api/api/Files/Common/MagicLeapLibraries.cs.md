@@ -54,6 +54,10 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLCameraMetadataDll = MLSdkLoaderDll;
 
         protected const string MLInputDll = MLSdkLoaderDll;
+
+        protected const string MLNotificationsManagerDll = MLSdkLoaderDll;
+        
+        protected const string MLVoiceDll = MLSdkLoaderDll;
 #else
         public const string MLPerceptionClientDll = "perception.magicleap";
 
@@ -72,6 +76,10 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLCameraMetadataDll = "camera_metadata.magicleap";
 
         protected const string MLInputDll = "input.magicleap";
+
+        protected const string MLNotificationsManagerDll = "system_notification_manager.magicleap";
+        
+        protected const string MLVoiceDll = "input.magicleap";
 #endif
         public const string UnityMagicLeapDll = "UnityMagicLeap";
 
@@ -92,8 +100,6 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLMediaRecorderDll = "media_recorder.magicleap";
 
         protected const string MLNativeSurfaceDll = "native_surface.magicleap";
-
-        protected const string MLVoiceDll = "input.magicleap";
 
         protected const string MLWebViewDll = "webview.magicleap";
 

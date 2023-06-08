@@ -15,6 +15,30 @@ A structure to encapsulate output data for each camera sensor.
 
 
 
+## Public Methods
+
+###  MLWorldCameraData {#functions-mlworldcameradata}
+
+```csharp
+public MLWorldCameraData(
+    uint version
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| uint |version||
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
 ### FrameCount {#readonly-byte-framecount}

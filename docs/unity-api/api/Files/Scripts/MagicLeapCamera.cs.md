@@ -40,8 +40,8 @@ namespace UnityEngine.XR.MagicLeap
         private List<Transform> transforms = new List<Transform>();
         private Unity.Jobs.JobHandle jobHandle;
 
-        [SerializeField]
         private bool enforceNearClip = true;
+        
         [SerializeField]
         private bool enforceFarClip = false;
         [SerializeField]
@@ -181,7 +181,7 @@ namespace UnityEngine.XR.MagicLeap
             {
                 Debug.LogWarning("[Magic Leap] The near clipping plane of the main camera is closer than " + MINIMUM_NEAR_CLIP_METERS + "m, which can cause artifacts.");
 
-                if (fixIssues)
+                if (enforceNearClip && fixIssues)
                 {
                     camera.nearClipPlane = MINIMUM_NEAR_CLIP_METERS * scale;
                 }

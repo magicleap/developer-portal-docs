@@ -161,7 +161,7 @@ Codes for setting video scaling mode.
 | MLMediaPlayerPollingStateFlag_HasSizeChanged |  1 << 5| Size changed. |
 | MLMediaPlayerPollingStateFlag_HasBufferingUpdated |  1 << 6| Buffering updated. |
 | MLMediaPlayerPollingStateFlag_HasReceivedInfo |  1 << 7| Received info. |
-| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Recieved error. |
+| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Received error. |
 | MLMediaPlayerPollingStateFlag_HasTimedTextUpdated |  1 << 9| Timed text updated. |
 | MLMediaPlayerPollingStateFlag_HasSubtitleUpdated |  1 << 10| Subtitle updated. |
 | MLMediaPlayerPollingStateFlag_HasMetadataUpdated |  1 << 11| Metadata updated. |
@@ -297,7 +297,7 @@ Frame Packing Arrangement for stereoscopic videos.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -323,7 +323,7 @@ Frame Packing Arrangement flags for stereoscopic videos.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -351,7 +351,7 @@ typedef MLPSSHEntry MLMediaPlayerPSSHEntry;
 ### MLMediaPlayerTrackDRMInfo {#struct-mlmediaplayertrackdrminfo}
 
 ```cpp
-typedef struct MLMediaPlayerTrackDRMInfo  MLMediaPlayerTrackDRMInfo;
+typedef struct MLMediaPlayerTrackDRMInfo MLMediaPlayerTrackDRMInfo;
 ```
 
 MediaPlayer DRM Info for a Media Track. 
@@ -362,7 +362,7 @@ MediaPlayer DRM Info for a Media Track.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -372,7 +372,7 @@ MediaPlayer DRM Info for a Media Track.
 ### MLMediaPlayerSubtitleData {#struct-mlmediaplayersubtitledata}
 
 ```cpp
-typedef struct MLMediaPlayerSubtitleData  MLMediaPlayerSubtitleData;
+typedef struct MLMediaPlayerSubtitleData MLMediaPlayerSubtitleData;
 ```
 
 
@@ -389,7 +389,7 @@ MediaPlayer subtitle data.
 ### MLMediaPlayerBufferingSettings {#struct-mlmediaplayerbufferingsettings}
 
 ```cpp
-typedef struct MLMediaPlayerBufferingSettings  MLMediaPlayerBufferingSettings;
+typedef struct MLMediaPlayerBufferingSettings MLMediaPlayerBufferingSettings;
 ```
 
 
@@ -406,7 +406,7 @@ Indicate the buffering settings.
 ### MLMediaPlayerOnBufferingUpdateInfo {#struct-mlmediaplayeronbufferingupdateinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnBufferingUpdateInfo  MLMediaPlayerOnBufferingUpdateInfo;
+typedef struct MLMediaPlayerOnBufferingUpdateInfo MLMediaPlayerOnBufferingUpdateInfo;
 ```
 
 MediaPlayer Buffering update callback Info. 
@@ -417,7 +417,7 @@ MediaPlayer Buffering update callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -427,7 +427,7 @@ MediaPlayer Buffering update callback Info.
 ### MLMediaPlayerOnCompletionInfo {#struct-mlmediaplayeroncompletioninfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnCompletionInfo  MLMediaPlayerOnCompletionInfo;
+typedef struct MLMediaPlayerOnCompletionInfo MLMediaPlayerOnCompletionInfo;
 ```
 
 MediaPlayer Playback completion callback Info. 
@@ -438,7 +438,7 @@ MediaPlayer Playback completion callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -448,7 +448,7 @@ MediaPlayer Playback completion callback Info.
 ### MLMediaPlayerOnErrorInfo {#struct-mlmediaplayeronerrorinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnErrorInfo  MLMediaPlayerOnErrorInfo;
+typedef struct MLMediaPlayerOnErrorInfo MLMediaPlayerOnErrorInfo;
 ```
 
 MediaPlayer Error callback Info. 
@@ -459,7 +459,7 @@ MediaPlayer Error callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -469,7 +469,7 @@ MediaPlayer Error callback Info.
 ### MLMediaPlayerOnInfoInfo {#struct-mlmediaplayeroninfoinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnInfoInfo  MLMediaPlayerOnInfoInfo;
+typedef struct MLMediaPlayerOnInfoInfo MLMediaPlayerOnInfoInfo;
 ```
 
 MediaPlayer Information callback Info. 
@@ -480,7 +480,7 @@ MediaPlayer Information callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -490,7 +490,7 @@ MediaPlayer Information callback Info.
 ### MLMediaPlayerOnPreparedInfo {#struct-mlmediaplayeronpreparedinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnPreparedInfo  MLMediaPlayerOnPreparedInfo;
+typedef struct MLMediaPlayerOnPreparedInfo MLMediaPlayerOnPreparedInfo;
 ```
 
 MediaPlayer Playback prepared callback Info. 
@@ -501,7 +501,7 @@ MediaPlayer Playback prepared callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -511,7 +511,7 @@ MediaPlayer Playback prepared callback Info.
 ### MLMediaPlayerOnSeekCompleteInfo {#struct-mlmediaplayeronseekcompleteinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnSeekCompleteInfo  MLMediaPlayerOnSeekCompleteInfo;
+typedef struct MLMediaPlayerOnSeekCompleteInfo MLMediaPlayerOnSeekCompleteInfo;
 ```
 
 MediaPlayer Playback seek completion callback Info. 
@@ -522,7 +522,7 @@ MediaPlayer Playback seek completion callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -532,7 +532,7 @@ MediaPlayer Playback seek completion callback Info.
 ### MLMediaPlayerOnVideoSizeChangedInfo {#struct-mlmediaplayeronvideosizechangedinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnVideoSizeChangedInfo  MLMediaPlayerOnVideoSizeChangedInfo;
+typedef struct MLMediaPlayerOnVideoSizeChangedInfo MLMediaPlayerOnVideoSizeChangedInfo;
 ```
 
 MediaPlayer Video Size Changed callback Info. 
@@ -543,7 +543,7 @@ MediaPlayer Video Size Changed callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -553,7 +553,7 @@ MediaPlayer Video Size Changed callback Info.
 ### MLMediaPlayerOnTrackDRMInfo {#struct-mlmediaplayerontrackdrminfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnTrackDRMInfo  MLMediaPlayerOnTrackDRMInfo;
+typedef struct MLMediaPlayerOnTrackDRMInfo MLMediaPlayerOnTrackDRMInfo;
 ```
 
 MediaPlayer Track DRM Info callback Info. 
@@ -564,7 +564,7 @@ MediaPlayer Track DRM Info callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -574,7 +574,7 @@ MediaPlayer Track DRM Info callback Info.
 ### MLMediaPlayerOnResetCompleteInfo {#struct-mlmediaplayeronresetcompleteinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnResetCompleteInfo  MLMediaPlayerOnResetCompleteInfo;
+typedef struct MLMediaPlayerOnResetCompleteInfo MLMediaPlayerOnResetCompleteInfo;
 ```
 
 MediaPlayer reset completion callback Info. 
@@ -585,7 +585,7 @@ MediaPlayer reset completion callback Info.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -595,7 +595,7 @@ MediaPlayer reset completion callback Info.
 ### MLMediaPlayerOnFramePackingInfo {#struct-mlmediaplayeronframepackinginfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnFramePackingInfo  MLMediaPlayerOnFramePackingInfo;
+typedef struct MLMediaPlayerOnFramePackingInfo MLMediaPlayerOnFramePackingInfo;
 ```
 
 MediaPlayer frame packing callback Info. 
@@ -606,7 +606,7 @@ MediaPlayer frame packing callback Info.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -616,7 +616,7 @@ MediaPlayer frame packing callback Info.
 ### MLMediaPlayerEventCallbacksEx {#struct-mlmediaplayereventcallbacksex}
 
 ```cpp
-typedef struct MLMediaPlayerEventCallbacksEx  MLMediaPlayerEventCallbacksEx;
+typedef struct MLMediaPlayerEventCallbacksEx MLMediaPlayerEventCallbacksEx;
 ```
 
 Callbacks for notifying client about [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) error events. 
@@ -629,7 +629,7 @@ Those are async mechanisms that should not be used in parallel with their sync c
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -639,7 +639,7 @@ Those are async mechanisms that should not be used in parallel with their sync c
 ### MLMediaPlayerTrackInfo {#struct-mlmediaplayertrackinfo}
 
 ```cpp
-typedef struct MLMediaPlayerTrackInfo  MLMediaPlayerTrackInfo;
+typedef struct MLMediaPlayerTrackInfo MLMediaPlayerTrackInfo;
 ```
 
 MediaPlayer Track Information. 
@@ -650,7 +650,7 @@ MediaPlayer Track Information.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -660,7 +660,7 @@ MediaPlayer Track Information.
 ### MLMediaPlayerTrackDRMSessionInfo {#struct-mlmediaplayertrackdrmsessioninfo}
 
 ```cpp
-typedef struct MLMediaPlayerTrackDRMSessionInfo  MLMediaPlayerTrackDRMSessionInfo;
+typedef struct MLMediaPlayerTrackDRMSessionInfo MLMediaPlayerTrackDRMSessionInfo;
 ```
 
 DRM Session information for a MediaPlayer Track. 
@@ -671,7 +671,7 @@ DRM Session information for a MediaPlayer Track.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -735,7 +735,7 @@ Callbacks signature called when Timed Text update is available.
 ### MLMediaPlayerMetrics {#struct-mlmediaplayermetrics}
 
 ```cpp
-typedef struct MLMediaPlayerMetrics  MLMediaPlayerMetrics;
+typedef struct MLMediaPlayerMetrics MLMediaPlayerMetrics;
 ```
 
 MediaPlayer metrics data. 
@@ -746,7 +746,7 @@ MediaPlayer metrics data.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2438,16 +2438,17 @@ Gets the handle of the audio stream.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current audio stream handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If used in versions starting 1.2.0 or later.|
 **Required Permissions**:
 
   * None 
 
 
 
+
+:::caution Deprecated
+Unsupported since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -2662,7 +2663,7 @@ Gets default Buffering settings.
   * None 
 
 
-The API is only implemented in ML1.
+\Attention The API is only implemented in ML1.
 
 
 
@@ -2701,7 +2702,7 @@ Gets current Buffering settings.
   * None 
 
 
-The API is only implemented in ML1.
+\Attention The API is only implemented in ML1.
 
 
 
@@ -2740,7 +2741,7 @@ Sets buffering settings.
   * None 
 
 
-The API is only implemented in ML1.
+\Attention The API is only implemented in ML1.
 
 
 
@@ -3367,6 +3368,7 @@ ML_API MLResult ML_CALL MLMediaPlayerSetLooping(MLHandle media_player, bool loop
 
 ML_API MLResult ML_CALL MLMediaPlayerSetVolume(MLHandle media_player, float volume);
 
+ML_DEPRECATED_MSG("This feature is not supported starting 1.2.0.")
 ML_API MLResult ML_CALL MLMediaPlayerGetAudioHandle(MLHandle media_player, MLHandle *out_handle);
 
 ML_API MLResult ML_CALL MLMediaPlayerPollStates(MLHandle media_player, uint16_t mask, uint16_t *out_polled_states);

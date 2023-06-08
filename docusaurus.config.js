@@ -1,5 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
+const docsVersions = require('./docs-versions.json');
 const pathPrefix = process.env.REACT_APP_DOCUSAURUS_ROOT || ''; // Prefix path of the Docusaurus base URL
 const ADD_ROUTER = process.env.ADD_ROUTER; // development option to force inclusion of the router
 
@@ -106,6 +107,10 @@ module.exports = {
           //   from: '/docs/guides/getting-started',
           // },
           {
+            from: '/docs/guides/unity/getting-started/set-up-development-environment',
+            to: '/docs/guides/unity/getting-started/unity-getting-started'
+          },
+          {
             from: '/docs/guides/native/capi-getting-started',
             to: '/docs/guides/native/getting-started/native-getting-started'
           },
@@ -202,6 +207,11 @@ module.exports = {
             from: '/docs/guides/features/media/fov',
             to: '/docs/guides/device/fov'
           },
+          // Remote Render
+          {
+            from: '/docs/guides/remote-rendering/remote-rendering-service',
+            to: '/docs/guides/remote-rendering/remote-rendering'
+          }
         ],
         
         createRedirects(existingPath) {
@@ -271,17 +281,7 @@ module.exports = {
           editUrl: undefined,
           includeCurrentVersion: true,
           lastVersion: 'current',
-          versions: {
-            current: {
-              label: '22 Mar 2023'
-            },
-            '22-Feb-2023': {
-              label: '22 Feb 2023'
-            },
-            // '22-Feb-2023': {
-            //   label: '22 Feb 2023'
-            // },
-          },
+          versions: docsVersions,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -290,4 +290,5 @@ module.exports = {
     ],
   ],
 };
+
 

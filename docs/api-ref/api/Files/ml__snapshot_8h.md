@@ -24,7 +24,7 @@ title: ml_snapshot.h
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 23](/api-ref/api/Modules/group___perception/group___perception.md#enums-anonymous-enum-23)** <br></br> { <br></br>[MLResultAPIPrefix_Snapshot](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlresultapiprefix-snapshot) = ( 0x87b8  << 16)<br></br>} |
+| enum | **[Anonymous Enum 26](/api-ref/api/Modules/group___perception/group___perception.md#enums-anonymous-enum-26)** <br></br> { <br></br>[MLResultAPIPrefix_Snapshot](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlresultapiprefix-snapshot) = ( 0x87b8  << 16)<br></br>} |
 | enum | **[MLSnapshotResult](/api-ref/api/Modules/group___perception/group___perception.md#enums-mlsnapshotresult)** <br></br> { <br></br>[MLSnapshotResult_DerivativesNotCalculated](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlsnapshotresult-derivativesnotcalculated) = MLResultAPIPrefix_Snapshot,<br></br> [MLSnapshotResult_Ensure32Bits](/api-ref/api/Files/ml__snapshot_8h.md#enums-mlsnapshotresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Functions
@@ -32,13 +32,13 @@ title: ml_snapshot.h
 |                | Name           |
 | -------------- | -------------- |
 | void | **[MLTransformDerivativesInit](/api-ref/api/Modules/group___perception/group___perception.md#void-mltransformderivativesinit)**([MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md) * inout_data)<br></br>Intializes the default values for [MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransform](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransform)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform)<br></br>Get transform between world origin and the coordinate frame `id'.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransformWithDerivatives](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransformwithderivatives)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform, [MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md) * out_derivatives)<br></br>Get transform between world origin and the coordinate frame `id' as well as any derivatives that have been calculated.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransform](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransform)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform)<br></br>Get transform between world origin and the coordinate frame "id.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSnapshotGetTransformWithDerivatives](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransformwithderivatives)**(const [MLSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#struct-mlsnapshot) * snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) * id, [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) * out_transform, [MLTransformDerivatives](/api-ref/api/Modules/group___perception/struct_m_l_transform_derivatives.md) * out_derivatives)<br></br>Get transform between world origin and the coordinate frame "id as well as any derivatives that have been calculated.  |
 | const char * | **[MLSnapshotGetResultString](/api-ref/api/Modules/group___perception/group___perception.md#const-char-mlsnapshotgetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string representation for each result code.  |
 
 ## Enums Documentation
 
-### Anonymous Enum 23 {#enums-anonymous-enum-23}
+### Anonymous Enum 26 {#enums-anonymous-enum-26}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -77,7 +77,7 @@ Return values for Snapshot API calls.
 ### MLTransformDerivatives {#struct-mltransformderivatives}
 
 ```cpp
-typedef struct MLTransformDerivatives  MLTransformDerivatives;
+typedef struct MLTransformDerivatives MLTransformDerivatives;
 ```
 
 Velocity and acceleration derivatives for a related transform. 
@@ -88,7 +88,7 @@ Velocity and acceleration derivatives for a related transform.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -151,7 +151,7 @@ MLResult MLSnapshotGetTransform(
 )
 ```
 
-Get transform between world origin and the coordinate frame `id'. 
+Get transform between world origin and the coordinate frame "id. 
 
 **Parameters**
 
@@ -191,7 +191,7 @@ MLResult MLSnapshotGetTransformWithDerivatives(
 )
 ```
 
-Get transform between world origin and the coordinate frame `id' as well as any derivatives that have been calculated. 
+Get transform between world origin and the coordinate frame "id as well as any derivatives that have been calculated. 
 
 **Parameters**
 

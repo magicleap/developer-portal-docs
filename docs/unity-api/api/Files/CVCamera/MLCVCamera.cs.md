@@ -38,10 +38,14 @@ namespace UnityEngine.XR.MagicLeap
     [RequireXRLoader]
     public sealed partial class MLCVCamera : MLAutoAPISingleton<MLCVCamera>
     {
+        private bool WasStarted = false;
+
         public static MLResult GetFramePose(MLTime vcamTimestamp, out Matrix4x4 outTransform)
         {
+            MLResult result;
+
             getFramePosePerfMarker.Begin();
-            MLResult result = Instance.InternalGetFramePose(NativeBindings.CameraID.ColorCamera, vcamTimestamp, out outTransform);
+            result = Instance.InternalGetFramePose(NativeBindings.CameraID.ColorCamera, vcamTimestamp, out outTransform);
             getFramePosePerfMarker.End();
 
             return result;
@@ -89,6 +93,42 @@ namespace UnityEngine.XR.MagicLeap
             }
 
             return poseResult;
+        }
+
+        protected override void OnApplicationPause(bool pauseStatus)
+        {
+            if (pauseStatus)
+            {
+                HandleApplicationPause();
+            }
+            else
+            {
+                HandleApplicationUnpause();
+            }
+        }
+
+        private void HandleApplicationPause()
+        {
+            if (IsStarted)
+            {
+                MLResult.Code result = StopAPI();
+                if (result == MLResult.Code.Ok)
+                {
+                    WasStarted = true;
+                }
+            }
+        }
+
+        private void HandleApplicationUnpause()
+        {
+            if (WasStarted)
+            {
+                MLResult.Code result = StartAPI();
+                if (result == MLResult.Code.Ok)
+                {
+                    WasStarted = false;
+                }
+            }
         }
     }
 }

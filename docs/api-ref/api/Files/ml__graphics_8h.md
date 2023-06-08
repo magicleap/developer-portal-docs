@@ -48,7 +48,7 @@ title: ml_graphics.h
 | enum | **[MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname)** <br></br> { <br></br>[MLGraphicsVirtualCameraName_Combined](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-combined) = -1,<br></br> [MLGraphicsVirtualCameraName_Left](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-left) = 0,<br></br> [MLGraphicsVirtualCameraName_Right](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-right),<br></br> [MLGraphicsVirtualCameraName_Count](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-count),<br></br> [MLGraphicsVirtualCameraName_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The metadata name associated with each virtual camera.  |
 | enum | **[Anonymous Enum 9](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-9)** <br></br> { <br></br>[MLGraphics_BufferCount](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphics-buffercount) = 3<br></br>} |
 | enum | **[MLGraphicsProjectionType](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype)** <br></br> { <br></br>[MLGraphicsProjectionType_SignedZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-signedz) = 0,<br></br> [MLGraphicsProjectionType_ReversedInfiniteZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-reversedinfinitez) = 1,<br></br> [MLGraphicsProjectionType_UnsignedZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-unsignedz) = 2,<br></br> [MLGraphicsProjectionType_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines the requested projection matrix model for rendering.  |
-| enum | **[MLGraphicsEnvironmentBlendMode](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode)** <br></br> { <br></br>[MLGraphicsEnvironmentBlendMode_Additive](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-additive) = 0,<br></br> [MLGraphicsEnvironmentBlendMode_Alpha_Blend](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-alpha-blend) = 1<br></br>}<br></br>Defines how the final frame will be blended with environment.  |
+| enum | **[MLGraphicsEnvironmentBlendMode](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode)** <br></br> { <br></br>[MLGraphicsEnvironmentBlendMode_Additive](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-additive) = 0,<br></br> [MLGraphicsEnvironmentBlendMode_Alpha_Blend](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-alpha-blend) = 1,<br></br> [MLGraphicsEnvironmentBlendMode_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines how the final frame will be blended with environment.  |
 | enum | **[Anonymous Enum 10](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-10)** <br></br> { <br></br>[MLGraphicsBlobCache_DefaultMaxEntryBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxentrybytes) = 512 * 1024,<br></br> [MLGraphicsBlobCache_DefaultMaxTotalBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxtotalbytes) = 8 * 1024 * 1024<br></br>} |
 
 ## Functions
@@ -197,6 +197,7 @@ Vulkan clients should use the unsigned Z projection model to ensure that NDC poi
 | ---------- | ----- | ----------- |
 | MLGraphicsEnvironmentBlendMode_Additive |  0| Ignore frame alpha and prohibit generation of segmented dimmer. |
 | MLGraphicsEnvironmentBlendMode_Alpha_Blend |  1| Use the resulting alpha after compostion potentially generating dimmer. |
+| MLGraphicsEnvironmentBlendMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
 
@@ -234,7 +235,7 @@ Default values suitable for use with [MLGraphicsEnableBlobCacheGL()](/api-ref/ap
 ### MLGraphicsOptions {#struct-mlgraphicsoptions}
 
 ```cpp
-typedef struct MLGraphicsOptions  MLGraphicsOptions;
+typedef struct MLGraphicsOptions MLGraphicsOptions;
 ```
 
 The graphics options provided for client creation. 
@@ -252,7 +253,7 @@ The graphics options provided for client creation.
 ### MLGraphicsFrameParamsEx {#struct-mlgraphicsframeparamsex}
 
 ```cpp
-typedef struct MLGraphicsFrameParamsEx  MLGraphicsFrameParamsEx;
+typedef struct MLGraphicsFrameParamsEx MLGraphicsFrameParamsEx;
 ```
 
 The frame parameters requested for the next rendered frame. 
@@ -267,7 +268,7 @@ This structure must be initialized by calling [MLGraphicsFrameParamsExInit()](/a
 
 
 **API Level:**
-  * 21 
+  * 21
 
 
 
@@ -277,7 +278,7 @@ This structure must be initialized by calling [MLGraphicsFrameParamsExInit()](/a
 ### MLGraphicsClipExtentsInfo {#struct-mlgraphicsclipextentsinfo}
 
 ```cpp
-typedef struct MLGraphicsClipExtentsInfo  MLGraphicsClipExtentsInfo;
+typedef struct MLGraphicsClipExtentsInfo MLGraphicsClipExtentsInfo;
 ```
 
 The static clip extents defined for all possible eye positions. 
@@ -300,7 +301,7 @@ Note: The client will need to obtain a headpose to combine with the provided mat
 ### MLGraphicsClipExtentsParams {#struct-mlgraphicsclipextentsparams}
 
 ```cpp
-typedef struct MLGraphicsClipExtentsParams  MLGraphicsClipExtentsParams;
+typedef struct MLGraphicsClipExtentsParams MLGraphicsClipExtentsParams;
 ```
 
 The clip extents parameters. 
@@ -313,7 +314,7 @@ The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/gro
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -323,7 +324,7 @@ The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/gro
 ### MLGraphicsClipExtentsInfoArrayEx {#struct-mlgraphicsclipextentsinfoarrayex}
 
 ```cpp
-typedef struct MLGraphicsClipExtentsInfoArrayEx  MLGraphicsClipExtentsInfoArrayEx;
+typedef struct MLGraphicsClipExtentsInfoArrayEx MLGraphicsClipExtentsInfoArrayEx;
 ```
 
 The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex). 
@@ -338,7 +339,7 @@ This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExI
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -348,7 +349,7 @@ This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExI
 ### MLGraphicsRenderTarget {#struct-mlgraphicsrendertarget}
 
 ```cpp
-typedef struct MLGraphicsRenderTarget  MLGraphicsRenderTarget;
+typedef struct MLGraphicsRenderTarget MLGraphicsRenderTarget;
 ```
 
 Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md). 
@@ -366,7 +367,7 @@ Each render target defines one of the buffered entries color/depth surfaces (wit
 ### MLGraphicsRenderBufferInfo {#struct-mlgraphicsrenderbufferinfo}
 
 ```cpp
-typedef struct MLGraphicsRenderBufferInfo  MLGraphicsRenderBufferInfo;
+typedef struct MLGraphicsRenderBufferInfo MLGraphicsRenderBufferInfo;
 ```
 
 Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md). 
@@ -386,7 +387,7 @@ Note : When the client specifies the [MLGraphicsFlags_NoDepth](/api-ref/api/Modu
 ### MLGraphicsRenderTargetsInfo {#struct-mlgraphicsrendertargetsinfo}
 
 ```cpp
-typedef struct MLGraphicsRenderTargetsInfo  MLGraphicsRenderTargetsInfo;
+typedef struct MLGraphicsRenderTargetsInfo MLGraphicsRenderTargetsInfo;
 ```
 
 The complete definition of all possible buffered entries along with associated metadata. 
@@ -404,7 +405,7 @@ Statically defined after successfully creating the client, the [MLGraphicsRender
 ### MLGraphicsVirtualCameraInfo {#struct-mlgraphicsvirtualcamerainfo}
 
 ```cpp
-typedef struct MLGraphicsVirtualCameraInfo  MLGraphicsVirtualCameraInfo;
+typedef struct MLGraphicsVirtualCameraInfo MLGraphicsVirtualCameraInfo;
 ```
 
 The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArray. 
@@ -427,7 +428,7 @@ Note: The projection model is asymmetric and clients should not assume any of th
 ### MLGraphicsFrameInfo {#struct-mlgraphicsframeinfo}
 
 ```cpp
-typedef struct MLGraphicsFrameInfo  MLGraphicsFrameInfo;
+typedef struct MLGraphicsFrameInfo MLGraphicsFrameInfo;
 ```
 
 Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). 
@@ -438,7 +439,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 
 
 **API Level:**
-  * 7 
+  * 27
 
 
 
@@ -448,7 +449,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 ### MLGraphicsClientPerformanceInfo {#struct-mlgraphicsclientperformanceinfo}
 
 ```cpp
-typedef struct MLGraphicsClientPerformanceInfo  MLGraphicsClientPerformanceInfo;
+typedef struct MLGraphicsClientPerformanceInfo MLGraphicsClientPerformanceInfo;
 ```
 
 Performance timing information for the graphics client. 
@@ -573,7 +574,7 @@ Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group_
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 
@@ -1168,6 +1169,7 @@ Can be called any time after the client has been created. Updates are reflected 
 #pragma once
 
 #include "ml_api.h"
+#include "ml_time.h"
 #include "ml_types.h"
 
 #include <string.h>
@@ -1222,6 +1224,7 @@ typedef enum MLGraphicsProjectionType {
 typedef enum MLGraphicsEnvironmentBlendMode {
   MLGraphicsEnvironmentBlendMode_Additive = 0,
   MLGraphicsEnvironmentBlendMode_Alpha_Blend = 1,
+  MLGraphicsEnvironmentBlendMode_Ensure32Bits = 0x7FFFFFFF
 } MLGraphicsEnvironmentBlendMode;
 
 typedef struct MLGraphicsFrameParamsEx {
@@ -1313,12 +1316,13 @@ typedef struct MLGraphicsFrameInfo {
   MLHandle wait_sync_object;
   uint32_t num_virtual_cameras;
   MLGraphicsVirtualCameraInfo virtual_cameras[MLGraphicsVirtualCameraName_Count];
+  MLTime predicted_display_time;
 } MLGraphicsFrameInfo;
 
 ML_STATIC_INLINE void MLGraphicsFrameInfoInit(MLGraphicsFrameInfo *inout_frame_info) {
   if (NULL != inout_frame_info) {
     memset(inout_frame_info, 0, sizeof(MLGraphicsFrameInfo));
-    inout_frame_info->version = 2;
+    inout_frame_info->version = 3;
     inout_frame_info->handle  = (MLHandle)ML_INVALID_HANDLE;
   }
 }

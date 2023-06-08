@@ -8,7 +8,7 @@ title: MagicLeap
 
 
 **NameSpace:** 
-XR
+XR 
 
 
 
@@ -62,6 +62,7 @@ XR
 | class | **[MLMeshing](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLMeshing.md)** <br></br>Performance markers for [MLMeshing](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLMeshing.md).  |
 | class | **[MLNativeSurface](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md)**  |
 | class | **[MLNativeSurfaceYcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLNativeSurfaceYcbcrRenderer.md)**  |
+| class | **[MLNotifications](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md)** <br></br>[MLHeadsetFit](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md) description goes here.  |
 | struct | **[MLPermission](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPermission.md)**  |
 | class | **[MLPermissions](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md)**  |
 | class | **[MLPlanes](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPlanes.md)**  |
@@ -88,6 +89,7 @@ XR
 | class | **[SessionSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/SessionSubsystem/UnityEngine.XR.MagicLeap.SessionSubsystem.md)** <br></br>The Magic Leap implementation of the  XRSessionSubsystem . Do not create this directly. Use  SessionSubsystemDescriptor.Create()  instead.  |
 | class | **[SettingsIntentsLauncher](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SettingsIntentsLauncher.md)**  |
 | class | **[SubsystemFeatures](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.SubsystemFeatures.md)**  |
+| class | **[TestExtensions](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.TestExtensions.md)**  |
 | class | **[Timer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.Timer.md)**  |
 | class | **[YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md)** <br></br>Implements a renderer for android native & hardware buffers (Vulkan-only).  |
 

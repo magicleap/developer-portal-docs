@@ -29,7 +29,7 @@ struct MLMediaDRMKeyValueArray;
 ```
 
 
-Data type containing array of {key, value} pair. 
+Data type containing array of key/value pair. 
 
 
 
@@ -45,7 +45,7 @@ MLMediaDRMKeyValue * ptr;
 ```
 
 
-Array of {key, value} pair. 
+Array of key/value pair. 
 
 
 

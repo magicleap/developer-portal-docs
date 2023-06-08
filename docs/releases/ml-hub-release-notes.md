@@ -1,17 +1,45 @@
 ---
 title: Magic Leap Hub Release Notes
 sidebar_position: 2
-date: 03/22/2023
+date: 05/12/2023
 ---
 
-## Version 2.0.9
+## Version 2.0.11
 
-### Sprint 21 Release
+* Magic Leap Hub anonymous usage telemetry is disabled
+* Remote Render: various UX updates
+* Device Bridge: UI fix for long device names
+* Device Stream: UI is updated to show FPS counter
+* Package Manager: dedicated panel on Home Screen and various UI updates
+* Advanced Capture: UX updates
+
+### Known behaviors
+
+* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
+* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
+
+## Version 2.0.10
+
+* Device Bridge: ability to select and install multiple APKs
+* Device Bridge: user name of current user is now shown
+* Device Bridge: improved Wi-Fi bridge experience
+* Device Bridge: ability to install APKs either for current or for all available users
+* Device Bridge: factory reset support
+* Advanced Capture: split mode is removed
+* Advanced Capture: if device in low power mode, Hub will wake the device before doing the capture.
+* Remote Render: preview version
+
+### Known behaviors
+
+* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
+* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
+
+## Version 2.0.9
 
 * Device Bridge UX updates
 * Links to LED guides are added to Device Bridge
 
-#### Known behaviors
+### Known behaviors
 
 * Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
 * Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
@@ -19,13 +47,11 @@ date: 03/22/2023
 
 ## Version 2.0.8
 
-### Sprint 20 Release
-
 * Device Stream improvements
 * Styling updates
 * Minor bug fixes
 
-#### Known behaviors
+### Known behaviors
 
 * Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
 * Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
@@ -33,30 +59,24 @@ date: 03/22/2023
 
 ## Version 2.0.7
 
-### Sprint 19 Release
-
 * Device Bridge: bugreports (if any) can be downloaded from device
 * Advanced Capture capabilities
 * Minor bug fixes
 
-#### Known behaviors
+### Known behaviors
 
 * Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
 
 ## Version 2.0.6
 
-### Sprint 18 Release
-
 * Device Bridge's Files tab is updated: shortcuts, folders in files table and other improvements
 * Minor bug fixes
 
-#### Known behaviors
+### Known behaviors
 
 * Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
 
-Version 2.0.5
-
-### Sprint 17 Release
+## Version 2.0.5
 
 * Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not possible, please uninstall The Lab 2.0 and download ML Hub from Dev Portal.**
 * Fix for Device Stream to work on MacOS with M1
@@ -65,19 +85,15 @@ Version 2.0.5
 
 ## Version 2.0.4
 
-### Sprint 16 Release
-
 Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not possible, please uninstall The Lab 2.0 and download ML Hub from Dev Portal.**
 
 * Minor bug fixes
 
-#### Known issues
+### Known issues
 
 * Device Stream does not work yet on MacOS with M1
 
 ## Version 2.0.3
-
-### Sprint 15 Release
 
 * Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not possible, please uninstall The Lab 2.0 and download ML Hub from Dev Portal.**
 * ML Simulator for Unity is the new name for Unity Zero Iteration
@@ -90,26 +106,20 @@ Magic Leap Hub (a.k.a. ML Hub) is the new name for The Lab 2.0. **Upgrade is not
 * MacOS user experience improvements
 * Minor bug fixes
 
-#### Known issues
+### Known issues
 
 * Device Stream does not work yet on MacOS with M1
 
 ## Version 2.0.2
-
-### Sprint 14 Release
 
 * User can override internal ADB with external one in Settings
 * Minor bug fixes
 
 ## Version 2.0.1
 
-### Sprint 13 Release
-
 * Minor fixes
 
 ## Version 2.0.0
-
-### Initial Release
 
 The Lab 2.0 has been repurposed to be a tool for all device users, not just developers. Device Stream is now built in. The Lab 2.0 supports ML2 and later devices from Magic Leap. If you're using an ML1, please use the original version of The Lab.
 

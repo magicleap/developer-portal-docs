@@ -57,7 +57,7 @@ A set of possible error codes that the Gaze Recognition system can report.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -86,7 +86,7 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 
 
 **API Level:**
-  * 24 
+  * 24
 
 
 
@@ -99,7 +99,7 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 ### MLGazeRecognitionStaticData {#struct-mlgazerecognitionstaticdata}
 
 ```cpp
-typedef struct MLGazeRecognitionStaticData  MLGazeRecognitionStaticData;
+typedef struct MLGazeRecognitionStaticData MLGazeRecognitionStaticData;
 ```
 
 Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata). 
@@ -110,7 +110,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 
 
 **API Level:**
-  * 20 
+  * 27
 
 
 
@@ -120,7 +120,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 ### MLGazeRecognitionState {#struct-mlgazerecognitionstate}
 
 ```cpp
-typedef struct MLGazeRecognitionState  MLGazeRecognitionState;
+typedef struct MLGazeRecognitionState MLGazeRecognitionState;
 ```
 
 Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use. 
@@ -131,7 +131,7 @@ Information about the state of the Gaze Recognition system. This structure must 
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -165,7 +165,7 @@ Initialize [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recog
 
 
 **API Level:**
-  * 20
+  * 27
 
 
 
@@ -413,12 +413,14 @@ typedef enum MLGazeRecognitionBehavior {
 
 typedef struct MLGazeRecognitionStaticData {
   uint32_t version;
+  float eye_height_max;
+  float eye_width_max;
   MLCoordinateFrameUID vergence;
 } MLGazeRecognitionStaticData;
 
 ML_STATIC_INLINE void MLGazeRecognitionStaticDataInit(MLGazeRecognitionStaticData *inout_state) {
   if (inout_state) {
-    inout_state->version = 1u;
+    inout_state->version = 2u;
   }
 }
 

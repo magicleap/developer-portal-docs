@@ -29,6 +29,10 @@ APIs for accessing Camera Device and to do Camera Capture.  [More...](#detailed-
 | struct | **[MLDepthCameraIntrinsics](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_intrinsics.md)** <br></br>Depth camera intrinsic parameters.  |
 | struct | **[MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
 | struct | **[MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| struct | **[MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md)** <br></br>A structure to encapsulate the camera settings.  |
+| struct | **[MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
+| struct | **[MLEyeCameraFrame](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| struct | **[MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md)** <br></br>A structure to encapsulate all the eye camera data.  |
 | struct | **[MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md)** <br></br>A structure to encapsulate the camera settings.  |
 | struct | **[MLWorldCameraIntrinsics](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md)** <br></br>World camera intrinsic parameters.  |
 | struct | **[MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
@@ -60,7 +64,12 @@ APIs for accessing Camera Device and to do Camera Capture.  [More...](#detailed-
 | typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer)** <br></br>Confidence score.  |
 | typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer)** <br></br>Flags.  |
 | typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage)** <br></br>Ambient raw depth image.  |
+| typedef [MLDepthCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md) | **[MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage)** <br></br>Raw depth image.  |
 | typedef struct [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) | **[MLDepthCameraData](/api-ref/api/Modules/group___camera/group___camera.md#struct-mldepthcameradata)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| typedef struct [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) | **[MLEyeCameraSettings](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecamerasettings)** <br></br>A structure to encapsulate the camera settings.  |
+| typedef struct [MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md) | **[MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecameraframebuffer)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
+| typedef struct [MLEyeCameraFrame](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md) | **[MLEyeCameraFrame](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecameraframe)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| typedef struct [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) | **[MLEyeCameraData](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecameradata)** <br></br>A structure to encapsulate all the eye camera data.  |
 | typedef struct [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) | **[MLWorldCameraSettings](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcamerasettings)** <br></br>A structure to encapsulate the camera settings.  |
 | typedef struct [MLWorldCameraIntrinsics](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md) | **[MLWorldCameraIntrinsics](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcameraintrinsics)** <br></br>World camera intrinsic parameters.  |
 | typedef struct [MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md) | **[MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcameraframebuffer)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
@@ -85,12 +94,16 @@ APIs for accessing Camera Device and to do Camera Capture.  [More...](#detailed-
 | enum | **[Anonymous Enum 5](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-5)** <br></br> { <br></br>[MLCamera_MaxImagePlanes](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcamera-maximageplanes) = 3<br></br>} |
 | enum | **[Anonymous Enum 6](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-6)** <br></br> { <br></br>[MLCameraIntrinsics_MaxDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraintrinsics-maxdistortioncoefficients) = 5<br></br>}<br></br>Camera distortion vector size.  |
 | enum | **[Anonymous Enum 8](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-8)** <br></br> { <br></br>[MLDepthCameraIntrinsics_MaxDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraintrinsics-maxdistortioncoefficients) = 5<br></br>} |
-| enum | **[MLDepthCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode)** <br></br> { <br></br>[MLDepthCameraMode_LongRange](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-longrange) = 1 << 0,<br></br> [MLDepthCameraMode_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of depth camera modes.  |
+| enum | **[MLDepthCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode)** <br></br> { <br></br>[MLDepthCameraMode_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-none) = 0,<br></br> [MLDepthCameraMode_LongRange](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-longrange) = 1 << 0,<br></br> [MLDepthCameraMode_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of depth camera modes.  |
 | enum | **[MLDepthCameraFrameType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype)** <br></br> { <br></br>[MLDepthCameraFrameType_Unknown](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype-unknown) = 0,<br></br> [MLDepthCameraFrameType_LongRange](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype-longrange) = 1,<br></br> [MLDepthCameraFrameType_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraframetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of camera mode used when capturing a frame.  |
-| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_DepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
+| enum | **[MLDepthCameraFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags)** <br></br> { <br></br>[MLDepthCameraFlags_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-none) = 0,<br></br> [MLDepthCameraFlags_DepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthimage) = 1 << 0,<br></br> [MLDepthCameraFlags_Confidence](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-confidence) = 1 << 1,<br></br> [MLDepthCameraFlags_DepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-depthflags) = 1 << 2,<br></br> [MLDepthCameraFlags_AmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ambientrawdepthimage) = 1 << 3,<br></br> [MLDepthCameraFlags_RawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-rawdepthimage) = 1 << 4,<br></br> [MLDepthCameraFlags_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameraflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
 | enum | **[MLDepthCameraDepthFlags](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags)** <br></br> { <br></br>[MLDepthCameraDepthFlags_Valid](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-valid) = 0 << 0,<br></br> [MLDepthCameraDepthFlags_Invalid](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-invalid) = 1 << 0,<br></br> [MLDepthCameraDepthFlags_Saturated](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-saturated) = 1 << 1,<br></br> [MLDepthCameraDepthFlags_Inconsistent](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-inconsistent) = 1 << 2,<br></br> [MLDepthCameraDepthFlags_LowSignal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-lowsignal) = 1 << 3,<br></br> [MLDepthCameraDepthFlags_FlyingPixel](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-flyingpixel) = 1 << 4,<br></br> [MLDepthCameraDepthFlags_Masked](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-masked) = 1 << 5,<br></br> [MLDepthCameraDepthFlags_SBI](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-sbi) = 1 << 8,<br></br> [MLDepthCameraDepthFlags_StrayLight](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-straylight) = 1 << 9,<br></br> [MLDepthCameraDepthFlags_ConnectedComponent](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-connectedcomponent) = 1 << 10,<br></br> [MLDepthCameraDepthFlags_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mldepthcameradepthflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of flags to select data requested from depth camera.  |
-| enum | **[Anonymous Enum 27](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-27)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
-| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_Left](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
+| enum | **[MLEyeCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier)** <br></br> { <br></br>[MLEyeCameraIdentifier_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-none) = 0,<br></br> [MLEyeCameraIdentifier_LeftTemple](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-lefttemple) = 1 << 0,<br></br> [MLEyeCameraIdentifier_LeftNasal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-leftnasal) = 1 << 1,<br></br> [MLEyeCameraIdentifier_RightNasal](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-rightnasal) = 1 << 2,<br></br> [MLEyeCameraIdentifier_RightTemple](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-righttemple) = 1 << 3,<br></br> [MLEyeCameraIdentifier_All](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-all) = MLEyeCameraIdentifier_LeftTemple |
+                              MLEyeCameraIdentifier_LeftNasal  |
+                              MLEyeCameraIdentifier_RightNasal |
+                              MLEyeCameraIdentifier_RightTemple,<br></br> [MLEyeCameraIdentifier_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
+| enum | **[Anonymous Enum 31](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-31)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
+| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-none) = 0,<br></br> [MLWorldCameraIdentifier_Left](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
                                 MLWorldCameraIdentifier_Right |
                                 MLWorldCameraIdentifier_Center,<br></br> [MLWorldCameraIdentifier_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
 | enum | **[MLWorldCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode)** <br></br> { <br></br>[MLWorldCameraMode_Unknown](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-unknown) = 0,<br></br> [MLWorldCameraMode_LowExposure](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-lowexposure) = 1 << 0,<br></br> [MLWorldCameraMode_NormalExposure](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-normalexposure) = 1 << 1,<br></br> [MLWorldCameraMode_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of world camera modes.  |
@@ -132,7 +145,14 @@ APIs for accessing Camera Device and to do Camera Capture.  [More...](#detailed-
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLDepthCameraGetLatestDepthData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameragetlatestdepthdata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint64_t timeout_ms, [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) ** out_data)<br></br>Poll for Frames.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLDepthCameraReleaseDepthData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcamerareleasedepthdata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) * depth_camera_data)<br></br>Releases specified [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) object.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLDepthCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameradisconnect)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Disconnect from depth camera.  |
-| void | **[MLWorldCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcamerasettingsinit)**([MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * inout_handle)<br></br>Initialize the connect handle structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect).  |
+| void | **[MLEyeCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecamerasettingsinit)**([MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * inout_settings)<br></br>Initialize the camera settings structure. Shall be called before calling [MLEyeCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect).  |
+| void | **[MLEyeCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecameradatainit)**([MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * inout_eye_camera_data)<br></br>Initialize [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) with version.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)**(const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Connect to eye cameras.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraUpdateSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraupdatesettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * settings)<br></br>Update the eye camera settings.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameragetlatestcameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint64_t timeout_ms, [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * out_data)<br></br>Poll for Frames.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecamerareleasecameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * eye_camera_data)<br></br>Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameradisconnect)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Disconnect from eye camera(s).  |
+| void | **[MLWorldCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcamerasettingsinit)**([MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * inout_handle)<br></br>Initialize the camera settings structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect).  |
 | void | **[MLWorldCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcameradatainit)**([MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) * inout_world_camera_data)<br></br>Initialize [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) with version.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect)**(const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Connect to world cameras.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraUpdateSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraupdatesettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * settings)<br></br>Update the world camera settings.  |
@@ -146,7 +166,13 @@ APIs for accessing Camera Device and to do Camera Capture.
 
 APIs to access the world cameras.
 
+APIs to access the eye camera data.
+
 APIs to access the depth camera data.
+
+
+# Supported Camera Modes, Resolutions, Capture Type, Formats and FrameRates
+
 
 <div>
   <table className="doxtable">
@@ -273,28 +299,34 @@ APIs to access the depth camera data.
       </table>
       </div>
 
+
 Note: Quality and frame rate provided during connection should match the resolution and framerate in PrepareCapture. 
 
 Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
+Shared Object:\n perception.magicleap
+
+\experimental This is an experimental API which may be modified or removed without any prior notice.
+
 
 The API only supports reading data from the depth camera. Apps cannot start or stop the camera nor can it modify the camera settings, support for the same may be added in a future release. If the system is not actively using the depth camera then any calls to get the depth camera data will timeout.
 
+Shared Object:\n perception.magicleap
 
-This is an experimental API which may be modified or removed without any prior notice. 
+This is an experimental API which may be modified or removed without any prior notice.
+
+Shared Object:\n perception.magicleap
+
+Magic Leap 2 has three world cameras which it uses for environment tracking. The three cameras area located on the left, center, and right side of the headset. This API will provide a way to query for the frames from these world cameras, at this point the app will not be able to configure the world camera parameters.
+
+
+\experimental This is an experimental API which may be modified or removed without any prior notice. 
 
 
 
 
 **Shared Object:**
-  * camera.magicleap 
-# Supported Camera Modes, Resolutions, Capture Type, Formats and FrameRates
-
-**Shared Object:**
-  * perception.magicleap  This is an experimental API which may be modified or removed without any prior notice.
-
-**Shared Object:**
-  * perception.magicleap Magic Leap 2 has three world cameras which it uses for environment tracking. The three cameras area located on the left, center, and right side of the headset. This API will provide a way to query for the frames from these world cameras, at this point the app will not be able to configure the world camera parameters.
+  * camera.magicleap*
 
 
 
@@ -497,10 +529,31 @@ Captured output format. These three parameters determine which formats are suppo
 
 
 
-* Camera type: [Main, CV]
-* Mode: [Real, MR, Virtual]
-* Capture type: [Preview, Video, Image]
-These are formats supported: YUV : [Main] [Real] [Preview, Video, Image] / [ CV ] [Real] [Video, Image] RGBA : [Main] [Real] [Video] / [Main] [MR, Virtual] [Video, Image] / [ CV ] [Real] [Video] JPEG : [Main] [Real, MR, Virtual] [Image] 
+* Camera type: [Main, CV].
+* Mode: [Real, MR, Virtual].
+* Capture type: [Preview, Video, Image].
+These are formats supported:
+
+<table className="doxtable">
+  <tbody><tr>
+      <th>Format </th><th>Camera Type </th><th>Mode </th><th>Capture Type </th></tr>
+    <tr>
+      <td>YUV </td><td>Main <br />
+        CV </td><td>Real <br />
+        Real </td><td>Preview, Video, Image <br />
+        Video, Image </td></tr>
+    <tr>
+      <td>RGBA </td><td>Main <br />
+        Main <br />
+        CR </td><td>Real <br />
+        MR, Virtual <br />
+        Real </td><td>Video <br />
+        Video, Image <br />
+        Video </td></tr>
+    <tr>
+      <td>JPEG </td><td>Main </td><td>Real, MR, Virtual </td><td>Image </td></tr>
+  </tbody></table>
+  
 
 
 
@@ -559,7 +612,7 @@ Camera distortion vector size.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -585,6 +638,7 @@ Camera distortion vector size.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLDepthCameraMode_None |  0| None. |
 | MLDepthCameraMode_LongRange |  1 << 0| Long range mode. Under normal operations long range mode has a maximum frequency of 5fps and a range of up to 5m, in some cases this can go as far 7.5m. .|
 | MLDepthCameraMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -622,10 +676,12 @@ Enumeration of camera mode used when capturing a frame.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLDepthCameraFlags_None |  0| None. |
 | MLDepthCameraFlags_DepthImage |  1 << 0| Enable MLDepthCameraDepthImage. See [MLDepthCameraDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthimage) for more details. |
 | MLDepthCameraFlags_Confidence |  1 << 1| Enable MLDepthCameraConfidenceBuffer. See [MLDepthCameraConfidenceBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraconfidencebuffer) for more details. |
 | MLDepthCameraFlags_DepthFlags |  1 << 2| Enable MLDepthCameraDepthFlagsBuffer. See [MLDepthCameraDepthFlagsBuffer](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameradepthflagsbuffer) for more details. |
 | MLDepthCameraFlags_AmbientRawDepthImage |  1 << 3| Enable MLDepthCameraAmbientRawDepthImage. See [MLDepthCameraAmbientRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcameraambientrawdepthimage) for more details. |
+| MLDepthCameraFlags_RawDepthImage |  1 << 4| Enable MLDepthCameraRawDepthImage. See [MLDepthCameraRawDepthImage](/api-ref/api/Modules/group___camera/group___camera.md#mldepthcameraframebuffer-mldepthcamerarawdepthimage) for more details. |
 | MLDepthCameraFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -648,9 +704,9 @@ Enumeration of flags to select data requested from depth camera.
 | MLDepthCameraDepthFlags_Inconsistent |  1 << 2| Inconsistent data. Inconsistent data received when capturing frames. This can happen due to fast motion. .|
 | MLDepthCameraDepthFlags_LowSignal |  1 << 3| Low signal. Pixel has very low signal to noise ratio. One example of when this can happen is for pixels in far end of the range. .|
 | MLDepthCameraDepthFlags_FlyingPixel |  1 << 4| Flying pixel. This typically happens when there is step jump in the distance of adjoining pixels in the scene. Example: When you open a door looking into the room the edges along the door's edges can cause flying pixels. .|
-| MLDepthCameraDepthFlags_Masked |  1 << 5| Masked. If this bit is on it indicates that the corresponding pixel may not be within the projector's illumination cone. .|
+| MLDepthCameraDepthFlags_Masked |  1 << 5| Masked. If this bit is on it indicates that the corresponding pixel may not be within the illuminator's illumination cone. .|
 | MLDepthCameraDepthFlags_SBI |  1 << 8| SBI. This bit will be set when there is high noise. .|
-| MLDepthCameraDepthFlags_StrayLight |  1 << 9| Stray light. This could happen when there is another light source apart from the depth camera projector. This could also lead to MLDepthCameraDepthFlags_LowSignal. .|
+| MLDepthCameraDepthFlags_StrayLight |  1 << 9| Stray light. This could happen when there is another light source apart from the depth camera illuminator. This could also lead to MLDepthCameraDepthFlags_LowSignal. .|
 | MLDepthCameraDepthFlags_ConnectedComponent |  1 << 10| Connected component. If a small group of MLDepthCameraDepthFlags_Valid is sorrunded by a set of MLDepthCameraDepthFlags_Invalid then this bit will be set to 1. .|
 | MLDepthCameraDepthFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -664,7 +720,34 @@ Enumeration of flags to select data requested from depth camera.
 
 -----------
 
-### Anonymous Enum 27 {#enums-anonymous-enum-27}
+### MLEyeCameraIdentifier {#enums-mleyecameraidentifier}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| MLEyeCameraIdentifier_None |  0| None. |
+| MLEyeCameraIdentifier_LeftTemple |  1 << 0| Left temple eye camera. |
+| MLEyeCameraIdentifier_LeftNasal |  1 << 1| Left nasal eye camera. |
+| MLEyeCameraIdentifier_RightNasal |  1 << 2| Right nasal eye camera. |
+| MLEyeCameraIdentifier_RightTemple |  1 << 3| Right temple eye camera. |
+| MLEyeCameraIdentifier_All |  MLEyeCameraIdentifier_LeftTemple |
+                              MLEyeCameraIdentifier_LeftNasal  |
+                              MLEyeCameraIdentifier_RightNasal |
+                              MLEyeCameraIdentifier_RightTemple| All Eye cameras. |
+| MLEyeCameraIdentifier_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
+
+
+
+Camera Identifier. 
+
+Enumeration of all the available eye camera sensors. 
+
+
+
+
+
+-----------
+
+### Anonymous Enum 31 {#enums-anonymous-enum-31}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -684,6 +767,7 @@ Enumeration of flags to select data requested from depth camera.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLWorldCameraIdentifier_None |  0| None. |
 | MLWorldCameraIdentifier_Left |  1 << 0| Left World camera. |
 | MLWorldCameraIdentifier_Right |  1 << 1| Right World camera. |
 | MLWorldCameraIdentifier_Center |  1 << 2| Center World camera. |
@@ -765,7 +849,7 @@ Camera context to be used while connecting to camera.
 ### MLCameraMRConnectInfo {#struct-mlcameramrconnectinfo}
 
 ```cpp
-typedef struct MLCameraMRConnectInfo  MLCameraMRConnectInfo;
+typedef struct MLCameraMRConnectInfo MLCameraMRConnectInfo;
 ```
 
 
@@ -782,7 +866,7 @@ A structure to encapsulate connection settings for MR capture.
 ### MLCameraConnectContext {#struct-mlcameraconnectcontext}
 
 ```cpp
-typedef struct MLCameraConnectContext  MLCameraConnectContext;
+typedef struct MLCameraConnectContext MLCameraConnectContext;
 ```
 
 
@@ -799,7 +883,7 @@ A structure to encapsulate context for a CameraConnect Request.
 ### MLCameraCaptureStreamCaps {#struct-mlcameracapturestreamcaps}
 
 ```cpp
-typedef struct MLCameraCaptureStreamCaps  MLCameraCaptureStreamCaps;
+typedef struct MLCameraCaptureStreamCaps MLCameraCaptureStreamCaps;
 ```
 
 A structure to encapsulate stream capabilities. 
@@ -812,7 +896,7 @@ The capabilities for each stream supported by logical camera device can be queri
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -822,7 +906,7 @@ The capabilities for each stream supported by logical camera device can be queri
 ### MLCameraCaptureStreamConfig {#struct-mlcameracapturestreamconfig}
 
 ```cpp
-typedef struct MLCameraCaptureStreamConfig  MLCameraCaptureStreamConfig;
+typedef struct MLCameraCaptureStreamConfig MLCameraCaptureStreamConfig;
 ```
 
 
@@ -839,7 +923,7 @@ A structure to encapsulate stream configurations.
 ### MLCameraCaptureConfig {#struct-mlcameracaptureconfig}
 
 ```cpp
-typedef struct MLCameraCaptureConfig  MLCameraCaptureConfig;
+typedef struct MLCameraCaptureConfig MLCameraCaptureConfig;
 ```
 
 
@@ -856,7 +940,7 @@ A structure to encapsulate capture configuration.
 ### MLCameraPlaneInfo {#struct-mlcameraplaneinfo}
 
 ```cpp
-typedef struct MLCameraPlaneInfo  MLCameraPlaneInfo;
+typedef struct MLCameraPlaneInfo MLCameraPlaneInfo;
 ```
 
 
@@ -873,7 +957,7 @@ Per plane info for captured output.
 ### MLCameraOutput {#struct-mlcameraoutput}
 
 ```cpp
-typedef struct MLCameraOutput  MLCameraOutput;
+typedef struct MLCameraOutput MLCameraOutput;
 ```
 
 
@@ -890,7 +974,7 @@ A structure to encapsulate captured output.
 ### MLCameraIntrinsicCalibrationParameters {#struct-mlcameraintrinsiccalibrationparameters}
 
 ```cpp
-typedef struct MLCameraIntrinsicCalibrationParameters  MLCameraIntrinsicCalibrationParameters;
+typedef struct MLCameraIntrinsicCalibrationParameters MLCameraIntrinsicCalibrationParameters;
 ```
 
 Camera intrinsic parameter. 
@@ -901,7 +985,7 @@ Camera intrinsic parameter.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -911,7 +995,7 @@ Camera intrinsic parameter.
 ### MLCameraResultExtras {#struct-mlcameraresultextras}
 
 ```cpp
-typedef struct MLCameraResultExtras  MLCameraResultExtras;
+typedef struct MLCameraResultExtras MLCameraResultExtras;
 ```
 
 
@@ -928,7 +1012,7 @@ A structure to encapsulate various indices for a capture result.
 ### MLCameraDeviceAvailabilityInfo {#struct-mlcameradeviceavailabilityinfo}
 
 ```cpp
-typedef struct MLCameraDeviceAvailabilityInfo  MLCameraDeviceAvailabilityInfo;
+typedef struct MLCameraDeviceAvailabilityInfo MLCameraDeviceAvailabilityInfo;
 ```
 
 
@@ -945,7 +1029,7 @@ A structure to represent info on camera availability.
 ### MLCameraDeviceAvailabilityStatusCallbacks {#struct-mlcameradeviceavailabilitystatuscallbacks}
 
 ```cpp
-typedef struct MLCameraDeviceAvailabilityStatusCallbacks  MLCameraDeviceAvailabilityStatusCallbacks;
+typedef struct MLCameraDeviceAvailabilityStatusCallbacks MLCameraDeviceAvailabilityStatusCallbacks;
 ```
 
 
@@ -962,7 +1046,7 @@ Device availability status callbacks to be implemented by client to receive devi
 ### MLCameraDeviceStatusCallbacks {#struct-mlcameradevicestatuscallbacks}
 
 ```cpp
-typedef struct MLCameraDeviceStatusCallbacks  MLCameraDeviceStatusCallbacks;
+typedef struct MLCameraDeviceStatusCallbacks MLCameraDeviceStatusCallbacks;
 ```
 
 
@@ -979,7 +1063,7 @@ Device status callbacks to be implemented by client to receive device status if 
 ### MLCameraCaptureCallbacks {#struct-mlcameracapturecallbacks}
 
 ```cpp
-typedef struct MLCameraCaptureCallbacks  MLCameraCaptureCallbacks;
+typedef struct MLCameraCaptureCallbacks MLCameraCaptureCallbacks;
 ```
 
 Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. 
@@ -997,7 +1081,7 @@ This structure must be initialized by calling [MLCameraCaptureCallbacksInit()](/
 ### MLDepthCameraSettings {#struct-mldepthcamerasettings}
 
 ```cpp
-typedef struct MLDepthCameraSettings  MLDepthCameraSettings;
+typedef struct MLDepthCameraSettings MLDepthCameraSettings;
 ```
 
 A structure to encapsulate the camera settings. 
@@ -1010,7 +1094,7 @@ This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-r
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -1020,7 +1104,7 @@ This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-r
 ### MLDepthCameraIntrinsics {#struct-mldepthcameraintrinsics}
 
 ```cpp
-typedef struct MLDepthCameraIntrinsics  MLDepthCameraIntrinsics;
+typedef struct MLDepthCameraIntrinsics MLDepthCameraIntrinsics;
 ```
 
 Depth camera intrinsic parameters. 
@@ -1031,7 +1115,7 @@ Depth camera intrinsic parameters.
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -1041,7 +1125,7 @@ Depth camera intrinsic parameters.
 ### MLDepthCameraFrameBuffer {#struct-mldepthcameraframebuffer}
 
 ```cpp
-typedef struct MLDepthCameraFrameBuffer  MLDepthCameraFrameBuffer;
+typedef struct MLDepthCameraFrameBuffer MLDepthCameraFrameBuffer;
 ```
 
 A structure to encapsulate per plane info for each camera frame. 
@@ -1052,7 +1136,7 @@ A structure to encapsulate per plane info for each camera frame.
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -1139,10 +1223,30 @@ Cast the [MLDepthCameraFrameBuffer.data](/api-ref/api/Modules/group___camera/str
 
 -----------
 
+### MLDepthCameraRawDepthImage {#mldepthcameraframebuffer-mldepthcamerarawdepthimage}
+
+```cpp
+typedef MLDepthCameraFrameBuffer MLDepthCameraRawDepthImage;
+```
+
+Raw depth image. 
+
+This is the raw depth camera sensor data captured with the depth camera illumination and corresponds to the amount of total light incident on the sensor.
+
+Cast the [MLDepthCameraFrameBuffer.data](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md#void-data) to float data type. 
+
+
+
+[More Info](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_frame_buffer.md)
+
+
+
+-----------
+
 ### MLDepthCameraData {#struct-mldepthcameradata}
 
 ```cpp
-typedef struct MLDepthCameraData  MLDepthCameraData;
+typedef struct MLDepthCameraData MLDepthCameraData;
 ```
 
 A structure to encapsulate output data for each camera sensor. 
@@ -1155,7 +1259,95 @@ This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/a
 
 
 **API Level:**
-  * 23 
+  * 25
+
+
+
+
+-----------
+
+### MLEyeCameraSettings {#struct-mleyecamerasettings}
+
+```cpp
+typedef struct MLEyeCameraSettings MLEyeCameraSettings;
+```
+
+A structure to encapsulate the camera settings. 
+
+This structure must be initialized by calling [MLEyeCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecamerasettingsinit) before use.
+
+
+
+[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md)
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraFrameBuffer {#struct-mleyecameraframebuffer}
+
+```cpp
+typedef struct MLEyeCameraFrameBuffer MLEyeCameraFrameBuffer;
+```
+
+A structure to encapsulate per plane info for each camera frame. 
+
+
+
+[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md)
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraFrame {#struct-mleyecameraframe}
+
+```cpp
+typedef struct MLEyeCameraFrame MLEyeCameraFrame;
+```
+
+A structure to encapsulate output data for each camera sensor. 
+
+
+
+[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md)
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraData {#struct-mleyecameradata}
+
+```cpp
+typedef struct MLEyeCameraData MLEyeCameraData;
+```
+
+A structure to encapsulate all the eye camera data. 
+
+This structure must be initialized by calling [MLEyeCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecameradatainit) before use.
+
+
+
+[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md)
+
+
+**API Level:**
+  * 26
 
 
 
@@ -1165,7 +1357,7 @@ This structure must be initialized by calling [MLDepthCameraDataInit](/api-ref/a
 ### MLWorldCameraSettings {#struct-mlworldcamerasettings}
 
 ```cpp
-typedef struct MLWorldCameraSettings  MLWorldCameraSettings;
+typedef struct MLWorldCameraSettings MLWorldCameraSettings;
 ```
 
 A structure to encapsulate the camera settings. 
@@ -1178,7 +1370,7 @@ This structure must be initialized by calling [MLWorldCameraSettingsInit](/api-r
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -1188,7 +1380,7 @@ This structure must be initialized by calling [MLWorldCameraSettingsInit](/api-r
 ### MLWorldCameraIntrinsics {#struct-mlworldcameraintrinsics}
 
 ```cpp
-typedef struct MLWorldCameraIntrinsics  MLWorldCameraIntrinsics;
+typedef struct MLWorldCameraIntrinsics MLWorldCameraIntrinsics;
 ```
 
 World camera intrinsic parameters. 
@@ -1199,7 +1391,7 @@ World camera intrinsic parameters.
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -1209,7 +1401,7 @@ World camera intrinsic parameters.
 ### MLWorldCameraFrameBuffer {#struct-mlworldcameraframebuffer}
 
 ```cpp
-typedef struct MLWorldCameraFrameBuffer  MLWorldCameraFrameBuffer;
+typedef struct MLWorldCameraFrameBuffer MLWorldCameraFrameBuffer;
 ```
 
 A structure to encapsulate per plane info for each camera frame. 
@@ -1220,7 +1412,7 @@ A structure to encapsulate per plane info for each camera frame.
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -1230,7 +1422,7 @@ A structure to encapsulate per plane info for each camera frame.
 ### MLWorldCameraFrame {#struct-mlworldcameraframe}
 
 ```cpp
-typedef struct MLWorldCameraFrame  MLWorldCameraFrame;
+typedef struct MLWorldCameraFrame MLWorldCameraFrame;
 ```
 
 A structure to encapsulate output data for each camera sensor. 
@@ -1241,7 +1433,7 @@ A structure to encapsulate output data for each camera sensor.
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -1251,7 +1443,7 @@ A structure to encapsulate output data for each camera sensor.
 ### MLWorldCameraData {#struct-mlworldcameradata}
 
 ```cpp
-typedef struct MLWorldCameraData  MLWorldCameraData;
+typedef struct MLWorldCameraData MLWorldCameraData;
 ```
 
 A structure to encapsulate output data for each camera sensor. 
@@ -1264,7 +1456,7 @@ This structure must be initialized by calling [MLWorldCameraDataInit](/api-ref/a
 
 
 **API Level:**
-  * 23 
+  * 23
 
 
 
@@ -2339,7 +2531,7 @@ Initialize [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_de
 
 
 **API Level:**
-  * 23
+  * 25
 
 
 
@@ -2369,9 +2561,9 @@ Connect to depth camera.
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Connected to camera device(s) successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -2495,7 +2687,7 @@ Releases specified [MLDepthCameraData](/api-ref/api/Modules/group___camera/struc
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLDepthCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLDepthCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraconnect). |
 | [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) * |depth_camera_data|Pointer to a valid [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) object.|
 
 **Returns**
@@ -2559,6 +2751,281 @@ This will disconnect from the depth camera.
 
 -----------
 
+### MLEyeCameraSettingsInit {#void-mleyecamerasettingsinit}
+
+```cpp
+static inline void MLEyeCameraSettingsInit(
+    MLEyeCameraSettings * inout_settings
+)
+```
+
+Initialize the camera settings structure. Shall be called before calling [MLEyeCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |inout_settings|[MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) structure to initialize.|
+**Required Permissions**:
+
+  * None 
+
+
+
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraDataInit {#void-mleyecameradatainit}
+
+```cpp
+static inline void MLEyeCameraDataInit(
+    MLEyeCameraData * inout_eye_camera_data
+)
+```
+
+Initialize [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) with version. 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |inout_eye_camera_data|Set up the version for inout_eye_camera_data. |
+
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraConnect {#mlresult-mleyecameraconnect}
+
+```cpp
+MLResult MLEyeCameraConnect(
+    const MLEyeCameraSettings * settings,
+    MLHandle * out_handle
+)
+```
+
+Connect to eye cameras. 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |settings|A pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) structure. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to camera handle to be used in later APIs.|
+
+**Returns**
+
+|  |   |   |
+|--|--|--|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Connected to camera device(s) successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+**Required Permissions**:
+
+  * com.magicleap.permission.EYE_CAMERA (protection level: dangerous) 
+
+
+
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraUpdateSettings {#mlresult-mleyecameraupdatesettings}
+
+```cpp
+MLResult MLEyeCameraUpdateSettings(
+    MLHandle handle,
+    const MLEyeCameraSettings * settings
+)
+```
+
+Update the eye camera settings. 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
+| const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |settings|Pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md).|
+
+**Returns**
+
+|  |   |   |
+|--|--|--|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Settings updated successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
+**Required Permissions**:
+
+  * None 
+
+
+
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraGetLatestCameraData {#mlresult-mleyecameragetlatestcameradata}
+
+```cpp
+MLResult MLEyeCameraGetLatestCameraData(
+    MLHandle handle,
+    uint64_t timeout_ms,
+    MLEyeCameraData * out_data
+)
+```
+
+Poll for Frames. 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
+| uint64_t |timeout_ms|Timeout in milliseconds. |
+| [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |out_data|Eye camera data. Will be set to NULL if no valid data is available at this time.|
+
+**Returns**
+
+|  |   |   |
+|--|--|--|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Camera frames fetched successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Timeout|Returned because no new frame available at this time. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
+**Required Permissions**:
+
+  * None 
+
+
+Returns [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache and release the memory by calling [MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecamerareleasecameradata).
+
+This is a blocking call. API is not thread safe.
+
+If there are no new camera frames within the timeout_ms duration then the API will return MLResult_Timeout.
+
+
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraReleaseCameraData {#mlresult-mleyecamerareleasecameradata}
+
+```cpp
+MLResult MLEyeCameraReleaseCameraData(
+    MLHandle handle,
+    MLEyeCameraData * eye_camera_data
+)
+```
+
+Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object. 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
+| [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |eye_camera_data|Pointer to a valid [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object.|
+
+**Returns**
+
+|  |   |   |
+|--|--|--|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released eye camera data. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
+**Required Permissions**:
+
+  * None 
+
+
+This function should be called exactly once for each call to [MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameragetlatestcameradata).
+
+
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
+### MLEyeCameraDisconnect {#mlresult-mleyecameradisconnect}
+
+```cpp
+MLResult MLEyeCameraDisconnect(
+    MLHandle handle
+)
+```
+
+Disconnect from eye camera(s). 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect).|
+
+**Returns**
+
+|  |   |   |
+|--|--|--|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid handle. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Disconnected camera(s) successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to disconnect camera(s).|
+**Required Permissions**:
+
+  * None 
+
+
+This will disconnect from all the eye camera(s) currently connected.
+
+
+
+
+**API Level:**
+  * 26
+
+
+
+
+-----------
+
 ### MLWorldCameraSettingsInit {#void-mlworldcamerasettingsinit}
 
 ```cpp
@@ -2567,7 +3034,7 @@ static inline void MLWorldCameraSettingsInit(
 )
 ```
 
-Initialize the connect handle structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). 
+Initialize the camera settings structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). 
 
 **Parameters**
 
@@ -2639,9 +3106,9 @@ Connect to world cameras.
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Connected to camera device(s) successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -2674,7 +3141,7 @@ Update the world camera settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). |
 | const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * |settings|Pointer to [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md).|
 
 **Returns**
@@ -2716,7 +3183,7 @@ Poll for Frames.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). |
 | uint64_t |timeout_ms|Timeout in milliseconds. |
 | [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) ** |out_data|World camera data. Will be set to NULL if no valid data is available at this time.|
 
@@ -2765,7 +3232,7 @@ Releases specified [MLWorldCameraData](/api-ref/api/Modules/group___camera/struc
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect)|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). |
 | [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) * |world_camera_data|Pointer to a valid [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) object.|
 
 **Returns**

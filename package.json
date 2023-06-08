@@ -17,8 +17,8 @@
   "dependencies": {
     "@docusaurus/core": "^2.4.0",
     "@docusaurus/plugin-client-redirects": "^2.4.0",
-    "@docusaurus/plugin-ideal-image": "^2.3.1",
-    "@docusaurus/preset-classic": "^2.3.1",
+    "@docusaurus/plugin-ideal-image": "^2.4.0",
+    "@docusaurus/preset-classic": "^2.4.0",
     "@easyops-cn/docusaurus-search-local": "^0.19.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -26,7 +26,8 @@
     "clsx": "^1.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-player": "^2.12.0"
+    "react-player": "^2.12.0",
+    "react-youtube": "^10.1.0"
   },
   "browserslist": {
     "production": [

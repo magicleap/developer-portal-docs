@@ -809,6 +809,34 @@ protected void GLPluginEvent()
 
 -----------
 
+### HandleOnRawVideoFrameAvailableInternal {#void-handleonrawvideoframeavailableinternal}
+
+Handles the event of a new image getting captured. 
+
+```csharp
+protected void HandleOnRawVideoFrameAvailableInternal(
+    MLCamera.CameraOutput capturedFrame,
+    MLCamera.ResultExtras resultExtras,
+    MLCamera.Metadata metadataHandle
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MLCamera.CameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CameraOutput.md) |imageData|The raw data of the image.|
+| [MLCamera.ResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ResultExtras.md) |resultExtras||
+| [MLCamera.Metadata](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md) |metadataHandle|MLCameraMetadata Summary placeholder. |
+
+
+
+
+
+
+-----------
+
 ### InternalCheckCameraPermission {#mlresultcode-internalcheckcamerapermission}
 
 ```csharp
@@ -958,6 +986,32 @@ protected MLCameraBase()
 
 
 
+
+
+
+-----------
+
+### OnApplicationPause {#override-void-onapplicationpause}
+
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
+
+```csharp
+protected virtual override void OnApplicationPause(
+    bool pauseStatus
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |pauseStatus|True if the application is paused, else False. |
+
+
+
+
+**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md#void-onapplicationpause)
 
 
 
@@ -1527,6 +1581,23 @@ Camera capture callback, capture raw video frame, invoked on the same thread as 
 
 ```csharp
 public MLCamera.OnCapturedFrameAvailableDelegate OnRawVideoFrameAvailable_NativeCallbackThread()
+```
+
+
+
+
+
+
+-----------
+
+## Protected Events
+
+### OnRawVideoFrameAvailableInternal {#mlcameraoncapturedframeavailabledelegate-onrawvideoframeavailableinternal}
+
+Callback is invoked when a captured raw/compressed video frame buffer is available, invoked on the main thread. 
+
+```csharp
+protected MLCamera.OnCapturedFrameAvailableDelegate OnRawVideoFrameAvailableInternal()
 ```
 
 

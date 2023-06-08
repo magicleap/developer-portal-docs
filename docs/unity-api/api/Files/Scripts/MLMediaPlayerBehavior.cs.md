@@ -79,6 +79,7 @@ namespace MagicLeap.Core
         public event Action<float> OnBufferingUpdate;
         public event Action<MLMedia.Player.Info> OnInfo;
         public event Action OnSeekComplete;
+        public event Action<MLMedia.Player.Track> OnTrackFound;
         public event Action<MLMedia.Player.Track> OnTrackSelected;
         public event Action<string> OnCaptionsText;
         public event Action<float> OnUpdateTimeline;
@@ -117,6 +118,7 @@ namespace MagicLeap.Core
                     _mediaPlayer.OnTimedText += HandleOnCaptionsText;
                     _mediaPlayer.OnTrackSelected += HandleOnTrackSelected;
                     _mediaPlayer.OnResetComplete += HandleOnResetComplete;
+                    _mediaPlayer.OnTrackFound += HandleOnTrackFound;
                 }
 
                 return _mediaPlayer;
@@ -160,6 +162,7 @@ namespace MagicLeap.Core
                 _mediaPlayer.OnTimedText -= HandleOnCaptionsText;
                 _mediaPlayer.OnTrackSelected -= HandleOnTrackSelected;
                 _mediaPlayer.OnResetComplete -= HandleOnResetComplete;
+                _mediaPlayer.OnTrackFound -= HandleOnTrackFound;
 
                 StopMLMediaPlayer();
                 _mediaPlayer.Reset();
@@ -386,6 +389,16 @@ namespace MagicLeap.Core
             MediaPlayer.Seek((int)ms, MLMedia.Player.SeekMode.ClosestSync);
         }
 
+        public void SelectTrack(MLMedia.Player.Track track)
+        {
+            MediaPlayer.SelectTrack((int)track.Index);
+        }
+
+        public void UnselectTrack(MLMedia.Player.Track track)
+        {
+            MediaPlayer.UnselectTrack(track);
+        }
+
         private void UpdateTimeline()
         {
             // Only poll the position once per frame to prevent seeking by miniscule amounts.
@@ -472,6 +485,11 @@ namespace MagicLeap.Core
         {
             IsSeeking = false;
             OnSeekComplete?.Invoke();
+        }
+
+        private void HandleOnTrackFound(MLMedia.Player mediaPlayer, MLMedia.Player.Track track)
+        {
+            OnTrackFound?.Invoke(track);
         }
 
         private void HandleOnTrackSelected(MLMedia.Player mediaPlayer, MLMedia.Player.Track track)

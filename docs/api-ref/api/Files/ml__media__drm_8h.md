@@ -30,7 +30,6 @@ title: ml_media_drm.h
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef const char * | **[MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty)**  |
 | typedef struct [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) | **[MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediadrmbytearray)**  |
 | typedef struct [MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) | **[MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediadrmbytearraylist)**  |
 | typedef struct [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) | **[MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediadrmkeyvalue)**  |
@@ -61,14 +60,14 @@ title: ml_media_drm.h
 | void | **[MLMediaDRMEventCallbacksInit](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediadrmeventcallbacksinit)**([MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * inout_callbacks)<br></br>Initializes [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) with default values.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayallocate)**(size_t size, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_array)<br></br>Allocate byte array buffer.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayAllocAndCopy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayallocandcopy)**(const uint8_t * copy_from, size_t size, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_array)<br></br>Allocate and Copy to byte array buffer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayallocate)**(size_t size, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Allocate array of {key, value} pairs.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayallocate)**(size_t size, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Allocate array of key/value pairs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmcreate)**([MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) uuid, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a MLMediaDRM instance from a UUID.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrelease)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm)<br></br>Release the MLMediaDRM instance.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease)**([MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * array)<br></br>Release byte array buffer.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayListRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearraylistrelease)**([MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * array)<br></br>Release list of byte array buffer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease)**([MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * array)<br></br>Release {key, value} pair array.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease)**([MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * array)<br></br>Release key/value pair array.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMRequestMessageRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease)**([MLMediaDRMRequestMessage](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * request)<br></br>Release Request Message.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAdd](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayadd)**(const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * pair, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Add a {key, value} pair to the array of {key, value} pairs.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAdd](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayadd)**(const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * pair, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Add a key/value pair to the array of key/value pairs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMIsCryptoSchemeSupported](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmiscryptoschemesupported)**([MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) uuid, const char * mime_type, bool * out_supported)<br></br>Query if the given scheme identified by its UUID is supported on this device. And whether the drm plugin is able to handle the media container format.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetOnEventListenerEx](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetoneventlistenerex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * callbacks, void * data)<br></br>Register a callback to be invoked when DRM events or updates or status change occurs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMOpenSession](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmopensession)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_session_id)<br></br>Opens a new session. A session ID is returned.  |
@@ -82,12 +81,12 @@ title: ml_media_drm.h
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMProvideProvisionResponse](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovideprovisionresponse)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * response, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_certificate, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_wrapped_key)<br></br>After a provision response is received by the app, it is provided to the DRM engine plugin using this method.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * out_secure_stops)<br></br>Access all secure stops.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetSecureStop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestop)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * ss_id, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_secure_stop)<br></br>Access secure stop by secure stop ID.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMReleaseSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmreleasesecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * secure_stop)<br></br>Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMReleaseSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmreleasesecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * secure_stop)<br></br>Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response. See [MLMediaDRMGetSecureStops()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops) for details.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMReleaseAllSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmreleaseallsecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm)<br></br>Remove all the SecureStops.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, char ** out_property_value)<br></br>Read a DRM engine plugin String property value, given the property name.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_property_value)<br></br>Read a DRM engine plugin byte array property value, given the property name.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, const char * property_value)<br></br>Set a DRM engine plugin String property value.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * property_value)<br></br>Set a DRM engine plugin byte array property value.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, char ** out_property_value)<br></br>Read a DRM engine plugin String property value, given the property name.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_property_value)<br></br>Read a DRM engine plugin byte array property value, given the property name.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, const char * property_value)<br></br>Set a DRM engine plugin String property value.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * property_value)<br></br>Set a DRM engine plugin byte array property value.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMEncrypt](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmencrypt)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * session_id, const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * crypto_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * input, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_output)<br></br>Encrypt the data referenced by input using algorithm if specified, and write the encrypted result into output.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMDecrypt](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmdecrypt)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * session_id, const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * crypto_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * input, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_output)<br></br>Decrypt the data referenced by input using algorithm if specified, and write the encrypted result into output.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSign](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsign)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * session_id, const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * hmac_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * message, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_signature)<br></br>Generate a signature using the specified algorithm (if provided) over the message data and store the signature.  |
@@ -98,11 +97,12 @@ title: ml_media_drm.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Vendor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-vendor)**  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Version](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-version)**  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Description](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-description)**  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Algorithms](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-algorithms)** <br></br>String property name: a comma-separated list of cipher and mac algorithms supported by #CryptoSession. The list may be empty if the DRM engine plugin does not support #CryptoSession operations.  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_DeviceUniqueID](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-deviceuniqueid)** <br></br>Byte array property name: the device unique identifier is established during device provisioning and provides a means of uniquely identifying each device.  |
+| const typedef char * | **[MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty)**  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Vendor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-vendor)**  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Version](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-version)**  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Description](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-description)**  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Algorithms](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-algorithms)** <br></br>String property name: a comma-separated list of cipher and mac algorithms supported by #CryptoSession. The list may be empty if the DRM engine plugin does not support #CryptoSession operations.  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_DeviceUniqueID](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-deviceuniqueid)** <br></br>Byte array property name: the device unique identifier is established during device provisioning and provides a means of uniquely identifying each device.  |
 
 ## Enums Documentation
 
@@ -147,7 +147,7 @@ Request event types.
 
 
 **API Level:**
-  * 7 
+  * 7
 
 
 
@@ -173,7 +173,7 @@ Status code associated with a DRM session key.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -183,24 +183,10 @@ Status code associated with a DRM session key.
 
 ## Types Documentation
 
-### MLMediaDRMProperty {#const-char-mlmediadrmproperty}
-
-```cpp
-typedef const char* MLMediaDRMProperty;
-```
-
-
-
-
-
-
-
------------
-
 ### MLMediaDRMByteArray {#struct-mlmediadrmbytearray}
 
 ```cpp
-typedef struct MLMediaDRMByteArray  MLMediaDRMByteArray;
+typedef struct MLMediaDRMByteArray MLMediaDRMByteArray;
 ```
 
 
@@ -217,7 +203,7 @@ Data type containing byte array buffer and the size.
 ### MLMediaDRMByteArrayList {#struct-mlmediadrmbytearraylist}
 
 ```cpp
-typedef struct MLMediaDRMByteArrayList  MLMediaDRMByteArrayList;
+typedef struct MLMediaDRMByteArrayList MLMediaDRMByteArrayList;
 ```
 
 
@@ -234,11 +220,11 @@ Data type containing list of byte array buffers and the size.
 ### MLMediaDRMKeyValue {#struct-mlmediadrmkeyvalue}
 
 ```cpp
-typedef struct MLMediaDRMKeyValue  MLMediaDRMKeyValue;
+typedef struct MLMediaDRMKeyValue MLMediaDRMKeyValue;
 ```
 
 
-Data type containing {key, value} pair. 
+Data type containing key/value pair. 
 
 
 
@@ -251,11 +237,11 @@ Data type containing {key, value} pair.
 ### MLMediaDRMKeyValueArray {#struct-mlmediadrmkeyvaluearray}
 
 ```cpp
-typedef struct MLMediaDRMKeyValueArray  MLMediaDRMKeyValueArray;
+typedef struct MLMediaDRMKeyValueArray MLMediaDRMKeyValueArray;
 ```
 
 
-Data type containing array of {key, value} pair. 
+Data type containing array of key/value pair. 
 
 
 
@@ -268,7 +254,7 @@ Data type containing array of {key, value} pair.
 ### MLMediaDRMKeyRequestInputParam {#struct-mlmediadrmkeyrequestinputparam}
 
 ```cpp
-typedef struct MLMediaDRMKeyRequestInputParam  MLMediaDRMKeyRequestInputParam;
+typedef struct MLMediaDRMKeyRequestInputParam MLMediaDRMKeyRequestInputParam;
 ```
 
 
@@ -285,7 +271,7 @@ Data type that encapsulates Key Request input arguments.
 ### MLMediaDRMRequestMessage {#struct-mlmediadrmrequestmessage}
 
 ```cpp
-typedef struct MLMediaDRMRequestMessage  MLMediaDRMRequestMessage;
+typedef struct MLMediaDRMRequestMessage MLMediaDRMRequestMessage;
 ```
 
 Data type that encapsulates either of the following along with an URL: 
@@ -305,7 +291,7 @@ For Provision Request Message: an opaque provision request byte array that shoul
 ### MLMediaDRMCryptoInputParam {#struct-mlmediadrmcryptoinputparam}
 
 ```cpp
-typedef struct MLMediaDRMCryptoInputParam  MLMediaDRMCryptoInputParam;
+typedef struct MLMediaDRMCryptoInputParam MLMediaDRMCryptoInputParam;
 ```
 
 
@@ -322,7 +308,7 @@ Data type that encapsulates algorithm, key_set_id and IV for Encryption/Decrypti
 ### MLMediaDRMHMACInputParam {#struct-mlmediadrmhmacinputparam}
 
 ```cpp
-typedef struct MLMediaDRMHMACInputParam  MLMediaDRMHMACInputParam;
+typedef struct MLMediaDRMHMACInputParam MLMediaDRMHMACInputParam;
 ```
 
 
@@ -339,7 +325,7 @@ Data type that encapsulates algorithm, key_set_id for HMAC based Sign/Verify.
 ### MLMediaDRMRSAInputParam {#struct-mlmediadrmrsainputparam}
 
 ```cpp
-typedef struct MLMediaDRMRSAInputParam  MLMediaDRMRSAInputParam;
+typedef struct MLMediaDRMRSAInputParam MLMediaDRMRSAInputParam;
 ```
 
 
@@ -356,7 +342,7 @@ Data type that encapsulates algorithm, wrapped_key for RSA operation.
 ### MLMediaDRMEventInfo {#struct-mlmediadrmeventinfo}
 
 ```cpp
-typedef struct MLMediaDRMEventInfo  MLMediaDRMEventInfo;
+typedef struct MLMediaDRMEventInfo MLMediaDRMEventInfo;
 ```
 
 MediaDRM event info associated with a session. 
@@ -367,7 +353,7 @@ MediaDRM event info associated with a session.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -377,7 +363,7 @@ MediaDRM event info associated with a session.
 ### MLMediaDRMExpirationUpdateInfo {#struct-mlmediadrmexpirationupdateinfo}
 
 ```cpp
-typedef struct MLMediaDRMExpirationUpdateInfo  MLMediaDRMExpirationUpdateInfo;
+typedef struct MLMediaDRMExpirationUpdateInfo MLMediaDRMExpirationUpdateInfo;
 ```
 
 MediaDRM expiration update info associated with a session. 
@@ -388,7 +374,7 @@ MediaDRM expiration update info associated with a session.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -398,7 +384,7 @@ MediaDRM expiration update info associated with a session.
 ### MLMediaDRMKeyStatus {#struct-mlmediadrmkeystatus}
 
 ```cpp
-typedef struct MLMediaDRMKeyStatus  MLMediaDRMKeyStatus;
+typedef struct MLMediaDRMKeyStatus MLMediaDRMKeyStatus;
 ```
 
 MediaDRM key status. 
@@ -409,7 +395,7 @@ MediaDRM key status.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -419,7 +405,7 @@ MediaDRM key status.
 ### MLMediaDRMKeyStatusInfo {#struct-mlmediadrmkeystatusinfo}
 
 ```cpp
-typedef struct MLMediaDRMKeyStatusInfo  MLMediaDRMKeyStatusInfo;
+typedef struct MLMediaDRMKeyStatusInfo MLMediaDRMKeyStatusInfo;
 ```
 
 MediaDRM session keys status change info. 
@@ -430,7 +416,7 @@ MediaDRM session keys status change info.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -440,7 +426,7 @@ MediaDRM session keys status change info.
 ### MLMediaDRMEventCallbacks {#struct-mlmediadrmeventcallbacks}
 
 ```cpp
-typedef struct MLMediaDRMEventCallbacks  MLMediaDRMEventCallbacks;
+typedef struct MLMediaDRMEventCallbacks MLMediaDRMEventCallbacks;
 ```
 
 Callbacks for notifying client about MLMediaDRM events. 
@@ -453,7 +439,7 @@ User of MLMediaDRM should implement this.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -569,14 +555,14 @@ MLResult MLMediaDRMKeyValueArrayAllocate(
 )
 ```
 
-Allocate array of {key, value} pairs. 
+Allocate array of key/value pairs. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| size_t |size|Maximum size of the desirable array of {key, value} pair to be allocated. |
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
+| size_t |size|Maximum size of the desirable array of key/value pair to be allocated. |
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of key/value pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
 
 **Returns**
 
@@ -584,7 +570,7 @@ Allocate array of {key, value} pairs.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array is allocated successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Key/value pair array is allocated successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -648,7 +634,7 @@ Release the MLMediaDRM instance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM.|
 
 **Returns**
 
@@ -744,20 +730,20 @@ MLResult MLMediaDRMKeyValueArrayRelease(
 )
 ```
 
-Release {key, value} pair array. 
+Release key/value pair array. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|{key, value} pair array that needs to be released.|
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|Key/value pair array that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array was released successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Key/value pair array was released successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -813,21 +799,21 @@ MLResult MLMediaDRMKeyValueArrayAdd(
 )
 ```
 
-Add a {key, value} pair to the array of {key, value} pairs. 
+Add a key/value pair to the array of key/value pairs. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source {key, value} pair that needs to be added. |
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair to which the pair needs to be added to.|
+| const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source key/value pair that needs to be added. |
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of key/value pair to which the pair needs to be added to.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair is added successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|key/value pair is added successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -894,7 +880,7 @@ Register a callback to be invoked when DRM events or updates or status change oc
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
 | void * |data|Custom data to be returned when any callback is fired.|
 
@@ -936,7 +922,7 @@ Opens a new session. A session ID is returned.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_session_id|ID of the session created/opened. This byte array will be released when [MLMediaDRMCloseSession()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmclosesession) is called.|
 
 **Returns**
@@ -972,7 +958,7 @@ Closes a session on the MLMediaDRM object that was previously opened with openSe
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session, which will be released on return.|
 
 **Returns**
@@ -1010,7 +996,7 @@ A key request/response exchange occurs between the app and a license server to o
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMKeyRequestInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_request_input_param.md) * |key_request_param|Placeholder for needed arguments for generating a key request message. |
 | [MLMediaDRMRequestMessage](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_key_request|Upon successful return, contains key request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
@@ -1054,7 +1040,7 @@ A key response is received from the license server by the app, then it is provid
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque response from the server. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_key_set_id|Upon successful return, contains the key identifier. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
@@ -1095,7 +1081,7 @@ Restore persisted offline keys into a new session. key_set_id identifies the key
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The saved key set to restore.|
 
@@ -1132,7 +1118,7 @@ Remove the current keys from a session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The keys to remove, which will be released on success.|
 
 **Returns**
@@ -1169,7 +1155,7 @@ Request an informative description of the key status for the session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_info_map|The Key-Value pair place-holder for the key status. To release/free this call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
 
@@ -1185,7 +1171,7 @@ Request an informative description of the key status for the session.
   * None 
 
 
-The status is in the form of {key, value} pairs. Since DRM license policies vary by vendor, the specific status field names are determined by each DRM vendor. Refer to your DRM provider documentation for definitions of the field names for a particular DRM engine plugin.
+The status is in the form of key/value pairs. Since DRM license policies vary by vendor, the specific status field names are determined by each DRM vendor. Refer to your DRM provider documentation for definitions of the field names for a particular DRM engine plugin.
 
 
 
@@ -1209,7 +1195,7 @@ A provision request/response exchange occurs between the app and a provisioning 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const char * |cert_type|The device certificate type, which can be "none" or "X.509". |
 | [MLMediaDRMRequestMessage](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_provision_request|Upon successful return, contains provision request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
 
@@ -1250,7 +1236,7 @@ After a provision response is received by the app, it is provided to the DRM eng
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque provisioning response byte array to provide to the DRM engine plugin. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_certificate|The device certificate upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease). |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_wrapped_key|The wrapped device key upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
@@ -1288,7 +1274,7 @@ Access all secure stops.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * |out_secure_stops|List of all the secure stops upon successful return. To free/release call [MLMediaDRMByteArrayListRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearraylistrelease).|
 
 **Returns**
@@ -1335,7 +1321,7 @@ Access secure stop by secure stop ID.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |ss_id|The ID for the DRM securestop session. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_secure_stop|The secure stop upon successful return. To free/release call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
@@ -1368,13 +1354,13 @@ MLResult MLMediaDRMReleaseSecureStops(
 )
 ```
 
-Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response. 
+Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response. See [MLMediaDRMGetSecureStops()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops) for details. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |secure_stop|The server response indicating which secure stops to release.|
 
 **Returns**
@@ -1390,8 +1376,6 @@ Process the SecureStop server response message. After authenticating the message
 
 
 
-
-**See**: [MLMediaDRMGetSecureStops()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
 
 
 
@@ -1411,7 +1395,7 @@ Remove all the SecureStops.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM.|
 
 **Returns**
 
@@ -1449,13 +1433,13 @@ Read a DRM engine plugin String property value, given the property name.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_Vendor
-* MLMediaDRMProperty_Version
-* MLMediaDRMProperty_Description
-* MLMediaDRMProperty_Algorithms |
+* MLMediaDRMProperty_Vendor.
+* MLMediaDRMProperty_Version.
+* MLMediaDRMProperty_Description.
+* MLMediaDRMProperty_Algorithms. |
 | char ** |out_property_value|The property value upon successful return. Ownership is passed, call free(*out_property_value) to free it.|
 
 **Returns**
@@ -1492,10 +1476,10 @@ Read a DRM engine plugin byte array property value, given the property name.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_DeviceUniqueID |
+* MLMediaDRMProperty_DeviceUniqueID. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_property_value|The property value upon successful return. To release/free call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
@@ -1532,13 +1516,13 @@ Set a DRM engine plugin String property value.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_Vendor
-* MLMediaDRMProperty_Version
-* MLMediaDRMProperty_Description
-* MLMediaDRMProperty_Algorithms |
+* MLMediaDRMProperty_Vendor.
+* MLMediaDRMProperty_Version.
+* MLMediaDRMProperty_Description.
+* MLMediaDRMProperty_Algorithms. |
 | const char * |property_value|The value of the corresponding property.|
 
 **Returns**
@@ -1575,10 +1559,10 @@ Set a DRM engine plugin byte array property value.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_DeviceUniqueID |
+* MLMediaDRMProperty_DeviceUniqueID. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |property_value|The value of the corresponding property.|
 
 **Returns**
@@ -1617,7 +1601,7 @@ Encrypt the data referenced by input using algorithm if specified, and write the
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for encryption operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be encrypted. |
@@ -1661,7 +1645,7 @@ Decrypt the data referenced by input using algorithm if specified, and write the
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for decryption operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be decrypted. |
@@ -1705,7 +1689,7 @@ Generate a signature using the specified algorithm (if provided) over the messag
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
@@ -1750,7 +1734,7 @@ Perform a signature verification using the specified algorithm (if specified) ov
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data for which signature needs to be verified. |
@@ -1795,7 +1779,7 @@ Generate a signature using the specified RSA Key and algorithm.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMRSAInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md) * |rsa_key_param|Pointer to the structure that contains needed key arguments for this RSA operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
@@ -1808,8 +1792,12 @@ Generate a signature using the specified RSA Key and algorithm.
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM RSA Sign operation has been completed successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |||
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+**Required Permissions**:
+
+  * None 
+
+
 
 
 
@@ -1818,6 +1806,19 @@ Generate a signature using the specified RSA Key and algorithm.
 
 
 ## Attributes Documentation
+
+### MLMediaDRMProperty {#const-typedef-char-mlmediadrmproperty}
+
+```cpp
+const typedef char * MLMediaDRMProperty;
+```
+
+
+
+
+
+
+-----------
 
 ### MLMediaDRMProperty_Vendor {#mlmediadrmproperty-mlmediadrmproperty-vendor}
 

@@ -42,11 +42,7 @@ namespace UnityEngine.XR.MagicLeap
 
             VoiceCapture,
 
-            FrontMics,
-
-            SideMics,
-
-            WorldCapture
+            WorldCapture = 4
         }
 
         public static int GetSampleRate(MicCaptureType captureType)
@@ -60,8 +56,6 @@ namespace UnityEngine.XR.MagicLeap
                     break;
 
                 case MicCaptureType.VoiceCapture:
-                case MicCaptureType.FrontMics:
-                case MicCaptureType.SideMics:
                 case MicCaptureType.WorldCapture:
                     sampleRate = 48000;
                     break;
@@ -82,8 +76,6 @@ namespace UnityEngine.XR.MagicLeap
                     channels = 1;
                     break;
 
-                case MicCaptureType.FrontMics:
-                case MicCaptureType.SideMics:
                 case MicCaptureType.WorldCapture:
                     channels = 2;
                     break;

@@ -132,6 +132,13 @@ namespace UnityEngine.XR.MagicLeap
                 public readonly byte FrameCount;
 
                 public readonly IntPtr Frames;
+
+                public MLWorldCameraData(uint version)
+                {
+                    Version = version;
+                    FrameCount = 0;
+                    Frames = IntPtr.Zero;
+                }
             };
 
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]

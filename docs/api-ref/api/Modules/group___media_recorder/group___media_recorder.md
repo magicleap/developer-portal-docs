@@ -42,7 +42,7 @@ APIs for video and auido recording.  [More...](#detailed-description)
 |                | Name           |
 | -------------- | -------------- |
 | void | **[MLMediaRecorderEventCallbacksInit](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#void-mlmediarecordereventcallbacksinit)**([MLMediaRecorderEventCallbacks](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_event_callbacks.md) * inout_callbacks)<br></br>Initializes MediaRecorderEventCallbacks with default values.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderCreate](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordercreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a new [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) object.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderCreate](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordercreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a new MediaRecorder object.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderDestroy](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder)<br></br>Destroy a MediaRecorder object.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderSetOutputFileForFD](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordersetoutputfileforfd)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, int32_t fd)<br></br>Pass in the file descriptor of the file to be written.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderSetOutputFileForPath](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordersetoutputfileforpath)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, const char * path)<br></br>Sets the path of the output file to be produced.  |
@@ -58,9 +58,9 @@ APIs for video and auido recording.  [More...](#detailed-description)
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderPrepare](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderprepare)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) format)<br></br>Prepares the recorder to begin capturing and encoding data for input mediaformat.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderStart](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderstart)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder)<br></br>Begins capturing and encoding data to the specified file.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderGetInputSurface](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetinputsurface)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_input_surface_handle)<br></br>Gets the input surface to record from when using SURFACE video source.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, int32_t * max_amp)<br></br>Returns the maximum absolute amplitude that was sampled since the last call to this method.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, int32_t * inout_max_amp)<br></br>Returns the maximum absolute amplitude that was sampled since the last call to this method.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderStop](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderstop)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder)<br></br>Stops recording.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderReleaseInputSurface](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreleaseinputsurface)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) input_surface_handle)<br></br>Release the Surface that was returned by [MLMediaRecorderGetInputSurface](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetinputsurface).  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderReleaseInputSurface](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreleaseinputsurface)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) input_surface_handle)<br></br>Release the surface that was returned by MLMediaRecorderGetInputSurface.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaRecorderReset](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_recorder)<br></br>Restarts the MediaRecorder to its idle state.  |
 
 ## Attributes
@@ -89,7 +89,7 @@ APIs for video and auido recording.
 
 
 **Shared Object:**
-  * media_recorder.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString. 
+  * media_recorder.magicleap*
 
 
 
@@ -283,7 +283,7 @@ Video recorder error types.
 ### MLMediaRecorderOnInfo {#struct-mlmediarecorderoninfo}
 
 ```cpp
-typedef struct MLMediaRecorderOnInfo  MLMediaRecorderOnInfo;
+typedef struct MLMediaRecorderOnInfo MLMediaRecorderOnInfo;
 ```
 
 
@@ -298,7 +298,7 @@ typedef struct MLMediaRecorderOnInfo  MLMediaRecorderOnInfo;
 ### MLMediaRecorderOnError {#struct-mlmediarecorderonerror}
 
 ```cpp
-typedef struct MLMediaRecorderOnError  MLMediaRecorderOnError;
+typedef struct MLMediaRecorderOnError MLMediaRecorderOnError;
 ```
 
 
@@ -313,7 +313,7 @@ typedef struct MLMediaRecorderOnError  MLMediaRecorderOnError;
 ### MLMediaRecorderEventCallbacks {#struct-mlmediarecordereventcallbacks}
 
 ```cpp
-typedef struct MLMediaRecorderEventCallbacks  MLMediaRecorderEventCallbacks;
+typedef struct MLMediaRecorderEventCallbacks MLMediaRecorderEventCallbacks;
 ```
 
 
@@ -357,13 +357,13 @@ MLResult MLMediaRecorderCreate(
 )
 ```
 
-Create a new [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) object. 
+Create a new MediaRecorder object. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) object created. Only valid if result is MLResult_Ok.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Handle to the new MediaRecorder object created. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
@@ -402,13 +402,13 @@ Destroy a MediaRecorder object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) object to destroy.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder object to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MediaRecorder was destroyed successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
@@ -442,7 +442,7 @@ Pass in the file descriptor of the file to be written.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder instance. |
 | int32_t |fd|The file descriptor for the file you want to write into.|
 
 **Returns**
@@ -486,14 +486,14 @@ Sets the path of the output file to be produced.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder instance. |
 | const char * |path|The linux-style path of the file. Must be a valid and existing path.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Data source was correctly set to passed file path. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -531,7 +531,7 @@ Sets the MediaRecorderListener object that will receive MediaRecorder notificati
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | const [MLMediaRecorderEventCallbacks](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_event_callbacks.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
 | void * |data|Custom data to be returned when any callback is fired.|
 
@@ -539,7 +539,7 @@ Sets the MediaRecorderListener object that will receive MediaRecorder notificati
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The specified callbacks were successfully set/unset. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -574,14 +574,14 @@ Sets MediaRecorder default video source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | [MLMediaRecorderVideoSource](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordervideosource) |in_video_source|Type of the MediaRecorderVideoSource.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found or in_video_source is not [MLMediaRecorderVideoSource_Camera](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordervideosource-camera). |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found or in_video_source is not MLMediaRecorderVideoSource_Camera. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set default video source successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -590,7 +590,7 @@ Sets MediaRecorder default video source.
   * None 
 
 
-cannot be called twice (without calling [MLMediaRecorderReset()](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreset) in between) because it triggers internal initialization.
+Cannot be called twice (without calling [MLMediaRecorderReset()](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreset) in between) because it triggers internal initialization.
 
 Current implementation supports only camera as video source from MediaRecorderVideoSource.
 
@@ -615,14 +615,14 @@ Set MediaRecorder audio source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | [MLMediaRecorderAudioSource](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecorderaudiosource) |in_audio_source|Type of the MediaRecorderAudioSource.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set audio source successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -631,7 +631,7 @@ Set MediaRecorder audio source.
   * android.permission.RECORD_AUDIO (protection level: dangerous) 
 
 
-cannot be called twice (without calling [MLMediaRecorderReset()](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreset) in between) because it triggers internal initialization.
+Cannot be called twice (without calling [MLMediaRecorderReset()](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderreset) in between) because it triggers internal initialization.
 
 
 
@@ -659,14 +659,14 @@ Sets the format of the output file produced during recording.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
-| [MLMediaRecorderOutputFormat](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecorderoutputformat) |in_format|Type of the [MLMediaRecorderOutputFormat](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enum-mlmediarecorderoutputformat).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
+| [MLMediaRecorderOutputFormat](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecorderoutputformat) |in_format|Type of the MLMediaRecorderOutputFormat.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set output format successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -701,14 +701,14 @@ Sets the video encoder to be used for recording.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | [MLMediaRecorderVideoEncoder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordervideoencoder) |in_video_encoder|Type of the VideoEncoder to use.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set video encoder successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_InvalidCodecParam|requested width height is not supported. |
@@ -748,14 +748,14 @@ Sets the audio encoder to be used for recording.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
-| [MLMediaRecorderAudioEncoder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecorderaudioencoder) |in_audio_encoder|Type of the [MLMediaRecorderAudioEncoder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enum-mlmediarecorderaudioencoder) to use.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
+| [MLMediaRecorderAudioEncoder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecorderaudioencoder) |in_audio_encoder|Type of the MLMediaRecorderAudioEncoder to use.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set audio encoder successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -792,14 +792,14 @@ Sets the maximum duration (in ms) of the recording session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | int32_t |in_max_duration_msec|The maximum duration in ms (if zero or negative, disables the duration limit).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Max duration was successfully set. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -836,14 +836,14 @@ Sets the maximum filesize (in bytes) of the recording session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | int64_t |in_max_file_size|MaxFilesizeBytes The maximum filesize in bytes (if zero or negative, disables the limit).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Max file size was successfully set. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -882,7 +882,7 @@ Sets the GEO location for recording.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | int64_t |in_latitude10000|The 10000 multiplies latitude of location. |
 | int64_t |in_longitude10000|The 10000 multiplies longitude of location.|
 
@@ -890,7 +890,7 @@ Sets the GEO location for recording.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|GEO location was successfully set. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -925,18 +925,18 @@ Prepares the recorder to begin capturing and encoding data for input mediaformat
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder. |
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |format|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MediaFormat. MediaFormat object can be created with:
 
-* [MLMediaFormatCreateVideo](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreatevideo) if we want to record video only
-* [MLMediaFormatCreateAudio](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreateaudio) if we want to record audio only
-* [MLMediaFormatCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreate) if we want to record both video and audio|
+* [MLMediaFormatCreateVideo](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreatevideo) if we want to record video only.
+* [MLMediaFormatCreateAudio](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreateaudio) if we want to record audio only.
+* [MLMediaFormatCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreate) if we want to record both video and audio.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Recorder was prepared successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -945,21 +945,21 @@ Prepares the recorder to begin capturing and encoding data for input mediaformat
   * None 
 
 
-This method must be called after setting up the desired audio and video sources, encoders, but before start().
+This method must be called after setting up the desired audio and video sources, encoders, but before start.
 
 
 Following parameters can be added to MediaFormat handle. Audio Specific parametes:
 
 * [MLMediaFormat_Key_Bit_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-bit-rate) for audio "bitrate".
-* [MLMediaFormat_Key_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-channel-count) for audio "channel-count"
-* [MLMediaFormat_Key_Sample_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sample-rate) for audio "sample-rate"
+* [MLMediaFormat_Key_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-channel-count) for audio "channel-count".
+* [MLMediaFormat_Key_Sample_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sample-rate) for audio "sample-rate".
 Video Specific parametes:
 
-* [MLMediaFormat_Key_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-width) for video frame "width"
-* [MLMediaFormat_Key_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-height) for video frame "height"
-* [MLMediaFormat_Key_Frame_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate) for video "frame-rate"
-* [MLMediaFormat_Key_Parameter_Video_Bitrate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-video-bitrate) for "video-bitrate"
-* [MLMediaFormat_Key_I_Frame_Interval](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-i-frame-interval) for "i-frame-interval"
+* [MLMediaFormat_Key_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-width) for video frame "width".
+* [MLMediaFormat_Key_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-height) for video frame "height".
+* [MLMediaFormat_Key_Frame_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate) for video "frame-rate".
+* [MLMediaFormat_Key_Parameter_Video_Bitrate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-video-bitrate) for "video-bitrate".
+* [MLMediaFormat_Key_I_Frame_Interval](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-i-frame-interval) for "i-frame-interval".
 
 
 
@@ -986,13 +986,13 @@ Begins capturing and encoding data to the specified file.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Recorder was started successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -1001,7 +1001,7 @@ Begins capturing and encoding data to the specified file.
   * None 
 
 
-Call this after [MLMediaRecorderPrepare()](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderprepare).The apps should not start another recording session during recording.
+Call this after [MLMediaRecorderPrepare()](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecorderprepare). The apps should not start another recording session during recording.
 
 
 
@@ -1029,14 +1029,14 @@ Gets the input surface to record from when using SURFACE video source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_input_surface_handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the created input native surface.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the Media Recorder instance. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_input_surface_handle|Handle to the created input native surface.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_OK|input surface was correctly returned. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -1070,7 +1070,7 @@ Captured raw video frames will be consumed directly as input to an encoder witho
 ```cpp
 MLResult MLMediaRecorderGetMaxAmplitude(
     MLHandle media_recorder,
-    int32_t * max_amp
+    int32_t * inout_max_amp
 )
 ```
 
@@ -1080,14 +1080,14 @@ Returns the maximum absolute amplitude that was sampled since the last call to t
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
-| int32_t * |max_amp|The maximum absolute amplitude measured since the last call, or 0 when called for the first time.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the MediaRecorder. |
+| int32_t * |inout_max_amp|The maximum absolute amplitude measured since the last call, or 0 when called for the first time.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mmedia recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Maximum amplitude was returned successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -1123,13 +1123,13 @@ Stops recording.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the MediaRecorder.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Recorder was stopped successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -1160,23 +1160,23 @@ MLResult MLMediaRecorderReleaseInputSurface(
 )
 ```
 
-Release the Surface that was returned by [MLMediaRecorderGetInputSurface](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetinputsurface). 
+Release the surface that was returned by MLMediaRecorderGetInputSurface. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md). |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |input_surface_handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the internal Surface object.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the MediaRecorder. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |input_surface_handle|Handle to the internal surface object.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Surface object was successfully released. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MLMediaCodec was not initialized.|
 **Required Permissions**:
 
   * None
@@ -1207,13 +1207,13 @@ Restarts the MediaRecorder to its idle state.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_recorder|Handle to the media recorder.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `media_recorder` handle was not found. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Media recorder handle was not found. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Recorder was resetted successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state.|
@@ -1245,7 +1245,7 @@ uint32_t track_id;
 ```
 
 
-Holds valid track id only for track specific info (returned via on_track_info callback.). Holds 0 for the generic info (returned via on_info callback). Refer to [MLMediaRecorderInfo](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enum-mlmediarecorderinfo) for the info. 
+Holds valid track id only for track specific info (returned via on_track_info callback.). Holds 0 for the generic info (returned via on_info callback). Refer to MLMediaRecorderInfo for the info. 
 
 
 
@@ -1260,7 +1260,7 @@ MLMediaRecorderInfo info;
 ```
 
 
-The info of MLMediaRecorderInfo 
+The info of MLMediaRecorderInfo. 
 
 
 
@@ -1275,7 +1275,7 @@ int extra;
 ```
 
 
-The extra info 
+The extra info. 
 
 
 
@@ -1305,7 +1305,7 @@ uint32_t track_id;
 ```
 
 
-Holds valid track id only for track specific errors (returned via on_track_error callback.). Holds 0 for the generic errors (returned via on_error callback). Refer to [MLMediaRecorderError](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enum-mlmediarecordererror) for the errors. 
+Holds valid track id only for track specific errors (returned via on_track_error callback). Holds 0 for the generic errors (returned via on_error callback). Refer to MLMediaRecorderError for the errors. 
 
 
 
@@ -1326,7 +1326,7 @@ MLMediaRecorderError error;
 | [MLMediaRecorderError](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordererror) | Video recorder error types.  |
 
 
-The error of MLMediaRecorderError 
+The error of MLMediaRecorderError. 
 
 
 
@@ -1341,7 +1341,7 @@ int extra;
 ```
 
 
-The extra info 
+The extra info. 
 
 
 
@@ -1395,7 +1395,7 @@ MediaRecorder received a general info/warning message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |pointer|to [MLMediaRecorderOnInfo](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_on_info.md). |
 
 
@@ -1421,7 +1421,7 @@ MediaRecorder received a track-related info/warning message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |track_info|pointer to [MLMediaRecorderOnInfo](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_on_info.md). |
 
 
@@ -1447,7 +1447,7 @@ MediaRecorder received a general error message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |pointer|to [MLMediaRecorderOnError](/api-ref/api/Modules/group___media_recorder/struct_m_l_media_recorder_on_error.md). |
 
 
@@ -1473,7 +1473,7 @@ MediaRecorder received a track-related error message.
 
 |  |   |   |
 |--|--|--|
-|  |media_recorder|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md) instance on which callback was set. |
+|  |media_recorder|Handle is a MediaRecorder instance on which callback was set. |
 |  |pointer|to MLMediaRecorderError. |
 
 

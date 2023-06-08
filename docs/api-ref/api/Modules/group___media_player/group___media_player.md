@@ -109,7 +109,6 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | typedef int64_t(*)(MLHandle media_data_source, size_t position, size_t size, uint8_t *buffer, void *context) | **[MLMediaDataSourceReadAt](/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-mlmediadatasourcereadat)** <br></br>Called to request data from the given position.  |
 | typedef int64_t(*)(MLHandle media_data_source, void *context) | **[MLMediaDataSourceGetSize](/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-mlmediadatasourcegetsize)** <br></br>Called to get the size of the data source.  |
 | typedef void(*)(MLHandle media_data_source, void *context) | **[MLMediaDataSourceClose](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediadatasourceclose)** <br></br>Called before deleting |this|. The other methods may return errors if they're called after calling close().  |
-| typedef const char * | **[MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty)**  |
 | typedef struct [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) | **[MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediadrmbytearray)**  |
 | typedef struct [MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) | **[MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediadrmbytearraylist)**  |
 | typedef struct [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) | **[MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediadrmkeyvalue)**  |
@@ -127,7 +126,6 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | typedef [MLPSSHEntry](/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md) | **[MLMediaExtractorPSSHEntry](/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaextractorpsshentry)**  |
 | typedef struct [MLMediaExtractorDRMSchemeInitData](/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md) | **[MLMediaExtractorDRMSchemeInitData](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaextractordrmschemeinitdata)**  |
 | typedef struct [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) | **[MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaformatbytearray)**  |
-| typedef const char * | **[MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey)**  |
 | typedef struct [MLMediaMuxerSampleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) | **[MLMediaMuxerSampleData](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediamuxersampledata)** <br></br>Data type that encapsulates sample data to be written in to MLMediaMuxer.  |
 | typedef [MLPSSHEntry](/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md) | **[MLMediaPlayerPSSHEntry](/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaplayerpsshentry)**  |
 | typedef struct [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) | **[MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayertrackdrminfo)** <br></br>MediaPlayer DRM Info for a Media Track.  |
@@ -285,14 +283,14 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | void | **[MLMediaDRMEventCallbacksInit](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediadrmeventcallbacksinit)**([MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * inout_callbacks)<br></br>Initializes [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) with default values.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayallocate)**(size_t size, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_array)<br></br>Allocate byte array buffer.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayAllocAndCopy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayallocandcopy)**(const uint8_t * copy_from, size_t size, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_array)<br></br>Allocate and Copy to byte array buffer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayallocate)**(size_t size, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Allocate array of {key, value} pairs.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayallocate)**(size_t size, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Allocate array of key/value pairs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmcreate)**([MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) uuid, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a MLMediaDRM instance from a UUID.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrelease)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm)<br></br>Release the MLMediaDRM instance.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease)**([MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * array)<br></br>Release byte array buffer.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayListRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearraylistrelease)**([MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * array)<br></br>Release list of byte array buffer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease)**([MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * array)<br></br>Release {key, value} pair array.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease)**([MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * array)<br></br>Release key/value pair array.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMRequestMessageRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease)**([MLMediaDRMRequestMessage](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * request)<br></br>Release Request Message.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAdd](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayadd)**(const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * pair, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Add a {key, value} pair to the array of {key, value} pairs.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAdd](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayadd)**(const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * pair, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Add a key/value pair to the array of key/value pairs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMIsCryptoSchemeSupported](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmiscryptoschemesupported)**([MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) uuid, const char * mime_type, bool * out_supported)<br></br>Query if the given scheme identified by its UUID is supported on this device. And whether the drm plugin is able to handle the media container format.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetOnEventListenerEx](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetoneventlistenerex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * callbacks, void * data)<br></br>Register a callback to be invoked when DRM events or updates or status change occurs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMOpenSession](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmopensession)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_session_id)<br></br>Opens a new session. A session ID is returned.  |
@@ -306,12 +304,12 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMProvideProvisionResponse](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmprovideprovisionresponse)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * response, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_certificate, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_wrapped_key)<br></br>After a provision response is received by the app, it is provided to the DRM engine plugin using this method.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * out_secure_stops)<br></br>Access all secure stops.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetSecureStop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestop)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * ss_id, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_secure_stop)<br></br>Access secure stop by secure stop ID.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMReleaseSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmreleasesecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * secure_stop)<br></br>Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMReleaseSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmreleasesecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * secure_stop)<br></br>Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response. See [MLMediaDRMGetSecureStops()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops) for details.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMReleaseAllSecureStops](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmreleaseallsecurestops)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm)<br></br>Remove all the SecureStops.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, char ** out_property_value)<br></br>Read a DRM engine plugin String property value, given the property name.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_property_value)<br></br>Read a DRM engine plugin byte array property value, given the property name.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, const char * property_value)<br></br>Set a DRM engine plugin String property value.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) property_name, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * property_value)<br></br>Set a DRM engine plugin byte array property value.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, char ** out_property_value)<br></br>Read a DRM engine plugin String property value, given the property name.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMGetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_property_value)<br></br>Read a DRM engine plugin byte array property value, given the property name.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, const char * property_value)<br></br>Set a DRM engine plugin String property value.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetPropertyByteArray](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetpropertybytearray)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) property_name, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * property_value)<br></br>Set a DRM engine plugin byte array property value.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMEncrypt](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmencrypt)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * session_id, const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * crypto_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * input, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_output)<br></br>Encrypt the data referenced by input using algorithm if specified, and write the encrypted result into output.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMDecrypt](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmdecrypt)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * session_id, const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * crypto_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * input, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_output)<br></br>Decrypt the data referenced by input using algorithm if specified, and write the encrypted result into output.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSign](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsign)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * session_id, const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * hmac_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * message, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_signature)<br></br>Generate a signature using the specified algorithm (if provided) over the message data and store the signature.  |
@@ -350,19 +348,19 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatCreateCopy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatcreatecopy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a copy of the format handle provided.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatDestroy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy a MLMediaFormat object.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatObjectToString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatobjecttostring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, char * out_string)<br></br>Obtain the human readable representation of the format.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyValueInt32](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeyvalueint32)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, int32_t * out_key)<br></br>Obtain the value of an integer key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyValueInt64](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeyvalueint64)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, int64_t * out_key)<br></br>Obtain the value of a long key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyValueFloat](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeyvaluefloat)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, float * out_key)<br></br>Obtain the value of an float key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeySize](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeysize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, size_t * out_size)<br></br>Obtain the size of a key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, char * out_string)<br></br>Obtain the value of a string key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyByteBuffer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeybytebuffer)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * out_buffer)<br></br>Obtain the value of a ByteBuffer key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyValueInt32](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeyvalueint32)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, int32_t * out_key)<br></br>Obtain the value of an integer key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyValueInt64](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeyvalueint64)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, int64_t * out_key)<br></br>Obtain the value of a long key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyValueFloat](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeyvaluefloat)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, float * out_key)<br></br>Obtain the value of an float key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeySize](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeysize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, size_t * out_size)<br></br>Obtain the size of a key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, char * out_string)<br></br>Obtain the value of a string key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatGetKeyByteBuffer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatgetkeybytebuffer)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * out_buffer)<br></br>Obtain the value of a ByteBuffer key.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatKeyByteBufferRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatkeybytebufferrelease)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * buffer)<br></br>Release the ByteBuffer acquired by MLMediaFormatGetKeyByteBuffer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyInt32](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeyint32)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, int32_t key_value)<br></br>Set the value of an integer key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyInt64](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeyint64)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, int64_t key_value)<br></br>Set the value of a long key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyFloat](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeyfloat)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, float key_value)<br></br>Set the value of a float key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeySize](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeysize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, size_t key_size)<br></br>Set the size of a key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, const char * key_value)<br></br>Set the value of a string key.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyByteBuffer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeybytebuffer)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) name, const [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * buffer)<br></br>Set the value of a ByteBuffer key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyInt32](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeyint32)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, int32_t key_value)<br></br>Set the value of an integer key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyInt64](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeyint64)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, int64_t key_value)<br></br>Set the value of a long key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyFloat](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeyfloat)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, float key_value)<br></br>Set the value of a float key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeySize](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeysize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, size_t key_size)<br></br>Set the size of a key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyString](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeystring)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, const char * key_value)<br></br>Set the value of a string key.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaFormatSetKeyByteBuffer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatsetkeybytebuffer)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) name, const [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * buffer)<br></br>Set the value of a ByteBuffer key.  |
 | void | **[MLMediaMuxerSampleDataInit](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediamuxersampledatainit)**([MLMediaMuxerSampleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) * inout_sampledata)<br></br>Initializes [MLMediaMuxerSampleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md) with default values.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaMuxerCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxercreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a MLMediaMuxer instance.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaMuxerRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerrelease)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_muxer)<br></br>Release the MLMediaMuxer instance.  |
@@ -465,6 +463,8 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 
 |                | Name           |
 | -------------- | -------------- |
+| const typedef char * | **[MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty)**  |
+| const typedef char * | **[MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey)**  |
 | const int32_t | **[MLAudioChannelOutMono](/api-ref/api/Modules/group___media_player/group___media_player.md#const-int32-t-mlaudiochanneloutmono)**  |
 | const int32_t | **[MLAudioChannelOutStereo](/api-ref/api/Modules/group___media_player/group___media_player.md#const-int32-t-mlaudiochanneloutstereo)**  |
 | const int32_t | **[MLAudioChannelOutQuad](/api-ref/api/Modules/group___media_player/group___media_player.md#const-int32-t-mlaudiochanneloutquad)**  |
@@ -472,162 +472,162 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | const int32_t | **[MLAudioChannelOut5Point1](/api-ref/api/Modules/group___media_player/group___media_player.md#const-int32-t-mlaudiochannelout5point1)**  |
 | const int32_t | **[MLAudioChannelOut7Point1](/api-ref/api/Modules/group___media_player/group___media_player.md#const-int32-t-mlaudiochannelout7point1)**  |
 | const int32_t | **[MLAudioChannelOut7Point1Surround](/api-ref/api/Modules/group___media_player/group___media_player.md#const-int32-t-mlaudiochannelout7point1surround)**  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Vendor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-vendor)**  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Version](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-version)**  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Description](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-description)**  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Algorithms](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-algorithms)** <br></br>String property name: a comma-separated list of cipher and mac algorithms supported by #CryptoSession. The list may be empty if the DRM engine plugin does not support #CryptoSession operations.  |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) | **[MLMediaDRMProperty_DeviceUniqueID](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-deviceuniqueid)** <br></br>Byte array property name: the device unique identifier is established during device provisioning and provides a means of uniquely identifying each device.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_Encoded_Target_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-encoded-target-level)** <br></br>The format of media data (video/audio) is specified as key/value pairs. Below is a list of keys used to set/obtain format values.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Boost_Factor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-boost-factor)** <br></br>A key describing the boost factor allowing to adapt the dynamics of the output to the actual listening requirements. This relies on DRC gain sequences that can be transmitted in the encoded bitstream to be able to reduce the dynamics of the output signal upon request. This factor enables the user to select how much of the gains are applied.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Attenuation_Factor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-attenuation-factor)** <br></br>A key describing the attenuation factor allowing to adapt the dynamics of the output to the actual listening requirements.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Heavy_Compression](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-heavy-compression)** <br></br>A key describing the selection of the heavy compression profile for DRC.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Target_Reference_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-target-reference-level)** <br></br>A key describing a gain to be applied so that the output loudness matches the Target Reference Level. This is typically used to normalize loudness across program items.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_Max_Output_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-max-output-channel-count)** <br></br>A key describing the maximum number of channels that can be output by the AAC decoder.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_Profile](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-profile)** <br></br>A key describing the AAC profile to be used (AAC audio formats only).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_SBR_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-sbr-mode)** <br></br>A key describing the AAC SBR mode to be used (AAC audio formats only).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Bit_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-bit-rate)** <br></br>A key describing the average bitrate in bits/sec.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Bit_Rate_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-bit-rate-mode)** <br></br>A key describing the desired bitrate mode to be used by an encoder.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Capture_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-capture-rate)** <br></br>A key describing the capture rate of a video format in frames/sec.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-channel-count)** <br></br>A key describing the number of channels in an audio format.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Channel_Mask](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-channel-mask)** <br></br>A key describing the channel composition of audio content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Format](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-format)** <br></br>A key describing the color format of the content in a video format.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Duration](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-duration)** <br></br>A key describing the duration (in microseconds) of the content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_FLAC_Compression_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-flac-compression-level)** <br></br>A key describing the FLAC compression level to be used (FLAC audio format only).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Frame_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate)** <br></br>A key describing the frame rate of a video format in frames/sec.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-height)** <br></br>A key describing the height of the content in a video format.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_I_Frame_Interval](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-i-frame-interval)** <br></br>A key describing the frequency of key frames expressed in seconds between key frames.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_Period](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-period)** <br></br>An optional key describing the period of intra refresh in frames.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_ADTS](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-adts)** <br></br>A key mapping to a value of 1 if the content is AAC audio and audio frames are prefixed with an ADTS header.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Autoselect](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-autoselect)** <br></br>A key for boolean AUTOSELECT behavior for the track. Tracks with AUTOSELECT=true are considered when automatically selecting a track without specific user choice, based on the current locale. This is currently only used for subtitle tracks, when the user selected 'Default' for the captioning locale. The associated value is an integer, where non-0 means TRUE. This is an optional field; if not specified, AUTOSELECT defaults to TRUE.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Default](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-default)** <br></br>A key for boolean DEFAULT behavior for the track. The track with DEFAULT=true is selected in the absence of a specific user choice.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Forced_Subtitle](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-forced-subtitle)** <br></br>A key for the FORCED field for subtitle tracks.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Language](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-language)** <br></br>A key describing the language of the content, using either ISO 639-1 or 639-2/T codes.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-height)** <br></br>A key describing the maximum expected height of the content in a video decoder format, in case there are resolution changes in the video content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Input_Size](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-input-size)** <br></br>Described by this MediaFormat.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-width)** <br></br>A key describing the maximum expected width of the content in a video decoder format, in case there are resolution changes in the video content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Mime](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-mime)** <br></br>A key describing the mime type of the MediaFormat.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_PCM_Encoding](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-pcm-encoding)** <br></br>A key describing the raw audio sample encoding/format.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Push_Blank_Buffers_On_Stop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-push-blank-buffers-on-stop)** <br></br>If specified when configuring a video decoder rendering to a surface, causes the decoder to output "blank", i.e. black frames to the surface.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Repeat_Previous_Frame_After](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-repeat-previous-frame-after)** <br></br>Applies only when configuring a video encoder in "surface-input" mode.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sample_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sample-rate)** <br></br>A key describing the sample rate of an audio format.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Stride](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-stride)** <br></br>A key describing the stride of the video bytebuffer layout.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Temporal_Layering](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-temporal-layering)** <br></br>A key describing the temporal layering schema.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-width)** <br></br>A key describing the width of the content in a video format.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Left](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-left)** <br></br>The left-coordinate (x) of the crop rectangle.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Right](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-right)** <br></br>The right-coordinate (x) MINUS 1 of the crop rectangle.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Bottom](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-bottom)** <br></br>The bottom-coordinate (y) MINUS 1 of the crop rectangle.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Top](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-top)** <br></br>The top-coordinate (y) of the crop rectangle.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Operating_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-operating-rate)** <br></br>A key describing the desired operating frame rate for video or sample rate for audio that the codec will need to operate at.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Latency](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-latency)** <br></br>An optional key describing the desired encoder latency in frames.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Video_Bitrate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-video-bitrate)** <br></br>A key describing the desired video bitrate.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Request_Sync_Frame](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-request-sync-frame)** <br></br>Request that the encoder produce a sync frame "soon".  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Set_Suspend](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-set-suspend)** <br></br>Temporarily suspend/resume encoding of input data.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Set_Suspend_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-set-suspend-time)** <br></br>When PARAMETER_KEY_SUSPEND is present, the client can also optionally use this key to specify the timestamp (in micro-second) at which the suspend/resume operation takes effect.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Drop_Before](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-drop-before)** <br></br>A key describing the desired before which frames are to be skipped.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Drop_After](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-drop-after)** <br></br>A key describing the desired after which frames are to be skipped.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Offset_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-offset-time)** <br></br>Specify an offset (in micro-second) to be added on top of the timestamps onward.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Priority](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-priority)** <br></br>A key describing the desired codec priority.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_B_Frames](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-b-frames)** <br></br>A key describing the maximum number of B frames between I or P frames, to be used by a video encoder.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-mode)** <br></br>An optional key describing the mode of intra refresh in frames. The associated value is an integer.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_CIR_Num](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-cir-num)** <br></br>Number of consecutive macroblocks to be coded as intra when CIR is enabled.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_AIR_Num](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-air-num)** <br></br>Number of intra macroblocks to refresh in a frame when AIR is enabled.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_AIR_Ref](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-air-ref)** <br></br>Number of times a motion marked macroblock has to be intra coded.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Profile](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-profile)** <br></br>A key describing the desired profile to be used by an encoder.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-level)** <br></br>A key describing the desired level to be used by an encoder.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Prepend_Header_To_Sync_Frames](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-prepend-header-to-sync-frames)** <br></br>An optional key describing whether encoders prepend headers to sync frames (e.g. SPS and PPS to IDR frames for H.264).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Range](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-range)** <br></br>An optional key describing the range of the component values of the video content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Standard](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-standard)** <br></br>An optional key describing the color primaries, white point and luminance factors for video content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Transfer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-transfer)** <br></br>An optional key describing the opto-electronic transfer function used for the video content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_HDR_Static_Info](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-hdr-static-info)** <br></br>An optional key describing the static metadata of HDR (high-dynamic-range) video content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd)** <br></br>A key describing the codec specific data.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD0](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd0)** <br></br>A key describing the codec specific data buffer #0.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD1](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd1)** <br></br>A key describing the codec specific data buffer #1.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD2](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd2)** <br></br>A key describing the codec specific data buffer #2.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD_Avc](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd-avc)** <br></br>A key describing the codec specific data buffer for AVC (h.264).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD_Hevc](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd-hevc)** <br></br>A key describing the codec specific data buffer for HEVC (h.265).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Album](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-album)** <br></br>A key describing metadata - album title of the media.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Albumart](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-albumart)** <br></br>A key describing metadata. The artwork for the album of the media's original source as a Bitmap.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Albumartist](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-albumartist)** <br></br>A key describing metadata. The artist for the album of the media's original source.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Artist](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-artist)** <br></br>A key describing metadata. The artist of the media.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Presentation_Info](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-presentation-info)** <br></br>A key describing metadata. The media presentation info.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Presentation_Presentation_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-presentation-presentation-id)** <br></br>A key describing metadata. The media presentation Id.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Presentation_Program_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-presentation-program-id)** <br></br>A key describing metadata. The media program Id.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Session_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-session-id)** <br></br>A key describing the audio session ID of the AudioTrack associated to a tunneled video codec.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Author](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-author)** <br></br>A key describing metadata. The author of the media.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Bits_Per_Sample](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-bits-per-sample)** <br></br>Key representing media number of bits per sample.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Cdtracknumber](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-cdtracknumber)** <br></br>A key describing metadata. The cd track number.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Compilation](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-compilation)** <br></br>A key describing metadata. The media compilation.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Complexity](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-complexity)** <br></br>A key describing the encoding complexity.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Composer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-composer)** <br></br>A key describing metadata - composer of the media.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Create_Input_Surface_Suspended](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-create-input-surface-suspended)** <br></br>If specified when configuring a video encoder that's in "surface-input" mode, it will instruct the encoder to put the surface source in suspended state when it's connected.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Default_Iv_Size](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-default-iv-size)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Encrypted_Byte_Block](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-encrypted-byte-block)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Encrypted_Sizes](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-encrypted-sizes)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Iv](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-iv)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Key](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-key)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-mode)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Plain_Sizes](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-plain-sizes)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Skip_Byte_Block](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-skip-byte-block)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_D263](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-d263)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Date](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-date)** <br></br>A key describing metadata - The date the media was created or published. The format is unspecified but RFC 3339 is recommended.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Discnumber](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-discnumber)** <br></br>A key describing metadata. The disc number for the media's original source.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Display_Crop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-display-crop)** <br></br>A key describing display crop rectangle.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Display_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-display-height)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Display_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-display-width)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Encoder_Delay](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-encoder-delay)** <br></br>A key describing the number of frames to trim from the start of the decoded audio stream.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Encoder_Padding](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-encoder-padding)** <br></br>A key describing the number of frames to trim from the end of the decoded audio stream.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Esds](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-esds)** <br></br>A key describing the electrostatic discharge and soldering (ESDS).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Exif_Offset](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-exif-offset)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Exif_Size](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-exif-size)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Frame_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-count)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Genre](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-genre)** <br></br>A key describing metadata. The media genre.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Grid_Columns](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)** <br></br>A key describing the number of grid columns in the content in a MIMETYPE_IMAGE_ANDROID_HEIC track.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Grid_Rows](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)** <br></br>A key describing the number of grid rows in the content in a MIMETYPE_IMAGE_ANDROID_HEIC track.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Haptic_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-haptic-channel-count)** <br></br>A key describing the number of haptic channels in an audio format.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Hdr10_Plus_Info](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-hdr10-plus-info)** <br></br>An optional key describing the HDR10+ metadata of the video content.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Icc_Profile](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-icc-profile)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Sync_Frame](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-sync-frame)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Location](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-location)** <br></br>A key describing metadata. The media location.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Loop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-loop)** <br></br>A key describing metadata. The media loop.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Lyricist](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-lyricist)** <br></br>A key describing metadata. The media lyricist.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Manufacturer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-manufacturer)** <br></br>A key describing metadata. The media manufacturer.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Bit_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-bit-rate)** <br></br>A key describing the max bitrate in bits/sec.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Fps_To_Encoder](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-fps-to-encoder)** <br></br>Instruct the video encoder in "surface-input" mode to drop excessive frames from the source, so that the input frame rate to the encoder does not exceed the specified fps.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Pts_Gap_To_Encoder](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-pts-gap-to-encoder)** <br></br>Instruct the video encoder in "surface-input" mode to limit the gap of timestamp between any two adjacent frames fed to the encoder to the specified amount (in micro-second).  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Mpeg_User_Data](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-mpeg-user-data)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Mpeg2_Stream_Header](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-mpeg2-stream-header)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_PCM_Big_Endian](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-pcm-big-endian)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Pssh](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-pssh)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Rotation](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-rotation)** <br></br>A key describing the desired clockwise rotation on an output surface.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sar_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sar-height)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sar_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sar-width)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sei](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sei)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Slice_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-slice-height)** <br></br>A key describing the plane height of a multi-planar (YUV) video bytebuffer layout.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Target_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-target-time)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Temporal_Layer_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-temporal-layer-count)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Temporal_Layer_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-temporal-layer-id)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Text_Format_Data](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-text-format-data)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_CSD_Hevc](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-csd-hevc)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-height)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-time)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-width)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Tile_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)** <br></br>A key describing the height (in pixels) of each tile of the content in a MIMETYPE_IMAGE_ANDROID_HEIC track. The associated value is an integer.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Tile_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)** <br></br>A key describing the width (in pixels) of each tile of the content in a MIMETYPE_IMAGE_ANDROID_HEIC track. The associated value is an integer.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Time_Us](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-time-us)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Title](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-title)** <br></br>A key describing metadata. The title of the media.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Track_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-track-id)** <br></br>A key describing a unique ID for the content of a media track.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Track_Index](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-track-index)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Valid_Samples](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-valid-samples)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Year](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-year)** <br></br>A key describing metadata. The year the media was created or published as a long.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Effect_Type](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-effect-type)** <br></br>A key describing for selecting the DRC effect type for MPEG-D DRC.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Quality](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-quality)** <br></br>A key describing the desired encoding quality.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Output_Reorder_Depth](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-output-reorder-depth)** <br></br>An optional key describing the maximum number of non-display-order coded frames.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Timed_Text](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-timed-text)**  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Ca_System_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-ca-system-id)** <br></br>A key describing the system id of the conditional access system used to scramble a media track.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Ca_Session_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-ca-session-id)** <br></br>A key describing the MediaCas.Session object associated with a media track.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Ca_Private_Data](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-ca-private-data)** <br></br>A key describing the private data in the CA_descriptor associated with a media track.  |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) | **[MLMediaFormat_Key_Feature_](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-feature-)** <br></br>A key prefix used together with a [MLMediaCodecBitrateMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode) feature name describing a required or optional feature for a codec capabilities query.  |
-| const float | **[MLTTMLDimen_Unset](/api-ref/api/Modules/group___media_player/group___media_player.md#const-float-mlttmldimen-unset)** <br></br>An unset position, width or size.  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Vendor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-vendor)**  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Version](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-version)**  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Description](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-description)**  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_Algorithms](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-algorithms)** <br></br>String property name: a comma-separated list of cipher and mac algorithms supported by #CryptoSession. The list may be empty if the DRM engine plugin does not support #CryptoSession operations.  |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) | **[MLMediaDRMProperty_DeviceUniqueID](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediadrmproperty-mlmediadrmproperty-deviceuniqueid)** <br></br>Byte array property name: the device unique identifier is established during device provisioning and provides a means of uniquely identifying each device.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_Encoded_Target_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-encoded-target-level)** <br></br>The format of media data (video/audio) is specified as key/value pairs. Below is a list of keys used to set/obtain format values.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Boost_Factor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-boost-factor)** <br></br>A key describing the boost factor allowing to adapt the dynamics of the output to the actual listening requirements. This relies on DRC gain sequences that can be transmitted in the encoded bitstream to be able to reduce the dynamics of the output signal upon request. This factor enables the user to select how much of the gains are applied.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Attenuation_Factor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-attenuation-factor)** <br></br>A key describing the attenuation factor allowing to adapt the dynamics of the output to the actual listening requirements.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Heavy_Compression](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-heavy-compression)** <br></br>A key describing the selection of the heavy compression profile for DRC.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Target_Reference_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-target-reference-level)** <br></br>A key describing a gain to be applied so that the output loudness matches the Target Reference Level. This is typically used to normalize loudness across program items.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_Max_Output_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-max-output-channel-count)** <br></br>A key describing the maximum number of channels that can be output by the AAC decoder.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_Profile](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-profile)** <br></br>A key describing the AAC profile to be used (AAC audio formats only).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_SBR_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-sbr-mode)** <br></br>A key describing the AAC SBR mode to be used (AAC audio formats only).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Bit_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-bit-rate)** <br></br>A key describing the average bitrate in bits/sec.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Bit_Rate_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-bit-rate-mode)** <br></br>A key describing the desired bitrate mode to be used by an encoder.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Capture_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-capture-rate)** <br></br>A key describing the capture rate of a video format in frames/sec.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-channel-count)** <br></br>A key describing the number of channels in an audio format.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Channel_Mask](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-channel-mask)** <br></br>A key describing the channel composition of audio content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Format](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-format)** <br></br>A key describing the color format of the content in a video format.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Duration](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-duration)** <br></br>A key describing the duration (in microseconds) of the content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_FLAC_Compression_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-flac-compression-level)** <br></br>A key describing the FLAC compression level to be used (FLAC audio format only).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Frame_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-rate)** <br></br>A key describing the frame rate of a video format in frames/sec.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-height)** <br></br>A key describing the height of the content in a video format.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_I_Frame_Interval](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-i-frame-interval)** <br></br>A key describing the frequency of key frames expressed in seconds between key frames.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_Period](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-period)** <br></br>An optional key describing the period of intra refresh in frames.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_ADTS](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-adts)** <br></br>A key mapping to a value of 1 if the content is AAC audio and audio frames are prefixed with an ADTS header.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Autoselect](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-autoselect)** <br></br>A key for boolean AUTOSELECT behavior for the track. Tracks with AUTOSELECT=true are considered when automatically selecting a track without specific user choice, based on the current locale. This is currently only used for subtitle tracks, when the user selected 'Default' for the captioning locale. The associated value is an integer, where non-0 means TRUE. This is an optional field; if not specified, AUTOSELECT defaults to TRUE.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Default](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-default)** <br></br>A key for boolean DEFAULT behavior for the track. The track with DEFAULT=true is selected in the absence of a specific user choice.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Forced_Subtitle](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-forced-subtitle)** <br></br>A key for the FORCED field for subtitle tracks.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Language](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-language)** <br></br>A key describing the language of the content, using either ISO 639-1 or 639-2/T codes.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-height)** <br></br>A key describing the maximum expected height of the content in a video decoder format, in case there are resolution changes in the video content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Input_Size](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-input-size)** <br></br>Described by this MediaFormat.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-width)** <br></br>A key describing the maximum expected width of the content in a video decoder format, in case there are resolution changes in the video content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Mime](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-mime)** <br></br>A key describing the mime type of the MediaFormat.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_PCM_Encoding](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-pcm-encoding)** <br></br>A key describing the raw audio sample encoding/format.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Push_Blank_Buffers_On_Stop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-push-blank-buffers-on-stop)** <br></br>If specified when configuring a video decoder rendering to a surface, causes the decoder to output "blank", i.e. black frames to the surface.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Repeat_Previous_Frame_After](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-repeat-previous-frame-after)** <br></br>Applies only when configuring a video encoder in "surface-input" mode.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sample_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sample-rate)** <br></br>A key describing the sample rate of an audio format.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Stride](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-stride)** <br></br>A key describing the stride of the video bytebuffer layout.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Temporal_Layering](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-temporal-layering)** <br></br>A key describing the temporal layering schema.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-width)** <br></br>A key describing the width of the content in a video format.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Left](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-left)** <br></br>The left-coordinate (x) of the crop rectangle.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Right](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-right)** <br></br>The right-coordinate (x) MINUS 1 of the crop rectangle.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Bottom](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-bottom)** <br></br>The bottom-coordinate (y) MINUS 1 of the crop rectangle.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crop_Top](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crop-top)** <br></br>The top-coordinate (y) of the crop rectangle.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Operating_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-operating-rate)** <br></br>A key describing the desired operating frame rate for video or sample rate for audio that the codec will need to operate at.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Latency](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-latency)** <br></br>An optional key describing the desired encoder latency in frames.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Video_Bitrate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-video-bitrate)** <br></br>A key describing the desired video bitrate.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Request_Sync_Frame](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-request-sync-frame)** <br></br>Request that the encoder produce a sync frame "soon".  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Set_Suspend](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-set-suspend)** <br></br>Temporarily suspend/resume encoding of input data.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Set_Suspend_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-set-suspend-time)** <br></br>When PARAMETER_KEY_SUSPEND is present, the client can also optionally use this key to specify the timestamp (in micro-second) at which the suspend/resume operation takes effect.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Drop_Before](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-drop-before)** <br></br>A key describing the desired before which frames are to be skipped.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Drop_After](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-drop-after)** <br></br>A key describing the desired after which frames are to be skipped.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Parameter_Offset_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-parameter-offset-time)** <br></br>Specify an offset (in micro-second) to be added on top of the timestamps onward.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Priority](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-priority)** <br></br>A key describing the desired codec priority.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_B_Frames](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-b-frames)** <br></br>A key describing the maximum number of B frames between I or P frames, to be used by a video encoder.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-mode)** <br></br>An optional key describing the mode of intra refresh in frames. The associated value is an integer.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_CIR_Num](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-cir-num)** <br></br>Number of consecutive macroblocks to be coded as intra when CIR is enabled.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_AIR_Num](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-air-num)** <br></br>Number of intra macroblocks to refresh in a frame when AIR is enabled.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Intra_Refresh_AIR_Ref](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-intra-refresh-air-ref)** <br></br>Number of times a motion marked macroblock has to be intra coded.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Profile](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-profile)** <br></br>A key describing the desired profile to be used by an encoder.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Level](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-level)** <br></br>A key describing the desired level to be used by an encoder.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Prepend_Header_To_Sync_Frames](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-prepend-header-to-sync-frames)** <br></br>An optional key describing whether encoders prepend headers to sync frames (e.g. SPS and PPS to IDR frames for H.264).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Range](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-range)** <br></br>An optional key describing the range of the component values of the video content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Standard](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-standard)** <br></br>An optional key describing the color primaries, white point and luminance factors for video content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Color_Transfer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-color-transfer)** <br></br>An optional key describing the opto-electronic transfer function used for the video content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_HDR_Static_Info](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-hdr-static-info)** <br></br>An optional key describing the static metadata of HDR (high-dynamic-range) video content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd)** <br></br>A key describing the codec specific data.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD0](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd0)** <br></br>A key describing the codec specific data buffer #0.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD1](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd1)** <br></br>A key describing the codec specific data buffer #1.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD2](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd2)** <br></br>A key describing the codec specific data buffer #2.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD_Avc](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd-avc)** <br></br>A key describing the codec specific data buffer for AVC (h.264).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_CSD_Hevc](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-csd-hevc)** <br></br>A key describing the codec specific data buffer for HEVC (h.265).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Album](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-album)** <br></br>A key describing metadata - album title of the media.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Albumart](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-albumart)** <br></br>A key describing metadata. The artwork for the album of the media's original source as a Bitmap.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Albumartist](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-albumartist)** <br></br>A key describing metadata. The artist for the album of the media's original source.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Artist](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-artist)** <br></br>A key describing metadata. The artist of the media.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Presentation_Info](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-presentation-info)** <br></br>A key describing metadata. The media presentation info.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Presentation_Presentation_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-presentation-presentation-id)** <br></br>A key describing metadata. The media presentation Id.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Presentation_Program_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-presentation-program-id)** <br></br>A key describing metadata. The media program Id.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Audio_Session_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-audio-session-id)** <br></br>A key describing the audio session ID of the AudioTrack associated to a tunneled video codec.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Author](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-author)** <br></br>A key describing metadata. The author of the media.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Bits_Per_Sample](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-bits-per-sample)** <br></br>Key representing media number of bits per sample.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Cdtracknumber](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-cdtracknumber)** <br></br>A key describing metadata. The cd track number.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Compilation](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-compilation)** <br></br>A key describing metadata. The media compilation.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Complexity](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-complexity)** <br></br>A key describing the encoding complexity.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Composer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-composer)** <br></br>A key describing metadata - composer of the media.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Create_Input_Surface_Suspended](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-create-input-surface-suspended)** <br></br>If specified when configuring a video encoder that's in "surface-input" mode, it will instruct the encoder to put the surface source in suspended state when it's connected.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Default_Iv_Size](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-default-iv-size)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Encrypted_Byte_Block](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-encrypted-byte-block)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Encrypted_Sizes](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-encrypted-sizes)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Iv](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-iv)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Key](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-key)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Mode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-mode)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Plain_Sizes](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-plain-sizes)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Crypto_Skip_Byte_Block](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-crypto-skip-byte-block)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_D263](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-d263)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Date](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-date)** <br></br>A key describing metadata - The date the media was created or published. The format is unspecified but RFC 3339 is recommended.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Discnumber](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-discnumber)** <br></br>A key describing metadata. The disc number for the media's original source.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Display_Crop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-display-crop)** <br></br>A key describing display crop rectangle.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Display_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-display-height)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Display_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-display-width)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Encoder_Delay](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-encoder-delay)** <br></br>A key describing the number of frames to trim from the start of the decoded audio stream.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Encoder_Padding](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-encoder-padding)** <br></br>A key describing the number of frames to trim from the end of the decoded audio stream.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Esds](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-esds)** <br></br>A key describing the electrostatic discharge and soldering (ESDS).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Exif_Offset](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-exif-offset)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Exif_Size](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-exif-size)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Frame_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-frame-count)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Genre](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-genre)** <br></br>A key describing metadata. The media genre.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Grid_Columns](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-columns)** <br></br>A key describing the number of grid columns in the content in a MIMETYPE_IMAGE_ANDROID_HEIC track.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Grid_Rows](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-grid-rows)** <br></br>A key describing the number of grid rows in the content in a MIMETYPE_IMAGE_ANDROID_HEIC track.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Haptic_Channel_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-haptic-channel-count)** <br></br>A key describing the number of haptic channels in an audio format.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Hdr10_Plus_Info](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-hdr10-plus-info)** <br></br>An optional key describing the HDR10+ metadata of the video content.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Icc_Profile](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-icc-profile)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Sync_Frame](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-sync-frame)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Location](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-location)** <br></br>A key describing metadata. The media location.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Loop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-loop)** <br></br>A key describing metadata. The media loop.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Lyricist](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-lyricist)** <br></br>A key describing metadata. The media lyricist.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Manufacturer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-manufacturer)** <br></br>A key describing metadata. The media manufacturer.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Bit_Rate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-bit-rate)** <br></br>A key describing the max bitrate in bits/sec.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Fps_To_Encoder](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-fps-to-encoder)** <br></br>Instruct the video encoder in "surface-input" mode to drop excessive frames from the source, so that the input frame rate to the encoder does not exceed the specified fps.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Max_Pts_Gap_To_Encoder](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-max-pts-gap-to-encoder)** <br></br>Instruct the video encoder in "surface-input" mode to limit the gap of timestamp between any two adjacent frames fed to the encoder to the specified amount (in micro-second).  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Mpeg_User_Data](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-mpeg-user-data)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Mpeg2_Stream_Header](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-mpeg2-stream-header)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_PCM_Big_Endian](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-pcm-big-endian)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Pssh](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-pssh)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Rotation](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-rotation)** <br></br>A key describing the desired clockwise rotation on an output surface.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sar_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sar-height)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sar_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sar-width)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Sei](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-sei)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Slice_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-slice-height)** <br></br>A key describing the plane height of a multi-planar (YUV) video bytebuffer layout.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Target_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-target-time)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Temporal_Layer_Count](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-temporal-layer-count)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Temporal_Layer_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-temporal-layer-id)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Text_Format_Data](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-text-format-data)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_CSD_Hevc](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-csd-hevc)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-height)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_Time](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-time)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Thumbnail_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-thumbnail-width)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Tile_Height](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-height)** <br></br>A key describing the height (in pixels) of each tile of the content in a MIMETYPE_IMAGE_ANDROID_HEIC track. The associated value is an integer.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Tile_Width](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-tile-width)** <br></br>A key describing the width (in pixels) of each tile of the content in a MIMETYPE_IMAGE_ANDROID_HEIC track. The associated value is an integer.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Time_Us](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-time-us)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Title](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-title)** <br></br>A key describing metadata. The title of the media.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Track_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-track-id)** <br></br>A key describing a unique ID for the content of a media track.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Track_Index](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-track-index)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Valid_Samples](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-valid-samples)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Year](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-year)** <br></br>A key describing metadata. The year the media was created or published as a long.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_AAC_DRC_Effect_Type](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-aac-drc-effect-type)** <br></br>A key describing for selecting the DRC effect type for MPEG-D DRC.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Quality](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-quality)** <br></br>A key describing the desired encoding quality.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Output_Reorder_Depth](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-output-reorder-depth)** <br></br>An optional key describing the maximum number of non-display-order coded frames.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Is_Timed_Text](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-is-timed-text)**  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Ca_System_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-ca-system-id)** <br></br>A key describing the system id of the conditional access system used to scramble a media track.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Ca_Session_Id](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-ca-session-id)** <br></br>A key describing the MediaCas.Session object associated with a media track.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Ca_Private_Data](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-ca-private-data)** <br></br>A key describing the private data in the CA_descriptor associated with a media track.  |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) | **[MLMediaFormat_Key_Feature_](/api-ref/api/Modules/group___media_player/group___media_player.md#mlmediaformatkey-mlmediaformat-key-feature-)** <br></br>A key prefix used together with a [MLMediaCodecBitrateMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlmediacodecbitratemode) feature name describing a required or optional feature for a codec capabilities query.  |
+| const float | **[MLTTMLDimen_Unset](/api-ref/api/Modules/group___media_player/group___media_player.md#const-float-mlttmldimen-unset)** <br></br>An unset position, width or size which is negative of maximum finite value of float (-FLT_MAX).  |
 | size_t | **[size](/api-ref/api/Modules/group___media_player/group___media_player.md#size-t-size)**  |
 | uint8_t * | **[data](/api-ref/api/Modules/group___media_player/group___media_player.md#uint8-t-data)**  |
 | int64_t | **[start_time_ms](/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-start-time-ms)**  |
@@ -709,37 +709,37 @@ Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
 
 **Shared Object:**
-  * media_ccparser.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_ccparser.magicleap*
 
 **Shared Object:**
-  * media_cea708parser.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_cea708parser.magicleap*
 
 **Shared Object:**
-  * media_codec.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_codec.magicleap*
 
 **Shared Object:**
-  * media_codeclist.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_codeclist.magicleap*
 
 **Shared Object:**
-  * media_crypto.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_crypto.magicleap*
 
 **Shared Object:**
-  * media_player.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_player.magicleap*
 
 **Shared Object:**
-  * media_drm.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_drm.magicleap*
 
 **Shared Object:**
-  * media_extractor.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_extractor.magicleap*
 
 **Shared Object:**
-  * media_format.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_format.magicleap*
 
 **Shared Object:**
-  * media_muxer.magicleap Stringify the error codes returned by these APIs, call MLMediaResultGetString.
+  * media_muxer.magicleap*
 
 **Shared Object:**
-  * native_surface.magicleap To stringify the error codes returned by these APIs, call MLMediaResultGetString. 
+  * native_surface.magicleap*
 
 
 
@@ -775,15 +775,19 @@ Stringify the error codes returned by these APIs, call MLMediaResultGetString.
 
 Audio channel output mask. 
 
-For a channel position mask, each allowed channel position corresponds to a bit in the channel mask. If that channel position is present in the audio frame, that bit is set, otherwise it is zero. The order of the bits (from lsb to msb) corresponds to the order of that position's sample in the audio frame. The canonical channel position masks by channel count are as follows: 
+For a channel position mask, each allowed channel position corresponds to a bit in the channel mask. If that channel position is present in the audio frame, that bit is set, otherwise it is zero. The order of the bits (from lsb to msb) corresponds to the order of that position's sample in the audio frame. The canonical channel position masks by channel count are as follows:
+
+
 
 ------------------
 
 
-# channel count channel position mask 
+# channel count  channel position mask
 
 1 MLAudioChannelOutMono 2 MLAudioChannelOutStereo 3 MLAudioChannelOutStereo | MLAudioChannelOutMask_FrontCenter 4 MLAudioChannelOutQuad 5 MLAudioChannelOutQuad | MLAudioChannelOutMask_FrontCenter 6 MLAudioChannelOut5Point1 7 MLAudioChannelOut5Point1 | MLAudioChannelOutMask_BackCenter 
-# 8 MLAudioChannelOut7Point1Surround 
+
+
+# 8    MLAudioChannelOut7Point1Surround
 
 These masks are an ORed composite of individual channel masks. For example MLAudioChannelOutMask_Stereo is composed of MLAudioChannelOutMask_FrontLeft and MLAudioChannelOutMask_FrontRight.
 
@@ -816,7 +820,7 @@ Cea608 Caption Dimension constants.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -845,7 +849,7 @@ Cea608 caption color code.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -868,7 +872,7 @@ Cea608 caption style code.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -904,7 +908,7 @@ Cea708 Caption maximum windows constant.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -925,7 +929,7 @@ Maximum size for Cea708 Caption Emit command buffers.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -962,7 +966,7 @@ Cea708 Caption Emit Commands constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -987,7 +991,7 @@ Cea708 Caption Emit Command Control constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -1012,7 +1016,7 @@ Cea708 Caption Color Opacity constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -1036,7 +1040,7 @@ Cea708 Caption Pen Size constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -1060,7 +1064,7 @@ Cea708 Caption Pen Offset constants.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -1274,7 +1278,7 @@ Enumeration defining possible uncompressed image/video formats.
 
 
 **API Level:**
-  * 9 
+  * 9
 
 
 
@@ -1297,7 +1301,7 @@ Enumeration defining the Codec priority.
 
 
 **API Level:**
-  * 9 
+  * 9
 
 
 
@@ -1321,7 +1325,7 @@ Enumeration of possible methods to use for Intra Refresh.
 
 
 **API Level:**
-  * 9 
+  * 9
 
 
 
@@ -1345,7 +1349,7 @@ Enumeration defining Codec Bitrate modes.
 
 
 **API Level:**
-  * 9 
+  * 9
 
 
 
@@ -1438,7 +1442,7 @@ A codec may not support all the profiles and levels listed below. For any given 
 
 
 **API Level:**
-  * 9 
+  * 9
 
 
 
@@ -1545,7 +1549,7 @@ A codec may not support all the profiles and levels listed below. For any given 
 
 
 **API Level:**
-  * 9 
+  * 9
 
 
 
@@ -1614,7 +1618,7 @@ Request event types.
 
 
 **API Level:**
-  * 7 
+  * 7
 
 
 
@@ -1640,7 +1644,7 @@ Status code associated with a DRM session key.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -1728,7 +1732,7 @@ Use [MLMediaMuxerGetSupportedOutputFormats](/api-ref/api/Modules/group___media_p
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -1766,7 +1770,7 @@ Codes for setting video scaling mode.
 | MLMediaPlayerPollingStateFlag_HasSizeChanged |  1 << 5| Size changed. |
 | MLMediaPlayerPollingStateFlag_HasBufferingUpdated |  1 << 6| Buffering updated. |
 | MLMediaPlayerPollingStateFlag_HasReceivedInfo |  1 << 7| Received info. |
-| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Recieved error. |
+| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Received error. |
 | MLMediaPlayerPollingStateFlag_HasTimedTextUpdated |  1 << 9| Timed text updated. |
 | MLMediaPlayerPollingStateFlag_HasSubtitleUpdated |  1 << 10| Subtitle updated. |
 | MLMediaPlayerPollingStateFlag_HasMetadataUpdated |  1 << 11| Metadata updated. |
@@ -1902,7 +1906,7 @@ Frame Packing Arrangement for stereoscopic videos.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -1928,7 +1932,7 @@ Frame Packing Arrangement flags for stereoscopic videos.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -1953,7 +1957,7 @@ Cue text alignment within the cue box.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -1977,7 +1981,7 @@ Cue line type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2002,7 +2006,7 @@ Cue anchor type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2027,7 +2031,7 @@ Cue text size type.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2050,7 +2054,7 @@ Cue orientation setting.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -2074,7 +2078,7 @@ Cue direction setting.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -2100,7 +2104,7 @@ Cue aligment setting.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -2134,7 +2138,7 @@ Number of acquired buffers to be requested in functions [MLNativeSurfaceCreate](
 | MLNativeSurfacePixelFormat_Transparent |  -2| Transparent format. |
 | MLNativeSurfacePixelFormat_Opaque |  -1| Opaque format. |
 | MLNativeSurfacePixelFormat_None |  0| None. |
-| MLNativeSurfacePixelFormat_Rgba8888 |  1| 4x8-bit RGBA format. |
+| MLNativeSurfacePixelFormat_Rgba8888 |  1| Below enums should match android_pixel_format_t in graphics-base-v1.0.h header.4x8-bit RGBA format. |
 | MLNativeSurfacePixelFormat_Rgbx8888 |  2| 4x8-bit RGBX format. |
 | MLNativeSurfacePixelFormat_Rgb888 |  3| 3x8-bit RGB format. |
 | MLNativeSurfacePixelFormat_Rgb565 |  4| 16-bit RGB format. |
@@ -2169,7 +2173,7 @@ Graphic backend to use.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2182,7 +2186,7 @@ Graphic backend to use.
 ### MLCea608CaptionStyleColor {#struct-mlcea608captionstylecolor}
 
 ```cpp
-typedef struct MLCea608CaptionStyleColor  MLCea608CaptionStyleColor;
+typedef struct MLCea608CaptionStyleColor MLCea608CaptionStyleColor;
 ```
 
 Cea608 caption style and color. 
@@ -2193,7 +2197,7 @@ Cea608 caption style and color.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -2203,7 +2207,7 @@ Cea608 caption style and color.
 ### MLCea608CaptionPAC {#struct-mlcea608captionpac}
 
 ```cpp
-typedef struct MLCea608CaptionPAC  MLCea608CaptionPAC;
+typedef struct MLCea608CaptionPAC MLCea608CaptionPAC;
 ```
 
 Cea608 caption preamble address code. 
@@ -2214,7 +2218,7 @@ Cea608 caption preamble address code.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -2224,7 +2228,7 @@ Cea608 caption preamble address code.
 ### MLCea608CaptionLineEx {#struct-mlcea608captionlineex}
 
 ```cpp
-typedef struct MLCea608CaptionLineEx  MLCea608CaptionLineEx;
+typedef struct MLCea608CaptionLineEx MLCea608CaptionLineEx;
 ```
 
 Cea608 caption line structure. 
@@ -2235,7 +2239,7 @@ Cea608 caption line structure.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2245,7 +2249,7 @@ Cea608 caption line structure.
 ### MLCea608CaptionSegmentEx {#struct-mlcea608captionsegmentex}
 
 ```cpp
-typedef struct MLCea608CaptionSegmentEx  MLCea608CaptionSegmentEx;
+typedef struct MLCea608CaptionSegmentEx MLCea608CaptionSegmentEx;
 ```
 
 Cea608 caption segment structure. 
@@ -2256,7 +2260,7 @@ Cea608 caption segment structure.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2293,7 +2297,7 @@ Callback signature called when Cea608 displayable is changed.
 ### MLCea708CaptionColor {#struct-mlcea708captioncolor}
 
 ```cpp
-typedef struct MLCea708CaptionColor  MLCea708CaptionColor;
+typedef struct MLCea708CaptionColor MLCea708CaptionColor;
 ```
 
 Cea708 Caption Color. 
@@ -2304,7 +2308,7 @@ Cea708 Caption Color.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2314,7 +2318,7 @@ Cea708 Caption Color.
 ### MLCea708CaptionPenAttr {#struct-mlcea708captionpenattr}
 
 ```cpp
-typedef struct MLCea708CaptionPenAttr  MLCea708CaptionPenAttr;
+typedef struct MLCea708CaptionPenAttr MLCea708CaptionPenAttr;
 ```
 
 Cea708 Caption Pen Attributes. 
@@ -2325,7 +2329,7 @@ Cea708 Caption Pen Attributes.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2335,7 +2339,7 @@ Cea708 Caption Pen Attributes.
 ### MLCea708CaptionPenColor {#struct-mlcea708captionpencolor}
 
 ```cpp
-typedef struct MLCea708CaptionPenColor  MLCea708CaptionPenColor;
+typedef struct MLCea708CaptionPenColor MLCea708CaptionPenColor;
 ```
 
 Cea708 Caption Pen Color. 
@@ -2346,7 +2350,7 @@ Cea708 Caption Pen Color.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2356,7 +2360,7 @@ Cea708 Caption Pen Color.
 ### MLCea708CaptionPenLocation {#struct-mlcea708captionpenlocation}
 
 ```cpp
-typedef struct MLCea708CaptionPenLocation  MLCea708CaptionPenLocation;
+typedef struct MLCea708CaptionPenLocation MLCea708CaptionPenLocation;
 ```
 
 Cea708 Caption Pen Location. 
@@ -2367,7 +2371,7 @@ Cea708 Caption Pen Location.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2377,7 +2381,7 @@ Cea708 Caption Pen Location.
 ### MLCea708CaptionWindowAttr {#struct-mlcea708captionwindowattr}
 
 ```cpp
-typedef struct MLCea708CaptionWindowAttr  MLCea708CaptionWindowAttr;
+typedef struct MLCea708CaptionWindowAttr MLCea708CaptionWindowAttr;
 ```
 
 Cea708 Caption Window Attributes. 
@@ -2388,7 +2392,7 @@ Cea708 Caption Window Attributes.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2398,7 +2402,7 @@ Cea708 Caption Window Attributes.
 ### MLCea708CaptionWindow {#struct-mlcea708captionwindow}
 
 ```cpp
-typedef struct MLCea708CaptionWindow  MLCea708CaptionWindow;
+typedef struct MLCea708CaptionWindow MLCea708CaptionWindow;
 ```
 
 Cea708 Caption Window. 
@@ -2409,7 +2413,7 @@ Cea708 Caption Window.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2419,7 +2423,7 @@ Cea708 Caption Window.
 ### MLCea708CaptionEvent {#struct-mlcea708captionevent}
 
 ```cpp
-typedef struct MLCea708CaptionEvent  MLCea708CaptionEvent;
+typedef struct MLCea708CaptionEvent MLCea708CaptionEvent;
 ```
 
 Cea708 Caption Event. 
@@ -2430,7 +2434,7 @@ Cea708 Caption Event.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -2467,7 +2471,7 @@ Callback signature called when Cea708 parser emits event.
 ### MLMediaCodecBufferInfo {#struct-mlmediacodecbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecBufferInfo  MLMediaCodecBufferInfo;
+typedef struct MLMediaCodecBufferInfo MLMediaCodecBufferInfo;
 ```
 
 
@@ -2484,7 +2488,7 @@ Media codec buffer info.
 ### MLMediaCodecInputBufferInfo {#struct-mlmediacodecinputbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecInputBufferInfo  MLMediaCodecInputBufferInfo;
+typedef struct MLMediaCodecInputBufferInfo MLMediaCodecInputBufferInfo;
 ```
 
 MediaCodec Input buffer information. 
@@ -2495,7 +2499,7 @@ MediaCodec Input buffer information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2505,7 +2509,7 @@ MediaCodec Input buffer information.
 ### MLMediaCodecOutputBufferInfo {#struct-mlmediacodecoutputbufferinfo}
 
 ```cpp
-typedef struct MLMediaCodecOutputBufferInfo  MLMediaCodecOutputBufferInfo;
+typedef struct MLMediaCodecOutputBufferInfo MLMediaCodecOutputBufferInfo;
 ```
 
 MediaCodec Output buffer information. 
@@ -2516,7 +2520,7 @@ MediaCodec Output buffer information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2526,7 +2530,7 @@ MediaCodec Output buffer information.
 ### MLMediaCodecOutputFormatInfo {#struct-mlmediacodecoutputformatinfo}
 
 ```cpp
-typedef struct MLMediaCodecOutputFormatInfo  MLMediaCodecOutputFormatInfo;
+typedef struct MLMediaCodecOutputFormatInfo MLMediaCodecOutputFormatInfo;
 ```
 
 MediaCodec Output Format information. 
@@ -2537,7 +2541,7 @@ MediaCodec Output Format information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2547,7 +2551,7 @@ MediaCodec Output Format information.
 ### MLMediaCodecErrorInfo {#struct-mlmediacodecerrorinfo}
 
 ```cpp
-typedef struct MLMediaCodecErrorInfo  MLMediaCodecErrorInfo;
+typedef struct MLMediaCodecErrorInfo MLMediaCodecErrorInfo;
 ```
 
 MediaCodec Output Format information. 
@@ -2558,7 +2562,7 @@ MediaCodec Output Format information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2568,7 +2572,7 @@ MediaCodec Output Format information.
 ### MLMediaCodecCallbacksEx {#struct-mlmediacodeccallbacksex}
 
 ```cpp
-typedef struct MLMediaCodecCallbacksEx  MLMediaCodecCallbacksEx;
+typedef struct MLMediaCodecCallbacksEx MLMediaCodecCallbacksEx;
 ```
 
 Callbacks for notifying asynchronously of various codec events to the user/client. If user intends to use codec in asynchronous mode, then the user/client is expected to implement these callbacks and take proper actions where appropriate. 
@@ -2579,7 +2583,7 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2589,7 +2593,7 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 ### MLMediaCodecFrameRenderedInfo {#struct-mlmediacodecframerenderedinfo}
 
 ```cpp
-typedef struct MLMediaCodecFrameRenderedInfo  MLMediaCodecFrameRenderedInfo;
+typedef struct MLMediaCodecFrameRenderedInfo MLMediaCodecFrameRenderedInfo;
 ```
 
 MediaCodec Output Frame Rendered information. 
@@ -2600,7 +2604,7 @@ MediaCodec Output Frame Rendered information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2610,7 +2614,7 @@ MediaCodec Output Frame Rendered information.
 ### MLMediaCodecOutputFrameListener {#struct-mlmediacodecoutputframelistener}
 
 ```cpp
-typedef struct MLMediaCodecOutputFrameListener  MLMediaCodecOutputFrameListener;
+typedef struct MLMediaCodecOutputFrameListener MLMediaCodecOutputFrameListener;
 ```
 
 Callbacks for notifying when an output frame is available for consumption or has been rendered on the output surface. 
@@ -2621,7 +2625,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2631,7 +2635,7 @@ Callbacks for notifying when an output frame is available for consumption or has
 ### MLMediaCodecCryptoPattern {#struct-mlmediacodeccryptopattern}
 
 ```cpp
-typedef struct MLMediaCodecCryptoPattern  MLMediaCodecCryptoPattern;
+typedef struct MLMediaCodecCryptoPattern MLMediaCodecCryptoPattern;
 ```
 
 Metadata describing an encryption pattern for the protected bytes in a subsample. 
@@ -2642,7 +2646,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2652,7 +2656,7 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 ### MLMediaCodecCryptoInfo {#struct-mlmediacodeccryptoinfo}
 
 ```cpp
-typedef struct MLMediaCodecCryptoInfo  MLMediaCodecCryptoInfo;
+typedef struct MLMediaCodecCryptoInfo MLMediaCodecCryptoInfo;
 ```
 
 Metadata describing the structure of a (at least partially) encrypted input sample. A buffer's data is considered to be partitioned into "subSamples", each subSample starts with a (potentially empty) run of plain, unencrypted bytes followed by a (also potentially empty) run of encrypted bytes. If pattern encryption applies, each of the encrypted runs is encrypted only partly, according to a repeating pattern of "encrypt" and "skip" blocks. This information encapsulates per-sample metadata as outlined in ISO/IEC FDIS 23001-7:2011 "Common encryption in ISO base media file format files". 
@@ -2663,7 +2667,7 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2673,7 +2677,7 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 ### MLMediaCodecListQueryResults {#struct-mlmediacodeclistqueryresults}
 
 ```cpp
-typedef struct MLMediaCodecListQueryResults  MLMediaCodecListQueryResults;
+typedef struct MLMediaCodecListQueryResults MLMediaCodecListQueryResults;
 ```
 
 
@@ -2690,7 +2694,7 @@ Used to store the list of available codec names or the list of supported mime ty
 ### MLMediaCodecListProfileLevel {#struct-mlmediacodeclistprofilelevel}
 
 ```cpp
-typedef struct MLMediaCodecListProfileLevel  MLMediaCodecListProfileLevel;
+typedef struct MLMediaCodecListProfileLevel MLMediaCodecListProfileLevel;
 ```
 
 Used to store the list of codec profile levels. 
@@ -2701,7 +2705,7 @@ Used to store the list of codec profile levels.
 
 
 **API Level:**
-  * 6 
+  * 6
 
 
 
@@ -2782,24 +2786,10 @@ Called before deleting |this|. The other methods may return errors if they're ca
 
 -----------
 
-### MLMediaDRMProperty {#const-char-mlmediadrmproperty}
-
-```cpp
-typedef const char* MLMediaDRMProperty;
-```
-
-
-
-
-
-
-
------------
-
 ### MLMediaDRMByteArray {#struct-mlmediadrmbytearray}
 
 ```cpp
-typedef struct MLMediaDRMByteArray  MLMediaDRMByteArray;
+typedef struct MLMediaDRMByteArray MLMediaDRMByteArray;
 ```
 
 
@@ -2816,7 +2806,7 @@ Data type containing byte array buffer and the size.
 ### MLMediaDRMByteArrayList {#struct-mlmediadrmbytearraylist}
 
 ```cpp
-typedef struct MLMediaDRMByteArrayList  MLMediaDRMByteArrayList;
+typedef struct MLMediaDRMByteArrayList MLMediaDRMByteArrayList;
 ```
 
 
@@ -2833,11 +2823,11 @@ Data type containing list of byte array buffers and the size.
 ### MLMediaDRMKeyValue {#struct-mlmediadrmkeyvalue}
 
 ```cpp
-typedef struct MLMediaDRMKeyValue  MLMediaDRMKeyValue;
+typedef struct MLMediaDRMKeyValue MLMediaDRMKeyValue;
 ```
 
 
-Data type containing {key, value} pair. 
+Data type containing key/value pair. 
 
 
 
@@ -2850,11 +2840,11 @@ Data type containing {key, value} pair.
 ### MLMediaDRMKeyValueArray {#struct-mlmediadrmkeyvaluearray}
 
 ```cpp
-typedef struct MLMediaDRMKeyValueArray  MLMediaDRMKeyValueArray;
+typedef struct MLMediaDRMKeyValueArray MLMediaDRMKeyValueArray;
 ```
 
 
-Data type containing array of {key, value} pair. 
+Data type containing array of key/value pair. 
 
 
 
@@ -2867,7 +2857,7 @@ Data type containing array of {key, value} pair.
 ### MLMediaDRMKeyRequestInputParam {#struct-mlmediadrmkeyrequestinputparam}
 
 ```cpp
-typedef struct MLMediaDRMKeyRequestInputParam  MLMediaDRMKeyRequestInputParam;
+typedef struct MLMediaDRMKeyRequestInputParam MLMediaDRMKeyRequestInputParam;
 ```
 
 
@@ -2884,7 +2874,7 @@ Data type that encapsulates Key Request input arguments.
 ### MLMediaDRMRequestMessage {#struct-mlmediadrmrequestmessage}
 
 ```cpp
-typedef struct MLMediaDRMRequestMessage  MLMediaDRMRequestMessage;
+typedef struct MLMediaDRMRequestMessage MLMediaDRMRequestMessage;
 ```
 
 Data type that encapsulates either of the following along with an URL: 
@@ -2904,7 +2894,7 @@ For Provision Request Message: an opaque provision request byte array that shoul
 ### MLMediaDRMCryptoInputParam {#struct-mlmediadrmcryptoinputparam}
 
 ```cpp
-typedef struct MLMediaDRMCryptoInputParam  MLMediaDRMCryptoInputParam;
+typedef struct MLMediaDRMCryptoInputParam MLMediaDRMCryptoInputParam;
 ```
 
 
@@ -2921,7 +2911,7 @@ Data type that encapsulates algorithm, key_set_id and IV for Encryption/Decrypti
 ### MLMediaDRMHMACInputParam {#struct-mlmediadrmhmacinputparam}
 
 ```cpp
-typedef struct MLMediaDRMHMACInputParam  MLMediaDRMHMACInputParam;
+typedef struct MLMediaDRMHMACInputParam MLMediaDRMHMACInputParam;
 ```
 
 
@@ -2938,7 +2928,7 @@ Data type that encapsulates algorithm, key_set_id for HMAC based Sign/Verify.
 ### MLMediaDRMRSAInputParam {#struct-mlmediadrmrsainputparam}
 
 ```cpp
-typedef struct MLMediaDRMRSAInputParam  MLMediaDRMRSAInputParam;
+typedef struct MLMediaDRMRSAInputParam MLMediaDRMRSAInputParam;
 ```
 
 
@@ -2955,7 +2945,7 @@ Data type that encapsulates algorithm, wrapped_key for RSA operation.
 ### MLMediaDRMEventInfo {#struct-mlmediadrmeventinfo}
 
 ```cpp
-typedef struct MLMediaDRMEventInfo  MLMediaDRMEventInfo;
+typedef struct MLMediaDRMEventInfo MLMediaDRMEventInfo;
 ```
 
 MediaDRM event info associated with a session. 
@@ -2966,7 +2956,7 @@ MediaDRM event info associated with a session.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2976,7 +2966,7 @@ MediaDRM event info associated with a session.
 ### MLMediaDRMExpirationUpdateInfo {#struct-mlmediadrmexpirationupdateinfo}
 
 ```cpp
-typedef struct MLMediaDRMExpirationUpdateInfo  MLMediaDRMExpirationUpdateInfo;
+typedef struct MLMediaDRMExpirationUpdateInfo MLMediaDRMExpirationUpdateInfo;
 ```
 
 MediaDRM expiration update info associated with a session. 
@@ -2987,7 +2977,7 @@ MediaDRM expiration update info associated with a session.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -2997,7 +2987,7 @@ MediaDRM expiration update info associated with a session.
 ### MLMediaDRMKeyStatus {#struct-mlmediadrmkeystatus}
 
 ```cpp
-typedef struct MLMediaDRMKeyStatus  MLMediaDRMKeyStatus;
+typedef struct MLMediaDRMKeyStatus MLMediaDRMKeyStatus;
 ```
 
 MediaDRM key status. 
@@ -3008,7 +2998,7 @@ MediaDRM key status.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3018,7 +3008,7 @@ MediaDRM key status.
 ### MLMediaDRMKeyStatusInfo {#struct-mlmediadrmkeystatusinfo}
 
 ```cpp
-typedef struct MLMediaDRMKeyStatusInfo  MLMediaDRMKeyStatusInfo;
+typedef struct MLMediaDRMKeyStatusInfo MLMediaDRMKeyStatusInfo;
 ```
 
 MediaDRM session keys status change info. 
@@ -3029,7 +3019,7 @@ MediaDRM session keys status change info.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3039,7 +3029,7 @@ MediaDRM session keys status change info.
 ### MLMediaDRMEventCallbacks {#struct-mlmediadrmeventcallbacks}
 
 ```cpp
-typedef struct MLMediaDRMEventCallbacks  MLMediaDRMEventCallbacks;
+typedef struct MLMediaDRMEventCallbacks MLMediaDRMEventCallbacks;
 ```
 
 Callbacks for notifying client about MLMediaDRM events. 
@@ -3052,7 +3042,7 @@ User of MLMediaDRM should implement this.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3077,7 +3067,7 @@ typedef MLPSSHEntry MLMediaExtractorPSSHEntry;
 ### MLMediaExtractorDRMSchemeInitData {#struct-mlmediaextractordrmschemeinitdata}
 
 ```cpp
-typedef struct MLMediaExtractorDRMSchemeInitData  MLMediaExtractorDRMSchemeInitData;
+typedef struct MLMediaExtractorDRMSchemeInitData MLMediaExtractorDRMSchemeInitData;
 ```
 
 
@@ -3094,7 +3084,7 @@ DRM Scheme initialization data.
 ### MLMediaFormatByteArray {#struct-mlmediaformatbytearray}
 
 ```cpp
-typedef struct MLMediaFormatByteArray  MLMediaFormatByteArray;
+typedef struct MLMediaFormatByteArray MLMediaFormatByteArray;
 ```
 
 
@@ -3108,24 +3098,10 @@ Data type containing byte array buffer and the size.
 
 -----------
 
-### MLMediaFormatKey {#const-char-mlmediaformatkey}
-
-```cpp
-typedef const char* MLMediaFormatKey;
-```
-
-
-
-
-
-
-
------------
-
 ### MLMediaMuxerSampleData {#struct-mlmediamuxersampledata}
 
 ```cpp
-typedef struct MLMediaMuxerSampleData  MLMediaMuxerSampleData;
+typedef struct MLMediaMuxerSampleData MLMediaMuxerSampleData;
 ```
 
 Data type that encapsulates sample data to be written in to MLMediaMuxer. 
@@ -3136,7 +3112,7 @@ Data type that encapsulates sample data to be written in to MLMediaMuxer.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3161,7 +3137,7 @@ typedef MLPSSHEntry MLMediaPlayerPSSHEntry;
 ### MLMediaPlayerTrackDRMInfo {#struct-mlmediaplayertrackdrminfo}
 
 ```cpp
-typedef struct MLMediaPlayerTrackDRMInfo  MLMediaPlayerTrackDRMInfo;
+typedef struct MLMediaPlayerTrackDRMInfo MLMediaPlayerTrackDRMInfo;
 ```
 
 MediaPlayer DRM Info for a Media Track. 
@@ -3172,7 +3148,7 @@ MediaPlayer DRM Info for a Media Track.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3182,7 +3158,7 @@ MediaPlayer DRM Info for a Media Track.
 ### MLMediaPlayerSubtitleData {#struct-mlmediaplayersubtitledata}
 
 ```cpp
-typedef struct MLMediaPlayerSubtitleData  MLMediaPlayerSubtitleData;
+typedef struct MLMediaPlayerSubtitleData MLMediaPlayerSubtitleData;
 ```
 
 
@@ -3199,7 +3175,7 @@ MediaPlayer subtitle data.
 ### MLMediaPlayerBufferingSettings {#struct-mlmediaplayerbufferingsettings}
 
 ```cpp
-typedef struct MLMediaPlayerBufferingSettings  MLMediaPlayerBufferingSettings;
+typedef struct MLMediaPlayerBufferingSettings MLMediaPlayerBufferingSettings;
 ```
 
 
@@ -3216,7 +3192,7 @@ Indicate the buffering settings.
 ### MLMediaPlayerOnBufferingUpdateInfo {#struct-mlmediaplayeronbufferingupdateinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnBufferingUpdateInfo  MLMediaPlayerOnBufferingUpdateInfo;
+typedef struct MLMediaPlayerOnBufferingUpdateInfo MLMediaPlayerOnBufferingUpdateInfo;
 ```
 
 MediaPlayer Buffering update callback Info. 
@@ -3227,7 +3203,7 @@ MediaPlayer Buffering update callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3237,7 +3213,7 @@ MediaPlayer Buffering update callback Info.
 ### MLMediaPlayerOnCompletionInfo {#struct-mlmediaplayeroncompletioninfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnCompletionInfo  MLMediaPlayerOnCompletionInfo;
+typedef struct MLMediaPlayerOnCompletionInfo MLMediaPlayerOnCompletionInfo;
 ```
 
 MediaPlayer Playback completion callback Info. 
@@ -3248,7 +3224,7 @@ MediaPlayer Playback completion callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3258,7 +3234,7 @@ MediaPlayer Playback completion callback Info.
 ### MLMediaPlayerOnErrorInfo {#struct-mlmediaplayeronerrorinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnErrorInfo  MLMediaPlayerOnErrorInfo;
+typedef struct MLMediaPlayerOnErrorInfo MLMediaPlayerOnErrorInfo;
 ```
 
 MediaPlayer Error callback Info. 
@@ -3269,7 +3245,7 @@ MediaPlayer Error callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3279,7 +3255,7 @@ MediaPlayer Error callback Info.
 ### MLMediaPlayerOnInfoInfo {#struct-mlmediaplayeroninfoinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnInfoInfo  MLMediaPlayerOnInfoInfo;
+typedef struct MLMediaPlayerOnInfoInfo MLMediaPlayerOnInfoInfo;
 ```
 
 MediaPlayer Information callback Info. 
@@ -3290,7 +3266,7 @@ MediaPlayer Information callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3300,7 +3276,7 @@ MediaPlayer Information callback Info.
 ### MLMediaPlayerOnPreparedInfo {#struct-mlmediaplayeronpreparedinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnPreparedInfo  MLMediaPlayerOnPreparedInfo;
+typedef struct MLMediaPlayerOnPreparedInfo MLMediaPlayerOnPreparedInfo;
 ```
 
 MediaPlayer Playback prepared callback Info. 
@@ -3311,7 +3287,7 @@ MediaPlayer Playback prepared callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3321,7 +3297,7 @@ MediaPlayer Playback prepared callback Info.
 ### MLMediaPlayerOnSeekCompleteInfo {#struct-mlmediaplayeronseekcompleteinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnSeekCompleteInfo  MLMediaPlayerOnSeekCompleteInfo;
+typedef struct MLMediaPlayerOnSeekCompleteInfo MLMediaPlayerOnSeekCompleteInfo;
 ```
 
 MediaPlayer Playback seek completion callback Info. 
@@ -3332,7 +3308,7 @@ MediaPlayer Playback seek completion callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3342,7 +3318,7 @@ MediaPlayer Playback seek completion callback Info.
 ### MLMediaPlayerOnVideoSizeChangedInfo {#struct-mlmediaplayeronvideosizechangedinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnVideoSizeChangedInfo  MLMediaPlayerOnVideoSizeChangedInfo;
+typedef struct MLMediaPlayerOnVideoSizeChangedInfo MLMediaPlayerOnVideoSizeChangedInfo;
 ```
 
 MediaPlayer Video Size Changed callback Info. 
@@ -3353,7 +3329,7 @@ MediaPlayer Video Size Changed callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3363,7 +3339,7 @@ MediaPlayer Video Size Changed callback Info.
 ### MLMediaPlayerOnTrackDRMInfo {#struct-mlmediaplayerontrackdrminfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnTrackDRMInfo  MLMediaPlayerOnTrackDRMInfo;
+typedef struct MLMediaPlayerOnTrackDRMInfo MLMediaPlayerOnTrackDRMInfo;
 ```
 
 MediaPlayer Track DRM Info callback Info. 
@@ -3374,7 +3350,7 @@ MediaPlayer Track DRM Info callback Info.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3384,7 +3360,7 @@ MediaPlayer Track DRM Info callback Info.
 ### MLMediaPlayerOnResetCompleteInfo {#struct-mlmediaplayeronresetcompleteinfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnResetCompleteInfo  MLMediaPlayerOnResetCompleteInfo;
+typedef struct MLMediaPlayerOnResetCompleteInfo MLMediaPlayerOnResetCompleteInfo;
 ```
 
 MediaPlayer reset completion callback Info. 
@@ -3395,7 +3371,7 @@ MediaPlayer reset completion callback Info.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -3405,7 +3381,7 @@ MediaPlayer reset completion callback Info.
 ### MLMediaPlayerOnFramePackingInfo {#struct-mlmediaplayeronframepackinginfo}
 
 ```cpp
-typedef struct MLMediaPlayerOnFramePackingInfo  MLMediaPlayerOnFramePackingInfo;
+typedef struct MLMediaPlayerOnFramePackingInfo MLMediaPlayerOnFramePackingInfo;
 ```
 
 MediaPlayer frame packing callback Info. 
@@ -3416,7 +3392,7 @@ MediaPlayer frame packing callback Info.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -3426,7 +3402,7 @@ MediaPlayer frame packing callback Info.
 ### MLMediaPlayerEventCallbacksEx {#struct-mlmediaplayereventcallbacksex}
 
 ```cpp
-typedef struct MLMediaPlayerEventCallbacksEx  MLMediaPlayerEventCallbacksEx;
+typedef struct MLMediaPlayerEventCallbacksEx MLMediaPlayerEventCallbacksEx;
 ```
 
 Callbacks for notifying client about [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) error events. 
@@ -3439,7 +3415,7 @@ Those are async mechanisms that should not be used in parallel with their sync c
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -3449,7 +3425,7 @@ Those are async mechanisms that should not be used in parallel with their sync c
 ### MLMediaPlayerTrackInfo {#struct-mlmediaplayertrackinfo}
 
 ```cpp
-typedef struct MLMediaPlayerTrackInfo  MLMediaPlayerTrackInfo;
+typedef struct MLMediaPlayerTrackInfo MLMediaPlayerTrackInfo;
 ```
 
 MediaPlayer Track Information. 
@@ -3460,7 +3436,7 @@ MediaPlayer Track Information.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3470,7 +3446,7 @@ MediaPlayer Track Information.
 ### MLMediaPlayerTrackDRMSessionInfo {#struct-mlmediaplayertrackdrmsessioninfo}
 
 ```cpp
-typedef struct MLMediaPlayerTrackDRMSessionInfo  MLMediaPlayerTrackDRMSessionInfo;
+typedef struct MLMediaPlayerTrackDRMSessionInfo MLMediaPlayerTrackDRMSessionInfo;
 ```
 
 DRM Session information for a MediaPlayer Track. 
@@ -3481,7 +3457,7 @@ DRM Session information for a MediaPlayer Track.
 
 
 **API Level:**
-  * 2 
+  * 2
 
 
 
@@ -3545,7 +3521,7 @@ Callbacks signature called when Timed Text update is available.
 ### MLMediaPlayerMetrics {#struct-mlmediaplayermetrics}
 
 ```cpp
-typedef struct MLMediaPlayerMetrics  MLMediaPlayerMetrics;
+typedef struct MLMediaPlayerMetrics MLMediaPlayerMetrics;
 ```
 
 MediaPlayer metrics data. 
@@ -3556,7 +3532,7 @@ MediaPlayer metrics data.
 
 
 **API Level:**
-  * 8 
+  * 8
 
 
 
@@ -3589,7 +3565,7 @@ Signal that at least one buffer is now available. Application should then call g
 ### MLTTMLImage {#struct-mlttmlimage}
 
 ```cpp
-typedef struct MLTTMLImage  MLTTMLImage;
+typedef struct MLTTMLImage MLTTMLImage;
 ```
 
 Byte data for TTML image cues. 
@@ -3600,7 +3576,7 @@ Byte data for TTML image cues.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3610,7 +3586,7 @@ Byte data for TTML image cues.
 ### MLTTMLData {#struct-mlttmldata}
 
 ```cpp
-typedef struct MLTTMLData  MLTTMLData;
+typedef struct MLTTMLData MLTTMLData;
 ```
 
 TTML data structure. 
@@ -3621,7 +3597,7 @@ TTML data structure.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3631,7 +3607,7 @@ TTML data structure.
 ### MLPSSHEntry {#struct-mlpsshentry}
 
 ```cpp
-typedef struct MLPSSHEntry  MLPSSHEntry;
+typedef struct MLPSSHEntry MLPSSHEntry;
 ```
 
 
@@ -3648,7 +3624,7 @@ PSSH entry.
 ### MLWebVTTData {#struct-mlwebvttdata}
 
 ```cpp
-typedef struct MLWebVTTData  MLWebVTTData;
+typedef struct MLWebVTTData MLWebVTTData;
 ```
 
 WebVTT data structure. 
@@ -3659,7 +3635,7 @@ WebVTT data structure.
 
 
 **API Level:**
-  * 4 
+  * 4
 
 
 
@@ -3669,7 +3645,7 @@ WebVTT data structure.
 ### MLNativeSurfaceFrameAvailableInfo {#struct-mlnativesurfaceframeavailableinfo}
 
 ```cpp
-typedef struct MLNativeSurfaceFrameAvailableInfo  MLNativeSurfaceFrameAvailableInfo;
+typedef struct MLNativeSurfaceFrameAvailableInfo MLNativeSurfaceFrameAvailableInfo;
 ```
 
 NativeSurface/NativeSurfaceTexture Output Frame Availability information. 
@@ -3680,7 +3656,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3690,7 +3666,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.
 ### MLNativeSurfaceConfig {#struct-mlnativesurfaceconfig}
 
 ```cpp
-typedef struct MLNativeSurfaceConfig  MLNativeSurfaceConfig;
+typedef struct MLNativeSurfaceConfig MLNativeSurfaceConfig;
 ```
 
 Configuration values for creating the Native Surface. 
@@ -3701,7 +3677,7 @@ Configuration values for creating the Native Surface.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -3711,7 +3687,7 @@ Configuration values for creating the Native Surface.
 ### MLNativeSurfaceOnFrameAvailableCallback {#struct-mlnativesurfaceonframeavailablecallback}
 
 ```cpp
-typedef struct MLNativeSurfaceOnFrameAvailableCallback  MLNativeSurfaceOnFrameAvailableCallback;
+typedef struct MLNativeSurfaceOnFrameAvailableCallback MLNativeSurfaceOnFrameAvailableCallback;
 ```
 
 Callbacks for notifying when an output frame is available for consumption. 
@@ -3722,7 +3698,7 @@ Callbacks for notifying when an output frame is available for consumption.
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -6502,14 +6478,14 @@ MLResult MLMediaDRMKeyValueArrayAllocate(
 )
 ```
 
-Allocate array of {key, value} pairs. 
+Allocate array of key/value pairs. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| size_t |size|Maximum size of the desirable array of {key, value} pair to be allocated. |
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
+| size_t |size|Maximum size of the desirable array of key/value pair to be allocated. |
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of key/value pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
 
 **Returns**
 
@@ -6517,7 +6493,7 @@ Allocate array of {key, value} pairs.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array is allocated successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Key/value pair array is allocated successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -6581,7 +6557,7 @@ Release the MLMediaDRM instance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM.|
 
 **Returns**
 
@@ -6677,20 +6653,20 @@ MLResult MLMediaDRMKeyValueArrayRelease(
 )
 ```
 
-Release {key, value} pair array. 
+Release key/value pair array. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|{key, value} pair array that needs to be released.|
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|Key/value pair array that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array was released successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Key/value pair array was released successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -6746,21 +6722,21 @@ MLResult MLMediaDRMKeyValueArrayAdd(
 )
 ```
 
-Add a {key, value} pair to the array of {key, value} pairs. 
+Add a key/value pair to the array of key/value pairs. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source {key, value} pair that needs to be added. |
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair to which the pair needs to be added to.|
+| const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source key/value pair that needs to be added. |
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of key/value pair to which the pair needs to be added to.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair is added successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|key/value pair is added successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -6827,7 +6803,7 @@ Register a callback to be invoked when DRM events or updates or status change oc
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
 | void * |data|Custom data to be returned when any callback is fired.|
 
@@ -6869,7 +6845,7 @@ Opens a new session. A session ID is returned.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_session_id|ID of the session created/opened. This byte array will be released when [MLMediaDRMCloseSession()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmclosesession) is called.|
 
 **Returns**
@@ -6905,7 +6881,7 @@ Closes a session on the MLMediaDRM object that was previously opened with openSe
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session, which will be released on return.|
 
 **Returns**
@@ -6943,7 +6919,7 @@ A key request/response exchange occurs between the app and a license server to o
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMKeyRequestInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_request_input_param.md) * |key_request_param|Placeholder for needed arguments for generating a key request message. |
 | [MLMediaDRMRequestMessage](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_key_request|Upon successful return, contains key request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
@@ -6987,7 +6963,7 @@ A key response is received from the license server by the app, then it is provid
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque response from the server. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_key_set_id|Upon successful return, contains the key identifier. To free/release this buffer, call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
@@ -7028,7 +7004,7 @@ Restore persisted offline keys into a new session. key_set_id identifies the key
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The saved key set to restore.|
 
@@ -7065,7 +7041,7 @@ Remove the current keys from a session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |key_set_id|The keys to remove, which will be released on success.|
 
 **Returns**
@@ -7102,7 +7078,7 @@ Request an informative description of the key status for the session.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_info_map|The Key-Value pair place-holder for the key status. To release/free this call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
 
@@ -7118,7 +7094,7 @@ Request an informative description of the key status for the session.
   * None 
 
 
-The status is in the form of {key, value} pairs. Since DRM license policies vary by vendor, the specific status field names are determined by each DRM vendor. Refer to your DRM provider documentation for definitions of the field names for a particular DRM engine plugin.
+The status is in the form of key/value pairs. Since DRM license policies vary by vendor, the specific status field names are determined by each DRM vendor. Refer to your DRM provider documentation for definitions of the field names for a particular DRM engine plugin.
 
 
 
@@ -7142,7 +7118,7 @@ A provision request/response exchange occurs between the app and a provisioning 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const char * |cert_type|The device certificate type, which can be "none" or "X.509". |
 | [MLMediaDRMRequestMessage](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * |out_provision_request|Upon successful return, contains provision request message. To free/release this, call [MLMediaDRMRequestMessageRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease).|
 
@@ -7183,7 +7159,7 @@ After a provision response is received by the app, it is provided to the DRM eng
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |response|The opaque provisioning response byte array to provide to the DRM engine plugin. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_certificate|The device certificate upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease). |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_wrapped_key|The wrapped device key upon sucessful return. To release/free this call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
@@ -7221,7 +7197,7 @@ Access all secure stops.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * |out_secure_stops|List of all the secure stops upon successful return. To free/release call [MLMediaDRMByteArrayListRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearraylistrelease).|
 
 **Returns**
@@ -7268,7 +7244,7 @@ Access secure stop by secure stop ID.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |ss_id|The ID for the DRM securestop session. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_secure_stop|The secure stop upon successful return. To free/release call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
@@ -7301,13 +7277,13 @@ MLResult MLMediaDRMReleaseSecureStops(
 )
 ```
 
-Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response. 
+Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response. See [MLMediaDRMGetSecureStops()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops) for details. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |secure_stop|The server response indicating which secure stops to release.|
 
 **Returns**
@@ -7323,8 +7299,6 @@ Process the SecureStop server response message. After authenticating the message
 
 
 
-
-**See**: [MLMediaDRMGetSecureStops()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetsecurestops).
 
 
 
@@ -7344,7 +7318,7 @@ Remove all the SecureStops.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM.|
 
 **Returns**
 
@@ -7382,13 +7356,13 @@ Read a DRM engine plugin String property value, given the property name.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_Vendor
-* MLMediaDRMProperty_Version
-* MLMediaDRMProperty_Description
-* MLMediaDRMProperty_Algorithms |
+* MLMediaDRMProperty_Vendor.
+* MLMediaDRMProperty_Version.
+* MLMediaDRMProperty_Description.
+* MLMediaDRMProperty_Algorithms. |
 | char ** |out_property_value|The property value upon successful return. Ownership is passed, call free(*out_property_value) to free it.|
 
 **Returns**
@@ -7425,10 +7399,10 @@ Read a DRM engine plugin byte array property value, given the property name.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_DeviceUniqueID |
+* MLMediaDRMProperty_DeviceUniqueID. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_property_value|The property value upon successful return. To release/free call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
@@ -7465,13 +7439,13 @@ Set a DRM engine plugin String property value.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_Vendor
-* MLMediaDRMProperty_Version
-* MLMediaDRMProperty_Description
-* MLMediaDRMProperty_Algorithms |
+* MLMediaDRMProperty_Vendor.
+* MLMediaDRMProperty_Version.
+* MLMediaDRMProperty_Description.
+* MLMediaDRMProperty_Algorithms. |
 | const char * |property_value|The value of the corresponding property.|
 
 **Returns**
@@ -7508,10 +7482,10 @@ Set a DRM engine plugin byte array property value.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
-| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
+| [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_DeviceUniqueID |
+* MLMediaDRMProperty_DeviceUniqueID. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |property_value|The value of the corresponding property.|
 
 **Returns**
@@ -7550,7 +7524,7 @@ Encrypt the data referenced by input using algorithm if specified, and write the
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for encryption operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be encrypted. |
@@ -7594,7 +7568,7 @@ Decrypt the data referenced by input using algorithm if specified, and write the
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMCryptoInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md) * |crypto_key_param|Pointer to the structure that contains needed crypto arguments for decryption operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |input|The data that needs to be decrypted. |
@@ -7638,7 +7612,7 @@ Generate a signature using the specified algorithm (if provided) over the messag
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
@@ -7683,7 +7657,7 @@ Perform a signature verification using the specified algorithm (if specified) ov
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) * |hmac_key_param|Pointer to the structure that contains needed crypto arguments for HMAC operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data for which signature needs to be verified. |
@@ -7728,7 +7702,7 @@ Generate a signature using the specified RSA Key and algorithm.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaDRM. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |session_id|The session ID for the DRM session. |
 | const [MLMediaDRMRSAInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md) * |rsa_key_param|Pointer to the structure that contains needed key arguments for this RSA operation. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |message|The data that needs to be signed. |
@@ -7741,8 +7715,12 @@ Generate a signature using the specified RSA Key and algorithm.
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM RSA Sign operation has been completed successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |||
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+**Required Permissions**:
+
+  * None 
+
+
 
 
 
@@ -9013,7 +8991,7 @@ Obtain the value of an integer key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | int32_t * |out_key|Value of the key.|
 
 **Returns**
@@ -9054,7 +9032,7 @@ Obtain the value of a long key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | int64_t * |out_key|Value of the key.|
 
 **Returns**
@@ -9095,7 +9073,7 @@ Obtain the value of an float key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | float * |out_key|Value of the key.|
 
 **Returns**
@@ -9134,7 +9112,7 @@ Obtain the size of a key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | size_t * |out_size|Size of the key.|
 
 **Returns**
@@ -9173,7 +9151,7 @@ Obtain the value of a string key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | char * |out_string|Pointer to the C-string representation of the string key.|
 
 **Returns**
@@ -9214,7 +9192,7 @@ Obtain the value of a ByteBuffer key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |out_buffer|Pointer to byte buffer that needs to be allocated and copied to. To free/release, call [MLMediaFormatKeyByteBufferRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatkeybytebufferrelease).|
 
 **Returns**
@@ -9289,7 +9267,7 @@ Set the value of an integer key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | int32_t |key_value|Key value.|
 
 **Returns**
@@ -9327,7 +9305,7 @@ Set the value of a long key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | int64_t |key_value|Key value.|
 
 **Returns**
@@ -9365,7 +9343,7 @@ Set the value of a float key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | float |key_value|Key value.|
 
 **Returns**
@@ -9403,7 +9381,7 @@ Set the size of a key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | size_t |key_size|Key size.|
 
 **Returns**
@@ -9441,7 +9419,7 @@ Set the value of a string key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | const char * |key_value|C-string representation of key value.|
 
 **Returns**
@@ -9479,7 +9457,7 @@ Set the value of a ByteBuffer key.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat object. |
-| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-char-mlmediaformatkey) tags defined above. |
+| [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) |name|C-string representation of the key. Must be one of the [MLMediaFormatKey](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediaformatkey) tags defined above. |
 | const [MLMediaFormatByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md) * |buffer|Pointer to the data buffer for the corresponding key.|
 
 **Returns**
@@ -9753,35 +9731,24 @@ Add a track with given format information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Handle to the MLMediaMuxer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_format|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat that contains the track's format. |
-| size_t * |out_track_index|Upon successful return, this will conatin the index of the track added.|
-
-**Returns**
-
-|  |   |   |
-|--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If the operation completes successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|The operation is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_Unsupported|If one of the keys in the format is not supported.|
-**Required Permissions**:
-
-  * None 
-
-
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_muxer|Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not. |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_format|Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not. |
+| size_t * |out_track_index||
 This should be called before [MLMediaMuxerStart()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerstart) and after [MLMediaMuxerConfigure](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxerconfigure).
 
-The following media format keys are supported for Audio/Video and Metadata tracks. 
+The following media format keys are supported for Audio/Video and Metadata tracks.
+
+
 
 ------------------
 
 
-# | Audio Track | Video Track | Metadata Track | 
+# | Audio Track                     | Video Track                       | Metadata Track         |
 
 | MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | MLMediaFormat_Key_Mime | | MLMediaFormat_Key_Sample_Rate | MLMediaFormat_Key_Width | | | MLMediaFormat_Key_Channel_Count | MLMediaFormat_Key_Height | | | MLMediaFormat_Key_CSD0 | MLMediaFormat_Key_Bt_Rate | | | MLMediaFormat_Key_CSD1 | MLMediaFormat_Key_Frame_Rate | | | | MLMediaFormat_Key_Color_Range | | | | MLMediaFormat_Key_Color_Standard | | | | MLMediaFormat_Key_Color_Transfer | | | | MLMediaFormat_Key_HDR_Static_Info | | | | MLMediaFormat_Key_CSD0 | | 
-# | | MLMediaFormat_Key_CSD1 | | 
+
+
+# |                                 | MLMediaFormat_Key_CSD1            |                        |
 
 [MLMediaMuxerGetSupportedMimes](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxergetsupportedmimes) can be used to query for all the supported MLMediaFormat_Key_Mime for a given Output Format.
 
@@ -9789,35 +9756,58 @@ While MLMediaFormat_Key_Mime is must for all tracks, some of the keys aren't man
 
 Requierment of providing csd (Codec Specific Data) through MediaFormat is optional for some audio/video mimes where as it is mandatory for some other ones (for example vorbis).
 
-With mp4 container following audio/video and metadata mime types can be supported. 
+With mp4 container following audio/video and metadata mime types can be supported.
+
+
 
 ------------------
 
 
-# | Audio Mimes | Video Mimes | Metadata Mimes | 
+# | Audio Mimes      | Video Mimes     | Metadata Mimes         |
 
 | audio/3gpp | video/3gpp | application/ | | audio/mp4a-latm | video/mp4v-es | image/vnd.android.heic | | audio/amr-wb | video/avc | | 
-# | | video/hevc | | 
 
-With Webm container following audio/video mime types can be supported. 
+
+# |                  | video/hevc      |                        |
+
+With Webm container following audio/video mime types can be supported.
+
+
 
 ------------------
 
 
-# | Audio Mimes | Video Mimes | 
+# | Audio Mimes      | Video Mimes           |
 
 | audio/vorbis | video/x-vnd.on2.vp8 | 
-# | audio/opus | video/x-vnd.on2.vp9 | 
+
+
+# | audio/opus       | video/x-vnd.on2.vp9   |
 
 With Ogg container, only supported mime is "audio/opus".
 
 If a mime passed through the MLMediaFormat is not supported, it will return MLMediaResult_Unsupported.
 
+API Level:\n 20
 
+media_muxerHandle to the MLMediaMuxer instance. 
 
+media_format[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLMediaFormat that contains the track's format. 
 
-**API Level:**
-  * 20
+out_track_indexUpon successful return, this will conatin the index of the track added.
+
+MLResult_InvalidParamOne of the parameters is invalid. 
+
+MLResult_OkIf the operation completes successfully. 
+
+MLResult_UnspecifiedFailureThe operation failed with an unspecified error. 
+
+MLMediaGenericResult_InvalidOperationThe operation is invalid. 
+
+MLMediaResult_UnsupportedIf one of the keys in the format is not supported.
+
+Required PermissionsNone 
+
 
 
 
@@ -11734,16 +11724,17 @@ Gets the handle of the audio stream.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current audio stream handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If used in versions starting 1.2.0 or later.|
 **Required Permissions**:
 
   * None 
 
 
 
+
+:::caution Deprecated
+Unsupported since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -11958,7 +11949,7 @@ Gets default Buffering settings.
   * None 
 
 
-The API is only implemented in ML1.
+\Attention The API is only implemented in ML1.
 
 
 
@@ -11997,7 +11988,7 @@ Gets current Buffering settings.
   * None 
 
 
-The API is only implemented in ML1.
+\Attention The API is only implemented in ML1.
 
 
 
@@ -12036,7 +12027,7 @@ Sets buffering settings.
   * None 
 
 
-The API is only implemented in ML1.
+\Attention The API is only implemented in ML1.
 
 
 
@@ -12650,9 +12641,9 @@ Gets an implementation of NativeWindow that feeds graphic buffers into MLNativeS
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MLNativeSurface instance. This handle can be:
 
-* Surface created on an Encoder using [MLMediaCodecCreateInputSurface](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface)
-* The output surface created using [MLNativeSurfaceCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate)
-* The output surface created using [MLNativeSurfaceTextureCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate)|
+* Surface created on an Encoder using [MLMediaCodecCreateInputSurface](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodeccreateinputsurface).
+* The output surface created using [MLNativeSurfaceCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate).
+* The output surface created using [MLNativeSurfaceTextureCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturecreate). |
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_native_window|Native window as MLHandle on success. |
 | int32_t * |out_format|Native window format on success and for valid pointer, which will be used as EGL_NATIVE_VISUAL_ID.|
 
@@ -13038,7 +13029,7 @@ Retrieves the cropping rectangle of the current frame/buffer.
   * None 
 
 
-The Frame crop is returned as {left, bottom, width, height}
+The Frame crop is returned as {left, bottom, width, height}.
 
 
 
@@ -13211,7 +13202,7 @@ Update the texture image to the most recent frame from the image stream.
   * None 
 
 
-May only be called on the thread with the graphic context that contains the texture object
+May only be called on the thread with the graphic context that contains the texture object.
 
 
 
@@ -13433,6 +13424,32 @@ Set callback to notify client when a frame is available.
 
 
 ## Attributes Documentation
+
+### MLMediaDRMProperty {#const-typedef-char-mlmediadrmproperty}
+
+```cpp
+const typedef char * MLMediaDRMProperty;
+```
+
+
+
+
+
+
+-----------
+
+### MLMediaFormatKey {#const-typedef-char-mlmediaformatkey}
+
+```cpp
+const typedef char * MLMediaFormatKey;
+```
+
+
+
+
+
+
+-----------
 
 ### MLAudioChannelOutMono {#const-int32-t-mlaudiochanneloutmono}
 
@@ -15474,14 +15491,14 @@ The associated value is a ByteBuffer containing HDR10+ metadata conforming to th
 
 
 
-* The formats of output buffers of a decoder configured for HDR10+ profiles (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus, MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::HEVCProfileMain10HDR10Plus ), or 
+* The formats of output buffers of a decoder configured for HDR10+ profiles (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus, MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::HEVCProfileMain10HDR10Plus), or 
 
 
-* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus ).
+* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus).
 
 
 
-**See**: MediaCodec::PARAMETER_KEY_HDR10_PLUS_INFO 
+**See**: MediaCodec::PARAMETER_KEY_HDR10_PLUS_INFO. 
 
 
 
@@ -15589,7 +15606,7 @@ MLMediaFormatKey MLMediaFormat_Key_Max_Bit_Rate;
 
 A key describing the max bitrate in bits/sec. 
 
-This is usually over a one-second sliding window (e.g. over any window of one second). The associated value is an integer.  
+This is usually over a one-second sliding window (e.g. over any window of one second). The associated value is an integer. \hide 
 
 
 
@@ -16131,7 +16148,7 @@ A key describing the system id of the conditional access system used to scramble
 
 This key is set by MLMediaExtractor if the track is scrambled with a conditional access system, regardless of the presence of a valid MediaCas object. 
 
-The associated value is an integer.  
+The associated value is an integer. \hide 
 
 
 
@@ -16149,7 +16166,7 @@ A key describing the MediaCas.Session object associated with a media track.
 
 This key is set by MLMediaExtractor if the track is scrambled with a conditional access system, after it receives a valid MediaCas} object. 
 
-The associated value is a ByteBuffer.  
+The associated value is a ByteBuffer. \hide 
 
 
 
@@ -16167,7 +16184,7 @@ A key describing the private data in the CA_descriptor associated with a media t
 
 This key is set by MLMediaExtractor if the track is scrambled with a conditional access system, before it receives a valid MediaCas object. 
 
-The associated value is a ByteBuffer.  
+The associated value is a ByteBuffer. \hide 
 
 
 
@@ -16191,7 +16208,7 @@ The associated value is an integer, where non-0 value means the feature is reque
 
   * MLMediaCodecList::findDecoderForFormat 
   * MLMediaCodecList::findEncoderForFormat 
-  * MLMediaCodecBitrateMode::isFormatSupported  
+  * MLMediaCodecBitrateMode::isFormatSupported \hide 
 
 
 
@@ -16204,13 +16221,13 @@ The associated value is an integer, where non-0 value means the feature is reque
 static const float MLTTMLDimen_Unset = -3.402823466e+38F;
 ```
 
-An unset position, width or size. 
+An unset position, width or size which is negative of maximum finite value of float (-FLT_MAX). 
 
 
 
 
 **API Level:**
-  * 20 
+  * 20
 
 
 
@@ -16370,47 +16387,41 @@ The cue line type.
 
 Note that it's particularly important to consider the effect of [line_anchor](/api-ref/api/Modules/group___media_player/group___media_player.md#mlttmlanchortype-line-anchor) when using [MLTTMLLineType_Number](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlttmllinetype-number).
 
-
-
 ```cpp
+
 (line == 0 && line_anchor == MLTTMLAnchorType_Start) 
 ```
 
  Positions a (potentially multi-line) cue at the very top of the viewport.
 
-
-
 ```cpp
+
 (line == -1 && line_anchor == MLTTMLAnchorType_EndD) 
 ```
 
  Positions a (potentially multi-line) cue at the very bottom of the viewport.
 
-
-
 ```cpp
+
 (line == 0 && line_anchor == MLTTMLAnchorType_End) 
 ```
 
- and 
+ and ```cpp
 
-```cpp
 (line == -1 && line_anchor == MLTTMLAnchorType_Start) 
 ```
 
  Position cues entirely outside of the viewport.
 
-
-
 ```cpp
+
 (line == 1 && line_anchor == MLTTMLAnchorType_End) 
 ```
 
  Positions a cue so that only the last line is visible at the top of the viewport.
 
-
-
 ```cpp
+
 (line == -2 && line_anchor == MLTTMLAnchorType_Start) 
 ```
 

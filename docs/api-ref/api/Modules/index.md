@@ -58,6 +58,8 @@ title: Module Index
 * **group [Perception](/api-ref/api/Modules/group___perception/group___perception.md)** <br></br>APIs for the Perception system. 
 * **group [Planes](/api-ref/api/Modules/group___planes/group___planes.md)** <br></br>APIs for the Planes system. 
 * **group [Platform](/api-ref/api/Modules/group___platform/group___platform.md)** <br></br>APIs for information regarding the platform. 
+* **group [Power Manager](/api-ref/api/Modules/group___power_manager/group___power_manager.md)** <br></br>Power Manager provides a set of power management APIs that allow applications to receive callbacks when the power state, properties or error conditions of components change, as well as APIs to get device components power state and properties, and to set certain component power states. 
+* **group [Space](/api-ref/api/Modules/group___space/group___space.md)** <br></br>APIs for Magic Leap Space. 
 * **group [Spatial Anchor](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md)** <br></br>APIs for managing Spatial Anchors. 
 * **group [System Notification Manager](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md)** 
 * **group [Time](/api-ref/api/Modules/group___time/group___time.md)** <br></br>APIs for the MLTime. 

@@ -319,6 +319,11 @@ public MLResult.Code MLWebViewGetScrollOffset(
 | out int |y|The number representing the vertical offset of the webview, in pixels.|
 
 
+**Details**
+
+
+TODO: To be removed due to deprecation. 
+
 
 
 
@@ -354,6 +359,11 @@ public MLResult.Code MLWebViewGetScrollSize(
 | out int |width|The number representing the entire width of the webview, in pixels.|
 | out int |height|The number representing the entire height of the webview, in pixels.|
 
+
+**Details**
+
+
+TODO: To be removed due to deprecation. 
 
 
 
@@ -1131,6 +1141,32 @@ MLResult.Code.WebViewResultZoomLimitReached if cannot zoom out any further.
 
 -----------
 
+### delegate bool OnBeforePopupCallback {#delegate-bool-onbeforepopupcallback}
+
+The delegate for the webview before popup event. 
+
+```csharp
+public delegate bool OnBeforePopupCallback(
+    string url,
+    IntPtr userData
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| string |url||
+| IntPtr |userData||
+
+
+
+
+
+
+-----------
+
 ### delegate void OnBeforeResourceLoadCallback {#delegate-void-onbeforeresourceloadcallback}
 
 The delegate for the before reasource loaded event. 
@@ -1289,6 +1325,60 @@ public delegate void OnLoadErrorCallback(
 | string |errorStr|The stringified version of the error code.|
 | string |failedUrl|The url that caused the load error.|
 | IntPtr |userData|User defined data.|
+
+
+
+
+
+
+-----------
+
+### delegate void OnPopupClosedCallback {#delegate-void-onpopupclosedcallback}
+
+The delegate for the webview popup closed event.    This callback is used to notify the application of a popup that is being closed. For example, this can happen if window.close() is used. This is not always called. If the application closes the popup itself, then this function is not called. An application should call MLWebViewDestroy as soon as possible on the popup's handle after receiving this callback. 
+
+```csharp
+public delegate void OnPopupClosedCallback(
+    ulong handle,
+    IntPtr userData
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle||
+| IntPtr |userData||
+
+
+
+
+
+
+-----------
+
+### delegate void OnPopupOpenedCallback {#delegate-void-onpopupopenedcallback}
+
+The delegate for the webview popup opened event. 
+
+```csharp
+public delegate void OnPopupOpenedCallback(
+    ulong popupID,
+    string url,
+    IntPtr userData
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |popupID||
+| string |url||
+| IntPtr |userData||
 
 
 
