@@ -1,6 +1,6 @@
 ---
 id: agora
-title: Building Live Video Streaming into your AR Experience on Magic Leap 2
+title: Building live video streaming into your AR experience on Magic Leap 2
 description: Using Agora with Magic Leap 2 in Unity
 sidebar_position: 0
 date: 06/14/2023
