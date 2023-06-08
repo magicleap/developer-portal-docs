@@ -1,9 +1,9 @@
 {
-  "label": "MRTK",
-  "position": 2,
+  "label": "Agora",
+  "position": 1,
   "collapsed": true,
   "link": {
     "type": "doc",
-      "id": "mrtk"
+      "id": "agora"
     }
 }
