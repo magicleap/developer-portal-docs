@@ -64,12 +64,6 @@ To get started as quickly as possible, refer to these simple setup steps for:
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 - [eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
 
-<!-- - SSH client - a key pair is required and can be generated using:
-
-```shell
-ssh-keygen -t rsa -b 4096
-``` -->
-
 ### Tools
 
 <Tabs groupId="operating-systems">
@@ -269,9 +263,29 @@ There should be 2 add-ons and their status should be ACTIVE.
 Update the Istio configuration for it to work with the
 [AWS LB controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/):
 
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
 ```shell
 sed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing\n\1  service.beta.kubernetes.io/aws-load-balancer-type: nlb\n\1\2#}' ./setup/istio.yaml
 ```
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+```shell
+sed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing\n\1  service.beta.kubernetes.io/aws-load-balancer-type: nlb\n\1\2#}' ./setup/istio.yaml
+```
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+```shell
+gsed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing\n\1  service.beta.kubernetes.io/aws-load-balancer-type: nlb\n\1\2#}' ./setup/istio.yaml
+```
+
+  </TabItem>
+</Tabs>
 
 Install Istio:
 

@@ -86,13 +86,11 @@ gcloud components install gke-gcloud-auth-plugin kubectl
 
 <InstallHelm />
 
-#### Install Kubernets
+#### Kubectl
 
 ```shell
 gcloud components install gke-gcloud-auth-plugin kubectl
 ```
-
-<!-- <DebianDependencies /> -->
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
@@ -103,6 +101,11 @@ gcloud components install gke-gcloud-auth-plugin kubectl
 
 <InstallHelmMacOS />
 
+#### Kubectl
+
+```shell
+gcloud components install gke-gcloud-auth-plugin kubectl
+```
 
   </TabItem>
 </Tabs>
