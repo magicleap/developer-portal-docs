@@ -2,7 +2,7 @@
 id: arcloud-deployment-customization
 title: AR Cloud Customization and Security
 sidebar_label: Customization and Security
-sidebar_position: 5
+sidebar_position: 6
 date: 02/07/2023
 tags: [ARCloud, Cloud, Kubernetes, Secure, PostgreSQL]
 keywords: [ARCloud, Cloud, Kubernetes, Secure, PostgreSQL]
