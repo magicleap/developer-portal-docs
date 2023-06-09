@@ -49,23 +49,52 @@ This example uses the `OnTrackingOriginChanged` event to reset the meshes create
 
 ## Polling Tracking Mode
 
-Most developers consider `MLHeadTracking.TrackingMode.Mode6DO` as the preferred state, this state means tracking is fully functional. Any other state means that the headset cannot track the environment.
+Developers should use `MLHeadTracking.HeadTrackingStatus.Valid` as the preferred state, this state means tracking is fully functional. 
 
 ```csharp
 ...
 var headDevice = InputSubsystem.Utils.FindMagicLeapDevice(
     InputDeviceCharacteristics.HeadMounted | InputDeviceCharacteristics.TrackedDevice);
 
-  if (InputSubsystem.Extensions.MLHeadTracking.TryGetState(
-    headDevice, out InputSubsystem.Extensions.MLHeadTracking.State state);
+  if (headDevice.isValid && InputSubsystem.Extensions.MLHeadTracking.TryGetStateEx(
+    headDevice, out InputSubsystem.Extensions.MLHeadTracking.StateEx state);
     {
-        switch (state.Mode)
+
+        Debug.Log($"Headpose Confidence: {state.Confidence:0.00}");
+
+        switch (state.Status)
         {
-            case InputSubsystem.Extensions.MLHeadTracking.TrackingMode.Mode6DO:
-                // Rotational and positional data is available
+            case InputSubsystem.Extensions.MLHeadTracking.HeadTrackingStatus.Invalid:
+                // Head tracking is unavailable.
                 break;
-            case InputSubsystem.Extensions.MLHeadTracking.TrackingMode.ModeUnavailable:
-                // Only rotational information is available
+            case InputSubsystem.Extensions.MLHeadTracking.HeadTrackingStatus.Initializing:
+                // Head tracking is initializing.
+                break;
+            case InputSubsystem.Extensions.MLHeadTracking.HeadTrackingStatus.Relocalizing:
+                // Head tracking is relocalizing.
+                break;
+            case InputSubsystem.Extensions.MLHeadTracking.HeadTrackingStatus.Valid:
+                // Valid head tracking data is available.
+                break;
+        }
+
+
+        switch (state.Error)
+        {
+            case InputSubsystem.Extensions.MLHeadTracking.TrackingErrorFlag.None :
+                // No error, tracking is nominal.
+                break;
+            case InputSubsystem.Extensions.MLHeadTracking.TrackingErrorFlag.Unknown:
+                // Head tracking failed for an unknown reason.
+                break;
+            case InputSubsystem.Extensions.MLHeadTracking.TrackingErrorFlag.NotEnoughFeatures:
+                // There are not enough features in the environment.
+                break;
+            case InputSubsystem.Extensions.MLHeadTracking.TrackingErrorFlag.LowLight:
+                // Lighting in the environment is not sufficient to track accurately.
+                break;
+            case InputSubsystem.Extensions.MLHeadTracking.TrackingErrorFlag.ExcessiveMotion :
+                // Head tracking failed due to excessive motion.
                 break;
         }
     }
@@ -115,7 +144,7 @@ using UnityEngine.XR.MagicLeap;
 
 // Unity Events that are visible in the inspector for Tracking Mode and MapEvents
 [System.Serializable]
-public class TrackingModeEvent : UnityEvent<InputSubsystem.Extensions.MLHeadTracking.TrackingMode> { }
+public class TrackingModeEvent : UnityEvent<InputSubsystem.Extensions.MLHeadTracking.StateEx, InputSubsystem.Extensions.MLHeadTracking.TrackingErrorFlag> { }
 [System.Serializable]
 public class MapStateEvent:UnityEvent<InputSubsystem.Extensions.MLHeadTracking.MapEvents>{}
 
@@ -124,14 +153,16 @@ public class MapStateEvent:UnityEvent<InputSubsystem.Extensions.MLHeadTracking.M
 /// </summary>
 public class TrackingEvents : MonoBehaviour
 {
-    //Called when the headset tracking changes from 6Dof to 3Dof
+    //Called when the headset tracking mode changes.
     public TrackingModeEvent OnTrackingModeChanged;
     //Called when the user loses localization in their environment
     public MapStateEvent OnMapStateChanged;
     //Cached version of the headset device
     private InputDevice _headsetDevice;
-    //The previously polled TrackingMode
-    private InputSubsystem.Extensions.MLHeadTracking.TrackingMode _currentTrackingState;
+    //The previously polled TrackingStatus
+    private InputSubsystem.Extensions.MLHeadTracking.HeadTrackingStatus _currentTrackingStatus;
+    //The previously polled TrackingError (if any)
+    private InputSubsystem.Extensions.MLHeadTracking.TrackingErrorFlag _currentTrackingError;
     //The previously polled mapping event, stored as an int due to a limitation in SDK v0.51.0.
     private int _currentMapEvent;
 
@@ -153,13 +184,14 @@ public class TrackingEvents : MonoBehaviour
     /// </summary>
     private void PollTrackingState()
     {
-        if (InputSubsystem.Extensions.MLHeadTracking.TryGetState(_headsetDevice,
-            out InputSubsystem.Extensions.MLHeadTracking.State state))
+        if (InputSubsystem.Extensions.MLHeadTracking.TryGetStateEx(_headsetDevice,
+            out InputSubsystem.Extensions.MLHeadTracking.StateEx state))
         {
-            if (_currentTrackingState != state.Mode)
+            if (_currentTrackingStatus != state.Status || _currentTrackingError != state.Error)
             {
-                _currentTrackingState = state.Mode;
-                OnTrackingModeChanged.Invoke(_currentTrackingState);
+                _currentTrackingStatus = state.Status;
+                _currentTrackingError = state.Error;
+                OnTrackingModeChanged.Invoke(_currentTrackingStatus,_currentTrackingError);
             }
         }
     }
