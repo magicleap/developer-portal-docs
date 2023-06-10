@@ -9,7 +9,7 @@ keywords: [Unity, Spaces, ARCloud, Import, Export, Manage, MLSpaces]
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-# MLSpace API Overview
+# MLSpace Overview
 
 The MLSpace API allows developers to manage Spaces inside their application. This includes functionality such as querying a list of spaces, requesting localization into a specific Space and importing/exporting on device Spaces.
 

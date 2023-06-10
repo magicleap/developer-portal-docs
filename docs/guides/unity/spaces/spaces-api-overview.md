@@ -63,6 +63,14 @@ void CheckLocalizationStatus()
 }
 ```
 
+## MLSpace.Space
+
+The `MLSpace.Space` structure represents a saved map of a physical environment, known as a Space, on a Magic Leap device.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `SpaceId` | `string` | The unique identifier for the Space. |
+| `SpaceName` | `string` | The human-readable name of the Space. |
 
 
 ## Get List Of Available Spaces
@@ -81,7 +89,9 @@ void GetListOfAvailableSpaces()
 
 ## Localize Into a Space
 
-The function `MLSpace.RequestLocalization(ref MLSpace.SpaceInfo info)` requests the system to localize the device to a specific MLSpace. The function requires the `SpaceId` of the MLSpace for localization.
+The function `MLSpace.RequestLocalization(ref MLSpace.SpaceInfo info)` requests the system to localize the device to a specific MLSpace. The function requires the `SpaceId` of the MLSpace for localization. This is an asynchronous request. Use `MLSpace.GetLocalizationResult()` function to get the `LocalizationResult` of the localization or use the `MLSpace.OnLocalizationEvent` to listen to  the localization events.
+
+A new request for localization will override all the past requests for localization that are yet to be completed.
 
 ```csharp
 
@@ -93,6 +103,15 @@ public void LocalizeToFirstSpace()
     info.SpaceId = "YOU_SPACE_ID_HERE";
     // Request localization
     MLSpace.RequestLocalization(ref info);
+
+    if (result == MLResult.Code.Ok)
+    {
+        Debug.Log($"Request to localize into Space with ID {info.SpaceId} was successful.");
+    }
+    else
+    {
+        Debug.LogError($"Error requesting to localize into Space: {result}");
+    }
 }
 ```
 
@@ -106,11 +125,11 @@ The `MLSpace.ExportSpace(in MLSpace.SpaceInfo info, out MLSpace.SpaceData export
 | `in MLSpace.SpaceInfo info` | This input parameter is an instance of the `MLSpace.SpaceInfo` struct. It specifies the `SpaceId` of the MLSpace that is being exported. The `SpaceId` uniquely identifies an MLSpace. |
 | `out MLSpace.SpaceData exportData` | This output parameter is an instance of the `MLSpace.SpaceData` struct. It contains the exported data of the MLSpace, which can be saved to a file for later use. |
 
-### Permissions
+#### Permissions
 
 Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission must be requested at runtime. Without this permission, the function call will fail.
 
-### Returns
+#### Returns
 
 - `MLResult.Ok` Export was successful.
 - `MLResult.InvalidParam` One or more input parameters are not valid.
@@ -118,7 +137,7 @@ Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE
 - `MLResult.UnspecifiedFailure` Operation failed for unknown reason.
 - `MLSpaceResult.UnavailableSpace` Operation failed due an unavailable Space.
 
-### Example
+#### Export Space Example
 
 Here's an example of how to use the `ExportSpace` method to export a MLSpace and save it to a file:
 
@@ -130,7 +149,7 @@ public void ExportSpace()
 
     MLResult.Code result = MLSpace.ExportSpace(in info, out MLSpace.SpaceData exportData);
 
-    if (result.isOK)
+    if (result == MLResult.Code.Ok)
     {
         var binaryData = exportData.Data;
         SaveSpaceToFile(binaryData);
@@ -174,6 +193,7 @@ The `ImportSpace` function requires two parameters:
 | `out MLSpace.SpaceInfo id` | An out parameter that will contain the `MLSpace.SpaceInfo` of the imported MLSpace if the import operation is successful. |
 
 ### Permissions
+
 In order to utilize the `ImportSpace` function, your application must first request and be granted the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission at runtime. Without this permission, the function call will fail.
 
 ### Returns
@@ -185,7 +205,7 @@ In order to utilize the `ImportSpace` function, your application must first requ
 - `MLSpaceResult.IncompatibleSpace` Operation failed due an incompatible Space.
 - `MLSpaceResult.SpaceAlreadyExists` Operation failed because Space being imported already exists
 
-### Example
+### Import Spaces Example
 
 Here is an example of how to load a MLSpace from binary data using the `MLSpaceImportSpace` function. In this example, the binary data of a MLSpace is loaded from a file and then imported as a MLSpace using `ImportSpace`. After the space is successfully imported, the list of available spaces is refreshed. If no space was previously exported to a file, a warning message is shown.
 
@@ -217,5 +237,3 @@ public void ImportSpace()
     }
 }
 ```
-
-
