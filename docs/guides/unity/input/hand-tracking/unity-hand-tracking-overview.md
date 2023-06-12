@@ -20,7 +20,7 @@ using UnityEngine.XR.MagicLeap;
 
 ## Requirements
 
-Hand Tracking Requires developers to enable the Hand Tracking permissions in the Manifest Settings. To do this Go to **Edit > Project Settings > Magic Leap > Manifest Settings** and enable `Hand_Tracking`. For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
+Hand Tracking Requires developers to enable the Hand Tracking permissions in the Manifest Settings. To do this Go to **Edit > Project Settings > Magic Leap > Permissions** and enable `com.magicleap.permission.HAND_TRACKING`. For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
 
 ## See Also
 
