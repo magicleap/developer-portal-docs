@@ -492,6 +492,32 @@ public static Quaternion GetRotationFromTransformMatrix(
 
 -----------
 
+### T [] MarshalUnmanagedArray< T > {#t-marshalunmanagedarray-t-}
+
+Converts an unmanged array to a managed array of type T. 
+
+```csharp
+public static T [] MarshalUnmanagedArray< T >(
+    IntPtr arrayPtr,
+    int count
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| IntPtr |arrayPtr||
+| int |count||
+
+
+
+
+
+
+-----------
+
 ### byte [] ObjectToByteArray< T > {#byte-objecttobytearray-t-}
 
 Convert an object to a byte array. Uses C# Binary formatter to serialize 

@@ -28,10 +28,14 @@ namespace UnityEngine.XR.MagicLeap
     {
         public static partial class Extensions
         {
+            [Obsolete]
             public static bool TryGetHeadTrackingState(InputDevice headDevice, out MLHeadTracking.State headTrackingState) => MLHeadTracking.TryGetState(headDevice, out headTrackingState);
+
+            public static bool TryGetHeadTrackingStateEx(InputDevice headDevice, out MLHeadTracking.StateEx headTrackingState) => MLHeadTracking.TryGetStateEx(headDevice, out headTrackingState);
 
             public static class MLHeadTracking
             {
+                [Obsolete]
                 public enum TrackingError
                 {
                     None,
@@ -43,11 +47,37 @@ namespace UnityEngine.XR.MagicLeap
                     Unknown
                 }
 
+                [Flags]
+                public enum TrackingErrorFlag
+                {
+                    None = 0,
+
+                    Unknown = 1 << 0,
+
+                    NotEnoughFeatures = 1 << 1,
+
+                    LowLight = 1 << 2,
+
+                    ExcessiveMotion = 1 << 3
+                }
+
+                [Obsolete]
                 public enum TrackingMode
                 {
                     Mode6DOF,
 
                     ModeUnavailable
+                }
+
+                public enum HeadTrackingStatus
+                {
+                    Invalid = 0,
+
+                    Initializing = 1,
+
+                    Relocalizing = 2,
+
+                    Valid = 100
                 }
 
                 [Flags]
@@ -62,9 +92,13 @@ namespace UnityEngine.XR.MagicLeap
                     NewSession = (1 << 3)
                 }
 
+                [Obsolete]
                 public static bool TryGetState(InputDevice headDevice, out State headTrackingState) => NativeBindings.TryGetState(headDevice, out headTrackingState);
+
+                public static bool TryGetStateEx(InputDevice headDevice, out StateEx headTrackingState) => NativeBindings.TryGetStateEx(headDevice, out headTrackingState);
                 public static bool TryGetMapEvents(InputDevice headDevice, out MapEvents mapEvents) => NativeBindings.TryGetMapEvents(headDevice, out mapEvents);
 
+                [Obsolete]
                 public readonly struct State
                 {
                     public readonly TrackingMode Mode;
@@ -86,11 +120,36 @@ namespace UnityEngine.XR.MagicLeap
                     }
                 }
 
+                public readonly struct StateEx
+                {
+                    public readonly HeadTrackingStatus Status;
+
+                    public readonly float Confidence;
+
+                    public readonly TrackingErrorFlag Error;
+
+                    internal StateEx(NativeBindings.StateEx nativeState)
+                    {
+                        this.Status = nativeState.Status;
+                        this.Confidence = nativeState.Confidence;
+                        this.Error = (TrackingErrorFlag)nativeState.Error;
+                    }
+
+                    public override string ToString()
+                    {
+                        return $"Status: {Status}, Condidence: {Confidence}, Error: {Error}";
+                    }
+                }
+
                 internal static class NativeBindings
                 {
+                    [Obsolete]
                     private static byte[] allocatedHeadTrackingStateData = new byte[Marshal.SizeOf<NativeBindings.State>()];
+
+                    private static byte[] allocatedHeadTrackingStateExData = new byte[Marshal.SizeOf<NativeBindings.StateEx>()];
                     private static byte[] allocatedHeadTrackingMapEventsData = new byte[sizeof(MapEvents)];
 
+                    [Obsolete]
                     public static bool TryGetState(InputDevice device, out MLHeadTracking.State state)
                     {
                         if (!device.TryGetFeatureValue(InputSubsystem.Extensions.DeviceFeatureUsages.Head.TrackingState, allocatedHeadTrackingStateData))
@@ -115,7 +174,32 @@ namespace UnityEngine.XR.MagicLeap
                     Failure:
                         state = default;
                         return false;
+                    }
 
+                    public static bool TryGetStateEx(InputDevice device, out MLHeadTracking.StateEx state)
+                    {
+                        if (!device.TryGetFeatureValue(InputSubsystem.Extensions.DeviceFeatureUsages.Head.TrackingStateEx, allocatedHeadTrackingStateExData))
+                            goto Failure;
+
+                        try
+                        {
+                            IntPtr ptr = Marshal.AllocHGlobal(allocatedHeadTrackingStateExData.Length);
+                            Marshal.Copy(allocatedHeadTrackingStateExData, 0, ptr, allocatedHeadTrackingStateExData.Length);
+                            var nativeState = Marshal.PtrToStructure<NativeBindings.StateEx>(ptr);
+                            Marshal.FreeHGlobal(ptr);
+                            state = new MLHeadTracking.StateEx(nativeState);
+                            return true;
+                        }
+
+                        catch (Exception e)
+                        {
+                            Debug.LogError("TryGetStateEx failed with the exception: " + e);
+                            goto Failure;
+                        }
+
+                    Failure:
+                        state = default;
+                        return false;
                     }
 
                     public static bool TryGetMapEvents(InputDevice device, out MLHeadTracking.MapEvents mapEvents)
@@ -140,6 +224,7 @@ namespace UnityEngine.XR.MagicLeap
                         }
                     }
 
+                    [Obsolete]
                     [StructLayout(LayoutKind.Sequential)]
                     public readonly struct State
                     {
@@ -149,9 +234,20 @@ namespace UnityEngine.XR.MagicLeap
 
                         public readonly TrackingError Error;
                     }
+
+                    [StructLayout(LayoutKind.Sequential)]
+                    public readonly struct StateEx
+                    {
+                        public readonly uint Version;
+
+                        public readonly HeadTrackingStatus Status;
+
+                        public readonly float Confidence;
+
+                        public readonly uint Error;
+                    }
                 }
             }
-
         }
     }
 

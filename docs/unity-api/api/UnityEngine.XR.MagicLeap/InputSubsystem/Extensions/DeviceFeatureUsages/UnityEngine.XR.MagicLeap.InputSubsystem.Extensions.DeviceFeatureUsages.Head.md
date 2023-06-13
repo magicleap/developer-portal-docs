@@ -61,3 +61,18 @@ public static InputFeatureUsage< byte[]> TrackingState = new InputFeatureUsage<b
 
 -----------
 
+### TrackingStateEx {#inputfeatureusage-byte-trackingstateex}
+
+```csharp
+
+public static InputFeatureUsage< byte[]> TrackingStateEx = new InputFeatureUsage<byte[]>("MLHeadTrackingStateEx");
+
+```
+
+
+
+
+
+
+-----------
+

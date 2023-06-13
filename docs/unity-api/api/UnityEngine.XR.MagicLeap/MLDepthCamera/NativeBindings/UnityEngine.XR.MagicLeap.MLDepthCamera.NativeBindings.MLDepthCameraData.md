@@ -194,6 +194,21 @@ public MLDepthCameraIntrinsics Intrinsics;
 
 -----------
 
+### RawDepthImageFrameBufferPtr {#intptr-rawdepthimageframebufferptr}
+
+```csharp
+
+public IntPtr RawDepthImageFrameBufferPtr;
+
+```
+
+
+
+
+
+
+-----------
+
 ### Version {#uint-version}
 
 ```csharp

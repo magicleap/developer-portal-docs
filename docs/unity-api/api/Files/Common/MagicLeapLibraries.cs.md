@@ -56,8 +56,12 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLInputDll = MLSdkLoaderDll;
 
         protected const string MLNotificationsManagerDll = MLSdkLoaderDll;
-        
+
         protected const string MLVoiceDll = MLSdkLoaderDll;
+
+        protected const string MLSpaceDll = MLSdkLoaderDll;
+
+        protected const string MLPowerManagerDll = MLSdkLoaderDll;
 #else
         public const string MLPerceptionClientDll = "perception.magicleap";
 
@@ -80,6 +84,10 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLNotificationsManagerDll = "system_notification_manager.magicleap";
         
         protected const string MLVoiceDll = "input.magicleap";
+        
+        protected const string MLSpaceDll = "space.magicleap";
+
+        protected const string MLPowerManagerDll = "power_manager.magicleap";
 #endif
         public const string UnityMagicLeapDll = "UnityMagicLeap";
 

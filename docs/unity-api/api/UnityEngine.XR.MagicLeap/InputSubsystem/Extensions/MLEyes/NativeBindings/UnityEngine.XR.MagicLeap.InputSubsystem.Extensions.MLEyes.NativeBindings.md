@@ -16,10 +16,10 @@ title: NativeBindings
 
 ## Public Methods
 
-### bool TryGetState {#bool-trygetstate}
+### bool TryGetTrackingState {#bool-trygettrackingstate}
 
 ```csharp
-public static bool TryGetState(
+public static bool TryGetTrackingState(
     InputDevice eyesDevice,
     out State state
 )

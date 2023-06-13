@@ -35,6 +35,8 @@ MLPowerManagerBatteryInfo battery_info;
 | [MLPowerManagerBatteryInfo](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo) | Battery info/warning codes.  |
 
 
+Extra info about battery. 
+
 
 
 

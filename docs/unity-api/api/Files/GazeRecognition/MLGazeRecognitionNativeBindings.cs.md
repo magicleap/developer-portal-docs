@@ -41,12 +41,18 @@ namespace UnityEngine.XR.MagicLeap
             {
                 public readonly uint Version;
 
+                public readonly float EyeHeightMax;
+
+                public readonly float EyeWidthMax;
+
                 public readonly NativeBindings.MLCoordinateFrameUID Vergence;
 
                 public MLGazeRecognitionStaticData(uint setVersion)
                 {
                     Version = setVersion;
                     Vergence = MLCoordinateFrameUID.EmptyFrame;
+                    EyeHeightMax = 0;
+                    EyeWidthMax = 0;
                 }
             };
 

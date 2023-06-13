@@ -84,6 +84,23 @@ public readonly float LeftCenterConfidence;
 
 -----------
 
+### LeftEyeOpenness {#readonly-float-lefteyeopenness}
+
+Openness of the left eye   Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. 
+
+```csharp
+
+public readonly float LeftEyeOpenness;
+
+```
+
+
+
+
+
+
+-----------
+
 ### RightBlink {#readonly-bool-rightblink}
 
   true   if right eye is inside a blink. When not wearing the device, values can be arbitrary. 
@@ -108,6 +125,23 @@ A quality metric confidence value 0.0 - 1.0 to indicate accuracy of right eye ce
 ```csharp
 
 public readonly float RightCenterConfidence;
+
+```
+
+
+
+
+
+
+-----------
+
+### RightEyeOpenness {#readonly-float-righteyeopenness}
+
+Openness of the right eye   Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. 
+
+```csharp
+
+public readonly float RightEyeOpenness;
 
 ```
 
