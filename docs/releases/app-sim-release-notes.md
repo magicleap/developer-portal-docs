@@ -4,6 +4,16 @@ sidebar_position: 2
 date: 06/13/2023
 ---
 
+# Version 3.6.0
+
+## What's New
+  * App Sim in ML Hub will validate graphics support of the host machine and warning user if the support is not sufficient.
+  * Channel Editor has been removed as it causes more confustion than value to the users.
+
+## Bug Fixes
+  * [Unity] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
+  * [Unity] WASD movement in Game View was inverted along Z axis.
+
 # Version 3.5.0
 
 ## What's New
