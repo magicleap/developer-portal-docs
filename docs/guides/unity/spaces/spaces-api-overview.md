@@ -12,15 +12,12 @@ This guide provides a comprehensive overview of the MLSpace API, specifically fo
 
 ## LocalizationResult
 
-
 The `LocalizationResult` struct provides detailed information about the device's localization in an MLSpace. This information is valuable when you need to understand whether the device is localized in a specific MLSpace, and if so, which one.
-
 
 | Property | Type | Description |
 |----------|------|-------------|
 | `LocalizationStatus` | `Status` | Gets the status of the localization. This is an enum which can either be `Localized` or `NotLocalized`, indicating whether the device is currently localized to an MLSpace. |
 | `Space` | `MLSpace.Space` | Gets the space to which the device is localized, if it is. This is an instance of `MLSpace.Space` which contains the details of the MLSpace to which the device is localized. |
-
 
 ### Examples
 
@@ -28,7 +25,7 @@ There are two primary ways to get a `LocalizationResult`. In both of these examp
 
 #### `MLSpaceOnLocalizationChanged` callback
 
-The `OnLocalizationChanged` event is invoked when the localization status of the device changes. Subscribing to this event provides an easy way to receive updates about the localization status. 
+The `OnLocalizationChanged` event is invoked when the localization status of the device changes. Subscribing to this event provides an easy way to receive updates about the localization status.
 
 ```csharp
 void Start()
@@ -72,7 +69,6 @@ The `MLSpace.Space` structure represents a saved map of a physical environment, 
 | `SpaceId` | `string` | The unique identifier for the Space. |
 | `SpaceName` | `string` | The human-readable name of the Space. |
 
-
 ## Get List Of Available Spaces
 
 The method `MLSpace.GetSpaceList(out MLSpace.Space[] list)` retrieves the list of available MLSpaces on the device.
@@ -85,7 +81,6 @@ void GetListOfAvailableSpaces()
     // ...
 }
 ```
-
 
 ## Localize Into a Space
 
@@ -117,8 +112,7 @@ public void LocalizeToFirstSpace()
 
 ## Export Spaces
 
-The `MLSpace.ExportSpace(in MLSpace.SpaceInfo info, out MLSpace.SpaceData exportData)` function exports a MLSpace into a binary data format that can be saved and later used for import. The `ExportSpace` method requires an instance of the `MLSpace.SpaceInfo` struct as input parameter, and it outputs an instance of the `MLSpace.SpaceData` struct. 
-
+The `MLSpace.ExportSpace(in MLSpace.SpaceInfo info, out MLSpace.SpaceData exportData)` function exports a MLSpace into a binary data format that can be saved and later used for import. The `ExportSpace` method requires an instance of the `MLSpace.SpaceInfo` struct as input parameter, and it outputs an instance of the `MLSpace.SpaceData` struct.
 
 | Parameter | Description |
 | --- | --- |

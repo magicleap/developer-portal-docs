@@ -26,6 +26,6 @@ A dialog will open asking you to save the bug report ZIP file:
 See [Android's Bug Report documentation](https://source.android.com/docs/core/tests/debug/read-bug-reports) for information on how to read bug reports
 :::
 
-:::tip Bug Reports from your Command Line
+:::tip Create Bug Reports using ADB
 Bug reports [can also be gathered using `adb`](/docs/guides/developer-tools/android-debug-bridge/adb-bugreport.md).
 :::
