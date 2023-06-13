@@ -1,9 +1,9 @@
 {
-  "label": "PTC",
-  "position": 3,
+  "label": "Agora",
+  "position": 1,
   "collapsed": true,
   "link": {
     "type": "doc",
-      "id": "ptc"
+      "id": "agora"
     }
 }
