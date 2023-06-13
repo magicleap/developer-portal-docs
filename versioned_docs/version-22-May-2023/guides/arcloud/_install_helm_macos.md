@@ -1,0 +1,4 @@
+```shell
+brew install helm
+```
+
