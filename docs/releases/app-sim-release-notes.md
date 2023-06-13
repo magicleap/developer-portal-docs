@@ -24,6 +24,7 @@ date: 06/13/2023
   * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the Current resolution scale (on panel *Rendering > Device View*) to 0.5 in this case.
 
 # Version 3.4.0
+## What's New
   * UI in ML Hub
     * Added Marker Tracking panel to support **ml_marker_tracking** APIs in Simulator mode. The UI allows for adding Barcodes, QR codes, and ArUco markers. On adding a marker to the scene, users may be prompted to install prerequisites. This is a one time operation and requires internet connection.
     * Fixed the issue with Scene and Device views not updating rendered content on switching monitors with different DPI scales.
@@ -50,7 +51,7 @@ date: 06/13/2023
     * App Sim for Unity now allows for using the Metal graphics API on Macs. The package is fully functional on both M1 and Intel devices.
     * Added Marker Tracking panel that closely mimics the newly added panel in the Hub.
 
-# Known Issues
+## Known Issues
   * ML Hub and Unity want different versions of <b>adb</b>.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like  
   <code>Multiple adb server instances found ...</code>.  
   This will have the side effect of corrupting any App Sim Device or Hybrid sessions.
@@ -58,4 +59,30 @@ date: 06/13/2023
   Use the new ML Hub <code>Setting &gt; General &gt; Developer &gt; Use custom adb</code> to point to the same version configured under Unity in 
   <code>External Tools &gt; Android &gt; Android SDK tools</code> (adb is at <code>platform-tools/adb[.exe]</code>).
 
-  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the Current resolution scale (Rendering > Device View) to 0.5 in this case.</li>
+  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the *Current resolution scale* (*Rendering > Device View*) to 0.5 in this case.</li>
+
+# Version 3.3.0
+
+## What's New
+
+In this release, product branding has changed.  "Zero Iteration" is now "Magic Leap Application Simulator".
+
+  * UI in ML Hub
+    * Major operations like starting/stopping a session and interacting with the virtual room go through the ZIF library now, as used by the ML App Sim for Unity package.  Some UI, like progress dialogs, have changed to reflect this.
+  * App Sim Runtime
+    * The virtual room .session file format has been updated.  If you load older sessions, this will silently ignore any non-default "state" fields in Head Pose, Controller, Hands and Eye Tracking (but not the Transforms) since the previous format was tied to ML1 semantics.  
+    * Various bugfixes.
+  * C API Support
+    * Adapted to ML2 API changes.
+  * ZIF library
+    * Fixed stability issues in some API areas.
+  * ML App Sim package for Unity
+    * The Unity ML XR package supports Metal, so you can run Unity scenes against ZI on M1 devices. Please note, however, that the Unity frontend ("ZIFUnity") is still not supported on M1, since it still requires OpenGL, which Unity has disabled for this platform. We are planning ZIF support for Metal in future releases.
+
+## Known Issues
+
+  * ML Hub and Unity want different versions of <b>adb</b>.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like <code>Multiple adb server instances found ...</code>.  This will have the side effect of corrupting any App Sim Device or Hybrid sessions.  
+  To work around this, have ML Hub use the same adb as Unity.  
+  Use the new ML Hub <code>Setting &gt; General &gt; Developer &gt; Use custom adb</code> to point to the same version configured under Unity in <code>External Tools &gt; Android &gt; Android SDK tools</code> (adb is at <code>platform-tools/adb[.exe]</code>).
+  * When loading .session files that have state fields set (non-Transform properties in Head Pose, Controller, Hand Tracking, Eye Fixation) these will not show up as "modified" and cannot be reset.  Instead, manually change them back to their default values if needed.
+  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the Current resolution scale (Rendering > Device View) to 0.5 in this case.
