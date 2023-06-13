@@ -1,9 +1,9 @@
 {
-  "label": "MRTK 2.8",
+  "label": "MRTK 3",
   "position": 1,
   "collapsed": true,
   "link": {
     "type": "doc",
-      "id": "mrtk"
+      "id": "mrtk3-overview"
     }
 }

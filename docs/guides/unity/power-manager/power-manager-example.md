@@ -1,12 +1,12 @@
 ---
 title: Power Manager Example
-sidebar_position: 1
+sidebar_position: 2
 date: 6/8/2023
 tags: [Unity, Power Manager, Overview]
 keywords: [Unity, Power Manager, Power, Controller, Battery]
 ---
 
-This example demonstrates how to manage power states and properties on a device using the Magic Leap platform's Power Manager API. It includes initialization and setup of available power states and properties, reading current power state and properties, and setting a new power state. The code also handles different events that could occur during these operations, such as changes in power state or properties, and potential errors. By using coroutines, it ensures that these operations are performed in an organized manner, with control over their execution order. The detailed logging provides real-time insight into the power management process. This script serves as a helpful foundation for developing applications that need advanced power management features.
+This example demonstrates how to manage power states and properties on a device using the Magic Leap platform's Power Manager API. It includes initialization and setup of available power states and properties, reading current power state and properties, and setting a new power state. The code also handles different events that could occur during these operations, such as changes in power state or properties, and potential errors. The detailed logging provides real-time insight into the power management process.
 
 ## Example
 

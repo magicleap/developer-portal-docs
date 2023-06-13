@@ -17,6 +17,44 @@ Spatial Anchors enable developers to create persistent and multi-user content. T
 
 If you are using Magic Leap's AR Cloud. Anchors will be shared between devices automatically. Meaning that no additional networking is required to have the anchors appear across all of the connected devices.
 
+**Spatial Anchor Feature Overview**
+
+The Spatial Anchor API is a powerful tool that allows you to anchor virtual objects in the physical world across multiple sessions and devices. This is extremely useful for augmented reality (AR) applications where persistency and consistency in the virtual-physical alignment are crucial.
+
+**1. Two Modes of Operation**
+
+The Spatial Anchor API supports two modes:
+
+   * **On-Device Mode**: In this mode, the anchors are stored locally on the device. They are available for multiple sessions as long as they are accessed from the same space they were created in.
+
+   * **AR Cloud Mode**: In this mode, anchors are stored in the cloud. They can be accessed from different devices in multiple sessions, provided the devices are localized to the same space where the anchors were published.
+
+**2. Spatial Anchor Properties**
+
+A spatial anchor has various properties including a unique ID, an expiration timestamp suggesting how long the anchor should be considered valid, and a space ID indicating the space to which the anchor belongs.
+
+**3. Anchor Management**
+
+Through the API, you can:
+
+   * **Create New Anchors**: This allows you to define a new anchor at a specific location.
+
+   * **Publish Anchors**: Once an anchor is created, it can be published for persistence. Depending on the mode of operation, the anchor will be stored either locally on the device or in the cloud.
+
+   * **Update Anchors**: The properties of an existing anchor, such as its expiration timestamp, can be updated as needed.
+
+   * **Delete Anchors**: If an anchor is no longer needed, it can be removed from persistent storage.
+
+## Anchor Queries
+
+The API also allows you to query for existing anchors. This can be based on various criteria like the center point of a spatial query, a radius for the spatial query, a list of anchor IDs to look for, or the maximum number of expected results. The results can also be sorted by their distance from the center point of the query.
+
+## Error and Status Reporting**
+
+The API includes status and error codes to guide developers in managing spatial anchors effectively. These codes provide information about the current state of the device (like whether it's localized or not) and potential issues that might occur (like exceeding the maximum number of anchors for a space).
+
+Remember, effective use of spatial anchors can significantly improve the user experience in AR applications by providing a consistent and persistent alignment between the virtual and physical worlds.
+
 ## Q&A
 
 - Q: Is there a way to force the mapping mode on an Magic Leap 2 inside of my application?
