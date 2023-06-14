@@ -53,7 +53,7 @@ Once the camera is available, you need to locate the preferred camera device and
 During initialization, you can specify if the connected camera will record Real World, Virtual, or Mixed Reality content by setting the `MLCamera.ConnectContext.Flags` parameter.
 
 :::info
-To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/media/ml-camera.md).
+To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/ml-camera.md).
 :::
 
 The example below tries to establish a connection with the camera stream.
@@ -94,7 +94,7 @@ The example below tries to establish a connection with the camera stream.
 Before you can capture the Magic Leap Camera's input, you need to create `CaptureConfig`. A `CaptureConfig` includes information about the final output such as, output format, frame-rate, and which camera stream to use.
 
 :::info
-To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/media/ml-camera.md).
+To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/ml-camera.md).
 :::
 
 The example below demonstrates how to configure a camera to capture an RGBA video from the main camera. The type of capture is set by the `MLCamera.StreamCapabilitiesInfo` parameter.
