@@ -21,7 +21,9 @@ Static information about the Gaze Recognition system. Populate with MLGazeRecogn
 
 ```csharp
 public StaticData(
-    Pose pose
+    Pose pose,
+    float eyeHeightMax,
+    float eyeWidthMax
 )
 ```
 
@@ -31,6 +33,8 @@ public StaticData(
 | Type | Name  | Description  | 
 |--|--|--|
 | Pose |pose||
+| float |eyeHeightMax||
+| float |eyeWidthMax||
 
 
 
@@ -40,6 +44,40 @@ public StaticData(
 -----------
 
 ## Public Attributes
+
+### EyeHeightMax {#readonly-float-eyeheightmax}
+
+The maximum value for the height of the eye&#95;left and eye&#95;right vector. 
+
+```csharp
+
+public readonly float EyeHeightMax;
+
+```
+
+
+
+
+
+
+-----------
+
+### EyeWidthMax {#readonly-float-eyewidthmax}
+
+The maximum value for the width of the eye&#95;left and eye&#95;right vector. 
+
+```csharp
+
+public readonly float EyeWidthMax;
+
+```
+
+
+
+
+
+
+-----------
 
 ### Vergence {#readonly-pose-vergence}
 

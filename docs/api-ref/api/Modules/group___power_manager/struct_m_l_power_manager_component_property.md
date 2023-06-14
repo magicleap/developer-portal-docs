@@ -39,19 +39,19 @@ auto properties = data.properties;
   for (int num = 0; num < data.size; num++) {
     switch (properties[num]->property_type) {
       case (MLPowerManagerPropertyType_BatteryInfo):
-        //Process properties[num]->battery_info enum
+        // Process properties[num]->battery_info enum
         break;
       case (MLPowerManagerPropertyType_BatteryLevel):
-        //Process properties[num]->battery_level as integer
+        // Process properties[num]->battery_level as integer
         break;
       case (MLPowerManagerPropertyType_ChargingState):
-        //Process properties[num]->charging_state as enum
+        // Process properties[num]->charging_state as enum
         break;
       case (MLPowerManagerPropertyType_ConnectionState):
-        //Process properties[num]->connection_state as enum
+        // Process properties[num]->connection_state as enum
         break;
       default:
-        //Error handle if default case
+        // Error handle if default case
         break;
     }
   }

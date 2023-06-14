@@ -45,6 +45,7 @@ XR
 | class | **[MLDepthCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md)** <br></br>APIs to access the depth camera data.  |
 | class | **[MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md)** <br></br>[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.  |
 | class | **[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md)** <br></br>[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md) Summary placeholder.  |
+| class | **[MLEyeCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md)** <br></br>[MLEyeCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md) class exposes static functions to query eye camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.  |
 | class | **[MLGazeRecognition](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md)** <br></br>This API can be used to get info about gaze.  |
 | class | **[MLGlobalDimmer](/unity-api/api/UnityEngine.XR.MagicLeap/MLGlobalDimmer/UnityEngine.XR.MagicLeap.MLGlobalDimmer.md)**  |
 | class | **[MLGraphicsHooks](/unity-api/api/UnityEngine.XR.MagicLeap/MLGraphicsHooks/UnityEngine.XR.MagicLeap.MLGraphicsHooks.md)**  |
@@ -68,9 +69,11 @@ XR
 | class | **[MLPlanes](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPlanes.md)**  |
 | class | **[MLPlanesQueryFlagsAndPlaneDetectionModeExtensions](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPlanesQueryFlagsAndPlaneDetectionModeExtensions.md)**  |
 | class | **[MLPluginLog](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPluginLog.md)** <br></br>Used to print logs within the plugin.  |
+| class | **[MLPowerManager](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md)**  |
 | class | **[MLRequest](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md)** <br></br>INHERIT FROM THIS IF YOUR REQUEST SHOULD BE A CLASS  |
 | struct | **[MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md)** <br></br>Magic Leap API return value.  |
 | class | **[MLSegmentedDimmer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLSegmentedDimmer.md)**  |
+| class | **[MLSpace](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md)**  |
 | class | **[MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md)** <br></br>Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 | class | **[MLVirtualKeyboard](/unity-api/api/UnityEngine.XR.MagicLeap/MLVirtualKeyboard/UnityEngine.XR.MagicLeap.MLVirtualKeyboard.md)** <br></br>This class provides callbacks and manages the state of the Virtual Keyboard.  |
 | class | **[MLVoice](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md)** <br></br>APIs for the voice service system.  |

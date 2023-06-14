@@ -14,9 +14,9 @@ ACOUSTICS.
 
 | Name           |
 | -------------- |
-| **[Spatial Sound](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound.md)** <br></br>SPATIAL SOUND.  |
-| **[Buffering](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering.md)** <br></br>BUFFERING.  |
-| **[Analysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis.md)** <br></br>ANALYSIS.  |
+| **[Spatial Sound](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/group___def_spatial_sound.md)** <br></br>SPATIAL SOUND.  |
+| **[Buffering](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/group___def_buffering.md)** <br></br>BUFFERING.  |
+| **[Analysis](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_analysis/group___def_analysis.md)** <br></br>ANALYSIS.  |
 | **[Result Codes](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_result_codes.md)** <br></br>RESULT CODES.  |
 | **[Callbacks](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_callbacks.md)** <br></br>CALLBACKS.  |
 

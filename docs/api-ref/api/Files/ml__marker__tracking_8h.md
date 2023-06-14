@@ -685,7 +685,7 @@ Max time between fully analyzed frames is 1s.
 
 
 **API Level:**
-  * 21
+  * 28
 
 
 
@@ -1128,7 +1128,7 @@ ML_STATIC_INLINE MLResult MLMarkerTrackerSettingsInit(MLMarkerTrackerSettings *i
     return MLResult_InvalidParam;
   }
   memset(inout_settings, 0, sizeof(MLMarkerTrackerSettings));
-  inout_settings->version = 5u;
+  inout_settings->version = 6u;
   inout_settings->dictionary = MLMarkerTrackerArucoDictionaryName_NotInitialized;
   inout_settings->aruco_marker_length = 0.1f;
   inout_settings->qr_code_length = 0.1f;

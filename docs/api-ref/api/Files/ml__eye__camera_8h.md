@@ -11,25 +11,25 @@ title: ml_eye_camera.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md)** <br></br>A structure to encapsulate the camera settings.  |
-| struct | **[MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
-| struct | **[MLEyeCameraFrame](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
-| struct | **[MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md)** <br></br>A structure to encapsulate all the eye camera data.  |
+| struct | **[MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md)** <br></br>A structure to encapsulate the camera settings.  |
+| struct | **[MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_frame_buffer.md)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
+| struct | **[MLEyeCameraFrame](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_frame.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| struct | **[MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md)** <br></br>A structure to encapsulate all the eye camera data.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) | **[MLEyeCameraSettings](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecamerasettings)** <br></br>A structure to encapsulate the camera settings.  |
-| typedef struct [MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md) | **[MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecameraframebuffer)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
-| typedef struct [MLEyeCameraFrame](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md) | **[MLEyeCameraFrame](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecameraframe)** <br></br>A structure to encapsulate output data for each camera sensor.  |
-| typedef struct [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) | **[MLEyeCameraData](/api-ref/api/Modules/group___camera/group___camera.md#struct-mleyecameradata)** <br></br>A structure to encapsulate all the eye camera data.  |
+| typedef struct [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) | **[MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#struct-mleyecamerasettings)** <br></br>A structure to encapsulate the camera settings.  |
+| typedef struct [MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_frame_buffer.md) | **[MLEyeCameraFrameBuffer](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#struct-mleyecameraframebuffer)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
+| typedef struct [MLEyeCameraFrame](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_frame.md) | **[MLEyeCameraFrame](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#struct-mleyecameraframe)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| typedef struct [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) | **[MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#struct-mleyecameradata)** <br></br>A structure to encapsulate all the eye camera data.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLEyeCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mleyecameraidentifier)** <br></br> { <br></br>[MLEyeCameraIdentifier_None](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-none) = 0,<br></br> [MLEyeCameraIdentifier_LeftTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-lefttemple) = 1 << 0,<br></br> [MLEyeCameraIdentifier_LeftNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-leftnasal) = 1 << 1,<br></br> [MLEyeCameraIdentifier_RightNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-rightnasal) = 1 << 2,<br></br> [MLEyeCameraIdentifier_RightTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-righttemple) = 1 << 3,<br></br> [MLEyeCameraIdentifier_All](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-all) = MLEyeCameraIdentifier_LeftTemple |
+| enum | **[MLEyeCameraIdentifier](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#enums-mleyecameraidentifier)** <br></br> { <br></br>[MLEyeCameraIdentifier_None](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-none) = 0,<br></br> [MLEyeCameraIdentifier_LeftTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-lefttemple) = 1 << 0,<br></br> [MLEyeCameraIdentifier_LeftNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-leftnasal) = 1 << 1,<br></br> [MLEyeCameraIdentifier_RightNasal](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-rightnasal) = 1 << 2,<br></br> [MLEyeCameraIdentifier_RightTemple](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-righttemple) = 1 << 3,<br></br> [MLEyeCameraIdentifier_All](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-all) = MLEyeCameraIdentifier_LeftTemple |
                               MLEyeCameraIdentifier_LeftNasal  |
                               MLEyeCameraIdentifier_RightNasal |
                               MLEyeCameraIdentifier_RightTemple,<br></br> [MLEyeCameraIdentifier_Ensure32Bits](/api-ref/api/Files/ml__eye__camera_8h.md#enums-mleyecameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
@@ -38,13 +38,13 @@ title: ml_eye_camera.h
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLEyeCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecamerasettingsinit)**([MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * inout_settings)<br></br>Initialize the camera settings structure. Shall be called before calling [MLEyeCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect).  |
-| void | **[MLEyeCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecameradatainit)**([MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * inout_eye_camera_data)<br></br>Initialize [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) with version.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)**(const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Connect to eye cameras.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraUpdateSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraupdatesettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * settings)<br></br>Update the eye camera settings.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameragetlatestcameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint64_t timeout_ms, [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * out_data)<br></br>Poll for Frames.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecamerareleasecameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * eye_camera_data)<br></br>Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameradisconnect)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Disconnect from eye camera(s).  |
+| void | **[MLEyeCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#void-mleyecamerasettingsinit)**([MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) * inout_settings)<br></br>Initialize the camera settings structure. Shall be called before calling [MLEyeCameraConnect()](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect).  |
+| void | **[MLEyeCameraDataInit](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#void-mleyecameradatainit)**([MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) * inout_eye_camera_data)<br></br>Initialize [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) with version.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect)**(const [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Connect to eye cameras.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraUpdateSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraupdatesettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) * settings)<br></br>Update the eye camera settings.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameragetlatestcameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint64_t timeout_ms, [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) * out_data)<br></br>Poll for Frames.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecamerareleasecameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) * eye_camera_data)<br></br>Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) object.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLEyeCameraDisconnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameradisconnect)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Disconnect from eye camera(s).  |
 
 ## Enums Documentation
 
@@ -86,11 +86,11 @@ typedef struct MLEyeCameraSettings MLEyeCameraSettings;
 
 A structure to encapsulate the camera settings. 
 
-This structure must be initialized by calling [MLEyeCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecamerasettingsinit) before use.
+This structure must be initialized by calling [MLEyeCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#void-mleyecamerasettingsinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md)
 
 
 **API Level:**
@@ -111,7 +111,7 @@ A structure to encapsulate per plane info for each camera frame.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame_buffer.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_frame_buffer.md)
 
 
 **API Level:**
@@ -132,7 +132,7 @@ A structure to encapsulate output data for each camera sensor.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_frame.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_frame.md)
 
 
 **API Level:**
@@ -151,11 +151,11 @@ typedef struct MLEyeCameraData MLEyeCameraData;
 
 A structure to encapsulate all the eye camera data. 
 
-This structure must be initialized by calling [MLEyeCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecameradatainit) before use.
+This structure must be initialized by calling [MLEyeCameraDataInit](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#void-mleyecameradatainit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md)
 
 
 **API Level:**
@@ -177,13 +177,13 @@ static inline void MLEyeCameraSettingsInit(
 )
 ```
 
-Initialize the camera settings structure. Shall be called before calling [MLEyeCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). 
+Initialize the camera settings structure. Shall be called before calling [MLEyeCameraConnect()](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |inout_settings|[MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) structure to initialize.|
+| [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) * |inout_settings|[MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) structure to initialize.|
 **Required Permissions**:
 
   * None 
@@ -208,13 +208,13 @@ static inline void MLEyeCameraDataInit(
 )
 ```
 
-Initialize [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) with version. 
+Initialize [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) with version. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |inout_eye_camera_data|Set up the version for inout_eye_camera_data. |
+| [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) * |inout_eye_camera_data|Set up the version for inout_eye_camera_data. |
 
 
 
@@ -241,7 +241,7 @@ Connect to eye cameras.
 
 |  |   |   |
 |--|--|--|
-| const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |settings|A pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) structure. |
+| const [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) * |settings|A pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) structure. |
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to camera handle to be used in later APIs.|
 
 **Returns**
@@ -284,8 +284,8 @@ Update the eye camera settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
-| const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) * |settings|Pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect). |
+| const [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) * |settings|Pointer to [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md).|
 
 **Returns**
 
@@ -326,9 +326,9 @@ Poll for Frames.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect). |
 | uint64_t |timeout_ms|Timeout in milliseconds. |
-| [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |out_data|Eye camera data. Will be set to NULL if no valid data is available at this time.|
+| [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) * |out_data|Eye camera data. Will be set to NULL if no valid data is available at this time.|
 
 **Returns**
 
@@ -343,7 +343,7 @@ Poll for Frames.
   * None 
 
 
-Returns [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache and release the memory by calling [MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecamerareleasecameradata).
+Returns [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache and release the memory by calling [MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecamerareleasecameradata).
 
 This is a blocking call. API is not thread safe.
 
@@ -369,14 +369,14 @@ MLResult MLEyeCameraReleaseCameraData(
 )
 ```
 
-Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object. 
+Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) object. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect). |
-| [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) * |eye_camera_data|Pointer to a valid [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) object.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect). |
+| [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) * |eye_camera_data|Pointer to a valid [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) object.|
 
 **Returns**
 
@@ -390,7 +390,7 @@ Releases specified [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_
   * None 
 
 
-This function should be called exactly once for each call to [MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameragetlatestcameradata).
+This function should be called exactly once for each call to [MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameragetlatestcameradata).
 
 
 
@@ -417,7 +417,7 @@ Disconnect from eye camera(s).
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLEyeCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect).|
 
 **Returns**
 

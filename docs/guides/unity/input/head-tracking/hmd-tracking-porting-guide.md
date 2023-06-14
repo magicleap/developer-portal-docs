@@ -15,7 +15,7 @@ Both Magic Leap 1 and Magic Leap 2 define these APIs under the `UnityEngine.XR.M
 
 |Topic | Magic Leap 1 | Magic Leap 2|
 |---------------| --------------  | --------------|
-|State |`MLHeadTracking.GetState(out State state)`|`MLHeadTracking.TryGetState(headDevice, out MLHeadTracking.State state);`|
+|State |`MLHeadTracking.GetState(out State state)`|`MLHeadTracking.TryGetStateEx(headDevice, out MLHeadTracking.State state);`|
 |Map Events |Delegates were exposed but didn't work|`MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvents);`|
 
 :::info
@@ -36,8 +36,8 @@ private InputDevice headDevice;
 headDevice = InputSubsystem.Utils.FindMagicLeapDevice(InputDeviceCharacteristics.HeadMounted | InputDeviceCharacteristics.TrackedDevice);
 
 // Access the head tracking state
-MLHeadTracking.TryGetState(headDevice, out MLHeadTracking.State state);
-// Access the head tracking mapp events
+MLHeadTracking.TryGetStateEx(headDevice, out MLHeadTracking.StateEx state);
+// Access the head tracking map events
 MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvents);
 ```
 
@@ -45,7 +45,7 @@ MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvent
 
 - [`MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvents);`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
   - API to retrieve the Head Tracking Map Events.
-- [`MLHeadTracking.TryGetState(headDevice, out MLHeadTracking.State state);`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
+- [`MLHeadTracking.TryGetStateEx(headDevice, out MLHeadTracking.State state);`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
   - API to retrieve the Head Tracking State Events.
 - [Tracked Pose Driver](/docs/guides/unity/input/head-tracking/tracked-pose-driver-hmd.md)
   - An easy way to access the HMD's positional and rotational input.

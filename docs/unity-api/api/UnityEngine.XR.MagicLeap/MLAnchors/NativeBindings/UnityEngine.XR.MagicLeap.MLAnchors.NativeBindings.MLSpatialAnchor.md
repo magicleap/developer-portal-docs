@@ -102,7 +102,7 @@ public readonly ulong ExpirationTimeStamp;
 
 -----------
 
-### Id {#readonly-mluuidbytes-id}
+### Id {#readonly-id}
 
 The anchor's unique ID. This is a unique identifier for a single Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) that is generated and managed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. The ID is created when MLSpatialAnchorCreate is called. 
 
@@ -112,6 +112,9 @@ public readonly MLUUIDBytes Id;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| readonly [MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) | Universally unique identifier, byte array.  |
 
 
 
@@ -136,7 +139,7 @@ public readonly bool IsPersisted;
 
 -----------
 
-### SpaceId {#readonly-mluuidbytes-spaceid}
+### SpaceId {#readonly-spaceid}
 
 The ID of the space that this anchor belongs to. This is only relevant if IsPersisted is true. 
 
@@ -146,6 +149,9 @@ public readonly MLUUIDBytes SpaceId;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| readonly [MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) | Universally unique identifier, byte array.  |
 
 
 

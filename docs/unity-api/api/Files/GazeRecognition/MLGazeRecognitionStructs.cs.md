@@ -34,11 +34,17 @@ namespace UnityEngine.XR.MagicLeap
     {
         public readonly struct StaticData
         {
+            public readonly float EyeHeightMax;
+
+            public readonly float EyeWidthMax;
+
             public readonly Pose Vergence;
 
-            public StaticData(Pose pose)
+            public StaticData(Pose pose, float eyeHeightMax, float eyeWidthMax)
             {
                 this.Vergence = pose;
+                this.EyeHeightMax = eyeHeightMax;
+                this.EyeWidthMax = eyeWidthMax;
             }
         };
 

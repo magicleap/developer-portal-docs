@@ -159,11 +159,13 @@ namespace UnityEngine.XR.MagicLeap
                 
                 public IntPtr AmbientRawDepthImageFrameBufferPtr;
 
+                public IntPtr RawDepthImageFrameBufferPtr;
+
                 public static MLDepthCameraData Init()
                 {
                     return new MLDepthCameraData()
                     {
-                        Version = 1
+                        Version = 2
                     };
                 }
 
@@ -191,6 +193,9 @@ namespace UnityEngine.XR.MagicLeap
 
                     var aiFlagsPlaneInfo = MLDepthCameraFrameBuffer.Init(managed.AmbientRawDepthImage);
                     Marshal.StructureToPtr(aiFlagsPlaneInfo, data.AmbientRawDepthImageFrameBufferPtr, true);
+
+                    var rawDepthImageInfo = MLDepthCameraFrameBuffer.Init(managed.RawDepthImage);
+                    Marshal.StructureToPtr(rawDepthImageInfo, data.RawDepthImageFrameBufferPtr, true);
 
                     return data;
                 }

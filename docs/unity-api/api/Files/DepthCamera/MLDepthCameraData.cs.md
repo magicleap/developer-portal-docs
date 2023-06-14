@@ -53,6 +53,8 @@ namespace UnityEngine.XR.MagicLeap
             public FrameBuffer? DepthFlagsBuffer { get; internal set; }
 
             public FrameBuffer? AmbientRawDepthImage { get; internal set; }
+
+            public FrameBuffer? RawDepthImage { get; internal set; }
         }
     }
 }

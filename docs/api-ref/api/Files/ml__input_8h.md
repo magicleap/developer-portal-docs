@@ -66,7 +66,7 @@ title: ml_input.h
 | const char * | **[MLInputGetResultString](/api-ref/api/Modules/group___input/group___input.md#const-char-mlinputgetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLInputsResult and MLResult codes.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputCreate](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates an input tracker.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputSetControllerCallbacksEx](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputsetcontrollercallbacksex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * controller_callbacks, void * user_data)<br></br>Sets the callbacks for controller input events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerStateEx](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstateex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * inout_devices)<br></br>Gets the device IDs of all connected devices.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputReleaseConnectedDevicesList](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputreleaseconnecteddeviceslist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * devices)<br></br>Releases the contents of [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) populated by [MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices).  |
@@ -799,7 +799,7 @@ Sets the callbacks for controller input events.
 ```cpp
 MLResult MLInputGetControllerState(
     MLHandle handle,
-    MLInputControllerState out_state[MLInput_MaxControllers]
+    struct MLInputControllerState out_state[MLInput_MaxControllers]
 )
 ```
 
@@ -810,7 +810,7 @@ Returns current state of all possible input controllers.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) |out_state|Array of [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
+| struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) |out_state|Array of [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
 
 **Returns**
 
@@ -1414,7 +1414,7 @@ ML_STATIC_INLINE void MLInputControllerCallbacksExInit(MLInputControllerCallback
   }
 }
 
-typedef struct MLInputControllerState {
+typedef ML_DEPRECATED_MSG("Replaced by MLInputControllerStateEx.") struct MLInputControllerState {
   MLVec3f touch_pos_and_force[MLInput_MaxControllerTouchpadTouches];
   float trigger_normalized;
   bool button_state[MLInputControllerButton_Count];
@@ -1524,7 +1524,8 @@ ML_API MLResult ML_CALL MLInputCreate(MLHandle *out_handle);
 
 ML_API MLResult ML_CALL MLInputSetControllerCallbacksEx(MLHandle handle, const MLInputControllerCallbacksEx *controller_callbacks, void *user_data);
 
-ML_API MLResult ML_CALL MLInputGetControllerState(MLHandle handle, MLInputControllerState out_state[MLInput_MaxControllers]);
+ML_DEPRECATED_MSG("Replaced by MLInputGetControllerStateEx.")
+ML_API MLResult ML_CALL MLInputGetControllerState(MLHandle handle, struct MLInputControllerState out_state[MLInput_MaxControllers]);
 
 ML_API MLResult ML_CALL MLInputGetControllerStateEx(MLHandle handle, MLInputControllerStateEx out_state[MLInput_MaxControllers]);
 

@@ -15,7 +15,7 @@ Voice Commands are short, spoken phrases that can tell your Magic Leap 2 to carr
 
 Magic Leap 2 OS has built-in system-level Voice Commands and will have the capability to create your own at the application level in the future.
 
-[Click here](https://www.magicleap.care/hc/en-us/articles/9472998365197-Voice-Commands) to view the complete list of system voice commands.
+See the [Customer Care Portal](https://www.magicleap.care/hc/en-us/articles/9472998365197-Voice-Commands) to view the complete list of system voice commands.
 
 ## Custom Voice Commands
 
@@ -23,5 +23,5 @@ Unlike system-wide voice commands that are initiated by saying "Hey Magic Leap",
 
 To learn how to integrate voice commands in your application see the following documents:
 
-[Voice Intents Unity](/docs/guides/unity/input/voice-commands/voice-intents-overview.md) - Learn how to quickly add voice commands to your Unity Application.
+[Voice Intents Unity](/guides/unity/input/voice-intents/voice-intents-overview.md) - Learn how to quickly add voice commands to your Unity Application.
 [Voice Intent Native Sample](/guides/native/capi-samples.md#voice-intents) - See how to integrate Magic Leap's native APIs to add support for custom voice commands into you C++ application.

@@ -58,6 +58,73 @@ This features requires the `EYE_TRACKING` permission to be **requested** at runt
  ...
 ```
 
+### Eye Width Max  Example
+
+This example shows how to obtain the maximum value for the height and width of the eye_left and eye_right vector as well as the location of the 3D vergence point, intersection of 3D gaze vectors.
+
+:::caution
+This features requires the `EYE_TRACKING` permission to be **requested** at runtime and enabled in your project's Manifest Settings (**Edit > Project Settings > Magic Leap > Manifest Settings**).
+:::
+
+```csharp
+
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.XR.MagicLeap;
+
+public class GazeRecognitionTest : MonoBehaviour
+{
+    // Was EyeTracking permission granted by user
+    private bool permissionGranted = false;
+    private readonly MLPermissions.Callbacks permissionCallbacks = new MLPermissions.Callbacks();
+
+    private void Awake()
+    {
+        permissionCallbacks.OnPermissionGranted += OnPermissionGranted;
+        permissionCallbacks.OnPermissionDenied += OnPermissionDenied;
+        permissionCallbacks.OnPermissionDeniedAndDontAskAgain += OnPermissionDenied;
+
+        MLPermissions.RequestPermission(MLPermission.EyeTracking, permissionCallbacks);
+    }
+
+    private void OnDestroy()
+    {
+        permissionCallbacks.OnPermissionGranted -= OnPermissionGranted;
+        permissionCallbacks.OnPermissionDenied -= OnPermissionDenied;
+        permissionCallbacks.OnPermissionDeniedAndDontAskAgain -= OnPermissionDenied;
+    }
+
+    private void Update()
+    {
+        if (!permissionGranted)
+        {
+            return;
+        }
+
+        MLResult gazeStateResult = MLGazeRecognition.GetState(out MLGazeRecognition.State state);
+        MLResult gazeStaticDataResult = MLGazeRecognition.GetStaticData(out MLGazeRecognition.StaticData data);
+
+        Debug.Log($"MLGazeRecognitionStaticData {gazeStaticDataResult.Result}\n" +
+            $"Vergence {data.Vergence}\n" +
+            $"EyeHeightMax {data.EyeHeightMax}\n" +
+            $"EyeWidthMax {data.EyeWidthMax}\n" +
+            $"MLGazeRecognitionState: {gazeStateResult.Result}\n" +
+            state.ToString());
+    }
+
+    private void OnPermissionDenied(string permission)
+    {
+        MLPluginLog.Error($"{permission} denied, test won't function.");
+    }
+
+    private void OnPermissionGranted(string permission)
+    {
+        permissionGranted = true;
+    }
+}
+
+```
+
 ## See also
 
 - [`MLEyes.State`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md)

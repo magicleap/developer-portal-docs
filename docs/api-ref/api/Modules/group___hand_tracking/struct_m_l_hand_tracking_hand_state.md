@@ -31,6 +31,8 @@ struct MLHandTrackingHandState;
 
 State of a single hand. 
 
+Same for both filtered and unfiltered keypoints.
+
 
 
 

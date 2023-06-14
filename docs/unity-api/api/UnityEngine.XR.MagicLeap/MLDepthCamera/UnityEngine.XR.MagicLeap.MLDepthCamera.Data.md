@@ -199,6 +199,26 @@ public Vector3 Position { get; set; }
 
 -----------
 
+### RawDepthImage {#framebuffer-rawdepthimage}
+
+This is the raw depth camera sensor data captured with the depth camera illumination and corresponds to the amount of total light incident on the sensor. 
+
+```csharp
+
+public FrameBuffer RawDepthImage { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md) | Per-plane info for each depth camera frame.  |
+
+
+
+
+
+-----------
+
 ### Rotation {#quaternion-rotation}
 
 World rotation of the depth camera pose 

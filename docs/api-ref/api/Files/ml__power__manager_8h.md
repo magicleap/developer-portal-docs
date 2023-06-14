@@ -308,19 +308,19 @@ auto properties = data.properties;
   for (int num = 0; num < data.size; num++) {
     switch (properties[num]->property_type) {
       case (MLPowerManagerPropertyType_BatteryInfo):
-        //Process properties[num]->battery_info enum
+        // Process properties[num]->battery_info enum
         break;
       case (MLPowerManagerPropertyType_BatteryLevel):
-        //Process properties[num]->battery_level as integer
+        // Process properties[num]->battery_level as integer
         break;
       case (MLPowerManagerPropertyType_ChargingState):
-        //Process properties[num]->charging_state as enum
+        // Process properties[num]->charging_state as enum
         break;
       case (MLPowerManagerPropertyType_ConnectionState):
-        //Process properties[num]->connection_state as enum
+        // Process properties[num]->connection_state as enum
         break;
       default:
-        //Error handle if default case
+        // Error handle if default case
         break;
     }
   }
@@ -801,7 +801,7 @@ Sets the power state of a component. The new power state of a component will per
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_InvalidStateTransition|The component does not support transitioning to the requested state. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_NotConnected|The component is not connected. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The power state of the controller was set. successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The power state of the controller was set successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_StateTransitionsDisabled|The component currently does not support transitioning to a different state. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_UnsupportedState|The component does not support the requested power state.|
@@ -1263,7 +1263,6 @@ typedef struct MLPowerManagerComponentProperty {
   MLPowerManagerPropertyType property_type;
 
   union {
-    /* Extra info about battery. */
     MLPowerManagerBatteryInfo battery_info;
 
     uint8_t battery_level;

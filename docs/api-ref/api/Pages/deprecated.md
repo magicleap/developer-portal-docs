@@ -34,6 +34,10 @@ Global [MLControllerSystemState](/api-ref/api/Modules/group___controller/group__
 
 * Deprecated since 1.1.0. Scheduled for removal. 
 
+Global [MLHandTrackingCreate](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#mlresult-mlhandtrackingcreate)  (MLHandle *out_handle)
+
+* Deprecated since 1.3.0. Scheduled for removal. Replaced by MLHandTrackingCreateEx.  
+
 Global [MLHeadTrackingError](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enum-mlheadtrackingerror)
 
 * Deprecated since 1.2.0. Scheduled for removal. Replaced by MLHeadTrackingErrorFlag.  
@@ -54,7 +58,7 @@ Global [MLInputControllerState](/api-ref/api/Modules/group___input/group___input
 
 * Deprecated since 1.1.0. Scheduled for removal.  
 
-Global [MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)  (MLHandle handle, [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])
+Global [MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)  (MLHandle handle, struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])
 
 * Deprecated since 1.1.0. Scheduled for removal.  
 
@@ -77,6 +81,26 @@ Global [MLMeshingPopulateDepthFlags](/api-ref/api/Modules/group___graphics_utili
 Global [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#struct-mlmeshingvirtualcamerabufferinfo)
 
 * Deprecated since 1.2.0. Scheduled for removal. 
+
+Global [MLSpatialAnchorGetLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorgetlocalizationinfo)  (MLHandle handle, [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) *out_localization_info)
+
+* Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceGetLocalizationResult.  
+
+Global [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchorlocalizationinfo)
+
+* Deprecated since 1.3.0. Scheduled for removal. Replaced by [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md).  
+
+Global [MLSpatialAnchorLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorlocalizationinfoinit)  ([MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) *inout_info)
+
+* Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationResultInit.  
+
+Global [MLSpatialAnchorLocalizationStatus](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enum-mlspatialanchorlocalizationstatus)
+
+* Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationStatus.  
+
+Global [MLSpatialAnchorMappingMode](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enum-mlspatialanchormappingmode)
+
+* Deprecated since 1.3.0. Scheduled for removal.  
 
 Global [MLWebViewGetScrollOffset](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrolloffset)  (MLHandle web_view, int32_t *out_x, int32_t *out_y)
 

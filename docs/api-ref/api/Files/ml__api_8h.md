@@ -28,7 +28,7 @@ title: ml_api.h
 | enum | **[Anonymous Enum 0](/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-0)** <br></br> { <br></br>[ML_INVALID_HANDLE](/api-ref/api/Files/ml__api_8h.md#enums-ml-invalid-handle) = 0xFFFFFFFFFFFFFFFF<br></br>} |
 | enum | **[Anonymous Enum 1](/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-1)** <br></br> { <br></br>[MLVersion_BuildIdMaxLength](/api-ref/api/Files/ml__api_8h.md#enums-mlversion-buildidmaxlength) = 128<br></br>} |
 | enum | **[Anonymous Enum 2](/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-2)** <br></br> { <br></br>[MLResultAPIPrefix_Global](/api-ref/api/Files/ml__api_8h.md#enums-mlresultapiprefix-global) = ( 0  << 16)<br></br>} |
-| enum | **[MLResultGlobal](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresultglobal)** <br></br> { <br></br>[MLResult_Ok](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-ok) = MLResultAPIPrefix_Global,<br></br> [MLResult_Pending](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-pending),<br></br> [MLResult_Timeout](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-timeout),<br></br> [MLResult_Locked](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-locked),<br></br> [MLResult_UnspecifiedFailure](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-unspecifiedfailure),<br></br> [MLResult_InvalidParam](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-invalidparam),<br></br> [MLResult_AllocFailed](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-allocfailed),<br></br> [MLResult_PermissionDenied](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-permissiondenied),<br></br> [MLResult_NotImplemented](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-notimplemented),<br></br> [MLResult_ClientLimitExceeded](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-clientlimitexceeded),<br></br> [MLResult_PoseNotFound](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-posenotfound),<br></br> [MLResult_IncompatibleSKU](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-incompatiblesku),<br></br> [MLResult_PerceptionSystemNotStarted](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-perceptionsystemnotstarted),<br></br> [MLResult_IllegalState](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-illegalstate),<br></br> [MLResult_LicenseError](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-licenseerror),<br></br> [MLResult_Ensure32Bits](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLResultGlobal](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresultglobal)** <br></br> { <br></br>[MLResult_Ok](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-ok) = MLResultAPIPrefix_Global,<br></br> [MLResult_Pending](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-pending),<br></br> [MLResult_Timeout](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-timeout),<br></br> [MLResult_Locked](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-locked),<br></br> [MLResult_UnspecifiedFailure](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-unspecifiedfailure),<br></br> [MLResult_InvalidParam](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-invalidparam),<br></br> [MLResult_AllocFailed](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-allocfailed),<br></br> [MLResult_PermissionDenied](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-permissiondenied),<br></br> [MLResult_NotImplemented](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-notimplemented),<br></br> [MLResult_ClientLimitExceeded](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-clientlimitexceeded),<br></br> [MLResult_PoseNotFound](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-posenotfound),<br></br> [MLResult_IncompatibleSKU](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-incompatiblesku),<br></br> [MLResult_PerceptionSystemNotStarted](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-perceptionsystemnotstarted),<br></br> [MLResult_IllegalState](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-illegalstate),<br></br> [MLResult_LicenseError](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-licenseerror),<br></br> [MLResult_InvalidTimestamp](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-invalidtimestamp),<br></br> [MLResult_Ensure32Bits](/api-ref/api/Files/ml__api_8h.md#enums-mlresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Functions
 
@@ -119,6 +119,7 @@ title: ml_api.h
 | MLResult_PerceptionSystemNotStarted | | Operation failed because the Perception System was not started. |
 | MLResult_IllegalState | | Operation failed because it has been invoked at the wrong time. |
 | MLResult_LicenseError | | Operation failed because of missing/incompatible license. |
+| MLResult_InvalidTimestamp | | Operation failed because the timestamp parameter was outside the expected range. |
 | MLResult_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -551,6 +552,7 @@ typedef enum MLResultGlobal {
   MLResult_PerceptionSystemNotStarted,
   MLResult_IllegalState,
   MLResult_LicenseError,
+  MLResult_InvalidTimestamp,
   MLResult_Ensure32Bits = 0x7FFFFFFF
 } MLResultGlobal;
 
@@ -573,6 +575,7 @@ ML_STATIC_INLINE const char* ML_CALL MLGetResultString(MLResult result_code) {
     case MLResult_PerceptionSystemNotStarted: return "MLResult_PerceptionSystemNotStarted";
     case MLResult_IllegalState: return "MLResult_IllegalState";
     case MLResult_LicenseError: return "MLResult_LicenseError";
+    case MLResult_InvalidTimestamp: return "MLResult_InvalidTimestamp";
     default: return "Unknown";
   }
 }

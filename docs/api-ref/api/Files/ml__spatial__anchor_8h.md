@@ -11,47 +11,47 @@ title: ml_spatial_anchor.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md)** <br></br>A structure containing information about the device's localization state.  |
-| struct | **[MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md)** <br></br>A structure representing a user-defined Spatial Anchor.  |
-| struct | **[MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md)** <br></br>A structure used to populate anchor creation info when creating a new Spatial Anchor.  |
-| struct | **[MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md)** <br></br>A collection of filters for Spatial Anchor queries.  |
+| struct | **[MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md)** <br></br>A structure containing information about the device's localization state.  |
+| struct | **[MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md)** <br></br>A structure representing a user-defined Spatial Anchor.  |
+| struct | **[MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md)** <br></br>A structure used to populate anchor creation info when creating a new Spatial Anchor.  |
+| struct | **[MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md)** <br></br>A collection of filters for Spatial Anchor queries.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) | **[MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchorlocalizationinfo)** <br></br>A structure containing information about the device's localization state.  |
-| typedef struct [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) | **[MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchor)** <br></br>A structure representing a user-defined Spatial Anchor.  |
-| typedef struct [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) | **[MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchorcreateinfo)** <br></br>A structure used to populate anchor creation info when creating a new Spatial Anchor.  |
-| typedef struct [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) | **[MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchorqueryfilter)** <br></br>A collection of filters for Spatial Anchor queries.  |
+| typedef struct [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) | **[MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchorlocalizationinfo)** <br></br>A structure containing information about the device's localization state.  |
+| typedef struct [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) | **[MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchor)** <br></br>A structure representing a user-defined Spatial Anchor.  |
+| typedef struct [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) | **[MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchorcreateinfo)** <br></br>A structure used to populate anchor creation info when creating a new Spatial Anchor.  |
+| typedef struct [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) | **[MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#struct-mlspatialanchorqueryfilter)** <br></br>A collection of filters for Spatial Anchor queries.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 28](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-anonymous-enum-28)** <br></br> { <br></br>[MLResultAPIPrefix_SpatialAnchor](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlresultapiprefix-spatialanchor) = ( 0x439  << 16),<br></br> [MLSpatialAnchor_MaxSpaceNameLength](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchor-maxspacenamelength) = 64<br></br>} |
-| enum | **[MLSpatialAnchorResult](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorresult)** <br></br> { <br></br>[MLSpatialAnchorResult_MaxAnchorLimitReached](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-maxanchorlimitreached) = MLResultAPIPrefix_SpatialAnchor,<br></br> [MLSpatialAnchorResult_MinDistanceThresholdExceeded](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-mindistancethresholdexceeded),<br></br> [MLSpatialAnchorResult_InsufficientMapping](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-insufficientmapping),<br></br> [MLSpatialAnchorResult_InvalidId](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-invalidid),<br></br> [MLSpatialAnchorResult_InvalidExpirationTimestamp](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-invalidexpirationtimestamp),<br></br> [MLSpatialAnchorResult_NotLocalized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-notlocalized),<br></br> [MLSpatialAnchorResult_ServerError](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-servererror),<br></br> [MLSpatialAnchorResult_ServiceUnavailable](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-serviceunavailable),<br></br> [MLSpatialAnchorResult_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>SpatialAnchor-specific return codes.  |
-| enum | **[MLSpatialAnchorLocalizationStatus](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorlocalizationstatus)** <br></br> { <br></br>[MLSpatialAnchorLocalizationStatus_NotLocalized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-notlocalized),<br></br> [MLSpatialAnchorLocalizationStatus_Localized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-localized),<br></br> [MLSpatialAnchorLocalizationStatus_LocalizationPending](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-localizationpending),<br></br> [MLSpatialAnchorLocalizationStatus_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current localization status.  |
-| enum | **[MLSpatialAnchorMappingMode](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchormappingmode)** <br></br> { <br></br>[MLSpatialAnchorMappingMode_OnDevice](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-ondevice),<br></br> [MLSpatialAnchorMappingMode_ARCloud](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-arcloud),<br></br> [MLSpatialAnchorMappingMode_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current mapping mode, set via settings.  |
+| enum | **[Anonymous Enum 28](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enums-anonymous-enum-28)** <br></br> { <br></br>[MLResultAPIPrefix_SpatialAnchor](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlresultapiprefix-spatialanchor) = ( 0x439  << 16),<br></br> [MLSpatialAnchor_MaxSpaceNameLength](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchor-maxspacenamelength) = 64<br></br>} |
+| enum | **[MLSpatialAnchorResult](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorresult)** <br></br> { <br></br>[MLSpatialAnchorResult_MaxAnchorLimitReached](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-maxanchorlimitreached) = MLResultAPIPrefix_SpatialAnchor,<br></br> [MLSpatialAnchorResult_MinDistanceThresholdExceeded](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-mindistancethresholdexceeded),<br></br> [MLSpatialAnchorResult_InsufficientMapping](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-insufficientmapping),<br></br> [MLSpatialAnchorResult_InvalidId](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-invalidid),<br></br> [MLSpatialAnchorResult_InvalidExpirationTimestamp](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-invalidexpirationtimestamp),<br></br> [MLSpatialAnchorResult_NotLocalized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-notlocalized),<br></br> [MLSpatialAnchorResult_ServerError](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-servererror),<br></br> [MLSpatialAnchorResult_ServiceUnavailable](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-serviceunavailable),<br></br> [MLSpatialAnchorResult_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>SpatialAnchor-specific return codes.  |
+| enum | **[MLSpatialAnchorLocalizationStatus](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorlocalizationstatus)** <br></br> { <br></br>[MLSpatialAnchorLocalizationStatus_NotLocalized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-notlocalized),<br></br> [MLSpatialAnchorLocalizationStatus_Localized](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-localized),<br></br> [MLSpatialAnchorLocalizationStatus_LocalizationPending](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-localizationpending),<br></br> [MLSpatialAnchorLocalizationStatus_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchorlocalizationstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current localization status.  |
+| enum | **[MLSpatialAnchorMappingMode](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchormappingmode)** <br></br> { <br></br>[MLSpatialAnchorMappingMode_OnDevice](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-ondevice),<br></br> [MLSpatialAnchorMappingMode_ARCloud](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-arcloud),<br></br> [MLSpatialAnchorMappingMode_Ensure32Bits](/api-ref/api/Files/ml__spatial__anchor_8h.md#enums-mlspatialanchormappingmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Mapping mode.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLSpatialAnchorLocalizationInfoInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorlocalizationinfoinit)**([MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * inout_info)<br></br>Initialize default values for [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md).  |
-| void | **[MLSpatialAnchorInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorinit)**([MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * inout_anchor)<br></br>Initialize default values for a [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) structure.  |
-| void | **[MLSpatialAnchorCreateInfoInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorcreateinfoinit)**([MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * inout_info)<br></br>Initialize default values for a [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) structure.  |
-| void | **[MLSpatialAnchorQueryFilterInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorqueryfilterinit)**([MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * inout_query_filter)<br></br>Initializes the default values for a query filter.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorTrackerCreate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackercreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a Spatial Anchor tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorTrackerDestroy](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackerdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy a previously created Spatial Anchor tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorCreate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * create_info, [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * out_anchor)<br></br>Create a new local Spatial Anchor at the desired location.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorPublish](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorpublish)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)<br></br>Publish an existing local Spatial Anchor to the persistent backend.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorDelete](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchordelete)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)<br></br>Delete an existing Spatial Anchor.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorUpdate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorupdate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * anchor)<br></br>Update a Spatial Anchor's properties.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorQueryCreate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerycreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * query_filter, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_query_handle, uint32_t * out_results_count)<br></br>Create a new query for Spatial Anchors in the current space.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorQueryDestroy](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerydestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) query_handle)<br></br>Destroy a previously created query handle and release its associated resources.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorQueryGetResult](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerygetresult)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) query_handle, uint32_t first_index, uint32_t last_index, [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * out_results)<br></br>Get the result of a previous Spatial Anchor query.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorGetLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorgetlocalizationinfo)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * out_localization_info)<br></br>Get the current localization status of the device.  |
+| void | **[MLSpatialAnchorLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorlocalizationinfoinit)**([MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * inout_info)<br></br>Initialize default values for [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md).  |
+| void | **[MLSpatialAnchorInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorinit)**([MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * inout_anchor)<br></br>Initialize default values for a [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) structure.  |
+| void | **[MLSpatialAnchorCreateInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorcreateinfoinit)**([MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * inout_info)<br></br>Initialize default values for a [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) structure.  |
+| void | **[MLSpatialAnchorQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorqueryfilterinit)**([MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * inout_query_filter)<br></br>Initializes the default values for a query filter.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorTrackerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackercreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a Spatial Anchor tracker.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorTrackerDestroy](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackerdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy a previously created Spatial Anchor tracker.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * create_info, [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * out_anchor)<br></br>Create a new local Spatial Anchor at the desired location.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorPublish](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorpublish)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)<br></br>Publish an existing local Spatial Anchor to the persistent backend.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorDelete](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchordelete)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)<br></br>Delete an existing Spatial Anchor.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorUpdate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorupdate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * anchor)<br></br>Update a Spatial Anchor's properties.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorQueryCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerycreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * query_filter, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_query_handle, uint32_t * out_results_count)<br></br>Create a new query for Spatial Anchors in the current space.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorQueryDestroy](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerydestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) query_handle)<br></br>Destroy a previously created query handle and release its associated resources.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorQueryGetResult](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerygetresult)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) query_handle, uint32_t first_index, uint32_t last_index, [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * out_results)<br></br>Get the result of a previous Spatial Anchor query.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpatialAnchorGetLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorgetlocalizationinfo)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * out_localization_info)<br></br>Get the current localization status of the device.  |
 
 ## Enums Documentation
 
@@ -60,7 +60,7 @@ title: ml_spatial_anchor.h
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLResultAPIPrefix_SpatialAnchor |  ( 0x439  << 16)| Defines the prefix for MLSpatialAnchorResult codes. |
-| MLSpatialAnchor_MaxSpaceNameLength |  64| Maximum size for the name of the space in the [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) structure. |
+| MLSpatialAnchor_MaxSpaceNameLength |  64| Maximum size for the name of the space in the [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) structure. |
 
 
 
@@ -82,7 +82,7 @@ title: ml_spatial_anchor.h
 | MLSpatialAnchorResult_InvalidExpirationTimestamp | | The provided expiration suggestion was not valid. |
 | MLSpatialAnchorResult_NotLocalized | | The operation cannot be completed because the device has not yet localized. |
 | MLSpatialAnchorResult_ServerError | | There was an error communicating with the server. |
-| MLSpatialAnchorResult_ServiceUnavailable | | The operation failed because the underlying service is not yet available. |
+| MLSpatialAnchorResult_ServiceUnavailable | | The operation failed because the underlying service is not yet available, retry later. |
 | MLSpatialAnchorResult_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -115,6 +115,10 @@ The current localization status.
 
 
 
+:::caution Deprecated
+Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationStatus. 
+:::
+
 
 **API Level:**
   * 20
@@ -134,9 +138,13 @@ The current localization status.
 
 
 
-The current mapping mode, set via settings. 
+Mapping mode. 
 
 
+
+:::caution Deprecated
+Deprecated since 1.3.0. Scheduled for removal. 
+:::
 
 
 **API Level:**
@@ -160,7 +168,11 @@ A structure containing information about the device's localization state.
 
 
 
-[More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md)
+[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md)
+
+:::caution Deprecated
+Deprecated since 1.3.0. Scheduled for removal. Replaced by [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md). 
+:::
 
 
 **API Level:**
@@ -181,7 +193,7 @@ A structure representing a user-defined Spatial Anchor.
 
 
 
-[More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md)
+[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md)
 
 
 **API Level:**
@@ -202,7 +214,7 @@ A structure used to populate anchor creation info when creating a new Spatial An
 
 
 
-[More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md)
+[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md)
 
 
 **API Level:**
@@ -223,11 +235,11 @@ A collection of filters for Spatial Anchor queries.
 
 Filters that have been set will be combined via logical conjunction. E.g. results must match the ids filter AND fall within the radius constraint when both have been set.
 
-This struct must be initialized by calling [MLSpatialAnchorQueryFilterInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorqueryfilterinit) before use.
+This struct must be initialized by calling [MLSpatialAnchorQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorqueryfilterinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md)
+[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md)
 
 
 **API Level:**
@@ -249,19 +261,23 @@ static inline void MLSpatialAnchorLocalizationInfoInit(
 )
 ```
 
-Initialize default values for [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md). 
+Initialize default values for [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * |inout_info|The localization info to initialize.|
+| [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * |inout_info|The localization info to initialize.|
 **Required Permissions**:
 
   * None 
 
 
 
+
+:::caution Deprecated
+Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceLocalizationResultInit. 
+:::
 
 
 **API Level:**
@@ -280,13 +296,13 @@ static inline void MLSpatialAnchorInit(
 )
 ```
 
-Initialize default values for a [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) structure. 
+Initialize default values for a [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) structure. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |inout_anchor|The anchor to initialize.|
+| [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |inout_anchor|The anchor to initialize.|
 **Required Permissions**:
 
   * None 
@@ -311,13 +327,13 @@ static inline void MLSpatialAnchorCreateInfoInit(
 )
 ```
 
-Initialize default values for a [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) structure. 
+Initialize default values for a [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) structure. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * |inout_info|The info struct to initialize.|
+| [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * |inout_info|The info struct to initialize.|
 **Required Permissions**:
 
   * None 
@@ -348,7 +364,7 @@ Initializes the default values for a query filter.
 
 |  |   |   |
 |--|--|--|
-| [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * |inout_query_filter|The filter to initialize.|
+| [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * |inout_query_filter|The filter to initialize.|
 **Required Permissions**:
 
   * None 
@@ -419,7 +435,7 @@ Destroy a previously created Spatial Anchor tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a Spatial Anchor tracker created by [MLSpatialAnchorCreate()](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorcreate).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a Spatial Anchor tracker created by [MLSpatialAnchorCreate()](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorcreate).|
 
 **Returns**
 
@@ -461,8 +477,8 @@ Create a new local Spatial Anchor at the desired location.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to a Spatial Anchor tracker. |
-| const [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * |create_info|A struct containing the creation info for the new anchor. |
-| [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |out_anchor|The created anchor.|
+| const [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) * |create_info|A struct containing the creation info for the new anchor. |
+| [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |out_anchor|The created anchor.|
 
 **Returns**
 
@@ -522,7 +538,7 @@ Publish an existing local Spatial Anchor to the persistent backend.
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_InvalidId|Invalid Id provided. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_MaxAnchorLimitReached|Maximum anchor limit reached. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_MinDistanceThresholdExceeded|Minimum distance threshold exceeded. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_ServerError|Server error occured.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_ServerError|Server error occurred.|
 **Required Permissions**:
 
   * None 
@@ -568,7 +584,7 @@ Delete an existing Spatial Anchor.
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters was null. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The anchor was successfully deleted. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_InvalidId|Invalid Id provided. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_ServerError|Server error occured.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_ServerError|Server error occurred.|
 **Required Permissions**:
 
   * None 
@@ -603,7 +619,7 @@ Update a Spatial Anchor's properties.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to a Spatial Anchor tracker. |
-| const [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |anchor|The anchor containing the desired updated properties.|
+| const [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |anchor|The anchor containing the desired updated properties.|
 
 **Returns**
 
@@ -613,7 +629,7 @@ Update a Spatial Anchor's properties.
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The anchor was successfully updated. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_InvalidId|Invalid Id provided. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_InvalidExpirationTimestamp|Invalid expiration timestamp. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_ServerError|Server error occured.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_ServerError|Server error occurred.|
 **Required Permissions**:
 
   * None 
@@ -650,7 +666,7 @@ Create a new query for Spatial Anchors in the current space.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to a Spatial Anchor tracker. |
-| const [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * |query_filter|The filter structure for the query. |
+| const [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) * |query_filter|The filter structure for the query. |
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_query_handle|The handle for this query to be used with MLSpatialAnchorQueryGetResult. |
 | uint32_t * |out_results_count|The total number of entries found by the query. This can be any number between 0 and max_results.|
 
@@ -660,14 +676,14 @@ Create a new query for Spatial Anchors in the current space.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters was null. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query executed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified error occured. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified error occurred. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_NotLocalized|Not localized to a space.|
 **Required Permissions**:
 
   * None 
 
 
-It is the responsibility of the caller to call [MLSpatialAnchorQueryDestroy](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerydestroy) with the query handle returned from this function after the results are no longer needed.
+It is the responsibility of the caller to call [MLSpatialAnchorQueryDestroy](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerydestroy) with the query handle returned from this function after the results are no longer needed.
 
 
 
@@ -742,7 +758,7 @@ Get the result of a previous Spatial Anchor query.
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |query_handle|Handle to a query obtained from MLSpatialAnchorQuery. |
 | uint32_t |first_index|The first index. |
 | uint32_t |last_index|The last index. |
-| [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |out_results|An array of (last_index - first_index + 1) size to hold the query results.|
+| [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) * |out_results|An array of (last_index - first_index + 1) size to hold the query results.|
 
 **Returns**
 
@@ -750,7 +766,7 @@ Get the result of a previous Spatial Anchor query.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query executed successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters was incorrect. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified failure occured. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified failure occurred. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpatialAnchorResult_NotLocalized|Not localized to a space.|
 **Required Permissions**:
 
@@ -786,7 +802,7 @@ Get the current localization status of the device.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to a Spatial Anchor tracker. |
-| [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * |out_localization_info|The localization info structure to be populated.|
+| [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) * |out_localization_info|The localization info structure to be populated.|
 
 **Returns**
 
@@ -794,13 +810,17 @@ Get the current localization status of the device.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query executed successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters was incorrect. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified failure occured.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified failure occurred.|
 **Required Permissions**:
 
   * None 
 
 
 
+
+:::caution Deprecated
+Deprecated since 1.3.0. Scheduled for removal. Replaced by MLSpaceGetLocalizationResult. 
+:::
 
 
 **API Level:**
@@ -882,7 +902,7 @@ typedef enum MLSpatialAnchorMappingMode {
   MLSpatialAnchorMappingMode_Ensure32Bits = 0x7FFFFFFF
 } MLSpatialAnchorMappingMode;
 
-typedef struct MLSpatialAnchorLocalizationInfo {
+typedef ML_DEPRECATED_MSG("Replaced by MLSpaceLocalizationResult.") struct MLSpatialAnchorLocalizationInfo {
   uint32_t version;
 
   MLSpatialAnchorLocalizationStatus localization_status;
@@ -896,6 +916,7 @@ typedef struct MLSpatialAnchorLocalizationInfo {
   MLCoordinateFrameUID target_space_origin;
 } MLSpatialAnchorLocalizationInfo;
 
+ML_DEPRECATED_MSG("Replaced by MLSpaceLocalizationResultInit.")
 ML_STATIC_INLINE void MLSpatialAnchorLocalizationInfoInit(MLSpatialAnchorLocalizationInfo *inout_info) {
   if (inout_info != NULL) {
     memset(inout_info, 0, sizeof(MLSpatialAnchorLocalizationInfo));
@@ -989,6 +1010,7 @@ ML_API MLResult ML_CALL MLSpatialAnchorQueryGetResult(MLHandle handle,
                                                       uint32_t last_index,
                                                       MLSpatialAnchor* out_results);
 
+ML_DEPRECATED_MSG("Replaced by MLSpaceGetLocalizationResult.")
 ML_API MLResult ML_CALL MLSpatialAnchorGetLocalizationInfo(MLHandle handle, MLSpatialAnchorLocalizationInfo* out_localization_info);
 
 ML_EXTERN_C_END

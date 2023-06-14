@@ -92,3 +92,27 @@ public static bool TryGetHeadTrackingState(
 
 -----------
 
+### bool TryGetHeadTrackingStateEx {#bool-trygetheadtrackingstateex}
+
+```csharp
+public static bool TryGetHeadTrackingStateEx(
+    InputDevice headDevice,
+    out MLHeadTracking.StateEx headTrackingState
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputDevice |headDevice||
+| out [MLHeadTracking.StateEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.StateEx.md) |headTrackingState|A structure containing information on the current state of the Head Tracking system. |
+
+
+
+
+
+
+-----------
+

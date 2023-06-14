@@ -80,7 +80,22 @@ List of supported, detectable markers (no pose info):
 
 * EAN-13 (experimental).
 * UPC-A (experimental).
-* Code 128 (experimental). 
+* Code 128 (experimental).
+Starting at API level 28 all ArUco marker, QR code and April tag poses reported from this API are consistently following the convention below.
+
+Marker axes convention: The marker has its own coordinate system (which in the case of a marker coplanar with the image plane and facing the camera means a 180° rotation around the vertical axis).
+
+In RUB coordinates, this means that we will have: 
+
+```cpp
+      y ^
+      __|___
+     |  |  |
+x <--|--+  |
+     |_____|
+```
+
+ Z-axis pointing backwards away from the camera. 
 
 
 
@@ -714,7 +729,7 @@ Max time between fully analyzed frames is 1s.
 
 
 **API Level:**
-  * 21
+  * 28
 
 
 

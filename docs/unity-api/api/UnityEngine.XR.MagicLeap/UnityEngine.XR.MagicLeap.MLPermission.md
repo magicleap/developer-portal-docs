@@ -49,6 +49,21 @@ public const string DepthCamera = "com.magicleap.permission.DEPTH_CAMERA";
 
 -----------
 
+### EyeCamera {#const-string-eyecamera}
+
+```csharp
+
+public const string EyeCamera = "com.magicleap.permission.EYE_CAMERA";
+
+```
+
+
+
+
+
+
+-----------
+
 ### EyeTracking {#const-string-eyetracking}
 
 ```csharp
@@ -144,6 +159,36 @@ public const string ReadExternalStorage = Permission.ExternalStorageRead;
 ```csharp
 
 public const string RecordAudio = Permission.Microphone;
+
+```
+
+
+
+
+
+
+-----------
+
+### SpaceImportExport {#const-string-spaceimportexport}
+
+```csharp
+
+public const string SpaceImportExport = "com.magicleap.permission.SPACE_IMPORT_EXPORT";
+
+```
+
+
+
+
+
+
+-----------
+
+### SpaceManager {#const-string-spacemanager}
+
+```csharp
+
+public const string SpaceManager = "com.magicleap.permission.SPACE_MANAGER";
 
 ```
 
