@@ -2,7 +2,7 @@
 id: arcloud-deployment-on-prem
 title: AR Cloud Custom Deployment
 sidebar_label: Custom Deployment
-sidebar_position: 3
+sidebar_position: 4
 date: 02/07/2023
 tags: [ARCloud, Cloud, Kubernetes, Istio, Helm]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm]
