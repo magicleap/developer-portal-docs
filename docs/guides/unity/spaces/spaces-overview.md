@@ -1,6 +1,6 @@
 ﻿---
 id: spaces-overview
-title: Eye Tracking Overview
+title: ML Spaces Overview
 sidebar_position: 1
 date: 2/16/2022
 tags: [Unity, Spaces, ARCloud]
@@ -19,7 +19,7 @@ A Magic Leap Space is a container that holds metadata about your scanned environ
 
 **Localization Requests:** The Magic Leap Space API enables applications to query the list of Spaces available and discern the Space for device localization. To list the Spaces and initiate localization, the application needs to create a Space Manager. However, only one manager instance can be created per application and this API is not thread safe.
 
-**Importing and Exporting Spaces:** Magic Leap Space API supports exporting and importing on device Spaces. Applications cannot export AR Cloud spaces. There is no need to create a Magic Leap Space manager to import/export spaces but the application will need additional permissions to import/export spaces: `com.magicleap.permission.SPACE_IMPORT_EXPORT` (protection level: dangerous). The format of the exported Space data can change with OS version updates. Backwards compatibility: Space exported using OS version n should work on OS versions up to and including OS version n-4. Forwards compatibility: Space exported using OS version n is not guaranteed to work on OS versions > n. Developers are strongly encouraged to encrypt the exported Magic Leap Spaces.
+**Importing and Exporting Spaces:** Magic Leap Space API supports exporting and importing on device Spaces. Applications cannot export AR Cloud spaces. Applications will need additional permissions to import/export spaces: `com.magicleap.permission.SPACE_IMPORT_EXPORT` (protection level: dangerous). The format of the exported Space data can change with OS version updates. Backwards compatibility: Space exported using OS version n should work on OS versions up to and including OS version n-4. Forwards compatibility: Space exported using OS version n is not guaranteed to work on OS versions > n. Developers are strongly encouraged to encrypt the exported Magic Leap Spaces.
 
 ## MLSpace Structures
 The MLSpace API provides several structures that help you manage and interact with your Spaces, including:
