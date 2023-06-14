@@ -19,14 +19,14 @@ date: 06/13/2023
 ## What's New
   * UI in ML Hub
     * The Eye Gaze panel has been extended to expose gaze recognition properties.
-    * Added menu commands *Application Simulator > Kill Backend Processes...* and *Application Simulator > Purge Generated Files...*.  
-    The command *kill backend processes* allows the user to clean up processes and start a fresh session when things have gone wrong from the last session.
+    * Added menu commands `Application Simulator > Kill Backend Processes...` and `Application Simulator > Purge Generated Files...`.  
+    The command `kill backend processes` allows the user to clean up processes and start a fresh session when things have gone wrong from the last session.
   * App Sim Runtime
     * Fixed issues around launching Device and Hybrid modes.
   * C API Support
     * Added support for gaze recognition APIs in all three modes.
   * App Sim for Unity
-  	* Added a diagnostic tool *Window > Magic Leap App Simulator > App Sim Diagnostic Tool* that compares the installed versions of package dependencies with the expected versions. Users are expected to update to the correct versions of the dependencies when mismatch is reported.
+  	* Added a diagnostic tool `Window > Magic Leap App Simulator > App Sim Diagnostic Tool` that compares the installed versions of package dependencies with the expected versions. Users are expected to update to the correct versions of the dependencies when mismatch is reported.
     * Added logic for detecting ADB process termination and	reporting it to user. This helps resolve issues involving multiple ADB installations.
 	* Added logic for reporting that a permission prompt is up on the headset when using Device or Hybrid modes.
 
@@ -51,8 +51,8 @@ date: 06/13/2023
 
   * C API Support
     * Adapted to several ML2 API changes.
-    * Added support for <b>ml_marker_tracking</b> APIs in Simulator mode.
-    * Added support for <b>ml_gesture_classification</b> APIs in Device mode.
+    * Added support for *ml_marker_tracking* APIs in Simulator mode.
+    * Added support for *ml_gesture_classification* APIs in Device mode.
 			
   * ZIF library
     * Fixed occasional crash on session startup.
@@ -62,13 +62,13 @@ date: 06/13/2023
     * Added Marker Tracking panel that closely mimics the newly added panel in the Hub.
 
 ## Known Issues
-  * ML Hub and Unity want different versions of <b>adb</b>.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like  
+  * ML Hub and Unity want different versions of `adb`.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like  
   `Multiple adb server instances found ...`  
   This will have the side effect of corrupting any App Sim Device or Hybrid sessions.
   To work around this, have ML Hub use the same adb as Unity.  
-  Use the new ML Hub `Setting &gt; General &gt; Developer &gt; Use custom adb` to point to the same version configured under Unity in 
-  <code>External Tools &gt; Android &gt; Android SDK tools</code> (adb is at `platform-tools/adb[.exe])`.
-  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the *Current resolution scale* on panel *Rendering > Device View* to 0.5 in this case.
+  Use the new ML Hub `Setting > General > Developer > Use custom adb` to point to the same version configured under Unity in 
+  `External Tools > Android > Android SDK tools` (adb is at `platform-tools/adb[.exe]`).
+  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the `Current resolution scale` on panel `Rendering > Device View` to 0.5 in this case.
 
 # Version 3.3.0
 
@@ -92,6 +92,6 @@ In this release, product branding has changed.  "Zero Iteration" is now "Magic L
 
   * ML Hub and Unity want different versions of **adb**.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like `Multiple adb server instances found ...`.  This will have the side effect of corrupting any App Sim Device or Hybrid sessions.  
   To work around this, have ML Hub use the same adb as Unity.  
-  Use the new ML Hub <code>Setting &gt; General &gt; Developer &gt; Use custom adb</code> to point to the same version configured under Unity in `External Tools &gt; Android &gt; Android SDK tools` (adb is at `platform-tools/adb[.exe]`).
+  Use the new ML Hub `Setting > General > Developer > Use custom adb` to point to the same version configured under Unity in `External Tools > Android > Android SDK tools` (adb is at `platform-tools/adb[.exe]`).
   * When loading .session files that have state fields set (non-Transform properties in Head Pose, Controller, Hand Tracking, Eye Fixation) these will not show up as "modified" and cannot be reset.  Instead, manually change them back to their default values if needed.
-  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the Current resolution scale (Rendering > Device View) to 0.5 in this case.
+  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the `Current resolution scale` in panel `Rendering > Device View` to 0.5 in this case.
