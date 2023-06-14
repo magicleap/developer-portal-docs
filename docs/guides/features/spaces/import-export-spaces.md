@@ -14,7 +14,7 @@ The Magic Leap allows developers to import and export spaces from other devices 
 ### Prerequisites
 
 - A Magic Leap 2 that has a high quality map of the space you want to import.
-- If you are using this feature for co-location, the space will need to contain at least 1 Spatial Anchor. These anchors can be created using the `MLSpatialAnchor API` ([Unity](/docs/guides/unity/perception/anchors/spatial-anchors.md),[Native](/docs/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md)). You can also use the sdk test/sample applications to create anchors. Any anchors created while localized to the space will be exported.
+- If you are using this feature for co-location, the space will need to contain at least 1 Spatial Anchor. These anchors can be created using the `MLSpatialAnchor API` ([Unity](/docs/guides/unity/perception/anchors/spatial-anchors.md),[Native](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md)). You can also use the sdk test/sample applications to create anchors. Any anchors created while localized to the space will be exported.
 
 ### Exporting a Space
 

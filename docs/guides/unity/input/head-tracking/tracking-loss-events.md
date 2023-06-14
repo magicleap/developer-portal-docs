@@ -57,7 +57,7 @@ var headDevice = InputSubsystem.Utils.FindMagicLeapDevice(
     InputDeviceCharacteristics.HeadMounted | InputDeviceCharacteristics.TrackedDevice);
 
   if (headDevice.isValid && InputSubsystem.Extensions.MLHeadTracking.TryGetStateEx(
-    headDevice, out InputSubsystem.Extensions.MLHeadTracking.StateEx state);
+    headDevice, out InputSubsystem.Extensions.MLHeadTracking.StateEx state))
     {
 
         Debug.Log($"Headpose Confidence: {state.Confidence:0.00}");
