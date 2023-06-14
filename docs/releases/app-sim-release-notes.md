@@ -31,7 +31,7 @@ date: 06/13/2023
 	* Added logic for reporting that a permission prompt is up on the headset when using Device or Hybrid modes.
 
 ## Known Issues
-  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the Current resolution scale (on panel *Rendering > Device View*) to 0.5 in this case.
+  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the Current resolution scale on panel *Rendering > Device View* to 0.5 in this case.
 
 # Version 3.4.0
 ## What's New
@@ -63,13 +63,12 @@ date: 06/13/2023
 
 ## Known Issues
   * ML Hub and Unity want different versions of <b>adb</b>.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like  
-  <code>Multiple adb server instances found ...</code>.  
+  `Multiple adb server instances found ...`  
   This will have the side effect of corrupting any App Sim Device or Hybrid sessions.
   To work around this, have ML Hub use the same adb as Unity.  
-  Use the new ML Hub <code>Setting &gt; General &gt; Developer &gt; Use custom adb</code> to point to the same version configured under Unity in 
-  <code>External Tools &gt; Android &gt; Android SDK tools</code> (adb is at <code>platform-tools/adb[.exe]</code>).
-
-  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the *Current resolution scale* (*Rendering > Device View*) to 0.5 in this case.
+  Use the new ML Hub `Setting &gt; General &gt; Developer &gt; Use custom adb` to point to the same version configured under Unity in 
+  <code>External Tools &gt; Android &gt; Android SDK tools</code> (adb is at `platform-tools/adb[.exe])`.
+  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the *Current resolution scale* on panel *Rendering > Device View* to 0.5 in this case.
 
 # Version 3.3.0
 
@@ -91,8 +90,8 @@ In this release, product branding has changed.  "Zero Iteration" is now "Magic L
 
 ## Known Issues
 
-  * ML Hub and Unity want different versions of <b>adb</b>.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like <code>Multiple adb server instances found ...</code>.  This will have the side effect of corrupting any App Sim Device or Hybrid sessions.  
+  * ML Hub and Unity want different versions of **adb**.  If these are run side-by-side, Unity will unexpectedly kill ML Hub' adb with a console message like `Multiple adb server instances found ...`.  This will have the side effect of corrupting any App Sim Device or Hybrid sessions.  
   To work around this, have ML Hub use the same adb as Unity.  
-  Use the new ML Hub <code>Setting &gt; General &gt; Developer &gt; Use custom adb</code> to point to the same version configured under Unity in <code>External Tools &gt; Android &gt; Android SDK tools</code> (adb is at <code>platform-tools/adb[.exe]</code>).
+  Use the new ML Hub <code>Setting &gt; General &gt; Developer &gt; Use custom adb</code> to point to the same version configured under Unity in `External Tools &gt; Android &gt; Android SDK tools` (adb is at `platform-tools/adb[.exe]`).
   * When loading .session files that have state fields set (non-Transform properties in Head Pose, Controller, Hand Tracking, Eye Fixation) these will not show up as "modified" and cannot be reset.  Instead, manually change them back to their default values if needed.
   * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the Current resolution scale (Rendering > Device View) to 0.5 in this case.
