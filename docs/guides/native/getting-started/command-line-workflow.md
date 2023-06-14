@@ -41,7 +41,7 @@ After opening your preferred command line interface (CLI), you must set up the *
 ```shell
 set ANDROID_HOME=%USERPROFILE%\AppData\Local\Android\sdk
 
-set MLSDK=%USERPROFILE%\MagicLeap\mlsdk\<mlsdk_folder_name>
+set MLSDK=%USERPROFILE%\MagicLeap\mlsdk\<mlsdk_version>
 
 set JAVA_HOME=%USERPROFILE%\jdk-11
 ```
@@ -50,9 +50,9 @@ set JAVA_HOME=%USERPROFILE%\jdk-11
  <TabItem value="mac" label="MacOS">
 
 ```shell
-export ANDROID_HOME=$USER/AppData/Local/Android/sdk
+export ANDROID_HOME=~/Library/Android/sdk
 
-export MLSDK=$USER/MagicLeap/mlsdk/<mlsdk_folder_name>
+export MLSDK=~/MagicLeap/mlsdk/<mlsdk_version>
 
 export JAVA_HOME=$USER/jdk-11
 ```
@@ -78,6 +78,7 @@ The `JAVA_HOME` value may be different, verify its location by running
 - All build.py scripts by default build both release and debug apps. If you only wish to build debug apps use `--config debug`. If you wish to build release apps `--config release`.
 - Make sure that that `app_framework` and apps are built for the same config (debug vs release).
 
+Python build scripts are available for the C-API samples as well as the application framework upon which they are built. To run a full clean build using any of the build scripts you can use the following command:
 
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
@@ -108,7 +109,7 @@ python3 build.py --clean
 </Tabs>
 
 :::info
-If you receive errors that the `Vulkan_LIBRARY` is missing, make sure you have [Vulkan](https://www.lunarg.com/vulkan-sdk/) installed on your machine.
+If you receive errors that the `Vulkan_LIBRARY` is missing, make sure you have the [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/) installed on your machine.
 :::
 
 ## Building the Application Framework

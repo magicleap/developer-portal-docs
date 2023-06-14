@@ -46,7 +46,7 @@ When you are ready to deploy your application to the device, you can use the **B
 1. Connect and power on the device.
 2. Open the Build Settings, **File > Build Settings**.
 3. Add your current scene by dragging the scene from the Project panel to the **Scenes in Build** or clicking on **Add Open Scenes**.
-4. If you have more one than one scene in the list, uncheck all except the one you want to build.
+4. If you have more than one scene in the list, uncheck all except the one you want to build.
 5. Press **Build And Run** and select a location and name for the application (.apk)
 6. Wait for Unity to deploy the application.
 7. Put on the device and look around to find the cube.

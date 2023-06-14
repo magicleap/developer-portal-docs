@@ -11,23 +11,28 @@ description: "Demo server or a developer's desktop/laptop"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import LinuxNotice from './_linux_notice.md';
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
 import EnvFile from './_env_file.md';
 import FindIPAddress from './_find_ip.md';
+import InstallHelm from './_install_helm.md';
+import InstallHelmMacOS from './_install_helm_macos.md';
 import InstallIstio from './_install_istio.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetup from './_install_arcloud_setup.md';
 import DeploymentVerification from './_deployment_verification.md';
 import DebianDependencies from './_debian_dependencies.md';
+import MacOSDependencies from './_macos_dependencies.md';
+import WindowsDependencies from './_windows_dependencies.md';
 import RegisterDevice from './_register_device.md';
 
 This type of deployment is appropriate for any edge computing, on-premises, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
 
-## Infrastructure Setup
+<LinuxNotice />
 
-### Install Basic Dependencies
+## Setup
 
 <Tabs groupId="operating-systems">
   <TabItem value="linux" label="Debian/Ubuntu" default>
@@ -37,23 +42,7 @@ This type of deployment is appropriate for any edge computing, on-premises, or a
   </TabItem>
   <TabItem value="windows" label="Windows">
 
-#### Install the Windows Subsystem for Linux
-
-:::caution WSL 2 Notice
-All following installation instructions are assumed to be running inside an activated Windows Subsystem for Linux 2 environment (Debian or Ubuntu). See the following information about installing WSL 2:
-
-[Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
-:::
-
-```shell
-wsl --install
-```
-
-Launch the shell of the default WSL distribution:
-
-```shell
-wsl
-```
+<WindowsDependencies />
 
 #### Configure WSL
 
@@ -100,19 +89,17 @@ uname -r
 The output should be **5.15.90.1-k8s-optimized-WSL2+**.
 :::
 
-#### Install required packages inside the WSL distribution
-
 <DebianDependencies />
 
   </TabItem>
   <TabItem value="macos" label="MacOS">
 
-Install [`brew` (Homebrew)](https://brew.sh/), if needed.
+<MacOSDependencies />
 
   </TabItem>
 </Tabs>
 
-### Install Docker
+### Docker
 
 <Tabs groupId="operating-systems">
   <TabItem value="linux" label="Debian/Ubuntu" default>
@@ -146,15 +133,49 @@ Install [Docker Desktop for MacOS](https://docs.docker.com/desktop/install/mac-i
   </TabItem>
 </Tabs>
 
-### Download AR Cloud
+### Tools
+
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelm />
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelm />
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelmMacOS />
+
+  </TabItem>
+</Tabs>
+
+### AR Cloud
 
 <DownloadArcloud />
 
-### Configure Environment
+## Configure Environment
 
 <ArcloudEnvVariables />
 
 <EnvFile />
+
+## Infrastructure Setup
 
 ### Prepare Your IP Address
 
@@ -256,50 +277,6 @@ On future runs of AR Cloud setup processes, it will be important to make sure th
   </TabItem>
 </Tabs>
 
-### Install Helm
-
-:::note Helm
-The minimum version requirement is `3.9.x`.
-:::
-
-<Tabs groupId="operating-systems">
-  <TabItem value="linux" label="Debian/Ubuntu" default>
-
-Install Helm using `apt`:
-
-```shell showLineNumbers
-curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
-sudo apt-get install apt-transport-https --yes
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-sudo apt-get update
-sudo apt-get install helm
-```
-
-  </TabItem>
-  <TabItem value="windows" label="Windows">
-
-Install Helm using `apt`:
-
-```shell showLineNumbers
-curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
-sudo apt-get install apt-transport-https --yes
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-sudo apt-get update
-sudo apt-get install helm
-```
-
-  </TabItem>
-  <TabItem value="macos" label="MacOS">
-
-Install Helm with [Homebrew](https://helm.sh/docs/intro/install/#from-homebrew-macos):
-
-```shell
-brew install helm
-```
-
-  </TabItem>
-</Tabs>
-
 ## Install Istio
 
 <Tabs groupId="operating-systems">
@@ -313,7 +290,7 @@ brew install helm
 Update the Istio configuration for it to work with WSL:
 
 ```shell
-sed -ri '/values:/{n;s/(^\s+)(gateways:)/\1proxy:\n\1  privileged: true\n\1\2/}' ./setup/istio.yaml
+sed -ri '/values:/{n;s/(^\s+)(gateways:)/\1global:\n\1  proxy:\n\1    privileged: true\n\1\2/}' ./setup/istio.yaml
 ```
 
 Install Istio:

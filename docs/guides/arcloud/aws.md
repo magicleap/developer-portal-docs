@@ -8,9 +8,17 @@ tags: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 keywords: [ARCloud, Cloud, Kubernetes, Istio, Helm, AWS]
 description: "Enterprise deployment to Amazon Web Services (AWS)"
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import LinuxNotice from './_linux_notice.md';
 import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
+import ArcloudEnvDomain from './_arcloud_env_domain.md';
 import EnvFile from './_env_file.md';
+import HelmRequirements from './_helm_requirements.md';
+import InstallHelm from './_install_helm.md';
+import InstallHelmMacOS from './_install_helm_macos.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
@@ -18,37 +26,99 @@ import InstallIstioAws from './_install_istio_aws.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetupSecure from './_install_arcloud_setup_secure.md';
 import DeploymentVerificationSecure from './_deployment_verification_secure.md';
+import DebianDependencies from './_debian_dependencies.md';
+import MacOSDependencies from './_macos_dependencies.md';
+import WindowsDependencies from './_windows_dependencies.md';
 import RegisterDevice from './_register_device.md';
 
 This deployment strategy will provide a production-ready system using Amazon Web Services.
 
-## Download
+<LinuxNotice />
 
-<DownloadArcloud />
+## Setup
 
-### Configure Environment
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
 
-<ArcloudEnvVariables />
+<DebianDependencies />
 
-Set the domain where AR Cloud will be available:
+  </TabItem>
+  <TabItem value="windows" label="Windows">
 
-```shell
-export DOMAIN="arcloud.domain.tld"
-```
+<WindowsDependencies />
 
-<EnvFile />
+<DebianDependencies />
 
-### Tools
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
 
-Make sure that the following tools are installed and configured:
+<MacOSDependencies />
+
+  </TabItem>
+</Tabs>
+
+### AWS CLI
+
+To get started as quickly as possible, refer to these simple setup steps for:
 
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 - [eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
-- SSH client - a key pair is required and can be generated using:
 
-```shell
-ssh-keygen -t rsa -b 4096
-```
+### Tools
+
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelm />
+
+#### Kubectl
+
+[Installing or updating kubectl](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelm />
+
+#### Kubectl
+
+[Installing or updating kubectl](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+#### Helm
+
+<HelmRequirements />
+
+<InstallHelmMacOS />
+
+#### Kubectl
+
+[Installing or updating kubectl](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+
+  </TabItem>
+</Tabs>
+
+### AR Cloud
+
+<DownloadArcloud />
+
+## Configure Environment
+
+<ArcloudEnvVariables />
+
+<ArcloudEnvDomain />
+
+<EnvFile />
 
 ## Infrastructure Setup
 
@@ -154,7 +224,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
     --set image.repository=602401143452.dkr.ecr.eu-west-3.amazonaws.com/amazon/aws-load-balancer-controller
 ```
 
-## Cluster verification
+### Cluster verification
 
 To make sure the cluster is correctly configured you can run the following commands:
 
@@ -193,9 +263,29 @@ There should be 2 add-ons and their status should be ACTIVE.
 Update the Istio configuration for it to work with the
 [AWS LB controller](https://kubernetes-sigs.github.io/aws-load-balancer-controller/):
 
+<Tabs groupId="operating-systems">
+  <TabItem value="linux" label="Debian/Ubuntu" default>
+
 ```shell
 sed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing\n\1  service.beta.kubernetes.io/aws-load-balancer-type: nlb\n\1\2#}' ./setup/istio.yaml
 ```
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+```shell
+sed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing\n\1  service.beta.kubernetes.io/aws-load-balancer-type: nlb\n\1\2#}' ./setup/istio.yaml
+```
+
+  </TabItem>
+  <TabItem value="macos" label="MacOS">
+
+```shell
+gsed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing\n\1  service.beta.kubernetes.io/aws-load-balancer-type: nlb\n\1\2#}' ./setup/istio.yaml
+```
+
+  </TabItem>
+</Tabs>
 
 Install Istio:
 
@@ -214,13 +304,6 @@ Install Istio:
 <InstallArcloud />
 
 <InstallArcloudSetupSecure />
-
-:::caution IP-based deployment
-If you do not have a custom domain and would like to use an IP address instead, add the `--no-secure` flag to the
-command above.
-
-**This is heavily discouraged for publicly accessible deployments.**
-:::
 
 ## Verify Installation
 
