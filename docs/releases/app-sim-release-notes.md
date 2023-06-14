@@ -4,10 +4,12 @@ sidebar_position: 2
 date: 06/13/2023
 ---
 
+# Magic Leap Application Simulator Release Notes
+
 # Version 3.6.0
 
 ## What's New
-  * App Sim in ML Hub will validate graphics support of the host machine and warning user if the support is not sufficient.
+  * App Sim will validate graphics support of the host machine upon start and warn user if the support is lacking or not sufficient.
   * Channel Editor has been removed as it causes more confusion than value to the users.
 
 ## Bug Fixes
