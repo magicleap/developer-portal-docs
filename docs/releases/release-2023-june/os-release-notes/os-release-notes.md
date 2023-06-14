@@ -47,12 +47,13 @@ When device (wearable and/or compute pack appear frozen or unresponsive), use th
 ### Android Audio APIs
 - Performance and stability improvements to Android Audio APIs (AAudio, OpenSL ES).
 Support for multiple capture types for NDK APIs through device id selection:
+
 | Capture Type	| Device id |
-| ---           | ---       |
-| Voice	5       |           |
+| ------------- | --------- |
+| Voice	        | 5         |
 | Voice Comm	  | 7         |
 | Mixed (Virtual and Voice) |	11  |
-| World	|  13 |
+| World	| 13 |
 | Virtual |	15 |
 
 - Available for NDK functions like: MediaRecorder::setInputDevice() from libmedia,
