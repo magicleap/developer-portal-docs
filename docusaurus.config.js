@@ -211,6 +211,14 @@ module.exports = {
           {
             from: '/docs/guides/remote-rendering/remote-rendering-service',
             to: '/docs/guides/remote-rendering/remote-rendering'
+          },
+          {
+            from: '/docs/guides/features/media/ml-camera',
+            to: '/docs/guides/features/ml-camera'
+          },
+          {
+            from: '/docs/guides/features/media/media-codecs',
+            to: '/docs/guides/features/media-codecs'
           }
         ],
         

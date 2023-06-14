@@ -15,6 +15,9 @@ import DocCardList from '@theme/DocCardList';
 
 A keyboard that can be used in any project that supports Unity's XR Interaction Toolkit. Demo scene can be found in `Assets/XRKeyboard/Scenes/XRKeyboardExample.unity`
 
+![Magic Leap XR Keyboard](/img/xr-keyboard-unity-simple.jpg)
+
+
 ## Getting Started
 
 ### Keyboard

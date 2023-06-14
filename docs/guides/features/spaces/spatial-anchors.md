@@ -17,23 +17,56 @@ Spatial Anchors enable developers to create persistent and multi-user content. T
 
 If you are using Magic Leap's AR Cloud. Anchors will be shared between devices automatically. Meaning that no additional networking is required to have the anchors appear across all of the connected devices.
 
-## Q&A
+## Spatial Anchors
 
-- Q: Is there a way to force the mapping mode on an Magic Leap 2 inside of my application?
-  - A: The mapping mode can only be queried via the `MLSpatialAnchorLocalizationInfo` structure. Right now the user needs to launch the Spaces application to localize into a space.
-- Q: Is it possible to be notified that a certain set of anchors has changed (Created/Removed/Modified)?
-  - A: The current API design does not provide any callback/event based updates for CRUD operations. Use the `MLSpatialAnchorQueryGetResult` API to query when a change was made.
-- Q: When submitting a new anchor to a map, what is the default value for the expiration timestamp and what happens if I don't provide any expiration timestamp?
-  - A: The default value is 0. If the value is 0, then the system will keep the anchor there indefinitely.
-- Q: How do on-device maps get updated?
-  - A: Maps do not get updated automatically, think of mapping as starting from a blank canvas each time. If you are unhappy with that map you effectively “remap” the space. You can have as many (5) maps of the same space as you want -- which is why the tool is important, you can choose which map is most relevant.
-- Q: Can maps get merged together?
-  - A: Map merge is possible when using AR Cloud. For On Device Mapping and On Device Localization there is no map-merge.
-- Q: Is there an API to know in which map we re-localized?
-  - A: The use has to always explicitly choose the map (using the system tool) into which the device should localize. From then on, the device will only try to localize into that map. If the devices loses tracking then it’ll attempt to re-localize into the same map that was selected in the system. It won’t try to localize into any other map in that space. In the event that a user localizes into a new space while your app is running, you can query the localization info and use `MLSpatialAnchorLocalizationInfo.space_name`  and `MLSpatialAnchorLocalizationInfo`.space_id to identify which map into which the device is localized.
-- Q: Is there an API to check in which map my anchor was created?
-  - A: You can use `MLSpatialAnchor.space_id` to determine the map the anchor was created in.
-- Q: Is it possible to re-localize to multiple maps at the same time?
-  - A: No because we only localize to the space you choose.
-- Q: Can the map tool be part of a start-up procedure?
-  - A: Your application is able to launch the map tool using [Android Intents](/docs/guides/features/android-intents-overview.md).
+### Modes of Operation
+
+Spatial Anchor API supports two modes:
+
+   * **On-Device Mode**: Anchors are stored locally on the device and are available for multiple sessions within the same space of creation.
+   * **AR Cloud Mode**: Anchors are stored in the cloud and can be accessed from different devices in multiple sessions, provided the devices are localized to the same space where the anchors were published.
+
+### Properties of Spatial Anchors
+
+A Spatial Anchors help maintain the position and orientation of digital content in the physical world over time. Each Spatial anchor hasa unique ID, an expiration timestamp indicating its validity period, and a space ID signifying the space to which the anchor belongs.
+
+#### Anchor Expiration Timestamp
+
+When a new anchor is submitted to a map, its default expiration timestamp is 0. If left at this value, the system will keep the anchor indefinitely.
+
+## Managing Spatial Anchors
+
+Through the API, you can create, publish, update, and delete anchors based on the requirements of your application. You can also query for existing anchors using criteria such as the center point of a spatial query, a radius for the spatial query, a list of anchor IDs.
+
+## Spaces
+
+Localization is a process by which Magic Leap 2 device identifies its position in a space. Before localizing, Magic Leap 2 requires users to map the location and save it as a "Space" using the Spaces application. When Magic Leap 2 successfully localizes into a Space, it will attempt to localize into it anytime a new session starts, even across reboots. This means that if you consistently use your device at the same location, your device will recognize and localize into the Space automatically, without manual selection.
+
+### Mapping
+
+Mapping is a necessary process for device recognition and interaction with the surrounding space. Before localizing into a space you need to map the location and save it locally or to ARCloud. Currently, mapping can only be performed inside the Spaces application.
+
+### Updating Spaces
+
+Unlike localization, Spaces don't update automatically. If you want to update a Space or add additional information, you will need perform the remapping step explicitly inside the Spaces application. This workflow insures that the device will be able to localize into your space efficiently.
+
+:::caution Merging of maps is only possible when using the AR Cloud
+
+Currently, on device maps do not support mergeing or updating existing maps. Instead, you will need to delete and remap the space.
+
+:::
+
+### Localize into a Specific Space
+
+Developers can use the `MLSpace API` to localize into a specific space without leaving their application.
+
+### Localization Updates
+
+Localization data on the device is updated every 10 seconds to correct for drift. This ensures that Spatial Anchors remain accurately placed in your location, even when head pose is lost or interrupted.
+
+
+## Additional Considerations
+
+It's important to note that Magic Leap 2 doesn't support re-localizing to multiple maps simultaneously. The device only localizes into the space you've chosen.
+
+If the user is not localized when launching your application, it's possible to send them to the Spaces application and start the mapping tool using [Magic Leap's System Intents](/docs/guides/features/android-intents-overview.md). This allows you to integrate the map tool as part of a start-up procedure for your application.
