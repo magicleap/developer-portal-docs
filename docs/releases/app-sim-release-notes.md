@@ -8,7 +8,7 @@ date: 06/13/2023
 
 ## What's New
   * App Sim in ML Hub will validate graphics support of the host machine and warning user if the support is not sufficient.
-  * Channel Editor has been removed as it causes more confustion than value to the users.
+  * Channel Editor has been removed as it causes more confusion than value to the users.
 
 ## Bug Fixes
   * [Unity] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
@@ -69,7 +69,7 @@ date: 06/13/2023
   Use the new ML Hub <code>Setting &gt; General &gt; Developer &gt; Use custom adb</code> to point to the same version configured under Unity in 
   <code>External Tools &gt; Android &gt; Android SDK tools</code> (adb is at <code>platform-tools/adb[.exe]</code>).
 
-  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the *Current resolution scale* (*Rendering > Device View*) to 0.5 in this case.</li>
+  * Running apps that exercise meshing APIs may cause the rendered frame to freeze in Device mode. It is advisable to change the *Current resolution scale* (*Rendering > Device View*) to 0.5 in this case.
 
 # Version 3.3.0
 
