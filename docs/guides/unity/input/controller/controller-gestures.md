@@ -14,10 +14,6 @@ This section demonstrates how to use Magic Leap's Gesture subsystem to  receive 
 
 The example script below subscribes to the Magic Leap controller's input events, and debugs the input values to the Debug Log.
 
-:::caution
-This feature requires the `CONTROLLER_POSE` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**)
-:::
-
 ```csharp showLineNumbers
 using UnityEngine;
 using UnityEngine.InputSystem;
