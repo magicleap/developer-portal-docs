@@ -29,10 +29,6 @@ The `MagicLeapInputs.ControllerActions` is an [Action Map](https://docs.unity3d.
 View Unity's `InputActions` [Documentation](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.InputAction.html) for more information on how to read values from the callback.
 :::
 
-:::caution
-This feature requires the `CONTROLLER_POSE` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**)
-:::
-
 ```csharp
 private MagicLeapInputs mlInputs;
 private MagicLeapInputs.ControllerActions controllerActions;

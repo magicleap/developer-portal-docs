@@ -11,10 +11,6 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 The Magic Leap 2's controller input can be accessed using Unity's [Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/QuickStartGuide.html). The Magic Leap 2 SDK includes predefined action mappings, so developers can access controller input in a familiar way.
 
-:::caution
-This feature requires the `CONTROLLER_POSE` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**)
-:::
-
 This category includes the following articles:
 
 - [API Overview](/docs/guides/unity/input/controller/controller-api-overview.md) - a summary of how to get started using the Magic Leap 2 Controller Input API.
