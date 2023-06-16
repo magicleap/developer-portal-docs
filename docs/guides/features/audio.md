@@ -1,11 +1,10 @@
 ---
 id: audio
-label: Audio
 title: Audio Guidelines
 date: 05/02/2022
 sidebar_position: 12
-tags: [Features]
-keywords: [Features]
+tags: [Features, Audio]
+keywords: [Features, Audio]
 ---
 
 ## I. Introduction
@@ -123,7 +122,7 @@ To ensure a seamless flow within your application, the first question to ask you
 
 Consider three categories: low-risk attention, medium attention, and high attention.
 
-### Low-Risk Attention:
+#### Low-Risk Attention:
 
 Examples include informative updates, non-critical notifications, or minor status changes.
 
@@ -132,7 +131,7 @@ Design audio cues that are noticeable but not overly disruptive, allowing the us
 Consider an approach of a “by the way” sound language, that will inform users but can keep the flow of the app. 
 Consider using organic sounds, as those are less obvious in the user’s perception 
 
-### Medium Attention:
+#### Medium Attention:
 
 Examples include someone joining a call, incoming messages, pending tasks.
 
@@ -142,7 +141,7 @@ Balance the audio cues to ensure they are attention-grabbing without causing und
 
 Consider developing a certain pattern/audio language (like a specific tone) that will inform the listener on what’s going on without interrupting the flow (for example : a notification sound can have a distinct characteristic that users will associate with an incoming message, and will know based on the sound language what the message is) 
 
-### High Attention:
+#### High Attention:
 
 Those cues require immediate user attention. Examples include errors, security breaches, or time-sensitive notifications.
 
