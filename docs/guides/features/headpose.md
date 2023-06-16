@@ -1,7 +1,7 @@
 ---
 id: headpose
 title: Headpose 
-sidebar_position: 4
+sidebar_position: 5
 date: 01/25/2023
 tags: [Headpose , Sensors, Tracking]
 keywords: [Headpose, Sensors, Tracking]

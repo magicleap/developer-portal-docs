@@ -2,7 +2,7 @@
 id: audio
 title: Audio Guidelines
 date: 05/02/2022
-sidebar_position: 12
+sidebar_position: 2
 tags: [Features, Audio]
 keywords: [Features, Audio]
 ---

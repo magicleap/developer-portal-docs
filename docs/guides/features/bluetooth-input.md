@@ -1,7 +1,7 @@
 ---
 id: bluetooth-input
 title: Bluetooth
-sidebar_position: 1
+sidebar_position: 3
 date: 01/14/2023
 tags: [Input, Bluetooth]
 keywords: [Input, Bluetooth]
