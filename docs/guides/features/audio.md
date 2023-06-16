@@ -9,7 +9,7 @@ keywords: [Features, Audio]
 
 ## I. Introduction
 
-In the dynamic world of AR applications, audio serves as a powerful tool that complements and enhances the visual experience, immersing users in a multisensory environment. While visuals play a crucial role in AR, audio brings an added layer of depth and realism, enabling developers to create truly immersive and engaging experiences. 
+In the dynamic world of AR applications, audio serves as a powerful tool that complements and enhances the visual experience, immersing users in a multisensory environment. While visuals play a crucial role in AR, audio brings an added layer of depth and realism, enabling developers to create truly immersive and engaging experiences.
 
 Unlike visuals, audio is not restricted by field of view, allowing sound to emanate from any direction around the user, asking for their attention and guiding their focus. Whether it is ambient background noise, interactive sound effects, or spatial audio-cues, audio can communicate information, confirm user interactions, and foster a deeper connection between the user and the AR environment. 
 
