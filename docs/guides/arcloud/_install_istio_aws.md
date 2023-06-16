@@ -5,14 +5,10 @@ export AWS_ELB_DOMAIN=$(kubectl -n istio-system get svc istio-ingressgateway --t
 echo $AWS_ELB_DOMAIN
 ```
 
-Update the load balancer attributes to increase the idle timeout:
-
-```shell showLineNumbers
-aws elb modify-load-balancer-attributes \
-    --load-balancer-name ${AWS_ELB_DOMAIN%%-*} \
-    --region $AWS_REGION \
-    --load-balancer-attributes ConnectionSettings={IdleTimeout=360}
-```
+:::note ELB provisioning
+It might take some time before the load balancer is provisioned. If the command above shows an error, try again a
+moment later.
+:::
 
 #### Option 1: Using a custom domain
 

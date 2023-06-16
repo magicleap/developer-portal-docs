@@ -303,6 +303,8 @@ the virtual machine image to the supported cloud providers described below.
 <Tabs groupId="cloud-providers" queryString>
   <TabItem value="gcp" label="GCP" default>
 
+Make sure you have the [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) installed.
+
 Check the [GCP documentation][gcp-image-import] or follow the steps below:
 
 1. Prepare details about your [GCP project][gcp-identifying-projects] and user account:
@@ -409,6 +411,8 @@ variables.
   </TabItem>
   <TabItem value="aws" label="AWS">
 
+Make sure you have the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) installed.
+
 Check the [AWS documentation][aws-image-import] or follow the steps below:
 
 1. Prepare details about your [AWS account][aws-find-account-id]:
@@ -430,6 +434,11 @@ Check the [AWS documentation][aws-image-import] or follow the steps below:
    export AWS_BUCKET_REGION=us-east-1
    aws s3api create-bucket --bucket $AWS_BUCKET_NAME --region $AWS_BUCKET_REGION --acl private
    ```
+
+   :::note Bucket Region
+   When importing an OVA image the S3 bucket has to be in the same region as the AWS AMI image that is created. Adjust
+   the bucket region to the one where the EC2 instance should be running.
+   :::
 
 1. Grant the [required permissions][aws-import-reqs]:
 
@@ -500,6 +509,11 @@ Check the [AWS documentation][aws-image-import] or follow the steps below:
           --policy-document "file://vmimport-role-policy.json"
       ```
 
+      :::note Multiple Buckets
+      The role policy above will overwrite any previously attached ones. If you would like to import OVA images in
+      multiple regions, create separate buckets for each region and include them in the `Resource` list above.
+      :::
+
 1. Upload the OVA image to the S3 bucket:
 
    ```shell showLineNumbers
@@ -541,13 +555,27 @@ Check the [AWS documentation][aws-image-import] or follow the steps below:
    export AWS_IMAGE_ID=ami-0abcdef1234567890
    ```
 
-1. Run an EC2 instance using the imported image:
+1. Generate an updated block device mappings file based on the imported image and modify it to use a
+   [Provisioned IOPS SSD volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/provisioned-iops.html):
+
+   ```shell showLineNumbers
+   aws ec2 describe-images --image-ids $AWS_IMAGE_ID --query 'Images[0].BlockDeviceMappings' > block-device-mappings.json
+   sed -ri 's/^(\s+)("VolumeType": )"(.+)"/\1\2"io2",\n\1"Iops": 2000/' block-device-mappings.json
+   ```
+
+   :::note GNU sed
+   The above command requires GNU sed to be installed on your system.
+   :::
+
+1. Run an EC2 instance using the imported image and the custom volume configuration file:
 
    ```shell showLineNumbers
    aws ec2 run-instances \
        --image-id $AWS_IMAGE_ID \
-       --instance-type c5.2xlarge \
-       --associate-public-ip-address
+       --instance-type c5d.2xlarge \
+       --associate-public-ip-address \
+       --ebs-optimized \
+       --block-device-mappings file://block-device-mappings.json
    ```
 
 1. Make sure the necessary [firewall](#firewall) rules are configured.
