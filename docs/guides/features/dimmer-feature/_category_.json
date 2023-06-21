@@ -1,7 +1,7 @@
 {
   "label": "Global/Segmented Dimmer",
   "collapsed": true,
-  "position": 3,
+  "position": 5,
   "link": {
     "type": "doc",
       "id": "dimmer-feature"
