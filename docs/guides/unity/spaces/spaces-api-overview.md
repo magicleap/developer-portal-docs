@@ -119,17 +119,17 @@ The `MLSpace.ExportSpace(...)` function exports a MLSpace into a binary data for
 | `in MLSpace.SpaceInfo info` | This input parameter is an instance of the `MLSpace.SpaceInfo` struct. It specifies the `SpaceId` of the MLSpace that is being exported. The `SpaceId` uniquely identifies an MLSpace. |
 | `out MLSpace.SpaceData exportData` | This output parameter is an instance of the `MLSpace.SpaceData` struct. It contains the exported data of the MLSpace, which can be saved to a file for later use. |
 
-### Permissions
-
-Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission must be requested at runtime. Without this permission, the function call will fail.
-
-### Returns
+**Returns**
 
 - `MLResult.Ok` Export was successful.
 - `MLResult.InvalidParam` One or more input parameters are not valid.
 - `MLResult.PermissionDenied` Necessary permission is missing.
 - `MLResult.UnspecifiedFailure` Operation failed for unknown reason.
 - `MLSpaceResult.UnavailableSpace` Operation failed due an unavailable Space.
+
+### Permissions
+
+Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission must be requested at runtime. Without this permission, the function call will fail.
 
 ### Export Space Example
 
@@ -186,11 +186,7 @@ The `ImportSpace` function requires two parameters:
 | `in SpaceData data` | An instance of `MLSpace.SpaceData` containing the binary data of the exported space. This data is usually loaded from a file or received from another device|
 | `out MLSpace.SpaceInfo id` | An out parameter that will contain the `MLSpace.SpaceInfo` of the imported MLSpace if the import operation is successful. |
 
-### Permissions
-
-In order to utilize the `ImportSpace` function, your application must first request and be granted the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission at runtime. Without this permission, the function call will fail.
-
-### Returns
+**Returns**
 
 - `MLResult.Ok` Import was successful.
 - `MLResult.InvalidParam One` or more input parameters are not valid.
@@ -198,6 +194,10 @@ In order to utilize the `ImportSpace` function, your application must first requ
 - `MLResult.UnspecifiedFailure` Operation failed for unknown reason.
 - `MLSpaceResult.IncompatibleSpace` Operation failed due an incompatible Space.
 - `MLSpaceResult.SpaceAlreadyExists` Operation failed because Space being imported already exists
+
+### Permissions
+
+In order to utilize the `ImportSpace` function, your application must first request and be granted the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission at runtime. Without this permission, the function call will fail.
 
 ### Import Spaces Example
 
