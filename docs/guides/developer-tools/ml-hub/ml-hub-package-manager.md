@@ -38,8 +38,6 @@ This lists the required packages for selected bundles, the version number, actio
 
 After you've made your selections in the **Change Summary** panel, click **Apply Changes** to install or update the packages.
 
-**Note:** An update removes previously installed versions and replaces it with the latest version of the package. To keep multiple versions, install the specific package version in **All**. Alternatively, you can elect to update the package and remove the uninstall selection in the **Change Summary**.
-
 When you're done installing or updating packages, close Package Manager from the Activities Menu. You can also close Package Manager from the Summary page after installation is complete.
 
 ![lab-package-manager-activities-menu](/img/ml-hub/ml_hub_exit_package.png)
