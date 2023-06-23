@@ -19,7 +19,7 @@ keywords: [Unity,Samples, MRTK, Input, UI]
 
 ## Prerequisites
 
-- Magic Leap SDK v1.1.0-dev1
+- Magic Leap SDK
 - MRTK Foundations v2.8 (see [Import MRTK](#import-mrtk) section below)
 - MRTK Examples v2.8 (see [Import MRTK](#import-mrtk) section below)
 - A [configured Magic Leap 2 Unity project](/docs/guides/unity/getting-started/configure-unity-settings.md)
