@@ -219,6 +219,10 @@ module.exports = {
           {
             from: '/docs/guides/features/media/media-codecs',
             to: '/docs/guides/features/media-codecs'
+          },
+          {
+            from: '/docs/guides/unity/permissions/permissions-levels',
+            to: '/docs/guides/unity/permissions/requesting-permissions'
           }
         ],
         

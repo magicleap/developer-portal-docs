@@ -23,7 +23,7 @@ Before continuing, you should have a very basic grasp of Android's permissions t
 
 ## Android Permissions
 
-Android permissions are not displayed in the Manifest Settings panel, only Magic Leap specific ones. Android permissions can be added manually when required. Unity does provide some settings for various Android specific permissions within the **Project Settings > Player Settings > Android Platform (Android Icon) > Other Settings** such as Internet Access and Write Permission as shown:
+Android permissions are not displayed in the Manifest Settings panel, only Magic Leap specific ones. Android permissions can be added manually when required. Unity provides some settings for various Android specific permissions within the **Project Settings > Player Settings > Android Platform (Android Icon) > Other Settings** such as Internet Access and Write Permission as shown:
 
 ![Android Permissions](/img/unity/AndroidPermissions.png)
 

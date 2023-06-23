@@ -12,14 +12,18 @@ keywords: [Permissions, Android]
 
 ### Magic Leap Minimum API Level
 
-The minimum API level is an important setting indicating to the platform which APIs are expected to be implemented. This is for backwards compatibility of newer APKs installed on older versions of the Magic Leap Android Operating system. By telling the operating system which minimum version your application supports, the operating system can determine if your APK will be compatible with its APIs.
+The minimum API level is an important setting that tells the platform which APIs your application expects to use. It ensures compatibility of newer APKs with older versions of the Magic Leap Android Operating System. By specifying the minimum version supported by your application, the operating system can check if your APK will work with its APIs.
 
-The minimum API level for all Magic Leap 2 projects should be set to at least level 20.
+:::tip
 
-The Manifest Settings panel will filter the permissions that are associated with the selected version. Anything not supported by that version will not be displayed. This version only needs to be updated when you plan on upgrading your project to take advantage of newer features as they appear on the platform.
+All Magic Leap 2 projects should set their Magic Leap Minimum API level to at least API level 20 (**Edit** > **Project Settings...**, then select  **MagicLeap** > **Permissions** from the sidebar).
+
+:::
+
+The Manifest Settings panel will filter the permissions that are associated with the selected API Level. Any permission not supported by that version will not be displayed. If you plan to use newer features as they become available, update the version accordingly.
 
 ### Android Minimum API Level
 
-Like the Magic Leap minimum API level, Android also has a minimum API level setting. For the Magic Leap platform, this should be set to level 29 explicitly. Any other setting could cause issues with some of our platform's subsystems. The setting exists in **Project Settings > Player Settings > Android Platform (Android Icon) > Other Settings**  as shown:
+In addition to the Magic Leap minimum API level, there's also a minimum API level setting for Android. For the Magic Leap platform, set it explicitly to level 29 to avoid potential issues with certain platform subsystems. You can find this setting under **Project Settings > Player Settings > Android Platform (Android Icon) > Other Settings**
 
 ![Min API Level](/img/unity/MinAPILevelPermissions.png)

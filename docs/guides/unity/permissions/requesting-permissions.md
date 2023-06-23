@@ -8,55 +8,58 @@ tags: [Permissions, Android]
 keywords: [Permissions, Android]
 ---
 
+# Requesting Permissions
 
-The Magic Leap SDK includes helper functions to make requesting and checking Magic Leap specific features easier. These functions can be accessed via the `MLPermissions` API.
+Permissions in Magic Leap applications can be categorized under two classes: **Normal** permissions (also referred to as **Install-time** permissions) and **Dangerous** permissions (also known as **Runtime** permissions). These classifications are analogous with the Android permission system.
 
+The Magic Leap SDK includes helper functions designed to streamline the permission request process and verification for Magic Leap-specific functionalities. You can access these functions via the `MLPermissions` API. It's recommended to use these functions to verify permissions before activating any restricted feature to avoid runtime errors.
 
-## Checking Permissions
+:::tip
+You can view a list of Magic Leap permissions and their corresponding security level by navigating to **Edit** > **Project Settings...** and then selecting **MagicLeap** > **Permissions** from the sidebar.
 
-Before your app tries to do something that depends on an Android or custom Magic Leap permission, you should first ensure the permission has been granted to the app. Normal permissions are granted by [declaring them in the manifest](/docs/guides/unity/permissions/declaring-permissions.md), while dangerous permissions must be declared, then requested at runtime.
+![MagicLeap Permissions](/img/unity/magicleap_permissions.jpg)
+:::
 
-For a simple example, consider the **normal** permission, **com.magicleap.permission.HAND_TRACKING**. Since this is an _install-time_ permission, there is no runtime requesting involved: the permission is either granted by [inclusion in AndroidManifest.xml](/docs/guides/unity/permissions/declaring-permissions.md), or it is considered denied.
+## Requesting Normal (Install-time) Permissions
 
-So, your script might include something as simple as this:
+**Normal** permissions, also known as **Install-time** permissions, are granted automatically upon installation if [declared in your app's `AndroidManifest.xml`](/docs/guides/unity/permissions/declaring-permissions.md). These permissions typically provide access to isolated, non-sensitive user data or device functionalities, such as `com.magicleap.permission.HAND_TRACKING`. Consequently if the permission is not included in your apps `AndroidManifest.xml`, they are implicitly denied.
+
+The example below verifies if the `HAND_TRACKING` permission is declared in the Manifest, and disables its functionality if the permission wasn't declared.
 
 ```csharp
 void Start()
 {
-    if(!MLPermissions.CheckPermission(MLPermission.HandTracking).IsOk)
+    if(MLPermissions.CheckPermission(MLPermission.HandTracking).IsOk)
     {
-        enabled = false;
-        return;
+       // continue as planned
     }
     else
     {
-        // proceed as normal
+      this.enabled = false;
     }
 }
 ```
 
-This will check when the scene loads if the app has HEAD_POSE permission, and if not, the script is disabled and returns from `Start()` early.
+Note that the function `CheckPermission()` will return:
 
-:::info
+- `MLResult.Code.Ok` if the permission has been granted.
+- `MLResult.Code.PermissionDenied` if the permission has been denied.
+- `MLResult.Code.InvalidParam` if the input string is null or empty.
 
-Some APIs within the Unity SDK include calls to `CheckPermission` for any associated permission at key code paths, but it is recommended that app developers still insert checks in their own scripts, just in case.
+## Requesting Dangerous (Runtime) Permissions
 
+**Dangerous** permissions need to be [declared in the AndroidManifest.xml](/docs/guides/unity/permissions/declaring-permissions.md) and also require to be explicitly **requested at runtime**. Since these permissions offer access to potentially sensitive data, users can decide whether they want to allow these permissions or not. If the permission is denied, your application should adapt its behavior according.
+
+Note that if a **Dangerous** permission is not included in the `AndroidManifest.xml`, your application won't have the ability to request this permission at runtime.
+
+:::warning
+The `MLResult` that gets returned upon calling the `RequestPermission()`  API reflects the status of the request, not the status of the permission (granted or denied).
 :::
 
-## Requesting Permissions
-
-In the case of **dangerous** permissions, permissions must be [declared in AndroidManifest.xml](/docs/guides/unity/permissions/declaring-permissions.md), then your app must issue a **runtime request** to the user for the permission and only proceed if the user granted permission at the prompt. If they denied the permission, how you choose to respond is up to you and how you want to design your app's behavior.
-
-:::caution
-
-The  `MLResult` returned after calling the `RequestPermission()` API refers to the status of the request and does not indicate if the permission was granted or not.
-
-:::
-
-This example script requests and then checks for the dangerous permission **com.magicleap.permission.EYE_TRACKING**:
+The following sample script initiates a request for the dangerous permission **com.magicleap.permission.EYE_TRACKING**, then saves the permission state to the `permissionGranted` variable for future reference.
 
 ```csharp
-// Was EyeTracking permission granted by user
+// Variable to check if EyeTracking permission has been granted by the user
 private bool permissionGranted = false;
 private readonly MLPermissions.Callbacks permissionCallbacks = new MLPermissions.Callbacks();
 
@@ -81,63 +84,12 @@ void Start()
 
 private void OnPermissionDenied(string permission)
 {
-    Debug.Log($"{permission} denied, example won't function.");
+    Debug.Log($"{permission} denied. The example will not function as expected.");
 }
 
 private void OnPermissionGranted(string permission)
 {
     permissionGranted = true;
-    Debug.Log($"{permission} granted, example will function.");
+    Debug.Log($"{permission} granted. The example will function as expected.");
 }
-
-```
-
-The snippets above are simplified examples. It is recommended that s should be requested as _close_ to the calls to restricted features as possible, which will likely result in more complex check/request patterns throughout your app scripts.
-
-## API Overview
-
-This section includes a description of the functions available to developers through the MLPermissions API.
-
-```csharp
-// Query whether or not the specified permission has been granted to the app. 
-//Normal level permissions are automatically granted if included in the app manifest.
-// If it's missing from the manifest, the permission is not available
-public MLResult CheckPermission (string permission){}
-```
-**Returns**: 
-- `MLResult.Code.Ok` if the permission is granted
-- `MLResult.Code.PermissionDenied` if the permission has been denied.
-- `MLResult.Code.InvalidParam` if the string is empty or null
-- `MLResult.Code.Pending` if the permission request is still pending
-
-```csharp
-// Queue a system prompt which will pause the app and request access to the specified permission.
-public MLResult RequestPermission (string permission, Callbacks callbacks){}
-```
-
-**Returns**: 
-- `MLResult.Code.Ok` if the permission request was successful
-- `MLResult.Code.InvalidParam` if the string is empty or null
-- `MLResult.Code.Pending` if the permission request is still pending
-
-```csharp
-// Queue requests for multiple permissions at once using a single call.
-public MLResult RequestPermissions (params string\[\] permissions, Callbacks callbacks){}
-```
-
-**Returns**: 
-- `MLResult.Code.Ok` if the permission was successful
-- `MLResult.Code.InvalidParam` if the string is empty or null
-- `MLResult.Code.Pending` if the permission request is still pending
-
-You can subscribe to the following callbacks to act on permission results:
-
-```csharp
-
-private void OnPermissionGranted(string permission)
-
-private void OnPermissionDenied(string permission)
-
-private void OnPermissionDeniedDontAskAgain(string permission)
-
 ```

@@ -52,6 +52,6 @@ Example:
 
 ## Determining Which Permissions Are Required
 
-You only need to include permissions for features that your application is actively using. To determine which permission is required for which feature, refer to the documentation on the developer portal here: [https://developer.magicleap.cloud/learn/docs/api-ref/Pages/permissions](/docs/api-ref/api/Pages/permissions.md). Also within the MagicLeapUnityExamples project, each sample scene lists which permissions are required for the feature to run.
+You only need to include permissions for features that your application is actively using. To determine which permission is required for which feature, refer to the documentation on the developer portal here: [https://developer.magicleap.cloud/learn/docs/api-ref/Pages/permissions](/docs/api-ref/api/Pages/permissions.md). Additionally, the MagicLeapUnityExamples project, each sample scene lists which permissions are required for the feature to run.
 
 For example, if you want to use the Meshing or the Planes API, the permission **com.magicleap.permission.WORLD_RECONSTRUCTION** would be required.
