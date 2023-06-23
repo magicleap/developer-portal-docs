@@ -69,9 +69,9 @@ The `MLSpace.Space` structure represents a saved map of a physical environment, 
 | `SpaceId` | `string` | The unique identifier for the Space. |
 | `SpaceName` | `string` | The human-readable name of the Space. |
 
-## Get List Of Available Spaces
+### Get List Of Available Spaces Example
 
-The method `MLSpace.GetSpaceList(out MLSpace.Space[] list)` retrieves the list of available MLSpaces on the device.
+The method `MLSpace.GetSpaceList(...)` retrieves the list of available MLSpaces on the device.
 
 ```csharp
 void GetListOfAvailableSpaces()
@@ -82,9 +82,9 @@ void GetListOfAvailableSpaces()
 }
 ```
 
-## Localize Into a Space
+### Localize Into a Space Example
 
-The function `MLSpace.RequestLocalization(ref MLSpace.SpaceInfo info)` requests the system to localize the device to a specific MLSpace. The function requires the `SpaceId` of the MLSpace for localization. This is an asynchronous request. Use `MLSpace.GetLocalizationResult()` function to get the `LocalizationResult` of the localization or use the `MLSpace.OnLocalizationEvent` to listen to  the localization events.
+The function `MLSpace.RequestLocalization(...)` requests the system to localize the device to a specific MLSpace. The function requires the `SpaceId` of the MLSpace for localization. This is an asynchronous request. Use `MLSpace.GetLocalizationResult()` function to get the `LocalizationResult` of the localization or use the `MLSpace.OnLocalizationEvent` to listen to  the localization events.
 
 A new request for localization will override all the past requests for localization that are yet to be completed.
 
@@ -112,18 +112,18 @@ public void LocalizeToFirstSpace()
 
 ## Export Spaces
 
-The `MLSpace.ExportSpace(in MLSpace.SpaceInfo info, out MLSpace.SpaceData exportData)` function exports a MLSpace into a binary data format that can be saved and later used for import. The `ExportSpace` method requires an instance of the `MLSpace.SpaceInfo` struct as input parameter, and it outputs an instance of the `MLSpace.SpaceData` struct.
+The `MLSpace.ExportSpace(...)` function exports a MLSpace into a binary data format that can be saved and later used for import. The `ExportSpace` method requires an instance of the `MLSpace.SpaceInfo` struct as input parameter, and it outputs an instance of the `MLSpace.SpaceData` struct.
 
 | Parameter | Description |
 | --- | --- |
 | `in MLSpace.SpaceInfo info` | This input parameter is an instance of the `MLSpace.SpaceInfo` struct. It specifies the `SpaceId` of the MLSpace that is being exported. The `SpaceId` uniquely identifies an MLSpace. |
 | `out MLSpace.SpaceData exportData` | This output parameter is an instance of the `MLSpace.SpaceData` struct. It contains the exported data of the MLSpace, which can be saved to a file for later use. |
 
-#### Permissions
+### Permissions
 
 Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission must be requested at runtime. Without this permission, the function call will fail.
 
-#### Returns
+### Returns
 
 - `MLResult.Ok` Export was successful.
 - `MLResult.InvalidParam` One or more input parameters are not valid.
@@ -131,7 +131,7 @@ Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE
 - `MLResult.UnspecifiedFailure` Operation failed for unknown reason.
 - `MLSpaceResult.UnavailableSpace` Operation failed due an unavailable Space.
 
-#### Export Space Example
+### Export Space Example
 
 Here's an example of how to use the `ExportSpace` method to export a MLSpace and save it to a file:
 
