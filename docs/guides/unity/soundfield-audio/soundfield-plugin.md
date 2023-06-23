@@ -139,3 +139,13 @@ Layers 0-7 in Unity were formerly restricted and should **not** be used for obst
 :::note
 If the **DSP Buffer Size** property is changed either in editor play mode or at runtime it will cause Unity to stop all the currently playing audio sources. The only way for them to recover will be to start them manually.
 :::
+
+## Trouble Shooting
+
+When running a project, if an error similar to the below appears in the Unity error console, additional runtimes ("Workloads") may need to be installed, supplied by Microsoft:
+
+```plaintext
+Plugins: Failed to load 'C:/AppDirectory/Library/PackageCache/com.magicleap.soundfield@3.4.0-230405.66.cf20c31/Plugins/x86_64/AudioPluginMSASpatializer.dll' because one or more of its dependencies could not be loaded.
+```
+
+[Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).

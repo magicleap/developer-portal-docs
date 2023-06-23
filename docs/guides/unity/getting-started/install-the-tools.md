@@ -18,18 +18,6 @@ import TabItem from '@theme/TabItem';
 - Installed the [ML Hub](/docs/guides/getting-started/install-the-tools.md)
 - Installed [Unity Hub](https://unity3d.com/get-unity/download)
 
-:::caution "one or more of its dependencies could not be loaded"
-
-When running a project, if an error similar to the below appears in the Unity error console, additional runtimes ("Workloads") may need to be installed, supplied by Microsoft:
-
-```plaintext
-Plugins: Failed to load 'C:/AppDirectory/Library/PackageCache/com.magicleap.soundfield@3.4.0-230405.66.cf20c31/Plugins/x86_64/AudioPluginMSASpatializer.dll' because one or more of its dependencies could not be loaded.
-```
-
-[Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
-
-:::
-
 ## Install Magic Leap SDK & Tools
 
 We'll use the [ML Hub](/docs/guides/getting-started/install-the-tools.md) to install and manage the Magic Leap Unity Package, the Unity SDK Examples Project, and other tools.
