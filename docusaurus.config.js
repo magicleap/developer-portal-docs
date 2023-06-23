@@ -223,6 +223,10 @@ module.exports = {
           {
             from: '/docs/guides/unity/permissions/permissions-levels',
             to: '/docs/guides/unity/permissions/requesting-permissions'
+          },
+          {
+            from:'/docs/guides/unity/networking/photon-fusion',
+            to: '/docs/guides/third-party/networking/photon-fusion'
           }
         ],
         
