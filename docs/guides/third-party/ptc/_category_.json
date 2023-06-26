@@ -1,9 +1,9 @@
 {
-  "label": "PTC",
+  "label": "PTC Vuforia",
   "position": 3,
   "collapsed": true,
   "link": {
     "type": "doc",
-      "id": "ptc"
+      "id": "vuforia-overview"
     }
 }
