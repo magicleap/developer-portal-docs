@@ -1,9 +1,9 @@
 {
-  "label": "Agora Realtime Communications",
+  "label": "Visometry Visionlib",
   "position": 1,
   "collapsed": true,
   "link": {
     "type": "doc",
-      "id": "agora"
+      "id": "visionlib"
     }
 }
