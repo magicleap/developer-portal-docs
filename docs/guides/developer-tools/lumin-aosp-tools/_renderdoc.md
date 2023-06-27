@@ -101,7 +101,7 @@ $ adb uninstall org.renderdoc.renderdoccmd.x64
 9. It will take a few seconds for the capture to happen, after which you will see the capture, with thumbnail, in the C**aptures collected** pane.
 10. Double click the capture. A progress bar will appear, after which the **Event Browser** will populate with the frame activity.
 
-![Radeon Developer Panel Connection Tab](/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc-eventbrowser.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc-eventbrowser.png")} >Radeon Developer Panel Connection Tab</Image>
 
 You can now use RenderDoc as you normally would. Detailed guidance on using RenderDoc is outside the scope of this document, but the developer of RenderDoc has plenty of [documentation](https://renderdoc.org/docs/getting_started/quick_start.html).
 
@@ -154,11 +154,11 @@ Only after you've done that can these AMD-specific features be used. Also, keep 
 
 To get AMD GPU counters for a captured frame, open the frame in RenderDoc (double click on it after capturing it), then go to *Windows > Performance Counter Viewer*. Click **Capture Counters**. It'll take a few seconds for the dialog to populate, but you'll end up seeing:
 
-![Radeon Developer Panel Connection Tab](/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc-selection.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc-selection.png")} >Radeon Developer Panel Connection Tab</Image>
 
 Select which counters you want to collect, then click **Sample counters**. You'll end up with something like this:
 
-![Radeon Developer Panel Connection Tab](/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc-viewer.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc-viewer.png")} >Radeon Developer Panel Connection Tab</Image>
 
 To perform an RGP profiling of the frame currently opened in RenderDoc, you first have to turn on a setting. Go to *Tools > Settings > Core* and turn on **Enable Radeon GPU Profiler integration**. Also set the path to your RGP application. You should close RenderDoc and reopen it for good measure at this point. This is a one-time step; the setting will persist across launches of RenderDoc and device reboots.
 

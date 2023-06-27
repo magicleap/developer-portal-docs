@@ -40,13 +40,13 @@ Meshing requires the following settings, under *Edit > Project Settings > Magic 
 - API Level set to 20 (or greater)
 - **WORLD_RECONSTRUCTION** permission enabled
 
-![Magic Leap Manifest Settings under Project Settings](/img/unity/example-projects/sdk-example-scenes/meshing/meshing-permissions.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/meshing/meshing-permissions.png")} >Magic Leap Manifest Settings under Project Settings</Image>
 
 ## Project Layout
 
 The example Meshing scene has the following layout. If you are starting from scratch you will want to set up your scene similarly. We will cover each of the major components of the scene and how they are configured.
 
-![Project Layout and Scene Hierarchy](/img/unity/example-projects/sdk-example-scenes/meshing/meshing-a-layout.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/meshing/meshing-a-layout.png")} >Project Layout and Scene Hierarchy</Image>
 
 ### XR Rig
 
@@ -58,7 +58,7 @@ This scene utilizes a **top-level MeshingExample object** to coordinate the beha
 
 Primarily this holds the references to the Meshing Subsystem Component and Meshing Visualizer to control the settings and visualization of the Meshing data. It also controls the meshing bounds extents and holds a prefab for the MeshingSampleBall prefab that is used to showcase mesh collision. The Controller Status script is used to update the UI with the connection status of the controller.
 
-![Meshing example](/img/unity/example-projects/sdk-example-scenes/meshing/meshing-b-example.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/meshing/meshing-b-example.png")} >Meshing example</Image>
 
 ### Meshing Visualizer
 
@@ -68,7 +68,7 @@ The MeshingVisualizer is used to control the **shader/material** that is applied
 There is a known issue with Compute Shaders in Unity on the Magic Leap platform. Thus we do not include a wireframe shader in this list of visualizers in the current release. Instead a Colored Material has been substituted in its place.
 :::
 
-![Meshing visualizer](/img/unity/example-projects/sdk-example-scenes/meshing/meshing-c-visualizer.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/meshing/meshing-c-visualizer.png")} >Meshing visualizer</Image>
 
 ### Meshing Subsystem Component
 
@@ -107,7 +107,7 @@ These settings can be modified to produce different meshing results. In this sam
 These settings were ported from the ML1 Meshing Subsystem which was implemented as part of the Unity XR plugin. Some of these settings may be updated in future sprints to better align with the Magic Leap C SDK or to make the system easier to understand and work with. Specifically Density, which maps to 3 enum values and minor changes in value clears meshes but may not change resulting data.
 :::
 
-![Meshing subsystems](/img/unity/example-projects/sdk-example-scenes/meshing/meshing-d-subsystem.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/meshing/meshing-d-subsystem.png")} >Meshing subsystems</Image>
 
 ### Wireframe Cube
 
@@ -115,4 +115,4 @@ The Wireframe Cube object is used to determine the size of the **meshing bounds 
 
 The bounding volume can be any empty game object that is used to define the bounds. In this example, it has a child mesh that is the wireframe cube model, but is only used to show a visual representation of the area that will be meshed. It is not required for custom applications.
 
-![Meshing cube](/img/unity/example-projects/sdk-example-scenes/meshing/meshing-e-cube.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/meshing/meshing-e-cube.png")} >Meshing cube</Image>

@@ -38,13 +38,13 @@ Before proceeding, ensure you have the following:
 3. Import the [Fusion Unity SDK](https://doc.photonengine.com/fusion/current/getting-started/sdk-download) package
 4. Enter your [app ID](https://doc.photonengine.com/fusion/current/fusion-100/fusion-101#step_6___create_an_app_id) in the Photon Fusion Hub window.(Note: If the Fusion Hub doesn’t appear automatically after package import, you can open it by navigating to **Fusion > Fusion Hub** in the Unity menu.)
 
-![Fusion Hub](/img/unity/photon-fusion/FusionHub.jpg)
+<Image url= {require("/img/unity/photon-fusion/FusionHub.jpg")} >Fusion Hub</Image>
 
 ### Set Permissions
 
 The package used in this example requires marker tracking and/or spatial anchors permissions. To enable these permissions, make sure you’ve enabled the [Custom Manifest](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/configure-unity-settings#custom-manifest) setting in Player settings as well as the following permissions (found in **Edit > Project Settings > Magic Leap > Permissions**):
 
-![Permissions](/img/unity/photon-fusion/Permissions.jpg)
+<Image url= {require("/img/unity/photon-fusion/Permissions.jpg")} >Permissions</Image>
 
 ### Import the Magic Leap - Photon Fusion package
 
@@ -67,7 +67,7 @@ The SimpleDemo uses a custom render pipeline to render the desktop camera as an 
 - Navigate to **Edit > Project Settings > Graphics** and in the **Scriptable Render Pipeline Settings**, select the **ML2-UniversalRenderPipeline** asset.
 - Next, navigate to **Quality Settings** from the side menu and assign the **ML2-UniversalRenderPipeline** asset to the Render Pipeline Asset field for each of the quality levels.
 
-![Quality Settings](/img/unity/photon-fusion/quality-settings.jpg)
+<Image url= {require("/img/unity/photon-fusion/quality-settings.jpg")} >Quality Settings</Image>
 
 This demo scene showcases networking between headsets and desktop clients. To run the demo:
 
@@ -152,7 +152,7 @@ The **Marker Tracker** prefab contains both the Magic Leap Marker Tracker used o
 
 The **Marker Tracker Controls** provide a simple UI for gathering samples and disabling the marker tracking after the marker has been found to save processing power.If you’d like to track the marker continuously, enable the Track on Start checkbox in the Marker Tracking Controls script.
 
-![Track on Start](/img/unity/photon-fusion/MarkerTrackOnStart.jpg)
+<Image url= {require("/img/unity/photon-fusion/MarkerTrackOnStart.jpg")} >Track on Start</Image>
 
 19. To enable marker tracking on desktop, select the **Generic Marker Tracking** prefab in the hierarchy and in the Image Source field select the Camera Image Source object.
 

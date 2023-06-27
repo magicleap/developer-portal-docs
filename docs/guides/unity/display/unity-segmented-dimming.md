@@ -76,7 +76,7 @@ With the Renderer component selected, check the following in the Inspector windo
 1. **Opaque Layer Mask:** _Uncheck_ your SegmentedDimmer Layer
 2. **Transparent Layer Mask:** _Uncheck_ your SegmentedDimmer Layer
 
-![Asset filtering](/img/unity/renderer-asset-filtering.png)
+<Image url= {require("/img/unity/renderer-asset-filtering.png")} >Asset filtering</Image>
 
 #### Add the Segmented Dimmer Feature
 
@@ -85,13 +85,13 @@ The Segmented Dimmer effect is enabled via a Renderer Feature:
 1. With your Universal Render Pipeline Asset_Renderer selected, at the bottom of the Inspector window click the **Add Renderer Feature** button.
 2. Select **Segmented Dimmer**.
 
-![Render feature](/img/unity/render-feature-option.png)
+<Image url= {require("/img/unity/render-feature-option.png")} >Render feature</Image>
 
 #### Configure the Segmented Dimmer Feature
 
 1. **Layer Mask:**  Select only your SegmentedDimmer Layer
 
-![Segmented Dimming Feature](/img/unity/segmented-dimming-feature.png)
+<Image url= {require("/img/unity/segmented-dimming-feature.png")} >Segmented Dimming Feature</Image>
 
 #### Assign the Render Pipeline
 
@@ -118,7 +118,7 @@ With this GameObject selected, look in the Inspector under the **Mesh Renderer**
 2. **Lighting > Contribute Global Illumination** _unchecked_
 3. **Probes > Light Probes** set to _off_
 
-![Segmented Dimmer URP](/img/unity/urp-segmented-dimmer.png)
+<Image url= {require("/img/unity/urp-segmented-dimmer.png")} >Segmented Dimmer URP</Image>
 
 **For 2D/ UI Elements**: Place the Segmented Dimmer mesh planes behind other scenery to dim their background and make them visually "pop". Place them in front of objects to dim or obscure them in shadow.
 

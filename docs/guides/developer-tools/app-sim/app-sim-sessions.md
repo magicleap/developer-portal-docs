@@ -16,7 +16,7 @@ Use session files to re-use your current scene setup for testing or to share you
 
 You can save or load a session file from the Session dropdown in the Target Selector:
 
-![Session Files Menu with Example Session](/img/app-sim/sessions-menu.png)
+<Image url= {require("/img/app-sim/sessions-menu.png")} >Session Files Menu with Example Session</Image>
 
 By default, session files are saved and opened from the `/MagicLeap/tools/zi/<version>VirtualDevice/data/VirtualRooms/ExampleRooms` folder.
 
@@ -25,7 +25,7 @@ By default, session files are saved and opened from the `/MagicLeap/tools/zi/<ve
 1. Expand the Session drop-down list.
 2. Click **Save Session**, and then enter the file name.
 
-![Save a Session Dialogue Window](/img/app-sim/sessions-save.png)
+<Image url= {require("/img/app-sim/sessions-save.png")} >Save a Session Dialogue Window</Image>
 
 Your session data is now saved. See the section "Share a session" on how to share a session file.
 

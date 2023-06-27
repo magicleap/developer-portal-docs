@@ -12,7 +12,7 @@ keywords: [Unity, Samples, Agora, video, streaming, live]
 
 Agora Realtime Communications SDK brings the best of class real time voice and video communication capabilities to the MagicLeap 2, desktop and mobile devices.  
 
-![](/img/agoria_product_image.jpeg)
+<Image url= {require("/img/agoria_product_image.jpeg")} ></Image>
 
 ## Supported Features 
 In additional to simple voice and video, Agora SDK offers a good number of features:

@@ -16,19 +16,19 @@ After opening Application Simulator and starting a session, the Application Simu
 - B: [Device View](#b---device-view)
 - C: [Tool Panels](#c---tool-panels)
 
-![Application Simulator Module Overview](/img/app-sim/app_sim_panels.png)
+<Image url= {require("/img/app-sim/app_sim_panels.png")} >Application Simulator Module Overview</Image>
 
 You can hide or reveal panels, including **Scene View** or **Device View**, using the panels menu.
 
-![Application Simulator Menu Button for Panels](/img/app-sim/panels_button.png)
+<Image url= {require("/img/app-sim/panels_button.png")} >Application Simulator Menu Button for Panels</Image>
 
 ## Primary Navigation Target Menu
 
 Using this menu you can select the primary target of navigation
 
-![Application Simulator Menu Primary Target of Navigation](/img/app-sim/primary_target.png)
+<Image url= {require("/img/app-sim/primary_target.png")} >Application Simulator Menu Primary Target of Navigation</Image>
 
-![Application Simulator Primary Target of Navigation Expanded Dropdown Menu](/img/app-sim/navigation-target-menu-expanded.png)
+<Image url= {require("/img/app-sim/navigation-target-menu-expanded.png")} >Application Simulator Primary Target of Navigation Expanded Dropdown Menu</Image>
 
 To learn more about Primary Navigation Targets see [Action Bindings and Input Mapping](/docs/guides/developer-tools/app-sim/app-sim-action-bindings.md).
 
@@ -42,38 +42,38 @@ Depicts all the entities in the scene. The red lines represent the meshing frust
 
 | Icon | Description                                                                                 |
 |------|---------------------------------------------------------------------------------------------|
-| ![Select icon](/img/app-sim/icons/sv-manipulate-select.png) | Manipulates selected objects. |
-| ![Move icon](/img/app-sim/icons/sv-manipulate-move.png)     | Moves the selected objects.   |
-| ![Rotate icon](/img/app-sim/icons/sv-manipulate-rotate.png) | Rotates the selected objects. |
-| ![Scale icon](/img/app-sim/icons/sv-manipulate-scale.png)   | Scales the selected objects.  |
+| <Image url= {require("/img/app-sim/icons/sv-manipulate-select.png")} >Select icon</Image> | Manipulates selected objects. |
+| <Image url= {require("/img/app-sim/icons/sv-manipulate-move.png")} >Move icon</Image>     | Moves the selected objects.   |
+| <Image url= {require("/img/app-sim/icons/sv-manipulate-rotate.png")} >Rotate icon</Image> | Rotates the selected objects. |
+| <Image url= {require("/img/app-sim/icons/sv-manipulate-scale.png")} >Scale icon</Image>   | Scales the selected objects.  |
 
 #### Anchor Mode
 
 | Icon | Description                                                                                                                     |
 |------|---------------------------------------------------------------------------------------------------------------------------------|
-| ![Base pivot point icon](/img/app-sim/icons/sv-anchor-base.png)     | Set the gizmo transform pivot point to the object base.   |
-| ![Center pivot point icon](/img/app-sim/icons/sv-anchor-center.png) | Set the gizmo transform pivot point to the object center. |
+| <Image url= {require("/img/app-sim/icons/sv-anchor-base.png")} >Base pivot point icon</Image>     | Set the gizmo transform pivot point to the object base.   |
+| <Image url= {require("/img/app-sim/icons/sv-anchor-center.png")} >Center pivot point icon</Image> | Set the gizmo transform pivot point to the object center. |
 
 #### Reference Mode
 
 | Icon | Description                                                                                                                           |
 |------|---------------------------------------------------------------------------------------------------------------------------------------|
-| ![Local reference icon](/img/app-sim/icons/sv-reference-local.png) | Set gizmo transforms to be relative to local object coordinates. |
-| ![World reference icon](/img/app-sim/icons/sv-reference-world.png) | Set gizmo transforms to be relative to world coordinates.        |
+| <Image url= {require("/img/app-sim/icons/sv-reference-local.png")} >Local reference icon</Image> | Set gizmo transforms to be relative to local object coordinates. |
+| <Image url= {require("/img/app-sim/icons/sv-reference-world.png")} >World reference icon</Image> | Set gizmo transforms to be relative to world coordinates.        |
 
 #### Scene View Camera Mode
 
 | Icon | Description                                                                                                                    |
 |------|--------------------------------------------------------------------------------------------------------------------------------|
-| ![Birds-eye view icon](/img/app-sim/icons/sv-camera-top.png)    | Shows a birds-eye view of the room contents in the Mini Map. |
-| ![Free Fly view icon](/img/app-sim/icons/sv-camera-freefly.png) | Free Fly Camera                                              |
-| ![Reset camera icon](/img/app-sim/icons/sv-camera-reset.png)    | Resets the camera to its starting position.                  |
+| <Image url= {require("/img/app-sim/icons/sv-camera-top.png")} >Birds-eye view icon</Image>    | Shows a birds-eye view of the room contents in the Mini Map. |
+| <Image url= {require("/img/app-sim/icons/sv-camera-freefly.png")} >Free Fly view icon</Image> | Free Fly Camera                                              |
+| <Image url= {require("/img/app-sim/icons/sv-camera-reset.png")} >Reset camera icon</Image>    | Resets the camera to its starting position.                  |
 
 #### Gizmos
 
 | Icon | Description                                                                                                                 |
 |------|-----------------------------------------------------------------------------------------------------------------------------|
-| ![Group icon](/img/app-sim/icons/sv-gizmos-group.png) | Select which gizmos to show, such as cache grid, compass, or hands. |
+| <Image url= {require("/img/app-sim/icons/sv-gizmos-group.png")} >Group icon</Image> | Select which gizmos to show, such as cache grid, compass, or hands. |
 
 ### Editing Objects in the Scene View
 
@@ -81,17 +81,17 @@ If you want to move, rotate, or resize any of the objects in the room:
 
 1. Click the object in the Scene View to select it. A bounding box is drawn around the object.
 
-![Select Object in Scene View](/img/app-sim/virtual-room-object.png)
+<Image url= {require("/img/app-sim/virtual-room-object.png")} >Select Object in Scene View</Image>
 
 2. Set your manipulation mode in the toolbar, or press one of the [hotkeys described in Action Bindings](/docs/guides/developer-tools/app-sim/app-sim-action-bindings.md). Ensure you're manipulating the object in the correct transform space by toggling pivot or orientation.
 
-![Change Manipulation of Object in Scene View](/img/app-sim/virtual-room-object-menu.png)
+<Image url= {require("/img/app-sim/virtual-room-object-menu.png")} >Change Manipulation of Object in Scene View</Image>
 
 3. Drag the controls on the gizmo to transform the object accordingly. The Headset, Control, and other Magic Leap API placeholders can be moved and rotated, but not resized.
 
 | Move Gizmo                                                                         | Rotate Gizmo                                                                           | Scale Gizmo                                                                          |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| ![Gizmo Move](/img/app-sim/virtual-room-gizmo-move.png) | ![Gizmo Rotate](/img/app-sim/virtual-room-gizmo-rotate.png) | (![Gizmo Scale](/img/app-sim/virtual-room-gizmo-scale.png) |
+| <Image url= {require("/img/app-sim/virtual-room-gizmo-move.png")} >Gizmo Move</Image> | <Image url= {require("/img/app-sim/virtual-room-gizmo-rotate.png")} >Gizmo Rotate</Image> | (<Image url= {require("/img/app-sim/virtual-room-gizmo-scale.png")} >Gizmo Scale</Image> |
 
 4. Or, directly edit the Position, Orientation, or Scale of the object in the Scene Graph panel.
 
@@ -111,9 +111,9 @@ Load new virtual rooms or custom models, or edit the objects on the scene.
 
 | Icon | Description                                                                                                                                                                                                                                                 |
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Load room icon](/img/app-sim/icons/sg-load-room.png) | **Load Virtual Room** – You can load any `.room` file exported from the Virtual Room Generator or any session that has been converted to a `.room` file using the Package Session as Room option in the Session drop down.                                                      |
-| ![Add model icon](/img/app-sim/icons/sg-add-model.png) | **Add Model** – You can import individual 3D objects into your virtual room. The following formats are supported: `.3ds` 3ds Max; `.ase` 3ds Max; `.blend` Blender 3D; `.dae` Collada; `.fbx` Autodesk 2014/2015, *not* 2016+; `.obj` Wavefront; `.ply` Stanford Polygon Library; `.gltf`, `.glb` GL Transmission format |
-| ![Clear room icon](/img/app-sim/icons/sg-clear-room.png)  | **Clear Virtual** Room                                                                                                                                                                          |
+| <Image url= {require("/img/app-sim/icons/sg-load-room.png")} >Load room icon</Image> | **Load Virtual Room** – You can load any `.room` file exported from the Virtual Room Generator or any session that has been converted to a `.room` file using the Package Session as Room option in the Session drop down.                                                      |
+| <Image url= {require("/img/app-sim/icons/sg-add-model.png")} >Add model icon</Image> | **Add Model** – You can import individual 3D objects into your virtual room. The following formats are supported: `.3ds` 3ds Max; `.ase` 3ds Max; `.blend` Blender 3D; `.dae` Collada; `.fbx` Autodesk 2014/2015, *not* 2016+; `.obj` Wavefront; `.ply` Stanford Polygon Library; `.gltf`, `.glb` GL Transmission format |
+| <Image url= {require("/img/app-sim/icons/sg-clear-room.png")} >Clear room icon</Image>  | **Clear Virtual** Room                                                                                                                                                                          |
 
 ### Properties
 
@@ -121,7 +121,7 @@ Select an object in the scene graph or in the scene view to change the position,
 
 ### Rendering Panel
 
-![Overview of the Rendering Panel in Application Simulator](/img/app-sim/rendering-panel.png)
+<Image url= {require("/img/app-sim/rendering-panel.png")} >Overview of the Rendering Panel in Application Simulator</Image>
 
 ### Scene View Camera Panel
 
@@ -172,7 +172,7 @@ For each selected gesture, your app receives notice of the recognized gesture, t
 
 A gesture with a confidence value of 0 is still a detected gesture. To indicate no detected gesture, click the no-hand gesture.
 
-![No Detected Gesture Selector in Hand Tracking Panel](/img/app-sim/hand-tracking-key-pose.png)
+<Image url= {require("/img/app-sim/hand-tracking-key-pose.png")} >No Detected Gesture Selector in Hand Tracking Panel</Image>
 
 :::note
 The Simulator detects gestures and key points outside the meshing frustum. This is by design, but remember that on device, gestures outside the meshing frustum are not detected.
@@ -198,7 +198,7 @@ Each target cube represents an image you are actively tracking in your app. You 
 
 Image Targets begin their life unassigned. When unassigned they do not represent a specific image in the environment. You can think of them as transparent plastic or simply non-existent. Image Targets are not automatically assigned, they require user interaction.
 
-![Creating New Image Target](/img/app-sim/image-tracking-populate.png)
+<Image url= {require("/img/app-sim/image-tracking-populate.png")} >Creating New Image Target</Image>
 
 Once an application that uses the Image Tracking API has made a request to populate target image data, these images will appear as textures that can be mapped to any image target that you have created and placed in the scene.
 
@@ -208,23 +208,23 @@ The texture associated with the tracked image will be rendered by the image targ
 
 Provides the ability to trigger various System Events that the device can generate under different conditions. Common System Event sequences have been provided that attempt to mirror the behavior of the event cycles on the real device. Individual events can also be triggered manually.
 
-![System Events Panel](/img/app-sim/system-events.png)
+<Image url= {require("/img/app-sim/system-events.png")} >System Events Panel</Image>
 
 ### Permissions Panel
 
 Provides the ability to set states for several permission areas supported by the MLSDK. The permission states (**Allowed**, **Denied**, **Pending**) are enforced during ML API invocations, as documented in API headers.
 
-![Permissions Panel](/img/app-sim/permissions.png)
+<Image url= {require("/img/app-sim/permissions.png")} >Permissions Panel</Image>
 
 When an API finds a permission state to be in **Pending** state, it signals the UI to generate a popup that lets the user allow or deny the permission.
 
-![Permissions Panel](/img/app-sim/permissions_pending.png)
+<Image url= {require("/img/app-sim/permissions_pending.png")} >Permissions Panel</Image>
 
 The UI lets you load a manifest file that filters available permissions to those specified in the file. All permission requests that are not specified in the manifest are denied. Two pre-defined filters, ZI PERMISSIONS and ALL PERMISSIONS, are also provided. The former filters permissions to areas supported by Application Simulator, whereas the latter filters to all permissions in the MLSDK.
 
 All permission states can be saved in a named **Profile** and persist across Application Simulator sessions. The UI also has a **...** button that brings up a menu to save, load, and delete profiles. Additionally, all permission states can be set to allowed, denied, pending, or default. When set to default, all normal permissions state are set to allowed state, whereas all dangerous permissions are set to pending state.
 
-![Permissions Panel](/img/app-sim/permissions_profile.png)
+<Image url= {require("/img/app-sim/permissions_profile.png")} >Permissions Panel</Image>
 
 :::info
 The permissions panel allows you to test workflows that require specific "Dangerous" permissions from the Application Simulator workflow in a more convenient way than on device, which requires fully uninstalling your app to test.  

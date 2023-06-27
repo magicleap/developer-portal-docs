@@ -45,7 +45,7 @@ For user safety, viewing content any closer than 0.37m is not advisable as it ma
 
 The Optimal Content Placement Area (OCPA) is a 30°x30° boundary within which content is visible to users at all times, without moving their head. Users will rotate their eyes up to 15° after which they will move their head to view content. Refer to the figure below.
 
-![Optimal content placement area](/img/human-interface-guidelines/Content-Placement-Illustration.png)
+<Image url= {require("/img/human-interface-guidelines/Content-Placement-Illustration.png")} >Optimal content placement area</Image>
 
 **Place essential content within the OCPA and around the user’s line of sight, avoiding the top, bottom, and corners of the FOV.**
 
@@ -57,7 +57,7 @@ However, due to significant facial size and shape variance, every individual wil
 
 Virtual display FOV of a worst-case scenario user that has completed Custom Fit (Vertical: 49°/55°; Horizontal: 41°/45°; Diagonal: 51°/71°)
 
-![Worst case scenario](/img/human-interface-guidelines/Worst-Case-Scenario.png)
+<Image url= {require("/img/human-interface-guidelines/Worst-Case-Scenario.png")} >Worst case scenario</Image>
 
 **Center the FOV at or slightly below the natural line of sight.**
 
@@ -69,11 +69,11 @@ When determining placement of content relative to the user, consider the expecte
 
 For direct inputs, such as Gestures (i.e. touching content), place content within arms' reach, between 0.m4-0.6m. The most comfortable placement will be at the lower end of this range.
 
-![Direct inputs](/img/human-interface-guidelines/Fig3-1.png)
+<Image url= {require("/img/human-interface-guidelines/Fig3-1.png")} >Direct inputs</Image>
 
 For indirect inputs, place content beyond 0.6m, preferably between 0.8m to 1.5m away.
 
-![Indirect inputs](/img/human-interface-guidelines/Fig3-2.png)
+<Image url= {require("/img/human-interface-guidelines/Fig3-2.png")} >Indirect inputs</Image>
 
 ### Design content that doesn’t require users to raise their arms frequently or for long periods of time
 
@@ -81,7 +81,7 @@ Ideal user experience allows for the elbow to remain relaxed (i.e. upper arm res
 
 The reach distance for unflexed shoulders is 0.40m. Content that users are directly interacting with should never be placed farther than the fully-stretched arm at 0.75m (MIL-STD-1472, 2012).
 
-![Unflexed arms](/img/human-interface-guidelines/Fig4.png)
+<Image url= {require("/img/human-interface-guidelines/Fig4.png")} >Unflexed arms</Image>
 
 Note that the measurements presented in the figure above are the 5th percentile of females in order to accommodate users with the smallest reach dimensions (i.e. 5% of the smallest female arms should be able to reach the content). All measurements are from a North American population. Note that anthropometry varies by gender and ethnicity.
 
@@ -98,7 +98,7 @@ What are the real-world factors, obstructions, and environment that will dictate
 - **World-relative**  is attached to environments or real-world objects and relies on spatial anchors.
 - **Input-relative** maintains persistent x, y, z coordinates from an input system such as the user’s hand or controller.
 
-![Figure 5](/img/human-interface-guidelines/Fig5-1.png)
+<Image url= {require("/img/human-interface-guidelines/Fig5-1.png")} >Figure 5</Image>
 
 ## Head-Relative
 

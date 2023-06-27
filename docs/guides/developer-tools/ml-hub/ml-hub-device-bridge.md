@@ -11,7 +11,7 @@ keywords: [ML Hub, Device Bridge, Developer Mode]
 
 **Device Bridge** helps you manage apps, files, and logs on Magic Leap devices and view information about the device. Device Bridge provides an interface to many [Android Deb Bridge (ADB)](https://developer.android.com/studio/command-line/adb) commands to speed your development processes.
 
-![Device Bridge Console](/img/ml-hub/device_bridge.png)
+<Image url= {require("/img/ml-hub/device_bridge.png")} >Device Bridge Console</Image>
 
 ## Prerequisites
 
@@ -24,11 +24,11 @@ keywords: [ML Hub, Device Bridge, Developer Mode]
 
 Connect your Magic Leap device to your computer with a USB cable, or use the ML Hub to connect to your device over WiFi (WiFi Bridge). If you have multiple devices connected to your development machine, select a device from the drop-down list.
 
-![Select device from the device drop-down list](/img/ml-hub/device_dropdown.png)
+<Image url= {require("/img/ml-hub/device_dropdown.png")} >Select device from the device drop-down list</Image>
 
 If you want to send commands over WiFi, you must first use a wired connection to configure WiFi Bridge. See [WiFi Bridge](#wifi-bridge) below for configuration information.
 
-![WiFi Bridge toggle is enabled with network, IP address, and port number entries filled out](/img/ml-hub/wifi_bridge.png)
+<Image url= {require("/img/ml-hub/wifi_bridge.png")} >WiFi Bridge toggle is enabled with network, IP address, and port number entries filled out</Image>
 
 **Note**: You can open Device Bridge in the ML Hub from:
 
@@ -38,7 +38,7 @@ If you want to send commands over WiFi, you must first use a wired connection to
 
 Click on your device in the **Device Tray** to perform common commands like reset headpose and configure WiFi Bridge.
 
-![Visual overview of the device tray with the device expanded. General information about the device and connected network is available and common device commands](/img/ml-hub/device_tray.png)
+<Image url= {require("/img/ml-hub/device_tray.png")} >Visual overview of the device tray with the device expanded. General information about the device and connected network is available and common device commands</Image>
 
 With a device connected, you can use the following features:
 
@@ -50,19 +50,19 @@ With a device connected, you can use the following features:
 
 You can **Restart** or **Shutdown** the device and manage **WiFi Bridge**.
 
-![Device Bridge Console](/img/ml-hub/device_bridge.png)
+<Image url= {require("/img/ml-hub/device_bridge.png")} >Device Bridge Console</Image>
 
 - **Apps** - View and manage installed apps and app information. Install apps, launch selected apps, or uninstall apps from this screen.
 
-   ![Overview of Apps, showing the app name, version, status, type, and debuggability.](/img/ml-hub/device_apps.png)
+   <Image url= {require("/img/ml-hub/device_apps.png")} >Overview of Apps, showing the app name, version, status, type, and debuggability.</Image>
 
 - **Files** - Navigate the accessible, on-device file system. Download, upload, delete, or duplicate files and folders from this screen. Downloaded files are kept in the */Users/`<name>`/Magic Leap/downloads* by default. You can specify where Magic Leap files download to your computer in **Settings** in the **Action** menu. You can also change which folders are listed and which confirmation prompts are displayed by changing settings.
 
-   ![Overview of files, showing the on-device folder structure and the files included in the selected folder](/img/ml-hub/device_files.png)
+   <Image url= {require("/img/ml-hub/device_files.png")} >Overview of files, showing the on-device folder structure and the files included in the selected folder</Image>
 
 - **Log** - View log entries from the device. You can save, pause, search, or clear the logs.
 
-   ![Overview of Log, displaying a few log entries](/img/ml-hub/device_log.png)
+   <Image url= {require("/img/ml-hub/device_log.png")} >Overview of Log, displaying a few log entries</Image>
 
 ## WiFi Bridge
 
@@ -70,4 +70,4 @@ Configure WiFi Bridge to send commands to your device over WiFi, including CLI c
 
 1. Toggle **WiFi Bridge** to enable WiFi connections. Both your device and your development machine must be on the same WiFi network.
 
-   ![WiFi Bridge panel](/img/ml-hub/wifi_bridge.png)
+   <Image url= {require("/img/ml-hub/wifi_bridge.png")} >WiFi Bridge panel</Image>

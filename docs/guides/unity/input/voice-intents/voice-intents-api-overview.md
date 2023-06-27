@@ -138,7 +138,7 @@ public delegate void OnVoiceEventDelegate(in bool wasSuccessful, in IntentEvent 
 
 To add Voice Intents to your scene, you must use an asset called "Voice Intents Configuration" located under `Assets/Create/MagicLeap`:
 
-![Voice Intents configuration asset](/img/unity/input/voice-intents/voice-intents-configuration-asset.png)
+<Image url= {require("/img/unity/input/voice-intents/voice-intents-configuration-asset.png")} >Voice Intents configuration asset</Image>
 
 ### Asset Configuration Data
 
@@ -148,4 +148,4 @@ To add Voice Intents to your scene, you must use an asset called "Voice Intents 
   - This is the voice command that will be spoken. There are no limitations on the length of this phrase currently. It should be specific enough to accomplish what is needed, but it is recommended that it is not so long that it is cumbersome to say.
   - The value may contain an or operator, " | ", to indicate multiple phrases that will trigger the same event. For example, in the image below, both `Hello Friend | Hello Buddy` phrases will trigger unity_test_3.
 
-![Voice Intents configuration data](/img/unity/input/voice-intents/voice-intents-configuration-data.png)
+<Image url= {require("/img/unity/input/voice-intents/voice-intents-configuration-data.png")} >Voice Intents configuration data</Image>

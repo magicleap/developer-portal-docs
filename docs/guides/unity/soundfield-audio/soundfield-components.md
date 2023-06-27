@@ -28,7 +28,7 @@ Starting with package version 3.3.0 for **automatic** and 3.4.0 for **mixer** su
 
 The meter works while you have selected a group in the attenuation plugin, but since Unity won't allow to use the main meter in anything other than the output, you will not see the meters on the main view. You can work around that, by using send/receive into a muted output group, like this:
 
-![Unity Meter UI](/img/unity/msa_mixer_meter.png)
+<Image url= {require("/img/unity/msa_mixer_meter.png")} >Unity Meter UI</Image>
 
 You can expose parameters and use a script to group them, like using a slider to move several of them. For instance, if I expose the gain for the master and 3 groups (rename them appropriately) you can run something like this to use master volume to move the others relatively:
 
@@ -72,7 +72,7 @@ An easier alternative would be to use [mixer snapshots](https://docs.unity3d.com
 
 Extends Unity's AudioListener features by introducing additional parameters related to global spatialization. The MSAListener component has settings for global reverb and transmission properties.
 
-![MSAListener component settings](/img/unity/enable_acoustic_map.png)
+<Image url= {require("/img/unity/enable_acoustic_map.png")} >MSAListener component settings</Image>
 
 **Enable Acoustic Map**: Acoustic Map data is a device-curated representation of the acoustics of the local physical environment. Enabling the Acoustic Map makes virtual objects sound as though they exist in the local environment.
 
@@ -82,13 +82,13 @@ Extends Unity's AudioListener features by introducing additional parameters rela
 
 **Transmission Properties**: Default values for Transmission:
 
-![MSAListener component settings](/img/unity/ml-listener-2.png)
+<Image url= {require("/img/unity/ml-listener-2.png")} >MSAListener component settings</Image>
 
 Transmission is specified using `MultibandLevelProperties`, which includes gain and 3-band EQ. The values [0dB, (0dB, 0dB, 0dB)] represents fully transmissive while [-96dB, (0dB, 0dB, 0dB)] or [0dB, (-96dB, -96dB, -96dB)] represents fully obstructed.
 
 **Dispersion Properties**: Default values for Dispersion:
 
-![MSAListener component settings](/img/unity/ml-listener-3.png)
+<Image url= {require("/img/unity/ml-listener-3.png")} >MSAListener component settings</Image>
 
 - **Gain**: Dispersion output mix level.
   - **Main**: Level for all freqs.
@@ -99,7 +99,7 @@ Transmission is specified using `MultibandLevelProperties`, which includes gain 
 
 **Reverb Properties**: Default values for Reverb:
 
-![MSAListener component settings](/img/unity/ml-listener-4.png)
+<Image url= {require("/img/unity/ml-listener-4.png")} >MSAListener component settings</Image>
 
 - **Gain**: Reverb output mix level.
   - **Main**: Level for all freqs.
@@ -129,7 +129,7 @@ When an `MLListener` gets instantiated it will first check the `MSAGlobalScripta
 
 - If the `MLListener` prefab has not been set, it will create a new `MLListener` with default properties.
 
-![MSA Global Scriptable Object](/img/unity/msa_scriptable_object.png)
+<Image url= {require("/img/unity/msa_scriptable_object.png")} >MSA Global Scriptable Object</Image>
 
 The `MLListener` prefab allows the developer to configure the desired component properties.
 
@@ -139,7 +139,7 @@ It is possible to disable the Auto creation feature by unchecking the **Auto Cre
 
 When an `MLListener` has been automatically created the UI will provide an option to make it a permanent component that could be saved with this scene.
 
-![MLListener Auto Create](/img/unity/ml_listener_auto.png)
+<Image url= {require("/img/unity/ml_listener_auto.png")} >MLListener Auto Create</Image>
 
 This is to ensure that when a developer has manually instantiated an MLPointSource into a scene that didn't have a prior MLListener it can be saved.
 
@@ -147,15 +147,15 @@ This is to ensure that when a developer has manually instantiated an MLPointSour
 
 Enhances Unity's `AudioSource` features by introducing additional parameters such as radiation patterns and offset gain parameters.
 
-![ML Point Source component settings](/img/unity/ml-point-source.png)
+<Image url= {require("/img/unity/ml-point-source.png")} >ML Point Source component settings</Image>
 
 **Gain**: Sets the point source gain (in dB).
 
-![ML Point Source component settings](/img/unity/ml-point-source-2.png)
+<Image url= {require("/img/unity/ml-point-source-2.png")} >ML Point Source component settings</Image>
 
 **Distance Properties**: Overrides `AudioSource` distance attenuation calculations.
 
-![ML Point Source component settings](/img/unity/ml-point-source-3.png)
+<Image url= {require("/img/unity/ml-point-source-3.png")} >ML Point Source component settings</Image>
 
 - **Override 3D Properties**: When this option is checked it overrides Unity’s audio source attenuation properties.
 - **Min Distance**: Distance at which sound is at full volume.
@@ -164,7 +164,7 @@ Enhances Unity's `AudioSource` features by introducing additional parameters suc
 
 **Radiation Properties**: Provides radiation properties.
 
-![ML Point Source component settings](/img/unity/ml-point-source-4.png)
+<Image url= {require("/img/unity/ml-point-source-4.png")} >ML Point Source component settings</Image>
 
 - **Billboarding**: This option forces the point source to always align itself to the `MLListener`.
 - **Omnidirectional**: This option forces the point source to ignore any directionality completely.
@@ -178,7 +178,7 @@ Enhances Unity's `AudioSource` features by introducing additional parameters suc
 
 **Obstruction Override**: Overrides default obstruction values.
 
-![ML Point Source component settings](/img/unity/ml-point-source-5.png)
+<Image url= {require("/img/unity/ml-point-source-5.png")} >ML Point Source component settings</Image>
 
 These settings override the direct signal attenuation caused by obstructions between the listener and the source. The values interpolate between the current values set in the `MLListener` Transmission properties and 0dB.
 
@@ -186,7 +186,7 @@ For example if the Main (dB) value in the `MLListener` is set to -13dB then the 
 
 **Levels**: Sets the Direct and Indirect levels.
 
-![ML Point Source component settings](/img/unity/ml-point-source-6.png)
+<Image url= {require("/img/unity/ml-point-source-6.png")} >ML Point Source component settings</Image>
 
 - **Direct**: Sets gain and 3-band eq for the direct component of the sound, i.e., the audio mix for the part of the sound not affected by room acoustics.
 
@@ -202,7 +202,7 @@ For example if the Main (dB) value in the `MLListener` is set to -13dB then the 
 
 Plays an ambisonic audio clip through an `AudioSource`.
 
-![ML Point Source component settings](/img/unity/ml-ambisonic-source.png)
+<Image url= {require("/img/unity/ml-ambisonic-source.png")} >ML Point Source component settings</Image>
 
 - **Gain**: Sets the gain of the ambisonic audio source.
 
@@ -218,7 +218,7 @@ If you need guidance working with ambisonics in Unity (adding ambix files, choos
 
 This component dictates the amount of debug info that each component will output to the console output in the editor or log output on the device.
 
-![ML Point Source component settings](/img/unity/ml-debug-info.png)
+<Image url= {require("/img/unity/ml-debug-info.png")} >ML Point Source component settings</Image>
 
 The debug info message has the following format, "**Component Instance ID/Property Name/Value**."
 
@@ -253,7 +253,7 @@ Even though it doesn't require MLPointSource or `MLListener` in theory, we need 
 
 When you add the `MLAcousticAnalysis` component, you will see a collection of traits that can be retrieved from the analysis engine. It would look like this:
 
-![Soundfield analysis component](/img/unity/analysis-component.png)
+<Image url= {require("/img/unity/analysis-component.png")} >Soundfield analysis component</Image>
 
 This Editor panel will allow checking the traits of your component. When there is an event with that trait, the last value for that trait will be updated.
 
@@ -302,4 +302,4 @@ This will change some visual properties of two GameObjects, based on the numeric
 
 In editor, this looks like:
 
-![Soundfield analysis component](/img/unity/analysis-component-2.png)
+<Image url= {require("/img/unity/analysis-component-2.png")} >Soundfield analysis component</Image>

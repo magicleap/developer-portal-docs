@@ -26,4 +26,4 @@ The Manifest Settings panel will filter the permissions that are associated with
 
 In addition to the Magic Leap minimum API level, there's also a minimum API level setting for Android. For the Magic Leap platform, set it explicitly to level 29 to avoid potential issues with certain platform subsystems. You can find this setting under **Project Settings > Player Settings > Android Platform (Android Icon) > Other Settings**
 
-![Min API Level](/img/unity/MinAPILevelPermissions.png)
+<Image url= {require("/img/unity/MinAPILevelPermissions.png")} >Min API Level</Image>

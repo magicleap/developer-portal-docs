@@ -48,15 +48,15 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 tile on the home screen. (If you don't see Remote Rendering at first, restart The Hub.)
 4. Click **Launch** on the Remote Rendering (Preview) tile from the Magic Leap Hub home screen.
 
-![Remote Rendering Tile](/img/remote-rendering/remote-rendering-ml-hub-tile.png)
+<Image url= {require("/img/remote-rendering/remote-rendering-ml-hub-tile.png")} >Remote Rendering Tile</Image>
 
 5. A prompt will ask to install the Client APK. Click "Yes, Install."
 
-![Install Client APK](/img/remote-rendering/client-apk.png)
+<Image url= {require("/img/remote-rendering/client-apk.png")} >Install Client APK</Image>
 
 6. Click the **Start Remote Render** button.
 
-![Start Remote Rendering Button](/img/remote-rendering/remote-rendering-ml-hub-button.png)
+<Image url= {require("/img/remote-rendering/remote-rendering-ml-hub-button.png")} >Start Remote Rendering Button</Image>
 
 7. Put on the Magic Leap 2
 8. Launch the **Remote Viewer** application

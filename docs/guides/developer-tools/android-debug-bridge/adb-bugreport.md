@@ -29,4 +29,4 @@ See [Android's Bug Report documentation](https://developer.android.com/studio/de
 
 Downloading the file is as simple as navigating to the [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge), going to the Files tab, and selecting the relevant bug report:
 
-![Downloading a bug report through the Device Bridge](/img/developer-tools/adb/adb-bugreport-files.png)
+<Image url= {require("/img/developer-tools/adb/adb-bugreport-files.png")} >Downloading a bug report through the Device Bridge</Image>

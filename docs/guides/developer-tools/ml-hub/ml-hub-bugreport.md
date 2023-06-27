@@ -15,11 +15,11 @@ Use the steps below to generate a bug report using the Magic Leap Hub:
 2. Click the plugged-in device in the lower-right-hand tray
 3. Click the "bug" icon as shown in the image below
 
-![Downloading a bug report through the ML Hub](/img/ml-hub/bugreport-menus.png)
+<Image url= {require("/img/ml-hub/bugreport-menus.png")} >Downloading a bug report through the ML Hub</Image>
 
 A dialog will open asking you to save the bug report ZIP file:
 
-![Save bug report dialog](/img/ml-hub/save-bugreport.png)
+<Image url= {require("/img/ml-hub/save-bugreport.png")} >Save bug report dialog</Image>
 
 
 :::tip Reading Bug Reports

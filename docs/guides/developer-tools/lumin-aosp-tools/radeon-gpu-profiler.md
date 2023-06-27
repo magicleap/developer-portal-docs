@@ -74,7 +74,7 @@ Additionally specify `-i` if you are using ADB over TCP/IP (instead of USB).
 
 You should now see the **Radeon Developer Panel (RDP)**. You should see a green dot next to the Connection Tab. Click on the tab. You should see `Connected to Remote <ipaddr>` in the top left corner.
 
-![Radeon Developer Panel Connection Tab](/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-remote.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-remote.png")} >Radeon Developer Panel Connection Tab</Image>
 
 If you see this, it means several things have gone right:
 
@@ -99,17 +99,17 @@ $ adb shell am start de.saschawillems.vulkanGears/de.saschawillems.vulkanSample.
 4. Verify that the app is rendering on the monitor or headset.
 5. Return to RDP. The UI should have automatically switched to the *APPLICATIONS* tab and should show that it has discovered the process you just launched.
 
-![Radeon Developer Panel Capture Profile Button](/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-capture.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-capture.png")} >Radeon Developer Panel Capture Profile Button</Image>
 
 6. Click the **Capture profile** button. You should shortly see a progress bar. When it completes, you'll have a profile you can double click.
 
-![Profiling Progress Bar](/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-profiling.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-profiling.png")} >Profiling Progress Bar</Image>
 
-![Collected Profile](/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-profile.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-profile.png")} >Collected Profile</Image>
 
 7. Double click on the profile. It will launch RGP itself (you've been working with RDP until now).
 
-![RGP Overview Panel](/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-launch.png)
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp-launch.png")} >RGP Overview Panel</Image>
 
 ## Troubleshooting
 

@@ -22,21 +22,21 @@ The Spaces tool can be used on any version/license of a Magic Leap 2. For more i
 
 1. Launch the Spaces application from the Magic Leap 2 home screen.
 
-![Spaces selected on the home screen](/img/device/spaces/spaces_1.png)
+<Image url= {require("/img/device/spaces/spaces_1.png")} >Spaces selected on the home screen</Image>
 
 2. Select **New Local Space** and follow the instructions on the screen. Note some objects do not map well, like ones that have dark or glossy surfaces.
 
-![The default view inside the Spaces Application](/img/device/spaces/spaces_2.png)
+<Image url= {require("/img/device/spaces/spaces_2.png")} >The default view inside the Spaces Application</Image>
 
-![Prompts to scan your space](/img/device/spaces/spaces_3.png)
+<Image url= {require("/img/device/spaces/spaces_3.png")} >Prompts to scan your space</Image>
 
 3. When you are finished scanning your space, select **Finish Scanning** then, select **Yes, Save**.
 
-![The default view inside the Spaces Application](/img/device/spaces/spaces_5.png)
+<Image url= {require("/img/device/spaces/spaces_5.png")} >The default view inside the Spaces Application</Image>
 
 4. Your new space should now appear in your list of spaces.
 
-![The default view inside the Spaces Application](/img/device/spaces/spaces_6.png)
+<Image url= {require("/img/device/spaces/spaces_6.png")} >The default view inside the Spaces Application</Image>
 
 For more specific in-device guidance on the scanning process, click the information icon on the bottom left corner of the Spaces home menu screen.
 

@@ -44,15 +44,15 @@ OS Builds can now be downloaded directly from the ML Hub. Follow these steps to 
 1. Open ML Hub and make sure it is **updated** to the latest version by either accepting the update prompts that pop up or clicking Home > Check For Updates.
 2. Go to the Package Manager and select the **"All"** tab at the top.
 
-![ML Hub Package Manager](/img/ml-hub/package_manager_link.png)
+<Image url= {require("/img/ml-hub/package_manager_link.png")} >ML Hub Package Manager</Image>
 
-![All Packages](/img/ml-hub/ml_hub_packages_all.png)
+<Image url= {require("/img/ml-hub/ml_hub_packages_all.png")} >All Packages</Image>
 
 3. Under the "Device OS Versions" section, find the **ML2 OS** item and click the download icon.
 
 :::note _user vs._user_secure builds
 
-![ML2 Box Barcodes](/img/device/ml2-box-barcodes.png)
+<Image url= {require("/img/device/ml2-box-barcodes.png")} >ML2 Box Barcodes</Image>
 
 Relating to the barcode beginning in "P/N":
 
@@ -65,7 +65,7 @@ If your device is **Unsecure**, download the **_user** version of the OS you wan
 If you do not have access to the barcode, try installing either of the builds using the OS Installer inside ML Hub. You will receive an error if the version doesn't match your device type and will need to download and install the other variation (_user or_user_secure) of that OS version.
 :::
 
-![Package Manager OS package selection](/img/ml-hub/os_image.png)
+<Image url= {require("/img/ml-hub/os_image.png")} >Package Manager OS package selection</Image>
 
 4. Verify that the file is scheduled for download in the panel on the right, then click the **Download** button on the bottom right.
 5. The build file will be downloaded to the Magic Leap folder under your user directory. For example, on Windows, the build folder will likely be located under `<User>\MagicLeap\firmware\ml2`.

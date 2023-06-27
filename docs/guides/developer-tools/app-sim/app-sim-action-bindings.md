@@ -32,7 +32,7 @@ Application Simulator defines a set of bindings for common actions, primarily mo
 
 Here’s an illustration of default bindings for the Primary Navigation actions. Please refer to the default bindings tables at the end of this page for more.
 
-![Diagram of Default Action Bindings](/img/app-sim/app-sim-action-bindings-figure.png)
+<Image url= {require("/img/app-sim/app-sim-action-bindings-figure.png")} >Diagram of Default Action Bindings</Image>
 
 If you want to use a gamepad as input, be sure to connect it to your computer. Application Simulator will remember bindings for the gamepad if it is disconnected.
 
@@ -44,7 +44,7 @@ In order for keyboard action bindings to work, one of the following three areas 
 2. Device View
 3. Touchpad in Control Panel
 
-![Action Focus Areas Diagram](/img/app-sim/focus_areas.png)
+<Image url= {require("/img/app-sim/focus_areas.png")} >Action Focus Areas Diagram</Image>
 
 :::note
 We suggest that you change focus to the Scene View or Device View using the secondary mouse button (usually the right button). The primary mouse button works too but it will likely change the selected object in the view, which may not be what you want.
@@ -65,7 +65,7 @@ Another target can be selected as the active target using shortcut keys when an 
 
 Another way to change the active target is to use the navigation target dropdown menu.
 
-![Change the Activate Target from the Navigation Target Dropdown Menu](/img/app-sim/active-target-dropdown.png)
+<Image url= {require("/img/app-sim/active-target-dropdown.png")} >Change the Activate Target from the Navigation Target Dropdown Menu</Image>
 
 After you select the active target from the dropdown menu, in order to use keyboard inputs, you need to click on one of the action focus areas (see **Action Focus Area** section above).
 
@@ -83,7 +83,7 @@ Click the **Application Simulator** dropdown menu on the top left corner of the 
 
 Then the Action Bindings window (namely the Action Binding Editor) appears, which shows current action bindings and lets you edit them.
 
-![Application Simulator Action Bindings](/img/app-sim/action-bindings-editor.png)
+<Image url= {require("/img/app-sim/action-bindings-editor.png")} >Application Simulator Action Bindings</Image>
 
 ## Action Levels
 
@@ -93,23 +93,23 @@ There are three levels of actions depending on their commonality.
 
 2. **Level 2 Actions:** These actions are common to one type of target, e.g. hand. Examples include actions for triggering a gesture of a hand in addition to those to move or rotate a hand. You need to select which hand, left or right, is the active target. The Current Camera, Current Hand, and Current Control sections in Action Bindings define bindings for level 2 actions. Note that the scene view camera and head pose (aka Device View camera) belong to the type of “camera”.
 
-![Action Levels 1 & 2](/img/app-sim/action-levels-1-2.png)
+<Image url= {require("/img/app-sim/action-levels-1-2.png")} >Action Levels 1 & 2</Image>
 
 For example, you can define key “L” to move the control left.
 
 3. **Level 3 Actions:** These actions apply to one specific target, e.g. left hand, or scene view camera, regardless of the active target. All sections in the Scene View define bindings for level 3 actions.
 
-![Action Level 3](/img/app-sim/action-levels-3.png)
+<Image url= {require("/img/app-sim/action-levels-3.png")} >Action Level 3</Image>
 
 For example, you can define key “M” to roll the left hand, or define key “K” to trigger the OK gesture of the right hand.
 
 ## General Section
 
-![Action Bindings General Tab](/img/app-sim/action-bindings-general.png)
+<Image url= {require("/img/app-sim/action-bindings-general.png")} >Action Bindings General Tab</Image>
 
 The General section in the Action Bindings window defines miscellaneous action bindings. For instance, it defines bindings for selecting the active target:
 
-![Action Bindings General Tab Expanded](/img/app-sim/action-bindings-general-dropdown.png)
+<Image url= {require("/img/app-sim/action-bindings-general-dropdown.png")} >Action Bindings General Tab Expanded</Image>
 
 ## Edit an Action Binding
 
@@ -117,19 +117,19 @@ Go to the action binding you want to change.
 
 - To add a new binding, click + and use the Dialog Box.
 
-![Add a New Action Binding](/img/app-sim/add-new-binding.png)
+<Image url= {require("/img/app-sim/add-new-binding.png")} >Add a New Action Binding</Image>
 
 - Then you should see the following dialog:
 
-![Add a New Action Binding Dialog Window](/img/app-sim/add-new-binding-dialog.png)
+<Image url= {require("/img/app-sim/add-new-binding-dialog.png")} >Add a New Action Binding Dialog Window</Image>
 
 - To change an existing binding, double-click the existing binding.
 
-![Edit an Existing Binding](/img/app-sim/edit-existing-binding.png)
+<Image url= {require("/img/app-sim/edit-existing-binding.png")} >Edit an Existing Binding</Image>
 
 Then you should see the following dialog:
 
-![Editing an Existing Binding Dialog Window](/img/app-sim/edit-existing-binding-dialog.png)
+<Image url= {require("/img/app-sim/edit-existing-binding-dialog.png")} >Editing an Existing Binding Dialog Window</Image>
 
 ### To Bind a Gamepad Stick
 
@@ -142,21 +142,21 @@ To cancel changing an action binding, press Esc.
 
 Click **Reset** on the group menu to restore a group of action bindings to their default settings.
 
-![Reset Action Bindings](/img/app-sim/reset-action-bindings.png)
+<Image url= {require("/img/app-sim/reset-action-bindings.png")} >Reset Action Bindings</Image>
 
 To restore action bindings of a category to default, click this Reset button.
 
-![Reset Action Bindings in a Category](/img/app-sim/reset-action-bindings-category.png)
+<Image url= {require("/img/app-sim/reset-action-bindings-category.png")} >Reset Action Bindings in a Category</Image>
 
 To restore action bindings of a device (e.g. all of keyboard/mouse), select this:
 
-![Reset Action Bindings of a Device](/img/app-sim/reset-action-bindings-device.png)
+<Image url= {require("/img/app-sim/reset-action-bindings-device.png")} >Reset Action Bindings of a Device</Image>
 
 ## Setting Deadzone and Sensitivity
 
 The settings for sensitivity and deadzone can be changed for binding when applicable.
 
-![Change the Sensitivity and Deadzone settings](/img/app-sim/sensitivity-deadzone.png)
+<Image url= {require("/img/app-sim/sensitivity-deadzone.png")} >Change the Sensitivity and Deadzone settings</Image>
 
 :::note
 The default settings for deadzone and sensitivity can be changed globally for a device from the main window under **Settings > Application Simulator > Peripherals**.
@@ -166,7 +166,7 @@ The default settings for deadzone and sensitivity can be changed globally for a 
 
 Currently, defined action bindings can be saved and loaded at a later time. Action bindings are saved as `.mlscheme` files.
 
-![Save Your Current Action Bindings as a Preset](/img/app-sim/action-bindings-save.png)
+<Image url= {require("/img/app-sim/action-bindings-save.png")} >Save Your Current Action Bindings as a Preset</Image>
 
 The Save command is enabled if you have unsaved changes to the current set of action bindings.
 
@@ -174,20 +174,20 @@ The Save command is enabled if you have unsaved changes to the current set of ac
 
 ### Input Device Context Menu
 
-![Input Device Context Menu](/img/app-sim/action-bindings-input-device-context.png)
+<Image url= {require("/img/app-sim/action-bindings-input-device-context.png")} >Input Device Context Menu</Image>
 
 - **Reset Bindings to Factory Default Reset**: Resets input binding for the device to factory defaults.
 - **Clear All Bindings**: Deletes all input bindings for the device.
 - **Filter to This Peripheral**: Displays actions bound to input from the device.
 - **Find Binding for Input**: Lets the user discover which actions are bound to a given input. While active, the device selector will highlight and continuously scan the device for inputs. Trigger keyboard or mouse inputs (for the "Peripheral - Key/Mouse" device) or a connected controller (for other devices). The highlighted area will show the detected inputs and which actions are bound to it. Click "Stop Showing Inputs" to end the scan.
 
-![Find Binding for Input Entity](/img/app-sim/find-binding-input.png)
+<Image url= {require("/img/app-sim/find-binding-input.png")} >Find Binding for Input Entity</Image>
 
 Invoke any input from keyboard/mouse/gamepad, the entity will show which action is bound to it.
 
 - **Apply Presets**: Allows you to apply a set of predefined bindings to the device. This is especially useful for a gamepad – e.g. with a Logitech gamepad connected, the command allows you to bind its input with common bindings of a Microsoft XBox 360 Pad.
 
-![Apply Preset to the Device](/img/app-sim/action-bindings-apply-preset.png)
+<Image url= {require("/img/app-sim/action-bindings-apply-preset.png")} >Apply Preset to the Device</Image>
 
 ## Default Gamepad Bindings
 

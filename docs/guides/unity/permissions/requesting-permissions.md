@@ -17,7 +17,7 @@ The Magic Leap SDK includes helper functions designed to streamline the permissi
 :::tip
 You can view a list of Magic Leap permissions and their corresponding security level by navigating to **Edit** > **Project Settings...** and then selecting **MagicLeap** > **Permissions** from the sidebar.
 
-![MagicLeap Permissions](/img/unity/magicleap_permissions.jpg)
+<Image url= {require("/img/unity/magicleap_permissions.jpg")} >MagicLeap Permissions</Image>
 :::
 
 ## Requesting Normal (Install-time) Permissions

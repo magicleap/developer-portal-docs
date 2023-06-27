@@ -16,7 +16,7 @@ The Tracked Pose Driver component is provided by Unity and allows objects to mir
 3. In the **Position Input** section, select the **+** icon, and set the path to `MagicLeapController/devicePosition` or `XRController/devicePosition`.
 4. Next in the **Rotation Input** section, select the **+** icon, and set the path to `MagicLeapController/deviceRotation`.
 
-![Unity Input System's Tracked Pose Driver Component](/img/unity/input/controller/TrackedPoseDriver_Controller.png)
+<Image url= {require("/img/unity/input/controller/TrackedPoseDriver_Controller.png")} >Unity Input System's Tracked Pose Driver Component</Image>
 
 ### Control Binding Paths
 
@@ -46,7 +46,7 @@ Alternatively, you can use either the action based or the device based XRControl
 3. Next, enable **Input Actions**
 4. Finally, set the Controller Node to **Game Controller**.
 
-![Unity's Device Based XR Controller Component](/img/unity/input/controller/XRController_DeviceBased.png)
+<Image url= {require("/img/unity/input/controller/XRController_DeviceBased.png")} >Unity's Device Based XR Controller Component</Image>
 
 ### Action Based
 
@@ -55,4 +55,4 @@ Alternatively, you can use either the action based or the device based XRControl
 3. Under the **Position Action**, select the **+** icon, and bind the position to **devicePosition [XR Controller**]
 4. Finally, in the **Position Action**, select the **+** icon, and bind the rotation to **deviceRotation [XR Controller**]
 
-![Unity's Action Based XR Controller Component](/img/unity/input/controller/XRController_ActionBased.png)
+<Image url= {require("/img/unity/input/controller/XRController_ActionBased.png")} >Unity's Action Based XR Controller Component</Image>

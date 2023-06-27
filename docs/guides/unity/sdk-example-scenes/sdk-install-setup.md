@@ -24,11 +24,11 @@ To access the Package manager in ML Hub
 
 1. Open **ML Hub**.
 
-![ML Hub Home Window](/img/ml-hub/ml_hub.png)
+<Image url= {require("/img/ml-hub/ml_hub.png")} >ML Hub Home Window</Image>
 
 2. Select **Package Manager** from the home screen.
 
-![Package Manager option outlined](/img/ml-hub/package_manager_link.png)
+<Image url= {require("/img/ml-hub/package_manager_link.png")} >Package Manager option outlined</Image>
 
 Next you can either download the examples project using the [Package Bundles](#download-using-package-bundles), or as an [individual package](#download-individual-package).
 
@@ -40,7 +40,7 @@ To download the Unity Magic Leap Examples Project from the bundle section
 2. Next, select the **Unity Examples** item from the **Change Summary** section.
 3. Click **Apply Changes**.
 
-![ML Hub Bundle Selection screen with Unity Examples option outlined](/img/ml-hub/unity_bundle_examples.png)
+<Image url= {require("/img/ml-hub/unity_bundle_examples.png")} >ML Hub Bundle Selection screen with Unity Examples option outlined</Image>
 
 ### Download Individual Package
 
@@ -50,7 +50,7 @@ To download the Unity Magic Leap Examples Project as an individual package
 2. Next, select the **Unity Examples** item from the **Unity Packages** section.
 3. Lastly, click **Apply Changes** from the summary section.
 
-![ML Hub All Packages screen with the Unity Examples option outlined](/img/ml-hub/unity_examples.png)
+<Image url= {require("/img/ml-hub/unity_examples.png")} >ML Hub All Packages screen with the Unity Examples option outlined</Image>
 
 ## Open the Example Project
 

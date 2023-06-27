@@ -11,15 +11,15 @@ keywords: [FOV, Field of View, Best Practices, Design]
 
 This document details the devices felid of view as well as the field of view of the world and RGB cameras.
 
-![FOV illustration side](/img/human-interface-guidelines/FOV-Illustration_Side.png)
+<Image url= {require("/img/human-interface-guidelines/FOV-Illustration_Side.png")} >FOV illustration side</Image>
 
-![FOV illustration top](/img/human-interface-guidelines/FOV-Illustration_Top.png)
+<Image url= {require("/img/human-interface-guidelines/FOV-Illustration_Top.png")} >FOV illustration top</Image>
 
 ## Display FOV
 
 The Magic Leap 2 display Field of View (FOV) is **45°H x 55°V (70°D)** but this may be significantly smaller if the user is not in the correct device fit. See [Headset Fit](/docs/guides/features/eye-tracking/headset-fit.md) for more information.
 
-![Distance illustration](/img/human-interface-guidelines/Viewing-Distance-Illustration.png)
+<Image url= {require("/img/human-interface-guidelines/Viewing-Distance-Illustration.png")} >Distance illustration</Image>
 
 :::tip
 

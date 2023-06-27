@@ -54,7 +54,7 @@ Following this approach allows for greater flexibility and control over the spat
 
 Prioritize the use of higher frequencies rather than lower ones, considering the audible range of frequencies on the device (500 Hz - 12 kHz)
 
-![Right IR Export sample](/img/audio/frequency.png)
+<Image url= {require("/img/audio/frequency.png")} >Right IR Export sample</Image>
 
 Ensure important audio elements and details are within the audible range, with frequencies around 1 kHz serving as a reference point for balancing the overall audio mix.
 
@@ -90,7 +90,7 @@ Implement occlusion to simulate audio occlusion when sounds are obstructed by ob
 
 Here are  the default settings of an MLListener
 
-![MLListener default settings](/img/audio/default.png)
+<Image url= {require("/img/audio/default.png")} >MLListener default settings</Image>
 
 These defaults provide a good place to start, and lots of things to experiment. Understand how the default settings affect spatial audio rendering and adjust them as necessary to align with your creative intentions.
 

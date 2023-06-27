@@ -22,7 +22,7 @@ This feature requires the `VOICE_INPUT` permission to be **requested** at runtim
   - This is the voice command that will be spoken. There are no limitations on the length of this phrase currently. It should be specific enough to accomplish what is needed, but it is recommended that it is not so long that it is cumbersome to say.
   - The value may contain an or operator, `|`, to indicate multiple phrases that will trigger the same event. For example, in the image below, both `Hello Friend | Hello Buddy` phrases will trigger the 3rd command.
 
-![Voice Intents configuration data](/img/unity/input/voice-intents/voice-intents-configuration-data.png)
+<Image url= {require("/img/unity/input/voice-intents/voice-intents-configuration-data.png")} >Voice Intents configuration data</Image>
 
 :::tip
 You can choose to directly add voice commands through code instead of in the inspector.

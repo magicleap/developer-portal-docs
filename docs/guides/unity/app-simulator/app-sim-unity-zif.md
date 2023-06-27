@@ -26,7 +26,7 @@ Application Simulator can now be used from within Unity as a native plugin witho
 
 ## Downloading Application Simulator for Unity
 
-![Installing the Application Simulator for Unity Package through The ML Hub's Package Manager](/img/app-sim/zif/st-lab01-zif.png)
+<Image url= {require("/img/app-sim/zif/st-lab01-zif.png")} >Installing the Application Simulator for Unity Package through The ML Hub's Package Manager</Image>
 
 1. Start the **ML Hub**, open the **Package Manager**, and go to the **All** tab.
 2. Select the latest version of the **Magic Leap Application Simulator for Unity**, and click on the Download button.
@@ -35,22 +35,22 @@ Application Simulator can now be used from within Unity as a native plugin witho
 :::tip
 After installing the package, search for it in the **Package Manager**, and click on **Open Folder**. This will help you with the next step of the process.
 
-![Locating the Application Simulator for Unity package through the ML Hub's Package Manager](/img/app-sim/open_folder_unity_appsim.png)
+<Image url= {require("/img/app-sim/open_folder_unity_appsim.png")} >Locating the Application Simulator for Unity package through the ML Hub's Package Manager</Image>
 :::
 
 ## Installing Application Simulator for Unity
 
 1. In **Unity**, go to **Window > Package Manager**, then click on the **+** icon and select **Install Package from Tarball**.
 
-![Install Package from Tarball through Unity's Package Manager](/img/app-sim/asu/st-pac01.png)
+<Image url= {require("/img/app-sim/asu/st-pac01.png")} >Install Package from Tarball through Unity's Package Manager</Image>
 
 2. Navigate to where the package is located, and open the `com.magicleap.appsim.tgz` file.
 
-![Locate the Application Simulator for Unity Package](/img/app-sim/package_location.png)
+<Image url= {require("/img/app-sim/package_location.png")} >Locate the Application Simulator for Unity Package</Image>
 
 3. After a quick installation, the package should now be visible under the name **Magic Leap App Simulator** in the Package Manager.
 
-![The Application Simulator for Unity package is now visible](/img/app-sim/app_sim_unity_package_window.png)
+<Image url= {require("/img/app-sim/app_sim_unity_package_window.png")} >The Application Simulator for Unity package is now visible</Image>
 
 :::caution
 Make sure you select **Install package from Tarball**, as otherwise, you will fail to find the package.
@@ -66,14 +66,14 @@ A new **Magic Leap** menu will now appear under Unity's **Windows** tab. If you 
 
 2. The **Target Selector** panel will now appear in the upper-left portion of your Unity editor. You can now select your Target.
 
-![Application Simulator Target Tab - Target Selection](/img/app-sim/asu/st-tar02.png)
+<Image url= {require("/img/app-sim/asu/st-tar02.png")} >Application Simulator Target Tab - Target Selection</Image>
 
 3. Click on the **Play** button next to your Target.
 
 :::caution Play Buttons Explanation
 With the App Sim for Unity, there are now two identical-in-appearance "Play" buttons. One is for selecting your Target and the other for playing your Scene.
 
-![App Sim for Unity Play Buttons](/img/app-sim/app-sim-play-buttons.png)
+<Image url= {require("/img/app-sim/app-sim-play-buttons.png")} >App Sim for Unity Play Buttons</Image>
 :::
 
 4. Click on the **Play** button in the top-center of the Unity editor window.
@@ -86,4 +86,4 @@ From the same dropdown menu, you can open panels with other Application Simulato
 
 Those panels offer the same functionalities as other **Unity Editor** panels — they can be positioned, scaled, arranged, and docked to your workspace to suit your preferences.
 
-![A Unity Editor Workspace with Several Magic Leap Application Simulator Panels Docked to it](/img/app-sim/unity_editor_app_sim_view.png)
+<Image url= {require("/img/app-sim/unity_editor_app_sim_view.png")} >A Unity Editor Workspace with Several Magic Leap Application Simulator Panels Docked to it</Image>
