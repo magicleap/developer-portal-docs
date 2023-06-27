@@ -175,8 +175,7 @@ Now you just need to print the marker from the Marker folder so it can be held u
 
 1. Press **Play** in the Editor
 2. Press **M** and hold up the printed marker to the webcam to calibrate the scene to the marker.
-3. You will see the Movable Cube appear on top of the marker
-[image reference]
+3. You will see the Movable Cube appear on top of the marker.
 
 #### On the Headset
 
