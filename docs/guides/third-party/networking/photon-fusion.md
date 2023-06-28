@@ -1,7 +1,7 @@
 ---
 id: photon-fusion
 title: Photon Fusion
-sidebar_position: 10
+sidebar_position: 4
 description: Guide on using the ML2 Photon Fusion example project
 date: 04/24/2023
 tags: [Unity, Walkthroughs,Guides, photon, networking, photon fusion]
