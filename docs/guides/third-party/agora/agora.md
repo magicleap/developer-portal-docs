@@ -1,14 +1,12 @@
 ---
 id: agora
-title: Agora RTC Engine Overview
+title: Agora Realtime Communications SDK
 description: Using Agora with Magic Leap 2 in Unity
 sidebar_position: 0
 date: 06/14/2023
 tags: [Unity, Samples, Agora, video, streaming, live]
 keywords: [Unity, Samples, Agora, video, streaming, live]
 ---
-
-# Agora RTC Engine Overview
 
 Agora Realtime Communications SDK brings the best of class real time voice and video communication capabilities to the MagicLeap 2, desktop and mobile devices.  
 
