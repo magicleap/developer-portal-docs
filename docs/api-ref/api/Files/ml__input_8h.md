@@ -100,7 +100,7 @@ title: ml_input.h
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLInputResult_ServiceNotAvailable |  MLResultAPIPrefix_Input| |
-| MLInputResult_PermissionDenied | | Operation failed because a required permission has not been granted. Example: This can happen when the app is not in the foreground. .|
+| MLInputResult_PermissionDenied | | Operation failed because a required permission has not been granted. Example: This can happen when the app is not in the foreground. |
 | MLInputResult_DeviceNotFound | | Operation failed because a required device was not found. |
 | MLInputResult_IllegalState | | Operation failed because the service was in an illegal state. Example: This can occur when the service is still initializing. |
 | MLInputResult_InternalError | | Operation failed because of an internal error. |

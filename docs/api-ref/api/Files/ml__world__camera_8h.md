@@ -98,8 +98,8 @@ Enumeration of all the available world camera sensors.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLWorldCameraMode_Unknown |  0| None. |
-| MLWorldCameraMode_LowExposure |  1 << 0| Low exposure mode. .This mode is currently only available when the controller is being tracked. |
-| MLWorldCameraMode_NormalExposure |  1 << 1| Normal exposure mode. .|
+| MLWorldCameraMode_LowExposure |  1 << 0| Low exposure mode. This mode is currently only available when the controller is being tracked. |
+| MLWorldCameraMode_NormalExposure |  1 << 1| Normal exposure mode. |
 | MLWorldCameraMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -117,8 +117,8 @@ Enumeration of world camera modes.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLWorldCameraFrameType_Unknown |  0| None. |
-| MLWorldCameraFrameType_LowExposure |  1| Frame captured using [MLWorldCameraMode_LowExposure](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameramode-lowexposure) mode. .|
-| MLWorldCameraFrameType_NormalExposure |  2| Frame captured using [MLWorldCameraMode_NormalExposure](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameramode-normalexposure) mode. .|
+| MLWorldCameraFrameType_LowExposure |  1| Frame captured using [MLWorldCameraMode_LowExposure](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameramode-lowexposure) mode. |
+| MLWorldCameraFrameType_NormalExposure |  2| Frame captured using [MLWorldCameraMode_NormalExposure](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameramode-normalexposure) mode. |
 | MLWorldCameraFrameType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 

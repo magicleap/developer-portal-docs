@@ -97,8 +97,8 @@ title: ml_space.h
 | ---------- | ----- | ----------- |
 | MLSpaceResult_ServerError |  MLResultAPIPrefix_Space| There was an error communicating with the server. |
 | MLSpaceResult_ServiceUnavailable | | The operation failed because the underlying service is not yet available, retry later. |
-| MLSpaceResult_UnavailableSpace | | Space is not available. This can happen when the selected space is in AR Cloud but the device is configured for On Device spaces or vice-versa. .|
-| MLSpaceResult_IncompatibleSpace | | Space is not compatible with the current OS version. This can happen when a space exported from an older version of the OS is imported to a device running a newer version of the OS. Refer to the documentation at the top of this header for more notes on Space compatibility. .|
+| MLSpaceResult_UnavailableSpace | | Space is not available. This can happen when the selected space is in AR Cloud but the device is configured for On Device spaces or vice-versa. |
+| MLSpaceResult_IncompatibleSpace | | Space is not compatible with the current OS version. This can happen when a space exported from an older version of the OS is imported to a device running a newer version of the OS. Refer to the documentation at the top of this header for more notes on Space compatibility. |
 | MLSpaceResult_SpaceAlreadyExists | | The operation failed because the Space being imported already exists in the device. |
 | MLSpaceResult_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 

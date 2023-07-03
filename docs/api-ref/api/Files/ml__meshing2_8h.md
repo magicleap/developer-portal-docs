@@ -67,7 +67,7 @@ title: ml_meshing2.h
 | MLMeshingFlags_ComputeConfidence |  1 << 2| If set, the system will compute the confidence values. |
 | MLMeshingFlags_Planarize |  1 << 3| If set, the system will planarize the returned mesh (planar regions will be smoothed out). |
 | MLMeshingFlags_RemoveMeshSkirt |  1 << 4| If set, the mesh skirt (overlapping area between two mesh blocks) will be removed. |
-| MLMeshingFlags_IndexOrderCW |  1 << 5| If set, winding order of indices will be be changed from counter clockwise to clockwise. This could be useful for face culling process in different engines. .|
+| MLMeshingFlags_IndexOrderCW |  1 << 5| If set, winding order of indices will be be changed from counter clockwise to clockwise. This could be useful for face culling process in different engines. |
 | MLMeshingFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 

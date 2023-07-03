@@ -97,12 +97,12 @@ Represents the different detector types supported by the API.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMarkerTrackerProfile_Default |  0| Generic tracker profile. Tracker profile that covers standard use cases. If this does not suite the needs of the application try the other profiles listed below. .|
-| MLMarkerTrackerProfile_Custom |  1| Customer Tracker Profile. .Application can define a custom traker profiler. See [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for more details. |
-| MLMarkerTrackerProfile_Speed |  2| Optimized for speed. Use this profile to reduce the compute load and increase detection/tracker speed. This can result poor poses. .|
-| MLMarkerTrackerProfile_Accuracy |  3| Optimized for accuracy. Use this profile to optimize for accurate marker poses. This can cause increased load on the compute. .|
-| MLMarkerTrackerProfile_SmallTargets |  4| Optimized for small targets. Use this profile to optimize for markers that are small or for larger markers that need to detected from far. .|
-| MLMarkerTrackerProfile_Large_FoV |  6| Optimized for FoV. Use this profile to be able to detect markers across a larger FoV. Marker Tracker system will attempt to use multiple cameras to detect the markers. .|
+| MLMarkerTrackerProfile_Default |  0| Generic tracker profile. Tracker profile that covers standard use cases. If this does not suite the needs of the application try the other profiles listed below. |
+| MLMarkerTrackerProfile_Custom |  1| Customer Tracker Profile. Application can define a custom traker profiler. See [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for more details. |
+| MLMarkerTrackerProfile_Speed |  2| Optimized for speed. Use this profile to reduce the compute load and increase detection/tracker speed. This can result poor poses. |
+| MLMarkerTrackerProfile_Accuracy |  3| Optimized for accuracy. Use this profile to optimize for accurate marker poses. This can cause increased load on the compute. |
+| MLMarkerTrackerProfile_SmallTargets |  4| Optimized for small targets. Use this profile to optimize for markers that are small or for larger markers that need to detected from far. |
+| MLMarkerTrackerProfile_Large_FoV |  6| Optimized for FoV. Use this profile to be able to detect markers across a larger FoV. Marker Tracker system will attempt to use multiple cameras to detect the markers. |
 | MLMarkerTrackerProfile_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
