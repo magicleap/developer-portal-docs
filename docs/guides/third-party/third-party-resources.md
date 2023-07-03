@@ -54,6 +54,3 @@ Learn how to incorporate popular third-party resources into your Magic Leap 2 pr
     </td>
   </tr>
 </table>
-
-
-<DocCardList items={useCurrentSidebarCategory().items}/>
