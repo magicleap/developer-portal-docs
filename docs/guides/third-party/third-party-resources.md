@@ -35,19 +35,19 @@ Learn how to incorporate popular third-party resources into your Magic Leap 2 pr
   </tr>
     <tr>
     <td>
-      <a href="/docs/guides/features/marker-tracking">
+      <a href="/docs/guides/third-party/networking/photon-fusion">
         <img src="/img/third-party/photon.png" />
         <div class="ml2-overview-image-text">Photon Fusion</div>
       </a>
     </td>
     <td>
-      <a href="/docs/guides/features/dimmer-feature">
+      <a href="/docs/guides/third-party/ptc/vuforia-overview">
         <img src="/img/ml2-overview/ptc-logo.png" />
         <div class="ml2-overview-image-text">PTC Vuforia Engine</div>
       </a>
     </td>
     <td>
-      <a href="/docs/guides/third-party/ptc">
+      <a href="/docs/guides/third-party/visometry/visionlib">
         <img src="/img/third-party/visionlib.png" />
         <div class="ml2-overview-image-text">Visometry VisionLib Engine</div>
       </a>
