@@ -11,9 +11,9 @@ The Magic Leap 2 `MLCamera` API allows developers to capture real and virtual co
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-## Camera Streams
+## Logical Cameras
 
-Magic Leap 2 allows developers to access two streams from the same physical camera. The camera streams are accessed as devices in the Unity API and have the following identifiers:
+Magic Leap 2 allows developers to access two Logical Cameras from the same physical camera. The camera streams are accessed as devices in the Unity API and have the following identifiers:
 
 - `MLCamera.Identifier.Main` - provides access to compressed video and still images. This device allows you to capture virtual, real-world, mixed reality content and is the performed choice if you are not performing computer vision tasks on the output or if it is being used for streaming, broadcasting, or images.
   

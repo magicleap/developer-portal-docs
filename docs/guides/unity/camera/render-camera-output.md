@@ -1,5 +1,5 @@
 ---
-title: Render Camera Output
+title: Visualize Camera Output
 sidebar_position: 2
 date: 10/09/2022
 tags: [Unity, Example, Camera, Render]
