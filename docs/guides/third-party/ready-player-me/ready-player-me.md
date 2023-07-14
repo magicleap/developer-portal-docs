@@ -8,7 +8,7 @@ tags: [Unity, Walkthroughs,Guides, Ready Player Me, Avatars]
 keywords: [Unity, guides, photon, Ready Player Me, Avatars]
 ---
 
-# Ready Player Me avatars with Magic Leap 2
+# Ready Player Me for Magic Leap 2
 
 This guide will walk you through how to implement the Ready Player Me VR half-body avatars inside your Unity project for Magic Leap 2.
 
@@ -18,7 +18,7 @@ In this guide you will:
 2. [Use hand tracking to drive the avatar hands](#configuring-hand-tracking-in-your-avatar)
 3. [Use eye tracking to drive eye rotation and blinking](#configuring-eye-tracking-in-your-avatar)
 
-You can use the sample scene to test the project for yourself by swapping out the Avatar - REPLACE ME child of the XR Rig in the ML2_RPM_Demo scene or follow the guide below to set up your scene from scratch using the scripts provided in the sample.
+You can use the sample scene to test the project for yourself by swapping out the Avatar - REPLACE ME child of the XR Rig in the ML2ReadyPlayerMeDemo scene or follow the guide below to set up your scene from scratch using the scripts provided in the sample.
 
 :::note
 
@@ -55,7 +55,7 @@ Before you begin, you must:
 
 8. Expand the **XR Rig** and enable the **Right Hand Controller** and **Left Hand Controller** objects.
 
-9. Import the Magic Leap 2 Ready Player Me package[INSERT LINK] into your scene by navigating to **Assets > Import Package > Custom Package** and selecting the ML2_RPM.unitypackage file. Select **All** and click **Import**.
+9. Import the [Magic Leap 2 Ready Player Me package](https://github.com/magicleap/MagicLeapReadyPlayerMe/tree/main) into your scene by navigating to **Assets > Import Package > Custom Package** and selecting the MagicLeapReadyPlayerMe.unitypackage file. Select **All** and click **Import**.
 
 10. Head to **Edit > Project Settings > Magic Leap > Permissions** and enable **RECORD_AUDIO, EYE_TRACKING, VOICE_INPUT, EYE_CAMERA and HAND_TRACKING**.
 
@@ -70,7 +70,7 @@ Before you begin, you must:
 2. Select the Avatar object and in the inspector window and **disable** the Eye Animation Handler.
 3. With the Avatar object selected, click **“Add Component”** and add an **Audio Source**.
 4. Drag the newly created audio source into the “Audio Source” field in the **Voice Handler** script on the Avatar.
-5. Add the **EyeTracking** and **HandTrackingEnable** scripts from the ML2_RPM package to the to your Avatar object.
+5. Add the **[EyeTracking](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/AvatarEyeTracking.cs)** and **[HandTrackingEnable](https://github.com/magicleap/MagicLeapReadyPlayerMe/blob/main/Runtime/Scripts/HandTrackingEnable.cs)** scripts from MagicLeapReadyPlayerMe package to your Avatar object.
 
 <img src="/img/unity/ready-player-me/avatar_inspector.jpg" width="450px" />
 
@@ -114,7 +114,7 @@ This will make the hands of the Ready Player Me avatar move along with the detec
 
 ## Testing
 
-- To see yourself using the avatar, drag and drop the **Mirror** prefab from the RPM Assets folder into the scene and position it at (0,0.5,1.6) to place the canvas where it was launched. 
+- To see yourself using the avatar, drag and drop the **Mirror** prefab from the RPM Assets folder into the scene and position it at (0,0.5,1.6) to place the canvas where it was launched.
 - If you run into issues with the material on the Mirror showing up as pink, make sure its shader is set to **Universal Render Pipeline - Unlit** and drag the **Camera Texture** from the RPM Assets folder into the **Base Map** field of the **RenderMat** material used by the Mirror plane.
 
 ## Further Resources
