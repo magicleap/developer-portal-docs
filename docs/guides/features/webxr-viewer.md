@@ -1,59 +1,60 @@
 ---
-title: WebXR Viewer
-date: 05/02/2022
+title: WebXR
+date: 07/17/2023
 sidebar_position: 12
 tags: [Features]
 keywords: [Features]
 ---
 
-Magic Leap's WebXR Viewer application allows developers to test their WebXR applications. Note, this application is still being developed and some features may not be compatible with the current release. Additionally, since the feature has been released in *preview* , the WebXR viewer is not visible from the home menu. This section includes instructions on how to launch the WebXR Viewer and how to manage it's permissions.
+NOTE: If you were looking for the WebXR Viewer content, it’s been replaced by this document. 
 
-## Start WebXR Viewer
+MagicLeap now offers full support for the WebXR Device API. It comes already installed on your Magic Leap device and should work with your standard WebXR applications out of the box. All features described in the WebXR specification here - https://www.w3.org/TR/webxr/ are supported. 
 
-The following commands should be used to start a WebXR experience.
+## What's Supported, What's Not
+
+The following WebXR specifications and extensions are supported on MagicLeap:
+- WebXR core/device API 
+- WebXR reference spaces (view, local, local-floor, bounded, unbounded)
+- HandTracking
+- Input Controller
+- Segmented Dimmer through **immersive-vr** and **immersive-ar** during requestSession API in WebXR. If you use **immersive-vr**, it will darken the real world to create a VR experience. **immersive-ar** will show the real world as is alongside the virtual content.
+
+MagicLeap does not offer support for the MagicLeap simulator or the anchor, layers and  hittest modules. While WebXR on the headset comes with some extensions supported, not all extensions are supported by MagicLeap. 
+
+You can launch features from the command line like this:
 
 ```shell
-adb shell am start -n com.magicleap.helio_webxrviewer/.WebXRViewerActivity https://immersiveweb.dev
+adb shell am start -n
+com.magicleap.helio_webxrviewer/com.magicleap.helio.WebXRViewerActivity
+https://immersiveweb.dev
 ```
+
+## Pinning Web Apps
+
+MagicLeap does not support pinning web applications from the browser to the home menu. However, any APK (Android Package Kit) which can load a URL on startup can be used. Third-party developers using WebXR can launch their web content using custom tabs and trusted web activities. When the User launches the APK, it opens the URL in a browser. 
+
+:::NOTE: This is a browser/system feature, not a WebXR feature. 
+:::
 
 ## Permissions
 
-This section includes information on how to request or reset permissions:
+MagicLeap handles permissions for you. When a user navigates to your WebXR experience  webpage, they’ll be asked to grant permission to allow WebXR to start immersive mode. For WebXR content, you must always have the permission prompt. This is true for all WebXR experiences.
 
-To RESET VR permission request:
+## Start with QR Code
 
-```shell
-adb shell am start -e settings.vr ASK -n com.magicleap.helio_webxrviewer/.WebXRViewerActivity https://immersiveweb.dev
-```
+You can launch your application through a QR code. When someone accesses the QR code, the MagicLeap browser will open with the URL provided in the QR code. 
 
-:::caution
-Clearing Site level permissions for WebXR is not functional, ie. this:
-
-```shell
-adb shell am start -e settings.ar ASK -n com.magicleap.helio_webxrviewer/.WebXRViewerActivity https://immersiveweb.dev
-```
-
-**doesn’t** work.
+:::NOTE: This is a browser/system feature, not a WebXR feature.
 :::
 
-There are several permissions which we can reset via API:
+## Quit Web XR
 
-- `-e settings.mic ASK`  
-- `-e settings.camera ASK`  
-- `-e settings.vr ASK`  
-- `-e settings.ar ASK`  
+Users can quit a WebXR immersive experience by pressing the menu button on the controller at any time. The immersive session will close, and the user will be able to see web contents in standard browser mode(non immersive).
 
-There are several alternatives for the permissions:
+## Samples
 
-- `ASK`  
-- `ALLOW`  
-- `BLOCK`  
-- `RESET` (set permission to default which is `ASK`)
+If you’d like to try the WebXR experience to see how it appears in MagicLeap, there are many good WebXR resources available:
+- https://immersive-web.github.io/webxr-samples/
+- https://hubs.mozilla.com/labs/
+- https://avida.cs.wright.edu/WebXR/webxr-samples/
 
-## Bugs / Limitations
-
-The following WebXR samples are currently not supported :
-
-- Anchor
-- Hit
-- Room Scale
