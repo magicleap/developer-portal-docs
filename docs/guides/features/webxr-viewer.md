@@ -1,6 +1,6 @@
 ---
 title: WebXR
-date: 07/17/2023
+date: 07/18/2023
 sidebar_position: 12
 tags: [Features]
 keywords: [Features]
@@ -19,7 +19,7 @@ The following WebXR specifications and extensions are supported on MagicLeap:
 - Input Controller
 - Segmented Dimmer through **immersive-vr** and **immersive-ar** during requestSession API in WebXR. If you use **immersive-vr**, it will darken the real world to create a VR experience. **immersive-ar** will show the real world along with the virtual content.
 
-MagicLeap does not offer support for the WebXR simulator or the anchor, layers and  hittest modules. Currently, Magic Leap does not support WebXR Anchor, WebXR Layers, and WebXR Hittest modules. 
+Currently, Magic Leap does not support WebXR Anchor, WebXR Layers, and WebXR Hittest modules. 
 
 You can launch features from the command line like this:
 
@@ -46,6 +46,9 @@ You can launch your application through a QR code. When someone accesses the QR 
 ## Permissions 
 
 MagicLeap handles permissions for you. When a user navigates to your WebXR experience webpage, they'll be asked to grant permission to allow WebXR to start immersive mode. For WebXR content, you must always have the permission prompt. This is true for all WebXR experiences.
+
+:::NOTE: This is a browser/system feature, not a WebXR feature. 
+:::
 
 ## Quit Web XR
 
