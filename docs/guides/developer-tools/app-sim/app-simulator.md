@@ -1,5 +1,5 @@
 ---
-id: app-sim
+slug: app-sim
 title: Application Simulator
 sidebar_position: 0
 date: 08/29/2022
