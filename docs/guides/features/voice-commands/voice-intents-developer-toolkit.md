@@ -52,23 +52,23 @@ In the tabularized example below there are a total of five intents from which th
 | sys_intent_list | ML_SYSAUDIO_UNMUTE | |
 | sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | |
 
-Before validation we enter the above table values into the VIDTK UI using the following steps
+Before validation we enter the above table values into the VIDTK UI using the following steps:
 
 1. Define App Intents
 
-[![Define App Intents](/img/vidtk/vidtk-1.png)]
+![Define App Intents](/img/vidtk/vidtk-1.png)
 
 2. Define System Intents
 
-[![Define System Intents](/img/vidtk/vidtk-2.png)]
+![Define System Intents](/img/vidtk/vidtk-2.png)
 
 Before deploying the output with the Android application on the ML2 device, the “Validate” button enables the user to use the VIDTK for uncovering potential issues such as warnings and errors.
 
-[![The “Validate” button enables the user to use the VIDTK for uncovering potential issues such as warnings and errors.](/img/vidtk/vidtk-3.png)]
+![The “Validate” button enables the user to use the VIDTK for uncovering potential issues such as warnings and errors.](/img/vidtk/vidtk-3.png)
 
 In our example, no issues were found and we can export our work to an ML2 compatible file (JSON) format using the “Export” button.
 
-```
+``` json
 {
  "language": "en-us",
  "version": 1,
@@ -129,13 +129,13 @@ A “variable,” or non-terminal in terms of context-free grammars, serves pure
 
 #### Example
 
-##### Before
+Before:
 
 | Field | Name | Value |
 | --- | --- | --- | 
 | app_intents | APP_CONFIRM | I hereby confirm \| I hereby validate \| I hereby acknowledge \| I hereby verify \| I hereby affirm |
 
-##### After (in variables notation)
+After (in variables notation):
 
 | Field | Name | Value |
 | --- | --- | --- |
@@ -151,6 +151,7 @@ Slots are similar to variables in that they express variability however “{}”
 Here is an example supporting the full grammar:
 
 | field | name | value |
+| --- | --- | --- | 
 | app_slots | Loudness | high\|medium\|low |
 | app_slots | VolumePercent | 1\|2\|3\|4\|5\|6 |
 | app_variables | volume_type | sound \| volume |
@@ -161,29 +162,29 @@ Here is an example supporting the full grammar:
 | sys_intent_list | ML_SYSAUDIO_UNMUTE | |
 | sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | |
 
-Following the analogous steps as in the previous example, we
+Following the analogous steps as in the previous example, we:
 
-- Define App Intents
+ a. Define App Intents
 
-[![Define System Intents](/img/vidtk/vidtk-4.png)]
+ ![Define System Intents](/img/vidtk/vidtk-4.png)
 
-- Define App Variables
+ b. Define App Variables
 
-[![Define System Intents](/img/vidtk/vidtk-5.png)]
+ ![Define System Intents](/img/vidtk/vidtk-5.png)
 
-- Define App Slots
+ c. Define App Slots
 
-[![Define System Intents](/img/vidtk/vidtk-6.png)]
+ ![Define System Intents](/img/vidtk/vidtk-6.png)
 
-- Define System Intents
+ d. Define System Intents
 
-[![Define System Intents](/img/vidtk/vidtk-7.png)]
+ ![Define System Intents](/img/vidtk/vidtk-7.png)
 
-Note that the definition order is commutative. 
+Note that the definition order is commutative.
 
-Using the “Validate” button yields
+Using the “Validate” button yields:
 
-[![Define System Intents](/img/vidtk/vidtk-8.png)]
+ ![Define System Intents](/img/vidtk/vidtk-8.png)
 
 Where the lower left “Validation successful” signals us that we can export the file and then co-deploy it with an Android app. 
 
@@ -193,16 +194,16 @@ Please find below a few screenshots depicting those error messages.
 
 1. Use of invalid symbols. Here we add the “+” operator that we don’t support, issuing an error message.
 
-[![Define System Intents](/img/vidtk/vidtk-9.png)]
+![Define System Intents](/img/vidtk/vidtk-9.png)
 
-[![Define System Intents](/img/vidtk/vidtk-10.png)]
+![Define System Intents](/img/vidtk/vidtk-10.png)
 
 2. Misspelled word. Here we changed the variable value “volume” to “volumer”, issuing a warning message.
 
-[![Define System Intents](/img/vidtk/vidtk-11.png)]
+![Define System Intents](/img/vidtk/vidtk-11.png)
 
-[![Define System Intents](/img/vidtk/vidtk-12.png)]
+![Define System Intents](/img/vidtk/vidtk-12.png)
 
 3. Identical Utterances. Here we created two intents sharing the utterance “Confirm {Loudness}”.
 
-[![Define System Intents](/img/vidtk/vidtk-13.png)]
+![Define System Intents](/img/vidtk/vidtk-13.png)
