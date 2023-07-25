@@ -173,12 +173,12 @@ Call [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___came
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLCameraMRQuality_648x720 |  1| Specifies 648 x 720 resolution. Aspect ratio: 9x10. .|
-| MLCameraMRQuality_972x1080 |  2| Specifies 972 x 1080 resolution. Aspect ratio: 9x10. .|
-| MLCameraMRQuality_1944x2160 |  3| Specifies 1944 x 2160 resolution. Aspect ratio: 9x10. MLCameraCaptureFrameRate_60FPS is not supported for this quality mode. .|
-| MLCameraMRQuality_960x720 |  4| Specifies 960 x 720 resolution. Aspect ratio: 4x3. .|
-| MLCameraMRQuality_1440x1080 |  5| Specifies 1440 x 1080 resolution. Aspect ratio: 4x3. .|
-| MLCameraMRQuality_2880x2160 |  6| Specifies 2880 x 2160 resolution. Aspect ratio: 4x3. MLCameraCaptureFrameRate_60FPS is not supported for this quality mode. .|
+| MLCameraMRQuality_648x720 |  1| Specifies 648 x 720 resolution. Aspect ratio: 9x10. |
+| MLCameraMRQuality_972x1080 |  2| Specifies 972 x 1080 resolution. Aspect ratio: 9x10. |
+| MLCameraMRQuality_1944x2160 |  3| Specifies 1944 x 2160 resolution. Aspect ratio: 9x10. MLCameraCaptureFrameRate_60FPS is not supported for this quality mode. |
+| MLCameraMRQuality_960x720 |  4| Specifies 960 x 720 resolution. Aspect ratio: 4x3. |
+| MLCameraMRQuality_1440x1080 |  5| Specifies 1440 x 1080 resolution. Aspect ratio: 4x3. |
+| MLCameraMRQuality_2880x2160 |  6| Specifies 2880 x 2160 resolution. Aspect ratio: 4x3. MLCameraCaptureFrameRate_60FPS is not supported for this quality mode. |
 | MLCameraMRQuality_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 

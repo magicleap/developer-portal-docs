@@ -100,10 +100,10 @@ Note : In the current definition of the API, perception must have already been s
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLGraphicsFlags_NoDepth |  1 << 0| The client will not provide a depth buffer to the graphics system as part of rendering. Therefore the handle returned for all depth related resources from the graphics APIs will be invalid. .|
-| MLGraphicsFlags_DebugMode |  1 << 2| Create a debug client with a debug configuration that provides extended logcat error logging. Useful to debug failures in API calls to the graphics system. .|
-| MLGraphicsFlags_Headlock |  1 << 3| The client will lock all the content to the user's head pose. When enabled all of the content rendered by the app and system notifications will be in head locked mode. Use this mode with caution. .|
-| MLGraphicsFlags_Default |  0| When #graphics_flags is set to default, the client configuration returned is the default configuration (color/depth, origin lower left, non-debug, no headlock). .|
+| MLGraphicsFlags_NoDepth |  1 << 0| The client will not provide a depth buffer to the graphics system as part of rendering. Therefore the handle returned for all depth related resources from the graphics APIs will be invalid. |
+| MLGraphicsFlags_DebugMode |  1 << 2| Create a debug client with a debug configuration that provides extended logcat error logging. Useful to debug failures in API calls to the graphics system. |
+| MLGraphicsFlags_Headlock |  1 << 3| The client will lock all the content to the user's head pose. When enabled all of the content rendered by the app and system notifications will be in head locked mode. Use this mode with caution. |
+| MLGraphicsFlags_Default |  0| When #graphics_flags is set to default, the client configuration returned is the default configuration (color/depth, origin lower left, non-debug, no headlock). |
 | MLGraphicsFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -124,7 +124,7 @@ The flags are used to define the #graphics_flags member of the [MLGraphicsOption
 | ---------- | ----- | ----------- |
 | MLSurfaceFormat_Unknown |  0| Invalid format for color/depth. |
 | MLSurfaceFormat_RGBA8UNorm | | 32bit linear color format (RGBA8). |
-| MLSurfaceFormat_RGBA8UNormSRGB | | Gamma 2.2 32bit sRGB color format (RGBA8). Clients requesting this format are required to encode the final color into this surface as defined by the IEC 61966-2-1 specification. .|
+| MLSurfaceFormat_RGBA8UNormSRGB | | Gamma 2.2 32bit sRGB color format (RGBA8). Clients requesting this format are required to encode the final color into this surface as defined by the IEC 61966-2-1 specification. |
 | MLSurfaceFormat_RGB10A2UNorm | | 32bit linear color format (R10G10B10A2). |
 | MLSurfaceFormat_RGBA16Float | | 64bit linear color format (R16G16B16A16). |
 | MLSurfaceFormat_D32Float | | 32bit floating point depth buffer (D32F). |

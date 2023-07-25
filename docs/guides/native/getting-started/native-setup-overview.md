@@ -26,13 +26,13 @@ Make sure you have installed the Android SDK Tools, Android SDK Command Line, an
 
 You can find the SDK Manager by either selecting **More Actions** on the landing screen, or from the **Tools** dropdown from within a project.
 
-![SDK Manager Option in More Actions Dropdown](/img/native/getting-started/android-studio-sdk-manager.png)
+<Image url= {require("/img/native/getting-started/android-studio-sdk-manager.png")} >SDK Manager Option in More Actions Dropdown</Image>
 
-![SDK Manager Option in Tools Dropdown](/img/migration-images/a_showSDK.png)
+<Image url= {require("/img/migration-images/a_showSDK.png")} >SDK Manager Option in Tools Dropdown</Image>
 
 4. Install [Android SDK 10 (Q) API Level 29](https://developer.android.com/about/versions/10/setup-sdk) under **SDK Platforms**.
 
-![Android SDK option in Android Studio](/img/migration-images/b_showSDK.png)
+<Image url= {require("/img/migration-images/b_showSDK.png")} >Android SDK option in Android Studio</Image>
 
 5. Install [Android NDK](https://developer.android.com/ndk) *version 25.0.8775105* under **SDK Tools**.
 
@@ -40,11 +40,11 @@ You can find the SDK Manager by either selecting **More Actions** on the landing
 If you don't see different version options, check **Show Package Details** at the bottom right.
 :::
 
-![Android NDK option in Android Studio](/img/migration-images/c_showNDK.png)
+<Image url= {require("/img/migration-images/c_showNDK.png")} >Android NDK option in Android Studio</Image>
 
 6. Install [Cmake](https://cmake.org/) *version 3.22.1* under **SDK Tools**.
 
-![CMake Option in Android Studio](/img/migration-images/d_showCmake.png)
+<Image url= {require("/img/migration-images/d_showCmake.png")} >CMake Option in Android Studio</Image>
 
 :::note
 You may need to install Ninja if you are getting errors that CMake can't find it:

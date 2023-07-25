@@ -29,11 +29,11 @@ The instructions below assume that all the content has been extracted to the **{
 1. Open the Android Studio SDK Manager by going to **Tools > SDK Manager**
 2. Under the **SDK Update Sites** tab, create a new entry pointing at **ml-addon.xml** by inserting `https://thelab.magicleap.cloud/packages_mlhub/artifacts/ml-addon.xml` in the URL field
 
-![SDK Update Sites XML Link Entry](/img/migration-images/e_showXML.png)
+<Image url= {require("/img/migration-images/e_showXML.png")} >SDK Update Sites XML Link Entry</Image>
 
 4. Under the **SDK Tools** tab, select and install both the **Magic Leap SDK (Tools)** and the **Magic Leap SDK**.
 
-![MLSDK options at the bottom of the SDK Tools tab](/img/migration-images/g_MLSDK.png)
+<Image url= {require("/img/migration-images/g_MLSDK.png")} >MLSDK options at the bottom of the SDK Tools tab</Image>
 
 :::tip
 If you are having issues with the steps above taking effect, restart Android Studio.

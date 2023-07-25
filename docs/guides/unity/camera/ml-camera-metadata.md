@@ -18,16 +18,16 @@ The Focal Length and Principle Point are in pixel coordinate space, and the Dist
 :::
 
 ```csharp
-void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras resultExtras, MLCamera.Metadata metadataHandle)
 {
-    if (extras.Intrinsics != null)
+    if (resultExtras.Intrinsics != null)
     {
         string cameraIntrinsics = "Camera Intrinsics";
-        cameraIntrinsics += "\n Width " + extras.Intrinsics.Value.Width;
-        cameraIntrinsics += "\n Height " + extras.Intrinsics.Value.Height;
-        cameraIntrinsics += "\n FOV " + extras.Intrinsics.Value.FOV;
-        cameraIntrinsics += "\n FocalLength " + extras.Intrinsics.Value.FocalLength;
-        cameraIntrinsics += "\n PrincipalPoint " + extras.Intrinsics.Value.PrincipalPoint;
+        cameraIntrinsics += "\n Width " + resultExtras.Intrinsics.Value.Width;
+        cameraIntrinsics += "\n Height " + resultExtras.Intrinsics.Value.Height;
+        cameraIntrinsics += "\n FOV " + resultExtras.Intrinsics.Value.FOV;
+        cameraIntrinsics += "\n FocalLength " + resultExtras.Intrinsics.Value.FocalLength;
+        cameraIntrinsics += "\n PrincipalPoint " + resultExtras.Intrinsics.Value.PrincipalPoint;
         Debug.Log(cameraIntrinsics);
     }
 }
@@ -38,9 +38,9 @@ void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras 
 Extrinsic parameters describe the pose of the camera in the world when the image was captured.
 
 ```csharp
-void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras resultExtras, MLCamera.Metadata metadataHandle)
 {
-    MLResult result = MLCVCamera.GetFramePose(extras.VCamTimestamp, out Matrix4x4 outMatrix);
+    MLResult result = MLCVCamera.GetFramePose(resultExtras.VCamTimestamp, out Matrix4x4 outMatrix);
     if (result.IsOk)
     {
         string cameraExtrinsics = "Camera Extrinsics";

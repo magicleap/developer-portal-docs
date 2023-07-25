@@ -45,7 +45,7 @@ The CoolGear power injector is used to add supplemental power when connecting a 
 Other high power hubs and docks provide similar functionality, such as the [CalDigit Thunderbolt Docks](https://www.caldigit.com/docks/).
 :::
 
-![CoolGear Power Injector](/img/device/coolgear.png)
+<Image url= {require("/img/device/coolgear.png")} >CoolGear Power Injector</Image>
 
 ### Getting Started
 

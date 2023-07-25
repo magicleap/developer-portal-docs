@@ -24,7 +24,7 @@ Failure to install this could cause unexpected failures with the ML Hub and/or t
 
 4. Launch ML Hub and click **Package Manager**, located in the top right corner.
 
-![The ML Hub Home Screen](/img/ml-hub/ml_hub.png)
+<Image url= {require("/img/ml-hub/ml_hub.png")} >The ML Hub Home Screen</Image>
 
 5. On the left pane of Package Manager, select the package bundle you want to install. A list of packages is displayed in the right pane. Select any optional packages on the list.
 
@@ -34,7 +34,7 @@ We recommend installing the Magic Leap Application Simulator (known in shorthand
 
 :::
 
-![The ML Hub Package Manager "All" view](/img/ml-hub/ml_hub_packages_all.png)
+<Image url= {require("/img/ml-hub/ml_hub_packages_all.png")} >The ML Hub Package Manager "All" view</Image>
 
 6. Click **Apply Changes** to begin installing.
 7. After installation is complete, proceed to the next section.

@@ -9,7 +9,7 @@ keywords: [Unity, Input, Voice, Voice Intents]
 
 A **Slot** is a placeholder string for a set of potential values. The utterance will use one of the values and the developer can have different logic based on which value was spoken. To indicate use of a slot, put the slot name within **{ }** for the command.
 
-![Slot setup](/img/unity/SimpleSlot.png)
+<Image url= {require("/img/unity/SimpleSlot.png")} >Slot setup</Image>
 
 When the event is triggered, different logic can be applied based on which slot was used if there were multiple in one command and which specific value was uttered. The uttered value is provided in the `IntentEvent` data with a list of `EventSlot` structures called `EventSlotsUsed`.
 
@@ -59,7 +59,7 @@ This can also be used for Slots. The image below shows the command **Slot Test f
 
 Example: "Slot Test for Circle" or "Slot Test for Blue". Either will trigger the voice event for this command, and the developer can determine the logic based on which slot name and value was used.
 
-![Slots Or display](/img/unity/SlotsOr.png)
+<Image url= {require("/img/unity/SlotsOr.png")} >Slots Or display</Image>
 
 ## Important Notes
 

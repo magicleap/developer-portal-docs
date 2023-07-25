@@ -156,11 +156,11 @@ Bit mask for checking the capability of a codec after queried via [MLMediaCodecL
 | MLMediaCodecColorFormat_24BitABGR6666 | | 24BitABGR6666. |
 | MLMediaCodecColorFormat_KhronosExtensions |  0x6F000000| Reserved region for introducing Khronos Standard Extensions. |
 | MLMediaCodecColorFormat_VendorStartUnused |  0x7F000000| Reserved region for introducing Vendor Extensions. |
-| MLMediaCodecColorFormat_AndroidOpaque |  0x7F000789| Reserved android opaque color format. Tells the encoder that the actual color format will be relayed by the Graphics memory allocator Buffers. .|
+| MLMediaCodecColorFormat_AndroidOpaque |  0x7F000789| Reserved android opaque color format. Tells the encoder that the actual color format will be relayed by the Graphics memory allocator Buffers. |
 | MLMediaCodecColorFormat_32BitRGBA8888 |  0x7F00A000| 32BitRGBA8888. |
-| MLMediaCodecColorFormat_YUV420Flexible |  0x7F420888| Flexible 8-bit YUV format. Codec should report this format as being supported if it supports any YUV420 packed planar or semiplanar formats. When port is set to use this format, codec can substitute any YUV420 packed planar or semiplanar format for it. .|
+| MLMediaCodecColorFormat_YUV420Flexible |  0x7F420888| Flexible 8-bit YUV format. Codec should report this format as being supported if it supports any YUV420 packed planar or semiplanar formats. When port is set to use this format, codec can substitute any YUV420 packed planar or semiplanar format for it. |
 | MLMediaCodecColorFormat_YUV420Planar16 |  0x7F42016B| 10-bit or 12-bit YUV format, LSB-justified (0's on higher bits). |
-| MLMediaCodecColorFormat_YUV444Y410 |  0x7F444AAA| Packed 10-bit YUV444 representation that includes 2 bits of alpha. Each pixel is 32-bit. Bits 0-9 contain the U sample, bits 10-19 contain the Y sample, bits 20-29 contain the V sample, and bits 30-31 contain the alpha value. .|
+| MLMediaCodecColorFormat_YUV444Y410 |  0x7F444AAA| Packed 10-bit YUV444 representation that includes 2 bits of alpha. Each pixel is 32-bit. Bits 0-9 contain the U sample, bits 10-19 contain the Y sample, bits 20-29 contain the V sample, and bits 30-31 contain the alpha value. |
 | MLMediaCodecColorFormat_TIYUV420PackedSemiPlanar |  0x7F000100| TI's YUV420PackedSemiPlanar. |
 | MLMediaCodecColorFormat_QCOMYVU420SemiPlanar |  0x7FA30C00| QCOM's YVU420SemiPlanar. |
 | MLMediaCodecColorFormat_QCOMYUV420PackedSemiPlanar64x32Tile2m8ka |  0x7FA30C03| QCOM's YUV420PackedSemiPlanar64x32Tile2m8ka. |
@@ -187,7 +187,7 @@ Enumeration defining possible uncompressed image/video formats.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMediaCodecPriority_RealTime |  0| Realtime priority. .The codec shall support the given performance configuration (e.g. framerate) at realtime. This should only be used by media playback, capture, and possibly by realtime communication scenarios if best effort performance is not suitable. |
+| MLMediaCodecPriority_RealTime |  0| Realtime priority. The codec shall support the given performance configuration (e.g. framerate) at realtime. This should only be used by media playback, capture, and possibly by realtime communication scenarios if best effort performance is not suitable. |
 | MLMediaCodecPriority_NonRealTime |  1| Non-realtime priority (best effort). |
 | MLMediaCodecPriority_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 Bits. |
 

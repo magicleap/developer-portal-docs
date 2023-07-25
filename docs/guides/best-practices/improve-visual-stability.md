@@ -28,33 +28,33 @@ Always try to set the far clip as close to the camera as possible in a way that 
 
 Below is an illustration of the most common pitfall where a developer doesn’t change the default far and near clipping planes. In this case, the far clipping plane is set at 1000 meters and therefore, not able to get the best pixel stick.
 
-![](/img/focus-distance/focus_distance_001.png)
+<Image url= {require("/img/focus-distance/focus_distance_001.png")} ></Image>
 
 If in this scenario the farthest object was 10 meters from the viewer, it would be better to set the far clipping plane at 10 meters as shown below.
 
-![](/img/focus-distance/focus_distance_002.png)
+<Image url= {require("/img/focus-distance/focus_distance_002.png")} ></Image>
 
 That was better, but the most ideal situation would be to provide tight clipping planes if the bounding box for all objects within FOV (field of view) can be quickly calculated. This is depicted in the image below.
 
-![](/img/focus-distance/focus_distance_003.png)
+<Image url= {require("/img/focus-distance/focus_distance_003.png")} ></Image>
 
 ## Focus Distance Recommendation
 
 There is a very common case where calculating the optimal focus distance parameter is trivial. This is where there is only one virtual object within the FOV. As illustrated below, setting the focus distance plane to a location that approximately matches the position of the virtual object will achieve the most stable pixel stick.
 
-![](/img/focus-distance/focus_distance_004.png)
+<Image url= {require("/img/focus-distance/focus_distance_004.png")} ></Image>
 
 The more challenging scenarios arise when there are multiple virtual objects within the FOV. If no other information is available, the recommendation is to set the focus distance plane to match the location of the farthest object. If the far clip is ideal (tight), the focus distance can be set equal to the far clip, as shown in the illustration below.
 
-![](/img/focus-distance/focus_distance_005.png)
+<Image url= {require("/img/focus-distance/focus_distance_005.png")} ></Image>
 
 If more information is available such as a virtual object performing an action, it’s recommended to set the focus distance plane between the action object and the far clip plane, preferably by favoring stabilization of far contents over near content. This is illustrated below.
 
-![](/img/focus-distance/focus_distance_006.png)
+<Image url= {require("/img/focus-distance/focus_distance_006.png")} ></Image>
 
 Finally, if additional information is available and it increases the confidence of what the user focuses on, the recommendation is to set the focus distance plane to match position of the action object. Examples of this additional information are: controller’s laser pointer interactions, eye gaze vectors, hand tracking selection, etc.
 
-![](/img/focus-distance/focus_distance_007.png)
+<Image url= {require("/img/focus-distance/focus_distance_007.png")} ></Image>
 
 ## Common Pitfalls
 
@@ -63,15 +63,15 @@ The following are some of the common pitfalls to avoid in order to improve pixel
 
 1) Not handling the trivial case correctly because of not being aware of focus distance. This is very common in Unity apps. Fixing this should be straightforward.
 
-![](/img/focus-distance/focus_distance_008.png)
+<Image url= {require("/img/focus-distance/focus_distance_008.png")} ></Image>
 
 1) Setting the focus distance to a static large value. This is also a common problem for Unity apps that never set a focus distance. It results in bad pixel stick quality for content that is very close to the viewer.
 
-![](/img/focus-distance/focus_distance_009.png)
+<Image url= {require("/img/focus-distance/focus_distance_009.png")} ></Image>
 
 1) Setting the focus distance to the closest object within the FOV. This makes for good pixel stick performance for close objects— but bad pixel stick performance for objects that are far away. When multiple objects are in view, the pixel stick effect (on far content) of choosing a focus distance plane based on near content is worse than the effect (on near content) of placing a focus distance plane based on far content. This is why the recommendation prefers planes on far content unless you have additional information.
 
-![](/img/focus-distance/focus_distance_010.png)
+<Image url= {require("/img/focus-distance/focus_distance_010.png")} ></Image>
 
 Please consult the recommendations section above to understand how to avoid falling into these pitfalls.
 

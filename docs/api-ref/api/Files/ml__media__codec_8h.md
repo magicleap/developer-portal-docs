@@ -134,7 +134,7 @@ Media codec type.
 | MLMediaCodecBufferFlag_KeyFrame |  1| The (encoded) buffer contains the data for a key frame. |
 | MLMediaCodecBufferFlag_CodecConfig |  2| Buffer contains codec initialization OR codec specific data instead of media data. |
 | MLMediaCodecBufferFlag_EOS |  4| Signals the end of stream, i.e. no buffers will be available after this. |
-| MLMediaCodecBufferFlag_PartialFrame |  8| Buffer only contains part of a frame, and the decoder should batch the data until a buffer without this flag appears before decoding the frame. .|
+| MLMediaCodecBufferFlag_PartialFrame |  8| Buffer only contains part of a frame, and the decoder should batch the data until a buffer without this flag appears before decoding the frame. |
 | MLMediaCodecBufferFlag_MuxerData |  16| Buffer contains muxer data - Supported only for Exif data block. |
 | MLMediaCodecBufferFlag_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 

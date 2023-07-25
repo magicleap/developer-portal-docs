@@ -19,13 +19,13 @@ This guide only covers Unity C# script debugging. For C/C++ debugging, i.e. debu
 4. Build the application and launch it on your device or select **Build And Run**.
 5. When the app is launched, it will wait for the managed debugger (Visual Studio) to connect before proceeding. Note: once the managed debugger from Visual Studio is connected, press either the Volume Up or Volume Down button on the compute pack to trigger the application to continue to load for debugging.
 
-![Unity Build Settings Window configured for VS debugging](/img/unity/unity-build-settings-vs-debuging.png)
+<Image url= {require("/img/unity/unity-build-settings-vs-debuging.png")} >Unity Build Settings Window configured for VS debugging</Image>
 
 ## Debugging your Application
 
 1. In your Unity project, right-click on the Asset folder and select **Open C# project**, to open your project in Visual Studio.
 
-![Open C# project option](/img/unity/unity-open-csharp-project.png)
+<Image url= {require("/img/unity/unity-open-csharp-project.png")} >Open C# project option</Image>
 
 2. From Visual Studio select **Debug > Attach to Unity Debugger** from the top menu.
 3. Pick your device from the **Select Unity Instance** window, then press **OK**.

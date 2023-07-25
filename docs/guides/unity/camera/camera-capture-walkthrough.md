@@ -1,5 +1,5 @@
 ---
-title: MLCamera Walkthrough
+title: API Overview
 sidebar_position: 0
 date: 10/09/2022
 tags: [Unity, Overview, Camera]
@@ -108,7 +108,6 @@ Use FrameRate_None when configuring only Image capture.
   
 ```csharp
 ...
-
   [SerializeField, Tooltip("Desired width for the camera capture")]
   private int captureWidth = 1280;
   [SerializeField, Tooltip("Desired height for the camera capture")]
@@ -149,8 +148,7 @@ Use FrameRate_None when configuring only Image capture.
             defaultCapability, outputFormat
         );
         //StartVideoCapture();
-    }
-...
+}
 ```
 
 ## Start Video Capture
@@ -164,7 +162,9 @@ This section shows how to prepare and start video capture using the `_captureCon
   MLCamera _camera;
   //The camera capture state
   bool _isCapturing;
+
 ...
+
 //Assumes that the capture configure was created with a Video CaptureType
  private void StartVideoCapture()
  {
@@ -194,7 +194,6 @@ This section shows how to prepare and start video capture using the `_captureCon
 To stop video capture simply call `CaptureVideoStop()` on the target MLCamera. Note that developers should track if the camera capture was started before trying to call the stop function.
 
 ```csharp
-
   //The camera capture state
   bool _isCapturing;
 
@@ -215,7 +214,9 @@ The captured video frames are provided thorough the `OnRawVideoFrameAvailable` c
 ```csharp
   //Cached version of the MLCamera instance.
   private MLCamera _camera;
+
 ...
+
   //Assumes that the capture configure was created with a Video CaptureType
   private void SetCameraCallbacks()
   {
@@ -243,7 +244,7 @@ This section demonstrates how to render the RGBA image provided by the Magic Lea
   private Texture2D videoTextureRGB;
 ...
 
-  void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+  void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCamera.Metadata metadataHandle)
   {
     if (output.Format == MLCamera.OutputFormat.RGBA_8888)
     {

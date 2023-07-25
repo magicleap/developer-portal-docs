@@ -28,7 +28,7 @@ Follow these instructions to add a MAGIC_LEAP_2 platform define to your applicat
 6. In the new blank, type in a custom define symbol. For this example, we'll be using **MAGIC_LEAP_2**.
 7. Press **Apply** to rebuild the project scripts.
 
-![Add custom scripting define symbol](/img/unity/ProjectSettingsPlayerDefines.png)
+<Image url= {require("/img/unity/ProjectSettingsPlayerDefines.png")} >Add custom scripting define symbol</Image>
 
 ## Use the new define in your code
 

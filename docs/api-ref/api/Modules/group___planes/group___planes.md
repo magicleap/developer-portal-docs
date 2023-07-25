@@ -77,15 +77,15 @@ APIs for the Planes system.
 | MLPlanesQueryFlag_AllOrientations |  MLPlanesQueryFlag_Vertical |
                                        MLPlanesQueryFlag_Horizontal |
                                        MLPlanesQueryFlag_Arbitrary| Include all plane orientations. |
-| MLPlanesQueryFlag_OrientToGravity |  1 << 3| For non-horizontal planes, setting this flag will result in the top of the plane rectangle being perpendicular to gravity. .|
-| MLPlanesQueryFlag_Inner |  1 << 4| If this flag is set, inner planes will be returned; if it is not set, outer planes will be returned. .|
+| MLPlanesQueryFlag_OrientToGravity |  1 << 3| For non-horizontal planes, setting this flag will result in the top of the plane rectangle being perpendicular to gravity. |
+| MLPlanesQueryFlag_Inner |  1 << 4| If this flag is set, inner planes will be returned; if it is not set, outer planes will be returned. |
 | MLPlanesQueryFlag_Semantic_Ceiling |  1 << 6| Include planes semantically tagged as ceiling. |
 | MLPlanesQueryFlag_Semantic_Floor |  1 << 7| Include planes semantically tagged as floor. |
 | MLPlanesQueryFlag_Semantic_Wall |  1 << 8| Include planes semantically tagged as wall. |
 | MLPlanesQueryFlag_Semantic_All |  MLPlanesQueryFlag_Semantic_Ceiling |
                                        MLPlanesQueryFlag_Semantic_Floor |
                                        MLPlanesQueryFlag_Semantic_Wall| Include all planes that are semantically tagged. |
-| MLPlanesQueryFlag_Polygons |  1 << 9| Include polygonal planes. .When this flag is set:* MLPlanesQueryGetResultsWithBoundaries returns polygons along with other applicable rectangular planes. MLPlanesReleaseBoundariesList MUST be called before the next call to MLPlanesQueryGetResultsWithBoundaries, otherwise UnspecifiedFailure will be returned.When this flag is not set:* MLPlanesQueryGetResultsWithBoundaries returns just rectangular planes. No need to call MLPlanesReleaseBoundariesList.|
+| MLPlanesQueryFlag_Polygons |  1 << 9| Include polygonal planes. When this flag is set:* MLPlanesQueryGetResultsWithBoundaries returns polygons along with other applicable rectangular planes. MLPlanesReleaseBoundariesList MUST be called before the next call to MLPlanesQueryGetResultsWithBoundaries, otherwise UnspecifiedFailure will be returned.When this flag is not set:* MLPlanesQueryGetResultsWithBoundaries returns just rectangular planes. No need to call MLPlanesReleaseBoundariesList.|
 | MLPlanesQueryFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 

@@ -55,7 +55,7 @@ Gestures are in the **Gesture Classification API**, not in **HandTracking**.
 
 3. Go to **Edit > Project Settings > Magic Leap > Manifest Settings** and check **Hand_Tracking**.
 
-![Example of checking Hand_Tracking](/img/unity/project-setup.png)
+<Image url= {require("/img/unity/project-setup.png")} >Example of checking Hand_Tracking</Image>
 
 4. Add the **HandTracking** scene to the list of scenes to build, build the APK, then install on-device.
 

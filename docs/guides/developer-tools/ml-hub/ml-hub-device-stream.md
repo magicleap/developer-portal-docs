@@ -27,7 +27,7 @@ You must also be on the same WiFi network as your device.
 
 When you're set up to stream, select your device from the drop-down list or add your device over WiFi using the **+** icon.  If you open Device Stream with a Magic Leap device connected, a streaming session automatically begins.
 
-![After starting a session, you are notified to respond to an authorization prompt on-device](/img/unity/DeviceStreamNotify.png)
+<Image url= {require("/img/unity/DeviceStreamNotify.png")} >After starting a session, you are notified to respond to an authorization prompt on-device</Image>
 
 :::warning
 When you start Device Bridge, you must respond to a prompt on your device before you can stream content. This is a privacy/security feature, as it prevents someone from sharing your experience without your knowledge. If you wait too long, the connection request times out, and you must start a new session. Each new session requires authorization.
@@ -35,11 +35,11 @@ When you start Device Bridge, you must respond to a prompt on your device before
 
 By default both digital and environmental content is streamed at 1080p. You can change this by changing **Settings** in the **Device Stream** menu.
 
-![Resolution Dialog](/img/unity/DeviceStreamResolution.png)
+<Image url= {require("/img/unity/DeviceStreamResolution.png")} >Resolution Dialog</Image>
 
 While you have an active streaming session, use the icons to capture or control playback.
 
-![Device Icons](/img/unity/DeviceStreamIcons.png)
+<Image url= {require("/img/unity/DeviceStreamIcons.png")} >Device Icons</Image>
 
 Click the camera icon to save a screenshot to your captures folder. You can change the location of the folder in **Settings** in the ML Hub menu at the top of the screen.
 

@@ -21,7 +21,7 @@ You can activate Capture on any Magic Leap 2 app or menu by pressing and holding
 
 The animation below shows the correct button sequence:
 
-![Controller Animation of Capture Button Press Sequence](/img/features/capture-controller.gif)
+<Image url= {require("/img/features/capture-controller.gif")} >Controller Animation of Capture Button Press Sequence</Image>
 
 :::note
 You might have trouble activating Capture if the app you're using currently is accessing the camera stream.

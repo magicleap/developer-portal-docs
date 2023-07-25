@@ -29,23 +29,23 @@ For more information, please see Microsoft's official documentation [here](https
 
 1. In the Unity Packages section of the ML Hub Package Manager, you will find the Unity Soundfield package here:
 
-![Unity Soundfield install from Magic Leap Hub](/img/unity/soundfield-Install-from-the-magic-leap-hub.png)
+<Image url= {require("/img/unity/soundfield-Install-from-the-magic-leap-hub.png")} >Unity Soundfield install from Magic Leap Hub</Image>
 
 2. Download the Unity Soundfield package via the Package Manager. Its location can be accessed from the **Open Folder** link in the ML Hub's Package Manager:
 
-![Unity Soundfield open folder from Magic Leap Hub](/img/unity/soundfield-open-folder.png)
+<Image url= {require("/img/unity/soundfield-open-folder.png")} >Unity Soundfield open folder from Magic Leap Hub</Image>
 
-![Unity Soundfield install from Magic Leap Hub](/img/unity/soundfield-path.jpg)
+<Image url= {require("/img/unity/soundfield-path.jpg")} >Unity Soundfield install from Magic Leap Hub</Image>
 
 3. Add this package from Unity's own Package Manager as a local file:
 
-![Unity Soundfield install from Magic Leap Hub](/img/unity/soundfield-Install-from-the-magic-leap-hub-3.png)
+<Image url= {require("/img/unity/soundfield-Install-from-the-magic-leap-hub-3.png")} >Unity Soundfield install from Magic Leap Hub</Image>
 
 4. Select the **package.json** file in the folder you have previously downloaded (shown as an example in a screenshot above).
 
 The plugin will now be ready to use in Unity:
 
-![Unity Soundfield install from Magic Leap Hub](/img/unity/soundfield-Install-from-the-magic-leap-hub-4.png)
+<Image url= {require("/img/unity/soundfield-Install-from-the-magic-leap-hub-4.png")} >Unity Soundfield install from Magic Leap Hub</Image>
 
 ### Update an Existing Installation
 
@@ -57,7 +57,7 @@ After updating the Soundfield plugin, if any unexpected/undesirable behaviors oc
 The reset should be performed on the `MLListener` component that is co-located with the Unity `AudioListener`, as well as the `MLPointSource` component.
 :::
 
-![Updating existing Soundfield version](/img/unity/Soundfield-update-existing-version.png)
+<Image url= {require("/img/unity/Soundfield-update-existing-version.png")} >Updating existing Soundfield version</Image>
 
 Resetting the Soundfield component in a prefab can be accomplished through the same process:
 
@@ -72,11 +72,11 @@ Whether updating from local disk as with the ML Hub, or from a package repositor
 
 In the editor, the Soundfield Gizmos are selectable from the "Gizmos" menu:
 
-![ML Point Source component settings](/img/unity/editor-gizmos.png)
+<Image url= {require("/img/unity/editor-gizmos.png")} >ML Point Source component settings</Image>
 
 When a Soundfield Gizmo is selected, any GameObject that is selected in the project hierarchy will draw the relevant information in the Scene view.
 
-![ML Point Source component settings](/img/unity/editor-gizmos-2.png)
+<Image url= {require("/img/unity/editor-gizmos-2.png")} >ML Point Source component settings</Image>
 
 More details on the way Gizmos behave in the editor can be found in the Unity documentation page [here](https://docs.unity3d.com/Manual/GizmosMenu.html).
 
@@ -84,7 +84,7 @@ More details on the way Gizmos behave in the editor can be found in the Unity do
 
 The Soundfield package provides a `RuntimeGizmos` component that allows developers to choose which Gizmos to make visible at runtime, on the device.
 
-![ML Point Source component settings](/img/unity/runtime-gizmos.png)
+<Image url= {require("/img/unity/runtime-gizmos.png")} >ML Point Source component settings</Image>
 
 When a Gizmo is selected, all the GameObjects with the ML component will be rendered.
 
@@ -94,21 +94,21 @@ Depending on the radiation properties, the point source Gizmo changes to indicat
 
 #### Full radiation
 
-![ML Point Source component settings](/img/unity/mlpoint-source-gizmo-types.png)
+<Image url= {require("/img/unity/mlpoint-source-gizmo-types.png")} >ML Point Source component settings</Image>
 
 #### Billboarding is enabled
 
-![ML Point Source component settings](/img/unity/mlpoint-source-gizmo-types-2.png)
+<Image url= {require("/img/unity/mlpoint-source-gizmo-types-2.png")} >ML Point Source component settings</Image>
 
 #### Omnidirectional is enabled
 
-![ML Point Source component settings](/img/unity/mlpoint-source-gizmo-types-3.png)
+<Image url= {require("/img/unity/mlpoint-source-gizmo-types-3.png")} >ML Point Source component settings</Image>
 
 ## Sample Scene
 
 We will use a Camera, an `MLListener`, a source, and an obstruction.
 
-![Creating a sample scene](/img/unity/soundfield-sample-scene.png)
+<Image url= {require("/img/unity/soundfield-sample-scene.png")} >Creating a sample scene</Image>
 
 The camera object will have the `MLListener` component. We also use `AudioListener` as a base class.
 
@@ -118,11 +118,11 @@ Only one `MLListener` should be used per Scene.
 
 For more information, see the [Soundfield Components page](/docs/guides/unity/soundfield-audio/soundfield-components.md).
 
-![Creating a sample scene](/img/unity/soundfield-sample-scene-2.png)
+<Image url= {require("/img/unity/soundfield-sample-scene-2.png")} >Creating a sample scene</Image>
 
 For the source, using our Leaper, remember we use `AudioSource` as a base class, so some things will be done there, like selecting an audio clip:
 
-![Creating a sample scene](/img/unity/soundfield-sample-scene-3.png)
+<Image url= {require("/img/unity/soundfield-sample-scene-3.png")} >Creating a sample scene</Image>
 
 For the obstacle, you can inherit the geometric primitive from the visuals by default. **As long as it has a collider, it can obstruct sounds.**
 

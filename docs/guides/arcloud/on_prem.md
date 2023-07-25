@@ -249,7 +249,7 @@ systemctl status k3s
 
 Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
 
-![Enable Kubernetes Support in Docker Desktop](/img/arcloud/windows-docker-kubernetes.png)
+<Image url= {require("/img/arcloud/windows-docker-kubernetes.png")} >Enable Kubernetes Support in Docker Desktop</Image>
 
 :::note
 On future runs of AR Cloud setup processes, it will be important to make sure that Docker and the Kubernetes services are started.
@@ -260,14 +260,14 @@ On future runs of AR Cloud setup processes, it will be important to make sure th
 
 Enable [Kubernetes on Docker Desktop](https://docs.docker.com/desktop/kubernetes/).
 
-![Enable Kubernetes Support in Docker Desktop](/img/arcloud/macos-docker-kubernetes.png)
+<Image url= {require("/img/arcloud/macos-docker-kubernetes.png")} >Enable Kubernetes Support in Docker Desktop</Image>
 
 :::note Resources
 Set `Memory` resources to at least 12 GB RAM from:
 
 `Docker Desktop` > `Settings` > `Resources` > `Advanced`
 
-![Configure Resources in Docker Desktop](/img/arcloud/macos-docker-resources.png)
+<Image url= {require("/img/arcloud/macos-docker-resources.png")} >Configure Resources in Docker Desktop</Image>
 :::
 
 :::note

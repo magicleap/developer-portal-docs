@@ -15,7 +15,7 @@ import DocCardList from '@theme/DocCardList';
 
 The Magic Leap XR Keyboard can be used in any project that supports Unity's XR Interaction Toolkit. The demo scene can be found in `Assets/XRKeyboard/Scenes/XRKeyboardExample.unity` and is available on [GitHub](https://github.com/magicleap/MagicLeapXRKeyboard).
 
-![Magic Leap XR Keyboard](/img/xr-keyboard-unity-simple.jpg)
+<Image url= {require("/img/xr-keyboard-unity-simple.jpg")} >Magic Leap XR Keyboard</Image>
 
 
 ## Getting Started

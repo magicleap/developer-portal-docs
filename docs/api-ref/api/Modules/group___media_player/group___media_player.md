@@ -942,12 +942,12 @@ Maximum size for Cea708 Caption Emit command buffers.
 | ---------- | ----- | ----------- |
 | MLCea708CaptionEmitCommand_Buffer |  1| Buffer. |
 | MLCea708CaptionEmitCommand_Control |  2| Control. |
-| MLCea708CaptionEmitCommand_CWX |  3| SetCurrentWindow tells the caption decoder which window the following commands describe: .* SetWindowAttributes* SetPenAttributes* SetPenColor* SetPenLocation. If the window specified has not already been created with a DefineWindow command then, SetCurrentWindow and the window property commands can be safely ignored. |
+| MLCea708CaptionEmitCommand_CWX |  3| SetCurrentWindow tells the caption decoder which window the following commands describe: * SetWindowAttributes* SetPenAttributes* SetPenColor* SetPenLocation. If the window specified has not already been created with a DefineWindow command then, SetCurrentWindow and the window property commands can be safely ignored. |
 | MLCea708CaptionEmitCommand_CLW |  4| ClearWindows clears all the windows specified in the 8 bit window bitmap. |
 | MLCea708CaptionEmitCommand_DSW |  5| DisplayWindows displays all the windows specified in the 8 bit window bitmap. |
 | MLCea708CaptionEmitCommand_HDW |  6| HideWindows hides all the windows specified in the 8 bit window bitmap. |
 | MLCea708CaptionEmitCommand_TGW |  7| ToggleWindows hides all displayed windows, and displays all hidden windows specified in the 8 bit window bitmap. |
-| MLCea708CaptionEmitCommand_DLW |  8| DeleteWindows deletes all the windows specified in the 8 bit window bitmap. If the current window, as specified by the last SetCurrentWindow command, is deleted then the current window becomes undefined and the window attribute commands should have no effect until after the next SetCurrentWindow or DefineWindow command. .|
+| MLCea708CaptionEmitCommand_DLW |  8| DeleteWindows deletes all the windows specified in the 8 bit window bitmap. If the current window, as specified by the last SetCurrentWindow command, is deleted then the current window becomes undefined and the window attribute commands should have no effect until after the next SetCurrentWindow or DefineWindow command. |
 | MLCea708CaptionEmitCommand_DLY |  9| Delay suspends all processing of the current service, except for DelayCancel and Reset scanning. |
 | MLCea708CaptionEmitCommand_DLC |  10| DelayCancel terminates any active delay and resumes normal command processing. DelayCancel should be scanned for during a Delay. |
 | MLCea708CaptionEmitCommand_RST |  11| Reset deletes all windows, cancels any active delay, and clears the buffer before the Reset command. Reset should be scanned for during a Delay. |
@@ -1116,7 +1116,7 @@ Media codec type.
 | MLMediaCodecBufferFlag_KeyFrame |  1| The (encoded) buffer contains the data for a key frame. |
 | MLMediaCodecBufferFlag_CodecConfig |  2| Buffer contains codec initialization OR codec specific data instead of media data. |
 | MLMediaCodecBufferFlag_EOS |  4| Signals the end of stream, i.e. no buffers will be available after this. |
-| MLMediaCodecBufferFlag_PartialFrame |  8| Buffer only contains part of a frame, and the decoder should batch the data until a buffer without this flag appears before decoding the frame. .|
+| MLMediaCodecBufferFlag_PartialFrame |  8| Buffer only contains part of a frame, and the decoder should batch the data until a buffer without this flag appears before decoding the frame. |
 | MLMediaCodecBufferFlag_MuxerData |  16| Buffer contains muxer data - Supported only for Exif data block. |
 | MLMediaCodecBufferFlag_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -1258,11 +1258,11 @@ Bit mask for checking the capability of a codec after queried via [MLMediaCodecL
 | MLMediaCodecColorFormat_24BitABGR6666 | | 24BitABGR6666. |
 | MLMediaCodecColorFormat_KhronosExtensions |  0x6F000000| Reserved region for introducing Khronos Standard Extensions. |
 | MLMediaCodecColorFormat_VendorStartUnused |  0x7F000000| Reserved region for introducing Vendor Extensions. |
-| MLMediaCodecColorFormat_AndroidOpaque |  0x7F000789| Reserved android opaque color format. Tells the encoder that the actual color format will be relayed by the Graphics memory allocator Buffers. .|
+| MLMediaCodecColorFormat_AndroidOpaque |  0x7F000789| Reserved android opaque color format. Tells the encoder that the actual color format will be relayed by the Graphics memory allocator Buffers. |
 | MLMediaCodecColorFormat_32BitRGBA8888 |  0x7F00A000| 32BitRGBA8888. |
-| MLMediaCodecColorFormat_YUV420Flexible |  0x7F420888| Flexible 8-bit YUV format. Codec should report this format as being supported if it supports any YUV420 packed planar or semiplanar formats. When port is set to use this format, codec can substitute any YUV420 packed planar or semiplanar format for it. .|
+| MLMediaCodecColorFormat_YUV420Flexible |  0x7F420888| Flexible 8-bit YUV format. Codec should report this format as being supported if it supports any YUV420 packed planar or semiplanar formats. When port is set to use this format, codec can substitute any YUV420 packed planar or semiplanar format for it. |
 | MLMediaCodecColorFormat_YUV420Planar16 |  0x7F42016B| 10-bit or 12-bit YUV format, LSB-justified (0's on higher bits). |
-| MLMediaCodecColorFormat_YUV444Y410 |  0x7F444AAA| Packed 10-bit YUV444 representation that includes 2 bits of alpha. Each pixel is 32-bit. Bits 0-9 contain the U sample, bits 10-19 contain the Y sample, bits 20-29 contain the V sample, and bits 30-31 contain the alpha value. .|
+| MLMediaCodecColorFormat_YUV444Y410 |  0x7F444AAA| Packed 10-bit YUV444 representation that includes 2 bits of alpha. Each pixel is 32-bit. Bits 0-9 contain the U sample, bits 10-19 contain the Y sample, bits 20-29 contain the V sample, and bits 30-31 contain the alpha value. |
 | MLMediaCodecColorFormat_TIYUV420PackedSemiPlanar |  0x7F000100| TI's YUV420PackedSemiPlanar. |
 | MLMediaCodecColorFormat_QCOMYVU420SemiPlanar |  0x7FA30C00| QCOM's YVU420SemiPlanar. |
 | MLMediaCodecColorFormat_QCOMYUV420PackedSemiPlanar64x32Tile2m8ka |  0x7FA30C03| QCOM's YUV420PackedSemiPlanar64x32Tile2m8ka. |
@@ -1289,7 +1289,7 @@ Enumeration defining possible uncompressed image/video formats.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMediaCodecPriority_RealTime |  0| Realtime priority. .The codec shall support the given performance configuration (e.g. framerate) at realtime. This should only be used by media playback, capture, and possibly by realtime communication scenarios if best effort performance is not suitable. |
+| MLMediaCodecPriority_RealTime |  0| Realtime priority. The codec shall support the given performance configuration (e.g. framerate) at realtime. This should only be used by media playback, capture, and possibly by realtime communication scenarios if best effort performance is not suitable. |
 | MLMediaCodecPriority_NonRealTime |  1| Non-realtime priority (best effort). |
 | MLMediaCodecPriority_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 Bits. |
 
@@ -1581,8 +1581,8 @@ Mode indicating where exactly to seek to.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMediaDRMKeyType_Streaming |  1| This key request type specifies that the keys will be for online use, they will not be saved to the device for subsequent use when the device is not connected to a network. .|
-| MLMediaDRMKeyType_Offline |  2| This key request type specifies that the keys will be for offline use, they will be saved to the device for use when the device is not connected to a network. .|
+| MLMediaDRMKeyType_Streaming |  1| This key request type specifies that the keys will be for online use, they will not be saved to the device for subsequent use when the device is not connected to a network. |
+| MLMediaDRMKeyType_Offline |  2| This key request type specifies that the keys will be for offline use, they will be saved to the device for use when the device is not connected to a network. |
 | MLMediaDRMKeyType_Release |  3| This key request type specifies that previously saved offline keys should be released. |
 | MLMediaDRMKeyType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -1601,13 +1601,13 @@ Request types.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMediaDRMEventType_ProvisionRequired |  1| This event type indicates that the app needs to request a certificate from the provisioning server. The request message data is obtained using [MLMediaDRMGetProvisionRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetprovisionrequest). .|
-| MLMediaDRMEventType_KeyRequired |  2| This event type indicates that the app needs to request keys from a license server. The request message data is obtained using [MLMediaDRMGetKeyRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetkeyrequest). .|
-| MLMediaDRMEventType_KeyExpired |  3| This event type indicates that the licensed usage duration for keys in a session has expired. The keys are no longer valid. .|
-| MLMediaDRMEventType_VendorDefined |  4| This event may indicate some specific vendor-defined condition, see your DRM provider documentation for details. .|
-| MLMediaDRMEventType_SessionReclaimed |  5| This event indicates that a session opened by the app has been reclaimed by the resource manager. .|
-| MLMediaDRMEventType_ExpirationUpdate |  6| This event is issued when a session expiration update occurs, to inform the app about the change in expiration time. .If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_expiration_update callback, then this event is not notified. |
-| MLMediaDRMEventType_KeysChange |  7| This event is issued when the keys in a session change status, such as when the license is renewed or expires. .If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_key_status_change callback, then this event is not notified. |
+| MLMediaDRMEventType_ProvisionRequired |  1| This event type indicates that the app needs to request a certificate from the provisioning server. The request message data is obtained using [MLMediaDRMGetProvisionRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetprovisionrequest). |
+| MLMediaDRMEventType_KeyRequired |  2| This event type indicates that the app needs to request keys from a license server. The request message data is obtained using [MLMediaDRMGetKeyRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetkeyrequest). |
+| MLMediaDRMEventType_KeyExpired |  3| This event type indicates that the licensed usage duration for keys in a session has expired. The keys are no longer valid. |
+| MLMediaDRMEventType_VendorDefined |  4| This event may indicate some specific vendor-defined condition, see your DRM provider documentation for details. |
+| MLMediaDRMEventType_SessionReclaimed |  5| This event indicates that a session opened by the app has been reclaimed by the resource manager. |
+| MLMediaDRMEventType_ExpirationUpdate |  6| This event is issued when a session expiration update occurs, to inform the app about the change in expiration time. If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_expiration_update callback, then this event is not notified. |
+| MLMediaDRMEventType_KeysChange |  7| This event is issued when the keys in a session change status, such as when the license is renewed or expires. If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_key_status_change callback, then this event is not notified. |
 | MLMediaDRMEventType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -1631,9 +1631,9 @@ Request event types.
 | ---------- | ----- | ----------- |
 | MLMediaDRMKeyStatusCode_KeyStatusUsable |  0| The key is currently usable to decrypt media data. |
 | MLMediaDRMKeyStatusCode_KeyStatusExpired |  1| The key is no longer usable to decrypt media data because its expiration time has passed. |
-| MLMediaDRMKeyStatusCode_KeyStatusOutputNotAllowed |  2| The key is not currently usable to decrypt media data because its output requirements cannot currently be met. .|
-| MLMediaDRMKeyStatusCode_KeyStatusPending |  3| The status of the key is not yet known and is being determined. The status will be updated with the actual status when it has been determined. .|
-| MLMediaDRMKeyStatusCode_KeyStatusInternalError |  4| The key is not currently usable to decrypt media data because of an internal error in processing unrelated to input parameters. This error is not actionable by an app. .|
+| MLMediaDRMKeyStatusCode_KeyStatusOutputNotAllowed |  2| The key is not currently usable to decrypt media data because its output requirements cannot currently be met. |
+| MLMediaDRMKeyStatusCode_KeyStatusPending |  3| The status of the key is not yet known and is being determined. The status will be updated with the actual status when it has been determined. |
+| MLMediaDRMKeyStatusCode_KeyStatusInternalError |  4| The key is not currently usable to decrypt media data because of an internal error in processing unrelated to input parameters. This error is not actionable by an app. |
 | MLMediaDRMKeyStatusCode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -1868,7 +1868,7 @@ MediaTrack types returned by [MLMediaPlayerGetTrackType()](/api-ref/api/Modules/
 | MLMediaPlayerBufferingMode_None |  0| Do not support buffering. |
 | MLMediaPlayerBufferingMode_TimeOnly |  1| Support only time based buffering. |
 | MLMediaPlayerBufferingMode_SizeOnly |  2| Support only size based buffering. |
-| MLMediaPlayerBufferingMode_TimeThenSize |  3| Support both time and size based buffering, time based calculation precedes size based. Size based calculation will be used only when time information is not available for the stream. .|
+| MLMediaPlayerBufferingMode_TimeThenSize |  3| Support both time and size based buffering, time based calculation precedes size based. Size based calculation will be used only when time information is not available for the stream. |
 | MLMediaPlayerBufferingMode_Count |  4| Number of modes. |
 | MLMediaPlayerBufferingMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum size is 32 bits. |
 

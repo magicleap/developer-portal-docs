@@ -24,7 +24,7 @@ Enabling Head Locked Graphics does not prevent the headset from loosing tracking
 
 To configure your Unity app to be head-locked, open **Project Settings** and select **XR Plug-in Management > Magic Leap Settings**. Enable the **Headlock Graphics** option.
 
-![Toggle Graphics under Magic Leap Settings](/img/unity/display/unity-headlock.png)
+<Image url= {require("/img/unity/display/unity-headlock.png")} >Toggle Graphics under Magic Leap Settings</Image>
 
 ## Calculating Controller Pose
 

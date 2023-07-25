@@ -10,7 +10,7 @@ keywords: [Unity, Walkthroughs, Samples, PTC, Vuforia]
 
 PTC's Vuforia® Engine™ is a market leading, cross-platform augmented reality SDK that supports Magic Leap 2 and many other headsets and mobile devices. Developers can pair the precise and stable tracking offered by Vuforia Engine with the leading optics and powerful computing within the Magic Leap 2 to create immersive AR experiences.
 
-![Vuforia Engine overview](/img/third-party/vuforia_aerospace-web.jpg)
+<Image url= {require("/img/third-party/vuforia_aerospace-web.jpg")} >Vuforia Engine overview</Image>
 
 ## Supported Features
 

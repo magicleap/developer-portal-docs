@@ -10,7 +10,7 @@ keywords: [Unity, Perception, Meshing, Surfaces]
 
 This page provides an overview of the Magic Leap Meshing Subsystem component and the settings that can be altered by developers.
 
-![Default Meshing Configuration](/img/unity/meshing-subsystem-component-default.png)
+<Image url= {require("/img/unity/meshing-subsystem-component-default.png")} >Default Meshing Configuration</Image>
 
 - **Mesh Prefab**
   - The prefab used to generate a new mesh block when the mesh blocks are returned from the Meshing Subsystem. Can optionally include a mesh collider to interact with rigidbodies.

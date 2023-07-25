@@ -27,7 +27,7 @@ Encourage your users to launch the Custom Fit app from the main menu to position
 
 Virtual display FOV of a worst-case scenario user that has not completed Custom Fit (Vertical: 39°/55°; Horizontal: 33°/45°; Diagonal: 37°/71°)
 
-![Worst-case scenario](/img/human-interface-guidelines/Worst-Case-Scenario.png)
+<Image url= {require("/img/human-interface-guidelines/Worst-Case-Scenario.png")} >Worst-case scenario</Image>
 
 ## Headset Fit API
 

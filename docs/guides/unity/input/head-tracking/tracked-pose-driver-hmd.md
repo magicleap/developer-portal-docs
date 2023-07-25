@@ -19,7 +19,7 @@ The Tracked Pose Driver allows objects to mirror the positional and rotation inp
 2. Set the Tracking Type to **Rotation And Position**.
 3. For the both the Position and Rotation input set the Input Action binding path to **XR HMD**.
 
-![Unity Input System's Tracked Pose Driver Component](/img/unity/input/head-tracking/Unity_TrackedPoseDriver.png)
+<Image url= {require("/img/unity/input/head-tracking/Unity_TrackedPoseDriver.png")} >Unity Input System's Tracked Pose Driver Component</Image>
 
 ## XR - Tracked Pose Driver
 
@@ -30,7 +30,7 @@ The Tracked Pose Driver component has the same functionality as the Tracked Pose
 3. Set the pose source as **Center Eye - HMD Reference**
 4. Finally, set the Tracking Type to **Rotation And Position**.
 
-![Unity's XR Tracked Pose Driver Component](/img/unity/input/head-tracking/Unity_TrackedPoseDriver_InputSystem.png)
+<Image url= {require("/img/unity/input/head-tracking/Unity_TrackedPoseDriver_InputSystem.png")} >Unity's XR Tracked Pose Driver Component</Image>
 
 ## See also
 

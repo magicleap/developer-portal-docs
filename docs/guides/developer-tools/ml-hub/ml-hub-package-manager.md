@@ -12,27 +12,27 @@ Package Manager is a tool to install and manage ML SDK, tools, and resources for
 
 Open Package Manager from Activities Home. You must be online to download packages and receive updates.
 
-![lab-package-manager-link](/img/ml-hub/package_manager_link.png)
+<Image url= {require("/img/ml-hub/package_manager_link.png")} >lab-package-manager-link</Image>
 
 If you want to change the install location for Magic Leap packages, open the Action menu and select **Settings**.
 
-![lab-package-manager-settings](/img/ml-hub/package_manager_settings.png)
+<Image url= {require("/img/ml-hub/package_manager_settings.png")} >lab-package-manager-settings</Image>
 
 Navigate between **Bundles**, **All**, and **My Tools** to select packages to install or update.
 
 - **Bundles** - Select collections of packages that include the tools and resources you need to develop for the Magic Leap ecosystem quickly. Bundled packages install the latest version available. When a bundle is selected, you can view which packages are included in the bundle in the **Change Summary** panel. Optional packages, such as API documentation, are not selected by default.
 
-   ![lab-package-manager-bundles](/img/ml-hub/ml_hub_package_bundles.png)
+   <Image url= {require("/img/ml-hub/ml_hub_package_bundles.png")} >lab-package-manager-bundles</Image>
 
 - **All** - Select individual packages to update or install and review their release notes. You can also install specific versions of packages or delete packages.
-   ![lab-package-manager-all](/img/ml-hub/ml_hub_packages_all.png)
+   <Image url= {require("/img/ml-hub/ml_hub_packages_all.png")} >lab-package-manager-all</Image>
 
 - **My Tools** - View, update, or delete your installed packages.
-   ![lab-package-manager-my-tools](/img/ml-hub/ml_hub_my_tools.png)
+   <Image url= {require("/img/ml-hub/ml_hub_my_tools.png")} >lab-package-manager-my-tools</Image>
 
 Once you have selected a bundle or individual package, the **Change Summary** panel displays.
 
-![lab-package-manager-change-summary](/img/ml-hub/ml_hub_change_summary.png)
+<Image url= {require("/img/ml-hub/ml_hub_change_summary.png")} >lab-package-manager-change-summary</Image>
 
 This lists the required packages for selected bundles, the version number, actions to be performed, and any optional packages. Select the optional packages to install or update them.
 
@@ -40,4 +40,4 @@ After you've made your selections in the **Change Summary** panel, click **Apply
 
 When you're done installing or updating packages, close Package Manager from the Activities Menu. You can also close Package Manager from the Summary page after installation is complete.
 
-![lab-package-manager-activities-menu](/img/ml-hub/ml_hub_exit_package.png)
+<Image url= {require("/img/ml-hub/ml_hub_exit_package.png")} >lab-package-manager-activities-menu</Image>

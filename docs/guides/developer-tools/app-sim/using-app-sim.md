@@ -20,7 +20,7 @@ One option is to use a physical device connected to your PC via a USB-C cable or
 3. Select your device from the Target selector.
 4. Click **Connect**.
 
-![Application Simulator Target Selector](/img/app-sim/device_target.png)
+<Image url= {require("/img/app-sim/device_target.png")} >Application Simulator Target Selector</Image>
 
 When iterating on the device only, you cannot manually edit the headpose transform (among other settings) in the Interaction window properties. This is to prevent the digital content of your app from misaligning with the world and to prevent impossible real world scenarios that may break proper simulation.
 
@@ -32,15 +32,15 @@ The other option for using Application Simulator is to use the Simulator target.
 2. Choose **Simulator** as **Target**.
 3. Click **Connect**.
 
-![Target Selector Sim](/img/app-sim/target_connection.png)
+<Image url= {require("/img/app-sim/target_connection.png")} >Target Selector Sim</Image>
 
 The Simulator populates with a default .room file automatically when it starts. Modify this behavior in the settings from the Application Simulator menu (Application Simulator →  Settings → Application Simulator → General → Default Session File).
 
 When using the Simulator, the Headset is initially placed at `x:0.0 y:2.0 z:0.0`. The Controllers are placed somewhat forward and below that location, replicating typical hand positions. Modify this behavior in Settings from the Application Simulator menu (Application Simulator > Settings > Application Simulator > Simulator > Headpose > Starting Position).
 
-You add to the virtual room layout by selecting the ![Add Room button](/img/app-sim/roomicon.png) Add Room button in the Scene Graph panel's toolbar.
+You add to the virtual room layout by selecting the <Image url= {require("/img/app-sim/roomicon.png")} >Add Room button</Image> Add Room button in the Scene Graph panel's toolbar.
 
-If you want to completely replace the room, click the ![Clear Room button](/img/app-sim/clearroom.png) Clear Scene button, and then Add Room.
+If you want to completely replace the room, click the <Image url= {require("/img/app-sim/clearroom.png")} >Clear Room button</Image> Clear Scene button, and then Add Room.
 
 Virtual rooms are created in the Room Generator tool.
 
@@ -55,15 +55,15 @@ When both the device and Simulator are contributing data to Application Simulato
 5. Expand the Aux Devices drop-down list.
 6. Add the connected device to the Simulator as a hybrid device.
 
-![Target Selector Showing Simulator Selected](/img/app-sim/hybrid_target.png)
+<Image url= {require("/img/app-sim/hybrid_target.png")} >Target Selector Showing Simulator Selected</Image>
 
 ## Stopping Application Simulator
 
 To stop Application Simulator, toggle the **Target State Selector** to **Disconnected**.
 
-![Connected State Toggle](/img/app-sim/connected.png)
+<Image url= {require("/img/app-sim/connected.png")} >Connected State Toggle</Image>
 
-![Disconnected State Toggle](/img/app-sim/disconnected.png)
+<Image url= {require("/img/app-sim/disconnected.png")} >Disconnected State Toggle</Image>
 
 ## Running your App
 
@@ -143,7 +143,7 @@ Application Simulator separates logging information into an Event Log and log fi
 
 You can view each of the logs by using the Application Simulator menu options.
 
-![Show Logs Button in Application Simulator Menu](/img/app-sim/show_logs.png)
+<Image url= {require("/img/app-sim/show_logs.png")} >Show Logs Button in Application Simulator Menu</Image>
 
 You can bundle all of the logs and runtime/error information by using the “Save Diagnostic Logs…” button. This is useful for reporting errors encountered when using Application Simulator. It will generate a .zip file that you can unpack to inspect before sending to Magic Leap Developer Support.
 

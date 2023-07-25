@@ -63,14 +63,14 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 
 2. Select the "**+**" (plus) button in the top-left corner, then **Add package from tarball**.
 
-![Unity Editor Package From Disk Dialogue](/img/unity/unity_add_tarball.png)
+<Image url= {require("/img/unity/unity_add_tarball.png")} >Unity Editor Package From Disk Dialogue</Image>
 
 3. Navigate to the location of the following folders and select the .tgz file within to add the package from `com.magicleap.unitysdk.tgz` (downloaded via [ML Hub](/docs/guides/getting-started/install-the-tools.md)). For example:
 
 - Mac : `$HOME/MagicLeap/tools/unity/<Version>/com.magicleap.unitysdk.tgz`
 - Windows : `%USERPROFILE%/MagicLeap/tools/unity/<Version>/com.magicleap.unitysdk.tgz`
 
-![Unity tarball file in a folder](/img/unity/unitysdk_package.png)
+<Image url= {require("/img/unity/unitysdk_package.png")} >Unity tarball file in a folder</Image>
 
 <details>
 

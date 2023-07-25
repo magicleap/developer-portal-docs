@@ -7,12 +7,8 @@ keywords: [Unity,Samples, MRTK3, UI]
 ---
 # Magic Leap MRTK3 Package
 
-This guide demonstrates how to integrate MRTK3 features into your Magic Leap 2 project. Ensure that you have a Unity project configured for Magic Leap 2 development. If you don't, follow the instructions on [this page](https://developer.magicleap.cloud/learn/docs/guides/unity/getting-started/configure-unity-settings).
+This guide demonstrates how to get started developing on Magic Leap 2 with MRTK3.
 ​
-:::tip
-You can also pull a pre-configured MRTK3 project from Magic Leap's MRTK3 forked repository under the [`mrtk3_MagicLeap2` branch](https://github.com/magicleap/MixedRealityToolkit-Unity/tree/mrtk3_MagicLeap2).
-:::
-
 ## Supported Features
 
 The table below displays the current status of MRTK3 features compatible with Magic Leap 2:
@@ -24,9 +20,7 @@ The table below displays the current status of MRTK3 features compatible with Ma
 | Eye Tracking | Pre-Release |
 
 :::caution
-
 This package is an early-access version. This means features are still in active development and subject to changes or even having their implementation completely removed and done differently.
-
 :::
 
 ## Prerequisites
@@ -35,6 +29,29 @@ Before starting, download and install the following packages from the Magic Leap
 
 - Magic Leap SDK v1.2.0 (or later)
 - Magic Leap Unity SDK v1.6.0 (or later)
+- Unity Editor v2022.2.17f1 (or later)
+
+## Quick Start Template Project
+
+The fastest way to get started with MRTK3 on Magic Leap 2 is to use the Magic Leap MRTK3 Template Project. This Unity project is pre-configured for Unity and contains contains the MRTK3 and Magic Leap packages in addition to some sample scenes. You can download the `mrtk3_MagicLeap2` branch from [Magic Leap's forked MRTK3 repository](https://github.com/magicleap/MixedRealityToolkit-Unity/tree/mrtk3_MagicLeap2).
+
+1. If you are familiar with Git and are using the command line, you can clone the repo and specify the `mrtk3_MagicLeap2`  branch with the following command: `git clone --branch mrtk3_MagicLeap2 https://github.com/magicleap/MixedRealityToolkit-Unity.git`
+
+2. Once downloaded, open the Unity Hub
+3. Open the MRTK Dev Template Project (Located inside the `MixedRealityToolkit-Unity/UnityProjects/MRTKDevTemplate` directory)
+4. Once the project is opened, make sure to change the target platform to Android inside **Build Settings**
+5. Once complete, you can start developing Magic Leap 2 applications using MRTK3
+
+<details>
+  <summary>Windows Only: <code> Failed to load ... one or more of its dependencies could not be loaded.</code></summary>
+
+If importing the plugin results in Unity showing an error similar to the one below in the console, you may be missing additional runtimes ("Workloads"). This dependency can be installed is supplied by Microsoft: [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+```plaintext
+Plugins: Failed to load 'C:/AppDirectory/Library/PackageCache/com.magicleap.soundfield@3.4.0-230405.66.cf20c31/Plugins/x86_64/AudioPluginMSASpatializer.dll' because one or more of its dependencies could not be loaded.
+```
+
+</details>
 
 ## Creating a New MRTK3 Project
 
@@ -45,7 +62,7 @@ Before importing the Magic Leap MRTK3 Integration Package, configure your projec
 
 ### Option 1: Using the Mixed Reality Feature Tool
 
-Follow these instructions to install MRTK3 dependencies into an existing project using the [Mixed Reality Feature tool](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Note that this tool is only available for Windows.
+Ensure that you have a Unity project configured for Magic Leap 2 development. If you have not configure a project for Magic Leap 2, follow the [Configure Unity Settings instructions](https://developer.magicleap.cloud/learn/docs/guides/unity/getting-started/configure-unity-settings). Then, use these instructions to install MRTK3 dependencies into your existing Magic Leap 2 project using the [Mixed Reality Feature tool](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Note that the Mixed Reality Feature Tool is only available for Windows.
 
 1. Open the Mixed Reality Feature tool.
 2. Target your Unity project.
@@ -69,7 +86,7 @@ To configure your project's settings to be compatible with Magic Leap 2, follow 
 2. Open the Project Setup window (**Window > Magic Leap > Project Setup**).
 3. Complete all of the setup steps in the Project Setup Window.
 
-### Option 2: Using the MRTK3 Template Project
+### Option 2: Default MRTK3 Template Project
 
 Another way to get started with MRTK3 is to use the MRTK3 Template Project. This Unity project already contains the MRTK3 packages and some sample scenes. You can download it from the `mrtk3` branch in the [MRTK Github repository](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3). To do this, clone the MRTK repository and switch to the `mrtk3` branch.
 ​
@@ -77,9 +94,9 @@ If you are familiar with Git and are using the command line, you can clone the r
 ​
 After downloading the MRTK3 Template Project, update some project settings to make it compatible with Magic Leap 2.
 
-## Configuring MRTK3 for Magic Leap 2
+#### Configure MRTK3 for Magic Leap 2
 
-To configure your project for Magic Leap 2, follow these steps:
+The step by step instructions below will walk you through updating the MRTK Dev Template project to Unity v2022.2.x and configuring the project settings for Magic Leap 2 development.
 
 1. Using the Unity Hub, open the `MRTKDevTemplate` project using Unity version 2022.2.x
     1. On the **Opening Project in Non-Matching Editor Installation** popup, select **Continue**.
@@ -89,14 +106,13 @@ To configure your project for Magic Leap 2, follow these steps:
     1. **Project Auditor**
     2. **Mixed Reality OpenXR Plugin**
     3. **Google ARCore XR Plugin**
-    4. **OpenXR Plugin**
 3. Clear any errors that appear as a result of a missing dependency from a prefab of XR provider.
     1. If errors are still present, close the project and delete the project's Library folder, and re-open Unity to reimport the existing packages.
 4. Download and Install the [Magic Leap Setup Tool](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780) from the Unity Asset store.
 5. Open the Project Setup window (**Window > Magic Leap > Project Setup**).
 6. Complete all of the setup steps in the Project Setup Window.
 
-## Importing MRTK3 Magic Leap
+### Import MRTK3 Magic Leap
 
 Once the project is configured for ML2 and has the required MRTK3 packages, import the MRTK3 Magic Leap package into the project.
 
@@ -105,20 +121,18 @@ Once the project is configured for ML2 and has the required MRTK3 packages, impo
 3. Import the `com.magicleap.mrtk3-[VERSION].tgz` package from `MagicLeap/tools/unity/mrtk3/`.
 4. In MRTK3's Project settings (**Edit** > **Project Settings** > **MRTK3**), set the **Profile** to **MRTKProfile - MagicLeap**.
    1. If the profile does not appear in the asset window, click the small "eye" icon located at the top-right corner of the menu to reveal hidden items in the list of assets.
-5. Remove and replace the standard XR Rig from the Scene with the `MRTK XR Rig - MagicLeap` prefab variant located in `Assets/MagicLeap/Prefabs/MRTK_Variants/`.
+
+### Configure Scene
+
+MRTK 3 uses some input actions that are not currently supported by Magic Leap. This limitation requires developers to replace or edit the existing MRTK XR rig with one that is compatible with Magic Leap 2. To create or configure a new scene, perform the following steps:
+
+1. Delete the existing MRTK XR Rig if one exists.
+2. Navigate to the `/MagicLeap/Prefabs/MRTK_Variants/` directory inside your `/Assets/` folder
+3. Add the `MRTK XR Rig - MagicLeap` prefab to your scene.
 ​
-*See the [Configure Existing Rig](#configuring-existing-mrtk3-xr-rig) section below for information on how to edit the default MRTK rig instead of replacing it.*
 
-## Permissions
-
-Hand Tracking Requires developers to enable the Hand Tracking permissions in the Manifest Settings. To add Hand tracking permissions follow the steps below:
-
-1. Go to the Magic Leap Permissions Settings (**Edit** > **Project Settings** > **Magic Leap** > **Permissions**)
-2. Enable **com.magicleap.permissions.HAND_TRACKING**
-​
-For more information, refer to the Magic Leap 2 [permissions guide](https://developer-docs.magicleap.cloud/docs/guides/unity/permissions/declaring-permissions).
-
-### Configuring existing MRTK3 XR Rig
+<details>
+  <summary>Learn how to edit the default MRTK XR Rig instead of replacing it.</summary>
 
 This section describes how to configure the original MRTK XR Rig, instead of replacing it with the pre-configured "MRTK XR Rig - MagicLeap" variant.
 
@@ -146,7 +160,18 @@ This section describes how to configure the original MRTK XR Rig, instead of rep
    5. Select the **GazePinchInteractor** and Replace the **Device Pose Source** (DevicePosition/Rotation), and **Aim Pose Source** (PointerPosition/Rotation).
 6. Finally, select the **Main Camera**, then add the **MagicLeap Camera** component. *(Optional)*
 
+</details>
+
+### Permissions
+
+Hand Tracking Requires developers to enable the Hand Tracking permissions in the Manifest Settings. To add Hand tracking permissions follow the steps below:
+
+1. Go to the Magic Leap Permissions Settings (**Edit** > **Project Settings** > **Magic Leap** > **Permissions**)
+2. Enable **com.magicleap.permissions.HAND_TRACKING**
+
+For more information, refer to the Magic Leap 2 [permissions guide](https://developer-docs.magicleap.cloud/docs/guides/unity/permissions/declaring-permissions).
+
 ## FAQ
 
-Why do I need to replace or configure the rig?
-Replacing or configuring the rig is a temporary requirement to make sure the Magic Leap input bindings target the standard MRTK inputs.
+Why do I need to replace or re-configure the default MRTK XR Rig rig?
+Replacing or configuring the rig is a temporary requirement to make sure the Magic Leap input bindings target the ones used by MRTK3. We plan to eliminate this step in the future.

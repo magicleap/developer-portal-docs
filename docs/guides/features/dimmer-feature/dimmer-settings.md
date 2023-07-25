@@ -27,7 +27,7 @@ High opacities of Global and Segmented Dimming can create hazards to users by lo
 
 You can set a maximum value for both Global and Segmented Dimming for your application,  but consider that a user can always choose to override this permission and set their own maximum values that they’ve configured in Settings.
 
-![Settings](/img/design-dimmer/settings.png)
+<Image url= {require("/img/design-dimmer/settings.png")} >Settings</Image>
 
 Manual settings found in  **Settings > Display**.
 

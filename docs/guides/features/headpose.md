@@ -105,7 +105,7 @@ The environment (“scene”) consists of static and dynamic parts. Moving peopl
 
 Challenging door scenario with little texture on the static parts of the scene.
 
-![White door in white hallway](/img/headpose/g.jpeg)
+<Image url= {require("/img/headpose/g.jpeg")} >White door in white hallway</Image>
 
 ### Specular Reflections
 
@@ -122,7 +122,7 @@ When the cameras capture reflective surfaces such as shiny surfaces or floors, g
 
 |  Glass Walls | Mirrors |
 | ----------- | ----------- |
-| ![Glass wall in office conference room](/img/headpose/h.jpeg)| ![Bathroom mirror](/img/headpose/i.jpeg)|
+| <Image url= {require("/img/headpose/h.jpeg")} >Glass wall in office conference room</Image>| <Image url= {require("/img/headpose/i.jpeg")} >Bathroom mirror</Image>|
 
 ## Motions and Device Handling
 
@@ -140,7 +140,7 @@ The device is designed to support all kinds of user motions. Very fast motions m
 - Using the device very close to a wall. This might cause the cameras to lose visibility to the room and it might result in degraded performance or tracking loss.
 - Holding the device with one hand while using it. This often causes one or more cameras to be covered by the hand and will result in degraded performance or tracking loss.
 
-![Someone holding ML2 with fingers covering the side cameras](/img/headpose/j.jpeg)
+<Image url= {require("/img/headpose/j.jpeg")} >Someone holding ML2 with fingers covering the side cameras</Image>
 
 ## Outdoor Conditions
 

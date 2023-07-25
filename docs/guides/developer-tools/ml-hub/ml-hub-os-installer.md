@@ -9,7 +9,7 @@ keywords: [Magic Leap C SDK 0.52.1, MLSDK, ML Hub, Install, Setup]
 
 The ML Hub's OS Installer allows you to install an OS image to your device. OS images are now released via The ML Hub's Package Manager. You can download them from the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md) and [flash](/docs/guides/device/updating-the-os/device-flashing-guide.md) them via the command line, or you can download and install with **one click** by using this tool.
 
-![OS Installer Module Page after Connecting Device](/img/ml-hub/os-module-1.png)
+<Image url= {require("/img/ml-hub/os-module-1.png")} >OS Installer Module Page after Connecting Device</Image>
 
 :::caution
 
@@ -43,7 +43,7 @@ Use the **OS Version to Install** dropdown to select the OS image to install. Th
 
 There is also an option to select an OS image from a local directory. If you have already downloaded an OS image tarball and have extracted it, you can select that directory.
 
-![OS Version Dropdown](/img/ml-hub/os-module-2.png)
+<Image url= {require("/img/ml-hub/os-module-2.png")} >OS Version Dropdown</Image>
 
 ## Reset Device to Factory Settings
 
@@ -61,9 +61,9 @@ It is required to check this when downgrading versions because data is forwards 
 
 Click the **Install OS** button to begin installation. If the OS image needs to be downloaded first, you will see a progress dialog of the download. Otherwise you will see the output of the OS installation. Once flashing is complete and the green checkmark appears, you can click the **Dismiss** button to return to the previous screen.
 
-![Installation Window: In-Progress](/img/ml-hub/os-module-3.png)
+<Image url= {require("/img/ml-hub/os-module-3.png")} >Installation Window: In-Progress</Image>
 
-![Installation Window: Complete](/img/ml-hub/os-module-4.png)
+<Image url= {require("/img/ml-hub/os-module-4.png")} >Installation Window: Complete</Image>
 
 :::tip
 If you run into any issues with flashing, check the [**troubleshooting**](/docs/guides/device/updating-the-os/device-flashing-guide.md#troubleshooting) section of the manual flashing guide for assistance.

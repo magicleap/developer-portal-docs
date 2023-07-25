@@ -19,7 +19,7 @@ To download the Examples project, follow the [Getting Started Guide](/docs/guide
 
 The screenshot below shows the scene hierarchy, with the prefabs relevant to the walkthrough highlighted in blue:
 
-![Scene Hierarchy](/img/unity/input/controller/xri-example-walkthrough/sceneHierarchy.png)
+<Image url= {require("/img/unity/input/controller/xri-example-walkthrough/sceneHierarchy.png")} >Scene Hierarchy</Image>
 
 Those prefabs can be found in the following file locations:
 
@@ -34,9 +34,9 @@ Data for input and controller bindings are configured in the Magic Leap Input As
 
 For more information on how Magic Leap 2 interfaces with Unity's Input System, reference our [ML1 Controller Porting Guide](/docs/guides/unity/input/controller/controller-porting-guide.md).
 
-![Input Asset In Project Folder](/img/unity/input/controller/xri-example-walkthrough/inputAsset2.png)
+<Image url= {require("/img/unity/input/controller/xri-example-walkthrough/inputAsset2.png")} >Input Asset In Project Folder</Image>
 
-![Input Asset Expanded](/img/unity/input/controller/xri-example-walkthrough/inputAsset3.png)
+<Image url= {require("/img/unity/input/controller/xri-example-walkthrough/inputAsset3.png")} >Input Asset Expanded</Image>
 
 ## Component Breakdown
 
@@ -119,7 +119,7 @@ private void HandleOnTouchpad(InputAction.CallbackContext obj)
 
 The values for each `InputAction.CallbackContext` are explicitly assigned in the Magic Leap Input Asset:
 
-![Magic Leap Input Asset Trigger Event](/img/unity/input/controller/xri-example-walkthrough/inputAsset.png)
+<Image url= {require("/img/unity/input/controller/xri-example-walkthrough/inputAsset.png")} >Magic Leap Input Asset Trigger Event</Image>
 
 ### Controller Prefab
 

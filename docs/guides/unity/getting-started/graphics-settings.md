@@ -21,7 +21,7 @@ While using the Universal Render Pipeline is not required, it is strongly recomm
 
 To begin, simplify your project by removing the **Pipeline** and **Renderer** assets provided by the template. To do this, select the existing Render Pipeline assets, right-click, and choose **Delete**.
 
-![Delete the starter URP assets](/img/unity/universal-render-pipeline-configuration-1.png)
+<Image url= {require("/img/unity/universal-render-pipeline-configuration-1.png")} >Delete the starter URP assets</Image>
 
 ## Create a new pair of URP assets
 
@@ -31,13 +31,13 @@ From the Unity menu, select **Assets > Create > Rendering > URP Asset (With Univ
 
 Select the **Pipeline** asset you just created and tweak the Rendering, Quality, Lighting, and Shadows settings, removing or reducing things unnecessary for the look and feel of your project.
 
-![URP asset in the examples project](/img/unity/universal-render-pipeline-configuration-2.png)
+<Image url= {require("/img/unity/universal-render-pipeline-configuration-2.png")} >URP asset in the examples project</Image>
 
 ## Set the default Scriptable Pipeline
 
 Open your Project's Graphics settings (**Edit > Project Settings** then select **Graphics**), and set the **Scriptable Render Pipeline Settings** to the URP pipeline asset you created in the previous step.
 
-![The Scriptable Render Pipeline Settings field](/img/unity/universal-render-pipeline-configuration-3.png)
+<Image url= {require("/img/unity/universal-render-pipeline-configuration-3.png")} >The Scriptable Render Pipeline Settings field</Image>
 
 ## Next Steps
 

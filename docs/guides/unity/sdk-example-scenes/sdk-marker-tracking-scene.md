@@ -31,7 +31,7 @@ You must enable the `CAMERA` and `MARKER_TRACKING` permissions in the Unity Proj
 
 Open the **MarkerTracking** example scene and select the **CombinedTrackingExample** GameObject in the hierarchy under the Example parent. In the inspector, under the Marker Tracking Example script, enable **Marker Scanning** and select **ArUco** as the marker type.
 
-![Enable Marker Tracking and Marker Type](/img/unity/example-projects/marker-tracking/sdk-marker-tracking.png)
+<Image url= {require("/img/unity/example-projects/marker-tracking/sdk-marker-tracking.png")} >Enable Marker Tracking and Marker Type</Image>
 
 ## ArUco Tracking
 

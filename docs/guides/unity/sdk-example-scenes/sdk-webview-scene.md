@@ -31,17 +31,17 @@ For instructions on installing the SDK Examples Project and building this scene,
    1. API Level set to 20 (or greater)
    2. **WEBVIEW** permission enabled
 
-![Magic Leap Manifest Settings under Project Settings](/img/unity/example-projects/sdk-example-scenes/webview/webview-permissions.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-permissions.png")} >Magic Leap Manifest Settings under Project Settings</Image>
 
 2. Go to *Edit > Project Settings > Player > Android Platform (Android Icon) > Other Settings > Configuration (subsection)* and ensure that **Internet Access** is set to **Required**.
 
-![Internet Access Setting under Player Settings](/img/unity/example-projects/sdk-example-scenes/webview/webview-internet.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-internet.png")} >Internet Access Setting under Player Settings</Image>
 
 ## Scene Layout
 
 The example Web View scene has the following layout. If you are starting from scratch you will want to set up your scene similarly. We will cover each of the major components of the scene and how they are configured.
 
-![Scene Hierarchy Layout](/img/unity/example-projects/sdk-example-scenes/webview/webview-a-layout.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-a-layout.png")} >Scene Hierarchy Layout</Image>
 
 ### XR Rig
 
@@ -55,7 +55,7 @@ The **VirtualKeyboard prefab** is used to provide text input to both the Address
 
 Like many other example scenes, this scene utilizes a top level **WebViewExample GameObject** to coordinate the behavior and functionality of the scene. The WebViewExample object has a **WebViewExample mono behavior script** attached to it. This script is available within the MagicLeapUnityExamples project. Custom projects will need to write their own or copy from this to handle the various WebView functions. The fields of this script can be seen here:
 
-![WebViewExample GameObject and Script Component](/img/unity/example-projects/sdk-example-scenes/webview/webview-b-example.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-b-example.png")} >WebViewExample GameObject and Script Component</Image>
 
 Primarily this holds the references to the **UI controls** displayed within the scene. Those can be seen as children of the Toolbar component of the Canvas. More importantly, there are references to the **WebViewScreenBehavior** and **VirtualKeyboard** GameObjects. These are used by the script to start and control the Web View Screen and to bind and toggle the virtual keyboard prefab when the web view screen indicates that the webpage wants to make the keyboard visible.
 
@@ -63,11 +63,11 @@ Primarily this holds the references to the **UI controls** displayed within the 
 
 The **WebViewScreen** is the core component of the **WebView System**. It is where the webpage content will actually be rendered. This is expected to be a mesh of some form, usually a quad. It also utilizes a **material** that uses the URP standard Unlit shader. A **mesh collider** is necessary to be able to receive `Physics.Raycast` hit results when using the controller pointer. The mesh components are configured as follows:
 
-![WebViewScreen GameObject and Components](/img/unity/example-projects/sdk-example-scenes/webview/webview-c-screen.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-c-screen.png")} >WebViewScreen GameObject and Components</Image>
 
 Additionally, there is a **WebViewScreenBehavior script** attached to this object, which provides the necessary functionality to allow rendering and interaction within the Web View screen. This class is included in the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md) to make it easier to setup a functioning Web View screen. It is configured as follows:
 
-![WebViewScreen Behavior Script Component](/img/unity/example-projects/sdk-example-scenes/webview/webview-d-screen-behavior.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-d-screen-behavior.png")} >WebViewScreen Behavior Script Component</Image>
 
 The **Web View Width/Height** define the resolution of the texture in which the web page content will be rendered. The **Web View Mesh Renderer** should point to the WebViewScreen itself, as this is the mesh that it will supply the rendered texture to.
 
@@ -88,7 +88,7 @@ TriggerDrag can make it difficult to interact with content on the web page that 
 
 The **web view frame canvas** GameObject is a standard Unity UI canvas set to *world space*. It also has two additional behaviors attached to it. It is configured as follows:
 
-![Unity UI Canvas Game Object and Components](/img/unity/example-projects/sdk-example-scenes/webview/webview-e-canvas.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-e-canvas.png")} >Unity UI Canvas Game Object and Components</Image>
 
 The first behavior is the **Graphic Raycaster** behavior. The [Graphic Raycaster](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-GraphicRaycaster.html) is a standard Unity UI system object used to allow for interaction with the Event System for UI components.
 
@@ -102,7 +102,7 @@ You may not need both the Graphic Raycaster and the Tracked Device Graphic Rayca
 
 The **Buttons** within the Canvas object are standard Unity UI Buttons, which are linked to the **WebViewExample GameObject** to drive the functionality of the sample. They are connected using the `OnClick()` event handler as follows:
 
-![Unity UI Button Children](/img/unity/example-projects/sdk-example-scenes/webview/webview-f-ui.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-f-ui.png")} >Unity UI Button Children</Image>
 
 ### Tab Bar
 
@@ -116,25 +116,25 @@ The **TabBar object** within the WebViewFrameCanvas object is an empty container
 
 It also has two child buttons pre-assigned for Creating/Destroying tabs (+/- buttons respectively in the UI). These buttons OnClick actions are mapped back to functions of the TabBar itself.
 
-![TabBar](/img/unity/example-projects/sdk-example-scenes/webview/webview-tabbar.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-tabbar.png")} >TabBar</Image>
 
 ### WebView Tab Prefab
 
 The **WebViewTab prefab** is a pre-constructed MLWebViewTabBehavior object attached to a standard Unity Toggle with some modifications to remove the checkmark and make the background color change when the toggle is selected. No additional configurations need to be made to make the tab work. The code does expect there to be a text label associated with the Tab UI, which Unity UI Toggle already provides.
 
-![Tab Prefab](/img/unity/example-projects/sdk-example-scenes/webview/webview-tab.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-tab.png")} >Tab Prefab</Image>
 
 ### AddressBar
 
 The **AddressBar GameObject** within the Canvas GameObject is a standard Unity UI InputField. This is mapped to the `GoToUrl` function of the **WebViewExample object** to trigger navigating to a new web page once editing of the field is done. It is connected through the `OnEndEdit()` event handler. It also has an **EventTrigger behavior** attached to it, which is mapped to the Open function of the **VirtualKeyboard object** using the `PointerClick()` event handler. The [Event Trigger](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-EventTrigger.html) is a standard Unity UI class. These are configured as follows:
 
-![AddressBar UI Child Input Field](/img/unity/example-projects/sdk-example-scenes/webview/webview-g-addressbar.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-g-addressbar.png")} >AddressBar UI Child Input Field</Image>
 
 ### UIEventSystem
 
 The **UIEventSystem object** is a prefab provided by the MagicLeapUnityExamples project to make it easy to add a pre-configured EventSystem object that is compatible with the XR Interaction Toolkit. Custom projects will need to either copy the one from the MagicLeapUnityExamples project or create their own. All of the behaviors attached are Unity provided classes. The UIEventSystem is configured as follows:
 
-![UIEventSystem Prefab](/img/unity/example-projects/sdk-example-scenes/webview/webview-h-uievent.png)
+<Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-h-uievent.png")} >UIEventSystem Prefab</Image>
 
 ### Additional Information
 

@@ -128,12 +128,12 @@ Generic return values for Multimedia API calls.
 | MLMediaResult_HeartbeatTerminateRequested | | |
 | MLMediaResult_UnknownResource | | Unknown Media Codec Resource Request Error. |
 | MLMediaResult_InvalidResourceRequest | | Invalid Request on Media Codec Resources. |
-| MLMediaResult_OnlyHWResourceAvailable | | Only Hardware Media Codec Resources are available. This error code is a result of requesting for Software Media Codec Resource that is not available. .|
-| MLMediaResult_OnlySWResourceAvailable | | Only Software Media Codec Resources are available. This error code is a result of requesting for Hardware Media Codec Resource that is not available. .|
+| MLMediaResult_OnlyHWResourceAvailable | | Only Hardware Media Codec Resources are available. This error code is a result of requesting for Software Media Codec Resource that is not available. |
+| MLMediaResult_OnlySWResourceAvailable | | Only Software Media Codec Resources are available. This error code is a result of requesting for Hardware Media Codec Resource that is not available. |
 | MLMediaResult_NoMoreResources | | No more (Hardware or Software) Media Codec Resources available. |
 | MLMediaResult_NoMoreHWResources | | No more Hardware Media Codec Resources available. |
 | MLMediaResult_NoMoreSWResources | | No more Software Media Codec Resources available. |
-| MLMediaResult_InvalidCodecParam | | Media Codec Resource request made with Invalid Codec parameters. This error code could be a result of one of these cases (not limited to): .* Requested video frame width or height is beyond the maximum resolution (width or height) supported.* Requested Framerate/Sample rate/Bitratre/Channel count is not supported. |
+| MLMediaResult_InvalidCodecParam | | Media Codec Resource request made with Invalid Codec parameters. This error code could be a result of one of these cases (not limited to): * Requested video frame width or height is beyond the maximum resolution (width or height) supported.* Requested Framerate/Sample rate/Bitratre/Channel count is not supported. |
 | MLMediaResult_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -174,7 +174,7 @@ Detailed return values for Multimedia API calls.
 | MLMediaDRMResult_Decrypt | | Error code for DRM when failed to decrypt data. |
 | MLMediaDRMResult_CannotHandle | | Error code for DRM can not handle the operation. |
 | MLMediaDRMResult_TamperDetect | | Error code for DRM when data is tampered. |
-| MLMediaDRMResult_NotProvisioned | | Error Code when an operation on a MLMediaDRM handle is attempted and the device does not have a certificate. The app should obtain and install a certificate using the MLMediaDRM provisioning methods then retry the operation. .|
+| MLMediaDRMResult_NotProvisioned | | Error Code when an operation on a MLMediaDRM handle is attempted and the device does not have a certificate. The app should obtain and install a certificate using the MLMediaDRM provisioning methods then retry the operation. |
 | MLMediaDRMResult_DeviceRevoked | | Error code for Device License Revoked. |
 | MLMediaDRMResult_ResourceBusy | | Error code if the MLMediaDRM operation fails when the required resources are in use. |
 | MLMediaDRMResult_InsufficientOutputProtection | | Error code for insufficient output protection. |

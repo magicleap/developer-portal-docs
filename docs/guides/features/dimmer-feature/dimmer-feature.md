@@ -9,7 +9,7 @@ keywords: [Dimming, Dimmer, Segmented, Overview, Global]
 
 Magic Leap devices have additive displays, which take the light within a user’s environment and add photon to the display, making it possible to render content. The Magic Leap 2 introduces a new low resolution panel which selectively *subtracts* photons in the environment by using two types of dimming: **Global Dimming** and **Segmented Dimming**.  
 
-![Diagram 1](/img/design-dimmer/diagram1.png)
+<Image url= {require("/img/design-dimmer/diagram1.png")} >Diagram 1</Image>
 
 ## What is Global Dimming?
 

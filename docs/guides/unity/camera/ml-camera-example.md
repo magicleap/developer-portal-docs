@@ -52,7 +52,7 @@ public class SimpleCamera : MonoBehaviour
 
     void OnDisable()
     {
-        StopVideoCapture();
+        StopCapture();
     }
 
     //Waits for the camera to be ready and then connects to it.
@@ -135,23 +135,27 @@ public class SimpleCamera : MonoBehaviour
             //Starts video capture. This call can also be called asynchronously 
             //Images capture uses the CaptureImage function instead.
             result = _camera.CaptureVideoStart();
-            if (result.IsOk)
+            _isCapturing = MLResult.DidNativeCallSucceed(result.Result, nameof(_camera.CaptureVideoStart));
+            if (_isCapturing)
             {
                 Debug.Log("Video capture started!");
             }
             else
             {
-                Debug.LogError("Failed to start video capture!");
+                Debug.LogError($"Could not start camera capture. Result : {result}");
             }
         }
     }
 
-    private void StopVideoCapture()
+    private void StopCapture()
     {
         if (_isCapturing)
         {
             _camera.CaptureVideoStop();
         }
+
+        _camera.Disconnect();
+        _camera.OnRawVideoFrameAvailable -= RawVideoFrameAvailable;
         _isCapturing = false;
     }
 

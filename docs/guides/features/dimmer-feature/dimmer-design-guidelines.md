@@ -10,7 +10,7 @@ keywords: [Features, Meshing, Perception, Overview, Design]
 
 In this article, we discus how you can use the global and segmented dimmer in your applications to experiment with improving the contrast and opacity of your content. resulting in text that is more legible, menus with greater contrast to the environment, and objects that appear more solid.
 
-![Diagram 1](/img/design-dimmer/diagram1.png)
+<Image url= {require("/img/design-dimmer/diagram1.png")} >Diagram 1</Image>
 
 ## What is Global Dimming?
 
@@ -59,7 +59,7 @@ The following design guidelines are still in development:
 
 We recommend placing content between 0.5m and 1.4m away for the greatest visibility of Segmented Dimming and content comfort.
 
-![Diagram 2](/img/design-dimmer/diagram2.png)
+<Image url= {require("/img/design-dimmer/diagram2.png")} >Diagram 2</Image>
 
 ### Head-relative Content
 
@@ -77,7 +77,7 @@ The Segmented Dimmer panel is not for use with highly-detailed content as its re
 
 The most helpful mask shapes are rectangles and ovals. Due to the low resolution of the Dimming Panel, adding corner radiuses and feather don’t create significant changes in perceived shape of the dimmed area to the user unless the mask and content are large in the FOV.
 
-![Diagram 3](/img/design-dimmer/diagram3.png)
+<Image url= {require("/img/design-dimmer/diagram3.png")} >Diagram 3</Image>
 
 ### Size and Distance of the Mask
 
@@ -111,7 +111,7 @@ If you’re indoors or in an office environment, chances are you may not need to
 2. **Add a border.**
 We recommend using a thickness of 10px or greater and using content that may look good with a border, such as: photos, videos, menus, text boxes, and other UI. Bright colors will be more visible  than using dark blacks or grays. Avoid using white borders in bright light conditions, as those will make the halo appear more visible.
 
-![Blended Diagram](/img/design-dimmer/blended_dimming.gif)
+<Image url= {require("/img/design-dimmer/blended_dimming.gif")} >Blended Diagram</Image>
 
 3. **‘Blend’ Global Dimming and Segmented Dimming**.
 Using light Global Dimming or similar opacities may also decrease the appearance of the halo by blending the two areas. In the above example, we set the Global Dimmer to 40 in the application and the Segmented Dimming to 40 as well.

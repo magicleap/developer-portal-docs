@@ -13,11 +13,11 @@ The upgraded Magic Leap 2 controller offers the same functionality as the origin
 
 ## Hardware Diagram
 
-![Controller Button Diagram](/img/unity/input/controller/controller-features/controllerDiagram_placeholder.png)
+<Image url= {require("/img/unity/input/controller/controller-features/controllerDiagram_placeholder.png")} >Controller Button Diagram</Image>
 
 ## Touchpad Gestures
 
-![Touchpad Gesture Diagram](/img/unity/input/controller/controller-features/touchpadDiagram_placeholder.png)
+<Image url= {require("/img/unity/input/controller/controller-features/touchpadDiagram_placeholder.png")} >Touchpad Gesture Diagram</Image>
 
 ## Changes from Magic Leap 1
 

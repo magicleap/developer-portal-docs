@@ -1,9 +1,9 @@
 {
-  "label": "PTC",
-  "position": 3,
+  "label": "PTC Vuforia Engine",
+  "position": 4,
   "collapsed": true,
   "link": {
     "type": "doc",
-      "id": "ptc"
+      "id": "vuforia-overview"
     }
 }

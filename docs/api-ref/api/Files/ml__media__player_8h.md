@@ -259,7 +259,7 @@ MediaTrack types returned by [MLMediaPlayerGetTrackType()](/api-ref/api/Modules/
 | MLMediaPlayerBufferingMode_None |  0| Do not support buffering. |
 | MLMediaPlayerBufferingMode_TimeOnly |  1| Support only time based buffering. |
 | MLMediaPlayerBufferingMode_SizeOnly |  2| Support only size based buffering. |
-| MLMediaPlayerBufferingMode_TimeThenSize |  3| Support both time and size based buffering, time based calculation precedes size based. Size based calculation will be used only when time information is not available for the stream. .|
+| MLMediaPlayerBufferingMode_TimeThenSize |  3| Support both time and size based buffering, time based calculation precedes size based. Size based calculation will be used only when time information is not available for the stream. |
 | MLMediaPlayerBufferingMode_Count |  4| Number of modes. |
 | MLMediaPlayerBufferingMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum size is 32 bits. |
 
