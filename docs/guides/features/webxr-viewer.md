@@ -6,11 +6,13 @@ tags: [Features]
 keywords: [Features]
 ---
 
+
 NOTE: If you were looking for the WebXR Viewer content, it’s been replaced by this document. 
 
 MagicLeap now offers full support for the WebXR Device API. It comes already installed on your Magic Leap device and should work with your standard WebXR applications out of the box. All features described in the WebXR specification here - https://www.w3.org/TR/webxr/ are supported. 
 
 ## What's Supported, What's Not
+
 
 The following WebXR specifications and extensions are supported on MagicLeap:
 - WebXR core/device API 
