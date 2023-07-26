@@ -6,10 +6,6 @@ tags: [Features]
 keywords: [Features]
 ---
 
-NOTE: If you were looking for the WebXR Viewer content, it’s been replaced by this document. 
-
-## What's Supported, What's Not
-
 MagicLeap now offers full support for the WebXR Device API. It comes already installed on your Magic Leap device and should work with your standard WebXR applications out of the box. All features described in the WebXR specification here - https://www.w3.org/TR/webxr/ are supported.
 
 :::info WebXR Viewer has been replaced with the System Web Browser
@@ -18,14 +14,16 @@ Starting on Magic Leap OS version 1.3.0-dev1, the WebXR viewer has been replaced
 
 :::
 
+## What's Supported, What's Not
+
 The following WebXR specifications and extensions are supported on MagicLeap:
 - WebXR core/device API 
 - WebXR reference spaces (view, local, local-floor, bounded, unbounded)
 - HandTracking
 - Input Controller
-- Segmented Dimmer through **immersive-vr** and **immersive-ar** during requestSession API in WebXR. If you use **immersive-vr**, it will darken the real world to create a VR experience. **immersive-ar** will show the real world as-is alongside the virtual content.
+- Segmented Dimmer through **immersive-vr** and **immersive-ar** during requestSession API in WebXR. If you use **immersive-vr**, it will darken the real world to create a VR experience. **immersive-ar** will show the real world along with the virtual content.
 
-MagicLeap does not offer support for the MagicLeap simulator or the anchor, layers and  hittest modules. While WebXR on the headset comes with some extensions supported, not all extensions are supported by MagicLeap. 
+Currently, Magic Leap does not support WebXR Anchor, WebXR Layers, and WebXR Hittest modules.
 
 You can launch features from the command line like this:
 
@@ -36,19 +34,25 @@ https://immersiveweb.dev
 ```
 
 ## Pinning Web Apps
-MagicLeap does not support pinning web applications from the browser to the home menu. However, any APK (Android Package Kit) which can load a URL on startup can be used. Third-party developers using WebXR can launch their web content using custom tabs and trusted web activities. When the User launches the APK, it opens the URL in a browser. 
 
-:::note: This is a browser/system feature, not a WebXR feature. 
-:::
+MagicLeap does not support pinning web applications from the browser to the home menu. However, any APK (Android Package Kit) which can load a URL on startup can be used. Third-party developers using WebXR can launch their web content using custom tabs and trusted web activities. When the User launches the APK, it opens the URL in a browser.
 
-## Permissions
-MagicLeap handles permissions for you. When a user navigates to your WebXR experience  webpage, they’ll be asked to grant permission to allow WebXR to start immersive mode. For WebXR content, you must always have the permission prompt. This is true for all WebXR experiences.
+NOTE: This is a browser/system feature, not a WebXR feature.
+
 
 ## Start with QR Code
-You can launch your application through a QR code. When someone accesses the QR code, the MagicLeap browser will open with the URL provided in the QR code. 
 
-:::note: This is a browser/system feature, not a WebXR feature.
-:::
+You can launch your application through a QR code. When someone accesses the QR code, the MagicLeap browser will open with the URL provided in the QR code.
+
+NOTE: This is a browser/system feature, not a WebXR feature.
+
+
+## Permissions 
+
+MagicLeap handles permissions for you. When a user navigates to your WebXR experience webpage, they'll be asked to grant permission to allow WebXR to start immersive mode. For WebXR content, you must always have the permission prompt. This is true for all WebXR experiences.
+
+NOTE: This is a browser/system feature, not a WebXR feature.
+
 
 ## Quit Web XR
 
