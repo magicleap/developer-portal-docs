@@ -7,9 +7,9 @@ tags: [Power, Sleep Mode, Settings, Optimization]
 keywords: [Power, Sleep Mode, Settings, Optimization]
 ---
 
-## Sleep Mode
+# Sleep Mode
 
-In previous releases of MagicLeap 2, sleep mode was disabled by default, and was an option you could choose to set. Going forward, sleep mode is enabled by default. Your existing applications may need to be updated to handle this change. New applications should include planning for handling the way this setting now works. If you encounter issues, please provide feedback on the change to us at developer@magicleap.com. This document is about MagicLeap 2 1.3.0-dev2 and onwards, from late October 2023 onwards.
+In previous releases of MagicLeap 2, sleep mode was disabled by default, and was an option you could choose to set. Going forward, sleep mode is enabled by default. Your existing applications may need to be updated to handle this change. New applications should include planning for handling the way this setting now works. If you encounter issues, please provide feedback on the change to us at developer@magicleap.com. This document is about MagicLeap 2 1.3.0-dev2 and onwards, from late October 2023 forward.
 
 ## Updates to Your Device
 After sleep mode is enabled by default, if you choose to update your device with a regular update, your existing settings will be saved, and sleep mode will still be optional (the default will be Standby enabled). If your device is new, or you do a factory reset update on an existing device, sleep mode is enabled by default. Keeping sleep mode set by default can greatly extend the length of time your device can go without recharging. 
