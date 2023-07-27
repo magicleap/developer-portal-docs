@@ -13,8 +13,11 @@ date: 06/13/2023
   * Channel Editor has been removed as it causes more confusion than value to the users.
 
 ## Bug Fixes
-  * [Unity] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
-  * [Unity] WASD movement in Game View was inverted along Z axis.
+  * [Unity AppSim] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
+  * [Unity AppSim] WASD movement in Game View was inverted along Z axis.
+
+## Known Issues
+  * [Unity AppSim] Sometimes the Device view may be blank after starting Simulator in Unity Editor.
 
 # Version 3.5.0
 
