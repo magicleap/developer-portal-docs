@@ -16,10 +16,9 @@ date: 06/13/2023
 ## Bug Fixes
   * [Unity AppSim] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
   * [Unity AppSim] WASD movement in Game View was inverted along Z axis.
-  * [Unity AppSim] Other bug fixes that make Unity much more stable running with App Sim.
 
 ## Known Issues
-  * [Unity AppSim] FEEDBACK-463: Sometimes the Device view may be blank after starting App Sim Simulator mode in Unity Editor. The workaround is to
+  * [Unity AppSim] FEEDBACK-463: Sometimes the Device view is blank after starting App Sim Simulator mode in Unity Editor. The workaround is to
     * Stop and restart the simulator till the Device view is rendered, OR
     * Exit Unity Editor and select `No` when prompted whether to stop App Sim and then restart Unity Editor. Then you should see the App Sim is running and the Device view is rendered. 
 
