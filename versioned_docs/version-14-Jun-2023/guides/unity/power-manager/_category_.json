@@ -1,0 +1,9 @@
+{
+    "label": "Power Manager",
+    "position": 0,
+    "collapsed": true,
+    "link": {
+      "type": "doc",
+       "id": "power-manager-overview"
+      }
+  }

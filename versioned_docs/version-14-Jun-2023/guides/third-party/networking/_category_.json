@@ -1,0 +1,9 @@
+{
+    "label": "Photon Fusion",
+    "position": 3,
+    "collapsed": true,
+    "link": {
+      "type": "doc",
+       "id": "photon-fusion"
+      }
+  }
