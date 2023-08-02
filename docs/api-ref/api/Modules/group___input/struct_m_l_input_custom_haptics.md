@@ -20,7 +20,7 @@ A structure containing information about the Buzz command and/or pre-defined pat
 | Type           | Name           |
 | -------------- | -------------- |
 | [MLInputCustomHapticsType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype) | **[type](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#mlinputcustomhapticstype-type)**  |
-| union MLInputCustomHaptics::@14 | **[MLInputCustomHapticsPattern](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#union-mlinputcustomhaptics-14-mlinputcustomhapticspattern)**  |
+| union MLInputCustomHaptics::@15 | **[MLInputCustomHapticsPattern](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#union-mlinputcustomhaptics-15-mlinputcustomhapticspattern)**  |
 | uint32_t | **[duration_ms](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#uint32-t-duration-ms)**  |
 
 ## Detailed Description
@@ -62,10 +62,10 @@ Type of the pattern to be set.
 
 -----------
 
-### MLInputCustomHapticsPattern {#union-mlinputcustomhaptics-14-mlinputcustomhapticspattern}
+### MLInputCustomHapticsPattern {#union-mlinputcustomhaptics-15-mlinputcustomhapticspattern}
 
 ```cpp
-union MLInputCustomHaptics::@14 MLInputCustomHapticsPattern;
+union MLInputCustomHaptics::@15 MLInputCustomHapticsPattern;
 ```
 
 

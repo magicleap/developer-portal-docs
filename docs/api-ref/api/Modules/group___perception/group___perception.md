@@ -29,7 +29,7 @@ APIs for the Perception system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 26](/api-ref/api/Modules/group___perception/group___perception.md#enums-anonymous-enum-26)** <br></br> { <br></br>[MLResultAPIPrefix_Snapshot](/api-ref/api/Modules/group___perception/group___perception.md#enums-mlresultapiprefix-snapshot) = ( 0x87b8  << 16)<br></br>} |
+| enum | **[Anonymous Enum 27](/api-ref/api/Modules/group___perception/group___perception.md#enums-anonymous-enum-27)** <br></br> { <br></br>[MLResultAPIPrefix_Snapshot](/api-ref/api/Modules/group___perception/group___perception.md#enums-mlresultapiprefix-snapshot) = ( 0x87b8  << 16)<br></br>} |
 | enum | **[MLSnapshotResult](/api-ref/api/Modules/group___perception/group___perception.md#enums-mlsnapshotresult)** <br></br> { <br></br>[MLSnapshotResult_DerivativesNotCalculated](/api-ref/api/Modules/group___perception/group___perception.md#enums-mlsnapshotresult-derivativesnotcalculated) = MLResultAPIPrefix_Snapshot,<br></br> [MLSnapshotResult_Ensure32Bits](/api-ref/api/Modules/group___perception/group___perception.md#enums-mlsnapshotresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Functions
@@ -63,7 +63,7 @@ APIs for the Perception system.
 -----------
 ## Enums Documentation
 
-### Anonymous Enum 26 {#enums-anonymous-enum-26}
+### Anonymous Enum 27 {#enums-anonymous-enum-27}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

@@ -1010,6 +1010,10 @@ Global [MLCVCameraTrackingDestroy](/api-ref/api/Modules/group___c_v_camera/group
 
 *  None  
 
+Global [MLDepthCameraCapabilityFilterInit](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#void-mldepthcameracapabilityfilterinit)  ([MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) *inout_handle)
+
+*  None  
+
 Global [MLDepthCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameraconnect)  (const [MLDepthCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md) *settings, MLHandle *out_handle)
 
 *  com.magicleap.permission.DEPTH_CAMERA (protection level: dangerous)  
@@ -1018,7 +1022,15 @@ Global [MLDepthCameraDisconnect](/api-ref/api/Modules/group___pixel_sensors/grou
 
 *  None  
 
-Global [MLDepthCameraGetLatestDepthData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetlatestdepthdata)  (MLHandle handle, uint64_t timeout_ms, [MLDepthCameraData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_data.md) **out_data)
+Global [MLDepthCameraGetCapabilities](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetcapabilities)  (MLHandle handle, const [MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) *filter, [MLDepthCameraCapabilityList](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_list.md) *out_caps)
+
+*  None  
+
+Global [MLDepthCameraGetLatestDepthData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetlatestdepthdata)  (MLHandle handle, uint64_t timeout_ms, [MLDepthCameraData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_data.md) *out_data)
+
+*  None  
+
+Global [MLDepthCameraReleaseCapabilities](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcamerareleasecapabilities)  (MLHandle handle, [MLDepthCameraCapabilityList](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_list.md) *out_caps)
 
 *  None  
 
@@ -1083,6 +1095,34 @@ Global [MLEyeTrackingGetStateEx](/api-ref/api/Modules/group___eye_tracking/group
 *  None  
 
 Global [MLEyeTrackingGetStaticData](/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#mlresult-mleyetrackinggetstaticdata)  (MLHandle eye_tracker, [MLEyeTrackingStaticData](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md) *out_data)
+
+*  None  
+
+Global [MLFacialExpressionCreateClient](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressioncreateclient)  (const [MLFacialExpressionSettings](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_settings.md) *settings, MLHandle *out_handle)
+
+*  com.magicleap.permission.FACIAL_EXPRESSION (protection level: dangerous)  
+
+Global [MLFacialExpressionDestroyClient](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressiondestroyclient)  (MLHandle handle)
+
+*  None  
+
+Global [MLFacialExpressionEyeDataInit](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#void-mlfacialexpressioneyedatainit)  ([MLFacialExpressionEyeData](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_eye_data.md) *inout_eye_data)
+
+*  None  
+
+Global [MLFacialExpressionGetEyeData](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressiongeteyedata)  (MLHandle handle, [MLFacialExpressionEyeData](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_eye_data.md) *out_eye_data)
+
+*  None  
+
+Global [MLFacialExpressionGetResultString](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#const-char-mlfacialexpressiongetresultstring)  (MLResult result)
+
+*  None  
+
+Global [MLFacialExpressionSettingsInit](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#void-mlfacialexpressionsettingsinit)  ([MLFacialExpressionSettings](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_settings.md) *inout_settings)
+
+*  None  
+
+Global [MLFacialExpressionUpdateSettings](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressionupdatesettings)  (MLHandle handle, const [MLFacialExpressionSettings](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_settings.md) *settings)
 
 *  None  
 
@@ -2682,15 +2722,15 @@ Global [MLSpatialAnchorUpdate](/api-ref/api/Modules/group___magic_leap_spaces/gr
 
 *  None  
 
-Global [MLSystemNotificationManagerCreate](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagercreate)  (MLHandle *out_handle)
+Global [MLSystemNotificationManagerCreate](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md#mlresult-mlsystemnotificationmanagercreate)  (MLHandle *out_handle)
 
 *  com.magicleap.permission.SYSTEM_NOTIFICATION (protection level: normal)  
 
-Global [MLSystemNotificationManagerDestroy](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagerdestroy)  (MLHandle handle)
+Global [MLSystemNotificationManagerDestroy](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md#mlresult-mlsystemnotificationmanagerdestroy)  (MLHandle handle)
 
 *  None  
 
-Global [MLSystemNotificationManagerSetNotifications](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagersetnotifications)  (MLHandle handle, bool suppress)
+Global [MLSystemNotificationManagerSetNotifications](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md#mlresult-mlsystemnotificationmanagersetnotifications)  (MLHandle handle, bool suppress)
 
 *  None  
 

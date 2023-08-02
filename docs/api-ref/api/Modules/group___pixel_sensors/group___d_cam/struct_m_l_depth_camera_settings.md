@@ -1,6 +1,6 @@
 ---
 title: MLDepthCameraSettings
-summary: a structure to encapsulate the camera settings. 
+summary: structure to encapsulate the camera settings. 
 
 ---
 
@@ -10,7 +10,7 @@ summary: a structure to encapsulate the camera settings.
 
 
 
-A structure to encapsulate the camera settings.  [More...](#detailed-description)
+Structure to encapsulate the camera settings.  [More...](#detailed-description)
 
 
 `#include <ml_depth_camera.h>`
@@ -20,8 +20,8 @@ A structure to encapsulate the camera settings.  [More...](#detailed-description
 | Type           | Name           |
 | -------------- | -------------- |
 | uint32_t | **[version](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-version)**  |
-| uint32_t | **[flags](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-flags)**  |
-| uint32_t | **[mode](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-mode)** <br></br>Depth camera mode.  |
+| uint32_t | **[streams](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-streams)** <br></br>Depth camera stream.  |
+| [MLDepthCameraStreamConfig](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_stream_config.md)[MLDepthCameraFrameType_Count] | **[stream_configs](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#mldepthcamerastreamconfig-stream-configs)** <br></br>Controls for each of the depth camera streams.  |
 
 ## Detailed Description
 
@@ -29,15 +29,13 @@ A structure to encapsulate the camera settings.  [More...](#detailed-description
 struct MLDepthCameraSettings;
 ```
 
-A structure to encapsulate the camera settings. 
+Structure to encapsulate the camera settings. 
 
 This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#void-mldepthcamerasettingsinit) before use.
 
+These are supported configurations: 
+Streams Exposure limits [us] Frame rate [FPS] Long Range 50 - 1600 1, 5 Short Range 50 - 375 On 50Hz PLC: 5, 25, 50On 60Hz PLC: 5, 30, 60  Use [MLDepthCameraGetCapabilities](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetcapabilities) to get a list of available configurations. \note The system may not be able to service all the requested streams at any given time. This parameter is treated as a hint and data will be provided for the requested streams if available. \note The API only supports a single stream. In a future release support for multiple streams will be added. @par API Level:\n 29 
 
-
-
-**API Level:**
-  * 23
 
 
 
@@ -60,14 +58,15 @@ Version of this structure.
 
 -----------
 
-### flags {#uint32-t-flags}
+### streams {#uint32-t-streams}
 
 ```cpp
-uint32_t flags;
+uint32_t streams;
 ```
 
+Depth camera stream. 
 
-Flags to configure the depth data. 
+See [MLDepthCameraStream](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#enum-mldepthcamerastream) for more details. 
 
 
 
@@ -75,21 +74,23 @@ Flags to configure the depth data.
 
 -----------
 
-### mode {#uint32-t-mode}
+### stream_configs {#mldepthcamerastreamconfig-stream-configs}
 
 ```cpp
-uint32_t mode;
+MLDepthCameraStreamConfig[MLDepthCameraFrameType_Count] stream_configs;
 ```
 
-Depth camera mode. 
-
-See [MLDepthCameraMode](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#enum-mldepthcameramode) for more details.
+Controls for each of the depth camera streams. 
 
 
+| Type | Description |
+|--|--|
+| [MLDepthCameraStreamConfig](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_stream_config.md)[MLDepthCameraFrameType_Count] | Structure to encapsulate the camera config for a specific stream. [MLDepthCameraFrameType_Count] |
 
-:::note
-The system may not be able to service all the requested modes at any given time. This parameter is treated as a hint and data will be provided for the requested modes if available. 
-:::
+
+Only controls for streams enabled via [streams](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-streams) field will be read. Use [MLDepthCameraFrameType](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#enum-mldepthcameraframetype) enumeration for indexing. 
+
+
 
 
 

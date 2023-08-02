@@ -191,7 +191,7 @@ Marker tracker camera hint.
 
 The MLMarkerTrackerCameraHint enum values are used to hint to the camera that should be used. This is set in the [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) structure and this setting currently only applies to the aruco detectors.
 
-RGB camera has highger resolution than world cameras and are better suited for use cases where the target to be tracked is small or needs to be detected from far.
+RGB camera has higher resolution than world cameras and are better suited for use cases where the target to be tracked is small or needs to be detected from far.
 
 World cameras make use of multiple world cameras to improve accuracy and increase the FoV for detection.
 
