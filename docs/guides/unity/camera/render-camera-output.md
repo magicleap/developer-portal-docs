@@ -11,7 +11,7 @@ This section includes details on rendering the Magic Leap's camera output on a R
 
 ```csharp
 
-        public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+        public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCamera.Metadata metadataHandle)
         {
             if (output.Format == MLCamera.OutputFormat.JPEG)
             {
@@ -44,7 +44,7 @@ public class JPEGVisualizer : MonoBehaviour
     //JPEG Image Texture
     private Texture2D _imageTexture;
 
-    public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+    public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCamera.Metadata metadataHandle)
     {
         if (output.Format == MLCamera.OutputFormat.JPEG)
         {
@@ -88,7 +88,7 @@ public class RGBVisualizer : MonoBehaviour
     //RGBA Image Texture
     private Texture2D _rawVideoTextureRGBA;
 
-    public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+    public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCamera.Metadata metadataHandle)
     {
         if (output.Format == MLCamera.OutputFormat.RGBA_8888)
         {
@@ -145,6 +145,12 @@ Visualizing the YUV output is more difficult that RGBA or JPEG since each channe
 
 Similar to the RGBA Image, the conditional check in the `UpdateYUVTextureChannel()` function is in place because at times image width and stride are not the same because of memory layout optimizations.
 
+:::caution Prevent Stripping the YUV Shader
+
+Make sure that the `YUV_Camera_Shader` is not stripped from your project on build. This can be done by making sure that an object in your scene has a material that uses the `YUV_Camera_Shader` shader or by adding it to the `Project Settings / Player / Preloaded Assets`
+
+:::
+
 ```csharp showLineNumbers
 using System;
 using UnityEngine;
@@ -170,7 +176,7 @@ public class YUVVisualizer : MonoBehaviour
     private Material _yuvMaterial;
     private CommandBuffer _commandBuffer;
 
-    public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+    public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCamera.Metadata metadataHandle)
     {
         if (output.Format == MLCamera.OutputFormat.YUV_420_888)
         {
