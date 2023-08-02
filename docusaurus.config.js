@@ -232,6 +232,10 @@ module.exports = {
           {
             from:'/docs/guides/unity/networking/photon-fusion',
             to: '/docs/guides/third-party/networking/photon-fusion'
+          },
+          {
+            from:`/docs/guides/third-party/ptc`,
+            to: '/docs/guides/third-party/networking/photon-fusion'
           }
         ],
         
