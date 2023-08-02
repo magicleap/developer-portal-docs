@@ -41,6 +41,7 @@ title: Module Index
 * **group [Controller](/api-ref/api/Modules/group___controller/group___controller.md)** <br></br>APIs for the direct access to the Controller system. 
 * **group [Eye Calibration](/api-ref/api/Modules/group___eye_calibration/group___eye_calibration.md)** <br></br>APIs for querying the eye calibration state. 
 * **group [Eye Tracking](/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md)** <br></br>APIs for the Eye Tracking system. 
+* **group [Facial Expression](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md)** <br></br>APIs for facial expression. 
 * **group [Gaze Recognition](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md)** <br></br>APIs for the Gaze Recognition system. 
 * **group [Gesture Classification System](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md)** <br></br>APIs for the Gesture Classification system. 
 * **group [Graphics](/api-ref/api/Modules/group___graphics/group___graphics.md)** <br></br>The APIs for the graphics system. 
@@ -57,7 +58,6 @@ title: Module Index
 * **group [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)** <br></br>Defines Audio Channel Mask to describe the input/output posistion. Position implies, the location of a speaker or a microphone for recording or playback. 
 * **group [Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md)** <br></br>APIs for video and auido recording. 
 * **group [Meshing2](/api-ref/api/Modules/group___meshing2/group___meshing2.md)** <br></br>APIs for the Meshing system. 
-* **group [NotificationManager](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md)** <br></br>Systems Notification Manager allows toggling the system notifications. This API is not threadsafe. 
 * **group [Occlusion](/api-ref/api/Modules/group___occlusion/group___occlusion.md)** <br></br>APIs for the Occlusion system. \experimental This is an experimental API which may be modified or removed without any prior notice. 
 * **group [Perception](/api-ref/api/Modules/group___perception/group___perception.md)** <br></br>APIs for the Perception system. 
 * **group [Pixel Sensors](/api-ref/api/Modules/group___pixel_sensors/group___pixel_sensors.md)** <br></br>APIs to access pixel sensors data. 
@@ -67,7 +67,7 @@ title: Module Index
 * **group [Planes](/api-ref/api/Modules/group___planes/group___planes.md)** <br></br>APIs for the Planes system. 
 * **group [Platform](/api-ref/api/Modules/group___platform/group___platform.md)** <br></br>APIs for information regarding the platform. 
 * **group [Power Manager](/api-ref/api/Modules/group___power_manager/group___power_manager.md)** <br></br>Power Manager provides a set of power management APIs that allow applications to receive callbacks when the power state, properties or error conditions of components change, as well as APIs to get device components power state and properties, and to set certain component power states. 
-* **group [System Notification Manager](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md)** 
+* **group [System Notification Manager](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md)** <br></br>Systems Notification Manager allows toggling the system notifications. This API is not threadsafe. 
 * **group [Time](/api-ref/api/Modules/group___time/group___time.md)** <br></br>APIs for the MLTime. 
 * **group [WebView](/api-ref/api/Modules/group___web_view/group___web_view.md)** <br></br>APIs for the WebView component. 
 * **group [ZI](/api-ref/api/Modules/group___z_i/group___z_i.md)** <br></br>APIs for the Zero Iteration on Host OS Platforms. 

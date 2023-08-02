@@ -70,7 +70,7 @@ uint16_t start_hz;
 ```
 
 
-Start frequency of the buzz command (0 - 1250). 
+Start frequency of the buzz command (1 - 1250). 
 
 
 
@@ -85,7 +85,7 @@ uint16_t end_hz;
 ```
 
 
-End frequency of the buzz command (0 - 1250). 
+End frequency of the buzz command (1 - 1250). 
 
 
 
@@ -115,7 +115,7 @@ uint8_t amp;
 ```
 
 
-Amplitude of the buzz command, as a percentage (0 - 100). 
+Amplitude of the buzz command, as a percentage (1 - 100). 
 
 
 
