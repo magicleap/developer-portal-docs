@@ -16,7 +16,7 @@ title: CaptureStreamConfig
 
 ## Public Methods
 
-### [CaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureStreamConfig.md) Create {#capturestreamconfig-create}
+### [CaptureStreamConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureStreamConfig.md) Create {#capturestreamconfig-create}
 
 ```csharp
 public static CaptureStreamConfig Create(
@@ -31,9 +31,9 @@ public static CaptureStreamConfig Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) |streamCapability||
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format |
-| [MLNativeSurface](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md) |recorderSurface||
+| [StreamCapability](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) |streamCapability||
+| [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format |
+| [MLNativeSurface](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md) |recorderSurface||
 
 
 
@@ -69,7 +69,7 @@ public CaptureType CaptureType;
 
 | Type | Description  | 
 |--|--|
-| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
+| [CaptureType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -106,7 +106,7 @@ public OutputFormat OutputFormat;
 
 | Type | Description  | 
 |--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
+| [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
 
 
 

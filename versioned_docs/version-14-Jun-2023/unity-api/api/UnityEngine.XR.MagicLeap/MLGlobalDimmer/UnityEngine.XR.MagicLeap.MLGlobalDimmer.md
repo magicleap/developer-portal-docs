@@ -8,7 +8,7 @@ title: MLGlobalDimmer
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
@@ -19,7 +19,7 @@ title: MLGlobalDimmer
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
 Set the manual value for the global dimmer Updates are reflected in the next client submitted frame. Global dimmer update through this func is applicable only if auto dimmer is disabled. Any smooth ramping from auto dimmer to application final dimmer should be handled by the application itself. Since the dimmer value set through this func is reflected only in the next client submitted frame, the smooth ramp stepping interval is equal to current application frame rate 
 

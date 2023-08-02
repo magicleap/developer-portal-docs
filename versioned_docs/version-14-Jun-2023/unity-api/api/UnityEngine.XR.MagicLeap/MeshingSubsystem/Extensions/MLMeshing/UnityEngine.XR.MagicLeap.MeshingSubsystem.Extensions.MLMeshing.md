@@ -16,7 +16,7 @@ title: MLMeshing
 
 ## Public Methods
 
-### delegate [MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest.md) [] OnMeshBlockRequests {#delegate-onmeshblockrequests}
+### delegate [MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest.md) [] OnMeshBlockRequests {#delegate-onmeshblockrequests}
 
 ```csharp
 public delegate MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest [] OnMeshBlockRequests(
@@ -29,7 +29,7 @@ public delegate MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest [] OnMesh
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo.md) [] |blockInfos|Representation of a mesh block. |
+| [MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo.md) [] |blockInfos|Representation of a mesh block. |
 
 
 

@@ -28,7 +28,7 @@ public BatteryInfo BatteryInfo;
 
 | Type | Description  | 
 |--|--|
-| [BatteryInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-batteryinfo) | Battery info/warning codes.  |
+| [BatteryInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-batteryinfo) | Battery info/warning codes.  |
 
 
 
@@ -65,7 +65,7 @@ public ChargingState ChargingState;
 
 | Type | Description  | 
 |--|--|
-| [ChargingState](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-chargingstate) | Power Manager charging states.  |
+| [ChargingState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-chargingstate) | Power Manager charging states.  |
 
 
 
@@ -85,7 +85,7 @@ public ConnectionState ConnectionState;
 
 | Type | Description  | 
 |--|--|
-| [ConnectionState](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-connectionstate) | Connection state of the component.  |
+| [ConnectionState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-connectionstate) | Connection state of the component.  |
 
 
 

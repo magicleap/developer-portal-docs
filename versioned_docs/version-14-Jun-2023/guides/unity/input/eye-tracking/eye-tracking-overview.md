@@ -21,10 +21,10 @@ This features requires the `EYE_TRACKING` permission to be **requested** at runt
 
 This category includes the following articles:
 
-- [API Overview](/docs/guides/unity/input/eye-tracking/eye-tracking-api-overview.md) - a summary of terminology and how to get started using the Magic Leap 2 Controller Input API.
-- [Magic Leap Specific Eye Tracking Data](/docs/guides/unity/input/eye-tracking/eye-tracking-subsystem-extension.md) - demonstrates how to get and read the Magic Leap 2 specific eye tracking data using the `EyeTrackingState` struct, such as the confidence of the fixation point.
-- [Generic Eye Tracking Data](/docs/guides/unity/input/eye-tracking/unity-input-system-eye-tracking-input.md) - includes information and an example on how to read eye tracking input using the generic `UnityEngine.InputSystem.XR.Eyes` struct, such as fixation point.
-- [Tracked Pose Driver](/docs/guides/unity/input/eye-tracking/tracked-pose-driver-eye-tracking.md) - A guide on setting up Unity's Tracked Pose Driver to mirror the eye input position and rotation.
-- [Migration Guide](/docs/guides/unity/input/eye-tracking/eye-tracking-porting-guide.md) - Includes details on upgrading your Magic Leap 1 controller API to the Magic Leap 2.
+- [API Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/eye-tracking/eye-tracking-api-overview.md) - a summary of terminology and how to get started using the Magic Leap 2 Controller Input API.
+- [Magic Leap Specific Eye Tracking Data](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/eye-tracking/eye-tracking-subsystem-extension.md) - demonstrates how to get and read the Magic Leap 2 specific eye tracking data using the `EyeTrackingState` struct, such as the confidence of the fixation point.
+- [Generic Eye Tracking Data](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/eye-tracking/unity-input-system-eye-tracking-input.md) - includes information and an example on how to read eye tracking input using the generic `UnityEngine.InputSystem.XR.Eyes` struct, such as fixation point.
+- [Tracked Pose Driver](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/eye-tracking/tracked-pose-driver-eye-tracking.md) - A guide on setting up Unity's Tracked Pose Driver to mirror the eye input position and rotation.
+- [Migration Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/eye-tracking/eye-tracking-porting-guide.md) - Includes details on upgrading your Magic Leap 1 controller API to the Magic Leap 2.
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

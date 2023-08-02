@@ -9,7 +9,7 @@ summary: a structure containing information needed to import magic leap space. t
 
 
 
-A structure containing information needed to import Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceImportInfoInit before use.   
+A structure containing information needed to import Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceImportInfoInit before use.   
 
 
 
@@ -17,7 +17,7 @@ A structure containing information needed to import Magic Leap [Space](/unity-ap
 
 ## Public Methods
 
-### [SpaceImportInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceImportInfo.md) Create {#spaceimportinfo-create}
+### [SpaceImportInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceImportInfo.md) Create {#spaceimportinfo-create}
 
 Initialize default values for #SpaceImportInfo. 
 

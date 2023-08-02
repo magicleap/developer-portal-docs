@@ -46,7 +46,7 @@ public readonly TrackingError Error;
 
 | Type | Description  | 
 |--|--|
-| readonly [TrackingError](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-trackingerror) | A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
+| readonly [TrackingError](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-trackingerror) | A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
 
 
 
@@ -66,7 +66,7 @@ public readonly TrackingMode Mode;
 
 | Type | Description  | 
 |--|--|
-| readonly [TrackingMode](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-trackingmode) | A set of possible tracking modes the Head Tracking system can be in.  |
+| readonly [TrackingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-trackingmode) | A set of possible tracking modes the Head Tracking system can be in.  |
 
 
 

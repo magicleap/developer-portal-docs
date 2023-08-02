@@ -11,7 +11,7 @@ title: StreamingClip
 
 
 
-Inherits from: <br></br>[Clip](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.Clip.md),<br></br>IDisposable
+Inherits from: <br></br>[Clip](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.Clip.md),<br></br>IDisposable
 
 
 
@@ -50,7 +50,7 @@ public StreamingClip(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MicCaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
+| [MicCaptureType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
 | int |lengthSec||
 | int |frequency||
 
@@ -77,7 +77,7 @@ public StreamingClip(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MicCaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
+| [MicCaptureType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
 | uint |samplesLengthInSeconds||
 | uint |sampleRate||
 | uint |channels||
@@ -111,7 +111,7 @@ protected virtual override void OnReceiveSamples(
 
 
 
-**Reimplements**: [OnReceiveSamples](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.Clip.md#abstract-void-onreceivesamples)
+**Reimplements**: [OnReceiveSamples](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.Clip.md#abstract-void-onreceivesamples)
 
 
 

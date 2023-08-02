@@ -17,7 +17,7 @@ Point the controller to the WebView window to interact with the browser.
 ## Project Setup
 
 :::tip
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md). The WebView scene is located under `Assets/MagicLeap/Examples/Scenes/WebView.unity`.
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md). The WebView scene is located under `Assets/MagicLeap/Examples/Scenes/WebView.unity`.
 :::
 
 ### Requirements
@@ -45,11 +45,11 @@ The example Web View scene has the following layout. If you are starting from sc
 
 ### XR Rig
 
-Like all other example scenes, this scene utilizes the XR Rig prefab which is available within the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md). It provides both the Main Camera and Controller GameObjects (among other important AR Session components). The controller is the primary input for users interacting with the screen.
+Like all other example scenes, this scene utilizes the XR Rig prefab which is available within the [Magic Leap Unity SDK Package](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md). It provides both the Main Camera and Controller GameObjects (among other important AR Session components). The controller is the primary input for users interacting with the screen.
 
 ### VirtualKeyboard
 
-The **VirtualKeyboard prefab** is used to provide text input to both the AddressBar Input Field as well as for interacting with text fields within the WebView screen itself. The same prefab is used for both purposes and is available within the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md). Make sure that the VirtualKeyboard GameObject starts **disabled** in the project as it should only be enabled when an Input Field is selected or when the WebView indicates that the webpage wants to make the keyboard visible.
+The **VirtualKeyboard prefab** is used to provide text input to both the AddressBar Input Field as well as for interacting with text fields within the WebView screen itself. The same prefab is used for both purposes and is available within the [Magic Leap Unity SDK Package](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md). Make sure that the VirtualKeyboard GameObject starts **disabled** in the project as it should only be enabled when an Input Field is selected or when the WebView indicates that the webpage wants to make the keyboard visible.
 
 ### WebViewExample
 
@@ -65,13 +65,13 @@ The **WebViewScreen** is the core component of the **WebView System**. It is whe
 
 <Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-c-screen.png")} >WebViewScreen GameObject and Components</Image>
 
-Additionally, there is a **WebViewScreenBehavior script** attached to this object, which provides the necessary functionality to allow rendering and interaction within the Web View screen. This class is included in the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md) to make it easier to setup a functioning Web View screen. It is configured as follows:
+Additionally, there is a **WebViewScreenBehavior script** attached to this object, which provides the necessary functionality to allow rendering and interaction within the Web View screen. This class is included in the [Magic Leap Unity SDK Package](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md) to make it easier to setup a functioning Web View screen. It is configured as follows:
 
 <Image url= {require("/img/unity/example-projects/sdk-example-scenes/webview/webview-d-screen-behavior.png")} >WebViewScreen Behavior Script Component</Image>
 
 The **Web View Width/Height** define the resolution of the texture in which the web page content will be rendered. The **Web View Mesh Renderer** should point to the WebViewScreen itself, as this is the mesh that it will supply the rendered texture to.
 
-The **Point Ray Transform** should reference the controller prefab you are using in the scene. Here we are using the Game Controller located under the XR Rig prefab provided by the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md).
+The **Point Ray Transform** should reference the controller prefab you are using in the scene. Here we are using the Game Controller located under the XR Rig prefab provided by the [Magic Leap Unity SDK Package](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md).
 
 **Scrolling Mode** defines the scrolling behavior of the Web View content and provides two options currently.
 
@@ -148,7 +148,7 @@ The Web View source code is broken into three separate classes that are useful t
 
 ### MLWebView.cs
 
-The MLWebView.cs file is included in the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md) and is the primary class for wrapping the `ml_web_view.h` api header from the Magic Leap C SDK. This follows the `MLAutoAPISingleton` model so only one instance can be accessed. All API functions are static and are intended to be called on the class itself.
+The MLWebView.cs file is included in the [Magic Leap Unity SDK Package](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md) and is the primary class for wrapping the `ml_web_view.h` api header from the Magic Leap C SDK. This follows the `MLAutoAPISingleton` model so only one instance can be accessed. All API functions are static and are intended to be called on the class itself.
 
 :::info
 Currently the `MLWebView` class is an API singleton. As a short term solution, the web view handle that the CAPI header returns is passed to the WebViewTabBehavior objects and those then pass back the handle to the WebViewScreenBehavior. We would like to refactor this a bit to make MLWebView a non-singleton and wrap up the handle management within. When that change happens, the usage pattern of `MLWebView` will change.
@@ -194,7 +194,7 @@ There are other status functions to get other useful information, as well as fun
 
 ### MLWebViewScreenBehavior.cs
 
-The WebViewScreenBehavior.cs file is included in the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md). It is derived from Monobehavior and as such is intended to be attached to a GameObject in the scene. This was covered in the [Scene Layout](#scene-layout) section above. It is intended to be used as is without extensions, we will cover some of the implementation details here to provide clarity on its function.
+The WebViewScreenBehavior.cs file is included in the [Magic Leap Unity SDK Package](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md). It is derived from Monobehavior and as such is intended to be attached to a GameObject in the scene. This was covered in the [Scene Layout](#scene-layout) section above. It is intended to be used as is without extensions, we will cover some of the implementation details here to provide clarity on its function.
 
 The WebViewScreenBehavior has a `CreateWebViewWindow` function that handles **creating and initializing the necessary components** for the web view screen, including the `YcbcrRenderer` of the `MLWebView` class. It is called by the WebViewExample code to **start the web view service**. Its implementation is as follows:
 

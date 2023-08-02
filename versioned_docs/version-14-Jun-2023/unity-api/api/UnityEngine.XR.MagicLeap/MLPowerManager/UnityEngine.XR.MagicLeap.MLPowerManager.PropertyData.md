@@ -29,7 +29,7 @@ public ComponentProperty [] Properties;
 
 | Type | Description  | 
 |--|--|
-| [ComponentProperty](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.ComponentProperty.md) [] | A structure to encapsulate the data for each #MLPowerManagerPropertyType.  |
+| [ComponentProperty](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.ComponentProperty.md) [] | A structure to encapsulate the data for each #MLPowerManagerPropertyType.  |
 
 
 

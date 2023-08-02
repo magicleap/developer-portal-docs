@@ -28,7 +28,7 @@ import MacOSDependencies from './_macos_dependencies.md';
 import WindowsDependencies from './_windows_dependencies.md';
 import RegisterDevice from './_register_device.md';
 
-This type of deployment is appropriate for any edge computing, on-premises, or any other deployment strategy that does not involve [Google Cloud](/docs/guides/arcloud/arcloud-deployment-gcp) or [AWS](/docs/guides/arcloud/arcloud-deployment-aws).
+This type of deployment is appropriate for any edge computing, on-premises, or any other deployment strategy that does not involve [Google Cloud](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/arcloud/arcloud-deployment-gcp) or [AWS](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/arcloud/arcloud-deployment-aws).
 
 <LinuxNotice />
 

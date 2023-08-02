@@ -6,11 +6,11 @@ summary: a structure containing list of mlspace. this structure must be initiali
 
 # MLSpaceList
 
-**Module:** **[Magic Leap Spaces](/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)** **/** **[Space](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md)**
+**Module:** **[Magic Leap Spaces](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)** **/** **[Space](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md)**
 
 
 
-A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use.  [More...](#detailed-description)
+A structure containing list of [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use.  [More...](#detailed-description)
 
 
 `#include <ml_space.h>`
@@ -19,9 +19,9 @@ A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md#uint32-t-version)**  |
-| uint32_t | **[space_count](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md#uint32-t-space-count)**  |
-| [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * | **[spaces](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md#mlspace-spaces)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md#uint32-t-version)**  |
+| uint32_t | **[space_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md#uint32-t-space-count)**  |
+| [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * | **[spaces](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md#mlspace-spaces)**  |
 
 ## Detailed Description
 
@@ -29,7 +29,7 @@ A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap
 struct MLSpaceList;
 ```
 
-A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use. 
+A structure containing list of [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use. 
 
 
 
@@ -83,7 +83,7 @@ MLSpace * spaces;
 
 | Type | Description |
 |--|--|
-| [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * | A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  |
+| [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * | A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  |
 
 
 List of Magic Leap Spaces. 

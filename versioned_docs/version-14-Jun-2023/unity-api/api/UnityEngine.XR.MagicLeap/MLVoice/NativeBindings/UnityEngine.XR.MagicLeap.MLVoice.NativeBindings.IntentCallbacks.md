@@ -9,7 +9,7 @@ summary: a structure containing callbacks for voice intent events. the final par
 
 
 
-A structure containing callbacks for voice intent events. The final parameter to all the callbacks is a IntPtr, which will point to whatever payload data the user provides in [MLVoiceIntentSetCallbacks()](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md#mlresultcode-mlvoiceintentsetcallbacks). Individual callbacks which are not required by the client can be NULL.   [More...](#detailed-description)  
+A structure containing callbacks for voice intent events. The final parameter to all the callbacks is a IntPtr, which will point to whatever payload data the user provides in [MLVoiceIntentSetCallbacks()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md#mlresultcode-mlvoiceintentsetcallbacks). Individual callbacks which are not required by the client can be NULL.   [More...](#detailed-description)  
 
 
 
@@ -23,7 +23,7 @@ public struct IntentCallbacks;
 
 **Details**
 
-This structure must be initialized by calling [IntentCallbacks.Create()](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md#intentcallbacks-create) before use. 
+This structure must be initialized by calling [IntentCallbacks.Create()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md#intentcallbacks-create) before use. 
 
 
 
@@ -35,9 +35,9 @@ This structure must be initialized by calling [IntentCallbacks.Create()](/unity-
 
 ## Public Methods
 
-### [IntentCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md) Create {#intentcallbacks-create}
+### [IntentCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md) Create {#intentcallbacks-create}
 
-Creates an initialized [IntentCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md) object. 
+Creates an initialized [IntentCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md) object. 
 
 ```csharp
 public static IntentCallbacks Create()
@@ -48,7 +48,7 @@ public static IntentCallbacks Create()
 
 
 
-**Returns**: An initialized [IntentCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md) object.
+**Returns**: An initialized [IntentCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentCallbacks.md) object.
 
 
 
@@ -58,7 +58,7 @@ public static IntentCallbacks Create()
 
 ### OnEvent {#onvoiceeventdelegate-onevent}
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnVoiceEvent. 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnVoiceEvent. 
 
 ```csharp
 
@@ -68,7 +68,7 @@ public OnVoiceEventDelegate OnEvent;
 
 | Type | Description  | 
 |--|--|
-| [OnVoiceEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md#delegate-void-onvoiceeventdelegate) | This callback will be invoked whenever a voice intent event is detected.  |
+| [OnVoiceEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md#delegate-void-onvoiceeventdelegate) | This callback will be invoked whenever a voice intent event is detected.  |
 
 
 

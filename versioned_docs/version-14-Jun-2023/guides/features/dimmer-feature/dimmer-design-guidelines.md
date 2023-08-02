@@ -67,7 +67,7 @@ When head-relative content is placed farther away from the user, the mask and co
 
 ## Creating a Dimmer Mask
 
-To use the Segmented Dimmer, you’ll apply a mask that matches the size and shape of your content. For step-by-step instructions on how to apply and adjust Segmented Dimming Masks, follow our [Segmented Dimming in Unity guide](/docs/guides/unity/display/unity-segmented-dimming.md).
+To use the Segmented Dimmer, you’ll apply a mask that matches the size and shape of your content. For step-by-step instructions on how to apply and adjust Segmented Dimming Masks, follow our [Segmented Dimming in Unity guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/display/unity-segmented-dimming.md).
 
 :::info Note
 The Segmented Dimmer panel is not for use with highly-detailed content as its resolution is not currently high enough to create parity with virtual content. Rapid head movement causes separation between content and its mask, and may cause flickering and smeared effects.

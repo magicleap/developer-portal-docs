@@ -9,7 +9,7 @@ summary: displays dialog box at build time about incorrect color space setting.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap/MagicLeap.md) 
 
 
 Displays Dialog box at build time about incorrect color space setting.   

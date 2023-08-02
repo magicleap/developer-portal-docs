@@ -5,7 +5,7 @@ title: MLMediaExtractorDRMSchemeInitData
 
 # MLMediaExtractorDRMSchemeInitData
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLMediaExtractorDRMSchemeInitData
 
 | Type           | Name           |
 | -------------- | -------------- |
-| char * | **[mime_type](/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md#char-mime-type)**  |
-| size_t | **[size](/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md#size-t-size)**  |
-| uint8_t * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md#uint8-t-data)**  |
+| char * | **[mime_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md#char-mime-type)**  |
+| size_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md#size-t-size)**  |
+| uint8_t * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_extractor_d_r_m_scheme_init_data.md#uint8-t-data)**  |
 
 ## Detailed Description
 

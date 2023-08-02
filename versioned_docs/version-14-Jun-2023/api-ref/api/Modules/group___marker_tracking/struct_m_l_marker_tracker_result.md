@@ -6,7 +6,7 @@ summary: represents the result for a single marker.
 
 # MLMarkerTrackerResult
 
-**Module:** **[Fiducial Marker Tracking](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
+**Module:** **[Fiducial Marker Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
 
 
 
@@ -19,11 +19,11 @@ Represents the result for a single marker.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMarkerTrackerDecodedData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_data.md) | **[decoded_data](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#mlmarkertrackerdecodeddata-decoded-data)** <br></br>The data which was encoded in the marker.  |
-| [MLMarkerTrackerDetectorType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype) | **[detector_type](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#mlmarkertrackerdetectortype-detector-type)** <br></br>The detector type that created this result.  |
-| bool | **[valid_pose](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#bool-valid-pose)** <br></br>This indicates if coord_frame_marker holds a valid pose.  |
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[coord_frame_marker](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#mlcoordinateframeuid-coord-frame-marker)** <br></br>[MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) of the marker.  |
-| float | **[reprojection_err](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#float-reprojection-err)** <br></br>The reprojection error of this marker detection in meters.  |
+| [MLMarkerTrackerDecodedData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_data.md) | **[decoded_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#mlmarkertrackerdecodeddata-decoded-data)** <br></br>The data which was encoded in the marker.  |
+| [MLMarkerTrackerDetectorType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype) | **[detector_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#mlmarkertrackerdetectortype-detector-type)** <br></br>The detector type that created this result.  |
+| bool | **[valid_pose](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#bool-valid-pose)** <br></br>This indicates if coord_frame_marker holds a valid pose.  |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[coord_frame_marker](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#mlcoordinateframeuid-coord-frame-marker)** <br></br>[MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) of the marker.  |
+| float | **[reprojection_err](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_result.md#float-reprojection-err)** <br></br>The reprojection error of this marker detection in meters.  |
 
 ## Detailed Description
 
@@ -58,7 +58,7 @@ The data which was encoded in the marker.
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerDecodedData](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_data.md) | Represents the decoded data.  |
+| [MLMarkerTrackerDecodedData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_data.md) | Represents the decoded data.  |
 
 
 
@@ -78,7 +78,7 @@ The detector type that created this result.
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerDetectorType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype) | Represents the different detector types supported by the API.  |
+| [MLMarkerTrackerDetectorType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerdetectortype) | Represents the different detector types supported by the API.  |
 
 
 
@@ -109,9 +109,9 @@ If false do not use coord_frame_marker.
 MLCoordinateFrameUID coord_frame_marker;
 ```
 
-[MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) of the marker. 
+[MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) of the marker. 
 
-When valid_pose is true, this can be passed to the [MLSnapshotGetTransform()](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransform) function to get the 6 DOF pose of the marker. 
+When valid_pose is true, this can be passed to the [MLSnapshotGetTransform()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgettransform) function to get the 6 DOF pose of the marker. 
 
 
 

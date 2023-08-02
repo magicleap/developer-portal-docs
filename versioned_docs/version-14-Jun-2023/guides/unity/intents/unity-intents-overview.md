@@ -13,7 +13,7 @@ Unity developers can use intents inside their applications to open external acti
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-To learn more about intents, including Magic Leap specific intents, see the [Intents Overview](/docs/guides/features/android-intents-overview.md) page or [Android's Intents Documentation](https://developer.android.com/guide/components/intents-filters).
+To learn more about intents, including Magic Leap specific intents, see the [Intents Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/android-intents-overview.md) page or [Android's Intents Documentation](https://developer.android.com/guide/components/intents-filters).
 
 Magic Leap also includes an API to open Magic Leap System Settings from inside your application. The `UnityEngine.XR.MagicLeap.SettingsIntentsLauncher` is pre-configured to allow developers to open the device's Display Settings, Voice Input settings, and AR Cloud Settings using a single line of code. Additional intents can be launched by passing the Intent Action ID.
 

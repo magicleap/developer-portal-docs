@@ -5,7 +5,7 @@ title: MLHeadTrackingStaticData
 
 # MLHeadTrackingStaticData
 
-**Module:** **[Head Tracking](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md)**
+**Module:** **[Head Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md)**
 
 
 
@@ -18,7 +18,7 @@ title: MLHeadTrackingStaticData
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[coord_frame_head](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md#mlcoordinateframeuid-coord-frame-head)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[coord_frame_head](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md#mlcoordinateframeuid-coord-frame-head)**  |
 
 ## Detailed Description
 
@@ -27,7 +27,7 @@ struct MLHeadTrackingStaticData;
 ```
 
 
-Static information about a Head Tracker. Populate this structure with [MLHeadTrackingGetStaticData()](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstaticdata). 
+Static information about a Head Tracker. Populate this structure with [MLHeadTrackingGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstaticdata). 
 
 
 

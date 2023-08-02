@@ -6,7 +6,7 @@ summary: cea708 caption pen location.
 
 # MLCea708CaptionPenLocation
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ Cea708 Caption Pen Location.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int32_t | **[row](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md#int32-t-row)**  |
-| int32_t | **[column](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md#int32-t-column)**  |
+| int32_t | **[row](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md#int32-t-row)**  |
+| int32_t | **[column](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md#int32-t-column)**  |
 
 ## Detailed Description
 

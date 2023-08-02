@@ -6,7 +6,7 @@ summary: or pre-defined pattern to be played.
 
 # MLInputCustomHaptics
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure containing information about the Buzz command and/or pre-defined pat
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLInputCustomHapticsType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype) | **[type](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#mlinputcustomhapticstype-type)**  |
-| union MLInputCustomHaptics::@14 | **[MLInputCustomHapticsPattern](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#union-mlinputcustomhaptics-14-mlinputcustomhapticspattern)**  |
-| uint32_t | **[duration_ms](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#uint32-t-duration-ms)**  |
+| [MLInputCustomHapticsType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype) | **[type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#mlinputcustomhapticstype-type)**  |
+| union MLInputCustomHaptics::@14 | **[MLInputCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#union-mlinputcustomhaptics-14-mlinputcustomhapticspattern)**  |
+| uint32_t | **[duration_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md#uint32-t-duration-ms)**  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLInputCustomHaptics;
 
 A structure containing information about the Buzz command and/or pre-defined pattern to be played. 
 
-A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. A [MLInputCustomHapticsType](/api-ref/api/Modules/group___input/group___input.md#enum-mlinputcustomhapticstype) should be set while initializing the struct to indicate whether the to-be set pattern is a buzz command or a pre-defined pattern.
+A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. A [MLInputCustomHapticsType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enum-mlinputcustomhapticstype) should be set while initializing the struct to indicate whether the to-be set pattern is a buzz command or a pre-defined pattern.
 
 The #duration will set the time for which a pattern is played:
 

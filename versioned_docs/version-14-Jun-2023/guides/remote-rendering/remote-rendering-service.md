@@ -17,9 +17,9 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 
 ## Prerequisites
 - **Enterprise** or **Developer Pro license**
-- [Install the Magic Leap Hub](/docs/guides/getting-started/install-the-tools#install-magic-leap-hub)
-- [Grant Developer Permissions](/docs/guides/getting-started/granting-permissions)
-- [Install the latest OS on Magic Leap 2 (minimum 1.1.0)](/docs/guides/device/updating-the-os/device-flashing-guide#download-the-latest-os-build)
+- [Install the Magic Leap Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools#install-magic-leap-hub)
+- [Grant Developer Permissions](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/granting-permissions)
+- [Install the latest OS on Magic Leap 2 (minimum 1.1.0)](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide#download-the-latest-os-build)
 
 ## System Requirements
 

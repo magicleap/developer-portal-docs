@@ -6,7 +6,7 @@ summary: a structure containing information about the connected devices.
 
 # MLInputConnectedDevicesList
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure containing information about the connected devices.  [More...](#deta
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md#uint32-t-version)**  |
-| uint32_t | **[connected_controller_count](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md#uint32-t-connected-controller-count)**  |
-| const uint8_t * | **[connected_controller_ids](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md#const-uint8-t-connected-controller-ids)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md#uint32-t-version)**  |
+| uint32_t | **[connected_controller_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md#uint32-t-connected-controller-count)**  |
+| const uint8_t * | **[connected_controller_ids](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md#const-uint8-t-connected-controller-ids)**  |
 
 ## Detailed Description
 

@@ -6,7 +6,7 @@ summary: to be passed to populatedepth.
 
 # MLMeshingDepthBufferInfo
 
-**Module:** **[Graphics Utilities](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md)**
+**Module:** **[Graphics Utilities](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md)**
 
 
 
@@ -19,13 +19,13 @@ To be passed to PopulateDepth.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[flags](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#uint32-t-flags)**  |
-| uint32_t | **[buffer_count](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#uint32-t-buffer-count)**  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[color_id](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlhandle-color-id)** <br></br>The handle (ID) of the color surface to render to for the buffer. Expects handle of a Texture2d Array [DEBUG_ONLY].  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[depth_id](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlhandle-depth-id)**  |
-| [MLRectf](/api-ref/api/Modules/group___common/struct_m_l_rectf.md) | **[viewport](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlrectf-viewport)**  |
-| [MLGraphicsProjectionType](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype) | **[projection_type](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlgraphicsprojectiontype-projection-type)**  |
-| [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)[MLGraphicsVirtualCameraName_Count] | **[buffers](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlmeshingvirtualcamerabufferinfo-buffers)**  |
+| uint32_t | **[flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#uint32-t-flags)**  |
+| uint32_t | **[buffer_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#uint32-t-buffer-count)**  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[color_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlhandle-color-id)** <br></br>The handle (ID) of the color surface to render to for the buffer. Expects handle of a Texture2d Array [DEBUG_ONLY].  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[depth_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlhandle-depth-id)**  |
+| [MLRectf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_rectf.md) | **[viewport](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlrectf-viewport)**  |
+| [MLGraphicsProjectionType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype) | **[projection_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlgraphicsprojectiontype-projection-type)**  |
+| [MLMeshingVirtualCameraBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)[MLGraphicsVirtualCameraName_Count] | **[buffers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_depth_buffer_info.md#mlmeshingvirtualcamerabufferinfo-buffers)**  |
 
 ## Detailed Description
 
@@ -87,7 +87,7 @@ The handle (ID) of the color surface to render to for the buffer. Expects handle
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 
@@ -106,7 +106,7 @@ MLHandle depth_id;
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 The handle (ID) of the depth surface to render to for the buffer. Expects handle of a Texture2d Array. 
@@ -142,7 +142,7 @@ MLGraphicsProjectionType projection_type;
 
 | Type | Description |
 |--|--|
-| [MLGraphicsProjectionType](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype) | Defines the requested projection matrix model for rendering.  |
+| [MLGraphicsProjectionType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype) | Defines the requested projection matrix model for rendering.  |
 
 
 Controls use of far_clip and directionality of z in projection model. 
@@ -163,7 +163,7 @@ MLMeshingVirtualCameraBufferInfo[MLGraphicsVirtualCameraName_Count] buffers;
 
 | Type | Description |
 |--|--|
-| [MLMeshingVirtualCameraBufferInfo](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)[MLGraphicsVirtualCameraName_Count] | Per virtual camera information needed to render depth. [MLGraphicsVirtualCameraName_Count] |
+| [MLMeshingVirtualCameraBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_meshing_virtual_camera_buffer_info.md)[MLGraphicsVirtualCameraName_Count] | Per virtual camera information needed to render depth. [MLGraphicsVirtualCameraName_Count] |
 
 
 The array of buffers to render to for the frame. 

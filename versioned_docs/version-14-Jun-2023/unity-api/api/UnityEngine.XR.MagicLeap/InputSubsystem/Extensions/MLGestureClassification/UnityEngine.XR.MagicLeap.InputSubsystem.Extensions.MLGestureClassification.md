@@ -57,7 +57,7 @@ public static bool TryGetFingerAngles(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out [FingerAngleDeg](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
+| out [FingerAngleDeg](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerAngleDeg.md) |allFingerAngles|The Angles between two fingers in degrees. |
 
 
 
@@ -83,7 +83,7 @@ public static bool TryGetFingerState(
 |--|--|--|
 | InputDevice |handDevice||
 | FingerType |finger||
-| out [FingerState](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerState.md) |fingerStateData|Gesture classification state of a single finger. |
+| out [FingerState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.FingerState.md) |fingerStateData|Gesture classification state of a single finger. |
 
 
 

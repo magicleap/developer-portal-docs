@@ -46,7 +46,7 @@ public FramePackingFlags Flags;
 
 | Type | Description  | 
 |--|--|
-| [FramePackingFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-framepackingflags) | Frame Packing Arrangement flags for stereoscopic videos.  |
+| [FramePackingFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-framepackingflags) | Frame Packing Arrangement flags for stereoscopic videos.  |
 
 
 
@@ -66,7 +66,7 @@ public FramePackingMode Mode;
 
 | Type | Description  | 
 |--|--|
-| [FramePackingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-framepackingmode) | Frame Packing Arrangement for stereoscopic videos.  |
+| [FramePackingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-framepackingmode) | Frame Packing Arrangement for stereoscopic videos.  |
 
 
 

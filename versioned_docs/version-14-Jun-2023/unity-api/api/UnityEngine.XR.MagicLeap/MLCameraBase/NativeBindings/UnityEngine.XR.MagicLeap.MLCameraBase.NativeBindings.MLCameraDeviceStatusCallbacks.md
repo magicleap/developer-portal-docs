@@ -17,7 +17,7 @@ Device status callbacks to be implemented by client to receive device status if 
 
 ## Public Methods
 
-### [MLCameraDeviceStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceStatusCallbacks.md) Create {#mlcameradevicestatuscallbacks-create}
+### [MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceStatusCallbacks.md) Create {#mlcameradevicestatuscallbacks-create}
 
 Create and return an initialized version of this struct. 
 
@@ -50,7 +50,7 @@ public OnDeviceDisconnectedDelegate OnDeviceDisconnected;
 
 | Type | Description  | 
 |--|--|
-| [OnDeviceDisconnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondevicedisconnecteddelegate) | Delegate to notify the app when the camera device disconnects.  |
+| [OnDeviceDisconnectedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondevicedisconnecteddelegate) | Delegate to notify the app when the camera device disconnects.  |
 
 
 
@@ -70,7 +70,7 @@ public OnDeviceErrorDelegate OnDeviceError;
 
 | Type | Description  | 
 |--|--|
-| [OnDeviceErrorDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondeviceerrordelegate) | Delegate to notify the app about camera device error  |
+| [OnDeviceErrorDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondeviceerrordelegate) | Delegate to notify the app about camera device error  |
 
 
 

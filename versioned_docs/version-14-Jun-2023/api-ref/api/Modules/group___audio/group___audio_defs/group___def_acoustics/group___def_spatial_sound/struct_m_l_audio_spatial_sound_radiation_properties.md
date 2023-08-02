@@ -5,7 +5,7 @@ title: MLAudioSpatialSoundRadiationProperties
 
 # MLAudioSpatialSoundRadiationProperties
 
-**Module:** **[Audio](/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** **/** **[Spatial Sound](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/group___def_spatial_sound.md)**
+**Module:** **[Audio](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** **/** **[Spatial Sound](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/group___def_spatial_sound.md)**
 
 
 
@@ -18,12 +18,12 @@ title: MLAudioSpatialSoundRadiationProperties
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[inner_angle](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-inner-angle)**  |
-| float | **[outer_angle](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-angle)**  |
-| float | **[outer_gain](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain)**  |
-| float | **[outer_gain_lf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-lf)**  |
-| float | **[outer_gain_mf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-mf)**  |
-| float | **[outer_gain_hf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-hf)**  |
+| float | **[inner_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-inner-angle)**  |
+| float | **[outer_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-angle)**  |
+| float | **[outer_gain](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain)**  |
+| float | **[outer_gain_lf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-lf)**  |
+| float | **[outer_gain_mf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-mf)**  |
+| float | **[outer_gain_hf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-hf)**  |
 
 ## Detailed Description
 

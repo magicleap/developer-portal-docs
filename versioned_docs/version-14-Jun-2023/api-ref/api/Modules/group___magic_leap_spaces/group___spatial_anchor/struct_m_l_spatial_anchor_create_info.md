@@ -6,7 +6,7 @@ summary: a structure used to populate anchor creation info when creating a new s
 
 # MLSpatialAnchorCreateInfo
 
-**Module:** **[Magic Leap Spaces](/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)** **/** **[Spatial Anchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md)**
+**Module:** **[Magic Leap Spaces](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)** **/** **[Spatial Anchor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure used to populate anchor creation info when creating a new Spatial An
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md#uint32-t-version)** <br></br>Version of the structure.  |
-| [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md#mltransform-transform)** <br></br>The desired transform of the new Spatial Anchor.  |
-| uint64_t | **[expiration_timestamp_s](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md#uint64-t-expiration-timestamp-s)** <br></br>The suggested expiration timestamp for this anchor represented in seconds since the Unix epoch.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md#uint32-t-version)** <br></br>Version of the structure.  |
+| [MLTransform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md#mltransform-transform)** <br></br>The desired transform of the new Spatial Anchor.  |
+| uint64_t | **[expiration_timestamp_s](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md#uint64-t-expiration-timestamp-s)** <br></br>The suggested expiration timestamp for this anchor represented in seconds since the Unix epoch.  |
 
 ## Detailed Description
 

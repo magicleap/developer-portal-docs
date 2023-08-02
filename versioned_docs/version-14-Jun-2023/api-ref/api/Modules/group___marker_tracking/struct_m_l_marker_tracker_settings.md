@@ -6,7 +6,7 @@ summary: marker tracker settings.
 
 # MLMarkerTrackerSettings
 
-**Module:** **[Fiducial Marker Tracking](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
+**Module:** **[Fiducial Marker Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
 
 
 
@@ -19,14 +19,14 @@ Marker Tracker Settings.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#uint32-t-version)**  |
-| bool | **[enable_marker_tracking](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#bool-enable-marker-tracking)** <br></br>If `true`, Marker Tracker will detect and track the enabled marker types.  |
-| uint32_t | **[enabled_detector_types](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#uint32-t-enabled-detector-types)** <br></br>The detector types that are enabled.  |
-| [MLMarkerTrackerArucoDictionaryName](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | **[dictionary](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#mlmarkertrackerarucodictionaryname-dictionary)** <br></br>Aruco Dictionary or April Tag name from which markers shall be tracked.  |
-| float | **[aruco_marker_length](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#float-aruco-marker-length)** <br></br>The length of the Aruco markers that shall be tracked.  |
-| float | **[qr_code_length](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#float-qr-code-length)** <br></br>The length of the QR code that shall be tracked.  |
-| [MLMarkerTrackerProfile](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile) | **[tracker_profile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#mlmarkertrackerprofile-tracker-profile)** <br></br>Tracker profile to be used.  |
-| [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) | **[custom_tracker_profile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#mlmarkertrackercustomprofile-custom-tracker-profile)** <br></br>Custom tracker profile to be used.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#uint32-t-version)**  |
+| bool | **[enable_marker_tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#bool-enable-marker-tracking)** <br></br>If `true`, Marker Tracker will detect and track the enabled marker types.  |
+| uint32_t | **[enabled_detector_types](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#uint32-t-enabled-detector-types)** <br></br>The detector types that are enabled.  |
+| [MLMarkerTrackerArucoDictionaryName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | **[dictionary](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#mlmarkertrackerarucodictionaryname-dictionary)** <br></br>Aruco Dictionary or April Tag name from which markers shall be tracked.  |
+| float | **[aruco_marker_length](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#float-aruco-marker-length)** <br></br>The length of the Aruco markers that shall be tracked.  |
+| float | **[qr_code_length](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#float-qr-code-length)** <br></br>The length of the QR code that shall be tracked.  |
+| [MLMarkerTrackerProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile) | **[tracker_profile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#mlmarkertrackerprofile-tracker-profile)** <br></br>Tracker profile to be used.  |
+| [MLMarkerTrackerCustomProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) | **[custom_tracker_profile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_settings.md#mlmarkertrackercustomprofile-custom-tracker-profile)** <br></br>Custom tracker profile to be used.  |
 
 ## Detailed Description
 
@@ -89,7 +89,7 @@ uint32_t enabled_detector_types;
 
 The detector types that are enabled. 
 
-Enable detector types by combining any number of [MLMarkerTrackerDetectorType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackerdetectortype) flags using '|' (bitwise 'or'). 
+Enable detector types by combining any number of [MLMarkerTrackerDetectorType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackerdetectortype) flags using '|' (bitwise 'or'). 
 
 
 
@@ -108,7 +108,7 @@ Aruco Dictionary or April Tag name from which markers shall be tracked.
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerArucoDictionaryName](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | Supported pre-defined Aruco dictionary and AprilTags.  |
+| [MLMarkerTrackerArucoDictionaryName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | Supported pre-defined Aruco dictionary and AprilTags.  |
 
 
 Unused if Aruco detector is not enabled. 
@@ -166,10 +166,10 @@ Tracker profile to be used.
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerProfile](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile) | Represents the different tracker profiles.  |
+| [MLMarkerTrackerProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerprofile) | Represents the different tracker profiles.  |
 
 
-See [MLMarkerTrackerProfile](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackerprofile) for details. 
+See [MLMarkerTrackerProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackerprofile) for details. 
 
 
 
@@ -188,10 +188,10 @@ Custom tracker profile to be used.
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) | Marker Tracker Custom Profile.  |
+| [MLMarkerTrackerCustomProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) | Marker Tracker Custom Profile.  |
 
 
-See [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for details. This custom profile will only be used when MLMarkerTrackerProfile is set to MLMarkerTrackerProfile_Custom and ignored for all other cases. 
+See [MLMarkerTrackerCustomProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for details. This custom profile will only be used when MLMarkerTrackerProfile is set to MLMarkerTrackerProfile_Custom and ignored for all other cases. 
 
 
 

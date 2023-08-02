@@ -9,7 +9,7 @@ summary: ttmldata data structure.
 
 
 
-[TTMLData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.TTMLData.md) data structure.   
+[TTMLData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.TTMLData.md) data structure.   
 
 
 

@@ -6,7 +6,7 @@ summary: mediaplayer metrics data.
 
 # MLMediaPlayerMetrics
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,9 +19,9 @@ MediaPlayer metrics data.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[average_framerate](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md#float-average-framerate)**  |
-| int | **[average_video_bitrate](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md#int-average-video-bitrate)**  |
-| int | **[average_audio_bitrate](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md#int-average-audio-bitrate)**  |
+| float | **[average_framerate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md#float-average-framerate)**  |
+| int | **[average_video_bitrate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md#int-average-video-bitrate)**  |
+| int | **[average_audio_bitrate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md#int-average-audio-bitrate)**  |
 
 ## Detailed Description
 

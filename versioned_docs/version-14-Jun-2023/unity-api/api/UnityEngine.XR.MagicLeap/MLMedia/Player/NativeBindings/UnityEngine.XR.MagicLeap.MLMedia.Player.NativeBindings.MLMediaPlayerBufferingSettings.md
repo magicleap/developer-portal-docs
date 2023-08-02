@@ -29,7 +29,7 @@ public BufferingMode InitialBufferingMode;
 
 | Type | Description  | 
 |--|--|
-| [BufferingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-bufferingmode) | Comment Needed!  |
+| [BufferingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-bufferingmode) | Comment Needed!  |
 
 
 
@@ -83,7 +83,7 @@ public BufferingMode RebufferingMode;
 
 | Type | Description  | 
 |--|--|
-| [BufferingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-bufferingmode) | Comment Needed!  |
+| [BufferingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-bufferingmode) | Comment Needed!  |
 
 
 

@@ -15,19 +15,19 @@ Learn how to incorporate popular third-party resources into your Magic Leap 2 pr
 <table class="ml2-overview-table">
   <tr>
     <td>
-      <a href="/docs/guides/third-party/agora">
+      <a href="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/third-party/agora">
         <img src="/img/third-party/agora.png" />
         <div class="ml2-overview-image-text">Agora RTC SDK</div>
       </a>
     </td>
         <td>
-      <a href="/docs/guides/third-party/mrtk3/mrtk3-overview">
+      <a href="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/third-party/mrtk3/mrtk3-overview">
         <img src="/img/ml2-overview/mrtk-logo.png" />
         <div class="ml2-overview-image-text">MRTK 3</div>
       </a>
     </td>
     <td>
-      <a href="/docs/guides/third-party/mrtk">
+      <a href="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/third-party/mrtk">
         <img src="/img/ml2-overview/mrtk-logo.png" />
         <div class="ml2-overview-image-text">MRTK 2.8</div>
       </a>
@@ -35,19 +35,19 @@ Learn how to incorporate popular third-party resources into your Magic Leap 2 pr
   </tr>
     <tr>
     <td>
-      <a href="/docs/guides/third-party/networking/photon-fusion">
+      <a href="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/third-party/networking/photon-fusion">
         <img src="/img/third-party/photon.png" />
         <div class="ml2-overview-image-text">Photon Fusion</div>
       </a>
     </td>
     <td>
-      <a href="/docs/guides/third-party/ptc/vuforia-overview">
+      <a href="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/third-party/ptc/vuforia-overview">
         <img src="/img/ml2-overview/ptc-logo.png" />
         <div class="ml2-overview-image-text">PTC Vuforia Engine</div>
       </a>
     </td>
     <td>
-      <a href="/docs/guides/third-party/visometry/visionlib">
+      <a href="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/third-party/visometry/visionlib">
         <img src="/img/third-party/visionlib.png" />
         <div class="ml2-overview-image-text">Visometry VisionLib Engine</div>
       </a>

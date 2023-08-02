@@ -11,69 +11,69 @@ title: ml_graphics.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md)** <br></br>The graphics options provided for client creation.  |
-| struct | **[MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md)** <br></br>The frame parameters requested for the next rendered frame.  |
-| struct | **[MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)** <br></br>The static clip extents defined for all possible eye positions.  |
-| struct | **[MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md)** <br></br>The clip extents parameters.  |
-| struct | **[MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md)** <br></br>The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex).  |
-| struct | **[MLGraphicsRenderTarget](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_target.md)** <br></br>Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md).  |
-| struct | **[MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md)** <br></br>Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md).  |
-| struct | **[MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md)** <br></br>The complete definition of all possible buffered entries along with associated metadata.  |
-| struct | **[MLGraphicsVirtualCameraInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md)** <br></br>The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArray.  |
-| struct | **[MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md)** <br></br>Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).  |
-| struct | **[MLGraphicsClientPerformanceInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md)** <br></br>Performance timing information for the graphics client.  |
+| struct | **[MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md)** <br></br>The graphics options provided for client creation.  |
+| struct | **[MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md)** <br></br>The frame parameters requested for the next rendered frame.  |
+| struct | **[MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)** <br></br>The static clip extents defined for all possible eye positions.  |
+| struct | **[MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md)** <br></br>The clip extents parameters.  |
+| struct | **[MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md)** <br></br>The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex).  |
+| struct | **[MLGraphicsRenderTarget](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_target.md)** <br></br>Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md).  |
+| struct | **[MLGraphicsRenderBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md)** <br></br>Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md).  |
+| struct | **[MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md)** <br></br>The complete definition of all possible buffered entries along with associated metadata.  |
+| struct | **[MLGraphicsVirtualCameraInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md)** <br></br>The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArray.  |
+| struct | **[MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md)** <br></br>Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).  |
+| struct | **[MLGraphicsClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md)** <br></br>Performance timing information for the graphics client.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) | **[MLGraphicsOptions](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsoptions)** <br></br>The graphics options provided for client creation.  |
-| typedef struct [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) | **[MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsframeparamsex)** <br></br>The frame parameters requested for the next rendered frame.  |
-| typedef struct [MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md) | **[MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclipextentsinfo)** <br></br>The static clip extents defined for all possible eye positions.  |
-| typedef struct [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) | **[MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclipextentsparams)** <br></br>The clip extents parameters.  |
-| typedef struct [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) | **[MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclipextentsinfoarrayex)** <br></br>The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex).  |
-| typedef struct [MLGraphicsRenderTarget](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_target.md) | **[MLGraphicsRenderTarget](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsrendertarget)** <br></br>Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md).  |
-| typedef struct [MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md) | **[MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsrenderbufferinfo)** <br></br>Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md).  |
-| typedef struct [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) | **[MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsrendertargetsinfo)** <br></br>The complete definition of all possible buffered entries along with associated metadata.  |
-| typedef struct [MLGraphicsVirtualCameraInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md) | **[MLGraphicsVirtualCameraInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsvirtualcamerainfo)** <br></br>The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArray.  |
-| typedef struct [MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) | **[MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsframeinfo)** <br></br>Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).  |
-| typedef struct [MLGraphicsClientPerformanceInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md) | **[MLGraphicsClientPerformanceInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclientperformanceinfo)** <br></br>Performance timing information for the graphics client.  |
+| typedef struct [MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) | **[MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsoptions)** <br></br>The graphics options provided for client creation.  |
+| typedef struct [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) | **[MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsframeparamsex)** <br></br>The frame parameters requested for the next rendered frame.  |
+| typedef struct [MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md) | **[MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclipextentsinfo)** <br></br>The static clip extents defined for all possible eye positions.  |
+| typedef struct [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) | **[MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclipextentsparams)** <br></br>The clip extents parameters.  |
+| typedef struct [MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) | **[MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclipextentsinfoarrayex)** <br></br>The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex).  |
+| typedef struct [MLGraphicsRenderTarget](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_target.md) | **[MLGraphicsRenderTarget](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsrendertarget)** <br></br>Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md).  |
+| typedef struct [MLGraphicsRenderBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md) | **[MLGraphicsRenderBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsrenderbufferinfo)** <br></br>Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md).  |
+| typedef struct [MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) | **[MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsrendertargetsinfo)** <br></br>The complete definition of all possible buffered entries along with associated metadata.  |
+| typedef struct [MLGraphicsVirtualCameraInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md) | **[MLGraphicsVirtualCameraInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsvirtualcamerainfo)** <br></br>The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArray.  |
+| typedef struct [MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) | **[MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsframeinfo)** <br></br>Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).  |
+| typedef struct [MLGraphicsClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md) | **[MLGraphicsClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#struct-mlgraphicsclientperformanceinfo)** <br></br>Performance timing information for the graphics client.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLGraphicsFlags](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsflags)** <br></br> { <br></br>[MLGraphicsFlags_NoDepth](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-nodepth) = 1 << 0,<br></br> [MLGraphicsFlags_DebugMode](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-debugmode) = 1 << 2,<br></br> [MLGraphicsFlags_Headlock](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-headlock) = 1 << 3,<br></br> [MLGraphicsFlags_Default](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-default) = 0,<br></br> [MLGraphicsFlags_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The graphics flags used as part of client creation.  |
-| enum | **[MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat)** <br></br> { <br></br>[MLSurfaceFormat_Unknown](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-unknown) = 0,<br></br> [MLSurfaceFormat_RGBA8UNorm](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba8unorm),<br></br> [MLSurfaceFormat_RGBA8UNormSRGB](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba8unormsrgb),<br></br> [MLSurfaceFormat_RGB10A2UNorm](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgb10a2unorm),<br></br> [MLSurfaceFormat_RGBA16Float](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba16float),<br></br> [MLSurfaceFormat_D32Float](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d32float),<br></br> [MLSurfaceFormat_D24NormS8](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d24norms8),<br></br> [MLSurfaceFormat_D32FloatS8](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d32floats8),<br></br> [MLSurfaceFormat_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The definition of the supported color/depth surface formats.  |
-| enum | **[MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname)** <br></br> { <br></br>[MLGraphicsVirtualCameraName_Combined](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-combined) = -1,<br></br> [MLGraphicsVirtualCameraName_Left](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-left) = 0,<br></br> [MLGraphicsVirtualCameraName_Right](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-right),<br></br> [MLGraphicsVirtualCameraName_Count](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-count),<br></br> [MLGraphicsVirtualCameraName_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The metadata name associated with each virtual camera.  |
-| enum | **[Anonymous Enum 9](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-9)** <br></br> { <br></br>[MLGraphics_BufferCount](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphics-buffercount) = 3<br></br>} |
-| enum | **[MLGraphicsProjectionType](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype)** <br></br> { <br></br>[MLGraphicsProjectionType_SignedZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-signedz) = 0,<br></br> [MLGraphicsProjectionType_ReversedInfiniteZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-reversedinfinitez) = 1,<br></br> [MLGraphicsProjectionType_UnsignedZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-unsignedz) = 2,<br></br> [MLGraphicsProjectionType_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines the requested projection matrix model for rendering.  |
-| enum | **[MLGraphicsEnvironmentBlendMode](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode)** <br></br> { <br></br>[MLGraphicsEnvironmentBlendMode_Additive](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-additive) = 0,<br></br> [MLGraphicsEnvironmentBlendMode_Alpha_Blend](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-alpha-blend) = 1,<br></br> [MLGraphicsEnvironmentBlendMode_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines how the final frame will be blended with environment.  |
-| enum | **[Anonymous Enum 10](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-10)** <br></br> { <br></br>[MLGraphicsBlobCache_DefaultMaxEntryBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxentrybytes) = 512 * 1024,<br></br> [MLGraphicsBlobCache_DefaultMaxTotalBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxtotalbytes) = 8 * 1024 * 1024<br></br>} |
+| enum | **[MLGraphicsFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsflags)** <br></br> { <br></br>[MLGraphicsFlags_NoDepth](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-nodepth) = 1 << 0,<br></br> [MLGraphicsFlags_DebugMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-debugmode) = 1 << 2,<br></br> [MLGraphicsFlags_Headlock](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-headlock) = 1 << 3,<br></br> [MLGraphicsFlags_Default](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-default) = 0,<br></br> [MLGraphicsFlags_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The graphics flags used as part of client creation.  |
+| enum | **[MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat)** <br></br> { <br></br>[MLSurfaceFormat_Unknown](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-unknown) = 0,<br></br> [MLSurfaceFormat_RGBA8UNorm](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba8unorm),<br></br> [MLSurfaceFormat_RGBA8UNormSRGB](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba8unormsrgb),<br></br> [MLSurfaceFormat_RGB10A2UNorm](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgb10a2unorm),<br></br> [MLSurfaceFormat_RGBA16Float](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba16float),<br></br> [MLSurfaceFormat_D32Float](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d32float),<br></br> [MLSurfaceFormat_D24NormS8](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d24norms8),<br></br> [MLSurfaceFormat_D32FloatS8](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d32floats8),<br></br> [MLSurfaceFormat_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The definition of the supported color/depth surface formats.  |
+| enum | **[MLGraphicsVirtualCameraName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname)** <br></br> { <br></br>[MLGraphicsVirtualCameraName_Combined](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-combined) = -1,<br></br> [MLGraphicsVirtualCameraName_Left](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-left) = 0,<br></br> [MLGraphicsVirtualCameraName_Right](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-right),<br></br> [MLGraphicsVirtualCameraName_Count](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-count),<br></br> [MLGraphicsVirtualCameraName_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The metadata name associated with each virtual camera.  |
+| enum | **[Anonymous Enum 9](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-9)** <br></br> { <br></br>[MLGraphics_BufferCount](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphics-buffercount) = 3<br></br>} |
+| enum | **[MLGraphicsProjectionType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype)** <br></br> { <br></br>[MLGraphicsProjectionType_SignedZ](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-signedz) = 0,<br></br> [MLGraphicsProjectionType_ReversedInfiniteZ](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-reversedinfinitez) = 1,<br></br> [MLGraphicsProjectionType_UnsignedZ](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-unsignedz) = 2,<br></br> [MLGraphicsProjectionType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines the requested projection matrix model for rendering.  |
+| enum | **[MLGraphicsEnvironmentBlendMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode)** <br></br> { <br></br>[MLGraphicsEnvironmentBlendMode_Additive](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-additive) = 0,<br></br> [MLGraphicsEnvironmentBlendMode_Alpha_Blend](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-alpha-blend) = 1,<br></br> [MLGraphicsEnvironmentBlendMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines how the final frame will be blended with environment.  |
+| enum | **[Anonymous Enum 10](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-10)** <br></br> { <br></br>[MLGraphicsBlobCache_DefaultMaxEntryBytes](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxentrybytes) = 512 * 1024,<br></br> [MLGraphicsBlobCache_DefaultMaxTotalBytes](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxtotalbytes) = 8 * 1024 * 1024<br></br>} |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLGraphicsFrameParamsExInit](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeparamsexinit)**([MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * inout_frame_params)<br></br>Initializes a [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) with the default parameters.  |
-| void | **[MLGraphicsClipExtentsParamsInit](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsparamsinit)**([MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * inout_params)<br></br>Initializes default values for [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md).  |
-| void | **[MLGraphicsClipExtentsInfoArrayExInit](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsinfoarrayexinit)**([MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * inout_array)<br></br>Initializes default values for [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md).  |
-| void | **[MLGraphicsFrameInfoInit](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit)**([MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * inout_frame_info)<br></br>Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsEnableBlobCacheGL](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsenableblobcachegl)**(const char * filename, uint32_t max_entry_bytes, uint32_t max_total_bytes)<br></br>Enable shader blob cache for OpenGL.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsCreateClientGL](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicscreateclientgl)**(const [MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * options, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) opengl_context, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_graphics_client)<br></br>Create the GL/GLES graphics client.  |
-| uint32_t | **[MLGraphicsGLFormatFromMLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#uint32-t-mlgraphicsglformatfrommlsurfaceformat)**([MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) format)<br></br>Convert MLSurfaceFormat to OpenGL internal format.  |
-| [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[MLGraphicsMLSurfaceFormatFromGLFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#mlsurfaceformat-mlgraphicsmlsurfaceformatfromglformat)**(uint32_t format)<br></br>Convert OpenGL internal format to MLSurfaceFormat.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsCreateClientVk](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicscreateclientvk)**(const [MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * options, const VkInstance vulkan_instance, const VkPhysicalDevice vulkan_physical_device, const VkDevice vulkan_logical_device, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_graphics_client)<br></br>Create the VK graphics client.  |
-| VkFormat | **[MLGraphicsVkFormatFromMLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#vkformat-mlgraphicsvkformatfrommlsurfaceformat)**(const [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) format)<br></br>Convert MLSurfaceFormat to VkFormat.  |
-| [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[MLGraphicsMLSurfaceFormatFromVkFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#mlsurfaceformat-mlgraphicsmlsurfaceformatfromvkformat)**(const VkFormat format)<br></br>Convert VkFormat to MLSurfaceFormat.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsDestroyClient](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsdestroyclient)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * inout_graphics_client)<br></br>Destroy a GL/GLES or VK client.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, const [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * params, [MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * out_frame_info)<br></br>Request to begin rendering a new frame in the graphics system.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsSignalSyncObjectGL](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicssignalsyncobjectgl)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) sync_object)<br></br>Signal the sync object provided for each virtual camera for GL/GLES clients.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsGetClipExtentsEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, const [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * params, [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * out_array)<br></br>Get the conservative clip extents information for each virtual camera.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsGetRenderTargets](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetrendertargets)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) * out_targets)<br></br>Get a list of all buffered entries.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsEndFrame](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsendframe)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Submit a completed frame to the graphics system.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsGetClientPerformanceInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclientperformanceinfo)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLGraphicsClientPerformanceInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md) * out_info)<br></br>Obtain latest performance metrics for the client.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsSetGlobalDimmer](/api-ref/api/Files/ml__graphics_8h.md#mlresult-mlgraphicssetglobaldimmer)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, float dimmer_value)<br></br>Set the value for the global dimmer.  |
+| void | **[MLGraphicsFrameParamsExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeparamsexinit)**([MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * inout_frame_params)<br></br>Initializes a [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) with the default parameters.  |
+| void | **[MLGraphicsClipExtentsParamsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsparamsinit)**([MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * inout_params)<br></br>Initializes default values for [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md).  |
+| void | **[MLGraphicsClipExtentsInfoArrayExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsinfoarrayexinit)**([MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * inout_array)<br></br>Initializes default values for [MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md).  |
+| void | **[MLGraphicsFrameInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit)**([MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * inout_frame_info)<br></br>Initializes default values for [MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsEnableBlobCacheGL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsenableblobcachegl)**(const char * filename, uint32_t max_entry_bytes, uint32_t max_total_bytes)<br></br>Enable shader blob cache for OpenGL.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsCreateClientGL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicscreateclientgl)**(const [MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * options, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) opengl_context, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_graphics_client)<br></br>Create the GL/GLES graphics client.  |
+| uint32_t | **[MLGraphicsGLFormatFromMLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#uint32-t-mlgraphicsglformatfrommlsurfaceformat)**([MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) format)<br></br>Convert MLSurfaceFormat to OpenGL internal format.  |
+| [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[MLGraphicsMLSurfaceFormatFromGLFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlsurfaceformat-mlgraphicsmlsurfaceformatfromglformat)**(uint32_t format)<br></br>Convert OpenGL internal format to MLSurfaceFormat.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsCreateClientVk](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicscreateclientvk)**(const [MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * options, const VkInstance vulkan_instance, const VkPhysicalDevice vulkan_physical_device, const VkDevice vulkan_logical_device, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_graphics_client)<br></br>Create the VK graphics client.  |
+| VkFormat | **[MLGraphicsVkFormatFromMLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#vkformat-mlgraphicsvkformatfrommlsurfaceformat)**(const [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) format)<br></br>Convert MLSurfaceFormat to VkFormat.  |
+| [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[MLGraphicsMLSurfaceFormatFromVkFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlsurfaceformat-mlgraphicsmlsurfaceformatfromvkformat)**(const VkFormat format)<br></br>Convert VkFormat to MLSurfaceFormat.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsDestroyClient](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsdestroyclient)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * inout_graphics_client)<br></br>Destroy a GL/GLES or VK client.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, const [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * params, [MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * out_frame_info)<br></br>Request to begin rendering a new frame in the graphics system.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsSignalSyncObjectGL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicssignalsyncobjectgl)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) sync_object)<br></br>Signal the sync object provided for each virtual camera for GL/GLES clients.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsGetClipExtentsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, const [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * params, [MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * out_array)<br></br>Get the conservative clip extents information for each virtual camera.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsGetRenderTargets](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetrendertargets)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) * out_targets)<br></br>Get a list of all buffered entries.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsEndFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsendframe)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Submit a completed frame to the graphics system.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsGetClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclientperformanceinfo)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, [MLGraphicsClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md) * out_info)<br></br>Obtain latest performance metrics for the client.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGraphicsSetGlobalDimmer](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#mlresult-mlgraphicssetglobaldimmer)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) graphics_client, float dimmer_value)<br></br>Set the value for the global dimmer.  |
 
 ## Enums Documentation
 
@@ -91,7 +91,7 @@ title: ml_graphics.h
 
 The graphics flags used as part of client creation. 
 
-The flags are used to define the #graphics_flags member of the [MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) as part of the definition to create the client. 
+The flags are used to define the #graphics_flags member of the [MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) as part of the definition to create the client. 
 
 
 
@@ -117,7 +117,7 @@ The flags are used to define the #graphics_flags member of the [MLGraphicsOption
 
 The definition of the supported color/depth surface formats. 
 
-Formats that can be specified for the color_format and depth_format in [MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md). For the best quality the recommended color format is [MLSurfaceFormat_RGBA8UNormSRGB](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat-rgba8unormsrgb), and for depth (when defined) either [MLSurfaceFormat_D32Float](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat-d32float) or [MLSurfaceFormat_D32FloatS8](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat-d32floats8). 
+Formats that can be specified for the color_format and depth_format in [MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md). For the best quality the recommended color format is [MLSurfaceFormat_RGBA8UNormSRGB](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat-rgba8unormsrgb), and for depth (when defined) either [MLSurfaceFormat_D32Float](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat-d32float) or [MLSurfaceFormat_D32FloatS8](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat-d32floats8). 
 
 
 
@@ -177,7 +177,7 @@ Definitions for Graphics system maximums.
 
 Defines the requested projection matrix model for rendering. 
 
-Provided as part of the [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md), defines the requested projection model for the intrinsic definition returned for each virtual camera from [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).
+Provided as part of the [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md), defines the requested projection model for the intrinsic definition returned for each virtual camera from [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).
 
 The signed Z projection model is optimized for OpenGL use and transforms points into a left-hand, right-up-forward, Z range -1 (near) to 1 (far) projected coordinate space.
 
@@ -221,7 +221,7 @@ For now only used for controlling the segmented dimmer behavior.
 
 
 
-Default values suitable for use with [MLGraphicsEnableBlobCacheGL()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsenableblobcachegl). 
+Default values suitable for use with [MLGraphicsEnableBlobCacheGL()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsenableblobcachegl). 
 
 
 
@@ -240,11 +240,11 @@ typedef struct MLGraphicsOptions MLGraphicsOptions;
 
 The graphics options provided for client creation. 
 
-[MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) defines the requested client configuration for creating GL/GLES or VK clients. 
+[MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) defines the requested client configuration for creating GL/GLES or VK clients. 
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md)
 
 
 
@@ -258,13 +258,13 @@ typedef struct MLGraphicsFrameParamsEx MLGraphicsFrameParamsEx;
 
 The frame parameters requested for the next rendered frame. 
 
-The parameters defined by [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) are supplied to [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) from the client to define the requested characteristics of the next rendered frame.
+The parameters defined by [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) are supplied to [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) from the client to define the requested characteristics of the next rendered frame.
 
-This structure must be initialized by calling [MLGraphicsFrameParamsExInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeparamsexinit) before use.
+This structure must be initialized by calling [MLGraphicsFrameParamsExInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeparamsexinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md)
 
 
 **API Level:**
@@ -283,7 +283,7 @@ typedef struct MLGraphicsClipExtentsInfo MLGraphicsClipExtentsInfo;
 
 The static clip extents defined for all possible eye positions. 
 
-Defines the conservative clip extents for the camera name that can be used for early update frustum culling in the client update path (prior to calling [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex)).
+Defines the conservative clip extents for the camera name that can be used for early update frustum culling in the client update path (prior to calling [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex)).
 
 
 
@@ -292,7 +292,7 @@ Note: The client will need to obtain a headpose to combine with the provided mat
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)
 
 
 
@@ -306,11 +306,11 @@ typedef struct MLGraphicsClipExtentsParams MLGraphicsClipExtentsParams;
 
 The clip extents parameters. 
 
-The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) are supplied to [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex) from the client to define the requested characteristics of the clip extents.
+The parameters defined by [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) are supplied to [MLGraphicsGetClipExtentsEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex) from the client to define the requested characteristics of the clip extents.
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md)
 
 
 **API Level:**
@@ -327,15 +327,15 @@ The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/gro
 typedef struct MLGraphicsClipExtentsInfoArrayEx MLGraphicsClipExtentsInfoArrayEx;
 ```
 
-The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex). 
+The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex). 
 
-The clip extents array provides the conservative clip extents per metadata camera as defined by [MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md).
+The clip extents array provides the conservative clip extents per metadata camera as defined by [MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md).
 
-This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsinfoarrayexinit) before use.
+This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsinfoarrayexinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md)
 
 
 **API Level:**
@@ -352,13 +352,13 @@ This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExI
 typedef struct MLGraphicsRenderTarget MLGraphicsRenderTarget;
 ```
 
-Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md). 
+Definition of a single render target defined in [MLGraphicsRenderBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md). 
 
-Each render target defines one of the buffered entries color/depth surfaces (with maximum count defined by [MLGraphics_BufferCount](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphics-buffercount)). Clients can assume that the handle provided here will be in the list of handles returned from [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). 
+Each render target defines one of the buffered entries color/depth surfaces (with maximum count defined by [MLGraphics_BufferCount](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphics-buffercount)). Clients can assume that the handle provided here will be in the list of handles returned from [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). 
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_target.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_target.md)
 
 
 
@@ -370,15 +370,15 @@ Each render target defines one of the buffered entries color/depth surfaces (wit
 typedef struct MLGraphicsRenderBufferInfo MLGraphicsRenderBufferInfo;
 ```
 
-Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md). 
+Definition of a single buffer entry for all virtual cameras as defined in [MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md). 
 
 Each buffer entry can contain a color / depth target and the target is valid if the handle != 0.
 
-Note : When the client specifies the [MLGraphicsFlags_NoDepth](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsflags-nodepth) flag as part of client creation the depth targets will always be 0. 
+Note : When the client specifies the [MLGraphicsFlags_NoDepth](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsflags-nodepth) flag as part of client creation the depth targets will always be 0. 
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_buffer_info.md)
 
 
 
@@ -392,11 +392,11 @@ typedef struct MLGraphicsRenderTargetsInfo MLGraphicsRenderTargetsInfo;
 
 The complete definition of all possible buffered entries along with associated metadata. 
 
-Statically defined after successfully creating the client, the [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) provides the definition of all of the buffered entries along with the global metadata. The client can assume that once queried the definition will not change and therefore does not need to be queried more than once at runtime. 
+Statically defined after successfully creating the client, the [MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) provides the definition of all of the buffered entries along with the global metadata. The client can assume that once queried the definition will not change and therefore does not need to be queried more than once at runtime. 
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md)
 
 
 
@@ -419,7 +419,7 @@ Note: The projection model is asymmetric and clients should not assume any of th
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md)
 
 
 
@@ -431,11 +431,11 @@ Note: The projection model is asymmetric and clients should not assume any of th
 typedef struct MLGraphicsFrameInfo MLGraphicsFrameInfo;
 ```
 
-Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). 
+Information about the current render frame populated by [MLGraphicsBeginFrameEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). This struct must be populated by calling [MLGraphicsFrameInfoInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before being used in a call to [MLGraphicsBeginFrameEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). 
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md)
 
 
 **API Level:**
@@ -454,7 +454,7 @@ typedef struct MLGraphicsClientPerformanceInfo MLGraphicsClientPerformanceInfo;
 
 Performance timing information for the graphics client. 
 
-Populated by [MLGraphicsGetClientPerformanceInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclientperformanceinfo), the performance information contains all metrics tracked by the graphics system for the specified client. Metrics are calculated using a sliding window and can be used to adjust the client workload characteristics (i.e. scale, fidelity, etc).
+Populated by [MLGraphicsGetClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclientperformanceinfo), the performance information contains all metrics tracked by the graphics system for the specified client. Metrics are calculated using a sliding window and can be used to adjust the client workload characteristics (i.e. scale, fidelity, etc).
 
 
 
@@ -463,7 +463,7 @@ Note: The internal metrics are also provided, informing the client of both the C
 
 
 
-[More Info](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md)
 
 
 
@@ -480,13 +480,13 @@ static inline void MLGraphicsFrameParamsExInit(
 )
 ```
 
-Initializes a [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) with the default parameters. 
+Initializes a [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) with the default parameters. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * |inout_frame_params|The object to initialize with default settings.|
+| [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * |inout_frame_params|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -511,13 +511,13 @@ static inline void MLGraphicsClipExtentsParamsInit(
 )
 ```
 
-Initializes default values for [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md). 
+Initializes default values for [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * |inout_params|The object to initialize with default settings. |
+| [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * |inout_params|The object to initialize with default settings. |
 
 
 
@@ -537,13 +537,13 @@ static inline void MLGraphicsClipExtentsInfoArrayExInit(
 )
 ```
 
-Initializes default values for [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md). 
+Initializes default values for [MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * |inout_array|The object to initialize with default settings. |
+| [MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * |inout_array|The object to initialize with default settings. |
 
 
 
@@ -563,13 +563,13 @@ static inline void MLGraphicsFrameInfoInit(
 )
 ```
 
-Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md). 
+Initializes default values for [MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * |inout_frame_info|The object to initialize with default settings. |
+| [MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * |inout_frame_info|The object to initialize with default settings. |
 
 
 
@@ -605,8 +605,8 @@ Enable shader blob cache for OpenGL.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to enable blob cache due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully enabled blob cache.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to enable blob cache due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully enabled blob cache.|
 **Required Permissions**:
 
   * None 
@@ -636,23 +636,23 @@ Create the GL/GLES graphics client.
 
 |  |   |   |
 |--|--|--|
-| const [MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * |options|The graphics options for resource creation. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |opengl_context|The OpenGL context to use for resource creation. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_graphics_client|The handle to the created graphics client. Only valid if result is MLResult_Ok.|
+| const [MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * |options|The graphics options for resource creation. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |opengl_context|The OpenGL context to use for resource creation. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_graphics_client|The handle to the created graphics client. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create graphics client due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created graphics client. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create graphics client due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create graphics client due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created graphics client. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create graphics client due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
-Create a graphics client for use with GL/GLES APIs using the provided options and specified opengl context. It is required that the opengl context specified here is only bound on the thread used to render the client frame and is the same context used to render the frame using the provided information from [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).
+Create a graphics client for use with GL/GLES APIs using the provided options and specified opengl context. It is required that the opengl context specified here is only bound on the thread used to render the client frame and is the same context used to render the frame using the provided information from [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex).
 
 
 
@@ -674,7 +674,7 @@ Convert MLSurfaceFormat to OpenGL internal format.
 
 |  |   |   |
 |--|--|--|
-| [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) |format|The MLSurfaceFormat to convert. |
+| [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) |format|The MLSurfaceFormat to convert. |
 **Required Permissions**:
 
   * None 
@@ -734,19 +734,19 @@ Create the VK graphics client.
 
 |  |   |   |
 |--|--|--|
-| const [MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * |options|The graphics options for resource creation. |
+| const [MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) * |options|The graphics options for resource creation. |
 | const VkInstance |vulkan_instance|The Vulkan instance used to create the physical and logical device. |
 | const VkPhysicalDevice |vulkan_physical_device|The Vulkan physical device used to create the specified logical device. |
 | const VkDevice |vulkan_logical_device|The Vulkan logical device to use for resource creation. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_graphics_client|The handle to the created graphics client. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_graphics_client|The handle to the created graphics client. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create client due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created client. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create client due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create client due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created client. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create client due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -774,7 +774,7 @@ Convert MLSurfaceFormat to VkFormat.
 
 |  |   |   |
 |--|--|--|
-| const [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) |format|The MLSurfaceFormat to convert. |
+| const [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) |format|The MLSurfaceFormat to convert. |
 **Required Permissions**:
 
   * None 
@@ -830,15 +830,15 @@ Destroy a GL/GLES or VK client.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |inout_graphics_client|The graphics client to destroy.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |inout_graphics_client|The graphics client to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy client due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed client. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy client due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy client due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed client. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy client due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -868,26 +868,26 @@ Request to begin rendering a new frame in the graphics system.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to query. |
-| const [MLGraphicsFrameParamsEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * |params|The frame parameters for the frame. |
-| [MLGraphicsFrameInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * |out_frame_info|Information returned for use when rendering the frame. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to query. |
+| const [MLGraphicsFrameParamsEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_params_ex.md) * |params|The frame parameters for the frame. |
+| [MLGraphicsFrameInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_frame_info.md) * |out_frame_info|Information returned for use when rendering the frame. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start frame due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started frame. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Timeout|Failed to start frame due to blocking timeout limit being reached. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start frame due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start frame due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started frame. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Timeout|Failed to start frame due to blocking timeout limit being reached. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start frame due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
-Called to request the start of a new render frame and should be called as close as possible to the start of rendering to minimize the motion to photon latency. Only one frame can be rendered at a time and must be submitted by providing the returned handle to [MLGraphicsEndFrame](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsendframe) prior to another call to [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). The call to begin/end frame should be made on the render thread alone of the client. It is required that a successful call to [MLGraphicsFrameInfoInit](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) be made before calling [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). Faiure to call [MLGraphicsFrameInfoInit](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before calling [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) will return a result of MLResult_NotImplemented.
+Called to request the start of a new render frame and should be called as close as possible to the start of rendering to minimize the motion to photon latency. Only one frame can be rendered at a time and must be submitted by providing the returned handle to [MLGraphicsEndFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsendframe) prior to another call to [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). The call to begin/end frame should be made on the render thread alone of the client. It is required that a successful call to [MLGraphicsFrameInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) be made before calling [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). Faiure to call [MLGraphicsFrameInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsframeinfoinit) before calling [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) will return a result of MLResult_NotImplemented.
 
-Note : Calls to [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) can and will block the calling process. There are several reasons that lead to a block, including, the client is executing faster than the defined timing requested (and the block re-aligns the client timing), the client is not yet visible in the system, and the compositor has not yet moved to the next buffered entry (i.e. wraparound cases from fast client rendering). The call to [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) will timeout the block and return when the conditions to unblock have not been satisfied for the internal timeout period. The most common occurrence of the timeout is when the application is not currently visible.
+Note : Calls to [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) can and will block the calling process. There are several reasons that lead to a block, including, the client is executing faster than the defined timing requested (and the block re-aligns the client timing), the client is not yet visible in the system, and the compositor has not yet moved to the next buffered entry (i.e. wraparound cases from fast client rendering). The call to [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex) will timeout the block and return when the conditions to unblock have not been satisfied for the internal timeout period. The most common occurrence of the timeout is when the application is not currently visible.
 
 
 
@@ -915,16 +915,16 @@ Signal the sync object provided for each virtual camera for GL/GLES clients.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client owning the sync object. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |sync_object|The sync object to be signaled.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client owning the sync object. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |sync_object|The sync object to be signaled.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to signal object due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully signaled object. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to signal object due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to signal object due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully signaled object. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to signal object due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -956,17 +956,17 @@ Get the conservative clip extents information for each virtual camera.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to query. |
-| const [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * |params|The clip extents parameters. |
-| [MLGraphicsClipExtentsInfoArrayEx](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * |out_array|The clip extents info array with all information required for update of each virtual camera. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to query. |
+| const [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) * |params|The clip extents parameters. |
+| [MLGraphicsClipExtentsInfoArrayEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md) * |out_array|The clip extents info array with all information required for update of each virtual camera. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain extents due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained extents. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain extents due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain extents due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained extents. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain extents due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1006,16 +1006,16 @@ Get a list of all buffered entries.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to query. |
-| [MLGraphicsRenderTargetsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) * |out_targets|The render target info array. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to query. |
+| [MLGraphicsRenderTargetsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_render_targets_info.md) * |out_targets|The render target info array. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain target due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain handle due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain target due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain handle due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1044,22 +1044,22 @@ Submit a completed frame to the graphics system.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to update. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle provided from the call to MLGraphicsBeginFrameEx.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client to update. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle provided from the call to MLGraphicsBeginFrameEx.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to end frame due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully ended frame. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to end frame due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to end frame due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully ended frame. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to end frame due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
-Submit a completed frame to the graphics system using the handle provided from [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). Prior to submiting the frame the client must signal the sync objects provided by [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex), for GL/GLES clients with [MLGraphicsSignalSyncObjectGL](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicssignalsyncobjectgl) or for VK clients including that sync object as part of the signal semaphore list. For VK clients, the color and depth surfaces can be in any image layout when calling [MLGraphicsEndFrame](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsendframe).
+Submit a completed frame to the graphics system using the handle provided from [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex). Prior to submiting the frame the client must signal the sync objects provided by [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex), for GL/GLES clients with [MLGraphicsSignalSyncObjectGL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicssignalsyncobjectgl) or for VK clients including that sync object as part of the signal semaphore list. For VK clients, the color and depth surfaces can be in any image layout when calling [MLGraphicsEndFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsendframe).
 
 
 
@@ -1082,16 +1082,16 @@ Obtain latest performance metrics for the client.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client in which to query the performance. |
-| [MLGraphicsClientPerformanceInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md) * |out_info|Current performance information for the client. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client in which to query the performance. |
+| [MLGraphicsClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md) * |out_info|Current performance information for the client. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain client performance metrics due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained client performance metrics. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain client performance metrics due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain client performance metrics due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained client performance metrics. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain client performance metrics due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1120,22 +1120,22 @@ Set the value for the global dimmer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client handle. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |graphics_client|The graphics client handle. |
 | float |dimmer_value|Floating point dimmer value in valid range [0.0 to 1.0]. 0.0 corresponds to min user defined value while 1.0 corresponds to max user defined value.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Auto global dimmer value could not be set due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Auto global dimmer value set successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Auto global dimmer value could not be set due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Auto global dimmer value set successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-Can be called any time after the client has been created. Updates are reflected in the next client submitted frame (via MLGraphicsEndFrame). Any smooth ramping from auto dimmer to application final dimmer should be handled by the application itself. Since the dimmer value set through [MLGraphicsSetGlobalDimmer()](/api-ref/api/Files/ml__graphics_8h.md#mlresult-mlgraphicssetglobaldimmer) is reflected only in the next client submitted frame, the smooth ramp stepping interval is equal to current application frame rate. Dimmer values correspond to a global dimming range defined by the user in the settings.
+Can be called any time after the client has been created. Updates are reflected in the next client submitted frame (via MLGraphicsEndFrame). Any smooth ramping from auto dimmer to application final dimmer should be handled by the application itself. Since the dimmer value set through [MLGraphicsSetGlobalDimmer()](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__graphics_8h.md#mlresult-mlgraphicssetglobaldimmer) is reflected only in the next client submitted frame, the smooth ramp stepping interval is equal to current application frame rate. Dimmer values correspond to a global dimming range defined by the user in the settings.
 
 
 

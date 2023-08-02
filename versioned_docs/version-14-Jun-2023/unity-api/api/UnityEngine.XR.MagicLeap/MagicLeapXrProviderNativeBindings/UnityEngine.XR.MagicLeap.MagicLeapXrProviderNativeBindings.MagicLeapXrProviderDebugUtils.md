@@ -9,7 +9,7 @@ summary: the native representation of the magicleapxrprovider debug utilities ob
 
 
 
-The native representation of the [MagicLeapXrProvider](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MagicLeapXrProvider.md) debug utilities object.   
+The native representation of the [MagicLeapXrProvider](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MagicLeapXrProvider.md) debug utilities object.   
 
 
 
@@ -17,7 +17,7 @@ The native representation of the [MagicLeapXrProvider](/unity-api/api/UnityEngin
 
 ## Public Methods
 
-### [MagicLeapXrProviderDebugUtils](/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDebugUtils.md) Create {#magicleapxrproviderdebugutils-create}
+### [MagicLeapXrProviderDebugUtils](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDebugUtils.md) Create {#magicleapxrproviderdebugutils-create}
 
 Creates an initialized MLWebRTCDebugUtils object. 
 
@@ -84,7 +84,7 @@ public OnDebugMessageDelegate OnDebugMessage;
 
 | Type | Description  | 
 |--|--|
-| [OnDebugMessageDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.md#delegate-void-ondebugmessagedelegate) | Delegate describing the callback necessary to monitor when an debug message is received.  |
+| [OnDebugMessageDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.md#delegate-void-ondebugmessagedelegate) | Delegate describing the callback necessary to monitor when an debug message is received.  |
 
 
 

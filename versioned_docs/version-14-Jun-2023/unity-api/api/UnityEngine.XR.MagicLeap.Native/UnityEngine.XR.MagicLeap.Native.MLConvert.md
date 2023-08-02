@@ -9,7 +9,7 @@ summary: utility class used for converting vectors and matrices between native a
 
 
 **NameSpace:** 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) 
 
 
 Utility class used for converting vectors and matrices between native and unity format.   
@@ -91,7 +91,7 @@ public static string DecodeUTF16BE(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte [] |nativeArray|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) byte array to convert|
+| byte [] |nativeArray|[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) byte array to convert|
 
 
 
@@ -119,7 +119,7 @@ public static string DecodeUTF16LE(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte [] |nativeArray|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) byte array to convert|
+| byte [] |nativeArray|[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) byte array to convert|
 
 
 
@@ -290,7 +290,7 @@ public static void FlipTransformMatrixVertically(
 
 -----------
 
-### [MagicLeapNativeBindings.MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) FromUnity {#magicleapnativebindingsmltransform-fromunity}
+### [MagicLeapNativeBindings.MLTransform](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) FromUnity {#magicleapnativebindingsmltransform-fromunity}
 
 Creates native transform from a Unity matrix. 
 
@@ -347,7 +347,7 @@ public static void FromUnity(
 
 -----------
 
-### [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) FromUnity {#magicleapnativebindingsmlvec3f-fromunity}
+### [MagicLeapNativeBindings.MLVec3f](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) FromUnity {#magicleapnativebindingsmlvec3f-fromunity}
 
 Creates native 3d vector from a Unity vector. 
 
@@ -378,7 +378,7 @@ public static MagicLeapNativeBindings.MLVec3f FromUnity(
 
 -----------
 
-### [MagicLeapNativeBindings.MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) FromUnity {#magicleapnativebindingsmlquaternionf-fromunity}
+### [MagicLeapNativeBindings.MLQuaternionf](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) FromUnity {#magicleapnativebindingsmlquaternionf-fromunity}
 
 Creates native quaternion from a Unity quaternion. 
 
@@ -408,7 +408,7 @@ public static MagicLeapNativeBindings.MLQuaternionf FromUnity(
 
 -----------
 
-### [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) FromUnity {#magicleapnativebindingsmluuid-fromunity}
+### [MagicLeapNativeBindings.MLUUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) FromUnity {#magicleapnativebindingsmluuid-fromunity}
 
 Creates an MLUUID from a System.Guid 
 
@@ -628,7 +628,7 @@ public static Vector3 ToUnity(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |vec|A native vector.|
+| [MagicLeapNativeBindings.MLVec3f](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |vec|A native vector.|
 | bool |transformToRUF|(Optional) If false, prevents conversion to Unity's coordinate system.|
 |  |applyScale|(Optional) If false, prevents scaling to Unity's unit per meter scale.|
 
@@ -659,7 +659,7 @@ public static Vector2 ToUnity(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) |vec|A native vector.|
+| [MagicLeapNativeBindings.MLVec2f](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) |vec|A native vector.|
 | bool |transformToRUF|(Optional) If false, prevents conversion to Unity's coordinate system.|
 |  |applyScale|(Optional) If false, prevents scaling to Unity's unit per meter scale.|
 
@@ -725,7 +725,7 @@ public static Quaternion ToUnity(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) |quat|A native quaternion.|
+| [MagicLeapNativeBindings.MLQuaternionf](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) |quat|A native quaternion.|
 | bool |transformToRUF|(Optional) If false, prevents conversion to Unity's coordinate system.|
 
 
@@ -784,7 +784,7 @@ public static Matrix4x4 ToUnity(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLMat4f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLMat4f.md) |mat|A native matrix.|
+| [MagicLeapNativeBindings.MLMat4f](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLMat4f.md) |mat|A native matrix.|
 
 
 
@@ -813,7 +813,7 @@ public static Matrix4x4 ToUnity(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) |transform|A native transform.|
+| [MagicLeapNativeBindings.MLTransform](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) |transform|A native transform.|
 | bool |transformToRUF|(Optional) If false, prevents conversion to Unity's coordinate system.|
 |  |applyScale|(Optional) If false, prevents scaling to Unity's unit per meter scale.|
 
@@ -843,7 +843,7 @@ public static Guid ToUnity(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |uuid|A native UUID|
+| [MagicLeapNativeBindings.MLUUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |uuid|A native UUID|
 
 
 

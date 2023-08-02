@@ -11,14 +11,14 @@ title: NativeBindings
 
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesCreate {#mlresultcode-mlplanescreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesCreate {#mlresultcode-mlplanescreate}
 
 ```csharp
 public MLResult.Code MLPlanesCreate(
@@ -40,7 +40,7 @@ public MLResult.Code MLPlanesCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesDestroy {#mlresultcode-mlplanesdestroy}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesDestroy {#mlresultcode-mlplanesdestroy}
 
 ```csharp
 public MLResult.Code MLPlanesDestroy(
@@ -62,7 +62,7 @@ public MLResult.Code MLPlanesDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesQueryBegin {#mlresultcode-mlplanesquerybegin}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesQueryBegin {#mlresultcode-mlplanesquerybegin}
 
 ```csharp
 public MLResult.Code MLPlanesQueryBegin(
@@ -88,7 +88,7 @@ public MLResult.Code MLPlanesQueryBegin(
 
 -----------
 
-### unsafe [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesQueryGetResultsWithBoundaries {#unsafe-mlplanesquerygetresultswithboundaries}
+### unsafe [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesQueryGetResultsWithBoundaries {#unsafe-mlplanesquerygetresultswithboundaries}
 
 ```csharp
 public unsafe MLResult.Code MLPlanesQueryGetResultsWithBoundaries(
@@ -118,7 +118,7 @@ public unsafe MLResult.Code MLPlanesQueryGetResultsWithBoundaries(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesReleaseBoundariesList {#mlresultcode-mlplanesreleaseboundarieslist}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPlanesReleaseBoundariesList {#mlresultcode-mlplanesreleaseboundarieslist}
 
 ```csharp
 public MLResult.Code MLPlanesReleaseBoundariesList(

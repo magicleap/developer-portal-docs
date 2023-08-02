@@ -33,4 +33,4 @@ Manual settings found in  **Settings > Display**.
 
 ## Design Considerations
 
-Please refer to the [Segmented Dimmer Design Guidelines](/docs/guides/features/dimmer-feature/dimmer-design-guidelines.md) to learn about optimizing your app for Segmented Dimming.
+Please refer to the [Segmented Dimmer Design Guidelines](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/dimmer-feature/dimmer-design-guidelines.md) to learn about optimizing your app for Segmented Dimming.

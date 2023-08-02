@@ -27,7 +27,7 @@ public OnEventDelegate onEvent;
 
 | Type | Description  | 
 |--|--|
-| [OnEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-oneventdelegate) | Delegate for the any OnEvent event.  |
+| [OnEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-oneventdelegate) | Delegate for the any OnEvent event.  |
 
 
 
@@ -45,7 +45,7 @@ public OnExpirationUpdateDelegate onExpirationUpdate;
 
 | Type | Description  | 
 |--|--|
-| [OnExpirationUpdateDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-onexpirationupdatedelegate) | Delegate for the any OnExpirationUpdate event.  |
+| [OnExpirationUpdateDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-onexpirationupdatedelegate) | Delegate for the any OnExpirationUpdate event.  |
 
 
 
@@ -63,7 +63,7 @@ public OnKeyStatusChangeDelegate onKeyStatusChange;
 
 | Type | Description  | 
 |--|--|
-| [OnKeyStatusChangeDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-onkeystatuschangedelegate) | Delegate for the any OnKeyStatusChange event.  |
+| [OnKeyStatusChangeDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#delegate-void-onkeystatuschangedelegate) | Delegate for the any OnKeyStatusChange event.  |
 
 
 

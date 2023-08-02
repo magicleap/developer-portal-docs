@@ -6,7 +6,7 @@ summary: a structure to encapsulate output data when getting a component's avail
 
 # MLPowerManagerPropertyTypeData
 
-**Module:** **[Power Manager](/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
+**Module:** **[Power Manager](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
 
 
 
@@ -19,8 +19,8 @@ A structure to encapsulate output data when getting a component's available prop
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint8_t | **[size](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md#uint8-t-size)**  |
-| [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) * | **[property_types](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md#mlpowermanagerpropertytype-property-types)**  |
+| uint8_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md#uint8-t-size)**  |
+| [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) * | **[property_types](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md#mlpowermanagerpropertytype-property-types)**  |
 
 ## Detailed Description
 
@@ -49,7 +49,7 @@ uint8_t size;
 ```
 
 
-Size of [property_types](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md#mlpowermanagerpropertytype-property-types) array. 
+Size of [property_types](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md#mlpowermanagerpropertytype-property-types) array. 
 
 
 
@@ -67,10 +67,10 @@ MLPowerManagerPropertyType * property_types;
 
 | Type | Description |
 |--|--|
-| [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) * | Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component.  |
+| [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) * | Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component.  |
 
 
-Array of [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype) elements. 
+Array of [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype) elements. 
 
 
 

@@ -5,7 +5,7 @@ title: MLMeshingBlockInfo
 
 # MLMeshingBlockInfo
 
-**Module:** **[Meshing2](/api-ref/api/Modules/group___meshing2/group___meshing2.md)**
+**Module:** **[Meshing2](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLMeshingBlockInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[id](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mlcoordinateframeuid-id)**  |
-| [MLMeshingExtents](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) | **[extents](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mlmeshingextents-extents)**  |
-| [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mltime-timestamp)**  |
-| [MLMeshingMeshState](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate) | **[state](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mlmeshingmeshstate-state)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mlcoordinateframeuid-id)**  |
+| [MLMeshingExtents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) | **[extents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mlmeshingextents-extents)**  |
+| [MLTime](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mltime-timestamp)**  |
+| [MLMeshingMeshState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate) | **[state](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md#mlmeshingmeshstate-state)**  |
 
 ## Detailed Description
 

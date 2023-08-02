@@ -15,7 +15,7 @@ Visual comfort depends on several things:
 
 - ### **Device fit quality**
 
-     Users should complete the Custom Fit application to ensure optimal performance and visual comfort. See [Headset Fit](/docs/guides/features/eye-tracking/headset-fit.md) for more information.
+     Users should complete the Custom Fit application to ensure optimal performance and visual comfort. See [Headset Fit](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/eye-tracking/headset-fit.md) for more information.
 
 - ### **Content placement relative to the user**
 
@@ -53,7 +53,7 @@ Essential content, such as important warnings or any content that needs to be vi
 
 **For users to be able to see the biggest portion of display FOV possible, the Headset Fit is crucial and users should have completed the Custom Fit.**
 
-However, due to significant facial size and shape variance, every individual will not have a similar virtual FOV visible. The figure below illustrates the worst case FOV of all users in a good Headset Fit. Notice that the corners and edges of the FOV are blurry or not visible. Consider this when designing content placement, especially for head-relative content. See [Headset Fit](/docs/guides/features/eye-tracking/headset-fit.md) for more information.
+However, due to significant facial size and shape variance, every individual will not have a similar virtual FOV visible. The figure below illustrates the worst case FOV of all users in a good Headset Fit. Notice that the corners and edges of the FOV are blurry or not visible. Consider this when designing content placement, especially for head-relative content. See [Headset Fit](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/eye-tracking/headset-fit.md) for more information.
 
 Virtual display FOV of a worst-case scenario user that has completed Custom Fit (Vertical: 49°/55°; Horizontal: 41°/45°; Diagonal: 51°/71°)
 

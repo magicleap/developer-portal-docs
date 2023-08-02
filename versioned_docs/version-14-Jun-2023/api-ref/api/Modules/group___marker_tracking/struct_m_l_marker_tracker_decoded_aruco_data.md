@@ -6,7 +6,7 @@ summary: aruco decoded data.
 
 # MLMarkerTrackerDecodedArucoData
 
-**Module:** **[Fiducial Marker Tracking](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
+**Module:** **[Fiducial Marker Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
 
 
 
@@ -19,9 +19,9 @@ Aruco decoded data.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | **[type](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md#mlmarkertrackingdecodeddatatype-type)**  |
-| [MLMarkerTrackerArucoDictionaryName](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | **[dictionary](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md#mlmarkertrackerarucodictionaryname-dictionary)**  |
-| uint32_t | **[id](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md#uint32-t-id)**  |
+| [MLMarkerTrackingDecodedDataType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | **[type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md#mlmarkertrackingdecodeddatatype-type)**  |
+| [MLMarkerTrackerArucoDictionaryName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | **[dictionary](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md#mlmarkertrackerarucodictionaryname-dictionary)**  |
+| uint32_t | **[id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_aruco_data.md#uint32-t-id)**  |
 
 ## Detailed Description
 
@@ -53,7 +53,7 @@ MLMarkerTrackingDecodedDataType type;
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | Decoded Data Type enumeration.  |
+| [MLMarkerTrackingDecodedDataType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | Decoded Data Type enumeration.  |
 
 
 Type selector for the structure. 
@@ -74,7 +74,7 @@ MLMarkerTrackerArucoDictionaryName dictionary;
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerArucoDictionaryName](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | Supported pre-defined Aruco dictionary and AprilTags.  |
+| [MLMarkerTrackerArucoDictionaryName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerarucodictionaryname) | Supported pre-defined Aruco dictionary and AprilTags.  |
 
 
 Dictionary used by the Aruco Marker. 

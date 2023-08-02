@@ -50,7 +50,7 @@ public FourCC typeStatic { get; set; }
 
 ## Public Methods
 
-### [SendLEDPattern](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SendLEDPattern.md) Create {#sendledpattern-create}
+### [SendLEDPattern](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SendLEDPattern.md) Create {#sendledpattern-create}
 
 ```csharp
 public static SendLEDPattern Create(

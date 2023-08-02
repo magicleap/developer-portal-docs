@@ -18,7 +18,7 @@ title: MLEyes
 
 ### void StartTracking {#void-starttracking}
 
-Needs to be called in order to track eyes on the [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device. Required to be called only after the user has granted the eye tracking permission. 
+Needs to be called in order to track eyes on the [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device. Required to be called only after the user has granted the eye tracking permission. 
 
 ```csharp
 public static void StartTracking()
@@ -59,7 +59,7 @@ public static bool TryGetState(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |eyesDevice||
-| out [State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md) |state||
+| out [State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md) |state||
 
 
 

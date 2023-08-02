@@ -5,7 +5,7 @@ title: MLVec2f
 
 # MLVec2f
 
-**Module:** **[Common](/api-ref/api/Modules/group___common/group___common.md)**
+**Module:** **[Common](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLVec2f
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[x](/api-ref/api/Modules/group___common/struct_m_l_vec2f.md#float-x)**  |
-| float | **[y](/api-ref/api/Modules/group___common/struct_m_l_vec2f.md#float-y)**  |
+| float | **[x](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md#float-x)**  |
+| float | **[y](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md#float-y)**  |
 
 ## Detailed Description
 

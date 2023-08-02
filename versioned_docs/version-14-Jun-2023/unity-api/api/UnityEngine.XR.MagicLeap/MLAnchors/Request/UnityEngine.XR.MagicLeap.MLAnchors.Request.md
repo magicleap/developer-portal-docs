@@ -11,7 +11,7 @@ title: Request
 
 
 
-Inherits from: <br></br>[MLRequest< Request.Params, Request.Result >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md),<br></br>[IMLRequest< Params, Result >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md)
+Inherits from: <br></br>[MLRequest< Request.Params, Request.Result >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md),<br></br>[IMLRequest< Params, Result >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md)
 
 
 
@@ -31,7 +31,7 @@ public Request()
 
 -----------
 
-### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#override-start}
+### override [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#override-start}
 
 ```csharp
 public override MLResult Start(
@@ -44,7 +44,7 @@ public override MLResult Start(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Params](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Params.md) |queryParams|A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
+| [Params](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Params.md) |queryParams|A collection of filters for Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
 
 
 
@@ -53,7 +53,7 @@ public override MLResult Start(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
 
 ```csharp
 public MLResult Start(
@@ -67,7 +67,7 @@ public MLResult Start(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Params](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Params.md) |parameters|A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
+| [Params](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Params.md) |parameters|A collection of filters for Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
 | out uint |resultsCount||
 
 
@@ -77,7 +77,7 @@ public MLResult Start(
 
 -----------
 
-### override [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#override-trygetresult}
+### override [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#override-trygetresult}
 
 ```csharp
 public override MLResult TryGetResult(
@@ -90,7 +90,7 @@ public override MLResult TryGetResult(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [Result](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
+| out [Result](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
 
 
 
@@ -99,7 +99,7 @@ public override MLResult TryGetResult(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#mlresult-trygetresult}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#mlresult-trygetresult}
 
 ```csharp
 public MLResult TryGetResult(
@@ -116,7 +116,7 @@ public MLResult TryGetResult(
 |--|--|--|
 | int |firstIndex||
 | int |lastIndex||
-| out [Result](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
+| out [Result](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.Result.md) |result||
 
 
 
@@ -145,7 +145,7 @@ protected virtual override void Dispose(
 
 
 
-**Reimplements**: [Dispose](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-void-dispose)
+**Reimplements**: [Dispose](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-void-dispose)
 
 
 

@@ -48,7 +48,7 @@ public delegate void OnCaptionLinesDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [CaptionLine](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.CaptionLine.md) [] |lines||
+| [CaptionLine](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.CaptionLine.md) [] |lines||
 
 
 

@@ -17,7 +17,7 @@ A structure containing information about the device's localization state.
 
 ## Public Methods
 
-### [MLSpatialAnchorLocalizationInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorLocalizationInfo.md) Create {#mlspatialanchorlocalizationinfo-create}
+### [MLSpatialAnchorLocalizationInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorLocalizationInfo.md) Create {#mlspatialanchorlocalizationinfo-create}
 
 ```csharp
 public static MLSpatialAnchorLocalizationInfo Create()
@@ -66,7 +66,7 @@ public readonly LocalizationStatus LocalizationStatus;
 
 | Type | Description  | 
 |--|--|
-| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
+| readonly [LocalizationStatus](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
 
 
 
@@ -86,7 +86,7 @@ public readonly MappingMode MappingMode;
 
 | Type | Description  | 
 |--|--|
-| readonly [MappingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
+| readonly [MappingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
 
 
 
@@ -106,7 +106,7 @@ public readonly NativeBindings.MLUUIDBytes SpaceId;
 
 | Type | Description  | 
 |--|--|
-| readonly [NativeBindings.MLUUIDBytes](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) | Universally unique identifier, byte array.  |
+| readonly [NativeBindings.MLUUIDBytes](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUIDBytes.md) | Universally unique identifier, byte array.  |
 
 
 
@@ -143,7 +143,7 @@ public readonly MagicLeapNativeBindings.MLCoordinateFrameUID TargetSpaceOrigin;
 
 | Type | Description  | 
 |--|--|
-| readonly [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
+| readonly [MagicLeapNativeBindings.MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 

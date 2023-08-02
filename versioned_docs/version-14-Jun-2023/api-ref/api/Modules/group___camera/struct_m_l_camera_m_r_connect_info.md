@@ -5,7 +5,7 @@ title: MLCameraMRConnectInfo
 
 # MLCameraMRConnectInfo
 
-**Module:** **[Camera](/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLCameraMRConnectInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCameraMRQuality](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality) | **[quality](/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md#mlcameramrquality-quality)**  |
-| [MLCameraMRBlendType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype) | **[blend_type](/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md#mlcameramrblendtype-blend-type)**  |
-| [MLCameraCaptureFrameRate](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate) | **[frame_rate](/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md#mlcameracaptureframerate-frame-rate)**  |
+| [MLCameraMRQuality](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality) | **[quality](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md#mlcameramrquality-quality)**  |
+| [MLCameraMRBlendType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype) | **[blend_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md#mlcameramrblendtype-blend-type)**  |
+| [MLCameraCaptureFrameRate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate) | **[frame_rate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md#mlcameracaptureframerate-frame-rate)**  |
 
 ## Detailed Description
 
@@ -48,7 +48,7 @@ MLCameraMRQuality quality;
 
 | Type | Description |
 |--|--|
-| [MLCameraMRQuality](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality) | Video Quality enumeration for mixed reality capture.  |
+| [MLCameraMRQuality](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality) | Video Quality enumeration for mixed reality capture.  |
 
 
 Video quality. 
@@ -84,7 +84,7 @@ MLCameraCaptureFrameRate frame_rate;
 
 | Type | Description |
 |--|--|
-| [MLCameraCaptureFrameRate](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate) | Captures frame rate.  |
+| [MLCameraCaptureFrameRate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate) | Captures frame rate.  |
 
 
 Capture frame rate. 

@@ -27,7 +27,7 @@ public struct PlaneBoundaryCollection : IEquatable< PlaneBoundaryCollection >
 
 Each Magic Leap plane can have multiple plane boundaries. This collection represents the set of all boundaries associated with a particular plane. Note that unlike most boundaries associated with  BoundedPlane s, these are not necessarily convex. 
 
-The plane boundaries are tied to native resources which are managed by the MagicLeapPlaneSubsystem. Typically, a  [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md)  is only valid until the next call to MagicLeapPlaneSubsystem.GetChanges(BoundedPlane, Allocator), so you should not hold onto an instance of this struct past a frame boundary. 
+The plane boundaries are tied to native resources which are managed by the MagicLeapPlaneSubsystem. Typically, a  [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md)  is only valid until the next call to MagicLeapPlaneSubsystem.GetChanges(BoundedPlane, Allocator), so you should not hold onto an instance of this struct past a frame boundary. 
 
 
 . 
@@ -73,7 +73,7 @@ public PlaneBoundary this[int index] { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) | Container for the boundary of a detected planar surface. This is specific to Magic Leap because the polygon describing the boundary may be concave, and may contain holes.  |
+| [PlaneBoundary](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) | Container for the boundary of a detected planar surface. This is specific to Magic Leap because the polygon describing the boundary may be concave, and may contain holes.  |
 
 **Parameters**
 
@@ -86,9 +86,9 @@ public PlaneBoundary this[int index] { get; set; }
 
 **Exceptions**: 
 
-  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-valid) is  false .
+  * `System.InvalidOperationException` Thrown if [valid](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-valid) is  false .
   * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
-  * `System.ArgumentOutOfRangeException` Thrown if _index_  is less than zero or greater than or equal to [count](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#int-count).
+  * `System.ArgumentOutOfRangeException` Thrown if _index_  is less than zero or greater than or equal to [count](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#int-count).
 
 
 
@@ -142,7 +142,7 @@ public override bool Equals(
 
 
 
-**Returns**:  true  if _obj_  is of type [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) and compares equal with [Equals(PlaneBoundaryCollection)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals).
+**Returns**:  true  if _obj_  is of type [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) and compares equal with [Equals(PlaneBoundaryCollection)](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals).
 
 
 
@@ -163,20 +163,20 @@ public bool Equals(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |other|The [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) to compare against.|
+| [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |other|The [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) to compare against.|
 
 
 
 
 
 
-**Returns**:  true  if all fields of this [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) compare equal to _other_ .
+**Returns**:  true  if all fields of this [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) compare equal to _other_ .
 
 
 
 -----------
 
-### [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) GetEnumerator {#enumerator-getenumerator}
+### [Enumerator](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) GetEnumerator {#enumerator-getenumerator}
 
 Get an enumerator, compatible with a duck-typed foreach. You typically would not call this directly, but is used by the compiler in a  foreach  statement. 
 
@@ -189,7 +189,7 @@ public Enumerator GetEnumerator()
 
 
 
-**Returns**: An [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) compatible with a duck-typed foreach.
+**Returns**: An [Enumerator](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) compatible with a duck-typed foreach.
 
 
 
@@ -216,7 +216,7 @@ public override int GetHashCode()
 
 ### bool operator!= {#bool-operator}
 
-Comapres for inequality. Same as  ! [Equals(PlaneBoundaryCollection)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
+Comapres for inequality. Same as  ! [Equals(PlaneBoundaryCollection)](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
 
 ```csharp
 public static bool operator!=(
@@ -230,15 +230,15 @@ public static bool operator!=(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
+| [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
+| [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
 
 
 
 
 
 
-**Returns**:  true  if any of the fields of this [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) are not equal to _other_ .
+**Returns**:  true  if any of the fields of this [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) are not equal to _other_ .
 
 
 
@@ -246,7 +246,7 @@ public static bool operator!=(
 
 ### bool operator== {#bool-operator}
 
-Comapres for equality. Same as [Equals(PlaneBoundaryCollection)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
+Comapres for equality. Same as [Equals(PlaneBoundaryCollection)](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md#bool-equals). 
 
 ```csharp
 public static bool operator==(
@@ -260,15 +260,15 @@ public static bool operator==(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
+| [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |lhs|The left-hand side of the comparison.|
+| [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) |rhs|The right-hand side of the comparison.|
 
 
 
 
 
 
-**Returns**:  true  if all fields of this [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) compare equal to _other_ .
+**Returns**:  true  if all fields of this [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) compare equal to _other_ .
 
 
 

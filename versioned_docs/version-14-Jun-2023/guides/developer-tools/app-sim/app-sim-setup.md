@@ -37,7 +37,7 @@ Intel integrated graphics are not supported. Consult the tables below for the mi
 
 ## Installing Application Simulator
 
-Application Simulator is typically installed as an optional component when installing bundles in the [ML Hub's Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md). If the Application Simulator activity card is already present in the ML Hub, you have already installed Application Simulator, but the Application Simulator Runtime package may need to be updated when you update the ML Hub (the app will let you know if this is required).
+Application Simulator is typically installed as an optional component when installing bundles in the [ML Hub's Package Manager](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md). If the Application Simulator activity card is already present in the ML Hub, you have already installed Application Simulator, but the Application Simulator Runtime package may need to be updated when you update the ML Hub (the app will let you know if this is required).
 
 <Image url= {require("/img/app-sim/ml_hub_app_sim.png")} >Start Application Simulator from the Application Simulator Activity Card</Image>
 

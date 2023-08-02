@@ -12,16 +12,16 @@ summary: see ml-space.h for additional comments.
 See ml&#95;space.h for additional comments.   
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceExportSpace {#mlresultcode-mlspaceexportspace}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceExportSpace {#mlresultcode-mlspaceexportspace}
 
-Export an on device Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
+Export an on device Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 public MLResult.Code MLSpaceExportSpace(
@@ -35,8 +35,8 @@ public MLResult.Code MLSpaceExportSpace(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [SpaceExportInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportInfo.md) |exportInfo|A structure containing information about the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) export settings. This structure must be initialized by calling #MLSpaceExportInfoInit before use. |
-| ref [SpaceExportOutData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
+| in [SpaceExportInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportInfo.md) |exportInfo|A structure containing information about the [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) export settings. This structure must be initialized by calling #MLSpaceExportInfoInit before use. |
+| ref [SpaceExportOutData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
 
 
 
@@ -45,7 +45,7 @@ public MLResult.Code MLSpaceExportSpace(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceGetLocalizationResult {#mlresultcode-mlspacegetlocalizationresult}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceGetLocalizationResult {#mlresultcode-mlspacegetlocalizationresult}
 
 Get the localization results. 
 
@@ -62,7 +62,7 @@ public MLResult.Code MLSpaceGetLocalizationResult(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| out [SpaceLocalizationResult](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationResult.md) |result|A structure containing information about the device's localization state. This structure must be initialized by calling #MLSpaceLocalizationResultInit before usebefore use. |
+| out [SpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationResult.md) |result|A structure containing information about the device's localization state. This structure must be initialized by calling #MLSpaceLocalizationResultInit before usebefore use. |
 
 
 
@@ -71,7 +71,7 @@ public MLResult.Code MLSpaceGetLocalizationResult(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceGetSpaceList {#mlresultcode-mlspacegetspacelist}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceGetSpaceList {#mlresultcode-mlspacegetspacelist}
 
 Get the list of available spaces. The list of spaces returned will depend on the current device mapping mode. Only the Spaces associated with the current mapping mode will be returned by this call.Device mapping mode can be changed via the system application(s). 
 
@@ -89,13 +89,13 @@ public MLResult.Code MLSpaceGetSpaceList(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |hanlde||
-| out [SpaceFilter](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceFilter.md) |queryFilter|A collection of filters for Magic Leap Spaces. This structure must be initialized by calling #MLSpaceQueryFilterInit before use. There is no support for filters at this time. |
-| out [SpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceList.md) |spaceList|A structure containing list of #MLSpace. This structure must be initialized by calling #MLSpaceListInit before use. |
+| out [SpaceFilter](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceFilter.md) |queryFilter|A collection of filters for Magic Leap Spaces. This structure must be initialized by calling #MLSpaceQueryFilterInit before use. There is no support for filters at this time. |
+| out [SpaceList](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceList.md) |spaceList|A structure containing list of #MLSpace. This structure must be initialized by calling #MLSpaceListInit before use. |
 
 
 **Details**
 
-The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist) to release the memory. Each get [MLSpaceGetSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacegetspacelist) should have a corresponding [MLSpaceReleaseSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist). 
+The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist) to release the memory. Each get [MLSpaceGetSpaceList](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacegetspacelist) should have a corresponding [MLSpaceReleaseSpaceList](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist). 
 
 
 
@@ -103,9 +103,9 @@ The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/unity-a
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceImportSpace {#mlresultcode-mlspaceimportspace}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceImportSpace {#mlresultcode-mlspaceimportspace}
 
-Import a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). The #MLSpaceImportInfo memory is owned by the app and the app should make sure to release the memory once the API call has returned 
+Import a Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). The #MLSpaceImportInfo memory is owned by the app and the app should make sure to release the memory once the API call has returned 
 
 ```csharp
 public MLResult.Code MLSpaceImportSpace(
@@ -119,8 +119,8 @@ public MLResult.Code MLSpaceImportSpace(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [SpaceImportInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceImportInfo.md) |importInfo|A structure containing information needed to import Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceImportInfoInit before use. |
-| ref [SpaceImportOutData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceImportOutData.md) |data|A structure containing information about the imported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
+| in [SpaceImportInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceImportInfo.md) |importInfo|A structure containing information needed to import Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceImportInfoInit before use. |
+| ref [SpaceImportOutData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceImportOutData.md) |data|A structure containing information about the imported [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
 
 
 
@@ -129,9 +129,9 @@ public MLResult.Code MLSpaceImportSpace(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceManagerCreate {#mlresultcode-mlspacemanagercreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceManagerCreate {#mlresultcode-mlspacemanagercreate}
 
-Creates a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) manager handle. 
+Creates a Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) manager handle. 
 
 ```csharp
 public MLResult.Code MLSpaceManagerCreate(
@@ -145,7 +145,7 @@ public MLResult.Code MLSpaceManagerCreate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Settings.md) |settings|A structure containing settings for the space manager. This structure must be initialized by calling #MLSpaceManagerSettingsInit before use. |
+| in [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Settings.md) |settings|A structure containing settings for the space manager. This structure must be initialized by calling #MLSpaceManagerSettingsInit before use. |
 | out ulong |handle||
 
 
@@ -155,9 +155,9 @@ public MLResult.Code MLSpaceManagerCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceManagerDestroy {#mlresultcode-mlspacemanagerdestroy}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceManagerDestroy {#mlresultcode-mlspacemanagerdestroy}
 
-Destroys a [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) manager handle. 
+Destroys a [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) manager handle. 
 
 ```csharp
 public MLResult.Code MLSpaceManagerDestroy(
@@ -179,9 +179,9 @@ public MLResult.Code MLSpaceManagerDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceReleaseExportData {#mlresultcode-mlspacereleaseexportdata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceReleaseExportData {#mlresultcode-mlspacereleaseexportdata}
 
-Release resources acquired in [MLSpaceExportSpace](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspaceexportspace). 
+Release resources acquired in [MLSpaceExportSpace](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspaceexportspace). 
 
 ```csharp
 public MLResult.Code MLSpaceReleaseExportData(
@@ -194,7 +194,7 @@ public MLResult.Code MLSpaceReleaseExportData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [SpaceExportOutData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
+| ref [SpaceExportOutData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
 
 
 
@@ -203,7 +203,7 @@ public MLResult.Code MLSpaceReleaseExportData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceReleaseSpaceList {#mlresultcode-mlspacereleasespacelist}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceReleaseSpaceList {#mlresultcode-mlspacereleasespacelist}
 
 Release the list of available spaces. 
 
@@ -220,7 +220,7 @@ public MLResult.Code MLSpaceReleaseSpaceList(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| out [SpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceList.md) |list|A structure containing list of #MLSpace. This structure must be initialized by calling #MLSpaceListInit before use. |
+| out [SpaceList](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceList.md) |list|A structure containing list of #MLSpace. This structure must be initialized by calling #MLSpaceListInit before use. |
 
 
 
@@ -229,9 +229,9 @@ public MLResult.Code MLSpaceReleaseSpaceList(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceRequestLocalization {#mlresultcode-mlspacerequestlocalization}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceRequestLocalization {#mlresultcode-mlspacerequestlocalization}
 
-Send a request to localize to a given Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
+Send a request to localize to a given Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 public MLResult.Code MLSpaceRequestLocalization(
@@ -246,7 +246,7 @@ public MLResult.Code MLSpaceRequestLocalization(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| ref [SpaceLocalizationInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationInfo.md) |spaceList|A collection of parameters to be used for localization request. This structure must be initialized by calling #MLSpaceLocalizationInfoInit before use. |
+| ref [SpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationInfo.md) |spaceList|A collection of parameters to be used for localization request. This structure must be initialized by calling #MLSpaceLocalizationInfoInit before use. |
 
 
 
@@ -255,9 +255,9 @@ public MLResult.Code MLSpaceRequestLocalization(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceSetCallbacks {#mlresultcode-mlspacesetcallbacks}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceSetCallbacks {#mlresultcode-mlspacesetcallbacks}
 
-Set the callbacks for events related to the Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
+Set the callbacks for events related to the Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 public MLResult.Code MLSpaceSetCallbacks(
@@ -273,7 +273,7 @@ public MLResult.Code MLSpaceSetCallbacks(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| ref [SpaceCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceCallbacks.md) |callbacks|A structure containing callbacks for events related to the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceCallbacksInit before use. Application can unregister(stop receiving callbacks) at any time by setting the corresponding callback to NULL. |
+| ref [SpaceCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceCallbacks.md) |callbacks|A structure containing callbacks for events related to the [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceCallbacksInit before use. Application can unregister(stop receiving callbacks) at any time by setting the corresponding callback to NULL. |
 | IntPtr |userData||
 
 

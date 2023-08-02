@@ -16,21 +16,21 @@ Magic Leap recommends reviewing the installed infrastructure to align with secur
 - Configure Kubernetes secrets to use a secret manager such as Vault together with an
 [external secret operator](https://github.com/external-secrets/external-secrets).
 - Follow security best practices when deploying each of the preexisting components
-  - Best practices for [Securing a Kubernetes Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
-  - [Kubernetes Security Checklist](https://kubernetes.io/docs/concepts/security/security-checklist/)
+  - Best practices for [Securing a Kubernetes Cluster](https://kubernetes.io/versioned_docs/version-14-Jun-2023/tasks/administer-cluster/securing-a-cluster/)
+  - [Kubernetes Security Checklist](https://kubernetes.io/versioned_docs/version-14-Jun-2023/concepts/security/security-checklist/)
   - [Kubernetes Hardening Guide](https://www.cisa.gov/uscert/ncas/current-activity/2022/03/15/updated-kubernetes-hardening-guide)
-  - Deployment guide for [OPA](https://www.openpolicyagent.org/docs/latest/deployments/)
-  - Deployment best practices for [Istio](https://istio.io/latest/docs/ops/best-practices/deployment/)
-  - Security guidelines for [PostgreSQL](https://www.postgresql.org/docs/7.0/security.htm):
-    - [Client Authentication](https://www.postgresql.org/docs/current/client-authentication.html)
-    - [Database Roles](https://www.postgresql.org/docs/current/user-manag.html)
-    - [Privileges](https://www.postgresql.org/docs/current/ddl-priv.html)
-    - [GCP Cloud SQL best practices](https://cloud.google.com/sql/docs/postgres/best-practices)
+  - Deployment guide for [OPA](https://www.openpolicyagent.org/versioned_docs/version-14-Jun-2023/latest/deployments/)
+  - Deployment best practices for [Istio](https://istio.io/latest/versioned_docs/version-14-Jun-2023/ops/best-practices/deployment/)
+  - Security guidelines for [PostgreSQL](https://www.postgresql.org/versioned_docs/version-14-Jun-2023/7.0/security.htm):
+    - [Client Authentication](https://www.postgresql.org/versioned_docs/version-14-Jun-2023/current/client-authentication.html)
+    - [Database Roles](https://www.postgresql.org/versioned_docs/version-14-Jun-2023/current/user-manag.html)
+    - [Privileges](https://www.postgresql.org/versioned_docs/version-14-Jun-2023/current/ddl-priv.html)
+    - [GCP Cloud SQL best practices](https://cloud.google.com/sql/versioned_docs/version-14-Jun-2023/postgres/best-practices)
     - [AWS RDS best practices](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.Security.html)
   - IAM:
-    - [GCP Use IAM securely](https://cloud.google.com/iam/docs/using-iam-securely)
-        - [Use Workload identity](https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity)
-        - [Use Cloud SQL IAM database authentication](https://cloud.google.com/sql/docs/postgres/authentication)
+    - [GCP Use IAM securely](https://cloud.google.com/iam/versioned_docs/version-14-Jun-2023/using-iam-securely)
+        - [Use Workload identity](https://cloud.google.com/kubernetes-engine/versioned_docs/version-14-Jun-2023/how-to/workload-identity)
+        - [Use Cloud SQL IAM database authentication](https://cloud.google.com/sql/versioned_docs/version-14-Jun-2023/postgres/authentication)
     - [AWS Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
 ### What To Avoid?

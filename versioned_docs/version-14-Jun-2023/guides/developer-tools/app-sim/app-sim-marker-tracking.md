@@ -8,17 +8,17 @@ keywords: [Application Simulator, Marker Tracking]
 
 ## Marker Tracking with the Application Simulator
 
-This guide explains how to use the marker tracking feature in Magic Leap's Application Simulator in [Simulator, Hybrid, and Device modes](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/app-sim/using-app-sim). You'll walk through how to use the marker tracking feature in the Application Simulator.
+This guide explains how to use the marker tracking feature in Magic Leap's Application Simulator in [Simulator, Hybrid, and Device modes](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/using-app-sim). You'll walk through how to use the marker tracking feature in the Application Simulator.
 
 ## Prerequisites
 
-Make sure the [Magic Leap Hub and Magic Leap Application Simulator is installed](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/app-sim/app-sim-setup).
+Make sure the [Magic Leap Hub and Magic Leap Application Simulator is installed](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-sim-setup).
 
 ## Simulator and Hybrid Modes
 
 In these two modes, you are going to add "virtual" markers in your "virtual room." The Application Simulator will detect the markers based on what your application specifies to detect, and notify your application. Do the following: 
 
-1. Start the [Application Simulator](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/app-sim/app-sim-setup#starting-application-simulator).
+1. Start the [Application Simulator](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-sim-setup#starting-application-simulator).
 2. Go to the **Marker Tracking** panel and click the **Add Marker** button.
 
 <Image url= {require("/img/app-sim/add_marker_panel.png")}>Marker Tracking Panel</Image>

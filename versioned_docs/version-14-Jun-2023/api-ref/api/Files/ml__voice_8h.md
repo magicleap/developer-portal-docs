@@ -11,42 +11,42 @@ title: ml_voice.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)** <br></br>A structure containing voice app-intent slot in voice event.  |
-| struct | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)** <br></br>A structure containing voice intent event.  |
-| struct | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)** <br></br>A structure containing callbacks for voice intent events.  |
-| struct | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)** <br></br>A structure containing settings for voice app intent.  |
+| struct | **[MLInputVoiceAppIntentSlot](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)** <br></br>A structure containing voice app-intent slot in voice event.  |
+| struct | **[MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)** <br></br>A structure containing voice intent event.  |
+| struct | **[MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)** <br></br>A structure containing callbacks for voice intent events.  |
+| struct | **[MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)** <br></br>A structure containing settings for voice app intent.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputvoiceappintentslot)** <br></br>A structure containing voice app-intent slot in voice event.  |
-| typedef struct [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentevent)** <br></br>A structure containing voice intent event.  |
-| typedef struct [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentcallbacks)** <br></br>A structure containing callbacks for voice intent events.  |
-| typedef struct [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentsettings)** <br></br>A structure containing settings for voice app intent.  |
+| typedef struct [MLInputVoiceAppIntentSlot](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) | **[MLInputVoiceAppIntentSlot](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputvoiceappintentslot)** <br></br>A structure containing voice app-intent slot in voice event.  |
+| typedef struct [MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) | **[MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentevent)** <br></br>A structure containing voice intent event.  |
+| typedef struct [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) | **[MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentcallbacks)** <br></br>A structure containing callbacks for voice intent events.  |
+| typedef struct [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) | **[MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentsettings)** <br></br>A structure containing settings for voice app intent.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 29](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-29)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Files/ml__voice_8h.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
-| enum | **[MLVoiceResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
-| enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
-| enum | **[MLVoiceIntentNoIntentReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
+| enum | **[Anonymous Enum 29](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-29)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
+| enum | **[MLVoiceResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
+| enum | **[MLVoiceState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
+| enum | **[MLVoiceIntentNoIntentReason](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__voice_8h.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLVoiceIntentCallbacksInit](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit)**([MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * inout_callbacks)<br></br>Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md).  |
-| void | **[MLVoiceIntentSettingsInit](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit)**([MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * inout_settings)<br></br>Initializes default values for [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentCreate](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a voice intent client.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentDestroy](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a voice intent client.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentConfigureSettings](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentconfiguresettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * voice_settings)<br></br>Sets the settings for voice intent events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentSetCallbacks](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentsetcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * voice_callbacks, void * user_data)<br></br>Sets the callbacks for voice intent events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Starts voice intent processing.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Stops voice intent processing.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentIsEnabled](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentisenabled)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, bool * out_is_enabled)<br></br>Checks voice intent feature is enabled in the system.  |
+| void | **[MLVoiceIntentCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit)**([MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * inout_callbacks)<br></br>Initializes default values for [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md).  |
+| void | **[MLVoiceIntentSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit)**([MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * inout_settings)<br></br>Initializes default values for [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentcreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a voice intent client.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a voice intent client.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentConfigureSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentconfiguresettings)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * voice_settings)<br></br>Sets the settings for voice intent events.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentSetCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentsetcallbacks)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * voice_callbacks, void * user_data)<br></br>Sets the callbacks for voice intent events.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStartProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Starts voice intent processing.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStopProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Stops voice intent processing.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentIsEnabled](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentisenabled)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, bool * out_is_enabled)<br></br>Checks voice intent feature is enabled in the system.  |
 
 ## Enums Documentation
 
@@ -121,8 +121,8 @@ Voice state in voice event.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLVoiceIntentNoIntentReason_NoReason |  0| In case of success. |
-| MLVoiceIntentNoIntentReason_Silence |  1| When the MLVoiceState in [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is either MLVoiceState_IntentSessionEndedTimeout or MLVoiceState_IntentSessionEndedError. |
-| MLVoiceIntentNoIntentReason_NoMatch |  2| When the MLVoiceState in [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is MLVoiceState_IntentSessionEndedNoIntent. |
+| MLVoiceIntentNoIntentReason_Silence |  1| When the MLVoiceState in [MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is either MLVoiceState_IntentSessionEndedTimeout or MLVoiceState_IntentSessionEndedError. |
+| MLVoiceIntentNoIntentReason_NoMatch |  2| When the MLVoiceState in [MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is MLVoiceState_IntentSessionEndedNoIntent. |
 | MLVoiceIntentNoIntentReason_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -153,7 +153,7 @@ A structure containing voice app-intent slot in voice event.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
 
 
 **API Level:**
@@ -174,7 +174,7 @@ A structure containing voice intent event.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)
 
 
 **API Level:**
@@ -195,11 +195,11 @@ A structure containing callbacks for voice intent events.
 
 The final parameter to all the callbacks is a void *, which will point to whatever payload data the user provides in MLVoiceIntentSetCallbacks. Individual callbacks which are not required by the client can be NULL.
 
-This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit) before use.
+This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)
 
 
 **API Level:**
@@ -218,11 +218,11 @@ typedef struct MLVoiceIntentSettings MLVoiceIntentSettings;
 
 A structure containing settings for voice app intent. 
 
-This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit) before use.
+This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)
 
 
 **API Level:**
@@ -244,13 +244,13 @@ static inline void MLVoiceIntentCallbacksInit(
 )
 ```
 
-Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md). 
+Initializes default values for [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |inout_callbacks|The object to initialize with default settings.|
+| [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |inout_callbacks|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -275,13 +275,13 @@ static inline void MLVoiceIntentSettingsInit(
 )
 ```
 
-Initializes default values for [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md). 
+Initializes default values for [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |inout_settings|The object to initialize with default settings.|
+| [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |inout_settings|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -312,15 +312,15 @@ Creates a voice intent client.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created voice intent client. Only valid if the return value is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created voice intent client. Only valid if the return value is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create the voice intent client due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created the voice intent client. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed to create client due to missing permission.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create the voice intent client due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created the voice intent client. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed to create client due to missing permission.|
 **Required Permissions**:
 
   * com.magicleap.permission.VOICE_INPUT (protection level: dangerous) 
@@ -351,14 +351,14 @@ Destroys a voice intent client.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the voice intent client to destroy.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the voice intent client to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the voice intent client due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the voice intent client.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the voice intent client due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the voice intent client.|
 **Required Permissions**:
 
   * None 
@@ -385,17 +385,17 @@ Sets the settings for voice intent events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
-| const [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |voice_settings|Pointer to [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) structure.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
+| const [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |voice_settings|Pointer to [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) structure.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set settings for voice intent events due to an invalid param. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set settings for voice intent events. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the settings because required voice intent feature is disabled. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set settings for voice intent events due to an invalid param. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set settings for voice intent events. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the settings because required voice intent feature is disabled. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -430,18 +430,18 @@ Sets the callbacks for voice intent events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
-| const [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |voice_callbacks|Pointer to [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) structure. Set this to NULL to unregister callbacks. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
+| const [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |voice_callbacks|Pointer to [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) structure. Set this to NULL to unregister callbacks. |
 | void * |user_data|Pointer to user payload data (can be NULL).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set callbacks for voice intent events due to an invalid param. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callbacks for voice intent events. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the callbacks because required voice intent feature is disabled in system settings. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set callbacks for voice intent events due to an invalid param. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callbacks for voice intent events. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the callbacks because required voice intent feature is disabled in system settings. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -472,15 +472,15 @@ Starts voice intent processing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start processing due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully start intent processing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start processing due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully start intent processing. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -488,7 +488,7 @@ Starts voice intent processing.
 
 This API call affects the system voice service.
 
-NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
+NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
 
 
 
@@ -515,15 +515,15 @@ Stops voice intent processing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop processing due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stop intent processing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop processing due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stop intent processing. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -531,7 +531,7 @@ Stops voice intent processing.
 
 This API call affects the system voice service.
 
-NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
+NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
 
 
 
@@ -559,15 +559,15 @@ Checks voice intent feature is enabled in the system.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
 | bool * |out_is_enabled|Returns status whether voice intent feature is enabled in system settings.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to check due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The API call completed successfuly.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to check due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The API call completed successfuly.|
 **Required Permissions**:
 
   * None 

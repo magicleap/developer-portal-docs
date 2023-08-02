@@ -12,40 +12,40 @@ APIs for the Gesture Classification system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md)** <br></br>Static information about the gesture classification.  |
-| struct | **[MLGestureClassificationPostureFingerData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md)** <br></br>Gesture classification posture related finger data.  |
-| struct | **[MLGestureClassificationFingerState](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md)** <br></br>Gesture classification state of a single finger.  |
-| struct | **[MLGestureClassificationState](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_state.md)** <br></br>Gesture classification state of a single hand.  |
-| struct | **[MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md)** <br></br>Data which is received when querying tracker from [MLGestureClassificationGetData()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata).  |
+| struct | **[MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md)** <br></br>Static information about the gesture classification.  |
+| struct | **[MLGestureClassificationPostureFingerData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md)** <br></br>Gesture classification posture related finger data.  |
+| struct | **[MLGestureClassificationFingerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md)** <br></br>Gesture classification state of a single finger.  |
+| struct | **[MLGestureClassificationState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_state.md)** <br></br>Gesture classification state of a single hand.  |
+| struct | **[MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md)** <br></br>Data which is received when querying tracker from [MLGestureClassificationGetData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata).  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) | **[MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationstaticdata)** <br></br>Static information about the gesture classification.  |
-| typedef struct [MLGestureClassificationPostureFingerData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md) | **[MLGestureClassificationPostureFingerData](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationposturefingerdata)** <br></br>Gesture classification posture related finger data.  |
-| typedef struct [MLGestureClassificationFingerState](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md) | **[MLGestureClassificationFingerState](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationfingerstate)** <br></br>Gesture classification state of a single finger.  |
-| typedef struct [MLGestureClassificationState](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_state.md) | **[MLGestureClassificationState](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationstate)** <br></br>Gesture classification state of a single hand.  |
-| typedef struct [MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) | **[MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationdata)** <br></br>Data which is received when querying tracker from [MLGestureClassificationGetData()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata).  |
+| typedef struct [MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) | **[MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationstaticdata)** <br></br>Static information about the gesture classification.  |
+| typedef struct [MLGestureClassificationPostureFingerData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md) | **[MLGestureClassificationPostureFingerData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationposturefingerdata)** <br></br>Gesture classification posture related finger data.  |
+| typedef struct [MLGestureClassificationFingerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md) | **[MLGestureClassificationFingerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationfingerstate)** <br></br>Gesture classification state of a single finger.  |
+| typedef struct [MLGestureClassificationState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_state.md) | **[MLGestureClassificationState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationstate)** <br></br>Gesture classification state of a single hand.  |
+| typedef struct [MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) | **[MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#struct-mlgestureclassificationdata)** <br></br>Data which is received when querying tracker from [MLGestureClassificationGetData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata).  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLGestureClassificationHandType](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype)** <br></br> { <br></br>[MLGestureClassificationHandType_Left](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-left) = 0,<br></br> [MLGestureClassificationHandType_Right](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-right) = 1,<br></br> [MLGestureClassificationHandType_Count](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-count) = 2,<br></br> [MLGestureClassificationHandType_Ensure32Bits](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLGestureClassificationPostureType](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype)** <br></br> { <br></br>[MLGestureClassificationPostureType_None](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-none) = 0,<br></br> [MLGestureClassificationPostureType_Pinch](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-pinch) = 1,<br></br> [MLGestureClassificationPostureType_Point](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-point) = 2,<br></br> [MLGestureClassificationPostureType_Grasp](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-grasp) = 3,<br></br> [MLGestureClassificationPostureType_Open](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-open) = 4,<br></br> [MLGestureClassificationPostureType_Ensure32Bits](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>System gesture classification posture type.  |
-| enum | **[MLGestureClassificationKeyPoseType](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype)** <br></br> { <br></br>[MLGestureClassificationKeyPoseType_None](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-none) = 0,<br></br> [MLGestureClassificationKeyPoseType_OK](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-ok) = 1,<br></br> [MLGestureClassificationKeyPoseType_C](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-c) = 2,<br></br> [MLGestureClassificationKeyPoseType_Pinch](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-pinch) = 3,<br></br> [MLGestureClassificationKeyPoseType_Finger](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-finger) = 4,<br></br> [MLGestureClassificationKeyPoseType_L](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-l) = 5,<br></br> [MLGestureClassificationKeyPoseType_Thumb](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-thumb) = 6,<br></br> [MLGestureClassificationKeyPoseType_Fist](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-fist) = 7,<br></br> [MLGestureClassificationKeyPoseType_Open](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-open) = 8,<br></br> [MLGestureClassificationKeyPoseType_Ensure32Bits](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>System gesture classification key pose type.  |
+| enum | **[MLGestureClassificationHandType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype)** <br></br> { <br></br>[MLGestureClassificationHandType_Left](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-left) = 0,<br></br> [MLGestureClassificationHandType_Right](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-right) = 1,<br></br> [MLGestureClassificationHandType_Count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-count) = 2,<br></br> [MLGestureClassificationHandType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationhandtype-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLGestureClassificationPostureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype)** <br></br> { <br></br>[MLGestureClassificationPostureType_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-none) = 0,<br></br> [MLGestureClassificationPostureType_Pinch](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-pinch) = 1,<br></br> [MLGestureClassificationPostureType_Point](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-point) = 2,<br></br> [MLGestureClassificationPostureType_Grasp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-grasp) = 3,<br></br> [MLGestureClassificationPostureType_Open](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-open) = 4,<br></br> [MLGestureClassificationPostureType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>System gesture classification posture type.  |
+| enum | **[MLGestureClassificationKeyPoseType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype)** <br></br> { <br></br>[MLGestureClassificationKeyPoseType_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-none) = 0,<br></br> [MLGestureClassificationKeyPoseType_OK](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-ok) = 1,<br></br> [MLGestureClassificationKeyPoseType_C](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-c) = 2,<br></br> [MLGestureClassificationKeyPoseType_Pinch](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-pinch) = 3,<br></br> [MLGestureClassificationKeyPoseType_Finger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-finger) = 4,<br></br> [MLGestureClassificationKeyPoseType_L](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-l) = 5,<br></br> [MLGestureClassificationKeyPoseType_Thumb](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-thumb) = 6,<br></br> [MLGestureClassificationKeyPoseType_Fist](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-fist) = 7,<br></br> [MLGestureClassificationKeyPoseType_Open](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-open) = 8,<br></br> [MLGestureClassificationKeyPoseType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>System gesture classification key pose type.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLGestureClassificationStaticDataInit](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationstaticdatainit)**([MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * inout_data)<br></br>Initializes default values for [MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md).  |
-| void | **[MLGestureClassificationDataInit](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationdatainit)**([MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * inout_data)<br></br>Initializes default values for [MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationCreate](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a gesture classification tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationDestroy](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a gesture classification tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationGetStaticData](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetstaticdata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * out_data)<br></br>Gets static information about the gesture classification.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationGetData](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * out_data)<br></br>Queries the state of the gesture classification.  |
+| void | **[MLGestureClassificationStaticDataInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationstaticdatainit)**([MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * inout_data)<br></br>Initializes default values for [MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md).  |
+| void | **[MLGestureClassificationDataInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationdatainit)**([MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * inout_data)<br></br>Initializes default values for [MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a gesture classification tracker.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a gesture classification tracker.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationGetStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetstaticdata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * out_data)<br></br>Gets static information about the gesture classification.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGestureClassificationGetData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * out_data)<br></br>Queries the state of the gesture classification.  |
 
 ## Detailed Description
 
@@ -53,8 +53,8 @@ APIs for the Gesture Classification system.
 
 
 
-1. Postures ([MLGestureClassificationPostureType](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype)).
-2. Key Poses ([MLGestureClassificationKeyPoseType](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype)).
+1. Postures ([MLGestureClassificationPostureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype)).
+2. Key Poses ([MLGestureClassificationKeyPoseType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationkeyposetype)).
 
 # Postures
 
@@ -74,7 +74,7 @@ KeyPoses will work well for use cases where the user need a on-off switch, a but
 
 # Point
 
-The interaction point is a transform which dynamically adapts, in both translation and rotation, based on the current classified posture ([MLGestureClassificationPostureType](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype)). It provides a single optimal point of reference to simplify common direct and indirect hand interactions. 
+The interaction point is a transform which dynamically adapts, in both translation and rotation, based on the current classified posture ([MLGestureClassificationPostureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#enums-mlgestureclassificationposturetype)). It provides a single optimal point of reference to simplify common direct and indirect hand interactions. 
 
 
 
@@ -175,11 +175,11 @@ typedef struct MLGestureClassificationStaticData MLGestureClassificationStaticDa
 
 Static information about the gesture classification. 
 
-Populate with [MLGestureClassificationGetStaticData()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetstaticdata). This structure must be initialized by calling [MLGestureClassificationStaticDataInit()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationstaticdatainit) before use.
+Populate with [MLGestureClassificationGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetstaticdata). This structure must be initialized by calling [MLGestureClassificationStaticDataInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationstaticdatainit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md)
 
 
 **API Level:**
@@ -202,7 +202,7 @@ Pinch values are measured between the finger and thumb. In case thumb is the fin
 
 
 
-[More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md)
 
 
 **API Level:**
@@ -223,7 +223,7 @@ Gesture classification state of a single finger.
 
 
 
-[More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md)
 
 
 **API Level:**
@@ -244,7 +244,7 @@ Gesture classification state of a single hand.
 
 
 
-[More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_state.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_state.md)
 
 
 **API Level:**
@@ -261,13 +261,13 @@ Gesture classification state of a single hand.
 typedef struct MLGestureClassificationData MLGestureClassificationData;
 ```
 
-Data which is received when querying tracker from [MLGestureClassificationGetData()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata). 
+Data which is received when querying tracker from [MLGestureClassificationGetData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationgetdata). 
 
-This structure must be initialized by calling [MLGestureClassificationDataInit()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationdatainit) before use.
+This structure must be initialized by calling [MLGestureClassificationDataInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#void-mlgestureclassificationdatainit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md)
 
 
 **API Level:**
@@ -289,13 +289,13 @@ static inline void MLGestureClassificationStaticDataInit(
 )
 ```
 
-Initializes default values for [MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md). 
+Initializes default values for [MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * |inout_data|The object to initialize with default settings. |
+| [MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * |inout_data|The object to initialize with default settings. |
 
 
 
@@ -315,13 +315,13 @@ static inline void MLGestureClassificationDataInit(
 )
 ```
 
-Initializes default values for [MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md). 
+Initializes default values for [MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * |inout_data|The object to initialize with default settings. |
+| [MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * |inout_data|The object to initialize with default settings. |
 
 
 
@@ -347,17 +347,17 @@ Creates a gesture classification tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created gesture classification tracker. Only valid if the return value is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created gesture classification tracker. Only valid if the return value is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create a tracker due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The tracker was created successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PrivilegeDenied|The application lacks privilege. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create a tracker due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The tracker was created successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PrivilegeDenied|The application lacks privilege. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * com.magicleap.permission.HAND_TRACKING (protection level: normal) 
@@ -388,16 +388,16 @@ Destroys a gesture classification tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a gesture classification tracker created by [MLGestureClassificationCreate()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a gesture classification tracker created by [MLGestureClassificationCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy a tracker due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|It successfully destroyed the tracker. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy a tracker due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|It successfully destroyed the tracker. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -429,17 +429,17 @@ Gets static information about the gesture classification.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a gesture classification tracker created by [MLGestureClassificationCreate()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate). |
-| [MLGestureClassificationStaticData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * |out_data|Target to populate the data about the gesture classification.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a gesture classification tracker created by [MLGestureClassificationCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate). |
+| [MLGestureClassificationStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_static_data.md) * |out_data|Target to populate the data about the gesture classification.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to get static data due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Gesture classification static data was successfully received. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to get static data due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Gesture classification static data was successfully received. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -471,17 +471,17 @@ Queries the state of the gesture classification.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a gesture classification tracker created by [MLGestureClassificationCreate()](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate). |
-| [MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * |out_data|Pointer to [MLGestureClassificationData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) structure.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to a gesture classification tracker created by [MLGestureClassificationCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md#mlresult-mlgestureclassificationcreate). |
+| [MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) * |out_data|Pointer to [MLGestureClassificationData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_data.md) structure.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to retrieve data due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The state information was available and the information in out_data is valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to retrieve data due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The state information was available and the information in out_data is valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 

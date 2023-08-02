@@ -6,7 +6,7 @@ summary: obstruction along a ray.
 
 # MLAudioObstruction
 
-**Module:** **[Audio](/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** **/** **[Spatial Sound](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/group___def_spatial_sound.md)**
+**Module:** **[Audio](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)** **/** **[Acoustics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** **/** **[Spatial Sound](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/group___def_spatial_sound.md)**
 
 
 
@@ -19,8 +19,8 @@ Obstruction along a ray.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[factor](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-factor)**  |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[hit_point](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-hit-point)**  |
+| float | **[factor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-factor)**  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[hit_point](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-hit-point)**  |
 
 ## Detailed Description
 

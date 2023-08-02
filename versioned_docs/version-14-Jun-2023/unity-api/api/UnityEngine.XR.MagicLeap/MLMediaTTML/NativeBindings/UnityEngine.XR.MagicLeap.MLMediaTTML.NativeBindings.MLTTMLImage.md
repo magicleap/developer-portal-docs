@@ -17,7 +17,7 @@ Byte data for TTML image cues.
 
 ## Public Methods
 
-### [MLTTMLImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaTTML.NativeBindings.MLTTMLImage.md) Create {#mlttmlimage-create}
+### [MLTTMLImage](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaTTML.NativeBindings.MLTTMLImage.md) Create {#mlttmlimage-create}
 
 Create and return an initialized version of this struct. 
 
@@ -36,7 +36,7 @@ public static MLTTMLImage Create()
 
 -----------
 
-### [MLTTMLImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaTTML.NativeBindings.MLTTMLImage.md) Create {#mlttmlimage-create}
+### [MLTTMLImage](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaTTML.NativeBindings.MLTTMLImage.md) Create {#mlttmlimage-create}
 
 ```csharp
 public static MLTTMLImage Create(

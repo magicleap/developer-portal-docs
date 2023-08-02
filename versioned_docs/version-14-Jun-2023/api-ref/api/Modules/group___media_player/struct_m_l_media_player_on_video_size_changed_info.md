@@ -6,7 +6,7 @@ summary: mediaplayer video size changed callback info.
 
 # MLMediaPlayerOnVideoSizeChangedInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,9 +19,9 @@ MediaPlayer Video Size Changed callback Info.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int | **[width](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md#int-width)**  |
-| int | **[height](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md#int-height)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md#void-data)**  |
+| int | **[width](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md#int-width)**  |
+| int | **[height](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md#int-height)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -80,7 +80,7 @@ void * data;
 ```
 
 
-User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
+User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
 
 
 

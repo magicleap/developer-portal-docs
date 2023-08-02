@@ -8,13 +8,13 @@ title: MLNativeSurfaceYcbcrRenderer
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
 
 
-Inherits from: <br></br>[YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md),<br></br>[INativeBufferProvider](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.INativeBufferProvider.md),<br></br>[IFrameTransformMatrixProvider](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.IFrameTransformMatrixProvider.md)
+Inherits from: <br></br>[YcbcrRenderer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md),<br></br>[INativeBufferProvider](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.INativeBufferProvider.md),<br></br>[IFrameTransformMatrixProvider](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.IFrameTransformMatrixProvider.md)
 
 
 

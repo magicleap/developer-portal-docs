@@ -213,9 +213,9 @@ public class MarkerSpawner : MonoBehaviour
 
 ## See also
 
-- [`MLMarkerTracker`](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md)
+- [`MLMarkerTracker`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md)
   - API to scan markers and obtain additional data such as 6DOF poses.
-- [`MLMarkerTracker.ArucoData`](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.ArucoData.md)
+- [`MLMarkerTracker.ArucoData`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.ArucoData.md)
   - API that contains the data that belongs to Aruco Markers.
-- [`MLMarkerTracker.Settings`](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md)
+- [`MLMarkerTracker.Settings`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md)
   - Marker Tracker Settings API that contains information such as what type of markers, their sizes, and if the Marker tracker is enabled.

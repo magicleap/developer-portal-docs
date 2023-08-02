@@ -6,7 +6,7 @@ summary: a structure to encapsulate the camera settings.
 
 # MLEyeCameraSettings
 
-**Module:** **[Pixel Sensors](/api-ref/api/Modules/group___pixel_sensors/group___pixel_sensors.md)** **/** **[Eye Camera](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md)**
+**Module:** **[Pixel Sensors](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___pixel_sensors.md)** **/** **[Eye Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md)**
 
 
 
@@ -19,8 +19,8 @@ A structure to encapsulate the camera settings.  [More...](#detailed-description
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md#uint32-t-version)**  |
-| uint32_t | **[cameras](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md#uint32-t-cameras)** <br></br>Eye cameras that need to be enabled.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md#uint32-t-version)**  |
+| uint32_t | **[cameras](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md#uint32-t-cameras)** <br></br>Eye cameras that need to be enabled.  |
 
 ## Detailed Description
 
@@ -30,7 +30,7 @@ struct MLEyeCameraSettings;
 
 A structure to encapsulate the camera settings. 
 
-This structure must be initialized by calling [MLEyeCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#void-mleyecamerasettingsinit) before use.
+This structure must be initialized by calling [MLEyeCameraSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#void-mleyecamerasettingsinit) before use.
 
 
 
@@ -67,7 +67,7 @@ uint32_t cameras;
 
 Eye cameras that need to be enabled. 
 
-See [MLEyeCameraIdentifier](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#enum-mleyecameraidentifier) for more details. If you want to request frames from different eye camera then "OR" the cameras of interest to the app. 
+See [MLEyeCameraIdentifier](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#enum-mleyecameraidentifier) for more details. If you want to request frames from different eye camera then "OR" the cameras of interest to the app. 
 
 
 

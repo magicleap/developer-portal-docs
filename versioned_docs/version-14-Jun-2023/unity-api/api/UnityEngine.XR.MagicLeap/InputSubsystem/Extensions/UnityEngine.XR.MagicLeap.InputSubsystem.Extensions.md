@@ -18,7 +18,7 @@ title: Extensions
 
 ### bool TryGetEyeTrackingState {#bool-trygeteyetrackingstate}
 
-Try to get the [InputSubsystem.Extensions.MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md), InputDevice   from the given . 
+Try to get the [InputSubsystem.Extensions.MLEyes.State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md), InputDevice   from the given . 
 
 ```csharp
 public static bool TryGetEyeTrackingState(
@@ -33,7 +33,7 @@ public static bool TryGetEyeTrackingState(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |eyesDevice|The eye tracking device|
-| out [MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md) |state|The resulting Eye State|
+| out [MLEyes.State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md) |state|The resulting Eye State|
 
 
 **Details**
@@ -55,11 +55,11 @@ if(eyesDevice.isValid){
 
 
 
-**See**: InputDeviceCharacteristics, [InputSubsystem.Utils.FindMagicLeapDevice](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/UnityEngine.XR.MagicLeap.InputSubsystem.Utils.md#inputdevice-findmagicleapdevice), InputDevice.isValid, [MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md), [InputSubsystem.Extensions.MLEyes.State.FixationConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md#readonly-float-fixationconfidence)
+**See**: InputDeviceCharacteristics, [InputSubsystem.Utils.FindMagicLeapDevice](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/UnityEngine.XR.MagicLeap.InputSubsystem.Utils.md#inputdevice-findmagicleapdevice), InputDevice.isValid, [MLEyes.State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md), [InputSubsystem.Extensions.MLEyes.State.FixationConfidence](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md#readonly-float-fixationconfidence)
 
 
 
-**Returns**: True if the resulting [InputSubsystem.Extensions.MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md)
+**Returns**: True if the resulting [InputSubsystem.Extensions.MLEyes.State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md)
 
 
 is valid. 
@@ -83,7 +83,7 @@ public static bool TryGetHeadTrackingState(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |headDevice||
-| out [MLHeadTracking.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.State.md) |headTrackingState|A structure containing information on the current state of the Head Tracking system. |
+| out [MLHeadTracking.State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.State.md) |headTrackingState|A structure containing information on the current state of the Head Tracking system. |
 
 
 
@@ -107,7 +107,7 @@ public static bool TryGetHeadTrackingStateEx(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |headDevice||
-| out [MLHeadTracking.StateEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.StateEx.md) |headTrackingState|A structure containing information on the current state of the Head Tracking system. |
+| out [MLHeadTracking.StateEx](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.StateEx.md) |headTrackingState|A structure containing information on the current state of the Head Tracking system. |
 
 
 

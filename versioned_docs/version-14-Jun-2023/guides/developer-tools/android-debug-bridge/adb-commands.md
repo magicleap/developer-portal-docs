@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 Here are some of the most frequently used ADB commands.
 
-For instructions on how to install and use adb, follow the [ADB Setup Guide](/docs/guides/developer-tools/android-debug-bridge/adb-setup.md).
+For instructions on how to install and use adb, follow the [ADB Setup Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-setup.md).
 
 :::tip
 After entering the adb console with `adb shell`, you can quit by entering `exit` in the console.

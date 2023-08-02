@@ -6,7 +6,7 @@ summary: mediadrm expiration update info associated with a session.
 
 # MLMediaDRMExpirationUpdateInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,9 +19,9 @@ MediaDRM expiration update info associated with a session.  [More...](#detailed-
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md#mlmediadrmbytearray-session-id)**  |
-| uint64_t | **[expiration_time_ms](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md#uint64-t-expiration-time-ms)** <br></br>The new expiration time for the keys in the session. The time is in milliseconds, relative to the Unix epoch. A time of 0 indicates that the keys never expire.  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md#void-data)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md#mlmediadrmbytearray-session-id)**  |
+| uint64_t | **[expiration_time_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md#uint64-t-expiration-time-ms)** <br></br>The new expiration time for the keys in the session. The time is in milliseconds, relative to the Unix epoch. A time of 0 indicates that the keys never expire.  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_expiration_update_info.md#void-data)**  |
 
 ## Detailed Description
 

@@ -17,7 +17,7 @@ In the future, an official plugin will provide more accurate mappings for Contro
 
 ## Prerequisite
 
-[Remote Rendering Setup Instructions with the Remote Rendering Service](/docs/guides/remote-rendering/remote-rendering-service.md).
+[Remote Rendering Setup Instructions with the Remote Rendering Service](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/remote-rendering/remote-rendering-service.md).
 
 ## Setup
 

@@ -9,7 +9,7 @@ summary: script used to position this canvas object directly in front of the use
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 Script used to position this Canvas object directly in front of the user by using lerp functionality to give it a smooth look. Components on the canvas should function normally.   

@@ -6,7 +6,7 @@ summary: apis for magic leap space.
 
 # Space
 
-**Module:** **[Magic Leap Spaces](/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)**
+**Module:** **[Magic Leap Spaces](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)**
 
 APIs for Magic Leap Space.  [More...](#detailed-description)
 
@@ -14,67 +14,67 @@ APIs for Magic Leap Space.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md)** <br></br>A structure containing settings for the space manager. This structure must be initialized by calling [MLSpaceManagerSettingsInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit) before use.  |
-| struct | **[MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md)** <br></br>A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  |
-| struct | **[MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md)** <br></br>A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use.  |
-| struct | **[MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md)** <br></br>A collection of filters for Magic Leap Spaces. This structure must be initialized by calling [MLSpaceQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit) before use. There is no support for filters at this time.  |
-| struct | **[MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md)** <br></br>A collection of parameters to be used for localization request. This structure must be initialized by calling [MLSpaceLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit) before use.  |
-| struct | **[MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md)** <br></br>A structure containing information about the device's localization state. This structure must be initialized by calling [MLSpaceLocalizationResultInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit) before use.  |
-| struct | **[MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md)** <br></br>A structure containing callbacks for events related to the Space.  |
-| struct | **[MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md)** <br></br>A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling [MLSpaceImportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit) before use.  |
-| struct | **[MLSpaceImportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md)** <br></br>A structure containing information about the imported Space.  |
-| struct | **[MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md)** <br></br>A structure containing information about the Space export settings. This structure must be initialized by calling [MLSpaceExportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit) before use.  |
-| struct | **[MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md)** <br></br>A structure containing information about the exported Space.  |
+| struct | **[MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md)** <br></br>A structure containing settings for the space manager. This structure must be initialized by calling [MLSpaceManagerSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit) before use.  |
+| struct | **[MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md)** <br></br>A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  |
+| struct | **[MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md)** <br></br>A structure containing list of [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use.  |
+| struct | **[MLSpaceQueryFilter](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md)** <br></br>A collection of filters for Magic Leap Spaces. This structure must be initialized by calling [MLSpaceQueryFilterInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit) before use. There is no support for filters at this time.  |
+| struct | **[MLSpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md)** <br></br>A collection of parameters to be used for localization request. This structure must be initialized by calling [MLSpaceLocalizationInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit) before use.  |
+| struct | **[MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md)** <br></br>A structure containing information about the device's localization state. This structure must be initialized by calling [MLSpaceLocalizationResultInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit) before use.  |
+| struct | **[MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md)** <br></br>A structure containing callbacks for events related to the Space.  |
+| struct | **[MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md)** <br></br>A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling [MLSpaceImportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit) before use.  |
+| struct | **[MLSpaceImportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md)** <br></br>A structure containing information about the imported Space.  |
+| struct | **[MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md)** <br></br>A structure containing information about the Space export settings. This structure must be initialized by calling [MLSpaceExportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit) before use.  |
+| struct | **[MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md)** <br></br>A structure containing information about the exported Space.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) | **[MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacemanagersettings)** <br></br>A structure containing settings for the space manager. This structure must be initialized by calling [MLSpaceManagerSettingsInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit) before use.  |
-| typedef struct [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) | **[MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspace)** <br></br>A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  |
-| typedef struct [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) | **[MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacelist)** <br></br>A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use.  |
-| typedef struct [MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) | **[MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacequeryfilter)** <br></br>A collection of filters for Magic Leap Spaces. This structure must be initialized by calling [MLSpaceQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit) before use. There is no support for filters at this time.  |
-| typedef struct [MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) | **[MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacelocalizationinfo)** <br></br>A collection of parameters to be used for localization request. This structure must be initialized by calling [MLSpaceLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit) before use.  |
-| typedef struct [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) | **[MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacelocalizationresult)** <br></br>A structure containing information about the device's localization state. This structure must be initialized by calling [MLSpaceLocalizationResultInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit) before use.  |
-| typedef struct [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) | **[MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacecallbacks)** <br></br>A structure containing callbacks for events related to the Space.  |
-| typedef struct [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) | **[MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceimportinfo)** <br></br>A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling [MLSpaceImportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit) before use.  |
-| typedef struct [MLSpaceImportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md) | **[MLSpaceImportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceimportoutdata)** <br></br>A structure containing information about the imported Space.  |
-| typedef struct [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) | **[MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceexportinfo)** <br></br>A structure containing information about the Space export settings. This structure must be initialized by calling [MLSpaceExportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit) before use.  |
-| typedef struct [MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) | **[MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceexportoutdata)** <br></br>A structure containing information about the exported Space.  |
+| typedef struct [MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) | **[MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacemanagersettings)** <br></br>A structure containing settings for the space manager. This structure must be initialized by calling [MLSpaceManagerSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit) before use.  |
+| typedef struct [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) | **[MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspace)** <br></br>A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  |
+| typedef struct [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) | **[MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacelist)** <br></br>A structure containing list of [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use.  |
+| typedef struct [MLSpaceQueryFilter](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) | **[MLSpaceQueryFilter](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacequeryfilter)** <br></br>A collection of filters for Magic Leap Spaces. This structure must be initialized by calling [MLSpaceQueryFilterInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit) before use. There is no support for filters at this time.  |
+| typedef struct [MLSpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) | **[MLSpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacelocalizationinfo)** <br></br>A collection of parameters to be used for localization request. This structure must be initialized by calling [MLSpaceLocalizationInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit) before use.  |
+| typedef struct [MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) | **[MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacelocalizationresult)** <br></br>A structure containing information about the device's localization state. This structure must be initialized by calling [MLSpaceLocalizationResultInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit) before use.  |
+| typedef struct [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) | **[MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspacecallbacks)** <br></br>A structure containing callbacks for events related to the Space.  |
+| typedef struct [MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) | **[MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceimportinfo)** <br></br>A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling [MLSpaceImportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit) before use.  |
+| typedef struct [MLSpaceImportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md) | **[MLSpaceImportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceimportoutdata)** <br></br>A structure containing information about the imported Space.  |
+| typedef struct [MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) | **[MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceexportinfo)** <br></br>A structure containing information about the Space export settings. This structure must be initialized by calling [MLSpaceExportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit) before use.  |
+| typedef struct [MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) | **[MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#struct-mlspaceexportoutdata)** <br></br>A structure containing information about the exported Space.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 27](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-anonymous-enum-27)** <br></br> { <br></br>[MLResultAPIPrefix_Space](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlresultapiprefix-space) = ( 0x10cc  << 16),<br></br> [MLSpace_MaxSpaceNameLength](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspace-maxspacenamelength) = 64<br></br>} |
-| enum | **[MLSpaceResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult)** <br></br> { <br></br>[MLSpaceResult_ServerError](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-servererror) = MLResultAPIPrefix_Space,<br></br> [MLSpaceResult_ServiceUnavailable](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-serviceunavailable),<br></br> [MLSpaceResult_UnavailableSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-unavailablespace),<br></br> [MLSpaceResult_IncompatibleSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-incompatiblespace),<br></br> [MLSpaceResult_SpaceAlreadyExists](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-spacealreadyexists),<br></br> [MLSpaceResult_Ensure32Bits](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Magic Leap Space specific return codes.  |
-| enum | **[MLSpaceType](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype)** <br></br> { <br></br>[MLSpaceType_OnDevice](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype-ondevice) = 0,<br></br> [MLSpaceType_ARCloud](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype-arcloud) = 1,<br></br> [MLSpaceType_Ensure32Bits](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Space type. Indicates the type of the Space.  |
-| enum | **[MLSpaceLocalizationStatus](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus)** <br></br> { <br></br>[MLSpaceLocalizationStatus_NotLocalized](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-notlocalized) = 0,<br></br> [MLSpaceLocalizationStatus_Localized](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-localized) = 1,<br></br> [MLSpaceLocalizationStatus_LocalizationPending](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-localizationpending) = 2,<br></br> [MLSpaceLocalizationStatus_SleepingBeforeRetry](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-sleepingbeforeretry) = 3,<br></br> [MLSpaceLocalizationStatus_Ensure32Bits](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current localization status.  |
+| enum | **[Anonymous Enum 27](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-anonymous-enum-27)** <br></br> { <br></br>[MLResultAPIPrefix_Space](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlresultapiprefix-space) = ( 0x10cc  << 16),<br></br> [MLSpace_MaxSpaceNameLength](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspace-maxspacenamelength) = 64<br></br>} |
+| enum | **[MLSpaceResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult)** <br></br> { <br></br>[MLSpaceResult_ServerError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-servererror) = MLResultAPIPrefix_Space,<br></br> [MLSpaceResult_ServiceUnavailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-serviceunavailable),<br></br> [MLSpaceResult_UnavailableSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-unavailablespace),<br></br> [MLSpaceResult_IncompatibleSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-incompatiblespace),<br></br> [MLSpaceResult_SpaceAlreadyExists](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-spacealreadyexists),<br></br> [MLSpaceResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Magic Leap Space specific return codes.  |
+| enum | **[MLSpaceType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype)** <br></br> { <br></br>[MLSpaceType_OnDevice](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype-ondevice) = 0,<br></br> [MLSpaceType_ARCloud](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype-arcloud) = 1,<br></br> [MLSpaceType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Space type. Indicates the type of the Space.  |
+| enum | **[MLSpaceLocalizationStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus)** <br></br> { <br></br>[MLSpaceLocalizationStatus_NotLocalized](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-notlocalized) = 0,<br></br> [MLSpaceLocalizationStatus_Localized](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-localized) = 1,<br></br> [MLSpaceLocalizationStatus_LocalizationPending](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-localizationpending) = 2,<br></br> [MLSpaceLocalizationStatus_SleepingBeforeRetry](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-sleepingbeforeretry) = 3,<br></br> [MLSpaceLocalizationStatus_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current localization status.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLSpaceManagerSettingsInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit)**([MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * inout_info)<br></br>Initializes default values for [MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md).  |
-| void | **[MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit)**([MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * inout_info)<br></br>Initializes default values for [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md).  |
-| void | **[MLSpaceListInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit)**([MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * inout_info)<br></br>Initializes default values for [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md).  |
-| void | **[MLSpaceQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit)**([MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * inout_query_filter)<br></br>Initializes the default values for a query filter.  |
-| void | **[MLSpaceLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit)**([MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * inout_info)<br></br>Initializes the default values for localization info.  |
-| void | **[MLSpaceLocalizationResultInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit)**([MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * inout_info)<br></br>Initialize default values for [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md).  |
-| void | **[MLSpaceCallbacksInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacecallbacksinit)**([MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * inout_callbacks)<br></br>Initialize defaults for [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md).  |
-| void | **[MLSpaceImportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit)**([MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * inout_info)<br></br>Initialize default values for [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md).  |
-| void | **[MLSpaceExportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit)**([MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * inout_info)<br></br>Initialize default values for [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md).  |
-| const char * | **[MLSpaceGetResultString](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#const-char-mlspacegetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLSpaceResult and MLResult codes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceManagerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate)**(const [MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a Magic Leap Space manager handle.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceSetCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacesetcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * callbacks, void * user_data)<br></br>Set the callbacks for events related to the Magic Leap Space.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceGetSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetspacelist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * query_filter, [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * out_space_list)<br></br>Get the list of available spaces.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceReleaseSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleasespacelist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * space_list)<br></br>Release the list of available spaces.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceRequestLocalization](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacerequestlocalization)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * localization_info)<br></br>Send a request to localize to a given Magic Leap Space.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceGetLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetlocalizationresult)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * out_localization_result)<br></br>Get the localization results.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceManagerDestroy](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagerdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a Space manager handle.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceImportSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceimportspace)**(const [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * import_info, [MLSpaceImportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md) * out_data)<br></br>Import a Magic Leap Space.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceExportSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace)**(const [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * export_info, [MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * out_data)<br></br>Export an on device Magic Leap Space.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceReleaseExportData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleaseexportdata)**([MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * space_data)<br></br>Release resources acquired in [MLSpaceExportSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace).  |
+| void | **[MLSpaceManagerSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit)**([MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * inout_info)<br></br>Initializes default values for [MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md).  |
+| void | **[MLSpaceInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit)**([MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * inout_info)<br></br>Initializes default values for [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md).  |
+| void | **[MLSpaceListInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit)**([MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * inout_info)<br></br>Initializes default values for [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md).  |
+| void | **[MLSpaceQueryFilterInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit)**([MLSpaceQueryFilter](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * inout_query_filter)<br></br>Initializes the default values for a query filter.  |
+| void | **[MLSpaceLocalizationInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit)**([MLSpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * inout_info)<br></br>Initializes the default values for localization info.  |
+| void | **[MLSpaceLocalizationResultInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit)**([MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * inout_info)<br></br>Initialize default values for [MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md).  |
+| void | **[MLSpaceCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacecallbacksinit)**([MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * inout_callbacks)<br></br>Initialize defaults for [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md).  |
+| void | **[MLSpaceImportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit)**([MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * inout_info)<br></br>Initialize default values for [MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md).  |
+| void | **[MLSpaceExportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit)**([MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * inout_info)<br></br>Initialize default values for [MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md).  |
+| const char * | **[MLSpaceGetResultString](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#const-char-mlspacegetresultstring)**([MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLSpaceResult and MLResult codes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceManagerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate)**(const [MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * settings, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a Magic Leap Space manager handle.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceSetCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacesetcallbacks)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * callbacks, void * user_data)<br></br>Set the callbacks for events related to the Magic Leap Space.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceGetSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetspacelist)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceQueryFilter](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * query_filter, [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * out_space_list)<br></br>Get the list of available spaces.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceReleaseSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleasespacelist)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * space_list)<br></br>Release the list of available spaces.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceRequestLocalization](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacerequestlocalization)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLSpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * localization_info)<br></br>Send a request to localize to a given Magic Leap Space.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceGetLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetlocalizationresult)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * out_localization_result)<br></br>Get the localization results.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceManagerDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagerdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a Space manager handle.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceImportSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceimportspace)**(const [MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * import_info, [MLSpaceImportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md) * out_data)<br></br>Import a Magic Leap Space.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceExportSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace)**(const [MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * export_info, [MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * out_data)<br></br>Export an on device Magic Leap Space.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLSpaceReleaseExportData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleaseexportdata)**([MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * space_data)<br></br>Release resources acquired in [MLSpaceExportSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace).  |
 
 ## Detailed Description
 
@@ -206,11 +206,11 @@ The current localization status.
 typedef struct MLSpaceManagerSettings MLSpaceManagerSettings;
 ```
 
-A structure containing settings for the space manager. This structure must be initialized by calling [MLSpaceManagerSettingsInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit) before use. 
+A structure containing settings for the space manager. This structure must be initialized by calling [MLSpaceManagerSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md)
 
 
 **API Level:**
@@ -227,11 +227,11 @@ A structure containing settings for the space manager. This structure must be in
 typedef struct MLSpace MLSpace;
 ```
 
-A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use. 
+A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md)
 
 
 **API Level:**
@@ -248,11 +248,11 @@ A structure containing information about a Magic Leap Space. This structure must
 typedef struct MLSpaceList MLSpaceList;
 ```
 
-A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use. 
+A structure containing list of [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). This structure must be initialized by calling [MLSpaceListInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md)
 
 
 **API Level:**
@@ -269,11 +269,11 @@ A structure containing list of [MLSpace](/api-ref/api/Modules/group___magic_leap
 typedef struct MLSpaceQueryFilter MLSpaceQueryFilter;
 ```
 
-A collection of filters for Magic Leap Spaces. This structure must be initialized by calling [MLSpaceQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit) before use. There is no support for filters at this time. 
+A collection of filters for Magic Leap Spaces. This structure must be initialized by calling [MLSpaceQueryFilterInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit) before use. There is no support for filters at this time. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md)
 
 
 **API Level:**
@@ -290,11 +290,11 @@ A collection of filters for Magic Leap Spaces. This structure must be initialize
 typedef struct MLSpaceLocalizationInfo MLSpaceLocalizationInfo;
 ```
 
-A collection of parameters to be used for localization request. This structure must be initialized by calling [MLSpaceLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit) before use. 
+A collection of parameters to be used for localization request. This structure must be initialized by calling [MLSpaceLocalizationInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md)
 
 
 **API Level:**
@@ -311,11 +311,11 @@ A collection of parameters to be used for localization request. This structure m
 typedef struct MLSpaceLocalizationResult MLSpaceLocalizationResult;
 ```
 
-A structure containing information about the device's localization state. This structure must be initialized by calling [MLSpaceLocalizationResultInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit) before use. 
+A structure containing information about the device's localization state. This structure must be initialized by calling [MLSpaceLocalizationResultInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md)
 
 
 **API Level:**
@@ -334,11 +334,11 @@ typedef struct MLSpaceCallbacks MLSpaceCallbacks;
 
 A structure containing callbacks for events related to the Space. 
 
-This structure must be initialized by calling [MLSpaceCallbacksInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacecallbacksinit) before use. Application can unregister (stop receiving callbacks) at any time by setting the corresponding callback to NULL.
+This structure must be initialized by calling [MLSpaceCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacecallbacksinit) before use. Application can unregister (stop receiving callbacks) at any time by setting the corresponding callback to NULL.
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md)
 
 
 **API Level:**
@@ -355,11 +355,11 @@ This structure must be initialized by calling [MLSpaceCallbacksInit](/api-ref/ap
 typedef struct MLSpaceImportInfo MLSpaceImportInfo;
 ```
 
-A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling [MLSpaceImportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit) before use. 
+A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling [MLSpaceImportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md)
 
 
 **API Level:**
@@ -380,7 +380,7 @@ A structure containing information about the imported Space.
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md)
 
 
 **API Level:**
@@ -397,11 +397,11 @@ A structure containing information about the imported Space.
 typedef struct MLSpaceExportInfo MLSpaceExportInfo;
 ```
 
-A structure containing information about the Space export settings. This structure must be initialized by calling [MLSpaceExportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit) before use. 
+A structure containing information about the Space export settings. This structure must be initialized by calling [MLSpaceExportInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md)
 
 
 **API Level:**
@@ -422,7 +422,7 @@ A structure containing information about the exported Space.
 
 
 
-[More Info](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md)
 
 
 **API Level:**
@@ -444,13 +444,13 @@ static inline void MLSpaceManagerSettingsInit(
 )
 ```
 
-Initializes default values for [MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md). 
+Initializes default values for [MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * |inout_info|The object to initialize with default values.|
+| [MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * |inout_info|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -475,13 +475,13 @@ static inline void MLSpaceInit(
 )
 ```
 
-Initializes default values for [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). 
+Initializes default values for [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * |inout_info|The object to initialize with default values.|
+| [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) * |inout_info|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -506,13 +506,13 @@ static inline void MLSpaceListInit(
 )
 ```
 
-Initializes default values for [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md). 
+Initializes default values for [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * |inout_info|The object to initialize with default values.|
+| [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * |inout_info|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -543,7 +543,7 @@ Initializes the default values for a query filter.
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * |inout_query_filter|The filter to initialize.|
+| [MLSpaceQueryFilter](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * |inout_query_filter|The filter to initialize.|
 **Required Permissions**:
 
   * None 
@@ -574,7 +574,7 @@ Initializes the default values for localization info.
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * |inout_info|The object to initialize with default values.|
+| [MLSpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * |inout_info|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -599,13 +599,13 @@ static inline void MLSpaceLocalizationResultInit(
 )
 ```
 
-Initialize default values for [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md). 
+Initialize default values for [MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * |inout_info|The localization result to initialize.|
+| [MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * |inout_info|The localization result to initialize.|
 **Required Permissions**:
 
   * None 
@@ -630,13 +630,13 @@ static inline void MLSpaceCallbacksInit(
 )
 ```
 
-Initialize defaults for [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md). 
+Initialize defaults for [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * |inout_callbacks|The callback structure to initialize.|
+| [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * |inout_callbacks|The callback structure to initialize.|
 **Required Permissions**:
 
   * None 
@@ -661,13 +661,13 @@ static inline void MLSpaceImportInfoInit(
 )
 ```
 
-Initialize default values for [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md). 
+Initialize default values for [MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * |inout_info|The object to initialize with default values.|
+| [MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * |inout_info|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -692,13 +692,13 @@ static inline void MLSpaceExportInfoInit(
 )
 ```
 
-Initialize default values for [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md). 
+Initialize default values for [MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * |inout_info|The object to initialize with default values.|
+| [MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * |inout_info|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -729,7 +729,7 @@ Returns an ASCII string for MLSpaceResult and MLResult codes.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result|The input MLResult enum from [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) functions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result|The input MLResult enum from [MLSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) functions. |
 **Required Permissions**:
 
   * None 
@@ -763,18 +763,18 @@ Creates a Magic Leap Space manager handle.
 
 |  |   |   |
 |--|--|--|
-| const [MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * |settings|Settings that configures the space manager. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The handle to be created.|
+| const [MLSpaceManagerSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) * |settings|Settings that configures the space manager. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The handle to be created.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_ClientLimitExceeded|Failed due to an existing manager. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Space manager handle was successfully created. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_ClientLimitExceeded|Failed due to an existing manager. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Space manager handle was successfully created. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
 **Required Permissions**:
 
   * com.magicleap.permission.SPACE_MANAGER (protection level: normal) 
@@ -809,17 +809,17 @@ Set the callbacks for events related to the Magic Leap Space.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
-| const [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * |callbacks|Pointer to the [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) structure containing the callbacks. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
+| const [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) * |callbacks|Pointer to the [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) structure containing the callbacks. |
 | void * |user_data|Pointer that will be returned in the callback.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The callbacks were registered successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The callbacks were registered successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
 
 
 
@@ -847,19 +847,19 @@ Get the list of available spaces.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
-| const [MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * |query_filter|The filter structure for the query. |
-| [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * |out_space_list|List of Spaces currently available to the device.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
+| const [MLSpaceQueryFilter](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) * |query_filter|The filter structure for the query. |
+| [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * |out_space_list|List of Spaces currently available to the device.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|List of spaces retrieved successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServerError|Operation failed due to server side error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServiceUnavailable|Operation failed because service is not ready.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|List of spaces retrieved successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServerError|Operation failed due to server side error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServiceUnavailable|Operation failed because service is not ready.|
 **Required Permissions**:
 
   * None 
@@ -867,7 +867,7 @@ Get the list of available spaces.
 
 The list of spaces returned will depend on the current device mapping mode. Only the Spaces associated with the current mapping mode will be returned by this call. Device mapping mode can be changed via the system application(s).
 
-The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleasespacelist) to release the memory. Each get [MLSpaceGetSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetspacelist) should have a corresponding [MLSpaceReleaseSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleasespacelist).
+The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleasespacelist) to release the memory. Each get [MLSpaceGetSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetspacelist) should have a corresponding [MLSpaceReleaseSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleasespacelist).
 
 
 
@@ -895,16 +895,16 @@ Release the list of available spaces.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
-| [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * |space_list|List Magic Leap Spaces that needs to be released.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
+| [MLSpaceList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) * |space_list|List Magic Leap Spaces that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|List resources was successfully released. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|List resources was successfully released. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
 **Required Permissions**:
 
   * None 
@@ -936,25 +936,25 @@ Send a request to localize to a given Magic Leap Space.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
-| const [MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * |localization_info|Magic Leap Space to localize into.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
+| const [MLSpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) * |localization_info|Magic Leap Space to localize into.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Localization request was submitted successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_UnavailableSpace|Operation failed due an unavailable Space. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServerError|Operation failed due to server side error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServiceUnavailable|Operation failed because service is not ready.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Localization request was submitted successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_UnavailableSpace|Operation failed due an unavailable Space. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServerError|Operation failed due to server side error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServiceUnavailable|Operation failed because service is not ready.|
 **Required Permissions**:
 
   * None 
 
 
-This is an asynchronous request. Use [MLSpaceGetLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetlocalizationresult) to get the results of the localization or use [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) to listen to on_localization_changed events.
+This is an asynchronous request. Use [MLSpaceGetLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetlocalizationresult) to get the results of the localization or use [MLSpaceCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) to listen to on_localization_changed events.
 
 A new request for localization will override all the past requests for localization that are yet to be completed.
 
@@ -984,16 +984,16 @@ Get the localization results.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
-| [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * |out_localization_result|Contains the result of the localization request.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Space manager handle created by [MLSpaceManagerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate). |
+| [MLSpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) * |out_localization_result|Contains the result of the localization request.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Localization result was retrieved successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Localization result was retrieved successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
 **Required Permissions**:
 
   * None 
@@ -1026,14 +1026,14 @@ Destroys a Space manager handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle to be destroyed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle to be destroyed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Space manager handle was successfully destroyed.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Space manager handle was successfully destroyed.|
 **Required Permissions**:
 
   * None 
@@ -1065,24 +1065,24 @@ Import a Magic Leap Space.
 
 |  |   |   |
 |--|--|--|
-| const [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * |import_info|Information need to import the space. |
-| [MLSpaceImportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md) * |out_data|Information about the imported space.|
+| const [MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) * |import_info|Information need to import the space. |
+| [MLSpaceImportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md) * |out_data|Information about the imported space.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_IncompatibleSpace|Operation failed due an incompatible Space. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_SpaceAlreadyExists|Operation failed because Space being imported already exists.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_IncompatibleSpace|Operation failed due an incompatible Space. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_SpaceAlreadyExists|Operation failed because Space being imported already exists.|
 **Required Permissions**:
 
   * com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous) 
 
 
-The [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) memory is owned by the app and the app should make sure to release the memory once the API call has returned.
+The [MLSpaceImportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) memory is owned by the app and the app should make sure to release the memory once the API call has returned.
 
 
 
@@ -1110,23 +1110,23 @@ Export an on device Magic Leap Space.
 
 |  |   |   |
 |--|--|--|
-| const [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * |export_info|Information needed to export the space. |
-| [MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * |out_data|Exported space data.|
+| const [MLSpaceExportInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) * |export_info|Information needed to export the space. |
+| [MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * |out_data|Exported space data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_UnavailableSpace|Operation failed due an unavailable Space.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_UnavailableSpace|Operation failed due an unavailable Space.|
 **Required Permissions**:
 
   * com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous) 
 
 
-The [MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) is owned by the library, call [MLSpaceReleaseExportData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleaseexportdata) to release the memory. Each [MLSpaceExportSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace) call should have a corresponding [MLSpaceReleaseExportData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleaseexportdata).
+The [MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) is owned by the library, call [MLSpaceReleaseExportData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleaseexportdata) to release the memory. Each [MLSpaceExportSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace) call should have a corresponding [MLSpaceReleaseExportData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleaseexportdata).
 
 
 
@@ -1147,21 +1147,21 @@ MLResult MLSpaceReleaseExportData(
 )
 ```
 
-Release resources acquired in [MLSpaceExportSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace). 
+Release resources acquired in [MLSpaceExportSpace](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * |space_data|[MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) that needs to be released.|
+| [MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) * |space_data|[MLSpaceExportOutData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|List resources was successfully released. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|List resources was successfully released. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
 **Required Permissions**:
 
   * None 

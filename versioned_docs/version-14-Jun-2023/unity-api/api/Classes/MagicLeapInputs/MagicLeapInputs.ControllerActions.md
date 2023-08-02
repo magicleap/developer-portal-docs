@@ -29,7 +29,7 @@ public ControllerActions(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| @[MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
+| @[MagicLeapInputs](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
 
 
 
@@ -90,7 +90,7 @@ public void SetCallbacks(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [IControllerActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IControllerActions.md) |instance||
+| [IControllerActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IControllerActions.md) |instance||
 
 
 
@@ -112,7 +112,7 @@ public static implicit operator InputActionMap(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [ControllerActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ControllerActions.md) |set||
+| [ControllerActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ControllerActions.md) |set||
 
 
 

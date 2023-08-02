@@ -17,7 +17,7 @@ Structure to encapsulate connection settings for MR capture.
 
 ## Public Methods
 
-### [MLCameraMRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraMRConnectInfo.md) Create {#mlcameramrconnectinfo-create}
+### [MLCameraMRConnectInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraMRConnectInfo.md) Create {#mlcameramrconnectinfo-create}
 
 Create and return an initialized version of this struct. 
 
@@ -32,7 +32,7 @@ public static MLCameraMRConnectInfo Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCamera.MRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md) |connectInfo|Connection settings for MR capture. |
+| [MLCamera.MRConnectInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md) |connectInfo|Connection settings for MR capture. |
 
 
 
@@ -59,7 +59,7 @@ public MLCamera.CaptureFrameRate FrameRate;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
+| [MLCamera.CaptureFrameRate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
 
 
 
@@ -79,7 +79,7 @@ public MLCamera.MRBlendType MrBlendType;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.MRBlendType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrblendtype) | Comment Needed!  |
+| [MLCamera.MRBlendType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrblendtype) | Comment Needed!  |
 
 
 
@@ -99,7 +99,7 @@ public MLCamera.MRQuality MrQuality;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration  |
+| [MLCamera.MRQuality](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration  |
 
 
 

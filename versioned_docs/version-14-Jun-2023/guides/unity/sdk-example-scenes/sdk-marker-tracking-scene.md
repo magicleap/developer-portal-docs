@@ -20,12 +20,12 @@ The example scene help text may contain information on image tracking or barcode
 ## Requirements and Setup
 
 :::note
-Follow the [SDK Examples Project Setup page](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md) for steps on how to open the SDK Examples Project and build the MarkerTracking example scene, located under `Assets/MagicLeap/Examples/Scenes/Meshing.unity`.
+Follow the [SDK Examples Project Setup page](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md) for steps on how to open the SDK Examples Project and build the MarkerTracking example scene, located under `Assets/MagicLeap/Examples/Scenes/Meshing.unity`.
 :::
 
 ### Permissions
 
-You must enable the `CAMERA` and `MARKER_TRACKING` permissions in the Unity Project Settings. Refer to the [Permissions Guide](/docs/guides/unity/permissions/declaring-permissions.md) for more information.
+You must enable the `CAMERA` and `MARKER_TRACKING` permissions in the Unity Project Settings. Refer to the [Permissions Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md) for more information.
 
 ### Configuration
 

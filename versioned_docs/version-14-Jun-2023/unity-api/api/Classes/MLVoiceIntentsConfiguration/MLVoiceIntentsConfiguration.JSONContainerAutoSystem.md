@@ -9,7 +9,7 @@ summary: jsoncontainer to auto allowing all system intents.
 
 
 
-[JSONContainer](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainer.md) to Auto allowing all System Intents.   
+[JSONContainer](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainer.md) to Auto allowing all System Intents.   
 
 
 
@@ -27,7 +27,7 @@ public List< JSONData > app_intents;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
+| List&lt; [JSONData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
 
 
 

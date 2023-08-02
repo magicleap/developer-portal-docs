@@ -6,7 +6,7 @@ summary: structure for occlusion mesh query.
 
 # MLOcclusionMeshQuery
 
-**Module:** **[Occlusion](/api-ref/api/Modules/group___occlusion/group___occlusion.md)**
+**Module:** **[Occlusion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___occlusion/group___occlusion.md)**
 
 
 
@@ -19,7 +19,7 @@ Structure for occlusion mesh query.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_mesh_query.md#uint32-t-version)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_mesh_query.md#uint32-t-version)**  |
 
 ## Detailed Description
 

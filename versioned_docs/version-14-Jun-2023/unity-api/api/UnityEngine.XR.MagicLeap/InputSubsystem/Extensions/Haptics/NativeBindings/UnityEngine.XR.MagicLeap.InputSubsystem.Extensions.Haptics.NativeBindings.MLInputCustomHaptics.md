@@ -9,7 +9,7 @@ summary: or a pre-defined pattern, this structure will hold info of a pattern to
 
 
 
-A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command and/or pre-defined pattern to be played. A custom haptics pattern can be played by combining [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array.   
+A structure containing information about the [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command and/or pre-defined pattern to be played. A custom haptics pattern can be played by combining [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array.   
 
 
 
@@ -30,7 +30,7 @@ public MLInputCustomHaptics(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzzHaptics|A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played. |
+| in [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzzHaptics|A structure containing information about the [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played. |
 
 
 
@@ -53,7 +53,7 @@ public MLInputCustomHaptics(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [PreDefined](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md) |preDefinedPatternHaptics|A structure containing information about the Pre-Defined pattern to be played. |
+| in [PreDefined](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md) |preDefinedPatternHaptics|A structure containing information about the Pre-Defined pattern to be played. |
 | uint |durationMs||
 
 
@@ -77,7 +77,7 @@ public readonly MLInputBuzzCommand Buzz;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLInputBuzzCommand](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputBuzzCommand.md) | A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played.  |
+| readonly [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputBuzzCommand.md) | A structure containing information about the [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played.  |
 
 
 
@@ -114,7 +114,7 @@ public readonly MLInputPreDefinedPattern PreDefined;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLInputPreDefinedPattern](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputPreDefinedPattern.md) | A structure containing information about the Pre-Defined pattern to be played.  |
+| readonly [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputPreDefinedPattern.md) | A structure containing information about the Pre-Defined pattern to be played.  |
 
 
 
@@ -134,7 +134,7 @@ public readonly Type Type;
 
 | Type | Description  | 
 |--|--|
-| readonly [Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.md#enums-type) | Custom haptics pattern types.  |
+| readonly [Type](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.md#enums-type) | Custom haptics pattern types.  |
 
 
 

@@ -6,7 +6,7 @@ summary: mediaplayer information callback info.
 
 # MLMediaPlayerOnInfoInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,9 +19,9 @@ MediaPlayer Information callback Info.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaPlayerInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerinfo) | **[info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md#mlmediaplayerinfo-info)**  |
-| int | **[extra](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md#int-extra)** <br></br>MLMediaPlayerInfo type specific extra information.  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md#void-data)**  |
+| [MLMediaPlayerInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerinfo) | **[info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md#mlmediaplayerinfo-info)**  |
+| int | **[extra](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md#int-extra)** <br></br>MLMediaPlayerInfo type specific extra information.  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -53,7 +53,7 @@ MLMediaPlayerInfo info;
 
 | Type | Description |
 |--|--|
-| [MLMediaPlayerInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerinfo) | Info and warning codes for the media player framework.  |
+| [MLMediaPlayerInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerinfo) | Info and warning codes for the media player framework.  |
 
 
 Type of informational event. 
@@ -87,7 +87,7 @@ void * data;
 ```
 
 
-User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
+User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
 
 
 

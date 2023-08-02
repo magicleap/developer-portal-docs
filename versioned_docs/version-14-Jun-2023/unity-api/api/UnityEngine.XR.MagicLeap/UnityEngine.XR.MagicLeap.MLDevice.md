@@ -9,10 +9,10 @@ summary: magicleap device class responsible for updating all trackers when they 
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.   
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.   
 
 
 Inherits from: <br></br>MonoBehaviour
@@ -24,7 +24,7 @@ Inherits from: <br></br>MonoBehaviour
 
 ### GestureSubsystemComponent {#gesturesubsystemcomponent-gesturesubsystemcomponent}
 
-Gets the active XR[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) gestures subsystem. 
+Gets the active XR[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) gestures subsystem. 
 
 ```csharp
 
@@ -86,7 +86,7 @@ public static bool IsOpenXRLoaderActive()
 
 ### bool IsReady {#bool-isready}
 
-Check if the underlying Unity XR[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized. 
+Check if the underlying Unity XR[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized. 
 
 ```csharp
 public static bool IsReady()
@@ -97,7 +97,7 @@ public static bool IsReady()
 
 
 
-**Returns**: Value indicating whether the XR[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized.
+**Returns**: Value indicating whether the XR[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized.
 
 
 
@@ -213,7 +213,7 @@ public delegate void OnUpdateEventDelegate()
 
 ### void RegisterApplicationFocus {#void-registerapplicationfocus}
 
-Unrgister a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application focus callback to be called OnApplicationFocus of this behavior. 
+Unrgister a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application focus callback to be called OnApplicationFocus of this behavior. 
 
 ```csharp
 public static void RegisterApplicationFocus(
@@ -226,7 +226,7 @@ public static void RegisterApplicationFocus(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnFocusEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onfocuseventdelegate) |callback|Callback to register.|
+| [OnFocusEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onfocuseventdelegate) |callback|Callback to register.|
 
 
 
@@ -237,7 +237,7 @@ public static void RegisterApplicationFocus(
 
 ### void RegisterApplicationPause {#void-registerapplicationpause}
 
-Unrgister a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application pause callback to be called OnApplicationPause of this behavior. 
+Unrgister a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application pause callback to be called OnApplicationPause of this behavior. 
 
 ```csharp
 public static void RegisterApplicationPause(
@@ -250,7 +250,7 @@ public static void RegisterApplicationPause(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnPauseEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onpauseeventdelegate) |callback|Callback to register.|
+| [OnPauseEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onpauseeventdelegate) |callback|Callback to register.|
 
 
 
@@ -261,7 +261,7 @@ public static void RegisterApplicationPause(
 
 ### void RegisterApplicationQuit {#void-registerapplicationquit}
 
-Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application quit callback to be called on OnApplicationQuit of this behavior. 
+Register a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application quit callback to be called on OnApplicationQuit of this behavior. 
 
 ```csharp
 public static void RegisterApplicationQuit(
@@ -274,7 +274,7 @@ public static void RegisterApplicationQuit(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnQuitEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onquiteventdelegate) |callback|Callback to register|
+| [OnQuitEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onquiteventdelegate) |callback|Callback to register|
 
 
 
@@ -285,7 +285,7 @@ public static void RegisterApplicationQuit(
 
 ### void RegisterDestroy {#void-registerdestroy}
 
-Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Destroy of this behavior. 
+Register a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Destroy of this behavior. 
 
 ```csharp
 public static void RegisterDestroy(
@@ -298,7 +298,7 @@ public static void RegisterDestroy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnDestroyEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-ondestroyeventdelegate) |callback|Callback to register.|
+| [OnDestroyEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-ondestroyeventdelegate) |callback|Callback to register.|
 
 
 
@@ -333,7 +333,7 @@ public static void RegisterEndOfFrameUpdate(
 
 ### void RegisterGestureSubsystem {#void-registergesturesubsystem}
 
-Attempts to register the Unity [GestureSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/UnityEngine.XR.MagicLeap.GestureSubsystem.md). 
+Attempts to register the Unity [GestureSubsystem](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/UnityEngine.XR.MagicLeap.GestureSubsystem.md). 
 
 ```csharp
 public static void RegisterGestureSubsystem()
@@ -348,7 +348,7 @@ public static void RegisterGestureSubsystem()
 
 ### void RegisterStart {#void-registerstart}
 
-Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Start of this behavior. 
+Register a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Start of this behavior. 
 
 ```csharp
 public static void RegisterStart(
@@ -361,7 +361,7 @@ public static void RegisterStart(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnStartEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onstarteventdelegate) |callback|Callback to register.|
+| [OnStartEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onstarteventdelegate) |callback|Callback to register.|
 
 
 
@@ -372,7 +372,7 @@ public static void RegisterStart(
 
 ### void RegisterUpdate {#void-registerupdate}
 
-Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Update of this behavior. 
+Register a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Update of this behavior. 
 
 ```csharp
 public static void RegisterUpdate(
@@ -385,7 +385,7 @@ public static void RegisterUpdate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnUpdateEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onupdateeventdelegate) |callback|Callback to register.|
+| [OnUpdateEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onupdateeventdelegate) |callback|Callback to register.|
 
 
 
@@ -396,7 +396,7 @@ public static void RegisterUpdate(
 
 ### void UnregisterApplicationFocus {#void-unregisterapplicationfocus}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application focus callback. 
+Unregister a previously registered [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application focus callback. 
 
 ```csharp
 public static void UnregisterApplicationFocus(
@@ -409,7 +409,7 @@ public static void UnregisterApplicationFocus(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnFocusEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onfocuseventdelegate) |callback|Callback to unregister.|
+| [OnFocusEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onfocuseventdelegate) |callback|Callback to unregister.|
 
 
 
@@ -420,7 +420,7 @@ public static void UnregisterApplicationFocus(
 
 ### void UnregisterApplicationPause {#void-unregisterapplicationpause}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application pause callback. 
+Unregister a previously registered [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application pause callback. 
 
 ```csharp
 public static void UnregisterApplicationPause(
@@ -433,7 +433,7 @@ public static void UnregisterApplicationPause(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnPauseEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onpauseeventdelegate) |callback|Callback to unregister.|
+| [OnPauseEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onpauseeventdelegate) |callback|Callback to unregister.|
 
 
 
@@ -457,7 +457,7 @@ public static void UnregisterApplicationQuit(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnQuitEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onquiteventdelegate) |callback|Callback to unregister|
+| [OnQuitEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onquiteventdelegate) |callback|Callback to unregister|
 
 
 
@@ -468,7 +468,7 @@ public static void UnregisterApplicationQuit(
 
 ### void UnregisterDestroy {#void-unregisterdestroy}
 
-Unregister a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API from being called when OnDestroy for this behavior is called. 
+Unregister a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API from being called when OnDestroy for this behavior is called. 
 
 ```csharp
 public static void UnregisterDestroy(
@@ -481,7 +481,7 @@ public static void UnregisterDestroy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnDestroyEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-ondestroyeventdelegate) |callback|Callback to register.|
+| [OnDestroyEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-ondestroyeventdelegate) |callback|Callback to register.|
 
 
 
@@ -516,7 +516,7 @@ public static void UnregisterEndOfFrameUpdate(
 
 ### void UnregisterGestureSubsystem {#void-unregistergesturesubsystem}
 
-Attempts to unregister the [GestureSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/UnityEngine.XR.MagicLeap.GestureSubsystem.md). 
+Attempts to unregister the [GestureSubsystem](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/UnityEngine.XR.MagicLeap.GestureSubsystem.md). 
 
 ```csharp
 public static void UnregisterGestureSubsystem()
@@ -531,7 +531,7 @@ public static void UnregisterGestureSubsystem()
 
 ### void UnregisterStart {#void-unregisterstart}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback. 
+Unregister a previously registered [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback. 
 
 ```csharp
 public static void UnregisterStart(
@@ -544,7 +544,7 @@ public static void UnregisterStart(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnStartEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onstarteventdelegate) |callback|Callback to unregister.|
+| [OnStartEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onstarteventdelegate) |callback|Callback to unregister.|
 
 
 
@@ -555,7 +555,7 @@ public static void UnregisterStart(
 
 ### void UnregisterUpdate {#void-unregisterupdate}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback. 
+Unregister a previously registered [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback. 
 
 ```csharp
 public static void UnregisterUpdate(
@@ -568,7 +568,7 @@ public static void UnregisterUpdate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnUpdateEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onupdateeventdelegate) |callback|Callback to unregister.|
+| [OnUpdateEventDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md#delegate-void-onupdateeventdelegate) |callback|Callback to unregister.|
 
 
 
@@ -660,7 +660,7 @@ public const float DefaultNearClipDistance = 0.37f;
 
 ### MagicLeapDeviceName {#const-string-magicleapdevicename}
 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) platform Unity name. 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) platform Unity name. 
 
 ```csharp
 

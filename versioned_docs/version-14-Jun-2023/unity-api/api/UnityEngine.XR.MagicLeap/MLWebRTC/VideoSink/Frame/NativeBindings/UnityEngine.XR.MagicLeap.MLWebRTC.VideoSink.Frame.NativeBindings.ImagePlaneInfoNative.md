@@ -32,7 +32,7 @@ public ImagePlaneInfoNative(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) |planeInfo|Struct representing an image plane that comes from some captured camera frame. |
+| [PlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) |planeInfo|Struct representing an image plane that comes from some captured camera frame. |
 
 
 

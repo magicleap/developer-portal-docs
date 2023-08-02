@@ -29,7 +29,7 @@ public readonly MLEyeCameraIdentifier CameraID;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLEyeCameraIdentifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#enums-mleyecameraidentifier) | Enumeration of all the available eye camera sensors.  |
+| readonly [MLEyeCameraIdentifier](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#enums-mleyecameraidentifier) | Enumeration of all the available eye camera sensors.  |
 
 
 
@@ -49,7 +49,7 @@ public readonly MLEyeCameraFrameBuffer FrameBuffer;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLEyeCameraFrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLEyeCamera.NativeBindings.MLEyeCameraFrameBuffer.md) | A structure to encapsulate per plane info for each camera frame.  |
+| readonly [MLEyeCameraFrameBuffer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLEyeCamera.NativeBindings.MLEyeCameraFrameBuffer.md) | A structure to encapsulate per plane info for each camera frame.  |
 
 
 

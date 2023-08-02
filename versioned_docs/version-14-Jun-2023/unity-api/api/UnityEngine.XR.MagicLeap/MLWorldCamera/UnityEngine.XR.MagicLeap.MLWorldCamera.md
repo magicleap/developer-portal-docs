@@ -9,13 +9,13 @@ summary: magic leap 2 has three world cameras which it uses for environment trac
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 Magic Leap 2 has three world cameras which it uses for environment tracking. The three cameras area located on the left, center, and right side of the headset. This API will provide a way to query for the frames from these world cameras, at this point the app will not be able to configure the world camera parameters.   [More...](#detailed-description)  
 
 
-Inherits from: <br></br>[MLAPIBase](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md)
+Inherits from: <br></br>[MLAPIBase](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md)
 
 
 
@@ -50,7 +50,7 @@ public Settings CurrentSettings { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) | A structure to encapsulate the camera settings.  |
+| [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) | A structure to encapsulate the camera settings.  |
 
 
 
@@ -75,7 +75,7 @@ public bool IsConnected { get; set; }
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Connect {#mlresult-connect}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Connect {#mlresult-connect}
 
 Connect to world cameras. 
 
@@ -90,7 +90,7 @@ public MLResult Connect(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) |settings|A structure to encapsulate the camera settings. |
+| in [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) |settings|A structure to encapsulate the camera settings. |
 
 
 
@@ -99,7 +99,7 @@ public MLResult Connect(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Disconnect {#mlresult-disconnect}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Disconnect {#mlresult-disconnect}
 
 Disconnect from world camera. This will disconnect from all the world camera currently connected. 
 
@@ -114,7 +114,7 @@ public MLResult Disconnect()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLatestWorldCameraData {#mlresult-getlatestworldcameradata}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLatestWorldCameraData {#mlresult-getlatestworldcameradata}
 
 Poll for Frames. Returns #MLWorldCameraData with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache it and then release the memory by calling #MLWorldCameraReleaseCameraData. This is a blocking call. API is not thread safe. If there are no new world camera data frames for a given duration (duration determined by the system) then the API will return MLResult&#95;Timeout. To Do : Are there any other meaningful return codes that we need to consider. Say something like MLResult&#95;ResourceNotAvailble for cases where the world camera is not ready yet or is not generating any data because its been turned off. 
 
@@ -130,7 +130,7 @@ public MLResult GetLatestWorldCameraData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) [] |data|A structure to encapsulate per plane info for each camera frame. |
+| out [Frame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) [] |data|A structure to encapsulate per plane info for each camera frame. |
 | uint |timeOutMs||
 
 
@@ -140,7 +140,7 @@ public MLResult GetLatestWorldCameraData(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) UpdateSettings {#mlresult-updatesettings}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) UpdateSettings {#mlresult-updatesettings}
 
 Update the world camera settings. 
 
@@ -155,7 +155,7 @@ public MLResult UpdateSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) |settings|A structure to encapsulate the camera settings. |
+| in [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) |settings|A structure to encapsulate the camera settings. |
 
 
 
@@ -168,7 +168,7 @@ public MLResult UpdateSettings(
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual override void OnApplicationPause(
@@ -186,7 +186,7 @@ protected virtual override void OnApplicationPause(
 
 
 
-**Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md#void-onapplicationpause)
+**Reimplements**: [OnApplicationPause](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md#void-onapplicationpause)
 
 
 

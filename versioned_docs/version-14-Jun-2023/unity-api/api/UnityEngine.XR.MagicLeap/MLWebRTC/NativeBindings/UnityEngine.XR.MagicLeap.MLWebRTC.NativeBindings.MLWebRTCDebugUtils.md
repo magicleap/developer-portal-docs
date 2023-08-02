@@ -9,7 +9,7 @@ summary: the native representation of the mlwebrtc debug utilities object.
 
 
 
-The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) debug utilities object.   
+The native representation of the [MLWebRTC](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) debug utilities object.   
 
 
 
@@ -17,9 +17,9 @@ The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicL
 
 ## Public Methods
 
-### [MLWebRTCDebugUtils](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) Create {#mlwebrtcdebugutils-create}
+### [MLWebRTCDebugUtils](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) Create {#mlwebrtcdebugutils-create}
 
-Creates an initialized [MLWebRTCDebugUtils](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) object. 
+Creates an initialized [MLWebRTCDebugUtils](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) object. 
 
 ```csharp
 public static MLWebRTCDebugUtils Create()
@@ -30,7 +30,7 @@ public static MLWebRTCDebugUtils Create()
 
 
 
-**Returns**: An initialized [MLWebRTCDebugUtils](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) object.
+**Returns**: An initialized [MLWebRTCDebugUtils](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) object.
 
 
 
@@ -67,7 +67,7 @@ public AndroidLogPriority LogLevel;
 
 | Type | Description  | 
 |--|--|
-| [AndroidLogPriority](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-androidlogpriority) | Copy of android&#95;LogPriority from android/log.h.  |
+| [AndroidLogPriority](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-androidlogpriority) | Copy of android&#95;LogPriority from android/log.h.  |
 
 
 

@@ -8,13 +8,13 @@ keywords: [Unity, Eye Tracking, Input, Porting]
 ---
 
 # Magic Leap Eye Tracking Data
-To obtain Magic Leap device specific features such as checking the eye tracking FixationConfidence status or if the user is blinking use Magic Leap's [InputSubsystem.Extensions](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.md)
+To obtain Magic Leap device specific features such as checking the eye tracking FixationConfidence status or if the user is blinking use Magic Leap's [InputSubsystem.Extensions](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.md)
 
 :::note
 If your Application collects, stores, transfers or otherwise uses data off the Magic Leap 2 device that is received via this API, then you must comply with the [Magic Leap 2 Eye Tracking Data Transparency Policy](https://www.magicleap.com/eye-tracking).
 :::
 
-Below is a list of some of the data that can be obtained via the [`EyeTrackingState`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md).
+Below is a list of some of the data that can be obtained via the [`EyeTrackingState`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md).
 
 - Fixation Confidence
 - Left/Right Blink
@@ -127,9 +127,9 @@ public class GazeRecognitionTest : MonoBehaviour
 
 ## See also
 
-- [`MLEyes.State`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md)
+- [`MLEyes.State`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md)
   - API documentation of Magic Leap's `MLEyes.State` struct.
-- [`InputSubsystem.Utils.FindMagicLeapDevice()`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/UnityEngine.XR.MagicLeap.InputSubsystem.Utils.md)
+- [`InputSubsystem.Utils.FindMagicLeapDevice()`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/UnityEngine.XR.MagicLeap.InputSubsystem.Utils.md)
   - API documentation of Magic Leap's Input System Utils.
-- [`InputSubsystem.Extensions.TryGetEyeTrackingState()`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.md)
+- [`InputSubsystem.Extensions.TryGetEyeTrackingState()`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.md)
   - API documentation of Magic Leap's Input System Extensions.

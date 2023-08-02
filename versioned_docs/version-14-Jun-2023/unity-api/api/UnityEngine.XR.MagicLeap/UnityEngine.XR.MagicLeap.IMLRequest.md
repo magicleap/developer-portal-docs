@@ -9,13 +9,13 @@ summary: always inherit from this
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 ALWAYS INHERIT FROM THIS   [More...](#detailed-description)  
 
 
-Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLRequest< Params, Result >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md)
+Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLRequest< Params, Result >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md)
 
 
 
@@ -36,7 +36,7 @@ public template <Params ,Result > class IMLRequest;
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
 
 ```csharp
 public MLResult Start(
@@ -54,13 +54,13 @@ public MLResult Start(
 
 
 
-**Reimplemented by**: [Start](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-start)
+**Reimplemented by**: [Start](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-start)
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#mlresult-trygetresult}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#mlresult-trygetresult}
 
 ```csharp
 public MLResult TryGetResult(
@@ -78,7 +78,7 @@ public MLResult TryGetResult(
 
 
 
-**Reimplemented by**: [TryGetResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-trygetresult)
+**Reimplemented by**: [TryGetResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md#abstract-trygetresult)
 
 
 

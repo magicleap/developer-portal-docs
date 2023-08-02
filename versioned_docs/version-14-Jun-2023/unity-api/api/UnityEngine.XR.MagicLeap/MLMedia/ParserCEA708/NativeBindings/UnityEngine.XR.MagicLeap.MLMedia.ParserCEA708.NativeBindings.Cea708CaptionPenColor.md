@@ -29,7 +29,7 @@ public Cea708CaptionColor BackgroundColor;
 
 | Type | Description  | 
 |--|--|
-| [Cea708CaptionColor](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+| [Cea708CaptionColor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 
@@ -49,7 +49,7 @@ public Cea708CaptionColor EdgeColor;
 
 | Type | Description  | 
 |--|--|
-| [Cea708CaptionColor](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+| [Cea708CaptionColor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 
@@ -69,7 +69,7 @@ public Cea708CaptionColor ForegroundColor;
 
 | Type | Description  | 
 |--|--|
-| [Cea708CaptionColor](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+| [Cea708CaptionColor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.NativeBindings.Cea708CaptionColor.md) | CEA708 Caption Color.  MLCea708CaptionColor  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 

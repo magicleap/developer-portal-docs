@@ -6,7 +6,7 @@ summary: type used to represent a region boundary on a 2d plane.
 
 # MLPlaneBoundary
 
-**Module:** **[Planes](/api-ref/api/Modules/group___planes/group___planes.md)**
+**Module:** **[Planes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/group___planes.md)**
 
 
 
@@ -19,9 +19,9 @@ Type used to represent a region boundary on a 2D plane.  [More...](#detailed-des
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | **[polygon](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md#mlpolygon-polygon)**  |
-| [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | **[holes](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md#mlpolygon-holes)**  |
-| uint32_t | **[holes_count](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md#uint32-t-holes-count)**  |
+| [MLPolygon](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | **[polygon](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md#mlpolygon-polygon)**  |
+| [MLPolygon](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | **[holes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md#mlpolygon-holes)**  |
+| uint32_t | **[holes_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md#uint32-t-holes-count)**  |
 
 ## Detailed Description
 
@@ -53,10 +53,10 @@ MLPolygon * polygon;
 
 | Type | Description |
 |--|--|
-| [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | Coplanar connected line segments representing the outer boundary of a polygon, an _n_-sided polygon where _n_ is the number of vertices.  |
+| [MLPolygon](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | Coplanar connected line segments representing the outer boundary of a polygon, an _n_-sided polygon where _n_ is the number of vertices.  |
 
 
-The polygon that defines the region, the boundary vertices in [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) will be in CCW order. 
+The polygon that defines the region, the boundary vertices in [MLPolygon](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) will be in CCW order. 
 
 
 
@@ -74,10 +74,10 @@ MLPolygon * holes;
 
 | Type | Description |
 |--|--|
-| [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | Coplanar connected line segments representing the outer boundary of a polygon, an _n_-sided polygon where _n_ is the number of vertices.  |
+| [MLPolygon](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) * | Coplanar connected line segments representing the outer boundary of a polygon, an _n_-sided polygon where _n_ is the number of vertices.  |
 
 
-A polygon may contains multiple holes, the boundary vertices in [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) will be in CW order. 
+A polygon may contains multiple holes, the boundary vertices in [MLPolygon](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md) will be in CW order. 
 
 
 

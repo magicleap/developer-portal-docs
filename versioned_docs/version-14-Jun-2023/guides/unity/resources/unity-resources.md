@@ -14,7 +14,7 @@ This section provides various samples, tools, and external libraries that you ca
 
 ## Projects
 
-- [3D Virtual Keyboard](/docs/guides/unity/resources/virtual-keyboard.md)
+- [3D Virtual Keyboard](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/resources/virtual-keyboard.md)
   - A virtual keyboard prefab that lets you bring in a 3D keyboard for in-app input.
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

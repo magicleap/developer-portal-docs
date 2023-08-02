@@ -17,7 +17,7 @@ If settings are created and marker tracking is set to false, the Marker Scanner 
 
 :::tip
 
-You can view the complete list of Marker Tracking settings in the [MLMarkerTracking the API section](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md)
+You can view the complete list of Marker Tracking settings in the [MLMarkerTracking the API section](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md)
 
 :::
 
@@ -165,9 +165,9 @@ Binary Data that is encoded into a QR code or barcode marker has to be decoded i
 
 ## See Also
 
-- [`MLMarkerTracker`](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md)
+- [`MLMarkerTracker`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md)
   - API to scan markers and obtain additional data such as 6DOF poses.
-- [`MLMarkerTracker.ArucoData`](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.ArucoData.md)
+- [`MLMarkerTracker.ArucoData`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.ArucoData.md)
   - API that contains the data that belongs to Aruco Markers.
-- [`MLMarkerTracker.Settings`](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md)
+- [`MLMarkerTracker.Settings`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md)
   - Marker Tracker Settings API that contain information such as : what type of markers, their sizes, and if the Marker tracker is enabled.

@@ -9,7 +9,7 @@ summary: a structure containing information about the exported space.
 
 
 
-A structure containing information about the exported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md).   
+A structure containing information about the exported [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md).   
 
 
 
@@ -17,7 +17,7 @@ A structure containing information about the exported [Space](/unity-api/api/Uni
 
 ## Public Methods
 
-### [SpaceExportOutData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) Create {#spaceexportoutdata-create}
+### [SpaceExportOutData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) Create {#spaceexportoutdata-create}
 
 ```csharp
 public static SpaceExportOutData Create()
@@ -43,7 +43,7 @@ public static byte [] GetData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [SpaceExportOutData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
+| [SpaceExportOutData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
 
 
 
@@ -56,7 +56,7 @@ public static byte [] GetData(
 
 ### Data {#intptr-data}
 
-[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data. This is binary data and typically does not include a terminating null character. 
+[Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data. This is binary data and typically does not include a terminating null character. 
 
 ```csharp
 

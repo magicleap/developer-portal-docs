@@ -5,7 +5,7 @@ title: MLPSSHEntry
 
 # MLPSSHEntry
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLPSSHEntry
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) | **[uuid](/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md#mluuid-uuid)**  |
-| size_t | **[size](/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md#size-t-size)**  |
-| uint8_t * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md#uint8-t-data)**  |
+| [MLUUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) | **[uuid](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md#mluuid-uuid)**  |
+| size_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md#size-t-size)**  |
+| uint8_t * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md#uint8-t-data)**  |
 
 ## Detailed Description
 

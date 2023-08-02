@@ -53,7 +53,7 @@ public List< string > GetValues()
 
 ### AllVoiceIntents {#list-allvoiceintents}
 
-The final data properly laid out to be assigned to the container that will be sent to the MLVoice API. VoiceCommandsToAdd will automatically be added to this in the proper format. Can also manually add to this list if it is not desired to do this through the editor inspector. This list follows the current structure of the [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) and is subject to change. 
+The final data properly laid out to be assigned to the container that will be sent to the MLVoice API. VoiceCommandsToAdd will automatically be added to this in the proper format. Can also manually add to this list if it is not desired to do this through the editor inspector. This list follows the current structure of the [JSONData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) and is subject to change. 
 
 ```csharp
 
@@ -63,7 +63,7 @@ public List< JSONData > AllVoiceIntents;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
+| List&lt; [JSONData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
 
 
 
@@ -96,7 +96,7 @@ public List< SlotData > SlotsForVoiceCommands;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) &gt; | The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.  |
+| List&lt; [SlotData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) &gt; | The Slot Data to be used in the [CustomVoiceIntents](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.  |
 
 
 
@@ -114,7 +114,7 @@ public SystemIntentFlags SystemCommands;
 
 | Type | Description  | 
 |--|--|
-| [SystemIntentFlags](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.md#enums-systemintentflags) | The verbal System Intents currently supported.  |
+| [SystemIntentFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.md#enums-systemintentflags) | The verbal System Intents currently supported.  |
 
 
 
@@ -134,7 +134,7 @@ public List< CustomVoiceIntents > VoiceCommandsToAdd;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md) &gt; | The Simplified Voice Command data needed to add commands from the inspector. The unique name field required in the final JSON will be auto generated based on the unique Id.  |
+| List&lt; [CustomVoiceIntents](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md) &gt; | The Simplified Voice Command data needed to add commands from the inspector. The unique name field required in the final JSON will be auto generated based on the unique Id.  |
 
 **Details**
 

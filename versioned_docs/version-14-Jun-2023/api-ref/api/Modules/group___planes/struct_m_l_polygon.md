@@ -6,7 +6,7 @@ summary: coplanar connected line segments representing the outer boundary of a p
 
 # MLPolygon
 
-**Module:** **[Planes](/api-ref/api/Modules/group___planes/group___planes.md)**
+**Module:** **[Planes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/group___planes.md)**
 
 
 
@@ -19,8 +19,8 @@ Coplanar connected line segments representing the outer boundary of a polygon, a
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) * | **[vertices](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md#mlvec3f-vertices)**  |
-| uint32_t | **[vertices_count](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md#uint32-t-vertices-count)**  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) * | **[vertices](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md#mlvec3f-vertices)**  |
+| uint32_t | **[vertices_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_polygon.md#uint32-t-vertices-count)**  |
 
 ## Detailed Description
 

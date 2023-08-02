@@ -17,7 +17,7 @@ A structure to encapsulate settings used by the Power Manager when requesting th
 
 ## Public Methods
 
-### [MLPowerManagerPowerStateSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerPowerStateSettings.md) Init {#mlpowermanagerpowerstatesettings-init}
+### [MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerPowerStateSettings.md) Init {#mlpowermanagerpowerstatesettings-init}
 
 ```csharp
 public static MLPowerManagerPowerStateSettings Init(
@@ -53,7 +53,7 @@ public PowerState State;
 
 | Type | Description  | 
 |--|--|
-| [PowerState](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-powerstate) | Power states.  |
+| [PowerState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-powerstate) | Power states.  |
 
 
 

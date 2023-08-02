@@ -19,9 +19,9 @@ AR Cloud requires an active license to be activated on a device. Licenses are ch
 
 ### Disambiguation
 
-The primary entrypoint to any spatially-mapped experience on a Magic Leap 2 is our [Spaces](/docs/guides/features/spaces/spaces-tool) tool. The Base model of ML2 can still use [Spatial Anchors](/docs/guides/features/spaces/spatial-anchors), albeit in an offline manner, where Spatial Maps are stored on-device.
+The primary entrypoint to any spatially-mapped experience on a Magic Leap 2 is our [Spaces](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/spaces/spaces-tool) tool. The Base model of ML2 can still use [Spatial Anchors](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/spaces/spatial-anchors), albeit in an offline manner, where Spatial Maps are stored on-device.
 
-*AR Cloud-ready refers to features described in the [Benefits section of our AR Cloud Overview page](/docs/guides/arcloud#benefits). Developer Pro or the Enterprise Editions are required to get these added feature sets.
+*AR Cloud-ready refers to features described in the [Benefits section of our AR Cloud Overview page](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/arcloud#benefits). Developer Pro or the Enterprise Editions are required to get these added feature sets.
 
 ## Activating a License
 

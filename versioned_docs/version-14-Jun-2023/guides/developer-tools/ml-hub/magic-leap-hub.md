@@ -18,7 +18,7 @@ The **Magic Leap Hub** is a tool that accelerates workflows for anyone creating 
 - Software package management
 - Access to external tools
 
-Follow our guides on [installing the Magic Leap Hub](/docs/guides/getting-started/install-the-tools.md#install-magic-leap-hub).
+Follow our guides on [installing the Magic Leap Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md#install-magic-leap-hub).
 
 :::info
 There is currently an issue with some Macs not being able to open the ML Hub terminal. To get around this bug, you can open up any command line interface (e.g. Terminal) and set up your environment with the following commands:

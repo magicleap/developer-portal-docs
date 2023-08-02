@@ -17,7 +17,7 @@ A structure containing settings for the space manager. This structure must be in
 
 ## Public Methods
 
-### [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Settings.md) Create {#settings-create}
+### [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Settings.md) Create {#settings-create}
 
 Initializes default values for MLSpaceManagerSettings. 
 

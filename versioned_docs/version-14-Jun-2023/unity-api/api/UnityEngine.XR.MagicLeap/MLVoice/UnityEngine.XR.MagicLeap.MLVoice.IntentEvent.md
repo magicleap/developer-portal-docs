@@ -61,7 +61,7 @@ public List< EventSlot > EventSlotsUsed;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [EventSlot](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.EventSlot.md) &gt; | Slot Data in voice event.  |
+| List&lt; [EventSlot](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.EventSlot.md) &gt; | Slot Data in voice event.  |
 
 **Details**
 
@@ -85,7 +85,7 @@ public NoIntentReason NoIntentReason;
 
 | Type | Description  | 
 |--|--|
-| [NoIntentReason](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-nointentreason) | No intent reason code in voice event.  |
+| [NoIntentReason](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-nointentreason) | No intent reason code in voice event.  |
 
 
 
@@ -105,7 +105,7 @@ public State State;
 
 | Type | Description  | 
 |--|--|
-| [State](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-state) | Voice state in voice event.  |
+| [State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-state) | Voice state in voice event.  |
 
 
 

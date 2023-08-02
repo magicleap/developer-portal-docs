@@ -32,7 +32,7 @@ public MLInputPreDefinedPattern(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [PreDefined](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md) |preDefinedPattern|A structure containing information about the Pre-Defined pattern to be played. |
+| in [PreDefined](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md) |preDefinedPattern|A structure containing information about the Pre-Defined pattern to be played. |
 
 
 

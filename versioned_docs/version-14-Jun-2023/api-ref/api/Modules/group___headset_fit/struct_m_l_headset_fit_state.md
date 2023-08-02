@@ -6,7 +6,7 @@ summary: headset fit state.
 
 # MLHeadsetFitState
 
-**Module:** **[Headset Fit](/api-ref/api/Modules/group___headset_fit/group___headset_fit.md)**
+**Module:** **[Headset Fit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___headset_fit/group___headset_fit.md)**
 
 
 
@@ -19,9 +19,9 @@ Headset fit state.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md#uint32-t-version)**  |
-| [MLHeadsetFitStatus](/api-ref/api/Modules/group___headset_fit/group___headset_fit.md#enums-mlheadsetfitstatus) | **[fit_status](/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md#mlheadsetfitstatus-fit-status)**  |
-| int64_t | **[epoch_timestamp_us](/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md#int64-t-epoch-timestamp-us)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md#uint32-t-version)**  |
+| [MLHeadsetFitStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___headset_fit/group___headset_fit.md#enums-mlheadsetfitstatus) | **[fit_status](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md#mlheadsetfitstatus-fit-status)**  |
+| int64_t | **[epoch_timestamp_us](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___headset_fit/struct_m_l_headset_fit_state.md#int64-t-epoch-timestamp-us)**  |
 
 ## Detailed Description
 
@@ -68,10 +68,10 @@ MLHeadsetFitStatus fit_status;
 
 | Type | Description |
 |--|--|
-| [MLHeadsetFitStatus](/api-ref/api/Modules/group___headset_fit/group___headset_fit.md#enums-mlheadsetfitstatus) | Represents the different fit status that the system can report.  |
+| [MLHeadsetFitStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___headset_fit/group___headset_fit.md#enums-mlheadsetfitstatus) | Represents the different fit status that the system can report.  |
 
 
-Headset fit status as defined in [MLHeadsetFitStatus](/api-ref/api/Modules/group___headset_fit/group___headset_fit.md#enum-mlheadsetfitstatus). 
+Headset fit status as defined in [MLHeadsetFitStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___headset_fit/group___headset_fit.md#enum-mlheadsetfitstatus). 
 
 
 

@@ -9,7 +9,7 @@ summary: apis for video and audio recording.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 APIs for video and audio recording.   [More...](#detailed-description)  
@@ -26,7 +26,7 @@ public class MLMediaRecorder;
 
 **Details**
 
-[MLMediaRecorder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md) description goes here. 
+[MLMediaRecorder](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md) description goes here. 
 
 
 
@@ -57,7 +57,7 @@ public ulong Handle { get; set; }
 
 ### InputSurface {#mlnativesurface-inputsurface}
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) surface object which should be used to get the native buffers to render the video frames onto for recorded. 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) surface object which should be used to get the native buffers to render the video frames onto for recorded. 
 
 ```csharp
 
@@ -74,7 +74,7 @@ public MLNativeSurface InputSurface = MagicLeapNativeBindings.InvalidHandle { ge
 
 ## Public Methods
 
-### [MLMediaRecorder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md) Create {#mlmediarecorder-create}
+### [MLMediaRecorder](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md) Create {#mlmediarecorder-create}
 
 Create a media recorder object 
 
@@ -93,7 +93,7 @@ public static MLMediaRecorder Create()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetInputSurface {#mlresult-getinputsurface}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetInputSurface {#mlresult-getinputsurface}
 
 Gets the input surface to record from when using SURFACE video source. May only be called after MLMediaRecorderPrepare and MLMediaRecorderStart. Frames rendered to the producer before MLMediaRecorderStart() is called will be discarded. When using an input surface, there are no accessible input buffers, as buffers are automatically passed from the other modules to this surface. The returned input surface can also be passed as a destination surface to - a video/mixed reality video capture session when calling MLCameraPrepareCapture(). Captured raw video frames will be consumed directly as input to an encoder without copying. Caller of this API should release the surface using #MLMediaRecorderReleaseInputSurface() on the Surface handle after usage. 
 
@@ -108,9 +108,9 @@ public MLResult GetInputSurface()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetMaxAmplitude {#mlresult-getmaxamplitude}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetMaxAmplitude {#mlresult-getmaxamplitude}
 
-Returns the maximum absolute amplitude that was sampled since the last call to this method. Call this only after the [MLMediaRecorder.SetAudioSource()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setaudiosource). 
+Returns the maximum absolute amplitude that was sampled since the last call to this method. Call this only after the [MLMediaRecorder.SetAudioSource()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setaudiosource). 
 
 ```csharp
 public MLResult GetMaxAmplitude(
@@ -145,7 +145,7 @@ public delegate void OnErrorDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnErrorData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnErrorData.md) |trackInfo|Info received when the media recorder runs into an error. |
+| [OnErrorData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnErrorData.md) |trackInfo|Info received when the media recorder runs into an error. |
 
 
 
@@ -167,7 +167,7 @@ public delegate void OnInfoDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnInfoData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnInfoData.md) |info||
+| [OnInfoData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnInfoData.md) |info||
 
 
 
@@ -189,7 +189,7 @@ public delegate void OnTrackErrorDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnTrackErrorData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnTrackErrorData.md) |trackInfo|Info received when the media recorder runs into a track error. |
+| [OnTrackErrorData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnTrackErrorData.md) |trackInfo|Info received when the media recorder runs into a track error. |
 
 
 
@@ -211,7 +211,7 @@ public delegate void OnTrackInfoDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OnTrackInfoData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnTrackInfoData.md) |info||
+| [OnTrackInfoData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.OnTrackInfoData.md) |info||
 
 
 
@@ -220,9 +220,9 @@ public delegate void OnTrackInfoDelegate(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Prepare {#mlresult-prepare}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Prepare {#mlresult-prepare}
 
-Prepares the recorder to begin capturing and encoding data for input mediaformat. Should be called after setting up the desired audio and video sources, encoders, but before [MLMediaRecorder.Start()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-start). 
+Prepares the recorder to begin capturing and encoding data for input mediaformat. Should be called after setting up the desired audio and video sources, encoders, but before [MLMediaRecorder.Start()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-start). 
 
 ```csharp
 public MLResult Prepare(
@@ -235,7 +235,7 @@ public MLResult Prepare(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|Media format object to configure the video & audio track.|
+| [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|Media format object to configure the video & audio track.|
 
 
 
@@ -244,7 +244,7 @@ public MLResult Prepare(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Reset {#mlresult-reset}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Reset {#mlresult-reset}
 
 Restarts the MediaRecorder to its idle state. After calling this method, you will have to configure it again as if it had just been constructed. 
 
@@ -259,9 +259,9 @@ public MLResult Reset()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetAudioEncoder {#mlresult-setaudioencoder}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetAudioEncoder {#mlresult-setaudioencoder}
 
-Sets the audio encoder to be used for recording. If this method is not called, the output file will not contain an audio track. Call this after [MLMediaRecorder.SetOutputFormat()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). 
+Sets the audio encoder to be used for recording. If this method is not called, the output file will not contain an audio track. Call this after [MLMediaRecorder.SetOutputFormat()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). 
 
 ```csharp
 public MLResult SetAudioEncoder(
@@ -274,7 +274,7 @@ public MLResult SetAudioEncoder(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [AudioEncoder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-audioencoder) |inAudioEncoder|Available audio encoder formats |
+| [AudioEncoder](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-audioencoder) |inAudioEncoder|Available audio encoder formats |
 
 
 
@@ -283,9 +283,9 @@ public MLResult SetAudioEncoder(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetAudioSource {#mlresult-setaudiosource}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetAudioSource {#mlresult-setaudiosource}
 
-Set MediaRecorder audio source. Cannot be called twice without calling [MLMediaRecorder.Reset()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-reset) in between. 
+Set MediaRecorder audio source. Cannot be called twice without calling [MLMediaRecorder.Reset()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-reset) in between. 
 
 ```csharp
 public MLResult SetAudioSource(
@@ -298,7 +298,7 @@ public MLResult SetAudioSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [AudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-audiosource) |inAudioSource|Audio source to put in the recorded media. |
+| [AudioSource](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-audiosource) |inAudioSource|Audio source to put in the recorded media. |
 
 
 
@@ -307,7 +307,7 @@ public MLResult SetAudioSource(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetGeoLocation {#mlresult-setgeolocation}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetGeoLocation {#mlresult-setgeolocation}
 
 Sets the GEO location for recording. 
 
@@ -333,9 +333,9 @@ public MLResult SetGeoLocation(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetMaxDuration {#mlresult-setmaxduration}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetMaxDuration {#mlresult-setmaxduration}
 
-Sets the maximum duration (in ms) of the recording session. Call this after [MLMediaRecorder.SetOutputFormat()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). After recording reaches the specified duration, a notification will be sent via the callback with a [MLMediaRecorder.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info) code of [MLMediaRecorder.Info.MaxDurationReached](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-maxdurationreached) and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified. 
+Sets the maximum duration (in ms) of the recording session. Call this after [MLMediaRecorder.SetOutputFormat()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). After recording reaches the specified duration, a notification will be sent via the callback with a [MLMediaRecorder.Info](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info) code of [MLMediaRecorder.Info.MaxDurationReached](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-maxdurationreached) and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified. 
 
 ```csharp
 public MLResult SetMaxDuration(
@@ -357,9 +357,9 @@ public MLResult SetMaxDuration(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetMaxFileSize {#mlresult-setmaxfilesize}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetMaxFileSize {#mlresult-setmaxfilesize}
 
-Sets the maximum file size (in bytes) of the recording session. Call this after [MLMediaRecorder.SetOutputFormat()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). After recording reaches the specified filesize, a notification will be sent via the callback with a [MLMediaRecorder.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info) code of [MLMediaRecorder.Info.MaxFileSizeReached](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-maxfilesizereached) and recording will be stopped. happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified. 
+Sets the maximum file size (in bytes) of the recording session. Call this after [MLMediaRecorder.SetOutputFormat()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). After recording reaches the specified filesize, a notification will be sent via the callback with a [MLMediaRecorder.Info](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info) code of [MLMediaRecorder.Info.MaxFileSizeReached](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-maxfilesizereached) and recording will be stopped. happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified. 
 
 ```csharp
 public MLResult SetMaxFileSize(
@@ -381,9 +381,9 @@ public MLResult SetMaxFileSize(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOutputFileForFD {#mlresult-setoutputfileforfd}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOutputFileForFD {#mlresult-setoutputfileforfd}
 
-Pass in the unmanaged file descriptor of the file to be written. Call this after [MLMediaRecorder.SetOutputFormat()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) but before [MLMediaRecorder.Prepare()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). 
+Pass in the unmanaged file descriptor of the file to be written. Call this after [MLMediaRecorder.SetOutputFormat()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) but before [MLMediaRecorder.Prepare()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). 
 
 ```csharp
 public MLResult SetOutputFileForFD(
@@ -405,9 +405,9 @@ public MLResult SetOutputFileForFD(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOutputFileForPath {#mlresult-setoutputfileforpath}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOutputFileForPath {#mlresult-setoutputfileforpath}
 
-Sets the path of the output file to be produced. Call this after [MLMediaRecorder.SetOutputFormat()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) but before [MLMediaRecorder.Prepare()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). 
+Sets the path of the output file to be produced. Call this after [MLMediaRecorder.SetOutputFormat()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) but before [MLMediaRecorder.Prepare()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). 
 
 ```csharp
 public MLResult SetOutputFileForPath(
@@ -429,7 +429,7 @@ public MLResult SetOutputFileForPath(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOutputFormat {#mlresult-setoutputformat}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOutputFormat {#mlresult-setoutputformat}
 
 Sets the format of the output file produced during recording. 
 
@@ -444,7 +444,7 @@ public MLResult SetOutputFormat(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-outputformat) |inFormat|Possible output formats |
+| [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-outputformat) |inFormat|Possible output formats |
 
 
 
@@ -453,9 +453,9 @@ public MLResult SetOutputFormat(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetVideoEncoder {#mlresult-setvideoencoder}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetVideoEncoder {#mlresult-setvideoencoder}
 
-Sets the video encoder to be used for recording. If this method is not called, the output file will not contain a video track. Call this after [MLMediaRecorder.SetOutputFormat()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). The video source is always set to camera by default. 
+Sets the video encoder to be used for recording. If this method is not called, the output file will not contain a video track. Call this after [MLMediaRecorder.SetOutputFormat()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-setoutputformat) and before [MLMediaRecorder.Prepare()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). The video source is always set to camera by default. 
 
 ```csharp
 public MLResult SetVideoEncoder(
@@ -468,7 +468,7 @@ public MLResult SetVideoEncoder(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [VideoEncoder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-videoencoder) |inVideoEncoder|Available video encoder formats |
+| [VideoEncoder](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-videoencoder) |inVideoEncoder|Available video encoder formats |
 
 
 
@@ -477,9 +477,9 @@ public MLResult SetVideoEncoder(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetVideoSource {#mlresult-setvideosource}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetVideoSource {#mlresult-setvideosource}
 
-Sets MediaRecorder video source. Cannot be called twice without calling [MLMediaRecorder.Reset()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-reset) in between. 
+Sets MediaRecorder video source. Cannot be called twice without calling [MLMediaRecorder.Reset()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-reset) in between. 
 
 ```csharp
 public MLResult SetVideoSource(
@@ -492,7 +492,7 @@ public MLResult SetVideoSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [VideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-videosource) |inVideoSource|Video source to put in the recorded media. |
+| [VideoSource](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-videosource) |inVideoSource|Video source to put in the recorded media. |
 
 
 
@@ -501,9 +501,9 @@ public MLResult SetVideoSource(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
 
-Begins capturing and encoding data to the specified file. Call this after [MLMediaRecorder.Prepare()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). The apps should not start another recording session during recording. 
+Begins capturing and encoding data to the specified file. Call this after [MLMediaRecorder.Prepare()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-prepare). The apps should not start another recording session during recording. 
 
 ```csharp
 public MLResult Start()
@@ -516,9 +516,9 @@ public MLResult Start()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Stop {#mlresult-stop}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Stop {#mlresult-stop}
 
-Stops recording. Call this after [MLMediaRecorder.Start()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-start). Once recording is stopped, you will have to configure it again as if it has just been constructed. 
+Stops recording. Call this after [MLMediaRecorder.Start()](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#mlresult-start). Once recording is stopped, you will have to configure it again as if it has just been constructed. 
 
 ```csharp
 public MLResult Stop()

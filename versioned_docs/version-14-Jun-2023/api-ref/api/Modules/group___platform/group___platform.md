@@ -12,42 +12,42 @@ APIs for information regarding the platform.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLVersion](/api-ref/api/Modules/group___platform/struct_m_l_version.md)**  |
+| struct | **[MLVersion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef uint64_t | **[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle)** <br></br>Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
-| typedef struct [MLVersion](/api-ref/api/Modules/group___platform/struct_m_l_version.md) | **[MLVersion](/api-ref/api/Modules/group___platform/group___platform.md#struct-mlversion)**  |
-| typedef int32_t | **[MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult)**  |
+| typedef uint64_t | **[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle)** <br></br>Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| typedef struct [MLVersion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md) | **[MLVersion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#struct-mlversion)**  |
+| typedef int32_t | **[MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult)**  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 0](/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-0)** <br></br> { <br></br>[ML_INVALID_HANDLE](/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle) = 0xFFFFFFFFFFFFFFFF<br></br>} |
-| enum | **[Anonymous Enum 1](/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-1)** <br></br> { <br></br>[MLVersion_BuildIdMaxLength](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlversion-buildidmaxlength) = 128<br></br>} |
-| enum | **[Anonymous Enum 2](/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-2)** <br></br> { <br></br>[MLResultAPIPrefix_Global](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresultapiprefix-global) = ( 0  << 16)<br></br>} |
-| enum | **[MLResultGlobal](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresultglobal)** <br></br> { <br></br>[MLResult_Ok](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-ok) = MLResultAPIPrefix_Global,<br></br> [MLResult_Pending](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-pending),<br></br> [MLResult_Timeout](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-timeout),<br></br> [MLResult_Locked](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-locked),<br></br> [MLResult_UnspecifiedFailure](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-unspecifiedfailure),<br></br> [MLResult_InvalidParam](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-invalidparam),<br></br> [MLResult_AllocFailed](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-allocfailed),<br></br> [MLResult_PermissionDenied](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-permissiondenied),<br></br> [MLResult_NotImplemented](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-notimplemented),<br></br> [MLResult_ClientLimitExceeded](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-clientlimitexceeded),<br></br> [MLResult_PoseNotFound](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-posenotfound),<br></br> [MLResult_IncompatibleSKU](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-incompatiblesku),<br></br> [MLResult_PerceptionSystemNotStarted](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-perceptionsystemnotstarted),<br></br> [MLResult_IllegalState](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-illegalstate),<br></br> [MLResult_LicenseError](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-licenseerror),<br></br> [MLResult_InvalidTimestamp](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-invalidtimestamp),<br></br> [MLResult_Ensure32Bits](/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[Anonymous Enum 0](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-0)** <br></br> { <br></br>[ML_INVALID_HANDLE](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle) = 0xFFFFFFFFFFFFFFFF<br></br>} |
+| enum | **[Anonymous Enum 1](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-1)** <br></br> { <br></br>[MLVersion_BuildIdMaxLength](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlversion-buildidmaxlength) = 128<br></br>} |
+| enum | **[Anonymous Enum 2](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-anonymous-enum-2)** <br></br> { <br></br>[MLResultAPIPrefix_Global](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresultapiprefix-global) = ( 0  << 16)<br></br>} |
+| enum | **[MLResultGlobal](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresultglobal)** <br></br> { <br></br>[MLResult_Ok](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-ok) = MLResultAPIPrefix_Global,<br></br> [MLResult_Pending](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-pending),<br></br> [MLResult_Timeout](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-timeout),<br></br> [MLResult_Locked](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-locked),<br></br> [MLResult_UnspecifiedFailure](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-unspecifiedfailure),<br></br> [MLResult_InvalidParam](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-invalidparam),<br></br> [MLResult_AllocFailed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-allocfailed),<br></br> [MLResult_PermissionDenied](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-permissiondenied),<br></br> [MLResult_NotImplemented](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-notimplemented),<br></br> [MLResult_ClientLimitExceeded](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-clientlimitexceeded),<br></br> [MLResult_PoseNotFound](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-posenotfound),<br></br> [MLResult_IncompatibleSKU](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-incompatiblesku),<br></br> [MLResult_PerceptionSystemNotStarted](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-perceptionsystemnotstarted),<br></br> [MLResult_IllegalState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-illegalstate),<br></br> [MLResult_LicenseError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-licenseerror),<br></br> [MLResult_InvalidTimestamp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-invalidtimestamp),<br></br> [MLResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-mlresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| const char * | **[MLGetResultString](/api-ref/api/Modules/group___platform/group___platform.md#const-char-mlgetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string for MLResultGlobal codes.  |
-| const char * | **[MLGlobalGetResultString](/api-ref/api/Modules/group___platform/group___platform.md#const-char-mlglobalgetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string for MLResult codes.  |
-| bool | **[MLHandleIsValid](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Check if a handle is valid.  |
-| const char * | **[MLGetVersionName](/api-ref/api/Modules/group___platform/group___platform.md#const-char-mlgetversionname)**()<br></br>Get SDK version as c-style string.  |
-| [MLVersion](/api-ref/api/Modules/group___platform/struct_m_l_version.md) | **[MLGetVersion](/api-ref/api/Modules/group___platform/group___platform.md#mlversion-mlgetversion)**()<br></br>Get SDK version as a struct with major, minor, revision, and build_id.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPlatformGetAPILevel](/api-ref/api/Modules/group___platform/group___platform.md#mlresult-mlplatformgetapilevel)**(uint32_t * out_api_level)<br></br>Query the OS for which Platform API Level is supported.  |
+| const char * | **[MLGetResultString](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#const-char-mlgetresultstring)**([MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string for MLResultGlobal codes.  |
+| const char * | **[MLGlobalGetResultString](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#const-char-mlglobalgetresultstring)**([MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string for MLResult codes.  |
+| bool | **[MLHandleIsValid](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Check if a handle is valid.  |
+| const char * | **[MLGetVersionName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#const-char-mlgetversionname)**()<br></br>Get SDK version as c-style string.  |
+| [MLVersion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md) | **[MLGetVersion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#mlversion-mlgetversion)**()<br></br>Get SDK version as a struct with major, minor, revision, and build_id.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPlatformGetAPILevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#mlresult-mlplatformgetapilevel)**(uint32_t * out_api_level)<br></br>Query the OS for which Platform API Level is supported.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MLRESULT_PREFIX](/api-ref/api/Modules/group___platform/group___platform.md#defines-mlresult-prefix)**(val)  |
-|  | **[ML_PLATFORM_API_LEVEL](/api-ref/api/Modules/group___platform/group___platform.md#defines-ml-platform-api-level)**  |
+|  | **[MLRESULT_PREFIX](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#defines-mlresult-prefix)**(val)  |
+|  | **[ML_PLATFORM_API_LEVEL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#defines-ml-platform-api-level)**  |
 
 ## Detailed Description
 
@@ -72,7 +72,7 @@ APIs for information regarding the platform.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| ML_INVALID_HANDLE |  0xFFFFFFFFFFFFFFFF| Value of an invalid handle. To test if a handle is invalid use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid). |
+| ML_INVALID_HANDLE |  0xFFFFFFFFFFFFFFFF| Value of an invalid handle. To test if a handle is invalid use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid). |
 
 
 
@@ -87,7 +87,7 @@ APIs for information regarding the platform.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLVersion_BuildIdMaxLength |  128| Maximum character length of [MLVersion](/api-ref/api/Modules/group___platform/struct_m_l_version.md) build ID. |
+| MLVersion_BuildIdMaxLength |  128| Maximum character length of [MLVersion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md) build ID. |
 
 
 
@@ -155,7 +155,7 @@ Global MLResult codes that any API can optionally return.
 typedef uint64_t MLHandle;
 ```
 
-Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not. 
+Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not. 
 
 
 
@@ -175,7 +175,7 @@ SDK version: '[major].[minor].[revision].[build_id]'.
 
 
 
-[More Info](/api-ref/api/Modules/group___platform/struct_m_l_version.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md)
 
 
 
@@ -214,7 +214,7 @@ Returns an ASCII string for MLResultGlobal codes.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result_code|The input MLResult enum from ML API functions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result_code|The input MLResult enum from ML API functions. |
 **Required Permissions**:
 
   * None 
@@ -242,7 +242,7 @@ Returns an ASCII string for MLResult codes.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result_code|The input MLResult enum from ML API functions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result_code|The input MLResult enum from ML API functions. |
 **Required Permissions**:
 
   * None 
@@ -275,7 +275,7 @@ Check if a handle is valid.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle to check. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle to check. |
 **Required Permissions**:
 
   * None 
@@ -351,9 +351,9 @@ Query the OS for which Platform API Level is supported.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation completed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_platform_level was not valid (null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedError|Operation failed.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation completed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_platform_level was not valid (null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedError|Operation failed.|
 **Required Permissions**:
 
   * None 

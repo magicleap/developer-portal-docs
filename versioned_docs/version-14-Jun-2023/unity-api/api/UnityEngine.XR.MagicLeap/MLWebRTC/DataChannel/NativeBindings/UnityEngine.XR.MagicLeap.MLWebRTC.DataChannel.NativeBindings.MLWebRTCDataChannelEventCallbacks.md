@@ -9,7 +9,7 @@ summary: the native representation of the mlwebrtc data channel callback events.
 
 
 
-The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) data channel callback events.   
+The native representation of the [MLWebRTC](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) data channel callback events.   
 
 
 
@@ -17,9 +17,9 @@ The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicL
 
 ## Public Methods
 
-### [MLWebRTCDataChannelEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) Create {#mlwebrtcdatachanneleventcallbacks-create}
+### [MLWebRTCDataChannelEventCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) Create {#mlwebrtcdatachanneleventcallbacks-create}
 
-Creates an initialized [MLWebRTCDataChannelEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) object. 
+Creates an initialized [MLWebRTCDataChannelEventCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) object. 
 
 ```csharp
 public static MLWebRTCDataChannelEventCallbacks Create(
@@ -39,7 +39,7 @@ public static MLWebRTCDataChannelEventCallbacks Create(
 
 
 
-**Returns**: An initialized [MLWebRTCDataChannelEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) object.
+**Returns**: An initialized [MLWebRTCDataChannelEventCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelEventCallbacks.md) object.
 
 
 
@@ -66,7 +66,7 @@ public IntPtr Context;
 
 ### OnClosed {#oncloseddelegate-onclosed}
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnClosed event. 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnClosed event. 
 
 ```csharp
 
@@ -76,7 +76,7 @@ public OnClosedDelegate OnClosed;
 
 | Type | Description  | 
 |--|--|
-| [OnClosedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-oncloseddelegate) | Delegate that describes the requirements of the OnClosed callback.  |
+| [OnClosedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-oncloseddelegate) | Delegate that describes the requirements of the OnClosed callback.  |
 
 
 
@@ -86,7 +86,7 @@ public OnClosedDelegate OnClosed;
 
 ### OnMessage {#onmessagedelegate-onmessage}
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnMessage event. 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnMessage event. 
 
 ```csharp
 
@@ -103,7 +103,7 @@ public OnMessageDelegate OnMessage;
 
 ### OnOpen {#onopeneddelegate-onopen}
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnOpen event. 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) OnOpen event. 
 
 ```csharp
 
@@ -113,7 +113,7 @@ public OnOpenedDelegate OnOpen;
 
 | Type | Description  | 
 |--|--|
-| [OnOpenedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-onopeneddelegate) | Delegate that describes the requirements of the OnOpened callback.  |
+| [OnOpenedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.md#delegate-void-onopeneddelegate) | Delegate that describes the requirements of the OnOpened callback.  |
 
 
 

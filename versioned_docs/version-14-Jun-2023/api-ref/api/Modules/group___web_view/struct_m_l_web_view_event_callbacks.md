@@ -6,7 +6,7 @@ summary: event handler for mlwebview callbacks.
 
 # MLWebViewEventCallbacks
 
-**Module:** **[WebView](/api-ref/api/Modules/group___web_view/group___web_view.md)**
+**Module:** **[WebView](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md)**
 
 
 
@@ -19,21 +19,21 @@ Event handler for MLWebView callbacks.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#uint32-t-version)**  |
-| void * | **[user_data](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-user-data)**  |
-| void(*)(const char *resource_url, void *user_data) | **[on_before_resource_load](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-before-resource-load)** <br></br>Called to notify when a resource will loadeded.  |
-| void(*)(bool is_main_frame, int32_t http_status_code, void *user_data) | **[on_load_end](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-load-end)** <br></br>Called to notify load completion.  |
-| void(*)(bool is_main_frame, int32_t http_status_code, const char *error_str, const char *failed_url, void *user_data) | **[on_load_error](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-load-error)** <br></br>Called if there was any error during loading. These errors could be due to connectivity, certificate errors etc.  |
-| bool(*)(int32_t error_code, const char *url, const char *error_message, const char *details, void *user_data) | **[on_certificate_error](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#bool-on-certificate-error)** <br></br>Called when there is any certificate error.  |
-| void(*)(int32_t x, int32_t y, int32_t width, int32_t height, int32_t text_input_flags, MLWebViewTextInputType text_input_type, void *user_data) | **[on_show_keyboard](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-show-keyboard)** <br></br>Called when user selects an input field.  |
-| void(*)(void *user_data) | **[on_keyboard_dismiss](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-keyboard-dismiss)** <br></br>Called when user deselects an input field and the keyboard should be dismissed.  |
-| void(*)(void *user_data) | **[on_destroy](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-destroy)** <br></br>Called when webview is destroyed.  |
-| void(*)(void *user_data) | **[on_service_connected](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-connected)** <br></br>This callback is used to pass notify user of service connection.  |
-| void(*)(void *user_data) | **[on_service_disconnected](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-disconnected)** <br></br>This callback is used to notify user that service is disconnect.  |
-| void(*)(MLResult result, void *user_data) | **[on_service_failed](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-failed)** <br></br>This callback is used to notify user that service has failed.  |
-| bool(*)(const char *url, void *user_data) | **[on_before_popup](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#bool-on-before-popup)** <br></br>This callback is used to ask the application if is OK to load a URL.  |
-| void(*)(uint64_t popup_id, const char *url, void *user_data) | **[on_popup_opened](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-popup-opened)** <br></br>This callback is used to notify application that popup is opened.  |
-| void(*)(MLHandle handle, void *user_data) | **[on_popup_closed](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-popup-closed)** <br></br>This callback is used to notify the application of a closing popup.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#uint32-t-version)**  |
+| void * | **[user_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-user-data)**  |
+| void(*)(const char *resource_url, void *user_data) | **[on_before_resource_load](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-before-resource-load)** <br></br>Called to notify when a resource will loadeded.  |
+| void(*)(bool is_main_frame, int32_t http_status_code, void *user_data) | **[on_load_end](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-load-end)** <br></br>Called to notify load completion.  |
+| void(*)(bool is_main_frame, int32_t http_status_code, const char *error_str, const char *failed_url, void *user_data) | **[on_load_error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-load-error)** <br></br>Called if there was any error during loading. These errors could be due to connectivity, certificate errors etc.  |
+| bool(*)(int32_t error_code, const char *url, const char *error_message, const char *details, void *user_data) | **[on_certificate_error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#bool-on-certificate-error)** <br></br>Called when there is any certificate error.  |
+| void(*)(int32_t x, int32_t y, int32_t width, int32_t height, int32_t text_input_flags, MLWebViewTextInputType text_input_type, void *user_data) | **[on_show_keyboard](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-show-keyboard)** <br></br>Called when user selects an input field.  |
+| void(*)(void *user_data) | **[on_keyboard_dismiss](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-keyboard-dismiss)** <br></br>Called when user deselects an input field and the keyboard should be dismissed.  |
+| void(*)(void *user_data) | **[on_destroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-destroy)** <br></br>Called when webview is destroyed.  |
+| void(*)(void *user_data) | **[on_service_connected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-connected)** <br></br>This callback is used to pass notify user of service connection.  |
+| void(*)(void *user_data) | **[on_service_disconnected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-disconnected)** <br></br>This callback is used to notify user that service is disconnect.  |
+| void(*)(MLResult result, void *user_data) | **[on_service_failed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-service-failed)** <br></br>This callback is used to notify user that service has failed.  |
+| bool(*)(const char *url, void *user_data) | **[on_before_popup](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#bool-on-before-popup)** <br></br>This callback is used to ask the application if is OK to load a URL.  |
+| void(*)(uint64_t popup_id, const char *url, void *user_data) | **[on_popup_opened](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-popup-opened)** <br></br>This callback is used to notify application that popup is opened.  |
+| void(*)(MLHandle handle, void *user_data) | **[on_popup_closed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md#void-on-popup-closed)** <br></br>This callback is used to notify the application of a closing popup.  |
 
 ## Detailed Description
 
@@ -43,7 +43,7 @@ struct MLWebViewEventCallbacks;
 
 Event handler for MLWebView callbacks. 
 
-This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebvieweventcallbacksinit) before use.
+This structure must be initialized by calling [MLWebViewEventCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebvieweventcallbacksinit) before use.
 
 
 
@@ -222,8 +222,8 @@ Called when user selects an input field.
 |  |y|Vertical position of the input field. |
 |  |width|Width of the input field. |
 |  |height|Height of the input field. |
-|  |text_input_flags|One or combination of [MLWebViewTextInputFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enum-mlwebviewtextinputflags). |
-|  |text_input_type|One of [MLWebViewTextInputType](/api-ref/api/Modules/group___web_view/group___web_view.md#enum-mlwebviewtextinputtype). |
+|  |text_input_flags|One or combination of [MLWebViewTextInputFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enum-mlwebviewtextinputflags). |
+|  |text_input_type|One of [MLWebViewTextInputType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enum-mlwebviewtextinputtype). |
 
 
 

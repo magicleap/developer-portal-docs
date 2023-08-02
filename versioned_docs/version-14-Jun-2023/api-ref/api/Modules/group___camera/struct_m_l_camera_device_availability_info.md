@@ -5,7 +5,7 @@ title: MLCameraDeviceAvailabilityInfo
 
 # MLCameraDeviceAvailabilityInfo
 
-**Module:** **[Camera](/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLCameraDeviceAvailabilityInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) | **[cam_id](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md#mlcameraidentifier-cam-id)**  |
-| void * | **[user_data](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md#void-user-data)**  |
+| [MLCameraIdentifier](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) | **[cam_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md#mlcameraidentifier-cam-id)**  |
+| void * | **[user_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md#void-user-data)**  |
 
 ## Detailed Description
 
@@ -59,7 +59,7 @@ void * user_data;
 ```
 
 
-The context pointer supplied to [MLCameraInit()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit) call. 
+The context pointer supplied to [MLCameraInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit) call. 
 
 
 

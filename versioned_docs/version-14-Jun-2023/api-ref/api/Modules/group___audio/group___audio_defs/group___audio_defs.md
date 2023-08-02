@@ -5,7 +5,7 @@ title: Audio Definitions
 
 # Audio Definitions
 
-**Module:** **[Audio](/api-ref/api/Modules/group___audio/group___audio.md)**
+**Module:** **[Audio](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio.md)**
 
  [More...](#detailed-description)
 
@@ -13,77 +13,77 @@ title: Audio Definitions
 
 | Name           |
 | -------------- |
-| **[Control](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_control.md)** <br></br>CONTROL.  |
-| **[Parameters](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md)** <br></br>PARAMETERS.  |
-| **[Acoustics](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** <br></br>ACOUSTICS.  |
-| **[Audio Output](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___audio_output.md)**  |
+| **[Control](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_control.md)** <br></br>CONTROL.  |
+| **[Parameters](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_parameters.md)** <br></br>PARAMETERS.  |
+| **[Acoustics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_acoustics.md)** <br></br>ACOUSTICS.  |
+| **[Audio Output](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_output/group___audio_output.md)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLAudioMultibandLevel](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)** <br></br>Properties specifying a broadband level and three sub-band levels.  |
+| struct | **[MLAudioMultibandLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)** <br></br>Properties specifying a broadband level and three sub-band levels.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLAudioMultibandLevel](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[MLAudioMultibandLevel](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#struct-mlaudiomultibandlevel)** <br></br>Properties specifying a broadband level and three sub-band levels.  |
+| typedef struct [MLAudioMultibandLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[MLAudioMultibandLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#struct-mlaudiomultibandlevel)** <br></br>Properties specifying a broadband level and three sub-band levels.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLAudioMicCaptureType](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype)** <br></br> { <br></br>[MLAudioMicCaptureType_VoiceComm](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecomm),<br></br> [MLAudioMicCaptureType_VoiceCapture](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecapture),<br></br> [MLAudioMicCaptureType_WorldCapture](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-worldcapture) =4,<br></br> [MLAudioMicCaptureType_Ensure32Bits](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-ensure32bits) =0x7FFFFFFF<br></br>}<br></br>The type of mic input to capture.  |
+| enum | **[MLAudioMicCaptureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype)** <br></br> { <br></br>[MLAudioMicCaptureType_VoiceComm](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecomm),<br></br> [MLAudioMicCaptureType_VoiceCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecapture),<br></br> [MLAudioMicCaptureType_WorldCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-worldcapture) =4,<br></br> [MLAudioMicCaptureType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-ensure32bits) =0x7FFFFFFF<br></br>}<br></br>The type of mic input to capture.  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| float | **[main](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-main)**  |
-| float | **[lf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-lf)**  |
-| float | **[mf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-mf)**  |
-| float | **[hf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-hf)**  |
-| [MLAudioMultibandLevel](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[gain](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiomultibandlevel-gain)**  |
-| float | **[pre_delay](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-pre-delay)**  |
-| [MLAudioMultibandLevel](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[gain](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiomultibandlevel-gain)**  |
-| float | **[pre_delay](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-pre-delay)**  |
-| float | **[decay_time](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time)**  |
-| float | **[decay_time_lf_ratio](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-lf-ratio)**  |
-| float | **[decay_time_hf_ratio](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-hf-ratio)**  |
-| float | **[min_distance](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-min-distance)**  |
-| float | **[max_distance](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-max-distance)**  |
-| float | **[rolloff_factor](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-rolloff-factor)**  |
-| float | **[inner_angle](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-inner-angle)**  |
-| float | **[outer_angle](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-angle)**  |
-| float | **[outer_gain](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain)**  |
-| float | **[outer_gain_lf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-lf)**  |
-| float | **[outer_gain_mf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-mf)**  |
-| float | **[outer_gain_hf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-hf)**  |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[eye_point](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-eye-point)**  |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[end_point](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-end-point)**  |
-| float | **[factor](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-factor)**  |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[hit_point](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-hit-point)**  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[source_id](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-source-id)**  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[image_id](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-image-id)**  |
-| uint32_t | **[leg_index](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-leg-index)**  |
-| [MLAudioRaycast](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | **[ray](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudioraycast-ray)**  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[source_id](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-source-id)**  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[image_id](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-image-id)**  |
-| uint32_t | **[leg_index](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-leg-index)**  |
-| [MLAudioRaycast](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | **[ray](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudioraycast-ray)**  |
-| [MLAudioObstruction](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md) | **[obstruction](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudioobstruction-obstruction)**  |
-| uint32_t | **[channel_count](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-channel-count)**  |
-| uint32_t | **[samples_per_second](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-samples-per-second)**  |
-| uint32_t | **[bits_per_sample](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-bits-per-sample)**  |
-| uint32_t | **[valid_bits_per_sample](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-valid-bits-per-sample)**  |
-| [MLAudioSampleFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/group___def_buffering.md#enums-mlaudiosampleformat) | **[sample_format](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiosampleformat-sample-format)**  |
-| [MLAudioChannelFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/group___def_buffering.md#enums-mlaudiochannelformat) | **[channel_format](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiochannelformat-channel-format)**  |
-| uint8_t * | **[ptr](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint8-t-ptr)**  |
-| uint32_t | **[size](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-size)**  |
-| float * | **[values](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-values)**  |
-| int32_t | **[num_columns](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#int32-t-num-columns)**  |
-| int32_t | **[num_rows](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#int32-t-num-rows)**  |
+| float | **[main](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-main)**  |
+| float | **[lf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-lf)**  |
+| float | **[mf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-mf)**  |
+| float | **[hf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-hf)**  |
+| [MLAudioMultibandLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[gain](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiomultibandlevel-gain)**  |
+| float | **[pre_delay](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-pre-delay)**  |
+| [MLAudioMultibandLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | **[gain](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiomultibandlevel-gain)**  |
+| float | **[pre_delay](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-pre-delay)**  |
+| float | **[decay_time](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time)**  |
+| float | **[decay_time_lf_ratio](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-lf-ratio)**  |
+| float | **[decay_time_hf_ratio](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-decay-time-hf-ratio)**  |
+| float | **[min_distance](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-min-distance)**  |
+| float | **[max_distance](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-max-distance)**  |
+| float | **[rolloff_factor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-rolloff-factor)**  |
+| float | **[inner_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-inner-angle)**  |
+| float | **[outer_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-angle)**  |
+| float | **[outer_gain](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain)**  |
+| float | **[outer_gain_lf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-lf)**  |
+| float | **[outer_gain_mf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-mf)**  |
+| float | **[outer_gain_hf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-outer-gain-hf)**  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[eye_point](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-eye-point)**  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[end_point](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-end-point)**  |
+| float | **[factor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-factor)**  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[hit_point](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlvec3f-hit-point)**  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[source_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-source-id)**  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[image_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-image-id)**  |
+| uint32_t | **[leg_index](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-leg-index)**  |
+| [MLAudioRaycast](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | **[ray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudioraycast-ray)**  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[source_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-source-id)**  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[image_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlhandle-image-id)**  |
+| uint32_t | **[leg_index](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-leg-index)**  |
+| [MLAudioRaycast](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | **[ray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudioraycast-ray)**  |
+| [MLAudioObstruction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md) | **[obstruction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudioobstruction-obstruction)**  |
+| uint32_t | **[channel_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-channel-count)**  |
+| uint32_t | **[samples_per_second](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-samples-per-second)**  |
+| uint32_t | **[bits_per_sample](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-bits-per-sample)**  |
+| uint32_t | **[valid_bits_per_sample](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-valid-bits-per-sample)**  |
+| [MLAudioSampleFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/group___def_buffering.md#enums-mlaudiosampleformat) | **[sample_format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiosampleformat-sample-format)**  |
+| [MLAudioChannelFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/group___def_buffering.md#enums-mlaudiochannelformat) | **[channel_format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiochannelformat-channel-format)**  |
+| uint8_t * | **[ptr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint8-t-ptr)**  |
+| uint32_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-size)**  |
+| float * | **[values](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-values)**  |
+| int32_t | **[num_columns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#int32-t-num-columns)**  |
+| int32_t | **[num_rows](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#int32-t-num-rows)**  |
 
 ## Detailed Description
 
@@ -134,7 +134,7 @@ Properties specifying a broadband level and three sub-band levels.
 
 
 
-[More Info](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md)
 
 
 **API Level:**
@@ -219,7 +219,7 @@ MLAudioMultibandLevel gain;
 
 | Type | Description |
 |--|--|
-| [MLAudioMultibandLevel](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | Properties specifying a broadband level and three sub-band levels.  |
+| [MLAudioMultibandLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | Properties specifying a broadband level and three sub-band levels.  |
 
 
 Dispersion output mix level. Range[(0,0,0,0):(8,2,2,2)] Default=[0.25, 1.0, 1.0, 1.0]. 
@@ -255,7 +255,7 @@ MLAudioMultibandLevel gain;
 
 | Type | Description |
 |--|--|
-| [MLAudioMultibandLevel](/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | Properties specifying a broadband level and three sub-band levels.  |
+| [MLAudioMultibandLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/struct_m_l_audio_multiband_level.md) | Properties specifying a broadband level and three sub-band levels.  |
 
 
 Reverb output mix level. Range[(0,0,0,0):(8,2,2,2)] Default=[0.16, 1.0, 1.0, 1.0]. 
@@ -531,7 +531,7 @@ MLHandle source_id;
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 Internal identifier. 
@@ -552,7 +552,7 @@ MLHandle image_id;
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 Internal identifier. 
@@ -588,7 +588,7 @@ MLAudioRaycast ray;
 
 | Type | Description |
 |--|--|
-| [MLAudioRaycast](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | Two points in space describing a ray.  |
+| [MLAudioRaycast](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | Two points in space describing a ray.  |
 
 
 Raycast to test for obstruction. 
@@ -609,7 +609,7 @@ MLHandle source_id;
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 Internal identifier. 
@@ -630,7 +630,7 @@ MLHandle image_id;
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 Internal identifier. 
@@ -666,7 +666,7 @@ MLAudioRaycast ray;
 
 | Type | Description |
 |--|--|
-| [MLAudioRaycast](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | Two points in space describing a ray.  |
+| [MLAudioRaycast](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_raycast.md) | Two points in space describing a ray.  |
 
 
 Raycast tested for obstruction. 
@@ -687,7 +687,7 @@ MLAudioObstruction obstruction;
 
 | Type | Description |
 |--|--|
-| [MLAudioObstruction](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md) | Obstruction along a ray.  |
+| [MLAudioObstruction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_spatial_sound/struct_m_l_audio_obstruction.md) | Obstruction along a ray.  |
 
 
 Result of obstruction test. 

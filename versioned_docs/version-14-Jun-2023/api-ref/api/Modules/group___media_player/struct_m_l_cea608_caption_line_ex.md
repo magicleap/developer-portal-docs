@@ -6,7 +6,7 @@ summary: cea608 caption line structure.
 
 # MLCea608CaptionLineEx
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,9 +19,9 @@ Cea608 caption line structure.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint16_t[2 *MLCea608_CCMaxColsPlus2] | **[display_chars](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md#uint16-t-display-chars)**  |
-| [MLCea608CaptionStyleColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) *[MLCea608_CCMaxColsPlus2] | **[mid_row_styles](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md#mlcea608captionstylecolor-mid-row-styles)**  |
-| [MLCea608CaptionPAC](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md) *[MLCea608_CCMaxColsPlus2] | **[pac_styles](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md#mlcea608captionpac-pac-styles)**  |
+| uint16_t[2 *MLCea608_CCMaxColsPlus2] | **[display_chars](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md#uint16-t-display-chars)**  |
+| [MLCea608CaptionStyleColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) *[MLCea608_CCMaxColsPlus2] | **[mid_row_styles](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md#mlcea608captionstylecolor-mid-row-styles)**  |
+| [MLCea608CaptionPAC](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md) *[MLCea608_CCMaxColsPlus2] | **[pac_styles](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md#mlcea608captionpac-pac-styles)**  |
 
 ## Detailed Description
 
@@ -72,7 +72,7 @@ MLCea608CaptionStyleColor *[MLCea608_CCMaxColsPlus2] mid_row_styles;
 
 | Type | Description |
 |--|--|
-| [MLCea608CaptionStyleColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) *[MLCea608_CCMaxColsPlus2] | Cea608 caption style and color. [MLCea608_CCMaxColsPlus2] |
+| [MLCea608CaptionStyleColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) *[MLCea608_CCMaxColsPlus2] | Cea608 caption style and color. [MLCea608_CCMaxColsPlus2] |
 
 
 
@@ -91,7 +91,7 @@ MLCea608CaptionPAC *[MLCea608_CCMaxColsPlus2] pac_styles;
 
 | Type | Description |
 |--|--|
-| [MLCea608CaptionPAC](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md) *[MLCea608_CCMaxColsPlus2] | Cea608 caption preamble address code. [MLCea608_CCMaxColsPlus2] |
+| [MLCea608CaptionPAC](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md) *[MLCea608_CCMaxColsPlus2] | Cea608 caption preamble address code. [MLCea608_CCMaxColsPlus2] |
 
 
 

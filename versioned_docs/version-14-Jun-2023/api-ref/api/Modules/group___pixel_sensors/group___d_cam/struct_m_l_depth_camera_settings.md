@@ -6,7 +6,7 @@ summary: a structure to encapsulate the camera settings.
 
 # MLDepthCameraSettings
 
-**Module:** **[Pixel Sensors](/api-ref/api/Modules/group___pixel_sensors/group___pixel_sensors.md)** **/** **[Depth Camera](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md)**
+**Module:** **[Pixel Sensors](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___pixel_sensors.md)** **/** **[Depth Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure to encapsulate the camera settings.  [More...](#detailed-description
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-version)**  |
-| uint32_t | **[flags](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-flags)**  |
-| uint32_t | **[mode](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-mode)** <br></br>Depth camera mode.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-version)**  |
+| uint32_t | **[flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-flags)**  |
+| uint32_t | **[mode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md#uint32-t-mode)** <br></br>Depth camera mode.  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLDepthCameraSettings;
 
 A structure to encapsulate the camera settings. 
 
-This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#void-mldepthcamerasettingsinit) before use.
+This structure must be initialized by calling [MLDepthCameraSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#void-mldepthcamerasettingsinit) before use.
 
 
 
@@ -83,7 +83,7 @@ uint32_t mode;
 
 Depth camera mode. 
 
-See [MLDepthCameraMode](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#enum-mldepthcameramode) for more details.
+See [MLDepthCameraMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#enum-mldepthcameramode) for more details.
 
 
 

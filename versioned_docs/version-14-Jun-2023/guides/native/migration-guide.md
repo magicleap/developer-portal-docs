@@ -7,14 +7,14 @@ tags: [Magic Leap 1, Migration, Gradle, CMake, mabu]
 keywords: [Magic Leap 1, Migration, Gradle, CMake, mabu]
 ---
 
-The Magic Leap 2 no longer uses [mabu](https://developer.magicleap.com/en-us/learn/guides/magic-leap-builder-overview) as the build system. Instead, [Gradle](https://gradle.org/) and [CMake](https://cmake.org/) are now the tools used to build apps when using the Magic Leap C-API.
+The Magic Leap 2 no longer uses [mabu](https://developer.magicleap.com/en-us/learn/versioned_docs/version-14-Jun-2023/guides/magic-leap-builder-overview) as the build system. Instead, [Gradle](https://gradle.org/) and [CMake](https://cmake.org/) are now the tools used to build apps when using the Magic Leap C-API.
 
 :::info
 This changes the source code entry point and lifecycle of apps.
 :::
 
 :::tip
-For more information on C-API feature differences between Magic Leap 1 and 2, reference the [C-API Changes page](/docs/guides/native/ml2-capi-changes.md).
+For more information on C-API feature differences between Magic Leap 1 and 2, reference the [C-API Changes page](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/ml2-capi-changes.md).
 :::
 
 ## Example

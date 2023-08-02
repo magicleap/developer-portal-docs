@@ -6,7 +6,7 @@ summary: drm session information for a mediaplayer track.
 
 # MLMediaPlayerTrackDRMSessionInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,10 +19,10 @@ DRM Session information for a MediaPlayer Track.  [More...](#detailed-descriptio
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#uint32-t-version)**  |
-| [MLMediaPlayerTrackType](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) | **[track_type](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#mlmediaplayertracktype-track-type)**  |
-| const [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) * | **[uuid](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#const-uuid)**  |
-| const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#const-session-id)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#uint32-t-version)**  |
+| [MLMediaPlayerTrackType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) | **[track_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#mlmediaplayertracktype-track-type)**  |
+| const [MLUUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) * | **[uuid](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#const-uuid)**  |
+| const [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md#const-session-id)**  |
 
 ## Detailed Description
 
@@ -79,7 +79,7 @@ const MLUUID * uuid;
 ```
 
 
-UUID of the DRM Scheme of type [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md). 
+UUID of the DRM Scheme of type [MLUUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md). 
 
 
 
@@ -94,7 +94,7 @@ const MLMediaDRMByteArray * session_id;
 ```
 
 
-DRM Session ID of type [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md). 
+DRM Session ID of type [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md). 
 
 
 

@@ -6,7 +6,7 @@ summary: used to store the list of codec profile levels.
 
 # MLMediaCodecListProfileLevel
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ Used to store the list of codec profile levels.  [More...](#detailed-description
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[profile](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md#uint32-t-profile)**  |
-| uint32_t | **[level](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md#uint32-t-level)**  |
+| uint32_t | **[profile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md#uint32-t-profile)**  |
+| uint32_t | **[level](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_profile_level.md#uint32-t-level)**  |
 
 ## Detailed Description
 

@@ -16,7 +16,7 @@ title: MLDepthCameraIntrinsics
 
 ## Public Methods
 
-### [MLDepthCameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraIntrinsics.md) Init {#mldepthcameraintrinsics-init}
+### [MLDepthCameraIntrinsics](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraIntrinsics.md) Init {#mldepthcameraintrinsics-init}
 
 ```csharp
 public static MLDepthCameraIntrinsics Init(
@@ -29,7 +29,7 @@ public static MLDepthCameraIntrinsics Init(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Intrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md) |managed|Depth camera intrinsic parameters. |
+| [Intrinsics](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md) |managed|Depth camera intrinsic parameters. |
 
 
 
@@ -38,7 +38,7 @@ public static MLDepthCameraIntrinsics Init(
 
 -----------
 
-### [Intrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md) ToManaged {#intrinsics-tomanaged}
+### [Intrinsics](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md) ToManaged {#intrinsics-tomanaged}
 
 ```csharp
 public static Intrinsics ToManaged(
@@ -51,7 +51,7 @@ public static Intrinsics ToManaged(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLDepthCameraIntrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraIntrinsics.md) |nativeIntrinsics||
+| [MLDepthCameraIntrinsics](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraIntrinsics.md) |nativeIntrinsics||
 
 
 
@@ -102,7 +102,7 @@ public MLVec2f FocalLength;
 
 | Type | Description  | 
 |--|--|
-| [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
+| [MLVec2f](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
 
 
 
@@ -150,7 +150,7 @@ public MLVec2f PrincipalPoint;
 
 | Type | Description  | 
 |--|--|
-| [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
+| [MLVec2f](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
 
 
 

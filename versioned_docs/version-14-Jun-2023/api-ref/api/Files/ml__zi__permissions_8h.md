@@ -11,10 +11,10 @@ title: ml_zi_permissions.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsStart](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsstart)**()<br></br>Start the ZI permissions system. This must be called before other permissions calls.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsStop](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsstop)**()<br></br>Stop the ZI permission system. Call to clean up the ZI permission system at application termination.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsIsGranted](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsisgranted)**(const char * permission_name)<br></br>Asks if the application has the given permission granted.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsRequest](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsrequest)**(const char * permission_name)<br></br>Request the given permission (blocking if pending until user either allows or denies permission). Client code can poll the permission state to see if the permission was granted, denied or still pending.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsStart](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsstart)**()<br></br>Start the ZI permissions system. This must be called before other permissions calls.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsStop](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsstop)**()<br></br>Stop the ZI permission system. Call to clean up the ZI permission system at application termination.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsIsGranted](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsisgranted)**(const char * permission_name)<br></br>Asks if the application has the given permission granted.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIPermissionsRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzipermissionsrequest)**(const char * permission_name)<br></br>Request the given permission (blocking if pending until user either allows or denies permission). Client code can poll the permission state to see if the permission was granted, denied or still pending.  |
 
 
 
@@ -33,8 +33,8 @@ Start the ZI permissions system. This must be called before other permissions ca
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -64,8 +64,8 @@ Stop the ZI permission system. Call to clean up the ZI permission system at appl
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -102,11 +102,11 @@ Asks if the application has the given permission granted.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The permission_name parameter is not valid (or null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The permission is granted. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|If permission denied. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If permission request has not been resolved. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The permission_name parameter is not valid (or null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The permission is granted. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|If permission denied. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If permission request has not been resolved. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
 **Required Permissions**:
 
   * Any 
@@ -145,9 +145,9 @@ Request the given permission (blocking if pending until user either allows or de
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The permission_name parameter is not valid (or null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The permission_name parameter is not valid (or null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The query was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error.|
 **Required Permissions**:
 
   * None 

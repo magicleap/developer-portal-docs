@@ -45,7 +45,7 @@ public readonly IntrinsicCalibrationParameters Intrinsics;
 
 | Type | Description  | 
 |--|--|
-| readonly [IntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.IntrinsicCalibrationParameters.md) | Camera intrinsic parameters.  |
+| readonly [IntrinsicCalibrationParameters](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.IntrinsicCalibrationParameters.md) | Camera intrinsic parameters.  |
 
 
 
@@ -65,7 +65,7 @@ public readonly MLTime VCamTimestamp;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
+| readonly [MLTime](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 
 
 

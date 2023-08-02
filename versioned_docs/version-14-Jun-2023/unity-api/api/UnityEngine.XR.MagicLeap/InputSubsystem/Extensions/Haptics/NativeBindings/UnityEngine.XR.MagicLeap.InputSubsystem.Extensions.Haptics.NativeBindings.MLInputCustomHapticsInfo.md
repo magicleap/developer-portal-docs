@@ -9,7 +9,7 @@ summary: or pre-defined patterns to be played.
 
 
 
-A structure containing a list of [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command and/or pre-defined patterns to be played.   
+A structure containing a list of [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command and/or pre-defined patterns to be played.   
 
 
 Inherits from: <br></br>IInputDeviceCommandInfo,<br></br>IDisposable
@@ -45,7 +45,7 @@ public MLInputCustomHapticsInfo(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| List&lt; [NativeBindings.MLInputCustomHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputCustomHaptics.md) &gt; |customHaptics|A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command and/or pre-defined pattern to be played. A custom haptics pattern can be played by combining [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. |
+| List&lt; [NativeBindings.MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputCustomHaptics.md) &gt; |customHaptics|A structure containing information about the [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command and/or pre-defined pattern to be played. A custom haptics pattern can be played by combining [Buzz](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. |
 
 
 

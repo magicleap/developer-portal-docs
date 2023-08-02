@@ -68,7 +68,7 @@ public DistortionCoefficients Distortion;
 
 | Type | Description  | 
 |--|--|
-| [DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]  |
+| [DistortionCoefficients](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]  |
 
 **Details**
 

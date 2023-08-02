@@ -12,14 +12,14 @@ summary: see ml-headset-fit.h for additional comments.
 See ml&#95;headset&#95;fit.h for additional comments.   
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitCreateClient {#mlresultcode-mlheadsetfitcreateclient}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitCreateClient {#mlresultcode-mlheadsetfitcreateclient}
 
 Creates a headset fit client. 
 
@@ -43,7 +43,7 @@ public MLResult.Code MLHeadsetFitCreateClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitDestroyClient {#mlresultcode-mlheadsetfitdestroyclient}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitDestroyClient {#mlresultcode-mlheadsetfitdestroyclient}
 
 Destroys headset fit client. 
 
@@ -67,7 +67,7 @@ public MLResult.Code MLHeadsetFitDestroyClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitGetState {#mlresultcode-mlheadsetfitgetstate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitGetState {#mlresultcode-mlheadsetfitgetstate}
 
 Gets information about the user's current headset fit. 
 
@@ -84,7 +84,7 @@ public MLResult.Code MLHeadsetFitGetState(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| out [MLHeadsetFitState](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/NativeBindings/UnityEngine.XR.MagicLeap.MLHeadsetFit.NativeBindings.MLHeadsetFitState.md) |state||
+| out [MLHeadsetFitState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/NativeBindings/UnityEngine.XR.MagicLeap.MLHeadsetFit.NativeBindings.MLHeadsetFitState.md) |state||
 
 
 

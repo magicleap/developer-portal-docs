@@ -90,7 +90,7 @@ public delegate void GetFrameTransformMatrixDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ref bool |success|Whether a valid frame transform matrix was provided|
-| ref [Native.MagicLeapNativeBindings.MLMat4f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLMat4f.md) |frameMat|Frame transform matrix|
+| ref [Native.MagicLeapNativeBindings.MLMat4f](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLMat4f.md) |frameMat|Frame transform matrix|
 | IntPtr |context|User context passed during instance creation|
 
 
@@ -124,9 +124,9 @@ public delegate void IsNewFrameAvailableDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLYcbcrRendererCreate {#mlresultcode-mlycbcrrenderercreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLYcbcrRendererCreate {#mlresultcode-mlycbcrrenderercreate}
 
-Create an instance of the [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md). 
+Create an instance of the [YcbcrRenderer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md). 
 
 ```csharp
 public MLResult.Code MLYcbcrRendererCreate(
@@ -140,7 +140,7 @@ public MLResult.Code MLYcbcrRendererCreate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [CreateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/NativeBindings/UnityEngine.XR.MagicLeap.YcbcrRenderer.NativeBindings.CreateInfo.md) |createInfo|Info used to create the instance|
+| ref [CreateInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/NativeBindings/UnityEngine.XR.MagicLeap.YcbcrRenderer.NativeBindings.CreateInfo.md) |createInfo|Info used to create the instance|
 | out ulong |handle|Handle to the instance|
 
 
@@ -148,11 +148,11 @@ public MLResult.Code MLYcbcrRendererCreate(
 
 
 
-**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if instance was created successfully.
+**Returns**: [MLResult.Code.Ok](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if instance was created successfully.
 
-[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if one of params was null.
+[MLResult.Code.InvalidParam](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if one of params was null.
 
-[MLResult.Code.MediaGenericNoInit](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericnoinit) if func was called before Unity graphics was initialized.
+[MLResult.Code.MediaGenericNoInit](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericnoinit) if func was called before Unity graphics was initialized.
 
 
 
@@ -274,9 +274,9 @@ public delegate void OverrideYcbcrConversionSamplerDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [VkAndroidHardwareBufferFormatPropertiesANDROID](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkAndroidHardwareBufferFormatPropertiesANDROID.md) |hwBufferFormatProperties||
+| ref [VkAndroidHardwareBufferFormatPropertiesANDROID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkAndroidHardwareBufferFormatPropertiesANDROID.md) |hwBufferFormatProperties||
 | ref bool |samplerChanged||
-| ref [VkSamplerYcbcrConversionCreateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkSamplerYcbcrConversionCreateInfo.md) |sampler||
+| ref [VkSamplerYcbcrConversionCreateInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkSamplerYcbcrConversionCreateInfo.md) |sampler||
 | IntPtr |context||
 
 
@@ -302,7 +302,7 @@ public delegate void ReleaseBufferDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |nativeBufferHandle|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle to be released|
+| ulong |nativeBufferHandle|[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle to be released|
 | IntPtr |context|User context passed during instance creation|
 
 
@@ -328,7 +328,7 @@ public delegate void ReleaseHwBufferDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| IntPtr |nativeBufferHandle|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle to be released|
+| IntPtr |nativeBufferHandle|[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle to be released|
 | IntPtr |context|User context passed during instance creation|
 
 

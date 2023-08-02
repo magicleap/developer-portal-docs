@@ -17,7 +17,7 @@ A structure containing callbacks for input controller events. The final paramete
 
 ## Public Methods
 
-### [MLInputControllerCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerCallbacksEx.md) Create {#mlinputcontrollercallbacksex-create}
+### [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerCallbacksEx.md) Create {#mlinputcontrollercallbacksex-create}
 
 Create and return an initialized version of this struct. 
 

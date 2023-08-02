@@ -12,14 +12,14 @@ summary: see ml-media-drm.h for additional comments.
 See ml&#95;media&#95;drm.h for additional comments.   
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayAllocAndCopy {#mlresultcode-mlmediadrmbytearrayallocandcopy}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayAllocAndCopy {#mlresultcode-mlmediadrmbytearrayallocandcopy}
 
 Allocate and Copy to byte array buffer. 
 
@@ -38,7 +38,7 @@ public MLResult.Code MLMediaDRMByteArrayAllocAndCopy(
 |--|--|--|
 | IntPtr |CopyFrom||
 | uint |Size||
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |OutArray|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |OutArray|Data type containing byte array buffer and the size. |
 
 
 
@@ -47,9 +47,9 @@ public MLResult.Code MLMediaDRMByteArrayAllocAndCopy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayAllocate {#mlresultcode-mlmediadrmbytearrayallocate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayAllocate {#mlresultcode-mlmediadrmbytearrayallocate}
 
-String property name: identifies the maker of the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin. 
+String property name: identifies the maker of the [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin. 
 
 ```csharp
 public MLResult.Code MLMediaDRMByteArrayAllocate(
@@ -64,7 +64,7 @@ public MLResult.Code MLMediaDRMByteArrayAllocate(
 | Type | Name  | Description  | 
 |--|--|--|
 | uint |Size||
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |OutArray|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |OutArray|Data type containing byte array buffer and the size. |
 
 
 
@@ -73,7 +73,7 @@ public MLResult.Code MLMediaDRMByteArrayAllocate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayListRelease {#mlresultcode-mlmediadrmbytearraylistrelease}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayListRelease {#mlresultcode-mlmediadrmbytearraylistrelease}
 
 Release list of byte array buffer. 
 
@@ -88,7 +88,7 @@ public MLResult.Code MLMediaDRMByteArrayListRelease(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [MLMediaDRMByteArrayList](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArrayList.md) |Array|Data type containing list of byte array buffers and the size. |
+| ref [MLMediaDRMByteArrayList](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArrayList.md) |Array|Data type containing list of byte array buffers and the size. |
 
 
 
@@ -97,7 +97,7 @@ public MLResult.Code MLMediaDRMByteArrayListRelease(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayRelease {#mlresultcode-mlmediadrmbytearrayrelease}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMByteArrayRelease {#mlresultcode-mlmediadrmbytearrayrelease}
 
 Release byte array buffer. 
 
@@ -112,7 +112,7 @@ public MLResult.Code MLMediaDRMByteArrayRelease(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |array|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |array|Data type containing byte array buffer and the size. |
 
 
 
@@ -121,7 +121,7 @@ public MLResult.Code MLMediaDRMByteArrayRelease(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMCloseSession {#mlresultcode-mlmediadrmclosesession}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMCloseSession {#mlresultcode-mlmediadrmclosesession}
 
 Closes a session that was previously opened. 
 
@@ -138,7 +138,7 @@ public MLResult.Code MLMediaDRMCloseSession(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |drmHandle||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
 
 
 
@@ -147,7 +147,7 @@ public MLResult.Code MLMediaDRMCloseSession(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMCreate {#mlresultcode-mlmediadrmcreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMCreate {#mlresultcode-mlmediadrmcreate}
 
 Create a 
 
@@ -163,7 +163,7 @@ public MLResult.Code MLMediaDRMCreate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Native.MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |uuid|Universally unique identifier |
+| [Native.MagicLeapNativeBindings.MLUUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |uuid|Universally unique identifier |
 | out ulong |handle||
 
 
@@ -173,7 +173,7 @@ public MLResult.Code MLMediaDRMCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMDecrypt {#mlresultcode-mlmediadrmdecrypt}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMDecrypt {#mlresultcode-mlmediadrmdecrypt}
 
 Decrypt the data referenced by input using algorithm if specified, and write the encrypted result into output. The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using MLMediaDRMProvideKeyResponse(). 
 
@@ -193,10 +193,10 @@ public MLResult.Code MLMediaDRMDecrypt(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMCryptoInputParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMCryptoInputParam.md) |CryptoKeyParam|Data type that encapsulates algorithm, key&#95;set&#95;id and IV for Encryption/Decryption. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Input|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Output|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMCryptoInputParam](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMCryptoInputParam.md) |CryptoKeyParam|Data type that encapsulates algorithm, key&#95;set&#95;id and IV for Encryption/Decryption. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Input|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Output|Data type containing byte array buffer and the size. |
 
 
 
@@ -205,7 +205,7 @@ public MLResult.Code MLMediaDRMDecrypt(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMEncrypt {#mlresultcode-mlmediadrmencrypt}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMEncrypt {#mlresultcode-mlmediadrmencrypt}
 
 Encrypt the data referenced by input using algorithm if specified, and write the encrypted result into output. The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using MLMediaDRMProvideKeyResponse(). 
 
@@ -225,10 +225,10 @@ public MLResult.Code MLMediaDRMEncrypt(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMCryptoInputParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMCryptoInputParam.md) |CryptoKeyParam|Data type that encapsulates algorithm, key&#95;set&#95;id and IV for Encryption/Decryption. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Input|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Output|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMCryptoInputParam](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMCryptoInputParam.md) |CryptoKeyParam|Data type that encapsulates algorithm, key&#95;set&#95;id and IV for Encryption/Decryption. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Input|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Output|Data type containing byte array buffer and the size. |
 
 
 
@@ -237,9 +237,9 @@ public MLResult.Code MLMediaDRMEncrypt(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetKeyRequest {#mlresultcode-mlmediadrmgetkeyrequest}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetKeyRequest {#mlresultcode-mlmediadrmgetkeyrequest}
 
-A key request/response exchange occurs between the app and a license server to obtain or release keys used to decrypt encrypted content. MLMediaDRMGetKeyRequest() is used to obtain an opaque key request byte array that is delivered to the license server. The opaque key request byte array is returned in out&#95;key&#95;request. request The recommended URL to deliver the key request to is returned in out&#95;key&#95;request. default&#95;URL. After the app has received the key request response from the server, it should deliver to the response to the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using the method MLMediaDRMProvideKeyResponse(). 
+A key request/response exchange occurs between the app and a license server to obtain or release keys used to decrypt encrypted content. MLMediaDRMGetKeyRequest() is used to obtain an opaque key request byte array that is delivered to the license server. The opaque key request byte array is returned in out&#95;key&#95;request. request The recommended URL to deliver the key request to is returned in out&#95;key&#95;request. default&#95;URL. After the app has received the key request response from the server, it should deliver to the response to the [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using the method MLMediaDRMProvideKeyResponse(). 
 
 ```csharp
 public MLResult.Code MLMediaDRMGetKeyRequest(
@@ -256,9 +256,9 @@ public MLResult.Code MLMediaDRMGetKeyRequest(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |drmHandle||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMKeyRequestInputParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyRequestInputParam.md) |keyRequestParam|Data type that encapsulates [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request input arguments. |
-| out [MLMediaDRMRequestMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRequestMessage.md) |keyRequest|Data type that encapsulates either of the following along with an URL: For [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMKeyRequestInputParam](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyRequestInputParam.md) |keyRequestParam|Data type that encapsulates [Key](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request input arguments. |
+| out [MLMediaDRMRequestMessage](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRequestMessage.md) |keyRequest|Data type that encapsulates either of the following along with an URL: For [Key](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server. |
 
 
 
@@ -267,9 +267,9 @@ public MLResult.Code MLMediaDRMGetKeyRequest(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetPropertyByteArray {#mlresultcode-mlmediadrmgetpropertybytearray}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetPropertyByteArray {#mlresultcode-mlmediadrmgetpropertybytearray}
 
-Read a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin byte array property value, given the property name. 
+Read a [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin byte array property value, given the property name. 
 
 ```csharp
 public MLResult.Code MLMediaDRMGetPropertyByteArray(
@@ -286,7 +286,7 @@ public MLResult.Code MLMediaDRMGetPropertyByteArray(
 |--|--|--|
 | ulong |MediaDrm||
 | string |PropertyName||
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |OutPropertyValue|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |OutPropertyValue|Data type containing byte array buffer and the size. |
 
 
 
@@ -295,9 +295,9 @@ public MLResult.Code MLMediaDRMGetPropertyByteArray(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetPropertyString {#mlresultcode-mlmediadrmgetpropertystring}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetPropertyString {#mlresultcode-mlmediadrmgetpropertystring}
 
-Read a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin String property value, given the property name. 
+Read a [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin String property value, given the property name. 
 
 ```csharp
 public MLResult.Code MLMediaDRMGetPropertyString(
@@ -323,7 +323,7 @@ public MLResult.Code MLMediaDRMGetPropertyString(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetProvisionRequest {#mlresultcode-mlmediadrmgetprovisionrequest}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetProvisionRequest {#mlresultcode-mlmediadrmgetprovisionrequest}
 
 A provision request/response exchange occurs between the app and a provisioning server to retrieve a device certificate. If provisioning is required, the #EVENT&#95;PROVISION&#95;REQUIRED event will be sent to the event handler. MLMediaDRMGetProvisionRequest() is used to obtain the opaque provision request byte array that should be delivered to the provisioning server. 
 
@@ -342,7 +342,7 @@ public MLResult.Code MLMediaDRMGetProvisionRequest(
 |--|--|--|
 | ulong |drmHandle||
 | string |certType||
-| out [MLMediaDRMRequestMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRequestMessage.md) |provisionRequest|Data type that encapsulates either of the following along with an URL: For [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server. |
+| out [MLMediaDRMRequestMessage](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRequestMessage.md) |provisionRequest|Data type that encapsulates either of the following along with an URL: For [Key](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server. |
 
 
 
@@ -351,7 +351,7 @@ public MLResult.Code MLMediaDRMGetProvisionRequest(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetSecureStop {#mlresultcode-mlmediadrmgetsecurestop}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetSecureStop {#mlresultcode-mlmediadrmgetsecurestop}
 
 Access secure stop by secure stop ID. 
 
@@ -369,8 +369,8 @@ public MLResult.Code MLMediaDRMGetSecureStop(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SecureStopId|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SecureStop|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SecureStopId|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SecureStop|Data type containing byte array buffer and the size. |
 
 
 
@@ -381,7 +381,7 @@ public MLResult.Code MLMediaDRMGetSecureStop(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetSecureStops {#mlresultcode-mlmediadrmgetsecurestops}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMGetSecureStops {#mlresultcode-mlmediadrmgetsecurestops}
 
 Access all secure stops. Secure Stop: A means of enforcing limits on the number of concurrent streams per subscriber across devices is provided via #SecureStop. This is achieved by securely monitoring the lifetime of sessions. Information from the server related to the current playback session is written to persistent storage on the device when each #MediaCrypto object is created. In the normal case, playback will be completed, the session destroyed and the Secure Stops will be queried. The app queries secure stops and forwards the secure stop message to the server which verifies the signature and notifies the server side database that the session destruction has been confirmed. The persisted record on the client is only removed after positive confirmation that the server received the message using releaseSecureStops(). 
 
@@ -398,7 +398,7 @@ public MLResult.Code MLMediaDRMGetSecureStops(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| out [MLMediaDRMByteArrayList](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArrayList.md) |SecureStops|Data type containing list of byte array buffers and the size. |
+| out [MLMediaDRMByteArrayList](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArrayList.md) |SecureStops|Data type containing list of byte array buffers and the size. |
 
 
 
@@ -407,7 +407,7 @@ public MLResult.Code MLMediaDRMGetSecureStops(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMIsCryptoSchemeSupported {#mlresultcode-mlmediadrmiscryptoschemesupported}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMIsCryptoSchemeSupported {#mlresultcode-mlmediadrmiscryptoschemesupported}
 
 Query if the given scheme identified by its UUID is supported on this device. And whether the drm plugin is able to handle the media container format. 
 
@@ -424,7 +424,7 @@ public MLResult.Code MLMediaDRMIsCryptoSchemeSupported(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Native.MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |Uuid|Universally unique identifier |
+| [Native.MagicLeapNativeBindings.MLUUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |Uuid|Universally unique identifier |
 | IntPtr |MimeType||
 | out bool |supported||
 
@@ -435,7 +435,7 @@ public MLResult.Code MLMediaDRMIsCryptoSchemeSupported(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMKeyValueArrayAdd {#mlresultcode-mlmediadrmkeyvaluearrayadd}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMKeyValueArrayAdd {#mlresultcode-mlmediadrmkeyvaluearrayadd}
 
 Add a {key, value} pair to the array of {key, value} pairs. 
 
@@ -451,8 +451,8 @@ public MLResult.Code MLMediaDRMKeyValueArrayAdd(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [MLMediaDRMKeyValue](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValue.md) |Pair|Data type containing {key, value} pair. |
-| out [MLMediaDRMKeyValueArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |OutArray|Data type containing array of {key, value} pair. |
+| ref [MLMediaDRMKeyValue](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValue.md) |Pair|Data type containing {key, value} pair. |
+| out [MLMediaDRMKeyValueArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |OutArray|Data type containing array of {key, value} pair. |
 
 
 
@@ -461,7 +461,7 @@ public MLResult.Code MLMediaDRMKeyValueArrayAdd(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMKeyValueArrayAllocate {#mlresultcode-mlmediadrmkeyvaluearrayallocate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMKeyValueArrayAllocate {#mlresultcode-mlmediadrmkeyvaluearrayallocate}
 
 Allocate array of {key, value} pairs. 
 
@@ -478,7 +478,7 @@ public MLResult.Code MLMediaDRMKeyValueArrayAllocate(
 | Type | Name  | Description  | 
 |--|--|--|
 | uint |Size||
-| out [MLMediaDRMKeyValueArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |OutArray|Data type containing array of {key, value} pair. |
+| out [MLMediaDRMKeyValueArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |OutArray|Data type containing array of {key, value} pair. |
 
 
 
@@ -487,7 +487,7 @@ public MLResult.Code MLMediaDRMKeyValueArrayAllocate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMKeyValueArrayRelease {#mlresultcode-mlmediadrmkeyvaluearrayrelease}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMKeyValueArrayRelease {#mlresultcode-mlmediadrmkeyvaluearrayrelease}
 
 Release {key, value} pair array. 
 
@@ -502,7 +502,7 @@ public MLResult.Code MLMediaDRMKeyValueArrayRelease(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [MLMediaDRMKeyValueArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |Array|Data type containing array of {key, value} pair. |
+| ref [MLMediaDRMKeyValueArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |Array|Data type containing array of {key, value} pair. |
 
 
 
@@ -511,7 +511,7 @@ public MLResult.Code MLMediaDRMKeyValueArrayRelease(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMOpenSession {#mlresultcode-mlmediadrmopensession}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMOpenSession {#mlresultcode-mlmediadrmopensession}
 
 Opens a new session. A session ID is returned. 
 
@@ -528,7 +528,7 @@ public MLResult.Code MLMediaDRMOpenSession(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
 
 
 
@@ -537,9 +537,9 @@ public MLResult.Code MLMediaDRMOpenSession(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMProvideKeyResponse {#mlresultcode-mlmediadrmprovidekeyresponse}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMProvideKeyResponse {#mlresultcode-mlmediadrmprovidekeyresponse}
 
-A key response is received from the license server by the app, then it is provided to the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using MLMediaDRMProvideKeyResponse(). When the response is for an offline key request, a key&#95;set&#95;id is returned that can be used to later restore the keys to a new session with restoreKeys(). When the response is for a streaming or release request, a null key&#95;set&#95;id is returned. 
+A key response is received from the license server by the app, then it is provided to the [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using MLMediaDRMProvideKeyResponse(). When the response is for an offline key request, a key&#95;set&#95;id is returned that can be used to later restore the keys to a new session with restoreKeys(). When the response is for a streaming or release request, a null key&#95;set&#95;id is returned. 
 
 ```csharp
 public MLResult.Code MLMediaDRMProvideKeyResponse(
@@ -556,9 +556,9 @@ public MLResult.Code MLMediaDRMProvideKeyResponse(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |drmHandle||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |response|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |keySetId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |response|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |keySetId|Data type containing byte array buffer and the size. |
 
 
 
@@ -567,9 +567,9 @@ public MLResult.Code MLMediaDRMProvideKeyResponse(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMProvideProvisionResponse {#mlresultcode-mlmediadrmprovideprovisionresponse}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMProvideProvisionResponse {#mlresultcode-mlmediadrmprovideprovisionresponse}
 
-After a provision response is received by the app, it is provided to the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using this method. 
+After a provision response is received by the app, it is provided to the [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using this method. 
 
 ```csharp
 public MLResult.Code MLMediaDRMProvideProvisionResponse(
@@ -586,9 +586,9 @@ public MLResult.Code MLMediaDRMProvideProvisionResponse(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |drmHandle||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |response|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |certificate|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |wrappedKey|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |response|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |certificate|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |wrappedKey|Data type containing byte array buffer and the size. |
 
 
 
@@ -597,9 +597,9 @@ public MLResult.Code MLMediaDRMProvideProvisionResponse(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMQueryKeyStatus {#mlresultcode-mlmediadrmquerykeystatus}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMQueryKeyStatus {#mlresultcode-mlmediadrmquerykeystatus}
 
-Request an informative description of the key status for the session. The status is in the form of {key, value} pairs. Since [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) license policies vary by vendor, the specific status field names are determined by each [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) vendor. Refer to your [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) provider documentation for definitions of the field names for a particular [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin. 
+Request an informative description of the key status for the session. The status is in the form of {key, value} pairs. Since [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) license policies vary by vendor, the specific status field names are determined by each [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) vendor. Refer to your [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) provider documentation for definitions of the field names for a particular [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin. 
 
 ```csharp
 public MLResult.Code MLMediaDRMQueryKeyStatus(
@@ -615,8 +615,8 @@ public MLResult.Code MLMediaDRMQueryKeyStatus(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMKeyValueArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |OutInfoMap|Data type containing array of {key, value} pair. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMKeyValueArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyValueArray.md) |OutInfoMap|Data type containing array of {key, value} pair. |
 
 
 
@@ -625,7 +625,7 @@ public MLResult.Code MLMediaDRMQueryKeyStatus(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRelease {#mlresultcode-mlmediadrmrelease}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRelease {#mlresultcode-mlmediadrmrelease}
 
 Release the 
 
@@ -649,7 +649,7 @@ public MLResult.Code MLMediaDRMRelease(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMReleaseAllSecureStops {#mlresultcode-mlmediadrmreleaseallsecurestops}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMReleaseAllSecureStops {#mlresultcode-mlmediadrmreleaseallsecurestops}
 
 Remove all the SecureStops. 
 
@@ -673,7 +673,7 @@ public MLResult.Code MLMediaDRMReleaseAllSecureStops(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMReleaseSecureStops {#mlresultcode-mlmediadrmreleasesecurestops}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMReleaseSecureStops {#mlresultcode-mlmediadrmreleasesecurestops}
 
 Process the SecureStop server response message. After authenticating the message, remove the SecureStops identified in the response. 
 
@@ -690,7 +690,7 @@ public MLResult.Code MLMediaDRMReleaseSecureStops(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SecureStop|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SecureStop|Data type containing byte array buffer and the size. |
 
 
 
@@ -699,7 +699,7 @@ public MLResult.Code MLMediaDRMReleaseSecureStops(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRemoveKeys {#mlresultcode-mlmediadrmremovekeys}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRemoveKeys {#mlresultcode-mlmediadrmremovekeys}
 
 Remove the current keys from a session. 
 
@@ -717,8 +717,8 @@ public MLResult.Code MLMediaDRMRemoveKeys(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |KeySetId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |KeySetId|Data type containing byte array buffer and the size. |
 
 
 
@@ -727,7 +727,7 @@ public MLResult.Code MLMediaDRMRemoveKeys(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRequestMessageRelease {#mlresultcode-mlmediadrmrequestmessagerelease}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRequestMessageRelease {#mlresultcode-mlmediadrmrequestmessagerelease}
 
 Release Request Message. 
 
@@ -742,7 +742,7 @@ public MLResult.Code MLMediaDRMRequestMessageRelease(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [MLMediaDRMRequestMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRequestMessage.md) |Request|Data type that encapsulates either of the following along with an URL: For [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server. |
+| ref [MLMediaDRMRequestMessage](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRequestMessage.md) |Request|Data type that encapsulates either of the following along with an URL: For [Key](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server. |
 
 
 
@@ -751,7 +751,7 @@ public MLResult.Code MLMediaDRMRequestMessageRelease(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRestoreKeys {#mlresultcode-mlmediadrmrestorekeys}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMRestoreKeys {#mlresultcode-mlmediadrmrestorekeys}
 
 Restore persisted offline keys into a new session. key&#95;set&#95;id identifies the keys to load, obtained from a prior call to MLMediaDRMProvideKeyResponse(). 
 
@@ -769,8 +769,8 @@ public MLResult.Code MLMediaDRMRestoreKeys(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |KeySetId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |sessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |KeySetId|Data type containing byte array buffer and the size. |
 
 
 
@@ -779,7 +779,7 @@ public MLResult.Code MLMediaDRMRestoreKeys(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSetOnEventListenerEx {#mlresultcode-mlmediadrmsetoneventlistenerex}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSetOnEventListenerEx {#mlresultcode-mlmediadrmsetoneventlistenerex}
 
 Register a callback to be invoked when an event occurs. 
 
@@ -797,7 +797,7 @@ public MLResult.Code MLMediaDRMSetOnEventListenerEx(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMEventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMEventCallbacks.md) |Listener|Data type containing array of {key, value} pair. |
+| ref [MLMediaDRMEventCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMEventCallbacks.md) |Listener|Data type containing array of {key, value} pair. |
 | IntPtr |data||
 
 
@@ -807,9 +807,9 @@ public MLResult.Code MLMediaDRMSetOnEventListenerEx(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSetPropertyByteArray {#mlresultcode-mlmediadrmsetpropertybytearray}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSetPropertyByteArray {#mlresultcode-mlmediadrmsetpropertybytearray}
 
-Set a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin byte array property value. 
+Set a [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin byte array property value. 
 
 ```csharp
 public MLResult.Code MLMediaDRMSetPropertyByteArray(
@@ -826,7 +826,7 @@ public MLResult.Code MLMediaDRMSetPropertyByteArray(
 |--|--|--|
 | ulong |MediaDrm||
 | string |PropertyName||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |PropertyValue|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |PropertyValue|Data type containing byte array buffer and the size. |
 
 
 
@@ -835,9 +835,9 @@ public MLResult.Code MLMediaDRMSetPropertyByteArray(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSetPropertyString {#mlresultcode-mlmediadrmsetpropertystring}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSetPropertyString {#mlresultcode-mlmediadrmsetpropertystring}
 
-Set a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin String property value. 
+Set a [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin String property value. 
 
 ```csharp
 public MLResult.Code MLMediaDRMSetPropertyString(
@@ -863,7 +863,7 @@ public MLResult.Code MLMediaDRMSetPropertyString(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSign {#mlresultcode-mlmediadrmsign}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSign {#mlresultcode-mlmediadrmsign}
 
 Generate a signature using the specified algorithm (if provided) over the message data and store the signature. The key to use is identified by the 16 byte keyId. The key must have been loaded into the session using MLMediaDRMProvideKeyResponse(). 
 
@@ -883,10 +883,10 @@ public MLResult.Code MLMediaDRMSign(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMHMACInputParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMHMACInputParam.md) |HMACParam|Data type that encapsulates algorithm, key&#95;set&#95;id for HMAC based Sign/Verify. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Message|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Signature|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMHMACInputParam](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMHMACInputParam.md) |HMACParam|Data type that encapsulates algorithm, key&#95;set&#95;id for HMAC based Sign/Verify. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Message|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Signature|Data type containing byte array buffer and the size. |
 
 
 
@@ -895,9 +895,9 @@ public MLResult.Code MLMediaDRMSign(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSignRSA {#mlresultcode-mlmediadrmsignrsa}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMSignRSA {#mlresultcode-mlmediadrmsignrsa}
 
-Generate a signature using the specified RSA [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) and algorithm. 
+Generate a signature using the specified RSA [Key](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) and algorithm. 
 
 ```csharp
 public MLResult.Code MLMediaDRMSignRSA(
@@ -915,10 +915,10 @@ public MLResult.Code MLMediaDRMSignRSA(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMRSAInputParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRSAInputParam.md) |HMACParam|Data type that encapsulates algorithm, wrapped&#95;key for RSA operation. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Message|Data type containing byte array buffer and the size. |
-| out [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Signature|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMRSAInputParam](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMRSAInputParam.md) |HMACParam|Data type that encapsulates algorithm, wrapped&#95;key for RSA operation. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Message|Data type containing byte array buffer and the size. |
+| out [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Signature|Data type containing byte array buffer and the size. |
 
 
 
@@ -927,7 +927,7 @@ public MLResult.Code MLMediaDRMSignRSA(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMVerify {#mlresultcode-mlmediadrmverify}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDRMVerify {#mlresultcode-mlmediadrmverify}
 
 Perform a signature verification using the specified algorithm (if specified) over the message data referenced by the message parameter. The key must have been loaded into the session using MLMediaDRMProvideKeyResponse(). 
 
@@ -948,10 +948,10 @@ public MLResult.Code MLMediaDRMVerify(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |MediaDrm||
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMHMACInputParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMHMACInputParam.md) |HMACParam|Data type that encapsulates algorithm, key&#95;set&#95;id for HMAC based Sign/Verify. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Message|Data type containing byte array buffer and the size. |
-| ref [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Signature|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |SessionId|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMHMACInputParam](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMHMACInputParam.md) |HMACParam|Data type that encapsulates algorithm, key&#95;set&#95;id for HMAC based Sign/Verify. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Message|Data type containing byte array buffer and the size. |
+| ref [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) |Signature|Data type containing byte array buffer and the size. |
 | out bool |IsMatch||
 
 
@@ -976,7 +976,7 @@ public delegate void OnEventDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| ref [MLMediaDRMEventInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMEventInfo.md) |info|MediaDRM event info associated with a session. |
+| ref [MLMediaDRMEventInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMEventInfo.md) |info|MediaDRM event info associated with a session. |
 
 
 
@@ -1000,7 +1000,7 @@ public delegate void OnExpirationUpdateDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| ref [MLMediaDRMExpirationUpdateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMExpirationUpdateInfo.md) |info|MediaDRM expiration update info associated with a session. |
+| ref [MLMediaDRMExpirationUpdateInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMExpirationUpdateInfo.md) |info|MediaDRM expiration update info associated with a session. |
 
 
 
@@ -1024,7 +1024,7 @@ public delegate void OnKeyStatusChangeDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| ref [MLMediaDRMKeyStatusInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyStatusInfo.md) |info|MediaDRM session keys status change info. |
+| ref [MLMediaDRMKeyStatusInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMKeyStatusInfo.md) |info|MediaDRM session keys status change info. |
 
 
 

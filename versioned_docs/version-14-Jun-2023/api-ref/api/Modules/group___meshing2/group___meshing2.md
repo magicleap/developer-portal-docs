@@ -12,50 +12,50 @@ APIs for the Meshing system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md)**  |
-| struct | **[MLMeshingExtents](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md)**  |
-| struct | **[MLMeshingBlockInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md)**  |
-| struct | **[MLMeshingMeshInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md)**  |
-| struct | **[MLMeshingBlockRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_request.md)**  |
-| struct | **[MLMeshingMeshRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md)**  |
-| struct | **[MLMeshingBlockMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_mesh.md)**  |
-| struct | **[MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md)**  |
+| struct | **[MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md)**  |
+| struct | **[MLMeshingExtents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md)**  |
+| struct | **[MLMeshingBlockInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md)**  |
+| struct | **[MLMeshingMeshInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md)**  |
+| struct | **[MLMeshingBlockRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_request.md)**  |
+| struct | **[MLMeshingMeshRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md)**  |
+| struct | **[MLMeshingBlockMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_mesh.md)**  |
+| struct | **[MLMeshingMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) | **[MLMeshingSettings](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingsettings)**  |
-| typedef struct [MLMeshingExtents](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) | **[MLMeshingExtents](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingextents)**  |
-| typedef struct [MLMeshingBlockInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md) | **[MLMeshingBlockInfo](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingblockinfo)**  |
-| typedef struct [MLMeshingMeshInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md) | **[MLMeshingMeshInfo](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingmeshinfo)**  |
-| typedef struct [MLMeshingBlockRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_request.md) | **[MLMeshingBlockRequest](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingblockrequest)**  |
-| typedef struct [MLMeshingMeshRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md) | **[MLMeshingMeshRequest](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingmeshrequest)**  |
-| typedef struct [MLMeshingBlockMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_mesh.md) | **[MLMeshingBlockMesh](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingblockmesh)**  |
-| typedef struct [MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) | **[MLMeshingMesh](/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingmesh)**  |
+| typedef struct [MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) | **[MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingsettings)**  |
+| typedef struct [MLMeshingExtents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) | **[MLMeshingExtents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingextents)**  |
+| typedef struct [MLMeshingBlockInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md) | **[MLMeshingBlockInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingblockinfo)**  |
+| typedef struct [MLMeshingMeshInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md) | **[MLMeshingMeshInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingmeshinfo)**  |
+| typedef struct [MLMeshingBlockRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_request.md) | **[MLMeshingBlockRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingblockrequest)**  |
+| typedef struct [MLMeshingMeshRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md) | **[MLMeshingMeshRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingmeshrequest)**  |
+| typedef struct [MLMeshingBlockMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_mesh.md) | **[MLMeshingBlockMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingblockmesh)**  |
+| typedef struct [MLMeshingMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) | **[MLMeshingMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#struct-mlmeshingmesh)**  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLMeshingFlags](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags)** <br></br> { <br></br>[MLMeshingFlags_PointCloud](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-pointcloud) = 1 << 0,<br></br> [MLMeshingFlags_ComputeNormals](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-computenormals) = 1 << 1,<br></br> [MLMeshingFlags_ComputeConfidence](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-computeconfidence) = 1 << 2,<br></br> [MLMeshingFlags_Planarize](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-planarize) = 1 << 3,<br></br> [MLMeshingFlags_RemoveMeshSkirt](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-removemeshskirt) = 1 << 4,<br></br> [MLMeshingFlags_IndexOrderCW](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-indexordercw) = 1 << 5,<br></br> [MLMeshingFlags_Ensure32Bits](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLMeshingLOD](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod)** <br></br> { <br></br>[MLMeshingLOD_Minimum](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-minimum),<br></br> [MLMeshingLOD_Medium](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-medium),<br></br> [MLMeshingLOD_Maximum](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-maximum),<br></br> [MLMeshingLOD_Ensure32Bits](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLMeshingResult](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult)** <br></br> { <br></br>[MLMeshingResult_Success](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-success),<br></br> [MLMeshingResult_Failed](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-failed),<br></br> [MLMeshingResult_Pending](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-pending),<br></br> [MLMeshingResult_PartialUpdate](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-partialupdate),<br></br> [MLMeshingResult_Ensure32Bits](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLMeshingMeshState](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate)** <br></br> { <br></br>[MLMeshingMeshState_New](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-new),<br></br> [MLMeshingMeshState_Updated](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-updated),<br></br> [MLMeshingMeshState_Deleted](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-deleted),<br></br> [MLMeshingMeshState_Unchanged](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-unchanged),<br></br> [MLMeshingMeshState_Ensure32Bits](/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMeshingFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags)** <br></br> { <br></br>[MLMeshingFlags_PointCloud](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-pointcloud) = 1 << 0,<br></br> [MLMeshingFlags_ComputeNormals](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-computenormals) = 1 << 1,<br></br> [MLMeshingFlags_ComputeConfidence](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-computeconfidence) = 1 << 2,<br></br> [MLMeshingFlags_Planarize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-planarize) = 1 << 3,<br></br> [MLMeshingFlags_RemoveMeshSkirt](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-removemeshskirt) = 1 << 4,<br></br> [MLMeshingFlags_IndexOrderCW](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-indexordercw) = 1 << 5,<br></br> [MLMeshingFlags_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingflags-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMeshingLOD](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod)** <br></br> { <br></br>[MLMeshingLOD_Minimum](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-minimum),<br></br> [MLMeshingLOD_Medium](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-medium),<br></br> [MLMeshingLOD_Maximum](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-maximum),<br></br> [MLMeshingLOD_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshinglod-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMeshingResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult)** <br></br> { <br></br>[MLMeshingResult_Success](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-success),<br></br> [MLMeshingResult_Failed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-failed),<br></br> [MLMeshingResult_Pending](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-pending),<br></br> [MLMeshingResult_PartialUpdate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-partialupdate),<br></br> [MLMeshingResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingresult-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMeshingMeshState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate)** <br></br> { <br></br>[MLMeshingMeshState_New](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-new),<br></br> [MLMeshingMeshState_Updated](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-updated),<br></br> [MLMeshingMeshState_Deleted](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-deleted),<br></br> [MLMeshingMeshState_Unchanged](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-unchanged),<br></br> [MLMeshingMeshState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#enums-mlmeshingmeshstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingCreateClient](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingcreateclient)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_client_handle, const [MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * settings)<br></br>Create the meshing client.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingDestroyClient](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingdestroyclient)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle)<br></br>Free the client resources.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingInitSettings](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinginitsettings)**([MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * out_settings)<br></br>Initialize the meshing settings with system defaults.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingUpdateSettings](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingupdatesettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, const [MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * settings)<br></br>Update the meshing settings at runtime.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingRequestMeshInfo](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingrequestmeshinfo)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, const [MLMeshingExtents](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) * extents, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_request_handle)<br></br>Request the Mesh Info which includes CFUIDs and bounding extents of the blocks.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingGetMeshInfoResult](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinggetmeshinforesult)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLMeshingMeshInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md) * out_info)<br></br>Get the Result of a previous MeshInfo request.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingRequestMesh](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingrequestmesh)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, const [MLMeshingMeshRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md) * request, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_request_handle)<br></br>Request the Mesh for all CFUIDs populated in request.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingGetMeshResult](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinggetmeshresult)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) * out_mesh)<br></br>Get the Result of a previous Mesh request.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingFreeResource](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingfreeresource)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * request_handle)<br></br>Free resources created by the meshing APIS. Needs to be called whenever MLMeshingGetMeshInfoResult, MLMeshingGetMeshResult return a success.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingCreateClient](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingcreateclient)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_client_handle, const [MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * settings)<br></br>Create the meshing client.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingDestroyClient](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingdestroyclient)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle)<br></br>Free the client resources.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingInitSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinginitsettings)**([MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * out_settings)<br></br>Initialize the meshing settings with system defaults.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingUpdateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingupdatesettings)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, const [MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * settings)<br></br>Update the meshing settings at runtime.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingRequestMeshInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingrequestmeshinfo)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, const [MLMeshingExtents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) * extents, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_request_handle)<br></br>Request the Mesh Info which includes CFUIDs and bounding extents of the blocks.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingGetMeshInfoResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinggetmeshinforesult)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLMeshingMeshInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md) * out_info)<br></br>Get the Result of a previous MeshInfo request.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingRequestMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingrequestmesh)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, const [MLMeshingMeshRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md) * request, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_request_handle)<br></br>Request the Mesh for all CFUIDs populated in request.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingGetMeshResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinggetmeshresult)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLMeshingMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) * out_mesh)<br></br>Get the Result of a previous Mesh request.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMeshingFreeResource](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshingfreeresource)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) client_handle, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * request_handle)<br></br>Free resources created by the meshing APIS. Needs to be called whenever MLMeshingGetMeshInfoResult, MLMeshingGetMeshResult return a success.  |
 
 ## Detailed Description
 
@@ -174,7 +174,7 @@ Mesh Settings for the underlying system.
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md)
 
 
 
@@ -191,7 +191,7 @@ Axis aligned bounding box for querying updated mesh info.
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md)
 
 
 
@@ -208,7 +208,7 @@ Representation of a mesh block.
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md)
 
 
 
@@ -225,7 +225,7 @@ Response structure for the mesh block info.
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md)
 
 
 
@@ -242,7 +242,7 @@ Request structure to get the actual mesh for a block.
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_request.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_request.md)
 
 
 
@@ -259,7 +259,7 @@ Request structure to get the actual mesh for a set of blocks.
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md)
 
 
 
@@ -276,7 +276,7 @@ Final structure for a block mesh.
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_mesh.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_mesh.md)
 
 
 
@@ -289,11 +289,11 @@ typedef struct MLMeshingMesh MLMeshingMesh;
 ```
 
 
-Result of a Mesh request. See [MLMeshingGetMeshResult()](/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinggetmeshresult) for details. 
+Result of a Mesh request. See [MLMeshingGetMeshResult()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md#mlresult-mlmeshinggetmeshresult) for details. 
 
 
 
-[More Info](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md)
 
 
 
@@ -317,18 +317,18 @@ Create the meshing client.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_client_handle|The handle to the created client. |
-| const [MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * |settings|The initial settings to be used for meshing.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_client_handle|The handle to the created client. |
+| const [MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * |settings|The initial settings to be used for meshing.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshing Client was not created due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshing Client was created successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Missing required permission(s). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Meshing Client was not created due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshing Client was not created due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshing Client was created successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Missing required permission(s). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Meshing Client was not created due to an unknown error.|
 **Required Permissions**:
 
   * com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous) 
@@ -356,15 +356,15 @@ Free the client resources.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The client to destroy.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The client to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshing Client was not destroyed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshing Client was destroyed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshing Client was not destroyed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshing Client was destroyed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 
@@ -390,15 +390,15 @@ Initialize the meshing settings with system defaults.
 
 |  |   |   |
 |--|--|--|
-| [MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * |out_settings|The initial settings to be used for meshing.|
+| [MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * |out_settings|The initial settings to be used for meshing.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh Settings were not initialized due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Settings were initialized successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh Settings were not initialized due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Settings were initialized successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 
@@ -425,16 +425,16 @@ Update the meshing settings at runtime.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
-| const [MLMeshingSettings](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * |settings|The updated settings to be used for meshing.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
+| const [MLMeshingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md) * |settings|The updated settings to be used for meshing.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh Settings were not updated due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Settings were updated successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh Settings were not updated due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Settings were updated successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 
@@ -462,17 +462,17 @@ Request the Mesh Info which includes CFUIDs and bounding extents of the blocks.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
-| const [MLMeshingExtents](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) * |extents|The region of interest for meshing. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_request_handle|The handle for the current request. Needs to be passed to query the result of the request.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
+| const [MLMeshingExtents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_extents.md) * |extents|The region of interest for meshing. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_request_handle|The handle for the current request. Needs to be passed to query the result of the request.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh info was not requested due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Info was requested successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh info was not requested due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Info was requested successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 
@@ -500,18 +500,18 @@ Get the Result of a previous MeshInfo request.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|The handle populated in a prev MLMeshingGetMeshInfo. |
-| [MLMeshingMeshInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md) * |out_info|The final result which will be populated only if the result is successful.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|The handle populated in a prev MLMeshingGetMeshInfo. |
+| [MLMeshingMeshInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md) * |out_info|The final result which will be populated only if the result is successful.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh Settings were not updated due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Info was populated successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Peding|Mesh Info is pending update. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Mesh Settings were not updated due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Mesh Info was populated successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Peding|Mesh Info is pending update. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 
@@ -539,17 +539,17 @@ Request the Mesh for all CFUIDs populated in request.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
-| const [MLMeshingMeshRequest](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md) * |request|The request for meshes of interest. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_request_handle|The handle for the current request. Needs to be passed to query the result of the request.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
+| const [MLMeshingMeshRequest](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_request.md) * |request|The request for meshes of interest. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_request_handle|The handle for the current request. Needs to be passed to query the result of the request.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshes were not requested due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshes were requested successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshes were not requested due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshes were requested successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 
@@ -577,18 +577,18 @@ Get the Result of a previous Mesh request.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|The handle populated in a prev MLMeshingGetMesh. |
-| [MLMeshingMesh](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) * |out_mesh|The final result which will be populated only if the result is successful.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|The handle populated in a prev MLMeshingGetMesh. |
+| [MLMeshingMesh](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh.md) * |out_mesh|The final result which will be populated only if the result is successful.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshes were not updated due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshes was populated successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Peding|Meshes pending update. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Meshes were not updated due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Meshes was populated successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Peding|Meshes pending update. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 
@@ -615,16 +615,16 @@ Free resources created by the meshing APIS. Needs to be called whenever MLMeshin
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |request_handle|The handle populated in a prev request.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |client_handle|The handle to the created client. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |request_handle|The handle populated in a prev request.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Resources were not freed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Resources were freed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Resources were not freed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Resources were freed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started.|
 **Required Permissions**:
 
   * None 

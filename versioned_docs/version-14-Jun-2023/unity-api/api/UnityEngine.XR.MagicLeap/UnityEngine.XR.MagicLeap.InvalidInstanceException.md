@@ -9,7 +9,7 @@ summary: simple custom exception for instance error checking.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 Simple custom exception for instance error checking.   
@@ -24,7 +24,7 @@ Inherits from: <br></br>Exception
 
 ###  InvalidInstanceException {#functions-invalidinstanceexception}
 
-Initializes a new instance of the [InvalidInstanceException](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.InvalidInstanceException.md) class. 
+Initializes a new instance of the [InvalidInstanceException](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.InvalidInstanceException.md) class. 
 
 ```csharp
 public InvalidInstanceException(

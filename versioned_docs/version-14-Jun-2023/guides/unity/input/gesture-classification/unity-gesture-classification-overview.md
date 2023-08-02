@@ -27,6 +27,6 @@ using UnityEngine.XR.MagicLeap;
 
 ## Requirements
 
-The Hand Tracking API requires the Hand Tracking permissions to be declared in the application's Manifest. To do this Go to **Edit > Project Settings > Magic Leap > Manifest Settings** and enable `Hand_Tracking`. For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
+The Hand Tracking API requires the Hand Tracking permissions to be declared in the application's Manifest. To do this Go to **Edit > Project Settings > Magic Leap > Manifest Settings** and enable `Hand_Tracking`. For more information, refer to the [permissions guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md).
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

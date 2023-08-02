@@ -6,7 +6,7 @@ summary: struct to define webview initialization.
 
 # MLWebViewSettings
 
-**Module:** **[WebView](/api-ref/api/Modules/group___web_view/group___web_view.md)**
+**Module:** **[WebView](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md)**
 
 
 
@@ -19,14 +19,14 @@ Struct to define webview initialization.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint32-t-version)**  |
-| uint32_t | **[width](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint32-t-width)**  |
-| uint32_t | **[height](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint32-t-height)**  |
-| void * | **[application_vm](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#void-application-vm)**  |
-| void * | **[context](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#void-context)**  |
-| [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) | **[callbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#mlwebvieweventcallbacks-callbacks)**  |
-| bool | **[is_popup](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#bool-is-popup)**  |
-| uint64_t | **[popup_id](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint64-t-popup-id)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint32-t-version)**  |
+| uint32_t | **[width](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint32-t-width)**  |
+| uint32_t | **[height](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint32-t-height)**  |
+| void * | **[application_vm](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#void-application-vm)**  |
+| void * | **[context](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#void-context)**  |
+| [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) | **[callbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#mlwebvieweventcallbacks-callbacks)**  |
+| bool | **[is_popup](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#bool-is-popup)**  |
+| uint64_t | **[popup_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md#uint64-t-popup-id)**  |
 
 ## Detailed Description
 
@@ -36,7 +36,7 @@ struct MLWebViewSettings;
 
 Struct to define webview initialization. 
 
-This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewsettingsinit) before use.
+This structure must be initialized by calling [MLWebViewSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewsettingsinit) before use.
 
 
 
@@ -133,7 +133,7 @@ MLWebViewEventCallbacks callbacks;
 
 | Type | Description |
 |--|--|
-| [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) | Event handler for MLWebView callbacks.  |
+| [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) | Event handler for MLWebView callbacks.  |
 
 
 Event callbacks for interacting with webview. 

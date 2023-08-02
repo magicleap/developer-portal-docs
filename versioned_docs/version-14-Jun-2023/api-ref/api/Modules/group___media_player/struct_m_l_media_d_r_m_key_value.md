@@ -5,7 +5,7 @@ title: MLMediaDRMKeyValue
 
 # MLMediaDRMKeyValue
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLMediaDRMKeyValue
 
 | Type           | Name           |
 | -------------- | -------------- |
-| const char * | **[key](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md#const-char-key)**  |
-| const char * | **[value](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md#const-char-value)**  |
+| const char * | **[key](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md#const-char-key)**  |
+| const char * | **[value](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md#const-char-value)**  |
 
 ## Detailed Description
 

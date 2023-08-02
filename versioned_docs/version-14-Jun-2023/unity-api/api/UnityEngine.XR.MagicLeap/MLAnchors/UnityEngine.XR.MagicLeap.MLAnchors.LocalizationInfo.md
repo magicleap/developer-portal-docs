@@ -30,7 +30,7 @@ public LocalizationInfo(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [NativeBindings.MLSpatialAnchorLocalizationInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorLocalizationInfo.md) |nativeInfo|A structure containing information about the device's localization state. |
+| [NativeBindings.MLSpatialAnchorLocalizationInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorLocalizationInfo.md) |nativeInfo|A structure containing information about the device's localization state. |
 
 
 
@@ -66,7 +66,7 @@ public readonly LocalizationStatus LocalizationStatus;
 
 | Type | Description  | 
 |--|--|
-| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
+| readonly [LocalizationStatus](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
 
 
 
@@ -86,7 +86,7 @@ public readonly MappingMode MappingMode;
 
 | Type | Description  | 
 |--|--|
-| readonly [MappingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
+| readonly [MappingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
 
 
 

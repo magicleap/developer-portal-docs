@@ -8,7 +8,7 @@ title: AndroidBootConfig
 
 
 **NameSpace:** 
-[MagicLeapSupport](/unity-api/api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport/UnityEditor.XR.OpenXR.Features.MagicLeapSupport.md) 
+[MagicLeapSupport](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEditor.XR.OpenXR.Features.MagicLeapSupport/UnityEditor.XR.OpenXR.Features.MagicLeapSupport.md) 
 
 
 

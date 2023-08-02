@@ -6,7 +6,7 @@ summary: cea608 caption preamble address code.
 
 # MLCea608CaptionPAC
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,9 +19,9 @@ Cea608 caption preamble address code.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCea608CaptionStyleColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) | **[styleColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md#mlcea608captionstylecolor-stylecolor)**  |
-| uint32_t | **[row](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md#uint32-t-row)**  |
-| uint32_t | **[col](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md#uint32-t-col)**  |
+| [MLCea608CaptionStyleColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) | **[styleColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md#mlcea608captionstylecolor-stylecolor)**  |
+| uint32_t | **[row](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md#uint32-t-row)**  |
+| uint32_t | **[col](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_p_a_c.md#uint32-t-col)**  |
 
 ## Detailed Description
 
@@ -53,7 +53,7 @@ MLCea608CaptionStyleColor styleColor;
 
 | Type | Description |
 |--|--|
-| [MLCea608CaptionStyleColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) | Cea608 caption style and color.  |
+| [MLCea608CaptionStyleColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md) | Cea608 caption style and color.  |
 
 
 

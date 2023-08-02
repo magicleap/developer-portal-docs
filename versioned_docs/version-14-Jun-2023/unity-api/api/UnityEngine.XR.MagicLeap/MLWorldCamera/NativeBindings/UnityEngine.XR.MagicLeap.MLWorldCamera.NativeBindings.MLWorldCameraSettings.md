@@ -30,7 +30,7 @@ public MLWorldCameraSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) |settings|A structure to encapsulate the camera settings. |
+| in [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.Settings.md) |settings|A structure to encapsulate the camera settings. |
 
 
 

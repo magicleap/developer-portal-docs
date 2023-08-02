@@ -17,7 +17,7 @@ The capabilities for each stream supported by logical camera device &#42; can be
 
 ## Public Methods
 
-### [MLCameraCaptureStreamCaps](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamCaps.md) Create {#mlcameracapturestreamcaps-create}
+### [MLCameraCaptureStreamCaps](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamCaps.md) Create {#mlcameracapturestreamcaps-create}
 
 Create and return an initialized version of this struct. 
 
@@ -50,7 +50,7 @@ public MLCamera.CaptureType CaptureType;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
+| [MLCamera.CaptureType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 

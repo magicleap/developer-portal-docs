@@ -12,53 +12,53 @@ APIs for the Gaze Recognition system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md)** <br></br>Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata).  |
-| struct | **[MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md)** <br></br>Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use.  |
+| struct | **[MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md)** <br></br>Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata).  |
+| struct | **[MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md)** <br></br>Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) | **[MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#struct-mlgazerecognitionstaticdata)** <br></br>Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata).  |
-| typedef struct [MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) | **[MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#struct-mlgazerecognitionstate)** <br></br>Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use.  |
+| typedef struct [MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) | **[MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#struct-mlgazerecognitionstaticdata)** <br></br>Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata).  |
+| typedef struct [MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) | **[MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#struct-mlgazerecognitionstate)** <br></br>Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLGazeRecognitionError](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror)** <br></br> { <br></br>[MLGazeRecognitionError_None](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror-none),<br></br> [MLGazeRecognitionError_Generic](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror-generic),<br></br> [MLGazeRecognitionError_Ensure32Bits](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible error codes that the Gaze Recognition system can report.  |
-| enum | **[MLGazeRecognitionBehavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior)** <br></br> { <br></br>[MLGazeRecognition_Unknown](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-unknown) = 0,<br></br> [MLGazeRecognition_EyesClosed](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-eyesclosed) = 1,<br></br> [MLGazeRecognition_Blink](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-blink) = 2,<br></br> [MLGazeRecognition_Fixation](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-fixation) = 3,<br></br> [MLGazeRecognition_Pursuit](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-pursuit) = 4,<br></br> [MLGazeRecognition_Saccade](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-saccade) = 5,<br></br> [MLGazeRecognition_BlinkLeft](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-blinkleft) = 6,<br></br> [MLGazeRecognition_BlinkRight](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-blinkright) = 7,<br></br> [MLGazeRecognition_Ensure32Bits](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
+| enum | **[MLGazeRecognitionError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror)** <br></br> { <br></br>[MLGazeRecognitionError_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror-none),<br></br> [MLGazeRecognitionError_Generic](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror-generic),<br></br> [MLGazeRecognitionError_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible error codes that the Gaze Recognition system can report.  |
+| enum | **[MLGazeRecognitionBehavior](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior)** <br></br> { <br></br>[MLGazeRecognition_Unknown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-unknown) = 0,<br></br> [MLGazeRecognition_EyesClosed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-eyesclosed) = 1,<br></br> [MLGazeRecognition_Blink](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-blink) = 2,<br></br> [MLGazeRecognition_Fixation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-fixation) = 3,<br></br> [MLGazeRecognition_Pursuit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-pursuit) = 4,<br></br> [MLGazeRecognition_Saccade](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-saccade) = 5,<br></br> [MLGazeRecognition_BlinkLeft](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-blinkleft) = 6,<br></br> [MLGazeRecognition_BlinkRight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-blinkright) = 7,<br></br> [MLGazeRecognition_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognition-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLGazeRecognitionStaticDataInit](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstaticdatainit)**([MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * inout_state)<br></br>Initialize [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) with version.  |
-| void | **[MLGazeRecognitionStateInit](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit)**([MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * inout_state)<br></br>Initialize [MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) with version.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionCreate](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create Gaze Recognition.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionDestroy](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiondestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy Gaze Recognition.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionGetStaticData](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * out_data)<br></br>Get static information about Gaze Recognition.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionGetState](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * out_state)<br></br>Get information about the user's gaze.  |
+| void | **[MLGazeRecognitionStaticDataInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstaticdatainit)**([MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * inout_state)<br></br>Initialize [MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) with version.  |
+| void | **[MLGazeRecognitionStateInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit)**([MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * inout_state)<br></br>Initialize [MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) with version.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create Gaze Recognition.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiondestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy Gaze Recognition.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionGetStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * out_data)<br></br>Get static information about Gaze Recognition.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLGazeRecognitionGetState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * out_state)<br></br>Get information about the user's gaze.  |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
-| float | **[eye_height_max](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-height-max)**  |
-| float | **[eye_width_max](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-width-max)**  |
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[vergence](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlcoordinateframeuid-vergence)**  |
-| uint32_t | **[version](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
-| [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mltime-timestamp)**  |
-| [MLGazeRecognitionError](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | **[error](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionerror-error)**  |
-| [MLGazeRecognitionBehavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | **[behavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionbehavior-behavior)**  |
-| [MLVec2f](/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_left](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-left)**  |
-| [MLVec2f](/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_right](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-right)**  |
-| float | **[onset_s](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-onset-s)**  |
-| float | **[duration_s](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-duration-s)**  |
-| float | **[velocity_degps](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-velocity-degps)**  |
-| float | **[amplitude_deg](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-amplitude-deg)**  |
-| float | **[direction_radial](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-direction-radial)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
+| float | **[eye_height_max](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-height-max)**  |
+| float | **[eye_width_max](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-width-max)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[vergence](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlcoordinateframeuid-vergence)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
+| [MLTime](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mltime-timestamp)**  |
+| [MLGazeRecognitionError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | **[error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionerror-error)**  |
+| [MLGazeRecognitionBehavior](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | **[behavior](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionbehavior-behavior)**  |
+| [MLVec2f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_left](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-left)**  |
+| [MLVec2f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_right](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-right)**  |
+| float | **[onset_s](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-onset-s)**  |
+| float | **[duration_s](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-duration-s)**  |
+| float | **[velocity_degps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-velocity-degps)**  |
+| float | **[amplitude_deg](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-amplitude-deg)**  |
+| float | **[direction_radial](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-direction-radial)**  |
 
 ## Detailed Description
 
@@ -137,11 +137,11 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 typedef struct MLGazeRecognitionStaticData MLGazeRecognitionStaticData;
 ```
 
-Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata). 
+Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata). 
 
 
 
-[More Info](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md)
 
 
 **API Level:**
@@ -158,11 +158,11 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 typedef struct MLGazeRecognitionState MLGazeRecognitionState;
 ```
 
-Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use. 
+Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md)
 
 
 **API Level:**
@@ -184,13 +184,13 @@ static inline void MLGazeRecognitionStaticDataInit(
 )
 ```
 
-Initialize [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) with version. 
+Initialize [MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) with version. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * |inout_state|Sets up the version for inout_state and nulls pointer for the [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md).|
+| [MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * |inout_state|Sets up the version for inout_state and nulls pointer for the [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md).|
 **Required Permissions**:
 
   * None 
@@ -215,13 +215,13 @@ static inline void MLGazeRecognitionStateInit(
 )
 ```
 
-Initialize [MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) with version. 
+Initialize [MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) with version. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * |inout_state|Sets up the version for inout_state and zeros all the fields.|
+| [MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * |inout_state|Sets up the version for inout_state and zeros all the fields.|
 **Required Permissions**:
 
   * None 
@@ -252,17 +252,17 @@ Create Gaze Recognition.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain a handle to Gaze Recognition. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain a handle to Gaze Recognition. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The out_handle parameter was not valid (null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Gaze Recognition was successfully created. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|The application lacks permission. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFaiure|Gaze Recognition was not created successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The out_handle parameter was not valid (null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Gaze Recognition was successfully created. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|The application lacks permission. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFaiure|Gaze Recognition was not created successfully.|
 **Required Permissions**:
 
   * com.magicleap.permission.EYE_TRACKING (protection level: dangerous) 
@@ -293,16 +293,16 @@ Destroy Gaze Recognition.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to Gaze Recognition created by [MLGazeRecognitionCreate()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to Gaze Recognition created by [MLGazeRecognitionCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The Gaze Recognition handle was not valid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The Gaze Recognition was successfully destroyed. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The Gaze Recognition was not successfully destroyed.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The Gaze Recognition handle was not valid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The Gaze Recognition was successfully destroyed. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The Gaze Recognition was not successfully destroyed.|
 **Required Permissions**:
 
   * None 
@@ -334,17 +334,17 @@ Get static information about Gaze Recognition.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to Gaze Recognition created by [MLGazeRecognitionCreate()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate). |
-| [MLGazeRecognitionStaticData](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * |out_data|Target to populate the data about Gaze Recognition.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to Gaze Recognition created by [MLGazeRecognitionCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate). |
+| [MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_static_data.md) * |out_data|Target to populate the data about Gaze Recognition.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The out_data parameter was not valid (null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Gaze Recognition static data was successfully received. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to receive Gaze Recognition static data.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The out_data parameter was not valid (null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Gaze Recognition static data was successfully received. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to receive Gaze Recognition static data.|
 **Required Permissions**:
 
   * None 
@@ -376,17 +376,17 @@ Get information about the user's gaze.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to Gaze Recognition created by [MLGazeRecognitionCreate()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate). |
-| [MLGazeRecognitionState](/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * |out_state|Information about the gaze.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|A handle to Gaze Recognition created by [MLGazeRecognitionCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitioncreate). |
+| [MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/struct_m_l_gaze_recognition_state.md) * |out_state|Information about the gaze.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The out_state parameter was not valid (null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|gaze Recognition state was successfully received. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to receive gaze Recognition state data.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|The out_state parameter was not valid (null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|gaze Recognition state was successfully received. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PerceptionSystemNotStarted|Perception System has not been started. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to receive gaze Recognition state data.|
 **Required Permissions**:
 
   * None 
@@ -506,7 +506,7 @@ MLGazeRecognitionError error;
 
 | Type | Description |
 |--|--|
-| [MLGazeRecognitionError](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | A set of possible error codes that the Gaze Recognition system can report.  |
+| [MLGazeRecognitionError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | A set of possible error codes that the Gaze Recognition system can report.  |
 
 
 Represents what gaze Recognition error (if any) is present. 
@@ -527,7 +527,7 @@ MLGazeRecognitionBehavior behavior;
 
 | Type | Description |
 |--|--|
-| [MLGazeRecognitionBehavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
+| [MLGazeRecognitionBehavior](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
 
 
 Represents what known gaze Recognition behavior is present. 

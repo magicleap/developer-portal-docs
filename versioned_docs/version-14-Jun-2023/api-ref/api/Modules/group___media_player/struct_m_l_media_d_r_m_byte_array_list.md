@@ -5,7 +5,7 @@ title: MLMediaDRMByteArrayList
 
 # MLMediaDRMByteArrayList
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLMediaDRMByteArrayList
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[ptr](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md#mlmediadrmbytearray-ptr)**  |
-| size_t | **[length](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md#size-t-length)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[ptr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md#mlmediadrmbytearray-ptr)**  |
+| size_t | **[length](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md#size-t-length)**  |
 
 ## Detailed Description
 
@@ -59,7 +59,7 @@ size_t length;
 ```
 
 
-Length of [ptr](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md#mlmediadrmbytearray-ptr). 
+Length of [ptr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md#mlmediadrmbytearray-ptr). 
 
 
 

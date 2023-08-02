@@ -77,7 +77,7 @@ Application Simulator supports running programs on host which use the Magic Leap
 
 As in ML1 development, standalone applications targeting the Magic Leap C SDK may be built and run under Application Simulator, merely by creating a host program which links against Magic Leap C SDK entry points. But as ML2 is built on Android (where standalone native graphical applications are not supported), this section assumes your goal is to start from an Android-style project which builds for device and adapt it for usage with the Application Simulator.
 
-A key point is, Application Simulator only covers the C/C++ side of such projects; it does not support Java APIs. Thus, Android projects suitable for the Application Simulator should be native activities which invoke C/C++ logic in a shared library through the help of `native_app_glue` (see [Android's Native Activity documentation](https://developer.android.com/ndk/guides/concepts#naa) for more information).  
+A key point is, Application Simulator only covers the C/C++ side of such projects; it does not support Java APIs. Thus, Android projects suitable for the Application Simulator should be native activities which invoke C/C++ logic in a shared library through the help of `native_app_glue` (see [Android's Native Activity documentation](https://developer.android.com/ndk/versioned_docs/version-14-Jun-2023/guides/concepts#naa) for more information).  
 
 Application Simulator can load a host build of this native library and invoke its `android_main` entry point. But any callbacks to JNI code either need to be stubbed out or replaced with the Application Simulator C APIs.
 
@@ -89,7 +89,7 @@ The permissions system in ml_zi_permissions.h should be used to make permission 
 
 The sections below assume the Application Simulator build environment which publishes an **MLSDK** environment variable (pointing to the Magic Leap C SDK) and a **ML_ZI _ROOT** environment variable (pointing to the Application Simulator Runtime).  Additionally, **PATH** and **DYLD_LIBRARY_PATH** (macOS) need to be established to run programs under the Application Simulator.
 
-All of these steps may be performed by starting a command line prompt from the [ML Hub](/docs/guides/developer-tools/ml-hub/magic-leap-hub.md), which you can open by pressing F8 or by clicking the terminal icon on the bottom left. This terminal will be automatically configured for the Application Simulator development.  
+All of these steps may be performed by starting a command line prompt from the [ML Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/magic-leap-hub.md), which you can open by pressing F8 or by clicking the terminal icon on the bottom left. This terminal will be automatically configured for the Application Simulator development.  
 
 Manual steps to set up a command line interface for the Application Simulator development are to run the following scripts:
 
@@ -98,12 +98,12 @@ source $USER/MagicLeap/mlsdk/<your-os-version>/envsetup.sh
 source $USER/MagicLeap/tools/zi/<latest-app-sim-version>/mlvdsetup.sh
 ```
 
-Additionally, building C-API samples requires setting up environment variables `ANDROID_SDK_ROOT` and `ANDROID_NDK_ROOT`. The user must have also built the Application Framework for host, and have set the environment variable `MAGICLEAP_APP_FRAMEWORK`. These steps are covered in the [C-API Command Line Workflow](/docs/guides/native/getting-started/command-line-workflow.md) guide.
+Additionally, building C-API samples requires setting up environment variables `ANDROID_SDK_ROOT` and `ANDROID_NDK_ROOT`. The user must have also built the Application Framework for host, and have set the environment variable `MAGICLEAP_APP_FRAMEWORK`. These steps are covered in the [C-API Command Line Workflow](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/getting-started/command-line-workflow.md) guide.
 
 ## Building C API Apps
 
 :::tip
-Reference the [**C-API Building Guide**](/docs/guides/native/getting-started/command-line-workflow.md#building-the-sample-applications) for more building instructions to supplement the information below.
+Reference the [**C-API Building Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/getting-started/command-line-workflow.md#building-the-sample-applications) for more building instructions to supplement the information below.
 :::
 
 An Android app is built for device using `gradlew`, which (for our purposes) can be split into "native build" and "Android build" parts. Application Simulator only requires the “native build” parts.  

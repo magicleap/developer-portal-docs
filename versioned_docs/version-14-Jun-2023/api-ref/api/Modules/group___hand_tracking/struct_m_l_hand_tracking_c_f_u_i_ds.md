@@ -6,7 +6,7 @@ summary: mlcoordinateframeuids for the keypoints.
 
 # MLHandTrackingCFUIDs
 
-**Module:** **[Hand Tracking](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md)**
+**Module:** **[Hand Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md)**
 
 
 
@@ -19,7 +19,7 @@ MLCoordinateFrameUIDs for the keypoints.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLHandTrackingStaticData_MaxKeyPoints] | **[keypoint_cfuids](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md#mlcoordinateframeuid-keypoint-cfuids)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLHandTrackingStaticData_MaxKeyPoints] | **[keypoint_cfuids](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md#mlcoordinateframeuid-keypoint-cfuids)**  |
 
 ## Detailed Description
 
@@ -29,7 +29,7 @@ struct MLHandTrackingCFUIDs;
 
 MLCoordinateFrameUIDs for the keypoints. 
 
-See [MLHandTrackingKeyPoint](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#enum-mlhandtrackingkeypoint) for more details.
+See [MLHandTrackingKeyPoint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#enum-mlhandtrackingkeypoint) for more details.
 
 
 
@@ -53,7 +53,7 @@ MLCoordinateFrameUID[MLHandTrackingStaticData_MaxKeyPoints] keypoint_cfuids;
 
 | Type | Description |
 |--|--|
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLHandTrackingStaticData_MaxKeyPoints] | [MLHandTrackingStaticData_MaxKeyPoints] |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md)[MLHandTrackingStaticData_MaxKeyPoints] | [MLHandTrackingStaticData_MaxKeyPoints] |
 
 
 

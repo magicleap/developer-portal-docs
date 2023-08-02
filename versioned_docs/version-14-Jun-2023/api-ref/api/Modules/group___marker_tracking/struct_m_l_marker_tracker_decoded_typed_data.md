@@ -6,7 +6,7 @@ summary: structure type selector.
 
 # MLMarkerTrackerDecodedTypedData
 
-**Module:** **[Fiducial Marker Tracking](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
+**Module:** **[Fiducial Marker Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
 
 
 
@@ -19,7 +19,7 @@ Structure type selector.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | **[type](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_typed_data.md#mlmarkertrackingdecodeddatatype-type)**  |
+| [MLMarkerTrackingDecodedDataType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | **[type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_typed_data.md#mlmarkertrackingdecodeddatatype-type)**  |
 
 ## Detailed Description
 
@@ -64,7 +64,7 @@ MLMarkerTrackingDecodedDataType type;
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | Decoded Data Type enumeration.  |
+| [MLMarkerTrackingDecodedDataType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | Decoded Data Type enumeration.  |
 
 
 Type selector for the structure. 

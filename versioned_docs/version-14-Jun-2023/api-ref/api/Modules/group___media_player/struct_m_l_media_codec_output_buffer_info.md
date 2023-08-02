@@ -6,7 +6,7 @@ summary: mediacodec output buffer information.
 
 # MLMediaCodecOutputBufferInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,9 +19,9 @@ MediaCodec Output buffer information.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int64_t | **[output_buffer_index](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md#int64-t-output-buffer-index)**  |
-| [MLMediaCodecBufferInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md) * | **[buffer_info](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md#mlmediacodecbufferinfo-buffer-info)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md#void-data)**  |
+| int64_t | **[output_buffer_index](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md#int64-t-output-buffer-index)**  |
+| [MLMediaCodecBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md) * | **[buffer_info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md#mlmediacodecbufferinfo-buffer-info)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -80,7 +80,7 @@ void * data;
 ```
 
 
-User data as passed to [MLMediaCodecSetCallbacksEx()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecsetcallbacksex). 
+User data as passed to [MLMediaCodecSetCallbacksEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecsetcallbacksex). 
 
 
 

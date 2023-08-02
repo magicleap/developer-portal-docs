@@ -9,7 +9,7 @@ keywords: [Unity, Gesture Classification, Input]
 This section demonstrates how to use the Gesture Classification API.
 
 :::caution
-This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
+This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md).
 :::
 
 ## Detect Posture Type Example

@@ -5,7 +5,7 @@ title: MLCameraOutput
 
 # MLCameraOutput
 
-**Module:** **[Camera](/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLCameraOutput
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#uint32-t-version)**  |
-| uint8_t | **[plane_count](/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#uint8-t-plane-count)** <br></br>Number of output image planes:   1 for compressed output such as JPEG stream,   3 for separate color component output such as YUV/RGB.  |
-| [MLCameraPlaneInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)[MLCamera_MaxImagePlanes] | **[planes](/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#mlcameraplaneinfo-planes)**  |
-| [MLCameraOutputFormat](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat) | **[format](/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#mlcameraoutputformat-format)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#uint32-t-version)**  |
+| uint8_t | **[plane_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#uint8-t-plane-count)** <br></br>Number of output image planes:   1 for compressed output such as JPEG stream,   3 for separate color component output such as YUV/RGB.  |
+| [MLCameraPlaneInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)[MLCamera_MaxImagePlanes] | **[planes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#mlcameraplaneinfo-planes)**  |
+| [MLCameraOutputFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat) | **[format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md#mlcameraoutputformat-format)**  |
 
 ## Detailed Description
 
@@ -78,7 +78,7 @@ MLCameraPlaneInfo[MLCamera_MaxImagePlanes] planes;
 
 | Type | Description |
 |--|--|
-| [MLCameraPlaneInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)[MLCamera_MaxImagePlanes] | [MLCamera_MaxImagePlanes] |
+| [MLCameraPlaneInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)[MLCamera_MaxImagePlanes] | [MLCamera_MaxImagePlanes] |
 
 
 Output image plane info. The number of output planes is specified by plane_count. 
@@ -99,7 +99,7 @@ MLCameraOutputFormat format;
 
 | Type | Description |
 |--|--|
-| [MLCameraOutputFormat](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat) | Captured output format. These three parameters determine which formats are supported:  |
+| [MLCameraOutputFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat) | Captured output format. These three parameters determine which formats are supported:  |
 
 
 Supported output format specified by MLCameraOutputFormat. 

@@ -31,8 +31,8 @@ public Settings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) |mode|Enumeration of world camera modes. |
-| [CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) |cameras|Enumeration of all the available world camera sensors. |
+| [Mode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) |mode|Enumeration of world camera modes. |
+| [CameraId](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) |cameras|Enumeration of all the available world camera sensors. |
 
 
 
@@ -66,7 +66,7 @@ public CameraId Cameras => cameras;
 
 | Type | Description  | 
 |--|--|
-| [CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
+| [CameraId](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
 
 
 
@@ -84,7 +84,7 @@ public Mode Mode => mode;
 
 | Type | Description  | 
 |--|--|
-| [Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) | Enumeration of world camera modes.  |
+| [Mode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) | Enumeration of world camera modes.  |
 
 
 

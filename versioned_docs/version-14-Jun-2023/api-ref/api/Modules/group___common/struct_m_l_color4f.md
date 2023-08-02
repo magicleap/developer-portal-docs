@@ -5,7 +5,7 @@ title: MLColor4f
 
 # MLColor4f
 
-**Module:** **[Common](/api-ref/api/Modules/group___common/group___common.md)**
+**Module:** **[Common](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLColor4f
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[r](/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-r)**  |
-| float | **[g](/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-g)**  |
-| float | **[b](/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-b)**  |
-| float | **[a](/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-a)**  |
+| float | **[r](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-r)**  |
+| float | **[g](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-g)**  |
+| float | **[b](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-b)**  |
+| float | **[a](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color4f.md#float-a)**  |
 
 ## Detailed Description
 

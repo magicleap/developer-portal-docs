@@ -6,7 +6,7 @@ summary: webvtt data structure.
 
 # MLWebVTTData
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,18 +19,18 @@ WebVTT data structure.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int64_t | **[start_time_ms](/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-start-time-ms)**  |
-| int64_t | **[end_time_ms](/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-end-time-ms)**  |
-| char * | **[body](/api-ref/api/Modules/group___media_player/group___media_player.md#char-body)**  |
-| char * | **[id](/api-ref/api/Modules/group___media_player/group___media_player.md#char-id)**  |
-| bool | **[snap_to_lines](/api-ref/api/Modules/group___media_player/group___media_player.md#bool-snap-to-lines)**  |
-| [MLWebVTTOrientation](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation) | **[orientation](/api-ref/api/Modules/group___media_player/group___media_player.md#mlwebvttorientation-orientation)**  |
-| [MLWebVTTDirection](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection) | **[direction](/api-ref/api/Modules/group___media_player/group___media_player.md#mlwebvttdirection-direction)**  |
-| float | **[relative_line_position](/api-ref/api/Modules/group___media_player/group___media_player.md#float-relative-line-position)**  |
-| int32_t | **[line_number](/api-ref/api/Modules/group___media_player/group___media_player.md#int32-t-line-number)**  |
-| float | **[text_position](/api-ref/api/Modules/group___media_player/group___media_player.md#float-text-position)**  |
-| float | **[size](/api-ref/api/Modules/group___media_player/group___media_player.md#float-size)**  |
-| [MLWebVTTAlign](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign) | **[align](/api-ref/api/Modules/group___media_player/group___media_player.md#mlwebvttalign-align)**  |
+| int64_t | **[start_time_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-start-time-ms)**  |
+| int64_t | **[end_time_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#int64-t-end-time-ms)**  |
+| char * | **[body](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#char-body)**  |
+| char * | **[id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#char-id)**  |
+| bool | **[snap_to_lines](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#bool-snap-to-lines)**  |
+| [MLWebVTTOrientation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation) | **[orientation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlwebvttorientation-orientation)**  |
+| [MLWebVTTDirection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection) | **[direction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlwebvttdirection-direction)**  |
+| float | **[relative_line_position](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-relative-line-position)**  |
+| int32_t | **[line_number](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#int32-t-line-number)**  |
+| float | **[text_position](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-text-position)**  |
+| float | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#float-size)**  |
+| [MLWebVTTAlign](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign) | **[align](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlwebvttalign-align)**  |
 
 ## Detailed Description
 
@@ -137,7 +137,7 @@ MLWebVTTOrientation orientation;
 
 | Type | Description |
 |--|--|
-| [MLWebVTTOrientation](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation) | Cue orientation setting.  |
+| [MLWebVTTOrientation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation) | Cue orientation setting.  |
 
 
 Orientation of the cue. 
@@ -158,7 +158,7 @@ MLWebVTTDirection direction;
 
 | Type | Description |
 |--|--|
-| [MLWebVTTDirection](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection) | Cue direction setting.  |
+| [MLWebVTTDirection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection) | Cue direction setting.  |
 
 
 The writing direction. 
@@ -239,7 +239,7 @@ MLWebVTTAlign align;
 
 | Type | Description |
 |--|--|
-| [MLWebVTTAlign](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign) | Cue aligment setting.  |
+| [MLWebVTTAlign](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign) | Cue aligment setting.  |
 
 
 WebVTT cue text alignment. 

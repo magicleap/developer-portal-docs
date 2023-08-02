@@ -6,7 +6,7 @@ summary: mediadrm key status.
 
 # MLMediaDRMKeyStatus
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ MediaDRM key status.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) | **[key_id](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md#mlmediadrmbytearray-key-id)**  |
-| [MLMediaDRMKeyStatusCode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmkeystatuscode) | **[status_code](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md#mlmediadrmkeystatuscode-status-code)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) | **[key_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md#mlmediadrmbytearray-key-id)**  |
+| [MLMediaDRMKeyStatusCode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmkeystatuscode) | **[status_code](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md#mlmediadrmkeystatuscode-status-code)**  |
 
 ## Detailed Description
 
@@ -67,7 +67,7 @@ MLMediaDRMKeyStatusCode status_code;
 
 | Type | Description |
 |--|--|
-| [MLMediaDRMKeyStatusCode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmkeystatuscode) | Status code associated with a DRM session key.  |
+| [MLMediaDRMKeyStatusCode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmkeystatuscode) | Status code associated with a DRM session key.  |
 
 
 Status code of the corresponding key. 

@@ -9,13 +9,13 @@ summary: spatial anchor management is closely tied to the selected mapping mode 
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) management is closely tied to the selected mapping mode on the device. The modes are mutually exclusive and affect the functionality of these APIs. The available mapping modes are:   [More...](#detailed-description)  
+Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) management is closely tied to the selected mapping mode on the device. The modes are mutually exclusive and affect the functionality of these APIs. The available mapping modes are:   [More...](#detailed-description)  
 
 
-Inherits from: <br></br>[MLAutoAPISingleton< MLAnchors >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
+Inherits from: <br></br>[MLAutoAPISingleton< MLAnchors >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
 
 
 
@@ -28,7 +28,7 @@ public class MLAnchors : MLAutoAPISingleton< MLAnchors >
 
 **Details**
 
-Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) management is closely tied to the selected mapping mode on the device. The modes are mutually exclusive and affect the functionality of these APIs.For example, publishing an anchor is not available in "per-session" mapping mode.The available mapping modes are: Per-Session Mode - A non-persistent mode in which anchors are only available for the currently active tracking session. On-Device Mode - A persistent mode in which anchors are persisted locally and will be available in multiple sessions when localized to the same space in which they were published. 
+Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) management is closely tied to the selected mapping mode on the device. The modes are mutually exclusive and affect the functionality of these APIs.For example, publishing an anchor is not available in "per-session" mapping mode.The available mapping modes are: Per-Session Mode - A non-persistent mode in which anchors are only available for the currently active tracking session. On-Device Mode - A persistent mode in which anchors are persisted locally and will be available in multiple sessions when localized to the same space in which they were published. 
 
 On-Device Mode - A persistent mode in which anchors are persisted locally and will be available in multiple sessions when localized to the same space in which they were published.
 
@@ -44,7 +44,7 @@ AR Cloud Mode - A persistent mode in which anchors are persisted in the cloud en
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLocalizationInfo {#mlresult-getlocalizationinfo}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLocalizationInfo {#mlresult-getlocalizationinfo}
 
 ```csharp
 public static MLResult GetLocalizationInfo(
@@ -57,7 +57,7 @@ public static MLResult GetLocalizationInfo(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [LocalizationInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.LocalizationInfo.md) |info|A structure containing information about the device's localization state. |
+| out [LocalizationInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.LocalizationInfo.md) |info|A structure containing information about the device's localization state. |
 
 
 
@@ -79,7 +79,7 @@ protected virtual override MLResult.Code StartAPI()
 
 
 
-**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
+**Reimplements**: [StartAPI](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
 
 
 
@@ -87,7 +87,7 @@ protected virtual override MLResult.Code StartAPI()
 
 ### StopAPI {#override-stopapi}
 
-API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever [MLDevice](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -96,7 +96,7 @@ protected virtual override MLResult.Code StopAPI()
 
 
 
-**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
+**Reimplements**: [StopAPI](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
 
 
 

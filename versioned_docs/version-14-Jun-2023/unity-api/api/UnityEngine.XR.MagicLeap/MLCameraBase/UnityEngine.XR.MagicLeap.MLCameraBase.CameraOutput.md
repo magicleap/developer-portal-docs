@@ -42,7 +42,7 @@ public OutputFormat Format;
 
 | Type | Description  | 
 |--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
+| [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
 
 
 
@@ -60,7 +60,7 @@ public PlaneInfo [] Planes;
 
 | Type | Description  | 
 |--|--|
-| [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) [] | Contains both the data and information necessary to read the data for a specific buffer in a capture  |
+| [PlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) [] | Contains both the data and information necessary to read the data for a specific buffer in a capture  |
 
 
 

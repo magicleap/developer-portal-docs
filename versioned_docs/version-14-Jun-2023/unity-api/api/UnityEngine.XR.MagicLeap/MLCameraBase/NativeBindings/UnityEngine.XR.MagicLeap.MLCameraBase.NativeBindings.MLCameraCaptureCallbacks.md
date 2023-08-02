@@ -17,7 +17,7 @@ Capture callbacks to be implemented by client to receive capture status if callb
 
 ## Public Methods
 
-### [MLCameraCaptureCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureCallbacks.md) Create {#mlcameracapturecallbacks-create}
+### [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureCallbacks.md) Create {#mlcameracapturecallbacks-create}
 
 Create and return an initialized version of this struct. 
 
@@ -50,7 +50,7 @@ public OnCaptureAbortedDelegate OnCaptureAborted;
 
 | Type | Description  | 
 |--|--|
-| [OnCaptureAbortedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncaptureaborteddelegate) | Delegate to notify the app when a capture request is aborted.  |
+| [OnCaptureAbortedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncaptureaborteddelegate) | Delegate to notify the app when a capture request is aborted.  |
 
 
 
@@ -70,7 +70,7 @@ public OnCaptureCompletedDelegate OnCaptureCompleted;
 
 | Type | Description  | 
 |--|--|
-| [OnCaptureCompletedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturecompleteddelegate) | Delegate to notify the app when a capture request is completed.  |
+| [OnCaptureCompletedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturecompleteddelegate) | Delegate to notify the app when a capture request is completed.  |
 
 
 
@@ -90,7 +90,7 @@ public OnCaptureFailedDelegate OnCaptureFailed;
 
 | Type | Description  | 
 |--|--|
-| [OnCaptureFailedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturefaileddelegate) | Delegate to notify the app when a capture request fails.  |
+| [OnCaptureFailedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturefaileddelegate) | Delegate to notify the app when a capture request fails.  |
 
 
 
@@ -127,7 +127,7 @@ public OnPreviewBufferAvailableDelegate OnPreviewBufferAvailable;
 
 | Type | Description  | 
 |--|--|
-| [OnPreviewBufferAvailableDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-onpreviewbufferavailabledelegate) | Delegate to notify the app when the frame data of a preview is available.  |
+| [OnPreviewBufferAvailableDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-onpreviewbufferavailabledelegate) | Delegate to notify the app when the frame data of a preview is available.  |
 
 
 

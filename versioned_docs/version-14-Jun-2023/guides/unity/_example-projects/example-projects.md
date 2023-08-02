@@ -14,6 +14,6 @@ This section provides downloadable unity projects that walk through various feat
 
 ## Projects
 
-- The [SDK Examples Project](/docs/guides/unity/sdk-example-scenes/sdk-example-scenes.md) provides demo scenes for many of the Magic Leap 2 features and use Unity's XR Interaction Toolkit as a simple foundation for UI and input. These scenes are great starting points for exploring and learning how to incorporate these features into your own projects.
+- The [SDK Examples Project](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-example-scenes.md) provides demo scenes for many of the Magic Leap 2 features and use Unity's XR Interaction Toolkit as a simple foundation for UI and input. These scenes are great starting points for exploring and learning how to incorporate these features into your own projects.
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

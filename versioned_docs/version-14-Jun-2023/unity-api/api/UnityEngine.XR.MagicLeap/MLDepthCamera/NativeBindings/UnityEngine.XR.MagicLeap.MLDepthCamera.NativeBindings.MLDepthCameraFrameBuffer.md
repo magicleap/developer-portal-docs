@@ -16,7 +16,7 @@ title: MLDepthCameraFrameBuffer
 
 ## Public Methods
 
-### [MLDepthCameraFrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraFrameBuffer.md) Init {#mldepthcameraframebuffer-init}
+### [MLDepthCameraFrameBuffer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraFrameBuffer.md) Init {#mldepthcameraframebuffer-init}
 
 ```csharp
 public static MLDepthCameraFrameBuffer Init(
@@ -29,7 +29,7 @@ public static MLDepthCameraFrameBuffer Init(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md)? |managed|Per-plane info for each depth camera frame. |
+| [FrameBuffer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md)? |managed|Per-plane info for each depth camera frame. |
 
 
 

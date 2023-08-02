@@ -79,7 +79,7 @@ public int Height;
 
 ### RendererHandle {#ulong-rendererhandle}
 
-Handle of the [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) instance received from a MLYcbcrRendererCreate() call. 
+Handle of the [YcbcrRenderer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) instance received from a MLYcbcrRendererCreate() call. 
 
 ```csharp
 
@@ -96,7 +96,7 @@ public ulong RendererHandle;
 
 ### TextureHandle {#intptr-texturehandle}
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) pointer of the Unity texture to render the android native buffer on. 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) pointer of the Unity texture to render the android native buffer on. 
 
 ```csharp
 

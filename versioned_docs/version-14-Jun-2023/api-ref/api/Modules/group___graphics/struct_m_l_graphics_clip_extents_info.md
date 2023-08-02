@@ -6,7 +6,7 @@ summary: the static clip extents defined for all possible eye positions.
 
 # MLGraphicsClipExtentsInfo
 
-**Module:** **[Graphics](/api-ref/api/Modules/group___graphics/group___graphics.md)**
+**Module:** **[Graphics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md)**
 
 
 
@@ -19,9 +19,9 @@ The static clip extents defined for all possible eye positions.  [More...](#deta
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | **[virtual_camera_name](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md#mlgraphicsvirtualcameraname-virtual-camera-name)**  |
-| [MLMat4f](/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) | **[projection](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md#mlmat4f-projection)** <br></br>The projection matrix, defined with infinite far clip plane distance. If the client is using a different projection model the matrix will need to be adjusted to match the client model prior to frustum culling.  |
-| [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md#mltransform-transform)**  |
+| [MLGraphicsVirtualCameraName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | **[virtual_camera_name](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md#mlgraphicsvirtualcameraname-virtual-camera-name)**  |
+| [MLMat4f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) | **[projection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md#mlmat4f-projection)** <br></br>The projection matrix, defined with infinite far clip plane distance. If the client is using a different projection model the matrix will need to be adjusted to match the client model prior to frustum culling.  |
+| [MLTransform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md#mltransform-transform)**  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLGraphicsClipExtentsInfo;
 
 The static clip extents defined for all possible eye positions. 
 
-Defines the conservative clip extents for the camera name that can be used for early update frustum culling in the client update path (prior to calling [MLGraphicsBeginFrameEx](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex)).
+Defines the conservative clip extents for the camera name that can be used for early update frustum culling in the client update path (prior to calling [MLGraphicsBeginFrameEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsbeginframeex)).
 
 
 
@@ -55,7 +55,7 @@ MLGraphicsVirtualCameraName virtual_camera_name;
 
 | Type | Description |
 |--|--|
-| [MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | The metadata name associated with each virtual camera.  |
+| [MLGraphicsVirtualCameraName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | The metadata name associated with each virtual camera.  |
 
 
 The virtual camera meta data name. 

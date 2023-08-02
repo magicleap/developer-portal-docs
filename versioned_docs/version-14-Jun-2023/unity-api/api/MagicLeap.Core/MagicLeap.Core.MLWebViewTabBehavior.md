@@ -8,7 +8,7 @@ title: MLWebViewTabBehavior
 
 
 **NameSpace:** 
-[Core](/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
+[Core](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
 
 
 
@@ -33,7 +33,7 @@ public MLWebView WebView { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
+| [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
 
 
 
@@ -75,8 +75,8 @@ public bool CreateTab(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebViewTabBarBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBarBehavior.md) |tabBar||
-| [MLWebViewScreenBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewScreenBehavior.md) |webViewScreen|This class is used to Render Web View on the texture and propagate input to Web View. |
+| [MLWebViewTabBarBehavior](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBarBehavior.md) |tabBar||
+| [MLWebViewScreenBehavior](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewScreenBehavior.md) |webViewScreen|This class is used to Render Web View on the texture and propagate input to Web View. |
 | InputField |addressBar||
 | bool |isPopup||
 | ulong |popupID||

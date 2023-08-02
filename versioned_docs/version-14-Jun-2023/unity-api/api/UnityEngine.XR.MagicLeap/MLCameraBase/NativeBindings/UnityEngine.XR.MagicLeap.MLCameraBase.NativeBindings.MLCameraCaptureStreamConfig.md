@@ -17,7 +17,7 @@ Structure to encapsulate stream configurations
 
 ## Public Methods
 
-### [MLCameraCaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md) Create {#mlcameracapturestreamconfig-create}
+### [MLCameraCaptureStreamConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md) Create {#mlcameracapturestreamconfig-create}
 
 Create and return an initialized version of this struct. 
 
@@ -36,7 +36,7 @@ public static MLCameraCaptureStreamConfig Create()
 
 -----------
 
-### [MLCameraCaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md) Create {#mlcameracapturestreamconfig-create}
+### [MLCameraCaptureStreamConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md) Create {#mlcameracapturestreamconfig-create}
 
 ```csharp
 public static MLCameraCaptureStreamConfig Create(
@@ -49,7 +49,7 @@ public static MLCameraCaptureStreamConfig Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCamera.CaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureStreamConfig.md) |config||
+| [MLCamera.CaptureStreamConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureStreamConfig.md) |config||
 
 
 
@@ -72,7 +72,7 @@ public MLCamera.CaptureType CaptureType;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
+| [MLCamera.CaptureType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -126,7 +126,7 @@ public MLCamera.OutputFormat OutputFormat;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
+| [MLCamera.OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
 
 
 

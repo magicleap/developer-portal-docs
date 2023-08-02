@@ -9,7 +9,7 @@ summary: native representation of proxy config
 
 
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) representation of proxy config   
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) representation of proxy config   
 
 
 
@@ -131,7 +131,7 @@ public MLWebRTC.ProxyType Type;
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.ProxyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-proxytype) | Protocol for the forward proxy.  |
+| [MLWebRTC.ProxyType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-proxytype) | Protocol for the forward proxy.  |
 
 
 

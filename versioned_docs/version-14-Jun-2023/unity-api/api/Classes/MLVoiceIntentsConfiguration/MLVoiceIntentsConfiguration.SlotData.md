@@ -9,7 +9,7 @@ summary: the slot data to be used in the customvoiceintents' value. to use a slo
 
 
 
-The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.   
+The Slot Data to be used in the [CustomVoiceIntents](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.   
 
 
 

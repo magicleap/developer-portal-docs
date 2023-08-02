@@ -5,7 +5,7 @@ title: MLInputCustomHaptics.MLInputCustomHapticsPattern
 
 # MLInputCustomHaptics.MLInputCustomHapticsPattern
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -15,8 +15,8 @@ title: MLInputCustomHaptics.MLInputCustomHapticsPattern
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) | **[buzz](/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md#mlinputbuzzcommand-buzz)**  |
-| [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) | **[pre_defined](/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md#mlinputpredefinedpattern-pre-defined)**  |
+| [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) | **[buzz](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md#mlinputbuzzcommand-buzz)**  |
+| [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) | **[pre_defined](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md#mlinputpredefinedpattern-pre-defined)**  |
 
 ## Detailed Description
 
@@ -44,7 +44,7 @@ MLInputBuzzCommand buzz;
 
 | Type | Description |
 |--|--|
-| [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) | A structure containing information about the Buzz command to be played.  |
+| [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) | A structure containing information about the Buzz command to be played.  |
 
 
 
@@ -63,7 +63,7 @@ MLInputPreDefinedPattern pre_defined;
 
 | Type | Description |
 |--|--|
-| [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) | A structure containing information about the Pre-Defined pattern to be played.  |
+| [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) | A structure containing information about the Pre-Defined pattern to be played.  |
 
 
 

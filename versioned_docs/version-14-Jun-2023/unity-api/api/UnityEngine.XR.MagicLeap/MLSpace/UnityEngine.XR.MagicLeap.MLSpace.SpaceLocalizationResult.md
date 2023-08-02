@@ -17,7 +17,7 @@ A structure containing information about the device's localization state. This s
 
 ## Public Methods
 
-### [SpaceLocalizationResult](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationResult.md) Create {#spacelocalizationresult-create}
+### [SpaceLocalizationResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationResult.md) Create {#spacelocalizationresult-create}
 
 Initialize default values for #MLSpaceLocalizationResult. 
 
@@ -55,7 +55,7 @@ public readonly Status LocalizationStatus;
 
 | Type | Description  | 
 |--|--|
-| readonly [Status](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md#enums-status) | The current localization status.  |
+| readonly [Status](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md#enums-status) | The current localization status.  |
 
 
 
@@ -65,7 +65,7 @@ public readonly Status LocalizationStatus;
 
 ### Space {#readonly-space}
 
-[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) information. If localized(#MLSpaceLocalizationStatus&#95;Localized) this will contain valid [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) information. If not localized this field should be ignored. 
+[Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) information. If localized(#MLSpaceLocalizationStatus&#95;Localized) this will contain valid [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) information. If not localized this field should be ignored. 
 
 ```csharp
 
@@ -75,7 +75,7 @@ public readonly Space Space;
 
 | Type | Description  | 
 |--|--|
-| readonly [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) | A structure containing information about a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceInit before use.  |
+| readonly [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) | A structure containing information about a Magic Leap [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceInit before use.  |
 
 
 

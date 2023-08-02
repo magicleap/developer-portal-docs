@@ -17,7 +17,7 @@ A collection of parameters to be used for localization request. This structure m
 
 ## Public Methods
 
-### [SpaceLocalizationInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationInfo.md) Create {#spacelocalizationinfo-create}
+### [SpaceLocalizationInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceLocalizationInfo.md) Create {#spacelocalizationinfo-create}
 
 Initializes the default values for localization info. 
 
@@ -45,7 +45,7 @@ public static SpaceLocalizationInfo Create(
 
 ### SpaceId {#mluuid-spaceid}
 
-#MLUUID of the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) into which the device attempts to localize into. 
+#MLUUID of the [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) into which the device attempts to localize into. 
 
 ```csharp
 

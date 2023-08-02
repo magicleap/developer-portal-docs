@@ -5,7 +5,7 @@ title: MLMediaRecorderOnInfo
 
 # MLMediaRecorderOnInfo
 
-**Module:** **[Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md)**
+**Module:** **[Media Recorder](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLMediaRecorderOnInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[track_id](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#uint32-t-track-id)**  |
-| [MLMediaRecorderInfo](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecorderinfo) | **[info](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlmediarecorderinfo-info)**  |
-| int | **[extra](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#int-extra)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#void-data)**  |
+| uint32_t | **[track_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#uint32-t-track-id)**  |
+| [MLMediaRecorderInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecorderinfo) | **[info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlmediarecorderinfo-info)**  |
+| int | **[extra](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#int-extra)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#void-data)**  |
 
 ## Public Attributes Documentation
 

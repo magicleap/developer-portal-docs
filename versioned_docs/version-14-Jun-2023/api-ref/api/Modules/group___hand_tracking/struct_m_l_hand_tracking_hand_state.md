@@ -6,7 +6,7 @@ summary: state of a single hand.
 
 # MLHandTrackingHandState
 
-**Module:** **[Hand Tracking](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md)**
+**Module:** **[Hand Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md)**
 
 
 
@@ -19,9 +19,9 @@ State of a single hand.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| bool | **[is_hand_detected](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md#bool-is-hand-detected)** <br></br>Specifies if the hand is detected.  |
-| float | **[hand_confidence](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md#float-hand-confidence)** <br></br>The confidence level of a hand is present in the scene.  |
-| bool[MLHandTrackingStaticData_MaxKeyPoints] | **[keypoints_mask](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md#bool-keypoints-mask)** <br></br>Mask indicates if a keypoint is present or not.  |
+| bool | **[is_hand_detected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md#bool-is-hand-detected)** <br></br>Specifies if the hand is detected.  |
+| float | **[hand_confidence](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md#float-hand-confidence)** <br></br>The confidence level of a hand is present in the scene.  |
+| bool[MLHandTrackingStaticData_MaxKeyPoints] | **[keypoints_mask](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_hand_state.md#bool-keypoints-mask)** <br></br>Mask indicates if a keypoint is present or not.  |
 
 ## Detailed Description
 

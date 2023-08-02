@@ -6,7 +6,7 @@ summary: mediaplayer track information.
 
 # MLMediaPlayerTrackInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ MediaPlayer Track Information.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md#uint32-t-version)**  |
-| [MLMediaPlayerTrackType](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) | **[track_type](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md#mlmediaplayertracktype-track-type)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md#uint32-t-version)**  |
+| [MLMediaPlayerTrackType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) | **[track_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md#mlmediaplayertracktype-track-type)**  |
 
 ## Detailed Description
 

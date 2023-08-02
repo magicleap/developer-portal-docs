@@ -20,13 +20,13 @@ using UnityEngine.XR.MagicLeap;
 
 ## Requirements
 
-Hand Tracking Requires developers to enable the Hand Tracking permissions in the Manifest Settings. To do this Go to **Edit > Project Settings > Magic Leap > Permissions** and enable `com.magicleap.permission.HAND_TRACKING`. For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
+Hand Tracking Requires developers to enable the Hand Tracking permissions in the Manifest Settings. To do this Go to **Edit > Project Settings > Magic Leap > Permissions** and enable `com.magicleap.permission.HAND_TRACKING`. For more information, refer to the [permissions guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md).
 
 ## See Also
 
-- [Hand Tracking API Overview](/docs/guides/unity/input/hand-tracking/unity-hand-tracking-api.md)
+- [Hand Tracking API Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/hand-tracking/unity-hand-tracking-api.md)
   - An overview of the core hand tracking API, including example scripts.
-- [Gesture Classification API Overview](docs/guides/unity/input/gesture-classification/unity-gesture-classification-overview.md)
+- [Gesture Classification API Overview](docs/versioned_docs/version-14-Jun-2023/guides/unity/input/gesture-classification/unity-gesture-classification-overview.md)
   - An overview of the gesture classification API, including example scripts.
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

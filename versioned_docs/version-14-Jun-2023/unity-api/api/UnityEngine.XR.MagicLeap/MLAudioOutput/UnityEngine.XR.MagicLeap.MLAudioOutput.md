@@ -9,13 +9,13 @@ summary: manages audio.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 Manages Audio.   
 
 
-Inherits from: <br></br>[MLAutoAPISingleton< MLAudioOutput >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
+Inherits from: <br></br>[MLAutoAPISingleton< MLAudioOutput >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
 
 
 
@@ -34,7 +34,7 @@ public static Device AudioOutputDevice { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) | The currently active output device.  |
+| [Device](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) | The currently active output device.  |
 
 
 
@@ -61,7 +61,7 @@ public static float MasterVolume { get; set; }
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetSoundBypassesMasterVolume {#mlresult-getsoundbypassesmastervolume}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetSoundBypassesMasterVolume {#mlresult-getsoundbypassesmastervolume}
 
 ```csharp
 public static MLResult GetSoundBypassesMasterVolume(
@@ -98,7 +98,7 @@ public delegate void MLAudioMediaEventDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MediaEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-mediaevent) |device|The new media event.|
+| [MediaEvent](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-mediaevent) |device|The new media event.|
 
 
 
@@ -122,7 +122,7 @@ public delegate void OnAudioOutputDeviceChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) |device|The new audio output device.|
+| [Device](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) |device|The new audio output device.|
 
 
 
@@ -155,7 +155,7 @@ public delegate void OnMasterVolumeChangedDelegate(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetSoundBypassesMasterVolume {#mlresult-setsoundbypassesmastervolume}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetSoundBypassesMasterVolume {#mlresult-setsoundbypassesmastervolume}
 
 ```csharp
 public static MLResult SetSoundBypassesMasterVolume(
@@ -181,7 +181,7 @@ public static MLResult SetSoundBypassesMasterVolume(
 
 ### StopAPI {#override-stopapi}
 
-Called by [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) on destruction 
+Called by [MLAutoAPISingleton](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) on destruction 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -197,7 +197,7 @@ protected virtual override MLResult.Code StopAPI()
 
 
 
-**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
+**Reimplements**: [StopAPI](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
 
 
 
@@ -214,7 +214,7 @@ protected virtual override void Update()
 
 
 
-**Reimplements**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
+**Reimplements**: [Update](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#void-update)
 
 
 
@@ -289,7 +289,7 @@ Possible channel formats for input and output streams.
 
 ### ChannelLayouts {#enums-channellayouts}
 
-Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)   composite of individual channel masks. 
+Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)   composite of individual channel masks. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

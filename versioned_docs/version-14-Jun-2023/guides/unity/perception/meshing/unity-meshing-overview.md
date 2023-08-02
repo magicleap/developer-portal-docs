@@ -38,5 +38,5 @@ Surfaces that are reflective or have little texture may not be detected properly
 
 - [`UnityEngine.XR.XRMeshSubsystem`](https://docs.unity3d.com/ScriptReference/XR.XRMeshSubsystem.html)
   - XRMeshSubsystem API to which Magic Leap provides it's meshing information.
-- [`UnityEngine.XR.MagicLeap.MeshingSubsystemComponent`](/docs/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md)
+- [`UnityEngine.XR.MagicLeap.MeshingSubsystemComponent`](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md)
   - API Reference for the MeshingSubsystemComponent.

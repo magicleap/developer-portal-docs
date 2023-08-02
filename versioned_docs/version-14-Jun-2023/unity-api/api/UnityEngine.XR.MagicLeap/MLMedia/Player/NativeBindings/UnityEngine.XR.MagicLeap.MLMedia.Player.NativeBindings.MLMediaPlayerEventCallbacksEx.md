@@ -17,7 +17,7 @@ Callbacks for notifying client about
 
 ## Public Methods
 
-### [MLMediaPlayerEventCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerEventCallbacksEx.md) Create {#mlmediaplayereventcallbacksex-create}
+### [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerEventCallbacksEx.md) Create {#mlmediaplayereventcallbacksex-create}
 
 Create and return an initialized version of this struct. 
 
@@ -50,7 +50,7 @@ public OnBufferingUpdateDelegate OnBufferingUpdate;
 
 | Type | Description  | 
 |--|--|
-| [OnBufferingUpdateDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onbufferingupdatedelegate) | Delegate for the the OnBufferingUpdate event.  |
+| [OnBufferingUpdateDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onbufferingupdatedelegate) | Delegate for the the OnBufferingUpdate event.  |
 
 
 
@@ -87,7 +87,7 @@ public OnErrorDelegate OnError;
 
 | Type | Description  | 
 |--|--|
-| [OnErrorDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onerrordelegate) | Delegate for the any OnError event.  |
+| [OnErrorDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onerrordelegate) | Delegate for the any OnError event.  |
 
 
 
@@ -124,7 +124,7 @@ public OnInfoDelegate OnInfo;
 
 | Type | Description  | 
 |--|--|
-| [OnInfoDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-oninfodelegate) | Delegate for the the OnInfo event.  |
+| [OnInfoDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-oninfodelegate) | Delegate for the the OnInfo event.  |
 
 
 
@@ -212,7 +212,7 @@ public OnVideoSizeChangedDelegate OnVideoSizeChanged;
 
 | Type | Description  | 
 |--|--|
-| [OnVideoSizeChangedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onvideosizechangeddelegate) | Delegate for the any OnVideoSizeChanged event.  |
+| [OnVideoSizeChangedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onvideosizechangeddelegate) | Delegate for the any OnVideoSizeChanged event.  |
 
 
 

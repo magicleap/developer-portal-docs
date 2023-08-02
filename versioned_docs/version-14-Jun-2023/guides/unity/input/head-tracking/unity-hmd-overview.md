@@ -19,12 +19,12 @@ The Magic Leap 2's Head Mounted Display input is separated into two parts:
 2. Device specific input such as Mapping and Head Tracking State events can be accessed using Magic Leap's `InputSubsystem.Extensions`.
 
 :::info
-Map Events are now exposed and can be accessed using[`MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvents);`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
+Map Events are now exposed and can be accessed using[`MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvents);`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
 :::
 
 ## See also
 
-- [Tracked Pose Driver](/docs/guides/unity/input/head-tracking/tracked-pose-driver-hmd.md)
+- [Tracked Pose Driver](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/head-tracking/tracked-pose-driver-hmd.md)
   - An easy way to access the HMD's positional and rotational input.
-- [Porting Guide](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
+- [Porting Guide](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
   - Learn how to access the Magic Leap's Head Tracking state and mapping events.

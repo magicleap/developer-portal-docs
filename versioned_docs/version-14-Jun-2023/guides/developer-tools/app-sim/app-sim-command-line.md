@@ -10,7 +10,7 @@ keywords: [Application Simulator, Command Line]
 You can activate Application Simulator functions to iterate on the device using command line tools.
 
 :::tip
-For additional information on using Application Simulator on the command line with Native applications, reference the [C/C++ Apps section of the Using Application Simulator Guide](/docs/guides/developer-tools/app-sim/using-app-sim.md#cc-apps-and-custom-engines).
+For additional information on using Application Simulator on the command line with Native applications, reference the [C/C++ Apps section of the Using Application Simulator Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/using-app-sim.md#cc-apps-and-custom-engines).
 :::
 
 These are some of the most common VDCLI commands. For a full list of commands, type `VDCLI --help` on the command line.
@@ -36,7 +36,7 @@ source $USER/MagicLeap/tools/zi/<latest-app-sim-version>/mlvdsetup.sh
 
 Your device must be connected to the host with a USB cable.
 
-1. Open a terminal from the [ML Hub](/docs/guides/developer-tools/ml-hub/magic-leap-hub.md) by opening the Activity bar and clicking the terminal icon at the bottom. Use this terminal to enter commands.
+1. Open a terminal from the [ML Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/magic-leap-hub.md) by opening the Activity bar and clicking the terminal icon at the bottom. Use this terminal to enter commands.
 
 2. Start the Application Simulator Server.
 

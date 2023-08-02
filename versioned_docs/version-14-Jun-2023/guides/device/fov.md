@@ -17,7 +17,7 @@ This document details the devices felid of view as well as the field of view of 
 
 ## Display FOV
 
-The Magic Leap 2 display Field of View (FOV) is **45°H x 55°V (70°D)** but this may be significantly smaller if the user is not in the correct device fit. See [Headset Fit](/docs/guides/features/eye-tracking/headset-fit.md) for more information.
+The Magic Leap 2 display Field of View (FOV) is **45°H x 55°V (70°D)** but this may be significantly smaller if the user is not in the correct device fit. See [Headset Fit](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/eye-tracking/headset-fit.md) for more information.
 
 <Image url= {require("/img/human-interface-guidelines/Viewing-Distance-Illustration.png")} >Distance illustration</Image>
 

@@ -12,15 +12,15 @@ tags: [Unity, Examples, Samples, XR Interaction Toolkit, Hand, Tracking, Gesture
 
 - Unity Editor 2022.2
 - Magic Leap XR Package 7.0.0-preview
-- Latest `MagicLeap.unitypackage` (installable via the [App Sim](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md))
+- Latest `MagicLeap.unitypackage` (installable via the [App Sim](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md))
 
 ## Project Setup
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [Examples Project Install Guide](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [Examples Project Install Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
-1. Follow our [Unity Getting Started Guides](/docs/guides/unity/getting-started/unity-getting-started.md) to set up your development environment and ensure Unity is configured correctly.
+1. Follow our [Unity Getting Started Guides](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/unity-getting-started.md) to set up your development environment and ensure Unity is configured correctly.
 2. When you import the Magic Leap Unity Package, you'll see the **GestureClassification Example scene** located under *MagicLeap/Examples/Scenes*.
 3. Go to **Edit > Project Settings > Magic Leap > Manifest Settings** and enable permissions for **Hand_Tracking**.
 4. Add the GestureClassification scene to the list of scenes to build, build the APK, and install to the device.
@@ -33,4 +33,4 @@ While the app is running, if Gestures are used, the user must have visible hands
 
 ## Additional Info
 
-Refer to the [Gesture Classification API](docs/guides/unity/input/gesture-classification/unity-gesture-classification-overview.md) for more information.
+Refer to the [Gesture Classification API](docs/versioned_docs/version-14-Jun-2023/guides/unity/input/gesture-classification/unity-gesture-classification-overview.md) for more information.

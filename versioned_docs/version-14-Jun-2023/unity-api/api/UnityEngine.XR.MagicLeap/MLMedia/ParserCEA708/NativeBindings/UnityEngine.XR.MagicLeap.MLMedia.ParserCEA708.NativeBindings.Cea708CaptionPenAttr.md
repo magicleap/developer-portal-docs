@@ -80,7 +80,7 @@ public Cea708CaptionPenOffset PenOffset;
 
 | Type | Description  | 
 |--|--|
-| [Cea708CaptionPenOffset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpenoffset) | CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+| [Cea708CaptionPenOffset](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpenoffset) | CEA708 Caption Pen Offset constants.  MLCea708CaptionPenOffset  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 
@@ -100,7 +100,7 @@ public Cea708CaptionPenSize PenSize;
 
 | Type | Description  | 
 |--|--|
-| [Cea708CaptionPenSize](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpensize) | CEA708 Caption Pen Size constants.  MLCea708CaptionPenSize  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+| [Cea708CaptionPenSize](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionpensize) | CEA708 Caption Pen Size constants.  MLCea708CaptionPenSize  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 

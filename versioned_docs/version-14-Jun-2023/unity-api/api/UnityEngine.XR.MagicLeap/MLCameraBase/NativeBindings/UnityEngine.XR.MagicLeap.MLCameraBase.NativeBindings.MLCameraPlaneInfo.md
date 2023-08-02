@@ -17,7 +17,7 @@ Per plane info for captured output
 
 ## Public Methods
 
-### [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) Create {#mlcameraplaneinfo-create}
+### [MLCameraPlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) Create {#mlcameraplaneinfo-create}
 
 Create and return an initialized version of this struct. 
 
@@ -36,7 +36,7 @@ public static MLCameraPlaneInfo Create()
 
 -----------
 
-### [MLCamera.PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) CreatePlaneInfo {#mlcameraplaneinfo-createplaneinfo}
+### [MLCamera.PlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) CreatePlaneInfo {#mlcameraplaneinfo-createplaneinfo}
 
 ```csharp
 public MLCamera.PlaneInfo CreatePlaneInfo(

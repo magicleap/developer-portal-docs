@@ -33,7 +33,7 @@ public static void RegisterInputLayouts()
 
 ### CalibrationStatus {#enums-calibrationstatus}
 
-Enum representing the eye calibration status for a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) headset. For use with IntegerControl MagicLeapEyes.eyeCalibrationStatus 
+Enum representing the eye calibration status for a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) headset. For use with IntegerControl MagicLeapEyes.eyeCalibrationStatus 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -72,7 +72,7 @@ Enum representing the current controller calibration accuracy For use with Magic
 
 ### ControllerDoF {#enums-controllerdof}
 
-Enum representing the eye calibration status for a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) headset. For use with MagicLeapController.dof IntegerControl 
+Enum representing the eye calibration status for a [MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) headset. For use with MagicLeapController.dof IntegerControl 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -91,7 +91,7 @@ Enum representing the eye calibration status for a [MagicLeap](/unity-api/api/Un
 
 ### ControllerType {#enums-controllertype}
 
-Enum representing the type of Magic Leap [Controller](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md) being used. For use with MagicLeapController.type IntegerControl 
+Enum representing the type of Magic Leap [Controller](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md) being used. For use with MagicLeapController.type IntegerControl 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

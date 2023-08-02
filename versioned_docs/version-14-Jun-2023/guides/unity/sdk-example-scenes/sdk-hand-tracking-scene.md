@@ -21,7 +21,7 @@ When both hands perform the same key pose, the image will spin.
 In addition to this, as you examine your hands, you will see various key points.
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [Examples Project Install Guide](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [Examples Project Install Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
 ## Requirements
@@ -49,7 +49,7 @@ Gestures are in the **Gesture Classification API**, not in **HandTracking**.
 
 ### Project Setup
 
-1. Follow the steps given in the [Examples Project Install Guide](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md) to setup the Unity project.
+1. Follow the steps given in the [Examples Project Install Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md) to setup the Unity project.
 
 2. When you import the **Magic Leap Unity Package** from the above mentioned link, you'll see the **HandTracking Example** scene located in **MagicLeap/Examples/Scenes**.
 

@@ -6,7 +6,7 @@ summary: the clip extents parameters.
 
 # MLGraphicsClipExtentsParams
 
-**Module:** **[Graphics](/api-ref/api/Modules/group___graphics/group___graphics.md)**
+**Module:** **[Graphics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md)**
 
 
 
@@ -19,7 +19,7 @@ The clip extents parameters.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md#uint32-t-version)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md#uint32-t-version)**  |
 
 ## Detailed Description
 
@@ -29,7 +29,7 @@ struct MLGraphicsClipExtentsParams;
 
 The clip extents parameters. 
 
-The parameters defined by [MLGraphicsClipExtentsParams](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) are supplied to [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex) from the client to define the requested characteristics of the clip extents.
+The parameters defined by [MLGraphicsClipExtentsParams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_params.md) are supplied to [MLGraphicsGetClipExtentsEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex) from the client to define the requested characteristics of the clip extents.
 
 
 

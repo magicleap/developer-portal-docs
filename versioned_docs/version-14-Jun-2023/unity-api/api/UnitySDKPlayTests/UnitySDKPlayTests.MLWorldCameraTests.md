@@ -8,7 +8,7 @@ title: MLWorldCameraTests
 
 
 **NameSpace:** 
-[UnitySDKPlayTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.md) 
+[UnitySDKPlayTests](/versioned_docs/version-14-Jun-2023/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.md) 
 
 
 
@@ -85,8 +85,8 @@ public void MLWorldCamera_UpdateSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWorldCamera.Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) |mode|Enumeration of world camera modes. |
-| [MLWorldCamera.CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) |cameraId|Enumeration of all the available world camera sensors. |
+| [MLWorldCamera.Mode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) |mode|Enumeration of world camera modes. |
+| [MLWorldCamera.CameraId](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) |cameraId|Enumeration of all the available world camera sensors. |
 
 
 

@@ -49,5 +49,5 @@ Surfaces that are reflective or have little texture may not be detected properly
 
 ## See also
 
-- [`UnityEngine.XR.MagicLeap.MeshingSubsystemComponent`](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md)
+- [`UnityEngine.XR.MagicLeap.MeshingSubsystemComponent`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md)
   - API Reference for the MeshingSubsystemComponent.

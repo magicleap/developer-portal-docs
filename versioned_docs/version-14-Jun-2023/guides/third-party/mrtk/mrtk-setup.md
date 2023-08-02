@@ -22,7 +22,7 @@ keywords: [Unity,Samples, MRTK, Input, UI]
 - Magic Leap SDK
 - MRTK Foundations v2.8 (see [Import MRTK](#import-mrtk) section below)
 - MRTK Examples v2.8 (see [Import MRTK](#import-mrtk) section below)
-- A [configured Magic Leap 2 Unity project](/docs/guides/unity/getting-started/configure-unity-settings.md)
+- A [configured Magic Leap 2 Unity project](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md)
 
 ## Getting Started
 

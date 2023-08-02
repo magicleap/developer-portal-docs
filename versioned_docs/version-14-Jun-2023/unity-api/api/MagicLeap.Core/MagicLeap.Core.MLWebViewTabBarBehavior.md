@@ -8,7 +8,7 @@ title: MLWebViewTabBarBehavior
 
 
 **NameSpace:** 
-[Core](/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
+[Core](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
 
 
 
@@ -53,7 +53,7 @@ public void CreatePopupTab(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |popupWebView|API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
+| [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |popupWebView|API for [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
 | ulong |popupID||
 | string |url||
 
@@ -90,7 +90,7 @@ public void DestroyCurrentTab()
 
 -----------
 
-### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) [] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
+### [MLWebViewTabBehavior](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) [] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
 
 ```csharp
 public MLWebViewTabBehavior [] GetAllTabs()
@@ -103,7 +103,7 @@ public MLWebViewTabBehavior [] GetAllTabs()
 
 -----------
 
-### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) GetTab {#mlwebviewtabbehavior-gettab}
+### [MLWebViewTabBehavior](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) GetTab {#mlwebviewtabbehavior-gettab}
 
 ```csharp
 public MLWebViewTabBehavior GetTab(
@@ -116,7 +116,7 @@ public MLWebViewTabBehavior GetTab(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
+| [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|API for [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
 
 
 
@@ -138,7 +138,7 @@ public void SelectTab(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) |tab||
+| [MLWebViewTabBehavior](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) |tab||
 
 
 

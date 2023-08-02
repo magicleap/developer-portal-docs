@@ -25,7 +25,7 @@ The scene provides several examples of changing the way rendering and physics in
 ## Project Setup
 
 :::tip
-Follow the [SDK Examples Project Setup page](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md) for steps on how to open the SDK Examples Project and build the Meshing example scene, located under `Assets/MagicLeap/Examples/Scenes/Meshing.unity`.
+Follow the [SDK Examples Project Setup page](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md) for steps on how to open the SDK Examples Project and build the Meshing example scene, located under `Assets/MagicLeap/Examples/Scenes/Meshing.unity`.
 :::
 
 ### Requirements
@@ -50,7 +50,7 @@ The example Meshing scene has the following layout. If you are starting from scr
 
 ### XR Rig
 
-Like all other example scenes, this scene utilizes the **XR Rig prefab** which is available within the [Magic Leap Unity SDK Package](/docs/guides/unity/getting-started/configure-unity-settings.md). It provides both the Main Camera and Controller objects (among other important AR Session components).
+Like all other example scenes, this scene utilizes the **XR Rig prefab** which is available within the [Magic Leap Unity SDK Package](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md). It provides both the Main Camera and Controller objects (among other important AR Session components).
 
 ### Meshing Example
 

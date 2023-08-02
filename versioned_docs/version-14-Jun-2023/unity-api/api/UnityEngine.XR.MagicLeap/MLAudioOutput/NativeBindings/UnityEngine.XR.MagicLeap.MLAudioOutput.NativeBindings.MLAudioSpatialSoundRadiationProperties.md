@@ -30,7 +30,7 @@ public MLAudioSpatialSoundRadiationProperties(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [SpatialSound.RadiationProperties](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.RadiationProperties.md) |radiationProperties|Properties specifying the directivity of a spatial sound. |
+| [SpatialSound.RadiationProperties](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.RadiationProperties.md) |radiationProperties|Properties specifying the directivity of a spatial sound. |
 
 
 

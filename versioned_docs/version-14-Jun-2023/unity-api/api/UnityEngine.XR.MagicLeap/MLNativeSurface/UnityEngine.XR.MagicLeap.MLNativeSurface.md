@@ -8,7 +8,7 @@ title: MLNativeSurface
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
@@ -36,7 +36,7 @@ public ulong Handle { get; set; }
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AcquireNextAvailableFrame {#mlresult-acquirenextavailableframe}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AcquireNextAvailableFrame {#mlresult-acquirenextavailableframe}
 
 ```csharp
 public MLResult AcquireNextAvailableFrame(
@@ -58,7 +58,7 @@ public MLResult AcquireNextAvailableFrame(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Destroy {#mlresult-destroy}
 
 ```csharp
 public MLResult Destroy()
@@ -71,7 +71,7 @@ public MLResult Destroy()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameNumber {#mlresult-getframenumber}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameNumber {#mlresult-getframenumber}
 
 ```csharp
 public MLResult GetFrameNumber(
@@ -93,7 +93,7 @@ public MLResult GetFrameNumber(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameQueueBufferTimestamp {#mlresult-getframequeuebuffertimestamp}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameQueueBufferTimestamp {#mlresult-getframequeuebuffertimestamp}
 
 ```csharp
 public MLResult GetFrameQueueBufferTimestamp(
@@ -115,7 +115,7 @@ public MLResult GetFrameQueueBufferTimestamp(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTimestamp {#mlresult-getframetimestamp}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTimestamp {#mlresult-getframetimestamp}
 
 ```csharp
 public MLResult GetFrameTimestamp(
@@ -137,7 +137,7 @@ public MLResult GetFrameTimestamp(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTransformMatrix {#mlresult-getframetransformmatrix}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetFrameTransformMatrix {#mlresult-getframetransformmatrix}
 
 ```csharp
 public MLResult GetFrameTransformMatrix(
@@ -175,7 +175,7 @@ public MLNativeSurface(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PixelFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md#enums-pixelformat) |pixelFormat||
+| [PixelFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md#enums-pixelformat) |pixelFormat||
 | ushort |bufferCount||
 | uint |width||
 | uint |height||
@@ -189,7 +189,7 @@ public MLNativeSurface(
 
 ###  MLNativeSurface {#functions-mlnativesurface}
 
-For externally owned native surface, like in the case of [MLMediaRecorder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md)
+For externally owned native surface, like in the case of [MLMediaRecorder](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md)
 
 ```csharp
 public MLNativeSurface(
@@ -224,7 +224,7 @@ public delegate void OnFrameAvailableDelegate()
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ReleaseFrame {#mlresult-releaseframe}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ReleaseFrame {#mlresult-releaseframe}
 
 ```csharp
 public MLResult ReleaseFrame(

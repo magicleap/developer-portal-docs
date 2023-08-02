@@ -61,7 +61,7 @@ public readonly Behavior Behavior;
 
 | Type | Description  | 
 |--|--|
-| readonly [Behavior](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-behavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
+| readonly [Behavior](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-behavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
 
 
 
@@ -115,7 +115,7 @@ public readonly Error Error;
 
 | Type | Description  | 
 |--|--|
-| readonly [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-error) | A set of possible error codes that the Gaze Recognition system can report.  |
+| readonly [Error](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#enums-error) | A set of possible error codes that the Gaze Recognition system can report.  |
 
 
 
@@ -186,7 +186,7 @@ public readonly MLTime TimeStamp;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
+| readonly [MLTime](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
 
 
 

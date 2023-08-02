@@ -7,11 +7,11 @@ tags: [Android Debug Bridge, ADB, Command Line, Capture, Screenshot, Video, Phot
 keywords: [Android Debug Bridge, ADB, Command Line, Capture, Screenshot, Video, Photo]
 ---
 
-Here are some commands used in ADB specifically pertaining to the [Capture](/docs/guides/features/capture-overview.md) functionality and downloading on-device screenshots and video/audio recordings.
+Here are some commands used in ADB specifically pertaining to the [Capture](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/capture-overview.md) functionality and downloading on-device screenshots and video/audio recordings.
 
-For instructions on how to install and use adb, follow the [ADB Setup Guide](/docs/guides/developer-tools/android-debug-bridge/adb-setup.md).
+For instructions on how to install and use adb, follow the [ADB Setup Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-setup.md).
 
-For other general use commands, please reference the [ADB  Commands](/docs/guides/developer-tools/android-debug-bridge/adb-commands.md) page.
+For other general use commands, please reference the [ADB  Commands](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-commands.md) page.
 
 :::note
 If you're trying to capture a stock Android app (e.g., the MDM app), use `adb shell screencap` for a screenshot, as per the standard Android way. `adb shell screenrecord` (for screencasts) is not available on our platform.

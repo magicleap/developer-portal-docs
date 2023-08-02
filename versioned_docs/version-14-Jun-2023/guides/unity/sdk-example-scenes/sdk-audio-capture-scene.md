@@ -14,7 +14,7 @@ tags: [Unity, Examples, Samples, Input, XR Interaction Toolkit, Audio, Microphon
 This example demonstrates the functionality of using the microphone for audio recording and playback through the device speakers. Once audio capture has started, the parrot in the scene will repeat what the microphone detects. The spatial audio playback will come from the location of the parrot.
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
 ## Options

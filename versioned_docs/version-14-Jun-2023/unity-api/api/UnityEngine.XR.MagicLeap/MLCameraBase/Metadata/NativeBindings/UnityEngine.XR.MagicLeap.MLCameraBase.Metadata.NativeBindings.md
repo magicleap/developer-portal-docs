@@ -12,14 +12,14 @@ summary: see ml-camera-metadata-v2.h for additional comments.
 See ml&#95;camera&#95;metadata&#95;v2.h for additional comments.   
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetAFDistanceRangeRequestMetadata {#mlresultcode-mlcamerametadatagetafdistancerangerequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetAFDistanceRangeRequestMetadata {#mlresultcode-mlcamerametadatagetafdistancerangerequestmetadata}
 
 Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api MLCameraMetadataGetLensInfoHyperfocalDistance. 
 
@@ -45,7 +45,7 @@ public MLResult.Code MLCameraMetadataGetAFDistanceRangeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetAFDistanceRangeResultMetadata {#mlresultcode-mlcamerametadatagetafdistancerangeresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetAFDistanceRangeResultMetadata {#mlresultcode-mlcamerametadatagetafdistancerangeresultmetadata}
 
 Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api MLCameraMetadataGetLensInfoHyperfocalDistance. 
 
@@ -71,7 +71,7 @@ public MLResult.Code MLCameraMetadataGetAFDistanceRangeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionAberrationModeRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionaberrationmoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionAberrationModeRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionaberrationmoderequestmetadata}
 
 Gets color correction aberration. 
 
@@ -88,7 +88,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionAberrationModeRequestMeta
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ColorCorrectionAberrationMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode) |OutData||
+| out [ColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode) |OutData||
 
 
 
@@ -97,7 +97,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionAberrationModeRequestMeta
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionAberrationModeResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionaberrationmoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionAberrationModeResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionaberrationmoderesultmetadata}
 
 Gets color correction aberration. 
 
@@ -114,7 +114,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionAberrationModeResultMetad
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ColorCorrectionAberrationMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode) |OutData||
+| out [ColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode) |OutData||
 
 
 
@@ -123,7 +123,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionAberrationModeResultMetad
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionAvailableAberrationModes {#mlresultcode-mlcamerametadatagetcolorcorrectionavailableaberrationmodes}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionAvailableAberrationModes {#mlresultcode-mlcamerametadatagetcolorcorrectionavailableaberrationmodes}
 
 Gets color correction aberration modes. 
 
@@ -151,7 +151,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionAvailableAberrationModes(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionGainsRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiongainsrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionGainsRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiongainsrequestmetadata}
 
 Gets color correction gains. 
 
@@ -177,7 +177,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionGainsRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionGainsResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiongainsresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionGainsResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiongainsresultmetadata}
 
 Gets color correction gains. 
 
@@ -203,7 +203,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionGainsResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionModeRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionmoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionModeRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionmoderequestmetadata}
 
 Gets color correction mode. 
 
@@ -220,7 +220,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ColorCorrectionMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionmode) |OutData||
+| out [ColorCorrectionMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionmode) |OutData||
 
 
 
@@ -229,7 +229,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionModeResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionmoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionModeResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectionmoderesultmetadata}
 
 Gets color correction. 
 
@@ -246,7 +246,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ColorCorrectionMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionmode) |OutData||
+| out [ColorCorrectionMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionmode) |OutData||
 
 
 
@@ -255,7 +255,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionTransformRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiontransformrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionTransformRequestMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiontransformrequestmetadata}
 
 Gets color correction transform. 
 
@@ -281,7 +281,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionTransformRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionTransformResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiontransformresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetColorCorrectionTransformResultMetadata {#mlresultcode-mlcamerametadatagetcolorcorrectiontransformresultmetadata}
 
 Gets color correction transform. 
 
@@ -307,7 +307,7 @@ public MLResult.Code MLCameraMetadataGetColorCorrectionTransformResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEAntibandingModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaeantibandingmoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEAntibandingModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaeantibandingmoderequestmetadata}
 
 Gets AE antibanding mode. 
 
@@ -324,7 +324,7 @@ public MLResult.Code MLCameraMetadataGetControlAEAntibandingModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAEAntibandingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaeantibandingmode) |OutData||
+| out [ControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaeantibandingmode) |OutData||
 
 
 
@@ -333,7 +333,7 @@ public MLResult.Code MLCameraMetadataGetControlAEAntibandingModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEAntibandingModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaeantibandingmoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEAntibandingModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaeantibandingmoderesultmetadata}
 
 Gets AE antibanding mode. 
 
@@ -350,7 +350,7 @@ public MLResult.Code MLCameraMetadataGetControlAEAntibandingModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAEAntibandingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaeantibandingmode) |OutData||
+| out [ControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaeantibandingmode) |OutData||
 
 
 
@@ -359,7 +359,7 @@ public MLResult.Code MLCameraMetadataGetControlAEAntibandingModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEAvailableModes {#mlresultcode-mlcamerametadatagetcontrolaeavailablemodes}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEAvailableModes {#mlresultcode-mlcamerametadatagetcontrolaeavailablemodes}
 
 Gets AE modes. 
 
@@ -377,7 +377,7 @@ public MLResult.Code MLCameraMetadataGetControlAEAvailableModes(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAEMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) [] |OutData||
+| out [ControlAEMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) [] |OutData||
 | out int |OutCount||
 
 
@@ -387,7 +387,7 @@ public MLResult.Code MLCameraMetadataGetControlAEAvailableModes(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAECompensationRange {#mlresultcode-mlcamerametadatagetcontrolaecompensationrange}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAECompensationRange {#mlresultcode-mlcamerametadatagetcontrolaecompensationrange}
 
 Gets AE compensation range. 
 
@@ -413,7 +413,7 @@ public MLResult.Code MLCameraMetadataGetControlAECompensationRange(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAECompensationStep {#mlresultcode-mlcamerametadatagetcontrolaecompensationstep}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAECompensationStep {#mlresultcode-mlcamerametadatagetcontrolaecompensationstep}
 
 Gets AE compensation step. 
 
@@ -439,7 +439,7 @@ public MLResult.Code MLCameraMetadataGetControlAECompensationStep(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEExposureCompensationRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaeexposurecompensationrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEExposureCompensationRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaeexposurecompensationrequestmetadata}
 
 Gets AE exposure compensation. 
 
@@ -465,7 +465,7 @@ public MLResult.Code MLCameraMetadataGetControlAEExposureCompensationRequestMeta
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEExposureCompensationResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaeexposurecompensationresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEExposureCompensationResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaeexposurecompensationresultmetadata}
 
 Gets AE exposure compensation. 
 
@@ -491,7 +491,7 @@ public MLResult.Code MLCameraMetadataGetControlAEExposureCompensationResultMetad
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAELockAvailable {#mlresultcode-mlcamerametadatagetcontrolaelockavailable}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAELockAvailable {#mlresultcode-mlcamerametadatagetcontrolaelockavailable}
 
 Gets AE lock. 
 
@@ -508,7 +508,7 @@ public MLResult.Code MLCameraMetadataGetControlAELockAvailable(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAELock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |OutData||
+| out [ControlAELock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |OutData||
 
 
 
@@ -517,7 +517,7 @@ public MLResult.Code MLCameraMetadataGetControlAELockAvailable(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAELockRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaelockrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAELockRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaelockrequestmetadata}
 
 Gets AE lock. 
 
@@ -534,7 +534,7 @@ public MLResult.Code MLCameraMetadataGetControlAELockRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAELock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |OutData||
+| out [ControlAELock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |OutData||
 
 
 
@@ -543,7 +543,7 @@ public MLResult.Code MLCameraMetadataGetControlAELockRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAELockResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaelockresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAELockResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaelockresultmetadata}
 
 Gets AE lock. 
 
@@ -560,7 +560,7 @@ public MLResult.Code MLCameraMetadataGetControlAELockResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAELock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |OutData||
+| out [ControlAELock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |OutData||
 
 
 
@@ -569,7 +569,7 @@ public MLResult.Code MLCameraMetadataGetControlAELockResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEMaxRegions {#mlresultcode-mlcamerametadatagetcontrolaemaxregions}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEMaxRegions {#mlresultcode-mlcamerametadatagetcontrolaemaxregions}
 
 Gets AE Max Regions. 
 
@@ -595,7 +595,7 @@ public MLResult.Code MLCameraMetadataGetControlAEMaxRegions(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaemoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaemoderequestmetadata}
 
 Gets AE mode. 
 
@@ -612,7 +612,7 @@ public MLResult.Code MLCameraMetadataGetControlAEModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAEMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) |OutData||
+| out [ControlAEMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) |OutData||
 
 
 
@@ -621,7 +621,7 @@ public MLResult.Code MLCameraMetadataGetControlAEModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaemoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaemoderesultmetadata}
 
 Gets AE mode. 
 
@@ -638,7 +638,7 @@ public MLResult.Code MLCameraMetadataGetControlAEModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAEMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) |OutData||
+| out [ControlAEMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) |OutData||
 
 
 
@@ -647,7 +647,7 @@ public MLResult.Code MLCameraMetadataGetControlAEModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAERegionsRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaeregionsrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAERegionsRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaeregionsrequestmetadata}
 
 Gets AE regions. 
 
@@ -675,7 +675,7 @@ public MLResult.Code MLCameraMetadataGetControlAERegionsRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAERegionsResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaeregionsresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAERegionsResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaeregionsresultmetadata}
 
 Gets AE regions. 
 
@@ -703,7 +703,7 @@ public MLResult.Code MLCameraMetadataGetControlAERegionsResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEStateResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaestateresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAEStateResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaestateresultmetadata}
 
 Gets AE state. 
 
@@ -720,7 +720,7 @@ public MLResult.Code MLCameraMetadataGetControlAEStateResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAEState](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaestate) |OutData||
+| out [ControlAEState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaestate) |OutData||
 
 
 
@@ -729,7 +729,7 @@ public MLResult.Code MLCameraMetadataGetControlAEStateResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAETargetFPSRangeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaetargetfpsrangeresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAETargetFPSRangeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaetargetfpsrangeresultmetadata}
 
 Gets AE target FPS range. 
 
@@ -755,7 +755,7 @@ public MLResult.Code MLCameraMetadataGetControlAETargetFPSRangeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFAvailableModes {#mlresultcode-mlcamerametadatagetcontrolafavailablemodes}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFAvailableModes {#mlresultcode-mlcamerametadatagetcontrolafavailablemodes}
 
 Gets AF modes 
 
@@ -773,7 +773,7 @@ public MLResult.Code MLCameraMetadataGetControlAFAvailableModes(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAFMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) [] |OutData|The current auto-focus (AF) mode controls. |
+| out [ControlAFMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) [] |OutData|The current auto-focus (AF) mode controls. |
 | out int |OutCount||
 
 
@@ -783,7 +783,7 @@ public MLResult.Code MLCameraMetadataGetControlAFAvailableModes(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolafmoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolafmoderequestmetadata}
 
 Gets AF mode 
 
@@ -800,7 +800,7 @@ public MLResult.Code MLCameraMetadataGetControlAFModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAFMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) |OutData|The current auto-focus (AF) mode controls. |
+| out [ControlAFMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) |OutData|The current auto-focus (AF) mode controls. |
 
 
 
@@ -809,7 +809,7 @@ public MLResult.Code MLCameraMetadataGetControlAFModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolafmoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolafmoderesultmetadata}
 
 Gets AF mode 
 
@@ -826,7 +826,7 @@ public MLResult.Code MLCameraMetadataGetControlAFModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAFMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) |OutData|The current auto-focus (AF) mode controls. |
+| out [ControlAFMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) |OutData|The current auto-focus (AF) mode controls. |
 
 
 
@@ -835,7 +835,7 @@ public MLResult.Code MLCameraMetadataGetControlAFModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFSceneChangeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolafscenechangeresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFSceneChangeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolafscenechangeresultmetadata}
 
 Gets AF scene change detection status 
 
@@ -852,7 +852,7 @@ public MLResult.Code MLCameraMetadataGetControlAFSceneChangeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAFSceneChange](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafscenechange) |OutData|Whether a significant scene change is detected by AF algorithm. |
+| out [ControlAFSceneChange](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafscenechange) |OutData|Whether a significant scene change is detected by AF algorithm. |
 
 
 
@@ -861,7 +861,7 @@ public MLResult.Code MLCameraMetadataGetControlAFSceneChangeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFStateResultMetadata {#mlresultcode-mlcamerametadatagetcontrolafstateresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFStateResultMetadata {#mlresultcode-mlcamerametadatagetcontrolafstateresultmetadata}
 
 Gets AF state 
 
@@ -878,7 +878,7 @@ public MLResult.Code MLCameraMetadataGetControlAFStateResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAFState](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafstate) |OutData|Current state of auto-focus (AF) routine. |
+| out [ControlAFState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafstate) |OutData|Current state of auto-focus (AF) routine. |
 
 
 
@@ -887,7 +887,7 @@ public MLResult.Code MLCameraMetadataGetControlAFStateResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFTriggerRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaftriggerrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFTriggerRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolaftriggerrequestmetadata}
 
 Gets AF trigger 
 
@@ -904,7 +904,7 @@ public MLResult.Code MLCameraMetadataGetControlAFTriggerRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAFTrigger](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaftrigger) |OutData|The current auto-focus (AF) trigger. |
+| out [ControlAFTrigger](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaftrigger) |OutData|The current auto-focus (AF) trigger. |
 
 
 
@@ -913,7 +913,7 @@ public MLResult.Code MLCameraMetadataGetControlAFTriggerRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFTriggerResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaftriggerresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAFTriggerResultMetadata {#mlresultcode-mlcamerametadatagetcontrolaftriggerresultmetadata}
 
 Gets AF trigger 
 
@@ -930,7 +930,7 @@ public MLResult.Code MLCameraMetadataGetControlAFTriggerResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAFTrigger](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaftrigger) |OutData|The current auto-focus (AF) trigger. |
+| out [ControlAFTrigger](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaftrigger) |OutData|The current auto-focus (AF) trigger. |
 
 
 
@@ -939,7 +939,7 @@ public MLResult.Code MLCameraMetadataGetControlAFTriggerResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBAvailableModes {#mlresultcode-mlcamerametadatagetcontrolawbavailablemodes}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBAvailableModes {#mlresultcode-mlcamerametadatagetcontrolawbavailablemodes}
 
 Gets AWB modes. 
 
@@ -957,7 +957,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBAvailableModes(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAWBMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) [] |OutData||
+| out [ControlAWBMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) [] |OutData||
 | out int |OutCount||
 
 
@@ -967,7 +967,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBAvailableModes(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBLockAvailable {#mlresultcode-mlcamerametadatagetcontrolawblockavailable}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBLockAvailable {#mlresultcode-mlcamerametadatagetcontrolawblockavailable}
 
 Gets AWB lock. 
 
@@ -984,7 +984,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBLockAvailable(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAWBLock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |OutData||
+| out [ControlAWBLock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |OutData||
 
 
 
@@ -993,7 +993,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBLockAvailable(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBLockRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolawblockrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBLockRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolawblockrequestmetadata}
 
 Gets AWB lock. 
 
@@ -1010,7 +1010,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBLockRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAWBLock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |OutData||
+| out [ControlAWBLock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |OutData||
 
 
 
@@ -1019,7 +1019,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBLockRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBLockResultMetadata {#mlresultcode-mlcamerametadatagetcontrolawblockresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBLockResultMetadata {#mlresultcode-mlcamerametadatagetcontrolawblockresultmetadata}
 
 Gets AWB lock. 
 
@@ -1036,7 +1036,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBLockResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAWBLock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |OutData||
+| out [ControlAWBLock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |OutData||
 
 
 
@@ -1045,7 +1045,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBLockResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolawbmoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolawbmoderequestmetadata}
 
 Gets AWB mode. 
 
@@ -1062,7 +1062,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAWBMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) |OutData||
+| out [ControlAWBMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) |OutData||
 
 
 
@@ -1071,7 +1071,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolawbmoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolawbmoderesultmetadata}
 
 Gets AWB mode. 
 
@@ -1088,7 +1088,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAWBMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) |OutData||
+| out [ControlAWBMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) |OutData||
 
 
 
@@ -1097,7 +1097,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBStateResultMetadata {#mlresultcode-mlcamerametadatagetcontrolawbstateresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAWBStateResultMetadata {#mlresultcode-mlcamerametadatagetcontrolawbstateresultmetadata}
 
 Gets AWB state. 
 
@@ -1114,7 +1114,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBStateResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlAWBState](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbstate) |OutData||
+| out [ControlAWBState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbstate) |OutData||
 
 
 
@@ -1123,7 +1123,7 @@ public MLResult.Code MLCameraMetadataGetControlAWBStateResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAvailableEffectModes {#mlresultcode-mlcamerametadatagetcontrolavailableeffectmodes}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAvailableEffectModes {#mlresultcode-mlcamerametadatagetcontrolavailableeffectmodes}
 
 Gets Effect modes. 
 
@@ -1141,7 +1141,7 @@ public MLResult.Code MLCameraMetadataGetControlAvailableEffectModes(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlEffectMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) [] |OutData||
+| out [ControlEffectMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) [] |OutData||
 | out int |OutCount||
 
 
@@ -1151,7 +1151,7 @@ public MLResult.Code MLCameraMetadataGetControlAvailableEffectModes(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAvailableModes {#mlresultcode-mlcamerametadatagetcontrolavailablemodes}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAvailableModes {#mlresultcode-mlcamerametadatagetcontrolavailablemodes}
 
 Gets Available Modes. 
 
@@ -1169,7 +1169,7 @@ public MLResult.Code MLCameraMetadataGetControlAvailableModes(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) [] |OutData||
+| out [ControlMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) [] |OutData||
 | out int |OutCount||
 
 
@@ -1179,7 +1179,7 @@ public MLResult.Code MLCameraMetadataGetControlAvailableModes(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAvailableSceneModes {#mlresultcode-mlcamerametadatagetcontrolavailablescenemodes}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlAvailableSceneModes {#mlresultcode-mlcamerametadatagetcontrolavailablescenemodes}
 
 Gets Scene modes. 
 
@@ -1197,7 +1197,7 @@ public MLResult.Code MLCameraMetadataGetControlAvailableSceneModes(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlSceneMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) [] |OutData||
+| out [ControlSceneMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) [] |OutData||
 | out int |OutCount||
 
 
@@ -1207,7 +1207,7 @@ public MLResult.Code MLCameraMetadataGetControlAvailableSceneModes(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlEffectModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontroleffectmoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlEffectModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontroleffectmoderequestmetadata}
 
 Effect mode. 
 
@@ -1224,7 +1224,7 @@ public MLResult.Code MLCameraMetadataGetControlEffectModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlEffectMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) |OutData||
+| out [ControlEffectMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) |OutData||
 
 
 
@@ -1233,7 +1233,7 @@ public MLResult.Code MLCameraMetadataGetControlEffectModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlEffectModeResultMetadata {#mlresultcode-mlcamerametadatagetcontroleffectmoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlEffectModeResultMetadata {#mlresultcode-mlcamerametadatagetcontroleffectmoderesultmetadata}
 
 Gets Effect mode. 
 
@@ -1250,7 +1250,7 @@ public MLResult.Code MLCameraMetadataGetControlEffectModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlEffectMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) |OutData||
+| out [ControlEffectMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) |OutData||
 
 
 
@@ -1259,7 +1259,7 @@ public MLResult.Code MLCameraMetadataGetControlEffectModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlExposureUpperTimeLimitRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolexposureuppertimelimitrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlExposureUpperTimeLimitRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolexposureuppertimelimitrequestmetadata}
 
 Gets exposure time upper limit. 
 
@@ -1285,7 +1285,7 @@ public MLResult.Code MLCameraMetadataGetControlExposureUpperTimeLimitRequestMeta
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlExposureUpperTimeLimitResultMetadata {#mlresultcode-mlcamerametadatagetcontrolexposureuppertimelimitresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlExposureUpperTimeLimitResultMetadata {#mlresultcode-mlcamerametadatagetcontrolexposureuppertimelimitresultmetadata}
 
 Gets exposure time upper limit. 
 
@@ -1311,7 +1311,7 @@ public MLResult.Code MLCameraMetadataGetControlExposureUpperTimeLimitResultMetad
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlForceApplyModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolforceapplymoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlForceApplyModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolforceapplymoderequestmetadata}
 
 Gets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties. 
 
@@ -1328,7 +1328,7 @@ public MLResult.Code MLCameraMetadataGetControlForceApplyModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlForceApplyMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlforceapplymode) |OutData||
+| out [ControlForceApplyMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlforceapplymode) |OutData||
 
 
 
@@ -1337,7 +1337,7 @@ public MLResult.Code MLCameraMetadataGetControlForceApplyModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlForceApplyModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolforceapplymoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlForceApplyModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolforceapplymoderesultmetadata}
 
 Gets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties. 
 
@@ -1354,7 +1354,7 @@ public MLResult.Code MLCameraMetadataGetControlForceApplyModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlForceApplyMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlforceapplymode) |OutData||
+| out [ControlForceApplyMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlforceapplymode) |OutData||
 
 
 
@@ -1363,7 +1363,7 @@ public MLResult.Code MLCameraMetadataGetControlForceApplyModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolmoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolmoderequestmetadata}
 
 Gets mode. 
 
@@ -1380,7 +1380,7 @@ public MLResult.Code MLCameraMetadataGetControlModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) |OutData||
+| out [ControlMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) |OutData||
 
 
 
@@ -1389,7 +1389,7 @@ public MLResult.Code MLCameraMetadataGetControlModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolmoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolmoderesultmetadata}
 
 Gets mode. 
 
@@ -1406,7 +1406,7 @@ public MLResult.Code MLCameraMetadataGetControlModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) |OutData||
+| out [ControlMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) |OutData||
 
 
 
@@ -1415,7 +1415,7 @@ public MLResult.Code MLCameraMetadataGetControlModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlSceneModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolscenemoderequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlSceneModeRequestMetadata {#mlresultcode-mlcamerametadatagetcontrolscenemoderequestmetadata}
 
 Gets Scene mode. 
 
@@ -1432,7 +1432,7 @@ public MLResult.Code MLCameraMetadataGetControlSceneModeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlSceneMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) |OutData||
+| out [ControlSceneMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) |OutData||
 
 
 
@@ -1441,7 +1441,7 @@ public MLResult.Code MLCameraMetadataGetControlSceneModeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlSceneModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolscenemoderesultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetControlSceneModeResultMetadata {#mlresultcode-mlcamerametadatagetcontrolscenemoderesultmetadata}
 
 Gets Scene mode. 
 
@@ -1458,7 +1458,7 @@ public MLResult.Code MLCameraMetadataGetControlSceneModeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [ControlSceneMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) |OutData||
+| out [ControlSceneMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) |OutData||
 
 
 
@@ -1467,7 +1467,7 @@ public MLResult.Code MLCameraMetadataGetControlSceneModeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSCoordinatesRequestMetadata {#mlresultcode-mlcamerametadatagetjpeggpscoordinatesrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSCoordinatesRequestMetadata {#mlresultcode-mlcamerametadatagetjpeggpscoordinatesrequestmetadata}
 
 Gets jpeg GPS coordinates. 
 
@@ -1493,7 +1493,7 @@ public MLResult.Code MLCameraMetadataGetJpegGPSCoordinatesRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSCoordinatesResultMetadata {#mlresultcode-mlcamerametadatagetjpeggpscoordinatesresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSCoordinatesResultMetadata {#mlresultcode-mlcamerametadatagetjpeggpscoordinatesresultmetadata}
 
 Gets jpeg GPS coordinates. 
 
@@ -1519,7 +1519,7 @@ public MLResult.Code MLCameraMetadataGetJpegGPSCoordinatesResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSTimestampRequestMetadata {#mlresultcode-mlcamerametadatagetjpeggpstimestamprequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSTimestampRequestMetadata {#mlresultcode-mlcamerametadatagetjpeggpstimestamprequestmetadata}
 
 Gets jpeg timestamp. 
 
@@ -1545,7 +1545,7 @@ public MLResult.Code MLCameraMetadataGetJpegGPSTimestampRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSTimestampResultMetadata {#mlresultcode-mlcamerametadatagetjpeggpstimestampresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegGPSTimestampResultMetadata {#mlresultcode-mlcamerametadatagetjpeggpstimestampresultmetadata}
 
 Gets jpeg timestamp. 
 
@@ -1571,7 +1571,7 @@ public MLResult.Code MLCameraMetadataGetJpegGPSTimestampResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegQualityRequestMetadata {#mlresultcode-mlcamerametadatagetjpegqualityrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegQualityRequestMetadata {#mlresultcode-mlcamerametadatagetjpegqualityrequestmetadata}
 
 Gets jpeg quality. 
 
@@ -1597,7 +1597,7 @@ public MLResult.Code MLCameraMetadataGetJpegQualityRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegQualityResultMetadata {#mlresultcode-mlcamerametadatagetjpegqualityresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegQualityResultMetadata {#mlresultcode-mlcamerametadatagetjpegqualityresultmetadata}
 
 Gets jpeg quality. 
 
@@ -1623,7 +1623,7 @@ public MLResult.Code MLCameraMetadataGetJpegQualityResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegThumbnailSizeRequestMetadata {#mlresultcode-mlcamerametadatagetjpegthumbnailsizerequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegThumbnailSizeRequestMetadata {#mlresultcode-mlcamerametadatagetjpegthumbnailsizerequestmetadata}
 
 Gets jpeg thumbnail size. 
 
@@ -1640,7 +1640,7 @@ public MLResult.Code MLCameraMetadataGetJpegThumbnailSizeRequestMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [JpegThumbnailSize](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-jpegthumbnailsize) |OutData||
+| out [JpegThumbnailSize](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-jpegthumbnailsize) |OutData||
 
 
 
@@ -1649,7 +1649,7 @@ public MLResult.Code MLCameraMetadataGetJpegThumbnailSizeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegThumbnailSizeResultMetadata {#mlresultcode-mlcamerametadatagetjpegthumbnailsizeresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetJpegThumbnailSizeResultMetadata {#mlresultcode-mlcamerametadatagetjpegthumbnailsizeresultmetadata}
 
 Gets jpeg thumbnail size. 
 
@@ -1666,7 +1666,7 @@ public MLResult.Code MLCameraMetadataGetJpegThumbnailSizeResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [JpegThumbnailSize](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-jpegthumbnailsize) |OutData||
+| out [JpegThumbnailSize](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-jpegthumbnailsize) |OutData||
 
 
 
@@ -1675,7 +1675,7 @@ public MLResult.Code MLCameraMetadataGetJpegThumbnailSizeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensFocusDistanceRequestMetadata {#mlresultcode-mlcamerametadatagetlensfocusdistancerequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensFocusDistanceRequestMetadata {#mlresultcode-mlcamerametadatagetlensfocusdistancerequestmetadata}
 
 Gets Lens focus distance in diopters. The distance is between minimum focus distance and hyperfocal distance. 
 
@@ -1701,7 +1701,7 @@ public MLResult.Code MLCameraMetadataGetLensFocusDistanceRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensFocusDistanceResultMetadata {#mlresultcode-mlcamerametadatagetlensfocusdistanceresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensFocusDistanceResultMetadata {#mlresultcode-mlcamerametadatagetlensfocusdistanceresultmetadata}
 
 Gets Lens focus distance 
 
@@ -1727,7 +1727,7 @@ public MLResult.Code MLCameraMetadataGetLensFocusDistanceResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensInfoHyperfocalDistance {#mlresultcode-mlcamerametadatagetlensinfohyperfocaldistance}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensInfoHyperfocalDistance {#mlresultcode-mlcamerametadatagetlensinfohyperfocaldistance}
 
 Gets lens hyperfocal distance. 
 
@@ -1753,7 +1753,7 @@ public MLResult.Code MLCameraMetadataGetLensInfoHyperfocalDistance(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensInfoMinimumFocusDistance {#mlresultcode-mlcamerametadatagetlensinfominimumfocusdistance}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensInfoMinimumFocusDistance {#mlresultcode-mlcamerametadatagetlensinfominimumfocusdistance}
 
 Gets lens minimum focus distance 
 
@@ -1779,7 +1779,7 @@ public MLResult.Code MLCameraMetadataGetLensInfoMinimumFocusDistance(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensInfoMinimumFocusDistanceIncrement {#mlresultcode-mlcamerametadatagetlensinfominimumfocusdistanceincrement}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensInfoMinimumFocusDistanceIncrement {#mlresultcode-mlcamerametadatagetlensinfominimumfocusdistanceincrement}
 
 Gets lens minimum focus distance increment. The lens position can be set in multiples of distance increments between hyperfocal distance and minimum focus distance. 
 
@@ -1805,7 +1805,7 @@ public MLResult.Code MLCameraMetadataGetLensInfoMinimumFocusDistanceIncrement(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensStateResultMetadata {#mlresultcode-mlcamerametadatagetlensstateresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetLensStateResultMetadata {#mlresultcode-mlcamerametadatagetlensstateresultmetadata}
 
 Gets Lens state 
 
@@ -1822,7 +1822,7 @@ public MLResult.Code MLCameraMetadataGetLensStateResultMetadata(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| out [LensState](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-lensstate) |OutData|Current Lens status. |
+| out [LensState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-lensstate) |OutData|Current Lens status. |
 
 
 
@@ -1831,7 +1831,7 @@ public MLResult.Code MLCameraMetadataGetLensStateResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorExposureTimeRequestMetadata {#mlresultcode-mlcamerametadatagetsensorexposuretimerequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorExposureTimeRequestMetadata {#mlresultcode-mlcamerametadatagetsensorexposuretimerequestmetadata}
 
 Gets sensor exposure time. 
 
@@ -1857,7 +1857,7 @@ public MLResult.Code MLCameraMetadataGetSensorExposureTimeRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorExposureTimeResultMetadata {#mlresultcode-mlcamerametadatagetsensorexposuretimeresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorExposureTimeResultMetadata {#mlresultcode-mlcamerametadatagetsensorexposuretimeresultmetadata}
 
 Gets sensor exposure time. 
 
@@ -1883,7 +1883,7 @@ public MLResult.Code MLCameraMetadataGetSensorExposureTimeResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorFrameDurationResultMetadata {#mlresultcode-mlcamerametadatagetsensorframedurationresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorFrameDurationResultMetadata {#mlresultcode-mlcamerametadatagetsensorframedurationresultmetadata}
 
 Gets sensor frame duration. 
 
@@ -1909,7 +1909,7 @@ public MLResult.Code MLCameraMetadataGetSensorFrameDurationResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorInfoActiveArraySize {#mlresultcode-mlcamerametadatagetsensorinfoactivearraysize}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorInfoActiveArraySize {#mlresultcode-mlcamerametadatagetsensorinfoactivearraysize}
 
 Gets sensor info active array sizes. 
 
@@ -1935,7 +1935,7 @@ public MLResult.Code MLCameraMetadataGetSensorInfoActiveArraySize(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorInfoSensitivityRange {#mlresultcode-mlcamerametadatagetsensorinfosensitivityrange}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorInfoSensitivityRange {#mlresultcode-mlcamerametadatagetsensorinfosensitivityrange}
 
 Gets sensor info sensitivity range. 
 
@@ -1961,7 +1961,7 @@ public MLResult.Code MLCameraMetadataGetSensorInfoSensitivityRange(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorOrientation {#mlresultcode-mlcamerametadatagetsensororientation}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorOrientation {#mlresultcode-mlcamerametadatagetsensororientation}
 
 Gets sensor orientation degree. 
 
@@ -1987,7 +1987,7 @@ public MLResult.Code MLCameraMetadataGetSensorOrientation(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorSensitivityRequestMetadata {#mlresultcode-mlcamerametadatagetsensorsensitivityrequestmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorSensitivityRequestMetadata {#mlresultcode-mlcamerametadatagetsensorsensitivityrequestmetadata}
 
 Gets sensor sensitivity. 
 
@@ -2013,7 +2013,7 @@ public MLResult.Code MLCameraMetadataGetSensorSensitivityRequestMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorSensitivityResultMetadata {#mlresultcode-mlcamerametadatagetsensorsensitivityresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorSensitivityResultMetadata {#mlresultcode-mlcamerametadatagetsensorsensitivityresultmetadata}
 
 Gets sensor sensitivity. 
 
@@ -2039,7 +2039,7 @@ public MLResult.Code MLCameraMetadataGetSensorSensitivityResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorTimestampResultMetadata {#mlresultcode-mlcamerametadatagetsensortimestampresultmetadata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataGetSensorTimestampResultMetadata {#mlresultcode-mlcamerametadatagetsensortimestampresultmetadata}
 
 Gets frame captured timestamp. 
 
@@ -2065,7 +2065,7 @@ public MLResult.Code MLCameraMetadataGetSensorTimestampResultMetadata(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetAFDistanceRange {#mlresultcode-mlcamerametadatasetafdistancerange}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetAFDistanceRange {#mlresultcode-mlcamerametadatasetafdistancerange}
 
 Sets AF distance range. Both min and max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api MLCameraMetadataGetLensInfoHyperfocalDistance. 
 
@@ -2091,7 +2091,7 @@ public MLResult.Code MLCameraMetadataSetAFDistanceRange(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionAberrationMode {#mlresultcode-mlcamerametadatasetcolorcorrectionaberrationmode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionAberrationMode {#mlresultcode-mlcamerametadatasetcolorcorrectionaberrationmode}
 
 Sets color correction aberration. 
 
@@ -2108,7 +2108,7 @@ public MLResult.Code MLCameraMetadataSetColorCorrectionAberrationMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ColorCorrectionAberrationMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode) |Data||
+| ref [ColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode) |Data||
 
 
 
@@ -2117,7 +2117,7 @@ public MLResult.Code MLCameraMetadataSetColorCorrectionAberrationMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionGains {#mlresultcode-mlcamerametadatasetcolorcorrectiongains}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionGains {#mlresultcode-mlcamerametadatasetcolorcorrectiongains}
 
 Sets color correction gains. 
 
@@ -2143,7 +2143,7 @@ public MLResult.Code MLCameraMetadataSetColorCorrectionGains(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionMode {#mlresultcode-mlcamerametadatasetcolorcorrectionmode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionMode {#mlresultcode-mlcamerametadatasetcolorcorrectionmode}
 
 Sets color correction mode. 
 
@@ -2160,7 +2160,7 @@ public MLResult.Code MLCameraMetadataSetColorCorrectionMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ColorCorrectionMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionmode) |Data||
+| ref [ColorCorrectionMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionmode) |Data||
 
 
 
@@ -2169,7 +2169,7 @@ public MLResult.Code MLCameraMetadataSetColorCorrectionMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionTransform {#mlresultcode-mlcamerametadatasetcolorcorrectiontransform}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetColorCorrectionTransform {#mlresultcode-mlcamerametadatasetcolorcorrectiontransform}
 
 Sets color correction transform. 
 
@@ -2195,7 +2195,7 @@ public MLResult.Code MLCameraMetadataSetColorCorrectionTransform(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAEAntibandingMode {#mlresultcode-mlcamerametadatasetcontrolaeantibandingmode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAEAntibandingMode {#mlresultcode-mlcamerametadatasetcontrolaeantibandingmode}
 
 Sets AE antiband mode. 
 
@@ -2212,7 +2212,7 @@ public MLResult.Code MLCameraMetadataSetControlAEAntibandingMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlAEAntibandingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaeantibandingmode) |Data||
+| ref [ControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaeantibandingmode) |Data||
 
 
 
@@ -2221,7 +2221,7 @@ public MLResult.Code MLCameraMetadataSetControlAEAntibandingMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAEExposureCompensation {#mlresultcode-mlcamerametadatasetcontrolaeexposurecompensation}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAEExposureCompensation {#mlresultcode-mlcamerametadatasetcontrolaeexposurecompensation}
 
 Sets AE exposure compensation. 
 
@@ -2247,7 +2247,7 @@ public MLResult.Code MLCameraMetadataSetControlAEExposureCompensation(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAELock {#mlresultcode-mlcamerametadatasetcontrolaelock}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAELock {#mlresultcode-mlcamerametadatasetcontrolaelock}
 
 Sets AE lock. 
 
@@ -2264,7 +2264,7 @@ public MLResult.Code MLCameraMetadataSetControlAELock(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlAELock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |Data||
+| ref [ControlAELock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaelock) |Data||
 
 
 
@@ -2273,7 +2273,7 @@ public MLResult.Code MLCameraMetadataSetControlAELock(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAEMode {#mlresultcode-mlcamerametadatasetcontrolaemode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAEMode {#mlresultcode-mlcamerametadatasetcontrolaemode}
 
 Sets AE mode. MLCameraMetadataControlAEMode&#95;Off is not supported if camera is configured for 15FPS 
 
@@ -2290,7 +2290,7 @@ public MLResult.Code MLCameraMetadataSetControlAEMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlAEMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) |Data||
+| ref [ControlAEMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) |Data||
 
 
 
@@ -2299,7 +2299,7 @@ public MLResult.Code MLCameraMetadataSetControlAEMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAERegions {#mlresultcode-mlcamerametadatasetcontrolaeregions}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAERegions {#mlresultcode-mlcamerametadatasetcontrolaeregions}
 
 set AE regions. 
 
@@ -2327,7 +2327,7 @@ public MLResult.Code MLCameraMetadataSetControlAERegions(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAFMode {#mlresultcode-mlcamerametadatasetcontrolafmode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAFMode {#mlresultcode-mlcamerametadatasetcontrolafmode}
 
 Sets AF mode 
 
@@ -2344,7 +2344,7 @@ public MLResult.Code MLCameraMetadataSetControlAFMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| in [ControlAFMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) |InData|The current auto-focus (AF) mode controls. |
+| in [ControlAFMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) |InData|The current auto-focus (AF) mode controls. |
 
 
 
@@ -2353,7 +2353,7 @@ public MLResult.Code MLCameraMetadataSetControlAFMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAFTrigger {#mlresultcode-mlcamerametadatasetcontrolaftrigger}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAFTrigger {#mlresultcode-mlcamerametadatasetcontrolaftrigger}
 
 Sets AF trigger 
 
@@ -2370,7 +2370,7 @@ public MLResult.Code MLCameraMetadataSetControlAFTrigger(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| in [ControlAFTrigger](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaftrigger) |InData|The current auto-focus (AF) trigger. |
+| in [ControlAFTrigger](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaftrigger) |InData|The current auto-focus (AF) trigger. |
 
 
 
@@ -2379,7 +2379,7 @@ public MLResult.Code MLCameraMetadataSetControlAFTrigger(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAWBLock {#mlresultcode-mlcamerametadatasetcontrolawblock}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAWBLock {#mlresultcode-mlcamerametadatasetcontrolawblock}
 
 Sets AWB lock. 
 
@@ -2396,7 +2396,7 @@ public MLResult.Code MLCameraMetadataSetControlAWBLock(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlAWBLock](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |Data||
+| ref [ControlAWBLock](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawblock) |Data||
 
 
 
@@ -2405,7 +2405,7 @@ public MLResult.Code MLCameraMetadataSetControlAWBLock(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAWBMode {#mlresultcode-mlcamerametadatasetcontrolawbmode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlAWBMode {#mlresultcode-mlcamerametadatasetcontrolawbmode}
 
 Sets AWB mode. 
 
@@ -2422,7 +2422,7 @@ public MLResult.Code MLCameraMetadataSetControlAWBMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlAWBMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) |Data||
+| ref [ControlAWBMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) |Data||
 
 
 
@@ -2431,7 +2431,7 @@ public MLResult.Code MLCameraMetadataSetControlAWBMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlEffectMode {#mlresultcode-mlcamerametadatasetcontroleffectmode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlEffectMode {#mlresultcode-mlcamerametadatasetcontroleffectmode}
 
 Sets Effect mode. 
 
@@ -2448,7 +2448,7 @@ public MLResult.Code MLCameraMetadataSetControlEffectMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlEffectMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) |Data||
+| ref [ControlEffectMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) |Data||
 
 
 
@@ -2457,7 +2457,7 @@ public MLResult.Code MLCameraMetadataSetControlEffectMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlExposureUpperTimeLimit {#mlresultcode-mlcamerametadatasetcontrolexposureuppertimelimit}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlExposureUpperTimeLimit {#mlresultcode-mlcamerametadatasetcontrolexposureuppertimelimit}
 
 Sets exposure time upper limit. 
 
@@ -2483,7 +2483,7 @@ public MLResult.Code MLCameraMetadataSetControlExposureUpperTimeLimit(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlForceApplyMode {#mlresultcode-mlcamerametadatasetcontrolforceapplymode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlForceApplyMode {#mlresultcode-mlcamerametadatasetcontrolforceapplymode}
 
 Sets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties. 
 
@@ -2500,7 +2500,7 @@ public MLResult.Code MLCameraMetadataSetControlForceApplyMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| [ControlForceApplyMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlforceapplymode) |Data||
+| [ControlForceApplyMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlforceapplymode) |Data||
 
 
 
@@ -2509,7 +2509,7 @@ public MLResult.Code MLCameraMetadataSetControlForceApplyMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlMode {#mlresultcode-mlcamerametadatasetcontrolmode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlMode {#mlresultcode-mlcamerametadatasetcontrolmode}
 
 Sets mode. 
 
@@ -2526,7 +2526,7 @@ public MLResult.Code MLCameraMetadataSetControlMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) |Data||
+| ref [ControlMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) |Data||
 
 
 
@@ -2535,7 +2535,7 @@ public MLResult.Code MLCameraMetadataSetControlMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlSceneMode {#mlresultcode-mlcamerametadatasetcontrolscenemode}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetControlSceneMode {#mlresultcode-mlcamerametadatasetcontrolscenemode}
 
 Sets Scene mode. 
 
@@ -2552,7 +2552,7 @@ public MLResult.Code MLCameraMetadataSetControlSceneMode(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [ControlSceneMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) |Data||
+| ref [ControlSceneMode](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) |Data||
 
 
 
@@ -2561,7 +2561,7 @@ public MLResult.Code MLCameraMetadataSetControlSceneMode(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegGPSCoordinates {#mlresultcode-mlcamerametadatasetjpeggpscoordinates}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegGPSCoordinates {#mlresultcode-mlcamerametadatasetjpeggpscoordinates}
 
 Sets jpeg GPS coordinates. 
 
@@ -2587,7 +2587,7 @@ public MLResult.Code MLCameraMetadataSetJpegGPSCoordinates(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegGPSTimestamp {#mlresultcode-mlcamerametadatasetjpeggpstimestamp}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegGPSTimestamp {#mlresultcode-mlcamerametadatasetjpeggpstimestamp}
 
 Sets jpeg timestamp. 
 
@@ -2613,7 +2613,7 @@ public MLResult.Code MLCameraMetadataSetJpegGPSTimestamp(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegQuality {#mlresultcode-mlcamerametadatasetjpegquality}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegQuality {#mlresultcode-mlcamerametadatasetjpegquality}
 
 Sets jpeg quality. 
 
@@ -2639,7 +2639,7 @@ public MLResult.Code MLCameraMetadataSetJpegQuality(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegThumbnailSize {#mlresultcode-mlcamerametadatasetjpegthumbnailsize}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetJpegThumbnailSize {#mlresultcode-mlcamerametadatasetjpegthumbnailsize}
 
 Sets jpeg thumbnail size. 
 
@@ -2656,7 +2656,7 @@ public MLResult.Code MLCameraMetadataSetJpegThumbnailSize(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [JpegThumbnailSize](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-jpegthumbnailsize) |Data||
+| ref [JpegThumbnailSize](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-jpegthumbnailsize) |Data||
 
 
 
@@ -2665,7 +2665,7 @@ public MLResult.Code MLCameraMetadataSetJpegThumbnailSize(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetLensFocusDistance {#mlresultcode-mlcamerametadatasetlensfocusdistance}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetLensFocusDistance {#mlresultcode-mlcamerametadatasetlensfocusdistance}
 
 Sets Lens focus distance 
 
@@ -2691,7 +2691,7 @@ public MLResult.Code MLCameraMetadataSetLensFocusDistance(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetSensorExposureTime {#mlresultcode-mlcamerametadatasetsensorexposuretime}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetSensorExposureTime {#mlresultcode-mlcamerametadatasetsensorexposuretime}
 
 Sets sensor exposure time. 
 
@@ -2717,7 +2717,7 @@ public MLResult.Code MLCameraMetadataSetSensorExposureTime(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetSensorSensitivity {#mlresultcode-mlcamerametadatasetsensorsensitivity}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCameraMetadataSetSensorSensitivity {#mlresultcode-mlcamerametadatasetsensorsensitivity}
 
 Sets sensor sensitivity. 
 

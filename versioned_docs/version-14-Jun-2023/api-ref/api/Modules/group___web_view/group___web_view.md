@@ -12,71 +12,71 @@ APIs for the WebView component.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md)** <br></br>Struct to define the cursor's state.  |
-| struct | **[MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md)** <br></br>Event handler for MLWebView callbacks.  |
-| struct | **[MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md)** <br></br>Struct to define webview initialization.  |
-| struct | **[MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md)** <br></br>Struct to define webview process initialization.  |
+| struct | **[MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md)** <br></br>Struct to define the cursor's state.  |
+| struct | **[MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md)** <br></br>Event handler for MLWebView callbacks.  |
+| struct | **[MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md)** <br></br>Struct to define webview initialization.  |
+| struct | **[MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md)** <br></br>Struct to define webview process initialization.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) | **[MLWebViewCursorState](/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebviewcursorstate)** <br></br>Struct to define the cursor's state.  |
-| typedef struct [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) | **[MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebvieweventcallbacks)** <br></br>Event handler for MLWebView callbacks.  |
-| typedef struct [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) | **[MLWebViewSettings](/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebviewsettings)** <br></br>Struct to define webview initialization.  |
-| typedef struct [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) | **[MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebviewprocesssettings)** <br></br>Struct to define webview process initialization.  |
+| typedef struct [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) | **[MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebviewcursorstate)** <br></br>Struct to define the cursor's state.  |
+| typedef struct [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) | **[MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebvieweventcallbacks)** <br></br>Event handler for MLWebView callbacks.  |
+| typedef struct [MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) | **[MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebviewsettings)** <br></br>Struct to define webview initialization.  |
+| typedef struct [MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) | **[MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#struct-mlwebviewprocesssettings)** <br></br>Struct to define webview process initialization.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLWebViewTextInputType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype)** <br></br> { <br></br>[MLWebViewTextInputType_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-none) = 0,<br></br> [MLWebViewTextInputType_Text](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-text),<br></br> [MLWebViewTextInputType_Password](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-password),<br></br> [MLWebViewTextInputType_Search](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-search),<br></br> [MLWebViewTextInputType_Email](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-email),<br></br> [MLWebViewTextInputType_Number](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-number),<br></br> [MLWebViewTextInputType_Telephone](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-telephone),<br></br> [MLWebViewTextInputType_URL](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-url),<br></br> [MLWebViewTextInputType_Date](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-date),<br></br> [MLWebViewTextInputType_DateTime](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetime),<br></br> [MLWebViewTextInputType_DateTimeLocal](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetimelocal),<br></br> [MLWebViewTextInputType_Month](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-month),<br></br> [MLWebViewTextInputType_Time](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-time),<br></br> [MLWebViewTextInputType_Week](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-week),<br></br> [MLWebViewTextInputType_TextArea](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-textarea),<br></br> [MLWebViewTextInputType_ContentEditable](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-contenteditable),<br></br> [MLWebViewTextInputType_DateTimeField](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetimefield),<br></br> [MLWebViewTextInputType_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of text entry selected when on_show_keyboard is called.  |
-| enum | **[MLWebViewTextInputFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags)** <br></br> { <br></br>[MLWebViewTextInputFlags_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-none) = 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocompleteon) = 1 << 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOff](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocompleteoff) = 1 << 1,<br></br> [MLWebViewTextInputFlags_AutocorrectOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocorrecton) = 1 << 2,<br></br> [MLWebViewTextInputFlags_AutocorrectOff](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocorrectoff) = 1 << 3,<br></br> [MLWebViewTextInputFlags_SpellcheckOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-spellcheckon) = 1 << 4,<br></br> [MLWebViewTextInputFlags_SpellcheckOff](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-spellcheckoff) = 1 << 5,<br></br> [MLWebViewTextInputFlags_AutocapitalizeNone](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizenone) = 1 << 6,<br></br> [MLWebViewTextInputFlags_AutocapitalizeCharacters](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizecharacters) = 1 << 7,<br></br> [MLWebViewTextInputFlags_AutocapitalizeWords](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizewords) = 1 << 8,<br></br> [MLWebViewTextInputFlags_AutocapitalizeSentences](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizesentences) = 1 << 9,<br></br> [MLWebViewTextInputFlags_HaveNextFocusableElement](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-havenextfocusableelement) = 1 << 10,<br></br> [MLWebViewTextInputFlags_HavePreviousFocusableElement](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-havepreviousfocusableelement) = 1 << 11,<br></br> [MLWebViewTextInputFlags_HasBeenPasswordField](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-hasbeenpasswordfield) = 1 << 12,<br></br> [MLWebViewTextInputFlags_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags related to a text entry field passed when on_show_keyboard is called.  |
-| enum | **[MLWebViewEventFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags)** <br></br> { <br></br>[MLWebViewEventFlags_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-none) = 0,<br></br> [MLWebViewEventFlags_CapsLockOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-capslockon) = 1 << 0,<br></br> [MLWebViewEventFlags_ShiftDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-shiftdown) = 1 << 1,<br></br> [MLWebViewEventFlags_ControlDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-controldown) = 1 << 2,<br></br> [MLWebViewEventFlags_AltDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-altdown) = 1 << 3,<br></br> [MLWebViewEventFlags_LeftMouseButton](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-leftmousebutton) = 1 << 4,<br></br> [MLWebViewEventFlags_MiddleMouseButton](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-middlemousebutton) = 1 << 5,<br></br> [MLWebViewEventFlags_RightMouseButton](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-rightmousebutton) = 1 << 6,<br></br> [MLWebViewEventFlags_CommandDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-commanddown) = 1 << 7,<br></br> [MLWebViewEventFlags_NumLockOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-numlockon) = 1 << 8,<br></br> [MLWebViewEventFlags_IsKeyPad](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-iskeypad) = 1 << 9,<br></br> [MLWebViewEventFlags_IsLeft](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-isleft) = 1 << 10,<br></br> [MLWebViewEventFlags_IsRight](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-isright) = 1 << 11,<br></br> [MLWebViewEventFlags_AltGRDown](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-altgrdown) = 1 << 12,<br></br> [MLWebViewEventFlags_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags to set special key states during input.  |
-| enum | **[Anonymous Enum 30](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-anonymous-enum-30)** <br></br> { <br></br>[MLResultAPIPrefix_WebView](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlresultapiprefix-webview) = ( 0xebf7  << 16)<br></br>} |
-| enum | **[MLWebViewResult](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult)** <br></br> { <br></br>[MLWebViewResult_ZoomLimitReached](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult-zoomlimitreached) = MLResultAPIPrefix_WebView,<br></br> [MLWebViewResult_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for the WebView API calls.  |
-| enum | **[MLWebViewProcessSettingFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags)** <br></br> { <br></br>[MLWebViewProcessSettingFlags_None](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-none) = 0,<br></br> [MLWebViewProcessSettingFlags_WebInspectorOn](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-webinspectoron) = 1 << 0,<br></br> [MLWebViewProcessSettingFlags_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags set for the process using webview.  |
-| enum | **[MLWebViewPauseType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype)** <br></br> { <br></br>[MLWebViewPauseType_Multimedia](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-multimedia) = 0,<br></br> [MLWebViewPauseType_Timers](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-timers),<br></br> [MLWebViewPauseType_Discard](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-discard),<br></br> [MLWebViewPauseType_Ensure32Bits](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of the webview pause.  |
+| enum | **[MLWebViewTextInputType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype)** <br></br> { <br></br>[MLWebViewTextInputType_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-none) = 0,<br></br> [MLWebViewTextInputType_Text](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-text),<br></br> [MLWebViewTextInputType_Password](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-password),<br></br> [MLWebViewTextInputType_Search](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-search),<br></br> [MLWebViewTextInputType_Email](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-email),<br></br> [MLWebViewTextInputType_Number](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-number),<br></br> [MLWebViewTextInputType_Telephone](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-telephone),<br></br> [MLWebViewTextInputType_URL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-url),<br></br> [MLWebViewTextInputType_Date](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-date),<br></br> [MLWebViewTextInputType_DateTime](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetime),<br></br> [MLWebViewTextInputType_DateTimeLocal](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetimelocal),<br></br> [MLWebViewTextInputType_Month](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-month),<br></br> [MLWebViewTextInputType_Time](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-time),<br></br> [MLWebViewTextInputType_Week](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-week),<br></br> [MLWebViewTextInputType_TextArea](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-textarea),<br></br> [MLWebViewTextInputType_ContentEditable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-contenteditable),<br></br> [MLWebViewTextInputType_DateTimeField](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-datetimefield),<br></br> [MLWebViewTextInputType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputtype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of text entry selected when on_show_keyboard is called.  |
+| enum | **[MLWebViewTextInputFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags)** <br></br> { <br></br>[MLWebViewTextInputFlags_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-none) = 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOn](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocompleteon) = 1 << 0,<br></br> [MLWebViewTextInputFlags_AutocompleteOff](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocompleteoff) = 1 << 1,<br></br> [MLWebViewTextInputFlags_AutocorrectOn](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocorrecton) = 1 << 2,<br></br> [MLWebViewTextInputFlags_AutocorrectOff](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocorrectoff) = 1 << 3,<br></br> [MLWebViewTextInputFlags_SpellcheckOn](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-spellcheckon) = 1 << 4,<br></br> [MLWebViewTextInputFlags_SpellcheckOff](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-spellcheckoff) = 1 << 5,<br></br> [MLWebViewTextInputFlags_AutocapitalizeNone](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizenone) = 1 << 6,<br></br> [MLWebViewTextInputFlags_AutocapitalizeCharacters](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizecharacters) = 1 << 7,<br></br> [MLWebViewTextInputFlags_AutocapitalizeWords](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizewords) = 1 << 8,<br></br> [MLWebViewTextInputFlags_AutocapitalizeSentences](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-autocapitalizesentences) = 1 << 9,<br></br> [MLWebViewTextInputFlags_HaveNextFocusableElement](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-havenextfocusableelement) = 1 << 10,<br></br> [MLWebViewTextInputFlags_HavePreviousFocusableElement](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-havepreviousfocusableelement) = 1 << 11,<br></br> [MLWebViewTextInputFlags_HasBeenPasswordField](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-hasbeenpasswordfield) = 1 << 12,<br></br> [MLWebViewTextInputFlags_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewtextinputflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags related to a text entry field passed when on_show_keyboard is called.  |
+| enum | **[MLWebViewEventFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags)** <br></br> { <br></br>[MLWebViewEventFlags_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-none) = 0,<br></br> [MLWebViewEventFlags_CapsLockOn](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-capslockon) = 1 << 0,<br></br> [MLWebViewEventFlags_ShiftDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-shiftdown) = 1 << 1,<br></br> [MLWebViewEventFlags_ControlDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-controldown) = 1 << 2,<br></br> [MLWebViewEventFlags_AltDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-altdown) = 1 << 3,<br></br> [MLWebViewEventFlags_LeftMouseButton](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-leftmousebutton) = 1 << 4,<br></br> [MLWebViewEventFlags_MiddleMouseButton](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-middlemousebutton) = 1 << 5,<br></br> [MLWebViewEventFlags_RightMouseButton](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-rightmousebutton) = 1 << 6,<br></br> [MLWebViewEventFlags_CommandDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-commanddown) = 1 << 7,<br></br> [MLWebViewEventFlags_NumLockOn](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-numlockon) = 1 << 8,<br></br> [MLWebViewEventFlags_IsKeyPad](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-iskeypad) = 1 << 9,<br></br> [MLWebViewEventFlags_IsLeft](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-isleft) = 1 << 10,<br></br> [MLWebViewEventFlags_IsRight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-isright) = 1 << 11,<br></br> [MLWebViewEventFlags_AltGRDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-altgrdown) = 1 << 12,<br></br> [MLWebViewEventFlags_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags to set special key states during input.  |
+| enum | **[Anonymous Enum 30](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-anonymous-enum-30)** <br></br> { <br></br>[MLResultAPIPrefix_WebView](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlresultapiprefix-webview) = ( 0xebf7  << 16)<br></br>} |
+| enum | **[MLWebViewResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult)** <br></br> { <br></br>[MLWebViewResult_ZoomLimitReached](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult-zoomlimitreached) = MLResultAPIPrefix_WebView,<br></br> [MLWebViewResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for the WebView API calls.  |
+| enum | **[MLWebViewProcessSettingFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags)** <br></br> { <br></br>[MLWebViewProcessSettingFlags_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-none) = 0,<br></br> [MLWebViewProcessSettingFlags_WebInspectorOn](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-webinspectoron) = 1 << 0,<br></br> [MLWebViewProcessSettingFlags_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewprocesssettingflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Flags set for the process using webview.  |
+| enum | **[MLWebViewPauseType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype)** <br></br> { <br></br>[MLWebViewPauseType_Multimedia](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-multimedia) = 0,<br></br> [MLWebViewPauseType_Timers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-timers),<br></br> [MLWebViewPauseType_Discard](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-discard),<br></br> [MLWebViewPauseType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The type of the webview pause.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLWebViewCursorStateInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewcursorstateinit)**([MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * inout_cursor_state)<br></br>Initializes a [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) with the default parameters.  |
-| void | **[MLWebViewEventCallbacksInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebvieweventcallbacksinit)**([MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * inout_callback)<br></br>Initializes a [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) with the default parameters.  |
-| void | **[MLWebViewSettingsInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewsettingsinit)**([MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * inout_settings)<br></br>Initializes a [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) with the default parameters.  |
-| void | **[MLWebViewProcessSettingsInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewprocesssettingsinit)**([MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * inout_settings)<br></br>Initializes a [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) with the default parameters.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetProcessSettings](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewsetprocesssettings)**(const [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * settings)<br></br>Specify the process settings to be used for webviews.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCreate](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle, const [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * in_settings)<br></br>Create a MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewDestroy](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy a MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetEventCallbacks](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewseteventcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * callbacks)<br></br>Specify the callbacks for a MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewAcquireNextAvailableFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer ** out_native_buffer)<br></br>Acquires next available frame buffer for rendering.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewReleaseFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewreleaseframe)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer * native_buffer)<br></br>Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoTo](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoto)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const char * url)<br></br>Go to a URL with the specified MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoBack](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoback)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Trigger a "Back" action in the MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoForward](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoforward)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Trigger a "Forward" action in the MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewReload](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewreload)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Trigger a "Reload" action in the MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetUrl](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgeturl)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, uint32_t * inout_size, char * inout_url)<br></br>Get the current URL. Set out_url to NULL to get the length of the current URL.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCanGoBack](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoback)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, bool * out_can_go_back)<br></br>Checks if the "Back" action is currently valid.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCanGoForward](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoforward)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, bool * out_can_go_forward)<br></br>Checks if the "Forward" action is currently valid.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectMouseMove](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectmousemove)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * cursor_state)<br></br>Moves the WebView mouse.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectMouseButtonDown](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectmousebuttondown)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * cursor_state)<br></br>Sends a mouse button down/pressed event on a specific location on screen.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectMouseButtonUp](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectmousebuttonup)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * cursor_state)<br></br>Sends a mouse button up/released event on a specific location on screen.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectChar](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectchar)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, uint32_t char_utf32)<br></br>Sends a printable char keyboard event to MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectKeyDown](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectkeydown)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t key_code, uint32_t modifier_mask)<br></br>Sends a key down/pressed event to MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectKeyUp](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectkeyup)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t key_code, uint32_t modifier_mask)<br></br>Sends a key up/release event to MLWebView.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollSize](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrollsize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_width, int32_t * out_height)<br></br>This API is stubbed out and translates to a no-op.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollOffset](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrolloffset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_x, int32_t * out_y)<br></br>This API is stubbed out and translates to a no-op.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewScrollBy](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewscrollby)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const int32_t x_pixels, const int32_t y_pixels)<br></br>Triggers a mouse "Scroll" event.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetZoomFactor](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetzoomfactor)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, double * out_zoom_factor)<br></br>Get the current zoom factor. The default zoom factor is 1.0.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewZoomIn](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewzoomin)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Zoom in one level.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewZoomOut](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewzoomout)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Zoom out one level.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewResetZoom](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresetzoom)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Reset zoom level to 1.0.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetFrameTransformMatrix](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetframetransformmatrix)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, [MLMat4f](/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) * out_matrix)<br></br>Retrieves the 4x4 texture coordinate transform matrix used by all MLWebView frames.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewRemoveAllCookies](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewremoveallcookies)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Remove all webview cookies.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewClearCache](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewclearcache)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Clear the webview cache.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, [MLWebViewPauseType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype) pause_type)<br></br>Pause the webview. Call [MLWebViewResume](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) to resume.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewResume](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Resumes a webview after a previous call of the [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause).  |
+| void | **[MLWebViewCursorStateInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewcursorstateinit)**([MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * inout_cursor_state)<br></br>Initializes a [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) with the default parameters.  |
+| void | **[MLWebViewEventCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebvieweventcallbacksinit)**([MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * inout_callback)<br></br>Initializes a [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) with the default parameters.  |
+| void | **[MLWebViewSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewsettingsinit)**([MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * inout_settings)<br></br>Initializes a [MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) with the default parameters.  |
+| void | **[MLWebViewProcessSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewprocesssettingsinit)**([MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * inout_settings)<br></br>Initializes a [MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) with the default parameters.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewsetprocesssettings)**(const [MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * settings)<br></br>Specify the process settings to be used for webviews.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle, const [MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * in_settings)<br></br>Create a MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroy a MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewSetEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewseteventcallbacks)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * callbacks)<br></br>Specify the callbacks for a MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewAcquireNextAvailableFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer ** out_native_buffer)<br></br>Acquires next available frame buffer for rendering.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewReleaseFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewreleaseframe)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, struct AHardwareBuffer * native_buffer)<br></br>Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoTo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoto)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const char * url)<br></br>Go to a URL with the specified MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoBack](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoback)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Trigger a "Back" action in the MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGoForward](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgoforward)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Trigger a "Forward" action in the MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewReload](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewreload)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Trigger a "Reload" action in the MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetUrl](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgeturl)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, uint32_t * inout_size, char * inout_url)<br></br>Get the current URL. Set out_url to NULL to get the length of the current URL.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCanGoBack](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoback)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, bool * out_can_go_back)<br></br>Checks if the "Back" action is currently valid.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewCanGoForward](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoforward)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, bool * out_can_go_forward)<br></br>Checks if the "Forward" action is currently valid.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectMouseMove](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectmousemove)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * cursor_state)<br></br>Moves the WebView mouse.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectMouseButtonDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectmousebuttondown)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * cursor_state)<br></br>Sends a mouse button down/pressed event on a specific location on screen.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectMouseButtonUp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectmousebuttonup)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * cursor_state)<br></br>Sends a mouse button up/released event on a specific location on screen.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectChar](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectchar)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, uint32_t char_utf32)<br></br>Sends a printable char keyboard event to MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectKeyDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectkeydown)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t key_code, uint32_t modifier_mask)<br></br>Sends a key down/pressed event to MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewInjectKeyUp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewinjectkeyup)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t key_code, uint32_t modifier_mask)<br></br>Sends a key up/release event to MLWebView.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrollsize)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_width, int32_t * out_height)<br></br>This API is stubbed out and translates to a no-op.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetScrollOffset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetscrolloffset)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, int32_t * out_x, int32_t * out_y)<br></br>This API is stubbed out and translates to a no-op.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewScrollBy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewscrollby)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, const int32_t x_pixels, const int32_t y_pixels)<br></br>Triggers a mouse "Scroll" event.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetZoomFactor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetzoomfactor)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, double * out_zoom_factor)<br></br>Get the current zoom factor. The default zoom factor is 1.0.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewZoomIn](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewzoomin)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Zoom in one level.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewZoomOut](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewzoomout)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Zoom out one level.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewResetZoom](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresetzoom)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Reset zoom level to 1.0.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewGetFrameTransformMatrix](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewgetframetransformmatrix)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, [MLMat4f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) * out_matrix)<br></br>Retrieves the 4x4 texture coordinate transform matrix used by all MLWebView frames.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewRemoveAllCookies](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewremoveallcookies)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Remove all webview cookies.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewClearCache](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewclearcache)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Clear the webview cache.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view, [MLWebViewPauseType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype) pause_type)<br></br>Pause the webview. Call [MLWebViewResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) to resume.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWebViewResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) web_view)<br></br>Resumes a webview after a previous call of the [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause).  |
 
 ## Detailed Description
 
@@ -85,7 +85,7 @@ APIs for the WebView component.
 
 
 :::note
-MLWebView methods use re-entrant JNI monitors to provide a thread-safe API. See: [https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/functions.html#wp5256](https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/functions.html#wp5256) for details. 
+MLWebView methods use re-entrant JNI monitors to provide a thread-safe API. See: [https://docs.oracle.com/javase/7/versioned_docs/version-14-Jun-2023/technotes/versioned_docs/version-14-Jun-2023/guides/jni/spec/functions.html#wp5256](https://docs.oracle.com/javase/7/versioned_docs/version-14-Jun-2023/technotes/versioned_docs/version-14-Jun-2023/guides/jni/spec/functions.html#wp5256) for details. 
 :::
 
 
@@ -210,7 +210,7 @@ Flags to set special key states during input.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLResultAPIPrefix_WebView |  ( 0xebf7  << 16)| Defines the prefix for [MLWebViewResult](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult) codes. |
+| MLResultAPIPrefix_WebView |  ( 0xebf7  << 16)| Defines the prefix for [MLWebViewResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewresult) codes. |
 
 
 
@@ -301,11 +301,11 @@ typedef struct MLWebViewCursorState MLWebViewCursorState;
 
 Struct to define the cursor's state. 
 
-This structure must be initialized by calling [MLWebViewCursorStateInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewcursorstateinit) before use.
+This structure must be initialized by calling [MLWebViewCursorStateInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewcursorstateinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md)
 
 
 **API Level:**
@@ -324,11 +324,11 @@ typedef struct MLWebViewEventCallbacks MLWebViewEventCallbacks;
 
 Event handler for MLWebView callbacks. 
 
-This structure must be initialized by calling [MLWebViewEventCallbacksInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebvieweventcallbacksinit) before use.
+This structure must be initialized by calling [MLWebViewEventCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebvieweventcallbacksinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md)
 
 
 **API Level:**
@@ -347,11 +347,11 @@ typedef struct MLWebViewSettings MLWebViewSettings;
 
 Struct to define webview initialization. 
 
-This structure must be initialized by calling [MLWebViewSettingsInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewsettingsinit) before use.
+This structure must be initialized by calling [MLWebViewSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewsettingsinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md)
 
 
 **API Level:**
@@ -370,11 +370,11 @@ typedef struct MLWebViewProcessSettings MLWebViewProcessSettings;
 
 Struct to define webview process initialization. 
 
-This structure must be initialized by calling [MLWebViewProcessSettingsInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewprocesssettingsinit) before use.
+This structure must be initialized by calling [MLWebViewProcessSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewprocesssettingsinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md)
 
 
 **API Level:**
@@ -396,13 +396,13 @@ static inline void MLWebViewCursorStateInit(
 )
 ```
 
-Initializes a [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) with the default parameters. 
+Initializes a [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) with the default parameters. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |inout_cursor_state|The object to initialize with default values.|
+| [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |inout_cursor_state|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -427,13 +427,13 @@ static inline void MLWebViewEventCallbacksInit(
 )
 ```
 
-Initializes a [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) with the default parameters. 
+Initializes a [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) with the default parameters. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * |inout_callback|The object to initialize with default settings.|
+| [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * |inout_callback|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -458,13 +458,13 @@ static inline void MLWebViewSettingsInit(
 )
 ```
 
-Initializes a [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) with the default parameters. 
+Initializes a [MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) with the default parameters. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * |inout_settings|The object to initialize with default settings.|
+| [MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * |inout_settings|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -489,13 +489,13 @@ static inline void MLWebViewProcessSettingsInit(
 )
 ```
 
-Initializes a [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) with the default parameters. 
+Initializes a [MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) with the default parameters. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * |inout_settings|The object to initialize with default settings.|
+| [MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * |inout_settings|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -526,15 +526,15 @@ Specify the process settings to be used for webviews.
 
 |  |   |   |
 |--|--|--|
-| const [MLWebViewProcessSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * |settings|The settings to be used for webviews.|
+| const [MLWebViewProcessSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md) * |settings|The settings to be used for webviews.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If settings is null. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If called after MLWebViewCreate. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If settings is not null. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If settings is null. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If called after MLWebViewCreate. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If settings is not null. |
 **Required Permissions**:
 
   * None
@@ -570,17 +570,17 @@ Create a MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Handle that is ready to use with all other MLWebView API calls. |
-| const [MLWebViewSettings](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * |in_settings|The initialization paramaters for the webview.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|Handle that is ready to use with all other MLWebView API calls. |
+| const [MLWebViewSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_settings.md) * |in_settings|The initialization paramaters for the webview.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_handle, in_settings, or application_vm pointer was null. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If version >= 2, returns MLResult_Ok for successful start of asynchronous operation, but any eventual failure will be reported through on_service_failed. If version < 2, this indicates that synchronous creation was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Missing required permission(s). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unable to create the MLWebView, MLWebViewCallbacks struct version < 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_handle, in_settings, or application_vm pointer was null. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If version >= 2, returns MLResult_Ok for successful start of asynchronous operation, but any eventual failure will be reported through on_service_failed. If version < 2, this indicates that synchronous creation was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Missing required permission(s). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unable to create the MLWebView, MLWebViewCallbacks struct version < 2.|
 **Required Permissions**:
 
   * com.magicleap.permission.WEBVIEW (protection level: normal) 
@@ -617,15 +617,15 @@ Destroy a MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle to invalidate.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The handle to invalidate.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView was destroyed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|An error occurred destroying the MLWebView.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView was destroyed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|An error occurred destroying the MLWebView.|
 **Required Permissions**:
 
   * None 
@@ -659,16 +659,16 @@ Specify the callbacks for a MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The MLWebView to link the event handler. |
-| const [MLWebViewEventCallbacks](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * |callbacks|The event handler to link to the MLWebView.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The MLWebView to link the event handler. |
+| const [MLWebViewEventCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_event_callbacks.md) * |callbacks|The event handler to link to the MLWebView.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLWebView event handler was set. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLWebView event handler was set. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -700,16 +700,16 @@ Acquires next available frame buffer for rendering.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | struct AHardwareBuffer ** |out_native_buffer|Pointer to an AHardwareBuffer.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The frame is ready. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The frame is ready. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -739,23 +739,23 @@ MLResult MLWebViewReleaseFrame(
 )
 ```
 
-Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe). 
+Release a frame acquired by [MLWebViewAcquireNextAvailableFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewacquirenextavailableframe). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | struct AHardwareBuffer * |native_buffer|The frame being released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Frame successfully released. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|An error occurred releasing the frame.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Frame successfully released. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|An error occurred releasing the frame.|
 **Required Permissions**:
 
   * None 
@@ -787,17 +787,17 @@ Go to a URL with the specified MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | const char * |url|The URL that will be loaded.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView is attempting to load the specified URL. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView is attempting to load the specified URL. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -830,22 +830,22 @@ Trigger a "Back" action in the MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView Back action was initiated or cannot go back any further. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView Back action was initiated or cannot go back any further. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
 
 
-Query [MLWebViewCanGoBack](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoback) before calling this method. If there is no valid page to go back to, this method will be no-op.
+Query [MLWebViewCanGoBack](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoback) before calling this method. If there is no valid page to go back to, this method will be no-op.
 
 
 
@@ -872,22 +872,22 @@ Trigger a "Forward" action in the MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView Forward action was initiated or cannot go forward any further. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView Forward action was initiated or cannot go forward any further. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
 
 
-Query [MLWebViewCanGoForward](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoforward) before calling this method. If there is no valid page to go forward to, this method will be no-op.
+Query [MLWebViewCanGoForward](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcangoforward) before calling this method. If there is no valid page to go forward to, this method will be no-op.
 
 
 
@@ -914,16 +914,16 @@ Trigger a "Reload" action in the MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView Reload action was initiated. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. [MLWebViewResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) should be called before this function. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView Reload action was initiated. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -956,7 +956,7 @@ Get the current URL. Set out_url to NULL to get the length of the current URL.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | uint32_t * |inout_size|The size that has been allocated in out_url to hold the URL. This will be set to the actual length of URL if inout_size and size needed for the URL are different. |
 | char * |inout_url|The URL up to inout_size of characters.|
 
@@ -964,9 +964,9 @@ Get the current URL. Set out_url to NULL to get the length of the current URL.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView URL was acquired. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The WebView URL was acquired. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -998,17 +998,17 @@ Checks if the "Back" action is currently valid.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | bool * |out_can_go_back|True if "Back" has a valid page to go to.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The status of going "Back" was acquired. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The status of going "Back" was acquired. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1040,17 +1040,17 @@ Checks if the "Forward" action is currently valid.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | bool * |out_can_go_forward|True if "Forward" has a valid page to go to.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The status of going "Forward" was acquired. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The status of going "Forward" was acquired. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1082,17 +1082,17 @@ Moves the WebView mouse.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
-| const [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |cursor_state|Information about the mouse movement.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| const [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |cursor_state|Information about the mouse movement.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The internal mouse was moved. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The internal mouse was moved. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1128,17 +1128,17 @@ Sends a mouse button down/pressed event on a specific location on screen.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
-| const [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |cursor_state|Information about the mouse button event.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| const [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |cursor_state|Information about the mouse button event.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1169,17 +1169,17 @@ Sends a mouse button up/released event on a specific location on screen.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
-| const [MLWebViewCursorState](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |cursor_state|Information about the mouse button event.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| const [MLWebViewCursorState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_cursor_state.md) * |cursor_state|Information about the mouse button event.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1210,17 +1210,17 @@ Sends a printable char keyboard event to MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|Target webview. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|Target webview. |
 | uint32_t |char_utf32|Printable char utf code.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The key event was injected. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The key event was injected. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1253,18 +1253,18 @@ Sends a key down/pressed event to MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|Target webview. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|Target webview. |
 | int32_t |key_code|Key code. |
-| uint32_t |modifier_mask|Should be one or combination of [MLWebViewEventFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags).|
+| uint32_t |modifier_mask|Should be one or combination of [MLWebViewEventFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The key event was injected. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The key event was injected. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1297,18 +1297,18 @@ Sends a key up/release event to MLWebView.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|Target webview. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|Target webview. |
 | int32_t |key_code|Key code. |
-| uint32_t |modifier_mask|Should be one or combination of [MLWebViewEventFlags](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags).|
+| uint32_t |modifier_mask|Should be one or combination of [MLWebViewEventFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebvieweventflags).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The key event was injected. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The key event was injected. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1341,7 +1341,7 @@ This API is stubbed out and translates to a no-op.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | int32_t * |out_width|The number representing the entire width of the webview, in pixels. |
 | int32_t * |out_height|The number representing the entire height of the webview, in pixels.|
 
@@ -1349,7 +1349,7 @@ This API is stubbed out and translates to a no-op.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|This API is stubbed out and translates to a no-op.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|This API is stubbed out and translates to a no-op.|
 **Required Permissions**:
 
   * None 
@@ -1386,7 +1386,7 @@ This API is stubbed out and translates to a no-op.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | int32_t * |out_x|The number representing the horizontal offset of the webview, in pixels. |
 | int32_t * |out_y|The number representing the vertical offset of the webview, in pixels.|
 
@@ -1394,7 +1394,7 @@ This API is stubbed out and translates to a no-op.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|This API is stubbed out and translates to a no-op.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|This API is stubbed out and translates to a no-op.|
 **Required Permissions**:
 
   * None 
@@ -1431,7 +1431,7 @@ Triggers a mouse "Scroll" event.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | const int32_t |x_pixels|The number of pixels to scroll on the x axis. |
 | const int32_t |y_pixels|The number of pixels to scroll on the y axis.|
 
@@ -1439,10 +1439,10 @@ Triggers a mouse "Scroll" event.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView was scrolled. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView was scrolled. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1474,18 +1474,18 @@ Get the current zoom factor. The default zoom factor is 1.0.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
 | double * |out_zoom_factor|Current numeric value for zoom factor.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The out_zoom_factor parameter was updated with the current zoom value. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get the zoom factor due to an internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The out_zoom_factor parameter was updated with the current zoom value. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get the zoom factor due to an internal error.|
 **Required Permissions**:
 
   * None 
@@ -1516,18 +1516,18 @@ Zoom in one level.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView zoomed in. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to zoom in due to an internal error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLWebViewResult_ZoomLimitReached|if cannot zoom in any further.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView zoomed in. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to zoom in due to an internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLWebViewResult_ZoomLimitReached|if cannot zoom in any further.|
 **Required Permissions**:
 
   * None 
@@ -1558,18 +1558,18 @@ Zoom out one level.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView zoomed out. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to zoom out due to an internal error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLWebViewResult_ZoomLimitReached|if cannot zoom out any further.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView zoomed out. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to zoom out due to an internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLWebViewResult_ZoomLimitReached|if cannot zoom out any further.|
 **Required Permissions**:
 
   * None 
@@ -1600,17 +1600,17 @@ Reset zoom level to 1.0.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView zoom was reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to reset zoom due to an internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The MLWebView zoom was reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to reset zoom due to an internal error.|
 **Required Permissions**:
 
   * None 
@@ -1642,15 +1642,15 @@ Retrieves the 4x4 texture coordinate transform matrix used by all MLWebView fram
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
-| [MLMat4f](/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) * |out_matrix|The retrieved matrix.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLMat4f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) * |out_matrix|The retrieved matrix.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The constant matrix was retrieved. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The constant matrix was retrieved. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2.|
 **Required Permissions**:
 
   * None 
@@ -1685,17 +1685,17 @@ Remove all webview cookies.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If all cookies removed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Removing all cookies failed due to an internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If all cookies removed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Removing all cookies failed due to an internal error.|
 **Required Permissions**:
 
   * None 
@@ -1726,17 +1726,17 @@ Clear the webview cache.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If cache cleared successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Clearing cache failed due to an internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|WebView was paused. See [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If cache cleared successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|If the MLWebView handle is not ready to use if asynchronous creation was used, MLWebViewCallbacks struct version >= 2. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Clearing cache failed due to an internal error.|
 **Required Permissions**:
 
   * None 
@@ -1762,23 +1762,23 @@ MLResult MLWebViewPause(
 )
 ```
 
-Pause the webview. Call [MLWebViewResume](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) to resume. 
+Pause the webview. Call [MLWebViewResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewresume) to resume. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
-| [MLWebViewPauseType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype) |pause_type|The webview pause type [MLWebViewPauseType](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype). [MLWebViewPauseType_Multimedia](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-multimedia) Is a simple pause for all multimedia of the webview. [MLWebViewPauseType_Timers](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-timers) Intended to stop animation of the webview content. [MLWebViewPauseType_Discard](/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-discard) Uses to free the webview rendering process but keep alive the MLWebView handle.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed. |
+| [MLWebViewPauseType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype) |pause_type|The webview pause type [MLWebViewPauseType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype). [MLWebViewPauseType_Multimedia](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-multimedia) Is a simple pause for all multimedia of the webview. [MLWebViewPauseType_Timers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-timers) Intended to stop animation of the webview content. [MLWebViewPauseType_Discard](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#enums-mlwebviewpausetype-discard) Uses to free the webview rendering process but keep alive the MLWebView handle.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle or invalid MLWebViewPauseType value. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If paused successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|MLWebView handle is not ready to use. See an asynchronous mode of the [MLWebViewCreate](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Pause failed due to an internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle or invalid MLWebViewPauseType value. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If paused successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|MLWebView handle is not ready to use. See an asynchronous mode of the [MLWebViewCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Pause failed due to an internal error. |
 This method provides a multiple pause types to the webview.
 
 
@@ -1800,22 +1800,22 @@ MLResult MLWebViewResume(
 )
 ```
 
-Resumes a webview after a previous call of the [MLWebViewPause](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). 
+Resumes a webview after a previous call of the [MLWebViewPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewpause). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |web_view|The webview being accessed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If resumed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|MLWebView handle is not ready to use. See an asynchronous mode of the [MLWebViewCreate](/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Resume failed due to an internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Unable to find the specified MLWebView handle. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If resumed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|MLWebView handle is not ready to use. See an asynchronous mode of the [MLWebViewCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#mlresult-mlwebviewcreate). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Resume failed due to an internal error. |
 Resume webview to the normal operation for all webview pause types.
 
 

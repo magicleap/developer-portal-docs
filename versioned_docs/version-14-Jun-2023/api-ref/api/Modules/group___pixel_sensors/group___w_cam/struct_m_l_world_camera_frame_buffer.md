@@ -6,7 +6,7 @@ summary: a structure to encapsulate per plane info for each camera frame.
 
 # MLWorldCameraFrameBuffer
 
-**Module:** **[Pixel Sensors](/api-ref/api/Modules/group___pixel_sensors/group___pixel_sensors.md)** **/** **[World Camera](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md)**
+**Module:** **[Pixel Sensors](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___pixel_sensors.md)** **/** **[World Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md)**
 
 
 
@@ -19,12 +19,12 @@ A structure to encapsulate per plane info for each camera frame.  [More...](#det
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[width](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-width)**  |
-| uint32_t | **[height](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-height)**  |
-| uint32_t | **[stride](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-stride)**  |
-| uint32_t | **[bytes_per_pixel](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-bytes-per-pixel)**  |
-| uint32_t | **[size](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-size)**  |
-| uint8_t * | **[data](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint8-t-data)**  |
+| uint32_t | **[width](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-width)**  |
+| uint32_t | **[height](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-height)**  |
+| uint32_t | **[stride](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-stride)**  |
+| uint32_t | **[bytes_per_pixel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-bytes-per-pixel)**  |
+| uint32_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint32-t-size)**  |
+| uint8_t * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md#uint8-t-data)**  |
 
 ## Detailed Description
 

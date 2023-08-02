@@ -8,13 +8,13 @@ title: MagicLeapXrProviderNativeBindings
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
@@ -73,7 +73,7 @@ public ulong GetInputHandle()
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetUnityPose {#mlresultcode-getunitypose}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetUnityPose {#mlresultcode-getunitypose}
 
 ```csharp
 public MLResult.Code GetUnityPose(
@@ -87,7 +87,7 @@ public MLResult.Code GetUnityPose(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |cfuid|A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values. |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |cfuid|A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values. |
 | out Pose |pose||
 
 
@@ -125,7 +125,7 @@ public delegate void OnDebugMessageDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StartHapticsPattern {#mlresultcode-starthapticspattern}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StartHapticsPattern {#mlresultcode-starthapticspattern}
 
 ```csharp
 public MLResult.Code StartHapticsPattern(
@@ -149,7 +149,7 @@ public MLResult.Code StartHapticsPattern(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StopHaptics {#mlresultcode-stophaptics}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StopHaptics {#mlresultcode-stophaptics}
 
 ```csharp
 public MLResult.Code StopHaptics()

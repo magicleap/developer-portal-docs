@@ -35,7 +35,7 @@ public CreateInfo(
 | Type | Name  | Description  | 
 |--|--|--|
 | GCHandle |context|GCHandle passed back to the callbacks as the user context|
-| [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) |isReleaseBufferAvailable|If the api supports releasing the native buffer. Pass false to avoid unnecesarry calls from unmanaged to managed layer.|
+| [YcbcrRenderer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md) |isReleaseBufferAvailable|If the api supports releasing the native buffer. Pass false to avoid unnecesarry calls from unmanaged to managed layer.|
 | bool |isFrameTransformMatrixAvailable|If the api supports a frame transform matrix. Pass false to avoid unnecesarry calls & data copies from unmanaged to managed layer & back.|
 
 

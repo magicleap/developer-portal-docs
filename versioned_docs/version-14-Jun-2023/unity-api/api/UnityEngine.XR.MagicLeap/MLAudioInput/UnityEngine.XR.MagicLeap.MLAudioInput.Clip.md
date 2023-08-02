@@ -14,7 +14,7 @@ Streams audio input data into an AudioClip.
 
 Inherits from: <br></br>IDisposable
 
-Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip.md), <br></br>[UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip.md)
+Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip.md), <br></br>[UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip.md)
 
 
 
@@ -36,7 +36,7 @@ public Clip(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MicCaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
+| [MicCaptureType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#enums-miccapturetype) |captureType|The type of mic input to capture. |
 | uint |samplesLengthInSeconds||
 | uint |channels||
 
@@ -84,7 +84,7 @@ protected virtual abstract void OnReceiveSamples(
 
 
 
-**Reimplemented by**: [OnReceiveSamples](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip.md#override-void-onreceivesamples), [OnReceiveSamples](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip.md#override-void-onreceivesamples)
+**Reimplemented by**: [OnReceiveSamples](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip.md#override-void-onreceivesamples), [OnReceiveSamples](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip.md#override-void-onreceivesamples)
 
 
 

@@ -17,7 +17,7 @@ Contains both the data and information necessary to read the data for a specific
 
 ## Public Methods
 
-### [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) Create {#planeinfo-create}
+### [PlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.PlaneInfo.md) Create {#planeinfo-create}
 
 Create and return an initialized version of this struct. 
 

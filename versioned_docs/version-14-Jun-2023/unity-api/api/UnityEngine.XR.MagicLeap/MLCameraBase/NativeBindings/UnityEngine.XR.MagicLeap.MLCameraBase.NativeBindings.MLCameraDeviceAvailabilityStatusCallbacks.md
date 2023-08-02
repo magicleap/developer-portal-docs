@@ -17,7 +17,7 @@ Device availability status callbacks to be implemented by client to receive devi
 
 ## Public Methods
 
-### [MLCameraDeviceAvailabilityStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md) Create {#mlcameradeviceavailabilitystatuscallbacks-create}
+### [MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md) Create {#mlcameradeviceavailabilitystatuscallbacks-create}
 
 Create and return an initialized version of this struct. 
 
@@ -36,7 +36,7 @@ public static MLCameraDeviceAvailabilityStatusCallbacks Create()
 
 -----------
 
-### [MLCameraDeviceAvailabilityStatusCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md) CreateUninitialized {#mlcameradeviceavailabilitystatuscallbacks-createuninitialized}
+### [MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraDeviceAvailabilityStatusCallbacks.md) CreateUninitialized {#mlcameradeviceavailabilitystatuscallbacks-createuninitialized}
 
 ```csharp
 public static MLCameraDeviceAvailabilityStatusCallbacks CreateUninitialized()

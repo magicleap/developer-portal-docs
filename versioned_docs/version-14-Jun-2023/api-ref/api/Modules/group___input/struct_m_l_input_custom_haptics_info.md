@@ -6,7 +6,7 @@ summary: or pre-defined patterns to be played.
 
 # MLInputCustomHapticsInfo
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure containing a list of Buzz command and/or pre-defined patterns to be 
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md#uint32-t-version)**  |
-| [MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) * | **[custom](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md#mlinputcustomhaptics-custom)**  |
-| uint32_t | **[size](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md#uint32-t-size)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md#uint32-t-version)**  |
+| [MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) * | **[custom](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md#mlinputcustomhaptics-custom)**  |
+| uint32_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md#uint32-t-size)**  |
 
 ## Detailed Description
 
@@ -71,7 +71,7 @@ MLInputCustomHaptics * custom;
 
 | Type | Description |
 |--|--|
-| [MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) * | A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
+| [MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) * | A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
 
 
 An array containing the list of buzz command and/or pre-defined patterns.

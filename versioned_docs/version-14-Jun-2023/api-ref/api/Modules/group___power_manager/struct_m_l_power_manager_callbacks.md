@@ -6,7 +6,7 @@ summary: a structure containing power manager callback events. individual callba
 
 # MLPowerManagerCallbacks
 
-**Module:** **[Power Manager](/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
+**Module:** **[Power Manager](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
 
 
 
@@ -19,10 +19,10 @@ A structure containing Power Manager callback events. Individual callbacks which
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#uint32-t-version)**  |
-| void(*)(MLPowerManagerPowerState state, void *user_data) | **[on_power_state_changed](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#void-on-power-state-changed)** <br></br>This callback will be invoked when [MLPowerManagerPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpowerstate) changes.  |
-| void(*)(const MLPowerManagerPropertyData *properties, void *user_data) | **[on_properties_changed](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#void-on-properties-changed)** <br></br>This callback will be invoked when [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) of a component changes. Only the properties that have changed will be returned, the component may support additional properties which values were not returned.  |
-| void(*)(MLPowerManagerError error, void *user_data) | **[on_error_occurred](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#void-on-error-occurred)** <br></br>This callback will be invoked when an [MLPowerManagerError](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagererror) occurs on one of the components.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#uint32-t-version)**  |
+| void(*)(MLPowerManagerPowerState state, void *user_data) | **[on_power_state_changed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#void-on-power-state-changed)** <br></br>This callback will be invoked when [MLPowerManagerPowerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpowerstate) changes.  |
+| void(*)(const MLPowerManagerPropertyData *properties, void *user_data) | **[on_properties_changed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#void-on-properties-changed)** <br></br>This callback will be invoked when [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) of a component changes. Only the properties that have changed will be returned, the component may support additional properties which values were not returned.  |
+| void(*)(MLPowerManagerError error, void *user_data) | **[on_error_occurred](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md#void-on-error-occurred)** <br></br>This callback will be invoked when an [MLPowerManagerError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagererror) occurs on one of the components.  |
 
 ## Detailed Description
 
@@ -65,7 +65,7 @@ Version of this structure.
 void(*)(MLPowerManagerPowerState state, void *user_data) on_power_state_changed;
 ```
 
-This callback will be invoked when [MLPowerManagerPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpowerstate) changes. 
+This callback will be invoked when [MLPowerManagerPowerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpowerstate) changes. 
 
 
 | Type | Description |
@@ -77,8 +77,8 @@ This callback will be invoked when [MLPowerManagerPowerState](/api-ref/api/Modul
 
 |  |   |   |
 |--|--|--|
-|  |state|[MLPowerManagerPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpowerstate) representing the new power state. |
-|  |user_data|User data as passed to the [MLPowerManagerSetCallbacks](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks). |
+|  |state|[MLPowerManagerPowerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpowerstate) representing the new power state. |
+|  |user_data|User data as passed to the [MLPowerManagerSetCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks). |
 
 
 
@@ -91,7 +91,7 @@ This callback will be invoked when [MLPowerManagerPowerState](/api-ref/api/Modul
 void(*)(const MLPowerManagerPropertyData *properties, void *user_data) on_properties_changed;
 ```
 
-This callback will be invoked when [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) of a component changes. Only the properties that have changed will be returned, the component may support additional properties which values were not returned. 
+This callback will be invoked when [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) of a component changes. Only the properties that have changed will be returned, the component may support additional properties which values were not returned. 
 
 
 | Type | Description |
@@ -103,8 +103,8 @@ This callback will be invoked when [MLPowerManagerPropertyData](/api-ref/api/Mod
 
 |  |   |   |
 |--|--|--|
-|  |properties|[MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) struct encapsulating the properties changed. |
-|  |user_data|User data as passed to the [MLPowerManagerSetCallbacks](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks). |
+|  |properties|[MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) struct encapsulating the properties changed. |
+|  |user_data|User data as passed to the [MLPowerManagerSetCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks). |
 
 
 
@@ -117,7 +117,7 @@ This callback will be invoked when [MLPowerManagerPropertyData](/api-ref/api/Mod
 void(*)(MLPowerManagerError error, void *user_data) on_error_occurred;
 ```
 
-This callback will be invoked when an [MLPowerManagerError](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagererror) occurs on one of the components. 
+This callback will be invoked when an [MLPowerManagerError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagererror) occurs on one of the components. 
 
 
 | Type | Description |
@@ -130,7 +130,7 @@ This callback will be invoked when an [MLPowerManagerError](/api-ref/api/Modules
 |  |   |   |
 |--|--|--|
 |  |error|The error which has occurred. |
-|  |user_data|User data as passed to the [MLPowerManagerSetCallbacks](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks). |
+|  |user_data|User data as passed to the [MLPowerManagerSetCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks). |
 
 
 

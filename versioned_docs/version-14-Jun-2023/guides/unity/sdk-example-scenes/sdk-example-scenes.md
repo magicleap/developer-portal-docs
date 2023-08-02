@@ -15,7 +15,7 @@ The Magic Leap 2 Unity Example Project showcases the Magic Leap's Unity SDK feat
 View the following guides to setup and learn about each of the examples included in the Unity Examples Project.
 
 :::info
-For information on which of these examples work in App Simulator, please reference the [App Simulator Key API Features](/docs/guides/developer-tools/app-sim/app-sim-key-api-features.md) page.
+For information on which of these examples work in App Simulator, please reference the [App Simulator Key API Features](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-sim-key-api-features.md) page.
 :::
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

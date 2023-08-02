@@ -68,7 +68,7 @@ public static bool GetKeyPointStatus(
 
 ### void SetPreRenderPoseUpdate {#void-setprerenderposeupdate}
 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) call for pre render Keypoints update. 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) call for pre render Keypoints update. 
 
 ```csharp
 public void SetPreRenderPoseUpdate(

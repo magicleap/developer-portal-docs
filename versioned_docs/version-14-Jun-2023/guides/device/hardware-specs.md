@@ -54,15 +54,15 @@ Magic Leap 2 now supports only one Controller at any given time.
 
 ## Hardware Documentation
 
-Check the other [Device Guides](/docs/category/device-guides) for more information and troubleshooting tips for the Magic Leap 2 hardware:
+Check the other [Device Guides](/versioned_docs/version-14-Jun-2023/category/device-guides) for more information and troubleshooting tips for the Magic Leap 2 hardware:
 
-- [Developer Mode](/docs/guides/device/developer-mode)
-- [Updating the OS](/docs/guides/device/updating-the-os/device-flashing-guide)
-- [Field of View](/docs/guides/device/fov)
-- [Power Optimization and USB guidance](/docs/guides/device/power-optimization)
-- [Controller LED](/docs/guides/device/controller-led)
-- [Headset LED](/docs/guides/device/headset-led)
-- [Compute Pack LED](/docs/guides/device/compute-pack-led)
-- [Hardware Tips](/docs/guides/device/hardware-tips)
+- [Developer Mode](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/developer-mode)
+- [Updating the OS](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide)
+- [Field of View](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/fov)
+- [Power Optimization and USB guidance](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/power-optimization)
+- [Controller LED](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/controller-led)
+- [Headset LED](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/headset-led)
+- [Compute Pack LED](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/compute-pack-led)
+- [Hardware Tips](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/hardware-tips)
 
-For guidance on application design for the Magic Leap 2 hardware, please refer to the [Best Practices](/docs/category/best-practices) section of the documentation.
+For guidance on application design for the Magic Leap 2 hardware, please refer to the [Best Practices](/versioned_docs/version-14-Jun-2023/category/best-practices) section of the documentation.

@@ -6,7 +6,7 @@ summary: iec fdis 23001-72011 common encryption in iso base media file format fi
 
 # MLMediaCodecCryptoInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,14 +19,14 @@ Metadata describing the structure of a (at least partially) encrypted input samp
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#uint32-t-version)**  |
-| size_t | **[number_of_subsamples](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#size-t-number-of-subsamples)**  |
-| [MLMediaCodecCryptoMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeccryptomode) | **[crypto_mode](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#mlmediacodeccryptomode-crypto-mode)**  |
-| [MLMediaCodecCryptoPattern](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md) | **[crypto_pattern](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#mlmediacodeccryptopattern-crypto-pattern)**  |
-| const uint8_t * | **[key](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-uint8-t-key)**  |
-| const uint8_t * | **[iv](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-uint8-t-iv)**  |
-| const size_t * | **[bytes_of_clear_data](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-size-t-bytes-of-clear-data)**  |
-| const size_t * | **[bytes_of_encrypted_data](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-size-t-bytes-of-encrypted-data)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#uint32-t-version)**  |
+| size_t | **[number_of_subsamples](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#size-t-number-of-subsamples)**  |
+| [MLMediaCodecCryptoMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodeccryptomode) | **[crypto_mode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#mlmediacodeccryptomode-crypto-mode)**  |
+| [MLMediaCodecCryptoPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md) | **[crypto_pattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#mlmediacodeccryptopattern-crypto-pattern)**  |
+| const uint8_t * | **[key](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-uint8-t-key)**  |
+| const uint8_t * | **[iv](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-uint8-t-iv)**  |
+| const size_t * | **[bytes_of_clear_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-size-t-bytes-of-clear-data)**  |
+| const size_t * | **[bytes_of_encrypted_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_info.md#const-size-t-bytes-of-encrypted-data)**  |
 
 ## Detailed Description
 
@@ -103,7 +103,7 @@ MLMediaCodecCryptoPattern crypto_pattern;
 
 | Type | Description |
 |--|--|
-| [MLMediaCodecCryptoPattern](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md) | Metadata describing an encryption pattern for the protected bytes in a subsample.  |
+| [MLMediaCodecCryptoPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md) | Metadata describing an encryption pattern for the protected bytes in a subsample.  |
 
 
 Encryption pattern used by the subsample. 

@@ -30,7 +30,7 @@ public MLAudioSpatialSoundDistanceProperties(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [SpatialSound.DistanceProperties](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.DistanceProperties.md) |distanceProperties|Properties specifying the distance response of a spatial sound. |
+| [SpatialSound.DistanceProperties](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.DistanceProperties.md) |distanceProperties|Properties specifying the distance response of a spatial sound. |
 
 
 

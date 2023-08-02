@@ -17,7 +17,7 @@ Representation of the native frame structure.
 
 ## Public Methods
 
-### [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) Create {#mlwebrtcframe-create}
+### [MLWebRTCFrame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) Create {#mlwebrtcframe-create}
 
 ```csharp
 public static MLWebRTCFrame Create(
@@ -30,7 +30,7 @@ public static MLWebRTCFrame Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) |format|Defines the supported output formats of the image planes. |
+| [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) |format|Defines the supported output formats of the image planes. |
 
 
 
@@ -39,9 +39,9 @@ public static MLWebRTCFrame Create(
 
 -----------
 
-### [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) Create {#mlwebrtcframe-create}
+### [MLWebRTCFrame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) Create {#mlwebrtcframe-create}
 
-Caller MUST call  FreeUnmanagedMemory  when finished with the returned  [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) ! Unmanaged memory will be allocated for the  FrameData  pointer.    Creates and returns an initialized version of this struct from a [MLWebRTC.VideoSink.Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) object. 
+Caller MUST call  FreeUnmanagedMemory  when finished with the returned  [MLWebRTCFrame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) ! Unmanaged memory will be allocated for the  FrameData  pointer.    Creates and returns an initialized version of this struct from a [MLWebRTC.VideoSink.Frame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) object. 
 
 ```csharp
 public static MLWebRTCFrame Create(
@@ -54,7 +54,7 @@ public static MLWebRTCFrame Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebRTC.VideoSink.Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) |frame|The frame object to use for initializing.|
+| [MLWebRTC.VideoSink.Frame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) |frame|The frame object to use for initializing.|
 
 
 
@@ -107,7 +107,7 @@ public OutputFormat Format;
 
 | Type | Description  | 
 |--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
+| [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
 
 
 
@@ -117,7 +117,7 @@ public OutputFormat Format;
 
 ### FrameData {#intptr-framedata}
 
-[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) data to be interpreted as a [MLWebRTCNativeFrameInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCNativeFrameInfo.md) if Format is [OutputFormat.NativeBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-nativebuffer), otherwise interpreted as a [MLWebRTCFramePlanes](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFramePlanes.md). 
+[Frame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) data to be interpreted as a [MLWebRTCNativeFrameInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCNativeFrameInfo.md) if Format is [OutputFormat.NativeBuffer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-nativebuffer), otherwise interpreted as a [MLWebRTCFramePlanes](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFramePlanes.md). 
 
 ```csharp
 

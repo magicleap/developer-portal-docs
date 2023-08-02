@@ -13,7 +13,7 @@ tags: [Unity, Controller, Input, XR Interaction Toolkit, Examples]
 
 The controller example scene provided with the Magic Leap Unity Examples Project provides developers with simple demonstrations of typical controller interactions. The included prefabs utilize the [XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@1.0/manual/index.html)(XRI) for familiar interaction standards and direct access to Unity events. This project gives you an excellent starting point for becoming familiar with the tools and scripts that allow you to take full advantage of the Magic Leap 2 controller.
 
-To download the Examples project, follow the [Getting Started Guide](/docs/guides/unity/getting-started/unity-getting-started.md). The controller scene can be found under `Assets/MagicLeap/Examples/Scenes/Control`.
+To download the Examples project, follow the [Getting Started Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/unity-getting-started.md). The controller scene can be found under `Assets/MagicLeap/Examples/Scenes/Control`.
 
 ## Scene Hierarchy and Prefab Locations
 
@@ -32,7 +32,7 @@ Those prefabs can be found in the following file locations:
 
 Data for input and controller bindings are configured in the Magic Leap Input Asset, which utilizes the Unity Input System. The Input Asset can be found in the Magic Leap SDK package located in: `Packages/Magic Leap SDK/Subsystems/Input`.
 
-For more information on how Magic Leap 2 interfaces with Unity's Input System, reference our [ML1 Controller Porting Guide](/docs/guides/unity/input/controller/controller-porting-guide.md).
+For more information on how Magic Leap 2 interfaces with Unity's Input System, reference our [ML1 Controller Porting Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/controller/controller-porting-guide.md).
 
 <Image url= {require("/img/unity/input/controller/xri-example-walkthrough/inputAsset2.png")} >Input Asset In Project Folder</Image>
 

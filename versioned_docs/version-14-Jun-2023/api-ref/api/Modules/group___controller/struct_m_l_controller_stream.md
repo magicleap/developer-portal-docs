@@ -6,7 +6,7 @@ summary: a structure containing information about the tracking-stream of this co
 
 # MLControllerStream
 
-**Module:** **[Controller](/api-ref/api/Modules/group___controller/group___controller.md)**
+**Module:** **[Controller](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___controller/group___controller.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure containing information about the tracking-stream of this controller.
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[coord_frame_controller](/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md#mlcoordinateframeuid-coord-frame-controller)**  |
-| bool | **[is_active](/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md#bool-is-active)**  |
-| [MLControllerMode](/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollermode) | **[mode](/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md#mlcontrollermode-mode)** <br></br>Mode of the given controller stream.  |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[coord_frame_controller](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md#mlcoordinateframeuid-coord-frame-controller)**  |
+| bool | **[is_active](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md#bool-is-active)**  |
+| [MLControllerMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollermode) | **[mode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___controller/struct_m_l_controller_stream.md#mlcontrollermode-mode)** <br></br>Mode of the given controller stream.  |
 
 ## Detailed Description
 
@@ -83,7 +83,7 @@ Mode of the given controller stream.
 
 | Type | Description |
 |--|--|
-| [MLControllerMode](/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollermode) | A set of possible tracking modes for the Controller system.  |
+| [MLControllerMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___controller/group___controller.md#enums-mlcontrollermode) | A set of possible tracking modes for the Controller system.  |
 
 
 Note that the controller mode can switch depending on current environmental conditions. In 6dof mode both rotation and translation are available. In 3dof mode only rotation is available. 

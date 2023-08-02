@@ -6,7 +6,7 @@ summary: cea708 caption window attributes.
 
 # MLCea708CaptionWindowAttr
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,16 +19,16 @@ Cea708 Caption Window Attributes.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCea708CaptionColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | **[fill_color](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#mlcea708captioncolor-fill-color)**  |
-| [MLCea708CaptionColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | **[border_color](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#mlcea708captioncolor-border-color)**  |
-| int32_t | **[border_type](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-border-type)**  |
-| bool | **[word_wrap](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#bool-word-wrap)**  |
-| int32_t | **[print_direction](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-print-direction)**  |
-| int32_t | **[scroll_direction](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-scroll-direction)**  |
-| int32_t | **[justify](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-justify)**  |
-| int32_t | **[effect_direction](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-effect-direction)**  |
-| int32_t | **[effect_speed](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-effect-speed)**  |
-| int32_t | **[display_effect](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-display-effect)**  |
+| [MLCea708CaptionColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | **[fill_color](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#mlcea708captioncolor-fill-color)**  |
+| [MLCea708CaptionColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | **[border_color](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#mlcea708captioncolor-border-color)**  |
+| int32_t | **[border_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-border-type)**  |
+| bool | **[word_wrap](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#bool-word-wrap)**  |
+| int32_t | **[print_direction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-print-direction)**  |
+| int32_t | **[scroll_direction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-scroll-direction)**  |
+| int32_t | **[justify](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-justify)**  |
+| int32_t | **[effect_direction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-effect-direction)**  |
+| int32_t | **[effect_speed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-effect-speed)**  |
+| int32_t | **[display_effect](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md#int32-t-display-effect)**  |
 
 ## Detailed Description
 
@@ -60,7 +60,7 @@ MLCea708CaptionColor fill_color;
 
 | Type | Description |
 |--|--|
-| [MLCea708CaptionColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | Cea708 Caption Color.  |
+| [MLCea708CaptionColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | Cea708 Caption Color.  |
 
 
 
@@ -79,7 +79,7 @@ MLCea708CaptionColor border_color;
 
 | Type | Description |
 |--|--|
-| [MLCea708CaptionColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | Cea708 Caption Color.  |
+| [MLCea708CaptionColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | Cea708 Caption Color.  |
 
 
 

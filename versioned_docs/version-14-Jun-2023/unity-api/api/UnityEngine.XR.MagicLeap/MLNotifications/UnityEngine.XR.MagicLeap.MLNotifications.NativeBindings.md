@@ -12,14 +12,14 @@ summary: see ml-system-notification-manager.h for additional comments.
 See ml&#95;system&#95;notification&#95;manager.h for additional comments.   
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerCreate {#mlresultcode-mlsystemnotificationmanagercreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerCreate {#mlresultcode-mlsystemnotificationmanagercreate}
 
 Create System Notification manager client. 
 
@@ -43,7 +43,7 @@ public MLResult.Code MLSystemNotificationManagerCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerDestroy {#mlresultcode-mlsystemnotificationmanagerdestroy}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerDestroy {#mlresultcode-mlsystemnotificationmanagerdestroy}
 
 Destroy System Notification manager client. 
 
@@ -67,7 +67,7 @@ public MLResult.Code MLSystemNotificationManagerDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerSetNotifications {#mlresultcode-mlsystemnotificationmanagersetnotifications}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerSetNotifications {#mlresultcode-mlsystemnotificationmanagersetnotifications}
 
 Suppress/Unsuppress System Notifications. 
 

@@ -23,9 +23,9 @@ Also, RenderDoc can only target processes that directly make **OpenGL or Vulkan*
 
 ## General Setup
 
-Ensure you have **adb** in your PATH. Follow our [ADB Setup Guide](/docs/guides/developer-tools/android-debug-bridge/adb-setup.md) for more info.
+Ensure you have **adb** in your PATH. Follow our [ADB Setup Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-setup.md) for more info.
 
-Download RenderDoc from the [ML Hub Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md). Extract the zip or tarball.
+Download RenderDoc from the [ML Hub Package Manager](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md). Extract the zip or tarball.
 
 ### Windows Setup
 
@@ -103,7 +103,7 @@ $ adb uninstall org.renderdoc.renderdoccmd.x64
 
 <Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc-eventbrowser.png")} >Radeon Developer Panel Connection Tab</Image>
 
-You can now use RenderDoc as you normally would. Detailed guidance on using RenderDoc is outside the scope of this document, but the developer of RenderDoc has plenty of [documentation](https://renderdoc.org/docs/getting_started/quick_start.html).
+You can now use RenderDoc as you normally would. Detailed guidance on using RenderDoc is outside the scope of this document, but the developer of RenderDoc has plenty of [documentation](https://renderdoc.org/versioned_docs/version-14-Jun-2023/getting_started/quick_start.html).
 
 ## Debugging Something Other Than an APK
 

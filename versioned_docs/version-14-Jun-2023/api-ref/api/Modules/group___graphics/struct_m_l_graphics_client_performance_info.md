@@ -6,7 +6,7 @@ summary: performance timing information for the graphics client.
 
 # MLGraphicsClientPerformanceInfo
 
-**Module:** **[Graphics](/api-ref/api/Modules/group___graphics/group___graphics.md)**
+**Module:** **[Graphics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md)**
 
 
 
@@ -19,13 +19,13 @@ Performance timing information for the graphics client.  [More...](#detailed-des
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint64_t | **[frame_start_cpu_comp_acquire_cpu_ns](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-start-cpu-comp-acquire-cpu-ns)**  |
-| uint64_t | **[frame_start_cpu_frame_end_gpu_ns](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-start-cpu-frame-end-gpu-ns)**  |
-| uint64_t | **[frame_start_cpu_frame_start_cpu_ns](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-start-cpu-frame-start-cpu-ns)**  |
-| uint64_t | **[frame_duration_cpu_ns](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-duration-cpu-ns)**  |
-| uint64_t | **[frame_duration_gpu_ns](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-duration-gpu-ns)**  |
-| uint64_t | **[frame_internal_duration_cpu_ns](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-internal-duration-cpu-ns)**  |
-| uint64_t | **[frame_internal_duration_gpu_ns](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-internal-duration-gpu-ns)**  |
+| uint64_t | **[frame_start_cpu_comp_acquire_cpu_ns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-start-cpu-comp-acquire-cpu-ns)**  |
+| uint64_t | **[frame_start_cpu_frame_end_gpu_ns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-start-cpu-frame-end-gpu-ns)**  |
+| uint64_t | **[frame_start_cpu_frame_start_cpu_ns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-start-cpu-frame-start-cpu-ns)**  |
+| uint64_t | **[frame_duration_cpu_ns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-duration-cpu-ns)**  |
+| uint64_t | **[frame_duration_gpu_ns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-duration-gpu-ns)**  |
+| uint64_t | **[frame_internal_duration_cpu_ns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-internal-duration-cpu-ns)**  |
+| uint64_t | **[frame_internal_duration_gpu_ns](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_client_performance_info.md#uint64-t-frame-internal-duration-gpu-ns)**  |
 
 ## Detailed Description
 
@@ -35,7 +35,7 @@ struct MLGraphicsClientPerformanceInfo;
 
 Performance timing information for the graphics client. 
 
-Populated by [MLGraphicsGetClientPerformanceInfo](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclientperformanceinfo), the performance information contains all metrics tracked by the graphics system for the specified client. Metrics are calculated using a sliding window and can be used to adjust the client workload characteristics (i.e. scale, fidelity, etc).
+Populated by [MLGraphicsGetClientPerformanceInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclientperformanceinfo), the performance information contains all metrics tracked by the graphics system for the specified client. Metrics are calculated using a sliding window and can be used to adjust the client workload characteristics (i.e. scale, fidelity, etc).
 
 
 

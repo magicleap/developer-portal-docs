@@ -13,7 +13,7 @@ import TabItem from '@theme/TabItem';
 You can flash your Magic Leap 2 device to update it to a different version of the Magic Leap Operating System (Magic Leap OS). This Flashing guide works for computers running a recent version of Windows, Mac, or Linux.
 
 :::tip
-You can also flash your device using Magic Leap Hub. For more information see [ML Hub Installer](/docs/guides/developer-tools/ml-hub/ml-hub-os-installer.md) guide.
+You can also flash your device using Magic Leap Hub. For more information see [ML Hub Installer](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-os-installer.md) guide.
 :::
 
 :::caution
@@ -31,9 +31,9 @@ while in fastboot. If it shows 'version: WMN1C10X_020222_PRS_15' - then your BIO
 Before you flash your device, make sure the device is charged for approximately 45 minutes or until at least a pattern of 3 lit LEDs are observed on the Compute Pack. Additionally, make sure you have installed all the necessary tools:
 
 1. [ML Hub](https://developer.magicleap.cloud/downloads)
-2. [Android Debug Bridge (adb)](/docs/guides/developer-tools/android-debug-bridge/android-debug-bridge.md)
-3. [Magic Leap SDK](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md) via ML Hub.
-4. [Android Debug Bridge (adb)](/docs/guides/developer-tools/android-debug-bridge/android-debug-bridge.md)
+2. [Android Debug Bridge (adb)](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/android-debug-bridge.md)
+3. [Magic Leap SDK](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md) via ML Hub.
+4. [Android Debug Bridge (adb)](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/android-debug-bridge.md)
 
 After your device is charged and the tools are installed, power-on the Magic Leap 2 and connect it to your computer.
 
@@ -86,13 +86,13 @@ When flashing, you **MUST** flash in a linear sequence based on the build order 
 
 ## Verify the Device Is Recognized (Enumeration)
 
-Once your device is booted and connected to your computer, it should be recognized by ML Hub under the [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge.md) module or with [ADB](/docs/guides/developer-tools/android-debug-bridge/android-debug-bridge.md) on the command line.
+Once your device is booted and connected to your computer, it should be recognized by ML Hub under the [Device Bridge](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-device-bridge.md) module or with [ADB](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/android-debug-bridge.md) on the command line.
 
 ### Verifying with ADB
 
 To verify that your device is recognized with ADB:
 
-1. Make sure you have ADB installed by following the [ADB](/docs/guides/developer-tools/android-debug-bridge/adb-setup.md) set up guide.
+1. Make sure you have ADB installed by following the [ADB](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-setup.md) set up guide.
 2. Open a terminal window.
 3. Run:
 
@@ -181,7 +181,7 @@ Before flashing make sure to power-cycle your device:
 
 ## Flash the Device using OS Installer
 
-After completing the steps above, please use the [ML Hub OS Installer](/docs/guides/developer-tools/ml-hub/ml-hub-os-installer.md) guide to complete the flashing process.
+After completing the steps above, please use the [ML Hub OS Installer](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-os-installer.md) guide to complete the flashing process.
 
 ## Troubleshooting
 

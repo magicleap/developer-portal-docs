@@ -5,7 +5,7 @@ title: MLMediaRecorderOnError
 
 # MLMediaRecorderOnError
 
-**Module:** **[Media Recorder](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md)**
+**Module:** **[Media Recorder](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLMediaRecorderOnError
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[track_id](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#uint32-t-track-id)**  |
-| [MLMediaRecorderError](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordererror) | **[error](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlmediarecordererror-error)**  |
-| int | **[extra](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#int-extra)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#void-data)**  |
+| uint32_t | **[track_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#uint32-t-track-id)**  |
+| [MLMediaRecorderError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordererror) | **[error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlmediarecordererror-error)**  |
+| int | **[extra](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#int-extra)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#void-data)**  |
 
 ## Public Attributes Documentation
 
@@ -50,7 +50,7 @@ MLMediaRecorderError error;
 
 | Type | Description |
 |--|--|
-| [MLMediaRecorderError](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordererror) | Video recorder error types.  |
+| [MLMediaRecorderError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#enums-mlmediarecordererror) | Video recorder error types.  |
 
 
 The error of MLMediaRecorderError. 

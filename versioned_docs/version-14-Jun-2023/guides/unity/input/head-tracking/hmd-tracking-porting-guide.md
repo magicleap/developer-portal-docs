@@ -43,9 +43,9 @@ MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvent
 
 ## See also
 
-- [`MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvents);`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
+- [`MLHeadTracking.TryGetMapEvents(headDevice, out MLHeadTracking.MapEvents mapEvents);`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
   - API to retrieve the Head Tracking Map Events.
-- [`MLHeadTracking.TryGetStateEx(headDevice, out MLHeadTracking.State state);`](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
+- [`MLHeadTracking.TryGetStateEx(headDevice, out MLHeadTracking.State state);`](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md)
   - API to retrieve the Head Tracking State Events.
-- [Tracked Pose Driver](/docs/guides/unity/input/head-tracking/tracked-pose-driver-hmd.md)
+- [Tracked Pose Driver](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/head-tracking/tracked-pose-driver-hmd.md)
   - An easy way to access the HMD's positional and rotational input.

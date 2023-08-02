@@ -9,7 +9,7 @@ summary: a structure used to populate anchor creation info when creating a new s
 
 
 
-A structure used to populate anchor creation info when creating a new Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md).   
+A structure used to populate anchor creation info when creating a new Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md).   
 
 
 
@@ -45,7 +45,7 @@ public MLSpatialAnchorCreateInfo(
 
 ### ExpirationTimestamp {#readonly-ulong-expirationtimestamp}
 
-The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. If the timestamp is set to zero in this struct, it will default to one year from when the anchor is created. 
+The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. If the timestamp is set to zero in this struct, it will default to one year from when the anchor is created. 
 
 ```csharp
 
@@ -62,7 +62,7 @@ public readonly ulong ExpirationTimestamp;
 
 ### Transform {#readonly-transform}
 
-The desired transform of the new Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). The anchor's transform is set when the anchor is created but may be updated later by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
+The desired transform of the new Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). The anchor's transform is set when the anchor is created but may be updated later by the Spatial [Anchor](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
 
 ```csharp
 
@@ -72,7 +72,7 @@ public readonly NativeBindings.MLTransform Transform;
 
 | Type | Description  | 
 |--|--|
-| readonly [NativeBindings.MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
+| readonly [NativeBindings.MLTransform](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
 
 
 

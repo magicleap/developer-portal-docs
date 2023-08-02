@@ -8,13 +8,13 @@ title: MLLazySingleton
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
 
 
-Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLAutoAPISingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md)
+Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLAutoAPISingleton< T >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md)
 
 
 
@@ -61,7 +61,7 @@ protected virtual void Initialize()
 
 
 
-**Reimplemented by**: [Initialize](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#sealed-override-void-initialize)
+**Reimplemented by**: [Initialize](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#sealed-override-void-initialize)
 
 
 

@@ -18,7 +18,7 @@ The example provides an EyeTrackingExample script that drives parameters of the 
 The scene detects where your eyes are pointed and displays cubes in your environment as you look around. Details about eye tracking are displayed above. Bumper is used to switch between tracking modes.
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
 ### Tracking Modes

@@ -16,7 +16,7 @@ This example demonstrates the functionality of using the CV camera to capture vi
 The data received from the camera is processed with a posterization algorithm and then rendered to a texture for example purposes. Intrinsic properties of the camera are shown on the side when recording starts.
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
 ## Requirements

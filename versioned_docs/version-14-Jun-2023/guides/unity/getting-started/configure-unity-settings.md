@@ -14,8 +14,8 @@ import TabItem from '@theme/TabItem';
 
 ## Prerequisites
 
-- [Download Magic Leap Unity SDK](/docs/guides/unity/getting-started/install-the-tools.md)
-- [Unity project using Editor versions in the range of **2022.2.x**](/docs/guides/unity/getting-started/create-a-project.md)
+- [Download Magic Leap Unity SDK](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/install-the-tools.md)
+- [Unity project using Editor versions in the range of **2022.2.x**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/create-a-project.md)
 
 ## Quickstart
 
@@ -45,7 +45,7 @@ The fastest recommended way to set up your project for Magic Leap 2 development 
 
 The Magic Leap Setup Tool will import the latest version of the Magic Leap core SDK compatible with your Unity Editor version. If your project requires an older version of the SDK, you can [assign the Magic Leap SDK path](#assign-magic-leap-sdk-path) manually.
 
-Please reference the Magic Leap OS, SDK and Unity SDK [compatibility matrix](/docs/releases/overview.md#api-version-matrix) to determine which version is right for you.
+Please reference the Magic Leap OS, SDK and Unity SDK [compatibility matrix](/versioned_docs/version-14-Jun-2023/releases/overview.md#api-version-matrix) to determine which version is right for you.
 :::
 
 ## Manual Setup
@@ -65,7 +65,7 @@ The Magic Leap SDK provides access to Magic Leap's perception and input API. The
 
 <Image url= {require("/img/unity/unity_add_tarball.png")} >Unity Editor Package From Disk Dialogue</Image>
 
-3. Navigate to the location of the following folders and select the .tgz file within to add the package from `com.magicleap.unitysdk.tgz` (downloaded via [ML Hub](/docs/guides/getting-started/install-the-tools.md)). For example:
+3. Navigate to the location of the following folders and select the .tgz file within to add the package from `com.magicleap.unitysdk.tgz` (downloaded via [ML Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md)). For example:
 
 - Mac : `$HOME/MagicLeap/tools/unity/<Version>/com.magicleap.unitysdk.tgz`
 - Windows : `%USERPROFILE%/MagicLeap/tools/unity/<Version>/com.magicleap.unitysdk.tgz`
@@ -158,7 +158,7 @@ To locate the Magic Leap C SDK, open the ML Hub application and go to **Package 
 
 ### Custom Manifest
 
- This section provides instructions on how to create a custom manifest file and declare Magic Leap 2 specific permissions for your application. For more information, see the [Permissions Overview](/docs/guides/unity/permissions/declaring-permissions.md) guide.
+ This section provides instructions on how to create a custom manifest file and declare Magic Leap 2 specific permissions for your application. For more information, see the [Permissions Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md) guide.
 
 :::info
 
@@ -207,6 +207,6 @@ This tool can be used to configure new projects in the future. Note, the validat
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<h3><Link to={useBaseUrl("/docs/guides/unity/getting-started/graphics-settings")}> Configure Render Pipeline Settings</Link> </h3>
+<h3><Link to={useBaseUrl("/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/graphics-settings")}> Configure Render Pipeline Settings</Link> </h3>
 
 After configuring your project's settings, learn how to create and optimize your project's rendering for Magic Leap 2.

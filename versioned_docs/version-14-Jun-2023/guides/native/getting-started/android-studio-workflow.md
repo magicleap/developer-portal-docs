@@ -14,13 +14,13 @@ This section outlines the steps required to build Native applications (including
 
 ## Prerequisites
 
-- Make sure you have properly installed everything listed in the [Setup Overview](/docs/guides/native/getting-started/native-setup-overview.md) and have followed the [instructions](/docs/guides/getting-started/install-the-tools.md) on downloading the ML Hub and the latest Magic Leap C SDK (MLSDK).
+- Make sure you have properly installed everything listed in the [Setup Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/getting-started/native-setup-overview.md) and have followed the [instructions](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md) on downloading the ML Hub and the latest Magic Leap C SDK (MLSDK).
   - :::warning
 The **MLSDK** must be installed into a path without spaces.
 :::
 
 - Additionally, make sure you have OpenJDK-11 installed. You can download it from the [Java Development Kit website](https://jdk.java.net/java-se-ri/11).
-- Lastly, you must download the latest **C-API Samples** package from the **Package Manager** within the **ML Hub**. On more information about the package manager, check the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md) guide.
+- Lastly, you must download the latest **C-API Samples** package from the **Package Manager** within the **ML Hub**. On more information about the package manager, check the [Package Manager](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md) guide.
 
 The instructions below assume that all the content has been extracted to the **{USER}** directory.
 
@@ -107,8 +107,8 @@ To uninstall use this command:
 adb uninstall <app_package_name>
 ```
 
-For more ADB commands, reference the [ADB Commands Guide](/docs/guides/developer-tools/android-debug-bridge/adb-commands.md).
+For more ADB commands, reference the [ADB Commands Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-commands.md).
 
 :::note
-**App Simulator** is a tool that allows you to test your apps on your Windows PC or macOS without needing to build to the device. When you build apps for App Simulator, you must build them using the **App Simulator Launcher**. To learn more about App Simulator, check the [App Simulator Guide](/docs/guides/developer-tools/app-sim/app-simulator.md).
+**App Simulator** is a tool that allows you to test your apps on your Windows PC or macOS without needing to build to the device. When you build apps for App Simulator, you must build them using the **App Simulator Launcher**. To learn more about App Simulator, check the [App Simulator Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-simulator.md).
 :::

@@ -5,7 +5,7 @@ title: MLCameraDeviceAvailabilityStatusCallbacks
 
 # MLCameraDeviceAvailabilityStatusCallbacks
 
-**Module:** **[Camera](/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLCameraDeviceAvailabilityStatusCallbacks
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md#uint32-t-version)**  |
-| void(*)(const MLCameraDeviceAvailabilityInfo *info) | **[on_device_available](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md#void-on-device-available)** <br></br>Callback is invoked when the camera becomes available.  |
-| void(*)(const MLCameraDeviceAvailabilityInfo *info) | **[on_device_unavailable](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md#void-on-device-unavailable)** <br></br>Callback is invoked when the camera becomes unavailable.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md#uint32-t-version)**  |
+| void(*)(const MLCameraDeviceAvailabilityInfo *info) | **[on_device_available](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md#void-on-device-available)** <br></br>Callback is invoked when the camera becomes available.  |
+| void(*)(const MLCameraDeviceAvailabilityInfo *info) | **[on_device_unavailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md#void-on-device-unavailable)** <br></br>Callback is invoked when the camera becomes unavailable.  |
 
 ## Detailed Description
 

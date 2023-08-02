@@ -6,7 +6,7 @@ summary: cea708 caption window.
 
 # MLCea708CaptionWindow
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,19 +19,19 @@ Cea708 Caption Window.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int32_t | **[id](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-id)**  |
-| bool | **[visible](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-visible)**  |
-| bool | **[row_lock](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-row-lock)**  |
-| bool | **[column_lock](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-column-lock)**  |
-| int32_t | **[priority](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-priority)**  |
-| bool | **[relative_positioning](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-relative-positioning)**  |
-| int32_t | **[anchor_vertical](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-anchor-vertical)**  |
-| int32_t | **[anchor_horizontal](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-anchor-horizontal)**  |
-| int32_t | **[anchor_id](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-anchor-id)**  |
-| int32_t | **[row_count](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-row-count)**  |
-| int32_t | **[column_count](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-column-count)**  |
-| int32_t | **[pen_style](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-pen-style)**  |
-| int32_t | **[window_style](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-window-style)**  |
+| int32_t | **[id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-id)**  |
+| bool | **[visible](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-visible)**  |
+| bool | **[row_lock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-row-lock)**  |
+| bool | **[column_lock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-column-lock)**  |
+| int32_t | **[priority](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-priority)**  |
+| bool | **[relative_positioning](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#bool-relative-positioning)**  |
+| int32_t | **[anchor_vertical](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-anchor-vertical)**  |
+| int32_t | **[anchor_horizontal](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-anchor-horizontal)**  |
+| int32_t | **[anchor_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-anchor-id)**  |
+| int32_t | **[row_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-row-count)**  |
+| int32_t | **[column_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-column-count)**  |
+| int32_t | **[pen_style](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-pen-style)**  |
+| int32_t | **[window_style](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md#int32-t-window-style)**  |
 
 ## Detailed Description
 

@@ -22,7 +22,7 @@ You can view a list of Magic Leap permissions and their corresponding security l
 
 ## Requesting Normal (Install-time) Permissions
 
-**Normal** permissions, also known as **Install-time** permissions, are granted automatically upon installation if [declared in your app's `AndroidManifest.xml`](/docs/guides/unity/permissions/declaring-permissions.md). These permissions typically provide access to isolated, non-sensitive user data or device functionalities, such as `com.magicleap.permission.HAND_TRACKING`. Consequently if the permission is not included in your apps `AndroidManifest.xml`, they are implicitly denied.
+**Normal** permissions, also known as **Install-time** permissions, are granted automatically upon installation if [declared in your app's `AndroidManifest.xml`](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md). These permissions typically provide access to isolated, non-sensitive user data or device functionalities, such as `com.magicleap.permission.HAND_TRACKING`. Consequently if the permission is not included in your apps `AndroidManifest.xml`, they are implicitly denied.
 
 The example below verifies if the `HAND_TRACKING` permission is declared in the Manifest, and disables its functionality if the permission wasn't declared.
 
@@ -48,7 +48,7 @@ Note that the function `CheckPermission()` will return:
 
 ## Requesting Dangerous (Runtime) Permissions
 
-**Dangerous** permissions need to be [declared in the AndroidManifest.xml](/docs/guides/unity/permissions/declaring-permissions.md) and also require to be explicitly **requested at runtime**. Since these permissions offer access to potentially sensitive data, users can decide whether they want to allow these permissions or not. If the permission is denied, your application should adapt its behavior according.
+**Dangerous** permissions need to be [declared in the AndroidManifest.xml](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md) and also require to be explicitly **requested at runtime**. Since these permissions offer access to potentially sensitive data, users can decide whether they want to allow these permissions or not. If the permission is denied, your application should adapt its behavior according.
 
 Note that if a **Dangerous** permission is not included in the `AndroidManifest.xml`, your application won't have the ability to request this permission at runtime.
 

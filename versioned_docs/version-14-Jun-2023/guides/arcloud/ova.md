@@ -271,7 +271,7 @@ Download [VirtualBox for Windows][vbox-download].
 :::warning Apple Silicon
 All newer MacBooks have non-Intel architectures, instead using "Apple Silicon" chipsets (M1 or M2). If you have one of
 these M1 or M2 processors in your Mac, **VirtualBox** will not run and you need to follow the instructions for
-**[UTM](/docs/guides/arcloud/arcloud-deployment-ova#apple-chip---utm)** below.
+**[UTM](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/arcloud/arcloud-deployment-ova#apple-chip---utm)** below.
 :::
 
 Download [VirtualBox for MacOS and Intel CPUs][vbox-download].
@@ -303,7 +303,7 @@ the virtual machine image to the supported cloud providers described below.
 <Tabs groupId="cloud-providers" queryString>
   <TabItem value="gcp" label="GCP" default>
 
-Make sure you have the [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) installed.
+Make sure you have the [Google Cloud CLI](https://cloud.google.com/sdk/versioned_docs/version-14-Jun-2023/install) installed.
 
 Check the [GCP documentation][gcp-image-import] or follow the steps below:
 
@@ -756,10 +756,10 @@ it closes, your data might be lost.
 [vtx-dell]: https://www.dell.com/support/kbdoc/en-us/000195978/how-to-enable-or-disable-hardware-virtualization-on-dell-systems
 [vbox-download]: https://www.virtualbox.org/wiki/Downloads
 [vbox-linux-download]: https://www.virtualbox.org/wiki/Linux_Downloads
-[gcp-image-import]: https://cloud.google.com/compute/docs/import/import-ovf-files
-[gcp-import-prereqs]: https://cloud.google.com/compute/docs/import/requirements-export-import-images
-[gcp-build-sa]: https://cloud.google.com/build/docs/cloud-build-service-account
-[gcp-identifying-projects]: https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects
+[gcp-image-import]: https://cloud.google.com/compute/versioned_docs/version-14-Jun-2023/import/import-ovf-files
+[gcp-import-prereqs]: https://cloud.google.com/compute/versioned_docs/version-14-Jun-2023/import/requirements-export-import-images
+[gcp-build-sa]: https://cloud.google.com/build/versioned_docs/version-14-Jun-2023/cloud-build-service-account
+[gcp-identifying-projects]: https://cloud.google.com/resource-manager/versioned_docs/version-14-Jun-2023/creating-managing-projects#identifying_projects
 [aws-image-import]: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html
 [aws-find-account-id]: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-identifiers.html#FindAccountId
 [aws-import-reqs]: https://docs.aws.amazon.com/vm-import/latest/userguide/required-permissions.html

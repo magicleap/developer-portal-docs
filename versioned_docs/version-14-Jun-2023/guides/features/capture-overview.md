@@ -11,7 +11,7 @@ The Capture App allows you to take screenshots and screen recordings on the Magi
 
 :::info ADB Capture Commands
 
-To learn how to capture videos and images on your device using ADB, see the [adb capture commands guide](/docs/guides/developer-tools/android-debug-bridge/android-capture-commands.md).
+To learn how to capture videos and images on your device using ADB, see the [adb capture commands guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/android-capture-commands.md).
 
 :::
 
@@ -51,10 +51,10 @@ These steps will change in upcoming builds as we continue to develop our default
 ## Access Capture Media via the ML Hub
 
 :::tip
-For instructions on installing the ML Hub, follow the [**Getting Started Tools**](/docs/guides/getting-started/install-the-tools.md) page.
+For instructions on installing the ML Hub, follow the [**Getting Started Tools**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md) page.
 :::
 
-Captured media can also be accessed from your computer by connecting the Magic Leap 2 over USB and using the ML Hub's [**Device Bridge**](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge.md) tool.
+Captured media can also be accessed from your computer by connecting the Magic Leap 2 over USB and using the ML Hub's [**Device Bridge**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-device-bridge.md) tool.
 
 1. Connect your compute pack to your computer via USB.
 2. Open the **ML Hub** app.

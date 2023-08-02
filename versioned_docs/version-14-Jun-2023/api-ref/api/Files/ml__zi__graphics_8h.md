@@ -11,8 +11,8 @@ title: ml_zi_graphics.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIGraphicsEnumerateRequiredVkInstanceExtensions](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzigraphicsenumeraterequiredvkinstanceextensions)**(VkExtensionProperties * out_required_extension_properties, uint32_t * out_extension_property_count)<br></br>Returns a list of required VkInstance extensions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIGraphicsEnumerateRequiredVkDeviceExtensions](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzigraphicsenumeraterequiredvkdeviceextensions)**(VkExtensionProperties * out_required_extension_properties, uint32_t * out_extension_property_count)<br></br>Returns a list of required VkDevice extensions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIGraphicsEnumerateRequiredVkInstanceExtensions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzigraphicsenumeraterequiredvkinstanceextensions)**(VkExtensionProperties * out_required_extension_properties, uint32_t * out_extension_property_count)<br></br>Returns a list of required VkInstance extensions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIGraphicsEnumerateRequiredVkDeviceExtensions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzigraphicsenumeraterequiredvkdeviceextensions)**(VkExtensionProperties * out_required_extension_properties, uint32_t * out_extension_property_count)<br></br>Returns a list of required VkDevice extensions.  |
 
 
 
@@ -40,9 +40,9 @@ Returns a list of required VkInstance extensions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error submitting the query.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error submitting the query.|
 **Required Permissions**:
 
   * None 
@@ -78,9 +78,9 @@ Returns a list of required VkDevice extensions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error submitting the query.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If input parameter is invalid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error submitting the query.|
 **Required Permissions**:
 
   * None 

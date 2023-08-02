@@ -17,7 +17,7 @@ Structure to encapsulate capture configuration
 
 ## Public Methods
 
-### [MLCameraCaptureConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureConfig.md) Create {#mlcameracaptureconfig-create}
+### [MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureConfig.md) Create {#mlcameracaptureconfig-create}
 
 Create and return an initialized version of this struct. 
 
@@ -36,7 +36,7 @@ public static MLCameraCaptureConfig Create()
 
 -----------
 
-### [MLCameraCaptureConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureConfig.md) Create {#mlcameracaptureconfig-create}
+### [MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureConfig.md) Create {#mlcameracaptureconfig-create}
 
 Create and initialize this native struct based on values exposed in MLCamera.MLCameraCaptureConfig   . 
 
@@ -51,7 +51,7 @@ public static MLCameraCaptureConfig Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCamera.CaptureConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureConfig.md) |config||
+| [MLCamera.CaptureConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CaptureConfig.md) |config||
 
 
 
@@ -78,7 +78,7 @@ public MLCamera.CaptureFrameRate CaptureFrameRate;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
+| [MLCamera.CaptureFrameRate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) | Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P.  |
 
 
 
@@ -115,7 +115,7 @@ public MLCameraCaptureStreamConfig [] StreamConfig;
 
 | Type | Description  | 
 |--|--|
-| [MLCameraCaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md) [] | Structure to encapsulate stream configurations  |
+| [MLCameraCaptureStreamConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md) [] | Structure to encapsulate stream configurations  |
 
 
 

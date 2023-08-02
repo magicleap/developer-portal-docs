@@ -11,7 +11,7 @@ title: NativeBindings
 
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
@@ -42,7 +42,7 @@ public delegate void CloseDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) Create {#mlresultcode-create}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) Create {#mlresultcode-create}
 
 ```csharp
 public static MLResult.Code Create(
@@ -56,7 +56,7 @@ public static MLResult.Code Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [DataSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/DataSource/UnityEngine.XR.MagicLeap.MLMedia.DataSource.md) |dataSource||
+| [DataSource](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/DataSource/UnityEngine.XR.MagicLeap.MLMedia.DataSource.md) |dataSource||
 | out ulong |handle||
 
 
@@ -90,7 +90,7 @@ public delegate long GetSizeDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceCreate {#mlresultcode-mlmediadatasourcecreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceCreate {#mlresultcode-mlmediadatasourcecreate}
 
 ```csharp
 public MLResult.Code MLMediaDataSourceCreate(
@@ -120,7 +120,7 @@ public MLResult.Code MLMediaDataSourceCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceDestroy {#mlresultcode-mlmediadatasourcedestroy}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceDestroy {#mlresultcode-mlmediadatasourcedestroy}
 
 ```csharp
 public MLResult.Code MLMediaDataSourceDestroy(

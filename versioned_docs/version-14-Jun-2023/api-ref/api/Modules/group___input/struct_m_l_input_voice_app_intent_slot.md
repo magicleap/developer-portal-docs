@@ -6,7 +6,7 @@ summary: a structure containing voice app-intent slot in voice event.
 
 # MLInputVoiceAppIntentSlot
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -19,8 +19,8 @@ A structure containing voice app-intent slot in voice event.  [More...](#detaile
 
 | Type           | Name           |
 | -------------- | -------------- |
-| const char * | **[slot_name](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md#const-char-slot-name)**  |
-| const char * | **[slot_value](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md#const-char-slot-value)**  |
+| const char * | **[slot_name](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md#const-char-slot-name)**  |
+| const char * | **[slot_value](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md#const-char-slot-value)**  |
 
 ## Detailed Description
 

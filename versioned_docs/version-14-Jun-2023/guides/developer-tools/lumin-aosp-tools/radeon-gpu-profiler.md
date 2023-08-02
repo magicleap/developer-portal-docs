@@ -28,7 +28,7 @@ RGP, unlike other profiling tools, doesn't allow you to launch an application fr
 
 ## General Setup
 
-Ensure you have **adb** in your PATH. Follow our [ADB Setup Guide](/docs/guides/developer-tools/android-debug-bridge/adb-setup.md) for more info.
+Ensure you have **adb** in your PATH. Follow our [ADB Setup Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-setup.md) for more info.
 
 Ensure your Magic Leap 2 device has joined a network and that your PC and device can interact on that network. Furthermore, the network has to support peer to peer connections (most public networks like wifi-guest and the network at, say, Starbucks, typically do not allow this activity, for security reasons).
 
@@ -58,7 +58,7 @@ $ adb shell setenforce 0
 
 ## RGP Setup
 
-1. Download RGP from the [ML Hub Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md).
+1. Download RGP from the [ML Hub Package Manager](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md).
 2. Extract the RGP zip or tarball.
 3. In a terminal with adb access, `cd` to the extracted directory.
 

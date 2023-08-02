@@ -20,7 +20,7 @@ The scene detects surfaces and displays the planes in your environment as you lo
 The UI text depicts the current number of planes and the maximum number of possible planes.
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
 ## Requirements

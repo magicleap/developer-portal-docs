@@ -11,13 +11,13 @@ title: ml_version.h
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[MLSDK_VERSION_MAJOR](/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-major)**  |
-|  | **[MLSDK_VERSION_MINOR](/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-minor)**  |
-|  | **[MLSDK_VERSION_REVISION](/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-revision)**  |
-|  | **[MLSDK_VERSION_BUILD_ID](/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-build-id)**  |
-|  | **[MLSDK_STRINGIFYX](/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-stringifyx)**(x)  |
-|  | **[MLSDK_STRINGIFY](/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-stringify)**(x)  |
-|  | **[MLSDK_VERSION_NAME](/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-name)**  |
+|  | **[MLSDK_VERSION_MAJOR](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-major)**  |
+|  | **[MLSDK_VERSION_MINOR](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-minor)**  |
+|  | **[MLSDK_VERSION_REVISION](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-revision)**  |
+|  | **[MLSDK_VERSION_BUILD_ID](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-build-id)**  |
+|  | **[MLSDK_STRINGIFYX](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-stringifyx)**(x)  |
+|  | **[MLSDK_STRINGIFY](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-stringify)**(x)  |
+|  | **[MLSDK_VERSION_NAME](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__version_8h.md#defines-mlsdk-version-name)**  |
 
 
 

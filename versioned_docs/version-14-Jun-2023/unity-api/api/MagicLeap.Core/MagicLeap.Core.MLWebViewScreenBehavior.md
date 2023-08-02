@@ -9,7 +9,7 @@ summary: this class is used to render web view on the texture and propagate inpu
 
 
 **NameSpace:** 
-[Core](/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
+[Core](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
 
 
 This class is used to Render Web View on the texture and propagate input to Web View.   
@@ -150,7 +150,7 @@ public MLWebView WebView = null;
 
 | Type | Description  | 
 |--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
+| [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
 
 
 

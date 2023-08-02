@@ -8,13 +8,13 @@ title: MLPowerManager
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
 
 
-Inherits from: <br></br>[MLAutoAPISingleton< MLPowerManager >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
+Inherits from: <br></br>[MLAutoAPISingleton< MLPowerManager >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
 
 
 
@@ -33,7 +33,7 @@ public static OnErrorOccurredDelegate OnErrorOccurred { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [OnErrorOccurredDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#delegate-void-onerroroccurreddelegate) | This callback will be invoked when an #MLPowerManagerError occurs on one of the components.  |
+| [OnErrorOccurredDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#delegate-void-onerroroccurreddelegate) | This callback will be invoked when an #MLPowerManagerError occurs on one of the components.  |
 
 
 
@@ -53,7 +53,7 @@ public static OnPowerStateChangedDelegate OnPowerStateChanged { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [OnPowerStateChangedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#delegate-void-onpowerstatechangeddelegate) | This callback will be invoked when #MLPowerManagerPowerState changes.  |
+| [OnPowerStateChangedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#delegate-void-onpowerstatechangeddelegate) | This callback will be invoked when #MLPowerManagerPowerState changes.  |
 
 
 
@@ -73,7 +73,7 @@ public static OnPropertiesChangedDelegate OnPropertiesChanged { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [OnPropertiesChangedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#delegate-void-onpropertieschangeddelegate) | This callback will be invoked when #MLPowerManagerPropertyData of a component changes. Only the properties that have changed will be returned, the component may support additional properties which values were not returned.  |
+| [OnPropertiesChangedDelegate](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#delegate-void-onpropertieschangeddelegate) | This callback will be invoked when #MLPowerManagerPropertyData of a component changes. Only the properties that have changed will be returned, the component may support additional properties which values were not returned.  |
 
 
 
@@ -83,7 +83,7 @@ public static OnPropertiesChangedDelegate OnPropertiesChanged { get; set; }
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailablePowerStates {#mlresultcode-getavailablepowerstates}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailablePowerStates {#mlresultcode-getavailablepowerstates}
 
 Get available power states for the controller. 
 
@@ -98,7 +98,7 @@ public static MLResult.Code GetAvailablePowerStates(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [PowerStateData](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PowerStateData.md) |data|A structure to encapsulate output data when either getting available power states, or the current power state. |
+| out [PowerStateData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PowerStateData.md) |data|A structure to encapsulate output data when either getting available power states, or the current power state. |
 
 
 
@@ -107,7 +107,7 @@ public static MLResult.Code GetAvailablePowerStates(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailableProperties {#mlresultcode-getavailableproperties}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailableProperties {#mlresultcode-getavailableproperties}
 
 Get available properties for the controller. 
 
@@ -122,7 +122,7 @@ public static MLResult.Code GetAvailableProperties(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [PropertyTypeData](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PropertyTypeData.md) |data|A structure to encapsulate output data when getting a component's available property types. |
+| out [PropertyTypeData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PropertyTypeData.md) |data|A structure to encapsulate output data when getting a component's available property types. |
 
 
 
@@ -131,7 +131,7 @@ public static MLResult.Code GetAvailableProperties(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetComponentProperties {#mlresultcode-getcomponentproperties}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetComponentProperties {#mlresultcode-getcomponentproperties}
 
 Get controller component properties. 
 
@@ -146,7 +146,7 @@ public static MLResult.Code GetComponentProperties(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [PropertyData](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PropertyData.md) |out&#95;properties|A structure to encapsulate output data when getting the current properties. |
+| out [PropertyData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PropertyData.md) |out&#95;properties|A structure to encapsulate output data when getting the current properties. |
 
 
 
@@ -155,7 +155,7 @@ public static MLResult.Code GetComponentProperties(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetPowerState {#mlresultcode-getpowerstate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetPowerState {#mlresultcode-getpowerstate}
 
 Get the current power state for the controller. 
 
@@ -170,7 +170,7 @@ public static MLResult.Code GetPowerState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [PowerStateData](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PowerStateData.md) |data|A structure to encapsulate output data when either getting available power states, or the current power state. |
+| out [PowerStateData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PowerStateData.md) |data|A structure to encapsulate output data when either getting available power states, or the current power state. |
 
 
 
@@ -194,7 +194,7 @@ public delegate void OnErrorOccurredDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-error) |error|The error which has occurred.|
+| in [Error](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-error) |error|The error which has occurred.|
 
 
 
@@ -218,7 +218,7 @@ public delegate void OnPowerStateChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [PowerState](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-powerstate) |state|#MLPowerManagerPowerState representing the new power state.|
+| in [PowerState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-powerstate) |state|#MLPowerManagerPowerState representing the new power state.|
 
 
 
@@ -242,7 +242,7 @@ public delegate void OnPropertiesChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [PropertyData](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PropertyData.md) |properties|#MLPowerManagerPropertyData struct encapsulating the properties changed.|
+| in [PropertyData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.PropertyData.md) |properties|#MLPowerManagerPropertyData struct encapsulating the properties changed.|
 
 
 
@@ -251,7 +251,7 @@ public delegate void OnPropertiesChangedDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SetPowerState {#mlresultcode-setpowerstate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SetPowerState {#mlresultcode-setpowerstate}
 
 Set the power state for the controller. 
 
@@ -266,7 +266,7 @@ public static MLResult.Code SetPowerState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.Settings.md) |settings|A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed. |
+| [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.Settings.md) |settings|A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed. |
 
 
 
@@ -288,7 +288,7 @@ protected virtual override MLResult.Code StartAPI()
 
 
 
-**Reimplements**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
+**Reimplements**: [StartAPI](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-startapi)
 
 
 
@@ -305,7 +305,7 @@ protected virtual override MLResult.Code StopAPI()
 
 
 
-**Reimplements**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
+**Reimplements**: [StopAPI](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md#abstract-stopapi)
 
 
 

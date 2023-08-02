@@ -6,7 +6,7 @@ summary: cea708 caption pen attributes.
 
 # MLCea708CaptionPenAttr
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,13 +19,13 @@ Cea708 Caption Pen Attributes.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLCea708CaptionPenSize](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpensize) | **[pen_size](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#mlcea708captionpensize-pen-size)**  |
-| [MLCea708CaptionPenOffset](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpenoffset) | **[pen_offset](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#mlcea708captionpenoffset-pen-offset)**  |
-| int32_t | **[text_tag](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#int32-t-text-tag)**  |
-| int32_t | **[font_tag](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#int32-t-font-tag)**  |
-| int32_t | **[edge_type](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#int32-t-edge-type)**  |
-| bool | **[underline](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#bool-underline)**  |
-| bool | **[italic](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#bool-italic)**  |
+| [MLCea708CaptionPenSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpensize) | **[pen_size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#mlcea708captionpensize-pen-size)**  |
+| [MLCea708CaptionPenOffset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpenoffset) | **[pen_offset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#mlcea708captionpenoffset-pen-offset)**  |
+| int32_t | **[text_tag](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#int32-t-text-tag)**  |
+| int32_t | **[font_tag](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#int32-t-font-tag)**  |
+| int32_t | **[edge_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#int32-t-edge-type)**  |
+| bool | **[underline](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#bool-underline)**  |
+| bool | **[italic](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md#bool-italic)**  |
 
 ## Detailed Description
 
@@ -57,7 +57,7 @@ MLCea708CaptionPenSize pen_size;
 
 | Type | Description |
 |--|--|
-| [MLCea708CaptionPenSize](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpensize) | Cea708 Caption Pen Size constants.  |
+| [MLCea708CaptionPenSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpensize) | Cea708 Caption Pen Size constants.  |
 
 
 
@@ -76,7 +76,7 @@ MLCea708CaptionPenOffset pen_offset;
 
 | Type | Description |
 |--|--|
-| [MLCea708CaptionPenOffset](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpenoffset) | Cea708 Caption Pen Offset constants.  |
+| [MLCea708CaptionPenOffset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpenoffset) | Cea708 Caption Pen Offset constants.  |
 
 
 

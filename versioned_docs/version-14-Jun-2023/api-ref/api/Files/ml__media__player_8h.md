@@ -11,122 +11,122 @@ title: ml_media_player.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)** <br></br>MediaPlayer DRM Info for a Media Track.  |
-| struct | **[MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md)**  |
-| struct | **[MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md)**  |
-| struct | **[MLMediaPlayerOnBufferingUpdateInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)** <br></br>MediaPlayer Buffering update callback Info.  |
-| struct | **[MLMediaPlayerOnCompletionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)** <br></br>MediaPlayer Playback completion callback Info.  |
-| struct | **[MLMediaPlayerOnErrorInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)** <br></br>MediaPlayer Error callback Info.  |
-| struct | **[MLMediaPlayerOnInfoInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)** <br></br>MediaPlayer Information callback Info.  |
-| struct | **[MLMediaPlayerOnPreparedInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)** <br></br>MediaPlayer Playback prepared callback Info.  |
-| struct | **[MLMediaPlayerOnSeekCompleteInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)** <br></br>MediaPlayer Playback seek completion callback Info.  |
-| struct | **[MLMediaPlayerOnVideoSizeChangedInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)** <br></br>MediaPlayer Video Size Changed callback Info.  |
-| struct | **[MLMediaPlayerOnTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)** <br></br>MediaPlayer Track DRM Info callback Info.  |
-| struct | **[MLMediaPlayerOnResetCompleteInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)** <br></br>MediaPlayer reset completion callback Info.  |
-| struct | **[MLMediaPlayerOnFramePackingInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)** <br></br>MediaPlayer frame packing callback Info.  |
-| struct | **[MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)** <br></br>Callbacks for notifying client about [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) error events.  |
-| struct | **[MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)** <br></br>MediaPlayer Track Information.  |
-| struct | **[MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)** <br></br>DRM Session information for a MediaPlayer Track.  |
-| struct | **[MLMediaPlayerMetrics](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)** <br></br>MediaPlayer metrics data.  |
+| struct | **[MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)** <br></br>MediaPlayer DRM Info for a Media Track.  |
+| struct | **[MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md)**  |
+| struct | **[MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md)**  |
+| struct | **[MLMediaPlayerOnBufferingUpdateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)** <br></br>MediaPlayer Buffering update callback Info.  |
+| struct | **[MLMediaPlayerOnCompletionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)** <br></br>MediaPlayer Playback completion callback Info.  |
+| struct | **[MLMediaPlayerOnErrorInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)** <br></br>MediaPlayer Error callback Info.  |
+| struct | **[MLMediaPlayerOnInfoInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)** <br></br>MediaPlayer Information callback Info.  |
+| struct | **[MLMediaPlayerOnPreparedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)** <br></br>MediaPlayer Playback prepared callback Info.  |
+| struct | **[MLMediaPlayerOnSeekCompleteInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)** <br></br>MediaPlayer Playback seek completion callback Info.  |
+| struct | **[MLMediaPlayerOnVideoSizeChangedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)** <br></br>MediaPlayer Video Size Changed callback Info.  |
+| struct | **[MLMediaPlayerOnTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)** <br></br>MediaPlayer Track DRM Info callback Info.  |
+| struct | **[MLMediaPlayerOnResetCompleteInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)** <br></br>MediaPlayer reset completion callback Info.  |
+| struct | **[MLMediaPlayerOnFramePackingInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)** <br></br>MediaPlayer frame packing callback Info.  |
+| struct | **[MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)** <br></br>Callbacks for notifying client about [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) error events.  |
+| struct | **[MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)** <br></br>MediaPlayer Track Information.  |
+| struct | **[MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)** <br></br>DRM Session information for a MediaPlayer Track.  |
+| struct | **[MLMediaPlayerMetrics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)** <br></br>MediaPlayer metrics data.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [MLPSSHEntry](/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md) | **[MLMediaPlayerPSSHEntry](/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaplayerpsshentry)**  |
-| typedef struct [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) | **[MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayertrackdrminfo)** <br></br>MediaPlayer DRM Info for a Media Track.  |
-| typedef struct [MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) | **[MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayersubtitledata)**  |
-| typedef struct [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) | **[MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayerbufferingsettings)**  |
-| typedef struct [MLMediaPlayerOnBufferingUpdateInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md) | **[MLMediaPlayerOnBufferingUpdateInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronbufferingupdateinfo)** <br></br>MediaPlayer Buffering update callback Info.  |
-| typedef struct [MLMediaPlayerOnCompletionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md) | **[MLMediaPlayerOnCompletionInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeroncompletioninfo)** <br></br>MediaPlayer Playback completion callback Info.  |
-| typedef struct [MLMediaPlayerOnErrorInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md) | **[MLMediaPlayerOnErrorInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronerrorinfo)** <br></br>MediaPlayer Error callback Info.  |
-| typedef struct [MLMediaPlayerOnInfoInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md) | **[MLMediaPlayerOnInfoInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeroninfoinfo)** <br></br>MediaPlayer Information callback Info.  |
-| typedef struct [MLMediaPlayerOnPreparedInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md) | **[MLMediaPlayerOnPreparedInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronpreparedinfo)** <br></br>MediaPlayer Playback prepared callback Info.  |
-| typedef struct [MLMediaPlayerOnSeekCompleteInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md) | **[MLMediaPlayerOnSeekCompleteInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronseekcompleteinfo)** <br></br>MediaPlayer Playback seek completion callback Info.  |
-| typedef struct [MLMediaPlayerOnVideoSizeChangedInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md) | **[MLMediaPlayerOnVideoSizeChangedInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronvideosizechangedinfo)** <br></br>MediaPlayer Video Size Changed callback Info.  |
-| typedef struct [MLMediaPlayerOnTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md) | **[MLMediaPlayerOnTrackDRMInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayerontrackdrminfo)** <br></br>MediaPlayer Track DRM Info callback Info.  |
-| typedef struct [MLMediaPlayerOnResetCompleteInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md) | **[MLMediaPlayerOnResetCompleteInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronresetcompleteinfo)** <br></br>MediaPlayer reset completion callback Info.  |
-| typedef struct [MLMediaPlayerOnFramePackingInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md) | **[MLMediaPlayerOnFramePackingInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronframepackinginfo)** <br></br>MediaPlayer frame packing callback Info.  |
-| typedef struct [MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) | **[MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayereventcallbacksex)** <br></br>Callbacks for notifying client about [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) error events.  |
-| typedef struct [MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) | **[MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayertrackinfo)** <br></br>MediaPlayer Track Information.  |
-| typedef struct [MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) | **[MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayertrackdrmsessioninfo)** <br></br>DRM Session information for a MediaPlayer Track.  |
-| typedef void(*)(MLHandle media_player, MLMediaPlayerSubtitleData subtitle_data, void *data) | **[MLMediaPlayerOnMediaSubtitleUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback)** <br></br>Callbacks signature called when subtitle update is available.  |
-| typedef void(*)(MLHandle media_player, MLHandle timed_text, void *data) | **[MLMediaPlayerOnMediaTimedTextUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback)** <br></br>Callbacks signature called when Timed Text update is available.  |
-| typedef struct [MLMediaPlayerMetrics](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) | **[MLMediaPlayerMetrics](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayermetrics)** <br></br>MediaPlayer metrics data.  |
+| typedef [MLPSSHEntry](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md) | **[MLMediaPlayerPSSHEntry](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlpsshentry-mlmediaplayerpsshentry)**  |
+| typedef struct [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) | **[MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayertrackdrminfo)** <br></br>MediaPlayer DRM Info for a Media Track.  |
+| typedef struct [MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) | **[MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayersubtitledata)**  |
+| typedef struct [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) | **[MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayerbufferingsettings)**  |
+| typedef struct [MLMediaPlayerOnBufferingUpdateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md) | **[MLMediaPlayerOnBufferingUpdateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronbufferingupdateinfo)** <br></br>MediaPlayer Buffering update callback Info.  |
+| typedef struct [MLMediaPlayerOnCompletionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md) | **[MLMediaPlayerOnCompletionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeroncompletioninfo)** <br></br>MediaPlayer Playback completion callback Info.  |
+| typedef struct [MLMediaPlayerOnErrorInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md) | **[MLMediaPlayerOnErrorInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronerrorinfo)** <br></br>MediaPlayer Error callback Info.  |
+| typedef struct [MLMediaPlayerOnInfoInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md) | **[MLMediaPlayerOnInfoInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeroninfoinfo)** <br></br>MediaPlayer Information callback Info.  |
+| typedef struct [MLMediaPlayerOnPreparedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md) | **[MLMediaPlayerOnPreparedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronpreparedinfo)** <br></br>MediaPlayer Playback prepared callback Info.  |
+| typedef struct [MLMediaPlayerOnSeekCompleteInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md) | **[MLMediaPlayerOnSeekCompleteInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronseekcompleteinfo)** <br></br>MediaPlayer Playback seek completion callback Info.  |
+| typedef struct [MLMediaPlayerOnVideoSizeChangedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md) | **[MLMediaPlayerOnVideoSizeChangedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronvideosizechangedinfo)** <br></br>MediaPlayer Video Size Changed callback Info.  |
+| typedef struct [MLMediaPlayerOnTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md) | **[MLMediaPlayerOnTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayerontrackdrminfo)** <br></br>MediaPlayer Track DRM Info callback Info.  |
+| typedef struct [MLMediaPlayerOnResetCompleteInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md) | **[MLMediaPlayerOnResetCompleteInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronresetcompleteinfo)** <br></br>MediaPlayer reset completion callback Info.  |
+| typedef struct [MLMediaPlayerOnFramePackingInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md) | **[MLMediaPlayerOnFramePackingInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayeronframepackinginfo)** <br></br>MediaPlayer frame packing callback Info.  |
+| typedef struct [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) | **[MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayereventcallbacksex)** <br></br>Callbacks for notifying client about [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) error events.  |
+| typedef struct [MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) | **[MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayertrackinfo)** <br></br>MediaPlayer Track Information.  |
+| typedef struct [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) | **[MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayertrackdrmsessioninfo)** <br></br>DRM Session information for a MediaPlayer Track.  |
+| typedef void(*)(MLHandle media_player, MLMediaPlayerSubtitleData subtitle_data, void *data) | **[MLMediaPlayerOnMediaSubtitleUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback)** <br></br>Callbacks signature called when subtitle update is available.  |
+| typedef void(*)(MLHandle media_player, MLHandle timed_text, void *data) | **[MLMediaPlayerOnMediaTimedTextUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback)** <br></br>Callbacks signature called when Timed Text update is available.  |
+| typedef struct [MLMediaPlayerMetrics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) | **[MLMediaPlayerMetrics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediaplayermetrics)** <br></br>MediaPlayer metrics data.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLMediaPlayerVideoScalingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode)** <br></br> { <br></br>[MLMediaPlayerVideoScalingMode_ScaleToFit](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayervideoscalingmode-scaletofit) = 1,<br></br> [MLMediaPlayerVideoScalingMode_ScaleToFitWithCropping](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayervideoscalingmode-scaletofitwithcropping) = 2,<br></br> [MLMediaPlayerVideoScalingMode_Ensure32Bits](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayervideoscalingmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLMediaPlayerPollingStateFlags](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflags)** <br></br> { <br></br>[MLMediaPlayerPollingStateFlag_IsPlaying](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-isplaying) = 1 << 0,<br></br> [MLMediaPlayerPollingStateFlag_IsLooping](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-islooping) = 1 << 1,<br></br> [MLMediaPlayerPollingStateFlag_HasBeenPrepared](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasbeenprepared) = 1 << 2,<br></br> [MLMediaPlayerPollingStateFlag_HasPlaybackCompleted](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasplaybackcompleted) = 1 << 3,<br></br> [MLMediaPlayerPollingStateFlag_HasSeekCompleted](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasseekcompleted) = 1 << 4,<br></br> [MLMediaPlayerPollingStateFlag_HasSizeChanged](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hassizechanged) = 1 << 5,<br></br> [MLMediaPlayerPollingStateFlag_HasBufferingUpdated](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasbufferingupdated) = 1 << 6,<br></br> [MLMediaPlayerPollingStateFlag_HasReceivedInfo](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasreceivedinfo) = 1 << 7,<br></br> [MLMediaPlayerPollingStateFlag_HasReceivedError](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasreceivederror) = 1 << 8,<br></br> [MLMediaPlayerPollingStateFlag_HasTimedTextUpdated](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hastimedtextupdated) = 1 << 9,<br></br> [MLMediaPlayerPollingStateFlag_HasSubtitleUpdated](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hassubtitleupdated) = 1 << 10,<br></br> [MLMediaPlayerPollingStateFlag_HasMetadataUpdated](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasmetadataupdated) = 1 << 11,<br></br> [MLMediaPlayerPollingStateFlag_HasDrmInfoUpdated](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasdrminfoupdated) = 1 << 12,<br></br> [MLMediaPlayerPollingStateFlag_HasResetCompleted](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasresetcompleted) = 1 << 13,<br></br> [MLMediaPlayerPollingStateFlag_Ensure32Bits](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLMediaPlayerInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerinfo)** <br></br> { <br></br>[MLMediaPlayerInfo_Unknown](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-unknown) = 1,<br></br> [MLMediaPlayerInfo_StartedAsNext](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-startedasnext) = 2,<br></br> [MLMediaPlayerInfo_RenderingStart](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-renderingstart) = 3,<br></br> [MLMediaPlayerInfo_Looping](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-looping) = 4,<br></br> [MLMediaPlayerInfo_Started](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-started) = 5,<br></br> [MLMediaPlayerInfo_Paused](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-paused) = 6,<br></br> [MLMediaPlayerInfo_Stopped](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-stopped) = 7,<br></br> [MLMediaPlayerInfo_StartedBySharedPlayer](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-startedbysharedplayer) = 8,<br></br> [MLMediaPlayerInfo_PausedBySharedPlayer](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-pausedbysharedplayer) = 9,<br></br> [MLMediaPlayerInfo_SeekBySharedPlayer](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-seekbysharedplayer) = 10,<br></br> [MLMediaPlayerInfo_StoppedBySharedPlayer](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-stoppedbysharedplayer) = 11,<br></br> [MLMediaPlayerInfo_SyncStart](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-syncstart) = 12,<br></br> [MLMediaPlayerInfo_SyncComplete](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-synccomplete) = 13,<br></br> [MLMediaPlayerInfo_VideoTrackLagging](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-videotracklagging) = 700,<br></br> [MLMediaPlayerInfo_BufferingStart](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-bufferingstart) = 701,<br></br> [MLMediaPlayerInfo_BufferingEnd](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-bufferingend) = 702,<br></br> [MLMediaPlayerInfo_NetworkBandwidth](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-networkbandwidth) = 703,<br></br> [MLMediaPlayerInfo_BehindLiveWindow](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-behindlivewindow) = 704,<br></br> [MLMediaPlayerInfo_PowerStatePause](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-powerstatepause) = 705,<br></br> [MLMediaPlayerInfo_PowerStateResume](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-powerstateresume) = 706,<br></br> [MLMediaPlayerInfo_BufferedDuration](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-bufferedduration) = 707,<br></br> [MLMediaPlayerInfo_BadInterleaving](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-badinterleaving) = 800,<br></br> [MLMediaPlayerInfo_NotSeekable](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-notseekable) = 801,<br></br> [MLMediaPlayerInfo_MetadataUpdate](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-metadataupdate) = 802,<br></br> [MLMediaPlayerInfo_PlayAudioError](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-playaudioerror) = 804,<br></br> [MLMediaPlayerInfo_PlayVideoError](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-playvideoerror) = 805,<br></br> [MLMediaPlayerInfo_TimedTextError](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-timedtexterror) = 900,<br></br> [MLMediaPlayerInfo_Ensure32Bits](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Info and warning codes for the media player framework.  |
-| enum | **[MLMediaPlayerTrackType](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype)** <br></br> { <br></br>[MLMediaPlayerTrackType_Unknown](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-unknown) = 0,<br></br> [MLMediaPlayerTrackType_Video](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-video) = 1,<br></br> [MLMediaPlayerTrackType_Audio](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-audio) = 2,<br></br> [MLMediaPlayerTrackType_TimedText](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-timedtext) = 3,<br></br> [MLMediaPlayerTrackType_Subtitle](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-subtitle) = 4,<br></br> [MLMediaPlayerTrackType_Metadata](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-metadata) = 5,<br></br> [MLMediaPlayerTrackType_Ensure32Bits](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLMediaPlayerBufferingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerbufferingmode)** <br></br> { <br></br>[MLMediaPlayerBufferingMode_None](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-none) = 0,<br></br> [MLMediaPlayerBufferingMode_TimeOnly](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-timeonly) = 1,<br></br> [MLMediaPlayerBufferingMode_SizeOnly](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-sizeonly) = 2,<br></br> [MLMediaPlayerBufferingMode_TimeThenSize](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-timethensize) = 3,<br></br> [MLMediaPlayerBufferingMode_Count](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-count) = 4,<br></br> [MLMediaPlayerBufferingMode_Ensure32Bits](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLMediaFramePackingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaframepackingmode)** <br></br> { <br></br>[MLMediaFramePackingMode_None](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-none) = 0,<br></br> [MLMediaFramePackingMode_Checkboard](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-checkboard),<br></br> [MLMediaFramePackingMode_ColumnInterleaved](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-columninterleaved),<br></br> [MLMediaFramePackingMode_RowInterleaved](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-rowinterleaved),<br></br> [MLMediaFramePackingMode_SideBySideQuincunx](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-sidebysidequincunx),<br></br> [MLMediaFramePackingMode_SideBySide](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-sidebyside),<br></br> [MLMediaFramePackingMode_TopBottom](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-topbottom),<br></br> [MLMediaFramePackingMode_MultiviewFrameByFrame](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-multiviewframebyframe),<br></br> [MLMediaFramePackingMode_FrameByFrame](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-framebyframe),<br></br> [MLMediaFramePackingMode_Anaglyph](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-anaglyph)<br></br>}<br></br>Frame Packing Arrangement for stereoscopic videos.  |
-| enum | **[MLMediaFramePackingFlags](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaframepackingflags)** <br></br> { <br></br>[MLMediaFramePackingFlags_None](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-none) = 0,<br></br> [MLMediaFramePackingFlags_RightViewFirst](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-rightviewfirst) = 1 << 0,<br></br> [MLMediaFramePackingFlags_LeftFlipped](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-leftflipped) = 1 << 1,<br></br> [MLMediaFramePackingFlags_RightFlipped](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-rightflipped) = 1 << 2,<br></br> [MLMediaFramePackingFlags_Anaglyph_RedCyan](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-anaglyph-redcyan) = 1 << 3,<br></br> [MLMediaFramePackingFlags_Anaglyph_GreenMagenta](/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-anaglyph-greenmagenta) = 1 << 4<br></br>}<br></br>Frame Packing Arrangement flags for stereoscopic videos.  |
+| enum | **[MLMediaPlayerVideoScalingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode)** <br></br> { <br></br>[MLMediaPlayerVideoScalingMode_ScaleToFit](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayervideoscalingmode-scaletofit) = 1,<br></br> [MLMediaPlayerVideoScalingMode_ScaleToFitWithCropping](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayervideoscalingmode-scaletofitwithcropping) = 2,<br></br> [MLMediaPlayerVideoScalingMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayervideoscalingmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMediaPlayerPollingStateFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflags)** <br></br> { <br></br>[MLMediaPlayerPollingStateFlag_IsPlaying](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-isplaying) = 1 << 0,<br></br> [MLMediaPlayerPollingStateFlag_IsLooping](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-islooping) = 1 << 1,<br></br> [MLMediaPlayerPollingStateFlag_HasBeenPrepared](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasbeenprepared) = 1 << 2,<br></br> [MLMediaPlayerPollingStateFlag_HasPlaybackCompleted](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasplaybackcompleted) = 1 << 3,<br></br> [MLMediaPlayerPollingStateFlag_HasSeekCompleted](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasseekcompleted) = 1 << 4,<br></br> [MLMediaPlayerPollingStateFlag_HasSizeChanged](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hassizechanged) = 1 << 5,<br></br> [MLMediaPlayerPollingStateFlag_HasBufferingUpdated](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasbufferingupdated) = 1 << 6,<br></br> [MLMediaPlayerPollingStateFlag_HasReceivedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasreceivedinfo) = 1 << 7,<br></br> [MLMediaPlayerPollingStateFlag_HasReceivedError](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasreceivederror) = 1 << 8,<br></br> [MLMediaPlayerPollingStateFlag_HasTimedTextUpdated](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hastimedtextupdated) = 1 << 9,<br></br> [MLMediaPlayerPollingStateFlag_HasSubtitleUpdated](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hassubtitleupdated) = 1 << 10,<br></br> [MLMediaPlayerPollingStateFlag_HasMetadataUpdated](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasmetadataupdated) = 1 << 11,<br></br> [MLMediaPlayerPollingStateFlag_HasDrmInfoUpdated](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasdrminfoupdated) = 1 << 12,<br></br> [MLMediaPlayerPollingStateFlag_HasResetCompleted](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-hasresetcompleted) = 1 << 13,<br></br> [MLMediaPlayerPollingStateFlag_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerpollingstateflag-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMediaPlayerInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerinfo)** <br></br> { <br></br>[MLMediaPlayerInfo_Unknown](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-unknown) = 1,<br></br> [MLMediaPlayerInfo_StartedAsNext](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-startedasnext) = 2,<br></br> [MLMediaPlayerInfo_RenderingStart](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-renderingstart) = 3,<br></br> [MLMediaPlayerInfo_Looping](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-looping) = 4,<br></br> [MLMediaPlayerInfo_Started](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-started) = 5,<br></br> [MLMediaPlayerInfo_Paused](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-paused) = 6,<br></br> [MLMediaPlayerInfo_Stopped](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-stopped) = 7,<br></br> [MLMediaPlayerInfo_StartedBySharedPlayer](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-startedbysharedplayer) = 8,<br></br> [MLMediaPlayerInfo_PausedBySharedPlayer](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-pausedbysharedplayer) = 9,<br></br> [MLMediaPlayerInfo_SeekBySharedPlayer](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-seekbysharedplayer) = 10,<br></br> [MLMediaPlayerInfo_StoppedBySharedPlayer](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-stoppedbysharedplayer) = 11,<br></br> [MLMediaPlayerInfo_SyncStart](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-syncstart) = 12,<br></br> [MLMediaPlayerInfo_SyncComplete](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-synccomplete) = 13,<br></br> [MLMediaPlayerInfo_VideoTrackLagging](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-videotracklagging) = 700,<br></br> [MLMediaPlayerInfo_BufferingStart](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-bufferingstart) = 701,<br></br> [MLMediaPlayerInfo_BufferingEnd](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-bufferingend) = 702,<br></br> [MLMediaPlayerInfo_NetworkBandwidth](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-networkbandwidth) = 703,<br></br> [MLMediaPlayerInfo_BehindLiveWindow](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-behindlivewindow) = 704,<br></br> [MLMediaPlayerInfo_PowerStatePause](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-powerstatepause) = 705,<br></br> [MLMediaPlayerInfo_PowerStateResume](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-powerstateresume) = 706,<br></br> [MLMediaPlayerInfo_BufferedDuration](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-bufferedduration) = 707,<br></br> [MLMediaPlayerInfo_BadInterleaving](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-badinterleaving) = 800,<br></br> [MLMediaPlayerInfo_NotSeekable](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-notseekable) = 801,<br></br> [MLMediaPlayerInfo_MetadataUpdate](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-metadataupdate) = 802,<br></br> [MLMediaPlayerInfo_PlayAudioError](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-playaudioerror) = 804,<br></br> [MLMediaPlayerInfo_PlayVideoError](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-playvideoerror) = 805,<br></br> [MLMediaPlayerInfo_TimedTextError](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-timedtexterror) = 900,<br></br> [MLMediaPlayerInfo_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerinfo-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Info and warning codes for the media player framework.  |
+| enum | **[MLMediaPlayerTrackType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype)** <br></br> { <br></br>[MLMediaPlayerTrackType_Unknown](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-unknown) = 0,<br></br> [MLMediaPlayerTrackType_Video](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-video) = 1,<br></br> [MLMediaPlayerTrackType_Audio](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-audio) = 2,<br></br> [MLMediaPlayerTrackType_TimedText](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-timedtext) = 3,<br></br> [MLMediaPlayerTrackType_Subtitle](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-subtitle) = 4,<br></br> [MLMediaPlayerTrackType_Metadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-metadata) = 5,<br></br> [MLMediaPlayerTrackType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayertracktype-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMediaPlayerBufferingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerbufferingmode)** <br></br> { <br></br>[MLMediaPlayerBufferingMode_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-none) = 0,<br></br> [MLMediaPlayerBufferingMode_TimeOnly](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-timeonly) = 1,<br></br> [MLMediaPlayerBufferingMode_SizeOnly](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-sizeonly) = 2,<br></br> [MLMediaPlayerBufferingMode_TimeThenSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-timethensize) = 3,<br></br> [MLMediaPlayerBufferingMode_Count](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-count) = 4,<br></br> [MLMediaPlayerBufferingMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaplayerbufferingmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLMediaFramePackingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaframepackingmode)** <br></br> { <br></br>[MLMediaFramePackingMode_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-none) = 0,<br></br> [MLMediaFramePackingMode_Checkboard](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-checkboard),<br></br> [MLMediaFramePackingMode_ColumnInterleaved](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-columninterleaved),<br></br> [MLMediaFramePackingMode_RowInterleaved](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-rowinterleaved),<br></br> [MLMediaFramePackingMode_SideBySideQuincunx](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-sidebysidequincunx),<br></br> [MLMediaFramePackingMode_SideBySide](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-sidebyside),<br></br> [MLMediaFramePackingMode_TopBottom](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-topbottom),<br></br> [MLMediaFramePackingMode_MultiviewFrameByFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-multiviewframebyframe),<br></br> [MLMediaFramePackingMode_FrameByFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-framebyframe),<br></br> [MLMediaFramePackingMode_Anaglyph](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingmode-anaglyph)<br></br>}<br></br>Frame Packing Arrangement for stereoscopic videos.  |
+| enum | **[MLMediaFramePackingFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaframepackingflags)** <br></br> { <br></br>[MLMediaFramePackingFlags_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-none) = 0,<br></br> [MLMediaFramePackingFlags_RightViewFirst](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-rightviewfirst) = 1 << 0,<br></br> [MLMediaFramePackingFlags_LeftFlipped](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-leftflipped) = 1 << 1,<br></br> [MLMediaFramePackingFlags_RightFlipped](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-rightflipped) = 1 << 2,<br></br> [MLMediaFramePackingFlags_Anaglyph_RedCyan](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-anaglyph-redcyan) = 1 << 3,<br></br> [MLMediaFramePackingFlags_Anaglyph_GreenMagenta](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__player_8h.md#enums-mlmediaframepackingflags-anaglyph-greenmagenta) = 1 << 4<br></br>}<br></br>Frame Packing Arrangement flags for stereoscopic videos.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLMediaPlayerEventCallbacksExInit](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayereventcallbacksexinit)**([MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * inout_callbacks)<br></br>Initializes MediaPlayerEventCallbacks with default values.  |
-| void | **[MLMediaPlayerTrackInfoInit](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayertrackinfoinit)**([MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * inout_track_info)<br></br>Initializes Media Track Information with default values.  |
-| void | **[MLMediaPlayerTrackDRMSessionInfoInit](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayertrackdrmsessioninfoinit)**([MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * inout_drm_session_info)<br></br>Initializes Media Track DRM Session Information with defult values.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayercreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a new [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) object.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerDestroy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Destroys a MediaPlayer object.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetDataSourceForFD](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetdatasourceforfd)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t fd)<br></br>Sets a file descriptor as the data source.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetOffsetDataSourceForFD](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetoffsetdatasourceforfd)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t fd, int64_t offset, int64_t length)<br></br>Sets a file descriptor as the data source with offset.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetDataSourceForPath](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetdatasourceforpath)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * path)<br></br>Sets a local file path as the data source.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetDataSourceForURI](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetdatasourceforuri)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * uri)<br></br>Sets a URI string as the data source.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetRemoteDataSourceForURI](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetremotedatasourceforuri)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * uri, char ** headers, size_t len)<br></br>Sets a URI string as the remote data source.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetMediaDataSource](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetmediadatasource)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_data_source)<br></br>Sets the data source to use.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetMediaStreamSource](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetmediastreamsource)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_stream_source)<br></br>Sets the data source to use.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerAddTimedTextSourceForURI](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayeraddtimedtextsourceforuri)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * uri, const char * mime_type)<br></br>Adds a TimedText source from a URI.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerAddTimedTextSourceForFD](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayeraddtimedtextsourceforfd)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t fd, int64_t offset, int64_t length, const char * mime_type)<br></br>Adds a TimedText source from a file descriptor.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetNextPlayer](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetnextplayer)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) next_media_player)<br></br>Sets the 'next' [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) to automatically 'start' when current [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) playback completes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackCount](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettrackcount)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t * out_track_count)<br></br>Counts the number of tracks found in the data source.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackType](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracktype)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track, [MLMediaPlayerTrackType](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) * out_track_type)<br></br>Gets the type of a track.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackLanguage](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracklanguage)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track, char ** out_track_language)<br></br>Gets the language of a track.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackMediaFormat](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettrackmediaformat)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_media_format)<br></br>Gets the Media Format of a track.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSelectTrack](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerselecttrack)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track)<br></br>Selects a track.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerUnselectTrack](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerunselecttrack)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track)<br></br>Unselects a track.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPrepare](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepare)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Prepares the player for playback, synchronously.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPrepareAsync](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepareasync)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Prepares the player for playback, asynchronously.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerStart](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerstart)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Starts or resumes playback.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerStop](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerstop)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Stops playback after playback has been started or paused.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPause](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpause)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Pauses playback.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerReset](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreset)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Resets the [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSeekTo](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseekto)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int msec, [MLMediaSeekMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) mode)<br></br>Seeks to specified time position.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetEventCallbacksEx](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const [MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * callbacks, void * data)<br></br>Sets callbacks to notify clients about player events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetVideoSize](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetvideosize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_width, int32_t * out_height)<br></br>Returns the size of the video frame.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetCurrentPosition](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetcurrentposition)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_msec)<br></br>Returns current position of playback.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetDuration](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetduration)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_msec)<br></br>Returns media duration.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetBufferingUpdate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingupdate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_percentage)<br></br>Returns current buffering percentage.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetinfo)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_code, int32_t * out_extra)<br></br>Returns last info received by internal [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetError](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) * out_result)<br></br>Returns last error received by internal [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTimedText](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettimedtext)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char ** out_text, int32_t * out_start, int32_t * out_end)<br></br>Returns last timed text event information.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetSubtitleEx](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetsubtitleex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) ** out_subtitle_data)<br></br>Returns last subtitle event information.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerReleaseSubtitleEx](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasesubtitleex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Releases last subtitle event information.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetOnMediaSubtitleUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetonmediasubtitleupdatecallback)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerOnMediaSubtitleUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) on_media_subtitle_callback, void * data)<br></br>Sets callback to get notified when a subtitle update is available along with its data.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetMetadata](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int64_t * out_time, int32_t * out_size, uint8_t ** out_buffer)<br></br>Returns last metadata event information.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetVideoScalingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetvideoscalingmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerVideoScalingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode) mode)<br></br>Sets video scaling mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetLooping](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetlooping)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, bool loop)<br></br>Sets the looping mode of the player.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetVolume](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetvolume)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, float volume)<br></br>Sets the volume on this player.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetAudioHandle](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetaudiohandle)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Gets the handle of the audio stream.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPollStates](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint16_t mask, uint16_t * out_polled_states)<br></br>Polls the desired states from internal [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackDRMInfo](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettrackdrminfo)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const [MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * track_info, [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) ** out_drm_info)<br></br>Gets the DRM info of the selected media (either audio or video) track.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPrepareTrackDRM](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpreparetrackdrm)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const [MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * drm_session_info)<br></br>Prepares DRM for the selected media (either audio or video) track.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerReleaseDRM](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasedrm)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Releases DRM.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetDefaultBufferingSettings](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetdefaultbufferingsettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * out_buf_settings)<br></br>Gets default Buffering settings.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetBufferingSettings](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingsettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * out_buf_settings)<br></br>Gets current Buffering settings.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetBufferingSettings](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetbufferingsettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) buf_settings)<br></br>Sets buffering settings.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetOnMediaTimedTextUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetonmediatimedtextupdatecallback)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerOnMediaTimedTextUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback) on_media_timed_text_callback, void * data)<br></br>Set callback to get invoked when a Timed Text update is available along with its data.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetWebVTTData](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetwebvttdata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) timed_text, [MLWebVTTData](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) ** out_webvtt_data)<br></br>Gets WebVTT data represented by a timed text handle.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTTMLData](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetttmldata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) timed_text, [MLTTMLData](/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) ** out_ttml_data)<br></br>Gets TTML data represented by a timed text handle.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerResetAsync](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerresetasync)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Resets the [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state asynchronously.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetMetrics](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetmetrics)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerMetrics](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) * out_metrics)<br></br>Retrieves metrics recorded on the MediaPlayer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetSurface](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetsurface)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) surface)<br></br>Sets the Native surface to be used as the sink for displaying the video portion of the media.  |
+| void | **[MLMediaPlayerEventCallbacksExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayereventcallbacksexinit)**([MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * inout_callbacks)<br></br>Initializes MediaPlayerEventCallbacks with default values.  |
+| void | **[MLMediaPlayerTrackInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayertrackinfoinit)**([MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * inout_track_info)<br></br>Initializes Media Track Information with default values.  |
+| void | **[MLMediaPlayerTrackDRMSessionInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayertrackdrmsessioninfoinit)**([MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * inout_drm_session_info)<br></br>Initializes Media Track DRM Session Information with defult values.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayercreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a new [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) object.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Destroys a MediaPlayer object.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetDataSourceForFD](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetdatasourceforfd)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t fd)<br></br>Sets a file descriptor as the data source.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetOffsetDataSourceForFD](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetoffsetdatasourceforfd)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t fd, int64_t offset, int64_t length)<br></br>Sets a file descriptor as the data source with offset.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetDataSourceForPath](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetdatasourceforpath)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * path)<br></br>Sets a local file path as the data source.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetDataSourceForURI](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetdatasourceforuri)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * uri)<br></br>Sets a URI string as the data source.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetRemoteDataSourceForURI](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetremotedatasourceforuri)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * uri, char ** headers, size_t len)<br></br>Sets a URI string as the remote data source.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetMediaDataSource](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetmediadatasource)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_data_source)<br></br>Sets the data source to use.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetMediaStreamSource](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetmediastreamsource)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_stream_source)<br></br>Sets the data source to use.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerAddTimedTextSourceForURI](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayeraddtimedtextsourceforuri)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char * uri, const char * mime_type)<br></br>Adds a TimedText source from a URI.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerAddTimedTextSourceForFD](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayeraddtimedtextsourceforfd)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t fd, int64_t offset, int64_t length, const char * mime_type)<br></br>Adds a TimedText source from a file descriptor.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetNextPlayer](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetnextplayer)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) next_media_player)<br></br>Sets the 'next' [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to automatically 'start' when current [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) playback completes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackCount](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettrackcount)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t * out_track_count)<br></br>Counts the number of tracks found in the data source.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracktype)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track, [MLMediaPlayerTrackType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) * out_track_type)<br></br>Gets the type of a track.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackLanguage](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracklanguage)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track, char ** out_track_language)<br></br>Gets the language of a track.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackMediaFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettrackmediaformat)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_media_format)<br></br>Gets the Media Format of a track.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSelectTrack](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerselecttrack)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track)<br></br>Selects a track.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerUnselectTrack](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerunselecttrack)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint32_t track)<br></br>Unselects a track.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPrepare](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepare)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Prepares the player for playback, synchronously.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPrepareAsync](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepareasync)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Prepares the player for playback, asynchronously.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerStart](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerstart)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Starts or resumes playback.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerStop](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerstop)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Stops playback after playback has been started or paused.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPause](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpause)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Pauses playback.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerReset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreset)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Resets the [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSeekTo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseekto)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int msec, [MLMediaSeekMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) mode)<br></br>Seeks to specified time position.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * callbacks, void * data)<br></br>Sets callbacks to notify clients about player events.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetVideoSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetvideosize)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_width, int32_t * out_height)<br></br>Returns the size of the video frame.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetCurrentPosition](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetcurrentposition)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_msec)<br></br>Returns current position of playback.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetDuration](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetduration)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_msec)<br></br>Returns media duration.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetBufferingUpdate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingupdate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_percentage)<br></br>Returns current buffering percentage.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetinfo)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int32_t * out_code, int32_t * out_extra)<br></br>Returns last info received by internal [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) * out_result)<br></br>Returns last error received by internal [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTimedText](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettimedtext)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const char ** out_text, int32_t * out_start, int32_t * out_end)<br></br>Returns last timed text event information.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetSubtitleEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetsubtitleex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) ** out_subtitle_data)<br></br>Returns last subtitle event information.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerReleaseSubtitleEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasesubtitleex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Releases last subtitle event information.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetOnMediaSubtitleUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetonmediasubtitleupdatecallback)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerOnMediaSubtitleUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) on_media_subtitle_callback, void * data)<br></br>Sets callback to get notified when a subtitle update is available along with its data.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, int64_t * out_time, int32_t * out_size, uint8_t ** out_buffer)<br></br>Returns last metadata event information.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetVideoScalingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetvideoscalingmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerVideoScalingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode) mode)<br></br>Sets video scaling mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetLooping](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetlooping)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, bool loop)<br></br>Sets the looping mode of the player.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetVolume](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetvolume)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, float volume)<br></br>Sets the volume on this player.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetAudioHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetaudiohandle)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Gets the handle of the audio stream.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPollStates](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, uint16_t mask, uint16_t * out_polled_states)<br></br>Polls the desired states from internal [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettrackdrminfo)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const [MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * track_info, [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) ** out_drm_info)<br></br>Gets the DRM info of the selected media (either audio or video) track.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerPrepareTrackDRM](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpreparetrackdrm)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, const [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * drm_session_info)<br></br>Prepares DRM for the selected media (either audio or video) track.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerReleaseDRM](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasedrm)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Releases DRM.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetDefaultBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetdefaultbufferingsettings)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * out_buf_settings)<br></br>Gets default Buffering settings.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingsettings)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * out_buf_settings)<br></br>Gets current Buffering settings.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetbufferingsettings)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) buf_settings)<br></br>Sets buffering settings.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetOnMediaTimedTextUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetonmediatimedtextupdatecallback)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerOnMediaTimedTextUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback) on_media_timed_text_callback, void * data)<br></br>Set callback to get invoked when a Timed Text update is available along with its data.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetWebVTTData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetwebvttdata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) timed_text, [MLWebVTTData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) ** out_webvtt_data)<br></br>Gets WebVTT data represented by a timed text handle.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetTTMLData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetttmldata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) timed_text, [MLTTMLData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) ** out_ttml_data)<br></br>Gets TTML data represented by a timed text handle.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerResetAsync](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerresetasync)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player)<br></br>Resets the [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state asynchronously.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerGetMetrics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetmetrics)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLMediaPlayerMetrics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) * out_metrics)<br></br>Retrieves metrics recorded on the MediaPlayer.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaPlayerSetSurface](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetsurface)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_player, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) surface)<br></br>Sets the Native surface to be used as the sink for displaying the video portion of the media.  |
 
 ## Enums Documentation
 
@@ -244,7 +244,7 @@ Description of 'what' should be a value from the MLMediaPlayerInfo. Description 
 
 
 
-MediaTrack types returned by [MLMediaPlayerGetTrackType()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracktype). 
+MediaTrack types returned by [MLMediaPlayerGetTrackType()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergettracktype). 
 
 
 
@@ -342,7 +342,7 @@ typedef MLPSSHEntry MLMediaPlayerPSSHEntry;
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_p_s_s_h_entry.md)
 
 
 
@@ -358,7 +358,7 @@ MediaPlayer DRM Info for a Media Track.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md)
 
 
 **API Level:**
@@ -380,7 +380,7 @@ MediaPlayer subtitle data.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md)
 
 
 
@@ -397,7 +397,7 @@ Indicate the buffering settings.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md)
 
 
 
@@ -413,7 +413,7 @@ MediaPlayer Buffering update callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_buffering_update_info.md)
 
 
 **API Level:**
@@ -434,7 +434,7 @@ MediaPlayer Playback completion callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_completion_info.md)
 
 
 **API Level:**
@@ -455,7 +455,7 @@ MediaPlayer Error callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md)
 
 
 **API Level:**
@@ -476,7 +476,7 @@ MediaPlayer Information callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_info_info.md)
 
 
 **API Level:**
@@ -497,7 +497,7 @@ MediaPlayer Playback prepared callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_prepared_info.md)
 
 
 **API Level:**
@@ -518,7 +518,7 @@ MediaPlayer Playback seek completion callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_seek_complete_info.md)
 
 
 **API Level:**
@@ -539,7 +539,7 @@ MediaPlayer Video Size Changed callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_video_size_changed_info.md)
 
 
 **API Level:**
@@ -560,7 +560,7 @@ MediaPlayer Track DRM Info callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md)
 
 
 **API Level:**
@@ -581,7 +581,7 @@ MediaPlayer reset completion callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_reset_complete_info.md)
 
 
 **API Level:**
@@ -602,7 +602,7 @@ MediaPlayer frame packing callback Info.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_frame_packing_info.md)
 
 
 **API Level:**
@@ -619,13 +619,13 @@ MediaPlayer frame packing callback Info.
 typedef struct MLMediaPlayerEventCallbacksEx MLMediaPlayerEventCallbacksEx;
 ```
 
-Callbacks for notifying client about [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) error events. 
+Callbacks for notifying client about [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) error events. 
 
 Those are async mechanisms that should not be used in parallel with their sync counterpart, i.e. poll-based queries for the same events using MLMediaPlayerPollStatespoll().
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md)
 
 
 **API Level:**
@@ -646,7 +646,7 @@ MediaPlayer Track Information.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md)
 
 
 **API Level:**
@@ -667,7 +667,7 @@ DRM Session information for a MediaPlayer Track.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md)
 
 
 **API Level:**
@@ -691,8 +691,8 @@ Callbacks signature called when subtitle update is available.
 |  |   |   |
 |--|--|--|
 |  |data|Custom data to be returned when callback is fired. |
-|  |media_player|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
-|  |subtitle_data|[MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) is the raw subtitle data. |
+|  |media_player|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
+|  |subtitle_data|[MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) is the raw subtitle data. |
 
 
 
@@ -712,8 +712,8 @@ Callbacks signature called when Timed Text update is available.
 
 |  |   |   |
 |--|--|--|
-|  |media_player|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
-|  |timed_text|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is the handle for timed_text data. |
+|  |media_player|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance for which callback was called. |
+|  |timed_text|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is the handle for timed_text data. |
 |  |data|Custom data to be delivered when callback is invoked.|
 **Required Permissions**:
 
@@ -742,7 +742,7 @@ MediaPlayer metrics data.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md)
 
 
 **API Level:**
@@ -770,7 +770,7 @@ Initializes MediaPlayerEventCallbacks with default values.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |inout_callbacks|Media Player Callback structure defined by [MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) that needs to be initialized. |
+| [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |inout_callbacks|Media Player Callback structure defined by [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) that needs to be initialized. |
 
 
 
@@ -791,7 +791,7 @@ Initializes Media Track Information with default values.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |inout_track_info|Media track information defined by [MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) that needs to be initialized. |
+| [MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |inout_track_info|Media track information defined by [MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) that needs to be initialized. |
 
 
 
@@ -812,7 +812,7 @@ Initializes Media Track DRM Session Information with defult values.
 
 |  |   |   |
 |--|--|--|
-| [MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |inout_drm_session_info|Media track DRM Session information defined by [MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) that needs to be initialized. |
+| [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |inout_drm_session_info|Media track DRM Session information defined by [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) that needs to be initialized. |
 
 
 
@@ -827,22 +827,22 @@ MLResult MLMediaPlayerCreate(
 )
 ```
 
-Create a new [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) object. 
+Create a new [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) object. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) object created. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the new [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) object created. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created MediaPlayer. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created MediaPlayer. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -872,15 +872,15 @@ Destroys a MediaPlayer object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) object to destroy.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) object to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed MediaPlayer. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed MediaPlayer. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -911,18 +911,18 @@ Sets a file descriptor as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t |fd|The file descriptor for the file you want to play.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -953,7 +953,7 @@ Sets a file descriptor as the data source with offset.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t |fd|The file descriptor for the file you want to play. |
 | int64_t |offset|The offset (in bytes) of the source's start. |
 | int64_t |length|The number of bytes of media to load after offset.|
@@ -962,11 +962,11 @@ Sets a file descriptor as the data source with offset.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set file descriptor. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -995,18 +995,18 @@ Sets a local file path as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |path|The linux-style path of the file.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set local file path. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set local file path. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1035,25 +1035,25 @@ Sets a URI string as the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |uri|The C-style string representing the URI complete string.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * android.permission.INTERNET (protection level: normal) 
 
 
-Supported URI schemes are `file`, `http`, `https`, and `rtsp`. If looking to provide headers, use [MLMediaPlayerSetRemoteDataSourceForURI()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetremotedatasourceforuri).
+Supported URI schemes are `file`, `http`, `https`, and `rtsp`. If looking to provide headers, use [MLMediaPlayerSetRemoteDataSourceForURI()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayersetremotedatasourceforuri).
 
 
 
@@ -1078,7 +1078,7 @@ Sets a URI string as the remote data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |uri|The C-style string representing the complete URL. |
 | char ** |headers|Array of char * headers to be sent. |
 | size_t |len|Number of headers passed.|
@@ -1087,12 +1087,12 @@ Sets a URI string as the remote data source.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set URI string. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed due to lack of permission. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * android.permission.INTERNET (protection level: normal) 
@@ -1121,19 +1121,19 @@ Sets the data source to use.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaDataSourceCreate()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_data_source|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaDataSourceCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadatasourcecreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1160,19 +1160,19 @@ Sets the data source to use.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaStreamSourceCreate()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_stream_source|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) returned by [MLMediaStreamSourceCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediastreamsourcecreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the data source to use. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed because no valid source could be found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1200,7 +1200,7 @@ Adds a TimedText source from a URI.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char * |uri|The C-style string representing the complete URI. |
 | const char * |mime_type|The MIME type of the file.|
 
@@ -1208,10 +1208,10 @@ Adds a TimedText source from a URI.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from URI. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from URI. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1241,7 +1241,7 @@ Adds a TimedText source from a file descriptor.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t |fd|The file descriptor for the timed text source. |
 | int64_t |offset|The offset (in bytes) of the source's start. Must be >= 0. |
 | int64_t |length|The number of bytes of media to load after offset. Must be >= 0. |
@@ -1251,10 +1251,10 @@ Adds a TimedText source from a file descriptor.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from file descriptor. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully added TimedText source from file descriptor. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown failure. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1277,25 +1277,25 @@ MLResult MLMediaPlayerSetNextPlayer(
 )
 ```
 
-Sets the 'next' [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) to automatically 'start' when current [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) playback completes. 
+Sets the 'next' [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to automatically 'start' when current [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) playback completes. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |next_media_player|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) of an already created [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) instance. To 'remove' the next player, set next_media_player = 0.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |next_media_player|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) of an already created [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) instance. To 'remove' the next player, set next_media_player = 0.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully registered next [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed source because no valid source could be found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully registered next [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Failed source because no valid source could be found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1322,18 +1322,18 @@ Counts the number of tracks found in the data source.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t * |out_track_count|The number of tracks found in the player source.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the number of tracks. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the number of tracks. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1361,20 +1361,20 @@ Gets the type of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|The track number for which type is to be returned. Has to be < TrackCount. |
-| [MLMediaPlayerTrackType](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) * |out_track_type|The returned type for specified track number.|
+| [MLMediaPlayerTrackType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayertracktype) * |out_track_type|The returned type for specified track number.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned type for passed track. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Found track's type was unknown. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned type for passed track. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NameNotFound|Found track's type was unknown. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1402,7 +1402,7 @@ Gets the language of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|The track number for which language is to be returned. Has to be < TrackCount. |
 | char ** |out_track_language|The returned language of the track. Caller has ownership of that param and has to free it when no longer needed.|
 
@@ -1410,11 +1410,11 @@ Gets the language of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned language for passed track. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned language for passed track. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1442,19 +1442,19 @@ Gets the Media Format of a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|The track number for which Media Format is to be returned. Has to be < TrackCount. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_media_format|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to MediaFormat of the track. Caller has ownership of this handle and should call [MLMediaFormatDestroy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatdestroy) to free it when no longer needed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_media_format|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to MediaFormat of the track. Caller has ownership of this handle and should call [MLMediaFormatDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaformatdestroy) to free it when no longer needed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retreived the media format of passed track. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully retreived the media format of passed track. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1486,18 +1486,18 @@ Selects a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|Number of the track to select. Has to be < TrackCount.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully selected track. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully selected track. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1524,18 +1524,18 @@ Unselects a track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint32_t |track|Number of the track to unselect. Has to be < TrackCount.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully unselected track. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully unselected track. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1561,24 +1561,24 @@ Prepares the player for playback, synchronously.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_CannotConnect|Failed becaue MediaPlayer could not connect with the given URL.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaResult_CannotConnect|Failed becaue MediaPlayer could not connect with the given URL.|
 **Required Permissions**:
 
   * None 
 
 
-After setting the data source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For files, it is OK to call prepare(), which blocks until [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) is ready for playback.
+After setting the data source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For files, it is OK to call prepare(), which blocks until [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) is ready for playback.
 
 
 
@@ -1600,23 +1600,23 @@ Prepares the player for playback, asynchronously.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasBeenPrepared state or wait for 'on_prepared' callback if already set. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared the player asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasBeenPrepared state or wait for 'on_prepared' callback if already set. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called after one of the setDataSource methods or in the 'stopped' state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-After setting the data's source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For streams, you should call prepareAsync(), which returns immediately, rather than blocking until enough data has been buffered. Prepared state will then be obtained via the 'on_prepared' callback if already registered (see MLMediaPlayerSetEventCallbacksEx), or polled for via the [MLMediaPlayerPollStates()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) call with the MLMediaPlayerPollingStateFlag_HasBeenPrepared flag set.
+After setting the data's source and the #GraphicBufferProducer, you need to either call prepare() or prepareAsync(). For streams, you should call prepareAsync(), which returns immediately, rather than blocking until enough data has been buffered. Prepared state will then be obtained via the 'on_prepared' callback if already registered (see MLMediaPlayerSetEventCallbacksEx), or polled for via the [MLMediaPlayerPollStates()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) call with the MLMediaPlayerPollingStateFlag_HasBeenPrepared flag set.
 
 
 
@@ -1638,17 +1638,17 @@ Starts or resumes playback.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started/resumed playback. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'prepared', 'playback complete', 'paused', 'stopped'. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started/resumed playback. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'prepared', 'playback complete', 'paused', 'stopped'. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1676,17 +1676,17 @@ Stops playback after playback has been started or paused.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stopped playback. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'stopped', 'prepared', 'playback complete'. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stopped playback. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'stopped', 'prepared', 'playback complete'. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1712,23 +1712,23 @@ Pauses playback.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully paused playback. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'playback complete'. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully paused playback. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. Can only be called in one of the following states: 'playing', 'paused', 'playback complete'. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-Calling pause() is a NOOP if [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) is in state #MEDIA_PLAYER_PAUSED or #MEDIA_PLAYER_PLAYBACK_COMPLETE.
+Calling pause() is a NOOP if [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) is in state #MEDIA_PLAYER_PAUSED or #MEDIA_PLAYER_PLAYBACK_COMPLETE.
 
 
 
@@ -1744,23 +1744,23 @@ MLResult MLMediaPlayerReset(
 )
 ```
 
-Resets the [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state. 
+Resets the [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully reset MediaPlayer. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully reset MediaPlayer. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1794,25 +1794,25 @@ Seeks to specified time position.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int |msec|The offset in milliseconds from the start, to seek to. |
-| [MLMediaSeekMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) |mode|Seek mode defined by MLMediaSeekMode.|
+| [MLMediaSeekMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) |mode|Seek mode defined by MLMediaSeekMode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched seek operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasSeekCompleted state or wait for the 'on_seek_complete' callback if already set. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'started', 'prepared', 'paused' and 'playback complete'. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched seek operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasSeekCompleted state or wait for the 'on_seek_complete' callback if already set. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'started', 'prepared', 'paused' and 'playback complete'. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-Note that SeekTo is an async. function and returns immediately. Successful seek result has to be obtained either via the 'on_seek_complete' if already registered (see MLMediaPlayerSetEventCallbacksEx) or by polling for the flag 'MLMediaPlayerPollingStateFlag_HasSeekCompleted' when calling [MLMediaPlayerPollStates()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
+Note that SeekTo is an async. function and returns immediately. Successful seek result has to be obtained either via the 'on_seek_complete' if already registered (see MLMediaPlayerSetEventCallbacksEx) or by polling for the flag 'MLMediaPlayerPollingStateFlag_HasSeekCompleted' when calling [MLMediaPlayerPollStates()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
 
 
 
@@ -1836,25 +1836,25 @@ Sets callbacks to notify clients about player events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MediaCodec. |
-| const [MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the MediaCodec. |
+| const [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md) * |callbacks|Set of event callbacks. Can be set to NULL to unset the callbacks altogether. |
 | void * |data|Custom data to be returned when any callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set/unset the specified callbacks. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set/unset the specified callbacks. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
-This structure must be initialized by calling [MLMediaPlayerEventCallbacksExInit()](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayereventcallbacksexinit) before use.
+This structure must be initialized by calling [MLMediaPlayerEventCallbacksExInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayereventcallbacksexinit) before use.
 
-Client needs to implement the callback functions declared in [MLMediaPlayerEventCallbacksEx](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md), but can set to NULL the ones he does not care about.
+Client needs to implement the callback functions declared in [MLMediaPlayerEventCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_event_callbacks_ex.md), but can set to NULL the ones he does not care about.
 
 
 
@@ -1883,7 +1883,7 @@ Returns the size of the video frame.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_width|The returned video width. |
 | int32_t * |out_height|The returned video height.|
 
@@ -1891,10 +1891,10 @@ Returns the size of the video frame.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned video size. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned video size. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1921,17 +1921,17 @@ Returns current position of playback.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_msec|The returned position in milliseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current position. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current position. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1958,18 +1958,18 @@ Returns media duration.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_msec|The returned duration in milliseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the media duration. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'prepared', 'started', 'paused', 'stopped' and 'playback complete'. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the media duration. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can only be called from the following states: 'prepared', 'started', 'paused', 'stopped' and 'playback complete'. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -1996,17 +1996,17 @@ Returns current buffering percentage.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_percentage|The returned buffering percentage in the range [0, 100].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current buffering percentage. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current buffering percentage. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2028,13 +2028,13 @@ MLResult MLMediaPlayerGetInfo(
 )
 ```
 
-Returns last info received by internal [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md). 
+Returns last info received by internal [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int32_t * |out_code|The main info code. |
 | int32_t * |out_extra|The secondary code/data.|
 
@@ -2042,10 +2042,10 @@ Returns last info received by internal [Media Player](/api-ref/api/Modules/group
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2066,23 +2066,23 @@ MLResult MLMediaPlayerGetError(
 )
 ```
 
-Returns last error received by internal [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md). 
+Returns last error received by internal [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) * |out_result|The result code.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) * |out_result|The result code.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last MediaPlayer error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2111,7 +2111,7 @@ Returns last timed text event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | const char ** |out_text|The text of the timed text event. |
 | int32_t * |out_start|The start time. |
 | int32_t * |out_end|The end time.|
@@ -2120,10 +2120,10 @@ Returns last timed text event information.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last timedtext entry. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last timedtext entry. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2150,16 +2150,16 @@ Returns last subtitle event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) ** |out_subtitle_data|The returned MLMediaPlayerGetSubtitleExArgs pointer.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md) ** |out_subtitle_data|The returned MLMediaPlayerGetSubtitleExArgs pointer.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last subtitle entry. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the last subtitle entry. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2190,15 +2190,15 @@ Releases last subtitle event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released the last subtitle entry. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released the last subtitle entry. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2231,26 +2231,26 @@ Sets callback to get notified when a subtitle update is available along with its
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerOnMediaSubtitleUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) |on_media_subtitle_callback|Function pointer to be called. This can be 'NULL' to unset the callback. See [MLMediaPlayerOnMediaSubtitleUpdateCallback()](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) callback typedef declaration and comments for explanation on expected callback parameters. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerOnMediaSubtitleUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) |on_media_subtitle_callback|Function pointer to be called. This can be 'NULL' to unset the callback. See [MLMediaPlayerOnMediaSubtitleUpdateCallback()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediasubtitleupdatecallback) callback typedef declaration and comments for explanation on expected callback parameters. |
 | void * |data|Custom data to be returned when callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
 
-Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasSubtitleUpdated](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hassubtitleupdated) flag. [MLMediaPlayerPollStates()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
+Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasSubtitleUpdated](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hassubtitleupdated) flag. [MLMediaPlayerPollStates()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
 
-This also makes [MLMediaPlayerGetSubtitleEx()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetsubtitleex) redundant as the subtitle data is provided with the callback.
+This also makes [MLMediaPlayerGetSubtitleEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetsubtitleex) redundant as the subtitle data is provided with the callback.
 
 
 
@@ -2280,7 +2280,7 @@ Returns last metadata event information.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | int64_t * |out_time|The returned event time. |
 | int32_t * |out_size|The returned event buffer size. |
 | uint8_t ** |out_buffer|The returned event buffer. This buffer is only valid until the next metadata event arrives, so make a copy if you need to use the buffer later.|
@@ -2289,10 +2289,10 @@ Returns last metadata event information.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned last metadata entry. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned last metadata entry. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2319,18 +2319,18 @@ Sets video scaling mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|MLHandle to the MediaPlayer instance. |
-| [MLMediaPlayerVideoScalingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode) |mode|The video scaling mode to set. For a list of valid values, see #media_video_scaling_mode_type declaration.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|MLHandle to the MediaPlayer instance. |
+| [MLMediaPlayerVideoScalingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayervideoscalingmode) |mode|The video scaling mode to set. For a list of valid values, see #media_video_scaling_mode_type declaration.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current video scaling mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current video scaling mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. SetDataSource must be called immediately after creation, or after a media player reset. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2357,17 +2357,17 @@ Sets the looping mode of the player.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | bool |loop|The looping mode. Set to true if player should loop to beginning of MediaPlayer when EOS reached. Set to false if MediaPlayer should simply stop playback at end of media.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current looping mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current looping mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2394,17 +2394,17 @@ Sets the volume on this player.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | float |volume|The new volume in the [0.0, 1.0] range.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the volume. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the volume. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2431,14 +2431,14 @@ Gets the handle of the audio stream.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the returned Audio handle. Only valid if result is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the returned Audio handle. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If used in versions starting 1.2.0 or later.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If used in versions starting 1.2.0 or later.|
 **Required Permissions**:
 
   * None 
@@ -2464,13 +2464,13 @@ MLResult MLMediaPlayerPollStates(
 )
 ```
 
-Polls the desired states from internal [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md). 
+Polls the desired states from internal [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
 | uint16_t |mask|Selection mask for picking which states to retrieve. |
 | uint16_t * |out_polled_states|Bitwise OR'ed integer of all the chosen states from bitwise 'mask' and in the range [0 = false : 1 = true].|
 
@@ -2478,15 +2478,15 @@ Polls the desired states from internal [Media Player](/api-ref/api/Modules/group
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully polled and returned the selected states. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully polled and returned the selected states. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
-Desired states have to be selected by passing a bitwise OR'ed mask of [MLMediaPlayerPollingStateFlags](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflags) flags.
+Desired states have to be selected by passing a bitwise OR'ed mask of [MLMediaPlayerPollingStateFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflags) flags.
 
 The "is_XXX" states can be polled multiples times and the return value will be the same if internal state hasn't changed since last call.
 
@@ -2494,13 +2494,13 @@ When polling the "has_XXX" states however, internal state is set to false, since
 
 Two-step state polling : The following states, when returning '1', indicate there is some data ready to be retrieved, by calling a getter function, as explained below.
 
-For '#MLMediaPlayerPollingState_HasSizeChanged', call [MLMediaPlayerGetVideoSize()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetvideosize) to get the new size.
+For '#MLMediaPlayerPollingState_HasSizeChanged', call [MLMediaPlayerGetVideoSize()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetvideosize) to get the new size.
 
-For '#MLMediaPlayerPollingState_HasBufferingUpdated', call [MLMediaPlayerGetBufferingUpdate()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingupdate) to get buffering progress value.
+For '#MLMediaPlayerPollingState_HasBufferingUpdated', call [MLMediaPlayerGetBufferingUpdate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergetbufferingupdate) to get buffering progress value.
 
-For '#MLMediaPlayerPollingState_HasReceivedInfo, call [MLMediaPlayerGetError()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last info code and data.
+For '#MLMediaPlayerPollingState_HasReceivedInfo, call [MLMediaPlayerGetError()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last info code and data.
 
-For '#MLMediaPlayerPollingState_HasReceivedError, call [MLMediaPlayerGetError()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last error code and data.
+For '#MLMediaPlayerPollingState_HasReceivedError, call [MLMediaPlayerGetError()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayergeterror) to get last error code and data.
 
 Note: This API can still be used even if an #OnBufferAvailable callback has been set using MLMediaPlayerSetOnBufferAvailableCallback() method.
 
@@ -2526,19 +2526,19 @@ Gets the DRM info of the selected media (either audio or video) track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| const [MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |track_info|Media track information defined by [MLMediaPlayerTrackInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md). |
-| [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) ** |out_drm_info|Pointer to the pointer to [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) struct. The caller should not free the pointer returned. The memory will be released in the call to [MLMediaPlayerReleaseDRM()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasedrm).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| const [MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md) * |track_info|Media track information defined by [MLMediaPlayerTrackInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_info.md). |
+| [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) ** |out_drm_info|Pointer to the pointer to [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) struct. The caller should not free the pointer returned. The memory will be released in the call to [MLMediaPlayerReleaseDRM()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerreleasedrm).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the current DRM Info. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|Media Source is not prepared yet. Wait for on_prepared callback and call again. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotAvailable|DRM Information not available for the given track.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the current DRM Info. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Pending|Media Source is not prepared yet. Wait for on_prepared callback and call again. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NotAvailable|DRM Information not available for the given track.|
 **Required Permissions**:
 
   * None 
@@ -2572,16 +2572,16 @@ Prepares DRM for the selected media (either audio or video) track.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| const [MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |drm_session_info|DRM Session info for the Media track, as defined by [MLMediaPlayerTrackDRMSessionInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| const [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md) * |drm_session_info|DRM Session info for the Media track, as defined by [MLMediaPlayerTrackDRMSessionInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_session_info.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared DRM. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully prepared DRM. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2612,15 +2612,15 @@ Releases DRM.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released DRM. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released DRM. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2647,17 +2647,17 @@ Gets default Buffering settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned default Buffering settings. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned default Buffering settings. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2686,17 +2686,17 @@ Gets current Buffering settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) * |out_buf_settings|A pointer to [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current Buffering settings. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current Buffering settings. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2725,17 +2725,17 @@ Sets buffering settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) |buf_settings|An [MLMediaPlayerBufferingSettings](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) struct.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) |buf_settings|An [MLMediaPlayerBufferingSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md) struct.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set buffering settings. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set buffering settings. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|Feature not implemented in the given model. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2765,24 +2765,24 @@ Set callback to get invoked when a Timed Text update is available along with its
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerOnMediaTimedTextUpdateCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback) |on_media_timed_text_callback|Function pointer to be called. This can be 'NULL' to unset the callback. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerOnMediaTimedTextUpdateCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediaplayeronmediatimedtextupdatecallback) |on_media_timed_text_callback|Function pointer to be called. This can be 'NULL' to unset the callback. |
 | void * |data|Custom data to be returned when callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callback. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
 
-Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasTimedTextUpdated](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hastimedtextupdated) flag. [MLMediaPlayerPollStates()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
+Setting this callback disables use of the poll-based API to query for the [MLMediaPlayerPollingStateFlag_HasTimedTextUpdated](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerpollingstateflag-hastimedtextupdated) flag. [MLMediaPlayerPollStates()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates) will ignore checks for this bit.
 
 
 
@@ -2811,24 +2811,24 @@ Gets WebVTT data represented by a timed text handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
-| [MLWebVTTData](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) ** |out_webvtt_data|The WebVTT data structure to be returned.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
+| [MLWebVTTData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) ** |out_webvtt_data|The WebVTT data structure to be returned.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned WebVTT data. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the WebVTT format. The timed text track's mime type must be "text/vtt". |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned WebVTT data. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the WebVTT format. The timed text track's mime type must be "text/vtt". |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-The returned [MLWebVTTData](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) structure is valid only in the callback's context.
+The returned [MLWebVTTData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) structure is valid only in the callback's context.
 
 
 
@@ -2857,24 +2857,24 @@ Gets TTML data represented by a timed text handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
-| [MLTTMLData](/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) ** |out_ttml_data|The TTML data structure to be returned.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |timed_text|The Timed Text handle. |
+| [MLTTMLData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) ** |out_ttml_data|The TTML data structure to be returned.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned TTML data. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the TTML format. The timed text track's mime type must be "application/ttml+xml". |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned TTML data. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_BadType|Failed because the timed_text handle was not in the TTML format. The timed text track's mime type must be "application/ttml+xml". |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
 
 
-The returned [MLTTMLData](/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) structure is valid only in the callback's context.
+The returned [MLTTMLData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_t_t_m_l_data.md) structure is valid only in the callback's context.
 
 
 
@@ -2895,23 +2895,23 @@ MLResult MLMediaPlayerResetAsync(
 )
 ```
 
-Resets the [Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state asynchronously. 
+Resets the [Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md) to its uninitialized state asynchronously. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched MediaPlayer reset operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasResetCompleted or use the 'on_reset_complete' callback if already set. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully launched MediaPlayer reset operation asynchronously. For result, poll for MLMediaPlayerPollingStateFlag_HasResetCompleted or use the 'on_reset_complete' callback if already set. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. This method can be called anytime except when in 'preparing async'. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2919,7 +2919,7 @@ Resets the [Media Player](/api-ref/api/Modules/group___media_player/group___medi
 
 This method is asynchronous and will return immediately. After invocation, you will have to initialize it again by setting the data source and calling prepare() or prepareAsync().
 
-A successful reset result can be obtained either by registering the 'on_reset_complete' callback (see MLMediaPlayerSetEventCallbacksEx) or by polling for the 'MLMediaPlayerPollingStateFlag_HasResetCompleted' flag when calling [MLMediaPlayerPollStates()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
+A successful reset result can be obtained either by registering the 'on_reset_complete' callback (see MLMediaPlayerSetEventCallbacksEx) or by polling for the 'MLMediaPlayerPollingStateFlag_HasResetCompleted' flag when calling [MLMediaPlayerPollStates()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerpollstates).
 
 
 
@@ -2947,18 +2947,18 @@ Retrieves metrics recorded on the MediaPlayer.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLMediaPlayerMetrics](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) * |out_metrics|See [MLMediaPlayerMetrics](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLMediaPlayerMetrics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md) * |out_metrics|See [MLMediaPlayerMetrics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_metrics.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully received metrics. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully received metrics. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed because method was called in the wrong state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
 **Required Permissions**:
 
   * None 
@@ -2990,24 +2990,24 @@ Sets the Native surface to be used as the sink for displaying the video portion 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |surface|Handle to the MLNativeSurface object.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_player|Handle to the MediaPlayer instance. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |surface|Handle to the MLNativeSurface object.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed media_player or the surface handle was not found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set output surface. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MediaPlayer was not properly built or initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed media_player or the surface handle was not found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set output surface. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Method was called from the wrong state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|MediaPlayer was not properly built or initialized.|
 **Required Permissions**:
 
   * None 
 
 
-The surface should be created by [MLNativeSurfaceCreate()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate). When called, this method should be called after one of the MLMediaPlayerSetDataSource() API and before [MLMediaPlayerPrepare()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepare) or [MLMediaPlayerPrepareAsync()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepareasync) Not calling this method or calling this with surface as ML_INVALID_HANDLE will result in only the audio track being played.
+The surface should be created by [MLNativeSurfaceCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate). When called, this method should be called after one of the MLMediaPlayerSetDataSource() API and before [MLMediaPlayerPrepare()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepare) or [MLMediaPlayerPrepareAsync()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerprepareasync) Not calling this method or calling this with surface as ML_INVALID_HANDLE will result in only the audio track being played.
 
 
 

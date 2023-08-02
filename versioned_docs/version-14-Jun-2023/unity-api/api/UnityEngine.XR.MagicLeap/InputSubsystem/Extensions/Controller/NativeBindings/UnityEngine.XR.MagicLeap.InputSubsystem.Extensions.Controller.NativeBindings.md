@@ -11,14 +11,14 @@ title: NativeBindings
 
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputGetConnectedDevices {#mlresultcode-mlinputgetconnecteddevices}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputGetConnectedDevices {#mlresultcode-mlinputgetconnecteddevices}
 
 Gets the device IDs of all connected devices. 
 
@@ -44,7 +44,7 @@ public MLResult.Code MLInputGetConnectedDevices(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputReleaseConnectedDevicesList {#mlresultcode-mlinputreleaseconnecteddeviceslist}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputReleaseConnectedDevicesList {#mlresultcode-mlinputreleaseconnecteddeviceslist}
 
 Releases the contents of #MLInputConnectedDevicesList populated by #MLInputGetConnectedDevices. 
 
@@ -70,7 +70,7 @@ public MLResult.Code MLInputReleaseConnectedDevicesList(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputSetControllerCallbacksEx {#mlresultcode-mlinputsetcontrollercallbacksex}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputSetControllerCallbacksEx {#mlresultcode-mlinputsetcontrollercallbacksex}
 
 Sets the callbacks for controller input events. 
 
@@ -88,7 +88,7 @@ public MLResult.Code MLInputSetControllerCallbacksEx(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |Handle||
-| ref [MLInputControllerCallbacksEx](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerCallbacksEx.md) |Callbacks|A structure containing callbacks for input controller events. The final parameter to all the callbacks is a void &#42;, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL. This structure must be initialized by calling MLInputControllerCallbacksExInit() before use. |
+| ref [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.MLInputControllerCallbacksEx.md) |Callbacks|A structure containing callbacks for input controller events. The final parameter to all the callbacks is a void &#42;, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL. This structure must be initialized by calling MLInputControllerCallbacksExInit() before use. |
 | IntPtr |UserData||
 
 
@@ -337,7 +337,7 @@ public delegate void OnTriggerDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ushort |controllerId||
-| [MLInputControllerTriggerEvent](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent) @ |event|Trigger events types. |
+| [MLInputControllerTriggerEvent](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent) @ |event|Trigger events types. |
 | float |depth||
 | IntPtr |data||
 

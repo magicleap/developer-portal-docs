@@ -6,7 +6,7 @@ summary: data type that encapsulates sample data to be written in to mlmediamuxe
 
 # MLMediaMuxerSampleData
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,12 +19,12 @@ Data type that encapsulates sample data to be written in to MLMediaMuxer.  [More
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#uint32-t-version)**  |
-| size_t | **[track_index](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#size-t-track-index)** <br></br>The track index number, to which to write the sample data into. This should be one of the number returned by [MLMediaMuxerAddTrack](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxeraddtrack).  |
-| const uint8_t * | **[buffer](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#const-uint8-t-buffer)**  |
-| size_t | **[size](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#size-t-size)**  |
-| int64_t | **[time_us](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#int64-t-time-us)**  |
-| uint32_t | **[flags](/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#uint32-t-flags)** <br></br>The flag about the data. The following flags are supported: [MLMediaCodecBufferFlag_KeyFrame](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe): if its a sync/key frame. [MLMediaCodecBufferFlag_EOS](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-eos): To notify end of stream. [MLMediaCodecBufferFlag_MuxerData](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-muxerdata): if it is muxer data (only Exif data block is supported).  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#uint32-t-version)**  |
+| size_t | **[track_index](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#size-t-track-index)** <br></br>The track index number, to which to write the sample data into. This should be one of the number returned by [MLMediaMuxerAddTrack](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxeraddtrack).  |
+| const uint8_t * | **[buffer](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#const-uint8-t-buffer)**  |
+| size_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#size-t-size)**  |
+| int64_t | **[time_us](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#int64-t-time-us)**  |
+| uint32_t | **[flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_muxer_sample_data.md#uint32-t-flags)** <br></br>The flag about the data. The following flags are supported: [MLMediaCodecBufferFlag_KeyFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe): if its a sync/key frame. [MLMediaCodecBufferFlag_EOS](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-eos): To notify end of stream. [MLMediaCodecBufferFlag_MuxerData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-muxerdata): if it is muxer data (only Exif data block is supported).  |
 
 ## Detailed Description
 
@@ -67,7 +67,7 @@ Version of this structure.
 size_t track_index;
 ```
 
-The track index number, to which to write the sample data into. This should be one of the number returned by [MLMediaMuxerAddTrack](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxeraddtrack). 
+The track index number, to which to write the sample data into. This should be one of the number returned by [MLMediaMuxerAddTrack](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediamuxeraddtrack). 
 
 
 
@@ -126,7 +126,7 @@ The buffer's time stamp in microseconds.
 uint32_t flags;
 ```
 
-The flag about the data. The following flags are supported: [MLMediaCodecBufferFlag_KeyFrame](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe): if its a sync/key frame. [MLMediaCodecBufferFlag_EOS](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-eos): To notify end of stream. [MLMediaCodecBufferFlag_MuxerData](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-muxerdata): if it is muxer data (only Exif data block is supported). 
+The flag about the data. The following flags are supported: [MLMediaCodecBufferFlag_KeyFrame](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-keyframe): if its a sync/key frame. [MLMediaCodecBufferFlag_EOS](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-eos): To notify end of stream. [MLMediaCodecBufferFlag_MuxerData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediacodecbufferflag-muxerdata): if it is muxer data (only Exif data block is supported). 
 
 
 

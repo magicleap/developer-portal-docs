@@ -250,7 +250,7 @@ namespace UnityEditor.XR.MagicLeap
                     "Ask a question in the Magic Leap Developer Portal (https://developer.magicleap.cloud/support) " +
                     "and attach the error report .zip file.\n\n",
                     "Error reports are public, and the .zip file may contain identifying information, so you should inspect the .zip before sending.\n\n",
-                    "See https://developer-docs.magicleap.cloud/docs/guides/developer-tools/ml-hub/error-reporting"
+                    "See https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/error-reporting"
                 ), "Ok", "Cancel");
             if (!result)
             {

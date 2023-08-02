@@ -41,4 +41,4 @@ We recommend installing the Magic Leap Application Simulator (known in shorthand
 
 ## Next Steps
 
-After installing the ML Hub, you are ready to set up your [preferred development environment](/docs/guides/getting-started/developer-environment.md).
+After installing the ML Hub, you are ready to set up your [preferred development environment](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/developer-environment.md).

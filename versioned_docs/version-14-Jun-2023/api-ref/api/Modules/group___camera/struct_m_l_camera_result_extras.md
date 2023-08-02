@@ -5,7 +5,7 @@ title: MLCameraResultExtras
 
 # MLCameraResultExtras
 
-**Module:** **[Camera](/api-ref/api/Modules/group___camera/group___camera.md)**
+**Module:** **[Camera](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLCameraResultExtras
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#uint32-t-version)**  |
-| int64_t | **[frame_number](/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#int64-t-frame-number)**  |
-| [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[vcam_timestamp](/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#mltime-vcam-timestamp)**  |
-| [MLCameraIntrinsicCalibrationParameters](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md) * | **[intrinsics](/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#mlcameraintrinsiccalibrationparameters-intrinsics)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#uint32-t-version)**  |
+| int64_t | **[frame_number](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#int64-t-frame-number)**  |
+| [MLTime](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[vcam_timestamp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#mltime-vcam-timestamp)**  |
+| [MLCameraIntrinsicCalibrationParameters](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md) * | **[intrinsics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md#mlcameraintrinsiccalibrationparameters-intrinsics)**  |
 
 ## Detailed Description
 
@@ -94,7 +94,7 @@ MLCameraIntrinsicCalibrationParameters * intrinsics;
 
 | Type | Description |
 |--|--|
-| [MLCameraIntrinsicCalibrationParameters](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md) * | Camera intrinsic parameter.  |
+| [MLCameraIntrinsicCalibrationParameters](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md) * | Camera intrinsic parameter.  |
 
 
 Camera intrinsic parameter.

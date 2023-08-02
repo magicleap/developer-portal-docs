@@ -6,7 +6,7 @@ summary: callbacks for notifying client about mlmediadrm events.
 
 # MLMediaDRMEventCallbacks
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,10 +19,10 @@ Callbacks for notifying client about MLMediaDRM events.  [More...](#detailed-des
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#uint32-t-version)**  |
-| void(*)(MLHandle media_drm, const MLMediaDRMEventInfo *event_info) | **[on_event](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#void-on-event)** <br></br>This callback function is invoked when specific MLMediaDrm events happen.  |
-| void(*)(MLHandle media_drm, const MLMediaDRMExpirationUpdateInfo *update_info) | **[on_expiration_update](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#void-on-expiration-update)** <br></br>This callback function is invoked when a drm session expiration update occurs.  |
-| void(*)(MLHandle media_drm, const MLMediaDRMKeyStatusInfo *key_status_info) | **[on_key_status_change](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#void-on-key-status-change)** <br></br>This callback function is invoked when the keys in a drm session change states.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#uint32-t-version)**  |
+| void(*)(MLHandle media_drm, const MLMediaDRMEventInfo *event_info) | **[on_event](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#void-on-event)** <br></br>This callback function is invoked when specific MLMediaDrm events happen.  |
+| void(*)(MLHandle media_drm, const MLMediaDRMExpirationUpdateInfo *update_info) | **[on_expiration_update](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#void-on-expiration-update)** <br></br>This callback function is invoked when a drm session expiration update occurs.  |
+| void(*)(MLHandle media_drm, const MLMediaDRMKeyStatusInfo *key_status_info) | **[on_key_status_change](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md#void-on-key-status-change)** <br></br>This callback function is invoked when the keys in a drm session change states.  |
 
 ## Detailed Description
 
@@ -80,7 +80,7 @@ This callback function is invoked when specific MLMediaDrm events happen.
 |  |   |   |
 |--|--|--|
 |  |media_drm|MediaDRM instance on which callback was set. |
-|  |event_info|MediaDRM info as [MLMediaDRMEventInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md). |
+|  |event_info|MediaDRM info as [MLMediaDRMEventInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md). |
 
 
 
@@ -106,7 +106,7 @@ This callback function is invoked when a drm session expiration update occurs.
 |  |   |   |
 |--|--|--|
 |  |media_drm|MediaDRM instance on which callback was set. |
-|  |update_info|Updated session info as [MLMediaDRMEventInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md). |
+|  |update_info|Updated session info as [MLMediaDRMEventInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md). |
 If this callback is not defined, then MLMediaDRMEventType_ExpirationUpdate event is notified through on_event callback, without the expiration time.
 
 
@@ -134,7 +134,7 @@ This callback function is invoked when the keys in a drm session change states.
 |  |   |   |
 |--|--|--|
 |  |media_drm|MediaDRM instance on which callback was set. |
-|  |key_status_info|Changed key status as [MLMediaDRMKeyStatusInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md). |
+|  |key_status_info|Changed key status as [MLMediaDRMKeyStatusInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md). |
 If this callback is not defined, then MLMediaDRMEventType_KeysChange event is notified through on_event callback, without the key(s) status information.
 
 

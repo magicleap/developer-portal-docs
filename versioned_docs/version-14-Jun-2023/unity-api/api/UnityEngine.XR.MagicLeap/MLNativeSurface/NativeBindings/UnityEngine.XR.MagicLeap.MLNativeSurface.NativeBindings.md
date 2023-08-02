@@ -11,14 +11,14 @@ title: NativeBindings
 
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceAcquireHardwareBufferFromNativeBuffer {#mlresultcode-mlnativesurfaceacquirehardwarebufferfromnativebuffer}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceAcquireHardwareBufferFromNativeBuffer {#mlresultcode-mlnativesurfaceacquirehardwarebufferfromnativebuffer}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceAcquireHardwareBufferFromNativeBuffer(
@@ -48,7 +48,7 @@ public MLResult.Code MLNativeSurfaceAcquireHardwareBufferFromNativeBuffer(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceAcquireNextAvailableFrame {#mlresultcode-mlnativesurfaceacquirenextavailableframe}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceAcquireNextAvailableFrame {#mlresultcode-mlnativesurfaceacquirenextavailableframe}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceAcquireNextAvailableFrame(
@@ -72,7 +72,7 @@ public MLResult.Code MLNativeSurfaceAcquireNextAvailableFrame(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceCreate {#mlresultcode-mlnativesurfacecreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceCreate {#mlresultcode-mlnativesurfacecreate}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceCreate(
@@ -86,7 +86,7 @@ public MLResult.Code MLNativeSurfaceCreate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [MLNativeSurfaceConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/NativeBindings/UnityEngine.XR.MagicLeap.MLNativeSurface.NativeBindings.MLNativeSurfaceConfig.md) |configValues||
+| ref [MLNativeSurfaceConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/NativeBindings/UnityEngine.XR.MagicLeap.MLNativeSurface.NativeBindings.MLNativeSurfaceConfig.md) |configValues||
 | out ulong |handle||
 
 
@@ -96,7 +96,7 @@ public MLResult.Code MLNativeSurfaceCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameCropRect {#mlresultcode-mlnativesurfacegetframecroprect}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameCropRect {#mlresultcode-mlnativesurfacegetframecroprect}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceGetFrameCropRect(
@@ -111,7 +111,7 @@ public MLResult.Code MLNativeSurfaceGetFrameCropRect(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| out [MLRecti](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLRecti.md) |cropRect|2D rectangle with integer values in native format. |
+| out [MLRecti](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLRecti.md) |cropRect|2D rectangle with integer values in native format. |
 
 
 
@@ -120,7 +120,7 @@ public MLResult.Code MLNativeSurfaceGetFrameCropRect(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameNumber {#mlresultcode-mlnativesurfacegetframenumber}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameNumber {#mlresultcode-mlnativesurfacegetframenumber}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceGetFrameNumber(
@@ -144,7 +144,7 @@ public MLResult.Code MLNativeSurfaceGetFrameNumber(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameQueueBufferTimestamp {#mlresultcode-mlnativesurfacegetframequeuebuffertimestamp}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameQueueBufferTimestamp {#mlresultcode-mlnativesurfacegetframequeuebuffertimestamp}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceGetFrameQueueBufferTimestamp(
@@ -168,7 +168,7 @@ public MLResult.Code MLNativeSurfaceGetFrameQueueBufferTimestamp(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameTimestamp {#mlresultcode-mlnativesurfacegetframetimestamp}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameTimestamp {#mlresultcode-mlnativesurfacegetframetimestamp}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceGetFrameTimestamp(
@@ -192,7 +192,7 @@ public MLResult.Code MLNativeSurfaceGetFrameTimestamp(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameTransformationMatrix {#mlresultcode-mlnativesurfacegetframetransformationmatrix}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceGetFrameTransformationMatrix {#mlresultcode-mlnativesurfacegetframetransformationmatrix}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceGetFrameTransformationMatrix(
@@ -216,7 +216,7 @@ public MLResult.Code MLNativeSurfaceGetFrameTransformationMatrix(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceRelease {#mlresultcode-mlnativesurfacerelease}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceRelease {#mlresultcode-mlnativesurfacerelease}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceRelease(
@@ -238,7 +238,7 @@ public MLResult.Code MLNativeSurfaceRelease(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceReleaseFrame {#mlresultcode-mlnativesurfacereleaseframe}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceReleaseFrame {#mlresultcode-mlnativesurfacereleaseframe}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceReleaseFrame(
@@ -262,7 +262,7 @@ public MLResult.Code MLNativeSurfaceReleaseFrame(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceSetOnFrameAvailableCallback {#mlresultcode-mlnativesurfacesetonframeavailablecallback}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLNativeSurfaceSetOnFrameAvailableCallback {#mlresultcode-mlnativesurfacesetonframeavailablecallback}
 
 ```csharp
 public MLResult.Code MLNativeSurfaceSetOnFrameAvailableCallback(
@@ -278,7 +278,7 @@ public MLResult.Code MLNativeSurfaceSetOnFrameAvailableCallback(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| ref [MLNativeSurfaceOnFrameAvailableCallback](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/NativeBindings/UnityEngine.XR.MagicLeap.MLNativeSurface.NativeBindings.MLNativeSurfaceOnFrameAvailableCallback.md) |callback||
+| ref [MLNativeSurfaceOnFrameAvailableCallback](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/NativeBindings/UnityEngine.XR.MagicLeap.MLNativeSurface.NativeBindings.MLNativeSurfaceOnFrameAvailableCallback.md) |callback||
 | IntPtr |userData||
 
 
@@ -303,7 +303,7 @@ public delegate void OnFrameAvailable(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| ref [MLNativeSurfaceFrameAvailableInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/NativeBindings/UnityEngine.XR.MagicLeap.MLNativeSurface.NativeBindings.MLNativeSurfaceFrameAvailableInfo.md) |info||
+| ref [MLNativeSurfaceFrameAvailableInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/NativeBindings/UnityEngine.XR.MagicLeap.MLNativeSurface.NativeBindings.MLNativeSurfaceFrameAvailableInfo.md) |info||
 
 
 

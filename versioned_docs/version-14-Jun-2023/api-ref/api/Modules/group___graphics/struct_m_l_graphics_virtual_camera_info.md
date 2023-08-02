@@ -6,7 +6,7 @@ summary: the per virtual camera information as defined in #mlgraphicsvirtualcame
 
 # MLGraphicsVirtualCameraInfo
 
-**Module:** **[Graphics](/api-ref/api/Modules/group___graphics/group___graphics.md)**
+**Module:** **[Graphics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md)**
 
 
 
@@ -19,14 +19,14 @@ The per virtual camera information as defined in #MLGraphicsVirtualCameraInfoArr
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[left_half_angle](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-left-half-angle)**  |
-| float | **[right_half_angle](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-right-half-angle)**  |
-| float | **[top_half_angle](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-top-half-angle)**  |
-| float | **[bottom_half_angle](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-bottom-half-angle)**  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[sync_object](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mlhandle-sync-object)** <br></br>The handle of the sync object to signal after submitting all GPU work for the virtual camera.  |
-| [MLMat4f](/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) | **[projection](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mlmat4f-projection)**  |
-| [MLTransform](/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mltransform-transform)** <br></br>The local space (relative to world) camera transform needed to render content, inverse is view matrix.  |
-| [MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | **[virtual_camera_name](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mlgraphicsvirtualcameraname-virtual-camera-name)**  |
+| float | **[left_half_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-left-half-angle)**  |
+| float | **[right_half_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-right-half-angle)**  |
+| float | **[top_half_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-top-half-angle)**  |
+| float | **[bottom_half_angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#float-bottom-half-angle)**  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[sync_object](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mlhandle-sync-object)** <br></br>The handle of the sync object to signal after submitting all GPU work for the virtual camera.  |
+| [MLMat4f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_mat4f.md) | **[projection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mlmat4f-projection)**  |
+| [MLTransform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_transform.md) | **[transform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mltransform-transform)** <br></br>The local space (relative to world) camera transform needed to render content, inverse is view matrix.  |
+| [MLGraphicsVirtualCameraName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | **[virtual_camera_name](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_virtual_camera_info.md#mlgraphicsvirtualcameraname-virtual-camera-name)**  |
 
 ## Detailed Description
 
@@ -121,7 +121,7 @@ The handle of the sync object to signal after submitting all GPU work for the vi
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 
@@ -169,7 +169,7 @@ MLGraphicsVirtualCameraName virtual_camera_name;
 
 | Type | Description |
 |--|--|
-| [MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | The metadata name associated with each virtual camera.  |
+| [MLGraphicsVirtualCameraName](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname) | The metadata name associated with each virtual camera.  |
 
 
 The name of the virtual camera. 

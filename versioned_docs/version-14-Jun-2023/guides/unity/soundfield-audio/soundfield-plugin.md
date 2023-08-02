@@ -116,7 +116,7 @@ The camera object will have the `MLListener` component. We also use `AudioListen
 Only one `MLListener` should be used per Scene.
 :::
 
-For more information, see the [Soundfield Components page](/docs/guides/unity/soundfield-audio/soundfield-components.md).
+For more information, see the [Soundfield Components page](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/soundfield-audio/soundfield-components.md).
 
 <Image url= {require("/img/unity/soundfield-sample-scene-2.png")} >Creating a sample scene</Image>
 

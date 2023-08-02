@@ -9,7 +9,7 @@ keywords: [Unity, Debugging, Visual Studio]
 ---
 
 
-This guide only covers Unity C# script debugging. For C/C++ debugging, i.e. debugging custom or third party libraries, see [Unity Native Debugging via Android Studio](/docs/guides/unity/debugging/unity-native-debugging-via-android-studio.md).
+This guide only covers Unity C# script debugging. For C/C++ debugging, i.e. debugging custom or third party libraries, see [Unity Native Debugging via Android Studio](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/debugging/unity-native-debugging-via-android-studio.md).
 
 ## Build Settings
 

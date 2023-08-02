@@ -15,14 +15,14 @@ Application Simulator can now be used from within Unity as a native plugin witho
 
 ## System Requirements
 
-[System Requirements for the App Sim](/docs/guides/developer-tools/app-sim/app-sim-setup#system-requirements)
+[System Requirements for the App Sim](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-sim-setup#system-requirements)
 
 ## Prerequisites
 
-- Installed the [ML Hub](/docs/guides/getting-started/install-the-tools.md).
-- Installed [App Simulator](/docs/guides/developer-tools/app-sim/app-sim-setup.md).
-- [Configured Unity Settings](/docs/guides/unity/getting-started/configure-unity-settings.md) for Magic Leap.
-- [Configured Unity Settings](/docs/guides/unity/app-simulator/configure-unity.md) for App Simulator.
+- Installed the [ML Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md).
+- Installed [App Simulator](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-sim-setup.md).
+- [Configured Unity Settings](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md) for Magic Leap.
+- [Configured Unity Settings](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/app-simulator/configure-unity.md) for App Simulator.
 
 ## Downloading Application Simulator for Unity
 

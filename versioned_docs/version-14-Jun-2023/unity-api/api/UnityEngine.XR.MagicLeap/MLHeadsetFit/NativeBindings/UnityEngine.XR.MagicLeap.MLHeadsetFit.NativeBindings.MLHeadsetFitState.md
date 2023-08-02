@@ -16,7 +16,7 @@ title: MLHeadsetFitState
 
 ## Public Methods
 
-### [MLHeadsetFitState](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/NativeBindings/UnityEngine.XR.MagicLeap.MLHeadsetFit.NativeBindings.MLHeadsetFitState.md) Create {#mlheadsetfitstate-create}
+### [MLHeadsetFitState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/NativeBindings/UnityEngine.XR.MagicLeap.MLHeadsetFit.NativeBindings.MLHeadsetFitState.md) Create {#mlheadsetfitstate-create}
 
 ```csharp
 public static MLHeadsetFitState Create()
@@ -56,7 +56,7 @@ public Status FitStatus;
 
 | Type | Description  | 
 |--|--|
-| [Status](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#enums-status) | Represents the different fit status that the system can report. If status is neither NotWorn nor Unknown, then headset is being worn.  |
+| [Status](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#enums-status) | Represents the different fit status that the system can report. If status is neither NotWorn nor Unknown, then headset is being worn.  |
 
 
 

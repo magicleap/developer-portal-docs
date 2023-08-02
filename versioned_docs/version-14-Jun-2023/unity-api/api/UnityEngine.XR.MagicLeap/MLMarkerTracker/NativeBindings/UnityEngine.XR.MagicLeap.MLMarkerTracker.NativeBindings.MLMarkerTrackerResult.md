@@ -61,7 +61,7 @@ public readonly MLMarkerTrackerDecodedData DecodedData;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLMarkerTrackerDecodedData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerDecodedData.md) | Represents the decoded data encoded in the marker. Markers can encode binary data, strings, URLs and more. This struct represents the decoded data read from a marker.  |
+| readonly [MLMarkerTrackerDecodedData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerDecodedData.md) | Represents the decoded data encoded in the marker. Markers can encode binary data, strings, URLs and more. This struct represents the decoded data read from a marker.  |
 
 
 
@@ -119,7 +119,7 @@ public readonly MarkerType Type;
 
 | Type | Description  | 
 |--|--|
-| readonly [MarkerType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API  |
+| readonly [MarkerType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API  |
 
 
 

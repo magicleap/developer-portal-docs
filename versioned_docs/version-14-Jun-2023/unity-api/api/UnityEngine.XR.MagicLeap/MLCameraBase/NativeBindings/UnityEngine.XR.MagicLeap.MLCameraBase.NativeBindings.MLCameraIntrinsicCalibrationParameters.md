@@ -9,7 +9,7 @@ summary: intrinsiccalibrationparameters is a structure to provide instrisic cali
 
 
 
-[IntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.IntrinsicCalibrationParameters.md) is a structure to provide instrisic calibration information   
+[IntrinsicCalibrationParameters](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.IntrinsicCalibrationParameters.md) is a structure to provide instrisic calibration information   
 
 
 

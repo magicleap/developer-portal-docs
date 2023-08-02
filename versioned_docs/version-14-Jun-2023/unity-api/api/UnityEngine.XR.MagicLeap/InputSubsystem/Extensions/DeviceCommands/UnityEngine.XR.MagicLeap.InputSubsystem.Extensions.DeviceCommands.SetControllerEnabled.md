@@ -50,7 +50,7 @@ public FourCC typeStatic { get; set; }
 
 ## Public Methods
 
-### [SetControllerEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SetControllerEnabled.md) Create {#setcontrollerenabled-create}
+### [SetControllerEnabled](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SetControllerEnabled.md) Create {#setcontrollerenabled-create}
 
 ```csharp
 public static SetControllerEnabled Create(

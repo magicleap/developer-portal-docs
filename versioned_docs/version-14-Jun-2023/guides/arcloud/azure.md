@@ -73,7 +73,7 @@ To get started as quickly as possible, refer to these simple setup steps for [Az
 
 #### Kubectl
 
-[Install and Set Up kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+[Install and Set Up kubectl on Linux](https://kubernetes.io/versioned_docs/version-14-Jun-2023/tasks/tools/install-kubectl-linux/)
 ```shell
 az aks install-cli
 ```
@@ -89,7 +89,7 @@ az aks install-cli
 
 #### Kubectl
 
-[Install and Set Up kubectl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
+[Install and Set Up kubectl on Windows](https://kubernetes.io/versioned_docs/version-14-Jun-2023/tasks/tools/install-kubectl-windows/)
 ```shell
 az aks install-cli
 ```
@@ -105,7 +105,7 @@ az aks install-cli
 
 #### Kubectl
 
-[Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+[Install and Set Up kubectl on macOS](https://kubernetes.io/versioned_docs/version-14-Jun-2023/tasks/tools/install-kubectl-macos/)
 ```shell
 az aks install-cli
 ```

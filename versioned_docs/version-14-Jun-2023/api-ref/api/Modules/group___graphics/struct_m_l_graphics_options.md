@@ -6,7 +6,7 @@ summary: the graphics options provided for client creation.
 
 # MLGraphicsOptions
 
-**Module:** **[Graphics](/api-ref/api/Modules/group___graphics/group___graphics.md)**
+**Module:** **[Graphics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md)**
 
 
 
@@ -19,9 +19,9 @@ The graphics options provided for client creation.  [More...](#detailed-descript
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[graphics_flags](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md#uint32-t-graphics-flags)**  |
-| [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[color_format](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md#mlsurfaceformat-color-format)**  |
-| [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[depth_format](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md#mlsurfaceformat-depth-format)**  |
+| uint32_t | **[graphics_flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md#uint32-t-graphics-flags)**  |
+| [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[color_format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md#mlsurfaceformat-color-format)**  |
+| [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | **[depth_format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md#mlsurfaceformat-depth-format)**  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLGraphicsOptions;
 
 The graphics options provided for client creation. 
 
-[MLGraphicsOptions](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) defines the requested client configuration for creating GL/GLES or VK clients. 
+[MLGraphicsOptions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_options.md) defines the requested client configuration for creating GL/GLES or VK clients. 
 
 
 
@@ -47,7 +47,7 @@ uint32_t graphics_flags;
 ```
 
 
-The combined graphics flags, as defined by [MLGraphicsFlags](/api-ref/api/Modules/group___graphics/group___graphics.md#enum-mlgraphicsflags). 
+The combined graphics flags, as defined by [MLGraphicsFlags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enum-mlgraphicsflags). 
 
 
 
@@ -65,10 +65,10 @@ MLSurfaceFormat color_format;
 
 | Type | Description |
 |--|--|
-| [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | The definition of the supported color/depth surface formats.  |
+| [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | The definition of the supported color/depth surface formats.  |
 
 
-The color surface format, defined in [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enum-mlsurfaceformat). 
+The color surface format, defined in [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enum-mlsurfaceformat). 
 
 
 
@@ -86,10 +86,10 @@ MLSurfaceFormat depth_format;
 
 | Type | Description |
 |--|--|
-| [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | The definition of the supported color/depth surface formats.  |
+| [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat) | The definition of the supported color/depth surface formats.  |
 
 
-The depth surface format, defined in [MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enum-mlsurfaceformat). 
+The depth surface format, defined in [MLSurfaceFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#enum-mlsurfaceformat). 
 
 
 

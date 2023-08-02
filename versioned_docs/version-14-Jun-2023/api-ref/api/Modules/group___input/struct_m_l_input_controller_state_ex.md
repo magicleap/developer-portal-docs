@@ -6,7 +6,7 @@ summary: a structure containing information about the current state of an input 
 
 # MLInputControllerStateEx
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -19,17 +19,17 @@ A structure containing information about the current state of an input controlle
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#uint32-t-version)**  |
-| [MLInputControllerType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype) | **[type](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollertype-type)**  |
-| [MLInputControllerHand](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand) | **[hand](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollerhand-hand)**  |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md)[MLInput_MaxControllerTouchpadTouches] | **[touch_pos_and_force](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlvec3f-touch-pos-and-force)** <br></br>Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range.  |
-| float | **[trigger_normalized](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#float-trigger-normalized)**  |
-| bool[MLInputControllerButton_Count] | **[button_state](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#bool-button-state)**  |
-| bool[MLInput_MaxControllerTouchpadTouches] | **[is_touch_active](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#bool-is-touch-active)**  |
-| bool | **[is_connected](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#bool-is-connected)**  |
-| [MLInputControllerTouchpadGesture](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md) | **[touchpad_gesture](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollertouchpadgesture-touchpad-gesture)**  |
-| [MLInputControllerTouchpadGestureState](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate) | **[touchpad_gesture_state](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollertouchpadgesturestate-touchpad-gesture-state)**  |
-| uint8_t | **[hardware_index](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#uint8-t-hardware-index)** <br></br>Hardware index of this controller. For ML2 physical controller this value will always be 0.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#uint32-t-version)**  |
+| [MLInputControllerType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype) | **[type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollertype-type)**  |
+| [MLInputControllerHand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand) | **[hand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollerhand-hand)**  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md)[MLInput_MaxControllerTouchpadTouches] | **[touch_pos_and_force](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlvec3f-touch-pos-and-force)** <br></br>Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range.  |
+| float | **[trigger_normalized](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#float-trigger-normalized)**  |
+| bool[MLInputControllerButton_Count] | **[button_state](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#bool-button-state)**  |
+| bool[MLInput_MaxControllerTouchpadTouches] | **[is_touch_active](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#bool-is-touch-active)**  |
+| bool | **[is_connected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#bool-is-connected)**  |
+| [MLInputControllerTouchpadGesture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md) | **[touchpad_gesture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollertouchpadgesture-touchpad-gesture)**  |
+| [MLInputControllerTouchpadGestureState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate) | **[touchpad_gesture_state](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#mlinputcontrollertouchpadgesturestate-touchpad-gesture-state)**  |
+| uint8_t | **[hardware_index](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md#uint8-t-hardware-index)** <br></br>Hardware index of this controller. For ML2 physical controller this value will always be 0.  |
 
 ## Detailed Description
 
@@ -91,7 +91,7 @@ MLInputControllerHand hand;
 
 | Type | Description |
 |--|--|
-| [MLInputControllerHand](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand) | Hand in which the controller is held.  |
+| [MLInputControllerHand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand) | Hand in which the controller is held.  |
 
 
 Controller holding hand. 
@@ -113,7 +113,7 @@ Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range 
 
 | Type | Description |
 |--|--|
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md)[MLInput_MaxControllerTouchpadTouches] | [MLInput_MaxControllerTouchpadTouches] |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md)[MLInput_MaxControllerTouchpadTouches] | [MLInput_MaxControllerTouchpadTouches] |
 
 
 

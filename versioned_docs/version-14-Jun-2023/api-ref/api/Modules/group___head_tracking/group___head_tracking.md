@@ -12,39 +12,39 @@ APIs for the Head Tracking system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLHeadTrackingStaticData](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md)**  |
-| struct | **[MLHeadTrackingState](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md)** <br></br>A structure containing information on the current state of the Head Tracking system.  |
-| struct | **[MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md)** <br></br>Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling [MLHeadTrackingStateExInit](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit) before use.  |
+| struct | **[MLHeadTrackingStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md)**  |
+| struct | **[MLHeadTrackingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md)** <br></br>A structure containing information on the current state of the Head Tracking system.  |
+| struct | **[MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md)** <br></br>Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling [MLHeadTrackingStateExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit) before use.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLHeadTrackingStaticData](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md) | **[MLHeadTrackingStaticData](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#struct-mlheadtrackingstaticdata)**  |
-| typedef struct [MLHeadTrackingState](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) | **[MLHeadTrackingState](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#struct-mlheadtrackingstate)** <br></br>A structure containing information on the current state of the Head Tracking system.  |
-| typedef struct [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) | **[MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#struct-mlheadtrackingstateex)** <br></br>Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling [MLHeadTrackingStateExInit](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit) before use.  |
+| typedef struct [MLHeadTrackingStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md) | **[MLHeadTrackingStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#struct-mlheadtrackingstaticdata)**  |
+| typedef struct [MLHeadTrackingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) | **[MLHeadTrackingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#struct-mlheadtrackingstate)** <br></br>A structure containing information on the current state of the Head Tracking system.  |
+| typedef struct [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) | **[MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#struct-mlheadtrackingstateex)** <br></br>Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling [MLHeadTrackingStateExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit) before use.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLHeadTrackingError](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror)** <br></br> { <br></br>[MLHeadTrackingError_None](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-none),<br></br> [MLHeadTrackingError_NotEnoughFeatures](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-notenoughfeatures),<br></br> [MLHeadTrackingError_LowLight](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-lowlight),<br></br> [MLHeadTrackingError_Unknown](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-unknown),<br></br> [MLHeadTrackingError_Ensure32Bits](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
-| enum | **[MLHeadTrackingErrorFlag](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag)** <br></br> { <br></br>[MLHeadTrackingErrorFlag_None](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-none) = 0,<br></br> [MLHeadTrackingErrorFlag_Unknown](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-unknown) = 1 << 0,<br></br> [MLHeadTrackingErrorFlag_NotEnoughFeatures](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-notenoughfeatures) = 1 << 1,<br></br> [MLHeadTrackingErrorFlag_LowLight](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-lowlight) = 1 << 2,<br></br> [MLHeadTrackingErrorFlag_ExcessiveMotion](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-excessivemotion) = 1 << 3,<br></br> [MLHeadTrackingErrorFlag_Ensure32Bits](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
-| enum | **[MLHeadTrackingMode](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode)** <br></br> { <br></br>[MLHeadTrackingMode_6DOF](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode-6dof) = 0,<br></br> [MLHeadTrackingMode_Unavailable](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode-unavailable) = 1,<br></br> [MLHeadTrackingMode_Ensure32Bits](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible tracking modes the Head Tracking system can be in.  |
-| enum | **[MLHeadTrackingStatus](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus)** <br></br> { <br></br>[MLHeadTrackingStatus_Invalid](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-invalid) = 0,<br></br> [MLHeadTrackingStatus_Initializing](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-initializing) = 1,<br></br> [MLHeadTrackingStatus_Relocalizing](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-relocalizing) = 2,<br></br> [MLHeadTrackingStatus_Valid](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-valid) = 100,<br></br> [MLHeadTrackingStatus_Ensure32Bits](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible tracking status for the Head Tracking system.  |
-| enum | **[MLHeadTrackingMapEvent](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent)** <br></br> { <br></br>[MLHeadTrackingMapEvent_Lost](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-lost) = (1 << 0),<br></br> [MLHeadTrackingMapEvent_Recovered](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-recovered) = (1 << 1),<br></br> [MLHeadTrackingMapEvent_RecoveryFailed](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-recoveryfailed) = (1 << 2),<br></br> [MLHeadTrackingMapEvent_NewSession](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-newsession) = (1 << 3),<br></br> [MLHeadTrackingMapEvent_Ensure32Bits](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Different types of map events that can occur that a developer may have to handle.  |
+| enum | **[MLHeadTrackingError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror)** <br></br> { <br></br>[MLHeadTrackingError_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-none),<br></br> [MLHeadTrackingError_NotEnoughFeatures](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-notenoughfeatures),<br></br> [MLHeadTrackingError_LowLight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-lowlight),<br></br> [MLHeadTrackingError_Unknown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-unknown),<br></br> [MLHeadTrackingError_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
+| enum | **[MLHeadTrackingErrorFlag](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag)** <br></br> { <br></br>[MLHeadTrackingErrorFlag_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-none) = 0,<br></br> [MLHeadTrackingErrorFlag_Unknown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-unknown) = 1 << 0,<br></br> [MLHeadTrackingErrorFlag_NotEnoughFeatures](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-notenoughfeatures) = 1 << 1,<br></br> [MLHeadTrackingErrorFlag_LowLight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-lowlight) = 1 << 2,<br></br> [MLHeadTrackingErrorFlag_ExcessiveMotion](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-excessivemotion) = 1 << 3,<br></br> [MLHeadTrackingErrorFlag_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerrorflag-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
+| enum | **[MLHeadTrackingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode)** <br></br> { <br></br>[MLHeadTrackingMode_6DOF](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode-6dof) = 0,<br></br> [MLHeadTrackingMode_Unavailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode-unavailable) = 1,<br></br> [MLHeadTrackingMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible tracking modes the Head Tracking system can be in.  |
+| enum | **[MLHeadTrackingStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus)** <br></br> { <br></br>[MLHeadTrackingStatus_Invalid](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-invalid) = 0,<br></br> [MLHeadTrackingStatus_Initializing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-initializing) = 1,<br></br> [MLHeadTrackingStatus_Relocalizing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-relocalizing) = 2,<br></br> [MLHeadTrackingStatus_Valid](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-valid) = 100,<br></br> [MLHeadTrackingStatus_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible tracking status for the Head Tracking system.  |
+| enum | **[MLHeadTrackingMapEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent)** <br></br> { <br></br>[MLHeadTrackingMapEvent_Lost](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-lost) = (1 << 0),<br></br> [MLHeadTrackingMapEvent_Recovered](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-recovered) = (1 << 1),<br></br> [MLHeadTrackingMapEvent_RecoveryFailed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-recoveryfailed) = (1 << 2),<br></br> [MLHeadTrackingMapEvent_NewSession](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-newsession) = (1 << 3),<br></br> [MLHeadTrackingMapEvent_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmapevent-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Different types of map events that can occur that a developer may have to handle.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLHeadTrackingStateExInit](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit)**([MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * inout_info)<br></br>Initialize default values for a [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) structure.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingCreate](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackingcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a Head Tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingDestroy](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackingdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker)<br></br>Destroys a Head Tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetStaticData](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstaticdata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, [MLHeadTrackingStaticData](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md) * out_data)<br></br>Returns static information about the Head Tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetState](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, [MLHeadTrackingState](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) * out_state)<br></br>Returns the most recent head tracking state.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetStateEx](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstateex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * out_state)<br></br>Returns the most recent head tracking state.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetMapEvents](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetmapevents)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, uint64_t * out_map_events)<br></br>Gets map events.  |
+| void | **[MLHeadTrackingStateExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit)**([MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * inout_info)<br></br>Initialize default values for a [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) structure.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackingcreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a Head Tracker.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackingdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker)<br></br>Destroys a Head Tracker.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstaticdata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, [MLHeadTrackingStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md) * out_data)<br></br>Returns static information about the Head Tracker.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, [MLHeadTrackingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) * out_state)<br></br>Returns the most recent head tracking state.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstateex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * out_state)<br></br>Returns the most recent head tracking state.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLHeadTrackingGetMapEvents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetmapevents)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) head_tracker, uint64_t * out_map_events)<br></br>Gets map events.  |
 
 ## Detailed Description
 
@@ -204,11 +204,11 @@ typedef struct MLHeadTrackingStaticData MLHeadTrackingStaticData;
 ```
 
 
-Static information about a Head Tracker. Populate this structure with [MLHeadTrackingGetStaticData()](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstaticdata). 
+Static information about a Head Tracker. Populate this structure with [MLHeadTrackingGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackinggetstaticdata). 
 
 
 
-[More Info](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md)
 
 
 
@@ -224,10 +224,10 @@ A structure containing information on the current state of the Head Tracking sys
 
 
 
-[More Info](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md)
 
 :::caution Deprecated
-Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md). 
+Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md). 
 :::
 
 
@@ -245,11 +245,11 @@ Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateE
 typedef struct MLHeadTrackingStateEx MLHeadTrackingStateEx;
 ```
 
-Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling [MLHeadTrackingStateExInit](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit) before use. 
+Structure containing information on the current state of the Head Tracking system. This structure must be initialized by calling [MLHeadTrackingStateExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#void-mlheadtrackingstateexinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md)
 
 
 **API Level:**
@@ -271,13 +271,13 @@ static inline void MLHeadTrackingStateExInit(
 )
 ```
 
-Initialize default values for a [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) structure. 
+Initialize default values for a [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) structure. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * |inout_info|The object to initialize with default values.|
+| [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * |inout_info|The object to initialize with default values.|
 **Required Permissions**:
 
   * None 
@@ -308,15 +308,15 @@ Creates a Head Tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an MLHandle which will contain the handle of the head tracker. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an MLHandle which will contain the handle of the head tracker. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created head tracker. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create head tracker due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|The application lacks permission.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created head tracker. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create head tracker due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|The application lacks permission.|
 **Required Permissions**:
 
   * None 
@@ -342,14 +342,14 @@ Destroys a Head Tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to a Head Tracker created by [MLHeadTrackingCreate()](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackingcreate).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to a Head Tracker created by [MLHeadTrackingCreate()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#mlresult-mlheadtrackingcreate).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed head tracker. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy head tracker due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed head tracker. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy head tracker due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -376,16 +376,16 @@ Returns static information about the Head Tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
-| [MLHeadTrackingStaticData](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md) * |out_data|Target to populate the data about that Head Tracker.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
+| [MLHeadTrackingStaticData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_static_data.md) * |out_data|Target to populate the data about that Head Tracker.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to receive static data due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully received static data. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to receive static data due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to receive static data due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully received static data. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to receive static data due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -412,16 +412,16 @@ Returns the most recent head tracking state.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
-| [MLHeadTrackingState](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) * |out_state|Pointer to valid [MLHeadTrackingState](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) object to be filled with current state information.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
+| [MLHeadTrackingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) * |out_state|Pointer to valid [MLHeadTrackingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md) object to be filled with current state information.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to return the most recent head tracking state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the most recent head tracking state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to return the most recent head tracking state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to return the most recent head tracking state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the most recent head tracking state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to return the most recent head tracking state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -452,16 +452,16 @@ Returns the most recent head tracking state.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
-| [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * |out_state|Pointer to valid [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) object to be filled with current state information.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
+| [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) * |out_state|Pointer to valid [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md) object to be filled with current state information.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to return the most recent head tracking state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the most recent head tracking state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to return the most recent head tracking state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to return the most recent head tracking state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned the most recent head tracking state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to return the most recent head tracking state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -493,16 +493,16 @@ Gets map events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |head_tracker|A handle to the tracker. |
 | uint64_t * |out_map_events|Pointer to a uint64_t representing a bitmask of MLHeadTrackingMapEvent, allocated by the caller.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to get map events due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully got map events. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get map events due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to get map events due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully got map events. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get map events due to an unknown error.|
 **Required Permissions**:
 
   * None 

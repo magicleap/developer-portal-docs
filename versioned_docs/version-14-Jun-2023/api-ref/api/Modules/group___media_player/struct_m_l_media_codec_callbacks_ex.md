@@ -6,7 +6,7 @@ summary: client is expected to implement these callbacks and take proper actions
 
 # MLMediaCodecCallbacksEx
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,11 +19,11 @@ Callbacks for notifying asynchronously of various codec events to the user/clien
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#uint32-t-version)**  |
-| void(*)(MLHandle media_codec, const MLMediaCodecInputBufferInfo *info) | **[on_input_buffer_available](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-input-buffer-available)** <br></br>This callback function is invoked when an input buffer becomes available.  |
-| void(*)(MLHandle media_codec, const MLMediaCodecOutputBufferInfo *info) | **[on_output_buffer_available](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-output-buffer-available)** <br></br>This callback function is invoked when an output buffer.  |
-| void(*)(MLHandle media_codec, const MLMediaCodecOutputFormatInfo *info) | **[on_output_format_changed](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-output-format-changed)** <br></br>This callback function is invoked when the output format has changed.  |
-| void(*)(MLHandle media_codec, const MLMediaCodecErrorInfo *info) | **[on_error](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-error)** <br></br>This callback function is invoked when MLMediaCodec encountered an error.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#uint32-t-version)**  |
+| void(*)(MLHandle media_codec, const MLMediaCodecInputBufferInfo *info) | **[on_input_buffer_available](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-input-buffer-available)** <br></br>This callback function is invoked when an input buffer becomes available.  |
+| void(*)(MLHandle media_codec, const MLMediaCodecOutputBufferInfo *info) | **[on_output_buffer_available](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-output-buffer-available)** <br></br>This callback function is invoked when an output buffer.  |
+| void(*)(MLHandle media_codec, const MLMediaCodecOutputFormatInfo *info) | **[on_output_format_changed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-output-format-changed)** <br></br>This callback function is invoked when the output format has changed.  |
+| void(*)(MLHandle media_codec, const MLMediaCodecErrorInfo *info) | **[on_error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_callbacks_ex.md#void-on-error)** <br></br>This callback function is invoked when MLMediaCodec encountered an error.  |
 
 ## Detailed Description
 
@@ -79,7 +79,7 @@ This callback function is invoked when an input buffer becomes available.
 |  |   |   |
 |--|--|--|
 |  |media_codec|MLMediaCodec instance for which callback was called. |
-|  |info|Input buffer info as [MLMediaCodecInputBufferInfo()](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediacodecinputbufferinfo). |
+|  |info|Input buffer info as [MLMediaCodecInputBufferInfo()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlmediacodecinputbufferinfo). |
 This should not be set to NULL as codec will not function properly if client has no means to specify incoming input buffers.
 
 
@@ -111,7 +111,7 @@ This callback function is invoked when an output buffer.
 |  |   |   |
 |--|--|--|
 |  |media_codec|MLMediaCodec instance for which callback was called. |
-|  |info|Output buffer info as [MLMediaCodecOutputBufferInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md). |
+|  |info|Output buffer info as [MLMediaCodecOutputBufferInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_buffer_info.md). |
 This should not be set to NULL as codec will not function properly. Typical implementation on on_output_buffer_available is simply to 1) render the buffer to audio subsystem [if codec is audio] 2) release-and-render-to-surface with MLMediaCodecReleaseOutputBuffer(.., true) [if codec is video].
 
 
@@ -143,7 +143,7 @@ This callback function is invoked when the output format has changed.
 |  |   |   |
 |--|--|--|
 |  |media_codec|MLMediaCodec instance for which callback was called. |
-|  |info|Output format info as [MLMediaCodecOutputFormatInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_format_info.md). |
+|  |info|Output format info as [MLMediaCodecOutputFormatInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_format_info.md). |
 This can be set to NULL if client is not interested in receiving this callback.
 
 
@@ -175,7 +175,7 @@ This callback function is invoked when MLMediaCodec encountered an error.
 |  |   |   |
 |--|--|--|
 |  |media_codec|MLMediaCodec instance for which callback was called. |
-|  |info|Codec error info as [MLMediaCodecErrorInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md). |
+|  |info|Codec error info as [MLMediaCodecErrorInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md). |
 This can be set to NULL if client is not interested in receiving this callback.
 
 

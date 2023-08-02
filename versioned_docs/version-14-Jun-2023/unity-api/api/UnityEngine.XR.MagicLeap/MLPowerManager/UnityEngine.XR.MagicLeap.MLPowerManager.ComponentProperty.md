@@ -44,7 +44,7 @@ public PropertyType Type;
 
 | Type | Description  | 
 |--|--|
-| [PropertyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-propertytype) | Power Manager property types.  |
+| [PropertyType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-propertytype) | Power Manager property types.  |
 
 
 

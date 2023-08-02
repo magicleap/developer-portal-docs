@@ -5,7 +5,7 @@ title: MLMediaDRMCryptoInputParam
 
 # MLMediaDRMCryptoInputParam
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLMediaDRMCryptoInputParam
 
 | Type           | Name           |
 | -------------- | -------------- |
-| char * | **[algorithm](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md#char-algorithm)** <br></br>The cipher mode used for the crypto operation. The only supported algorithm now is "AES/CBC/NoPadding".  |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[key_set_id](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md#mlmediadrmbytearray-key-set-id)**  |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[iv](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md#mlmediadrmbytearray-iv)**  |
+| char * | **[algorithm](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md#char-algorithm)** <br></br>The cipher mode used for the crypto operation. The only supported algorithm now is "AES/CBC/NoPadding".  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[key_set_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md#mlmediadrmbytearray-key-set-id)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[iv](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_crypto_input_param.md#mlmediadrmbytearray-iv)**  |
 
 ## Detailed Description
 

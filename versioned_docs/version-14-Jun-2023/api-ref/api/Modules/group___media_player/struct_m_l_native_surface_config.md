@@ -6,7 +6,7 @@ summary: configuration values for creating the native surface.
 
 # MLNativeSurfaceConfig
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,11 +19,11 @@ Configuration values for creating the Native Surface.  [More...](#detailed-descr
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint32-t-version)**  |
-| [MLNativeSurfacePixelFormat](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlnativesurfacepixelformat) | **[pixel_format](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#mlnativesurfacepixelformat-pixel-format)**  |
-| uint16_t | **[buffer_count](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint16-t-buffer-count)**  |
-| uint32_t | **[width](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint32-t-width)**  |
-| uint32_t | **[height](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint32-t-height)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint32-t-version)**  |
+| [MLNativeSurfacePixelFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlnativesurfacepixelformat) | **[pixel_format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#mlnativesurfacepixelformat-pixel-format)**  |
+| uint16_t | **[buffer_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint16-t-buffer-count)**  |
+| uint32_t | **[width](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint32-t-width)**  |
+| uint32_t | **[height](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_config.md#uint32-t-height)**  |
 
 ## Detailed Description
 
@@ -70,10 +70,10 @@ MLNativeSurfacePixelFormat pixel_format;
 
 | Type | Description |
 |--|--|
-| [MLNativeSurfacePixelFormat](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlnativesurfacepixelformat) | Pixel format to use when creating the native surface. Used in functions [MLNativeSurfaceCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate) and MLNativeSurfaceTextureCreate.  |
+| [MLNativeSurfacePixelFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlnativesurfacepixelformat) | Pixel format to use when creating the native surface. Used in functions [MLNativeSurfaceCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacecreate) and MLNativeSurfaceTextureCreate.  |
 
 
-Pixel format from [MLNativeSurfacePixelFormat](/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlnativesurfacepixelformat) to the NativeSurface to be created. 
+Pixel format from [MLNativeSurfacePixelFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlnativesurfacepixelformat) to the NativeSurface to be created. 
 
 
 
@@ -88,7 +88,7 @@ uint16_t buffer_count;
 ```
 
 
-Number of buffers to be acquired. Refer to [MLNativeSurfaceAcquiredBufferCount](/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlnativesurfaceacquiredbuffercount) for acceptable range of buffer count. 
+Number of buffers to be acquired. Refer to [MLNativeSurfaceAcquiredBufferCount](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enum-mlnativesurfaceacquiredbuffercount) for acceptable range of buffer count. 
 
 
 

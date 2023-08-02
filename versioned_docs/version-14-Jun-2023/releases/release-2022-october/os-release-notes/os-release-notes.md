@@ -29,7 +29,7 @@ When flashing, you **MUST** flash in a linear sequence based on the build order 
 | 2 | B3E.220619.07-R.124_user |
 | 1 | B3E.220619.07-R.107_user |
 
-More details can be found in the device upgrade guide via [The Lab 2.0](/docs/guides/developer-tools/ml-hub/ml-hub-os-installer.md)/ or using [Android Debug Bridge](/docs/guides/device/updating-the-os/device-flashing-guide.md).
+More details can be found in the device upgrade guide via [The Lab 2.0](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-os-installer.md)/ or using [Android Debug Bridge](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md).
 
 ## Known Issues
 

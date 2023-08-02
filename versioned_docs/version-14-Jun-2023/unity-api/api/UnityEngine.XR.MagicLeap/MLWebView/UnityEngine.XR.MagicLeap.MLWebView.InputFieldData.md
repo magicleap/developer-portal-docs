@@ -46,7 +46,7 @@ public TextInputFlags TextInputFlags;
 
 | Type | Description  | 
 |--|--|
-| [TextInputFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputflags) | Flags related to a text entry field passed when on&#95;show&#95;keyboard is called.  |
+| [TextInputFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputflags) | Flags related to a text entry field passed when on&#95;show&#95;keyboard is called.  |
 
 
 
@@ -66,7 +66,7 @@ public TextInputType TextInputType;
 
 | Type | Description  | 
 |--|--|
-| [TextInputType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputtype) | The type of text entry selected when onShowKeyboard is called.  |
+| [TextInputType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-textinputtype) | The type of text entry selected when onShowKeyboard is called.  |
 
 
 

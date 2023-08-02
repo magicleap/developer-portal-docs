@@ -6,7 +6,7 @@ summary: cea608 caption segment structure.
 
 # MLCea608CaptionSegmentEx
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ Cea608 caption segment structure.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md#uint32-t-version)**  |
-| [MLCea608CaptionLineEx](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md) *[MLCea608_CCMaxRowsPlus2] | **[cc_line](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md#mlcea608captionlineex-cc-line)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md#uint32-t-version)**  |
+| [MLCea608CaptionLineEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md) *[MLCea608_CCMaxRowsPlus2] | **[cc_line](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_segment_ex.md#mlcea608captionlineex-cc-line)**  |
 
 ## Detailed Description
 
@@ -65,7 +65,7 @@ MLCea608CaptionLineEx *[MLCea608_CCMaxRowsPlus2] cc_line;
 
 | Type | Description |
 |--|--|
-| [MLCea608CaptionLineEx](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md) *[MLCea608_CCMaxRowsPlus2] | Cea608 caption line structure. [MLCea608_CCMaxRowsPlus2] |
+| [MLCea608CaptionLineEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_line_ex.md) *[MLCea608_CCMaxRowsPlus2] | Cea608 caption line structure. [MLCea608_CCMaxRowsPlus2] |
 
 
 

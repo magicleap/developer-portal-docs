@@ -6,11 +6,11 @@ summary: information about the state of the gaze recognition system. this struct
 
 # MLGazeRecognitionState
 
-**Module:** **[Gaze Recognition](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md)**
+**Module:** **[Gaze Recognition](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md)**
 
 
 
-Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use.  [More...](#detailed-description)
+Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use.  [More...](#detailed-description)
 
 
 `#include <ml_gaze_recognition.h>`
@@ -19,17 +19,17 @@ Information about the state of the Gaze Recognition system. This structure must 
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
-| [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mltime-timestamp)**  |
-| [MLGazeRecognitionError](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | **[error](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionerror-error)**  |
-| [MLGazeRecognitionBehavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | **[behavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionbehavior-behavior)**  |
-| [MLVec2f](/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_left](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-left)**  |
-| [MLVec2f](/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_right](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-right)**  |
-| float | **[onset_s](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-onset-s)**  |
-| float | **[duration_s](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-duration-s)**  |
-| float | **[velocity_degps](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-velocity-degps)**  |
-| float | **[amplitude_deg](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-amplitude-deg)**  |
-| float | **[direction_radial](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-direction-radial)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
+| [MLTime](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mltime-timestamp)**  |
+| [MLGazeRecognitionError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | **[error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionerror-error)**  |
+| [MLGazeRecognitionBehavior](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | **[behavior](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlgazerecognitionbehavior-behavior)**  |
+| [MLVec2f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_left](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-left)**  |
+| [MLVec2f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec2f.md) | **[eye_right](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlvec2f-eye-right)**  |
+| float | **[onset_s](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-onset-s)**  |
+| float | **[duration_s](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-duration-s)**  |
+| float | **[velocity_degps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-velocity-degps)**  |
+| float | **[amplitude_deg](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-amplitude-deg)**  |
+| float | **[direction_radial](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-direction-radial)**  |
 
 ## Detailed Description
 
@@ -37,7 +37,7 @@ Information about the state of the Gaze Recognition system. This structure must 
 struct MLGazeRecognitionState;
 ```
 
-Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use. 
+Information about the state of the Gaze Recognition system. This structure must be initialized by calling [MLGazeRecognitionStateInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#void-mlgazerecognitionstateinit) before use. 
 
 
 
@@ -91,7 +91,7 @@ MLGazeRecognitionError error;
 
 | Type | Description |
 |--|--|
-| [MLGazeRecognitionError](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | A set of possible error codes that the Gaze Recognition system can report.  |
+| [MLGazeRecognitionError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionerror) | A set of possible error codes that the Gaze Recognition system can report.  |
 
 
 Represents what gaze Recognition error (if any) is present. 
@@ -112,7 +112,7 @@ MLGazeRecognitionBehavior behavior;
 
 | Type | Description |
 |--|--|
-| [MLGazeRecognitionBehavior](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
+| [MLGazeRecognitionBehavior](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#enums-mlgazerecognitionbehavior) | A set of mutually-exclusive behaviors that the Gaze Recognition system can report.  |
 
 
 Represents what known gaze Recognition behavior is present. 

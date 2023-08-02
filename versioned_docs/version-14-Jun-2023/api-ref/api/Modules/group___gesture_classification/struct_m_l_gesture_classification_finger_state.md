@@ -6,7 +6,7 @@ summary: gesture classification state of a single finger.
 
 # MLGestureClassificationFingerState
 
-**Module:** **[Gesture Classification System](/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md)**
+**Module:** **[Gesture Classification System](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/group___gesture_classification.md)**
 
 
 
@@ -19,11 +19,11 @@ Gesture classification state of a single finger.  [More...](#detailed-descriptio
 
 | Type           | Name           |
 | -------------- | -------------- |
-| bool | **[is_extended](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#bool-is-extended)**  |
-| float | **[length_m](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#float-length-m)**  |
-| float | **[normalized_extension](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#float-normalized-extension)**  |
-| float | **[angle_to_palm](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#float-angle-to-palm)**  |
-| [MLGestureClassificationPostureFingerData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md) | **[posture_data](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#mlgestureclassificationposturefingerdata-posture-data)**  |
+| bool | **[is_extended](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#bool-is-extended)**  |
+| float | **[length_m](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#float-length-m)**  |
+| float | **[normalized_extension](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#float-normalized-extension)**  |
+| float | **[angle_to_palm](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#float-angle-to-palm)**  |
+| [MLGestureClassificationPostureFingerData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md) | **[posture_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_finger_state.md#mlgestureclassificationposturefingerdata-posture-data)**  |
 
 ## Detailed Description
 
@@ -115,7 +115,7 @@ MLGestureClassificationPostureFingerData posture_data;
 
 | Type | Description |
 |--|--|
-| [MLGestureClassificationPostureFingerData](/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md) | Gesture classification posture related finger data.  |
+| [MLGestureClassificationPostureFingerData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gesture_classification/struct_m_l_gesture_classification_posture_finger_data.md) | Gesture classification posture related finger data.  |
 
 
 Gesture classification posture related finger data. 

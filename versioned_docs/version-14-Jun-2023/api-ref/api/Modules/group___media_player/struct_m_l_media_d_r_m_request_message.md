@@ -6,7 +6,7 @@ summary: data type that encapsulates either of the following along with an url
 
 # MLMediaDRMRequestMessage
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ Data type that encapsulates either of the following along with an URL:  [More...
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) | **[request](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md#mlmediadrmbytearray-request)**  |
-| char * | **[default_URL](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md#char-default-url)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) | **[request](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md#mlmediadrmbytearray-request)**  |
+| char * | **[default_URL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md#char-default-url)**  |
 
 ## Detailed Description
 

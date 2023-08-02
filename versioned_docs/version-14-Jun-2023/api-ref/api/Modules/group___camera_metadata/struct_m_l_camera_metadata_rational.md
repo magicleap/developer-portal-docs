@@ -5,7 +5,7 @@ title: MLCameraMetadataRational
 
 # MLCameraMetadataRational
 
-**Module:** **[Camera Metadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md)**
+**Module:** **[Camera Metadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLCameraMetadataRational
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int32_t | **[numerator](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md#int32-t-numerator)**  |
-| int32_t | **[denominator](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md#int32-t-denominator)**  |
+| int32_t | **[numerator](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md#int32-t-numerator)**  |
+| int32_t | **[denominator](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md#int32-t-denominator)**  |
 
 ## Detailed Description
 

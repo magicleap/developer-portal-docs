@@ -12,7 +12,7 @@ A Spatial Anchor is a shared reference point for tethering virtual content to a 
 
 
 :::note
-Users must localize into a Space before creating spatial anchors. Use the [Spaces](docs/guides/features/spaces/spaces-tool.md) application to map and save new Spaces.
+Users must localize into a Space before creating spatial anchors. Use the [Spaces](docs/versioned_docs/version-14-Jun-2023/guides/features/spaces/spaces-tool.md) application to map and save new Spaces.
 :::
 
 :::caution
@@ -21,7 +21,7 @@ This feature requires the `SPATIAL_ANCHORS` permission to be enabled in your pro
 
 ## How Ml1's PCFs are different from Anchors
 
-While the Magic Leap One's anchor system ([Persistent Coordinate Frames, or PCFs](https://ml1-developer.magicleap.com/en-us/learn/guides/persistent-coordinate-frames)) was automatic, anchors on Magic Leap 2 have to be created explicitly.
+While the Magic Leap One's anchor system ([Persistent Coordinate Frames, or PCFs](https://ml1-developer.magicleap.com/en-us/learn/versioned_docs/version-14-Jun-2023/guides/persistent-coordinate-frames)) was automatic, anchors on Magic Leap 2 have to be created explicitly.
 
 | Magic Leap 1 PCFs               | Magic Leap 2 Spatial Anchors                 |
 | ---------------------- | ----------------------------------- |
@@ -30,12 +30,12 @@ While the Magic Leap One's anchor system ([Persistent Coordinate Frames, or PCFs
 
 ## Spaces
 
-The [Spaces](docs/guides/features/spaces/spaces-tool.md) application allows you to create new spaces and localize into them. It also allows you to visualize all of the spatial anchors associated with a given Space.
+The [Spaces](docs/versioned_docs/version-14-Jun-2023/guides/features/spaces/spaces-tool.md) application allows you to create new spaces and localize into them. It also allows you to visualize all of the spatial anchors associated with a given Space.
 
 :::info
 Without AR Cloud, Magic Leap 2 supports storing 5 locally stored Spaces.
 :::
 
 :::note
-Spatial Anchors can be created from inside your application. See [Spatial Anchors API](/docs/guides/unity/perception/anchors/spatial-anchors-api.md) for more details.
+Spatial Anchors can be created from inside your application. See [Spatial Anchors API](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/perception/anchors/spatial-anchors-api.md) for more details.
 :::

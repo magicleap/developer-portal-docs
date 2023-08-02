@@ -12,86 +12,86 @@ APIs for accessing Camera Device and to do Camera Capture.  [More...](#detailed-
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLCameraMRConnectInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md)**  |
-| struct | **[MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md)**  |
-| struct | **[MLCameraCaptureStreamCaps](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md)** <br></br>A structure to encapsulate stream capabilities.  |
-| struct | **[MLCameraCaptureStreamConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_config.md)**  |
-| struct | **[MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md)**  |
-| struct | **[MLCameraPlaneInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)**  |
-| struct | **[MLCameraOutput](/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md)**  |
-| struct | **[MLCameraIntrinsicCalibrationParameters](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md)** <br></br>Camera intrinsic parameter.  |
-| struct | **[MLCameraResultExtras](/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md)**  |
-| struct | **[MLCameraDeviceAvailabilityInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md)**  |
-| struct | **[MLCameraDeviceAvailabilityStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md)**  |
-| struct | **[MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md)**  |
-| struct | **[MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md)** <br></br>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used.  |
+| struct | **[MLCameraMRConnectInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md)**  |
+| struct | **[MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md)**  |
+| struct | **[MLCameraCaptureStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md)** <br></br>A structure to encapsulate stream capabilities.  |
+| struct | **[MLCameraCaptureStreamConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_config.md)**  |
+| struct | **[MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md)**  |
+| struct | **[MLCameraPlaneInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)**  |
+| struct | **[MLCameraOutput](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md)**  |
+| struct | **[MLCameraIntrinsicCalibrationParameters](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md)** <br></br>Camera intrinsic parameter.  |
+| struct | **[MLCameraResultExtras](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md)**  |
+| struct | **[MLCameraDeviceAvailabilityInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md)**  |
+| struct | **[MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md)**  |
+| struct | **[MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md)**  |
+| struct | **[MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md)** <br></br>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext)**  |
-| typedef struct [MLCameraMRConnectInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md) | **[MLCameraMRConnectInfo](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameramrconnectinfo)**  |
-| typedef struct [MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) | **[MLCameraConnectContext](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraconnectcontext)**  |
-| typedef struct [MLCameraCaptureStreamCaps](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) | **[MLCameraCaptureStreamCaps](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturestreamcaps)** <br></br>A structure to encapsulate stream capabilities.  |
-| typedef struct [MLCameraCaptureStreamConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_config.md) | **[MLCameraCaptureStreamConfig](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturestreamconfig)**  |
-| typedef struct [MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) | **[MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracaptureconfig)**  |
-| typedef struct [MLCameraPlaneInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md) | **[MLCameraPlaneInfo](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraplaneinfo)**  |
-| typedef struct [MLCameraOutput](/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md) | **[MLCameraOutput](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraoutput)**  |
-| typedef struct [MLCameraIntrinsicCalibrationParameters](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md) | **[MLCameraIntrinsicCalibrationParameters](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraintrinsiccalibrationparameters)** <br></br>Camera intrinsic parameter.  |
-| typedef struct [MLCameraResultExtras](/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md) | **[MLCameraResultExtras](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraresultextras)**  |
-| typedef struct [MLCameraDeviceAvailabilityInfo](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md) | **[MLCameraDeviceAvailabilityInfo](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameradeviceavailabilityinfo)**  |
-| typedef struct [MLCameraDeviceAvailabilityStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) | **[MLCameraDeviceAvailabilityStatusCallbacks](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameradeviceavailabilitystatuscallbacks)**  |
-| typedef struct [MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) | **[MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameradevicestatuscallbacks)**  |
-| typedef struct [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) | **[MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturecallbacks)** <br></br>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used.  |
+| typedef [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext)**  |
+| typedef struct [MLCameraMRConnectInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md) | **[MLCameraMRConnectInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameramrconnectinfo)**  |
+| typedef struct [MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) | **[MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraconnectcontext)**  |
+| typedef struct [MLCameraCaptureStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) | **[MLCameraCaptureStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturestreamcaps)** <br></br>A structure to encapsulate stream capabilities.  |
+| typedef struct [MLCameraCaptureStreamConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_config.md) | **[MLCameraCaptureStreamConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturestreamconfig)**  |
+| typedef struct [MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) | **[MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracaptureconfig)**  |
+| typedef struct [MLCameraPlaneInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md) | **[MLCameraPlaneInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraplaneinfo)**  |
+| typedef struct [MLCameraOutput](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md) | **[MLCameraOutput](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraoutput)**  |
+| typedef struct [MLCameraIntrinsicCalibrationParameters](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md) | **[MLCameraIntrinsicCalibrationParameters](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraintrinsiccalibrationparameters)** <br></br>Camera intrinsic parameter.  |
+| typedef struct [MLCameraResultExtras](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md) | **[MLCameraResultExtras](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameraresultextras)**  |
+| typedef struct [MLCameraDeviceAvailabilityInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md) | **[MLCameraDeviceAvailabilityInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameradeviceavailabilityinfo)**  |
+| typedef struct [MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) | **[MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameradeviceavailabilitystatuscallbacks)**  |
+| typedef struct [MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) | **[MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameradevicestatuscallbacks)**  |
+| typedef struct [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) | **[MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturecallbacks)** <br></br>Capture callbacks to be implemented by client to receive capture status if callback mechanism is used.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 4](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-4)** <br></br> { <br></br>[MLCAMERA_MAXSTREAMS](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcamera-maxstreams) = 2<br></br>} |
-| enum | **[MLCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier)** <br></br> { <br></br>[MLCameraIdentifier_MAIN](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier-main) = 0,<br></br> [MLCameraIdentifier_CV](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier-cv),<br></br> [MLCameraIdentifier_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraCaptureType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype)** <br></br> { <br></br>[MLCameraCaptureType_Image](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-image) = 0,<br></br> [MLCameraCaptureType_Video](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-video),<br></br> [MLCameraCaptureType_Preview](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-preview),<br></br> [MLCameraCaptureType_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Captures operation type.  |
-| enum | **[MLCameraCaptureFrameRate](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate)** <br></br> { <br></br>[MLCameraCaptureFrameRate_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-none) = 0,<br></br> [MLCameraCaptureFrameRate_15FPS](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-15fps),<br></br> [MLCameraCaptureFrameRate_30FPS](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-30fps),<br></br> [MLCameraCaptureFrameRate_60FPS](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-60fps),<br></br> [MLCameraCaptureFrameRate_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Captures frame rate.  |
-| enum | **[MLCameraMRQuality](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality)** <br></br> { <br></br>[MLCameraMRQuality_648x720](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-648x720) = 1,<br></br> [MLCameraMRQuality_972x1080](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-972x1080) = 2,<br></br> [MLCameraMRQuality_1944x2160](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-1944x2160) = 3,<br></br> [MLCameraMRQuality_960x720](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-960x720) = 4,<br></br> [MLCameraMRQuality_1440x1080](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-1440x1080) = 5,<br></br> [MLCameraMRQuality_2880x2160](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-2880x2160) = 6,<br></br> [MLCameraMRQuality_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Video Quality enumeration for mixed reality capture.  |
-| enum | **[MLCameraConnectFlag](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag)** <br></br> { <br></br>[MLCameraConnectFlag_CamOnly](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-camonly) = 0x0,<br></br> [MLCameraConnectFlag_VirtualOnly](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-virtualonly) = 0x1,<br></br> [MLCameraConnectFlag_MR](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-mr) = 0x2,<br></br> [MLCameraConnectFlag_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMRBlendType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype)** <br></br> { <br></br>[MLCameraMRBlendType_Additive](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype-additive) = 1,<br></br> [MLCameraMRBlendType_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraDisconnectReason](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnectreason)** <br></br> { <br></br>[MLCameraDisconnect_DeviceLost](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnect-devicelost) = 0,<br></br> [MLCameraDisconnect_PriorityLost](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnect-prioritylost),<br></br> [MLCameraDisconnect_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnect-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraError](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror)** <br></br> { <br></br>[MLCameraError_None](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-none) = 0,<br></br> [MLCameraError_Invalid](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-invalid),<br></br> [MLCameraError_Disabled](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-disabled),<br></br> [MLCameraError_DeviceFailed](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-devicefailed),<br></br> [MLCameraError_ServiceFailed](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-servicefailed),<br></br> [MLCameraError_CaptureFailed](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-capturefailed),<br></br> [MLCameraError_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraOutputFormat](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat)** <br></br> { <br></br>[MLCameraOutputFormat_Unknown](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-unknown),<br></br> [MLCameraOutputFormat_YUV_420_888](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-yuv-420-888),<br></br> [MLCameraOutputFormat_JPEG](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-jpeg),<br></br> [MLCameraOutputFormat_RGBA_8888](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-rgba-8888),<br></br> [MLCameraOutputFormat_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Captured output format. These three parameters determine which formats are supported:  |
-| enum | **[MLCameraDeviceStatusFlag](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag)** <br></br> { <br></br>[MLCameraDeviceStatusFlag_Connected](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-connected) = 1 << 0,<br></br> [MLCameraDeviceStatusFlag_Idle](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-idle) = 1 << 1,<br></br> [MLCameraDeviceStatusFlag_Streaming](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-streaming) = 1 << 2,<br></br> [MLCameraDeviceStatusFlag_Disconnected](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-disconnected) = 1 << 3,<br></br> [MLCameraDeviceStatusFlag_Error](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-error) = 1 << 4,<br></br> [MLCameraDeviceStatusFlag_Ensure32Bits](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[Anonymous Enum 5](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-5)** <br></br> { <br></br>[MLCamera_MaxImagePlanes](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcamera-maximageplanes) = 3<br></br>} |
-| enum | **[Anonymous Enum 6](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-6)** <br></br> { <br></br>[MLCameraIntrinsics_MaxDistortionCoefficients](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraintrinsics-maxdistortioncoefficients) = 5<br></br>}<br></br>Camera distortion vector size.  |
+| enum | **[Anonymous Enum 4](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-4)** <br></br> { <br></br>[MLCAMERA_MAXSTREAMS](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcamera-maxstreams) = 2<br></br>} |
+| enum | **[MLCameraIdentifier](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier)** <br></br> { <br></br>[MLCameraIdentifier_MAIN](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier-main) = 0,<br></br> [MLCameraIdentifier_CV](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier-cv),<br></br> [MLCameraIdentifier_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraCaptureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype)** <br></br> { <br></br>[MLCameraCaptureType_Image](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-image) = 0,<br></br> [MLCameraCaptureType_Video](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-video),<br></br> [MLCameraCaptureType_Preview](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-preview),<br></br> [MLCameraCaptureType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Captures operation type.  |
+| enum | **[MLCameraCaptureFrameRate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate)** <br></br> { <br></br>[MLCameraCaptureFrameRate_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-none) = 0,<br></br> [MLCameraCaptureFrameRate_15FPS](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-15fps),<br></br> [MLCameraCaptureFrameRate_30FPS](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-30fps),<br></br> [MLCameraCaptureFrameRate_60FPS](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-60fps),<br></br> [MLCameraCaptureFrameRate_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracaptureframerate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Captures frame rate.  |
+| enum | **[MLCameraMRQuality](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality)** <br></br> { <br></br>[MLCameraMRQuality_648x720](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-648x720) = 1,<br></br> [MLCameraMRQuality_972x1080](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-972x1080) = 2,<br></br> [MLCameraMRQuality_1944x2160](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-1944x2160) = 3,<br></br> [MLCameraMRQuality_960x720](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-960x720) = 4,<br></br> [MLCameraMRQuality_1440x1080](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-1440x1080) = 5,<br></br> [MLCameraMRQuality_2880x2160](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-2880x2160) = 6,<br></br> [MLCameraMRQuality_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrquality-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Video Quality enumeration for mixed reality capture.  |
+| enum | **[MLCameraConnectFlag](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag)** <br></br> { <br></br>[MLCameraConnectFlag_CamOnly](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-camonly) = 0x0,<br></br> [MLCameraConnectFlag_VirtualOnly](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-virtualonly) = 0x1,<br></br> [MLCameraConnectFlag_MR](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-mr) = 0x2,<br></br> [MLCameraConnectFlag_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraconnectflag-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMRBlendType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype)** <br></br> { <br></br>[MLCameraMRBlendType_Additive](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype-additive) = 1,<br></br> [MLCameraMRBlendType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameramrblendtype-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraDisconnectReason](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnectreason)** <br></br> { <br></br>[MLCameraDisconnect_DeviceLost](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnect-devicelost) = 0,<br></br> [MLCameraDisconnect_PriorityLost](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnect-prioritylost),<br></br> [MLCameraDisconnect_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradisconnect-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror)** <br></br> { <br></br>[MLCameraError_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-none) = 0,<br></br> [MLCameraError_Invalid](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-invalid),<br></br> [MLCameraError_Disabled](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-disabled),<br></br> [MLCameraError_DeviceFailed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-devicefailed),<br></br> [MLCameraError_ServiceFailed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-servicefailed),<br></br> [MLCameraError_CaptureFailed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-capturefailed),<br></br> [MLCameraError_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraOutputFormat](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat)** <br></br> { <br></br>[MLCameraOutputFormat_Unknown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-unknown),<br></br> [MLCameraOutputFormat_YUV_420_888](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-yuv-420-888),<br></br> [MLCameraOutputFormat_JPEG](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-jpeg),<br></br> [MLCameraOutputFormat_RGBA_8888](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-rgba-8888),<br></br> [MLCameraOutputFormat_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraoutputformat-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Captured output format. These three parameters determine which formats are supported:  |
+| enum | **[MLCameraDeviceStatusFlag](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag)** <br></br> { <br></br>[MLCameraDeviceStatusFlag_Connected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-connected) = 1 << 0,<br></br> [MLCameraDeviceStatusFlag_Idle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-idle) = 1 << 1,<br></br> [MLCameraDeviceStatusFlag_Streaming](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-streaming) = 1 << 2,<br></br> [MLCameraDeviceStatusFlag_Disconnected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-disconnected) = 1 << 3,<br></br> [MLCameraDeviceStatusFlag_Error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-error) = 1 << 4,<br></br> [MLCameraDeviceStatusFlag_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[Anonymous Enum 5](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-5)** <br></br> { <br></br>[MLCamera_MaxImagePlanes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcamera-maximageplanes) = 3<br></br>} |
+| enum | **[Anonymous Enum 6](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-6)** <br></br> { <br></br>[MLCameraIntrinsics_MaxDistortionCoefficients](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraintrinsics-maxdistortioncoefficients) = 5<br></br>}<br></br>Camera distortion vector size.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLCameraConnectContextInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameraconnectcontextinit)**([MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * inout_context)<br></br>Initialize the connect context structure.  |
-| void | **[MLCameraCaptureConfigInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameracaptureconfiginit)**([MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * inout_config)<br></br>Initialize the capture config structure.  |
-| void | **[MLCameraDeviceAvailabilityStatusCallbacksInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameradeviceavailabilitystatuscallbacksinit)**([MLCameraDeviceAvailabilityStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * inout_device_availability_status_callbacks)<br></br>Initialize the callback structure.  |
-| void | **[MLCameraDeviceStatusCallbacksInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameradevicestatuscallbacksinit)**([MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * inout_device_status_callbacks)<br></br>Initialize the callback structure.  |
-| void | **[MLCameraCaptureCallbacksInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameracapturecallbacksinit)**([MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * inout_capture_callbacks)<br></br>Initialize the callback structure.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraInit](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit)**(const [MLCameraDeviceAvailabilityStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * device_availability_status_callbacks, void * user_data)<br></br>Initialize ML Camera API, Register callback for device availability. If the user does not want to register device availability listener, MLCameraConnect can be called directly without [MLCameraInit()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit). MLCameraDeInit should be used for unregistering callbacks and releasing resources acquired in [MLCameraInit()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect)**(const [MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * input_context, [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) * out_context)<br></br>Connect to camera device.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetNumSupportedStreams](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetnumsupportedstreams)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, uint32_t * out_num_supported_streams)<br></br>Query the no of streams supported by camera device.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetStreamCaps](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetstreamcaps)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const uint32_t stream_index, uint32_t * inout_num_stream_caps, [MLCameraCaptureStreamCaps](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) * inout_stream_caps)<br></br>Query the stream capabilities.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameradisconnect)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Disconnect from camera device.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraDeInit](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameradeinit)**()<br></br>Uninitialize ML Camera API, unregister callback for device availability. Should be called after all camera devices are disconnected. After MLCameraDeInit, MLCameraInit can be called or MLCameraConnect can be called.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraPreCaptureAEAWB](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraprecaptureaeawb)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Trigger AEAWB Convergence.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const [MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * config, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_request_handle)<br></br>Prepare for capture.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraUpdateCaptureSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraupdatecapturesettings)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Update capture setting.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraSetDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const [MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * device_status_callbacks, void * data)<br></br>Set the client-implemented callbacks to convey camera device status.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraSetCaptureCallbacks](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetcapturecallbacks)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * capture_callbacks, void * data)<br></br>Set the client-implemented callbacks to convey capture status.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCaptureImage](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracaptureimage)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, uint32_t num_images)<br></br>Capture still image.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCaptureVideoStart](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturevideostart)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Start video capture. Capture either encoded video or YUV/RGBA frames.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCapturePreviewStart](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturepreviewstart)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Start preview provide raw frames through callback.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCaptureVideoStop](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturevideostop)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Stop video capture.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCapturePreviewStop](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturepreviewstop)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Stop preview.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetDeviceStatus](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetdevicestatus)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, uint32_t * out_device_status)<br></br>Poll camera device status.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetDeviceAvailabilityStatus](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetdeviceavailabilitystatus)**([MLCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) cam_id, bool * out_device_availability_status)<br></br>Poll camera device availability status.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetErrorCode](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerageterrorcode)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, [MLCameraError](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror) * out_error_code)<br></br>Obtain camera device error code.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics)**([MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_characteristics_handle)<br></br>Obtains handle for retrieving camera characteristics.  |
+| void | **[MLCameraConnectContextInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameraconnectcontextinit)**([MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * inout_context)<br></br>Initialize the connect context structure.  |
+| void | **[MLCameraCaptureConfigInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameracaptureconfiginit)**([MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * inout_config)<br></br>Initialize the capture config structure.  |
+| void | **[MLCameraDeviceAvailabilityStatusCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameradeviceavailabilitystatuscallbacksinit)**([MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * inout_device_availability_status_callbacks)<br></br>Initialize the callback structure.  |
+| void | **[MLCameraDeviceStatusCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameradevicestatuscallbacksinit)**([MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * inout_device_status_callbacks)<br></br>Initialize the callback structure.  |
+| void | **[MLCameraCaptureCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameracapturecallbacksinit)**([MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * inout_capture_callbacks)<br></br>Initialize the callback structure.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit)**(const [MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * device_availability_status_callbacks, void * user_data)<br></br>Initialize ML Camera API, Register callback for device availability. If the user does not want to register device availability listener, MLCameraConnect can be called directly without [MLCameraInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit). MLCameraDeInit should be used for unregistering callbacks and releasing resources acquired in [MLCameraInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraConnect](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect)**(const [MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * input_context, [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) * out_context)<br></br>Connect to camera device.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetNumSupportedStreams](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetnumsupportedstreams)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, uint32_t * out_num_supported_streams)<br></br>Query the no of streams supported by camera device.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetstreamcaps)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const uint32_t stream_index, uint32_t * inout_num_stream_caps, [MLCameraCaptureStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) * inout_stream_caps)<br></br>Query the stream capabilities.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraDisconnect](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameradisconnect)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Disconnect from camera device.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraDeInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameradeinit)**()<br></br>Uninitialize ML Camera API, unregister callback for device availability. Should be called after all camera devices are disconnected. After MLCameraDeInit, MLCameraInit can be called or MLCameraConnect can be called.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraPreCaptureAEAWB](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraprecaptureaeawb)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Trigger AEAWB Convergence.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const [MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * config, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_request_handle)<br></br>Prepare for capture.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraUpdateCaptureSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraupdatecapturesettings)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Update capture setting.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraSetDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const [MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * device_status_callbacks, void * data)<br></br>Set the client-implemented callbacks to convey camera device status.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraSetCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetcapturecallbacks)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, const [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * capture_callbacks, void * data)<br></br>Set the client-implemented callbacks to convey capture status.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCaptureImage](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracaptureimage)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, uint32_t num_images)<br></br>Capture still image.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCaptureVideoStart](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturevideostart)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Start video capture. Capture either encoded video or YUV/RGBA frames.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCapturePreviewStart](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturepreviewstart)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Start preview provide raw frames through callback.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCaptureVideoStop](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturevideostop)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Stop video capture.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraCapturePreviewStop](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturepreviewstop)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context)<br></br>Stop preview.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetDeviceStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetdevicestatus)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, uint32_t * out_device_status)<br></br>Poll camera device status.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetDeviceAvailabilityStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetdeviceavailabilitystatus)**([MLCameraIdentifier](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) cam_id, bool * out_device_availability_status)<br></br>Poll camera device availability status.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetErrorCode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerageterrorcode)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, [MLCameraError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror) * out_error_code)<br></br>Obtain camera device error code.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics)**([MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) context, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_characteristics_handle)<br></br>Obtains handle for retrieving camera characteristics.  |
 
 ## Detailed Description
 
@@ -283,7 +283,7 @@ Captures operation type.
 
 Captures frame rate. 
 
-Call [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture) to configure frame rate. Use MLCameraCaptureFrameRate_None when configuring only Image capture. Use MLCameraCaptureFrameRate_60fps only when resolution of captures <= 3MP(2048x1536). Use MLCameraCaptureFrameRate_15FPS only when MLCameraConnectFlag is MLCameraConnectFlag_CamOnly. 
+Call [MLCameraPrepareCapture()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture) to configure frame rate. Use MLCameraCaptureFrameRate_None when configuring only Image capture. Use MLCameraCaptureFrameRate_60fps only when resolution of captures <= 3MP(2048x1536). Use MLCameraCaptureFrameRate_15FPS only when MLCameraConnectFlag is MLCameraConnectFlag_CamOnly. 
 
 
 
@@ -307,7 +307,7 @@ Call [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___came
 
 Video Quality enumeration for mixed reality capture. 
 
-Use [MLCameraGetStreamCaps](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetstreamcaps) to get the resolution. 
+Use [MLCameraGetStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetstreamcaps) to get the resolution. 
 
 
 
@@ -451,7 +451,7 @@ These are formats supported:
 | MLCameraDeviceStatusFlag_Idle |  1 << 1| Idle. |
 | MLCameraDeviceStatusFlag_Streaming |  1 << 2| Opened. |
 | MLCameraDeviceStatusFlag_Disconnected |  1 << 3| Disconnected. |
-| MLCameraDeviceStatusFlag_Error |  1 << 4| Error. Call [MLCameraGetErrorCode](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerageterrorcode) to obtain the error code. |
+| MLCameraDeviceStatusFlag_Error |  1 << 4| Error. Call [MLCameraGetErrorCode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerageterrorcode) to obtain the error code. |
 | MLCameraDeviceStatusFlag_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -515,7 +515,7 @@ Camera context to be used while connecting to camera.
 
 
 
-[More Info](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle)
 
 
 
@@ -532,7 +532,7 @@ A structure to encapsulate connection settings for MR capture.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_m_r_connect_info.md)
 
 
 
@@ -549,7 +549,7 @@ A structure to encapsulate context for a CameraConnect Request.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md)
 
 
 
@@ -567,7 +567,7 @@ The capabilities for each stream supported by logical camera device can be queri
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md)
 
 
 **API Level:**
@@ -589,7 +589,7 @@ A structure to encapsulate stream configurations.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_config.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_config.md)
 
 
 
@@ -606,7 +606,7 @@ A structure to encapsulate capture configuration.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md)
 
 
 
@@ -623,7 +623,7 @@ Per plane info for captured output.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_plane_info.md)
 
 
 
@@ -640,7 +640,7 @@ A structure to encapsulate captured output.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_output.md)
 
 
 
@@ -656,7 +656,7 @@ Camera intrinsic parameter.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_intrinsic_calibration_parameters.md)
 
 
 **API Level:**
@@ -678,7 +678,7 @@ A structure to encapsulate various indices for a capture result.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_result_extras.md)
 
 
 
@@ -695,7 +695,7 @@ A structure to represent info on camera availability.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_info.md)
 
 
 
@@ -712,7 +712,7 @@ Device availability status callbacks to be implemented by client to receive devi
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md)
 
 
 
@@ -729,7 +729,7 @@ Device status callbacks to be implemented by client to receive device status if 
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md)
 
 
 
@@ -743,11 +743,11 @@ typedef struct MLCameraCaptureCallbacks MLCameraCaptureCallbacks;
 
 Capture callbacks to be implemented by client to receive capture status if callback mechanism is used. 
 
-This structure must be initialized by calling [MLCameraCaptureCallbacksInit()](/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameracapturecallbacksinit) before use. 
+This structure must be initialized by calling [MLCameraCaptureCallbacksInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#void-mlcameracapturecallbacksinit) before use. 
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md)
 
 
 
@@ -770,13 +770,13 @@ Initialize the connect context structure.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * |inout_context|[MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) structure to initialize.|
+| [MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * |inout_context|[MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) structure to initialize.|
 **Required Permissions**:
 
   * None 
 
 
-Shall be called before calling [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).
+Shall be called before calling [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).
 
 
 
@@ -803,13 +803,13 @@ Initialize the capture config structure.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * |inout_config|[MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) structure to initialize.|
+| [MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * |inout_config|[MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) structure to initialize.|
 **Required Permissions**:
 
   * None 
 
 
-Shall be called before calling [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture).
+Shall be called before calling [MLCameraPrepareCapture()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture).
 
 
 
@@ -836,7 +836,7 @@ Initialize the callback structure.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraDeviceAvailabilityStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * |inout_device_availability_status_callbacks|Device availability status callbacks structure to initialize.|
+| [MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * |inout_device_availability_status_callbacks|Device availability status callbacks structure to initialize.|
 **Required Permissions**:
 
   * None 
@@ -869,13 +869,13 @@ Initialize the callback structure.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * |inout_device_status_callbacks|Device status callbacks structure to initialize.|
+| [MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * |inout_device_status_callbacks|Device status callbacks structure to initialize.|
 **Required Permissions**:
 
   * None 
 
 
-Shall be called before calling [MLCameraSetDeviceStatusCallbacks()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks).
+Shall be called before calling [MLCameraSetDeviceStatusCallbacks()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks).
 
 
 
@@ -902,13 +902,13 @@ Initialize the callback structure.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * |inout_capture_callbacks|Capture status callbacks structure to initialize.|
+| [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * |inout_capture_callbacks|Capture status callbacks structure to initialize.|
 **Required Permissions**:
 
   * None 
 
 
-Shall be called before calling [MLCameraSetCaptureCallbacks()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetcapturecallbacks).
+Shall be called before calling [MLCameraSetCaptureCallbacks()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetcapturecallbacks).
 
 
 
@@ -930,22 +930,22 @@ MLResult MLCameraInit(
 )
 ```
 
-Initialize ML Camera API, Register callback for device availability. If the user does not want to register device availability listener, MLCameraConnect can be called directly without [MLCameraInit()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit). MLCameraDeInit should be used for unregistering callbacks and releasing resources acquired in [MLCameraInit()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit). 
+Initialize ML Camera API, Register callback for device availability. If the user does not want to register device availability listener, MLCameraConnect can be called directly without [MLCameraInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit). MLCameraDeInit should be used for unregistering callbacks and releasing resources acquired in [MLCameraInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| const [MLCameraDeviceAvailabilityStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * |device_availability_status_callbacks|Callback to notify camera availability status. |
+| const [MLCameraDeviceAvailabilityStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_availability_status_callbacks.md) * |device_availability_status_callbacks|Callback to notify camera availability status. |
 | void * |user_data|Pointer to user context data (can be NULL).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Camera is initialized and callbacks registered successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Camera is initialized and callbacks registered successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing.|
 **Required Permissions**:
 
   * android.permission.CAMERA (protection level: dangerous) 
@@ -977,18 +977,18 @@ Connect to camera device.
 
 |  |   |   |
 |--|--|--|
-| const [MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * |input_context|[MLCameraConnectContext](/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) structure. |
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) * |out_context|Camera context to be used in later APIs.|
+| const [MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) * |input_context|[MLCameraConnectContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_connect_context.md) structure. |
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) * |out_context|Camera context to be used in later APIs.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Connected to camera device successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|camera device already connected. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Connected to camera device successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|camera device already connected. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing.|
 **Required Permissions**:
 
   * android.permission.CAMERA (protection level: dangerous) 
@@ -1020,15 +1020,15 @@ Query the no of streams supported by camera device.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
 | uint32_t * |out_num_supported_streams|Number of streams supported by device.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|API call completed successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|API call completed successfully.|
 **Required Permissions**:
 
   * None 
@@ -1062,23 +1062,23 @@ Query the stream capabilities.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
-| const uint32_t |stream_index|Index of the stream for which to query capabilities. The index should be in the range [0 , num_supported_streams) where the num_supported_streams is from [MLCameraGetNumSupportedStreams()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetnumsupportedstreams). |
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| const uint32_t |stream_index|Index of the stream for which to query capabilities. The index should be in the range [0 , num_supported_streams) where the num_supported_streams is from [MLCameraGetNumSupportedStreams()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetnumsupportedstreams). |
 | uint32_t * |inout_num_stream_caps|When the parameter inout_stream_caps is null, this is an output parameter which will hold the number of capabilities supported by the stream on function return. Otherwise this is an input parameter specifying the number of capabilities to retrieve, namely the size of the array pointed to by inout_stream_caps on return. The value should be in the range of [0, number-of-caps-retrieved]. |
-| [MLCameraCaptureStreamCaps](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) * |inout_stream_caps|This is either null or pointing to an array of [MLCameraCaptureStreamCaps()](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturestreamcaps) on return. Note that caller is responsible for allocating and releasing the array.|
+| [MLCameraCaptureStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) * |inout_stream_caps|This is either null or pointing to an array of [MLCameraCaptureStreamCaps()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#struct-mlcameracapturestreamcaps) on return. Note that caller is responsible for allocating and releasing the array.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|API call completed successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|API call completed successfully.|
 **Required Permissions**:
 
   * None 
 
 
-Retrieves either the number of capabilities supported by the given stream or an array of capabilities for the given stream. To get the number of capabilities supported by the given stream, this API should be called with num_stream_caps being valid pointer and out_stream_caps being NULL. To retrieve the array of capabilities for the given stream, this API should be called with a valid num_stream_caps (that contains the size of the out_stream_caps) and out_stream_caps being a preallocated array of [MLCameraCaptureStreamCaps](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) of size specified by num_stream_caps.
+Retrieves either the number of capabilities supported by the given stream or an array of capabilities for the given stream. To get the number of capabilities supported by the given stream, this API should be called with num_stream_caps being valid pointer and out_stream_caps being NULL. To retrieve the array of capabilities for the given stream, this API should be called with a valid num_stream_caps (that contains the size of the out_stream_caps) and out_stream_caps being a preallocated array of [MLCameraCaptureStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_stream_caps.md) of size specified by num_stream_caps.
 
 
 
@@ -1105,14 +1105,14 @@ Disconnect from camera device.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Disconnected Camera device successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera device already disconnected or camera device is streaming.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Disconnected Camera device successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera device already disconnected or camera device is streaming.|
 **Required Permissions**:
 
   * None 
@@ -1142,8 +1142,8 @@ Uninitialize ML Camera API, unregister callback for device availability. Should 
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Deinitialization completed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|DeInit called when camera device is connected.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Deinitialization completed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|DeInit called when camera device is connected.|
 **Required Permissions**:
 
   * None 
@@ -1174,17 +1174,17 @@ Trigger AEAWB Convergence.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid camera context. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|AEAWB convergence done. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified failure. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Timeout|Timed out waiting for AEAWB convergence. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera device not configured using [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture) or camera device is streaming.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid camera context. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|AEAWB convergence done. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Unspecified failure. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Timeout|Timed out waiting for AEAWB convergence. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera device not configured using [MLCameraPrepareCapture()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture) or camera device is streaming.|
 **Required Permissions**:
 
   * None 
@@ -1219,28 +1219,28 @@ Prepare for capture.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
-| const [MLCameraCaptureConfig](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * |config|Capture configuration. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_request_handle|Handle to the capture request metadata. Only valid if result is MLResult_Ok.|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| const [MLCameraCaptureConfig](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_config.md) * |config|Capture configuration. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_request_handle|Handle to the capture request metadata. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to prepare for capture due to invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Prepared for capture successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to prepare for capture due to internal error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera device in streaming state.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to prepare for capture due to invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Prepared for capture successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to prepare for capture due to internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera device in streaming state.|
 **Required Permissions**:
 
   * None 
 
 
-This API prepares for capture per specified [MLCameraCaptureType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype) by creating a capture request, and a handle to which is returned to the user, who can choose to manipulate the request data (metadata) via APIs defined in [ml_camera_metadata_v2.h](/api-ref/api/Files/ml__camera__metadata__v2_8h.md#files-ml-camera-metadata-v2.h) before performing the capture.
+This API prepares for capture per specified [MLCameraCaptureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameracapturetype) by creating a capture request, and a handle to which is returned to the user, who can choose to manipulate the request data (metadata) via APIs defined in [ml_camera_metadata_v2.h](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__camera__metadata__v2_8h.md#files-ml-camera-metadata-v2.h) before performing the capture.
 
-Shall be called after [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).
+Shall be called after [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).
 
-Note: When preparing capture the width and height parameters should match one of the values returned from [MLCameraGetStreamCaps](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetstreamcaps).
+Note: When preparing capture the width and height parameters should match one of the values returned from [MLCameraGetStreamCaps](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetstreamcaps).
 
 
 
@@ -1267,20 +1267,20 @@ Update capture setting.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera not streaming video or not in preview.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Camera not streaming video or not in preview.|
 **Required Permissions**:
 
   * None 
 
 
-This API updates the capture settings for an active preview/video stream. The API can be used to update capture settings like exposure compensation manual exposure settings like exposure time, iso setting.The capture settings can be changed in metadata handle returned by [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture) and then this API can be called to apply the capture settings.
+This API updates the capture settings for an active preview/video stream. The API can be used to update capture settings like exposure compensation manual exposure settings like exposure time, iso setting.The capture settings can be changed in metadata handle returned by [MLCameraPrepareCapture()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture) and then this API can be called to apply the capture settings.
 
 
 
@@ -1309,22 +1309,22 @@ Set the client-implemented callbacks to convey camera device status.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
-| const [MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * |device_status_callbacks|Camera device status callbacks. |
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| const [MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md) * |device_status_callbacks|Camera device status callbacks. |
 | void * |data|User metadata.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set device status callbacks successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set device status callbacks successfully.|
 **Required Permissions**:
 
   * None 
 
 
-Client needs to implement the callbacks defined by [MLCameraDeviceStatusCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md). The library passes the camera device status to the client via those callbacks.
+Client needs to implement the callbacks defined by [MLCameraDeviceStatusCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_device_status_callbacks.md). The library passes the camera device status to the client via those callbacks.
 
 
 
@@ -1353,23 +1353,23 @@ Set the client-implemented callbacks to convey capture status.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
-| const [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * |capture_callbacks|Capture status callbacks. |
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| const [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) * |capture_callbacks|Capture status callbacks. |
 | void * |data|User metadata.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set Capture callbacks successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error occurred.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set Capture callbacks successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error occurred.|
 **Required Permissions**:
 
   * None 
 
 
-Client needs to implement the callbacks defined by [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). The library passes the capture status to the client via those callbacks.
+Client needs to implement the callbacks defined by [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). The library passes the capture status to the client via those callbacks.
 
 Shall be called before capture operation for preview/image/video.
 
@@ -1399,17 +1399,17 @@ Capture still image.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
 | uint32_t |num_images|Number of images to capture valid range is 1-10.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context or invalid num_images. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Triggered image capture successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|MLMediaGenericResult_InvalidOperation Capture device in invalid state or image stream not configured by [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error occurred.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context or invalid num_images. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Triggered image capture successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|MLMediaGenericResult_InvalidOperation Capture device in invalid state or image stream not configured by [MLCameraPrepareCapture()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Internal error occurred.|
 **Required Permissions**:
 
   * None 
@@ -1444,16 +1444,16 @@ Start video capture. Capture either encoded video or YUV/RGBA frames.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Started video capture successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or video stream not configured by [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start video recording due to internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Started video capture successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or video stream not configured by [MLCameraPrepareCapture()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start video recording due to internal error.|
 **Required Permissions**:
 
   * None 
@@ -1461,7 +1461,7 @@ Start video capture. Capture either encoded video or YUV/RGBA frames.
 
 YUV/RGBA frames are provides through callback.For encoded video capture valid encoder input surface should be configured.The captured video YUV/RGBA frames will be returned to the application via on_video_buffer_available.
 
-[MLCameraCaptureVideoStop](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturevideostop) needs to be called to stop the capture.
+[MLCameraCaptureVideoStop](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturevideostop) needs to be called to stop the capture.
 
 
 
@@ -1488,16 +1488,16 @@ Start preview provide raw frames through callback.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Started preview successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start preview due to internal error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or preview stream not configured by [MLCameraPrepareCapture()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture).|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Started preview successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start preview due to internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or preview stream not configured by [MLCameraPrepareCapture()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture).|
 **Required Permissions**:
 
   * None 
@@ -1505,7 +1505,7 @@ Start preview provide raw frames through callback.
 
 The captured preview YUV frames will be returned to the application via on_preview_buffer_available.
 
-[MLCameraCapturePreviewStop](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturepreviewstop) needs to be called to stop the capture.
+[MLCameraCapturePreviewStop](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameracapturepreviewstop) needs to be called to stop the capture.
 
 
 
@@ -1532,16 +1532,16 @@ Stop video capture.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Stopped video capture successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to stop video recording due to internal error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or video stream not streaming.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Stopped video capture successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to stop video recording due to internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or video stream not streaming.|
 **Required Permissions**:
 
   * None 
@@ -1574,16 +1574,16 @@ Stop preview.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Stopped video capture successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to stop preview due to internal error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or preview stream not streaming.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Invalid context. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Stopped video capture successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to stop preview due to internal error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Capture device in invalid state or preview stream not streaming.|
 **Required Permissions**:
 
   * None 
@@ -1615,23 +1615,23 @@ Poll camera device status.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
 | uint32_t * |out_device_status|Device status.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain device status due to invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained device status successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain device status due to invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained device status successfully.|
 **Required Permissions**:
 
   * None 
 
 
-Use [MLCameraDeviceStatusFlag](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag) to view specific status bit. Call [MLCameraGetErrorCode()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerageterrorcode) to obtain the error code if [MLCameraDeviceStatusFlag_Error](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-error) bit is set.
+Use [MLCameraDeviceStatusFlag](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag) to view specific status bit. Call [MLCameraGetErrorCode()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerageterrorcode) to obtain the error code if [MLCameraDeviceStatusFlag_Error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameradevicestatusflag-error) bit is set.
 
-Note: This API can still be used even if [MLCameraSetDeviceStatusCallbacks()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks) has been called.
+Note: This API can still be used even if [MLCameraSetDeviceStatusCallbacks()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerasetdevicestatuscallbacks) has been called.
 
 
 
@@ -1659,23 +1659,23 @@ Poll camera device availability status.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) |cam_id|Camera Id for which the availability status is to be queried. |
+| [MLCameraIdentifier](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraidentifier) |cam_id|Camera Id for which the availability status is to be queried. |
 | bool * |out_device_availability_status|Device availability status.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain device status due to invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained device status successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain device status due to invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained device status successfully.|
 **Required Permissions**:
 
   * None 
 
 
-Use [MLCameraGetDeviceAvailabilityStatus](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetdeviceavailabilitystatus) to view specific status.
+Use [MLCameraGetDeviceAvailabilityStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetdeviceavailabilitystatus) to view specific status.
 
-Note: This API can still be used even if availability status callback is not registered through [MLCameraInit](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit) call.
+Note: This API can still be used even if availability status callback is not registered through [MLCameraInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerainit) call.
 
 
 
@@ -1703,15 +1703,15 @@ Obtain camera device error code.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
-| [MLCameraError](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror) * |out_error_code|Camera device error code.|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| [MLCameraError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#enums-mlcameraerror) * |out_error_code|Camera device error code.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain device error code due to invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained camera device error code successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain device error code due to invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained camera device error code successfully.|
 **Required Permissions**:
 
   * None 
@@ -1743,22 +1743,22 @@ Obtains handle for retrieving camera characteristics.
 
 |  |   |   |
 |--|--|--|
-| [MLCameraContext](/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_characteristics_handle|Handle to access camera characteristic metadata. Only valid if result is MLResult_Ok.|
+| [MLCameraContext](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlhandle-mlcameracontext) |context|Camera context obtained from [MLCameraConnect()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameraconnect). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_characteristics_handle|Handle to access camera characteristic metadata. Only valid if result is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain camera characteristic handle due to invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained camera characteristic handle successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain camera characteristic handle due to invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Obtained camera characteristic handle successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
 **Required Permissions**:
 
   * None 
 
 
-This API provides the handle for retrieving camera characteristics via APIs defined in [ml_camera_metadata_v2.h](/api-ref/api/Files/ml__camera__metadata__v2_8h.md#files-ml-camera-metadata-v2.h).
+This API provides the handle for retrieving camera characteristics via APIs defined in [ml_camera_metadata_v2.h](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__camera__metadata__v2_8h.md#files-ml-camera-metadata-v2.h).
 
 
 

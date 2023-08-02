@@ -34,7 +34,7 @@ The Marker Tracker API allows developers to select pre-defined Marker Tracker pr
 |Marker Tracker Profile|Description                               |
 |----------------------|------------------------------------------|
 |Default| A Generic tracker profile. Covers standard use cases.|
-|Custom| Application can define a custom tracker profiler. See [MLMarkerTrackerCustomProfile](/docs/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for more details.|
+|Custom| Application can define a custom tracker profiler. See [MLMarkerTrackerCustomProfile](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for more details.|
 |Speed| Optimized for speed. Use this profile to reduce the compute load and increase detection/tracker speed. This can result poor poses.|
 |Accuracy| Optimized for accuracy. Use this profile to optimize for accurate marker poses. This can cause  increased load on the compute.|
 |Small Targets| Optimized for small targets. Use this profile to optimize for markers that are small or for larger markers that need to detected from far.|
@@ -42,7 +42,7 @@ The Marker Tracker API allows developers to select pre-defined Marker Tracker pr
 
 ## Learn More
 
-- [Unity Marker Tracking Overview](/docs/guides/unity/marker-tracking/marker-tracker-overview.md)
+- [Unity Marker Tracking Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/marker-tracking/marker-tracker-overview.md)
   - Learn how to implement Marker Tracking inside your Unity Application.
-- [C++ Marker Tracking API](/docs/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)
+- [C++ Marker Tracking API](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)
   - Reference the API documentation to implement Marker Tracking using Magic Leap's Native API.

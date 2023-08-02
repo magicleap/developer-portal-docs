@@ -6,7 +6,7 @@ tags: [Unity, Intents, Battery]
 keywords: [Unity, Intents, Battery]
 ---
 
-This section demonstrates how to collect battery information from the Magic Leap 2's Compute Pack and Controller in Unity. See the [Android Intents Overview](/docs/guides/features/android-intents-overview.md#battery-level) guide for information regarding the native implementation.
+This section demonstrates how to collect battery information from the Magic Leap 2's Compute Pack and Controller in Unity. See the [Android Intents Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/android-intents-overview.md#battery-level) guide for information regarding the native implementation.
 
 ## Controller Battery
 

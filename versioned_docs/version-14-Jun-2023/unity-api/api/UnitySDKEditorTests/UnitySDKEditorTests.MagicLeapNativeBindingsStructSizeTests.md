@@ -8,13 +8,13 @@ title: MagicLeapNativeBindingsStructSizeTests
 
 
 **NameSpace:** 
-[UnitySDKEditorTests](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.md) 
+[UnitySDKEditorTests](/versioned_docs/version-14-Jun-2023/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.md) 
 
 
 
 
 
-Inherited by: <br></br>[UnitySDKEditorTests.MLHeadTracking](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLHeadTracking.md), <br></br>[UnitySDKEditorTests.XRStructSizeTests](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.XRStructSizeTests.md)
+Inherited by: <br></br>[UnitySDKEditorTests.MLHeadTracking](/versioned_docs/version-14-Jun-2023/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.MLHeadTracking.md), <br></br>[UnitySDKEditorTests.XRStructSizeTests](/versioned_docs/version-14-Jun-2023/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.XRStructSizeTests.md)
 
 
 

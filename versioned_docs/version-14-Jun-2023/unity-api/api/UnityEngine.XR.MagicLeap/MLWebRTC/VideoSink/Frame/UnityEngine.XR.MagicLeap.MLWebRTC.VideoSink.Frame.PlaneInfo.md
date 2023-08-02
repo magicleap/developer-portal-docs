@@ -121,7 +121,7 @@ public uint Width { get; set; }
 
 ## Public Methods
 
-### [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) Create {#planeinfo-create}
+### [PlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) Create {#planeinfo-create}
 
 Creates and returns an initialized version of this struct. 
 

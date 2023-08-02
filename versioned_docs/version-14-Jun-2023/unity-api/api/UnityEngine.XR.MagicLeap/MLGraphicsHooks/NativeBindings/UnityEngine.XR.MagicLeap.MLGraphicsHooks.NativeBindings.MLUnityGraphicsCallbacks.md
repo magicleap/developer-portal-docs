@@ -16,7 +16,7 @@ title: MLUnityGraphicsCallbacks
 
 ## Public Methods
 
-### [MLUnityGraphicsCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLGraphicsHooks/NativeBindings/UnityEngine.XR.MagicLeap.MLGraphicsHooks.NativeBindings.MLUnityGraphicsCallbacks.md) Create {#mlunitygraphicscallbacks-create}
+### [MLUnityGraphicsCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLGraphicsHooks/NativeBindings/UnityEngine.XR.MagicLeap.MLGraphicsHooks.NativeBindings.MLUnityGraphicsCallbacks.md) Create {#mlunitygraphicscallbacks-create}
 
 ```csharp
 public static MLUnityGraphicsCallbacks Create()

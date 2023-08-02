@@ -27,7 +27,7 @@ public List< JSONData > app_intents;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [JSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
+| List&lt; [JSONData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONData.md) &gt; | The current structure of the JSON data that will be sent to the MLVoice API. Subject to change.  |
 
 
 
@@ -60,7 +60,7 @@ public SystemJSONData sys_intent_list;
 
 | Type | Description  | 
 |--|--|
-| [SystemJSONData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SystemJSONData.md) | The current structure of the System Intents JSON data that will be sent to the MLVoice API. Subject to change.  |
+| [SystemJSONData](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SystemJSONData.md) | The current structure of the System Intents JSON data that will be sent to the MLVoice API. Subject to change.  |
 
 
 

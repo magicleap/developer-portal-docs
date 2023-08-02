@@ -11,14 +11,14 @@ title: NativeBindings
 
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) FreeUnmanagedMemory {#mlresultcode-freeunmanagedmemory}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) FreeUnmanagedMemory {#mlresultcode-freeunmanagedmemory}
 
 Get the Media Format of a track. 
 
@@ -66,7 +66,7 @@ public static string GetTrackLanguage(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackLanguage {#mlresultcode-mlmediaplayergettracklanguage}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackLanguage {#mlresultcode-mlmediaplayergettracklanguage}
 
 Get the language of a track. 
 
@@ -94,7 +94,7 @@ public MLResult.Code MLMediaPlayerGetTrackLanguage(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackMediaFormat {#mlresultcode-mlmediaplayergettrackmediaformat}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackMediaFormat {#mlresultcode-mlmediaplayergettrackmediaformat}
 
 Get the Media Format of a track. 
 
@@ -122,7 +122,7 @@ public MLResult.Code MLMediaPlayerGetTrackMediaFormat(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackType {#mlresultcode-mlmediaplayergettracktype}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackType {#mlresultcode-mlmediaplayergettracktype}
 
 Get the type of a track. 
 
@@ -141,7 +141,7 @@ public MLResult.Code MLMediaPlayerGetTrackType(
 |--|--|--|
 | ulong |mediaPlayerHandle||
 | uint |trackIndex||
-| out [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) |trackType|Media player track types. |
+| out [Type](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) |trackType|Media player track types. |
 
 
 

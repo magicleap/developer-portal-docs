@@ -5,7 +5,7 @@ title: MLVersion
 
 # MLVersion
 
-**Module:** **[Platform](/api-ref/api/Modules/group___platform/group___platform.md)**
+**Module:** **[Platform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLVersion
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[major](/api-ref/api/Modules/group___platform/struct_m_l_version.md#uint32-t-major)**  |
-| uint32_t | **[minor](/api-ref/api/Modules/group___platform/struct_m_l_version.md#uint32-t-minor)**  |
-| uint32_t | **[revision](/api-ref/api/Modules/group___platform/struct_m_l_version.md#uint32-t-revision)**  |
-| char[MLVersion_BuildIdMaxLength] | **[build_id](/api-ref/api/Modules/group___platform/struct_m_l_version.md#char-build-id)**  |
+| uint32_t | **[major](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md#uint32-t-major)**  |
+| uint32_t | **[minor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md#uint32-t-minor)**  |
+| uint32_t | **[revision](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md#uint32-t-revision)**  |
+| char[MLVersion_BuildIdMaxLength] | **[build_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/struct_m_l_version.md#char-build-id)**  |
 
 ## Detailed Description
 

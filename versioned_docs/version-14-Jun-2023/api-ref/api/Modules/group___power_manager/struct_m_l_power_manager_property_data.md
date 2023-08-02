@@ -6,7 +6,7 @@ summary: a structure to encapsulate output data when getting the current propert
 
 # MLPowerManagerPropertyData
 
-**Module:** **[Power Manager](/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
+**Module:** **[Power Manager](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
 
 
 
@@ -19,8 +19,8 @@ A structure to encapsulate output data when getting the current properties.  [Mo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint8_t | **[size](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md#uint8-t-size)**  |
-| [MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) * | **[properties](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md#mlpowermanagercomponentproperty-properties)**  |
+| uint8_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md#uint8-t-size)**  |
+| [MLPowerManagerComponentProperty](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) * | **[properties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md#mlpowermanagercomponentproperty-properties)**  |
 
 ## Detailed Description
 
@@ -49,7 +49,7 @@ uint8_t size;
 ```
 
 
-Size of [properties](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md#mlpowermanagercomponentproperty-properties) array. 
+Size of [properties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md#mlpowermanagercomponentproperty-properties) array. 
 
 
 
@@ -67,10 +67,10 @@ MLPowerManagerComponentProperty * properties;
 
 | Type | Description |
 |--|--|
-| [MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) * | A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  |
+| [MLPowerManagerComponentProperty](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) * | A structure to encapsulate the data for each [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  |
 
 
-Array of [MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) elements. 
+Array of [MLPowerManagerComponentProperty](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) elements. 
 
 
 

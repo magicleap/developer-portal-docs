@@ -9,7 +9,7 @@ summary: event handler for mlwebview callbacks. this structure must be initializ
 
 
 
-Event handler for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) callbacks. This structure must be initialized by calling #MLWebViewEventCallbacksInit before use.   
+Event handler for [MLWebView](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) callbacks. This structure must be initialized by calling #MLWebViewEventCallbacksInit before use.   
 
 
 
@@ -17,7 +17,7 @@ Event handler for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/
 
 ## Public Methods
 
-### [EventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/NativeBindings/UnityEngine.XR.MagicLeap.MLWebView.NativeBindings.EventCallbacks.md) Create {#eventcallbacks-create}
+### [EventCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/NativeBindings/UnityEngine.XR.MagicLeap.MLWebView.NativeBindings.EventCallbacks.md) Create {#eventcallbacks-create}
 
 Create and return an initialized version of this struct. userDataPointer to user data to be used to reference the originating web view tab
 

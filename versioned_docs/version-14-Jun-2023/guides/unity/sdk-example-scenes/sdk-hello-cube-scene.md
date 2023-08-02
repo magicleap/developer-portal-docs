@@ -14,5 +14,5 @@ tags: [Unity, Examples, Samples, XR Interaction Toolkit, Hello Cube]
 A simple hello world scene that displays a single cube and demonstrates the bare minimum requirements for a Magic Leap 2 Unity project.
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::

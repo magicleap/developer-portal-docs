@@ -8,7 +8,7 @@ title: TestExtensions
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
@@ -34,9 +34,9 @@ public static void AssertOk(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |mlResult|Magic Leap API return value. |
+| this [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |mlResult|Magic Leap API return value. |
 | string |methodName||
-| params [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) [] |validResultCodes|Identifier of Magic Leap API results |
+| params [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) [] |validResultCodes|Identifier of Magic Leap API results |
 
 
 

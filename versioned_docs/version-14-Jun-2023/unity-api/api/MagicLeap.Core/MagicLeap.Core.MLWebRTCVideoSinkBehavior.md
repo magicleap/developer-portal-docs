@@ -8,7 +8,7 @@ title: MLWebRTCVideoSinkBehavior
 
 
 **NameSpace:** 
-[Core](/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
+[Core](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap.Core/MagicLeap.Core.md) 
 
 
 
@@ -31,7 +31,7 @@ public MLWebRTC.VideoSink VideoSink { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.VideoSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.md) | Class that represents a video sink used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. Video sinks are fed data by media sources and produces frames to render.  |
+| [MLWebRTC.VideoSink](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.md) | Class that represents a video sink used by the [MLWebRTC](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. Video sinks are fed data by media sources and produces frames to render.  |
 
 
 

@@ -9,7 +9,7 @@ summary: class that represents an ice server used by the mlwebrtc api.
 
 
 
-Class that represents an ice server used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.   
+Class that represents an ice server used by the [MLWebRTC](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.   
 
 
 
@@ -131,7 +131,7 @@ public ProxyType Type { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [ProxyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-proxytype) | Protocol for the forward proxy.  |
+| [ProxyType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-proxytype) | Protocol for the forward proxy.  |
 
 
 
@@ -158,9 +158,9 @@ public string Username { get; set; }
 
 ## Public Methods
 
-### [ProxyConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.ProxyConfig.md) Create {#proxyconfig-create}
+### [ProxyConfig](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.ProxyConfig.md) Create {#proxyconfig-create}
 
-Factory method used to create a new [IceServer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md) object. 
+Factory method used to create a new [IceServer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md) object. 
 
 ```csharp
 public static ProxyConfig Create(
@@ -180,7 +180,7 @@ public static ProxyConfig Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [ProxyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-proxytype) |uri|The uri of the ice server.|
+| [ProxyType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-proxytype) |uri|The uri of the ice server.|
 | string |userName|The username to log into the ice server.|
 | int |password|The password to log into the ice server.|
 | string |userName||

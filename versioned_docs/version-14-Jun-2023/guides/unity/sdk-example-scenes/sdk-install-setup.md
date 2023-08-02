@@ -11,12 +11,12 @@ This section describes how to download and configure the Magic Leap Unity Exampl
 
 ## Prerequisites
 
-- Installed the [ML Hub](/docs/guides/getting-started/install-the-tools.md)
-- [Unity Editor in the range of **2022.2.x**](/docs/guides/unity/getting-started/install-the-tools.md#install-unity-editor)
+- Installed the [ML Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md)
+- [Unity Editor in the range of **2022.2.x**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/install-the-tools.md#install-unity-editor)
 
 ## Downloading the Examples
 
-This section will walk you through downloading the Magic Leap Examples Unity project using the Package Manager inside [ML Hub](/docs/guides/getting-started/install-the-tools.md).
+This section will walk you through downloading the Magic Leap Examples Unity project using the Package Manager inside [ML Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md).
 
 ### Open The Package Manager
 
@@ -59,7 +59,7 @@ Once the project has been downloaded, open the project using the Unity Hub.
 1. Open the Unity Hub application
 2. Click **Open** in the upper right corner of the home page and navigate to the MagicLeap_Examples project inside your `MagicLeap/tools/unity/<SDK_VERSION>/` directory.
    - Example: `%USERPROFILE%\MagicLeap\tools\unity\<Version>\MagicLeap_Examples`
-3. Make sure the project is opened using the **Magic Leap 2 compatible editor version** that you installed in [Getting Started](/docs/guides/unity/getting-started/install-the-tools.md#install-unity-editor).
+3. Make sure the project is opened using the **Magic Leap 2 compatible editor version** that you installed in [Getting Started](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/install-the-tools.md#install-unity-editor).
 4. Select the MagicLeap_Examples folder and click **Open**.
 
 :::info
@@ -75,5 +75,5 @@ When opening the project, unity may prompt you to open the project in safe mode.
 5. Build and Run!
 
 :::info
-For information on which of these examples work in App Simulator refer to the [App Simulator Key API Features](/docs/guides/developer-tools/app-sim/app-simulator.md) guide.
+For information on which of these examples work in App Simulator refer to the [App Simulator Key API Features](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-simulator.md) guide.
 :::

@@ -6,11 +6,11 @@ summary: a structure to encapsulate the data for each mlpowermanagerpropertytype
 
 # MLPowerManagerComponentProperty
 
-**Module:** **[Power Manager](/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
+**Module:** **[Power Manager](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
 
 
 
-A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  [More...](#detailed-description)
+A structure to encapsulate the data for each [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  [More...](#detailed-description)
 
 
 `#include <ml_power_manager.h>`
@@ -19,8 +19,8 @@ A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-r
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) | **[property_type](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md#mlpowermanagerpropertytype-property-type)**  |
-| union MLPowerManagerComponentProperty::@24 | **[Anonymous 25](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md#union-mlpowermanagercomponentproperty-24-anonymous-25)**  |
+| [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) | **[property_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md#mlpowermanagerpropertytype-property-type)**  |
+| union MLPowerManagerComponentProperty::@24 | **[Anonymous 25](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md#union-mlpowermanagercomponentproperty-24-anonymous-25)**  |
 
 ## Detailed Description
 
@@ -28,11 +28,11 @@ A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-r
 struct MLPowerManagerComponentProperty;
 ```
 
-A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype). 
+A structure to encapsulate the data for each [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype). 
 
 This struct and union is used as a flexible way for each component to output an array containing distinct types of data.
 
-The below code shows how a Controller could output battery_info, battery_level, charging_state or connection_state. Where data is an instance of [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) returned from [MLPowerManagerGetComponentProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties). 
+The below code shows how a Controller could output battery_info, battery_level, charging_state or connection_state. Where data is an instance of [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) returned from [MLPowerManagerGetComponentProperties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties). 
 
 ```cpp
 auto properties = data.properties;
@@ -79,7 +79,7 @@ MLPowerManagerPropertyType property_type;
 
 | Type | Description |
 |--|--|
-| [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) | Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component.  |
+| [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) | Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component.  |
 
 
 The type of each property. 

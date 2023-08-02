@@ -6,11 +6,11 @@ summary: the clip extents array returned from mlgraphicsgetclipextentsex.
 
 # MLGraphicsClipExtentsInfoArrayEx
 
-**Module:** **[Graphics](/api-ref/api/Modules/group___graphics/group___graphics.md)**
+**Module:** **[Graphics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md)**
 
 
 
-The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex).  [More...](#detailed-description)
+The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex).  [More...](#detailed-description)
 
 
 `#include <ml_graphics.h>`
@@ -19,10 +19,10 @@ The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#uint32-t-version)**  |
-| uint32_t | **[num_virtual_cameras](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#uint32-t-num-virtual-cameras)**  |
-| [MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md) | **[full_extents](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#mlgraphicsclipextentsinfo-full-extents)** <br></br>The combined extents for all the virtual cameras, can be used for conservative frustum culling of all visible content defined by the union of what is visible from all of the defined virtual cameras.  |
-| [MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)[MLGraphicsVirtualCameraName_Count] | **[virtual_camera_extents](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#mlgraphicsclipextentsinfo-virtual-camera-extents)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#uint32-t-version)**  |
+| uint32_t | **[num_virtual_cameras](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#uint32-t-num-virtual-cameras)**  |
+| [MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md) | **[full_extents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#mlgraphicsclipextentsinfo-full-extents)** <br></br>The combined extents for all the virtual cameras, can be used for conservative frustum culling of all visible content defined by the union of what is visible from all of the defined virtual cameras.  |
+| [MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)[MLGraphicsVirtualCameraName_Count] | **[virtual_camera_extents](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info_array_ex.md#mlgraphicsclipextentsinfo-virtual-camera-extents)**  |
 
 ## Detailed Description
 
@@ -30,11 +30,11 @@ The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api
 struct MLGraphicsClipExtentsInfoArrayEx;
 ```
 
-The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex). 
+The clip extents array returned from [MLGraphicsGetClipExtentsEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#mlresult-mlgraphicsgetclipextentsex). 
 
-The clip extents array provides the conservative clip extents per metadata camera as defined by [MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md).
+The clip extents array provides the conservative clip extents per metadata camera as defined by [MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md).
 
-This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExInit()](/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsinfoarrayexinit) before use.
+This structure must be initialized by calling [MLGraphicsClipExtentsInfoArrayExInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/group___graphics.md#void-mlgraphicsclipextentsinfoarrayexinit) before use.
 
 
 
@@ -89,7 +89,7 @@ The combined extents for all the virtual cameras, can be used for conservative f
 
 | Type | Description |
 |--|--|
-| [MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md) | The static clip extents defined for all possible eye positions.  |
+| [MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md) | The static clip extents defined for all possible eye positions.  |
 
 
 
@@ -108,7 +108,7 @@ MLGraphicsClipExtentsInfo[MLGraphicsVirtualCameraName_Count] virtual_camera_exte
 
 | Type | Description |
 |--|--|
-| [MLGraphicsClipExtentsInfo](/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)[MLGraphicsVirtualCameraName_Count] | The static clip extents defined for all possible eye positions. [MLGraphicsVirtualCameraName_Count] |
+| [MLGraphicsClipExtentsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics/struct_m_l_graphics_clip_extents_info.md)[MLGraphicsVirtualCameraName_Count] | The static clip extents defined for all possible eye positions. [MLGraphicsVirtualCameraName_Count] |
 
 
 The per virtual camera clip extents. 

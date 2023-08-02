@@ -12,14 +12,14 @@ summary: a structure containing information about the pre-defined pattern to be 
 A structure containing information about the Pre-Defined pattern to be played.   
 
 
-Inherits from: <br></br>[IHapticsCommand](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md)
+Inherits from: <br></br>[IHapticsCommand](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md)
 
 
 
 
 ## Public Methods
 
-### [PreDefined](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md) Create {#predefined-create}
+### [PreDefined](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md) Create {#predefined-create}
 
 ```csharp
 public static PreDefined Create(
@@ -32,7 +32,7 @@ public static PreDefined Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md#enums-type) |patternType|Predefined haptics pattern types. |
+| [Type](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md#enums-type) |patternType|Predefined haptics pattern types. |
 
 
 
@@ -41,7 +41,7 @@ public static PreDefined Create(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartHaptics {#mlresult-starthaptics}
 
 ```csharp
 public MLResult StartHaptics()
@@ -50,7 +50,7 @@ public MLResult StartHaptics()
 
 
 
-**Reimplements**: [StartHaptics](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
+**Reimplements**: [StartHaptics](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md#mlresult-starthaptics)
 
 
 
@@ -70,7 +70,7 @@ public readonly Type PatternType;
 
 | Type | Description  | 
 |--|--|
-| readonly [Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md#enums-type) | Predefined haptics pattern types.  |
+| readonly [Type](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md#enums-type) | Predefined haptics pattern types.  |
 
 
 

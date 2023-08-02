@@ -5,7 +5,7 @@ title: MLMeshingSettings
 
 # MLMeshingSettings
 
-**Module:** **[Meshing2](/api-ref/api/Modules/group___meshing2/group___meshing2.md)**
+**Module:** **[Meshing2](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLMeshingSettings
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[flags](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md#uint32-t-flags)**  |
-| float | **[fill_hole_length](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md#float-fill-hole-length)**  |
-| float | **[disconnected_component_area](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md#float-disconnected-component-area)** <br></br>Any component that is disconnected from the main mesh which has an area (in meters^2) less than disconnected_component_area will be removed. The maximum area is limited to 2 square meters, and the area needs to exist fully within a mesh block boundary without skirt.  |
+| uint32_t | **[flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md#uint32-t-flags)**  |
+| float | **[fill_hole_length](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md#float-fill-hole-length)**  |
+| float | **[disconnected_component_area](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_settings.md#float-disconnected-component-area)** <br></br>Any component that is disconnected from the main mesh which has an area (in meters^2) less than disconnected_component_area will be removed. The maximum area is limited to 2 square meters, and the area needs to exist fully within a mesh block boundary without skirt.  |
 
 ## Detailed Description
 

@@ -14,7 +14,7 @@ tags: [Unity, Examples, Samples, XR Interaction Toolkit, Media, Player]
 This example demonstrates and prescribes preferred methods for using the Media Player API to render a standard monoscopic video as well as side-by-side or over-under stereoscopic videos. The standard video will be streamed from an Internet source and the two stereoscopic videos will play and loop automatically. Only one video will play at a time, user can cycle through the different media with the controller's bumper button.
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
 ### Notes

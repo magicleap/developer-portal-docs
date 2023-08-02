@@ -17,7 +17,7 @@ When the error or info type is track specific, it has the following layout: The 
 
 ## Public Methods
 
-### [MLMediaRecorderOnInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings.MLMediaRecorderOnInfo.md) Create {#mlmediarecorderoninfo-create}
+### [MLMediaRecorderOnInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings.MLMediaRecorderOnInfo.md) Create {#mlmediarecorderoninfo-create}
 
 Create and return an initialized version of this struct. 
 

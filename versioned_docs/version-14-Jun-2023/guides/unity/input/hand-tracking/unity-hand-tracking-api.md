@@ -11,14 +11,14 @@ This section provides information on the core Hand Tracking API and how to enabl
 
 :::caution
 
-This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
+This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md).
 
 :::
 
 
 :::info Gestures
 
-To obtain gesture data, see the in the [Gesture Classification API](docs/guides/unity/input/gesture-classification/unity-gesture-classification-overview.md)
+To obtain gesture data, see the in the [Gesture Classification API](docs/versioned_docs/version-14-Jun-2023/guides/unity/input/gesture-classification/unity-gesture-classification-overview.md)
 
 :::
 

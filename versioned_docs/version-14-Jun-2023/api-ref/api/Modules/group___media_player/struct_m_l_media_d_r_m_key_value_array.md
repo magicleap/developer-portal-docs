@@ -5,7 +5,7 @@ title: MLMediaDRMKeyValueArray
 
 # MLMediaDRMKeyValueArray
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLMediaDRMKeyValueArray
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * | **[ptr](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#mlmediadrmkeyvalue-ptr)**  |
-| size_t | **[length](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#size-t-length)**  |
-| size_t | **[index](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#size-t-index)**  |
+| [MLMediaDRMKeyValue](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * | **[ptr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#mlmediadrmkeyvalue-ptr)**  |
+| size_t | **[length](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#size-t-length)**  |
+| size_t | **[index](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#size-t-index)**  |
 
 ## Detailed Description
 
@@ -60,7 +60,7 @@ size_t length;
 ```
 
 
-Length of [ptr](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#mlmediadrmkeyvalue-ptr). 
+Length of [ptr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md#mlmediadrmkeyvalue-ptr). 
 
 
 

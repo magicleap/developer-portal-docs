@@ -11,7 +11,7 @@ title: Renderer
 
 
 
-Inherits from: <br></br>[YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md),<br></br>[IHardwareBufferProvider](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.IHardwareBufferProvider.md),<br></br>[IFrameTransformMatrixProvider](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.IFrameTransformMatrixProvider.md)
+Inherits from: <br></br>[YcbcrRenderer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md),<br></br>[IHardwareBufferProvider](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.IHardwareBufferProvider.md),<br></br>[IFrameTransformMatrixProvider](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.IFrameTransformMatrixProvider.md)
 
 
 

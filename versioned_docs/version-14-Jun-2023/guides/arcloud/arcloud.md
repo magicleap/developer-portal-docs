@@ -16,7 +16,7 @@ AR Cloud is a connected service that allows Magic Leap 2 devices to access large
 :::info Licensing
 See our guide on required licensing to be able to use AR Cloud on your device(s):
 
-[AR Cloud Licensing](/docs/guides/arcloud/arcloud-licenses)
+[AR Cloud Licensing](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/arcloud/arcloud-licenses)
 :::
 
 ## Benefits
@@ -24,7 +24,7 @@ See our guide on required licensing to be able to use AR Cloud on your device(s)
 AR Cloud allows users to go beyond the limitations of their Magic Leap 2 devices. The following features help enhance a user’s Magic Leap 2 experience:
 - Co-present experiences – allows multiple users to experience the same digital content in the same place through shared maps and their spatial anchors.
 - Large spatial maps (>10,000m<sup>2</sup>) – without AR Cloud, each device has a limit of five Local Spaces of ~250m<sup>2</sup>.
-- Device access to an unlimited amount of [Spaces](/docs/guides/features/spaces/spaces-tool) – Magic Leap 2 devices can gain unlimited access to shared Spaces, as opposed to the 5 stored locally.
+- Device access to an unlimited amount of [Spaces](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/spaces/spaces-tool) – Magic Leap 2 devices can gain unlimited access to shared Spaces, as opposed to the 5 stored locally.
 - Textured mesh exports – export textured mesh scans of your Space in USD file format.
 
 ## Getting Started

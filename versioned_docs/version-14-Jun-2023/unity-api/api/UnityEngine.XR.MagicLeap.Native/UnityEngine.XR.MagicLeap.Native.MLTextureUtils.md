@@ -9,7 +9,7 @@ summary: class containing utility functions to convert unity texture to magic le
 
 
 **NameSpace:** 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) 
 
 
 Class containing utility functions to convert Unity Texture to  Magic Leap  OS compatible data structures.   

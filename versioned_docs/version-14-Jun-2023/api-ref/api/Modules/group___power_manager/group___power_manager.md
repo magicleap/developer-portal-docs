@@ -12,66 +12,66 @@ Power Manager provides a set of power management APIs that allow applications to
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md)** <br></br>A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  |
-| union | **[MLPowerManagerComponentProperty.__unnamed__](/api-ref/api/Modules/group___power_manager/union_m_l_power_manager_component_property_8____unnamed____.md)**  |
-| struct | **[MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md)** <br></br>A structure to encapsulate output data when getting the current properties.  |
-| struct | **[MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md)** <br></br>A structure to encapsulate output data when getting a component's available property types.  |
-| struct | **[MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md)** <br></br>A structure to encapsulate information used by the Power Manager when getting the available property types.  |
-| struct | **[MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current properties.  |
-| struct | **[MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md)** <br></br>A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed.  |
-| struct | **[MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current power state.  |
-| struct | **[MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md)** <br></br>A structure to encapsulate output data when either getting available power states, or the current power state.  |
-| struct | **[MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md)** <br></br>A structure containing Power Manager callback events. Individual callbacks which are not required by the Power Manager can be NULL.  |
+| struct | **[MLPowerManagerComponentProperty](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md)** <br></br>A structure to encapsulate the data for each [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  |
+| union | **[MLPowerManagerComponentProperty.__unnamed__](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/union_m_l_power_manager_component_property_8____unnamed____.md)**  |
+| struct | **[MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md)** <br></br>A structure to encapsulate output data when getting the current properties.  |
+| struct | **[MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md)** <br></br>A structure to encapsulate output data when getting a component's available property types.  |
+| struct | **[MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md)** <br></br>A structure to encapsulate information used by the Power Manager when getting the available property types.  |
+| struct | **[MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current properties.  |
+| struct | **[MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md)** <br></br>A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed.  |
+| struct | **[MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current power state.  |
+| struct | **[MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md)** <br></br>A structure to encapsulate output data when either getting available power states, or the current power state.  |
+| struct | **[MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md)** <br></br>A structure containing Power Manager callback events. Individual callbacks which are not required by the Power Manager can be NULL.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) | **[MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagercomponentproperty)** <br></br>A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  |
-| typedef struct [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) | **[MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertydata)** <br></br>A structure to encapsulate output data when getting the current properties.  |
-| typedef struct [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) | **[MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertytypedata)** <br></br>A structure to encapsulate output data when getting a component's available property types.  |
-| typedef struct [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) | **[MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertytypeinfo)** <br></br>A structure to encapsulate information used by the Power Manager when getting the available property types.  |
-| typedef struct [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) | **[MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertyinfo)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current properties.  |
-| typedef struct [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) | **[MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpowerstatesettings)** <br></br>A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed.  |
-| typedef struct [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) | **[MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpowerstateinfo)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current power state.  |
-| typedef struct [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) | **[MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpowerstatedata)** <br></br>A structure to encapsulate output data when either getting available power states, or the current power state.  |
-| typedef struct [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) | **[MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagercallbacks)** <br></br>A structure containing Power Manager callback events. Individual callbacks which are not required by the Power Manager can be NULL.  |
+| typedef struct [MLPowerManagerComponentProperty](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md) | **[MLPowerManagerComponentProperty](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagercomponentproperty)** <br></br>A structure to encapsulate the data for each [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype).  |
+| typedef struct [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) | **[MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertydata)** <br></br>A structure to encapsulate output data when getting the current properties.  |
+| typedef struct [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) | **[MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertytypedata)** <br></br>A structure to encapsulate output data when getting a component's available property types.  |
+| typedef struct [MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) | **[MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertytypeinfo)** <br></br>A structure to encapsulate information used by the Power Manager when getting the available property types.  |
+| typedef struct [MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) | **[MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpropertyinfo)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current properties.  |
+| typedef struct [MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) | **[MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpowerstatesettings)** <br></br>A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed.  |
+| typedef struct [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) | **[MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpowerstateinfo)** <br></br>A structure to encapsulate info data used by the Power Manager when getting the current power state.  |
+| typedef struct [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) | **[MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagerpowerstatedata)** <br></br>A structure to encapsulate output data when either getting available power states, or the current power state.  |
+| typedef struct [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) | **[MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#struct-mlpowermanagercallbacks)** <br></br>A structure containing Power Manager callback events. Individual callbacks which are not required by the Power Manager can be NULL.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 23](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-anonymous-enum-23)** <br></br> { <br></br>[MLResultAPIPrefix_PowerManager](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlresultapiprefix-powermanager) = ( 0x4c8a  << 16)<br></br>} |
-| enum | **[MLPowerManagerResult](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult)** <br></br> { <br></br>[MLPowerManagerResult_NotConnected](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-notconnected) = MLResultAPIPrefix_PowerManager,<br></br> [MLPowerManagerResult_InvalidStateTransition](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-invalidstatetransition),<br></br> [MLPowerManagerResult_StateTransitionsDisabled](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-statetransitionsdisabled),<br></br> [MLPowerManagerResult_UnsupportedState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-unsupportedstate),<br></br> [MLPowerManagerResult_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager specific return codes.  |
-| enum | **[MLPowerManagerComponent](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent)** <br></br> { <br></br>[MLPowerManagerComponent_None](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-none) = 0,<br></br> [MLPowerManagerComponent_Controller](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-controller) = 1,<br></br> [MLPowerManagerComponent_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Represents the different components which can be accessed/controlled using the Power Manager.  |
-| enum | **[MLPowerManagerError](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror)** <br></br> { <br></br>[MLPowerManagerError_InvalidSKU](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror-invalidsku) = 0,<br></br> [MLPowerManagerError_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager error codes.  |
-| enum | **[MLPowerManagerPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate)** <br></br> { <br></br>[MLPowerManagerPowerState_None](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-none) = 0,<br></br> [MLPowerManagerPowerState_Normal](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-normal) = 1,<br></br> [MLPowerManagerPowerState_DisabledWhileCharging](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-disabledwhilecharging) = 2,<br></br> [MLPowerManagerPowerState_Standby](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-standby) = 3,<br></br> [MLPowerManagerPowerState_Sleep](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-sleep) = 4,<br></br> [MLPowerManagerPowerState_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power states. Query [MLPowerManagerGetAvailablePowerStates()](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates) to determine which power state is available for each component.  |
-| enum | **[MLPowerManagerChargingState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate)** <br></br> { <br></br>[MLPowerManagerChargingState_NotCharging](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate-notcharging) = 0,<br></br> [MLPowerManagerChargingState_ChargingNormally](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate-chargingnormally) = 1,<br></br> [MLPowerManagerChargingState_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager charging states.  |
-| enum | **[MLPowerManagerConnectionState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate)** <br></br> { <br></br>[MLPowerManagerConnectionState_Connected](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate-connected) = 0,<br></br> [MLPowerManagerConnectionState_Disconnected](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate-disconnected) = 1,<br></br> [MLPowerManagerConnectionState_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Connection state of the component.  |
-| enum | **[MLPowerManagerBatteryInfo](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo)** <br></br> { <br></br>[MLPowerManagerBatteryInfo_OK](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-ok) = 0,<br></br> [MLPowerManagerBatteryInfo_BatteryLow](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-batterylow) = 1,<br></br> [MLPowerManagerBatteryInfo_BatteryCritical](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-batterycritical) = 2,<br></br> [MLPowerManagerBatteryInfo_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Battery info/warning codes.  |
-| enum | **[MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype)** <br></br> { <br></br>[MLPowerManagerPropertyType_BatteryInfo](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-batteryinfo) = 0,<br></br> [MLPowerManagerPropertyType_BatteryLevel](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-batterylevel) = 1,<br></br> [MLPowerManagerPropertyType_ChargingState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-chargingstate) = 2,<br></br> [MLPowerManagerPropertyType_ConnectionState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-connectionstate) = 3,<br></br> [MLPowerManagerPropertyType_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component.  |
+| enum | **[Anonymous Enum 23](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-anonymous-enum-23)** <br></br> { <br></br>[MLResultAPIPrefix_PowerManager](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlresultapiprefix-powermanager) = ( 0x4c8a  << 16)<br></br>} |
+| enum | **[MLPowerManagerResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult)** <br></br> { <br></br>[MLPowerManagerResult_NotConnected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-notconnected) = MLResultAPIPrefix_PowerManager,<br></br> [MLPowerManagerResult_InvalidStateTransition](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-invalidstatetransition),<br></br> [MLPowerManagerResult_StateTransitionsDisabled](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-statetransitionsdisabled),<br></br> [MLPowerManagerResult_UnsupportedState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-unsupportedstate),<br></br> [MLPowerManagerResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager specific return codes.  |
+| enum | **[MLPowerManagerComponent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent)** <br></br> { <br></br>[MLPowerManagerComponent_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-none) = 0,<br></br> [MLPowerManagerComponent_Controller](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-controller) = 1,<br></br> [MLPowerManagerComponent_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Represents the different components which can be accessed/controlled using the Power Manager.  |
+| enum | **[MLPowerManagerError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror)** <br></br> { <br></br>[MLPowerManagerError_InvalidSKU](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror-invalidsku) = 0,<br></br> [MLPowerManagerError_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager error codes.  |
+| enum | **[MLPowerManagerPowerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate)** <br></br> { <br></br>[MLPowerManagerPowerState_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-none) = 0,<br></br> [MLPowerManagerPowerState_Normal](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-normal) = 1,<br></br> [MLPowerManagerPowerState_DisabledWhileCharging](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-disabledwhilecharging) = 2,<br></br> [MLPowerManagerPowerState_Standby](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-standby) = 3,<br></br> [MLPowerManagerPowerState_Sleep](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-sleep) = 4,<br></br> [MLPowerManagerPowerState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpowerstate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power states. Query [MLPowerManagerGetAvailablePowerStates()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates) to determine which power state is available for each component.  |
+| enum | **[MLPowerManagerChargingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate)** <br></br> { <br></br>[MLPowerManagerChargingState_NotCharging](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate-notcharging) = 0,<br></br> [MLPowerManagerChargingState_ChargingNormally](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate-chargingnormally) = 1,<br></br> [MLPowerManagerChargingState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerchargingstate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager charging states.  |
+| enum | **[MLPowerManagerConnectionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate)** <br></br> { <br></br>[MLPowerManagerConnectionState_Connected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate-connected) = 0,<br></br> [MLPowerManagerConnectionState_Disconnected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate-disconnected) = 1,<br></br> [MLPowerManagerConnectionState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerconnectionstate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Connection state of the component.  |
+| enum | **[MLPowerManagerBatteryInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo)** <br></br> { <br></br>[MLPowerManagerBatteryInfo_OK](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-ok) = 0,<br></br> [MLPowerManagerBatteryInfo_BatteryLow](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-batterylow) = 1,<br></br> [MLPowerManagerBatteryInfo_BatteryCritical](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-batterycritical) = 2,<br></br> [MLPowerManagerBatteryInfo_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerbatteryinfo-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Battery info/warning codes.  |
+| enum | **[MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype)** <br></br> { <br></br>[MLPowerManagerPropertyType_BatteryInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-batteryinfo) = 0,<br></br> [MLPowerManagerPropertyType_BatteryLevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-batterylevel) = 1,<br></br> [MLPowerManagerPropertyType_ChargingState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-chargingstate) = 2,<br></br> [MLPowerManagerPropertyType_ConnectionState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-connectionstate) = 3,<br></br> [MLPowerManagerPropertyType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLPowerManagerPropertyTypeInfoInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertytypeinfoinit)**([MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * inout_property_type_info)<br></br>Initializes the default values for [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md).  |
-| void | **[MLPowerManagerPropertyInfoInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertyinfoinit)**([MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * inout_property_info)<br></br>Initializes the default values for [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md).  |
-| void | **[MLPowerManagerPowerStateSettingsInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstatesettingsinit)**([MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * inout_power_settings)<br></br>Initializes the default values for [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md).  |
-| void | **[MLPowerManagerPowerStateInfoInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstateinfoinit)**([MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * inout_power_info)<br></br>Initializes the default values for [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md).  |
-| void | **[MLPowerManagerCallbacksInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagercallbacksinit)**([MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * inout_cb)<br></br>Initializes the default values for [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerCreate](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagercreate)**([MLPowerManagerComponent](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent) component, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a Power Manager handle for a specified component.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerDestroy](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a Power Manager handle.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerSetCallbacks](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * cb, void * user_data)<br></br>Register Power Manager callbacks for a specific handle.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerSetPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetpowerstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * settings)<br></br>Sets the power state of a component. The new power state of a component will persist if the application loses focus, or exits.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetComponentProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * in_info, [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * out_properties)<br></br>Gets the power manager properties of a component.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerReleasePropertyData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertydata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * properties)<br></br>Releases specified [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetAvailablePowerStates](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * in_info, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * out_states)<br></br>Query available power states for a component.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetpowerstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * in_info, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * out_state)<br></br>Gets the power state of a component.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerReleasePowerStateData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * power_states)<br></br>Releases specified [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetAvailableProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * in_info, [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * out_properties)<br></br>Request a list of the available [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerReleasePropertyTypeData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertytypedata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * properties)<br></br>Releases specified [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md).  |
-| const char * | **[MLPowerManagerGetResultString](/api-ref/api/Modules/group___power_manager/group___power_manager.md#const-char-mlpowermanagergetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string for each result code.  |
+| void | **[MLPowerManagerPropertyTypeInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertytypeinfoinit)**([MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * inout_property_type_info)<br></br>Initializes the default values for [MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md).  |
+| void | **[MLPowerManagerPropertyInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertyinfoinit)**([MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * inout_property_info)<br></br>Initializes the default values for [MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md).  |
+| void | **[MLPowerManagerPowerStateSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstatesettingsinit)**([MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * inout_power_settings)<br></br>Initializes the default values for [MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md).  |
+| void | **[MLPowerManagerPowerStateInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstateinfoinit)**([MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * inout_power_info)<br></br>Initializes the default values for [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md).  |
+| void | **[MLPowerManagerCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagercallbacksinit)**([MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * inout_cb)<br></br>Initializes the default values for [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagercreate)**([MLPowerManagerComponent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent) component, [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a Power Manager handle for a specified component.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a Power Manager handle.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerSetCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * cb, void * user_data)<br></br>Register Power Manager callbacks for a specific handle.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerSetPowerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetpowerstate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * settings)<br></br>Sets the power state of a component. The new power state of a component will persist if the application loses focus, or exits.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetComponentProperties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * in_info, [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * out_properties)<br></br>Gets the power manager properties of a component.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerReleasePropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertydata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * properties)<br></br>Releases specified [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetAvailablePowerStates](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * in_info, [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * out_states)<br></br>Query available power states for a component.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetPowerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetpowerstate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * in_info, [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * out_state)<br></br>Gets the power state of a component.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerReleasePowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * power_states)<br></br>Releases specified [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerGetAvailableProperties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * in_info, [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * out_properties)<br></br>Request a list of the available [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPowerManagerReleasePropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertytypedata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * properties)<br></br>Releases specified [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md).  |
+| const char * | **[MLPowerManagerGetResultString](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#const-char-mlpowermanagergetresultstring)**([MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result_code)<br></br>Returns an ASCII string for each result code.  |
 
 ## Detailed Description
 
@@ -190,7 +190,7 @@ Power Manager error codes.
 
 
 
-Power states. Query [MLPowerManagerGetAvailablePowerStates()](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates) to determine which power state is available for each component. 
+Power states. Query [MLPowerManagerGetAvailablePowerStates()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates) to determine which power state is available for each component. 
 
 
 | Component  | Power State  | Description  |
@@ -293,7 +293,7 @@ Battery info/warning codes.
 
 
 
-Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component. 
+Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties) to determine which Power Manager properties are available for each component. 
 
 
 
@@ -315,11 +315,11 @@ Power Manager property types. Query [MLPowerManagerGetAvailableProperties()](/ap
 typedef struct MLPowerManagerComponentProperty MLPowerManagerComponentProperty;
 ```
 
-A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype). 
+A structure to encapsulate the data for each [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype). 
 
 This struct and union is used as a flexible way for each component to output an array containing distinct types of data.
 
-The below code shows how a Controller could output battery_info, battery_level, charging_state or connection_state. Where data is an instance of [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) returned from [MLPowerManagerGetComponentProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties). 
+The below code shows how a Controller could output battery_info, battery_level, charging_state or connection_state. Where data is an instance of [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) returned from [MLPowerManagerGetComponentProperties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties). 
 
 ```cpp
 auto properties = data.properties;
@@ -346,7 +346,7 @@ auto properties = data.properties;
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md)
 
 
 **API Level:**
@@ -367,7 +367,7 @@ A structure to encapsulate output data when getting the current properties.
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md)
 
 
 **API Level:**
@@ -388,7 +388,7 @@ A structure to encapsulate output data when getting a component's available prop
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md)
 
 
 **API Level:**
@@ -407,11 +407,11 @@ typedef struct MLPowerManagerPropertyTypeInfo MLPowerManagerPropertyTypeInfo;
 
 A structure to encapsulate information used by the Power Manager when getting the available property types. 
 
-This structure must be initialized by calling [MLPowerManagerPropertyTypeInfoInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertytypeinfoinit) before use.
+This structure must be initialized by calling [MLPowerManagerPropertyTypeInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertytypeinfoinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md)
 
 
 **API Level:**
@@ -430,11 +430,11 @@ typedef struct MLPowerManagerPropertyInfo MLPowerManagerPropertyInfo;
 
 A structure to encapsulate info data used by the Power Manager when getting the current properties. 
 
-This structure must be initialized by calling [MLPowerManagerPropertyInfoInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertyinfoinit) before use.
+This structure must be initialized by calling [MLPowerManagerPropertyInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertyinfoinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md)
 
 
 **API Level:**
@@ -453,11 +453,11 @@ typedef struct MLPowerManagerPowerStateSettings MLPowerManagerPowerStateSettings
 
 A structure to encapsulate settings used by the Power Manager when requesting the power state to be changed. 
 
-This structure must be initialized by calling [MLPowerManagerPowerStateSettingsInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstatesettingsinit) before use.
+This structure must be initialized by calling [MLPowerManagerPowerStateSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstatesettingsinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md)
 
 
 **API Level:**
@@ -476,11 +476,11 @@ typedef struct MLPowerManagerPowerStateInfo MLPowerManagerPowerStateInfo;
 
 A structure to encapsulate info data used by the Power Manager when getting the current power state. 
 
-This structure must be initialized by calling [MLPowerManagerPowerStateInfoInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstateinfoinit) before use.
+This structure must be initialized by calling [MLPowerManagerPowerStateInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpowerstateinfoinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md)
 
 
 **API Level:**
@@ -501,7 +501,7 @@ A structure to encapsulate output data when either getting available power state
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md)
 
 
 **API Level:**
@@ -522,7 +522,7 @@ A structure containing Power Manager callback events. Individual callbacks which
 
 
 
-[More Info](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md)
 
 
 **API Level:**
@@ -544,13 +544,13 @@ static inline void MLPowerManagerPropertyTypeInfoInit(
 )
 ```
 
-Initializes the default values for [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md). 
+Initializes the default values for [MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * |inout_property_type_info|The object to initialize with default values. |
+| [MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * |inout_property_type_info|The object to initialize with default values. |
 
 
 
@@ -570,13 +570,13 @@ static inline void MLPowerManagerPropertyInfoInit(
 )
 ```
 
-Initializes the default values for [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md). 
+Initializes the default values for [MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * |inout_property_info|The object to initialize with default values. |
+| [MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * |inout_property_info|The object to initialize with default values. |
 
 
 
@@ -596,13 +596,13 @@ static inline void MLPowerManagerPowerStateSettingsInit(
 )
 ```
 
-Initializes the default values for [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md). 
+Initializes the default values for [MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * |inout_power_settings|The object to initialize with default values. |
+| [MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * |inout_power_settings|The object to initialize with default values. |
 
 
 
@@ -622,13 +622,13 @@ static inline void MLPowerManagerPowerStateInfoInit(
 )
 ```
 
-Initializes the default values for [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md). 
+Initializes the default values for [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * |inout_power_info|The object to initialize with default values. |
+| [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * |inout_power_info|The object to initialize with default values. |
 
 
 
@@ -648,13 +648,13 @@ static inline void MLPowerManagerCallbacksInit(
 )
 ```
 
-Initializes the default values for [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md). 
+Initializes the default values for [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * |inout_cb|The object to initialize with default values. |
+| [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * |inout_cb|The object to initialize with default values. |
 
 
 
@@ -681,23 +681,23 @@ Creates a Power Manager handle for a specified component.
 
 |  |   |   |
 |--|--|--|
-| [MLPowerManagerComponent](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent) |component|The component specific to the handle to be created. |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The handle to be created.|
+| [MLPowerManagerComponent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent) |component|The component specific to the handle to be created. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|The handle to be created.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MlResult_HandleExists|Handle for this component already exists. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Power Manager handle was successfully created. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Power Manager handle failed to be created.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MlResult_HandleExists|Handle for this component already exists. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Power Manager handle was successfully created. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Power Manager handle failed to be created.|
 **Required Permissions**:
 
   * none 
 
 
-In a single application multiple calls to this API method, for the same component type will return a new handle each time. The handle is valid until [MLPowerManagerDestroy](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerdestroy) for that specific handle is called.
+In a single application multiple calls to this API method, for the same component type will return a new handle each time. The handle is valid until [MLPowerManagerDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerdestroy) for that specific handle is called.
 
 
 
@@ -724,14 +724,14 @@ Destroys a Power Manager handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The Power Manager handle for a specific component to be destroyed.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|The Power Manager handle for a specific component to be destroyed.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed handle was invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Power Manager handle was successfully destroyed.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed handle was invalid. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Power Manager handle was successfully destroyed.|
 **Required Permissions**:
 
   * None 
@@ -764,23 +764,23 @@ Register Power Manager callbacks for a specific handle.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to set [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) for. |
-| [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * |cb|Callbacks to receive Power Manager events. Set this to NULL to unregister callbacks. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to set [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) for. |
+| [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) * |cb|Callbacks to receive Power Manager events. Set this to NULL to unregister callbacks. |
 | void * |user_data|The caller can pass in user context data that will be returned in the callback (can be NULL).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The callbacks have been registered. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The callbacks have been registered. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
 
 
-The [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) structure can be set for each handle, whether those handles are for the same or different component types.
+The [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) structure can be set for each handle, whether those handles are for the same or different component types.
 
 
 
@@ -808,21 +808,21 @@ Sets the power state of a component. The new power state of a component will per
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to set power state for. |
-| const [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * |settings|Settings used by the Power Manager updating a component's power state.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to set power state for. |
+| const [MLPowerManagerPowerStateSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) * |settings|Settings used by the Power Manager updating a component's power state.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|The component does not support the requested power state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_InvalidStateTransition|The component does not support transitioning to the requested state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_NotConnected|The component is not connected. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The power state of the controller was set successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_StateTransitionsDisabled|The component currently does not support transitioning to a different state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_UnsupportedState|The component does not support the requested power state.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_IllegalState|The component does not support the requested power state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_InvalidStateTransition|The component does not support transitioning to the requested state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_NotConnected|The component is not connected. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The power state of the controller was set successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_StateTransitionsDisabled|The component currently does not support transitioning to a different state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_UnsupportedState|The component does not support the requested power state.|
 **Required Permissions**:
 
   * None
@@ -855,18 +855,18 @@ Gets the power manager properties of a component.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get properties of. |
-| const [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * |in_info|[MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) struct filled with information about the power manager properties of a component to request. |
-| [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * |out_properties|Information about the properties of a component. Must be released using [MLPowerManagerReleasePropertyData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertydata) after each successful call.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get properties of. |
+| const [MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) * |in_info|[MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) struct filled with information about the power manager properties of a component to request. |
+| [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * |out_properties|Information about the properties of a component. Must be released using [MLPowerManagerReleasePropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertydata) after each successful call.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The property of the controller was retrieved successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The property of the controller was retrieved successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None
@@ -892,28 +892,28 @@ MLResult MLPowerManagerReleasePropertyData(
 )
 ```
 
-Releases specified [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md). 
+Releases specified [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component relating to [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md). |
-| [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * |properties|Pointer to a [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) returned from [MLPowerManagerGetComponentProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component relating to [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md). |
+| [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) * |properties|Pointer to a [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) returned from [MLPowerManagerGetComponentProperties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|properties parameter was not valid (NULL). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released [MLPowerManagerPropertyData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|properties parameter was not valid (NULL). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
 **Required Permissions**:
 
   * None 
 
 
-This function should be called exactly once for each successful call to [MLPowerManagerGetComponentProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties).
+This function should be called exactly once for each successful call to [MLPowerManagerGetComponentProperties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties).
 
 
 
@@ -937,18 +937,18 @@ Query available power states for a component.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get list of all available power states for. |
-| const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * |in_info|[MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) struct filled with data to be used by the Power Manager when requesting/receiving all available power states. |
-| [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * |out_states|[MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) holding list of available power states. Must be released using [MLPowerManagerReleasePowerStateData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata) after each successful call.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get list of all available power states for. |
+| const [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * |in_info|[MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) struct filled with data to be used by the Power Manager when requesting/receiving all available power states. |
+| [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * |out_states|[MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) holding list of available power states. Must be released using [MLPowerManagerReleasePowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata) after each successful call.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Query completed and out_states has been populated. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Query completed and out_states has been populated. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -981,18 +981,18 @@ Gets the power state of a component.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get power state from. |
-| const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * |in_info|[MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) struct filled with data to be used by the Power Manager when requesting/receiving power state. |
-| [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * |power_state|[MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) with the current power state. Must be released using [MLPowerManagerReleasePowerStateData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata) after each successful call.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get power state from. |
+| const [MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) * |in_info|[MLPowerManagerPowerStateInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) struct filled with data to be used by the Power Manager when requesting/receiving power state. |
+| [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * |power_state|[MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) with the current power state. Must be released using [MLPowerManagerReleasePowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata) after each successful call.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_NotConnected|The component is not connected. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The power state of the controller was retrieved successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLPowerManagerResult_NotConnected|The component is not connected. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The power state of the controller was retrieved successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None
@@ -1018,28 +1018,28 @@ MLResult MLPowerManagerReleasePowerStateData(
 )
 ```
 
-Releases specified [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md). 
+Releases specified [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component relating to [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md). |
-| [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * |power_states|Pointer to a [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component relating to [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md). |
+| [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) * |power_states|Pointer to a [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|power_states parameter was not valid (NULL). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released [MLPowerManagerPowerStateData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|power_states parameter was not valid (NULL). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
 **Required Permissions**:
 
   * None 
 
 
-This function should be called exactly once for each successful call to [MLPowerManagerGetAvailablePowerStates](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates).
+This function should be called exactly once for each successful call to [MLPowerManagerGetAvailablePowerStates](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates).
 
 
 
@@ -1057,24 +1057,24 @@ MLResult MLPowerManagerGetAvailableProperties(
 )
 ```
 
-Request a list of the available [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype). 
+Request a list of the available [MLPowerManagerPropertyType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get properties from. |
-| const [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * |in_info|[MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) struct filled with data to be used by the Power Manager when requesting/receiving available property types. |
-| [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * |out_properties|Information about the properties of a component. Must be released using [MLPowerManagerReleasePropertyTypeData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertytypedata) after each successful call.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component to get properties from. |
+| const [MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) * |in_info|[MLPowerManagerPropertyTypeInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) struct filled with data to be used by the Power Manager when requesting/receiving available property types. |
+| [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * |out_properties|Information about the properties of a component. Must be released using [MLPowerManagerReleasePropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertytypedata) after each successful call.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Query completed and out_properties has been populated. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed due to memory allocation failure. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Query completed and out_properties has been populated. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -1100,28 +1100,28 @@ MLResult MLPowerManagerReleasePropertyTypeData(
 )
 ```
 
-Releases specified [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md). 
+Releases specified [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component relating to [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md). |
-| [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * |properties|Pointer to a [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Power Manager handle for component relating to [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md). |
+| [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) * |properties|Pointer to a [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|properties parameter was not valid (NULL). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully [MLPowerManagerPropertyTypeData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|properties parameter was not valid (NULL). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to internal error.|
 **Required Permissions**:
 
   * None 
 
 
-This function should be called exactly once for each successful call to [MLPowerManagerGetAvailableProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties).
+This function should be called exactly once for each successful call to [MLPowerManagerGetAvailableProperties](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties).
 
 
 
@@ -1143,7 +1143,7 @@ Returns an ASCII string for each result code.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result_code|[MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) to select the result code. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result_code|[MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) to select the result code. |
 
 **Returns**
 

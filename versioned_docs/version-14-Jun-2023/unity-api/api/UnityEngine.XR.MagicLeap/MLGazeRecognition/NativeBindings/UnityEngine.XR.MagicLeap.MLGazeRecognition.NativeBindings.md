@@ -12,14 +12,14 @@ summary: see ml-gaze-recognition.h for additional comments.
 See ml&#95;gaze&#95;recognition.h for additional comments.   
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionCreate {#mlresultcode-mlgazerecognitioncreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionCreate {#mlresultcode-mlgazerecognitioncreate}
 
 Create Gaze Recognition. 
 
@@ -47,7 +47,7 @@ public MLResult.Code MLGazeRecognitionCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionDestroy {#mlresultcode-mlgazerecognitiondestroy}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionDestroy {#mlresultcode-mlgazerecognitiondestroy}
 
 Destroy Gaze Recognition. 
 
@@ -75,7 +75,7 @@ public MLResult.Code MLGazeRecognitionDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetState {#mlresultcode-mlgazerecognitiongetstate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetState {#mlresultcode-mlgazerecognitiongetstate}
 
 Get information about the user's gaze. 
 
@@ -92,7 +92,7 @@ public MLResult.Code MLGazeRecognitionGetState(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle|A handle to Gaze Recognition created byvMLGazeRecognitionCreate().|
-| ref [MLGazeRecognitionState](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.MLGazeRecognitionState.md) |state|Information about the gaze.|
+| ref [MLGazeRecognitionState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.MLGazeRecognitionState.md) |state|Information about the gaze.|
 
 
 
@@ -105,7 +105,7 @@ public MLResult.Code MLGazeRecognitionGetState(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetStaticData {#mlresultcode-mlgazerecognitiongetstaticdata}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetStaticData {#mlresultcode-mlgazerecognitiongetstaticdata}
 
 Get static information about Gaze Recognition. 
 
@@ -122,7 +122,7 @@ public MLResult.Code MLGazeRecognitionGetStaticData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle|A handle to Gaze Recognition created by MLGazeRecognitionCreate().|
-| ref [MLGazeRecognitionStaticData](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.MLGazeRecognitionStaticData.md) |data|Target to populate the data about Gaze Recognition..|
+| ref [MLGazeRecognitionStaticData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.MLGazeRecognitionStaticData.md) |data|Target to populate the data about Gaze Recognition..|
 
 
 

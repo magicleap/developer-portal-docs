@@ -50,7 +50,7 @@ public FourCC typeStatic { get; set; }
 
 ## Public Methods
 
-### [QueryEyesEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryEyesEnabled.md) Create {#queryeyesenabled-create}
+### [QueryEyesEnabled](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryEyesEnabled.md) Create {#queryeyesenabled-create}
 
 ```csharp
 public static QueryEyesEnabled Create()

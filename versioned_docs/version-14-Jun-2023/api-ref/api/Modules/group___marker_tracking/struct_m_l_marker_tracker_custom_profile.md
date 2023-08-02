@@ -6,7 +6,7 @@ summary: marker tracker custom profile.
 
 # MLMarkerTrackerCustomProfile
 
-**Module:** **[Fiducial Marker Tracking](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
+**Module:** **[Fiducial Marker Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
 
 
 
@@ -19,12 +19,12 @@ Marker Tracker Custom Profile.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMarkerTrackingFpsHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint) | **[fps_hint](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackingfpshint-fps-hint)** <br></br>Framerate hint used for all detectors. See [MLMarkerTrackingFpsHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingfpshint) for details.  |
-| [MLMarkerTrackingResolutionHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint) | **[resolution_hint](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackingresolutionhint-resolution-hint)** <br></br>The resolution hint. See [MLMarkerTrackingResolutionHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingresolutionhint) for details.  |
-| [MLMarkerTrackerCameraHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercamerahint) | **[camera_hint](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackercamerahint-camera-hint)** <br></br>Camera hint used for all detectors. See [MLMarkerTrackerCameraHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackercamerahint) for details.  |
-| [MLMarkerTrackerCornerRefineMethod](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod) | **[corner_refine_method](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackercornerrefinemethod-corner-refine-method)** <br></br>Corner refinement method for Aruco/April tag detector.  |
-| bool | **[use_edge_refinement](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#bool-use-edge-refinement)** <br></br>Activate Edge Refinement. Run refinement step that uses marker edges to generate even more accurate corners, but slow down tracking rate overall by consuming more compute. Aruco/April tags only.  |
-| [MLMarkerTrackerFullAnalysisIntervalHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint) | **[full_analysis_interval_hint](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackerfullanalysisintervalhint-full-analysis-interval-hint)** <br></br>Time interval between fully analyzed frames.  |
+| [MLMarkerTrackingFpsHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint) | **[fps_hint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackingfpshint-fps-hint)** <br></br>Framerate hint used for all detectors. See [MLMarkerTrackingFpsHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingfpshint) for details.  |
+| [MLMarkerTrackingResolutionHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint) | **[resolution_hint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackingresolutionhint-resolution-hint)** <br></br>The resolution hint. See [MLMarkerTrackingResolutionHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingresolutionhint) for details.  |
+| [MLMarkerTrackerCameraHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercamerahint) | **[camera_hint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackercamerahint-camera-hint)** <br></br>Camera hint used for all detectors. See [MLMarkerTrackerCameraHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackercamerahint) for details.  |
+| [MLMarkerTrackerCornerRefineMethod](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod) | **[corner_refine_method](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackercornerrefinemethod-corner-refine-method)** <br></br>Corner refinement method for Aruco/April tag detector.  |
+| bool | **[use_edge_refinement](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#bool-use-edge-refinement)** <br></br>Activate Edge Refinement. Run refinement step that uses marker edges to generate even more accurate corners, but slow down tracking rate overall by consuming more compute. Aruco/April tags only.  |
+| [MLMarkerTrackerFullAnalysisIntervalHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint) | **[full_analysis_interval_hint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md#mlmarkertrackerfullanalysisintervalhint-full-analysis-interval-hint)** <br></br>Time interval between fully analyzed frames.  |
 
 ## Detailed Description
 
@@ -34,7 +34,7 @@ struct MLMarkerTrackerCustomProfile;
 
 Marker Tracker Custom Profile. 
 
-Marker Tracker system provides a set of standard tracking profiles (see [MLMarkerTrackerProfile](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackerprofile)) to configure the tracker settings. If this does not meet the application's needs then the application can choose to define a custom tracker profile using [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md). 
+Marker Tracker system provides a set of standard tracking profiles (see [MLMarkerTrackerProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackerprofile)) to configure the tracker settings. If this does not meet the application's needs then the application can choose to define a custom tracker profile using [MLMarkerTrackerCustomProfile](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md). 
 
 
 
@@ -49,12 +49,12 @@ Marker Tracker system provides a set of standard tracking profiles (see [MLMarke
 MLMarkerTrackingFpsHint fps_hint;
 ```
 
-Framerate hint used for all detectors. See [MLMarkerTrackingFpsHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingfpshint) for details. 
+Framerate hint used for all detectors. See [MLMarkerTrackingFpsHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingfpshint) for details. 
 
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackingFpsHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint) | Marker tracker FPS hint.  |
+| [MLMarkerTrackingFpsHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingfpshint) | Marker tracker FPS hint.  |
 
 
 
@@ -69,12 +69,12 @@ Framerate hint used for all detectors. See [MLMarkerTrackingFpsHint](/api-ref/ap
 MLMarkerTrackingResolutionHint resolution_hint;
 ```
 
-The resolution hint. See [MLMarkerTrackingResolutionHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingresolutionhint) for details. 
+The resolution hint. See [MLMarkerTrackingResolutionHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackingresolutionhint) for details. 
 
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackingResolutionHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint) | Marker tracker resolution hint.  |
+| [MLMarkerTrackingResolutionHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingresolutionhint) | Marker tracker resolution hint.  |
 
 
 
@@ -89,12 +89,12 @@ The resolution hint. See [MLMarkerTrackingResolutionHint](/api-ref/api/Modules/g
 MLMarkerTrackerCameraHint camera_hint;
 ```
 
-Camera hint used for all detectors. See [MLMarkerTrackerCameraHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackercamerahint) for details. 
+Camera hint used for all detectors. See [MLMarkerTrackerCameraHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackercamerahint) for details. 
 
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerCameraHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercamerahint) | Marker tracker camera hint.  |
+| [MLMarkerTrackerCameraHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercamerahint) | Marker tracker camera hint.  |
 
 
 
@@ -114,12 +114,12 @@ Corner refinement method for Aruco/April tag detector.
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerCornerRefineMethod](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod) | Corner Refinement Method.  |
+| [MLMarkerTrackerCornerRefineMethod](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackercornerrefinemethod) | Corner Refinement Method.  |
 
 
 This option provides control over corner refinement methods and a way to balance detection rate, speed and pose accuracy. Always available and applicable for Aruco and April tags.
 
-See [MLMarkerTrackerCornerRefineMethod](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackercornerrefinemethod) for details. 
+See [MLMarkerTrackerCornerRefineMethod](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enum-mlmarkertrackercornerrefinemethod) for details. 
 
 
 
@@ -156,7 +156,7 @@ Time interval between fully analyzed frames.
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackerFullAnalysisIntervalHint](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint) | Full Frame Analysis Time Interval.  |
+| [MLMarkerTrackerFullAnalysisIntervalHint](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackerfullanalysisintervalhint) | Full Frame Analysis Time Interval.  |
 
 
 For faster tracking not every single frame is fully analyzed. Increasing this time will improve tracking speed but negatively impact detection latency of new markers. 

@@ -6,7 +6,7 @@ summary: callbacks for notifying when an output frame is available for consumpti
 
 # MLMediaCodecOutputFrameListener
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ Callbacks for notifying when an output frame is available for consumption or has
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md#uint32-t-version)**  |
-| void(*)(MLHandle media_codec, const MLMediaCodecFrameRenderedInfo *info) | **[on_frame_rendered](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md#void-on-frame-rendered)** <br></br>This callback is invoked when an output frame has rendered on the output surface.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md#uint32-t-version)**  |
+| void(*)(MLHandle media_codec, const MLMediaCodecFrameRenderedInfo *info) | **[on_frame_rendered](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_output_frame_listener.md#void-on-frame-rendered)** <br></br>This callback is invoked when an output frame has rendered on the output surface.  |
 
 ## Detailed Description
 
@@ -78,8 +78,8 @@ This callback is invoked when an output frame has rendered on the output surface
 |  |media_codec|MLMediaCodec instance for which callback was called. |
 |  |presentation_time_us|The presentation time (media time) in microseconds of the frame rendered. |
 |  |system_time_nano|System time when the frame was rendered. |
-|  |info|Output Frame rendered info as [MLMediaCodecFrameRenderedInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_frame_rendered_info.md). |
-The presentation time (media time) of the frame rendered is is usually the same as specified in [MLMediaCodecQueueInputBuffer()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecqueueinputbuffer); however, some codecs may alter the media time by applying some time-based transformation, such as frame rate conversion. In that case, presentation time corresponds to the actual output frame rendered.
+|  |info|Output Frame rendered info as [MLMediaCodecFrameRenderedInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_frame_rendered_info.md). |
+The presentation time (media time) of the frame rendered is is usually the same as specified in [MLMediaCodecQueueInputBuffer()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecqueueinputbuffer); however, some codecs may alter the media time by applying some time-based transformation, such as frame rate conversion. In that case, presentation time corresponds to the actual output frame rendered.
 
 This callback is for informational purposes only: to get precise render timing samples, and can be significantly delayed and batched. Some frames may have been rendered even if there was no callback generated. This can be set to NULL if client is not interested in receiving this callback.
 

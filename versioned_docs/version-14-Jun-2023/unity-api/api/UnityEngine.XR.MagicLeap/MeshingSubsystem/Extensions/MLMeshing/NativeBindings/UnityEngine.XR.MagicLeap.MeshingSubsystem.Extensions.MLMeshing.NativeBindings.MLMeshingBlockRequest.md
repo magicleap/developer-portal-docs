@@ -28,7 +28,7 @@ public readonly MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
 
 | Type | Description  | 
 |--|--|
-| readonly [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
+| readonly [MagicLeapNativeBindings.MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 
@@ -48,7 +48,7 @@ public readonly MLMeshing.LevelOfDetail levelOfDetail;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) | Level of detail of the block mesh.  |
+| readonly [MLMeshing.LevelOfDetail](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) | Level of detail of the block mesh.  |
 
 
 

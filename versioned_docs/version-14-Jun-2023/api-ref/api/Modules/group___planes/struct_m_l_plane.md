@@ -5,7 +5,7 @@ title: MLPlane
 
 # MLPlane
 
-**Module:** **[Planes](/api-ref/api/Modules/group___planes/group___planes.md)**
+**Module:** **[Planes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/group___planes.md)**
 
 
 
@@ -18,12 +18,12 @@ title: MLPlane
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[position](/api-ref/api/Modules/group___planes/struct_m_l_plane.md#mlvec3f-position)**  |
-| [MLQuaternionf](/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md) | **[rotation](/api-ref/api/Modules/group___planes/struct_m_l_plane.md#mlquaternionf-rotation)**  |
-| float | **[width](/api-ref/api/Modules/group___planes/struct_m_l_plane.md#float-width)**  |
-| float | **[height](/api-ref/api/Modules/group___planes/struct_m_l_plane.md#float-height)**  |
-| uint32_t | **[flags](/api-ref/api/Modules/group___planes/struct_m_l_plane.md#uint32-t-flags)**  |
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[id](/api-ref/api/Modules/group___planes/struct_m_l_plane.md#mlhandle-id)** <br></br>Plane ID. All inner planes within an outer plane will have the same ID (outer plane's ID). These IDs are persistent across plane queries unless a map merge occurs. On a map merge, IDs could be different.  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[position](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane.md#mlvec3f-position)**  |
+| [MLQuaternionf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md) | **[rotation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane.md#mlquaternionf-rotation)**  |
+| float | **[width](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane.md#float-width)**  |
+| float | **[height](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane.md#float-height)**  |
+| uint32_t | **[flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane.md#uint32-t-flags)**  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | **[id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___planes/struct_m_l_plane.md#mlhandle-id)** <br></br>Plane ID. All inner planes within an outer plane will have the same ID (outer plane's ID). These IDs are persistent across plane queries unless a map merge occurs. On a map merge, IDs could be different.  |
 
 ## Detailed Description
 
@@ -127,7 +127,7 @@ Plane ID. All inner planes within an outer plane will have the same ID (outer pl
 
 | Type | Description |
 |--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) | Integer handle type used to reference many things returned by the API, instead of returning pointers directly. Use [MLHandleIsValid()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#bool-mlhandleisvalid) to check if a handle is valid or not.  |
 
 
 

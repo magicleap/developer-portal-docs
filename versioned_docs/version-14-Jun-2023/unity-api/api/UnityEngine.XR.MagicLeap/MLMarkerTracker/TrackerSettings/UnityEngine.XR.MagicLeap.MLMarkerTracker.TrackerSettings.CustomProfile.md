@@ -16,7 +16,7 @@ title: CustomProfile
 
 ## Public Methods
 
-### [CustomProfile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/TrackerSettings/UnityEngine.XR.MagicLeap.MLMarkerTracker.TrackerSettings.CustomProfile.md) Create {#customprofile-create}
+### [CustomProfile](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/TrackerSettings/UnityEngine.XR.MagicLeap.MLMarkerTracker.TrackerSettings.CustomProfile.md) Create {#customprofile-create}
 
 ```csharp
 public static CustomProfile Create(
@@ -34,11 +34,11 @@ public static CustomProfile Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [FPSHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fpshint) |fpsHint|Used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers. |
-| [ResolutionHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-resolutionhint) |resolutionHint|The ResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors. |
-| [CameraHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-camerahint) |cameraHint|The CameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the aruco detectors. |
-| [FullAnalysisIntervalHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fullanalysisintervalhint) |fullAnalysisIntervalHint|In order to improve performance, the detectors don't always run on the full frame. Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance. |
-| [CornerRefineMethod](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-cornerrefinemethod) |cornerRefineMethod|The Aruco/April tag detector comes with several corner refinement methods. Choosing the right corner refinement method has an impact on the accuracy and speed trade-off that comes with each detection pipeline. Corner refinement only applies to Aruco and April tags, not QR codes. |
+| [FPSHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fpshint) |fpsHint|Used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers. |
+| [ResolutionHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-resolutionhint) |resolutionHint|The ResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors. |
+| [CameraHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-camerahint) |cameraHint|The CameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the aruco detectors. |
+| [FullAnalysisIntervalHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fullanalysisintervalhint) |fullAnalysisIntervalHint|In order to improve performance, the detectors don't always run on the full frame. Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance. |
+| [CornerRefineMethod](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-cornerrefinemethod) |cornerRefineMethod|The Aruco/April tag detector comes with several corner refinement methods. Choosing the right corner refinement method has an impact on the accuracy and speed trade-off that comes with each detection pipeline. Corner refinement only applies to Aruco and April tags, not QR codes. |
 | bool |useEdgeRefinement||
 
 
@@ -75,7 +75,7 @@ public readonly CameraHint CameraHint;
 
 | Type | Description  | 
 |--|--|
-| readonly [CameraHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-camerahint) | The CameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the aruco detectors.  |
+| readonly [CameraHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-camerahint) | The CameraHint enum values are used to hint to the camera that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the aruco detectors.  |
 
 
 
@@ -95,7 +95,7 @@ public readonly CornerRefineMethod CornerRefineMethod;
 
 | Type | Description  | 
 |--|--|
-| readonly [CornerRefineMethod](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-cornerrefinemethod) | The Aruco/April tag detector comes with several corner refinement methods. Choosing the right corner refinement method has an impact on the accuracy and speed trade-off that comes with each detection pipeline. Corner refinement only applies to Aruco and April tags, not QR codes.  |
+| readonly [CornerRefineMethod](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-cornerrefinemethod) | The Aruco/April tag detector comes with several corner refinement methods. Choosing the right corner refinement method has an impact on the accuracy and speed trade-off that comes with each detection pipeline. Corner refinement only applies to Aruco and April tags, not QR codes.  |
 
 
 
@@ -115,7 +115,7 @@ public readonly FPSHint FPSHint;
 
 | Type | Description  | 
 |--|--|
-| readonly [FPSHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fpshint) | Used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers.  |
+| readonly [FPSHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fpshint) | Used to hint to the back-end the max frames per second that should be analyzed. This is set in the MLMarkerTrackerCustomProfile structure and this setting applies to all enabled trackers.  |
 
 
 
@@ -135,7 +135,7 @@ public readonly FullAnalysisIntervalHint FullAnalysisIntervalHint;
 
 | Type | Description  | 
 |--|--|
-| readonly [FullAnalysisIntervalHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fullanalysisintervalhint) | In order to improve performance, the detectors don't always run on the full frame. Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance.  |
+| readonly [FullAnalysisIntervalHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-fullanalysisintervalhint) | In order to improve performance, the detectors don't always run on the full frame. Full frame analysis is however necessary to detect new markers that weren't detected before. Use this option to control how often the detector may detect new markers and its impact on tracking performance.  |
 
 
 
@@ -155,7 +155,7 @@ public readonly ResolutionHint ResolutionHint;
 
 | Type | Description  | 
 |--|--|
-| readonly [ResolutionHint](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-resolutionhint) | The ResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors.  |
+| readonly [ResolutionHint](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-resolutionhint) | The ResolutionHint enum values are used to hint to the back-end the resolution that should be used. This is set in the MLMarkerTracker.CustomProfile structure and this setting currently only applies to the QR, UPC and EAN detectors.  |
 
 
 

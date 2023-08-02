@@ -17,7 +17,7 @@ Captured output
 
 ## Public Methods
 
-### [MLCameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraOutput.md) Create {#mlcameraoutput-create}
+### [MLCameraOutput](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraOutput.md) Create {#mlcameraoutput-create}
 
 Create and return an initialized version of this struct. 
 
@@ -36,7 +36,7 @@ public static MLCameraOutput Create()
 
 -----------
 
-### [MLCamera.CameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CameraOutput.md) CreateFrameInfo {#mlcameracameraoutput-createframeinfo}
+### [MLCamera.CameraOutput](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CameraOutput.md) CreateFrameInfo {#mlcameracameraoutput-createframeinfo}
 
 ```csharp
 public MLCamera.CameraOutput CreateFrameInfo(
@@ -64,7 +64,7 @@ public MLCamera.CameraOutput CreateFrameInfo(
 
 ### Format {#mlcameraoutputformat-format}
 
-Supported output format specified by [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat)
+Supported output format specified by [MLCamera.OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat)
 
 ```csharp
 
@@ -74,7 +74,7 @@ public MLCamera.OutputFormat Format;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
+| [MLCamera.OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
 
 
 
@@ -118,7 +118,7 @@ public MLCameraPlaneInfo [] Planes;
 
 | Type | Description  | 
 |--|--|
-| [MLCameraPlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) [] | Per plane info for captured output  |
+| [MLCameraPlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraPlaneInfo.md) [] | Per plane info for captured output  |
 
 
 

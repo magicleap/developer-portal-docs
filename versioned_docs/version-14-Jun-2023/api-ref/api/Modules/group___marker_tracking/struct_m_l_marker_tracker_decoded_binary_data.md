@@ -6,7 +6,7 @@ summary: binary decoded data.
 
 # MLMarkerTrackerDecodedBinaryData
 
-**Module:** **[Fiducial Marker Tracking](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
+**Module:** **[Fiducial Marker Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md)**
 
 
 
@@ -19,9 +19,9 @@ Binary decoded data.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | **[type](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md#mlmarkertrackingdecodeddatatype-type)**  |
-| uint32_t | **[data_size](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md#uint32-t-data-size)**  |
-| const char[] | **[data](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md#const-char-data)** <br></br>Binary data.  |
+| [MLMarkerTrackingDecodedDataType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | **[type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md#mlmarkertrackingdecodeddatatype-type)**  |
+| uint32_t | **[data_size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md#uint32-t-data-size)**  |
+| const char[] | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_decoded_binary_data.md#const-char-data)** <br></br>Binary data.  |
 
 ## Detailed Description
 
@@ -53,7 +53,7 @@ MLMarkerTrackingDecodedDataType type;
 
 | Type | Description |
 |--|--|
-| [MLMarkerTrackingDecodedDataType](/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | Decoded Data Type enumeration.  |
+| [MLMarkerTrackingDecodedDataType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___marker_tracking/group___marker_tracking.md#enums-mlmarkertrackingdecodeddatatype) | Decoded Data Type enumeration.  |
 
 
 Type selector for the structure. 

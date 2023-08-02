@@ -7,7 +7,7 @@ tags: [Magic Leap C SDK 0.52.1, MLSDK, ML Hub, Install, Setup]
 keywords: [Magic Leap C SDK 0.52.1, MLSDK, ML Hub, Install, Setup]
 ---
 
-The ML Hub's OS Installer allows you to install an OS image to your device. OS images are now released via The ML Hub's Package Manager. You can download them from the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md) and [flash](/docs/guides/device/updating-the-os/device-flashing-guide.md) them via the command line, or you can download and install with **one click** by using this tool.
+The ML Hub's OS Installer allows you to install an OS image to your device. OS images are now released via The ML Hub's Package Manager. You can download them from the [Package Manager](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md) and [flash](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) them via the command line, or you can download and install with **one click** by using this tool.
 
 <Image url= {require("/img/ml-hub/os-module-1.png")} >OS Installer Module Page after Connecting Device</Image>
 
@@ -66,5 +66,5 @@ Click the **Install OS** button to begin installation. If the OS image needs to 
 <Image url= {require("/img/ml-hub/os-module-4.png")} >Installation Window: Complete</Image>
 
 :::tip
-If you run into any issues with flashing, check the [**troubleshooting**](/docs/guides/device/updating-the-os/device-flashing-guide.md#troubleshooting) section of the manual flashing guide for assistance.
+If you run into any issues with flashing, check the [**troubleshooting**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md#troubleshooting) section of the manual flashing guide for assistance.
 :::

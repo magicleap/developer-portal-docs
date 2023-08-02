@@ -13,7 +13,7 @@ Stream and capture content from your Magic Leap device in the Magic Leap Hub.
 :::caution Device Stream Limitations
 Device Stream is intended as a **preview** tool for your content and not designed as a perfect way to stream every pixel perfectly. Device Stream uses the RTSP protocol, which prioritizes real-time over quality, meaning that while latency is expected to be low, not all pixels are necessarily going to be delivered, and those that are will have compression applied.
 
-If perfect image quality is desired, it is recommended to instead do a capture session [using our adb-enabled tools](/docs/guides/developer-tools/android-debug-bridge/android-capture-commands) or by [using the ML Hub Advanced Capture tooling](/docs/guides/developer-tools/ml-hub/ml-hub-advanced-capture).
+If perfect image quality is desired, it is recommended to instead do a capture session [using our adb-enabled tools](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/android-capture-commands) or by [using the ML Hub Advanced Capture tooling](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-advanced-capture).
 :::
 
 ## Setup
@@ -53,7 +53,7 @@ To stop streaming, hover over the stream and click the pause button. Use the **D
 
 ## Troubleshooting
 
-If connecting to the headset fails, ensure [connecting to the Device Bridge works](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge#wifi-bridge).
+If connecting to the headset fails, ensure [connecting to the Device Bridge works](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-device-bridge#wifi-bridge).
 
 ### Device Not Found
 

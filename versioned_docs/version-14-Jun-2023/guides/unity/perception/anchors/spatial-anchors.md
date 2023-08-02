@@ -13,7 +13,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 This section will guide you on how to use Spatial Anchors, a shared reference point for tethering virtual content to a persistent physical location.
 
 :::note
-Magic Leap 1 used the term PCF (Persistent Coordinate Frame) to describe our previous system of anchoring virtual content. Differences between PCFs and Spatial Anchors can be found on the [Spatial Anchors Overview Page](/docs/guides/unity/perception/anchors/spatial-anchors-overview.md)
+Magic Leap 1 used the term PCF (Persistent Coordinate Frame) to describe our previous system of anchoring virtual content. Differences between PCFs and Spatial Anchors can be found on the [Spatial Anchors Overview Page](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/perception/anchors/spatial-anchors-overview.md)
 :::
 
 :::caution

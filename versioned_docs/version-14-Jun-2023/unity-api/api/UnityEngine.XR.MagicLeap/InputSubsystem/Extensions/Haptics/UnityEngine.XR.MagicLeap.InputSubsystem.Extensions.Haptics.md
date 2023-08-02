@@ -16,7 +16,7 @@ title: Haptics
 
 ## Public Methods
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartBuzz {#mlresult-startbuzz}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartBuzz {#mlresult-startbuzz}
 
 Starts a buzz pattern. 
 
@@ -46,7 +46,7 @@ public static MLResult StartBuzz(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartPreDefined {#mlresult-startpredefined}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) StartPreDefined {#mlresult-startpredefined}
 
 Starts a predefined pattern. 
 
@@ -61,7 +61,7 @@ public static MLResult StartPreDefined(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PreDefined.Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md#enums-type) |type|Predefined haptics pattern types. |
+| [PreDefined.Type](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.PreDefined.md#enums-type) |type|Predefined haptics pattern types. |
 
 
 
@@ -70,7 +70,7 @@ public static MLResult StartPreDefined(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Stop {#mlresult-stop}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Stop {#mlresult-stop}
 
 Stops playing the current haptic pattern. 
 

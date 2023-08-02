@@ -8,7 +8,7 @@ title: MeshingSubsystemComponent
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
@@ -251,7 +251,7 @@ public bool requestVertexConfidence { get; set; }
 
 
 
-**See**: [TryGetConfidence(MeshId, List&lt;float&gt;)](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-trygetconfidence)
+**See**: [TryGetConfidence(MeshId, List&lt;float&gt;)](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-trygetconfidence)
 
 
 
@@ -269,7 +269,7 @@ public MeshType requestedMeshType { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
+| [MeshType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
 
 
 
@@ -281,7 +281,7 @@ public MeshType requestedMeshType { get; set; }
 
 ### void DestroyAllMeshes {#void-destroyallmeshes}
 
-Destroy all mesh  GameObject s created by this [MeshingSubsystemComponent](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md). The [meshIdToGameObjectMap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap) will also be cleared. 
+Destroy all mesh  GameObject s created by this [MeshingSubsystemComponent](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md). The [meshIdToGameObjectMap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap) will also be cleared. 
 
 ```csharp
 public void DestroyAllMeshes()
@@ -294,7 +294,7 @@ public void DestroyAllMeshes()
 
 -----------
 
-### [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) FromDensityToLevelOfDetail {#meshingsubsystemextensionsmlmeshinglevelofdetail-fromdensitytolevelofdetail}
+### [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) FromDensityToLevelOfDetail {#meshingsubsystemextensionsmlmeshinglevelofdetail-fromdensitytolevelofdetail}
 
 ```csharp
 public static MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail FromDensityToLevelOfDetail(
@@ -329,7 +329,7 @@ public static float FromLevelOfDetailToDensity(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |lod|Level of detail of the block mesh. |
+| [MeshingSubsystem.Extensions.MLMeshing.LevelOfDetail](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |lod|Level of detail of the block mesh. |
 
 
 
@@ -353,7 +353,7 @@ public void OnMeshingPropertyChanged()
 
 ### void RefreshAllMeshes {#void-refreshallmeshes}
 
-'Refresh' all known meshes (meshes that are in [meshIdToGameObjectMap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap)). This will force all meshes to be regenerated with the current settings. 
+'Refresh' all known meshes (meshes that are in [meshIdToGameObjectMap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap)). This will force all meshes to be regenerated with the current settings. 
 
 ```csharp
 public void RefreshAllMeshes()
@@ -414,7 +414,7 @@ public static void SetCustomMeshBlockRequests(
 
 ### bool TryGetConfidence {#bool-trygetconfidence}
 
-Retrieve the confidence values associated with a mesh. Confidence values range from 0..1. [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence) must be enabled. 
+Retrieve the confidence values associated with a mesh. Confidence values range from 0..1. [requestVertexConfidence](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence) must be enabled. 
 
 ```csharp
 public bool TryGetConfidence(
@@ -434,7 +434,7 @@ public bool TryGetConfidence(
 
 
 
-**See**: [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence)
+**See**: [requestVertexConfidence](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence)
 
 
 
@@ -458,7 +458,7 @@ public MeshType currentMeshType => SubsystemFeatures.currentFeatures.HasFlag(Fea
 
 | Type | Description  | 
 |--|--|
-| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
+| [MeshType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
 
 
 

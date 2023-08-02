@@ -10,7 +10,7 @@ keywords: [Android, Native, Getting Started, C-API, Magic Leap C SDK 0.52.2, And
 
 ## Overview
 
-There are two main ways of building Native applications, a [command line workflow](/docs/guides/native/getting-started/command-line-workflow.md) and an [Android Studio workflow](/docs/guides/native/getting-started/android-studio-workflow.md). Use whichever you prefer, however both require the following prerequisite downloads.
+There are two main ways of building Native applications, a [command line workflow](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/getting-started/command-line-workflow.md) and an [Android Studio workflow](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/getting-started/android-studio-workflow.md). Use whichever you prefer, however both require the following prerequisite downloads.
 
 ## Prerequisites
 

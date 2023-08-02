@@ -11,21 +11,21 @@ title: ml_media_webvtt.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLWebVTTData](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)** <br></br>WebVTT data structure.  |
+| struct | **[MLWebVTTData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)** <br></br>WebVTT data structure.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLWebVTTData](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) | **[MLWebVTTData](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlwebvttdata)** <br></br>WebVTT data structure.  |
+| typedef struct [MLWebVTTData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md) | **[MLWebVTTData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlwebvttdata)** <br></br>WebVTT data structure.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLWebVTTOrientation](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation)** <br></br> { <br></br>[MLWebVTTOrientation_Horizontal](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttorientation-horizontal) = 0,<br></br> [MLWebVTTOrientation_Vertical](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttorientation-vertical) = 1,<br></br> [MLWebVTTOrientation_Ensure32Bits](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttorientation-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cue orientation setting.  |
-| enum | **[MLWebVTTDirection](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection)** <br></br> { <br></br>[MLWebVTTDirection_Default](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-default) = 0,<br></br> [MLWebVTTDirection_LeftToRight](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-lefttoright) = 1,<br></br> [MLWebVTTDirection_RightToLeft](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-righttoleft) = 2,<br></br> [MLWebVTTDirection_Ensure32Bits](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cue direction setting.  |
-| enum | **[MLWebVTTAlign](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign)** <br></br> { <br></br>[MLWebVTTAlign_Start](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-start) = 0,<br></br> [MLWebVTTAlign_Middle](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-middle) = 1,<br></br> [MLWebVTTAlign_End](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-end) = 2,<br></br> [MLWebVTTAlign_Left](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-left) = 3,<br></br> [MLWebVTTAlign_Right](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-right) = 4,<br></br> [MLWebVTTAlign_Ensure32Bits](/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cue aligment setting.  |
+| enum | **[MLWebVTTOrientation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttorientation)** <br></br> { <br></br>[MLWebVTTOrientation_Horizontal](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttorientation-horizontal) = 0,<br></br> [MLWebVTTOrientation_Vertical](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttorientation-vertical) = 1,<br></br> [MLWebVTTOrientation_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttorientation-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cue orientation setting.  |
+| enum | **[MLWebVTTDirection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttdirection)** <br></br> { <br></br>[MLWebVTTDirection_Default](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-default) = 0,<br></br> [MLWebVTTDirection_LeftToRight](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-lefttoright) = 1,<br></br> [MLWebVTTDirection_RightToLeft](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-righttoleft) = 2,<br></br> [MLWebVTTDirection_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttdirection-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cue direction setting.  |
+| enum | **[MLWebVTTAlign](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlwebvttalign)** <br></br> { <br></br>[MLWebVTTAlign_Start](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-start) = 0,<br></br> [MLWebVTTAlign_Middle](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-middle) = 1,<br></br> [MLWebVTTAlign_End](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-end) = 2,<br></br> [MLWebVTTAlign_Left](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-left) = 3,<br></br> [MLWebVTTAlign_Right](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-right) = 4,<br></br> [MLWebVTTAlign_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__webvtt_8h.md#enums-mlwebvttalign-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cue aligment setting.  |
 
 ## Enums Documentation
 
@@ -115,7 +115,7 @@ WebVTT data structure.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_web_v_t_t_data.md)
 
 
 **API Level:**

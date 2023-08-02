@@ -24,7 +24,7 @@ This guide assumes you have a basic understanding of Photon Fusion. To learn mor
 
 Before proceeding, ensure you have the following:
 
-- [Magic Leap 2 Unity project](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/create-a-project) using the [Universal Render Pipeline](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/graphics-settings)
+- [Magic Leap 2 Unity project](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/create-a-project) using the [Universal Render Pipeline](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/graphics-settings)
 - [Photon account](https://doc.photonengine.com/fusion/current/fusion-100/fusion-101#step_0___create_an_account) and Fusion app ID
 - Local copy of the Photon Fusion unity package
 - Established Wi-Fi connection on the headset
@@ -34,7 +34,7 @@ Before proceeding, ensure you have the following:
 ### Import the Fusion Unity SDK Package
 
 1. Create a new URP project using the latest version of Unity 2022
-2. Configure your project using the [Magic Leap Setup Tool](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/create-a-project)
+2. Configure your project using the [Magic Leap Setup Tool](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/create-a-project)
 3. Import the [Fusion Unity SDK](https://doc.photonengine.com/fusion/current/getting-started/sdk-download) package
 4. Enter your [app ID](https://doc.photonengine.com/fusion/current/fusion-100/fusion-101#step_6___create_an_app_id) in the Photon Fusion Hub window.(Note: If the Fusion Hub doesn’t appear automatically after package import, you can open it by navigating to **Fusion > Fusion Hub** in the Unity menu.)
 
@@ -42,7 +42,7 @@ Before proceeding, ensure you have the following:
 
 ### Set Permissions
 
-The package used in this example requires marker tracking and/or spatial anchors permissions. To enable these permissions, make sure you’ve enabled the [Custom Manifest](https://developer-docs.magicleap.cloud/docs/guides/unity/getting-started/configure-unity-settings#custom-manifest) setting in Player settings as well as the following permissions (found in **Edit > Project Settings > Magic Leap > Permissions**):
+The package used in this example requires marker tracking and/or spatial anchors permissions. To enable these permissions, make sure you’ve enabled the [Custom Manifest](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings#custom-manifest) setting in Player settings as well as the following permissions (found in **Edit > Project Settings > Magic Leap > Permissions**):
 
 <Image url= {require("/img/unity/photon-fusion/Permissions.jpg")} >Permissions</Image>
 

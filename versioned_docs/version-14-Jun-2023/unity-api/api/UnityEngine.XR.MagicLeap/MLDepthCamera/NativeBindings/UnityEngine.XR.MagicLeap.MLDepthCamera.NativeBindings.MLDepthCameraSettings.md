@@ -16,7 +16,7 @@ title: MLDepthCameraSettings
 
 ## Public Methods
 
-### [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) Init {#mldepthcamerasettings-init}
+### [MLDepthCameraSettings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) Init {#mldepthcamerasettings-init}
 
 ```csharp
 public static MLDepthCameraSettings Init()

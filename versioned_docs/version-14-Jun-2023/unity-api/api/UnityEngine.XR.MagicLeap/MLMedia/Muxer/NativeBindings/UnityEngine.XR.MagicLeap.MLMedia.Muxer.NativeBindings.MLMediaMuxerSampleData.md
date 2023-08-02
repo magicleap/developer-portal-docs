@@ -9,7 +9,7 @@ summary: data type that encapsulates sample data to be written in to muxer.
 
 
 
-Data type that encapsulates sample data to be written in to [Muxer](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md).   
+Data type that encapsulates sample data to be written in to [Muxer](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md).   
 
 
 
@@ -17,7 +17,7 @@ Data type that encapsulates sample data to be written in to [Muxer](/unity-api/a
 
 ## Public Methods
 
-### [MLMediaMuxerSampleData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Muxer.NativeBindings.MLMediaMuxerSampleData.md) Create {#mlmediamuxersampledata-create}
+### [MLMediaMuxerSampleData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Muxer.NativeBindings.MLMediaMuxerSampleData.md) Create {#mlmediamuxersampledata-create}
 
 ```csharp
 public static MLMediaMuxerSampleData Create()
@@ -61,7 +61,7 @@ public CodecBufferFlags Flags;
 
 | Type | Description  | 
 |--|--|
-| [CodecBufferFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-codecbufferflags) | Indicate the type of data when queuing the input buffer of muxer sample data  |
+| [CodecBufferFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-codecbufferflags) | Indicate the type of data when queuing the input buffer of muxer sample data  |
 
 
 
@@ -105,7 +105,7 @@ public ulong Time;
 
 ### TrackIndex {#uint-trackindex}
 
-The track index number, to which to write the sample data into. This should be a value returned by [AddAudioTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addaudiotrack) or [AddVideoTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addvideotrack)
+The track index number, to which to write the sample data into. This should be a value returned by [AddAudioTrack](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addaudiotrack) or [AddVideoTrack](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addvideotrack)
 
 ```csharp
 

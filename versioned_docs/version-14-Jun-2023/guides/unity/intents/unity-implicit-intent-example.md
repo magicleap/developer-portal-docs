@@ -12,7 +12,7 @@ Implicit Intents do not directly specify the Android components which should be 
 This example opens the Fitting Calibration application, 3 seconds after `Start()` is called.
 
 :::tip
-See the [Intents Feature Overview](/docs/guides/features/android-intents-overview.md) for a list of possible system-level intents.
+See the [Intents Feature Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/android-intents-overview.md) for a list of possible system-level intents.
 :::
 
 ## Using Settings Intents Launcher

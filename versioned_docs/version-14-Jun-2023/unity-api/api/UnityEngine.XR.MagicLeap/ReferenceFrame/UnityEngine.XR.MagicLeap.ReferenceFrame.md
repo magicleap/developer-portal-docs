@@ -9,7 +9,7 @@ summary: contains information necessary to report on xranchors.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 Contains information necessary to report on  XRAnchor s.   
@@ -66,7 +66,7 @@ public Native.MagicLeapNativeBindings.MLCoordinateFrameUID cfuid { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
+| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 
@@ -175,7 +175,7 @@ public ReferenceFrame(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame |
+| [Cinfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame |
 
 
 
@@ -200,7 +200,7 @@ public void SetCoordinateFrame(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |cfuid|The UID of the new coordinate frame|
+| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |cfuid|The UID of the new coordinate frame|
 | Pose |coordinateFrame|The pose of the new coordinate frame|
 
 

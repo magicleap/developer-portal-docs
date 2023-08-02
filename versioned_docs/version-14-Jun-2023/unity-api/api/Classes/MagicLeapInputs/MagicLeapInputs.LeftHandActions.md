@@ -68,7 +68,7 @@ public LeftHandActions(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| @[MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
+| @[MagicLeapInputs](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
 
 
 
@@ -90,7 +90,7 @@ public void SetCallbacks(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [ILeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ILeftHandActions.md) |instance||
+| [ILeftHandActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.ILeftHandActions.md) |instance||
 
 
 
@@ -112,7 +112,7 @@ public static implicit operator InputActionMap(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [LeftHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.LeftHandActions.md) |set||
+| [LeftHandActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.LeftHandActions.md) |set||
 
 
 

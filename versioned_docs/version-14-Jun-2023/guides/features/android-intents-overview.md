@@ -57,7 +57,7 @@ Battery levels for the Compute Pack and Controller can be obtained using standar
 
 ### Compute Pack
 
-Developers can access the battery level for the Compute Pack using [Android's Battery Manager](https://developer.android.com/reference/android/os/BatteryManager). See the [Native Battery Sample](/docs/guides/native/capi-samples.md#battery) for more information.
+Developers can access the battery level for the Compute Pack using [Android's Battery Manager](https://developer.android.com/reference/android/os/BatteryManager). See the [Native Battery Sample](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/capi-samples.md#battery) for more information.
 
 ### Controller
 
@@ -75,4 +75,4 @@ The Controller battery Intent is named **com.magicleap.controller.action.BATTERY
   - **BatteryManager.EXTRA_PRESENT** : false
   - **BatteryManager.EXTRA_STATUS** : **BatteryManager.BATTERY_STATUS_UNKNOWN**
 
-The [Native Battery Sample](/docs/guides/native/capi-samples.md#battery) provides an example of obtaining battery levels for both the Compute Pack and Controller.
+The [Native Battery Sample](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/capi-samples.md#battery) provides an example of obtaining battery levels for both the Compute Pack and Controller.

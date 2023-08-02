@@ -9,7 +9,7 @@ summary: data type that encapsulates either of the following along with an url f
 
 
 
-Data type that encapsulates either of the following along with an URL: For [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server.   
+Data type that encapsulates either of the following along with an URL: For [Key](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request Message: an opaque key request byte array that should be delivered to the license server. For Provision Request Message: an opaque provision request byte array that should be delivered to the provisioning server.   
 
 
 
@@ -46,7 +46,7 @@ public readonly NativeBindings.MLMediaDRMByteArray Request;
 
 | Type | Description  | 
 |--|--|
-| readonly [NativeBindings.MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) | Data type containing byte array buffer and the size.  |
+| readonly [NativeBindings.MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) | Data type containing byte array buffer and the size.  |
 
 
 

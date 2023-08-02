@@ -9,7 +9,7 @@ summary: scriptable object holding data used in editor scripts.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/MagicLeap/MagicLeap.md) 
 
 
 Scriptable Object holding data used in Editor scripts.   

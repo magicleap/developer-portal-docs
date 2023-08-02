@@ -9,7 +9,7 @@ summary: rational data type.
 
 
 
-[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type.   
+[Rational](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type.   
 
 
 
@@ -17,7 +17,7 @@ summary: rational data type.
 
 ## Public Methods
 
-### [MLCameraMetadataRational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.NativeBindings.MLCameraMetadataRational.md) Create {#mlcamerametadatarational-create}
+### [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.NativeBindings.MLCameraMetadataRational.md) Create {#mlcamerametadatarational-create}
 
 Create and return an initialized version of this struct. 
 

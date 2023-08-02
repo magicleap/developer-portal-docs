@@ -6,7 +6,7 @@ summary: mediaplayer error callback info.
 
 # MLMediaPlayerOnErrorInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ MediaPlayer Error callback Info.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[result](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md#mlresult-result)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md#void-data)**  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[result](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md#mlresult-result)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_error_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -64,7 +64,7 @@ void * data;
 ```
 
 
-User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
+User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
 
 
 

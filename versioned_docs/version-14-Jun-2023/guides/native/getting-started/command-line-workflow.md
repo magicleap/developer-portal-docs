@@ -16,14 +16,14 @@ This section outlines the steps required to build Native applications (including
 
 ## Prerequisites
 
-- Make sure you have properly installed everything listed in the [Setup Overview](/docs/guides/native/getting-started/native-setup-overview.md), and have followed the [instructions](/docs/guides/getting-started/install-the-tools.md) on downloading the ML Hub and the latest Magic Leap C SDK (MLSDK).
+- Make sure you have properly installed everything listed in the [Setup Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/native/getting-started/native-setup-overview.md), and have followed the [instructions](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md) on downloading the ML Hub and the latest Magic Leap C SDK (MLSDK).
 - Python3 is required to run the build scripts located in the Magic Leap Samples folder.
 :::warning
 The **MLSDK** must be installed into a path without spaces.
 :::
 
 - Additionally, make sure you have OpenJDK-11 installed. You can download it from the [Java Development Kit website](https://jdk.java.net/java-se-ri/11).
-- Lastly, you must download the latest **C-API Samples** package from the **Package Manager** within **ML Hub**. On more information about the package manager, check the [Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md) guide.
+- Lastly, you must download the latest **C-API Samples** package from the **Package Manager** within **ML Hub**. On more information about the package manager, check the [Package Manager](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-package-manager.md) guide.
 
 The instructions below assume that all the content has been extracted to the **{USER}** directory.
 
@@ -249,5 +249,5 @@ rm -rf app/build
 You can find the output APK in the *app/build/outputs/apk/ml2/* directory.
 
 :::note
-**Application Simulator** is a tool that [allows you to run your apps](/docs/guides/developer-tools/app-sim/using-app-sim#overview) on your Windows PC or macOS without needing to build for the device. When you build apps for Application Simulator, you must [launch them using the ZILauncher](/docs/guides/developer-tools/app-sim/using-app-sim#launching-c-api-apps). To learn more about Application Simulator, check the [Application Simulator Guide](/docs/guides/developer-tools/app-sim/app-simulator.md).
+**Application Simulator** is a tool that [allows you to run your apps](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/using-app-sim#overview) on your Windows PC or macOS without needing to build for the device. When you build apps for Application Simulator, you must [launch them using the ZILauncher](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/using-app-sim#launching-c-api-apps). To learn more about Application Simulator, check the [Application Simulator Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-simulator.md).
 :::

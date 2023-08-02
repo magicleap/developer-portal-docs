@@ -5,7 +5,7 @@ title: MLMediaPlayerSubtitleData
 
 # MLMediaPlayerSubtitleData
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,11 +18,11 @@ title: MLMediaPlayerSubtitleData
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[track_index](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint32-t-track-index)**  |
-| uint64_t | **[start_time_us](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint64-t-start-time-us)**  |
-| uint64_t | **[duration_us](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint64-t-duration-us)**  |
-| uint32_t | **[data_size](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint32-t-data-size)**  |
-| uint8_t * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint8-t-data)**  |
+| uint32_t | **[track_index](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint32-t-track-index)**  |
+| uint64_t | **[start_time_us](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint64-t-start-time-us)**  |
+| uint64_t | **[duration_us](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint64-t-duration-us)**  |
+| uint32_t | **[data_size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint32-t-data-size)**  |
+| uint8_t * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md#uint8-t-data)**  |
 
 ## Detailed Description
 

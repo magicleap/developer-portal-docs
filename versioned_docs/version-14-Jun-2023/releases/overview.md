@@ -7,7 +7,7 @@ date: 06/14/2023
 
 ## API Version Matrix
 
-import VersionMatrix from '/docs/releases/_version-matrix.md';
+import VersionMatrix from '/versioned_docs/version-14-Jun-2023/releases/_version-matrix.md';
 
 <VersionMatrix />
 
@@ -17,7 +17,7 @@ Wondering what's new in the latest software releases? Check out our release note
 
 ### [OS Release Notes](release-2023-june/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2023-june/sdk-release-notes.md)
 
@@ -31,7 +31,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2023-may/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2023-may/sdk-release-notes.md)
 
@@ -45,7 +45,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2023-april/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2023-april/sdk-release-notes.md)
 
@@ -59,7 +59,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2023-march/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2023-march/sdk-release-notes.md)
 
@@ -73,7 +73,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2023-february/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2023-february/sdk-release-notes.md)
 
@@ -87,7 +87,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2023-january/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2023-january/sdk-release-notes.md)
 
@@ -101,7 +101,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-december/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-december/sdk-release-notes.md)
 
@@ -115,7 +115,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-november/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-november/sdk-release-notes.md)
 
@@ -129,7 +129,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-october/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-october/sdk-release-notes.md)
 
@@ -143,7 +143,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-september/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-september/sdk-release-notes.md)
 
@@ -157,7 +157,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-august/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-august/sdk-release-notes.md)
 
@@ -171,7 +171,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-july-2/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-july-2/sdk-release-notes.md)
 
@@ -185,7 +185,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-july/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-july/sdk-release-notes.md)
 
@@ -199,7 +199,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-june/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-june/sdk-release-notes.md)
 
@@ -213,7 +213,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-may/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-may/sdk-release-notes.md)
 
@@ -227,7 +227,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-april/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-april/sdk-release-notes.md)
 
@@ -241,7 +241,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-march/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-march/sdk-release-notes.md)
 
@@ -255,7 +255,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2022-feb/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [Native SDK Release Notes](release-2022-feb/sdk-release-notes.md)
 
@@ -269,7 +269,7 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 ### [OS Release Notes](release-2021-december/os-release-notes/os-release-notes.md)
 
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
+Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
 
 ### [The Lab 2.0 Release Notes](release-2021-december/releasenotes-lab.md)
 

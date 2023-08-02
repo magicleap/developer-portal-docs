@@ -42,4 +42,4 @@ The Headset Fit API returns one of four options:
 - **Good Fit**: eyes are visible and the device is properly fitted to the user.
 - **Bad Fit**: eyes are not in the correct location. Eye Tracking will not be functional.
 
-The Headset Fit API judges fit in five second cycles. It is recommended to check for the Headset Fit API 5-10 seconds into your application and prompt the user to launch the Custom Fit app if the Custom Fit API returns a “Bad Fit” state. The Custom Fit App can be launched using the standard Android intent mechanism. Please refer to [this article](/docs/guides/unity/intents/unity-intents-overview.md) for more details.
+The Headset Fit API judges fit in five second cycles. It is recommended to check for the Headset Fit API 5-10 seconds into your application and prompt the user to launch the Custom Fit app if the Custom Fit API returns a “Bad Fit” state. The Custom Fit App can be launched using the standard Android intent mechanism. Please refer to [this article](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/intents/unity-intents-overview.md) for more details.

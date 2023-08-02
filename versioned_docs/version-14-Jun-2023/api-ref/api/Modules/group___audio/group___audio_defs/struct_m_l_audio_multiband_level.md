@@ -6,7 +6,7 @@ summary: properties specifying a broadband level and three sub-band levels.
 
 # MLAudioMultibandLevel
 
-**Module:** **[Audio](/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**
+**Module:** **[Audio](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio.md)** **/** **[Audio Definitions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md)**
 
 
 
@@ -19,10 +19,10 @@ Properties specifying a broadband level and three sub-band levels.  [More...](#d
 
 | Type           | Name           |
 | -------------- | -------------- |
-| float | **[main](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-main)**  |
-| float | **[lf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-lf)**  |
-| float | **[mf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-mf)**  |
-| float | **[hf](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-hf)**  |
+| float | **[main](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-main)**  |
+| float | **[lf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-lf)**  |
+| float | **[mf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-mf)**  |
+| float | **[hf](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-hf)**  |
 
 ## Detailed Description
 

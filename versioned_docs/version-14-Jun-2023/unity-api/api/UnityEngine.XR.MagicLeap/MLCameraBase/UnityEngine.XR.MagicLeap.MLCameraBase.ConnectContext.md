@@ -17,7 +17,7 @@ Camera connection settings.
 
 ## Public Methods
 
-### [ConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md) Create {#connectcontext-create}
+### [ConnectContext](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md) Create {#connectcontext-create}
 
 Create and return an initialized version of this struct. 
 
@@ -63,7 +63,7 @@ public Identifier CamId;
 
 | Type | Description  | 
 |--|--|
-| [Identifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-identifier) | Logical Camera identifiers available for access.  |
+| [Identifier](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-identifier) | Logical Camera identifiers available for access.  |
 
 
 
@@ -100,7 +100,7 @@ public ConnectFlag Flags;
 
 | Type | Description  | 
 |--|--|
-| [ConnectFlag](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) | Flags to describe various modules in camera pipeline.  |
+| [ConnectFlag](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) | Flags to describe various modules in camera pipeline.  |
 
 
 
@@ -120,7 +120,7 @@ public MRConnectInfo MixedRealityConnectInfo;
 
 | Type | Description  | 
 |--|--|
-| [MRConnectInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md) | Connection settings for MR capture.  |
+| [MRConnectInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.MRConnectInfo.md) | Connection settings for MR capture.  |
 
 
 

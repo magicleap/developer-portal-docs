@@ -10,7 +10,7 @@ keywords: [Perception, Anchors, Persistence]
 This section will guide you on how to use Spatial Anchors, a shared reference point for tethering virtual content to a persistent physical location.
 
 :::note
-Magic Leap 1 used the term PCF (Persistent Coordinate Frame) to describe our previous system of anchoring virtual content. Differences between PCFs and Spatial Anchors can be found on the [Spatial Anchors Overview Page](/docs/guides/unity/perception/anchors/spatial-anchors-overview.md)
+Magic Leap 1 used the term PCF (Persistent Coordinate Frame) to describe our previous system of anchoring virtual content. Differences between PCFs and Spatial Anchors can be found on the [Spatial Anchors Overview Page](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/perception/anchors/spatial-anchors-overview.md)
 :::
 
 Spatial Anchors enable developers to create persistent and multi-user content. These anchors can be used to create shared experiences, such as multiplayer gaming, collaborative work, or interactive exhibits. Developers can create anchors inside their applications using Magic Leap's Spatial Anchors API. Once created, you can use the Spaces application to visualize all of the anchors that were created in your map.
@@ -69,4 +69,4 @@ Localization data on the device is updated every 10 seconds to correct for drift
 
 It's important to note that Magic Leap 2 doesn't support re-localizing to multiple maps simultaneously. The device only localizes into the space you've chosen.
 
-If the user is not localized when launching your application, it's possible to send them to the Spaces application and start the mapping tool using [Magic Leap's System Intents](/docs/guides/features/android-intents-overview.md). This allows you to integrate the map tool as part of a start-up procedure for your application.
+If the user is not localized when launching your application, it's possible to send them to the Spaces application and start the mapping tool using [Magic Leap's System Intents](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/android-intents-overview.md). This allows you to integrate the map tool as part of a start-up procedure for your application.

@@ -6,7 +6,7 @@ summary: struct to define webview process initialization.
 
 # MLWebViewProcessSettings
 
-**Module:** **[WebView](/api-ref/api/Modules/group___web_view/group___web_view.md)**
+**Module:** **[WebView](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md)**
 
 
 
@@ -19,8 +19,8 @@ Struct to define webview process initialization.  [More...](#detailed-descriptio
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md#uint32-t-version)**  |
-| uint32_t | **[flags](/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md#uint32-t-flags)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md#uint32-t-version)**  |
+| uint32_t | **[flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/struct_m_l_web_view_process_settings.md#uint32-t-flags)**  |
 
 ## Detailed Description
 
@@ -30,7 +30,7 @@ struct MLWebViewProcessSettings;
 
 Struct to define webview process initialization. 
 
-This structure must be initialized by calling [MLWebViewProcessSettingsInit](/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewprocesssettingsinit) before use.
+This structure must be initialized by calling [MLWebViewProcessSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___web_view/group___web_view.md#void-mlwebviewprocesssettingsinit) before use.
 
 
 

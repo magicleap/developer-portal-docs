@@ -5,7 +5,7 @@ title: MLMediaFormatByteArray
 
 # MLMediaFormatByteArray
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLMediaFormatByteArray
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint8_t * | **[ptr](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md#uint8-t-ptr)**  |
-| size_t | **[length](/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md#size-t-length)**  |
+| uint8_t * | **[ptr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md#uint8-t-ptr)**  |
+| size_t | **[length](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_format_byte_array.md#size-t-length)**  |
 
 ## Detailed Description
 

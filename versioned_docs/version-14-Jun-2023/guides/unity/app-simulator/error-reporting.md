@@ -44,4 +44,4 @@ Details:
 
 ## Privacy
 
-To learn all of the information included in the Diagnostics logs, see the [App Simulator Error Reporting](/docs/guides/developer-tools/app-sim/error-reporting.md#what-data-does-this-report-file-contain) section.
+To learn all of the information included in the Diagnostics logs, see the [App Simulator Error Reporting](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/error-reporting.md#what-data-does-this-report-file-contain) section.

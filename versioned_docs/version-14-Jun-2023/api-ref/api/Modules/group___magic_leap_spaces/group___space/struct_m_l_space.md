@@ -6,11 +6,11 @@ summary: a structure containing information about a magic leap space. this struc
 
 # MLSpace
 
-**Module:** **[Magic Leap Spaces](/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)** **/** **[Space](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md)**
+**Module:** **[Magic Leap Spaces](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___magic_leap_spaces.md)** **/** **[Space](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md)**
 
 
 
-A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  [More...](#detailed-description)
+A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use.  [More...](#detailed-description)
 
 
 `#include <ml_space.h>`
@@ -19,10 +19,10 @@ A structure containing information about a Magic Leap Space. This structure must
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#uint32-t-version)**  |
-| char[MLSpace_MaxSpaceNameLength] | **[space_name](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#char-space-name)**  |
-| [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) | **[space_id](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#mluuid-space-id)**  |
-| [MLSpaceType](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype) | **[space_type](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#mlspacetype-space-type)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#uint32-t-version)**  |
+| char[MLSpace_MaxSpaceNameLength] | **[space_name](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#char-space-name)**  |
+| [MLUUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) | **[space_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#mluuid-space-id)**  |
+| [MLSpaceType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype) | **[space_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md#mlspacetype-space-type)**  |
 
 ## Detailed Description
 
@@ -30,7 +30,7 @@ A structure containing information about a Magic Leap Space. This structure must
 struct MLSpace;
 ```
 
-A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use. 
+A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use. 
 
 
 
@@ -105,7 +105,7 @@ MLSpaceType space_type;
 
 | Type | Description |
 |--|--|
-| [MLSpaceType](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype) | Space type. Indicates the type of the Space.  |
+| [MLSpaceType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype) | Space type. Indicates the type of the Space.  |
 
 
 Type of the Space. 

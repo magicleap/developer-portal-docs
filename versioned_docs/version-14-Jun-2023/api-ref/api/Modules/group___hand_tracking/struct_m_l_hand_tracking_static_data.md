@@ -6,7 +6,7 @@ summary: static information about a hand tracker.
 
 # MLHandTrackingStaticData
 
-**Module:** **[Hand Tracking](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md)**
+**Module:** **[Hand Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md)**
 
 
 
@@ -19,9 +19,9 @@ Static information about a hand tracker.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md#uint32-t-version)**  |
-| [MLHandTrackingCFUIDs](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | **[hand_cfuids](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md#mlhandtrackingcfuids-hand-cfuids)** <br></br>Smooth filtered coordinate frame identifiers of left and right hands.  |
-| [MLHandTrackingCFUIDs](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | **[unfiltered_hand_cfuids](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md#mlhandtrackingcfuids-unfiltered-hand-cfuids)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md#uint32-t-version)**  |
+| [MLHandTrackingCFUIDs](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | **[hand_cfuids](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md#mlhandtrackingcfuids-hand-cfuids)** <br></br>Smooth filtered coordinate frame identifiers of left and right hands.  |
+| [MLHandTrackingCFUIDs](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | **[unfiltered_hand_cfuids](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md#mlhandtrackingcfuids-unfiltered-hand-cfuids)**  |
 
 ## Detailed Description
 
@@ -31,7 +31,7 @@ struct MLHandTrackingStaticData;
 
 Static information about a hand tracker. 
 
-This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#void-mlhandtrackingstaticdatainit) before use.
+This structure must be initialized by calling [MLHandTrackingStaticDataInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#void-mlhandtrackingstaticdatainit) before use.
 
 
 
@@ -71,10 +71,10 @@ Smooth filtered coordinate frame identifiers of left and right hands.
 
 | Type | Description |
 |--|--|
-| [MLHandTrackingCFUIDs](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | MLCoordinateFrameUIDs for the keypoints. [MLHandTrackingHandType_Count] |
+| [MLHandTrackingCFUIDs](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | MLCoordinateFrameUIDs for the keypoints. [MLHandTrackingHandType_Count] |
 
 
-See [MLHandTrackingHandType](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#enum-mlhandtrackinghandtype) for more details. 
+See [MLHandTrackingHandType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#enum-mlhandtrackinghandtype) for more details. 
 
 
 
@@ -92,7 +92,7 @@ MLHandTrackingCFUIDs[MLHandTrackingHandType_Count] unfiltered_hand_cfuids;
 
 | Type | Description |
 |--|--|
-| [MLHandTrackingCFUIDs](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | MLCoordinateFrameUIDs for the keypoints. [MLHandTrackingHandType_Count] |
+| [MLHandTrackingCFUIDs](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_c_f_u_i_ds.md)[MLHandTrackingHandType_Count] | MLCoordinateFrameUIDs for the keypoints. [MLHandTrackingHandType_Count] |
 
 
 Unfiltered coordinate frame identifiers of left and right hands. 

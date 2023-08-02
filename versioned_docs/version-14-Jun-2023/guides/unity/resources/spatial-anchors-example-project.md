@@ -12,7 +12,7 @@ keywords: [Unity, Perception, Anchors, Persistence]
 
 ## Overview
 
-This project demonstrates how to use [Magic Leap 2’s Spatial Anchors API](https://developer-docs.magicleap.cloud/docs/guides/unity/perception/anchors/spatial-anchors-overview) to build an application that allows users to create 3D objects that persist in the same location across reboots. In this example, the information associated with the objects and Anchor IDs is stored as a JSON file in local storage. The example also shows how to automatically localize into a Space using a QR Code and the Spaces application.
+This project demonstrates how to use [Magic Leap 2’s Spatial Anchors API](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/perception/anchors/spatial-anchors-overview) to build an application that allows users to create 3D objects that persist in the same location across reboots. In this example, the information associated with the objects and Anchor IDs is stored as a JSON file in local storage. The example also shows how to automatically localize into a Space using a QR Code and the Spaces application.
 
 [GitHub Project Page](https://github.com/magicleap/SpatialAnchorsExample)
 
@@ -43,7 +43,7 @@ This section describes how to obtain the map IDs for the spaces that are stored 
 adb shell mlmapping -spaces
 ```
 
-If you get an error message saying the ADB command is not found, [install ADB](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/android-debug-bridge/adb-setup)
+If you get an error message saying the ADB command is not found, [install ADB](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/adb-setup)
 
 ### Create a QR Code
 

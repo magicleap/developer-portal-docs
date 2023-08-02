@@ -9,7 +9,7 @@ summary: a structure containing information about the space export settings. thi
 
 
 
-A structure containing information about the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) export settings. This structure must be initialized by calling #MLSpaceExportInfoInit before use.   
+A structure containing information about the [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) export settings. This structure must be initialized by calling #MLSpaceExportInfoInit before use.   
 
 
 
@@ -17,7 +17,7 @@ A structure containing information about the [Space](/unity-api/api/UnityEngine.
 
 ## Public Methods
 
-### [SpaceExportInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportInfo.md) Create {#spaceexportinfo-create}
+### [SpaceExportInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportInfo.md) Create {#spaceexportinfo-create}
 
 Initialize default values for #SpaceExportInfo. 
 
@@ -45,7 +45,7 @@ public static SpaceExportInfo Create(
 
 ### SpaceId {#mluuid-spaceid}
 
-#MLUUID of the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) that needs to be exported. 
+#MLUUID of the [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) that needs to be exported. 
 
 ```csharp
 

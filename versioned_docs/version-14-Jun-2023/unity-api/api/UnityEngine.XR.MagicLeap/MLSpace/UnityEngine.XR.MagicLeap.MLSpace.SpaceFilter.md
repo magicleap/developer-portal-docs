@@ -17,7 +17,7 @@ A collection of filters for Magic Leap Spaces. This structure must be initialize
 
 ## Public Methods
 
-### [SpaceFilter](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceFilter.md) Create {#spacefilter-create}
+### [SpaceFilter](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceFilter.md) Create {#spacefilter-create}
 
 Initializes the default values for a query filter (currently not supported). 
 

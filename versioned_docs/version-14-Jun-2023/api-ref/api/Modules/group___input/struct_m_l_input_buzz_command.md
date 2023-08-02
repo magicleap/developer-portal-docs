@@ -6,7 +6,7 @@ summary: a structure containing information about the buzz command to be played.
 
 # MLInputBuzzCommand
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -19,11 +19,11 @@ A structure containing information about the Buzz command to be played.  [More..
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint32-t-version)**  |
-| uint16_t | **[start_hz](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint16-t-start-hz)**  |
-| uint16_t | **[end_hz](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint16-t-end-hz)**  |
-| uint32_t | **[duration_ms](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint32-t-duration-ms)**  |
-| uint8_t | **[amp](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint8-t-amp)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint32-t-version)**  |
+| uint16_t | **[start_hz](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint16-t-start-hz)**  |
+| uint16_t | **[end_hz](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint16-t-end-hz)**  |
+| uint32_t | **[duration_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint32-t-duration-ms)**  |
+| uint8_t | **[amp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md#uint8-t-amp)**  |
 
 ## Detailed Description
 

@@ -9,7 +9,7 @@ summary: track from the prepared source that can be selected by the media player
 
 
 
-[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player.   
+[Track](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player.   
 
 
 
@@ -27,7 +27,7 @@ public MLAudioOutput.ChannelLayouts AudioChannelLayout { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLAudioOutput.ChannelLayouts](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channellayouts) | Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)
+| [MLAudioOutput.ChannelLayouts](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channellayouts) | Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)
 
 
 composite of individual channel masks.  |
@@ -78,7 +78,7 @@ public MLMediaFormat MediaFormat { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) | APIs for creating and retrieving media format information.  |
+| [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) | APIs for creating and retrieving media format information.  |
 
 
 
@@ -111,7 +111,7 @@ public Type TrackType { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [Type](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) | Media player track types.  |
+| [Type](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md#enums-type) | Media player track types.  |
 
 
 

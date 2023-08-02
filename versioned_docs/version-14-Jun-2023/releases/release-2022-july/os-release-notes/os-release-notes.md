@@ -11,7 +11,7 @@ Don’t forget: Some Magic Leap hardware and software features are in a pre-rele
 
 ## Install Instructions
 
-This OS can be installed on your device via the [ML Hub](/docs/guides/developer-tools/ml-hub/ml-hub-os-installer.md)/ or using [Android Debug Bridge](/docs/guides/device/updating-the-os/device-flashing-guide.md).
+This OS can be installed on your device via the [ML Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-os-installer.md)/ or using [Android Debug Bridge](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/device/updating-the-os/device-flashing-guide.md).
 
 ## New Features
 

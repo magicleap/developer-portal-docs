@@ -5,7 +5,7 @@ title: MLMediaPlayerBufferingSettings
 
 # MLMediaPlayerBufferingSettings
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,14 +18,14 @@ title: MLMediaPlayerBufferingSettings
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaPlayerBufferingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerbufferingmode) | **[initial_buffering_mode](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#mlmediaplayerbufferingmode-initial-buffering-mode)**  |
-| [MLMediaPlayerBufferingMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerbufferingmode) | **[rebuffering_mode](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#mlmediaplayerbufferingmode-rebuffering-mode)**  |
-| int32_t | **[initial_watermark_ms](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-initial-watermark-ms)**  |
-| int32_t | **[initial_watermark_kb](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-initial-watermark-kb)**  |
-| int32_t | **[rebuffering_watermark_low_ms](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-low-ms)** <br></br>When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighMs| or end of stream.  |
-| int32_t | **[rebuffering_watermark_high_ms](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-high-ms)**  |
-| int32_t | **[rebuffering_watermark_low_kb](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-low-kb)** <br></br>When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighKB| or end of stream.  |
-| int32_t | **[rebuffering_watermark_high_kb](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-high-kb)**  |
+| [MLMediaPlayerBufferingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerbufferingmode) | **[initial_buffering_mode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#mlmediaplayerbufferingmode-initial-buffering-mode)**  |
+| [MLMediaPlayerBufferingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaplayerbufferingmode) | **[rebuffering_mode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#mlmediaplayerbufferingmode-rebuffering-mode)**  |
+| int32_t | **[initial_watermark_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-initial-watermark-ms)**  |
+| int32_t | **[initial_watermark_kb](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-initial-watermark-kb)**  |
+| int32_t | **[rebuffering_watermark_low_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-low-ms)** <br></br>When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighMs| or end of stream.  |
+| int32_t | **[rebuffering_watermark_high_ms](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-high-ms)**  |
+| int32_t | **[rebuffering_watermark_low_kb](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-low-kb)** <br></br>When cached data is below this mark, playback will be paused for buffering until data reaches |mRebufferingWatermarkHighKB| or end of stream.  |
+| int32_t | **[rebuffering_watermark_high_kb](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_buffering_settings.md#int32-t-rebuffering-watermark-high-kb)**  |
 
 ## Detailed Description
 

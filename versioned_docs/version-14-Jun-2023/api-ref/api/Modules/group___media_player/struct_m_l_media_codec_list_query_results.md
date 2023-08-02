@@ -5,7 +5,7 @@ title: MLMediaCodecListQueryResults
 
 # MLMediaCodecListQueryResults
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,8 +18,8 @@ title: MLMediaCodecListQueryResults
 
 | Type           | Name           |
 | -------------- | -------------- |
-| size_t | **[count](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md#size-t-count)**  |
-| char ** | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md#char-data)**  |
+| size_t | **[count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md#size-t-count)**  |
+| char ** | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_list_query_results.md#char-data)**  |
 
 ## Detailed Description
 

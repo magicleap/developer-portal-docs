@@ -16,7 +16,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 The Spaces tool can be used on any version/license of a Magic Leap 2. For more info about adding extra features with AR Cloud, see the following page about licenses:
 
-[AR Cloud Licenses](/docs/guides/arcloud/arcloud-licenses)
+[AR Cloud Licenses](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/arcloud/arcloud-licenses)
 
 ## Creating a Space
 

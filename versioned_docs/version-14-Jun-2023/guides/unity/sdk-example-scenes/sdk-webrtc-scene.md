@@ -16,10 +16,10 @@ This scene demonstrates the Magic Leap 2's peer-to-peer WebRTC functionality;The
 ## Requirements
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::
 
-You must enable the `CAMERA` and `RECORD_AUDIO` permissions in the Unity Project Settings. Refer to the [Permissions Guide](/docs/guides/unity/permissions/declaring-permissions.md) for more information.
+You must enable the `CAMERA` and `RECORD_AUDIO` permissions in the Unity Project Settings. Refer to the [Permissions Guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md) for more information.
 
 ## Running the Example Scene
 
@@ -55,7 +55,7 @@ You must enable the `CAMERA` and `RECORD_AUDIO` permissions in the Unity Project
 ### Connection Issues
 
 - If you're having difficulties getting the device to connect to the server and have another computer on your local network, you can test to see if the issue is with your server or the device by trying to load the browser client from the other computer. If you can open [http://0.0.0.0:8080](http://0.0.0.0:8080) on the other computer, the issue is with the device (probably an issue with the scene) not with the server.
-- To get more information on what errors are occurring on device, you can use the logs from the [device bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge.md)
+- To get more information on what errors are occurring on device, you can use the logs from the [device bridge](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-device-bridge.md)
 - If you're having difficulties connecting over the local network, you may need to disable firewalls, particularly on port 8080.
 
 ### WebRTC

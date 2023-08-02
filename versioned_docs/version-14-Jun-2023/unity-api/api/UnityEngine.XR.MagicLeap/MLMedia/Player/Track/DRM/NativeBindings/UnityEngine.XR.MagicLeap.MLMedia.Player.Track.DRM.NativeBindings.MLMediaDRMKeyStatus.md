@@ -27,7 +27,7 @@ public Key Data => new Key(this.keyId.Bytes, this.status);
 
 | Type | Description  | 
 |--|--|
-| [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) | MediaDRM session key info.  |
+| [Key](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) | MediaDRM session key info.  |
 
 
 
@@ -37,7 +37,7 @@ public Key Data => new Key(this.keyId.Bytes, this.status);
 
 ### keyId {#readonly-keyid}
 
-KeyID that belongs to one of th [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session key. 
+KeyID that belongs to one of th [DRM](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session key. 
 
 ```csharp
 
@@ -47,7 +47,7 @@ public readonly MLMediaDRMByteArray keyId;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLMediaDRMByteArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) | Data type containing byte array buffer and the size.  |
+| readonly [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.MLMediaDRMByteArray.md) | Data type containing byte array buffer and the size.  |
 
 
 

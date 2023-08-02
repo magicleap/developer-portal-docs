@@ -5,7 +5,7 @@ title: MLMediaCodecBufferInfo
 
 # MLMediaCodecBufferInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLMediaCodecBufferInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| size_t | **[offset](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#size-t-offset)**  |
-| size_t | **[size](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#size-t-size)**  |
-| size_t | **[flags](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#size-t-flags)**  |
-| int64_t | **[presentation_time_us](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#int64-t-presentation-time-us)**  |
+| size_t | **[offset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#size-t-offset)**  |
+| size_t | **[size](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#size-t-size)**  |
+| size_t | **[flags](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#size-t-flags)**  |
+| int64_t | **[presentation_time_us](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_buffer_info.md#int64-t-presentation-time-us)**  |
 
 ## Detailed Description
 

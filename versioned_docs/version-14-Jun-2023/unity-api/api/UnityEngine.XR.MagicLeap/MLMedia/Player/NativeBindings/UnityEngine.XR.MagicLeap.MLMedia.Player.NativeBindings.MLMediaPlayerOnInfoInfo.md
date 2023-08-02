@@ -63,7 +63,7 @@ public Info Info;
 
 | Type | Description  | 
 |--|--|
-| [Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-info) | Indicates various trigger various media player actions.  MLMediaPlayerInfo  from  ml&#95;media&#95;player.h .  |
+| [Info](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-info) | Indicates various trigger various media player actions.  MLMediaPlayerInfo  from  ml&#95;media&#95;player.h .  |
 
 
 

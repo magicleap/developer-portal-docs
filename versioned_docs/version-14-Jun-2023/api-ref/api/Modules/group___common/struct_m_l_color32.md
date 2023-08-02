@@ -5,7 +5,7 @@ title: MLColor32
 
 # MLColor32
 
-**Module:** **[Common](/api-ref/api/Modules/group___common/group___common.md)**
+**Module:** **[Common](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md)**
 
 
 
@@ -18,10 +18,10 @@ title: MLColor32
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint8_t | **[a](/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-a)**  |
-| uint8_t | **[b](/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-b)**  |
-| uint8_t | **[g](/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-g)**  |
-| uint8_t | **[r](/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-r)**  |
+| uint8_t | **[a](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-a)**  |
+| uint8_t | **[b](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-b)**  |
+| uint8_t | **[g](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-g)**  |
+| uint8_t | **[r](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_color32.md#uint8-t-r)**  |
 
 ## Detailed Description
 

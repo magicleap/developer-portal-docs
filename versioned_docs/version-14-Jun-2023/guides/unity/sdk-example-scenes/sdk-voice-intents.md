@@ -20,7 +20,7 @@ To use Voice Intents, speak the command value. If the scene is just starting up,
 Values with a " | " mean either command can be used for that specific intent.
 
 :::tip
-For more information on this feature, reference the [Voice Intents section](/docs/guides/unity/input/voice-intents/voice-intents-overview.md).
+For more information on this feature, reference the [Voice Intents section](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/voice-intents/voice-intents-overview.md).
 :::
 
 :::caution
@@ -28,5 +28,5 @@ Currently there is a known issue where notification popups on the system may sto
 :::
 
 :::note
-For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/docs/guides/unity/sdk-example-scenes/sdk-install-setup.md).
+For instructions on installing the SDK Examples Project and building this scene, follow the [**Examples Project Install Guide**](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup.md).
 :::

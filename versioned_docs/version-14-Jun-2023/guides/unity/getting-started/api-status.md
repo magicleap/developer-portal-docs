@@ -66,10 +66,10 @@ Unity on Magic Leap 2 only supports Vulkan rendering. If you are using any GLSL 
 
 import Link from '@docusaurus/Link';
 
-<h3><Link to="/docs/guides/third-party/mrtk/mrtk-setup"> MRTK for Magic Leap</Link> </h3>
+<h3><Link to="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/third-party/mrtk/mrtk-setup"> MRTK for Magic Leap</Link> </h3>
 
 Developers can quickly build or upgrade applications using Magic Leap's MRTK support package. See the MRTK Magic Leap guide to learn how to use the MRTK in your Magic Leap project.
 
-<h3><Link to="/docs/guides/unity/sdk-example-scenes/sdk-install-setup"> Unity Examples Project</Link> </h3>
+<h3><Link to="/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/sdk-example-scenes/sdk-install-setup"> Unity Examples Project</Link> </h3>
 
 After successfully creating a new application, check out the pre-configured Magic Leap Unity Examples Project to see some of Magic Leap's unique platform features.

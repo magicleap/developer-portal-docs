@@ -6,7 +6,7 @@ summary: a structure containing settings for voice app intent.
 
 # MLVoiceIntentSettings
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -19,8 +19,8 @@ A structure containing settings for voice app intent.  [More...](#detailed-descr
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md#uint32-t-version)**  |
-| const char * | **[app_intent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md#const-char-app-intent)** <br></br>The C string carrying app intent made by JSON format, which is UTF-8 and null terminated.  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md#uint32-t-version)**  |
+| const char * | **[app_intent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md#const-char-app-intent)** <br></br>The C string carrying app intent made by JSON format, which is UTF-8 and null terminated.  |
 
 ## Detailed Description
 
@@ -30,7 +30,7 @@ struct MLVoiceIntentSettings;
 
 A structure containing settings for voice app intent. 
 
-This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit) before use.
+This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit) before use.
 
 
 

@@ -5,7 +5,7 @@ title: MLInputControllerTouchpadGesture
 
 # MLInputControllerTouchpadGesture
 
-**Module:** **[Input](/api-ref/api/Modules/group___input/group___input.md)**
+**Module:** **[Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md)**
 
 
 
@@ -18,13 +18,13 @@ title: MLInputControllerTouchpadGesture
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLVec3f](/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[pos_and_force](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#mlvec3f-pos-and-force)** <br></br>Gesture position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range.  |
-| [MLInputControllerTouchpadGestureType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype) | **[type](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#mlinputcontrollertouchpadgesturetype-type)**  |
-| [MLInputControllerTouchpadGestureDirection](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection) | **[direction](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#mlinputcontrollertouchpadgesturedirection-direction)**  |
-| float | **[speed](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-speed)** <br></br>Speed of gesture. Note that the value has different meanings depending on the gesture type being performed. For radial scroll the distance is the difference in angles between the start and the end of the gesture.  |
-| float | **[distance](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-distance)** <br></br>For radial gestures, this is the absolute value of the angle.  |
-| float | **[radius](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-radius)** <br></br>For radial gestures, this is the radius of the gesture.  |
-| float | **[angle](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-angle)**  |
+| [MLVec3f](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/struct_m_l_vec3f.md) | **[pos_and_force](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#mlvec3f-pos-and-force)** <br></br>Gesture position (x,y) and force (z). Position is in the [-1.0,1.0] range and force is in the [0.0,1.0] range.  |
+| [MLInputControllerTouchpadGestureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype) | **[type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#mlinputcontrollertouchpadgesturetype-type)**  |
+| [MLInputControllerTouchpadGestureDirection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection) | **[direction](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#mlinputcontrollertouchpadgesturedirection-direction)**  |
+| float | **[speed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-speed)** <br></br>Speed of gesture. Note that the value has different meanings depending on the gesture type being performed. For radial scroll the distance is the difference in angles between the start and the end of the gesture.  |
+| float | **[distance](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-distance)** <br></br>For radial gestures, this is the absolute value of the angle.  |
+| float | **[radius](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-radius)** <br></br>For radial gestures, this is the radius of the gesture.  |
+| float | **[angle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md#float-angle)**  |
 
 ## Detailed Description
 

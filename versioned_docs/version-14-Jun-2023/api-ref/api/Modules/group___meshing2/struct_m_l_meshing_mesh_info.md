@@ -5,7 +5,7 @@ title: MLMeshingMeshInfo
 
 # MLMeshingMeshInfo
 
-**Module:** **[Meshing2](/api-ref/api/Modules/group___meshing2/group___meshing2.md)**
+**Module:** **[Meshing2](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md)**
 
 
 
@@ -18,9 +18,9 @@ title: MLMeshingMeshInfo
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md#mltime-timestamp)**  |
-| uint32_t | **[data_count](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md#uint32-t-data-count)**  |
-| [MLMeshingBlockInfo](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md) * | **[data](/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md#mlmeshingblockinfo-data)**  |
+| [MLTime](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime) | **[timestamp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md#mltime-timestamp)**  |
+| uint32_t | **[data_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md#uint32-t-data-count)**  |
+| [MLMeshingBlockInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_block_info.md) * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/struct_m_l_meshing_mesh_info.md#mlmeshingblockinfo-data)**  |
 
 ## Detailed Description
 

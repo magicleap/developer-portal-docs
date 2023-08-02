@@ -8,14 +8,14 @@ tags: [ML Hub, Advanced Capture, Video, Photo]
 keywords: [ML Hub, Advanced Capture, Video, Photo]
 ---
 
-The Advanced Capture module in [Magic Leap Hub](/docs/guides/developer-tools/ml-hub/magic-leap-hub) enables developers to have greater control over the quality and look of the photos and videos of mixed reality content captured on device.
+The Advanced Capture module in [Magic Leap Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/magic-leap-hub) enables developers to have greater control over the quality and look of the photos and videos of mixed reality content captured on device.
 
 ## Using Advanced Capture
 
 To begin an advanced capture session:
 
 1. Connect the headset to the computer and power it on.
-2. Check that the headset is detected by your machine by either opening [Device Bridge](/docs/guides/developer-tools/ml-hub/ml-hub-device-bridge)inside Magic Leap Hub or executing `adb devices` in the terminal.
+2. Check that the headset is detected by your machine by either opening [Device Bridge](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/ml-hub/ml-hub-device-bridge)inside Magic Leap Hub or executing `adb devices` in the terminal.
 3. Start the Advanced Capture module from the Magic Leap Hub home menu.
 
 <Image url= {require("/img/ml-hub/advanced-capture/advanced_capture_home.jpg")} >Advanced Capture module on ML Hub home page</Image>
@@ -84,4 +84,4 @@ You can set the file path for your captures either from the Magic Leap Hub Home 
 
 ### ADB Screen Capture Commands
 
-If you'd prefer to work with Advanced Capture via command line, you can reference the [ADB Screen Capture Commands](/docs/guides/developer-tools/android-debug-bridge/android-capture-commands) guide.
+If you'd prefer to work with Advanced Capture via command line, you can reference the [ADB Screen Capture Commands](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/android-debug-bridge/android-capture-commands) guide.

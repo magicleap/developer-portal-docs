@@ -48,7 +48,7 @@ public override void Destroy()
 
 -----------
 
-### unsafe [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) GetAllBoundariesForPlane {#unsafe-getallboundariesforplane}
+### unsafe [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) GetAllBoundariesForPlane {#unsafe-getallboundariesforplane}
 
 ```csharp
 public unsafe PlaneBoundaryCollection GetAllBoundariesForPlane(

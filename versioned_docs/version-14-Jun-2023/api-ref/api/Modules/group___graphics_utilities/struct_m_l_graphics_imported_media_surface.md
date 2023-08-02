@@ -6,7 +6,7 @@ summary: handles to and information about an imported surface.
 
 # MLGraphicsImportedMediaSurface
 
-**Module:** **[Graphics Utilities](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md)**
+**Module:** **[Graphics Utilities](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md)**
 
 
 
@@ -19,16 +19,16 @@ Handles to and information about an imported surface.  [More...](#detailed-descr
 
 | Type           | Name           |
 | -------------- | -------------- |
-| VkImage | **[imported_image](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkimage-imported-image)**  |
-| VkDeviceMemory | **[imported_memory](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkdevicememory-imported-memory)**  |
-| VkFormat | **[format](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkformat-format)** <br></br>The Vulkan format corresponding to the imported surface’s format, or VK_FORMAT_UNDEFINED if there isn’t an equivalent Vulkan format.  |
-| uint64_t | **[external_format](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#uint64-t-external-format)**  |
-| VkFormatFeatureFlags | **[format_features](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkformatfeatureflags-format-features)**  |
-| VkComponentMapping | **[sampler_ycbcr_conversion_components](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkcomponentmapping-sampler-ycbcr-conversion-components)**  |
-| VkSamplerYcbcrModelConversion | **[suggested_ycbcr_model](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vksamplerycbcrmodelconversion-suggested-ycbcr-model)**  |
-| VkSamplerYcbcrRange | **[suggested_ycbcr_range](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vksamplerycbcrrange-suggested-ycbcr-range)**  |
-| VkChromaLocation | **[suggested_x_chroma_offset](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkchromalocation-suggested-x-chroma-offset)**  |
-| VkChromaLocation | **[suggested_y_chroma_offset](/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkchromalocation-suggested-y-chroma-offset)**  |
+| VkImage | **[imported_image](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkimage-imported-image)**  |
+| VkDeviceMemory | **[imported_memory](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkdevicememory-imported-memory)**  |
+| VkFormat | **[format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkformat-format)** <br></br>The Vulkan format corresponding to the imported surface’s format, or VK_FORMAT_UNDEFINED if there isn’t an equivalent Vulkan format.  |
+| uint64_t | **[external_format](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#uint64-t-external-format)**  |
+| VkFormatFeatureFlags | **[format_features](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkformatfeatureflags-format-features)**  |
+| VkComponentMapping | **[sampler_ycbcr_conversion_components](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkcomponentmapping-sampler-ycbcr-conversion-components)**  |
+| VkSamplerYcbcrModelConversion | **[suggested_ycbcr_model](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vksamplerycbcrmodelconversion-suggested-ycbcr-model)**  |
+| VkSamplerYcbcrRange | **[suggested_ycbcr_range](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vksamplerycbcrrange-suggested-ycbcr-range)**  |
+| VkChromaLocation | **[suggested_x_chroma_offset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkchromalocation-suggested-x-chroma-offset)**  |
+| VkChromaLocation | **[suggested_y_chroma_offset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/struct_m_l_graphics_imported_media_surface.md#vkchromalocation-suggested-y-chroma-offset)**  |
 
 ## Detailed Description
 
@@ -38,7 +38,7 @@ struct MLGraphicsImportedMediaSurface;
 
 Handles to and information about an imported surface. 
 
-Populated by [MLGraphicsImportVkImageFromMediaHandle](/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#mlresult-mlgraphicsimportvkimagefrommediahandle). Provides all information, necessary for creating a VkImageView and VkSampler for the imported surface.
+Populated by [MLGraphicsImportVkImageFromMediaHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___graphics_utilities/group___graphics_utilities.md#mlresult-mlgraphicsimportvkimagefrommediahandle). Provides all information, necessary for creating a VkImageView and VkSampler for the imported surface.
 
 Refer to the Vulkan specification's equivalent parameters in VkAndroidHardwareBufferFormatPropertiesANDROID. Also refer to usage of VkExternalFormatANDROID and VkSamplerYcbcrConversionCreateInfo. 
 

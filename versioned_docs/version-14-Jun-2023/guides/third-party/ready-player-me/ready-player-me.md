@@ -24,7 +24,7 @@ You can use the sample scene to test the project for yourself by swapping out th
 
 This project has been confirmed to work with Unity 2022.2.20, Magic Leap 2 Unity SDK 1.8.0, Ready Player Me Avatar Loader 1.3.2 and Ready Player Me Core 1.3.1.
 
-Please check the [Magic Leap 2 version compatibility matrix](/docs/releases/releases-overview) to see the latest available versions of the Magic Leap 2 Unity SDK and check for updates in the [Ready Player Me documentation](https://docs.readyplayer.me/ready-player-me/integration-guides/unity) if you run into avatar import issues.
+Please check the [Magic Leap 2 version compatibility matrix](/versioned_docs/version-14-Jun-2023/releases/releases-overview) to see the latest available versions of the Magic Leap 2 Unity SDK and check for updates in the [Ready Player Me documentation](https://docs.readyplayer.me/ready-player-me/integration-guides/unity) if you run into avatar import issues.
 :::
 
 ## Prerequisites
@@ -33,13 +33,13 @@ Before you begin, you must:
 
 - Download the [Magic Leap 2 Ready Player Me package](https://github.com/magicleap/MagicLeapReadyPlayerMe)
 - Create a [Ready Player Me VR half-body avatar](https://vr.readyplayer.me/en/avatar)
-- Complete [Eye Calibration](/docs/guides/features/eye-tracking/eye-calibration) for accurate eye tracking on your Magic Leap 2 device
+- Complete [Eye Calibration](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/eye-tracking/eye-calibration) for accurate eye tracking on your Magic Leap 2 device
 
 ## Setting up your project
 
-1. [Create a new Unity 2022 LTS 3D URP project.](/docs/guides/unity/getting-started/create-a-project)
+1. [Create a new Unity 2022 LTS 3D URP project.](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/create-a-project)
 
-2. [Configure Unity project settings for Magic Leap 2.](/docs/guides/unity/getting-started/configure-unity-settings)
+2. [Configure Unity project settings for Magic Leap 2.](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings)
 
 3. Copy the link to your [Ready Player Me VR avatar](https://vr.readyplayer.me/en/avatar).
 
@@ -121,5 +121,5 @@ This will make the hands of the Ready Player Me avatar move along with the detec
 
 - [Ready Player Me full body avatars](https://docs.readyplayer.me/ready-player-me/api-reference/avatars/full-body-avatars)
 - [Ready Player Me Unity documentation](https://docs.readyplayer.me/ready-player-me/integration-guides/unity)
-- [Magic Leap 2 Eye Tracking](/docs/guides/unity/input/eye-tracking/eye-tracking-overview)
-- [Magic Leap 2 Hand Tracking](/docs/guides/unity/input/hand-tracking/unity-hand-tracking-overview)
+- [Magic Leap 2 Eye Tracking](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/eye-tracking/eye-tracking-overview)
+- [Magic Leap 2 Hand Tracking](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/input/hand-tracking/unity-hand-tracking-overview)

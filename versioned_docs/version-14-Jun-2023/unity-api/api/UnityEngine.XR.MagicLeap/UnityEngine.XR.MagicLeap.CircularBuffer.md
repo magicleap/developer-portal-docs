@@ -9,7 +9,7 @@ summary: this is a specialized utility class meant to be used within the unity s
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 This is a specialized utility class meant to be used within the Unity SDK for very specific cases. This should not be taken as a general purpose Circular buffer as it does not cater to all possible use cases.   [More...](#detailed-description)  

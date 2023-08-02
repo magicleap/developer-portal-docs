@@ -97,7 +97,7 @@ public PostureFingerData PostureData;
 
 | Type | Description  | 
 |--|--|
-| [PostureFingerData](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.PostureFingerData.md) | Gesture classification posture related finger data.  |
+| [PostureFingerData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLGestureClassification/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLGestureClassification.PostureFingerData.md) | Gesture classification posture related finger data.  |
 
 
 

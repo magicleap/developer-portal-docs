@@ -30,7 +30,7 @@ Using this menu you can select the primary target of navigation
 
 <Image url= {require("/img/app-sim/navigation-target-menu-expanded.png")} >Application Simulator Primary Target of Navigation Expanded Dropdown Menu</Image>
 
-To learn more about Primary Navigation Targets see [Action Bindings and Input Mapping](/docs/guides/developer-tools/app-sim/app-sim-action-bindings.md).
+To learn more about Primary Navigation Targets see [Action Bindings and Input Mapping](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-sim-action-bindings.md).
 
 ## A - Scene View
 
@@ -83,7 +83,7 @@ If you want to move, rotate, or resize any of the objects in the room:
 
 <Image url= {require("/img/app-sim/virtual-room-object.png")} >Select Object in Scene View</Image>
 
-2. Set your manipulation mode in the toolbar, or press one of the [hotkeys described in Action Bindings](/docs/guides/developer-tools/app-sim/app-sim-action-bindings.md). Ensure you're manipulating the object in the correct transform space by toggling pivot or orientation.
+2. Set your manipulation mode in the toolbar, or press one of the [hotkeys described in Action Bindings](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/developer-tools/app-sim/app-sim-action-bindings.md). Ensure you're manipulating the object in the correct transform space by toggling pivot or orientation.
 
 <Image url= {require("/img/app-sim/virtual-room-object-menu.png")} >Change Manipulation of Object in Scene View</Image>
 

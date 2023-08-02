@@ -6,7 +6,7 @@ summary: a structure containing information on the current state of the head tra
 
 # MLHeadTrackingState
 
-**Module:** **[Head Tracking](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md)**
+**Module:** **[Head Tracking](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md)**
 
 
 
@@ -19,9 +19,9 @@ A structure containing information on the current state of the Head Tracking sys
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLHeadTrackingMode](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode) | **[mode](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md#mlheadtrackingmode-mode)**  |
-| float | **[confidence](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md#float-confidence)**  |
-| [MLHeadTrackingError](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror) | **[error](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md#mlheadtrackingerror-error)**  |
+| [MLHeadTrackingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode) | **[mode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md#mlheadtrackingmode-mode)**  |
+| float | **[confidence](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md#float-confidence)**  |
+| [MLHeadTrackingError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror) | **[error](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state.md#mlheadtrackingerror-error)**  |
 
 ## Detailed Description
 
@@ -34,7 +34,7 @@ A structure containing information on the current state of the Head Tracking sys
 
 
 :::caution Deprecated
-Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateEx](/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md). 
+Deprecated since 1.2.0. Scheduled for removal. Replaced by [MLHeadTrackingStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/struct_m_l_head_tracking_state_ex.md). 
 :::
 
 
@@ -57,7 +57,7 @@ MLHeadTrackingMode mode;
 
 | Type | Description |
 |--|--|
-| [MLHeadTrackingMode](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode) | A set of possible tracking modes the Head Tracking system can be in.  |
+| [MLHeadTrackingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingmode) | A set of possible tracking modes the Head Tracking system can be in.  |
 
 
 What tracking mode the Head Tracking system is currently in. 
@@ -93,7 +93,7 @@ MLHeadTrackingError error;
 
 | Type | Description |
 |--|--|
-| [MLHeadTrackingError](/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror) | A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
+| [MLHeadTrackingError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___head_tracking/group___head_tracking.md#enums-mlheadtrackingerror) | A set of possible error conditions that can cause Head Tracking to be less than ideal.  |
 
 
 Represents what tracking error (if any) is present. 

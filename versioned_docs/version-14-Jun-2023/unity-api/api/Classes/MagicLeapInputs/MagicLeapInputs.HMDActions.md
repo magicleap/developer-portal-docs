@@ -68,7 +68,7 @@ public HMDActions(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| @[MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
+| @[MagicLeapInputs](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
 
 
 
@@ -90,7 +90,7 @@ public void SetCallbacks(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [IHMDActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IHMDActions.md) |instance||
+| [IHMDActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IHMDActions.md) |instance||
 
 
 
@@ -112,7 +112,7 @@ public static implicit operator InputActionMap(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [HMDActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.HMDActions.md) |set||
+| [HMDActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.HMDActions.md) |set||
 
 
 

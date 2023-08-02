@@ -6,7 +6,7 @@ summary: mediacodec output format information.
 
 # MLMediaCodecErrorInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ MediaCodec Output Format information.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| int | **[error_code](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md#int-error-code)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md#void-data)**  |
+| int | **[error_code](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md#int-error-code)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_error_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -64,7 +64,7 @@ void * data;
 ```
 
 
-User data as passed to [MLMediaCodecSetCallbacksEx()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecsetcallbacksex). 
+User data as passed to [MLMediaCodecSetCallbacksEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacodecsetcallbacksex). 
 
 
 

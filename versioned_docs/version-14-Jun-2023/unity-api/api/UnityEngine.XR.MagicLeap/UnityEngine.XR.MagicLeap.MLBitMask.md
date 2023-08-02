@@ -9,7 +9,7 @@ summary: custom attribute to make it easy to turn enum fields into bit masks in 
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 Custom attribute to make it easy to turn enum fields into bit masks in the inspector. The enum type must be defined in order for the inspector to be able to know what the bits should be set to.   
@@ -43,7 +43,7 @@ public Type PropertyType { get; set; }
 
 ###  MLBitMask {#functions-mlbitmask}
 
-Initializes a new instance of the [MLBitMask](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLBitMask.md) class. enum Type. This constructor call is automatic when decorating a field with this Attribute. 
+Initializes a new instance of the [MLBitMask](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLBitMask.md) class. enum Type. This constructor call is automatic when decorating a field with this Attribute. 
 
 ```csharp
 public MLBitMask(

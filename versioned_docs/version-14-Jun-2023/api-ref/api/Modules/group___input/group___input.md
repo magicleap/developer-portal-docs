@@ -12,93 +12,93 @@ APIs for the Input system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLInputControllerTouchpadGesture](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md)**  |
-| struct | **[MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md)** <br></br>A structure containing callbacks for input controller events.  |
-| struct | **[MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md)** <br></br>A structure containing information about the current state of an input controller.  |
-| struct | **[MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md)** <br></br>A structure containing information about the current state of an input controller.  |
-| struct | **[MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md)** <br></br>A structure containing information about the connected devices.  |
-| struct | **[MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md)** <br></br>A structure containing information about the Pre-Defined pattern to be played.  |
-| struct | **[MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md)** <br></br>A structure containing information about the Buzz command to be played.  |
-| struct | **[MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md)** <br></br>A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
-| struct | **[MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)** <br></br>A structure containing a list of Buzz command and/or pre-defined patterns to be played.  |
-| union | **[MLInputCustomHaptics.MLInputCustomHapticsPattern](/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md)**  |
-| struct | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)** <br></br>A structure containing voice app-intent slot in voice event.  |
-| struct | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)** <br></br>A structure containing voice intent event.  |
-| struct | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)** <br></br>A structure containing callbacks for voice intent events.  |
-| struct | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)** <br></br>A structure containing settings for voice app intent.  |
+| struct | **[MLInputControllerTouchpadGesture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md)**  |
+| struct | **[MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md)** <br></br>A structure containing callbacks for input controller events.  |
+| struct | **[MLInputControllerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md)** <br></br>A structure containing information about the current state of an input controller.  |
+| struct | **[MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md)** <br></br>A structure containing information about the current state of an input controller.  |
+| struct | **[MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md)** <br></br>A structure containing information about the connected devices.  |
+| struct | **[MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md)** <br></br>A structure containing information about the Pre-Defined pattern to be played.  |
+| struct | **[MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md)** <br></br>A structure containing information about the Buzz command to be played.  |
+| struct | **[MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md)** <br></br>A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
+| struct | **[MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)** <br></br>A structure containing a list of Buzz command and/or pre-defined patterns to be played.  |
+| union | **[MLInputCustomHaptics.MLInputCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/union_m_l_input_custom_haptics_8_m_l_input_custom_haptics_pattern.md)**  |
+| struct | **[MLInputVoiceAppIntentSlot](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)** <br></br>A structure containing voice app-intent slot in voice event.  |
+| struct | **[MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)** <br></br>A structure containing voice intent event.  |
+| struct | **[MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)** <br></br>A structure containing callbacks for voice intent events.  |
+| struct | **[MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)** <br></br>A structure containing settings for voice app intent.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLInputControllerTouchpadGesture](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md) | **[MLInputControllerTouchpadGesture](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollertouchpadgesture)**  |
-| typedef struct [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) | **[MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollercallbacksex)** <br></br>A structure containing callbacks for input controller events.  |
-| typedef struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) | **[MLInputControllerState](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollerstate)** <br></br>A structure containing information about the current state of an input controller.  |
-| typedef struct [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) | **[MLInputControllerStateEx](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollerstateex)** <br></br>A structure containing information about the current state of an input controller.  |
-| typedef struct [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) | **[MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputconnecteddeviceslist)** <br></br>A structure containing information about the connected devices.  |
-| typedef struct [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) | **[MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputpredefinedpattern)** <br></br>A structure containing information about the Pre-Defined pattern to be played.  |
-| typedef struct [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) | **[MLInputBuzzCommand](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputbuzzcommand)** <br></br>A structure containing information about the Buzz command to be played.  |
-| typedef struct [MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) | **[MLInputCustomHaptics](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcustomhaptics)** <br></br>A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
-| typedef struct [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) | **[MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcustomhapticsinfo)** <br></br>A structure containing a list of Buzz command and/or pre-defined patterns to be played.  |
-| typedef struct [MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) | **[MLInputVoiceAppIntentSlot](/api-ref/api/Modules/group___input/group___input.md#struct-mlinputvoiceappintentslot)** <br></br>A structure containing voice app-intent slot in voice event.  |
-| typedef struct [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) | **[MLVoiceIntentEvent](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentevent)** <br></br>A structure containing voice intent event.  |
-| typedef struct [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) | **[MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentcallbacks)** <br></br>A structure containing callbacks for voice intent events.  |
-| typedef struct [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) | **[MLVoiceIntentSettings](/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentsettings)** <br></br>A structure containing settings for voice app intent.  |
+| typedef struct [MLInputControllerTouchpadGesture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md) | **[MLInputControllerTouchpadGesture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollertouchpadgesture)**  |
+| typedef struct [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) | **[MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollercallbacksex)** <br></br>A structure containing callbacks for input controller events.  |
+| typedef struct [MLInputControllerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) | **[MLInputControllerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollerstate)** <br></br>A structure containing information about the current state of an input controller.  |
+| typedef struct [MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) | **[MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcontrollerstateex)** <br></br>A structure containing information about the current state of an input controller.  |
+| typedef struct [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) | **[MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputconnecteddeviceslist)** <br></br>A structure containing information about the connected devices.  |
+| typedef struct [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) | **[MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputpredefinedpattern)** <br></br>A structure containing information about the Pre-Defined pattern to be played.  |
+| typedef struct [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) | **[MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputbuzzcommand)** <br></br>A structure containing information about the Buzz command to be played.  |
+| typedef struct [MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) | **[MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcustomhaptics)** <br></br>A structure containing information about the Buzz command and/or pre-defined pattern to be played.  |
+| typedef struct [MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) | **[MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputcustomhapticsinfo)** <br></br>A structure containing a list of Buzz command and/or pre-defined patterns to be played.  |
+| typedef struct [MLInputVoiceAppIntentSlot](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md) | **[MLInputVoiceAppIntentSlot](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlinputvoiceappintentslot)** <br></br>A structure containing voice app-intent slot in voice event.  |
+| typedef struct [MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) | **[MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentevent)** <br></br>A structure containing voice intent event.  |
+| typedef struct [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) | **[MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentcallbacks)** <br></br>A structure containing callbacks for voice intent events.  |
+| typedef struct [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) | **[MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#struct-mlvoiceintentsettings)** <br></br>A structure containing settings for voice app intent.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 12](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-12)** <br></br> { <br></br>[MLResultAPIPrefix_Input](/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-input) = ( 0x21DC  << 16)<br></br>} |
-| enum | **[MLInputResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult)** <br></br> { <br></br>[MLInputResult_ServiceNotAvailable](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-servicenotavailable) = MLResultAPIPrefix_Input,<br></br> [MLInputResult_PermissionDenied](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-permissiondenied),<br></br> [MLInputResult_DeviceNotFound](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-devicenotfound),<br></br> [MLInputResult_IllegalState](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-illegalstate),<br></br> [MLInputResult_InternalError](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-internalerror),<br></br> [MLInputResult_SpeechDisabled](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-speechdisabled),<br></br> [MLInputResult_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Input API calls.  |
-| enum | **[Anonymous Enum 13](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-13)** <br></br> { <br></br>[MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers) = 1,<br></br> [MLInput_MaxControllerTouchpadTouches](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollertouchpadtouches) = 2<br></br>} |
-| enum | **[MLInputControllerTouchpadGestureState](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate)** <br></br> { <br></br>[MLInputControllerTouchpadGestureState_End](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-end),<br></br> [MLInputControllerTouchpadGestureState_Continue](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-continue),<br></br> [MLInputControllerTouchpadGestureState_Start](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-start),<br></br> [MLInputControllerTouchpadGestureState_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputControllerTouchpadGestureType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype)** <br></br> { <br></br>[MLInputControllerTouchpadGestureType_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-none),<br></br> [MLInputControllerTouchpadGestureType_Tap](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-tap),<br></br> [MLInputControllerTouchpadGestureType_ForceTapDown](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcetapdown),<br></br> [MLInputControllerTouchpadGestureType_ForceTapUp](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcetapup),<br></br> [MLInputControllerTouchpadGestureType_ForceDwell](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcedwell),<br></br> [MLInputControllerTouchpadGestureType_SecondForceDown](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-secondforcedown),<br></br> [MLInputControllerTouchpadGestureType_RadialScroll](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-radialscroll),<br></br> [MLInputControllerTouchpadGestureType_Swipe](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-swipe),<br></br> [MLInputControllerTouchpadGestureType_Count](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-count),<br></br> [MLInputControllerTouchpadGestureType_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputControllerTouchpadGestureDirection](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection)** <br></br> { <br></br>[MLInputControllerTouchpadGestureDirection_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-none),<br></br> [MLInputControllerTouchpadGestureDirection_Up](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-up),<br></br> [MLInputControllerTouchpadGestureDirection_Down](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-down),<br></br> [MLInputControllerTouchpadGestureDirection_Left](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-left),<br></br> [MLInputControllerTouchpadGestureDirection_Right](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-right),<br></br> [MLInputControllerTouchpadGestureDirection_Clockwise](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-clockwise),<br></br> [MLInputControllerTouchpadGestureDirection_CounterClockwise](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-counterclockwise),<br></br> [MLInputControllerTouchpadGestureDirection_Count](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-count),<br></br> [MLInputControllerTouchpadGestureDirection_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputControllerType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype)** <br></br> { <br></br>[MLInputControllerType_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype-none),<br></br> [MLInputControllerType_Device](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype-device),<br></br> [MLInputControllerType_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputControllerButton](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton)** <br></br> { <br></br>[MLInputControllerButton_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-none),<br></br> [MLInputControllerButton_Bumper](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-bumper),<br></br> [MLInputControllerButton_Menu](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-menu),<br></br> [MLInputControllerButton_Count](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-count),<br></br> [MLInputControllerButton_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputControllerTriggerEvent](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent)** <br></br> { <br></br>[MLInputControllerTriggerEvent_Pull](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-pull),<br></br> [MLInputControllerTriggerEvent_Release](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-release),<br></br> [MLInputControllerTriggerEvent_Click](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-click),<br></br> [MLInputControllerTriggerEvent_Hold](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-hold),<br></br> [MLInputControllerTriggerEvent_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputPreDefinedPatternType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype)** <br></br> { <br></br>[MLInputPreDefinedPatternType_A](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-a) = 0,<br></br> [MLInputPreDefinedPatternType_B](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-b) = 1,<br></br> [MLInputPreDefinedPatternType_C](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-c) = 2,<br></br> [MLInputPreDefinedPatternType_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputCustomHapticsType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype)** <br></br> { <br></br>[MLInputCustomHapticsType_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-none) = 0,<br></br> [MLInputCustomHapticsType_Buzz](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-buzz) = 1,<br></br> [MLInputCustomHapticsType_Predefined](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-predefined) = 2,<br></br> [MLInputCustomHapticsType_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLInputControllerHand](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand)** <br></br> { <br></br>[MLInputControllerHand_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-none) = 0,<br></br> [MLInputControllerHand_Left](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-left) = 1,<br></br> [MLInputControllerHand_Right](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-right) = 2,<br></br> [MLInputControllerHand_Both](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-both) = 3,<br></br> [MLInputControllerHand_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Hand in which the controller is held.  |
-| enum | **[Anonymous Enum 29](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-29)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
-| enum | **[MLVoiceResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
-| enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
-| enum | **[MLVoiceIntentNoIntentReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
+| enum | **[Anonymous Enum 12](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-12)** <br></br> { <br></br>[MLResultAPIPrefix_Input](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-input) = ( 0x21DC  << 16)<br></br>} |
+| enum | **[MLInputResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult)** <br></br> { <br></br>[MLInputResult_ServiceNotAvailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-servicenotavailable) = MLResultAPIPrefix_Input,<br></br> [MLInputResult_PermissionDenied](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-permissiondenied),<br></br> [MLInputResult_DeviceNotFound](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-devicenotfound),<br></br> [MLInputResult_IllegalState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-illegalstate),<br></br> [MLInputResult_InternalError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-internalerror),<br></br> [MLInputResult_SpeechDisabled](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-speechdisabled),<br></br> [MLInputResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Input API calls.  |
+| enum | **[Anonymous Enum 13](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-13)** <br></br> { <br></br>[MLInput_MaxControllers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers) = 1,<br></br> [MLInput_MaxControllerTouchpadTouches](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollertouchpadtouches) = 2<br></br>} |
+| enum | **[MLInputControllerTouchpadGestureState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate)** <br></br> { <br></br>[MLInputControllerTouchpadGestureState_End](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-end),<br></br> [MLInputControllerTouchpadGestureState_Continue](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-continue),<br></br> [MLInputControllerTouchpadGestureState_Start](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-start),<br></br> [MLInputControllerTouchpadGestureState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputControllerTouchpadGestureType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype)** <br></br> { <br></br>[MLInputControllerTouchpadGestureType_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-none),<br></br> [MLInputControllerTouchpadGestureType_Tap](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-tap),<br></br> [MLInputControllerTouchpadGestureType_ForceTapDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcetapdown),<br></br> [MLInputControllerTouchpadGestureType_ForceTapUp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcetapup),<br></br> [MLInputControllerTouchpadGestureType_ForceDwell](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcedwell),<br></br> [MLInputControllerTouchpadGestureType_SecondForceDown](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-secondforcedown),<br></br> [MLInputControllerTouchpadGestureType_RadialScroll](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-radialscroll),<br></br> [MLInputControllerTouchpadGestureType_Swipe](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-swipe),<br></br> [MLInputControllerTouchpadGestureType_Count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-count),<br></br> [MLInputControllerTouchpadGestureType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputControllerTouchpadGestureDirection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection)** <br></br> { <br></br>[MLInputControllerTouchpadGestureDirection_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-none),<br></br> [MLInputControllerTouchpadGestureDirection_Up](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-up),<br></br> [MLInputControllerTouchpadGestureDirection_Down](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-down),<br></br> [MLInputControllerTouchpadGestureDirection_Left](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-left),<br></br> [MLInputControllerTouchpadGestureDirection_Right](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-right),<br></br> [MLInputControllerTouchpadGestureDirection_Clockwise](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-clockwise),<br></br> [MLInputControllerTouchpadGestureDirection_CounterClockwise](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-counterclockwise),<br></br> [MLInputControllerTouchpadGestureDirection_Count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-count),<br></br> [MLInputControllerTouchpadGestureDirection_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputControllerType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype)** <br></br> { <br></br>[MLInputControllerType_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype-none),<br></br> [MLInputControllerType_Device](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype-device),<br></br> [MLInputControllerType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertype-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputControllerButton](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton)** <br></br> { <br></br>[MLInputControllerButton_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-none),<br></br> [MLInputControllerButton_Bumper](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-bumper),<br></br> [MLInputControllerButton_Menu](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-menu),<br></br> [MLInputControllerButton_Count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-count),<br></br> [MLInputControllerButton_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerbutton-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputControllerTriggerEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent)** <br></br> { <br></br>[MLInputControllerTriggerEvent_Pull](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-pull),<br></br> [MLInputControllerTriggerEvent_Release](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-release),<br></br> [MLInputControllerTriggerEvent_Click](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-click),<br></br> [MLInputControllerTriggerEvent_Hold](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-hold),<br></br> [MLInputControllerTriggerEvent_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertriggerevent-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputPreDefinedPatternType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype)** <br></br> { <br></br>[MLInputPreDefinedPatternType_A](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-a) = 0,<br></br> [MLInputPreDefinedPatternType_B](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-b) = 1,<br></br> [MLInputPreDefinedPatternType_C](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-c) = 2,<br></br> [MLInputPreDefinedPatternType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputCustomHapticsType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype)** <br></br> { <br></br>[MLInputCustomHapticsType_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-none) = 0,<br></br> [MLInputCustomHapticsType_Buzz](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-buzz) = 1,<br></br> [MLInputCustomHapticsType_Predefined](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-predefined) = 2,<br></br> [MLInputCustomHapticsType_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLInputControllerHand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand)** <br></br> { <br></br>[MLInputControllerHand_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-none) = 0,<br></br> [MLInputControllerHand_Left](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-left) = 1,<br></br> [MLInputControllerHand_Right](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-right) = 2,<br></br> [MLInputControllerHand_Both](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-both) = 3,<br></br> [MLInputControllerHand_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Hand in which the controller is held.  |
+| enum | **[Anonymous Enum 29](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-29)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
+| enum | **[MLVoiceResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
+| enum | **[MLVoiceState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
+| enum | **[MLVoiceIntentNoIntentReason](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLInputControllerCallbacksExInit](/api-ref/api/Modules/group___input/group___input.md#void-mlinputcontrollercallbacksexinit)**([MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * inout_callbacks)<br></br>Initializes default values for [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md).  |
-| void | **[MLInputControllerStateExInit](/api-ref/api/Modules/group___input/group___input.md#void-mlinputcontrollerstateexinit)**([MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) inout_attr[MLInput_MaxControllers])<br></br>Initializes values for [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md).  |
-| void | **[MLInputConnectedDevicesListInit](/api-ref/api/Modules/group___input/group___input.md#void-mlinputconnecteddeviceslistinit)**([MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * inout_devices_list)<br></br>Initializes default values for [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md).  |
-| void | **[MLInputPreDefinedPatternInit](/api-ref/api/Modules/group___input/group___input.md#void-mlinputpredefinedpatterninit)**([MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * inout_pattern)<br></br>Initializes default values for [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md).  |
-| void | **[MLInputBuzzCommandInit](/api-ref/api/Modules/group___input/group___input.md#void-mlinputbuzzcommandinit)**([MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * inout_command)<br></br>Initializes default values for [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md).  |
-| void | **[MLInputCustomHapticsInfoInit](/api-ref/api/Modules/group___input/group___input.md#void-mlinputcustomhapticsinfoinit)**([MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * inout_info)<br></br>Initializes an array of [MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) with default values.  |
-| const char * | **[MLInputGetResultString](/api-ref/api/Modules/group___input/group___input.md#const-char-mlinputgetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLInputsResult and MLResult codes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputCreate](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates an input tracker.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputSetControllerCallbacksEx](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputsetcontrollercallbacksex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * controller_callbacks, void * user_data)<br></br>Sets the callbacks for controller input events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerStateEx](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstateex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * inout_devices)<br></br>Gets the device IDs of all connected devices.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputReleaseConnectedDevicesList](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputreleaseconnecteddeviceslist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * devices)<br></br>Releases the contents of [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) populated by [MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStartControllerFeedbackPreDefinedPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackpredefinedpattern)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id, [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * pattern)<br></br>Plays the pre-defined pattern.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStartControllerFeedbackBuzzCommand](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackbuzzcommand)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id, const [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * command)<br></br>Plays controller haptic buzz command.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputCreateCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * info, uint32_t * inout_pattern_id)<br></br>Creates a custom haptic pattern.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStartControllerFeedbackCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackcustomhapticspattern)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id, uint32_t pattern_id)<br></br>Plays the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputDeleteCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputdeletecustomhapticspattern)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint32_t pattern_id)<br></br>Deletes the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStopControllerFeedback](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstopcontrollerfeedback)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id)<br></br>Stops the currently playing haptic pattern.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputDestroy](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys an input tracker.  |
-| void | **[MLVoiceIntentCallbacksInit](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit)**([MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * inout_callbacks)<br></br>Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md).  |
-| void | **[MLVoiceIntentSettingsInit](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit)**([MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * inout_settings)<br></br>Initializes default values for [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentCreate](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a voice intent client.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentDestroy](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a voice intent client.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentConfigureSettings](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentconfiguresettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * voice_settings)<br></br>Sets the settings for voice intent events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentSetCallbacks](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentsetcallbacks)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * voice_callbacks, void * user_data)<br></br>Sets the callbacks for voice intent events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Starts voice intent processing.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Stops voice intent processing.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentIsEnabled](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentisenabled)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, bool * out_is_enabled)<br></br>Checks voice intent feature is enabled in the system.  |
+| void | **[MLInputControllerCallbacksExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlinputcontrollercallbacksexinit)**([MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * inout_callbacks)<br></br>Initializes default values for [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md).  |
+| void | **[MLInputControllerStateExInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlinputcontrollerstateexinit)**([MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) inout_attr[MLInput_MaxControllers])<br></br>Initializes values for [MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md).  |
+| void | **[MLInputConnectedDevicesListInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlinputconnecteddeviceslistinit)**([MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * inout_devices_list)<br></br>Initializes default values for [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md).  |
+| void | **[MLInputPreDefinedPatternInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlinputpredefinedpatterninit)**([MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * inout_pattern)<br></br>Initializes default values for [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md).  |
+| void | **[MLInputBuzzCommandInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlinputbuzzcommandinit)**([MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * inout_command)<br></br>Initializes default values for [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md).  |
+| void | **[MLInputCustomHapticsInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlinputcustomhapticsinfoinit)**([MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * inout_info)<br></br>Initializes an array of [MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) with default values.  |
+| const char * | **[MLInputGetResultString](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#const-char-mlinputgetresultstring)**([MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLInputsResult and MLResult codes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates an input tracker.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputSetControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputsetcontrollercallbacksex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * controller_callbacks, void * user_data)<br></br>Sets the callbacks for controller input events.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, struct [MLInputControllerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstateex)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetConnectedDevices](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * inout_devices)<br></br>Gets the device IDs of all connected devices.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputReleaseConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputreleaseconnecteddeviceslist)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * devices)<br></br>Releases the contents of [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) populated by [MLInputGetConnectedDevices](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStartControllerFeedbackPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackpredefinedpattern)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id, [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * pattern)<br></br>Plays the pre-defined pattern.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStartControllerFeedbackBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackbuzzcommand)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id, const [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * command)<br></br>Plays controller haptic buzz command.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputCreateCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * info, uint32_t * inout_pattern_id)<br></br>Creates a custom haptic pattern.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStartControllerFeedbackCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackcustomhapticspattern)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id, uint32_t pattern_id)<br></br>Plays the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputDeleteCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputdeletecustomhapticspattern)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint32_t pattern_id)<br></br>Deletes the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputStopControllerFeedback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstopcontrollerfeedback)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t controller_id)<br></br>Stops the currently playing haptic pattern.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys an input tracker.  |
+| void | **[MLVoiceIntentCallbacksInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit)**([MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * inout_callbacks)<br></br>Initializes default values for [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md).  |
+| void | **[MLVoiceIntentSettingsInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit)**([MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * inout_settings)<br></br>Initializes default values for [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentcreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates a voice intent client.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Destroys a voice intent client.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentConfigureSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentconfiguresettings)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * voice_settings)<br></br>Sets the settings for voice intent events.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentSetCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentsetcallbacks)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * voice_callbacks, void * user_data)<br></br>Sets the callbacks for voice intent events.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStartProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Starts voice intent processing.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStopProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Stops voice intent processing.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentIsEnabled](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentisenabled)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, bool * out_is_enabled)<br></br>Checks voice intent feature is enabled in the system.  |
 
 ## Detailed Description
 
@@ -442,8 +442,8 @@ Voice state in voice event.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLVoiceIntentNoIntentReason_NoReason |  0| In case of success. |
-| MLVoiceIntentNoIntentReason_Silence |  1| When the MLVoiceState in [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is either MLVoiceState_IntentSessionEndedTimeout or MLVoiceState_IntentSessionEndedError. |
-| MLVoiceIntentNoIntentReason_NoMatch |  2| When the MLVoiceState in [MLVoiceIntentEvent](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is MLVoiceState_IntentSessionEndedNoIntent. |
+| MLVoiceIntentNoIntentReason_Silence |  1| When the MLVoiceState in [MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is either MLVoiceState_IntentSessionEndedTimeout or MLVoiceState_IntentSessionEndedError. |
+| MLVoiceIntentNoIntentReason_NoMatch |  2| When the MLVoiceState in [MLVoiceIntentEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md) is MLVoiceState_IntentSessionEndedNoIntent. |
 | MLVoiceIntentNoIntentReason_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -475,7 +475,7 @@ A structure containing information about recognized touchpad gesture.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_touchpad_gesture.md)
 
 
 
@@ -491,11 +491,11 @@ A structure containing callbacks for input controller events.
 
 The final parameter to all the callbacks is a void *, which will point to whatever payload data the user provides in MLInputSetControllerCallbacksEx. Individual callbacks which are not required by the client can be NULL.
 
-This structure must be initialized by calling [MLInputControllerCallbacksExInit()](/api-ref/api/Modules/group___input/group___input.md#void-mlinputcontrollercallbacksexinit) before use.
+This structure must be initialized by calling [MLInputControllerCallbacksExInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlinputcontrollercallbacksexinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md)
 
 
 **API Level:**
@@ -516,7 +516,7 @@ A structure containing information about the current state of an input controlle
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md)
 
 :::caution Deprecated
 Deprecated since 1.1.0. Scheduled for removal. 
@@ -536,7 +536,7 @@ A structure containing information about the current state of an input controlle
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md)
 
 
 **API Level:**
@@ -557,7 +557,7 @@ A structure containing information about the connected devices.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md)
 
 
 **API Level:**
@@ -581,7 +581,7 @@ When playing haptic pre-defined pattern, needed information is stored in this st
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md)
 
 
 **API Level:**
@@ -605,7 +605,7 @@ When playing haptic buzz command, needed information is stored in this structure
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md)
 
 
 **API Level:**
@@ -624,7 +624,7 @@ typedef struct MLInputCustomHaptics MLInputCustomHaptics;
 
 A structure containing information about the Buzz command and/or pre-defined pattern to be played. 
 
-A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. A [MLInputCustomHapticsType](/api-ref/api/Modules/group___input/group___input.md#enum-mlinputcustomhapticstype) should be set while initializing the struct to indicate whether the to-be set pattern is a buzz command or a pre-defined pattern.
+A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array. A [MLInputCustomHapticsType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enum-mlinputcustomhapticstype) should be set while initializing the struct to indicate whether the to-be set pattern is a buzz command or a pre-defined pattern.
 
 The #duration will set the time for which a pattern is played:
 
@@ -635,7 +635,7 @@ The #duration will set the time for which a pattern is played:
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md)
 
 
 
@@ -654,7 +654,7 @@ A custom haptics pattern can be played by combining Buzz haptic command and/or a
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md)
 
 
 **API Level:**
@@ -675,7 +675,7 @@ A structure containing voice app-intent slot in voice event.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_voice_app_intent_slot.md)
 
 
 **API Level:**
@@ -696,7 +696,7 @@ A structure containing voice intent event.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_event.md)
 
 
 **API Level:**
@@ -717,11 +717,11 @@ A structure containing callbacks for voice intent events.
 
 The final parameter to all the callbacks is a void *, which will point to whatever payload data the user provides in MLVoiceIntentSetCallbacks. Individual callbacks which are not required by the client can be NULL.
 
-This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit) before use.
+This structure must be initialized by calling [MLVoiceIntentCallbacksInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentcallbacksinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md)
 
 
 **API Level:**
@@ -740,11 +740,11 @@ typedef struct MLVoiceIntentSettings MLVoiceIntentSettings;
 
 A structure containing settings for voice app intent. 
 
-This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit) before use.
+This structure must be initialized by calling [MLVoiceIntentSettingsInit()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#void-mlvoiceintentsettingsinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md)
 
 
 **API Level:**
@@ -766,13 +766,13 @@ static inline void MLInputControllerCallbacksExInit(
 )
 ```
 
-Initializes default values for [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md). 
+Initializes default values for [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * |inout_callbacks|The object to initialize with default settings. |
+| [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * |inout_callbacks|The object to initialize with default settings. |
 
 
 
@@ -792,13 +792,13 @@ static inline void MLInputControllerStateExInit(
 )
 ```
 
-Initializes values for [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md). 
+Initializes values for [MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) |inout_attr|The object to initialize. |
+| [MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) |inout_attr|The object to initialize. |
 
 
 
@@ -818,13 +818,13 @@ static inline void MLInputConnectedDevicesListInit(
 )
 ```
 
-Initializes default values for [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md). 
+Initializes default values for [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * |inout_devices_list|The object to initialize with default settings. |
+| [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * |inout_devices_list|The object to initialize with default settings. |
 
 
 
@@ -844,13 +844,13 @@ static inline void MLInputPreDefinedPatternInit(
 )
 ```
 
-Initializes default values for [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md). 
+Initializes default values for [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * |inout_pattern|The object to initialize with default settings. |
+| [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * |inout_pattern|The object to initialize with default settings. |
 
 
 
@@ -865,13 +865,13 @@ static inline void MLInputBuzzCommandInit(
 )
 ```
 
-Initializes default values for [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md). 
+Initializes default values for [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * |inout_command|The object to initialize with default settings. |
+| [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * |inout_command|The object to initialize with default settings. |
 
 
 
@@ -886,13 +886,13 @@ static inline void MLInputCustomHapticsInfoInit(
 )
 ```
 
-Initializes an array of [MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) with default values. 
+Initializes an array of [MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) with default values. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * |inout_info|The object to [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) struct to initialize the array elements with default settings. |
+| [MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * |inout_info|The object to [MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) struct to initialize the array elements with default settings. |
 
 
 
@@ -913,7 +913,7 @@ Returns an ASCII string for MLInputsResult and MLResult codes.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result|The input MLResult enum from MLInput functions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result|The input MLResult enum from MLInput functions. |
 **Required Permissions**:
 
   * None 
@@ -946,16 +946,16 @@ Creates an input tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created input tracker. Only valid if the return value is MLResult_Ok. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created input tracker. Only valid if the return value is MLResult_Ok. |
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create the input tracker to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created the input tracker. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create the input tracker due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|Failed to create the input tracker due to an unexpected state.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create the input tracker to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created the input tracker. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create the input tracker due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|Failed to create the input tracker due to an unexpected state.|
 **Required Permissions**:
 
   * None 
@@ -988,17 +988,17 @@ Sets the callbacks for controller input events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| const [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * |controller_callbacks|Pointer to [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) structure (can be NULL). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| const [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * |controller_callbacks|Pointer to [MLInputControllerCallbacksEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) structure (can be NULL). |
 | void * |user_data|Pointer to user payload data; this will be the first argument passed to all the callback functions (can be NULL). |
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set the callback for controller input events due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the callback for controller input events. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set the callback for the controller input events due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set the callback for controller input events due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set the callback for controller input events. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set the callback for the controller input events due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1030,16 +1030,16 @@ Returns current state of all possible input controllers.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) |out_state|Array of [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| struct [MLInputControllerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) |out_state|Array of [MLInputControllerState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to fetch the controller state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully fetched the controller state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to fetch the controller state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to fetch the controller state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully fetched the controller state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to fetch the controller state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1070,16 +1070,16 @@ Returns current state of all possible input controllers.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) |out_state|Array of [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| [MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) |out_state|Array of [MLInputControllerStateEx](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to fetch the controller state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully fetched the controller state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to fetch the controller state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to fetch the controller state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully fetched the controller state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to fetch the controller state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1111,16 +1111,16 @@ Gets the device IDs of all connected devices.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * |inout_devices|Pointer to [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) structure that will be populated. The app should call [MLInputReleaseConnectedDevicesList](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputreleaseconnecteddeviceslist) to release the contents after use. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * |inout_devices|Pointer to [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) structure that will be populated. The app should call [MLInputReleaseConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputreleaseconnecteddeviceslist) to release the contents after use. |
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to get the IDs of all connected devices due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully fetched the IDs of the connected devices. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get the IDs of all connected devices due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to get the IDs of all connected devices due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully fetched the IDs of the connected devices. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to get the IDs of all connected devices due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1146,22 +1146,22 @@ MLResult MLInputReleaseConnectedDevicesList(
 )
 ```
 
-Releases the contents of [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) populated by [MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices). 
+Releases the contents of [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) populated by [MLInputGetConnectedDevices](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * |devices|Pointer to [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) struct. Its contents will be released. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * |devices|Pointer to [MLInputConnectedDevicesList](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) struct. Its contents will be released. |
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released the contents of the device list. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to release the contents of the device list due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to release the contents of the device list due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully released the contents of the device list. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to release the contents of the device list due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to release the contents of the device list due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1194,19 +1194,19 @@ Plays the pre-defined pattern.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
-| [MLInputPreDefinedPattern](/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * |pattern|A pointer to #MLInputPredefinedPattern structure (can be NULL).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
+| [MLInputPreDefinedPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_pre_defined_pattern.md) * |pattern|A pointer to #MLInputPredefinedPattern structure (can be NULL).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start a pre-defined pattern due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started a pre-defined pattern on the specified controller. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start a pre-defined pattern due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start a pre-defined pattern due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started a pre-defined pattern on the specified controller. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start a pre-defined pattern due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1239,19 +1239,19 @@ Plays controller haptic buzz command.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
-| const [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * |command|A pointer to [MLInputBuzzCommand](/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) structure (can be NULL).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
+| const [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) * |command|A pointer to [MLInputBuzzCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_buzz_command.md) structure (can be NULL).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start the buzz command due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started the buzz command on the specified controller. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start the buzz command due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start the buzz command due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started the buzz command on the specified controller. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start the buzz command due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1284,25 +1284,25 @@ Creates a custom haptic pattern.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * |info|Pointer to [MLInputCustomHapticsInfo](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) struct. |
-| uint32_t * |inout_pattern_id|A pattern Id created by the API, to be used by [MLInputStartControllerFeedbackCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackcustomhapticspattern).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| [MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) * |info|Pointer to [MLInputCustomHapticsInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics_info.md) struct. |
+| uint32_t * |inout_pattern_id|A pattern Id created by the API, to be used by [MLInputStartControllerFeedbackCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputstartcontrollerfeedbackcustomhapticspattern).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create a custom haptic pattern due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created a custom haptic pattern. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create a custom haptic pattern due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create a custom haptic pattern due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created a custom haptic pattern. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to create a custom haptic pattern due to an unknown error.|
 **Required Permissions**:
 
   * None 
 
 
 
-A custom haptics pattern is defined as a set of either buzz command and/or pre-defined patterns. Each pattern is played for a duration defined as the #duration_ms member of each element of the [MLInputCustomHaptics](/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) array.
+A custom haptics pattern is defined as a set of either buzz command and/or pre-defined patterns. Each pattern is played for a duration defined as the #duration_ms member of each element of the [MLInputCustomHaptics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_input_custom_haptics.md) array.
 
 
 
@@ -1325,25 +1325,25 @@ MLResult MLInputStartControllerFeedbackCustomHapticsPattern(
 )
 ```
 
-Plays the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern). 
+Plays the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
-| uint32_t |pattern_id|Custom pattern id created by [MLInputCreateCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
+| uint32_t |pattern_id|Custom pattern id created by [MLInputCreateCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start the custom haptic pattern due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started the custom haptic pattern on the specified controller. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start the custom haptic pattern due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start the custom haptic pattern due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully started the custom haptic pattern on the specified controller. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to start the custom haptic pattern due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1369,23 +1369,23 @@ MLResult MLInputDeleteCustomHapticsPattern(
 )
 ```
 
-Deletes the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern). 
+Deletes the custom haptic pattern created by [MLInputCreateCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| uint32_t |pattern_id|Custom pattern Id created by [MLInputCreateCustomHapticsPattern](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| uint32_t |pattern_id|Custom pattern Id created by [MLInputCreateCustomHapticsPattern](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreatecustomhapticspattern).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the custom haptic pattern due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the custom haptic pattern on the specified controller. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy the custom haptic pattern due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the custom haptic pattern due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the custom haptic pattern on the specified controller. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy the custom haptic pattern due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1417,18 +1417,18 @@ Stops the currently playing haptic pattern.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
+| uint8_t |controller_id|Id of the input controller 0 ~ [MLInput_MaxControllers](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop the pattern due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stopped the pattern on the specified controller. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to stop the pattern due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|The service is either not initialized or terminated or the app is not in focus. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_DeviceNotFound|The haptic device could not be found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop the pattern due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stopped the pattern on the specified controller. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to stop the pattern due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1459,16 +1459,16 @@ Destroys an input tracker.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the input tracker to destroy. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the input tracker to destroy. |
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the input tracker due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the input tracker. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy the input handler due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|Failed to destroy the input handler due to an unexpected state.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the input tracker due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the input tracker. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to destroy the input handler due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLInputResult_IllegalState|Failed to destroy the input handler due to an unexpected state.|
 **Required Permissions**:
 
   * None 
@@ -1488,13 +1488,13 @@ static inline void MLVoiceIntentCallbacksInit(
 )
 ```
 
-Initializes default values for [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md). 
+Initializes default values for [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |inout_callbacks|The object to initialize with default settings.|
+| [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |inout_callbacks|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -1519,13 +1519,13 @@ static inline void MLVoiceIntentSettingsInit(
 )
 ```
 
-Initializes default values for [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md). 
+Initializes default values for [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |inout_settings|The object to initialize with default settings.|
+| [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |inout_settings|The object to initialize with default settings.|
 **Required Permissions**:
 
   * None 
@@ -1556,15 +1556,15 @@ Creates a voice intent client.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created voice intent client. Only valid if the return value is MLResult_Ok.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A handle to the created voice intent client. Only valid if the return value is MLResult_Ok.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create the voice intent client due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created the voice intent client. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed to create client due to missing permission.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to create the voice intent client due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully created the voice intent client. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Failed to create client due to missing permission.|
 **Required Permissions**:
 
   * com.magicleap.permission.VOICE_INPUT (protection level: dangerous) 
@@ -1595,14 +1595,14 @@ Destroys a voice intent client.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the voice intent client to destroy.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) to the voice intent client to destroy.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the voice intent client due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the voice intent client.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to destroy the voice intent client due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully destroyed the voice intent client.|
 **Required Permissions**:
 
   * None 
@@ -1629,17 +1629,17 @@ Sets the settings for voice intent events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
-| const [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |voice_settings|Pointer to [MLVoiceIntentSettings](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) structure.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
+| const [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) * |voice_settings|Pointer to [MLVoiceIntentSettings](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_settings.md) structure.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set settings for voice intent events due to an invalid param. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set settings for voice intent events. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the settings because required voice intent feature is disabled. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set settings for voice intent events due to an invalid param. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set settings for voice intent events. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the settings because required voice intent feature is disabled. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -1674,18 +1674,18 @@ Sets the callbacks for voice intent events.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
-| const [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |voice_callbacks|Pointer to [MLVoiceIntentCallbacks](/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) structure. Set this to NULL to unregister callbacks. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
+| const [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) * |voice_callbacks|Pointer to [MLVoiceIntentCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/struct_m_l_voice_intent_callbacks.md) structure. Set this to NULL to unregister callbacks. |
 | void * |user_data|Pointer to user payload data (can be NULL).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set callbacks for voice intent events due to an invalid param. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callbacks for voice intent events. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the callbacks because required voice intent feature is disabled in system settings. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set callbacks for voice intent events due to an invalid param. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set callbacks for voice intent events. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to set the callbacks because required voice intent feature is disabled in system settings. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -1716,15 +1716,15 @@ Starts voice intent processing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start processing due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully start intent processing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start processing due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully start intent processing. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -1732,7 +1732,7 @@ Starts voice intent processing.
 
 This API call affects the system voice service.
 
-NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
+NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
 
 
 
@@ -1759,15 +1759,15 @@ Stops voice intent processing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop processing due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stop intent processing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop processing due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stop intent processing. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
   * None 
@@ -1775,7 +1775,7 @@ Stops voice intent processing.
 
 This API call affects the system voice service.
 
-NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
+NOTE: If your application is processing voice intents make sure to call [MLVoiceIntentStopProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing) when application loses focus and [MLVoiceIntentStartProcessing](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing) when application gains focus to allow for uninterrupted processing of the voice intents.
 
 
 
@@ -1803,15 +1803,15 @@ Checks voice intent feature is enabled in the system.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the voice intent client. |
 | bool * |out_is_enabled|Returns status whether voice intent feature is enabled in system settings.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to check due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The API call completed successfuly.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to check due to an invalid parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|The API call completed successfuly.|
 **Required Permissions**:
 
   * None 

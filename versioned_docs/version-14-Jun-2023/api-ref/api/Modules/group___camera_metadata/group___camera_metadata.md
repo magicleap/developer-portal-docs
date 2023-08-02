@@ -12,163 +12,163 @@ Enumeration definitions for the various metadata entries.  [More...](#detailed-d
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md)**  |
+| struct | **[MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md)**  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) | **[MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#struct-mlcamerametadatarational)**  |
+| typedef struct [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) | **[MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#struct-mlcamerametadatarational)**  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLCameraMetadataColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode)** <br></br> { <br></br>[MLCameraMetadataColorCorrectionMode_TransformMatrix](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-transformmatrix) = 0,<br></br> [MLCameraMetadataColorCorrectionMode_Fast](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-fast),<br></br> [MLCameraMetadataColorCorrectionMode_HighQuality](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-highquality),<br></br> [MLCameraMetadataColorCorrectionMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode)** <br></br> { <br></br>[MLCameraMetadataColorCorrectionAberrationMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-off) = 0,<br></br> [MLCameraMetadataColorCorrectionAberrationMode_Fast](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-fast),<br></br> [MLCameraMetadataColorCorrectionAberrationMode_HighQuality](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-highquality),<br></br> [MLCameraMetadataColorCorrectionAberrationMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode)** <br></br> { <br></br>[MLCameraMetadataControlAEAntibandingMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-off) = 0,<br></br> [MLCameraMetadataControlAEAntibandingMode_50Hz](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-50hz),<br></br> [MLCameraMetadataControlAEAntibandingMode_60Hz](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-60hz),<br></br> [MLCameraMetadataControlAEAntibandingMode_Auto](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-auto),<br></br> [MLCameraMetadataControlAEAntibandingMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock)** <br></br> { <br></br>[MLCameraMetadataControlAELock_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock-off) = 0,<br></br> [MLCameraMetadataControlAELock_On](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock-on),<br></br> [MLCameraMetadataControlAELock_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode)** <br></br> { <br></br>[MLCameraMetadataControlAEMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode-off) = 0,<br></br> [MLCameraMetadataControlAEMode_On](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode-on),<br></br> [MLCameraMetadataControlAEMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock)** <br></br> { <br></br>[MLCameraMetadataControlAWBLock_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock-off) = 0,<br></br> [MLCameraMetadataControlAWBLock_On](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock-on),<br></br> [MLCameraMetadataControlAWBLock_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode)** <br></br> { <br></br>[MLCameraMetadataControlAWBMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-off) = 0,<br></br> [MLCameraMetadataControlAWBMode_Auto](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-auto),<br></br> [MLCameraMetadataControlAWBMode_Incandescent](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-incandescent),<br></br> [MLCameraMetadataControlAWBMode_Fluorescent](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-fluorescent),<br></br> [MLCameraMetadataControlAWBMode_WarmFluorescent](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-warmfluorescent),<br></br> [MLCameraMetadataControlAWBMode_Daylight](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-daylight),<br></br> [MLCameraMetadataControlAWBMode_CloudyDaylight](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-cloudydaylight),<br></br> [MLCameraMetadataControlAWBMode_Twilight](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-twilight),<br></br> [MLCameraMetadataControlAWBMode_Shade](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-shade),<br></br> [MLCameraMetadataControlAWBMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode)** <br></br> { <br></br>[MLCameraMetadataControlAFMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-off) = 0,<br></br> [MLCameraMetadataControlAFMode_Auto](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-auto),<br></br> [MLCameraMetadataControlAFMode_Macro](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-macro),<br></br> [MLCameraMetadataControlAFMode_ContinuousVideo](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-continuousvideo),<br></br> [MLCameraMetadataControlAFMode_ContinuousPicture](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-continuouspicture),<br></br> [MLCameraMetadataControlAFMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger)** <br></br> { <br></br>[MLCameraMetadataControlAFTrigger_Idle](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-idle) = 0,<br></br> [MLCameraMetadataControlAFTrigger_Start](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-start),<br></br> [MLCameraMetadataControlAFTrigger_Cancel](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-cancel),<br></br> [MLCameraMetadataControlAFTrigger_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode)** <br></br> { <br></br>[MLCameraMetadataControlMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-off) = 0,<br></br> [MLCameraMetadataControlMode_Auto](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-auto),<br></br> [MLCameraMetadataControlMode_UseSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-usescenemode),<br></br> [MLCameraMetadataControlMode_OffKeepState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-offkeepstate),<br></br> [MLCameraMetadataControlMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode)** <br></br> { <br></br>[MLCameraMetadataControlSceneMode_None](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-none) = 0,<br></br> [MLCameraMetadataControlSceneMode_Action](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-action) = 2,<br></br> [MLCameraMetadataControlSceneMode_Portrait](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-portrait) = 3,<br></br> [MLCameraMetadataControlSceneMode_Landscape](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-landscape) = 4,<br></br> [MLCameraMetadataControlSceneMode_Theatre](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-theatre) = 7,<br></br> [MLCameraMetadataControlSceneMode_Sports](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-sports) = 13,<br></br> [MLCameraMetadataControlSceneMode_Party](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-party) = 14,<br></br> [MLCameraMetadataControlSceneMode_CandleLight](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-candlelight) = 15,<br></br> [MLCameraMetadataControlSceneMode_Barcode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-barcode) = 16,<br></br> [MLCameraMetadataControlSceneMode_Medical](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-medical) = 100,<br></br> [MLCameraMetadataControlSceneMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode)** <br></br> { <br></br>[MLCameraMetadataControlEffectMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-off) = 0,<br></br> [MLCameraMetadataControlEffectMode_Grayscale](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-grayscale),<br></br> [MLCameraMetadataControlEffectMode_Negative](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-negative),<br></br> [MLCameraMetadataControlEffectMode_Sepia](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-sepia),<br></br> [MLCameraMetadataControlEffectMode_ColorSelection](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-colorselection),<br></br> [MLCameraMetadataControlEffectMode_Sharpening](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-sharpening),<br></br> [MLCameraMetadataControlEffectMode_Emboss](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-emboss),<br></br> [MLCameraMetadataControlEffectMode_Sketch](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-sketch),<br></br> [MLCameraMetadataControlEffectMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAEState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate)** <br></br> { <br></br>[MLCameraMetadataControlAEState_Inactive](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-inactive) = 0,<br></br> [MLCameraMetadataControlAEState_Searching](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-searching),<br></br> [MLCameraMetadataControlAEState_Converged](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-converged),<br></br> [MLCameraMetadataControlAEState_Locked](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-locked),<br></br> [MLCameraMetadataControlAEState_FlashRequired](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-flashrequired),<br></br> [MLCameraMetadataControlAEState_PreCapture](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-precapture),<br></br> [MLCameraMetadataControlAEState_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAWBState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate)** <br></br> { <br></br>[MLCameraMetadataControlAWBState_Inactive](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-inactive) = 0,<br></br> [MLCameraMetadataControlAWBState_Searching](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-searching),<br></br> [MLCameraMetadataControlAWBState_Converged](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-converged),<br></br> [MLCameraMetadataControlAWBState_Locked](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-locked),<br></br> [MLCameraMetadataControlAWBState_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAFState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate)** <br></br> { <br></br>[MLCameraMetadataControlAFState_Inactive](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-inactive) = 0,<br></br> [MLCameraMetadataControlAFState_PassiveScan](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-passivescan),<br></br> [MLCameraMetadataControlAFState_PassiveFocussed](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-passivefocussed),<br></br> [MLCameraMetadataControlAFState_ActiveScan](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-activescan),<br></br> [MLCameraMetadataControlAFState_FocusedLocked](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-focusedlocked),<br></br> [MLCameraMetadataControlAFState_NotFocusedLocked](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-notfocusedlocked),<br></br> [MLCameraMetadataControlAFState_PassiveUnFocussed](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-passiveunfocussed),<br></br> [MLCameraMetadataControlAFState_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlAFSceneChange](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange)** <br></br> { <br></br>[MLCameraMetadataControlAFSceneChange_NotDetected](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange-notdetected) = 0,<br></br> [MLCameraMetadataControlAFSceneChange_Detected](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange-detected),<br></br> [MLCameraMetadataControlAFSceneChange_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataLensState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate)** <br></br> { <br></br>[MLCameraMetadataLensState_Stationary](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate-stationary) = 0,<br></br> [MLCameraMetadataLensState_Moving](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate-moving),<br></br> [MLCameraMetadataLensState_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataScalerAvailableFormats](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats)** <br></br> { <br></br>[MLCameraMetadataScalerAvailableFormats_RAW16](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-raw16) = 0x20,<br></br> [MLCameraMetadataScalerAvailableFormats_RAW_OPAQUE](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-raw-opaque) = 0x24,<br></br> [MLCameraMetadataScalerAvailableFormats_YV12](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-yv12) = 0x32315659,<br></br> [MLCameraMetadataScalerAvailableFormats_YCrCb_420_SP](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-ycrcb-420-sp) = 0x11,<br></br> [MLCameraMetadataScalerAvailableFormats_IMPLEMENTATION_DEFINED](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-implementation-defined) = 0x22,<br></br> [MLCameraMetadataScalerAvailableFormats_YCbCr_420_888](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-ycbcr-420-888) = 0x23,<br></br> [MLCameraMetadataScalerAvailableFormats_BLOB](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-blob) = 0x21,<br></br> [MLCameraMetadataScalerAvailableFormats_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataScalerAvailableStreamConfigurations](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations)** <br></br> { <br></br>[MLCameraMetadataScalerAvailableStreamConfigurations_OUTPUT](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations-output) = 0,<br></br> [MLCameraMetadataScalerAvailableStreamConfigurations_INPUT](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations-input),<br></br> [MLCameraMetadataScalerAvailableStreamConfigurations_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize)** <br></br> { <br></br>[MLCameraMetadataJpegThumbnailSize_160x120](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-160x120) = 1,<br></br> [MLCameraMetadataJpegThumbnailSize_240x135](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-240x135) = 2,<br></br> [MLCameraMetadataJpegThumbnailSize_256x135](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-256x135) = 3,<br></br> [MLCameraMetadataJpegThumbnailSize_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-ensure32bits) = 0x7FFFFFFF<br></br>} |
-| enum | **[MLCameraMetadataControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode)** <br></br> { <br></br>[MLCameraMetadataControlForceApplyMode_Off](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode-off) = 0,<br></br> [MLCameraMetadataControlForceApplyMode_On](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode-on) = 1,<br></br> [MLCameraMetadataControlForceApplyMode_Ensure32Bits](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode)** <br></br> { <br></br>[MLCameraMetadataColorCorrectionMode_TransformMatrix](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-transformmatrix) = 0,<br></br> [MLCameraMetadataColorCorrectionMode_Fast](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-fast),<br></br> [MLCameraMetadataColorCorrectionMode_HighQuality](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-highquality),<br></br> [MLCameraMetadataColorCorrectionMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode)** <br></br> { <br></br>[MLCameraMetadataColorCorrectionAberrationMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-off) = 0,<br></br> [MLCameraMetadataColorCorrectionAberrationMode_Fast](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-fast),<br></br> [MLCameraMetadataColorCorrectionAberrationMode_HighQuality](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-highquality),<br></br> [MLCameraMetadataColorCorrectionAberrationMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode)** <br></br> { <br></br>[MLCameraMetadataControlAEAntibandingMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-off) = 0,<br></br> [MLCameraMetadataControlAEAntibandingMode_50Hz](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-50hz),<br></br> [MLCameraMetadataControlAEAntibandingMode_60Hz](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-60hz),<br></br> [MLCameraMetadataControlAEAntibandingMode_Auto](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-auto),<br></br> [MLCameraMetadataControlAEAntibandingMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock)** <br></br> { <br></br>[MLCameraMetadataControlAELock_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock-off) = 0,<br></br> [MLCameraMetadataControlAELock_On](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock-on),<br></br> [MLCameraMetadataControlAELock_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode)** <br></br> { <br></br>[MLCameraMetadataControlAEMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode-off) = 0,<br></br> [MLCameraMetadataControlAEMode_On](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode-on),<br></br> [MLCameraMetadataControlAEMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock)** <br></br> { <br></br>[MLCameraMetadataControlAWBLock_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock-off) = 0,<br></br> [MLCameraMetadataControlAWBLock_On](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock-on),<br></br> [MLCameraMetadataControlAWBLock_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode)** <br></br> { <br></br>[MLCameraMetadataControlAWBMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-off) = 0,<br></br> [MLCameraMetadataControlAWBMode_Auto](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-auto),<br></br> [MLCameraMetadataControlAWBMode_Incandescent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-incandescent),<br></br> [MLCameraMetadataControlAWBMode_Fluorescent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-fluorescent),<br></br> [MLCameraMetadataControlAWBMode_WarmFluorescent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-warmfluorescent),<br></br> [MLCameraMetadataControlAWBMode_Daylight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-daylight),<br></br> [MLCameraMetadataControlAWBMode_CloudyDaylight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-cloudydaylight),<br></br> [MLCameraMetadataControlAWBMode_Twilight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-twilight),<br></br> [MLCameraMetadataControlAWBMode_Shade](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-shade),<br></br> [MLCameraMetadataControlAWBMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode)** <br></br> { <br></br>[MLCameraMetadataControlAFMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-off) = 0,<br></br> [MLCameraMetadataControlAFMode_Auto](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-auto),<br></br> [MLCameraMetadataControlAFMode_Macro](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-macro),<br></br> [MLCameraMetadataControlAFMode_ContinuousVideo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-continuousvideo),<br></br> [MLCameraMetadataControlAFMode_ContinuousPicture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-continuouspicture),<br></br> [MLCameraMetadataControlAFMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger)** <br></br> { <br></br>[MLCameraMetadataControlAFTrigger_Idle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-idle) = 0,<br></br> [MLCameraMetadataControlAFTrigger_Start](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-start),<br></br> [MLCameraMetadataControlAFTrigger_Cancel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-cancel),<br></br> [MLCameraMetadataControlAFTrigger_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode)** <br></br> { <br></br>[MLCameraMetadataControlMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-off) = 0,<br></br> [MLCameraMetadataControlMode_Auto](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-auto),<br></br> [MLCameraMetadataControlMode_UseSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-usescenemode),<br></br> [MLCameraMetadataControlMode_OffKeepState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-offkeepstate),<br></br> [MLCameraMetadataControlMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode)** <br></br> { <br></br>[MLCameraMetadataControlSceneMode_None](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-none) = 0,<br></br> [MLCameraMetadataControlSceneMode_Action](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-action) = 2,<br></br> [MLCameraMetadataControlSceneMode_Portrait](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-portrait) = 3,<br></br> [MLCameraMetadataControlSceneMode_Landscape](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-landscape) = 4,<br></br> [MLCameraMetadataControlSceneMode_Theatre](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-theatre) = 7,<br></br> [MLCameraMetadataControlSceneMode_Sports](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-sports) = 13,<br></br> [MLCameraMetadataControlSceneMode_Party](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-party) = 14,<br></br> [MLCameraMetadataControlSceneMode_CandleLight](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-candlelight) = 15,<br></br> [MLCameraMetadataControlSceneMode_Barcode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-barcode) = 16,<br></br> [MLCameraMetadataControlSceneMode_Medical](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-medical) = 100,<br></br> [MLCameraMetadataControlSceneMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode)** <br></br> { <br></br>[MLCameraMetadataControlEffectMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-off) = 0,<br></br> [MLCameraMetadataControlEffectMode_Grayscale](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-grayscale),<br></br> [MLCameraMetadataControlEffectMode_Negative](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-negative),<br></br> [MLCameraMetadataControlEffectMode_Sepia](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-sepia),<br></br> [MLCameraMetadataControlEffectMode_ColorSelection](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-colorselection),<br></br> [MLCameraMetadataControlEffectMode_Sharpening](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-sharpening),<br></br> [MLCameraMetadataControlEffectMode_Emboss](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-emboss),<br></br> [MLCameraMetadataControlEffectMode_Sketch](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-sketch),<br></br> [MLCameraMetadataControlEffectMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAEState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate)** <br></br> { <br></br>[MLCameraMetadataControlAEState_Inactive](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-inactive) = 0,<br></br> [MLCameraMetadataControlAEState_Searching](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-searching),<br></br> [MLCameraMetadataControlAEState_Converged](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-converged),<br></br> [MLCameraMetadataControlAEState_Locked](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-locked),<br></br> [MLCameraMetadataControlAEState_FlashRequired](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-flashrequired),<br></br> [MLCameraMetadataControlAEState_PreCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-precapture),<br></br> [MLCameraMetadataControlAEState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAWBState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate)** <br></br> { <br></br>[MLCameraMetadataControlAWBState_Inactive](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-inactive) = 0,<br></br> [MLCameraMetadataControlAWBState_Searching](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-searching),<br></br> [MLCameraMetadataControlAWBState_Converged](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-converged),<br></br> [MLCameraMetadataControlAWBState_Locked](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-locked),<br></br> [MLCameraMetadataControlAWBState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAFState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate)** <br></br> { <br></br>[MLCameraMetadataControlAFState_Inactive](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-inactive) = 0,<br></br> [MLCameraMetadataControlAFState_PassiveScan](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-passivescan),<br></br> [MLCameraMetadataControlAFState_PassiveFocussed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-passivefocussed),<br></br> [MLCameraMetadataControlAFState_ActiveScan](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-activescan),<br></br> [MLCameraMetadataControlAFState_FocusedLocked](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-focusedlocked),<br></br> [MLCameraMetadataControlAFState_NotFocusedLocked](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-notfocusedlocked),<br></br> [MLCameraMetadataControlAFState_PassiveUnFocussed](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-passiveunfocussed),<br></br> [MLCameraMetadataControlAFState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlAFSceneChange](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange)** <br></br> { <br></br>[MLCameraMetadataControlAFSceneChange_NotDetected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange-notdetected) = 0,<br></br> [MLCameraMetadataControlAFSceneChange_Detected](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange-detected),<br></br> [MLCameraMetadataControlAFSceneChange_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataLensState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate)** <br></br> { <br></br>[MLCameraMetadataLensState_Stationary](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate-stationary) = 0,<br></br> [MLCameraMetadataLensState_Moving](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate-moving),<br></br> [MLCameraMetadataLensState_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataScalerAvailableFormats](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats)** <br></br> { <br></br>[MLCameraMetadataScalerAvailableFormats_RAW16](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-raw16) = 0x20,<br></br> [MLCameraMetadataScalerAvailableFormats_RAW_OPAQUE](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-raw-opaque) = 0x24,<br></br> [MLCameraMetadataScalerAvailableFormats_YV12](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-yv12) = 0x32315659,<br></br> [MLCameraMetadataScalerAvailableFormats_YCrCb_420_SP](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-ycrcb-420-sp) = 0x11,<br></br> [MLCameraMetadataScalerAvailableFormats_IMPLEMENTATION_DEFINED](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-implementation-defined) = 0x22,<br></br> [MLCameraMetadataScalerAvailableFormats_YCbCr_420_888](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-ycbcr-420-888) = 0x23,<br></br> [MLCameraMetadataScalerAvailableFormats_BLOB](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-blob) = 0x21,<br></br> [MLCameraMetadataScalerAvailableFormats_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailableformats-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataScalerAvailableStreamConfigurations](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations)** <br></br> { <br></br>[MLCameraMetadataScalerAvailableStreamConfigurations_OUTPUT](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations-output) = 0,<br></br> [MLCameraMetadataScalerAvailableStreamConfigurations_INPUT](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations-input),<br></br> [MLCameraMetadataScalerAvailableStreamConfigurations_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatascaleravailablestreamconfigurations-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize)** <br></br> { <br></br>[MLCameraMetadataJpegThumbnailSize_160x120](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-160x120) = 1,<br></br> [MLCameraMetadataJpegThumbnailSize_240x135](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-240x135) = 2,<br></br> [MLCameraMetadataJpegThumbnailSize_256x135](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-256x135) = 3,<br></br> [MLCameraMetadataJpegThumbnailSize_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize-ensure32bits) = 0x7FFFFFFF<br></br>} |
+| enum | **[MLCameraMetadataControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode)** <br></br> { <br></br>[MLCameraMetadataControlForceApplyMode_Off](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode-off) = 0,<br></br> [MLCameraMetadataControlForceApplyMode_On](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode-on) = 1,<br></br> [MLCameraMetadataControlForceApplyMode_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode-ensure32bits) = 0x7FFFFFFF<br></br>} |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionAvailableAberrationModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionavailableaberrationmodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) ** out_data, uint32_t * out_count)<br></br>Gets color correction aberration modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAvailableModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeavailablemodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) ** out_data, uint32_t * out_count)<br></br>Gets auto-exposure modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAvailableAntibandingModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeavailableantibandingmodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) ** out_data, uint32_t * out_count)<br></br>Gets anti-banding modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAECompensationRange](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaecompensationrange)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[2])<br></br>Gets auto-exposure compensation range.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAECompensationStep](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaecompensationstep)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) * out_data)<br></br>Gets AE compensation step.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAELockAvailable](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaelockavailable)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * out_data)<br></br>Gets AE lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEMaxRegions](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaemaxregions)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t * out_data)<br></br>Gets AE Max Regions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAvailableModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolavailablemodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) ** out_data, uint32_t * out_count)<br></br>Gets Available Modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBAvailableModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbavailablemodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) ** out_data, uint32_t * out_count)<br></br>Gets AWB modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFAvailableModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafavailablemodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) ** out_data, uint32_t * out_count)<br></br>Gets AF modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFMaxRegions](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafmaxregions)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t * out_data)<br></br>Gets max number of AF regions supported.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAvailableSceneModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolavailablescenemodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) ** out_data, uint32_t * out_count)<br></br>Gets Scene modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAvailableEffectModes](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolavailableeffectmodes)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) ** out_data, uint32_t * out_count)<br></br>Gets Effect modes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBLockAvailable](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawblockavailable)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * out_data)<br></br>Gets AWB lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorInfoActiveArraySize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorinfoactivearraysize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[4])<br></br>Gets sensor info active array sizes.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorInfoSensitivityRange](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorinfosensitivityrange)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[2])<br></br>Gets sensor info sensitivity range (Analog Gain).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetPostRawSensitivityBoostRange](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetpostrawsensitivityboostrange)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[2])<br></br>Gets post raw sensitivity boost range (Digital Gain).  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensInfoHyperfocalDistance](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensinfohyperfocaldistance)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, float * out_data)<br></br>Gets lens hyperfocal distance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensInfoMinimumFocusDistance](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensinfominimumfocusdistance)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, float * out_data)<br></br>Gets lens minimum focus distance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensInfoMinimumFocusDistanceIncrement](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensinfominimumfocusdistanceincrement)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, float * out_data)<br></br>Gets lens minimum focus distance increment. The lens position can be set in multiples of distance increments between hyperfocal distance and minimum focus distance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorOrientation](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensororientation)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t * out_data)<br></br>Gets sensor orientation degree.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionmoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * out_data)<br></br>Gets color correction mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionTransformRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiontransformrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) out_data[3][3])<br></br>Gets color correction transform.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionGainsRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiongainsrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, float out_data[4])<br></br>Gets color correction gains.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionAberrationModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionaberrationmoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * out_data)<br></br>Gets color correction aberration.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAntibandingModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeantibandingmoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * out_data)<br></br>Gets AE antibanding mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEExposureCompensationRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeexposurecompensationrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t * out_data)<br></br>Gets AE exposure compensation.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAELockRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaelockrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * out_data)<br></br>Gets AE lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaemoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * out_data)<br></br>Gets AE mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAERegionsRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeregionsrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-exposure regions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBLockRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawblockrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * out_data)<br></br>Gets AWB lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbmoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * out_data)<br></br>Gets AWB mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafmoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * out_data)<br></br>Gets AF mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFTriggerRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaftriggerrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * out_data)<br></br>Gets AF trigger.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFRegionsRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafregionsrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-focus regions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetAFDistanceRangeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetafdistancerangerequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, float out_data[2])<br></br>Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api MLCameraMetadataGetLensInfoHyperfocalDistance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensFocusDistanceRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensfocusdistancerequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, float * out_data)<br></br>Gets Lens focus distance in diopters. The distance is between minimum focus distance and hyperfocal distance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolmoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * out_data)<br></br>Gets mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlSceneModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolscenemoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * out_data)<br></br>Gets Scene mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorExposureTimeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorexposuretimerequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int64_t * out_data)<br></br>Gets sensor exposure time.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorSensitivityRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorsensitivityrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t * out_data)<br></br>Gets sensor sensitivity.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetPostRawSensitivityBoostRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetpostrawsensitivityboostrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t * out_data)<br></br>Gets post raw sensitivity boost.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlEffectModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontroleffectmoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * out_data)<br></br>Effect mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlExposureUpperTimeLimitRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolexposureuppertimelimitrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int64_t * out_data)<br></br>Gets exposure time upper limit.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSCoordinatesRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpscoordinatesrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, double out_data[3])<br></br>Gets JPEG GPS coordinates.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSTimestampRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpstimestamprequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int64_t * out_data)<br></br>Gets JPEG timestamp.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegThumbnailSizeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegthumbnailsizerequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * out_data)<br></br>Gets JPEG thumbnail size.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegQualityRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegqualityrequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, uint8_t * out_data)<br></br>Gets JPEG quality.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlForceApplyModeRequestMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolforceapplymoderequestmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * out_data)<br></br>Gets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectionmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * data)<br></br>Sets color correction mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionTransform](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectiontransform)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) data[3][3])<br></br>Sets color correction transform from RGB color space to output linear sRGB.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionGains](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectiongains)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const float data[4])<br></br>Sets color correction gains. The gains in the request metadata are the gains applied by the camera device.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectionaberrationmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * data)<br></br>Sets color correction chromatic aberration, minimizing chromatic artifacts that may occur.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaeantibandingmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * data)<br></br>Sets AE antiband mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAEExposureCompensation](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaeexposurecompensation)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t * data)<br></br>Sets auto-exposure compensation.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaelock)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * data)<br></br>Sets auto-exposure lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaemode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * data)<br></br>Sets auto-exposure mode. MLCameraMetadataControlAEMode_Off is not supported if camera is configured for 15FPS.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAERegions](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaeregions)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t data[3][5], const uint32_t count)<br></br>Sets auto-exposure regions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolawblock)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * data)<br></br>Sets automatic white balance lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolawbmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * data)<br></br>Sets AWB mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolafmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * data)<br></br>Sets AF mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaftrigger)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * data)<br></br>Sets AF trigger.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAFRegions](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolafregions)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t data[3][5], const uint32_t count)<br></br>Sets auto-focus regions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetAFDistanceRange](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetafdistancerange)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const float data[2])<br></br>Sets AF distance range. Both min and max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api MLCameraMetadataGetLensInfoHyperfocalDistance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetLensFocusDistance](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetlensfocusdistance)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const float * data)<br></br>Sets Lens focus distance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * data)<br></br>Sets mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolscenemode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * data)<br></br>Sets Scene mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetSensorExposureTime](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetsensorexposuretime)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int64_t * data)<br></br>Sets sensor exposure time.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetSensorSensitivity](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetsensorsensitivity)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t * data)<br></br>Sets sensor sensitivity.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetPostRawSensitivityBoost](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetpostrawsensitivityboost)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t * data)<br></br>Sets post raw sensitivity boost.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontroleffectmode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * data)<br></br>Sets Effect mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlExposureUpperTimeLimit](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolexposureuppertimelimit)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int64_t * data)<br></br>Sets exposure time upper limit.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegGPSCoordinates](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpeggpscoordinates)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const double data[3])<br></br>Sets JPEG GPS coordinates.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegGPSTimestamp](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpeggpstimestamp)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int64_t * data)<br></br>Sets JPEG timestamp.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpegthumbnailsize)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * data)<br></br>Sets JPEG thumbnail size.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegQuality](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpegquality)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const uint8_t * data)<br></br>Sets JPEG quality.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolforceapplymode)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * data)<br></br>Sets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionmoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * out_data)<br></br>Gets color correction.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionTransformResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiontransformresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) out_data[3][3])<br></br>Gets color correction transform from RGB color space to output linear sRGB.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionAberrationModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionaberrationmoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * out_data)<br></br>Gets color correction aberration.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionGainsResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiongainsresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, float out_data[4])<br></br>Gets color correction gains. The gains in the result metadata are the gains applied by the camera device to the current frame.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAntibandingModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeantibandingmoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * out_data)<br></br>Gets AE antibanding mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEExposureCompensationResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeexposurecompensationresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t * out_data)<br></br>Gets AE exposure compensation.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAELockResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaelockresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * out_data)<br></br>Gets auto-exposure lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaemoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * out_data)<br></br>Gets AE mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAERegionsResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeregionsresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-exposure regions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAETargetFPSRangeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaetargetfpsrangeresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t out_data[2])<br></br>Gets auto-exposure target FPS range.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEStateResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaestateresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAEState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate) * out_data)<br></br>Gets AE state.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBLockResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawblockresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * out_data)<br></br>Gets AWB lock.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBStateResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbstateresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAWBState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate) * out_data)<br></br>Gets AWB state.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbmoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * out_data)<br></br>Gets AWB mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafmoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * out_data)<br></br>Gets AF mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFTriggerResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaftriggerresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * out_data)<br></br>Gets AF trigger.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFRegionsResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafregionsresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-focus regions.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetAFDistanceRangeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetafdistancerangeresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, float out_data[2])<br></br>Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using API MLCameraMetadataGetLensInfoHyperfocalDistance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFStateResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafstateresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate) * out_data)<br></br>Gets AF state.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFSceneChangeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafscenechangeresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFSceneChange](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange) * out_data)<br></br>Gets AF scene change detection status.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensFocusDistanceResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensfocusdistanceresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, float * out_data)<br></br>Gets Lens focus distance.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensStateResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensstateresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataLensState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate) * out_data)<br></br>Get Lens state.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolmoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * out_data)<br></br>Gets mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlSceneModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolscenemoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * out_data)<br></br>Gets Scene mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorExposureTimeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorexposuretimeresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets sensor exposure time.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorSensitivityResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorsensitivityresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t * out_data)<br></br>Gets sensor sensitivity.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetPostRawSensitivityBoostResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetpostrawsensitivityboostresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t * out_data)<br></br>Gets post raw sensitivity boost.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorTimestampResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensortimestampresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets frame captured timestamp.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorFrameDurationResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorframedurationresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets sensor frame duration.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlEffectModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontroleffectmoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * out_data)<br></br>Gets Effect mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlExposureUpperTimeLimitResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolexposureuppertimelimitresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets exposure time upper limit.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSCoordinatesResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpscoordinatesresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, double out_data[3])<br></br>Gets JPEG GPS coordinates.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSTimestampResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpstimestampresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets JPEG timestamp.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegThumbnailSizeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegthumbnailsizeresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * out_data)<br></br>Gets JPEG thumbnail size.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlForceApplyModeResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolforceapplymoderesultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * out_data)<br></br>Gets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegQualityResultMetadata](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegqualityresultmetadata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, uint8_t * out_data)<br></br>Gets JPEG quality.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionAvailableAberrationModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionavailableaberrationmodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) ** out_data, uint32_t * out_count)<br></br>Gets color correction aberration modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAvailableModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeavailablemodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) ** out_data, uint32_t * out_count)<br></br>Gets auto-exposure modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAvailableAntibandingModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeavailableantibandingmodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) ** out_data, uint32_t * out_count)<br></br>Gets anti-banding modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAECompensationRange](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaecompensationrange)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[2])<br></br>Gets auto-exposure compensation range.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAECompensationStep](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaecompensationstep)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) * out_data)<br></br>Gets AE compensation step.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAELockAvailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaelockavailable)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * out_data)<br></br>Gets AE lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEMaxRegions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaemaxregions)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t * out_data)<br></br>Gets AE Max Regions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAvailableModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolavailablemodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) ** out_data, uint32_t * out_count)<br></br>Gets Available Modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBAvailableModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbavailablemodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) ** out_data, uint32_t * out_count)<br></br>Gets AWB modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFAvailableModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafavailablemodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) ** out_data, uint32_t * out_count)<br></br>Gets AF modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFMaxRegions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafmaxregions)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t * out_data)<br></br>Gets max number of AF regions supported.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAvailableSceneModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolavailablescenemodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) ** out_data, uint32_t * out_count)<br></br>Gets Scene modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAvailableEffectModes](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolavailableeffectmodes)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) ** out_data, uint32_t * out_count)<br></br>Gets Effect modes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBLockAvailable](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawblockavailable)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * out_data)<br></br>Gets AWB lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorInfoActiveArraySize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorinfoactivearraysize)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[4])<br></br>Gets sensor info active array sizes.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorInfoSensitivityRange](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorinfosensitivityrange)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[2])<br></br>Gets sensor info sensitivity range (Analog Gain).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetPostRawSensitivityBoostRange](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetpostrawsensitivityboostrange)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t out_data[2])<br></br>Gets post raw sensitivity boost range (Digital Gain).  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensInfoHyperfocalDistance](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensinfohyperfocaldistance)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, float * out_data)<br></br>Gets lens hyperfocal distance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensInfoMinimumFocusDistance](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensinfominimumfocusdistance)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, float * out_data)<br></br>Gets lens minimum focus distance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensInfoMinimumFocusDistanceIncrement](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensinfominimumfocusdistanceincrement)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, float * out_data)<br></br>Gets lens minimum focus distance increment. The lens position can be set in multiples of distance increments between hyperfocal distance and minimum focus distance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorOrientation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensororientation)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) characteristics_handle, int32_t * out_data)<br></br>Gets sensor orientation degree.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionmoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * out_data)<br></br>Gets color correction mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionTransformRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiontransformrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) out_data[3][3])<br></br>Gets color correction transform.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionGainsRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiongainsrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, float out_data[4])<br></br>Gets color correction gains.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionAberrationModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionaberrationmoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * out_data)<br></br>Gets color correction aberration.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAntibandingModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeantibandingmoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * out_data)<br></br>Gets AE antibanding mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEExposureCompensationRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeexposurecompensationrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t * out_data)<br></br>Gets AE exposure compensation.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAELockRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaelockrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * out_data)<br></br>Gets AE lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaemoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * out_data)<br></br>Gets AE mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAERegionsRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeregionsrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-exposure regions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBLockRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawblockrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * out_data)<br></br>Gets AWB lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbmoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * out_data)<br></br>Gets AWB mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafmoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * out_data)<br></br>Gets AF mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFTriggerRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaftriggerrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * out_data)<br></br>Gets AF trigger.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFRegionsRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafregionsrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-focus regions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetAFDistanceRangeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetafdistancerangerequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, float out_data[2])<br></br>Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api MLCameraMetadataGetLensInfoHyperfocalDistance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensFocusDistanceRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensfocusdistancerequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, float * out_data)<br></br>Gets Lens focus distance in diopters. The distance is between minimum focus distance and hyperfocal distance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolmoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * out_data)<br></br>Gets mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlSceneModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolscenemoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * out_data)<br></br>Gets Scene mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorExposureTimeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorexposuretimerequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int64_t * out_data)<br></br>Gets sensor exposure time.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorSensitivityRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorsensitivityrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t * out_data)<br></br>Gets sensor sensitivity.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetPostRawSensitivityBoostRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetpostrawsensitivityboostrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int32_t * out_data)<br></br>Gets post raw sensitivity boost.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlEffectModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontroleffectmoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * out_data)<br></br>Effect mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlExposureUpperTimeLimitRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolexposureuppertimelimitrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int64_t * out_data)<br></br>Gets exposure time upper limit.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSCoordinatesRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpscoordinatesrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, double out_data[3])<br></br>Gets JPEG GPS coordinates.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSTimestampRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpstimestamprequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, int64_t * out_data)<br></br>Gets JPEG timestamp.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegThumbnailSizeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegthumbnailsizerequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * out_data)<br></br>Gets JPEG thumbnail size.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegQualityRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegqualityrequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, uint8_t * out_data)<br></br>Gets JPEG quality.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlForceApplyModeRequestMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolforceapplymoderequestmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, [MLCameraMetadataControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * out_data)<br></br>Gets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectionmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * data)<br></br>Sets color correction mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionTransform](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectiontransform)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) data[3][3])<br></br>Sets color correction transform from RGB color space to output linear sRGB.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionGains](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectiongains)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const float data[4])<br></br>Sets color correction gains. The gains in the request metadata are the gains applied by the camera device.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcolorcorrectionaberrationmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * data)<br></br>Sets color correction chromatic aberration, minimizing chromatic artifacts that may occur.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaeantibandingmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * data)<br></br>Sets AE antiband mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAEExposureCompensation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaeexposurecompensation)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t * data)<br></br>Sets auto-exposure compensation.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaelock)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * data)<br></br>Sets auto-exposure lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaemode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * data)<br></br>Sets auto-exposure mode. MLCameraMetadataControlAEMode_Off is not supported if camera is configured for 15FPS.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAERegions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaeregions)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t data[3][5], const uint32_t count)<br></br>Sets auto-exposure regions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolawblock)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * data)<br></br>Sets automatic white balance lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolawbmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * data)<br></br>Sets AWB mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolafmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * data)<br></br>Sets AF mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolaftrigger)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * data)<br></br>Sets AF trigger.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlAFRegions](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolafregions)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t data[3][5], const uint32_t count)<br></br>Sets auto-focus regions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetAFDistanceRange](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetafdistancerange)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const float data[2])<br></br>Sets AF distance range. Both min and max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api MLCameraMetadataGetLensInfoHyperfocalDistance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetLensFocusDistance](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetlensfocusdistance)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const float * data)<br></br>Sets Lens focus distance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * data)<br></br>Sets mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolscenemode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * data)<br></br>Sets Scene mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetSensorExposureTime](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetsensorexposuretime)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int64_t * data)<br></br>Sets sensor exposure time.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetSensorSensitivity](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetsensorsensitivity)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t * data)<br></br>Sets sensor sensitivity.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetPostRawSensitivityBoost](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetpostrawsensitivityboost)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int32_t * data)<br></br>Sets post raw sensitivity boost.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontroleffectmode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * data)<br></br>Sets Effect mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlExposureUpperTimeLimit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolexposureuppertimelimit)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int64_t * data)<br></br>Sets exposure time upper limit.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegGPSCoordinates](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpeggpscoordinates)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const double data[3])<br></br>Sets JPEG GPS coordinates.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegGPSTimestamp](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpeggpstimestamp)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const int64_t * data)<br></br>Sets JPEG timestamp.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpegthumbnailsize)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * data)<br></br>Sets JPEG thumbnail size.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetJpegQuality](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetjpegquality)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const uint8_t * data)<br></br>Sets JPEG quality.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataSetControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatasetcontrolforceapplymode)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) request_handle, const [MLCameraMetadataControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * data)<br></br>Sets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionmoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * out_data)<br></br>Gets color correction.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionTransformResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiontransformresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) out_data[3][3])<br></br>Gets color correction transform from RGB color space to output linear sRGB.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionAberrationModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectionaberrationmoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * out_data)<br></br>Gets color correction aberration.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetColorCorrectionGainsResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcolorcorrectiongainsresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, float out_data[4])<br></br>Gets color correction gains. The gains in the result metadata are the gains applied by the camera device to the current frame.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEAntibandingModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeantibandingmoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * out_data)<br></br>Gets AE antibanding mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEExposureCompensationResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeexposurecompensationresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t * out_data)<br></br>Gets AE exposure compensation.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAELockResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaelockresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * out_data)<br></br>Gets auto-exposure lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaemoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * out_data)<br></br>Gets AE mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAERegionsResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaeregionsresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-exposure regions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAETargetFPSRangeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaetargetfpsrangeresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t out_data[2])<br></br>Gets auto-exposure target FPS range.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAEStateResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaestateresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAEState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate) * out_data)<br></br>Gets AE state.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBLockResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawblockresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * out_data)<br></br>Gets AWB lock.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBStateResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbstateresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAWBState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate) * out_data)<br></br>Gets AWB state.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAWBModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolawbmoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * out_data)<br></br>Gets AWB mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafmoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * out_data)<br></br>Gets AF mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFTriggerResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolaftriggerresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * out_data)<br></br>Gets AF trigger.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFRegionsResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafregionsresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t out_data[3][5], uint32_t * out_count)<br></br>Gets auto-focus regions.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetAFDistanceRangeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetafdistancerangeresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, float out_data[2])<br></br>Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using MLCameraMetadataGetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using API MLCameraMetadataGetLensInfoHyperfocalDistance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFStateResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafstateresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate) * out_data)<br></br>Gets AF state.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlAFSceneChangeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolafscenechangeresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlAFSceneChange](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange) * out_data)<br></br>Gets AF scene change detection status.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensFocusDistanceResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensfocusdistanceresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, float * out_data)<br></br>Gets Lens focus distance.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetLensStateResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetlensstateresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataLensState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate) * out_data)<br></br>Get Lens state.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolmoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * out_data)<br></br>Gets mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlSceneModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolscenemoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * out_data)<br></br>Gets Scene mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorExposureTimeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorexposuretimeresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets sensor exposure time.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorSensitivityResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorsensitivityresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t * out_data)<br></br>Gets sensor sensitivity.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetPostRawSensitivityBoostResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetpostrawsensitivityboostresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int32_t * out_data)<br></br>Gets post raw sensitivity boost.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorTimestampResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensortimestampresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets frame captured timestamp.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetSensorFrameDurationResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetsensorframedurationresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets sensor frame duration.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlEffectModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontroleffectmoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * out_data)<br></br>Gets Effect mode.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlExposureUpperTimeLimitResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolexposureuppertimelimitresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets exposure time upper limit.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSCoordinatesResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpscoordinatesresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, double out_data[3])<br></br>Gets JPEG GPS coordinates.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegGPSTimestampResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpeggpstimestampresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, int64_t * out_data)<br></br>Gets JPEG timestamp.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegThumbnailSizeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegthumbnailsizeresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * out_data)<br></br>Gets JPEG thumbnail size.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetControlForceApplyModeResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetcontrolforceapplymoderesultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, [MLCameraMetadataControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * out_data)<br></br>Gets force apply mode. Main camera and CV Camera share the same camera hardware resources. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera metadata properties. The force apply mode property can be used to override this. If CV Camera metadata has force apply mode on, the CV Camera metadata properties take precedence over Main Camera metadata properties.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLCameraMetadataGetJpegQualityResultMetadata](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#mlresult-mlcamerametadatagetjpegqualityresultmetadata)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) result_handle, uint8_t * out_data)<br></br>Gets JPEG quality.  |
 
 ## Detailed Description
 
 Enumeration definitions for the various metadata entries. 
 
-APIs for getting/setting camera characteristic/request/result metadata. Main camera and CV Camera share the same camera hardware resources. It is recommended that applications try to use as much as possible the default metadata returned by MLCameraPrepareCapture otherwise metadata properties from one camera can affect the other. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera except for metadata proprties for exposure upper time limit, JPEG gps timestamp, JPEG gps coordinates, JPEG quality and JPEG thumbnail size. The Force Apply mode setting can be used to override this. If CV Camera metadata have force apply mode on, the CV Camera metadata properties take precedence over Main Camera properties. The result metadata returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) can be used to check the actual metadata settings applied. For exposure upper time limit the lower of 2 values (Main Camera and CV Camera) are applied by default.If one of the cameras has force apply mode on the exposure upper time limit setting from that camera is applied. The JPEG gps timestamp , JPEG gps coordinates, JPEG quality and JPEG thumbnail size settings from one camera donot affect the other camera.
+APIs for getting/setting camera characteristic/request/result metadata. Main camera and CV Camera share the same camera hardware resources. It is recommended that applications try to use as much as possible the default metadata returned by MLCameraPrepareCapture otherwise metadata properties from one camera can affect the other. When both the cameras are streaming, request metadata properties for both cameras are merged and then applied. While merging, the metadata properties from Main Camera take precedence over CV camera except for metadata proprties for exposure upper time limit, JPEG gps timestamp, JPEG gps coordinates, JPEG quality and JPEG thumbnail size. The Force Apply mode setting can be used to override this. If CV Camera metadata have force apply mode on, the CV Camera metadata properties take precedence over Main Camera properties. The result metadata returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md) can be used to check the actual metadata settings applied. For exposure upper time limit the lower of 2 values (Main Camera and CV Camera) are applied by default.If one of the cameras has force apply mode on the exposure upper time limit setting from that camera is applied. The JPEG gps timestamp , JPEG gps coordinates, JPEG quality and JPEG thumbnail size settings from one camera donot affect the other camera.
 
 
 # State Machine for Auto Focus for different Modes.
@@ -691,7 +691,7 @@ Rational data type.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md)
 
 
 
@@ -716,17 +716,17 @@ Gets color correction aberration modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) ** |out_data|Array of aberration modes. The Library allocates and maintains the lifetime of the output data. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) ** |out_data|Array of aberration modes. The Library allocates and maintains the lifetime of the output data. |
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction aberration modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction aberration modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction aberration modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction aberration modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction aberration modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction aberration modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -759,17 +759,17 @@ Gets auto-exposure modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) ** |out_data|Array of auto-exposure modes. The Library allocates and maintains the lifetime of the output data.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) ** |out_data|Array of auto-exposure modes. The Library allocates and maintains the lifetime of the output data.|
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -802,17 +802,17 @@ Gets anti-banding modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) ** |out_data|Array of anti-banding modes. The Library allocates and maintains the lifetime of the output data.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) ** |out_data|Array of anti-banding modes. The Library allocates and maintains the lifetime of the output data.|
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AntiBanding modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AntiBanding modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AntiBanding modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AntiBanding modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AntiBanding modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AntiBanding modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -844,16 +844,16 @@ Gets auto-exposure compensation range.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | int32_t |out_data|Array of min (1st) and max (2nd) of auto-exposure compensation. The adjustment is measured as a count of steps.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE compensation range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE compensation range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE compensation range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE compensation range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE compensation range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE compensation range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -885,16 +885,16 @@ Gets AE compensation step.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) * |out_data|AE compensation step.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) * |out_data|AE compensation step.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE compensation step due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE compensation step. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE compensation step due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE compensation step due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE compensation step. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE compensation step due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -926,16 +926,16 @@ Gets AE lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |out_data|AE lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |out_data|AE lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE lock due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE lock due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -967,16 +967,16 @@ Gets AE Max Regions.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | int32_t * |out_data|Num AE Regions.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE Max Regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE Max Regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE Max Regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE Max Regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE Max Regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE Max Regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1009,17 +1009,17 @@ Gets Available Modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) ** |out_data|Array of modes. The Library allocates and maintains the lifetime of the output data. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) ** |out_data|Array of modes. The Library allocates and maintains the lifetime of the output data. |
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Avaialble Modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Available Modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Available Modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Avaialble Modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Available Modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Available Modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1052,17 +1052,17 @@ Gets AWB modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) ** |out_data|Array of AWB modes. The Library allocates and maintains the lifetime of the output data. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) ** |out_data|Array of AWB modes. The Library allocates and maintains the lifetime of the output data. |
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1095,17 +1095,17 @@ Gets AF modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) ** |out_data|Array of AF modes. The Library allocates and maintains the lifetime of the output data. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) ** |out_data|Array of AF modes. The Library allocates and maintains the lifetime of the output data. |
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1137,16 +1137,16 @@ Gets max number of AF regions supported.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | int32_t * |out_data|Num AF Regions.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF Max Regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF Max Regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF Max Regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF Max Regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF Max Regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF Max Regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1179,17 +1179,17 @@ Gets Scene modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) ** |out_data|Array of Scene modes. The Library allocates and maintains the lifetime of the output data. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) ** |out_data|Array of Scene modes. The Library allocates and maintains the lifetime of the output data. |
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Scene modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Scene modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Scene modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Scene modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Scene modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Scene modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1222,17 +1222,17 @@ Gets Effect modes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) ** |out_data|Array of Effect modes. The Library allocates and maintains the lifetime of the output data. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) ** |out_data|Array of Effect modes. The Library allocates and maintains the lifetime of the output data. |
 | uint32_t * |out_count|Number of output data elements.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Effect modes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Effect modes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Effect modes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Effect modes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Effect modes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Effect modes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1264,16 +1264,16 @@ Gets AWB lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
-| [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |out_data|AWB lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |out_data|AWB lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB lock due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB lock due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1305,16 +1305,16 @@ Gets sensor info active array sizes.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | int32_t |out_data|Active array size [left, top, right, bottom].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor info active array sizes due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor info active array sizes. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor info active array sizes due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor info active array sizes due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor info active array sizes. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor info active array sizes due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1346,16 +1346,16 @@ Gets sensor info sensitivity range (Analog Gain).
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | int32_t |out_data|Sensor info sensitivity range[min, max].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor info sensitivity range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor info sensitivity range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor info sensitivity range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor info sensitivity range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor info sensitivity range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor info sensitivity range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1387,16 +1387,16 @@ Gets post raw sensitivity boost range (Digital Gain).
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | int32_t |out_data|Post raw sensitivity boost range[min, max].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain post raw sensitivity boost range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained post raw sensitivity boost range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain post raw sensitivity boost range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain post raw sensitivity boost range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained post raw sensitivity boost range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain post raw sensitivity boost range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1428,16 +1428,16 @@ Gets lens hyperfocal distance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | float * |out_data|Lens hyperfocal distance in diopters.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain hyperfocal distance due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained hyperfocal distance. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain hyperfocal distance due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain hyperfocal distance due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained hyperfocal distance. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain hyperfocal distance due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1469,16 +1469,16 @@ Gets lens minimum focus distance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | float * |out_data|Minimum focus distance in diopters.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain minimum focus distance due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained minimum focus distance. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain minimum focus distance due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain minimum focus distance due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained minimum focus distance. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain minimum focus distance due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1510,16 +1510,16 @@ Gets lens minimum focus distance increment. The lens position can be set in mult
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | float * |out_data|Minimum focus distance increment in diopters.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain minimum focus distance increment due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained minimum focus distance increment. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain minimum focus distance increment due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain minimum focus distance increment due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained minimum focus distance increment. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain minimum focus distance increment due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1551,16 +1551,16 @@ Gets sensor orientation degree.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |characteristics_handle|Camera characteristic metadata handle acquired from [MLCameraGetCameraCharacteristics](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcameragetcameracharacteristics). |
 | int32_t * |out_data|Sensor orientation degree.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor orientation degree due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor orientation degree. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor orientation degree due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor orientation degree due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor orientation degree. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor orientation degree due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1592,16 +1592,16 @@ Gets color correction mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * |out_data|Color correction mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * |out_data|Color correction mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1633,16 +1633,16 @@ Gets color correction transform.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) |out_data|3x3 color correction transform.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) |out_data|3x3 color correction transform.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction transform due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction transform. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction transform due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction transform due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction transform. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction transform due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1674,16 +1674,16 @@ Gets color correction gains.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | float |out_data|Color correction gains.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction gains due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction gains. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction gains due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction gains due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction gains. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction gains due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1715,16 +1715,16 @@ Gets color correction aberration.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * |out_data|Color correction aberration.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * |out_data|Color correction aberration.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction aberration due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction aberration. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction aberration due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction aberration due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction aberration. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction aberration due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1756,16 +1756,16 @@ Gets AE antibanding mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * |out_data|AE antibanding mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * |out_data|AE antibanding mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE antibanding mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE antibanding mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE antibanding mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE antibanding mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE antibanding mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE antibanding mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1797,16 +1797,16 @@ Gets AE exposure compensation.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int32_t * |out_data|Exposure compensation value.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE exposure compensation due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE exposure compensation. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE exposure compensation due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE exposure compensation due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE exposure compensation. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE exposure compensation due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1838,16 +1838,16 @@ Gets AE lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |out_data|AE Lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |out_data|AE Lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE lock due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE lock due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1879,16 +1879,16 @@ Gets AE mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * |out_data|AE mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * |out_data|AE mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1921,7 +1921,7 @@ Gets auto-exposure regions.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int32_t |out_data|Auto-exposure regions. Regions array of area_size x 5[xmin, ymin, xmax, ymax, weight]. Coordinates must be between [(0,0), (width, height)). |
 | uint32_t * |out_count|Number of auto-exposure regions.|
 
@@ -1929,9 +1929,9 @@ Gets auto-exposure regions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -1963,16 +1963,16 @@ Gets AWB lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |out_data|AWB Lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |out_data|AWB Lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB lock due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB lock due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2004,16 +2004,16 @@ Gets AWB mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * |out_data|AWB mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * |out_data|AWB mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2045,16 +2045,16 @@ Gets AF mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * |out_data|AF mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * |out_data|AF mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2086,16 +2086,16 @@ Gets AF trigger.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * |out_data|AF trigger.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * |out_data|AF trigger.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF trigger due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF trigger. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF trigger due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF trigger due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF trigger. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF trigger due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2128,7 +2128,7 @@ Gets auto-focus regions.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int32_t |out_data|Auto-focus regions. Regions array of area_size x 5[xmin, ymin, xmax, ymax, weight]. Coordinates must be between [(0,0), (width, height)). |
 | uint32_t * |out_count|Number of auto-focus regions.|
 
@@ -2136,9 +2136,9 @@ Gets auto-focus regions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2170,16 +2170,16 @@ Gets AF distance range. Both Min and Max are specified as focus distance in diop
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | float |out_data|AF distance range [min, max].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF distance range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF distance range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF distance range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF distance range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF distance range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF distance range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2211,16 +2211,16 @@ Gets Lens focus distance in diopters. The distance is between minimum focus dist
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | float * |out_data|Lens focus distance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Lens focus distance range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Lens focus distance range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Lens focus distance range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Lens focus distance range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Lens focus distance range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Lens focus distance range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2252,16 +2252,16 @@ Gets mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * |out_data|Mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * |out_data|Mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2293,16 +2293,16 @@ Gets Scene mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * |out_data|Scene mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * |out_data|Scene mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain scene mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained scene mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain scene mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain scene mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained scene mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain scene mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2334,16 +2334,16 @@ Gets sensor exposure time.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int64_t * |out_data|Duration each pixel is exposed to light in nanoseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor exposure time due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor exposure time. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor exposure time due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor exposure time due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor exposure time. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor exposure time due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2375,16 +2375,16 @@ Gets sensor sensitivity.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int32_t * |out_data|Sensor sensitivity.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor sensitivity due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor sensitivity. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor sensitivity due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor sensitivity due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor sensitivity. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor sensitivity due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2416,16 +2416,16 @@ Gets post raw sensitivity boost.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int32_t * |out_data|Post raw sensitivity boost.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain post raw sensitivity boost due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained post raw sensitivity boost. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain post raw sensitivity boost due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain post raw sensitivity boost due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained post raw sensitivity boost. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain post raw sensitivity boost due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2457,16 +2457,16 @@ Effect mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * |out_data|Effect mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * |out_data|Effect mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain effect mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained effect mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain effect mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain effect mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained effect mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain effect mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2498,16 +2498,16 @@ Gets exposure time upper limit.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int64_t * |out_data|Exposure time upper limit for auto exposure algorithm.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain exposure time upper limit due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained exposure time upper limit. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain exposure time upperlimit due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain exposure time upper limit due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained exposure time upper limit. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain exposure time upperlimit due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2539,16 +2539,16 @@ Gets JPEG GPS coordinates.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | double |out_data|JPEG GPS coordinates – latitude and longitude in degrees, altitude in meters.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG GPS coordinates due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG GPS coordinates. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG GPS coordinates due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG GPS coordinates due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG GPS coordinates. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG GPS coordinates due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2580,16 +2580,16 @@ Gets JPEG timestamp.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | int64_t * |out_data|JPEG timestamp in UNIX Epoch time (UTC in seconds since January 1, 1970).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG timestamp due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG timestamp. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG timestamp due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG timestamp due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG timestamp. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG timestamp due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2621,16 +2621,16 @@ Gets JPEG thumbnail size.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * |out_data|Resolution of embedded JPEG thumbnail.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * |out_data|Resolution of embedded JPEG thumbnail.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG thumbnail size due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG thumbnail size. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG thumbnail size due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG thumbnail size due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG thumbnail size. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG thumbnail size due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2662,16 +2662,16 @@ Gets JPEG quality.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | uint8_t * |out_data|Compression quality of JPEG thumbnail, with 100 being the highest quality, and 1 the lowest.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG quality due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG quality. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG quality due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG quality due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG quality. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG quality due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2703,16 +2703,16 @@ Gets force apply mode. Main camera and CV Camera share the same camera hardware 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| [MLCameraMetadataControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * |out_data|Force apply mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLCameraMetadataControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * |out_data|Force apply mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain force apply mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained force apply mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain force apply mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain force apply mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained force apply mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain force apply mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2744,16 +2744,16 @@ Sets color correction mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * |data|Color correction mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * |data|Color correction mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2785,16 +2785,16 @@ Sets color correction transform from RGB color space to output linear sRGB.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) |data|Color correction transform (3x3). Set all values to 0/1 to clear the data.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) |data|Color correction transform (3x3). Set all values to 0/1 to clear the data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction transform due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction transform. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction transform due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction transform due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction transform. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction transform due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2826,16 +2826,16 @@ Sets color correction gains. The gains in the request metadata are the gains app
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const float |data|An array of floats for 4 color channel color correction gains. Set all values to 0 to clear the data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction gains due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction gains. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction gains due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction gains due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction gains. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction gains due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2867,16 +2867,16 @@ Sets color correction chromatic aberration, minimizing chromatic artifacts that 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * |data|Color correction aberration.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * |data|Color correction aberration.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction aberration due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction aberration. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction aberration due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set color correction aberration due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set color correction aberration. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set color correction aberration due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2908,16 +2908,16 @@ Sets AE antiband mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * |data|AE antibanding mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * |data|AE antibanding mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE antiband mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE antiband mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE antiband mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE antiband mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE antiband mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE antiband mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2949,16 +2949,16 @@ Sets auto-exposure compensation.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int32_t * |data|Exposure compensation value as a count of steps. If exposure compensation is set to 0, no exposure compensation will be applied.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE exposure compensation due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE exposure compensation. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE exposure compensation due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE exposure compensation due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE exposure compensation. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE exposure compensation due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -2990,16 +2990,16 @@ Sets auto-exposure lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |data|Auto-exposure Lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |data|Auto-exposure Lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE lock due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE lock due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3033,17 +3033,17 @@ Sets auto-exposure mode. MLCameraMetadataControlAEMode_Off is not supported if c
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * |data|Auto-exposure mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * |data|Auto-exposure mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE mode due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed to set AE Mode due to conflict between fps setting and AE Mode.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE mode due to an unknown error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_InvalidOperation|Failed to set AE Mode due to conflict between fps setting and AE Mode.|
 **Required Permissions**:
 
   * None 
@@ -3076,7 +3076,7 @@ Sets auto-exposure regions.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int32_t |data|Auto-exposure regions. Regions array of area_size x 5[xmin, ymin, xmax, ymax, weight] array with all zeros and count 1 clears the data. Coordinates must be between [(0,0), (width, height)). Max width, height can be obtained using MLCameraMetadataGetSensorInfoActiveArraySize. Weight for a region can be between [0,1000].For a region to be used its weight should be > 0. Weight is used to decide relative priority between multiple regions. |
 | const uint32_t |count|Number of auto-exposure regions.|
 
@@ -3084,9 +3084,9 @@ Sets auto-exposure regions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AE regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AE regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3118,16 +3118,16 @@ Sets automatic white balance lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |data|Automatic White Balance Lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |data|Automatic White Balance Lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE target FPS range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set automatic white balance lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set automatic white balance lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AE target FPS range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set automatic white balance lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set automatic white balance lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3159,16 +3159,16 @@ Sets AWB mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * |data|AWB mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * |data|AWB mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AWB mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AWB mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AWB mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AWB mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set AWB mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AWB mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3200,16 +3200,16 @@ Sets AF mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * |data|AF mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * |data|AF mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3241,16 +3241,16 @@ Sets AF trigger.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * |data|AF trigger.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * |data|AF trigger.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF trigger due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF trigger. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF trigger due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF trigger due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF trigger. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF trigger due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3283,7 +3283,7 @@ Sets auto-focus regions.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int32_t |data|Auto-focus regions. Regions array of area_size x 5[xmin, ymin, xmax, ymax, weight]. Coordinates must be between [(0,0), (width, height)). Max width, height can be obtained using MLCameraMetadataGetSensorInfoActiveArraySize. Weight for a region can be between [0,1000]. For a region to be used its weight should be > 0. All regions with weight > 0 are treated as same priority. |
 | const uint32_t |count|Number of auto-focus regions.|
 
@@ -3291,9 +3291,9 @@ Sets auto-focus regions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3325,16 +3325,16 @@ Sets AF distance range. Both min and max are specified as focus distance in diop
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const float |data|AF distance range [min, max].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF distance range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF distance range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF distance range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set AF distance range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set AF distance range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set AF distance range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3366,16 +3366,16 @@ Sets Lens focus distance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const float * |data|Lens focus distance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set Lens focus distance due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set Lens focus distance. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set Lens focus distance due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set Lens focus distance due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set Lens focus distance. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set Lens focus distance due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3407,16 +3407,16 @@ Sets mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * |data|Mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * |data|Mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3448,16 +3448,16 @@ Sets Scene mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * |data|Scene mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * |data|Scene mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set scene mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set scene mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set scene mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set scene mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set scene mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set scene mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3489,16 +3489,16 @@ Sets sensor exposure time.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int64_t * |data|Duration each pixel is exposed to light in nanoseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set sensor exposure time due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set sensor exposure time. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set sensor exposure time due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set sensor exposure time due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set sensor exposure time. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set sensor exposure time due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3532,16 +3532,16 @@ Sets sensor sensitivity.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int32_t * |data|Sensor sensitivity.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set sensor sensitivity due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set sensor sensitivity. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set sensor sensitivity due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set sensor sensitivity due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set sensor sensitivity. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set sensor sensitivity due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3573,16 +3573,16 @@ Sets post raw sensitivity boost.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int32_t * |data|Post raw sensitivity boost.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set post raw sensitivity boost due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set post raw sensitivity boost. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set post raw sensitivity boost due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set post raw sensitivity boost due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set post raw sensitivity boost. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set post raw sensitivity boost due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3614,16 +3614,16 @@ Sets Effect mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * |data|Effect mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * |data|Effect mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set effect mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set effect mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set effect mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set effect mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set effect mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set effect mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3655,16 +3655,16 @@ Sets exposure time upper limit.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int64_t * |data|Exposure time upper limit. Null pointer will clear the data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set exposure time upper limit due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set exposure time upper limit. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set exposure time upperlimit due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set exposure time upper limit due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set exposure time upper limit. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set exposure time upperlimit due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3696,16 +3696,16 @@ Sets JPEG GPS coordinates.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const double |data|JPEG GPS coordinates – latitude and longitude in degrees, altitude in meters.Null pointer will clear the data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG GPS coordinates due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG GPS coordinates. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG GPS coordinates due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG GPS coordinates due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG GPS coordinates. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG GPS coordinates due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3737,16 +3737,16 @@ Sets JPEG timestamp.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const int64_t * |data|JPEG timestamp in UNIX Epoch time (UTC in seconds since January 1, 1970). Null pointer will clear the data.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG timestamp due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG timestamp. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG timestamp due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG timestamp due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG timestamp. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG timestamp due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3778,16 +3778,16 @@ Sets JPEG thumbnail size.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * |data|Resolution of embedded JPEG thumbnail. Null pointer will prevent the inclusion of a thumbnail.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * |data|Resolution of embedded JPEG thumbnail. Null pointer will prevent the inclusion of a thumbnail.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG thumbnail size due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG thumbnail size. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG thumbnail size due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG thumbnail size due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG thumbnail size. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG thumbnail size due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3819,16 +3819,16 @@ Sets JPEG quality.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
 | const uint8_t * |data|Compression quality of JPEG thumbnail, with 100 being the highest quality, and 1 the lowest.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG quality due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG quality. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG quality due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set JPEG quality due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Set JPEG quality. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set JPEG quality due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3860,16 +3860,16 @@ Sets force apply mode. Main camera and CV Camera share the same camera hardware 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
-| const [MLCameraMetadataControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * |data|Force apply mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |request_handle|Camera capture request metadata handle acquired from [MLCameraPrepareCapture](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlcamerapreparecapture). |
+| const [MLCameraMetadataControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * |data|Force apply mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set force apply mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set force apply mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set force apply mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to set force apply mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully set force apply mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to set force apply mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3901,16 +3901,16 @@ Gets color correction.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataColorCorrectionMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * |out_data|Color correction mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataColorCorrectionMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionmode) * |out_data|Color correction mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3942,16 +3942,16 @@ Gets color correction transform from RGB color space to output linear sRGB.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataRational](/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) |out_data|3x3 color correction transform matrix.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataRational](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/struct_m_l_camera_metadata_rational.md) |out_data|3x3 color correction transform matrix.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction transform due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction transform. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction transform due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction transform due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction transform. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction transform due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -3983,16 +3983,16 @@ Gets color correction aberration.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataColorCorrectionAberrationMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * |out_data|Color correction aberration mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataColorCorrectionAberrationMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacolorcorrectionaberrationmode) * |out_data|Color correction aberration mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction aberration due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction aberration. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction aberration due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction aberration due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction aberration. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction aberration due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4024,16 +4024,16 @@ Gets color correction gains. The gains in the result metadata are the gains appl
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | float |out_data|An array of floats for 4 color channel color correction gains.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction gains due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction gains. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction gains due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain color correction gains due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained color correction gains. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain color correction gains due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4065,16 +4065,16 @@ Gets AE antibanding mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAEAntibandingMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * |out_data|AE antibanding mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAEAntibandingMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaeantibandingmode) * |out_data|AE antibanding mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE antibanding mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE antibanding mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE antibanding mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE antibanding mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE antibanding mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE antibanding mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4106,16 +4106,16 @@ Gets AE exposure compensation.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int32_t * |out_data|AE exposure compensation.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE exposure compensation due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE exposure compensation. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE exposure compensation due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE exposure compensation due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE exposure compensation. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE exposure compensation due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4147,16 +4147,16 @@ Gets auto-exposure lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAELock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |out_data|AE lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAELock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaelock) * |out_data|AE lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE lock due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE lock due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4190,16 +4190,16 @@ Gets AE mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAEMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * |out_data|AE control mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAEMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaemode) * |out_data|AE control mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4232,7 +4232,7 @@ Gets auto-exposure regions.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int32_t |out_data|Auto-exposure regions. Regions array of area_size x 5[xmin, ymin, xmax, ymax, weight]. Coordinates must be between [(0,0), (width, height)). |
 | uint32_t * |out_count|Number of auto-exposure regions.|
 
@@ -4240,9 +4240,9 @@ Gets auto-exposure regions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4274,16 +4274,16 @@ Gets auto-exposure target FPS range.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int32_t |out_data|Target range over which good exposure can be maintained by adjusting the capture frame rate.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE target FPS range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE target FPS range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE target FPS range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE target FPS range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE target FPS range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE target FPS range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4315,16 +4315,16 @@ Gets AE state.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAEState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate) * |out_data|AE state.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAEState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaestate) * |out_data|AE state.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AE state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AE state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AE state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4356,16 +4356,16 @@ Gets AWB lock.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAWBLock](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |out_data|AWB Lock.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAWBLock](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawblock) * |out_data|AWB Lock.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB lock due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB lock. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB lock due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB lock due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB lock. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB lock due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4397,16 +4397,16 @@ Gets AWB state.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAWBState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate) * |out_data|AWB state.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAWBState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbstate) * |out_data|AWB state.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4438,16 +4438,16 @@ Gets AWB mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAWBMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * |out_data|AWB mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAWBMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolawbmode) * |out_data|AWB mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AWB mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AWB mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AWB mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4479,16 +4479,16 @@ Gets AF mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAFMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * |out_data|AF mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAFMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafmode) * |out_data|AF mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4520,16 +4520,16 @@ Gets AF trigger.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAFTrigger](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * |out_data|AF trigger.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAFTrigger](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolaftrigger) * |out_data|AF trigger.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF trigger due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF trigger. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF trigger due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF trigger due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF trigger. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF trigger due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4562,7 +4562,7 @@ Gets auto-focus regions.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int32_t |out_data|Auto-focus regions. Regions array of area_size x 5[xmin, ymin, xmax, ymax, weight]. Coordinates must be between [(0,0), (width, height)). |
 | uint32_t * |out_count|Number of auto-focus regions.|
 
@@ -4570,9 +4570,9 @@ Gets auto-focus regions.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF regions due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF regions. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF regions due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF regions due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF regions. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF regions due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4604,16 +4604,16 @@ Gets AF distance range. Both Min and Max are specified as focus distance in diop
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | float |out_data|AF distance range [min, max].|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF distance range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF distance range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF distance range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF distance range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF distance range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF distance range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4645,16 +4645,16 @@ Gets AF state.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAFState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate) * |out_data|AF state.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAFState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafstate) * |out_data|AF state.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4686,16 +4686,16 @@ Gets AF scene change detection status.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlAFSceneChange](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange) * |out_data|AF scene change detected or not.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlAFSceneChange](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolafscenechange) * |out_data|AF scene change detected or not.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF scene change detection status due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF scene change detection status. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF scene change detection status due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain AF scene change detection status due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained AF scene change detection status. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain AF scene change detection status due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4727,16 +4727,16 @@ Gets Lens focus distance.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | float * |out_data|Lens focus distance.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Lens focus distance range due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Lens focus distance range. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Lens focus distance range due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Lens focus distance range due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Lens focus distance range. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Lens focus distance range due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4768,16 +4768,16 @@ Get Lens state.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataLensState](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate) * |out_data|Lens state.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataLensState](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatalensstate) * |out_data|Lens state.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Lens state due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Lens state. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Lens state due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain Lens state due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained Lens state. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain Lens state due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4809,16 +4809,16 @@ Gets mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * |out_data|Obtained mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolmode) * |out_data|Obtained mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4850,16 +4850,16 @@ Gets Scene mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlSceneMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * |out_data|Scene mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlSceneMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolscenemode) * |out_data|Scene mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain scene mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained scene mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain scene mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain scene mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained scene mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain scene mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4891,16 +4891,16 @@ Gets sensor exposure time.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int64_t * |out_data|Duration each pixel is exposed to light in nanoseconds.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor exposure time due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor exposure time. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor exposure time due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor exposure time due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor exposure time. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor exposure time due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4932,16 +4932,16 @@ Gets sensor sensitivity.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int32_t * |out_data|Sensor sensitivity.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor sensitivity due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor sensitivity. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor sensitivity due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor sensitivity due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor sensitivity. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor sensitivity due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -4973,16 +4973,16 @@ Gets post raw sensitivity boost.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int32_t * |out_data|Post raw sensitivity boost.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain post raw sensitivity boost due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained post raw sensitivity boost. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain post raw sensitivity boost due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain post raw sensitivity boost due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained post raw sensitivity boost. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain post raw sensitivity boost due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5014,16 +5014,16 @@ Gets frame captured timestamp.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int64_t * |out_data|Timestamp in nanoseconds when captured.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain frame captured timestamp due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained frame captured timestamp. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain frame captured timestamp due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain frame captured timestamp due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained frame captured timestamp. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain frame captured timestamp due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5055,16 +5055,16 @@ Gets sensor frame duration.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int64_t * |out_data|Sensor frame duration.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor frame duration due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor frame duration. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor frame duration due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain sensor frame duration due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained sensor frame duration. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain sensor frame duration due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5096,16 +5096,16 @@ Gets Effect mode.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlEffectMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * |out_data|Effect mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlEffectMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontroleffectmode) * |out_data|Effect mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain effect mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained effect mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain effect mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain effect mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained effect mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain effect mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5137,16 +5137,16 @@ Gets exposure time upper limit.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int64_t * |out_data|Exposure time upper limit.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain exposure time upper limit due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained exposure time upper limit. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain exposure time upperlimit due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain exposure time upper limit due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained exposure time upper limit. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain exposure time upperlimit due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5178,16 +5178,16 @@ Gets JPEG GPS coordinates.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | double |out_data|JPEG GPS coordinates – latitude and longitude in degrees, altitude in meters.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG GPS coordinates due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG GPS coordinates. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG GPS coordinates due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG GPS coordinates due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG GPS coordinates. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG GPS coordinates due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5219,16 +5219,16 @@ Gets JPEG timestamp.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | int64_t * |out_data|JPEG timestamp in UNIX Epoch time (UTC in seconds since January 1, 1970).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG timestamp due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG timestamp. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG timestamp due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG timestamp due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG timestamp. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG timestamp due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5260,16 +5260,16 @@ Gets JPEG thumbnail size.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataJpegThumbnailSize](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * |out_data|Resolution of embedded JPEG thumbnail. When set to 0, thumbnail will not be included.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataJpegThumbnailSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatajpegthumbnailsize) * |out_data|Resolution of embedded JPEG thumbnail. When set to 0, thumbnail will not be included.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG thumbnail size due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG thumbnail size. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG thumbnail size due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG thumbnail size due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG thumbnail size. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG thumbnail size due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5301,16 +5301,16 @@ Gets force apply mode. Main camera and CV Camera share the same camera hardware 
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
-| [MLCameraMetadataControlForceApplyMode](/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * |out_data|Force apply mode.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLCameraMetadataControlForceApplyMode](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera_metadata/group___camera_metadata.md#enums-mlcamerametadatacontrolforceapplymode) * |out_data|Force apply mode.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain force apply mode due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained force apply mode. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain force apply mode due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain force apply mode due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained force apply mode. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain force apply mode due to an unknown error.|
 **Required Permissions**:
 
   * None 
@@ -5342,16 +5342,16 @@ Gets JPEG quality.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |result_handle|Camera capture result metadata handle returned in [MLCameraCaptureCallbacks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___camera/struct_m_l_camera_capture_callbacks.md). |
 | uint8_t * |out_data|Compression quality of JPEG thumbnail, with 100 being the highest quality, and 1 the lowest.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG quality due to an invalid input parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG quality. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG quality due to an unknown error.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to obtain JPEG quality due to an invalid input parameter. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully obtained JPEG quality. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed to obtain JPEG quality due to an unknown error.|
 **Required Permissions**:
 
   * None 

@@ -9,7 +9,7 @@ summary: used to print logs within the plugin.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 Used to print logs within the plugin.   
@@ -32,7 +32,7 @@ public static VerbosityLevel Level { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [VerbosityLevel](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPluginLog.md#enums-verbositylevel) | Different verbosity levels of which logs to print. Modify this to change the verbosity of the Magic Leap APIs.  |
+| [VerbosityLevel](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPluginLog.md#enums-verbositylevel) | Different verbosity levels of which logs to print. Modify this to change the verbosity of the Magic Leap APIs.  |
 
 
 

@@ -6,7 +6,7 @@ summary: a structure to encapsulate information used by the power manager when g
 
 # MLPowerManagerPropertyTypeInfo
 
-**Module:** **[Power Manager](/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
+**Module:** **[Power Manager](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md)**
 
 
 
@@ -19,7 +19,7 @@ A structure to encapsulate information used by the Power Manager when getting th
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md#uint32-t-version)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md#uint32-t-version)**  |
 
 ## Detailed Description
 
@@ -29,7 +29,7 @@ struct MLPowerManagerPropertyTypeInfo;
 
 A structure to encapsulate information used by the Power Manager when getting the available property types. 
 
-This structure must be initialized by calling [MLPowerManagerPropertyTypeInfoInit](/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertytypeinfoinit) before use.
+This structure must be initialized by calling [MLPowerManagerPropertyTypeInfoInit](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___power_manager/group___power_manager.md#void-mlpowermanagerpropertytypeinfoinit) before use.
 
 
 

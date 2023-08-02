@@ -29,7 +29,7 @@ public MLWebRTC.VideoSink.Frame.OutputFormat Format { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.VideoSink.Frame.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
+| [MLWebRTC.VideoSink.Frame.OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) | Defines the supported output formats of the image planes.  |
 
 
 
@@ -66,7 +66,7 @@ public MLWebRTC.VideoSink.Frame.PlaneInfo [] ImagePlanes { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.VideoSink.Frame.PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) [] | Struct representing an image plane that comes from some captured camera frame.  |
+| [MLWebRTC.VideoSink.Frame.PlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) [] | Struct representing an image plane that comes from some captured camera frame.  |
 
 
 
@@ -108,7 +108,7 @@ public ulong TimeStampUs { get; set; }
 
 ## Public Methods
 
-### [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) Create {#frame-create}
+### [Frame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) Create {#frame-create}
 
 Creates and returns an initialized version of this struct. 
 
@@ -128,8 +128,8 @@ public static Frame Create(
 |--|--|--|
 | ulong |id|Id of the frame.|
 | ulong |timeStampUs|Timestamp of the frame in microseconds.|
-| [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) [] |imagePlanes|Array of image planes this frame contains.|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) |format|The output format of this frame.|
+| [PlaneInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) [] |imagePlanes|Array of image planes this frame contains.|
+| [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) |format|The output format of this frame.|
 
 
 
@@ -142,7 +142,7 @@ public static Frame Create(
 
 -----------
 
-### [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) Create {#frame-create}
+### [Frame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) Create {#frame-create}
 
 ```csharp
 public static Frame Create(
@@ -159,7 +159,7 @@ public static Frame Create(
 |--|--|--|
 | ulong |id||
 | ulong |timeStampUs||
-| [NativeBufferInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBufferInfo.md) |nativeBufferInfo||
+| [NativeBufferInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBufferInfo.md) |nativeBufferInfo||
 
 
 
@@ -206,7 +206,7 @@ public static readonly Dictionary< OutputFormat, byte > NativeImagePlanesLength 
 
 | Type | Description  | 
 |--|--|
-| readonly Dictionary&lt; [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat), byte &gt; | Defines the supported output formats of the image planes.  |
+| readonly Dictionary&lt; [OutputFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat), byte &gt; | Defines the supported output formats of the image planes.  |
 
 
 
@@ -224,7 +224,7 @@ Defines the supported output formats of the image planes.
 | ---------- | ----- | ----------- |
 | YUV_420_888 | | YUV&#95;420&#95;888 format.   |
 | RGBA_8888 | | RGBA&#95;8888 format.   |
-| NativeBuffer | | [Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer format   |
+| NativeBuffer | | [Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer format   |
 
 
 

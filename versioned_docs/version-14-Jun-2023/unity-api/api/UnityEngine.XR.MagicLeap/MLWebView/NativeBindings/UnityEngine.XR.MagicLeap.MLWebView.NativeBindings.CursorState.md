@@ -17,7 +17,7 @@ Struct to define the cursor's state.
 
 ## Public Methods
 
-### [CursorState](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/NativeBindings/UnityEngine.XR.MagicLeap.MLWebView.NativeBindings.CursorState.md) Create {#cursorstate-create}
+### [CursorState](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/NativeBindings/UnityEngine.XR.MagicLeap.MLWebView.NativeBindings.CursorState.md) Create {#cursorstate-create}
 
 Create and return an initialized version of this struct. 
 
@@ -36,7 +36,7 @@ public static CursorState Create(
 |--|--|--|
 | uint |xPosition||
 | uint |yPosition||
-| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Flags to set special key states during input. |
+| [EventFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) |modifiers|Flags to set special key states during input. |
 
 
 
@@ -63,7 +63,7 @@ public EventFlags Modifiers;
 
 | Type | Description  | 
 |--|--|
-| [EventFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) | Flags to set special key states during input.  |
+| [EventFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md#enums-eventflags) | Flags to set special key states during input.  |
 
 
 

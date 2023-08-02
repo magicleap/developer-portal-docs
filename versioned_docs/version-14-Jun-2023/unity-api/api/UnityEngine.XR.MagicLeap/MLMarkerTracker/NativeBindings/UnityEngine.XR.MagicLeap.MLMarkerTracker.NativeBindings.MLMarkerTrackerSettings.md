@@ -32,7 +32,7 @@ public MLMarkerTrackerSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [TrackerSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/TrackerSettings/UnityEngine.XR.MagicLeap.MLMarkerTracker.TrackerSettings.md) |settings||
+| [TrackerSettings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/TrackerSettings/UnityEngine.XR.MagicLeap.MLMarkerTracker.TrackerSettings.md) |settings||
 
 
 
@@ -56,7 +56,7 @@ public MLMarkerTrackerSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md) |settings||
+| [Settings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.Settings.md) |settings||
 
 
 
@@ -79,7 +79,7 @@ public readonly ArucoDictionaryName ArucoDicitonary;
 
 | Type | Description  | 
 |--|--|
-| readonly [ArucoDictionaryName](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-arucodictionaryname) | Supported pre-defined ArUco dictionary and AprilTags. Marker Tracker supports pre-defined ArUco dictionary and AprilTags. ArUco dictionaries can be looked up and markers can be generated for them here: [http://chev.me/arucogen/](http://chev.me/arucogen/) Note: Due to 4X4 dictionaries suffering from frequent false detections, we discourage their use.  |
+| readonly [ArucoDictionaryName](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-arucodictionaryname) | Supported pre-defined ArUco dictionary and AprilTags. Marker Tracker supports pre-defined ArUco dictionary and AprilTags. ArUco dictionaries can be looked up and markers can be generated for them here: [http://chev.me/arucogen/](http://chev.me/arucogen/) Note: Due to 4X4 dictionaries suffering from frequent false detections, we discourage their use.  |
 
 
 
@@ -114,7 +114,7 @@ Max size: Our camera needs to see the whole marker at once. If it's too large, w
 
 ### CustomTrackerProfile {#readonly-customtrackerprofile}
 
-Custom tracker profile to be used if the TrackerProfile member is the Custom value (see [MLMarkerTracker.Profile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) enum). 
+Custom tracker profile to be used if the TrackerProfile member is the Custom value (see [MLMarkerTracker.Profile](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) enum). 
 
 ```csharp
 
@@ -124,7 +124,7 @@ public readonly MLMarkerTrackerCustomProfile CustomTrackerProfile;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLMarkerTrackerCustomProfile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerCustomProfile.md) | Marker Tracker system provides a set of standard tracking profiles (see [MLMarkerTracker.Profile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) enum) to configure the tracker settings. This is the structure that defines a custom tracker profile.  |
+| readonly [MLMarkerTrackerCustomProfile](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerCustomProfile.md) | Marker Tracker system provides a set of standard tracking profiles (see [MLMarkerTracker.Profile](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) enum) to configure the tracker settings. This is the structure that defines a custom tracker profile.  |
 
 
 
@@ -203,7 +203,7 @@ public readonly Profile TrackerProfile;
 
 | Type | Description  | 
 |--|--|
-| readonly [Profile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) | Represents the different tracker profiles used to optimize marker tracking in difference use cases.  |
+| readonly [Profile](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) | Represents the different tracker profiles used to optimize marker tracking in difference use cases.  |
 
 
 

@@ -55,7 +55,7 @@ public EyesActions(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| @[MagicLeapInputs](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
+| @[MagicLeapInputs](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.md) |wrapper||
 
 
 
@@ -90,7 +90,7 @@ public void SetCallbacks(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [IEyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IEyesActions.md) |instance||
+| [IEyesActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IEyesActions.md) |instance||
 
 
 
@@ -112,7 +112,7 @@ public static implicit operator InputActionMap(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [EyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.EyesActions.md) |set||
+| [EyesActions](/versioned_docs/version-14-Jun-2023/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.EyesActions.md) |set||
 
 
 

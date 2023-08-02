@@ -11,8 +11,8 @@ title: ml_zi.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIIsServerConfigured](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlziisserverconfigured)**(bool * out_is_configured)<br></br>Checks to see if the Zero Iteration server is running and configured properly to use by a host application.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZISetProgramLabel](/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzisetprogramlabel)**(const char * in_label)<br></br>Set the human-readable label of the current project or library, to be used in UI display and diagnostic logs to indicate what is running.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZIIsServerConfigured](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlziisserverconfigured)**(bool * out_is_configured)<br></br>Checks to see if the Zero Iteration server is running and configured properly to use by a host application.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLZISetProgramLabel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___z_i/group___z_i.md#mlresult-mlzisetprogramlabel)**(const char * in_label)<br></br>Set the human-readable label of the current project or library, to be used in UI display and diagnostic logs to indicate what is running.  |
 
 
 
@@ -38,10 +38,10 @@ Checks to see if the Zero Iteration server is running and configured properly to
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|is_configured parameter is not valid (null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Timeout|The ZI server could not be reached. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error submitting the query.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|is_configured parameter is not valid (null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If query was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Timeout|The ZI server could not be reached. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|There was an unknown error submitting the query.|
 **Required Permissions**:
 
   * None 
@@ -78,7 +78,7 @@ Set the human-readable label of the current project or library, to be used in UI
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If label was accepted (always).|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If label was accepted (always).|
 **Required Permissions**:
 
   * None 

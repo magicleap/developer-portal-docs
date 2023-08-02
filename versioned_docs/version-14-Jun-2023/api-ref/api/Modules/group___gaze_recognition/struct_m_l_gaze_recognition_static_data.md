@@ -6,11 +6,11 @@ summary: static information about the gaze recognition system. populate with mlg
 
 # MLGazeRecognitionStaticData
 
-**Module:** **[Gaze Recognition](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md)**
+**Module:** **[Gaze Recognition](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md)**
 
 
 
-Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata).  [More...](#detailed-description)
+Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata).  [More...](#detailed-description)
 
 
 `#include <ml_gaze_recognition.h>`
@@ -19,10 +19,10 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[version](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
-| float | **[eye_height_max](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-height-max)**  |
-| float | **[eye_width_max](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-width-max)**  |
-| [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[vergence](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlcoordinateframeuid-vergence)**  |
+| uint32_t | **[version](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#uint32-t-version)**  |
+| float | **[eye_height_max](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-height-max)**  |
+| float | **[eye_width_max](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#float-eye-width-max)**  |
+| [MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) | **[vergence](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlcoordinateframeuid-vergence)**  |
 
 ## Detailed Description
 
@@ -30,7 +30,7 @@ Static information about the Gaze Recognition system. Populate with [MLGazeRecog
 struct MLGazeRecognitionStaticData;
 ```
 
-Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata). 
+Static information about the Gaze Recognition system. Populate with [MLGazeRecognitionGetStaticData()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___gaze_recognition/group___gaze_recognition.md#mlresult-mlgazerecognitiongetstaticdata). 
 
 
 

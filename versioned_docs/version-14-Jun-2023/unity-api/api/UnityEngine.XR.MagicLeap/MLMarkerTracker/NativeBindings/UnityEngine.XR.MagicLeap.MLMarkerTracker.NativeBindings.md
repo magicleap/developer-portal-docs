@@ -11,14 +11,14 @@ title: NativeBindings
 
 
 
-Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
+Inherits from: <br></br>[MagicLeapNativeBindings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
 
 
 
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerCreate {#mlresultcode-mlmarkertrackercreate}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerCreate {#mlresultcode-mlmarkertrackercreate}
 
 Create a Marker Scanner. Requires CameraCapture, LowLatencyLightwear priveledges. 
 
@@ -34,7 +34,7 @@ public MLResult.Code MLMarkerTrackerCreate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [MLMarkerTrackerSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerSettings.md) |settings|List of settings of type  [MLMarkerTrackerSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerSettings.md)  that configure the scanner. |
+| in [MLMarkerTrackerSettings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerSettings.md) |settings|List of settings of type  [MLMarkerTrackerSettings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerSettings.md)  that configure the scanner. |
 | out ulong |handle|A pointer to an   MLHandle   to the newly created Marker Scanner. If this operation fails, handle will be   ML&#95;INVALID&#95;HANDLE  . |
 
 
@@ -48,7 +48,7 @@ public MLResult.Code MLMarkerTrackerCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerDestroy {#mlresultcode-mlmarkertrackerdestroy}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerDestroy {#mlresultcode-mlmarkertrackerdestroy}
 
 Destroy a Marker Scanner. Requires CameraCapture, LowLatencyLightwear priveleges. 
 
@@ -77,7 +77,7 @@ public MLResult.Code MLMarkerTrackerDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerGetResult {#mlresultcode-mlmarkertrackergetresult}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerGetResult {#mlresultcode-mlmarkertrackergetresult}
 
 brief Get the results for Marker Scanning.= This function can be used to poll results from the scanner. This will allocate memory for the results array that will have to be freed later. 
 
@@ -94,7 +94,7 @@ public MLResult.Code MLMarkerTrackerGetResult(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |scanner&#95;handle|  MLHandle   to the Marker Scanner created by MLMarkerTrackerCreate(). |
-| ref [MLMarkerTrackerResultArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResultArray.md) |data|out&#95;data Pointer to an array of pointers to [MLMarkerTrackerResult](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResult.md). The content will be freed by the MLMarkerTrackerReleaseResult. |
+| ref [MLMarkerTrackerResultArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResultArray.md) |data|out&#95;data Pointer to an array of pointers to [MLMarkerTrackerResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResult.md). The content will be freed by the MLMarkerTrackerReleaseResult. |
 
 
 
@@ -102,7 +102,7 @@ public MLResult.Code MLMarkerTrackerGetResult(
 
 | Type | Name | Description | 
 |--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |MLResult&#95;UnspecifiedFailure|Failed to return detections due to an internal error. |
+| [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |MLResult&#95;UnspecifiedFailure|Failed to return detections due to an internal error. |
 
 
 
@@ -115,7 +115,7 @@ MLResult&#95;Ok Successfully fetched and returned all detections.
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerReleaseResult {#mlresultcode-mlmarkertrackerreleaseresult}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerReleaseResult {#mlresultcode-mlmarkertrackerreleaseresult}
 
 Release the resources for the results array. 
 
@@ -130,7 +130,7 @@ public MLResult.Code MLMarkerTrackerReleaseResult(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [MLMarkerTrackerResultArray](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResultArray.md) |data|The list of detections to be freed.|
+| ref [MLMarkerTrackerResultArray](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerResultArray.md) |data|The list of detections to be freed.|
 
 
 
@@ -143,7 +143,7 @@ public MLResult.Code MLMarkerTrackerReleaseResult(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerUpdateSettings {#mlresultcode-mlmarkertrackerupdatesettings}
+### [MLResult.Code](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMarkerTrackerUpdateSettings {#mlresultcode-mlmarkertrackerupdatesettings}
 
 Update the Marker Scanner with new settings. Requires CameraCapture, LowLatencyLightwear priveledges. 
 
@@ -160,7 +160,7 @@ public MLResult.Code MLMarkerTrackerUpdateSettings(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |scanner&#95;handle|MLHandle to the Marker Scanner created by MLArucoScannerCreate(). |
-| in [MLMarkerTrackerSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerSettings.md) |scanner&#95;settings|List of new Marker Scanner settings. |
+| in [MLMarkerTrackerSettings](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerSettings.md) |scanner&#95;settings|List of new Marker Scanner settings. |
 
 
 

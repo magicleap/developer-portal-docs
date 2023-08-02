@@ -9,7 +9,7 @@ summary: handles dispatching calls from the magic leap native thread to the unit
 
 
 **NameSpace:** 
-[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) 
+[Native](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) 
 
 
 Handles dispatching calls from the Magic Leap native thread to the Unity thread   

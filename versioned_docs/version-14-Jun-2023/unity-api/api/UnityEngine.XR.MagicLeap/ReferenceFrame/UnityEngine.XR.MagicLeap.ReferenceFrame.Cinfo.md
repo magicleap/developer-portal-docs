@@ -29,7 +29,7 @@ public Native.MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
 
 | Type | Description  | 
 |--|--|
-| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
+| [Native.MagicLeapNativeBindings.MLCoordinateFrameUID](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 
@@ -56,7 +56,7 @@ public Pose closetCoordinateFrame;
 
 ### initialAnchorPose {#pose-initialanchorpose}
 
-The initial pose of the anchor. Necessary so we can compute the transform between [closetCoordinateFrame](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md#pose-closetcoordinateframe) and the anchor. 
+The initial pose of the anchor. Necessary so we can compute the transform between [closetCoordinateFrame](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md#pose-closetcoordinateframe) and the anchor. 
 
 ```csharp
 

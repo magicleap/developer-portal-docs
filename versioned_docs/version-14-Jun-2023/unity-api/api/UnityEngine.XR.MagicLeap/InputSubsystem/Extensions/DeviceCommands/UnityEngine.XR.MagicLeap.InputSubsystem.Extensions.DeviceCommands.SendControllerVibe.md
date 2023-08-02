@@ -50,7 +50,7 @@ public FourCC typeStatic { get; set; }
 
 ## Public Methods
 
-### [SendControllerVibe](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SendControllerVibe.md) Create {#sendcontrollervibe-create}
+### [SendControllerVibe](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SendControllerVibe.md) Create {#sendcontrollervibe-create}
 
 ```csharp
 public static SendControllerVibe Create(

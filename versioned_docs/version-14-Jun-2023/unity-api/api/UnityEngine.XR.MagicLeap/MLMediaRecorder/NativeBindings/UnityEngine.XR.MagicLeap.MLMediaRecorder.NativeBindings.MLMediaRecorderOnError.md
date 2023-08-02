@@ -17,7 +17,7 @@ When the error or info type is track specific, it has the following layout: The 
 
 ## Public Methods
 
-### [MLMediaRecorderOnError](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings.MLMediaRecorderOnError.md) Create {#mlmediarecorderonerror-create}
+### [MLMediaRecorderOnError](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings.MLMediaRecorderOnError.md) Create {#mlmediarecorderonerror-create}
 
 Create and return an initialized version of this struct. 
 
@@ -67,7 +67,7 @@ public Error Error;
 
 | Type | Description  | 
 |--|--|
-| [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error) | Video recorder error types  |
+| [Error](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error) | Video recorder error types  |
 
 
 

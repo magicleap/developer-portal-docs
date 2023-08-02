@@ -6,7 +6,7 @@ summary: mediadrm event info associated with a session.
 
 # MLMediaDRMEventInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,11 +19,11 @@ MediaDRM event info associated with a session.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#mlmediadrmbytearray-session-id)**  |
-| [MLMediaDRMEventType](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmeventtype) | **[event_type](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#mlmediadrmeventtype-event-type)**  |
-| int | **[extra](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#int-extra)**  |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[event_data](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#mlmediadrmbytearray-event-data)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#void-data)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#mlmediadrmbytearray-session-id)**  |
+| [MLMediaDRMEventType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmeventtype) | **[event_type](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#mlmediadrmeventtype-event-type)**  |
+| int | **[extra](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#int-extra)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[event_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#mlmediadrmbytearray-event-data)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -70,7 +70,7 @@ MLMediaDRMEventType event_type;
 
 | Type | Description |
 |--|--|
-| [MLMediaDRMEventType](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmeventtype) | Request event types.  |
+| [MLMediaDRMEventType](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediadrmeventtype) | Request event types.  |
 
 
 Type of Media DRM event. 

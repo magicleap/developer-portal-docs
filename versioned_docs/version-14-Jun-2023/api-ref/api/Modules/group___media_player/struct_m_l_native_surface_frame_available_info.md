@@ -6,7 +6,7 @@ summary: nativesurfacetexture output frame availability information.
 
 # MLNativeSurfaceFrameAvailableInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,7 +19,7 @@ NativeSurface/NativeSurfaceTexture Output Frame Availability information.  [More
 
 | Type           | Name           |
 | -------------- | -------------- |
-| void * | **[user_data](/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md#void-user-data)**  |
+| void * | **[user_data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_native_surface_frame_available_info.md#void-user-data)**  |
 
 ## Detailed Description
 
@@ -48,7 +48,7 @@ void * user_data;
 ```
 
 
-User data as passed in [MLNativeSurfaceSetOnFrameAvailableCallback()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacesetonframeavailablecallback) or [MLNativeSurfaceTextureSetOnFrameAvailableCallback()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturesetonframeavailablecallback). 
+User data as passed in [MLNativeSurfaceSetOnFrameAvailableCallback()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacesetonframeavailablecallback) or [MLNativeSurfaceTextureSetOnFrameAvailableCallback()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlnativesurfacetexturesetonframeavailablecallback). 
 
 
 

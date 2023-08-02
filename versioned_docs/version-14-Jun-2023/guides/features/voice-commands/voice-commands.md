@@ -23,5 +23,5 @@ Unlike system-wide voice commands that are initiated by saying "Hey Magic Leap",
 
 To learn how to integrate voice commands in your application see the following documents:
 
-[Voice Intents Unity](/guides/unity/input/voice-intents/voice-intents-overview.md) - Learn how to quickly add voice commands to your Unity Application.
-[Voice Intent Native Sample](/guides/native/capi-samples.md#voice-intents) - See how to integrate Magic Leap's native APIs to add support for custom voice commands into you C++ application.
+[Voice Intents Unity](/versioned_docs/version-14-Jun-2023/guides/unity/input/voice-intents/voice-intents-overview.md) - Learn how to quickly add voice commands to your Unity Application.
+[Voice Intent Native Sample](/versioned_docs/version-14-Jun-2023/guides/native/capi-samples.md#voice-intents) - See how to integrate Magic Leap's native APIs to add support for custom voice commands into you C++ application.

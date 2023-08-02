@@ -10,7 +10,7 @@ Unity does not contain a specific Platform Defines for Magic Leap 2. Instead, de
 
 ## Prerequisites
 
-- Magic Leap SDK and Magic Leap Unity Package Installed via the [Magic Leap Hub](/docs/guides/getting-started/install-the-tools.md)
+- Magic Leap SDK and Magic Leap Unity Package Installed via the [Magic Leap Hub](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/getting-started/install-the-tools.md)
 
 :::info
 Custom platform defines are only necessary if you are developing an application for multiple platforms. The Unity engine only provides a single UNITY_ANDROID platform symbol as it does not have distinct build targets for every Android device.

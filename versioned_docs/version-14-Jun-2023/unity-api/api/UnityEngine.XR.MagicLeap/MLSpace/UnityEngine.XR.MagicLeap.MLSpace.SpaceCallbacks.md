@@ -9,7 +9,7 @@ summary: a structure containing callbacks for events related to the space. this 
 
 
 
-A structure containing callbacks for events related to the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceCallbacksInit before use. Application can unregister(stop receiving callbacks) at any time by setting the corresponding callback to NULL.   
+A structure containing callbacks for events related to the [Space](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceCallbacksInit before use. Application can unregister(stop receiving callbacks) at any time by setting the corresponding callback to NULL.   
 
 
 
@@ -17,7 +17,7 @@ A structure containing callbacks for events related to the [Space](/unity-api/ap
 
 ## Public Methods
 
-### [SpaceCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceCallbacks.md) Create {#spacecallbacks-create}
+### [SpaceCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceCallbacks.md) Create {#spacecallbacks-create}
 
 Initialize default values for #SpaceCallbacks. 
 

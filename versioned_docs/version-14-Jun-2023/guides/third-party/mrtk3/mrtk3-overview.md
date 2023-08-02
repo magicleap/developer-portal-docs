@@ -62,7 +62,7 @@ Before importing the Magic Leap MRTK3 Integration Package, configure your projec
 
 ### Option 1: Using the Mixed Reality Feature Tool
 
-Ensure that you have a Unity project configured for Magic Leap 2 development. If you have not configure a project for Magic Leap 2, follow the [Configure Unity Settings instructions](https://developer.magicleap.cloud/learn/docs/guides/unity/getting-started/configure-unity-settings). Then, use these instructions to install MRTK3 dependencies into your existing Magic Leap 2 project using the [Mixed Reality Feature tool](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Note that the Mixed Reality Feature Tool is only available for Windows.
+Ensure that you have a Unity project configured for Magic Leap 2 development. If you have not configure a project for Magic Leap 2, follow the [Configure Unity Settings instructions](https://developer.magicleap.cloud/learn/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings). Then, use these instructions to install MRTK3 dependencies into your existing Magic Leap 2 project using the [Mixed Reality Feature tool](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Note that the Mixed Reality Feature Tool is only available for Windows.
 
 1. Open the Mixed Reality Feature tool.
 2. Target your Unity project.
@@ -169,7 +169,7 @@ Hand Tracking Requires developers to enable the Hand Tracking permissions in the
 1. Go to the Magic Leap Permissions Settings (**Edit** > **Project Settings** > **Magic Leap** > **Permissions**)
 2. Enable **com.magicleap.permissions.HAND_TRACKING**
 
-For more information, refer to the Magic Leap 2 [permissions guide](https://developer-docs.magicleap.cloud/docs/guides/unity/permissions/declaring-permissions).
+For more information, refer to the Magic Leap 2 [permissions guide](https://developer-docs.magicleap.cloud/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions).
 
 ## FAQ
 

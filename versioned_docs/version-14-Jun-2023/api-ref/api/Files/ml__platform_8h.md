@@ -11,13 +11,13 @@ title: ml_platform.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPlatformGetAPILevel](/api-ref/api/Modules/group___platform/group___platform.md#mlresult-mlplatformgetapilevel)**(uint32_t * out_api_level)<br></br>Query the OS for which Platform API Level is supported.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLPlatformGetAPILevel](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#mlresult-mlplatformgetapilevel)**(uint32_t * out_api_level)<br></br>Query the OS for which Platform API Level is supported.  |
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[ML_PLATFORM_API_LEVEL](/api-ref/api/Modules/group___platform/group___platform.md#defines-ml-platform-api-level)**  |
+|  | **[ML_PLATFORM_API_LEVEL](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#defines-ml-platform-api-level)**  |
 
 
 
@@ -43,9 +43,9 @@ Query the OS for which Platform API Level is supported.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation completed successfully. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_platform_level was not valid (null). |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedError|Operation failed.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Operation completed successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_platform_level was not valid (null). |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedError|Operation failed.|
 **Required Permissions**:
 
   * None 

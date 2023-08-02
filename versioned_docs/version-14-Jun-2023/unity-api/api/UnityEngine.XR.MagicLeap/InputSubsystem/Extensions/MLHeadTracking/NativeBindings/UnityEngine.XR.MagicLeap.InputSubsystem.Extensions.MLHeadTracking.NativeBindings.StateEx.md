@@ -63,7 +63,7 @@ public readonly HeadTrackingStatus Status;
 
 | Type | Description  | 
 |--|--|
-| readonly [HeadTrackingStatus](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-headtrackingstatus) | A set of possible tracking status for the Head Tracking system.  |
+| readonly [HeadTrackingStatus](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-headtrackingstatus) | A set of possible tracking status for the Head Tracking system.  |
 
 
 

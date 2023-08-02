@@ -9,7 +9,7 @@ summary: apis for creating and retrieving media format information.
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 APIs for creating and retrieving media format information.   
@@ -39,7 +39,7 @@ public ulong Handle { get; set; }
 
 ## Public Methods
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateAudio {#mlmediaformat-createaudio}
+### [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateAudio {#mlmediaformat-createaudio}
 
 Create a audio format object. 
 
@@ -65,13 +65,13 @@ public static MLMediaFormat CreateAudio(
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateCopy {#mlmediaformat-createcopy}
+### [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateCopy {#mlmediaformat-createcopy}
 
 Create a copy of the format handle provided. 
 
@@ -86,7 +86,7 @@ public static MLMediaFormat CreateCopy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|[MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object to copy|
+| [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|[MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object to copy|
 
 
 **Details**
@@ -97,13 +97,13 @@ This can be particularly useful to persist the media format handle/object that w
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateEmpty {#mlmediaformat-createempty}
+### [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateEmpty {#mlmediaformat-createempty}
 
 Create an empty format object. 
 
@@ -116,13 +116,13 @@ public static MLMediaFormat CreateEmpty()
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateSubtitle {#mlmediaformat-createsubtitle}
+### [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateSubtitle {#mlmediaformat-createsubtitle}
 
 Create a subtitle format object. 
 
@@ -146,13 +146,13 @@ public static MLMediaFormat CreateSubtitle(
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateVideo {#mlmediaformat-createvideo}
+### [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) CreateVideo {#mlmediaformat-createvideo}
 
 Create a video format object. 
 
@@ -178,13 +178,13 @@ public static MLMediaFormat CreateVideo(
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An [MLMediaFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
 
 
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
 
 Obtain the value of an integer key. 
 
@@ -200,7 +200,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
 | out int |value|Out param to get the value in|
 
 
@@ -214,7 +214,7 @@ public MLResult GetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
 
 Obtain the value of a long key. 
 
@@ -230,7 +230,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
 | out long |value|Out param to get the value in|
 
 
@@ -244,7 +244,7 @@ public MLResult GetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
 
 Obtain the value of a float key. 
 
@@ -260,7 +260,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
 | out float |value|Out param to get the value in|
 
 
@@ -274,7 +274,7 @@ public MLResult GetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
 
 Obtain the value of a string key. 
 
@@ -290,7 +290,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
 | out string |value|Out param to get the value in|
 
 
@@ -304,7 +304,7 @@ public MLResult GetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
 
 Obtain the value of a byte buffer key. 
 
@@ -320,7 +320,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
 | out byte [] |value|Out param to get the value in|
 
 
@@ -334,7 +334,7 @@ public MLResult GetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetValue {#mlresult-getvalue}
 
 Obtain the value of an unsigned long key. 
 
@@ -350,7 +350,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
 | out ulong |value|Out param to get the value in|
 
 
@@ -364,7 +364,7 @@ public MLResult GetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
 Set the value of an integer key. 
 
@@ -380,7 +380,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
 | int |value|Value to set|
 
 
@@ -394,7 +394,7 @@ public MLResult SetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
 Set the value of a long key. 
 
@@ -410,7 +410,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
 | long |value|Value to set|
 
 
@@ -424,7 +424,7 @@ public MLResult SetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
 Set the value of a float key. 
 
@@ -440,7 +440,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
 | float |value|Value to set|
 
 
@@ -454,7 +454,7 @@ public MLResult SetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
 Set the value of a string key. 
 
@@ -470,7 +470,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
 | string |value|Value to set|
 
 
@@ -484,7 +484,7 @@ public MLResult SetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
 Set the value of a byte buffer key. 
 
@@ -500,7 +500,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
 | byte [] |value|Value to set|
 
 
@@ -514,7 +514,7 @@ public MLResult SetValue(
 
 -----------
 
-### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
+### [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetValue {#mlresult-setvalue}
 
 Set the value of an unsigned long key. 
 
@@ -530,7 +530,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|[MLMediaFormatKey](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
 | ulong |value|Value to set|
 
 

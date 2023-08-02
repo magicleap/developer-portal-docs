@@ -17,7 +17,7 @@ A structure containing Power Manager callback events. Individual callbacks which
 
 ## Public Methods
 
-### [MLPowerManagerCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerCallbacks.md) Init {#mlpowermanagercallbacks-init}
+### [MLPowerManagerCallbacks](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerCallbacks.md) Init {#mlpowermanagercallbacks-init}
 
 ```csharp
 public static MLPowerManagerCallbacks Init(

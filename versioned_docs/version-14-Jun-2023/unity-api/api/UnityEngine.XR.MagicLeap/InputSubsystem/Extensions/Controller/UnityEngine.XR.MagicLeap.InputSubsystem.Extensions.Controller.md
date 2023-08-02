@@ -31,7 +31,7 @@ public static bool AttachTriggerListener(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| Action&lt; ushort, [MLInputControllerTriggerEvent](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent), float &gt; |triggerCallback|Trigger events types. |
+| Action&lt; ushort, [MLInputControllerTriggerEvent](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent), float &gt; |triggerCallback|Trigger events types. |
 
 
 
@@ -40,7 +40,7 @@ public static bool AttachTriggerListener(
 
 -----------
 
-### [State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.State.md) GetState {#state-getstate}
+### [State](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.State.md) GetState {#state-getstate}
 
 ```csharp
 public static State GetState()
@@ -66,7 +66,7 @@ public static void RemoveTriggerListener(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| Action&lt; ushort, [MLInputControllerTriggerEvent](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent), float &gt; |triggerCallback|Trigger events types. |
+| Action&lt; ushort, [MLInputControllerTriggerEvent](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.md#enums-mlinputcontrollertriggerevent), float &gt; |triggerCallback|Trigger events types. |
 
 
 

@@ -56,7 +56,7 @@ Meshing is the creation of triangle-based meshes from the World Reconstruction m
 
 ## Learn More
 
-- [Unity Meshing Overview](/docs/guides/unity/perception/meshing/unity-meshing-overview.md)
+- [Unity Meshing Overview](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/perception/meshing/unity-meshing-overview.md)
   - Learn how to implement Meshing inside your Unity Application.
-- [C++ Meshing API](docs/api-ref/api/Modules/group___meshing2/group___meshing2.md)
+- [C++ Meshing API](docs/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___meshing2/group___meshing2.md)
   - Reference the API documentation to implement meshing using Magic Leap's Native API.

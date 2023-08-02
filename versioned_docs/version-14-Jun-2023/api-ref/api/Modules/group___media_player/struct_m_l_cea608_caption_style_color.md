@@ -6,7 +6,7 @@ summary: cea608 caption style and color.
 
 # MLCea608CaptionStyleColor
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ Cea608 caption style and color.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| uint32_t | **[style](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md#uint32-t-style)**  |
-| uint32_t | **[color](/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md#uint32-t-color)**  |
+| uint32_t | **[style](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md#uint32-t-style)**  |
+| uint32_t | **[color](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea608_caption_style_color.md#uint32-t-color)**  |
 
 ## Detailed Description
 

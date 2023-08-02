@@ -44,7 +44,7 @@ Using the Universal Render Pipeline with dedicated meshes and configurable shade
 
 ### Setting Up Your Project
 
-- Set up your Unity Project for Magic Leap 2 by completing the [Unity Getting Started guides](/docs/guides/unity/getting-started/unity-getting-started.md).
+- Set up your Unity Project for Magic Leap 2 by completing the [Unity Getting Started guides](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/unity-getting-started.md).
 
 ### Create the Segmented Dimmer Layer
 
@@ -55,7 +55,7 @@ Your project must have one Layer dedicated to the Segmented Dimmer.
 
 ### Configure the Render Pipeline
 
-1. Follow the directions in the [Unity Configure Project Settings guide](/docs/guides/unity/getting-started/configure-unity-settings.md) for Magic Leap 2 to make sure your project is set up with the Universal Render Pipeline (URP).
+1. Follow the directions in the [Unity Configure Project Settings guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/getting-started/configure-unity-settings.md) for Magic Leap 2 to make sure your project is set up with the Universal Render Pipeline (URP).
 
 ### Configure your URP renderer
 

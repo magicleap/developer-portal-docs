@@ -31,7 +31,7 @@ public MeshBlockRequest(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |id||
-| [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |levelOfDetail|Level of detail of the block mesh. |
+| [LevelOfDetail](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |levelOfDetail|Level of detail of the block mesh. |
 
 
 
@@ -71,7 +71,7 @@ public readonly LevelOfDetail levelOfDetail;
 
 | Type | Description  | 
 |--|--|
-| readonly [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) | Level of detail of the block mesh.  |
+| readonly [LevelOfDetail](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) | Level of detail of the block mesh.  |
 
 
 

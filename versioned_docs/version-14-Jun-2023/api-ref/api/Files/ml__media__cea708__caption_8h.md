@@ -11,47 +11,47 @@ title: ml_media_cea708_caption.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLCea708CaptionColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)** <br></br>Cea708 Caption Color.  |
-| struct | **[MLCea708CaptionPenAttr](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)** <br></br>Cea708 Caption Pen Attributes.  |
-| struct | **[MLCea708CaptionPenColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)** <br></br>Cea708 Caption Pen Color.  |
-| struct | **[MLCea708CaptionPenLocation](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)** <br></br>Cea708 Caption Pen Location.  |
-| struct | **[MLCea708CaptionWindowAttr](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)** <br></br>Cea708 Caption Window Attributes.  |
-| struct | **[MLCea708CaptionWindow](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)** <br></br>Cea708 Caption Window.  |
-| struct | **[MLCea708CaptionEvent](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)** <br></br>Cea708 Caption Event.  |
+| struct | **[MLCea708CaptionColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)** <br></br>Cea708 Caption Color.  |
+| struct | **[MLCea708CaptionPenAttr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)** <br></br>Cea708 Caption Pen Attributes.  |
+| struct | **[MLCea708CaptionPenColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)** <br></br>Cea708 Caption Pen Color.  |
+| struct | **[MLCea708CaptionPenLocation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)** <br></br>Cea708 Caption Pen Location.  |
+| struct | **[MLCea708CaptionWindowAttr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)** <br></br>Cea708 Caption Window Attributes.  |
+| struct | **[MLCea708CaptionWindow](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)** <br></br>Cea708 Caption Window.  |
+| struct | **[MLCea708CaptionEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)** <br></br>Cea708 Caption Event.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLCea708CaptionColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | **[MLCea708CaptionColor](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captioncolor)** <br></br>Cea708 Caption Color.  |
-| typedef struct [MLCea708CaptionPenAttr](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md) | **[MLCea708CaptionPenAttr](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionpenattr)** <br></br>Cea708 Caption Pen Attributes.  |
-| typedef struct [MLCea708CaptionPenColor](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md) | **[MLCea708CaptionPenColor](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionpencolor)** <br></br>Cea708 Caption Pen Color.  |
-| typedef struct [MLCea708CaptionPenLocation](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md) | **[MLCea708CaptionPenLocation](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionpenlocation)** <br></br>Cea708 Caption Pen Location.  |
-| typedef struct [MLCea708CaptionWindowAttr](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md) | **[MLCea708CaptionWindowAttr](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionwindowattr)** <br></br>Cea708 Caption Window Attributes.  |
-| typedef struct [MLCea708CaptionWindow](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md) | **[MLCea708CaptionWindow](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionwindow)** <br></br>Cea708 Caption Window.  |
-| typedef struct [MLCea708CaptionEvent](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md) | **[MLCea708CaptionEvent](/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionevent)** <br></br>Cea708 Caption Event.  |
-| typedef void(*)(MLHandle cc_handle, const MLCea708CaptionEvent *event, void *data) | **[MLMediaCea708ParserEmitEventCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback)** <br></br>Callback signature called when Cea708 parser emits event.  |
+| typedef struct [MLCea708CaptionColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md) | **[MLCea708CaptionColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captioncolor)** <br></br>Cea708 Caption Color.  |
+| typedef struct [MLCea708CaptionPenAttr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md) | **[MLCea708CaptionPenAttr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionpenattr)** <br></br>Cea708 Caption Pen Attributes.  |
+| typedef struct [MLCea708CaptionPenColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md) | **[MLCea708CaptionPenColor](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionpencolor)** <br></br>Cea708 Caption Pen Color.  |
+| typedef struct [MLCea708CaptionPenLocation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md) | **[MLCea708CaptionPenLocation](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionpenlocation)** <br></br>Cea708 Caption Pen Location.  |
+| typedef struct [MLCea708CaptionWindowAttr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md) | **[MLCea708CaptionWindowAttr](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionwindowattr)** <br></br>Cea708 Caption Window Attributes.  |
+| typedef struct [MLCea708CaptionWindow](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md) | **[MLCea708CaptionWindow](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionwindow)** <br></br>Cea708 Caption Window.  |
+| typedef struct [MLCea708CaptionEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md) | **[MLCea708CaptionEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#struct-mlcea708captionevent)** <br></br>Cea708 Caption Event.  |
+| typedef void(*)(MLHandle cc_handle, const MLCea708CaptionEvent *event, void *data) | **[MLMediaCea708ParserEmitEventCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback)** <br></br>Callback signature called when Cea708 parser emits event.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 16](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-16)** <br></br> { <br></br>[MLCea708CaptionWindows_Max](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionwindows-max) = 8<br></br>}<br></br>Cea708 Caption maximum windows constant.  |
-| enum | **[Anonymous Enum 17](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-17)** <br></br> { <br></br>[MLCea708CaptionEmitCommandBuffer_MaxSize](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandbuffer-maxsize) = 20<br></br>}<br></br>Maximum size for Cea708 Caption Emit command buffers.  |
-| enum | **[MLCea708CaptionEmitCommand](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand)** <br></br> { <br></br>[MLCea708CaptionEmitCommand_Buffer](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-buffer) = 1,<br></br> [MLCea708CaptionEmitCommand_Control](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-control) = 2,<br></br> [MLCea708CaptionEmitCommand_CWX](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-cwx) = 3,<br></br> [MLCea708CaptionEmitCommand_CLW](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-clw) = 4,<br></br> [MLCea708CaptionEmitCommand_DSW](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dsw) = 5,<br></br> [MLCea708CaptionEmitCommand_HDW](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-hdw) = 6,<br></br> [MLCea708CaptionEmitCommand_TGW](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-tgw) = 7,<br></br> [MLCea708CaptionEmitCommand_DLW](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dlw) = 8,<br></br> [MLCea708CaptionEmitCommand_DLY](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dly) = 9,<br></br> [MLCea708CaptionEmitCommand_DLC](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dlc) = 10,<br></br> [MLCea708CaptionEmitCommand_RST](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-rst) = 11,<br></br> [MLCea708CaptionEmitCommand_SPA](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-spa) = 12,<br></br> [MLCea708CaptionEmitCommand_SPC](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-spc) = 13,<br></br> [MLCea708CaptionEmitCommand_SPL](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-spl) = 14,<br></br> [MLCea708CaptionEmitCommand_SWA](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-swa) = 15,<br></br> [MLCea708CaptionEmitCommand_DFX](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dfx) = 16,<br></br> [MLCea708CaptionEmitCommand_Ensure32Bits](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Emit Commands constants.  |
-| enum | **[MLCea708CaptionEmitCommandControl](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol)** <br></br> { <br></br>[MLCea708CaptionEmitCommandControl_ETX](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-etx) = 0x03,<br></br> [MLCea708CaptionEmitCommandControl_BS](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-bs) = 0x08,<br></br> [MLCea708CaptionEmitCommandControl_FF](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-ff) = 0x0c,<br></br> [MLCea708CaptionEmitCommandControl_HCR](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-hcr) = 0x0e,<br></br> [MLCea708CaptionEmitCommandControl_Ensure32Bits](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Emit Command Control constants.  |
-| enum | **[MLCea708CaptionColorOpacity](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity)** <br></br> { <br></br>[MLCea708CaptionColorOpacity_SOLID](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-solid) = 0,<br></br> [MLCea708CaptionColorOpacity_FLASH](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-flash) = 1,<br></br> [MLCea708CaptionColorOpacity_TRANSLUCENT](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-translucent) = 2,<br></br> [MLCea708CaptionColorOpacity_TRANSPARENT](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-transparent) = 3,<br></br> [MLCea708CaptionColorOpacity_Ensure32Bits](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Color Opacity constants.  |
-| enum | **[MLCea708CaptionPenSize](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpensize)** <br></br> { <br></br>[MLCea708CaptionPenSize_SMALL](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-small) = 0,<br></br> [MLCea708CaptionPenSize_STANDARD](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-standard) = 1,<br></br> [MLCea708CaptionPenSize_LARGE](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-large) = 2,<br></br> [MLCea708CaptionPenSize_Ensure32Bits](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Pen Size constants.  |
-| enum | **[MLCea708CaptionPenOffset](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpenoffset)** <br></br> { <br></br>[MLCea708CaptionPenOffset_SUBSCRIPT](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-subscript) = 0,<br></br> [MLCea708CaptionPenOffset_NORMAL](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-normal) = 1,<br></br> [MLCea708CaptionPenOffset_SUPERSCRIPT](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-superscript) = 2,<br></br> [MLCea708CaptionPenOffset_Ensure32Bits](/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Pen Offset constants.  |
+| enum | **[Anonymous Enum 16](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-16)** <br></br> { <br></br>[MLCea708CaptionWindows_Max](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionwindows-max) = 8<br></br>}<br></br>Cea708 Caption maximum windows constant.  |
+| enum | **[Anonymous Enum 17](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-17)** <br></br> { <br></br>[MLCea708CaptionEmitCommandBuffer_MaxSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandbuffer-maxsize) = 20<br></br>}<br></br>Maximum size for Cea708 Caption Emit command buffers.  |
+| enum | **[MLCea708CaptionEmitCommand](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand)** <br></br> { <br></br>[MLCea708CaptionEmitCommand_Buffer](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-buffer) = 1,<br></br> [MLCea708CaptionEmitCommand_Control](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-control) = 2,<br></br> [MLCea708CaptionEmitCommand_CWX](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-cwx) = 3,<br></br> [MLCea708CaptionEmitCommand_CLW](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-clw) = 4,<br></br> [MLCea708CaptionEmitCommand_DSW](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dsw) = 5,<br></br> [MLCea708CaptionEmitCommand_HDW](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-hdw) = 6,<br></br> [MLCea708CaptionEmitCommand_TGW](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-tgw) = 7,<br></br> [MLCea708CaptionEmitCommand_DLW](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dlw) = 8,<br></br> [MLCea708CaptionEmitCommand_DLY](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dly) = 9,<br></br> [MLCea708CaptionEmitCommand_DLC](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dlc) = 10,<br></br> [MLCea708CaptionEmitCommand_RST](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-rst) = 11,<br></br> [MLCea708CaptionEmitCommand_SPA](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-spa) = 12,<br></br> [MLCea708CaptionEmitCommand_SPC](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-spc) = 13,<br></br> [MLCea708CaptionEmitCommand_SPL](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-spl) = 14,<br></br> [MLCea708CaptionEmitCommand_SWA](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-swa) = 15,<br></br> [MLCea708CaptionEmitCommand_DFX](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-dfx) = 16,<br></br> [MLCea708CaptionEmitCommand_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommand-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Emit Commands constants.  |
+| enum | **[MLCea708CaptionEmitCommandControl](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol)** <br></br> { <br></br>[MLCea708CaptionEmitCommandControl_ETX](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-etx) = 0x03,<br></br> [MLCea708CaptionEmitCommandControl_BS](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-bs) = 0x08,<br></br> [MLCea708CaptionEmitCommandControl_FF](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-ff) = 0x0c,<br></br> [MLCea708CaptionEmitCommandControl_HCR](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-hcr) = 0x0e,<br></br> [MLCea708CaptionEmitCommandControl_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionemitcommandcontrol-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Emit Command Control constants.  |
+| enum | **[MLCea708CaptionColorOpacity](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity)** <br></br> { <br></br>[MLCea708CaptionColorOpacity_SOLID](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-solid) = 0,<br></br> [MLCea708CaptionColorOpacity_FLASH](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-flash) = 1,<br></br> [MLCea708CaptionColorOpacity_TRANSLUCENT](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-translucent) = 2,<br></br> [MLCea708CaptionColorOpacity_TRANSPARENT](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-transparent) = 3,<br></br> [MLCea708CaptionColorOpacity_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captioncoloropacity-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Color Opacity constants.  |
+| enum | **[MLCea708CaptionPenSize](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpensize)** <br></br> { <br></br>[MLCea708CaptionPenSize_SMALL](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-small) = 0,<br></br> [MLCea708CaptionPenSize_STANDARD](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-standard) = 1,<br></br> [MLCea708CaptionPenSize_LARGE](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-large) = 2,<br></br> [MLCea708CaptionPenSize_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpensize-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Pen Size constants.  |
+| enum | **[MLCea708CaptionPenOffset](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionpenoffset)** <br></br> { <br></br>[MLCea708CaptionPenOffset_SUBSCRIPT](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-subscript) = 0,<br></br> [MLCea708CaptionPenOffset_NORMAL](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-normal) = 1,<br></br> [MLCea708CaptionPenOffset_SUPERSCRIPT](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-superscript) = 2,<br></br> [MLCea708CaptionPenOffset_Ensure32Bits](/versioned_docs/version-14-Jun-2023/api-ref/api/Files/ml__media__cea708__caption_8h.md#enums-mlcea708captionpenoffset-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Pen Offset constants.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parsercreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create Cea708 parser object.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserParse](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parserparse)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) cc_handle, const uint8_t * subtitle_data, uint32_t subtitle_data_size)<br></br>Provide Cea708 parser with subtitle raw data for parsing.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserDestroy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parserdestroy)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) cc_handle)<br></br>Release Cea708 parser object.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserSetEmitEventCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parsersetemiteventcallback)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) cc_handle, [MLMediaCea708ParserEmitEventCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) on_emit_event_callback, void * data)<br></br>Set callback to get notified when a caption event has generated.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserCreate](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parsercreate)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create Cea708 parser object.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserParse](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parserparse)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) cc_handle, const uint8_t * subtitle_data, uint32_t subtitle_data_size)<br></br>Provide Cea708 parser with subtitle raw data for parsing.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserDestroy](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parserdestroy)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) cc_handle)<br></br>Release Cea708 parser object.  |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaCea708ParserSetEmitEventCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediacea708parsersetemiteventcallback)**([MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) cc_handle, [MLMediaCea708ParserEmitEventCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) on_emit_event_callback, void * data)<br></br>Set callback to get notified when a caption event has generated.  |
 
 ## Enums Documentation
 
@@ -245,7 +245,7 @@ Cea708 Caption Color.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_color.md)
 
 
 **API Level:**
@@ -266,7 +266,7 @@ Cea708 Caption Pen Attributes.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_attr.md)
 
 
 **API Level:**
@@ -287,7 +287,7 @@ Cea708 Caption Pen Color.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_color.md)
 
 
 **API Level:**
@@ -308,7 +308,7 @@ Cea708 Caption Pen Location.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_pen_location.md)
 
 
 **API Level:**
@@ -329,7 +329,7 @@ Cea708 Caption Window Attributes.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window_attr.md)
 
 
 **API Level:**
@@ -350,7 +350,7 @@ Cea708 Caption Window.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_window.md)
 
 
 **API Level:**
@@ -371,7 +371,7 @@ Cea708 Caption Event.
 
 
 
-[More Info](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)
+[More Info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md)
 
 
 **API Level:**
@@ -394,8 +394,8 @@ Callback signature called when Cea708 parser emits event.
 
 |  |   |   |
 |--|--|--|
-|  |cc_handle|[MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a Cea708 Parser instance for which callback was called. |
-|  |event|[MLCea708CaptionEvent](/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md) conveys caption event to listener. |
+|  |cc_handle|[MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) is a Cea708 Parser instance for which callback was called. |
+|  |event|[MLCea708CaptionEvent](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_cea708_caption_event.md) conveys caption event to listener. |
 |  |data|Custom data to be returned when callback is fired. |
 
 
@@ -426,15 +426,15 @@ Create Cea708 parser object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain the handle to the Cea708 parser. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to an [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) which will contain the handle to the Cea708 parser. If this operation fails, out_handle will be [ML_INVALID_HANDLE](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#enums-ml-invalid-handle).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|The operation failed with memory allocation error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_handle is null. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Internal Cea708 parser object was created successfully. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|The operation failed with memory allocation error. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|out_handle is null. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Internal Cea708 parser object was created successfully. |
 **Required Permissions**:
 
   * None 
@@ -467,17 +467,17 @@ Provide Cea708 parser with subtitle raw data for parsing.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
-| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md). |
-| uint32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md).|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
+| const uint8_t * |subtitle_data|Subtitle data of [MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md). |
+| uint32_t |subtitle_data_size|Subtitle data size of [MLMediaPlayerSubtitleData](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_subtitle_data.md).|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|the input parameter(s) is(are) wrong. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the operation was successful. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Cea708 parser was not properly built or initialized.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|the input parameter(s) is(are) wrong. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|the operation was successful. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Cea708 parser was not properly built or initialized.|
 **Required Permissions**:
 
   * None 
@@ -508,14 +508,14 @@ Release Cea708 parser object.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser.|
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|cc_handle is wrong or not found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|internal Cea708 parser object was released successfully.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|cc_handle is wrong or not found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|internal Cea708 parser object was released successfully.|
 **Required Permissions**:
 
   * None 
@@ -548,16 +548,16 @@ Set callback to get notified when a caption event has generated.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
-| [MLMediaCea708ParserEmitEventCallback](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) |on_emit_event_callback|Function pointer for event callback. See [MLMediaCea708ParserEmitEventCallback()](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) callback declaration and comments for explanation on expected callback parameters. This can be 'NULL' to unset the callback. |
+| [MLHandle](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |cc_handle|A handle to a Cea708 parser. |
+| [MLMediaCea708ParserEmitEventCallback](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) |on_emit_event_callback|Function pointer for event callback. See [MLMediaCea708ParserEmitEventCallback()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediacea708parseremiteventcallback) callback declaration and comments for explanation on expected callback parameters. This can be 'NULL' to unset the callback. |
 | void * |data|Custom data to be returned when callback is fired.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `cc_handle` handle was not found. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was successfully set.|
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Passed `cc_handle` handle was not found. |
+| [MLResult](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Callback was successfully set.|
 **Required Permissions**:
 
   * None 

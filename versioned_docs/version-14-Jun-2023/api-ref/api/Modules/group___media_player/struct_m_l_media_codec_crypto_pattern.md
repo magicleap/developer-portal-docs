@@ -6,7 +6,7 @@ summary: metadata describing an encryption pattern for the protected bytes in a 
 
 # MLMediaCodecCryptoPattern
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ Metadata describing an encryption pattern for the protected bytes in a subsample
 
 | Type           | Name           |
 | -------------- | -------------- |
-| size_t | **[encrypt_blocks](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md#size-t-encrypt-blocks)**  |
-| size_t | **[skip_blocks](/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md#size-t-skip-blocks)**  |
+| size_t | **[encrypt_blocks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md#size-t-encrypt-blocks)**  |
+| size_t | **[skip_blocks](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_codec_crypto_pattern.md#size-t-skip-blocks)**  |
 
 ## Detailed Description
 

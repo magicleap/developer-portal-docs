@@ -17,7 +17,7 @@ A structure to encapsulate info data used by the Power Manager when getting the 
 
 ## Public Methods
 
-### [MLPowerManagerPropertyInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerPropertyInfo.md) Init {#mlpowermanagerpropertyinfo-init}
+### [MLPowerManagerPropertyInfo](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerPropertyInfo.md) Init {#mlpowermanagerpropertyinfo-init}
 
 ```csharp
 public static MLPowerManagerPropertyInfo Init(

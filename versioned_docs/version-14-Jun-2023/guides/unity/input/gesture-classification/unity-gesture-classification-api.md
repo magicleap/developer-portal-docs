@@ -9,7 +9,7 @@ keywords: [Unity, Gesture Classification, Input]
 This section provides information on the Gesture Classification API and how to enable it inside your application.
 
 :::caution
-This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
+This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md).
 :::
 
 :::caution Known Issue
@@ -40,7 +40,7 @@ using GestureClassification = InputSubsystem.Extensions.MLGestureClassification;
 
 ### Gesture Classification Permission
 
-This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/docs/guides/unity/permissions/declaring-permissions.md).
+This feature requires the `HAND_TRACKING` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**). For more information, refer to the [permissions guide](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/unity/permissions/declaring-permissions.md).
 
 Before using the Magic Leap Gesture Classification API, we need to make sure that the permission was declared in the Application's manifest.
 

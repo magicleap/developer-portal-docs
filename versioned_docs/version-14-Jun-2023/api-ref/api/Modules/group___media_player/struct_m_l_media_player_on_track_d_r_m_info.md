@@ -6,7 +6,7 @@ summary: mediaplayer track drm info callback info.
 
 # MLMediaPlayerOnTrackDRMInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,8 +19,8 @@ MediaPlayer Track DRM Info callback Info.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) * | **[track_info](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md#mlmediaplayertrackdrminfo-track-info)**  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md#void-data)**  |
+| [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) * | **[track_info](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md#mlmediaplayertrackdrminfo-track-info)**  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_on_track_d_r_m_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -52,10 +52,10 @@ MLMediaPlayerTrackDRMInfo * track_info;
 
 | Type | Description |
 |--|--|
-| [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) * | MediaPlayer DRM Info for a Media Track.  |
+| [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md) * | MediaPlayer DRM Info for a Media Track.  |
 
 
-Pointer to [MLMediaPlayerTrackDRMInfo](/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md). 
+Pointer to [MLMediaPlayerTrackDRMInfo](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_player_track_d_r_m_info.md). 
 
 
 
@@ -70,7 +70,7 @@ void * data;
 ```
 
 
-User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
+User data as passed to [MLMediaPlayerSetEventCallbacksEx()](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaplayerseteventcallbacksex). 
 
 
 

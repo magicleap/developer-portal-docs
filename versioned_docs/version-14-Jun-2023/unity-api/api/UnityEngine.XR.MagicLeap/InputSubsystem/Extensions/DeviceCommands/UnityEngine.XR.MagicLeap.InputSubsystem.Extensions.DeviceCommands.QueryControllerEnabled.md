@@ -50,7 +50,7 @@ public FourCC typeStatic { get; set; }
 
 ## Public Methods
 
-### [QueryControllerEnabled](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryControllerEnabled.md) Create {#querycontrollerenabled-create}
+### [QueryControllerEnabled](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/DeviceCommands/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryControllerEnabled.md) Create {#querycontrollerenabled-create}
 
 ```csharp
 public static QueryControllerEnabled Create()

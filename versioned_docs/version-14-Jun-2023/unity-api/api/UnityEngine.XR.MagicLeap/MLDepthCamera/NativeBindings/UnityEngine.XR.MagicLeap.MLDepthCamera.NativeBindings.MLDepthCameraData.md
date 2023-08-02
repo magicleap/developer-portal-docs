@@ -16,7 +16,7 @@ title: MLDepthCameraData
 
 ## Public Methods
 
-### [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) Init {#mldepthcameradata-init}
+### [MLDepthCameraData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) Init {#mldepthcameradata-init}
 
 ```csharp
 public static MLDepthCameraData Init()
@@ -29,7 +29,7 @@ public static MLDepthCameraData Init()
 
 -----------
 
-### [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) Init {#mldepthcameradata-init}
+### [MLDepthCameraData](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) Init {#mldepthcameradata-init}
 
 ```csharp
 public static MLDepthCameraData Init(
@@ -42,7 +42,7 @@ public static MLDepthCameraData Init(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Data](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md) |managed|Output data for each depth camera sensor. |
+| [Data](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md) |managed|Output data for each depth camera sensor. |
 
 
 
@@ -78,7 +78,7 @@ public MLTransform CameraPose;
 
 | Type | Description  | 
 |--|--|
-| [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
+| [MLTransform](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
 
 
 
@@ -171,7 +171,7 @@ public FrameType FrameType;
 
 | Type | Description  | 
 |--|--|
-| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types  |
+| [FrameType](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types  |
 
 
 

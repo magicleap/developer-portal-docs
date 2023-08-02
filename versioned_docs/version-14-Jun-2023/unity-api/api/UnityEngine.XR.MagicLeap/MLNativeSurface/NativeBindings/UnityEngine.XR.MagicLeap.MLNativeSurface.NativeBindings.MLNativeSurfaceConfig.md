@@ -32,7 +32,7 @@ public MLNativeSurfaceConfig(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PixelFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md#enums-pixelformat) |pixelFormat||
+| [PixelFormat](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md#enums-pixelformat) |pixelFormat||
 | ushort |bufferCount||
 | uint |width||
 | uint |height||

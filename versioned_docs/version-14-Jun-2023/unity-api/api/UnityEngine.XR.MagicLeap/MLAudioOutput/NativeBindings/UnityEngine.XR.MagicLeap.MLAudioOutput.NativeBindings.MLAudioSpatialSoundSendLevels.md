@@ -30,7 +30,7 @@ public MLAudioSpatialSoundSendLevels(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [SpatialSound.SendLevels](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.SendLevels.md) |sendLevels|Properties specifying send levels for a spatial sound. |
+| [SpatialSound.SendLevels](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/SpatialSound/UnityEngine.XR.MagicLeap.MLAudioOutput.SpatialSound.SendLevels.md) |sendLevels|Properties specifying send levels for a spatial sound. |
 
 
 

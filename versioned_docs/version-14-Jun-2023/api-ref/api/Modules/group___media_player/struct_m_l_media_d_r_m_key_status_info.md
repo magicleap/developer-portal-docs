@@ -6,7 +6,7 @@ summary: mediadrm session keys status change info.
 
 # MLMediaDRMKeyStatusInfo
 
-**Module:** **[Media Player](/api-ref/api/Modules/group___media_player/group___media_player.md)**
+**Module:** **[Media Player](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/group___media_player.md)**
 
 
 
@@ -19,11 +19,11 @@ MediaDRM session keys status change info.  [More...](#detailed-description)
 
 | Type           | Name           |
 | -------------- | -------------- |
-| [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#mlmediadrmbytearray-session-id)**  |
-| size_t | **[key_status_count](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#size-t-key-status-count)**  |
-| [MLMediaDRMKeyStatus](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md) * | **[key_status](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#mlmediadrmkeystatus-key-status)**  |
-| bool | **[has_new_usable_key](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#bool-has-new-usable-key)** <br></br>Indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key.  |
-| void * | **[data](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#void-data)**  |
+| [MLMediaDRMByteArray](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * | **[session_id](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#mlmediadrmbytearray-session-id)**  |
+| size_t | **[key_status_count](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#size-t-key-status-count)**  |
+| [MLMediaDRMKeyStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md) * | **[key_status](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#mlmediadrmkeystatus-key-status)**  |
+| bool | **[has_new_usable_key](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#bool-has-new-usable-key)** <br></br>Indicates if a key has been added that is usable, which may trigger an attempt to resume playback on the media stream if it is currently blocked waiting for a key.  |
+| void * | **[data](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status_info.md#void-data)**  |
 
 ## Detailed Description
 
@@ -85,10 +85,10 @@ MLMediaDRMKeyStatus * key_status;
 
 | Type | Description |
 |--|--|
-| [MLMediaDRMKeyStatus](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md) * | MediaDRM key status.  |
+| [MLMediaDRMKeyStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md) * | MediaDRM key status.  |
 
 
-Pointer to array of [MLMediaDRMKeyStatus](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md) of size key_status_count. 
+Pointer to array of [MLMediaDRMKeyStatus](/versioned_docs/version-14-Jun-2023/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_status.md) of size key_status_count. 
 
 
 

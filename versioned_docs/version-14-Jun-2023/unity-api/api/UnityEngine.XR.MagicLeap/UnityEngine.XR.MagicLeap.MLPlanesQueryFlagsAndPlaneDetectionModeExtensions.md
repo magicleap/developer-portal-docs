@@ -8,7 +8,7 @@ title: MLPlanesQueryFlagsAndPlaneDetectionModeExtensions
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 
@@ -19,7 +19,7 @@ title: MLPlanesQueryFlagsAndPlaneDetectionModeExtensions
 
 ## Public Methods
 
-### [PlanesSubsystem.Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) ToMLQueryFlags {#planessubsystemextensionsmlplanesqueryflags-tomlqueryflags}
+### [PlanesSubsystem.Extensions.MLPlanesQueryFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) ToMLQueryFlags {#planessubsystemextensionsmlplanesqueryflags-tomlqueryflags}
 
 ```csharp
 public static PlanesSubsystem.Extensions.MLPlanesQueryFlags ToMLQueryFlags(
@@ -54,7 +54,7 @@ public static PlaneDetectionMode ToPlaneDetectionMode(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| this [PlanesSubsystem.Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |MLPlanesQueryFlags||
+| this [PlanesSubsystem.Extensions.MLPlanesQueryFlags](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |MLPlanesQueryFlags||
 
 
 

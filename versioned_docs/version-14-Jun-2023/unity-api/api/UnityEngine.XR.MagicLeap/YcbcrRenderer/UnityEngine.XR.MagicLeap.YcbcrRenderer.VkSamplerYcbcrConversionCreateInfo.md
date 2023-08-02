@@ -35,7 +35,7 @@ public uint chromaFilter;
 
 ### components {#vkcomponentmapping-components}
 
-[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
+[VkComponentMapping](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
 
 ```csharp
 

@@ -28,7 +28,7 @@ public ImagePlaneInfoNative [] ImagePlanes;
 
 | Type | Description  | 
 |--|--|
-| [ImagePlaneInfoNative](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.ImagePlaneInfoNative.md) [] | Representation of the native image plane structure.  |
+| [ImagePlaneInfoNative](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.ImagePlaneInfoNative.md) [] | Representation of the native image plane structure.  |
 
 
 
@@ -38,7 +38,7 @@ public ImagePlaneInfoNative [] ImagePlanes;
 
 ### PlaneCount {#byte-planecount}
 
-Number of output image planes. 3 for [OutputFormat.YUV&#95;420&#95;888](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-yuv-420-888), 1 for [OutputFormat.RGBA&#95;8888](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-rgba-8888)
+Number of output image planes. 3 for [OutputFormat.YUV&#95;420&#95;888](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-yuv-420-888), 1 for [OutputFormat.RGBA&#95;8888](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-rgba-8888)
 
 ```csharp
 

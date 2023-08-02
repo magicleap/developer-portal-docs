@@ -58,7 +58,7 @@ This deployment strategy will provide a production-ready system using Google Clo
 
 ### Google Cloud CLI
 
-To get started as quickly as possible, refer to these simple setup steps for [Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
+To get started as quickly as possible, refer to these simple setup steps for [Google Cloud CLI](https://cloud.google.com/sdk/versioned_docs/version-14-Jun-2023/install).
 
 ### Tools
 
@@ -131,7 +131,7 @@ gcloud components install gke-gcloud-auth-plugin kubectl
   - 8 CPUs
   - 32 GB memory
 
-Example [machine types in GCP](https://cloud.google.com/compute/docs/general-purpose-machines):
+Example [machine types in GCP](https://cloud.google.com/compute/versioned_docs/version-14-Jun-2023/general-purpose-machines):
 
 - 8 * **e2-standard-8**
 - 8 * **n2-standard-8**
@@ -178,7 +178,7 @@ gcloud dns --project="${GC_PROJECT_ID}" record-sets create "${DOMAIN}" --type="A
 :::note
 Be sure to create a VPC prior to running the following command and supply it as the subnetwork. Refer to Google Cloud documentation for best practices:
 
-[VPC](https://cloud.google.com/vpc/docs/vpc), [Subnets](https://cloud.google.com/vpc/docs/subnets), and [Regions / Zones](https://cloud.google.com/compute/docs/regions-zones)
+[VPC](https://cloud.google.com/vpc/versioned_docs/version-14-Jun-2023/vpc), [Subnets](https://cloud.google.com/vpc/versioned_docs/version-14-Jun-2023/subnets), and [Regions / Zones](https://cloud.google.com/compute/versioned_docs/version-14-Jun-2023/regions-zones)
 :::
 
 ```shell showLineNumbers

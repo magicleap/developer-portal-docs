@@ -9,7 +9,7 @@ summary: an enumerator which can be used by a foreach statement to iterate over 
 
 
 
-An enumerator which can be used by a  foreach  statement to iterate over the elements in a [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md).   
+An enumerator which can be used by a  foreach  statement to iterate over the elements in a [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md).   
 
 
 
@@ -29,7 +29,7 @@ public PlaneBoundary Current { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) | Container for the boundary of a detected planar surface. This is specific to Magic Leap because the polygon describing the boundary may be concave, and may contain holes.  |
+| [PlaneBoundary](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) | Container for the boundary of a detected planar surface. This is specific to Magic Leap because the polygon describing the boundary may be concave, and may contain holes.  |
 
 
 
@@ -67,7 +67,7 @@ public bool MoveNext()
 
 
 
-**Returns**:  true  if the next element is valid, or  false  if the [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) is already at the end of the collection.
+**Returns**:  true  if the next element is valid, or  false  if the [Enumerator](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) is already at the end of the collection.
 
 
 
@@ -100,7 +100,7 @@ public PlaneBoundaryCollection m_Collection;
 
 | Type | Description  | 
 |--|--|
-| [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) | Represents a collection of concave  BoundedPlane  boundaries obtained from MagicLeapPlaneSubsystem.GetAllBoundariesForPlane(TrackableId).  |
+| [PlaneBoundaryCollection](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md) | Represents a collection of concave  BoundedPlane  boundaries obtained from MagicLeapPlaneSubsystem.GetAllBoundariesForPlane(TrackableId).  |
 
 
 

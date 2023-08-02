@@ -9,13 +9,13 @@ summary: inherit from this if your request should be a class
 
 
 **NameSpace:** 
-[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
+[MagicLeap](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
 INHERIT FROM THIS IF YOUR REQUEST SHOULD BE A CLASS   [More...](#detailed-description)  
 
 
-Inherits from: <br></br>[IMLRequest< Params, Result >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md)
+Inherits from: <br></br>[IMLRequest< Params, Result >](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md)
 
 
 
@@ -36,7 +36,7 @@ public template <Params ,Result > class MLRequest : IMLRequest< Params, Result >
 
 ## Public Methods
 
-### abstract [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#abstract-start}
+### abstract [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#abstract-start}
 
 ```csharp
 public virtual abstract MLResult Start(
@@ -54,13 +54,13 @@ public virtual abstract MLResult Start(
 
 
 
-**Reimplements**: [Start](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md#mlresult-start)
+**Reimplements**: [Start](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md#mlresult-start)
 
 
 
 -----------
 
-### abstract [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#abstract-trygetresult}
+### abstract [MLResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) TryGetResult {#abstract-trygetresult}
 
 ```csharp
 public virtual abstract MLResult TryGetResult(
@@ -78,7 +78,7 @@ public virtual abstract MLResult TryGetResult(
 
 
 
-**Reimplements**: [TryGetResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md#mlresult-trygetresult)
+**Reimplements**: [TryGetResult](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md#mlresult-trygetresult)
 
 
 
@@ -104,7 +104,7 @@ protected virtual abstract void Dispose(
 
 
 
-**Reimplemented by**: [Dispose](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.md#override-void-dispose)
+**Reimplemented by**: [Dispose](/versioned_docs/version-14-Jun-2023/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/Request/UnityEngine.XR.MagicLeap.MLAnchors.Request.md#override-void-dispose)
 
 
 

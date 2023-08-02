@@ -30,4 +30,4 @@ Unlike Global Dimming, **Segmented Dimming** utilizes the dimmer panel to allow 
 
 ### Design Guidelines
 
-See our [Dimmer Design Guidelines document](/docs/guides/features/dimmer-feature/dimmer-design-guidelines.md) to learn how to improve the visual fidelity of the Segmented and Global Dimmer Feature.
+See our [Dimmer Design Guidelines document](/versioned_docs/version-14-Jun-2023/versioned_docs/version-14-Jun-2023/guides/features/dimmer-feature/dimmer-design-guidelines.md) to learn how to improve the visual fidelity of the Segmented and Global Dimmer Feature.
