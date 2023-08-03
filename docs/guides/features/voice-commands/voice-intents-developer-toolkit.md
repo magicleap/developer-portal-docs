@@ -48,9 +48,9 @@ In the tabularized example below there are a total of five intents from which th
 | --- | --- | --- |
 | app_intents | APP_CONFIRM | confirm \| positive \| affirm \| agree |
 | app_intents | APP_REJECT | deny / reject |
-| sys_intent_list | ML_SYSAUDIO_MUTE | |
-| sys_intent_list | ML_SYSAUDIO_UNMUTE | |
-| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | |
+| sys_intent_list | ML_SYSAUDIO_MUTE | - |
+| sys_intent_list | ML_SYSAUDIO_UNMUTE | - |
+| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | - |
 
 Before validation we enter the above table values into the VIDTK UI using the following steps:
 
@@ -158,9 +158,9 @@ Here is an example supporting the full grammar:
 | app_variables | time_type | year \| month \| day |
 | app_intents | APP_CONFIRM | Confirm {Loudness} |
 | app_intents | APP_SET_VOL | (set \| change) the ? $volume_type (to \| at) {VolumePercent} percent ? |
-| sys_intent_list |  ML_SYSAUDIO_MUTE | |
-| sys_intent_list | ML_SYSAUDIO_UNMUTE | |
-| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | |
+| sys_intent_list |  ML_SYSAUDIO_MUTE | - |
+| sys_intent_list | ML_SYSAUDIO_UNMUTE | - |
+| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | - |
 
 Following the analogous steps as in the previous example, we:
 
