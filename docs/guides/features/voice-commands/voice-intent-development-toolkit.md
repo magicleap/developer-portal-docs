@@ -1,6 +1,6 @@
 ---
-id: voice-intents-developer-toolkit
-title: Voice Intents Developer Toolkit
+id: voice-intent-development-toolkit
+title: Voice Intent Development Toolkit
 sidebar_position: 6
 date: 07/26/2023
 tags: [Voice, Commands, Android, Toolkit,]
@@ -25,32 +25,31 @@ The following languages are currently supported,
 
 - English (US)
 - Japanese
-- Modern Standard Arabic.
 
 ## Naming Conventions
 
 Since grammar files are the foundation of voice intents, it’s important to start with good naming conventions. Pick names that are descriptive and follow these rules. You can simply name your intent variables after their corresponding phrases and that’s okay. Only alphanumeric characters and underscores are supported.
 
-- Intents: Intents should be named in all-caps with snake_case. The naming convention “ML_” is reserved for ML system intents and should not be used by application specific intents. Pick a short abbreviation for your app name followed by an underscore to differentiate your app intents.
+- **Intents**: Intents should be named in all-caps with snake_case. The naming convention “ML_” is reserved for ML system intents and should not be used by application specific intents. Pick a short abbreviation for your app name followed by an underscore to differentiate your app intents.
   - Examples: APP_CAPTURE, APP_MENU, APP_YES, APP_NO
-- Slots: Slots should be named in CamelCase with the first letter in uppercase.
+- **Slots**: Slots should be named in CamelCase with the first letter in uppercase.
   - Examples: Color, MenuOption, VolumeLevel
-- Variables: Variables should be named using all lowercase snake_case with multiple words.
+- **Variables**: Variables should be named using all lowercase snake_case with multiple words.
   - Examples: digit_single, degrees_rule
 
 ## Samples
 
 ### Simple (Intents only)
 
-In the tabularized example below there are a total of five intents from which the first two, “APP_CONFIRM” and “APP_REJECT”, are app specific intents (App Intents) and the last three are system intents (System Intent). App specific intents allow you to associate one or more utterances with that specific intent. One can think about it as a group of different utterances that will trigger the intent.
+In the tabularized example below there are a total of five intents from which the first two, “APP_CONFIRM” and “APP_REJECT”, are app specific intents (App Intents) and the last three are system intents (System Intents). App specific intents allow you to associate one or more utterances with that specific intent. One can think about it as a group of different utterances that will trigger the intent.
 
 | Field | Name | Value |
 | --- | --- | --- |
 | app_intents | APP_CONFIRM | confirm \| positive \| affirm \| agree |
 | app_intents | APP_REJECT | deny / reject |
-| sys_intent_list | ML_SYSAUDIO_MUTE | - |
-| sys_intent_list | ML_SYSAUDIO_UNMUTE | - |
-| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | - |
+| sys_intent_list | ML_SYSAUDIO_MUTE | [empty] |
+| sys_intent_list | ML_SYSAUDIO_UNMUTE | [empty] |
+| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | [empty] |
 
 Before validation we enter the above table values into the VIDTK UI using the following steps:
 
@@ -125,7 +124,7 @@ Note that we are introducing two terms in this context “variable” and “slo
 
 ### Variables
 
-A “variable,” or non-terminal in terms of context-free grammars, serves purely as a grammatical tool to express variability. Instead of repeating an utterance with multiple shared substrings, one can use “variables” for purposes of convenience.
+A “variable” or non-terminal in terms of context-free grammars, serves purely as a grammatical tool to express variability. Instead of repeating an utterance with multiple shared substrings, one can use “variables” for purposes of convenience.
 
 #### Example
 
@@ -146,7 +145,7 @@ Note in the grammar we provide “before” and “after” are equivalent.
 
 ### Slots
 
-Slots are similar to variables in that they express variability however “{}” notation serves as markup to be able to access those values specifically via Unity or the C-Api. As a reference, we recommend, e.g. Create the Interaction Model for Your Skill | Alexa Skills Kit
+Slots are similar to variables in that they express variability however “{}” notation serves as markup to be able to access those values specifically via Unity or the C-API. 
 
 Here is an example supporting the full grammar:
 
@@ -158,9 +157,9 @@ Here is an example supporting the full grammar:
 | app_variables | time_type | year \| month \| day |
 | app_intents | APP_CONFIRM | Confirm {Loudness} |
 | app_intents | APP_SET_VOL | (set \| change) the ? $volume_type (to \| at) {VolumePercent} percent ? |
-| sys_intent_list |  ML_SYSAUDIO_MUTE | - |
-| sys_intent_list | ML_SYSAUDIO_UNMUTE | - |
-| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN | - |
+| sys_intent_list |  ML_SYSAUDIO_MUTE | [empty]|
+| sys_intent_list | ML_SYSAUDIO_UNMUTE |    [empty]|
+| sys_intent_list | ML_SYSAUDIO_VOLUME_DOWN |   [empty]|
 
 Following the analogous steps as in the previous example, we:
 
