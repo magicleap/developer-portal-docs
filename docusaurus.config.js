@@ -50,6 +50,11 @@ const navbar = {
       label: 'Releases',
     },
     {
+      href: 'https://forum.magicleap.cloud',
+      position: 'left',
+      label: 'Forum',
+    },
+    {
       type: 'docsVersionDropdown',
       id: 'docVersion',
       label: 'Version',
