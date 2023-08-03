@@ -236,7 +236,12 @@ module.exports = {
           {
             from:`/docs/guides/third-party/ptc`,
             to: '/docs/guides/third-party/networking/photon-fusion'
-          }
+          },
+          // Voice Intent Developer Toolkit
+          {
+            from: '/docs/guides/features/voice-commands/voice-intents-developer-toolkit',
+            to: '/docs/guides/features/voice-commands/voice-intent-development-toolkit'
+          },
         ],
         
         createRedirects(existingPath) {
