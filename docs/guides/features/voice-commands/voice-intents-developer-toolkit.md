@@ -129,13 +129,13 @@ A “variable,” or non-terminal in terms of context-free grammars, serves pure
 
 #### Example
 
-Before:
+**Before**:
 
 | Field | Name | Value |
 | --- | --- | --- | 
 | app_intents | APP_CONFIRM | I hereby confirm \| I hereby validate \| I hereby acknowledge \| I hereby verify \| I hereby affirm |
 
-After (in variables notation):
+**After (in variables notation)**:
 
 | Field | Name | Value |
 | --- | --- | --- |
