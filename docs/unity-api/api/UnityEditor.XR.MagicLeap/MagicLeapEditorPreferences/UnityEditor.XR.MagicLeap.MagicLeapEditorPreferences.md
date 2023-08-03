@@ -17,28 +17,13 @@ title: MagicLeapEditorPreferences
 
 
 
-## Public Methods
-
-### SettingsProvider CreateMLPreferencesTabProvider {#settingsprovider-createmlpreferencestabprovider}
-
-```csharp
-public static SettingsProvider CreateMLPreferencesTabProvider()
-```
-
-
-
-
-
-
------------
-
-## Public Attributes
+## Public Fields
 
 ### RunningLabdriver {#bool-runninglabdriver}
 
 ```csharp
 
-public static bool RunningLabdriver => labdriverRunning;
+public static bool RunningLabdriver { get; set; }
 
 ```
 
@@ -53,8 +38,23 @@ public static bool RunningLabdriver => labdriverRunning;
 
 ```csharp
 
-public static string ZeroIterationRuntimePath => ziRuntimePath;
+public static string ZeroIterationRuntimePath { get; set; }
 
+```
+
+
+
+
+
+
+-----------
+
+## Public Methods
+
+### SettingsProvider CreateMLPreferencesTabProvider {#settingsprovider-createmlpreferencestabprovider}
+
+```csharp
+public static SettingsProvider CreateMLPreferencesTabProvider()
 ```
 
 

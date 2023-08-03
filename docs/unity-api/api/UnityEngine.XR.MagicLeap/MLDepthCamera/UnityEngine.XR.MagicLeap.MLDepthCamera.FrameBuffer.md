@@ -23,7 +23,7 @@ public struct FrameBuffer;
 
 **Details**
 
-API Level 22
+API Level 29
 
 
 
@@ -73,7 +73,7 @@ Buffer data.
 
 ```csharp
 
-public byte [] Data;
+public byte[] Data;
 
 ```
 

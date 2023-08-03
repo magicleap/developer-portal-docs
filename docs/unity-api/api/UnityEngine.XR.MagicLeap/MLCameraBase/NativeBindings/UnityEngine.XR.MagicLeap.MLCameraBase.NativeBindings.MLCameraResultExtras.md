@@ -9,7 +9,7 @@ summary: resultextras is a structure to encapsulate various indices for a captur
 
 
 
-[ResultExtras](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ResultExtras.md) is a structure to encapsulate various indices for a capture result.   
+ResultExtras is a structure to encapsulate various indices for a capture result.   
 
 
 
@@ -19,7 +19,7 @@ summary: resultextras is a structure to encapsulate various indices for a captur
 
 ### FrameNumber {#readonly-long-framenumber}
 
-A 64bit integer to index the frame number associated with this result 
+A 64bit integer to index the frame number associated with this result. 
 
 ```csharp
 

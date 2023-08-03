@@ -54,7 +54,7 @@ public static Settings CurrentSettings { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) | Depth Camera [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) |
+| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) | Depth Camera Settings.  |
 
 
 
@@ -90,19 +90,23 @@ public static MLResult Connect()
 
 **Details**
 
-API Level 22
+API Level 29
 
-permissions com.magicleap.permission.DEPTH&#95;CAMERA (protection level: dangerous) 
-
-
+permissions com.magicleap.permission.DEPTH&#95;CAMERA (protection level: dangerous)
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): One of the parameters is invalid.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Connected to camera device(s) successfully.
-[MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied): Necessary permission is missing.
-[MLResult.Code.LicenseError](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-licenseerror): Necessary license is missing.
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): The operation failed with an unspecified error. 
+
+
+**Returns**: MLResult.Code.InvalidParam: One of the parameters is invalid.
+
+ MLResult.Code.Ok: Connected to camera device(s) successfully.
+
+ MLResult.Code.PermissionDenied: Necessary permission is missing.
+
+ MLResult.Code.LicenseError: Necessary license is missing.
+
+ MLResult.Code.UnspecifiedFailure: The operation failed with an unspecified error. 
 
 
 
@@ -119,17 +123,41 @@ public static MLResult Disconnect()
 
 **Details**
 
-API Level 22
+API Level 29
 
-permissions None 
-
-
+permissions None
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): The camera's handle was invalid.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Disconnected camera successfully.
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to disconnect camera for some unknown reason. 
+
+
+**Returns**: MLResult.Code.InvalidParam: The camera's handle was invalid.
+
+ MLResult.Code.Ok: Disconnected camera successfully.
+
+ MLResult.Code.UnspecifiedFailure: Failed to disconnect camera for some unknown reason. 
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetCapabilities {#mlresult-getcapabilities}
+
+```csharp
+public static MLResult GetCapabilities(
+    out StreamCapability[] capabilities
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.StreamCapability.md)[] |capabilities|Structure to encapsulate a possible configuration for a single stream. Can be used to understand possible values for a specific StreamConfig element in MLDepthCameraSettings. The capabilities supported by the depth camera can be queried with InternalGetCapabilities(). |
+
+
+
 
 
 
@@ -157,24 +185,27 @@ public static MLResult GetLatestDepthData(
 
 **Details**
 
-Returns a [Data](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md) object referencing the latest available frame data, if any.
+Returns a Data object referencing the latest available frame data, if any.
 
 This is a blocking call. API is not thread safe.
 
-If there are no new depth data frames for a given duration (duration determined by the system) then the API will return [MLResult.Code.Timeout](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-timeout).
+If there are no new depth data frames for a given duration (duration determined by the system) then the API will return MLResult.Code.Timeout.
 
-API Level 22
+API Level 29
 
-permissions None 
-
-
+permissions None
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): The camera's handle was invalid.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Depth camera data fetched successfully.
-[MLResult.Code.Timeout](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-timeout): No frame available within time limit.
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed due to internal error. 
+
+
+**Returns**: MLResult.Code.InvalidParam: The camera's handle was invalid.
+
+ MLResult.Code.Ok: Depth camera data fetched successfully.
+
+ MLResult.Code.Timeout: No frame available within time limit.
+
+ MLResult.Code.UnspecifiedFailure: Failed due to internal error. 
 
 
 
@@ -219,22 +250,24 @@ public static MLResult UpdateSettings(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) |settings|New [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) for the depth camera.|
+| [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) |settings|New Settings for the depth camera.|
 
 
 **Details**
 
-API Level 22
+API Level 29
 
-permissions None 
-
-
+permissions None
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): The camera's handle was invalid.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) updated successfully.
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed due to internal error. 
+
+
+**Returns**: MLResult.Code.InvalidParam: The camera's handle was invalid.
+
+ MLResult.Code.Ok: Settings updated successfully.
+
+ MLResult.Code.UnspecifiedFailure: Failed due to internal error. 
 
 
 
@@ -244,7 +277,7 @@ permissions None
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual override void OnApplicationPause(
@@ -287,7 +320,7 @@ protected virtual override MLResult.Code StartAPI()
 
 ### StopAPI {#override-stopapi}
 
-API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever MLDevice is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -302,19 +335,36 @@ protected virtual override MLResult.Code StopAPI()
 
 -----------
 
+## Public Attributes
+
+### FrameTypeCount {#const-int-frametypecount}
+
+```csharp
+
+public static const int FrameTypeCount = 2;
+
+```
+
+
+
+
+
+
+-----------
+
 ## Public Enums
 
 ### CaptureFlags {#enums-captureflags}
 
-Flags used to specify what kind of data to request from Depth Camera 
+Flags used to specify what kind of data to request from Depth Camera. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| DepthImage | 1 << 0| Enable DepthImage. See [Data.DepthImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#framebuffer-depthimage) for more details.   |
-| Confidence | 1 << 1| Enable ConfidenceBuffer. See [Data.ConfidenceBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#framebuffer-confidencebuffer) for more details.   |
-| DepthFlags | 1 << 2| Enable DepthFlagsBuffer. See [Data.DepthFlagsBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#framebuffer-depthflagsbuffer) for more details.   |
-| AmbientRawDepthImage | 1 << 3| Enable AmbientRawDepthImage. See [Data.AmbientRawDepthImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#framebuffer-ambientrawdepthimage) for more details.   |
-| RawDepthImage | 1 << 4| Enable RawDepthImage. See [Data.RawDepthImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#framebuffer-rawdepthimage) for more details.   |
+| DepthImage | 1 << 0| Enable DepthImage. See Data.DepthImage for more details.   |
+| Confidence | 1 << 1| Enable ConfidenceBuffer. See Data.ConfidenceBuffer for more details.   |
+| DepthFlags | 1 << 2| Enable DepthFlagsBuffer. See Data.DepthFlagsBuffer for more details.   |
+| AmbientRawDepthImage | 1 << 3| Enable AmbientRawDepthImage. See Data.AmbientRawDepthImage for more details.   |
+| RawDepthImage | 1 << 4| Enable RawDepthImage. See Data.RawDepthImage for more details.   |
 
 
 
@@ -332,7 +382,7 @@ Flags to select data requested from depth camera.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | Valid | 0 << 0| Indicates that there is no additional flag data for this pixel.   |
-| Invalid | 1 << 0| This bit is set to one to indicate that one or more flags from below have been set. Depending on the use case the application can correlate the flag data and corresponding pixel data to determine how to handle the pixel   |
+| Invalid | 1 << 0| This bit is set to one to indicate that one or more flags from below have been set. Depending on the use case the application can correlate the flag data and corresponding pixel data to determine how to handle the pixel.   |
 | Saturated | 1 << 1| The pixel intensity is either below the min or the max threshold value.   |
 | Inconsistent | 1 << 2| Inconsistent data received when capturing frames. This can happen due to fast motion.   |
 | LowSignal | 1 << 3| Pixel has very low signal to noise ratio. One example of when this can happen is for pixels in far end of the range.   |
@@ -351,14 +401,18 @@ Flags to select data requested from depth camera.
 
 -----------
 
-### FrameType {#enums-frametype}
+### FrameRate {#enums-framerate}
 
-Depth Camera frame capture types 
+Enumeration of possible frame rates. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Unknown | 0| Unknown or no frame type   |
-| LongRange | 1| Frame captured using [Mode.LongRange](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-longrange) mode.   |
+| FPS_1 | |   |
+| FPS_5 | |   |
+| FPS_25 | |   |
+| FPS_30 | |   |
+| FPS_50 | |   |
+| FPS_60 | |   |
 
 
 
@@ -369,13 +423,33 @@ Depth Camera frame capture types
 
 -----------
 
-### Mode {#enums-mode}
+### FrameType {#enums-frametype}
+
+Depth Camera frame capture types. 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| LongRange | | Frame captured using Stream.LongRange mode.   |
+| ShortRange | | Frame captured using Stream.ShortRange mode.   |
+
+
+
+
+
+
+
+
+-----------
+
+### Stream {#enums-stream}
 
 Depth Camera modes   Future release may add support to other modes. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| LongRange | 1 << 0| Long range mode  Under normal operations long range mode has a maximum frequency of 5fps and a range of up to 5m, in some cases this can go as far 7.5m. |
+| None | 0|   |
+| LongRange | 1 << 0| Long range mode.  Under normal operations long range mode has a maximum frequency of 5fps and a range of up to 5m, in some cases this can go as far 7.5m. |
+| ShortRange | 1 << 1| Short range mode.  Under normal operations short range stream has a maximum frequency of 60fps and a range from 0.2m up to 0.9m. |
 
 
 

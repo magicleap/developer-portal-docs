@@ -32,7 +32,6 @@ namespace UnityEngine.XR.MagicLeap
 {
     using System;
     using System.Reflection;
-    using UnityEngine.XR.MagicLeap.Internal;
 
     [System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple = true, Inherited = true)]
     public class RequireXRLoader : Attribute { }

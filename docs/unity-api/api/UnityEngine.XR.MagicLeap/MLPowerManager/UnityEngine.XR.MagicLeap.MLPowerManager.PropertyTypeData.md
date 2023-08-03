@@ -23,13 +23,13 @@ Array of #MLPowerManagerPropertyType elements.
 
 ```csharp
 
-public PropertyType [] PropertyTypes;
+public PropertyType[] PropertyTypes;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [PropertyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-propertytype) [] | Power Manager property types.  |
+| [PropertyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-propertytype)[] | Power Manager property types.  |
 
 
 

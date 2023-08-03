@@ -83,7 +83,7 @@ The maximum number of controller touchpad touches that are supported.
 
 ```csharp
 
-public const uint MaxControllerTouchpadTouches = 2;
+public static const uint MaxControllerTouchpadTouches = 2;
 
 ```
 
@@ -96,7 +96,7 @@ public const uint MaxControllerTouchpadTouches = 2;
 
 ## Public Enums
 
-### CalibrationAccuracy {#enums-calibrationaccuracy}
+### CalibrationAccuracy {#uint-calibrationaccuracy}
 
 The calibration accuracy levels for controller. 
 

@@ -351,6 +351,11 @@ namespace UnityEngine.XR.MagicLeap
 
                 return MLResult.Create(resultCode);
             }
+
+            public bool ContainsTrack(MediaStream.Track track)
+            {
+                return localMediaStreamTracks != null && localMediaStreamTracks.Contains(track);
+            }
         }
     }
 }

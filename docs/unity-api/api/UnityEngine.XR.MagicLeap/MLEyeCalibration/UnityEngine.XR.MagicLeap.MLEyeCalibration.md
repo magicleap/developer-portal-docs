@@ -12,7 +12,7 @@ summary: mleyecalibration summary placeholder.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md) Summary placeholder.   [More...](#detailed-description)  
+MLEyeCalibration Summary placeholder.   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>[MLAutoAPISingleton< MLEyeCalibration >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
@@ -28,7 +28,7 @@ public class MLEyeCalibration : MLAutoAPISingleton< MLEyeCalibration >
 
 **Details**
 
-[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md) description goes here. 
+MLEyeCalibration description goes here. 
 
 
 
@@ -68,7 +68,7 @@ public static MLResult GetState(
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Handle Unity application pause and resume 
+Handle Unity application pause and resume. 
 
 ```csharp
 protected virtual override void OnApplicationPause(

@@ -39,6 +39,21 @@ Magic Leap will always try to use 6DoF tracking but will automatically switch to
 
 -----------
 
+### requestedFeatures {#override-feature-requestedfeatures}
+
+```csharp
+
+public override Feature requestedFeatures { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### requestedTrackingMode {#override-feature-requestedtrackingmode}
 
 ```csharp
@@ -126,24 +141,7 @@ public override void Update(
 
 
 
-TODO (5/26/2020): Move MLSpatialMapper specific features to shared XRMeshSubsystem extensions 
-
-
-
------------
-
-## Public Attributes
-
-### requestedFeatures {#override-feature-requestedfeatures}
-
-```csharp
-
-public override Feature requestedFeatures => SubsystemFeatures.requestedFeatures;
-
-```
-
-
-
+TODO (5/26/2020): Move MLSpatialMapper specific features to shared XRMeshSubsystem extensions
 
 
 

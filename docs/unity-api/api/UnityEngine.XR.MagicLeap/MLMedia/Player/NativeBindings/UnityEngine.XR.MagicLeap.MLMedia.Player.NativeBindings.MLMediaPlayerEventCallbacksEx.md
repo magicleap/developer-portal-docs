@@ -1,6 +1,6 @@
 ---
 title: MLMediaPlayerEventCallbacksEx
-summary: callbacks for notifying client about 
+summary: callbacks for notifying client about. 
 
 ---
 
@@ -9,7 +9,7 @@ summary: callbacks for notifying client about
 
 
 
-Callbacks for notifying client about   
+Callbacks for notifying client about.   
 
 
 
@@ -48,9 +48,6 @@ public OnBufferingUpdateDelegate OnBufferingUpdate;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnBufferingUpdateDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onbufferingupdatedelegate) | Delegate for the the OnBufferingUpdate event.  |
 
 
 
@@ -60,7 +57,7 @@ public OnBufferingUpdateDelegate OnBufferingUpdate;
 
 ### OnCompletion {#oncompletiondelegate-oncompletion}
 
-This callback is invoked when media player played back until end of media and has now come to a stop. Note that this callback does not fire when 'looping = true', because 
+This callback is invoked when media player played back until end of media and has now come to a stop. Note that this callback does not fire when 'looping = true', because. 
 
 ```csharp
 
@@ -85,9 +82,6 @@ public OnErrorDelegate OnError;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnErrorDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onerrordelegate) | Delegate for the any OnError event.  |
 
 
 
@@ -114,7 +108,7 @@ public OnFramePackingDelegate OnFramePacking;
 
 ### OnInfo {#oninfodelegate-oninfo}
 
-This callback function is invoked when 
+This callback function is invoked when. 
 
 ```csharp
 
@@ -122,9 +116,6 @@ public OnInfoDelegate OnInfo;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnInfoDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-oninfodelegate) | Delegate for the the OnInfo event.  |
 
 
 
@@ -210,9 +201,6 @@ public OnVideoSizeChangedDelegate OnVideoSizeChanged;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnVideoSizeChangedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#delegate-void-onvideosizechangeddelegate) | Delegate for the any OnVideoSizeChanged event.  |
 
 
 

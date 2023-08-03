@@ -186,6 +186,9 @@ namespace UnityEngine.XR.MagicLeap.Native
         public static extern MLResult.Code MLPerceptionGetSnapshot(ref IntPtr snapshot);
 
         [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
+        public static extern MLResult.Code MLPerceptionGetPredictedSnapshot(ulong timestamp, ref IntPtr out_snapshot);
+
+        [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
         public static extern MLResult.Code MLPerceptionReleaseSnapshot(IntPtr snap);
 
         [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]

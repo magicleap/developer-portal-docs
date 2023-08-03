@@ -66,7 +66,7 @@ public readonly LocalizationStatus LocalizationStatus;
 
 | Type | Description  | 
 |--|--|
-| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
+| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus.  |
 
 
 

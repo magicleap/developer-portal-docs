@@ -19,7 +19,7 @@ A unique identifier which represents a coordinate frame. The unique identifier i
 
 ### EmptyFrame {#mlcoordinateframeuid-emptyframe}
 
-Gets an initialized [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md). 
+Gets an initialized MLCoordinateFrameUID. 
 
 ```csharp
 
@@ -35,7 +35,7 @@ public static MLCoordinateFrameUID EmptyFrame { get; set; }
 
 
 
-**Returns**: An initialized [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md).
+**Returns**: An initialized MLCoordinateFrameUID.
 
 
 
@@ -65,7 +65,7 @@ public override bool Equals(
 
 
 
-**Returns**: True if the the provided object is of the [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) type and has the same two data values.
+**Returns**: True if the the provided object is of the MLCoordinateFrameUID type and has the same two data values.
 
 
 
@@ -240,7 +240,7 @@ public MLCoordinateFrameUID(
 
 ### Guid ToGuid {#guid-toguid}
 
-Returns the GUID based on the values of this [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md). 
+Returns the GUID based on the values of this MLCoordinateFrameUID. 
 
 ```csharp
 public Guid ToGuid()
@@ -259,7 +259,7 @@ public Guid ToGuid()
 
 ### override string ToString {#override-string-tostring}
 
-Returns the string value of the GUID of this [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md). 
+Returns the string value of the GUID of this MLCoordinateFrameUID. 
 
 ```csharp
 public override string ToString()
@@ -278,7 +278,7 @@ public override string ToString()
 
 ### bool operator!= {#bool-operator}
 
-The inequality check to be used for comparing two [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) structs. 
+The inequality check to be used for comparing two MLCoordinateFrameUID structs. 
 
 ```csharp
 public static bool operator!=(
@@ -308,7 +308,7 @@ public static bool operator!=(
 
 ### bool operator== {#bool-operator}
 
-The equality check to be used for comparing two [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) structs. 
+The equality check to be used for comparing two MLCoordinateFrameUID structs. 
 
 ```csharp
 public static bool operator==(

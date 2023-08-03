@@ -9,7 +9,7 @@ summary: jsoncontainer to auto allowing all system intents.
 
 
 
-[JSONContainer](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.JSONContainer.md) to Auto allowing all System Intents.   
+JSONContainer to Auto allowing all System Intents.   
 
 
 

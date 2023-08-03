@@ -1,6 +1,6 @@
 ---
 title: IMLMediaPlayer
-summary: interface for target classes used by mlmediaplayer each function must be implemented by the child player type 
+summary: interface for target classes used by mlmediaplayer each function must be implemented by the child player type. 
 
 ---
 
@@ -12,7 +12,7 @@ summary: interface for target classes used by mlmediaplayer each function must b
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-Interface for target classes used by [MLMediaPlayer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLMediaPlayer.md) Each function must be implemented by the child player type   
+Interface for target classes used by MLMediaPlayer Each function must be implemented by the child player type.   
 
 
 Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md)
@@ -35,6 +35,8 @@ public bool IsPlaying { get; set; }
 
 
 
+**Reimplemented by**: [IsPlaying](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#bool-isplaying)
+
 
 
 -----------
@@ -43,7 +45,7 @@ public bool IsPlaying { get; set; }
 
 ### int GetDurationMilliseconds {#int-getdurationmilliseconds}
 
-Gets the duration of the video in milliseconds 
+Gets the duration of the video in milliseconds. 
 
 ```csharp
 public int GetDurationMilliseconds()
@@ -64,7 +66,7 @@ public int GetDurationMilliseconds()
 
 ### int GetHeight {#int-getheight}
 
-Get the height of the video in pixels 
+Get the height of the video in pixels. 
 
 ```csharp
 public int GetHeight()
@@ -85,7 +87,7 @@ public int GetHeight()
 
 ### int GetPositionMilliseconds {#int-getpositionmilliseconds}
 
-Gets the current position of the video in milliseconds 
+Gets the current position of the video in milliseconds. 
 
 ```csharp
 public int GetPositionMilliseconds()
@@ -106,7 +108,7 @@ public int GetPositionMilliseconds()
 
 ### int GetWidth {#int-getwidth}
 
-Get the width of the video in pixels 
+Get the width of the video in pixels. 
 
 ```csharp
 public int GetWidth()
@@ -138,7 +140,7 @@ public MLResult Pause()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplemented by**: [Pause](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-pause)
 
@@ -159,7 +161,7 @@ public MLResult Play()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplemented by**: [Play](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-play)
 
@@ -180,7 +182,7 @@ public MLResult Resume()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplemented by**: [Resume](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-resume)
 
@@ -212,7 +214,7 @@ public MLResult Seek(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplemented by**: [Seek](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-seek)
 
@@ -242,7 +244,7 @@ public MLResult SetLooping(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplemented by**: [SetLooping](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-setlooping)
 
@@ -272,7 +274,7 @@ public MLResult SetSourcePath(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed due to an invalid input parameter.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.MediaGenericNoInit](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericnoinit)  if media player was not properly built or initialized.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if attempting to access web content without appropriate network permissions 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded.  MLResult.Result  will be  MLResult.Code.InvalidParam  if failed due to an invalid input parameter.  MLResult.Result  will be  MLResult.Code.UnspecifiedFailure  if failed due to internal error.  MLResult.Result  will be  MLResult.Code.MediaGenericNoInit  if media player was not properly built or initialized.  MLResult.Result  will be  MLResult.Code.PermissionDenied  if attempting to access web content without appropriate network permissions 
 
 **Reimplemented by**: [SetSourcePath](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-setsourcepath)
 
@@ -302,7 +304,7 @@ public MLResult SetSourceURI(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed due to an invalid input parameter.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.MediaGenericNoInit](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericnoinit)  if media player was not properly built or initialized.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if attempting to access web content without appropriate network permissions 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded.  MLResult.Result  will be  MLResult.Code.InvalidParam  if failed due to an invalid input parameter.  MLResult.Result  will be  MLResult.Code.UnspecifiedFailure  if failed due to internal error.  MLResult.Result  will be  MLResult.Code.MediaGenericNoInit  if media player was not properly built or initialized.  MLResult.Result  will be  MLResult.Code.PermissionDenied  if attempting to access web content without appropriate network permissions 
 
 **Reimplemented by**: [SetSourceURI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-setsourceuri)
 
@@ -332,7 +334,7 @@ public MLResult SetVolume(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplemented by**: [SetVolume](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-setvolume)
 
@@ -353,7 +355,7 @@ public MLResult Stop()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplemented by**: [Stop](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-stop)
 

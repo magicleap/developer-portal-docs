@@ -18,6 +18,19 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
+### void MLUnityGraphicsClearCallbacks {#void-mlunitygraphicsclearcallbacks}
+
+```csharp
+public void MLUnityGraphicsClearCallbacks()
+```
+
+
+
+
+
+
+-----------
+
 ### ulong MLUnityGraphicsGetHandle {#ulong-mlunitygraphicsgethandle}
 
 ```csharp
@@ -45,6 +58,30 @@ public void MLUnityGraphicsRegisterCallbacks(
 | Type | Name  | Description  | 
 |--|--|--|
 | ref [MLUnityGraphicsCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLGraphicsHooks/NativeBindings/UnityEngine.XR.MagicLeap.MLGraphicsHooks.NativeBindings.MLUnityGraphicsCallbacks.md) |callbacks||
+
+
+
+
+
+
+-----------
+
+### delegate void OnBeginRenderFrameNativeDelegate {#delegate-void-onbeginrenderframenativedelegate}
+
+```csharp
+public delegate void OnBeginRenderFrameNativeDelegate(
+    IntPtr context,
+    long predictedDisplayTime
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| IntPtr |context||
+| long |predictedDisplayTime||
 
 
 

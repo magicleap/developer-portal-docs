@@ -21,9 +21,11 @@ title: UnitySDKPlayTests
 | class | **[MLInputs](/unity-api/api/UnitySDKPlayTests/MLInputs/UnitySDKPlayTests.MLInputs.md)**  |
 | class | **[MLMarkerTrackerTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLMarkerTrackerTests.md)**  |
 | class | **[MLMedia](/unity-api/api/UnitySDKPlayTests/MLMedia/UnitySDKPlayTests.MLMedia.md)**  |
+| class | **[MLMediaRecorderTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLMediaRecorderTests.md)**  |
 | class | **[MLMeshingTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLMeshingTests.md)**  |
 | class | **[MLPermissionsTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLPermissionsTests.md)**  |
 | class | **[MLPlanesTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLPlanesTests.md)**  |
+| class | **[MLPowerManagerTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLPowerManagerTests.md)**  |
 | class | **[MLSegmentedDimmerTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLSegmentedDimmerTests.md)**  |
 | class | **[MLVoiceTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLVoiceTests.md)**  |
 | class | **[MLWebViewTests](/unity-api/api/UnitySDKPlayTests/UnitySDKPlayTests.MLWebViewTests.md)**  |

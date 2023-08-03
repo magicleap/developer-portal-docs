@@ -17,6 +17,25 @@ title: MLSegmentedDimmer
 
 
 
+## Public Fields
+
+### Exists {#bool-exists}
+
+Does the Universal Render Pipeline contain a Segmented Dimmer feature in its renderers. 
+
+```csharp
+
+public static bool Exists { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ## Public Methods
 
 ### void Activate {#void-activate}
@@ -82,25 +101,6 @@ public static void SetEnabled(
 | Type | Name  | Description  | 
 |--|--|--|
 | bool |enabled||
-
-
-
-
-
-
------------
-
-## Public Attributes
-
-### Exists {#bool-exists}
-
-Does the Universal Render Pipeline contain a Segmented Dimmer feature in its renderers 
-
-```csharp
-
-public static bool Exists => false;
-
-```
 
 
 

@@ -9,7 +9,7 @@ summary: mediaplayer track information.
 
 
 
-MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) Information.   
+MediaPlayer Track Information.   
 
 
 

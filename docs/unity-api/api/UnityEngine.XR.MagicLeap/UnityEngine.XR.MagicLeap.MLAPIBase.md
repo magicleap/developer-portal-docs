@@ -14,7 +14,7 @@ title: MLAPIBase
 
 
 
-Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLCameraBase](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md), <br></br>[UnityEngine.XR.MagicLeap.MLWorldCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md)
+Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLCameraBase](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md)
 
 
 
@@ -38,7 +38,7 @@ public MLAPIBase()
 
 ### OnApplicationFocus {#void-onapplicationfocus}
 
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application focus event. 
+Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application focus event. 
 
 ```csharp
 protected virtual void OnApplicationFocus(
@@ -62,7 +62,7 @@ protected virtual void OnApplicationFocus(
 
 ### OnApplicationPause {#void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual void OnApplicationPause(
@@ -80,7 +80,7 @@ protected virtual void OnApplicationPause(
 
 
 
-**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#override-void-onapplicationpause)
+**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#override-void-onapplicationpause)
 
 
 

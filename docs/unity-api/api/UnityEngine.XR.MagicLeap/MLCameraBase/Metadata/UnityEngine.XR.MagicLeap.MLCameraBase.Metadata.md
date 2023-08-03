@@ -106,7 +106,7 @@ Gets color correction aberration modes.
 
 ```csharp
 public MLResult GetColorCorrectionAvailableAberrationModes(
-    out ColorCorrectionAberrationMode [] OutData
+    out ColorCorrectionAberrationMode[] OutData
 )
 ```
 
@@ -115,7 +115,7 @@ public MLResult GetColorCorrectionAvailableAberrationModes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [ColorCorrectionAberrationMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode) [] |OutData||
+| out [ColorCorrectionAberrationMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-colorcorrectionaberrationmode)[] |OutData||
 
 
 
@@ -130,7 +130,7 @@ Gets color correction gains.
 
 ```csharp
 public MLResult GetColorCorrectionGainsRequestMetadata(
-    out float [] OutData
+    out float[] OutData
 )
 ```
 
@@ -139,7 +139,7 @@ public MLResult GetColorCorrectionGainsRequestMetadata(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out float [] |OutData||
+| out float[] |OutData||
 
 
 
@@ -154,7 +154,7 @@ Gets color correction gains.
 
 ```csharp
 public MLResult GetColorCorrectionGainsResultMetadata(
-    out float [] OutData
+    out float[] OutData
 )
 ```
 
@@ -163,7 +163,7 @@ public MLResult GetColorCorrectionGainsResultMetadata(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out float [] |OutData||
+| out float[] |OutData||
 
 
 
@@ -235,7 +235,7 @@ public MLResult GetColorCorrectionTransformRequestMetadata(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |OutData[][]|[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type. |
+| out [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |OutData[][]|Rational data type. |
 
 
 
@@ -259,7 +259,7 @@ public MLResult GetColorCorrectionTransformResultMetadata(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |OutData[][]|[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type. |
+| out [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |OutData[][]|Rational data type. |
 
 
 
@@ -322,7 +322,7 @@ Gets AE modes.
 
 ```csharp
 public MLResult GetControlAEAvailableModes(
-    out ControlAEMode [] OutData
+    out ControlAEMode[] OutData
 )
 ```
 
@@ -331,7 +331,7 @@ public MLResult GetControlAEAvailableModes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [ControlAEMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode) [] |OutData||
+| out [ControlAEMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlaemode)[] |OutData||
 
 
 
@@ -346,7 +346,7 @@ Gets AE compensation range.
 
 ```csharp
 public MLResult GetControlAECompensationRange(
-    out int [] OutData
+    out int[] OutData
 )
 ```
 
@@ -355,7 +355,7 @@ public MLResult GetControlAECompensationRange(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out int [] |OutData||
+| out int[] |OutData||
 
 
 
@@ -379,7 +379,7 @@ public MLResult GetControlAECompensationStep(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |OutData|[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type. |
+| out [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |OutData|Rational data type. |
 
 
 
@@ -658,7 +658,7 @@ Gets AE target FPS range.
 
 ```csharp
 public MLResult GetControlAETargetFPSRangeResultMetadata(
-    out int [] OutData
+    out int[] OutData
 )
 ```
 
@@ -667,7 +667,7 @@ public MLResult GetControlAETargetFPSRangeResultMetadata(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out int [] |OutData||
+| out int[] |OutData||
 
 
 
@@ -678,11 +678,11 @@ public MLResult GetControlAETargetFPSRangeResultMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFAvailableModes {#mlresult-getcontrolafavailablemodes}
 
-Gets AF modes 
+Gets AF modes. 
 
 ```csharp
 public MLResult GetControlAFAvailableModes(
-    out ControlAFMode [] OutData
+    out ControlAFMode[] OutData
 )
 ```
 
@@ -691,16 +691,18 @@ public MLResult GetControlAFAvailableModes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [ControlAFMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode) [] |OutData|API mode|
+| out [ControlAFMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlafmode)[] |OutData|API mode|
 
 
 
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -708,7 +710,7 @@ public MLResult GetControlAFAvailableModes(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFDistanceRangeRequestMetadata {#mlresult-getcontrolafdistancerangerequestmetadata}
 
-Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using [GetLensInfoMinimumFocusDistance](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#mlresult-getlensinfominimumfocusdistance). The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using API [GetLensInfoHyperfocalDistance](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#mlresult-getlensinfohyperfocaldistance). 
+Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using GetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using API GetLensInfoHyperfocalDistance. 
 
 ```csharp
 public MLResult GetControlAFDistanceRangeRequestMetadata(
@@ -730,9 +732,11 @@ public MLResult GetControlAFDistanceRangeRequestMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -740,7 +744,7 @@ public MLResult GetControlAFDistanceRangeRequestMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFDistanceRangeResultMetadata {#mlresult-getcontrolafdistancerangeresultmetadata}
 
-Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using [GetLensInfoMinimumFocusDistance](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#mlresult-getlensinfominimumfocusdistance). The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api [GetLensInfoHyperfocalDistance](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#mlresult-getlensinfohyperfocaldistance). 
+Gets AF distance range. Both Min and Max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using GetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api GetLensInfoHyperfocalDistance. 
 
 ```csharp
 public MLResult GetControlAFDistanceRangeResultMetadata(
@@ -762,9 +766,11 @@ public MLResult GetControlAFDistanceRangeResultMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -772,7 +778,7 @@ public MLResult GetControlAFDistanceRangeResultMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFModeRequestMetadata {#mlresult-getcontrolafmoderequestmetadata}
 
-Gets AF mode 
+Gets AF mode. 
 
 ```csharp
 public MLResult GetControlAFModeRequestMetadata(
@@ -792,9 +798,11 @@ public MLResult GetControlAFModeRequestMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -802,7 +810,7 @@ public MLResult GetControlAFModeRequestMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFModeResultMetadata {#mlresult-getcontrolafmoderesultmetadata}
 
-Gets AF mode 
+Gets AF mode. 
 
 ```csharp
 public MLResult GetControlAFModeResultMetadata(
@@ -822,9 +830,11 @@ public MLResult GetControlAFModeResultMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -832,7 +842,7 @@ public MLResult GetControlAFModeResultMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFSceneChangeResultMetadata {#mlresult-getcontrolafscenechangeresultmetadata}
 
-Gets AF scene change detection status 
+Gets AF scene change detection status. 
 
 ```csharp
 public MLResult GetControlAFSceneChangeResultMetadata(
@@ -852,9 +862,11 @@ public MLResult GetControlAFSceneChangeResultMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -862,7 +874,7 @@ public MLResult GetControlAFSceneChangeResultMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFStateResultMetadata {#mlresult-getcontrolafstateresultmetadata}
 
-Gets AF state 
+Gets AF state. 
 
 ```csharp
 public MLResult GetControlAFStateResultMetadata(
@@ -882,9 +894,11 @@ public MLResult GetControlAFStateResultMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -892,7 +906,7 @@ public MLResult GetControlAFStateResultMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFTriggerRequestMetadata {#mlresult-getcontrolaftriggerrequestmetadata}
 
-Gets AF trigger 
+Gets AF trigger. 
 
 ```csharp
 public MLResult GetControlAFTriggerRequestMetadata(
@@ -912,9 +926,11 @@ public MLResult GetControlAFTriggerRequestMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -922,7 +938,7 @@ public MLResult GetControlAFTriggerRequestMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetControlAFTriggerResultMetadata {#mlresult-getcontrolaftriggerresultmetadata}
 
-Gets AF trigger 
+Gets AF trigger. 
 
 ```csharp
 public MLResult GetControlAFTriggerResultMetadata(
@@ -942,9 +958,11 @@ public MLResult GetControlAFTriggerResultMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -956,7 +974,7 @@ Gets AWB modes.
 
 ```csharp
 public MLResult GetControlAWBAvailableModes(
-    out ControlAWBMode [] OutData
+    out ControlAWBMode[] OutData
 )
 ```
 
@@ -965,7 +983,7 @@ public MLResult GetControlAWBAvailableModes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [ControlAWBMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode) [] |OutData||
+| out [ControlAWBMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlawbmode)[] |OutData||
 
 
 
@@ -1124,7 +1142,7 @@ Gets Effect modes.
 
 ```csharp
 public MLResult GetControlAvailableEffectModes(
-    out ControlEffectMode [] OutData
+    out ControlEffectMode[] OutData
 )
 ```
 
@@ -1133,7 +1151,7 @@ public MLResult GetControlAvailableEffectModes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [ControlEffectMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode) [] |OutData||
+| out [ControlEffectMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controleffectmode)[] |OutData||
 
 
 
@@ -1148,7 +1166,7 @@ Gets Available Modes.
 
 ```csharp
 public MLResult GetControlAvailableModes(
-    out ControlMode [] OutData
+    out ControlMode[] OutData
 )
 ```
 
@@ -1157,7 +1175,7 @@ public MLResult GetControlAvailableModes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [ControlMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode) [] |OutData||
+| out [ControlMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlmode)[] |OutData||
 
 
 
@@ -1172,7 +1190,7 @@ Gets Scene modes.
 
 ```csharp
 public MLResult GetControlAvailableSceneModes(
-    out ControlSceneMode [] OutData
+    out ControlSceneMode[] OutData
 )
 ```
 
@@ -1181,7 +1199,7 @@ public MLResult GetControlAvailableSceneModes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [ControlSceneMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode) [] |OutData||
+| out [ControlSceneMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#enums-controlscenemode)[] |OutData||
 
 
 
@@ -1436,7 +1454,7 @@ Gets jpeg GPS coordinates.
 
 ```csharp
 public MLResult GetJpegGPSCoordinatesRequestMetadata(
-    out double [] OutData
+    out double[] OutData
 )
 ```
 
@@ -1445,7 +1463,7 @@ public MLResult GetJpegGPSCoordinatesRequestMetadata(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out double [] |OutData||
+| out double[] |OutData||
 
 
 
@@ -1460,7 +1478,7 @@ Gets jpeg GPS coordinates.
 
 ```csharp
 public MLResult GetJpegGPSCoordinatesResultMetadata(
-    out double [] OutData
+    out double[] OutData
 )
 ```
 
@@ -1469,7 +1487,7 @@ public MLResult GetJpegGPSCoordinatesResultMetadata(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out double [] |OutData||
+| out double[] |OutData||
 
 
 
@@ -1644,9 +1662,11 @@ public MLResult GetLensFocusDistanceRequestMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -1654,7 +1674,7 @@ public MLResult GetLensFocusDistanceRequestMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLensFocusDistanceResultMetadata {#mlresult-getlensfocusdistanceresultmetadata}
 
-Gets Lens focus distance 
+Gets Lens focus distance. 
 
 ```csharp
 public MLResult GetLensFocusDistanceResultMetadata(
@@ -1674,9 +1694,11 @@ public MLResult GetLensFocusDistanceResultMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -1684,7 +1706,7 @@ public MLResult GetLensFocusDistanceResultMetadata(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLensInfoHyperfocalDistance {#mlresult-getlensinfohyperfocaldistance}
 
-Gets lens hyperfocal distance in diopters 
+Gets lens hyperfocal distance in diopters. 
 
 ```csharp
 public MLResult GetLensInfoHyperfocalDistance(
@@ -1704,9 +1726,11 @@ public MLResult GetLensInfoHyperfocalDistance(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -1714,7 +1738,7 @@ public MLResult GetLensInfoHyperfocalDistance(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLensInfoMinimumFocusDistance {#mlresult-getlensinfominimumfocusdistance}
 
-Gets lens minimum focus distance in diopters 
+Gets lens minimum focus distance in diopters. 
 
 ```csharp
 public MLResult GetLensInfoMinimumFocusDistance(
@@ -1734,9 +1758,11 @@ public MLResult GetLensInfoMinimumFocusDistance(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -1764,9 +1790,11 @@ public MLResult GetLensInfoMinimumFocusDistanceIncrement(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -1774,7 +1802,7 @@ public MLResult GetLensInfoMinimumFocusDistanceIncrement(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLensStateResultMetadata {#mlresult-getlensstateresultmetadata}
 
-Get Lens state 
+Get Lens state. 
 
 ```csharp
 public MLResult GetLensStateResultMetadata(
@@ -1794,9 +1822,11 @@ public MLResult GetLensStateResultMetadata(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to obtain result due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to obtain result due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to obtain result due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to obtain result due to an unknown error.
 
 
 
@@ -1880,7 +1910,7 @@ Gets sensor info active array sizes.
 
 ```csharp
 public MLResult GetSensorInfoActiveArraySize(
-    out int [] OutData
+    out int[] OutData
 )
 ```
 
@@ -1889,7 +1919,7 @@ public MLResult GetSensorInfoActiveArraySize(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out int [] |OutData||
+| out int[] |OutData||
 
 
 
@@ -1904,7 +1934,7 @@ Gets sensor info sensitivity range.
 
 ```csharp
 public MLResult GetSensorInfoSensitivityRange(
-    out int [] OutData
+    out int[] OutData
 )
 ```
 
@@ -1913,7 +1943,7 @@ public MLResult GetSensorInfoSensitivityRange(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out int [] |OutData||
+| out int[] |OutData||
 
 
 
@@ -2048,7 +2078,7 @@ Sets color correction gains.
 
 ```csharp
 public MLResult SetColorCorrectionGains(
-    float [] Data
+    float[] Data
 )
 ```
 
@@ -2057,7 +2087,7 @@ public MLResult SetColorCorrectionGains(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float [] |Data||
+| float[] |Data||
 
 
 
@@ -2105,7 +2135,7 @@ public MLResult SetColorCorrectionTransform(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |Data[][]|[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type. |
+| [Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) |Data[][]|Rational data type. |
 
 
 
@@ -2188,7 +2218,7 @@ public MLResult SetControlAELock(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetControlAEMode {#mlresult-setcontrolaemode}
 
-Sets AE mode. ControlAEMode&#95;Off is not supported if camera is configured for 15FPS 
+Sets AE mode. ControlAEMode&#95;Off is not supported if camera is configured for 15FPS. 
 
 ```csharp
 public MLResult SetControlAEMode(
@@ -2236,7 +2266,7 @@ public MLResult SetControlAERegions(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetControlAFDistanceRange {#mlresult-setcontrolafdistancerange}
 
-Sets AF distance range. Both min and max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using [GetLensInfoMinimumFocusDistance](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#mlresult-getlensinfominimumfocusdistance). The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api [GetLensInfoHyperfocalDistance](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md#mlresult-getlensinfohyperfocaldistance). 
+Sets AF distance range. Both min and max are specified as focus distance in diopters. The min value specifies the lower bound for focus distance used by Autofocus algorithm and should be more than min focus distance which can be queried using GetLensInfoMinimumFocusDistance. The max value specifies the upper bound for focus distance used by Autofocus algorithm and should be less than hyperfocal distance which can be queried using api GetLensInfoHyperfocalDistance. 
 
 ```csharp
 public MLResult SetControlAFDistanceRange(
@@ -2258,9 +2288,11 @@ public MLResult SetControlAFDistanceRange(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to set value due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to set value due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to set value due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to set value due to an unknown error.
 
 
 
@@ -2268,7 +2300,7 @@ public MLResult SetControlAFDistanceRange(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetControlAFMode {#mlresult-setcontrolafmode}
 
-Sets AF mode 
+Sets AF mode. 
 
 ```csharp
 public MLResult SetControlAFMode(
@@ -2288,9 +2320,11 @@ public MLResult SetControlAFMode(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to set value due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully set value
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to set value due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to set value due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully set value
+
+ MLResult.Code.UnspecifiedFailure: Failed to set value due to an unknown error.
 
 
 
@@ -2298,7 +2332,7 @@ public MLResult SetControlAFMode(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetControlAFTrigger {#mlresult-setcontrolaftrigger}
 
-Sets AF trigger 
+Sets AF trigger. 
 
 ```csharp
 public MLResult SetControlAFTrigger(
@@ -2318,9 +2352,11 @@ public MLResult SetControlAFTrigger(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to set value due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to set value due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to set value due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to set value due to an unknown error.
 
 
 
@@ -2500,7 +2536,7 @@ Sets jpeg GPS coordinates.
 
 ```csharp
 public MLResult SetJpegGPSCoordinates(
-    double [] Data
+    double[] Data
 )
 ```
 
@@ -2509,7 +2545,7 @@ public MLResult SetJpegGPSCoordinates(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| double [] |Data||
+| double[] |Data||
 
 
 
@@ -2592,7 +2628,7 @@ public MLResult SetJpegThumbnailSize(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetLensFocusDistance {#mlresult-setlensfocusdistance}
 
-Sets Lens focus distance 
+Sets Lens focus distance. 
 
 ```csharp
 public MLResult SetLensFocusDistance(
@@ -2612,9 +2648,11 @@ public MLResult SetLensFocusDistance(
 
 
 
-**Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): Failed to set value due to an invalid input parameter.
-[MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Successfully obtained result
-[MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to set value due to an unknown error.
+**Returns**: MLResult.Code.InvalidParam: Failed to set value due to an invalid input parameter.
+
+ MLResult.Code.Ok: Successfully obtained result
+
+ MLResult.Code.UnspecifiedFailure: Failed to set value due to an unknown error.
 
 
 
@@ -2841,8 +2879,8 @@ Current state of auto-focus (AF) routine.
 | ---------- | ----- | ----------- |
 | Inactive | 0| AF is off or has not yet tried to scan.   |
 | PassiveScan | | AF is currently performing an AF scan initiated by the camera device in a continuous autofocus mode.   |
-| PassiveFocused | | AF currently is in focus, but may restart scanning at any time   |
-| ActiveScan | | AF is performing an AF scan triggered by AF trigger   |
+| PassiveFocused | | AF currently is in focus, but may restart scanning at any time.   |
+| ActiveScan | | AF is performing an AF scan triggered by AF trigger.   |
 | FocusedLocked | | AF is focused correctly and has locked focus.   |
 | NotFocusedLocked | | AF has failed to focus successfully and has locked focus.   |
 | PassiveUnFocused | | AF finished a passive scan without finding focus,and may restart scanning at any time.   |
@@ -2982,7 +3020,7 @@ Effect mode.
 
 **Details**
 
-Force Apply [Metadata](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.md) Settings. 
+Force Apply Metadata Settings. 
 
 
 

@@ -19,10 +19,10 @@ title: MLAnchorsTests
 
 ## Public Methods
 
-### void MLAnchors_Create {#void-mlanchors-create}
+### void MLAnchors_CreateAnchor {#void-mlanchors-createanchor}
 
 ```csharp
-public void MLAnchors_Create()
+public void MLAnchors_CreateAnchor()
 ```
 
 
@@ -32,10 +32,10 @@ public void MLAnchors_Create()
 
 -----------
 
-### void MLAnchors_Create_Request_Delete_Anchor {#void-mlanchors-create-request-delete-anchor}
+### void MLAnchors_DeleteAnchor {#void-mlanchors-deleteanchor}
 
 ```csharp
-public void MLAnchors_Create_Request_Delete_Anchor()
+public void MLAnchors_DeleteAnchor()
 ```
 
 
@@ -49,6 +49,19 @@ public void MLAnchors_Create_Request_Delete_Anchor()
 
 ```csharp
 public void MLAnchors_IsStarted()
+```
+
+
+
+
+
+
+-----------
+
+### void MLAnchors_RequestAnchor {#void-mlanchors-requestanchor}
+
+```csharp
+public void MLAnchors_RequestAnchor()
 ```
 
 

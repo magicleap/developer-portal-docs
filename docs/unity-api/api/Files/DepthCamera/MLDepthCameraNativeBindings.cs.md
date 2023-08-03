@@ -42,17 +42,33 @@ namespace UnityEngine.XR.MagicLeap
             public struct MLDepthCameraSettings
             {
                 public uint Version;
-                public uint Flags;
-                public uint Mode;
 
+                public uint Streams;
+
+                [MarshalAs(UnmanagedType.ByValArray, SizeConst = FrameTypeCount)]
+                public StreamConfig[] StreamConfig;
                 public static MLDepthCameraSettings Init()
                 {
-                    return new MLDepthCameraSettings()
-                    {
-                        Version = 1,
-                        Flags = (uint)MLDepthCamera.CaptureFlags.DepthImage,
-                        Mode = (uint)MLDepthCamera.Mode.LongRange
-                    };
+                    MLDepthCameraSettings settings = new MLDepthCameraSettings();
+
+                    settings.Version = 2;
+                    settings.Streams = (uint)Stream.LongRange;
+
+                    StreamConfig[] config = new StreamConfig[2];
+
+                    int i = (int)FrameType.LongRange;
+                    config[i].Flags = (uint)CaptureFlags.DepthImage;
+                    config[i].Exposure = 1600;
+                    config[i].FrameRateConfig = FrameRate.FPS_5;
+
+                    i = (int)FrameType.ShortRange;
+                    config[i].Flags = (uint)CaptureFlags.DepthImage;
+                    config[i].Exposure = 375;
+                    config[i].FrameRateConfig = FrameRate.FPS_5;
+
+                    settings.StreamConfig = config;
+
+                    return settings;
                 }
             }
 
@@ -60,17 +76,17 @@ namespace UnityEngine.XR.MagicLeap
             public struct MLDepthCameraIntrinsics
             {
                 public const int MaxDistortionCoefficients = 5;
-                
+
                 public uint Width;
-                
+
                 public uint Height;
 
                 public MLVec2f FocalLength;
-                
+
                 public MLVec2f PrincipalPoint;
-                
+
                 public float FoV;
-                
+
                 [MarshalAs(UnmanagedType.ByValArray, SizeConst = MaxDistortionCoefficients)]
                 public double[] Distortion;
 
@@ -137,41 +153,31 @@ namespace UnityEngine.XR.MagicLeap
             }
 
             [StructLayout(LayoutKind.Sequential)]
-            public struct MLDepthCameraData
+            public struct MLDepthCameraFrame
             {
-                public uint Version;
-                
                 public long FrameNumber;
-                
+
                 public long FrameTimestamp;
-                
+
                 public FrameType FrameType;
 
                 public MLTransform CameraPose;
 
                 public MLDepthCameraIntrinsics Intrinsics;
-                
+
                 public IntPtr DepthImageFrameBufferPtr;
-                
+
                 public IntPtr ConfidenceBufferFrameBufferPtr;
-                
+
                 public IntPtr DepthFlagsBufferFrameBufferPtr;
-                
+
                 public IntPtr AmbientRawDepthImageFrameBufferPtr;
 
                 public IntPtr RawDepthImageFrameBufferPtr;
 
-                public static MLDepthCameraData Init()
+                public static MLDepthCameraFrame Init(Data managed)
                 {
-                    return new MLDepthCameraData()
-                    {
-                        Version = 2
-                    };
-                }
-
-                public static MLDepthCameraData Init(Data managed)
-                {
-                    var data = Init();
+                    var data = new MLDepthCameraFrame();
                     data.FrameNumber = managed.FrameNumber;
                     data.FrameTimestamp = managed.FrameTimestamp;
                     data.FrameType = managed.FrameType;
@@ -201,6 +207,66 @@ namespace UnityEngine.XR.MagicLeap
                 }
             }
 
+            [StructLayout(LayoutKind.Sequential)]
+            public struct MLDepthCameraData
+            {
+                public uint Version;
+
+                public byte FrameCount;
+
+                public IntPtr Frames;
+
+                public static MLDepthCameraData Init()
+                {
+                    var data = new MLDepthCameraData();
+                    data.Version = 3;
+                    return data;
+                }
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            public struct MLDepthCameraStreamCapability
+            {
+                public Stream Stream;
+
+                public uint MinExposure;
+
+                public uint MaxExposure;
+
+                public FrameRate FrameRateCapability;
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            public struct MLDepthCameraCapability
+            {
+                public byte Size;
+
+                public IntPtr StreamCapabilities;
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            public struct MLDepthCameraCapabilityList
+            {
+                public byte Size;
+
+                public IntPtr Capabilities;
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            public struct MLDepthCameraCapabilityFilter
+            {
+                public uint Version;
+
+                public uint Streams;
+
+                public static MLDepthCameraCapabilityFilter Init()
+                {
+                    var filter = new MLDepthCameraCapabilityFilter();
+                    filter.Version = 1;
+                    return filter;
+                }
+            }
+
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern MLResult.Code MLDepthCameraConnect(in MLDepthCameraSettings settings, out ulong handle);
 
@@ -208,10 +274,16 @@ namespace UnityEngine.XR.MagicLeap
             public static extern MLResult.Code MLDepthCameraUpdateSettings(ulong handle, in MLDepthCameraSettings settings);
 
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
-            public static extern MLResult.Code MLDepthCameraGetLatestDepthData(ulong handle, ulong timeoutMs, out IntPtr data);
+            public static extern MLResult.Code MLDepthCameraGetCapabilities(ulong handle, ref MLDepthCameraCapabilityFilter filter, out MLDepthCameraCapabilityList outCaps);
 
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
-            public static extern MLResult.Code MLDepthCameraReleaseDepthData(ulong handle, IntPtr data);
+            public static extern MLResult.Code MLDepthCameraReleaseCapabilities(ulong handle, ref MLDepthCameraCapabilityList outCaps);
+
+            [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern MLResult.Code MLDepthCameraGetLatestDepthData(ulong handle, ulong timeoutMs, out MLDepthCameraData data);
+
+            [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern MLResult.Code MLDepthCameraReleaseDepthData(ulong handle, ref MLDepthCameraData data);
 
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern MLResult.Code MLDepthCameraDisconnect(ulong handle);

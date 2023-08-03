@@ -65,7 +65,7 @@ public static MLMediaFormat CreateAudio(
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An MLMediaFormat object if successful, null otherwise
 
 
 
@@ -86,18 +86,19 @@ public static MLMediaFormat CreateCopy(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|[MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object to copy|
+| [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) |format|MLMediaFormat object to copy|
 
 
 **Details**
 
-This can be particularly useful to persist the media format handle/object that was received through the callbacks(as life cycle of those media format objects are with in the callback context only). The API call to make a copy ensures that the copied object exists until released by the app. 
+This can be particularly useful to persist the media format handle/object that was received through the callbacks(as life cycle of those media format objects
+are with in the callback context only). The API call to make a copy ensures that the copied object exists until released by the app.
 
 
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An MLMediaFormat object if successful, null otherwise
 
 
 
@@ -116,7 +117,7 @@ public static MLMediaFormat CreateEmpty()
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An MLMediaFormat object if successful, null otherwise
 
 
 
@@ -146,7 +147,7 @@ public static MLMediaFormat CreateSubtitle(
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An MLMediaFormat object if successful, null otherwise
 
 
 
@@ -178,7 +179,7 @@ public static MLMediaFormat CreateVideo(
 
 
 
-**Returns**: An [MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) object if successful, null otherwise
+**Returns**: An MLMediaFormat object if successful, null otherwise
 
 
 
@@ -200,7 +201,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|MLMediaFormatKey name to get the value for|
 | out int |value|Out param to get the value in|
 
 
@@ -230,7 +231,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|MLMediaFormatKey name to get the value for|
 | out long |value|Out param to get the value in|
 
 
@@ -260,7 +261,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|MLMediaFormatKey name to get the value for|
 | out float |value|Out param to get the value in|
 
 
@@ -290,7 +291,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|MLMediaFormatKey name to get the value for|
 | out string |value|Out param to get the value in|
 
 
@@ -311,7 +312,7 @@ Obtain the value of a byte buffer key.
 ```csharp
 public MLResult GetValue(
     string keyName,
-    out byte [] value
+    out byte[] value
 )
 ```
 
@@ -320,8 +321,8 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
-| out byte [] |value|Out param to get the value in|
+| string |keyName|MLMediaFormatKey name to get the value for|
+| out byte[] |value|Out param to get the value in|
 
 
 
@@ -350,7 +351,7 @@ public MLResult GetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to get the value for|
+| string |keyName|MLMediaFormatKey name to get the value for|
 | out ulong |value|Out param to get the value in|
 
 
@@ -380,7 +381,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|MLMediaFormatKey name to set the value for|
 | int |value|Value to set|
 
 
@@ -410,7 +411,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|MLMediaFormatKey name to set the value for|
 | long |value|Value to set|
 
 
@@ -440,7 +441,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|MLMediaFormatKey name to set the value for|
 | float |value|Value to set|
 
 
@@ -470,7 +471,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|MLMediaFormatKey name to set the value for|
 | string |value|Value to set|
 
 
@@ -491,7 +492,7 @@ Set the value of a byte buffer key.
 ```csharp
 public MLResult SetValue(
     string keyName,
-    byte [] value
+    byte[] value
 )
 ```
 
@@ -500,8 +501,8 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
-| byte [] |value|Value to set|
+| string |keyName|MLMediaFormatKey name to set the value for|
+| byte[] |value|Value to set|
 
 
 
@@ -530,7 +531,7 @@ public MLResult SetValue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string |keyName|[MLMediaFormatKey](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormatKey/UnityEngine.XR.MagicLeap.MLMediaFormatKey.md) name to set the value for|
+| string |keyName|MLMediaFormatKey name to set the value for|
 | ulong |value|Value to set|
 
 

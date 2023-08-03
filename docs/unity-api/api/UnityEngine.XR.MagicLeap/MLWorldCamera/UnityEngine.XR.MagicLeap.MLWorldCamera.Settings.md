@@ -15,6 +15,44 @@ A structure to encapsulate the camera settings.
 
 
 
+## Public Fields
+
+### Cameras {#cameraid-cameras}
+
+```csharp
+
+public CameraId Cameras { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
+
+
+
+
+
+-----------
+
+### Mode {#mode-mode}
+
+```csharp
+
+public Mode Mode { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) | Enumeration of world camera modes.  |
+
+
+
+
+
+-----------
+
 ## Public Methods
 
 ###  Settings {#functions-settings}
@@ -47,44 +85,6 @@ public Settings(
 public override string ToString()
 ```
 
-
-
-
-
-
------------
-
-## Public Attributes
-
-### Cameras {#cameraid-cameras}
-
-```csharp
-
-public CameraId Cameras => cameras;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [CameraId](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-cameraid) | Enumeration of all the available world camera sensors.  |
-
-
-
-
-
------------
-
-### Mode {#mode-mode}
-
-```csharp
-
-public Mode Mode => mode;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#enums-mode) | Enumeration of world camera modes.  |
 
 
 

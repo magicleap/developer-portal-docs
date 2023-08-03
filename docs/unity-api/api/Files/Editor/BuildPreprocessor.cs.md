@@ -30,30 +30,32 @@ title: BuildPreprocessor.cs
 
 using System.IO;
 using UnityEditor;
-using UnityEditor.Android;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
-using UnityEditor.XR.MagicLeap;
 using UnityEditor.XR.Management;
 using System.Linq;
 using UnityEngine.XR.MagicLeap;
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+using UnityEngine.XR.OpenXR;
+#endif
 
 namespace MagicLeap
 {
-    public class ColorSpaceBuildPreprocessor : IPreprocessBuildWithReport
+    // Pre-build checks for certain project configurations before generating a Magic Leap APK
+    public class BuildPreprocessor : IPreprocessBuildWithReport
     {
-        public int callbackOrder { get { return 0; } }
+        public int callbackOrder => 0;
 
         public void OnPreprocessBuild(BuildReport report)
         {
-            if (report.summary.platform == BuildTarget.Android && IsMagicLeapLoaderEnabled())
+            if (report.summary.platform == BuildTarget.Android && IsMagicLeapOrOpenXRLoaderEnabled())
             {
                 SetLinearColorSpace();
                 SetAndroidMinSdkVersion();
             }
         }
-
+        
         private void SetLinearColorSpace()
         {
             if (PlayerSettings.colorSpace != ColorSpace.Linear
@@ -106,11 +108,37 @@ namespace MagicLeap
 
         private bool IsMagicLeapLoaderEnabled()
         {
+#if UNITY_XR_MAGICLEAP_PROVIDER
             var settings = XRGeneralSettingsPerBuildTarget.XRGeneralSettingsForBuildTarget(BuildTargetGroup.Android);
-            if (settings != null && settings.Manager != null && settings.Manager.activeLoaders.Where(l => l is MagicLeapLoader).Count() > 0)
+            return settings != null && settings.Manager != null && settings.Manager.activeLoaders.Any(l => l is MagicLeapLoader);
+#else
+            return false;
+#endif
+        }
+
+        private bool IsOpenXRLoaderEnabled()
+        {
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+            var settings = XRGeneralSettingsPerBuildTarget.XRGeneralSettingsForBuildTarget(BuildTargetGroup.Android);
+            if (settings != null && settings.Manager != null && settings.Manager.activeLoaders.Where(l => l is OpenXRLoader).Count() > 0)
             {
                 return true;
             }
+#endif
+            return false;
+        }
+
+        private bool IsMagicLeapOrOpenXRLoaderEnabled()
+        {
+            var settings = XRGeneralSettingsPerBuildTarget.XRGeneralSettingsForBuildTarget(BuildTargetGroup.Android);
+            if (settings != null && settings.Manager != null)
+            {
+                bool isOpenXRLoaderActive = IsOpenXRLoaderEnabled();
+                bool isMagicLeapLoaderActive = IsMagicLeapLoaderEnabled();
+                
+                return isOpenXRLoaderActive || isMagicLeapLoaderActive;
+            }
+
             return false;
         }
     }

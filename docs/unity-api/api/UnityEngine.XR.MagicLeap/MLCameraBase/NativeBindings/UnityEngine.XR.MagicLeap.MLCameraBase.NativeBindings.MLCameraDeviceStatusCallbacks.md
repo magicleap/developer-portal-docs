@@ -48,9 +48,6 @@ public OnDeviceDisconnectedDelegate OnDeviceDisconnected;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnDeviceDisconnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondevicedisconnecteddelegate) | Delegate to notify the app when the camera device disconnects.  |
 
 
 
@@ -68,9 +65,6 @@ public OnDeviceErrorDelegate OnDeviceError;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [OnDeviceErrorDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-ondeviceerrordelegate) | Delegate to notify the app about camera device error  |
 
 
 

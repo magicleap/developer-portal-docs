@@ -1,10 +1,9 @@
 ---
-title: ColorSpaceBuildPreprocessor
-summary: displays dialog box at build time about incorrect color space setting. 
+title: BuildPreprocessor
 
 ---
 
-# ColorSpaceBuildPreprocessor
+# BuildPreprocessor
 
 
 
@@ -12,7 +11,7 @@ summary: displays dialog box at build time about incorrect color space setting.
 [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) 
 
 
-Displays Dialog box at build time about incorrect color space setting.   
+
 
 
 Inherits from: <br></br>IPreprocessBuildWithReport

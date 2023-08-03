@@ -73,7 +73,7 @@ public ulong GetInputHandle()
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetUnityPose {#mlresultcode-getunitypose}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetUnityPose {#mlresultcode-getunitypose}
 
 ```csharp
 public MLResult.Code GetUnityPose(
@@ -125,7 +125,31 @@ public delegate void OnDebugMessageDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StartHapticsPattern {#mlresultcode-starthapticspattern}
+### void PredictSnapshot {#void-predictsnapshot}
+
+```csharp
+public void PredictSnapshot(
+    long predictionTimestamp,
+    bool enableSnapshotPrediction
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| long |predictionTimestamp||
+| bool |enableSnapshotPrediction||
+
+
+
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) StartHapticsPattern {#mlresultcode-starthapticspattern}
 
 ```csharp
 public MLResult.Code StartHapticsPattern(
@@ -149,7 +173,7 @@ public MLResult.Code StartHapticsPattern(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) StopHaptics {#mlresultcode-stophaptics}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) StopHaptics {#mlresultcode-stophaptics}
 
 ```csharp
 public MLResult.Code StopHaptics()
@@ -168,7 +192,7 @@ public MLResult.Code StopHaptics()
 
 ```csharp
 
-public const string SettingsKey = "com.magicleap.unitysdk.settings";
+public static const string SettingsKey = "com.magicleap.unitysdk.settings";
 
 ```
 
@@ -181,7 +205,7 @@ public const string SettingsKey = "com.magicleap.unitysdk.settings";
 
 ## Public Enums
 
-### LogLevel {#enums-loglevel}
+### LogLevel {#uint-loglevel}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

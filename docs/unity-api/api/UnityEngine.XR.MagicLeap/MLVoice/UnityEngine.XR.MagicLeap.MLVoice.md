@@ -28,9 +28,7 @@ public class MLVoice : MLAutoAPISingleton< MLVoice >
 
 **Details**
 
-APIs for the voice service system. 
-
-To use the voice feature (with a specific application's intent list), the application should send a Scriptable Object called [MLVoiceIntentsConfiguration](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.md), Located under Assets/Magic Leap/Voice Intents Configuration, with the application's voice intents data to [MLVoice.SetupVoiceIntents()](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#mlresult-setupvoiceintents).
+To use the voice feature (with a specific application's intent list), the application should send a Scriptable Object called [MLVoiceIntentsConfiguration](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.md), Located under Assets/Magic Leap/Voice Intents Configuration, with the application's voice intents data to MLVoice.SetupVoiceIntents().
 
 Name, id, and value should be unique. Value is the phrase needed to be spoken out loud after "Hey Magic Leap" " | " may be used in the configuration file's value field to indicate multiple values tied to the same name and id. 
 
@@ -57,6 +55,23 @@ public static OnVoiceEventDelegate OnVoiceEvent { get; set; }
 | Type | Description  | 
 |--|--|
 | [OnVoiceEventDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#delegate-void-onvoiceeventdelegate) | This callback will be invoked whenever a voice intent event is detected.  |
+
+
+
+
+
+-----------
+
+### VoiceEnabled {#bool-voiceenabled}
+
+Checks voice intent feature is enabled in the system. 
+
+```csharp
+
+public static bool VoiceEnabled { get; set; }
+
+```
+
 
 
 
@@ -118,7 +133,7 @@ public static MLResult SetupVoiceIntents(
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed due to an invalid param. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if Successfully set settings, callbacks, and starts processing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MLVoiceResult&#95;IntentDisabled  if failed to set the callbacks or settings because required voice intent feature is disabled in system settings. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if the operation failed with an unspecified error. 
+**Returns**: MLResult.Result will be  MLResult.Code.InvalidParam  if failed due to an invalid param. MLResult.Result will be  MLResult.Code.Ok  if Successfully set settings, callbacks, and starts processing. MLResult.Result will be  MLResult.Code.MLVoiceResult&#95;IntentDisabled  if failed to set the callbacks or settings because required voice intent feature is disabled in system settings. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if the operation failed with an unspecified error. 
 
 
 
@@ -144,13 +159,13 @@ public static MLResult SetupVoiceIntents(
 
 **Details**
 
-When providing a string instead of the [MLVoiceIntentsConfiguration](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.md) Scriptable Object no validation is done to confirm proper format. 
+When providing a string instead of the [MLVoiceIntentsConfiguration](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.md) Scriptable Object no validation is done to confirm proper format.
 
 
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed due to an invalid param. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if Successfully set settings, callbacks, and starts processing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MLVoiceResult&#95;IntentDisabled  if failed to set the callbacks or settings because required voice intent feature is disabled in system settings. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if the operation failed with an unspecified error. 
+**Returns**: MLResult.Result will be  MLResult.Code.InvalidParam  if failed due to an invalid param. MLResult.Result will be  MLResult.Code.Ok  if Successfully set settings, callbacks, and starts processing. MLResult.Result will be  MLResult.Code.MLVoiceResult&#95;IntentDisabled  if failed to set the callbacks or settings because required voice intent feature is disabled in system settings. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if the operation failed with an unspecified error. 
 
 
 
@@ -158,7 +173,7 @@ When providing a string instead of the [MLVoiceIntentsConfiguration](/unity-api/
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Stop {#mlresult-stop}
 
-Stop unsets callbacks and stops processing. This is not necessary for shutdown. This is only needed if a user wants to stop processing at runtime after call [MLVoice.SetupVoiceIntents](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#mlresult-setupvoiceintents). [MLVoice](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md) can be restarted by calling [MLVoice.SetupVoiceIntents](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#mlresult-setupvoiceintents). 
+Stop unsets callbacks and stops processing. This is not necessary for shutdown. This is only needed if a user wants to stop processing at runtime after call MLVoice.SetupVoiceIntents. MLVoice can be restarted by calling MLVoice.SetupVoiceIntents. 
 
 ```csharp
 public static MLResult Stop()
@@ -169,7 +184,7 @@ public static MLResult Stop()
 
 
 
-**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed due to an invalid param. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if Successfully unset callbacks and stops processing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.MLVoiceResult&#95;IntentDisabled  if failed because required voice intent feature is disabled in system settings. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if the operation failed with an unspecified error. 
+**Returns**: MLResult.Result will be  MLResult.Code.InvalidParam  if failed due to an invalid param. MLResult.Result will be  MLResult.Code.Ok  if Successfully unset callbacks and stops processing. MLResult.Result will be  MLResult.Code.MLVoiceResult&#95;IntentDisabled  if failed because required voice intent feature is disabled in system settings. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if the operation failed with an unspecified error. 
 
 
 
@@ -179,7 +194,7 @@ public static MLResult Stop()
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual override void OnApplicationPause(
@@ -222,7 +237,7 @@ protected virtual override MLResult.Code StartAPI()
 
 ### StopAPI {#override-stopapi}
 
-API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever MLDevice is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -237,25 +252,6 @@ protected virtual override MLResult.Code StopAPI()
 
 -----------
 
-## Public Attributes
-
-### VoiceEnabled {#bool-voiceenabled}
-
-Checks voice intent feature is enabled in the system. 
-
-```csharp
-
-public static bool VoiceEnabled => Instance.isEnabled();
-
-```
-
-
-
-
-
-
------------
-
 ## Public Enums
 
 ### NoIntentReason {#enums-nointentreason}
@@ -264,9 +260,9 @@ No intent reason code in voice event.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| NoReason | | In case of success   |
-| Silence | | When the State in [IntentEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.IntentEvent.md) is either [MLVoice.State.SessionEndedTimeout](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-sessionendedtimeout) or [MLVoice.State.SessionEndedError](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-sessionendederror).   |
-| NoMatch | | When the State in [IntentEvent](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.IntentEvent.md) is [MLVoice.State.SessionEndedNoIntent](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#enums-sessionendednointent).   |
+| NoReason | | In case of success.   |
+| Silence | | When the State in IntentEvent is either MLVoice.State.SessionEndedTimeout or MLVoice.State.SessionEndedError.   |
+| NoMatch | | When the State in IntentEvent is MLVoice.State.SessionEndedNoIntent.   |
 
 
 

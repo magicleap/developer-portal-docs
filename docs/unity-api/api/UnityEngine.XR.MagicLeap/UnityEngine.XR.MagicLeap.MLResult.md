@@ -22,7 +22,7 @@ Magic Leap API return value.
 
 ### IsOk {#bool-isok}
 
-Gets a value indicating whether the result code is [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) Note that in some cases the result can be different than [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) and still valid (e.g. [MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending), [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)) 
+Gets a value indicating whether the result code is MLResult.Code.Ok Note that in some cases the result can be different than MLResult.Code.Ok and still valid (e.g. MLResult.Code.Pending, MLResult.Code.Ok) 
 
 ```csharp
 
@@ -41,7 +41,7 @@ public bool IsOk { get; set; }
 
 ### string CodeToString {#string-codetostring}
 
-Provides the string value for any [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code). 
+Provides the string value for any MLResult.Code. 
 
 ```csharp
 public static string CodeToString(
@@ -54,14 +54,14 @@ public static string CodeToString(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |resultCode|The code to convert into a string value.|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |resultCode|The code to convert into a string value.|
 
 
 
 
 
 
-**Returns**: The string value of the given [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code).
+**Returns**: The string value of the given MLResult.Code.
 
 
 
@@ -69,7 +69,7 @@ public static string CodeToString(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Create {#mlresult-create}
 
-Create a new [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) or retrieve an already initialized [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with the result needed. 
+Create a new MLResult or retrieve an already initialized MLResult with the result needed. 
 
 ```csharp
 public static MLResult Create(
@@ -83,15 +83,15 @@ public static MLResult Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to use for the created [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).|
-| string |msg|The message to use for the created [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).|
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |result|The code to use for the created MLResult.|
+| string |msg|The message to use for the created MLResult.|
 
 
 
 
 
 
-**Returns**: A new or cached [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with the provided code and message.
+**Returns**: A new or cached MLResult with the provided code and message.
 
 
 
@@ -113,9 +113,9 @@ public static bool DidNativeCallSucceed(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |resultCode|Identifier of Magic Leap API results |
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |resultCode|Identifier of Magic Leap API results. |
 | string |functionName||
-| Predicate&lt; [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) &gt; |successCase|Identifier of Magic Leap API results |
+| Predicate&lt; [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) &gt; |successCase|Identifier of Magic Leap API results. |
 | bool |showError||
 
 
@@ -147,7 +147,7 @@ public override bool Equals(
 
 
 
-**Returns**: True if the the provided object is of the [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) type and has the same Result values.
+**Returns**: True if the the provided object is of the MLResult type and has the same Result values.
 
 
 
@@ -174,7 +174,7 @@ public override int GetHashCode()
 
 ### bool IsOK {#bool-isok}
 
-Indicates whether the result code is [Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) Note that in some cases the result can be different than [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) and still be valid (e.g. [MLResult.Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending), [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)) 
+Indicates whether the result code is Code.Ok Note that in some cases the result can be different than MLResult.Code.Ok and still be valid (e.g. MLResult.Code.Pending, MLResult.Code.Ok) 
 
 ```csharp
 public static bool IsOK(
@@ -187,14 +187,14 @@ public static bool IsOK(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to determine if it is Ok.|
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |result|The code to determine if it is Ok.|
 
 
 
 
 
 
-**Returns**: True if the provided code is equivalent [Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok).
+**Returns**: True if the provided code is equivalent Code.Ok.
 
 
 
@@ -215,14 +215,14 @@ public static bool IsPending(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The code to determine if it is pending.|
+| [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |result|The code to determine if it is pending.|
 
 
 
 
 
 
-**Returns**: True if the provided code is equivalent [Code.Pending](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-pending).
+**Returns**: True if the provided code is equivalent Code.Pending.
 
 
 
@@ -230,7 +230,7 @@ public static bool IsPending(
 
 ### override string ToString {#override-string-tostring}
 
-Provides the string value of this.Result or the default message given to this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md). 
+Provides the string value of this.Result or the default message given to this MLResult. 
 
 ```csharp
 public override string ToString()
@@ -241,18 +241,18 @@ public override string ToString()
 
 
 
-**Returns**: the string value of this.Result or the default message given to this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md).
+**Returns**: the string value of this.Result or the default message given to this MLResult.
 
 
 
 -----------
 
-### implicit operator Task< MLResult > {#implicit-operator-task-mlresult-}
+### implicit operator Task {#implicit-operator-task}
 
-Enables asynchronous native calls to use the same interface as synchronous ones 
+Enables asynchronous native calls to use the same interface as synchronous ones. 
 
 ```csharp
-public static implicit operator Task< MLResult >(
+public static implicit operator Task(
     MLResult r
 )
 ```
@@ -273,7 +273,7 @@ public static implicit operator Task< MLResult >(
 
 ### bool operator!= {#bool-operator}
 
-The inequality check to be used for comparing two [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) structs. 
+The inequality check to be used for comparing two MLResult structs. 
 
 ```csharp
 public static bool operator!=(
@@ -288,7 +288,7 @@ public static bool operator!=(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |one|The first struct to compare with the second struct. |
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |two|The second struct to compare with the first struct. |
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |two|The second struct to compare with the first struct. |
 
 
 
@@ -303,7 +303,7 @@ public static bool operator!=(
 
 ### bool operator== {#bool-operator}
 
-The equality check to be used for comparing two [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) structs. 
+The equality check to be used for comparing two MLResult structs. 
 
 ```csharp
 public static bool operator==(
@@ -318,7 +318,7 @@ public static bool operator==(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |one|The first struct to compare with the second struct. |
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |two|The second struct to compare with the first struct. |
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |two|The second struct to compare with the first struct. |
 
 
 
@@ -335,7 +335,7 @@ public static bool operator==(
 
 ### Result {#readonly-result}
 
-The code of this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md). Indicates the result status. 
+The code of this MLResult. Indicates the result status. 
 
 ```csharp
 
@@ -345,7 +345,7 @@ public readonly Code Result;
 
 | Type | Description  | 
 |--|--|
-| readonly [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) | Identifier of Magic Leap API results  |
+| readonly [Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) | Identifier of Magic Leap API results.  |
 
 
 
@@ -355,14 +355,14 @@ public readonly Code Result;
 
 ## Public Enums
 
-### Code {#enums-code}
+### Code {#int-code}
 
-Identifier of Magic Leap API results 
+Identifier of Magic Leap API results. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | Ok | (CodePrefix.MLResultGlobal << 16)| Operation completed successfully.   |
-| Pending | | Asynchronous operation has not completed   |
+| Pending | | Asynchronous operation has not completed.   |
 | Timeout | | Operation has timed out.   |
 | Locked | | Request to lock a shared resource that is already locked.   |
 | UnspecifiedFailure | | Operation failed due to an unspecified internal error.   |
@@ -376,6 +376,7 @@ Identifier of Magic Leap API results
 | PerceptionSystemNotStarted | | Operation failed because the Perception System was not started.   |
 | IllegalState | | Operation failed because it has been invoked at the wrong time.   |
 | LicenseError | | Operation failed because of missing/incompatible license.   |
+| InvalidTimestamp | | Operation failed because the timestamp parameter was outside the expected range.   |
 | AudioNotImplemented | (CodePrefix.MLAudioResult << 16)| Audio function not implemented.   |
 | AudioHandleNotFound | | Not a valid MLHandle for a sound or input.   |
 | AudioInvalidSampleRate | | Sample rate not supported.   |
@@ -423,7 +424,7 @@ Identifier of Magic Leap API results
 | MediaOnlyHWResourceAvailable | | Only Hardware Media Codec Resources are available. This error code is a result of requesting for Software Media Codec Resource that is not available.   |
 | MediaOnlySWResourceAvailable | | Only Software Media Codec Resources are available. This error code is a result of requesting for Hardware Media Codec Resource that is not available.   |
 | MediaNoMoreResources | | No more (Hardware or Software) Media Codec Resources available.   |
-| MediaNoMoreHWResources | | No more Hardware Media Codec Resources available   |
+| MediaNoMoreHWResources | | No more Hardware Media Codec Resources available.   |
 | MediaNoMoreSWResources | | No more Software Media Codec Resources available.   |
 | MediaInvalidCodecParam | | Media Codec Resource request made with Invalid Codec parameters. This error code could be a result of one of these cases (not limited to) 1) Requested video frame width or height is beyond the maximum resolution (width or height) supported. 2) Requested Framerate/Sample rate/Bitratre/Channel count is not supported.   |
 | MediaDRMUnknown | (CodePrefix.MLMediaDRMResult << 16)| Error code for undefined type.   |
@@ -461,10 +462,10 @@ Identifier of Magic Leap API results
 | WebRTCMismatchingHandle | | Mismatching handle.   |
 | WebRTCInvalidFrameFormat | | Invalid frame format.   |
 | WebRTCInvalidFramePlaneCount | | Invalid frame plane count.   |
-| WebRTCSendNativeFrameError | | [Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) Frame failed to be sent   |
+| WebRTCSendNativeFrameError | | Native Frame failed to be sent.   |
 | WebRTCDataChannelIsClosed | | Data channel is closed.   |
 | AnchorsMaxAnchorLimitReached | (CodePrefix.MLAnchorsResult << 16)| The maximum number of anchors for the current space has been reached.   |
-| AnchorsMinDistanceThresholdExceeded | | The minimum distance between anchors was not met   |
+| AnchorsMinDistanceThresholdExceeded | | The minimum distance between anchors was not met.   |
 | AnchorsInsufficientMapping | | The space has not been sufficiently mapped to allow this operation.   |
 | AnchorsInvalidId | | The provided anchor id was not valid.   |
 | AnchorsInvalidExpirationTimestamp | | The provided expiration suggestion was not valid.   |
@@ -478,6 +479,8 @@ Identifier of Magic Leap API results
 | UnavailableSpace | | Space is not available.   |
 | IncompatibleSpace | | Space is not compatible with the current OS version.   |
 | SpaceAlreadyExists | | The operation failed because the Space being imported already exists in the device.   |
+| HeadsetFitIssue | (CodePrefix.MLFacialExpressionResult << 16)| Unable to detect the eyes, check MLHeadsetFitStatus.   |
+| EyeExpressionDisabled | | Operation failed because enable&#95;eye&#95;expression in MLFacialExpressionSettings is disabled.   |
 | PowerManagerNotConnect | (CodePrefix.MLPowerManager << 16)| Indicates the component is not connected.   |
 | PowerManagerInvalidStateTransition | | Indicates the component does not currently support transitioning to requested state.   |
 | PowerManagerStateTransitionsDisabled | | Indicates the component does not currently support transitioning to a different state.   |

@@ -83,7 +83,7 @@ public static OnPropertiesChangedDelegate OnPropertiesChanged { get; set; }
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailablePowerStates {#mlresultcode-getavailablepowerstates}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetAvailablePowerStates {#mlresultcode-getavailablepowerstates}
 
 Get available power states for the controller. 
 
@@ -107,7 +107,7 @@ public static MLResult.Code GetAvailablePowerStates(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailableProperties {#mlresultcode-getavailableproperties}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetAvailableProperties {#mlresultcode-getavailableproperties}
 
 Get available properties for the controller. 
 
@@ -131,7 +131,7 @@ public static MLResult.Code GetAvailableProperties(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetComponentProperties {#mlresultcode-getcomponentproperties}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetComponentProperties {#mlresultcode-getcomponentproperties}
 
 Get controller component properties. 
 
@@ -155,7 +155,7 @@ public static MLResult.Code GetComponentProperties(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetPowerState {#mlresultcode-getpowerstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetPowerState {#mlresultcode-getpowerstate}
 
 Get the current power state for the controller. 
 
@@ -251,7 +251,7 @@ public delegate void OnPropertiesChangedDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SetPowerState {#mlresultcode-setpowerstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) SetPowerState {#mlresultcode-setpowerstate}
 
 Set the power state for the controller. 
 

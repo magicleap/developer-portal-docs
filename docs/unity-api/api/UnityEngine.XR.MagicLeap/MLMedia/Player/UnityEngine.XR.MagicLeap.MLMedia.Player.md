@@ -50,6 +50,8 @@ public bool IsPlaying { get; set; }
 
 
 
+**Reimplements**: [IsPlaying](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#bool-isplaying)
+
 
 
 -----------
@@ -108,7 +110,7 @@ public Track.DRM VideoDRM { get; set; }
 
 ### VideoRenderer {#mlnativesurfaceycbcrrenderer-videorenderer}
 
-Media player video renderer 
+Media player video renderer. 
 
 ```csharp
 
@@ -186,7 +188,7 @@ public MLResult GetDurationMS(
 
 ### int GetDurationMilliseconds {#int-getdurationmilliseconds}
 
-Gets the duration of the video in milliseconds 
+Gets the duration of the video in milliseconds. 
 
 ```csharp
 public int GetDurationMilliseconds()
@@ -220,7 +222,7 @@ public ulong GetFrameDropThresholdMs()
 
 ### int GetHeight {#int-getheight}
 
-Get the height of the video in pixels 
+Get the height of the video in pixels. 
 
 ```csharp
 public int GetHeight()
@@ -263,7 +265,7 @@ public MLResult GetPositionMS(
 
 ### int GetPositionMilliseconds {#int-getpositionmilliseconds}
 
-Gets the current position of the video in milliseconds 
+Gets the current position of the video in milliseconds. 
 
 ```csharp
 public int GetPositionMilliseconds()
@@ -341,7 +343,7 @@ public bool GetState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-pollingstateflags) |stateFlags|Comment Needed! |
+| [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#uint-pollingstateflags) |stateFlags|Comment Needed! |
 
 
 
@@ -389,7 +391,7 @@ public MLResult GetVideoSize(
 
 ### int GetWidth {#int-getwidth}
 
-Get the width of the video in pixels 
+Get the width of the video in pixels. 
 
 ```csharp
 public int GetWidth()
@@ -477,7 +479,7 @@ public delegate void OnDRMTrackInfoDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) |mediaPlayer|Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file. |
-| [MLMedia.Player.Track.DRM.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Info.md) |trackDRMInfo|MediaPlayer [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md)[Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Info.md) for a Media [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md). |
+| [MLMedia.Player.Track.DRM.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Info.md) |trackDRMInfo|MediaPlayer DRM Info for a Media Track. |
 
 
 
@@ -503,7 +505,7 @@ public delegate void OnErrorDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) |mediaPlayer|Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file. |
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |errorCode|Identifier of Magic Leap API results |
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |errorCode|Identifier of Magic Leap API results. |
 
 
 
@@ -605,7 +607,7 @@ public delegate void OnTrackFoundDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) |mediaPlayer|Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file. |
-| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|Track from the prepared source that can be selected by the media player. |
 
 
 
@@ -631,7 +633,7 @@ public delegate void OnTrackSelectedDelegate(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) |mediaPlayer|Media player script that allows playback of a streaming video (either from file or web URL) This script will update the main texture parameter of the Renderer attached as a sibling with the video frame from playback. Audio is also handled through this class and will playback audio from the file. |
-| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |selectedTrack|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |selectedTrack|Track from the prepared source that can be selected by the media player. |
 
 
 
@@ -681,7 +683,7 @@ public MLResult Pause()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplements**: [Pause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-pause)
 
@@ -702,7 +704,7 @@ public MLResult Play()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplements**: [Play](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-play)
 
@@ -765,8 +767,8 @@ public MLResult PollState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-pollingstateflags) |stateFlags|Comment Needed! |
-| out [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-pollingstateflags) |state|Comment Needed! |
+| [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#uint-pollingstateflags) |stateFlags|Comment Needed! |
+| out [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#uint-pollingstateflags) |state|Comment Needed! |
 
 
 
@@ -788,7 +790,7 @@ public MLResult PollStates(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-pollingstateflags) |states|Comment Needed! |
+| out [PollingStateFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#uint-pollingstateflags) |states|Comment Needed! |
 
 
 
@@ -862,7 +864,7 @@ public MLResult Resume()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplements**: [Resume](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-resume)
 
@@ -894,7 +896,7 @@ public MLResult Seek(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplements**: [Seek](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-seek)
 
@@ -937,7 +939,7 @@ public MLResult SelectTrack(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|Track from the prepared source that can be selected by the media player. |
 
 
 
@@ -990,7 +992,7 @@ public MLResult SetLooping(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplements**: [SetLooping](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-setlooping)
 
@@ -1020,7 +1022,7 @@ public MLResult SetSourcePath(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed due to an invalid input parameter.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.MediaGenericNoInit](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericnoinit)  if media player was not properly built or initialized.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if attempting to access web content without appropriate network permissions 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded.  MLResult.Result  will be  MLResult.Code.InvalidParam  if failed due to an invalid input parameter.  MLResult.Result  will be  MLResult.Code.UnspecifiedFailure  if failed due to internal error.  MLResult.Result  will be  MLResult.Code.MediaGenericNoInit  if media player was not properly built or initialized.  MLResult.Result  will be  MLResult.Code.PermissionDenied  if attempting to access web content without appropriate network permissions 
 
 **Reimplements**: [SetSourcePath](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-setsourcepath)
 
@@ -1050,7 +1052,7 @@ public MLResult SetSourceURI(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed due to an invalid input parameter.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.MediaGenericNoInit](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericnoinit)  if media player was not properly built or initialized.  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if attempting to access web content without appropriate network permissions 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded.  MLResult.Result  will be  MLResult.Code.InvalidParam  if failed due to an invalid input parameter.  MLResult.Result  will be  MLResult.Code.UnspecifiedFailure  if failed due to internal error.  MLResult.Result  will be  MLResult.Code.MediaGenericNoInit  if media player was not properly built or initialized.  MLResult.Result  will be  MLResult.Code.PermissionDenied  if attempting to access web content without appropriate network permissions 
 
 **Reimplements**: [SetSourceURI](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-setsourceuri)
 
@@ -1148,7 +1150,7 @@ public MLResult SetVolume(
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplements**: [SetVolume](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-setvolume)
 
@@ -1169,7 +1171,7 @@ public MLResult Stop()
 
 
 
-**Returns**:  [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result)  will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation succeeded. 
+**Returns**:  MLResult.Result  will be  MLResult.Code.Ok  if operation succeeded. 
 
 **Reimplements**: [Stop](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLMediaPlayer.md#mlresult-stop)
 
@@ -1203,7 +1205,7 @@ public MLResult UnselectTrack(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+| [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|Track from the prepared source that can be selected by the media player. |
 
 
 
@@ -1218,7 +1220,7 @@ public MLResult UnselectTrack(
 
 ```csharp
 
-public const string TTMLMime = "application/ttml+xml";
+public static const string TTMLMime = "application/ttml+xml";
 
 ```
 
@@ -1233,7 +1235,7 @@ public const string TTMLMime = "application/ttml+xml";
 
 ```csharp
 
-public const string VTTMime = "text/vtt";
+public static const string VTTMime = "text/vtt";
 
 ```
 
@@ -1362,7 +1364,7 @@ public OnMediaPlayerGeneralDelegate OnFramePacking()
 
 ### OnInfo {#oninfodelegate-oninfo}
 
-Event used to listen for when information about the media player, see the [MLMedia.Player.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#enums-info) enum for the types of information given. 
+Event used to listen for when information about the media player, see the MLMedia.Player.Info enum for the types of information given. 
 
 ```csharp
 public OnInfoDelegate OnInfo()
@@ -1392,7 +1394,7 @@ public OnMediaPlayerGeneralDelegate OnMediaSubtitleUpdate()
 
 ### OnPause {#onmediaplayergeneraldelegate-onpause}
 
-Event used to listen for when [Pause()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-pause) has been called. 
+Event used to listen for when Pause() has been called. 
 
 ```csharp
 public OnMediaPlayerGeneralDelegate OnPause()
@@ -1407,7 +1409,7 @@ public OnMediaPlayerGeneralDelegate OnPause()
 
 ### OnPlay {#onmediaplayergeneraldelegate-onplay}
 
-Event used to listen for when [Play()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-play) has been called. 
+Event used to listen for when Play() has been called. 
 
 ```csharp
 public OnMediaPlayerGeneralDelegate OnPlay()
@@ -1467,7 +1469,7 @@ public OnMediaPlayerGeneralDelegate OnSeekComplete()
 
 ### OnStop {#onmediaplayergeneraldelegate-onstop}
 
-Event used to listen for when [Stop()](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md#mlresult-stop) has been called. 
+Event used to listen for when Stop() has been called. 
 
 ```csharp
 public OnMediaPlayerGeneralDelegate OnStop()
@@ -1538,7 +1540,7 @@ public OnVideoSizeChangedDelegate OnVideoSizeChanged()
 
 ## Public Enums
 
-### AudioChannel {#enums-audiochannel}
+### AudioChannel {#uint-audiochannel}
 
 Enumeration of the available audio channel indices in 5.1 SMPTE order. 
 
@@ -1580,7 +1582,7 @@ Comment Needed!
 
 -----------
 
-### Cea608CaptionColor {#enums-cea608captioncolor}
+### Cea608CaptionColor {#uint-cea608captioncolor}
 
 CEA608 caption color code.  MLCea608CaptionColor  from  ml&#95;media&#95;cea608&#95;caption.h . 
 
@@ -1604,7 +1606,7 @@ CEA608 caption color code.  MLCea608CaptionColor  from  ml&#95;media&#95;cea608&
 
 -----------
 
-### Cea608CaptionDimension {#enums-cea608captiondimension}
+### Cea608CaptionDimension {#int-cea608captiondimension}
 
 CEA608 caption Dimension constants.  MLCea608CaptionDimension  from  ml&#95;media&#95;cea608&#95;caption.h . 
 
@@ -1624,7 +1626,7 @@ CEA608 caption Dimension constants.  MLCea608CaptionDimension  from  ml&#95;medi
 
 -----------
 
-### Cea608CaptionStyle {#enums-cea608captionstyle}
+### Cea608CaptionStyle {#uint-cea608captionstyle}
 
 CEA608 caption style code.  MLCea608CaptionStyle  from  ml&#95;media&#95;cea608&#95;caption.h . 
 
@@ -1643,7 +1645,7 @@ CEA608 caption style code.  MLCea608CaptionStyle  from  ml&#95;media&#95;cea608&
 
 -----------
 
-### Cea708CaptionColorOpacity {#enums-cea708captioncoloropacity}
+### Cea708CaptionColorOpacity {#int-cea708captioncoloropacity}
 
 CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
@@ -1663,7 +1665,7 @@ CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#
 
 -----------
 
-### Cea708CaptionEmitCommand {#enums-cea708captionemitcommand}
+### Cea708CaptionEmitCommand {#int-cea708captionemitcommand}
 
 CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
@@ -1700,7 +1702,7 @@ CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#9
 
 -----------
 
-### Cea708CaptionEmitCommandControl {#enums-cea708captionemitcommandcontrol}
+### Cea708CaptionEmitCommandControl {#int-cea708captionemitcommandcontrol}
 
 CEA708 Caption Emit Command Control constants.  MLCea708CaptionEmitCommandControl  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
@@ -1708,7 +1710,7 @@ CEA708 Caption Emit Command Control constants.  MLCea708CaptionEmitCommandContro
 | ---------- | ----- | ----------- |
 | ETX | 0x03| End of text.   |
 | BS | 0x08| Back space.   |
-| FF | 0x0c| This code is equivalent to CEA708 CLW command   |
+| FF | 0x0c| This code is equivalent to CEA708 CLW command.   |
 | HCR | 0x0e| Carriage return.   |
 
 
@@ -1812,7 +1814,7 @@ Indicates various trigger various media player actions.  MLMediaPlayerInfo  from
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Unknown | 1| Unknown status   |
+| Unknown | 1| Unknown status.   |
 | StartedAsNext | 2| The player was started because it was used as the next player.   |
 | RenderingStart | 3| The player just pushed the very first video frame for rendering.   |
 | Looping | 4| The player just reached EOS and started from beginning loop.   |
@@ -1849,7 +1851,7 @@ Indicates various trigger various media player actions.  MLMediaPlayerInfo  from
 
 -----------
 
-### PollingStateFlags {#enums-pollingstateflags}
+### PollingStateFlags {#uint-pollingstateflags}
 
 Comment Needed! 
 

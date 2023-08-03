@@ -1,5 +1,6 @@
 ---
 title: MLDepthCameraData
+summary: structure to encapsulate output data for each camera stream. this structure must be initialized before use. 
 
 ---
 
@@ -8,7 +9,7 @@ title: MLDepthCameraData
 
 
 
-
+Structure to encapsulate output data for each camera stream. This structure must be initialized before use.   
 
 
 
@@ -29,35 +30,15 @@ public static MLDepthCameraData Init()
 
 -----------
 
-### [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) Init {#mldepthcameradata-init}
-
-```csharp
-public static MLDepthCameraData Init(
-    Data managed
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [Data](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md) |managed|Output data for each depth camera sensor. |
-
-
-
-
-
-
------------
-
 ## Public Attributes
 
-### AmbientRawDepthImageFrameBufferPtr {#intptr-ambientrawdepthimageframebufferptr}
+### FrameCount {#byte-framecount}
+
+Number of camera frames populated. 
 
 ```csharp
 
-public IntPtr AmbientRawDepthImageFrameBufferPtr;
+public byte FrameCount;
 
 ```
 
@@ -68,137 +49,13 @@ public IntPtr AmbientRawDepthImageFrameBufferPtr;
 
 -----------
 
-### CameraPose {#mltransform-camerapose}
+### Frames {#intptr-frames}
+
+Camera frame data. The number of frames is specified by frame&#95;count. 
 
 ```csharp
 
-public MLTransform CameraPose;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) | Information used to transform from one coordinate frame to another.  |
-
-
-
-
-
------------
-
-### ConfidenceBufferFrameBufferPtr {#intptr-confidencebufferframebufferptr}
-
-```csharp
-
-public IntPtr ConfidenceBufferFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### DepthFlagsBufferFrameBufferPtr {#intptr-depthflagsbufferframebufferptr}
-
-```csharp
-
-public IntPtr DepthFlagsBufferFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### DepthImageFrameBufferPtr {#intptr-depthimageframebufferptr}
-
-```csharp
-
-public IntPtr DepthImageFrameBufferPtr;
-
-```
-
-
-
-
-
-
------------
-
-### FrameNumber {#long-framenumber}
-
-```csharp
-
-public long FrameNumber;
-
-```
-
-
-
-
-
-
------------
-
-### FrameTimestamp {#long-frametimestamp}
-
-```csharp
-
-public long FrameTimestamp;
-
-```
-
-
-
-
-
-
------------
-
-### FrameType {#frametype-frametype}
-
-```csharp
-
-public FrameType FrameType;
-
-```
-
-| Type | Description  | 
-|--|--|
-| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types  |
-
-
-
-
-
------------
-
-### Intrinsics {#mldepthcameraintrinsics-intrinsics}
-
-```csharp
-
-public MLDepthCameraIntrinsics Intrinsics;
-
-```
-
-
-
-
-
-
------------
-
-### RawDepthImageFrameBufferPtr {#intptr-rawdepthimageframebufferptr}
-
-```csharp
-
-public IntPtr RawDepthImageFrameBufferPtr;
+public IntPtr Frames;
 
 ```
 
@@ -210,6 +67,8 @@ public IntPtr RawDepthImageFrameBufferPtr;
 -----------
 
 ### Version {#uint-version}
+
+Version of this structure. 
 
 ```csharp
 

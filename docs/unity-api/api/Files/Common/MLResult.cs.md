@@ -111,6 +111,8 @@ namespace UnityEngine.XR.MagicLeap
 
             LicenseError,
 
+            InvalidTimestamp,
+
             // MLAudioResult
 
             AudioNotImplemented = (CodePrefix.MLAudioResult << 16),
@@ -335,6 +337,12 @@ namespace UnityEngine.XR.MagicLeap
 
             SpaceAlreadyExists,
 
+            // Facial Expression
+
+            HeadsetFitIssue = (CodePrefix.MLFacialExpressionResult << 16),
+
+            EyeExpressionDisabled,
+
             PowerManagerNotConnect = (CodePrefix.MLPowerManager << 16),
 
             PowerManagerInvalidStateTransition,
@@ -377,7 +385,9 @@ namespace UnityEngine.XR.MagicLeap
 
             MLSpaceResult = 0x10cc,
 
-            MLPowerManager = 0x4c8a
+            MLPowerManager = 0x4c8a,
+
+            MLFacialExpressionResult = 0x18cd
         }
 
         public bool IsOk
@@ -445,11 +455,14 @@ namespace UnityEngine.XR.MagicLeap
                     // No MLWebViewGetResultString in API 
                     codeString = "Web View Result Code - String Not Available";
                     break;
+                case CodePrefix.MLAnchorsResult:
+                    codeString = "MLResult_" + resultCode;
+                    break;
                 case CodePrefix.MLPowerManager:
                     codeString = resultCode.ToString();
                     break;
-                case CodePrefix.MLAnchorsResult:
-                    codeString = "MLResult_" + resultCode;
+                case CodePrefix.MLFacialExpressionResult:
+                    codeString = resultCode.ToString();
                     break;
                 default:
                     // This will catch any unknown/invalid return values.

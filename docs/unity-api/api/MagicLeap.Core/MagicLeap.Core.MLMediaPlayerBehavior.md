@@ -25,7 +25,7 @@ Inherits from: <br></br>MonoBehaviour
 
 ```csharp
 
-public long DurationInMiliseconds = false { get; set; }
+public long DurationInMiliseconds = 0 { get; set; }
 
 ```
 
@@ -40,7 +40,37 @@ public long DurationInMiliseconds = false { get; set; }
 
 ```csharp
 
-public bool IsBuffering { get; set; }
+public bool IsBuffering = false { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### IsPlaying {#bool-isplaying}
+
+```csharp
+
+public bool IsPlaying { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### IsPrepared {#bool-isprepared}
+
+```csharp
+
+public bool IsPrepared { get; set; }
 
 ```
 
@@ -68,7 +98,7 @@ public bool IsSeeking = false { get; set; }
 
 ### MediaPlayer {#mlmediaplayer-mediaplayer}
 
-MediaPlayer reference 
+MediaPlayer reference. 
 
 ```csharp
 
@@ -209,7 +239,7 @@ public void SelectTrack(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|Track from the prepared source that can be selected by the media player. |
 
 
 
@@ -246,7 +276,7 @@ public void UnselectTrack(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player. |
+| [MLMedia.Player.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) |track|Track from the prepared source that can be selected by the media player. |
 
 
 
@@ -256,36 +286,6 @@ public void UnselectTrack(
 -----------
 
 ## Public Attributes
-
-### IsPlaying {#bool-isplaying}
-
-```csharp
-
-public bool IsPlaying => _mediaPlayer is { IsPlaying: true };
-
-```
-
-
-
-
-
-
------------
-
-### IsPrepared {#bool-isprepared}
-
-```csharp
-
-public bool IsPrepared => _mediaPlayer is { IsPrepared: true };
-
-```
-
-
-
-
-
-
------------
 
 ### pathSourceType {#pathsourcetype-pathsourcetype}
 

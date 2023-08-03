@@ -39,7 +39,7 @@ public MagicLeapNativeBindings.MLVec3f center;
 
 ### extents {#magicleapnativebindingsmlvec3f-extents}
 
-The size of the bounding box. When a mesh request is complete all mesh blocks within 10 meters of the device that intersect with the extents provided here will be returned in [MLMeshingMeshInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/NativeBindings/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.NativeBindings.MLMeshingMeshInfo.md). 
+The size of the bounding box. When a mesh request is complete all mesh blocks within 10 meters of the device that intersect with the extents provided here will be returned in MLMeshingMeshInfo. 
 
 ```csharp
 

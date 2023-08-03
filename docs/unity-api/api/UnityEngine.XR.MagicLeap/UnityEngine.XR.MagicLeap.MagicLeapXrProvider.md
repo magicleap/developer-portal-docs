@@ -23,7 +23,7 @@ title: MagicLeapXrProvider
 
 ```csharp
 
-public static bool IsZIRunning { get; set; }
+public static bool IsZIRunning = false { get; set; }
 
 ```
 
@@ -40,7 +40,8 @@ public static bool IsZIRunning { get; set; }
 
 ```csharp
 public static void AddLibrarySearchPaths(
-    List< string > librarySearchPaths
+    List< string > librarySearchPaths,
+    IEnumerable< XRLoader > activeLoaders
 )
 ```
 
@@ -50,6 +51,7 @@ public static void AddLibrarySearchPaths(
 | Type | Name  | Description  | 
 |--|--|--|
 | List&lt; string &gt; |librarySearchPaths||
+| IEnumerable&lt; XRLoader &gt; |activeLoaders||
 
 
 
@@ -64,7 +66,7 @@ public static void AddLibrarySearchPaths(
 
 ```csharp
 
-public const string AnchorSubsystemId = "MagicLeapXr-Anchors";
+public static const string AnchorSubsystemId = "MagicLeapXr-Anchors";
 
 ```
 
@@ -79,7 +81,7 @@ public const string AnchorSubsystemId = "MagicLeapXr-Anchors";
 
 ```csharp
 
-public const string GestureSubsystemId = "MagicLeapXr-Gesture";
+public static const string GestureSubsystemId = "MagicLeapXr-Gesture";
 
 ```
 
@@ -94,7 +96,7 @@ public const string GestureSubsystemId = "MagicLeapXr-Gesture";
 
 ```csharp
 
-public const string HandSubsystemId = "MagicLeapXr-Hand";
+public static const string HandSubsystemId = "MagicLeapXr-Hand";
 
 ```
 
@@ -109,7 +111,7 @@ public const string HandSubsystemId = "MagicLeapXr-Hand";
 
 ```csharp
 
-public const string ImageTrackingSubsystemId = "MagicLeapXr-ImageTracking";
+public static const string ImageTrackingSubsystemId = "MagicLeapXr-ImageTracking";
 
 ```
 
@@ -124,7 +126,7 @@ public const string ImageTrackingSubsystemId = "MagicLeapXr-ImageTracking";
 
 ```csharp
 
-public const string InputSubsystemId = "MagicLeapXr-Input";
+public static const string InputSubsystemId = "MagicLeapXr-Input";
 
 ```
 
@@ -139,7 +141,7 @@ public const string InputSubsystemId = "MagicLeapXr-Input";
 
 ```csharp
 
-public const string MeshingSubsystemId = "MagicLeapXr-Meshing";
+public static const string MeshingSubsystemId = "MagicLeapXr-Meshing";
 
 ```
 
@@ -154,7 +156,7 @@ public const string MeshingSubsystemId = "MagicLeapXr-Meshing";
 
 ```csharp
 
-public const string PlanesSubsystemId = "MagicLeapXr-Planes";
+public static const string PlanesSubsystemId = "MagicLeapXr-Planes";
 
 ```
 
@@ -169,7 +171,7 @@ public const string PlanesSubsystemId = "MagicLeapXr-Planes";
 
 ```csharp
 
-public const string RaycastSubsystemId = "MagicLeapXr-Raycast";
+public static const string RaycastSubsystemId = "MagicLeapXr-Raycast";
 
 ```
 
@@ -184,7 +186,7 @@ public const string RaycastSubsystemId = "MagicLeapXr-Raycast";
 
 ```csharp
 
-public const string SessionSubsystemId = "MagicLeapXr-Session";
+public static const string SessionSubsystemId = "MagicLeapXr-Session";
 
 ```
 

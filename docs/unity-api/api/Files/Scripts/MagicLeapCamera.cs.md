@@ -20,10 +20,13 @@ title: MagicLeapCamera.cs
 ```csharp
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.Collections;
-using UnityEngine.Jobs;
-using UnityEngine.XR.MagicLeap.Rendering;
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+using UnityEngine.XR.OpenXR.Features.MagicLeapSupport;
+#endif
+#if UNITY_XR_MAGICLEAP_PROVIDER
+using MagicLeapXRRenderSettings = UnityEngine.XR.MagicLeap.Rendering.RenderingSettings;
+using MagicLeapXRRenderUtility = UnityEngine.XR.MagicLeap.Rendering.RenderingUtility;
+#endif
 
 namespace UnityEngine.XR.MagicLeap
 {
@@ -48,6 +51,11 @@ namespace UnityEngine.XR.MagicLeap
         private Transform stereoConvergencePoint;
         [SerializeField]
         private bool protectedSurface;
+
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+        [SerializeField] 
+        private bool vignette;
+#endif
 
         [SerializeField]
         private bool fixProblemsOnStartup = true;
@@ -84,7 +92,16 @@ namespace UnityEngine.XR.MagicLeap
             camera = GetComponent<Camera>();
             FixupCamera(fixProblemsOnStartup);
 
-            RenderingSettings.enforceNearClip = enforceNearClip;
+#if UNITY_XR_MAGICLEAP_PROVIDER
+            MagicLeapXRRenderSettings.enforceNearClip = enforceNearClip;
+#endif
+            
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+            if (!Application.isEditor)
+            {
+                MLXrRenderSettings.SetFrameEndInfoParams(camera.stereoConvergence, vignette, protectedSurface);
+            }
+#endif
         }
 
         private IEnumerator Start()
@@ -110,19 +127,26 @@ namespace UnityEngine.XR.MagicLeap
                 return;
             }
 
-            RenderingSettings.cameraScale = RenderingUtility.GetParentScale(transform);
+#if UNITY_XR_MAGICLEAP_PROVIDER
+            MagicLeapXRRenderSettings.cameraScale = MagicLeapXRRenderUtility.GetParentScale(transform);
+#endif
             ValidateFarClip();
 
             camera.stereoConvergence = CalculateFocusDistance();
-            RenderingSettings.focusDistance = camera.stereoConvergence;
-            RenderingSettings.farClipDistance = camera.farClipPlane;
-            RenderingSettings.nearClipDistance = camera.nearClipPlane;
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+            MLXrRenderSettings.SetFrameEndInfoParams(camera.stereoConvergence, vignette, protectedSurface);
+#elif UNITY_XR_MAGICLEAP_PROVIDER
+            MagicLeapXRRenderSettings.focusDistance = camera.stereoConvergence;
+            MagicLeapXRRenderSettings.farClipDistance = camera.farClipPlane;
+            MagicLeapXRRenderSettings.nearClipDistance = camera.nearClipPlane;
+#endif
         }
 
         public void ValidateFarClip()
         {
+#if UNITY_XR_MAGICLEAP_PROVIDER
             var farClip = camera.farClipPlane;
-            var max = RenderingSettings.maxFarClipDistance;
+            var max = MagicLeapXRRenderSettings.maxFarClipDistance;
             if (farClip > max)
             {
                 if (enforceFarClip)
@@ -130,6 +154,7 @@ namespace UnityEngine.XR.MagicLeap
                     camera.farClipPlane = max;
                 }
             }
+#endif
         }
 
         private float CalculateFocusDistance()
@@ -160,7 +185,11 @@ namespace UnityEngine.XR.MagicLeap
 
         public float ClampToClippingPlanes(float value)
         {
-            return Mathf.Clamp(value, RenderingSettings.minNearClipDistance, RenderingSettings.maxFarClipDistance);
+#if UNITY_XR_MAGICLEAP_PROVIDER
+            return Mathf.Clamp(value, MagicLeapXRRenderSettings.minNearClipDistance, MagicLeapXRRenderSettings.maxFarClipDistance);
+#else
+            return value;
+#endif
         }
 
         private void FixupCamera(bool fixIssues)

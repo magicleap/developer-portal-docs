@@ -9,7 +9,7 @@ summary: a structure containing information about the imported space.
 
 
 
-A structure containing information about the imported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md).   
+A structure containing information about the imported Space.   
 
 
 
@@ -19,7 +19,7 @@ A structure containing information about the imported [Space](/unity-api/api/Uni
 
 ### SpaceId {#mluuid-spaceid}
 
-Unique ID of the imported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
+Unique ID of the imported Space. 
 
 ```csharp
 

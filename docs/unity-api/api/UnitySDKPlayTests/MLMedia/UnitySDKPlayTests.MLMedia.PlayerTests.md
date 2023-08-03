@@ -20,7 +20,7 @@ title: PlayerTests
 
 ```csharp
 
-public long DurationInMiliseconds = false { get; set; }
+public long DurationInMiliseconds = 0 { get; set; }
 
 ```
 
@@ -35,7 +35,37 @@ public long DurationInMiliseconds = false { get; set; }
 
 ```csharp
 
-public bool IsBuffering { get; set; }
+public bool IsBuffering = false { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### IsPlaying {#bool-isplaying}
+
+```csharp
+
+public bool IsPlaying { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### IsPrepared {#bool-isprepared}
+
+```csharp
+
+public bool IsPrepared { get; set; }
 
 ```
 
@@ -110,38 +140,6 @@ Stops Media Player and destroys it's instance.
 
 ```csharp
 public void StopMLMediaPlayer()
-```
-
-
-
-
-
-
------------
-
-## Public Attributes
-
-### IsPlaying {#bool-isplaying}
-
-```csharp
-
-public bool IsPlaying => _mediaPlayer is { IsPlaying: true };
-
-```
-
-
-
-
-
-
------------
-
-### IsPrepared {#bool-isprepared}
-
-```csharp
-
-public bool IsPrepared => _mediaPlayer is { IsPrepared: true };
-
 ```
 
 

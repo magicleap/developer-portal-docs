@@ -21,6 +21,21 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Fields
 
+### IsPaused {#bool-ispaused}
+
+```csharp
+
+public bool IsPaused { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### WebView {#mlwebview-webview}
 
 MLWebView instance that this tab is associated with. 
@@ -33,7 +48,7 @@ public MLWebView WebView { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for MLWebView that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
 
 
 
@@ -179,23 +194,6 @@ public void UnselectTab()
 
 ```csharp
 public void UpdateTabLabel()
-```
-
-
-
-
-
-
------------
-
-## Public Attributes
-
-### IsPaused {#bool-ispaused}
-
-```csharp
-
-public bool IsPaused => isPaused;
-
 ```
 
 

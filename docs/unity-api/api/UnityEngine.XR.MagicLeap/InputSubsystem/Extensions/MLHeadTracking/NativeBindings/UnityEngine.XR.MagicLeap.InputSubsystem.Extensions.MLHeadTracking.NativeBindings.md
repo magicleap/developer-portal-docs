@@ -31,7 +31,7 @@ public static bool TryGetMapEvents(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |device||
-| out [MLHeadTracking.MapEvents](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-mapevents) |mapEvents|A set of all types of map events that can occur that a developer may have to handle. |
+| out [MLHeadTracking.MapEvents](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#ulong-mapevents) |mapEvents|A set of all types of map events that can occur that a developer may have to handle. |
 
 
 
