@@ -1,5 +1,5 @@
 ---
-title: 1.3.0 - Voice Intents Developer Toolkit Release Notes
+title: 1.3.1 - Voice Intents Developer Toolkit Release Notes
 sidebar_position: 5
 date: 08/02/2023
 ---
