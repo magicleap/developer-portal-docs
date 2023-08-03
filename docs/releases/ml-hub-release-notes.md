@@ -1,8 +1,26 @@
 ---
 title: Magic Leap Hub Release Notes
 sidebar_position: 2
-date: 05/12/2023
+date: 08/01/2023
 ---
+## Version 2.0.13
+* Advanced Capture: UI performance improvements
+* Remote Render: QR Code Pairing
+
+### Known behaviors
+
+* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
+* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
+
+## Version 2.0.12
+
+* Advanced Capture: various UX updates
+* OS Installer: UX update
+
+### Known behaviors
+
+* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
+* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
 
 ## Version 2.0.11
 
