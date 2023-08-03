@@ -7,16 +7,23 @@ date: 06/13/2023
 # Magic Leap Application Simulator Release Notes
 
 # Version 3.6.0
+(2023.08.02)
 
 ## What's New
-  * App Sim will validate graphics support of the host machine upon start and warn user if the support is lacking or not sufficient.
-  * Channel Editor has been removed as it causes more confusion than value to the users.
+  * App Sim now validates graphics support of the host machine upon start and warns user if the support is lacking or not sufficient.
+  * Channel Editor has been removed from the App Sim in ML Hub as it causes more confusion than benefit to the users.
 
 ## Bug Fixes
-  * [Unity] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
-  * [Unity] WASD movement in Game View was inverted along Z axis.
+  * [Unity AppSim] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
+  * [Unity AppSim] WASD movement in Game View was inverted along Z axis.
+
+## Known Issues
+  * [Unity AppSim] FEEDBACK-463: Sometimes the Device view is blank after starting App Sim Simulator mode in Unity Editor. The workaround is to
+    * Stop and restart the simulator till the Device view is rendered, OR
+    * Exit Unity Editor and select `No` when prompted whether to stop App Sim and then restart Unity Editor. Then you should see the App Sim is running and the Device view is rendered. 
 
 # Version 3.5.0
+(2023.05.15)
 
 ## What's New
   * UI in ML Hub
