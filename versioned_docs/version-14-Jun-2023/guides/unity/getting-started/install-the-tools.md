@@ -29,7 +29,7 @@ To access the Package Manager in the ML Hub:
 1. Open the **ML Hub**.
 2. Select **Package Manager** from the home screen.
 
-<Image url= {require("/img/ml-hub/package_manager_link.png")} >The ML Hub Home Screen with the Package Manager option outlined</Image>
+<Image url= {require("/img/ml-hub/package_manager_link.jpg")} >The ML Hub Home Screen with the Package Manager option outlined</Image>
 
 ### Downloading the Unity Bundle
 
