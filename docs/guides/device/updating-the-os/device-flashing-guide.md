@@ -44,7 +44,7 @@ OS Builds can now be downloaded directly from the ML Hub. Follow these steps to 
 1. Open ML Hub and make sure it is **updated** to the latest version by either accepting the update prompts that pop up or clicking Home > Check For Updates.
 2. Go to the Package Manager and select the **"All"** tab at the top.
 
-<Image url= {require("/img/ml-hub/package_manager_link.png")} >ML Hub Package Manager</Image>
+<Image url= {require("/img/ml-hub/package_manager_link.jpg")} >ML Hub Package Manager</Image>
 
 <Image url= {require("/img/ml-hub/ml_hub_packages_all.png")} >All Packages</Image>
 

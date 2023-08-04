@@ -10,9 +10,13 @@ keywords: [ML Hub, Package Manager]
 
 Package Manager is a tool to install and manage ML SDK, tools, and resources for development platforms that support Magic Leap 2.
 
-Open Package Manager from Activities Home. You must be online to download packages and receive updates.
+Open **Package Manager** from the home screen of the Magic Leap Hub.
 
-<Image url= {require("/img/ml-hub/package_manager_link.png")} >lab-package-manager-link</Image>
+<Image url= {require("/img/ml-hub/package_manager_link.jpg")} >lab-package-manager-link</Image>
+
+:::info
+You must be online to download packages and receive updates.
+:::
 
 If you want to change the install location for Magic Leap packages, open the Action menu and select **Settings**.
 
