@@ -29,8 +29,6 @@ To access the Package Manager in the ML Hub:
 1. Open the **ML Hub**.
 2. Select **Package Manager** from the home screen.
 
-<Image url= {require("/img/ml-hub/package_manager_link.png")} >The ML Hub Home Screen with the Package Manager option outlined</Image>
-
 ### Downloading the Unity Bundle
 
 To download the Unity Magic Leap Examples Project from the bundle section:
@@ -43,13 +41,13 @@ To download the Unity Magic Leap Examples Project from the bundle section:
 
 ## Install Unity Editor
 
-This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor in the range of **2022.2.x**.
+This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor version **2022.2.0f1 or higher**.
 
 1. Open the Unity Hub application
 2. Select the Installs
 3. Then click the Install Editor button.
-4. With the Install Unity Editor window open, navigate to the Pre-releases section
-5. Select a Unity Editor that is in the range of **2022.2.x**
+4. With the Install Unity Editor window open.
+5. Select a Unity Editor version **2022.2.0f1 or higher**.
 6. In the modules screen select  **Android Build Support**, then **Android SDK & NDK Tools**, and **OpenJDK**.
 7. Select the **Continue** button.
 

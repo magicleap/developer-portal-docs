@@ -41,14 +41,12 @@ After your device is charged and the tools are installed, power-on the Magic Lea
 
 OS Builds can now be downloaded directly from the ML Hub. Follow these steps to download the OS file:
 
-1. Open ML Hub and make sure it is **updated** to the latest version by either accepting the update prompts that pop up or clicking Home > Check For Updates.
-2. Go to the Package Manager and select the **"All"** tab at the top.
-
-<Image url= {require("/img/ml-hub/package_manager_link.jpg")} >ML Hub Package Manager</Image>
+1. Open **ML Hub** and make sure it is **updated** to the latest version by either accepting the update prompts that pop up or clicking **Home > Check For Updates**.
+2. Open to the **Package Manager** and select the **"All"** tab.
 
 <Image url= {require("/img/ml-hub/ml_hub_packages_all.png")} >All Packages</Image>
 
-3. Under the "Device OS Versions" section, find the **ML2 OS** item and click the download icon.
+1. Under the "Device OS Versions" section, find the **ML2 OS** item and click the download icon.
 
 :::note _user vs._user_secure builds
 
