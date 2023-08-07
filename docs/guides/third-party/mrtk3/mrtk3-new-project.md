@@ -1,5 +1,5 @@
 ---
-title: Create a New MRTK 3 Project
+title: Create a New Project
 description: Instructions on how to create a new MRTK 3 project compatible with Magic Leap 2
 sidebar_position: 2
 tags: [Unity, MRTK 3, Input]

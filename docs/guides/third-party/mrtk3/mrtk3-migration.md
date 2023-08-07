@@ -1,5 +1,5 @@
 ---
-title: Configure Existing MRTK 3 Project
+title: Configure Existing Project
 description: Instructions on how to add Magic Leap support to an existing MRTK 3 Project
 sidebar_position: 2
 tags: [Unity, MRTK3, Input,UI]
