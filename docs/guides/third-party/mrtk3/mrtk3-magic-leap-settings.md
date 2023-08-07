@@ -39,7 +39,7 @@ This section describes how to configure the original MRTK XR Rig, instead of rep
 
 1. Select the **MRTK XR Rig** in the scene. Add the **MagicLeapInputs** and **MagicLeapHandAuxiliaryInputs** input action assets to the **Input Action Manager**.
 2. Expand the object so that the MRTK RightHand and MRTK LeftHand Controllers are visible (`MRTK XR Rig/ Camera Offset/`).
-3. Add the `Packages/Magic Leap MRTK3/Runtime/MagicLeap/Prefabs/MRTK_Variants` to add support for MagicLeap controller input.
+3. Add the `Packages/Magic Leap MRTK3/Runtime/MagicLeap/Prefabs/MRTK_Variants/MRTK MagicLeap Controller` prefab into the XR rig to add support for MagicLeap controller input.
 4. Select each of the Hand Controller objects and update the following components:
    1. Update the **Articulated Hand Controller** to use equivalent `MagicLeapHandAuxiliaryInputs` inputs instead of the generic MRTK bindings. For example, the left hand bindings would be the following in order:
       1. `Aux LeftHand/DevicePosition`
