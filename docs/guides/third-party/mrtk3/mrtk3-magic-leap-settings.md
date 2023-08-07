@@ -13,6 +13,8 @@ The Magic Leap MRTK 3 package adds additional, Magic Leap specific, options to M
  1. Open the Project Settings window by navigating to **Edit > Project Settings**. Then, from the sidebar, select **MRTK3 > Magic Leap Settings**.
  2. Here you can modify which prefabs are created at runtime to visualize the Magic Leap 2 controller and hands. Additionally, you can change the input action bindings if needed.
 
+<Image url= {require("/img/third-party/mrtk3/MagicLeapSettings_1.0.0-pre2.jpg")} >Magic Leap Settings Window v1.0.0-pre.2</Image>
+
 ## Manually Updating the MRTK XR Rig
 
 If you choose not to use the [Runtime Configuration](#magic-leap-mrtk-3-settings), you will have to modify the existing MRTK XR rig by either replacing it or altering its input actions.
