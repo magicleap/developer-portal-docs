@@ -14,6 +14,7 @@ keywords: [Resources, External Tools]
 This guide walks through the steps to integrate Wwise into a Magic Leap 2 Unity project on a Windows machine.
 
 Validated with:
+
 - Unity Engine : 2022.2.0f1
 - Wwise SDK : 2022.1.4.8202
 
@@ -31,7 +32,7 @@ Please note that these instructions have only been confirmed to work on Windows 
 
 2. Open the Audiokinetic Launcher and select the Wwise tab to choose a version to install
 
-<img src="/img/unity/wwise/a.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/a.png")}> Audiokinetic Launcher with the Wwise tab selected </Image>
 
 Be sure to select the **SDK (C++)** option as well as Android as a Deployment Platform for Magic Leap 2 deployment. This will ensure you can build the necessary x86_64 integration and have available x86_64 versions of any DSP plugins to copy into your project in a later step.
 
@@ -39,32 +40,31 @@ Be sure to select the **SDK (C++)** option as well as Android as a Deployment Pl
 The **Target directory** specified in this step will also set the environment variable for both **WWISEROOT** and **WWISESDK**. If you intend to build the Wwise Unity integration manually as outlined in a later step, it is recommended to change the default value to a path without any white space as shown below. If you do not intend to build the Wwise Unity integration, you can use the default Target directory.
 :::
 
-<img src="/img/unity/wwise/b.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/b.png")}> Authoring and SDK (C++) selected for the Android platform </Image>
 
+3. On the Choose Plug-ins page, select any plugins you want to include and select Install.
 
-On the Choose Plug-ins page, select any plugins you want to include and select Install.
+<Image url= {require("/img/unity/wwise/c.png")}> Choose Plug-ins page with the "Integrate" button highlighted</Image>
 
-<img src="/img/unity/wwise/c.jpg" width="500px" />
+4. When the installation is complete, you can add Wwise to your Unity projects.
 
-When the installation is complete, you can add Wwise to your Unity projects.
-
-<img src="/img/unity/wwise/d.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/d.png")}> Wwise "Versions Installed" page with "Add Wwise to your Unity projects" button shown </Image>
 
 ## Adding Wwise to a ML2 Unity Project
+
 This document assumes you have already [set up a Unity project for Magic Leap 2](/docs/guides/unity/getting-started/create-a-project). Shown below is a test project with no Wwise integration.
 
-<img src="/img/unity/wwise/e.jpg" width="500px" />
-
+<Image url= {require("/img/unity/wwise/e.png")}> Unity Hub projects home screen with demo project highlighted </Image>
 
 1. In the Audiokinetic Launcher, navigate to the Unity tab. The Unity project should be shown under Recent Unity Projects. Select **"Integrate Wwise into Project"**.
 
-<img src="/img/unity/wwise/f.jpg" width="500px" />
+x<Image url= {require("/img/unity/wwise/f.png")}> Unity tab of Audiokinetic launcher </Image>
 
 2. Be sure to select Android under Deployment Platforms and select **Integrate** and wait while it applies the changes to your Unity project.
 
 You may get a message that not all selected deployment platforms are installed. If this happens, the "Integrate" button will not be enabled. Select the option to modify the Wwise installation to include any required components.
 
-<img src="/img/unity/wwise/g.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/g.png")}> Wwise Unity integration window showing options to add Wwise into your Unity project </Image>
 
 ## Building Wwise Plugin for Android x86_64
 
@@ -105,11 +105,11 @@ The final files can be found in the **Wwise/AkSoundEngine/Android/out** director
 The output paths for each are:
 
 - Debug:
-    - Wwise/AkSoundEngine/Android/out/Debug/local/x86_64/libAkSoundEngine.so
+  - Wwise/AkSoundEngine/Android/out/Debug/local/x86_64/libAkSoundEngine.so
 - Profile:
-    - Wwise/AkSoundEngine/Android/out/Profile/local/x86_64/libAkSoundEngine.so
+  - Wwise/AkSoundEngine/Android/out/Profile/local/x86_64/libAkSoundEngine.so
 - Release:
-    - Wwise/AkSoundEngine/Android/out/Release/local/x86_64/libAkSoundEngine.so
+  - Wwise/AkSoundEngine/Android/out/Release/local/x86_64/libAkSoundEngine.so
 
 ## Copy x86_64 Wwise Unity Integration Into the Unity Project
 
@@ -120,17 +120,17 @@ All that's left to do is copy the compiled plugins into the expected locations i
     - Name the directory **x86_64**
     - You should also see directories for **arm64-v8a, armeabi-v7a, and x86**
 
-<img src="/img/unity/wwise/h.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/h.png")}> File browser showing new directory named "x86_64" under the path "Assets/Wwise/API/Runtime/Plugins/Android/" </Image>
 
 Inside of this x86_64 directory, create three new directories titled **Debug**, **Profile**, and **Release**
 
-<img src="/img/unity/wwise/i.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/i.png")}> File browser showing new folders named Debug, Profile and Release inside the "x86_64" directory </Image>
 
 3. Copy the **libAkSoundEngine.so** versions that were built in the previous step into these respective directories, being sure to match each to their corresponding directory location.
 
 4. Open your Unity project. Unity will detect these directories and plugins, import them, and generate the .meta files and verify that the folder structure looks as it does below.
 
-<img src="/img/unity/wwise/j.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/j.png")}> Unity asset browser showing the libAkSoundEngine.so file inside folders named Debug, Profile and Release </Image>
 
 ## Copy x86_64 Wwise DSP Plugins Into the Unity Project
 
@@ -147,11 +147,11 @@ The above steps only build and integrate the Wwise AkSoundEngine plugin but not 
 Not all plugins found in the Wwise SDK for Android_x86_64 have been fully tested on Magic Leap 2.
 :::
 
-<img src="/img/unity/wwise/k.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/k.png")}> File browser showing plugin files in the "[SDK PATH]/Android_x86_64/Profile/bin/" directory </Image>
 
 Unity should import the new plugins and they should be found in the Assets folder as shown below:
 
-<img src="/img/unity/wwise/l.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/l.png")}> Unity asset browser showing plugin files inside the project's "x86_64/DSP" directory </Image>
 
 ## Testing the Integration
 
@@ -161,73 +161,72 @@ The following steps outline creating a simple looping Play event in Wwise from a
 
 1. Open the Wwise project (found inside your root Unity project folder) and ensure that Android is available as a Platform under the Platform Manager window.
 
-<img src="/img/unity/wwise/m.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/m.png")}> Wwise project's Platform Manager window </Image>
 
 2. Create at least one SoundBank to load with your test scene.
 
-<img src="/img/unity/wwise/n.jpg" width="500px" />
-
+<Image url= {require("/img/unity/wwise/n.png")}> Wwise project's Project Explorer window </Image>
 
 3. Import a test sound.
 
-<img src="/img/unity/wwise/o.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/o.png")}> Wwise project's Audio Importer window </Image>
 
 4. Set the sound to Loop so it's easy to test when launching the scene on Magic Leap 2.
 
-<img src="/img/unity/wwise/p.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/p.png")}> Wwise project's Project Explorer with the imported audio file selected </Image>
 
-5. Create a basic Play event from the Sound SFX
+5. Create a basic Play event from the Sound SFX.
 
-<img src="/img/unity/wwise/q.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/q.png")}> Wwise project's Project Explorer window with the "New Event > Play" menu open</Image>
 
 6. Using the Transport Control, test the event by pressing Play, you should hear the sound looping.
 
-<img src="/img/unity/wwise/r.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/r.png")}> Wwise project's Transport Control window for the selected audio file </Image>
 
 7. Ensure that the SoundBank is selected to be generated, and select Generate All to generate SoundBanks.
 
-<img src="/img/unity/wwise/s.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/s.png")}> Wwise project's Soundbank Manager window with the "Generate All" button highlighted </Image>
 
 8. If there are no errors, you should see that the soundbanks have been created for all Platforms.
 
-<img src="/img/unity/wwise/t.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/t.png")}> Soundbanks window showing soundbanks have been created for all platform </Image>
 
 ### Unity Project Configuration
 
 Add an AkBank object to WwiseGlobal and select the bank created earlier to load on Start.
 
-<img src="/img/unity/wwise/u.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/u.png")}> Unity window showing the WwiseGlobal gameobject's AkBank in the Inspector </Image>
 
 In the Wwise Picker window, simply drag the Play event onto an object (in this example, an empty object that is the child of a Cube primitive). The necessary components will be added automatically, and the event will already be listed in the Name field.
 
-<img src="/img/unity/wwise/v.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/v.png")}> Unity Wwise Picker window </Image>
 
 Press Play in Unity and you should hear the sound.
 
 ### Building for Magic Leap 2
 
 At this point, you can build normally. You can validate that everything has been packaged properly by looking at the apk and looking for two things:
+
 - libAkSoundEngine.so is included in the lib directory
-    - If this is not found, Wwise will not be able to load at runtime.
+  - If this is not found, Wwise will not be able to load at runtime.
 - The Android SoundBanks are located in the assets\Audio\GeneratedSoundBanks directory.
-    - If this is not found, banks will not be able to load at runtime.
+  - If this is not found, banks will not be able to load at runtime.
 
-<img src="/img/unity/wwise/w.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/w.png")}> File browser hgihlighting the "libAkSoundEngine.so" file  </Image>
 
-
-<img src="/img/unity/wwise/x.jpg" width="500px" />
+<Image url= {require("/img/unity/wwise/x.png")}> File browser hgihlighting the "Android" folder  </Image>
 
 Install and launch the apk. You should now hear the looping sound playing. You have successfully verified that Wwise works in your project when deployed to Magic Leap 2!
 
 ## Common issues
 
 - **libAkSoundEngine.so** is not included in the build.
-    - Make sure the generated plugins are copied into the expected path in Assets:
-        - Assets/Wwise/API/Runtime/Plugins/Android/x86_64/[Variant]/libAkSoundEngine.so
-    - In Unity, activate the plugin version you want to deploy under **Assets > Wwise > Activate Plugins > [Variant]**
-    - Check the plugin settings
+  - Make sure the generated plugins are copied into the expected path in Assets:
+    - Assets/Wwise/API/Runtime/Plugins/Android/x86_64/[Variant]/libAkSoundEngine.so
+  - In Unity, activate the plugin version you want to deploy under **Assets > Wwise > Activate Plugins > [Variant]**
+  - Check the plugin settings
 - **Android SoundBanks** are not included in the build.
-    - It's possible that during the build process, when Wwise/Unity attempts to copy the Android SoundBanks folder for packaging, there may already exist a read-only Android folder in the Unity project. This can be avoided by either setting the Android folder to writable, or simply deleting it before building.
+  - It's possible that during the build process, when Wwise/Unity attempts to copy the Android SoundBanks folder for packaging, there may already exist a read-only Android folder in the Unity project. This can be avoided by either setting the Android folder to writable, or simply deleting it before building.
 - SoundBanks for all platforms are included in the build.
-    - You may have copied all platform SoundBanks into the Unity Streaming Assets folder. Depending on your configuration, Unity may attempt to package everything, creating multiple copies of all of your audio assets, potentially greatly increasing your build size.
+  - You may have copied all platform SoundBanks into the Unity Streaming Assets folder. Depending on your configuration, Unity may attempt to package everything, creating multiple copies of all of your audio assets, potentially greatly increasing your build size.
 - Any additional issues you may encounter regarding Wwise Integration or Unity troubleshooting are beyond the scope of this document.
