@@ -1,4 +1,4 @@
-Once the ARCloud deployment completes, the deployment script will print out a cluster information similar to:
+Once the AR Cloud deployment completes, the deployment script will print out the cluster information similar to:
 
 ```shell showLineNumbers
 ------------------------------
@@ -45,8 +45,8 @@ NAMESPACE      NAME                   TYPE           CLUSTER-IP        EXTERNAL-
 istio-system   istio-ingressgateway   LoadBalancer   <IPv4>   <IPv4>   80:31456/TCP,443:32737/TCP,15021:31254/TCP,1883:30231/TCP,8883:32740/TCP    1d
 ```
 
-## Log in to the Enterprise Console Web View
+## Log in to the Enterprise Console
 
-1. Open the **Enterprise Web** url (`http://<DOMAIN>/`) in a browser
-2. Enter the provided credentials for **Enterprise Web**
-3. Verify the successful login
+1. Open the **Enterprise Console** URL (`http://<DOMAIN>/`) in a browser
+1. Enter the credentials for **Enterprise Web** provided by the deployment script
+1. Verify the successful login
