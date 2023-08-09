@@ -8,16 +8,31 @@ keywords: [Unity,Samples, MRTK3, UI]
 
 # Magic Leap MRTK 3 Settings
 
-The Magic Leap MRTK 3 package adds additional, Magic Leap specific, options to MRTK's Settings. These options control the Runtime Configuration, allowing you to enable or disable specific features based on your preferences. This package offers an optional way to configure the MRTK XR Rig to be compatible with Magic Leap 2's input, eliminating the need to manually modify the MRTK XR Rig. Note that this option will only take effect in the editor if the Magic Leap App Simulator is active in the XR Plug-in Management. Follow these steps to modify the settings:
+The Magic Leap MRTK 3 package adds additional, Magic Leap specific, options to MRTK's Settings allowing you to enable or disable specific features based on their preferences.
+
+## Open Magic Leap Settings
+
+This sections includes instructions on how to open the MRTK Magic Leap Settings window.
 
  1. Open the Project Settings window by navigating to **Edit > Project Settings**. Then, from the sidebar, select **MRTK3 > Magic Leap Settings**.
  2. Here you can modify which prefabs are created at runtime to visualize the Magic Leap 2 controller and hands. Additionally, you can change the input action bindings if needed.
 
 <Image url= {require("/img/third-party/mrtk3/MagicLeapSettings_1.0.0-pre2.jpg")} >Magic Leap Settings Window v1.0.0-pre.2</Image>
 
-## Manually Updating the MRTK XR Rig
 
-If you choose not to use the [Runtime Configuration](#magic-leap-mrtk-3-settings), you will have to modify the existing MRTK XR rig by either replacing it or altering its input actions.
+## MRTK XR Rig Runtime Configuration
+
+The Magic Leap MRTK 3 settings allow developers to enable Runtime Configuration of the MRTK XR Rig. This package is an optional way to configure the MRTK XR Rig to be compatible with Magic Leap 2's input, eliminating the need to manually modify the **MRTK XR Rig** prefab.
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-magicleap-runtime-config.jpg")} >MRTK3 Magic Leap Settings with the Runtime Config option selected</Image>
+
+:::info
+The **Runtime Config Enabled** option will only take effect in the editor if the Magic Leap App Simulator is active in the XR Plug-in Management. Follow these steps to modify the settings
+:::
+
+## Manual MRTK XR Rig Configuration
+
+If you choose not to use the [Runtime Configuration](#runtime-mrtk-xr-rig-configuration), you will have to modify the existing MRTK XR rig by either replacing it or altering its input actions.
 
 
 import Tabs from '@theme/Tabs';
@@ -28,9 +43,8 @@ import TabItem from '@theme/TabItem';
 When creating or modifying a scene, perform the following steps:
 
 1. Delete the existing MRTK XR Rig if one exists.
-2. Navigate to the `/MagicLeap/Prefabs/MRTK_Variants/` directory inside your `/Assets/` folder
+2. Navigate to the `Packages/Magic Leap MRTK3/Runtime/MagicLeap/Prefabs/MRTK_Variants/` directory
 3. Add the `MRTK XR Rig - MagicLeap` prefab to your scene.  
-
 
 
   </TabItem>

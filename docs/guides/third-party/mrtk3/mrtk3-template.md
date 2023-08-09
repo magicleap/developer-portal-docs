@@ -22,12 +22,19 @@ Before starting, download and install the following packages from the Magic Leap
 
 You can download the `mrtk3_MagicLeap2` branch from [Magic Leap's forked MRTK3 repository](https://github.com/magicleap/MixedRealityToolkit-Unity/tree/mrtk3_MagicLeap2).
 
-1. If you are familiar with Git and are using the command line, you can clone the repo and specify the `mrtk3_MagicLeap2`  branch with the following command: `git clone --branch mrtk3_MagicLeap2 https://github.com/magicleap/MixedRealityToolkit-Unity.git`
+1. If you are familiar with Git and are using the command line, you can clone the repo and target the `mrtk3_MagicLeap2` branch with following command:
 
-2. Once downloaded, open the Unity Hub
-3. Open the MRTK Dev Template Project (Located inside the `MixedRealityToolkit-Unity/UnityProjects/MRTKDevTemplate` directory)
-4. Once the project is opened, make sure to change the target platform to Android inside **Build Settings**
+```shell
+git clone --branch mrtk3_MagicLeap2 https://github.com/magicleap/MixedRealityToolkit-Unity.git
+```
+
+2. Once downloaded, open the **Unity Hub**
+3. Open the **MRTK Dev Template Project** (Located inside the `MixedRealityToolkit-Unity/UnityProjects/MRTKDevTemplate` directory)
+4. Once the project is opened, make sure to change the target platform to **Android** inside **Build Settings**
 5. Once complete, you can start developing Magic Leap 2 applications using MRTK3
+
+
+<Image url= {require("/img/third-party/mrtk3/template-scene.jpg")} >The Hand Interactions Examples scene inside the Unity Dev Template Project</Image>
 
 <details>
   <summary>Windows Only: <code> Failed to load ... one or more of its dependencies could not be loaded.</code></summary>

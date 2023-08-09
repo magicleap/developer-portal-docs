@@ -34,19 +34,31 @@ import TabItem from '@theme/TabItem';
 
 Use these instructions to install MRTK3 dependencies into your existing Magic Leap 2 project using the [Mixed Reality Feature tool](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Note that the Mixed Reality Feature Tool is only available for Windows.
 
-1. Open the Mixed Reality Feature tool.
-2. Target your Unity project.
+<Image url= {require("/img/third-party/mrtk3/mrtk3-feature-tool.jpg")} >Mixed Reality Feature Tool Welcome Screen</Image>
+
+
+:::caution
+Close the Unity project before using the Mixed Reality Feature tool.
+:::
+
+1. Open the **Mixed Reality Feature Tool**.
+2. Target your Unity project and select **Discover Features**
 3. At a minimum, install the following required packages:
     - MRTK3 / MRTK Input
     - MRTK3 / MRTK UX Components
 ​
 *Note: If you do not see MRTK3, you may need to select the **Show preview releases** option located at the bottom of the window.*
 ​
-1. After choosing the packages to install, click **Get Features**. This will display the package dependencies.
-2. Finally, click **Import** then **Approve**.
-3. Clear any errors that appear due to missing dependencies from a prefab or XR provider.
+4. After choosing the packages to install, click **Get Features**. This will display the package dependencies.
+5. Add the packages to your project by pressing **Import** then **Approve**.
+6. Finally, select **Exit** to close the **Mixed Reality Feature Tool**.
 ​
 For more information, see Microsoft's [Starting from a new project](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-overview/getting-started/setting-up/setup-new-project) guide.
+
+## Open the Unity project
+
+1. Open the Unity project and wait for Unity to finish importing newly added packages.
+2. Clear any errors that appear due to missing dependencies from a prefab or XR provider.
 
 
   </TabItem>
@@ -54,21 +66,26 @@ For more information, see Microsoft's [Starting from a new project](https://lear
 
 If your development environment does not support the Mixed Reality Feature Tool, you can download the required packages via [Microsoft's NPM Web Portal](https://dev.azure.com/aipmr/MixedReality-Unity-Packages/_artifacts/feed/Unity-packages).
 
+
 :::caution
-Microsoft's NPM does not support the Unity Package Manager and requires you to download the packages manually.
+Microsoft's NPM does not support being added to the Unity Package Manager as a registry and requires you to download the packages online manually.
 :::
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-npm-portal.jpg")} >Microsoft's NPM Website</Image>
+
+
 
 #### Downloading the Packages
 
 This section provides instructions on how to download and import the MRTK 3 packages without the Mixed Reality Feature Tool.
 
-1. At a minimum download the required MRTK Packages.
+1. At a minimum download the required MRTK3 Packages. (**Required packages are listed in bold.**)
 
 :::tip
 We recommend placing the packages in your projects root directory to more easily track your project's dependencies and to make your project more compatible with version control systems.
 :::
 
-**Required packages are listed in bold.**
+
 
 |Name           |Download Link                       |
 |---------------|------------------------------------|
@@ -108,28 +125,36 @@ com.microsoft.mrtk.standardassets-VERSION.tgz`
 com.microsoft.mrtk.uxcomponents-VERSION.tgz`
 
 
+:::note
+For more information on MRTK 3 packages and their dependencies, see Microsoft's [package overview page](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk3-overview/packages/packages-overview).
+:::
 
   </TabItem>
 </Tabs>
 
 
-## Configure Project Settings
-
-Validate your project's settings to ensure Magic Leap 2 compatibility using the Magic Leap Setup Tool.
-
-1. Download and install the [Magic Leap Setup Tool](https://assetstore.unity.com/packages/tools/integration/magic-leap-setup-tool-194780) from the Unity Asset store.
-2. Open the Project Setup window (**Window > Magic Leap > Project Setup**).
-3. Complete all of the setup steps in the Project Setup Window.
-
 ## Import MRTK3 Magic Leap
 
-Once the project is configured for ML2 and has the required MRTK3 packages, import the MRTK3 Magic Leap package into the project.
+After importing the MRTK3 packages, import the MRTK3 Magic Leap package into the project.
 
 1. Download the MRTK3 Magic Leap package using the Magic Leap Hub's Package Manager.
 2. Open the Package Manager (**Window** > **Package Manager**), select the **＋** icon, then select **Add package from tarball...**.
 3. Import the `com.magicleap.mrtk3-[VERSION].tgz` package from `MagicLeap/tools/unity/mrtk3/`.
-4. In MRTK3's Project settings (**Edit** > **Project Settings** > **MRTK3**), set the **Profile** to **MRTKProfile - MagicLeap**.
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-import-tarball.jpg")} >Unity Package Manager with the "Add package from tarball..." option selected</Image>
+
+
+## Configure MRTK profile
+
+To support Magic Leap 2 input set the MRTK3 profile to **MRTKProfile - MagicLeap**. This profile adds Magic Leap 2 support to the MRTK XR Subsystems.
+
+1. Navigate to **Edit > Project Settings**.
+2. Select **MRTK3** then select the Android tab.
+3. set the **Profile** to **MRTKProfile - MagicLeap**.
    1. If the profile does not appear in the asset window, click the small "eye" icon located at the top-right corner of the menu to reveal hidden items in the list of assets.
+   2. You can find the profile under `Packages/com.magicleap.mrtk3/Configuration/Default Profiles/MRTKProfile-MagicLeap.asset`.
+
+<Image url= {require("/img/third-party/mrtk3/mrtk-magicleap-profile.jpg")} >MRTK3 Settings with Profile option selected</Image>
 
 ## Permissions
 
@@ -140,3 +165,60 @@ Hand Tracking and Eye Tracking requires developers to add additional permissions
 3. Enable **com.magicleap.permissions.EYE_TRACKING**
 
 For more information, refer to the Magic Leap 2 [permissions guide](https://developer-docs.magicleap.cloud/docs/guides/unity/permissions/declaring-permissions).
+
+## Creating a new scene with MRTK3
+
+The following section includes information about creating a Magic Leap ready scene using MRTK3.
+
+
+<Tabs queryString="xr-rig">
+  <TabItem value="run-time-configuration" label="Runtime Configuration" default>
+
+#### Enable Runtime Configuration
+
+To support the standard rig, the MRTK Magic Leap package includes a feature that automatically configures the **MRTK XR Rig** prefab. This section includes information on how to enable the Runtime configuration feature. To learn more about the Magic Leap specific settings, visit the [MRTK 3 Magic Leap Settings](./mrtk3-magic-leap-settings.md) guide.
+
+1. Navigate to the Magic Leap Settings Window by going to **Edit > Project Settings** then **MRTK3 > Magic Leap Settings**.
+2. Enable the **Runtime Config Enabled** setting.
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-magicleap-runtime-config.jpg")} >MRTK3 Magic Leap Settings with the Runtime Config option selected</Image>
+
+
+
+#### Using the MRTK XR Rig in a New Scene
+
+This section includes instructions on how to create a new scene using the standard **MRTK XR Rig**. This rig will be configured to support Magic Leap input when deployed to the device.
+
+1. Create a new Unity scene.
+2. Remove the **Main Camera** Game Object as it will be replaced with the one supported by MRTK3,
+3. Add the **MRTK XR Rig** prefab.
+   1. The prefab can be found in your Project folder in the `Packages/com.microsoft.mrtk.input/Assets/Prefabs/` directory.
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-standard-rig.jpg")} >The MRTK XR Rig added to the Scene Hierarchy</Image>
+
+4. (Optionally) Add the MRTK Input Simulator prefab to your scene for in-editor input simulation.
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-standard-simulator.jpg")} >The MRTKInputSimulator added to the Scene Hierarchy</Image>
+
+
+  </TabItem>
+  <TabItem value="mrtk-xr-rig-prefab" label="MRTK XR Rig Prefab">
+
+#### Using the MRTK XR Rig - MagicLeap prefab
+
+This section includes instructions on creating a new scene using the **MRTK XR Rig - MagicLeap** prefab. This prefab is pre-configured required to support Magic Leap Input such as hands, controller and gaze. Alternatively, you can use the [runtime configuration feature](?xr-rig=run-time-configuration#creating-a-new-scene-with-mrtk3) which will allow you to use the standard MRTK3 rig.
+
+1. Create a new Unity scene.
+2. Remove the **Main Camera** Game Object as it will be replaced with the one supported by MRTK3,
+3. Add the **MRTK XR Rig - MagicLeap** prefab.
+   1. The prefab can be found in your Project folder in the `Packages/com.magicleap.mrtk3/Runtime/MagicLeap/Prefabs/MRTK_Variants/` directory.
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-magicleap-rig.jpg")} >The MRTK XR Rig - MagicLeap added to the Scene Hierarchy</Image>
+
+4. (Optionally) Add the MRTK Input Simulator prefab to your scene for in-editor input simulation outside of the Magic Leap [Application Simulator](../../unity/app-simulator/unity-app-simulator.md).
+
+<Image url= {require("/img/third-party/mrtk3/mrtk3-magicleap-rig-simulator.jpg")} >The MRTKInputSimulator added to the Scene Hierarchy</Image>
+
+
+  </TabItem>
+</Tabs>
