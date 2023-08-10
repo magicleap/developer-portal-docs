@@ -16,6 +16,7 @@ import VirtualBoxImport from './_virtual_box_import.md';
 import VirtualBoxLimitations from './_virtual_box_limitations.md';
 import FindIPAddress from './_find_ip.md';
 import DeploymentVerification from './_deployment_verification.md';
+import RegisterDevice from './_register_device.md';
 
 The provided image contains all the necessary infrastructure and services pre-configured to be able to manage and work
 with the Magic Leap devices. This allows to set up a Virtual Machine (VM) quickly and access the services without a
@@ -723,6 +724,7 @@ This is the recommended approach for all publicly accessible deployments (e.g. o
 
 <DeploymentVerification />
 
+<RegisterDevice />
 
 ## Display Cluster Information
 
