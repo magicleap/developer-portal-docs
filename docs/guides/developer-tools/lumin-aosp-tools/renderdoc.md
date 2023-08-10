@@ -76,7 +76,7 @@ You can save by right clicking on the capture.
 
 7. If you close the application inside the MagicLeap 2, the capture opens automatically, like so:
 <Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc_open_capture.png")} >RenderDoc Open Capture</Image>
-You can also doubleclick on a capture to open it.
+You can also double click on a capture to open it.
 
 You now know how to create and view a capture with RenderDoc. 
 
