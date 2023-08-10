@@ -289,7 +289,7 @@ table.doxtable {
   box-shadow: rgba(0,0,0,0.06) 0px 2px 4px 2px inset;
 } */
 
-.tabItem_node_modules-\@docusaurus-theme-classic-lib-theme-TabItem-styles-module {
+div[role="tabpanel"] {
   border: 1px solid var(--ml-color-meteorite-20);
   border-top: none;
   padding: 15px;
@@ -298,6 +298,16 @@ table.doxtable {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+/* .tabItem_node_modules-\@docusaurus-theme-classic-lib-theme-TabItem-styles-module {
+  border: 1px solid var(--ml-color-meteorite-20);
+  border-top: none;
+  padding: 15px;
+  margin-top: -1rem !important;
+  border-radius: var(--ifm-global-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+} */
 
 .tabs {
   /* color: var(--ifm-tabs-color);
