@@ -72,9 +72,11 @@ If you wish to check the device is being detected, you can navigate to **File > 
 5. You should see the capture progress bar appear, like so: <Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc_capture_progressbar.png")} >RenderDoc Capture Progress Bar</Image>
 
 6. At the end, a RenderDoc capture file will be created and shown in the Captures collected section. <Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc_captures_collected.png")} >RenderDoc Capture Collected</Image>
+You can save by right clicking on the capture.
 
-7. If you close the application inside the Magic leap 2, the capture opens automatically, like so:
+7. If you close the application inside the MagicLeap 2, the capture opens automatically, like so:
 <Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/renderdoc_open_capture.png")} >RenderDoc Open Capture</Image>
+You can also doubleclick on a capture to open it.
 
 You now know how to create and view a capture with RenderDoc. 
 
@@ -137,7 +139,7 @@ Viewing pixel history is useful when you are debugging a specific part of the fr
 You're able to use this guide to take a look at pixels in any captures you like.
 
 # View a Specific Texture 
-Viewing a specific pixel tecture can help you determine why certain colors show up onscreen. 
+Viewing a specific pixel texture can help you ensure the texture states (onscreen and offscreen) at that point in the frame are correct. You can verify texture format, size and contents this way.
 
 1. Make sure RenderDoc is open and connected to MagicLeap 2. <Image url= {require("/img/developer-tools/lumin-aosp-tools/renderdoc/rd_replay_context.png")} >RenderDoc Open and Connected to MagicLeap 2</Image>
 
