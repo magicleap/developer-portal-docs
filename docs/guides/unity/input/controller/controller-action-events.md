@@ -3,11 +3,11 @@ id: controller-input-events
 title: Controller Input Events
 sidebar_position: 0.5
 date: 1/28/2022
-tags: [UnityController, Input]
-keywords: [UnityController, Input]
+tags: [Unity,Controller,Example, Input]
+keywords: [Unity,Controller,Example, Input]
 ---
 
-This section demonstrates how to use Unity's Input System to access and receive the input events that are triggered whenever an action is performed on the Magic Leap 2's controller.
+This section demonstrates how to use Unity's Input System to access input events from the Magic Leap 2 controller.
 
 Input actions contain using 3 callbacks, **started**, **performed**, and **canceled**. While the order and how the events are triggered depend on the type of the action, the table below shows the default behavior.
 
@@ -17,7 +17,7 @@ Input actions contain using 3 callbacks, **started**, **performed**, and **cance
 |InputAction.performed | Called right after started, and continues to be called while the action is being performed.|
 | InputAction.canceled | When the control moves back to its default value (i.e. resting position)|
 
-## Example
+## Controller Example - Input Action Events
 
 The example script below subscribes to the Magic Leap controller's input events, and debugs the input values to the Debug Log.
 
