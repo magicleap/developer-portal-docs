@@ -129,7 +129,7 @@ The `MLSpace.ExportSpace(...)` function exports a MLSpace into a binary data for
 
 ### Permissions
 
-Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission must be requested at runtime. Without this permission, the function call will fail.
+Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE_IMPORT_EXPORT` permission must be **[requested at runtime](/docs/guides/unity/permissions/requesting-permissions.md#requesting-normal-install-time-permissions)**. Without this permission, the function call will fail.
 
 ### Export Space Example
 
