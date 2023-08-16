@@ -1,7 +1,7 @@
 {
   "label": "Perception",
   "position": 1,
-  "collapsed": true,
+  "collapsed": false,
    "link": {
     "type": "generated-index",
     "title": "Perception",
