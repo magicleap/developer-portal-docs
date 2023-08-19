@@ -33,7 +33,7 @@ Before starting, download and install the following packages from the Magic Leap
 
 ## Quick Start Template Project
 
-The fastest way to get started with MRTK3 on Magic Leap 2 is to use the Magic Leap MRTK3 Template Project. This Unity project is pre-configured for Unity and contains contains the MRTK3 and Magic Leap packages in addition to some sample scenes. You can download the `mrtk3_MagicLeap2` branch from [Magic Leap's forked MRTK3 repository](https://github.com/magicleap/MixedRealityToolkit-Unity/tree/mrtk3_MagicLeap2).
+The fastest way to get started with MRTK3 on Magic Leap 2 is to use the Magic Leap MRTK3 Template Project. This Unity project is pre-configured for Unity and contains the MRTK3 and Magic Leap packages in addition to some sample scenes. You can download the `mrtk3_MagicLeap2` branch from [Magic Leap's forked MRTK3 repository](https://github.com/magicleap/MixedRealityToolkit-Unity/tree/mrtk3_MagicLeap2).
 
 1. If you are familiar with Git and are using the command line, you can clone the repo and specify the `mrtk3_MagicLeap2`  branch with the following command: `git clone --branch mrtk3_MagicLeap2 https://github.com/magicleap/MixedRealityToolkit-Unity.git`
 
