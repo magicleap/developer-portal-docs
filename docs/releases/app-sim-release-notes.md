@@ -18,6 +18,7 @@ date: 06/13/2023
 ## Known Issues
   * Any shipped applications built with MLSDK v1.0.0 will require a rebuild with the latest MLSDK to work with the latest App Sim, even if there are no code changes. This is due to a deprecation of `native_app_glue`. The log message "W [Run] Note: deprecated native_app_glue detected; please rebuild your app" will appear if the application is affected by this.
   * [Unity AppSim] The Unity Editor may become unstable or crash if the headpose is moved while the application is paused.
+  * [Unity AppSim] On MacOS, Unity Editor cannot be exited (by closing the window or selecting menu `Unity->Quit`) when App Sim is running. Workaround is to stop App Sim first.
 
 # Version 3.6.0
 (2023.08.02)
