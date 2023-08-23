@@ -10,15 +10,15 @@ date: 06/13/2023
 (2023.08.28)
 
 ## What's New
-  * Hybrid mode has been removed as it does not provide much value to users.
-  * Auxiliary Device list has been removed from the App Sim in ML Hub as it offers little value to users.
+  * Hybrid mode has been removed as it is underutilized.
+  * Auxiliary Device list has been removed from the App Sim in ML Hub as it is underutilized.
 
 ## Bug Fixes
   * FEEDBACK-463: Device View is sometimes blank after starting App Sim Simulator in Unity.
 
 ## Known Issues
   * Any shipped applications built with MLSDK v1.0.0 will require a rebuild with the latest MLSDK to work with the latest App Sim, even if there are no code changes. This is due to a deprecation of `native_app_glue`. The log message "W [Run] Note: deprecated native_app_glue detected; please rebuild your app" will appear if the application is affected by this.
-  * If Device View and Scene View are both blank after starting App Sim Simulator, that usually indicates the GPU of the machine does not have required Graphics support. One possible workaround is to set the environment variable `ML_ZI_DISABLE_GPU_SHARING` to `1` then restart ML Hub or Unity Editor. Note the workaround does not work for all failing GPUs.
+  * If Device View and Scene View are both blank after starting App Sim Simulator, that usually indicates the GPU of the machine does not have required Graphics support. One possible workaround is to set the environment variable `ML_ZI_DISABLE_GPU_SHARING` to `1` then restart ML Hub or Unity Editor.
   * [Unity AppSim] The Unity Editor may become unstable or crash if the headpose is moved while the application is paused (REM-5950).
   * [Unity AppSim] Unity Editor cannot be exited (by closing the window or selecting menu `Unity->Quit`) when App Sim is running. Workaround is to stop App Sim first (REM-6175).
 
