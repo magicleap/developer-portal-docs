@@ -1,13 +1,11 @@
 ---
 id: unreal-getting-started
-title: Getting Started
+title: Getting started with Unreal Engine 5
 sidebar_position: 1
 date: 08/30/2023
 tags: [Android,Unreal Engine,Getting Started]
 keywords: [Android,Unreal Engine,Getting Started]
 
-import DocCardList from '@theme/DocCardList';
-import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 ---
 
 
@@ -22,11 +20,12 @@ Vulkan is the only graphics pipeline supported with the ML2 Unreal SDK. Unreal E
 - This preview release is supported only on Windows. For information on system requirements running Unreal Engine 5 on Windows, see [Hardware and Software Requirements](https://docs.unrealengine.com/5.1/en-US/onboarding-guide-for-unreal-engine-games-licensees/) in the Unreal Engine 5 documentation site.
 - To download and use the version of Unreal Engine for this preview, you need a public GitHub account and an Epic Games account.
 - Visual Studio 2022 is recommended. If you want to use a different version of Visual Studio, you can customize your Unreal Engine GenerateProjectFiles.bat file for that version. If you haven’t installed Visual Studio for use with Unreal Engine before, see  [Setting Up Visual Studio](https://docs.unrealengine.com/5.1/en-US/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine/) in the Unreal Engine 5 documentation site.
-- Android dependencies. Setting up Android for this preview release is a little different than what’s described in [How to Set Up Android SDK and NDK For Your Unreal Engine Development Environment](https://docs.unrealengine.com/5.1/en-US/how-to-set-up-android-sdk-and-ndk-for-your-unreal-engine-development-environment/) in the Unreal Engine 5 documentation site. See [Install Android dependencies](install-android-dependencies) in this guide for instructions.
+- Android dependencies. Setting up Android for this preview release is a little different than what’s described in [How to Set Up Android SDK and NDK For Your Unreal Engine Development Environment](https://docs.unrealengine.com/5.1/en-US/how-to-set-up-android-sdk-and-ndk-for-your-unreal-engine-development-environment/) in the Unreal Engine 5 documentation site. See [Install Android dependencies](#install-android-dependencies) in this guide for instructions.
 
 :::tip
 
 You’ll be building the Unreal Engine from source code, which can take several hours or more. So plan ahead.
+:::
 
 ## Setup Unreal Engine and the ML2 Unreal SDK
 
@@ -73,6 +72,7 @@ If you don’t already have OpenJDK-17 installed:
 :::tip
 
 If Unity Editor is already installed on the machine that you are installing the Unreal Engine on, rename the folder where Android Studio is already installed to so that the version you install for Unreal Engine can be saved to the default location.
+:::
 
 To set up the versions of the Android SDK and Android NDK required for this preview release, you’ll need to install Android Studio Electric Eel, 2022.1.1 Patch 2. This isn’t the latest version or the version recommended in the Unreal Engine 5 documentation.
 
@@ -99,7 +99,7 @@ To download the version of Unreal Engine for this preview, clone it from the Mag
 git clone --single-branch -b 5.1.1-release-ml2 https://github.com/MagicLeapUnreal/UnrealEngine.git
 ```
   
-   The `--single-branch `argument is optional. It reduces the size of the download.
+   The `--single-branch ` argument is optional. It reduces the size of the download.
 
 ### Download the ML2 Unreal SDK
 
@@ -116,6 +116,7 @@ You can use the plugins in the ML Unreal SDK as Project plugins or Engine plugin
 :::tip
 
 You might need elevated privileges to create a symbolic link. Make sure you run the Windows Command prompt from an account that has administrator privileges. If you still get a message saying you don’t have sufficient privileges to run the `mklink` command, make sure your Windows computer has the Developer Mode setting enabled.
+:::
 
 To link ML Unreal SDK plugins as project plugins:
 
@@ -127,7 +128,7 @@ To link ML Unreal SDK plugins as project plugins:
 mklink /d Plugins $UNREAL-SDK\Plugins
 ```
 
- 4. If you already have a `Plugins` folder in your project you can create the link as `Plugins\MagicLeap`.
+4. If you already have a `Plugins` folder in your project you can create the link as `Plugins\MagicLeap`.
 
 To link ML Unreal SDK plugins as engine plugins:
 
@@ -169,7 +170,7 @@ Engine\Build\BatchFiles\Build.bat ShaderCompileWorker Win64 Development
 
 The Magic Leap Application Simulator is not supported for this preview.  You can use Magic Leap Remote Rendering to run the apps you create on a desktop computer and stream it to the Magic Leap 2 device.
 
-You can find instructions for setting up Magic Leap Remote Rendering and using it with Unreal Engine 5 on the Magic Leap 2 developer portal. See [Remote Rendering service](/docs/guides/remote-rendering/remote-rendering) and [Remote Rendering with Unreal Engine 5](/docs/guides/remote-rendering/remote-render-unreal-engine-5). 
+You can find instructions for setting up Magic Leap Remote Rendering and using it with Unreal Engine 5 on the Magic Leap 2 developer portal. See [Remote Rendering service](/docs/guides/remote-rendering/remote-rendering) and [Remote Rendering with Unreal Engine 5](/docs/guides/remote-rendering/remote-render-unreal-engine-5).
 
 ## Integration testing
 
@@ -177,7 +178,7 @@ Find the integration test in the UnrealSDK project under `Projects/IntegrationTe
 
 ## View logcat
 
-To view logcat for Unreal Engine logs, run this command: 
+To view logcat for Unreal Engine logs, run this command:
 
 ```bash
 adb logcat -s UE:*
@@ -200,4 +201,4 @@ To turn off the Mobile HDR setting when you package your app:
 
 ## Next steps
 
-For step-by-step instructions on creating a simple app with the version of Unreal Engine you just built, see [Create an app using Unreal Engine (preview)].
+For step-by-step instructions on creating a simple app with the version of Unreal Engine you just built, see [Create an app using Unreal Engine](/docs/guides/unreal/unreal-create-app).
