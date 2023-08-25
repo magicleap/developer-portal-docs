@@ -49,7 +49,7 @@ public IEnumerator MLCamera_ConnectCamera(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLCameraBase.ConnectFlag](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) |connectFlag|Flags to describe various modules in camera pipeline. |
-| [MLCameraBase.MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) |mrQuality|MR Video Quality enumeration. |
+| [MLCameraBase.MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) |mrQuality|MR Video Quality enumeration |
 | [MLCameraBase.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) |frameRate|Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P. |
 | VideoStabilization |stabilization||
 
@@ -88,9 +88,9 @@ public IEnumerator MLCamera_PrepareCaptureForCaptureImage(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLCameraBase.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type. |
+| [MLCameraBase.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type |
 | [MLCameraBase.ConnectFlag](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) |connectFlag|Flags to describe various modules in camera pipeline. |
-| [MLCameraBase.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format. |
+| [MLCameraBase.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format |
 
 
 
@@ -116,7 +116,7 @@ public IEnumerator MLCamera_PrepareCaptureForCapturePreview(
 |--|--|--|
 | [MLCameraBase.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) |frameRate|Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P. |
 | [MLCameraBase.ConnectFlag](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) |connectFlag|Flags to describe various modules in camera pipeline. |
-| [MLCameraBase.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format. |
+| [MLCameraBase.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format |
 
 
 
@@ -142,9 +142,9 @@ public IEnumerator MLCamera_PrepareCaptureForStartRecording(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLCameraBase.CaptureFrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-captureframerate) |frameRate|Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use FrameRate&#95;None when configuring only Image capture FrameRate&#95;60fps only supported when resolution of captures &lt;= 1080P. |
-| [MLCameraBase.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type. |
+| [MLCameraBase.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type |
 | [MLCameraBase.ConnectFlag](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) |connectFlag|Flags to describe various modules in camera pipeline. |
-| [MLCameraBase.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format. |
+| [MLCameraBase.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format |
 
 
 

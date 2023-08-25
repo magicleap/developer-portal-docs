@@ -195,6 +195,12 @@ namespace UnityEngine.XR.MagicLeap.Native
         public static extern MLResult.Code MLSnapshotGetTransform(IntPtr snap, ref MLCoordinateFrameUID id, ref MLTransform outTransform);
 
         [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
+        public static extern MLResult.Code MLSnapshotGetStaticData(ref MLSnapshotStaticData outStaticData);
+
+        [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
+        public static extern MLResult.Code MLSnapshotGetPoseInBase(IntPtr snap, ref MLCoordinateFrameUID base_id, ref MLCoordinateFrameUID id, ref MLPose outPose);
+
+        [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
         public static extern IntPtr MLSnapshotGetResultString(MLResult.Code result);
 
         [DllImport(MLInputDll, CallingConvention = CallingConvention.Cdecl)]
@@ -535,6 +541,43 @@ namespace UnityEngine.XR.MagicLeap.Native
                 }
             }
         }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct MLPose
+        {
+            public MLTransform Transform;
+
+            public bool HasDerivatives;
+
+            public MLVec3f LinearVelocity;
+
+            public MLVec3f LinearAcceleration;
+
+            public MLVec3f AngularVelocity;
+
+            public MLVec3f AngularAcceleration;
+
+            public long OriginTimeNs;
+
+            public long PredictTimeNs;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct MLSnapshotStaticData
+        {
+            UInt32 version;
+
+            MLCoordinateFrameUID CoordWorldOrigin;
+
+            public static MLSnapshotStaticData Init()
+            {
+                return new MLSnapshotStaticData()
+                {
+                    version = 1u,
+                };
+            }
+        }
+
     }
 }
 ```

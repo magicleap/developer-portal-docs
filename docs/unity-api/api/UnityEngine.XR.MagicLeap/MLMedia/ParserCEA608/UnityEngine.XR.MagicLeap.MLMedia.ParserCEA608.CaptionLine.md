@@ -20,7 +20,7 @@ title: CaptionLine
 
 ```csharp
 
-public NativeBindings.CaptionStyleColor[] midRowStyles;
+public NativeBindings.CaptionStyleColor [] midRowStyles;
 
 ```
 
@@ -35,7 +35,7 @@ public NativeBindings.CaptionStyleColor[] midRowStyles;
 
 ```csharp
 
-public NativeBindings.CaptionPAC[] pacStyles;
+public NativeBindings.CaptionPAC [] pacStyles;
 
 ```
 

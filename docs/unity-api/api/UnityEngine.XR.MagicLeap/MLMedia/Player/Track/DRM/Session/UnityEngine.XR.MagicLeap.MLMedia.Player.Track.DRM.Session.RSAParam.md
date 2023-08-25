@@ -21,7 +21,7 @@ title: RSAParam
 ```csharp
 public RSAParam(
     string algorithm,
-    byte[] wrappedRsaKey
+    byte [] wrappedRsaKey
 )
 ```
 
@@ -31,7 +31,7 @@ public RSAParam(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |algorithm||
-| byte[] |wrappedRsaKey||
+| byte [] |wrappedRsaKey||
 
 
 
@@ -61,7 +61,7 @@ public readonly string Algorithm;
 
 ```csharp
 
-public readonly byte[] WrappedRsaKey;
+public readonly byte [] WrappedRsaKey;
 
 ```
 

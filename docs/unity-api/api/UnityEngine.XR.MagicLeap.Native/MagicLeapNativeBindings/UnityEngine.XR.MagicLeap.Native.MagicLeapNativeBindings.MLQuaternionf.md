@@ -19,7 +19,7 @@ Quaternion in native format.
 
 ### [MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) Identity {#mlquaternionf-identity}
 
-Returns an initialized  MLQuaternionf  with default values. 
+Returns an initialized  [MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md)  with default values. 
 
 ```csharp
 public static MLQuaternionf Identity()
@@ -30,7 +30,7 @@ public static MLQuaternionf Identity()
 
 
 
-**Returns**: An initialized  MLQuaternionf .
+**Returns**: An initialized  [MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) .
 
 
 

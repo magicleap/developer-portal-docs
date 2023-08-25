@@ -9,7 +9,7 @@ summary: ttmldata data structure.
 
 
 
-TTMLData data structure.   
+[TTMLData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.TTMLData.md) data structure.   
 
 
 
@@ -29,7 +29,7 @@ public TTMLImage bitmap;
 
 | Type | Description  | 
 |--|--|
-| [TTMLImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.TTMLImage.md) | TTMLData data structure.  |
+| [TTMLImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.TTMLImage.md) | [TTMLData](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.TTMLData.md) data structure.  |
 
 
 
@@ -56,7 +56,7 @@ public float bitmapHeight;
 
 ### endTimeMs {#long-endtimems}
 
-Track cue end time in milliseconds. 
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue end time in milliseconds. 
 
 ```csharp
 
@@ -175,7 +175,7 @@ public float size;
 
 ### startTimeMs {#long-starttimems}
 
-Track cue start time in milliseconds. 
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue start time in milliseconds. 
 
 ```csharp
 

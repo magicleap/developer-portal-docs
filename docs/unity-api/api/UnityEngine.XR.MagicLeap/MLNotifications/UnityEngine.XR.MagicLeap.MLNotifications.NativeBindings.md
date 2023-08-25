@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSystemNotificationManagerCreate {#mlresultcode-mlsystemnotificationmanagercreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerCreate {#mlresultcode-mlsystemnotificationmanagercreate}
 
 Create System Notification manager client. 
 
@@ -43,7 +43,7 @@ public MLResult.Code MLSystemNotificationManagerCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSystemNotificationManagerDestroy {#mlresultcode-mlsystemnotificationmanagerdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerDestroy {#mlresultcode-mlsystemnotificationmanagerdestroy}
 
 Destroy System Notification manager client. 
 
@@ -67,7 +67,7 @@ public MLResult.Code MLSystemNotificationManagerDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSystemNotificationManagerSetNotifications {#mlresultcode-mlsystemnotificationmanagersetnotifications}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSystemNotificationManagerSetNotifications {#mlresultcode-mlsystemnotificationmanagersetnotifications}
 
 Suppress/Unsuppress System Notifications. 
 

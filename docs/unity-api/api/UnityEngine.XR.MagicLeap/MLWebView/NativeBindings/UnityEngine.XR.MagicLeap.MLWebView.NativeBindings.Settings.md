@@ -84,7 +84,7 @@ public EventCallbacks Callbacks;
 
 | Type | Description  | 
 |--|--|
-| [EventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/NativeBindings/UnityEngine.XR.MagicLeap.MLWebView.NativeBindings.EventCallbacks.md) | Event handler for MLWebView callbacks. This structure must be initialized by calling #MLWebViewEventCallbacksInit before use.  |
+| [EventCallbacks](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/NativeBindings/UnityEngine.XR.MagicLeap.MLWebView.NativeBindings.EventCallbacks.md) | Event handler for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) callbacks. This structure must be initialized by calling #MLWebViewEventCallbacksInit before use.  |
 
 
 

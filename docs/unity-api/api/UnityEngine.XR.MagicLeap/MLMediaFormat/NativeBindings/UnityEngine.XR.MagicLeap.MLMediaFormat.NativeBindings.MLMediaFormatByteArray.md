@@ -19,7 +19,7 @@ Data type containing byte array buffer and the size.
 
 ###  MLMediaFormatByteArray {#functions-mlmediaformatbytearray}
 
-Constructor. 
+Constructor 
 
 ```csharp
 public MLMediaFormatByteArray(

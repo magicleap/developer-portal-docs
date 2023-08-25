@@ -33,7 +33,7 @@ public static Extensions.PlanesQuery Query { get; set; }
 
 ## Public Enums
 
-### MLPlanesQueryFlags {#uint-mlplanesqueryflags}
+### MLPlanesQueryFlags {#enums-mlplanesqueryflags}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

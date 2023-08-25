@@ -68,7 +68,7 @@ public static bool GetKeyPointStatus(
 
 ### void SetPreRenderPoseUpdate {#void-setprerenderposeupdate}
 
-Native call for pre render Keypoints update. 
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) call for pre render Keypoints update. 
 
 ```csharp
 public void SetPreRenderPoseUpdate(
@@ -95,7 +95,7 @@ public void SetPreRenderPoseUpdate(
 ```csharp
 public static bool TryGetKeyPointsMask(
     InputDevice handDevice,
-    out bool[] keyPointsMask
+    out bool [] keyPointsMask
 )
 ```
 
@@ -105,7 +105,7 @@ public static bool TryGetKeyPointsMask(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out bool[] |keyPointsMask||
+| out bool [] |keyPointsMask||
 
 
 

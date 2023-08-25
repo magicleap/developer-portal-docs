@@ -20,12 +20,12 @@ Class containing utility functions to convert Unity Texture to  Magic Leap  OS c
 
 ## Public Methods
 
-### byte[] ConvertToByteArray {#byte-converttobytearray}
+### byte [] ConvertToByteArray {#byte-converttobytearray}
 
 Convert Unity Texture2D to a byte array. Texture2D should be in one of the following formats: DXT1, RGBA32, RGB24. For DXT1 and RGBA32, resulting byte array is in RGBA format. For RGB24, resulting byte array is in RGB format. The origin of the byte array will be at the top left corner. Returns null on unsupported formats. 
 
 ```csharp
-public static byte[] ConvertToByteArray(
+public static byte [] ConvertToByteArray(
     Texture2D texture,
     out int numChannels
 )

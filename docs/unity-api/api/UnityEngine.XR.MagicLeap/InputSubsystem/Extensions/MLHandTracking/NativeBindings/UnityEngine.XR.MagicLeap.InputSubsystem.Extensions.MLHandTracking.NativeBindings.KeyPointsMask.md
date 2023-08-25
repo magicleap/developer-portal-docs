@@ -20,7 +20,7 @@ title: KeyPointsMask
 
 ```csharp
 
-public readonly byte[] Mask;
+public readonly byte [] Mask;
 
 ```
 

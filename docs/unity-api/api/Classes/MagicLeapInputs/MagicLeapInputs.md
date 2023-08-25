@@ -18,86 +18,11 @@ Inherits from: <br></br>IInputActionCollection2,<br></br>IDisposable
 
 ## Public Fields
 
-### Controller {#controlleractions-controller}
-
-```csharp
-
-public ControllerActions Controller { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Eyes {#eyesactions-eyes}
-
-```csharp
-
-public EyesActions Eyes { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### HMD {#hmdactions-hmd}
-
-```csharp
-
-public HMDActions HMD { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### LeftHand {#lefthandactions-lefthand}
-
-```csharp
-
-public LeftHandActions LeftHand { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### MagicLeapScheme {#inputcontrolscheme-magicleapscheme}
 
 ```csharp
 
 public InputControlScheme MagicLeapScheme { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### RightHand {#righthandactions-righthand}
-
-```csharp
-
-public RightHandActions RightHand { get; set; }
 
 ```
 
@@ -123,11 +48,11 @@ public InputActionAsset asset { get; set; }
 
 -----------
 
-### bindingMask {#inputbinding?-bindingmask}
+### bindingMask {#inputbinding-bindingmask}
 
 ```csharp
 
-public InputBinding? bindingMask { get; set; }
+public InputBinding bindingMask { get; set; }
 
 ```
 
@@ -138,41 +63,11 @@ public InputBinding? bindingMask { get; set; }
 
 -----------
 
-### bindings {#ienumerable-inputbinding-bindings}
+### devices {#readonlyarray-inputdevice-devices}
 
 ```csharp
 
-public IEnumerable< InputBinding > bindings { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### controlSchemes {#readonlyarray-inputcontrolscheme-controlschemes}
-
-```csharp
-
-public ReadOnlyArray< InputControlScheme > controlSchemes { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### devices {#readonlyarray-inputdevice-?-devices}
-
-```csharp
-
-public ReadOnlyArray< InputDevice >? devices { get; set; }
+public ReadOnlyArray< InputDevice > devices { get; set; }
 
 ```
 
@@ -311,6 +206,113 @@ public IEnumerator< InputAction > GetEnumerator()
 
 ```csharp
 public MagicLeapInputs()
+```
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### Controller {#controlleractions-controller}
+
+```csharp
+
+public ControllerActions Controller => new ControllerActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### Eyes {#eyesactions-eyes}
+
+```csharp
+
+public EyesActions Eyes => new EyesActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### HMD {#hmdactions-hmd}
+
+```csharp
+
+public HMDActions HMD => new HMDActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### LeftHand {#lefthandactions-lefthand}
+
+```csharp
+
+public LeftHandActions LeftHand => new LeftHandActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### RightHand {#righthandactions-righthand}
+
+```csharp
+
+public RightHandActions RightHand => new RightHandActions(this);
+
+```
+
+
+
+
+
+
+-----------
+
+### bindings {#ienumerable-inputbinding-bindings}
+
+```csharp
+
+public IEnumerable< InputBinding > bindings => asset.bindings;
+
+```
+
+
+
+
+
+
+-----------
+
+### controlSchemes {#readonlyarray-inputcontrolscheme-controlschemes}
+
+```csharp
+
+public ReadOnlyArray< InputControlScheme > controlSchemes => asset.controlSchemes;
+
 ```
 
 

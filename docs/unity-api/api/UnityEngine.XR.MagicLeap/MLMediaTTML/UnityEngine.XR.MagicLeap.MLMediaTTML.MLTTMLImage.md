@@ -23,7 +23,7 @@ Byte data of the image.
 
 ```csharp
 
-public byte[] Data { get; set; }
+public byte [] Data { get; set; }
 
 ```
 
@@ -72,7 +72,7 @@ public static MLTTMLImage Create()
 
 ```csharp
 public static MLTTMLImage Create(
-    byte[] outBuffer,
+    byte [] outBuffer,
     uint imageSize
 )
 ```
@@ -82,7 +82,7 @@ public static MLTTMLImage Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |outBuffer||
+| byte [] |outBuffer||
 | uint |imageSize||
 
 

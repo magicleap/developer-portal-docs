@@ -41,47 +41,13 @@ package template <T > class CircularBuffer : IEnumerator
 
 ## Public Fields
 
-### Capacity {#int-capacity}
-
-Max number of elements the buffer can hold. 
-
-```csharp
-
-public int Capacity { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### Count {#int-count}
 
-Number of elements stored in the buffer. 
+Number of elements stored in the buffer 
 
 ```csharp
 
 public int Count { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Current {#object-current}
-
-Get the current value when enumerating the buffer. 
-
-```csharp
-
-public object Current { get; set; }
 
 ```
 
@@ -139,7 +105,7 @@ Create a CircularBuffer with preinitialized objects. When creating the buffer wi
 
 ```csharp
 public static CircularBuffer< T > Create(
-    params T[] objects
+    params T [] objects
 )
 ```
 
@@ -148,7 +114,7 @@ public static CircularBuffer< T > Create(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| params T[] |objects|Array of objects to initialize the Circular Buffer with.|
+| params T [] |objects|Array of objects to initialize the Circular Buffer with.|
 
 
 
@@ -167,7 +133,7 @@ Dequeue an entire array of elements. Uses Array.Copy() and is thus more efficien
 
 ```csharp
 public int Dequeue(
-    T[] data
+    T [] data
 )
 ```
 
@@ -176,7 +142,7 @@ public int Dequeue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| T[] |data|Array to dequeue into|
+| T [] |data|Array to dequeue into|
 
 
 
@@ -191,7 +157,7 @@ public int Dequeue(
 
 ### void Enqueue {#void-enqueue}
 
-Pushes a new element at the end of the queue. Will replace the front element if queue is full. TODO : ^ make this behavior configurable. 
+Pushes a new element at the end of the queue. Will replace the front element if queue is full. TODO : ^ make this behavior configurable 
 
 ```csharp
 public void Enqueue(
@@ -219,7 +185,7 @@ Enqueue an entire array at the end of the queue. Uses Array.Copy() and is thus m
 
 ```csharp
 public void Enqueue(
-    T[] values
+    T [] values
 )
 ```
 
@@ -228,7 +194,7 @@ public void Enqueue(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| T[] |values|Array of values to enqueue|
+| T [] |values|Array of values to enqueue|
 
 
 
@@ -258,7 +224,7 @@ public T Get()
 
 ### IEnumerator GetEnumerator {#ienumerator-getenumerator}
 
-Get the enumerator implemented for this collection. 
+Get the enumerator implemented for this collection 
 
 ```csharp
 public IEnumerator GetEnumerator()
@@ -277,7 +243,7 @@ public IEnumerator GetEnumerator()
 
 ### bool MoveNext {#bool-movenext}
 
-Move to the next element when using this class as an IEnumerator. 
+Move to the next element when using this class as an IEnumerator 
 
 ```csharp
 public bool MoveNext()
@@ -315,7 +281,7 @@ public T Peek()
 
 ### void Reset {#void-reset}
 
-Reset the flags for the enumerator. 
+Reset the flags for the enumerator 
 
 ```csharp
 public void Reset()
@@ -375,6 +341,42 @@ public bool TryDequeue(
 
 
 **Returns**: True if dequeue was successful, false otherwise
+
+
+
+-----------
+
+## Public Attributes
+
+### Capacity {#int-capacity}
+
+Max number of elements the buffer can hold. 
+
+```csharp
+
+public int Capacity => buffer.Length;
+
+```
+
+
+
+
+
+
+-----------
+
+### Current {#object-current}
+
+Get the current value when enumerating the buffer 
+
+```csharp
+
+public object Current => buffer[enumeratorIndex];
+
+```
+
+
+
 
 
 

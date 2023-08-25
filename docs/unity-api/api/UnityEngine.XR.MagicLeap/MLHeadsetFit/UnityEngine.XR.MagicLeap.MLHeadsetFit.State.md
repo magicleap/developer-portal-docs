@@ -1,6 +1,6 @@
 ---
 title: State
-summary: headset fit state. 
+summary: headset fit state 
 
 ---
 
@@ -9,7 +9,7 @@ summary: headset fit state.
 
 
 
-Headset fit state.   
+Headset fit state   
 
 
 
@@ -19,7 +19,7 @@ Headset fit state.
 
 ### FitStatus {#readonly-fitstatus}
 
-Headset fit status. 
+Headset fit status 
 
 ```csharp
 

@@ -43,7 +43,7 @@ public Type PropertyType { get; set; }
 
 ###  MLBitMask {#functions-mlbitmask}
 
-Initializes a new instance of the MLBitMask class. enum Type. This constructor call is automatic when decorating a field with this Attribute. 
+Initializes a new instance of the [MLBitMask](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLBitMask.md) class. enum Type. This constructor call is automatic when decorating a field with this Attribute. 
 
 ```csharp
 public MLBitMask(

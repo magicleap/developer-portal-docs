@@ -9,7 +9,7 @@ summary: native bindings for the mlwebrtc.appdefinedvideosource class.
 
 
 
-Native bindings for the MLWebRTC.AppDefinedVideoSource class.   
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) bindings for the [MLWebRTC.AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md) class.   
 
 
 

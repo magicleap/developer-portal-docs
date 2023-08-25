@@ -12,7 +12,7 @@ summary: place this attribute on a child of mlautoapisingleton to prevent its in
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-Place this attribute on a child of MLAutoAPISingleton to prevent its initialization until the Magic Leap XR package is loaded.   
+Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XR package is loaded.   
 
 
 Inherits from: <br></br>Attribute

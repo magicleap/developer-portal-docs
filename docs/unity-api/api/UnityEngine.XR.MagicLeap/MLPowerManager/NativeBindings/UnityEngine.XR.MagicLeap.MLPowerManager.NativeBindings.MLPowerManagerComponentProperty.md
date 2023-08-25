@@ -18,7 +18,7 @@ title: MLPowerManagerComponentProperty
 
 ### Data {#componentpropertydata-data}
 
-Union of ComponentPropertyData. This struct and union is used as a flexible way for each component to output an array containing distinct types of data. 
+Union of [ComponentPropertyData](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.ComponentPropertyData.md). This struct and union is used as a flexible way for each component to output an array containing distinct types of data. 
 
 ```csharp
 

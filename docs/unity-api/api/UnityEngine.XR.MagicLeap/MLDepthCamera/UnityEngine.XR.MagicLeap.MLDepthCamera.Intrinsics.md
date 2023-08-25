@@ -68,7 +68,7 @@ public DistortionCoefficients Distortion;
 
 | Type | Description  | 
 |--|--|
-| [DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3].  |
+| [DistortionCoefficients](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.DistortionCoefficients.md) | The distortion coefficients are arranged in the following order: [k1, k2, p1, p2, k3]  |
 
 **Details**
 
@@ -82,7 +82,7 @@ The distortion coefficients are arranged in the following order: [k1, k2, p1, p2
 
 ### FoV {#float-fov}
 
-Field of View in degrees. 
+Field of View in degrees 
 
 ```csharp
 
@@ -99,7 +99,7 @@ public float FoV;
 
 ### FocalLength {#vector2-focallength}
 
-Camera Focal Length. 
+Camera Focal Length 
 
 ```csharp
 
@@ -116,7 +116,7 @@ public Vector2 FocalLength;
 
 ### Height {#uint-height}
 
-Camera Height. 
+Camera Height 
 
 ```csharp
 
@@ -133,7 +133,7 @@ public uint Height;
 
 ### PrincipalPoint {#vector2-principalpoint}
 
-Camera Principal Point. 
+Camera Principal Point 
 
 ```csharp
 
@@ -150,7 +150,7 @@ public Vector2 PrincipalPoint;
 
 ### Width {#uint-width}
 
-Camera Width. 
+Camera Width 
 
 ```csharp
 

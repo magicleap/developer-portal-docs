@@ -48,6 +48,9 @@ public OnCaptureAbortedDelegate OnCaptureAborted;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnCaptureAbortedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncaptureaborteddelegate) | Delegate to notify the app when a capture request is aborted.  |
 
 
 
@@ -65,6 +68,9 @@ public OnCaptureCompletedDelegate OnCaptureCompleted;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnCaptureCompletedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturecompleteddelegate) | Delegate to notify the app when a capture request is completed.  |
 
 
 
@@ -82,6 +88,9 @@ public OnCaptureFailedDelegate OnCaptureFailed;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnCaptureFailedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-oncapturefaileddelegate) | Delegate to notify the app when a capture request fails.  |
 
 
 
@@ -116,6 +125,9 @@ public OnPreviewBufferAvailableDelegate OnPreviewBufferAvailable;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnPreviewBufferAvailableDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#delegate-void-onpreviewbufferavailabledelegate) | Delegate to notify the app when the frame data of a preview is available.  |
 
 
 

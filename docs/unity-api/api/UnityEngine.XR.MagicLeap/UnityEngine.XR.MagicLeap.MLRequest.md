@@ -1,6 +1,6 @@
 ---
 title: MLRequest
-summary: inherit from this if your request should be a class. 
+summary: inherit from this if your request should be a class 
 
 ---
 
@@ -12,7 +12,7 @@ summary: inherit from this if your request should be a class.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-INHERIT FROM THIS IF YOUR REQUEST SHOULD BE A CLASS.   [More...](#detailed-description)  
+INHERIT FROM THIS IF YOUR REQUEST SHOULD BE A CLASS   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>[IMLRequest< Params, Result >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.IMLRequest.md)
@@ -33,23 +33,6 @@ public template <Params ,Result > class MLRequest : IMLRequest< Params, Result >
 -----------
 
 
-
-## Public Fields
-
-### Parameters {#params-parameters}
-
-```csharp
-
-public Params Parameters { get; set; }
-
-```
-
-
-
-
-
-
------------
 
 ## Public Methods
 
@@ -131,6 +114,23 @@ protected virtual abstract void Dispose(
 
 ```csharp
 protected MLRequest()
+```
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### Parameters {#params-parameters}
+
+```csharp
+
+public Params Parameters => parameters;
+
 ```
 
 

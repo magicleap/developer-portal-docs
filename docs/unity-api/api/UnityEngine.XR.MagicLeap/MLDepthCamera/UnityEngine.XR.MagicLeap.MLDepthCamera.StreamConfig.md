@@ -62,7 +62,7 @@ public FrameRate FrameRateConfig;
 
 | Type | Description  | 
 |--|--|
-| [FrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-framerate) | Enumeration of possible frame rates.  |
+| [FrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-framerate) | Enumeration of possible frame rates  |
 
 
 

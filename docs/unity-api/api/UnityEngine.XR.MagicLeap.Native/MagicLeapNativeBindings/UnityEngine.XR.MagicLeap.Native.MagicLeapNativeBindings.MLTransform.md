@@ -19,7 +19,7 @@ Information used to transform from one coordinate frame to another.
 
 ### [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) Identity {#mltransform-identity}
 
-Returns an initialized MLTransform with default values. 
+Returns an initialized [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md) with default values. 
 
 ```csharp
 public static MLTransform Identity()
@@ -30,7 +30,7 @@ public static MLTransform Identity()
 
 
 
-**Returns**: An initialized MLTransform.
+**Returns**: An initialized [MLTransform](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLTransform.md).
 
 
 

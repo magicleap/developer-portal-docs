@@ -89,7 +89,7 @@ public MLCamera.MRBlendType MrBlendType;
 
 ### MrQuality {#mlcameramrquality-mrquality}
 
-MR video quality. 
+MR video quality 
 
 ```csharp
 
@@ -99,7 +99,7 @@ public MLCamera.MRQuality MrQuality;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration.  |
+| [MLCamera.MRQuality](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-mrquality) | MR Video Quality enumeration  |
 
 
 

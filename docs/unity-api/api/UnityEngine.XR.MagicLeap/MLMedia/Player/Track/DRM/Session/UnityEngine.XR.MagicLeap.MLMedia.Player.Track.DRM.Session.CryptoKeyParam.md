@@ -21,8 +21,8 @@ title: CryptoKeyParam
 ```csharp
 public CryptoKeyParam(
     string algorithm,
-    byte[] keySetId,
-    byte[] initialVector
+    byte [] keySetId,
+    byte [] initialVector
 )
 ```
 
@@ -32,8 +32,8 @@ public CryptoKeyParam(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |algorithm||
-| byte[] |keySetId||
-| byte[] |initialVector||
+| byte [] |keySetId||
+| byte [] |initialVector||
 
 
 
@@ -63,7 +63,7 @@ public readonly string Algorithm;
 
 ```csharp
 
-public readonly byte[] InitialVector;
+public readonly byte [] InitialVector;
 
 ```
 
@@ -78,7 +78,7 @@ public readonly byte[] InitialVector;
 
 ```csharp
 
-public readonly byte[] KeySetId;
+public readonly byte [] KeySetId;
 
 ```
 

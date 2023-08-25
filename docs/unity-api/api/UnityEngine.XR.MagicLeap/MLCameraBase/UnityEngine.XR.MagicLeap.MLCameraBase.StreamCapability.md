@@ -33,7 +33,7 @@ public override string ToString()
 
 ### CaptureType {#capturetype-capturetype}
 
-Capture Type. 
+Capture Type 
 
 ```csharp
 
@@ -43,7 +43,7 @@ public CaptureType CaptureType;
 
 | Type | Description  | 
 |--|--|
-| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type.  |
+| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -53,7 +53,7 @@ public CaptureType CaptureType;
 
 ### Height {#int-height}
 
-Resolution height. 
+Resolution height 
 
 ```csharp
 
@@ -70,7 +70,7 @@ public int Height;
 
 ### Width {#int-width}
 
-Resolution height. 
+Resolution height 
 
 ```csharp
 

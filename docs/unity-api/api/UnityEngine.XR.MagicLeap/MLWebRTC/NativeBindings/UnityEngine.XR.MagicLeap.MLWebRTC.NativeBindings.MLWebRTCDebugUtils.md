@@ -9,7 +9,7 @@ summary: the native representation of the mlwebrtc debug utilities object.
 
 
 
-The native representation of the MLWebRTC debug utilities object.   
+The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) debug utilities object.   
 
 
 
@@ -19,7 +19,7 @@ The native representation of the MLWebRTC debug utilities object.
 
 ### [MLWebRTCDebugUtils](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) Create {#mlwebrtcdebugutils-create}
 
-Creates an initialized MLWebRTCDebugUtils object. 
+Creates an initialized [MLWebRTCDebugUtils](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) object. 
 
 ```csharp
 public static MLWebRTCDebugUtils Create()
@@ -30,7 +30,7 @@ public static MLWebRTCDebugUtils Create()
 
 
 
-**Returns**: An initialized MLWebRTCDebugUtils object.
+**Returns**: An initialized [MLWebRTCDebugUtils](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.MLWebRTCDebugUtils.md) object.
 
 
 
@@ -67,7 +67,7 @@ public AndroidLogPriority LogLevel;
 
 | Type | Description  | 
 |--|--|
-| [AndroidLogPriority](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#uint-androidlogpriority) | Copy of android&#95;LogPriority from android/log.h.  |
+| [AndroidLogPriority](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#enums-androidlogpriority) | Copy of android&#95;LogPriority from android/log.h.  |
 
 
 

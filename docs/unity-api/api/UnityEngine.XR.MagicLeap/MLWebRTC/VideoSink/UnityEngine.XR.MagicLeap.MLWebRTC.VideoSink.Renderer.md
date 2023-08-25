@@ -31,7 +31,7 @@ public Renderer(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [VideoSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.md) |videoSink|Class that represents a video sink used by the MLWebRTC API. Video sinks are fed data by media sources and produces frames to render. |
+| [VideoSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.md) |videoSink|Class that represents a video sink used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. Video sinks are fed data by media sources and produces frames to render. |
 
 
 

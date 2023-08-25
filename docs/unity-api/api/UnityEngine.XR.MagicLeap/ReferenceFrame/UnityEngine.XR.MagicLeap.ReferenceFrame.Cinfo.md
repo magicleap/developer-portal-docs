@@ -1,6 +1,6 @@
 ---
 title: Cinfo
-summary: information necessary to construct a reference frame. 
+summary: information necessary to construct a reference frame 
 
 ---
 
@@ -9,7 +9,7 @@ summary: information necessary to construct a reference frame.
 
 
 
-Information necessary to construct a reference frame.   
+Information necessary to construct a reference frame   
 
 
 
@@ -39,7 +39,7 @@ public Native.MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
 
 ### closetCoordinateFrame {#pose-closetcoordinateframe}
 
-The closet coordinate frame to the requested point. 
+The closet coordinate frame to the requested point 
 
 ```csharp
 
@@ -56,7 +56,7 @@ public Pose closetCoordinateFrame;
 
 ### initialAnchorPose {#pose-initialanchorpose}
 
-The initial pose of the anchor. Necessary so we can compute the transform between closetCoordinateFrame and the anchor. 
+The initial pose of the anchor. Necessary so we can compute the transform between [closetCoordinateFrame](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md#pose-closetcoordinateframe) and the anchor. 
 
 ```csharp
 

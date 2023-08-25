@@ -18,7 +18,7 @@ title: OnInfoData
 
 ### Extra {#int-extra}
 
-The extra info. 
+The extra info 
 
 ```csharp
 
@@ -35,7 +35,7 @@ public int Extra;
 
 ### Info {#info-info}
 
-The info of [MLMediaRecorder.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info). 
+The info of [MLMediaRecorder.Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-info)
 
 ```csharp
 

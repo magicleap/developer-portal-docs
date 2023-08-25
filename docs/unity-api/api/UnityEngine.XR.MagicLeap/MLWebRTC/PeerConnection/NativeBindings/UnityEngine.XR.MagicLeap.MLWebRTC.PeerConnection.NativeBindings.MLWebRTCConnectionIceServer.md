@@ -19,7 +19,7 @@ The native representation of an ice server.
 
 ### Data {#mlwebrtciceserver-data}
 
-Sets the data of this object from another MLWebRTC.IceServer object. 
+Sets the data of this object from another [MLWebRTC.IceServer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md) object. 
 
 ```csharp
 
@@ -29,7 +29,7 @@ public MLWebRTC.IceServer Data { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.IceServer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md) | Class that represents an ice server used by the MLWebRTC API.  |
+| [MLWebRTC.IceServer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md) | Class that represents an ice server used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.  |
 
 
 

@@ -25,7 +25,7 @@ Inherits from: <br></br>MonoBehaviour
 
 ```csharp
 
-public MLWebViewTabBehavior currentTab = null { get; set; }
+public MLWebViewTabBehavior currentTab { get; set; }
 
 ```
 
@@ -53,7 +53,7 @@ public void CreatePopupTab(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |popupWebView|API for MLWebView that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |popupWebView|API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
 | ulong |popupID||
 | string |url||
 
@@ -90,10 +90,10 @@ public void DestroyCurrentTab()
 
 -----------
 
-### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md)[] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
+### [MLWebViewTabBehavior](/unity-api/api/MagicLeap.Core/MagicLeap.Core.MLWebViewTabBehavior.md) [] GetAllTabs {#mlwebviewtabbehavior-getalltabs}
 
 ```csharp
-public MLWebViewTabBehavior[] GetAllTabs()
+public MLWebViewTabBehavior [] GetAllTabs()
 ```
 
 
@@ -116,7 +116,7 @@ public MLWebViewTabBehavior GetTab(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|API for MLWebView that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) |webView|API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events). |
 
 
 

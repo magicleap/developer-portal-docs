@@ -60,13 +60,13 @@ Gets the array of image planes contained in this frame.
 
 ```csharp
 
-public MLWebRTC.VideoSink.Frame.PlaneInfo[] ImagePlanes { get; set; }
+public MLWebRTC.VideoSink.Frame.PlaneInfo [] ImagePlanes { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.VideoSink.Frame.PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md)[] | Struct representing an image plane that comes from some captured camera frame.  |
+| [MLWebRTC.VideoSink.Frame.PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) [] | Struct representing an image plane that comes from some captured camera frame.  |
 
 
 
@@ -116,7 +116,7 @@ Creates and returns an initialized version of this struct.
 public static Frame Create(
     ulong id,
     ulong timeStampUs,
-    PlaneInfo[] imagePlanes,
+    PlaneInfo [] imagePlanes,
     OutputFormat format
 )
 ```
@@ -128,7 +128,7 @@ public static Frame Create(
 |--|--|--|
 | ulong |id|Id of the frame.|
 | ulong |timeStampUs|Timestamp of the frame in microseconds.|
-| [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md)[] |imagePlanes|Array of image planes this frame contains.|
+| [PlaneInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.PlaneInfo.md) [] |imagePlanes|Array of image planes this frame contains.|
 | [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-outputformat) |format|The output format of this frame.|
 
 
@@ -224,7 +224,7 @@ Defines the supported output formats of the image planes.
 | ---------- | ----- | ----------- |
 | YUV_420_888 | | YUV&#95;420&#95;888 format.   |
 | RGBA_8888 | | RGBA&#95;8888 format.   |
-| NativeBuffer | | Native buffer format.   |
+| NativeBuffer | | [Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer format   |
 
 
 

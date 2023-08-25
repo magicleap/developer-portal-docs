@@ -38,9 +38,14 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
         UiName = "Magic Leap",
         Description = "All Magic Leap OpenXR Features",
         FeatureSetId = "com.magicleap.openxr.featuregroup",
-        SupportedBuildTargets = new BuildTargetGroup[] { BuildTargetGroup.Android, BuildTargetGroup.Standalone },
-        FeatureIds = new string[] {
-            MagicLeapFeature.featureId
+        SupportedBuildTargets = new [] { BuildTargetGroup.Android, BuildTargetGroup.Standalone },
+        FeatureIds = new [] {
+            MagicLeapFeature.featureId ,
+            MagicLeapHandTrackingFeature.featureId,
+            MagicLeapRenderingExtensionsFeature.featureId,
+            MagicLeapReferenceSpacesFeature.featureId,
+            MagicLeapClippingPlaneEnforcementFeature.featureId,
+            MagicLeapPlanesFeature.FeatureId,
         }
     )]
     public class MagicLeapFeatureGroup

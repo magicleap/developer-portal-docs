@@ -23,7 +23,7 @@ title: PermissionsListJson
 
 ```csharp
 
-public PermissionJson[] Settings;
+public PermissionJson [] Settings;
 
 ```
 

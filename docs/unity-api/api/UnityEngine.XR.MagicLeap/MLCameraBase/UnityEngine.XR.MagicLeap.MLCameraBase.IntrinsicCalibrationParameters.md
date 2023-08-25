@@ -26,7 +26,7 @@ public IntrinsicCalibrationParameters(
     in Vector2 focalLength,
     in Vector2 principalPoint,
     float fov,
-    double[] distortion
+    double [] distortion
 )
 ```
 
@@ -40,7 +40,7 @@ public IntrinsicCalibrationParameters(
 | in Vector2 |focalLength||
 | in Vector2 |principalPoint||
 | float |fov||
-| double[] |distortion||
+| double [] |distortion||
 
 
 
@@ -66,11 +66,11 @@ public override string ToString()
 
 ### Distortion {#readonly-double-distortion}
 
-Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3]. 
+Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3] 
 
 ```csharp
 
-public readonly double[] Distortion;
+public readonly double [] Distortion;
 
 ```
 

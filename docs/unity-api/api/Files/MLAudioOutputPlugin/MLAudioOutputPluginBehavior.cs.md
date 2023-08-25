@@ -30,9 +30,6 @@ title: MLAudioOutputPluginBehavior.cs
 
 namespace UnityEngine.XR.MagicLeap
 {
-    using System;
-    using System.Runtime.InteropServices;
-
     [RequireComponent(typeof(AudioListener))]
     [DisallowMultipleComponent]
     public class MLAudioOutputPluginBehavior : MonoBehaviour

@@ -35,7 +35,7 @@ public ulong externalFormat;
 
 ### format {#uint-format}
 
-VkFormat. 
+VkFormat 
 
 ```csharp
 
@@ -52,7 +52,7 @@ public uint format;
 
 ### formatFeatures {#uint-formatfeatures}
 
-VkFormatFeatureFlags. 
+VkFormatFeatureFlags 
 
 ```csharp
 
@@ -86,7 +86,7 @@ public IntPtr pNext;
 
 ### sType {#uint-stype}
 
-VkStructureType. 
+VkStructureType 
 
 ```csharp
 
@@ -103,7 +103,7 @@ public uint sType;
 
 ### samplerYcbcrConversionComponents {#vkcomponentmapping-samplerycbcrconversioncomponents}
 
-VkComponentMapping. 
+[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
 
 ```csharp
 
@@ -120,7 +120,7 @@ public VkComponentMapping samplerYcbcrConversionComponents;
 
 ### suggestedXChromaOffset {#uint-suggestedxchromaoffset}
 
-VkChromaLocation. 
+VkChromaLocation 
 
 ```csharp
 
@@ -137,7 +137,7 @@ public uint suggestedXChromaOffset;
 
 ### suggestedYChromaOffset {#uint-suggestedychromaoffset}
 
-VkChromaLocation. 
+VkChromaLocation 
 
 ```csharp
 
@@ -154,7 +154,7 @@ public uint suggestedYChromaOffset;
 
 ### suggestedYcbcrModel {#uint-suggestedycbcrmodel}
 
-VkSamplerYcbcrModelConversion. 
+VkSamplerYcbcrModelConversion 
 
 ```csharp
 
@@ -171,7 +171,7 @@ public uint suggestedYcbcrModel;
 
 ### suggestedYcbcrRange {#uint-suggestedycbcrrange}
 
-VkSamplerYcbcrRange. 
+VkSamplerYcbcrRange 
 
 ```csharp
 

@@ -9,7 +9,7 @@ summary: a structure representing a user-defined spatial anchor.
 
 
 
-A structure representing a user-defined Spatial Anchor.   
+A structure representing a user-defined Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md).   
 
 
 
@@ -67,7 +67,7 @@ public MLSpatialAnchor(
 
 ### Cfuid {#readonly-cfuid}
 
-The coordinate frame identifier of the Spatial Anchor. This should be passed to MLSnapshotGetTransform to get the anchor's transform. The anchor's transform is set when the anchor is created but may be updated later by the Spatial Anchor system based on factors such as quality of the mapped space and subsequent localizations. 
+The coordinate frame identifier of the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). This should be passed to MLSnapshotGetTransform to get the anchor's transform. The anchor's transform is set when the anchor is created but may be updated later by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
 
 ```csharp
 
@@ -87,7 +87,7 @@ public readonly NativeBindings.MLCoordinateFrameUID Cfuid;
 
 ### ExpirationTimeStamp {#readonly-ulong-expirationtimestamp}
 
-The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial Anchor system based on factors such as quality of the mapped space and subsequent localizations. 
+The suggested expiration time for this anchor represented in seconds since the Unix epoch. This is implemented as an expiration timestamp in the future after which the associated anchor should be considered no longer valid and may be removed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system based on factors such as quality of the mapped space and subsequent localizations. 
 
 ```csharp
 
@@ -104,7 +104,7 @@ public readonly ulong ExpirationTimeStamp;
 
 ### Id {#readonly-id}
 
-The anchor's unique ID. This is a unique identifier for a single Spatial Anchor that is generated and managed by the Spatial Anchor system. The ID is created when MLSpatialAnchorCreate is called. 
+The anchor's unique ID. This is a unique identifier for a single Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) that is generated and managed by the Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) system. The ID is created when MLSpatialAnchorCreate is called. 
 
 ```csharp
 
@@ -124,7 +124,7 @@ public readonly MLUUIDBytes Id;
 
 ### IsPersisted {#readonly-bool-ispersisted}
 
-Indicates whether or not the anchor has been persisted via a call to #MLSpatialAnchorPublish. 
+Indicates whether or not the anchor has been persisted via a call to [MLSpatialAnchorPublish](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.md#mlresultcode-mlspatialanchorpublish). 
 
 ```csharp
 

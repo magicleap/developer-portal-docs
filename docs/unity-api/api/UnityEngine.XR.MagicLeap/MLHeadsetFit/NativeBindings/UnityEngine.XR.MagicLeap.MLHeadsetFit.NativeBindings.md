@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLHeadsetFitCreateClient {#mlresultcode-mlheadsetfitcreateclient}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitCreateClient {#mlresultcode-mlheadsetfitcreateclient}
 
 Creates a headset fit client. 
 
@@ -43,7 +43,7 @@ public MLResult.Code MLHeadsetFitCreateClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLHeadsetFitDestroyClient {#mlresultcode-mlheadsetfitdestroyclient}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitDestroyClient {#mlresultcode-mlheadsetfitdestroyclient}
 
 Destroys headset fit client. 
 
@@ -67,7 +67,7 @@ public MLResult.Code MLHeadsetFitDestroyClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLHeadsetFitGetState {#mlresultcode-mlheadsetfitgetstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadsetFitGetState {#mlresultcode-mlheadsetfitgetstate}
 
 Gets information about the user's current headset fit. 
 

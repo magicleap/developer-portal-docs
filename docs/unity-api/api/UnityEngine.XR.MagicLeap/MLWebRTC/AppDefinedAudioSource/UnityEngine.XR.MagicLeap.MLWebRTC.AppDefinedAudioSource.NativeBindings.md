@@ -9,7 +9,7 @@ summary: native bindings for the mlwebrtc.appdefinedaudiosource class.
 
 
 
-Native bindings for the MLWebRTC.AppDefinedAudioSource class.   
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) bindings for the [MLWebRTC.AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) class.   
 
 
 Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md)
@@ -19,9 +19,9 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) InitializeAppDefinedAudioSource {#mlresultcode-initializeappdefinedaudiosource}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) InitializeAppDefinedAudioSource {#mlresultcode-initializeappdefinedaudiosource}
 
-Initialized a given AppDefinedAudioSource object and sets it's callbacks. 
+Initialized a given [AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) object and sets it's callbacks. 
 
 ```csharp
 public static MLResult.Code InitializeAppDefinedAudioSource(
@@ -34,20 +34,20 @@ public static MLResult.Code InitializeAppDefinedAudioSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLWebRTC.AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) |appDefinedAudioSource|The AppDefinedAudioSource object to initialize.|
+| [MLWebRTC.AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) |appDefinedAudioSource|The [AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) object to initialize.|
 
 
 
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if the connection was successfully created. MLResult.Result will be  MLResult.Code.PermissionDenied  if necessary permission is missing. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if failed due to other internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if the connection was successfully created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
 
 
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLWebRTCSourceAppDefinedAudioSourcePushData {#mlresultcode-mlwebrtcsourceappdefinedaudiosourcepushdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWebRTCSourceAppDefinedAudioSourcePushData {#mlresultcode-mlwebrtcsourceappdefinedaudiosourcepushdata}
 
 Creates the local source that links to the user's camera and mic. 
 
@@ -73,18 +73,18 @@ public MLResult.Code MLWebRTCSourceAppDefinedAudioSourcePushData(
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if the local source was successfully created. MLResult.Result will be  MLResult.Code.PermissionDenied  if necessary permission is missing. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if failed due to other internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if the local source was successfully created. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to other internal error. 
 
 
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) PushData {#mlresultcode-pushdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) PushData {#mlresultcode-pushdata}
 
 ```csharp
 public static MLResult.Code PushData(
     ulong sourceHandle,
-    byte[] audioBuffer,
+    byte [] audioBuffer,
     in MLAudioOutput.BufferFormat audioBufferFormat
 )
 ```
@@ -95,8 +95,8 @@ public static MLResult.Code PushData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |sourceHandle||
-| byte[] |audioBuffer||
-| in [MLAudioOutput.BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |audioBufferFormat|Buffer format settings for input and output streams. |
+| byte [] |audioBuffer||
+| in [MLAudioOutput.BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |audioBufferFormat|[Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams. |
 
 
 
@@ -105,12 +105,12 @@ public static MLResult.Code PushData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) PushData {#mlresultcode-pushdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) PushData {#mlresultcode-pushdata}
 
 ```csharp
 public static MLResult.Code PushData(
     ulong sourceHandle,
-    float[] audioBuffer,
+    float [] audioBuffer,
     in MLAudioOutput.BufferFormat audioBufferFormat
 )
 ```
@@ -121,8 +121,8 @@ public static MLResult.Code PushData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |sourceHandle||
-| float[] |audioBuffer||
-| in [MLAudioOutput.BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |audioBufferFormat|Buffer format settings for input and output streams. |
+| float [] |audioBuffer||
+| in [MLAudioOutput.BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |audioBufferFormat|[Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams. |
 
 
 

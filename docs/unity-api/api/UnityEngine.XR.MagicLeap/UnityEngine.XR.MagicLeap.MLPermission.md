@@ -23,7 +23,7 @@ title: MLPermission
 
 ```csharp
 
-public static const string Camera = Permission.Camera;
+public const string Camera = Permission.Camera;
 
 ```
 
@@ -38,7 +38,7 @@ public static const string Camera = Permission.Camera;
 
 ```csharp
 
-public static const string DepthCamera = "com.magicleap.permission.DEPTH_CAMERA";
+public const string DepthCamera = "com.magicleap.permission.DEPTH_CAMERA";
 
 ```
 
@@ -53,7 +53,7 @@ public static const string DepthCamera = "com.magicleap.permission.DEPTH_CAMERA"
 
 ```csharp
 
-public static const string EyeCamera = "com.magicleap.permission.EYE_CAMERA";
+public const string EyeCamera = "com.magicleap.permission.EYE_CAMERA";
 
 ```
 
@@ -68,7 +68,7 @@ public static const string EyeCamera = "com.magicleap.permission.EYE_CAMERA";
 
 ```csharp
 
-public static const string EyeTracking = "com.magicleap.permission.EYE_TRACKING";
+public const string EyeTracking = "com.magicleap.permission.EYE_TRACKING";
 
 ```
 
@@ -83,7 +83,7 @@ public static const string EyeTracking = "com.magicleap.permission.EYE_TRACKING"
 
 ```csharp
 
-public static const string FacialExpression = "com.magicleap.permission.FACIAL_EXPRESSION";
+public const string FacialExpression = "com.magicleap.permission.FACIAL_EXPRESSION";
 
 ```
 
@@ -98,7 +98,7 @@ public static const string FacialExpression = "com.magicleap.permission.FACIAL_E
 
 ```csharp
 
-public static const string HandTracking = "com.magicleap.permission.HAND_TRACKING";
+public const string HandTracking = "com.magicleap.permission.HAND_TRACKING";
 
 ```
 
@@ -113,7 +113,7 @@ public static const string HandTracking = "com.magicleap.permission.HAND_TRACKIN
 
 ```csharp
 
-public static const string Internet = "android.permission.INTERNET";
+public const string Internet = "android.permission.INTERNET";
 
 ```
 
@@ -128,7 +128,7 @@ public static const string Internet = "android.permission.INTERNET";
 
 ```csharp
 
-public static const string MarkerTracking = "com.magicleap.permission.MARKER_TRACKING";
+public const string MarkerTracking = "com.magicleap.permission.MARKER_TRACKING";
 
 ```
 
@@ -143,7 +143,7 @@ public static const string MarkerTracking = "com.magicleap.permission.MARKER_TRA
 
 ```csharp
 
-public static const string PupilSize = "com.magicleap.permission.PUPIL_SIZE";
+public const string PupilSize = "com.magicleap.permission.PUPIL_SIZE";
 
 ```
 
@@ -158,7 +158,7 @@ public static const string PupilSize = "com.magicleap.permission.PUPIL_SIZE";
 
 ```csharp
 
-public static const string ReadExternalStorage = Permission.ExternalStorageRead;
+public const string ReadExternalStorage = Permission.ExternalStorageRead;
 
 ```
 
@@ -173,7 +173,7 @@ public static const string ReadExternalStorage = Permission.ExternalStorageRead;
 
 ```csharp
 
-public static const string RecordAudio = Permission.Microphone;
+public const string RecordAudio = Permission.Microphone;
 
 ```
 
@@ -188,7 +188,7 @@ public static const string RecordAudio = Permission.Microphone;
 
 ```csharp
 
-public static const string SpaceImportExport = "com.magicleap.permission.SPACE_IMPORT_EXPORT";
+public const string SpaceImportExport = "com.magicleap.permission.SPACE_IMPORT_EXPORT";
 
 ```
 
@@ -203,7 +203,7 @@ public static const string SpaceImportExport = "com.magicleap.permission.SPACE_I
 
 ```csharp
 
-public static const string SpaceManager = "com.magicleap.permission.SPACE_MANAGER";
+public const string SpaceManager = "com.magicleap.permission.SPACE_MANAGER";
 
 ```
 
@@ -218,7 +218,7 @@ public static const string SpaceManager = "com.magicleap.permission.SPACE_MANAGE
 
 ```csharp
 
-public static const string SpatialAnchors = "com.magicleap.permission.SPATIAL_ANCHOR";
+public const string SpatialAnchors = "com.magicleap.permission.SPATIAL_ANCHOR";
 
 ```
 
@@ -233,7 +233,7 @@ public static const string SpatialAnchors = "com.magicleap.permission.SPATIAL_AN
 
 ```csharp
 
-public static const string SpatialMapping = "com.magicleap.permission.SPATIAL_MAPPING";
+public const string SpatialMapping = "com.magicleap.permission.SPATIAL_MAPPING";
 
 ```
 
@@ -248,7 +248,7 @@ public static const string SpatialMapping = "com.magicleap.permission.SPATIAL_MA
 
 ```csharp
 
-public static const string SystemNotification = "com.magicleap.permission.SYSTEM_NOTIFICATION";
+public const string SystemNotification = "com.magicleap.permission.SYSTEM_NOTIFICATION";
 
 ```
 
@@ -263,7 +263,7 @@ public static const string SystemNotification = "com.magicleap.permission.SYSTEM
 
 ```csharp
 
-public static const string VoiceInput = "com.magicleap.permission.VOICE_INPUT";
+public const string VoiceInput = "com.magicleap.permission.VOICE_INPUT";
 
 ```
 
@@ -278,7 +278,7 @@ public static const string VoiceInput = "com.magicleap.permission.VOICE_INPUT";
 
 ```csharp
 
-public static const string WebView = "com.magicleap.permission.WEBVIEW";
+public const string WebView = "com.magicleap.permission.WEBVIEW";
 
 ```
 
@@ -293,7 +293,7 @@ public static const string WebView = "com.magicleap.permission.WEBVIEW";
 
 ```csharp
 
-public static const string WriteExternalStorage = Permission.ExternalStorageWrite;
+public const string WriteExternalStorage = Permission.ExternalStorageWrite;
 
 ```
 

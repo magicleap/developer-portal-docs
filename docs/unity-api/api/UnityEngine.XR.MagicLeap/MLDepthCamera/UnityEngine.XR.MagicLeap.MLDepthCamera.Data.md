@@ -23,13 +23,13 @@ This is the raw depth camera sensor data captured without the depth camera illum
 
 ```csharp
 
-public FrameBuffer? AmbientRawDepthImage { get; set; }
+public FrameBuffer AmbientRawDepthImage { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md)? | Per-plane info for each depth camera frame.  |
+| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md) | Per-plane info for each depth camera frame.  |
 
 
 
@@ -41,19 +41,19 @@ public FrameBuffer? AmbientRawDepthImage { get; set; }
 
 ```csharp
 
-public FrameBuffer? ConfidenceBuffer { get; set; }
+public FrameBuffer ConfidenceBuffer { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md)? | Per-plane info for each depth camera frame.  |
+| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md) | Per-plane info for each depth camera frame.  |
 
 **Details**
 
-Confidence map stores the confidence values for each pixel in the DepthImage buffer. The confidence score is derived from the sensor noise and it is not normalized. The higher the value the higher the confidence. Applications can determine what confidence threshold to use based on their use case.
+Confidence map stores the confidence values for each pixel in the [DepthImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#framebuffer-depthimage) buffer. The confidence score is derived from the sensor noise and it is not normalized. The higher the value the higher the confidence. Applications can determine what confidence threshold to use based on their use case.
 
-Cast the FrameBuffer.Data to float data type. 
+Cast the [FrameBuffer.Data](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md#byte-data) to float data type. 
 
 
 
@@ -63,17 +63,17 @@ Cast the FrameBuffer.Data to float data type.
 
 ### DepthFlagsBuffer {#framebuffer-depthflagsbuffer}
 
-Each pixel in the DepthImage frame buffer will have an associated set of flags. 
+Each pixel in the [DepthImage](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#framebuffer-depthimage) frame buffer will have an associated set of flags. 
 
 ```csharp
 
-public FrameBuffer? DepthFlagsBuffer { get; set; }
+public FrameBuffer DepthFlagsBuffer { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md)? | Per-plane info for each depth camera frame.  |
+| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md) | Per-plane info for each depth camera frame.  |
 
 
 
@@ -85,19 +85,19 @@ public FrameBuffer? DepthFlagsBuffer { get; set; }
 
 ```csharp
 
-public FrameBuffer? DepthImage { get; set; }
+public FrameBuffer DepthImage { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md)? | Per-plane info for each depth camera frame.  |
+| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md) | Per-plane info for each depth camera frame.  |
 
 **Details**
 
-Depth map stores the depth data from the depth camera. Depth is represented in meters and gives the radial distance of the real world location from the depth camera coordinate frame. See Intrinsics, Position, and Rotation for more details.
+Depth map stores the depth data from the depth camera. Depth is represented in meters and gives the radial distance of the real world location from the depth camera coordinate frame. See [Intrinsics](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Intrinsics.md), [Position](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#vector3-position), and [Rotation](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Data.md#quaternion-rotation) for more details.
 
-Cast the FrameBuffer.Data to float data type. 
+Cast the [FrameBuffer.Data](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md#byte-data) to float data type. 
 
 
 
@@ -134,7 +134,7 @@ public MLTime FrameTimestamp { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type.  |
+| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.  |
 
 
 
@@ -154,7 +154,7 @@ public FrameType FrameType { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types.  |
+| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types  |
 
 
 
@@ -164,7 +164,7 @@ public FrameType FrameType { get; set; }
 
 ### Intrinsics {#intrinsics-intrinsics}
 
-Camera intrinsic parameters. 
+Camera intrinsic parameters 
 
 ```csharp
 
@@ -184,7 +184,7 @@ public Intrinsics Intrinsics { get; set; }
 
 ### Position {#vector3-position}
 
-World position of the depth camera pose. 
+World position of the depth camera pose 
 
 ```csharp
 
@@ -205,13 +205,13 @@ This is the raw depth camera sensor data captured with the depth camera illumina
 
 ```csharp
 
-public FrameBuffer? RawDepthImage { get; set; }
+public FrameBuffer RawDepthImage { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md)? | Per-plane info for each depth camera frame.  |
+| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md) | Per-plane info for each depth camera frame.  |
 
 
 
@@ -221,7 +221,7 @@ public FrameBuffer? RawDepthImage { get; set; }
 
 ### Rotation {#quaternion-rotation}
 
-World rotation of the depth camera pose. 
+World rotation of the depth camera pose 
 
 ```csharp
 

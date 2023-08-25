@@ -14,91 +14,7 @@ title: RightHandActions
 
 
 
-## Public Fields
-
-### Keypose {#inputaction-keypose}
-
-```csharp
-
-public InputAction Keypose { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Position {#inputaction-position}
-
-```csharp
-
-public InputAction Position { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Rotation {#inputaction-rotation}
-
-```csharp
-
-public InputAction Rotation { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### enabled {#bool-enabled}
-
-```csharp
-
-public bool enabled { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
-
-### void AddCallbacks {#void-addcallbacks}
-
-```csharp
-public void AddCallbacks(
-    IRightHandActions instance
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [IRightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IRightHandActions.md) |instance||
-
-
-
-
-
-
------------
 
 ### void Disable {#void-disable}
 
@@ -131,28 +47,6 @@ public void Enable()
 ```csharp
 public InputActionMap Get()
 ```
-
-
-
-
-
-
------------
-
-### void RemoveCallbacks {#void-removecallbacks}
-
-```csharp
-public void RemoveCallbacks(
-    IRightHandActions instance
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [IRightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IRightHandActions.md) |instance||
 
 
 
@@ -219,6 +113,68 @@ public static implicit operator InputActionMap(
 | Type | Name  | Description  | 
 |--|--|--|
 | [RightHandActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.RightHandActions.md) |set||
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### Keypose {#inputaction-keypose}
+
+```csharp
+
+public InputAction Keypose => m_Wrapper.m_RightHand_Keypose;
+
+```
+
+
+
+
+
+
+-----------
+
+### Position {#inputaction-position}
+
+```csharp
+
+public InputAction Position => m_Wrapper.m_RightHand_Position;
+
+```
+
+
+
+
+
+
+-----------
+
+### Rotation {#inputaction-rotation}
+
+```csharp
+
+public InputAction Rotation => m_Wrapper.m_RightHand_Rotation;
+
+```
+
+
+
+
+
+
+-----------
+
+### enabled {#bool-enabled}
+
+```csharp
+
+public bool enabled => Get().enabled;
+
+```
 
 
 

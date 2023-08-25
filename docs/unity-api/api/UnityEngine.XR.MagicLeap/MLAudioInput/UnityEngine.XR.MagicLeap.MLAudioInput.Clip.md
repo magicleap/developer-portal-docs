@@ -70,7 +70,7 @@ Gets called from a thread when new samples are recorded.
 
 ```csharp
 protected virtual abstract void OnReceiveSamples(
-    float[] samples
+    float [] samples
 )
 ```
 
@@ -79,12 +79,12 @@ protected virtual abstract void OnReceiveSamples(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |samples||
+| float [] |samples||
 
 
 
 
-**Reimplemented by**: [OnReceiveSamples](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip.md#override-void-onreceivesamples), [OnReceiveSamples](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip.md#override-void-onreceivesamples)
+**Reimplemented by**: [OnReceiveSamples](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.StreamingClip.md#override-void-onreceivesamples), [OnReceiveSamples](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.BufferClip.md#override-void-onreceivesamples)
 
 
 

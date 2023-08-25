@@ -54,7 +54,7 @@ public PlaneAlignment ToUnityAlignment(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#uint-mlplanesqueryflags) |flags||
+| [Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |flags||
 | Quaternion |rotation||
 
 
@@ -77,7 +77,7 @@ public PlaneClassification ToUnityClassification(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#uint-mlplanesqueryflags) |flags||
+| [Extensions.MLPlanesQueryFlags](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/Extensions/UnityEngine.XR.MagicLeap.PlanesSubsystem.Extensions.md#enums-mlplanesqueryflags) |flags||
 
 
 

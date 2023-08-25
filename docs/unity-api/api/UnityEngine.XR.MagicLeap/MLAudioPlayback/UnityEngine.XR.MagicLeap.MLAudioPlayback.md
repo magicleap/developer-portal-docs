@@ -94,7 +94,7 @@ Submit unity audio buffers to the playback plugin so that it gets submitted to M
 
 ```csharp
 public static void SubmitBuffer(
-    float[] data,
+    float [] data,
     int channels
 )
 ```
@@ -104,7 +104,7 @@ public static void SubmitBuffer(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |data|Audio buffer|
+| float [] |data|Audio buffer|
 | int |channels|Number of channels in the buffer|
 
 

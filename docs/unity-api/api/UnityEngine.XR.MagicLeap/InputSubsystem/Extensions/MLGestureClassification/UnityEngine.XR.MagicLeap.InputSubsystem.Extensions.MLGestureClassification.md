@@ -146,7 +146,7 @@ public static bool TryGetHandPosture(
 
 ```csharp
 
-public static const string LeftGestureInputDeviceName = "MagicLeapHandGesture - Left";
+public const string LeftGestureInputDeviceName = "MagicLeapHandGesture - Left";
 
 ```
 
@@ -161,7 +161,7 @@ public static const string LeftGestureInputDeviceName = "MagicLeapHandGesture - 
 
 ```csharp
 
-public static const string RightGestureInputDeviceName = "MagicLeapHandGesture - Right";
+public const string RightGestureInputDeviceName = "MagicLeapHandGesture - Right";
 
 ```
 

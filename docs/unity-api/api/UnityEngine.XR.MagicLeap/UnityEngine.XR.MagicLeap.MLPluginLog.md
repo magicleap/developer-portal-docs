@@ -26,13 +26,13 @@ Gets or sets current level of logs to print.
 
 ```csharp
 
-public static VerbosityLevel Level = VerbosityLevel.ErrorsOnly { get; set; }
+public static VerbosityLevel Level { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [VerbosityLevel](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPluginLog.md#uint-verbositylevel) | Different verbosity levels of which logs to print. Modify this to change the verbosity of the Magic Leap APIs.  |
+| [VerbosityLevel](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPluginLog.md#enums-verbositylevel) | Different verbosity levels of which logs to print. Modify this to change the verbosity of the Magic Leap APIs.  |
 
 
 
@@ -73,7 +73,7 @@ Prints the given log message with formatting.
 ```csharp
 public static void DebugFormat(
     string logMsg,
-    params object[] args
+    params object [] args
 )
 ```
 
@@ -83,7 +83,7 @@ public static void DebugFormat(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |logMsg|The formatted message to print.|
-| params object[] |args|The arguments to pass the formatted log message|
+| params object [] |args|The arguments to pass the formatted log message|
 
 
 
@@ -123,7 +123,7 @@ Prints the given log message as an error with formatting.
 ```csharp
 public static void ErrorFormat(
     string logMsg,
-    params object[] args
+    params object [] args
 )
 ```
 
@@ -133,7 +133,7 @@ public static void ErrorFormat(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |logMsg|The formatted error message to print.|
-| params object[] |args|The arguments to pass the formatted message|
+| params object [] |args|The arguments to pass the formatted message|
 
 
 
@@ -173,7 +173,7 @@ Prints the given log message as a warning with formatting.
 ```csharp
 public static void WarningFormat(
     string logMsg,
-    params object[] args
+    params object [] args
 )
 ```
 
@@ -183,7 +183,7 @@ public static void WarningFormat(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |logMsg|The formatted warning message to print.|
-| params object[] |args|The arguments to pass the formatted message|
+| params object [] |args|The arguments to pass the formatted message|
 
 
 
@@ -194,7 +194,7 @@ public static void WarningFormat(
 
 ## Public Enums
 
-### VerbosityLevel {#uint-verbositylevel}
+### VerbosityLevel {#enums-verbositylevel}
 
 Different verbosity levels of which logs to print. Modify this to change the verbosity of the Magic Leap APIs. 
 

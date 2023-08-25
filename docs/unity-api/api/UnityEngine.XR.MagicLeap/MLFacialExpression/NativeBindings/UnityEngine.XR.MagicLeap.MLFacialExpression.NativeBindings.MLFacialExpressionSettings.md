@@ -43,7 +43,7 @@ public static MLFacialExpressionSettings Init(
 
 ### EnableEyeExpression {#bool-enableeyeexpression}
 
-Enable MLFacialExpressionEyeData. If true, facial expressions will detect #MLFacialExpressionEyeData and the same can queried using MLFacialExpressionGetEyeData. This should be disabled when app does not need facial expression data. 
+Enable [MLFacialExpressionEyeData](/unity-api/api/UnityEngine.XR.MagicLeap/MLFacialExpression/NativeBindings/UnityEngine.XR.MagicLeap.MLFacialExpression.NativeBindings.MLFacialExpressionEyeData.md). If true, facial expressions will detect #MLFacialExpressionEyeData and the same can queried using MLFacialExpressionGetEyeData. This should be disabled when app does not need facial expression data. 
 
 ```csharp
 
@@ -60,7 +60,7 @@ public bool EnableEyeExpression;
 
 ### Version {#uint-version}
 
-Version of this settings. 
+Version of this settings 
 
 ```csharp
 

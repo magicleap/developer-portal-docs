@@ -1,6 +1,6 @@
 ---
 title: CreateInfo
-summary: info to create the native rendering plugin instance with. 
+summary: info to create the native rendering plugin instance with 
 
 ---
 
@@ -9,7 +9,7 @@ summary: info to create the native rendering plugin instance with.
 
 
 
-Info to create the native rendering plugin instance with.   
+Info to create the native rendering plugin instance with   
 
 
 
@@ -19,7 +19,7 @@ Info to create the native rendering plugin instance with.
 
 ###  CreateInfo {#functions-createinfo}
 
-Construct the info for the native plugin instance. 
+Construct the info for the native plugin instance 
 
 ```csharp
 public CreateInfo(

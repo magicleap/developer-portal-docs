@@ -23,13 +23,13 @@ Array of #MLPowerManagerComponentProperty elements.
 
 ```csharp
 
-public ComponentProperty[] Properties;
+public ComponentProperty [] Properties;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [ComponentProperty](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.ComponentProperty.md)[] | A structure to encapsulate the data for each #MLPowerManagerPropertyType.  |
+| [ComponentProperty](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.ComponentProperty.md) [] | A structure to encapsulate the data for each #MLPowerManagerPropertyType.  |
 
 
 

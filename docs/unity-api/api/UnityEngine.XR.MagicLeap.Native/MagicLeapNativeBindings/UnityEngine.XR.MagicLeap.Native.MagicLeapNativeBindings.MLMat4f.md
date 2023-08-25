@@ -23,7 +23,7 @@ The 16 matrix values.
 
 ```csharp
 
-public float[] MatrixColmajor;
+public float [] MatrixColmajor;
 
 ```
 

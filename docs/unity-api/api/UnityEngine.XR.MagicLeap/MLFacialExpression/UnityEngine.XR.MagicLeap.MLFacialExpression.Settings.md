@@ -19,7 +19,7 @@ A structure containing settings for the facial expressions.
 
 ### EnableEyeExpression {#bool-enableeyeexpression}
 
-Enable MLFacialExpressionEyeData. If true, facial expressions will detect EyeData and the same can queried GetEyeData. This should be disabled when app does not need facial expression data. 
+Enable MLFacialExpressionEyeData. If true, facial expressions will detect [EyeData](/unity-api/api/UnityEngine.XR.MagicLeap/MLFacialExpression/UnityEngine.XR.MagicLeap.MLFacialExpression.EyeData.md) and the same can queried GetEyeData. This should be disabled when app does not need facial expression data 
 
 ```csharp
 

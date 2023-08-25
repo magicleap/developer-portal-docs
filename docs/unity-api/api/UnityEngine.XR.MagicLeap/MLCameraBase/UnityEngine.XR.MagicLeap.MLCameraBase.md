@@ -12,7 +12,7 @@ summary: mlcamera class exposes static functions to query camera related functio
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MLCamera class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.   [More...](#detailed-description)  
+[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>[MLAPIBase](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md)
@@ -41,58 +41,6 @@ APIs for accessing Camera Device and to do Camera Capture.
 
 
 ## Public Fields
-
-### ConnectionContext {#mlcameraconnectcontext-connectioncontext}
-
-The connection context used to create this MLCamera object. 
-
-```csharp
-
-public MLCamera.ConnectContext ConnectionContext { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLCamera.ConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md) | Camera connection settings.  |
-
-
-
-
-
------------
-
-### ConnectionEstablished {#bool-connectionestablished}
-
-Connection status of the camera. 
-
-```csharp
-
-public bool ConnectionEstablished { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### CurrentFPS {#float-currentfps}
-
-```csharp
-
-public float CurrentFPS { get; set; }
-
-```
-
-
-
-
-
-
------------
 
 ### OnDeviceAvailable {#mlcameraondeviceavailabilitystatusdelegate-ondeviceavailable}
 
@@ -128,28 +76,11 @@ public static MLCamera.OnDeviceAvailabilityStatusDelegate OnDeviceUnavailable { 
 
 -----------
 
-### PreviewTexture {#rendertexture-previewtexture}
-
-A reference to Camera Preview texture. 
-
-```csharp
-
-public RenderTexture PreviewTexture { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) CaptureImage {#mlresult-captureimage}
 
-Capture still image. Result will be availble via the MLCamera.OnRawImageAvailable event. 
+Capture still image. Result will be availble via the [MLCamera.OnRawImageAvailable](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlcameraoncapturedframeavailabledelegate-onrawimageavailable) event. 
 
 ```csharp
 public MLResult CaptureImage(
@@ -173,7 +104,7 @@ public MLResult CaptureImage(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) CapturePreviewStart {#mlresult-capturepreviewstart}
 
-Start preview provide raw frames through callback. 
+Start preview provide raw frames through callback 
 
 ```csharp
 public MLResult CapturePreviewStart()
@@ -207,7 +138,7 @@ public MLResult CapturePreviewStop()
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) CaptureVideoStart {#mlresult-capturevideostart}
 
-Start video capture. capture either encoded video or YUV/RGBA frames. YUV/RGBA frames are provides through callback. For encoded video capture valid MediaRecorder object should be configured in the PrepareCapture() call. The captured video YUV/RGBA frames will be returned via the OnRawVideoFrameAvailable and OnRawVideoFrameAvailable&#95;NativeCallbackThread events. 
+Start video capture. capture either encoded video or YUV/RGBA frames. YUV/RGBA frames are provides through callback. For encoded video capture valid MediaRecorder object should be configured in the [PrepareCapture()](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlresult-preparecapture) call. The captured video YUV/RGBA frames will be returned via the OnRawVideoFrameAvailable and OnRawVideoFrameAvailable&#95;NativeCallbackThread events. 
 
 ```csharp
 public MLResult CaptureVideoStart()
@@ -222,7 +153,7 @@ public MLResult CaptureVideoStart()
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) CaptureVideoStop {#mlresult-capturevideostop}
 
-Stop video capture. Should only be called at least 500ms after a CaptureVideoStart(). 
+Stop video capture. Should only be called at least 500ms after a [CaptureVideoStart()](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlresult-capturevideostart). 
 
 ```csharp
 public MLResult CaptureVideoStop()
@@ -298,7 +229,7 @@ public static MLCameraBase Create()
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Disconnect {#mlresult-disconnect}
 
-Disconnect the current camera. Should call MLCamera.Connect() again on this instance or create a new MLCamera object using MLCamera.CreateAndConnect() function. 
+Disconnect the current camera. Should call MLCamera.Connect() again on this instance or create a new [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) object using [MLCamera.CreateAndConnect()](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#mlcamera-createandconnect) function. 
 
 ```csharp
 public MLResult Disconnect()
@@ -324,7 +255,7 @@ public static void FlipFrameVertically(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [CameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CameraOutput.md) |frame|Contains the information and data of each of the available buffers/planes in a capture Number of planes for JPEG and RGBA captures = 1 Number of planes for YUV captures = 3. |
+| ref [CameraOutput](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.CameraOutput.md) |frame|Contains the information and data of each of the available buffers/planes in a capture Number of planes for JPEG and RGBA captures = 1 Number of planes for YUV captures = 3 |
 
 
 
@@ -359,7 +290,7 @@ public MLResult GetCameraCharacteristics(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetDeviceAvailabilityStatus {#mlresult-getdeviceavailabilitystatus}
 
-Check availablity of a given camera device. MLCamera instance should only be created & connected when the device is available. 
+Check availablity of a given camera device. [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) instance should only be created & connected when the device is available. 
 
 ```csharp
 public static MLResult GetDeviceAvailabilityStatus(
@@ -389,7 +320,7 @@ public static MLResult GetDeviceAvailabilityStatus(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetDeviceStatus {#mlresult-getdevicestatus}
 
-Poll camera device status. Use DeviceStatusFlag to view specific status bit. Call GetErrorCode(out ErrorType) to obtain the error code if DeviceStatusFlag.Error bit is set. 
+Poll camera device status. Use [DeviceStatusFlag](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-devicestatusflag) to view specific status bit. Call GetErrorCode(out ErrorType) to obtain the error code if [DeviceStatusFlag.Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-error) bit is set. 
 
 ```csharp
 public MLResult GetDeviceStatus(
@@ -430,7 +361,7 @@ public MLResult GetErrorCode(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [MLCamera.ErrorType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-errortype) |error|The ErrorType which triggered DeviceStatusFlag.Error|
+| out [MLCamera.ErrorType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-errortype) |error|The [ErrorType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-errortype) which triggered [DeviceStatusFlag.Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-error)|
 
 
 
@@ -443,12 +374,12 @@ public MLResult GetErrorCode(
 
 -----------
 
-### [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md)[] GetImageStreamCapabilitiesForCamera {#streamcapability-getimagestreamcapabilitiesforcamera}
+### [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) [] GetImageStreamCapabilitiesForCamera {#streamcapability-getimagestreamcapabilitiesforcamera}
 
 ```csharp
-public static StreamCapability[] GetImageStreamCapabilitiesForCamera(
+public static StreamCapability [] GetImageStreamCapabilitiesForCamera(
     MLCamera camera,
-    params CaptureType[] captureTypes
+    params CaptureType [] captureTypes
 )
 ```
 
@@ -458,7 +389,7 @@ public static StreamCapability[] GetImageStreamCapabilitiesForCamera(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) |camera|Provides a multithreadig implementation of the camera api. Handles pause behavior automatically. |
-| params [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype)[] |captureTypes|Capture operation type. |
+| params [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) [] |captureTypes|Capture operation type |
 
 
 
@@ -469,11 +400,11 @@ public static StreamCapability[] GetImageStreamCapabilitiesForCamera(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetStreamCapabilities {#mlresult-getstreamcapabilities}
 
-Get the [StreamCapabilitiesInfo] for the connected camera, which contains the [stream capabilities] for each supported capture stream. 
+Get the [StreamCapabilitiesInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapabilitiesInfo.md) for the connected camera, which contains the [stream capabilities](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) for each supported capture stream. 
 
 ```csharp
 public MLResult GetStreamCapabilities(
-    out MLCamera.StreamCapabilitiesInfo[] streamCapabilities
+    out MLCamera.StreamCapabilitiesInfo [] streamCapabilities
 )
 ```
 
@@ -482,12 +413,12 @@ public MLResult GetStreamCapabilities(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [MLCamera.StreamCapabilitiesInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapabilitiesInfo.md)[] |streamCapabilities|Each item in the array refers to a possible capture stream. Every index within [StreamCapabilitiesInfo.StreamCapabilities] represents a StreamCapability of that particular stream.|
+| out [MLCamera.StreamCapabilitiesInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapabilitiesInfo.md) [] |streamCapabilities|Each item in the array refers to a possible capture stream. Every index within [StreamCapabilitiesInfo.StreamCapabilities] represents a [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) of that particular stream.|
 
 
 **Details**
 
-One camera can support multiple capture streams and each stream has it's own set of [StreamCapabilities] (capture types and resolutions). 
+One camera can support multiple capture streams and each stream has it's own set of [StreamCapabilities](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) (capture types and resolutions). 
 
 
 
@@ -510,7 +441,7 @@ public static bool IsCaptureTypeSupported(
 | Type | Name  | Description  | 
 |--|--|--|
 | [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) |camera|Provides a multithreadig implementation of the camera api. Handles pause behavior automatically. |
-| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type. |
+| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type |
 
 
 
@@ -660,7 +591,7 @@ public delegate void OnDeviceDisconnectedDelegate(
 
 ### delegate void OnDeviceErrorDelegate {#delegate-void-ondeviceerrordelegate}
 
-Delegate to notify the app about camera device error. 
+Delegate to notify the app about camera device error 
 
 ```csharp
 public delegate void OnDeviceErrorDelegate(
@@ -792,7 +723,7 @@ public MLResult PrepareCapture(
 
 ```csharp
 public static bool TryGetBestFitStreamCapabilityFromCollection(
-    StreamCapability[] streamCapabilities,
+    StreamCapability [] streamCapabilities,
     int width,
     int height,
     CaptureType captureType,
@@ -805,10 +736,10 @@ public static bool TryGetBestFitStreamCapabilityFromCollection(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md)[] |streamCapabilities||
+| [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) [] |streamCapabilities||
 | int |width||
 | int |height||
-| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type. |
+| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) |captureType|Capture operation type |
 | out [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) |streamCapability||
 
 
@@ -833,7 +764,7 @@ public static MLResult Uninitialize()
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) UpdateCaptureSettings {#mlresult-updatecapturesettings}
 
-Update capture setting This API updates the capture settings for an active preview/video stream. The API can be used to update capture settings like exposure compensation manual exposure settings like exposure time, iso setting. The capture settings can be changed in MLCamera.Metadata object returned by MLCamera.PrepareCapture() function and then this API can be called to apply the capture settings. 
+Update capture setting This API updates the capture settings for an active preview/video stream. The API can be used to update capture settings like exposure compensation manual exposure settings like exposure time, iso setting. The capture settings can be changed in MLCamera.Metadata object returned by [MLCamera.PrepareCapture()](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlresult-preparecapture) function and then this API can be called to apply the capture settings. 
 
 ```csharp
 public MLResult UpdateCaptureSettings()
@@ -963,7 +894,7 @@ protected MLResult.Code InternalDisconnect(
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if completed successfully. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if failed due to internal error. MLResult.Result will be  MLResult.Code.PermissionDenied  if a required permission is missing. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if completed successfully. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if a required permission is missing. 
 
 
 
@@ -973,7 +904,7 @@ protected MLResult.Code InternalDisconnect(
 
 ```csharp
 protected MLResult InternalGetStreamCapabilities(
-    out MLCamera.StreamCapabilitiesInfo[] streamCapabilities
+    out MLCamera.StreamCapabilitiesInfo [] streamCapabilities
 )
 ```
 
@@ -982,7 +913,7 @@ protected MLResult InternalGetStreamCapabilities(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [MLCamera.StreamCapabilitiesInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapabilitiesInfo.md)[] |streamCapabilities||
+| out [MLCamera.StreamCapabilitiesInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapabilitiesInfo.md) [] |streamCapabilities||
 
 
 
@@ -1004,7 +935,7 @@ protected static MLResult InternalInitialize()
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if connected to camera device successfully. MLResult.Result will be  MLResult.Code.MediaGenericUnexpectedNull  if failed to connect to camera device due to null pointer. MLResult.Result will be  MLResult.Code.Timeout  if failed connecting the camera due to timeout. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if failed due to internal error. MLResult.Result will be  MLResult.Code.AllocFailed  if failed to allocate memory. MLResult.Result will be  MLResult.Code.PermissionDenied  if a required permission is missing. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if connected to camera device successfully. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.MediaGenericUnexpectedNull](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericunexpectednull)  if failed to connect to camera device due to null pointer. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Timeout](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-timeout)  if failed connecting the camera due to timeout. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.AllocFailed](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-allocfailed)  if failed to allocate memory. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if a required permission is missing. 
 
 
 
@@ -1062,7 +993,7 @@ protected MLCameraBase()
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual override void OnApplicationPause(
@@ -1086,13 +1017,84 @@ protected virtual override void OnApplicationPause(
 
 -----------
 
+## Public Attributes
+
+### ConnectionContext {#mlcameraconnectcontext-connectioncontext}
+
+The connection context used to create this [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) object. 
+
+```csharp
+
+public MLCamera.ConnectContext ConnectionContext => cameraConnectContext;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLCamera.ConnectContext](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md) | Camera connection settings.  |
+
+
+
+
+
+-----------
+
+### ConnectionEstablished {#bool-connectionestablished}
+
+Connection status of the camera. 
+
+```csharp
+
+public bool ConnectionEstablished => cameraConnectionEstablished;
+
+```
+
+
+
+
+
+
+-----------
+
+### CurrentFPS {#float-currentfps}
+
+```csharp
+
+public float CurrentFPS => currentFPS;
+
+```
+
+
+
+
+
+
+-----------
+
+### PreviewTexture {#rendertexture-previewtexture}
+
+A reference to Camera Preview texture. 
+
+```csharp
+
+public RenderTexture PreviewTexture => previewTexture;
+
+```
+
+
+
+
+
+
+-----------
+
 ## Protected Attributes
 
 ### byteArrays {#byte-bytearrays}
 
 ```csharp
 
-protected byte[][] byteArrays;
+protected byte [][] byteArrays;
 
 ```
 
@@ -1105,7 +1107,7 @@ protected byte[][] byteArrays;
 
 ### cameraCaptureConfig {#mlcameracaptureconfig-cameracaptureconfig}
 
-Last used camera Capture Config. 
+Last used camera Capture Config 
 
 ```csharp
 
@@ -1272,7 +1274,7 @@ protected bool isCapturingVideo = false;
 
 ### previewRenderer {#mlcamerarenderer-previewrenderer}
 
-Preview Renderer;. 
+Preview [Renderer](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.Renderer.md); 
 
 ```csharp
 
@@ -1530,7 +1532,7 @@ public MLCamera.OnPreviewBufferAvailableDelegate OnPreviewBufferAvailable()
 
 ### OnPreviewCaptureCompleted {#mlcameraonpreviewcapturecompleteddelegate-onpreviewcapturecompleted}
 
-Callback is invoked when a preview video frame buffer is available with MLCamera.CaptureType.Preview. Not valid for MR/VR Capture since it does not have preview support. 
+Callback is invoked when a preview video frame buffer is available with [MLCamera.CaptureType.Preview](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-preview). Not valid for MR/VR Capture since it does not have preview support. 
 
 ```csharp
 public MLCamera.OnPreviewCaptureCompletedDelegate OnPreviewCaptureCompleted()
@@ -1613,10 +1615,10 @@ Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use Frame
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | | None Still Capture.   |
-| _15FPS | | Specified 15FPS.   |
-| _30FPS | | Specified 30FPS.   |
-| _60FPS | | Specified 60FPS.   |
+| None | | None Still Capture   |
+| _15FPS | | Specified 15FPS   |
+| _30FPS | | Specified 30FPS   |
+| _60FPS | | Specified 60FPS   |
 
 
 
@@ -1629,12 +1631,12 @@ Capture Frame Rate Call MLCameraPrepareCapture to configure frame rate use Frame
 
 ### CaptureType {#enums-capturetype}
 
-Capture operation type. 
+Capture operation type 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Image | | To capture an image.   |
-| Video | | To capture a video.   |
+| Image | | To capture an image   |
+| Video | | To capture a video   |
 | Preview | | To capture a video and and access the raw buffer of the frames.   |
 
 
@@ -1652,9 +1654,9 @@ Flags to describe various modules in camera pipeline.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| CamOnly | | Camera only frame capture.   |
+| CamOnly | | Camera only frame capture   |
 | VirtualOnly | | virtual only capture   |
-| MR | | Mixed Reality capture.   |
+| MR | | Mixed Reality capture   |
 
 
 
@@ -1671,8 +1673,8 @@ Client can implement polling mechanism to retrieve device status and use these m
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Connected | 1 << 0| Connected.   |
-| Idle | 1 << 1| Idle.   |
+| Connected | 1 << 0| Connected   |
+| Idle | 1 << 1| Idle   |
 | Streaming | 1 << 2| Opened.   |
 | Disconnected | 1 << 3| Disconnected.   |
 | Error | 1 << 4| Error. Call MLCameraGetErrorCode() to obtain the error code.   |
@@ -1706,16 +1708,16 @@ Camera Disconnect Reason.
 
 ### ErrorType {#enums-errortype}
 
-Camera errors. 
+Camera errors 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | 0| No error.   |
-| Invalid | | Invalid state.   |
-| Disabled | | Camera disabled.   |
-| DeviceFailed | | Camera device failed.   |
-| ServiceFailed | | Camera service failed.   |
-| CaptureFailed | | Capture failed.   |
+| None | 0| No error   |
+| Invalid | | Invalid state   |
+| Disabled | | Camera disabled   |
+| DeviceFailed | | Camera device failed   |
+| ServiceFailed | | Camera service failed   |
+| CaptureFailed | | Capture failed   |
 
 
 
@@ -1733,7 +1735,7 @@ Logical Camera identifiers available for access.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | Main | 0| x86 logical camera   |
-| CV | | CV logical camera.   |
+| CV | | CV logical camera   |
 
 
 
@@ -1763,16 +1765,16 @@ Comment Needed!
 
 ### MRQuality {#enums-mrquality}
 
-MR Video Quality enumeration. 
+MR Video Quality enumeration 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | _648x720 | 1| Specifies 648 x 720 resolution. Aspect ratio: 9x10.   |
 | _972x1080 | 2| Specifies 972 x 1080 resolution. Aspect ratio: 9x10.   |
-| _1944x2160 | 3| Specifies 1944 x 2160 resolution. Aspect ratio: 9x10. CaptureFrameRate.&#95;60FPS is not supported for this quality mode.   |
+| _1944x2160 | 3| Specifies 1944 x 2160 resolution. Aspect ratio: 9x10. [CaptureFrameRate.&#95;60FPS](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-60fps) is not supported for this quality mode.   |
 | _960x720 | 4| Specifies 960 x 720 resolution. Aspect ratio: 4x3.   |
 | _1440x1080 | 5| Specifies 1440 x 1080 resolution. Aspect ratio: 4x3.   |
-| _2880x2160 | 6| Specifies 2880 x 2160 resolution. Aspect ratio: 4x3. CaptureFrameRate.&#95;60FPS is not supported for this quality mode.   |
+| _2880x2160 | 6| Specifies 2880 x 2160 resolution. Aspect ratio: 4x3. [CaptureFrameRate.&#95;60FPS](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-60fps) is not supported for this quality mode.   |
 
 
 
@@ -1808,9 +1810,9 @@ The metadata for the color correction mode.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| TransformMatrix | 0| The color correction mode: Transform Matrix.   |
-| Fast | | The color correction mode: Fast.   |
-| HighQuality | | The color correction mode: High Quality.   |
+| TransformMatrix | 0| The color correction mode: Transform Matrix   |
+| Fast | | The color correction mode: Fast   |
+| HighQuality | | The color correction mode: High Quality   |
 
 
 
@@ -1827,10 +1829,10 @@ The metadata for the control AE anti banding mode.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Off | 0| The control AE anti banding mode: Off.   |
-| FiftyHz | | The control AE anti banding mode: 50hz.   |
-| SixtyHz | | The control AE anti banding mode: 60hz.   |
-| Auto | | The control AE anti banding mode: Auto.   |
+| Off | 0| The control AE anti banding mode: Off   |
+| FiftyHz | | The control AE anti banding mode: 50hz   |
+| SixtyHz | | The control AE anti banding mode: 60hz   |
+| Auto | | The control AE anti banding mode: Auto   |
 
 
 
@@ -1847,8 +1849,8 @@ The metadata for the control AE lock.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Off | 0| The control AE lock: Off.   |
-| On | | The control AE lock: On.   |
+| Off | 0| The control AE lock: Off   |
+| On | | The control AE lock: On   |
 
 
 
@@ -1883,12 +1885,12 @@ The metadata for the control AE state.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Inactive | 0| The control AE state: Inactive.   |
-| Searching | | The control AE state: Searching.   |
-| Converged | | The control AE state: Converged.   |
-| Locked | | The control AE state: Locked.   |
-| FlashRequired | | The control AE state: Flash Required.   |
-| PreCapture | | The control AE state: Pre-capture.   |
+| Inactive | 0| The control AE state: Inactive   |
+| Searching | | The control AE state: Searching   |
+| Converged | | The control AE state: Converged   |
+| Locked | | The control AE state: Locked   |
+| FlashRequired | | The control AE state: Flash Required   |
+| PreCapture | | The control AE state: Pre-capture   |
 
 
 
@@ -1905,8 +1907,8 @@ The metadata for the control AWB lock.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Off | 0| The control AWB lock: Off.   |
-| On | | The control AWB lock: On.   |
+| Off | 0| The control AWB lock: Off   |
+| On | | The control AWB lock: On   |
 
 
 
@@ -1923,15 +1925,15 @@ The metadata for the control AWB mode.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Off | 0| The control AWB mode: Off.   |
-| Auto | | The control AWB mode: Auto.   |
-| Incandescent | | The control AWB mode: Incandescent.   |
-| Fluorescent | | The control AWB mode: Fluorescent.   |
-| WarmFluorescent | | The control AWB mode: Warm Fluorescent.   |
-| Daylight | | The control AWB mode: Daylight.   |
-| CloudyDaylight | | The control AWB mode: Cloudy Day Light.   |
-| Twilight | | The control AWB mode: Twilight.   |
-| Shade | | The control AWB mode: Shade.   |
+| Off | 0| The control AWB mode: Off   |
+| Auto | | The control AWB mode: Auto   |
+| Incandescent | | The control AWB mode: Incandescent   |
+| Fluorescent | | The control AWB mode: Fluorescent   |
+| WarmFluorescent | | The control AWB mode: Warm Fluorescent   |
+| Daylight | | The control AWB mode: Daylight   |
+| CloudyDaylight | | The control AWB mode: Cloudy Day Light   |
+| Twilight | | The control AWB mode: Twilight   |
+| Shade | | The control AWB mode: Shade   |
 
 
 
@@ -1948,10 +1950,10 @@ The metadata for the control AWB state.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Inactive | 0| The control AWB state: Inactive.   |
-| Searching | | The control AWB state: Searching.   |
-| Converged | | The control AWB state: Converged.   |
-| Locked | | The control AWB state: Locked.   |
+| Inactive | 0| The control AWB state: Inactive   |
+| Searching | | The control AWB state: Searching   |
+| Converged | | The control AWB state: Converged   |
+| Locked | | The control AWB state: Locked   |
 
 
 
@@ -1968,13 +1970,13 @@ The metadata for  scaler  available formats.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| RAW16 | 0x20| RAW16 Format.   |
-| RAW_OPAQUE | 0x24| RAW OPAQUE Format.   |
-| YV12 | 0x32315659| YV12 Format.   |
+| RAW16 | 0x20| RAW16 Format   |
+| RAW_OPAQUE | 0x24| RAW OPAQUE Format   |
+| YV12 | 0x32315659| YV12 Format   |
 | YCrCb_420_SP | 0x11|  YCrCb 420 SP Format   |
-| IMPLEMENTATION_DEFINED | 0x22| Implementation Defined.   |
+| IMPLEMENTATION_DEFINED | 0x22| Implementation Defined   |
 | YCbCr_420_888 | 0x23|  YCbCr 420 888 Format   |
-| BLOB | 0x21| BLOB Format.   |
+| BLOB | 0x21| BLOB Format   |
 
 
 
@@ -1991,8 +1993,8 @@ The metadata for  scaler  available stream configurations.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| OUTPUT | 0| The  scaler  available stream configuration: Output.   |
-| INPUT | | The  scaler  available stream configuration: Input.   |
+| OUTPUT | 0| The  scaler  available stream configuration: Output   |
+| INPUT | | The  scaler  available stream configuration: Input   |
 
 
 
@@ -2005,7 +2007,7 @@ The metadata for  scaler  available stream configurations.
 
 ### OutputFormat {#enums-outputformat}
 
-Captured output format. 
+Captured output format 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

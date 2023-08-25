@@ -11,7 +11,7 @@ title: MagicLeapHandDevice
 
 
 
-Inherits from: <br></br>UnityEngine.InputSystem.InputDevice
+Inherits from: <br></br>InputDevice
 
 
 

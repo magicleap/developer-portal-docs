@@ -117,7 +117,7 @@ public delegate void OnMicrophoneMuteChangedDelegate(
 
 ### StopAPI {#override-stopapi}
 
-Called by MLAutoAPISingleton on destruction. 
+Called by [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) on destruction 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -134,7 +134,7 @@ protected virtual override MLResult.Code StopAPI()
 
 ### Update {#override-void-update}
 
-Called every device frame. 
+Called every device frame 
 
 ```csharp
 protected virtual override void Update()

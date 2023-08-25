@@ -23,6 +23,7 @@ Common APIs types.
 | struct | **[MLColor32](/api-ref/api/Modules/group___common/struct_m_l_color32.md)**  |
 | struct | **[MLColor4f](/api-ref/api/Modules/group___common/struct_m_l_color4f.md)**  |
 | struct | **[MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md)**  |
+| struct | **[MLPose](/api-ref/api/Modules/group___common/struct_m_l_pose.md)**  |
 
 ## Types
 
@@ -40,6 +41,7 @@ Common APIs types.
 | typedef struct [MLColor4f](/api-ref/api/Modules/group___common/struct_m_l_color4f.md) | **[MLColor4f](/api-ref/api/Modules/group___common/group___common.md#struct-mlcolor4f)**  |
 | typedef struct [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) | **[MLUUID](/api-ref/api/Modules/group___common/group___common.md#struct-mluuid)**  |
 | typedef int64_t | **[MLTime](/api-ref/api/Modules/group___common/group___common.md#int64-t-mltime)**  |
+| typedef struct [MLPose](/api-ref/api/Modules/group___common/struct_m_l_pose.md) | **[MLPose](/api-ref/api/Modules/group___common/group___common.md#struct-mlpose)**  |
 
 
 ## Types Documentation
@@ -241,6 +243,23 @@ Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be 
 
 
 
+
+
+
+-----------
+
+### MLPose {#struct-mlpose}
+
+```cpp
+typedef struct MLPose MLPose;
+```
+
+
+Geometric relationship between two coordinate frames. 
+
+
+
+[More Info](/api-ref/api/Modules/group___common/struct_m_l_pose.md)
 
 
 

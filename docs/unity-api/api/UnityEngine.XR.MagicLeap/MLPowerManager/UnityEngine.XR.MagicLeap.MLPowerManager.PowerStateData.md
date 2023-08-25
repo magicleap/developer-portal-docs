@@ -23,13 +23,13 @@ Array of PowerState elements.
 
 ```csharp
 
-public PowerState[] PowerStates;
+public PowerState [] PowerStates;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [PowerState](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-powerstate)[] | Power states.  |
+| [PowerState](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-powerstate) [] | Power states.  |
 
 
 
