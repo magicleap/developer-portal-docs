@@ -46,4 +46,4 @@ An occlusion mesh is a representation of the real-world environment, which helps
 
 ## API Resources
 
-You can read more about what the Object Occlusion API offers in the MagicLeap documentation: [Occlusion](/docs/api-ref/api/Modules/group___occlusion.md).
+You can read more about what the Object Occlusion API offers in the MagicLeap documentation: [Occlusion](/docs/api-ref/api/Modules/group___occlusion/group___occlusion.md).
