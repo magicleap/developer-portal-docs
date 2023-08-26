@@ -92,14 +92,14 @@ To set up the versions of the Android SDK and Android NDK required for this prev
 
 To download the version of Unreal Engine for this preview, clone it from the Magic Leap fork of the Epic Games GitHub repository:
 
-1. Log in to [GitHub ](https://github.com/) with the credentials for your public GitHub account.
+1. Log in to [GitHub](https://github.com/) with the credentials for your public GitHub account.
 2. In Windows Command Prompt, run this command:
 
 ```bash
 git clone --single-branch -b 5.1.1-release-ml2 https://github.com/MagicLeapUnreal/UnrealEngine.git
 ```
   
-   The `--single-branch ` argument is optional. It reduces the size of the download.
+   The `--single-branch` argument is optional. It reduces the size of the download.
 
 ### Download the ML2 Unreal SDK
 
