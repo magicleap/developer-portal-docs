@@ -1,0 +1,10 @@
+{
+  "label": "Perception",
+  "position": 1,
+  "collapsed": false,
+   "link": {
+    "type": "generated-index",
+    "title": "Perception",
+    "description": "Learn how to use Magic Leap's perception technology to create applications that understand your environment."
+  }
+}
