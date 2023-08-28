@@ -49,7 +49,6 @@ You’ll need the preview version of Unreal Engine 5 with the Magic Leap 2 SDK f
     <Image url= {require("/img/unreal-5/previewdocs/unreal-set-light-details.png")} >Set the sky light's details in the Details panel</Image>
 
 :::tip
-
 If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gear icon and check **Show Engine Content**.
 :::
 
@@ -97,10 +96,10 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 5. With the Camera component selected, click **+Add** again and add a Capsule Collision component.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-add-capsule-collision.png")} >Add a capsule collison to the camera component</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-add-capsule-collision.png")} >Add a capsule collison to the camera component in the Components panel</Image>
 
     You hierarchy should now look like this:
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-hierarchy-with-capsule-collision.png")} >Your hierarchy with the camera and capsule collision</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-hierarchy-with-capsule-collision.png")} >Your hierarchy  in the Components panel</Image>
 
 6. With the capsule selected, in the Properties panel:
 
@@ -122,11 +121,11 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 2. In the project settings window, go to **Maps & Modes**. Under Default Maps, set **Editor Startup Map** and **Game Default Map** to the project map that you created.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-default-maps.png")} >Set the default maps setting for your project </Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-default-maps.png")} >Set the default maps setting for your project in Project Settings</Image>
 
 3. Under Default Modes, set Default GameMode to **XrGameMode**, the game mode base blueprint you created.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-game-mode-base.png")} >Set the game mode base</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-game-mode-base.png")} >Set the game mode base in Project Settings</Image>
 
 4. From the main Unreal Editor menu, select **Edit > Plugins**. The plugins menu opens. Select **Augmented Reality**.
 
@@ -137,7 +136,7 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
     b. Enable **Magic Leap OpenXR** if it is not enabled.
 
     c. If you made changes, you’ll be prompted to restart the Unreal Editor. You can make both changes before restarting. Click **Restart Now** to restart the Unreal Editor if prompted.
-    
+
     d. Close the plugins window.
 
 6. In the Unreal Editor main menu, select **Edit > Project Settings**. In the Project - Description list, go to Settings. Select **Start in VR**.
@@ -146,13 +145,13 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 7. Under Project Settings, go to Platforms and select **Android**. Under Android, go to APK Packaging. Click the **Configure Now** button in the red box.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-configure-now-android.png")} >Configure your project for the Android platform</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-configure-now-android.png")} >Configure your project for the Android platform in Project Settings</Image>
 
     The red box turns green.
 
 8. Under APK Packaging, select **Package game data inside .apk**.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-apk-packaging.png")} >Set .apk packaging</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-apk-packaging.png")} >Set .apk packaging in Project Settings</Image>
 
 9. Under Android, go to **Build**. Under Build, set these options:
     - Deselect **Support arm64 [aka arm64-v8a]**.
@@ -164,14 +163,14 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 10. Under Android, go to **Launch Images**. Under Launch Images, deselect **Show launch image**.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-deselect-launch-image.png")} >Disable showing launch image</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-deselect-launch-image.png")} >Disable showing launch image in Project Settings</Image>
 
 11. Under Android, go to **Multi Texture Formats**. Under Multi Texture Formats, set these options:
     - Deselect **Include ETC2 textures**.
     - Select **Include DXT textures**.
     - Deselect **Include ASTC textures**.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-multi-texture-formats.png")} >Set multi-texture formats</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-multi-texture-formats.png")} >Set multi-texture formats in Project Settings</Image>
 
 12. Close the project setting window.
 

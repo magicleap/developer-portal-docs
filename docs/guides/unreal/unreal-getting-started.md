@@ -22,7 +22,6 @@ Vulkan is the only graphics pipeline supported with the ML2 Unreal SDK. Unreal E
 - Android dependencies. Setting up Android for this preview release is a little different than what’s described in [How to Set Up Android SDK and NDK For Your Unreal Engine Development Environment](https://docs.unrealengine.com/5.1/en-US/how-to-set-up-android-sdk-and-ndk-for-your-unreal-engine-development-environment/) in the Unreal Engine 5 documentation site. See [Install Android dependencies](#install-android-dependencies) in this guide for instructions.
 
 :::tip
-
 You’ll be building the Unreal Engine from source code, which can take several hours or more. So plan ahead.
 :::
 
@@ -69,7 +68,6 @@ If you don’t already have OpenJDK-17 installed:
 3. Set your `JAVA_HOME` environment variable to the path of the `jdk-17` folder.
 
 :::tip
-
 If Unity Editor is already installed on the machine that you are installing the Unreal Engine on, rename the folder where Android Studio is already installed to so that the version you install for Unreal Engine can be saved to the default location.
 :::
 
@@ -108,12 +106,13 @@ To download the ML2 Unreal SDK from the Magic Leap Hub:
 2. In the Bundles tab, select the **Unreal** tile.
 3. Select **Unreal** in Change Summary to download the ML Unreal SDK, documentation, sample apps, and integration tests. Click **Apply Changes** to download.
 
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-download-from-ml-hub.png")} >Set multi-texture formats in Project Settings</Image>
+
 ### Set up plugins and projects
 
 You can use the plugins in the ML Unreal SDK as Project plugins or Engine plugins. You can copy the ML Unreal SDK plugins to your preferred location or create a symbolic link.
 
 :::tip
-
 You might need elevated privileges to create a symbolic link. Make sure you run the Windows Command prompt from an account that has administrator privileges. If you still get a message saying you don’t have sufficient privileges to run the `mklink` command, make sure your Windows computer has the Developer Mode setting enabled.
 :::
 
