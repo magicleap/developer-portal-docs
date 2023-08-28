@@ -65,7 +65,7 @@ public ulong SurfaceHandle { get; set; }
 
 ```csharp
 
-public float[] Transform { get; set; }
+public float [] Transform { get; set; }
 
 ```
 

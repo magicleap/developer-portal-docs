@@ -38,7 +38,7 @@ public string Name { get; set; }
 
 ```csharp
 
-public Permission[] Permissions { get; set; }
+public Permission [] Permissions { get; set; }
 
 ```
 

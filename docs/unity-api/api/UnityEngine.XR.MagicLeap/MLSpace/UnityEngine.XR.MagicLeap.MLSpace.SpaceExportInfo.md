@@ -9,7 +9,7 @@ summary: a structure containing information about the space export settings. thi
 
 
 
-A structure containing information about the Space export settings. This structure must be initialized by calling #MLSpaceExportInfoInit before use.   
+A structure containing information about the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) export settings. This structure must be initialized by calling #MLSpaceExportInfoInit before use.   
 
 
 
@@ -45,7 +45,7 @@ public static SpaceExportInfo Create(
 
 ### SpaceId {#mluuid-spaceid}
 
-#MLUUID of the Space that needs to be exported. 
+#MLUUID of the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) that needs to be exported. 
 
 ```csharp
 

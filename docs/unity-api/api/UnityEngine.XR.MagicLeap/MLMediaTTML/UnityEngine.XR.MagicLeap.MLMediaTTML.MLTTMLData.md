@@ -39,7 +39,7 @@ public MLTTMLImage Bitmap { get; set; }
 
 ### BitmapHeight {#float-bitmapheight}
 
-The cue bitmap height as a fraction of the viewport size or MLMediaTTML.MLTTMLDimen&#95;Unset   if the bitmap should be displayed at its natural height given the bitmap dimensions and the specified #size. 
+The cue bitmap height as a fraction of the viewport size or [MLMediaTTML.MLTTMLDimen&#95;Unset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#const-float-mlttmldimen-unset)   if the bitmap should be displayed at its natural height given the bitmap dimensions and the specified #size. 
 
 ```csharp
 
@@ -73,7 +73,7 @@ public long EndTimeMs { get; set; }
 
 ### Line {#float-line}
 
-The position of the #line&#95;anchor of the cue box within the viewport in the direction orthogonal to the writing direction, or MLMediaTTML.MLTTMLDimen&#95;Unset, LineType, MLTTMLLineType.Fraction   . When set, the interpretation of the value depends on the value of #line&#95;type. For horizontal text and  equal to , this is the fractional vertical position relative to the top of the viewport. 
+The position of the #line&#95;anchor of the cue box within the viewport in the direction orthogonal to the writing direction, or [MLMediaTTML.MLTTMLDimen&#95;Unset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#const-float-mlttmldimen-unset), [LineType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.MLTTMLData.md#mlttmllinetype-linetype), [MLTTMLLineType.Fraction](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#enums-fraction)   . When set, the interpretation of the value depends on the value of #line&#95;type. For horizontal text and  equal to , this is the fractional vertical position relative to the top of the viewport. 
 
 ```csharp
 
@@ -110,7 +110,7 @@ public MLTTMLAnchorType LineAnchor { get; set; }
 
 ### LineType {#mlttmllinetype-linetype}
 
-The cue line type. MLTTMLLineType.Fraction, MLTTMLLineType.Number, LineAnchor, MLTTMLLineType.Number   indicates that #line is a fractional position within the viewport.  indicates that #line is a line number, where the size of each line is taken to be the size of the first line of the cue. When #line is greater than or equal to 0 lines count from the start of the viewport, with 0 indicating zero offset from the start edge. When #line is negative lines count from the end of the viewport, with -1 indicating zero offset from the end edge. For horizontal text the line spacing is the height of the first line of the cue, and the start and end of the viewport are the top and bottom respectively. Note that it's particularly important to consider the effect of  when using . 
+The cue line type. [MLTTMLLineType.Fraction](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#enums-fraction), [MLTTMLLineType.Number](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#enums-number), [LineAnchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.MLTTMLData.md#mlttmlanchortype-lineanchor), [MLTTMLLineType.Number](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#enums-number)   indicates that #line is a fractional position within the viewport.  indicates that #line is a line number, where the size of each line is taken to be the size of the first line of the cue. When #line is greater than or equal to 0 lines count from the start of the viewport, with 0 indicating zero offset from the start edge. When #line is negative lines count from the end of the viewport, with -1 indicating zero offset from the end edge. For horizontal text the line spacing is the height of the first line of the cue, and the start and end of the viewport are the top and bottom respectively. Note that it's particularly important to consider the effect of  when using . 
 
 ```csharp
 
@@ -130,7 +130,7 @@ public MLTTMLLineType LineType { get; set; }
 
 ### Position {#float-position}
 
-The fractional position of the #position&#95;anchor of the cue box within the viewport in the direction orthogonal to #line, or MLMediaTTML.MLTTMLDimen&#95;Unset   . For horizontal text, this is the horizontal position relative to the left of the viewport. Note that positioning is relative to the left of the viewport even in the case of right-to-left text. 
+The fractional position of the #position&#95;anchor of the cue box within the viewport in the direction orthogonal to #line, or [MLMediaTTML.MLTTMLDimen&#95;Unset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#const-float-mlttmldimen-unset)   . For horizontal text, this is the horizontal position relative to the left of the viewport. Note that positioning is relative to the left of the viewport even in the case of right-to-left text. 
 
 ```csharp
 
@@ -167,7 +167,7 @@ public MLTTMLAnchorType PositionAnchor { get; set; }
 
 ### Size {#float-size}
 
-The cue box size in the writing direction, as a fraction of the viewport size or MLMediaTTML.MLTTMLDimen&#95;Unset   . 
+The cue box size in the writing direction, as a fraction of the viewport size or [MLMediaTTML.MLTTMLDimen&#95;Unset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#const-float-mlttmldimen-unset)   . 
 
 ```csharp
 
@@ -238,7 +238,7 @@ public MLTTMLLayoutAlignment TextAlignment { get; set; }
 
 ### TextSize {#float-textsize}
 
-The cue default text size, or MLMediaTTML.MLTTMLDimen&#95;Unset   if this cue has no default. 
+The cue default text size, or [MLMediaTTML.MLTTMLDimen&#95;Unset](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#const-float-mlttmldimen-unset)   if this cue has no default. 
 
 ```csharp
 
@@ -265,7 +265,7 @@ public MLTTMLTextSizeType TextSizeType { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLTTMLTextSizeType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#enums-mlttmltextsizetype) | The cue default text size type;.  |
+| [MLTTMLTextSizeType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md#enums-mlttmltextsizetype) | The cue default text size type;  |
 
 
 
@@ -292,7 +292,7 @@ public uint WindowColor { get; set; }
 
 ### WindowColorSet {#bool-windowcolorset}
 
-Specifies whether or not the WindowColor   property is set. 
+Specifies whether or not the [WindowColor](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.MLTTMLData.md#uint-windowcolor)   property is set. 
 
 ```csharp
 

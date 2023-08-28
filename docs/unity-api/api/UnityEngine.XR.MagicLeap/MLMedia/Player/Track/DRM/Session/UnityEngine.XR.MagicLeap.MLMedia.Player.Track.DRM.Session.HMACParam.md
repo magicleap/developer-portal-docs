@@ -21,7 +21,7 @@ title: HMACParam
 ```csharp
 public HMACParam(
     string algorithm,
-    byte[] keySetId
+    byte [] keySetId
 )
 ```
 
@@ -31,7 +31,7 @@ public HMACParam(
 | Type | Name  | Description  | 
 |--|--|--|
 | string |algorithm||
-| byte[] |keySetId||
+| byte [] |keySetId||
 
 
 
@@ -61,7 +61,7 @@ public readonly string Algorithm;
 
 ```csharp
 
-public readonly byte[] KeySetId;
+public readonly byte [] KeySetId;
 
 ```
 

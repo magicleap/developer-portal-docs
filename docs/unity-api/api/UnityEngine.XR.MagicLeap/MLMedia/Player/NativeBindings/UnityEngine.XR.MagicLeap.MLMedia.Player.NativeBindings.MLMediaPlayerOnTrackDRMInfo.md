@@ -9,7 +9,7 @@ summary: mediaplayer track drm info callback info.
 
 
 
-MediaPlayer Track DRM Info callback Info.   
+MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) DRM Info callback Info.   
 
 
 
@@ -36,7 +36,7 @@ public IntPtr Data;
 
 ### TrackInfo {#intptr-trackinfo}
 
-Pointer to MLMediaPlayerTrackDRMInfo. 
+Pointer to [MLMediaPlayerTrackDRMInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.MLMediaPlayerTrackDRMInfo.md). 
 
 ```csharp
 

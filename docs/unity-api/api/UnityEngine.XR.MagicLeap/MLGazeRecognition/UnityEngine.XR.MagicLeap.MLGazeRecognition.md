@@ -146,8 +146,8 @@ A set of mutually-exclusive behaviors that the Gaze Recognition system can repor
 | Fixation | | User is fixating, eye position is stable.   |
 | Pursuit | | User is pursuing, eye velocity is low but nonzero.   |
 | Saccade | | User is making a saccade, eye velocity is high.   |
-| WinkLeft | | User is winking with the left eye.   |
-| WinkRight | | User is winking with the right eye.   |
+| WinkLeft | | User is winking with the left eye   |
+| WinkRight | | User is winking with the right eye   |
 
 
 

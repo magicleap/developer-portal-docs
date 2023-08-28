@@ -1,7 +1,3 @@
 {
-  "label": "MediaStream",
-  "link": {
-    "id": "UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream",
-    "type": "doc"
-  }
+  "label": "MediaStream"
 }

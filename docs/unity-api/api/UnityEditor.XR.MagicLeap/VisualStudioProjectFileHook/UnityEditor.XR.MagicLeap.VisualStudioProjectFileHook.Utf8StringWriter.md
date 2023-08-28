@@ -1,6 +1,6 @@
 ---
 title: Utf8StringWriter
-summary: necessary for xlinq to save the xml project file in utf8. 
+summary: necessary for xlinq to save the xml project file in utf8 
 
 ---
 
@@ -9,7 +9,7 @@ summary: necessary for xlinq to save the xml project file in utf8.
 
 
 
-Necessary for XLinq to save the xml project file in utf8.   
+Necessary for XLinq to save the xml project file in utf8   
 
 
 Inherits from: <br></br>StringWriter
@@ -17,13 +17,13 @@ Inherits from: <br></br>StringWriter
 
 
 
-## Public Fields
+## Public Attributes
 
 ### Encoding {#override-encoding-encoding}
 
 ```csharp
 
-public override Encoding Encoding { get; set; }
+public override Encoding Encoding => Encoding.UTF8;
 
 ```
 

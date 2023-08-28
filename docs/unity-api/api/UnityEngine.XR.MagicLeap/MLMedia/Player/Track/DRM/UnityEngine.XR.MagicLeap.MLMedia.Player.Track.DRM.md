@@ -19,7 +19,7 @@ MediaDRM to obtain the content keys for decrypting protected media streams.
 
 ### TrackType {#tracktype-tracktype}
 
-Type of track this DRM is used for. 
+Type of track this [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) is used for. 
 
 ```csharp
 
@@ -41,7 +41,7 @@ public Track.Type TrackType { get; set; }
 
 ### [Session](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/Session/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Session.md) CreateSession {#session-createsession}
 
-Creates a new session for the DRM with the provided track information. 
+Creates a new session for the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) with the provided track information. 
 
 ```csharp
 public Session CreateSession(
@@ -65,7 +65,7 @@ public Session CreateSession(
 
 ###  DRM {#functions-drm}
 
-Provides initilization of the DRM class with the two given parameters. 
+Provides initilization of the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) class with the two given parameters. 
 
 ```csharp
 public DRM(
@@ -79,8 +79,8 @@ public DRM(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) |mlPlayer|The media player this DRM is associated with.|
-| [Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Info.md) |trackInfo|The info from the media player track that this DRM is associated with.|
+| [MLMedia.Player](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/UnityEngine.XR.MagicLeap.MLMedia.Player.md) |mlPlayer|The media player this [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) is associated with.|
+| [Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Info.md) |trackInfo|The info from the media player track that this [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) is associated with.|
 
 
 
@@ -91,12 +91,12 @@ public DRM(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetPropertyByteArray {#mlresult-getpropertybytearray}
 
-_**CURRENTLY UNTESTED ON CAPI**_ Read a DRM engine plugin byte array property value, given the property name. 
+_**CURRENTLY UNTESTED ON CAPI**_ Read a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin byte array property value, given the property name. 
 
 ```csharp
 public MLResult GetPropertyByteArray(
     Property property,
-    out byte[] propertyValue
+    out byte [] propertyValue
 )
 ```
 
@@ -106,7 +106,7 @@ public MLResult GetPropertyByteArray(
 | Type | Name  | Description  | 
 |--|--|--|
 | Property |property||
-| out byte[] |propertyValue||
+| out byte [] |propertyValue||
 
 
 
@@ -117,7 +117,7 @@ public MLResult GetPropertyByteArray(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetPropertyString {#mlresult-getpropertystring}
 
-_**CURRENTLY UNTESTED ON CAPI**_ Read a DRM engine plugin String property value, given the property name. 
+_**CURRENTLY UNTESTED ON CAPI**_ Read a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin String property value, given the property name. 
 
 ```csharp
 public MLResult GetPropertyString(
@@ -147,8 +147,8 @@ _**CURRENTLY UNTESTED ON CAPI**_ Access secure stop by secure stop ID.
 
 ```csharp
 public MLResult GetSecureStop(
-    byte[] secureStopId,
-    out byte[] secureStop
+    byte [] secureStopId,
+    out byte [] secureStop
 )
 ```
 
@@ -157,8 +157,8 @@ public MLResult GetSecureStop(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |secureStopId||
-| out byte[] |secureStop||
+| byte [] |secureStopId||
+| out byte [] |secureStop||
 
 
 
@@ -210,7 +210,7 @@ public MLResult IsCryptoSchemeSupported(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |uuid|Universally unique identifier. |
+| MagicLeapNativeBindings.MLUUID |uuid||
 | string |mime||
 | out bool |isSupported||
 
@@ -305,7 +305,7 @@ A provision request/response exchange occurs between the app and a provisioning 
 
 ```csharp
 public MLResult ProvisionRequest(
-    out byte[] requestData,
+    out byte [] requestData,
     out string defaultURL
 )
 ```
@@ -315,7 +315,7 @@ public MLResult ProvisionRequest(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out byte[] |requestData||
+| out byte [] |requestData||
 | out string |defaultURL||
 
 
@@ -327,11 +327,11 @@ public MLResult ProvisionRequest(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ProvisionResponse {#mlresult-provisionresponse}
 
-After a provision response is received by the app, it is provided to the DRM engine plugin using this method. 
+After a provision response is received by the app, it is provided to the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using this method. 
 
 ```csharp
 public MLResult ProvisionResponse(
-    byte[] responseData
+    byte [] responseData
 )
 ```
 
@@ -340,7 +340,7 @@ public MLResult ProvisionResponse(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |responseData||
+| byte [] |responseData||
 
 
 
@@ -370,7 +370,7 @@ _**CURRENTLY UNTESTED ON CAPI**_ Process the SecureStop server response message.
 
 ```csharp
 public MLResult ReleaseSecureStops(
-    byte[] secureStops
+    byte [] secureStops
 )
 ```
 
@@ -379,7 +379,7 @@ public MLResult ReleaseSecureStops(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |secureStops||
+| byte [] |secureStops||
 
 
 
@@ -390,12 +390,12 @@ public MLResult ReleaseSecureStops(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetPropertyByteArray {#mlresult-setpropertybytearray}
 
-_**CURRENTLY UNTESTED ON CAPI**_ Set a DRM engine plugin byte array property value. 
+_**CURRENTLY UNTESTED ON CAPI**_ Set a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin byte array property value. 
 
 ```csharp
 public MLResult SetPropertyByteArray(
     Property property,
-    byte[] propertyValue
+    byte [] propertyValue
 )
 ```
 
@@ -405,7 +405,7 @@ public MLResult SetPropertyByteArray(
 | Type | Name  | Description  | 
 |--|--|--|
 | Property |property||
-| byte[] |propertyValue||
+| byte [] |propertyValue||
 
 
 
@@ -416,7 +416,7 @@ public MLResult SetPropertyByteArray(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetPropertyString {#mlresult-setpropertystring}
 
-_**CURRENTLY UNTESTED ON CAPI**_ Set a DRM engine plugin String property value. 
+_**CURRENTLY UNTESTED ON CAPI**_ Set a [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin String property value. 
 
 ```csharp
 public MLResult SetPropertyString(
@@ -444,7 +444,7 @@ public MLResult SetPropertyString(
 
 ### OnEvent {#oneventdelegate-onevent}
 
-Event used to listen for different drm events. 
+[Event](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Event.md) used to listen for different drm events. 
 
 ```csharp
 public OnEventDelegate OnEvent()
@@ -459,7 +459,7 @@ public OnEventDelegate OnEvent()
 
 ### OnExpirationUpdate {#onexpirationupdatedelegate-onexpirationupdate}
 
-Event used to listen for when there is an update in expiration. 
+[Event](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Event.md) used to listen for when there is an update in expiration. 
 
 ```csharp
 public OnExpirationUpdateDelegate OnExpirationUpdate()
@@ -474,7 +474,7 @@ public OnExpirationUpdateDelegate OnExpirationUpdate()
 
 ### OnKeyStatusChange {#onkeystatuschangedelegate-onkeystatuschange}
 
-Event used to listen for when a key's status has changed. 
+[Event](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Event.md) used to listen for when a key's status has changed. 
 
 ```csharp
 public OnKeyStatusChangeDelegate OnKeyStatusChange()
@@ -491,14 +491,14 @@ public OnKeyStatusChangeDelegate OnKeyStatusChange()
 
 ### EventType {#enums-eventtype}
 
-The type of DRM event. 
+The type of [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) event. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | ProvisionRequired | 1| This event type indicates that the app needs to request a certificate from the provisioning server. The request message data is obtained using MLMediaDRMGetProvisionRequest().   |
 | KeyRequired | | This event type indicates that the app needs to request keys from a license server. The request message data is obtained using MLMediaDRMGetKeyRequest().   |
 | KeyExpired | | This event type indicates that the licensed usage duration for keys in a session has expired. The keys are no longer valid.   |
-| VendorDefined | | This event may indicate some specific vendor-defined condition, see your DRM provider documentation for details.   |
+| VendorDefined | | This event may indicate some specific vendor-defined condition, see your [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) provider documentation for details.   |
 | SessionReclaimed | | This event indicates that a session opened by the app has been reclaimed by the resource manager.   |
 | ExpirationUpdate | | This event is issued when a session expiration update occurs, to inform the app about the change in expiration time.   |
 | KeysChange | | This event is issued when the keys in a session change status, such as when the license is renewed or expires.   |
@@ -531,9 +531,9 @@ The type of DRM event.
 
 -----------
 
-### KeyType {#int-keytype}
+### KeyType {#enums-keytype}
 
-Type of DRM key. 
+Type of [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) key. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

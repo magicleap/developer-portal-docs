@@ -34,7 +34,7 @@ public static Device AudioOutputDevice { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-device) | The currently active output device.  |
+| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) | The currently active output device.  |
 
 
 
@@ -122,7 +122,7 @@ public delegate void OnAudioOutputDeviceChangedDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-device) |device|The new audio output device.|
+| [Device](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-device) |device|The new audio output device.|
 
 
 
@@ -181,7 +181,7 @@ public static MLResult SetSoundBypassesMasterVolume(
 
 ### StopAPI {#override-stopapi}
 
-Called by MLAutoAPISingleton on destruction. 
+Called by [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) on destruction 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -205,7 +205,7 @@ protected virtual override MLResult.Code StopAPI()
 
 ### Update {#override-void-update}
 
-Called every device frame. 
+Called every device frame 
 
 ```csharp
 protected virtual override void Update()
@@ -269,7 +269,7 @@ public static MLAudioMediaEventDelegate OnMediaEvent()
 
 ## Public Enums
 
-### ChannelFormatType {#uint-channelformattype}
+### ChannelFormatType {#enums-channelformattype}
 
 Possible channel formats for input and output streams. 
 
@@ -289,7 +289,7 @@ Possible channel formats for input and output streams.
 
 ### ChannelLayouts {#enums-channellayouts}
 
-Definition of some of the known Channel Layouts. These layouts are based on ChannelMask   composite of individual channel masks. 
+Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)   composite of individual channel masks. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -360,7 +360,7 @@ Audio output channels mask for track type. Bits order matches the C API. These m
 
 -----------
 
-### Device {#uint-device}
+### Device {#enums-device}
 
 The currently active output device. 
 
@@ -384,7 +384,7 @@ Possible media control events initiated by the user.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Play | | Indicates a user command to play.   |
+| Play | | Indicates a user command to play   |
 | Stop | | Indicates a user command to stop.   |
 | Pause | | Indicates a user command to pause.   |
 | NextTrack | | Indicates a user command to go to next track.   |
@@ -399,7 +399,7 @@ Possible media control events initiated by the user.
 
 -----------
 
-### SampleFormatType {#uint-sampleformattype}
+### SampleFormatType {#enums-sampleformattype}
 
 Possible sample formats for input and output streams. 
 

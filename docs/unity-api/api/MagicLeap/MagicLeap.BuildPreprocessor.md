@@ -19,23 +19,6 @@ Inherits from: <br></br>IPreprocessBuildWithReport
 
 
 
-## Public Fields
-
-### callbackOrder {#int-callbackorder}
-
-```csharp
-
-public int callbackOrder { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
 ### void OnPreprocessBuild {#void-onpreprocessbuild}
@@ -52,6 +35,23 @@ public void OnPreprocessBuild(
 | Type | Name  | Description  | 
 |--|--|--|
 | BuildReport |report||
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### callbackOrder {#int-callbackorder}
+
+```csharp
+
+public int callbackOrder => 0;
+
+```
 
 
 

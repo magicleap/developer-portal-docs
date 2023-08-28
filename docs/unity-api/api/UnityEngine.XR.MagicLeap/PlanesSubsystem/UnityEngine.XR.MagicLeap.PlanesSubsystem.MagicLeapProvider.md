@@ -18,21 +18,6 @@ Inherits from: <br></br>Provider
 
 ## Public Fields
 
-### currentPlaneDetectionMode {#override-planedetectionmode-currentplanedetectionmode}
-
-```csharp
-
-public override PlaneDetectionMode currentPlaneDetectionMode { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### requestedPlaneDetectionMode {#override-planedetectionmode-requestedplanedetectionmode}
 
 ```csharp
@@ -165,6 +150,23 @@ public override void Start()
 
 ```csharp
 public override void Stop()
+```
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### currentPlaneDetectionMode {#override-planedetectionmode-currentplanedetectionmode}
+
+```csharp
+
+public override PlaneDetectionMode currentPlaneDetectionMode => _currentPlaneDetectionMode.ToPlaneDetectionMode();
+
 ```
 
 

@@ -57,7 +57,7 @@ public IntPtr Data;
 
 ### Extra {#int-extra}
 
-The extra info. 
+The extra info 
 
 ```csharp
 
@@ -74,7 +74,7 @@ public int Extra;
 
 ### Info {#info-info}
 
-The info of MLMediaRecorderInfo. 
+The info of MLMediaRecorderInfo 
 
 ```csharp
 

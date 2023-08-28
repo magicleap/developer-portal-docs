@@ -54,7 +54,7 @@ public readonly MLTransform CameraPose;
 
 ### FrameBuffer {#readonly-framebuffer}
 
-Frame buffer data. 
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) buffer data. 
 
 ```csharp
 
@@ -151,7 +151,7 @@ public readonly NativeBindings.MLWorldCameraIntrinsics Intrinsics;
 
 ### TimeStamp {#readonly-long-timestamp}
 
-Frame timestamp specifies the time at which the frame was captured. 
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) timestamp specifies the time at which the frame was captured. 
 
 ```csharp
 

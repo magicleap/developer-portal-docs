@@ -63,7 +63,7 @@ public Cea708CaptionColorOpacity Opacity;
 
 | Type | Description  | 
 |--|--|
-| [Cea708CaptionColorOpacity](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#int-cea708captioncoloropacity) | CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#95;media&#95;cea708&#95;caption.h .  |
+| [Cea708CaptionColorOpacity](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captioncoloropacity) | CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#95;media&#95;cea708&#95;caption.h .  |
 
 
 

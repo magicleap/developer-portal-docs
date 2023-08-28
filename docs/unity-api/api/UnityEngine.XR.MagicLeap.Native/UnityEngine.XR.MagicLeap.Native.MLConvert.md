@@ -22,11 +22,11 @@ Utility class used for converting vectors and matrices between native and unity 
 
 ### object ByteArrayToObject {#object-bytearraytoobject}
 
-Convert a byte array to an Object. 
+Convert a byte array to an Object 
 
 ```csharp
 public static object ByteArrayToObject(
-    byte[] byteArray
+    byte [] byteArray
 )
 ```
 
@@ -35,7 +35,7 @@ public static object ByteArrayToObject(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |byteArray|Byte array to convert|
+| byte [] |byteArray|Byte array to convert|
 
 
 
@@ -54,7 +54,7 @@ Decodes a buffer of bytes into an ASCII string.
 
 ```csharp
 public static string DecodeAscii(
-    byte[] buffer
+    byte [] buffer
 )
 ```
 
@@ -63,7 +63,7 @@ public static string DecodeAscii(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |buffer|bytes to convert to a string|
+| byte [] |buffer|bytes to convert to a string|
 
 
 
@@ -82,7 +82,7 @@ Converts an unmanaged UTF-16 string into a managed string.
 
 ```csharp
 public static string DecodeUTF16BE(
-    byte[] nativeArray
+    byte [] nativeArray
 )
 ```
 
@@ -91,7 +91,7 @@ public static string DecodeUTF16BE(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |nativeArray|Native byte array to convert|
+| byte [] |nativeArray|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) byte array to convert|
 
 
 
@@ -110,7 +110,7 @@ Converts an unmanaged UTF-16 string into a managed string.
 
 ```csharp
 public static string DecodeUTF16LE(
-    byte[] nativeArray
+    byte [] nativeArray
 )
 ```
 
@@ -119,7 +119,7 @@ public static string DecodeUTF16LE(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |nativeArray|Native byte array to convert|
+| byte [] |nativeArray|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) byte array to convert|
 
 
 
@@ -138,7 +138,7 @@ Decodes a buffer of bytes into a UTF8 string.
 
 ```csharp
 public static string DecodeUTF8(
-    byte[] buffer
+    byte [] buffer
 )
 ```
 
@@ -147,7 +147,7 @@ public static string DecodeUTF8(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |buffer|bytes to convert to a UTF8 string|
+| byte [] |buffer|bytes to convert to a UTF8 string|
 
 
 
@@ -218,12 +218,12 @@ public static IntPtr EncodeToUnmanagedUTF8(
 
 -----------
 
-### byte[] EncodeUTF8 {#byte-encodeutf8}
+### byte [] EncodeUTF8 {#byte-encodeutf8}
 
 This encodes the string into a UTF-8 byte array. 
 
 ```csharp
-public static byte[] EncodeUTF8(
+public static byte [] EncodeUTF8(
     string decodedString
 )
 ```
@@ -250,7 +250,7 @@ public static byte[] EncodeUTF8(
 
 ```csharp
 public static void FlipTransformMatrixHorizontally(
-    float[] frameTransformMatColMajor
+    float [] frameTransformMatColMajor
 )
 ```
 
@@ -259,7 +259,7 @@ public static void FlipTransformMatrixHorizontally(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |frameTransformMatColMajor||
+| float [] |frameTransformMatColMajor||
 
 
 
@@ -272,7 +272,7 @@ public static void FlipTransformMatrixHorizontally(
 
 ```csharp
 public static void FlipTransformMatrixVertically(
-    float[] frameTransformMatColMajor
+    float [] frameTransformMatColMajor
 )
 ```
 
@@ -281,7 +281,7 @@ public static void FlipTransformMatrixVertically(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |frameTransformMatColMajor||
+| float [] |frameTransformMatColMajor||
 
 
 
@@ -328,7 +328,7 @@ Fills out array with values from 4x4 Unity matrix.
 ```csharp
 public static void FromUnity(
     Matrix4x4 mat,
-    ref float[] matrixColMajor
+    ref float [] matrixColMajor
 )
 ```
 
@@ -338,7 +338,7 @@ public static void FromUnity(
 | Type | Name  | Description  | 
 |--|--|--|
 | Matrix4x4 |mat|An input native matrix.|
-| ref float[] |matrixColMajor|An array to populate in Unity format.|
+| ref float [] |matrixColMajor|An array to populate in Unity format.|
 
 
 
@@ -410,7 +410,7 @@ public static MagicLeapNativeBindings.MLQuaternionf FromUnity(
 
 ### [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) FromUnity {#magicleapnativebindingsmluuid-fromunity}
 
-Creates an MLUUID from a System.Guid. 
+Creates an MLUUID from a System.Guid 
 
 ```csharp
 public static MagicLeapNativeBindings.MLUUID FromUnity(
@@ -492,12 +492,12 @@ public static Quaternion GetRotationFromTransformMatrix(
 
 -----------
 
-### T[] MarshalUnmanagedArray< T > {#t-marshalunmanagedarray-t-}
+### T [] MarshalUnmanagedArray< T > {#t-marshalunmanagedarray-t-}
 
 Converts an unmanged array to a managed array of type T. 
 
 ```csharp
-public static T[] MarshalUnmanagedArray< T >(
+public static T [] MarshalUnmanagedArray< T >(
     IntPtr arrayPtr,
     int count
 )
@@ -518,12 +518,12 @@ public static T[] MarshalUnmanagedArray< T >(
 
 -----------
 
-### byte[] ObjectToByteArray< T > {#byte-objecttobytearray-t-}
+### byte [] ObjectToByteArray< T > {#byte-objecttobytearray-t-}
 
-Convert an object to a byte array. Uses C# Binary formatter to serialize. 
+Convert an object to a byte array. Uses C# Binary formatter to serialize 
 
 ```csharp
-public static byte[] ObjectToByteArray< T >(
+public static byte [] ObjectToByteArray< T >(
     T obj
 )
 ```
@@ -551,12 +551,12 @@ public static byte[] ObjectToByteArray< T >(
 
 -----------
 
-### byte[] ToUTF8Snipped {#byte-toutf8snipped}
+### byte [] ToUTF8Snipped {#byte-toutf8snipped}
 
 Take a string, snips it to a desired length and converts it to UTF8. 
 
 ```csharp
-public static byte[] ToUTF8Snipped(
+public static byte [] ToUTF8Snipped(
     string inString,
     int snipLength
 )
@@ -830,7 +830,7 @@ public static Matrix4x4 ToUnity(
 
 ### Guid ToUnity {#guid-tounity}
 
-Creates a System.Guid from an MLUUID. 
+Creates a System.Guid from an MLUUID 
 
 ```csharp
 public static Guid ToUnity(
@@ -862,7 +862,7 @@ public static Guid ToUnity(
 
 ```csharp
 
-public static readonly float[] IdentityMatrixColMajor = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 };
+public static readonly float [] IdentityMatrixColMajor = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 };
 
 ```
 

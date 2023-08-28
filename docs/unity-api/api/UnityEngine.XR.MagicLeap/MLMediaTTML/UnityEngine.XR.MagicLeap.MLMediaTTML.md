@@ -12,7 +12,7 @@ summary: mlmediattml summary placeholder.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MLMediaTTML Summary placeholder.   [More...](#detailed-description)  
+[MLMediaTTML](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md) Summary placeholder.   [More...](#detailed-description)  
 
 
 
@@ -26,7 +26,7 @@ public class MLMediaTTML;
 
 **Details**
 
-MLMediaTTML description goes here. 
+[MLMediaTTML](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaTTML/UnityEngine.XR.MagicLeap.MLMediaTTML.md) description goes here. 
 
 
 
@@ -44,7 +44,7 @@ An unset position, width, or size.
 
 ```csharp
 
-public static const float MLTTMLDimen_Unset = -3.402823466e+38F;
+public const float MLTTMLDimen_Unset = -3.402823466e+38F;
 
 ```
 
@@ -118,13 +118,13 @@ The cue line type.
 
 ### MLTTMLTextSizeType {#enums-mlttmltextsizetype}
 
-The cue default text size type;. 
+The cue default text size type; 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | Unset | 0x7FFFFFFF| An unset text size type value.   |
 | Fractional | 0| Text size is measured as a fraction of the viewport size minus the view padding.   |
-| FractionalIgnorePadding | 1| Text size is measured as a fraction of the viewport size, ignoring the view padding.   |
+| FractionalIgnorePadding | 1| Text size is measured as a fraction of the viewport size, ignoring the view padding   |
 | Absolute | 2| Text size is measured in number of pixels.   |
 
 

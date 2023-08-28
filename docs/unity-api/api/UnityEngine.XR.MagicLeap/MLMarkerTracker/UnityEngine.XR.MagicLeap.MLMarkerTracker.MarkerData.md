@@ -1,6 +1,6 @@
 ---
 title: MarkerData
-summary: marker data as returned by the magic leap sdk. 
+summary: marker data as returned by the magic leap sdk 
 
 ---
 
@@ -9,7 +9,7 @@ summary: marker data as returned by the magic leap sdk.
 
 
 
-Marker data as returned by the Magic Leap SDK.   
+Marker data as returned by the Magic Leap SDK   
 
 
 
@@ -116,7 +116,7 @@ public readonly MarkerType Type;
 
 | Type | Description  | 
 |--|--|
-| readonly [MarkerType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API.  |
+| readonly [MarkerType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API  |
 
 
 

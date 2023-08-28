@@ -12,7 +12,7 @@ summary: represents an ml api wide timestamp in nanoseconds that is not guarante
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type.   [More...](#detailed-description)  
+Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.   [More...](#detailed-description)  
 
 
 
@@ -57,7 +57,7 @@ public long Value { get; set; }
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ConvertMLTimeToSystemTime {#mlresult-convertmltimetosystemtime}
 
-Converts timestamps from MLTime to system time. System time is equivalent to the system's monotonic clock. This can be used to calculate duration between two MLTime values by converting them both to a timespec and subtracting the subsequent values. 
+Converts timestamps from [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) to system time. System time is equivalent to the system's monotonic clock. This can be used to calculate duration between two [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) values by converting them both to a timespec and subtracting the subsequent values. 
 
 ```csharp
 public static MLResult ConvertMLTimeToSystemTime(
@@ -71,7 +71,7 @@ public static MLResult ConvertMLTimeToSystemTime(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) |mlTime|Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type. |
+| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) |mlTime|Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type. |
 | out long |timestampNs||
 
 
@@ -83,7 +83,7 @@ public static MLResult ConvertMLTimeToSystemTime(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) ConvertSystemTimeToMLTime {#mlresult-convertsystemtimetomltime}
 
-Converts timestamps from system time to MLTime. System time is equivalent to the system's monotonic clock. 
+Converts timestamps from system time to [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md). System time is equivalent to the system's monotonic clock. 
 
 ```csharp
 public static MLResult ConvertSystemTimeToMLTime(
@@ -98,7 +98,7 @@ public static MLResult ConvertSystemTimeToMLTime(
 | Type | Name  | Description  | 
 |--|--|--|
 | long |timestampNs||
-| out [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) |mlTime|Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type. |
+| out [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) |mlTime|Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type. |
 
 
 
@@ -155,7 +155,7 @@ public static implicit operator long(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) |mltime|Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type. |
+| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) |mltime|Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type. |
 
 
 

@@ -96,7 +96,7 @@ public List< SlotData > SlotsForVoiceCommands;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) &gt; | The Slot Data to be used in the CustomVoiceIntents' value. To use a slot, put the SlotData name between { } inside of the CustomVoiceIntents' value.  |
+| List&lt; [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) &gt; | The Slot Data to be used in the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value. To use a slot, put the [SlotData](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.SlotData.md) name between { } inside of the [CustomVoiceIntents](/unity-api/api/Classes/MLVoiceIntentsConfiguration/MLVoiceIntentsConfiguration.CustomVoiceIntents.md)' value.  |
 
 
 

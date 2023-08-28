@@ -1,6 +1,6 @@
 ---
 title: MLUUID
-summary: universally unique identifier. 
+summary: universally unique identifier 
 
 ---
 
@@ -9,7 +9,7 @@ summary: universally unique identifier.
 
 
 
-Universally unique identifier.   
+Universally unique identifier   
 
 
 

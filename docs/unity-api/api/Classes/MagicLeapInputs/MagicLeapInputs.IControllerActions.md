@@ -170,6 +170,50 @@ public void OnMenu(
 
 -----------
 
+### void OnPointerPosition {#void-onpointerposition}
+
+```csharp
+public void OnPointerPosition(
+    InputAction.CallbackContext context
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputAction.CallbackContext |context||
+
+
+
+
+
+
+-----------
+
+### void OnPointerRotation {#void-onpointerrotation}
+
+```csharp
+public void OnPointerRotation(
+    InputAction.CallbackContext context
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputAction.CallbackContext |context||
+
+
+
+
+
+
+-----------
+
 ### void OnPosition {#void-onposition}
 
 ```csharp
@@ -284,6 +328,28 @@ public void OnTouchpadPosition(
 
 ```csharp
 public void OnTouchpadTouch(
+    InputAction.CallbackContext context
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| InputAction.CallbackContext |context||
+
+
+
+
+
+
+-----------
+
+### void OnTrackingState {#void-ontrackingstate}
+
+```csharp
+public void OnTrackingState(
     InputAction.CallbackContext context
 )
 ```

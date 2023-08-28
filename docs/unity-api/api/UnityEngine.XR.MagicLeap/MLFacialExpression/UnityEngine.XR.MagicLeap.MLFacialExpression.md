@@ -21,7 +21,7 @@ Inherits from: <br></br>[MLAutoAPISingleton< MLFacialExpression >](/unity-api/ap
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetEyeData {#mlresultcode-geteyedata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetEyeData {#mlresultcode-geteyedata}
 
 Get the latest eye data from the Facial Expression system. 
 
@@ -45,7 +45,7 @@ public static MLResult.Code GetEyeData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) UpdateSettings {#mlresultcode-updatesettings}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) UpdateSettings {#mlresultcode-updatesettings}
 
 Updates Facial Expression system with new settings. 
 

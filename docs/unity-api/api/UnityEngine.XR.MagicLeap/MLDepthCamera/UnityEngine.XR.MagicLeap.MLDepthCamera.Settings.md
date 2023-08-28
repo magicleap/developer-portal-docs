@@ -1,6 +1,6 @@
 ---
 title: Settings
-summary: depth camera settings. 
+summary: depth camera settings
 
 ---
 
@@ -9,7 +9,7 @@ summary: depth camera settings.
 
 
 
-Depth Camera Settings.   [More...](#detailed-description)  
+Depth Camera [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md)  [More...](#detailed-description)  
 
 
 
@@ -37,11 +37,11 @@ API Level 29
 
 ### StreamConfig {#streamconfig-streamconfig}
 
-Controls for each of the depth camera streams. Only controls for streams enabled via streams field will be read. Use MLDepthCamera.FrameType enumeration for indexing. 
+Controls for each of the depth camera streams. Only controls for streams enabled via streams field will be read. Use [MLDepthCamera.FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) enumeration for indexing. 
 
 ```csharp
 
-public StreamConfig[] StreamConfig;
+public StreamConfig [] StreamConfig;
 
 ```
 

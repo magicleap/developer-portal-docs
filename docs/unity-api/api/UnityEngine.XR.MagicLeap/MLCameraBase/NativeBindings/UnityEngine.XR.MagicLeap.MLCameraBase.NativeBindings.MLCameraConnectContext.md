@@ -69,7 +69,7 @@ public MLCamera.Identifier CamId;
 
 ### EnableVideoStab {#bool-enablevideostab}
 
-Video Stabilization enable/disable 1 - enable 0 - disabled. 
+Video Stabilization enable/disable 1 - enable 0 - disabled 
 
 ```csharp
 
@@ -106,7 +106,7 @@ public MLCamera.ConnectFlag Flags;
 
 ### MrInfo {#mlcameramrconnectinfo-mrinfo}
 
-MR capture connection settings. 
+MR capture connection settings 
 
 ```csharp
 

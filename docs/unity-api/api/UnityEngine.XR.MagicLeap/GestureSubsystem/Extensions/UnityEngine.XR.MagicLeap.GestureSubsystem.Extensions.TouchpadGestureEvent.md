@@ -1,6 +1,6 @@
 ---
 title: TouchpadGestureEvent
-summary: the event data related to a magic leap touchpad gesture. 
+summary: the event data related to a magic leap touchpad gesture 
 
 ---
 
@@ -9,7 +9,7 @@ summary: the event data related to a magic leap touchpad gesture.
 
 
 
-The event data related to a Magic Leap Touchpad gesture.   [More...](#detailed-description)  
+The event data related to a Magic Leap Touchpad gesture   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>IEquatable< TouchpadGestureEvent >
@@ -71,7 +71,7 @@ public byte controllerId { get; set; }
 
 ### direction {#inputsubsystemextensionstouchpadgesturedirection-direction}
 
-Direction of gesture. 
+Direction of gesture 
 
 ```csharp
 
@@ -81,7 +81,7 @@ public InputSubsystem.Extensions.TouchpadGesture.Direction direction { get; set;
 
 | Type | Description  | 
 |--|--|
-| [InputSubsystem.Extensions.TouchpadGesture.Direction](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#uint-direction) | Direction of touchpad gesture. Links to MLInputControllerTouchpadGestureDirection in ml&#95;input.h.  |
+| [InputSubsystem.Extensions.TouchpadGesture.Direction](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-direction) | Direction of touchpad gesture. Links to MLInputControllerTouchpadGestureDirection in ml&#95;input.h.  |
 
 
 
@@ -176,7 +176,7 @@ public float speed { get; set; }
 
 ### state {#gesturestate-state}
 
-The state of the gesture. 
+The [state](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md#gesturestate-state) of the gesture. 
 
 ```csharp
 
@@ -203,7 +203,7 @@ public InputSubsystem.Extensions.TouchpadGesture.Type type { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [InputSubsystem.Extensions.TouchpadGesture.Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#uint-type) | Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h.  |
+| [InputSubsystem.Extensions.TouchpadGesture.Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-type) | Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h.  |
 
 
 
@@ -248,7 +248,7 @@ public bool Equals(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |other|The event data related to a Magic Leap Touchpad gesture. |
+| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |other|The event data related to a Magic Leap Touchpad gesture |
 
 
 
@@ -259,7 +259,7 @@ public bool Equals(
 
 ### [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) GetDefault {#touchpadgestureevent-getdefault}
 
-Gets a default-initialized TouchpadGestureEvent. 
+Gets a default-initialized [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md). 
 
 ```csharp
 public static TouchpadGestureEvent GetDefault()
@@ -270,7 +270,7 @@ public static TouchpadGestureEvent GetDefault()
 
 
 
-**Returns**: A default TouchpadGestureEvent.
+**Returns**: A default [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md).
 
 
 
@@ -310,7 +310,7 @@ public override string ToString()
 
 ###  TouchpadGestureEvent {#functions-touchpadgestureevent}
 
-Constructs a new TouchpadGestureEvent. 
+Constructs a new [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md). 
 
 ```csharp
 public TouchpadGestureEvent(
@@ -336,12 +336,12 @@ public TouchpadGestureEvent(
 | GestureState |state|The GestureState associated with the gesture.|
 | byte |controllerId|The controller id associated with this gesture.|
 | float |angle|The angel of the touch of the gesture.|
-| [InputSubsystem.Extensions.TouchpadGesture.Direction](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#uint-direction) |direction|The direction of the touch of the gesture.|
+| [InputSubsystem.Extensions.TouchpadGesture.Direction](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-direction) |direction|The direction of the touch of the gesture.|
 | float |distance|The distance of the gesture.|
 | Vector3 |positionAndForce|The Vector3 position and force of the gesture.|
 | float |radius|The radius of the touch of the gesture.|
 | float |speed|The speed of the gesture.|
-| [InputSubsystem.Extensions.TouchpadGesture.Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#uint-type) |type|The MLInput.Controller.TouchpadGesture.GestureType type of the gesture.|
+| [InputSubsystem.Extensions.TouchpadGesture.Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-type) |type|The MLInput.Controller.TouchpadGesture.GestureType type of the gesture.|
 
 
 
@@ -364,8 +364,8 @@ public static bool operator!=(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |lhs|The event data related to a Magic Leap Touchpad gesture. |
-| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |rhs|The event data related to a Magic Leap Touchpad gesture. |
+| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |lhs|The event data related to a Magic Leap Touchpad gesture |
+| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |rhs|The event data related to a Magic Leap Touchpad gesture |
 
 
 
@@ -388,8 +388,8 @@ public static bool operator==(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |lhs|The event data related to a Magic Leap Touchpad gesture. |
-| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |rhs|The event data related to a Magic Leap Touchpad gesture. |
+| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |lhs|The event data related to a Magic Leap Touchpad gesture |
+| [TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) |rhs|The event data related to a Magic Leap Touchpad gesture |
 
 
 
@@ -440,7 +440,7 @@ public InputSubsystem.Extensions.TouchpadGesture.Direction m_Direction;
 
 | Type | Description  | 
 |--|--|
-| [InputSubsystem.Extensions.TouchpadGesture.Direction](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#uint-direction) | Direction of touchpad gesture. Links to MLInputControllerTouchpadGestureDirection in ml&#95;input.h.  |
+| [InputSubsystem.Extensions.TouchpadGesture.Direction](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-direction) | Direction of touchpad gesture. Links to MLInputControllerTouchpadGestureDirection in ml&#95;input.h.  |
 
 
 
@@ -548,7 +548,7 @@ public InputSubsystem.Extensions.TouchpadGesture.Type m_Type;
 
 | Type | Description  | 
 |--|--|
-| [InputSubsystem.Extensions.TouchpadGesture.Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#uint-type) | Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h.  |
+| [InputSubsystem.Extensions.TouchpadGesture.Type](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-type) | Recognized touchpad gesture types. Links to MLInputControllerTouchpadGestureType in ml&#95;input.h.  |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: MLCameraCaptureStreamCaps
-summary: the capabilities for each stream supported by logical camera device  can be queried with mlcameragetdevicecaps. 
+summary: the capabilities for each stream supported by logical camera device  can be queried with mlcameragetdevicecaps 
 
 ---
 
@@ -9,7 +9,7 @@ summary: the capabilities for each stream supported by logical camera device  ca
 
 
 
-The capabilities for each stream supported by logical camera device &#42; can be queried with MLCameraGetDeviceCaps.   
+The capabilities for each stream supported by logical camera device &#42; can be queried with MLCameraGetDeviceCaps   
 
 
 
@@ -50,7 +50,7 @@ public MLCamera.CaptureType CaptureType;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type.  |
+| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -60,7 +60,7 @@ public MLCamera.CaptureType CaptureType;
 
 ### Height {#int-height}
 
-Resolution height. 
+Resolution height 
 
 ```csharp
 
@@ -77,7 +77,7 @@ public int Height;
 
 ### Width {#int-width}
 
-Capture Resolution. 
+Capture Resolution 
 
 ```csharp
 

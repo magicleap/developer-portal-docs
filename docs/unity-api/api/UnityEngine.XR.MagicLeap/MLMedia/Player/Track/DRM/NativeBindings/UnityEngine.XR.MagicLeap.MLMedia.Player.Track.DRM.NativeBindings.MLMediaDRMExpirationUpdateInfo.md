@@ -53,7 +53,7 @@ public readonly ulong expirationTimeMs;
 
 ### sessionIdByteArray {#readonly-intptr-sessionidbytearray}
 
-DRM session id associated with the event. 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 

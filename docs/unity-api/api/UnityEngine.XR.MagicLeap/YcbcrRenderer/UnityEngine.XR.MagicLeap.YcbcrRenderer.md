@@ -80,7 +80,7 @@ public void Render()
 
 ### void SetRenderBuffer {#void-setrenderbuffer}
 
-Currently only 1 call after obj instantiation will work. 
+Currently only 1 call after obj instantiation will work 
 
 ```csharp
 public void SetRenderBuffer(
@@ -132,7 +132,7 @@ protected void Initialize(
 
 ### gcHandle {#gchandle-gchandle}
 
-GCHandle for the callback user context. 
+GCHandle for the callback user context 
 
 ```csharp
 

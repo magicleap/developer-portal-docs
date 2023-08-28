@@ -19,21 +19,6 @@ title: MagicLeapSDKUtil
 
 ## Public Fields
 
-### AppSimRuntimePath {#string-appsimruntimepath}
-
-```csharp
-
-public static string AppSimRuntimePath { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### MinimumApiLevel {#uint-minimumapilevel}
 
 ```csharp
@@ -98,38 +83,6 @@ public static string SdkPath { get; set; }
 
 -----------
 
-### SdkVersion {#version-sdkversion}
-
-MLSDK version. 
-
-```csharp
-
-public static Version SdkVersion { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### SearchingForZI {#bool-searchingforzi}
-
-```csharp
-
-public static bool SearchingForZI { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
 ### void DeleteSDKPathFromEditorPrefs {#void-deletesdkpathfromeditorprefs}
@@ -146,6 +99,55 @@ public static void DeleteSDKPathFromEditorPrefs(
 | Type | Name  | Description  | 
 |--|--|--|
 | BuildTarget |target||
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### AppSimRuntimePath {#string-appsimruntimepath}
+
+```csharp
+
+public static string AppSimRuntimePath => MagicLeapEditorPreferences.ZeroIterationRuntimePath;
+
+```
+
+
+
+
+
+
+-----------
+
+### SdkVersion {#version-sdkversion}
+
+MLSDK version 
+
+```csharp
+
+public static Version SdkVersion => new Version(JsonUtility.FromJson<SDKManifest>(File.ReadAllText(Path.Combine(SdkPath, kManifestPath))).version);
+
+```
+
+
+
+
+
+
+-----------
+
+### SearchingForZI {#bool-searchingforzi}
+
+```csharp
+
+public static bool SearchingForZI => MagicLeapEditorPreferences.RunningLabdriver;
+
+```
 
 
 

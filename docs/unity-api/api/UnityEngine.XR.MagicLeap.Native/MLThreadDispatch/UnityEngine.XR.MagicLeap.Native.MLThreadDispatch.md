@@ -1,6 +1,6 @@
 ---
 title: MLThreadDispatch
-summary: handles dispatching calls from the magic leap native thread to the unity thread. 
+summary: handles dispatching calls from the magic leap native thread to the unity thread 
 
 ---
 
@@ -12,7 +12,7 @@ summary: handles dispatching calls from the magic leap native thread to the unit
 [Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) 
 
 
-Handles dispatching calls from the Magic Leap native thread to the Unity thread.   
+Handles dispatching calls from the Magic Leap native thread to the Unity thread   
 
 
 
@@ -22,7 +22,7 @@ Handles dispatching calls from the Magic Leap native thread to the Unity thread.
 
 ### void Call {#void-call}
 
-A method that queues an action without a payload. 
+A method that queues an action without a payload 
 
 ```csharp
 public static void Call(
@@ -46,7 +46,7 @@ public static void Call(
 
 ### void Call {#void-call}
 
-A method that queues an action without a payload. 
+A method that queues an action without a payload 
 
 ```csharp
 public static void Call(
@@ -70,7 +70,7 @@ public static void Call(
 
 ### void Call< A > {#void-call-a-}
 
-A template method that queues an action with a single payload. 
+A template method that queues an action with a single payload 
 
 ```csharp
 public static void Call< A >(
@@ -101,7 +101,7 @@ public static void Call< A >(
 
 ### void Call< A, B > {#void-call-a,-b-}
 
-A template method that queues an action with two payloads. 
+A template method that queues an action with two payloads 
 
 ```csharp
 public static void Call< A, B >(
@@ -135,7 +135,7 @@ public static void Call< A, B >(
 
 ### void Call< A, B, C > {#void-call-a,-b,-c-}
 
-A template method that queues an action with three payloads. 
+A template method that queues an action with three payloads 
 
 ```csharp
 public static void Call< A, B, C >(
@@ -172,7 +172,7 @@ public static void Call< A, B, C >(
 
 ### void Call< A, B, C, D > {#void-call-a,-b,-c,-d-}
 
-A template method that queues an action with four payloads. 
+A template method that queues an action with four payloads 
 
 ```csharp
 public static void Call< A, B, C, D >(
@@ -212,7 +212,7 @@ public static void Call< A, B, C, D >(
 
 ### void Call< A, B, C, D, E > {#void-call-a,-b,-c,-d,-e-}
 
-A template method that queues an action with five payloads. 
+A template method that queues an action with five payloads 
 
 ```csharp
 public static void Call< A, B, C, D, E >(
@@ -255,7 +255,7 @@ public static void Call< A, B, C, D, E >(
 
 ### void Call< A, B, C, D, E, F > {#void-call-a,-b,-c,-d,-e,-f-}
 
-A template method that queues an action with six payloads. 
+A template method that queues an action with six payloads 
 
 ```csharp
 public static void Call< A, B, C, D, E, F >(
@@ -301,7 +301,7 @@ public static void Call< A, B, C, D, E, F >(
 
 ### void DispatchAll {#void-dispatchall}
 
-Dispatch all queued items. 
+Dispatch all queued items 
 
 ```csharp
 public static void DispatchAll()

@@ -9,7 +9,7 @@ summary: data type that encapsulates key request input arguments.
 
 
 
-Data type that encapsulates Key Request input arguments.   
+Data type that encapsulates [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) Request input arguments.   
 
 
 
@@ -46,7 +46,7 @@ public KeyType KeyType;
 
 | Type | Description  | 
 |--|--|
-| [KeyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#int-keytype) | Type of DRM key.  |
+| [KeyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#enums-keytype) | Type of [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) key.  |
 
 
 

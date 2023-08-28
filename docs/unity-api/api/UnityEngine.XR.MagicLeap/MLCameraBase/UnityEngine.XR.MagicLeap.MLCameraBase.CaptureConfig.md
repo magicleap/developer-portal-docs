@@ -38,11 +38,11 @@ public CaptureFrameRate CaptureFrameRate;
 
 ### StreamConfigs {#capturestreamconfig-streamconfigs}
 
-Stream configurations. 
+Stream configurations 
 
 ```csharp
 
-public CaptureStreamConfig[] StreamConfigs;
+public CaptureStreamConfig [] StreamConfigs;
 
 ```
 

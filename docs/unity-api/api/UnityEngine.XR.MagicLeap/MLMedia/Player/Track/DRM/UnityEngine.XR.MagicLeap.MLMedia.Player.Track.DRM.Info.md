@@ -1,6 +1,6 @@
 ---
 title: Info
-summary: mediaplayer drm info for a media track. 
+summary: mediaplayer drminfo for a media track. 
 
 ---
 
@@ -9,7 +9,7 @@ summary: mediaplayer drm info for a media track.
 
 
 
-MediaPlayer DRM Info for a Media Track.   
+MediaPlayer [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md)[Info](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Info.md) for a Media [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md).   
 
 
 

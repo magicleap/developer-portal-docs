@@ -18,7 +18,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) FreeUnmanagedMemory {#mlresultcode-freeunmanagedmemory}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) FreeUnmanagedMemory {#mlresultcode-freeunmanagedmemory}
 
 Get the Media Format of a track. 
 
@@ -66,7 +66,7 @@ public static string GetTrackLanguage(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaPlayerGetTrackLanguage {#mlresultcode-mlmediaplayergettracklanguage}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackLanguage {#mlresultcode-mlmediaplayergettracklanguage}
 
 Get the language of a track. 
 
@@ -94,7 +94,7 @@ public MLResult.Code MLMediaPlayerGetTrackLanguage(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaPlayerGetTrackMediaFormat {#mlresultcode-mlmediaplayergettrackmediaformat}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackMediaFormat {#mlresultcode-mlmediaplayergettrackmediaformat}
 
 Get the Media Format of a track. 
 
@@ -122,7 +122,7 @@ public MLResult.Code MLMediaPlayerGetTrackMediaFormat(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaPlayerGetTrackType {#mlresultcode-mlmediaplayergettracktype}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaPlayerGetTrackType {#mlresultcode-mlmediaplayergettracktype}
 
 Get the type of a track. 
 
@@ -156,7 +156,7 @@ public MLResult.Code MLMediaPlayerGetTrackType(
 
 ```csharp
 
-public static const uint MAX_KEY_STRING_SIZE = 64;
+public const uint MAX_KEY_STRING_SIZE = 64;
 
 ```
 

@@ -9,7 +9,7 @@ summary: a drm session that's required for a media player track to be prepared.
 
 
 
-A DRM session that's required for a media player track to be prepared.   
+A [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session that's required for a media player track to be prepared.   
 
 
 
@@ -63,7 +63,7 @@ _**CURRENTLY UNTESTED ON CAPI**_ Add a {key, value} pair to the array of {key, v
 ```csharp
 public MLResult AddKeyValue(
     KeyValuePair< string, string > pair,
-    out KeyValuePair< string, string >[] allKeys
+    out KeyValuePair< string, string > [] allKeys
 )
 ```
 
@@ -73,7 +73,7 @@ public MLResult AddKeyValue(
 | Type | Name  | Description  | 
 |--|--|--|
 | KeyValuePair&lt; string, string &gt; |pair||
-| out KeyValuePair&lt; string, string &gt;[] |allKeys||
+| out KeyValuePair&lt; string, string &gt; [] |allKeys||
 
 
 
@@ -89,7 +89,7 @@ _**CURRENTLY UNTESTED ON CAPI**_ Allocate array of {key, value} pairs.
 ```csharp
 public MLResult AllocateKeyValueArray(
     uint size,
-    out KeyValuePair< string, string >[] allKeys
+    out KeyValuePair< string, string > [] allKeys
 )
 ```
 
@@ -99,7 +99,7 @@ public MLResult AllocateKeyValueArray(
 | Type | Name  | Description  | 
 |--|--|--|
 | uint |size||
-| out KeyValuePair&lt; string, string &gt;[] |allKeys||
+| out KeyValuePair&lt; string, string &gt; [] |allKeys||
 
 
 
@@ -130,8 +130,8 @@ _**CURRENTLY UNTESTED ON CAPI**_ Decrypt the data referenced by input using algo
 ```csharp
 public MLResult Decrypt(
     CryptoKeyParam cryptoKeyParam,
-    byte[] input,
-    out byte[] output
+    byte [] input,
+    out byte [] output
 )
 ```
 
@@ -141,8 +141,8 @@ public MLResult Decrypt(
 | Type | Name  | Description  | 
 |--|--|--|
 | [CryptoKeyParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/Session/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Session.CryptoKeyParam.md) |cryptoKeyParam||
-| byte[] |input||
-| out byte[] |output||
+| byte [] |input||
+| out byte [] |output||
 
 
 
@@ -158,8 +158,8 @@ _**CURRENTLY UNTESTED ON CAPI**_ Encrypt the data referenced by input using algo
 ```csharp
 public MLResult Encrypt(
     CryptoKeyParam cryptoKeyParam,
-    byte[] input,
-    out byte[] output
+    byte [] input,
+    out byte [] output
 )
 ```
 
@@ -169,8 +169,8 @@ public MLResult Encrypt(
 | Type | Name  | Description  | 
 |--|--|--|
 | [CryptoKeyParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/Session/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Session.CryptoKeyParam.md) |cryptoKeyParam||
-| byte[] |input||
-| out byte[] |output||
+| byte [] |input||
+| out byte [] |output||
 
 
 
@@ -181,11 +181,11 @@ public MLResult Encrypt(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetKeyValues {#mlresult-getkeyvalues}
 
-_**CURRENTLY UNTESTED ON CAPI**_ Request an informative description of the key status for the session. The status is in the form of {key, value} pairs. Since DRM license policies vary by vendor, the specific status field names are determined by each DRM vendor. Refer to your DRM provider documentation for definitions of the field names for a particular DRM engine plugin. 
+_**CURRENTLY UNTESTED ON CAPI**_ Request an informative description of the key status for the session. The status is in the form of {key, value} pairs. Since [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) license policies vary by vendor, the specific status field names are determined by each [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) vendor. Refer to your [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) provider documentation for definitions of the field names for a particular [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin. 
 
 ```csharp
 public MLResult GetKeyValues(
-    out KeyValuePair< string, string >[] keyValues
+    out KeyValuePair< string, string > [] keyValues
 )
 ```
 
@@ -194,7 +194,7 @@ public MLResult GetKeyValues(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out KeyValuePair&lt; string, string &gt;[] |keyValues||
+| out KeyValuePair&lt; string, string &gt; [] |keyValues||
 
 
 
@@ -205,11 +205,11 @@ public MLResult GetKeyValues(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) KeysRequest {#mlresult-keysrequest}
 
-A key request/response exchange occurs between the app and a license server to obtain or release keys used to decrypt encrypted content. MLMediaDRMGetKeyRequest() is used to obtain an opaque key request byte array that is delivered to the license server. The opaque key request byte array is returned in out&#95;key&#95;request. request The recommended URL to deliver the key request to is returned in out&#95;key&#95;request. default&#95;URL. After the app has received the key request response from the server, it should deliver to the response to the DRM engine plugin using the method MLMediaDRMProvideKeyResponse(). 
+A key request/response exchange occurs between the app and a license server to obtain or release keys used to decrypt encrypted content. MLMediaDRMGetKeyRequest() is used to obtain an opaque key request byte array that is delivered to the license server. The opaque key request byte array is returned in out&#95;key&#95;request. request The recommended URL to deliver the key request to is returned in out&#95;key&#95;request. default&#95;URL. After the app has received the key request response from the server, it should deliver to the response to the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using the method MLMediaDRMProvideKeyResponse(). 
 
 ```csharp
 public MLResult KeysRequest(
-    out byte[] requestData
+    out byte [] requestData
 )
 ```
 
@@ -218,7 +218,7 @@ public MLResult KeysRequest(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out byte[] |requestData||
+| out byte [] |requestData||
 
 
 
@@ -229,12 +229,12 @@ public MLResult KeysRequest(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) KeysResponse {#mlresult-keysresponse}
 
-A key response is received from the license server by the app, then it is provided to the DRM engine plugin using MLMediaDRMProvideKeyResponse(). When the response is for an offline key request, a key&#95;set&#95;id is returned that can be used to later restore the keys to a new session with restoreKeys(). When the response is for a streaming or release request, a null key&#95;set&#95;id is returned. 
+A key response is received from the license server by the app, then it is provided to the [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) engine plugin using MLMediaDRMProvideKeyResponse(). When the response is for an offline key request, a key&#95;set&#95;id is returned that can be used to later restore the keys to a new session with restoreKeys(). When the response is for a streaming or release request, a null key&#95;set&#95;id is returned. 
 
 ```csharp
 public MLResult KeysResponse(
-    byte[] responseData,
-    out byte[] keySetData
+    byte [] responseData,
+    out byte [] keySetData
 )
 ```
 
@@ -243,8 +243,8 @@ public MLResult KeysResponse(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |responseData||
-| out byte[] |keySetData||
+| byte [] |responseData||
+| out byte [] |keySetData||
 
 
 
@@ -270,7 +270,7 @@ public MLResult Open()
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Prepare {#mlresult-prepare}
 
-Prepare DRM for the selected media (either audio or video) track with the CurrentSession member. 
+Prepare [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) for the selected media (either audio or video) track with the CurrentSession member. 
 
 ```csharp
 public MLResult Prepare()
@@ -289,7 +289,7 @@ _**CURRENTLY UNTESTED ON CAPI**_ Remove the current keys from a session.
 
 ```csharp
 public MLResult RemoveKeys(
-    byte[] keySetId
+    byte [] keySetId
 )
 ```
 
@@ -298,7 +298,7 @@ public MLResult RemoveKeys(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |keySetId||
+| byte [] |keySetId||
 
 
 
@@ -313,7 +313,7 @@ _**CURRENTLY UNTESTED ON CAPI**_ Restore persisted offline keys into a new sessi
 
 ```csharp
 public MLResult RestoreKeys(
-    byte[] keySetId
+    byte [] keySetId
 )
 ```
 
@@ -322,7 +322,7 @@ public MLResult RestoreKeys(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |keySetId||
+| byte [] |keySetId||
 
 
 
@@ -338,8 +338,8 @@ _**CURRENTLY UNTESTED ON CAPI**_ Generate a signature using the specified algori
 ```csharp
 public MLResult Sign(
     HMACParam hmacParam,
-    byte[] message,
-    out byte[] signature
+    byte [] message,
+    out byte [] signature
 )
 ```
 
@@ -349,8 +349,8 @@ public MLResult Sign(
 | Type | Name  | Description  | 
 |--|--|--|
 | [HMACParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/Session/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Session.HMACParam.md) |hmacParam||
-| byte[] |message||
-| out byte[] |signature||
+| byte [] |message||
+| out byte [] |signature||
 
 
 
@@ -366,8 +366,8 @@ _**CURRENTLY UNTESTED ON CAPI**_ Generate a signature using the specified algori
 ```csharp
 public MLResult Sign(
     RSAParam rsaParam,
-    byte[] message,
-    out byte[] signature
+    byte [] message,
+    out byte [] signature
 )
 ```
 
@@ -377,8 +377,8 @@ public MLResult Sign(
 | Type | Name  | Description  | 
 |--|--|--|
 | [RSAParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/Session/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Session.RSAParam.md) |rsaParam||
-| byte[] |message||
-| out byte[] |signature||
+| byte [] |message||
+| out byte [] |signature||
 
 
 
@@ -394,8 +394,8 @@ _**CURRENTLY UNTESTED ON CAPI**_ Perform a signature verification using the spec
 ```csharp
 public MLResult Verify(
     HMACParam hmacParam,
-    byte[] message,
-    byte[] signature,
+    byte [] message,
+    byte [] signature,
     out bool isMatch
 )
 ```
@@ -406,8 +406,8 @@ public MLResult Verify(
 | Type | Name  | Description  | 
 |--|--|--|
 | [HMACParam](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/Session/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Session.HMACParam.md) |hmacParam||
-| byte[] |message||
-| byte[] |signature||
+| byte [] |message||
+| byte [] |signature||
 | out bool |isMatch||
 
 

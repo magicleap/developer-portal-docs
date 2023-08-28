@@ -22,13 +22,13 @@ The image planes making up the output image. Array length is constant, actual nu
 
 ```csharp
 
-public ImagePlaneInfoNative[] ImagePlanes;
+public ImagePlaneInfoNative [] ImagePlanes;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [ImagePlaneInfoNative](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.ImagePlaneInfoNative.md)[] | Representation of the native image plane structure.  |
+| [ImagePlaneInfoNative](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.ImagePlaneInfoNative.md) [] | Representation of the native image plane structure.  |
 
 
 
@@ -38,7 +38,7 @@ public ImagePlaneInfoNative[] ImagePlanes;
 
 ### PlaneCount {#byte-planecount}
 
-Number of output image planes. 3 for OutputFormat.YUV&#95;420&#95;888, 1 for OutputFormat.RGBA&#95;8888 
+Number of output image planes. 3 for [OutputFormat.YUV&#95;420&#95;888](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-yuv-420-888), 1 for [OutputFormat.RGBA&#95;8888](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-rgba-8888)
 
 ```csharp
 

@@ -55,7 +55,7 @@ public int polygonVertexCount { get; set; }
 
 ### valid {#bool-valid}
 
-Whether this PlaneBoundary is valid. You should check for validity before invoking GetPolygon(Allocator, NativeArray&lt;Vector2&gt;), GetPolygon(Allocator), GetHole(int, Allocator), or GetHole(int, Allocator, NativeArray&lt;Vector2&gt;). 
+Whether this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) is valid. You should check for validity before invoking GetPolygon(Allocator, NativeArray&lt;Vector2&gt;), [GetPolygon(Allocator)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#nativearray-vector2-getpolygon), [GetHole(int, Allocator)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#nativearray-vector2-gethole), or GetHole(int, Allocator, NativeArray&lt;Vector2&gt;). 
 
 ```csharp
 
@@ -120,7 +120,7 @@ public override bool Equals(
 
 
 
-**Returns**:  true  if _obj_  is of type PlaneBoundary and compares equal with Equals(PlaneBoundary).
+**Returns**:  true  if _obj_  is of type [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) and compares equal with [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals).
 
 
 
@@ -141,14 +141,14 @@ public bool Equals(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |other|The PlaneBoundary to compare against.|
+| [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) |other|The [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) to compare against.|
 
 
 
 
 
 
-**Returns**:  true  if all fields of this PlaneBoundary compare equal to _other_ .
+**Returns**:  true  if all fields of this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) compare equal to _other_ .
 
 
 
@@ -189,15 +189,15 @@ public NativeArray< Vector2 > GetHole(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| int |index|The index of the hole. Must be less than holeCount.|
+| int |index|The index of the hole. Must be less than [holeCount](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#int-holecount).|
 | Allocator |allocator|The allocator to use for the returned NativeArray. Must be  Allocator.TempJob  or  Allocator.Persistent .|
 
 
 **Exceptions**: 
 
-  * `System.InvalidOperationException` Thrown if valid is false.
+  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is false.
   * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
-  * `System.ArgumentOutOfRangeException` Thrown if _index_  is less than 0 or greater than or equal to holeCount.
+  * `System.ArgumentOutOfRangeException` Thrown if _index_  is less than 0 or greater than or equal to [holeCount](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#int-holecount).
 
 
 
@@ -227,16 +227,16 @@ public unsafe void GetHole(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| int |index|The index of the hole. Must be less than holeCount.|
+| int |index|The index of the hole. Must be less than [holeCount](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#int-holecount).|
 | Allocator |allocator|The allocator to use if _polygonOut_  must be resized. Must be  Allocator.TempJob  or  Allocator.Persistent .|
 | ref NativeArray&lt; Vector2 &gt; |polygonOut|The resulting polygon describing the hole at _index_ .|
 
 
 **Exceptions**: 
 
-  * `System.InvalidOperationException` Thrown if valid is false.
+  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is false.
   * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
-  * `System.ArgumentOutOfRangeException` Thrown if _index_  is less than 0 or greater than or equal to holeCount.
+  * `System.ArgumentOutOfRangeException` Thrown if _index_  is less than 0 or greater than or equal to [holeCount](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#int-holecount).
 
 
 
@@ -268,7 +268,7 @@ public unsafe void GetPolygon(
 
 **Exceptions**: 
 
-  * `System.InvalidOperationException` Thrown if valid is  false .
+  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is  false .
   * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
 
 
@@ -298,7 +298,7 @@ public NativeArray< Vector2 > GetPolygon(
 
 **Exceptions**: 
 
-  * `System.InvalidOperationException` Thrown if valid is  false .
+  * `System.InvalidOperationException` Thrown if [valid](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-valid) is  false .
   * `System.InvalidOperationException` Thrown if _allocator_  is  Allocator.Temp  or  Allocator.None .
 
 
@@ -342,7 +342,7 @@ public static unsafe void TransformMLPolygon(
 
 ### bool operator!= {#bool-operator}
 
-Compares for inequality. Same as  ! Equals(PlaneBoundary). 
+Compares for inequality. Same as  ! [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals). 
 
 ```csharp
 public static bool operator!=(
@@ -364,7 +364,7 @@ public static bool operator!=(
 
 
 
-**Returns**:  true  if any of the fields of this PlaneBoundary are not equal to _other_ .
+**Returns**:  true  if any of the fields of this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) are not equal to _other_ .
 
 
 
@@ -372,7 +372,7 @@ public static bool operator!=(
 
 ### bool operator== {#bool-operator}
 
-Compares for equality. Same as Equals(PlaneBoundary). 
+Compares for equality. Same as [Equals(PlaneBoundary)](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md#bool-equals). 
 
 ```csharp
 public static bool operator==(
@@ -394,7 +394,7 @@ public static bool operator==(
 
 
 
-**Returns**:  true  if all fields of this PlaneBoundary compare equal to _other_ .
+**Returns**:  true  if all fields of this [PlaneBoundary](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundary.md) compare equal to _other_ .
 
 
 

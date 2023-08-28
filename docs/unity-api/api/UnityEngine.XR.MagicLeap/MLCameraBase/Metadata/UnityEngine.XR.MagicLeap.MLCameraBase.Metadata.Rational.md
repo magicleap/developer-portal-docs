@@ -9,7 +9,7 @@ summary: rational data type.
 
 
 
-Rational data type.   
+[Rational](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/Metadata/UnityEngine.XR.MagicLeap.MLCameraBase.Metadata.Rational.md) data type.   
 
 
 

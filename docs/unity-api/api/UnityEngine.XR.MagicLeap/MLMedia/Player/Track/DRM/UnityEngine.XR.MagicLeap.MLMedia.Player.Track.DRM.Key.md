@@ -38,7 +38,7 @@ Id of the key.
 
 ```csharp
 
-public readonly byte[] Id;
+public readonly byte [] Id;
 
 ```
 

@@ -12,7 +12,7 @@ summary: magicleap implementation of the xrgesturesubsystem. do not create this 
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-[MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) implementation of the  XRGestureSubsystem . Do not create this directly. Use the  SubsystemManager  instead.   [More...](#detailed-description)  
+[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) implementation of the  XRGestureSubsystem . Do not create this directly. Use the  SubsystemManager  instead.   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>XRGestureSubsystem
@@ -28,7 +28,7 @@ public class GestureSubsystem : XRGestureSubsystem
 
 **Details**
 
-[MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) implementation of the  XRGestureSubsystem . Do not create this directly. Use  XRGestureSubsystemDescriptor.RegisterDescriptor()  instead. 
+[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) implementation of the  XRGestureSubsystem . Do not create this directly. Use  XRGestureSubsystemDescriptor.RegisterDescriptor()  instead. 
 
 
 
@@ -52,7 +52,7 @@ public List< Extensions.TouchpadGestureEvent > touchpadGestureEvents { get; set;
 
 | Type | Description  | 
 |--|--|
-| List&lt; [Extensions.TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) &gt; | The event data related to a Magic Leap Touchpad gesture.  |
+| List&lt; [Extensions.TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) &gt; | The event data related to a Magic Leap Touchpad gesture  |
 
 
 

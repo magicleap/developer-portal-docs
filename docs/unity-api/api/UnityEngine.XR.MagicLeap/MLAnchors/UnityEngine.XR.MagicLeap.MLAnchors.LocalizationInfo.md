@@ -15,25 +15,6 @@ A structure containing information about the device's localization state.
 
 
 
-## Public Fields
-
-### SpaceId {#readonly-string-spaceid}
-
-If localized, this will contain the name of the current space. 
-
-```csharp
-
-public readonly string SpaceId { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
 ###  LocalizationInfo {#functions-localizationinfo}
@@ -85,7 +66,7 @@ public readonly LocalizationStatus LocalizationStatus;
 
 | Type | Description  | 
 |--|--|
-| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus.  |
+| readonly [LocalizationStatus](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-localizationstatus) | LocalizationStatus  |
 
 
 
@@ -106,6 +87,23 @@ public readonly MappingMode MappingMode;
 | Type | Description  | 
 |--|--|
 | readonly [MappingMode](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#enums-mappingmode) | The current mapping mode, set via settings.  |
+
+
+
+
+
+-----------
+
+### SpaceId {#readonly-string-spaceid}
+
+If localized, this will contain the name of the current space. 
+
+```csharp
+
+public readonly string SpaceId => this.spaceId.ToString();
+
+```
+
 
 
 

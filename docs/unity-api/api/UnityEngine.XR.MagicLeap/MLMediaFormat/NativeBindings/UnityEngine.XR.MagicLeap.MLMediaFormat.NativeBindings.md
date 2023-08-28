@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatCreate {#mlresultcode-mlmediaformatcreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatCreate {#mlresultcode-mlmediaformatcreate}
 
 Create an empty format object. 
 
@@ -43,7 +43,7 @@ public MLResult.Code MLMediaFormatCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatCreateAudio {#mlresultcode-mlmediaformatcreateaudio}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatCreateAudio {#mlresultcode-mlmediaformatcreateaudio}
 
 Create a audio format object. 
 
@@ -73,7 +73,7 @@ public MLResult.Code MLMediaFormatCreateAudio(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatCreateCopy {#mlresultcode-mlmediaformatcreatecopy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatCreateCopy {#mlresultcode-mlmediaformatcreatecopy}
 
 Create a copy of the format handle provided. 
 
@@ -99,7 +99,7 @@ public MLResult.Code MLMediaFormatCreateCopy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatCreateSubtitle {#mlresultcode-mlmediaformatcreatesubtitle}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatCreateSubtitle {#mlresultcode-mlmediaformatcreatesubtitle}
 
 Create a subtitle format object. 
 
@@ -127,7 +127,7 @@ public MLResult.Code MLMediaFormatCreateSubtitle(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatCreateVideo {#mlresultcode-mlmediaformatcreatevideo}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatCreateVideo {#mlresultcode-mlmediaformatcreatevideo}
 
 Create a video format object. 
 
@@ -157,7 +157,7 @@ public MLResult.Code MLMediaFormatCreateVideo(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatDestroy {#mlresultcode-mlmediaformatdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatDestroy {#mlresultcode-mlmediaformatdestroy}
 
 Destroy a format object. 
 
@@ -181,7 +181,7 @@ public MLResult.Code MLMediaFormatDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatGetKeyByteBuffer {#mlresultcode-mlmediaformatgetkeybytebuffer}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatGetKeyByteBuffer {#mlresultcode-mlmediaformatgetkeybytebuffer}
 
 Obtain the value of a ByteBuffer key. 
 
@@ -209,7 +209,7 @@ public MLResult.Code MLMediaFormatGetKeyByteBuffer(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatGetKeySize {#mlresultcode-mlmediaformatgetkeysize}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatGetKeySize {#mlresultcode-mlmediaformatgetkeysize}
 
 Obtain the size of a key. 
 
@@ -237,7 +237,7 @@ public MLResult.Code MLMediaFormatGetKeySize(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatGetKeyString {#mlresultcode-mlmediaformatgetkeystring}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatGetKeyString {#mlresultcode-mlmediaformatgetkeystring}
 
 Obtain the value of a string key. User shall allocate at least #MAX&#95;KEY&#95;STRING&#95;SIZE bytes of memory for storing the output key string. 
 
@@ -265,7 +265,7 @@ public MLResult.Code MLMediaFormatGetKeyString(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatGetKeyValueFloat {#mlresultcode-mlmediaformatgetkeyvaluefloat}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatGetKeyValueFloat {#mlresultcode-mlmediaformatgetkeyvaluefloat}
 
 Obtain the value of an float key. 
 
@@ -293,7 +293,7 @@ public MLResult.Code MLMediaFormatGetKeyValueFloat(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatGetKeyValueInt32 {#mlresultcode-mlmediaformatgetkeyvalueint32}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatGetKeyValueInt32 {#mlresultcode-mlmediaformatgetkeyvalueint32}
 
 Obtain the value of an integer key. For example, use #MLMediaFormat&#95;Key&#95;Frame&#95;Rate key to get the framerate of a video track. 
 
@@ -321,7 +321,7 @@ public MLResult.Code MLMediaFormatGetKeyValueInt32(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatGetKeyValueInt64 {#mlresultcode-mlmediaformatgetkeyvalueint64}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatGetKeyValueInt64 {#mlresultcode-mlmediaformatgetkeyvalueint64}
 
 Obtain the value of an long key. For example, use MLMediaFormat&#95;Key&#95;Duration key to get duration of a track. 
 
@@ -349,7 +349,7 @@ public MLResult.Code MLMediaFormatGetKeyValueInt64(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatKeyByteBufferRelease {#mlresultcode-mlmediaformatkeybytebufferrelease}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatKeyByteBufferRelease {#mlresultcode-mlmediaformatkeybytebufferrelease}
 
 Release the ByteBuffer acquired by MLMediaFormatGetKeyByteBuffer. 
 
@@ -375,7 +375,7 @@ public MLResult.Code MLMediaFormatKeyByteBufferRelease(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatObjectToString {#mlresultcode-mlmediaformatobjecttostring}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatObjectToString {#mlresultcode-mlmediaformatobjecttostring}
 
 Obtain the human readable representation of the format. User shall allocate at least #MAX&#95;FORMAT&#95;STRING&#95;SIZE bytes of memory for storing the output format string. The format string contains a list of key-value pairs, which can be extracted individually via the suitable "GetKeyValue" APIs. 
 
@@ -401,7 +401,7 @@ public MLResult.Code MLMediaFormatObjectToString(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatSetKeyByteBuffer {#mlresultcode-mlmediaformatsetkeybytebuffer}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatSetKeyByteBuffer {#mlresultcode-mlmediaformatsetkeybytebuffer}
 
 Set the value of a ByteBuffer key. 
 
@@ -429,7 +429,7 @@ public MLResult.Code MLMediaFormatSetKeyByteBuffer(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatSetKeyFloat {#mlresultcode-mlmediaformatsetkeyfloat}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatSetKeyFloat {#mlresultcode-mlmediaformatsetkeyfloat}
 
 Set the value of a float key. 
 
@@ -457,7 +457,7 @@ public MLResult.Code MLMediaFormatSetKeyFloat(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatSetKeyInt32 {#mlresultcode-mlmediaformatsetkeyint32}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatSetKeyInt32 {#mlresultcode-mlmediaformatsetkeyint32}
 
 Set the value of an integer key. 
 
@@ -485,7 +485,7 @@ public MLResult.Code MLMediaFormatSetKeyInt32(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatSetKeyInt64 {#mlresultcode-mlmediaformatsetkeyint64}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatSetKeyInt64 {#mlresultcode-mlmediaformatsetkeyint64}
 
 Set the value of a long key. 
 
@@ -513,7 +513,7 @@ public MLResult.Code MLMediaFormatSetKeyInt64(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatSetKeySize {#mlresultcode-mlmediaformatsetkeysize}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatSetKeySize {#mlresultcode-mlmediaformatsetkeysize}
 
 Set the size of a key. 
 
@@ -541,7 +541,7 @@ public MLResult.Code MLMediaFormatSetKeySize(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaFormatSetKeyString {#mlresultcode-mlmediaformatsetkeystring}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaFormatSetKeyString {#mlresultcode-mlmediaformatsetkeystring}
 
 Set the value of a string key. 
 

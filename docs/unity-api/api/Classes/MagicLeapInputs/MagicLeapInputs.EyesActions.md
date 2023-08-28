@@ -14,61 +14,7 @@ title: EyesActions
 
 
 
-## Public Fields
-
-### Data {#inputaction-data}
-
-```csharp
-
-public InputAction Data { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### enabled {#bool-enabled}
-
-```csharp
-
-public bool enabled { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
-
-### void AddCallbacks {#void-addcallbacks}
-
-```csharp
-public void AddCallbacks(
-    IEyesActions instance
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [IEyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IEyesActions.md) |instance||
-
-
-
-
-
-
------------
 
 ### void Disable {#void-disable}
 
@@ -131,28 +77,6 @@ public InputActionMap Get()
 
 -----------
 
-### void RemoveCallbacks {#void-removecallbacks}
-
-```csharp
-public void RemoveCallbacks(
-    IEyesActions instance
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [IEyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IEyesActions.md) |instance||
-
-
-
-
-
-
------------
-
 ### void SetCallbacks {#void-setcallbacks}
 
 ```csharp
@@ -189,6 +113,68 @@ public static implicit operator InputActionMap(
 | Type | Name  | Description  | 
 |--|--|--|
 | [EyesActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.EyesActions.md) |set||
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### Data {#inputaction-data}
+
+```csharp
+
+public InputAction Data => m_Wrapper.m_Eyes_Data;
+
+```
+
+
+
+
+
+
+-----------
+
+### Position {#inputaction-position}
+
+```csharp
+
+public InputAction Position => m_Wrapper.m_Eyes_Position;
+
+```
+
+
+
+
+
+
+-----------
+
+### Rotation {#inputaction-rotation}
+
+```csharp
+
+public InputAction Rotation => m_Wrapper.m_Eyes_Rotation;
+
+```
+
+
+
+
+
+
+-----------
+
+### enabled {#bool-enabled}
+
+```csharp
+
+public bool enabled => Get().enabled;
+
+```
 
 
 

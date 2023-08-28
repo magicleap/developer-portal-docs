@@ -9,7 +9,7 @@ summary: space data returned when we successfully import space.
 
 
 
-Space data returned when we successfully import space.   
+[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data returned when we successfully import space.   
 
 
 

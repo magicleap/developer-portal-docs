@@ -29,7 +29,7 @@ public MLAudioBufferFormat(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLAudioOutput.BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |bufferFormat|Buffer format settings for input and output streams. |
+| [MLAudioOutput.BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |bufferFormat|[Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams. |
 
 
 
@@ -80,7 +80,7 @@ public readonly MLAudioOutput.ChannelFormatType ChannelFormat;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLAudioOutput.ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-channelformattype) | Possible channel formats for input and output streams.  |
+| readonly [MLAudioOutput.ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) | Possible channel formats for input and output streams.  |
 
 
 
@@ -98,7 +98,7 @@ public readonly MLAudioOutput.SampleFormatType SampleFormat;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLAudioOutput.SampleFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-sampleformattype) | Possible sample formats for input and output streams.  |
+| readonly [MLAudioOutput.SampleFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-sampleformattype) | Possible sample formats for input and output streams.  |
 
 
 

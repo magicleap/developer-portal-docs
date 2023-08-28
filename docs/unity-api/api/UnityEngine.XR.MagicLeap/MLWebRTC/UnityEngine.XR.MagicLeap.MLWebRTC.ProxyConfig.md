@@ -9,7 +9,7 @@ summary: class that represents an ice server used by the mlwebrtc api.
 
 
 
-Class that represents an ice server used by the MLWebRTC API.   
+Class that represents an ice server used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.   
 
 
 
@@ -160,7 +160,7 @@ public string Username { get; set; }
 
 ### [ProxyConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.ProxyConfig.md) Create {#proxyconfig-create}
 
-Factory method used to create a new IceServer object. 
+Factory method used to create a new [IceServer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceServer.md) object. 
 
 ```csharp
 public static ProxyConfig Create(

@@ -9,7 +9,7 @@ summary: a structure containing information needed to import magic leap space. t
 
 
 
-A structure containing information needed to import Magic Leap Space. This structure must be initialized by calling #MLSpaceImportInfoInit before use.   
+A structure containing information needed to import Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceImportInfoInit before use.   
 
 
 

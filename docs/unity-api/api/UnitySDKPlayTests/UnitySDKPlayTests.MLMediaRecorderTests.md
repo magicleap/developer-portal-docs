@@ -84,7 +84,7 @@ public IEnumerator MLMediaRecorder_SetAudioEncoder(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMediaRecorder.AudioEncoder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-audioencoder) |encoder|Available audio encoder formats. |
+| [MLMediaRecorder.AudioEncoder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-audioencoder) |encoder|Available audio encoder formats |
 
 
 
@@ -193,7 +193,7 @@ public IEnumerator MLMediaRecorder_SetOutputFormat(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMediaRecorder.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-outputformat) |outputFormat|Possible output formats. |
+| [MLMediaRecorder.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-outputformat) |outputFormat|Possible output formats |
 
 
 
@@ -215,7 +215,7 @@ public IEnumerator MLMediaRecorder_SetVideoEncoder(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLMediaRecorder.VideoEncoder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-videoencoder) |encoder|Available video encoder formats. |
+| [MLMediaRecorder.VideoEncoder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-videoencoder) |encoder|Available video encoder formats |
 
 
 

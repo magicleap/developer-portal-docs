@@ -16,6 +16,36 @@ title: NativeBindings
 
 ## Public Methods
 
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLHeadTrackingGetStaticData {#mlresultcode-mlheadtrackinggetstaticdata}
+
+Returns static information about the Head Tracker 
+
+```csharp
+public MLResult.Code MLHeadTrackingGetStaticData(
+    ulong handle,
+    ref MLHeadTrackingStaticData data
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |handle|A handle to the tracker retireved by GetHeadTrackerHandle()|
+| ref [MLHeadTrackingStaticData](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.NativeBindings.MLHeadTrackingStaticData.md) |data|Target to populate the data about that Head Tracker|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed to receive static data due to an invalid input parameter. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successfully received static data. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed to receive static data due to an unknown error. 
+
+
+
+-----------
+
 ### bool TryGetMapEvents {#bool-trygetmapevents}
 
 ```csharp
@@ -31,7 +61,7 @@ public static bool TryGetMapEvents(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |device||
-| out [MLHeadTracking.MapEvents](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#ulong-mapevents) |mapEvents|A set of all types of map events that can occur that a developer may have to handle. |
+| out [MLHeadTracking.MapEvents](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-mapevents) |mapEvents|A set of all types of map events that can occur that a developer may have to handle. |
 
 
 

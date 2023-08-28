@@ -9,7 +9,7 @@ summary: drm session information for a mediaplayer track.
 
 
 
-DRM Session information for a MediaPlayer Track.   
+DRM Session information for a MediaPlayer [Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md).   
 
 
 

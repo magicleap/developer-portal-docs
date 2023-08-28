@@ -106,7 +106,7 @@ public AudioClip FlushToClip()
 
 ```csharp
 public int GetData(
-    float[] samples,
+    float [] samples,
     int readPosition,
     out int nextReadPosition
 )
@@ -117,7 +117,7 @@ public int GetData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |samples||
+| float [] |samples||
 | int |readPosition||
 | out int |nextReadPosition||
 
@@ -132,7 +132,7 @@ public int GetData(
 
 ```csharp
 public int GetData(
-    float[] samples,
+    float [] samples,
     int readPosition
 )
 ```
@@ -142,7 +142,7 @@ public int GetData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |samples||
+| float [] |samples||
 | int |readPosition||
 
 
@@ -160,7 +160,7 @@ Gets called from a thread when new samples are recorded.
 
 ```csharp
 protected virtual override void OnReceiveSamples(
-    float[] samples
+    float [] samples
 )
 ```
 
@@ -169,7 +169,7 @@ protected virtual override void OnReceiveSamples(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |samples||
+| float [] |samples||
 
 
 

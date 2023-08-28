@@ -38,7 +38,7 @@ Optional data that may be associated with the event.
 
 ```csharp
 
-public readonly byte[] Data;
+public readonly byte [] Data;
 
 ```
 
@@ -68,11 +68,11 @@ public readonly int Extra;
 
 ### SessionId {#readonly-byte-sessionid}
 
-DRM session id associated with the event. 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public readonly byte[] SessionId;
+public readonly byte [] SessionId;
 
 ```
 
@@ -85,7 +85,7 @@ public readonly byte[] SessionId;
 
 ### Type {#readonly-type}
 
-Type of Media DRM event. 
+Type of Media [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) event. 
 
 ```csharp
 
@@ -95,7 +95,7 @@ public readonly EventType Type;
 
 | Type | Description  | 
 |--|--|
-| readonly [EventType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#enums-eventtype) | The type of DRM event.  |
+| readonly [EventType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md#enums-eventtype) | The type of [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) event.  |
 
 
 

@@ -73,7 +73,7 @@ public Identifier CamId;
 
 ### EnableVideoStabilization {#bool-enablevideostabilization}
 
-Video Stabilization enable/disable, true - enable; false - disabled. 
+Video Stabilization enable/disable, true - enable; false - disabled 
 
 ```csharp
 

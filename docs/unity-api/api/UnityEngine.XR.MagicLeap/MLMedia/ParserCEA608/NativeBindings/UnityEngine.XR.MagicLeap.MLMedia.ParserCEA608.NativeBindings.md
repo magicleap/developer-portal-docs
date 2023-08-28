@@ -18,7 +18,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCCParserCreate {#mlresultcode-mlmediaccparsercreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserCreate {#mlresultcode-mlmediaccparsercreate}
 
 ```csharp
 public MLResult.Code MLMediaCCParserCreate(
@@ -40,7 +40,7 @@ public MLResult.Code MLMediaCCParserCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCCParserDestroy {#mlresultcode-mlmediaccparserdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserDestroy {#mlresultcode-mlmediaccparserdestroy}
 
 ```csharp
 public MLResult.Code MLMediaCCParserDestroy(
@@ -62,7 +62,7 @@ public MLResult.Code MLMediaCCParserDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCCParserGetDisplayableEx {#mlresultcode-mlmediaccparsergetdisplayableex}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserGetDisplayableEx {#mlresultcode-mlmediaccparsergetdisplayableex}
 
 ```csharp
 public MLResult.Code MLMediaCCParserGetDisplayableEx(
@@ -90,7 +90,7 @@ public MLResult.Code MLMediaCCParserGetDisplayableEx(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCCParserParse {#mlresultcode-mlmediaccparserparse}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserParse {#mlresultcode-mlmediaccparserparse}
 
 ```csharp
 public MLResult.Code MLMediaCCParserParse(
@@ -116,7 +116,7 @@ public MLResult.Code MLMediaCCParserParse(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCCParserSetDisplayChangedCallback {#mlresultcode-mlmediaccparsersetdisplaychangedcallback}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCCParserSetDisplayChangedCallback {#mlresultcode-mlmediaccparsersetdisplaychangedcallback}
 
 ```csharp
 public MLResult.Code MLMediaCCParserSetDisplayChangedCallback(

@@ -19,7 +19,7 @@ Defines a generic dispatching class.
 
 ### abstract void Dispatch {#abstract-void-dispatch}
 
-Abstract dispatch method to be called when removing callbacks from the queue. 
+Abstract dispatch method to be called when removing callbacks from the queue 
 
 ```csharp
 public virtual abstract void Dispatch()

@@ -9,7 +9,7 @@ summary: class that represents an ice candidate used by the mlwebrtc api.
 
 
 
-Class that represents an ice candidate used by the MLWebRTC API.   
+Class that represents an ice candidate used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.   
 
 
 
@@ -72,7 +72,7 @@ public string SdpMid { get; set; }
 
 ### [IceCandidate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceCandidate.md) Create {#icecandidate-create}
 
-Factory method used to create a new IceCandidate object. 
+Factory method used to create a new [IceCandidate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceCandidate.md) object. 
 
 ```csharp
 public static IceCandidate Create(

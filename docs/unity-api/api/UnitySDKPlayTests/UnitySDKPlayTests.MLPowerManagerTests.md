@@ -84,7 +84,7 @@ public void MLPowerManager_SetPowerState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| MLPowerManager.PowerState |state||
+| [MLPowerManager.PowerState](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-powerstate) |state|Power states. |
 
 
 

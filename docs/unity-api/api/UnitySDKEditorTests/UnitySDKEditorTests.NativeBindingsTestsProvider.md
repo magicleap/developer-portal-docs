@@ -23,7 +23,7 @@ title: NativeBindingsTestsProvider
 
 ```csharp
 
-public static const string MLSdkTestsProviderDll = "ml_sdk_tests_provider";
+public const string MLSdkTestsProviderDll = "ml_sdk_tests_provider";
 
 ```
 

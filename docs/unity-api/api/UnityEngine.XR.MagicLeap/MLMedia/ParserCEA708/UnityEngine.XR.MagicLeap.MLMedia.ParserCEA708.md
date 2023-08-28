@@ -49,7 +49,7 @@ public delegate void OnEmitEventDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Cea708CaptionEmitCommand](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#int-cea708captionemitcommand) |command|CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#95;media&#95;cea708&#95;caption.h . |
+| [Cea708CaptionEmitCommand](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA708/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA708.md#enums-cea708captionemitcommand) |command|CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#95;media&#95;cea708&#95;caption.h . |
 | object |obj||
 
 
@@ -124,7 +124,7 @@ public ParserCEA708()
 
 ```csharp
 
-public static const string Mime = "text/cea-708";
+public const string Mime = "text/cea-708";
 
 ```
 
@@ -165,7 +165,7 @@ public OnTextDelegate OnText()
 
 ## Public Enums
 
-### Cea708CaptionColorOpacity {#int-cea708captioncoloropacity}
+### Cea708CaptionColorOpacity {#enums-cea708captioncoloropacity}
 
 CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
@@ -185,7 +185,7 @@ CEA708 Caption Color Opacity constants.  MLCea708CaptionColorOpacity  from  ml&#
 
 -----------
 
-### Cea708CaptionEmitCommand {#int-cea708captionemitcommand}
+### Cea708CaptionEmitCommand {#enums-cea708captionemitcommand}
 
 CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
@@ -222,7 +222,7 @@ CEA708 Caption Emit Commands constants.  MLCea708CaptionEmitCommand  from  ml&#9
 
 -----------
 
-### Cea708CaptionEmitCommandControl {#int-cea708captionemitcommandcontrol}
+### Cea708CaptionEmitCommandControl {#enums-cea708captionemitcommandcontrol}
 
 CEA708 Caption Emit Command Control constants.  MLCea708CaptionEmitCommandControl  from  ml&#95;media&#95;cea708&#95;caption.h . 
 
@@ -230,7 +230,7 @@ CEA708 Caption Emit Command Control constants.  MLCea708CaptionEmitCommandContro
 | ---------- | ----- | ----------- |
 | ETX | 0x03| End of text.   |
 | BS | 0x08| Back space.   |
-| FF | 0x0c| This code is equivalent to CEA708 CLW command.   |
+| FF | 0x0c| This code is equivalent to CEA708 CLW command   |
 | HCR | 0x0e| Carriage return.   |
 
 

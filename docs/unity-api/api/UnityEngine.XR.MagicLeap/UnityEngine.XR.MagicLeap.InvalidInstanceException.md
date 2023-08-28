@@ -24,7 +24,7 @@ Inherits from: <br></br>Exception
 
 ###  InvalidInstanceException {#functions-invalidinstanceexception}
 
-Initializes a new instance of the InvalidInstanceException class. 
+Initializes a new instance of the [InvalidInstanceException](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.InvalidInstanceException.md) class. 
 
 ```csharp
 public InvalidInstanceException(

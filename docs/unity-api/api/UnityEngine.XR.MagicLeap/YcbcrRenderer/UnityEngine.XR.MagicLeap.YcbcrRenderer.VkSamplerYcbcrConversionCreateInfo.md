@@ -18,7 +18,7 @@ title: VkSamplerYcbcrConversionCreateInfo
 
 ### chromaFilter {#uint-chromafilter}
 
-VkFilter. 
+VkFilter 
 
 ```csharp
 
@@ -35,7 +35,7 @@ public uint chromaFilter;
 
 ### components {#vkcomponentmapping-components}
 
-VkComponentMapping. 
+[VkComponentMapping](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.VkComponentMapping.md)
 
 ```csharp
 
@@ -52,7 +52,7 @@ public VkComponentMapping components;
 
 ### forceExplicitReconstruction {#uint-forceexplicitreconstruction}
 
-VkBool32. 
+VkBool32 
 
 ```csharp
 
@@ -69,7 +69,7 @@ public uint forceExplicitReconstruction;
 
 ### format {#uint-format}
 
-VkFormat. 
+VkFormat 
 
 ```csharp
 
@@ -103,7 +103,7 @@ public IntPtr pNext;
 
 ### sType {#uint-stype}
 
-VkStructureType. 
+VkStructureType 
 
 ```csharp
 
@@ -120,7 +120,7 @@ public uint sType;
 
 ### xChromaOffset {#uint-xchromaoffset}
 
-VkChromaLocation. 
+VkChromaLocation 
 
 ```csharp
 
@@ -137,7 +137,7 @@ public uint xChromaOffset;
 
 ### yChromaOffset {#uint-ychromaoffset}
 
-VkChromaLocation. 
+VkChromaLocation 
 
 ```csharp
 
@@ -154,7 +154,7 @@ public uint yChromaOffset;
 
 ### ycbcrModel {#uint-ycbcrmodel}
 
-VkSamplerYcbcrModelConversion. 
+VkSamplerYcbcrModelConversion 
 
 ```csharp
 
@@ -171,7 +171,7 @@ public uint ycbcrModel;
 
 ### ycbcrRange {#uint-ycbcrrange}
 
-VkSamplerYcbcrRange. 
+VkSamplerYcbcrRange 
 
 ```csharp
 

@@ -97,7 +97,7 @@ Gets called from a thread when new samples are recorded.
 
 ```csharp
 protected virtual override void OnReceiveSamples(
-    float[] samples
+    float [] samples
 )
 ```
 
@@ -106,7 +106,7 @@ protected virtual override void OnReceiveSamples(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |samples||
+| float [] |samples||
 
 
 

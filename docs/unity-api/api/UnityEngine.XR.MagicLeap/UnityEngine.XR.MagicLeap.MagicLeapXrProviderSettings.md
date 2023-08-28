@@ -40,7 +40,7 @@ public MagicLeapXrProviderNativeBindings.LogLevel LogLevel { get; set; }
 
 ### s_RuntimeInstance {#magicleapxrprovidersettings-s-runtimeinstance}
 
-Static instance that will hold the runtime asset instance we created in our build process. 
+Static instance that will hold the runtime asset instance we created in our build process.
 
 ```csharp
 

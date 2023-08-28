@@ -20,7 +20,7 @@ title: Constants
 
 ```csharp
 
-public static const int kBaseCommandSize = 8;
+public const int kBaseCommandSize = 8;
 
 ```
 

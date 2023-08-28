@@ -32,7 +32,7 @@ public override string ToString()
 
 ## Public Attributes
 
-### CoordinateFrameUID {#readonly-coordinateframeuid}
+### CoordinateFrameUID {#readonly-mlcoordinateframeuid-coordinateframeuid}
 
 MLCoordinateFrameUID of the QR code. This FrameUID is only useful if the marker is of type #MLMarkerTypeQR This should be passed to the MLSnapshotGetTransform() function to get the 6 DOF pose of the QR code. Any marker that isn't a QR code will have an invalid FrameUID here. 
 
@@ -42,9 +42,6 @@ public readonly MLCoordinateFrameUID CoordinateFrameUID;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 
@@ -122,7 +119,7 @@ public readonly MarkerType Type;
 
 | Type | Description  | 
 |--|--|
-| readonly [MarkerType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API.  |
+| readonly [MarkerType](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-markertype) | Represents the different marker types supported by the API  |
 
 
 

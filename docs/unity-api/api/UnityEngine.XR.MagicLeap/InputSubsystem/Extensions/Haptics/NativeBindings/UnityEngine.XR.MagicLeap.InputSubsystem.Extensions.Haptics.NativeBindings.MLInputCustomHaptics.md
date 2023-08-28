@@ -9,7 +9,7 @@ summary: or a pre-defined pattern, this structure will hold info of a pattern to
 
 
 
-A structure containing information about the Buzz command and/or pre-defined pattern to be played. A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array.   
+A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command and/or pre-defined pattern to be played. A custom haptics pattern can be played by combining [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) haptic command and/or a pre-defined pattern, this structure will hold info of a pattern to be added to the custom haptics array.   
 
 
 
@@ -30,7 +30,7 @@ public MLInputCustomHaptics(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzzHaptics|A structure containing information about the Buzz command to be played. |
+| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzzHaptics|A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played. |
 
 
 
@@ -77,7 +77,7 @@ public readonly MLInputBuzzCommand Buzz;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLInputBuzzCommand](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputBuzzCommand.md) | A structure containing information about the Buzz command to be played.  |
+| readonly [MLInputBuzzCommand](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.NativeBindings.MLInputBuzzCommand.md) | A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played.  |
 
 
 
@@ -87,7 +87,7 @@ public readonly MLInputBuzzCommand Buzz;
 
 ### DurationMs {#readonly-uint-durationms}
 
-Duration of the pattern in millisecond (ms) This field will set the time for which a pattern is played: -If the inherited duration of a pre-defined pattern is greater, then it will be cut short and the next pattern will start playing. -If the inherited duration of a pre-defined pattern is smaller, then it will not repeat itself and will wait for the #duration to complete before starting to play the next pattern. -Buzz command's duration will supersede the #duration. Above caveat is true in case buzz command'. 
+Duration of the pattern in millisecond (ms) This field will set the time for which a pattern is played: -If the inherited duration of a pre-defined pattern is greater, then it will be cut short and the next pattern will start playing. -If the inherited duration of a pre-defined pattern is smaller, then it will not repeat itself and will wait for the #duration to complete before starting to play the next pattern. -Buzz command's duration will supersede the #duration. Above caveat is true in case buzz command' 
 
 ```csharp
 

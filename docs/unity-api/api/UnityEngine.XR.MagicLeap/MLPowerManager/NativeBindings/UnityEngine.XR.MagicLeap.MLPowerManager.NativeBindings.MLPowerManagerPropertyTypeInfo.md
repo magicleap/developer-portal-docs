@@ -1,6 +1,6 @@
 ---
 title: MLPowerManagerPropertyTypeInfo
-summary: summary. 
+summary: summary 
 
 ---
 
@@ -9,7 +9,7 @@ summary: summary.
 
 
 
-A structure to encapsulate information used by the Power Manager when getting the available property types. &lt;/summary.   
+A structure to encapsulate information used by the Power Manager when getting the available property types. &lt;/summary   
 
 
 

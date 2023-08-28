@@ -1,6 +1,6 @@
 ---
 title: MLAutoAPISingleton
-summary: mlautoapisingleton class contains a template for singleton apis. 
+summary: mlautoapisingleton class contains a template for singleton apis 
 
 ---
 
@@ -12,7 +12,7 @@ summary: mlautoapisingleton class contains a template for singleton apis.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MLAutoAPISingleton class contains a template for singleton APIs.   [More...](#detailed-description)  
+[MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) class contains a template for singleton APIs   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
@@ -47,7 +47,7 @@ Indicates if the API has started successfully.
 
 ```csharp
 
-public static bool IsStarted = false { get; set; }
+public static bool IsStarted { get; set; }
 
 ```
 
@@ -79,7 +79,7 @@ protected virtual sealed override void Initialize()
 
 ### OnApplicationFocus {#void-onapplicationfocus}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application focus event. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application focus event. 
 
 ```csharp
 protected virtual void OnApplicationFocus(
@@ -103,7 +103,7 @@ protected virtual void OnApplicationFocus(
 
 ### OnApplicationPause {#void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual void OnApplicationPause(
@@ -121,7 +121,7 @@ protected virtual void OnApplicationPause(
 
 
 
-**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-void-onapplicationpause)
+**Reimplemented by**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-void-onapplicationpause), [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-void-onapplicationpause)
 
 
 
@@ -129,7 +129,7 @@ protected virtual void OnApplicationPause(
 
 ### OnDeviceActive {#void-ondeviceactive}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs when device enters active mode. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters active mode. 
 
 ```csharp
 protected virtual void OnDeviceActive()
@@ -144,7 +144,7 @@ protected virtual void OnDeviceActive()
 
 ### OnDeviceReality {#void-ondevicereality}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs when device enters reality mode. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters reality mode. 
 
 ```csharp
 protected virtual void OnDeviceReality()
@@ -159,7 +159,7 @@ protected virtual void OnDeviceReality()
 
 ### OnDeviceStandby {#void-ondevicestandby}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs when device enters standby mode. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs when device enters standby mode. 
 
 ```csharp
 protected virtual void OnDeviceStandby()
@@ -183,7 +183,7 @@ protected virtual abstract MLResult.Code StartAPI()
 
 
 
-**Reimplemented by**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLFacialExpression/UnityEngine.XR.MagicLeap.MLFacialExpression.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-startapi)
+**Reimplemented by**: [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLOcclusion/UnityEngine.XR.MagicLeap.MLOcclusion.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLFacialExpression/UnityEngine.XR.MagicLeap.MLFacialExpression.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-startapi), [StartAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-startapi)
 
 
 
@@ -191,7 +191,7 @@ protected virtual abstract MLResult.Code StartAPI()
 
 ### StopAPI {#abstract-stopapi}
 
-API-specific cleanup. Will be called whenever MLDevice is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual abstract MLResult.Code StopAPI()
@@ -200,7 +200,7 @@ protected virtual abstract MLResult.Code StopAPI()
 
 
 
-**Reimplemented by**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLFacialExpression/UnityEngine.XR.MagicLeap.MLFacialExpression.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-stopapi)
+**Reimplemented by**: [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLCVCamera/UnityEngine.XR.MagicLeap.MLCVCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLOcclusion/UnityEngine.XR.MagicLeap.MLOcclusion.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/UnityEngine.XR.MagicLeap.MLWorldCamera.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLFacialExpression/UnityEngine.XR.MagicLeap.MLFacialExpression.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-stopapi), [StopAPI](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#override-stopapi)
 
 
 
@@ -217,7 +217,7 @@ protected virtual void Update()
 
 
 
-**Reimplemented by**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-void-update)
+**Reimplemented by**: [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioInput/UnityEngine.XR.MagicLeap.MLAudioInput.md#override-void-update), [Update](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#override-void-update)
 
 
 
@@ -246,7 +246,7 @@ protected readonly object APILock = new object();
 
 ```csharp
 
-protected readonly string DllNotFoundError = $"Failedtostart{typeof(T).Name}PI.ThisPIisonlyavailableondeviceorwhenrunninginsidetheUnityeditorwithMagicLeapppSimulatorenabled.";
+protected readonly string DllNotFoundError = $"Failed to start {typeof(T).Name} API. This API is only available on device or when running inside the Unity editor with Magic Leap App Simulator enabled.";
 
 ```
 

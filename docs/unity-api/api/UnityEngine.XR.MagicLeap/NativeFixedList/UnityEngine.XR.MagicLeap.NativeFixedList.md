@@ -12,17 +12,17 @@ summary: has list-like semantics capacity and length using a nativearray as the 
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-Has List-like semantics (Capacity and Length) using a NativeArray as the backing store. The NativeArray is never resized. This is useful for times you don't know how big the array will be, but there is a definite upper bound. This list supports duck-typed foreach Enumerator semantics.   [More...](#detailed-description)  
+Has List-like semantics (Capacity and Length) using a NativeArray as the backing store. The NativeArray is never resized. This is useful for times you don't know how big the array will be, but there is a definite upper bound. This list supports duck-typed foreach [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/NativeFixedList/UnityEngine.XR.MagicLeap.NativeFixedList.Enumerator.md) semantics.   [More...](#detailed-description)  
 
 
-Inherits from: <br></br>IEquatable< NativeFixedList< T > >,<br></br>IDisposable
+Inherits from: <br></br>IEquatable< NativeFixedList< T >>,<br></br>IDisposable
 
 
 
 ## Detailed Description
 
 ```csharp
-package template <T > struct NativeFixedList : IEquatable< NativeFixedList< T > > 
+package template <T > struct NativeFixedList : IEquatable< NativeFixedList< T >> 
 ```
 
 

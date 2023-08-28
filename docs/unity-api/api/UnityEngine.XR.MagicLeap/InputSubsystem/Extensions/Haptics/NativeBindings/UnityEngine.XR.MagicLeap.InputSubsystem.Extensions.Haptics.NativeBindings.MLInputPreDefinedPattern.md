@@ -17,23 +17,6 @@ Inherits from: <br></br>IInputDeviceCommandInfo
 
 
 
-## Public Fields
-
-### typeStatic {#fourcc-typestatic}
-
-```csharp
-
-public FourCC typeStatic { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
 ###  MLInputPreDefinedPattern {#functions-mlinputpredefinedpattern}
@@ -84,6 +67,21 @@ Version of this structure.
 ```csharp
 
 public readonly uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### typeStatic {#fourcc-typestatic}
+
+```csharp
+
+public FourCC typeStatic => commandType;
 
 ```
 

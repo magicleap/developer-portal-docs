@@ -141,7 +141,7 @@ public MLResult GetFrameTimestamp(
 
 ```csharp
 public MLResult GetFrameTransformMatrix(
-    float[] frameTransformMatColMajor
+    float [] frameTransformMatColMajor
 )
 ```
 
@@ -150,7 +150,7 @@ public MLResult GetFrameTransformMatrix(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |frameTransformMatColMajor||
+| float [] |frameTransformMatColMajor||
 
 
 
@@ -189,7 +189,7 @@ public MLNativeSurface(
 
 ###  MLNativeSurface {#functions-mlnativesurface}
 
-For externally owned native surface, like in the case of MLMediaRecorder. 
+For externally owned native surface, like in the case of [MLMediaRecorder](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md)
 
 ```csharp
 public MLNativeSurface(

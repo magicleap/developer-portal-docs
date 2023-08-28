@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLTimeConvertMLTimeToSystemTime {#mlresultcode-mltimeconvertmltimetosystemtime}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLTimeConvertMLTimeToSystemTime {#mlresultcode-mltimeconvertmltimetosystemtime}
 
 ```csharp
 public MLResult.Code MLTimeConvertMLTimeToSystemTime(
@@ -43,7 +43,7 @@ public MLResult.Code MLTimeConvertMLTimeToSystemTime(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLTimeConvertSystemTimeToMLTime {#mlresultcode-mltimeconvertsystemtimetomltime}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLTimeConvertSystemTimeToMLTime {#mlresultcode-mltimeconvertsystemtimetomltime}
 
 ```csharp
 public MLResult.Code MLTimeConvertSystemTimeToMLTime(

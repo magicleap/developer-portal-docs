@@ -14,76 +14,7 @@ title: HMDActions
 
 
 
-## Public Fields
-
-### Position {#inputaction-position}
-
-```csharp
-
-public InputAction Position { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### Rotation {#inputaction-rotation}
-
-```csharp
-
-public InputAction Rotation { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### enabled {#bool-enabled}
-
-```csharp
-
-public bool enabled { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
-
-### void AddCallbacks {#void-addcallbacks}
-
-```csharp
-public void AddCallbacks(
-    IHMDActions instance
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [IHMDActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IHMDActions.md) |instance||
-
-
-
-
-
-
------------
 
 ### void Disable {#void-disable}
 
@@ -146,28 +77,6 @@ public HMDActions(
 
 -----------
 
-### void RemoveCallbacks {#void-removecallbacks}
-
-```csharp
-public void RemoveCallbacks(
-    IHMDActions instance
-)
-```
-
-
-**Parameters**
-
-| Type | Name  | Description  | 
-|--|--|--|
-| [IHMDActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.IHMDActions.md) |instance||
-
-
-
-
-
-
------------
-
 ### void SetCallbacks {#void-setcallbacks}
 
 ```csharp
@@ -204,6 +113,53 @@ public static implicit operator InputActionMap(
 | Type | Name  | Description  | 
 |--|--|--|
 | [HMDActions](/unity-api/api/Classes/MagicLeapInputs/MagicLeapInputs.HMDActions.md) |set||
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### Position {#inputaction-position}
+
+```csharp
+
+public InputAction Position => m_Wrapper.m_HMD_Position;
+
+```
+
+
+
+
+
+
+-----------
+
+### Rotation {#inputaction-rotation}
+
+```csharp
+
+public InputAction Rotation => m_Wrapper.m_HMD_Rotation;
+
+```
+
+
+
+
+
+
+-----------
+
+### enabled {#bool-enabled}
+
+```csharp
+
+public bool enabled => Get().enabled;
+
+```
 
 
 

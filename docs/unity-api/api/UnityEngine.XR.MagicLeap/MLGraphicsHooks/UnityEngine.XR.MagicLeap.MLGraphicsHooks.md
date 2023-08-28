@@ -19,21 +19,6 @@ title: MLGraphicsHooks
 
 ## Public Fields
 
-### ClientHandle {#ulong-clienthandle}
-
-```csharp
-
-public static ulong ClientHandle { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ### OnPreBeginRenderFrame {#onprebeginrenderframedelegate-onprebeginrenderframe}
 
 ```csharp
@@ -112,6 +97,23 @@ public static void RequestPredictedSnapshots(
 
 ```csharp
 public static void Shutdown()
+```
+
+
+
+
+
+
+-----------
+
+## Public Attributes
+
+### ClientHandle {#ulong-clienthandle}
+
+```csharp
+
+public static ulong ClientHandle => NativeBindings.MLUnityGraphicsGetHandle();
+
 ```
 
 
