@@ -1,13 +1,12 @@
 ---
 id: unreal-getting-started
 title: Getting started with Unreal Engine 5
-sidebar_position: 1
+sidebar_position: 2
 date: 08/30/2023
 tags: [Android,Unreal Engine,Getting Started]
 keywords: [Android,Unreal Engine,Getting Started]
 
 ---
-
 
 This preview version of the Magic Leap 2 SDK for Unreal Engine 5 (ML2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the 3D graphics engine created by Epic Games.
 
