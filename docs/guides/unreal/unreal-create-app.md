@@ -25,7 +25,7 @@ You’ll need the preview version of Unreal Engine 5 with the Magic Leap 2 SDK f
     - Set **Scalable** as your quality preset.
     - Make sure **Started Content** and **Raytracing** are unselected.
 
-    <Image url= {require("/img/unreal/unreal-project-browser.png")} >Configure project defaults in the project browser</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-project-browser.png")} >Configure project defaults in the project browser</Image>
 
 4. If you chose Blueprint as your implementation, click **Create**.
 
@@ -37,16 +37,16 @@ You’ll need the preview version of Unreal Engine 5 with the Magic Leap 2 SDK f
 
 1. In the level editor, choose **File > New Level > Empty Level**. Click **Create**.
 
-    <Image url= {require("/img/unreal/unreal-level-editor-create.png")} >Create a new level in the level editor</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-level-editor-create.png")} >Create a new level in the level editor</Image>
 
 2. If you don’t see the Place Actors window, choose **Window > Place Actors**.
 3. Click the lightbulb icon to see the list of lights. Drag a sky light into your level from the Lights menu.
 
-    <Image url= {require("/img/unreal/unreal-lights-menu.png")} >Select a sky light from the Lights menu</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-lights-menu.png")} >Select a sky light from the Lights menu</Image>
 
 4. In the Outliner, select the sky light instance that you just added. In the Details panel, set the source type to **SLS Specified Cubemap** and set the cubemap to **DaylightAmbientCube**.
 
-    <Image url= {require("/img/unreal/unreal-set-light-details.png")} >Set the sky light's details in the Details panel</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-light-details.png")} >Set the sky light's details in the Details panel</Image>
 
 :::tip
 
@@ -57,19 +57,19 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 5. In the Place Actors menu, click the cube icon to see the list of shapes. From the Shapes menu, drag the cube into your level.
 
-    <Image url= {require("/img/unreal/unreal-shapes-menu.png")} >Select a cube from the Shapes menu</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-shapes-menu.png")} >Select a cube from the Shapes menu</Image>
 
 6. In the Outliner, select the cube instance that you just added. Set the cube’s location to 300, 0, 0 and its scale to 0.5, 0.5, 0.5. In the Details panel, click **+Add** to add a component. Add a **RotatingMovement** component.
 
-    <Image url= {require("/img/unreal/unreal-add-rotatingmovement.png")} >Add a RotatingMovement component to the cube instances in the Details panel</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-add-rotatingmovement.png")} >Add a RotatingMovement component to the cube instances in the Details panel</Image>
 
 7. In the Details panel, select the **StaticMeshComponent** of your cube instance and change its Mobility setting to **Movable**.
 
-    <Image url= {require("/img/unreal/unreal-set-to-movable.png")} >Set the StaticMeshComponent to Movable in the Details panel</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-to-movable.png")} >Set the StaticMeshComponent to Movable in the Details panel</Image>
 
 8. In the Place Actors menu, drag the player start into your level from the Basic menu. Set its location to 0, 0, 0.
 
-    <Image url= {require("/img/unreal/unreal-basic-menu.png")} >Select a player from the Basic menu</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-basic-menu.png")} >Select a player from the Basic menu</Image>
 
 ## Save the project map and create blueprints
 
@@ -87,20 +87,20 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 2. In the Details panel, under Classes, set the Default Pawn Class to **XrPawn**. Compile, save, and close the **XrPawn** blueprint. You can compile and save from the File menu or the main toolbar.
 
-    <Image url= {require("/img/unreal/unreal-set-pawn-class.png")} >Set the default pawn class in the Classes menu</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-pawn-class.png")} >Set the default pawn class in the Classes menu</Image>
 
 3. In the Content panel, double-click the **XrPawn** blueprint. This opens the full blueprint editor.
 
 4. In the Components tab of the blueprint editor, select **DefaultSceneRoot**. Click **+Add** and add a Camera component.
 
-    <Image url= {require("/img/unreal/unreal-add-camera.png")} >Add a camera in the Components panel</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-add-camera.png")} >Add a camera in the Components panel</Image>
 
 5. With the Camera component selected, click **+Add** again and add a Capsule Collision component.
 
-    <Image url= {require("/img/unreal/unreal-add-capsule-collision.png")} >Add a capsule collison to the camera component</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-add-capsule-collision.png")} >Add a capsule collison to the camera component</Image>
 
     You hierarchy should now look like this:
-    <Image url= {require("/img/unreal/unreal-hierarchy-with-capsule-collision.png")} >Your hierarchy with the camera and capsule collision</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-hierarchy-with-capsule-collision.png")} >Your hierarchy with the camera and capsule collision</Image>
 
 6. With the capsule selected, in the Properties panel:
 
@@ -112,7 +112,7 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 8. Click the Play In Editor button to make sure that everything in the scene is set up correctly. You should see the lit, white-textured cube spinning 3 meters in front of your spawn point.
 
-    <Image url= {require("/img/unreal/unreal-cube-play-in-editor.png")} >This is what your app should look like in Play in Editor</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-cube-play-in-editor.png")} >This is what your app should look like in Play in Editor</Image>
 
 9. Stop the Play in Editor before you continue.
 
@@ -122,11 +122,11 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 2. In the project settings window, go to **Maps & Modes**. Under Default Maps, set **Editor Startup Map** and **Game Default Map** to the project map that you created.
 
-    <Image url= {require("/img/unreal/unreal-set-default-maps.png")} >Set the default maps setting for your project </Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-default-maps.png")} >Set the default maps setting for your project </Image>
 
 3. Under Default Modes, set Default GameMode to **XrGameMode**, the game mode base blueprint you created.
 
-    <Image url= {require("/img/unreal/unreal-set-game-mode-base.png")} >Set the game mode base</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-game-mode-base.png")} >Set the game mode base</Image>
 
 4. From the main Unreal Editor menu, select **Edit > Plugins**. The plugins menu opens. Select **Augmented Reality**.
 
@@ -142,17 +142,17 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 6. In the Unreal Editor main menu, select **Edit > Project Settings**. In the Project - Description list, go to Settings. Select **Start in VR**.
 
-    <Image url= {require("/img/unreal/unreal-enable-start-vr.png")} >Enable Start VR in Project Settings</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-enable-start-vr.png")} >Enable Start VR in Project Settings</Image>
 
 7. Under Project Settings, go to Platforms and select **Android**. Under Android, go to APK Packaging. Click the **Configure Now** button in the red box.
 
-    <Image url= {require("/img/unreal/unreal-configure-now-android.png")} >Configure your project for the Android platform</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-configure-now-android.png")} >Configure your project for the Android platform</Image>
 
     The red box turns green.
 
 8. Under APK Packaging, select **Package game data inside .apk**.
 
-    <Image url= {require("/img/unreal/unreal-set-apk-packaging.png")} >Set .apk packaging</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-apk-packaging.png")} >Set .apk packaging</Image>
 
 9. Under Android, go to **Build**. Under Build, set these options:
     - Deselect **Support arm64 [aka arm64-v8a]**.
@@ -160,18 +160,18 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
     - Deselect **OpenGL ES3.2**.
     - Select **Support Vulkan**.
 
-    <Image url= {require("/img/unreal/unreal-set-build-options.png")} >Set build options in Project Settings</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-build-options.png")} >Set build options in Project Settings</Image>
 
 10. Under Android, go to **Launch Images**. Under Launch Images, deselect **Show launch image**.
 
-    <Image url= {require("/img/unreal/unreal-deselect-launch-image.png")} >Disable showing launch image</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-deselect-launch-image.png")} >Disable showing launch image</Image>
 
 11. Under Android, go to **Multi Texture Formats**. Under Multi Texture Formats, set these options:
     - Deselect **Include ETC2 textures**.
     - Select **Include DXT textures**.
     - Deselect **Include ASTC textures**.
 
-    <Image url= {require("/img/unreal/unreal-set-multi-texture-formats.png")} >Set multi-texture formats</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-multi-texture-formats.png")} >Set multi-texture formats</Image>
 
 12. Close the project setting window.
 
@@ -179,11 +179,11 @@ If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gea
 
 1. In the Unreal Editor main toolbar, select **Platforms > Android**. Select **Android (DXT)**.
 
-    <Image url= {require("/img/unreal/unreal-set-build-platform.png")} >Set the build platform to Android (DXT)</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-set-build-platform.png")} >Set the build platform to Android (DXT)</Image>
 
 2. Select **Package Project**.
 
-    <Image url= {require("/img/unreal/unreal-package-project.png")} >Select Package Project</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-package-project.png")} >Select Package Project</Image>
 
 3. In the dialog window that appears, choose where to store your built files and save.
 
