@@ -80,7 +80,6 @@ module.exports = {
   organizationName: 'MagicLeap', // Usually your GitHub org/user name.
   projectName: 'developer-portal-docs', // Usually your repo name.
   scripts: scripts,
-  trailingSlash: false, // Helps the redirects work more consistently if true.
   themeConfig: {
     prism: {
       additionalLanguages: ['csharp', 'bash', 'ini', 'powershell'],
