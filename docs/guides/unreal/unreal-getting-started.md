@@ -9,7 +9,7 @@ keywords: [Android,Unreal Engine,Getting Started]
 ---
 
 
-The Magic Leap 2 SDK for Unreal Engine 5 (ML2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the 3D graphics engine created by Epic Games.
+This preview version of the Magic Leap 2 SDK for Unreal Engine 5 (ML2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the 3D graphics engine created by Epic Games.
 
 Most functionality in the ML2 Unreal SDK is exposed through OpenXR. Some optional APIs, like extended controller and camera functionality, require the Magic Leap Native API SDK (ML2 C SDK), also called the C API. Some plugins expose their functionality through components and Blueprint function libraries.
 
