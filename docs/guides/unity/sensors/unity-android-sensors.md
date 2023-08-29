@@ -25,7 +25,8 @@ While the generic sensors such as the Light Sensor can be accessed using the gen
 
 The following table lists the sensors that are available on Android devices and their corresponding sensor types and controls in the Input System.
 
-  
+See the [Android Sensor API Guide](/docs/guides/features/generic-sensors.md) for a complete list of Magic Leap 2 sensors compatable with the Android Sensor API.
+
 
 |Sensor Name|Sensor Type|Control Type|Description|
 |---|---|---|---|
@@ -35,7 +36,6 @@ The following table lists the sensors that are available on Android devices and 
 |Magnetic Field Sensor|MagneticFieldSensor|`Vector3Control`|Measures the magnetic field strength of the device in microteslas|
 |Light Sensor| LightSensor |`AxisControl`|Measures the ambient light level of the device in lux|
 |Pressure Sensor| PressureSensor |`AxisControl` |Measures the atmospheric pressure of the device in hectopascals|
-
 
 ## Enabling and disabling sensors
 
