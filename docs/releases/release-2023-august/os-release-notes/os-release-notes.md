@@ -5,31 +5,51 @@ sidebar_position: 0
 date: 08/30/2023
 ---
 
-## Magic Leap OS - 1.4.0-dev1 - 
+## Magic Leap OS - 1.4.0-dev1 - B3E.230810.09-R.028
 
-## Features
-
-## Enhancements
+## Features and Enhancements
 
 ### On-Device Localization (ODL)
 
-- Improved stability and robustness: Cases where AR content or spatial anchors are displayed at incorrect positions significantly reduced. Cases where AR content or spatial anchors jump to incorrect positions after localization events significantly reduced. 
+Improved stability and robustness: Cases where AR content or spatial anchors are displayed at incorrect positions significantly reduced. Cases where AR content or spatial anchors jump to incorrect positions after localization events significantly reduced. 
 
 ### AR Cloud Localization and Mapping Services
 
-- Version update of the localization and mapping services to version 2.0.0.
+Version update of the localization and mapping services to version 2.0.0.
 
-- Version 2.0.0. feature improvements:
+Version 2.0.0. feature improvements:
 
-  - Significantly faster loading times for maps when starting a localization session.
+- Significantly faster loading times for maps when starting a localization session.
 
-  - Significantly faster processing of localization requests.
+- Significantly faster processing of localization requests.
 
-  - Significantly faster processing of map merge events.
+- Significantly faster processing of map merge events.
 
 ### Device configured as a “fixed volume” device
 
 To avoid volume inconsistencies, ML2 is now configured as a “fixed volume” device. This means that stream volume changes in Android are ignored, and device volume is handled in the ML Audio service through the settings and volume buttons. See AudioManager::isVolumeFixed() in the Android documentation.
+
+### Improved Low-FPS Interactions
+
+Previously, applications that were running in low-fps scenarios would have extra jitter visible on-display. New changes to the composition of these applications allows these applications to run more smoothly.
+
+### Improved MLCapture Virtual Content
+
+In some cases virtual content can appear cropped in the captured frames. New improvements should greatly reduce this artifact.
+
+When using MLCapture on OpenXR quad content only, there were issues with green flashes or grainy capture. This is now fixed.
+
+### RenderDoc Released
+
+A version of RenderDoc for use on ML2 has been released for Windows. This should allow for debugging of graphical applications. The new release contains support for OpenXR and bug fixes.
+
+### MultiUser Support for mixed reality camera
+
+Mixed Reality Camera API now supports guest and non admin users.
+
+### Eye Tracking sampling rate change
+
+In this release we are previewing a change of the eye tracker from its previous dual exposure mode to a single exposure system at 60Hz. This change is being made to improve the consistency of eye motion estimates that our healthcare customers are interested in. Developers using the gaze vectors or eye positions should not notice a change other than the rate.
 
 **Don’t forget:** Some Magic Leap hardware and software features are in a pre-release state and might not be available, might contain bugs or defects, and might experience delays or failures. Read this document for guidance on the current state of Magic Leap hardware and software. This guidance helps developers make the best possible use of the Magic Leap platform.
 
@@ -41,6 +61,7 @@ When flashing, you **MUST** flash in a linear sequence based on the build order 
 
 | Build Order | Build Fingerprint        |
 | ----------- | ------------------------ |
+| 18          | B3E.230810.09-R.028      | 
 | 17          | B3E.230616.02-R.121      |
 | 16          | B3E.230526.01-R.026      |
 | 15          | B3E.230427.10-R.023      |
