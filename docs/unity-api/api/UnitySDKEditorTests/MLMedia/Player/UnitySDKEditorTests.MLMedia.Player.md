@@ -11,7 +11,7 @@ title: Player
 
 
 
-Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.NativeBindingsTests.md)
+Inherits from: <br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.NativeBindingsTests.md),<br></br>[NativeBindingsTests](/unity-api/api/UnitySDKEditorTests/UnitySDKEditorTests.NativeBindingsTests.md)
 
 
 

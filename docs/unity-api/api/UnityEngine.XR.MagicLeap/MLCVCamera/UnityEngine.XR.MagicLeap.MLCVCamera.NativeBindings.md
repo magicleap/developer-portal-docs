@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLCVCameraGetFramePose {#mlresultcode-mlcvcameragetframepose}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCVCameraGetFramePose {#mlresultcode-mlcvcameragetframepose}
 
 Get the camera pose in the world coordinate system. 
 
@@ -49,13 +49,13 @@ public MLResult.Code MLCVCameraGetFramePose(
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if successful. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if failed due to internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed due to internal error. 
 
 
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLCVCameraTrackingCreate {#mlresultcode-mlcvcameratrackingcreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCVCameraTrackingCreate {#mlresultcode-mlcvcameratrackingcreate}
 
 Create Camera Tracker. 
 
@@ -83,7 +83,7 @@ public MLResult.Code MLCVCameraTrackingCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLCVCameraTrackingDestroy {#mlresultcode-mlcvcameratrackingdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLCVCameraTrackingDestroy {#mlresultcode-mlcvcameratrackingdestroy}
 
 Destroy Tracker after usage. 
 
@@ -119,7 +119,7 @@ public MLResult.Code MLCVCameraTrackingDestroy(
 
 ```csharp
 
-public static const uint MaxDistortionCoefficients = 5;
+public const uint MaxDistortionCoefficients = 5;
 
 ```
 
@@ -132,9 +132,9 @@ public static const uint MaxDistortionCoefficients = 5;
 
 ## Public Enums
 
-### CameraID {#uint-cameraid}
+### CameraID {#enums-cameraid}
 
-MLCVCameraID enum from ml&#95;cv&#95;camera.h. 
+MLCVCameraID enum from ml&#95;cv&#95;camera.h 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

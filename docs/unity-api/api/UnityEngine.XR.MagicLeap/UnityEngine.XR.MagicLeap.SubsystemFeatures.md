@@ -23,7 +23,7 @@ title: SubsystemFeatures
 
 ```csharp
 
-public static Feature currentFeatures = Feature.None { get; set; }
+public static Feature currentFeatures { get; set; }
 
 ```
 
@@ -38,7 +38,7 @@ public static Feature currentFeatures = Feature.None { get; set; }
 
 ```csharp
 
-public static Feature requestedFeatures = Feature.None { get; set; }
+public static Feature requestedFeatures { get; set; }
 
 ```
 

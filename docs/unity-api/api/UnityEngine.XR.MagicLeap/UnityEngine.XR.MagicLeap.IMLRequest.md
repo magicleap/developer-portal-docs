@@ -1,6 +1,6 @@
 ---
 title: IMLRequest
-summary: always inherit from this. 
+summary: always inherit from this 
 
 ---
 
@@ -12,7 +12,7 @@ summary: always inherit from this.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-ALWAYS INHERIT FROM THIS.   [More...](#detailed-description)  
+ALWAYS INHERIT FROM THIS   [More...](#detailed-description)  
 
 
 Inherited by: <br></br>[UnityEngine.XR.MagicLeap.MLRequest< Params, Result >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLRequest.md)

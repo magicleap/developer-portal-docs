@@ -9,7 +9,7 @@ summary: structure to encapsulate a list of possible stream configurations. user
 
 
 
-Structure to encapsulate a list of possible stream configurations. User should be able to use any of the capabilities from the list. They are grouped in usable sets of configurations - one set may contain different MLDepthCameraStreamCapability for different streams. For more information see MLDepthCameraCapability.   
+Structure to encapsulate a list of possible stream configurations. User should be able to use any of the capabilities from the list. They are grouped in usable sets of configurations - one set may contain different [MLDepthCameraStreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraStreamCapability.md) for different streams. For more information see [MLDepthCameraCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapability.md).   
 
 
 
@@ -19,7 +19,7 @@ Structure to encapsulate a list of possible stream configurations. User should b
 
 ### Capabilities {#intptr-capabilities}
 
-Array of MLDepthCameraCapability elements. 
+Array of [MLDepthCameraCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapability.md) elements. 
 
 ```csharp
 

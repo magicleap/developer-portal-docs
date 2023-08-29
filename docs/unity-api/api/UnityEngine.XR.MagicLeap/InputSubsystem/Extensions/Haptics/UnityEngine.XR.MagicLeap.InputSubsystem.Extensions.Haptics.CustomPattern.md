@@ -9,7 +9,7 @@ summary: or a pre-defined pattern, this object will hold a list of the haptics t
 
 
 
-A custom haptics pattern can be played by combining Buzz haptic command and/or a pre-defined pattern, this object will hold a list of the haptics to be played with their specified durations.   
+A custom haptics pattern can be played by combining [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) haptic command and/or a pre-defined pattern, this object will hold a list of the haptics to be played with their specified durations.   
 
 
 Inherits from: <br></br>[IHapticsCommand](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.IHapticsCommand.md)
@@ -32,7 +32,7 @@ public void Add(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzz|A structure containing information about the Buzz command to be played. |
+| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzz|A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played. |
 
 
 
@@ -78,7 +78,7 @@ public bool Remove(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzz|A structure containing information about the Buzz command to be played. |
+| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzz|A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played. |
 
 
 

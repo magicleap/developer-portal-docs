@@ -2578,7 +2578,15 @@ Global [MLPowerManagerSetPowerState](/api-ref/api/Modules/group___power_manager/
 
 *  None 
 
+Global [MLSnapshotGetPoseInBase](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgetposeinbase)  (const MLSnapshot *snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) *base_id, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) *id, [MLPose](/api-ref/api/Modules/group___common/struct_m_l_pose.md) *out_pose)
+
+*  None  
+
 Global [MLSnapshotGetResultString](/api-ref/api/Modules/group___perception/group___perception.md#const-char-mlsnapshotgetresultstring)  (MLResult result_code)
+
+*  None  
+
+Global [MLSnapshotGetStaticData](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgetstaticdata)  ([MLSnapshotStaticData](/api-ref/api/Modules/group___perception/struct_m_l_snapshot_static_data.md) *out_static_data)
 
 *  None  
 

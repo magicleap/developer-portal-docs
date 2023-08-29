@@ -21,7 +21,7 @@ Data type containing byte array buffer and the size.
 
 ```csharp
 
-public byte[] Bytes { get; set; }
+public byte [] Bytes { get; set; }
 
 ```
 
@@ -38,7 +38,7 @@ public byte[] Bytes { get; set; }
 
 ```csharp
 public void AllocResources(
-    byte[] data
+    byte [] data
 )
 ```
 
@@ -47,7 +47,7 @@ public void AllocResources(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |data||
+| byte [] |data||
 
 
 

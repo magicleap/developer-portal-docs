@@ -9,30 +9,13 @@ summary: a structure containing information about the buzz command to be played.
 
 
 
-A structure containing information about the Buzz command to be played.   
+A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played.   
 
 
 Inherits from: <br></br>IInputDeviceCommandInfo
 
 
 
-
-## Public Fields
-
-### typeStatic {#fourcc-typestatic}
-
-```csharp
-
-public FourCC typeStatic { get; set; }
-
-```
-
-
-
-
-
-
------------
 
 ## Public Methods
 
@@ -49,7 +32,7 @@ public MLInputBuzzCommand(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzzCommand|A structure containing information about the Buzz command to be played. |
+| in [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) |buzzCommand|A structure containing information about the [Buzz](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Haptics/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Haptics.Buzz.md) command to be played. |
 
 
 
@@ -135,6 +118,21 @@ Version of this structure.
 ```csharp
 
 public readonly uint Version;
+
+```
+
+
+
+
+
+
+-----------
+
+### typeStatic {#fourcc-typestatic}
+
+```csharp
+
+public FourCC typeStatic => commandType;
 
 ```
 

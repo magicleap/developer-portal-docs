@@ -9,7 +9,7 @@ summary: an enumerator which can be used by a foreach statement to iterate over 
 
 
 
-An enumerator which can be used by a  foreach  statement to iterate over the elements in a PlaneBoundaryCollection.   
+An enumerator which can be used by a  foreach  statement to iterate over the elements in a [PlaneBoundaryCollection](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.md).   
 
 
 
@@ -67,7 +67,7 @@ public bool MoveNext()
 
 
 
-**Returns**:  true  if the next element is valid, or  false  if the Enumerator is already at the end of the collection.
+**Returns**:  true  if the next element is valid, or  false  if the [Enumerator](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/PlaneBoundaryCollection/UnityEngine.XR.MagicLeap.PlanesSubsystem.PlaneBoundaryCollection.Enumerator.md) is already at the end of the collection.
 
 
 

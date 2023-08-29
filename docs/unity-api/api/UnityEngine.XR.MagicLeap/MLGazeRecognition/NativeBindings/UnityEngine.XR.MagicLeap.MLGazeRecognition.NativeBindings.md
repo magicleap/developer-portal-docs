@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLGazeRecognitionCreate {#mlresultcode-mlgazerecognitioncreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionCreate {#mlresultcode-mlgazerecognitioncreate}
 
 Create Gaze Recognition. 
 
@@ -47,7 +47,7 @@ public MLResult.Code MLGazeRecognitionCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLGazeRecognitionDestroy {#mlresultcode-mlgazerecognitiondestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionDestroy {#mlresultcode-mlgazerecognitiondestroy}
 
 Destroy Gaze Recognition. 
 
@@ -75,7 +75,7 @@ public MLResult.Code MLGazeRecognitionDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLGazeRecognitionGetState {#mlresultcode-mlgazerecognitiongetstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetState {#mlresultcode-mlgazerecognitiongetstate}
 
 Get information about the user's gaze. 
 
@@ -105,7 +105,7 @@ public MLResult.Code MLGazeRecognitionGetState(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLGazeRecognitionGetStaticData {#mlresultcode-mlgazerecognitiongetstaticdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLGazeRecognitionGetStaticData {#mlresultcode-mlgazerecognitiongetstaticdata}
 
 Get static information about Gaze Recognition. 
 

@@ -12,7 +12,7 @@ summary: mleyecamera class exposes static functions to query eye camera related 
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MLEyeCamera class exposes static functions to query eye camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.   
+[MLEyeCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md) class exposes static functions to query eye camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.   
 
 
 Inherits from: <br></br>[MLAutoAPISingleton< MLEyeCamera >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
@@ -21,30 +21,6 @@ Inherits from: <br></br>[MLAutoAPISingleton< MLEyeCamera >](/unity-api/api/Unity
 
 
 ## Public Fields
-
-### ActiveCameras {#mleyecameraidentifier-activecameras}
-
-The enumerated value representing which eye cameras are currently active. 
-
-```csharp
-
-public static MLEyeCameraIdentifier ActiveCameras { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MLEyeCameraIdentifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#enums-mleyecameraidentifier) | Enumeration of all the available eye camera sensors.  |
-
-
-
-
-
-**Returns**: 
-
-
-
------------
 
 ### ActiveCamerasCount {#int-activecamerascount}
 
@@ -72,7 +48,7 @@ Converts an image frame data pointer into a byte array.
 ```csharp
 public static void CopyImageFrameDataToByteArray(
     EyeCameraFrameBuffer imageFrame,
-    ref byte[] byteArray
+    ref byte [] byteArray
 )
 ```
 
@@ -82,7 +58,7 @@ public static void CopyImageFrameDataToByteArray(
 | Type | Name  | Description  | 
 |--|--|--|
 | [EyeCameraFrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.EyeCameraFrameBuffer.md) |imageFrame|The associated eye camera frame buffer for an eye camera.|
-| ref byte[] |byteArray|The image data from the native eye camera data as a byte array.|
+| ref byte [] |byteArray|The image data from the native eye camera data as a byte array.|
 
 
 
@@ -93,7 +69,7 @@ public static void CopyImageFrameDataToByteArray(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetLatestCameraData {#mlresult-getlatestcameradata}
 
-Polls for Frames. Returns EyeCameraData with this latest data when available.    If there are no new camera frames within the timeout&#95;ms duration then the API will return MLResult&#95;Timeout. 
+Polls for Frames. Returns [EyeCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.EyeCameraData.md) with this latest data when available. If there are no new camera frames within the timeout&#95;ms duration then the API will return MLResult&#95;Timeout. 
 
 ```csharp
 public static MLResult GetLatestCameraData(
@@ -115,7 +91,7 @@ public static MLResult GetLatestCameraData(
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if succesfully fetched the camera frames and released the native data. MLResult.Result will be  MLResult.Code.Timeout  returned because no new frame available at this time. MLResult.Result will be  MLResult.Code.InvalidParam  if one of the parameters is invalid. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if the operation failed due to an internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if succesfully fetched the camera frames and released the native data. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Timeout](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-timeout)  returned because no new frame available at this time. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if one of the parameters is invalid. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if the operation failed due to an internal error. 
 
 
 
@@ -143,7 +119,7 @@ public static MLResult UpdateSettings(
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if the settings updated successfully. MLResult.Result will be  MLResult.Code.InvalidParam  if one of the parameters is invalid. MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if the operation failed due to an internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if the settings updated successfully. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if one of the parameters is invalid. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if the operation failed due to an internal error. 
 
 
 
@@ -170,7 +146,7 @@ protected virtual override MLResult.Code StartAPI()
 
 ### StopAPI {#override-stopapi}
 
-API-specific cleanup. Will be called whenever MLDevice is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -187,13 +163,37 @@ protected virtual override MLResult.Code StopAPI()
 
 ## Public Attributes
 
+### ActiveCameras {#mleyecameraidentifier-activecameras}
+
+The enumerated value representing which eye cameras are currently active. 
+
+```csharp
+
+public static MLEyeCameraIdentifier ActiveCameras => (MLEyeCameraIdentifier)Instance.settings.Cameras;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLEyeCameraIdentifier](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md#enums-mleyecameraidentifier) | Enumeration of all the available eye camera sensors.  |
+
+
+
+
+
+**Returns**: 
+
+
+
+-----------
+
 ### MaxFrameCount {#const-int-maxframecount}
 
 The maximum number of eye camera frames. 
 
 ```csharp
 
-public static const int MaxFrameCount = 4;
+public const int MaxFrameCount = 4;
 
 ```
 

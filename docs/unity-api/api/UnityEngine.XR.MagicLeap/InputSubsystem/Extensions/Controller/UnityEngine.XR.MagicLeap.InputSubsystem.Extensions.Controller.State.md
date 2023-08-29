@@ -36,7 +36,7 @@ public override string ToString()
 
 ```csharp
 
-public bool[] ButtonStates;
+public bool [] ButtonStates;
 
 ```
 
@@ -96,7 +96,7 @@ public bool IsConnected;
 
 ```csharp
 
-public bool[] IsTouchesActive;
+public bool [] IsTouchesActive;
 
 ```
 
@@ -113,7 +113,7 @@ Current touch position (x,y) and force (z). Position is in the [-1.0,1.0] range 
 
 ```csharp
 
-public Vector3[] TouchesPositionAndForce;
+public Vector3 [] TouchesPositionAndForce;
 
 ```
 
@@ -149,7 +149,7 @@ public TouchpadGesture.State TouchpadGestureState;
 
 | Type | Description  | 
 |--|--|
-| [TouchpadGesture.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#uint-state) | Gesture state. Links to MLInputControllerTouchpadGestureState in ml&#95;input.h.  |
+| [TouchpadGesture.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/TouchpadGesture/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.TouchpadGesture.md#enums-state) | Gesture state. Links to MLInputControllerTouchpadGestureState in ml&#95;input.h.  |
 
 
 
@@ -159,7 +159,7 @@ public TouchpadGesture.State TouchpadGestureState;
 
 ### TriggerNormalized {#float-triggernormalized}
 
-Normalized trigger value [0.0,1.0]. 
+Normalized trigger value [0.0,1.0] 
 
 ```csharp
 

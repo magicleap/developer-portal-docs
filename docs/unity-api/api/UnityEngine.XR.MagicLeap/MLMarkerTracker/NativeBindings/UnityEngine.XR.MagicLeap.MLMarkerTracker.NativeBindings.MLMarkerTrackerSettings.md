@@ -114,7 +114,7 @@ Max size: Our camera needs to see the whole marker at once. If it's too large, w
 
 ### CustomTrackerProfile {#readonly-customtrackerprofile}
 
-Custom tracker profile to be used if the TrackerProfile member is the Custom value (see MLMarkerTracker.Profile enum). 
+Custom tracker profile to be used if the TrackerProfile member is the Custom value (see [MLMarkerTracker.Profile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) enum). 
 
 ```csharp
 
@@ -124,7 +124,7 @@ public readonly MLMarkerTrackerCustomProfile CustomTrackerProfile;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLMarkerTrackerCustomProfile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerCustomProfile.md) | Marker Tracker system provides a set of standard tracking profiles (see MLMarkerTracker.Profile enum) to configure the tracker settings. This is the structure that defines a custom tracker profile.  |
+| readonly [MLMarkerTrackerCustomProfile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.MLMarkerTrackerCustomProfile.md) | Marker Tracker system provides a set of standard tracking profiles (see [MLMarkerTracker.Profile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) enum) to configure the tracker settings. This is the structure that defines a custom tracker profile.  |
 
 
 

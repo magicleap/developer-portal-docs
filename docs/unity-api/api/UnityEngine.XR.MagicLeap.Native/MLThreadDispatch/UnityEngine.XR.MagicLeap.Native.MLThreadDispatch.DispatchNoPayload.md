@@ -1,6 +1,6 @@
 ---
 title: DispatchNoPayload
-summary: overloads the generic dispatcher to call back a method without a payload. 
+summary: overloads the generic dispatcher to call back a method without a payload 
 
 ---
 
@@ -9,7 +9,7 @@ summary: overloads the generic dispatcher to call back a method without a payloa
 
 
 
-Overloads the generic dispatcher to call back a method without a payload.   
+Overloads the generic dispatcher to call back a method without a payload   
 
 
 Inherits from: <br></br>UnityEngine.XR.MagicLeap.Native.MLThreadDispatch.Dispatcher
@@ -21,7 +21,7 @@ Inherits from: <br></br>UnityEngine.XR.MagicLeap.Native.MLThreadDispatch.Dispatc
 
 ### override void Dispatch {#override-void-dispatch}
 
-Dispatches the previously stored callback. 
+Dispatches the previously stored callback 
 
 ```csharp
 public override void Dispatch()
@@ -36,7 +36,7 @@ public override void Dispatch()
 
 ###  DispatchNoPayload {#functions-dispatchnopayload}
 
-Initializes a new instance of the DispatchNoPayload class with the supplied callback. 
+Initializes a new instance of the DispatchNoPayload class with the supplied callback 
 
 ```csharp
 public DispatchNoPayload(

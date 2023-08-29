@@ -9,7 +9,7 @@ summary: the native representation of the mlwebrtc data channel callback events.
 
 
 
-The native representation of the MLWebRTC data channel callback events.   
+The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) data channel callback events.   
 
 
 

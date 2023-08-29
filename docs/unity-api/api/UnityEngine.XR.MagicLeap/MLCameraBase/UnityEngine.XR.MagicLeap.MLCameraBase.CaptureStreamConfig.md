@@ -32,7 +32,7 @@ public static CaptureStreamConfig Create(
 | Type | Name  | Description  | 
 |--|--|--|
 | [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.StreamCapability.md) |streamCapability||
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format. |
+| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) |outputFormat|Captured output format |
 | [MLNativeSurface](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md) |recorderSurface||
 
 
@@ -59,7 +59,7 @@ public override string ToString()
 
 ### CaptureType {#capturetype-capturetype}
 
-Capture Type. 
+Capture Type 
 
 ```csharp
 
@@ -69,7 +69,7 @@ public CaptureType CaptureType;
 
 | Type | Description  | 
 |--|--|
-| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type.  |
+| [CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -79,7 +79,7 @@ public CaptureType CaptureType;
 
 ### Height {#int-height}
 
-Resolution height. 
+Resolution height 
 
 ```csharp
 
@@ -106,7 +106,7 @@ public OutputFormat OutputFormat;
 
 | Type | Description  | 
 |--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format.  |
+| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
 
 
 
@@ -116,7 +116,7 @@ public OutputFormat OutputFormat;
 
 ### Surface {#mlnativesurface-surface}
 
-Media recorder surface, only valid for capture type video &#42; set to ML&#95;INVALID&#95;HANDLE for yuv/rgba video capture. 
+Media recorder surface, only valid for capture type video &#42; set to ML&#95;INVALID&#95;HANDLE for yuv/rgba video capture 
 
 ```csharp
 
@@ -133,7 +133,7 @@ public MLNativeSurface Surface;
 
 ### Width {#int-width}
 
-Capture Resolution. 
+Capture Resolution 
 
 ```csharp
 

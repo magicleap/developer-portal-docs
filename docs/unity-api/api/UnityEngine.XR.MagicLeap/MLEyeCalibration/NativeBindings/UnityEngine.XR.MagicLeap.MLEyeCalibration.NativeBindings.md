@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLEyeCalibrationCreateClient {#mlresultcode-mleyecalibrationcreateclient}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLEyeCalibrationCreateClient {#mlresultcode-mleyecalibrationcreateclient}
 
 Creates an eye calibration client. 
 
@@ -43,7 +43,7 @@ public MLResult.Code MLEyeCalibrationCreateClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLEyeCalibrationDestroyClient {#mlresultcode-mleyecalibrationdestroyclient}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLEyeCalibrationDestroyClient {#mlresultcode-mleyecalibrationdestroyclient}
 
 Destroys an eye calibration client. 
 
@@ -67,7 +67,7 @@ public MLResult.Code MLEyeCalibrationDestroyClient(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLEyeCalibrationGetState {#mlresultcode-mleyecalibrationgetstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLEyeCalibrationGetState {#mlresultcode-mleyecalibrationgetstate}
 
 Gets information about the user's current eye calibration. 
 

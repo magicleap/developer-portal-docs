@@ -124,9 +124,9 @@ public delegate void IsNewFrameAvailableDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLYcbcrRendererCreate {#mlresultcode-mlycbcrrenderercreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLYcbcrRendererCreate {#mlresultcode-mlycbcrrenderercreate}
 
-Create an instance of the YcbcrRenderer. 
+Create an instance of the [YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md). 
 
 ```csharp
 public MLResult.Code MLYcbcrRendererCreate(
@@ -148,11 +148,11 @@ public MLResult.Code MLYcbcrRendererCreate(
 
 
 
-**Returns**: MLResult.Code.Ok if instance was created successfully.
+**Returns**: [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok) if instance was created successfully.
 
-MLResult.Code.InvalidParam if one of params was null.
+[MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam) if one of params was null.
 
-MLResult.Code.MediaGenericNoInit if func was called before Unity graphics was initialized.
+[MLResult.Code.MediaGenericNoInit](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-mediagenericnoinit) if func was called before Unity graphics was initialized.
 
 
 
@@ -302,7 +302,7 @@ public delegate void ReleaseBufferDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ulong |nativeBufferHandle|Native buffer handle to be released|
+| ulong |nativeBufferHandle|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle to be released|
 | IntPtr |context|User context passed during instance creation|
 
 
@@ -328,7 +328,7 @@ public delegate void ReleaseHwBufferDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| IntPtr |nativeBufferHandle|Native buffer handle to be released|
+| IntPtr |nativeBufferHandle|[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) buffer handle to be released|
 | IntPtr |context|User context passed during instance creation|
 
 
@@ -340,9 +340,9 @@ public delegate void ReleaseHwBufferDelegate(
 
 ## Public Enums
 
-### ColorSpace {#uint-colorspace}
+### ColorSpace {#enums-colorspace}
 
-Color spaces supported by the native rendering plugin. 
+Color spaces supported by the native rendering plugin 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -358,15 +358,15 @@ Color spaces supported by the native rendering plugin.
 
 -----------
 
-### PluginEvent {#uint-pluginevent}
+### PluginEvent {#enums-pluginevent}
 
-Plugin events supported by the native rendering plugin. 
+Plugin events supported by the native rendering plugin 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| SetTexture | | Pass a unity texture and its width, height to the native rendering plugin.   |
-| Draw | | Draw the latest native buffer onto the unity texture.   |
-| Cleanup | | Destroy all resources and the renderer instance.   |
+| SetTexture | | Pass a unity texture and its width, height to the native rendering plugin   |
+| Draw | | Draw the latest native buffer onto the unity texture   |
+| Cleanup | | Destroy all resources and the renderer instance   |
 | AccessTexture | |   |
 
 

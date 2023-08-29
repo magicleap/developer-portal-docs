@@ -64,7 +64,7 @@ Query the OS for which Platform API Level is supported.
 ### ML_PLATFORM_API_LEVEL {#defines-ml-platform-api-level}
 
 ```cpp
-#define ML_PLATFORM_API_LEVEL 29
+#define ML_PLATFORM_API_LEVEL 30
 ```
 
 
@@ -98,7 +98,7 @@ Current API Level supported by this Magic Leap SDK.
 
 ML_EXTERN_C_BEGIN
 
-#define ML_PLATFORM_API_LEVEL 29
+#define ML_PLATFORM_API_LEVEL 30
 
 ML_API MLResult ML_CALL MLPlatformGetAPILevel(uint32_t *out_api_level);
 

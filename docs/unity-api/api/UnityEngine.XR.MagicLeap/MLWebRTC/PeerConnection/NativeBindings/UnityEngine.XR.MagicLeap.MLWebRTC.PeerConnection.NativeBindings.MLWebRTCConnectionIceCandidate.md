@@ -19,7 +19,7 @@ The native representation of an ice candidate.
 
 ### Data {#mlwebrtcicecandidate-data}
 
-Gets or sets data from an MLWebRTC.IceCandidate object. 
+Gets or sets data from an [MLWebRTC.IceCandidate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceCandidate.md) object. 
 
 ```csharp
 
@@ -29,7 +29,7 @@ public MLWebRTC.IceCandidate Data { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.IceCandidate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceCandidate.md) | Class that represents an ice candidate used by the MLWebRTC API.  |
+| [MLWebRTC.IceCandidate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.IceCandidate.md) | Class that represents an ice candidate used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.  |
 
 
 

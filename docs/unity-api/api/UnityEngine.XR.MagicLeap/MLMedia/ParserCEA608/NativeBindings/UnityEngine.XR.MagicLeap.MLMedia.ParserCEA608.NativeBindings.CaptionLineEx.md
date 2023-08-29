@@ -20,7 +20,7 @@ title: CaptionLineEx
 
 ```csharp
 
-public ushort[] displayChars;
+public ushort [] displayChars;
 
 ```
 
@@ -35,7 +35,7 @@ public ushort[] displayChars;
 
 ```csharp
 
-public IntPtr[] midRowStyles;
+public IntPtr [] midRowStyles;
 
 ```
 
@@ -50,7 +50,7 @@ public IntPtr[] midRowStyles;
 
 ```csharp
 
-public IntPtr[] pacStyles;
+public IntPtr [] pacStyles;
 
 ```
 

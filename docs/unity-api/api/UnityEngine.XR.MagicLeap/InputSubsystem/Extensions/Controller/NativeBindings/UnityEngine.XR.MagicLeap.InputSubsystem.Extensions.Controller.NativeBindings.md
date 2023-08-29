@@ -18,7 +18,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLInputGetConnectedDevices {#mlresultcode-mlinputgetconnecteddevices}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputGetConnectedDevices {#mlresultcode-mlinputgetconnecteddevices}
 
 Gets the device IDs of all connected devices. 
 
@@ -44,7 +44,7 @@ public MLResult.Code MLInputGetConnectedDevices(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLInputReleaseConnectedDevicesList {#mlresultcode-mlinputreleaseconnecteddeviceslist}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputReleaseConnectedDevicesList {#mlresultcode-mlinputreleaseconnecteddeviceslist}
 
 Releases the contents of #MLInputConnectedDevicesList populated by #MLInputGetConnectedDevices. 
 
@@ -70,7 +70,7 @@ public MLResult.Code MLInputReleaseConnectedDevicesList(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLInputSetControllerCallbacksEx {#mlresultcode-mlinputsetcontrollercallbacksex}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLInputSetControllerCallbacksEx {#mlresultcode-mlinputsetcontrollercallbacksex}
 
 Sets the callbacks for controller input events. 
 

@@ -9,7 +9,7 @@ summary: the native representation of the mlwebrtc callback events.
 
 
 
-The native representation of the MLWebRTC callback events.   
+The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) callback events.   
 
 
 
@@ -44,6 +44,9 @@ public OnConnectedDelegate OnConnected;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnConnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-onconnecteddelegate) | Delegate describing the callback necessary to monitor if a connection has been made.  |
 
 
 
@@ -61,6 +64,9 @@ public OnDataChannelReceivedDelegate OnDataChannelReceived;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnDataChannelReceivedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-ondatachannelreceiveddelegate) | A delegate that describes the requirements of the OnDataChannelReceivedDelegate callback.  |
 
 
 
@@ -78,6 +84,9 @@ public OnDisconnectedDelegate OnDisconnected;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnDisconnectedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-ondisconnecteddelegate) | Delegate describing the callback necessary to monitor if a disconnection has been made.  |
 
 
 
@@ -95,6 +104,9 @@ public OnErrorDelegate OnError;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnErrorDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-onerrordelegate) | Delegate describing the callback necessary to monitor errors.  |
 
 
 
@@ -112,6 +124,9 @@ public OnIceGatheringCompletedDelegate OnIceGatheringCompleted;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnIceGatheringCompletedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-onicegatheringcompleteddelegate) | Delegate describing the callback necessary to notify that all ICEs have been gathered.  |
 
 
 
@@ -129,6 +144,9 @@ public OnLocalAnswerCreatedDelegate OnLocalAnswerCreated;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnLocalAnswerCreatedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-onlocalanswercreateddelegate) | Delegate describing the callback necessary to monitor when an answer to an offer is sent.  |
 
 
 
@@ -146,6 +164,9 @@ public OnLocalIceCandidateFoundDelegate OnLocalIceCandidateFound;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnLocalIceCandidateFoundDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-onlocalicecandidatefounddelegate) | Delegate describing the callback necessary to monitor when an ice candidate is sent.  |
 
 
 
@@ -163,6 +184,9 @@ public OnLocalOfferCreatedDelegate OnLocalOfferCreated;
 
 ```
 
+| Type | Description  | 
+|--|--|
+| [OnLocalOfferCreatedDelegate](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md#delegate-void-onlocaloffercreateddelegate) | Delegate describing the callback necessary to monitor when an offer is sent.  |
 
 
 

@@ -18,10 +18,10 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLOpenXRSetGlobalDimmerFrameEndInfo {#mlresultcode-mlopenxrsetglobaldimmerframeendinfo}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLOpenXRSetGlobalDimmerFrameEndInfoParams {#mlresultcode-mlopenxrsetglobaldimmerframeendinfoparams}
 
 ```csharp
-public MLResult.Code MLOpenXRSetGlobalDimmerFrameEndInfo(
+public MLResult.Code MLOpenXRSetGlobalDimmerFrameEndInfoParams(
     XrGlobalDimmerFrameEndInfoML globalDimmerFrameEndInfoML
 )
 ```
@@ -42,7 +42,7 @@ public MLResult.Code MLOpenXRSetGlobalDimmerFrameEndInfo(
 
 ### void UnityMagicLeap_RenderingSetGlobalDimmerValue {#void-unitymagicleap-renderingsetglobaldimmervalue}
 
-Sets the GlobalDimmer value via the Magic Leap XR Plugin. 
+Sets the GlobalDimmer value via the Magic Leap XR Plugin 
 
 ```csharp
 public void UnityMagicLeap_RenderingSetGlobalDimmerValue(
@@ -70,7 +70,7 @@ public void UnityMagicLeap_RenderingSetGlobalDimmerValue(
 
 ```csharp
 
-public static const int XR_TYPE_GLOBAL_DIMMER_FRAME_END_INFO_ML = 1000136000;
+public const int XR_TYPE_GLOBAL_DIMMER_FRAME_END_INFO_ML = 1000136000;
 
 ```
 

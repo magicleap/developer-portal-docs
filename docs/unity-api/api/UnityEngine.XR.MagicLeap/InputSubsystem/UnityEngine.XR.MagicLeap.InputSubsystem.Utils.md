@@ -66,3 +66,18 @@ public static void PredictSnapshot(
 
 -----------
 
+### void ResetSnapshotPrediction {#void-resetsnapshotprediction}
+
+Reset the snapshot state of the subsystem to before prediction. Use this to cleanup after PredictSnapshot 
+
+```csharp
+public static void ResetSnapshotPrediction()
+```
+
+
+
+
+
+
+-----------
+

@@ -66,7 +66,7 @@ public static Intrinsics ToManaged(
 
 ```csharp
 
-public double[] Distortion;
+public double [] Distortion;
 
 ```
 
@@ -129,7 +129,7 @@ public uint Height;
 
 ```csharp
 
-public static const int MaxDistortionCoefficients = 5;
+public const int MaxDistortionCoefficients = 5;
 
 ```
 

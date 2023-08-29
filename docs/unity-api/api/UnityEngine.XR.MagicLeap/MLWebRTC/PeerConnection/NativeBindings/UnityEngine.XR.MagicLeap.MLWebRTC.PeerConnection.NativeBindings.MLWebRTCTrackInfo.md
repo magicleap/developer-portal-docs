@@ -33,7 +33,7 @@ public void FreeUnmanagedMemory()
 
 ```csharp
 public MLWebRTCTrackInfo(
-    string[] streams,
+    string [] streams,
     string trackId
 )
 ```
@@ -43,7 +43,7 @@ public MLWebRTCTrackInfo(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| string[] |streams||
+| string [] |streams||
 | string |trackId||
 
 

@@ -22,7 +22,7 @@ An audio buffer for passing data from input streams or to output streams.
 ```csharp
 public Buffer(
     BufferFormat format,
-    float[] samples
+    float [] samples
 )
 ```
 
@@ -31,8 +31,8 @@ public Buffer(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |format|Buffer format settings for input and output streams. |
-| float[] |samples||
+| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) |format|[Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams. |
+| float [] |samples||
 
 
 
@@ -41,12 +41,12 @@ public Buffer(
 
 -----------
 
-### float[] ConvertToManagedFloatSamples {#float-converttomanagedfloatsamples}
+### float [] ConvertToManagedFloatSamples {#float-converttomanagedfloatsamples}
 
 Copy the provided unmanaged audio buffer to managed memory and convert the samples to float. 
 
 ```csharp
-public static float[] ConvertToManagedFloatSamples(
+public static float [] ConvertToManagedFloatSamples(
     uint size,
     IntPtr bufferPtr,
     BufferFormat format
@@ -87,7 +87,7 @@ public BufferFormat Format;
 
 | Type | Description  | 
 |--|--|
-| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) | Buffer format settings for input and output streams.  |
+| [BufferFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.BufferFormat.md) | [Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams.  |
 
 
 
@@ -118,7 +118,7 @@ Audio samples in this buffer.
 
 ```csharp
 
-public float[] Samples;
+public float [] Samples;
 
 ```
 

@@ -24,7 +24,7 @@ Inherits from: <br></br>[MLCameraBase](/unity-api/api/UnityEngine.XR.MagicLeap/M
 
 ### Task&lt; [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) &gt; CaptureImageAsync {#task-captureimageasync}
 
-Asynchronously capture still image. Result will be availble via the MLCamera.OnRawImageAvailable event. 
+Asynchronously capture still image. Result will be availble via the [MLCamera.OnRawImageAvailable](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlcameraoncapturedframeavailabledelegate-onrawimageavailable) event. 
 
 ```csharp
 public Task< MLResult > CaptureImageAsync(
@@ -48,7 +48,7 @@ public Task< MLResult > CaptureImageAsync(
 
 ### Task&lt; [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) &gt; CapturePreviewStartAsync {#task-capturepreviewstartasync}
 
-Asynchronously start preview capture The captured preview YUV frames will be returned to the application via OnPreviewCaptureCompleted. Use CapturePreviewStop or CapturePreviewStopAsync to stop the capture. 
+Asynchronously start preview capture The captured preview YUV frames will be returned to the application via [OnPreviewCaptureCompleted](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlcameraonpreviewcapturecompleteddelegate-onpreviewcapturecompleted). Use [CapturePreviewStop](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlresult-capturepreviewstop) or [CapturePreviewStopAsync](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#task-capturepreviewstopasync) to stop the capture. 
 
 ```csharp
 public Task< MLResult > CapturePreviewStartAsync()
@@ -93,7 +93,7 @@ public Task< MLResult > CaptureVideoStartAsync()
 
 ### Task&lt; [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) &gt; CaptureVideoStopAsync {#task-capturevideostopasync}
 
-Asynchronously stop video capture. Should only be called at least 500ms after CaptureVideoStart or CaptureVideoStartAsync. 
+Asynchronously stop video capture. Should only be called at least 500ms after [CaptureVideoStart](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#mlresult-capturevideostart) or [CaptureVideoStartAsync](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#task-capturevideostartasync). 
 
 ```csharp
 public Task< MLResult > CaptureVideoStopAsync()
@@ -121,7 +121,7 @@ public static new static MLCamera Create()
 
 ### [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) CreateAndConnect {#mlcamera-createandconnect}
 
-Creates an MLCamera instance and connects the camera device. Will return null if the [ConnectContext] is incorrectly configured. For example, if the context's [Flags] are set to [MLCamera.ConnectFlag.VirtualOnly] when targeting the [CV camera]. 
+Creates an [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) instance and connects the camera device. Will return null if the [ConnectContext] is incorrectly configured. For example, if the context's [Flags](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md#connectflag-flags) are set to [MLCamera.ConnectFlag.VirtualOnly](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) when targeting the [CV camera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-cv). 
 
 ```csharp
 public static MLCamera CreateAndConnect(
@@ -141,7 +141,7 @@ public static MLCamera CreateAndConnect(
 
 
 
-**Returns**: MLCamera instance if connection was successful, null otherwise
+**Returns**: [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) instance if connection was successful, null otherwise
 
 
 
@@ -149,7 +149,7 @@ public static MLCamera CreateAndConnect(
 
 ### Task&lt; [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) &gt; CreateAndConnectAsync {#task-createandconnectasync}
 
-Asynchronously creates an MLCamera instance and connects the camera device. Will return null if the [ConnectContext] is incorrectly configured. For example, if the context's [Flags] are set to [MLCamera.ConnectFlag.VirtualOnly] when targeting the [CV camera]. 
+Asynchronously creates an [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) instance and connects the camera device. Will return null if the [ConnectContext] is incorrectly configured. For example, if the context's [Flags](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.ConnectContext.md#connectflag-flags) are set to [MLCamera.ConnectFlag.VirtualOnly](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-connectflag) when targeting the [CV camera](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-cv). 
 
 ```csharp
 public static Task< MLCamera > CreateAndConnectAsync(
@@ -169,7 +169,7 @@ public static Task< MLCamera > CreateAndConnectAsync(
 
 
 
-**Returns**: MLCamera instance if connection was successful, null otherwise
+**Returns**: [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) instance if connection was successful, null otherwise
 
 
 
@@ -177,7 +177,7 @@ public static Task< MLCamera > CreateAndConnectAsync(
 
 ### Task&lt; [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) &gt; DisconnectAsync {#task-disconnectasync}
 
-Asynchronously isconnect the camera. Should call MLCamera.Connect() again on this instance or create a new MLCamera object using MLCamera.CreateAndConnect() function. 
+Asynchronously isconnect the camera. Should call MLCamera.Connect() again on this instance or create a new [MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) object using [MLCamera.CreateAndConnect()](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md#mlcamera-createandconnect) function. 
 
 ```csharp
 public Task< MLResult > DisconnectAsync()
@@ -209,7 +209,7 @@ public Task< MLResult > PreCaptureAEAWBAsync()
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual override void OnApplicationPause(

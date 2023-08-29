@@ -28,7 +28,7 @@ Is WebView service connected.
 
 ```csharp
 
-public bool IsConnected = false { get; set; }
+public bool IsConnected { get; set; }
 
 ```
 
@@ -150,7 +150,7 @@ public MLWebView WebView = null;
 
 | Type | Description  | 
 |--|--|
-| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for MLWebView that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
+| [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) | API for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) that allows an application to instantiate a hardware accelerated WebView and interact with it(via "mouse" and "keyboard" events).  |
 
 
 

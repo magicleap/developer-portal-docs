@@ -70,26 +70,6 @@ public bool computeNormals { get; set; }
 
 -----------
 
-### currentMeshType {#meshtype-currentmeshtype}
-
-The current mesh type being surfaced by the subsystem provider. 
-
-```csharp
-
-public MeshType currentMeshType { get; set; }
-
-```
-
-| Type | Description  | 
-|--|--|
-| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud.  |
-
-
-
-
-
------------
-
 ### density {#float-density}
 
 ```csharp
@@ -271,7 +251,7 @@ public bool requestVertexConfidence { get; set; }
 
 
 
-**See**: TryGetConfidence(MeshId, List&lt;float&gt;)
+**See**: [TryGetConfidence(MeshId, List&lt;float&gt;)](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-trygetconfidence)
 
 
 
@@ -289,7 +269,7 @@ public MeshType requestedMeshType { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud.  |
+| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
 
 
 
@@ -301,7 +281,7 @@ public MeshType requestedMeshType { get; set; }
 
 ### void DestroyAllMeshes {#void-destroyallmeshes}
 
-Destroy all mesh  GameObject s created by this MeshingSubsystemComponent. The meshIdToGameObjectMap will also be cleared. 
+Destroy all mesh  GameObject s created by this [MeshingSubsystemComponent](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md). The [meshIdToGameObjectMap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap) will also be cleared. 
 
 ```csharp
 public void DestroyAllMeshes()
@@ -373,7 +353,7 @@ public void OnMeshingPropertyChanged()
 
 ### void RefreshAllMeshes {#void-refreshallmeshes}
 
-'Refresh' all known meshes (meshes that are in meshIdToGameObjectMap). This will force all meshes to be regenerated with the current settings. 
+'Refresh' all known meshes (meshes that are in [meshIdToGameObjectMap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#dictionary-meshid,-gameobject-meshidtogameobjectmap)). This will force all meshes to be regenerated with the current settings. 
 
 ```csharp
 public void RefreshAllMeshes()
@@ -434,7 +414,7 @@ public static void SetCustomMeshBlockRequests(
 
 ### bool TryGetConfidence {#bool-trygetconfidence}
 
-Retrieve the confidence values associated with a mesh. Confidence values range from 0..1. requestVertexConfidence must be enabled. 
+Retrieve the confidence values associated with a mesh. Confidence values range from 0..1. [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence) must be enabled. 
 
 ```csharp
 public bool TryGetConfidence(
@@ -454,7 +434,7 @@ public bool TryGetConfidence(
 
 
 
-**See**: requestVertexConfidence
+**See**: [requestVertexConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#bool-requestvertexconfidence)
 
 
 
@@ -464,11 +444,33 @@ public bool TryGetConfidence(
 
 -----------
 
+## Public Attributes
+
+### currentMeshType {#meshtype-currentmeshtype}
+
+The current mesh type being surfaced by the subsystem provider. 
+
+```csharp
+
+public MeshType currentMeshType => SubsystemFeatures.currentFeatures.HasFlag(Feature.Meshing) ? MeshType.Triangles : MeshType.PointCloud;
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MeshType](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md#enums-meshtype) | What type of mesh to generate: a triangle mesh or a point cloud  |
+
+
+
+
+
+-----------
+
 ## Public Events
 
 ### meshAdded {#action-meshid-meshadded}
 
-An event which is invoked whenever a new mesh is added. 
+An event which is invoked whenever a new mesh is added 
 
 ```csharp
 public Action< MeshId > meshAdded()
@@ -515,11 +517,11 @@ public Action< MeshId > meshUpdated()
 
 ### MeshType {#enums-meshtype}
 
-What type of mesh to generate: a triangle mesh or a point cloud. 
+What type of mesh to generate: a triangle mesh or a point cloud 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Triangles | | Generate triangle meshes.   |
+| Triangles | | Generate triangle meshes   |
 | PointCloud | | Generate a point cloud (a mesh with  MeshTopology.Points )   |
 
 

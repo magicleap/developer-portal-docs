@@ -79,8 +79,8 @@ APIs to access the depth camera data.
 
 Using the depth camera may result in the following APIs returning stale data:
 
-* [ml_meshing2.h](/api-ref/api/Files/ml__meshing2_8h.md#files-ml-meshing2.h)
-* [ml_planes.h](/api-ref/api/Files/ml__planes_8h.md#files-ml-planes.h)
+* Meshing ([ml_meshing2.h](/api-ref/api/Files/ml__meshing2_8h.md#files-ml-meshing2.h)).
+* Planes ([ml_planes.h](/api-ref/api/Files/ml__planes_8h.md#files-ml-planes.h)). 
 
 
 
@@ -262,7 +262,7 @@ Structure to encapsulate the camera settings.
 This structure must be initialized by calling [MLDepthCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#void-mldepthcamerasettingsinit) before use.
 
 These are supported configurations: 
-Streams Exposure limits [us] Frame rate [FPS] Long Range 50 - 1600 1, 5 Short Range 50 - 375 On 50Hz PLC: 5, 25, 50On 60Hz PLC: 5, 30, 60  Use [MLDepthCameraGetCapabilities](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetcapabilities) to get a list of available configurations. \note The system may not be able to service all the requested streams at any given time. This parameter is treated as a hint and data will be provided for the requested streams if available. \note The API only supports a single stream. In a future release support for multiple streams will be added. @par API Level:\n 29 
+Streams Exposure limits [us] Frame rate [FPS] Long Range 250 - 2000 1, 5 Short Range 50 - 375 On 50Hz PLC: 5, 25, 50On 60Hz PLC: 5, 30, 60  Use [MLDepthCameraGetCapabilities](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetcapabilities) to get a list of available configurations. \note The system may not be able to service all the requested streams at any given time. This parameter is treated as a hint and data will be provided for the requested streams if available. \note The API only supports a single stream. In a future release support for multiple streams will be added. @par API Level:\n 29 
 
 
 
@@ -743,7 +743,7 @@ Query the depth camera stream capabilities.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLDepthCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameraconnect). |
-| const [MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) * |filter|Pointer to initialized [MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) structure. Used for filtering |
+| const [MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) * |filter|Pointer to initialized [MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) structure. Used for filtering. |
 | [MLDepthCameraCapabilityList](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_list.md) * |out_caps|Pointer to initialized [MLDepthCameraCapabilityList](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_list.md) structure.|
 
 **Returns**

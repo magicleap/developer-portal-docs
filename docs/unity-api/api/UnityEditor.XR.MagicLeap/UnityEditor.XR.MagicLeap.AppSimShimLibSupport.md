@@ -17,3 +17,20 @@ title: AppSimShimLibSupport
 
 
 
+## Public Attributes
+
+### SessionStateKey_ZISearchPaths {#readonly-string-sessionstatekey-zisearchpaths}
+
+```csharp
+
+public static readonly string SessionStateKey_ZISearchPaths = "ZI_SEARCH_PATHS";
+
+```
+
+
+
+
+
+
+-----------
+

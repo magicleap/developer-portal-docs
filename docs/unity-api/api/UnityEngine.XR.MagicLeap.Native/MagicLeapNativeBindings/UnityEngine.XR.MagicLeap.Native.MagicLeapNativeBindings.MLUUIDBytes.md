@@ -121,7 +121,7 @@ The 16 byte data array.
 
 ```csharp
 
-public byte[] Data;
+public byte [] Data;
 
 ```
 

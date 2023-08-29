@@ -9,7 +9,7 @@ summary: buffer format settings for input and output streams.
 
 
 
-Buffer format settings for input and output streams.   
+[Buffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.Buffer.md) format settings for input and output streams.   
 
 
 
@@ -63,7 +63,7 @@ public ChannelFormatType ChannelFormat { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-channelformattype) | Possible channel formats for input and output streams.  |
+| [ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) | Possible channel formats for input and output streams.  |
 
 
 
@@ -83,7 +83,7 @@ public SampleFormatType SampleFormat { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [SampleFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-sampleformattype) | Possible sample formats for input and output streams.  |
+| [SampleFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-sampleformattype) | Possible sample formats for input and output streams.  |
 
 
 
@@ -147,8 +147,8 @@ public BufferFormat(
 | uint |channelCount||
 | uint |samplesPerSecond||
 | uint |bitsPerSample||
-| [SampleFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-sampleformattype) |sampleFormat|Possible sample formats for input and output streams. |
-| [ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#uint-channelformattype) |channelFormat|Possible channel formats for input and output streams. |
+| [SampleFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-sampleformattype) |sampleFormat|Possible sample formats for input and output streams. |
+| [ChannelFormatType](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelformattype) |channelFormat|Possible channel formats for input and output streams. |
 
 
 

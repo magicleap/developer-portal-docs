@@ -91,7 +91,7 @@ public static void HandleOnPropertiesChanged(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerCreate {#mlresultcode-mlpowermanagercreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerCreate {#mlresultcode-mlpowermanagercreate}
 
 Creates a Power Manager handle for a specified component. 
 
@@ -117,7 +117,7 @@ public static MLResult.Code MLPowerManagerCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerDestroy {#mlresultcode-mlpowermanagerdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerDestroy {#mlresultcode-mlpowermanagerdestroy}
 
 Destroys a Power Manager handle. 
 
@@ -141,7 +141,7 @@ public static MLResult.Code MLPowerManagerDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerGetAvailablePowerStates {#mlresultcode-mlpowermanagergetavailablepowerstates}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerGetAvailablePowerStates {#mlresultcode-mlpowermanagergetavailablepowerstates}
 
 Query available power states for a component. 
 
@@ -169,7 +169,7 @@ public static MLResult.Code MLPowerManagerGetAvailablePowerStates(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerGetAvailableProperties {#mlresultcode-mlpowermanagergetavailableproperties}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerGetAvailableProperties {#mlresultcode-mlpowermanagergetavailableproperties}
 
 Request a list of the available #MLPowerManagerPropertyType. 
 
@@ -197,7 +197,7 @@ public static MLResult.Code MLPowerManagerGetAvailableProperties(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerGetComponentProperties {#mlresultcode-mlpowermanagergetcomponentproperties}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerGetComponentProperties {#mlresultcode-mlpowermanagergetcomponentproperties}
 
 Gets the power manager properties of a component. 
 
@@ -225,7 +225,7 @@ public static MLResult.Code MLPowerManagerGetComponentProperties(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerGetPowerState {#mlresultcode-mlpowermanagergetpowerstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerGetPowerState {#mlresultcode-mlpowermanagergetpowerstate}
 
 Gets the power state of a component. 
 
@@ -253,7 +253,7 @@ public static MLResult.Code MLPowerManagerGetPowerState(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerReleasePowerStateData {#mlresultcode-mlpowermanagerreleasepowerstatedata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerReleasePowerStateData {#mlresultcode-mlpowermanagerreleasepowerstatedata}
 
 Releases specified #MLPowerManagerPowerStateData. 
 
@@ -279,7 +279,7 @@ public static MLResult.Code MLPowerManagerReleasePowerStateData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerReleasePropertyData {#mlresultcode-mlpowermanagerreleasepropertydata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerReleasePropertyData {#mlresultcode-mlpowermanagerreleasepropertydata}
 
 Releases specified #MLPowerManagerPropertyData. 
 
@@ -305,7 +305,7 @@ public static MLResult.Code MLPowerManagerReleasePropertyData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerReleasePropertyTypeData {#mlresultcode-mlpowermanagerreleasepropertytypedata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerReleasePropertyTypeData {#mlresultcode-mlpowermanagerreleasepropertytypedata}
 
 Releases specified #MLPowerManagerPropertyTypeData. 
 
@@ -331,7 +331,7 @@ public static MLResult.Code MLPowerManagerReleasePropertyTypeData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerSetCallbacks {#mlresultcode-mlpowermanagersetcallbacks}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerSetCallbacks {#mlresultcode-mlpowermanagersetcallbacks}
 
 Register Power Manager callbacks for a specific handle. 
 
@@ -359,7 +359,7 @@ public static MLResult.Code MLPowerManagerSetCallbacks(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLPowerManagerSetPowerState {#mlresultcode-mlpowermanagersetpowerstate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPowerManagerSetPowerState {#mlresultcode-mlpowermanagersetpowerstate}
 
 Sets the power state of a component. 
 
@@ -376,7 +376,7 @@ public static MLResult.Code MLPowerManagerSetPowerState(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle|Power Manager handle for component to set power state for.|
-| in [MLPowerManagerPowerStateSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerPowerStateSettings.md) |settings|Settings used by the Power Manager updating a component's power state.|
+| in [MLPowerManagerPowerStateSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.MLPowerManagerPowerStateSettings.md) |settings|[Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.Settings.md) used by the Power Manager updating a component's power state.|
 
 
 

@@ -9,7 +9,7 @@ summary: marker tracker system provides a set of standard tracking profiles see 
 
 
 
-Marker Tracker system provides a set of standard tracking profiles (see MLMarkerTracker.Profile enum) to configure the tracker settings. This is the structure that defines a custom tracker profile.   
+Marker Tracker system provides a set of standard tracking profiles (see [MLMarkerTracker.Profile](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/UnityEngine.XR.MagicLeap.MLMarkerTracker.md#enums-profile) enum) to configure the tracker settings. This is the structure that defines a custom tracker profile.   
 
 
 

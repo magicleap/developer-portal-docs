@@ -1,6 +1,6 @@
 ---
 title: ImageTrackingSubsystem
-summary: subsystem for image tracking todo implement when image tracking is available from the platform. 
+summary: subsystem for image tracking todo implement when image tracking is available from the platform 
 
 ---
 
@@ -12,7 +12,7 @@ summary: subsystem for image tracking todo implement when image tracking is avai
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-Subsystem for Image Tracking TODO: Implement when Image Tracking is available from the platform.   
+Subsystem for Image Tracking TODO: Implement when Image Tracking is available from the platform   
 
 
 Inherits from: <br></br>XRImageTrackingSubsystem
@@ -24,7 +24,7 @@ Inherits from: <br></br>XRImageTrackingSubsystem
 
 ### CreateProvider {#override-provider-createprovider}
 
-Create the generic XR Provider object from the magic leap Provider. 
+Create the generic XR Provider object from the magic leap Provider 
 
 ```csharp
 protected override Provider CreateProvider()

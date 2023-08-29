@@ -42,7 +42,7 @@ public delegate void CloseDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) Create {#mlresultcode-create}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) Create {#mlresultcode-create}
 
 ```csharp
 public static MLResult.Code Create(
@@ -90,7 +90,7 @@ public delegate long GetSizeDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaDataSourceCreate {#mlresultcode-mlmediadatasourcecreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceCreate {#mlresultcode-mlmediadatasourcecreate}
 
 ```csharp
 public MLResult.Code MLMediaDataSourceCreate(
@@ -120,7 +120,7 @@ public MLResult.Code MLMediaDataSourceCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaDataSourceDestroy {#mlresultcode-mlmediadatasourcedestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaDataSourceDestroy {#mlresultcode-mlmediadatasourcedestroy}
 
 ```csharp
 public MLResult.Code MLMediaDataSourceDestroy(

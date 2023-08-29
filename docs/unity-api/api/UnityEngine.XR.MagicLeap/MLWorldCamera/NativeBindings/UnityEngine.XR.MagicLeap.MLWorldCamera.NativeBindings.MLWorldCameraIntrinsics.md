@@ -106,7 +106,7 @@ Radial distortion vector. The radial distortion co-efficients are in the followi
 
 ```csharp
 
-public readonly double[] RadialDistortion;
+public readonly double [] RadialDistortion;
 
 ```
 
@@ -123,7 +123,7 @@ Tangential distortion vector. The tangential distortion co-efficients are in the
 
 ```csharp
 
-public readonly double[] TangentialDistortion;
+public readonly double [] TangentialDistortion;
 
 ```
 

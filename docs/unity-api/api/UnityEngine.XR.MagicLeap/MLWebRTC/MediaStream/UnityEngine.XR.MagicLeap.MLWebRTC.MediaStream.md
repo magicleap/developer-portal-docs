@@ -83,7 +83,7 @@ Gets the id of this media stream.
 
 ```csharp
 
-public string Id { get; set; }
+public string Id = new HashSet<PeerConnection>() { get; set; }
 
 ```
 
@@ -117,13 +117,13 @@ Gets the connections associated with this media stream. Remote media streams wil
 
 ```csharp
 
-public HashSet< MLWebRTC.PeerConnection > ParentConnections = new HashSet<PeerConnection>() { get; set; }
+public HashSet< MLWebRTC.PeerConnection > ParentConnections { get; set; }
 
 ```
 
 | Type | Description  | 
 |--|--|
-| HashSet&lt; [MLWebRTC.PeerConnection](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md) &gt; | Class that represents a connection used by the MLWebRTC API.  |
+| HashSet&lt; [MLWebRTC.PeerConnection](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.md) &gt; | Class that represents a connection used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.  |
 
 
 
@@ -204,7 +204,7 @@ public MLResult AddLocalTrack(
 
 ### [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) Create {#mediastream-create}
 
-Creates an initialized local MediaStream object. 
+Creates an initialized local [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object. 
 
 ```csharp
 public static MediaStream Create(
@@ -224,7 +224,7 @@ public static MediaStream Create(
 
 
 
-**Returns**: An initialized MediaStream object.
+**Returns**: An initialized [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object.
 
 
 
@@ -232,7 +232,7 @@ public static MediaStream Create(
 
 ### [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) CreateWithAppDefinedVideoTrack {#mediastream-createwithappdefinedvideotrack}
 
-Creates an initialized local MediaStream object and it's tracks with the given video source. 
+Creates an initialized local [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object and it's tracks with the given video source. 
 
 ```csharp
 public static MediaStream CreateWithAppDefinedVideoTrack(
@@ -253,14 +253,14 @@ public static MediaStream CreateWithAppDefinedVideoTrack(
 | [MLWebRTC.AppDefinedVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.md) |id|The id to give the media stream.|
 | [Track.AudioType](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md#enums-audiotype) |appDefinedVideoSource|The defined video source to use.|
 | string |audioTrackId||
-| [MLWebRTC.AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) |localDefinedAudioSource|Class that represents an app defined video source that can be used by the MLWebRTC API. |
+| [MLWebRTC.AppDefinedAudioSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.md) |localDefinedAudioSource|Class that represents an app defined video source that can be used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API. |
 
 
 
 
 
 
-**Returns**: An initialized MediaStream object.
+**Returns**: An initialized [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object.
 
 
 
@@ -268,7 +268,7 @@ public static MediaStream CreateWithAppDefinedVideoTrack(
 
 ### [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) CreateWithBuiltInTracks {#mediastream-createwithbuiltintracks}
 
-Creates an initialized local MediaStream object and it's tracks with the given video type. Recommended to use CreateWithAppDefinedVideoTrack() in production, with sample video sources provided as MLCameraVideoSource and MLMRCameraVideoSource in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over various error cases and handle special cases like app pause/resume and device standby/reality/active. 
+Creates an initialized local [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object and it's tracks with the given video type. Recommended to use [CreateWithAppDefinedVideoTrack()](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md#mediastream-createwithappdefinedvideotrack) in production, with sample video sources provided as [MLCameraVideoSource](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.MLCameraVideoSource.md) and MLMRCameraVideoSource in the [UnityEngine.XR.MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) namespace since those sources provide more information about and control over various error cases and handle special cases like app pause/resume and device standby/reality/active. 
 
 ```csharp
 public static MediaStream CreateWithBuiltInTracks(
@@ -296,7 +296,7 @@ public static MediaStream CreateWithBuiltInTracks(
 
 
 
-**Returns**: An initialized MediaStream object.
+**Returns**: An initialized [MediaStream](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.md) object.
 
 
 

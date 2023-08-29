@@ -1,6 +1,6 @@
 ---
 title: MLWebRTCConnectionProxyConfig
-summary: native representation of proxy config. 
+summary: native representation of proxy config 
 
 ---
 
@@ -9,7 +9,7 @@ summary: native representation of proxy config.
 
 
 
-Native representation of proxy config.   
+[Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md) representation of proxy config   
 
 
 
@@ -19,7 +19,7 @@ Native representation of proxy config.
 
 ### AutoConfigUrl {#string-autoconfigurl}
 
-Url to use to download the proxy config. 
+Url to use to download the proxy config 
 
 ```csharp
 
@@ -36,7 +36,7 @@ public string AutoConfigUrl;
 
 ### AutoDetect {#bool-autodetect}
 
-Attempt to automatically detect proxy. 
+Attempt to automatically detect proxy 
 
 ```csharp
 
@@ -53,7 +53,7 @@ public bool AutoDetect;
 
 ### BypassList {#string-bypasslist}
 
-List of urls that should bypass the proxy. 
+List of urls that should bypass the proxy 
 
 ```csharp
 
@@ -70,7 +70,7 @@ public string BypassList;
 
 ### HostAddress {#string-hostaddress}
 
-Proxy server address. 
+Proxy server address 
 
 ```csharp
 
@@ -87,7 +87,7 @@ public string HostAddress;
 
 ### HostPort {#int-hostport}
 
-Proxy server port. 
+Proxy server port 
 
 ```csharp
 
@@ -104,7 +104,7 @@ public int HostPort;
 
 ### Password {#string-password}
 
-Proxy server auth password. 
+Proxy server auth password 
 
 ```csharp
 
@@ -121,7 +121,7 @@ public string Password;
 
 ### Type {#mlwebrtcproxytype-type}
 
-Type of proxy. 
+Type of proxy 
 
 ```csharp
 
@@ -141,7 +141,7 @@ public MLWebRTC.ProxyType Type;
 
 ### Username {#string-username}
 
-Proxy server auth username. 
+Proxy server auth username 
 
 ```csharp
 

@@ -12,7 +12,7 @@ summary: mlheadsetfit summary placeholder.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MLHeadsetFit Summary placeholder.   [More...](#detailed-description)  
+[MLHeadsetFit](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md) Summary placeholder.   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>[MLAutoAPISingleton< MLHeadsetFit >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
@@ -28,7 +28,7 @@ public class MLHeadsetFit : MLAutoAPISingleton< MLHeadsetFit >
 
 **Details**
 
-MLHeadsetFit description goes here. 
+[MLHeadsetFit](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md) description goes here. 
 
 
 
@@ -55,7 +55,7 @@ public static MLResult GetState(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [State](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.State.md) |state|Headset fit state. |
+| out [State](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.State.md) |state|Headset fit state |
 
 
 
@@ -68,7 +68,7 @@ public static MLResult GetState(
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Handle Unity application pause and resume. 
+Handle Unity application pause and resume 
 
 ```csharp
 protected virtual override void OnApplicationPause(

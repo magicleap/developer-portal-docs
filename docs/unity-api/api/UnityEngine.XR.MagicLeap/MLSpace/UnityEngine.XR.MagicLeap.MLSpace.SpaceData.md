@@ -9,7 +9,7 @@ summary: space data used when importing a space.
 
 
 
-Space data used when importing a space.   
+[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data used when importing a space.   
 
 
 
@@ -23,7 +23,7 @@ Binary space data.
 
 ```csharp
 
-public byte[] Data;
+public byte [] Data;
 
 ```
 

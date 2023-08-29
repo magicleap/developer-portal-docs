@@ -39,7 +39,7 @@ public Status LocalizationStatus;
 
 ### Space {#space-space}
 
-Space information. If localized(#MLSpaceLocalizationStatus&#95;Localized) this will contain valid Space information. If not localized this field should be ignored. 
+[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) information. If localized(#MLSpaceLocalizationStatus&#95;Localized) this will contain valid [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) information. If not localized this field should be ignored. 
 
 ```csharp
 
@@ -49,7 +49,7 @@ public Space Space;
 
 | Type | Description  | 
 |--|--|
-| [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) | A structure containing information about a Magic Leap Space. This structure must be initialized by calling #MLSpaceInit before use.  |
+| [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) | A structure containing information about a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceInit before use.  |
 
 
 

@@ -47,7 +47,7 @@ An array of floats of size eye&#95;expression&#95;count. The values are between 
 
 ```csharp
 
-public float[] EyeExpressionWeights;
+public float [] EyeExpressionWeights;
 
 ```
 
@@ -60,7 +60,7 @@ public float[] EyeExpressionWeights;
 
 ### Timestamp {#long-timestamp}
 
-The MLTime timestamp when expression data was updated. 
+The [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) timestamp when expression data was updated. 
 
 ```csharp
 

@@ -46,7 +46,7 @@ namespace UnityEditor.XR.MagicLeap
     {
         private static string LaunchProcess => Path.Combine(MagicLeapSDKUtil.AppSimRuntimePath, "bin/ZIDiscovery");
 
-        private static readonly string SessionStateKey = "ZI_SEARCH_PATHS";
+        public static readonly string SessionStateKey_ZISearchPaths = "ZI_SEARCH_PATHS";
         private static List<string> libSearchPaths = new List<string>();
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
@@ -71,13 +71,10 @@ namespace UnityEditor.XR.MagicLeap
                 return;
             }
 
-            string cachedSearchPaths = SessionState.GetString(SessionStateKey, string.Empty);
+            string cachedSearchPaths = SessionState.GetString(SessionStateKey_ZISearchPaths, string.Empty);
             if (string.IsNullOrEmpty(cachedSearchPaths))
             {
                 var ziRuntime = MagicLeapSDKUtil.AppSimRuntimePath;
-#if UNITY_EDITOR_WIN
-                ziRuntime = ziRuntime.Replace("/", "\\");
-#endif
                 if (string.IsNullOrEmpty(ziRuntime))
                 {
                     Debug.LogError("Zero Iteration Runtime path is not set.");
@@ -85,6 +82,9 @@ namespace UnityEditor.XR.MagicLeap
                     return;
                 }
 
+#if UNITY_EDITOR_WIN
+                ziRuntime = ziRuntime.Replace("/", "\\");
+#endif
                 var startInfo = new System.Diagnostics.ProcessStartInfo
                 {
                     UseShellExecute = false,
@@ -116,7 +116,7 @@ namespace UnityEditor.XR.MagicLeap
                 }
 
                 libSearchPaths = new List<string>(output.Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries));
-                SessionState.SetString(SessionStateKey, string.Join(Path.PathSeparator, libSearchPaths));
+                SessionState.SetString(SessionStateKey_ZISearchPaths, string.Join(Path.PathSeparator, libSearchPaths));
             }
             else
             {

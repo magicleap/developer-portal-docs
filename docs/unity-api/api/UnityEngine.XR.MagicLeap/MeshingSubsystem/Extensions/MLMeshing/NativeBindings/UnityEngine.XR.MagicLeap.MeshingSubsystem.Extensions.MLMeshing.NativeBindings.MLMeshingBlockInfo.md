@@ -27,9 +27,6 @@ public MagicLeapNativeBindings.MLCoordinateFrameUID cfuid;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 

@@ -57,7 +57,7 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
 
         [Preserve, InputControlLayout(displayName = "Magic Leap Controller (OpenXR)", commonUsages = new[] { "LeftHand", "RightHand" })]
         public class MagicLeapController : XRControllerWithRumble
-        {
+        { 
             [Preserve, InputControl(aliases = new[] { "GripButton", "shoulderClicked"}, usage = "GripButton")]
             public ButtonControl gripPressed { get; private set; }
 
@@ -71,16 +71,16 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
             public PoseControl pointer { get; private set; }
 
             [Preserve, InputControl(offset = 2)]
-            new public ButtonControl isTracked { get; private set; }
+            public new ButtonControl isTracked { get; private set; }
 
             [Preserve, InputControl(offset = 4)]
-            new public IntegerControl trackingState { get; private set; }
+            public new IntegerControl trackingState { get; private set; }
 
             [Preserve, InputControl(offset = 8, alias = "gripPosition")]
-            new public Vector3Control devicePosition { get; private set; }
+            public new Vector3Control devicePosition { get; private set; }
 
             [Preserve, InputControl(offset = 20, alias = "gripOrientation")]
-            new public QuaternionControl deviceRotation { get; private set; }
+            public new QuaternionControl deviceRotation { get; private set; }
 
             [Preserve, InputControl(offset = 68)]
             public Vector3Control pointerPosition { get; private set; }
@@ -159,7 +159,7 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
 
         public const string haptic = "/output/haptic";
 
-        private const string kDeviceLocalizedName = "KHR Simple Controller OpenXR";
+        private const string kDeviceLocalizedName = "Magic Leap Controller OpenXR";
 
         protected override void RegisterDeviceLayout()
         {
@@ -171,46 +171,42 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
 
         protected override void UnregisterDeviceLayout()
         {
-            InputSystem.InputSystem.RemoveLayout(typeof(MagicLeapController).Name);
+            InputSystem.InputSystem.RemoveLayout(nameof(MagicLeapController));
         }
 
         protected override void RegisterActionMapsWithRuntime()
         {
             ActionMapConfig actionMap = new ActionMapConfig()
             {
-                name = "MagicLeapController",
+                name = nameof(MagicLeapController),
                 localizedName = kDeviceLocalizedName,
                 desiredInteractionProfile = profile,
                 manufacturer = "Magic Leap",
-                serialNumber = "",
                 deviceInfos = new List<DeviceConfig>()
                 {
-                    new DeviceConfig()
+                    new()
                     {
-                        characteristics = (InputDeviceCharacteristics)(InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.TrackedDevice | InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Left),
+                        characteristics = InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.TrackedDevice | InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Left,
                         userPath = UserPaths.leftHand
                     },
-                    new DeviceConfig()
+                    new()
                     {
-                        characteristics = (InputDeviceCharacteristics)(InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.TrackedDevice | InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Right),
+                        characteristics = InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.TrackedDevice | InputDeviceCharacteristics.Controller | InputDeviceCharacteristics.Right,
                         userPath = UserPaths.rightHand
                     }
                 },
                 actions = new List<ActionConfig>()
                 {
                     // Bumper
-                    new ActionConfig()
+                    new()
                     {
-                        name = "gripPressed",
+                        name = nameof(MagicLeapController.gripPressed),
                         localizedName = "Grip Pressed",
                         type = ActionType.Binary,
-                        usages = new List<string>()
-                        {
-                            "GripButton"
-                        },
+                        usages = new List<string>(){ "GripButton" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = shoulderClick,
                                 interactionProfileName = profile,
@@ -218,18 +214,15 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
                         }
                     },
                     // Menu
-                    new ActionConfig()
+                    new()
                     {
-                        name = "menu",
+                        name =nameof(MagicLeapController.menu),
                         localizedName = "Menu",
                         type = ActionType.Binary,
-                        usages = new List<string>()
-                        {
-                            "MenuButton"
-                        },
+                        usages = new List<string>() { "MenuButton" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = menu,
                                 interactionProfileName = profile,
@@ -237,18 +230,15 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
                         }
                     },
                     // Device Pose
-                    new ActionConfig()
+                    new()
                     {
-                        name = "devicePose",
+                        name = nameof(MagicLeapController.devicePose),
                         localizedName = "Device Pose",
                         type = ActionType.Pose,
-                        usages = new List<string>()
-                        {
-                            "Device"
-                        },
+                        usages = new List<string>() { "Device" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = grip,
                                 interactionProfileName = profile,
@@ -256,18 +246,15 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
                         }
                     },
                     // Pointer Pose
-                    new ActionConfig()
+                    new()
                     {
-                        name = "pointer",
+                        name = nameof(MagicLeapController.pointer),
                         localizedName = "Pointer Pose",
                         type = ActionType.Pose,
-                        usages = new List<string>()
-                        {
-                            "Pointer"
-                        },
+                        usages = new List<string>() { "Pointer" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = aim,
                                 interactionProfileName = profile,
@@ -275,18 +262,15 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
                         }
                     },
                     // Trigger 
-                    new ActionConfig()
+                    new()
                     {
-                        name = "trigger",
+                        name = nameof(MagicLeapController.trigger),
                         localizedName = "Trigger",
                         type = ActionType.Axis1D,
-                        usages = new List<string>()
-                        {
-                            "Trigger"
-                        },
+                        usages = new List<string>() { "Trigger" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = trigger,
                                 interactionProfileName = profile,
@@ -294,90 +278,75 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
                         }
                     },
                     // Trigger Pressed
-                    new ActionConfig()
+                    new()
                     {
-                        name = "triggerPressed",
+                        name = nameof(MagicLeapController.triggerPressed),
                         localizedName = "Trigger Pressed",
                         type = ActionType.Binary,
-                        usages = new List<string>()
-                        {
-                            "TriggerButton"
-                        },
+                        usages = new List<string>() { "TriggerButton" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = triggerClick,
                                 interactionProfileName = profile,
                             }
                         }
                     },
-                    new ActionConfig()
+                    new()
                     {
-                        name = "trackpad",
+                        name = nameof(MagicLeapController.trackpad),
                         localizedName = "Trackpad",
                         type = ActionType.Axis2D,
-                        usages = new List<string>()
-                        {
-                            "Primary2DAxis"
-                        },
+                        usages = new List<string>() { "Primary2DAxis" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = trackpad,
                                 interactionProfileName = profile,
                             }
                         }
                     },
-                    new ActionConfig()
+                    new()
                     {
-                        name = "trackpadTouched",
+                        name = nameof(MagicLeapController.trackpadTouched),
                         localizedName = "Trackpad Touched",
                         type = ActionType.Binary,
-                        usages = new List<string>()
-                        {
-                            "Primary2DAxisTouch"
-                        },
+                        usages = new List<string>() { "Primary2DAxisTouch" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = trackpadTouch,
                                 interactionProfileName = profile,
                             }
                         }
                     },
-                    new ActionConfig()
+                    new()
                     {
-                        name = "trackpadClicked",
+                        name = nameof(MagicLeapController.trackpadClicked),
                         localizedName = "Trackpad Clicked",
                         type = ActionType.Binary,
-                        usages = new List<string>()
-                        {
-                            "Primary2DAxisClick"
-                        },
+                        usages = new List<string>() { "Primary2DAxisClick" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = trackpadClick,
                                 interactionProfileName = profile,
                             }
                         }
                     },
-                    new ActionConfig()
+                    new()
                     {
-                        name = "trackpadForce",
+                        name = nameof(MagicLeapController.trackpadForce),
                         localizedName = "Trackpad Force",
                         type = ActionType.Axis1D,
-                        usages = new List<string>()
-                        {
-                            "Secondary2DAxisForce"
-                        },
+                        usages = new List<string>() { "Secondary2DAxisForce" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = trackpadForce,
                                 interactionProfileName = profile,
@@ -385,15 +354,15 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
                         }
                     },
                     // Haptics
-                    new ActionConfig()
+                    new()
                     {
-                        name = "haptic",
+                        name = nameof(MagicLeapController.haptic),
                         localizedName = "Haptic Output",
                         type = ActionType.Vibrate,
                         usages = new List<string>() { "Haptic" },
                         bindings = new List<ActionBinding>()
                         {
-                            new ActionBinding()
+                            new()
                             {
                                 interactionPath = haptic,
                                 interactionProfileName = profile,

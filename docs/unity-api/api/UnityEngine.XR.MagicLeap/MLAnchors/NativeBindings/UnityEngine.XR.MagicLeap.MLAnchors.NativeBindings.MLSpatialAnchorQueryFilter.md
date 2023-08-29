@@ -9,7 +9,7 @@ summary: a collection of filters for spatial anchor queries. filters that have b
 
 
 
-A collection of filters for Spatial Anchor queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use.   
+A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use.   
 
 
 
@@ -17,7 +17,7 @@ A collection of filters for Spatial Anchor queries. Filters that have been set w
 
 ## Public Attributes
 
-### Center {#readonly-center}
+### Center {#readonly-mlvec3f-center}
 
 The center point of where a spatial query will originate. 
 
@@ -27,9 +27,6 @@ public readonly MLVec3f Center;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) | 3D vector in native format.  |
 
 
 
@@ -39,7 +36,7 @@ public readonly MLVec3f Center;
 
 ### Ids {#readonly-intptr-ids}
 
-A list of Spatial Anchor IDs to query for. 
+A list of Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) IDs to query for. 
 
 ```csharp
 

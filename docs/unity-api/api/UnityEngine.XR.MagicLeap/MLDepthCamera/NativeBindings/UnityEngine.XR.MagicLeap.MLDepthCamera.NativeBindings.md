@@ -18,7 +18,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLDepthCameraConnect {#mlresultcode-mldepthcameraconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraConnect {#mlresultcode-mldepthcameraconnect}
 
 Connect to depth camera. 
 
@@ -34,7 +34,7 @@ public MLResult.Code MLDepthCameraConnect(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) |settings|A pointer to MLDepthCameraSettings structure.|
+| in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) |settings|A pointer to [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) structure.|
 | out ulong |handle|A pointer to camera handle to be used in later APIs.|
 
 
@@ -64,7 +64,7 @@ permissions: com.magicleap.permission.DEPTH&#95;CAMERA (protection level: danger
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLDepthCameraDisconnect {#mlresultcode-mldepthcameradisconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraDisconnect {#mlresultcode-mldepthcameradisconnect}
 
 Disconnect from depth camera. This will disconnect from the depth camera. 
 
@@ -104,7 +104,7 @@ permissions: None
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLDepthCameraGetCapabilities {#mlresultcode-mldepthcameragetcapabilities}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraGetCapabilities {#mlresultcode-mldepthcameragetcapabilities}
 
 Query the depth camera stream capabilities. Retrieves the capabilities supported by the depth camera based on the provided filter. After each call, a corresponding call to MLDepthCameraReleaseCapabilities should be made to release allocated resources. 
 
@@ -122,8 +122,8 @@ public MLResult.Code MLDepthCameraGetCapabilities(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle|Camera handle obtained from MLDepthCameraConnect.|
-| ref [MLDepthCameraCapabilityFilter](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityFilter.md) |filter|Pointer to initialized MLDepthCameraCapabilityFilter structure. Used for filtering.|
-| out [MLDepthCameraCapabilityList](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityList.md) |outCaps|Pointer to initialized MLDepthCameraCapabilityList structure.|
+| ref [MLDepthCameraCapabilityFilter](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityFilter.md) |filter|Pointer to initialized [MLDepthCameraCapabilityFilter](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityFilter.md) structure. Used for filtering.|
+| out [MLDepthCameraCapabilityList](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityList.md) |outCaps|Pointer to initialized [MLDepthCameraCapabilityList](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityList.md) structure.|
 
 
 **Details**
@@ -146,9 +146,9 @@ permissions: None
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLDepthCameraGetLatestDepthData {#mlresultcode-mldepthcameragetlatestdepthdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraGetLatestDepthData {#mlresultcode-mldepthcameragetlatestdepthdata}
 
-Poll for Frames. Returns MLDepthCameraData with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache it and then release the memory by calling MLDepthCameraReleaseCameraData. This is a blocking call. API is not thread safe. If there are no new depth data frames within the timeoutMs duration then the API will return MLResult&#95;Timeout. 
+Poll for Frames. Returns [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache it and then release the memory by calling MLDepthCameraReleaseCameraData. This is a blocking call. API is not thread safe. If there are no new depth data frames within the timeoutMs duration then the API will return MLResult&#95;Timeout. 
 
 ```csharp
 public MLResult.Code MLDepthCameraGetLatestDepthData(
@@ -165,7 +165,7 @@ public MLResult.Code MLDepthCameraGetLatestDepthData(
 |--|--|--|
 | ulong |handle|Camera handle obtained from MLDepthCameraConnect.|
 | ulong |timeoutMs|Timeout in milliseconds.|
-| out [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) |data|Depth camera data. Should be an initialized MLDepthCameraData object.|
+| out [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) |data|Depth camera data. Should be an initialized [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) object.|
 
 
 **Details**
@@ -192,7 +192,7 @@ permissions: None
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLDepthCameraReleaseCapabilities {#mlresultcode-mldepthcamerareleasecapabilities}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraReleaseCapabilities {#mlresultcode-mldepthcamerareleasecapabilities}
 
 Release resources allocated with MLDepthCameraGetCapabilities. 
 
@@ -209,7 +209,7 @@ public MLResult.Code MLDepthCameraReleaseCapabilities(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle|Camera handle obtained from MLDepthCameraConnect.|
-| ref [MLDepthCameraCapabilityList](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityList.md) |outCaps|Pointer to MLDepthCameraCapabilityList filled by the call to MLDepthCameraGetCapabilities.|
+| ref [MLDepthCameraCapabilityList](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityList.md) |outCaps|Pointer to [MLDepthCameraCapabilityList](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraCapabilityList.md) filled by the call to MLDepthCameraGetCapabilities.|
 
 
 **Details**
@@ -232,9 +232,9 @@ permissions: None
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLDepthCameraReleaseDepthData {#mlresultcode-mldepthcamerareleasedepthdata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraReleaseDepthData {#mlresultcode-mldepthcamerareleasedepthdata}
 
-Releases specified MLDepthCameraData object. This function should be called exactly once for each successfull call to MLDepthCameraGetLatestCameraData. 
+Releases specified [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) object. This function should be called exactly once for each successfull call to MLDepthCameraGetLatestCameraData. 
 
 ```csharp
 public MLResult.Code MLDepthCameraReleaseDepthData(
@@ -249,7 +249,7 @@ public MLResult.Code MLDepthCameraReleaseDepthData(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle|Camera handle obtained from MLDepthCameraConnect.|
-| ref [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) |data|Pointer to a valid MLDepthCameraData object.|
+| ref [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) |data|Pointer to a valid [MLDepthCameraData](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraData.md) object.|
 
 
 **Details**
@@ -274,7 +274,7 @@ permissions: None
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLDepthCameraUpdateSettings {#mlresultcode-mldepthcameraupdatesettings}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLDepthCameraUpdateSettings {#mlresultcode-mldepthcameraupdatesettings}
 
 Update the depth camera settings. 
 
@@ -291,7 +291,7 @@ public MLResult.Code MLDepthCameraUpdateSettings(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle|Camera handle obtained from MLDepthCameraConnect.|
-| in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) |settings|Pointer to MLDepthCameraSettings.|
+| in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) |settings|Pointer to [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md).|
 
 
 **Details**
@@ -308,7 +308,7 @@ permissions: None
 
 **Returns**:  MLResult&#95;InvalidParam : Invalid handle. 
 
- MLResult&#95;Ok : Settings updated successfully. 
+ MLResult&#95;Ok : [Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md) updated successfully. 
 
  MLResult&#95;UnspecifiedFailure : Failed due to internal error. 
 

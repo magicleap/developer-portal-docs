@@ -39,7 +39,7 @@ Media player script that allows playback of a streaming video (either from file 
 
 ```csharp
 public delegate void OnCaptionLinesDelegate(
-    CaptionLine[] lines
+    CaptionLine [] lines
 )
 ```
 
@@ -48,7 +48,7 @@ public delegate void OnCaptionLinesDelegate(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [CaptionLine](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.CaptionLine.md)[] |lines||
+| [CaptionLine](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.CaptionLine.md) [] |lines||
 
 
 
@@ -122,7 +122,7 @@ public ParserCEA608()
 
 ```csharp
 
-public static const string Mime = "text/cea-608";
+public const string Mime = "text/cea-608";
 
 ```
 

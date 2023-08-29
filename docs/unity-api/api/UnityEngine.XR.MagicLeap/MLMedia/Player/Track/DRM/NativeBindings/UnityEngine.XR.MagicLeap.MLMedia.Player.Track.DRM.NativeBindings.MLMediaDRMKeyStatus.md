@@ -15,13 +15,13 @@ MediaDRM session key status.
 
 
 
-## Public Fields
+## Public Attributes
 
 ### Data {#key-data}
 
 ```csharp
 
-public Key Data { get; set; }
+public Key Data => new Key(this.keyId.Bytes, this.status);
 
 ```
 
@@ -35,11 +35,9 @@ public Key Data { get; set; }
 
 -----------
 
-## Public Attributes
-
 ### keyId {#readonly-keyid}
 
-KeyID that belongs to one of th DRM session key. 
+KeyID that belongs to one of th [DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session key. 
 
 ```csharp
 

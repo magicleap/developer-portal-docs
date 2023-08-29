@@ -59,7 +59,7 @@ public DataSource(
 
 ```csharp
 public DataSource(
-    byte[] byteBuffer
+    byte [] byteBuffer
 )
 ```
 
@@ -68,7 +68,7 @@ public DataSource(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| byte[] |byteBuffer||
+| byte [] |byteBuffer||
 
 
 

@@ -19,7 +19,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLWorldCameraConnect {#mlresultcode-mlworldcameraconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraConnect {#mlresultcode-mlworldcameraconnect}
 
 Connect to world cameras. 
 
@@ -45,7 +45,7 @@ public MLResult.Code MLWorldCameraConnect(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLWorldCameraDisconnect {#mlresultcode-mlworldcameradisconnect}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraDisconnect {#mlresultcode-mlworldcameradisconnect}
 
 Disconnect from world camera. This will disconnect from all the world camera currently connected. 
 
@@ -69,7 +69,7 @@ public MLResult.Code MLWorldCameraDisconnect(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLWorldCameraGetLatestWorldCameraData {#mlresultcode-mlworldcameragetlatestworldcameradata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraGetLatestWorldCameraData {#mlresultcode-mlworldcameragetlatestworldcameradata}
 
 Poll for Frames. Returns #MLWorldCameraData with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache it and then release the memory by calling #MLWorldCameraReleaseCameraData. This is a blocking call. API is not thread safe. If there are no new world camera data frames for a given duration (duration determined by the system) then the API will return MLResult&#95;Timeout. 
 
@@ -97,7 +97,7 @@ public MLResult.Code MLWorldCameraGetLatestWorldCameraData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLWorldCameraReleaseCameraData {#mlresultcode-mlworldcamerareleasecameradata}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraReleaseCameraData {#mlresultcode-mlworldcamerareleasecameradata}
 
 Releases specified #MLWorldCameraData object. This function should be called exactly once for each call to #MLWorldCameraGetLatestCameraData. 
 
@@ -123,7 +123,7 @@ public MLResult.Code MLWorldCameraReleaseCameraData(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLWorldCameraUpdateSettings {#mlresultcode-mlworldcameraupdatesettings}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLWorldCameraUpdateSettings {#mlresultcode-mlworldcameraupdatesettings}
 
 Update the world camera settings. 
 

@@ -51,17 +51,17 @@ public readonly bool HasNewUseableKey;
 
 ### Keys {#readonly-keys}
 
-Key entries. 
+[Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) entries. 
 
 ```csharp
 
-public readonly Key[] Keys;
+public readonly Key [] Keys;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| readonly [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md)[] | MediaDRM session key info.  |
+| readonly [Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md) [] | MediaDRM session key info.  |
 
 
 
@@ -71,11 +71,11 @@ public readonly Key[] Keys;
 
 ### SessionId {#readonly-byte-sessionid}
 
-DRM session id associated with the event. 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public readonly byte[] SessionId;
+public readonly byte [] SessionId;
 
 ```
 
