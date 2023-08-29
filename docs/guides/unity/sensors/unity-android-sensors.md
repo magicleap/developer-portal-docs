@@ -4,7 +4,6 @@ date: 08/29/2023
 tags: [Magic Leap, Android, Unity]
 keywords: [Magic Leap, Android, Generic, Sensor, Input]
 ---﻿
-  
 
 # Unity - Magic Leap 2 Sensors Access
 
