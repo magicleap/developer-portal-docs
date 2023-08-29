@@ -27,7 +27,7 @@ The following table lists the sensors that are available on Android devices and 
 
   
 
-|**Sensor Name**|**Sensor Type**|**Control Type**|**Description**|
+|Sensor Name|Sensor Type|Control Type|Description|
 |---|---|---|---|
 |Accelerometer|Accelerometer|`Vector3Control`|Measures the acceleration of the device in meters per second squared|
 |Gyroscope|Gyroscope|`Vector3Control`|Measures the angular velocity of the device in radians per second|
