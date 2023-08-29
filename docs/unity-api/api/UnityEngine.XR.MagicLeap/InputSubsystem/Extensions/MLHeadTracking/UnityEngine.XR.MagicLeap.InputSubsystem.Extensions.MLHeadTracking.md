@@ -16,6 +16,28 @@ title: MLHeadTracking
 
 ## Public Methods
 
+### void GetStaticData {#void-getstaticdata}
+
+```csharp
+public static void GetStaticData(
+    out MagicLeapNativeBindings.MLCoordinateFrameUID outUID
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |outUID|A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values. |
+
+
+
+
+
+
+-----------
+
 ### bool TryGetMapEvents {#bool-trygetmapevents}
 
 ```csharp
@@ -31,7 +53,7 @@ public static bool TryGetMapEvents(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |headDevice||
-| out [MapEvents](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#ulong-mapevents) |mapEvents|A set of all types of map events that can occur that a developer may have to handle. |
+| out [MapEvents](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLHeadTracking/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.md#enums-mapevents) |mapEvents|A set of all types of map events that can occur that a developer may have to handle. |
 
 
 
@@ -110,7 +132,7 @@ A set of possible tracking status for the Head Tracking system.
 
 -----------
 
-### MapEvents {#ulong-mapevents}
+### MapEvents {#enums-mapevents}
 
 A set of all types of map events that can occur that a developer may have to handle. 
 

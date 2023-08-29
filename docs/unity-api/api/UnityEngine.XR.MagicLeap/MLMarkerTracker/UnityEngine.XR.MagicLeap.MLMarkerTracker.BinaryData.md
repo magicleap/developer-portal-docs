@@ -35,7 +35,7 @@ public override string ToString()
 
 ```csharp
 
-public readonly byte[] Data;
+public readonly byte [] Data;
 
 ```
 

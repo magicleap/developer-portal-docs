@@ -23,7 +23,7 @@ This section includes guides on how to use MRTK 3 to develop Magic Leap 2 applic
 
 
 :::tip Quick Start 
-The fastest way to get started with MRTK3 on Magic Leap 2 is to use the [Magic Leap MRTK3 Template Project](./mrtk3-template.md). This Unity project is pre-configured for Unity and contains contains the MRTK3 and Magic Leap packages in addition to some sample scenes. See the [MRTK 3 Magic Leap Quick Start](./mrtk3-template.md) guide for more information.
+The fastest way to get started with MRTK3 on Magic Leap 2 is to use the [Magic Leap MRTK3 Template Project](./mrtk3-template.md). This Unity project is pre-configured for Unity and contains the MRTK3 and Magic Leap packages in addition to some sample scenes. See the [MRTK 3 Magic Leap Quick Start](./mrtk3-template.md) guide for more information.
 :::
 
 

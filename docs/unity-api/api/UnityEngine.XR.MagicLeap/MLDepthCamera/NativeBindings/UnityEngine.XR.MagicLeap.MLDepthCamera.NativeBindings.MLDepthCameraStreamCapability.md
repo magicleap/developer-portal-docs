@@ -9,7 +9,7 @@ summary: structure to encapsulate a possible configuration for a single stream. 
 
 
 
-Structure to encapsulate a possible configuration for a single stream. Can be used to understand possible values for a specific StreamConfig element in MLDepthCameraSettings. The capabilities supported by the depth camera can be queried with MLDepthCameraGetCapabilities().   
+Structure to encapsulate a possible configuration for a single stream. Can be used to understand possible values for a specific [StreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.StreamConfig.md) element in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md). The capabilities supported by the depth camera can be queried with MLDepthCameraGetCapabilities().   
 
 
 
@@ -29,7 +29,7 @@ public FrameRate FrameRateCapability;
 
 | Type | Description  | 
 |--|--|
-| [FrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-framerate) | Enumeration of possible frame rates.  |
+| [FrameRate](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-framerate) | Enumeration of possible frame rates  |
 
 
 

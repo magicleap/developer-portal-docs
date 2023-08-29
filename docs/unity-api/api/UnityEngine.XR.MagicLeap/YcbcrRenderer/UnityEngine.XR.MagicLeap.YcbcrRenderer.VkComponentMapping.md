@@ -42,7 +42,7 @@ public override bool Equals(
 
 ### a {#uint-a}
 
-VkComponentSwizzle. 
+VkComponentSwizzle 
 
 ```csharp
 
@@ -59,7 +59,7 @@ public uint a;
 
 ### b {#uint-b}
 
-VkComponentSwizzle. 
+VkComponentSwizzle 
 
 ```csharp
 
@@ -76,7 +76,7 @@ public uint b;
 
 ### g {#uint-g}
 
-VkComponentSwizzle. 
+VkComponentSwizzle 
 
 ```csharp
 
@@ -93,7 +93,7 @@ public uint g;
 
 ### r {#uint-r}
 
-VkComponentSwizzle. 
+VkComponentSwizzle 
 
 ```csharp
 

@@ -82,10 +82,10 @@ public AndroidManifestXml(
 
 -----------
 
-### string[] GetIncludedPermissions {#string-getincludedpermissions}
+### string [] GetIncludedPermissions {#string-getincludedpermissions}
 
 ```csharp
-public string[] GetIncludedPermissions()
+public string [] GetIncludedPermissions()
 ```
 
 
@@ -186,7 +186,7 @@ public void UpdateOrCreateAttribute(
 
 ```csharp
 
-public static const string AndroidXmlNamespace = "http://schemas.android.com/apk/res/android";
+public const string AndroidXmlNamespace = "http://schemas.android.com/apk/res/android";
 
 ```
 

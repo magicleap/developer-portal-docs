@@ -73,7 +73,7 @@ Buffer data.
 
 ```csharp
 
-public byte[] Data;
+public byte [] Data;
 
 ```
 

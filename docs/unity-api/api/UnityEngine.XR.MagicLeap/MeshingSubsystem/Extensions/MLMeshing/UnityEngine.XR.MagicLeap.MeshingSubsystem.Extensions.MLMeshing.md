@@ -18,7 +18,7 @@ title: MLMeshing
 
 ### [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) DensityToLevelOfDetail {#levelofdetail-densitytolevelofdetail}
 
-Step the Level of detail to Minimum, Medium and Maximum. 
+Step the Level of detail to Minimum, Medium and Maximum 
 
 ```csharp
 public static LevelOfDetail DensityToLevelOfDetail(
@@ -46,7 +46,7 @@ public static LevelOfDetail DensityToLevelOfDetail(
 
 ### float LevelOfDetailToDensity {#float-levelofdetailtodensity}
 
-Convert a LevelOfDetail to a float, ranged between 0 and 1. 
+Convert a LevelOfDetail to a float, ranged between 0 and 1 
 
 ```csharp
 public static float LevelOfDetailToDensity(
@@ -72,11 +72,11 @@ public static float LevelOfDetailToDensity(
 
 -----------
 
-### delegate [MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest.md)[] OnMeshBlockRequests {#delegate-onmeshblockrequests}
+### delegate [MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest.md) [] OnMeshBlockRequests {#delegate-onmeshblockrequests}
 
 ```csharp
-public delegate MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest[] OnMeshBlockRequests(
-    MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo[] blockInfos
+public delegate MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest [] OnMeshBlockRequests(
+    MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo [] blockInfos
 )
 ```
 
@@ -85,7 +85,7 @@ public delegate MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest[] OnMeshB
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo.md)[] |blockInfos|Representation of a mesh block. |
+| [MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockInfo.md) [] |blockInfos|Representation of a mesh block. |
 
 
 

@@ -18,6 +18,19 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
+### void ClearCallbacks {#void-clearcallbacks}
+
+```csharp
+public static void ClearCallbacks()
+```
+
+
+
+
+
+
+-----------
+
 ### void MLUnityGraphicsClearCallbacks {#void-mlunitygraphicsclearcallbacks}
 
 ```csharp

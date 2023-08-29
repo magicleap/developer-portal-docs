@@ -12,7 +12,7 @@ summary: mlcamera class exposes static functions to query camera related functio
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MLCamera class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.   
+[MLCamera](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLCamera.md) class exposes static functions to query camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.   
 
 
 Inherits from: <br></br>[MLAutoAPISingleton< MLCVCamera >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
@@ -50,7 +50,7 @@ tran
 
 
 
-**Returns**: MLResult.Result will be  MLResult.Code.Ok  if successful. MLResult.Result will be  MLResult.Code.PermissionDenied  if necessary permission is missing. MLResult.Result will be  MLResult.Code.InvalidParam  if outTransform parameter was not valid (null). MLResult.Result will be  MLResult.Code.UnspecifiedFailure  if failed to obtain transform due to internal error. 
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.PermissionDenied](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-permissiondenied)  if necessary permission is missing. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if outTransform parameter was not valid (null). [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed to obtain transform due to internal error. 
 
 
 
@@ -60,7 +60,7 @@ tran
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual override void OnApplicationPause(
@@ -103,7 +103,7 @@ protected virtual override MLResult.Code StartAPI()
 
 ### StopAPI {#override-stopapi}
 
-API-specific cleanup. Will be called whenever MLDevice is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()

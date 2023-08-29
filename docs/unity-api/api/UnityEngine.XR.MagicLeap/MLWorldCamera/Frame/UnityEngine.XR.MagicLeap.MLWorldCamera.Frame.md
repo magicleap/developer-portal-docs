@@ -91,7 +91,7 @@ public readonly Pose CameraPose;
 
 ### FrameBuffer {#readonly-framebuffer}
 
-Frame buffer data. 
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) buffer data. 
 
 ```csharp
 
@@ -148,7 +148,7 @@ public readonly Type FrameType;
 
 ### TimeStamp {#readonly-timestamp}
 
-Frame timestamp specifies the time at which the frame was captured. 
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) timestamp specifies the time at which the frame was captured. 
 
 ```csharp
 
@@ -158,7 +158,7 @@ public readonly MLTime TimeStamp;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type.  |
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.  |
 
 
 
@@ -175,8 +175,8 @@ Enumeration of camera mode used when capturing a frame.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | Unkown | | None.   |
-| LowExposure | | Frame captured using #MLWorldCameraMode&#95;LowExposure mode.   |
-| NormalExposure | | Frame captured using #MLWorldCameraMode&#95;NormalEposure mode.   |
+| LowExposure | | [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) captured using #MLWorldCameraMode&#95;LowExposure mode.   |
+| NormalExposure | | [Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/Frame/UnityEngine.XR.MagicLeap.MLWorldCamera.Frame.md) captured using #MLWorldCameraMode&#95;NormalEposure mode.   |
 
 
 

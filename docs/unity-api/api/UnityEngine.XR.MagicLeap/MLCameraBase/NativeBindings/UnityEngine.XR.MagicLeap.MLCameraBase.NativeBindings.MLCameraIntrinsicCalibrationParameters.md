@@ -1,6 +1,6 @@
 ---
 title: MLCameraIntrinsicCalibrationParameters
-summary: intrinsiccalibrationparameters is a structure to provide instrisic calibration information. 
+summary: intrinsiccalibrationparameters is a structure to provide instrisic calibration information 
 
 ---
 
@@ -9,7 +9,7 @@ summary: intrinsiccalibrationparameters is a structure to provide instrisic cali
 
 
 
-IntrinsicCalibrationParameters is a structure to provide instrisic calibration information.   
+[IntrinsicCalibrationParameters](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.IntrinsicCalibrationParameters.md) is a structure to provide instrisic calibration information   
 
 
 
@@ -19,11 +19,11 @@ IntrinsicCalibrationParameters is a structure to provide instrisic calibration i
 
 ### Distortion {#readonly-double-distortion}
 
-Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3]. 
+Distortion vector. The distortion co-efficients are in the following order: [k1, k2, p1, p2, k3] 
 
 ```csharp
 
-public readonly double[] Distortion;
+public readonly double [] Distortion;
 
 ```
 
@@ -36,7 +36,7 @@ public readonly double[] Distortion;
 
 ### FOV {#readonly-float-fov}
 
-Field of view in degrees. 
+Field of view in degrees 
 
 ```csharp
 
@@ -51,7 +51,7 @@ public readonly float FOV;
 
 -----------
 
-### FocalLength {#readonly-focallength}
+### FocalLength {#readonly-mlvec2f-focallength}
 
 Camera focal length. 
 
@@ -61,9 +61,6 @@ public readonly MLVec2f FocalLength;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
 
 
 
@@ -88,7 +85,7 @@ public readonly uint Height;
 
 -----------
 
-### PrincipalPoint {#readonly-principalpoint}
+### PrincipalPoint {#readonly-mlvec2f-principalpoint}
 
 Camera principal point. 
 
@@ -98,9 +95,6 @@ public readonly MLVec2f PrincipalPoint;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
 
 
 

@@ -121,7 +121,7 @@ public static void StopTracking()
 ```csharp
 public static bool TryGetKeyPointsMask(
     InputDevice handDevice,
-    out bool[] keyPointsMask
+    out bool [] keyPointsMask
 )
 ```
 
@@ -131,7 +131,7 @@ public static bool TryGetKeyPointsMask(
 | Type | Name  | Description  | 
 |--|--|--|
 | InputDevice |handDevice||
-| out bool[] |keyPointsMask||
+| out bool [] |keyPointsMask||
 
 
 
@@ -148,7 +148,7 @@ The max number of key points to track.
 
 ```csharp
 
-public static const int MaxKeyPoints = 28;
+public const int MaxKeyPoints = 28;
 
 ```
 

@@ -37,7 +37,7 @@ Controls for each of the depth camera streams. Only controls for streams enabled
 
 ```csharp
 
-public StreamConfig[] StreamConfig;
+public StreamConfig [] StreamConfig;
 
 ```
 
@@ -67,7 +67,7 @@ public uint Streams;
 
 ### Version {#uint-version}
 
-Version of this structure. 
+Version of this structure 
 
 ```csharp
 

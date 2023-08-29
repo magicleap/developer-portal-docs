@@ -34,11 +34,11 @@ public override string ToString()
 
 ### SessionId {#readonly-byte-sessionid}
 
-DRM session id associated with the event. 
+[DRM](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.md) session id associated with the event. 
 
 ```csharp
 
-public readonly byte[] SessionId;
+public readonly byte [] SessionId;
 
 ```
 

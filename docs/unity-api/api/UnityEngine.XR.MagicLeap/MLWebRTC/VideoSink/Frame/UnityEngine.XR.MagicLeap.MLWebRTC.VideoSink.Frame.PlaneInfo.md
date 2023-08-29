@@ -186,7 +186,7 @@ Max amount of image planes that can be in a single frame.
 
 ```csharp
 
-public static const int MaxImagePlanes = 3;
+public const int MaxImagePlanes = 3;
 
 ```
 

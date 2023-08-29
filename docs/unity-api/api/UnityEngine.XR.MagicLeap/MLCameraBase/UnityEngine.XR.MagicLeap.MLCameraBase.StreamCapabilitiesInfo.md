@@ -20,7 +20,7 @@ title: StreamCapabilitiesInfo
 
 ```csharp
 
-public StreamCapability[] StreamCapabilities;
+public StreamCapability [] StreamCapabilities;
 
 ```
 

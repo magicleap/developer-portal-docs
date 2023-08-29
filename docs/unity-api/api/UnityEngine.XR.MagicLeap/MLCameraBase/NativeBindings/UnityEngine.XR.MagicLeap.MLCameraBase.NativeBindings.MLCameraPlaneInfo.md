@@ -1,6 +1,6 @@
 ---
 title: MLCameraPlaneInfo
-summary: per plane info for captured output. 
+summary: per plane info for captured output 
 
 ---
 
@@ -9,7 +9,7 @@ summary: per plane info for captured output.
 
 
 
-Per plane info for captured output.   
+Per plane info for captured output   
 
 
 
@@ -41,7 +41,7 @@ public static MLCameraPlaneInfo Create()
 ```csharp
 public MLCamera.PlaneInfo CreatePlaneInfo(
     bool copyToManagedMemory,
-    byte[] byteArrayToUse =null
+    byte [] byteArrayToUse =null
 )
 ```
 
@@ -51,7 +51,7 @@ public MLCamera.PlaneInfo CreatePlaneInfo(
 | Type | Name  | Description  | 
 |--|--|--|
 | bool |copyToManagedMemory||
-| byte[] |byteArrayToUse||
+| byte [] |byteArrayToUse||
 
 
 
@@ -64,7 +64,7 @@ public MLCamera.PlaneInfo CreatePlaneInfo(
 
 ### BytesPerPixel {#uint-bytesperpixel}
 
-Number of bytes used to represent a pixel. 
+Number of bytes used to represent a pixel 
 
 ```csharp
 
@@ -81,7 +81,7 @@ public uint BytesPerPixel;
 
 ### Data {#intptr-data}
 
-Image data. 
+Image data 
 
 ```csharp
 
@@ -98,7 +98,7 @@ public IntPtr Data;
 
 ### Height {#uint-height}
 
-Height of the output image in pixels. 
+Height of the output image in pixels 
 
 ```csharp
 
@@ -130,7 +130,7 @@ public uint PixelsStride;
 
 ### Size {#uint-size}
 
-Number of bytes in the image output data. 
+Number of bytes in the image output data 
 
 ```csharp
 
@@ -147,7 +147,7 @@ public uint Size;
 
 ### Stride {#uint-stride}
 
-Stride of the output image in pixels. 
+Stride of the output image in pixels 
 
 ```csharp
 
@@ -181,7 +181,7 @@ public uint Version;
 
 ### Width {#uint-width}
 
-Width of the output image in pixels. 
+Width of the output image in pixels 
 
 ```csharp
 

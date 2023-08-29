@@ -43,7 +43,7 @@ public MLGazeRecognitionState(
 
 ### AmplitudeDeg {#readonly-float-amplitudedeg}
 
-Metadata field for amplitude of the current movement, which is eye-position displacement in degrees of visual angle. Amplitude applies to saccades and pursuit, otherwise NaN. 
+Metadata field for amplitude of the current movement, which is eye-position displacement in degrees of visual angle. Amplitude applies to saccades and pursuit, otherwise NaN 
 
 ```csharp
 
@@ -80,7 +80,7 @@ public readonly Behavior Behavior;
 
 ### DirectionRadial {#readonly-float-directionradial}
 
-Metadata field for direction of the current movement, in radial degrees (0-360). Direction field applies to saccades and pursuit, otherwise NaN. 
+Metadata field for direction of the current movement, in radial degrees (0-360). Direction field applies to saccades and pursuit, otherwise NaN 
 
 ```csharp
 
@@ -132,9 +132,9 @@ public readonly Error Error;
 
 -----------
 
-### EyeLeft {#readonly-eyeleft}
+### EyeLeft {#readonly-mlvec2f-eyeleft}
 
-A vector for eye-in-skull position of left eye, even if right eye is closed. 
+A vector for eye-in-skull position of left eye, even if right eye is closed 
 
 ```csharp
 
@@ -142,9 +142,6 @@ public readonly MLVec2f EyeLeft;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
 
 
 
@@ -152,7 +149,7 @@ public readonly MLVec2f EyeLeft;
 
 -----------
 
-### EyeRight {#readonly-eyeright}
+### EyeRight {#readonly-mlvec2f-eyeright}
 
 A vector for eye-in-skull position of right eye, even if left eye is closed. 
 
@@ -162,9 +159,6 @@ public readonly MLVec2f EyeRight;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MLVec2f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec2f.md) | 2D vector represented with X and Y floats.  |
 
 
 
@@ -208,7 +202,7 @@ public readonly long Timestamp;
 
 ### VelocityDegps {#readonly-float-velocitydegps}
 
-Metadata field for velocity of the current movement, in degrees per second. Velocity field applies to saccades and pursuit, otherwise NaN. 
+Metadata field for velocity of the current movement, in degrees per second. Velocity field applies to saccades and pursuit, otherwise NaN 
 
 ```csharp
 

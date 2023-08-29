@@ -1724,6 +1724,7 @@ Starts voice intent processing.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start processing due to an invalid parameter. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully start intent processing. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to start intent processing because required voice intent feature is disabled in system settings. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -1767,6 +1768,7 @@ Stops voice intent processing.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop processing due to an invalid parameter. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stop intent processing. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to stop intent processing because required voice intent feature is disabled in system settings. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 

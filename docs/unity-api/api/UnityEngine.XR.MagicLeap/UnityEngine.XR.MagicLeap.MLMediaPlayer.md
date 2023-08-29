@@ -12,7 +12,7 @@ summary: performance markers for mlmediaplayer.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-Performance markers for MLMediaPlayer.   
+Performance markers for [MLMediaPlayer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLMediaPlayer.md).   
 
 
 Inherits from: <br></br>MonoBehaviour

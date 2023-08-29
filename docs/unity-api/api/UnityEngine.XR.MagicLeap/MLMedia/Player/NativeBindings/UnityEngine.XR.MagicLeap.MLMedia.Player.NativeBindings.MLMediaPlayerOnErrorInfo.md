@@ -46,7 +46,7 @@ public MLResult.Code Result;
 
 | Type | Description  | 
 |--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) | Identifier of Magic Leap API results.  |
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) | Identifier of Magic Leap API results  |
 
 
 

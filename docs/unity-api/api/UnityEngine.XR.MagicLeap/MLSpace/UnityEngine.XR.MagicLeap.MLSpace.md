@@ -14,7 +14,7 @@ title: MLSpace
 
 
 
-Inherits from: <br></br>[MLAutoAPISingleton< MLSpace >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
+Inherits from: <br></br>[MLAutoAPISingleton< MLSpace >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLAutoAPISingleton< MLSpace >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md),<br></br>[MLLazySingleton< T >](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLLazySingleton.md)
 
 
 
@@ -40,9 +40,9 @@ public static OnLocalizationDelegate OnLocalizationEvent { get; set; }
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) ExportSpace {#mlresultcode-exportspace}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) ExportSpace {#mlresultcode-exportspace}
 
-Export spaces wrapper. 
+Export an on device Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 public static MLResult.Code ExportSpace(
@@ -56,8 +56,8 @@ public static MLResult.Code ExportSpace(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [SpaceInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceInfo.md) |info|Space data returned when we successfully import space. |
-| out [SpaceData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceData.md) |data|Space data used when importing a space. |
+| in [SpaceInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceInfo.md) |info|[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data returned when we successfully import space. |
+| out [SpaceData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceData.md) |data|[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data used when importing a space. |
 
 
 
@@ -66,7 +66,7 @@ public static MLResult.Code ExportSpace(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetLocalizationResult {#mlresultcode-getlocalizationresult}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetLocalizationResult {#mlresultcode-getlocalizationresult}
 
 Requests the localization info. 
 
@@ -90,13 +90,13 @@ public static MLResult.Code GetLocalizationResult(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) GetSpaceList {#mlresultcode-getspacelist}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetSpaceList {#mlresultcode-getspacelist}
 
-Get list of available spaces. 
+Get the list of available spaces. The list of spaces returned will depend on the current device mapping mode. Only the Spaces associated with the current mapping mode will be returned by this call.Device mapping mode can be changed via the system application(s). 
 
 ```csharp
 public static MLResult.Code GetSpaceList(
-    out Space[] spaceList
+    out Space [] spaceList
 )
 ```
 
@@ -105,7 +105,7 @@ public static MLResult.Code GetSpaceList(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md)[] |spaceList|A structure containing information about a Magic Leap Space. This structure must be initialized by calling #MLSpaceInit before use. |
+| out [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) [] |spaceList|A structure containing information about a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). This structure must be initialized by calling #MLSpaceInit before use. |
 
 
 
@@ -114,9 +114,9 @@ public static MLResult.Code GetSpaceList(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) ImportSpace {#mlresultcode-importspace}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) ImportSpace {#mlresultcode-importspace}
 
-Import spaces wrapper. 
+Import a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 public static MLResult.Code ImportSpace(
@@ -130,8 +130,8 @@ public static MLResult.Code ImportSpace(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| in [SpaceData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceData.md) |data|Space data used when importing a space. |
-| out [SpaceInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceInfo.md) |id|Space data returned when we successfully import space. |
+| in [SpaceData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceData.md) |data|[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data used when importing a space. |
+| out [SpaceInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceInfo.md) |id|[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data returned when we successfully import space. |
 
 
 
@@ -210,7 +210,7 @@ public delegate void OnLocalizationDelegate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) RequestLocalization {#mlresultcode-requestlocalization}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) RequestLocalization {#mlresultcode-requestlocalization}
 
 Requests the localization info. 
 
@@ -225,7 +225,7 @@ public static MLResult.Code RequestLocalization(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| ref [SpaceInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceInfo.md) |info|Space data returned when we successfully import space. |
+| ref [SpaceInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceInfo.md) |info|[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data returned when we successfully import space. |
 
 
 
@@ -278,11 +278,11 @@ protected virtual override MLResult.Code StopAPI()
 
 ### MaxSpaceNameLength {#const-uint-maxspacenamelength}
 
-Maximum size for the name of a Magic Leap Space. 
+Maximum size for the name of a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 
-public static const uint MaxSpaceNameLength = 64;
+public const uint MaxSpaceNameLength = 64;
 
 ```
 
@@ -317,7 +317,7 @@ The current localization status.
 
 ### Type {#enums-type}
 
-Indicates the type of the Space. 
+Indicates the type of the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

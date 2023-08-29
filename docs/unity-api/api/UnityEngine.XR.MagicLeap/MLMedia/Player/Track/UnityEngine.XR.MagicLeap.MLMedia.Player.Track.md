@@ -9,7 +9,7 @@ summary: track from the prepared source that can be selected by the media player
 
 
 
-Track from the prepared source that can be selected by the media player.   
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) from the prepared source that can be selected by the media player.   
 
 
 
@@ -27,7 +27,7 @@ public MLAudioOutput.ChannelLayouts AudioChannelLayout { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLAudioOutput.ChannelLayouts](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channellayouts) | Definition of some of the known Channel Layouts. These layouts are based on ChannelMask
+| [MLAudioOutput.ChannelLayouts](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channellayouts) | Definition of some of the known Channel Layouts. These layouts are based on [ChannelMask](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/UnityEngine.XR.MagicLeap.MLAudioOutput.md#enums-channelmask)
 
 
 composite of individual channel masks.  |

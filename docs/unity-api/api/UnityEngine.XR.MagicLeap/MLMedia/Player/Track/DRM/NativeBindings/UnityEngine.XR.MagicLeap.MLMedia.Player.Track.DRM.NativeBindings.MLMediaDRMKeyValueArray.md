@@ -21,7 +21,7 @@ Data type containing array of {key, value} pair.
 
 ```csharp
 
-public KeyValuePair< string, string >[] KeyValues { get; set; }
+public KeyValuePair< string, string > [] KeyValues { get; set; }
 
 ```
 

@@ -33,6 +33,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Serialization;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.XR.MagicLeap.Native;
 using UnityEngine.XR.Management;
 
 #if UNITY_EDITOR
@@ -45,6 +46,8 @@ namespace UnityEngine.XR.MagicLeap
     [DisallowMultipleComponent]
     public sealed class MeshingSubsystemComponent : MonoBehaviour
     {
+        private const float SubsystemStartUpTime = 1f;
+
         public enum MeshType
         {
             Triangles,
@@ -301,6 +304,8 @@ namespace UnityEngine.XR.MagicLeap
         public event Action<MeshId> meshRemoved;
 
         private InputDevice headDevice;
+        private Coroutine startupRoutine = null;
+        private bool shouldSubsystemBeRunning = false;
 
         public bool TryGetConfidence(MeshId meshId, List<float> confidenceOut)
         {
@@ -523,12 +528,35 @@ namespace UnityEngine.XR.MagicLeap
         void StartSubsystem()
         {
             MeshingSubsystemLifecycle.StartSubsystem();
+
+            startupRoutine = StartCoroutine(LetSubsystemToStart());
+
+            MLSpace.OnLocalizationEvent += MLSpaceOnOnLocalizationChanged;
+        }
+
+        private IEnumerator LetSubsystemToStart()
+        {
+            shouldSubsystemBeRunning = false;
+            yield return new WaitForSeconds(SubsystemStartUpTime);
+            shouldSubsystemBeRunning = true;
+        }
+
+        private void MLSpaceOnOnLocalizationChanged(MLSpace.LocalizationResult result)
+        {
+            m_SettingsDirty = true;
         }
 
         void StopSubsystem()
         {
             MeshingSubsystemLifecycle.StopSubsystem();
             SubsystemFeatures.SetCurrentFeatureEnabled(Feature.Meshing | Feature.PointCloud, false);
+
+            if (startupRoutine != null)
+            {
+                StopCoroutine(startupRoutine);
+            }
+            
+            MLSpace.OnLocalizationEvent -= MLSpaceOnOnLocalizationChanged;
         }
 
         void OnEnable()
@@ -568,13 +596,14 @@ namespace UnityEngine.XR.MagicLeap
                 }
             }
         }
-
+        
         void UpdateSettings()
         {
             DestroyAllMeshes();
             UpdateBatchSize();
-
+            
             var settings = GetMeshingSettings();
+            
             MeshingSubsystem.Extensions.MLMeshing.Config.meshingSettings = settings;
             MeshingSubsystem.Extensions.MLMeshing.Config.density = density;
 
@@ -613,11 +642,17 @@ namespace UnityEngine.XR.MagicLeap
         // been added to the asynchronous queue, or the queue is full.
         void Update()
         {
-
             if (MeshingSubsystemLifecycle.MeshSubsystem == null)
                 return;
-            if (!MeshingSubsystemLifecycle.MeshSubsystem.running)
+
+            if (!shouldSubsystemBeRunning)
                 return;
+
+            if (!MeshingSubsystemLifecycle.MeshSubsystem.running)
+            {
+                Debug.LogError($"MeshingSubsystemLifecycle.MeshSubsystem.running {MeshingSubsystemLifecycle.MeshSubsystem.running}");
+                return;
+            }
 #if UNITY_EDITOR
             m_SettingsDirty |= haveSettingsChanged;
 #endif
@@ -777,6 +812,10 @@ namespace UnityEngine.XR.MagicLeap
                         meshCollider.enabled = currentMeshType != MeshType.PointCloud;
                     }
                 }
+            }
+            else
+            {
+                m_MeshesBeingGenerated.Remove(result.MeshId);
             }
         }
 

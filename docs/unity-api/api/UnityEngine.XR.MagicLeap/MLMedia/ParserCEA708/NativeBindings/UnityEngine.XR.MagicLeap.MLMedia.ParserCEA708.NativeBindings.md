@@ -18,7 +18,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCea708ParserCreate {#mlresultcode-mlmediacea708parsercreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserCreate {#mlresultcode-mlmediacea708parsercreate}
 
 ```csharp
 public MLResult.Code MLMediaCea708ParserCreate(
@@ -40,7 +40,7 @@ public MLResult.Code MLMediaCea708ParserCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCea708ParserDestroy {#mlresultcode-mlmediacea708parserdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserDestroy {#mlresultcode-mlmediacea708parserdestroy}
 
 ```csharp
 public MLResult.Code MLMediaCea708ParserDestroy(
@@ -62,7 +62,7 @@ public MLResult.Code MLMediaCea708ParserDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCea708ParserParse {#mlresultcode-mlmediacea708parserparse}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserParse {#mlresultcode-mlmediacea708parserparse}
 
 ```csharp
 public MLResult.Code MLMediaCea708ParserParse(
@@ -88,7 +88,7 @@ public MLResult.Code MLMediaCea708ParserParse(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLMediaCea708ParserSetEmitEventCallback {#mlresultcode-mlmediacea708parsersetemiteventcallback}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLMediaCea708ParserSetEmitEventCallback {#mlresultcode-mlmediacea708parsersetemiteventcallback}
 
 ```csharp
 public MLResult.Code MLMediaCea708ParserSetEmitEventCallback(

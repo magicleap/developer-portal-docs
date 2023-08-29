@@ -9,7 +9,7 @@ summary: the native representation of the magicleapxrprovider debug utilities ob
 
 
 
-The native representation of the MagicLeapXrProvider debug utilities object.   
+The native representation of the [MagicLeapXrProvider](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MagicLeapXrProvider.md) debug utilities object.   
 
 
 

@@ -15,23 +15,6 @@ Data type containing {key, value} pair.
 
 
 
-## Public Fields
-
-### KeyValue {#keyvaluepair-string,-string-keyvalue}
-
-```csharp
-
-public KeyValuePair< string, string > KeyValue { get; set; }
-
-```
-
-
-
-
-
-
------------
-
 ## Public Methods
 
 ###  MLMediaDRMKeyValue {#functions-mlmediadrmkeyvalue}
@@ -56,15 +39,54 @@ public MLMediaDRMKeyValue(
 
 -----------
 
+### KeyValuePair&lt; string, string &gt; string {#keyvaluepair-string,-string-string}
+
+```csharp
+public KeyValuePair< string, string > string(
+    this. Key,
+    this. Value
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| this. |Key||
+| this. |Value||
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
 ### Key {#readonly-string-key}
 
-Key. 
+[Key](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.Key.md). 
 
 ```csharp
 
 public readonly string Key;
+
+```
+
+
+
+
+
+
+-----------
+
+### KeyValue {#keyvaluepair-string,-string-keyvalue}
+
+```csharp
+
+public KeyValuePair< string, string > KeyValue => new KeyValuePair<string;
 
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: MagicLeapCamera
-summary: monobehaviour class representing the magic leap camera. 
+summary: monobehaviour class representing the magic leap camera 
 
 ---
 
@@ -12,7 +12,7 @@ summary: monobehaviour class representing the magic leap camera.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MonoBehaviour class representing the Magic Leap camera.   
+MonoBehaviour class representing the Magic Leap camera   
 
 
 Inherits from: <br></br>MonoBehaviour
@@ -21,6 +21,21 @@ Inherits from: <br></br>MonoBehaviour
 
 
 ## Public Fields
+
+### EnforceFarClip {#bool-enforcefarclip}
+
+```csharp
+
+public bool EnforceFarClip { get; set; }
+
+```
+
+
+
+
+
+
+-----------
 
 ### ProtectedSurface {#bool-protectedsurface}
 
@@ -39,9 +54,24 @@ public bool ProtectedSurface { get; set; }
 
 -----------
 
+### RecenterXROriginAtStart {#bool-recenterxroriginatstart}
+
+```csharp
+
+public bool RecenterXROriginAtStart { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### StereoConvergencePoint {#transform-stereoconvergencepoint}
 
-Getter/Setter for the stereo convergence point. 
+Getter/Setter for the stereo convergence point 
 
 ```csharp
 
@@ -60,7 +90,7 @@ public Transform StereoConvergencePoint { get; set; }
 
 ### float ClampToClippingPlanes {#float-clamptoclippingplanes}
 
-Clamp a given value to the near and far clip planes. 
+Clamp a given value to the near and far clip planes 
 
 ```csharp
 public float ClampToClippingPlanes(
@@ -88,7 +118,7 @@ public float ClampToClippingPlanes(
 
 ### void ValidateFarClip {#void-validatefarclip}
 
-Validate the Far Clip plane. 
+Validate the Far Clip plane 
 
 ```csharp
 public void ValidateFarClip()

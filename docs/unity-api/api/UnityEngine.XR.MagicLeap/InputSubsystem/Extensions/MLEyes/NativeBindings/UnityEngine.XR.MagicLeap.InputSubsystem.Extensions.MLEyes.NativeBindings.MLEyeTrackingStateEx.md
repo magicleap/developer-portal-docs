@@ -152,7 +152,7 @@ public readonly float RightEyeOpenness;
 
 ### Timestamp {#readonly-long-timestamp}
 
-Timestamp for all the data fields in this struct. 
+Timestamp for all the data fields in this struct 
 
 ```csharp
 
@@ -186,7 +186,7 @@ public readonly float VergenceConfidence;
 
 ### Version {#readonly-uint-version}
 
-Struct version. 
+Struct version 
 
 ```csharp
 

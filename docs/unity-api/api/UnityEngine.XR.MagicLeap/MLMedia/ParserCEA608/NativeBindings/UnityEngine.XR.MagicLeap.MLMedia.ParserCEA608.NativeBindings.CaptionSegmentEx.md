@@ -20,7 +20,7 @@ title: CaptionSegmentEx
 
 ```csharp
 
-public IntPtr[] lines;
+public IntPtr [] lines;
 
 ```
 

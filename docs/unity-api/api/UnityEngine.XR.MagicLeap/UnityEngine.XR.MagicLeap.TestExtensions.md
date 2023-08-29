@@ -25,7 +25,7 @@ title: TestExtensions
 public static void AssertOk(
     this MLResult mlResult,
     string methodName ="The API",
-    params MLResult.Code[] validResultCodes
+    params MLResult.Code [] validResultCodes
 )
 ```
 
@@ -36,7 +36,7 @@ public static void AssertOk(
 |--|--|--|
 | this [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) |mlResult|Magic Leap API return value. |
 | string |methodName||
-| params [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code)[] |validResultCodes|Identifier of Magic Leap API results. |
+| params [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) [] |validResultCodes|Identifier of Magic Leap API results |
 
 
 

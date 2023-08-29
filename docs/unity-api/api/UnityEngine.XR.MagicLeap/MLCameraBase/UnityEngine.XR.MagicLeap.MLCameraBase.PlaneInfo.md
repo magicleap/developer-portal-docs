@@ -1,6 +1,6 @@
 ---
 title: PlaneInfo
-summary: contains both the data and information necessary to read the data for a specific buffer in a capture. 
+summary: contains both the data and information necessary to read the data for a specific buffer in a capture 
 
 ---
 
@@ -9,7 +9,7 @@ summary: contains both the data and information necessary to read the data for a
 
 
 
-Contains both the data and information necessary to read the data for a specific buffer in a capture.   
+Contains both the data and information necessary to read the data for a specific buffer in a capture   
 
 
 
@@ -53,7 +53,7 @@ public override string ToString()
 
 ### BytesPerPixel {#uint-bytesperpixel}
 
-Number of bytes used to represent a pixel. 
+Number of bytes used to represent a pixel 
 
 ```csharp
 
@@ -74,7 +74,7 @@ Image Data (in managed memory)
 
 ```csharp
 
-public byte[] Data;
+public byte [] Data;
 
 ```
 
@@ -104,7 +104,7 @@ public IntPtr DataPtr;
 
 ### Height {#uint-height}
 
-Height of the output image in pixels. 
+Height of the output image in pixels 
 
 ```csharp
 
@@ -121,7 +121,7 @@ public uint Height;
 
 ### IsValid {#bool-isvalid}
 
-Indicate if this structure contains valid data. 
+Indicate if this structure contains valid data 
 
 ```csharp
 
@@ -155,7 +155,7 @@ public uint PixelStride;
 
 ### Size {#uint-size}
 
-Number of bytes in the image output data. 
+Number of bytes in the image output data 
 
 ```csharp
 
@@ -172,7 +172,7 @@ public uint Size;
 
 ### Stride {#uint-stride}
 
-Stride of the output image in pixels. 
+Stride of the output image in pixels 
 
 ```csharp
 
@@ -189,7 +189,7 @@ public uint Stride;
 
 ### Width {#uint-width}
 
-Width of the output image in pixels. 
+Width of the output image in pixels 
 
 ```csharp
 

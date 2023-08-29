@@ -41,7 +41,7 @@ public static MLWebRTCFrame Create(
 
 ### [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) Create {#mlwebrtcframe-create}
 
-Caller MUST call  FreeUnmanagedMemory  when finished with the returned  MLWebRTCFrame ! Unmanaged memory will be allocated for the  FrameData  pointer.    Creates and returns an initialized version of this struct from a MLWebRTC.VideoSink.Frame object. 
+Caller MUST call  FreeUnmanagedMemory  when finished with the returned  [MLWebRTCFrame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFrame.md) ! Unmanaged memory will be allocated for the  FrameData  pointer.    Creates and returns an initialized version of this struct from a [MLWebRTC.VideoSink.Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) object. 
 
 ```csharp
 public static MLWebRTCFrame Create(
@@ -117,7 +117,7 @@ public OutputFormat Format;
 
 ### FrameData {#intptr-framedata}
 
-Frame data to be interpreted as a MLWebRTCNativeFrameInfo if Format is OutputFormat.NativeBuffer, otherwise interpreted as a MLWebRTCFramePlanes. 
+[Frame](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md) data to be interpreted as a [MLWebRTCNativeFrameInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCNativeFrameInfo.md) if Format is [OutputFormat.NativeBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.md#enums-nativebuffer), otherwise interpreted as a [MLWebRTCFramePlanes](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.MLWebRTCFramePlanes.md). 
 
 ```csharp
 

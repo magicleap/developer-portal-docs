@@ -12,19 +12,19 @@ summary: mlmediaformat description goes here.
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-MLMediaFormat description goes here.   
+[MLMediaFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaFormat/UnityEngine.XR.MagicLeap.MLMediaFormat.md) description goes here.   
 
 
 
 
 
-## Public Fields
+## Public Attributes
 
 ### AAC_DRC_Attenuation_Factor {#string-aac-drc-attenuation-factor}
 
 ```csharp
 
-public static string AAC_DRC_Attenuation_Factor { get; set; }
+public static string AAC_DRC_Attenuation_Factor => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_DRC_Attenuation_Factor());
 
 ```
 
@@ -39,7 +39,7 @@ public static string AAC_DRC_Attenuation_Factor { get; set; }
 
 ```csharp
 
-public static string AAC_DRC_Boost_Factor { get; set; }
+public static string AAC_DRC_Boost_Factor => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_DRC_Boost_Factor());
 
 ```
 
@@ -54,7 +54,7 @@ public static string AAC_DRC_Boost_Factor { get; set; }
 
 ```csharp
 
-public static string AAC_DRC_Effect_Type { get; set; }
+public static string AAC_DRC_Effect_Type => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_DRC_Effect_Type());
 
 ```
 
@@ -69,7 +69,7 @@ public static string AAC_DRC_Effect_Type { get; set; }
 
 ```csharp
 
-public static string AAC_DRC_Heavy_Compression { get; set; }
+public static string AAC_DRC_Heavy_Compression => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_DRC_Heavy_Compression());
 
 ```
 
@@ -84,7 +84,7 @@ public static string AAC_DRC_Heavy_Compression { get; set; }
 
 ```csharp
 
-public static string AAC_DRC_Target_Reference_Level { get; set; }
+public static string AAC_DRC_Target_Reference_Level => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_DRC_Target_Reference_Level());
 
 ```
 
@@ -99,7 +99,7 @@ public static string AAC_DRC_Target_Reference_Level { get; set; }
 
 ```csharp
 
-public static string AAC_Encoded_Target_Level { get; set; }
+public static string AAC_Encoded_Target_Level => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_Encoded_Target_Level());
 
 ```
 
@@ -114,7 +114,7 @@ public static string AAC_Encoded_Target_Level { get; set; }
 
 ```csharp
 
-public static string AAC_Max_Output_Channel_Count { get; set; }
+public static string AAC_Max_Output_Channel_Count => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_Max_Output_Channel_Count());
 
 ```
 
@@ -129,7 +129,7 @@ public static string AAC_Max_Output_Channel_Count { get; set; }
 
 ```csharp
 
-public static string AAC_Profile { get; set; }
+public static string AAC_Profile => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_Profile());
 
 ```
 
@@ -144,7 +144,7 @@ public static string AAC_Profile { get; set; }
 
 ```csharp
 
-public static string AAC_SBR_Mode { get; set; }
+public static string AAC_SBR_Mode => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_AAC_SBR_Mode());
 
 ```
 
@@ -159,7 +159,7 @@ public static string AAC_SBR_Mode { get; set; }
 
 ```csharp
 
-public static string Album { get; set; }
+public static string Album => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Album());
 
 ```
 
@@ -174,7 +174,7 @@ public static string Album { get; set; }
 
 ```csharp
 
-public static string Albumart { get; set; }
+public static string Albumart => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Albumart());
 
 ```
 
@@ -189,7 +189,7 @@ public static string Albumart { get; set; }
 
 ```csharp
 
-public static string Albumartist { get; set; }
+public static string Albumartist => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Albumartist());
 
 ```
 
@@ -204,7 +204,7 @@ public static string Albumartist { get; set; }
 
 ```csharp
 
-public static string Artist { get; set; }
+public static string Artist => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Artist());
 
 ```
 
@@ -219,7 +219,7 @@ public static string Artist { get; set; }
 
 ```csharp
 
-public static string Audio_Presentation_Info { get; set; }
+public static string Audio_Presentation_Info => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Audio_Presentation_Info());
 
 ```
 
@@ -234,7 +234,7 @@ public static string Audio_Presentation_Info { get; set; }
 
 ```csharp
 
-public static string Audio_Presentation_Presentation_Id { get; set; }
+public static string Audio_Presentation_Presentation_Id => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Audio_Presentation_Presentation_Id());
 
 ```
 
@@ -249,7 +249,7 @@ public static string Audio_Presentation_Presentation_Id { get; set; }
 
 ```csharp
 
-public static string Audio_Presentation_Program_Id { get; set; }
+public static string Audio_Presentation_Program_Id => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Audio_Presentation_Program_Id());
 
 ```
 
@@ -264,7 +264,7 @@ public static string Audio_Presentation_Program_Id { get; set; }
 
 ```csharp
 
-public static string Audio_Session_Id { get; set; }
+public static string Audio_Session_Id => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Audio_Session_Id());
 
 ```
 
@@ -279,7 +279,7 @@ public static string Audio_Session_Id { get; set; }
 
 ```csharp
 
-public static string Author { get; set; }
+public static string Author => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Author());
 
 ```
 
@@ -294,7 +294,7 @@ public static string Author { get; set; }
 
 ```csharp
 
-public static string Bit_Rate { get; set; }
+public static string Bit_Rate => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Bit_Rate());
 
 ```
 
@@ -309,7 +309,7 @@ public static string Bit_Rate { get; set; }
 
 ```csharp
 
-public static string Bit_Rate_Mode { get; set; }
+public static string Bit_Rate_Mode => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Bit_Rate_Mode());
 
 ```
 
@@ -324,7 +324,7 @@ public static string Bit_Rate_Mode { get; set; }
 
 ```csharp
 
-public static string Bits_Per_Sample { get; set; }
+public static string Bits_Per_Sample => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Bits_Per_Sample());
 
 ```
 
@@ -339,7 +339,7 @@ public static string Bits_Per_Sample { get; set; }
 
 ```csharp
 
-public static string CSD { get; set; }
+public static string CSD => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_CSD());
 
 ```
 
@@ -354,7 +354,7 @@ public static string CSD { get; set; }
 
 ```csharp
 
-public static string CSD0 { get; set; }
+public static string CSD0 => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_CSD0());
 
 ```
 
@@ -369,7 +369,7 @@ public static string CSD0 { get; set; }
 
 ```csharp
 
-public static string CSD1 { get; set; }
+public static string CSD1 => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_CSD1());
 
 ```
 
@@ -384,7 +384,7 @@ public static string CSD1 { get; set; }
 
 ```csharp
 
-public static string CSD2 { get; set; }
+public static string CSD2 => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_CSD2());
 
 ```
 
@@ -399,7 +399,7 @@ public static string CSD2 { get; set; }
 
 ```csharp
 
-public static string CSD_Avc { get; set; }
+public static string CSD_Avc => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_CSD_Avc());
 
 ```
 
@@ -414,7 +414,7 @@ public static string CSD_Avc { get; set; }
 
 ```csharp
 
-public static string CSD_Hevc { get; set; }
+public static string CSD_Hevc => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_CSD_Hevc());
 
 ```
 
@@ -429,7 +429,7 @@ public static string CSD_Hevc { get; set; }
 
 ```csharp
 
-public static string Ca_Private_Data { get; set; }
+public static string Ca_Private_Data => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Ca_Private_Data());
 
 ```
 
@@ -444,7 +444,7 @@ public static string Ca_Private_Data { get; set; }
 
 ```csharp
 
-public static string Ca_Session_Id { get; set; }
+public static string Ca_Session_Id => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Ca_Session_Id());
 
 ```
 
@@ -459,7 +459,7 @@ public static string Ca_Session_Id { get; set; }
 
 ```csharp
 
-public static string Ca_System_Id { get; set; }
+public static string Ca_System_Id => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Ca_System_Id());
 
 ```
 
@@ -474,7 +474,7 @@ public static string Ca_System_Id { get; set; }
 
 ```csharp
 
-public static string Capture_Rate { get; set; }
+public static string Capture_Rate => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Capture_Rate());
 
 ```
 
@@ -489,7 +489,7 @@ public static string Capture_Rate { get; set; }
 
 ```csharp
 
-public static string Cdtracknumber { get; set; }
+public static string Cdtracknumber => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Cdtracknumber());
 
 ```
 
@@ -504,7 +504,7 @@ public static string Cdtracknumber { get; set; }
 
 ```csharp
 
-public static string Channel_Count { get; set; }
+public static string Channel_Count => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Channel_Count());
 
 ```
 
@@ -519,7 +519,7 @@ public static string Channel_Count { get; set; }
 
 ```csharp
 
-public static string Channel_Mask { get; set; }
+public static string Channel_Mask => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Channel_Mask());
 
 ```
 
@@ -534,7 +534,7 @@ public static string Channel_Mask { get; set; }
 
 ```csharp
 
-public static string Color_Format { get; set; }
+public static string Color_Format => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Color_Format());
 
 ```
 
@@ -549,7 +549,7 @@ public static string Color_Format { get; set; }
 
 ```csharp
 
-public static string Color_Range { get; set; }
+public static string Color_Range => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Color_Range());
 
 ```
 
@@ -564,7 +564,7 @@ public static string Color_Range { get; set; }
 
 ```csharp
 
-public static string Color_Standard { get; set; }
+public static string Color_Standard => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Color_Standard());
 
 ```
 
@@ -579,7 +579,7 @@ public static string Color_Standard { get; set; }
 
 ```csharp
 
-public static string Color_Transfer { get; set; }
+public static string Color_Transfer => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Color_Transfer());
 
 ```
 
@@ -594,7 +594,7 @@ public static string Color_Transfer { get; set; }
 
 ```csharp
 
-public static string Compilation { get; set; }
+public static string Compilation => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Compilation());
 
 ```
 
@@ -609,7 +609,7 @@ public static string Compilation { get; set; }
 
 ```csharp
 
-public static string Complexity { get; set; }
+public static string Complexity => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Complexity());
 
 ```
 
@@ -624,7 +624,7 @@ public static string Complexity { get; set; }
 
 ```csharp
 
-public static string Composer { get; set; }
+public static string Composer => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Composer());
 
 ```
 
@@ -639,7 +639,7 @@ public static string Composer { get; set; }
 
 ```csharp
 
-public static string Create_Input_Surface_Suspended { get; set; }
+public static string Create_Input_Surface_Suspended => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Create_Input_Surface_Suspended());
 
 ```
 
@@ -654,7 +654,7 @@ public static string Create_Input_Surface_Suspended { get; set; }
 
 ```csharp
 
-public static string Crop_Bottom { get; set; }
+public static string Crop_Bottom => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crop_Bottom());
 
 ```
 
@@ -669,7 +669,7 @@ public static string Crop_Bottom { get; set; }
 
 ```csharp
 
-public static string Crop_Left { get; set; }
+public static string Crop_Left => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crop_Left());
 
 ```
 
@@ -684,7 +684,7 @@ public static string Crop_Left { get; set; }
 
 ```csharp
 
-public static string Crop_Right { get; set; }
+public static string Crop_Right => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crop_Right());
 
 ```
 
@@ -699,7 +699,7 @@ public static string Crop_Right { get; set; }
 
 ```csharp
 
-public static string Crop_Top { get; set; }
+public static string Crop_Top => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crop_Top());
 
 ```
 
@@ -714,7 +714,7 @@ public static string Crop_Top { get; set; }
 
 ```csharp
 
-public static string Crypto_Default_Iv_Size { get; set; }
+public static string Crypto_Default_Iv_Size => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Default_Iv_Size());
 
 ```
 
@@ -729,7 +729,7 @@ public static string Crypto_Default_Iv_Size { get; set; }
 
 ```csharp
 
-public static string Crypto_Encrypted_Byte_Block { get; set; }
+public static string Crypto_Encrypted_Byte_Block => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Encrypted_Byte_Block());
 
 ```
 
@@ -744,7 +744,7 @@ public static string Crypto_Encrypted_Byte_Block { get; set; }
 
 ```csharp
 
-public static string Crypto_Encrypted_Sizes { get; set; }
+public static string Crypto_Encrypted_Sizes => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Encrypted_Sizes());
 
 ```
 
@@ -759,7 +759,7 @@ public static string Crypto_Encrypted_Sizes { get; set; }
 
 ```csharp
 
-public static string Crypto_Iv { get; set; }
+public static string Crypto_Iv => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Iv());
 
 ```
 
@@ -774,7 +774,7 @@ public static string Crypto_Iv { get; set; }
 
 ```csharp
 
-public static string Crypto_Key { get; set; }
+public static string Crypto_Key => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Key());
 
 ```
 
@@ -789,7 +789,7 @@ public static string Crypto_Key { get; set; }
 
 ```csharp
 
-public static string Crypto_Mode { get; set; }
+public static string Crypto_Mode => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Mode());
 
 ```
 
@@ -804,7 +804,7 @@ public static string Crypto_Mode { get; set; }
 
 ```csharp
 
-public static string Crypto_Plain_Sizes { get; set; }
+public static string Crypto_Plain_Sizes => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Plain_Sizes());
 
 ```
 
@@ -819,7 +819,7 @@ public static string Crypto_Plain_Sizes { get; set; }
 
 ```csharp
 
-public static string Crypto_Skip_Byte_Block { get; set; }
+public static string Crypto_Skip_Byte_Block => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Crypto_Skip_Byte_Block());
 
 ```
 
@@ -834,7 +834,7 @@ public static string Crypto_Skip_Byte_Block { get; set; }
 
 ```csharp
 
-public static string D263 { get; set; }
+public static string D263 => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_D263());
 
 ```
 
@@ -849,7 +849,7 @@ public static string D263 { get; set; }
 
 ```csharp
 
-public static string Date { get; set; }
+public static string Date => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Date());
 
 ```
 
@@ -864,7 +864,7 @@ public static string Date { get; set; }
 
 ```csharp
 
-public static string Discnumber { get; set; }
+public static string Discnumber => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Discnumber());
 
 ```
 
@@ -879,7 +879,7 @@ public static string Discnumber { get; set; }
 
 ```csharp
 
-public static string Display_Crop { get; set; }
+public static string Display_Crop => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Display_Crop());
 
 ```
 
@@ -894,7 +894,7 @@ public static string Display_Crop { get; set; }
 
 ```csharp
 
-public static string Display_Height { get; set; }
+public static string Display_Height => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Display_Height());
 
 ```
 
@@ -909,7 +909,7 @@ public static string Display_Height { get; set; }
 
 ```csharp
 
-public static string Display_Width { get; set; }
+public static string Display_Width => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Display_Width());
 
 ```
 
@@ -924,7 +924,7 @@ public static string Display_Width { get; set; }
 
 ```csharp
 
-public static string Duration { get; set; }
+public static string Duration => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Duration());
 
 ```
 
@@ -939,7 +939,7 @@ public static string Duration { get; set; }
 
 ```csharp
 
-public static string Encoder_Delay { get; set; }
+public static string Encoder_Delay => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Encoder_Delay());
 
 ```
 
@@ -954,7 +954,7 @@ public static string Encoder_Delay { get; set; }
 
 ```csharp
 
-public static string Encoder_Padding { get; set; }
+public static string Encoder_Padding => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Encoder_Padding());
 
 ```
 
@@ -969,7 +969,7 @@ public static string Encoder_Padding { get; set; }
 
 ```csharp
 
-public static string Esds { get; set; }
+public static string Esds => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Esds());
 
 ```
 
@@ -984,7 +984,7 @@ public static string Esds { get; set; }
 
 ```csharp
 
-public static string Exif_Offset { get; set; }
+public static string Exif_Offset => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Exif_Offset());
 
 ```
 
@@ -999,7 +999,7 @@ public static string Exif_Offset { get; set; }
 
 ```csharp
 
-public static string Exif_Size { get; set; }
+public static string Exif_Size => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Exif_Size());
 
 ```
 
@@ -1014,7 +1014,7 @@ public static string Exif_Size { get; set; }
 
 ```csharp
 
-public static string FLAC_Compression_Level { get; set; }
+public static string FLAC_Compression_Level => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_FLAC_Compression_Level());
 
 ```
 
@@ -1029,7 +1029,7 @@ public static string FLAC_Compression_Level { get; set; }
 
 ```csharp
 
-public static string Feature_ { get; set; }
+public static string Feature_ => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Feature_());
 
 ```
 
@@ -1044,7 +1044,7 @@ public static string Feature_ { get; set; }
 
 ```csharp
 
-public static string Frame_Count { get; set; }
+public static string Frame_Count => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Frame_Count());
 
 ```
 
@@ -1059,7 +1059,7 @@ public static string Frame_Count { get; set; }
 
 ```csharp
 
-public static string Frame_Rate { get; set; }
+public static string Frame_Rate => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Frame_Rate());
 
 ```
 
@@ -1074,7 +1074,7 @@ public static string Frame_Rate { get; set; }
 
 ```csharp
 
-public static string Genre { get; set; }
+public static string Genre => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Genre());
 
 ```
 
@@ -1089,7 +1089,7 @@ public static string Genre { get; set; }
 
 ```csharp
 
-public static string Grid_Columns { get; set; }
+public static string Grid_Columns => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Grid_Columns());
 
 ```
 
@@ -1104,7 +1104,7 @@ public static string Grid_Columns { get; set; }
 
 ```csharp
 
-public static string Grid_Rows { get; set; }
+public static string Grid_Rows => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Grid_Rows());
 
 ```
 
@@ -1119,7 +1119,7 @@ public static string Grid_Rows { get; set; }
 
 ```csharp
 
-public static string HDR_Static_Info { get; set; }
+public static string HDR_Static_Info => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_HDR_Static_Info());
 
 ```
 
@@ -1134,7 +1134,7 @@ public static string HDR_Static_Info { get; set; }
 
 ```csharp
 
-public static string Haptic_Channel_Count { get; set; }
+public static string Haptic_Channel_Count => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Haptic_Channel_Count());
 
 ```
 
@@ -1149,7 +1149,7 @@ public static string Haptic_Channel_Count { get; set; }
 
 ```csharp
 
-public static string Hdr10_Plus_Info { get; set; }
+public static string Hdr10_Plus_Info => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Hdr10_Plus_Info());
 
 ```
 
@@ -1164,7 +1164,7 @@ public static string Hdr10_Plus_Info { get; set; }
 
 ```csharp
 
-public static string Height { get; set; }
+public static string Height => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Height());
 
 ```
 
@@ -1179,7 +1179,7 @@ public static string Height { get; set; }
 
 ```csharp
 
-public static string I_Frame_Interval { get; set; }
+public static string I_Frame_Interval => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_I_Frame_Interval());
 
 ```
 
@@ -1194,7 +1194,7 @@ public static string I_Frame_Interval { get; set; }
 
 ```csharp
 
-public static string Icc_Profile { get; set; }
+public static string Icc_Profile => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Icc_Profile());
 
 ```
 
@@ -1209,7 +1209,7 @@ public static string Icc_Profile { get; set; }
 
 ```csharp
 
-public static string Intra_Refresh_AIR_Num { get; set; }
+public static string Intra_Refresh_AIR_Num => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Intra_Refresh_AIR_Num());
 
 ```
 
@@ -1224,7 +1224,7 @@ public static string Intra_Refresh_AIR_Num { get; set; }
 
 ```csharp
 
-public static string Intra_Refresh_AIR_Ref { get; set; }
+public static string Intra_Refresh_AIR_Ref => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Intra_Refresh_AIR_Ref());
 
 ```
 
@@ -1239,7 +1239,7 @@ public static string Intra_Refresh_AIR_Ref { get; set; }
 
 ```csharp
 
-public static string Intra_Refresh_CIR_Num { get; set; }
+public static string Intra_Refresh_CIR_Num => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Intra_Refresh_CIR_Num());
 
 ```
 
@@ -1254,7 +1254,7 @@ public static string Intra_Refresh_CIR_Num { get; set; }
 
 ```csharp
 
-public static string Intra_Refresh_Mode { get; set; }
+public static string Intra_Refresh_Mode => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Intra_Refresh_Mode());
 
 ```
 
@@ -1269,7 +1269,7 @@ public static string Intra_Refresh_Mode { get; set; }
 
 ```csharp
 
-public static string Intra_Refresh_Period { get; set; }
+public static string Intra_Refresh_Period => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Intra_Refresh_Period());
 
 ```
 
@@ -1284,7 +1284,7 @@ public static string Intra_Refresh_Period { get; set; }
 
 ```csharp
 
-public static string Is_ADTS { get; set; }
+public static string Is_ADTS => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Is_ADTS());
 
 ```
 
@@ -1299,7 +1299,7 @@ public static string Is_ADTS { get; set; }
 
 ```csharp
 
-public static string Is_Autoselect { get; set; }
+public static string Is_Autoselect => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Is_Autoselect());
 
 ```
 
@@ -1314,7 +1314,7 @@ public static string Is_Autoselect { get; set; }
 
 ```csharp
 
-public static string Is_Default { get; set; }
+public static string Is_Default => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Is_Default());
 
 ```
 
@@ -1329,7 +1329,7 @@ public static string Is_Default { get; set; }
 
 ```csharp
 
-public static string Is_Forced_Subtitle { get; set; }
+public static string Is_Forced_Subtitle => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Is_Forced_Subtitle());
 
 ```
 
@@ -1344,7 +1344,7 @@ public static string Is_Forced_Subtitle { get; set; }
 
 ```csharp
 
-public static string Is_Sync_Frame { get; set; }
+public static string Is_Sync_Frame => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Is_Sync_Frame());
 
 ```
 
@@ -1359,7 +1359,7 @@ public static string Is_Sync_Frame { get; set; }
 
 ```csharp
 
-public static string Is_Timed_Text { get; set; }
+public static string Is_Timed_Text => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Is_Timed_Text());
 
 ```
 
@@ -1374,7 +1374,7 @@ public static string Is_Timed_Text { get; set; }
 
 ```csharp
 
-public static string Language { get; set; }
+public static string Language => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Language());
 
 ```
 
@@ -1389,7 +1389,7 @@ public static string Language { get; set; }
 
 ```csharp
 
-public static string Latency { get; set; }
+public static string Latency => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Latency());
 
 ```
 
@@ -1404,7 +1404,7 @@ public static string Latency { get; set; }
 
 ```csharp
 
-public static string Level { get; set; }
+public static string Level => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Level());
 
 ```
 
@@ -1419,7 +1419,7 @@ public static string Level { get; set; }
 
 ```csharp
 
-public static string Location { get; set; }
+public static string Location => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Location());
 
 ```
 
@@ -1434,7 +1434,7 @@ public static string Location { get; set; }
 
 ```csharp
 
-public static string Loop { get; set; }
+public static string Loop => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Loop());
 
 ```
 
@@ -1449,7 +1449,7 @@ public static string Loop { get; set; }
 
 ```csharp
 
-public static string Lyricist { get; set; }
+public static string Lyricist => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Lyricist());
 
 ```
 
@@ -1464,7 +1464,7 @@ public static string Lyricist { get; set; }
 
 ```csharp
 
-public static string Manufacturer { get; set; }
+public static string Manufacturer => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Manufacturer());
 
 ```
 
@@ -1479,7 +1479,7 @@ public static string Manufacturer { get; set; }
 
 ```csharp
 
-public static string Max_B_Frames { get; set; }
+public static string Max_B_Frames => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Max_B_Frames());
 
 ```
 
@@ -1494,7 +1494,7 @@ public static string Max_B_Frames { get; set; }
 
 ```csharp
 
-public static string Max_Bit_Rate { get; set; }
+public static string Max_Bit_Rate => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Max_Bit_Rate());
 
 ```
 
@@ -1509,7 +1509,7 @@ public static string Max_Bit_Rate { get; set; }
 
 ```csharp
 
-public static string Max_Fps_To_Encoder { get; set; }
+public static string Max_Fps_To_Encoder => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Max_Fps_To_Encoder());
 
 ```
 
@@ -1524,7 +1524,7 @@ public static string Max_Fps_To_Encoder { get; set; }
 
 ```csharp
 
-public static string Max_Height { get; set; }
+public static string Max_Height => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Max_Height());
 
 ```
 
@@ -1539,7 +1539,7 @@ public static string Max_Height { get; set; }
 
 ```csharp
 
-public static string Max_Input_Size { get; set; }
+public static string Max_Input_Size => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Max_Input_Size());
 
 ```
 
@@ -1554,7 +1554,7 @@ public static string Max_Input_Size { get; set; }
 
 ```csharp
 
-public static string Max_Pts_Gap_To_Encoder { get; set; }
+public static string Max_Pts_Gap_To_Encoder => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Max_Pts_Gap_To_Encoder());
 
 ```
 
@@ -1569,7 +1569,7 @@ public static string Max_Pts_Gap_To_Encoder { get; set; }
 
 ```csharp
 
-public static string Max_Width { get; set; }
+public static string Max_Width => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Max_Width());
 
 ```
 
@@ -1584,7 +1584,7 @@ public static string Max_Width { get; set; }
 
 ```csharp
 
-public static string Mime { get; set; }
+public static string Mime => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Mime());
 
 ```
 
@@ -1599,7 +1599,7 @@ public static string Mime { get; set; }
 
 ```csharp
 
-public static string Mpeg2_Stream_Header { get; set; }
+public static string Mpeg2_Stream_Header => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Mpeg2_Stream_Header());
 
 ```
 
@@ -1614,7 +1614,7 @@ public static string Mpeg2_Stream_Header { get; set; }
 
 ```csharp
 
-public static string Mpeg_User_Data { get; set; }
+public static string Mpeg_User_Data => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Mpeg_User_Data());
 
 ```
 
@@ -1629,7 +1629,7 @@ public static string Mpeg_User_Data { get; set; }
 
 ```csharp
 
-public static string Operating_Rate { get; set; }
+public static string Operating_Rate => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Operating_Rate());
 
 ```
 
@@ -1644,7 +1644,7 @@ public static string Operating_Rate { get; set; }
 
 ```csharp
 
-public static string Output_Reorder_Depth { get; set; }
+public static string Output_Reorder_Depth => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Output_Reorder_Depth());
 
 ```
 
@@ -1659,7 +1659,7 @@ public static string Output_Reorder_Depth { get; set; }
 
 ```csharp
 
-public static string PCM_Big_Endian { get; set; }
+public static string PCM_Big_Endian => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_PCM_Big_Endian());
 
 ```
 
@@ -1674,7 +1674,7 @@ public static string PCM_Big_Endian { get; set; }
 
 ```csharp
 
-public static string PCM_Encoding { get; set; }
+public static string PCM_Encoding => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_PCM_Encoding());
 
 ```
 
@@ -1689,7 +1689,7 @@ public static string PCM_Encoding { get; set; }
 
 ```csharp
 
-public static string Parameter_Drop_After { get; set; }
+public static string Parameter_Drop_After => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Parameter_Drop_After());
 
 ```
 
@@ -1704,7 +1704,7 @@ public static string Parameter_Drop_After { get; set; }
 
 ```csharp
 
-public static string Parameter_Drop_Before { get; set; }
+public static string Parameter_Drop_Before => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Parameter_Drop_Before());
 
 ```
 
@@ -1719,7 +1719,7 @@ public static string Parameter_Drop_Before { get; set; }
 
 ```csharp
 
-public static string Parameter_Offset_Time { get; set; }
+public static string Parameter_Offset_Time => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Parameter_Offset_Time());
 
 ```
 
@@ -1734,7 +1734,7 @@ public static string Parameter_Offset_Time { get; set; }
 
 ```csharp
 
-public static string Parameter_Request_Sync_Frame { get; set; }
+public static string Parameter_Request_Sync_Frame => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Parameter_Request_Sync_Frame());
 
 ```
 
@@ -1749,7 +1749,7 @@ public static string Parameter_Request_Sync_Frame { get; set; }
 
 ```csharp
 
-public static string Parameter_Set_Suspend { get; set; }
+public static string Parameter_Set_Suspend => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Parameter_Set_Suspend());
 
 ```
 
@@ -1764,7 +1764,7 @@ public static string Parameter_Set_Suspend { get; set; }
 
 ```csharp
 
-public static string Parameter_Set_Suspend_Time { get; set; }
+public static string Parameter_Set_Suspend_Time => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Parameter_Set_Suspend_Time());
 
 ```
 
@@ -1779,7 +1779,7 @@ public static string Parameter_Set_Suspend_Time { get; set; }
 
 ```csharp
 
-public static string Parameter_Video_Bitrate { get; set; }
+public static string Parameter_Video_Bitrate => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Parameter_Video_Bitrate());
 
 ```
 
@@ -1794,7 +1794,7 @@ public static string Parameter_Video_Bitrate { get; set; }
 
 ```csharp
 
-public static string Prepend_Header_To_Sync_Frames { get; set; }
+public static string Prepend_Header_To_Sync_Frames => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Prepend_Header_To_Sync_Frames());
 
 ```
 
@@ -1809,7 +1809,7 @@ public static string Prepend_Header_To_Sync_Frames { get; set; }
 
 ```csharp
 
-public static string Priority { get; set; }
+public static string Priority => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Priority());
 
 ```
 
@@ -1824,7 +1824,7 @@ public static string Priority { get; set; }
 
 ```csharp
 
-public static string Profile { get; set; }
+public static string Profile => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Profile());
 
 ```
 
@@ -1839,7 +1839,7 @@ public static string Profile { get; set; }
 
 ```csharp
 
-public static string Pssh { get; set; }
+public static string Pssh => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Pssh());
 
 ```
 
@@ -1854,7 +1854,7 @@ public static string Pssh { get; set; }
 
 ```csharp
 
-public static string Push_Blank_Buffers_On_Stop { get; set; }
+public static string Push_Blank_Buffers_On_Stop => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Push_Blank_Buffers_On_Stop());
 
 ```
 
@@ -1869,7 +1869,7 @@ public static string Push_Blank_Buffers_On_Stop { get; set; }
 
 ```csharp
 
-public static string Quality { get; set; }
+public static string Quality => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Quality());
 
 ```
 
@@ -1884,7 +1884,7 @@ public static string Quality { get; set; }
 
 ```csharp
 
-public static string Repeat_Previous_Frame_After { get; set; }
+public static string Repeat_Previous_Frame_After => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Repeat_Previous_Frame_After());
 
 ```
 
@@ -1899,7 +1899,7 @@ public static string Repeat_Previous_Frame_After { get; set; }
 
 ```csharp
 
-public static string Rotation { get; set; }
+public static string Rotation => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Rotation());
 
 ```
 
@@ -1914,7 +1914,7 @@ public static string Rotation { get; set; }
 
 ```csharp
 
-public static string Sample_Rate { get; set; }
+public static string Sample_Rate => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Sample_Rate());
 
 ```
 
@@ -1929,7 +1929,7 @@ public static string Sample_Rate { get; set; }
 
 ```csharp
 
-public static string Sar_Height { get; set; }
+public static string Sar_Height => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Sar_Height());
 
 ```
 
@@ -1944,7 +1944,7 @@ public static string Sar_Height { get; set; }
 
 ```csharp
 
-public static string Sar_Width { get; set; }
+public static string Sar_Width => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Sar_Width());
 
 ```
 
@@ -1959,7 +1959,7 @@ public static string Sar_Width { get; set; }
 
 ```csharp
 
-public static string Sei { get; set; }
+public static string Sei => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Sei());
 
 ```
 
@@ -1974,7 +1974,7 @@ public static string Sei { get; set; }
 
 ```csharp
 
-public static string Slice_Height { get; set; }
+public static string Slice_Height => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Slice_Height());
 
 ```
 
@@ -1989,7 +1989,7 @@ public static string Slice_Height { get; set; }
 
 ```csharp
 
-public static string Stride { get; set; }
+public static string Stride => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Stride());
 
 ```
 
@@ -2004,7 +2004,7 @@ public static string Stride { get; set; }
 
 ```csharp
 
-public static string Target_Time { get; set; }
+public static string Target_Time => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Target_Time());
 
 ```
 
@@ -2019,7 +2019,7 @@ public static string Target_Time { get; set; }
 
 ```csharp
 
-public static string Temporal_Layer_Count { get; set; }
+public static string Temporal_Layer_Count => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Temporal_Layer_Count());
 
 ```
 
@@ -2034,7 +2034,7 @@ public static string Temporal_Layer_Count { get; set; }
 
 ```csharp
 
-public static string Temporal_Layer_Id { get; set; }
+public static string Temporal_Layer_Id => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Temporal_Layer_Id());
 
 ```
 
@@ -2049,7 +2049,7 @@ public static string Temporal_Layer_Id { get; set; }
 
 ```csharp
 
-public static string Temporal_Layering { get; set; }
+public static string Temporal_Layering => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Temporal_Layering());
 
 ```
 
@@ -2064,7 +2064,7 @@ public static string Temporal_Layering { get; set; }
 
 ```csharp
 
-public static string Text_Format_Data { get; set; }
+public static string Text_Format_Data => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Text_Format_Data());
 
 ```
 
@@ -2079,7 +2079,7 @@ public static string Text_Format_Data { get; set; }
 
 ```csharp
 
-public static string Thumbnail_CSD_Hevc { get; set; }
+public static string Thumbnail_CSD_Hevc => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Thumbnail_CSD_Hevc());
 
 ```
 
@@ -2094,7 +2094,7 @@ public static string Thumbnail_CSD_Hevc { get; set; }
 
 ```csharp
 
-public static string Thumbnail_Height { get; set; }
+public static string Thumbnail_Height => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Thumbnail_Height());
 
 ```
 
@@ -2109,7 +2109,7 @@ public static string Thumbnail_Height { get; set; }
 
 ```csharp
 
-public static string Thumbnail_Time { get; set; }
+public static string Thumbnail_Time => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Thumbnail_Time());
 
 ```
 
@@ -2124,7 +2124,7 @@ public static string Thumbnail_Time { get; set; }
 
 ```csharp
 
-public static string Thumbnail_Width { get; set; }
+public static string Thumbnail_Width => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Thumbnail_Width());
 
 ```
 
@@ -2139,7 +2139,7 @@ public static string Thumbnail_Width { get; set; }
 
 ```csharp
 
-public static string Tile_Height { get; set; }
+public static string Tile_Height => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Tile_Height());
 
 ```
 
@@ -2154,7 +2154,7 @@ public static string Tile_Height { get; set; }
 
 ```csharp
 
-public static string Tile_Width { get; set; }
+public static string Tile_Width => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Tile_Width());
 
 ```
 
@@ -2169,7 +2169,7 @@ public static string Tile_Width { get; set; }
 
 ```csharp
 
-public static string Time_Us { get; set; }
+public static string Time_Us => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Time_Us());
 
 ```
 
@@ -2184,7 +2184,7 @@ public static string Time_Us { get; set; }
 
 ```csharp
 
-public static string Title { get; set; }
+public static string Title => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Title());
 
 ```
 
@@ -2199,7 +2199,7 @@ public static string Title { get; set; }
 
 ```csharp
 
-public static string Track_Id { get; set; }
+public static string Track_Id => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Track_Id());
 
 ```
 
@@ -2214,7 +2214,7 @@ public static string Track_Id { get; set; }
 
 ```csharp
 
-public static string Track_Index { get; set; }
+public static string Track_Index => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Track_Index());
 
 ```
 
@@ -2229,7 +2229,7 @@ public static string Track_Index { get; set; }
 
 ```csharp
 
-public static string Valid_Samples { get; set; }
+public static string Valid_Samples => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Valid_Samples());
 
 ```
 
@@ -2244,7 +2244,7 @@ public static string Valid_Samples { get; set; }
 
 ```csharp
 
-public static string Width { get; set; }
+public static string Width => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Width());
 
 ```
 
@@ -2259,7 +2259,7 @@ public static string Width { get; set; }
 
 ```csharp
 
-public static string Year { get; set; }
+public static string Year => Marshal.PtrToStringAnsi(NativeBindings.MLMediaFormatGetKey_Year());
 
 ```
 

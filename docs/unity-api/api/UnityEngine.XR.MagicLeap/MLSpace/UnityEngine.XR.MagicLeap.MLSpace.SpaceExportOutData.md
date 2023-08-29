@@ -9,7 +9,7 @@ summary: a structure containing information about the exported space.
 
 
 
-A structure containing information about the exported Space.   
+A structure containing information about the exported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md).   
 
 
 
@@ -30,10 +30,10 @@ public static SpaceExportOutData Create()
 
 -----------
 
-### byte[] GetData {#byte-getdata}
+### byte [] GetData {#byte-getdata}
 
 ```csharp
-public static byte[] GetData(
+public static byte [] GetData(
     SpaceExportOutData data
 )
 ```
@@ -43,7 +43,7 @@ public static byte[] GetData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [SpaceExportOutData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported Space. |
+| [SpaceExportOutData](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceExportOutData.md) |data|A structure containing information about the exported [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). |
 
 
 
@@ -56,7 +56,7 @@ public static byte[] GetData(
 
 ### Data {#intptr-data}
 
-Space data. This is binary data and typically does not include a terminating null character. 
+[Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) data. This is binary data and typically does not include a terminating null character. 
 
 ```csharp
 

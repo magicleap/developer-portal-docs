@@ -12,7 +12,7 @@ summary: magicleap device class responsible for updating all trackers when they 
 [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) 
 
 
-[MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.   
+[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.   
 
 
 Inherits from: <br></br>MonoBehaviour
@@ -24,26 +24,11 @@ Inherits from: <br></br>MonoBehaviour
 
 ### GestureSubsystemComponent {#gesturesubsystemcomponent-gesturesubsystemcomponent}
 
-Gets the active XR [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) gestures subsystem. 
+Gets the active XR[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) gestures subsystem. 
 
 ```csharp
 
 public static GestureSubsystemComponent GestureSubsystemComponent { get; set; }
-
-```
-
-
-
-
-
-
------------
-
-### MainThreadId {#int-mainthreadid}
-
-```csharp
-
-public static int MainThreadId { get; set; }
 
 ```
 
@@ -114,7 +99,7 @@ public static bool IsOpenXRLoaderActive()
 
 ### bool IsReady {#bool-isready}
 
-Check if the underlying Unity XR [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) subsystem is initialized. 
+Check if the underlying Unity XR[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized. 
 
 ```csharp
 public static bool IsReady()
@@ -125,7 +110,7 @@ public static bool IsReady()
 
 
 
-**Returns**: Value indicating whether the XR [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) subsystem is initialized.
+**Returns**: Value indicating whether the XR[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) subsystem is initialized.
 
 
 
@@ -241,7 +226,7 @@ public delegate void OnUpdateEventDelegate()
 
 ### void RegisterApplicationFocus {#void-registerapplicationfocus}
 
-Unrgister a [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API application focus callback to be called OnApplicationFocus of this behavior. 
+Unrgister a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application focus callback to be called OnApplicationFocus of this behavior. 
 
 ```csharp
 public static void RegisterApplicationFocus(
@@ -265,7 +250,7 @@ public static void RegisterApplicationFocus(
 
 ### void RegisterApplicationPause {#void-registerapplicationpause}
 
-Unrgister a [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API application pause callback to be called OnApplicationPause of this behavior. 
+Unrgister a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application pause callback to be called OnApplicationPause of this behavior. 
 
 ```csharp
 public static void RegisterApplicationPause(
@@ -289,7 +274,7 @@ public static void RegisterApplicationPause(
 
 ### void RegisterApplicationQuit {#void-registerapplicationquit}
 
-Register a [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API application quit callback to be called on OnApplicationQuit of this behavior. 
+Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application quit callback to be called on OnApplicationQuit of this behavior. 
 
 ```csharp
 public static void RegisterApplicationQuit(
@@ -313,7 +298,7 @@ public static void RegisterApplicationQuit(
 
 ### void RegisterDestroy {#void-registerdestroy}
 
-Register a [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API Update callback to be called on Destroy of this behavior. 
+Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Destroy of this behavior. 
 
 ```csharp
 public static void RegisterDestroy(
@@ -337,7 +322,7 @@ public static void RegisterDestroy(
 
 ### void RegisterEndOfFrameUpdate {#void-registerendofframeupdate}
 
-Register a function to be executed per frame at the end of every frame, after all cameras and GUI is rendered but before displaying the frame on screen. 
+Register a function to be executed per frame at the end of every frame, after all cameras and GUI is rendered but before displaying the frame on screen 
 
 ```csharp
 public static void RegisterEndOfFrameUpdate(
@@ -361,7 +346,7 @@ public static void RegisterEndOfFrameUpdate(
 
 ### void RegisterGestureSubsystem {#void-registergesturesubsystem}
 
-Attempts to register the Unity GestureSubsystem. 
+Attempts to register the Unity [GestureSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/UnityEngine.XR.MagicLeap.GestureSubsystem.md). 
 
 ```csharp
 public static void RegisterGestureSubsystem()
@@ -376,7 +361,7 @@ public static void RegisterGestureSubsystem()
 
 ### void RegisterStart {#void-registerstart}
 
-Register a [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API Update callback to be called on Start of this behavior. 
+Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Start of this behavior. 
 
 ```csharp
 public static void RegisterStart(
@@ -400,7 +385,7 @@ public static void RegisterStart(
 
 ### void RegisterUpdate {#void-registerupdate}
 
-Register a [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API Update callback to be called on Update of this behavior. 
+Register a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback to be called on Update of this behavior. 
 
 ```csharp
 public static void RegisterUpdate(
@@ -424,7 +409,7 @@ public static void RegisterUpdate(
 
 ### void UnregisterApplicationFocus {#void-unregisterapplicationfocus}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API application focus callback. 
+Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application focus callback. 
 
 ```csharp
 public static void UnregisterApplicationFocus(
@@ -448,7 +433,7 @@ public static void UnregisterApplicationFocus(
 
 ### void UnregisterApplicationPause {#void-unregisterapplicationpause}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API application pause callback. 
+Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API application pause callback. 
 
 ```csharp
 public static void UnregisterApplicationPause(
@@ -496,7 +481,7 @@ public static void UnregisterApplicationQuit(
 
 ### void UnregisterDestroy {#void-unregisterdestroy}
 
-Unregister a [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API from being called when OnDestroy for this behavior is called. 
+Unregister a [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API from being called when OnDestroy for this behavior is called. 
 
 ```csharp
 public static void UnregisterDestroy(
@@ -520,7 +505,7 @@ public static void UnregisterDestroy(
 
 ### void UnregisterEndOfFrameUpdate {#void-unregisterendofframeupdate}
 
-Unregister a function to no longer be executed at the end of the frame. 
+Unregister a function to no longer be executed at the end of the frame 
 
 ```csharp
 public static void UnregisterEndOfFrameUpdate(
@@ -544,7 +529,7 @@ public static void UnregisterEndOfFrameUpdate(
 
 ### void UnregisterGestureSubsystem {#void-unregistergesturesubsystem}
 
-Attempts to unregister the GestureSubsystem. 
+Attempts to unregister the [GestureSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/UnityEngine.XR.MagicLeap.GestureSubsystem.md). 
 
 ```csharp
 public static void UnregisterGestureSubsystem()
@@ -559,7 +544,7 @@ public static void UnregisterGestureSubsystem()
 
 ### void UnregisterStart {#void-unregisterstart}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API Update callback. 
+Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback. 
 
 ```csharp
 public static void UnregisterStart(
@@ -583,7 +568,7 @@ public static void UnregisterStart(
 
 ### void UnregisterUpdate {#void-unregisterupdate}
 
-Unregister a previously registered [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) API Update callback. 
+Unregister a previously registered [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) API Update callback. 
 
 ```csharp
 public static void UnregisterUpdate(
@@ -675,7 +660,7 @@ Hardcoded value with the default near clip plane distance to use.
 
 ```csharp
 
-public static const float DefaultNearClipDistance = 0.37f;
+public const float DefaultNearClipDistance = 0.37f;
 
 ```
 
@@ -688,11 +673,26 @@ public static const float DefaultNearClipDistance = 0.37f;
 
 ### MagicLeapDeviceName {#const-string-magicleapdevicename}
 
-[MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) platform Unity name. 
+[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) platform Unity name. 
 
 ```csharp
 
-public static const string MagicLeapDeviceName = "MagicLeap";
+public const string MagicLeapDeviceName = "MagicLeap";
+
+```
+
+
+
+
+
+
+-----------
+
+### MainThreadId {#int-mainthreadid}
+
+```csharp
+
+public static int MainThreadId => Instance.mainThreadId;
 
 ```
 
@@ -709,7 +709,7 @@ Hardcoded value approximating minimum near clip plane distance allowed by the pl
 
 ```csharp
 
-public static const float MinimumNearClipDistance = 0.37f;
+public const float MinimumNearClipDistance = 0.37f;
 
 ```
 

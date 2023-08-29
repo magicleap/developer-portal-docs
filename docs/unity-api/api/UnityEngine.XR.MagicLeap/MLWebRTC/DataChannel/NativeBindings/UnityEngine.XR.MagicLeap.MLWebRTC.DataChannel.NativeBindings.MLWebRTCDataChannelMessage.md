@@ -9,7 +9,7 @@ summary: the native representation of the mlwebrtc data channel message.
 
 
 
-The native representation of the MLWebRTC data channel message.   
+The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) data channel message.   
 
 
 
@@ -19,7 +19,7 @@ The native representation of the MLWebRTC data channel message.
 
 ### [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) Create {#mlwebrtcdatachannelmessage-create}
 
-Creates an initialized MLWebRTCDataChannelMessage object. 
+Creates an initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object. 
 
 ```csharp
 public static MLWebRTCDataChannelMessage Create(
@@ -39,7 +39,7 @@ public static MLWebRTCDataChannelMessage Create(
 
 
 
-**Returns**: An initialized MLWebRTCDataChannelMessage object.
+**Returns**: An initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object.
 
 
 
@@ -47,11 +47,11 @@ public static MLWebRTCDataChannelMessage Create(
 
 ### [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) Create< T > {#mlwebrtcdatachannelmessage-create-t-}
 
-Creates an initialized MLWebRTCDataChannelMessage object. 
+Creates an initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object. 
 
 ```csharp
 public static MLWebRTCDataChannelMessage Create< T >(
-    T[] message
+    T [] message
 )
 ```
 
@@ -60,14 +60,14 @@ public static MLWebRTCDataChannelMessage Create< T >(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| T[] |message|The byte array message to send.|
+| T [] |message|The byte array message to send.|
 
 
 
 
 
 
-**Returns**: An initialized MLWebRTCDataChannelMessage object.
+**Returns**: An initialized [MLWebRTCDataChannelMessage](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.MLWebRTCDataChannelMessage.md) object.
 
 
 

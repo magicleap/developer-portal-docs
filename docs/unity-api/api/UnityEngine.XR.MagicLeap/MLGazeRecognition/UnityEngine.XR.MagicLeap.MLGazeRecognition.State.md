@@ -71,7 +71,7 @@ public readonly Behavior Behavior;
 
 ### DirectionRadial {#readonly-float-directionradial}
 
-Metadata field for direction of the current movement, in radial degrees (0-360). Direction field applies to saccades and pursuit, otherwise NaN. 
+Metadata field for direction of the current movement, in radial degrees (0-360). Direction field applies to saccades and pursuit, otherwise NaN 
 
 ```csharp
 
@@ -88,7 +88,7 @@ public readonly float DirectionRadial;
 
 ### DurationS {#readonly-float-durations}
 
-Metadata field for duration of the current behavior (gaze type), in seconds. Duration applies to all gaze types. 
+Metadata field for duration of the current behavior (gaze type), in seconds. Duration applies to all gaze types 
 
 ```csharp
 
@@ -125,7 +125,7 @@ public readonly Error Error;
 
 ### EyeLeft {#readonly-vector2-eyeleft}
 
-A vector for eye-in-skull position of left eye, even if right eye is closed. 
+A vector for eye-in-skull position of left eye, even if right eye is closed 
 
 ```csharp
 
@@ -186,7 +186,7 @@ public readonly MLTime TimeStamp;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type.  |
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.  |
 
 
 
@@ -196,7 +196,7 @@ public readonly MLTime TimeStamp;
 
 ### VelocityDegps {#readonly-float-velocitydegps}
 
-Metadata field for velocity of the current movement, in degrees per second. Velocity field applies to saccades and pursuit, otherwise NaN. 
+Metadata field for velocity of the current movement, in degrees per second. Velocity field applies to saccades and pursuit, otherwise NaN 
 
 ```csharp
 

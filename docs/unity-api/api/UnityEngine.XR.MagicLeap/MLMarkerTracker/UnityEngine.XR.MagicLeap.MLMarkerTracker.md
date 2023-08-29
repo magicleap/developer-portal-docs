@@ -95,7 +95,7 @@ public static async Task SetSettingsAsync(
 
 ### async Task StartScanningAsync {#async-task-startscanningasync}
 
-Asynchronous utility method to enable marker scanning using the current   ScannerSettings  . Does nothing if scanning is already enabled.    Note that enabling scanning has a performance cost until scanning is disabled using   StopScanning   or by setting   ScannerSettings.enabled   to  false . 
+Asynchronous utility method to enable marker scanning using the current   ScannerSettings  . Does nothing if scanning is already enabled. Note that enabling scanning has a performance cost until scanning is disabled using   StopScanning   or by setting   ScannerSettings.enabled   to  false . 
 
 ```csharp
 public static async Task StartScanningAsync(
@@ -160,7 +160,7 @@ public static async Task StopScanningAsync()
 
 ### OnApplicationPause {#override-void-onapplicationpause}
 
-Callback sent to all [MagicLeap](/unity-api/api/MagicLeap/MagicLeap.md) APIs on application pause. 
+Callback sent to all [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) APIs on application pause. 
 
 ```csharp
 protected virtual override void OnApplicationPause(
@@ -203,7 +203,7 @@ protected virtual override MLResult.Code StartAPI()
 
 ### StopAPI {#override-stopapi}
 
-API-specific cleanup. Will be called whenever MLDevice is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()
@@ -397,16 +397,16 @@ In order to improve performance, the detectors don't always run on the full fram
 
 ### MarkerType {#enums-markertype}
 
-Represents the different marker types supported by the API. 
+Represents the different marker types supported by the API 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| None | 0| Represents no marker.   |
-| QR | 1| QR code of Model 1 or 2.   |
-| Aruco_April | 2| Aruco marker and AprilTag.   |
+| None | 0| Represents no marker   |
+| QR | 1| QR code of Model 1 or 2   |
+| Aruco_April | 2| Aruco marker and AprilTag   |
 | EAN_13 | 4| EAN-13 (experimental)   |
 | UPC_A | 8| UPC-A (experimental)   |
-| All | 0x3FFFFFFF| All supported markers.   |
+| All | 0x3FFFFFFF| All supported markers   |
 
 
 

@@ -21,7 +21,7 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ### string GetResultString {#string-getresultstring}
 
-Gets the result string for a MLResult.Code. 
+Gets the result string for a [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code). 
 
 ```csharp
 public static string GetResultString(
@@ -34,7 +34,7 @@ public static string GetResultString(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |resultCode|The MLResult.Code to be requested.|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |resultCode|The [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) to be requested.|
 
 
 
@@ -62,7 +62,7 @@ public IntPtr MLMediaResultGetString(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) |result|The MLResult.Code that should be converted.|
+| [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) |result|The [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) that should be converted.|
 
 
 

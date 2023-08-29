@@ -154,7 +154,7 @@ protected virtual override MLResult.Code StartAPI()
 
 ### StopAPI {#override-stopapi}
 
-API-specific cleanup. Will be called whenever MLDevice is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
+API-specific cleanup. Will be called whenever [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) is destroyed (at the latest, when the application is shutting down). Error checking on the return value is performed in the base class. 
 
 ```csharp
 protected virtual override MLResult.Code StopAPI()

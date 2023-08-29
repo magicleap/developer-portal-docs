@@ -1,6 +1,6 @@
 ---
 title: MLCameraCaptureStreamConfig
-summary: structure to encapsulate stream configurations. 
+summary: structure to encapsulate stream configurations 
 
 ---
 
@@ -9,7 +9,7 @@ summary: structure to encapsulate stream configurations.
 
 
 
-Structure to encapsulate stream configurations.   
+Structure to encapsulate stream configurations   
 
 
 
@@ -72,7 +72,7 @@ public MLCamera.CaptureType CaptureType;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type.  |
+| [MLCamera.CaptureType](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-capturetype) | Capture operation type  |
 
 
 
@@ -82,7 +82,7 @@ public MLCamera.CaptureType CaptureType;
 
 ### Height {#int-height}
 
-Resolution height. 
+Resolution height 
 
 ```csharp
 
@@ -126,7 +126,7 @@ public MLCamera.OutputFormat OutputFormat;
 
 | Type | Description  | 
 |--|--|
-| [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format.  |
+| [MLCamera.OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/UnityEngine.XR.MagicLeap.MLCameraBase.md#enums-outputformat) | Captured output format  |
 
 
 
@@ -136,7 +136,7 @@ public MLCamera.OutputFormat OutputFormat;
 
 ### Width {#int-width}
 
-Capture Resolution. 
+Capture Resolution 
 
 ```csharp
 

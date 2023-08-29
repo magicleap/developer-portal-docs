@@ -45,7 +45,7 @@ public static SpaceLocalizationInfo Create(
 
 ### SpaceId {#mluuid-spaceid}
 
-#MLUUID of the Space into which the device attempts to localize into. 
+#MLUUID of the [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md) into which the device attempts to localize into. 
 
 ```csharp
 

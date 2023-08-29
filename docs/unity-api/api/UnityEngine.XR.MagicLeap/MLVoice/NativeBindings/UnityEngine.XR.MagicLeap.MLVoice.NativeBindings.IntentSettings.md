@@ -9,7 +9,7 @@ summary: a structure containing settings for voice app intent. this structure mu
 
 
 
-A structure containing settings for voice app intent. This structure must be initialized by calling IntentSettings.Create() before use.   
+A structure containing settings for voice app intent. This structure must be initialized by calling [IntentSettings.Create()](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentSettings.md#intentsettings-create) before use.   
 
 
 
@@ -19,7 +19,7 @@ A structure containing settings for voice app intent. This structure must be ini
 
 ### [IntentSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentSettings.md) Create {#intentsettings-create}
 
-Creates an initialized IntentSettings object. 
+Creates an initialized [IntentSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentSettings.md) object. 
 
 ```csharp
 public static IntentSettings Create()
@@ -30,7 +30,7 @@ public static IntentSettings Create()
 
 
 
-**Returns**: An initialized IntentSettings object.
+**Returns**: An initialized [IntentSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.IntentSettings.md) object.
 
 
 

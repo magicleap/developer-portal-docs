@@ -82,7 +82,7 @@ public bool DestroyAudioOutput()
 
 ```csharp
 public bool OnUnityAudio(
-    float[] data,
+    float [] data,
     uint length
 )
 ```
@@ -92,7 +92,7 @@ public bool OnUnityAudio(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| float[] |data||
+| float [] |data||
 | uint |length||
 
 

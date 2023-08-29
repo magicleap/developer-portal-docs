@@ -9,7 +9,7 @@ summary: the native representation of the mlwebrtc connection configuration.
 
 
 
-The native representation of the MLWebRTC connection configuration.   
+The native representation of the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) connection configuration.   
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: MLCameraCaptureConfig
-summary: structure to encapsulate capture configuration. 
+summary: structure to encapsulate capture configuration 
 
 ---
 
@@ -9,7 +9,7 @@ summary: structure to encapsulate capture configuration.
 
 
 
-Structure to encapsulate capture configuration.   
+Structure to encapsulate capture configuration   
 
 
 
@@ -105,17 +105,17 @@ public uint NumStreams;
 
 ### StreamConfig {#mlcameracapturestreamconfig-streamconfig}
 
-Stream configurations. 
+Stream configurations 
 
 ```csharp
 
-public MLCameraCaptureStreamConfig[] StreamConfig;
+public MLCameraCaptureStreamConfig [] StreamConfig;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [MLCameraCaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md)[] | Structure to encapsulate stream configurations.  |
+| [MLCameraCaptureStreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.MLCameraCaptureStreamConfig.md) [] | Structure to encapsulate stream configurations  |
 
 
 

@@ -74,7 +74,7 @@ public Extensions.TouchpadGestureEvent currentGestureEvent;
 
 | Type | Description  | 
 |--|--|
-| [Extensions.TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) | The event data related to a Magic Leap Touchpad gesture.  |
+| [Extensions.TouchpadGestureEvent](/unity-api/api/UnityEngine.XR.MagicLeap/GestureSubsystem/Extensions/UnityEngine.XR.MagicLeap.GestureSubsystem.Extensions.TouchpadGestureEvent.md) | The event data related to a Magic Leap Touchpad gesture  |
 
 
 

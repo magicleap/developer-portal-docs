@@ -19,9 +19,9 @@ Inherits from: <br></br>[MagicLeapNativeBindings](/unity-api/api/UnityEngine.XR.
 
 ## Public Methods
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorCreate {#mlresultcode-mlspatialanchorcreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorCreate {#mlresultcode-mlspatialanchorcreate}
 
-Create a new local Spatial Anchor at the desired location. On success, out&#95;anchor will be returned with the desired transform and a newly generated ID. Any unpublished anchor will be lost if the Headpose session is lost. See #MLHeadTrackingGetMapEvents for more details. 
+Create a new local Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) at the desired location. On success, out&#95;anchor will be returned with the desired transform and a newly generated ID. Any unpublished anchor will be lost if the Headpose session is lost. See #MLHeadTrackingGetMapEvents for more details. 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorCreate(
@@ -37,8 +37,8 @@ public MLResult.Code MLSpatialAnchorCreate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| in [MLSpatialAnchorCreateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorCreateInfo.md) |createInfo|A structure used to populate anchor creation info when creating a new Spatial Anchor. |
-| out [MLSpatialAnchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchor.md) |anchor|A structure representing a user-defined Spatial Anchor. |
+| in [MLSpatialAnchorCreateInfo](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorCreateInfo.md) |createInfo|A structure used to populate anchor creation info when creating a new Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). |
+| out [MLSpatialAnchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchor.md) |anchor|A structure representing a user-defined Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). |
 
 
 
@@ -47,9 +47,9 @@ public MLResult.Code MLSpatialAnchorCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorDelete {#mlresultcode-mlspatialanchordelete}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorDelete {#mlresultcode-mlspatialanchordelete}
 
-Delete an existing Spatial Anchor. If successful, this will delete the anchor from persistent storage based on the currently selected mapping mode. 
+Delete an existing Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). If successful, this will delete the anchor from persistent storage based on the currently selected mapping mode. 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorDelete(
@@ -73,7 +73,7 @@ public MLResult.Code MLSpatialAnchorDelete(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorGetLocalizationInfo {#mlresultcode-mlspatialanchorgetlocalizationinfo}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorGetLocalizationInfo {#mlresultcode-mlspatialanchorgetlocalizationinfo}
 
 Get the current localization status of the device. 
 
@@ -99,9 +99,9 @@ public MLResult.Code MLSpatialAnchorGetLocalizationInfo(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorPublish {#mlresultcode-mlspatialanchorpublish}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorPublish {#mlresultcode-mlspatialanchorpublish}
 
-Publish an existing local Spatial Anchor to the persistent backend. Depending on the currently selected mapping mode, this can store the anchor locally or in the cloud. This call will fail if the device is not localized to a space. This call will fail if the device is not localized to a space. Any unpublished anchor will be lost if the Headpose session is lost.See #MLHeadTrackingGetMapEvents for more details. 
+Publish an existing local Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) to the persistent backend. Depending on the currently selected mapping mode, this can store the anchor locally or in the cloud. This call will fail if the device is not localized to a space. This call will fail if the device is not localized to a space. Any unpublished anchor will be lost if the Headpose session is lost.See #MLHeadTrackingGetMapEvents for more details 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorPublish(
@@ -125,9 +125,9 @@ public MLResult.Code MLSpatialAnchorPublish(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorQueryCreate {#mlresultcode-mlspatialanchorquerycreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorQueryCreate {#mlresultcode-mlspatialanchorquerycreate}
 
-Create a new query for Spatial Anchors in the current space. It is the responsibility of the caller to call #MLSpatialAnchorQueryDestroy with the query handle returned from this function after the results are no longer needed. 
+Create a new query for Spatial Anchors in the current space. It is the responsibility of the caller to call [MLSpatialAnchorQueryDestroy](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.md#mlresultcode-mlspatialanchorquerydestroy) with the query handle returned from this function after the results are no longer needed. 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorQueryCreate(
@@ -144,7 +144,7 @@ public MLResult.Code MLSpatialAnchorQueryCreate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| in [MLSpatialAnchorQueryFilter](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorQueryFilter.md) |queryFilter|A collection of filters for Spatial Anchor queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
+| in [MLSpatialAnchorQueryFilter](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchorQueryFilter.md) |queryFilter|A collection of filters for Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) queries. Filters that have been set will be combined via logical conjunction. E. g. results must match the ids filter AND fall within the radius constraint when both have been set. This struct must be initialized by calling #MLSpatialAnchorQueryFilterInit before use. |
 | out ulong |queryHandle||
 | out uint |resultsCount||
 
@@ -155,7 +155,7 @@ public MLResult.Code MLSpatialAnchorQueryCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorQueryDestroy {#mlresultcode-mlspatialanchorquerydestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorQueryDestroy {#mlresultcode-mlspatialanchorquerydestroy}
 
 Destroy a previously created query handle and release its associated resources. 
 
@@ -181,9 +181,9 @@ public MLResult.Code MLSpatialAnchorQueryDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorQueryGetResult {#mlresultcode-mlspatialanchorquerygetresult}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorQueryGetResult {#mlresultcode-mlspatialanchorquerygetresult}
 
-Get the result of a previous Spatial Anchor query. Putting index bounds on the results allows the caller to only receive a subset of the total number of results generated by the query. This is useful as a form of pagination in the case of a large number of anchors in the current space. Indexing is zero-based so if there are N results in the query, then it is required that 0 &lt;= first&#95;index &lt;= last&#95;index &lt; N. 
+Get the result of a previous Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) query. Putting index bounds on the results allows the caller to only receive a subset of the total number of results generated by the query. This is useful as a form of pagination in the case of a large number of anchors in the current space. Indexing is zero-based so if there are N results in the query, then it is required that 0 &lt;= first&#95;index &lt;= last&#95;index &lt; N. 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorQueryGetResult(
@@ -191,7 +191,7 @@ public MLResult.Code MLSpatialAnchorQueryGetResult(
     ulong queryHandle,
     uint firstIndex,
     uint lastIndex,
-    MLSpatialAnchor[] results
+    MLSpatialAnchor [] results
 )
 ```
 
@@ -204,7 +204,7 @@ public MLResult.Code MLSpatialAnchorQueryGetResult(
 | ulong |queryHandle||
 | uint |firstIndex||
 | uint |lastIndex||
-| [MLSpatialAnchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchor.md)[] |results|A structure representing a user-defined Spatial Anchor. |
+| [MLSpatialAnchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchor.md) [] |results|A structure representing a user-defined Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). |
 
 
 
@@ -213,9 +213,9 @@ public MLResult.Code MLSpatialAnchorQueryGetResult(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorTrackerCreate {#mlresultcode-mlspatialanchortrackercreate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorTrackerCreate {#mlresultcode-mlspatialanchortrackercreate}
 
-Create a Spatial Anchor tracker. 
+Create a Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) tracker. 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorTrackerCreate(
@@ -237,9 +237,9 @@ public MLResult.Code MLSpatialAnchorTrackerCreate(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorTrackerDestroy {#mlresultcode-mlspatialanchortrackerdestroy}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorTrackerDestroy {#mlresultcode-mlspatialanchortrackerdestroy}
 
-Destroy a previously created Spatial Anchor tracker. 
+Destroy a previously created Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md) tracker. 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorTrackerDestroy(
@@ -261,9 +261,9 @@ public MLResult.Code MLSpatialAnchorTrackerDestroy(
 
 -----------
 
-### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#int-code) MLSpatialAnchorUpdate {#mlresultcode-mlspatialanchorupdate}
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpatialAnchorUpdate {#mlresultcode-mlspatialanchorupdate}
 
-Update a Spatial Anchor's properties. The only property that can currently be updated is the expirationTimeStamp. 
+Update a Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md)'s properties. The only property that can currently be updated is the expirationTimeStamp. 
 
 ```csharp
 public MLResult.Code MLSpatialAnchorUpdate(
@@ -278,7 +278,7 @@ public MLResult.Code MLSpatialAnchorUpdate(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |handle||
-| in [MLSpatialAnchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchor.md) |anchor|A structure representing a user-defined Spatial Anchor. |
+| in [MLSpatialAnchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.MLSpatialAnchor.md) |anchor|A structure representing a user-defined Spatial [Anchor](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/UnityEngine.XR.MagicLeap.MLAnchors.Anchor.md). |
 
 
 

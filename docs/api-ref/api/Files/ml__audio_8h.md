@@ -271,10 +271,10 @@ The currently active output device.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLAudioMicCaptureType_VoiceComm | | User voice, suitable for communications.Mono, 16 bit integer, 16k sampling rate. |
-| MLAudioMicCaptureType_VoiceCapture | | High fidelity user voice, suitable for recording.Mono, 16 bit integer, 48k sampling rate. |
-| MLAudioMicCaptureType_WorldCapture |  =4| Mic mix representing the user's surroundings.Stereo, 16 bit integer, 48k sampling rate. |
-| MLAudioMicCaptureType_RawMicsAndAECRef | | All 4 mics unprocessed (front L/R, side L/R) + AEC return from amp (L/R).Channel layout: 1 - Front L, 2 - Front R, 3 - Side L, 4 - Side R, 5 - AEC return L, 6 - AEC return RDC Offset and/or background hum may be present on channels 1-4 due to lack of processing6-channel, 16 bit integer, 48k sampling rate. |
+| MLAudioMicCaptureType_VoiceComm | | User voice, suitable for communications. Mono, 16 bit integer, 16k sampling rate. |
+| MLAudioMicCaptureType_VoiceCapture | | High fidelity user voice, suitable for recording. Mono, 16 bit integer, 48k sampling rate. |
+| MLAudioMicCaptureType_WorldCapture |  =4| Mic mix representing the user's surroundings. Stereo, 16 bit integer, 48k sampling rate. |
+| MLAudioMicCaptureType_RawMicsAndAECRef | | All 4 mics unprocessed (front L/R, side L/R) + AEC return from amp (L/R). Channel layout: 1 - Front L, 2 - Front R, 3 - Side L, 4 - Side R, 5 - AEC return L, 6 - AEC return R. DC Offset and/or background hum may be present on channels 1-4 due to lack of processing. 6-channel, 16 bit integer, 48k sampling rate. |
 | MLAudioMicCaptureType_Ensure32Bits |  =0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 

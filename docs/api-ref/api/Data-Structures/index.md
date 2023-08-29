@@ -194,6 +194,7 @@ title: Data Structure Index
 * **struct [MLPlaneBoundary](/api-ref/api/Modules/group___planes/struct_m_l_plane_boundary.md)** <br></br>Type used to represent a region boundary on a 2D plane. 
 * **struct [MLPlanesQuery](/api-ref/api/Modules/group___planes/struct_m_l_planes_query.md)** <br></br>Type used to represent a plane query. 
 * **struct [MLPolygon](/api-ref/api/Modules/group___planes/struct_m_l_polygon.md)** <br></br>Coplanar connected line segments representing the outer boundary of a polygon, an _n_-sided polygon where _n_ is the number of vertices. 
+* **struct [MLPose](/api-ref/api/Modules/group___common/struct_m_l_pose.md)** 
 * **struct [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md)** <br></br>A structure containing Power Manager callback events. Individual callbacks which are not required by the Power Manager can be NULL. 
 * **struct [MLPowerManagerComponentProperty](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md)** <br></br>A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enum-mlpowermanagerpropertytype). 
 * **union [MLPowerManagerComponentProperty.__unnamed__](/api-ref/api/Modules/group___power_manager/union_m_l_power_manager_component_property_8____unnamed____.md)** 
@@ -207,6 +208,7 @@ title: Data Structure Index
 * **struct [MLQuaternionf](/api-ref/api/Modules/group___common/struct_m_l_quaternionf.md)** 
 * **struct [MLRectf](/api-ref/api/Modules/group___common/struct_m_l_rectf.md)** 
 * **struct [MLRecti](/api-ref/api/Modules/group___common/struct_m_l_recti.md)** 
+* **struct [MLSnapshotStaticData](/api-ref/api/Modules/group___perception/struct_m_l_snapshot_static_data.md)** <br></br>Static information about the snapshot system. 
 * **struct [MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md)** <br></br>A structure containing information about a Magic Leap Space. This structure must be initialized by calling [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit) before use. 
 * **struct [MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md)** <br></br>A structure containing callbacks for events related to the Space. 
 * **struct [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md)** <br></br>A structure containing information about the Space export settings. This structure must be initialized by calling [MLSpaceExportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit) before use. 

@@ -9,7 +9,7 @@ summary: structure to encapsulate a possible set of streams configuration. such 
 
 
 
-Structure to encapsulate a possible set of streams configuration. Such set describes a possible way of setting StreamConfig in MLDepthCameraSettings and may hold multiple MLDepthCameraStreamCapability for different streams. Whole StreamCapabilities array describe a single configuration. Using only part of it is not recommended. The capabilities supported by the depth camera can be queried with MLDepthCameraGetCapabilities().   
+Structure to encapsulate a possible set of streams configuration. Such set describes a possible way of setting [StreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.StreamConfig.md) in [MLDepthCameraSettings](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraSettings.md) and may hold multiple [MLDepthCameraStreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraStreamCapability.md) for different streams. Whole StreamCapabilities array describe a single configuration. Using only part of it is not recommended. The capabilities supported by the depth camera can be queried with MLDepthCameraGetCapabilities().   
 
 
 
@@ -36,7 +36,7 @@ public byte Size;
 
 ### StreamCapabilities {#intptr-streamcapabilities}
 
-Array of MLDepthCameraStreamCapability elements. 
+Array of [MLDepthCameraStreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLDepthCamera.NativeBindings.MLDepthCameraStreamCapability.md) elements. 
 
 ```csharp
 

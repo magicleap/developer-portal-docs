@@ -39,7 +39,7 @@ Camera frame data. The number of frames is specified by FrameCount.
 
 ```csharp
 
-public readonly EyeCameraFrame[] Frames;
+public readonly EyeCameraFrame [] Frames;
 
 ```
 

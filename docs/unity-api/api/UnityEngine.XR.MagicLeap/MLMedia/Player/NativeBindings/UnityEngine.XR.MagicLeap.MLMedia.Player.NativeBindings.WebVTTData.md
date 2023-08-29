@@ -53,7 +53,7 @@ public WebVTTDirection Direction;
 
 ### EndTimeMs {#long-endtimems}
 
-Track cue end time in milliseconds. 
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue end time in milliseconds. 
 
 ```csharp
 
@@ -172,7 +172,7 @@ public bool SnapToLines;
 
 ### StartTimeMS {#long-starttimems}
 
-Track cue start time in milliseconds. 
+[Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.md) cue start time in milliseconds. 
 
 ```csharp
 

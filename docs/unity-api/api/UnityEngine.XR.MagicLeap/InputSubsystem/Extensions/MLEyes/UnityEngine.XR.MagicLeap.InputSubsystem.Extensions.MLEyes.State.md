@@ -154,7 +154,7 @@ public readonly float RightEyeOpenness;
 
 ### Timestamp {#readonly-timestamp}
 
-Timestamp for all the data fields in this struct. 
+Timestamp for all the data fields in this struct 
 
 ```csharp
 
@@ -164,7 +164,7 @@ public readonly MLTime Timestamp;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If OpenXR is used, MLTime is synonymous with the XrTime type.  |
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.  |
 
 
 

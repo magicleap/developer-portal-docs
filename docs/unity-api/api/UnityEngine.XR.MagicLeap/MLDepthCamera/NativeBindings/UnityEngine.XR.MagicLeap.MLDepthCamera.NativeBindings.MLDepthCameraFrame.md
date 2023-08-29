@@ -175,7 +175,7 @@ public FrameType FrameType;
 
 | Type | Description  | 
 |--|--|
-| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types.  |
+| [FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) | Depth Camera frame capture types  |
 
 
 

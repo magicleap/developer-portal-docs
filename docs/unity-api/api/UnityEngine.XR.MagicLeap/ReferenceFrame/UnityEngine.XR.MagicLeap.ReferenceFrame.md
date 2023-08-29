@@ -22,7 +22,7 @@ Contains information necessary to report on  XRAnchor s.
 
 ### anchor {#xranchor-anchor}
 
-Get the reference frame as a refernce point. 
+Get the reference frame as a refernce point 
 
 ```csharp
 
@@ -56,7 +56,7 @@ public Pose anchorPose { get; set; }
 
 ### cfuid {#nativemagicleapnativebindingsmlcoordinateframeuid-cfuid}
 
-The UID of the closest coordinate frame. 
+The UID of the closest coordinate frame 
 
 ```csharp
 
@@ -110,7 +110,7 @@ public TrackableId trackableId { get; set; }
 
 ### trackingState {#trackingstate-trackingstate}
 
-The tracking state associated with the anchor. 
+The tracking state associated with the anchor 
 
 ```csharp
 
@@ -175,7 +175,7 @@ public ReferenceFrame(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame. |
+| [Cinfo](/unity-api/api/UnityEngine.XR.MagicLeap/ReferenceFrame/UnityEngine.XR.MagicLeap.ReferenceFrame.Cinfo.md) |cinfo|Information necessary to construct a reference frame |
 
 
 

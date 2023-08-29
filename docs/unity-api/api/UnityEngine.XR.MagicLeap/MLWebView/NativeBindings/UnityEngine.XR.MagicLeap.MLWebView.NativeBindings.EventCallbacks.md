@@ -9,7 +9,7 @@ summary: event handler for mlwebview callbacks. this structure must be initializ
 
 
 
-Event handler for MLWebView callbacks. This structure must be initialized by calling #MLWebViewEventCallbacksInit before use.   
+Event handler for [MLWebView](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebView/UnityEngine.XR.MagicLeap.MLWebView.md) callbacks. This structure must be initialized by calling #MLWebViewEventCallbacksInit before use.   
 
 
 
@@ -287,7 +287,7 @@ public IntPtr UserData;
 
 ### Version {#uint-version}
 
-Version of this struct. 
+Version of this struct 
 
 ```csharp
 

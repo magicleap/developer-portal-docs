@@ -37,8 +37,28 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
 {
     public partial class MagicLeapFeature
     {
-        private class NativeBindings : MagicLeapNativeBindings
+        internal class NativeBindings : MagicLeapNativeBindings
         {
+            public enum XrHandEXT
+            {
+                Left = 1,
+                Right = 2
+            }
+            [StructLayout(LayoutKind.Sequential)]
+            public struct XrPosef
+            {
+                public Quaternion orientation;
+                public Vector3 position;
+            }
+
+            [StructLayout(LayoutKind.Sequential)]
+            public struct XrHandJointLocationEXT
+            {
+                public UInt64 locationFlags;
+                public XrPosef pose;
+                public float radius;
+            }
+
             [DllImport(MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern IntPtr MLOpenXRInterceptFunctions(IntPtr loaderFunc);
 
@@ -56,6 +76,15 @@ namespace UnityEngine.XR.OpenXR.Features.MagicLeapSupport
 
             [DllImport(MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern void MLOpenXROnSessionDestroy(ulong session);
+
+            [DllImport(MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern MLResult.Code MLOpenXRStartXRHandTracking();
+
+            [DllImport(MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern unsafe MLResult.Code MLOpenXRGetXRHandTrackingJoints(XrHandEXT hand, XrHandJointLocationEXT* joints);
+
+            [DllImport(MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern MLResult.Code MLOpenXRStopXRHandTracking();
 
             [DllImport(MLSdkLoaderDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern MLResult.Code MLZIPermissionsStart();

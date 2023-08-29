@@ -31,7 +31,7 @@ public MLWebRTC.AudioSink AudioSink { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLWebRTC.AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) | Class that represents an audio sink used by the MLWebRTC API.  |
+| [MLWebRTC.AudioSink](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.md) | Class that represents an audio sink used by the [MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) API.  |
 
 
 

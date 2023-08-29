@@ -242,6 +242,10 @@ module.exports = {
             from: '/docs/guides/features/voice-commands/voice-intents-developer-toolkit',
             to: '/docs/guides/features/voice-commands/voice-intent-development-toolkit'
           },
+          {
+            from: '/docs/guides/features/spatial-mapping/object-occlusion',
+            to: '/docs/guides/features/object-occlusion'
+          },
         ],
         
         createRedirects(existingPath) {
@@ -255,10 +259,10 @@ module.exports = {
             ];
           }
 
-          if (existingPath.includes('docs/guides/developer-tools/ml-hub/app-sim')) {
+          if (existingPath.includes('/docs/guides/developer-tools/ml-hub/app-sim')) {
           // Redirect docs/guides/developer-tools/ml-hub/app-sim to docs/guides/developer-tools/app-sim
           return [
-            existingPath.replace('docs/guides/developer-tools/ml-hub/app-sim/', 'docs/guides/developer-tools/app-sim/'),
+            existingPath.replace('/docs/guides/developer-tools/ml-hub/app-sim/', '/docs/guides/developer-tools/app-sim/'),
           ];
         }
 

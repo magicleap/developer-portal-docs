@@ -1,6 +1,6 @@
 ---
 title: DispatchPayload5
-summary: overloads the generic dispatcher to call back a method with four payloads. 
+summary: overloads the generic dispatcher to call back a method with four payloads 
 
 ---
 
@@ -9,7 +9,7 @@ summary: overloads the generic dispatcher to call back a method with four payloa
 
 
 
-Overloads the generic dispatcher to call back a method with four payloads.   [More...](#detailed-description)  
+Overloads the generic dispatcher to call back a method with four payloads   [More...](#detailed-description)  
 
 
 Inherits from: <br></br>UnityEngine.XR.MagicLeap.Native.MLThreadDispatch.Dispatcher
@@ -44,7 +44,7 @@ private template <A ,B ,C ,D ,E > class DispatchPayload5 : Dispatcher
 
 ### override void Dispatch {#override-void-dispatch}
 
-Dispatches the previously stored callback with the supplied payloads. 
+Dispatches the previously stored callback with the supplied payloads 
 
 ```csharp
 public override void Dispatch()
@@ -59,7 +59,7 @@ public override void Dispatch()
 
 ###  DispatchPayload5 {#functions-dispatchpayload5}
 
-Initializes a new instance of the DispatchPayload5&lt;A,B,C,D,F&gt; class with the supplied callback and payloads. 
+Initializes a new instance of the DispatchPayload5&lt;A,B,C,D,F&gt; class with the supplied callback and payloads 
 
 ```csharp
 public DispatchPayload5(

@@ -57,7 +57,7 @@ public IntPtr Data;
 
 ### Error {#error-error}
 
-The error of MLMediaRecorderError. 
+The error of MLMediaRecorderError 
 
 ```csharp
 
@@ -67,7 +67,7 @@ public Error Error;
 
 | Type | Description  | 
 |--|--|
-| [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error) | Video recorder error types.  |
+| [Error](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/UnityEngine.XR.MagicLeap.MLMediaRecorder.md#enums-error) | Video recorder error types  |
 
 
 
@@ -77,7 +77,7 @@ public Error Error;
 
 ### Extra {#int-extra}
 
-The extra info. 
+The extra info 
 
 ```csharp
 

@@ -20,7 +20,7 @@ title: Result
 
 ```csharp
 
-public readonly Anchor[] anchors;
+public readonly Anchor [] anchors;
 
 ```
 

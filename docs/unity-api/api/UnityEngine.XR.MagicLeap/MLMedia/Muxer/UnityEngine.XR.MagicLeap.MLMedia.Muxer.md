@@ -37,7 +37,7 @@ MediaMuxer description goes here.
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AddAudioTrack {#mlresult-addaudiotrack}
 
-Add a new audio track. This should be called before Start and after Configure.    GetSupportedMimes can be used to query for all the supported MIME types for a given audio output format. 
+Add a new audio track. This should be called before [Start](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-start) and after [Configure](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-configure).  [GetSupportedMimes](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-getsupportedmimes) can be used to query for all the supported MIME types for a given audio output format. 
 
 ```csharp
 public MLResult AddAudioTrack(
@@ -63,7 +63,7 @@ public MLResult AddAudioTrack(
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -71,7 +71,7 @@ public MLResult AddAudioTrack(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) AddVideoTrack {#mlresult-addvideotrack}
 
-Add a new video track. This should be called before Start and after Configure.    GetSupportedMimes can be used to query for all the supported MIME types for a given video output format. 
+Add a new video track. This should be called before [Start](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-start) and after [Configure](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-configure).  [GetSupportedMimes](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-getsupportedmimes) can be used to query for all the supported MIME types for a given video output format. 
 
 ```csharp
 public MLResult AddVideoTrack(
@@ -97,7 +97,7 @@ public MLResult AddVideoTrack(
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -105,7 +105,7 @@ public MLResult AddVideoTrack(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Configure {#mlresult-configure}
 
-Configure the Muxer for a given output format with output path. 
+Configure the [Muxer](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md) for a given output format with output path. 
 
 ```csharp
 public MLResult Configure(
@@ -119,7 +119,7 @@ public MLResult Configure(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat) |format|The format of the muxed output media file. Value should be one returned from GetSupportedOutputFormats|
+| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat) |format|The format of the muxed output media file. Value should be one returned from [GetSupportedOutputFormats](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-getsupportedoutputformats)|
 | string |filePath||
 
 
@@ -127,7 +127,7 @@ public MLResult Configure(
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -135,12 +135,12 @@ public MLResult Configure(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetSupportedMimes {#mlresult-getsupportedmimes}
 
-Get a list of all the supported mime-types for a given Media Muxer Output Format. 
+Get a list of all the supported mime-types for a given Media [Muxer](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md) Output Format. 
 
 ```csharp
 public MLResult GetSupportedMimes(
     OutputFormat format,
-    out string[] results
+    out string [] results
 )
 ```
 
@@ -149,15 +149,15 @@ public MLResult GetSupportedMimes(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat) |format|OutputFormat for which to retrieve supported MIME types.|
-| out string[] |results|Array that will contain the supported MIME type names.|
+| [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat) |format|[OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat) for which to retrieve supported MIME types.|
+| out string [] |results|Array that will contain the supported MIME type names.|
 
 
 
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -165,11 +165,11 @@ public MLResult GetSupportedMimes(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetSupportedOutputFormats {#mlresult-getsupportedoutputformats}
 
-Get a list of all the supported Media Muxer Output Formats. 
+Get a list of all the supported Media [Muxer](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md) Output Formats. 
 
 ```csharp
 public MLResult GetSupportedOutputFormats(
-    out OutputFormat[] results
+    out OutputFormat [] results
 )
 ```
 
@@ -178,14 +178,14 @@ public MLResult GetSupportedOutputFormats(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| out [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat)[] |results|Array of OutputFormat that will contain the supported formats.|
+| out [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat) [] |results|Array of [OutputFormat](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-outputformat) that will contain the supported formats.|
 
 
 
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -206,7 +206,7 @@ public Muxer()
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetLocation {#mlresult-setlocation}
 
-Set and store the geodata (latitude and longitude) in the output file.    This should be called before Start and after Configure.   The geodata is stored in udta box if the output format is OutputFormat.MPEG4,   and is ignored for other output formats.    The geodata is stored according to ISO-6709 standard. 
+Set and store the geodata (latitude and longitude) in the output file.    This should be called before [Start](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-start) and after [Configure](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-configure).   The geodata is stored in udta box if the output format is [OutputFormat.MPEG4](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-mpeg4),   and is ignored for other output formats.    The geodata is stored according to ISO-6709 standard. 
 
 ```csharp
 public MLResult SetLocation(
@@ -228,7 +228,7 @@ public MLResult SetLocation(
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -236,7 +236,7 @@ public MLResult SetLocation(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) SetOrientationHint {#mlresult-setorientationhint}
 
-Set the orientation hint for output video playback.    This should be called before Start and after Configure    Calling this method will not rotate the video frame when muxer is generating the file, but add a composition matrix containing the rotation angle in the output video if the output format is OutputFormat.MPEG4 so that a video player can choose the proper orientation for playback.    Note that some video players may choose to ignore the composition matrix in a video during playback. By default, the rotation degree is 0. 
+Set the orientation hint for output video playback.    This should be called before [Start](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-start) and after [Configure](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-configure)    Calling this method will not rotate the video frame when muxer is generating the file, but add a composition matrix containing the rotation angle in the output video if the output format is [OutputFormat.MPEG4](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-mpeg4) so that a video player can choose the proper orientation for playback.    Note that some video players may choose to ignore the composition matrix in a video during playback. By default, the rotation degree is 0. 
 
 ```csharp
 public MLResult SetOrientationHint(
@@ -256,7 +256,7 @@ public MLResult SetOrientationHint(
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -264,7 +264,7 @@ public MLResult SetOrientationHint(
 
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) Start {#mlresult-start}
 
-Start muxing. Make sure all the tracks have been added (AddAudioTrack or AddVideoTrack) before calling this.   If the Muxer has already been  Stopped , it cannot be re- Started . 
+Start muxing. Make sure all the tracks have been added ([AddAudioTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addaudiotrack) or [AddVideoTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addvideotrack)) before calling this.   If the [Muxer](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md) has already been  Stopped , it cannot be re- Started . 
 
 ```csharp
 public MLResult Start()
@@ -275,7 +275,7 @@ public MLResult Start()
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -294,7 +294,7 @@ public MLResult Stop()
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -307,7 +307,7 @@ Writes an encoded sample into the muxer.    The application needs to make sure t
 ```csharp
 public MLResult WriteSampleData(
     int trackIndex,
-    byte[] data,
+    byte [] data,
     long time,
     CodecBufferFlags flags
 )
@@ -318,8 +318,8 @@ public MLResult WriteSampleData(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| int |trackIndex|The track index number to write the sample data into. This should be one of the number returned by AddAudioTrack and AddVideoTrack|
-| byte[] |data|Buffer of data to write to the muxer|
+| int |trackIndex|The track index number to write the sample data into. This should be one of the number returned by [AddAudioTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addaudiotrack) and [AddVideoTrack](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#mlresult-addvideotrack)|
+| byte [] |data|Buffer of data to write to the muxer|
 | long |time|Timestamp in microseconds|
 | [CodecBufferFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md#enums-codecbufferflags) |flags| MLMediaCodecBufferFlag . Supported values:  KeyFrame ,  EOS , and  MuxerData |
 
@@ -328,7 +328,7 @@ public MLResult WriteSampleData(
 
 
 
-**Returns**: MLResult with Code "Ok" if the operation completed successfully without errors. Check MLResult.IsOk for status.
+**Returns**: [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) with Code "Ok" if the operation completed successfully without errors. Check [MLResult.IsOk](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#bool-isok) for status.
 
 
 
@@ -338,7 +338,7 @@ public MLResult WriteSampleData(
 
 ### CodecBufferFlags {#enums-codecbufferflags}
 
-Indicate the type of data when queuing the input buffer of muxer sample data. 
+Indicate the type of data when queuing the input buffer of muxer sample data 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -357,15 +357,15 @@ Indicate the type of data when queuing the input buffer of muxer sample data.
 
 ### OutputFormat {#enums-outputformat}
 
-Output formats for MediaMuxer.   Use Muxer.GetSupportedOutputFormats(out OutputFormat[]) to query for all supported output formats for the Muxer. 
+Output formats for MediaMuxer.   Use Muxer.GetSupportedOutputFormats(out OutputFormat[]) to query for all supported output formats for the [Muxer](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Muxer/UnityEngine.XR.MagicLeap.MLMedia.Muxer.md). 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MPEG4 | 0| MP4 format.   |
-| WEBM | 1| VP8/VORBIS data in a WEBM container.   |
+| MPEG4 | 0| MP4 format   |
+| WEBM | 1| VP8/VORBIS data in a WEBM container   |
 | ThreeGPP | 2| 3gpp format   |
-| HEIF | 3| HEIC data in a HEIF container.   |
-| OGG | 4| Opus audio data in an OGG container.   |
+| HEIF | 3| HEIC data in a HEIF container   |
+| OGG | 4| Opus audio data in an OGG container   |
 
 
 

@@ -18,7 +18,7 @@ title: Extensions
 
 ### bool TryGetEyeTrackingState {#bool-trygeteyetrackingstate}
 
-Try to get the InputSubsystem.Extensions.MLEyes.State, InputDevice   from the given . 
+Try to get the [InputSubsystem.Extensions.MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md), InputDevice   from the given . 
 
 ```csharp
 public static bool TryGetEyeTrackingState(
@@ -55,11 +55,11 @@ if(eyesDevice.isValid){
 
 
 
-**See**: InputDeviceCharacteristics, InputSubsystem.Utils.FindMagicLeapDevice, InputDevice.isValid, MLEyes.State, InputSubsystem.Extensions.MLEyes.State.FixationConfidence
+**See**: InputDeviceCharacteristics, [InputSubsystem.Utils.FindMagicLeapDevice](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/UnityEngine.XR.MagicLeap.InputSubsystem.Utils.md#inputdevice-findmagicleapdevice), InputDevice.isValid, [MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md), [InputSubsystem.Extensions.MLEyes.State.FixationConfidence](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md#readonly-float-fixationconfidence)
 
 
 
-**Returns**: True if the resulting InputSubsystem.Extensions.MLEyes.State
+**Returns**: True if the resulting [InputSubsystem.Extensions.MLEyes.State](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/MLEyes/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLEyes.State.md)
 
 
 is valid. 

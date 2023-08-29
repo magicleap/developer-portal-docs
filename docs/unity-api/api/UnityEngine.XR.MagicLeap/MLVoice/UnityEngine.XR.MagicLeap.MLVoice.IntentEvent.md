@@ -36,7 +36,7 @@ public uint EventID;
 
 ### EventName {#string-eventname}
 
-The Event Name. 
+The Event Name 
 
 ```csharp
 
