@@ -1,11 +1,9 @@
 ---
-id: Android Sensor API
-slug : android-intents-overview
-title: Intents
-sidebar_position: 7
+title: Android Sensor API
+sidebar_position: 1
 date: 09/23/2022
-tags: [Magic Leap, Android, Intents]
-keywords: [Magic Leap, Android, Intents]
+tags: [Magic Leap, Android]
+keywords: [Magic Leap, Android, Generic, Sensor]
 ---
  
  # Accessing Sensors on Magic Leap 2
