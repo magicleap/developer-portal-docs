@@ -1,17 +1,17 @@
 ---
-title: 1.3.1 - SDK Release Notes
+title: 1.4.0-dev1 - SDK Release Notes
 sidebar_position: 3
-date: 08/02/2023
+date: 08/30/2023
 ---
 
-# Magic Leap SDK 1.3.0
+# Magic Leap SDK 1.4.0-dev1
 
 ## Release notes
 
-- New MLFacialExpressions API.
-- MLDepthCamera Experimental API:
-  - Enabled Short Range mode and ability to switch between Long and Short Range modes;
-  - Enabaled capability to set framerte and depth camera frame rate and exposure time.
-- **Breaking change to the experimental API.MLAudio API**: Exposed MLAudioMicCaptureType_RawMicsAndAECRef to get raw microphone streams.
-- MLInput API: Updated API documentation to reflect valid ranges for MLInputBuzzCommand.
-- Enabled headset left and right uncalibrated magnetometer streams via standard Android APIs (​​TYPE_MAGNETIC_FIELD_UNCALIBRATED).
+- MLOcclusion Experimental API: Enabled 30Hz refresh rate update when MLOcclusionSettings::max_distance set to be less or equal to 90cm.
+- Introduced new data type describing geometric relationship between two coordinate frames - MLPose (ml_types.h).
+- MLSnapshot API:
+  - Introduced new data type MLSnapshotStaticData to obtain static information about the snapshot system and new API to obtain the data - MLSnapshotGetStaticData();
+  - Introduced new API to obtain transform between coordinate frame 'base_id' and the coordinate frame `id' as well as any derivatives that have been calculated MLSnapshotGetPoseInBase().
+- MLVoice API: Added additional error code for MLVoiceIntentStartProcessing() to indicate voice input is disabled in system settings.
+- MLDepthCamera Experimental API: Updated minimum exposure limit for long range (250us).

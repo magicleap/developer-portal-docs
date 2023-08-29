@@ -1,10 +1,10 @@
 {
-  "label": "Release 2023 July",
-  "position": 82,
+  "label": "Release 2023 August",
+  "position": 81,
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "doc",
-    "id": "july-release-notes"
+    "id": "august-release-notes"
   }
 }
