@@ -40,19 +40,22 @@ See the [Android Sensor API Guide](/docs/guides/features/generic-sensors.md) for
 ## Enabling and disabling sensors
 
 Unlike other input devices, sensors are disabled by default in the Input System. To enable a sensor, you need to call `InputSystem.EnableDevice()` with the sensor device as an argument. For example, to enable the gyroscope sensor, you can write:
-```
+
+```csharp
 InputSystem.EnableDevice(Gyroscope.current);
 ```
   
 
 To disable a sensor, you need to call `InputSystem.DisableDevice()` with the sensor device as an argument. For example, to disable the gyroscope sensor, you can write:
-```
+
+```csharp
 InputSystem.DisableDevice(Gyroscope.current);
 ```
   
 
 To check whether a sensor is currently enabled, you can use the `InputDevice.enabled` property. For example, to check if the gyroscope sensor is enabled, you can write:
-```
+
+```csharp
 if  (Gyroscope.current.enabled)
 {
 	Debug.Log("Gyroscope  is  enabled");
@@ -71,7 +74,7 @@ The names in the sensor overview table can be used in conjunction with [Sensor.d
 :::
 
   
-```
+```csharp
 void  OnEnable()
 {
 	Sensor.onSensorChanged  +=  OnSensorChanged;
@@ -95,7 +98,8 @@ void  OnSensorChanged(Sensor  sensor)
 ```
 
 Alternatively, you can also read sensor data directly from the sensor device’s control. Each sensor device implements a single control that represents the data read by the sensor. The type and meaning of the control depend on the sensor type. For example, to get the ambient light level from the light sensor, you can write:
-```
+
+```csharp
 //  Get  the  light  level  in  lux
 float  lightLevel  =  LightSensor.current.lightLevel.ReadValue();
 //  Print  the  light  level
@@ -107,7 +111,8 @@ Identifying the correct sensor
 To obtain the sensor data, you can use the ReadValue() method of the sensor device. For example, to read the acceleration vector from the accelerometer sensor, you can write:
 
 If the device has multiple instances of the same sensor type, such as three gyroscopes with different names, you can use the InputSystem.FindDevices() method to find all the devices that match a given layout name or device description. For example, to find all the gyroscopes on the device, you can write:
-```
+
+```csharp
 using  UnityEngine.InputSystem;
 ...
 
@@ -121,7 +126,8 @@ foreach  (var  gyroscope  in  gyroscopes)
   
 
 To access a specific gyroscope by name, you can use the `InputSystem.GetDevice()` method and pass the name as an argument. For example, to access the gyroscope named “Headset Left Gyroscope Sensor”, you can write:
-```
+
+```csharp
 using  UnityEngine.InputSystem;
 ...
 
@@ -136,7 +142,8 @@ if  (leftGyroscope  !=  null)
 ## Sampling frequency
 
 Sensors sample continuously at a set interval. You can set or query the sampling frequency for each sensor using the Sensor.samplingFrequency property. The frequency is expressed in Hertz (number of samples per second). For example, to get and set the sampling frequency of the gyroscope sensor, you can write:
-```
+
+```csharp
 //  Get  the  sampling  frequency  of  the  gyroscope  sensor
 float  frequency  =  Gyroscope.current.samplingFrequency;
 //  Set  the  sampling  frequency  of  the  gyroscope  sensor  to  16  Hz
