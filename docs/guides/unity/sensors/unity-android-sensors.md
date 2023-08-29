@@ -1,14 +1,18 @@
-﻿
+---
+title: Generic Sensor API
+date: 08/29/2023
+tags: [Magic Leap, Android, Unity]
+keywords: [Magic Leap, Android, Generic, Sensor, Input]
+---﻿
   
 
 # Unity - Magic Leap 2 Sensors Access
 
 Sensors are devices that measure environmental characteristics of the device that the content is running on, such as light, pressure, temperature, orientation, and motion. Unity’s Input System allows you to access sensors on Android devices using the standard Android Sensor API. In this guide, we will show you how to enable, disable, and read data from sensors on Android using the Input System.
 
-  
 
 :::caution
-While the generic sensors such as the Light Sensor can be accessed using the generic Android API, platform specific sensors like camera images can only be obtained via the Magic Leap SDK.
+While the generic sensors such as the Light Sensor can be accessed using the generic Android API and Unity Input System, platform specific sensors like World Cameras can only be obtained via the Magic Leap SDK.
 :::
 
 
@@ -128,8 +132,7 @@ if  (leftGyroscope  !=  null)
 	Quaternion  rotation  =  leftGyroscope.angularVelocity.ReadValue();
 }
 ```
-  
-  
+
 
 ## Sampling frequency
 
