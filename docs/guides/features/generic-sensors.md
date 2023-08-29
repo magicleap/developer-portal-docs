@@ -1,10 +1,20 @@
-﻿# Accessing Sensors on Magic Leap 2
+---
+id: Android Sensor API
+slug : android-intents-overview
+title: Intents
+sidebar_position: 7
+date: 09/23/2022
+tags: [Magic Leap, Android, Intents]
+keywords: [Magic Leap, Android, Intents]
+---
+ 
+ # Accessing Sensors on Magic Leap 2
 
 Developers can access a variety of Magic Leap 2’s sensors to obtain information about the environment and the device’s orientation, motion, and position. These sensors can be accessed via the standard Android Sensor API, which allows you to register listeners for sensor events, get sensor data, and manage sensor resources.
 
 :::info Specialized Magic Leap 2 sensors
 
-While generic sensors such as the Light Sensor can be accessed using Android's Sensor API, more specialized sensors such as the camera eye cameras can only be accessed via the Magic Leap SDK
+While generic sensors such as the Light Sensor can be accessed using Android's Sensor API, more specialized sensors such as the World Cameras can only be accessed via the Magic Leap SDK.
 
 :::
 
@@ -13,7 +23,6 @@ While generic sensors such as the Light Sensor can be accessed using Android's S
 The following table lists the sensors that are available on Magic Leap 2 and their corresponding sensor types in the Android Sensor API. The names can be used to identify which sensor was updated when implementing the SensorEventListener interface to receive updates when sensor values change in Java  
   
 :::info Multiple Sensor Instances
-
 Some sensors have multiple instances with different names, such as the gyroscope and accelerometer sensors which are available on both the headset and the compute pack.
 :::
 
