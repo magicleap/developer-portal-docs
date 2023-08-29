@@ -1,18 +1,18 @@
 ---
 id: unreal-getting-started
-title: Getting started with Unreal Engine 5
-sidebar_position: 2
+title: Getting Started
+sidebar_position: 1
 date: 08/30/2023
 tags: [Android,Unreal Engine,Getting Started]
 keywords: [Android,Unreal Engine,Getting Started]
 
 ---
 
-This preview version of the Magic Leap 2 SDK for Unreal Engine 5 (ML2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the 3D graphics engine created by Epic Games.
+This preview version of the Magic Leap 2 SDK for Unreal Engine 5 (Magic Leap 2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the 3D graphics engine created by Epic Games.
 
-Most functionality in the ML2 Unreal SDK is exposed through OpenXR. Some optional APIs, like extended controller and camera functionality, require the Magic Leap Native API SDK (ML2 C SDK), also called the C API. Some plugins expose their functionality through components and Blueprint function libraries.
+Most functionality in the Magic Leap 2 Unreal SDK is exposed through OpenXR. Some optional APIs, like extended controller and camera functionality, require the Magic Leap Native API SDK (Magic Leap 2 C SDK), also called the C API. Some plugins expose their functionality through components and Blueprint function libraries.
 
-Vulkan is the only graphics pipeline supported with the ML2 Unreal SDK. Unreal Engine has support for the Vulkan API built in.
+Vulkan is the only graphics pipeline supported with the Magic Leap 2 Unreal SDK. Unreal Engine has support for the Vulkan API built in.
 
 ## Prerequisites
 
@@ -25,13 +25,13 @@ Vulkan is the only graphics pipeline supported with the ML2 Unreal SDK. Unreal E
 You’ll be building the Unreal Engine from source code, which can take several hours or more. So plan ahead.
 :::
 
-## Setup Unreal Engine and the ML2 Unreal SDK
+## Setup Unreal Engine and the Magic Leap 2 Unreal SDK
 
-The version of Unreal Engine for this preview is located in a fork of the Epic Games Unreal Engine GitHub repository. The ML2 Unreal SDK is available from the Magic Leap Hub.
+The version of Unreal Engine for this preview is located in a fork of the Epic Games Unreal Engine GitHub repository. The Magic Leap 2 Unreal SDK is available from the Magic Leap Hub.
 
 ### Install the Magic Leap Hub
 
-You’ll need the Magic Leap Hub to download the ML2 Unreal SDK and examples. If you don’t already have the Magic Leap Hub installed:
+You’ll need the Magic Leap Hub to download the Magic Leap 2 Unreal SDK and examples. If you don’t already have the Magic Leap Hub installed:
 
 1. Go to the [developer tool download page](https://ml2-developer.magicleap.com/downloads) on the Magic Leap 2 developer portal and install the Windows version of the Magic Leap Hub.
 2. Run the installer and complete the setup wizard.
@@ -98,9 +98,9 @@ git clone --single-branch -b 5.1.1-release-ml2 https://github.com/MagicLeapUnrea
   
    The `--single-branch` argument is optional. It reduces the size of the download.
 
-### Download the ML2 Unreal SDK
+### Download the Magic Leap 2 Unreal SDK
 
-To download the ML2 Unreal SDK from the Magic Leap Hub:
+To download the Magic Leap 2 Unreal SDK from the Magic Leap Hub:
 
 1. Launch the Magic Leap Hub. Click **Open** on the Package Manager tile.
 2. In the Bundles tab, select the **Unreal** tile.
@@ -190,7 +190,7 @@ If your project uses any mixed reality streaming or capture features, turn off t
 
 This happens because Unreal Engine does not propagate the alpha channel from the base pass through the post-processing pipeline. Instead, the tonemapper sets a default alpha of 1.0 for every pixel. Unreal Engine uses inverted alpha in OpenXR, so this sets all pixels to fully opaque. 
 
-You can leave the Mobile HDR setting on if you just want to see how your content looks on the ML2 device and don’t mind if it appears on a black background in captures.
+You can leave the Mobile HDR setting on if you just want to see how your content looks on the Magic Leap 2 device and don’t mind if it appears on a black background in captures.
 
 To turn off the Mobile HDR setting when you package your app:
 

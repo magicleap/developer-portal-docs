@@ -3,8 +3,8 @@ id: unreal-create-app
 title: Create an app using Unreal Engine 5
 sidebar_position: 2
 date: 08/30/2023
-tags: [Android,Unreal Engine,Getting Started,Hello Cube]
-keywords: [Android,Unreal Engine,Getting Started]
+tags: [Unreal Engine,Getting Started,Hello Cube]
+keywords: [Unreal Engine,Getting Started]
 
 ---
 
@@ -12,7 +12,7 @@ This guide shows you how to use Unreal Engine to create a simple OpenXR app for 
 
 ## Prerequisites
 
-You’ll need the preview version of Unreal Engine 5 with the Magic Leap 2 SDK for Unreal Engine 5 (ML2 Unreal SDK). We showed you how to build that in [Getting Started with Unreal Engine](/docs/guides/unreal/unreal-getting-started).
+You’ll need the preview version of Unreal Engine 5 with the Magic Leap 2 SDK for Unreal Engine 5. We showed you how to build that in [Getting Started with Unreal Engine](/docs/guides/unreal/unreal-getting-started).
 
 ## Begin the project and configure default settings
 
@@ -52,7 +52,7 @@ You’ll need the preview version of Unreal Engine 5 with the Magic Leap 2 SDK f
 If **DaylightAmbientCube** doesn’t appear in the drop-down menu, click the gear icon and check **Show Engine Content**.
 :::
 
-<Image url= {require("unreal-show-engine-content.png")} >Enable the Show Engine Content setting</Image>
+<Image url= {require("/img/unreal-5/previewdocs/unreal-show-engine-content.png")} >Enable the Show Engine Content setting</Image>
 
 5. In the Place Actors menu, click the cube icon to see the list of shapes. From the Shapes menu, drag the cube into your level.
 
