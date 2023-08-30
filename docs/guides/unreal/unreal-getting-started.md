@@ -2,7 +2,7 @@
 id: unreal-getting-started
 title: Getting Started
 sidebar_position: 1
-date: 08/30/2023
+date: 08/31/2023
 tags: [Android,Unreal Engine,Getting Started]
 keywords: [Android,Unreal Engine,Getting Started]
 
@@ -29,13 +29,17 @@ You’ll be building the Unreal Engine from source code, which can take several 
 
 The version of Unreal Engine for this preview is located in a fork of the Epic Games Unreal Engine GitHub repository. The Magic Leap 2 Unreal SDK is available from the Magic Leap Hub.
 
+### Get access to the Unreal Engine repository
+
+To get access to the Epic Games Unreal Engine GitHub repository, follow the instructions on this page on the Unreal Engine website: [[Accessing Unreal Engine source code on GitHub]](https://www.unrealengine.com/en-US/ue-on-github).
+
 ### Install the Magic Leap Hub
 
 You’ll need the Magic Leap Hub to download the Magic Leap 2 Unreal SDK and examples. If you don’t already have the Magic Leap Hub installed:
 
-1. Go to the [developer tool download page](https://ml2-developer.magicleap.com/downloads) on the Magic Leap 2 developer portal and install the Windows version of the Magic Leap Hub.
+1. Go to the [developer tools download page](https://ml2-developer.magicleap.com/downloads) on the Magic Leap 2 developer portal and install the Windows version of the Magic Leap Hub.
 2. Run the installer and complete the setup wizard.
-3. Install the redistributables from the [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist) page.
+3. Go to the [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist) page. Install the X64 redistributables for Visual Studio 2015, 2017, 2019, and 2022.
 
 ### Install the ML C SDK (optional)
 
