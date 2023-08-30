@@ -8,21 +8,21 @@ keywords: [Android,Unreal Engine,Getting Started]
 
 ---
 
-This preview version of the Magic Leap 2 SDK for Unreal Engine 5 (Magic Leap 2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the 3D graphics engine created by Epic Games.
+This preview version of the Magic Leap 2 SDK for Unreal Engine 5 (Magic Leap 2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the game engine created by Epic Games.
 
 Most functionality in the Magic Leap 2 Unreal SDK is exposed through OpenXR. Some optional APIs, like extended controller and camera functionality, require the Magic Leap Native API SDK (Magic Leap 2 C SDK), also called the C API. Some plugins expose their functionality through components and Blueprint function libraries.
 
-Vulkan is the only graphics pipeline supported with the Magic Leap 2 Unreal SDK. Unreal Engine has support for the Vulkan API built in.
+Vulkan is the only graphics API supported by the Magic Leap 2 Unreal SDK. Unreal Engine has support for the Vulkan API built in.
 
 ## Prerequisites
 
-- This preview release is supported only on Windows. For information on system requirements running Unreal Engine 5 on Windows, see [Hardware and Software Requirements](https://docs.unrealengine.com/5.1/en-US/onboarding-guide-for-unreal-engine-games-licensees/) in the Unreal Engine 5 documentation site.
-- To download and use the version of Unreal Engine for this preview, you need a public GitHub account and an Epic Games account.
-- Visual Studio 2022 is recommended. If you want to use a different version of Visual Studio, you can customize your Unreal Engine GenerateProjectFiles.bat file for that version. If you haven’t installed Visual Studio for use with Unreal Engine before, see  [Setting Up Visual Studio](https://docs.unrealengine.com/5.1/en-US/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine/) in the Unreal Engine 5 documentation site.
-- Android dependencies. Setting up Android for this preview release is a little different than what’s described in [How to Set Up Android SDK and NDK For Your Unreal Engine Development Environment](https://docs.unrealengine.com/5.1/en-US/how-to-set-up-android-sdk-and-ndk-for-your-unreal-engine-development-environment/) in the Unreal Engine 5 documentation site. See [Install Android dependencies](#install-android-dependencies) in this guide for instructions.
+- This preview release is supported only on Windows. For information on system requirements for running Unreal Engine 5 on Windows, see [Hardware and Software Requirements](https://docs.unrealengine.com/5.1/en-US/onboarding-guide-for-unreal-engine-games-licensees/) in the Unreal Engine 5 documentation site.
+- To clone the Magic Leap fork of the Unreal Engine source code for this preview, you need a public GitHub account and an Epic Games account.
+- Visual Studio 2022 is recommended. Visual Studio 2019 is also supported. If you want to use Visual Studio 2019, customize your Unreal Engine GenerateProjectFiles.bat file for that version. If you haven’t installed Visual Studio for use with Unreal Engine before, see  [Setting Up Visual Studio](https://docs.unrealengine.com/5.1/en-US/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine/) in the Unreal Engine 5 documentation site.
+- Android dependencies. Setting up Android for this preview release required different versions of Android Studio and Android SDK and NDK than what’s described in [How to Set Up Android SDK and NDK For Your Unreal Engine Development Environment](https://docs.unrealengine.com/5.1/en-US/how-to-set-up-android-sdk-and-ndk-for-your-unreal-engine-development-environment/) in the Unreal Engine 5 documentation site. See [Install Android dependencies](#install-android-dependencies) in this guide for instructions.
 
 :::tip
-You’ll be building the Unreal Engine from source code, which can take several hours or more. So plan ahead.
+You’ll be building the Unreal Engine from source code, which can take several hours or more.
 :::
 
 ## Setup Unreal Engine and the Magic Leap 2 Unreal SDK
@@ -41,35 +41,29 @@ You’ll need the Magic Leap Hub to download the Magic Leap 2 Unreal SDK and exa
 2. Run the installer and complete the setup wizard.
 3. Go to the [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist) page. Install the X64 redistributables for Visual Studio 2015, 2017, 2019, and 2022.
 
-### Install the ML C SDK (optional)
-
-If you want access functionality that isn’t exposed through OpenXR or Android Open Source Project (AOSP), download the ML C SDK from the Magic Leap Hub:
+### Install the ML C SDK
 
 1. Launch the Magic Leap Hub. Click **Open** on the Package Manager tile.
 2. Click the **Native** tile.
 3. Download and install ML C SDK.
-4. Set the ML C SDK environment variable to the download location. Run this command in the Windows Command Prompt: 
+4. Set the ML C SDK environment variable to the download location. You can do this through Windows Settings:
 
-```bash
-set MLSDK=%USERPROFILE%\MagicLeap\mlsdk\<mlsdk_version>
-```
-
-You can also set the ML C SDK environment variable to the download location through Windows Settings:
-
-1. In the Windows Settings search field, search for "environment".
-2. Choose **Edit the system environment variables**. In the System Properties dialog that appears, make sure the Advanced tab is selected.
-3. Click **Environment Variables**.
-4. In the Environment Variables dialog that appears, click **New** under this list of users variables.
-5. Create a user variable with the variable name `MLSDK` and the variable value `set MLSDK=%USERPROFILE%\MagicLeap\mlsdk\<mlsdk_version>`.
-6. Click **OK** to close each of the dialogs.
+    a. In the Windows Settings search field, search for "environment".
+    b. Choose **Edit the system environment variables**. In the System Properties dialog that appears, make sure the **Advanced** tab is selected.
+    c. Click **Environment Variables**.
+   <Image url= {require("/img/unreal-5/previewdocs/set-window-environment-variables.png")} >The Windows System Properties window with Environment Variables selected</Image>
+    d. In the Environment Variables dialog that appears, click **New** under this list of users variables.
+   <Image url= {require("/img/unreal-5/previewdocs/set-new-window-environment-variablego.png")} >New User Variable window in Environment Variables setting</Image>
+    e. Create a user variable with the variable name `MLSDK` and the variable value `MLSDK=%USERPROFILE%\MagicLeap\mlsdk\<mlsdk_version>`.
+    f. Click **OK** to close each of the dialogs.
 
 ### Install  Android dependencies
 
-If you don’t already have OpenJDK-17 installed:
+If you don’t already have OpenJDK-11 installed:
 
-1. Download the Windows binary of OpenJDK-17 from the [Java developer kit website](https://jdk.java.net/java-se-ri/17).
-2. Extract the zip file and move the `jdk-17` folder to your `%USERPROFILE%` directory.
-3. Set your `JAVA_HOME` environment variable to the path of the `jdk-17` folder.
+1. Download the Windows binary of OpenJDK-11 from the [Java developer kit website](https://jdk.java.net/java-se-ri/11).
+2. Extract the zip file and move the `jdk-11` folder to your `%USERPROFILE%` directory.
+3. Set your `JAVA_HOME` environment variable to the path of the `jdk-11` folder. You can do this through Windows Settings.
 
 :::tip
 If Unity Editor is already installed on the machine that you are installing the Unreal Engine on, rename the folder where Android Studio is already installed to so that the version you install for Unreal Engine can be saved to the default location.
@@ -84,14 +78,14 @@ To set up the versions of the Android SDK and Android NDK required for this prev
 5. In the **SDK Platforms** tab of the Android SDK Manager, select Android SDK 10 (Q) API Level 29.
 6. Select the **SDK Tools** tab of the Android SDK Manager. Select **Show Package Details**.
 7. Scroll down to NDK (side by side). Select Android NDK version **25.0.8775105** and install it.
-8. Scroll down to Android SDK Command-line Tools and select **Android SDK Command-line Tools (latest)**.
+8. Scroll down to Android SDK Command-line Tools and select *9.0**.
 9. Scroll down to Cmake. Select Cmake version **3.22.1**.
 10. Click **OK** to install everything you selected in the Android SDK Manager. Click **OK** to confirm the changes.
 11. Click **Finish** to close the Android SDK Manager.
 
-### Download Unreal Engine
+### Download the Unreal Engine source code
 
-To download the version of Unreal Engine for this preview, clone it from the Magic Leap fork of the Epic Games GitHub repository:
+To download the version of the Unreal Engine source code for this preview, clone it from the Magic Leap fork of the Epic Games GitHub repository:
 
 1. Log in to [GitHub](https://github.com/) with the credentials for your public GitHub account.
 2. In Windows Command Prompt, run this command:
@@ -110,7 +104,7 @@ To download the Magic Leap 2 Unreal SDK from the Magic Leap Hub:
 2. In the Bundles tab, select the **Unreal** tile.
 3. Select **Unreal** in Change Summary to download the ML Unreal SDK, documentation, sample apps, and integration tests. Click **Apply Changes** to download.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-download-from-ml-hub.png")} >Set multi-texture formats in Project Settings</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-download-from-ml-hub.png")} >The Package Manager with Unreal selected.</Image>
 
 ### Set up plugins and projects
 
