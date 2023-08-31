@@ -10,9 +10,13 @@ keywords: [Android,Unreal Engine,Getting Started]
 
 This preview version of the Magic Leap 2 SDK for Unreal Engine 5 (Magic Leap 2 Unreal SDK) lets you create apps for Magic Leap 2 devices using Unreal Engine, the game engine created by Epic Games.
 
-Most functionality in the Magic Leap 2 Unreal SDK is exposed through OpenXR. Some optional APIs, like extended controller and camera functionality, require the Magic Leap Native API SDK (Magic Leap 2 C SDK), also called the C API. Some plugins expose their functionality through components and Blueprint function libraries.
+Most functionality in the Magic Leap 2 Unreal SDK is exposed through OpenXR rather than requiring the Magic Leap Native API SDK (Magic Leap 2 C SDK), also called the C API. Some optional APIs, like extended controller and camera functionality, require the Magic Leap 2 C SDK. Some plugins expose their functionality through components and Blueprint function libraries.
 
 Vulkan is the only graphics API supported by the Magic Leap 2 Unreal SDK. Unreal Engine has support for the Vulkan API built in.
+
+:::note
+If you're new to developing apps for the Magic Leap 2 devices, see our [Developer Tools](/docs/guides/developer-tools) guides for more information on getting started.
+:::
 
 ## Prerequisites
 
@@ -65,9 +69,7 @@ If you don’t already have OpenJDK-11 installed:
 2. Extract the zip file and move the `jdk-11` folder to your `%USERPROFILE%` directory.
 3. Set your `JAVA_HOME` environment variable to the path of the `jdk-11` folder. You can do this through Windows Settings.
 
-:::tip
-If Unity Editor is already installed on the machine that you are installing the Unreal Engine on, rename the folder where Android Studio is already installed to so that the version you install for Unreal Engine can be saved to the default location.
-:::
+When you install Android Studio, you'll need to install it in the default location. If you already have a version of Android Studio installed, this might prevent the version you need for Unreal Engine from being installed in the default location. For example, if you have Unity Editor installed, then you already have Android Studio installed. We recommended uninstalling any version of Android Studio you arleady have install or renaming the directory where it is install to a name that is diffent from the default install location. Note that this means you won't be able to use Unreal Engine at the same time as Unity Editor or other software that requires a different version of Android Studio than the one Unreal Engine uses.
 
 To set up the versions of the Android SDK and Android NDK required for this preview release, you’ll need to install Android Studio Electric Eel, 2022.1.1 Patch 2. This isn’t the latest version or the version recommended in the Unreal Engine 5 documentation.
 
