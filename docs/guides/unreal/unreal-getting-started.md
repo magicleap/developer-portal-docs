@@ -31,7 +31,7 @@ The version of Unreal Engine for this preview is located in a fork of the Epic G
 
 ### Get access to the Unreal Engine repository
 
-To get access to the Epic Games Unreal Engine GitHub repository, follow the instructions on this page on the Unreal Engine website: [[Accessing Unreal Engine source code on GitHub]](https://www.unrealengine.com/en-US/ue-on-github).
+To get access to the Epic Games Unreal Engine GitHub repository, follow the instructions on this page on the Unreal Engine website: [Accessing Unreal Engine source code on GitHub](https://www.unrealengine.com/en-US/ue-on-github).
 
 ### Install the Magic Leap Hub
 
@@ -150,7 +150,7 @@ Engine\Build\BatchFiles\Build.bat UnrealEditor Win64 Development
 Engine\Build\BatchFiles\Build.bat ShaderCompileWorker Win64 Development
 ```
 
-The executable file created is located in the `UnrealEngine` folder at \Engine\Binaries\Win64\UE5Editor.exe.
+The executable file created is located in the `UnrealEngine` folder at `\Engine\Binaries\Win64\UE5Editor.exe`.
 
 :::tip
 To view logcat for Unreal Engine logs, run this command:
