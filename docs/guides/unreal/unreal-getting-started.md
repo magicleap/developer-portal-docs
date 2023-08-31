@@ -104,7 +104,7 @@ To download the Magic Leap 2 Unreal SDK from the Magic Leap Hub:
 2. In the Bundles tab, select the **Unreal** tile.
 3. Select **Unreal** in Change Summary to download the ML Unreal SDK, documentation, sample apps, and integration tests. Click **Apply Changes** to download.
 
-    <Image url= {require("/img/unreal-5/previewdocs/unreal-download-from-ml-hub.png")} >The Package Manager with Unreal selected.</Image>
+    <Image url= {require("/img/unreal-5/previewdocs/unreal-download-from-ml-hub.png")} >The Package Manager with Unreal selected</Image>
 
 ### Set up plugins
 
