@@ -106,25 +106,13 @@ To download the Magic Leap 2 Unreal SDK from the Magic Leap Hub:
 
     <Image url= {require("/img/unreal-5/previewdocs/unreal-download-from-ml-hub.png")} >The Package Manager with Unreal selected.</Image>
 
-### Set up plugins and projects
+### Set up plugins
 
-You can use the plugins in the ML Unreal SDK as Project plugins or Engine plugins. You can copy the ML Unreal SDK plugins to your preferred location or create a symbolic link.
+Set up the plugins in the ML Unreal SDK as Engine plugins. You can copy the ML Unreal SDK plugins to your preferred location or create a symbolic link.
 
 :::tip
 You might need elevated privileges to create a symbolic link. Make sure you run the Windows Command prompt from an account that has administrator privileges. If you still get a message saying you don’t have sufficient privileges to run the `mklink` command, make sure your Windows computer has the Developer Mode setting enabled.
 :::
-
-To link ML Unreal SDK plugins as project plugins:
-
-1. Open the Windows Command Prompt.
-2. Change to the `root` directory of your Unreal project.
-3. Run this command:
-
-```bash
-mklink /d Plugins $UNREAL-SDK\Plugins
-```
-
-4. If you already have a `Plugins` folder in your project you can create the link as `Plugins\MagicLeap`.
 
 To link ML Unreal SDK plugins as engine plugins:
 
@@ -139,22 +127,22 @@ mklink /d MagicLeap $UNREAL-SDK\Plugins
 ### Run the setup and project generation files
 
 1. In the Windows Command Prompt window, go to the `UnrealEngine` folder. The setup and project generation files are in this folder.
-2. Go to the `Engine\Extras\Android` folder.
-3. Run `SetupAndroid.bat` to ensure that the correct version of the Android SDK is installed.
-4. Go back to the `UnrealEngine` folder.
-5. Run `Setup.bat`. This downloads binary content for Unreal Engine, install prerequisites, and sets up Unreal file associations.
-6. If you’re prompted to register the Unreal Engine file type or install prerequisites, click **Yes**.
-7. Run `GenerateProjectFiles.bat`. This creates a file called `UE5.sln` in the same directory.
+2. Go to the `Engine\Extras\Android` folder. Run `SetupAndroid.bat` to ensure that the correct version of the Android SDK is installed.
+3. Go back to the `UnrealEngine` folder. Run `Setup.bat`. This downloads binary content for Unreal Engine, install prerequisites, and sets up Unreal file associations. It might take a few minutes to run.
+4. If you’re prompted to register the Unreal Engine file type or install prerequisites, click **Yes**.
+5. Run `GenerateProjectFiles.bat`. This creates a file called `UE5.sln` in the same directory.
 
     You can use the `UE5.sln` file to build Unreal Engine using Visual Studio.
 
 ### Build Unreal Engine
 
-You can build Unreal Engine from the source file using Visual Studio or from the command line.
+You can build Unreal Engine from the source file using Visual Studio or from the command line. Either way, this step can take several hours to complete.
+
+If you have never built Unreal Engine from source code before, we recommend using Visual Studio.
 
 To build Unreal Engine using Visual Studio, follow the instructions in this article from the Unreal Engine 5 documentation site: [Building Unreal Engine from Source](https://docs.unrealengine.com/5.2/en-US/building-unreal-engine-from-source/). Use the `UE5.sln` file you created when you ran the `GenerateProjectFiles.bat` file.
 
-To build Unreal Engine from the command line, run the `Build.bat` file, run these two commands:
+To build Unreal Engine from the command line, run the `Build.bat` file. Run these two commands:
 
 ```bash
 Engine\Build\BatchFiles\Build.bat UnrealEditor Win64 Development
@@ -162,23 +150,22 @@ Engine\Build\BatchFiles\Build.bat UnrealEditor Win64 Development
 Engine\Build\BatchFiles\Build.bat ShaderCompileWorker Win64 Development
 ```
 
-## Set up Remote Rendering
+The executable file created is located in the `UnrealEngine` folder at \Engine\Binaries\Win64\UE5Editor.exe.
 
-The Magic Leap Application Simulator is not supported for this preview.  You can use Magic Leap Remote Rendering to run the apps you create on a desktop computer and stream it to the Magic Leap 2 device.
-
-You can find instructions for setting up Magic Leap Remote Rendering and using it with Unreal Engine 5 on the Magic Leap 2 developer portal. See [Remote Rendering service](/docs/guides/remote-rendering/remote-rendering) and [Remote Rendering with Unreal Engine 5](/docs/guides/remote-rendering/remote-render-unreal-engine-5).
-
-## Integration testing
-
-Find the integration test in the UnrealSDK project under `Projects/IntegrationTests` in the `unreal-sdk` folder. This is a host application for a suite of integration tests. Depending on the type of API you are implementing, you should either add a new map to this test, or create a new project, or both.
-
-## View logcat
-
+:::tip
 To view logcat for Unreal Engine logs, run this command:
 
 ```bash
 adb logcat -s UE:*
 ```
+
+:::
+
+## Set up Remote Rendering
+
+The Magic Leap Application Simulator is not supported for this preview.  You can use Magic Leap Remote Rendering to run the apps you create on a desktop computer and stream it to the Magic Leap 2 device.
+
+You can find instructions for setting up Magic Leap Remote Rendering and using it with Unreal Engine 5 on the Magic Leap 2 developer portal. See [Remote Rendering service](/docs/guides/remote-rendering/remote-rendering) and [Remote Rendering with Unreal Engine 5](/docs/guides/remote-rendering/remote-render-unreal-engine-5).
 
 ## Limitations and work-arounds
 
