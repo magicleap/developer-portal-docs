@@ -112,9 +112,11 @@ To download the Magic Leap 2 Unreal SDK from the Magic Leap Hub:
 
 Set up the plugins in the ML Unreal SDK as Engine plugins. You can copy the ML Unreal SDK plugins to your preferred location or create a symbolic link.
 
-:::tip
-You might need elevated privileges to create a symbolic link. Make sure you run the Windows Command prompt from an account that has administrator privileges. If you still get a message saying you don’t have sufficient privileges to run the `mklink` command, make sure your Windows computer has the Developer Mode setting enabled.
-:::
+
+To copy the ML Unreal SDK plugins to the Unreal Engine folder as engine plugins:
+
+1. In the `unreal-sdk` folder, copy the `Plugins` folder and move it to this folder within the `UnrealEngine` folder: `Engine\Plugins\Runtime`.
+2. Rename the copied folder in the `UnrealEngine` folder to `MagicLeap`.
 
 To link ML Unreal SDK plugins as engine plugins:
 
@@ -125,6 +127,10 @@ To link ML Unreal SDK plugins as engine plugins:
 ```bash
 mklink /d MagicLeap $UNREAL-SDK\Plugins
 ```
+
+:::tip
+You might need elevated privileges to create a symbolic link. Make sure you run the Windows Command prompt from an account that has administrator privileges. If you still get a message saying you don’t have sufficient privileges to run the `mklink` command, make sure your Windows computer has the Developer Mode setting enabled.
+:::
 
 ### Run the setup and project generation files
 
