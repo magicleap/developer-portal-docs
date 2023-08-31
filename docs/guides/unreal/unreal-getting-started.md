@@ -57,8 +57,8 @@ You’ll need the Magic Leap Hub to download the Magic Leap 2 Unreal SDK and exa
     c. Click **Environment Variables**.
    <Image url= {require("/img/unreal-5/previewdocs/set-window-environment-variables.png")} >The Windows System Properties window with Environment Variables selected</Image>
     d. In the Environment Variables dialog that appears, click **New** under this list of users variables.
-   <Image url= {require("/img/unreal-5/previewdocs/set-new-window-environment-variablego.png")} >New User Variable window in Environment Variables setting</Image>
-    e. Create a user variable with the variable name `MLSDK` and the variable value `MLSDK=%USERPROFILE%\MagicLeap\mlsdk\<mlsdk_version>`.
+   <Image url= {require("/img/unreal-5/previewdocs/set-new-window-environment-variable.png")} >New User Variable window in Environment Variables setting</Image>
+    e. Create a user variable with the variable name `MLSDK` and the variable value `MLSDK=%USERPROFILE%\MagicLeap\mlsdk\MLSDK_VERSION>`.
     f. Click **OK** to close each of the dialogs.
 
 ### Install  Android dependencies
