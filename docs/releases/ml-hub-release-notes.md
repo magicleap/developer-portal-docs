@@ -1,8 +1,18 @@
 ---
 title: Magic Leap Hub Release Notes
 sidebar_position: 2
-date: 08/01/2023
+date: 08/30/2023
 ---
+
+## Version 2.0.14
+* Advanced Capture: UX updates
+* Device Bridge: UX updates
+* OS Installer: enforce factory reset for OS versions that 4 major versions away from current device OS version
+* OS Installer: UX updates
+* Perfetto: UI works even if ML Hub is closed
+* Remote Render: strict requirement to have Wi-Fi bridge enabled is removed
+* Remote Render: sample application can be started from top left menu
+
 ## Version 2.0.13
 * Advanced Capture: UI performance improvements
 * Remote Render: QR Code Pairing
