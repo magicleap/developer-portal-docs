@@ -71,7 +71,6 @@ The first time you use Application Simulator, you need to make an SDK and target
 
     - **Your Device**: If you have a device, Application Simulator can stream the rendered frames to the Headset. Headpose, Controller input, gestures, and similar sensory input is sent from the device to the computer. You are able to effectively preview the app without needing to go through a time-consuming build and deploy process.
 
-    - **Hybrid**: Combines the power of infinite test scenarios within the Simulator with the responsiveness of the physical device sensors. Headpose, Controller input, Hand Tracking, Eye Gaze, and similar sensory input is sent from the device to the computer and is mirrored in the Virtual Room. World reconstruction requests continue to make use of 3D geometry in the virtual room.
 
 2. Click **Connect**.
 
