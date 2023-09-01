@@ -1,5 +1,5 @@
 ---
-title: 1.3.1 - SDK Release Notes
+title: 1.3.0 - SDK Release Notes
 sidebar_position: 3
 date: 08/02/2023
 ---
