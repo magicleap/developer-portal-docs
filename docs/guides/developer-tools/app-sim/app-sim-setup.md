@@ -71,7 +71,6 @@ The first time you use Application Simulator, you need to make an SDK and target
 
     - **Your Device**: If you have a device, Application Simulator can stream the rendered frames to the Headset. Headpose, Controller input, gestures, and similar sensory input is sent from the device to the computer. You are able to effectively preview the app without needing to go through a time-consuming build and deploy process.
 
-
 2. Click **Connect**.
 
 For launching future Application Simulator sessions using the same SDK and target, you can toggle the **State** slider from **Off** to **Running**. The Target dropdown maintains a history of recent launches, allowing convenient switching.

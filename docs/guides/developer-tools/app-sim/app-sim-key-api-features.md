@@ -58,26 +58,25 @@ Notes:
 
 ### Audio API Features
 
-| Feature                  | Simulator | Device ||
-| ------------------------ | :-------: | :----: | :-----------------------------------------------------: |
-| Simple/ Spatial Audio    |     ✓     |   ✓    | 
+| Feature                  | Simulator | Device |
+| ------------------------ | :-------: | :----: | 
+| Simple/ Spatial Audio    |     ✓     |   ✓    |
 
 ### Lifecycle
 
-| Feature   | Simulator | Device | 
-| --------- | :-------: | :----: | 
-| Events(1) |     ✓     |   ✓    | 
+| Feature   | Simulator | Device |
+| --------- | :-------: | :----: |
+| Events(1) |     ✓     |   ✓    |
 
 Notes:
 
 (1) Supported through Android looper APIs for host. Events can be simulated on host, or are forwarded from the device.
 
-
 ### Camera and Camera Metadata API Features
 
-| Feature | Simulator | Device | 
-| ------- | :-------: | :----: | 
-| All (1) |           |   ✓    | 
+| Feature | Simulator | Device |
+| ------- | :-------: | :----: |
+| All (1) |           |   ✓    |
 
 Notes:
 
