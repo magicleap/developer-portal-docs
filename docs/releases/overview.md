@@ -199,20 +199,6 @@ View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
 View the SDK release notes to see what changes were made to the Magic Leap SDK.
 
-## Release 2022 July (Hotfix)
-
-### [OS Release Notes](release-2022-july-2/os-release-notes/os-release-notes.md)
-
-Learn what changes were made in the latest OS release. For your device to take advantage of the latest tools and features, make sure you [flash your device](/docs/guides/device/updating-the-os/device-flashing-guide.md) with the latest OS.
-
-### [Native SDK Release Notes](release-2022-july-2/sdk-release-notes.md)
-
-View the SDK release notes to see what changes were made to the Magic Leap SDK.
-
-### [Unity SDK Release Notes](release-2022-july-2/unity-sdk-release-notes.md)
-
-View the SDK release notes to see what changes were made to the Magic Leap SDK.
-
 ## Release 2022 July
 
 ### [OS Release Notes](release-2022-july/os-release-notes/os-release-notes.md)
