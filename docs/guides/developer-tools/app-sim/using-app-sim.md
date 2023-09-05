@@ -44,19 +44,6 @@ If you want to completely replace the room, click the <Image url= {require("/img
 
 Virtual rooms are created in the Room Generator tool.
 
-## Iterate Simultaneously on Device and Simulator
-
-When both the device and Simulator are contributing data to Application Simulator, sensor data such as headpose updates or controller position updates from different sources are mixed together to provide fused sensor data to Application Simulator.
-
-1. Open the Target Selector.
-2. Select Simulator from the Target Selector.
-3. Click connect
-4. Connect a powered on device to your computer over USB.
-5. Expand the Aux Devices drop-down list.
-6. Add the connected device to the Simulator as a hybrid device.
-
-<Image url= {require("/img/app-sim/hybrid_target.png")} >Target Selector Showing Simulator Selected</Image>
-
 ## Stopping Application Simulator
 
 To stop Application Simulator, toggle the **Target State Selector** to **Disconnected**.
@@ -160,7 +147,7 @@ You may use the following as a template for your message. Remember to attach the
 - Graphics card or chipset:
 - Details:
   - What were you doing when the problem occurred?
-  - Which mode were you using: Simulator, Device, or Hybrid?
+  - Which mode were you using: Simulator or Device?
   - What 3D engine or development platform were you using?
   - Any additional details pertinent to the problem
 

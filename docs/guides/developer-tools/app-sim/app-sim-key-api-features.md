@@ -12,7 +12,7 @@ keywords: [Application Simulator, API Features]
 Application Simulator is backwards compatible with all versions of the MLSDK starting with 1.0.0. Users are encouraged to upgrade to the latest Application Simulator updates in Package Manager.
 :::
 
-Application Simulator's support for API features varies. Features are supported in Simulator, Device, and Hybrid modes. Some are not supported at all.
+Application Simulator's support for API features varies. Features are supported in Simulator and Device modes. Some are not supported at all.
 
 ## Application Simulator Key API Info
 
@@ -20,35 +20,33 @@ Application Simulator's support for API features varies. Features are supported 
 If an API feature does not work and is not on this list, it is not supported by Application Simulator. Unsupported API features compile and link for host targets, but return `MLResult_NotImplemented` when requested.
 :::
 
-In the Hybrid mode column, the standalone references to Simulator, Device, and Mixed (i.e both Simulator and Device) indicate the **data source** for APIs. Graphics and Audio APIs work differently, which is expanded on in the relevant cells.
-
 ### Perception Client API Features
 
-| Feature                  | Simulator | Device |  Hybrid   |
-| ------------------------ | :-------: | :----: | :-------: |
-| Controller 3/6 DOF       |     ✓     |   ✓    |   Mixed   |
-| Eye tracking             |     ✓     |   ✓    |   Mixed   |
-| Gaze recognition         |     ✓     |   ✓    |   Mixed   |
-| Hand tracking            |     ✓     |   ✓    |   Mixed   |
-| Head tracking            |     ✓     |   ✓    |   Mixed   |
-| Head tracking map events |     ✓     |   ✓    |   Mixed   |
-| Marker tracking          |     ✓     |   ✓    | Simulator |
-| Meshing                  |     ✓     |   ✓    | Simulator |
-| ML Time(1)               |     ✓     |   ✓    |   Mixed   |
-| Planes                   |     ✓     |   ✓    | Simulator |
+| Feature                  | Simulator | Device |
+| ------------------------ | :-------: | :----: |
+| Controller 3/6 DOF       |     ✓     |   ✓    |
+| Eye tracking             |     ✓     |   ✓    |
+| Gaze recognition         |     ✓     |   ✓    |
+| Hand tracking            |     ✓     |   ✓    |
+| Head tracking            |     ✓     |   ✓    |
+| Head tracking map events |     ✓     |   ✓    |
+| Marker tracking          |     ✓     |   ✓    |
+| Meshing                  |     ✓     |   ✓    |
+| ML Time(1)               |     ✓     |   ✓    |
+| Planes                   |     ✓     |   ✓    |
 
 ### Input API Features
 
-| Feature                     | Simulator | Device | Hybrid |
-| --------------------------- | :-------: | :----: | :----: |
-| Controller state, Callbacks |     ✓     |   ✓    | Mixed  |
+| Feature                     | Simulator | Device |
+| --------------------------- | :-------: | :----: |
+| Controller state, Callbacks |     ✓     |   ✓    |
 
 ### Graphics API Features(2)
 
-| Feature   | Simulator | Device |                Hybrid                |
-| --------- | :-------: | :----: | :----------------------------------: |
-| OpenGL(3) |     ✓     |   ✓    | Graphics frame rendered in Simulator |
-| Vulkan    |     ✓     |   ✓    | Graphics frame rendered in Simulator |
+| Feature   | Simulator | Device |
+| --------- | :-------: | :----: |
+| OpenGL(3) |     ✓     |   ✓    |
+| Vulkan    |     ✓     |   ✓    |
 
 Notes:
 
@@ -60,26 +58,25 @@ Notes:
 
 ### Audio API Features
 
-| Feature                  | Simulator | Device |                         Hybrid                          |
-| ------------------------ | :-------: | :----: | :-----------------------------------------------------: |
-| Simple/ Spatial Audio    |     ✓     |   ✓    | Audio output directed to either host, Device or both(2) |
+| Feature                  | Simulator | Device |
+| ------------------------ | :-------: | :----: | 
+| Simple/ Spatial Audio    |     ✓     |   ✓    |
 
 ### Lifecycle
 
-| Feature   | Simulator | Device |  Hybrid   |
-| --------- | :-------: | :----: | :-------: |
-| Events(1) |     ✓     |   ✓    | Simulator |
+| Feature   | Simulator | Device |
+| --------- | :-------: | :----: |
+| Events(1) |     ✓     |   ✓    |
 
 Notes:
 
 (1) Supported through Android looper APIs for host. Events can be simulated on host, or are forwarded from the device.
 
-
 ### Camera and Camera Metadata API Features
 
-| Feature | Simulator | Device | Hybrid |
-| ------- | :-------: | :----: | :----: |
-| All (1) |           |   ✓    |        |
+| Feature | Simulator | Device |
+| ------- | :-------: | :----: |
+| All (1) |           |   ✓    |
 
 Notes:
 
