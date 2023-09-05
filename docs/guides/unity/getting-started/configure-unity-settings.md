@@ -171,16 +171,19 @@ To locate the Magic Leap C SDK, open the ML Hub application and go to **Package 
 
 ### Player Settings
 
-Under the **Edit > Project Settings > Player** section, make sure the Android tab is selected, then configure the following settings:
+Under the **Edit > Project Settings > Player** section, make sure the **Android** tab is selected, then configure the following settings:
 
 1. At the top, set the following identifiers:
       1. **Company Name** - the name of your company.
       2. **Product Name** - the name of your app or product *as you want it to appear on the in-device menu*.
-2. Expand **Other Settings** then **Rendering**, and set the **Color Space** property to **Linear**. This enables more realistic rendering. For more information, read Unity’s [gamma and linear color space workflow](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html) guide.
-3. Also under **Rendering**, disable **Auto Graphics API** and make sure the only **Graphics API** listed is **Vulkan**. Additionally, make sure the **Texture Compression Format** is set to **DXT**.
-4. Under **Identification**, set the **Minimum API Level** to 29.
-5. Under **Configuration**, set the **Scripting Backend** to **IL2CPP**.
-6. Also under **Configuration**, check the box next to the Target Architecture **x86-64 (Chrome OS and Magic Leap 2)** and set the **Target Devices** dropdown to **All Devices**.
+2. Navigate to the **Other Settings** section  
+3. Set the **Color Space** property to **Linear**. This enables more realistic rendering.    For more information, read Unity’s [gamma and linear color space workflow](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html) guide.
+4. Disable **Auto Graphics API** and make sure the only **Graphics API** listed is **Vulkan**.
+5. **(Optional)** Enable **Multithreaded Rendering**.
+6. Set the **Texture Compression Format** is set to **DXT + RGTC(BC4, BC5)**.
+7. Under **Identification**, set the **Minimum API Level** to 29.
+8. Under **Configuration**, set the **Scripting Backend** to **IL2CPP**.
+9. Also under **Configuration**, check the box next to the Target Architecture **x86-64 (Chrome OS and Magic Leap 2)** and set the **Target Devices** dropdown to **All Devices**.
 
 ### Build Settings
 
