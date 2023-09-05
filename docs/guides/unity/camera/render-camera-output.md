@@ -119,16 +119,21 @@ public class RGBVisualizer : MonoBehaviour
             _screenRendererRGBA.uvRect = new Rect(0, 1, 1, -1);
         }
 
+        // Image width and stride may differ due to padding bytes for memory alignment. Skip over padding bytes when accessing pixel data.
         if (imagePlane.Stride != actualWidth)
         {
+            // Create a new array to store the pixel data without padding
             var newTextureChannel = new byte[actualWidth * imagePlane.Height];
+            // Loop through each row of the image
             for (int i = 0; i < imagePlane.Height; i++)
             {
+                // Copy the pixel data from the original array to the new array, skipping the padding bytes
                 Buffer.BlockCopy(imagePlane.Data, (int)(i * imagePlane.Stride), newTextureChannel, i * actualWidth, actualWidth);
             }
+            // Load the new array as the texture data
             _rawVideoTextureRGBA.LoadRawTextureData(newTextureChannel);
         }
-        else
+        else // If the stride is equal to the width, no padding bytes are present
         {
             _rawVideoTextureRGBA.LoadRawTextureData(imagePlane.Data);
         }
@@ -163,6 +168,9 @@ public class YUVVisualizer : MonoBehaviour
     [SerializeField, Tooltip("The UI to show the camera capture in YUV format")]
     private RawImage _screenRendererYUV = null;
 
+    [SerializeField, Tooltip("The shader used for the YUV to RGB conversion. (Unlit/YUV_Camera_Shader)")]
+    private Shader _yuv2RgbShader;
+
     //The Image Textures for each channel Y,U,V
     private Texture2D[] _rawVideoTexturesYuv = new Texture2D[3];
     private byte[] _yChannelBuffer;
@@ -178,91 +186,147 @@ public class YUVVisualizer : MonoBehaviour
 
     public void OnCaptureDataReceived(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCamera.Metadata metadataHandle)
     {
-        if (output.Format == MLCamera.OutputFormat.YUV_420_888)
-        {
-            UpdateYUVTextureChannel(ref _rawVideoTexturesYuv[0], output.Planes[0],
-                      SamplerNamesYuv[0], ref _yChannelBuffer);
-            UpdateYUVTextureChannel(ref _rawVideoTexturesYuv[1], output.Planes[1],
-                SamplerNamesYuv[1], ref _uChannelBuffer);
-            UpdateYUVTextureChannel(ref _rawVideoTexturesYuv[2], output.Planes[2],
-                SamplerNamesYuv[2], ref _vChannelBuffer);
+        // Ensure the output format is YUV_420_888 before processing.
+        if (output.Format != MLCamera.OutputFormat.YUV_420_888)
+            return;
 
-            if (!_renderTexture)
+        // Create an instance of the YUV render material.
+        InitializeMaterial();
+
+        // Update YUV texture channels based on the image data received.
+        UpdateYUVTextureChannel(ref _rawVideoTexturesYuv[0], output.Planes[0], SamplerNamesYuv[0], ref _yChannelBuffer);
+        UpdateYUVTextureChannel(ref _rawVideoTexturesYuv[1], output.Planes[1], SamplerNamesYuv[1], ref _uChannelBuffer);
+        UpdateYUVTextureChannel(ref _rawVideoTexturesYuv[2], output.Planes[2], SamplerNamesYuv[2], ref _vChannelBuffer);
+
+        // Combines each of the YUV channels to a single ARGB32 Render texture.
+        CombineYUVChannels2RGB(output);
+    }
+
+    // Initialize the material that will be used to render the YUV channels
+    private void InitializeMaterial()
+    {
+        // Ensure the YUV shader is valid
+        if (_yuv2RgbShader == null)
+        {
+            _yuv2RgbShader = Shader.Find("Unlit/YUV_Camera_Shader");
+            if (_yuv2RgbShader == null)
             {
-                // Create a render texture that will display the RGB image
-                _renderTexture = new RenderTexture((int)output.Planes[0].Width, (int)(output.Planes[0].Height), 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.Linear);
-                
-                // Create a command buffer that will be used for Blitting
+                Debug.LogError("Unlit/YUV_Camera_Shader not found. Disabling Visualizer.");
+                this.enabled = false;
+                return;
+            }
+        }
+
+        // Ensure the material is initialized with the correct shader.
+        if (_yuvMaterial == null)
+        {
+            _yuvMaterial = new Material(_yuv2RgbShader);
+        }
+    }
+
+    // Combines each of the YUV channels to a single ARGB32 Render texture.
+    private void CombineYUVChannels2RGB(MLCamera.CameraOutput output)
+    {
+        // If the render texture hasn't been initialized yet, set it up.
+        if (!_renderTexture)
+        {
+            // Create a render texture that will be used to display the RGB image.
+            _renderTexture = new RenderTexture((int)output.Planes[0].Width, (int)(output.Planes[0].Height), 0, RenderTextureFormat.ARGB32, 0);
+
+            // Check if the command buffer needs initialization.
+            if (_commandBuffer == null)
+            {
+                // Create a command buffer for the graphics blit operation.
                 _commandBuffer = new CommandBuffer();
                 _commandBuffer.name = "YUV2RGB";
-
-                // Create a Material with a shader that will combine all of our channels into a single Render Texture
-                _yuvMaterial = new Material(Shader.Find("Unlit/YUV_Camera_Shader"));
-
-                // Assign the RawImage Texture to the Render Texture
-                _screenRendererYUV.texture = _renderTexture;
             }
 
-            // Set the texture's scale based on the output image
-            _yuvMaterial.mainTextureScale = new Vector2(1f / output.Planes[0].PixelStride, -1.0f);
-
-            // Blit the resulting Material into a single render texture
-            _commandBuffer.Blit(null, _renderTexture, _yuvMaterial);
-            Graphics.ExecuteCommandBuffer(_commandBuffer);
-            _commandBuffer.Clear();
+            // Link the screen renderer's texture to the render texture.
+            _screenRendererYUV.texture = _renderTexture;
         }
+
+        // Adjust the texture's scale based on the output image.
+        // This is done to compensate for any pixel stride in the Y channel, and to flip the image vertically.
+        _yuvMaterial.mainTextureScale = new Vector2(1f / output.Planes[0].PixelStride, -1.0f);
+
+        // Blit (copy) the YUV material to the render texture, effectively converting YUV to RGB in the process.
+        _commandBuffer.Blit(null, _renderTexture, _yuvMaterial);
+
+        // Execute the command buffer to render the changes.
+        Graphics.ExecuteCommandBuffer(_commandBuffer);
+
+        // Clear the command buffer to prepare it for the next round of rendering.
+        _commandBuffer.Clear();
     }
 
     private void UpdateYUVTextureChannel(ref Texture2D channelTexture, MLCamera.PlaneInfo imagePlane,
                                                string samplerName, ref byte[] newTextureChannel)
     {
-        if (channelTexture != null &&
-            (channelTexture.width != imagePlane.Width || channelTexture.height != imagePlane.Height))
-        {
-            Destroy(channelTexture);
-            channelTexture = null;
-        }
+        // Define texture dimensions based on the image plane information.
+        int textureWidth = (int)imagePlane.Width;
+        int textureHeight = (int)imagePlane.Height;
 
-        if (channelTexture == null)
+        // Check if the channelTexture either does not exist or its dimensions don't match the current image plane.
+        if (channelTexture == null ||
+            channelTexture.width != textureWidth ||
+            channelTexture.height != textureHeight)
         {
+            // If the channelTexture exists but has incorrect dimensions, destroy it to make space for a new one.
+            if (channelTexture != null)
+            {
+                Destroy(channelTexture);
+            }
+
+            // Depending on the PixelStride of the image, determine the texture format.
+            // PixelStride represents the number of bytes for each pixel in the image.
             if (imagePlane.PixelStride == 2)
             {
-                channelTexture = new Texture2D((int)imagePlane.Width, (int)(imagePlane.Height), TextureFormat.RG16, false)
-                {
-                    filterMode = FilterMode.Bilinear
-                };
+                // If each pixel has 2 bytes, it means we have two channels (like Y and U, or Y and V).
+                // Hence, use RG16 format where each channel (R and G) will represent one byte of data.
+                channelTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.RG16, false);
             }
             else
             {
-                channelTexture = new Texture2D((int)imagePlane.Width, (int)(imagePlane.Height), TextureFormat.Alpha8, false)
-                {
-                    filterMode = FilterMode.Bilinear
-                };
+                // Otherwise, assume a single channel (like pure Y, U, or V) and use Alpha8 format.
+                channelTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.Alpha8, false);
             }
+            // Set the filter mode for the texture and assign it to the material.
+            channelTexture.filterMode = FilterMode.Bilinear;
             _yuvMaterial.SetTexture(samplerName, channelTexture);
         }
 
-        int actualWidth = (int)(imagePlane.Width * imagePlane.PixelStride);
+        // Calculate the actual width in bytes of the image data.
+        int actualWidth = (int) (textureWidth * imagePlane.PixelStride);
+
+        // Check if there's padding or other data altering the stride of the image.
         if (imagePlane.Stride != actualWidth)
         {
-            if (newTextureChannel == null || newTextureChannel.Length != (actualWidth * imagePlane.Height))
+            // Calculate the required length for the new texture channel based on actual width.
+            int requiredLength = actualWidth * textureHeight;
+            // If the newTextureChannel either doesn't exist or has incorrect dimensions, reallocate.
+            if (newTextureChannel == null || newTextureChannel.Length != requiredLength)
             {
-                newTextureChannel = new byte[actualWidth * imagePlane.Height];
+                newTextureChannel = new byte[requiredLength];
             }
 
-            for (int i = 0; i < imagePlane.Height; i++)
+            // Copy data from the image plane to the new texture channel byte by byte.
+            for (int i = 0; i < textureHeight; i++)
             {
-                Buffer.BlockCopy(imagePlane.Data, (int)(i * imagePlane.Stride), newTextureChannel,
-                    i * actualWidth, actualWidth);
+                int sourceOffset = (int) (i * imagePlane.Stride);
+                int destOffset = i * actualWidth;
+                Buffer.BlockCopy(imagePlane.Data, sourceOffset, newTextureChannel, destOffset, actualWidth);
             }
 
+            // Load the processed data into the channelTexture.
             channelTexture.LoadRawTextureData(newTextureChannel);
         }
         else
         {
+            // If the stride matches the actual width, load the image plane data directly into the channelTexture.
             channelTexture.LoadRawTextureData(imagePlane.Data);
         }
 
+        // Apply the changes made to the texture.
         channelTexture.Apply();
     }
 }
