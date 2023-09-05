@@ -1,5 +1,5 @@
 ---
-title: Sensor Input
+title: Unity Sensor Input
 date: 08/29/2023
 tags: [Magic Leap, Android, Unity]
 keywords: [Magic Leap, Android, Generic, Sensor, Input]
@@ -9,24 +9,17 @@ keywords: [Magic Leap, Android, Generic, Sensor, Input]
 
 Sensors are devices that measure environmental characteristics of the device that the content is running on, such as light, pressure, temperature, orientation, and motion. Unity’s Input System allows you to access sensors on Android devices using the standard Android Sensor API. In this guide, we will show you how to enable, disable, and read data from sensors on Android using the Input System.
 
-
 :::caution
 While the generic sensors such as the Light Sensor can be accessed using the generic Android API and Unity Input System, platform specific sensors like World Cameras can only be obtained via the Magic Leap SDK.
 :::
-
 
 ## Prerequisites
 
 - Unity 2020.1 or later with the [Input System package](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html) installed
 
-  
-
 ## Available sensors
 
 The following table lists the sensors that are available on Android devices and their corresponding sensor types and controls in the Input System.
-
-See the [Android Sensor API Guide](/docs/guides/features/generic-sensors.md) for a complete list of Magic Leap 2 sensors compatable with the Android Sensor API.
-
 
 |Sensor Name|Sensor Type|Control Type|Description|
 |---|---|---|---|
@@ -42,121 +35,209 @@ See the [Android Sensor API Guide](/docs/guides/features/generic-sensors.md) for
 Unlike other input devices, sensors are disabled by default in the Input System. To enable a sensor, you need to call `InputSystem.EnableDevice()` with the sensor device as an argument. For example, to enable the gyroscope sensor, you can write:
 
 ```csharp
-InputSystem.EnableDevice(Gyroscope.current);
+using UnityEngine.InputSystem;
+...
+InputSystem.EnableDevice(UnityEngine.InputSystem.Gyroscope.current);
 ```
-  
 
 To disable a sensor, you need to call `InputSystem.DisableDevice()` with the sensor device as an argument. For example, to disable the gyroscope sensor, you can write:
 
 ```csharp
-InputSystem.DisableDevice(Gyroscope.current);
+InputSystem.DisableDevice(UnityEngine.InputSystem.Gyroscope.current);
 ```
-  
 
 To check whether a sensor is currently enabled, you can use the `InputDevice.enabled` property. For example, to check if the gyroscope sensor is enabled, you can write:
 
 ```csharp
-if  (Gyroscope.current.enabled)
+if  (UnityEngine.InputSystem.Gyroscope.current.enabled)
 {
 	Debug.Log("Gyroscope  is  enabled");
 }
 ```
-  
 
 ## Reading sensor data
 
-When a new sensor event is available, the `Sensor.onSensorChanged` event is triggered. You can subscribe to this event with a callback function that takes a Sensor parameter. The Sensor object contains information about the sensor device and the sensor data. For example, to print the angular velocity of the gyroscope sensor, you can write:
+The simplest way to read the sensor data, like the Gyroscope, is to read the value directly. In the following example we will access the `angularVelocity` control from the `Gyroscope` device and print the value to the console. The `angularVelocity`  returns a `Vector3` value that represents the angular velocity of the device in radians per second.
 
-:::info
-
-The names in the sensor overview table can be used in conjunction with [Sensor.displayName](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.InputControl.html#UnityEngine_InputSystem_InputControl_displayName) to identify which sensor was updated.
-
-:::
-
-  
 ```csharp
-void  OnEnable()
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class GyroTest : MonoBehaviour
 {
-	Sensor.onSensorChanged  +=  OnSensorChanged;
+    void Update()
+    {
+        // Get the gyroscope device
+        Gyroscope gyro = UnityEngine.InputSystem.Gyroscope.current;
+        // Check if the device is available and enabled
+        if (gyro != null && gyro.enabled)
+        {
+            // Read the angular velocity
+            Vector3 angularVelocity = gyro.angularVelocity.ReadValue();
+            // Print the value to the console
+            Debug.Log("Gyroscope angular velocity: " + angularVelocity);
+        }
+    }
 }
 
-void  OnDisable()
+```
+
+Make sure to enable the gyroscope device before you can read its data, as sensors are disabled by default. You can do this by calling `InputSystem.EnableDevice(UnityEngine.InputSystem.Gyroscope.current)`. You can also disable the device by calling `InputSystem.DisableDevice(UnityEngine.InputSystem.Gyroscope.current)`.
+
+## Reading the data using Input Actions
+
+Another way to read the gyroscope data is to use Input Actions. Input Actions are a way to abstract input devices and controls, and map them to logical actions in your game. For example, you can create an Input Action called “Rotate” and map it to the gyroscope’s `angularVelocity` control. Then, you can subscribe to the action’s events and perform some logic based on the input value. For example, you can rotate an object in your scene according to the gyroscope input.
+
+## Input Action Asset
+
+To create an Input Action, you need to use the [Input Action Asset Editor](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/api/UnityEngine.InputSystem.Android.AndroidGyroscope.html), which is a graphical tool that lets you create and edit Input Action Assets. An Input Action Asset is a ScriptableObject that contains a set of Input Actions and Input Action Maps. An Input Action Map is a collection of Input Actions that belong to a specific context or mode in your game, such as “Menu” or “Gameplay”.
+
+To create an Input Action that references the gyroscope do the following:
+
+1. Create an Input Action Asset, go to **Assets > Create > Input Actions**. This will create a new asset in your project and open the editor window.
+2. Create an Input Action Map, click on the **+** button next to **Action Maps** and give it a name, such as "Gameplay".
+3. Create an Input Action, click on the **+** button next to **Actions** and give it a name, such as “Rotate”
+4. Set its **Action Type** to **Value** and **Control Type** to **Vector3**.
+5. Map the action to the gyroscope’s `angularVelocity` control, click on the **+** button next to **Bindings** and select **Gyroscope > angularVelocity** from the dropdown menu.
+
+To use the Input Action in your script, you need to reference the Input Action Asset and enable it. You also need to register a callback function for the action’s events, such as `started`, `performed`, and `canceled`. For example, you can do something like this:
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class GyroActionTest : MonoBehaviour
 {
-	Sensor.onSensorChanged  -=  OnSensorChanged;
+    // Reference to the Input Action Asset
+    public InputActionAsset inputActions;
+    // Reference to the Rotate action
+    private InputAction rotateAction;
+    // Reference to an object in the scene
+    public Transform target;
+
+    void Awake()
+    {
+        // Get the Rotate action from the Gameplay action map
+        rotateAction = inputActions.FindActionMap("Gameplay").FindAction("Rotate");
+        // Register a callback for the performed event
+        rotateAction.performed += OnRotatePerformed;
+    }
+
+    void OnEnable()
+    {
+        // Enable the action
+        rotateAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        // Disable the action
+        rotateAction.Disable();
+    }
+
+    void OnRotatePerformed(InputAction.CallbackContext context)
+    {
+        // Read the angular velocity value from the context
+        Vector3 angularVelocity = context.ReadValue<Vector3>();
+        // Rotate the target object according to the input value
+        target.Rotate(angularVelocity * Time.deltaTime);
+    }
 }
 
-void  OnSensorChanged(Sensor  sensor)
+```
+
+## Create Input Actions at runtime
+
+You can also create input actions at runtime using code, without using the editor tool or an asset. This gives you more flexibility and control over how you define and use input actions. For example, you can create an input action for reading gyroscope data like this:
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class GyroRuntimeTest : MonoBehaviour
 {
-	if  (sensor  is  Gyroscope)
-	{
-		//  Get  the  angular  velocity  in  radians  per  second
-		Vector3  angularVelocity  =  ((Gyroscope)sensor).angularVelocity.ReadValue();
-		//  Print  the  angular  velocity
-		Debug.Log($"Gyroscope:  x:  {angularVelocity.x},  y:  {angularVelocity.y},  z:  {angularVelocity.z}");
-	}
+    // Reference to the Rotate action
+    private InputAction rotateAction;
+    // Reference to an object in the scene
+    public Transform target;
+
+    void Start()
+    {
+        // Create a new input action with the gyroscope's angularVelocity control
+        rotateAction = new InputAction("GyroRuntime", InputActionType.Value, "<Gyroscope>/angularVelocity");
+        
+        rotateAction.Enable();
+        // Register a callback for the performed event
+        rotateAction.performed += OnRotatePerformed;
+    }
+
+    void OnEnable()
+    {
+        // Enable the action
+        rotateAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        // Disable the action
+        rotateAction.Disable();
+    }
+
+    void OnRotatePerformed(InputAction.CallbackContext context)
+    {
+        // Read the angular velocity value from the context
+        Vector3 angularVelocity = context.ReadValue<Vector3>();
+        // Rotate the target object according to the input value
+        target.Rotate(angularVelocity * Time.deltaTime);
+    }
 }
 ```
 
-Alternatively, you can also read sensor data directly from the sensor device’s control. Each sensor device implements a single control that represents the data read by the sensor. The type and meaning of the control depend on the sensor type. For example, to get the ambient light level from the light sensor, you can write:
+Note that you can also use [InputActionMap](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/manual/Sensors.html), which is a class that represents a collection of input actions. You can create and add input actions to an input action map at runtime, and enable and disable the whole map or individual actions.
+
+## Simple Example
+
+Below is a very simple example of how to log sensor data to the unity console at runtime:
 
 ```csharp
-//  Get  the  light  level  in  lux
-float  lightLevel  =  LightSensor.current.lightLevel.ReadValue();
-//  Print  the  light  level
-Debug.Log($"Light  Sensor:  {lightLevel}  lx");
-```
-  
-Identifying the correct sensor
-
-To obtain the sensor data, you can use the ReadValue() method of the sensor device. For example, to read the acceleration vector from the accelerometer sensor, you can write:
-
-If the device has multiple instances of the same sensor type, such as three gyroscopes with different names, you can use the InputSystem.FindDevices() method to find all the devices that match a given layout name or device description. For example, to find all the gyroscopes on the device, you can write:
-
-```csharp
-using  UnityEngine.InputSystem;
-...
-
-var  gyroscopes  =  InputSystem.FindDevices<Gyroscope>();
-foreach  (var  gyroscope  in  gyroscopes)
+using UnityEngine;
+using UnityEngine.InputSystem;
+public class SensorLogger : MonoBehaviour
 {
-	//  prints  the  name  of  each  gyroscope
-	Debug.Log(gyroscope.name);  
+    // Declare the sensors you want to enable and log
+    private Gyroscope gyroscope;
+    private Accelerometer accelerometer;
+    private LightSensor lightSensor;
+    // Use this for initialization
+    void Start()
+    {
+        // Enable the sensors using InputSystem.EnableDevice()
+        gyroscope = Gyroscope.current;
+        accelerometer = Accelerometer.current;
+        lightSensor = LightSensor.current;
+        InputSystem.EnableDevice(gyroscope);
+        InputSystem.EnableDevice(accelerometer);
+        InputSystem.EnableDevice(lightSensor);
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        // Read the sensor values using ReadValue()
+        Vector3 angularVelocity = gyroscope.angularVelocity.ReadValue();
+        Vector3 acceleration = accelerometer.acceleration.ReadValue();
+        float lightLevel = lightSensor.lightLevel.ReadValue();
+        // Log the sensor values using Debug.Log()
+        Debug.Log("Gyroscope: " + angularVelocity);
+        Debug.Log("Accelerometer: " + acceleration);
+        Debug.Log("Light Sensor: " + lightLevel);
+    }
 }
 ```
-  
-
-To access a specific gyroscope by name, you can use the `InputSystem.GetDevice()` method and pass the name as an argument. For example, to access the gyroscope named “Headset Left Gyroscope Sensor”, you can write:
-
-```csharp
-using  UnityEngine.InputSystem;
-...
-
-var  leftGyroscope  =  InputSystem.GetDevice<Gyroscope>("Headset  Left  Gyroscope  Sensor");
-if  (leftGyroscope  !=  null)
-{
-	Quaternion  rotation  =  leftGyroscope.angularVelocity.ReadValue();
-}
-```
-
-
-## Sampling frequency
-
-Sensors sample continuously at a set interval. You can set or query the sampling frequency for each sensor using the Sensor.samplingFrequency property. The frequency is expressed in Hertz (number of samples per second). For example, to get and set the sampling frequency of the gyroscope sensor, you can write:
-
-```csharp
-//  Get  the  sampling  frequency  of  the  gyroscope  sensor
-float  frequency  =  Gyroscope.current.samplingFrequency;
-//  Set  the  sampling  frequency  of  the  gyroscope  sensor  to  16  Hz
-Gyroscope.current.samplingFrequency  =  16f;
-```
-  
 
 ## References
 
 For more information and examples on how to use Android’s Sensor API or how to obtain sensor data in Unity’s Input System, please refer to the following resources:
 
--   [Sensors Overview | Android](https://developer.android.com/guide/topics/sensors/sensors_overview)
-    
--   [Sensor Suppor | Input Systemt](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Sensors.html)
-    
--   [Sensor API | Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Sensor.html)
+- [Sensors Overview | Android](https://developer.android.com/guide/topics/sensors/sensors_overview)
+- [Sensor Support | Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Sensors.html)
+- [Sensor API | Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Sensor.html)
