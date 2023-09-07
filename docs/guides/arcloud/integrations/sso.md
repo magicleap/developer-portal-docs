@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 ## Overview
 
 The Keycloak instance bundled with an AR Cloud installation allows [integrating an external Identity Provider][idp] to
-support [Single Sign-On][sso-protocols] for its users. This page contains short instructions of the configurations steps
+support [Single Sign-On][sso-protocols] for its users. This page contains short instructions of the configuration steps
 needed to prepare such an integration. For details, please refer to the [Keycloak documentation][idp].
 
 ## SAML 2.0
@@ -27,13 +27,13 @@ Different identity solutions might have slightly different names for the fields 
 general the process requires to create an application / connection in the identity solution and link it with Keycloak
 using the following fields:
 
-* the **Redirect URI** / **Assertion Consumer Service (ACS) URL** / **Application Callback URL** / **Single Sign On
+* The **Redirect URI** / **Assertion Consumer Service (ACS) URL** / **Application Callback URL** / **Single Sign On
     URL** - used to send a HTTP POST request with the `SAMLResponse` after a successful user login using the Identity
     Provider
-* the **Service Provider entity ID** / **SP entity ID** / **Audience URI** / **Audience Restriction** - restricts the
+* The **Service Provider entity ID** / **SP entity ID** / **Audience URI** / **Audience Restriction** - restricts the
     audience to the specified Service Provider configuration (one Service Provider might have multiple Identity
     Providers configured)
-* the **SAML entity descriptor** / **Metadata URL** / **SAML Metadata URL** / **Identity Provider Metadata** - a link to
+* The **SAML entity descriptor** / **Metadata URL** / **SAML Metadata URL** / **Identity Provider Metadata** - a link to
     an XML document with all the information necessary to configure the Identity Provider, e.g. entity ID, signing
     certificate, URLs of the endpoints, supported attributes
 
@@ -41,7 +41,7 @@ using the following fields:
 
 To configure a [SAML-based identity provider][saml], follow the steps below:
 
-1. Use the configured domain with an `/auth/` path or click on **Users** in the top menu of the Enterprise Console.
+1. Access Keycloak by appending `/auth/` to your Enterprise Console URL, or from within the Enterpreise Console interface by clicking on **Users** in the top menu.
 1. Log in using the generated credentials for the administrator account. The credentials are provided after a successful
    installation.
 1. Select the `magicleap` realm from the top-left corner.
@@ -71,7 +71,7 @@ Detailed instructions can be found in the Okta documentation:
    https://{your-domain}/auth/realms/magicleap/broker/{your-alias}/endpoint`
    ```
 
-1. Copy the **Service provider entity ID** value from Keycloak and paste it in Okta as **Audience URI**.
+1. Copy the **Service provider entity ID** value from Keycloak and paste it in Okta as **Audience URI (SP Entity ID)**.
 1. Complete the form with your custom configuration, if needed, and click on **Next**.
 1. Select **I'm a software vendor. I'd like to integrate my app with Okta** and click on **Finish**.
 1. Copy the generated **Metadata URL** for the application in Okta and paste it in Keycloak as **SAML entity
@@ -119,10 +119,9 @@ Detailed instructions can be found in the Auth0 documentation:
 
 ### Verification
 
-1. Log out of the Enteprise Console, try logging in again and pick the alias you configured to be redirected to your
-   Identity Provider.
-1. Use the credentials for one of the users from the Identity Provider.
-1. Fill in the required user data in Keycloak to complete the process (this is required if the user does not yet exist
+1. Log out of the Enterprise Console. Underneath the standard Sign In button should be a link to log in with your Identity Provider alias.
+2. Use the credentials for one of the users from the Identity Provider.
+3. Fill in the required user data in Keycloak to complete the process (this is required if the user does not yet exist
    in Keycloak and needs to be done only once).
 
 
