@@ -9,8 +9,12 @@ keywords: [Magic Leap, Android, Generic, Sensor, Input]
 
 Sensors are devices that measure environmental characteristics of the device that the content is running on, such as light, pressure, temperature, orientation, and motion. Unity’s Input System allows you to access sensors on Android devices using the standard Android Sensor API. In this guide, we will show you how to enable, disable, and read data from sensors on Android using the Input System.
 
-:::caution
-While the generic sensors such as the Light Sensor can be accessed using the generic Android API and Unity Input System, platform specific sensors like World Cameras can only be obtained via the Magic Leap SDK.
+:::caution Android Sensor API
+Developers will need to use the standard Android Sensor API by creating a custom plugin to access additional sensors. Using the Android Sensor API directly allows for greater flexibility and lets developers choose specific sensors. For example, they can use the Gyro sensor on the compute pack instead of the one on the headset.
+:::
+
+:::caution Additional Sensors
+While generic sensors, such as the Light Sensor, can be accessed using the Android Sensor API and Unity Input System, platform-specific sensors, like World Cameras, can only be obtained through APIs provided in the Magic Leap SDK.
 :::
 
 ## Prerequisites
@@ -25,10 +29,10 @@ The following table lists the sensors that are available on Android devices and 
 |---|---|---|---|
 |Accelerometer|Accelerometer|`Vector3Control`|Measures the acceleration of the device in meters per second squared|
 |Gyroscope|Gyroscope|`Vector3Control`|Measures the angular velocity of the device in radians per second|
-|Attitude Sensor|AttitudeSensor|`QuaternionControl`|Measures the orientation of the device|
-|Magnetic Field Sensor|MagneticFieldSensor|`Vector3Control`|Measures the magnetic field strength of the device in microteslas|
 |Light Sensor| LightSensor |`AxisControl`|Measures the ambient light level of the device in lux|
 |Pressure Sensor| PressureSensor |`AxisControl` |Measures the atmospheric pressure of the device in hectopascals|
+
+
 
 ## Enabling and disabling sensors
 
@@ -194,6 +198,7 @@ public class GyroRuntimeTest : MonoBehaviour
 ```
 
 Note that you can also use [InputActionMap](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/manual/Sensors.html), which is a class that represents a collection of input actions. You can create and add input actions to an input action map at runtime, and enable and disable the whole map or individual actions.
+
 
 ## Simple Example
 
