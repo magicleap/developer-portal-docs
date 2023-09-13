@@ -77,7 +77,7 @@ Jump ahead to step 13 if you use this method.
 12. You're prompted to set the connection. Set the **Connection** dropdown from **Local ==> Remote <ip_addr>**.
 <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_set_connection_local.png")} >Set Connection - Local to Remote</Image>
 
-13. Enter the IP address under **Host Name** that you saved from step 8. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_add_host_name.png")} >Add Host Name</Image>
+13. Enter the IP address under **Host Name** that you saved from step 8. Make sure the port number is **27300**. Click on Connect. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_add_host_name.png")} >Add Host Name</Image>
 
 14. If the connection is successful, you see a green dot next to **Connection**. It means your devices are connected and communicating, and the next application launched should be caught. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_connection_ok.png")} >Connection Ok</Image>
 
