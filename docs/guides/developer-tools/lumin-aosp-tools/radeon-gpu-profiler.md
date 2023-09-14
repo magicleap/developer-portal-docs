@@ -58,20 +58,18 @@ This section walks you through installing RGP.
 
 1. Navigate to the Magic Leap Hub. 
 
-2. In Magic Leap Hub, open the Package Manager. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_package_manager.png")} >Download RGP</Image>
+2. In Magic Leap Hub, open the **Package Manager**. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_package_manager.png")} >Download RGP</Image>
 
 3. Click the **All** icon. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_all_icon.png")} >Click All Icon</Image> 
 
-4. Find the **Radeon GPU Profiler** package within the Common Packages category. Download the latest one. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_download_screen.png")} >Download RGP</Image>
+4. Find the **Radeon GPU Profiler** package within the **Common Packages** category. Download the latest one. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_download_screen.png")} >Download RGP</Image>
 
-5. You need to get access to adb to communicate with the device. The tool is part of Magic Leap Hub and can be found under: C:\Users\_user_\MagicLeap\MLHub\plugins\com.magicleap.adb.win32.x86_64_1.0.41.28_0_2_202304071616\adb\adb.exe for windows. Use this guide to add this path to your Path environment variable on windows.
-
-6. Check that you have access to adb by running: ```adb devices``` 
+5. Double check that you have access to adb by running: ```adb devices``` 
 You should see that your device is connected to the host. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_device_connected.png")} >Check Device Connection with adb</Image>
 
-7. Connect your Magic Leap 2 device to WiFi. Public WiFi will not work since peer-to-peer connections are disabled on public WiFi. Try connecting to a private WiFi network with password protection.
+6. Connect your Magic Leap 2 device to WiFi. Public WiFi will not work since peer-to-peer connections are disabled on public WiFi. Try connecting to a private WiFi network with password protection.
 
-8. You can verify WiFi communication with these commands:
+7. You can verify WiFi communication with these commands:
 ```adb shell ip -o -h -c a #reveals the IP address of your device under wLan0```
 
 ```ping <device-ip-addr> #contacts the device via WiFi to verify connection```
@@ -82,23 +80,23 @@ If the ping fails, then your device and PC are not accessible to each other on t
 
 Save the address displayed in the red box, you will need it later on.
 
-9. You can launch RGP using Python 3 if you have it installed, or with the Magic Leap Hub and a commandline.
+8. You can launch RGP using Python 3 if you have it installed, or with the Magic Leap Hub and a commandline.
 
 Python launch method - Navigate to your extracted RGP folder and run the following command: 
 ```./rdp_android.py --target <device_ip_addr>```
 
-Jump ahead to step 13 if you use this method. 
+Jump ahead to step 12 if you use this method. 
 
-10. If you do not have Python 3 installed, you can also launch RGP using the Magic Leap Hub and a commandline. Start by going to the commandline and running ```adb shell /vendor/bin/RadeonDeveloperServiceCLI```
+9. If you do not have Python 3 installed, you can also launch RGP using the Magic Leap Hub and a commandline. Start by going to the commandline and running ```adb shell /vendor/bin/RadeonDeveloperServiceCLI```
 
-11. Navigate to the Magic Leap Hub and launch RGP by finding the **RadeonTM GPU Profiler** and clicking **Launch**. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_launch_from_hub.png")} >Launch RGP with Hub and commandline</Image>
+10. Navigate to the Magic Leap Hub and launch RGP by finding the **RadeonTM GPU Profiler** and clicking **Launch**. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_launch_from_hub.png")} >Launch RGP with Hub and commandline</Image>
 
-12. You're prompted to set the connection. Set the **Connection** dropdown from **Local ==> Remote <ip_addr>**.
+11. You're prompted to set the connection. Set the **Connection** dropdown from **Local ==> Remote <ip_addr>**.
 <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_set_connection_local.png")} >Set Connection - Local to Remote</Image>
 
-13. Enter the IP address under **Host Name** that you saved from step 8. Make sure the port number is **27300**. Click on Connect. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_add_host_name.png")} >Add Host Name</Image>
+12. Enter the IP address under **Host Name** that you saved from step 8. Make sure the port number is **27300**. Click on Connect. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_add_host_name.png")} >Add Host Name</Image>
 
-14. If the connection is successful, you see a green dot next to **Connection**. It means your devices are connected and communicating, and the next application launched should be caught. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_connection_ok.png")} >Connection Ok</Image>
+13. If the connection is successful, you see a green dot next to **Connection**. It means your devices are connected and communicating, and the next application launched should be caught. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_connection_ok.png")} >Connection Ok</Image>
 
 ## Image Based Tutorial for Using RGP 
 This tutorial goes over a common use case with RGP. Complete the other instructions in this document before starting with this tutorial. RGP is often used for cases such as:
