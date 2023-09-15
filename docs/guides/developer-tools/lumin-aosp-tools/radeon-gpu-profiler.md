@@ -42,9 +42,11 @@ You should see that your device is connected to the host. <Image url= {require("
 6. Connect your Magic Leap 2 device to WiFi. Public WiFi will not work since peer-to-peer connections are disabled on public WiFi. Try connecting to a private WiFi network with password protection.
 
 7. You can verify WiFi communication with these commands:
-```adb shell ip -o -h -c a #reveals the IP address of your device under wLan0```
+```shell
+adb shell ip -o -h -c a #reveals the IP address of your device under wLan0```
 
-```ping <device-ip-addr> #contacts the device via WiFi to verify connection```
+```shell
+ping <device-ip-addr> #contacts the device via WiFi to verify connection```
 
 If everything is working, you'll get output similar to this: <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_check_wifi_connection.png")} >Check WiFi Connection with adb</Image>
 
