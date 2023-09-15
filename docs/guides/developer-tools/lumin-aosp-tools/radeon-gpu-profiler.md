@@ -12,16 +12,7 @@ keywords: [AOSP, Profiling, RGP, Radeon, AMD]
 
 ## Overview
 
-Radeon GPU Profiler (RGP) is a **GPU profiling tool** developed by AMD. It is a graphics profiling tool, which captures a single frame and tells you where all your time is being spent. This document is a how-to for installing the tool and using it with a Magic Leap 2 device. Extensive documentation for RGP exists [here](https://radeon-gpuprofiler.readthedocs.io/en/latest/). This document is just a primer for getting up and running with RGP, targeting Magic Leap OS.
-
-## Limitations of RGP
-
-This version of RGP has the following limitations:
-
-* RGP only works on *userdebug* lumin-aosp (*user* not yet supported)
-* RGP requires that you disable *SELinux* (shown below)
-
-RGP only supports **Vulkan**; it does not support OpenGL. You can successfully target an OpenGL app and profile a frame, but that's only because the Magic Leap graphics pipeline ultimately ends up doing Vulkan activity, regardless of whether the app is making OpenGL calls or Vulkan. That said, the insight gathered from profiling an OpenGL app is not really meaningful. Really, this is a tool meant for use on Vulkan apps.
+Radeon GPU Profiler (RGP) is a **GPU profiling tool** developed by AMD. It is a graphics profiling tool, which captures a single frame and tells you where all your time is being spent. This document is a how-to for installing the tool and using it with a Magic Leap 2 device. Extensive documentation for RGP exists [here](https://radeon-gpuprofiler.readthedocs.io/en/latest/). This document is a primer for getting up and running with RGP, targeting Magic Leap OS.
 
 ### About RGP
 
@@ -33,25 +24,6 @@ RGP, unlike other profiling tools, doesn't allow you to launch an application fr
 To use RGP, you'll need the following installed:
 * [Magic Leap Hub](https://developer-docs.magicleap.cloud/docs/guides/getting-started/install-the-tools)
 * [adb](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/android-debug-bridge/adb-setup/)
-
-## Configure adb and Disable SELinux
-This section shows you how to set up adb for this project, including the step where you temporarily disable SELinux. Do the following:
-
-1. Ensure your PC and Magic Leap device are connected on the same network. The network should be private, since most public networks do not allow peer-to-peer connections.
-You can check by running the following commands: 
-```shell
-adb shell whoami  # should return 'root'. If not, do 'adb root'
-adb shell ifconfig wlan0   # will reveal the IP address of your device
-ping <device-ip-addr>
-```
-
-If the ping fails, then your device and PC are not accessible to each other on the network. You can use Magic Leap Hub to find out more about your connection.
-
-2. Make your device's partition writable: ```adb remount```
-
-3. Next, disable SELinux: ```adb shell setenforce 0```
-
-You now have adb set up and can move on to setting up RGP.
 
 ## How to Install RGP (Linux and Windows Only)
 This section walks you through installing RGP.
