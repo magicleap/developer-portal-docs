@@ -46,7 +46,7 @@ adb setprop ml.graphics.tracing.gl.enable 1
 
 When you click on the link, it will open a text file of the configuration file. Download the file you want to use.
 
-7. Rename your downloaded file. If you selected Full Log Configuration, rename your file **config-full-with-draw-tracing.cfg** and save it. If you selected Partial Log Configuration, rename your file **config-with-draw-tracing.cfg**. 
+7. Rename your downloaded file. If you selected Full Log Configuration, rename your file **config-full-with-draw-tracing.cfg** and save it. If you selected Graphics Log Configuration, rename your file **config-with-draw-tracing.cfg**. 
 
 8. Start your application and run the following while the application is running: 
 ```shell
