@@ -41,7 +41,7 @@ using the following fields:
 
 To configure a [SAML-based identity provider][saml], follow the steps below:
 
-1. Access Keycloak by appending `/auth/` to your Enterprise Console URL, or from within the Enterpreise Console
+1. Access Keycloak by appending `/auth/` to your **Enterprise Console** URL, or from within the **Enterprise Console**
    interface by clicking on **Users** in the top menu.
 1. Log in using the generated credentials for the administrator account. The credentials are provided after a successful
    installation.
@@ -130,8 +130,8 @@ Detailed instructions can be found in the Auth0 documentation:
 
 ## Verification
 
-1. Log out of the Enterprise Console. Underneath the standard **Sign In** button should be a link to log in with your
-   Identity Provider alias.
+1. Log out of the **Enterprise Console**. Underneath the standard **Sign In** button should be a link to log in with
+   your Identity Provider alias.
 1. Use the credentials for one of the users from the Identity Provider.
 1. Fill in the required user data in Keycloak to complete the process (this is required if the user does not yet exist
    in Keycloak and needs to be done only once).
