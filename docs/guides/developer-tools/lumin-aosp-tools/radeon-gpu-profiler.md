@@ -14,9 +14,9 @@ keywords: [AOSP, Profiling, RGP, Radeon, AMD]
 
 Radeon GPU Profiler (RGP) is a **GPU profiling tool** developed by AMD. It is a graphics profiling tool, which captures a single frame and tells you where all your time is being spent. This document is a how-to for installing the tool and using it with a Magic Leap 2 device. Extensive documentation for RGP exists [here](https://radeon-gpuprofiler.readthedocs.io/en/latest/). This document is a primer for getting up and running with RGP, targeting Magic Leap OS.
 
-### About RGP
+### About Radeon GPU Profiler
 
-RGP is a single-frame profiler. That means that each capture operation profiles one and only one frame, whichever frame is being rendered at the time you initiate the capture. You can profile as many frames as you want, but each one is an independent operation and resulting file.
+Radeon GPU Profiler (RGP) is a single-frame profiler. That means that each capture operation profiles one and only one frame, whichever frame is being rendered at the time you initiate the capture. You can profile as many frames as you want, but each one is an independent operation and resulting file.
 
 RGP, unlike other profiling tools, doesn't allow you to launch an application from the tool, for the sake of profiling it. The application needs to be launched independently (e.g., via the home menu or adb). And while the process need not be launched in any special way, RGP does require that you have the Radeon Developer Panel (RDP) up and running and connected to the device before you launch the target application. RGP discovers newly launched graphical processes and then gives you the ability to profile it.
 
@@ -25,7 +25,7 @@ To use RGP, you'll need the following installed:
 * [Magic Leap Hub](https://developer-docs.magicleap.cloud/docs/guides/getting-started/install-the-tools)
 * [adb](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/android-debug-bridge/adb-setup/)
 
-## How to Install RGP (Linux and Windows Only)
+## How to Install Radeon GPU Profiler (Linux and Windows Only)
 This section walks you through installing RGP.
 
 1. Navigate to the Magic Leap Hub. 
@@ -96,13 +96,12 @@ This tutorial shows you how to look at draw time. Take the following steps to tr
 
 You have now walked through analyzing a draw capture. 
 
-## Known Issues
+## Known Issues with Radeon GPU Profiler
 Here's a list of known issues for profiling apps with RGP:
-* Unity applications do not work with RGP currently.
-* For heavy applications, trying to capture RGP can cause the GPU to freeze. 
-* The application is not usable afterRGP capture and requires a close and reopening. 
+* For heavy Unity applications, trying to capture RGP can cause the GPU to freeze. 
+* The application is not usable after RGP capture and requires a close and reopening. 
 
-## Troubleshooting
+## Troubleshooting Radeon GPU Profiler
 
 Please contact Customer Care if you encounter any issues. RGP is a proprietary AMD tool, but our Dev Tools team provides tier 1 support. They'll open a ticket with AMD as needed. Please provide the RGP log file when reporting an issue:
 
