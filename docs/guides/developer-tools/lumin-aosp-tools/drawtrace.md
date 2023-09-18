@@ -39,7 +39,7 @@ adb shell setprop ml.graphics.tracing.vk.enable 1
 adb setprop ml.graphics.tracing.gl.enable 1
 ```
 
-6. You also need a config file for the capture. You can set up for a full log or a partial log. 
+6. You also need a config file for the capture. You can set up for a full log or a graphics log. A full log gives you graphics information, but also includes information about other processes like power, audio, video too which may not be needed. The graphics log gives you just the graphics information. 
 
 * [Full/Extra Log Configuration](config-full-with-draw-tracing.txt)
 * [Graphics Log Configuration](config-with-draw-tracing.txt)
