@@ -8,7 +8,7 @@ tags: [Unity, Perception, Anchors, Persistence]
 keywords: [Unity, Perception, Anchors, Persistence]
 ---
 
-A Spatial Anchor is a shared reference point for tethering virtual content to a persistent physical location. This common reference allows you to place content in the physical world and have it stay in the same place and orientation without any drift across multiple user sessions, and to have co-located content aligned across multiple networked devices.
+A Spatial Anchor is a shared reference point for tethering virtual content to a persistent physical location. (For more details about this feature, see the [Spatial Anchors](https://developer-docs.magicleap.cloud/docs/guides/features/spaces/spatial-anchors/) page.) This common reference allows you to place content in the physical world and have it stay in the same place and orientation without any drift across multiple user sessions, and to have co-located content aligned across multiple networked devices.
 
 
 :::note
@@ -19,9 +19,9 @@ Users must localize into a Space before creating spatial anchors. Use the [Space
 This feature requires the `SPATIAL_ANCHORS` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**)
 :::
 
-## How Ml1's PCFs are different from Anchors
+## How Magic Leap 1's PCFs are different from Anchors
 
-While the Magic Leap One's anchor system ([Persistent Coordinate Frames, or PCFs](https://ml1-developer.magicleap.com/en-us/learn/guides/persistent-coordinate-frames)) was automatic, anchors on Magic Leap 2 have to be created explicitly.
+This section is for users transitioning from Magic Leap 1 to Magic Leap 2 devices. While the Magic Leap 1's anchor system ([Persistent Coordinate Frames, or PCFs](https://ml1-developer.magicleap.com/en-us/learn/guides/persistent-coordinate-frames)) was automatic, anchors on Magic Leap 2 have to be created explicitly.
 
 | Magic Leap 1 PCFs               | Magic Leap 2 Spatial Anchors                 |
 | ---------------------- | ----------------------------------- |
