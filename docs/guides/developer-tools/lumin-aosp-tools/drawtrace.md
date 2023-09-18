@@ -36,13 +36,13 @@ adb shell ip -o -h -c a #reveals the IP address of your device under wLan0
 ```shell
 adb shell setprop persist.traced.enable 1
 adb shell setprop ml.graphics.tracing.vk.enable 1
-adb shell setprop ml.graphics.tracing.gles.enable 1
+adb setprop ml.graphics.tracing.gl.enable 1
 ```
 
 6. You also need a config file for the capture. You can set up for a full log or a partial log. 
 
-* [Full Log Configuration](config-full-with-draw-tracing.txt)
-* [Partial Log Configuration](config-with-draw-tracing.txt)
+* [Full/Extra Log Configuration](config-full-with-draw-tracing.txt)
+* [Graphics Log Configuration](config-with-draw-tracing.txt)
 
 When you click on the link, it will open a text file of the configuration file. Download the file you want to use.
 
@@ -92,10 +92,3 @@ This provides a list of api calls in descending order of duration in nanoseconds
 11. The general guidance is that draws should not exceed 2ms. In the example below, you can see numerous draws exceeding that threshold which can lead to bad performance. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_exceed2ms.png")} >Run SQL Query</Image>
 
 You can examine any of your traces using these steps as guidance.
-
-### Known Issues
-
-This section details known issues with DrawTrace. Currently, there is one known issue where user builds do not show all the statistics that can be captured with draw tracing. A user build trace may look like this: 
-<Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_known_issue.png")}>Known Issue for User Builds</Image>
-
-Magic Leap is actively working to fix this. 
