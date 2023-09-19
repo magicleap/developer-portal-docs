@@ -72,7 +72,7 @@ Jump ahead to step 12 if you use this method.
 
 13. If the connection is successful, you see a green dot next to **Connection**. It means your devices are connected and communicating, and the next application launched should be caught. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_connection_ok.png")} >Connection Ok</Image>
 
-## Image Based Tutorial for Using RGP 
+## Image Based Tutorial for Using Radeon GPU Profiler 
 This tutorial goes over a common use case with RGP. Complete the other instructions in this document before starting with this tutorial. RGP is often used for cases such as:
 * Shader time
 * Draw time
