@@ -25,35 +25,32 @@ You need adb for this project. The adb tool is part of the Magic Leap Hub. Do th
 2. Check that you have access to adb by running: ```adb devices```
 You should see that your device is connected to the host. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_device_connected.png")} >Check Device Connection with adb</Image>
 
-3. Connect your Magic Leap 2 device to WiFi. Public WiFi will not work since peer-to-peer connections are disabled on public WiFi. Try connecting to a private WiFi network with password protection. 
-
-4. You can verify WiFi communication with these commands: 
-```shell 
-adb shell ip -o -h -c a #reveals the IP address of your device under wLan0
-```
-
-5. Now you need to set the properties required for capture in adb. Run these commands:
+3. Now you need to set the properties required for capture in adb. Run these commands:
 ```shell
 adb shell setprop persist.traced.enable 1
 adb shell setprop ml.graphics.tracing.vk.enable 1
 adb setprop ml.graphics.tracing.gl.enable 1
 ```
+You should now have adb configured, and you are ready to trace your application. 
 
-6. You also need a config file for the capture. You can set up for a full log or a graphics log. A full log gives you graphics information, but also includes information about other processes like power, audio, video too which may not be needed. The graphics log gives you just the graphics information. 
+### Trace Your Application
+This section goes over how to choose the right config file to trace your application and how to do a trace.
+
+1. You need a config file for the capture. You can set up for a full log or a graphics log. A full log gives you graphics information, but also includes information about other processes like power, audio, video too which may not be needed. The graphics log gives you just the graphics information. 
 
 * [Full/Extra Log Configuration](config-full-with-draw-tracing.txt)
 * [Graphics Log Configuration](config-with-draw-tracing.txt)
 
 When you click on the link, it will open a text file of the configuration file. Download the file you want to use.
 
-7. Rename your downloaded file. If you selected Full Log Configuration, rename your file **config-full-with-draw-tracing.cfg** and save it. If you selected Graphics Log Configuration, rename your file **config-with-draw-tracing.cfg**. 
+2. Rename your downloaded file. If you selected Full Log Configuration, rename your file **config-full-with-draw-tracing.cfg** and save it. If you selected Graphics Log Configuration, rename your file **config-with-draw-tracing.cfg**. 
 
-8. Start your application and run the following while the application is running: 
+3. Start your application and run the following while the application is running: 
 ```shell
 type config-with-draw-tracing.cfg | adb shell perfetto --txt --config - --out /data/misc/perfetto-traces/trace
 adb pull /data/misc/perfetto-traces/trace ./trace.pftrace
 ```
-
+This captures your application for 3 seconds by default. You can increase the capture duration in the config file by changing the first field **duration_ms: 3000** to a higher value like **10000**.
 Save your **.pftrace** file, you need it for Perfetto and DrawTrace in the next section.
 
 ### Analyze Your Trace with DrawTrace and Perfetto
@@ -68,7 +65,7 @@ This section will walk you through using DrawTrace through Perfetto. The base us
 
 4. You can open the trace from the browser window using **Open trace file**. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_open_trace.png")} >Open Trace File</Image>
 
-5. When you open the trace file, you should see the timeline window open up showing all the API calls made for each application. User builds have a known issue where user builds do not showing all the statistics capable of being captured by draw tracing. See the [Known Issues](#known-issues) section for more details. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_view_trace.png")} >View Trace File</Image>
+5. When you open the trace file, you should see the timeline window open up showing all the API calls made for each application. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_view_trace.png")} >View Trace File</Image>
 
 NOTE: You can use any trace file you like, for this walk through a trace file for AR Brochure is used. 
 
