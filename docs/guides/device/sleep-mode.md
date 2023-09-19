@@ -30,7 +30,7 @@ When you choose to enable Sleep Mode, you’re also able to choose when Sleep Mo
 This section covers what you’ll need to keep in mind when handling Standby and Sleep modes. 
 
 - From the Android activity lifecycle perspective, both Standby and Sleep mode can be treated in the same manner as Android Doze.
-- When entering Android Doze, the screen is turned off. Following the standard Android activity lifecycle logic, screen off will trigger the **onStop** event broadcast to applications.
+- When entering Android Doze, the screen is turned off. Following the standard Android activity lifecycle logic, screen off will trigger the **onStop** event broadcast to applications. If your application is using a camera resource, the application should close the camera device upon receiving the **onPause/onStop** event broadcast.
 - Follow the guidelines for the Android activity lifecycle with your application. You can review the activity lifecycle here-- https://developer.android.com/guide/components/activities/activity-lifecycle.
 - When resuming back to the Normal operating mode, the **onStart** event will be broadcast.
 - Your app should listen for **onStop**/**onStart** and handle issues that can arise from going into and coming out of Standby and Sleep modes. 
