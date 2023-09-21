@@ -50,8 +50,7 @@ This section will utilize a [Unity XR Interaction](https://docs.unity3d.com/Pack
 
 <Image url= {require("/img/unity/simple-app-interaction/xr-grab-interactable.png")} >The Smooth Settings inside the XR Grab Interactable Component </Image>
 
-8.Enable *Is Kinematic* on the Grabbable Cube's Rigidbody script to prevent the object from falling to the ground at the
-start of the application and ignore forces such as velocity.
+8.Enable *Is Kinematic* on the Grabbable Cube's Rigidbody script to prevent the object from falling to the ground at the start of the application and ignore forces such as velocity.
 
 <Image url= {require("/img/unity/simple-app-interaction/grabbable-cube-settings.png")} >The Grabbable Cube's component hierarchy</Image>
 
