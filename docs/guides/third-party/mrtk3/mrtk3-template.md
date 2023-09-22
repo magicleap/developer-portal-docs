@@ -20,7 +20,7 @@ Before starting, download and install the following packages from the Magic Leap
 
 :::note
 
-If updating to Magic Leap Unity SDK 1.10 or 1.11, there may be a compile issue if your project contains the
+If updating to Magic Leap Unity SDK 1.10.0 or 1.11.0, there may be a compile issue if your project contains the
 Unity OpenXR package. A workaround for this is to remove the OpenXR package from the project in this situation.
 
 :::
