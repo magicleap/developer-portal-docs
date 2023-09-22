@@ -16,6 +16,7 @@ import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
 import ArcloudEnvDomain from './_arcloud_env_domain.md';
 import EnvFile from './_env_file.md';
+import CliVersions from './_cli_versions.md';
 import HelmRequirements from './_helm_requirements.md';
 import InstallHelm from './_install_helm.md';
 import InstallHelmMacOS from './_install_helm_macos.md';
@@ -59,6 +60,8 @@ This deployment strategy will provide a production-ready system using Azure.
 ### Azure CLI
 
 To get started as quickly as possible, refer to these simple setup steps for [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+
+<CliVersions />
 
 ### Tools
 
