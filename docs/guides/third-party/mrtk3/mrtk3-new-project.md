@@ -164,7 +164,7 @@ Hand Tracking and Eye Tracking requires developers to add additional permissions
 2. Enable **com.magicleap.permissions.HAND_TRACKING**
 3. Enable **com.magicleap.permissions.EYE_TRACKING**
 
-For more information, refer to the Magic Leap 2 [permissions guide](https://developer-docs.magicleap.cloud/docs/guides/unity/permissions/declaring-permissions).
+For more information, refer to the Magic Leap 2 [permissions guide](/docs/guides/unity/permissions/declaring-permissions).
 
 ## Creating a new scene with MRTK3
 

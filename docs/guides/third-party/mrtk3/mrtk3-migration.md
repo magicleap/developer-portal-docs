@@ -20,16 +20,21 @@ Before starting, download and install the following packages from the Magic Leap
 - Magic Leap SDK v1.2.0 (or later)
 - Magic Leap Unity SDK v1.6.0 (or later)
 - Unity Editor v2022.2.17f1 (or later)
+- Magic Leap MRTK 3 1.0.0-pre.5 (or later)
 
 ## Template Project
 
-This guide references the [MRTK 3 Template Project](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3). However, you can apply these instructions to any project that is configured for MRTK 3. If you want to follow along using the Template Project, refer to the steps below for downloading it from GitHub.
+This guide references the [MRTK 3 Template Project](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity). However, you can apply these instructions to any project that is configured for MRTK 3. If you want to follow along using the Template Project, refer to the steps below for downloading it from GitHub.
 
 ### Download the Template Project
 
-The MRTK 3 template project includes MRTK3 packages and sample scenes. You can download it from the `mrtk3` branch in the [MRTK Github repository](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3). To do this, clone the MRTK repository and switch to the `mrtk3` branch.
+The MRTK 3 template project includes MRTK3 packages and sample scenes. You can download the project from [MRTK's Github repository](https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity). 
 
-If you are familiar with Git and prefer to use the command line, clone the repo and specify the `mrtk3` branch with the following command: `git clone --branch mrtk3 https://github.com/microsoft/MixedRealityToolkit-Unity.git`
+If you are familiar with Git and prefer to use the command line, clone the repo following command:
+
+```bash
+git clone https://github.com/MixedRealityToolkit/MixedRealityToolkit-Unity.git
+```
 
 ## Configure MRTK3 for Magic Leap 2
 
@@ -45,9 +50,10 @@ Follow the step-by-step instructions below to update the MRTK Dev Template proje
 ### Remove conflicting packages
 
 1. Open the package manager (Window > Package Manager) and remove the following packages:
-    1. **Project Auditor**
-    2. **Google ARCore XR Plugin**
-2. Clear any errors that appear as a result of a missing dependency from a prefab of XR provider.
+    1. **Google ARCore XR Plugin**
+    2. **Mixed Reality OpenXR Plugin**
+    3. **OpenXR Plugin**
+2. Clear any Error that appear in the Unity Console as a result of the removal of the packages.
     1. If errors are still present, close the project and delete the project's Library folder, and re-open Unity to reimport the existing packages.
 
 ### Configure Project Settings for Magic Leap
@@ -66,7 +72,7 @@ After importing the MRTK3 packages, import the MRTK3 Magic Leap package into the
 
 1. Download the MRTK3 Magic Leap package using the Magic Leap Hub's Package Manager.
 2. Open the Package Manager (**Window** > **Package Manager**), select the **＋** icon, then select **Add package from tarball...**.
-3. Import the `com.magicleap.mrtk3-[VERSION].tgz` package from `MagicLeap/tools/unity/mrtk3/`.
+3. Import the `com.magicleap.mrtk3-[VERSION].tgz` (version 1.0.0-pre.5 or higher) package from `MagicLeap/tools/unity/mrtk3/`.
 
 <Image url= {require("/img/third-party/mrtk3/mrtk3-import-tarball.jpg")} >Unity Package Manager with the "Add package from tarball..." option selected</Image>
 

@@ -45,4 +45,6 @@ If importing the plugin results in Unity showing an error similar to the one bel
 Plugins: Failed to load 'C:/AppDirectory/Library/PackageCache/com.magicleap.soundfield@3.4.0-230405.66.cf20c31/Plugins/x86_64/AudioPluginMSASpatializer.dll' because one or more of its dependencies could not be loaded.
 ```
 
+If errors are still present, close the project and delete the project's Library folder, then re-open Unity to reimport the existing packages. Then switch the Build target to Android.
+
 </details>
