@@ -2,7 +2,7 @@
 id: marker-tracker-example
 title: Marker Tracker Example
 sidebar_position: 1
-date: 6/27/2022
+date: 9/18/2023
 tags: [Unity, Perception, Marker, Tracking, ArUco, QR Codes, Fiducial, Example]
 keywords: [Unity, Perception, Marker, Tracking, ArUco, QR Codes, Fiducial, Example]
 ---
@@ -51,6 +51,7 @@ public class MarkerTrackerExample : MonoBehaviour
     private void OnDisable()
     {
         MLMarkerTracker.OnMLMarkerTrackerResultsFound -= OnTrackerResultsFound;
+        _ = MLMarkerTracker.StopScanningAsync();
     }
 
     private void OnTrackerResultsFound(MLMarkerTracker.MarkerData data)
