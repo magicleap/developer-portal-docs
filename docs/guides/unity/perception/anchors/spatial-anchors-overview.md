@@ -8,7 +8,7 @@ tags: [Unity, Perception, Anchors, Persistence]
 keywords: [Unity, Perception, Anchors, Persistence]
 ---
 
-A Spatial Anchor is a shared reference point for tethering virtual content to a persistent physical location. (For more details about this feature, see the [Spatial Anchors](https://developer-docs.magicleap.cloud/docs/guides/features/spaces/spatial-anchors/) page.) This common reference allows you to place content in the physical world and have it stay in the same place and orientation without any drift across multiple user sessions, and to have co-located content aligned across multiple networked devices.
+A Spatial Anchor is a shared reference point for tethering virtual content to a persistent physical location. (For more details about this feature, see the [Spatial Anchors](docs/guides/features/spaces/spatial-anchors/) page.) This common reference allows you to place content in the physical world and have it stay in the same place and orientation without any drift across multiple user sessions, and to have co-located content aligned across multiple networked devices.
 
 
 :::note
