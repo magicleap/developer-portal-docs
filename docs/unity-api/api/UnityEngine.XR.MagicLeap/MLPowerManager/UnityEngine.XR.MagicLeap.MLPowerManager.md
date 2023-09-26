@@ -85,7 +85,7 @@ public static OnPropertiesChangedDelegate OnPropertiesChanged { get; set; }
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailablePowerStates {#mlresultcode-getavailablepowerstates}
 
-Get available power states for the controller. 
+Get available power states for a component. data#PowerStateData holding list of available power states. 
 
 ```csharp
 public static MLResult.Code GetAvailablePowerStates(
@@ -109,7 +109,7 @@ public static MLResult.Code GetAvailablePowerStates(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetAvailableProperties {#mlresultcode-getavailableproperties}
 
-Get available properties for the controller. 
+Request a list of the available [PropertyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-propertytype). dataInformation about the properties of a component. 
 
 ```csharp
 public static MLResult.Code GetAvailableProperties(
@@ -133,7 +133,7 @@ public static MLResult.Code GetAvailableProperties(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetComponentProperties {#mlresultcode-getcomponentproperties}
 
-Get controller component properties. 
+Get controller component properties. out&#95;propertiesInformation about the properties of a component.
 
 ```csharp
 public static MLResult.Code GetComponentProperties(
@@ -157,7 +157,7 @@ public static MLResult.Code GetComponentProperties(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetPowerState {#mlresultcode-getpowerstate}
 
-Get the current power state for the controller. 
+Get the current power state for a component. data#PowerStateData with the current power state of the component. 
 
 ```csharp
 public static MLResult.Code GetPowerState(
@@ -253,7 +253,7 @@ public delegate void OnPropertiesChangedDelegate(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) SetPowerState {#mlresultcode-setpowerstate}
 
-Set the power state for the controller. 
+Sets the power state of a component. settings[Settings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.Settings.md) used by the Power Manager updating a component's power state. 
 
 ```csharp
 public static MLResult.Code SetPowerState(

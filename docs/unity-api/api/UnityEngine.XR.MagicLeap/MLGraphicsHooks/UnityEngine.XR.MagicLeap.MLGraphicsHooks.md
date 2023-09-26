@@ -71,6 +71,41 @@ public static void RequestAlphaBlendFrameRendering(
 
 -----------
 
+### void RequestPredictedSnapshots {#void-requestpredictedsnapshots}
+
+```csharp
+public static void RequestPredictedSnapshots(
+    bool useSnapshots
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| bool |useSnapshots||
+
+
+
+
+
+
+-----------
+
+### void Shutdown {#void-shutdown}
+
+```csharp
+public static void Shutdown()
+```
+
+
+
+
+
+
+-----------
+
 ## Public Attributes
 
 ### ClientHandle {#ulong-clienthandle}

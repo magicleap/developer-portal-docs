@@ -228,6 +228,36 @@ public InputAction Menu => m_Wrapper.m_Controller_Menu;
 
 -----------
 
+### PointerPosition {#inputaction-pointerposition}
+
+```csharp
+
+public InputAction PointerPosition => m_Wrapper.m_Controller_PointerPosition;
+
+```
+
+
+
+
+
+
+-----------
+
+### PointerRotation {#inputaction-pointerrotation}
+
+```csharp
+
+public InputAction PointerRotation => m_Wrapper.m_Controller_PointerRotation;
+
+```
+
+
+
+
+
+
+-----------
+
 ### Position {#inputaction-position}
 
 ```csharp
@@ -308,6 +338,21 @@ public InputAction TouchpadPosition => m_Wrapper.m_Controller_TouchpadPosition;
 ```csharp
 
 public InputAction TouchpadTouch => m_Wrapper.m_Controller_TouchpadTouch;
+
+```
+
+
+
+
+
+
+-----------
+
+### TrackingState {#inputaction-trackingstate}
+
+```csharp
+
+public InputAction TrackingState => m_Wrapper.m_Controller_TrackingState;
 
 ```
 

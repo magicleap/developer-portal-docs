@@ -34,6 +34,19 @@ public ulong GetControllerTrackerHandle()
 
 -----------
 
+### ulong GetEyeTrackerHandle {#ulong-geteyetrackerhandle}
+
+```csharp
+public ulong GetEyeTrackerHandle()
+```
+
+
+
+
+
+
+-----------
+
 ### ulong GetHandTrackerHandle {#ulong-gethandtrackerhandle}
 
 ```csharp
@@ -117,6 +130,43 @@ public delegate void OnDebugMessageDelegate(
 | LogLevel |logLevel|The log level of the debug utils.|
 | string |message|The debug message.|
 | IntPtr |context|Pointer to a context object.|
+
+
+
+
+
+
+-----------
+
+### void PredictSnapshot {#void-predictsnapshot}
+
+```csharp
+public void PredictSnapshot(
+    long predictionTimestamp,
+    bool enableSnapshotPrediction
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| long |predictionTimestamp||
+| bool |enableSnapshotPrediction||
+
+
+
+
+
+
+-----------
+
+### void ResetSnapshotPrediction {#void-resetsnapshotprediction}
+
+```csharp
+public void ResetSnapshotPrediction()
+```
 
 
 

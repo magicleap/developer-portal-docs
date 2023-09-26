@@ -36,6 +36,9 @@ using System.Linq;
 using UnityEngine.XR.MagicLeap;
 using UnityEngine.XR.Management;
 using UnityEditor.XR.Management;
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+using UnityEngine.XR.OpenXR;
+#endif
 
 namespace UnityEditor.XR.MagicLeap
 {
@@ -43,25 +46,35 @@ namespace UnityEditor.XR.MagicLeap
     {
         private static string LaunchProcess => Path.Combine(MagicLeapSDKUtil.AppSimRuntimePath, "bin/ZIDiscovery");
 
-        private static readonly string SessionStateKey = "ZI_SEARCH_PATHS";
+        public static readonly string SessionStateKey_ZISearchPaths = "ZI_SEARCH_PATHS";
         private static List<string> libSearchPaths = new List<string>();
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void CheckForLibrarySearchPaths()
         {
             var settings = XRGeneralSettingsPerBuildTarget.XRGeneralSettingsForBuildTarget(BuildTargetGroup.Standalone);
-            if (settings == null || settings.Manager == null || settings.Manager.activeLoaders.Where(l => l is MagicLeapLoader).Count() == 0)
+            if (settings == null || settings.Manager == null )
             {
                 return;
             }
 
-            string cachedSearchPaths = SessionState.GetString(SessionStateKey, string.Empty);
+            bool foundSupportedLoader = false;
+#if UNITY_XR_MAGICLEAP_PROVIDER
+            foundSupportedLoader = settings.Manager.activeLoaders.Any(l => l is MagicLeapLoader);
+#elif UNITY_OPENXR_1_7_0_OR_NEWER
+            foundSupportedLoader = settings.Manager.activeLoaders.Any(l => l is OpenXRLoader);
+#endif
+
+            if (!foundSupportedLoader)
+            {
+                Debug.LogError("No supported XR loader found for AppSim");
+                return;
+            }
+
+            string cachedSearchPaths = SessionState.GetString(SessionStateKey_ZISearchPaths, string.Empty);
             if (string.IsNullOrEmpty(cachedSearchPaths))
             {
                 var ziRuntime = MagicLeapSDKUtil.AppSimRuntimePath;
-#if UNITY_EDITOR_WIN
-                ziRuntime = ziRuntime.Replace("/", "\\");
-#endif
                 if (string.IsNullOrEmpty(ziRuntime))
                 {
                     Debug.LogError("Zero Iteration Runtime path is not set.");
@@ -69,6 +82,9 @@ namespace UnityEditor.XR.MagicLeap
                     return;
                 }
 
+#if UNITY_EDITOR_WIN
+                ziRuntime = ziRuntime.Replace("/", "\\");
+#endif
                 var startInfo = new System.Diagnostics.ProcessStartInfo
                 {
                     UseShellExecute = false,
@@ -89,6 +105,8 @@ namespace UnityEditor.XR.MagicLeap
 
                 string output = outputStream.ReadToEnd();
 
+                discoveryProc.WaitForExit();
+
                 if (discoveryProc.ExitCode != 0)
                 {
                     StreamReader errorStream = discoveryProc.StandardError;
@@ -98,15 +116,14 @@ namespace UnityEditor.XR.MagicLeap
                 }
 
                 libSearchPaths = new List<string>(output.Split(new string[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries));
-                SessionState.SetString(SessionStateKey, string.Join(Path.PathSeparator, libSearchPaths));
-                discoveryProc.WaitForExit();
+                SessionState.SetString(SessionStateKey_ZISearchPaths, string.Join(Path.PathSeparator, libSearchPaths));
             }
             else
             {
                 libSearchPaths = new List<string>(cachedSearchPaths.Split(Path.PathSeparator));
             }
 
-            MagicLeapXrProvider.AddLibrarySearchPaths(libSearchPaths);
+            MagicLeapXrProvider.AddLibrarySearchPaths(libSearchPaths, settings.Manager.activeLoaders);
         }
     }
 }

@@ -1,8 +1,36 @@
 ---
 title: Magic Leap Hub Release Notes
 sidebar_position: 2
-date: 05/12/2023
+date: 08/30/2023
 ---
+
+## Version 2.0.14
+* Advanced Capture: UX updates
+* Device Bridge: UX updates
+* OS Installer: enforce factory reset for OS versions that 4 major versions away from current device OS version
+* OS Installer: UX updates
+* Perfetto: UI works even if ML Hub is closed
+* Remote Render: strict requirement to have Wi-Fi bridge enabled is removed
+* Remote Render: sample application can be started from top left menu
+
+## Version 2.0.13
+* Advanced Capture: UI performance improvements
+* Remote Render: QR Code Pairing
+
+### Known behaviors
+
+* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
+* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
+
+## Version 2.0.12
+
+* Advanced Capture: various UX updates
+* OS Installer: UX update
+
+### Known behaviors
+
+* Magic Leap Hub will fallback silently to bundled ADB if user provided ADB cannot be used for any reason.
+* Advanced Capture produces videos that are few seconds shorter than shown in the Magic Leap Hub UI.
 
 ## Version 2.0.11
 

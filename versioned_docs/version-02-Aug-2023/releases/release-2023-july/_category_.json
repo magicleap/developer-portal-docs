@@ -1,0 +1,10 @@
+{
+  "label": "Release 2023 July",
+  "position": 82,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "july-release-notes"
+  }
+}

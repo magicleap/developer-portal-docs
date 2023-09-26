@@ -25,7 +25,8 @@ Set the manual value for the global dimmer Updates are reflected in the next cli
 
 ```csharp
 public static MLResult SetValue(
-    float dimmerValue
+    float dimmerValue,
+    bool enabled =true
 )
 ```
 
@@ -35,6 +36,7 @@ public static MLResult SetValue(
 | Type | Name  | Description  | 
 |--|--|--|
 | float |dimmerValue|dimmer value in valid range [0.0 to 1.0]. 0.0 corresponds no global dimming while 1.0 corresponds to max global dimming.|
+| bool |enabled|Enable or disable the global dimmer.|
 
 
 

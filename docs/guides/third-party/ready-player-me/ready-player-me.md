@@ -18,7 +18,7 @@ In this guide you will:
 2. [Use hand tracking to drive the avatar hands](#configuring-hand-tracking-in-your-avatar)
 3. [Use eye tracking to drive eye rotation and blinking](#configuring-eye-tracking-in-your-avatar)
 
-You can use the sample scene to test the project for yourself by swapping out the Avatar - REPLACE ME child of the XR Rig in the ML2ReadyPlayerMeDemo scene or follow the guide below to set up your scene from scratch using the scripts provided in the sample.
+You can use the sample scene to test the project for yourself by swapping out the "Avatar - REPLACE ME" child of the XR Rig in the ML2ReadyPlayerMeDemo scene or follow the guide below to set up your scene from scratch using the scripts provided in the sample.
 
 :::note
 
@@ -31,7 +31,7 @@ Please check the [Magic Leap 2 version compatibility matrix](/docs/releases/rele
 
 Before you begin, you must:
 
-- Download the Magic Leap 2 Ready Player Me package [LINK NEEDED]
+- Download the [Magic Leap 2 Ready Player Me package](https://github.com/magicleap/MagicLeapReadyPlayerMe)
 - Create a [Ready Player Me VR half-body avatar](https://vr.readyplayer.me/en/avatar)
 - Complete [Eye Calibration](/docs/guides/features/eye-tracking/eye-calibration) for accurate eye tracking on your Magic Leap 2 device
 

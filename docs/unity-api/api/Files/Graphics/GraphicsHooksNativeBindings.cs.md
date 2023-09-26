@@ -56,7 +56,11 @@ namespace UnityEngine.XR.MagicLeap
             [DllImport(MLSdkLoaderDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern void MLUnityGraphicsRegisterCallbacks([In] ref MLUnityGraphicsCallbacks callbacks);
 
+            [DllImport(MLSdkLoaderDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern void MLUnityGraphicsClearCallbacks();
+
             public delegate void OnPreBeginRenderFrameNativeDelegate(IntPtr context, ref MLGraphicsFrameParamsEx frameParams);
+            public delegate void OnBeginRenderFrameNativeDelegate(IntPtr context, long predictedDisplayTime);
 
             [StructLayout(LayoutKind.Sequential)]
             public struct MLGraphicsFrameParamsEx
@@ -78,7 +82,7 @@ namespace UnityEngine.XR.MagicLeap
             }
 
             [AOT.MonoPInvokeCallback(typeof(OnPreBeginRenderFrameNativeDelegate))]
-            private static void OnPreBeginRenderFrameCallback(IntPtr context, [In][Out] ref MLGraphicsFrameParamsEx frameParams)
+            private static void OnPreBeginRenderFrameCallback(IntPtr context, ref MLGraphicsFrameParamsEx frameParams)
             {
                 if (preferAlphaBlendMode)
                 {
@@ -91,18 +95,29 @@ namespace UnityEngine.XR.MagicLeap
                 internalOnPreBeginRenderFrame();
             }
 
+            [AOT.MonoPInvokeCallback(typeof(OnBeginRenderFrameNativeDelegate))]
+            private static void OnBeginRenderFrameCallback(IntPtr context, long predictedDisplayTime) => InputSubsystem.Utils.PredictSnapshot(predictedDisplayTime, usePredictedSnapshots);
+            
+            public static void ClearCallbacks()
+            {
+                MLUnityGraphicsClearCallbacks();
+                InputSubsystem.Utils.ResetSnapshotPrediction();
+            }
+            
             [StructLayout(LayoutKind.Sequential)]
             public struct MLUnityGraphicsCallbacks
             {
                 public IntPtr Context;
                 public OnPreBeginRenderFrameNativeDelegate OnPreBeginRenderFrame;
+                public OnBeginRenderFrameNativeDelegate OnBeginRenderFrame;
 
                 public static MLUnityGraphicsCallbacks Create()
                 {
                     return new MLUnityGraphicsCallbacks()
                     {
                         Context = IntPtr.Zero,
-                        OnPreBeginRenderFrame = OnPreBeginRenderFrameCallback
+                        OnPreBeginRenderFrame = OnPreBeginRenderFrameCallback,
+                        OnBeginRenderFrame = OnBeginRenderFrameCallback
                     };
                 }
             }

@@ -46,6 +46,21 @@ public IntPtr Context;
 
 -----------
 
+### OnBeginRenderFrame {#onbeginrenderframenativedelegate-onbeginrenderframe}
+
+```csharp
+
+public OnBeginRenderFrameNativeDelegate OnBeginRenderFrame;
+
+```
+
+
+
+
+
+
+-----------
+
 ### OnPreBeginRenderFrame {#onprebeginrenderframenativedelegate-onprebeginrenderframe}
 
 ```csharp

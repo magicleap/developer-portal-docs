@@ -19,7 +19,7 @@ A structure to encapsulate output data when getting a component's available prop
 
 ### PropertyTypes {#propertytype-propertytypes}
 
-Array of #MLPowerManagerPropertyType elements. 
+Array of [PropertyType](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/UnityEngine.XR.MagicLeap.MLPowerManager.md#enums-propertytype) elements. 
 
 ```csharp
 

@@ -42,7 +42,7 @@ public static OnLocalizationDelegate OnLocalizationEvent { get; set; }
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) ExportSpace {#mlresultcode-exportspace}
 
-Export spaces wrapper. 
+Export an on device Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 public static MLResult.Code ExportSpace(
@@ -92,7 +92,7 @@ public static MLResult.Code GetLocalizationResult(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) GetSpaceList {#mlresultcode-getspacelist}
 
-Get list of available spaces. 
+Get the list of available spaces. The list of spaces returned will depend on the current device mapping mode. Only the Spaces associated with the current mapping mode will be returned by this call.Device mapping mode can be changed via the system application(s). 
 
 ```csharp
 public static MLResult.Code GetSpaceList(
@@ -116,7 +116,7 @@ public static MLResult.Code GetSpaceList(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) ImportSpace {#mlresultcode-importspace}
 
-Import spaces wrapper. 
+Import a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). 
 
 ```csharp
 public static MLResult.Code ImportSpace(

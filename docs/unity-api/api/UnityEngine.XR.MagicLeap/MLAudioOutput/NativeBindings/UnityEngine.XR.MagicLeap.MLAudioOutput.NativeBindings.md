@@ -178,7 +178,7 @@ public MLResult.Code MLAudioGetSpatialSoundPosition(
 |--|--|--|
 | ulong |handle|MLHandle used to identify the sound output.|
 | uint |channel|Selects the channel whose position is being set.|
-| out [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |position|Struct to set the position|
+| out MagicLeapNativeBindings.MLVec3f |position|Struct to set the position|
 
 
 
@@ -374,7 +374,7 @@ public MLResult.Code MLAudioSetSpatialSoundPosition(
 |--|--|--|
 | ulong |handle|MLHandle used to identify the sound output.|
 | uint |channel|Selects the channel whose position is being set.|
-| ref [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |position|Struct to set the position|
+| ref MagicLeapNativeBindings.MLVec3f |position|Struct to set the position|
 
 
 

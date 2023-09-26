@@ -12,6 +12,99 @@ title: DeviceLayouts.cs
 
 
 
+## Types Documentation
+
+### QueryControllerEnabled {#unityenginexrmagicleapinputsubsystemextensionsdevicecommandsquerycontrollerenabled-querycontrollerenabled}
+
+```csharp
+using QueryControllerEnabled =  UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryControllerEnabled;
+```
+
+
+
+
+
+
+-----------
+
+### QueryEyesEnabled {#unityenginexrmagicleapinputsubsystemextensionsdevicecommandsqueryeyesenabled-queryeyesenabled}
+
+```csharp
+using QueryEyesEnabled =  UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryEyesEnabled;
+```
+
+
+
+
+
+
+-----------
+
+### SendControllerVibe {#unityenginexrmagicleapinputsubsystemextensionsdevicecommandssendcontrollervibe-sendcontrollervibe}
+
+```csharp
+using SendControllerVibe =  UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SendControllerVibe;
+```
+
+
+
+
+
+
+-----------
+
+### SetControllerEnabled {#unityenginexrmagicleapinputsubsystemextensionsdevicecommandssetcontrollerenabled-setcontrollerenabled}
+
+```csharp
+using SetControllerEnabled =  UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SetControllerEnabled;
+```
+
+
+
+
+
+
+-----------
+
+### SetEyesEnabled {#unityenginexrmagicleapinputsubsystemextensionsdevicecommandsseteyesenabled-seteyesenabled}
+
+```csharp
+using SetEyesEnabled =  UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SetEyesEnabled;
+```
+
+
+
+
+
+
+-----------
+
+### VibeIntensity {#unityenginexrmagicleapinputsubsystemextensionsdevicecommandsvibeintensity-vibeintensity}
+
+```csharp
+using VibeIntensity =  UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.VibeIntensity;
+```
+
+
+
+
+
+
+-----------
+
+### VibePattern {#unityenginexrmagicleapinputsubsystemextensionsdevicecommandsvibepattern-vibepattern}
+
+```csharp
+using VibePattern =  UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.VibePattern;
+```
+
+
+
+
+
+
+-----------
+
 
 
 
@@ -33,6 +126,15 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.Layouts;
 using UnityEngine.InputSystem.XR;
+#if !UNITY_XR_MAGICLEAP_PROVIDER
+using VibePattern = UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.VibePattern;
+using VibeIntensity = UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.VibeIntensity;
+using SendControllerVibe = UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SendControllerVibe;
+using QueryControllerEnabled = UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryControllerEnabled;
+using SetControllerEnabled = UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SetControllerEnabled;
+using QueryEyesEnabled = UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.QueryEyesEnabled;
+using SetEyesEnabled = UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.DeviceCommands.SetEyesEnabled;
+#endif
 
 namespace UnityEngine.XR.MagicLeap
 {

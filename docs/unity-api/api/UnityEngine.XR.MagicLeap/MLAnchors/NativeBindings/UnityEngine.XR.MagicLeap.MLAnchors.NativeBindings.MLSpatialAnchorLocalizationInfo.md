@@ -131,7 +131,7 @@ public readonly string SpaceName;
 
 -----------
 
-### TargetSpaceOrigin {#readonly-targetspaceorigin}
+### TargetSpaceOrigin {#readonly-magicleapnativebindingsmlcoordinateframeuid-targetspaceorigin}
 
 If localized, this will contain the identifier of the transform of the target space's origin relative to the world origin. 
 
@@ -141,9 +141,6 @@ public readonly MagicLeapNativeBindings.MLCoordinateFrameUID TargetSpaceOrigin;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| readonly [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) | A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values.  |
 
 
 

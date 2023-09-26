@@ -90,7 +90,7 @@ public static MLResult Connect()
 
 **Details**
 
-API Level 22
+API Level 29
 
 permissions com.magicleap.permission.DEPTH&#95;CAMERA (protection level: dangerous) 
 
@@ -119,7 +119,7 @@ public static MLResult Disconnect()
 
 **Details**
 
-API Level 22
+API Level 29
 
 permissions None 
 
@@ -130,6 +130,28 @@ permissions None
 **Returns**: [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam): The camera's handle was invalid.
 [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok): Disconnected camera successfully.
 [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure): Failed to disconnect camera for some unknown reason. 
+
+
+
+-----------
+
+### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) GetCapabilities {#mlresult-getcapabilities}
+
+```csharp
+public static MLResult GetCapabilities(
+    out StreamCapability [] capabilities
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out [StreamCapability](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.StreamCapability.md) [] |capabilities|Structure to encapsulate a possible configuration for a single stream. Can be used to understand possible values for a specific [StreamConfig](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.StreamConfig.md) element in MLDepthCameraSettings. The capabilities supported by the depth camera can be queried with InternalGetCapabilities(). |
+
+
+
 
 
 
@@ -163,7 +185,7 @@ This is a blocking call. API is not thread safe.
 
 If there are no new depth data frames for a given duration (duration determined by the system) then the API will return [MLResult.Code.Timeout](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-timeout).
 
-API Level 22
+API Level 29
 
 permissions None 
 
@@ -224,7 +246,7 @@ public static MLResult UpdateSettings(
 
 **Details**
 
-API Level 22
+API Level 29
 
 permissions None 
 
@@ -302,6 +324,23 @@ protected virtual override MLResult.Code StopAPI()
 
 -----------
 
+## Public Attributes
+
+### FrameTypeCount {#const-int-frametypecount}
+
+```csharp
+
+public const int FrameTypeCount = 2;
+
+```
+
+
+
+
+
+
+-----------
+
 ## Public Enums
 
 ### CaptureFlags {#enums-captureflags}
@@ -351,14 +390,18 @@ Flags to select data requested from depth camera.
 
 -----------
 
-### FrameType {#enums-frametype}
+### FrameRate {#enums-framerate}
 
-Depth Camera frame capture types 
+Enumeration of possible frame rates 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| Unknown | 0| Unknown or no frame type   |
-| LongRange | 1| Frame captured using [Mode.LongRange](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-longrange) mode.   |
+| FPS_1 | |   |
+| FPS_5 | |   |
+| FPS_25 | |   |
+| FPS_30 | |   |
+| FPS_50 | |   |
+| FPS_60 | |   |
 
 
 
@@ -369,13 +412,33 @@ Depth Camera frame capture types
 
 -----------
 
-### Mode {#enums-mode}
+### FrameType {#enums-frametype}
+
+Depth Camera frame capture types 
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| LongRange | | Frame captured using [Stream.LongRange](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-longrange) mode.   |
+| ShortRange | | Frame captured using [Stream.ShortRange](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-shortrange) mode.   |
+
+
+
+
+
+
+
+
+-----------
+
+### Stream {#enums-stream}
 
 Depth Camera modes   Future release may add support to other modes. 
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| None | 0|   |
 | LongRange | 1 << 0| Long range mode  Under normal operations long range mode has a maximum frequency of 5fps and a range of up to 5m, in some cases this can go as far 7.5m. |
+| ShortRange | 1 << 1| Short range mode  Under normal operations short range stream has a maximum frequency of 60fps and a range from 0.2m up to 0.9m. |
 
 
 

@@ -1,0 +1,8 @@
+{
+  "label": "Sensors",
+  "position": 1,
+  "link": {
+    "type": "doc",
+      "id": "unity-android-sensors"
+    }
+}

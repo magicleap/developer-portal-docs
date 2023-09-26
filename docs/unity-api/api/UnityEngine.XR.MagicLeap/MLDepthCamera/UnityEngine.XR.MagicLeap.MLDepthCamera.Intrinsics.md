@@ -23,7 +23,7 @@ public struct Intrinsics;
 
 **Details**
 
-API Level 22
+API Level 292
 
 
 

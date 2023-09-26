@@ -26,7 +26,9 @@ using UnityEngine.XR.ARSubsystems;
 
 namespace UnityEngine.XR.MagicLeap
 {
+#if UNITY_XR_MAGICLEAP_PROVIDER
     using MLLog = UnityEngine.XR.MagicLeap.MagicLeapLogger;
+#endif
 
     [Preserve]
     public sealed partial class AnchorSubsystem : XRAnchorSubsystem

@@ -34,7 +34,7 @@ The focus point can be derived from the user's gaze. To make the implementation 
 
 ### Configuring the asset
 
-1. [Download the Unity Package](/unity-packages/StereoConvergencePoint.unitypackage)
+1. [Download the Unity Package](pathname:///unity-packages/StereoConvergenceDetector_v1.1.0.unitypackage)
 2. Import the Unity Package into your project ( **Assets > Import New Package > Custom Package...** )
 3. One imported, navigate to the *Assets/StereoConvergenceDetector* folder and drag the Stereo Convergence Detector prefab into your scene.
 4. Enable the Eye Tracking permission in the project settings

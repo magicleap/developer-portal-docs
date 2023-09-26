@@ -20,7 +20,7 @@ A structure to encapsulate the data for each [MLPowerManagerPropertyType](/api-r
 | Type           | Name           |
 | -------------- | -------------- |
 | [MLPowerManagerPropertyType](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerpropertytype) | **[property_type](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md#mlpowermanagerpropertytype-property-type)**  |
-| union MLPowerManagerComponentProperty::@24 | **[Anonymous 25](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md#union-mlpowermanagercomponentproperty-24-anonymous-25)**  |
+| union MLPowerManagerComponentProperty::@25 | **[Anonymous 26](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_component_property.md#union-mlpowermanagercomponentproperty-25-anonymous-26)**  |
 
 ## Detailed Description
 
@@ -90,10 +90,10 @@ The type of each property.
 
 -----------
 
-### Anonymous 25 {#union-mlpowermanagercomponentproperty-24-anonymous-25}
+### Anonymous 26 {#union-mlpowermanagercomponentproperty-25-anonymous-26}
 
 ```cpp
-union MLPowerManagerComponentProperty::@24 Anonymous 25;
+union MLPowerManagerComponentProperty::@25 Anonymous 26;
 ```
 
 

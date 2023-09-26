@@ -40,7 +40,8 @@ public static bool IsZIRunning { get; set; }
 
 ```csharp
 public static void AddLibrarySearchPaths(
-    List< string > librarySearchPaths
+    List< string > librarySearchPaths,
+    IEnumerable< XRLoader > activeLoaders
 )
 ```
 
@@ -50,6 +51,7 @@ public static void AddLibrarySearchPaths(
 | Type | Name  | Description  | 
 |--|--|--|
 | List&lt; string &gt; |librarySearchPaths||
+| IEnumerable&lt; XRLoader &gt; |activeLoaders||
 
 
 

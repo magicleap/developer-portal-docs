@@ -79,6 +79,21 @@ public const string EyeTracking = "com.magicleap.permission.EYE_TRACKING";
 
 -----------
 
+### FacialExpression {#const-string-facialexpression}
+
+```csharp
+
+public const string FacialExpression = "com.magicleap.permission.FACIAL_EXPRESSION";
+
+```
+
+
+
+
+
+
+-----------
+
 ### HandTracking {#const-string-handtracking}
 
 ```csharp

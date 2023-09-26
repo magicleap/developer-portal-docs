@@ -115,6 +115,28 @@ public MLResult AddRemoteIceCandidate(
 
 -----------
 
+### bool ContainsTrack {#bool-containstrack}
+
+```csharp
+public bool ContainsTrack(
+    MediaStream.Track track
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [MediaStream.Track](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/MediaStream/UnityEngine.XR.MagicLeap.MLWebRTC.MediaStream.Track.md) |track|Struct that represents a media stream track object. |
+
+
+
+
+
+
+-----------
+
 ### [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) CreateOffer {#mlresult-createoffer}
 
 Creates the offer for the connection. 

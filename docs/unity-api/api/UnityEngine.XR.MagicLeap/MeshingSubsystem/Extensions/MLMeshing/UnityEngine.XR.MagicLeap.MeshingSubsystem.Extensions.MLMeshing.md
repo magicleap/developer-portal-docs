@@ -16,6 +16,62 @@ title: MLMeshing
 
 ## Public Methods
 
+### [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) DensityToLevelOfDetail {#levelofdetail-densitytolevelofdetail}
+
+Step the Level of detail to Minimum, Medium and Maximum 
+
+```csharp
+public static LevelOfDetail DensityToLevelOfDetail(
+    float density
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| float |density|float input value|
+
+
+
+
+
+
+**Returns**: 
+
+
+
+-----------
+
+### float LevelOfDetailToDensity {#float-levelofdetailtodensity}
+
+Convert a LevelOfDetail to a float, ranged between 0 and 1 
+
+```csharp
+public static float LevelOfDetailToDensity(
+    LevelOfDetail lod
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| [LevelOfDetail](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.md#enums-levelofdetail) |lod|Level of detail|
+
+
+
+
+
+
+**Returns**: Float value between 0 and 1
+
+
+
+-----------
+
 ### delegate [MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/Extensions/MLMeshing/UnityEngine.XR.MagicLeap.MeshingSubsystem.Extensions.MLMeshing.MeshBlockRequest.md) [] OnMeshBlockRequests {#delegate-onmeshblockrequests}
 
 ```csharp

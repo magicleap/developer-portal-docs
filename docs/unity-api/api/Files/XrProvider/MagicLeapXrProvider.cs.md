@@ -31,9 +31,11 @@ title: MagicLeapXrProvider.cs
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.XR.InteractionSubsystems;
+using UnityEngine.XR.Management;
 #if XR_HANDS
 using UnityEngine.XR.Hands;
 #endif
@@ -84,21 +86,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        private static string LibHostDirForXRPackageUntil700Exp4
-        {
-            get
-            {
-#if UNITY_EDITOR_WIN
-                return "Windows";
-#elif UNITY_EDITOR_OSX
-                return "macOS";
-#else
-                throw new NotSupportedException("Not supported on this platform!");
-#endif
-            }
-        }
-
-        public static void AddLibrarySearchPaths(List<string> librarySearchPaths)
+        public static void AddLibrarySearchPaths(List<string> librarySearchPaths, IEnumerable<XRLoader> activeLoaders)
         {
 #if UNITY_EDITOR
             bool isZIRunning = false;
@@ -116,7 +104,14 @@ namespace UnityEngine.XR.MagicLeap
                     return;
                 }
 
-                MagicLeapXrProviderNativeBindings.UnityMagicLeap_SetLibraryPath(loaderLibPath);
+                bool validXrLoaderActive = activeLoaders.Any(l => l is MagicLeapLoader);
+
+                // UnityMagicLeap_SetLibraryPath() lives in the com.unity.xr.magicleap package's natiev lib so only call it if its loader is active.
+                // This avoids unnecesarily calling this func if openxr package is active instead and ML XR package is not even present in the project.
+                if (validXrLoaderActive)
+                {
+                    MagicLeapXrProviderNativeBindings.UnityMagicLeap_SetLibraryPath(loaderLibPath);
+                }
 
                 if (librarySearchPaths.Count > 0)
                 {
@@ -124,29 +119,30 @@ namespace UnityEngine.XR.MagicLeap
                     {
                         MagicLeapXrProviderNativeBindings.MagicLeapXrProviderAddLibraryPath(librarySearchPath);
                     }
-
-                    packagePath = Path.GetFullPath("Packages/com.unity.xr.magicleap");
-                    loaderLibPath = Path.Combine(packagePath, "Runtime", LibHostDirForXRPackage);
-                    if (!Directory.Exists(loaderLibPath))
+                    if (validXrLoaderActive)
                     {
-                        // We need to do keep separate paths for versions until 7.0.0-exp.4 and later in this manner
-                        // instead of checking for xr package veresion because xr package mainline is still marked as
-                        // 7.0.0-exp.3 even though exp.4 is out and there is no guarantee what the next version would
-                        // be called. Best to check if the path exists and set the loader path accordingly.
-                        loaderLibPath = Path.Combine(packagePath, "Runtime", LibHostDirForXRPackageUntil700Exp4);
+                        packagePath = Path.GetFullPath("Packages/com.unity.xr.magicleap");
+                        loaderLibPath = Path.Combine(packagePath, "Runtime", LibHostDirForXRPackage);
                         if (!Directory.Exists(loaderLibPath))
                         {
                             Debug.LogError($"Could not find host library path {loaderLibPath}. Some App Sim features, like graphics, may not work correctly.");
                             return;
                         }
-                    }
 
-                    MagicLeapXrProviderNativeBindings.MagicLeapXrProviderAddLibraryPath(loaderLibPath);
+                        MagicLeapXrProviderNativeBindings.MagicLeapXrProviderAddLibraryPath(loaderLibPath);
+                    }
 
                     var resultCode = MagicLeapXrProviderNativeBindings.MLZIIsServerConfigured(out isZIRunning);
                     if (!MLResult.DidNativeCallSucceed(resultCode, nameof(MagicLeapXrProviderNativeBindings.MLZIIsServerConfigured)) || !isZIRunning)
                     {
-                        Debug.LogError("Failed to detect running Magic Leap App Simulator session.");
+                        // This is expected case: user plays a scene without an AppSim session started. 
+                        // Show a dialog with user-readable message instead of only logging errors that are not obvious nor helpful to users.
+                        EditorUtility.DisplayDialog("Magic Leap", 
+                            "No Magic Leap App Simulator session is running. " +
+                            "Exit Play mode and start App Simulator before entering Play mode again.", 
+                            "Ok");
+                        // This log message is more technical, good for for user to report bug.
+                        Debug.LogError("Failed to detect running Magic Leap App Simulator session, or a running session if any is not compatible (e.g. protocol version is different between the frontend and the backend).");
                         MagicLeapXrProviderNativeBindings.MLSdkLoaderResetLibraryPaths();
                     }
 
@@ -160,6 +156,7 @@ namespace UnityEngine.XR.MagicLeap
 #endif
         }
 
+#if UNITY_XR_MAGICLEAP_PROVIDER
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void SetupLoaderLibPathInXRPackage()
         {
@@ -203,6 +200,7 @@ namespace UnityEngine.XR.MagicLeap
             MagicLeapSettings.Subsystems.RegisterSubsystemOverride<XRHandSubsystem>(HandSubsystemId);
 #endif
         }
+#endif
     }
 }
 ```

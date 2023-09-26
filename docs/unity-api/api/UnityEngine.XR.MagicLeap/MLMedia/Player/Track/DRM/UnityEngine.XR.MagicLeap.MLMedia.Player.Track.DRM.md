@@ -210,7 +210,7 @@ public MLResult IsCryptoSchemeSupported(
 
 | Type | Name  | Description  | 
 |--|--|--|
-| [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) |uuid|Universally unique identifier |
+| MagicLeapNativeBindings.MLUUID |uuid||
 | string |mime||
 | out bool |isSupported||
 

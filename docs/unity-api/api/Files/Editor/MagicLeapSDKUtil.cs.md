@@ -46,19 +46,6 @@ namespace UnityEditor.XR.MagicLeap
 #endif
         private static uint minApiLevel = 0;
 
-        static MagicLeapSDKUtil()
-        {
-            try
-            {
-                var result = UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUnitySdkGetMinApiLevel(out minApiLevel);
-                UnityEngine.XR.MagicLeap.MLResult.DidNativeCallSucceed(result, nameof(UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUnitySdkGetMinApiLevel));
-            }
-            catch(Exception e)
-            {
-                Debug.LogError($"Failed looking up minimum API level for Magic Leap SDK due to exception: {e}"); 
-            }
-        }
-
         [Serializable]
         private class SDKManifest
         {
@@ -78,7 +65,25 @@ namespace UnityEditor.XR.MagicLeap
             }
         }
 
-        public static uint MinimumApiLevel => minApiLevel;
+        public static uint MinimumApiLevel
+        {
+            get
+            {
+                if(minApiLevel == 0)
+                {
+                    try
+                    {
+                        var result = UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUnitySdkGetMinApiLevel(out minApiLevel);
+                        UnityEngine.XR.MagicLeap.MLResult.DidNativeCallSucceed(result, nameof(UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUnitySdkGetMinApiLevel));
+                    }
+                    catch(DllNotFoundException)
+                    {
+                        Debug.LogWarning($"Native plugins have not been built for host ({Application.platform}). Minimum API level can't be queried.");
+                    }
+                }
+                return minApiLevel;
+            }
+        }
 
         public static string SdkPath
         {

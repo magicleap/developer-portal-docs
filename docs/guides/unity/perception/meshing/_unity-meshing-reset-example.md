@@ -12,7 +12,7 @@ This section includes an example on how to reset and refresh the meshes that wer
 
 :::caution
 
-Before proceeding make sure you have an object with a properly configured `MeshingSubsystemComponent` attached. In addition to having the `WORLD_RECONSTRUCTION` permission to be enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**)
+Before proceeding make sure you have an object with a properly configured `MeshingSubsystemComponent` attached. This features requires the  `WORLD_RECONSTRUCTION` to be **[requested at runtime](/docs/guides/unity/permissions/requesting-permissions.md#requesting-normal-install-time-permissions)** and enabled in your project's Manifest Settings. (**Edit > Project Settings > Magic Leap > Manifest Settings**)
 
 :::
 

@@ -252,31 +252,34 @@ table.doxtable {
 
 .ml2-overview-table td {
   padding: 15px 20px !important;
+  margin: auto !important;
+  border: none !important;
+  background: white;
 }
 
-.ml2-overview-table tr, td, th {
+.ml2-overview-table tr {
   margin: auto !important;
   border: none !important;
 }
 
 .ml2-overview-table img {
-  border-radius: 15px;
-  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
   background-color: rgb(0, 0, 0);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
   max-width: none;
 }
 
-table tr:nth-child(2n) {
+/* table tr:nth-child(2n) {
   background-color: #ffffff !important;
-}
+} */
 
 .ml2-overview-table td {
   position: relative;
   text-align: center;
 }
 
-.tabList_node_modules-\@docusaurus-theme-classic-lib-theme-Tabs-styles-module {
+/* .tabList_node_modules-\@docusaurus-theme-classic-lib-theme-Tabs-styles-module {
   margin-bottom: var(--ifm-leading);
   border-radius: var(--ifm-alert-border-radius);
   padding-left: 20px;
@@ -284,6 +287,56 @@ table tr:nth-child(2n) {
   padding-bottom: 20px;
   padding-top: 10px;
   box-shadow: rgba(0,0,0,0.06) 0px 2px 4px 2px inset;
+} */
+
+div[role="tabpanel"] {
+  border: 1px solid var(--ml-color-meteorite-20);
+  border-top: none;
+  padding: 15px;
+  margin-top: -1rem !important;
+  border-radius: var(--ifm-global-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* .tabItem_node_modules-\@docusaurus-theme-classic-lib-theme-TabItem-styles-module {
+  border: 1px solid var(--ml-color-meteorite-20);
+  border-top: none;
+  padding: 15px;
+  margin-top: -1rem !important;
+  border-radius: var(--ifm-global-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+} */
+
+.tabs {
+  /* color: var(--ifm-tabs-color);
+  display: flex;
+  font-weight: var(--ifm-font-weight-bold);
+  margin-bottom: 0;
+  */
+  overflow-x: inherit;
+  border-bottom: 1px solid var(--ml-color-meteorite-20);
+}
+
+.tabs__item--active {
+  border-top-color:var(--ml-color-meteorite-20) !important;
+  border-left-color:var(--ml-color-meteorite-20) !important;
+  border-right-color:var(--ml-color-meteorite-20) !important;
+  border-bottom-color: var(--ifm-tabs-color-active) !important;
+}
+
+.tabs__item {
+  /* border-bottom: 3px solid transparent;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer; */
+  margin-bottom: -1px;
+  border-bottom: 3px solid transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
 
 .ml2-overview-image-text {

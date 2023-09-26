@@ -16,6 +16,28 @@ title: MLHeadTracking
 
 ## Public Methods
 
+### void GetStaticData {#void-getstaticdata}
+
+```csharp
+public static void GetStaticData(
+    out MagicLeapNativeBindings.MLCoordinateFrameUID outUID
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| out [MagicLeapNativeBindings.MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |outUID|A unique identifier which represents a coordinate frame. The unique identifier is comprised of two values. |
+
+
+
+
+
+
+-----------
+
 ### bool TryGetMapEvents {#bool-trygetmapevents}
 
 ```csharp

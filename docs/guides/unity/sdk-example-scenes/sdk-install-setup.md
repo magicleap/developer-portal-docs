@@ -28,7 +28,7 @@ To access the Package manager in ML Hub
 
 2. Select **Package Manager** from the home screen.
 
-<Image url= {require("/img/ml-hub/package_manager_link.png")} >Package Manager option outlined</Image>
+<Image url= {require("/img/ml-hub/package_manager_link.jpg")} >Package Manager option outlined</Image>
 
 Next you can either download the examples project using the [Package Bundles](#download-using-package-bundles), or as an [individual package](#download-individual-package).
 

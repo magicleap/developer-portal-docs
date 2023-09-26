@@ -23,7 +23,7 @@ public struct Settings;
 
 **Details**
 
-API Level 22
+API Level 29
 
 
 
@@ -35,19 +35,16 @@ API Level 22
 
 ## Public Attributes
 
-### Flags {#captureflags-flags}
+### StreamConfig {#streamconfig-streamconfig}
 
-Flags to configure the depth data. 
+Controls for each of the depth camera streams. Only controls for streams enabled via streams field will be read. Use [MLDepthCamera.FrameType](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-frametype) enumeration for indexing. 
 
 ```csharp
 
-public CaptureFlags Flags;
+public StreamConfig [] StreamConfig;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [CaptureFlags](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-captureflags) | Flags used to specify what kind of data to request from Depth Camera  |
 
 
 
@@ -55,27 +52,21 @@ public CaptureFlags Flags;
 
 -----------
 
-### Mode {#mode-mode}
+### Streams {#stream-streams}
 
-Depth camera Mode. 
+The system may not be able to service all the requested streams at any given time. This parameter is treated as a hint and data will be provided for the requested streams if available. 
 
 ```csharp
 
-public Mode Mode;
+public Stream Streams;
 
 ```
 
 | Type | Description  | 
 |--|--|
-| [Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-mode) | Depth Camera modes
+| [Stream](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.md#enums-stream) | Depth Camera modes
 
  Future release may add support to other modes.  |
-
-**Details**
-
-See [Mode](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.Settings.md#mode-mode) for more details.
-
-NOTE: The system may not be able to service all the requested modes at any given time. This parameter is treated as a hint and data will be provided for the requested modes if available.
 
 
 

@@ -51,6 +51,10 @@ namespace UnityEngine.XR.MagicLeap
 
                 return new InputDevice();
             }
+
+            public static void PredictSnapshot(long timestamp, bool predictSnapshots) => MagicLeapXrProviderNativeBindings.PredictSnapshot(timestamp, predictSnapshots);
+            
+            public static void ResetSnapshotPrediction() => MagicLeapXrProviderNativeBindings.ResetSnapshotPrediction();
         }
     }
 }

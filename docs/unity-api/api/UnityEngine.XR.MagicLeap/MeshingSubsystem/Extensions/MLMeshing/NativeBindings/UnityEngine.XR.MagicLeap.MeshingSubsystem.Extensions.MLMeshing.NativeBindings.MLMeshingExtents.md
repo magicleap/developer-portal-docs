@@ -27,9 +27,6 @@ public MagicLeapNativeBindings.MLVec3f center;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) | 3D vector in native format.  |
 
 
 
@@ -47,9 +44,6 @@ public MagicLeapNativeBindings.MLVec3f extents;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) | 3D vector in native format.  |
 
 
 
@@ -67,9 +61,6 @@ public MagicLeapNativeBindings.MLQuaternionf rotation;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MagicLeapNativeBindings.MLQuaternionf](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLQuaternionf.md) | Quaternion in native format.  |
 
 
 

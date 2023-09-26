@@ -73,7 +73,7 @@ public MLResult.Code MLSpaceGetLocalizationResult(
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceGetSpaceList {#mlresultcode-mlspacegetspacelist}
 
-Get the list of available spaces. The list of spaces returned will depend on the current device mapping mode. Only the Spaces associated with the current mapping mode will be returned by this call.Device mapping mode can be changed via the system application(s). 
+The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist) to release the memory. Each get [MLSpaceGetSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacegetspacelist) should have a corresponding [MLSpaceReleaseSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist). 
 
 ```csharp
 public MLResult.Code MLSpaceGetSpaceList(
@@ -93,10 +93,6 @@ public MLResult.Code MLSpaceGetSpaceList(
 | out [SpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.SpaceList.md) |spaceList|A structure containing list of #MLSpace. This structure must be initialized by calling #MLSpaceListInit before use. |
 
 
-**Details**
-
-The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist) to release the memory. Each get [MLSpaceGetSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacegetspacelist) should have a corresponding [MLSpaceReleaseSpaceList](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md#mlresultcode-mlspacereleasespacelist). 
-
 
 
 
@@ -105,7 +101,7 @@ The list memory is owned by the library, call [MLSpaceReleaseSpaceList](/unity-a
 
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSpaceImportSpace {#mlresultcode-mlspaceimportspace}
 
-Import a Magic Leap [Space](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.Space.md). The #MLSpaceImportInfo memory is owned by the app and the app should make sure to release the memory once the API call has returned 
+The #MLSpaceImportInfo memory is owned by the app and the app should make sure to release the memory once the API call has returned 
 
 ```csharp
 public MLResult.Code MLSpaceImportSpace(

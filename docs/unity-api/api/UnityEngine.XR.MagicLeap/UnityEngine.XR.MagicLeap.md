@@ -17,6 +17,7 @@ XR
 | Name           |
 | -------------- |
 | **[UnityEngine::XR::MagicLeap::Native](/unity-api/api/UnityEngine.XR.MagicLeap.Native/UnityEngine.XR.MagicLeap.Native.md)**  |
+| **[UnityEngine::XR::MagicLeap::Unsafe](/unity-api/api/UnityEngine.XR.MagicLeap.Unsafe/UnityEngine.XR.MagicLeap.Unsafe.md)**  |
 
 ## Classes
 
@@ -46,6 +47,7 @@ XR
 | class | **[MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md)** <br></br>[MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.  |
 | class | **[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md)** <br></br>[MLEyeCalibration](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCalibration/UnityEngine.XR.MagicLeap.MLEyeCalibration.md) Summary placeholder.  |
 | class | **[MLEyeCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md)** <br></br>[MLEyeCamera](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/UnityEngine.XR.MagicLeap.MLEyeCamera.md) class exposes static functions to query eye camera related functions. Most functions are currently a direct pass through functions to the native C-API functions and incur no overhead.  |
+| class | **[MLFacialExpression](/unity-api/api/UnityEngine.XR.MagicLeap/MLFacialExpression/UnityEngine.XR.MagicLeap.MLFacialExpression.md)**  |
 | class | **[MLGazeRecognition](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/UnityEngine.XR.MagicLeap.MLGazeRecognition.md)** <br></br>This API can be used to get info about gaze.  |
 | class | **[MLGlobalDimmer](/unity-api/api/UnityEngine.XR.MagicLeap/MLGlobalDimmer/UnityEngine.XR.MagicLeap.MLGlobalDimmer.md)**  |
 | class | **[MLGraphicsHooks](/unity-api/api/UnityEngine.XR.MagicLeap/MLGraphicsHooks/UnityEngine.XR.MagicLeap.MLGraphicsHooks.md)**  |
@@ -64,6 +66,7 @@ XR
 | class | **[MLNativeSurface](/unity-api/api/UnityEngine.XR.MagicLeap/MLNativeSurface/UnityEngine.XR.MagicLeap.MLNativeSurface.md)**  |
 | class | **[MLNativeSurfaceYcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLNativeSurfaceYcbcrRenderer.md)**  |
 | class | **[MLNotifications](/unity-api/api/UnityEngine.XR.MagicLeap/MLNotifications/UnityEngine.XR.MagicLeap.MLNotifications.md)** <br></br>[MLHeadsetFit](/unity-api/api/UnityEngine.XR.MagicLeap/MLHeadsetFit/UnityEngine.XR.MagicLeap.MLHeadsetFit.md) description goes here.  |
+| class | **[MLOcclusion](/unity-api/api/UnityEngine.XR.MagicLeap/MLOcclusion/UnityEngine.XR.MagicLeap.MLOcclusion.md)**  |
 | struct | **[MLPermission](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPermission.md)**  |
 | class | **[MLPermissions](/unity-api/api/UnityEngine.XR.MagicLeap/MLPermissions/UnityEngine.XR.MagicLeap.MLPermissions.md)**  |
 | class | **[MLPlanes](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLPlanes.md)**  |
@@ -74,7 +77,7 @@ XR
 | struct | **[MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md)** <br></br>Magic Leap API return value.  |
 | class | **[MLSegmentedDimmer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLSegmentedDimmer.md)**  |
 | class | **[MLSpace](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.md)**  |
-| class | **[MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md)** <br></br>Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
+| class | **[MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md)** <br></br>Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.  |
 | class | **[MLVirtualKeyboard](/unity-api/api/UnityEngine.XR.MagicLeap/MLVirtualKeyboard/UnityEngine.XR.MagicLeap.MLVirtualKeyboard.md)** <br></br>This class provides callbacks and manages the state of the Virtual Keyboard.  |
 | class | **[MLVoice](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/UnityEngine.XR.MagicLeap.MLVoice.md)** <br></br>APIs for the voice service system.  |
 | class | **[MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md)** <br></br>[MLWebRTC](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/UnityEngine.XR.MagicLeap.MLWebRTC.md) class contains the API to interface with the WebRTC C API.  |
@@ -86,6 +89,7 @@ XR
 | class | **[MagicLeapXrProviderSettings](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MagicLeapXrProviderSettings.md)**  |
 | class | **[MeshingSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/MeshingSubsystem/UnityEngine.XR.MagicLeap.MeshingSubsystem.md)**  |
 | class | **[MeshingSubsystemComponent](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemComponent.md)**  |
+| class | **[MeshingSubsystemLifecycle](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MeshingSubsystemLifecycle.md)**  |
 | class | **[OnChangedCallAttribute](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.OnChangedCallAttribute.md)**  |
 | class | **[PlanesSubsystem](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.md)** <br></br>The Magic Leap implementation of the  XRPlaneSubsystem . Do not create this directly. Use  PlanesSubsystemDescriptor.Create()  instead.  |
 | class | **[RequireXRLoader](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.RequireXRLoader.md)** <br></br>Place this attribute on a child of [MLAutoAPISingleton](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAutoAPISingleton.md) to prevent its initialization until the Magic Leap XR package is loaded.  |
@@ -96,27 +100,6 @@ XR
 | class | **[Timer](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.Timer.md)**  |
 | class | **[YcbcrRenderer](/unity-api/api/UnityEngine.XR.MagicLeap/YcbcrRenderer/UnityEngine.XR.MagicLeap.YcbcrRenderer.md)** <br></br>Implements a renderer for android native & hardware buffers (Vulkan-only).  |
 
-## Types
-
-|                | Name           |
-| -------------- | -------------- |
-| using UnityEngine.XR.MagicLeap.MagicLeapLogger | **[MLLog](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md#unityenginexrmagicleapmagicleaplogger-mllog)**  |
-
-
-## Types Documentation
-
-### MLLog {#unityenginexrmagicleapmagicleaplogger-mllog}
-
-```csharp
-using UnityEngine::XR::MagicLeap.MLLog = typedef UnityEngine.XR.MagicLeap.MagicLeapLogger;
-```
-
-
-
-
-
-
------------
 
 
 

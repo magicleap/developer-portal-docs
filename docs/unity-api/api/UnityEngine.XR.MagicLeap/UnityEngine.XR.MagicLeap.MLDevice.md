@@ -71,6 +71,19 @@ public static bool IsMagicLeapLoaderActive()
 
 -----------
 
+### bool IsMagicLeapOrOpenXRLoaderActive {#bool-ismagicleaporopenxrloaderactive}
+
+```csharp
+public static bool IsMagicLeapOrOpenXRLoaderActive()
+```
+
+
+
+
+
+
+-----------
+
 ### bool IsOpenXRLoaderActive {#bool-isopenxrloaderactive}
 
 ```csharp

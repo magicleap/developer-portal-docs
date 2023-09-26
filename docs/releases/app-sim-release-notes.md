@@ -6,17 +6,40 @@ date: 06/13/2023
 
 # Magic Leap Application Simulator Release Notes
 
-# Version 3.6.0
+# Version 3.7.0 (Dev1)
+(2023.08.31)
 
 ## What's New
-  * App Sim will validate graphics support of the host machine upon start and warn user if the support is lacking or not sufficient.
-  * Channel Editor has been removed as it causes more confusion than value to the users.
+  * Hybrid mode has been removed as it is underutilized.
+  * Auxiliary Device list has been removed from the App Sim in ML Hub as it is underutilized.
 
 ## Bug Fixes
-  * [Unity] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
-  * [Unity] WASD movement in Game View was inverted along Z axis.
+  * FEEDBACK-463: Device View is sometimes blank after starting App Sim Simulator in Unity.
+
+## Known Issues
+  * Any shipped applications built with MLSDK v1.0.0 will require a rebuild with the latest MLSDK to work with the latest App Sim, even if there are no code changes. This is due to a deprecation of `native_app_glue`. The log message "W [Run] Note: deprecated native_app_glue detected; please rebuild your app" will appear if the application is affected by this.
+  * If Device View and Scene View are both blank after starting App Sim Simulator, that usually indicates the GPU of the machine does not have required Graphics support. One possible workaround is to set the environment variable `ML_ZI_DISABLE_GPU_SHARING` to `1` then restart ML Hub or Unity Editor.
+  * [Unity AppSim] The Unity Editor may become unstable or crash if the headpose is moved while the application is paused (REM-5950).
+  * [Unity AppSim] Unity Editor cannot be exited (by closing the window or selecting menu `Unity->Quit`) when App Sim is running. Workaround is to stop App Sim first (REM-6175).
+
+# Version 3.6.0
+(2023.08.02)
+
+## What's New
+  * App Sim now validates graphics support of the host machine upon start and warns user if the support is lacking or not sufficient.
+  * Channel Editor has been removed from the App Sim in ML Hub as it causes more confusion than benefit to the users.
+
+## Bug Fixes
+  * [Unity AppSim] Unity sometimes freezes on playing a scene or stopping a scene with App Sim.
+  * [Unity AppSim] WASD movement in Game View was inverted along Z axis.
+
+## Known Issues
+  * [Unity AppSim] FEEDBACK-463: Sometimes the Device view is blank after starting App Sim Simulator mode in Unity Editor. The workaround is to
+    * Stop and restart the simulator till the Device view is rendered, OR
+    * Exit Unity Editor and select `No` when prompted whether to stop App Sim and then restart Unity Editor. Then you should see the App Sim is running and the Device view is rendered. 
 
 # Version 3.5.0
+(2023.05.15)
 
 ## What's New
   * UI in ML Hub

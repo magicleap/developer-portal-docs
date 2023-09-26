@@ -36,21 +36,33 @@ namespace UnityEngine.XR.MagicLeap
 {
     public partial class MLTime
     {
+        [StructLayout(LayoutKind.Sequential)]
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+        public struct TimeSpec
+#else
+        internal struct TimeSpec
+#endif
+        {
+            public long Seconds;
+
+            public long Nanoseconds;
+        }
+        
         internal class NativeBindings : MagicLeapNativeBindings
         {
-            [StructLayout(LayoutKind.Sequential)]
-            public struct TimeSpec
-            {
-                public long Seconds;
+#if UNITY_OPENXR_1_7_0_OR_NEWER
+            [DllImport(MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern MLResult.Code MLOpenXRConvertTimespecTimeToXrTime(TimeSpec timespec, out long mlXrTime);
 
-                public long Nanoseconds;
-            }
-
+            [DllImport(MagicLeapXrProviderNativeBindings.MagicLeapXrProviderDll, CallingConvention = CallingConvention.Cdecl)]
+            public static extern MLResult.Code MLOpenXRConvertXrTimeToTimespecTime(long mlXrTime, out TimeSpec timeSpec);
+#else
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern MLResult.Code MLTimeConvertSystemTimeToMLTime(IntPtr timeSpec, out long mlTime);
 
             [DllImport(MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
             public static extern MLResult.Code MLTimeConvertMLTimeToSystemTime(long mlTime, IntPtr timeSpec);
+#endif
         }
     }
 }

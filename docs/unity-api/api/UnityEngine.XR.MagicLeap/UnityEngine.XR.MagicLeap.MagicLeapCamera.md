@@ -22,6 +22,21 @@ Inherits from: <br></br>MonoBehaviour
 
 ## Public Fields
 
+### EnforceFarClip {#bool-enforcefarclip}
+
+```csharp
+
+public bool EnforceFarClip { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### ProtectedSurface {#bool-protectedsurface}
 
 Getter/Setter for setting the Protected surface attribute. 
@@ -29,6 +44,21 @@ Getter/Setter for setting the Protected surface attribute.
 ```csharp
 
 public bool ProtectedSurface { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
+### RecenterXROriginAtStart {#bool-recenterxroriginatstart}
+
+```csharp
+
+public bool RecenterXROriginAtStart { get; set; }
 
 ```
 

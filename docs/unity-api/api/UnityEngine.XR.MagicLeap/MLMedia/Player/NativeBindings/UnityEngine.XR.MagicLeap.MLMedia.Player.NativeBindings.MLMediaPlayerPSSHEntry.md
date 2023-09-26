@@ -61,9 +61,6 @@ public MagicLeapNativeBindings.MLUUID uuid;
 
 ```
 
-| Type | Description  | 
-|--|--|
-| [MagicLeapNativeBindings.MLUUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLUUID.md) | Universally unique identifier  |
 
 
 

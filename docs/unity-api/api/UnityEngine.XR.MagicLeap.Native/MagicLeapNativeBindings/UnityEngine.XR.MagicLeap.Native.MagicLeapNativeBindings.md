@@ -15,7 +15,7 @@ summary: defines c# api interface to c-api layer.
 Defines C# API interface to C-API layer.   
 
 
-Inherited by: <br></br>[UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLAudioOutput.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/NativeBindings/UnityEngine.XR.MagicLeap.MLAudioOutput.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLAudioPlayback.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioPlayback/UnityEngine.XR.MagicLeap.MLAudioPlayback.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLEyeCamera.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLEyeCamera.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.DataSource.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/DataSource/UnityEngine.XR.MagicLeap.MLMedia.DataSource.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/UnityEngine.XR.MagicLeap.MLMedia.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.Player.Track.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLSpace.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLTime.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/NativeBindings/UnityEngine.XR.MagicLeap.MLTime.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLVoice.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.Source.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/Source/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.Source.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.PlanesSubsystem.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.NativeBindings.md)
+Inherited by: <br></br>[UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/InputSubsystem/Extensions/Controller/NativeBindings/UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.Controller.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MagicLeapXrProviderNativeBindings/UnityEngine.XR.MagicLeap.MagicLeapXrProviderNativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLAnchors/NativeBindings/UnityEngine.XR.MagicLeap.MLAnchors.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLAudioOutput.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioOutput/NativeBindings/UnityEngine.XR.MagicLeap.MLAudioOutput.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLAudioPlayback.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLAudioPlayback/UnityEngine.XR.MagicLeap.MLAudioPlayback.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLCameraBase/NativeBindings/UnityEngine.XR.MagicLeap.MLCameraBase.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLEyeCamera.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLEyeCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLEyeCamera.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLGazeRecognition/NativeBindings/UnityEngine.XR.MagicLeap.MLGazeRecognition.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMarkerTracker/NativeBindings/UnityEngine.XR.MagicLeap.MLMarkerTracker.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.DataSource.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/DataSource/UnityEngine.XR.MagicLeap.MLMedia.DataSource.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/UnityEngine.XR.MagicLeap.MLMedia.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/ParserCEA608/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.ParserCEA608.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/DRM/NativeBindings/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.DRM.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMedia.Player.Track.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMedia/Player/Track/UnityEngine.XR.MagicLeap.MLMedia.Player.Track.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLMediaRecorder/NativeBindings/UnityEngine.XR.MagicLeap.MLMediaRecorder.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLPowerManager/NativeBindings/UnityEngine.XR.MagicLeap.MLPowerManager.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLSpace.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLSpace/UnityEngine.XR.MagicLeap.MLSpace.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLTime.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLVoice.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLVoice/NativeBindings/UnityEngine.XR.MagicLeap.MLVoice.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedAudioSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedAudioSource.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AppDefinedVideoSource/UnityEngine.XR.MagicLeap.MLWebRTC.AppDefinedVideoSource.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/AudioSink/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.AudioSink.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/DataChannel/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.DataChannel.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/PeerConnection/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.PeerConnection.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.Source.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/Source/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.Source.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/Frame/NativeBindings/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.Frame.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWebRTC/VideoSink/UnityEngine.XR.MagicLeap.MLWebRTC.VideoSink.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/MLWorldCamera/NativeBindings/UnityEngine.XR.MagicLeap.MLWorldCamera.NativeBindings.md), <br></br>[UnityEngine.XR.MagicLeap.PlanesSubsystem.NativeBindings](/unity-api/api/UnityEngine.XR.MagicLeap/PlanesSubsystem/UnityEngine.XR.MagicLeap.PlanesSubsystem.NativeBindings.md), <br></br>[UnityEngine.XR.OpenXR.Features.MagicLeapSupport.MLXrPlaneSubsystem.NativeBindings](/unity-api/api/UnityEngine.XR.OpenXR.Features.MagicLeapSupport/MLXrPlaneSubsystem/UnityEngine.XR.OpenXR.Features.MagicLeapSupport.MLXrPlaneSubsystem.NativeBindings.md)
 
 
 
@@ -106,6 +106,36 @@ public IntPtr MLInputGetResultString(
 
 -----------
 
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPerceptionGetPredictedSnapshot {#mlresultcode-mlperceptiongetpredictedsnapshot}
+
+Pulls in the state of all persistent transforms and all enabled trackers extrapolated to the provided timestamp. This timestamp typically comes from out&#95;frame&#95;info.predicted&#95;display&#95;time out parameter from the MLGraphicsBeginFrameEx function. Returns a MLSnapshot with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to [MLPerceptionReleaseSnapshot()](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md#mlresultcode-mlperceptionreleasesnapshot). 
+
+```csharp
+public MLResult.Code MLPerceptionGetPredictedSnapshot(
+    ulong timestamp,
+    ref IntPtr out&#95;snapshot
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ulong |timestamp|Timestamp representing the time for which to predict poses.|
+| ref IntPtr |out&#95;snapshot|Pointer to a pointer containing an MLSnapshot on success.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if operation was successful. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidTimestamp](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidtimestamp)  if Timestamp is either more than 100ms in the future or too old for cached state. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if Output parameter was not valid (null). [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.PerceptionSystemNotStartede  if Perception System has not been started. 
+
+
+
+-----------
+
 ### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLPerceptionGetSnapshot {#mlresultcode-mlperceptiongetsnapshot}
 
 Pull in the latest state of all persistent transforms and all enabled trackers extrapolated to the next frame time. Returns an MLSnapshot with this latest state. This snap should be used for the duration of the frame being constructed and then released with a call to [MLPerceptionReleaseSnapshot()](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md#mlresultcode-mlperceptionreleasesnapshot). 
@@ -190,6 +220,40 @@ public MLResult.Code MLPlatformGetAPILevel(
 
 -----------
 
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSnapshotGetPoseInBase {#mlresultcode-mlsnapshotgetposeinbase}
+
+Get transform between coordinate frame 'base&#95;id' and the coordinate frame `id' as well as any derivatives that have been calculated. 
+
+```csharp
+public MLResult.Code MLSnapshotGetPoseInBase(
+    IntPtr snap,
+    ref MLCoordinateFrameUID base&#95;id,
+    ref MLCoordinateFrameUID id,
+    ref MLPose outPose
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| IntPtr |snap|A snapshot of tracker state. Can be obtained with [MLPerceptionGetSnapshot()](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.md#mlresultcode-mlperceptiongetsnapshot).|
+| ref [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |base&#95;id|The coordinate frame in which to locate 'id'.|
+| ref [MLCoordinateFrameUID](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLCoordinateFrameUID.md) |id|The coordinate frame which needs to be located in the base&#95;id coordinate frame.|
+| ref [MLPose](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLPose.md) |outPose|Valid pointer to an [MLPose](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLPose.md). To be filled out with requested pose data.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed to obtain transform due to invalid parameter. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if obtained transform successfully. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  MLResult.Code.PoseNotFoundk  if coordinate Frame is valid, but not found in the current pose snapshot. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed to obtain transform due to internal error. 
+
+
+
+-----------
+
 ### IntPtr MLSnapshotGetResultString {#intptr-mlsnapshotgetresultstring}
 
 Returns a pointer to an ASCII string representation for each result code. This call can return a pointer to the string for any of the MLSnapshot related [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) codes. Developers should use [MLResult.CodeToString](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#string-codetostring)([MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code)). 
@@ -213,6 +277,34 @@ public IntPtr MLSnapshotGetResultString(
 
 
 **Returns**: Returns a pointer to an ASCII string containing readable version of the result code.
+
+
+
+-----------
+
+### [MLResult.Code](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-code) MLSnapshotGetStaticData {#mlresultcode-mlsnapshotgetstaticdata}
+
+Get the static data pertaining to the snapshot system. Requires API level 30. 
+
+```csharp
+public MLResult.Code MLSnapshotGetStaticData(
+    ref MLSnapshotStaticData outStaticData
+)
+```
+
+
+**Parameters**
+
+| Type | Name  | Description  | 
+|--|--|--|
+| ref [MLSnapshotStaticData](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLSnapshotStaticData.md) |outStaticData|Valid pointer to an [MLSnapshotStaticData](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLSnapshotStaticData.md). To be filled out with snapshot static data.|
+
+
+
+
+
+
+**Returns**: [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.InvalidParam](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-invalidparam)  if failed to obtain static data due to invalid parameter. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.Ok](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-ok)  if obtained static data successfully. [MLResult.Result](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#readonly-result) will be  [MLResult.Code.UnspecifiedFailure](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md#enums-unspecifiedfailure)  if failed to obtain static data due to internal error. 
 
 
 

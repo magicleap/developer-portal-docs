@@ -1,6 +1,6 @@
 ---
 title: MLDepthCameraFrameBuffer
-summary: a structure to encapsulate per plane info for each camera frame. 
+summary: structure to encapsulate per plane info for each camera frame. 
 
 ---
 
@@ -10,7 +10,7 @@ summary: a structure to encapsulate per plane info for each camera frame.
 
 
 
-A structure to encapsulate per plane info for each camera frame.  [More...](#detailed-description)
+Structure to encapsulate per plane info for each camera frame.  [More...](#detailed-description)
 
 
 `#include <ml_depth_camera.h>`
@@ -32,13 +32,13 @@ A structure to encapsulate per plane info for each camera frame.  [More...](#det
 struct MLDepthCameraFrameBuffer;
 ```
 
-A structure to encapsulate per plane info for each camera frame. 
+Structure to encapsulate per plane info for each camera frame. 
 
 
 
 
 **API Level:**
-  * 23
+  * 29
 
 
 

@@ -33,7 +33,7 @@ While the Magic Leap One's anchor system ([Persistent Coordinate Frames, or PCFs
 The [Spaces](docs/guides/features/spaces/spaces-tool.md) application allows you to create new spaces and localize into them. It also allows you to visualize all of the spatial anchors associated with a given Space.
 
 :::info
-Without AR Cloud, Magic Leap 2 supports storing 5 locally stored Spaces.
+Without AR Cloud, Magic Leap 2 allows users to save up to 5 Spaces locally on the device.
 :::
 
 :::note

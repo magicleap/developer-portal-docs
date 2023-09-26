@@ -138,6 +138,36 @@ public InputAction Data => m_Wrapper.m_Eyes_Data;
 
 -----------
 
+### Position {#inputaction-position}
+
+```csharp
+
+public InputAction Position => m_Wrapper.m_Eyes_Position;
+
+```
+
+
+
+
+
+
+-----------
+
+### Rotation {#inputaction-rotation}
+
+```csharp
+
+public InputAction Rotation => m_Wrapper.m_Eyes_Rotation;
+
+```
+
+
+
+
+
+
+-----------
+
 ### enabled {#bool-enabled}
 
 ```csharp

@@ -21,6 +21,8 @@ title: MLHeadTracking.cs
 using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.XR.MagicLeap.Native;
+using static UnityEngine.XR.MagicLeap.InputSubsystem.Extensions.MLHeadTracking.NativeBindings;
 
 namespace UnityEngine.XR.MagicLeap
 {
@@ -97,6 +99,28 @@ namespace UnityEngine.XR.MagicLeap
 
                 public static bool TryGetStateEx(InputDevice headDevice, out StateEx headTrackingState) => NativeBindings.TryGetStateEx(headDevice, out headTrackingState);
                 public static bool TryGetMapEvents(InputDevice headDevice, out MapEvents mapEvents) => NativeBindings.TryGetMapEvents(headDevice, out mapEvents);
+
+                private static bool gotData = false;
+                private static NativeBindings.MLHeadTrackingStaticData data;
+                public static void GetStaticData(out MagicLeapNativeBindings.MLCoordinateFrameUID outUID)
+                {
+                    outUID = MagicLeapNativeBindings.MLCoordinateFrameUID.EmptyFrame;
+                    if (!gotData)
+                    {
+                        var headHandle = MagicLeapXrProviderNativeBindings.GetHeadTrackerHandle();
+                        data = new();
+                        MLResult result = MLResult.Create(MLHeadTrackingGetStaticData(headHandle, ref data));
+                        if (!result.IsOk)
+                        {
+                            Debug.LogError($"MLHeadTracking::GetStaticData failed: {result}");
+                            gotData = false;
+                            return;
+                        }
+                    }
+
+                    outUID = data.coord_frame_head;
+                    return;
+                }
 
                 [Obsolete]
                 public readonly struct State
@@ -245,6 +269,15 @@ namespace UnityEngine.XR.MagicLeap
                         public readonly float Confidence;
 
                         public readonly uint Error;
+                    }
+
+                    [DllImport(MagicLeapNativeBindings.MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
+                    public static extern MLResult.Code MLHeadTrackingGetStaticData(ulong handle, ref MLHeadTrackingStaticData data);
+
+                    [StructLayout(LayoutKind.Sequential)]
+                    public struct MLHeadTrackingStaticData
+                    {
+                        public MagicLeapNativeBindings.MLCoordinateFrameUID coord_frame_head;
                     }
                 }
             }

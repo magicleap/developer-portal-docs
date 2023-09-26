@@ -28,9 +28,12 @@ title: DeviceCommands.cs
 // ---------------------------------------------------------------------
 // %BANNER_END%
 
+using System.Runtime.InteropServices;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.Layouts;
+using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.InputSystem.Utilities;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.Scripting;
 
@@ -128,7 +131,7 @@ namespace UnityEngine.XR.MagicLeap
                     High,
                 }
 
-#if UNITY_INPUT_SYSTEM
+#if UNITY_INPUT_SYSTEM || !UNITY_XR_MAGICLEAP_PROVIDER
 
                 [StructLayout(LayoutKind.Explicit, Size = Constants.kBaseCommandSize + (sizeof(uint) * 2))]
                 public struct SendControllerVibe : IInputDeviceCommandInfo

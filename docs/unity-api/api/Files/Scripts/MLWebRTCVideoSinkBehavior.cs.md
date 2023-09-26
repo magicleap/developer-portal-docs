@@ -113,7 +113,9 @@ namespace MagicLeap.Core
         {
             if (VideoSink.Stream == null)
             {
-                // nothing to do
+                nativeRenderer.enabled = false;
+                yuvRenderer.enabled = false;
+                rgbRenderer.enabled = false;
                 return;
             }
 

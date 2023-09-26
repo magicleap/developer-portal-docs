@@ -210,7 +210,7 @@ public MLResult.Code MLWebRTCAudioSinkSetPosition(
 | Type | Name  | Description  | 
 |--|--|--|
 | ulong |sinkHandle|The handle to the audio sink.|
-| in [MagicLeapNativeBindings.MLVec3f](/unity-api/api/UnityEngine.XR.MagicLeap.Native/MagicLeapNativeBindings/UnityEngine.XR.MagicLeap.Native.MagicLeapNativeBindings.MLVec3f.md) |position|The position to set the audio sink to.|
+| in MagicLeapNativeBindings.MLVec3f |position|The position to set the audio sink to.|
 
 
 

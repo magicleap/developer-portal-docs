@@ -48,7 +48,7 @@ Note that the function `CheckPermission()` will return:
 
 ## Requesting Dangerous (Runtime) Permissions
 
-**Dangerous** permissions need to be [declared in the AndroidManifest.xml](/docs/guides/unity/permissions/declaring-permissions.md) and also require to be explicitly **requested at runtime**. Since these permissions offer access to potentially sensitive data, users can decide whether they want to allow these permissions or not. If the permission is denied, your application should adapt its behavior according.
+**Dangerous** permissions need to be [declared in the AndroidManifest.xml](/docs/guides/unity/permissions/declaring-permissions.md) and also require to be explicitly **[requested at runtime](/docs/guides/unity/permissions/requesting-permissions.md#requesting-normal-install-time-permissions)**. Since these permissions offer access to potentially sensitive data, users can decide whether they want to allow these permissions or not. If the permission is denied, your application should adapt its behavior according.
 
 Note that if a **Dangerous** permission is not included in the `AndroidManifest.xml`, your application won't have the ability to request this permission at runtime.
 

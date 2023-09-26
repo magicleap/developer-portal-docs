@@ -24,7 +24,7 @@ Only perform a manual flash if the Controller fails to updated after connecting 
 
 - Make sure the Controller's charge is above 40%
 - If the recovery fails, you may need to try another cable.
-- [Download the Controller recovery files](/control_4992-R2.zip)
+- [Download the Controller recovery files](pathname:///control_4992-R2.zip)
 
 <Tabs
   defaultValue="windows"

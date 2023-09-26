@@ -376,6 +376,7 @@ Identifier of Magic Leap API results
 | PerceptionSystemNotStarted | | Operation failed because the Perception System was not started.   |
 | IllegalState | | Operation failed because it has been invoked at the wrong time.   |
 | LicenseError | | Operation failed because of missing/incompatible license.   |
+| InvalidTimestamp | | Operation failed because the timestamp parameter was outside the expected range.   |
 | AudioNotImplemented | (CodePrefix.MLAudioResult << 16)| Audio function not implemented.   |
 | AudioHandleNotFound | | Not a valid MLHandle for a sound or input.   |
 | AudioInvalidSampleRate | | Sample rate not supported.   |
@@ -478,6 +479,8 @@ Identifier of Magic Leap API results
 | UnavailableSpace | | Space is not available.   |
 | IncompatibleSpace | | Space is not compatible with the current OS version.   |
 | SpaceAlreadyExists | | The operation failed because the Space being imported already exists in the device.   |
+| HeadsetFitIssue | (CodePrefix.MLFacialExpressionResult << 16)| Unable to detect the eyes, check MLHeadsetFitStatus.   |
+| EyeExpressionDisabled | | Operation failed because enable&#95;eye&#95;expression in MLFacialExpressionSettings is disabled.   |
 | PowerManagerNotConnect | (CodePrefix.MLPowerManager << 16)| Indicates the component is not connected.   |
 | PowerManagerInvalidStateTransition | | Indicates the component does not currently support transitioning to requested state.   |
 | PowerManagerStateTransitionsDisabled | | Indicates the component does not currently support transitioning to a different state.   |

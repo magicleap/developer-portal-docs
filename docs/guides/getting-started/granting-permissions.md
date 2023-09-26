@@ -13,7 +13,7 @@ When a Dangerous or Runtime permissions is requested by an application, users ca
 
 ## Runtime Permission Prompt
 
-Dangerous permissions need to be requested at runtime. When an application requests a permission a prompt will show on the applications screen.
+Dangerous permissions need to be **[requested at runtime](/docs/guides/unity/permissions/requesting-permissions.md#requesting-normal-install-time-permissions)**. When an application requests a permission a prompt will show on the applications screen.
 
 <Image url= {require("/img/settings-permissions/aosp-runtime-permission.jpg")} >Runtime Permissions Prompt</Image>
 

@@ -1,13 +1,13 @@
 ---
 id: ml-hub-bugreport
-title: Bug Reports with the ML Hub
+title: Capture Bug Reports
 sidebar_position: 4
 date: 04/06/2023
 tags: [ML Hub,Bug Report, Developer Mode]
-keywords: [ML Hub,Bug Report, Developer Mode]
+keywords: [ML Hub,Bug Report, Device, Create, Developer Mode]
 ---
 
-The Magic Leap Hub provides a convenient way for users to generate bug reports. The generated bug report will be exported as a zip file and can be used to help debug or diagnose issues with software and hardware.
+The Magic Leap Hub provides a convenient way for users to generate Magic Leap 2 bug reports. The generated bug report will be exported as a zip file and can be used to help debug or diagnose issues with software and hardware.
 
 Use the steps below to generate a bug report using the Magic Leap Hub:
 

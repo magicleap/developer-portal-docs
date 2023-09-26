@@ -41,7 +41,7 @@ Power Manager provides a set of power management APIs that allow applications to
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 23](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-anonymous-enum-23)** <br></br> { <br></br>[MLResultAPIPrefix_PowerManager](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlresultapiprefix-powermanager) = ( 0x4c8a  << 16)<br></br>} |
+| enum | **[Anonymous Enum 24](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-anonymous-enum-24)** <br></br> { <br></br>[MLResultAPIPrefix_PowerManager](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlresultapiprefix-powermanager) = ( 0x4c8a  << 16)<br></br>} |
 | enum | **[MLPowerManagerResult](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult)** <br></br> { <br></br>[MLPowerManagerResult_NotConnected](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-notconnected) = MLResultAPIPrefix_PowerManager,<br></br> [MLPowerManagerResult_InvalidStateTransition](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-invalidstatetransition),<br></br> [MLPowerManagerResult_StateTransitionsDisabled](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-statetransitionsdisabled),<br></br> [MLPowerManagerResult_UnsupportedState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-unsupportedstate),<br></br> [MLPowerManagerResult_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagerresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager specific return codes.  |
 | enum | **[MLPowerManagerComponent](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent)** <br></br> { <br></br>[MLPowerManagerComponent_None](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-none) = 0,<br></br> [MLPowerManagerComponent_Controller](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-controller) = 1,<br></br> [MLPowerManagerComponent_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagercomponent-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Represents the different components which can be accessed/controlled using the Power Manager.  |
 | enum | **[MLPowerManagerError](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror)** <br></br> { <br></br>[MLPowerManagerError_InvalidSKU](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror-invalidsku) = 0,<br></br> [MLPowerManagerError_Ensure32Bits](/api-ref/api/Modules/group___power_manager/group___power_manager.md#enums-mlpowermanagererror-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Power Manager error codes.  |
@@ -92,7 +92,7 @@ The API uses component specific handles, as such an application should create a 
 -----------
 ## Enums Documentation
 
-### Anonymous Enum 23 {#enums-anonymous-enum-23}
+### Anonymous Enum 24 {#enums-anonymous-enum-24}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |

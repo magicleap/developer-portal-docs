@@ -36,7 +36,7 @@ namespace UnityEngine.XR.MagicLeap
     using System;
     using System.Runtime.InteropServices;
 
-    public partial class MLWorldCamera : MLAPIBase
+    public partial class MLWorldCamera : MLAutoAPISingleton<MLWorldCamera>
     {
         [Flags]
         public enum CameraId
@@ -65,6 +65,10 @@ namespace UnityEngine.XR.MagicLeap
         public bool IsConnected { get; private set; }
 
         private bool connectionPaused;
+
+        protected override MLResult.Code StartAPI() => MLResult.Code.Ok;
+
+        protected override MLResult.Code StopAPI() => Disconnect().Result;
 
         public MLResult Connect(in Settings settings) => MLResult.Create(InternalConnect(in settings));
 

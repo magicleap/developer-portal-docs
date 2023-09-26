@@ -19,6 +19,21 @@ title: MagicLeapSDKUtil
 
 ## Public Fields
 
+### MinimumApiLevel {#uint-minimumapilevel}
+
+```csharp
+
+public static uint MinimumApiLevel { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ### OnZeroIterationPathChanged {#action-string-onzeroiterationpathchanged}
 
 ```csharp
@@ -99,21 +114,6 @@ public static void DeleteSDKPathFromEditorPrefs(
 ```csharp
 
 public static string AppSimRuntimePath => MagicLeapEditorPreferences.ZeroIterationRuntimePath;
-
-```
-
-
-
-
-
-
------------
-
-### MinimumApiLevel {#uint-minimumapilevel}
-
-```csharp
-
-public static uint MinimumApiLevel => minApiLevel;
 
 ```
 
