@@ -36,10 +36,15 @@ Performance and stability improvements to Android Audio APIs (AAudio, OpenSL ES)
 - Browser window is moved in front of the user when resuming the browser application.
 - Initial click on URL bar selects full url.
 
-## Enhancements/Feature Improvements 
+## Enhancements/Feature Improvements
 
 - Resolved visual flicker that can occur on slower networks.
 - Added support for 2 new languages to TTS: Spanish and French.
+- Future ML2 hardware will no longer include Bend Camera since it is not currently used. Removed check for the existence of a bend camera in the headset boot-up code and allow device to boot without bend camera
+- Resolved timing issue in the headset boot-up sequence causing splashscreen to disappear and reappear during device boot
+- Resolved timing issue in display boot-up sequence which caused intermittent splash screen misalignment
+- Improve manufacturing yield of bluetooth components.
+- Updated Display boot-up logic to recognize devices configured with additional calibration data for manufacturing process improvement.
 
 ### Dual Role Port Support
 
@@ -93,18 +98,18 @@ To disable the USB Dual Role dialog, go to *Settings → System → Advanced →
 
 - A new version of Assist that now supports Arabic, Japanese & German is available.
 
-### OOBE:
+### OOBE
 
 - Users can now select Spanish and French as language options during the initial setup process.
 - Improved user interface for language selection.
 - Resolved various bugs for enhanced user experience.
 
-### Settings:
+### Settings
 
 - Added support for new languages in the settings menu.
 - Addressed several bugs to ensure smoother functionality.
 
-### Capture:
+### Capture
 
 - Capture App:
   - Introducing a live preview feature in the advanced settings, allowing users to see real-time previews while capturing media.
@@ -115,7 +120,7 @@ To disable the USB Dual Role dialog, go to *Settings → System → Advanced →
 ## Known Issues
 
 - On first boot after flashing or setup out the box, if ML2 is connected to a USB host device (e.g. PC or Mac), the USB Device Detected dialog will be shown. Please disconnect ML2 from the USB host device and follow the instructions to proceed with device setup.
-- The magnetometer data will be presented with hard-iron calibration values that come from a singular test device and are not device-specific. The developers need to test if the reference hard-iron calibration values are good enough for their purposes. Otherwise, they will need to calculate the hard-iron calibration values for their device specifically. 
+- The magnetometer data will be presented with hard-iron calibration values that come from a singular test device and are not device-specific. The developers need to test if the reference hard-iron calibration values are good enough for their purposes. Otherwise, they will need to calculate the hard-iron calibration values for their device specifically.
 - Upgrade will reset time to current time if the time was changed prior to upgrade.
 - Control LED may not blink during a firmware update.
 - Empty buffer at the beginning of Android Audio capture adds marginal latency.  No workaround, resolved for following release.
@@ -135,7 +140,7 @@ To disable the USB Dual Role dialog, go to *Settings → System → Advanced →
 
 ## Flashing Instructions
 
-Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so. 
+Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so.
 
 When flashing, you **MUST** flash in a linear sequence based on the build order in the table below. For example, if you're on B3E.220619.07-R.107_user (build order #4), you MUST flash B3E.220619.07-R.124_user (build order #5) then B3E.220721.07-R.026_user (build order #6) for your device to work properly with that OS.
 
