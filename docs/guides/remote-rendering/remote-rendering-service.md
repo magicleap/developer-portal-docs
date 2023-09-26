@@ -1,7 +1,7 @@
 ---
 id: remote-rendering
-title: Remote Rendering
-sidebar_label: Remote Rendering Service
+title: Remote Render Setup
+sidebar_label: Getting Started
 sidebar_position: 2
 date: 03/13/2023
 tags: [Render, Servers, Remote]
@@ -16,6 +16,7 @@ import TabItem from '@theme/TabItem';
 Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, designed to allow for rendering content onto a Magic Leap 2 device from a more-powerful, non-mobile Windows computer.
 
 ## Prerequisites
+
 - **Enterprise** or **Developer Pro license**
 - [Install the Magic Leap Hub](/docs/guides/getting-started/install-the-tools#install-magic-leap-hub)
 - [Grant Developer Permissions](/docs/guides/getting-started/granting-permissions)
@@ -38,9 +39,7 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 :::note \* Run `nvidia-smi.exe` in a command prompt to get the Nvidia Driver Version.
 :::
 
-## Setup
-
-### Installing Magic Leap Remote Rendering
+### Installing Remote Render
 
 1. Download the Magic Leap Remote Rendering package from the Package Manager within the Magic Leap Hub.
 2. Enable Wifi Bridge in the “Device Bridge”
@@ -63,7 +62,9 @@ tile on the home screen. (If you don't see Remote Rendering at first, restart Th
 9. Make sure that the top dialogue box indicates that the device is connected to the host
    computer.
 
-## Prevent feedback noise when combined with Device Streaming
+## Device Streaming
+
+### Prevent feedback noise
 
 The Remote Rendering functionality can be used in combination with Device Stream to preview and save what the user sees, however this may cause some audio feedback noise because the audio produced on the host is sent to the device and then back to the host by Device Stream. **To prevent audio loopback noise,** lower the volume of the Device Stream live preview before starting Remote Rendering.
 
