@@ -7,7 +7,7 @@ date: 06/13/2023
 # Magic Leap Application Simulator Release Notes
 
 # Version 3.7.0 (Dev2)
-(2023.09.27)
+(2023.09.28)
 
 ## What's New
   * Hybrid mode has been removed as it is underutilized.
