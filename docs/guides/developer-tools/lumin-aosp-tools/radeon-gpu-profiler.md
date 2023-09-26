@@ -21,7 +21,7 @@ To use RGP, you need to have the following:
 
 * [Magic Leap Hub](/docs/guides/getting-started/install-the-tools)
 * [adb](/docs/guides/developer-tools/android-debug-bridge/adb-setup/)
-* Magic Leap 2 device conected to your computer.
+* Magic Leap 2 device connected to your computer.
 
 ## Install Radeon GPU Profiler (Linux and Windows Only)
 This section guides you through the steps to install RGP.
@@ -56,7 +56,7 @@ adb devices
 adb shell ip -o -h -c a #reveals the IP address of your device under wLan0
 ```
 
-The output will list various network interfaces. Look for wlan0 and note the IP address. The IP address of your device is the part after inet and before /24, which in this example is `192.168.1.100`. 
+The output will list various network interfaces. Look for wlan0 and note the IP address. The IP address of your device is the part after inet and before /24, which in this example is `192.168.1.100`.
 
 **Sample Output**:
 
@@ -70,7 +70,7 @@ The output will list various network interfaces. Look for wlan0 and note the IP 
 ping <device-ip-addr> #contacts the device via WiFi to verify connection
 ```
 
-Replace **<device-ip-addr>** with the IP address obtained in the previous step. If the device is reachable, you'll see output with statistics. For example, `ping 192.168.1.100` would result in something like this:
+Replace **`<device-ip-addr>`** with the IP address obtained in the previous step. If the device is reachable, you'll see output with statistics. For example, `ping 192.168.1.100` would result in something like this:
 
 **Sample Output**:
 

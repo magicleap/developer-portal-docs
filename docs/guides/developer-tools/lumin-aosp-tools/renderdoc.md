@@ -18,6 +18,7 @@ Some common use cases for RenderDoc with Magic Leap 2 are:
 * Viewing a specific texture
 
 ## Prerequisites
+
 Prior to using this guide, you should have: 
 * [Magic Leap Hub](https://ml2-developer.magicleap.com/downloads) installed 
 * Magic Leap 2 device configured for use with your computer, either via WiFi on the bridge, or with a USB cable connecting the Magic Leap 2 device to the computer you're using for development. [Learn more](docs/guides/getting-started)
@@ -26,16 +27,25 @@ Prior to using this guide, you should have:
 ## Install RenderDoc on Magic Leap Hub
 You can install RenderDoc from the Magic Leap Hub. Do the following:
 
-1. Open Magic Leap Hub and navigate to the Package Manager. <Image url= {require("/img/renderdoc/renderdoc_install.png")} >Install RenderDoc</Image>
+1. Open Magic Leap Hub and navigate to the Package Manager. 
 
-2. Click the **All** icon. <Image url= {require("/img/renderdoc/install_renderdoc_from_package_manager.png")} >Package Manager Screen</Image>
+<Image url= {require("/img/renderdoc/renderdoc_install.png")} >Install RenderDoc</Image>
 
-3. Find the RenderDoc package within the Common Packages category. Download the latest one. <Image url= {require("/img/renderdoc/renderdoc_download.png")} >RenderDoc Package</Image>
+2. Click the **All** icon. 
 
-4. Add the **adb** binary to your PATH Environment variable to ensure RenderDoc will be able to see the ML2 device. The binary can be found under C:\Users\_user_\MagicLeap\MLHub\plugins\com.magicleap.adb.win32.x86_64_1.0.41.28_0_2_202304071616\adb\adb.exe for Windows. Add this path to your Path environment variable on Windows. On Mac there should be something similar.
+<Image url= {require("/img/renderdoc/install_renderdoc_from_package_manager.png")} >Package Manager Screen</Image>
+
+3. Find the RenderDoc package within the Common Packages category. Download the latest one.
+
+<Image url= {require("/img/renderdoc/renderdoc_download.png")} >RenderDoc Package</Image>
+
+4. Add the **adb** binary to your PATH Environment variable to ensure RenderDoc will be able to see the ML2 device. The binary can be found under `C:\Users\_user_\MagicLeap\MLHub\plugins\com.magicleap.adb.win32.x86_64_1.0.41.28_0_2_202304071616\adb\adb.exe` for Windows. Add this path to your Path environment variable on Windows. On Mac there should be something similar.
 
 5. Check that you've added the adb binary correctly by opening a command prompt window and typing:
-```adb devices```
+
+```
+adb devices
+```
 
 You should see your device connected to the host.
 <Image url= {require("/img/renderdoc/renderdoc_device_attached.png")} >RenderDoc Device Attached Status</Image>
@@ -48,12 +58,14 @@ You should now have RenderDoc installed, and you can move on to taking a capture
 
 ## Take a Capture with RenderDoc
 
-This section walks you through how to take a capture with RenderDoc that you can use for analysis. 
+This section walks you through how to take a capture with RenderDoc that you can use for analysis.
 Do the following:
 
 1. In the Renderdoc window, clicking on Replay Context: Local in the bottom left corner will show a drop-down menu with the Magic leap 2 device as an option. It will show as (Offline) however if you click it, it will connect to the device.
 
-Once its connected, it says **Remote Server Ready** in the bottom status bar. <Image url= {require("/img/renderdoc/renderdoc_replay.png")} >RenderDoc Replay Context</Image>
+Once its connected, it says **Remote Server Ready** in the bottom status bar. 
+
+<Image url= {require("/img/renderdoc/renderdoc_replay.png")} >RenderDoc Replay Context</Image>
 
 <Image url= {require("/img/renderdoc/renderdoc_check_server_ready.png")} >RenderDoc Check Server Ready</Image>
 
@@ -97,52 +109,84 @@ There are a number of resources you can use to learn how to analyze your RenderD
 * [How to view a specific texture](https://renderdoc.org/docs/how/how_view_texture.html)
 * [How to edit a shader](https://renderdoc.org/docs/how/how_edit_shader.html)
 
-Additionally, we offer Magic Leap-specific tutorials about: 
+Additionally, we offer Magic Leap-specific tutorials about:
 * Debug a shader
 * View pixel history
 * View a specific texture
 
-These follow in the next sections. Instructions for each assume you completed RenderDoc installation and collected a capture. 
+These follow in the next sections. Instructions for each assume you completed RenderDoc installation and collected a capture.
 
 ## Debug a Shader
+
 Shader debugging in RenderDoc allows you to step-by-step run through a shader at a given time in the frame and make sure the right shader is being used at the right time. 
 
-1. Make sure RenderDoc is open and connected to Magic Leap 2. <Image url= {require("/img/renderdoc/rd_replay_context.png")} >RenderDoc Open and Connected to Magic Leap 2</Image>
+1. Make sure RenderDoc is open and connected to Magic Leap 2. 
 
-2. Click on **File > Open Capture** at the top. <Image url= {require("/img/renderdoc/rd_open_file_capture.png")} >RenderDoc File Open Capture</Image>
+<Image url= {require("/img/renderdoc/rd_replay_context.png")} >RenderDoc Open and Connected to Magic Leap 2</Image>
 
-3. Select a capture from the list of displayed captures and open it by double clicking on it. <Image url= {require("/img/renderdoc/rd_choose_capture.png")} >RenderDoc Choose Capture</Image>
+2. Click on **File > Open Capture** at the top. 
 
-4. When you open a capture, it should show a view similar to this one: <Image url= {require("/img/renderdoc/rd_view_capture.png")} >RenderDoc View Capture</Image>
+<Image url= {require("/img/renderdoc/rd_open_file_capture.png")} >RenderDoc File Open Capture</Image>
 
-5. Click on a draw call AND select a pixel with right click. You can then debug the pixel from the Pixel Context window. Click the **Debug** button. <Image url= {require("/img/renderdoc/rd_debug_shader.png")} >RenderDoc Debug Shader</Image>
+3. Select a capture from the list of displayed captures and open it by double clicking on it. 
 
-6. A Disassembly window should open up the associated shader which can be stepped through for debugging. <Image url= {require("/img/renderdoc/rd_disassembly_window.png")} >RenderDoc Debug Shader</Image>
+<Image url= {require("/img/renderdoc/rd_choose_capture.png")} >RenderDoc Choose Capture</Image>
+
+4. When you open a capture, it should show a view similar to this one: 
+
+<Image url= {require("/img/renderdoc/rd_view_capture.png")} >RenderDoc View Capture</Image>
+
+5. Click on a draw call AND select a pixel with right click. You can then debug the pixel from the Pixel Context window. Click the **Debug** button. 
+
+<Image url= {require("/img/renderdoc/rd_debug_shader.png")} >RenderDoc Debug Shader</Image>
+
+6. A Disassembly window should open up the associated shader which can be stepped through for debugging. 
+
+<Image url= {require("/img/renderdoc/rd_disassembly_window.png")} >RenderDoc Debug Shader</Image>
 
 You can do this to debug any shader as needed.
 
 ## View Pixel History
-Viewing pixel history is useful when you are debugging a specific part of the frame, for instance a corruption like an incorrect color showing up as part of a final image. Pixel history helps you understand which operations influenced the specific area you are viewing and you can step through each operation to see its state at a given moment. 
 
-1. Make sure RenderDoc is open and connected to Magic Leap 2. <Image url= {require("/img/renderdoc/rd_replay_context.png")} >RenderDoc Open and Connected to Magic Leap 2</Image>
+Viewing pixel history is useful when you are debugging a specific part of the frame, for instance a corruption like an incorrect color showing up as part of a final image. Pixel history helps you understand which operations influenced the specific area you are viewing and you can step through each operation to see its state at a given moment.
 
-2. Click on **File > Open Capture** at the top. <Image url= {require("/img/renderdoc/rd_open_file_capture.png")} >RenderDoc File Open Capture</Image>
+1. Make sure RenderDoc is open and connected to Magic Leap 2. 
 
-3. Select a capture from the list of displayed captures and open it by double clicking on it. <Image url= {require("/img/renderdoc/rd_choose_capture.png")} >RenderDoc Choose Capture</Image>
+<Image url= {require("/img/renderdoc/rd_replay_context.png")} >RenderDoc Open and Connected to Magic Leap 2</Image>
 
-4. When you open a capture, it should show a view similar to this one: <Image url= {require("/img/renderdoc/rd_view_capture.png")} >RenderDoc View Capture</Image>
+2. Click on **File > Open Capture** at the top. 
 
-5. Hover over the texture in the viewer on left to show pixel information below the texture. <Image url= {require("/img/renderdoc/rd_pixel_info.png")} >RenderDoc Pixel Info</Image>
+<Image url= {require("/img/renderdoc/rd_open_file_capture.png")} >RenderDoc File Open Capture</Image>
 
-6. Right-click on the mouse to pick the pixel for analysis. <Image url= {require("/img/renderdoc/rd_examine_pixel.png")} >RenderDoc Pixel Analysis</Image>
+3. Select a capture from the list of displayed captures and open it by double clicking on it. 
+
+<Image url= {require("/img/renderdoc/rd_choose_capture.png")} >RenderDoc Choose Capture</Image>
+
+4. When you open a capture, it should show a view similar to this one: 
+
+<Image url= {require("/img/renderdoc/rd_view_capture.png")} >RenderDoc View Capture</Image>
+
+5. Hover over the texture in the viewer on left to show pixel information below the texture.
+
+ <Image url= {require("/img/renderdoc/rd_pixel_info.png")} >RenderDoc Pixel Info</Image>
+
+6. Right-click on the mouse to pick the pixel for analysis. 
+
+<Image url= {require("/img/renderdoc/rd_examine_pixel.png")} >RenderDoc Pixel Analysis</Image>
 
 7. In the Pixel Context Display, you can click **History** to view the pixel history view. <Image url= {require("/img/renderdoc/rd_pixel_history.png")} >RenderDoc Pixel History</Image>
 
-8. In the Pixel History view, you can view every modification made to the selected pixel from the start of the frame to the currently selected event. <Image url= {require("/img/renderdoc/rd_pixel_history_panel.png")} >RenderDoc Pixel History Panel</Image>
+8. In the Pixel History view, you can view every modification made to the selected pixel from the start of the frame to the currently selected event. 
 
-9. Double click an event to jump the replay to that event. <Image url= {require("/img/renderdoc/rd_doubleclick_replay_event.png")} >RenderDoc Replay an Event</Image>
+<Image url= {require("/img/renderdoc/rd_pixel_history_panel.png")} >RenderDoc Pixel History Panel</Image>
 
-10. View the state of the pixel at the replay point and verify its behavior. <Image url= {require("/img/renderdoc/rd_view_pixel_state.png")} >RenderDoc View and Verify Pixel State</Image> 
+9. Double click an event to jump the replay to that event. 
+
+<Image url= {require("/img/renderdoc/rd_doubleclick_replay_event.png")} >RenderDoc Replay an Event</Image>
+
+10. View the state of the pixel at the replay point and verify its behavior. 
+
+<Image url= {require("/img/renderdoc/rd_view_pixel_state.png")} >RenderDoc View and Verify Pixel State</Image> 
 
 You're able to use this guide to take a look at pixels in any captures you like.
 
@@ -150,27 +194,42 @@ You're able to use this guide to take a look at pixels in any captures you like.
 
 Viewing a specific pixel texture can help you ensure the texture states (onscreen and offscreen) at that point in the frame are correct. You can verify texture format, size and contents this way.
 
-1. Make sure RenderDoc is open and connected to Magic Leap 2. <Image url= {require("/img/renderdoc/rd_replay_context.png")} >RenderDoc Open and Connected to Magic Leap 2</Image>
+1. Make sure RenderDoc is open and connected to Magic Leap 2. 
 
-2. Click on **File > Open Capture** at the top. <Image url= {require("/img/renderdoc/rd_open_file_capture.png")} >RenderDoc File Open Capture</Image>
+<Image url= {require("/img/renderdoc/rd_replay_context.png")} >RenderDoc Open and Connected to Magic Leap 2</Image>
 
-3. Select a capture from the list of displayed captures and open it by double clicking on it. <Image url= {require("/img/renderdoc/rd_choose_capture.png")} >RenderDoc Choose Capture</Image>
+2. Click on **File > Open Capture** at the top. 
+
+<Image url= {require("/img/renderdoc/rd_open_file_capture.png")} >RenderDoc File Open Capture</Image>
+
+3. Select a capture from the list of displayed captures and open it by double clicking on it. 
+
+<Image url= {require("/img/renderdoc/rd_choose_capture.png")} >RenderDoc Choose Capture</Image>
 
 4. When you open a capture, it should show a view similar to this one: <Image url= {require("/img/renderdoc/rd_view_capture.png")} >RenderDoc View Capture</Image>
 
-5. After you open a capture, in the Texture Viewer, click the **Open Texture List** button. <Image url= {require("/img/renderdoc/rd_open_texture_list.png")} >RenderDoc Open Texture List</Image>
+5. After you open a capture, in the Texture Viewer, click the **Open Texture List** button. 
 
-6. Click on a texture name to open its resource details. <Image url= {require("/img/renderdoc/rd_texture_resource_details.png")} >RenderDoc Click Texture Name</Image>
+<Image url= {require("/img/renderdoc/rd_open_texture_list.png")} >RenderDoc Open Texture List</Image>
 
-7. In the texture resource details, you can view the initialization parameters, usage in frame, and related resources. <Image url= {require("/img/renderdoc/rd_initialization_parameters.png")} >RenderDoc Texture Resource Details</Image>
+6. Click on a texture name to open its resource details.
+
+ <Image url= {require("/img/renderdoc/rd_texture_resource_details.png")} >RenderDoc Click Texture Name</Image>
+
+7. In the texture resource details, you can view the initialization parameters, usage in frame, and related resources. 
+
+<Image url= {require("/img/renderdoc/rd_initialization_parameters.png")} >RenderDoc Texture Resource Details</Image>
 
 You can view any pixel texture in your capture with these instructions.
 
 ## Suggested Settings
 
 Magic Leap suggests the following settings for Renderdoc:
+
 1. Navigate to **Tools > Settings > Core > Open Advanced Config Editor > Remote Server > TimeoutMS**. 
+
 2. Set the value to **30000** or up to **60000**. This increases the time Renderdoc can spend waiting for an action sent to the device to complete. This helps in cases where the USB connection is slow and the default lower timeout (**5000**) may cause issues opening or taking captures on device. 
+
 <Image url= {require("/img/renderdoc/renderdoc_timeout_settings.png")} >RenderDoc Change Timeout Settings</Image>
 
 ## Known Issues that Can Affect a RenderDoc Capture
