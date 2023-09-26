@@ -16,6 +16,7 @@ import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
 import ArcloudEnvDomain from './_arcloud_env_domain.md';
 import EnvFile from './_env_file.md';
+import CliVersions from './_cli_versions.md';
 import HelmRequirements from './_helm_requirements.md';
 import InstallHelm from './_install_helm.md';
 import InstallHelmMacOS from './_install_helm_macos.md';
@@ -63,6 +64,8 @@ To get started as quickly as possible, refer to these simple setup steps for:
 
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 - [eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
+
+<CliVersions />
 
 ### Tools
 

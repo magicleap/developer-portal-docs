@@ -18,6 +18,13 @@ Before starting, download and install the following packages from the Magic Leap
 - Magic Leap Unity SDK v1.6.0 (or later)
 - Unity Editor v2022.2.17f1 (or later)
 
+:::note
+
+If updating to Magic Leap Unity SDK 1.10.0 or 1.11.0, there may be a compile issue if your project contains the
+Unity OpenXR package. A workaround for this is to remove the OpenXR package from the project in this situation.
+
+:::
+
 ## Getting Started
 
 You can download the `mrtk3_MagicLeap2` branch from [Magic Leap's forked MRTK3 repository](https://github.com/magicleap/MixedRealityToolkit-Unity/tree/mrtk3_MagicLeap2).

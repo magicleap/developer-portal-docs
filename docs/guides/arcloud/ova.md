@@ -593,19 +593,17 @@ variables.
 
 ## Credentials
 
-The virtual machine includes a dedicated `arcloud` user with a password set to `changeme`.
-
-:::caution Changing Your Password
-After initial login, it is encouraged to set a new password using:
-
-```shell
-passwd
-```
-:::
+The virtual machine includes a dedicated `arcloud` user with a password set to `changeme`. The password is set to expire
+and needs to be changed during the first login.
 
 :::warning Key-based Authentication
 Password access should be disabled entirely for all publicly accessible deployments (e.g. on GCP or AWS).
-Key-based authentication can be used instead.
+Key-based authentication should be used instead.
+
+To do this, create keys for your user accounts and modify `/etc/ssh/sshd_config` to include:
+```ini
+PasswordAuthentication no
+```
 :::
 
 ## Accessing the Running Virtual Machine

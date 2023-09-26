@@ -7,11 +7,15 @@ tags: [Power, Sleep Mode, Settings, Optimization]
 keywords: [Power, Sleep Mode, Settings, Optimization]
 ---
 
-:::important
-This change is scheduled to take effect in late October 2023 onward. However, if your device is new, or you do a factory reset update on an existing device, sleep mode will be enabled by default starting in early August 2023.
-:::
+# Sleep Mode
 
-In previous releases of Magic Leap 2, sleep mode was disabled by default, and was an option you could choose to set. Going forward, sleep mode is enabled by default. Your existing applications may need to be updated to handle this change. New applications should include planning for handling the way this setting now works. If you encounter issues, please provide feedback on the change to us on the [Magic Leap 2 Developer Forum](https://developer.magicleap.cloud).
+Sleep mode is a feature that allows MagicLeap 2 to conserve battery life by turning off the display and suspending the applications when the device is not in use. Starting from OS version 1.3.0-dev2, sleep mode is enabled by default for all devices. This means that your applications need to handle the events of entering and exiting sleep mode properly, otherwise they may encounter unexpected errors or crashes.
+
+For applications built with Unity, the easiest way to ensure compatibility with sleep mode is to upgrade to a newer Magic Leap Unity SDK (1.9.0) or later, which handles the sleep events automatically. For native applications, you should follow some of the best practices listed in this [#best-practices], such as saving the application state, releasing resources, and resuming gracefully.
+
+:::important
+This change is scheduled to take effect in September 2023 onward. However, if your device is new, or you do a factory reset update on an existing device, sleep mode will be enabled by default starting in early August 2023.
+:::
 
 ## Updates to Your Device
 After sleep mode is enabled by default, if you choose to update your device with a regular update, your existing settings will be saved, and sleep mode will still be optional (the default will be Standby enabled). If your device is new, or you do a factory reset update on an existing device, sleep mode is enabled by default. Keeping sleep mode set by default can greatly extend the length of time your device can go without recharging. 
