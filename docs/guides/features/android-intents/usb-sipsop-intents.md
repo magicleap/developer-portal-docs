@@ -183,7 +183,7 @@ The service can be bound using an intent and a package name:
 
 An example of such binding can be found in the snippet below:
 
-```
+```java
 ServiceConnection sc = ...;
 Intent intent = new Intent("com.magicleap.usbsipsop.action.BIND_SERVICE")
  .setPackage("com.magicleap.usbsipsop");
@@ -200,9 +200,7 @@ For an application to be able to receive event intents or send reply intents, a 
 
 There are 2 ways for a token to become invalid.
 
-1. **Mass Invalidation**: All event intents that allow reply, become invalid when the [com.magicleap.60601.action.USB_DISCONNECTED](#commagicleap60601actionusb_disconnected) event intent is generated.
-
-- This means that identifiers of all event intents that allow reply and have been sent since the last `USB_DISCONNECTED` event intent are valid until the next `USB_DISCONNECTED` event intent is sent.
+1. **Mass Invalidation**: All event intents that allow reply, become invalid when the [com.magicleap.60601.action.USB_DISCONNECTED](#commagicleap60601actionusb_disconnected) event intent is generated. This means that identifiers of all event intents that allow reply and have been sent since the last `USB_DISCONNECTED` event intent are valid until the next `USB_DISCONNECTED` event intent is sent.
 
 2. **Singular Invalidation**: When a reply intent is received by the service, the token contained in the ID extra of the reply will become invalidated (if it was valid for the used reply intent). This will happen regardless of whether the reply intent was processed successfully (e.g. other used extra was invalid).
 
