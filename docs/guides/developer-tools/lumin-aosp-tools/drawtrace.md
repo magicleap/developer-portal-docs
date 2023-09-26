@@ -8,84 +8,115 @@ tags: [Debugging, Graphics, DrawTrace]
 keywords: [Debugging, Graphics, DrawTrace]
 ---
 
-## Overview
+Draw tracing is a tool to aid you in understanding how long your draw calls take. The process involves running the tool on the ML2 device to generate a ‘trace log’ on the device while your app is running. This captures the relevant app activity in the file. The file is then transferred onto the host PC to view in the browser. The tool used on device is called Perfetto, and when it's run it generates a file called `trace.pftrace` on the device.
 
-Draw tracing is a tool to aid you in understanding how long your draw calls take. The process involves running the tool on the ML2 device to generate a ‘trace log’ on the device while your app is running. This captures the relevant app activity in the file. The file is then transferred onto the host PC to view in the browser. The tool used on device is called Perfetto and when run it generates a file called trace.pftrace on the device.
+## Prerequisites
 
-### Prerequisites
+Before you start using draw tracing, make sure you have the following:
 
-* Magic Leap Hub
-* Magic Leap device
+- Magic Leap Hub installed
+- A Magic Leap 2 connected to your host PC 
+- Perfetto Installed via Magic Leap Hub's Package Manager
 
-### Set up adb
-You need adb for this project. The adb tool is part of the Magic Leap Hub. Do the following:
+## Set up adb
 
-1. Navigate to **C:\Users\_user_\MagicLeap\MLHub\plugins\com.magicleap.adb.win32.x86_64_1.0.41.28_0_2_202304071616\adb\adb.exe** for windows. Add this path to your Path environment variable on windows. 
+You need adb (Android Debug Bridge) to communicate with your device and run the draw tracing commands. adb is part of the Magic Leap Hub installation. To set up adb, follow these steps:
 
-2. Check that you have access to adb by running: ```adb devices```
-You should see that your device is connected to the host. <Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_device_connected.png")} >Check Device Connection with adb</Image>
+1. Find the adb.exe file in your Magic Leap Hub folder. The default location is `C:\Users\_user_\MagicLeap\MLHub\plugins\com.magicleap.adb.win32.x86_64_1.0.41.28_0_2_202304071616\adb\adb.exe` for Windows.
+2. Add the adb.exe file path to your Path environment variable on Windows. This will allow you to run adb commands from any directory. 
+3. Open a command prompt and run the following command to check if adb is working:
 
-3. Now you need to set the properties required for capture in adb. Run these commands:
+```
+adb devices
+```
+
+4. You should see your device listed as connected.
+
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/radeon-gpu-profiler/rgp_device_connected.png")} >Check Device Connection with adb</Image>
+
+5. Run the following commands to enable the properties required for draw tracing:
+
 ```shell
 adb shell setprop persist.traced.enable 1
 adb shell setprop ml.graphics.tracing.vk.enable 1
 adb setprop ml.graphics.tracing.gl.enable 1
 ```
-You should now have adb configured, and you are ready to trace your application. 
 
-### Trace Your Application
-This section goes over how to choose the right config file to trace your application and how to do a trace.
+You have now configured adb for draw tracing. 
 
-1. You need a config file for the capture. You can set up for a full log or a graphics log. A full log gives you graphics information, but also includes information about other processes like power, audio, video too which may not be needed. The graphics log gives you just the graphics information. 
+## Trace Your Application
 
-* [Full/Extra Log Configuration](config-full-with-draw-tracing.txt)
-* [Graphics Log Configuration](config-with-draw-tracing.txt)
+To trace your application, you need a config file that specifies what data to capture and how long to capture it for. You can choose between two options: a full log or a graphics log.
 
-When you click on the link, it will open a text file of the configuration file. Download the file you want to use.
+A full log captures graphics data as well as other processes such as power, audio, and video. This can provide more context for your analysis, but it also generates a larger file size and may include unnecessary information.
+A graphics log captures only graphics data, which can be sufficient for most draw tracing scenarios. This generates a smaller file size and focuses on the relevant information.
 
-2. Rename your downloaded file. If you selected Full Log Configuration, rename your file **config-full-with-draw-tracing.cfg** and save it. If you selected Graphics Log Configuration, rename your file **config-with-draw-tracing.cfg**. 
+1. Download the config file that matches your preference:
 
-3. Start your application and run the following while the application is running: 
+* [Full/Extra Log Configuration](/resources/config-full-with-draw-tracing.txt)
+* [Graphics Log Configuration](/resources/config-with-draw-tracing.txt)
+
+2. Launch your application on the device and run the following command in a command prompt while the application is running:
+
 ```shell
 type config-with-draw-tracing.cfg | adb shell perfetto --txt --config - --out /data/misc/perfetto-traces/trace
 adb pull /data/misc/perfetto-traces/trace ./trace.pftrace
 ```
-This captures your application for 3 seconds by default. You can increase the capture duration in the config file by changing the first field **duration_ms: 3000** to a higher value like **10000**.
-Save your **.pftrace** file, you need it for Perfetto and DrawTrace in the next section.
 
-### Analyze Your Trace with DrawTrace and Perfetto
+This command uses the config file to capture the app activity for 3 seconds by default and saves it as a **trace.pftrace** file on your host PC. You can change the capture duration in the config file by modifying the **duration_ms** field. For example, to capture for 10 seconds, change it to **duration_ms: 10000**.
 
-This section will walk you through using DrawTrace through Perfetto. The base user build for Magic Leap Hub comes pre-loaded with all the dependencies for DrawTrace and Perfetto. To get started analyzing your trace, do the following:
+You have now generated a trace file for your application.
 
-1. Open Magic Leap Hub.
+## Analyze Your Trace with DrawTrace and Perfetto
 
-2. Scroll until you see the Perfetto tile. 
+To analyze your trace file, you can use Perfetto, which is a web-based UI that allows you to visualize and explore the trace data. Perfetto is integrated with Magic Leap Hub and can be launched from there. To analyze your trace with Perfetto, follow these steps:
+
+1. Open **Magic Leap Hub**.
 
 3. On the Perfetto tile, click **Launch**.
 
-4. You can open the trace from the browser window using **Open trace file**. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_open_trace.png")} >Open Trace File</Image>
+4. In the browser window that opens, click **Open trace file**. and select your **trace.pftrace** file.
 
-5. When you open the trace file, you should see the timeline window open up showing all the API calls made for each application. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_view_trace.png")} >View Trace File</Image>
+ <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_open_trace.png")} >Open Trace File</Image>
 
-NOTE: You can use any trace file you like, for this walk through a trace file for AR Brochure is used. 
+5. You should see a timeline window that shows all the API calls made by each application.
 
-6. You need to search for the process with your application calls in case the name is not shown. Generally the first couple of process IDs correspond to the application. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_search_calls.png")} >Search DrawTrace Calls</Image> 
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_view_trace.png")} >View Trace File</Image>
 
-7. Draw tracing adds markers for each draw performed on a thread. You can see some of them in the second red box. AR Brochure is a Unity app so search for the thread with these arrows. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_markers.png")} >Search for Markers</Image> 
+:::note 
 
-8. Clicking on a marker reveals information about the draw call. **debug.duration** is in nanoseconds(ns). <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_click_marker.png")} >Click a Marker</Image> 
+You can use any trace file you like, but for this walkthrough, we will use a trace file from the AR Brochure Demo App.
 
-9. In order to find the list of largest running draw calls you need to run a SQL query. Navigate to the Query(SQL) tab on the left and click it. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_sql_query.png")} >Click SQL Query</Image> 
+:::
 
-10. Run the query: 
+6. Find the process that corresponds to your application, you need to look at the process names and IDs in the left panel of Perfetto. If the process name is not shown, you can use the process ID as a clue. Usually, the first two or three process IDs are related to your application. You can also hover over the process name or ID to see more details.
+
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_search_calls.png")} >Search DrawTrace Calls</Image> 
+
+9. Draw tracing adds markers for each draw performed on a thread. You can see some of them in the second red box. AR Brochure is a Unity app so search for the thread with these arrows.
+
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_markers.png")} >Search for Markers</Image> 
+
+10. Clicking on a marker reveals information about the draw call. **debug.duration** is in nanoseconds(ns).
+
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_click_marker.png")} >Click a Marker</Image> 
+
+11. To find the list of longest-running draw calls, Click on the **Query(SQL)** tab on the left panel of Perfetto to run a SQL query and get a list of all the draw calls sorted by their duration.
+
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_sql_query.png")} >Click SQL Query</Image> 
+
+12. Run the following query:
 
 ```shell
 SELECT slice.name, args.int_value as duration, slice.ts FROM slice INNER JOIN args ON slice.arg_set_id = args.arg_set_id ORDER BY args.int_value DESC;
 ```
 
-This provides a list of api calls in descending order of duration in nanoseconds(ns).
+This query returns a list of API calls in descending order of duration in nanoseconds (ns).
+
 <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_run_query.png")} >Run SQL Query</Image> 
 
-11. The general guidance is that draws should not exceed 2ms. In the example below, you can see numerous draws exceeding that threshold which can lead to bad performance. <Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_exceed2ms.png")} >Run SQL Query</Image>
+13. The general guidance is that draws should not exceed 2ms. In the example below, you can see numerous draws exceeding that threshold which can lead to bad performance.
 
-You can examine any of your traces using these steps as guidance.
+<Image url= {require("/img/developer-tools/lumin-aosp-tools/drawtrace/drawtrace_exceed2ms.png")} >Run SQL Query</Image>
+
+You can now examine any of your traces using these steps as guidance.
