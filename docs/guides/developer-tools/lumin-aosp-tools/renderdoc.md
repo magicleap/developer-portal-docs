@@ -170,7 +170,8 @@ You can view any pixel texture in your capture with these instructions.
 
 Magic Leap suggests the following settings for Renderdoc:
 1. Navigate to **Tools > Settings > Core > Open Advanced Config Editor > Remote Server > TimeoutMS**. 
-2. Set the value to **30000** or up to **60000**. This increases the time Renderdoc can spend waiting for an action sent to the device to complete. This helps in cases where the USB connection is slow and the default lower timeout (**5000**) may cause issues opening or taking captures on device. <Image url= {require("/img/renderdoc/renderdoc_timeout_settings.png")} >RenderDoc Change Timeout Settings</Image>
+2. Set the value to **30000** or up to **60000**. This increases the time Renderdoc can spend waiting for an action sent to the device to complete. This helps in cases where the USB connection is slow and the default lower timeout (**5000**) may cause issues opening or taking captures on device. 
+<Image url= {require("/img/renderdoc/renderdoc_timeout_settings.png")} >RenderDoc Change Timeout Settings</Image>
 
 ## Known Issues that Can Affect a RenderDoc Capture
 
