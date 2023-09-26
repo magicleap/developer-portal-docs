@@ -1,8 +1,8 @@
 ---
 id: intents-overview
 slug : android-intents-overview
-title: Intents
-sidebar_position: 7
+title: Android Intents Overview
+sidebar_position: 1
 date: 09/23/2022
 tags: [Magic Leap, Android, Intents]
 keywords: [Magic Leap, Android, Intents]
