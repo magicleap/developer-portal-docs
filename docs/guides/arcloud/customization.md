@@ -1,5 +1,5 @@
 ---
-id: arcloud-deployment-customization
+id: arcloud-customization
 title: AR Cloud Customization and Security
 sidebar_label: Customization and Security
 sidebar_position: 6
@@ -88,15 +88,3 @@ default installation of postgresql, and point application connections to the man
 ```sh
 ./setup.sh ... --set postgresql.enabled=false,global.postgresql.host=${POSTGRESQL_HOST},global.postgresql.port=${POSTGRESQL_PORT}
 ```
-
-## Integrations
-
-[Keycloak](https://www.keycloak.org/) is provided by default to manage users and access to APIs.
-Users can be managed directly in Keycloak or it can be used to federate an existing identity solution.
-
-AR Cloud logs telemetry information and service logs using [OpenTelemetry](https://opentelemetry.io/).
-The default installation installs [Grafana](https://grafana.com/) and [Prometheus](https://prometheus.io/),
-but these can be substituted with other OTEL compliant solutions.
-
-The **Health Check Endpoints** can be used to monitor the health of the system.  These primarily focus on 
-connectivity to the underlying resources such as database access and file storage.
