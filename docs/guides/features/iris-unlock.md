@@ -21,4 +21,4 @@ Beginning in OS release *placeholder*, third party developers with a [Developer 
 ## Developer Documentation
 
 - Native Developers can use the [JNI](https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/jniTOC.html) to access the [Android Biometrics API](https://source.android.com/docs/security/features/biometric/face-authentication) to request and access iris detection.
-- Using Android Biometric APIs in Unity
+- Access the [Android Biometric APIs](https://source.android.com/docs/security/features/biometric/face-authentication) in [Unity](https://docs.unity3d.com/Manual/android-plugins-java-code-from-c-sharp.html). 
