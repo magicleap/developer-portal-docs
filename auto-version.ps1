@@ -40,8 +40,9 @@ $config = Get-Content -Path "./docs-versions.json" | ConvertFrom-Json
 $config.current.label = $currentVersionWSpaces
 if ($config.PSObject.Properties.Name -contains $previousVersion) {
     $config.$previousVersion = $projectVersion
-    $config.$projectVersion.label = $projectVersionWSpaces
     
+    # Create the new version as an object with a label property
+    $config.$projectVersion = @{ label = $projectVersionWSpaces }
 }
 
 # Convert the object back to a JSON string
