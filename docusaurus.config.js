@@ -15,7 +15,7 @@ if (ADD_ROUTER) {
 const isEmbedded =
   ADD_ROUTER || process.env.REACT_APP_DOCUSAURUS_ROOT !== undefined;
 
-const siteUrl = isEmbedded ? "https://developer.magicleap.cloud" : "http://localhost:3000/"
+const siteUrl = isEmbedded ? "https://developer-docs.magicleap.cloud" : "http://localhost:3000/"
 // When embedded in developer portal the Navbar does not require title, logo and overview
 const navbar = {
   items: [
