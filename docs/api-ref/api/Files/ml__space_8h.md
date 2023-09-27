@@ -47,6 +47,8 @@ title: ml_space.h
 | enum | **[MLSpaceResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspaceresult)** <br></br> { <br></br>[MLSpaceResult_ServerError](/api-ref/api/Files/ml__space_8h.md#enums-mlspaceresult-servererror) = MLResultAPIPrefix_Space,<br></br> [MLSpaceResult_ServiceUnavailable](/api-ref/api/Files/ml__space_8h.md#enums-mlspaceresult-serviceunavailable),<br></br> [MLSpaceResult_UnavailableSpace](/api-ref/api/Files/ml__space_8h.md#enums-mlspaceresult-unavailablespace),<br></br> [MLSpaceResult_IncompatibleSpace](/api-ref/api/Files/ml__space_8h.md#enums-mlspaceresult-incompatiblespace),<br></br> [MLSpaceResult_SpaceAlreadyExists](/api-ref/api/Files/ml__space_8h.md#enums-mlspaceresult-spacealreadyexists),<br></br> [MLSpaceResult_Ensure32Bits](/api-ref/api/Files/ml__space_8h.md#enums-mlspaceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Magic Leap Space specific return codes.  |
 | enum | **[MLSpaceType](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacetype)** <br></br> { <br></br>[MLSpaceType_OnDevice](/api-ref/api/Files/ml__space_8h.md#enums-mlspacetype-ondevice) = 0,<br></br> [MLSpaceType_ARCloud](/api-ref/api/Files/ml__space_8h.md#enums-mlspacetype-arcloud) = 1,<br></br> [MLSpaceType_Ensure32Bits](/api-ref/api/Files/ml__space_8h.md#enums-mlspacetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Space type. Indicates the type of the Space.  |
 | enum | **[MLSpaceLocalizationStatus](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationstatus)** <br></br> { <br></br>[MLSpaceLocalizationStatus_NotLocalized](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationstatus-notlocalized) = 0,<br></br> [MLSpaceLocalizationStatus_Localized](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationstatus-localized) = 1,<br></br> [MLSpaceLocalizationStatus_LocalizationPending](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationstatus-localizationpending) = 2,<br></br> [MLSpaceLocalizationStatus_SleepingBeforeRetry](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationstatus-sleepingbeforeretry) = 3,<br></br> [MLSpaceLocalizationStatus_Ensure32Bits](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationstatus-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The current localization status.  |
+| enum | **[MLSpaceLocalizationConfidence](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationconfidence)** <br></br> { <br></br>[MLSpaceLocalizationConfidence_Poor](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationconfidence-poor) = 0,<br></br> [MLSpaceLocalizationConfidence_Fair](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationconfidence-fair) = 1,<br></br> [MLSpaceLocalizationConfidence_Good](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationconfidence-good) = 2,<br></br> [MLSpaceLocalizationConfidence_Excellent](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationconfidence-excellent) = 3,<br></br> [MLSpaceLocalizationConfidence_Ensure32Bits](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationconfidence-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The confidence of the current localization.  |
+| enum | **[MLSpaceLocalizationErrorFlag](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#enums-mlspacelocalizationerrorflag)** <br></br> { <br></br>[MLSpaceLocalizationErrorFlag_None](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-none) = 0,<br></br> [MLSpaceLocalizationErrorFlag_Unknown](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-unknown) = 1 << 0,<br></br> [MLSpaceLocalizationErrorFlag_OutOfMappedArea](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-outofmappedarea) = 1 << 1,<br></br> [MLSpaceLocalizationErrorFlag_LowFeatureCount](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-lowfeaturecount) = 1 << 2,<br></br> [MLSpaceLocalizationErrorFlag_ExcessiveMotion](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-excessivemotion) = 1 << 3,<br></br> [MLSpaceLocalizationErrorFlag_LowLight](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-lowlight) = 1 << 4,<br></br> [MLSpaceLocalizationErrorFlag_HeadposeFailure](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-headposefailure) = 1 << 5,<br></br> [MLSpaceLocalizationErrorFlag_AlgorithmFailure](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-algorithmfailure) = 1 << 6,<br></br> [MLSpaceLocalizationErrorFlag_Ensure32Bits](/api-ref/api/Files/ml__space_8h.md#enums-mlspacelocalizationerrorflag-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>A set of possible reasons that a localization attempt may be unsuccessful.  |
 
 ## Functions
 
@@ -159,6 +161,60 @@ The current localization status.
 
 **API Level:**
   * 26
+
+
+
+
+-----------
+
+### MLSpaceLocalizationConfidence {#enums-mlspacelocalizationconfidence}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| MLSpaceLocalizationConfidence_Poor |  0| Localization confidence is very poor and should be reattempted. |
+| MLSpaceLocalizationConfidence_Fair |  1| The confidence is low, current environmental conditions may adversely affect localization. |
+| MLSpaceLocalizationConfidence_Good |  2| The confidence is high, persistent content should be stable. |
+| MLSpaceLocalizationConfidence_Excellent |  3| This is a very high-confidence localization, persistent content will be very stable. |
+| MLSpaceLocalizationConfidence_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
+
+
+
+The confidence of the current localization. 
+
+
+
+
+**API Level:**
+  * 31
+
+
+
+
+-----------
+
+### MLSpaceLocalizationErrorFlag {#enums-mlspacelocalizationerrorflag}
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| MLSpaceLocalizationErrorFlag_None |  0| No error, localization was successful. |
+| MLSpaceLocalizationErrorFlag_Unknown |  1 << 0| Localization failed for an unknown reason. |
+| MLSpaceLocalizationErrorFlag_OutOfMappedArea |  1 << 1| Localization failed becuase the user is outside of the mapped area. |
+| MLSpaceLocalizationErrorFlag_LowFeatureCount |  1 << 2| There are not enough features in the environment to successfully localize. |
+| MLSpaceLocalizationErrorFlag_ExcessiveMotion |  1 << 3| Localization failed due to excessive motion. |
+| MLSpaceLocalizationErrorFlag_LowLight |  1 << 4| Localization failed because the lighting levels are too low in the environment. |
+| MLSpaceLocalizationErrorFlag_HeadposeFailure |  1 << 5| A headpose failure caused localization to be unsuccessful. |
+| MLSpaceLocalizationErrorFlag_AlgorithmFailure |  1 << 6| There was an internal algorithm failure that prevented localization. |
+| MLSpaceLocalizationErrorFlag_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
+
+
+
+A set of possible reasons that a localization attempt may be unsuccessful. 
+
+
+
+
+**API Level:**
+  * 31
 
 
 
@@ -287,7 +343,7 @@ A structure containing information about the device's localization state. This s
 
 
 **API Level:**
-  * 28
+  * 31
 
 
 
@@ -583,7 +639,7 @@ Initialize default values for [MLSpaceLocalizationResult](/api-ref/api/Modules/g
 
 
 **API Level:**
-  * 28
+  * 31
 
 
 
@@ -825,6 +881,7 @@ Get the list of available spaces.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|List of spaces retrieved successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Unauthenticated|Invalid authentication credentials for this operation. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServerError|Operation failed due to server side error. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServiceUnavailable|Operation failed because service is not ready.|
@@ -913,6 +970,7 @@ Send a request to localize to a given Magic Leap Space.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Localization request was submitted successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Unauthenticated|Invalid authentication credentials for this operation. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_UnavailableSpace|Operation failed due an unavailable Space. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLSpaceResult_ServerError|Operation failed due to server side error. |
@@ -961,6 +1019,7 @@ Get the localization results.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One or more input parameters are not valid. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Localization result was retrieved successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Unauthenticated|Invalid authentication credentials for this operation. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Operation failed for unknown reason.|
 **Required Permissions**:
 
@@ -1201,6 +1260,26 @@ typedef enum MLSpaceLocalizationStatus {
   MLSpaceLocalizationStatus_Ensure32Bits = 0x7FFFFFFF
 } MLSpaceLocalizationStatus;
 
+typedef enum MLSpaceLocalizationConfidence {
+  MLSpaceLocalizationConfidence_Poor = 0,
+  MLSpaceLocalizationConfidence_Fair = 1,
+  MLSpaceLocalizationConfidence_Good = 2,
+  MLSpaceLocalizationConfidence_Excellent = 3,
+  MLSpaceLocalizationConfidence_Ensure32Bits = 0x7FFFFFFF
+} MLSpaceLocalizationConfidence;
+
+typedef enum MLSpaceLocalizationErrorFlag {
+  MLSpaceLocalizationErrorFlag_None = 0,
+  MLSpaceLocalizationErrorFlag_Unknown = 1 << 0,
+  MLSpaceLocalizationErrorFlag_OutOfMappedArea = 1 << 1,
+  MLSpaceLocalizationErrorFlag_LowFeatureCount = 1 << 2,
+  MLSpaceLocalizationErrorFlag_ExcessiveMotion = 1 << 3,
+  MLSpaceLocalizationErrorFlag_LowLight = 1 << 4,
+  MLSpaceLocalizationErrorFlag_HeadposeFailure = 1 << 5,
+  MLSpaceLocalizationErrorFlag_AlgorithmFailure = 1 << 6,
+  MLSpaceLocalizationErrorFlag_Ensure32Bits = 0x7FFFFFFF
+} MLSpaceLocalizationErrorFlag;
+
 typedef struct MLSpaceManagerSettings {
   uint32_t version;
 } MLSpaceManagerSettings;
@@ -1268,12 +1347,14 @@ typedef struct MLSpaceLocalizationResult {
   MLSpaceLocalizationStatus localization_status;
   MLSpace space;
   MLCoordinateFrameUID target_space_origin;
+  MLSpaceLocalizationConfidence localization_confidence;
+  uint32_t error;
 } MLSpaceLocalizationResult;
 
 ML_STATIC_INLINE void MLSpaceLocalizationResultInit(MLSpaceLocalizationResult *inout_info) {
   if (inout_info != NULL) {
     memset(inout_info, 0, sizeof(MLSpaceLocalizationResult));
-    inout_info->version = 2;
+    inout_info->version = 3;
   }
 }
 

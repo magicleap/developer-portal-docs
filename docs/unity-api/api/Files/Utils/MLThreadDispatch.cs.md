@@ -55,7 +55,7 @@ namespace UnityEngine.XR.MagicLeap.Native
 
         public static void ScheduleMain(System.Action callback)
         {
-            if (MLDevice.MainThreadId != -1 && MLDevice.MainThreadId == System.Threading.Thread.CurrentThread.ManagedThreadId)
+            if (MLDevice.Instance != null && MLDevice.MainThreadId != -1 && MLDevice.MainThreadId == System.Threading.Thread.CurrentThread.ManagedThreadId)
             {
                 callback();
             }

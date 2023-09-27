@@ -17,11 +17,11 @@ Contains information about the current state of an input controller.
 
 ## Public Attributes
 
-### ButtonStates {#bool-buttonstates}
+### ButtonStates {#byte-buttonstates}
 
 ```csharp
 
-public bool [] ButtonStates;
+public byte [] ButtonStates;
 
 ```
 
@@ -77,11 +77,11 @@ public bool IsConnected;
 
 -----------
 
-### IsTouchesActive {#bool-istouchesactive}
+### IsTouchesActive {#byte-istouchesactive}
 
 ```csharp
 
-public bool [] IsTouchesActive;
+public byte [] IsTouchesActive;
 
 ```
 

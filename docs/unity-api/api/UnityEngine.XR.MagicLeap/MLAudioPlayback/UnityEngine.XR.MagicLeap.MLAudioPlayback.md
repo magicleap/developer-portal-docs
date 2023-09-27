@@ -38,7 +38,7 @@ protected static MLAudioPlayback Instance { get; set; }
 
 ### void CreateAudioBuffer {#void-createaudiobuffer}
 
-Creates the audio buffer with the default cache size. Needs to be called from the main thread. 
+Creates the audio buffer with the default cache size. 
 
 ```csharp
 public static void CreateAudioBuffer()
@@ -53,7 +53,7 @@ public static void CreateAudioBuffer()
 
 ### void CreateAudioBuffer {#void-createaudiobuffer}
 
-Creates the audio buffer with the specified cache size. Needs to be called from the main thread. 
+Creates the audio buffer with the specified cache size. 
 
 ```csharp
 public static void CreateAudioBuffer(

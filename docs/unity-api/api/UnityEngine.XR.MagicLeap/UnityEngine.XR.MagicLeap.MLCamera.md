@@ -20,6 +20,25 @@ Inherits from: <br></br>[MLCameraBase](/unity-api/api/UnityEngine.XR.MagicLeap/M
 
 
 
+## Public Fields
+
+### IsPaused {#bool-ispaused}
+
+Whether the camera is currently paused 
+
+```csharp
+
+public bool IsPaused { get; set; }
+
+```
+
+
+
+
+
+
+-----------
+
 ## Public Methods
 
 ### Task&lt; [MLResult](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLResult.md) &gt; CaptureImageAsync {#task-captureimageasync}
@@ -228,6 +247,38 @@ protected virtual override void OnApplicationPause(
 
 
 **Reimplements**: [OnApplicationPause](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLAPIBase.md#void-onapplicationpause)
+
+
+
+-----------
+
+## Public Events
+
+### OnCameraPaused {#action-oncamerapaused}
+
+Event that gets fired when the camera is paused 
+
+```csharp
+public Action OnCameraPaused()
+```
+
+
+
+
+
+
+-----------
+
+### OnCameraResumed {#action-oncameraresumed}
+
+Event that gets fired when the camera is resumed after a pause 
+
+```csharp
+public Action OnCameraResumed()
+```
+
+
+
 
 
 

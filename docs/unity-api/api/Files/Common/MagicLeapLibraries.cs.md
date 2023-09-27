@@ -62,6 +62,9 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLSpaceDll = MLSdkLoaderDll;
 
         protected const string MLPowerManagerDll = MLSdkLoaderDll;
+
+        protected const string MLMediaErrorDLL = MLSdkLoaderDll;
+        
 #else
         public const string MLPerceptionClientDll = "perception.magicleap";
 
@@ -88,6 +91,9 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLSpaceDll = "space.magicleap";
 
         protected const string MLPowerManagerDll = "power_manager.magicleap";
+
+        protected const string MLMediaErrorDLL = "media_error.magicleap";
+        
 #endif
         public const string UnityMagicLeapDll = "UnityMagicLeap";
 
@@ -96,8 +102,6 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MediaMuxerDll = "media_muxer.magicleap";
 
         protected const string MLMediaDRMDll = "media_drm.magicleap";
-
-        protected const string MLMediaErrorDLL = "media_error.magicleap";
 
         protected const string MLMediaCEA608DLL = "media_ccparser.magicleap";
 
