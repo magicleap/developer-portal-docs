@@ -88,26 +88,41 @@ The function `MLSpace.RequestLocalization(...)` requests the system to localize 
 
 A new request for localization will override all the past requests for localization that are yet to be completed.
 
-```csharp
+```csharp title="Required Namespaces"
+using System;
+using UnityEngine;
+using UnityEngine.XR.MagicLeap;
+using UnityEngine.XR.MagicLeap.Native;
+```
 
-public void LocalizeToFirstSpace()
-{
-    // Declare an MLSpace.SpaceInfo
-    MLSpace.SpaceInfo info;
-    // Set the SpaceId
-    info.SpaceId = "YOU_SPACE_ID_HERE";
-    // Request localization
-    MLSpace.RequestLocalization(ref info);
+```csharp title="Localize to Space Example"
+    public void LocalizeToSpace()
+        {
+            // Declare an MLSpace.SpaceInfo
+            MLSpace.SpaceInfo info;
+            // Set the SpaceId
+            string SpaceID = "YOU_SPACE_ID_HERE";
+            if (Guid.TryParse(SpaceID, out Guid spaceGuid))
+            {
+                info.SpaceId = MLConvert.FromUnity(spaceGuid);
+                // Request localization
+               MLResult.Code result =  MLSpace.RequestLocalization(ref info);
 
-    if (result == MLResult.Code.Ok)
-    {
-        Debug.Log($"Request to localize into Space with ID {info.SpaceId} was successful.");
-    }
-    else
-    {
-        Debug.LogError($"Error requesting to localize into Space: {result}");
-    }
-}
+                if (result == MLResult.Code.Ok)
+                {
+                    Debug.Log($"Request to localize into Space with ID {info.SpaceId} was successful.");
+                }
+                else
+                {
+                    Debug.LogError($"Error requesting to localize into Space: {result}");
+                }
+            }
+            else
+            {
+                Debug.LogError($"Space ID {SpaceID} could not be converted to Guid.");
+            }
+          
+        }
 ```
 
 ## Export Spaces
@@ -135,38 +150,54 @@ Before the `ExportSpace` method can be used, the `com.magicleap.permission.SPACE
 
 Here's an example of how to use the `ExportSpace` method to export a MLSpace and save it to a file:
 
-```csharp
-public void ExportSpace()
-{
-    MLSpace.SpaceInfo info;
-    info.SpaceId = "YOUR_SPACE_ID";
+```csharp title="Required Namespaces"
+using System;
+using UnityEngine;
+using UnityEngine.XR.MagicLeap;
+using UnityEngine.XR.MagicLeap.Native;
+```
 
-    MLResult.Code result = MLSpace.ExportSpace(in info, out MLSpace.SpaceData exportData);
+```csharp title="Export Space Example"
+  public void ExportSpace()
+        {
+            MLSpace.SpaceInfo info;
+            string SpaceID = "YOU_SPACE_ID_HERE";
+            if (Guid.TryParse(SpaceID, out Guid spaceGuid))
+            {
+                info.SpaceId = MLConvert.FromUnity(spaceGuid);
 
-    if (result == MLResult.Code.Ok)
-    {
-        var binaryData = exportData.Data;
-        SaveSpaceToFile(binaryData);
-    }
+                MLResult.Code result = MLSpace.ExportSpace(in info, out MLSpace.SpaceData exportData);
 
-}
+                if (result == MLResult.Code.Ok)
+                {
+                    var binaryData = exportData.Data;
+                    SaveSpaceToFile(binaryData);
+                }
+            }
+            else
+            {
+                Debug.LogError($"Space ID {SpaceID} could not be converted to Guid.");
+            }
 
-private void SaveSpaceToFile(byte[] binaryData)
-{
-    using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
-    {
-        fileStream.Write(binaryData, 0, binaryData.Length);
-    }
+        }
 
-    if (File.Exists(filePath))
-    {
-        Debug.Log("Binary data saved to file: " + filePath);
-    }
-    else
-    {
-        Debug.LogError("Failed to save binary data to file: " + filePath);
-    }
-}
+        private void SaveSpaceToFile(byte[] binaryData)
+        {
+            string filePath = "YOU_FILE_PATH_HERE";
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                fileStream.Write(binaryData, 0, binaryData.Length);
+            }
+
+            if (File.Exists(filePath))
+            {
+                Debug.Log("Binary data saved to file: " + filePath);
+            }
+            else
+            {
+                Debug.LogError("Failed to save binary data to file: " + filePath);
+            }
+        }
 ```
 
 :::warning The exported MLSpace data may contain sensitive information
@@ -203,31 +234,39 @@ In order to utilize the `ImportSpace` function, your application must first requ
 
 Here is an example of how to load a MLSpace from binary data using the `MLSpaceImportSpace` function. In this example, the binary data of a MLSpace is loaded from a file and then imported as a MLSpace using `ImportSpace`. After the space is successfully imported, the list of available spaces is refreshed. If no space was previously exported to a file, a warning message is shown.
 
-```csharp
-public void ImportSpace()
-{
-    if (!File.Exists(filePath))
-    {
-        Debug.LogWarning("No spaces have been exported, cannot import last exported space.");
-        return;
-    }
+```csharp title="Required Namespaces"
+using System.IO;
+using UnityEngine;
+using UnityEngine.XR.MagicLeap;
+```
 
-    byte[] binaryData;
-    string filePath = "/YOUR/FILE/PATH/HERE";
-    using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
-    {
-        binaryData = new byte[fileStream.Length];
-        fileStream.Read(binaryData, 0, binaryData.Length);
-    }
+```csharp title="Import Space Example"
+ public void ImportSpace()
+        {
+            string filePath = "/YOUR/FILE/PATH/HERE";
 
-    MLSpace.SpaceData data = new MLSpace.SpaceData();
-    data.Size = (uint)binaryData.Length;
-    data.Data = binaryData;
+            if (!File.Exists(filePath))
+            {
+                Debug.LogWarning("No spaces have been exported, cannot import last exported space.");
+                return;
+            }
 
-    MLResult.Code result = MLSpace.ImportSpace(in data, out MLSpace.SpaceInfo info);
+            byte[] binaryData;
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
+            {
+                binaryData = new byte[fileStream.Length];
+                fileStream.Read(binaryData, 0, binaryData.Length);
+            }
 
-    if(result.isOK){
-        Debug.Log($"Space {info.SpaceId} Imported Successfully")
-    }
-}
+            MLSpace.SpaceData data = new MLSpace.SpaceData();
+            data.Size = (uint)binaryData.Length;
+            data.Data = binaryData;
+
+            MLResult.Code result = MLSpace.ImportSpace(in data, out MLSpace.SpaceInfo info);
+            bool didSucceed = MLResult.DidNativeCallSucceed(result, nameof(MLSpace.ImportSpace));
+            if (didSucceed)
+            {
+                Debug.Log($"Space {info.SpaceId} Imported Successfully");
+            }
+        }
 ```
