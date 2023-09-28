@@ -40,11 +40,6 @@ Performance and stability improvements to Android Audio APIs (AAudio, OpenSL ES)
 
 - Resolved visual flicker that can occur on slower networks.
 - Added support for 2 new languages to TTS: Spanish and French.
-- Future ML2 hardware will no longer include Bend Camera since it is not currently used. Removed check for the existence of a bend camera in the headset boot-up code and allow device to boot without bend camera
-- Resolved timing issue in the headset boot-up sequence causing splashscreen to disappear and reappear during device boot
-- Resolved timing issue in display boot-up sequence which caused intermittent splash screen misalignment
-- Improve manufacturing yield of bluetooth components.
-- Updated Display boot-up logic to recognize devices configured with additional calibration data for manufacturing process improvement.
 
 ### Dual Role Port Support
 
