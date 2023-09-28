@@ -39,6 +39,26 @@ public static GestureSubsystemComponent GestureSubsystemComponent { get; set; }
 
 -----------
 
+### Instance {#mldevice-instance}
+
+Gets the [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) singleton instance. 
+
+```csharp
+
+public static MLDevice Instance { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [MLDevice](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.MLDevice.md) | [MagicLeap](/unity-api/api/UnityEngine.XR.MagicLeap/UnityEngine.XR.MagicLeap.md) device class responsible for updating all trackers when they register and are enabled.  |
+
+
+
+
+
+-----------
+
 ### PlatformLevel {#uint-platformlevel}
 
 Gets the platform API level that the OS supports. 

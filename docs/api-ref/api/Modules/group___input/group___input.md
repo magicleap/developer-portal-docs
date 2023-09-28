@@ -63,7 +63,7 @@ APIs for the Input system.  [More...](#detailed-description)
 | enum | **[MLInputControllerHand](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand)** <br></br> { <br></br>[MLInputControllerHand_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-none) = 0,<br></br> [MLInputControllerHand_Left](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-left) = 1,<br></br> [MLInputControllerHand_Right](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-right) = 2,<br></br> [MLInputControllerHand_Both](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-both) = 3,<br></br> [MLInputControllerHand_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Hand in which the controller is held.  |
 | enum | **[Anonymous Enum 30](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-30)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
 | enum | **[MLVoiceResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
-| enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
+| enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_IntentInvalidAppIntent](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentinvalidappintent) = 8,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
 | enum | **[MLVoiceIntentNoIntentReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
 
 ## Functions
@@ -99,6 +99,7 @@ APIs for the Input system.  [More...](#detailed-description)
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Starts voice intent processing.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Stops voice intent processing.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentIsEnabled](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentisenabled)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, bool * out_is_enabled)<br></br>Checks voice intent feature is enabled in the system.  |
+| const char * | **[MLVoiceGetResultString](/api-ref/api/Modules/group___input/group___input.md#const-char-mlvoicegetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLVoiceResult and MLResult codes.  |
 
 ## Detailed Description
 
@@ -420,6 +421,7 @@ Return values for Voice API calls.
 | MLVoiceState_IntentSessionEndedError |  5| ASR session is stopped due to error. |
 | MLVoiceState_IntentReady |  6| Intent mode is started and ready. |
 | MLVoiceState_IntentNotAvailable |  7| Intent mode is stopped and not available. |
+| MLVoiceState_IntentInvalidAppIntent |  8| Invalid app intent, double check content of JSON submitted with [MLVoiceIntentConfigureSettings()](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentconfiguresettings). Please refer to Voice Intent Development Toolkit from Magic Leap Hub to generate app intent content. |
 | MLVoiceState_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -430,7 +432,7 @@ Voice state in voice event.
 
 
 **API Level:**
-  * 20
+  * 31
 
 
 
@@ -1824,6 +1826,39 @@ Checks voice intent feature is enabled in the system.
 
 **API Level:**
   * 20
+
+
+
+
+-----------
+
+### MLVoiceGetResultString {#const-char-mlvoicegetresultstring}
+
+```cpp
+const char * MLVoiceGetResultString(
+    MLResult result
+)
+```
+
+Returns an ASCII string for MLVoiceResult and MLResult codes. 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result|The input MLResult enum from MLVoice functions. |
+**Required Permissions**:
+
+  * None 
+
+
+
+
+**Return**: ASCII string containing readable version of result code.
+
+
+**API Level:**
+  * 31
 
 
 

@@ -25,6 +25,7 @@ A structure representing a user-defined Spatial Anchor.  [More...](#detailed-des
 | uint64_t | **[expiration_timestamp_s](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md#uint64-t-expiration-timestamp-s)** <br></br>The suggested expiration timestamp for this anchor represented in seconds since the Unix epoch.  |
 | bool | **[is_persisted](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md#bool-is-persisted)** <br></br>Indicates whether or not the anchor has been persisted via a call to [MLSpatialAnchorPublish](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorpublish).  |
 | [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) | **[space_id](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md#mluuid-space-id)** <br></br>The ID of the space that this anchor belongs to. This is only relevant if is_persisted is true.  |
+| [MLSpatialAnchorQuality](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorquality) | **[quality](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md#mlspatialanchorquality-quality)** <br></br>The quality of the local space that this anchor occupies. This value may change over time.  |
 
 ## Detailed Description
 
@@ -38,7 +39,7 @@ A structure representing a user-defined Spatial Anchor.
 
 
 **API Level:**
-  * 20
+  * 31
 
 
 
@@ -131,6 +132,26 @@ MLUUID space_id;
 ```
 
 The ID of the space that this anchor belongs to. This is only relevant if is_persisted is true. 
+
+
+
+
+
+-----------
+
+### quality {#mlspatialanchorquality-quality}
+
+```cpp
+MLSpatialAnchorQuality quality;
+```
+
+The quality of the local space that this anchor occupies. This value may change over time. 
+
+
+| Type | Description |
+|--|--|
+| [MLSpatialAnchorQuality](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#enums-mlspatialanchorquality) | The quality of the local space around the anchor.  |
+
 
 
 

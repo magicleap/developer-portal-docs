@@ -22,6 +22,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.MagicLeap.Native;
 
 namespace UnityEngine.XR.MagicLeap
 {
@@ -32,7 +33,10 @@ namespace UnityEngine.XR.MagicLeap
             get
             {
                 if (instance == null)
+                {
                     instance = new MLAudioPlayback();
+                    MLThreadDispatch.ScheduleMain(() => instance.outputSampleRate = (uint)AudioSettings.outputSampleRate);
+                }
 
                 return instance;
             }
@@ -67,7 +71,6 @@ namespace UnityEngine.XR.MagicLeap
             {
 #if UNITY_EDITOR
                 this.cacheDurationInSeconds = cacheDurationInSeconds;
-                this.outputSampleRate = (uint)AudioSettings.outputSampleRate;
                 NativeBindings.CreateAudioOutput();
                 this.bufferCreated = false;
                 this.isStarted = true;

@@ -48,7 +48,7 @@ APIs for the Occlusion system. \experimental This is an experimental API which m
   * perception.magicleap*
 
 * The Occlusion system is for generating a mesh representation of the near field objects, so they can be easily used for occlusion of in-app objects for greater immersion.
-* By default occlusion system generates the mesh representation of the near field objects at 5Hz. When [MLOcclusionSettings::max_distance](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_settings.md#float-max-distance) is set to be less or equial to 0.9m the mesh is generated at 30Hz. 
+* By default occlusion system generates the mesh representation of the near field objects at 5Hz. When [MLOcclusionSettings::max_distance](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_settings.md#float-max-distance) is set to be less or equal to 0.9m the mesh is generated at 30Hz. 
 
 
 

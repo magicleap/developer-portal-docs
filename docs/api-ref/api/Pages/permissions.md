@@ -2690,6 +2690,10 @@ Global [MLSpatialAnchorGetLocalizationInfo](/api-ref/api/Modules/group___magic_l
 
 *  None  
 
+Global [MLSpatialAnchorGetResultString](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#const-char-mlspatialanchorgetresultstring)  (MLResult result)
+
+*  None  
+
 Global [MLSpatialAnchorInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorinit)  ([MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) *inout_anchor)
 
 *  None  
@@ -2747,6 +2751,10 @@ Global [MLTimeConvertMLTimeToSystemTime](/api-ref/api/Modules/group___time/group
 *  None  
 
 Global [MLTimeConvertSystemTimeToMLTime](/api-ref/api/Modules/group___time/group___time.md#mlresult-mltimeconvertsystemtimetomltime)  (const struct timespec *timespec_time, MLTime *out_ml_time)
+
+*  None  
+
+Global [MLVoiceGetResultString](/api-ref/api/Modules/group___input/group___input.md#const-char-mlvoicegetresultstring)  (MLResult result)
 
 *  None  
 

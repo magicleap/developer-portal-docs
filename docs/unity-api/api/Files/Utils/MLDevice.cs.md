@@ -109,7 +109,7 @@ namespace UnityEngine.XR.MagicLeap
         private int mainThreadId = -1;
 
         private Camera unityCamera;
-        
+
 #if UNITY_OPENXR_1_7_0_OR_NEWER
         private MagicLeapFeature mlOpenXrFeature;
 #endif
@@ -134,7 +134,11 @@ namespace UnityEngine.XR.MagicLeap
 
         public static int MainThreadId => Instance.mainThreadId;
 
-        private static MLDevice Instance => instance;
+        public static MLDevice Instance
+        {
+            get { return instance; }
+            private set { instance = value; }
+        }
 
         public static bool IsReady()
         {

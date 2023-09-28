@@ -6,8 +6,8 @@ date: 06/13/2023
 
 # Magic Leap Application Simulator Release Notes
 
-# Version 3.7.0 (Dev1)
-(2023.08.31)
+# Version 3.7.0 (Dev2)
+(2023.09.28)
 
 ## What's New
   * Hybrid mode has been removed as it is underutilized.
@@ -17,10 +17,10 @@ date: 06/13/2023
   * FEEDBACK-463: Device View is sometimes blank after starting App Sim Simulator in Unity.
 
 ## Known Issues
+  * The ML Hub occasionally hangs on stopping simulator mode (6208).
   * Any shipped applications built with MLSDK v1.0.0 will require a rebuild with the latest MLSDK to work with the latest App Sim, even if there are no code changes. This is due to a deprecation of `native_app_glue`. The log message "W [Run] Note: deprecated native_app_glue detected; please rebuild your app" will appear if the application is affected by this.
   * If Device View and Scene View are both blank after starting App Sim Simulator, that usually indicates the GPU of the machine does not have required Graphics support. One possible workaround is to set the environment variable `ML_ZI_DISABLE_GPU_SHARING` to `1` then restart ML Hub or Unity Editor.
-  * [Unity AppSim] The Unity Editor may become unstable or crash if the headpose is moved while the application is paused (REM-5950).
-  * [Unity AppSim] Unity Editor cannot be exited (by closing the window or selecting menu `Unity->Quit`) when App Sim is running. Workaround is to stop App Sim first (REM-6175).
+  * [Unity AppSim] The Unity Editor may become unstable or crash if the headpose is moved while the application is paused (5950).
 
 # Version 3.6.0
 (2023.08.02)

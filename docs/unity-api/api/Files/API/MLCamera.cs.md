@@ -38,8 +38,12 @@ namespace UnityEngine.XR.MagicLeap
 
     public sealed partial class MLCamera : MLCameraBase
     {
-        private const int WakeTime = 2000;
-
+        public event Action OnCameraPaused;
+        
+        public event Action OnCameraResumed;
+        
+        public bool IsPaused { get; private set; }
+        
         private static int instanceCounter = 0;
 
         private MLCamera() : base() => Interlocked.Increment(ref instanceCounter);
@@ -215,7 +219,7 @@ namespace UnityEngine.XR.MagicLeap
             }
             else
             {
-                AsyncResume();
+                Resume();
             }
             applicationPausePerfMarker.End();
             if (result != MLResult.Code.Ok)
@@ -227,6 +231,8 @@ namespace UnityEngine.XR.MagicLeap
 
         private MLResult.Code Pause(bool flagsOnly = false)
         {
+            OnCameraPaused?.Invoke();
+            IsPaused = true;
             MLResult.Code result = MLResult.Code.Ok;
 
             if (cameraConnectionEstablished)
@@ -243,12 +249,6 @@ namespace UnityEngine.XR.MagicLeap
             }
 
             return result;
-        }
-
-        private async void AsyncResume()
-        {
-            await Task.Delay(WakeTime);
-            Resume();
         }
 
         private MLResult.Code Resume()
@@ -314,6 +314,8 @@ namespace UnityEngine.XR.MagicLeap
                 }
             }
 
+            IsPaused = false;
+            OnCameraResumed?.Invoke();
             return resultCode;
         }
 

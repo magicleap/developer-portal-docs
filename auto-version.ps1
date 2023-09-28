@@ -38,10 +38,14 @@ $config = Get-Content -Path "./docs-versions.json" | ConvertFrom-Json
 
 # Edit the object properties
 $config.current.label = $currentVersionWSpaces
+
 if ($config.PSObject.Properties.Name -contains $previousVersion) {
-    $config.$previousVersion = $projectVersion
-    $config.$projectVersion.label = $projectVersionWSpaces
-    
+    # Convert $config to a PSCustomObject to allow modifying properties
+    $config = [PSCustomObject]$config
+    # Add the new version (projectVersion) to the JSON
+    $config | Add-Member -NotePropertyName $projectVersion -NotePropertyValue @{ label = $projectVersionWSpaces } -Force
+    # Remove the previous version from the JSON
+    $config.PSObject.Properties.Remove($previousVersion)
 }
 
 # Convert the object back to a JSON string

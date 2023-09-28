@@ -35,6 +35,19 @@ public AudioClip UnityAudioClip { get; set; }
 
 ## Public Methods
 
+### void ClearBuffer {#void-clearbuffer}
+
+```csharp
+public void ClearBuffer()
+```
+
+
+
+
+
+
+-----------
+
 ###  StreamingClip {#functions-streamingclip}
 
 ```csharp
