@@ -48,18 +48,19 @@ This section will utilize a [Unity XR Interaction](https://docs.unity3d.com/Pack
 
 7. **Optional:** Enable the *Smooth Position* and *Smooth rotation* parameters of the **XR Grab Interactable** script to increase the fluidity in the cube's motion.
 
-<Image url= {require("/img/unity/simple-app-interaction/xr-grab-interactable.png")} >The Smooth Settings inside the XR Grab Interactable Component </Image>
+<Image url= {require("/img/unity/simple-app-interaction/xr-grab-interactable.png")} width="500px">The Smooth Settings inside the XR Grab Interactable Component </Image>
 
 8.Enable *Is Kinematic* on the Grabbable Cube's Rigidbody script to prevent the object from falling to the ground at the start of the application and ignore forces such as velocity.
 
-<Image url= {require("/img/unity/simple-app-interaction/grabbable-cube-settings.png")} >The Grabbable Cube's component hierarchy</Image>
+<Image url= {require("/img/unity/simple-app-interaction/grabbable-cube-settings.png")} width="500px">The Grabbable Cube's component hierarchy</Image>
 
-9. Select the **Game Controller** from the scene hierarchy (XR Rig/Session Origin/Game Controller).
+1. Select the **Game Controller** from the scene hierarchy (XR Rig/Session Origin/Game Controller).
 
-10. In the Inspector, find the **XR Ray Interactor** script attached to this object. Drag the **XR Interaction Manager** from the scene into the **XR Interaction Manager** slot in the script.
-11. Deselect the *Force grab* option to allow for the Grabbable Cube to be manipulated at a distance instead of sliding to the controllers location when grabbed:
+2. In the Inspector, find the **XR Ray Interactor** script attached to this object. Drag the **XR Interaction Manager** from the scene into the **XR Interaction Manager** slot in the script.
 
-<Image url= {require("/img/unity/simple-app-interaction/xr-ray-interactor.png")} >The Controller's XR Ray Interactor script settings</Image>
+3. Deselect the *Force grab* option to allow for the Grabbable Cube to be manipulated at a distance instead of sliding to the controllers location when grabbed:
+
+<Image url= {require("/img/unity/simple-app-interaction/xr-ray-interactor.png")} width="500px">The Controller's XR Ray Interactor script settings</Image>
 
 ## Adding Hover Interaction
 
@@ -79,7 +80,7 @@ One of the features of the XR Grab Interactable Script is that it allows the gra
 
 The final Hover actions will look like this:
 
-<Image url= {require("/img/unity/simple-app-interaction/hover-interactions.png")} >The XR Grab Interactable with it's Hover events configured.</Image>
+<Image url= {require("/img/unity/simple-app-interaction/hover-interactions.png")} width="500px">The XR Grab Interactable with it's Hover events configured.</Image>
 
 ## Test the project
 
