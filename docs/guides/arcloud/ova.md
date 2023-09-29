@@ -50,6 +50,20 @@ Download the latest version of an image for the [runtime environment](#runtime-e
 The OVA image supports the majority of the environments, except for MacBooks with Apple Silicon chipsets, in which case
 the UTM image should be used.
 
+### Verifying signatures
+:::note
+To verify a signed artifact, first install [Cosign](https://github.com/sigstore/cosign#installation)
+:::
+
+The general verification command of the downloaded image using its signature is as follows:
+```shell
+cosign verify-blob --key </path/to/public-key> --signature <signature> </path/to/downloaded/image>
+```
+
+The signature of the artifact can be found on [Magic Leap 2 Developer Portal](https://ml2-developer.magicleap.com/downloads#ar-cloud-ova)
+in the row corresponding to the downloaded file. The Cosign public key is available for download from 
+[Magic Leap AR Cloud](https://github.com/magicleap/arcloud/blob/main/cosign.pub).
+
 ## Requirements
 
 ### Virtualization Support
