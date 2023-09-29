@@ -40,7 +40,7 @@ Version update of the localization and mapping services to version 2.0.1
 
 ### Fixed Depth Camera Short Range Exposure Control
 
-The ML C-API for the depth camera had a bug where if the user programmed the camera to run in short range mode with a specific exposure, frames returned by the API could be generated using the wrong exposure value. As of Sprint 27, when programming the depth camera to run in short range mode with a specific exposure value, short range frames returned by the API are correctly generated using the programmed exposure.
+The ML C-API for the depth camera had a bug where if the user programmed the camera to run in short range mode with a specific exposure, frames returned by the API could be generated using the wrong exposure value. As of 1.4.0-dev2, when programming the depth camera to run in short range mode with a specific exposure value, short range frames returned by the API are correctly generated using the programmed exposure.
 
 ## Known Issues
 
