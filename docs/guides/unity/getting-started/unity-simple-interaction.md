@@ -14,7 +14,7 @@ The Unity XR Interaction Toolkit (XRI) package provides developers with general 
 ## Prerequisites
 
 - [Configured Unity Settings](/docs/guides/unity/getting-started/configure-unity-settings.md)
-- [Completed the Building a Simple App tutoria](/docs/guides/unity/getting-started/unity-building-simple-app.md)
+- [Completed the Building a Simple App tutorial](/docs/guides/unity/getting-started/unity-building-simple-app.md)
 
 ## Enabling Controller Input
 
