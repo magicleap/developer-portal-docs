@@ -1,4 +1,4 @@
-Download the AR Cloud Public Release from GitHub:
+Download the latest AR Cloud public release from GitHub:
 
 ```shell showLineNumbers
 LATEST_RELEASE=$(curl -sSLH 'Accept: application/json' https://github.com/magicleap/arcloud/releases/latest)
