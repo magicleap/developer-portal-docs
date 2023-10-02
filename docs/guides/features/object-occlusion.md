@@ -36,7 +36,7 @@ The Occlusion API provides settings to specify the distance range within which o
 
 An occlusion mesh is a representation of the real-world environment, which helps the system understand which parts of the virtual objects should be visible and which parts should be hidden behind real-world objects.
 
-**Update Rate**: For long range occlusion, the Occlusion mesh is updated at an interval of 5 frames per second. This allows the system to occlude Virtual content in static environments. For real-world objects in close range, the Occlusion mesh dynamically updates at 30 frames per second. 
+**Update Rate**: The Occlusion mesh is updated at an interval of 5 frames per second. This allows the system to occlude Virtual content in static environments.
 
 **Data Components**:
 
