@@ -13,7 +13,7 @@ This guide shows you how to set up the Soundfield audio plugin for Unreal Engine
 You can use Unreal Engine 5 to create apps for Magic Leap 2 devices if you're using Magic Leap 2 SDK for Unreal Engine 5 (Magic Leap 2 Unreal SDK), which is available in preview release.
 
 :::note
-Soundfield audio is sometimes referred to as Magic Leap Spatial Audio or MSA.
+Soundfield audio is sometimes referred to as Magic Leap Soundfield Audio or MSA.
 :::
 
 ## Prerequisites
@@ -42,7 +42,7 @@ To copy the Soundfield plugin to your project folder:
 1. Find the Soundfield plugin files that you downloaded from the Magic Leap Hub. If the top-level folder is not named `Soundfield`, rename it `Soundfield`.
 2. In your Unreal Projects folder, go to the folder for the project you want to configure for Soundfield audio.
 3. If you don't have a folder named `Plugins` in your Unreal project folder, create one.
-4. Copy the `Soundfield` folder containing the Sonderfield plugin to the `Plugins` folder in your Unreal project folder. This example shows how to do this for a Unreal project called `HelloCube`.
+4. Copy the `Soundfield` folder containing the Sonderfield (or MSA) plugin to the `Plugins` folder in your Unreal project folder. This example shows how to do this for a Unreal project called `HelloCube`.
     <Image url= {require("/img/unreal-5/soundfield/copy_soundfield_folder.png")} >Copy the Soundfield plugin folder to the folder of an Unreal project called HelloCube.</Image>
 
 To enable the Soundfield plugin in the Unreal Editor:
