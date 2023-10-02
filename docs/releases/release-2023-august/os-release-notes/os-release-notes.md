@@ -5,13 +5,15 @@ sidebar_position: 0
 date: 08/30/2023
 ---
 
-## Magic Leap OS - 1.4.0-dev1 - B3E.230810.09-R.028
+## Magic Leap OS - 1.4.0-dev1
+
+The features in this release build upon OS [1.3.1](/docs/releases/release-2023-july/july-release-notes).
 
 ## Features and Enhancements
 
 ### On-Device Localization (ODL)
 
-Improved stability and robustness: Cases where AR content or spatial anchors are displayed at incorrect positions significantly reduced. Cases where AR content or spatial anchors jump to incorrect positions after localization events significantly reduced. 
+Improved stability and robustness: Cases where AR content or spatial anchors are displayed at incorrect positions significantly reduced. Cases where AR content or spatial anchors jump to incorrect positions after localization events significantly reduced.
 
 ### AR Cloud Localization and Mapping Services
 
@@ -55,13 +57,13 @@ In this release we are previewing a change of the eye tracker from its previous 
 
 ## Flashing Instructions
 
-Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so. 
+Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so.
 
 When flashing, you **MUST** flash in a linear sequence based on the build order in the table below. For example, if you're on B3E.220619.07-R.107_user (build order #4), you MUST flash B3E.220619.07-R.124_user (build order #5) then B3E.220721.07-R.026_user (build order #6) for your device to work properly with that OS.
 
 | Build Order | Build Fingerprint        |
 | ----------- | ------------------------ |
-| 18          | B3E.230810.09-R.028      | 
+| 18          | B3E.230810.09-R.028      |
 | 17          | B3E.230616.02-R.121      |
 | 16          | B3E.230526.01-R.026      |
 | 15          | B3E.230427.10-R.023      |
