@@ -29,7 +29,7 @@ Soundfield audio is sometimes referred to as Magic Leap Soundfield Audio or MSA.
 3. Scroll down to the Soundfield Plugin for Unreal Engine and select it.
     <Image url= {require("/img/unreal-5/soundfield/download_unreal_soundfield.png")} >The Soundfield plugin in the Magic Leap Hub.</Image>
 4. If you're installing the plugin for the first time, click the download icon. If you're updating the plugin, click **Update**.
-5. Click **Apply Changes** in the panel to the left.
+5. Click **Apply Changes** in the side panel.
     <Image url= {require("/img/unreal-5/soundfield/apply_changes_unreal_soundfield.png")} >Apply the changes you selected in the Magic Leap Hub.</Image>
 6. To see where the plugin was saved on your computer, click the **Open folder** link , just under the plugin, in the right panel of the Magic Leap Hub.
 
