@@ -8,15 +8,15 @@ keywords: [Privacy, Security, Safety]
 
 ## Overview
 
-Magic Leap supports and encourages the development and distribution of applications that can be used on or with Magic Leap 2 devices. However, as an open platform focused on choice and ease of use, the ultimate success of each application depends largely on the relationship you (as an application developer) have with your enterprise customer and each individual end user. Part of this overall relationship includes how you manage privacy, security, and safety within your applications. For example, as a developer, you may have access to important information including sensitive personal data (e.g., eye tracking data) or confidential enterprise data (e.g., spatial maps of a classified work environment) and you are responsible for the means through which your application collects, uses and stores such data.
+Magic Leap supports and encourages the development and distribution of applications that can be used on or with Magic Leap 2 devices. However, as an open platform focused on choice and ease of use, the ultimate success of each application depends largely on the relationship you (as an application developer) have with your customers including the enterprise and their end users. Part of this relationship includes how you manage privacy, security, and safety within your applications. For example, as a developer, you may have access to important customer information including sensitive personal data (e.g., eye tracking data) or confidential enterprise data (e.g., spatial maps of a classified work environment) and you are responsible for the means through which your application collects, uses, and stores such data.
 
-Although Magic Leap 2 was built with privacy, security and safety features in mind, it is the role and responsibility of each individual developer to understand those features (and their limitations), integrate them properly within their applications, and take other measures deemed necessary to protect end users.
+Although Magic Leap 2 was built with privacy, security and safety features in mind, it is the role and responsibility of each individual developer to understand those features (and their limitations), integrate them properly within their applications, and take additional measures as necessary.
 
-Below are a few best practices we recommend to help you build privacy, security and safety directly into your applications:
+Below are a few best practices we recommend to help you build privacy, security and safety directly into your applications. Please note that this list is non-exhaustive.
 
 **1. Comply with applicable law and industry standards**
   
-  a.  Comply with all applicable laws, regulations, and policies, including those pertaining to privacy and data security.
+  a.  Comply with all applicable laws, regulations, and policies, including those pertaining to privacy, data security, and safety.
   
   b.  Comply with generally recognized best practices applicable to your application’s industry and specific use case.
  
@@ -24,7 +24,7 @@ Below are a few best practices we recommend to help you build privacy, security 
 
 **2. Clearly disclose your data privacy practices**
   
-   a. Provide a clear and transparent privacy policy that explains among other information, what data you collect, how you use it, for what purposes, applicable retention policies, and whether any data is shared with other parties.
+   a. Provide a privacy policy that clearly explains among other information, what data you collect, how you use it, for what purposes, applicable retention policies, and whether any data is shared with third parties.
   
    b. Use data in a manner consistent with your application’s privacy policy and any applicable user permissions.
   
@@ -40,15 +40,15 @@ Below are a few best practices we recommend to help you build privacy, security 
 
 **3. Obtain user permission before accessing data**
  
-   a. Build trust by obtaining user permission before collecting, using and sharing data.
+   a. Obtain user permission before collecting, using and sharing data.
 
    b. Ensure default settings are designed to be protective of user privacy.
   
-   c. Requests for permission should be presented when first needed to implement a current feature or service in your application so that end users understand why your application is requesting the permission.
+   c. User permissions should be requested when first needed to provide a specific feature or service in your application so end users can understand why your application is requesting the permission.
   
-   d. Requests for permission should be clearly stated and provide the user with an explanation as to why your application needs a given permission so that the user can feel confident granting permission to your application.
+   d. User permissions should be clearly stated and provide the user with an explanation as to why your application needs a given permission so the user can feel confident granting permission to your application.
   
-   e. Requests for permission should be made prior to collecting any information to improve your products and services such as data analytics.
+   e. User permission should be requested prior to collecting any information to improve your products and services such as data analytics.
   
    f. Provide controls that allow end users to manage their data and privacy preferences, such as an ability to opt-out of data collection or be presented with an explanation as to why the feature cannot function without the stated data collection.
 
@@ -58,7 +58,7 @@ Below are a few best practices we recommend to help you build privacy, security 
   
    b. Data should be anonymized and/or aggregated where possible.
   
-   c. Data should not be used for any purpose other than the functioning or performance of your application consistent with user expectations, and should not be combined with any data set not related to the functioning of your application.
+   c. Data should not be used for any purpose other than the functioning or performance of your application consistent with user expectations, and the application's privacy policy.
   
    d. Data should only be shared with a third party that uses the data to provide services related to your application’s functionality.
   
@@ -82,7 +82,7 @@ Below are a few best practices we recommend to help you build privacy, security 
  
    d. Use industry standard encryption (e.g., TLS) anytime your application stores or transmits usernames, passwords, API keys, or other types of important data about or on behalf of your end users.
   
-   e. Only call documented APIs. Do not store locally or remotely any data received from APIs (e.g., photos, PII, sensor info), unless user consent has been obtained and such storage method has been specifically mentioned within your application’s privacy policy.
+   e. Only call documented APIs. Do not store locally or remotely any data received from APIs (e.g., photos, PII, sensor info), unless user permission has been obtained and such storage method has been specifically mentioned within your application’s privacy policy.
   
    f. Research how our operating system is configured and be sure to adapt your code accordingly when porting applications from other platforms to account for differences in APIs, security-related features and required permissions.
   
@@ -100,15 +100,17 @@ Below are a few best practices we recommend to help you build privacy, security 
   
    b. Provide written documentation to end users describing your application’s intended use cases including appropriate warnings regarding end user safety. 
   
-   c. Design features that prevent accidents, injuries or other safety hazards. Applications should not endanger the physical safety of end users or create a scenario where physical harm is likely. 
+   c. Design safety features that prevent accidents, injuries or other safety hazards. Applications should not endanger the physical safety of end users or create a scenario where physical harm is likely. 
   
-   d. Do not direct end users to use a Magic Leap 2 device that contradicts the intended use of the Magic Leap 2 device or intentionally increases the risk of damaging the device.
+   d. Be intentional when using Dynamic Dimming(TM) technology in your applications. Extreme use can prevent end users from seeing potential hazards in their surroundings.
+   
+   e. Do not direct end users to use a Magic Leap 2 device that contradicts the intended use of the Magic Leap 2 device or intentionally increases the risk of damaging the device.
   
-   e. Notify end users if your application overrides any system settings (e.g., dimming) on their Magic Leap 2 device and when those overrides will occur, and why.
+   f. Notify end users if your application overrides any system settings (e.g., dimming) on their Magic Leap 2 device and when those overrides will occur, and why.
   
-   f. Conduct an appropriate risk management process to identify all potential hazards to the user from use of your application. Perform the required testing to ensure all hazards have been mitigated to an acceptable level.
+   g. Conduct an appropriate risk management process to identify all potential hazards to the end user from use of your application. Perform the required testing to ensure all hazards have been mitigated to an acceptable level.
   
-   g. Stay up to date with safety practices in your industry and specific use cases.
+   h. Stay up to date with safety practices in your industry and specific use cases.
 
 **7. Offer Support**
   
