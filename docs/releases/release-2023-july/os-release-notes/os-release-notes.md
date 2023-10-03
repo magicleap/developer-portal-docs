@@ -5,8 +5,9 @@ sidebar_position: 0
 date: 08/02/2023
 ---
 
-## Magic Leap OS - 1.3.1 - B3E.230616.02-R.121
+## Magic Leap OS - 1.3.1 
 
+The features in this release build upon OS [1.3.0-dev2](/docs/releases/release-2023-june/june-release-notes).
 ## New Features
 
 ### Iris ID
