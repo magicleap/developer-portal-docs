@@ -35,11 +35,11 @@ Soundfield audio is sometimes referred to as Magic Leap Soundfield Audio or MSA.
 
 ## Configure an Unreal project for Soundfield audio
 
-To configure an Unreal project for Soundfield audio, copy the Soundfeild plugin into your project file and enable it in the Unreal Editor.
+To configure an Unreal project for Soundfield audio, copy the Soundfield plugin into your project file and enable it in the Unreal Editor.
 
 To copy the Soundfield plugin to your project folder:
 
-1. Find the Soundfield plugin files that you downloaded from the Magic Leap Hub. If the top-level folder is not named `Soundfield`, rename it `Soundfield`.
+1. Find the sub-folder named `Soundfield` within the folder that was downloaded from the Magic Leap Hub.
 2. In your Unreal Projects folder, go to the folder for the project you want to configure for Soundfield audio.
 3. If you don't have a folder named `Plugins` in your Unreal project folder, create one.
 4. Copy the `Soundfield` folder containing the Sonderfield (or MSA) plugin to the `Plugins` folder in your Unreal project folder. This example shows how to do this for a Unreal project called `HelloCube`.
@@ -53,16 +53,16 @@ To enable the Soundfield plugin in the Unreal Editor:
 2. From the Unreal Editor main menu, select **Edit > Plugins** to open the plugins window.
 3. Select **Audio** from the project list.
 4. Enable the Soundfield plugin by selecting the checkbox next to it.
-    <Image url= {require("/img/unreal-5/soundfield/select_soundfeild_in_plugins.png")} >The Soundfield plugin in the Unreal Editor plugin window.</Image>
+    <Image url= {require("/img/unreal-5/soundfield/select_soundfield_in_plugins.png")} >The Soundfield plugin in the Unreal Editor plugin window.</Image>
 5. From the Unreal Editor main menu, select **Edit > Project Settings**.
 6. In the project settings search bars, search for "plugin".
 7. Select **Windows** from the list of platforms on the right.
 8. Choose **Soundfield** as the **Spatialization Plugin** and the **Reverb Plugin** settings.
-<Image url= {require("/img/unreal-5/soundfield/soundfeild_in_windows_project_settings.png")} >Audio plugin set to Soundfeild in Windows platform project settings.</Image>
+<Image url= {require("/img/unreal-5/soundfield/soundfield_in_windows_project_settings.png")} >Audio plugin set to Soundfield in Windows platform project settings.</Image>
 9. Select **Android** from the list of platforms. Choose **Soundfield** as the **Spatialization Plugin** and the **Reverb Plugin** settings.
-    <Image url= {require("/img/unreal-5/soundfield/soundfeild_in_android_project_settings.png")} >Audio plugin set to Soundfield in Android platform project settings.</Image>
+    <Image url= {require("/img/unreal-5/soundfield/soundfield_in_android_project_settings.png")} >Audio plugin set to Soundfield in Android platform project settings.</Image>
 10. Select **Soundfield** from the list of plugins on the right to confirm or edit the Soundfield plugin settings.
-    <Image url= {require("/img/unreal-5/soundfield/soundfeild_in_project_settings.png")} >The Soundfield plugin the project settings.</Image>
+    <Image url= {require("/img/unreal-5/soundfield/soundfield_in_project_settings.png")} >The Soundfield plugin the project settings.</Image>
 
 ## Spatialize sounds with the Soundfield plugin
 
