@@ -5,7 +5,7 @@ sidebar_position: 0
 date: 08/30/2023
 ---
 
-## Magic Leap OS - 1.4.0-dev1
+# 1.4.0-dev1 OS Release Notes
 
 The features in this release build upon OS [1.3.1](/docs/releases/release-2023-july/july-release-notes).
 

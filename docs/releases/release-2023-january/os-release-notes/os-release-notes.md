@@ -1,6 +1,6 @@
 ---
 id: os-release-notes
-title: January 2023 - OS Release Notes
+title: 1.1.0 OS Release Notes
 sidebar_position: 0
 date: 01/04/2023
 ---

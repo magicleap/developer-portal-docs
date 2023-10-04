@@ -1,12 +1,10 @@
 ---
 id: os-release-notes
-title: September 2023 - OS Release Notes
+title: 1.4.0-dev2 OS Release Notes
 sidebar_position: 2
 date: 09/26/2023
 ---
-# September 2023 OS Release Notes
-
-## ML2 OS Release 1.4.0-dev2
+# 1.4.0-dev2 OS Release Notes
 
 The features in this release build upon [1.4.0-dev1](/docs/releases/release-2023-august/august-release-notes).
 
