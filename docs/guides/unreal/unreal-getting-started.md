@@ -50,22 +50,24 @@ You’ll need the Magic Leap Hub to download the Magic Leap 2 Unreal SDK and exa
 1. Launch the Magic Leap Hub. Click **Open** on the Package Manager tile.
 2. Click the **Native** tile.
 3. Download and install ML C SDK.
-4. Set the ML C SDK environment variable to the download location. You can do this through Windows Settings:
+4. Set the ML C SDK environment variable to the download location.
 
-    a. In the Windows Settings search field, search for "environment".
-    b. Choose **Edit the system environment variables**. In the System Properties dialog that appears, make sure the **Advanced** tab is selected.
-    c. Click **Environment Variables**.
-   <Image url= {require("/img/unreal-5/previewdocs/set-window-environment-variables.png")} >The Windows System Properties window with Environment Variables selected</Image>
-    d. In the Environment Variables dialog that appears, click **New** under this list of users variables.
-   <Image url= {require("/img/unreal-5/previewdocs/set-new-window-environment-variable.png")} >New User Variable window in Environment Variables setting</Image>
-    e. Create a user variable with the variable name `MLSDK` and the variable value `MLSDK=%USERPROFILE%\MagicLeap\mlsdk\MLSDK_VERSION>`.
-    f. Click **OK** to close each of the dialogs.
+You can use Windows Settings to add a persistent environment variable:
+
+1. In the Windows Settings search field, search for "environment".
+2. Choose **Edit the system environment variables**. In the System Properties dialog that appears, make sure the **Advanced** tab is selected.
+3. Click **Environment Variables**.
+<Image url= {require("/img/unreal-5/previewdocs/set-window-environment-variables.png")} >The Windows System Properties window with Environment Variables selected</Image>
+4. In the Environment Variables dialog that appears, click **New** under this list of users variables.
+<Image url= {require("/img/unreal-5/previewdocs/set-new-window-environment-variable.png")} >New User Variable window in Environment Variables setting</Image>
+5. Create a user variable named `MLSDK` with value `%USERPROFILE%\MagicLeap\mlsdk\<MLSDK_VERSION>`.
+6. Click **OK** to close each of the dialogs.
 
 ### Install  Android dependencies
 
 If you don’t already have OpenJDK-11 installed:
 
-1. Download the Windows binary of OpenJDK-11 from the [Java developer kit website](https://jdk.java.net/java-se-ri/11).
+1. Download the Windows binary of OpenJDK-11 from <https://jdk.java.net/java-se-ri/11>.
 2. Extract the zip file and move the `jdk-11` folder to your `%USERPROFILE%` directory.
 3. Set your `JAVA_HOME` environment variable to the path of the `jdk-11` folder. You can do this through Windows Settings.
 
@@ -79,7 +81,7 @@ To set up the versions of the Android SDK and Android NDK required for this prev
 4. In the Android Studio welcome window, click **More Actions** and select **SDK Manager**.
 5. In the **SDK Platforms** tab of the Android SDK Manager, select Android SDK 10 (Q) API Level 29.
 6. Select the **SDK Tools** tab of the Android SDK Manager. Select **Show Package Details**.
-7. Scroll down to NDK (side by side). Select Android NDK version **25.0.8775105** and install it.
+7. Scroll down to NDK (side by side). Select Android NDK version **25.1.8937393** and install it.
 8. Scroll down to Android SDK Command-line Tools and select *9.0**.
 9. Scroll down to Cmake. Select Cmake version **3.22.1**.
 10. Click **OK** to install everything you selected in the Android SDK Manager. Click **OK** to confirm the changes.
@@ -135,7 +137,9 @@ You might need elevated privileges to create a symbolic link. Make sure you run 
 ### Run the setup and project generation files
 
 1. In the Windows Command Prompt window, go to the `UnrealEngine` folder. The setup and project generation files are in this folder.
-2. Go to the `Engine\Extras\Android` folder. Run `SetupAndroid.bat` to ensure that the correct version of the Android SDK is installed.
+2. Go to the `Engine\Extras\Android` folder. Open `SetupAndroid.bat` in notepad or another text editor.
+3. Change the path on line 86 from `set SDKMANAGER=%STUDIO_SDK_PATH%\cmdline-tools\latest\bin\sdkmanager.bat` to reflect the version of the Android SDK Command Line tools that you have installed. If, for example, you have version 9.0 installed, then you would change the line to `set SDKMANAGER=%STUDIO_SDK_PATH%\cmdline-tools\9.0\bin\sdkmanager.bat`.
+4. You can then run `SetupAndroid.bat` to ensure that the correct version of the Android SDK is installed.
 3. Go back to the `UnrealEngine` folder. Run `Setup.bat`. This downloads binary content for Unreal Engine, install prerequisites, and sets up Unreal file associations. It might take a few minutes to run.
 4. If you’re prompted to register the Unreal Engine file type or install prerequisites, click **Yes**.
 5. Run `GenerateProjectFiles.bat`. This creates a file called `UE5.sln` in the same directory.
