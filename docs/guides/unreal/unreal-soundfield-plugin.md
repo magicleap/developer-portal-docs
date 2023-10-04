@@ -42,7 +42,7 @@ To copy the Soundfield plugin to your project folder:
 1. Find the sub-folder named `Soundfield` within the folder that was downloaded from the Magic Leap Hub.
 2. In your Unreal Projects folder, go to the folder for the project you want to configure for Soundfield audio.
 3. If you don't have a folder named `Plugins` in your Unreal project folder, create one.
-4. Copy the `Soundfield` folder containing the Sonderfield (or MSA) plugin to the `Plugins` folder in your Unreal project folder. This example shows how to do this for a Unreal project called `HelloCube`.
+4. Copy the `Soundfield` folder containing the Soundfield (or MSA) plugin to the `Plugins` folder in your Unreal project folder. This example shows how to do this for a Unreal project called `HelloCube`.
     <Image url= {require("/img/unreal-5/soundfield/copy_soundfield_folder.png")} >Copy the Soundfield plugin folder to the folder of an Unreal project called HelloCube.</Image>
 
 To enable the Soundfield plugin in the Unreal Editor:
