@@ -1,6 +1,6 @@
 ---
 id: os-release-notes
-title: February 2023 - OS Release Notes
+title: 1.2.0-dev1 OS Release Notes
 sidebar_position: 0
 date: 02/22/2023
 ---

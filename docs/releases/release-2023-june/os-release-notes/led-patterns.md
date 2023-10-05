@@ -1,6 +1,6 @@
 ---
 id: led-patterns
-title: June 2023 - LED Patterns
+title: 1.3.0-dev2 LED Patterns
 sidebar_position: 5
 date: 06/14/2023
 ---
