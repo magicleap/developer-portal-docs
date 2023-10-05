@@ -17,6 +17,14 @@ Magic Leap 2 allows developers to access two streams from the same physical came
 1. **CV Camera** - best used for Computer vision scenarios, uncompressed, raw frames.
 If you use this device to do CV in you application, you will be able to use the record/stream gameplay using the Capture Service, but you will not be able to perform Image or marker tracking using the SDK.
 
+You can use the same stream to capture different types of content. For example, you can capture Video, Images and a Preview from the Main Camera stream, while also using the CV Camera at the same time.
+
+:::caution Mixed Reality Capture
+
+The Main Camera stream is the only stream that can capture Mixed Reality content. However, the  Mixed Reality Capture stream only supports a single concurrent capture mode which means that developers will need to choose whether to capture Video **OR** Images but not both.
+
+:::
+
 ## Stream Capabilities
 
 This section details the supported Resolution, Capture Type, Formats and Frame Rates. The following table provides general information about each of the supported formats.
