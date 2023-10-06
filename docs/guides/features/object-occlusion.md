@@ -1,7 +1,7 @@
 ---
 title: Occlusion
 sidebar_position: 6
-date: 08/10/2023
+date: 10/06/2023
 tags: [Overview, Occlusion, Meshing, Planes]
 keywords: [Overview, Occlusion, Meshing, Planes]
 ---
@@ -28,15 +28,34 @@ To access the Occlusion API, Developers must declare the `com.magicleap.permissi
 
 The Occlusion API provides settings to specify the distance range within which objects will contribute to the occlusion mesh:
 
-**Minimum Distance**: his setting allows developers to specify the closest distance (in meters) at which objects will start to be occluded. The possible range for this setting is from 0.3 meters to 7.5 meters.
+**Minimum Distance**: This setting allows developers to specify the closest distance (in meters) at which objects will start to be occluded. The possible range for this setting is from 0.3 meters to 7.5 meters.
 
 **Maximum Distance**: This defines the furthest distance (in meters) up to which objects will be occluded. Like the minimum distance, the possible range is also from 0.3 meters to 7.5 meters.
 
 ### Occlusion Mesh
 
-An occlusion mesh is a representation of the real-world environment, which helps the system understand which parts of the virtual objects should be visible and which parts should be hidden behind real-world objects.
+An occlusion mesh is a representation of the real-world environment which helps the system understand which parts of the virtual objects should be visible and which parts should be hidden behind real-world objects.
 
-**Update Rate**: For long range occlusion, the Occlusion mesh is updated at an interval of 5 frames per second. This allows the system to occlude Virtual content in static environments. For real-world objects in close range, the Occlusion mesh dynamically updates at 30 frames per second. 
+**Update Rate**: For long range occlusion, by default the occlusion mesh is updated at an interval of 5 frames per second. This allows the system to occlude virtual content in static environments. For real-world objects in close range, the occlusion mesh dynamically updates at 30 frames per second. 
+
+When you use the MLOcclusion API, the default update frequency is 5 frames per second, and you can set the **min_distance** and **max_distance** parameters. If you set ```MLOcclusionSettings::max_distance``` to be less than or equal to **0.9m**, the system automatically generates the mesh at 30 frames per second. The code sample below shows the options in the MLOcclusion API:
+
+```
+typedef struct MLOcclusionSettings {
+  /*! Struct version. */
+  uint32_t version;
+  /*!
+    \brief Minimum distance in meters to occlude objects.
+    Possible values ranges from 0.3m up to 7.5m.
+  */
+  float min_distance;
+  /*!
+    \brief Maximum distance in meters to occlude objects.
+    Possible values ranges from 0.3m up to 7.5m.
+  */
+  float max_distance;
+} MLOcclusionSettings;
+```
 
 **Data Components**:
 
