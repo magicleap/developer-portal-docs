@@ -16,6 +16,7 @@ import DownloadArcloud from './_download_arcloud.md';
 import ArcloudEnvVariables from './_arcloud_env.md';
 import EnvFile from './_env_file.md';
 import FindIPAddress from './_find_ip.md';
+import HelmRequirements from './_helm_requirements.md';
 import InstallHelm from './_install_helm.md';
 import InstallHelmMacOS from './_install_helm_macos.md';
 import InstallIstio from './_install_istio.md';
