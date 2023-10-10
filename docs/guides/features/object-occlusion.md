@@ -36,9 +36,13 @@ The Occlusion API provides settings to specify the distance range within which o
 
 An occlusion mesh is a representation of the real-world environment which helps the system understand which parts of the virtual objects should be visible and which parts should be hidden behind real-world objects.
 
-**Update Rate**: For long range occlusion, by default the occlusion mesh is updated at an interval of 5 frames per second. This allows the system to occlude virtual content in static environments. For real-world objects in close range, the occlusion mesh dynamically updates at 30 frames per second. 
+**Update Rate**: For long range occlusion, by default the occlusion mesh is updated at an interval of 5 frames per second (fps). This allows the system to occlude virtual content in static environments. For real-world objects in close range, the occlusion mesh dynamically updates at 30 frames per second. 
 
-When you use the MLOcclusion API, the default update frequency is 5 frames per second, and you can set the **min_distance** and **max_distance** parameters. If you set ```MLOcclusionSettings::max_distance``` to be less than or equal to **0.9m**, the system automatically generates the mesh at 30 frames per second. The code sample below shows the options in the MLOcclusion API:
+You can choose the occlusion mesh update rate by setting the `max_distance` parameter for `MLOcclusionSettings`: 
+* 5 fps - Set `MLOcclusionSettings::max_distance` to be greater than **0.9m**. This is best for long-range occlusion. 
+* 30 fps - Set `MLOcclusionSettings::max_distance` to be less than or equal to **0.9m**, the system automatically generates the mesh at 30 frames per second.
+
+The code sample below shows an example of the options in the MLOcclusion API:
 
 ```
 typedef struct MLOcclusionSettings {
@@ -56,6 +60,12 @@ typedef struct MLOcclusionSettings {
   float max_distance;
 } MLOcclusionSettings;
 ```
+
+You can learn more about what's offered for occlusion in the Magic Leap Unity or Native C Occlusion APIs: 
+
+[Native MLOcclusion API](/docs/api-ref/api/Modules/group___occlusion/) - Magic Leap's Native `MLOcclusion` API Documentation.
+
+[Unity MLOcclusion API](/docs/unity-api/api/UnityEngine.XR.MagicLeap/MLOcclusion/UnityEngine.XR.MagicLeap.MLOcclusion/) -  Magic Leap Unity SDK's `MLOcclusion` API Documentation
 
 **Data Components**:
 
