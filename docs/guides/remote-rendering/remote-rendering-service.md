@@ -3,7 +3,7 @@ id: remote-rendering
 title: Remote Render Setup
 sidebar_label: Getting Started
 sidebar_position: 2
-date: 03/13/2023
+date: 10/11/2023
 tags: [Render, Servers, Remote]
 keywords: [Render, Servers, Remote]
 ---
@@ -73,13 +73,13 @@ You must have your Magic Leap headset on and connected to the same WiFi network 
 
 11. If your system meets requirements for remote rendering, and it's your first time using this tool, when you get the prompt to install Remote Viewer, click **Install now**. <Image url= {require("/img/remote-rendering/install-now.png")} >Install Remote Viewer</Image> 
 
-11. If your system meets the requirements for remote rendering, and it's your first time using this tool, a prompt asks you to install the Client APK. Click **Yes, Install**.
+12. If your system meets the requirements for remote rendering, and it's your first time using this tool, a prompt asks you to install the Client APK. Click **Yes, Install**.
 
 <Image url= {require("/img/remote-rendering/client-apk.png")} >Install Client APK</Image>
 
-12. Put on the Magic Leap 2
-13. Launch the **Remote Viewer** application
-14. Make sure that the top dialogue box indicates that the device is connected to the host computer.
+13. When installation completes, you see a QRC prompt labeled Get Started. Put on the Magic Leap 2 and scan the QRC. <Image url= {require("/img/remote-rendering/remote-render-qrc.png")} >QRC for Remote Render</Image>
+
+14. The QRC launches the **Remote Viewer** application.
 
 ## Device Streaming
 
@@ -88,6 +88,14 @@ You must have your Magic Leap headset on and connected to the same WiFi network 
 The Remote Rendering functionality can be used in combination with Device Stream to preview and save what the user sees, however this may cause some audio feedback noise because the audio produced on the host is sent to the device and then back to the host by Device Stream. To prevent audio loopback noise, lower the volume of the Device Stream live preview before starting Remote Rendering.
 
 ## Troubleshooting
+
+### adb
+
+If you don't have adb installed, you may not be able to install the APK. Read the [ADB Setup](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/android-debug-bridge/adb-setup/) guide.
+
+### Can't Install Remote Viewer
+
+If your system does not have an NVIDIA GPU, you can't use the remote render feature. Try using a VM, or a different computer.
 
 ### Debug Logs
 
