@@ -42,12 +42,6 @@ You can choose the occlusion mesh update rate by setting the `max_distance` para
 * 5 fps - Set `MLOcclusionSettings::max_distance` to be greater than **0.9m**. This is best for long-range occlusion. 
 * 30 fps - Set `MLOcclusionSettings::max_distance` to be less than or equal to **0.9m**, the system automatically generates the mesh at 30 frames per second.
 
-You can learn more about what's offered for occlusion in the Magic Leap Unity or Native C Occlusion APIs: 
-
-[Native MLOcclusion API](/docs/api-ref/api/Modules/group___occlusion/) - Magic Leap's Native `MLOcclusion` API Documentation.
-
-[Unity MLOcclusion API](/docs/unity-api/api/UnityEngine.XR.MagicLeap/MLOcclusion/UnityEngine.XR.MagicLeap.MLOcclusion/) -  Magic Leap Unity SDK's `MLOcclusion` API Documentation
-
 **Data Components**:
 
     - The mesh contains data about the number of vertices and indices.
@@ -56,4 +50,10 @@ You can learn more about what's offered for occlusion in the Magic Leap Unity or
 
 ## API Resources
 
-You can read more about what the Object Occlusion API offers in the MagicLeap documentation: [Occlusion](/docs/api-ref/api/Modules/group___occlusion/group___occlusion.md).
+You can read more about what the Object Occlusion API offers in the MagicLeap documentation: 
+* [Occlusion](/docs/api-ref/api/Modules/group___occlusion/group___occlusion.md).
+
+You can learn more about what's offered for occlusion in the Magic Leap Unity or Native C Occlusion APIs: 
+* [Native MLOcclusion API](/docs/api-ref/api/Modules/group___occlusion/) - Magic Leap's Native `MLOcclusion` API Documentation.
+
+* [Unity MLOcclusion API](/docs/unity-api/api/UnityEngine.XR.MagicLeap/MLOcclusion/UnityEngine.XR.MagicLeap.MLOcclusion/) -  Magic Leap Unity SDK's `MLOcclusion` API Documentation
