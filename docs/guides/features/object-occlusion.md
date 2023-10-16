@@ -42,25 +42,6 @@ You can choose the occlusion mesh update rate by setting the `max_distance` para
 * 5 fps - Set `MLOcclusionSettings::max_distance` to be greater than **0.9m**. This is best for long-range occlusion. 
 * 30 fps - Set `MLOcclusionSettings::max_distance` to be less than or equal to **0.9m**, the system automatically generates the mesh at 30 frames per second.
 
-The code sample below shows an example of the options in the MLOcclusion API:
-
-```
-typedef struct MLOcclusionSettings {
-  /*! Struct version. */
-  uint32_t version;
-  /*!
-    \brief Minimum distance in meters to occlude objects.
-    Possible values ranges from 0.3m up to 7.5m.
-  */
-  float min_distance;
-  /*!
-    \brief Maximum distance in meters to occlude objects.
-    Possible values ranges from 0.3m up to 7.5m.
-  */
-  float max_distance;
-} MLOcclusionSettings;
-```
-
 You can learn more about what's offered for occlusion in the Magic Leap Unity or Native C Occlusion APIs: 
 
 [Native MLOcclusion API](/docs/api-ref/api/Modules/group___occlusion/) - Magic Leap's Native `MLOcclusion` API Documentation.
