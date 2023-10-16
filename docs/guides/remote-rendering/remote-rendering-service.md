@@ -18,7 +18,7 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 ## Prerequisites
 
 * You must have a GPU manufactured by NVIDIA, or remote rendering will not work
-* **Enterprise** or **Developer Pro license**
+* To use remote rendering on your Magic Leap headset, you must have a**Enterprise** or **Developer Pro** software license. For more information, refer to [Managing Your Magic Leap 2 License](https://www.magicleap.care/hc/en-us/articles/9356966949389-Managing-Your-Magic-Leap-2-License)
 * [Install the Magic Leap Hub](/docs/guides/getting-started/install-the-tools#install-magic-leap-hub)
 * [Grant Developer Permissions](/docs/guides/getting-started/granting-permissions)
 * [Install the latest OS on Magic Leap 2 (minimum 1.1.0)](/docs/guides/device/updating-the-os/device-flashing-guide#download-the-latest-os-build)
@@ -44,9 +44,9 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 
 1. Download the Magic Leap Remote Rendering package from the Package Manager within the Magic Leap Hub.
 
-2. Enable Wifi Bridge in the Device Bridge and make sure your device is connected via WiFi to the same network as your computer before continuing.
+2. Make sure your device is connected via WiFi to the same network as your computer before continuing. You need to connect via USB or WiFi Bridge to install the Remote Viewer on your headset.
 
-3. After installing **Magic Leap Remote Rendering**, the Hub will automatically update to display a Remote Rendering
+3. After installing **Magic Leap Remote Rendering**, the Hub automatically updates to display a Remote Rendering
 tile on the home screen. (If you don't see Remote Rendering at first, restart The Hub.)
 
 4. If you don't see the Remote Rendering (Preview) tile, you need to install it. Search the tiles for **Package Manager** and click on it.
@@ -68,7 +68,7 @@ tile on the home screen. (If you don't see Remote Rendering at first, restart Th
 10. Click **Launch** on the Remote Rendering (Preview) tile from the Magic Leap Hub home screen. <Image url= {require("/img/remote-rendering/remote-rendering-ml-hub-tile.png")} >Remote Render Tile</Image> 
 
 :::note
-You must have your Magic Leap headset on and connected to the same WiFi network as your computer. You must also already have Remote Viewer installed. If you don't have it and you meet system requirements, you're prompted to install it, with a clickable button that says **Install now**. If you don't have it and you don't meet system requirements, then you get a note saying you need to have Remote Viewer, but no option to install. 
+You must have your Magic Leap headset on and connected to the same WiFi network as your computer. The Remote Viewer app needs to be installed. If you don't have it and you meet system requirements, you're prompted to install it, with a clickable button that says **Install now**. If you don't have it and you don't meet system requirements, then you get a note saying you need to have Remote Viewer, but no option to install. Also please note that the Remote Viewer is installed via an APK file. 
 :::
 
 11. If your system meets requirements for remote rendering, and it's your first time using this tool, when you get the prompt to install Remote Viewer, click **Install now**. <Image url= {require("/img/remote-rendering/install-now.png")} >Install Remote Viewer</Image> 
@@ -89,13 +89,9 @@ The Remote Rendering functionality can be used in combination with Device Stream
 
 ## Troubleshooting
 
-### adb
-
-If you don't have adb installed, you may not be able to install the APK. Read the [ADB Setup](https://developer-docs.magicleap.cloud/docs/guides/developer-tools/android-debug-bridge/adb-setup/) guide.
-
 ### Can't Install Remote Viewer
 
-If your system does not have an NVIDIA GPU, you can't use the remote render feature. Try using a VM, or a different computer.
+If your system does not have an NVIDIA GPU, you can't use the remote render feature. The system will not automatically install Remote Viewer if this is the case. Try using a computer with an NVIDIA GPU.
 
 ### Debug Logs
 
