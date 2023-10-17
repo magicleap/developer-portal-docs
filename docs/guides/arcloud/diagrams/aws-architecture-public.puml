@@ -1,0 +1,64 @@
+@startuml AR Cloud architecture with public networking
+
+!include common.puml
+
+
+Users(users, "Users", "millions of users")
+MATERIAL_DNS(dns, "DNS")
+database "<$quay>\n\n==Container\n==registry" as quay <<quay>>
+
+AWSCloudGroup(cloud) {
+    VPCGroup(vpc, "VPC 192.168.0.0/16") {
+        VPCInternetGateway(igw, "Internet\n==gateway", "")
+        ElasticLoadBalancing(elb, "ELB", "")
+
+        EKSGroup(eks) {
+            AvailabilityZoneGroup(az_3, "\tAvailability Zone 3\t") {
+                PublicSubnetGroup(az_3_public, "Public subnet\r192.168.64.0/19") {
+                    /'VPCNATGateway(az_3_nat_gateway, "NAT gateway", "") #Transparent'/
+                    EC2Instance(az_3_ec2_1, "EKS node", "") #Transparent
+                }
+                PrivateSubnetGroup(az_3_private, "Private subnet\r192.168.160.0/19") {
+                }
+            }
+
+            AvailabilityZoneGroup(az_2, "\tAvailability Zone 2\t") {
+                PublicSubnetGroup(az_2_public, "Public subnet\r192.168.32.0/19") {
+                    VPCNATGateway(az_2_nat_gateway, "NAT gateway", "") #Transparent
+                    EC2Instance(az_2_ec2_1, "EKS node", "") #Transparent
+                }
+                PrivateSubnetGroup(az_2_private, "Private subnet\r192.168.128.0/19") {
+                }
+            }
+
+            AvailabilityZoneGroup(az_1, "\tAvailability Zone 1\t") {
+                PublicSubnetGroup(az_1_public, "Public subnet\r192.168.0.0/19") {
+                    /'VPCNATGateway(az_1_nat_gateway, "NAT gateway", "") #Transparent'/
+                    EC2Instance(az_1_ec2_1, "EKS node", "") #Transparent
+                }
+                PrivateSubnetGroup(az_1_private, "Private subnet\r192.168.96.0/19") {
+                }
+            }
+
+            K8sGw(gw, "Gateway", "")
+            K8sSvc(svc, "Service", "")
+        }
+    }
+}
+
+users -> dns
+dns --> igw
+igw -> elb
+elb --> gw
+gw -l-> svc
+svc --> az_1_ec2_1
+svc --> az_2_ec2_1
+svc --> az_3_ec2_1
+
+az_1_ec2_1 .u.> igw
+az_2_ec2_1 .u.> igw
+az_3_ec2_1 .u.> igw
+/'az_2_nat_gateway .u.> igw'/
+igw .l.> quay
+
+@enduml
