@@ -25,17 +25,17 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 
 ## System Requirements
 
-|                   |        Minimum         |          Recommended          |
-| :---------------- | :--------------------: | :---------------------------: |
-| OS                |      Windows 10+       |          Windows 10+          |
-| CPU               |  Intel i7 / AMD Ryzen  |     Intel i7 / AMD Ryzen      |
-| CPU Cores         |           4            |               8               |
-| RAM               |          16GB          |             32GB              |
-| VRAM              |          6GB           |              24               |
-| Storage           |         512GB          |             512GB             |
-| GPU               |      Any RTX Card      | 2x GeForce RTX 3090 or higher |
-| Nvidia driver     | version 495 or later\* |    version 495 or later\*     |
-| Bandwidth         |    100Mbps WiFi 5      |          500+Mbps Wifi 6          |
+|                   |        Minimum         | 
+| :---------------- | :--------------------: |
+| OS                |      Windows 10+       |
+| CPU               |  Intel i7 / AMD Ryzen  |
+| CPU Cores         |           4            |
+| RAM               |          16GB          |
+| VRAM              |          6GB           |
+| Storage           |         512GB          |
+| GPU               |      Any RTX Card      |
+| Nvidia driver     | version 495 or later\* |
+| Bandwidth         |    100Mbps WiFi 5      |
 
 :::note \* Run `nvidia-smi.exe` in a command prompt to get the Nvidia Driver Version. Remote rendering will not work without an NVIDIA GPU.
 :::
@@ -44,42 +44,41 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 
 1. Download the Magic Leap Remote Rendering package from the Package Manager within the Magic Leap Hub.
 
-2. Make sure your device is connected via WiFi to the same network as your computer before continuing. You need to connect via USB or WiFi Bridge to install the Remote Viewer on your headset.
+2. Make sure your device is connected to the same network as your computer before continuing. You need to connect via USB or WiFi Bridge to install the Remote Viewer on your headset. (If you've never used WiFi Bridge, you need to connect with USB first, and then switch over to WiFi Bridge.)
 
-3. After installing **Magic Leap Remote Rendering**, the Hub automatically updates to display a Remote Rendering
-tile on the home screen. (If you don't see Remote Rendering at first, restart The Hub.)
+3. If you don't see the Remote Rendering (Preview) tile, you need to install it. If you already have the tile, you can skip ahead to **step 11**. Otherwise, search the tiles for **Package Manager** and click on it.
 
-4. If you don't see the Remote Rendering (Preview) tile, you need to install it. Search the tiles for **Package Manager** and click on it.
+4. Click **All** and use the search bar at the top of the page to look for **Remote Rendering**. Under the Package Name column, you should get back the choice to install Magic Leap Remote Rendering. <Image url= {require("/img/remote-rendering/install-remote-rendering.png")} >Find Remote Rendering Installation Package</Image> 
 
-5. Click **All** and use the search bar at the top of the page to look for **Remote Rendering**. Under the Package Name column, you should get back the choice to install Magic Leap Remote Rendering. <Image url= {require("/img/remote-rendering/install-remote-rendering.png")} >Find Remote Rendering Installation Package</Image> 
+5. Click the downward pointing black arrow to the right of Magic Leap Remote Rendering. You might have to maximize the window to see it, or scroll to the right. 
 
-6. Click the downward pointing black arrow to the right of Magic Leap Remote Rendering. You might have to maximize the window to see it, or scroll to the right. 
+6. You are prompted with instructions to review and accept a software licensing agreement. Review the agreement, and accept it to continue with the download. Your download will appear with a status like Pending Install.
 
-7. You are prompted with instructions to review and accept a software licensing agreement. Review the agreement, and accept it to continue with the download. Your download will appear with a status like Pending Install.
+7. Next, you'll see the Change Summary panel. All the options for your change are listed. This package only has one item to install, so leave everything as-is. At the bottom of the panel, click **Apply Changes** to start installation. <Image url= {require("/img/remote-rendering/change-summary.png")} >Apply Changes</Image>
 
-8. Next, you'll see the Change Summary panel. All the options for your change are listed. This package only has one item to install, so leave everything as-is. At the bottom of the panel, click **Apply Changes** to start installation. <Image url= {require("/img/remote-rendering/change-summary.png")} >Apply Changes</Image>
+8. Walk through the installation wizard for Remote Rendering. You'll be prompted to accept another software agreement, choose a destination folder, a start menu folder, and finally, install. When the installation completes, click **Finish** to close the wizard. 
 
-7. Walk through the installation wizard for Remote Rendering. You'll be prompted to accept another software agreement, choose a destination folder, a start menu folder, and finally, install. When the installation completes, click **Finish** to close the wizard. 
+9. In the Magic Leap Hub, you'll still be on the Change Summary screen. If everything went as planned, you see the status of Remote Rendering listed as Installed. In the top right of the screen, click **Close Summary**. 
 
-8. In the Magic Leap Hub, you'll still be on the Change Summary screen. If everything went as planned, you see the status of Remote Rendering listed as Installed. In the top right of the screen, click **Close Summary**. 
+10. Navigate back to the home screen. Remote Rendering (Preview) should be the first tile you see, as you just installed it. Before proceeding, make sure your headset is connected to the same network as your computer.
 
-9. Navigate back to the home screen. Remote Rendering (Preview) should be the first tile you see, as you just installed it. Before proceeding, make sure your headset is connected to the same network as your computer.
-
-10. Click **Launch** on the Remote Rendering (Preview) tile from the Magic Leap Hub home screen. <Image url= {require("/img/remote-rendering/remote-rendering-ml-hub-tile.png")} >Remote Render Tile</Image> 
+11. Click **Launch** on the Remote Rendering (Preview) tile from the Magic Leap Hub home screen. <Image url= {require("/img/remote-rendering/remote-rendering-ml-hub-tile.png")} >Remote Render Tile</Image> 
 
 :::note
-You must have your Magic Leap headset on and connected to the same WiFi network as your computer. The Remote Viewer app needs to be installed. If you don't have it and you meet system requirements, you're prompted to install it, with a clickable button that says **Install now**. If you don't have it and you don't meet system requirements, then you get a note saying you need to have Remote Viewer, but no option to install. Also please note that the Remote Viewer is installed via an APK file. 
+You must have your Magic Leap headset on and connected to the same network as your computer. The Remote Viewer app needs to be installed. If you don't have it and you meet system requirements, you're prompted to install it, with a clickable button that says **Install now**. If you don't have it and you don't meet system requirements, then you get a note saying you need to have Remote Viewer, but no option to install. Also please note that the Remote Viewer is installed via an APK file. 
 :::
 
-11. If your system meets requirements for remote rendering, and it's your first time using this tool, when you get the prompt to install Remote Viewer, click **Install now**. <Image url= {require("/img/remote-rendering/install-now.png")} >Install Remote Viewer</Image> 
+12. If your system meets requirements for remote rendering, and it's your first time using this tool, when you get the prompt to install Remote Viewer, click **Install now**. <Image url= {require("/img/remote-rendering/install-now.png")} >Install Remote Viewer</Image> 
 
-12. If your system meets the requirements for remote rendering, and it's your first time using this tool, a prompt asks you to install the Client APK. Click **Yes, Install**.
+13. If your system meets the requirements for remote rendering, and it's your first time using this tool, a prompt asks you to install the Client APK. Click **Yes, Install**.
 
 <Image url= {require("/img/remote-rendering/client-apk.png")} >Install Client APK</Image>
 
-13. When installation completes, you see a QRC prompt labeled Get Started. Put on the Magic Leap 2 and scan the QRC. <Image url= {require("/img/remote-rendering/remote-render-qrc.png")} >QRC for Remote Render</Image>
+14. When installation completes, you see a QRC prompt labeled Get Started. Put on the Magic Leap 2 and using your controller, open the **QR Reader**.
 
-14. The QRC launches the **Remote Viewer** application.
+15. Scan the QRC on your computer screen. <Image url= {require("/img/remote-rendering/remote-render-qrc.png")} >QRC for Remote Render</Image>
+
+16. The QRC launches the **Remote Viewer** application.
 
 ## Device Streaming
 
