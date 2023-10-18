@@ -77,11 +77,11 @@ You must have your Magic Leap headset on and connected to the same network as yo
 
 <Image url= {require("/img/remote-rendering/client-apk.png")} >Install Client APK</Image>
 
-14. When installation completes, you see a QRC prompt labeled Get Started. Put on the Magic Leap 2 and using your controller, open the **QR Reader**.
+14. When installation completes, you see a QR code prompt labeled Get Started. Put on the Magic Leap 2 and using your controller, open the **QR Reader**.
 
-15. Scan the QRC on your headset by looking at it. <Image url= {require("/img/remote-rendering/remote-render-qrc.png")} >QRC for Remote Render</Image>
+15. Scan the QR code on your headset by looking at it. <Image url= {require("/img/remote-rendering/remote-render-qrc.png")} >QR Code for Remote Render</Image>
 
-16. The QRC launches a screen on your headset showing the link it's connecting to, and prompts you to open the link with Remote Viewer. Click **Continue**.
+16. The QR code launches a screen on your headset showing the link it's connecting to, and prompts you to open the link with Remote Viewer. Click **Continue**.
 
 17. You receive a prompt asking whether you want to allow Remote Viewer to track your eyes and detect gaze behaviors like blinks and fixation and one asking whether to allow Remote Viewer to detect planes and mesh data from the environment around you. For each one, click **Allow**.
 
