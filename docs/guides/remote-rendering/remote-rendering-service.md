@@ -69,16 +69,24 @@ You must have your Magic Leap headset on and connected to the same network as yo
 :::
 
 12. If your system meets requirements for remote rendering, and it's your first time using this tool, when you get the prompt to install Remote Viewer, click **Install now**. <Image url= {require("/img/remote-rendering/install-now.png")} >Install Remote Viewer</Image> 
-
-13. If your system meets the requirements for remote rendering, and it's your first time using this tool, a prompt asks you to install the Client APK. Click **Yes, Install**.
+  
+13. Next, a prompt asks you to install the Client APK. Click **Yes, Install**.
 
 <Image url= {require("/img/remote-rendering/client-apk.png")} >Install Client APK</Image>
 
 14. When installation completes, you see a QRC prompt labeled Get Started. Put on the Magic Leap 2 and using your controller, open the **QR Reader**.
 
-15. Scan the QRC on your computer screen. <Image url= {require("/img/remote-rendering/remote-render-qrc.png")} >QRC for Remote Render</Image>
+15. Scan the QRC on your headset by looking at it. <Image url= {require("/img/remote-rendering/remote-render-qrc.png")} >QRC for Remote Render</Image>
 
-16. The QRC launches the **Remote Viewer** application.
+16. The QRC launches a screen on your headset showing the link it's connecting to, and prompts you to open the link with Remote Viewer. Click **Continue**.
+
+17. You receive a prompt asking whether you want to allow Remote Viewer to track your eyes and detect gaze behaviors like blinks and fixation. Click **Allow**.
+
+18. You receive a prompt asking whether to allow Remote Viewer to detect planes and mesh data from the environment around you. Click **Allow**.
+
+19. You may get a notification stating that the app is waiting to be granted permissions, and then a notification indicating that the headset is waiting for the app to start. This notification includes instructions to start the OpenXR app on your PC. To do this, go into the Magic Leap Hub on the Remote Rendering screen, and click the **Remote Rendering** dropdown menu in the upper left corner.
+
+20. From the dropdown, click **OpenXR demo app**. The demo launches two places. On your PC, the app launches in its own Window and shows a view of your headset, controller, and hands. In your headset, you see a banner that says 'Magic Leap Remote Rendering.' You can squeeze the trigger on your controller to play a sound. When you are done trying the app, click the **Home** button on your controller to exit, and close the app window on your PC. 
 
 ## Device Streaming
 
