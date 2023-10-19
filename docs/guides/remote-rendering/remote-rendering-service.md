@@ -32,7 +32,7 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 | CPU Cores         |           4            |
 | RAM               |          16GB          |
 | VRAM              |          6GB           |
-| GPU               | Any NVIDIA RTX Card    |
+| GPU               |          NVIDIA GPU    |
 | Nvidia driver     | version 495 or later\* |
 | Bandwidth         |    100Mbps WiFi 5      |
 
@@ -64,7 +64,7 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 11. Click **Launch** on the Remote Rendering (Preview) tile from the Magic Leap Hub home screen. <Image url= {require("/img/remote-rendering/remote-rendering-ml-hub-tile.png")} >Remote Render Tile</Image> 
 
 :::note
-You must have your Magic Leap headset on and connected to the same network as your computer. The Remote Viewer app needs to be installed. If you don't have it, you meet system requirements, and your device is connected via the device bridge (WiFi or USB), you're prompted to install it. The prompt displays a clickable button that says **Install now**. If you don't meet system requirements, then you get a note saying you need to have Remote Viewer, but no option to install. 
+You must have your Magic Leap headset on and connected to the same network as your computer. The Remote Viewer app needs to be installed. If you don't have it, you meet system requirements, and your device is connected via the device bridge (WiFi or USB), you're prompted to install it. The prompt displays a clickable button that says **Install now**. If your device is not connected to the device bridge, or if you don't meet system requirements, then you get a note saying you need to have Remote Viewer, but no option to install. 
 :::
 
 12. If your system meets requirements for remote rendering, and it's your first time using this tool, when you get the prompt to install Remote Viewer, click **Install now**. <Image url= {require("/img/remote-rendering/install-now.png")} >Install Remote Viewer</Image> 
