@@ -18,14 +18,10 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 ## Prerequisites
 
 * You must have a GPU manufactured by NVIDIA, or remote rendering will not work
-* To use remote rendering on your Magic Leap headset, you must have a**Enterprise** or **Developer Pro** software license. For more information, refer to [Managing Your Magic Leap 2 License](https://www.magicleap.care/hc/en-us/articles/9356966949389-Managing-Your-Magic-Leap-2-License)
+* To use remote rendering on your Magic Leap headset, you must have an **Enterprise** or **Developer Pro** software license. For more information, refer to [Managing Your Magic Leap 2 License](https://www.magicleap.care/hc/en-us/articles/9356966949389-Managing-Your-Magic-Leap-2-License)
 * [Install the Magic Leap Hub](/docs/guides/getting-started/install-the-tools#install-magic-leap-hub)
 * [Grant Developer Permissions](/docs/guides/getting-started/granting-permissions)
 * [Install the latest OS on Magic Leap 2 (minimum 1.4.0)](/docs/guides/device/updating-the-os/device-flashing-guide#download-the-latest-os-build)
-
-:::note
-You can install with an older OS, however the instructions might be slightly different than what's described in this walkthrough.
-:::
 
 ## System Requirements
 
@@ -36,7 +32,7 @@ You can install with an older OS, however the instructions might be slightly dif
 | CPU Cores         |           4            |
 | RAM               |          16GB          |
 | VRAM              |          6GB           |
-| GPU               |      Any NVIDIA RTX Card      |
+| GPU               | Any NVIDIA RTX Card    |
 | Nvidia driver     | version 495 or later\* |
 | Bandwidth         |    100Mbps WiFi 5      |
 
@@ -49,7 +45,7 @@ You can install with an older OS, however the instructions might be slightly dif
 
 2. Make sure your device is connected to the same network as your computer before continuing. You need to connect via USB or WiFi Bridge to install the Remote Viewer on your headset. (If you've never used WiFi Bridge, you need to connect with USB first, and then switch over to WiFi Bridge.)
 
-3. If you don't see the Remote Rendering (Preview) tile, you need to install it. If you already have the tile, you can skip ahead to **step 11**. Otherwise, search the tiles for **Package Manager** and click on it.
+3. If you don't see the Remote Rendering (Preview) tile, you need to install it. If you already have the tile it's recommended that you ensure you have the latest version of Remote Rendering. If you do, you can skip ahead to **step 11**. Otherwise, search the tiles for **Package Manager** and click on it.
 
 4. Click **All** and use the search bar at the top of the page to look for **Remote Rendering**. Under the Package Name column, you should get back the choice to install Magic Leap Remote Rendering. <Image url= {require("/img/remote-rendering/install-remote-rendering.png")} >Find Remote Rendering Installation Package</Image> 
 
@@ -85,9 +81,11 @@ You must have your Magic Leap headset on and connected to the same network as yo
 
 17. You receive a prompt asking whether you want to allow Remote Viewer to track your eyes and detect gaze behaviors like blinks and fixation and one asking whether to allow Remote Viewer to detect planes and mesh data from the environment around you. For each one, click **Allow**.
 
-18. You may get a notification stating that the app is waiting to be granted permissions, and then a notification indicating that the headset is waiting for the app to start. This notification includes instructions to start the OpenXR app on your PC. To do this, go into the Magic Leap Hub on the Remote Rendering screen, and click the **Remote Rendering** dropdown menu in the upper left corner.
+18. After you successfully pair your Magic Leap 2 with your host PC, you get a notification stating that the app is waiting to be granted permissions, and then a notification indicating that the headset is waiting for the app to start. You can now start an OpenXR app on your host PC.
 
-19. (Optional) You can run a demo to test your set up. From the dropdown, click **OpenXR demo app**. The demo launches two places. On your PC, the app launches in its own Window and shows a view of your headset, controller, and hands. In your headset, you see a banner that says 'Magic Leap Remote Rendering.' You can squeeze the trigger on your controller to play a sound. When you are done trying the app, click the **Home** button on your controller to exit, and close the app window on your PC. 
+19. (Optional) To open a demo OpenXR app on your host PC, go into the Magic Leap Hub on the Remote Rendering screen, and click the **Remote Rendering** dropdown menu in the upper left corner.
+
+20. (Optional) From the dropdown, click **OpenXR demo app**. The demo launches two places. On your PC, the app launches in its own window and shows a view of your headset, controller, and hands. In your headset, you see a banner that says 'Magic Leap Remote Rendering.' You can squeeze the trigger on your controller to play a sound. When you are done trying the app, click the **Home** button on your controller to exit, and close the app window on your PC. 
 
 ## Device Streaming
 
