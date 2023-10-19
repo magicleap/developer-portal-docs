@@ -33,10 +33,10 @@ Magic Leap Remote Rendering is a first-party tool, created by Magic Leap, design
 | RAM               |          16GB          |
 | VRAM              |          6GB           |
 | GPU               |          NVIDIA GPU    |
-| Nvidia driver     | version 495 or later\* |
+| NVIDIA driver     | version 495 or later\* |
 | Bandwidth         |    100Mbps WiFi 5      |
 
-:::note \* Run `nvidia-smi.exe` in a command prompt to get the Nvidia Driver Version. Remote rendering will not work without an NVIDIA GPU.
+:::note \* Run `nvidia-smi.exe` in a command prompt to get the NVIDIA Driver Version. Remote rendering will not work without an NVIDIA GPU.
 :::
 
 ### Installing Remote Render
