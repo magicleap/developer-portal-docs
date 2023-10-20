@@ -24,7 +24,7 @@ Developers can access a variety of Magic Leap 2’s sensors to obtain informatio
 * Headset Left Uncalibrated 
 * Magnetometer Sensor (Compass)
 
-The available camera is through Android's [Camera2 API](https://developer.android.com/training/camera2):
+The camera you can access is available through Android's [Camera2 API](https://developer.android.com/training/camera2):
 
 * Video Camera (also called VCam, RGB Camera, Picture Camera)
 
