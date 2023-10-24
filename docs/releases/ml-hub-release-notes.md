@@ -1,8 +1,22 @@
 ---
 title: Magic Leap Hub Release Notes
 sidebar_position: 2
-date: 08/30/2023
+date: 10/24/2023
 ---
+## Version 2.0.16
+* Advanced Capture: added live preview support
+* Advanced Capture: various UX fixes
+* Device Bridge: 'shutdown' button will turn off both device and controller
+* Device Bridge: Files Tab will show display names of packages
+* Minor bug fixes
+
+## Version 2.0.15
+* Device Brdige: Device's and Controller's battery icons updates
+* Device Bridge: Files Tab fixes
+* OS Installer: Added notification for failed downloads
+* OS Installer: Mac OS will not fall asleep if firmware flashing is in progress
+* Remote Rendering: Added periodic regeneration of QR code
+* Minor bug fixes
 
 ## Version 2.0.14
 * Advanced Capture: UX updates
