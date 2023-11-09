@@ -22,6 +22,7 @@ import InstallHelm from './_install_helm.md';
 import InstallHelmMacOS from './_install_helm_macos.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
+import InstallIstioSocketOptions from './_install_istio_socket_options.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetupSecure from './_install_arcloud_setup_secure.md';
@@ -215,6 +216,10 @@ kubectl config current-context
 <IstioRequirements />
 
 <InstallIstio />
+
+### Install Istio Socket Options
+
+<InstallIstioSocketOptions />
 
 ### Install Istio Gateway
 

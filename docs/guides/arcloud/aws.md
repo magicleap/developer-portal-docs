@@ -24,6 +24,7 @@ import InstallHelm from './_install_helm.md';
 import InstallHelmMacOS from './_install_helm_macos.md';
 import IstioRequirements from './_istio_requirements.md';
 import InstallIstio from './_install_istio.md';
+import InstallIstioSocketOptions from './_install_istio_socket_options.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallIstioAws from './_install_istio_aws.md';
 import InstallArcloud from './_install_arcloud.md';
@@ -486,6 +487,10 @@ gsed -ri '/replicaCount:/{n;s#(^\s+)(service:)#\1serviceAnnotations:\n\1  servic
 Install Istio:
 
 <InstallIstio />
+
+### Install Istio Socket Options
+
+<InstallIstioSocketOptions />
 
 ### Install Istio Gateway
 

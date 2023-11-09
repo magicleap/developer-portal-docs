@@ -20,6 +20,7 @@ import HelmRequirements from './_helm_requirements.md';
 import InstallHelm from './_install_helm.md';
 import InstallHelmMacOS from './_install_helm_macos.md';
 import InstallIstio from './_install_istio.md';
+import InstallIstioSocketOptions from './_install_istio_socket_options.md';
 import InstallIstioGateway from './_install_istio_gateway.md';
 import InstallArcloud from './_install_arcloud.md';
 import InstallArcloudSetup from './_install_arcloud_setup.md';
@@ -305,6 +306,10 @@ Install Istio:
 
   </TabItem>
 </Tabs>
+
+### Install Istio Socket Options
+
+<InstallIstioSocketOptions />
 
 ### Install Istio Gateway
 
